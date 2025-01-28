@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.negative-cache.secs', 'hadoop.security.group.mapping.ldap.num.attempts', 'fs.s3a.assumed.role.session.duration', 'file.blocksize', 'rpc.metrics.quantile.enable', 'seq.io.sort.mb'], 'reason': ['The value of hadoop.security.groups.negative-cache.secs is not a positive integer.', 'The value of hadoop.security.group.mapping.ldap.num.attempts is not a positive integer.', 'The value of fs.s3a.assumed.role.session.duration is not within the range of 15m to 1h.', 'The value of file.blocksize is not a power of 2.', 'The value of rpc.metrics.quantile.enable is not a boolean.', 'The value of seq.io.sort.mb is not a positive integer.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: hadoop.security.groups.negative-cache.secs	hadoop.security.group.mapping.ldap.num.attempts	fs.s3a.assumed.role.session.duration	file.blocksize	rpc.metrics.quantile.enable	seq.io.sort.mb
+[Ciri] Reason for hadoop.security.groups.negative-cache.secs: The value of hadoop.security.groups.negative-cache.secs is not a positive integer.
+[Ciri] Reason for hadoop.security.group.mapping.ldap.num.attempts: The value of hadoop.security.group.mapping.ldap.num.attempts is not a positive integer.
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The value of fs.s3a.assumed.role.session.duration is not within the range of 15m to 1h.
+[Ciri] Reason for file.blocksize: The value of file.blocksize is not a power of 2.
+[Ciri] Reason for rpc.metrics.quantile.enable: The value of rpc.metrics.quantile.enable is not a boolean.
+[Ciri] Reason for seq.io.sort.mb: The value of seq.io.sort.mb is not a positive integer.

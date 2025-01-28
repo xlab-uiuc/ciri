@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.minorcompaction.pagecache.drop', 'hbase.rootdir.perms', 'hbase.mob.file.cache.size'], 'reason': ["The value for 'hbase.regionserver.minorcompaction.pagecache.drop' should be boolean (true or false), but it is given as 1.5.", "The value for 'hbase.rootdir.perms' should be in octal format representing file system permissions. '1400' is likely incorrect as it does not represent a valid permissions set; it should probably be '700' or similar.", "The default value for 'hbase.mob.file.cache.size' is stated to be 1000, but the provided value is 500. This is not an error per se, but the description might be misleading if the intention was to indicate that 1000 is the recommended or default setting."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.minorcompaction.pagecache.drop	hbase.rootdir.perms	hbase.mob.file.cache.size
+[Ciri] Reason for hbase.regionserver.minorcompaction.pagecache.drop: The value for 'hbase.regionserver.minorcompaction.pagecache.drop' should be boolean (true or false), but it is given as 1.5.
+[Ciri] Reason for hbase.rootdir.perms: The value for 'hbase.rootdir.perms' should be in octal format representing file system permissions. '1400' is likely incorrect as it does not represent a valid permissions set; it should probably be '700' or similar.
+[Ciri] Reason for hbase.mob.file.cache.size: The default value for 'hbase.mob.file.cache.size' is stated to be 1000, but the provided value is 500. This is not an error per se, but the description might be misleading if the intention was to indicate that 1000 is the recommended or default setting.

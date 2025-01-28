@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'enable-v2', 'advertise-client-urls', 'proxy-dial-timeout', 'max-snapshots', 'proxy-failure-wait', 'quota-backend-bytes'], 'reason': ['proxy-read-timeout should be greater than 0', 'enable-v2 should be a boolean value', 'advertise-client-urls should use https instead of http', 'proxy-dial-timeout should be greater than 0', 'max-snapshots should be greater than 0', 'proxy-failure-wait should be greater than 0', 'quota-backend-bytes should be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'enable-v2', 'advertise-client-urls', 'proxy-dial-timeout', 'max-snapshots', 'proxy-failure-wait', 'quota-backend-bytes'], 'reason': ['proxy-read-timeout should have a value greater than 0', 'enable-v2 should be a boolean value (true/false)', 'advertise-client-urls should use HTTPS instead of HTTP', 'proxy-dial-timeout should have a value greater than 0', 'max-snapshots should have a value greater than 0', 'proxy-failure-wait should have a value greater than 0', 'quota-backend-bytes should have a value greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'enable-v2', 'advertise-client-urls', 'proxy-dial-timeout', 'max-snapshots', 'proxy-failure-wait', 'quota-backend-bytes'], 'reason': ['proxy-read-timeout should not be set to 0, it should have a valid value', 'enable-v2 should not be set to true for etcd version 3.5.0', 'advertise-client-urls should use https instead of http', 'proxy-dial-timeout should have a valid value, not 1000', 'max-snapshots should have a valid value, not 10', 'proxy-failure-wait should have a valid value, not 10000', 'quota-backend-bytes should have a valid value, not 0']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: proxy-read-timeout	enable-v2	advertise-client-urls	proxy-dial-timeout	max-snapshots	proxy-failure-wait	quota-backend-bytes
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout should be greater than 0
+[Ciri] Reason for enable-v2: enable-v2 should be a boolean value
+[Ciri] Reason for advertise-client-urls: advertise-client-urls should use https instead of http
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout should be greater than 0
+[Ciri] Reason for max-snapshots: max-snapshots should have a valid value, not 10
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait should have a value greater than 0
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes should be greater than or equal to 0

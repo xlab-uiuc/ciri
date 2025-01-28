@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.default-container-executor.log-dirs.permissions', 'yarn.nodemanager.resource-plugins.gpu.docker-plugin'], 'reason': ["Property 'yarn.nodemanager.default-container-executor.log-dirs.permissions' should have a value in octal format.", "Property 'yarn.nodemanager.resource-plugins.gpu.docker-plugin' is using an invalid value 'nvidia-docker-v1'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.default-container-executor.log-dirs.permissions', 'yarn.nodemanager.resource-plugins.gpu.docker-plugin'], 'reason': ["The value '355' for property 'yarn.nodemanager.default-container-executor.log-dirs.permissions' is incorrect. It should be in the format 'rwxr-xr-x'.", "The value 'nvidia-docker-v1' for property 'yarn.nodemanager.resource-plugins.gpu.docker-plugin' is not a valid docker command plugin for GPU in YARN 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.default-container-executor.log-dirs.permissions', 'yarn.nodemanager.resource-plugins.gpu.docker-plugin'], 'reason': ["The value '355' for property 'yarn.nodemanager.default-container-executor.log-dirs.permissions' is incorrect. It should be in the format 'rwxr-xr-x'.", "The value 'nvidia-docker-v1' for property 'yarn.nodemanager.resource-plugins.gpu.docker-plugin' is not supported in YARN version 3.3.0. Please check for the correct value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.default-container-executor.log-dirs.permissions	yarn.nodemanager.resource-plugins.gpu.docker-plugin
+[Ciri] Reason for yarn.nodemanager.default-container-executor.log-dirs.permissions: The value '355' for property 'yarn.nodemanager.default-container-executor.log-dirs.permissions' is incorrect. It should be in the format 'rwxr-xr-x'.
+[Ciri] Reason for yarn.nodemanager.resource-plugins.gpu.docker-plugin: The value 'nvidia-docker-v1' for property 'yarn.nodemanager.resource-plugins.gpu.docker-plugin' is not supported in YARN version 3.3.0. Please check for the correct value.

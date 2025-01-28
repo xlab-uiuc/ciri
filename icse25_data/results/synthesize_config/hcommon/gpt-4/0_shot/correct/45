@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.size', 'ipc.[port_number].cost-provider.impl'], 'reason': ["The value for 'fs.s3a.multipart.size' should be specified in bytes but is incorrectly suffixed with 'M'. It should be converted to bytes or the suffix should be correctly interpreted by the system.", "The property name 'ipc.[port_number].cost-provider.impl' uses a placeholder '[port_number]' which is not a valid syntax for property names in the configuration. Each property name must be explicitly defined without placeholders."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.multipart.size	ipc.[port_number].cost-provider.impl
+[Ciri] Reason for fs.s3a.multipart.size: The value for 'fs.s3a.multipart.size' should be specified in bytes but is incorrectly suffixed with 'M'. It should be converted to bytes or the suffix should be correctly interpreted by the system.
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: The property name 'ipc.[port_number].cost-provider.impl' uses a placeholder '[port_number]' which is not a valid syntax for property names in the configuration. Each property name must be explicitly defined without placeholders.

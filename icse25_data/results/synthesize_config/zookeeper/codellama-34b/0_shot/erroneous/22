@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'clientPortAddress'], 'reason': ['quorumListenOnAllIPs is not a valid property for Zookeeper version 3.7.0', 'clientPortAddress is not a valid property for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'clientPortAddress'], 'reason': ['quorumListenOnAllIPs is not a valid property', 'clientPortAddress should not be set to 0.0.0.0']}
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'quorum.auth.enableSasl', 'sslQuorumReloadCertFiles'], 'reason': ['quorumListenOnAllIPs is not a valid property', 'quorum.auth.enableSasl is not a valid property', 'sslQuorumReloadCertFiles is not a valid property']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorumListenOnAllIPs	clientPortAddress
+[Ciri] Reason for quorumListenOnAllIPs: quorumListenOnAllIPs is not a valid property for Zookeeper version 3.7.0
+[Ciri] Reason for clientPortAddress: clientPortAddress is not a valid property for Zookeeper version 3.7.0

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.dns.interface</name>
+  <value>eth2</value>
+  <description>
+    The name of the Network Interface from which the service should determine
+    its host name for Kerberos login. e.g. eth2. In a multi-homed environment,
+    the setting can be used to affect the _HOST substitution in the service
+    Kerberos principal. If this configuration value is not set, the service
+    will use its default hostname as returned by
+    InetAddress.getLocalHost().getCanonicalHostName().
+
+    Most clusters will not require this setting.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.dns.log-slow-lookups.enabled</name>
+  <value>true</value>
+  <description>
+    Time name lookups (via SecurityUtil) and log them if they exceed the
+    configured threshold.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.ddb.background.sleep</name>
+  <value>50ms</value>
+  <description>
+    Length (in milliseconds) of pause between each batch of deletes when
+    pruning metadata.  Prevents prune operations (which can typically be low
+    priority background operations) from overly interfering with other I/O
+    operations.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.retry.interval</name>
+  <value>1000ms</value>
+  <description>
+    Initial retry interval when retrying operations for any reason other
+    than S3 throttle errors and S3Guard inconsistency resolution.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.consistency.retry.limit</name>
+  <value>14</value>
+  <description>
+    Number of times to retry attempts to read/open/copy files when
+    S3Guard believes a specific version of the file to be available,
+    but the S3 request does not find any version of a file, or a different
+    version.
+  </description>
+</property>
+
+<property>
+  <name>net.topology.script.number.args</name>
+  <value>50</value>
+  <description> The max number of args that the script configured with
+    net.topology.script.file.name should be run with. Each arg is an
+    IP address.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.signature.secret.file</name>
+  <value>/valid/file2</value>
+  <description>
+    The signature secret for signing the authentication tokens.
+    The same secret should be used for RM/NM/NN/DN configurations.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.cross-origin.max-age</name>
+  <value>1800</value>
+  <description>The number of seconds a pre-flighted request can be cached
+    for web services needing cross-origin (CORS) support.</description>
+</property>
+
+</configuration>

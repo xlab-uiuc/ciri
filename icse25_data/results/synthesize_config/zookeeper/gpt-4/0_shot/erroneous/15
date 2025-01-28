@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'electionAlg', 'syncEnabled'], 'reason': ['secureClientPort should be an integer specifying the port for secure client connections.', 'electionAlg is deprecated and should not be used in ZooKeeper version 3.7.0.', 'syncEnabled is not a recognized configuration parameter in ZooKeeper version 3.7.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: secureClientPort	electionAlg	syncEnabled
+[Ciri] Reason for secureClientPort: secureClientPort should be an integer specifying the port for secure client connections.
+[Ciri] Reason for electionAlg: electionAlg is deprecated and should not be used in ZooKeeper version 3.7.0.
+[Ciri] Reason for syncEnabled: syncEnabled is not a recognized configuration parameter in ZooKeeper version 3.7.0.

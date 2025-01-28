@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'client-output-buffer-limit', 'aclfile', 'timeout', 'tls-ca-cert-file', 'oom-score-adj', 'replica-read-only', 'set-proc-title'], 'reason': ["Invalid parameter 'proto-max-bulk-len=80hhhhh'.", "Invalid value for 'client-output-buffer-limit'.", "Invalid parameter 'aclfile'.", "Invalid value for 'timeout'.", "Invalid parameter 'tls-ca-cert-file'.", "Invalid parameter 'oom-score-adj'.", "Invalid parameter 'replica-read-only'.", "Invalid parameter 'set-proc-title'."]}
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'client-output-buffer-limit', 'aclfile', 'timeout', 'tls-ca-cert-file', 'oom-score-adj', 'replica-read-only', 'set-proc-title'], 'reason': ["Invalid parameter 'proto-max-bulk-len=80hhhhh'.", "Invalid value for 'client-output-buffer-limit'.", "Invalid parameter 'aclfile'.", "Invalid value for 'timeout'.", "Invalid parameter 'tls-ca-cert-file'.", "Invalid parameter 'oom-score-adj'.", "Invalid parameter 'replica-read-only'.", "Invalid parameter 'set-proc-title'."]}
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'client-output-buffer-limit', 'oom-score-adj'], 'reason': ["Invalid parameter 'proto-max-bulk-len=80hhhhh'. Expected format: proto-max-bulk-len=<value>", "Invalid parameter 'client-output-buffer-limit=normal 0 0 0'. Expected format: client-output-buffer-limit <class> <hard limit> <soft limit> <soft seconds>", "Invalid parameter 'oom-score-adj=no'. Expected format: oom-score-adj <yes|no>"]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: proto-max-bulk-len	client-output-buffer-limit	aclfile	timeout	tls-ca-cert-file	oom-score-adj	replica-read-only	set-proc-title
+[Ciri] Reason for proto-max-bulk-len: Invalid parameter 'proto-max-bulk-len=80hhhhh'.
+[Ciri] Reason for client-output-buffer-limit: Invalid value for 'client-output-buffer-limit'.
+[Ciri] Reason for aclfile: Invalid parameter 'aclfile'.
+[Ciri] Reason for timeout: Invalid value for 'timeout'.
+[Ciri] Reason for tls-ca-cert-file: Invalid parameter 'tls-ca-cert-file'.
+[Ciri] Reason for oom-score-adj: Invalid parameter 'oom-score-adj'.
+[Ciri] Reason for replica-read-only: Invalid parameter 'replica-read-only'.
+[Ciri] Reason for set-proc-title: Invalid parameter 'set-proc-title'.

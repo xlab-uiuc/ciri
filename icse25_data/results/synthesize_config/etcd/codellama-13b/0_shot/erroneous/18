@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-snapshots'], 'reason': ['heartbeat-interval is not a valid parameter for etcd version 3.5.0', 'max-snapshots is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-write-timeout', 'max-snapshots'], 'reason': ["heartbeat-interval: invalid unit in duration '50'", "proxy-write-timeout: invalid unit in duration '10000'", "max-snapshots: invalid unit in duration '1'"]}
+
+{'hasError': True, 'errParameter': ['enable-v2', 'max-snapshots'], 'reason': ['enable-v2 is not a valid property for etcd version 3.5.0', 'max-snapshots is not a valid property for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['enable-v2', 'max-snapshots'], 'reason': ['enable-v2 is not a valid configuration parameter for etcd version 3.5.0', 'max-snapshots is not a valid configuration parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-snapshots'], 'reason': ['heartbeat-interval must be greater than 0', 'max-snapshots must be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-write-timeout', 'max-snapshots'], 'reason': ['heartbeat-interval must be greater than 0', 'proxy-write-timeout must be greater than 0', 'max-snapshots must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-write-timeout', 'max-snapshots'], 'reason': ['heartbeat-interval: heartbeat-interval is not a valid parameter for etcd version 3.5.0', 'proxy-write-timeout: proxy-write-timeout is not a valid parameter for etcd version 3.5.0', 'max-snapshots: max-snapshots is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-token', 'heartbeat-interval', 'enable-v2', 'proxy-write-timeout', 'max-snapshots'], 'reason': ['initial-cluster-token is not a valid property for etcd version 3.5.0', 'heartbeat-interval is not a valid property for etcd version 3.5.0', 'enable-v2 is not a valid property for etcd version 3.5.0', 'proxy-write-timeout is not a valid property for etcd version 3.5.0', 'max-snapshots is not a valid property for etcd version 3.5.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: heartbeat-interval	proxy-write-timeout	max-snapshots
+[Ciri] Reason for heartbeat-interval: heartbeat-interval must be greater than 0
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout: proxy-write-timeout is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for max-snapshots: max-snapshots must be greater than 0

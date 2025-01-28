@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 14, 10]
+
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.balancer.moverThreads', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The value of 'dfs.balancer.moverThreads' is set to 1000, which is unusually high and may lead to resource contention.", "The value of 'dfs.namenode.gc.time.monitor.sleep.interval.ms' is specified as '1s', which is incorrect because the unit should be in milliseconds as indicated by the property name."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.balancer.moverThreads	dfs.namenode.gc.time.monitor.sleep.interval.ms
+[Ciri] Reason for dfs.balancer.moverThreads: The value of 'dfs.balancer.moverThreads' is set to 1000, which is unusually high and may lead to resource contention.
+[Ciri] Reason for dfs.namenode.gc.time.monitor.sleep.interval.ms: The value of 'dfs.namenode.gc.time.monitor.sleep.interval.ms' is specified as '1s', which is incorrect because the unit should be in milliseconds as indicated by the property name.

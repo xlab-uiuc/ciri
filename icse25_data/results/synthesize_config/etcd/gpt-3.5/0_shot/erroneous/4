@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-write-timeout', 'proxy-read-timeout'], 'reason': ["Invalid parameter 'proxy-refresh-interval'. Expected format: duration (e.g., 1s, 1m)", "Invalid parameter 'proxy-write-timeout'. Expected format: duration (e.g., 1s, 1m)", "Invalid parameter 'proxy-read-timeout'. Expected format: duration (e.g., 1s, 1m)"]}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-write-timeout', 'proxy-read-timeout'], 'reason': ["Invalid parameter 'proxy-refresh-interval'.", "Invalid parameter 'proxy-write-timeout'.", "Invalid parameter 'proxy-read-timeout'."]}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-write-timeout', 'proxy-read-timeout'], 'reason': ["Invalid value for proxy-refresh-interval. It should be a duration value like '5s', '1m', etc.", "Invalid value for proxy-write-timeout. It should be a duration value like '5s', '1m', etc.", "Invalid value for proxy-read-timeout. It should be a duration value like '5s', '1m', etc."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-refresh-interval	proxy-write-timeout	proxy-read-timeout
+[Ciri] Reason for proxy-refresh-interval: Invalid parameter 'proxy-refresh-interval'.
+[Ciri] Reason for proxy-write-timeout: Invalid value for proxy-write-timeout. It should be a duration value like '5s', '1m', etc.
+[Ciri] Reason for proxy-read-timeout: Invalid value for proxy-read-timeout. It should be a duration value like '5s', '1m', etc.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.retry.throttle.limit', 'fs.s3a.connection.request.timeout', 'fs.azure.saskey.usecontainersaskeyforallaccess', 'ipc.[port_number].decay-scheduler.decay-factor', 'hadoop.http.authentication.signature.secret.file', 'ha.zookeeper.acl', 'hadoop.ssl.enabled', 'ha.health-monitor.connect-retry-interval.ms'], 'reason': ['fs.s3a.retry.throttle.limit should be a positive integer', 'fs.s3a.connection.request.timeout should be a positive integer', 'fs.azure.saskey.usecontainersaskeyforallaccess should be a boolean', 'ipc.[port_number].decay-scheduler.decay-factor should be a positive float', 'hadoop.http.authentication.signature.secret.file should be a string', 'ha.zookeeper.acl should be a string', 'hadoop.ssl.enabled should be a boolean', 'ha.health-monitor.connect-retry-interval.ms should be a positive integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.s3a.retry.throttle.limit	fs.s3a.connection.request.timeout	fs.azure.saskey.usecontainersaskeyforallaccess	ipc.[port_number].decay-scheduler.decay-factor	hadoop.http.authentication.signature.secret.file	ha.zookeeper.acl	hadoop.ssl.enabled	ha.health-monitor.connect-retry-interval.ms
+[Ciri] Reason for fs.s3a.retry.throttle.limit: fs.s3a.retry.throttle.limit should be a positive integer
+[Ciri] Reason for fs.s3a.connection.request.timeout: fs.s3a.connection.request.timeout should be a positive integer
+[Ciri] Reason for fs.azure.saskey.usecontainersaskeyforallaccess: fs.azure.saskey.usecontainersaskeyforallaccess should be a boolean
+[Ciri] Reason for ipc.[port_number].decay-scheduler.decay-factor: ipc.[port_number].decay-scheduler.decay-factor should be a positive float
+[Ciri] Reason for hadoop.http.authentication.signature.secret.file: hadoop.http.authentication.signature.secret.file should be a string
+[Ciri] Reason for ha.zookeeper.acl: ha.zookeeper.acl should be a string
+[Ciri] Reason for hadoop.ssl.enabled: hadoop.ssl.enabled should be a boolean
+[Ciri] Reason for ha.health-monitor.connect-retry-interval.ms: ha.health-monitor.connect-retry-interval.ms should be a positive integer

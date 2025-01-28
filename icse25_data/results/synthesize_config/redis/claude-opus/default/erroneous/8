@@ -1,0 +1,16 @@
+Wrong shot number:
+[12, 3, 10]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['unixsocket', 'oom-score-adj', 'oom-score-adj-values'], 'reason': ["The property 'unixsocket' has the value '//hadoop/io/local/redis.sock' which does not follow the correct path format.", "The property 'oom-score-adj' has the value 'no' which is not a valid value. It should be a number.", "The property 'oom-score-adj-values' is not used in the current version."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: unixsocket	oom-score-adj	oom-score-adj-values
+[Ciri] Reason for unixsocket: The property 'unixsocket' has the value '//hadoop/io/local/redis.sock' which does not follow the correct path format.
+[Ciri] Reason for oom-score-adj: The property 'oom-score-adj' has the value 'no' which is not a valid value. It should be a number.
+[Ciri] Reason for oom-score-adj-values: The property 'oom-score-adj-values' is not used in the current version.

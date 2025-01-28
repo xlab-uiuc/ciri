@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 12, 9]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size'], 'reason': ["The property 'fs.ftp.host' has the value '999.-1.0.0' which is not a valid IP address format.", "The property 'fs.s3a.block.size' has the value '32M' which is not a valid block size format. A valid format should include a numeric value followed by a suffix from the set {K,M,G,T,P}."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size'], 'reason': ["The property 'fs.ftp.host' has the value '999.-1.0.0' which is not a valid IP address format.", "The property 'fs.s3a.block.size' has the value '32M' which is not a valid block size format. A valid format should include a suffix from the set {K,M,G,T,P} to scale the numeric value."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size'], 'reason': ["The property 'fs.ftp.host' has the value '999.-1.0.0' which is not a valid IP address format.", "The property 'fs.s3a.block.size' has the value '32M' which is not a valid block size format. A valid format should include a suffix from the set {K,M,G,T,P} to scale the numeric value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.block.size
+[Ciri] Reason for fs.ftp.host: The property 'fs.ftp.host' has the value '999.-1.0.0' which is not a valid IP address format.
+[Ciri] Reason for fs.s3a.block.size: The property 'fs.s3a.block.size' has the value '32M' which is not a valid block size format. A valid format should include a suffix from the set {K,M,G,T,P} to scale the numeric value.

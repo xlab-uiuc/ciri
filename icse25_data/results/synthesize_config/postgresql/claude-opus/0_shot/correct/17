@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_multixact_freeze_table_age', 'autovacuum_vacuum_cost_delay', 'work_mem'], 'reason': ['vacuum_multixact_freeze_table_age is not a valid parameter in PostgreSQL 13. The correct parameter is vacuum_multixact_freeze_table_age.', "The unit 'ms' is not valid for autovacuum_vacuum_cost_delay in PostgreSQL 13. The value should be specified in milliseconds without a unit.", "The unit 'MB' is not valid for work_mem in PostgreSQL 13. The value should be specified in kilobytes without a unit, e.g., '1024' for 1MB."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: vacuum_multixact_freeze_table_age	autovacuum_vacuum_cost_delay	work_mem
+[Ciri] Reason for vacuum_multixact_freeze_table_age: vacuum_multixact_freeze_table_age is not a valid parameter in PostgreSQL 13. The correct parameter is vacuum_multixact_freeze_table_age.
+[Ciri] Reason for autovacuum_vacuum_cost_delay: The unit 'ms' is not valid for autovacuum_vacuum_cost_delay in PostgreSQL 13. The value should be specified in milliseconds without a unit.
+[Ciri] Reason for work_mem: The unit 'MB' is not valid for work_mem in PostgreSQL 13. The value should be specified in kilobytes without a unit, e.g., '1024' for 1MB.

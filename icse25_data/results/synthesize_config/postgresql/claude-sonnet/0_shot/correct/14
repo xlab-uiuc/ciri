@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['data_directory', 'session_replication_role'], 'reason': ["The 'data_directory' parameter should be an absolute path, not a relative path like 'ConfigDir'.", "The 'session_replication_role' parameter is not a valid PostgreSQL configuration parameter in version 13.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: data_directory	session_replication_role
+[Ciri] Reason for data_directory: The 'data_directory' parameter should be an absolute path, not a relative path like 'ConfigDir'.
+[Ciri] Reason for session_replication_role: The 'session_replication_role' parameter is not a valid PostgreSQL configuration parameter in version 13.0.

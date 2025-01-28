@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout'], 'reason': ['proxy-read-timeout should be a positive integer value representing the timeout in milliseconds for reading the streaming response from the proxied server. Setting it to 0 means there is no timeout and the transfer can hang indefinitely.', 'proxy-write-timeout should be a positive integer value representing the timeout in milliseconds for writing the request to the proxied server. The value of 2500 is too high and can lead to issues.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: proxy-read-timeout	proxy-write-timeout
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout should be a positive integer value representing the timeout in milliseconds for reading the streaming response from the proxied server. Setting it to 0 means there is no timeout and the transfer can hang indefinitely.
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout should be a positive integer value representing the timeout in milliseconds for writing the request to the proxied server. The value of 2500 is too high and can lead to issues.

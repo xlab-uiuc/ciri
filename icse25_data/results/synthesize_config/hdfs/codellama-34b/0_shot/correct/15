@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.heartbeat.recheck-interval', 'dfs.blockreport.split.threshold', 'dfs.namenode.checkpoint.period', 'dfs.client.deadnode.detection.rpc.threads', 'dfs.namenode.reencrypt.edek.threads', 'dfs.namenode.upgrade.domain.factor', 'dfs.storage.policy.satisfier.self.retry.timeout.millis', 'dfs.qjournal.http.read.timeout.ms'], 'reason': ['The value of dfs.namenode.heartbeat.recheck-interval is too small. It must be at least 5 minutes.', 'The value of dfs.blockreport.split.threshold is too small. It must be at least 1000000.', 'The value of dfs.namenode.checkpoint.period is too small. It must be at least 3600 seconds.', 'The value of dfs.client.deadnode.detection.rpc.threads is too small. It must be at least 100.', 'The value of dfs.namenode.reencrypt.edek.threads is too small. It must be at least 10.', 'The value of dfs.namenode.upgrade.domain.factor is too small. It must be at least 3.', 'The value of dfs.storage.policy.satisfier.self.retry.timeout.millis is too small. It must be at least 60000.', 'The value of dfs.qjournal.http.read.timeout.ms is too small. It must be at least 300000.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.namenode.heartbeat.recheck-interval	dfs.blockreport.split.threshold	dfs.namenode.checkpoint.period	dfs.client.deadnode.detection.rpc.threads	dfs.namenode.reencrypt.edek.threads	dfs.namenode.upgrade.domain.factor	dfs.storage.policy.satisfier.self.retry.timeout.millis	dfs.qjournal.http.read.timeout.ms
+[Ciri] Reason for dfs.namenode.heartbeat.recheck-interval: The value of dfs.namenode.heartbeat.recheck-interval is too small. It must be at least 5 minutes.
+[Ciri] Reason for dfs.blockreport.split.threshold: The value of dfs.blockreport.split.threshold is too small. It must be at least 1000000.
+[Ciri] Reason for dfs.namenode.checkpoint.period: The value of dfs.namenode.checkpoint.period is too small. It must be at least 3600 seconds.
+[Ciri] Reason for dfs.client.deadnode.detection.rpc.threads: The value of dfs.client.deadnode.detection.rpc.threads is too small. It must be at least 100.
+[Ciri] Reason for dfs.namenode.reencrypt.edek.threads: The value of dfs.namenode.reencrypt.edek.threads is too small. It must be at least 10.
+[Ciri] Reason for dfs.namenode.upgrade.domain.factor: The value of dfs.namenode.upgrade.domain.factor is too small. It must be at least 3.
+[Ciri] Reason for dfs.storage.policy.satisfier.self.retry.timeout.millis: The value of dfs.storage.policy.satisfier.self.retry.timeout.millis is too small. It must be at least 60000.
+[Ciri] Reason for dfs.qjournal.http.read.timeout.ms: The value of dfs.qjournal.http.read.timeout.ms is too small. It must be at least 300000.

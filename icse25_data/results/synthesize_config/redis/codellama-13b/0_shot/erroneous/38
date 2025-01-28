@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['pidfile', 'rdb-save-incremental-fsync', 'hll-sparse-max-bytes'], 'reason': ['pidfile should be a valid file path', 'rdb-save-incremental-fsync should be yes or no', 'hll-sparse-max-bytes should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['pidfile', 'rdb-save-incremental-fsync', 'tls-session-caching'], 'reason': ['pidfile should be a valid file path', 'rdb-save-incremental-fsync should be yes or no', 'tls-session-caching should be yes or no']}
+
+{'hasError': True, 'errParameter': ['pidfile', 'rdb-save-incremental-fsync', 'tls-session-caching'], 'reason': ['pidfile is not a valid file path', 'rdb-save-incremental-fsync is not a valid option', 'tls-session-caching is not a valid option']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: pidfile	rdb-save-incremental-fsync	tls-session-caching
+[Ciri] Reason for pidfile: pidfile should be a valid file path
+[Ciri] Reason for rdb-save-incremental-fsync: rdb-save-incremental-fsync should be yes or no
+[Ciri] Reason for tls-session-caching: tls-session-caching should be yes or no

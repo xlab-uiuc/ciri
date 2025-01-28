@@ -1,0 +1,19 @@
+Wrong shot number:
+[10, 4, 8]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.end.hour', 'hbase.server.scanner.max.result.size'], 'reason': ["The property 'hbase.offpeak.end.hour' has a value of '-2' which is not within the valid range of 0 to 23 for hours.", "The property 'hbase.server.scanner.max.result.size' has a value of '209715200' which is larger than the default value of 100MB. It may lead to increased memory usage."]}
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.end.hour', 'hbase.server.scanner.max.result.size'], 'reason': ["The property 'hbase.offpeak.end.hour' has a value of '-2' which is not within the valid range of 0 to 23 for hours.", "The property 'hbase.server.scanner.max.result.size' has a value of '209715200' which is larger than the default value of 100MB. It may lead to increased memory consumption."]}
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.end.hour', 'hbase.server.scanner.max.result.size'], 'reason': ["The property 'hbase.offpeak.end.hour' has a value of '-2' which is not within the valid range of 0 to 23 for expressing hours.", "The property 'hbase.server.scanner.max.result.size' has a value of '209715200' which is not the default value of '4194304'. It is recommended to keep it within the default range."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.offpeak.end.hour	hbase.server.scanner.max.result.size
+[Ciri] Reason for hbase.offpeak.end.hour: The property 'hbase.offpeak.end.hour' has a value of '-2' which is not within the valid range of 0 to 23 for hours.
+[Ciri] Reason for hbase.server.scanner.max.result.size: The property 'hbase.server.scanner.max.result.size' has a value of '209715200' which is larger than the default value of 100MB. It may lead to increased memory usage.

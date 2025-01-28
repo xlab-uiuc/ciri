@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.nodemanager.minimum.version', 'yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage'], 'reason': ["The property 'yarn.resourcemanager.nodemanager.minimum.version' has an invalid value 'NONE' for yarn version 3.3.0. It should be set to a valid version string or 'EqualToRM'.", "The property 'yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage' has an invalid value 'false' for yarn version 3.3.0. It should be set to 'true' to enforce strict resource limits."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.nodemanager.minimum.version', 'yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage'], 'reason': ["The property 'yarn.resourcemanager.nodemanager.minimum.version' has an invalid value 'NONE' for yarn version 3.3.0. It should be set to a valid version string or 'EqualToRM'.", "The property 'yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage' should have a value of 'true' to enforce strict resource limits for better resource management."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.nodemanager.minimum.version', 'yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage'], 'reason': ["The property 'yarn.resourcemanager.nodemanager.minimum.version' has an invalid value 'NONE' for yarn version 3.3.0. It should be set to a valid version string or 'EqualToRM'.", "The property 'yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage' has an invalid value 'false' for yarn version 3.3.0. It should be set to 'true' to enforce strict resource limits."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.nodemanager.minimum.version	yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage
+[Ciri] Reason for yarn.resourcemanager.nodemanager.minimum.version: The property 'yarn.resourcemanager.nodemanager.minimum.version' has an invalid value 'NONE' for yarn version 3.3.0. It should be set to a valid version string or 'EqualToRM'.
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage: The property 'yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage' has an invalid value 'false' for yarn version 3.3.0. It should be set to 'true' to enforce strict resource limits.

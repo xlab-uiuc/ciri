@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.cache.secs', 'fs.defaultFS', 'ha.zookeeper.parent-znode'], 'reason': ["The 'usage' tag is not a valid tag for property 'hadoop.security.groups.cache.secs'.", "The 'usage' tag is not a valid tag for property 'fs.defaultFS'.", "The 'usage' tag is not a valid tag for property 'ha.zookeeper.parent-znode'."]}
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'ha.zookeeper.parent-znode'], 'reason': ["The 'fs.defaultFS' property should not have a usage tag.", "The 'ha.zookeeper.parent-znode' property should not have a usage tag."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.cache.secs', 'fs.defaultFS', 'ha.zookeeper.parent-znode'], 'reason': ["The 'usage' tag is not a valid tag for property 'hadoop.security.groups.cache.secs'.", "The 'usage' tag is not a valid tag for property 'fs.defaultFS'.", "The 'usage' tag is not a valid tag for property 'ha.zookeeper.parent-znode'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.groups.cache.secs	fs.defaultFS	ha.zookeeper.parent-znode
+[Ciri] Reason for hadoop.security.groups.cache.secs: The 'usage' tag is not a valid tag for property 'hadoop.security.groups.cache.secs'.
+[Ciri] Reason for fs.defaultFS: The 'usage' tag is not a valid tag for property 'fs.defaultFS'.
+[Ciri] Reason for ha.zookeeper.parent-znode: The 'usage' tag is not a valid tag for property 'ha.zookeeper.parent-znode'.

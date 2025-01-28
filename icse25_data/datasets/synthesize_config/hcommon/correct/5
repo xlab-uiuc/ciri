@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.authentication</name>
+  <value>simple</value>
+  <description>Possible values are simple (no authentication), and kerberos
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.sensitive-config-keys</name>
+  <value>secret$</value>
+  <description>A comma-separated or multi-line list of regular expressions to
+      match configuration keys that should be redacted where appropriate, for
+      example, when logging modified properties during a reconfiguration,
+      private credentials should not be logged.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.kerberos.min.seconds.before.relogin</name>
+  <value>60</value>
+    <description>The minimum time between relogin attempts for Kerberos, in
+    seconds.
+    </description>
+</property>
+
+<property>
+  <name>fs.s3a.aws.credentials.provider</name>
+  <value>org.apache.hadoop.fs.s3a.TemporaryAWSCredentialsProvider,org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider,com.amazonaws.auth.EnvironmentVariableCredentialsProvider,org.apache.hadoop.fs.s3a.auth.IAMInstanceCredentialsProvider</value>
+  <description>
+    Comma-separated class names of credential provider classes which implement
+    com.amazonaws.auth.AWSCredentialsProvider.
+
+    When S3A delegation tokens are not enabled, this list will be used
+    to directly authenticate with S3 and DynamoDB services.
+    When S3A Delegation tokens are enabled, depending upon the delegation
+    token binding it may be used
+    to communicate wih the STS endpoint to request session/role
+    credentials.
+
+    These are loaded and queried in sequence for a valid set of credentials.
+    Each listed class must implement one of the following means of
+    construction, which are attempted in order:
+    * a public constructor accepting java.net.URI and
+        org.apache.hadoop.conf.Configuration,
+    * a public constructor accepting org.apache.hadoop.conf.Configuration,
+    * a public static method named getInstance that accepts no
+       arguments and returns an instance of
+       com.amazonaws.auth.AWSCredentialsProvider, or
+    * a public default constructor.
+
+    Specifying org.apache.hadoop.fs.s3a.AnonymousAWSCredentialsProvider allows
+    anonymous access to a publicly accessible S3 bucket without any credentials.
+    Please note that allowing anonymous access to an S3 bucket compromises
+    security and therefore is unsuitable for most use cases. It can be useful
+    for accessing public data sets without requiring AWS credentials.
+
+    If unspecified, then the default list of credential provider classes,
+    queried in sequence, is:
+    * org.apache.hadoop.fs.s3a.TemporaryAWSCredentialsProvider: looks
+       for session login secrets in the Hadoop configuration.
+    * org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider:
+       Uses the values of fs.s3a.access.key and fs.s3a.secret.key.
+    * com.amazonaws.auth.EnvironmentVariableCredentialsProvider: supports
+        configuration of AWS access key ID and secret access key in
+        environment variables named AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY,
+        and AWS_SESSION_TOKEN as documented in the AWS SDK.
+    * org.apache.hadoop.fs.s3a.auth.IAMInstanceCredentialsProvider: picks up
+       IAM credentials of any EC2 VM or AWS container in which the process is running.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.block.size</name>
+  <value>32M</value>
+  <description>Block size to use when reading files using s3a: file system.
+    A suffix from the set {K,M,G,T,P} may be used to scale the numeric value.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].weighted-cost.lockshared</name>
+  <value>10</value>
+  <description>The weight multiplier to apply to the time spent in the
+    processing phase which holds a shared (read) lock.
+    This property applies to WeightedTimeCostProvider.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.simple.anonymous.allowed</name>
+  <value>true</value>
+  <description>
+    Indicates if anonymous requests are allowed when using 'simple' authentication.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.enabled</name>
+  <value>false</value>
+  <description>
+    Deprecated. Use dfs.http.policy and yarn.http.policy instead.
+  </description>
+</property>
+
+</configuration>

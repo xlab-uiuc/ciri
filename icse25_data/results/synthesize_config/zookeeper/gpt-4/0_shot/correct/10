@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['electionAlg', 'minSessionTimeout', 'clientPortAddress'], 'reason': ["The 'electionAlg' parameter is deprecated and should not be used in ZooKeeper version 3.7.0.", "The 'minSessionTimeout' should not be negative. It defines the minimum session timeout in milliseconds that the server will allow the client to request.", "The 'clientPortAddress' format is incorrect. It should only specify the address without the port. The port should be defined with the 'clientPort' parameter."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: electionAlg	minSessionTimeout	clientPortAddress
+[Ciri] Reason for electionAlg: The 'electionAlg' parameter is deprecated and should not be used in ZooKeeper version 3.7.0.
+[Ciri] Reason for minSessionTimeout: The 'minSessionTimeout' should not be negative. It defines the minimum session timeout in milliseconds that the server will allow the client to request.
+[Ciri] Reason for clientPortAddress: The 'clientPortAddress' format is incorrect. It should only specify the address without the port. The port should be defined with the 'clientPort' parameter.

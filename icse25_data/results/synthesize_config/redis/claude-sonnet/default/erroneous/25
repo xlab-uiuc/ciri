@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 1, 5]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['always-show-logo'], 'reason': ["The property 'always-show-logo' has the value 'hadoop' which is not a valid boolean value."]}
+
+{'hasError': True, 'errParameter': ['always-show-logo', 'oom-score-adj-values'], 'reason': ["The property 'always-show-logo' has the value 'hadoop' which is not a valid boolean value.", "The property 'oom-score-adj-values' is not a valid configuration parameter in Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['always-show-logo', 'oom-score-adj-values'], 'reason': ["The property 'always-show-logo' has the value 'hadoop' which is not a valid boolean value.", "The property 'oom-score-adj-values' is not a valid configuration option in Redis 7.0.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: always-show-logo	oom-score-adj-values
+[Ciri] Reason for always-show-logo: The property 'always-show-logo' has the value 'hadoop' which is not a valid boolean value.
+[Ciri] Reason for oom-score-adj-values: The property 'oom-score-adj-values' is not a valid configuration parameter in Redis 7.0.0.

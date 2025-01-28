@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.storescanner.parallel.seek.enable', 'hbase.hstore.compaction.throughput.lower.bound', 'hbase.hstore.bytes.per.checksum', 'hbase.client.scanner.max.result.size', 'hbase.rest.filter.classes', 'hbase.http.max.threads'], 'reason': ['hbase.storescanner.parallel.seek.enable is not a valid property', 'hbase.hstore.compaction.throughput.lower.bound is not a valid property', 'hbase.hstore.bytes.per.checksum is not a valid property', 'hbase.client.scanner.max.result.size is not a valid property', 'hbase.rest.filter.classes is not a valid property', 'hbase.http.max.threads is not a valid property']}
+
+{'hasError': True, 'errParameter': ['hbase.client.scanner.max.result.size'], 'reason': ['The value of hbase.client.scanner.max.result.size is 4194304, which is less than the default value of 2MB. This can cause the scanner to return incomplete results, especially when the scanner is used to scan a large row.']}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.throughput.lower.bound'], 'reason': ['hbase.hstore.compaction.throughput.lower.bound is not a valid property for hbase version 2.2.7']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.rest.filter.classes'], 'reason': ['The value of hbase.rest.filter.classes is not a valid class name.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.rest.filter.classes'], 'reason': ['The value of hbase.rest.filter.classes is not a valid class name. The value is org.apache.hadoop.hbase.rest.filter.GzipFilter.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.rest.filter.classes
+[Ciri] Reason for hbase.rest.filter.classes: The value of hbase.rest.filter.classes is not a valid class name. The value is org.apache.hadoop.hbase.rest.filter.GzipFilter.

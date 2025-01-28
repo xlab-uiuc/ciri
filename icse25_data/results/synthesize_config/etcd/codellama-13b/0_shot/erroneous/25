@@ -1,0 +1,24 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-write-timeout', 'auto-tls'], 'reason': ['proxy-failure-wait is not a valid parameter for etcd version 3.5.0', 'proxy-write-timeout is not a valid parameter for etcd version 3.5.0', 'auto-tls is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-write-timeout', 'max-snapshots', 'force-new-cluster', 'auto-tls'], 'reason': ['proxy-failure-wait is not a valid property', 'proxy-write-timeout is not a valid property', 'max-snapshots is not a valid property', 'force-new-cluster is not a valid property', 'auto-tls is not a valid property']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-write-timeout'], 'reason': ['proxy-failure-wait must be a positive integer. The given value is 5000.', 'proxy-write-timeout must be a positive integer. The given value is 10000.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-write-timeout', 'max-snapshots', 'force-new-cluster', 'auto-tls'], 'reason': ['proxy-failure-wait is not a valid parameter', 'proxy-write-timeout is not a valid parameter', 'max-snapshots is not a valid parameter', 'force-new-cluster is not a valid parameter', 'auto-tls is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-write-timeout', 'max-wals', 'max-snapshots', 'force-new-cluster', 'auto-tls'], 'reason': ['proxy-failure-wait is not a valid parameter for etcd version 3.5.0', 'proxy-write-timeout is not a valid parameter for etcd version 3.5.0', 'max-wals is not a valid parameter for etcd version 3.5.0', 'max-snapshots is not a valid parameter for etcd version 3.5.0', 'force-new-cluster is not a valid parameter for etcd version 3.5.0', 'auto-tls is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-write-timeout', 'max-snapshots', 'force-new-cluster', 'auto-tls'], 'reason': ['proxy-failure-wait is not a valid property for etcd version 3.5.0', 'proxy-write-timeout is not a valid property for etcd version 3.5.0', 'max-snapshots is not a valid property for etcd version 3.5.0', 'force-new-cluster is not a valid property for etcd version 3.5.0', 'auto-tls is not a valid property for etcd version 3.5.0']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: proxy-failure-wait	proxy-write-timeout	max-snapshots	force-new-cluster	auto-tls
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait is not a valid parameter
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout is not a valid parameter
+[Ciri] Reason for max-snapshots: max-snapshots is not a valid parameter
+[Ciri] Reason for force-new-cluster: force-new-cluster is not a valid property for etcd version 3.5.0
+[Ciri] Reason for auto-tls: auto-tls is not a valid parameter

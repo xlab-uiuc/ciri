@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.status.listener.class', 'hbase.rest.filter.classes'], 'reason': ['The class org.apache.hadoop.hbase.client.ClusterStatusListener$MulticastListener does not exist in HBase 2.2.7. The status listener feature was removed in HBase 2.0.0.', 'The class org.apache.hadoop.hbase.rest.filter.GzipFilter does not exist in HBase 2.2.7. REST server support was removed in HBase 2.0.0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.status.listener.class	hbase.rest.filter.classes
+[Ciri] Reason for hbase.status.listener.class: The class org.apache.hadoop.hbase.client.ClusterStatusListener$MulticastListener does not exist in HBase 2.2.7. The status listener feature was removed in HBase 2.0.0.
+[Ciri] Reason for hbase.rest.filter.classes: The class org.apache.hadoop.hbase.rest.filter.GzipFilter does not exist in HBase 2.2.7. REST server support was removed in HBase 2.0.0.

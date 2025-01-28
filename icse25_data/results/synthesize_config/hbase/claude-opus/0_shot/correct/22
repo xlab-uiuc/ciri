@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl', 'hbase.hstore.bytes.per.checksum'], 'reason': ["In HBase 2.x, the 'hlog' term has been replaced with 'wal'. The correct property name is 'hbase.regionserver.wal.writer.impl'.", "The default value of 'hbase.hstore.bytes.per.checksum' in HBase 2.2.7 is 4096, but the configuration has it set to 16384."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.hlog.writer.impl	hbase.hstore.bytes.per.checksum
+[Ciri] Reason for hbase.regionserver.hlog.writer.impl: In HBase 2.x, the 'hlog' term has been replaced with 'wal'. The correct property name is 'hbase.regionserver.wal.writer.impl'.
+[Ciri] Reason for hbase.hstore.bytes.per.checksum: The default value of 'hbase.hstore.bytes.per.checksum' in HBase 2.2.7 is 4096, but the configuration has it set to 16384.

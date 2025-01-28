@@ -1,0 +1,34 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'listen-peer-urls', 'enable-pprof', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ['Invalid value for proxy-dial-timeout. It should be a duration value.', "Invalid value for listen-peer-urls. It should be in the format of 'http://<host>:<port>'.", 'Invalid value for enable-pprof. It should be a boolean value.', 'Invalid value for proxy-refresh-interval. It should be a duration value.', 'Invalid value for quota-backend-bytes. It should be an integer value.', "Invalid value for auto-compaction-mode. It should be either 'periodic' or 'revision'."]}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'enable-pprof', 'logger', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ['proxy-dial-timeout value is too large.', 'enable-pprof should be a boolean value.', 'logger value is not valid.', 'proxy-refresh-interval value is not in milliseconds.', 'quota-backend-bytes value is not specified correctly.', 'auto-compaction-mode value is not valid.']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'snapshot-count', 'listen-peer-urls', 'enable-pprof', 'logger', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ["Invalid value for 'proxy-dial-timeout'.", "Invalid value for 'snapshot-count'.", "Invalid value for 'listen-peer-urls'.", "Invalid value for 'enable-pprof'.", "Invalid value for 'logger'.", "Invalid value for 'proxy-refresh-interval'.", "Invalid value for 'quota-backend-bytes'.", "Invalid value for 'auto-compaction-mode'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'listen-peer-urls', 'enable-pprof', 'logger', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ['Invalid value for proxy-dial-timeout. It should be a duration value.', 'Invalid value for listen-peer-urls. It should be in the format of URLs.', 'Invalid value for enable-pprof. It should be a boolean value.', 'Invalid value for logger. It should be a valid logging configuration.', 'Invalid value for proxy-refresh-interval. It should be a duration value.', 'Invalid value for quota-backend-bytes. It should be a numeric value.', "Invalid value for auto-compaction-mode. It should be 'periodic' or 'revision'."]}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'listen-peer-urls', 'logger', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ["Invalid value for 'proxy-dial-timeout'. It should be in milliseconds.", "Invalid value for 'listen-peer-urls'. It should start with 'http://' or 'https://'.", "Invalid value for 'logger'. It should be a valid logger configuration.", "Invalid value for 'proxy-refresh-interval'. It should be in milliseconds.", "Invalid value for 'quota-backend-bytes'. It should be a numeric value.", "Invalid value for 'auto-compaction-mode'. It should be 'periodic' or 'revision'."]}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'enable-pprof', 'logger', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ['proxy-dial-timeout value is too large. It should be in milliseconds.', 'enable-pprof should be a boolean value (true/false).', 'logger value should be a valid logging configuration.', 'proxy-refresh-interval value should be in milliseconds.', 'quota-backend-bytes value should be a valid size.', "auto-compaction-mode should be set to 'periodic' or 'revision'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'listen-peer-urls', 'enable-pprof', 'logger', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ['Invalid value for proxy-dial-timeout. It should be a duration value.', 'Invalid value for listen-peer-urls. It should be in the format of URLs.', 'Invalid value for enable-pprof. It should be a boolean value.', 'Invalid value for logger. It should be a valid logger configuration.', 'Invalid value for proxy-refresh-interval. It should be a duration value.', 'Invalid value for quota-backend-bytes. It should be an integer value.', 'Invalid value for auto-compaction-mode. It should be a valid auto-compaction mode.']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'listen-peer-urls', 'enable-pprof', 'logger', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ['Invalid value for proxy-dial-timeout. It should be a duration value.', 'Invalid value for listen-peer-urls. It should be in the format of URLs.', 'Invalid value for enable-pprof. It should be a boolean value.', 'Invalid value for logger. It should be a valid logging configuration.', 'Invalid value for proxy-refresh-interval. It should be a duration value.', 'Invalid value for quota-backend-bytes. It should be a numeric value.', "Invalid value for auto-compaction-mode. It should be either 'periodic' or 'revision'."]}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'listen-peer-urls', 'enable-pprof', 'logger', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ['proxy-dial-timeout value is too large.', 'listen-peer-urls should use https instead of http for secure communication.', 'enable-pprof should be a boolean value (true/false).', 'logger value should be a valid logging configuration.', 'proxy-refresh-interval value is not in milliseconds.', 'quota-backend-bytes value should be specified in bytes.', "auto-compaction-mode value should be 'periodic' or 'revision'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: proxy-dial-timeout	listen-peer-urls	enable-pprof	logger	proxy-refresh-interval	quota-backend-bytes	auto-compaction-mode
+[Ciri] Reason for proxy-dial-timeout: Invalid value for proxy-dial-timeout. It should be a duration value.
+[Ciri] Reason for listen-peer-urls: Invalid value for listen-peer-urls. It should be in the format of URLs.
+[Ciri] Reason for enable-pprof: Invalid value for enable-pprof. It should be a boolean value.
+[Ciri] Reason for logger: Invalid value for logger. It should be a valid logger configuration.
+[Ciri] Reason for proxy-refresh-interval: Invalid value for proxy-refresh-interval. It should be a duration value.
+[Ciri] Reason for quota-backend-bytes: Invalid value for quota-backend-bytes. It should be an integer value.
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode value should be 'periodic' or 'revision'.

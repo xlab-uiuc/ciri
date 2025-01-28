@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'dbfilename', 'lazyfree-lazy-server-del', 'aclfile', 'supervised', 'tls-protocols', 'tcp-keepalive', 'enable-protected-configs'], 'reason': ["The parameter 'repl-diskless-load' is not a valid Redis configuration option in version 7.0.0.", "The parameter 'dbfilename' is not a valid Redis configuration option in version 7.0.0. The correct parameter is 'dir' to specify the directory for the database files.", "The parameter 'lazyfree-lazy-server-del' is not a valid Redis configuration option in version 7.0.0.", "The parameter 'aclfile' is not a valid Redis configuration option in version 7.0.0. Redis ACL configuration is done through the 'user' configuration directive.", "The parameter 'supervised' is not a valid Redis configuration option in version 7.0.0.", "The parameter 'tls-protocols' is not a valid Redis configuration option in version 7.0.0. Redis supports TLS configuration through other directives like 'tls-cert-file', 'tls-key-file', etc.", "The parameter 'tcp-keepalive' is not a valid Redis configuration option in version 7.0.0.", "The parameter 'enable-protected-configs' is not a valid Redis configuration option in version 7.0.0."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: repl-diskless-load	dbfilename	lazyfree-lazy-server-del	aclfile	supervised	tls-protocols	tcp-keepalive	enable-protected-configs
+[Ciri] Reason for repl-diskless-load: The parameter 'repl-diskless-load' is not a valid Redis configuration option in version 7.0.0.
+[Ciri] Reason for dbfilename: The parameter 'dbfilename' is not a valid Redis configuration option in version 7.0.0. The correct parameter is 'dir' to specify the directory for the database files.
+[Ciri] Reason for lazyfree-lazy-server-del: The parameter 'lazyfree-lazy-server-del' is not a valid Redis configuration option in version 7.0.0.
+[Ciri] Reason for aclfile: The parameter 'aclfile' is not a valid Redis configuration option in version 7.0.0. Redis ACL configuration is done through the 'user' configuration directive.
+[Ciri] Reason for supervised: The parameter 'supervised' is not a valid Redis configuration option in version 7.0.0.
+[Ciri] Reason for tls-protocols: The parameter 'tls-protocols' is not a valid Redis configuration option in version 7.0.0. Redis supports TLS configuration through other directives like 'tls-cert-file', 'tls-key-file', etc.
+[Ciri] Reason for tcp-keepalive: The parameter 'tcp-keepalive' is not a valid Redis configuration option in version 7.0.0.
+[Ciri] Reason for enable-protected-configs: The parameter 'enable-protected-configs' is not a valid Redis configuration option in version 7.0.0.

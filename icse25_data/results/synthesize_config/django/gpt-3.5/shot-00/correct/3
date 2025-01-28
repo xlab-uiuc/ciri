@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_PROXY_SSL_HEADER', 'EMAIL_SSL_KEYFILE', 'SESSION_COOKIE_HTTPONLY', 'LANGUAGE_COOKIE_PATH'], 'reason': ["SECURE_PROXY_SSL_HEADER should be set to a tuple of header and value, e.g., ('HTTP_X_FORWARDED_PROTO', 'https')", 'EMAIL_SSL_KEYFILE should not be set to None, provide the path to the SSL key file', 'SESSION_COOKIE_HTTPONLY should be set to True for security reasons', "LANGUAGE_COOKIE_PATH should be set to a specific path, e.g., '/'"]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: SECURE_PROXY_SSL_HEADER	EMAIL_SSL_KEYFILE	SESSION_COOKIE_HTTPONLY	LANGUAGE_COOKIE_PATH
+[Ciri] Reason for SECURE_PROXY_SSL_HEADER: SECURE_PROXY_SSL_HEADER should be set to a tuple of header and value, e.g., ('HTTP_X_FORWARDED_PROTO', 'https')
+[Ciri] Reason for EMAIL_SSL_KEYFILE: EMAIL_SSL_KEYFILE should not be set to None, provide the path to the SSL key file
+[Ciri] Reason for SESSION_COOKIE_HTTPONLY: SESSION_COOKIE_HTTPONLY should be set to True for security reasons
+[Ciri] Reason for LANGUAGE_COOKIE_PATH: LANGUAGE_COOKIE_PATH should be set to a specific path, e.g., '/'

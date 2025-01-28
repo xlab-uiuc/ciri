@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_parallel_workers', 'max_slot_wal_keep_size', 'recovery_prefetch'], 'reason': ['max_parallel_workers should be an integer between 0 and 128', 'max_slot_wal_keep_size should be an integer between 0 and 1024', "recovery_prefetch should be one of the following: 'off', 'on', 'try'"]}
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'recovery_prefetch'], 'reason': ["autovacuum_naptime is not a valid value for this property. Valid values are integers followed by units (e.g., '1min').", "recovery_prefetch is not a valid value for this property. Valid values are 'off', 'read', 'readwrite', or 'try'."]}
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'recovery_prefetch'], 'reason': ["Invalid time format. Valid time formats are: 'HH:MM:SS' or 'HH:MM'", "Invalid value for recovery_prefetch. Valid values are: 'off', 'on', 'try'"]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autovacuum_naptime	recovery_prefetch
+[Ciri] Reason for autovacuum_naptime: autovacuum_naptime is not a valid value for this property. Valid values are integers followed by units (e.g., '1min').
+[Ciri] Reason for recovery_prefetch: recovery_prefetch is not a valid value for this property. Valid values are 'off', 'read', 'readwrite', or 'try'.

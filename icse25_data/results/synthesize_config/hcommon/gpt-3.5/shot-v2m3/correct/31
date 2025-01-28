@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 11, 14]
+
+Correct shot number:
+[16, 13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.mapfile.bloom.error.rate', 'hadoop.ssl.enabled'], 'reason': ["The property 'io.mapfile.bloom.error.rate' should have a value between 0 and 1 to represent the rate of false positives in BloomFilter.", "The property 'hadoop.ssl.enabled' is deprecated. Use 'dfs.http.policy' and 'yarn.http.policy' instead."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.mapfile.bloom.error.rate	hadoop.ssl.enabled
+[Ciri] Reason for io.mapfile.bloom.error.rate: The property 'io.mapfile.bloom.error.rate' should have a value between 0 and 1 to represent the rate of false positives in BloomFilter.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' is deprecated. Use 'dfs.http.policy' and 'yarn.http.policy' instead.

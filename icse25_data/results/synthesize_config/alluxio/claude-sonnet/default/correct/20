@@ -1,0 +1,15 @@
+Wrong shot number:
+[6, 5, 11]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.shell.backup.state.lock.timeout', 'alluxio.master.file.access.time.update.precision'], 'reason': ["The property 'alluxio.master.shell.backup.state.lock.timeout' has the value '0s' which is invalid. The minimum value should be greater than 0.", "The property 'alluxio.master.file.access.time.update.precision' has the value '2d' which is invalid. The valid values are 'MILLISECOND', 'SECOND', 'MINUTE', 'HOUR', or 'DAY'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.shell.backup.state.lock.timeout	alluxio.master.file.access.time.update.precision
+[Ciri] Reason for alluxio.master.shell.backup.state.lock.timeout: The property 'alluxio.master.shell.backup.state.lock.timeout' has the value '0s' which is invalid. The minimum value should be greater than 0.
+[Ciri] Reason for alluxio.master.file.access.time.update.precision: The property 'alluxio.master.file.access.time.update.precision' has the value '2d' which is invalid. The valid values are 'MILLISECOND', 'SECOND', 'MINUTE', 'HOUR', or 'DAY'.

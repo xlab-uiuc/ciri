@@ -1,0 +1,15 @@
+Wrong shot number:
+[10, 3, 9]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.max.perregion.tasks', 'hbase.hstore.compaction.max.size'], 'reason': ["The property 'hbase.client.max.perregion.tasks' has a value that should not exceed 'hbase.client.max.total.tasks'.", "The property 'hbase.hstore.compaction.max.size' has a value that is too high, even exceeding the maximum value for a long type in Java."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.client.max.perregion.tasks	hbase.hstore.compaction.max.size
+[Ciri] Reason for hbase.client.max.perregion.tasks: The property 'hbase.client.max.perregion.tasks' has a value that should not exceed 'hbase.client.max.total.tasks'.
+[Ciri] Reason for hbase.hstore.compaction.max.size: The property 'hbase.hstore.compaction.max.size' has a value that is too high, even exceeding the maximum value for a long type in Java.

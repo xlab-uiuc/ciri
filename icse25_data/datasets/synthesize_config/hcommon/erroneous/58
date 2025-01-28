@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.credential.provider.path</name>
+  <value>/valid/file1</value>
+  <description>
+    A comma-separated list of URLs that indicates the type and
+    location of a list of providers that should be consulted.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.cli.prune.age</name>
+  <value>86400000</value>
+    <description>
+        Default age (in milliseconds) after which to prune metadata from the
+        metadatastore when the prune command is run.  Can be overridden on the
+        command-line.
+    </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.enabled</name>
+  <value>false</value>
+  <description>Is S3 Select enabled?</description>
+</property>
+
+<property>
+  <name>fs.s3a.change.detection.source</name>
+  <value>etag</value>
+  <description>
+    Select which S3 object attribute to use for change detection.
+    Currently support 'etag' for S3 object eTags and 'versionid' for
+    S3 object version IDs.  Use of version IDs requires object versioning to be
+    enabled for each S3 bucket utilized.  Object versioning is disabled on
+    buckets by default. When version ID is used, the buckets utilized should
+    have versioning enabled before any data is written.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].cost-provider.impl</name>
+  <value>org.apache.hadoop.ipc.DefaultCostProvider</value>
+  <description>The cost provider mapping user requests to their cost. To
+    enable determination of cost based on processing time, use
+    org.apache.hadoop.ipc.WeightedTimeCostProvider.
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].weighted-cost.lockshared</name>
+  <value>20</value>
+  <description>The weight multiplier to apply to the time spent in the
+    processing phase which holds a shared (read) lock.
+    This property applies to WeightedTimeCostProvider.
+  </description>
+</property>
+
+<property>
+  <name>ftp.stream-buffer-size</name>
+  <value>4096</value>
+  <description>The size of buffer to stream files.
+  The size of this buffer should probably be a multiple of hardware
+  page size (4096 on Intel x86), and it determines how much data is
+  buffered during read and write operations.</description>
+</property>
+
+<property>
+  <name>ftp.bytes-per-checksum</name>
+  <value>8192</value>
+  <description>The number of bytes per checksum.  Must not be larger than
+  ftp.stream-buffer-size</description>
+</property>
+
+</configuration>

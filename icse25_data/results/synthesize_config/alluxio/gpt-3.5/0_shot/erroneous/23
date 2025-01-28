@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.ufs.active.sync.event.rate.interval', 'alluxio.worker.tieredstore.level1.watermark.high.ratio', 'alluxio.worker.free.space.timeout'], 'reason': ["Invalid time unit 'sec' for property 'alluxio.master.ufs.active.sync.event.rate.interval'. Use 's' for seconds.", "Value for 'alluxio.worker.tieredstore.level1.watermark.high.ratio' should be a decimal value between 0 and 1.", "Invalid time unit 'sec' for property 'alluxio.worker.free.space.timeout'. Use 's' for seconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level1.watermark.high.ratio', 'alluxio.worker.free.space.timeout'], 'reason': ["Incorrect property for alluxio.worker.tieredstore.level1.watermark.high.ratio. It should be 'alluxio.worker.tieredstore.level1.watermark.high.ratio.bytes' for Alluxio version 2.5.0.", "Incorrect property for alluxio.worker.free.space.timeout. It should be 'alluxio.worker.tieredstore.level1.watermark.high.ratio.bytes' for Alluxio version 2.5.0."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level1.watermark.high.ratio', 'alluxio.worker.free.space.timeout'], 'reason': ["The property 'alluxio.worker.tieredstore.level1.watermark.high.ratio' should be in the range [0.0, 1.0].", "The property 'alluxio.worker.free.space.timeout' should have a valid time unit (e.g., ms, sec, min, hr)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.worker.tieredstore.level1.watermark.high.ratio	alluxio.worker.free.space.timeout
+[Ciri] Reason for alluxio.worker.tieredstore.level1.watermark.high.ratio: The property 'alluxio.worker.tieredstore.level1.watermark.high.ratio' should be in the range [0.0, 1.0].
+[Ciri] Reason for alluxio.worker.free.space.timeout: The property 'alluxio.worker.free.space.timeout' should have a valid time unit (e.g., ms, sec, min, hr).

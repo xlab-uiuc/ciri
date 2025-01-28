@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.master.client.pool.size.max', 'alluxio.user.network.rpc.netty.worker.threads'], 'reason': ['The value of alluxio.user.file.master.client.pool.size.max is not a valid integer.', 'The value of alluxio.user.network.rpc.netty.worker.threads is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.state.lock.exclusive.duration', 'alluxio.user.network.rpc.netty.worker.threads', 'alluxio.user.file.master.client.pool.size.max'], 'reason': ['The value of alluxio.master.backup.state.lock.exclusive.duration is invalid. The value must be a positive integer.', 'The value of alluxio.user.network.rpc.netty.worker.threads is invalid. The value must be a positive integer.', 'The value of alluxio.user.file.master.client.pool.size.max is invalid. The value must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.state.lock.exclusive.duration', 'alluxio.user.network.rpc.netty.worker.threads', 'alluxio.user.file.master.client.pool.size.max'], 'reason': ['alluxio.master.backup.state.lock.exclusive.duration should be a positive duration', 'alluxio.user.network.rpc.netty.worker.threads should be a positive integer', 'alluxio.user.file.master.client.pool.size.max should be a positive integer']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.backup.state.lock.exclusive.duration	alluxio.user.network.rpc.netty.worker.threads	alluxio.user.file.master.client.pool.size.max
+[Ciri] Reason for alluxio.master.backup.state.lock.exclusive.duration: alluxio.master.backup.state.lock.exclusive.duration should be a positive duration
+[Ciri] Reason for alluxio.user.network.rpc.netty.worker.threads: The value of alluxio.user.network.rpc.netty.worker.threads is invalid. The value must be a positive integer.
+[Ciri] Reason for alluxio.user.file.master.client.pool.size.max: alluxio.user.file.master.client.pool.size.max should be a positive integer

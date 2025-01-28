@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.dynamic.jars.dir'], 'reason': ["The value for 'hbase.dynamic.jars.dir' should be a valid directory path. The current value '//hadoop/io/local' is not a valid directory path."]}
+
+{'hasError': True, 'errParameter': ['hbase.dynamic.jars.dir'], 'reason': ["The value for 'hbase.dynamic.jars.dir' property contains extra characters '//'. It should be '/hadoop/io/local'."]}
+
+{'hasError': True, 'errParameter': ['hbase.dynamic.jars.dir'], 'reason': ["The value '//hadoop/io/local' for property 'hbase.dynamic.jars.dir' seems to have an extra '/' at the beginning. It should be corrected to '/hadoop/io/local'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.dynamic.jars.dir
+[Ciri] Reason for hbase.dynamic.jars.dir: The value for 'hbase.dynamic.jars.dir' property contains extra characters '//'. It should be '/hadoop/io/local'.

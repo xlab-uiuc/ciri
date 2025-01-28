@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 3, 10]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'stream-node-max-entries'], 'reason': ["The property 'daemonize' has an invalid value '10'. It should be a boolean (yes or no).", "The property 'stream-node-max-entries' has the value '50' which is below the recommended minimum value."]}
+
+{'hasError': True, 'errParameter': ['daemonize'], 'reason': ["The property 'daemonize' has the value '10' which is not a valid boolean value."]}
+
+{'hasError': True, 'errParameter': ['daemonize', 'stream-node-max-entries'], 'reason': ["The property 'daemonize' has an invalid value '10'. It should be a boolean value (yes or no).", "The property 'stream-node-max-entries' has the value '50' which is below the recommended minimum value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: daemonize	stream-node-max-entries
+[Ciri] Reason for daemonize: The property 'daemonize' has an invalid value '10'. It should be a boolean value (yes or no).
+[Ciri] Reason for stream-node-max-entries: The property 'stream-node-max-entries' has the value '50' which is below the recommended minimum value.

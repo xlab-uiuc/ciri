@@ -1,0 +1,27 @@
+Wrong shot number:
+[1, 12, 7]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.ufs.block.open.timeout'], 'reason': ["The value of the property 'alluxio.worker.ufs.block.open.timeout' should be smaller or equal to the value of the property 'alluxio.master.worker.timeout'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.keytab.file'], 'reason': ["The property 'alluxio.worker.keytab.file' has the value '/valid/file2' which is not a valid file."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.flush.batch.time', 'alluxio.master.journal.flush.timeout'], 'reason': ["The value of the property 'alluxio.master.journal.flush.batch.time' should be smaller or equal to the value of the property 'alluxio.master.journal.flush.timeout'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.keytab.file'], 'reason': ["The property 'alluxio.worker.keytab.file' has the value '/valid/file2' which is not of the correct type String."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.flush.batch.time', 'alluxio.master.journal.flush.timeout'], 'reason': ["The value of the property 'alluxio.master.journal.flush.batch.time' should be smaller or equal to the value of the property 'alluxio.master.journal.flush.timeout'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.flush.batch.time', 'alluxio.master.journal.flush.timeout'], 'reason': ["The value of the property 'alluxio.master.journal.flush.batch.time' should be smaller or equal to the value of the property 'alluxio.master.journal.flush.timeout'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.journal.flush.batch.time	alluxio.master.journal.flush.timeout
+[Ciri] Reason for alluxio.master.journal.flush.batch.time: The value of the property 'alluxio.master.journal.flush.batch.time' should be smaller or equal to the value of the property 'alluxio.master.journal.flush.timeout'.
+[Ciri] Reason for alluxio.master.journal.flush.timeout: 

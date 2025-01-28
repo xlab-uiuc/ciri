@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-write-timeout', 'proxy-read-timeout'], 'reason': ['proxy-refresh-interval: ciri/ciri is not a valid duration', 'proxy-write-timeout: 2500 is not a valid duration', 'proxy-read-timeout: 1 is not a valid duration']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-write-timeout', 'proxy-read-timeout'], 'reason': ['proxy-refresh-interval must be greater than 0', 'proxy-write-timeout must be greater than 0', 'proxy-read-timeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-write-timeout', 'proxy-read-timeout'], 'reason': ['proxy-refresh-interval: ciri/ciri is not a valid duration', 'proxy-write-timeout: 2500 is not a valid duration', 'proxy-read-timeout: 1 is not a valid duration']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-refresh-interval	proxy-write-timeout	proxy-read-timeout
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval: ciri/ciri is not a valid duration
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout: 2500 is not a valid duration
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout: 1 is not a valid duration

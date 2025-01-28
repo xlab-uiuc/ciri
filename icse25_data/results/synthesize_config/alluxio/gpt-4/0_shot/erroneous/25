@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.worker.info.cache.refresh.time', 'alluxio.worker.network.reader.buffer.size', 'alluxio.master.rpc.executor.keepalive'], 'reason': ["The correct property is 'alluxio.master.worker.info.cache.refresh.time.ms' and it should be specified in milliseconds.", "The correct property is 'alluxio.worker.network.reader.buffer.size.bytes'. Size should be specified in bytes.", "The correct property is 'alluxio.master.rpc.executor.keepalive.time'. The unit (e.g., 'ms' for milliseconds) must be included in the value."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.worker.info.cache.refresh.time	alluxio.worker.network.reader.buffer.size	alluxio.master.rpc.executor.keepalive
+[Ciri] Reason for alluxio.master.worker.info.cache.refresh.time: The correct property is 'alluxio.master.worker.info.cache.refresh.time.ms' and it should be specified in milliseconds.
+[Ciri] Reason for alluxio.worker.network.reader.buffer.size: The correct property is 'alluxio.worker.network.reader.buffer.size.bytes'. Size should be specified in bytes.
+[Ciri] Reason for alluxio.master.rpc.executor.keepalive: The correct property is 'alluxio.master.rpc.executor.keepalive.time'. The unit (e.g., 'ms' for milliseconds) must be included in the value.

@@ -1,0 +1,12 @@
+Wrong shot number:
+[15, 2, 7, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'hadoop.security.random.device.file.path'], 'reason': ["The property 'io.seqfile.local.dir' has an incorrect value '/valid/file1'.", "The property 'hadoop.security.random.device.file.path' has an incorrect path format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.seqfile.local.dir	hadoop.security.random.device.file.path
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' has an incorrect value '/valid/file1'.
+[Ciri] Reason for hadoop.security.random.device.file.path: The property 'hadoop.security.random.device.file.path' has an incorrect path format.

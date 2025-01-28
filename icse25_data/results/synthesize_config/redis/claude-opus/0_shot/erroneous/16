@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'maxmemory-clients', 'timeout', 'repl-backlog-size', 'latency-monitor-threshold'], 'reason': ["cluster-announce-tls-port expects an integer value, but '1.1' is a float.", "maxmemory-clients expects a memory value in bytes, but '1g' is not a valid byte value.", "timeout expects an integer value in seconds, but '2' is too low. It should be at least 10 seconds.", "repl-backlog-size expects a memory value in bytes, but '1mb' is not a valid byte value. It should be '1m' instead.", "latency-monitor-threshold expects an integer value in milliseconds, but '0' is too low. It should be at least 1."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: cluster-announce-tls-port	maxmemory-clients	timeout	repl-backlog-size	latency-monitor-threshold
+[Ciri] Reason for cluster-announce-tls-port: cluster-announce-tls-port expects an integer value, but '1.1' is a float.
+[Ciri] Reason for maxmemory-clients: maxmemory-clients expects a memory value in bytes, but '1g' is not a valid byte value.
+[Ciri] Reason for timeout: timeout expects an integer value in seconds, but '2' is too low. It should be at least 10 seconds.
+[Ciri] Reason for repl-backlog-size: repl-backlog-size expects a memory value in bytes, but '1mb' is not a valid byte value. It should be '1m' instead.
+[Ciri] Reason for latency-monitor-threshold: latency-monitor-threshold expects an integer value in milliseconds, but '0' is too low. It should be at least 1.

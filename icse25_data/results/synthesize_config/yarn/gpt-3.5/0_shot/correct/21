@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.leveldb-state-store.path', 'yarn.cluster.max-application-priority'], 'reason': ["The value '/valid/file1' for property 'yarn.resourcemanager.leveldb-state-store.path' is not a valid path.", "The value '0' for property 'yarn.cluster.max-application-priority' should be greater than 0."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.leveldb-state-store.path', 'yarn.resourcemanager.node-labels.provider.fetch-interval-ms'], 'reason': ["Invalid value for property 'yarn.resourcemanager.leveldb-state-store.path'. The path '/valid/file1' may not be valid or appropriate.", "Invalid value for property 'yarn.resourcemanager.node-labels.provider.fetch-interval-ms'. The value '3600000' is not in the correct format or range."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.leveldb-state-store.path', 'yarn.resourcemanager.reservation-system.enable', 'yarn.cluster.max-application-priority'], 'reason': ["The property 'yarn.resourcemanager.leveldb-state-store.path' should point to a valid file path.", "The property 'yarn.resourcemanager.reservation-system.enable' should be set to 'true' to enable the ResourceManager reservation system.", "The property 'yarn.cluster.max-application-priority' should have a value greater than or equal to 1."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.leveldb-state-store.path', 'yarn.cluster.max-application-priority'], 'reason': ["The value '/valid/file1' for property 'yarn.resourcemanager.leveldb-state-store.path' is not a valid path.", "The value '0' for property 'yarn.cluster.max-application-priority' should be greater than 0."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.leveldb-state-store.path', 'yarn.resourcemanager.node-labels.provider.fetch-interval-ms'], 'reason': ["The value '/valid/file1' for property 'yarn.resourcemanager.leveldb-state-store.path' is not a valid path.", "The value '3600000' for property 'yarn.resourcemanager.node-labels.provider.fetch-interval-ms' should be in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.leveldb-state-store.path', 'yarn.resourcemanager.node-labels.provider.fetch-interval-ms', 'yarn.cluster.max-application-priority'], 'reason': ["The value '/valid/file1' for property 'yarn.resourcemanager.leveldb-state-store.path' may not be a valid path or may need to be adjusted.", "The value '3600000' for property 'yarn.resourcemanager.node-labels.provider.fetch-interval-ms' is in milliseconds but the description mentions it defaults to 30 mins. Please verify the value.", "The value '0' for property 'yarn.cluster.max-application-priority' should be greater than or equal to 1."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.leveldb-state-store.path', 'yarn.resourcemanager.reservation-system.enable', 'yarn.cluster.max-application-priority'], 'reason': ["The value '/valid/file1' for property 'yarn.resourcemanager.leveldb-state-store.path' may not be a valid path.", "The value 'false' for property 'yarn.resourcemanager.reservation-system.enable' should be set to 'true' to enable the ResourceManager reservation system.", "The value '0' for property 'yarn.cluster.max-application-priority' should be greater than 0 to define a valid maximum application priority."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.leveldb-state-store.path', 'yarn.timeline-service.generic-application-history.max-applications'], 'reason': ["The value '/valid/file1' for property 'yarn.resourcemanager.leveldb-state-store.path' is not a valid path.", "The value '20000' for property 'yarn.timeline-service.generic-application-history.max-applications' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.leveldb-state-store.path', 'yarn.timeline-service.generic-application-history.max-applications'], 'reason': ["The value '/valid/file1' for property 'yarn.resourcemanager.leveldb-state-store.path' may not be a valid path or may require additional configuration.", "The value '20000' for property 'yarn.timeline-service.generic-application-history.max-applications' may be too high and could impact performance."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.leveldb-state-store.path	yarn.timeline-service.generic-application-history.max-applications
+[Ciri] Reason for yarn.resourcemanager.leveldb-state-store.path: The value '/valid/file1' for property 'yarn.resourcemanager.leveldb-state-store.path' may not be a valid path or may require additional configuration.
+[Ciri] Reason for yarn.timeline-service.generic-application-history.max-applications: The value '20000' for property 'yarn.timeline-service.generic-application-history.max-applications' may be too high and could impact performance.

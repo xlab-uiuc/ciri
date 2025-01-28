@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.common.configuration.version</name>
+  <value>3.0.0</value>
+  <description>version of this configuration file</description>
+</property>
+
+<property>
+  <name>hadoop.security.groups.shell.command.timeout</name>
+  <value>0s</value>
+  <description>
+    Used by the ShellBasedUnixGroupsMapping class, this property controls how
+    long to wait for the underlying shell command that is run to fetch groups.
+    Expressed in seconds (e.g. 10s, 1m, etc.), if the running command takes
+    longer than the value configured, the command is aborted and the groups
+    resolver would return a result of no groups found. A value of 0s (default)
+    would mean an infinite wait (i.e. wait until the command exits on its own).
+  </description>
+</property>
+
+<property>
+  <name>io.file.buffer.size</name>
+  <value>4096</value>
+  <description>The size of buffer for use in sequence files.
+  The size of this buffer should probably be a multiple of hardware
+  page size (4096 on Intel x86), and it determines how much data is
+  buffered during read and write operations.</description>
+</property>
+
+<property>
+  <name>io.bytes.per.checksum</name>
+  <value>8192</value>
+  <description>The number of bytes per checksum.  Must not be larger than
+  io.file.buffer.size.</description>
+</property>
+
+<property>
+  <name>io.erasurecode.codec.xor.rawcoders</name>
+  <value>xor_native</value>
+  <description>
+    Comma separated raw coder implementations for the xor codec. The earlier
+    factory is prior to followings in case of failure of creating raw coders.
+  </description>
+</property>
+
+<property>
+  <name>fs.azure.authorization</name>
+  <value>false</value>
+  <description>
+    Config flag to enable authorization support in WASB. Setting it to "true" enables
+    authorization support to WASB. Currently WASB authorization requires a remote service
+    to provide authorization that needs to be specified via fs.azure.authorization.remote.service.url
+    configuration
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.require.client.cert</name>
+  <value>false</value>
+  <description>Whether client certificates are required</description>
+</property>
+
+<property>
+  <name>hadoop.shell.missing.defaultFs.warning</name>
+  <value>false</value>
+    <description>
+      Enable hdfs shell commands to display warnings if (fs.defaultFS) property
+      is not set.
+    </description>
+</property>
+
+</configuration>

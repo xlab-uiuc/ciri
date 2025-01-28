@@ -1,0 +1,15 @@
+Wrong shot number:
+[6, 9, 5]
+
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.block.write.retries', 'dfs.checksum.combine.mode'], 'reason': ["The property 'dfs.client.block.write.retries' has a negative value which is not valid for the number of retries.", "The property 'dfs.checksum.combine.mode' contains an invalid value and usage format. The correct values do not include 'MD5MD5CRC' as an option for HDFS 3.3.0, and the 'usage' field is not a recognized configuration attribute."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.client.block.write.retries	dfs.checksum.combine.mode
+[Ciri] Reason for dfs.client.block.write.retries: The property 'dfs.client.block.write.retries' has a negative value which is not valid for the number of retries.
+[Ciri] Reason for dfs.checksum.combine.mode: The property 'dfs.checksum.combine.mode' contains an invalid value and usage format. The correct values do not include 'MD5MD5CRC' as an option for HDFS 3.3.0, and the 'usage' field is not a recognized configuration attribute.

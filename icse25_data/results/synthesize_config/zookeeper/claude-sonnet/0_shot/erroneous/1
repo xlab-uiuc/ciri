@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'electionAlg', 'maxSessionTimeout'], 'reason': ['The autopurge.purgeInterval property should be a positive integer representing the number of hours to keep transaction log files. The value 9.9 is invalid.', 'The electionAlg property should be an integer value of 0, 1, or 2 representing the election algorithm to use. The value 3 is invalid.', 'The maxSessionTimeout property should be a positive integer representing the maximum session timeout in milliseconds that the server will allow the client to negotiate. The value -1 is invalid.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: autopurge.purgeInterval	electionAlg	maxSessionTimeout
+[Ciri] Reason for autopurge.purgeInterval: The autopurge.purgeInterval property should be a positive integer representing the number of hours to keep transaction log files. The value 9.9 is invalid.
+[Ciri] Reason for electionAlg: The electionAlg property should be an integer value of 0, 1, or 2 representing the election algorithm to use. The value 3 is invalid.
+[Ciri] Reason for maxSessionTimeout: The maxSessionTimeout property should be a positive integer representing the maximum session timeout in milliseconds that the server will allow the client to negotiate. The value -1 is invalid.

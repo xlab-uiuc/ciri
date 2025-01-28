@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['discovery-fallback', 'max-snapshots', 'auto-compaction-retention', 'snapshot-count', 'max-wals'], 'reason': ["The 'discovery-fallback' parameter is not a valid configuration option for etcd 3.5.0.", "The 'max-snapshots' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter is 'max-snapshot-count'.", "The 'auto-compaction-retention' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter is 'auto-compaction-mode' or 'auto-compaction-retention'.", "The 'snapshot-count' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter is 'max-snapshot-count'.", "The 'max-wals' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter is 'max-wals-size'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: discovery-fallback	max-snapshots	auto-compaction-retention	snapshot-count	max-wals
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' parameter is not a valid configuration option for etcd 3.5.0.
+[Ciri] Reason for max-snapshots: The 'max-snapshots' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter is 'max-snapshot-count'.
+[Ciri] Reason for auto-compaction-retention: The 'auto-compaction-retention' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter is 'auto-compaction-mode' or 'auto-compaction-retention'.
+[Ciri] Reason for snapshot-count: The 'snapshot-count' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter is 'max-snapshot-count'.
+[Ciri] Reason for max-wals: The 'max-wals' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter is 'max-wals-size'.

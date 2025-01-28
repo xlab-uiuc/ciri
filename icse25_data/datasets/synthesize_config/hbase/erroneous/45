@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.info.port.auto</name>
+  <value>true</value>
+    <description>Whether or not the Master or RegionServer
+    UI should search for a port to bind to. Enables automatic port
+    search if hbase.regionserver.info.port is already in use.
+    Useful for testing, turned off by default.</description>
+</property>
+
+<property>
+  <name>zookeeper.znode.acl.parent</name>
+  <value>acl</value>
+    <description>Root ZNode for access control lists.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.dataDir</name>
+  <value>/valid/file1</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The directory where the snapshot is stored.</description>
+</property>
+
+<property>
+  <name>hbase.client.keyvalue.maxsize</name>
+  <value>10485760</value>
+    <description>Specifies the combined maximum allowed size of a KeyValue
+    instance. This is to set an upper boundary for a single entry saved in a
+    storage file. Since they cannot be split it helps avoiding that a region
+    cannot be split any further because the data is too large. It seems wise
+    to set this to a fraction of the maximum region size. Setting it to zero
+    or less disables the check.</description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.timeout.period</name>
+  <value>60000</value>
+    <description>Client scanner lease period in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.rpc.timeout</name>
+  <value>3000</value>
+    <description>This is for the RPC layer to define how long (millisecond) HBase client applications
+        take for a remote call to time out. It uses pings to check connections
+        but will eventually throw a TimeoutException.</description>
+</property>
+
+<property>
+  <name>hbase.master.loadbalance.bytable</name>
+  <value>false</value>
+    <description>Factor Table name when the balancer runs.
+      Default: false.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.delfile.max.count</name>
+  <value>6</value>
+    <description>
+      The max number of del files that is allowed in the mob compaction.
+      In the mob compaction, when the number of existing del files is larger than
+      this value, they are merged until number of del files is not larger this value.
+      The default value is 3.
+    </description>
+</property>
+
+</configuration>

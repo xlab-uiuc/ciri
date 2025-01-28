@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.namenode.max.objects', 'dfs.namenode.delegation.key.update-interval', 'nfs.mountd.port', 'dfs.namenode.edit.log.autoroll.check.interval.ms', 'dfs.namenode.top.windows.minutes'], 'reason': ["The value '350' for property 'dfs.datanode.data.dir.perm' should be in octal format.", "The value '-1' for property 'dfs.namenode.max.objects' should be a positive integer or zero for no limit.", "The value '86400000' for property 'dfs.namenode.delegation.key.update-interval' should be in milliseconds.", "The value '4242' for property 'nfs.mountd.port' should be a valid port number.", "The value '150000' for property 'dfs.namenode.edit.log.autoroll.check.interval.ms' should be in milliseconds.", "The value '1,5,25' for property 'dfs.namenode.top.windows.minutes' should be a single integer or a comma-separated list of integers."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.namenode.max.objects', 'dfs.namenode.delegation.key.update-interval', 'dfs.image.transfer.timeout', 'dfs.namenode.top.windows.minutes'], 'reason': ['The value for dfs.datanode.data.dir.perm should be in octal format.', 'The value for dfs.namenode.max.objects should be a non-negative integer.', 'The value for dfs.namenode.delegation.key.update-interval should be in milliseconds.', 'The value for dfs.image.transfer.timeout should be in milliseconds.', 'The value for dfs.namenode.top.windows.minutes should be a single integer, not a comma-separated list.']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.namenode.max.objects', 'dfs.namenode.delegation.key.update-interval', 'dfs.image.transfer.timeout', 'dfs.namenode.top.windows.minutes'], 'reason': ['The value for dfs.datanode.data.dir.perm should be in octal format.', 'The value for dfs.namenode.max.objects should be a positive integer or zero for no limit.', 'The value for dfs.namenode.delegation.key.update-interval should be in milliseconds.', 'The value for dfs.image.transfer.timeout should be in milliseconds.', 'The value for dfs.namenode.top.windows.minutes should not contain commas.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: dfs.datanode.data.dir.perm	dfs.namenode.max.objects	dfs.namenode.delegation.key.update-interval	dfs.image.transfer.timeout	dfs.namenode.top.windows.minutes
+[Ciri] Reason for dfs.datanode.data.dir.perm: The value for dfs.datanode.data.dir.perm should be in octal format.
+[Ciri] Reason for dfs.namenode.max.objects: The value for dfs.namenode.max.objects should be a positive integer or zero for no limit.
+[Ciri] Reason for dfs.namenode.delegation.key.update-interval: The value for dfs.namenode.delegation.key.update-interval should be in milliseconds.
+[Ciri] Reason for dfs.image.transfer.timeout: The value for dfs.image.transfer.timeout should be in milliseconds.
+[Ciri] Reason for dfs.namenode.top.windows.minutes: The value for dfs.namenode.top.windows.minutes should not contain commas.

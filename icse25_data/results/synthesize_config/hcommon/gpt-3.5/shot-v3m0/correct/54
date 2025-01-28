@@ -1,0 +1,14 @@
+Correct shot number:
+[12, 15, 9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.tmp.dir', 'fs.ftp.transfer.mode', 'fs.s3a.select.input.csv.record.delimiter', 'fs.azure.sas.expiry.period'], 'reason': ["Invalid property 'usage' in hadoop.tmp.dir", "Invalid property 'usage' in fs.ftp.transfer.mode", "Invalid property 'usage' in fs.s3a.select.input.csv.record.delimiter", "Invalid property 'usage' in fs.azure.sas.expiry.period"]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.tmp.dir	fs.ftp.transfer.mode	fs.s3a.select.input.csv.record.delimiter	fs.azure.sas.expiry.period
+[Ciri] Reason for hadoop.tmp.dir: Invalid property 'usage' in hadoop.tmp.dir
+[Ciri] Reason for fs.ftp.transfer.mode: Invalid property 'usage' in fs.ftp.transfer.mode
+[Ciri] Reason for fs.s3a.select.input.csv.record.delimiter: Invalid property 'usage' in fs.s3a.select.input.csv.record.delimiter
+[Ciri] Reason for fs.azure.sas.expiry.period: Invalid property 'usage' in fs.azure.sas.expiry.period

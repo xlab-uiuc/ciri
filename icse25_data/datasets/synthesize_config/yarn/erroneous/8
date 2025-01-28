@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.zk-delegation-token-node.split-index</name>
+  <value>-1</value>
+    <description>Index at which the RM Delegation Token ids will be split so
+      that the delegation token znodes stored in the zookeeper RM state store
+      will be stored as two different znodes (parent-child). The split is done
+      from the end. For instance, with no split, a delegation token znode will
+      be of the form RMDelegationToken_123456789. If the value of this config is
+      1, the delegation token znode will be broken into two parts:
+      RMDelegationToken_12345678 and 9 respectively with former being the parent
+      node. This config can take values from 0 to 4. 0 means there will be no
+      split. If the value is outside this range, it will be treated as 0 (i.e.
+      no split). A value larger than 0 (up to 4) should be configured if you are
+      running a large number of applications, with long-lived delegation tokens
+      and state store operations (e.g. failover) are failing due to LenError in
+      Zookeeper.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.delegation-token-renewer.thread-retry-interval</name>
+  <value>60s</value>
+    <description>
+    Time interval between each RM DelegationTokenRenewer thread retry attempt
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.memory.cgroups.swappiness</name>
+  <value>0</value>
+    <description>Container swappiness is the likelihood a page will be swapped
+      out compared to be kept in memory. Value is between 0-100.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.cpu-vcores</name>
+  <value>-1</value>
+    <description>Number of vcores that can be allocated
+    for containers. This is used by the RM scheduler when allocating
+    resources for containers. This is not used to limit the number of
+    CPUs used by YARN containers. If it is set to -1 and
+    yarn.nodemanager.resource.detect-hardware-capabilities is true, it is
+    automatically determined from the hardware in case of Windows and Linux.
+    In other cases, number of vcores is 8 by default.</description>
+</property>
+
+<property>
+  <name>yarn.client.nodemanager-connect.retry-interval-ms</name>
+  <value>20000</value>
+    <description>Time interval between each attempt to connect to NM</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.leveldb-state-store.path</name>
+  <value>dev/urandom///</value>
+    <description>Store file name for leveldb state store.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.entity-group-fs-store.leveldb-cache-read-cache-size</name>
+  <value>5242880</value>
+    <description>
+      Read cache size for the leveldb cache storage in ATS v1.5 plugin storage.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.log-aggregation.num-log-files-per-app</name>
+  <value>30</value>
+    <description>Define how many aggregated log files per application per NM
+    we can have in remote file system. By default, the total number of
+    aggregated log files per application per NM is 30.
+    </description>
+</property>
+
+</configuration>

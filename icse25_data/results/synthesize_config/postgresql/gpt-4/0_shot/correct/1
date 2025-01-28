@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['exit_on_error', 'restart_after_crash', 'commit_siblings', 'krb_server_keyfile', 'autovacuum_vacuum_insert_threshold', 'log_statement_stats', 'checkpoint_flush_after', 'gss_accept_delegation'], 'reason': ["The 'exit_on_error' parameter does not exist in PostgreSQL configuration.", "The 'restart_after_crash' parameter does not exist in PostgreSQL configuration.", "The 'commit_siblings' parameter is valid, but it is not typically found in the main PostgreSQL configuration file; it's more related to transaction behavior settings.", "The 'krb_server_keyfile' parameter is correctly formatted but should ensure the path is correctly set for Kerberos authentication.", "The 'autovacuum_vacuum_insert_threshold' parameter does not exist. The correct parameter is 'autovacuum_vacuum_insert_threshold' without the prefix 'vacuum_'.", "The 'log_statement_stats' parameter is valid but should be used cautiously as it can write a lot of information to the log and impact performance.", "The 'checkpoint_flush_after' parameter is valid and specifies the amount of data to write before pausing, to help smooth I/O spikes during checkpoints.", "The 'gss_accept_delegation' parameter does not exist in PostgreSQL configuration. The correct parameter for controlling GSSAPI delegation is 'krb_server_keyfile' for Kerberos settings."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: exit_on_error	restart_after_crash	commit_siblings	krb_server_keyfile	autovacuum_vacuum_insert_threshold	log_statement_stats	checkpoint_flush_after	gss_accept_delegation
+[Ciri] Reason for exit_on_error: The 'exit_on_error' parameter does not exist in PostgreSQL configuration.
+[Ciri] Reason for restart_after_crash: The 'restart_after_crash' parameter does not exist in PostgreSQL configuration.
+[Ciri] Reason for commit_siblings: The 'commit_siblings' parameter is valid, but it is not typically found in the main PostgreSQL configuration file; it's more related to transaction behavior settings.
+[Ciri] Reason for krb_server_keyfile: The 'krb_server_keyfile' parameter is correctly formatted but should ensure the path is correctly set for Kerberos authentication.
+[Ciri] Reason for autovacuum_vacuum_insert_threshold: The 'autovacuum_vacuum_insert_threshold' parameter does not exist. The correct parameter is 'autovacuum_vacuum_insert_threshold' without the prefix 'vacuum_'.
+[Ciri] Reason for log_statement_stats: The 'log_statement_stats' parameter is valid but should be used cautiously as it can write a lot of information to the log and impact performance.
+[Ciri] Reason for checkpoint_flush_after: The 'checkpoint_flush_after' parameter is valid and specifies the amount of data to write before pausing, to help smooth I/O spikes during checkpoints.
+[Ciri] Reason for gss_accept_delegation: The 'gss_accept_delegation' parameter does not exist in PostgreSQL configuration. The correct parameter for controlling GSSAPI delegation is 'krb_server_keyfile' for Kerberos settings.

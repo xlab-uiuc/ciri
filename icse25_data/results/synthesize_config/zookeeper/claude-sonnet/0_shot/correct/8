@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'clientPort'], 'reason': ['The secureClientPort property is not a valid configuration parameter in ZooKeeper 3.7.0. It should be removed or replaced with the correct property name.', 'The clientPort property is a valid configuration parameter, but it is typically set to a different value than 3001, which is the default value. If you want to use a different port, make sure it is not already in use by another process.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPort	clientPort
+[Ciri] Reason for secureClientPort: The secureClientPort property is not a valid configuration parameter in ZooKeeper 3.7.0. It should be removed or replaced with the correct property name.
+[Ciri] Reason for clientPort: The clientPort property is a valid configuration parameter, but it is typically set to a different value than 3001, which is the default value. If you want to use a different port, make sure it is not already in use by another process.

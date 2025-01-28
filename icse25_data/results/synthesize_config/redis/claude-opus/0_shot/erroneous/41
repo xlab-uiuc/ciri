@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['unixsocketperm', 'repl-diskless-sync-max-replicas', 'hash-max-listpack-value'], 'reason': ["In Redis 7.0, the 'unixsocketperm' parameter has been renamed to 'unixsocketmode'.", "The 'repl-diskless-sync-max-replicas' parameter is not a valid configuration option in Redis 7.0.", "The 'hash-max-listpack-value' parameter has been renamed to 'hash-max-ziplist-value' in Redis 7.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: unixsocketperm	repl-diskless-sync-max-replicas	hash-max-listpack-value
+[Ciri] Reason for unixsocketperm: In Redis 7.0, the 'unixsocketperm' parameter has been renamed to 'unixsocketmode'.
+[Ciri] Reason for repl-diskless-sync-max-replicas: The 'repl-diskless-sync-max-replicas' parameter is not a valid configuration option in Redis 7.0.
+[Ciri] Reason for hash-max-listpack-value: The 'hash-max-listpack-value' parameter has been renamed to 'hash-max-ziplist-value' in Redis 7.0.

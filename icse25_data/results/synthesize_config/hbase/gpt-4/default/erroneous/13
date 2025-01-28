@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 2, 6]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.info.port', 'hbase.regionserver.global.memstore.size.lower.limit'], 'reason': ["The property 'hbase.master.info.port' has the value '1.1' which is not a valid port number.", "The property 'hbase.regionserver.global.memstore.size.lower.limit' has the value '0.5' which does not match the expected default of 95% of hbase.regionserver.global.memstore.size. The description suggests a default value should be 0.95 or is misleading."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.master.info.port	hbase.regionserver.global.memstore.size.lower.limit
+[Ciri] Reason for hbase.master.info.port: The property 'hbase.master.info.port' has the value '1.1' which is not a valid port number.
+[Ciri] Reason for hbase.regionserver.global.memstore.size.lower.limit: The property 'hbase.regionserver.global.memstore.size.lower.limit' has the value '0.5' which does not match the expected default of 95% of hbase.regionserver.global.memstore.size. The description suggests a default value should be 0.95 or is misleading.

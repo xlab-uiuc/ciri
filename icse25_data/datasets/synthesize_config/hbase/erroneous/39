@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.logcleaner.ttl</name>
+  <value>600000</value>
+    <description>How long a WAL remain in the archive ({hbase.rootdir}/oldWALs) directory,
+    after which it will be cleaned by a Master thread. The value is in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.ratio.offpeak</name>
+  <value>6.0F</value>
+    <description>Allows you to set a different (by default, more aggressive) ratio for determining
+      whether larger StoreFiles are included in compactions during off-peak hours. Works in the
+      same way as hbase.hstore.compaction.ratio. Only applies if hbase.offpeak.start.hour and
+      hbase.offpeak.end.hour are also enabled.</description>
+</property>
+
+<property>
+  <name>hbase.offpeak.start.hour</name>
+  <value>-1</value>
+    <description>The start of off-peak hours, expressed as an integer between 0 and 23, inclusive.
+      Set to -1 to disable off-peak.</description>
+</property>
+
+<property>
+  <name>hbase.auth.token.max.lifetime</name>
+  <value>604800000</value>
+    <description>The maximum lifetime in milliseconds after which an
+    authentication token expires.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.table.max.rowsize</name>
+  <value>2147483648</value>
+    <description>
+      Maximum size of single row in bytes (default is 1 Gb) for Get'ting
+      or Scan'ning without in-row scan flag set. If row size exceeds this limit
+      RowTooBigException is thrown to client.
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.thrift.compact</name>
+  <value>false</value>
+    <description>Use Thrift TCompactProtocol binary serialization protocol.</description>
+</property>
+
+<property>
+  <name>hbase.column.max.version</name>
+  <value>2</value>
+    <description>New column family descriptors will use this value as the default number of versions
+      to keep.</description>
+</property>
+
+<property>
+  <name>hbase.security.exec.permission.checks</name>
+  <value>false</value>
+    <description>
+      If this setting is enabled and ACL based access control is active (the
+      AccessController coprocessor is installed either as a system coprocessor
+      or on a table as a table coprocessor) then you must grant all relevant
+      users EXEC privilege if they require the ability to execute coprocessor
+      endpoint calls. EXEC privilege, like any other permission, can be
+      granted globally to a user, or to a user on a per table or per namespace
+      basis. For more information on coprocessor endpoints, see the coprocessor
+      section of the HBase online manual. For more information on granting or
+      revoking permissions using the AccessController, see the security
+      section of the HBase online manual.
+    </description>
+</property>
+
+</configuration>

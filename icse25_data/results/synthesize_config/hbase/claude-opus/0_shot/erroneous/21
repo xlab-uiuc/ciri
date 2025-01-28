@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.scanner.timeout.period', 'hbase.rootdir.perms'], 'reason': ['hbase.client.scanner.timeout.period cannot be negative. It should be a positive integer value in milliseconds.', 'hbase.rootdir.perms value 1400 is not a valid UNIX-style octal permission. It should be a valid octal value like 700 or 755.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.client.scanner.timeout.period	hbase.rootdir.perms
+[Ciri] Reason for hbase.client.scanner.timeout.period: hbase.client.scanner.timeout.period cannot be negative. It should be a positive integer value in milliseconds.
+[Ciri] Reason for hbase.rootdir.perms: hbase.rootdir.perms value 1400 is not a valid UNIX-style octal permission. It should be a valid octal value like 700 or 755.

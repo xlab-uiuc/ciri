@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_retrieve_retry_interval', 'wal_retrieve_retry_interval'], 'reason': ['listen_addresses should be a list of IP addresses or hostnames', 'wal_retrieve_retry_interval should be a time value', 'wal_retrieve_retry_interval should be a time value']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_retrieve_retry_interval', 'wal_retrieve_retry_interval'], 'reason': ["listen_addresses must be a list of addresses or '*'", 'wal_retrieve_retry_interval must be a duration', 'wal_retrieve_retry_interval must be a duration']}
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be greater than 0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: listen_addresses	wal_retrieve_retry_interval	wal_retrieve_retry_interval
+[Ciri] Reason for listen_addresses: listen_addresses should be a list of IP addresses or hostnames
+[Ciri] Reason for wal_retrieve_retry_interval: wal_retrieve_retry_interval should be a time value
+[Ciri] Reason for wal_retrieve_retry_interval: wal_retrieve_retry_interval should be a time value

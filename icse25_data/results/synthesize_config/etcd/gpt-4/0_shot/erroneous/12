@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'proxy-read-timeout'], 'reason': ["The 'quota-backend-bytes' value is too low. It should be at least several hundred megabytes to be effective, as this sets the maximum size of the storage backend.", "The 'proxy-read-timeout' value is too low. A value of 1 second is likely to be insufficient for most operations, potentially causing timeouts. It's recommended to use a higher value or the default if not specifically needed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quota-backend-bytes	proxy-read-timeout
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' value is too low. It should be at least several hundred megabytes to be effective, as this sets the maximum size of the storage backend.
+[Ciri] Reason for proxy-read-timeout: The 'proxy-read-timeout' value is too low. A value of 1 second is likely to be insufficient for most operations, potentially causing timeouts. It's recommended to use a higher value or the default if not specifically needed.

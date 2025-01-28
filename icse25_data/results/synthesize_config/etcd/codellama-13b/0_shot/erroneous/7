@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['key-file', 'proxy-dial-timeout', 'discovery-fallback', 'log-outputs', 'auto-compaction-retention', 'force-new-cluster', 'enable-pprof', 'max-snapshots'], 'reason': ['key-file: must be a valid file path', 'proxy-dial-timeout: must be a valid duration', 'discovery-fallback: must be a valid discovery mode', 'log-outputs: must be a valid log output', 'auto-compaction-retention: must be a valid duration', 'force-new-cluster: must be a valid boolean', 'enable-pprof: must be a valid boolean', 'max-snapshots: must be a valid integer']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['key-file', 'proxy-dial-timeout', 'discovery-fallback', 'log-outputs', 'auto-compaction-retention', 'force-new-cluster', 'enable-pprof', 'max-snapshots'], 'reason': ['key-file: must be a file path', 'proxy-dial-timeout: must be a duration', "discovery-fallback: must be a comma-separated list of discovery endpoints or 'proxy'", 'log-outputs: must be a comma-separated list of log endpoints', 'auto-compaction-retention: must be a duration', 'force-new-cluster: must be a boolean', 'enable-pprof: must be a boolean', 'max-snapshots: must be a positive integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: key-file	proxy-dial-timeout	discovery-fallback	log-outputs	auto-compaction-retention	force-new-cluster	enable-pprof	max-snapshots
+[Ciri] Reason for key-file: key-file: must be a valid file path
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout: must be a duration
+[Ciri] Reason for discovery-fallback: discovery-fallback: must be a comma-separated list of discovery endpoints or 'proxy'
+[Ciri] Reason for log-outputs: log-outputs: must be a valid log output
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention: must be a duration
+[Ciri] Reason for force-new-cluster: force-new-cluster: must be a valid boolean
+[Ciri] Reason for enable-pprof: enable-pprof: must be a boolean
+[Ciri] Reason for max-snapshots: max-snapshots: must be a valid integer

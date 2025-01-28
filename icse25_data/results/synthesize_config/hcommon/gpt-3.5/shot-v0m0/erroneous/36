@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.credential.clear-text-fallback', 'fs.s3a.assumed.role.credentials.provider', 'fs.s3a.paging.maximum', 'ipc.client.kill.max', 'hadoop.http.authentication.simple.anonymous.allowed', 'hadoop.security.crypto.codec.classes.aes.ctr.nopadding', 'hadoop.security.crypto.buffer.size', 'hadoop.http.sni.host.check.enabled'], 'reason': ["The property 'hadoop.security.credential.clear-text-fallback' has a value of '10000' which seems incorrect.", "The property 'fs.s3a.assumed.role.credentials.provider' has a value of 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider' which might need verification.", "The property 'fs.s3a.paging.maximum' has a value of '10000' which might need verification.", "The property 'ipc.client.kill.max' has a value of '20' which might need verification.", "The property 'hadoop.http.authentication.simple.anonymous.allowed' has a value of 'false' which might need verification.", "The property 'hadoop.security.crypto.codec.classes.aes.ctr.nopadding' has a value of 'org.apache.hadoop.crypto.JceAesCtrCryptoCodec' which might need verification.", "The property 'hadoop.security.crypto.buffer.size' has a value of '16384' which might need verification.", "The property 'hadoop.http.sni.host.check.enabled' has a value of 'false' which might need verification."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hadoop.security.credential.clear-text-fallback	fs.s3a.assumed.role.credentials.provider	fs.s3a.paging.maximum	ipc.client.kill.max	hadoop.http.authentication.simple.anonymous.allowed	hadoop.security.crypto.codec.classes.aes.ctr.nopadding	hadoop.security.crypto.buffer.size	hadoop.http.sni.host.check.enabled
+[Ciri] Reason for hadoop.security.credential.clear-text-fallback: The property 'hadoop.security.credential.clear-text-fallback' has a value of '10000' which seems incorrect.
+[Ciri] Reason for fs.s3a.assumed.role.credentials.provider: The property 'fs.s3a.assumed.role.credentials.provider' has a value of 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider' which might need verification.
+[Ciri] Reason for fs.s3a.paging.maximum: The property 'fs.s3a.paging.maximum' has a value of '10000' which might need verification.
+[Ciri] Reason for ipc.client.kill.max: The property 'ipc.client.kill.max' has a value of '20' which might need verification.
+[Ciri] Reason for hadoop.http.authentication.simple.anonymous.allowed: The property 'hadoop.http.authentication.simple.anonymous.allowed' has a value of 'false' which might need verification.
+[Ciri] Reason for hadoop.security.crypto.codec.classes.aes.ctr.nopadding: The property 'hadoop.security.crypto.codec.classes.aes.ctr.nopadding' has a value of 'org.apache.hadoop.crypto.JceAesCtrCryptoCodec' which might need verification.
+[Ciri] Reason for hadoop.security.crypto.buffer.size: The property 'hadoop.security.crypto.buffer.size' has a value of '16384' which might need verification.
+[Ciri] Reason for hadoop.http.sni.host.check.enabled: The property 'hadoop.http.sni.host.check.enabled' has a value of 'false' which might need verification.

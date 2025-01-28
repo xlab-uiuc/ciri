@@ -1,0 +1,16 @@
+Wrong shot number:
+[8, 11, 6]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type', 'alluxio.user.client.cache.timeout.duration', 'alluxio.underfs.gcs.default.mode'], 'reason': ["The property 'alluxio.master.journal.type' has the value 'CIRI' which is not within the accepted values {UFS,EMBEDDED,NOOP}.", "The property 'alluxio.user.client.cache.timeout.duration' has a negative value '-1'. It must be a non-negative value.", "The property 'alluxio.underfs.gcs.default.mode' has the value '1400' which is not a valid POSIX mode."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.journal.type	alluxio.user.client.cache.timeout.duration	alluxio.underfs.gcs.default.mode
+[Ciri] Reason for alluxio.master.journal.type: The property 'alluxio.master.journal.type' has the value 'CIRI' which is not within the accepted values {UFS,EMBEDDED,NOOP}.
+[Ciri] Reason for alluxio.user.client.cache.timeout.duration: The property 'alluxio.user.client.cache.timeout.duration' has a negative value '-1'. It must be a non-negative value.
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: The property 'alluxio.underfs.gcs.default.mode' has the value '1400' which is not a valid POSIX mode.

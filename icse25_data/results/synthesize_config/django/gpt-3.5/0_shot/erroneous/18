@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['LOGGING_CONFIG'], 'reason': ["The 'LOGGING_CONFIG' setting is not supported in Django 4.0. It has been removed in Django 3.2. You should configure logging directly in your settings file using the 'LOGGING' key."]}
+
+{'hasError': True, 'errParameter': ['LANGUAGE_COOKIE_SECURE'], 'reason': ["The 'LANGUAGE_COOKIE_SECURE' setting has been removed in Django 4.0. Please remove this setting from your configuration file."]}
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'LANGUAGE_COOKIE_SECURE'], 'reason': ['SECURE_HSTS_SECONDS should be set as an integer value, not a string.', 'LANGUAGE_COOKIE_SECURE should be set to True for better security.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['LANGUAGE_COOKIE_SECURE'], 'reason': ['LANGUAGE_COOKIE_SECURE setting is deprecated in Django 4.0. Use SESSION_COOKIE_SAMESITE instead.']}
+
+{'hasError': True, 'errParameter': ['LANGUAGE_COOKIE_SECURE'], 'reason': ['LANGUAGE_COOKIE_SECURE setting is deprecated in Django 4.0. Use SESSION_COOKIE_SECURE instead.']}
+
+{'hasError': True, 'errParameter': ['LANGUAGE_COOKIE_SECURE'], 'reason': ["The 'LANGUAGE_COOKIE_SECURE' setting is deprecated in Django 4.0. Use the 'SESSION_COOKIE_SECURE' setting instead."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: LANGUAGE_COOKIE_SECURE
+[Ciri] Reason for LANGUAGE_COOKIE_SECURE: LANGUAGE_COOKIE_SECURE setting is deprecated in Django 4.0. Use SESSION_COOKIE_SECURE instead.

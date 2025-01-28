@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.client.https.need-auth</name>
+  <value>true</value>
+  <description>Whether SSL client certificate authentication is required
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.read.considerLoad</name>
+  <value>true</value>
+  <description>
+    Decide if sort block locations considers the target's load or not when read.
+    Turn off by default.
+  </description>
+</property>
+
+<property>
+  <name>dfs.replication</name>
+  <value>-5.5</value>
+  <description>Default block replication. 
+  The actual number of replications can be specified when the file is created.
+  The default is used if replication is not specified in create time.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.path.based.cache.refresh.interval.ms</name>
+  <value>60000</value>
+  <description>
+    The amount of milliseconds between subsequent path cache rescans.  Path
+    cache rescans are when we calculate which blocks should be cached, and on
+    what datanodes.
+
+    By default, this parameter is set to 30 seconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.list.reencryption.status.num.responses</name>
+  <value>200</value>
+  <description>When listing re-encryption status, the maximum number of zones
+    that will be returned in a batch. Fetching the list incrementally in
+    batches improves namenode performance.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edekcacheloader.initial.delay.ms</name>
+  <value>6000</value>
+  <description>When KeyProvider is configured, the time delayed until the first
+    attempt to warm up edek cache on NN start up / become active.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.available-space-block-placement-policy.balanced-space-preference-fraction</name>
+  <value>0.3</value>
+  <description>
+    Only used when the dfs.block.replicator.classname is set to
+    org.apache.hadoop.hdfs.server.blockmanagement.AvailableSpaceBlockPlacementPolicy.
+    Special value between 0 and 1, noninclusive.  Increases chance of
+    placing blocks on Datanodes with less disk space used.
+  </description>
+</property>
+
+<property>
+  <name>dfs.disk.balancer.block.tolerance.percent</name>
+  <value>1</value>
+    <description>
+      When a disk balancer copy operation is proceeding, the datanode is still
+      active. So it might not be possible to move the exactly specified
+      amount of data. So tolerance allows us to define a percentage which
+      defines a good enough move.
+    </description>
+</property>
+
+</configuration>

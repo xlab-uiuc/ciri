@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.info.port</name>
+  <value>16030</value>
+    <description>The port for the HBase RegionServer web UI
+    Set to -1 if you do not want the RegionServer UI to run.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.info.bindAddress</name>
+  <value>2.2.2.2.2.2</value>
+    <description>The address for the HBase RegionServer web UI</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.hlog.writer.impl</name>
+  <value>org.apache.hadoop.hbase.regionserver.wal.ProtobufLogWriter</value>
+    <description>The WAL file writer implementation.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.memstore.flush.size</name>
+  <value>134217728</value>
+    <description>
+    Memstore will be flushed to disk if size of the memstore
+    exceeds this number of bytes.  Value is checked by a thread that runs
+    every hbase.server.thread.wakefrequency.</description>
+</property>
+
+<property>
+  <name>hbase.storescanner.parallel.seek.threads</name>
+  <value>20</value>
+    <description>
+      The default thread pool size if parallel-seeking feature enabled.</description>
+</property>
+
+<property>
+  <name>hbase.replication.rpc.codec</name>
+  <value>org.apache.hadoop.hbase.codec.KeyValueCodecWithTags</value>
+  	<description>
+  		The codec that is to be used when replication is enabled so that
+  		the tags are also replicated. This is used along with HFileV3 which
+  		supports tags in them.  If tags are not used or if the hfile version used
+  		is HFileV2 then KeyValueCodec can be used as the replication codec. Note that
+  		using KeyValueCodecWithTags for replication when there are no tags causes no harm.
+  	</description>
+</property>
+
+<property>
+  <name>hbase.replication.source.maxthreads</name>
+  <value>1</value>
+    <description>
+        The maximum number of threads any replication source will use for
+        shipping edits to the sinks in parallel. This also limits the number of
+        chunks each replication batch is broken into. Larger values can improve
+        the replication throughput between the master and slave clusters. The
+        default of 10 will rarely need to be changed.
+    </description>
+</property>
+
+<property>
+  <name>hbase.master.mob.ttl.cleaner.period</name>
+  <value>86400</value>
+    <description>
+      The period that ExpiredMobFileCleanerChore runs. The unit is second.
+      The default value is one day. The MOB file name uses only the date part of
+      the file creation time in it. We use this time for deciding TTL expiry of
+      the files. So the removal of TTL expired files might be delayed. The max
+      delay might be 24 hrs.
+    </description>
+</property>
+
+</configuration>

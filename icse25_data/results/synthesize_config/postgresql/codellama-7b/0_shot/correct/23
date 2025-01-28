@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'max_connections', 'max_prepared_transactions', 'max_replication_slots', 'max_wal_senders', 'shared_buffers', 'wal_keep_segments', 'wal_level', 'work_mem'], 'reason': ["listen_addresses should be set to '*'", 'max_connections should be set to 100', 'max_prepared_transactions should be set to 0', 'max_replication_slots should be set to 0', 'max_wal_senders should be set to 0', 'shared_buffers should be set to 128MB', 'wal_keep_segments should be set to 10', "wal_level should be set to 'archive'", 'work_mem should be set to 4MB']}
+
+{'hasError': True, 'errParameter': ['max_prepared_transactions'], 'reason': ['max_prepared_transactions is not a valid parameter in postgresql version 13.0']}
+
+{'hasError': True, 'errParameter': ['max_standby_archive_delay', 'log_temp_files', 'log_file_mode'], 'reason': ['max_standby_archive_delay should be a positive integer', 'log_temp_files should be a positive integer', 'log_file_mode should be a valid octal number']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_standby_archive_delay'], 'reason': ['max_standby_archive_delay should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be greater than 0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: max_connections
+[Ciri] Reason for max_connections: max_connections must be greater than 0

@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.learner.saslLoginContext'], 'reason': ['quorum.auth.learnerRequireSasl is not a valid property', 'quorum.auth.learner.saslLoginContext is not a valid property']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl'], 'reason': ['quorum.auth.learnerRequireSasl is not a valid property.']}
+
+{'hasError': True, 'errParameter': ['syncLimit', 'minSessionTimeout'], 'reason': ['syncLimit should be greater than 0', 'minSessionTimeout should be greater than -1']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.learner.saslLoginContext'], 'reason': ['quorum.auth.learner.saslLoginContext is not a valid property for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['syncLimit', 'minSessionTimeout'], 'reason': ['syncLimit must be greater than 0', 'minSessionTimeout must be greater than -1']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.X properties are not supported in ZooKeeper version 3.7.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.learner.saslLoginContext'], 'reason': ['quorum.auth.learner.saslLoginContext is not a valid configuration parameter for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['syncLimit', 'minSessionTimeout'], 'reason': ['syncLimit should be a positive integer', 'minSessionTimeout should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['syncLimit', 'minSessionTimeout'], 'reason': ['syncLimit should be greater than 0', 'minSessionTimeout should be greater than -1']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: syncLimit	minSessionTimeout
+[Ciri] Reason for syncLimit: syncLimit should be greater than 0
+[Ciri] Reason for minSessionTimeout: minSessionTimeout should be a positive integer

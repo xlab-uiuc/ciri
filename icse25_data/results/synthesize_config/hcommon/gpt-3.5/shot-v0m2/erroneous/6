@@ -1,0 +1,12 @@
+Wrong shot number:
+[7, 16]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.select.input.csv.quote.escape.character'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has an invalid value '10nounit'. The timeout value should be in milliseconds.", "The property 'fs.s3a.select.input.csv.quote.escape.character' has an invalid value '\\'. The escape character should be properly defined."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.s3a.select.input.csv.quote.escape.character
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has an invalid value '10nounit'. The timeout value should be in milliseconds.
+[Ciri] Reason for fs.s3a.select.input.csv.quote.escape.character: The property 'fs.s3a.select.input.csv.quote.escape.character' has an invalid value '\'. The escape character should be properly defined.

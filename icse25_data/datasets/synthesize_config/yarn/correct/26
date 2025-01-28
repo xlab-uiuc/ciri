@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.nodemanager.minimum.version</name>
+  <value>NONE</value>
+    <description>The minimum allowed version of a connecting nodemanager.  The valid values are
+      NONE (no version checking), EqualToRM (the nodemanager's version is equal to
+      or greater than the RM version), or a Version String.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage</name>
+  <value>false</value>
+    <description>This flag determines whether apps should run with strict resource limits
+    or be allowed to consume spare resources if they need them. For example, turning the
+    flag on will restrict apps to use only their share of CPU, even if the node has spare
+    CPU cycles. The default value is false i.e. use available resources. Please note that
+    turning this flag on may reduce job throughput on the cluster. This setting does
+    not apply to other subsystems like memory.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.hostname</name>
+  <value>0.0.0.0</value>
+    <description>The hostname of the timeline service web application.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.ttl-enable</name>
+  <value>true</value>
+    <description>Enable age off of timeline store data.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.fd-flush-interval-secs</name>
+  <value>10</value>
+    <description>
+      Flush interval for ATS v1.5 writer. This value controls how frequent
+      the writer will flush the HDFS FSStream for the entity/domain.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.fd-clean-interval-secs</name>
+  <value>120</value>
+    <description>
+      Scan interval for ATS v1.5 writer. This value controls how frequent
+      the writer will scan the HDFS FSStream for the entity/domain.
+      If the FSStream is stale for a long time, this FSStream will be close.
+    </description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.admin.thread-count</name>
+  <value>1</value>
+    <description>The number of threads used to handle SCM admin interface (1 by default)</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.webapp.address</name>
+  <value>0.0.0.0:8788</value>
+    <description>The address of the web application in the SCM (shared cache manager)</description>
+</property>
+
+</configuration>

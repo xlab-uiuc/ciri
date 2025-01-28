@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.dfs.client.read.shortcircuit.buffer.size', 'hbase.hstore.checksum.algorithm'], 'reason': ['The property hbase.dfs.client.read.shortcircuit.buffer.size is deprecated in HBase 2.0 and later. It has been replaced by dfs.client.read.shortcircuit.buffer.size which should be set in hdfs-site.xml instead.', 'The default value for hbase.hstore.checksum.algorithm in HBase 2.2.7 is CRC32, not CRC32C. While CRC32C is a valid option, it is not the default.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.dfs.client.read.shortcircuit.buffer.size	hbase.hstore.checksum.algorithm
+[Ciri] Reason for hbase.dfs.client.read.shortcircuit.buffer.size: The property hbase.dfs.client.read.shortcircuit.buffer.size is deprecated in HBase 2.0 and later. It has been replaced by dfs.client.read.shortcircuit.buffer.size which should be set in hdfs-site.xml instead.
+[Ciri] Reason for hbase.hstore.checksum.algorithm: The default value for hbase.hstore.checksum.algorithm in HBase 2.2.7 is CRC32, not CRC32C. While CRC32C is a valid option, it is not the default.

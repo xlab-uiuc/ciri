@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.output.csv.quote.character', 'fs.s3a.select.output.csv.field.delimiter', 'adl.feature.ownerandgroup.enableupn', 'hadoop.domainname.resolver.impl'], 'reason': ["The value for 'fs.s3a.select.output.csv.quote.character' should be escaped or enclosed in CDATA to avoid XML parsing errors.", "The value for 'fs.s3a.select.output.csv.field.delimiter' should be escaped or enclosed in CDATA to avoid XML parsing errors.", "The property 'adl.feature.ownerandgroup.enableupn' is specific to Azure Data Lake and may not be applicable or recognized in a generic Hadoop configuration.", "The property 'hadoop.domainname.resolver.impl' may not exist in Hadoop 3.3.0 as there is no direct reference to it in the official Hadoop 3.3.0 documentation."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.s3a.select.output.csv.quote.character	fs.s3a.select.output.csv.field.delimiter	adl.feature.ownerandgroup.enableupn	hadoop.domainname.resolver.impl
+[Ciri] Reason for fs.s3a.select.output.csv.quote.character: The value for 'fs.s3a.select.output.csv.quote.character' should be escaped or enclosed in CDATA to avoid XML parsing errors.
+[Ciri] Reason for fs.s3a.select.output.csv.field.delimiter: The value for 'fs.s3a.select.output.csv.field.delimiter' should be escaped or enclosed in CDATA to avoid XML parsing errors.
+[Ciri] Reason for adl.feature.ownerandgroup.enableupn: The property 'adl.feature.ownerandgroup.enableupn' is specific to Azure Data Lake and may not be applicable or recognized in a generic Hadoop configuration.
+[Ciri] Reason for hadoop.domainname.resolver.impl: The property 'hadoop.domainname.resolver.impl' may not exist in Hadoop 3.3.0 as there is no direct reference to it in the official Hadoop 3.3.0 documentation.

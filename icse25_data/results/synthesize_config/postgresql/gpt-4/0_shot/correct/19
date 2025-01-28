@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'lo_compat_privileges', 'debug_print_rewritten'], 'reason': ["The 'vacuum_freeze_min_age' parameter should be a value between 0 and 1000000000 in PostgreSQL 13.0, but the provided value is within this range, so the error is actually the parameter name's format. It should be 'vacuum_freeze_min_age' without underscores.", "The 'lo_compat_privileges' parameter does not exist in PostgreSQL 13.0. It was removed in earlier versions.", "The 'debug_print_rewritten' parameter does not exist. The correct parameter name is 'debug_print_rewritten_queries'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: vacuum_freeze_min_age	lo_compat_privileges	debug_print_rewritten
+[Ciri] Reason for vacuum_freeze_min_age: The 'vacuum_freeze_min_age' parameter should be a value between 0 and 1000000000 in PostgreSQL 13.0, but the provided value is within this range, so the error is actually the parameter name's format. It should be 'vacuum_freeze_min_age' without underscores.
+[Ciri] Reason for lo_compat_privileges: The 'lo_compat_privileges' parameter does not exist in PostgreSQL 13.0. It was removed in earlier versions.
+[Ciri] Reason for debug_print_rewritten: The 'debug_print_rewritten' parameter does not exist. The correct parameter name is 'debug_print_rewritten_queries'.

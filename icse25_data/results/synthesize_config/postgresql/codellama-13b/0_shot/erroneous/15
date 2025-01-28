@@ -1,0 +1,33 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['wal_writer_delay'], 'reason': ['wal_writer_delay is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['wal_writer_delay', 'autovacuum_max_workers', 'syslog_split_messages', 'update_process_title', 'log_disconnections', 'krb_caseins_users'], 'reason': ['wal_writer_delay must be a valid interval', 'autovacuum_max_workers must be an integer', 'syslog_split_messages must be a boolean', 'update_process_title must be a boolean', 'log_disconnections must be a boolean', 'krb_caseins_users must be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_writer_delay', 'autovacuum_max_workers', 'syslog_split_messages', 'update_process_title', 'log_disconnections', 'krb_caseins_users'], 'reason': ['wal_writer_delay is not a valid value for a time interval.', 'autovacuum_max_workers is not a valid value for an integer.', 'syslog_split_messages is not a valid value for a boolean.', 'update_process_title is not a valid value for a boolean.', 'log_disconnections is not a valid value for a boolean.', 'krb_caseins_users is not a valid value for a boolean.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['jit_optimize_above_cost', 'wal_writer_delay', 'enable_mergejoin', 'autovacuum_max_workers', 'syslog_split_messages', 'update_process_title', 'log_disconnections', 'krb_caseins_users'], 'reason': ['jit_optimize_above_cost: The value must be a positive integer.', 'wal_writer_delay: The value must be a positive integer.', 'enable_mergejoin: The value must be on or off.', 'autovacuum_max_workers: The value must be a positive integer.', 'syslog_split_messages: The value must be on or off.', 'update_process_title: The value must be on or off.', 'log_disconnections: The value must be on or off.', 'krb_caseins_users: The value must be on or off.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_writer_delay', 'enable_mergejoin', 'autovacuum_max_workers', 'syslog_split_messages', 'update_process_title', 'log_disconnections', 'krb_caseins_users'], 'reason': ["wal_writer_delay: invalid time interval (must be in the format 'hh:mm:ss')", 'enable_mergejoin: invalid boolean value', 'autovacuum_max_workers: invalid integer value', 'syslog_split_messages: invalid boolean value', 'update_process_title: invalid boolean value', 'log_disconnections: invalid boolean value', 'krb_caseins_users: invalid boolean value']}
+
+{'hasError': True, 'errParameter': ['wal_writer_delay', 'autovacuum_max_workers', 'syslog_split_messages', 'update_process_title', 'log_disconnections', 'krb_caseins_users'], 'reason': ['wal_writer_delay is not a valid value for this parameter', 'autovacuum_max_workers is not a valid value for this parameter', 'syslog_split_messages is not a valid value for this parameter', 'update_process_title is not a valid value for this parameter', 'log_disconnections is not a valid value for this parameter', 'krb_caseins_users is not a valid value for this parameter']}
+
+{'hasError': True, 'errParameter': ['wal_writer_delay', 'autovacuum_max_workers', 'syslog_split_messages', 'update_process_title', 'log_disconnections', 'krb_caseins_users'], 'reason': ['wal_writer_delay must be a valid interval', 'autovacuum_max_workers must be an integer between 1 and 1000', 'syslog_split_messages must be a boolean', 'update_process_title must be a boolean', 'log_disconnections must be a boolean', 'krb_caseins_users must be a boolean']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: wal_writer_delay	autovacuum_max_workers	syslog_split_messages	update_process_title	log_disconnections	krb_caseins_users
+[Ciri] Reason for wal_writer_delay: wal_writer_delay is not a valid value for this parameter
+[Ciri] Reason for autovacuum_max_workers: autovacuum_max_workers must be an integer between 1 and 1000
+[Ciri] Reason for syslog_split_messages: syslog_split_messages must be a boolean
+[Ciri] Reason for update_process_title: update_process_title must be a boolean
+[Ciri] Reason for log_disconnections: log_disconnections must be a boolean
+[Ciri] Reason for krb_caseins_users: krb_caseins_users must be a boolean

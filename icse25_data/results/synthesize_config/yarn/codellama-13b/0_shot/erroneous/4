@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.nodemanager-connect-retries', 'yarn.nm.liveness-monitor.expiry-interval-ms', 'yarn.resourcemanager.history-writer.multi-threaded-dispatcher.pool-size', 'yarn.nodemanager.remote-app-log-dir-include-older', 'yarn.nodemanager.health-checker.timeout-ms', 'yarn.nodemanager.recovery.enabled', 'yarn.sharedcache.root-dir', 'yarn.timeline-service.reader.webapp.https.address'], 'reason': ['yarn.resourcemanager.nodemanager-connect-retries: The value should be an integer.', 'yarn.nm.liveness-monitor.expiry-interval-ms: The value should be a time interval.', 'yarn.resourcemanager.history-writer.multi-threaded-dispatcher.pool-size: The value should be an integer.', 'yarn.nodemanager.remote-app-log-dir-include-older: The value should be a boolean.', 'yarn.nodemanager.health-checker.timeout-ms: The value should be a time interval.', 'yarn.nodemanager.recovery.enabled: The value should be a boolean.', 'yarn.sharedcache.root-dir: The value should be a valid file path.', 'yarn.timeline-service.reader.webapp.https.address: The value should be a valid address.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: yarn.resourcemanager.nodemanager-connect-retries	yarn.nm.liveness-monitor.expiry-interval-ms	yarn.resourcemanager.history-writer.multi-threaded-dispatcher.pool-size	yarn.nodemanager.remote-app-log-dir-include-older	yarn.nodemanager.health-checker.timeout-ms	yarn.nodemanager.recovery.enabled	yarn.sharedcache.root-dir	yarn.timeline-service.reader.webapp.https.address
+[Ciri] Reason for yarn.resourcemanager.nodemanager-connect-retries: yarn.resourcemanager.nodemanager-connect-retries: The value should be an integer.
+[Ciri] Reason for yarn.nm.liveness-monitor.expiry-interval-ms: yarn.nm.liveness-monitor.expiry-interval-ms: The value should be a time interval.
+[Ciri] Reason for yarn.resourcemanager.history-writer.multi-threaded-dispatcher.pool-size: yarn.resourcemanager.history-writer.multi-threaded-dispatcher.pool-size: The value should be an integer.
+[Ciri] Reason for yarn.nodemanager.remote-app-log-dir-include-older: yarn.nodemanager.remote-app-log-dir-include-older: The value should be a boolean.
+[Ciri] Reason for yarn.nodemanager.health-checker.timeout-ms: yarn.nodemanager.health-checker.timeout-ms: The value should be a time interval.
+[Ciri] Reason for yarn.nodemanager.recovery.enabled: yarn.nodemanager.recovery.enabled: The value should be a boolean.
+[Ciri] Reason for yarn.sharedcache.root-dir: yarn.sharedcache.root-dir: The value should be a valid file path.
+[Ciri] Reason for yarn.timeline-service.reader.webapp.https.address: yarn.timeline-service.reader.webapp.https.address: The value should be a valid address.

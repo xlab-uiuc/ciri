@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy', 'proxy-dial-timeout', 'max-wals'], 'reason': ["The 'proxy' parameter is deprecated in etcd v3.5. Use 'proxy-mode' instead with values 'grpc-proxy' or 'lease-proxy'.", "The 'proxy-dial-timeout' parameter is not a valid configuration option in etcd v3.5.", "The 'max-wals' parameter is not a valid configuration option in etcd v3.5. Use 'max-snapshots' and 'max-wals' under the 'wal-dir' parameter instead."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy	proxy-dial-timeout	max-wals
+[Ciri] Reason for proxy: The 'proxy' parameter is deprecated in etcd v3.5. Use 'proxy-mode' instead with values 'grpc-proxy' or 'lease-proxy'.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' parameter is not a valid configuration option in etcd v3.5.
+[Ciri] Reason for max-wals: The 'max-wals' parameter is not a valid configuration option in etcd v3.5. Use 'max-snapshots' and 'max-wals' under the 'wal-dir' parameter instead.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level2.watermark.high.ratio', 'alluxio.user.block.master.client.pool.gc.threshold', 'alluxio.master.daily.backup.enabled', 'alluxio.underfs.cleanup.interval', 'alluxio.worker.network.keepalive.timeout', 'alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.worker.hostname', 'alluxio.security.authorization.permission.umask'], 'reason': ['alluxio.worker.tieredstore.level2.watermark.high.ratio: The value must be between 0 and 1.', 'alluxio.user.block.master.client.pool.gc.threshold: The value must be a duration.', 'alluxio.master.daily.backup.enabled: The value must be a boolean.', 'alluxio.underfs.cleanup.interval: The value must be a duration.', 'alluxio.worker.network.keepalive.timeout: The value must be a duration.', 'alluxio.user.network.rpc.max.inbound.message.size: The value must be a size in bytes.', 'alluxio.worker.hostname: The value must be a hostname.', 'alluxio.security.authorization.permission.umask: The value must be an octal number.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.worker.tieredstore.level2.watermark.high.ratio	alluxio.user.block.master.client.pool.gc.threshold	alluxio.master.daily.backup.enabled	alluxio.underfs.cleanup.interval	alluxio.worker.network.keepalive.timeout	alluxio.user.network.rpc.max.inbound.message.size	alluxio.worker.hostname	alluxio.security.authorization.permission.umask
+[Ciri] Reason for alluxio.worker.tieredstore.level2.watermark.high.ratio: alluxio.worker.tieredstore.level2.watermark.high.ratio: The value must be between 0 and 1.
+[Ciri] Reason for alluxio.user.block.master.client.pool.gc.threshold: alluxio.user.block.master.client.pool.gc.threshold: The value must be a duration.
+[Ciri] Reason for alluxio.master.daily.backup.enabled: alluxio.master.daily.backup.enabled: The value must be a boolean.
+[Ciri] Reason for alluxio.underfs.cleanup.interval: alluxio.underfs.cleanup.interval: The value must be a duration.
+[Ciri] Reason for alluxio.worker.network.keepalive.timeout: alluxio.worker.network.keepalive.timeout: The value must be a duration.
+[Ciri] Reason for alluxio.user.network.rpc.max.inbound.message.size: alluxio.user.network.rpc.max.inbound.message.size: The value must be a size in bytes.
+[Ciri] Reason for alluxio.worker.hostname: alluxio.worker.hostname: The value must be a hostname.
+[Ciri] Reason for alluxio.security.authorization.permission.umask: alluxio.security.authorization.permission.umask: The value must be an octal number.

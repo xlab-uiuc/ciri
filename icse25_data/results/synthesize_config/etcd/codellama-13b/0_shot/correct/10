@@ -1,0 +1,24 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-refresh-interval'], 'reason': ['heartbeat-interval must be greater than proxy-refresh-interval', 'proxy-refresh-interval must be greater than heartbeat-interval']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'heartbeat-interval', 'initial-cluster-state', 'proxy-refresh-interval'], 'reason': ['proxy-failure-wait should be a time duration, not an integer.', 'heartbeat-interval should be a time duration, not an integer.', "initial-cluster-state should be 'new' or 'existing', not 'new'", 'proxy-refresh-interval should be a time duration, not an integer.']}
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'advertise-client-urls', 'listen-peer-urls', 'initial-cluster-state', 'proxy-failure-wait', 'proxy-refresh-interval', 'heartbeat-interval'], 'reason': ['listen-client-urls, advertise-client-urls, listen-peer-urls, initial-cluster-state, proxy-failure-wait, proxy-refresh-interval, heartbeat-interval are not supported in etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'heartbeat-interval', 'initial-cluster-state', 'proxy-refresh-interval', 'listen-peer-urls'], 'reason': ['proxy-failure-wait is not a valid property', 'heartbeat-interval is not a valid property', 'initial-cluster-state is not a valid property', 'proxy-refresh-interval is not a valid property', 'listen-peer-urls is not a valid property']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-failure-wait', 'proxy-refresh-interval'], 'reason': ['heartbeat-interval must be greater than proxy-failure-wait', 'proxy-failure-wait must be greater than proxy-refresh-interval']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'heartbeat-interval', 'initial-cluster-state', 'proxy-refresh-interval', 'listen-peer-urls'], 'reason': ['proxy-failure-wait should be a positive integer', 'heartbeat-interval should be a positive integer', 'initial-cluster-state should be either new or existing', 'proxy-refresh-interval should be a positive integer', 'listen-peer-urls should be a valid URL']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: proxy-failure-wait	heartbeat-interval	initial-cluster-state	proxy-refresh-interval	listen-peer-urls
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait is not a valid property
+[Ciri] Reason for heartbeat-interval: heartbeat-interval should be a positive integer
+[Ciri] Reason for initial-cluster-state: initial-cluster-state is not a valid property
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval is not a valid property
+[Ciri] Reason for listen-peer-urls: listen-peer-urls is not a valid property

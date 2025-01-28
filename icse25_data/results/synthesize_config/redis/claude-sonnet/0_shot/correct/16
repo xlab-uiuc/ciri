@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'proto-max-bulk-len', 'lazyfree-lazy-user-del', 'hll-sparse-max-bytes', 'tcp-backlog'], 'reason': ["The parameter 'replica-serve-stale-data' is not a valid configuration option in Redis 7.0.0.", "The parameter 'proto-max-bulk-len' is not a valid configuration option in Redis 7.0.0. The correct parameter is 'proto-max-bulk-mbuf'.", "The parameter 'lazyfree-lazy-user-del' is not a valid configuration option in Redis 7.0.0.", "The parameter 'hll-sparse-max-bytes' is not a valid configuration option in Redis 7.0.0.", "The parameter 'tcp-backlog' is not a valid configuration option in Redis 7.0.0. The correct parameter is 'tcp-backlog'"]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: replica-serve-stale-data	proto-max-bulk-len	lazyfree-lazy-user-del	hll-sparse-max-bytes	tcp-backlog
+[Ciri] Reason for replica-serve-stale-data: The parameter 'replica-serve-stale-data' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for proto-max-bulk-len: The parameter 'proto-max-bulk-len' is not a valid configuration option in Redis 7.0.0. The correct parameter is 'proto-max-bulk-mbuf'.
+[Ciri] Reason for lazyfree-lazy-user-del: The parameter 'lazyfree-lazy-user-del' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for hll-sparse-max-bytes: The parameter 'hll-sparse-max-bytes' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for tcp-backlog: The parameter 'tcp-backlog' is not a valid configuration option in Redis 7.0.0. The correct parameter is 'tcp-backlog'

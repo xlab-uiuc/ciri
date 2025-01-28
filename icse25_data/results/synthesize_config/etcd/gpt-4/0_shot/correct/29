@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy', 'proxy-dial-timeout', 'proxy-refresh-interval', 'quota-backend-bytes', 'enable-v2', 'force-new-cluster'], 'reason': ["The 'proxy' configuration is deprecated in etcd 3.5.0.", "The 'proxy-dial-timeout' configuration is related to the deprecated proxy feature.", "The 'proxy-refresh-interval' configuration is related to the deprecated proxy feature.", "The 'quota-backend-bytes' configuration has been replaced by '--quota-backend-bytes' in etcd 3.5.0.", "The 'enable-v2' configuration is not applicable since v2 API support is removed in etcd 3.5.0.", "The 'force-new-cluster' configuration is typically used only in disaster recovery scenarios and should be used with caution."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: proxy	proxy-dial-timeout	proxy-refresh-interval	quota-backend-bytes	enable-v2	force-new-cluster
+[Ciri] Reason for proxy: The 'proxy' configuration is deprecated in etcd 3.5.0.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' configuration is related to the deprecated proxy feature.
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' configuration is related to the deprecated proxy feature.
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' configuration has been replaced by '--quota-backend-bytes' in etcd 3.5.0.
+[Ciri] Reason for enable-v2: The 'enable-v2' configuration is not applicable since v2 API support is removed in etcd 3.5.0.
+[Ciri] Reason for force-new-cluster: The 'force-new-cluster' configuration is typically used only in disaster recovery scenarios and should be used with caution.

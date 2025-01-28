@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'shared_buffers', 'max_connections', 'autovacuum_max_workers', 'autovacuum_vacuum_threshold'], 'reason': ["listen_addresses should be '*'", 'shared_buffers should be at least 128MB', 'max_connections should be at least 100', 'autovacuum_max_workers should be at least 3', 'autovacuum_vacuum_threshold should be at least 50']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: listen_addresses	shared_buffers	max_connections	autovacuum_max_workers	autovacuum_vacuum_threshold
+[Ciri] Reason for listen_addresses: listen_addresses should be '*'
+[Ciri] Reason for shared_buffers: shared_buffers should be at least 128MB
+[Ciri] Reason for max_connections: max_connections should be at least 100
+[Ciri] Reason for autovacuum_max_workers: autovacuum_max_workers should be at least 3
+[Ciri] Reason for autovacuum_vacuum_threshold: autovacuum_vacuum_threshold should be at least 50

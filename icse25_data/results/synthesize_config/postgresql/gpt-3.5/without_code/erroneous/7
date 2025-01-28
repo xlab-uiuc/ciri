@@ -1,0 +1,21 @@
+Wrong shot number:
+[6, 5, 3]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['work_mem', 'plan_cache_mode', 'wal_decode_buffer_size', 'max_pred_locks_per_relation'], 'reason': ["The property 'work_mem' has an invalid value '8hhhhh'. It should be a valid memory value.", "The property 'plan_cache_mode' has an invalid value 'auto'. Accepted values are 'auto', 'force_custom_plan', 'force_generic_plan'.", "The property 'wal_decode_buffer_size' has an invalid value '256kB'. It should be a valid memory value.", "The property 'max_pred_locks_per_relation' has an invalid negative value '-4'. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['work_mem', 'plan_cache_mode', 'dynamic_library_path', 'max_pred_locks_per_relation'], 'reason': ["The property 'work_mem' has an invalid value '8hhhhh'. It should be a valid memory value.", "The property 'plan_cache_mode' has an invalid value 'auto'. Accepted values are 'auto', 'force_custom_plan', 'force_generic_plan'.", "The property 'dynamic_library_path' should not be set explicitly in PostgreSQL version 13.0.", "The property 'max_pred_locks_per_relation' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['work_mem', 'plan_cache_mode', 'wal_decode_buffer_size', 'max_pred_locks_per_relation'], 'reason': ["The property 'work_mem' has an invalid value '8hhhhh'. It should be a valid memory value.", "The property 'plan_cache_mode' has an invalid value 'auto'. Accepted values are 'auto', 'force_custom_plan', 'force_generic_plan'.", "The property 'wal_decode_buffer_size' has an invalid value '256kB'. It should be a valid memory value.", "The property 'max_pred_locks_per_relation' has an invalid negative value."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: work_mem	plan_cache_mode	wal_decode_buffer_size	max_pred_locks_per_relation
+[Ciri] Reason for work_mem: The property 'work_mem' has an invalid value '8hhhhh'. It should be a valid memory value.
+[Ciri] Reason for plan_cache_mode: The property 'plan_cache_mode' has an invalid value 'auto'. Accepted values are 'auto', 'force_custom_plan', 'force_generic_plan'.
+[Ciri] Reason for wal_decode_buffer_size: The property 'wal_decode_buffer_size' has an invalid value '256kB'. It should be a valid memory value.
+[Ciri] Reason for max_pred_locks_per_relation: The property 'max_pred_locks_per_relation' has an invalid negative value.

@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataDir'], 'reason': ['dataDir is not a valid directory', 'dataDir is not a valid directory']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir and dataLogDir must be different directories', 'dataDir and dataLogDir must be different directories']}
+
+{'hasError': True, 'errParameter': ['dataDir'], 'reason': ['dataDir must be a valid directory']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataDir'], 'reason': ['dataDir is set more than once', 'dataDir is set more than once']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataDir'], 'reason': ['dataDir is duplicated', 'dataDir is duplicated']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataDir'], 'reason': ['dataDir must be a valid directory', 'dataDir must be a valid directory']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataDir	dataDir
+[Ciri] Reason for dataDir: dataDir is set more than once
+[Ciri] Reason for dataDir: dataDir is set more than once

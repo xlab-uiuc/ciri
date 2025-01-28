@@ -1,0 +1,16 @@
+Wrong shot number:
+[8]
+
+Correct shot number:
+[15, 10, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.du.interval', 'ipc.client.kill.max', 'hadoop.caller.context.signature.max.size'], 'reason': ["The property 'fs.du.interval' has the value '1200000' which exceeds the range of an Integer.", "The property 'ipc.client.kill.max' has the value '20' which is not a valid configuration value.", "The property 'hadoop.caller.context.signature.max.size' has the value '40' which is not a valid configuration value."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.du.interval	ipc.client.kill.max	hadoop.caller.context.signature.max.size
+[Ciri] Reason for fs.du.interval: The property 'fs.du.interval' has the value '1200000' which exceeds the range of an Integer.
+[Ciri] Reason for ipc.client.kill.max: The property 'ipc.client.kill.max' has the value '20' which is not a valid configuration value.
+[Ciri] Reason for hadoop.caller.context.signature.max.size: The property 'hadoop.caller.context.signature.max.size' has the value '40' which is not a valid configuration value.

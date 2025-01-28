@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 13, 11]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.directoryscan.interval', 'dfs.namenode.blockreport.queue.size'], 'reason': ["The property 'dfs.datanode.directoryscan.interval' has the value '1s' which is not in the correct format. It should specify a time unit suffix like 's' for seconds.", "The property 'dfs.namenode.blockreport.queue.size' has the value 'true' which is not a valid value. It should be a numerical value."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.directoryscan.interval', 'dfs.namenode.blockreport.queue.size'], 'reason': ["The property 'dfs.datanode.directoryscan.interval' has the value '1s' which is not in the correct format. It should specify a time unit.", "The property 'dfs.namenode.blockreport.queue.size' has the value 'true' which is not a valid value. It should be a numerical value."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.directoryscan.interval', 'dfs.namenode.blockreport.queue.size'], 'reason': ["The property 'dfs.datanode.directoryscan.interval' has the value '1s' which is missing the time unit suffix.", "The property 'dfs.namenode.blockreport.queue.size' has the value 'true' which is not a valid value for defining the queue size."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.directoryscan.interval	dfs.namenode.blockreport.queue.size
+[Ciri] Reason for dfs.datanode.directoryscan.interval: The property 'dfs.datanode.directoryscan.interval' has the value '1s' which is not in the correct format. It should specify a time unit suffix like 's' for seconds.
+[Ciri] Reason for dfs.namenode.blockreport.queue.size: The property 'dfs.namenode.blockreport.queue.size' has the value 'true' which is not a valid value for defining the queue size.

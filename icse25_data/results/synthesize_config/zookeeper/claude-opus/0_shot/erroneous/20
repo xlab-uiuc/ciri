@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.snapRetainCount', 'localSessionsUpgradingEnabled', 'quorum.auth.server.saslLoginContext', 'quorum.auth.learnerRequireSasl'], 'reason': ['autopurge.snapRetainCount should be a positive integer. Negative values are not allowed.', 'localSessionsUpgradingEnabled is not a valid configuration parameter in ZooKeeper 3.7.0.', 'quorum.auth.server.saslLoginContext is not a valid configuration parameter in ZooKeeper 3.7.0. The correct parameter is quorum.auth.serverRequireSasl.', 'quorum.auth.learnerRequireSasl is not a valid configuration parameter in ZooKeeper 3.7.0. The correct parameter is quorum.auth.learnerRequireSasl.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: autopurge.snapRetainCount	localSessionsUpgradingEnabled	quorum.auth.server.saslLoginContext	quorum.auth.learnerRequireSasl
+[Ciri] Reason for autopurge.snapRetainCount: autopurge.snapRetainCount should be a positive integer. Negative values are not allowed.
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled is not a valid configuration parameter in ZooKeeper 3.7.0.
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext is not a valid configuration parameter in ZooKeeper 3.7.0. The correct parameter is quorum.auth.serverRequireSasl.
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl is not a valid configuration parameter in ZooKeeper 3.7.0. The correct parameter is quorum.auth.learnerRequireSasl.

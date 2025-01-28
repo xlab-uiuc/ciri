@@ -1,0 +1,18 @@
+Wrong shot number:
+[1, 5, 8]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir'], 'reason': ["The property 'dataLogDir' contains an invalid path '/\\hadoop/s3a'. Paths should not contain special characters like backslashes."]}
+
+{'hasError': True, 'errParameter': ['dataLogDir'], 'reason': ["The property 'dataLogDir' contains an invalid path '/\\hadoop/s3a'. Paths should not contain special characters like '\\'. Please provide a valid directory path."]}
+
+{'hasError': True, 'errParameter': ['dataLogDir'], 'reason': ["The property 'dataLogDir' has an invalid value '/\\hadoop/s3a'. The value contains an invalid character '\\'. Please provide a valid directory path."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dataLogDir
+[Ciri] Reason for dataLogDir: The property 'dataLogDir' contains an invalid path '/\hadoop/s3a'. Paths should not contain special characters like '\'. Please provide a valid directory path.

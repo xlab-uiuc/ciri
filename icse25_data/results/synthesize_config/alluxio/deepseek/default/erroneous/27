@@ -1,0 +1,19 @@
+Wrong shot number:
+[5, 7, 11]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.upload.threads.max', 'alluxio.worker.tieredstore.level1.dirs.path'], 'reason': ["The property 'alluxio.underfs.s3.upload.threads.max' has the value '-10' which is not within the accepted value {0, positive integer}.", "The property 'alluxio.worker.tieredstore.level1.dirs.path' has the value '/valid/file2' which is not a valid directory path."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.upload.threads.max', 'alluxio.worker.tieredstore.level1.dirs.path'], 'reason': ["The property 'alluxio.underfs.s3.upload.threads.max' has the value '-10' which should be a positive integer or zero.", "The property 'alluxio.worker.tieredstore.level1.dirs.path' should point to a valid directory."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.upload.threads.max', 'alluxio.worker.tieredstore.level1.dirs.path'], 'reason': ["The property 'alluxio.underfs.s3.upload.threads.max' has the value '-10' which is not within the accepted range (0, Infinity).", "The property 'alluxio.worker.tieredstore.level1.dirs.path' should point to an existing directory."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.s3.upload.threads.max	alluxio.worker.tieredstore.level1.dirs.path
+[Ciri] Reason for alluxio.underfs.s3.upload.threads.max: The property 'alluxio.underfs.s3.upload.threads.max' has the value '-10' which is not within the accepted range (0, Infinity).
+[Ciri] Reason for alluxio.worker.tieredstore.level1.dirs.path: The property 'alluxio.worker.tieredstore.level1.dirs.path' should point to a valid directory.

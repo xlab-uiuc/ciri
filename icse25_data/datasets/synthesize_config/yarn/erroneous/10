@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.http.policy</name>
+  <value>HTTP_ONLY</value>
+      <description>
+        This configures the HTTP endpoint for YARN Daemons.The following
+        values are supported:
+        - HTTP_ONLY : Service is provided only on http
+        - HTTPS_ONLY : Service is provided only on https
+      </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.scheduler.monitor.policies</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy</value>
+    <description>The list of SchedulingEditPolicy classes that interact with
+        the scheduler. A particular module may be incompatible with the
+        scheduler, other policies, or a configuration of either.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.reservation-system.enable</name>
+  <value>false</value>
+    <description>
+    Flag to enable the ResourceManager reservation system.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.docker.host-pid-namespace.allowed</name>
+  <value>true</value>
+    <description>This configuration setting determines whether the host's PID
+      namespace is allowed for docker containers on this cluster.
+      Use with care.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.hostname</name>
+  <value>1.1.1.1.1.1</value>
+    <description>The hostname of the timeline service web application.</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.uploader.server.address</name>
+  <value>0.0.0.0:3000</value>
+    <description>The address of the node manager interface in the SCM
+    (shared cache manager)</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource-plugins.fpga.vendor-plugin.class</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.containermanager.resourceplugin.fpga.IntelFpgaOpenclPlugin</value>
+    <description>
+      Specify one vendor plugin to handle FPGA devices discovery/IP download/configure.
+      Only IntelFpgaOpenclPlugin is supported by default.
+      We only allow one NM configured with one vendor FPGA plugin now since the end user can put the same
+      vendor's cards in one host. And this also simplify our design.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.application.max-tags</name>
+  <value>20</value>
+    <description>Max number of application tags set by user in ApplicationSubmissionContext
+      while submitting application</description>
+</property>
+
+</configuration>

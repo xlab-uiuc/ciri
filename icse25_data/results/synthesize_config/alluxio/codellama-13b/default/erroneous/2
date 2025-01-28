@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 13, 10]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.job.capacity'], 'reason': ["The property 'alluxio.job.master.job.capacity' has the value '-5.5' which is out of the valid range of a positive integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.job.capacity', 'alluxio.underfs.gcs.directory.suffix', 'alluxio.master.backup.transport.timeout', 'alluxio.master.file.access.time.update.precision'], 'reason': ["The property 'alluxio.job.master.job.capacity' has the value '-5.5' which is out of the valid range of an integer.", "The property 'alluxio.underfs.gcs.directory.suffix' has the value '/valid/file1' which is not a valid URI.", "The property 'alluxio.master.backup.transport.timeout' has the value '1sec' which is out of the valid range of a duration.", "The property 'alluxio.master.file.access.time.update.precision' has the value '1d' which is out of the valid range of a duration."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.job.capacity'], 'reason': ["The property 'alluxio.job.master.job.capacity' has the value '-5.5' which is not a valid integer."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.job.master.job.capacity
+[Ciri] Reason for alluxio.job.master.job.capacity: The property 'alluxio.job.master.job.capacity' has the value '-5.5' which is out of the valid range of a positive integer.

@@ -1,0 +1,16 @@
+Correct shot number:
+[5, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.threads', 'fs.s3a.select.output.csv.quote.fields', 'ftp.client-write-packet-size', 'fs.permissions.umask-mode', 'ha.failover-controller.cli-check.rpc-timeout.ms', 'hadoop.security.crypto.codec.classes.aes.ctr.nopadding'], 'reason': ["The property 'fs.s3a.committer.threads' should have a value greater than 1 for optimal performance.", "The property 'fs.s3a.select.output.csv.quote.fields' should have a value of 'always' or 'asneeded'.", "The property 'ftp.client-write-packet-size' should be carefully configured based on network conditions.", "The property 'fs.permissions.umask-mode' should be set to a secure value to control file permissions.", "The property 'ha.failover-controller.cli-check.rpc-timeout.ms' timeout value may need adjustment based on system requirements.", "The property 'hadoop.security.crypto.codec.classes.aes.ctr.nopadding' should have a single preferred implementation followed by fallbacks."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.s3a.committer.threads	fs.s3a.select.output.csv.quote.fields	ftp.client-write-packet-size	fs.permissions.umask-mode	ha.failover-controller.cli-check.rpc-timeout.ms	hadoop.security.crypto.codec.classes.aes.ctr.nopadding
+[Ciri] Reason for fs.s3a.committer.threads: The property 'fs.s3a.committer.threads' should have a value greater than 1 for optimal performance.
+[Ciri] Reason for fs.s3a.select.output.csv.quote.fields: The property 'fs.s3a.select.output.csv.quote.fields' should have a value of 'always' or 'asneeded'.
+[Ciri] Reason for ftp.client-write-packet-size: The property 'ftp.client-write-packet-size' should be carefully configured based on network conditions.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' should be set to a secure value to control file permissions.
+[Ciri] Reason for ha.failover-controller.cli-check.rpc-timeout.ms: The property 'ha.failover-controller.cli-check.rpc-timeout.ms' timeout value may need adjustment based on system requirements.
+[Ciri] Reason for hadoop.security.crypto.codec.classes.aes.ctr.nopadding: The property 'hadoop.security.crypto.codec.classes.aes.ctr.nopadding' should have a single preferred implementation followed by fallbacks.

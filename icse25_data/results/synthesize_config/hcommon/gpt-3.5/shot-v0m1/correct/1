@@ -1,0 +1,12 @@
+Wrong shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.automatic.close'], 'reason': ["The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.", "The property 'fs.automatic.close' has an invalid value 'true'. This property should be set to 'false' for advanced applications requiring a more controlled shutdown sequence."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.automatic.close
+[Ciri] Reason for fs.ftp.transfer.mode: The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.
+[Ciri] Reason for fs.automatic.close: The property 'fs.automatic.close' has an invalid value 'true'. This property should be set to 'false' for advanced applications requiring a more controlled shutdown sequence.

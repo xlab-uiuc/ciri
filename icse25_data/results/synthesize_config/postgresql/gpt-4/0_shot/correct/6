@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_init_zero', 'vacuum_failsafe_age', 'update_process_title', "from standby(s); '*'=all"], 'reason': ["The parameter 'wal_init_zero' does not exist in PostgreSQL configuration.", "The parameter 'vacuum_failsafe_age' does not exist in PostgreSQL configuration.", "The parameter 'update_process_title' is not a PostgreSQL configuration parameter. The correct parameter is 'update_process_title'. However, its inclusion suggests a misunderstanding or typo as it is correctly stated.", "The line 'from standby(s); '*'=all' is not a valid configuration setting and appears to be incorrectly formatted or misplaced."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: wal_init_zero	vacuum_failsafe_age	update_process_title	from standby(s); '*'=all
+[Ciri] Reason for wal_init_zero: The parameter 'wal_init_zero' does not exist in PostgreSQL configuration.
+[Ciri] Reason for vacuum_failsafe_age: The parameter 'vacuum_failsafe_age' does not exist in PostgreSQL configuration.
+[Ciri] Reason for update_process_title: The parameter 'update_process_title' is not a PostgreSQL configuration parameter. The correct parameter is 'update_process_title'. However, its inclusion suggests a misunderstanding or typo as it is correctly stated.
+[Ciri] Reason for from standby(s); '*'=all: The line 'from standby(s); '*'=all' is not a valid configuration setting and appears to be incorrectly formatted or misplaced.

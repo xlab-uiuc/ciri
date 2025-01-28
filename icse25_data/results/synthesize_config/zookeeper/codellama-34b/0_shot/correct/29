@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['syncLimit', 'initLimit', 'maxSessionTimeout', 'quorum.auth.learner.saslLoginContext'], 'reason': ['syncLimit must be greater than or equal to 2', 'initLimit must be greater than or equal to 2', 'maxSessionTimeout must be greater than or equal to 10000', 'quorum.auth.learner.saslLoginContext is not a valid property']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'syncLimit'], 'reason': ['initLimit should be greater than 0', 'syncLimit should be greater than 0']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'syncLimit', 'quorum.auth.learner.saslLoginContext'], 'reason': ['initLimit should be an integer between 1 and 20', 'syncLimit should be an integer between 2 and 20', 'quorum.auth.learner.saslLoginContext is not a valid property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server ID should be an integer.']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'syncLimit'], 'reason': ['initLimit should be less than or equal to 10', 'syncLimit should be less than or equal to 5']}
+
+{'hasError': True, 'errParameter': ['standaloneEnabled'], 'reason': ['standaloneEnabled is not a valid property for zookeeper version 3.7.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initLimit', 'syncLimit'], 'reason': ['initLimit should be an odd number', 'syncLimit should be an odd number']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'syncLimit'], 'reason': ['initLimit must be greater than 0', 'syncLimit must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['syncLimit'], 'reason': ['syncLimit should be greater than or equal to 2']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: initLimit	syncLimit
+[Ciri] Reason for initLimit: initLimit should be an odd number
+[Ciri] Reason for syncLimit: syncLimit should be an odd number

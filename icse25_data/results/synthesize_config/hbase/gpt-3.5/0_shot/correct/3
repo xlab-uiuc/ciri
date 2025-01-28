@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.msginterval', 'hbase.regionserver.optionalcacheflushinterval'], 'reason': ["The property 'hbase.regionserver.msginterval' has a value of 1500 which is less than the recommended value of 3000 (3 * 1000).", "The property 'hbase.regionserver.optionalcacheflushinterval' has a value of 3600000 which is equivalent to 1 hour. It is recommended to provide a more descriptive value rather than just the time in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.msginterval', 'hbase.client.max.perserver.tasks'], 'reason': ["The property 'hbase.regionserver.msginterval' has a usage example that references 'TEST_UTIL' which is not defined in the configuration file.", "The property 'hbase.client.max.perserver.tasks' has a value of '1' which might be too low for optimal performance depending on the workload."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.msginterval', 'hbase.regionserver.optionalcacheflushinterval'], 'reason': ["The property 'hbase.regionserver.msginterval' has a value of 1500 which is interpreted as 1.5 seconds. The description mentions milliseconds, so the value should be adjusted accordingly.", "The property 'hbase.regionserver.optionalcacheflushinterval' has a value of 3600000 which is interpreted as 1 hour. The description mentions hours, so the value should be adjusted accordingly."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.msginterval	hbase.regionserver.optionalcacheflushinterval
+[Ciri] Reason for hbase.regionserver.msginterval: The property 'hbase.regionserver.msginterval' has a value of 1500 which is interpreted as 1.5 seconds. The description mentions milliseconds, so the value should be adjusted accordingly.
+[Ciri] Reason for hbase.regionserver.optionalcacheflushinterval: The property 'hbase.regionserver.optionalcacheflushinterval' has a value of 3600000 which is interpreted as 1 hour. The description mentions hours, so the value should be adjusted accordingly.

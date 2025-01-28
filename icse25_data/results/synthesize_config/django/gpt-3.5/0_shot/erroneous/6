@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['WSGI_APPLICATION', 'SECURE_REFERRER_POLICY', 'STATICFILES_STORAGE', 'FILE_UPLOAD_PERMISSIONS', 'PASSWORD_RESET_TIMEOUT'], 'reason': ['WSGI_APPLICATION should be specified with the path to the WSGI application for the project.', 'SECURE_REFERRER_POLICY should be one of the valid referrer policy values.', 'STATICFILES_STORAGE should be a valid storage class for static files.', 'FILE_UPLOAD_PERMISSIONS should be specified as an octal number (e.g., 0o644 for read/write permissions).', 'PASSWORD_RESET_TIMEOUT should be specified in seconds, not as a mathematical expression.']}
+
+{'hasError': True, 'errParameter': ['WSGI_APPLICATION', 'SECURE_REFERRER_POLICY', 'STATICFILES_STORAGE', 'FILE_UPLOAD_PERMISSIONS', 'PASSWORD_RESET_TIMEOUT'], 'reason': ['WSGI_APPLICATION should be specified with the path to the WSGI application object', "SECURE_REFERRER_POLICY should be one of 'no-referrer', 'no-referrer-when-downgrade', 'same-origin', 'origin', 'strict-origin', 'origin-when-cross-origin', 'strict-origin-when-cross-origin', or 'unsafe-url'", 'STATICFILES_STORAGE should be a valid storage class for static files', 'FILE_UPLOAD_PERMISSIONS should be specified in octal format, e.g., 0o644', 'PASSWORD_RESET_TIMEOUT should be specified in seconds']}
+
+{'hasError': True, 'errParameter': ['WSGI_APPLICATION', 'SECURE_REFERRER_POLICY'], 'reason': ['WSGI_APPLICATION should be set to the WSGI application callable for the project. It should not be set to None.', "SECURE_REFERRER_POLICY should be set to one of the valid referrer policy values like 'no-referrer', 'no-referrer-when-downgrade', 'same-origin', 'origin', 'strict-origin', etc."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: WSGI_APPLICATION	SECURE_REFERRER_POLICY	STATICFILES_STORAGE	FILE_UPLOAD_PERMISSIONS	PASSWORD_RESET_TIMEOUT
+[Ciri] Reason for WSGI_APPLICATION: WSGI_APPLICATION should be specified with the path to the WSGI application object
+[Ciri] Reason for SECURE_REFERRER_POLICY: SECURE_REFERRER_POLICY should be one of the valid referrer policy values.
+[Ciri] Reason for STATICFILES_STORAGE: STATICFILES_STORAGE should be a valid storage class for static files
+[Ciri] Reason for FILE_UPLOAD_PERMISSIONS: FILE_UPLOAD_PERMISSIONS should be specified in octal format, e.g., 0o644
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: PASSWORD_RESET_TIMEOUT should be specified in seconds, not as a mathematical expression.

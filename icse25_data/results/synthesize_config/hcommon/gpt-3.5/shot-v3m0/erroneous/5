@@ -1,0 +1,12 @@
+Correct shot number:
+[1, 3, 12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'fs.azure.user.agent.prefix'], 'reason': ['Invalid value format. Value should be expressed in seconds (e.g. 10s, 1m, etc.)', 'Usage tag found. Usage tags are not allowed in configuration properties.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout	fs.azure.user.agent.prefix
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: Invalid value format. Value should be expressed in seconds (e.g. 10s, 1m, etc.)
+[Ciri] Reason for fs.azure.user.agent.prefix: Usage tag found. Usage tags are not allowed in configuration properties.

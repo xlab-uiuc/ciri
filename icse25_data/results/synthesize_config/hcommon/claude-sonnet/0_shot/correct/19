@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.common.configuration.version', 'fs.AbstractFileSystem.abfs.impl'], 'reason': ["The value for 'hadoop.common.configuration.version' is set to '3.0.0', but the question mentions that the version is 3.3.0.", "The property 'fs.AbstractFileSystem.abfs.impl' is not a standard Hadoop configuration property for version 3.3.0. It appears to be specific to Azure Blob File System (ABFS) integration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.common.configuration.version	fs.AbstractFileSystem.abfs.impl
+[Ciri] Reason for hadoop.common.configuration.version: The value for 'hadoop.common.configuration.version' is set to '3.0.0', but the question mentions that the version is 3.3.0.
+[Ciri] Reason for fs.AbstractFileSystem.abfs.impl: The property 'fs.AbstractFileSystem.abfs.impl' is not a standard Hadoop configuration property for version 3.3.0. It appears to be specific to Azure Blob File System (ABFS) integration.

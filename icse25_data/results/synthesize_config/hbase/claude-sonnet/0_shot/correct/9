@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl', 'hbase.regionserver.global.memstore.size'], 'reason': ["The property 'hbase.regionserver.hlog.writer.impl' is deprecated in HBase 2.2.7 and should not be used. Instead, the property 'hbase.wal.provider' should be used to configure the WAL provider implementation.", "The property 'hbase.regionserver.global.memstore.size' is deprecated in HBase 2.2.7 and should not be used. Instead, the properties 'hbase.regionserver.global.memstore.upperLimit' and 'hbase.regionserver.global.memstore.lowerLimit' should be used to configure the upper and lower limits for the global memstore size."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.hlog.writer.impl	hbase.regionserver.global.memstore.size
+[Ciri] Reason for hbase.regionserver.hlog.writer.impl: The property 'hbase.regionserver.hlog.writer.impl' is deprecated in HBase 2.2.7 and should not be used. Instead, the property 'hbase.wal.provider' should be used to configure the WAL provider implementation.
+[Ciri] Reason for hbase.regionserver.global.memstore.size: The property 'hbase.regionserver.global.memstore.size' is deprecated in HBase 2.2.7 and should not be used. Instead, the properties 'hbase.regionserver.global.memstore.upperLimit' and 'hbase.regionserver.global.memstore.lowerLimit' should be used to configure the upper and lower limits for the global memstore size.

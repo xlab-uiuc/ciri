@@ -1,0 +1,25 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-tls', 'auto-compaction-mode', 'proxy-dial-timeout', 'logger', 'force-new-cluster'], 'reason': ['enable-v2 is not a valid property in etcd 3.5.0', 'auto-tls is not a valid property in etcd 3.5.0', 'auto-compaction-mode is not a valid property in etcd 3.5.0', 'proxy-dial-timeout is not a valid property in etcd 3.5.0', 'logger is not a valid property in etcd 3.5.0', 'force-new-cluster is not a valid property in etcd 3.5.0']}
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-tls', 'force-new-cluster'], 'reason': ['enable-v2 is not supported in etcd 3.5.0', 'auto-tls is not supported in etcd 3.5.0', 'force-new-cluster is not supported in etcd 3.5.0']}
+
+{'hasError': True, 'errParameter': ['enable-v2'], 'reason': ['enable-v2 is not a valid configuration parameter for etcd version 3.5.0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-tls', 'auto-compaction-mode', 'proxy-dial-timeout', 'logger', 'force-new-cluster'], 'reason': ['enable-v2 is not a valid parameter for etcd version 3.5.0', 'auto-tls is not a valid parameter for etcd version 3.5.0', 'auto-compaction-mode is not a valid parameter for etcd version 3.5.0', 'proxy-dial-timeout is not a valid parameter for etcd version 3.5.0', 'logger is not a valid parameter for etcd version 3.5.0', 'force-new-cluster is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-tls', 'auto-compaction-mode', 'proxy-dial-timeout', 'logger', 'force-new-cluster'], 'reason': ['enable-v2 is not a valid property for etcd version 3.5.0', 'auto-tls is not a valid property for etcd version 3.5.0', 'auto-compaction-mode is not a valid property for etcd version 3.5.0', 'proxy-dial-timeout is not a valid property for etcd version 3.5.0', 'logger is not a valid property for etcd version 3.5.0', 'force-new-cluster is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-compaction-mode', 'proxy-dial-timeout', 'logger', 'force-new-cluster'], 'reason': ['enable-v2 is not a valid configuration parameter for etcd version 3.5.0', 'auto-compaction-mode is not a valid configuration parameter for etcd version 3.5.0', 'proxy-dial-timeout is not a valid configuration parameter for etcd version 3.5.0', 'logger is not a valid configuration parameter for etcd version 3.5.0', 'force-new-cluster is not a valid configuration parameter for etcd version 3.5.0']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: enable-v2	auto-tls	auto-compaction-mode	proxy-dial-timeout	logger	force-new-cluster
+[Ciri] Reason for enable-v2: enable-v2 is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for auto-tls: auto-tls is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode is not a valid property for etcd version 3.5.0
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout is not a valid property for etcd version 3.5.0
+[Ciri] Reason for logger: logger is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for force-new-cluster: force-new-cluster is not a valid parameter for etcd version 3.5.0

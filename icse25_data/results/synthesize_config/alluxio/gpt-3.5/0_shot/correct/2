@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.min', 'alluxio.master.web.hostname', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ["Invalid time unit 'sec' for property 'alluxio.master.backup.connect.interval.min'. Use valid time units like 'ms', 's', 'm', 'h', 'd'.", "Invalid value '127.0.0.1' for property 'alluxio.master.web.hostname'. Use a valid hostname or IP address.", "Invalid time unit 'sec' for property 'alluxio.jvm.monitor.warn.threshold'. Use valid time units like 'ms', 's', 'm', 'h', 'd'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.min', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ["Invalid time unit 'sec' for property 'alluxio.master.backup.connect.interval.min'. Use valid time units like 'ms', 's', 'min', 'h', 'd'.", "Invalid time unit 'sec' for property 'alluxio.jvm.monitor.sleep.interval'. Use valid time units like 'ms', 's', 'min', 'h', 'd'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.min', 'alluxio.jvm.monitor.sleep.interval', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ["Invalid time unit 'sec' for property 'alluxio.master.backup.connect.interval.min'. Use valid time units like 's' for seconds.", "Invalid time unit 'sec' for property 'alluxio.jvm.monitor.sleep.interval'. Use valid time units like 's' for seconds.", "Invalid time unit 'sec' for property 'alluxio.jvm.monitor.warn.threshold'. Use valid time units like 's' for seconds."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.audit.logging.queue.capacity', 'alluxio.master.metastore.inode.iteration.crawler.count', 'alluxio.jvm.monitor.sleep.interval', 'alluxio.worker.network.async.cache.manager.queue.max', 'alluxio.master.backup.connect.interval.min', 'alluxio.master.web.hostname', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ["The property 'alluxio.master.audit.logging.queue.capacity' should not have units specified. Remove '10000' and keep it as an integer value.", "The property 'alluxio.master.metastore.inode.iteration.crawler.count' should not have units specified. Remove '16' and keep it as an integer value.", "The property 'alluxio.jvm.monitor.sleep.interval' should not have units specified. Remove '1sec' and keep it as an integer value.", "The property 'alluxio.worker.network.async.cache.manager.queue.max' should not have units specified. Remove '256' and keep it as an integer value.", "The property 'alluxio.master.backup.connect.interval.min' should not have units specified. Remove '2sec' and keep it as an integer value.", "The property 'alluxio.master.web.hostname' should not have units specified. Remove '127.0.0.1' and keep it as a string value.", "The property 'alluxio.jvm.monitor.warn.threshold' should not have units specified. Remove '1sec' and keep it as an integer value."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.min', 'alluxio.jvm.monitor.sleep.interval', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ["Invalid time unit 'sec'. Use valid time units like 's' for seconds.", "Invalid time unit 'sec'. Use valid time units like 's' for seconds.", "Invalid time unit 'sec'. Use valid time units like 's' for seconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.min', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ["Invalid unit 'sec' for property 'alluxio.master.backup.connect.interval.min'. Use 's' for seconds.", "Invalid unit 'sec' for property 'alluxio.jvm.monitor.sleep.interval'. Use 's' for seconds."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.min', 'alluxio.jvm.monitor.sleep.interval', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ["Invalid unit 'sec' for time interval, use 's' for seconds", "Invalid unit 'sec' for time interval, use 's' for seconds", "Invalid unit 'sec' for time interval, use 's' for seconds"]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.min', 'alluxio.jvm.monitor.sleep.interval', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ["Invalid time unit 'sec'. Use valid time units like 's', 'ms', 'us', 'ns'.", "Invalid time unit 'sec'. Use valid time units like 's', 'ms', 'us', 'ns'.", "Invalid time unit 'sec'. Use valid time units like 's', 'ms', 'us', 'ns'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.min', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ["Invalid unit 'sec' for time interval. Use 's' for seconds.", "Invalid unit 'sec' for time interval. Use 's' for seconds."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.backup.connect.interval.min	alluxio.jvm.monitor.sleep.interval	alluxio.jvm.monitor.warn.threshold
+[Ciri] Reason for alluxio.master.backup.connect.interval.min: Invalid unit 'sec' for time interval, use 's' for seconds
+[Ciri] Reason for alluxio.jvm.monitor.sleep.interval: Invalid time unit 'sec'. Use valid time units like 's', 'ms', 'us', 'ns'.
+[Ciri] Reason for alluxio.jvm.monitor.warn.threshold: Invalid unit 'sec' for time interval, use 's' for seconds

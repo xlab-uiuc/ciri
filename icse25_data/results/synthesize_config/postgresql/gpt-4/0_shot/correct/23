@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_ciphers', 'log_file_mode'], 'reason': ["The 'ssl_ciphers' configuration is not directly applicable in postgresql.conf. It should be set in the PostgreSQL server's SSL configuration file or the environment, not in the main configuration file.", "The 'log_file_mode' parameter does not exist in PostgreSQL 13.0. The correct parameter for setting the file mode of log files is 'log_file_mode'. However, the provided value '0600' is correctly formatted."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ssl_ciphers	log_file_mode
+[Ciri] Reason for ssl_ciphers: The 'ssl_ciphers' configuration is not directly applicable in postgresql.conf. It should be set in the PostgreSQL server's SSL configuration file or the environment, not in the main configuration file.
+[Ciri] Reason for log_file_mode: The 'log_file_mode' parameter does not exist in PostgreSQL 13.0. The correct parameter for setting the file mode of log files is 'log_file_mode'. However, the provided value '0600' is correctly formatted.

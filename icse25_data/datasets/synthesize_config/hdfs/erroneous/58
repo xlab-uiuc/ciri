@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.heartbeat.recheck-interval</name>
+  <value>30000</value>
+  <description>
+    This time decides the interval to check for expired datanodes.
+    With this value and dfs.heartbeat.interval, the interval of
+    deciding the datanode is stale or not is also calculated.
+    The unit of this configuration is millisecond.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.maintenance.replication.min</name>
+  <value>0</value>
+  <description>Minimal live block replication in existence of maintenance mode.
+  </description>
+</property>
+
+<property>
+  <name>dfs.heartbeat.interval</name>
+  <value>40s</value>
+  <description>
+    Determines datanode heartbeat interval in seconds.
+    Can use the following suffix (case insensitive):
+    ms(millis), s(sec), m(min), h(hour), d(day)
+    to specify the time (such as 2s, 2m, 1h, etc.).
+    Or provide complete number in seconds (such as 30 for 30 seconds).
+    If no time unit is specified then seconds is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.sync.behind.writes</name>
+  <value>true</value>
+  <description>
+        If this configuration is enabled, the datanode will instruct the
+        operating system to enqueue all written data to the disk immediately
+        after it is written. This differs from the usual OS policy which
+        may wait for up to 30 seconds before triggering writeback.
+
+        This may improve performance for some workloads by smoothing the
+        IO profile for data written to disk.
+
+        If the Hadoop native libraries are not available, this configuration
+        has no effect.
+  </description>
+</property>
+
+<property>
+  <name>dfs.internal.nameservices</name>
+  <value>ns2</value>
+  <description>
+    Comma-separated list of nameservices that belong to this cluster.
+    Datanode will report to all the nameservices in this list. By default
+    this is set to the value of dfs.nameservices.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.ec.system.default.policy</name>
+  <value>RS-6-3-1024k</value>
+  <description>The default erasure coding policy name will be used
+    on the path if no policy name is passed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.class</name>
+  <value>org.apache.hadoop.hdfs.server.common.blockaliasmap.impl.TextFileRegionAliasMap</value>
+    <description>
+      The class that is used to specify the input format of the blocks on
+      provided storages. The default is
+      org.apache.hadoop.hdfs.server.common.blockaliasmap.impl.TextFileRegionAliasMap which uses
+      file regions to describe blocks. The file regions are specified as a
+      delimited text file. Each file region is a 6-tuple containing the
+      block id, remote file path, offset into file, length of block, the
+      block pool id containing the block, and the generation stamp of the
+      block.
+    </description>
+</property>
+
+<property>
+  <name>dfs.provided.acls.import.enabled</name>
+  <value>true</value>
+    <description>
+      Set to true to inherit ACLs (Access Control Lists) from remote stores
+      during mount. Disabled by default, i.e., ACLs are not inherited from
+      remote stores. Note had HDFS ACLs have to be enabled
+      (dfs.namenode.acls.enabled must be set to true) for this to take effect.
+    </description>
+</property>
+
+</configuration>

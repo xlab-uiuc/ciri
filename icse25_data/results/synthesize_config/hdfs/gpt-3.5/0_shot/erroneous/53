@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.use.dfs.network.topology', 'dfs.net.topology.impl'], 'reason': ["The property 'dfs.use.dfs.network.topology' should have a value of 'true' to enable DFSNetworkTopology.", "The property 'dfs.net.topology.impl' should only be specified when 'dfs.use.dfs.network.topology' is set to 'true'."]}
+
+{'hasError': True, 'errParameter': ['dfs.use.dfs.network.topology', 'dfs.net.topology.impl'], 'reason': ["The property 'dfs.use.dfs.network.topology' should have a value of 'true' to enable DFSNetworkTopology.", "When 'dfs.use.dfs.network.topology' is set to 'true', the 'dfs.net.topology.impl' property should specify the implementation class 'org.apache.hadoop.hdfs.net.DFSNetworkTopology'."]}
+
+{'hasError': True, 'errParameter': ['dfs.use.dfs.network.topology', 'dfs.net.topology.impl'], 'reason': ["The property 'dfs.use.dfs.network.topology' should have a value of 'true' or 'false'.", "The property 'dfs.net.topology.impl' should only be specified when 'dfs.use.dfs.network.topology' is set to 'true'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.use.dfs.network.topology	dfs.net.topology.impl
+[Ciri] Reason for dfs.use.dfs.network.topology: The property 'dfs.use.dfs.network.topology' should have a value of 'true' or 'false'.
+[Ciri] Reason for dfs.net.topology.impl: The property 'dfs.net.topology.impl' should only be specified when 'dfs.use.dfs.network.topology' is set to 'true'.

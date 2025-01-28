@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 6, 13]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.stream.cache.timeout'], 'reason': ["The property 'alluxio.proxy.stream.cache.timeout' has the value '6HR' which is not within the accepted value [0-24HR]."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.stream.cache.timeout'], 'reason': ["The property 'alluxio.proxy.stream.cache.timeout' has the value '6HR' which is not within the accepted value range {1ms,1s,1min,1hr,1d}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.stream.cache.timeout'], 'reason': ["The property 'alluxio.proxy.stream.cache.timeout' has the value '6HR' which is not within the accepted value range of 1-24HR."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.proxy.stream.cache.timeout
+[Ciri] Reason for alluxio.proxy.stream.cache.timeout: The property 'alluxio.proxy.stream.cache.timeout' has the value '6HR' which is not within the accepted value range {1ms,1s,1min,1hr,1d}.

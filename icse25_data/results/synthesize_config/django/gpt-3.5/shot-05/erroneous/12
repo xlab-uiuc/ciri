@@ -1,0 +1,13 @@
+Wrong shot number:
+[1, 4, 5, 3, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'DATE_FORMAT', 'PASSWORD_RESET_TIMEOUT'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has the value '-1' which should be a positive integer.", "The property 'DATE_FORMAT' has an invalid format 'N j, Y'.", "The property 'PASSWORD_RESET_TIMEOUT' has an invalid format '60 * 60 * 24 * 3'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	DATE_FORMAT	PASSWORD_RESET_TIMEOUT
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: The property 'CACHE_MIDDLEWARE_SECONDS' has the value '-1' which should be a positive integer.
+[Ciri] Reason for DATE_FORMAT: The property 'DATE_FORMAT' has an invalid format 'N j, Y'.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: The property 'PASSWORD_RESET_TIMEOUT' has an invalid format '60 * 60 * 24 * 3'.

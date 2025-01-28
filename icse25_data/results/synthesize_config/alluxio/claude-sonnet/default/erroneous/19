@@ -1,0 +1,15 @@
+Wrong shot number:
+[12, 6, 13]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.user.ufs.block.read.concurrency.max'], 'reason': ["The property 'alluxio.job.worker.rpc.port' has an invalid value '-100.22'. Port numbers should be positive integers.", "The value '1073741823' for the property 'alluxio.user.ufs.block.read.concurrency.max' exceeds the maximum allowed value for an integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.rpc.port	alluxio.user.ufs.block.read.concurrency.max
+[Ciri] Reason for alluxio.job.worker.rpc.port: The property 'alluxio.job.worker.rpc.port' has an invalid value '-100.22'. Port numbers should be positive integers.
+[Ciri] Reason for alluxio.user.ufs.block.read.concurrency.max: The value '1073741823' for the property 'alluxio.user.ufs.block.read.concurrency.max' exceeds the maximum allowed value for an integer.

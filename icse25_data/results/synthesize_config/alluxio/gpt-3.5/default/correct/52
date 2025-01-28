@@ -1,0 +1,26 @@
+Wrong shot number:
+[13, 1, 5]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.security.authentication.type'], 'reason': ["The property 'alluxio.security.authentication.type' has a comment next to it which may cause parsing issues. Comments should be removed from property files."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ["The property 'alluxio.user.network.rpc.max.inbound.message.size' has the value '200MB' which is not of the correct type Integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.timeout.threads'], 'reason': ["The property 'alluxio.user.client.cache.timeout.threads' contains a value '16' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.security.authentication.type'], 'reason': ["The property 'alluxio.security.authentication.type' has a comment after the value which is not allowed in the configuration file."]}
+
+{'hasError': True, 'errParameter': ['alluxio.security.authentication.type'], 'reason': ["The property 'alluxio.security.authentication.type' has a comment after it which may cause parsing issues. Comments should be placed on separate lines."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.security.authentication.type
+[Ciri] Reason for alluxio.security.authentication.type: The property 'alluxio.security.authentication.type' has a comment after the value which is not allowed in the configuration file.

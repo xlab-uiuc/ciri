@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.scheduler.maximum-allocation-mb</name>
+  <value>4096</value>
+    <description>The maximum allocation for every container request at the RM
+    in MBs. Memory requests higher than this will throw an
+    InvalidResourceRequestException.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.reservation-system.enable</name>
+  <value>false</value>
+    <description>
+    Flag to enable the ResourceManager reservation system.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.memory-mb</name>
+  <value>1024</value>
+    <description>Amount of physical memory, in MB, that can be allocated 
+    for containers. If set to -1 and
+    yarn.nodemanager.resource.detect-hardware-capabilities is true, it is
+    automatically calculated(in case of Windows and Linux).
+    In other cases, the default is 8192MB.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.memory.enabled</name>
+  <value>true</value>
+    <description>Whether YARN CGroups memory tracking is enabled.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size</name>
+  <value>250</value>
+    <description>The size of the stat cache which stores stats of the
+      layers and config.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.windows-secure-container-executor.group</name>
+  <value>xdgroup</value>
+    <description>
+    The Windows group that the windows-container-executor should run as.
+    </description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.nm.uploader.thread-count</name>
+  <value>10</value>
+    <description>The number of threads used to upload files from a node manager
+    instance (20 by default)</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.webapp.xfs-filter.xframe-options</name>
+  <value>SAMEORIGIN</value>
+    <description>
+      Property specifying the xframe options value.
+    </description>
+</property>
+
+</configuration>

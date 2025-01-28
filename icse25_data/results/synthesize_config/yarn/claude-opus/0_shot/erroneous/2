@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.retry-attempts', 'yarn.resourcemanager.webapp.https.address'], 'reason': ['The value for yarn.resourcemanager.placement-constraints.retry-attempts should be a non-negative integer, but -5.5 is provided which is an invalid value.', 'The value for yarn.resourcemanager.webapp.https.address should be a fully qualified domain name or IP address, but 127.0.0.1 is provided which is a loopback address and not suitable for a production environment.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.placement-constraints.retry-attempts	yarn.resourcemanager.webapp.https.address
+[Ciri] Reason for yarn.resourcemanager.placement-constraints.retry-attempts: The value for yarn.resourcemanager.placement-constraints.retry-attempts should be a non-negative integer, but -5.5 is provided which is an invalid value.
+[Ciri] Reason for yarn.resourcemanager.webapp.https.address: The value for yarn.resourcemanager.webapp.https.address should be a fully qualified domain name or IP address, but 127.0.0.1 is provided which is a loopback address and not suitable for a production environment.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.zookeeper.property.initLimit', 'hbase.hregion.memstore.flush.size', 'hbase.security.visibility.mutations.checkauths'], 'reason': ["The property 'hbase.zookeeper.leaderport' should be 'hbase.zookeeper.leader.port' in HBase 2.x.", "The property 'hbase.zookeeper.property.initLimit' is not a valid property in HBase 2.x.", "The property 'hbase.hregion.memstore.flush.size' should be 'hbase.hregion.memstore.flush.size.threshold' in HBase 2.x.", "The property 'hbase.security.visibility.mutations.checkauths' is not a valid property in HBase 2.x."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.zookeeper.property.initLimit'], 'reason': ["The property 'hbase.zookeeper.leaderport' is missing a description.", "The property 'hbase.zookeeper.property.initLimit' is missing a usage."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.zookeeper.property.initLimit'], 'reason': ["The parameter 'hbase.zookeeper.leaderport' is incorrect. It should be 'hbase.zookeeper.leader.port' for HBase version 2.2.7.", "The parameter 'hbase.zookeeper.property.initLimit' is incorrect. It should be 'hbase.zookeeper.initLimit' for HBase version 2.2.7."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.zookeeper.leaderport	hbase.zookeeper.property.initLimit
+[Ciri] Reason for hbase.zookeeper.leaderport: The parameter 'hbase.zookeeper.leaderport' is incorrect. It should be 'hbase.zookeeper.leader.port' for HBase version 2.2.7.
+[Ciri] Reason for hbase.zookeeper.property.initLimit: The property 'hbase.zookeeper.property.initLimit' is missing a usage.

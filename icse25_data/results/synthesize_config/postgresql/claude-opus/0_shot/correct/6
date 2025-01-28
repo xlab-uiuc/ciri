@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_failsafe_age', 'vacuum_freeze_table_age'], 'reason': ['vacuum_failsafe_age=1600000000 exceeds the maximum allowed value of 2100000000 for PostgreSQL 13', 'vacuum_freeze_table_age=300000000 is not recommended. The default value of 150000000 should be used unless you have explicitly set vacuum_freeze_min_age to a non-default value']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: vacuum_failsafe_age	vacuum_freeze_table_age
+[Ciri] Reason for vacuum_failsafe_age: vacuum_failsafe_age=1600000000 exceeds the maximum allowed value of 2100000000 for PostgreSQL 13
+[Ciri] Reason for vacuum_freeze_table_age: vacuum_freeze_table_age=300000000 is not recommended. The default value of 150000000 should be used unless you have explicitly set vacuum_freeze_min_age to a non-default value

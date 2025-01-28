@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'repl-backlog-size', 'replica-lazy-flush', 'rdbcompression', 'repl-diskless-sync-delay', 'lazyfree-lazy-user-del'], 'reason': ["The parameter 'replica-serve-stale-data' is not a valid configuration option in Redis 7.0.0.", "The parameter 'repl-backlog-size' is not a valid configuration option in Redis 7.0.0. The correct parameter is 'replicaof-backlog-size'.", "The parameter 'replica-lazy-flush' is not a valid configuration option in Redis 7.0.0.", "The parameter 'rdbcompression' is not a valid configuration option in Redis 7.0.0. The correct parameter is 'rdb-compression'.", "The parameter 'repl-diskless-sync-delay' is not a valid configuration option in Redis 7.0.0. The correct parameter is 'repl-diskless-sync-delay'.", "The parameter 'lazyfree-lazy-user-del' is not a valid configuration option in Redis 7.0.0."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: replica-serve-stale-data	repl-backlog-size	replica-lazy-flush	rdbcompression	repl-diskless-sync-delay	lazyfree-lazy-user-del
+[Ciri] Reason for replica-serve-stale-data: The parameter 'replica-serve-stale-data' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for repl-backlog-size: The parameter 'repl-backlog-size' is not a valid configuration option in Redis 7.0.0. The correct parameter is 'replicaof-backlog-size'.
+[Ciri] Reason for replica-lazy-flush: The parameter 'replica-lazy-flush' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for rdbcompression: The parameter 'rdbcompression' is not a valid configuration option in Redis 7.0.0. The correct parameter is 'rdb-compression'.
+[Ciri] Reason for repl-diskless-sync-delay: The parameter 'repl-diskless-sync-delay' is not a valid configuration option in Redis 7.0.0. The correct parameter is 'repl-diskless-sync-delay'.
+[Ciri] Reason for lazyfree-lazy-user-del: The parameter 'lazyfree-lazy-user-del' is not a valid configuration option in Redis 7.0.0.

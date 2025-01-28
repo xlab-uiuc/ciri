@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['stream-node-max-entries', 'hash-max-listpack-value', 'proto-max-bulk-len'], 'reason': ["The correct parameter is 'stream-node-max-bytes' or 'hash-max-ziplist-entries' for streams, 'stream-node-max-entries' does not exist.", "The correct parameter for hashes is 'hash-max-ziplist-value' or 'hash-max-listpack-entries', 'hash-max-listpack-value' does not exist.", "The value for 'proto-max-bulk-len' is specified in bytes, and the maximum allowed is 536870912 (512MB). However, the correct format does not include 'mb'. It should be specified as an integer value in bytes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: stream-node-max-entries	hash-max-listpack-value	proto-max-bulk-len
+[Ciri] Reason for stream-node-max-entries: The correct parameter is 'stream-node-max-bytes' or 'hash-max-ziplist-entries' for streams, 'stream-node-max-entries' does not exist.
+[Ciri] Reason for hash-max-listpack-value: The correct parameter for hashes is 'hash-max-ziplist-value' or 'hash-max-listpack-entries', 'hash-max-listpack-value' does not exist.
+[Ciri] Reason for proto-max-bulk-len: The value for 'proto-max-bulk-len' is specified in bytes, and the maximum allowed is 536870912 (512MB). However, the correct format does not include 'mb'. It should be specified as an integer value in bytes.

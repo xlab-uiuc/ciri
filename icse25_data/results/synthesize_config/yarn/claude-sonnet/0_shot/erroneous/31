@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.default-container-executor.log-dirs.permissions', 'yarn.timeline-service.leveldb-timeline-store.path'], 'reason': ["The value '355' for 'yarn.nodemanager.default-container-executor.log-dirs.permissions' is not a valid permissions setting. It should be a 3-digit octal number representing user/group/other permissions.", "The value 'hadoop_tmp/yarn/timeline' for 'yarn.timeline-service.leveldb-timeline-store.path' is not a valid path. It should be an absolute path on the file system."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.default-container-executor.log-dirs.permissions	yarn.timeline-service.leveldb-timeline-store.path
+[Ciri] Reason for yarn.nodemanager.default-container-executor.log-dirs.permissions: The value '355' for 'yarn.nodemanager.default-container-executor.log-dirs.permissions' is not a valid permissions setting. It should be a 3-digit octal number representing user/group/other permissions.
+[Ciri] Reason for yarn.timeline-service.leveldb-timeline-store.path: The value 'hadoop_tmp/yarn/timeline' for 'yarn.timeline-service.leveldb-timeline-store.path' is not a valid path. It should be an absolute path on the file system.

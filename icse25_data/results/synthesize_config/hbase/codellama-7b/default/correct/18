@@ -1,0 +1,26 @@
+Wrong shot number:
+[3, 2, 5]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.checksum.verify'], 'reason': ["The property 'hbase.regionserver.checksum.verify' has the value 'false' which is not a valid boolean value."]}
+
+{'hasError': True, 'errParameter': ['hbase.rest-csrf.browser-useragents-regex'], 'reason': ["The property 'hbase.rest-csrf.browser-useragents-regex' has the value '^Opera.*' which does not follow the correct regular expression format."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count'], 'reason': ["The property 'hbase.regionserver.handler.count' has the value '30' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regionserver.storefile.refresh.period' has the value '0' which is not a positive integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count'], 'reason': ["The property 'hbase.regionserver.handler.count' has the value '30' which is not a valid value for the property."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.handler.count
+[Ciri] Reason for hbase.regionserver.handler.count: The property 'hbase.regionserver.handler.count' has the value '30' which exceeds the range of an Integer.

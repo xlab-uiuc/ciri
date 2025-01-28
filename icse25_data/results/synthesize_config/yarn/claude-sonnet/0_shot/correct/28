@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.docker.default-container-network', 'yarn.nodemanager.recovery.dir', 'yarn.timeline-service.webapp.https.address'], 'reason': ["The property 'yarn.nodemanager.runtime.linux.docker.default-container-network' is deprecated in Hadoop 3.3.0 and later versions.", "The value '/valid/file1' for the property 'yarn.nodemanager.recovery.dir' is not a valid directory path.", "The property 'yarn.timeline-service.webapp.https.address' should not contain the placeholder '${yarn.timeline-service.hostname}'. It should be replaced with the actual hostname or IP address."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.nodemanager.runtime.linux.docker.default-container-network	yarn.nodemanager.recovery.dir	yarn.timeline-service.webapp.https.address
+[Ciri] Reason for yarn.nodemanager.runtime.linux.docker.default-container-network: The property 'yarn.nodemanager.runtime.linux.docker.default-container-network' is deprecated in Hadoop 3.3.0 and later versions.
+[Ciri] Reason for yarn.nodemanager.recovery.dir: The value '/valid/file1' for the property 'yarn.nodemanager.recovery.dir' is not a valid directory path.
+[Ciri] Reason for yarn.timeline-service.webapp.https.address: The property 'yarn.timeline-service.webapp.https.address' should not contain the placeholder '${yarn.timeline-service.hostname}'. It should be replaced with the actual hostname or IP address.

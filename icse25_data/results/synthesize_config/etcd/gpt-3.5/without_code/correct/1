@@ -1,0 +1,34 @@
+Wrong shot number:
+[5, 1, 4]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout'], 'reason': ["The property 'max-wals' is duplicated in the configuration file.", "The property 'proxy-write-timeout' is not a valid property for etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout'], 'reason': ["The property 'proxy-dial-timeout' is missing the unit (ms, s, etc.) for the timeout value."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout'], 'reason': ["The property 'max-wals' is duplicated in the configuration file.", "The property 'proxy-write-timeout' is duplicated in the configuration file."]}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout'], 'reason': ["The property 'proxy-dial-timeout' is missing the unit (ms, s, etc.) for the timeout value."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout'], 'reason': ["The property 'proxy-write-timeout' has the value '5000' which is not within the accepted value range."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout'], 'reason': ["The property 'proxy-write-timeout' has the value '5000' which is not within the accepted value range."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: proxy-write-timeout
+[Ciri] Reason for proxy-write-timeout: The property 'proxy-write-timeout' has the value '5000' which is not within the accepted value range.

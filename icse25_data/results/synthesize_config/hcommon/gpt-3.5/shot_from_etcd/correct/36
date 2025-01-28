@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 3, 1]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.automatic.close', 'fs.s3a.readahead.range', 'ha.failover-controller.graceful-fence.connection.retries', 'nfs.exports.allowed.hosts', 'hadoop.http.sni.host.check.enabled'], 'reason': ["The property 'fs.automatic.close' has an incorrect usage tag in the value.", "The property 'fs.s3a.readahead.range' has a value with an incorrect suffix.", "The property 'ha.failover-controller.graceful-fence.connection.retries' has an unclear description.", "The property 'nfs.exports.allowed.hosts' contains a value that may not be correctly formatted.", "The property 'hadoop.http.sni.host.check.enabled' has an unclear description."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: fs.automatic.close	fs.s3a.readahead.range	ha.failover-controller.graceful-fence.connection.retries	nfs.exports.allowed.hosts	hadoop.http.sni.host.check.enabled
+[Ciri] Reason for fs.automatic.close: The property 'fs.automatic.close' has an incorrect usage tag in the value.
+[Ciri] Reason for fs.s3a.readahead.range: The property 'fs.s3a.readahead.range' has a value with an incorrect suffix.
+[Ciri] Reason for ha.failover-controller.graceful-fence.connection.retries: The property 'ha.failover-controller.graceful-fence.connection.retries' has an unclear description.
+[Ciri] Reason for nfs.exports.allowed.hosts: The property 'nfs.exports.allowed.hosts' contains a value that may not be correctly formatted.
+[Ciri] Reason for hadoop.http.sni.host.check.enabled: The property 'hadoop.http.sni.host.check.enabled' has an unclear description.

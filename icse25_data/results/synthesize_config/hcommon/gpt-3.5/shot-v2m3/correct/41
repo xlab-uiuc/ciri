@@ -1,0 +1,15 @@
+Wrong shot number:
+[12, 1, 15]
+
+Correct shot number:
+[6, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.connection.ssl.enabled', 'ipc.server.max.connections'], 'reason': ["The property 'fs.s3a.connection.ssl.enabled' has the value 'false' which is not of the correct type Boolean.", "The property 'ipc.server.max.connections' has the value '-1' which is out of the valid range for maximum connections."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.connection.ssl.enabled	ipc.server.max.connections
+[Ciri] Reason for fs.s3a.connection.ssl.enabled: The property 'fs.s3a.connection.ssl.enabled' has the value 'false' which is not of the correct type Boolean.
+[Ciri] Reason for ipc.server.max.connections: The property 'ipc.server.max.connections' has the value '-1' which is out of the valid range for maximum connections.

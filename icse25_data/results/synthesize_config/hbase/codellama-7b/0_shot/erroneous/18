@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit', 'hbase.server.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min'], 'reason': ['hbase.regionserver.regionSplitLimit must be a positive integer', 'hbase.server.keyvalue.maxsize must be a positive integer', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit', 'hbase.server.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min'], 'reason': ['hbase.regionserver.regionSplitLimit must be greater than or equal to 0', 'hbase.server.keyvalue.maxsize must be greater than or equal to 0', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit', 'hbase.zookeeper.dns.interface', 'hbase.server.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.column.max.version', 'hbase.mob.compaction.threads.max'], 'reason': ['hbase.regionserver.regionSplitLimit must be a positive integer.', 'hbase.zookeeper.dns.interface must be a valid network interface name.', 'hbase.server.keyvalue.maxsize must be a positive integer.', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min must be a positive integer.', 'hbase.column.max.version must be a positive integer.', 'hbase.mob.compaction.threads.max must be a positive integer.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.regionSplitLimit	hbase.server.keyvalue.maxsize	hbase.hregion.percolumnfamilyflush.size.lower.bound.min
+[Ciri] Reason for hbase.regionserver.regionSplitLimit: hbase.regionserver.regionSplitLimit must be a positive integer
+[Ciri] Reason for hbase.server.keyvalue.maxsize: hbase.server.keyvalue.maxsize must be greater than or equal to 0
+[Ciri] Reason for hbase.hregion.percolumnfamilyflush.size.lower.bound.min: hbase.hregion.percolumnfamilyflush.size.lower.bound.min must be a positive integer

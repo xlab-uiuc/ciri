@@ -1,0 +1,25 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'aof-use-rdb-preamble', 'enable-protected-configs'], 'reason': ['Invalid value for cluster-announce-port. It should be a positive integer.', "Invalid value for aof-use-rdb-preamble. It should be either 'yes' or 'no'.", "Invalid value for enable-protected-configs. It should be either 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'hash-max-listpack-value', 'tcp-keepalive', 'aof-use-rdb-preamble', 'enable-protected-configs', 'proc-title-template'], 'reason': ['Invalid value for cluster-announce-port. It should be a positive integer.', 'Invalid value for hash-max-listpack-value. It should be a positive integer.', 'Invalid value for tcp-keepalive. It should be a positive integer representing seconds.', "Invalid value for aof-use-rdb-preamble. It should be 'yes' or 'no'.", "Invalid value for enable-protected-configs. It should be 'yes' or 'no'.", "Invalid value for proc-title-template. 'listen-addr' and 'server-mode' are not recognized placeholders."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'hash-max-listpack-value', 'aof-use-rdb-preamble', 'enable-protected-configs', 'proc-title-template'], 'reason': ['Invalid value for cluster-announce-port. Port number cannot be negative.', 'Invalid value for hash-max-listpack-value. Value should be a positive integer.', "Invalid value for aof-use-rdb-preamble. It should be either 'yes' or 'no'.", "Invalid value for enable-protected-configs. It should be either 'yes' or 'no'.", "Invalid value for proc-title-template. 'listen-addr' and 'server-mode' are not valid placeholders."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'hash-max-listpack-value', 'tcp-keepalive', 'aof-use-rdb-preamble', 'enable-protected-configs', 'proc-title-template'], 'reason': ['Invalid value for cluster-announce-port. It should be a positive integer.', 'Invalid value for hash-max-listpack-value. It should be a positive integer.', 'Invalid value for tcp-keepalive. It should be a positive integer representing seconds.', "Invalid value for aof-use-rdb-preamble. It should be 'yes' or 'no'.", "Invalid value for enable-protected-configs. It should be 'yes' or 'no'.", "Invalid parameter proc-title-template. The correct format is '{title} {listen-addr} {server-mode}'."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'hash-max-listpack-value', 'tcp-keepalive', 'aof-use-rdb-preamble', 'enable-protected-configs', 'proc-title-template'], 'reason': ['Invalid value for cluster-announce-port. It should be a positive integer.', 'Invalid value for hash-max-listpack-value. It should be a positive integer.', 'Invalid value for tcp-keepalive. It should be a positive integer representing seconds.', "Invalid value for aof-use-rdb-preamble. It should be 'yes' or 'no'.", "Invalid value for enable-protected-configs. It should be 'yes' or 'no'.", 'Invalid parameter proc-title-template. It does not exist in Redis configuration options for version 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'hash-max-listpack-value', 'aof-use-rdb-preamble', 'enable-protected-configs', 'proc-title-template'], 'reason': ['Invalid value for cluster-announce-port. It should be a positive integer.', 'Invalid value for hash-max-listpack-value. It should be a positive integer.', "Invalid value for aof-use-rdb-preamble. It should be 'yes' or 'no'.", "Invalid value for enable-protected-configs. It should be 'yes' or 'no'.", 'Invalid parameter proc-title-template. This parameter is not recognized in Redis version 7.0.0.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: cluster-announce-port	hash-max-listpack-value	tcp-keepalive	aof-use-rdb-preamble	enable-protected-configs	proc-title-template
+[Ciri] Reason for cluster-announce-port: Invalid value for cluster-announce-port. It should be a positive integer.
+[Ciri] Reason for hash-max-listpack-value: Invalid value for hash-max-listpack-value. It should be a positive integer.
+[Ciri] Reason for tcp-keepalive: Invalid value for tcp-keepalive. It should be a positive integer representing seconds.
+[Ciri] Reason for aof-use-rdb-preamble: Invalid value for aof-use-rdb-preamble. It should be 'yes' or 'no'.
+[Ciri] Reason for enable-protected-configs: Invalid value for enable-protected-configs. It should be 'yes' or 'no'.
+[Ciri] Reason for proc-title-template: Invalid parameter proc-title-template. The correct format is '{title} {listen-addr} {server-mode}'.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level2.watermark.high.ratio', 'alluxio.underfs.oss.socket.timeout'], 'reason': ['The value 1.9 for alluxio.worker.tieredstore.level2.watermark.high.ratio is invalid. It should be a ratio between 0.0 and 1.0.', 'The value 1sec for alluxio.underfs.oss.socket.timeout is too low. Alluxio recommends a minimum value of 50sec for this property to avoid frequent timeouts.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.worker.tieredstore.level2.watermark.high.ratio	alluxio.underfs.oss.socket.timeout
+[Ciri] Reason for alluxio.worker.tieredstore.level2.watermark.high.ratio: The value 1.9 for alluxio.worker.tieredstore.level2.watermark.high.ratio is invalid. It should be a ratio between 0.0 and 1.0.
+[Ciri] Reason for alluxio.underfs.oss.socket.timeout: The value 1sec for alluxio.underfs.oss.socket.timeout is too low. Alluxio recommends a minimum value of 50sec for this property to avoid frequent timeouts.

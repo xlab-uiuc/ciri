@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.acl.reservation-enable</name>
+  <value>10</value>
+    <description>Are reservation acls enabled.</description>
+</property>
+
+<property>
+  <name>yarn.scheduler.minimum-allocation-mb</name>
+  <value>512</value>
+    <description>The minimum allocation for every container request at the RM
+    in MBs. Memory requests lower than this will be set to the value of this
+    property. Additionally, a node manager that is configured to have less memory
+    than this value will be shut down by the resource manager.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-manager.thread-count</name>
+  <value>20</value>
+    <description>Number of threads container manager uses.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.emit-container-events</name>
+  <value>false</value>
+    <description>The setting that controls whether yarn container events are
+      published to the timeline service or not by NM. This configuration setting
+      is for ATS V2.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.docker.allowed-container-runtimes</name>
+  <value>runc</value>
+    <description>The set of runtimes allowed when launching containers using the
+      DockerContainerRuntime.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.fd-flush-interval-secs</name>
+  <value>10</value>
+    <description>
+      Flush interval for ATS v1.5 writer. This value controls how frequent
+      the writer will flush the HDFS FSStream for the entity/domain.
+    </description>
+</property>
+
+<property>
+  <name>yarn.minicluster.fixed.ports</name>
+  <value>false</value>
+    <description>
+    Set to false in order to allow MiniYARNCluster to run tests without
+    port conflicts.
+    </description>
+</property>
+
+<property>
+  <name>yarn.federation.enabled</name>
+  <value>false</value>
+    <description>
+      Flag to indicate whether the RM is participating in Federation or not.
+    </description>
+</property>
+
+</configuration>

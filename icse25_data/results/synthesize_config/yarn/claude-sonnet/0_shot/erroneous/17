@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.acl.reservation-enable', 'yarn.nodemanager.emit-container-events', 'yarn.nodemanager.runtime.linux.docker.allowed-container-runtimes'], 'reason': ["The property 'yarn.acl.reservation-enable' is a boolean property, but the value '10' is not a valid boolean value. It should be either 'true' or 'false'.", "The property 'yarn.nodemanager.emit-container-events' is a boolean property, but the value 'false' is not a valid boolean value. It should be either 'true' or 'false'.", "The property 'yarn.nodemanager.runtime.linux.docker.allowed-container-runtimes' is specific to Docker container runtime, which is not recommended for production use in Hadoop 3.3.0. It is recommended to use the default container runtime instead."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.acl.reservation-enable	yarn.nodemanager.emit-container-events	yarn.nodemanager.runtime.linux.docker.allowed-container-runtimes
+[Ciri] Reason for yarn.acl.reservation-enable: The property 'yarn.acl.reservation-enable' is a boolean property, but the value '10' is not a valid boolean value. It should be either 'true' or 'false'.
+[Ciri] Reason for yarn.nodemanager.emit-container-events: The property 'yarn.nodemanager.emit-container-events' is a boolean property, but the value 'false' is not a valid boolean value. It should be either 'true' or 'false'.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.docker.allowed-container-runtimes: The property 'yarn.nodemanager.runtime.linux.docker.allowed-container-runtimes' is specific to Docker container runtime, which is not recommended for production use in Hadoop 3.3.0. It is recommended to use the default container runtime instead.

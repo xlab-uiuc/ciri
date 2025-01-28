@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_ciphers', 'log_statement', 'log_temp_files'], 'reason': ['The ssl_ciphers parameter is not valid for PostgreSQL 13. It has been replaced by ssl_ciphers_list and ssl_min_protocol_version.', "The log_statement parameter only accepts values: none, ddl, mod, all. 'none' should not be quoted.", 'The log_temp_files parameter only accepts non-negative integers or -1 for logging temporary files. -1 should not be quoted.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: ssl_ciphers	log_statement	log_temp_files
+[Ciri] Reason for ssl_ciphers: The ssl_ciphers parameter is not valid for PostgreSQL 13. It has been replaced by ssl_ciphers_list and ssl_min_protocol_version.
+[Ciri] Reason for log_statement: The log_statement parameter only accepts values: none, ddl, mod, all. 'none' should not be quoted.
+[Ciri] Reason for log_temp_files: The log_temp_files parameter only accepts non-negative integers or -1 for logging temporary files. -1 should not be quoted.

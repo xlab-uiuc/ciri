@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.bind.host', 'alluxio.user.file.create.ttl'], 'reason': ['Invalid IP address format in alluxio.job.worker.web.bind.host', 'alluxio.user.file.create.ttl should be a positive value']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.bind.host', 'alluxio.user.file.create.ttl'], 'reason': ["Invalid IP address format in 'alluxio.job.worker.web.bind.host'", "Invalid value for 'alluxio.user.file.create.ttl'. TTL should be a positive value."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.bind.host', 'alluxio.user.file.create.ttl'], 'reason': ["Invalid IP address format in 'alluxio.job.worker.web.bind.host'", "Invalid value for 'alluxio.user.file.create.ttl'. TTL should be a positive value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.web.bind.host	alluxio.user.file.create.ttl
+[Ciri] Reason for alluxio.job.worker.web.bind.host: Invalid IP address format in 'alluxio.job.worker.web.bind.host'
+[Ciri] Reason for alluxio.user.file.create.ttl: Invalid value for 'alluxio.user.file.create.ttl'. TTL should be a positive value.

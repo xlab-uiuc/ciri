@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-write-timeout'], 'reason': ['heartbeat-interval should be a duration string with a unit suffix (e.g., 100ms, 5s). A value of 9.9 without a unit is invalid.', 'proxy-write-timeout is not a valid configuration parameter for etcd v3.5.0. The correct parameter is proxy-write-timeout-ms which accepts an integer value representing milliseconds.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: heartbeat-interval	proxy-write-timeout
+[Ciri] Reason for heartbeat-interval: heartbeat-interval should be a duration string with a unit suffix (e.g., 100ms, 5s). A value of 9.9 without a unit is invalid.
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout is not a valid configuration parameter for etcd v3.5.0. The correct parameter is proxy-write-timeout-ms which accepts an integer value representing milliseconds.

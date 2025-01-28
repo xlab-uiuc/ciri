@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'autovacuum_naptime', 'commit_delay'], 'reason': ['vacuum_freeze_min_age is set to 25000000 which is too high. The recommended value is 50000000.', 'autovacuum_naptime is set to 1min which is too low. The minimum allowed value is 1s.', 'commit_delay is not a valid parameter in PostgreSQL 13. It was removed in version 9.3.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: vacuum_freeze_min_age	autovacuum_naptime	commit_delay
+[Ciri] Reason for vacuum_freeze_min_age: vacuum_freeze_min_age is set to 25000000 which is too high. The recommended value is 50000000.
+[Ciri] Reason for autovacuum_naptime: autovacuum_naptime is set to 1min which is too low. The minimum allowed value is 1s.
+[Ciri] Reason for commit_delay: commit_delay is not a valid parameter in PostgreSQL 13. It was removed in version 9.3.

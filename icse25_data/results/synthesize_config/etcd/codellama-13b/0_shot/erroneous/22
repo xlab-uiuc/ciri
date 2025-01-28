@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['initial-cluster-state is not a valid configuration option for etcd version 3.5.0.']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-token', 'auto-compaction-retention'], 'reason': ['initial-cluster-token is not a valid property for this version of etcd', 'auto-compaction-retention is not a valid property for this version of etcd']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['name', 'data-dir', 'initial-cluster-state', 'initial-cluster-token', 'proxy-dial-timeout'], 'reason': ['name is not a valid property', 'data-dir is not a valid property', 'initial-cluster-state is not a valid property', 'initial-cluster-token is not a valid property', 'proxy-dial-timeout is not a valid property']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'auto-compaction-mode'], 'reason': ['auto-compaction-retention must be greater than 0', 'auto-compaction-mode must be either periodic or revision']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['initial-cluster-state is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention'], 'reason': ['auto-compaction-retention is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['initial-cluster-state is not a valid property for etcd version 3.5.0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: initial-cluster-state
+[Ciri] Reason for initial-cluster-state: initial-cluster-state is not a valid property for etcd version 3.5.0

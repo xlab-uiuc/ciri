@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['nfs.server.port', 'dfs.disk.balancer.plan.threshold.percent'], 'reason': ['The port number specified for nfs.server.port is invalid. It should be within the valid port range (0-65535).', 'The value for dfs.disk.balancer.plan.threshold.percent is out of range. It should be a percentage value between 0 and 100.']}
+
+{'hasError': True, 'errParameter': ['nfs.server.port', 'dfs.disk.balancer.plan.threshold.percent'], 'reason': ["The value for 'nfs.server.port' should be within the valid port range (0-65535).", "The value for 'dfs.disk.balancer.plan.threshold.percent' should be a percentage value between 0 and 100."]}
+
+{'hasError': True, 'errParameter': ['nfs.server.port', 'dfs.disk.balancer.plan.threshold.percent'], 'reason': ['The port number specified for nfs.server.port (65536) is out of range. It should be within the valid port range (0-65535).', 'The value specified for dfs.disk.balancer.plan.threshold.percent (20) is not a valid threshold percentage. It should be a value between 0 and 100.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: nfs.server.port	dfs.disk.balancer.plan.threshold.percent
+[Ciri] Reason for nfs.server.port: The port number specified for nfs.server.port (65536) is out of range. It should be within the valid port range (0-65535).
+[Ciri] Reason for dfs.disk.balancer.plan.threshold.percent: The value for 'dfs.disk.balancer.plan.threshold.percent' should be a percentage value between 0 and 100.

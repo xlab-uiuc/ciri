@@ -1,0 +1,19 @@
+Wrong shot number:
+[1, 8, 7]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'fs.azure.sas.expiry.period'], 'reason': ["The property 'fs.defaultFS' has the value 'ciri' which is not a valid URI.", "The property 'fs.azure.sas.expiry.period' has the value '180d' which is not a valid format for expiration period. Valid formats include suffixes like ms(millis), s(sec), m(min), h(hour), d(day)."]}
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'fs.azure.sas.expiry.period'], 'reason': ["The property 'fs.defaultFS' has the value 'ciri' which is not a valid URI for the default file system.", "The property 'fs.azure.sas.expiry.period' has the value '180d' which is not in the correct format for specifying time duration."]}
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'fs.azure.sas.expiry.period'], 'reason': ["The property 'fs.defaultFS' has the value 'ciri' which is not a valid URI.", "The property 'fs.azure.sas.expiry.period' has the value '180d' which is not a valid format for expiration period. Valid formats include suffixes like ms(millis), s(sec), m(min), h(hour), d(day)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.defaultFS	fs.azure.sas.expiry.period
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has the value 'ciri' which is not a valid URI.
+[Ciri] Reason for fs.azure.sas.expiry.period: The property 'fs.azure.sas.expiry.period' has the value '180d' which is not a valid format for expiration period. Valid formats include suffixes like ms(millis), s(sec), m(min), h(hour), d(day).

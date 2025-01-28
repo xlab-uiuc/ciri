@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 7, 12]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'cluster-announce-port'], 'reason': ["The property 'maxmemory-clients' is not a valid configuration option in Redis 7.0.0.", "The property 'cluster-announce-port' is used for Redis Cluster configuration, but the value '1' is not a valid port number."]}
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'cluster-announce-port'], 'reason': ["The property 'maxmemory-clients' is not a valid configuration option in Redis 7.0.0.", "The property 'cluster-announce-port' is used for Redis Cluster configuration, but the value '1' is not a valid port number."]}
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'cluster-announce-port'], 'reason': ["The property 'maxmemory-clients' is not a valid configuration option in Redis 7.0.0.", "The property 'cluster-announce-port' is only applicable in Redis Cluster mode, which is not enabled by default."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: maxmemory-clients	cluster-announce-port
+[Ciri] Reason for maxmemory-clients: The property 'maxmemory-clients' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for cluster-announce-port: The property 'cluster-announce-port' is used for Redis Cluster configuration, but the value '1' is not a valid port number.

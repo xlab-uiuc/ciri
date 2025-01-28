@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction', 'dfs.client.block.write.locateFollowingBlock.initial.delay.ms'], 'reason': ['Invalid value for dfs.datanode.data.dir.perm. Permissions should be in octal format.', "Invalid value for dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction. The value should be a float without 'f' suffix.", 'Invalid value for dfs.client.block.write.locateFollowingBlock.initial.delay.ms. The value should be an integer.']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction', 'dfs.client.block.write.locateFollowingBlock.initial.delay.ms'], 'reason': ["Invalid value for property 'dfs.datanode.data.dir.perm'. Permissions should be in octal format.", "Invalid value for property 'dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction'. Fraction value should not have 'f' at the end.", "Invalid value for property 'dfs.client.block.write.locateFollowingBlock.initial.delay.ms'. The value should be an integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction', 'dfs.client.block.write.locateFollowingBlock.initial.delay.ms'], 'reason': ['Invalid value for dfs.datanode.data.dir.perm. Permissions should be in octal format.', "Invalid value for dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction. Fraction value should not have 'f' at the end.", 'Invalid value for dfs.client.block.write.locateFollowingBlock.initial.delay.ms. Value should be an integer.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.datanode.data.dir.perm	dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction	dfs.client.block.write.locateFollowingBlock.initial.delay.ms
+[Ciri] Reason for dfs.datanode.data.dir.perm: Invalid value for property 'dfs.datanode.data.dir.perm'. Permissions should be in octal format.
+[Ciri] Reason for dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction: Invalid value for property 'dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction'. Fraction value should not have 'f' at the end.
+[Ciri] Reason for dfs.client.block.write.locateFollowingBlock.initial.delay.ms: Invalid value for dfs.client.block.write.locateFollowingBlock.initial.delay.ms. Value should be an integer.

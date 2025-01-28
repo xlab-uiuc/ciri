@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['key-file', 'proxy-dial-timeout', 'max-snapshots'], 'reason': ["The 'key-file' path contains extra '/' characters. It should be a valid file path.", "'proxy-dial-timeout' should have a time duration format, e.g., '1s' for 1 second or '100ms' for 100 milliseconds, not just a number.", "'max-snapshots' is deprecated since etcd v3.5. Use 'snapshot-count' instead to configure the maximum number of snapshots to retain."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: key-file	proxy-dial-timeout	max-snapshots
+[Ciri] Reason for key-file: The 'key-file' path contains extra '/' characters. It should be a valid file path.
+[Ciri] Reason for proxy-dial-timeout: 'proxy-dial-timeout' should have a time duration format, e.g., '1s' for 1 second or '100ms' for 100 milliseconds, not just a number.
+[Ciri] Reason for max-snapshots: 'max-snapshots' is deprecated since etcd v3.5. Use 'snapshot-count' instead to configure the maximum number of snapshots to retain.

@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-mode', 'auto-compaction-retention', 'force-new-cluster', 'initial-advertise-peer-urls', 'listen-client-urls', 'snapshot-count'], 'reason': ['initial-cluster-state must be either new or existing', 'auto-compaction-mode must be either periodic or revision', 'auto-compaction-retention must be a positive integer', 'force-new-cluster must be either true or false', 'initial-advertise-peer-urls must be a valid URL', 'listen-client-urls must be a valid URL', 'snapshot-count must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['initial-cluster-state is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-token'], 'reason': ['The initial-cluster-token parameter is not supported in etcd version 3.5.0. Please remove this parameter from your configuration file.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-mode', 'auto-compaction-retention', 'force-new-cluster', 'initial-advertise-peer-urls', 'snapshot-count'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'", "auto-compaction-mode must be either 'periodic' or 'revision'", 'auto-compaction-retention must be a positive integer', "force-new-cluster must be either 'true' or 'false'", 'initial-advertise-peer-urls must be a valid URL', 'snapshot-count must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-mode', 'auto-compaction-retention'], 'reason': ['initial-cluster-state must be either new or existing', 'auto-compaction-mode must be either periodic or revision', 'auto-compaction-retention must be an integer']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['The value of initial-cluster-state is invalid. The valid values are new, existing, and removed.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-mode', 'force-new-cluster', 'auto-compaction-retention'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'", "auto-compaction-mode must be either 'periodic' or 'revision'", "force-new-cluster must be either 'true' or 'false'", 'auto-compaction-retention must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['The value of initial-cluster-state is not valid. The valid values are new, existing, and removed.']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ["The parameter 'initial-cluster-state' is not supported in etcd version 3.5.0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: initial-cluster-state
+[Ciri] Reason for initial-cluster-state: The parameter 'initial-cluster-state' is not supported in etcd version 3.5.0.

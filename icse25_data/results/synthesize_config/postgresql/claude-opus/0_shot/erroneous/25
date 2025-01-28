@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'autovacuum_vacuum_insert_threshold'], 'reason': ['autovacuum_work_mem cannot be set to a negative value. It should be a positive integer.', 'autovacuum_vacuum_insert_threshold is not a valid parameter in PostgreSQL 13.0. The correct parameter is autovacuum_vacuum_insert_threshold_percent.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autovacuum_work_mem	autovacuum_vacuum_insert_threshold
+[Ciri] Reason for autovacuum_work_mem: autovacuum_work_mem cannot be set to a negative value. It should be a positive integer.
+[Ciri] Reason for autovacuum_vacuum_insert_threshold: autovacuum_vacuum_insert_threshold is not a valid parameter in PostgreSQL 13.0. The correct parameter is autovacuum_vacuum_insert_threshold_percent.

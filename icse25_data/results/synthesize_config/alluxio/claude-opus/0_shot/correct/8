@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.management.backoff.strategy', 'alluxio.master.persistence.initial.interval'], 'reason': ["The value 'ANY' is not a valid option for 'alluxio.worker.management.backoff.strategy' in Alluxio 2.5.0. Valid options are 'ANY, CONSTANT, EXPONENTIAL'.", "The property 'alluxio.master.persistence.initial.interval' is not a valid configuration in Alluxio 2.5.0. The correct property name is 'alluxio.master.persistence.initial.wait.time'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.worker.management.backoff.strategy	alluxio.master.persistence.initial.interval
+[Ciri] Reason for alluxio.worker.management.backoff.strategy: The value 'ANY' is not a valid option for 'alluxio.worker.management.backoff.strategy' in Alluxio 2.5.0. Valid options are 'ANY, CONSTANT, EXPONENTIAL'.
+[Ciri] Reason for alluxio.master.persistence.initial.interval: The property 'alluxio.master.persistence.initial.interval' is not a valid configuration in Alluxio 2.5.0. The correct property name is 'alluxio.master.persistence.initial.wait.time'.

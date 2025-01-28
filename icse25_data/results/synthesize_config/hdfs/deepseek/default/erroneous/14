@@ -1,0 +1,21 @@
+Wrong shot number:
+[12, 16, 1]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock', 'dfs.namenode.checkpoint.dir', 'dfs.image.transfer.bandwidthPerSec', 'dfs.datanode.bp-ready.timeout'], 'reason': ["The property 'dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock' has the value '500' which is of the correct type Integer.", "The property 'dfs.namenode.checkpoint.dir' has the value 'ciri' which is not of the correct type String.", "The property 'dfs.image.transfer.bandwidthPerSec' has the value '0' which is of the correct type Integer.", "The property 'dfs.datanode.bp-ready.timeout' has the value '20s' which is of the correct type String."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock', 'dfs.namenode.checkpoint.dir', 'dfs.image.transfer.bandwidthPerSec', 'dfs.datanode.bp-ready.timeout'], 'reason': ["The property 'dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock' has the value '500' which is not of the correct type Integer.", "The property 'dfs.namenode.checkpoint.dir' has the value 'ciri' which is not a valid directory path.", "The property 'dfs.image.transfer.bandwidthPerSec' has the value '0' which is not of the correct type Integer.", "The property 'dfs.datanode.bp-ready.timeout' has the value '20s' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock', 'dfs.namenode.checkpoint.dir', 'dfs.image.transfer.bandwidthPerSec', 'dfs.datanode.bp-ready.timeout'], 'reason': ["The property 'dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock' has the value '500' which is not of the correct type Integer.", "The property 'dfs.namenode.checkpoint.dir' has the value 'ciri' which is not a valid directory path.", "The property 'dfs.image.transfer.bandwidthPerSec' has the value '0' which is not of the correct type Integer.", "The property 'dfs.datanode.bp-ready.timeout' has the value '20s' which is not of the correct type Integer."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock	dfs.namenode.checkpoint.dir	dfs.image.transfer.bandwidthPerSec	dfs.datanode.bp-ready.timeout
+[Ciri] Reason for dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock: The property 'dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock' has the value '500' which is of the correct type Integer.
+[Ciri] Reason for dfs.namenode.checkpoint.dir: The property 'dfs.namenode.checkpoint.dir' has the value 'ciri' which is not a valid directory path.
+[Ciri] Reason for dfs.image.transfer.bandwidthPerSec: The property 'dfs.image.transfer.bandwidthPerSec' has the value '0' which is of the correct type Integer.
+[Ciri] Reason for dfs.datanode.bp-ready.timeout: The property 'dfs.datanode.bp-ready.timeout' has the value '20s' which is of the correct type String.

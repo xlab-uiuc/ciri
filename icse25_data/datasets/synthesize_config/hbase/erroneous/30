@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.info.bindAddress</name>
+  <value>-1.0.0.0</value>
+    <description>The address for the HBase RegionServer web UI</description>
+</property>
+
+<property>
+  <name>hbase.rpc.shortoperation.timeout</name>
+  <value>5000</value>
+    <description>This is another version of "hbase.rpc.timeout". For those RPC operation
+        within cluster, we rely on this configuration to set a short timeout limitation
+        for short operation. For example, short rpc timeout for region server's trying
+        to report to active master can benefit quicker master failover process.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.client.tcpnodelay</name>
+  <value>false</value>
+    <description>Set no delay on rpc socket connections.  See
+    http://docs.oracle.com/javase/1.5.0/docs/api/java/net/Socket.html#getTcpNoDelay()</description>
+</property>
+
+<property>
+  <name>hbase.defaults.for.version</name>
+  <value>@@@VERSION@@@</value>
+    <description>This defaults file was compiled for version ${project.version}. This variable is used
+    to make sure that a user doesn't have an old version of hbase-default.xml on the
+    classpath.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.maxWorkerThreads</name>
+  <value>1000</value>
+    <description>The maximum size of the thread pool. When the pending request queue
+    overflows, new threads are created until their number reaches this number.
+    After that, the server starts dropping connections.</description>
+</property>
+
+<property>
+  <name>hbase.data.umask</name>
+  <value>000</value>
+    <description>File permissions that should be used to write data
+      files when hbase.data.umask.enable is true</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.restore.take.failsafe.snapshot</name>
+  <value>false</value>
+    <description>Set to true to take a snapshot before the restore operation.
+      The snapshot taken will be used in case of failure, to restore the previous state.
+      At the end of the restore operation this snapshot will be deleted</description>
+</property>
+
+<property>
+  <name>hbase.mob.compaction.chore.period</name>
+  <value>604800</value>
+    <description>
+      The period that MobCompactionChore runs. The unit is second.
+      The default value is one week.
+    </description>
+</property>
+
+</configuration>

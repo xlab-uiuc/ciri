@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learner.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['quorum.auth.learner.saslLoginContext is not a valid property for zookeeper version 3.7.0', 'quorum.auth.kerberos.servicePrincipal is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learner.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['quorum.auth.learner.saslLoginContext is not a valid property', 'quorum.auth.kerberos.servicePrincipal is not a valid property']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorum.auth.learner.saslLoginContext	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is not a valid property

@@ -1,0 +1,46 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY'], 'reason': ['DEBUG should be a boolean, not a string', 'SECRET_KEY is not a valid secret key']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'ALLOWED_HOSTS', 'SECRET_KEY', 'DATABASES'], 'reason': ['DEBUG should be a boolean', 'ALLOWED_HOSTS should be a list', 'SECRET_KEY should be a string', 'DATABASES should be a dictionary']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'DATABASES'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list', 'DATABASES should be a dictionary']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'EMAIL_BACKEND'], 'reason': ['DEBUG is not a valid value for the DEBUG parameter.', 'EMAIL_BACKEND is not a valid value for the EMAIL_BACKEND parameter.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'DATABASES'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list', 'DATABASES should be a dictionary']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS'], 'reason': ['DEBUG should be a boolean value', 'SECRET_KEY should be a string value', 'ALLOWED_HOSTS should be a list']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'DATABASES'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list', 'DATABASES should be a dictionary']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'LANGUAGE_CODE'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list', 'LANGUAGE_CODE should be a string']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'ALLOWED_HOSTS', 'SECRET_KEY'], 'reason': ['DEBUG should be a boolean', 'ALLOWED_HOSTS should be a list', 'SECRET_KEY should be a string']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: DEBUG	SECRET_KEY	ALLOWED_HOSTS
+[Ciri] Reason for DEBUG: DEBUG should be a boolean
+[Ciri] Reason for SECRET_KEY: SECRET_KEY should be a string
+[Ciri] Reason for ALLOWED_HOSTS: ALLOWED_HOSTS should be a list

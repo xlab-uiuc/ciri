@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable_hashagg'], 'reason': ['enable_hashagg must be either on or off, not on.']}
+
+{'hasError': True, 'errParameter': ['checkpoint_warning', 'vacuum_multixact_freeze_min_age', 'session_replication_role', 'min_parallel_table_scan_size', 'enable_parallel_append', 'autovacuum_analyze_threshold'], 'reason': ['The value of checkpoint_warning is not a valid time format.', 'The value of vacuum_multixact_freeze_min_age is not a valid integer.', 'The value of session_replication_role is not a valid session_replication_role.', 'The value of min_parallel_table_scan_size is not a valid size.', 'The value of enable_parallel_append is not a valid boolean.', 'The value of autovacuum_analyze_threshold is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['enable_hashagg'], 'reason': ['enable_hashagg is not a valid parameter for postgresql version 13.0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: enable_hashagg
+[Ciri] Reason for enable_hashagg: enable_hashagg must be either on or off, not on.

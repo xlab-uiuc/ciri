@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['activerehashing', 'set-proc-title', 'jemalloc-bg-thread', 'enable-module-command', 'lazyfree-lazy-user-flush'], 'reason': ["The 'activerehashing' parameter is not valid for Redis version 7.0.0.", "The 'set-proc-title' parameter is not valid for Redis version 7.0.0.", "The 'jemalloc-bg-thread' parameter is not valid for Redis version 7.0.0.", "The 'enable-module-command' parameter is not valid for Redis version 7.0.0.", "The 'lazyfree-lazy-user-flush' parameter is not valid for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['activerehashing', 'set-proc-title', 'jemalloc-bg-thread', 'enable-module-command', 'lazyfree-lazy-user-flush'], 'reason': ["The 'activerehashing' parameter is not a valid configuration option in Redis 7.0.0.", "The 'set-proc-title' parameter is not a valid configuration option in Redis 7.0.0.", "The 'jemalloc-bg-thread' parameter is not a valid configuration option in Redis 7.0.0.", "The 'enable-module-command' parameter is not a valid configuration option in Redis 7.0.0.", "The 'lazyfree-lazy-user-flush' parameter is not a valid configuration option in Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['activerehashing', 'set-proc-title', 'jemalloc-bg-thread', 'enable-module-command', 'lazyfree-lazy-user-flush'], 'reason': ['activerehashing is not a valid parameter in Redis version 7.0.0', 'set-proc-title is not a valid parameter in Redis version 7.0.0', 'jemalloc-bg-thread is not a valid parameter in Redis version 7.0.0', 'enable-module-command is not a valid parameter in Redis version 7.0.0', 'lazyfree-lazy-user-flush is not a valid parameter in Redis version 7.0.0']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: activerehashing	set-proc-title	jemalloc-bg-thread	enable-module-command	lazyfree-lazy-user-flush
+[Ciri] Reason for activerehashing: The 'activerehashing' parameter is not valid for Redis version 7.0.0.
+[Ciri] Reason for set-proc-title: The 'set-proc-title' parameter is not valid for Redis version 7.0.0.
+[Ciri] Reason for jemalloc-bg-thread: jemalloc-bg-thread is not a valid parameter in Redis version 7.0.0
+[Ciri] Reason for enable-module-command: The 'enable-module-command' parameter is not valid for Redis version 7.0.0.
+[Ciri] Reason for lazyfree-lazy-user-flush: lazyfree-lazy-user-flush is not a valid parameter in Redis version 7.0.0

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-session-cache-size', 'hz', 'oom-score-adj-values'], 'reason': ["The 'tls-session-cache-size' parameter is not available in Redis 7.0.0. It was introduced in Redis 6.0 as 'tls-session-cache-size' and renamed to 'tls-session-caching' in Redis 7.0.", "The 'hz' parameter has been deprecated since Redis 5.0 and removed in Redis 7.0.0. It is replaced by the 'server-time-in-usec' parameter which defaults to 1 (meaning the server will try to run at 1MHz frequency).", "The 'oom-score-adj-values' parameter is not a valid configuration directive in Redis. It seems to be a configuration for the Linux kernel's OOM (Out Of Memory) killer, not Redis itself."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tls-session-cache-size	hz	oom-score-adj-values
+[Ciri] Reason for tls-session-cache-size: The 'tls-session-cache-size' parameter is not available in Redis 7.0.0. It was introduced in Redis 6.0 as 'tls-session-cache-size' and renamed to 'tls-session-caching' in Redis 7.0.
+[Ciri] Reason for hz: The 'hz' parameter has been deprecated since Redis 5.0 and removed in Redis 7.0.0. It is replaced by the 'server-time-in-usec' parameter which defaults to 1 (meaning the server will try to run at 1MHz frequency).
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter is not a valid configuration directive in Redis. It seems to be a configuration for the Linux kernel's OOM (Out Of Memory) killer, not Redis itself.

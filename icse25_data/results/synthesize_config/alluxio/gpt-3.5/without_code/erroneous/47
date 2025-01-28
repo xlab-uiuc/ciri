@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 12, 5]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.keepalive.timeout', 'alluxio.job.master.hostname'], 'reason': ["The property 'alluxio.worker.network.keepalive.timeout' has an incorrect unit in its value.", "The property 'alluxio.job.master.hostname' is using a variable placeholder which may not be resolved correctly in the configuration."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.keepalive.timeout', 'alluxio.job.master.hostname'], 'reason': ["The property 'alluxio.worker.network.keepalive.timeout' has an incorrect unit in its value.", "The property 'alluxio.job.master.hostname' is using a variable reference but it should have a direct value."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.keepalive.timeout', 'alluxio.job.master.hostname'], 'reason': ["The property 'alluxio.worker.network.keepalive.timeout' has an incorrect unit in its value.", "The property 'alluxio.job.master.hostname' uses a placeholder but does not provide an actual value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.worker.network.keepalive.timeout	alluxio.job.master.hostname
+[Ciri] Reason for alluxio.worker.network.keepalive.timeout: The property 'alluxio.worker.network.keepalive.timeout' has an incorrect unit in its value.
+[Ciri] Reason for alluxio.job.master.hostname: The property 'alluxio.job.master.hostname' uses a placeholder but does not provide an actual value.

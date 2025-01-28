@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy', 'enable-v2', 'initial-cluster-state'], 'reason': ["Unknown parameter 'proxy'", "Unknown parameter 'enable-v2'", "Invalid value for 'initial-cluster-state'. It should be 'new' or 'existing'."]}
+
+{'hasError': True, 'errParameter': ['proxy', 'enable-v2', 'initial-cluster-state'], 'reason': ["Unknown parameter 'proxy' for etcd version 3.5.0", "Unknown parameter 'enable-v2' for etcd version 3.5.0", "Unknown parameter 'initial-cluster-state' for etcd version 3.5.0"]}
+
+{'hasError': True, 'errParameter': ['proxy', 'enable-v2', 'initial-cluster-state'], 'reason': ["Unknown parameter 'proxy' for etcd version 3.5.0", "Unknown parameter 'enable-v2' for etcd version 3.5.0", "Unknown parameter 'initial-cluster-state' for etcd version 3.5.0"]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy	enable-v2	initial-cluster-state
+[Ciri] Reason for proxy: Unknown parameter 'proxy' for etcd version 3.5.0
+[Ciri] Reason for enable-v2: Unknown parameter 'enable-v2' for etcd version 3.5.0
+[Ciri] Reason for initial-cluster-state: Unknown parameter 'initial-cluster-state' for etcd version 3.5.0

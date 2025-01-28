@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.placement-constraints.algorithm.pool-size</name>
+  <value>2</value>
+    <description>Threadpool size for the Algorithm used for placement constraint processing.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.local-dirs</name>
+  <value>/valid/file2</value>
+    <description>List of directories to store localized files in. An 
+      application's localized file directory will be found in:
+      ${yarn.nodemanager.local-dirs}/usercache/${user}/appcache/application_${appid}.
+      Individual containers' work directories, called container_${contid}, will
+      be subdirectories of this.
+   </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.docker.default-container-network</name>
+  <value>host</value>
+    <description>The network used when launching containers using the
+      DockerContainerRuntime when no network is specified in the request
+      . This network must be one of the (configurable) set of allowed container
+      networks.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.docker.userremapping-uid-threshold</name>
+  <value>2</value>
+    <description>lower limit for acceptable uids of user remapped user</description>
+</property>
+
+<property>
+  <name>yarn.client.nodemanager-connect.max-wait-ms</name>
+  <value>180000</value>
+    <description>Max time to wait to establish a connection to NM</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.hostname</name>
+  <value>127.0.0.1</value>
+    <description>The hostname of the timeline service web application.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.nodemanager-graceful-decommission-timeout-secs</name>
+  <value>3600</value>
+    <description>
+    Timeout in seconds for YARN node graceful decommission.
+    This is the maximal time to wait for running containers and applications to complete
+    before transition a DECOMMISSIONING node into DECOMMISSIONED.
+    </description>
+</property>
+
+<property>
+  <name>yarn.router.webapp.address</name>
+  <value>0.0.0.0:3000</value>
+    <description>
+      The http address of the Router web application.
+      If only a host is provided as the value,
+      the webapp will be served on a random port.
+    </description>
+</property>
+
+</configuration>

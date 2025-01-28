@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'DEBUG', 'LOGIN_REDIRECT_URL'], 'reason': ['SECURE_HSTS_SECONDS should be set to a reasonable value, typically 31536000 (1 year) or less. Setting it to an extremely high value like 4000000000 is not recommended.', 'DEBUG should be set to False in production environments to prevent exposing sensitive information.', "LOGIN_REDIRECT_URL should use a named URL pattern instead of a hardcoded path for better maintainability. For example, 'accounts:profile' instead of '/accounts/profile/'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: SECURE_HSTS_SECONDS	DEBUG	LOGIN_REDIRECT_URL
+[Ciri] Reason for SECURE_HSTS_SECONDS: SECURE_HSTS_SECONDS should be set to a reasonable value, typically 31536000 (1 year) or less. Setting it to an extremely high value like 4000000000 is not recommended.
+[Ciri] Reason for DEBUG: DEBUG should be set to False in production environments to prevent exposing sensitive information.
+[Ciri] Reason for LOGIN_REDIRECT_URL: LOGIN_REDIRECT_URL should use a named URL pattern instead of a hardcoded path for better maintainability. For example, 'accounts:profile' instead of '/accounts/profile/'.

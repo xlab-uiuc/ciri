@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout', 'heartbeat-interval'], 'reason': ['max-wals is not a valid property for etcd version 3.5.0', 'proxy-write-timeout is not a valid property for etcd version 3.5.0', 'heartbeat-interval is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'max-wals', 'proxy-write-timeout', 'heartbeat-interval'], 'reason': ['max-snapshots is not a valid parameter', 'max-wals is not a valid parameter', 'proxy-write-timeout is not a valid parameter', 'heartbeat-interval is not a valid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout', 'heartbeat-interval'], 'reason': ['max-wals is not a valid property for etcd version 3.5.0', 'proxy-write-timeout is not a valid property for etcd version 3.5.0', 'heartbeat-interval is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout', 'heartbeat-interval'], 'reason': ['max-wals is not a valid property for etcd version 3.5.0', 'proxy-write-timeout is not a valid property for etcd version 3.5.0', 'heartbeat-interval is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'max-wals', 'proxy-write-timeout', 'heartbeat-interval'], 'reason': ['max-snapshots: no such parameter', 'max-wals: no such parameter', 'proxy-write-timeout: no such parameter', 'heartbeat-interval: no such parameter']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max-wals	proxy-write-timeout	heartbeat-interval
+[Ciri] Reason for max-wals: max-wals is not a valid property for etcd version 3.5.0
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout is not a valid property for etcd version 3.5.0
+[Ciri] Reason for heartbeat-interval: heartbeat-interval is not a valid property for etcd version 3.5.0

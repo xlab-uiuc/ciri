@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_cost_limit', 'ssl_ciphers'], 'reason': ["The 'autovacuum_vacuum_cost_limit' value should be a positive integer or zero. A value of -2 is not valid.", "The 'ssl_ciphers' configuration is generally correct, but specifying '+3DES' is not recommended due to its vulnerabilities and it being considered weak encryption. It's better to exclude weak ciphers for security reasons."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autovacuum_vacuum_cost_limit	ssl_ciphers
+[Ciri] Reason for autovacuum_vacuum_cost_limit: The 'autovacuum_vacuum_cost_limit' value should be a positive integer or zero. A value of -2 is not valid.
+[Ciri] Reason for ssl_ciphers: The 'ssl_ciphers' configuration is generally correct, but specifying '+3DES' is not recommended due to its vulnerabilities and it being considered weak encryption. It's better to exclude weak ciphers for security reasons.

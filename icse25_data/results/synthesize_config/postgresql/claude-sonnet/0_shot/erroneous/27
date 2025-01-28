@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['superuser_reserved_connections', 'gin_fuzzy_search_limit'], 'reason': ['The superuser_reserved_connections parameter should be less than or equal to max_connections. Setting it to a higher value than max_connections is not allowed.', 'The gin_fuzzy_search_limit parameter is deprecated and has no effect in PostgreSQL 13.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: superuser_reserved_connections	gin_fuzzy_search_limit
+[Ciri] Reason for superuser_reserved_connections: The superuser_reserved_connections parameter should be less than or equal to max_connections. Setting it to a higher value than max_connections is not allowed.
+[Ciri] Reason for gin_fuzzy_search_limit: The gin_fuzzy_search_limit parameter is deprecated and has no effect in PostgreSQL 13.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.throttle.retry.interval', 'ipc.[port_number].decay-scheduler.period-ms'], 'reason': ["The value '1ms' for property 'fs.s3a.s3guard.ddb.throttle.retry.interval' should have a valid time unit (e.g., '1s' for 1 second).", "The property 'ipc.[port_number].decay-scheduler.period-ms' should not contain '[port_number]' placeholder. Please provide a specific port number."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.s3guard.ddb.throttle.retry.interval	ipc.[port_number].decay-scheduler.period-ms
+[Ciri] Reason for fs.s3a.s3guard.ddb.throttle.retry.interval: The value '1ms' for property 'fs.s3a.s3guard.ddb.throttle.retry.interval' should have a valid time unit (e.g., '1s' for 1 second).
+[Ciri] Reason for ipc.[port_number].decay-scheduler.period-ms: The property 'ipc.[port_number].decay-scheduler.period-ms' should not contain '[port_number]' placeholder. Please provide a specific port number.

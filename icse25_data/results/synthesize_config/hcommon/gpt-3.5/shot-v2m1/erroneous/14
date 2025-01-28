@@ -1,0 +1,21 @@
+Wrong shot number:
+[16]
+
+Correct shot number:
+[16, 8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'fs.wasbs.impl', 'fs.azure.sas.expiry.period', 'ipc.server.log.slow.rpc', 'ftp.bytes-per-checksum', 'hadoop.http.cross-origin.enabled', 'hadoop.http.cross-origin.allowed-origins', 'hadoop.caller.context.enabled'], 'reason': ["The property 'fs.defaultFS' has an incorrect value 'ciri'. It should be a valid URI for the default file system.", "The property 'fs.wasbs.impl' is not a valid property for HCommon version 3.3.0.", "The property 'fs.azure.sas.expiry.period' is not a valid property for HCommon version 3.3.0.", "The property 'ipc.server.log.slow.rpc' is not a valid property for HCommon version 3.3.0.", "The property 'ftp.bytes-per-checksum' is not a valid property for HCommon version 3.3.0.", "The property 'hadoop.http.cross-origin.enabled' is not a valid property for HCommon version 3.3.0.", "The property 'hadoop.http.cross-origin.allowed-origins' is not a valid property for HCommon version 3.3.0.", "The property 'hadoop.caller.context.enabled' is not a valid property for HCommon version 3.3.0."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.defaultFS	fs.wasbs.impl	fs.azure.sas.expiry.period	ipc.server.log.slow.rpc	ftp.bytes-per-checksum	hadoop.http.cross-origin.enabled	hadoop.http.cross-origin.allowed-origins	hadoop.caller.context.enabled
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has an incorrect value 'ciri'. It should be a valid URI for the default file system.
+[Ciri] Reason for fs.wasbs.impl: The property 'fs.wasbs.impl' is not a valid property for HCommon version 3.3.0.
+[Ciri] Reason for fs.azure.sas.expiry.period: The property 'fs.azure.sas.expiry.period' is not a valid property for HCommon version 3.3.0.
+[Ciri] Reason for ipc.server.log.slow.rpc: The property 'ipc.server.log.slow.rpc' is not a valid property for HCommon version 3.3.0.
+[Ciri] Reason for ftp.bytes-per-checksum: The property 'ftp.bytes-per-checksum' is not a valid property for HCommon version 3.3.0.
+[Ciri] Reason for hadoop.http.cross-origin.enabled: The property 'hadoop.http.cross-origin.enabled' is not a valid property for HCommon version 3.3.0.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-origins: The property 'hadoop.http.cross-origin.allowed-origins' is not a valid property for HCommon version 3.3.0.
+[Ciri] Reason for hadoop.caller.context.enabled: The property 'hadoop.caller.context.enabled' is not a valid property for HCommon version 3.3.0.

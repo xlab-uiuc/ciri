@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 6, 12]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'cluster-announce-tls-port'], 'reason': ["The property 'cluster-announce-port' has the value '65536' which is out of the valid port range 0-65535.", "The property 'cluster-announce-tls-port' has the value '12758' which is not a common TLS port. Typical TLS ports are 443, 636, 989, 990, 992, 993, 994, 995, 5061, 5671, 6679, 6697, 8443."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-announce-port	cluster-announce-tls-port
+[Ciri] Reason for cluster-announce-port: The property 'cluster-announce-port' has the value '65536' which is out of the valid port range 0-65535.
+[Ciri] Reason for cluster-announce-tls-port: The property 'cluster-announce-tls-port' has the value '12758' which is not a common TLS port. Typical TLS ports are 443, 636, 989, 990, 992, 993, 994, 995, 5061, 5671, 6679, 6697, 8443.

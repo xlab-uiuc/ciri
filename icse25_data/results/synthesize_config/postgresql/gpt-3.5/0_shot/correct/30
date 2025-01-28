@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_relation', 'recovery_min_apply_delay', 'enable_partitionwise_join', 'extra_float_digits', 'krb_caseins_users'], 'reason': ["max_pred_locks_per_relation should be a positive integer value, recovery_min_apply_delay should be a non-negative integer value, enable_partitionwise_join should be set to 'on' or 'off', extra_float_digits should be a non-negative integer value, krb_caseins_users should be set to 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_relation', 'recovery_min_apply_delay', 'enable_partitionwise_join', 'extra_float_digits', 'krb_caseins_users'], 'reason': ['max_pred_locks_per_relation should not be set to -1, it should be a positive integer value.', 'recovery_min_apply_delay should not be set to -1, it should be a non-negative integer value.', "enable_partitionwise_join should be set to 'on' or 'off' (boolean value).", 'extra_float_digits should be set to a positive integer value.', "krb_caseins_users should be set to 'on' or 'off' (boolean value)."]}
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_relation', 'recovery_min_apply_delay', 'enable_partitionwise_join', 'fsync', 'extra_float_digits', 'krb_caseins_users'], 'reason': ['max_pred_locks_per_relation should be a positive integer or -1 for default', 'recovery_min_apply_delay should be a non-negative integer or -1 for default', "enable_partitionwise_join should be 'on' or 'off'", "fsync should be 'on' or 'off'", 'extra_float_digits should be an integer between -15 and 3', "krb_caseins_users should be 'on' or 'off'"]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: max_pred_locks_per_relation	recovery_min_apply_delay	enable_partitionwise_join	extra_float_digits	krb_caseins_users
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation should be a positive integer value, recovery_min_apply_delay should be a non-negative integer value, enable_partitionwise_join should be set to 'on' or 'off', extra_float_digits should be a non-negative integer value, krb_caseins_users should be set to 'on' or 'off'.
+[Ciri] Reason for recovery_min_apply_delay: recovery_min_apply_delay should not be set to -1, it should be a non-negative integer value.
+[Ciri] Reason for enable_partitionwise_join: enable_partitionwise_join should be set to 'on' or 'off' (boolean value).
+[Ciri] Reason for extra_float_digits: extra_float_digits should be set to a positive integer value.
+[Ciri] Reason for krb_caseins_users: krb_caseins_users should be set to 'on' or 'off' (boolean value).

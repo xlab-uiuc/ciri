@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.server.saslLoginContext', 'localSessionsEnabled'], 'reason': ["The 'quorum.auth.kerberos.servicePrincipal' property is not a recognized configuration in ZooKeeper 3.7.0.", "The 'quorum.auth.server.saslLoginContext' property is not a recognized configuration in ZooKeeper 3.7.0.", "The 'localSessionsEnabled' property is not applicable in standalone mode. It is only relevant when ZooKeeper is running in a quorum (cluster mode)."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quorum.auth.kerberos.servicePrincipal	quorum.auth.server.saslLoginContext	localSessionsEnabled
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: The 'quorum.auth.kerberos.servicePrincipal' property is not a recognized configuration in ZooKeeper 3.7.0.
+[Ciri] Reason for quorum.auth.server.saslLoginContext: The 'quorum.auth.server.saslLoginContext' property is not a recognized configuration in ZooKeeper 3.7.0.
+[Ciri] Reason for localSessionsEnabled: The 'localSessionsEnabled' property is not applicable in standalone mode. It is only relevant when ZooKeeper is running in a quorum (cluster mode).

@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.normalizer.period', 'hbase.ipc.client.tcpnodelay', 'hbase.ipc.server.fallback-to-simple-auth-allowed', 'hbase.client.scanner.max.result.size', 'hbase.mob.delfile.max.count'], 'reason': ['hbase.normalizer.period: The property is not recognized.', 'hbase.ipc.client.tcpnodelay: The property is not recognized.', 'hbase.ipc.server.fallback-to-simple-auth-allowed: The property is not recognized.', 'hbase.client.scanner.max.result.size: The property is not recognized.', 'hbase.mob.delfile.max.count: The property is not recognized.']}
+
+{'hasError': True, 'errParameter': ['hbase.normalizer.period', 'hbase.ipc.client.tcpnodelay', 'hbase.ipc.server.fallback-to-simple-auth-allowed', 'hbase.client.scanner.max.result.size', 'hbase.mob.delfile.max.count'], 'reason': ['hbase.normalizer.period is not a valid property for HBase 2.2.7', 'hbase.ipc.client.tcpnodelay is not a valid property for HBase 2.2.7', 'hbase.ipc.server.fallback-to-simple-auth-allowed is not a valid property for HBase 2.2.7', 'hbase.client.scanner.max.result.size is not a valid property for HBase 2.2.7', 'hbase.mob.delfile.max.count is not a valid property for HBase 2.2.7']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: hbase.normalizer.period	hbase.ipc.client.tcpnodelay	hbase.ipc.server.fallback-to-simple-auth-allowed	hbase.client.scanner.max.result.size	hbase.mob.delfile.max.count
+[Ciri] Reason for hbase.normalizer.period: hbase.normalizer.period: The property is not recognized.
+[Ciri] Reason for hbase.ipc.client.tcpnodelay: hbase.ipc.client.tcpnodelay is not a valid property for HBase 2.2.7
+[Ciri] Reason for hbase.ipc.server.fallback-to-simple-auth-allowed: hbase.ipc.server.fallback-to-simple-auth-allowed is not a valid property for HBase 2.2.7
+[Ciri] Reason for hbase.client.scanner.max.result.size: hbase.client.scanner.max.result.size: The property is not recognized.
+[Ciri] Reason for hbase.mob.delfile.max.count: hbase.mob.delfile.max.count: The property is not recognized.

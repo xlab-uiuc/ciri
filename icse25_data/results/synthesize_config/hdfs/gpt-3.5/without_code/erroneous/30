@@ -1,0 +1,22 @@
+Wrong shot number:
+[7, 3, 12]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry', 'dfs.client.block.write.replace-datanode-on-failure.min-replication', 'dfs.namenode.checkpoint.period', 'dfs.domain.socket.path', 'dfs.namenode.storageinfo.defragment.timeout.ms'], 'reason': ["The property 'dfs.client.cached.conn.retry' has the value '-1' which is not a valid number of connection retries.", "The property 'dfs.client.block.write.replace-datanode-on-failure.min-replication' has the value '-1' which is not a valid minimum replication number.", "The property 'dfs.namenode.checkpoint.period' has the value '3600s' which should not contain time unit suffix.", "The property 'dfs.domain.socket.path' has the value '/valid/file2' which does not follow the correct path format.", "The property 'dfs.namenode.storageinfo.defragment.timeout.ms' has the value '8' which is not a valid timeout value."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry', 'dfs.client.block.write.replace-datanode-on-failure.min-replication', 'dfs.namenode.checkpoint.period', 'dfs.domain.socket.path', 'dfs.namenode.storageinfo.defragment.timeout.ms'], 'reason': ["The property 'dfs.client.cached.conn.retry' has the value '-1' which is out of the valid range for connection retries.", "The property 'dfs.client.block.write.replace-datanode-on-failure.min-replication' has the value '-1' which is out of the valid range for minimum replications.", "The property 'dfs.namenode.checkpoint.period' has the value '3600s' which is not in the correct format for time intervals.", "The property 'dfs.domain.socket.path' has the value '/valid/file2' which does not follow the correct path format.", "The property 'dfs.namenode.storageinfo.defragment.timeout.ms' has the value '8' which is not in the correct format for timeout values."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry', 'dfs.client.block.write.replace-datanode-on-failure.min-replication', 'dfs.namenode.checkpoint.period', 'dfs.domain.socket.path', 'dfs.namenode.storageinfo.defragment.timeout.ms'], 'reason': ["The property 'dfs.client.cached.conn.retry' has the value '-1' which is out of the valid range for connection retries.", "The property 'dfs.client.block.write.replace-datanode-on-failure.min-replication' has the value '-1' which is out of the valid range for minimum replications.", "The property 'dfs.namenode.checkpoint.period' has the value '3600s' which should be specified in seconds without the 's' suffix.", "The property 'dfs.domain.socket.path' has the value '/valid/file2' which does not follow the correct path format.", "The property 'dfs.namenode.storageinfo.defragment.timeout.ms' has the value '8' which may be too low for a timeout value."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: dfs.client.cached.conn.retry	dfs.client.block.write.replace-datanode-on-failure.min-replication	dfs.namenode.checkpoint.period	dfs.domain.socket.path	dfs.namenode.storageinfo.defragment.timeout.ms
+[Ciri] Reason for dfs.client.cached.conn.retry: The property 'dfs.client.cached.conn.retry' has the value '-1' which is out of the valid range for connection retries.
+[Ciri] Reason for dfs.client.block.write.replace-datanode-on-failure.min-replication: The property 'dfs.client.block.write.replace-datanode-on-failure.min-replication' has the value '-1' which is out of the valid range for minimum replications.
+[Ciri] Reason for dfs.namenode.checkpoint.period: The property 'dfs.namenode.checkpoint.period' has the value '3600s' which should not contain time unit suffix.
+[Ciri] Reason for dfs.domain.socket.path: The property 'dfs.domain.socket.path' has the value '/valid/file2' which does not follow the correct path format.
+[Ciri] Reason for dfs.namenode.storageinfo.defragment.timeout.ms: The property 'dfs.namenode.storageinfo.defragment.timeout.ms' has the value '8' which is not in the correct format for timeout values.

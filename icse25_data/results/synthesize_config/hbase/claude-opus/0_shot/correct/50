@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hregion.max.filesize', 'hbase.ipc.server.fallback-to-simple-auth-allowed'], 'reason': ['The default value for hbase.hregion.max.filesize in HBase 2.2.7 is 10737418240 (10GB), but the configuration sets it to 21474836480 (20GB) which is too large and may cause performance issues.', 'The configuration property hbase.ipc.server.fallback-to-simple-auth-allowed is deprecated since HBase 2.0.0 and should not be used. SASL SIMPLE authentication fallback is not recommended and poses security risks.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.hregion.max.filesize	hbase.ipc.server.fallback-to-simple-auth-allowed
+[Ciri] Reason for hbase.hregion.max.filesize: The default value for hbase.hregion.max.filesize in HBase 2.2.7 is 10737418240 (10GB), but the configuration sets it to 21474836480 (20GB) which is too large and may cause performance issues.
+[Ciri] Reason for hbase.ipc.server.fallback-to-simple-auth-allowed: The configuration property hbase.ipc.server.fallback-to-simple-auth-allowed is deprecated since HBase 2.0.0 and should not be used. SASL SIMPLE authentication fallback is not recommended and poses security risks.

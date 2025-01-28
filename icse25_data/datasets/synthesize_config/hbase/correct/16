@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.infoserver.redirect</name>
+  <value>false</value>
+    <description>Whether or not the Master listens to the Master web
+      UI port (hbase.master.info.port) and redirects requests to the web
+      UI server shared by the Master and RegionServer. Config. makes
+      sense when Master is serving Regions (not the default).</description>
+</property>
+
+<property>
+  <name>zookeeper.znode.acl.parent</name>
+  <value>acl</value>
+    <description>Root ZNode for access control lists.</description>
+</property>
+
+<property>
+  <name>hbase.normalizer.period</name>
+  <value>150000</value>
+    <description>Period at which the region normalizer runs in the Master.</description>
+</property>
+
+<property>
+  <name>io.storefile.bloom.block.size</name>
+  <value>131072</value>
+      <description>The size in bytes of a single block ("chunk") of a compound Bloom
+          filter. This size is approximate, because Bloom blocks can only be
+          inserted at data block boundaries, and the number of keys per data
+          block varies.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.client.tcpnodelay</name>
+  <value>true</value>
+    <description>Set no delay on rpc socket connections.  See
+    http://docs.oracle.com/javase/1.5.0/docs/api/java/net/Socket.html#getTcpNoDelay()</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.fallback-to-simple-auth-allowed</name>
+  <value>true</value>
+    <description>When a server is configured to require secure connections, it will
+      reject connection attempts from clients using SASL SIMPLE (unsecure) authentication.
+      This setting allows secure servers to accept SASL SIMPLE connections from clients
+      when the client requests.  When false (the default), the server will not allow the fallback
+      to SIMPLE authentication, and will reject the connection.  WARNING: This setting should ONLY
+      be used as a temporary measure while converting clients over to secure authentication.  It
+      MUST BE DISABLED for secure operation.</description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.max.result.size</name>
+  <value>1048576</value>
+    <description>Maximum number of bytes returned when calling a scanner's next method.
+    Note that when a single row is larger than this limit the row is still returned completely.
+    The default value is 2MB, which is good for 1ge networks.
+    With faster and/or high latency networks this value should be increased.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.delfile.max.count</name>
+  <value>6</value>
+    <description>
+      The max number of del files that is allowed in the mob compaction.
+      In the mob compaction, when the number of existing del files is larger than
+      this value, they are merged until number of del files is not larger this value.
+      The default value is 3.
+    </description>
+</property>
+
+</configuration>

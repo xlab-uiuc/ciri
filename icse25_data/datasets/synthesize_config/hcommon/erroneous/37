@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.conversion.rule</name>
+  <value>nonono</value>
+  <description>
+    The rule is applied on the group names received from LDAP when
+    RuleBasedLdapGroupsMapping is configured.
+    Supported rules are "to_upper", "to_lower" and "none".
+    to_upper: This will convert all the group names to uppercase.
+    to_lower: This will convert all the group names to lowercase.
+    none: This will retain the source formatting, this is default value.
+  </description>
+</property>
+
+<property>
+  <name>io.erasurecode.codec.rs-legacy.rawcoders</name>
+  <value>rs-legacy_java</value>
+  <description>
+    Comma separated raw coder implementations for the rs-legacy codec. The earlier
+    factory is prior to followings in case of failure of creating raw coders.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.socket.recv.buffer</name>
+  <value>16384</value>
+  <description>Socket receive buffer hint to amazon connector. Represented in bytes.</description>
+</property>
+
+<property>
+  <name>ipc.client.low-latency</name>
+  <value>false</value>
+  <description>Use low-latency QoS markers for IPC connections.
+  </description>
+</property>
+
+<property>
+  <name>ipc.client.ping</name>
+  <value>false</value>
+  <description>Send a ping to the server when timeout on reading the response,
+  if set to true. If no failure is detected, the client retries until at least
+  a byte is read or the time given by ipc.client.rpc-timeout.ms is passed.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].cost-provider.impl</name>
+  <value>org.apache.hadoop.ipc.DefaultCostProvider</value>
+  <description>The cost provider mapping user requests to their cost. To
+    enable determination of cost based on processing time, use
+    org.apache.hadoop.ipc.WeightedTimeCostProvider.
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>file.stream-buffer-size</name>
+  <value>2048</value>
+  <description>The size of buffer to stream files.
+  The size of this buffer should probably be a multiple of hardware
+  page size (4096 on Intel x86), and it determines how much data is
+  buffered during read and write operations.</description>
+</property>
+
+<property>
+  <name>ftp.bytes-per-checksum</name>
+  <value>512</value>
+  <description>The number of bytes per checksum.  Must not be larger than
+  ftp.stream-buffer-size</description>
+</property>
+
+</configuration>

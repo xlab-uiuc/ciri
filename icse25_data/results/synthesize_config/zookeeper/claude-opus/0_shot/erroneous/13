@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ["secureClientPort should be an integer value, but '1.1' is a floating-point number.", "quorum.auth.kerberos.servicePrincipal should be in the format 'zookeeper/<host>@<REALM>' for Zookeeper 3.7.0, but 'zkquorum/localhost' is used instead."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPort	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for secureClientPort: secureClientPort should be an integer value, but '1.1' is a floating-point number.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal should be in the format 'zookeeper/<host>@<REALM>' for Zookeeper 3.7.0, but 'zkquorum/localhost' is used instead.

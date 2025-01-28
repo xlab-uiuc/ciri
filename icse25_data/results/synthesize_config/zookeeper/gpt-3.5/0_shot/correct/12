@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsEnabled'], 'reason': ['The value of dataLogDir should be a valid directory path.', 'quorum.auth.serverRequireSasl should be set to true for enhanced security.', 'autopurge.purgeInterval should be set to a positive value for automatic data purging.', 'localSessionsEnabled should be set to true for local sessions.']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsEnabled'], 'reason': ["The value for 'dataLogDir' should be a valid directory path.", "The property 'quorum.auth.serverRequireSasl' should be set to 'true' for enhanced security.", "The value for 'autopurge.purgeInterval' should be greater than 0 to enable automatic purging.", "The property 'localSessionsEnabled' should be set to 'true' for better performance."]}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsEnabled'], 'reason': ['Invalid value for dataLogDir. It should be a valid directory path.', 'quorum.auth.serverRequireSasl should be set to true when quorum.auth.enableSasl is true.', 'Invalid value for autopurge.purgeInterval. It should be a positive integer.', 'localSessionsEnabled should be set to true or false.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dataLogDir	quorum.auth.serverRequireSasl	autopurge.purgeInterval	localSessionsEnabled
+[Ciri] Reason for dataLogDir: The value for 'dataLogDir' should be a valid directory path.
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl should be set to true for enhanced security.
+[Ciri] Reason for autopurge.purgeInterval: Invalid value for autopurge.purgeInterval. It should be a positive integer.
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled should be set to true for local sessions.

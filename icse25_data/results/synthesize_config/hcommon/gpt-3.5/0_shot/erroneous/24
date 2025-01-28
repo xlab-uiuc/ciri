@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'ipc.[port_number].faircallqueue.multiplexer.weights'], 'reason': ["The value for fs.ftp.host.port should not be 'file://'. It should be a valid FTP host and port combination.", 'The parameter ipc.[port_number].faircallqueue.multiplexer.weights is not a valid parameter name format.']}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'ipc.[port_number].faircallqueue.multiplexer.weights'], 'reason': ["The value for 'fs.ftp.host.port' should not be 'file://'. It should specify the host and port for the FTP filesystem.", "The parameter 'ipc.[port_number].faircallqueue.multiplexer.weights' is not a valid parameter format. It should not contain square brackets and should have a specific port number instead."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'ipc.[port_number].faircallqueue.multiplexer.weights'], 'reason': ["The value for fs.ftp.host.port should not be 'file://'. It should be a valid FTP host and port number.", 'The parameter ipc.[port_number].faircallqueue.multiplexer.weights has invalid characters in the name. It should not contain square brackets.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host.port	ipc.[port_number].faircallqueue.multiplexer.weights
+[Ciri] Reason for fs.ftp.host.port: The value for fs.ftp.host.port should not be 'file://'. It should be a valid FTP host and port number.
+[Ciri] Reason for ipc.[port_number].faircallqueue.multiplexer.weights: The parameter ipc.[port_number].faircallqueue.multiplexer.weights is not a valid parameter name format.

@@ -1,0 +1,24 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'server.1', 'server.2', 'server.3'], 'reason': ['clientPortAddress is not a valid IP address', 'server.1 is not a valid IP address', 'server.2 is not a valid IP address', 'server.3 is not a valid IP address']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'tickTime', 'initLimit', 'syncLimit'], 'reason': ['dataDir is not a valid directory', 'clientPort is not a valid port', 'tickTime is not a valid time', 'initLimit is not a valid time', 'syncLimit is not a valid time']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'tickTime', 'initLimit', 'syncLimit', 'quorumListenOnAllIPs'], 'reason': ['dataDir is not set', 'dataLogDir is not set', 'clientPort is not set', 'tickTime is not set', 'initLimit is not set', 'syncLimit is not set', 'quorumListenOnAllIPs is not set']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPortAddress', 'server.1', 'server.2', 'server.3'], 'reason': ['dataDir is not a valid directory', 'clientPortAddress is not a valid address', 'server.1 is not a valid address', 'server.2 is not a valid address', 'server.3 is not a valid address']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'server.1', 'server.2', 'server.3'], 'reason': ['clientPortAddress must be a valid IP address', 'server.1 must be a valid IP address', 'server.2 must be a valid IP address', 'server.3 must be a valid IP address']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPortAddress', 'server.1', 'server.2', 'server.3'], 'reason': ['dataDir is not a directory', 'clientPortAddress is not a valid IP address', 'server.1 is not a valid IP address', 'server.2 is not a valid IP address', 'server.3 is not a valid IP address']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: dataDir	clientPortAddress	server.1	server.2	server.3
+[Ciri] Reason for dataDir: dataDir is not a valid directory
+[Ciri] Reason for clientPortAddress: clientPortAddress is not a valid IP address
+[Ciri] Reason for server.1: server.1 is not a valid IP address
+[Ciri] Reason for server.2: server.2 is not a valid address
+[Ciri] Reason for server.3: server.3 is not a valid address

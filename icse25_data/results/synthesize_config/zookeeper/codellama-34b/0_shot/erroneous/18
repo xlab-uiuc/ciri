@@ -1,0 +1,45 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['syncLimit', 'quorum.auth.learnerRequireSasl', 'standaloneEnabled', 'peerType'], 'reason': ['syncLimit should be greater than 0', 'quorum.auth.learnerRequireSasl is not a valid property', 'standaloneEnabled is not a valid property', 'peerType is not a valid property']}
+
+{'hasError': True, 'errParameter': ['syncLimit', 'maxSessionTimeout'], 'reason': ['syncLimit must be greater than or equal to 2', 'maxSessionTimeout must be greater than or equal to 10000']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.x properties are not supported in ZooKeeper version 3.7.0. Please use the server.x=y:z:w format instead.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['syncLimit', 'quorum.auth.learnerRequireSasl'], 'reason': ['syncLimit should be greater than 0', 'quorum.auth.learnerRequireSasl is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.x properties are not supported in ZooKeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['syncLimit', 'maxSessionTimeout'], 'reason': ['syncLimit must be greater than or equal to 2', 'maxSessionTimeout must be greater than or equal to 10000']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['syncLimit', 'localSessionsEnabled', 'localSessionsUpgradingEnabled', 'maxSessionTimeout', 'quorum.auth.learnerRequireSasl', 'standaloneEnabled', 'peerType'], 'reason': ['syncLimit should be greater than 0', 'localSessionsEnabled should be true', 'localSessionsUpgradingEnabled should be true', 'maxSessionTimeout should be greater than 0', 'quorum.auth.learnerRequireSasl should be false', 'standaloneEnabled should be false', 'peerType should be observer']}
+
+{'hasError': True, 'errParameter': ['syncLimit', 'quorum.auth.learnerRequireSasl'], 'reason': ['syncLimit should be greater than 0', 'quorum.auth.learnerRequireSasl is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['syncLimit', 'maxSessionTimeout'], 'reason': ['syncLimit should be greater than 0', 'maxSessionTimeout should be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initLimit', 'syncLimit'], 'reason': ['initLimit should be greater than 0', 'syncLimit should be greater than 0']}
+
+{'hasError': True, 'errParameter': ['syncLimit', 'quorum.auth.learnerRequireSasl', 'peerType'], 'reason': ['syncLimit should be greater than 0', 'quorum.auth.learnerRequireSasl is not a valid property', 'peerType should be either observer or participant']}
+
+{'hasError': True, 'errParameter': ['syncLimit', 'quorum.auth.learnerRequireSasl', 'standaloneEnabled', 'peerType'], 'reason': ['syncLimit should be greater than 0', 'quorum.auth.learnerRequireSasl is not a valid property', 'standaloneEnabled is not a valid property', 'peerType is not a valid property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['syncLimit', 'maxSessionTimeout'], 'reason': ['syncLimit should be greater than 2', 'maxSessionTimeout should be greater than 0']}
+
+{'hasError': True, 'errParameter': ['server.1'], 'reason': ['server.1 is not a valid parameter. Did you mean server.1=localhost:2888:3888?']}
+
+{'hasError': True, 'errParameter': ['syncLimit', 'maxSessionTimeout'], 'reason': ['syncLimit must be greater than 2', 'maxSessionTimeout must be greater than 0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: syncLimit	maxSessionTimeout
+[Ciri] Reason for syncLimit: syncLimit should be greater than 2
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout must be greater than 0

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_statement', 'min_wal_size'], 'reason': ["log_statement has an invalid value 'NOEXIST_TRANSFER_MODE'. Valid values are 'none', 'ddl', 'mod', and 'all'.", 'min_wal_size is set to 80MB which is below the minimum allowed value of 2 * 16MB = 32MB for PostgreSQL 13.0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: log_statement	min_wal_size
+[Ciri] Reason for log_statement: log_statement has an invalid value 'NOEXIST_TRANSFER_MODE'. Valid values are 'none', 'ddl', 'mod', and 'all'.
+[Ciri] Reason for min_wal_size: min_wal_size is set to 80MB which is below the minimum allowed value of 2 * 16MB = 32MB for PostgreSQL 13.0.

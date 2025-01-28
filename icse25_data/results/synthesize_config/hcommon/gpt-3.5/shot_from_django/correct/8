@@ -1,0 +1,15 @@
+Wrong shot number:
+[3, 5, 1]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.instrumentation.requires.admin', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The property 'hadoop.security.instrumentation.requires.admin' has a value 'false' which is not within the accepted value {true,false}.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has a value '-1' which is not within the accepted range of positive integers."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.instrumentation.requires.admin	fs.s3a.s3guard.ddb.table.capacity.write
+[Ciri] Reason for hadoop.security.instrumentation.requires.admin: The property 'hadoop.security.instrumentation.requires.admin' has a value 'false' which is not within the accepted value {true,false}.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: The property 'fs.s3a.s3guard.ddb.table.capacity.write' has a value '-1' which is not within the accepted range of positive integers.

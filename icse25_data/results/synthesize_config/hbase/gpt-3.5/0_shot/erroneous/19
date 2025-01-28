@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['zookeeper.session.timeout', 'hbase.client.max.perregion.tasks', 'hbase.regionserver.thread.compaction.throttle'], 'reason': ["The 'zookeeper.session.timeout' property has an incorrect 'usage' tag. It should be 'description'.", "The 'hbase.client.max.perregion.tasks' property has an incorrect 'usage' tag. It should be 'description'.", "The 'hbase.regionserver.thread.compaction.throttle' property has an incorrect 'usage' tag. It should be 'description'."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.session.timeout', 'hbase.client.max.perregion.tasks', 'hbase.regionserver.thread.compaction.throttle'], 'reason': ["The 'zookeeper.session.timeout' property has an incorrect 'usage' tag. 'usage' tag is not a valid tag for HBase configuration properties.", "The 'hbase.client.max.perregion.tasks' property has an incorrect 'usage' tag. 'usage' tag is not a valid tag for HBase configuration properties.", "The 'hbase.regionserver.thread.compaction.throttle' property has an incorrect 'usage' tag. 'usage' tag is not a valid tag for HBase configuration properties."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.session.timeout', 'hbase.client.max.perregion.tasks'], 'reason': ["The 'zookeeper.session.timeout' property has an incorrect 'usage' tag. 'usage' tag is not a valid tag for HBase configuration properties.", "The 'hbase.client.max.perregion.tasks' property has an incorrect 'usage' tag. 'usage' tag is not a valid tag for HBase configuration properties."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: zookeeper.session.timeout	hbase.client.max.perregion.tasks	hbase.regionserver.thread.compaction.throttle
+[Ciri] Reason for zookeeper.session.timeout: The 'zookeeper.session.timeout' property has an incorrect 'usage' tag. 'usage' tag is not a valid tag for HBase configuration properties.
+[Ciri] Reason for hbase.client.max.perregion.tasks: The 'hbase.client.max.perregion.tasks' property has an incorrect 'usage' tag. 'usage' tag is not a valid tag for HBase configuration properties.
+[Ciri] Reason for hbase.regionserver.thread.compaction.throttle: The 'hbase.regionserver.thread.compaction.throttle' property has an incorrect 'usage' tag. 'usage' tag is not a valid tag for HBase configuration properties.

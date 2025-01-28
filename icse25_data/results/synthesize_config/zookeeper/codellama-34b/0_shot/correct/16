@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.serverRequireSasl is not a valid parameter for Zookeeper version 3.7.0', 'quorum.auth.learner.saslLoginContext is not a valid parameter for Zookeeper version 3.7.0', 'quorum.auth.server.saslLoginContext is not a valid parameter for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.learner.saslLoginContext'], 'reason': ['quorum.auth.serverRequireSasl is not a valid property', 'quorum.auth.learner.saslLoginContext is not a valid property']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.serverRequireSasl is not a valid configuration parameter', 'quorum.auth.learner.saslLoginContext is not a valid configuration parameter', 'quorum.auth.server.saslLoginContext is not a valid configuration parameter']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quorum.auth.serverRequireSasl	quorum.auth.learner.saslLoginContext	quorum.auth.server.saslLoginContext
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl is not a valid configuration parameter
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext is not a valid parameter for Zookeeper version 3.7.0
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext is not a valid parameter for Zookeeper version 3.7.0

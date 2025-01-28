@@ -1,0 +1,19 @@
+Wrong shot number:
+[9, 2, 3]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.staging.tmp.path'], 'reason': ["The property 'fs.s3a.committer.staging.tmp.path' has the value 'tmp////staging' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'fs.s3a.committer.staging.tmp.path'], 'reason': ["The property 'fs.ftp.timeout' has the value '-1' which is not within the accepted value range for timeout.", "The property 'fs.s3a.committer.staging.tmp.path' has the value 'tmp////staging' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'fs.s3a.committer.staging.tmp.path'], 'reason': ["The property 'fs.ftp.timeout' has the value '-1' which is not a valid timeout value.", "The property 'fs.s3a.committer.staging.tmp.path' has the value 'tmp////staging' which does not follow the correct path format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.timeout	fs.s3a.committer.staging.tmp.path
+[Ciri] Reason for fs.ftp.timeout: The property 'fs.ftp.timeout' has the value '-1' which is not a valid timeout value.
+[Ciri] Reason for fs.s3a.committer.staging.tmp.path: The property 'fs.s3a.committer.staging.tmp.path' has the value 'tmp////staging' which does not follow the correct path format.

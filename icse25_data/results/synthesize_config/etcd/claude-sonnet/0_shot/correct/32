@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'quota-backend-bytes', 'snapshot-count', 'force-new-cluster', 'heartbeat-interval'], 'reason': ['The advertise-client-urls should use the IP address or hostname instead of localhost for production use.', 'The quota-backend-bytes value is too small for most production use cases. A larger value is recommended.', 'The snapshot-count value of 10000 is very high and may lead to excessive disk space usage. A lower value is typically recommended.', 'The force-new-cluster option should only be used when creating a new cluster from scratch. It should not be used for an existing cluster.', 'The heartbeat-interval value of 50 is very low and may lead to excessive network traffic. A higher value is typically recommended.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: advertise-client-urls	quota-backend-bytes	snapshot-count	force-new-cluster	heartbeat-interval
+[Ciri] Reason for advertise-client-urls: The advertise-client-urls should use the IP address or hostname instead of localhost for production use.
+[Ciri] Reason for quota-backend-bytes: The quota-backend-bytes value is too small for most production use cases. A larger value is recommended.
+[Ciri] Reason for snapshot-count: The snapshot-count value of 10000 is very high and may lead to excessive disk space usage. A lower value is typically recommended.
+[Ciri] Reason for force-new-cluster: The force-new-cluster option should only be used when creating a new cluster from scratch. It should not be used for an existing cluster.
+[Ciri] Reason for heartbeat-interval: The heartbeat-interval value of 50 is very low and may lead to excessive network traffic. A higher value is typically recommended.

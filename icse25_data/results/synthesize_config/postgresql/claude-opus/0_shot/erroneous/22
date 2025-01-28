@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl=off', "ssl_cert_file=server.crt'", "ssl_min_protocol_version='TLSv1.2'"], 'reason': ["The 'ssl' parameter is not valid in PostgreSQL 13. Instead, use 'ssl = on' or 'ssl = off' in the postgresql.conf file.", "The 'ssl_cert_file' parameter is missing a closing single quote. It should be 'ssl_cert_file = 'server.crt''.", "The 'ssl_min_protocol_version' parameter is using single quotes instead of an identifier. It should be ssl_min_protocol_version = TLSv1.2 without quotes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: ssl=off	ssl_cert_file=server.crt'	ssl_min_protocol_version='TLSv1.2'
+[Ciri] Reason for ssl=off: The 'ssl' parameter is not valid in PostgreSQL 13. Instead, use 'ssl = on' or 'ssl = off' in the postgresql.conf file.
+[Ciri] Reason for ssl_cert_file=server.crt': The 'ssl_cert_file' parameter is missing a closing single quote. It should be 'ssl_cert_file = 'server.crt''.
+[Ciri] Reason for ssl_min_protocol_version='TLSv1.2': The 'ssl_min_protocol_version' parameter is using single quotes instead of an identifier. It should be ssl_min_protocol_version = TLSv1.2 without quotes.

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.credential.provider.path</name>
+  <value>/valid/file1</value>
+  <description>
+    A comma-separated list of URLs that indicates the type and
+    location of a list of providers that should be consulted.
+  </description>
+</property>
+
+<property>
+  <name>io.map.index.skip</name>
+  <value>1</value>
+  <description>Number of index entries to skip between each entry.
+  Zero by default. Setting this to values larger than zero can
+  facilitate opening large MapFiles using less memory.</description>
+</property>
+
+<property>
+  <name>fs.ftp.transfer.mode</name>
+  <value>BLOCK_TRANSFER_MODE</value>
+  <description>
+    Set FTP's transfer mode based on configuration. Valid values are
+    STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE and COMPRESSED_TRANSFER_MODE.
+  </description>
+</property>
+
+<property>
+  <name>fs.automatic.close</name>
+  <value>true</value>
+  <description>By default, FileSystem instances are automatically closed at program
+  exit using a JVM shutdown hook. Setting this property to false disables this
+  behavior. This is an advanced option that should only be used by server applications
+  requiring a more carefully orchestrated shutdown sequence.
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.s3a.impl</name>
+  <value>org.apache.hadoop.fs.s3a.S3A</value>
+  <description>The implementation class of the S3A AbstractFileSystem.</description>
+</property>
+
+<property>
+  <name>ipc.client.kill.max</name>
+  <value>10</value>
+  <description>Defines the maximum number of clients to disconnect in one go.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds</name>
+  <value>10s,20s,30s,40s</value>
+  <description>The response time thresholds, as time durations, for each
+    priority queue. If the average response time for a queue is above this
+    threshold, backoff will occur in lower priority queues. This should be a
+    comma-separated list of length equal to the number of priority levels.
+    Threshold increases by 10s per level (e.g., for 4 levels: 10s,20s,30s,40s)
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>ha.health-monitor.sleep-after-disconnect.ms</name>
+  <value>500</value>
+  <description>
+    How long to sleep after an unexpected RPC error.
+  </description>
+</property>
+
+</configuration>

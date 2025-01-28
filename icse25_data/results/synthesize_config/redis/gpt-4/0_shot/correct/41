@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-disable-tcp-nodelay', 'oom-score-adj', 'appenddirname'], 'reason': ["The 'repl-disable-tcp-nodelay' parameter is not a valid configuration directive.", "The 'oom-score-adj' parameter is not correctly formatted. It should be 'oom-score-adj-values' if intending to adjust OOM scores based on roles.", "The 'appenddirname' parameter does not exist. The correct parameter for specifying the directory for append-only files is 'dir'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: repl-disable-tcp-nodelay	oom-score-adj	appenddirname
+[Ciri] Reason for repl-disable-tcp-nodelay: The 'repl-disable-tcp-nodelay' parameter is not a valid configuration directive.
+[Ciri] Reason for oom-score-adj: The 'oom-score-adj' parameter is not correctly formatted. It should be 'oom-score-adj-values' if intending to adjust OOM scores based on roles.
+[Ciri] Reason for appenddirname: The 'appenddirname' parameter does not exist. The correct parameter for specifying the directory for append-only files is 'dir'.

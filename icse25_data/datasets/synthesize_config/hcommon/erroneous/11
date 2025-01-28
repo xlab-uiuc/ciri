@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.bind.user</name>
+  <value>xdsuper</value>
+  <description>
+    The distinguished name of the user to bind as when connecting to the LDAP
+    server. This may be left blank if the LDAP server supports anonymous binds.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.posix.attr.gid.name</name>
+  <value>gidNumber</value>
+  <description>
+    The attribute of posixAccount indicating the group id.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.uid.cache.secs</name>
+  <value>14400</value>
+    <description>
+        This is the config controlling the validity of the entries in the cache
+        containing the userId to userName and groupId to groupName used by
+        NativeIO getFstat().
+    </description>
+</property>
+
+<property>
+  <name>fs.ftp.timeout</name>
+  <value>-1</value>
+  <description>
+    FTP filesystem's timeout in seconds.
+  </description>
+</property>
+
+<property>
+  <name>fs.du.interval</name>
+  <value>1200000</value>
+  <description>File space usage statistics refresh interval in msec.</description>
+</property>
+
+<property>
+  <name>fs.s3a.committer.staging.tmp.path</name>
+  <value>tmp////staging</value>
+  <description>
+    Path in the cluster filesystem for temporary data.
+    This is for HDFS, not the local filesystem.
+    It is only for the summary data of each file, not the actual
+    data being committed.
+    Using an unqualified path guarantees that the full path will be
+    generated relative to the home directory of the user creating the job,
+    hence private (assuming home directory permissions are secure).
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].decay-scheduler.thresholds</name>
+  <value>13,25,50</value>
+  <description>The client load threshold, as an integer percentage, for each
+    priority queue. Clients producing less load, as a percent of total
+    operations, than specified at position i will be given priority i. This
+    should be a comma-separated list of length equal to the number of priority
+    levels minus 1 (the last is implicitly 100).
+    Thresholds ascend by a factor of 2 (e.g., for 4 levels: 13,25,50).
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>net.topology.table.file.name</name>
+  <value>/valid/file1</value>
+  <description> The file name for a topology file, which is used when the
+    net.topology.node.switch.mapping.impl property is set to
+    org.apache.hadoop.net.TableMapping. The file format is a two column text
+    file, with columns separated by whitespace. The first column is a DNS or
+    IP address and the second column specifies the rack where the address maps.
+    If no entry corresponding to a host in the cluster is found, then
+    /default-rack is assumed.
+  </description>
+</property>
+
+</configuration>

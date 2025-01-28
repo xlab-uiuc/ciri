@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.worker.ramdisk.size', 'alluxio.job.worker.web.bind.host', 'alluxio.master.shell.backup.state.lock.try.duration', 'alluxio.user.local.writer.chunk.size.bytes', 'alluxio.job.master.lost.worker.interval', 'alluxio.master.replication.check.interval', 'alluxio.user.file.write.tier.default'], 'reason': ['Invalid IP address format for alluxio.job.master.web.bind.host', 'Invalid value format for alluxio.worker.ramdisk.size', 'Invalid IP address format for alluxio.job.worker.web.bind.host', 'Invalid time duration format for alluxio.master.shell.backup.state.lock.try.duration', 'Invalid size format for alluxio.user.local.writer.chunk.size.bytes', 'Invalid time duration format for alluxio.job.master.lost.worker.interval', 'Invalid time duration format for alluxio.master.replication.check.interval', 'Invalid tier value for alluxio.user.file.write.tier.default']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.worker.ramdisk.size', 'alluxio.user.local.writer.chunk.size.bytes', 'alluxio.job.master.lost.worker.interval', 'alluxio.master.replication.check.interval', 'alluxio.user.file.write.tier.default'], 'reason': ['Invalid IP address format in alluxio.job.master.web.bind.host', 'Invalid value format in alluxio.worker.ramdisk.size', 'Invalid unit format in alluxio.user.local.writer.chunk.size.bytes', 'Invalid time unit format in alluxio.job.master.lost.worker.interval', 'Invalid time unit format in alluxio.master.replication.check.interval', 'Invalid tier value in alluxio.user.file.write.tier.default']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.worker.ramdisk.size', 'alluxio.user.local.writer.chunk.size.bytes', 'alluxio.job.master.lost.worker.interval', 'alluxio.master.replication.check.interval', 'alluxio.user.file.write.tier.default'], 'reason': ['Invalid IP address format for alluxio.job.master.web.bind.host', 'Invalid value format for alluxio.worker.ramdisk.size', 'Invalid unit format for alluxio.user.local.writer.chunk.size.bytes', 'Invalid time unit format for alluxio.job.master.lost.worker.interval', 'Invalid time unit format for alluxio.master.replication.check.interval', 'Invalid tier value for alluxio.user.file.write.tier.default']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: alluxio.job.master.web.bind.host	alluxio.worker.ramdisk.size	alluxio.user.local.writer.chunk.size.bytes	alluxio.job.master.lost.worker.interval	alluxio.master.replication.check.interval	alluxio.user.file.write.tier.default
+[Ciri] Reason for alluxio.job.master.web.bind.host: Invalid IP address format in alluxio.job.master.web.bind.host
+[Ciri] Reason for alluxio.worker.ramdisk.size: Invalid value format in alluxio.worker.ramdisk.size
+[Ciri] Reason for alluxio.user.local.writer.chunk.size.bytes: Invalid unit format for alluxio.user.local.writer.chunk.size.bytes
+[Ciri] Reason for alluxio.job.master.lost.worker.interval: Invalid time unit format in alluxio.job.master.lost.worker.interval
+[Ciri] Reason for alluxio.master.replication.check.interval: Invalid time unit format in alluxio.master.replication.check.interval
+[Ciri] Reason for alluxio.user.file.write.tier.default: Invalid tier value for alluxio.user.file.write.tier.default

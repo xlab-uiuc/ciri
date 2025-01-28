@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['synchronous_standby_names', 'wal_init_zero', 'shared_memory_type'], 'reason': ["The correct format for 'synchronous_standby_names' does not include a trailing apostrophe.", "'wal_init_zero' is not a recognized configuration parameter in PostgreSQL 13.0.", "'shared_memory_type' is not a valid configuration parameter in PostgreSQL 13.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: synchronous_standby_names	wal_init_zero	shared_memory_type
+[Ciri] Reason for synchronous_standby_names: The correct format for 'synchronous_standby_names' does not include a trailing apostrophe.
+[Ciri] Reason for wal_init_zero: 'wal_init_zero' is not a recognized configuration parameter in PostgreSQL 13.0.
+[Ciri] Reason for shared_memory_type: 'shared_memory_type' is not a valid configuration parameter in PostgreSQL 13.0.

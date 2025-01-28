@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'zset-max-listpack-entries', 'tls-session-caching'], 'reason': ["The correct parameter for setting the cluster bus port is 'cluster-announce-bus-port' without the '=' sign.", "The 'zset-max-listpack-entries' parameter does not exist in Redis 7.0.0. The correct parameter for controlling the size of sorted sets is 'zset-max-ziplist-entries'.", "The 'tls-session-caching' parameter does not exist. The correct parameter for controlling TLS session caching is 'tls-session-cache-size', which requires specifying the number of sessions to cache, not just enabling or disabling."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-bus-port	zset-max-listpack-entries	tls-session-caching
+[Ciri] Reason for cluster-announce-bus-port: The correct parameter for setting the cluster bus port is 'cluster-announce-bus-port' without the '=' sign.
+[Ciri] Reason for zset-max-listpack-entries: The 'zset-max-listpack-entries' parameter does not exist in Redis 7.0.0. The correct parameter for controlling the size of sorted sets is 'zset-max-ziplist-entries'.
+[Ciri] Reason for tls-session-caching: The 'tls-session-caching' parameter does not exist. The correct parameter for controlling TLS session caching is 'tls-session-cache-size', which requires specifying the number of sessions to cache, not just enabling or disabling.

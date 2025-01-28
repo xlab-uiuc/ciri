@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.nodemanager.container-monitor.enabled</name>
+  <value>false</value>
+    <description>Enable container monitor</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-metrics.period-ms</name>
+  <value>-1</value>
+    <description>
+    Container metrics flush period in ms.  Set to -1 for flush on completion.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.leveldb-timeline-store.start-time-write-cache-size</name>
+  <value>20000</value>
+    <description>Size of cache for recently written entity start times for leveldb timeline store in number of entities.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.recovery.enabled</name>
+  <value>false</value>
+    <description>Enable timeline server to recover state after starting. If
+    true, then yarn.timeline-service.state-store-class must be specified.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.nodemanager-graceful-decommission-timeout-secs</name>
+  <value>1800</value>
+    <description>
+    Timeout in seconds for YARN node graceful decommission.
+    This is the maximal time to wait for running containers and applications to complete
+    before transition a DECOMMISSIONING node into DECOMMISSIONED.
+    </description>
+</property>
+
+<property>
+  <name>yarn.federation.subcluster-resolver.class</name>
+  <value>org.apache.hadoop.yarn.server.federation.resolver.DefaultSubClusterResolverImpl</value>
+    <description>
+      Class name for SubClusterResolver
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.pluggable-device-framework.enabled</name>
+  <value>false</value>
+    <description>
+      This setting controls if pluggable device framework is enabled.
+      Disabled by default
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.submission-preprocessor.file-refresh-interval-ms</name>
+  <value>60000</value>
+    <description>Submission processor refresh interval</description>
+</property>
+
+</configuration>

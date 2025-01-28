@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl', 'hbase.ipc.client.tcpnodelay'], 'reason': ["The 'hbase.regionserver.hlog.writer.impl' property value 'org.apache.hadoop.hbase.regionserver.wal.ProtobufLogWriter' is incorrect or outdated for HBase version 2.2.7. The correct class name might differ as HBase evolves.", "The 'hbase.ipc.client.tcpnodelay' default value is 'false', but the usage example suggests it defaults to 'true'. This inconsistency could lead to confusion about the actual default behavior."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.hlog.writer.impl	hbase.ipc.client.tcpnodelay
+[Ciri] Reason for hbase.regionserver.hlog.writer.impl: The 'hbase.regionserver.hlog.writer.impl' property value 'org.apache.hadoop.hbase.regionserver.wal.ProtobufLogWriter' is incorrect or outdated for HBase version 2.2.7. The correct class name might differ as HBase evolves.
+[Ciri] Reason for hbase.ipc.client.tcpnodelay: The 'hbase.ipc.client.tcpnodelay' default value is 'false', but the usage example suggests it defaults to 'true'. This inconsistency could lead to confusion about the actual default behavior.

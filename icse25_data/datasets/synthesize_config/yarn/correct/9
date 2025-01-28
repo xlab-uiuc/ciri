@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.webapp.ui-actions.enabled</name>
+  <value>false</value>
+    <description>
+    Add button to kill application in the RM Application view.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.resource-tracker.nm.ip-hostname-check</name>
+  <value>false</value>
+</property>
+
+<property>
+  <name>yarn.nodemanager.local-cache.max-files-per-directory</name>
+  <value>16384</value>
+    <description>It limits the maximum number of files which will be localized
+      in a single local directory. If the limit is reached then sub-directories
+      will be created and new files will be localized in them. If it is set to
+      a value less than or equal to 36 [which are sub-directories (0-9 and then
+      a-z)] then NodeManager will fail to start. For example; [for public
+      cache] if this is configured with a value of 40 ( 4 files +
+      36 sub-directories) and the local-dir is "/tmp/local-dir1" then it will
+      allow 4 files to be created directly inside "/tmp/local-dir1/filecache".
+      For files that are localized further it will create a sub-directory "0"
+      inside "/tmp/local-dir1/filecache" and will localize files inside it
+      until it becomes full. If a file is removed from a sub-directory that
+      is marked full, then that sub-directory will be used back again to
+      localize files.
+   </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.percentage-physical-cpu-limit</name>
+  <value>50</value>
+    <description>Percentage of CPU that can be allocated
+    for containers. This setting allows users to limit the amount of
+    CPU that YARN containers use. Currently functional only
+    on Linux using cgroups. The default is to use 100% of CPU.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.leveldb-timeline-store.start-time-read-cache-size</name>
+  <value>5000</value>
+    <description>Size of cache for recently read entity start times for leveldb timeline store in number of entities.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.hbase.coprocessor.jar.hdfs.location</name>
+  <value>/valid/file1</value>
+    <description>
+    The default hdfs location for flowrun coprocessor jar.
+    </description>
+</property>
+
+<property>
+  <name>yarn.node-labels.enabled</name>
+  <value>true</value>
+    <description>
+    Enable node labels feature
+    </description>
+</property>
+
+<property>
+  <name>yarn.router.interceptor.user.threadpool-size</name>
+  <value>5</value>
+    <description>
+      The thread pool executor size of per user in Router ClientRM Service FederationClientInterceptor.
+    </description>
+</property>
+
+</configuration>

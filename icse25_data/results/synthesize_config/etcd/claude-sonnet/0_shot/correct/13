@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'listen-client-urls'], 'reason': ['The advertise-client-urls parameter should use the IP address instead of localhost to allow remote etcd clients to connect. Using localhost will only allow clients on the same machine to connect.', 'The listen-client-urls parameter should use the IP address, hostname, or 0.0.0.0 instead of localhost to allow remote etcd clients to connect. Using localhost will only allow clients on the same machine to connect.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: advertise-client-urls	listen-client-urls
+[Ciri] Reason for advertise-client-urls: The advertise-client-urls parameter should use the IP address instead of localhost to allow remote etcd clients to connect. Using localhost will only allow clients on the same machine to connect.
+[Ciri] Reason for listen-client-urls: The listen-client-urls parameter should use the IP address, hostname, or 0.0.0.0 instead of localhost to allow remote etcd clients to connect. Using localhost will only allow clients on the same machine to connect.

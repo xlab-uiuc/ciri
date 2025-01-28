@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.blockreport.split.threshold', 'dfs.datanode.directoryscan.interval', 'dfs.bytes-per-checksum', 'dfs.namenode.blockreport.queue.size'], 'reason': ["The description for property 'dfs.blockreport.split.threshold' is not properly formatted.", "The value for property 'dfs.datanode.directoryscan.interval' should not have a time unit suffix.", "The description for property 'dfs.bytes-per-checksum' is missing important information.", "The value for property 'dfs.namenode.blockreport.queue.size' should be an integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.blockreport.split.threshold', 'dfs.datanode.directoryscan.interval', 'dfs.bytes-per-checksum', 'dfs.namenode.blockreport.queue.size'], 'reason': ["The description for property 'dfs.blockreport.split.threshold' is unclear and contains formatting issues.", "The value for property 'dfs.datanode.directoryscan.interval' should not have 's' as the unit specifier. Use a numeric value without units or specify the time unit correctly.", "The value for property 'dfs.bytes-per-checksum' should not be larger than 'dfs.stream-buffer-size'.", "The value for property 'dfs.namenode.blockreport.queue.size' should be an integer value, not a boolean."]}
+
+{'hasError': True, 'errParameter': ['dfs.blockreport.split.threshold', 'dfs.datanode.directoryscan.interval', 'dfs.bytes-per-checksum', 'dfs.namenode.blockreport.queue.size'], 'reason': ["The description for property 'dfs.blockreport.split.threshold' is not properly formatted.", "The value for property 'dfs.datanode.directoryscan.interval' should not have a time unit suffix.", "The description for property 'dfs.bytes-per-checksum' is missing important information.", "The value for property 'dfs.namenode.blockreport.queue.size' should be an integer."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dfs.blockreport.split.threshold	dfs.datanode.directoryscan.interval	dfs.bytes-per-checksum	dfs.namenode.blockreport.queue.size
+[Ciri] Reason for dfs.blockreport.split.threshold: The description for property 'dfs.blockreport.split.threshold' is not properly formatted.
+[Ciri] Reason for dfs.datanode.directoryscan.interval: The value for property 'dfs.datanode.directoryscan.interval' should not have a time unit suffix.
+[Ciri] Reason for dfs.bytes-per-checksum: The description for property 'dfs.bytes-per-checksum' is missing important information.
+[Ciri] Reason for dfs.namenode.blockreport.queue.size: The value for property 'dfs.namenode.blockreport.queue.size' should be an integer.

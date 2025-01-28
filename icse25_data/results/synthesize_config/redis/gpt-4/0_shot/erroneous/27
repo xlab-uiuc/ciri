@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'disable-thp', 'set-proc-title', 'repl-diskless-load'], 'reason': ["The 'rdbcompression' parameter should be set to 'yes' or 'no', not a numeric value.", "The 'disable-thp' parameter is not directly configurable in the redis.conf file. It's typically managed at the system level.", "The 'set-proc-title' parameter does not exist in Redis configuration. The correct parameter for setting the process title is 'setproctitle'.", "The 'repl-diskless-load' parameter accepts 'on', 'off', or 'swapdb', not 'disabled'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: rdbcompression	disable-thp	set-proc-title	repl-diskless-load
+[Ciri] Reason for rdbcompression: The 'rdbcompression' parameter should be set to 'yes' or 'no', not a numeric value.
+[Ciri] Reason for disable-thp: The 'disable-thp' parameter is not directly configurable in the redis.conf file. It's typically managed at the system level.
+[Ciri] Reason for set-proc-title: The 'set-proc-title' parameter does not exist in Redis configuration. The correct parameter for setting the process title is 'setproctitle'.
+[Ciri] Reason for repl-diskless-load: The 'repl-diskless-load' parameter accepts 'on', 'off', or 'swapdb', not 'disabled'.

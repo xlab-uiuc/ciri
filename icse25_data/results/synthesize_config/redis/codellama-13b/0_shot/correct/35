@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'set-proc-title', 'repl-diskless-sync-max-replicas', 'jemalloc-bg-thread', 'timeout', 'cluster-config-file', 'auto-aof-rewrite-min-size'], 'reason': ['The parameter enable-module-command is not supported in Redis 7.0.0.', 'The parameter set-proc-title is not supported in Redis 7.0.0.', 'The parameter repl-diskless-sync-max-replicas is not supported in Redis 7.0.0.', 'The parameter jemalloc-bg-thread is not supported in Redis 7.0.0.', 'The parameter timeout is not supported in Redis 7.0.0.', 'The parameter cluster-config-file is not supported in Redis 7.0.0.', 'The parameter auto-aof-rewrite-min-size is not supported in Redis 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'set-proc-title', 'repl-diskless-sync-max-replicas', 'jemalloc-bg-thread', 'timeout', 'cluster-config-file', 'auto-aof-rewrite-min-size'], 'reason': ['enable-module-command is not a valid configuration directive.', 'set-proc-title is not a valid configuration directive.', 'repl-diskless-sync-max-replicas is not a valid configuration directive.', 'jemalloc-bg-thread is not a valid configuration directive.', 'timeout is not a valid configuration directive.', 'cluster-config-file is not a valid configuration directive.', 'auto-aof-rewrite-min-size is not a valid configuration directive.']}
+
+{'hasError': True, 'errParameter': ['enable-module-command'], 'reason': ['enable-module-command is not a valid configuration directive.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: enable-module-command	set-proc-title	repl-diskless-sync-max-replicas	jemalloc-bg-thread	timeout	cluster-config-file	auto-aof-rewrite-min-size
+[Ciri] Reason for enable-module-command: enable-module-command is not a valid configuration directive.
+[Ciri] Reason for set-proc-title: The parameter set-proc-title is not supported in Redis 7.0.0.
+[Ciri] Reason for repl-diskless-sync-max-replicas: repl-diskless-sync-max-replicas is not a valid configuration directive.
+[Ciri] Reason for jemalloc-bg-thread: The parameter jemalloc-bg-thread is not supported in Redis 7.0.0.
+[Ciri] Reason for timeout: timeout is not a valid configuration directive.
+[Ciri] Reason for cluster-config-file: The parameter cluster-config-file is not supported in Redis 7.0.0.
+[Ciri] Reason for auto-aof-rewrite-min-size: auto-aof-rewrite-min-size is not a valid configuration directive.

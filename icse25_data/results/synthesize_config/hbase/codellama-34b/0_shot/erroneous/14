@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.port', 'hbase.regionserver.logroll.errors.tolerated', 'zookeeper.session.timeout', 'hbase.hregion.memstore.block.multiplier', 'hbase.hstore.compaction.min.size', 'hbase.ipc.client.tcpnodelay', 'hbase.coprocessor.user.enabled', 'hbase.mob.delfile.max.count'], 'reason': ['The port the HBase RegionServer binds to.', 'The number of consecutive WAL close errors we will allow before triggering a server abort.', 'ZooKeeper session timeout in milliseconds.', 'Block updates if memstore has hbase.hregion.memstore.block.multiplier times hbase.hregion.memstore.flush.size bytes.', 'A StoreFile (or a selection of StoreFiles, when using ExploringCompactionPolicy) smaller than this size will always be eligible for minor compaction.', 'Set no delay on rpc socket connections.', 'Enables or disables user (aka. table) coprocessor loading.', 'The max number of del files that is allowed in the mob compaction.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.regionserver.port	hbase.regionserver.logroll.errors.tolerated	zookeeper.session.timeout	hbase.hregion.memstore.block.multiplier	hbase.hstore.compaction.min.size	hbase.ipc.client.tcpnodelay	hbase.coprocessor.user.enabled	hbase.mob.delfile.max.count
+[Ciri] Reason for hbase.regionserver.port: The port the HBase RegionServer binds to.
+[Ciri] Reason for hbase.regionserver.logroll.errors.tolerated: The number of consecutive WAL close errors we will allow before triggering a server abort.
+[Ciri] Reason for zookeeper.session.timeout: ZooKeeper session timeout in milliseconds.
+[Ciri] Reason for hbase.hregion.memstore.block.multiplier: Block updates if memstore has hbase.hregion.memstore.block.multiplier times hbase.hregion.memstore.flush.size bytes.
+[Ciri] Reason for hbase.hstore.compaction.min.size: A StoreFile (or a selection of StoreFiles, when using ExploringCompactionPolicy) smaller than this size will always be eligible for minor compaction.
+[Ciri] Reason for hbase.ipc.client.tcpnodelay: Set no delay on rpc socket connections.
+[Ciri] Reason for hbase.coprocessor.user.enabled: Enables or disables user (aka. table) coprocessor loading.
+[Ciri] Reason for hbase.mob.delfile.max.count: The max number of del files that is allowed in the mob compaction.

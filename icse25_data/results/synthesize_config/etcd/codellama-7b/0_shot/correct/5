@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['name', 'force-new-cluster'], 'reason': ['name is a required parameter', 'force-new-cluster is a required parameter']}
+
+{'hasError': True, 'errParameter': ['name', 'force-new-cluster', 'initial-advertise-peer-urls', 'log-level', 'proxy-refresh-interval', 'initial-cluster-state', 'enable-pprof', 'proxy-failure-wait'], 'reason': ['The name property is missing.', 'The force-new-cluster property is missing.', 'The initial-advertise-peer-urls property is missing.', 'The log-level property is missing.', 'The proxy-refresh-interval property is missing.', 'The initial-cluster-state property is missing.', 'The enable-pprof property is missing.', 'The proxy-failure-wait property is missing.']}
+
+{'hasError': True, 'errParameter': ['name', 'force-new-cluster', 'proxy-refresh-interval', 'proxy-failure-wait'], 'reason': ['name is not a valid parameter for etcd version 3.5.0', 'force-new-cluster is not a valid parameter for etcd version 3.5.0', 'proxy-refresh-interval is not a valid parameter for etcd version 3.5.0', 'proxy-failure-wait is not a valid parameter for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['name', 'force-new-cluster', 'proxy-refresh-interval', 'proxy-failure-wait'], 'reason': ['name is not a valid parameter', 'force-new-cluster is not a valid parameter', 'proxy-refresh-interval is not a valid parameter', 'proxy-failure-wait is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'"]}
+
+{'hasError': True, 'errParameter': ['name', 'force-new-cluster', 'proxy-refresh-interval', 'proxy-failure-wait'], 'reason': ['name is not a valid parameter for etcd version 3.5.0', 'force-new-cluster is not a valid parameter for etcd version 3.5.0', 'proxy-refresh-interval is not a valid parameter for etcd version 3.5.0', 'proxy-failure-wait is not a valid parameter for etcd version 3.5.0']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: name	force-new-cluster	proxy-refresh-interval	proxy-failure-wait
+[Ciri] Reason for name: name is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for force-new-cluster: force-new-cluster is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval is not a valid parameter
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait is not a valid parameter for etcd version 3.5.0

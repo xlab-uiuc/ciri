@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 7, 11]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.debug'], 'reason': ["The property 'alluxio.debug' has an incorrect format or value."]}
+
+{'hasError': True, 'errParameter': ['alluxio.debug'], 'reason': ["The property 'alluxio.debug' has a value 'true' which is commented out. Comments should not be included in property values."]}
+
+{'hasError': True, 'errParameter': ['alluxio.debug'], 'reason': ["The property 'alluxio.debug' should not have a value specified in a comment. Comments should not be used to set property values."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.debug
+[Ciri] Reason for alluxio.debug: The property 'alluxio.debug' has a value 'true' which is commented out. Comments should not be included in property values.

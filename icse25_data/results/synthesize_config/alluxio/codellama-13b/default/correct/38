@@ -1,0 +1,34 @@
+Wrong shot number:
+[1, 8, 13]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.enabled', 'alluxio.user.client.cache.size', 'alluxio.user.client.cache.evictor.class'], 'reason': ["The property 'alluxio.user.client.cache.enabled' has the value 'false' which is not within the accepted value {true}.", "The property 'alluxio.user.client.cache.size' has the value '1024MB' which is not of the correct type Integer.", "The property 'alluxio.user.client.cache.evictor.class' has the value 'alluxio.client.file.cache.evictor.LRUCacheEvictor' which is not within the accepted value {alluxio.client.file.cache.evictor.LRUEvictor,alluxio.client.file.cache.evictor.LRFUEvictor}."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.size'], 'reason': ["The property 'alluxio.user.client.cache.size' has the value '1024MB' which is not of the correct type Integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.size'], 'reason': ["The property 'alluxio.user.client.cache.size' has the value '1024MB' which is not of the correct type Long."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.enabled', 'alluxio.user.client.cache.size', 'alluxio.user.client.cache.evictor.class'], 'reason': ["The property 'alluxio.user.client.cache.enabled' has the value 'false' which is not within the accepted value {true}.", "The property 'alluxio.user.client.cache.size' has the value '1024MB' which is not of the correct type Integer.", "The property 'alluxio.user.client.cache.evictor.class' has the value 'alluxio.client.file.cache.evictor.LRUCacheEvictor' which is not within the accepted value {alluxio.client.file.cache.evictor.LRUEvictor,alluxio.client.file.cache.evictor.LRFUEvictor}."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.size'], 'reason': ["The property 'alluxio.user.client.cache.size' has the value '1024MB' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.enabled'], 'reason': ["The property 'alluxio.user.client.cache.enabled' has the value 'false' which is not within the accepted value {true,false}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.size'], 'reason': ["The property 'alluxio.user.client.cache.size' has the value '1024MB' which is not of the correct type Long."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.client.cache.size
+[Ciri] Reason for alluxio.user.client.cache.size: The property 'alluxio.user.client.cache.size' has the value '1024MB' which is not of the correct type Integer.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.max.inbound.message.size', 'alluxio.worker.reviewer.probabilistic.hardlimit.bytes'], 'reason': ["Property 'alluxio.worker.network.max.inbound.message.size' has an incorrect value format. It should be specified in bytes without 'MB'.", "Property 'alluxio.worker.reviewer.probabilistic.hardlimit.bytes' has an incorrect value format. It should be specified in bytes without 'MB'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.fuse.user.group.translation.enabled', 'alluxio.worker.network.max.inbound.message.size', 'alluxio.worker.reviewer.probabilistic.hardlimit.bytes'], 'reason': ["Invalid value for property 'alluxio.fuse.user.group.translation.enabled'. Expected boolean value.", "Invalid value for property 'alluxio.worker.network.max.inbound.message.size'. Expected size format (e.g., 8MB).", "Invalid value for property 'alluxio.worker.reviewer.probabilistic.hardlimit.bytes'. Expected size format (e.g., 1MB)."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.max.inbound.message.size', 'alluxio.worker.reviewer.probabilistic.hardlimit.bytes'], 'reason': ["The value '8MB' for 'alluxio.worker.network.max.inbound.message.size' should be specified in bytes instead of 'MB'.", "The value '1MB' for 'alluxio.worker.reviewer.probabilistic.hardlimit.bytes' should be specified in bytes instead of 'MB'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.worker.network.max.inbound.message.size	alluxio.worker.reviewer.probabilistic.hardlimit.bytes
+[Ciri] Reason for alluxio.worker.network.max.inbound.message.size: The value '8MB' for 'alluxio.worker.network.max.inbound.message.size' should be specified in bytes instead of 'MB'.
+[Ciri] Reason for alluxio.worker.reviewer.probabilistic.hardlimit.bytes: Property 'alluxio.worker.reviewer.probabilistic.hardlimit.bytes' has an incorrect value format. It should be specified in bytes without 'MB'.

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.directory.suffix', 'alluxio.master.replication.check.interval', 'alluxio.user.network.streaming.max.inbound.message.size', 'alluxio.user.block.worker.client.pool.max'], 'reason': ["The property 'alluxio.underfs.gcs.directory.suffix' does not exist or is not correctly named in Alluxio 2.5.0.", "The value for 'alluxio.master.replication.check.interval' should be specified in milliseconds, seconds, etc., without abbreviations like 'min'. For example, '10min' should be '10m'.", "The value for 'alluxio.user.network.streaming.max.inbound.message.size' should be specified in bytes without abbreviations like 'MB'. For example, '200MB' should be '209715200b'.", "The value for 'alluxio.user.block.worker.client.pool.max' seems correct, but it's important to ensure that the system has enough resources to support this number of connections."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.underfs.gcs.directory.suffix	alluxio.master.replication.check.interval	alluxio.user.network.streaming.max.inbound.message.size	alluxio.user.block.worker.client.pool.max
+[Ciri] Reason for alluxio.underfs.gcs.directory.suffix: The property 'alluxio.underfs.gcs.directory.suffix' does not exist or is not correctly named in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.master.replication.check.interval: The value for 'alluxio.master.replication.check.interval' should be specified in milliseconds, seconds, etc., without abbreviations like 'min'. For example, '10min' should be '10m'.
+[Ciri] Reason for alluxio.user.network.streaming.max.inbound.message.size: The value for 'alluxio.user.network.streaming.max.inbound.message.size' should be specified in bytes without abbreviations like 'MB'. For example, '200MB' should be '209715200b'.
+[Ciri] Reason for alluxio.user.block.worker.client.pool.max: The value for 'alluxio.user.block.worker.client.pool.max' seems correct, but it's important to ensure that the system has enough resources to support this number of connections.

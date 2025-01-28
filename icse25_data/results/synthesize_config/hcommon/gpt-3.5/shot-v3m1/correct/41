@@ -1,0 +1,15 @@
+Wrong shot number:
+[7]
+
+Correct shot number:
+[15, 7, 11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ftp.bytes-per-checksum', 'ipc.server.max.connections'], 'reason': ["The property 'ftp.bytes-per-checksum' should not be larger than 'ftp.stream-buffer-size'.", "The value for 'ipc.server.max.connections' should be a non-negative integer or -1 for no limit."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ftp.bytes-per-checksum	ipc.server.max.connections
+[Ciri] Reason for ftp.bytes-per-checksum: The property 'ftp.bytes-per-checksum' should not be larger than 'ftp.stream-buffer-size'.
+[Ciri] Reason for ipc.server.max.connections: The value for 'ipc.server.max.connections' should be a non-negative integer or -1 for no limit.

@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention'], 'reason': ['auto-compaction-retention must be an integer']}
+
+{'hasError': True, 'errParameter': ['name'], 'reason': ['The name property is not valid. The name property must be a string.']}
+
+{'hasError': True, 'errParameter': ['name', 'initial-cluster', 'auto-compaction-retention', 'proxy-dial-timeout'], 'reason': ['The name property must be a valid DNS-1123 subdomain.', 'The initial-cluster property must be a valid list of comma-separated members.', 'The auto-compaction-retention property must be a valid integer.', 'The proxy-dial-timeout property must be a valid integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'"]}
+
+{'hasError': True, 'errParameter': ['name', 'initial-cluster-state', 'auto-compaction-mode', 'auto-compaction-retention', 'proxy-dial-timeout', 'logger'], 'reason': ['name: cannot be empty', 'initial-cluster-state: cannot be empty', 'auto-compaction-mode: cannot be empty', 'auto-compaction-retention: cannot be empty', 'proxy-dial-timeout: cannot be empty', 'logger: cannot be empty']}
+
+{'hasError': True, 'errParameter': ['name'], 'reason': ['The name parameter is required.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['name', 'initial-cluster-state', 'auto-compaction-retention', 'proxy-dial-timeout'], 'reason': ['name must be a valid DNS-1123 subdomain', 'initial-cluster-state must be either new or existing', 'auto-compaction-retention must be a positive integer', 'proxy-dial-timeout must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode'], 'reason': ['auto-compaction-mode must be one of [periodic,revision]']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode'], 'reason': ['auto-compaction-mode must be either periodic or revision']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: auto-compaction-mode
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode must be one of [periodic,revision]

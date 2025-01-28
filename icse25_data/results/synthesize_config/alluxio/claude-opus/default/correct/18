@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 12, 7]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.user.network.rpc.netty.worker.threads'], 'reason': ["The property 'fs.cos.socket.timeout' is not a valid Alluxio 2.5.0 configuration property.", "The value of 'alluxio.user.network.rpc.netty.worker.threads' cannot be set to 0. It must be a positive integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.cos.socket.timeout	alluxio.user.network.rpc.netty.worker.threads
+[Ciri] Reason for fs.cos.socket.timeout: The property 'fs.cos.socket.timeout' is not a valid Alluxio 2.5.0 configuration property.
+[Ciri] Reason for alluxio.user.network.rpc.netty.worker.threads: The value of 'alluxio.user.network.rpc.netty.worker.threads' cannot be set to 0. It must be a positive integer.

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.webapp.ui-actions.enabled</name>
+  <value>true</value>
+    <description>
+    Add button to kill application in the RM Application view.
+    </description>
+</property>
+
+<property>
+  <name>yarn.webapp.ui2.enable</name>
+  <value>false</value>
+    <description>To enable RM web ui2 application.</description>
+</property>
+
+<property>
+  <name>yarn.acl.enable</name>
+  <value>false</value>
+    <description>Are acls enabled.</description>
+</property>
+
+<property>
+  <name>yarn.admin.acl</name>
+  <value>*</value>
+    <description>ACL of who can be admin of the YARN cluster.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size</name>
+  <value>500</value>
+    <description>The size of the stat cache which stores stats of the
+      layers and config.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.windows-container.cpu-limit.enabled</name>
+  <value>false</value>
+    <description>This flag determines whether CPU limit will be set for the Windows Job
+    Object of the containers launched by the default container executor.</description>
+</property>
+
+<property>
+  <name>yarn.router.webapp.https.address</name>
+  <value>0.0.0.0:8091</value>
+    <description>
+      The https address of the Router web application.
+      If only a host is provided as the value,
+      the webapp will be served on a random port.
+    </description>
+</property>
+
+<property>
+  <name>yarn.scheduler.configuration.store.class</name>
+  <value>file</value>
+    <description>
+      The type of configuration store to use for scheduler configurations.
+      Default is "file", which uses file based capacity-scheduler.xml to
+      retrieve and change scheduler configuration. To enable API based
+      scheduler configuration, use either "memory" (in memory storage, no
+      persistence across restarts), "leveldb" (leveldb based storage), or
+      "zk" (zookeeper based storage). API based configuration is only useful
+      when using a scheduler which supports mutable configuration. Currently
+      only capacity scheduler supports this.
+    </description>
+</property>
+
+</configuration>

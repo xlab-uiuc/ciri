@@ -1,0 +1,22 @@
+Wrong shot number:
+[9, 8, 12]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'disable-thp', 'aclfile', 'set-proc-title', 'activerehashing'], 'reason': ["The properties 'rdbcompression', 'disable-thp', 'aclfile', 'set-proc-title', 'activerehashing' are not recognized or supported in Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'disable-thp', 'aclfile', 'set-proc-title'], 'reason': ["The property 'rdbcompression' is not a valid configuration parameter.", "The property 'disable-thp' is not a valid configuration parameter.", "The property 'aclfile' is not a valid configuration parameter.", "The property 'set-proc-title' is not a valid configuration parameter."]}
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'disable-thp', 'aclfile', 'set-proc-title', 'activerehashing'], 'reason': ["The properties 'rdbcompression', 'disable-thp', 'aclfile', 'set-proc-title', 'activerehashing' are not recognized configurations in Redis version 7.0.0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: rdbcompression	disable-thp	aclfile	set-proc-title	activerehashing
+[Ciri] Reason for rdbcompression: The properties 'rdbcompression', 'disable-thp', 'aclfile', 'set-proc-title', 'activerehashing' are not recognized configurations in Redis version 7.0.0.
+[Ciri] Reason for disable-thp: 
+[Ciri] Reason for aclfile: 
+[Ciri] Reason for set-proc-title: 
+[Ciri] Reason for activerehashing: 

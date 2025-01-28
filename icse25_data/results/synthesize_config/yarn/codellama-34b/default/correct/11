@@ -1,0 +1,18 @@
+Wrong shot number:
+[6, 8, 5]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.webapp.address'], 'reason': ["The property 'yarn.nodemanager.webapp.address' has the value '${yarn.nodemanager.hostname}:8042' which is not within the accepted value {0.0.0.0:8042}."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.webapp.address'], 'reason': ["The value of the property 'yarn.nodemanager.webapp.address' should be '0.0.0.0:8042' to enable the property 'yarn.nodemanager.webapp.https.address'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.webapp.address'], 'reason': ["The value of the property 'yarn.nodemanager.webapp.address' should be '${yarn.nodemanager.hostname}:8042' to enable the property 'yarn.nodemanager.webapp.address.useless'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.webapp.address
+[Ciri] Reason for yarn.nodemanager.webapp.address: The value of the property 'yarn.nodemanager.webapp.address' should be '0.0.0.0:8042' to enable the property 'yarn.nodemanager.webapp.https.address'.

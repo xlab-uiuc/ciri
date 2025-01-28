@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['aof-timestamp-enabled', 'maxmemory-clients'], 'reason': ['aof-timestamp-enabled is not a valid parameter in Redis 7.0.0 configuration.', 'maxmemory-clients should be specified as maxmemory instead in Redis 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['aof-timestamp-enabled', 'maxmemory-clients'], 'reason': ["'aof-timestamp-enabled' is not a valid configuration parameter for Redis version 7.0.0.", "'maxmemory-clients' should be 'maxmemory-policy' in Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['aof-timestamp-enabled', 'maxmemory-clients'], 'reason': ['aof-timestamp-enabled is not a valid parameter in Redis version 7.0.0', 'maxmemory-clients should be maxmemory instead in Redis version 7.0.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: aof-timestamp-enabled	maxmemory-clients
+[Ciri] Reason for aof-timestamp-enabled: aof-timestamp-enabled is not a valid parameter in Redis 7.0.0 configuration.
+[Ciri] Reason for maxmemory-clients: maxmemory-clients should be maxmemory instead in Redis version 7.0.0

@@ -1,0 +1,16 @@
+Wrong shot number:
+[10, 12, 1]
+
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.dir', 'dfs.namenode.checkpoint.dir', 'dfs.client.failover.proxy.provider'], 'reason': ["The property 'dfs.namenode.edits.dir' has the value '/valid/dir2' which is not a valid directory path", "The property 'dfs.namenode.checkpoint.dir' has the value '/valid/dir1' which is not a valid directory path", "The property 'dfs.client.failover.proxy.provider' has the value 'dfs.client.failover.proxy.provider.mycluster' which is not a valid class name."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.edits.dir	dfs.namenode.checkpoint.dir	dfs.client.failover.proxy.provider
+[Ciri] Reason for dfs.namenode.edits.dir: The property 'dfs.namenode.edits.dir' has the value '/valid/dir2' which is not a valid directory path
+[Ciri] Reason for dfs.namenode.checkpoint.dir: The property 'dfs.namenode.checkpoint.dir' has the value '/valid/dir1' which is not a valid directory path
+[Ciri] Reason for dfs.client.failover.proxy.provider: The property 'dfs.client.failover.proxy.provider' has the value 'dfs.client.failover.proxy.provider.mycluster' which is not a valid class name.

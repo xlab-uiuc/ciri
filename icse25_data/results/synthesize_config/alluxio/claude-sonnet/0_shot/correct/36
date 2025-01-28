@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max=-1', 'alluxio.master.metadata.sync.ufs.prefetch.pool.size=1', 'alluxio.zookeeper.leader.inquiry.retry=20'], 'reason': ['alluxio.user.file.replication.max is deprecated in Alluxio 2.5.0 and should be removed.', 'alluxio.master.metadata.sync.ufs.prefetch.pool.size is deprecated in Alluxio 2.5.0 and should be removed.', 'alluxio.zookeeper.leader.inquiry.retry is not a valid property in Alluxio 2.5.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.user.file.replication.max=-1	alluxio.master.metadata.sync.ufs.prefetch.pool.size=1	alluxio.zookeeper.leader.inquiry.retry=20
+[Ciri] Reason for alluxio.user.file.replication.max=-1: alluxio.user.file.replication.max is deprecated in Alluxio 2.5.0 and should be removed.
+[Ciri] Reason for alluxio.master.metadata.sync.ufs.prefetch.pool.size=1: alluxio.master.metadata.sync.ufs.prefetch.pool.size is deprecated in Alluxio 2.5.0 and should be removed.
+[Ciri] Reason for alluxio.zookeeper.leader.inquiry.retry=20: alluxio.zookeeper.leader.inquiry.retry is not a valid property in Alluxio 2.5.0.

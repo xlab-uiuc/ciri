@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'timeout', 'hash-max-listpack-value', 'repl-diskless-sync-delay', 'cluster-announce-bus-port', 'list-max-listpack-size'], 'reason': ['cluster-enabled is not a valid parameter for Redis 7.0.0', 'timeout value should be greater than 0', 'hash-max-listpack-value should be less than or equal to 32', 'repl-diskless-sync-delay should be greater than or equal to 10', 'cluster-announce-bus-port should be in the range of 10000-65535', 'list-max-listpack-size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['timeout', 'hash-max-listpack-value', 'repl-diskless-sync-delay', 'cluster-announce-bus-port', 'list-max-listpack-size'], 'reason': ["The 'timeout' parameter should be a positive integer value greater than 0.", "The 'hash-max-listpack-value' parameter should be a positive integer value greater than 0.", "The 'repl-diskless-sync-delay' parameter should be a positive integer value greater than 0.", "The 'cluster-announce-bus-port' parameter should be a valid port number.", "The 'list-max-listpack-size' parameter should be a positive integer value greater than 0."]}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'timeout', 'hash-max-listpack-value', 'repl-diskless-sync-delay', 'cluster-announce-bus-port', 'list-max-listpack-size'], 'reason': ["The parameter 'cluster-enabled' is not a valid configuration for Redis version 7.0.0.", "The parameter 'timeout' is not a valid configuration for Redis version 7.0.0.", "The parameter 'hash-max-listpack-value' is not a valid configuration for Redis version 7.0.0.", "The parameter 'repl-diskless-sync-delay' is not a valid configuration for Redis version 7.0.0.", "The parameter 'cluster-announce-bus-port' is not a valid configuration for Redis version 7.0.0.", "The parameter 'list-max-listpack-size' is not a valid configuration for Redis version 7.0.0."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: cluster-enabled	timeout	hash-max-listpack-value	repl-diskless-sync-delay	cluster-announce-bus-port	list-max-listpack-size
+[Ciri] Reason for cluster-enabled: The parameter 'cluster-enabled' is not a valid configuration for Redis version 7.0.0.
+[Ciri] Reason for timeout: timeout value should be greater than 0
+[Ciri] Reason for hash-max-listpack-value: The parameter 'hash-max-listpack-value' is not a valid configuration for Redis version 7.0.0.
+[Ciri] Reason for repl-diskless-sync-delay: The parameter 'repl-diskless-sync-delay' is not a valid configuration for Redis version 7.0.0.
+[Ciri] Reason for cluster-announce-bus-port: The parameter 'cluster-announce-bus-port' is not a valid configuration for Redis version 7.0.0.
+[Ciri] Reason for list-max-listpack-size: list-max-listpack-size should be a positive integer

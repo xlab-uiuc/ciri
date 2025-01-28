@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'proxy', 'quota-backend-bytes', 'enable-v2', 'force-new-cluster'], 'reason': ['proxy-dial-timeout and proxy-refresh-interval are not valid configuration options in etcd 3.5.0.', "proxy is a valid configuration option, but 'off' is not a valid value. It should be a URL string.", 'quota-backend-bytes is not a valid configuration option in etcd 3.5.0.', 'enable-v2 is not a valid configuration option in etcd 3.5.0. etcd 3.5.0 does not support v2 API.', 'force-new-cluster is not a valid configuration option in etcd 3.5.0.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: proxy-dial-timeout	proxy-refresh-interval	proxy	quota-backend-bytes	enable-v2	force-new-cluster
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout and proxy-refresh-interval are not valid configuration options in etcd 3.5.0.
+[Ciri] Reason for proxy-refresh-interval: proxy is a valid configuration option, but 'off' is not a valid value. It should be a URL string.
+[Ciri] Reason for proxy: quota-backend-bytes is not a valid configuration option in etcd 3.5.0.
+[Ciri] Reason for quota-backend-bytes: enable-v2 is not a valid configuration option in etcd 3.5.0. etcd 3.5.0 does not support v2 API.
+[Ciri] Reason for enable-v2: force-new-cluster is not a valid configuration option in etcd 3.5.0.
+[Ciri] Reason for force-new-cluster: 

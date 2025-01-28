@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-address', 'dfs.client.https.keystore.resource', 'dfs.namenode.avoid.write.stale.datanode', 'nfs.mountd.port', 'dfs.storage.policy.satisfier.keytab.file', 'dfs.qjournal.queued-edits.limit.mb', 'dfs.namenode.send.qop.enabled'], 'reason': ['dfs.namenode.rpc-address is missing the name service id.', 'dfs.client.https.keystore.resource is not a valid resource file.', 'dfs.namenode.avoid.write.stale.datanode is not a valid property.', 'nfs.mountd.port is not a valid port number.', 'dfs.storage.policy.satisfier.keytab.file is not a valid keytab file.', 'dfs.qjournal.queued-edits.limit.mb is not a valid size.', 'dfs.namenode.send.qop.enabled is not a valid property.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: dfs.namenode.rpc-address	dfs.client.https.keystore.resource	dfs.namenode.avoid.write.stale.datanode	nfs.mountd.port	dfs.storage.policy.satisfier.keytab.file	dfs.qjournal.queued-edits.limit.mb	dfs.namenode.send.qop.enabled
+[Ciri] Reason for dfs.namenode.rpc-address: dfs.namenode.rpc-address is missing the name service id.
+[Ciri] Reason for dfs.client.https.keystore.resource: dfs.client.https.keystore.resource is not a valid resource file.
+[Ciri] Reason for dfs.namenode.avoid.write.stale.datanode: dfs.namenode.avoid.write.stale.datanode is not a valid property.
+[Ciri] Reason for nfs.mountd.port: nfs.mountd.port is not a valid port number.
+[Ciri] Reason for dfs.storage.policy.satisfier.keytab.file: dfs.storage.policy.satisfier.keytab.file is not a valid keytab file.
+[Ciri] Reason for dfs.qjournal.queued-edits.limit.mb: dfs.qjournal.queued-edits.limit.mb is not a valid size.
+[Ciri] Reason for dfs.namenode.send.qop.enabled: dfs.namenode.send.qop.enabled is not a valid property.

@@ -1,0 +1,27 @@
+Wrong shot number:
+[4, 2, 10]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.swift.impl', 'hadoop.ssl.enabled', 'hadoop.registry.zk.retry.interval.ms'], 'reason': ["The property 'fs.swift.impl' has an additional usage tag that is not part of the standard configuration format.", "The property 'hadoop.ssl.enabled' is deprecated. Use dfs.http.policy and yarn.http.policy instead.", "The property 'hadoop.registry.zk.retry.interval.ms' is missing a description."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['fs.swift.impl', 'hadoop.ssl.enabled'], 'reason': ["The property 'fs.swift.impl' has an additional usage tag that is not part of the standard configuration format.", "The property 'hadoop.ssl.enabled' is deprecated. Use dfs.http.policy and yarn.http.policy instead."]}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['fs.swift.impl', 'hadoop.ssl.enabled'], 'reason': ["The property 'fs.swift.impl' has an additional usage tag that is not part of the standard configuration format.", "The property 'hadoop.ssl.enabled' is deprecated. Use dfs.http.policy and yarn.http.policy instead."]}
+
+{'hasError': True, 'errParameter': ['fs.swift.impl', 'hadoop.ssl.enabled'], 'reason': ["The property 'fs.swift.impl' has an additional usage tag that may cause issues in the configuration.", "The property 'hadoop.ssl.enabled' is deprecated. Use dfs.http.policy and yarn.http.policy instead."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.swift.impl	hadoop.ssl.enabled
+[Ciri] Reason for fs.swift.impl: The property 'fs.swift.impl' has an additional usage tag that is not part of the standard configuration format.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' is deprecated. Use dfs.http.policy and yarn.http.policy instead.

@@ -1,0 +1,16 @@
+Wrong shot number:
+[1, 15, 16]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.directoryscan.interval', 'dfs.webhdfs.socket.read-timeout', 'dfs.namenode.blockreport.queue.size'], 'reason': ["The value '1s' for property 'dfs.datanode.directoryscan.interval' is not in a correct format. It should be an integer representing seconds.", "The value '60s' for property 'dfs.webhdfs.socket.read-timeout' is not in a correct format. It should be an integer representing milliseconds.", "The value for property 'dfs.namenode.blockreport.queue.size' is 'true', which is not of the correct type Integer."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.datanode.directoryscan.interval	dfs.webhdfs.socket.read-timeout	dfs.namenode.blockreport.queue.size
+[Ciri] Reason for dfs.datanode.directoryscan.interval: The value '1s' for property 'dfs.datanode.directoryscan.interval' is not in a correct format. It should be an integer representing seconds.
+[Ciri] Reason for dfs.webhdfs.socket.read-timeout: The value '60s' for property 'dfs.webhdfs.socket.read-timeout' is not in a correct format. It should be an integer representing milliseconds.
+[Ciri] Reason for dfs.namenode.blockreport.queue.size: The value for property 'dfs.namenode.blockreport.queue.size' is 'true', which is not of the correct type Integer.

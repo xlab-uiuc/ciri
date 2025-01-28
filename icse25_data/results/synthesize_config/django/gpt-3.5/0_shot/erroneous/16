@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'STATIC_URL', 'YEAR_MONTH_FORMAT', 'CSRF_COOKIE_NAME', 'SESSION_COOKIE_SAMESITE', 'CSRF_COOKIE_AGE', 'LOGOUT_REDIRECT_URL', 'LANGUAGE_COOKIE_PATH'], 'reason': ['NUMBER_GROUPING is not a valid configuration parameter for Django.', 'STATIC_URL should be set to a valid URL or path.', "YEAR_MONTH_FORMAT should be in a valid format like 'F Y'.", 'CSRF_COOKIE_NAME should be a valid name for the CSRF cookie.', "SESSION_COOKIE_SAMESITE should be set to 'Strict', 'Lax', or 'None'.", 'CSRF_COOKIE_AGE should be set in seconds, not in a calculation.', 'LOGOUT_REDIRECT_URL should be set to a valid URL.', 'LANGUAGE_COOKIE_PATH should be set to a valid path.']}
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'YEAR_MONTH_FORMAT', 'CSRF_COOKIE_AGE', 'LOGOUT_REDIRECT_URL'], 'reason': ['NUMBER_GROUPING is not a valid configuration parameter for Django.', "YEAR_MONTH_FORMAT should be in the format 'F Y'.", 'CSRF_COOKIE_AGE should be a numerical value without calculations.', 'LOGOUT_REDIRECT_URL should be a valid URL or path.']}
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'YEAR_MONTH_FORMAT', 'CSRF_COOKIE_AGE', 'LOGOUT_REDIRECT_URL'], 'reason': ['NUMBER_GROUPING is not a valid configuration parameter for Django.', "YEAR_MONTH_FORMAT should be in the format 'F Y' for Django 4.0.", 'CSRF_COOKIE_AGE should not be calculated in the configuration file directly.', 'LOGOUT_REDIRECT_URL should not be set to None.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: NUMBER_GROUPING	YEAR_MONTH_FORMAT	CSRF_COOKIE_AGE	LOGOUT_REDIRECT_URL
+[Ciri] Reason for NUMBER_GROUPING: NUMBER_GROUPING is not a valid configuration parameter for Django.
+[Ciri] Reason for YEAR_MONTH_FORMAT: YEAR_MONTH_FORMAT should be in the format 'F Y' for Django 4.0.
+[Ciri] Reason for CSRF_COOKIE_AGE: CSRF_COOKIE_AGE should not be calculated in the configuration file directly.
+[Ciri] Reason for LOGOUT_REDIRECT_URL: LOGOUT_REDIRECT_URL should not be set to None.

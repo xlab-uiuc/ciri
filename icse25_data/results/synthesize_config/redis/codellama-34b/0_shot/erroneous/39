@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-policy', 'maxmemory-samples', 'repl-diskless-sync-delay', 'repl-diskless-sync-delay', 'repl-diskless-load', 'auto-aof-rewrite-percentage', 'replica-announce-port', 'hash-max-listpack-value'], 'reason': ['Invalid value for maxmemory-policy. It must be one of: noeviction, allkeys-lru, allkeys-random, volatile-lru, volatile-random, volatile-ttl', 'Invalid value for maxmemory-samples. It must be a positive integer', 'Invalid value for repl-diskless-sync-delay. It must be a positive integer', 'Invalid value for repl-diskless-sync-delay. It must be a positive integer', 'Invalid value for repl-diskless-load. It must be one of: disabled, swapdb', 'Invalid value for auto-aof-rewrite-percentage. It must be a positive integer', 'Invalid value for replica-announce-port. It must be a positive integer', 'Invalid value for hash-max-listpack-value. It must be a positive integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: maxmemory-policy	maxmemory-samples	repl-diskless-sync-delay	repl-diskless-sync-delay	repl-diskless-load	auto-aof-rewrite-percentage	replica-announce-port	hash-max-listpack-value
+[Ciri] Reason for maxmemory-policy: Invalid value for maxmemory-policy. It must be one of: noeviction, allkeys-lru, allkeys-random, volatile-lru, volatile-random, volatile-ttl
+[Ciri] Reason for maxmemory-samples: Invalid value for maxmemory-samples. It must be a positive integer
+[Ciri] Reason for repl-diskless-sync-delay: Invalid value for repl-diskless-sync-delay. It must be a positive integer
+[Ciri] Reason for repl-diskless-sync-delay: Invalid value for repl-diskless-sync-delay. It must be a positive integer
+[Ciri] Reason for repl-diskless-load: Invalid value for repl-diskless-load. It must be one of: disabled, swapdb
+[Ciri] Reason for auto-aof-rewrite-percentage: Invalid value for auto-aof-rewrite-percentage. It must be a positive integer
+[Ciri] Reason for replica-announce-port: Invalid value for replica-announce-port. It must be a positive integer
+[Ciri] Reason for hash-max-listpack-value: Invalid value for hash-max-listpack-value. It must be a positive integer

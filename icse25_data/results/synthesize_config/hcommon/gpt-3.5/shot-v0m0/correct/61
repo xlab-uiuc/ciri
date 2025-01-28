@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].decay-scheduler.decay-factor', 'hadoop.ssl.enabled'], 'reason': ["Parameter name contains placeholder '[port_number]' which should be replaced with an actual port number.", "Deprecated parameter 'hadoop.ssl.enabled' should be replaced with 'dfs.http.policy' and 'yarn.http.policy'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].decay-scheduler.decay-factor	hadoop.ssl.enabled
+[Ciri] Reason for ipc.[port_number].decay-scheduler.decay-factor: Parameter name contains placeholder '[port_number]' which should be replaced with an actual port number.
+[Ciri] Reason for hadoop.ssl.enabled: Deprecated parameter 'hadoop.ssl.enabled' should be replaced with 'dfs.http.policy' and 'yarn.http.policy'.

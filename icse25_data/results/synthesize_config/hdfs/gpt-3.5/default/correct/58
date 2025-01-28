@@ -1,0 +1,19 @@
+Wrong shot number:
+[3, 2, 8]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.heartbeat.interval', 'dfs.namenode.invalidate.work.pct.per.iteration'], 'reason': ["The property 'dfs.heartbeat.interval' has the value '1s' which uses an incorrect unit.", "The property 'dfs.namenode.invalidate.work.pct.per.iteration' has the value '0.32f' which is not in the correct float notation format."]}
+
+{'hasError': True, 'errParameter': ['dfs.heartbeat.interval', 'dfs.namenode.invalidate.work.pct.per.iteration'], 'reason': ["The property 'dfs.heartbeat.interval' has the value '1s' which uses an incorrect unit.", "The property 'dfs.namenode.invalidate.work.pct.per.iteration' has the value '0.32f' which is not a valid percentage format."]}
+
+{'hasError': True, 'errParameter': ['dfs.heartbeat.interval', 'dfs.namenode.invalidate.work.pct.per.iteration'], 'reason': ["The property 'dfs.heartbeat.interval' has the value '1s' which uses an incorrect unit.", "The property 'dfs.namenode.invalidate.work.pct.per.iteration' has the value '0.32f' which is not in the correct float notation format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.heartbeat.interval	dfs.namenode.invalidate.work.pct.per.iteration
+[Ciri] Reason for dfs.heartbeat.interval: The property 'dfs.heartbeat.interval' has the value '1s' which uses an incorrect unit.
+[Ciri] Reason for dfs.namenode.invalidate.work.pct.per.iteration: The property 'dfs.namenode.invalidate.work.pct.per.iteration' has the value '0.32f' which is not in the correct float notation format.

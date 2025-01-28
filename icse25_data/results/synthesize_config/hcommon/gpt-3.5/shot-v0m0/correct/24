@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.trash.interval', 'fs.viewfs.rename.strategy', 'hadoop.caller.context.signature.max.size'], 'reason': ["The value for 'hadoop.service.shutdown.timeout' should be specified in milliseconds rather than '60s'.", "The 'fs.trash.interval' value should be specified in minutes, but it is set to '1'.", 'The \'fs.viewfs.rename.strategy\' value \'SAME_MOUNTPOINT\' is correct, but the usage of \'xmlPropsToSkipCompare.add("fs.viewfs.rename.strategy");\' is not a valid description.', "The 'hadoop.caller.context.signature.max.size' value '40' is correct, but the description is not properly formatted."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.trash.interval	fs.viewfs.rename.strategy	hadoop.caller.context.signature.max.size
+[Ciri] Reason for hadoop.service.shutdown.timeout: The value for 'hadoop.service.shutdown.timeout' should be specified in milliseconds rather than '60s'.
+[Ciri] Reason for fs.trash.interval: The 'fs.trash.interval' value should be specified in minutes, but it is set to '1'.
+[Ciri] Reason for fs.viewfs.rename.strategy: The 'fs.viewfs.rename.strategy' value 'SAME_MOUNTPOINT' is correct, but the usage of 'xmlPropsToSkipCompare.add("fs.viewfs.rename.strategy");' is not a valid description.
+[Ciri] Reason for hadoop.caller.context.signature.max.size: The 'hadoop.caller.context.signature.max.size' value '40' is correct, but the description is not properly formatted.

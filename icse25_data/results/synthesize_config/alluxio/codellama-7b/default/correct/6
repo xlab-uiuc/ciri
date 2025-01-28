@@ -1,0 +1,18 @@
+Wrong shot number:
+[7, 11, 12]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.master.client.pool.size.min'], 'reason': ["The value of the property 'alluxio.user.block.master.client.pool.size.min' should be greater than or equal to 0."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.master.polling.timeout'], 'reason': ["The property 'alluxio.user.master.polling.timeout' has the value '30sec' which is not within the accepted value {1,2,5,10,15,30,60,120,300,600,900,1800,3600}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.master.polling.timeout'], 'reason': ["The value of the property 'alluxio.user.master.polling.timeout' should be greater than or equal to the value of the property 'alluxio.user.network.rpc.keepalive.timeout'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.master.polling.timeout
+[Ciri] Reason for alluxio.user.master.polling.timeout: The value of the property 'alluxio.user.master.polling.timeout' should be greater than or equal to the value of the property 'alluxio.user.network.rpc.keepalive.timeout'.

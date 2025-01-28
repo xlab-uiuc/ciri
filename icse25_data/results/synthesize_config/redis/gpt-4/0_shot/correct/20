@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port', 'enable-protected-configs', 'set-max-intset-entries'], 'reason': ["The 'tls-port' configuration is not a standard Redis configuration parameter. For TLS support, configurations start with 'tls-' but 'tls-port' specifically is not recognized.", "The 'enable-protected-configs' configuration is not a recognized Redis configuration parameter. It seems to be incorrect or misspelled.", "The correct configuration for setting the maximum number of entries in the intset encoding is 'set-max-intset-entries', but it must be used with caution and understanding of its implications on memory usage and performance."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tls-port	enable-protected-configs	set-max-intset-entries
+[Ciri] Reason for tls-port: The 'tls-port' configuration is not a standard Redis configuration parameter. For TLS support, configurations start with 'tls-' but 'tls-port' specifically is not recognized.
+[Ciri] Reason for enable-protected-configs: The 'enable-protected-configs' configuration is not a recognized Redis configuration parameter. It seems to be incorrect or misspelled.
+[Ciri] Reason for set-max-intset-entries: The correct configuration for setting the maximum number of entries in the intset encoding is 'set-max-intset-entries', but it must be used with caution and understanding of its implications on memory usage and performance.

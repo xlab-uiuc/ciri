@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.worker.network.async.cache.manager.queue.max', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ["alluxio.job.master.web.bind.host should be a valid IP address, but '2.2.2.2.2.2' is not a valid IP address.", "alluxio.worker.network.async.cache.manager.queue.max should be a power of 2, but '512' is not.", "alluxio.user.network.rpc.max.inbound.message.size should use a valid size unit (B, KB, MB, GB, TB), but '1MB' is not a valid unit. It should be '1MB'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.web.bind.host	alluxio.worker.network.async.cache.manager.queue.max	alluxio.user.network.rpc.max.inbound.message.size
+[Ciri] Reason for alluxio.job.master.web.bind.host: alluxio.job.master.web.bind.host should be a valid IP address, but '2.2.2.2.2.2' is not a valid IP address.
+[Ciri] Reason for alluxio.worker.network.async.cache.manager.queue.max: alluxio.worker.network.async.cache.manager.queue.max should be a power of 2, but '512' is not.
+[Ciri] Reason for alluxio.user.network.rpc.max.inbound.message.size: alluxio.user.network.rpc.max.inbound.message.size should use a valid size unit (B, KB, MB, GB, TB), but '1MB' is not a valid unit. It should be '1MB'.

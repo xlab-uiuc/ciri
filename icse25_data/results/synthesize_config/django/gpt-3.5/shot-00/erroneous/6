@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['WSGI_APPLICATION', 'SECURE_REFERRER_POLICY', 'STATICFILES_STORAGE', 'FILE_UPLOAD_PERMISSIONS', 'PASSWORD_RESET_TIMEOUT'], 'reason': ['WSGI_APPLICATION should be set to the WSGI application callable for the project.', "SECURE_REFERRER_POLICY value should be one of 'no-referrer', 'no-referrer-when-downgrade', 'same-origin', 'origin', 'strict-origin', 'origin-when-cross-origin', 'strict-origin-when-cross-origin', or 'unsafe-url'.", 'STATICFILES_STORAGE should be set to a valid storage class for static files.', 'FILE_UPLOAD_PERMISSIONS should be set as an octal number (e.g., 0o644 for rw-r--r--).', 'PASSWORD_RESET_TIMEOUT value should be an integer representing the number of seconds.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: WSGI_APPLICATION	SECURE_REFERRER_POLICY	STATICFILES_STORAGE	FILE_UPLOAD_PERMISSIONS	PASSWORD_RESET_TIMEOUT
+[Ciri] Reason for WSGI_APPLICATION: WSGI_APPLICATION should be set to the WSGI application callable for the project.
+[Ciri] Reason for SECURE_REFERRER_POLICY: SECURE_REFERRER_POLICY value should be one of 'no-referrer', 'no-referrer-when-downgrade', 'same-origin', 'origin', 'strict-origin', 'origin-when-cross-origin', 'strict-origin-when-cross-origin', or 'unsafe-url'.
+[Ciri] Reason for STATICFILES_STORAGE: STATICFILES_STORAGE should be set to a valid storage class for static files.
+[Ciri] Reason for FILE_UPLOAD_PERMISSIONS: FILE_UPLOAD_PERMISSIONS should be set as an octal number (e.g., 0o644 for rw-r--r--).
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: PASSWORD_RESET_TIMEOUT value should be an integer representing the number of seconds.

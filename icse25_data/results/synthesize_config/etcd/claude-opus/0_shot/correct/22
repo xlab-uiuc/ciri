@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['discovery-fallback', 'enable-v2', 'max-snapshots', 'auto-compaction-retention', 'snapshot-count', 'max-wals'], 'reason': ['discovery-fallback is not a valid configuration parameter for etcd v3.5.0', 'enable-v2 is not a valid configuration parameter for etcd v3.5.0. The v2 API is not supported in v3.5.0+', 'max-snapshots is not a valid configuration parameter for etcd v3.5.0. Use snapshot-count instead', "auto-compaction-retention must be a duration string (e.g. '5m') or 0 to disable, but 3 is an invalid value", 'snapshot-count is deprecated in v3.5.0+. Use max-snapshots instead', 'max-wals is not a valid configuration parameter for etcd v3.5.0']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: discovery-fallback	enable-v2	max-snapshots	auto-compaction-retention	snapshot-count	max-wals
+[Ciri] Reason for discovery-fallback: discovery-fallback is not a valid configuration parameter for etcd v3.5.0
+[Ciri] Reason for enable-v2: enable-v2 is not a valid configuration parameter for etcd v3.5.0. The v2 API is not supported in v3.5.0+
+[Ciri] Reason for max-snapshots: max-snapshots is not a valid configuration parameter for etcd v3.5.0. Use snapshot-count instead
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention must be a duration string (e.g. '5m') or 0 to disable, but 3 is an invalid value
+[Ciri] Reason for snapshot-count: snapshot-count is deprecated in v3.5.0+. Use max-snapshots instead
+[Ciri] Reason for max-wals: max-wals is not a valid configuration parameter for etcd v3.5.0

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.kv.max', 'hbase.snapshot.working.dir'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.hstore.compaction.kv.max'.", "The value '/valid/dir1' for property 'hbase.snapshot.working.dir' should be a valid directory path."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.kv.max', 'hbase.snapshot.working.dir'], 'reason': ['The property \'hbase.hstore.compaction.kv.max\' has an incorrect usage tag \'UTIL.getConfiguration().set("hbase.hstore.compaction.kv.max", "10");\'. Remove the usage tag as it is not valid in the configuration file.', "The property 'hbase.snapshot.working.dir' has an invalid value '/valid/dir1'. The value should be a valid directory path on the filesystem."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.kv.max', 'hbase.snapshot.working.dir'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.hstore.compaction.kv.max'.", "The value '/valid/dir1' for 'hbase.snapshot.working.dir' should be a valid directory path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.hstore.compaction.kv.max	hbase.snapshot.working.dir
+[Ciri] Reason for hbase.hstore.compaction.kv.max: The 'usage' tag is not a valid tag for property 'hbase.hstore.compaction.kv.max'.
+[Ciri] Reason for hbase.snapshot.working.dir: The value '/valid/dir1' for 'hbase.snapshot.working.dir' should be a valid directory path.

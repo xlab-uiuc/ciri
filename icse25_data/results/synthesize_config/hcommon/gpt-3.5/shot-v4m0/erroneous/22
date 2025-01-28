@@ -1,0 +1,12 @@
+Correct shot number:
+[10, 15, 1, 14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'hadoop.caller.context.signature.max.size'], 'reason': ['Invalid value format. Port number must be a positive integer.', "The value exceeds the maximum allowed bytes for the caller's signature."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host.port	hadoop.caller.context.signature.max.size
+[Ciri] Reason for fs.ftp.host.port: Invalid value format. Port number must be a positive integer.
+[Ciri] Reason for hadoop.caller.context.signature.max.size: The value exceeds the maximum allowed bytes for the caller's signature.

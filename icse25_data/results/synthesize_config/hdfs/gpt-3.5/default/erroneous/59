@@ -1,0 +1,18 @@
+Wrong shot number:
+[7, 5, 16]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.max.objects'], 'reason': ["The property 'dfs.namenode.max.objects' has the value '1' which is not a realistic value for the maximum number of files, directories, and blocks that HDFS supports."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.max.objects'], 'reason': ["The property 'dfs.namenode.max.objects' has the value '1' which seems to be too low for the maximum number of files, directories, and blocks that HDFS supports. It might cause issues when the system reaches its limit."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.max.objects'], 'reason': ["The property 'dfs.namenode.max.objects' has the value '1' which seems unusually low for the maximum number of files, directories, and blocks that HDFS supports. It may cause issues if set too low."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.max.objects
+[Ciri] Reason for dfs.namenode.max.objects: The property 'dfs.namenode.max.objects' has the value '1' which seems to be too low for the maximum number of files, directories, and blocks that HDFS supports. It might cause issues when the system reaches its limit.

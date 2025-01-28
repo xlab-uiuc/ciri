@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.connections=0', 'alluxio.user.file.sequential.pread.threshold=4MB', 'alluxio.master.rpc.executor.core.pool.size=250'], 'reason': ['alluxio.user.network.rpc.max.connections=0 is not a valid configuration property in Alluxio 2.5.0. The correct property is alluxio.user.rpc.max.connections.', 'alluxio.user.file.sequential.pread.threshold=4MB is not a valid configuration property in Alluxio 2.5.0. The correct property is alluxio.user.file.readtype.default.', 'alluxio.master.rpc.executor.core.pool.size=250 is not a valid configuration property in Alluxio 2.5.0. The correct property is alluxio.master.rpc.executor.max.pool.size.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.user.network.rpc.max.connections=0	alluxio.user.file.sequential.pread.threshold=4MB	alluxio.master.rpc.executor.core.pool.size=250
+[Ciri] Reason for alluxio.user.network.rpc.max.connections=0: alluxio.user.network.rpc.max.connections=0 is not a valid configuration property in Alluxio 2.5.0. The correct property is alluxio.user.rpc.max.connections.
+[Ciri] Reason for alluxio.user.file.sequential.pread.threshold=4MB: alluxio.user.file.sequential.pread.threshold=4MB is not a valid configuration property in Alluxio 2.5.0. The correct property is alluxio.user.file.readtype.default.
+[Ciri] Reason for alluxio.master.rpc.executor.core.pool.size=250: alluxio.master.rpc.executor.core.pool.size=250 is not a valid configuration property in Alluxio 2.5.0. The correct property is alluxio.master.rpc.executor.max.pool.size.

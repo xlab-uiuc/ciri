@@ -1,0 +1,12 @@
+Correct shot number:
+[5, 12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'ftp.stream-buffer-size'], 'reason': ["The value for 'fs.ftp.host' parameter seems to have too many segments in the IP address.", "The value for 'ftp.stream-buffer-size' parameter should be a multiple of the hardware page size (4096 on Intel x86)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host	ftp.stream-buffer-size
+[Ciri] Reason for fs.ftp.host: The value for 'fs.ftp.host' parameter seems to have too many segments in the IP address.
+[Ciri] Reason for ftp.stream-buffer-size: The value for 'ftp.stream-buffer-size' parameter should be a multiple of the hardware page size (4096 on Intel x86).

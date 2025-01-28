@@ -1,0 +1,19 @@
+Wrong shot number:
+[11, 7, 9]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hfile.block.cache.size'], 'reason': ["The property 'hbase.regionserver.info.port' has an invalid value 'ciri'. It should be a valid port number or -1 to disable the RegionServer UI.", "The value of the property 'hfile.block.cache.size' should be a float value between 0 and 1."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hfile.block.cache.size'], 'reason': ["The property 'hbase.regionserver.info.port' has a non-integer value 'ciri' which is invalid for a port number.", "The value of the property 'hfile.block.cache.size' should be a float between 0 and 1."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hfile.block.cache.size'], 'reason': ["The property 'hbase.regionserver.info.port' has a non-numeric value 'ciri' which is invalid. It should be a numeric port value.", "The value of the property 'hfile.block.cache.size' should be a decimal number between 0 and 1."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.info.port	hfile.block.cache.size
+[Ciri] Reason for hbase.regionserver.info.port: The property 'hbase.regionserver.info.port' has a non-numeric value 'ciri' which is invalid. It should be a numeric port value.
+[Ciri] Reason for hfile.block.cache.size: The value of the property 'hfile.block.cache.size' should be a decimal number between 0 and 1.

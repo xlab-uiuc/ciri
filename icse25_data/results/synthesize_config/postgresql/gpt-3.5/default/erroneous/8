@@ -1,0 +1,20 @@
+Wrong shot number:
+[3, 1, 8]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ["The property 'bgwriter_delay' has the value '128NS' which is not in the correct format for time intervals.", "The property 'max_pred_locks_per_relation' has the value '-2' which should be a positive integer.", "The property 'log_min_duration_sample' has the value '-2' which should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ["The property 'bgwriter_delay' has the value '128NS' which is not in the correct format. It should be specified in milliseconds.", "The property 'max_pred_locks_per_relation' has the value '-2' which should be a positive integer.", "The property 'log_min_duration_sample' has the value '-2' which should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ["The property 'bgwriter_delay' has the value '128NS' which is not in the correct format. It should be specified in milliseconds.", "The property 'max_pred_locks_per_relation' has the value '-2' which should be a positive integer.", "The property 'log_min_duration_sample' has the value '-2' which should be a positive integer."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: bgwriter_delay	max_pred_locks_per_relation	log_min_duration_sample
+[Ciri] Reason for bgwriter_delay: The property 'bgwriter_delay' has the value '128NS' which is not in the correct format. It should be specified in milliseconds.
+[Ciri] Reason for max_pred_locks_per_relation: The property 'max_pred_locks_per_relation' has the value '-2' which should be a positive integer.
+[Ciri] Reason for log_min_duration_sample: The property 'log_min_duration_sample' has the value '-2' which should be a positive integer.

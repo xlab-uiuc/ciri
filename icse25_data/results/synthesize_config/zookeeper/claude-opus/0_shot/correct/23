@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'quorum.auth.learner.saslLoginContext'], 'reason': ['In ZooKeeper 3.7.0, the autopurge.purgeInterval parameter has been deprecated and replaced with autopurge.snapRetainCount and autopurge.purgeInterval. Set these parameters instead.', 'The quorum.auth.learner.saslLoginContext parameter is not a valid configuration in ZooKeeper 3.7.0. This parameter was used in older versions for SASL authentication of learners. In 3.7.0, use the quorum.auth.enableSasl parameter to enable SASL authentication.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autopurge.purgeInterval	quorum.auth.learner.saslLoginContext
+[Ciri] Reason for autopurge.purgeInterval: In ZooKeeper 3.7.0, the autopurge.purgeInterval parameter has been deprecated and replaced with autopurge.snapRetainCount and autopurge.purgeInterval. Set these parameters instead.
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: The quorum.auth.learner.saslLoginContext parameter is not a valid configuration in ZooKeeper 3.7.0. This parameter was used in older versions for SASL authentication of learners. In 3.7.0, use the quorum.auth.enableSasl parameter to enable SASL authentication.

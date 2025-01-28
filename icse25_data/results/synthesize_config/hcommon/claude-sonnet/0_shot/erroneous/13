@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].weighted-cost.lockshared', 'hadoop.security.kms.client.encrypted.key.cache.low-watermark'], 'reason': ["The property 'fs.default.name' is deprecated in Hadoop 3.3.0 and should be replaced with 'fs.defaultFS'.", "The property 'ipc.[port_number].weighted-cost.lockshared' is not a valid property in Hadoop 3.3.0. It seems to be related to an older version of Hadoop.", "The value '0.3f' for the property 'hadoop.security.kms.client.encrypted.key.cache.low-watermark' is invalid. It should be a floating-point number without the 'f' suffix."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.default.name	ipc.[port_number].weighted-cost.lockshared	hadoop.security.kms.client.encrypted.key.cache.low-watermark
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' is deprecated in Hadoop 3.3.0 and should be replaced with 'fs.defaultFS'.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: The property 'ipc.[port_number].weighted-cost.lockshared' is not a valid property in Hadoop 3.3.0. It seems to be related to an older version of Hadoop.
+[Ciri] Reason for hadoop.security.kms.client.encrypted.key.cache.low-watermark: The value '0.3f' for the property 'hadoop.security.kms.client.encrypted.key.cache.low-watermark' is invalid. It should be a floating-point number without the 'f' suffix.

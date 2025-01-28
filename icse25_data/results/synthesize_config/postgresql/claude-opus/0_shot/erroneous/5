@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'max_slot_wal_keep_size', 'recovery_prefetch'], 'reason': ["The value for shared_buffers should be specified in KB, MB, or GB, not 'mm'.", 'The value for max_slot_wal_keep_size cannot be negative. It should be a non-negative integer or -1 for no limit.', "The value for recovery_prefetch should be one of 'off', 'on', or 'try', not 'true'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: shared_buffers	max_slot_wal_keep_size	recovery_prefetch
+[Ciri] Reason for shared_buffers: The value for shared_buffers should be specified in KB, MB, or GB, not 'mm'.
+[Ciri] Reason for max_slot_wal_keep_size: The value for max_slot_wal_keep_size cannot be negative. It should be a non-negative integer or -1 for no limit.
+[Ciri] Reason for recovery_prefetch: The value for recovery_prefetch should be one of 'off', 'on', or 'try', not 'true'.

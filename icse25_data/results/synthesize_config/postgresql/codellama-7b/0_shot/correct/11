@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_insert_scale_factor', 'wal_skip_threshold'], 'reason': ['The value of autovacuum_vacuum_insert_scale_factor must be between 0.0 and 100.0, inclusive.', 'The value of wal_skip_threshold must be between 0 and 1GB, inclusive.']}
+
+{'hasError': True, 'errParameter': ['data_sync_retry'], 'reason': ["Invalid value for parameter 'data_sync_retry'.\nExpected: boolean, got: off"]}
+
+{'hasError': True, 'errParameter': ['archive_command', 'archive_mode', 'archive_timeout', 'autovacuum_vacuum_insert_scale_factor', 'data_sync_retry', 'max_stack_depth', 'recovery_target_inclusive', 'wal_skip_threshold'], 'reason': ['archive_command must be a string', 'archive_mode must be a string', 'archive_timeout must be a positive integer', 'autovacuum_vacuum_insert_scale_factor must be a positive float', 'data_sync_retry must be a boolean', 'max_stack_depth must be a positive integer', 'recovery_target_inclusive must be a boolean', 'wal_skip_threshold must be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['data_sync_retry'], 'reason': ['The parameter data_sync_retry is not supported in postgresql version 13.0.']}
+
+{'hasError': True, 'errParameter': ['wal_keep_segments'], 'reason': ['wal_keep_segments must be an integer greater than 0.']}
+
+{'hasError': True, 'errParameter': ['data_sync_retry'], 'reason': ['The parameter data_sync_retry is not supported in PostgreSQL version 13.0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: data_sync_retry
+[Ciri] Reason for data_sync_retry: The parameter data_sync_retry is not supported in PostgreSQL version 13.0

@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.enabled', 'alluxio.job.master.client.threads', 'alluxio.web.refresh.interval', 'alluxio.web.file.info.enabled', 'alluxio.job.master.finished.job.purge.count'], 'reason': ['alluxio.master.daily.backup.enabled is not a boolean', 'alluxio.job.master.client.threads is not a positive integer', 'alluxio.web.refresh.interval is not a duration', 'alluxio.web.file.info.enabled is not a boolean', 'alluxio.job.master.finished.job.purge.count is not a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.netty.channel'], 'reason': ['alluxio.user.network.netty.channel should be one of [NIO, EPOLL, KQUEUE]']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.enabled', 'alluxio.job.master.client.threads', 'alluxio.web.refresh.interval', 'alluxio.web.file.info.enabled', 'alluxio.job.master.finished.job.purge.count'], 'reason': ['alluxio.master.daily.backup.enabled is not a boolean property', 'alluxio.job.master.client.threads is not a positive integer', 'alluxio.web.refresh.interval is not a duration', 'alluxio.web.file.info.enabled is not a boolean property', 'alluxio.job.master.finished.job.purge.count is not a positive integer']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.master.daily.backup.enabled	alluxio.job.master.client.threads	alluxio.web.refresh.interval	alluxio.web.file.info.enabled	alluxio.job.master.finished.job.purge.count
+[Ciri] Reason for alluxio.master.daily.backup.enabled: alluxio.master.daily.backup.enabled is not a boolean property
+[Ciri] Reason for alluxio.job.master.client.threads: alluxio.job.master.client.threads is not a positive integer
+[Ciri] Reason for alluxio.web.refresh.interval: alluxio.web.refresh.interval is not a duration
+[Ciri] Reason for alluxio.web.file.info.enabled: alluxio.web.file.info.enabled is not a boolean
+[Ciri] Reason for alluxio.job.master.finished.job.purge.count: alluxio.job.master.finished.job.purge.count is not a positive integer

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.hostname', 'yarn.resourcemanager.delegation.token.max-lifetime'], 'reason': ["The value '0.0.0.0' for 'yarn.resourcemanager.hostname' is not recommended as it can cause issues with certain services. It is better to use the actual hostname or IP address of the ResourceManager.", "The value '1209600000' (14 days) for 'yarn.resourcemanager.delegation.token.max-lifetime' is too high and can lead to security vulnerabilities. The recommended value is 7 days (604800000 ms) or less."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.hostname	yarn.resourcemanager.delegation.token.max-lifetime
+[Ciri] Reason for yarn.resourcemanager.hostname: The value '0.0.0.0' for 'yarn.resourcemanager.hostname' is not recommended as it can cause issues with certain services. It is better to use the actual hostname or IP address of the ResourceManager.
+[Ciri] Reason for yarn.resourcemanager.delegation.token.max-lifetime: The value '1209600000' (14 days) for 'yarn.resourcemanager.delegation.token.max-lifetime' is too high and can lead to security vulnerabilities. The recommended value is 7 days (604800000 ms) or less.

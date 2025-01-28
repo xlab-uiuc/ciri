@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hfile.block.cache.size</name>
+  <value>0.8</value>
+    <description>Percentage of maximum heap (-Xmx setting) to allocate to block cache
+        used by a StoreFile. Default of 0.4 means allocate 40%.
+        Set to 0 to disable but it's not recommended; you need at least
+        enough cache to hold the storefile indices.</description>
+</property>
+
+<property>
+  <name>hbase.rpc.timeout</name>
+  <value>120000</value>
+    <description>This is for the RPC layer to define how long (millisecond) HBase client applications
+        take for a remote call to time out. It uses pings to check connections
+        but will eventually throw a TimeoutException.</description>
+</property>
+
+<property>
+  <name>hbase.rest.threads.min</name>
+  <value>2</value>
+    <description>The minimum number of threads of the REST server thread pool.
+        The thread pool always has at least these number of threads so
+        the REST server is ready to serve incoming requests.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.maxQueuedRequests</name>
+  <value>500</value>
+    <description>The maximum number of pending Thrift connections waiting in the queue. If
+     there are no idle threads in the pool, the server queues requests. Only
+     when the queue overflows, new threads are added, up to
+     hbase.thrift.maxQueuedRequests threads.</description>
+</property>
+
+<property>
+  <name>hbase.data.umask</name>
+  <value>888</value>
+    <description>File permissions that should be used to write data
+      files when hbase.data.umask.enable is true</description>
+</property>
+
+<property>
+  <name>hbase.rest.filter.classes</name>
+  <value>org.apache.hadoop.hbase.rest.filter.GzipFilter</value>
+    <description>
+      Servlet filters for REST service.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest.csrf.enabled</name>
+  <value>false</value>
+  <description>
+    Set to true to enable protection against cross-site request forgery (CSRF)
+	</description>
+</property>
+
+<property>
+  <name>hbase.mob.compaction.chore.period</name>
+  <value>604800</value>
+    <description>
+      The period that MobCompactionChore runs. The unit is second.
+      The default value is one week.
+    </description>
+</property>
+
+</configuration>

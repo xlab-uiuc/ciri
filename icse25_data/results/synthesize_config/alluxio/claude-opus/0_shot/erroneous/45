@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.default.mode', 'alluxio.user.network.rpc.netty.worker.threads'], 'reason': ['The value 999 for alluxio.underfs.s3.default.mode is invalid. It should be a valid POSIX mode in octal notation, e.g., 0777.', 'The value 1 for alluxio.user.network.rpc.netty.worker.threads is too low. It is recommended to set it to a value greater than or equal to 4 for better performance.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.s3.default.mode	alluxio.user.network.rpc.netty.worker.threads
+[Ciri] Reason for alluxio.underfs.s3.default.mode: The value 999 for alluxio.underfs.s3.default.mode is invalid. It should be a valid POSIX mode in octal notation, e.g., 0777.
+[Ciri] Reason for alluxio.user.network.rpc.netty.worker.threads: The value 1 for alluxio.user.network.rpc.netty.worker.threads is too low. It is recommended to set it to a value greater than or equal to 4 for better performance.

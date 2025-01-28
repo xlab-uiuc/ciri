@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'hadoop.security.key.provider.path'], 'reason': ["The property 'fs.default.name' is deprecated in Hadoop 3.3.0 and should be replaced with 'fs.defaultFS'.", "The value '/valid/file1' for the property 'hadoop.security.key.provider.path' is not a valid path. It should be a valid URI or file path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	hadoop.security.key.provider.path
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' is deprecated in Hadoop 3.3.0 and should be replaced with 'fs.defaultFS'.
+[Ciri] Reason for hadoop.security.key.provider.path: The value '/valid/file1' for the property 'hadoop.security.key.provider.path' is not a valid path. It should be a valid URI or file path.

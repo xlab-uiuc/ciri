@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.s3guard.consistency.retry.interval', 'fs.s3a.select.input.csv.quote.escape.character', 'hadoop.http.authentication.kerberos.keytab', 'ha.failover-controller.cli-check.rpc-timeout.ms'], 'reason': ["Value '10nounit' for property 'hadoop.service.shutdown.timeout' should include a valid unit (e.g., '10s' for 10 seconds).", "Value '2s' for property 'fs.s3a.s3guard.consistency.retry.interval' should include a valid unit (e.g., '2ms' for 2 milliseconds).", "Value '\\\\' for property 'fs.s3a.select.input.csv.quote.escape.character' should be escaped as '\\\\\\\\'.", "Value '/valid/file2' for property 'hadoop.http.authentication.kerberos.keytab' should be a valid file path.", "Value '20000' for property 'ha.failover-controller.cli-check.rpc-timeout.ms' should include a valid unit (e.g., '20000ms' for 20000 milliseconds)."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.s3a.s3guard.consistency.retry.interval	fs.s3a.select.input.csv.quote.escape.character	hadoop.http.authentication.kerberos.keytab	ha.failover-controller.cli-check.rpc-timeout.ms
+[Ciri] Reason for hadoop.service.shutdown.timeout: Value '10nounit' for property 'hadoop.service.shutdown.timeout' should include a valid unit (e.g., '10s' for 10 seconds).
+[Ciri] Reason for fs.s3a.s3guard.consistency.retry.interval: Value '2s' for property 'fs.s3a.s3guard.consistency.retry.interval' should include a valid unit (e.g., '2ms' for 2 milliseconds).
+[Ciri] Reason for fs.s3a.select.input.csv.quote.escape.character: Value '\\' for property 'fs.s3a.select.input.csv.quote.escape.character' should be escaped as '\\\\'.
+[Ciri] Reason for hadoop.http.authentication.kerberos.keytab: Value '/valid/file2' for property 'hadoop.http.authentication.kerberos.keytab' should be a valid file path.
+[Ciri] Reason for ha.failover-controller.cli-check.rpc-timeout.ms: Value '20000' for property 'ha.failover-controller.cli-check.rpc-timeout.ms' should include a valid unit (e.g., '20000ms' for 20000 milliseconds).

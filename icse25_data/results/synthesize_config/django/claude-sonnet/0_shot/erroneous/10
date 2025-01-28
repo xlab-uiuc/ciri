@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'WSGI_APPLICATION', 'MIDDLEWARE', 'MANAGERS', 'USE_I18N'], 'reason': ["LOGIN_REDIRECT_URL should not start with 'file://' as it is a security risk and can lead to directory traversal attacks.", "WSGI_APPLICATION cannot be set to None. It should be set to the Python path of the WSGI application object that Django's built-in servers will use.", 'MIDDLEWARE cannot be an empty list. It should contain a list of middleware classes to be used by Django.', 'MANAGERS should not be set to ADMINS. ADMINS is a list of tuples containing the names and email addresses of site administrators. MANAGERS is a separate setting for a list of people who get code error notifications.', "USE_I18N should not be set to False unless you have a specific reason for disabling Django's translation system."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: LOGIN_REDIRECT_URL	WSGI_APPLICATION	MIDDLEWARE	MANAGERS	USE_I18N
+[Ciri] Reason for LOGIN_REDIRECT_URL: LOGIN_REDIRECT_URL should not start with 'file://' as it is a security risk and can lead to directory traversal attacks.
+[Ciri] Reason for WSGI_APPLICATION: WSGI_APPLICATION cannot be set to None. It should be set to the Python path of the WSGI application object that Django's built-in servers will use.
+[Ciri] Reason for MIDDLEWARE: MIDDLEWARE cannot be an empty list. It should contain a list of middleware classes to be used by Django.
+[Ciri] Reason for MANAGERS: MANAGERS should not be set to ADMINS. ADMINS is a list of tuples containing the names and email addresses of site administrators. MANAGERS is a separate setting for a list of people who get code error notifications.
+[Ciri] Reason for USE_I18N: USE_I18N should not be set to False unless you have a specific reason for disabling Django's translation system.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[1]
+
+Correct shot number:
+[14, 3, 12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'fs.AbstractFileSystem.wasbs.impl', 'ftp.replication', 's3.replication', 'ha.zookeeper.parent-znode', 'hadoop.ssl.server.conf'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an additional 'usage' tag which is not a valid property element.", "The property 'fs.AbstractFileSystem.wasbs.impl' has an additional 'usage' tag which is not a valid property element.", "The property 'ftp.replication' has an additional 'usage' tag which is not a valid property element.", "The property 's3.replication' has an additional 'usage' tag which is not a valid property element.", "The property 'ha.zookeeper.parent-znode' has an additional 'usage' tag which is not a valid property element.", "The property 'hadoop.ssl.server.conf' has an additional 'usage' tag which is not a valid property element."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.ftp.data.connection.mode	fs.AbstractFileSystem.wasbs.impl	ftp.replication	s3.replication	ha.zookeeper.parent-znode	hadoop.ssl.server.conf
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for fs.AbstractFileSystem.wasbs.impl: The property 'fs.AbstractFileSystem.wasbs.impl' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for ftp.replication: The property 'ftp.replication' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for s3.replication: The property 's3.replication' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for ha.zookeeper.parent-znode: The property 'ha.zookeeper.parent-znode' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for hadoop.ssl.server.conf: The property 'hadoop.ssl.server.conf' has an additional 'usage' tag which is not a valid property element.

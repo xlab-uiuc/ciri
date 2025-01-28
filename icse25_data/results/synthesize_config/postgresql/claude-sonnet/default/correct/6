@@ -1,0 +1,16 @@
+Wrong shot number:
+[7, 3, 4]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_failsafe_age', 'vacuum_freeze_table_age', "from standby(s); '*'=all"], 'reason': ["The property 'vacuum_failsafe_age' has the value '1600000000' which exceeds the range of an Integer.", "The property 'vacuum_freeze_table_age' has the value '300000000' which exceeds the range of an Integer.", "The line 'from standby(s); '*'=all' is not a valid PostgreSQL configuration parameter."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: vacuum_failsafe_age	vacuum_freeze_table_age	from standby(s); '*'=all
+[Ciri] Reason for vacuum_failsafe_age: The property 'vacuum_failsafe_age' has the value '1600000000' which exceeds the range of an Integer.
+[Ciri] Reason for vacuum_freeze_table_age: The property 'vacuum_freeze_table_age' has the value '300000000' which exceeds the range of an Integer.
+[Ciri] Reason for from standby(s); '*'=all: The line 'from standby(s); '*'=all' is not a valid PostgreSQL configuration parameter.

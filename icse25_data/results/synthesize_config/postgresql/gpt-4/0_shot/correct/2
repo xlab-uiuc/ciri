@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable_indexscan', 'max_parallel_apply_workers_per_subscription', 'wal_decode_buffer_size'], 'reason': ["The parameter 'enable_indexscan' does not exist in PostgreSQL configuration. Perhaps it was meant to be 'enable_indexscan' without any value assignment, as it is not a configurable setting via postgresql.conf.", "The parameter 'max_parallel_apply_workers_per_subscription' is not a valid configuration setting for PostgreSQL 13.0. It is related to logical replication and is named 'max_logical_replication_workers'.", "The parameter 'wal_decode_buffer_size' is not a recognized configuration setting in PostgreSQL 13.0. The correct parameter for controlling WAL decoding is 'wal_receiver_buffer_size' or related settings depending on the context."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable_indexscan	max_parallel_apply_workers_per_subscription	wal_decode_buffer_size
+[Ciri] Reason for enable_indexscan: The parameter 'enable_indexscan' does not exist in PostgreSQL configuration. Perhaps it was meant to be 'enable_indexscan' without any value assignment, as it is not a configurable setting via postgresql.conf.
+[Ciri] Reason for max_parallel_apply_workers_per_subscription: The parameter 'max_parallel_apply_workers_per_subscription' is not a valid configuration setting for PostgreSQL 13.0. It is related to logical replication and is named 'max_logical_replication_workers'.
+[Ciri] Reason for wal_decode_buffer_size: The parameter 'wal_decode_buffer_size' is not a recognized configuration setting in PostgreSQL 13.0. The correct parameter for controlling WAL decoding is 'wal_receiver_buffer_size' or related settings depending on the context.

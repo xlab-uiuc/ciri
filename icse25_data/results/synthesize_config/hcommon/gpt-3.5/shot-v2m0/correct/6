@@ -1,0 +1,12 @@
+Correct shot number:
+[9, 11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.azure.user.agent.prefix', 'fs.permissions.umask-mode'], 'reason': ["The property 'fs.azure.user.agent.prefix' has an additional 'usage' tag which is not a standard property field.", "The value for 'fs.permissions.umask-mode' should be in octal format or symbolic format, but it is set as '007'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.azure.user.agent.prefix	fs.permissions.umask-mode
+[Ciri] Reason for fs.azure.user.agent.prefix: The property 'fs.azure.user.agent.prefix' has an additional 'usage' tag which is not a standard property field.
+[Ciri] Reason for fs.permissions.umask-mode: The value for 'fs.permissions.umask-mode' should be in octal format or symbolic format, but it is set as '007'.

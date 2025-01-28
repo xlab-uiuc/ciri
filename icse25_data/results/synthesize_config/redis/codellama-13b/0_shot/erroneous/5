@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfilename', 'appendfsync', 'aof-rewrite-incremental-fsync', 'oom-score-adj-values', 'enable-debug-command'], 'reason': ['appendfilename is not a valid parameter in redis version 7.0.0', 'appendfsync is not a valid parameter in redis version 7.0.0', 'aof-rewrite-incremental-fsync is not a valid parameter in redis version 7.0.0', 'oom-score-adj-values is not a valid parameter in redis version 7.0.0', 'enable-debug-command is not a valid parameter in redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'replica-priority', 'appendfilename', 'appendfsync', 'aof-rewrite-incremental-fsync', 'oom-score-adj-values', 'enable-debug-command', 'dir'], 'reason': ['repl-backlog-size is not a valid parameter', 'replica-priority is not a valid parameter', 'appendfilename is not a valid parameter', 'appendfsync is not a valid parameter', 'aof-rewrite-incremental-fsync is not a valid parameter', 'oom-score-adj-values is not a valid parameter', 'enable-debug-command is not a valid parameter', 'dir is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'replica-priority', 'appendfilename', 'appendfsync', 'aof-rewrite-incremental-fsync', 'oom-score-adj-values', 'enable-debug-command', 'dir'], 'reason': ['repl-backlog-size is not a valid parameter', 'replica-priority is not a valid parameter', 'appendfilename is not a valid parameter', 'appendfsync is not a valid parameter', 'aof-rewrite-incremental-fsync is not a valid parameter', 'oom-score-adj-values is not a valid parameter', 'enable-debug-command is not a valid parameter', 'dir is not a valid parameter']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: repl-backlog-size	replica-priority	appendfilename	appendfsync	aof-rewrite-incremental-fsync	oom-score-adj-values	enable-debug-command	dir
+[Ciri] Reason for repl-backlog-size: repl-backlog-size is not a valid parameter
+[Ciri] Reason for replica-priority: replica-priority is not a valid parameter
+[Ciri] Reason for appendfilename: appendfilename is not a valid parameter
+[Ciri] Reason for appendfsync: appendfsync is not a valid parameter
+[Ciri] Reason for aof-rewrite-incremental-fsync: aof-rewrite-incremental-fsync is not a valid parameter
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values is not a valid parameter
+[Ciri] Reason for enable-debug-command: enable-debug-command is not a valid parameter
+[Ciri] Reason for dir: dir is not a valid parameter

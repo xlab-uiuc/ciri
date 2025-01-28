@@ -1,0 +1,26 @@
+Wrong shot number:
+[13, 1, 8]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.transfer.threads'], 'reason': ["The property 'dfs.datanode.max.transfer.threads' has the value '2048' which is out of the valid range of a thread count."]}
+
+{'hasError': True, 'errParameter': ['nfs.dump.dir'], 'reason': ["The property 'nfs.dump.dir' has the value '/valid/file1' which is not a valid directory path."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.transfer.threads', 'nfs.dump.dir'], 'reason': ["The property 'dfs.datanode.max.transfer.threads' has the value '2048' which is out of the valid range of a thread count. The value must be greater than 0 and less than or equal to 65535.", "The property 'nfs.dump.dir' has the value '/valid/file1' which is not a valid directory."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.transfer.threads'], 'reason': ["The property 'dfs.datanode.max.transfer.threads' has the value '2048' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.transfer.threads'], 'reason': ["The property 'dfs.datanode.max.transfer.threads' has the value '2048' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.transfer.threads'], 'reason': ["The property 'dfs.datanode.max.transfer.threads' has the value '2048' which exceeds the range of an Integer."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.max.transfer.threads
+[Ciri] Reason for dfs.datanode.max.transfer.threads: The property 'dfs.datanode.max.transfer.threads' has the value '2048' which exceeds the range of an Integer.

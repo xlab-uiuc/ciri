@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.max-corrupt-file-blocks-returned</name>
+  <value>200</value>
+  <description>
+      The maximum number of corrupt file blocks listed by NameNode Web UI,
+      JMX and other client request.
+  </description>
+</property>
+
+<property>
+  <name>dfs.blockreport.split.threshold</name>
+  <value>500000</value>
+    <description>If the number of blocks on the DataNode is below this
+    threshold then it will send block reports for all Storage Directories
+    in a single message.
+
+    If the number of blocks exceeds this threshold then the DataNode will
+    send block reports for each Storage Directory in separate messages.
+
+    Set to zero to always split.
+    </description>
+</property>
+
+<property>
+  <name>dfs.datanode.directoryscan.interval</name>
+  <value>1s</value>
+  <description>Interval in seconds for Datanode to scan data directories and
+  reconcile the difference between blocks in memory and on the disk.
+  Support multiple time unit suffix(case insensitive), as described
+  in dfs.heartbeat.interval.If no time unit is specified then seconds
+  is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.bytes-per-checksum</name>
+  <value>256</value>
+  <description>The number of bytes per checksum.  Must not be larger than
+  dfs.stream-buffer-size</description>
+</property>
+
+<property>
+  <name>dfs.namenode.list.cache.directives.num.responses</name>
+  <value>200</value>
+  <description>
+    This value controls the number of cache directives that the NameNode will
+    send over the wire in response to a listDirectives RPC.
+  </description>
+</property>
+
+<property>
+  <name>dfs.webhdfs.socket.read-timeout</name>
+  <value>60s</value>
+  <description>
+    Socket timeout for reading data from WebHDFS servers. This
+    prevents a WebHDFS client from hanging if the server stops sending
+    data. Value is followed by a unit specifier: ns, us, ms, s, m, h,
+    d for nanoseconds, microseconds, milliseconds, seconds, minutes,
+    hours, days respectively. Values should provide units,
+    but milliseconds are assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.webhdfs.netty.low.watermark</name>
+  <value>32768</value>
+  <description>
+    Low watermark configuration to Netty for Datanode WebHdfs.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.blockreport.queue.size</name>
+  <value>true</value>
+    <description>
+      The queue size of BlockReportProcessingThread in BlockManager.
+    </description>
+</property>
+
+</configuration>

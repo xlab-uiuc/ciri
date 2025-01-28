@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.regionserver.port', 'hbase.client.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.regionserver.compaction.enabled', 'hbase.hstore.blockingStoreFiles', 'hbase.master.keytab.file', 'hbase.thrift.minWorkerThreads'], 'reason': ['hbase.local.dir is not a valid directory', 'hbase.regionserver.port is not a valid port', 'hbase.client.keyvalue.maxsize is not a valid size', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not a valid size', 'hbase.regionserver.compaction.enabled is not a valid boolean', 'hbase.hstore.blockingStoreFiles is not a valid size', 'hbase.master.keytab.file is not a valid file', 'hbase.thrift.minWorkerThreads is not a valid size']}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir'], 'reason': ['hbase.local.dir is not a valid file path.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.port', 'hbase.client.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.regionserver.compaction.enabled', 'hbase.hstore.blockingStoreFiles', 'hbase.master.keytab.file', 'hbase.thrift.minWorkerThreads'], 'reason': ['hbase.regionserver.port must be a valid port number', 'hbase.client.keyvalue.maxsize must be a valid integer', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min must be a valid integer', 'hbase.regionserver.compaction.enabled must be a valid boolean', 'hbase.hstore.blockingStoreFiles must be a valid integer', 'hbase.master.keytab.file must be a valid file', 'hbase.thrift.minWorkerThreads must be a valid integer']}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir'], 'reason': ['hbase.local.dir is not a valid file path']}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir'], 'reason': ['The value of hbase.local.dir is not a valid file path.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.local.dir
+[Ciri] Reason for hbase.local.dir: The value of hbase.local.dir is not a valid file path.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-priority', 'cluster-announce-port', 'port'], 'reason': ["The 'replica-priority' parameter is not a valid configuration option in Redis 7.0.0.", "The 'cluster-announce-port' parameter is not a valid configuration option in Redis 7.0.0. This option is used for Redis Cluster configuration, which is a separate feature.", "The 'port' parameter should be set to a valid port number between 0 and 65535. The value '6379' is a valid port number, but it is the default Redis port, so it is not necessary to specify it unless you want to use a different port."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: replica-priority	cluster-announce-port	port
+[Ciri] Reason for replica-priority: The 'replica-priority' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for cluster-announce-port: The 'cluster-announce-port' parameter is not a valid configuration option in Redis 7.0.0. This option is used for Redis Cluster configuration, which is a separate feature.
+[Ciri] Reason for port: The 'port' parameter should be set to a valid port number between 0 and 65535. The value '6379' is a valid port number, but it is the default Redis port, so it is not necessary to specify it unless you want to use a different port.

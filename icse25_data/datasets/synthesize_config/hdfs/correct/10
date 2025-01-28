@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.decommission.interval</name>
+  <value>60s</value>
+  <description>Namenode periodicity in seconds to check if
+    decommission or maintenance is complete. Support multiple time unit
+    suffix(case insensitive), as described in dfs.heartbeat.interval.
+    If no time unit is specified then seconds is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.fsdatasetcache.max.threads.per.volume</name>
+  <value>4</value>
+  <description>
+    The maximum number of threads per volume to use for caching new data
+    on the datanode. These threads consume both I/O and CPU. This can affect
+    normal datanode operations.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.top.num.users</name>
+  <value>10</value>
+  <description>Number of top users returned by the top tool
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.bp-ready.timeout</name>
+  <value>1s</value>
+  <description>
+    The maximum wait time for datanode to be ready before failing the
+    received request. Setting this to 0 fails requests right away if the
+    datanode is not yet registered with the namenode. This wait time
+    reduces initial request failures after datanode restart.
+    Support multiple time unit suffix(case insensitive), as described
+    in dfs.heartbeat.interval.If no time unit is specified then seconds
+    is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.name.cache.threshold</name>
+  <value>1</value>
+  <description>
+    Frequently accessed files that are accessed more times than this
+    threshold are cached in the FSDirectory nameCache.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.storageinfo.defragment.ratio</name>
+  <value>0.75</value>
+  <description>
+    The defragmentation threshold for the StorageInfo.
+  </description>
+</property>
+
+<property>
+  <name>dfs.disk.balancer.max.disk.throughputInMBperSec</name>
+  <value>20</value>
+    <description>Maximum disk bandwidth used by diskbalancer
+      during read from a source disk. The unit is MB/sec.
+    </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.load.retries</name>
+  <value>0</value>
+    <description>
+      The number of retries on the Datanode to load the provided aliasmap;
+      defaults to 0.
+    </description>
+</property>
+
+</configuration>

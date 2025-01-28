@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'syncLimit', 'initLimit'], 'reason': ['maxClientCnxns is not a valid parameter', 'syncLimit must be greater than 0', 'initLimit must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'syncLimit', 'maxClientCnxns'], 'reason': ['initLimit must be greater than 0', 'syncLimit must be greater than 0', 'maxClientCnxns must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'syncLimit', 'initLimit'], 'reason': ['The value of maxClientCnxns should be between 1 and 60', 'The value of syncLimit should be between 2 and 10', 'The value of initLimit should be between 2 and 10']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: maxClientCnxns	syncLimit	initLimit
+[Ciri] Reason for maxClientCnxns: maxClientCnxns must be greater than 0
+[Ciri] Reason for syncLimit: syncLimit must be greater than 0
+[Ciri] Reason for initLimit: initLimit must be greater than 0

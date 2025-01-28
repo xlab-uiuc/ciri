@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.credential.clear-text-fallback', 'fs.s3a.assumed.role.credentials.provider'], 'reason': ["The value for 'hadoop.security.credential.clear-text-fallback' should be either true or false, not a numeric value.", "The value for 'fs.s3a.assumed.role.credentials.provider' seems incorrect. Typically, the provider class names for AWS credentials follow the pattern 'com.amazonaws.auth.*', and 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider' does not exist. It's likely intended to be 'org.apache.hadoop.fs.s3a.auth.AssumedRoleCredentialProvider' or another valid AWS credentials provider class."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.credential.clear-text-fallback	fs.s3a.assumed.role.credentials.provider
+[Ciri] Reason for hadoop.security.credential.clear-text-fallback: The value for 'hadoop.security.credential.clear-text-fallback' should be either true or false, not a numeric value.
+[Ciri] Reason for fs.s3a.assumed.role.credentials.provider: The value for 'fs.s3a.assumed.role.credentials.provider' seems incorrect. Typically, the provider class names for AWS credentials follow the pattern 'com.amazonaws.auth.*', and 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider' does not exist. It's likely intended to be 'org.apache.hadoop.fs.s3a.auth.AssumedRoleCredentialProvider' or another valid AWS credentials provider class.

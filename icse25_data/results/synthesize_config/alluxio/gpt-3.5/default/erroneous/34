@@ -1,0 +1,19 @@
+Wrong shot number:
+[11, 10, 8]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type', 'alluxio.user.client.cache.timeout.duration'], 'reason': ["The property 'alluxio.master.journal.type' has the value 'CIRI' which is not a valid journal type. Valid types are 'EMBEDDED' or 'UFS'.", "The property 'alluxio.user.client.cache.timeout.duration' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type', 'alluxio.user.client.cache.timeout.duration'], 'reason': ["The property 'alluxio.master.journal.type' has the value 'CIRI' which is not a valid journal type. Valid types are 'EMBEDDED' or 'REMOTE'.", "The property 'alluxio.user.client.cache.timeout.duration' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type', 'alluxio.user.client.cache.timeout.duration', 'alluxio.underfs.gcs.default.mode'], 'reason': ["The property 'alluxio.master.journal.type' has the value 'CIRI' which is not within the accepted value {EMBEDDED, REMOTE, UFS}.", "The property 'alluxio.user.client.cache.timeout.duration' has the value '-1' which is not a valid timeout duration.", "The property 'alluxio.underfs.gcs.default.mode' has the value '1400' which is not within the accepted value range."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.journal.type	alluxio.user.client.cache.timeout.duration
+[Ciri] Reason for alluxio.master.journal.type: The property 'alluxio.master.journal.type' has the value 'CIRI' which is not a valid journal type. Valid types are 'EMBEDDED' or 'UFS'.
+[Ciri] Reason for alluxio.user.client.cache.timeout.duration: The property 'alluxio.user.client.cache.timeout.duration' has a negative value which is not allowed.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 7, 6]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.http.policy'], 'reason': ["The property 'yarn.http.policy' has the value 'HTTP_ONLY' which is not within the accepted value {simple,kerberos}."]}
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.hostname'], 'reason': ["The property 'yarn.timeline-service.hostname' has the value '1.1.1.1.1.1' which is not within the valid range of an IP address."]}
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.hostname'], 'reason': ["The property 'yarn.timeline-service.hostname' has the value '1.1.1.1.1.1' which is out of the valid range of an IP address."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.timeline-service.hostname
+[Ciri] Reason for yarn.timeline-service.hostname: The property 'yarn.timeline-service.hostname' has the value '1.1.1.1.1.1' which is out of the valid range of an IP address.

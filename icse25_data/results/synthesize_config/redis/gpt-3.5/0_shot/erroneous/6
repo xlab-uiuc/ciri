@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'set-max-intset-entries', 'slowlog-max-len', 'rdb-save-incremental-fsync', 'repl-diskless-sync-delay', 'appendfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len'], 'reason': ["maxmemory-clients parameter should not have 'nounit' suffix in Redis 7.0.0 configuration.", 'set-max-intset-entries parameter is not a valid configuration in Redis 7.0.0.', 'slowlog-max-len parameter is not a valid configuration in Redis 7.0.0.', 'rdb-save-incremental-fsync parameter is not a valid configuration in Redis 7.0.0.', 'repl-diskless-sync-delay parameter is not a valid configuration in Redis 7.0.0.', 'appendfilename parameter is not a valid configuration in Redis 7.0.0.', 'hll-sparse-max-bytes parameter is not a valid configuration in Redis 7.0.0.', "proto-max-bulk-len parameter should not have 'mb' suffix in Redis 7.0.0 configuration."]}
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'set-max-intset-entries', 'rdb-save-incremental-fsync', 'repl-diskless-sync-delay', 'appendfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len'], 'reason': ["maxmemory-clients should be in bytes or use 'maxmemory-policy' instead.", "set-max-intset-entries should not have 'mb' unit.", "rdb-save-incremental-fsync does not have 'yes' value, use 'always' or 'everysec'.", "repl-diskless-sync-delay should not have '1' value, it's deprecated.", 'appendfilename should not be enclosed in quotes.', "hll-sparse-max-bytes should not have '6000' value, it's deprecated.", "proto-max-bulk-len should not have 'mb' unit."]}
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'set-max-intset-entries', 'slowlog-max-len', 'rdb-save-incremental-fsync', 'repl-diskless-sync-delay', 'appendfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len'], 'reason': ["maxmemory-clients should not have 'nounit' suffix in Redis 7.0.0", 'set-max-intset-entries should not have a value of 512, it should be a power of 2', 'slowlog-max-len should have a value less than or equal to 128', "rdb-save-incremental-fsync does not accept 'yes' as a value", 'repl-diskless-sync-delay should have a value greater than or equal to 1000', 'appendfilename should not have quotes around the filename', 'hll-sparse-max-bytes should have a value less than or equal to 3000', "proto-max-bulk-len should not have 'mb' suffix, use bytes instead"]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: maxmemory-clients	set-max-intset-entries	slowlog-max-len	rdb-save-incremental-fsync	repl-diskless-sync-delay	appendfilename	hll-sparse-max-bytes	proto-max-bulk-len
+[Ciri] Reason for maxmemory-clients: maxmemory-clients should not have 'nounit' suffix in Redis 7.0.0
+[Ciri] Reason for set-max-intset-entries: set-max-intset-entries parameter is not a valid configuration in Redis 7.0.0.
+[Ciri] Reason for slowlog-max-len: slowlog-max-len parameter is not a valid configuration in Redis 7.0.0.
+[Ciri] Reason for rdb-save-incremental-fsync: rdb-save-incremental-fsync does not accept 'yes' as a value
+[Ciri] Reason for repl-diskless-sync-delay: repl-diskless-sync-delay parameter is not a valid configuration in Redis 7.0.0.
+[Ciri] Reason for appendfilename: appendfilename should not have quotes around the filename
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes parameter is not a valid configuration in Redis 7.0.0.
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len should not have 'mb' suffix, use bytes instead

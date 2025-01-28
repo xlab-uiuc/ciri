@@ -1,0 +1,20 @@
+Wrong shot number:
+[3, 8, 11]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.worker.ramdisk.size', 'alluxio.user.file.write.tier.default'], 'reason': ["The property 'alluxio.job.master.web.bind.host' has an invalid IP address format '999.-1.0.0'.", "The value of the property 'alluxio.worker.ramdisk.size' should be in a valid format with units (e.g., '1GB', '100MB').", "The value of the property 'alluxio.user.file.write.tier.default' should be a non-negative integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.worker.ramdisk.size', 'alluxio.user.file.write.tier.default'], 'reason': ["The property 'alluxio.job.master.web.bind.host' has an invalid IP address format '999.-1.0.0'.", "The value of the property 'alluxio.worker.ramdisk.size' should be greater than or equal to 1MB.", "The value of the property 'alluxio.user.file.write.tier.default' should be a non-negative integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.worker.ramdisk.size', 'alluxio.user.file.write.tier.default'], 'reason': ["The property 'alluxio.job.master.web.bind.host' has an invalid IP address format.", "The value of the property 'alluxio.worker.ramdisk.size' should be in bytes or a valid size format.", "The value of the property 'alluxio.user.file.write.tier.default' should be a positive integer or zero."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.web.bind.host	alluxio.worker.ramdisk.size	alluxio.user.file.write.tier.default
+[Ciri] Reason for alluxio.job.master.web.bind.host: The property 'alluxio.job.master.web.bind.host' has an invalid IP address format '999.-1.0.0'.
+[Ciri] Reason for alluxio.worker.ramdisk.size: The value of the property 'alluxio.worker.ramdisk.size' should be in bytes or a valid size format.
+[Ciri] Reason for alluxio.user.file.write.tier.default: The value of the property 'alluxio.user.file.write.tier.default' should be a positive integer or zero.

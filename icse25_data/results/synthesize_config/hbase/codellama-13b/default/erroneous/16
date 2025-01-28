@@ -1,0 +1,20 @@
+Wrong shot number:
+[11, 9, 12]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.clientPort'], 'reason': ["The property 'hbase.zookeeper.leaderport' has the value '1944' which is not a valid port number.", "The property 'hbase.zookeeper.property.dataDir' has the value '/valid/file2' which is not a valid directory.", "The property 'hbase.zookeeper.property.clientPort' has the value 'file://' which is not a valid port number."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.clientPort'], 'reason': ["The property 'hbase.zookeeper.leaderport' has the value '1944' which is not a valid port number.", "The property 'hbase.zookeeper.property.dataDir' has the value '/valid/file2' which is not a valid directory.", "The property 'hbase.zookeeper.property.clientPort' has the value 'file://' which is not a valid port number."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.clientPort'], 'reason': ["The property 'hbase.zookeeper.leaderport' has the value '1944' which is out of the valid range of a port number.", "The property 'hbase.zookeeper.property.dataDir' has the value '/valid/file2' which is not a valid file path.", "The property 'hbase.zookeeper.property.clientPort' has the value 'file://' which is not a valid port number."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.zookeeper.leaderport	hbase.zookeeper.property.dataDir	hbase.zookeeper.property.clientPort
+[Ciri] Reason for hbase.zookeeper.leaderport: The property 'hbase.zookeeper.leaderport' has the value '1944' which is not a valid port number.
+[Ciri] Reason for hbase.zookeeper.property.dataDir: The property 'hbase.zookeeper.property.dataDir' has the value '/valid/file2' which is not a valid directory.
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The property 'hbase.zookeeper.property.clientPort' has the value 'file://' which is not a valid port number.

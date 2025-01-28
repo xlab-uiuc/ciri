@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.prefixes', 'alluxio.user.network.streaming.keepalive.timeout', 'alluxio.master.mount.table.root.alluxio', 'alluxio.underfs.oss.socket.timeout', 'alluxio.network.connection.auth.timeout'], 'reason': ["The correct property is 'alluxio.underfs.hdfs.prefixes', but it should list supported HDFS prefixes, 'file:/' is not a typical HDFS prefix.", "The value for 'alluxio.user.network.streaming.keepalive.timeout' should not include 'sec'. The correct format is a duration, e.g., '60s'.", "The property 'alluxio.master.mount.table.root.alluxio' is incorrect or malformed. A typical property for setting a mount point would be 'alluxio.master.mount.table.root.ufs', indicating the URI for the root mount.", "The value for 'alluxio.underfs.oss.socket.timeout' should not include 'sec'. The correct format is a duration, e.g., '100s'.", "The value for 'alluxio.network.connection.auth.timeout' should not include 'sec'. The correct format is a duration, e.g., '1s'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.underfs.hdfs.prefixes	alluxio.user.network.streaming.keepalive.timeout	alluxio.master.mount.table.root.alluxio	alluxio.underfs.oss.socket.timeout	alluxio.network.connection.auth.timeout
+[Ciri] Reason for alluxio.underfs.hdfs.prefixes: The correct property is 'alluxio.underfs.hdfs.prefixes', but it should list supported HDFS prefixes, 'file:/' is not a typical HDFS prefix.
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.timeout: The value for 'alluxio.user.network.streaming.keepalive.timeout' should not include 'sec'. The correct format is a duration, e.g., '60s'.
+[Ciri] Reason for alluxio.master.mount.table.root.alluxio: The property 'alluxio.master.mount.table.root.alluxio' is incorrect or malformed. A typical property for setting a mount point would be 'alluxio.master.mount.table.root.ufs', indicating the URI for the root mount.
+[Ciri] Reason for alluxio.underfs.oss.socket.timeout: The value for 'alluxio.underfs.oss.socket.timeout' should not include 'sec'. The correct format is a duration, e.g., '100s'.
+[Ciri] Reason for alluxio.network.connection.auth.timeout: The value for 'alluxio.network.connection.auth.timeout' should not include 'sec'. The correct format is a duration, e.g., '1s'.

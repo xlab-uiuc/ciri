@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.search.filter.group</name>
+  <value>(objectClass=group)</value>
+  <description>
+    An additional filter to use when searching for LDAP groups. This should be
+    changed when resolving groups against a non-Active Directory installation.
+
+    See the description of hadoop.security.group.mapping.ldap.search.filter.user
+    to enable posixGroups support.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.service.shutdown.timeout</name>
+  <value>60s</value>
+    <description>
+      Timeout to wait for each shutdown operation to complete.
+      If a hook takes longer than this time to complete, it will be interrupted,
+      so the service will shutdown. This allows the service shutdown
+      to recover from a blocked operation.
+      Some shutdown hooks may need more time than this, for example when
+      a large amount of data needs to be uploaded to an object store.
+      In this situation: increase the timeout.
+
+      The minimum duration of the timeout is 1 second, "1s".
+    </description>
+</property>
+
+<property>
+  <name>io.map.index.interval</name>
+  <value>128</value>
+  <description>
+    MapFile consist of two files - data file (tuples) and index file
+    (keys). For every io.map.index.interval records written in the
+    data file, an entry (record-key, data-file-position) is written
+    in the index file. This is to allow for doing binary search later
+    within the index file to look up records by their keys and get their
+    closest positions in the data file.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.connection.establish.timeout</name>
+  <value>5000</value>
+  <description>Socket connection setup timeout in milliseconds.</description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.csv.header</name>
+  <value>none</value>
+  <description>In S3 Select queries over CSV files: what is the role of the header? One of "none", "ignore" and "use"</description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.abfss.impl</name>
+  <value>org.apache.hadoop.fs.azurebfs.Abfss</value>
+  <description>AbstractFileSystem implementation class of abfss://</description>
+</property>
+
+<property>
+  <name>hadoop.http.cross-origin.enabled</name>
+  <value>false</value>
+  <description>Enable/disable the cross-origin (CORS) filter.</description>
+</property>
+
+<property>
+  <name>ha.failover-controller.active-standby-elector.zk.op.retries</name>
+  <value>6</value>
+  <description>
+    The number of zookeeper operation retry times in ActiveStandbyElector
+  </description>
+</property>
+
+</configuration>

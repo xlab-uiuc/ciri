@@ -1,0 +1,20 @@
+Wrong shot number:
+[6, 2, 4]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'autopurge.purgeInterval', 'maxSessionTimeout'], 'reason': ["The property 'dataLogDir' has the value 'tmp////staging' which does not follow the correct path format.", "The property 'autopurge.purgeInterval' has the value '-1' which is not within the accepted value {1-Integer.MAX}.", "The property 'maxSessionTimeout' has the value '0' which should be greater than 0."]}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'autopurge.purgeInterval', 'maxSessionTimeout'], 'reason': ["The property 'dataLogDir' has the value 'tmp////staging' which does not follow the correct path format.", "The property 'autopurge.purgeInterval' has the value '-1' which is not within the accepted value {1-Integer.MAX}.", "The property 'maxSessionTimeout' has the value '0' which should be greater than 0."]}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'autopurge.purgeInterval'], 'reason': ["The property 'dataLogDir' has the value 'tmp////staging' which does not follow the correct path format.", "The property 'autopurge.purgeInterval' has the value '-1' which is not within the accepted value {>0}."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dataLogDir	autopurge.purgeInterval	maxSessionTimeout
+[Ciri] Reason for dataLogDir: The property 'dataLogDir' has the value 'tmp////staging' which does not follow the correct path format.
+[Ciri] Reason for autopurge.purgeInterval: The property 'autopurge.purgeInterval' has the value '-1' which is not within the accepted value {1-Integer.MAX}.
+[Ciri] Reason for maxSessionTimeout: The property 'maxSessionTimeout' has the value '0' which should be greater than 0.

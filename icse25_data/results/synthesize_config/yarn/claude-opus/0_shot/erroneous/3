@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.connect.retry-interval.ms', 'yarn.timeline-service.hbase.coprocessor.app-final-value-retention-milliseconds'], 'reason': ["The value for yarn.resourcemanager.connect.retry-interval.ms should be a time duration in milliseconds, but is set to 'true' which is a boolean.", 'The property yarn.timeline-service.hbase.coprocessor.app-final-value-retention-milliseconds is not a valid configuration parameter in Hadoop 3.3.0. It was removed in Hadoop 3.0.0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.connect.retry-interval.ms	yarn.timeline-service.hbase.coprocessor.app-final-value-retention-milliseconds
+[Ciri] Reason for yarn.resourcemanager.connect.retry-interval.ms: The value for yarn.resourcemanager.connect.retry-interval.ms should be a time duration in milliseconds, but is set to 'true' which is a boolean.
+[Ciri] Reason for yarn.timeline-service.hbase.coprocessor.app-final-value-retention-milliseconds: The property yarn.timeline-service.hbase.coprocessor.app-final-value-retention-milliseconds is not a valid configuration parameter in Hadoop 3.3.0. It was removed in Hadoop 3.0.0.

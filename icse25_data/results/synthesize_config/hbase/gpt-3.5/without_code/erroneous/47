@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 12, 8]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins'], 'reason': ["The property 'hbase.master.logcleaner.plugins' is missing the default log cleaner 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner' in the value."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins', 'hbase.hregion.majorcompaction.jitter'], 'reason': ["The property 'hbase.master.logcleaner.plugins' is missing the default log cleaner 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner'.", "The property 'hbase.hregion.majorcompaction.jitter' has the value '1.0' which is not within the valid range. It should be a value between 0 and 1."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins'], 'reason': ["The property 'hbase.master.logcleaner.plugins' is missing the default log cleaner 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner' in the value."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.master.logcleaner.plugins
+[Ciri] Reason for hbase.master.logcleaner.plugins: The property 'hbase.master.logcleaner.plugins' is missing the default log cleaner 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner' in the value.

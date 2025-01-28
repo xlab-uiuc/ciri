@@ -1,0 +1,19 @@
+Wrong shot number:
+[13, 15, 12]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.trash.interval', 'fs.trash.checkpoint.interval'], 'reason': ["The value of 'fs.trash.interval' is less than 'fs.trash.checkpoint.interval', which contradicts the requirement that 'fs.trash.checkpoint.interval' should be smaller or equal to 'fs.trash.interval'."]}
+
+{'hasError': True, 'errParameter': ['fs.trash.interval', 'fs.trash.checkpoint.interval'], 'reason': ["The 'usage' field is not a recognized configuration parameter for properties in the configuration file.", "The 'usage' field is not a recognized configuration parameter for properties in the configuration file. Additionally, the value of 'fs.trash.checkpoint.interval' should not be larger than 'fs.trash.interval'."]}
+
+{'hasError': True, 'errParameter': ['fs.trash.interval', 'fs.trash.checkpoint.interval'], 'reason': ["The value of 'fs.trash.interval' is less than 'fs.trash.checkpoint.interval', which contradicts the requirement that 'fs.trash.checkpoint.interval' should be smaller or equal to 'fs.trash.interval'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.trash.interval	fs.trash.checkpoint.interval
+[Ciri] Reason for fs.trash.interval: The value of 'fs.trash.interval' is less than 'fs.trash.checkpoint.interval', which contradicts the requirement that 'fs.trash.checkpoint.interval' should be smaller or equal to 'fs.trash.interval'.
+[Ciri] Reason for fs.trash.checkpoint.interval: The 'usage' field is not a recognized configuration parameter for properties in the configuration file. Additionally, the value of 'fs.trash.checkpoint.interval' should not be larger than 'fs.trash.interval'.

@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be greater than 100']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['shared_preload_libraries'], 'reason': ['shared_preload_libraries should be a list of strings.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_table_age'], 'reason': ['vacuum_freeze_table_age must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be greater than 100']}
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_table_age'], 'reason': ['vacuum_freeze_table_age is not a valid configuration parameter for postgresql version 13.0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: vacuum_freeze_table_age
+[Ciri] Reason for vacuum_freeze_table_age: vacuum_freeze_table_age must be a positive integer.

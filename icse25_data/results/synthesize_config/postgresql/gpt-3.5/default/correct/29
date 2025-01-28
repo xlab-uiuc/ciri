@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 1, 2]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['geqo_seed', 'stats_fetch_consistency', 'autovacuum_work_mem'], 'reason': ["The property 'geqo_seed' should be an integer value.", "The property 'stats_fetch_consistency' has an invalid value.", "The property 'autovacuum_work_mem' should be a positive integer value."]}
+
+{'hasError': True, 'errParameter': ['geqo_seed', 'autovacuum_work_mem'], 'reason': ["The property 'geqo_seed' should have an integer value, not a float.", "The property 'autovacuum_work_mem' should have a positive integer value, not -1."]}
+
+{'hasError': True, 'errParameter': ['geqo_seed', 'autovacuum_work_mem'], 'reason': ["The property 'geqo_seed' has a value of type Float which is not the correct type for this property.", "The property 'autovacuum_work_mem' has a negative value which is not allowed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: geqo_seed	autovacuum_work_mem
+[Ciri] Reason for geqo_seed: The property 'geqo_seed' should have an integer value, not a float.
+[Ciri] Reason for autovacuum_work_mem: The property 'autovacuum_work_mem' should have a positive integer value, not -1.

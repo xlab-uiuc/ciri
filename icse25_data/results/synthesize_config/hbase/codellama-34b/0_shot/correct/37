@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hregion.memstore.flush.size', 'hbase.hregion.majorcompaction', 'hbase.hstore.compaction.max.size', 'hbase.client.operation.timeout'], 'reason': ['hbase.hregion.memstore.flush.size should be less than 128MB', 'hbase.hregion.majorcompaction should be less than 7 days', 'hbase.hstore.compaction.max.size should be less than 128GB', 'hbase.client.operation.timeout should be less than 15 minutes']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hbase.hregion.memstore.flush.size	hbase.hregion.majorcompaction	hbase.hstore.compaction.max.size	hbase.client.operation.timeout
+[Ciri] Reason for hbase.hregion.memstore.flush.size: hbase.hregion.memstore.flush.size should be less than 128MB
+[Ciri] Reason for hbase.hregion.majorcompaction: hbase.hregion.majorcompaction should be less than 7 days
+[Ciri] Reason for hbase.hstore.compaction.max.size: hbase.hstore.compaction.max.size should be less than 128GB
+[Ciri] Reason for hbase.client.operation.timeout: hbase.client.operation.timeout should be less than 15 minutes

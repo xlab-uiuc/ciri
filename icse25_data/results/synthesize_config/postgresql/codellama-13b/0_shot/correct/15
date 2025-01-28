@@ -1,0 +1,25 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_destination', 'max_parallel_maintenance_workers', 'unix_socket_directories', 'bytea_output', 'tcp_keepalives_count'], 'reason': ['log_destination is not a valid value', 'max_parallel_maintenance_workers is not a valid value', 'unix_socket_directories is not a valid value', 'bytea_output is not a valid value', 'tcp_keepalives_count is not a valid value']}
+
+{'hasError': True, 'errParameter': ['log_destination', 'archive_timeout', 'max_parallel_maintenance_workers', 'unix_socket_directories', 'bytea_output', 'tcp_keepalives_count'], 'reason': ['log_destination must be one of the following: stderr, syslog, eventlog, csvlog, or none', 'archive_timeout must be a positive integer', 'max_parallel_maintenance_workers must be a positive integer', 'unix_socket_directories must be a valid directory', 'bytea_output must be one of the following: hex, escape, or base64', 'tcp_keepalives_count must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['max_parallel_maintenance_workers', 'max_pred_locks_per_page', 'tcp_keepalives_count'], 'reason': ['max_parallel_maintenance_workers should be an integer between 0 and 32767', 'max_pred_locks_per_page should be an integer between 0 and 1024', 'tcp_keepalives_count should be an integer between 0 and 1024']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_destination', 'archive_timeout', 'max_parallel_maintenance_workers', 'unix_socket_directories', 'bytea_output', 'tcp_keepalives_count'], 'reason': ['log_destination is not a valid option', 'archive_timeout is not a valid option', 'max_parallel_maintenance_workers is not a valid option', 'unix_socket_directories is not a valid option', 'bytea_output is not a valid option', 'tcp_keepalives_count is not a valid option']}
+
+{'hasError': True, 'errParameter': ['log_destination', 'archive_timeout', 'max_parallel_maintenance_workers', 'unix_socket_directories', 'bytea_output', 'tcp_keepalives_count'], 'reason': ['log_destination is not a valid value', 'archive_timeout is not a valid value', 'max_parallel_maintenance_workers is not a valid value', 'unix_socket_directories is not a valid value', 'bytea_output is not a valid value', 'tcp_keepalives_count is not a valid value']}
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_page'], 'reason': ['max_pred_locks_per_page is not a valid parameter for PostgreSQL 13.0.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: log_destination	archive_timeout	max_parallel_maintenance_workers	unix_socket_directories	bytea_output	tcp_keepalives_count
+[Ciri] Reason for log_destination: log_destination is not a valid option
+[Ciri] Reason for archive_timeout: archive_timeout is not a valid option
+[Ciri] Reason for max_parallel_maintenance_workers: max_parallel_maintenance_workers is not a valid option
+[Ciri] Reason for unix_socket_directories: unix_socket_directories is not a valid value
+[Ciri] Reason for bytea_output: bytea_output is not a valid value
+[Ciri] Reason for tcp_keepalives_count: tcp_keepalives_count is not a valid value

@@ -1,0 +1,33 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'max-snapshots', 'max-wals', 'proxy-failure-wait'], 'reason': ['auto-compaction-retention must be a positive integer', 'max-snapshots must be a positive integer', 'max-wals must be a positive integer', 'proxy-failure-wait must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['enable-v2', 'max-snapshots', 'auto-compaction-retention', 'snapshot-count', 'log-outputs', 'max-wals', 'proxy-failure-wait'], 'reason': ['enable-v2 is not a valid parameter for etcd version 3.5.0', 'max-snapshots is not a valid parameter for etcd version 3.5.0', 'auto-compaction-retention is not a valid parameter for etcd version 3.5.0', 'snapshot-count is not a valid parameter for etcd version 3.5.0', 'log-outputs is not a valid parameter for etcd version 3.5.0', 'max-wals is not a valid parameter for etcd version 3.5.0', 'proxy-failure-wait is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'max-wals'], 'reason': ['auto-compaction-retention is not supported in etcd 3.5.0', 'max-wals is not supported in etcd 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'auto-compaction-retention', 'snapshot-count', 'max-wals', 'proxy-failure-wait'], 'reason': ['max-snapshots is not a valid parameter for etcd version 3.5.0', 'auto-compaction-retention is not a valid parameter for etcd version 3.5.0', 'snapshot-count is not a valid parameter for etcd version 3.5.0', 'max-wals is not a valid parameter for etcd version 3.5.0', 'proxy-failure-wait is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'auto-compaction-retention', 'snapshot-count', 'log-outputs', 'max-wals', 'proxy-failure-wait'], 'reason': ['max-snapshots is not a valid property for etcd version 3.5.0', 'auto-compaction-retention is not a valid property for etcd version 3.5.0', 'snapshot-count is not a valid property for etcd version 3.5.0', 'log-outputs is not a valid property for etcd version 3.5.0', 'max-wals is not a valid property for etcd version 3.5.0', 'proxy-failure-wait is not a valid property for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'auto-compaction-retention', 'snapshot-count', 'log-outputs', 'max-wals', 'proxy-failure-wait'], 'reason': ['max-snapshots is not a valid parameter for etcd version 3.5.0', 'auto-compaction-retention is not a valid parameter for etcd version 3.5.0', 'snapshot-count is not a valid parameter for etcd version 3.5.0', 'log-outputs is not a valid parameter for etcd version 3.5.0', 'max-wals is not a valid parameter for etcd version 3.5.0', 'proxy-failure-wait is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'auto-compaction-retention', 'snapshot-count', 'log-outputs', 'max-wals', 'proxy-failure-wait'], 'reason': ['max-snapshots is not a valid property for etcd version 3.5.0', 'auto-compaction-retention is not a valid property for etcd version 3.5.0', 'snapshot-count is not a valid property for etcd version 3.5.0', 'log-outputs is not a valid property for etcd version 3.5.0', 'max-wals is not a valid property for etcd version 3.5.0', 'proxy-failure-wait is not a valid property for etcd version 3.5.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: max-snapshots	auto-compaction-retention	snapshot-count	log-outputs	max-wals	proxy-failure-wait
+[Ciri] Reason for max-snapshots: max-snapshots is not a valid property for etcd version 3.5.0
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention is not a valid property for etcd version 3.5.0
+[Ciri] Reason for snapshot-count: snapshot-count is not a valid property for etcd version 3.5.0
+[Ciri] Reason for log-outputs: log-outputs is not a valid property for etcd version 3.5.0
+[Ciri] Reason for max-wals: max-wals is not a valid property for etcd version 3.5.0
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait is not a valid property for etcd version 3.5.0

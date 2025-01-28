@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-priority', 'tls-session-caching', 'auto-aof-rewrite-min-size', 'always-show-logo', 'repl-disable-tcp-nodelay', 'tls-session-cache-size'], 'reason': ["Unknown parameter 'replica-priority' for Redis version 7.0.0", "Unknown parameter 'tls-session-caching' for Redis version 7.0.0", "Unknown parameter 'auto-aof-rewrite-min-size' for Redis version 7.0.0", "Unknown parameter 'always-show-logo' for Redis version 7.0.0", "Unknown parameter 'repl-disable-tcp-nodelay' for Redis version 7.0.0", "Unknown parameter 'tls-session-cache-size' for Redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['replica-priority', 'tls-session-caching', 'auto-aof-rewrite-min-size', 'always-show-logo', 'repl-disable-tcp-nodelay', 'tls-session-cache-size'], 'reason': ['replica-priority is not a valid configuration parameter for Redis 7.0.0', 'tls-session-caching is not a valid configuration parameter for Redis 7.0.0', 'auto-aof-rewrite-min-size is not a valid configuration parameter for Redis 7.0.0', 'always-show-logo is not a valid configuration parameter for Redis 7.0.0', 'repl-disable-tcp-nodelay is not a valid configuration parameter for Redis 7.0.0', 'tls-session-cache-size is not a valid configuration parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['replica-priority', 'tls-session-caching', 'aclfile', 'auto-aof-rewrite-min-size', 'always-show-logo', 'repl-disable-tcp-nodelay', 'tls-session-cache-size'], 'reason': ['replica-priority is not a valid configuration parameter for Redis version 7.0.0', 'tls-session-caching is not a valid configuration parameter for Redis version 7.0.0', 'aclfile is not a valid configuration parameter for Redis version 7.0.0', 'auto-aof-rewrite-min-size is not a valid configuration parameter for Redis version 7.0.0', 'always-show-logo is not a valid configuration parameter for Redis version 7.0.0', 'repl-disable-tcp-nodelay is not a valid configuration parameter for Redis version 7.0.0', 'tls-session-cache-size is not a valid configuration parameter for Redis version 7.0.0']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: replica-priority	tls-session-caching	auto-aof-rewrite-min-size	always-show-logo	repl-disable-tcp-nodelay	tls-session-cache-size
+[Ciri] Reason for replica-priority: Unknown parameter 'replica-priority' for Redis version 7.0.0
+[Ciri] Reason for tls-session-caching: tls-session-caching is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for auto-aof-rewrite-min-size: Unknown parameter 'auto-aof-rewrite-min-size' for Redis version 7.0.0
+[Ciri] Reason for always-show-logo: always-show-logo is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for repl-disable-tcp-nodelay: repl-disable-tcp-nodelay is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for tls-session-cache-size: tls-session-cache-size is not a valid configuration parameter for Redis 7.0.0

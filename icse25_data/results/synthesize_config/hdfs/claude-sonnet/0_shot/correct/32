@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.dns.nameserver', 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec', 'dfs.storage.policy.satisfier.keytab.file'], 'reason': ["The property 'dfs.datanode.dns.nameserver' is deprecated in Hadoop 3.3.0 and should be replaced with 'hadoop.security.dns.nameserver'.", "The property 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec' is not a valid property in Hadoop 3.3.0. The correct property for setting the bandwidth limit for transferring the image to a bootstrap standby NameNode is 'dfs.image.transfer.bandwidthPerSec'.", "The property 'dfs.storage.policy.satisfier.keytab.file' is not a valid property in Hadoop 3.3.0. The correct property for specifying the keytab file for the StoragePolicySatisfier is 'dfs.storage.policy.satisfier.kerberos.keytab'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.datanode.dns.nameserver	dfs.image.transfer-bootstrap-standby.bandwidthPerSec	dfs.storage.policy.satisfier.keytab.file
+[Ciri] Reason for dfs.datanode.dns.nameserver: The property 'dfs.datanode.dns.nameserver' is deprecated in Hadoop 3.3.0 and should be replaced with 'hadoop.security.dns.nameserver'.
+[Ciri] Reason for dfs.image.transfer-bootstrap-standby.bandwidthPerSec: The property 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec' is not a valid property in Hadoop 3.3.0. The correct property for setting the bandwidth limit for transferring the image to a bootstrap standby NameNode is 'dfs.image.transfer.bandwidthPerSec'.
+[Ciri] Reason for dfs.storage.policy.satisfier.keytab.file: The property 'dfs.storage.policy.satisfier.keytab.file' is not a valid property in Hadoop 3.3.0. The correct property for specifying the keytab file for the StoragePolicySatisfier is 'dfs.storage.policy.satisfier.kerberos.keytab'.

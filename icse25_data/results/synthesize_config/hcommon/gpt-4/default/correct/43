@@ -1,0 +1,15 @@
+Wrong shot number:
+[1, 3, 9]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.search.group.hierarchy.levels', 'fs.trash.checkpoint.interval'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.search.group.hierarchy.levels' has the value '-1' which is not a valid level. The value should be a non-negative integer.", "The property 'fs.trash.checkpoint.interval' has the value '0' which is not a valid interval. The value should be a positive integer or equal to fs.trash.interval if fs.trash.interval is greater than zero."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.search.group.hierarchy.levels	fs.trash.checkpoint.interval
+[Ciri] Reason for hadoop.security.group.mapping.ldap.search.group.hierarchy.levels: The property 'hadoop.security.group.mapping.ldap.search.group.hierarchy.levels' has the value '-1' which is not a valid level. The value should be a non-negative integer.
+[Ciri] Reason for fs.trash.checkpoint.interval: The property 'fs.trash.checkpoint.interval' has the value '0' which is not a valid interval. The value should be a positive integer or equal to fs.trash.interval if fs.trash.interval is greater than zero.

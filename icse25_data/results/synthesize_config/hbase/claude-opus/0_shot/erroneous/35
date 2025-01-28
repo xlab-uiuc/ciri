@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.hstore.compaction.max.size', 'hbase.wal.dir.perms'], 'reason': ['The default value for hbase.zookeeper.property.clientPort is 2181. The value 65536 is invalid as it exceeds the maximum port number of 65535.', 'The default value for hbase.hstore.compaction.max.size is Long.MAX_VALUE (9223372036854775807). The value 4611686018427387903 exceeds this and is invalid.', 'The value 350 for hbase.wal.dir.perms is invalid. It should be an octal number like 0700 which corresponds to the desired Unix style permissions.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.zookeeper.property.clientPort	hbase.hstore.compaction.max.size	hbase.wal.dir.perms
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The default value for hbase.zookeeper.property.clientPort is 2181. The value 65536 is invalid as it exceeds the maximum port number of 65535.
+[Ciri] Reason for hbase.hstore.compaction.max.size: The default value for hbase.hstore.compaction.max.size is Long.MAX_VALUE (9223372036854775807). The value 4611686018427387903 exceeds this and is invalid.
+[Ciri] Reason for hbase.wal.dir.perms: The value 350 for hbase.wal.dir.perms is invalid. It should be an octal number like 0700 which corresponds to the desired Unix style permissions.

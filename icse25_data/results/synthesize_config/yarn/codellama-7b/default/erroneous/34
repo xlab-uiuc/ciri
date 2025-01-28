@@ -1,0 +1,34 @@
+Wrong shot number:
+[6, 4, 10]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.maximum-allocation-vcores'], 'reason': ["The property 'yarn.scheduler.maximum-allocation-vcores' has the value '4' which is less than the value '5' of the property 'yarn.scheduler.minimum-allocation-vcores'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory-mb'], 'reason': ["The property 'yarn.nodemanager.resource.memory-mb' has the value '-1' which is negative."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-vcores'], 'reason': ["The property 'yarn.scheduler.minimum-allocation-vcores' has the value '5' which is less than the value '4' of property 'yarn.scheduler.maximum-allocation-vcores'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.maximum-allocation-vcores'], 'reason': ["The property 'yarn.scheduler.maximum-allocation-vcores' has the value '4' which is less than the value '5' of the property 'yarn.scheduler.minimum-allocation-vcores'."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-vcores'], 'reason': ["The property 'yarn.scheduler.minimum-allocation-vcores' has the value '5' which is less than the minimum value of '4'."]}
+
+{'hasError': True, 'errParameter': ['yarn.minicluster.yarn.nodemanager.resource.memory-mb'], 'reason': ["The property 'yarn.minicluster.yarn.nodemanager.resource.memory-mb' was removed in the previous version and is not used in the current version."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.detect-hardware-capabilities'], 'reason': ["The property 'yarn.nodemanager.resource.detect-hardware-capabilities' has the value 'true' which is not within the accepted value {false, true}."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-vcores'], 'reason': ["The property 'yarn.scheduler.minimum-allocation-vcores' has the value '5' which is less than the minimum value of '4'."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-vcores'], 'reason': ["The property 'yarn.scheduler.minimum-allocation-vcores' has the value '5' which is less than the minimum value of '4'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.scheduler.minimum-allocation-vcores
+[Ciri] Reason for yarn.scheduler.minimum-allocation-vcores: The property 'yarn.scheduler.minimum-allocation-vcores' has the value '5' which is less than the minimum value of '4'.

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.transfer.threads', 'nfs.dump.dir', 'dfs.client.read.shortcircuit', 'dfs.datanode.replica.cache.expiry.time'], 'reason': ['The maximum value for dfs.datanode.max.transfer.threads in Hadoop 3.3.0 is 8192, but the provided value is 2048.', 'The nfs.dump.dir property is not a valid HDFS configuration parameter in Hadoop 3.3.0.', 'The dfs.client.read.shortcircuit property is deprecated in Hadoop 3.3.0 and has been replaced by dfs.client.read.shortcircuit.skip.checksum.', 'The dfs.datanode.replica.cache.expiry.time property is not a valid HDFS configuration parameter in Hadoop 3.3.0.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dfs.datanode.max.transfer.threads	nfs.dump.dir	dfs.client.read.shortcircuit	dfs.datanode.replica.cache.expiry.time
+[Ciri] Reason for dfs.datanode.max.transfer.threads: The maximum value for dfs.datanode.max.transfer.threads in Hadoop 3.3.0 is 8192, but the provided value is 2048.
+[Ciri] Reason for nfs.dump.dir: The nfs.dump.dir property is not a valid HDFS configuration parameter in Hadoop 3.3.0.
+[Ciri] Reason for dfs.client.read.shortcircuit: The dfs.client.read.shortcircuit property is deprecated in Hadoop 3.3.0 and has been replaced by dfs.client.read.shortcircuit.skip.checksum.
+[Ciri] Reason for dfs.datanode.replica.cache.expiry.time: The dfs.datanode.replica.cache.expiry.time property is not a valid HDFS configuration parameter in Hadoop 3.3.0.

@@ -1,0 +1,13 @@
+Correct shot number:
+[15, 16]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.mapfile.bloom.error.rate', 'ipc.client.rpc-timeout.ms', 'hadoop.ssl.enabled'], 'reason': ["The property 'io.mapfile.bloom.error.rate' should have a value between 0 and 1.", "The property 'ipc.client.rpc-timeout.ms' should have a value greater than 0.", "The property 'hadoop.ssl.enabled' is deprecated. Use dfs.http.policy and yarn.http.policy instead."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: io.mapfile.bloom.error.rate	ipc.client.rpc-timeout.ms	hadoop.ssl.enabled
+[Ciri] Reason for io.mapfile.bloom.error.rate: The property 'io.mapfile.bloom.error.rate' should have a value between 0 and 1.
+[Ciri] Reason for ipc.client.rpc-timeout.ms: The property 'ipc.client.rpc-timeout.ms' should have a value greater than 0.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' is deprecated. Use dfs.http.policy and yarn.http.policy instead.

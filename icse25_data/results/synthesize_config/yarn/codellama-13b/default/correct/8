@@ -1,0 +1,26 @@
+Wrong shot number:
+[1, 10, 9]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-mb'], 'reason': ["The value of the property 'yarn.scheduler.minimum-allocation-mb' should be smaller or equal to the value of the property 'yarn.scheduler.maximum-allocation-mb'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' has the value '/valid/file1' which is not of the correct type String."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' has the value '/valid/file1' which is not of the correct type String."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-mb'], 'reason': ["The value of the property 'yarn.scheduler.minimum-allocation-mb' should be smaller or equal to the value of the property 'yarn.scheduler.maximum-allocation-mb'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' has the value '/valid/file1' which is not of the correct type String."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.linux-container-executor.cgroups.hierarchy
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.hierarchy: The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' has the value '/valid/file1' which is not of the correct type String.

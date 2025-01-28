@@ -1,0 +1,15 @@
+Wrong shot number:
+[10]
+
+Correct shot number:
+[3, 8, 15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.trash.interval'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has the value '60s' which should be specified in milliseconds.", "The property 'fs.trash.interval' has the value '1' which should be specified in minutes. It is recommended to provide the value in milliseconds for consistency."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.trash.interval
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has the value '60s' which should be specified in milliseconds.
+[Ciri] Reason for fs.trash.interval: The property 'fs.trash.interval' has the value '1' which should be specified in minutes. It is recommended to provide the value in milliseconds for consistency.

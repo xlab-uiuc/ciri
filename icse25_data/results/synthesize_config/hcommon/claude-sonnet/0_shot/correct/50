@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.assumed.role.session.duration', 'fs.s3a.readahead.range', 'hadoop.security.random.device.file.path'], 'reason': ["The value for fs.s3a.assumed.role.session.duration should be between 15m and 1h, but '20m' is outside this range.", "The value for fs.s3a.readahead.range should be a valid number followed by a unit (K, M, G, T, P), but '64K' is not a valid number.", "The value for hadoop.security.random.device.file.path should be a valid file path, but '/valid/file1' is not a valid file path on most systems."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.s3a.assumed.role.session.duration	fs.s3a.readahead.range	hadoop.security.random.device.file.path
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The value for fs.s3a.assumed.role.session.duration should be between 15m and 1h, but '20m' is outside this range.
+[Ciri] Reason for fs.s3a.readahead.range: The value for fs.s3a.readahead.range should be a valid number followed by a unit (K, M, G, T, P), but '64K' is not a valid number.
+[Ciri] Reason for hadoop.security.random.device.file.path: The value for hadoop.security.random.device.file.path should be a valid file path, but '/valid/file1' is not a valid file path on most systems.

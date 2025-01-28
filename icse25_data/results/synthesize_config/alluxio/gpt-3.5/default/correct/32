@@ -1,0 +1,26 @@
+Wrong shot number:
+[2, 3, 1]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.default.mode'], 'reason': ["The property 'alluxio.underfs.gcs.default.mode' has the value '350' which is not a valid file mode."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.create.ttl'], 'reason': ["The property 'alluxio.user.file.create.ttl' has the value '0' which is not a valid TTL value. TTL should be a positive value."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.shell.backup.state.lock.try.duration', 'alluxio.user.file.create.ttl'], 'reason': ["The property 'alluxio.master.shell.backup.state.lock.try.duration' has the value '1s' which is not in the correct format. It should be specified with units like '1sec'.", "The property 'alluxio.user.file.create.ttl' has the value '0' which is not a valid TTL value."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.keepalive.timeout'], 'reason': ["The property 'alluxio.user.network.streaming.keepalive.timeout' has the value '30sec' which is not a valid format. It should be specified without the unit."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.create.ttl', 'alluxio.underfs.gcs.default.mode'], 'reason': ["The property 'alluxio.user.file.create.ttl' has a negative value which is invalid.", "The property 'alluxio.underfs.gcs.default.mode' has a value '350' which is not a valid octal number."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.keepalive.timeout'], 'reason': ["The property 'alluxio.user.network.streaming.keepalive.timeout' has the value '30sec' which uses an incorrect unit."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.network.streaming.keepalive.timeout
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.timeout: The property 'alluxio.user.network.streaming.keepalive.timeout' has the value '30sec' which uses an incorrect unit.

@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['timeout', 'hash-max-listpack-value', 'activerehashing', 'cluster-announce-bus-port', 'slowlog-log-slower-than', 'tcp-keepalive', 'cluster-announce-tls-port'], 'reason': ['timeout value should be specified in milliseconds, e.g., 1000 for 1 second.', 'hash-max-listpack-value should be an integer value.', "activerehashing should be either 'yes' or 'no'.", 'cluster-announce-bus-port should be a valid port number.', 'slowlog-log-slower-than value should be specified in microseconds.', 'tcp-keepalive value should be specified in seconds.', 'cluster-announce-tls-port should be a valid port number.']}
+
+{'hasError': True, 'errParameter': ['timeout', 'hash-max-listpack-value', 'activerehashing', 'slowlog-log-slower-than', 'tcp-keepalive'], 'reason': ['timeout parameter should be specified in milliseconds, consider changing to a valid value.', 'hash-max-listpack-value should be set to a value greater than 32.', "activerehashing parameter should be either 'yes' or 'no'.", 'slowlog-log-slower-than value should be in microseconds, consider changing to a valid value.', 'tcp-keepalive value should be in seconds, consider changing to a valid value.']}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'cluster-announce-bus-port', 'cluster-announce-tls-port'], 'reason': ["The 'hash-max-listpack-value' parameter is not valid for Redis version 7.0.0.", "The 'cluster-announce-bus-port' parameter is not valid for Redis version 7.0.0.", "The 'cluster-announce-tls-port' parameter is not valid for Redis version 7.0.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'cluster-announce-bus-port', 'cluster-announce-tls-port'], 'reason': ["'hash-max-listpack-value' is not a valid parameter for Redis version 7.0.0.", "'cluster-announce-bus-port' is not a valid parameter for Redis version 7.0.0.", "'cluster-announce-tls-port' is not a valid parameter for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'cluster-announce-bus-port', 'cluster-announce-tls-port'], 'reason': ['hash-max-listpack-value should be an integer value, not a string.', 'cluster-announce-bus-port should be a port number in the range of 1-65535.', 'cluster-announce-tls-port should be a port number in the range of 1-65535.']}
+
+{'hasError': True, 'errParameter': ['timeout', 'hash-max-listpack-value', 'activerehashing', 'tcp-keepalive'], 'reason': ['timeout value should be specified in milliseconds, consider changing to a valid value', 'hash-max-listpack-value should be set to a value between 64 and 512, consider changing to a valid value', 'activerehashing parameter is deprecated in Redis 7.0.0, consider removing it from the configuration', 'tcp-keepalive value should be specified in seconds, consider changing to a valid value']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hash-max-listpack-value	cluster-announce-bus-port	cluster-announce-tls-port
+[Ciri] Reason for hash-max-listpack-value: hash-max-listpack-value should be an integer value, not a string.
+[Ciri] Reason for cluster-announce-bus-port: cluster-announce-bus-port should be a port number in the range of 1-65535.
+[Ciri] Reason for cluster-announce-tls-port: 'cluster-announce-tls-port' is not a valid parameter for Redis version 7.0.0.

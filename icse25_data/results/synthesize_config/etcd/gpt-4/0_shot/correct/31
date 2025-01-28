@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'quota-backend-bytes'], 'reason': ["The 'enable-v2' parameter is not applicable for etcd version 3.5.0 as v2 API support is deprecated.", "Setting 'quota-backend-bytes' to 0 is not recommended. It should be set to a positive integer representing the maximum size of the backend database, in bytes."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: enable-v2	quota-backend-bytes
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is not applicable for etcd version 3.5.0 as v2 API support is deprecated.
+[Ciri] Reason for quota-backend-bytes: Setting 'quota-backend-bytes' to 0 is not recommended. It should be set to a positive integer representing the maximum size of the backend database, in bytes.

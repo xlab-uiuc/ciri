@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'secureClientPortAddress', 'electionAlg', 'syncEnabled', 'maxSessionTimeout', 'syncLimit', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsUpgradingEnabled'], 'reason': ['dataDir should be a valid directory', 'secureClientPortAddress should be a valid IP address', 'electionAlg should be an integer between 1 and 7', 'syncEnabled should be a boolean value', 'maxSessionTimeout should be a positive integer', 'syncLimit should be a positive integer', 'quorum.auth.serverRequireSasl should be a boolean value', 'autopurge.purgeInterval should be a positive integer', 'localSessionsUpgradingEnabled should be a boolean value']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'electionAlg', 'syncEnabled', 'maxSessionTimeout', 'syncLimit', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsUpgradingEnabled'], 'reason': ['secureClientPortAddress should be a valid IP address.', 'electionAlg should be a valid integer.', 'syncEnabled should be a boolean.', 'maxSessionTimeout should be a valid integer.', 'syncLimit should be a valid integer.', 'quorum.auth.serverRequireSasl should be a boolean.', 'autopurge.purgeInterval should be a valid integer.', 'localSessionsUpgradingEnabled should be a boolean.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'secureClientPortAddress', 'electionAlg', 'syncEnabled', 'maxSessionTimeout', 'syncLimit', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsUpgradingEnabled'], 'reason': ['dataDir is not a valid directory', 'secureClientPortAddress is not a valid IP address', 'electionAlg is not a valid value', 'syncEnabled is not a valid boolean', 'maxSessionTimeout is not a valid integer', 'syncLimit is not a valid integer', 'quorum.auth.serverRequireSasl is not a valid boolean', 'autopurge.purgeInterval is not a valid integer', 'localSessionsUpgradingEnabled is not a valid boolean']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: dataDir	secureClientPortAddress	electionAlg	syncEnabled	maxSessionTimeout	syncLimit	quorum.auth.serverRequireSasl	autopurge.purgeInterval	localSessionsUpgradingEnabled
+[Ciri] Reason for dataDir: dataDir should be a valid directory
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress is not a valid IP address
+[Ciri] Reason for electionAlg: electionAlg should be an integer between 1 and 7
+[Ciri] Reason for syncEnabled: syncEnabled is not a valid boolean
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout is not a valid integer
+[Ciri] Reason for syncLimit: syncLimit should be a positive integer
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl should be a boolean value
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval should be a positive integer
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled should be a boolean value

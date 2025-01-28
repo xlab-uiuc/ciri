@@ -1,0 +1,15 @@
+Wrong shot number:
+[1, 6, 10]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.ipc.server.callqueue.read.ratio'], 'reason': ["The value '999.-1.0.0' for the property 'hbase.regionserver.info.bindAddress' is not a valid IP address.", "The value '-1' for the property 'hbase.ipc.server.callqueue.read.ratio' is not within the accepted range of 0.0 to 1.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.info.bindAddress	hbase.ipc.server.callqueue.read.ratio
+[Ciri] Reason for hbase.regionserver.info.bindAddress: The value '999.-1.0.0' for the property 'hbase.regionserver.info.bindAddress' is not a valid IP address.
+[Ciri] Reason for hbase.ipc.server.callqueue.read.ratio: The value '-1' for the property 'hbase.ipc.server.callqueue.read.ratio' is not within the accepted range of 0.0 to 1.0.

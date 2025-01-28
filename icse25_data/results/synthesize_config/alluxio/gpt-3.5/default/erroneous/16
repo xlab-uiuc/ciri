@@ -1,0 +1,18 @@
+Wrong shot number:
+[13, 5, 12]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.date.format.pattern'], 'reason': ["The date format pattern 'MM-dd-yyyy HH:mm:ss:SSS' contains an incorrect format specifier ':' after 'HH:mm:ss'. The correct format specifier should be 'SSS' for milliseconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.date.format.pattern'], 'reason': ["The date format pattern 'MM-dd-yyyy HH:mm:ss:SSS' contains an incorrect format specifier ':' after 'ss'. It should be 'MM-dd-yyyy HH:mm:ss.SSS'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.date.format.pattern'], 'reason': ["The date format pattern 'MM-dd-yyyy HH:mm:ss:SSS' is incorrect. The correct pattern should be 'MM-dd-yyyy HH:mm:ss:SSS' without the extra ':'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.date.format.pattern
+[Ciri] Reason for alluxio.user.date.format.pattern: The date format pattern 'MM-dd-yyyy HH:mm:ss:SSS' contains an incorrect format specifier ':' after 'ss'. It should be 'MM-dd-yyyy HH:mm:ss.SSS'.

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.leveldb-state-store.compaction-interval-secs</name>
+  <value>7200</value>
+    <description>The time in seconds between full compactions of the leveldb
+    database. Setting the interval to zero disables the full compaction
+    cycles.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-executor.exit-code-file.timeout-ms</name>
+  <value>4000</value>
+    <description>
+      How long the container executor should wait for the exit code file to
+      appear after a reacquired container has exited.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.localizer.cache.cleanup.interval-ms</name>
+  <value>1200000</value>
+    <description>Interval in between cache cleanups.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.disk-health-checker.interval-ms</name>
+  <value>60000</value>
+    <description>Frequency of running disk health checker code.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.best-effort</name>
+  <value>true</value>
+    <description>Client policy for whether timeline operations are non-fatal.
+    Should the failure to obtain a delegation token be considered an application
+    failure (option = false),  or should the client attempt to continue to
+    publish information without it (option=true)</description>
+</property>
+
+<property>
+  <name>yarn.intermediate-data-encryption.enable</name>
+  <value>false</value>
+    <description>
+    Enable/disable intermediate-data encryption at YARN level. For now,
+    this only is used by the FileSystemRMStateStore to setup right
+    file-system security attributes.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.nm-container-queuing.max-queue-wait-time-ms</name>
+  <value>200</value>
+    <description>
+    Max queue wait time for a container queue at a NodeManager.
+    </description>
+</property>
+
+<property>
+  <name>yarn.node-attribute.fs-store.impl.class</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.nodelabels.FileSystemNodeAttributeStore</value>
+    <description>
+      Choose different implementation of node attribute's storage
+    </description>
+</property>
+
+</configuration>

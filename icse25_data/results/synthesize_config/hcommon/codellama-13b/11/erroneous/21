@@ -1,0 +1,26 @@
+Wrong shot number:
+[8]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port'], 'reason': ['The value of fs.s3a.proxy.port is not a valid port number.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'fs.s3a.attempts.maximum', 'fs.s3a.s3guard.ddb.table.create', 'hadoop.security.key.default.cipher'], 'reason': ["The property 'fs.s3a.proxy.port' has the value '1.1' which is not a valid port number.", "The property 'fs.s3a.attempts.maximum' has the value '10' which is not a valid integer.", "The property 'fs.s3a.s3guard.ddb.table.create' has the value 'true' which is not a valid boolean.", "The property 'hadoop.security.key.default.cipher' has the value 'AES/CTR/NoPadding' which is not a valid CipherSuite."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.key.default.cipher'], 'reason': ["The property 'hadoop.security.key.default.cipher' has the value 'AES/CTR/NoPadding' which is not a valid CipherSuite."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'fs.s3a.attempts.maximum', 'fs.s3a.s3guard.ddb.table.create', 'hadoop.security.key.default.cipher'], 'reason': ["The property 'fs.s3a.proxy.port' has the value '1.1' which exceeds the range of an Integer.", "The property 'fs.s3a.attempts.maximum' has the value '10' which exceeds the range of an Integer.", "The property 'fs.s3a.s3guard.ddb.table.create' has the value 'true' which exceeds the range of an Integer.", "The property 'hadoop.security.key.default.cipher' has the value 'AES/CTR/NoPadding' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port'], 'reason': ["The value of the property 'fs.s3a.proxy.port' is invalid. It should be an integer."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port'], 'reason': ['The value of fs.s3a.proxy.port is not a valid integer.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.s3a.proxy.port
+[Ciri] Reason for fs.s3a.proxy.port: The value of fs.s3a.proxy.port is not a valid integer.

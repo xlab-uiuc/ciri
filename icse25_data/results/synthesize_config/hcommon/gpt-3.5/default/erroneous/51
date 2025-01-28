@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 4, 12]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The property 'fs.permissions.umask-mode' has the value '080' which is not a valid octal format. It should be in the format '0XXX' where each X is a digit from 0 to 7."]}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The property 'fs.permissions.umask-mode' has the value '080' which is not a valid octal umask value."]}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode', 'hadoop.registry.zk.retry.interval.ms'], 'reason': ["The property 'fs.permissions.umask-mode' has the value '080' which is not in the correct format. It should be either in octal form (e.g., '022') or symbolic form (e.g., 'u=rwx,g=,o=').", "The property 'hadoop.registry.zk.retry.interval.ms' is missing a description."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.permissions.umask-mode
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has the value '080' which is not a valid octal umask value.

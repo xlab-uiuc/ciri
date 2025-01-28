@@ -1,0 +1,27 @@
+Wrong shot number:
+[7, 2, 12]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'zset-max-listpack-entries', 'rdbcompression', 'tcp-backlog', 'pidfile', 'rdb-save-incremental-fsync', 'hll-sparse-max-bytes'], 'reason': ["The property 'cluster-announce-bus-port' has the value '-1' which is not within the accepted range of ports.", "The property 'zset-max-listpack-entries' is not a valid property in Redis configuration.", "The property 'rdbcompression' has the value 'yes' which is not within the accepted value {yes,no}.", "The property 'tcp-backlog' has the value '1022' which is not within the accepted range of 0 to 511.", "The property 'pidfile' contains an invalid file path.", "The property 'rdb-save-incremental-fsync' has the value 'yes' which is not within the accepted value {yes,no}.", "The property 'hll-sparse-max-bytes' has the value '3000' which is not within the accepted range of 1000 to 16000."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'zset-max-listpack-entries', 'rdbcompression', 'tcp-backlog', 'rdb-save-incremental-fsync', 'hll-sparse-max-bytes'], 'reason': ["The property 'cluster-announce-bus-port' has the value '-1' which is not within the accepted range of ports.", "The property 'zset-max-listpack-entries' is not a valid property in Redis configuration.", "The property 'rdbcompression' has the value 'yes' which is not within the accepted value {yes,no}.", "The property 'tcp-backlog' has the value '1022' which is not within the accepted range of 0 to 511.", "The property 'rdb-save-incremental-fsync' has the value 'yes' which is not within the accepted value {yes,no}.", "The property 'hll-sparse-max-bytes' has the value '3000' which is not within the accepted range of 1000 to 16000."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port'], 'reason': ["The property 'cluster-announce-bus-port' has the value '-1' which is not within the accepted range of valid port numbers."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'zset-max-listpack-entries'], 'reason': ["The property 'cluster-announce-bus-port' has the value '-1' which is not a valid port number.", "The property 'zset-max-listpack-entries' is not a valid configuration parameter."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port'], 'reason': ["The property 'cluster-announce-bus-port' has the value '-1' which is not within the accepted range of valid ports."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'zset-max-listpack-entries'], 'reason': ["The property 'cluster-announce-bus-port' has the value '-1' which is not within the accepted range of port numbers.", "The property 'zset-max-listpack-entries' is not a valid configuration parameter."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-announce-bus-port	zset-max-listpack-entries
+[Ciri] Reason for cluster-announce-bus-port: The property 'cluster-announce-bus-port' has the value '-1' which is not within the accepted range of port numbers.
+[Ciri] Reason for zset-max-listpack-entries: The property 'zset-max-listpack-entries' is not a valid configuration parameter.

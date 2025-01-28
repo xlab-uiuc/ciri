@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 12, 3]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.minorcompaction.pagecache.drop', 'hbase.rootdir.perms'], 'reason': ["The property 'hbase.regionserver.minorcompaction.pagecache.drop' expects a boolean value (true or false), but received '1.5'.", "The value '1400' for 'hbase.rootdir.perms' does not follow the correct permission format. It should be something like '700'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.minorcompaction.pagecache.drop	hbase.rootdir.perms
+[Ciri] Reason for hbase.regionserver.minorcompaction.pagecache.drop: The property 'hbase.regionserver.minorcompaction.pagecache.drop' expects a boolean value (true or false), but received '1.5'.
+[Ciri] Reason for hbase.rootdir.perms: The value '1400' for 'hbase.rootdir.perms' does not follow the correct permission format. It should be something like '700'.

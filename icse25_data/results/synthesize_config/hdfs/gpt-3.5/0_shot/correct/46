@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client-write-packet-size', 'dfs.client.retry.policy.enabled'], 'reason': ["Property 'dfs.client-write-packet-size' should be in the range of 1024 to 1048576.", "Property 'dfs.client.retry.policy.enabled' should be set to 'true' for enabling DFSClient retry policy."]}
+
+{'hasError': True, 'errParameter': ['dfs.client-write-packet-size', 'dfs.client.retry.policy.enabled'], 'reason': ["Property 'dfs.client-write-packet-size' should be set to a value greater than 0.", "Property 'dfs.client.retry.policy.enabled' should be set to 'true' instead of 'false'."]}
+
+{'hasError': True, 'errParameter': ['dfs.client-write-packet-size', 'dfs.client.retry.policy.enabled'], 'reason': ["The property 'dfs.client-write-packet-size' is deprecated in HDFS 3.3.0. Consider using 'dfs.bytes-per-checksum' instead.", "The property 'dfs.client.retry.policy.enabled' is not a valid property in HDFS 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.client-write-packet-size	dfs.client.retry.policy.enabled
+[Ciri] Reason for dfs.client-write-packet-size: The property 'dfs.client-write-packet-size' is deprecated in HDFS 3.3.0. Consider using 'dfs.bytes-per-checksum' instead.
+[Ciri] Reason for dfs.client.retry.policy.enabled: Property 'dfs.client.retry.policy.enabled' should be set to 'true' for enabling DFSClient retry policy.

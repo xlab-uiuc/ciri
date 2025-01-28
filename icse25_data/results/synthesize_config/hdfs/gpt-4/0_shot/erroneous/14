@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.backup.address', 'dfs.namenode.checkpoint.dir', 'dfs.client.failover.connection.retries', 'dfs.datanode.bp-ready.timeout'], 'reason': ["The 'dfs.namenode.backup.address' property is deprecated and should not be used in HDFS 3.3.0.", "The value for 'dfs.namenode.checkpoint.dir' should be an absolute path or a list of absolute paths, not just 'ciri'.", "The value for 'dfs.client.failover.connection.retries' should be a non-negative integer, as negative values are not valid.", "The format for 'dfs.datanode.bp-ready.timeout' should include a valid time unit if specified, and '20s' should be correctly formatted according to the expected time unit notation."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dfs.namenode.backup.address	dfs.namenode.checkpoint.dir	dfs.client.failover.connection.retries	dfs.datanode.bp-ready.timeout
+[Ciri] Reason for dfs.namenode.backup.address: The 'dfs.namenode.backup.address' property is deprecated and should not be used in HDFS 3.3.0.
+[Ciri] Reason for dfs.namenode.checkpoint.dir: The value for 'dfs.namenode.checkpoint.dir' should be an absolute path or a list of absolute paths, not just 'ciri'.
+[Ciri] Reason for dfs.client.failover.connection.retries: The value for 'dfs.client.failover.connection.retries' should be a non-negative integer, as negative values are not valid.
+[Ciri] Reason for dfs.datanode.bp-ready.timeout: The format for 'dfs.datanode.bp-ready.timeout' should include a valid time unit if specified, and '20s' should be correctly formatted according to the expected time unit notation.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.metastore.dir', 'alluxio.worker.ufs.instream.cache.expiration.time', 'alluxio.master.ufs.active.sync.interval'], 'reason': ["The property 'alluxio.master.metastore.dir' does not exist. The correct property might be 'alluxio.master.metastore.dir.path' for specifying the directory of the metastore.", "The format for 'alluxio.worker.ufs.instream.cache.expiration.time' is incorrect. It should be specified in milliseconds without the 'min' suffix.", "The format for 'alluxio.master.ufs.active.sync.interval' is incorrect. It should be specified in milliseconds without the 'sec' suffix."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.metastore.dir	alluxio.worker.ufs.instream.cache.expiration.time	alluxio.master.ufs.active.sync.interval
+[Ciri] Reason for alluxio.master.metastore.dir: The property 'alluxio.master.metastore.dir' does not exist. The correct property might be 'alluxio.master.metastore.dir.path' for specifying the directory of the metastore.
+[Ciri] Reason for alluxio.worker.ufs.instream.cache.expiration.time: The format for 'alluxio.worker.ufs.instream.cache.expiration.time' is incorrect. It should be specified in milliseconds without the 'min' suffix.
+[Ciri] Reason for alluxio.master.ufs.active.sync.interval: The format for 'alluxio.master.ufs.active.sync.interval' is incorrect. It should be specified in milliseconds without the 'sec' suffix.

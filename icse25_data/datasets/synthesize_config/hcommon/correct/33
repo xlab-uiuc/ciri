@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.connection.timeout.ms</name>
+  <value>120000</value>
+  <description>
+    This property is the connection timeout (in milliseconds) for LDAP
+    operations. If the LDAP provider doesn't establish a connection within the
+    specified period, it will abort the connect attempt. Non-positive value
+    means no LDAP connection timeout is specified in which case it waits for the
+    connection to establish until the underlying network times out.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.ssl</name>
+  <value>true</value>
+  <description>
+    Whether or not to use SSL when connecting to the LDAP server.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.ddb.max.retries</name>
+  <value>1</value>
+    <description>
+      Max retries on throttled/incompleted DynamoDB operations
+      before giving up and throwing an IOException.
+      Each retry is delayed with an exponential
+      backoff timer which starts at 100 milliseconds and approximately
+      doubles each time.  The minimum wait before throwing an exception is
+      sum(100, 200, 400, 800, .. 100*2^N-1 ) == 100 * ((2^N)-1)
+    </description>
+</property>
+
+<property>
+  <name>fs.wasbs.impl</name>
+  <value>org.apache.hadoop.fs.azure.NativeAzureFileSystem$Secure</value>
+  <description>The implementation class of the Secure Native Azure Filesystem</description>
+</property>
+
+<property>
+  <name>ipc.client.connect.retry.interval</name>
+  <value>500</value>
+  <description>Indicates the number of milliseconds a client will wait for
+    before retrying to establish a server connection.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.rpc.socket.factory.class.default</name>
+  <value>org.apache.hadoop.net.StandardSocketFactory</value>
+  <description> Default SocketFactory to use. This parameter is expected to be
+    formatted as "package.FactoryClassName".
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.crypto.buffer.size</name>
+  <value>16384</value>
+  <description>
+    The buffer size used by CryptoInputStream and CryptoOutputStream.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.zk.retry.times</name>
+  <value>1</value>
+    <description>
+      Zookeeper connection retry count before failing
+    </description>
+</property>
+
+</configuration>

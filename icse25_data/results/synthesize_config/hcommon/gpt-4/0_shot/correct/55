@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].faircallqueue.multiplexer.weights', 'adl.feature.ownerandgroup.enableupn', 'hadoop.prometheus.endpoint.enabled'], 'reason': ["The property name 'ipc.[port_number].faircallqueue.multiplexer.weights' uses a placeholder '[port_number]' which is not a standard convention in configuration files. Property names are typically static and do not include variable sections.", "The property 'adl.feature.ownerandgroup.enableupn' is specific to Azure Data Lake (ADL) and may not be applicable or recognized in a generic Hadoop (hcommon) configuration context.", "The property 'hadoop.prometheus.endpoint.enabled' might not be recognized in Hadoop version 3.3.0 as Prometheus support for metrics was introduced in later versions of Hadoop."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: ipc.[port_number].faircallqueue.multiplexer.weights	adl.feature.ownerandgroup.enableupn	hadoop.prometheus.endpoint.enabled
+[Ciri] Reason for ipc.[port_number].faircallqueue.multiplexer.weights: The property name 'ipc.[port_number].faircallqueue.multiplexer.weights' uses a placeholder '[port_number]' which is not a standard convention in configuration files. Property names are typically static and do not include variable sections.
+[Ciri] Reason for adl.feature.ownerandgroup.enableupn: The property 'adl.feature.ownerandgroup.enableupn' is specific to Azure Data Lake (ADL) and may not be applicable or recognized in a generic Hadoop (hcommon) configuration context.
+[Ciri] Reason for hadoop.prometheus.endpoint.enabled: The property 'hadoop.prometheus.endpoint.enabled' might not be recognized in Hadoop version 3.3.0 as Prometheus support for metrics was introduced in later versions of Hadoop.

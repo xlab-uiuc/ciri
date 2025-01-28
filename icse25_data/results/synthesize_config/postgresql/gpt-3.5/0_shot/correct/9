@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['krb_caseins_users', 'log_temp_files'], 'reason': ['krb_caseins_users is not a valid parameter for PostgreSQL version 13.0.', 'log_temp_files value should be between -1 and 1 for PostgreSQL version 13.0.']}
+
+{'hasError': True, 'errParameter': ['krb_caseins_users', 'log_temp_files'], 'reason': ['krb_caseins_users is not a valid parameter for PostgreSQL version 13.0.', 'log_temp_files value should be between -1 and 1 for PostgreSQL version 13.0.']}
+
+{'hasError': True, 'errParameter': ['krb_caseins_users', 'log_temp_files'], 'reason': ['krb_caseins_users is not a valid parameter for PostgreSQL version 13.0', 'log_temp_files value is out of range for PostgreSQL version 13.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: krb_caseins_users	log_temp_files
+[Ciri] Reason for krb_caseins_users: krb_caseins_users is not a valid parameter for PostgreSQL version 13.0.
+[Ciri] Reason for log_temp_files: log_temp_files value should be between -1 and 1 for PostgreSQL version 13.0.

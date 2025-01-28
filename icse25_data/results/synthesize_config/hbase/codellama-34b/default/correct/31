@@ -1,0 +1,26 @@
+Wrong shot number:
+[4, 2, 1]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.client.scanner.caching', 'hbase.hstore.blockingWaitTime', 'hbase.auth.key.update.interval', 'hbase.column.max.version'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '4362' which is not of the correct type Integer.", "The property 'hbase.client.scanner.caching' has the value '1073741823' which is not of the correct type Integer.", "The property 'hbase.hstore.blockingWaitTime' has the value '90000' which is not of the correct type Integer.", "The property 'hbase.auth.key.update.interval' has the value '172800000' which is not of the correct type Integer.", "The property 'hbase.column.max.version' has the value '1' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.client.scanner.caching', 'hbase.auth.key.update.interval', 'hbase.column.max.version'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '4362' which is not of the correct type Integer.", "The property 'hbase.client.scanner.caching' has the value '1073741823' which is not of the correct type Integer.", "The property 'hbase.auth.key.update.interval' has the value '172800000' which is not of the correct type Integer.", "The property 'hbase.column.max.version' has the value '1' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.client.scanner.caching', 'hbase.auth.key.update.interval'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '4362' which is not of the correct type Integer.", "The property 'hbase.client.scanner.caching' has the value '1073741823' which is not of the correct type Integer.", "The property 'hbase.auth.key.update.interval' has the value '172800000' which is not of the correct type Integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '4362' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '4362' which does not follow the correct port format."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '4362' which is not of the correct type Integer."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.zookeeper.property.clientPort
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The property 'hbase.zookeeper.property.clientPort' has the value '4362' which does not follow the correct port format.

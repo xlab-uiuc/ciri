@@ -1,0 +1,18 @@
+Wrong shot number:
+[11, 13, 10]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.mount.table.root.ufs'], 'reason': ["The property 'alluxio.master.mount.table.root.ufs' has the value '/valid/file1' which is not a valid UFS path."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.write.location.policy.class'], 'reason': ["The property 'alluxio.user.block.write.location.policy.class' has the value 'alluxio.client.block.policy.LocalFirstPolicy' which is not a valid class name."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.write.location.policy.class'], 'reason': ["The value of the property 'alluxio.user.block.write.location.policy.class' should be 'alluxio.client.block.policy.LocalFirstAvoidEvictionPolicy' or 'alluxio.client.block.policy.LocalFirstPolicy' to enable the property 'alluxio.user.block.write.location.fallback.policy.class'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.block.write.location.policy.class
+[Ciri] Reason for alluxio.user.block.write.location.policy.class: The value of the property 'alluxio.user.block.write.location.policy.class' should be 'alluxio.client.block.policy.LocalFirstAvoidEvictionPolicy' or 'alluxio.client.block.policy.LocalFirstPolicy' to enable the property 'alluxio.user.block.write.location.fallback.policy.class'.

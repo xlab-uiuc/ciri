@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.server-defaults.validity.period.ms', 'dfs.datanode.max.locked.memory'], 'reason': ['Support multiple time unit suffix is not allowed for dfs.client.server-defaults.validity.period.ms.', 'Support multiple size unit suffix is not allowed for dfs.datanode.max.locked.memory.']}
+
+{'hasError': True, 'errParameter': ['dfs.client.server-defaults.validity.period.ms', 'dfs.datanode.max.locked.memory'], 'reason': ["Support multiple time unit suffix is not allowed for property 'dfs.client.server-defaults.validity.period.ms'.", "Support multiple size unit suffix is not allowed for property 'dfs.datanode.max.locked.memory'."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.server-defaults.validity.period.ms', 'dfs.datanode.max.locked.memory', 'dfs.client.read.shortcircuit.streams.cache.expiry.ms'], 'reason': ['Support multiple time unit suffix is not allowed in dfs.client.server-defaults.validity.period.ms', 'Support multiple size unit suffix is not allowed in dfs.datanode.max.locked.memory', 'Support multiple time unit suffix is not allowed in dfs.client.read.shortcircuit.streams.cache.expiry.ms']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.client.server-defaults.validity.period.ms	dfs.datanode.max.locked.memory
+[Ciri] Reason for dfs.client.server-defaults.validity.period.ms: Support multiple time unit suffix is not allowed for property 'dfs.client.server-defaults.validity.period.ms'.
+[Ciri] Reason for dfs.datanode.max.locked.memory: Support multiple size unit suffix is not allowed for dfs.datanode.max.locked.memory.

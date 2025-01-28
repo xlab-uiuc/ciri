@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.zk-appid-node.split-index', 'yarn.nodemanager.pmem-check-enabled', 'yarn.sharedcache.admin.address'], 'reason': ["The property 'yarn.resourcemanager.zk-appid-node.split-index' has a description that is too long and should be shortened for better readability.", "The value for 'yarn.nodemanager.pmem-check-enabled' should be a boolean (true/false) to enable or disable physical memory limits enforcement for containers.", "The value for 'yarn.sharedcache.admin.address' should be in the format 'hostname:port' for better clarity."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.zk-appid-node.split-index', 'yarn.nodemanager.pmem-check-enabled', 'yarn.sharedcache.admin.address'], 'reason': ["The property 'yarn.resourcemanager.zk-appid-node.split-index' has a description that is too long and should be shortened for better readability.", "The value for 'yarn.nodemanager.pmem-check-enabled' should be a boolean (true/false) to indicate whether physical memory limits will be enforced for containers.", "The value for 'yarn.sharedcache.admin.address' should be in the format 'hostname:port' instead of '0.0.0.0:3000'."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.zk-appid-node.split-index', 'yarn.nodemanager.pmem-check-enabled', 'yarn.sharedcache.admin.address'], 'reason': ["The property 'yarn.resourcemanager.zk-appid-node.split-index' has a description that is too long and should be shortened for better readability.", "The value for property 'yarn.nodemanager.pmem-check-enabled' should be a boolean (true/false) to enable or disable physical memory limits enforcement for containers.", "The value for property 'yarn.sharedcache.admin.address' should be in the format 'hostname:port' for better clarity."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.resourcemanager.zk-appid-node.split-index	yarn.nodemanager.pmem-check-enabled	yarn.sharedcache.admin.address
+[Ciri] Reason for yarn.resourcemanager.zk-appid-node.split-index: The property 'yarn.resourcemanager.zk-appid-node.split-index' has a description that is too long and should be shortened for better readability.
+[Ciri] Reason for yarn.nodemanager.pmem-check-enabled: The value for 'yarn.nodemanager.pmem-check-enabled' should be a boolean (true/false) to indicate whether physical memory limits will be enforced for containers.
+[Ciri] Reason for yarn.sharedcache.admin.address: The value for 'yarn.sharedcache.admin.address' should be in the format 'hostname:port' instead of '0.0.0.0:3000'.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bgwriter_flush_after', 'enable_parallel_append'], 'reason': ["The 'bgwriter_flush_after' parameter is measured in kilobytes (kB) and should be set with a unit (e.g., 512kB).", "The 'enable_parallel_append' parameter does not exist in PostgreSQL 13.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: bgwriter_flush_after	enable_parallel_append
+[Ciri] Reason for bgwriter_flush_after: The 'bgwriter_flush_after' parameter is measured in kilobytes (kB) and should be set with a unit (e.g., 512kB).
+[Ciri] Reason for enable_parallel_append: The 'enable_parallel_append' parameter does not exist in PostgreSQL 13.0.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.journal-plugin.qjournal', 'dfs.namenode.storage.dir.perm'], 'reason': ["The property 'dfs.namenode.edits.journal-plugin.qjournal' is used for configuring the Journal Manager for the NameNode in a Quorum Journal Manager setup, which is not recommended for HDFS 3.3.0. Instead, the recommended approach is to use Multiple Edits Directories.", "The property 'dfs.namenode.storage.dir.perm' is not a valid configuration property in HDFS 3.3.0. The permissions for the NameNode storage directories are set using the 'dfs.namenode.storage.dir.perms' property."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.edits.journal-plugin.qjournal	dfs.namenode.storage.dir.perm
+[Ciri] Reason for dfs.namenode.edits.journal-plugin.qjournal: The property 'dfs.namenode.edits.journal-plugin.qjournal' is used for configuring the Journal Manager for the NameNode in a Quorum Journal Manager setup, which is not recommended for HDFS 3.3.0. Instead, the recommended approach is to use Multiple Edits Directories.
+[Ciri] Reason for dfs.namenode.storage.dir.perm: The property 'dfs.namenode.storage.dir.perm' is not a valid configuration property in HDFS 3.3.0. The permissions for the NameNode storage directories are set using the 'dfs.namenode.storage.dir.perms' property.

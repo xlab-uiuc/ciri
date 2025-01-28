@@ -1,0 +1,20 @@
+Wrong shot number:
+[1, 10, 12]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.s3guard.ddb.table.capacity.write', 'net.topology.table.file.name'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is out of the valid range of a port number.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '1' which is not within the accepted value {0, -1}.", "The property 'net.topology.table.file.name' has the value '/valid/file1' which is not a valid file path."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.ftp.timeout'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is out of the valid range of a port number.", "The property 'fs.ftp.timeout' has the value '-1' which is out of the valid range of a timeout."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.s3guard.ddb.table.capacity.write', 'net.topology.table.file.name'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is out of the valid range of a port number.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '1' which is not of the correct type Integer.", "The file '/valid/file1' does not exist."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.host.port	fs.s3a.s3guard.ddb.table.capacity.write	net.topology.table.file.name
+[Ciri] Reason for fs.ftp.host.port: The property 'fs.ftp.host.port' has the value '65536' which is out of the valid range of a port number.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '1' which is not within the accepted value {0, -1}.
+[Ciri] Reason for net.topology.table.file.name: The property 'net.topology.table.file.name' has the value '/valid/file1' which is not a valid file path.

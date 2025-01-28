@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.worker.network.writer.buffer.size.messages', 'alluxio.worker.keytab.file'], 'reason': ["The property 'alluxio.proxy.web.bind.host' is invalid. The valid format is an IP address or hostname, not 'x.0.0.0.0.0'.", "The property 'alluxio.worker.network.writer.buffer.size.messages' is not a valid Alluxio configuration property in version 2.5.0.", "The property 'alluxio.worker.keytab.file' is not a valid Alluxio configuration property in version 2.5.0. The correct property for specifying the Kerberos keytab file path is 'alluxio.worker.keytab.file'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.proxy.web.bind.host	alluxio.worker.network.writer.buffer.size.messages	alluxio.worker.keytab.file
+[Ciri] Reason for alluxio.proxy.web.bind.host: The property 'alluxio.proxy.web.bind.host' is invalid. The valid format is an IP address or hostname, not 'x.0.0.0.0.0'.
+[Ciri] Reason for alluxio.worker.network.writer.buffer.size.messages: The property 'alluxio.worker.network.writer.buffer.size.messages' is not a valid Alluxio configuration property in version 2.5.0.
+[Ciri] Reason for alluxio.worker.keytab.file: The property 'alluxio.worker.keytab.file' is not a valid Alluxio configuration property in version 2.5.0. The correct property for specifying the Kerberos keytab file path is 'alluxio.worker.keytab.file'.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'maxmemory-clients', 'replica-announce-ip', 'replica-lazy-flush', 'set-max-intset-entries', 'stop-writes-on-bgsave-error', 'list-max-listpack-size', 'pidfile'], 'reason': ["The 'enable-module-command' parameter is not a valid Redis configuration option in version 7.0.0.", "The 'maxmemory-clients' parameter is not a valid Redis configuration option in version 7.0.0. The correct parameter is 'maxmemory'.", "The 'replica-announce-ip' parameter is not a valid Redis configuration option in version 7.0.0.", "The 'replica-lazy-flush' parameter is not a valid Redis configuration option in version 7.0.0.", "The 'set-max-intset-entries' parameter is not a valid Redis configuration option in version 7.0.0.", "The 'stop-writes-on-bgsave-error' parameter is not a valid Redis configuration option in version 7.0.0.", "The 'list-max-listpack-size' parameter is not a valid Redis configuration option in version 7.0.0.", "The 'pidfile' parameter value '/valid/file2.pid' is not a valid path on most systems. The path should be an absolute path and the directory should exist."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: enable-module-command	maxmemory-clients	replica-announce-ip	replica-lazy-flush	set-max-intset-entries	stop-writes-on-bgsave-error	list-max-listpack-size	pidfile
+[Ciri] Reason for enable-module-command: The 'enable-module-command' parameter is not a valid Redis configuration option in version 7.0.0.
+[Ciri] Reason for maxmemory-clients: The 'maxmemory-clients' parameter is not a valid Redis configuration option in version 7.0.0. The correct parameter is 'maxmemory'.
+[Ciri] Reason for replica-announce-ip: The 'replica-announce-ip' parameter is not a valid Redis configuration option in version 7.0.0.
+[Ciri] Reason for replica-lazy-flush: The 'replica-lazy-flush' parameter is not a valid Redis configuration option in version 7.0.0.
+[Ciri] Reason for set-max-intset-entries: The 'set-max-intset-entries' parameter is not a valid Redis configuration option in version 7.0.0.
+[Ciri] Reason for stop-writes-on-bgsave-error: The 'stop-writes-on-bgsave-error' parameter is not a valid Redis configuration option in version 7.0.0.
+[Ciri] Reason for list-max-listpack-size: The 'list-max-listpack-size' parameter is not a valid Redis configuration option in version 7.0.0.
+[Ciri] Reason for pidfile: The 'pidfile' parameter value '/valid/file2.pid' is not a valid path on most systems. The path should be an absolute path and the directory should exist.

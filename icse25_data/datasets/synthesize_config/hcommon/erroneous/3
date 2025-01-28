@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.groups.cache.secs</name>
+  <value>300</value>
+  <description>
+    This is the config controlling the validity of the entries in the cache
+    containing the user->group mapping. When this duration has expired,
+    then the implementation of the group mapping provider is invoked to get
+    the groups of the user and then cached back.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.read.timeout.ms</name>
+  <value>60000</value>
+  <description>
+    This property is the read timeout (in milliseconds) for LDAP
+    operations. If the LDAP provider doesn't get a LDAP response within the
+    specified period, it will abort the read attempt. Non-positive value
+    means no read timeout is specified in which case it waits for the response
+    infinitely.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.service.shutdown.timeout</name>
+  <value>30s</value>
+    <description>
+      Timeout to wait for each shutdown operation to complete.
+      If a hook takes longer than this time to complete, it will be interrupted,
+      so the service will shutdown. This allows the service shutdown
+      to recover from a blocked operation.
+      Some shutdown hooks may need more time than this, for example when
+      a large amount of data needs to be uploaded to an object store.
+      In this situation: increase the timeout.
+
+      The minimum duration of the timeout is 1 second, "1s".
+    </description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.threshold</name>
+  <value>128M</value>
+  <description>How big (in bytes) to split upload or copy operations up into.
+    This also controls the partition size in renamed files, as rename() involves
+    copying the source file(s).
+    A suffix from the set {K,M,G,T,P} may be used to scale the numeric value.
+  </description>
+</property>
+
+<property>
+  <name>io.mapfile.bloom.error.rate</name>
+  <value>true</value>
+  <description>The rate of false positives in BloomFilter-s used in BloomMapFile.
+  As this value decreases, the size of BloomFilter-s increases exponentially. This
+  value is the probability of encountering false positives (default is 0.5%).
+  </description>
+</property>
+
+<property>
+  <name>file.stream-buffer-size</name>
+  <value>2048</value>
+  <description>The size of buffer to stream files.
+  The size of this buffer should probably be a multiple of hardware
+  page size (4096 on Intel x86), and it determines how much data is
+  buffered during read and write operations.</description>
+</property>
+
+<property>
+  <name>hadoop.user.group.static.mapping.overrides</name>
+  <value>dr.who=;</value>
+  <description>
+    Static mapping of user to groups. This will override the groups if
+    available in the system for the specified user. In other words, groups
+    look-up will not happen for these users, instead groups mapped in this
+    configuration will be used.
+    Mapping should be in this format.
+    user1=group1,group2;user2=;user3=group2;
+    Default, "dr.who=;" will consider "dr.who" as user without groups.
+  </description>
+</property>
+
+<property>
+  <name>fs.client.resolve.topology.enabled</name>
+  <value>true</value>
+    <description>Whether the client machine will use the class specified by
+      property net.topology.node.switch.mapping.impl to compute the network
+      distance between itself and remote machines of the FileSystem. Additional
+      properties might need to be configured depending on the class specified
+      in net.topology.node.switch.mapping.impl. For example, if
+      org.apache.hadoop.net.ScriptBasedMapping is used, a valid script file
+      needs to be specified in net.topology.script.file.name.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-policy', 'maxmemory-clients', 'slowlog-max-len', 'repl-diskless-sync-delay', 'appendfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len'], 'reason': ['maxmemory-policy is not a valid value.', 'maxmemory-clients is not a valid value.', 'slowlog-max-len is not a valid value.', 'repl-diskless-sync-delay is not a valid value.', 'appendfilename is not a valid value.', 'hll-sparse-max-bytes is not a valid value.', 'proto-max-bulk-len is not a valid value.']}
+
+{'hasError': True, 'errParameter': ['appendfilename'], 'reason': ['appendfilename is not a valid property for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['maxmemory-policy', 'maxmemory-clients', 'slowlog-max-len', 'repl-diskless-sync-delay', 'appendfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len'], 'reason': ['maxmemory-policy must be one of volatile-lru, volatile-lfu, volatile-ttl, allkeys-lru, allkeys-lfu, allkeys-random, volatile-random, noeviction', 'maxmemory-clients must be an integer', 'slowlog-max-len must be an integer', 'repl-diskless-sync-delay must be an integer', 'appendfilename must be a string', 'hll-sparse-max-bytes must be an integer', 'proto-max-bulk-len must be an integer']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: maxmemory-policy	maxmemory-clients	slowlog-max-len	repl-diskless-sync-delay	appendfilename	hll-sparse-max-bytes	proto-max-bulk-len
+[Ciri] Reason for maxmemory-policy: maxmemory-policy is not a valid value.
+[Ciri] Reason for maxmemory-clients: maxmemory-clients must be an integer
+[Ciri] Reason for slowlog-max-len: slowlog-max-len is not a valid value.
+[Ciri] Reason for repl-diskless-sync-delay: repl-diskless-sync-delay must be an integer
+[Ciri] Reason for appendfilename: appendfilename must be a string
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes is not a valid value.
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len must be an integer

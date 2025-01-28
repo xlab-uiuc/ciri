@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.swebhdfs.impl', 'fs.s3a.socket.send.buffer', 'fs.s3a.committer.threads', 'ipc.client.connect.max.retries', 'ipc.[port_number].decay-scheduler.thresholds', 'ftp.stream-buffer-size', 'ha.health-monitor.check-interval.ms', 'hadoop.caller.context.enabled'], 'reason': ["The correct property name should be 'fs.AbstractFileSystem.swebhdfs.impl'. There might be a typo or incorrect property name.", "The 'fs.s3a.socket.send.buffer' might not be applicable for all configurations or could be incorrectly specified.", "The 'fs.s3a.committer.threads' value is typically configured based on specific use cases. The provided value might not be optimal.", "The 'ipc.client.connect.max.retries' property is correctly named but the optimal value can vary based on network reliability.", "The 'ipc.[port_number].decay-scheduler.thresholds' property contains placeholders which should be replaced with actual values.", "The 'ftp.stream-buffer-size' is correctly named but the optimal buffer size can vary based on specific use cases.", "The 'ha.health-monitor.check-interval.ms' property is correctly named but the interval might need adjustment based on the HA setup.", "The 'hadoop.caller.context.enabled' property is correctly named but enabling or disabling it depends on auditing requirements."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.AbstractFileSystem.swebhdfs.impl	fs.s3a.socket.send.buffer	fs.s3a.committer.threads	ipc.client.connect.max.retries	ipc.[port_number].decay-scheduler.thresholds	ftp.stream-buffer-size	ha.health-monitor.check-interval.ms	hadoop.caller.context.enabled
+[Ciri] Reason for fs.AbstractFileSystem.swebhdfs.impl: The correct property name should be 'fs.AbstractFileSystem.swebhdfs.impl'. There might be a typo or incorrect property name.
+[Ciri] Reason for fs.s3a.socket.send.buffer: The 'fs.s3a.socket.send.buffer' might not be applicable for all configurations or could be incorrectly specified.
+[Ciri] Reason for fs.s3a.committer.threads: The 'fs.s3a.committer.threads' value is typically configured based on specific use cases. The provided value might not be optimal.
+[Ciri] Reason for ipc.client.connect.max.retries: The 'ipc.client.connect.max.retries' property is correctly named but the optimal value can vary based on network reliability.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: The 'ipc.[port_number].decay-scheduler.thresholds' property contains placeholders which should be replaced with actual values.
+[Ciri] Reason for ftp.stream-buffer-size: The 'ftp.stream-buffer-size' is correctly named but the optimal buffer size can vary based on specific use cases.
+[Ciri] Reason for ha.health-monitor.check-interval.ms: The 'ha.health-monitor.check-interval.ms' property is correctly named but the interval might need adjustment based on the HA setup.
+[Ciri] Reason for hadoop.caller.context.enabled: The 'hadoop.caller.context.enabled' property is correctly named but enabling or disabling it depends on auditing requirements.

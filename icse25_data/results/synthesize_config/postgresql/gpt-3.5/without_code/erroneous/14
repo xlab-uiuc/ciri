@@ -1,0 +1,22 @@
+Wrong shot number:
+[8, 4, 1]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_files_per_process', 'wal_receiver_status_interval', 'log_startup_progress_interval', 'stats_fetch_consistency', 'jit_inline_above_cost'], 'reason': ["The property 'max_files_per_process' has the value '-1' which is not a valid positive integer.", "The property 'wal_receiver_status_interval' has the value '10s' which is not a valid integer.", "The property 'log_startup_progress_interval' has the value '10s' which is not a valid integer.", "The property 'stats_fetch_consistency' has the value 'cache' which is not a valid setting.", "The property 'jit_inline_above_cost' has the value '500000' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['max_files_per_process', 'wal_receiver_status_interval', 'log_startup_progress_interval', 'stats_fetch_consistency', 'jit_inline_above_cost'], 'reason': ["The property 'max_files_per_process' has the value '-1' which is not a valid positive integer.", "The property 'wal_receiver_status_interval' has the value '10s' which is not a valid integer.", "The property 'log_startup_progress_interval' has the value '10s' which is not a valid integer.", "The property 'stats_fetch_consistency' has the value 'cache' which is not a valid setting.", "The property 'jit_inline_above_cost' has the value '500000' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['stats_fetch_consistency'], 'reason': ["The property 'stats_fetch_consistency' has an invalid value 'cache'. It should be set to 'on' or 'off'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: max_files_per_process	wal_receiver_status_interval	log_startup_progress_interval	stats_fetch_consistency	jit_inline_above_cost
+[Ciri] Reason for max_files_per_process: The property 'max_files_per_process' has the value '-1' which is not a valid positive integer.
+[Ciri] Reason for wal_receiver_status_interval: The property 'wal_receiver_status_interval' has the value '10s' which is not a valid integer.
+[Ciri] Reason for log_startup_progress_interval: The property 'log_startup_progress_interval' has the value '10s' which is not a valid integer.
+[Ciri] Reason for stats_fetch_consistency: The property 'stats_fetch_consistency' has the value 'cache' which is not a valid setting.
+[Ciri] Reason for jit_inline_above_cost: The property 'jit_inline_above_cost' has the value '500000' which exceeds the range of an Integer.

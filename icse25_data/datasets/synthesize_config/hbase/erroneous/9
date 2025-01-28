@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.info.bindAddress</name>
+  <value>0.0.0</value>
+    <description>The address for the HBase RegionServer web UI</description>
+</property>
+
+<property>
+  <name>hbase.client.retries.number</name>
+  <value>15</value>
+    <description>Maximum retries.  Used as maximum for all retryable
+    operations such as the getting of a cell's value, starting a row update,
+    etc.  Retry interval is a rough function based on hbase.client.pause.  At
+    first we retry at this interval but then with backoff, we pretty quickly reach
+    retrying every ten seconds.  See HConstants#RETRY_BACKOFF for how the backup
+    ramps up.  Change this setting and hbase.client.pause to suit your workload.</description>
+</property>
+
+<property>
+  <name>hbase.master.balancer.maxRitPercent</name>
+  <value>2.0</value>
+    <description>The max percent of regions in transition when balancing.
+      The default value is 1.0. So there are no balancer throttling. If set this config to 0.01,
+      It means that there are at most 1% regions in transition when balancing.
+      Then the cluster's availability is at least 99% when balancing.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.flusher.count</name>
+  <value>4</value>
+    <description> The number of flush threads. With fewer threads, the MemStore flushes will be
+      queued. With more threads, the flushes will be executed in parallel, increasing the load on
+      HDFS, and potentially causing more compactions. </description>
+</property>
+
+<property>
+  <name>hbase.snapshot.working.dir</name>
+  <value>/valid/dir1</value>
+    <description>Location where the snapshotting process will occur. The location of the
+      completed snapshots will not change, but the temporary directory where the snapshot
+      process occurs will be set to this location. This can be a separate filesystem than
+      the root directory, for performance increase purposes. See HBASE-21098 for more
+      information</description>
+</property>
+
+<property>
+  <name>hbase.server.compactchecker.interval.multiplier</name>
+  <value>1000</value>
+    <description>The number that determines how often we scan to see if compaction is necessary.
+        Normally, compactions are done after some events (such as memstore flush), but if
+        region didn't receive a lot of writes for some time, or due to different compaction
+        policies, it may be necessary to check it periodically. The interval between checks is
+        hbase.server.compactchecker.interval.multiplier multiplied by
+        hbase.server.thread.wakefrequency.</description>
+</property>
+
+<property>
+  <name>hbase.security.authentication</name>
+  <value>simple</value>
+    <description>
+      Controls whether or not secure authentication is enabled for HBase.
+      Possible values are 'simple' (no authentication), and 'kerberos'.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.compactor.class</name>
+  <value>org.apache.hadoop.hbase.mob.compactions.PartitionedMobCompactor</value>
+    <description>
+      Implementation of mob compactor, the default one is PartitionedMobCompactor.
+    </description>
+</property>
+
+</configuration>

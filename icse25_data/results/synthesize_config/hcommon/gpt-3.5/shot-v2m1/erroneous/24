@@ -1,0 +1,16 @@
+Wrong shot number:
+[10]
+
+Correct shot number:
+[16, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.fast.upload.buffer', 'ipc.[port_number].faircallqueue.multiplexer.weights'], 'reason': ["The property 'fs.ftp.host.port' has the value 'file://' which is not a valid port number.", "The property 'fs.s3a.fast.upload.buffer' has a description that contains formatting issues and does not provide clear information.", "The property 'ipc.[port_number].faircallqueue.multiplexer.weights' is not a valid property name format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.host.port	fs.s3a.fast.upload.buffer	ipc.[port_number].faircallqueue.multiplexer.weights
+[Ciri] Reason for fs.ftp.host.port: The property 'fs.ftp.host.port' has the value 'file://' which is not a valid port number.
+[Ciri] Reason for fs.s3a.fast.upload.buffer: The property 'fs.s3a.fast.upload.buffer' has a description that contains formatting issues and does not provide clear information.
+[Ciri] Reason for ipc.[port_number].faircallqueue.multiplexer.weights: The property 'ipc.[port_number].faircallqueue.multiplexer.weights' is not a valid property name format.

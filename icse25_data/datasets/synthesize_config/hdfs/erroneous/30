@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.client.cached.conn.retry</name>
+  <value>-1</value>
+  <description>The number of times the HDFS client will pull a socket from the
+   cache.  Once this number is exceeded, the client will try to create a new
+   socket.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.block.write.replace-datanode-on-failure.min-replication</name>
+  <value>-1</value>
+    <description>
+      The minimum number of replications that are needed to not to fail
+      the write pipeline if new datanodes can not be found to replace
+      failed datanodes (could be due to network failure) in the write pipeline.
+      If the number of the remaining datanodes in the write pipeline is greater
+      than or equal to this property value, continue writing to the remaining nodes.
+      Otherwise throw exception.
+
+      If this is set to 0, an exception will be thrown, when a replacement
+      can not be found.
+      See also dfs.client.block.write.replace-datanode-on-failure.policy
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.checkpoint.period</name>
+  <value>3600s</value>
+  <description>
+    The number of seconds between two periodic checkpoints.
+    Support multiple time unit suffix(case insensitive), as described
+    in dfs.heartbeat.interval.If no time unit is specified then seconds
+    is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.caching.enabled</name>
+  <value>false</value>
+  <description>
+    Set to true to enable block caching.  This flag enables the NameNode to
+    maintain a mapping of cached blocks to DataNodes via processing DataNode
+    cache reports.  Based on these reports and addition and removal of caching
+    directives, the NameNode will schedule caching and uncaching work.
+  </description>
+</property>
+
+<property>
+  <name>dfs.domain.socket.path</name>
+  <value>/valid/file2</value>
+  <description>
+    Optional.  This is a path to a UNIX domain socket that will be used for
+    communication between the DataNode and local HDFS clients.
+    If the string "_PORT" is present in this path, it will be replaced by the
+    TCP port of the DataNode.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.storageinfo.defragment.timeout.ms</name>
+  <value>8</value>
+  <description>
+    Timeout value in ms for the StorageInfo compaction run.
+  </description>
+</property>
+
+<property>
+  <name>dfs.webhdfs.oauth2.enabled</name>
+  <value>true</value>
+  <description>
+    If true, enables OAuth2 in WebHDFS
+  </description>
+</property>
+
+<property>
+  <name>dfs.reformat.disabled</name>
+  <value>false</value>
+    <description>
+      Disable reformat of NameNode. If it's value is set to "true"
+      and metadata directories already exist then attempt to format NameNode
+      will throw NameNodeFormatException.
+    </description>
+</property>
+
+</configuration>

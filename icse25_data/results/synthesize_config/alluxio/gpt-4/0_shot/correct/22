@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.persistence.max.interval', 'alluxio.worker.management.tier.promote.quota.percent'], 'reason': ["The correct property for setting the maximum interval for persisting file information is 'alluxio.master.journal.flush.timeout.ms' or similar, depending on the specific version and requirement. 'alluxio.master.persistence.max.interval' does not exist.", "The value for 'alluxio.worker.management.tier.promote.quota.percent' is out of the valid range. It should be between 0 and 100, as it represents a percentage."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.persistence.max.interval	alluxio.worker.management.tier.promote.quota.percent
+[Ciri] Reason for alluxio.master.persistence.max.interval: The correct property for setting the maximum interval for persisting file information is 'alluxio.master.journal.flush.timeout.ms' or similar, depending on the specific version and requirement. 'alluxio.master.persistence.max.interval' does not exist.
+[Ciri] Reason for alluxio.worker.management.tier.promote.quota.percent: The value for 'alluxio.worker.management.tier.promote.quota.percent' is out of the valid range. It should be between 0 and 100, as it represents a percentage.

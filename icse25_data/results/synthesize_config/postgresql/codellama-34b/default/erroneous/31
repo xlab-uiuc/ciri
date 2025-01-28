@@ -1,0 +1,19 @@
+Wrong shot number:
+[1, 8, 4]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_multixact_failsafe_age'], 'reason': ["The property 'vacuum_multixact_failsafe_age' has the value '3200000000' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['unix_socket_group', 'include'], 'reason': ["The property 'unix_socket_group' has the value '' which is not of the correct type String.", "The property 'include' is not a valid property."]}
+
+{'hasError': True, 'errParameter': ['unix_socket_group', 'include'], 'reason': ["The property 'unix_socket_group' has the value '' which is not of the correct type String.", "The property 'include' was removed in the previous version and is not used in the current version."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: unix_socket_group	include
+[Ciri] Reason for unix_socket_group: The property 'unix_socket_group' has the value '' which is not of the correct type String.
+[Ciri] Reason for include: The property 'include' was removed in the previous version and is not used in the current version.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 2, 5]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir'], 'reason': ["The property 'tls-ca-cert-dir' is repeated with different values, which can cause conflicts."]}
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'tls-ca-cert-dir', 'port'], 'reason': ["The property 'tls-ca-cert-dir' is duplicated with different values.", "The property 'tls-ca-cert-dir' is duplicated with different values.", "The property 'port' has the value '12758' which does not follow the correct port format."]}
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir'], 'reason': ["The property 'tls-ca-cert-dir' is duplicated with different values."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: tls-ca-cert-dir
+[Ciri] Reason for tls-ca-cert-dir: The property 'tls-ca-cert-dir' is duplicated with different values.

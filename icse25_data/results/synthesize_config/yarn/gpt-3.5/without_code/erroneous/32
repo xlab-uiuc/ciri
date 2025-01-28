@@ -1,0 +1,26 @@
+Wrong shot number:
+[1, 7, 5]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['yarn.admin.acl'], 'reason': ["The property 'yarn.admin.acl' has the value '*' which is too permissive and should be restricted to specific users or groups."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size'], 'reason': ["The property 'yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size' has the value '500' which is not within the accepted range."]}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['yarn.router.webapp.https.address'], 'reason': ["The property 'yarn.router.webapp.https.address' has the value '0.0.0.0:8091' which is not a valid https address format."]}
+
+{'hasError': True, 'errParameter': ['yarn.router.webapp.https.address'], 'reason': ["The property 'yarn.router.webapp.https.address' has the value '0.0.0.0:8091' which is not a valid format for an HTTPS address."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.router.webapp.https.address
+[Ciri] Reason for yarn.router.webapp.https.address: The property 'yarn.router.webapp.https.address' has the value '0.0.0.0:8091' which is not a valid format for an HTTPS address.

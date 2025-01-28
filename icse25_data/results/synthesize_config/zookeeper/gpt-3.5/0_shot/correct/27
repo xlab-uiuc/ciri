@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.learnerRequireSasl'], 'reason': ["'quorum.auth.enableSasl' should be set to 'true' for enabling SASL authentication.", "'quorum.auth.learnerRequireSasl' should be set to 'true' for requiring SASL authentication for learners."]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.learnerRequireSasl'], 'reason': ["The properties 'quorum.auth.enableSasl' and 'quorum.auth.learnerRequireSasl' are not valid for Zookeeper version 3.7.0."]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'portUnification'], 'reason': ['quorum.auth.enableSasl is deprecated in Zookeeper 3.7.0, use quorum.auth.serverRequireSasl instead.', 'portUnification is not a valid property in Zookeeper 3.7.0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.learnerRequireSasl
+[Ciri] Reason for quorum.auth.enableSasl: The properties 'quorum.auth.enableSasl' and 'quorum.auth.learnerRequireSasl' are not valid for Zookeeper version 3.7.0.
+[Ciri] Reason for quorum.auth.learnerRequireSasl: 'quorum.auth.learnerRequireSasl' should be set to 'true' for requiring SASL authentication for learners.

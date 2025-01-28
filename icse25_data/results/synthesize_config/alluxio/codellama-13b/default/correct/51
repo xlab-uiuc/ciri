@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 3, 13]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.port'], 'reason': ["The property 'alluxio.master.embedded.journal.port' was removed in the previous version and is not used in the current version."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.port', 'alluxio.job.master.web.port'], 'reason': ["The property 'alluxio.master.embedded.journal.port' has the value '3000' which is not within the accepted value {19998,19999}.", "The property 'alluxio.job.master.web.port' has the value '3000' which is not within the accepted value {19998,19999}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.port', 'alluxio.job.master.web.port'], 'reason': ["The property 'alluxio.master.embedded.journal.port' has the value '3000' which is not within the accepted value {19998,19999}.", "The property 'alluxio.job.master.web.port' has the value '3000' which is not within the accepted value {19998,19999}."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.embedded.journal.port	alluxio.job.master.web.port
+[Ciri] Reason for alluxio.master.embedded.journal.port: The property 'alluxio.master.embedded.journal.port' has the value '3000' which is not within the accepted value {19998,19999}.
+[Ciri] Reason for alluxio.job.master.web.port: The property 'alluxio.job.master.web.port' has the value '3000' which is not within the accepted value {19998,19999}.

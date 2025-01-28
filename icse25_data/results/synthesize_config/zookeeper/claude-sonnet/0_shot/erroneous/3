@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'localSessionsEnabled', 'peerType', 'quorum.auth.kerberos.servicePrincipal', 'clientPortAddress', 'secureClientPortAddress'], 'reason': ["The 'minSessionTimeout' parameter is not a valid configuration property for ZooKeeper 3.7.0. It should be 'minSessionTimeout' (without the '=' sign).", "The 'localSessionsEnabled' parameter is not a valid configuration property for ZooKeeper 3.7.0.", "The 'peerType' parameter is not a valid configuration property for ZooKeeper 3.7.0.", "The 'quorum.auth.kerberos.servicePrincipal' parameter is not a valid configuration property for ZooKeeper 3.7.0. It should be 'kerberos.removeHostFromPrincipal' or 'kerberos.removeRealmFromPrincipal'.", "The 'clientPortAddress' parameter should be specified as 'clientPort' instead.", "The 'secureClientPortAddress' parameter should be specified as 'secureClientPort' instead."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: minSessionTimeout	localSessionsEnabled	peerType	quorum.auth.kerberos.servicePrincipal	clientPortAddress	secureClientPortAddress
+[Ciri] Reason for minSessionTimeout: The 'minSessionTimeout' parameter is not a valid configuration property for ZooKeeper 3.7.0. It should be 'minSessionTimeout' (without the '=' sign).
+[Ciri] Reason for localSessionsEnabled: The 'localSessionsEnabled' parameter is not a valid configuration property for ZooKeeper 3.7.0.
+[Ciri] Reason for peerType: The 'peerType' parameter is not a valid configuration property for ZooKeeper 3.7.0.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: The 'quorum.auth.kerberos.servicePrincipal' parameter is not a valid configuration property for ZooKeeper 3.7.0. It should be 'kerberos.removeHostFromPrincipal' or 'kerberos.removeRealmFromPrincipal'.
+[Ciri] Reason for clientPortAddress: The 'clientPortAddress' parameter should be specified as 'clientPort' instead.
+[Ciri] Reason for secureClientPortAddress: The 'secureClientPortAddress' parameter should be specified as 'secureClientPort' instead.

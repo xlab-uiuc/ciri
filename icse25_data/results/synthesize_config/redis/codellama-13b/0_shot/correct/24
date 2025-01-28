@@ -1,0 +1,25 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['protected-mode', 'slowlog-max-len', 'port', 'aclfile', 'cluster-announce-port', 'oom-score-adj-values', 'cluster-config-file'], 'reason': ['protected-mode is not a valid configuration directive.', 'slowlog-max-len is not a valid configuration directive.', 'port is not a valid configuration directive.', 'aclfile is not a valid configuration directive.', 'cluster-announce-port is not a valid configuration directive.', 'oom-score-adj-values is not a valid configuration directive.', 'cluster-config-file is not a valid configuration directive.']}
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'slowlog-log-slower-than', 'slowlog-log-slower-than'], 'reason': ['slowlog-max-len must be a positive integer', 'slowlog-log-slower-than must be a positive integer', 'slowlog-log-slower-than must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'port', 'aclfile', 'cluster-announce-port', 'oom-score-adj-values', 'cluster-config-file'], 'reason': ['slowlog-max-len must be an integer between 0 and 2^32 - 1', 'port must be an integer between 0 and 65535', 'aclfile must be a valid file path', 'cluster-announce-port must be an integer between 0 and 65535', 'oom-score-adj-values must be a list of integers between 0 and 1000', 'cluster-config-file must be a valid file path']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'port', 'aclfile', 'cluster-announce-port', 'oom-score-adj-values', 'cluster-config-file'], 'reason': ['slowlog-max-len must be an integer between 0 and 2^32-1', 'port must be an integer between 0 and 65535', 'aclfile must be a valid file', 'cluster-announce-port must be an integer between 0 and 65535', 'oom-score-adj-values must be an array of integers between 0 and 1000', 'cluster-config-file must be a valid file']}
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'port', 'aclfile', 'cluster-announce-port', 'oom-score-adj-values', 'cluster-config-file'], 'reason': ['slowlog-max-len: The value of slowlog-max-len must be greater than 0.', 'port: The value of port must be greater than 0.', 'aclfile: The value of aclfile must be a valid file path.', 'cluster-announce-port: The value of cluster-announce-port must be greater than 0.', 'oom-score-adj-values: The value of oom-score-adj-values must be a valid list of integers.', 'cluster-config-file: The value of cluster-config-file must be a valid file path.']}
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'port', 'aclfile', 'cluster-announce-port', 'oom-score-adj-values', 'cluster-config-file'], 'reason': ['slowlog-max-len must be an integer between 0 and 2^32-1', 'port must be an integer between 0 and 65535', 'aclfile must be a valid file path', 'cluster-announce-port must be an integer between 0 and 65535', 'oom-score-adj-values must be a list of integers between -1000 and 1000', 'cluster-config-file must be a valid file path']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: slowlog-max-len	port	aclfile	cluster-announce-port	oom-score-adj-values	cluster-config-file
+[Ciri] Reason for slowlog-max-len: slowlog-max-len must be an integer between 0 and 2^32-1
+[Ciri] Reason for port: port must be an integer between 0 and 65535
+[Ciri] Reason for aclfile: aclfile must be a valid file
+[Ciri] Reason for cluster-announce-port: cluster-announce-port must be an integer between 0 and 65535
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values must be an array of integers between 0 and 1000
+[Ciri] Reason for cluster-config-file: cluster-config-file must be a valid file path

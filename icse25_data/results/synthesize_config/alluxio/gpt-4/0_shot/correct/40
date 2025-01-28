@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.metrics.time.series.interval', 'alluxio.master.lost.worker.file.detection.interval', 'alluxio.network.connection.server.shutdown.timeout'], 'reason': ["The correct property name is 'alluxio.master.metrics.time.series.interval.ms' and it expects a value in milliseconds.", "The correct property name is 'alluxio.master.lost.worker.detection.interval' without the 'file' part.", "The value for 'alluxio.network.connection.server.shutdown.timeout' should be specified in milliseconds without the 'sec' suffix."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.metrics.time.series.interval	alluxio.master.lost.worker.file.detection.interval	alluxio.network.connection.server.shutdown.timeout
+[Ciri] Reason for alluxio.master.metrics.time.series.interval: The correct property name is 'alluxio.master.metrics.time.series.interval.ms' and it expects a value in milliseconds.
+[Ciri] Reason for alluxio.master.lost.worker.file.detection.interval: The correct property name is 'alluxio.master.lost.worker.detection.interval' without the 'file' part.
+[Ciri] Reason for alluxio.network.connection.server.shutdown.timeout: The value for 'alluxio.network.connection.server.shutdown.timeout' should be specified in milliseconds without the 'sec' suffix.

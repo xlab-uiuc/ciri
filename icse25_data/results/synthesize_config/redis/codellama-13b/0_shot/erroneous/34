@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-announce-ip', 'lazyfree-lazy-user-del', 'aof-rewrite-incremental-fsync', 'proc-title-template', 'unixsocketperm', 'cluster-enabled', 'hash-max-listpack-value'], 'reason': ['bind-source-addr: invalid ip address', 'replica-announce-ip: invalid ip address', 'lazyfree-lazy-user-del: invalid boolean value', 'aof-rewrite-incremental-fsync: invalid boolean value', 'proc-title-template: invalid template', 'unixsocketperm: invalid permission', 'cluster-enabled: invalid boolean value', 'hash-max-listpack-value: invalid integer value']}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-announce-ip', 'lazyfree-lazy-user-del', 'aof-rewrite-incremental-fsync', 'proc-title-template', 'unixsocketperm', 'cluster-enabled', 'hash-max-listpack-value'], 'reason': ['bind-source-addr: invalid IP address', 'replica-announce-ip: invalid IP address', 'lazyfree-lazy-user-del: invalid value', 'aof-rewrite-incremental-fsync: invalid value', 'proc-title-template: invalid value', 'unixsocketperm: invalid value', 'cluster-enabled: invalid value', 'hash-max-listpack-value: invalid value']}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-announce-ip', 'lazyfree-lazy-user-del', 'aof-rewrite-incremental-fsync', 'proc-title-template', 'unixsocketperm', 'cluster-enabled', 'hash-max-listpack-value'], 'reason': ['bind-source-addr: The value must be a valid IP address.', 'replica-announce-ip: The value must be a valid IP address.', 'lazyfree-lazy-user-del: The value must be a boolean.', 'aof-rewrite-incremental-fsync: The value must be a boolean.', 'proc-title-template: The value must be a string.', 'unixsocketperm: The value must be an integer.', 'cluster-enabled: The value must be a boolean.', 'hash-max-listpack-value: The value must be an integer.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: bind-source-addr	replica-announce-ip	lazyfree-lazy-user-del	aof-rewrite-incremental-fsync	proc-title-template	unixsocketperm	cluster-enabled	hash-max-listpack-value
+[Ciri] Reason for bind-source-addr: bind-source-addr: invalid ip address
+[Ciri] Reason for replica-announce-ip: replica-announce-ip: invalid IP address
+[Ciri] Reason for lazyfree-lazy-user-del: lazyfree-lazy-user-del: invalid value
+[Ciri] Reason for aof-rewrite-incremental-fsync: aof-rewrite-incremental-fsync: invalid boolean value
+[Ciri] Reason for proc-title-template: proc-title-template: invalid template
+[Ciri] Reason for unixsocketperm: unixsocketperm: invalid permission
+[Ciri] Reason for cluster-enabled: cluster-enabled: invalid value
+[Ciri] Reason for hash-max-listpack-value: hash-max-listpack-value: invalid value

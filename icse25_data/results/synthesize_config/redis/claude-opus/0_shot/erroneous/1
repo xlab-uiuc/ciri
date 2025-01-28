@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['timeout', 'cluster-node-timeout', 'slowlog-max-len', 'hash-max-listpack-value'], 'reason': ['In Redis 7.0, the timeout parameter should be specified in milliseconds, not seconds.', 'The cluster-node-timeout parameter has been renamed to cluster-node-timeout-ms in Redis 7.0.', 'The slowlog-max-len parameter has been removed in Redis 7.0. The length of the slowlog is now unlimited by default.', 'The hash-max-listpack-value parameter has been removed in Redis 7.0. It has been replaced by the listpack-max-size configuration parameter.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: timeout	cluster-node-timeout	slowlog-max-len	hash-max-listpack-value
+[Ciri] Reason for timeout: In Redis 7.0, the timeout parameter should be specified in milliseconds, not seconds.
+[Ciri] Reason for cluster-node-timeout: The cluster-node-timeout parameter has been renamed to cluster-node-timeout-ms in Redis 7.0.
+[Ciri] Reason for slowlog-max-len: The slowlog-max-len parameter has been removed in Redis 7.0. The length of the slowlog is now unlimited by default.
+[Ciri] Reason for hash-max-listpack-value: The hash-max-listpack-value parameter has been removed in Redis 7.0. It has been replaced by the listpack-max-size configuration parameter.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.fuse.user.group.translation.enabled=10000', 'alluxio.worker.container.hostname=127.0.0.1'], 'reason': ["The property 'alluxio.fuse.user.group.translation.enabled' expects a boolean value (true or false), but '10000' is not a valid boolean value.", "The property 'alluxio.worker.container.hostname' is not a valid Alluxio configuration property in version 2.5.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.fuse.user.group.translation.enabled=10000	alluxio.worker.container.hostname=127.0.0.1
+[Ciri] Reason for alluxio.fuse.user.group.translation.enabled=10000: The property 'alluxio.fuse.user.group.translation.enabled' expects a boolean value (true or false), but '10000' is not a valid boolean value.
+[Ciri] Reason for alluxio.worker.container.hostname=127.0.0.1: The property 'alluxio.worker.container.hostname' is not a valid Alluxio configuration property in version 2.5.0.

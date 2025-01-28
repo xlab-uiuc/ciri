@@ -1,0 +1,27 @@
+Wrong shot number:
+[3, 5, 11]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.hdfs.impl', 'fs.s3a.multipart.threshold', 'file.stream-buffer-size'], 'reason': ["The property 'fs.AbstractFileSystem.hdfs.impl' is not a valid property for HCommon version 3.3.0.", "The property 'fs.s3a.multipart.threshold' has the value '128M' which is not in the correct format. It should be a numeric value with a suffix from the set {K,M,G,T,P}.", "The property 'file.stream-buffer-size' should be 'fs.file.stream-buffer-size' instead."]}
+
+{'hasError': True, 'errParameter': ['file.stream-buffer-size'], 'reason': ["The property 'file.stream-buffer-size' is not a valid property for the HCommon version 3.3.0 configuration."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.hdfs.impl', 'file.stream-buffer-size'], 'reason': ["The property 'fs.AbstractFileSystem.hdfs.impl' is not a valid property for HCommon version 3.3.0.", "The property 'file.stream-buffer-size' is not a recognized property for HCommon version 3.3.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.hdfs.impl', 'file.stream-buffer-size'], 'reason': ["The property 'fs.AbstractFileSystem.hdfs.impl' is not a valid property for HCommon version 3.3.0.", "The property 'file.stream-buffer-size' is not a recognized property for HCommon version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.hdfs.impl', 'file.stream-buffer-size'], 'reason': ["The property 'fs.AbstractFileSystem.hdfs.impl' is using an incorrect value 'org.apache.hadoop.fs.Hdfs'. It should be 'org.apache.hadoop.fs.HdfsImpl'.", "The property 'file.stream-buffer-size' has a value '8192' which does not follow the correct buffer size format."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.hdfs.impl', 'file.stream-buffer-size'], 'reason': ["The property 'fs.AbstractFileSystem.hdfs.impl' is not a recognized property for HCommon version 3.3.0.", "The property 'file.stream-buffer-size' should be 'fs.file.stream-buffer-size' for proper naming convention."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.AbstractFileSystem.hdfs.impl	file.stream-buffer-size
+[Ciri] Reason for fs.AbstractFileSystem.hdfs.impl: The property 'fs.AbstractFileSystem.hdfs.impl' is not a valid property for HCommon version 3.3.0.
+[Ciri] Reason for file.stream-buffer-size: The property 'file.stream-buffer-size' is not a recognized property for HCommon version 3.3.0.

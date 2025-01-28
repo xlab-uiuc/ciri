@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'replica-announce-ip', 'proc-title-template'], 'reason': ['cluster-announce-bus-port must be an integer', 'replica-announce-ip must be an IP address', 'proc-title-template must be a string']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'replica-announce-ip', 'bind-source-addr', 'tls-port', 'replica-serve-stale-data', 'proc-title-template', 'enable-protected-configs', 'aof-use-rdb-preamble'], 'reason': ['cluster-announce-bus-port: must be a number', 'replica-announce-ip: must be a valid ip address', 'bind-source-addr: must be a valid ip address', 'tls-port: must be a number', 'replica-serve-stale-data: must be a boolean', 'proc-title-template: must be a string', 'enable-protected-configs: must be a boolean', 'aof-use-rdb-preamble: must be a boolean']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'replica-announce-ip', 'bind-source-addr', 'tls-port', 'replica-serve-stale-data', 'proc-title-template', 'enable-protected-configs', 'aof-use-rdb-preamble'], 'reason': ['cluster-announce-bus-port: Invalid port number', 'replica-announce-ip: Invalid IP address', 'bind-source-addr: Invalid IP address', 'tls-port: Invalid port number', 'replica-serve-stale-data: Invalid value', 'proc-title-template: Invalid value', 'enable-protected-configs: Invalid value', 'aof-use-rdb-preamble: Invalid value']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: cluster-announce-bus-port	replica-announce-ip	bind-source-addr	tls-port	replica-serve-stale-data	proc-title-template	enable-protected-configs	aof-use-rdb-preamble
+[Ciri] Reason for cluster-announce-bus-port: cluster-announce-bus-port: Invalid port number
+[Ciri] Reason for replica-announce-ip: replica-announce-ip: must be a valid ip address
+[Ciri] Reason for bind-source-addr: bind-source-addr: must be a valid ip address
+[Ciri] Reason for tls-port: tls-port: Invalid port number
+[Ciri] Reason for replica-serve-stale-data: replica-serve-stale-data: Invalid value
+[Ciri] Reason for proc-title-template: proc-title-template: must be a string
+[Ciri] Reason for enable-protected-configs: enable-protected-configs: must be a boolean
+[Ciri] Reason for aof-use-rdb-preamble: aof-use-rdb-preamble: Invalid value

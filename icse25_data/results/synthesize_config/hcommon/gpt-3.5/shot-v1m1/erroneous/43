@@ -1,0 +1,15 @@
+Wrong shot number:
+[12]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size'], 'reason': ["The property 'fs.ftp.host' has an invalid IP address format '999.-1.0.0'. Please provide a valid IP address.", "The property 'fs.s3a.block.size' has an invalid value '32M' for block size. Please use a numeric value with a valid suffix from the set {K,M,G,T,P} to scale the size."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.block.size
+[Ciri] Reason for fs.ftp.host: The property 'fs.ftp.host' has an invalid IP address format '999.-1.0.0'. Please provide a valid IP address.
+[Ciri] Reason for fs.s3a.block.size: The property 'fs.s3a.block.size' has an invalid value '32M' for block size. Please use a numeric value with a valid suffix from the set {K,M,G,T,P} to scale the size.

@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'maxmemory-clients', 'replica-announce-ip', 'replica-lazy-flush', 'set-max-intset-entries', 'stop-writes-on-bgsave-error', 'list-max-listpack-size'], 'reason': ["Unknown configuration parameter 'enable-module-command'", "Unknown configuration parameter 'maxmemory-clients'", "Unknown configuration parameter 'replica-announce-ip'", "Unknown configuration parameter 'replica-lazy-flush'", "Unknown configuration parameter 'set-max-intset-entries'", "Unknown configuration parameter 'stop-writes-on-bgsave-error'", "Unknown configuration parameter 'list-max-listpack-size'"]}
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'maxmemory-clients', 'replica-announce-ip', 'replica-lazy-flush', 'set-max-intset-entries', 'stop-writes-on-bgsave-error', 'list-max-listpack-size'], 'reason': ["Unknown parameter 'enable-module-command'", "Invalid value for 'maxmemory-clients'. It should be in bytes or with a proper unit suffix (k, m, g)", "Invalid value for 'replica-announce-ip'. It should be an IP address or hostname", "Unknown parameter 'replica-lazy-flush'", "Unknown parameter 'set-max-intset-entries'", "Unknown parameter 'stop-writes-on-bgsave-error'", "Invalid value for 'list-max-listpack-size'. It should be a positive number or -1 for unlimited size"]}
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'maxmemory-clients', 'replica-announce-ip', 'replica-lazy-flush', 'set-max-intset-entries', 'stop-writes-on-bgsave-error', 'list-max-listpack-size'], 'reason': ["Unknown configuration parameter 'enable-module-command'", "Invalid value for 'maxmemory-clients'. It should be in bytes (e.g., 1gb or 1mb).", "Invalid value for 'replica-announce-ip'. It should be an IP address.", "Unknown configuration parameter 'replica-lazy-flush'", "Unknown configuration parameter 'set-max-intset-entries'", "Unknown configuration parameter 'stop-writes-on-bgsave-error'", "Invalid value for 'list-max-listpack-size'. It should be a positive number or -1 for unlimited."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: enable-module-command	maxmemory-clients	replica-announce-ip	replica-lazy-flush	set-max-intset-entries	stop-writes-on-bgsave-error	list-max-listpack-size
+[Ciri] Reason for enable-module-command: Unknown parameter 'enable-module-command'
+[Ciri] Reason for maxmemory-clients: Invalid value for 'maxmemory-clients'. It should be in bytes or with a proper unit suffix (k, m, g)
+[Ciri] Reason for replica-announce-ip: Invalid value for 'replica-announce-ip'. It should be an IP address or hostname
+[Ciri] Reason for replica-lazy-flush: Unknown parameter 'replica-lazy-flush'
+[Ciri] Reason for set-max-intset-entries: Unknown configuration parameter 'set-max-intset-entries'
+[Ciri] Reason for stop-writes-on-bgsave-error: Unknown configuration parameter 'stop-writes-on-bgsave-error'
+[Ciri] Reason for list-max-listpack-size: Invalid value for 'list-max-listpack-size'. It should be a positive number or -1 for unlimited.

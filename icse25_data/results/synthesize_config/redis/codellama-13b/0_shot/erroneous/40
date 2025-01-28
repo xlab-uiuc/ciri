@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'timeout', 'hash-max-listpack-value', 'repl-diskless-sync-delay', 'cluster-announce-bus-port', 'list-max-listpack-size', 'protected-mode'], 'reason': ["The parameter 'cluster-enabled' is not supported in Redis 7.0.0.", "The parameter 'timeout' is not supported in Redis 7.0.0.", "The parameter 'hash-max-listpack-value' is not supported in Redis 7.0.0.", "The parameter 'repl-diskless-sync-delay' is not supported in Redis 7.0.0.", "The parameter 'cluster-announce-bus-port' is not supported in Redis 7.0.0.", "The parameter 'list-max-listpack-size' is not supported in Redis 7.0.0.", "The parameter 'protected-mode' is not supported in Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-config-file', 'timeout', 'hash-max-listpack-value', 'repl-diskless-sync-delay', 'cluster-announce-bus-port', 'list-max-listpack-size', 'protected-mode'], 'reason': ['cluster-enabled is not a valid configuration directive.', 'cluster-config-file is not a valid configuration directive.', 'timeout is not a valid configuration directive.', 'hash-max-listpack-value is not a valid configuration directive.', 'repl-diskless-sync-delay is not a valid configuration directive.', 'cluster-announce-bus-port is not a valid configuration directive.', 'list-max-listpack-size is not a valid configuration directive.', 'protected-mode is not a valid configuration directive.']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-config-file', 'timeout', 'hash-max-listpack-value', 'repl-diskless-sync-delay', 'cluster-announce-bus-port', 'list-max-listpack-size', 'protected-mode'], 'reason': ['cluster-enabled is not a valid property for this version of Redis.', 'cluster-config-file is not a valid property for this version of Redis.', 'timeout is not a valid property for this version of Redis.', 'hash-max-listpack-value is not a valid property for this version of Redis.', 'repl-diskless-sync-delay is not a valid property for this version of Redis.', 'cluster-announce-bus-port is not a valid property for this version of Redis.', 'list-max-listpack-size is not a valid property for this version of Redis.', 'protected-mode is not a valid property for this version of Redis.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: cluster-enabled	cluster-config-file	timeout	hash-max-listpack-value	repl-diskless-sync-delay	cluster-announce-bus-port	list-max-listpack-size	protected-mode
+[Ciri] Reason for cluster-enabled: cluster-enabled is not a valid configuration directive.
+[Ciri] Reason for cluster-config-file: cluster-config-file is not a valid property for this version of Redis.
+[Ciri] Reason for timeout: timeout is not a valid property for this version of Redis.
+[Ciri] Reason for hash-max-listpack-value: hash-max-listpack-value is not a valid property for this version of Redis.
+[Ciri] Reason for repl-diskless-sync-delay: repl-diskless-sync-delay is not a valid configuration directive.
+[Ciri] Reason for cluster-announce-bus-port: cluster-announce-bus-port is not a valid configuration directive.
+[Ciri] Reason for list-max-listpack-size: list-max-listpack-size is not a valid property for this version of Redis.
+[Ciri] Reason for protected-mode: protected-mode is not a valid configuration directive.

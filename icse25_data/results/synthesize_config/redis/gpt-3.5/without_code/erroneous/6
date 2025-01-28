@@ -1,0 +1,19 @@
+Wrong shot number:
+[12, 8, 3]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'proto-max-bulk-len'], 'reason': ["The property 'maxmemory-clients' has an invalid value '10nounit'. It should be a numeric value with optional unit suffixes (k, kb, m, mb, g, gb).", "The property 'proto-max-bulk-len' has an invalid value '512mb'. It should be a numeric value with optional unit suffixes (k, kb, m, mb, g, gb)."]}
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'proto-max-bulk-len'], 'reason': ["The property 'maxmemory-clients' has an invalid value '10nounit'. It should be a valid memory size with a unit (e.g., 10mb).", "The property 'proto-max-bulk-len' has an invalid value '512mb'. The unit should be specified without space (e.g., 512mb should be 512mb)."]}
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'proto-max-bulk-len'], 'reason': ["The property 'maxmemory-clients' has an invalid value '10nounit'. It should be a numeric value with optional unit suffixes (k, kb, m, mb, g, gb, t, tb).", "The property 'proto-max-bulk-len' has an invalid value '512mb'. It should be a numeric value with optional unit suffixes (k, kb, m, mb, g, gb, t, tb)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: maxmemory-clients	proto-max-bulk-len
+[Ciri] Reason for maxmemory-clients: The property 'maxmemory-clients' has an invalid value '10nounit'. It should be a numeric value with optional unit suffixes (k, kb, m, mb, g, gb, t, tb).
+[Ciri] Reason for proto-max-bulk-len: The property 'proto-max-bulk-len' has an invalid value '512mb'. It should be a numeric value with optional unit suffixes (k, kb, m, mb, g, gb, t, tb).

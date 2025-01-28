@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.info.bindAddress</name>
+  <value>0.0.0.0</value>
+    <description>The bind address for the HBase Master web UI
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.dns.interface</name>
+  <value>default</value>
+    <description>The name of the Network Interface from which a region server
+      should report its IP address.</description>
+</property>
+
+<property>
+  <name>hbase.client.retries.number</name>
+  <value>30</value>
+    <description>Maximum retries.  Used as maximum for all retryable
+    operations such as the getting of a cell's value, starting a row update,
+    etc.  Retry interval is a rough function based on hbase.client.pause.  At
+    first we retry at this interval but then with backoff, we pretty quickly reach
+    retrying every ten seconds.  See HConstants#RETRY_BACKOFF for how the backup
+    ramps up.  Change this setting and hbase.client.pause to suit your workload.</description>
+</property>
+
+<property>
+  <name>hbase.offpeak.start.hour</name>
+  <value>-1</value>
+    <description>The start of off-peak hours, expressed as an integer between 0 and 23, inclusive.
+      Set to -1 to disable off-peak.</description>
+</property>
+
+<property>
+  <name>hbase.rest.readonly</name>
+  <value>true</value>
+    <description>Defines the mode the REST server will be started in. Possible values are:
+    false: All HTTP methods are permitted - GET/PUT/POST/DELETE.
+    true: Only the GET method is permitted.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.maxWorkerThreads</name>
+  <value>500</value>
+    <description>The maximum size of the thread pool. When the pending request queue
+    overflows, new threads are created until their number reaches this number.
+    After that, the server starts dropping connections.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.maxQueuedRequests</name>
+  <value>1000</value>
+    <description>The maximum number of pending Thrift connections waiting in the queue. If
+     there are no idle threads in the pool, the server queues requests. Only
+     when the queue overflows, new threads are added, up to
+     hbase.thrift.maxQueuedRequests threads.</description>
+</property>
+
+<property>
+  <name>hbase.master.wait.on.service.seconds</name>
+  <value>15</value>
+    <description>Default is 5 minutes. Make it 30 seconds for tests. See
+    HBASE-19794 for some context.</description>
+</property>
+
+</configuration>

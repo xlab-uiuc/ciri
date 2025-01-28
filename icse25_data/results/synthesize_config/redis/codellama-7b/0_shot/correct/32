@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['requirepass', 'appendfilename', 'tls-protocols'], 'reason': ['requirepass is not a valid parameter in redis version 7.0.0', 'appendfilename is not a valid parameter in redis version 7.0.0', 'tls-protocols is not a valid parameter in redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['port'], 'reason': ['The port number must be between 1 and 65535.']}
+
+{'hasError': True, 'errParameter': ['bind', 'protected-mode', 'unixsocketperm', 'dir', 'dbfilename', 'appendfilename', 'tls-protocols', 'set-proc-title'], 'reason': ['bind must be a valid IP address or hostname', 'protected-mode must be either 0 or 1', 'unixsocketperm must be a valid file permission', 'dir must be a valid directory', 'dbfilename must be a valid file name', 'appendfilename must be a valid file name', 'tls-protocols must be a valid TLS protocol', 'set-proc-title must be either 0 or 1']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind'], 'reason': ["The parameter 'bind' is not a valid IP address."]}
+
+{'hasError': True, 'errParameter': ['bind'], 'reason': ['The value of the bind parameter is not valid.']}
+
+{'hasError': True, 'errParameter': ['requirepass', 'maxmemory-policy', 'maxmemory-samples', 'maxmemory-samples-factor', 'jemalloc-bg-thread', 'tls-protocols'], 'reason': ['requirepass is not a valid configuration parameter in redis version 7.0.0', 'maxmemory-policy is not a valid configuration parameter in redis version 7.0.0', 'maxmemory-samples is not a valid configuration parameter in redis version 7.0.0', 'maxmemory-samples-factor is not a valid configuration parameter in redis version 7.0.0', 'jemalloc-bg-thread is not a valid configuration parameter in redis version 7.0.0', 'tls-protocols is not a valid configuration parameter in redis version 7.0.0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: bind
+[Ciri] Reason for bind: The parameter 'bind' is not a valid IP address.

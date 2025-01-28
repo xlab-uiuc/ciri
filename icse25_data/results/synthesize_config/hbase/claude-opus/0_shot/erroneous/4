@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.handler.factor', 'hbase.client.scanner.caching'], 'reason': ["The value for hbase.ipc.server.callqueue.handler.factor should be a float between 0 and 1, but 'ciri/ciri' is an invalid value.", 'The value for hbase.client.scanner.caching is set to 1073741823 which is too high. It should be set to a more reasonable value like 100-10000 to avoid using excessive memory on the client. Setting it to Integer.MAX_VALUE is not recommended.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.ipc.server.callqueue.handler.factor	hbase.client.scanner.caching
+[Ciri] Reason for hbase.ipc.server.callqueue.handler.factor: The value for hbase.ipc.server.callqueue.handler.factor should be a float between 0 and 1, but 'ciri/ciri' is an invalid value.
+[Ciri] Reason for hbase.client.scanner.caching: The value for hbase.client.scanner.caching is set to 1073741823 which is too high. It should be set to a more reasonable value like 100-10000 to avoid using excessive memory on the client. Setting it to Integer.MAX_VALUE is not recommended.

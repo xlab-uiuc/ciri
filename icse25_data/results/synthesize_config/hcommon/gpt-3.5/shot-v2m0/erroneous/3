@@ -1,0 +1,13 @@
+Correct shot number:
+[2, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.cache.secs', 'hadoop.service.shutdown.timeout', 'io.mapfile.bloom.error.rate'], 'reason': ["The property 'hadoop.security.groups.cache.secs' has an additional 'usage' tag which is not a valid property element.", "The property 'hadoop.service.shutdown.timeout' has an incorrect value format. It should be in milliseconds.", "The property 'io.mapfile.bloom.error.rate' has a boolean value 'true' which is not valid. It should be a numeric value representing the rate of false positives."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.groups.cache.secs	hadoop.service.shutdown.timeout	io.mapfile.bloom.error.rate
+[Ciri] Reason for hadoop.security.groups.cache.secs: The property 'hadoop.security.groups.cache.secs' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has an incorrect value format. It should be in milliseconds.
+[Ciri] Reason for io.mapfile.bloom.error.rate: The property 'io.mapfile.bloom.error.rate' has a boolean value 'true' which is not valid. It should be a numeric value representing the rate of false positives.

@@ -1,0 +1,26 @@
+Wrong shot number:
+[4, 7, 3]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout'], 'reason': ["The property 'proxy-write-timeout' has the value '5000' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['proxy'], 'reason': ["The value of the property 'proxy' should be 'on' to enable the property 'proxy-write-timeout'."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy'], 'reason': ["The property 'proxy' has the value 'off' which is not a valid value for this property."]}
+
+{'hasError': True, 'errParameter': ['proxy'], 'reason': ["The value of the property 'proxy' should be 'on' to enable the property 'proxy-write-timeout'."]}
+
+{'hasError': True, 'errParameter': ['proxy'], 'reason': ["The value of the property 'proxy' should be 'on' to enable the property 'proxy-write-timeout'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: proxy
+[Ciri] Reason for proxy: The value of the property 'proxy' should be 'on' to enable the property 'proxy-write-timeout'.

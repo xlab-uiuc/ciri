@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable_indexscan', 'log_statement', 'lc_monetary'], 'reason': ["The parameter 'enable_indexscan' is not a valid PostgreSQL configuration parameter in version 13.0. It was removed in PostgreSQL 9.6.", "The value 'none' for the 'log_statement' parameter is not valid in PostgreSQL 13.0. Valid values are 'none', 'ddl', 'mod', 'all'.", "The parameter 'lc_monetary' is not a valid PostgreSQL configuration parameter in version 13.0. It was removed in PostgreSQL 12."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable_indexscan	log_statement	lc_monetary
+[Ciri] Reason for enable_indexscan: The parameter 'enable_indexscan' is not a valid PostgreSQL configuration parameter in version 13.0. It was removed in PostgreSQL 9.6.
+[Ciri] Reason for log_statement: The value 'none' for the 'log_statement' parameter is not valid in PostgreSQL 13.0. Valid values are 'none', 'ddl', 'mod', 'all'.
+[Ciri] Reason for lc_monetary: The parameter 'lc_monetary' is not a valid PostgreSQL configuration parameter in version 13.0. It was removed in PostgreSQL 12.

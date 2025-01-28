@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.metastore.dir', 'alluxio.worker.ufs.instream.cache.expiration.time', 'alluxio.master.ufs.active.sync.interval'], 'reason': ['The value for alluxio.master.metastore.dir should not contain multiple consecutive slashes. Use a single slash to separate directories.', 'The configuration alluxio.worker.ufs.instream.cache.expiration.time is deprecated since version 2.0.0 and removed in 2.5.0. Use alluxio.user.ufs.instream.cache.expiration.time instead.', 'The configuration alluxio.master.ufs.active.sync.interval is not a valid configuration parameter in Alluxio version 2.5.0. It was removed in version 2.2.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.metastore.dir	alluxio.worker.ufs.instream.cache.expiration.time	alluxio.master.ufs.active.sync.interval
+[Ciri] Reason for alluxio.master.metastore.dir: The value for alluxio.master.metastore.dir should not contain multiple consecutive slashes. Use a single slash to separate directories.
+[Ciri] Reason for alluxio.worker.ufs.instream.cache.expiration.time: The configuration alluxio.worker.ufs.instream.cache.expiration.time is deprecated since version 2.0.0 and removed in 2.5.0. Use alluxio.user.ufs.instream.cache.expiration.time instead.
+[Ciri] Reason for alluxio.master.ufs.active.sync.interval: The configuration alluxio.master.ufs.active.sync.interval is not a valid configuration parameter in Alluxio version 2.5.0. It was removed in version 2.2.0.

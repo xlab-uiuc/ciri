@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.am.liveness-monitor.expiry-interval-ms</name>
+  <value>300000</value>
+    <description>The expiry interval for application master reporting.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.emit-container-events</name>
+  <value>true</value>
+    <description>The setting that controls whether yarn container events are
+      published to the timeline service or not by NM. This configuration setting
+      is for ATS V2.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.detect-hardware-capabilities</name>
+  <value>false</value>
+    <description>Enable auto-detection of node capabilities such as
+    memory and CPU.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.webapp.https.address</name>
+  <value>0.0.0.0:3000</value>
+    <description>
+    The https adddress of the NM web application.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource-monitor.interval-ms</name>
+  <value>6000</value>
+    <description>How often to monitor the node and the containers.
+    If 0 or negative, monitoring is disabled.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.docker.userremapping-gid-threshold</name>
+  <value>0</value>
+    <description>lower limit for acceptable gids of user remapped user</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.hbase.coprocessor.jar.hdfs.location</name>
+  <value>/valid/file2</value>
+    <description>
+    The default hdfs location for flowrun coprocessor jar.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.amrmproxy.interceptor-class.pipeline</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.amrmproxy.DefaultRequestInterceptor</value>
+    <description>
+    The comma separated list of class names that implement the
+    RequestInterceptor interface. This is used by the AMRMProxyService to create
+    the request processing pipeline for applications.
+    </description>
+</property>
+
+</configuration>

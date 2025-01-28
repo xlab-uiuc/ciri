@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.read.timeout.ms</name>
+  <value>30000</value>
+  <description>
+    This property is the read timeout (in milliseconds) for LDAP
+    operations. If the LDAP provider doesn't get a LDAP response within the
+    specified period, it will abort the read attempt. Non-positive value
+    means no read timeout is specified in which case it waits for the response
+    infinitely.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.credential.provider.path</name>
+  <value>/valid/file1</value>
+  <description>
+    A comma-separated list of URLs that indicates the type and
+    location of a list of providers that should be consulted.
+  </description>
+</property>
+
+<property>
+  <name>fs.ftp.host</name>
+  <value>0.0.0.0</value>
+  <description>FTP filesystem connects to this server</description>
+</property>
+
+<property>
+  <name>fs.s3a.buffer.dir</name>
+  <value>/\hadoop/s3a</value>
+  <description>Comma separated list of directories that will be used to buffer file
+    uploads to.</description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.ddb.table.capacity.write</name>
+  <value>-1</value>
+  <description>
+    Provisioned throughput requirements for write operations in terms of
+    capacity units for the DynamoDB table.
+    If set to 0 (the default), new tables are created with "per-request" capacity.
+    Refer to related configuration option fs.s3a.s3guard.ddb.table.capacity.read
+  </description>
+</property>
+
+<property>
+  <name>ipc.client.kill.max</name>
+  <value>1</value>
+  <description>Defines the maximum number of clients to disconnect in one go.
+  </description>
+</property>
+
+<property>
+  <name>ipc.client.low-latency</name>
+  <value>false</value>
+  <description>Use low-latency QoS markers for IPC connections.
+  </description>
+</property>
+
+<property>
+  <name>ftp.client-write-packet-size</name>
+  <value>32768</value>
+  <description>Packet size for clients to write</description>
+</property>
+
+</configuration>

@@ -1,0 +1,19 @@
+Wrong shot number:
+[1]
+
+Correct shot number:
+[13, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.attempts.maximum', 'fs.s3a.change.detection.version.required', 'fs.azure.secure.mode', 'fs.azure.local.sas.key.mode', 'ha.health-monitor.connect-retry-interval.ms', 'hadoop.shell.missing.defaultFs.warning'], 'reason': ["The property 'fs.s3a.attempts.maximum' has the value '10' which is not of the correct type Integer.", "The property 'fs.s3a.change.detection.version.required' has the value 'false' which is not of the correct type Boolean.", "The property 'fs.azure.secure.mode' has the value 'false' which is not of the correct type Boolean.", "The property 'fs.azure.local.sas.key.mode' has the value 'true' which is not of the correct type Boolean.", "The property 'ha.health-monitor.connect-retry-interval.ms' has the value '1000' which is not of the correct type Integer.", "The property 'hadoop.shell.missing.defaultFs.warning' has the value 'true' which is not of the correct type Boolean."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.s3a.attempts.maximum	fs.s3a.change.detection.version.required	fs.azure.secure.mode	fs.azure.local.sas.key.mode	ha.health-monitor.connect-retry-interval.ms	hadoop.shell.missing.defaultFs.warning
+[Ciri] Reason for fs.s3a.attempts.maximum: The property 'fs.s3a.attempts.maximum' has the value '10' which is not of the correct type Integer.
+[Ciri] Reason for fs.s3a.change.detection.version.required: The property 'fs.s3a.change.detection.version.required' has the value 'false' which is not of the correct type Boolean.
+[Ciri] Reason for fs.azure.secure.mode: The property 'fs.azure.secure.mode' has the value 'false' which is not of the correct type Boolean.
+[Ciri] Reason for fs.azure.local.sas.key.mode: The property 'fs.azure.local.sas.key.mode' has the value 'true' which is not of the correct type Boolean.
+[Ciri] Reason for ha.health-monitor.connect-retry-interval.ms: The property 'ha.health-monitor.connect-retry-interval.ms' has the value '1000' which is not of the correct type Integer.
+[Ciri] Reason for hadoop.shell.missing.defaultFs.warning: The property 'hadoop.shell.missing.defaultFs.warning' has the value 'true' which is not of the correct type Boolean.

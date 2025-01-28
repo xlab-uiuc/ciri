@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATE_FORMAT', 'FILE_UPLOAD_PERMISSIONS', 'FORMAT_MODULE_PATH', 'USE_DEPRECATED_PYTZ'], 'reason': ['DATE_FORMAT should be \'DATE_FORMAT = "N j, Y"\' with the correct quotation marks.', "FILE_UPLOAD_PERMISSIONS should be in quotes '0o644' as it is a string in Django settings.", "FORMAT_MODULE_PATH is not an error but typically, if you want to specify a custom format module, it should be a string indicating the path. 'None' is technically not an error but could be if you intended to use a custom format module.", 'USE_DEPRECATED_PYTZ is not a setting in Django. Django 4.0 supports time zones but does not have a setting named USE_DEPRECATED_PYTZ.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: DATE_FORMAT	FILE_UPLOAD_PERMISSIONS	FORMAT_MODULE_PATH	USE_DEPRECATED_PYTZ
+[Ciri] Reason for DATE_FORMAT: DATE_FORMAT should be 'DATE_FORMAT = "N j, Y"' with the correct quotation marks.
+[Ciri] Reason for FILE_UPLOAD_PERMISSIONS: FILE_UPLOAD_PERMISSIONS should be in quotes '0o644' as it is a string in Django settings.
+[Ciri] Reason for FORMAT_MODULE_PATH: FORMAT_MODULE_PATH is not an error but typically, if you want to specify a custom format module, it should be a string indicating the path. 'None' is technically not an error but could be if you intended to use a custom format module.
+[Ciri] Reason for USE_DEPRECATED_PYTZ: USE_DEPRECATED_PYTZ is not a setting in Django. Django 4.0 supports time zones but does not have a setting named USE_DEPRECATED_PYTZ.

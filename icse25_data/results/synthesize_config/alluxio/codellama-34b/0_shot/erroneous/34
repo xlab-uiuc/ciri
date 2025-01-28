@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type', 'alluxio.master.embedded.journal.addresses', 'alluxio.user.client.cache.timeout.duration', 'alluxio.master.ttl.checker.interval', 'alluxio.jvm.monitor.info.threshold', 'alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.underfs.gcs.default.mode'], 'reason': ['alluxio.master.journal.type should be set to UFS', 'alluxio.master.embedded.journal.addresses should be set to a comma-separated list of masters', 'alluxio.user.client.cache.timeout.duration should be set to a positive value', 'alluxio.master.ttl.checker.interval should be set to a positive value', 'alluxio.jvm.monitor.info.threshold should be set to a positive value', 'alluxio.user.network.rpc.max.inbound.message.size should be set to a positive value', 'alluxio.underfs.gcs.default.mode should be set to 1600']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: alluxio.master.journal.type	alluxio.master.embedded.journal.addresses	alluxio.user.client.cache.timeout.duration	alluxio.master.ttl.checker.interval	alluxio.jvm.monitor.info.threshold	alluxio.user.network.rpc.max.inbound.message.size	alluxio.underfs.gcs.default.mode
+[Ciri] Reason for alluxio.master.journal.type: alluxio.master.journal.type should be set to UFS
+[Ciri] Reason for alluxio.master.embedded.journal.addresses: alluxio.master.embedded.journal.addresses should be set to a comma-separated list of masters
+[Ciri] Reason for alluxio.user.client.cache.timeout.duration: alluxio.user.client.cache.timeout.duration should be set to a positive value
+[Ciri] Reason for alluxio.master.ttl.checker.interval: alluxio.master.ttl.checker.interval should be set to a positive value
+[Ciri] Reason for alluxio.jvm.monitor.info.threshold: alluxio.jvm.monitor.info.threshold should be set to a positive value
+[Ciri] Reason for alluxio.user.network.rpc.max.inbound.message.size: alluxio.user.network.rpc.max.inbound.message.size should be set to a positive value
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: alluxio.underfs.gcs.default.mode should be set to 1600

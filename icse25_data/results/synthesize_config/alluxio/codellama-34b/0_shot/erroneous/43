@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.folder', 'alluxio.master.journal.formatter.class', 'alluxio.master.rpc.port', 'alluxio.master.web.port', 'alluxio.job.master.web.port', 'alluxio.job.worker.web.port', 'alluxio.worker.management.tier.promote.range', 'alluxio.master.metastore.iterator.readahead.size', 'alluxio.user.conf.cluster.default.enabled', 'alluxio.underfs.s3.connection.ttl', 'alluxio.worker.tieredstore.level1.watermark.high.ratio', 'alluxio.worker.management.tier.promote.quota.percent', 'alluxio.underfs.cleanup.enabled'], 'reason': ['alluxio.master.journal.folder should be a directory in the local file system.', 'alluxio.master.journal.formatter.class is not a valid class.', 'alluxio.master.rpc.port is not a valid port number.', 'alluxio.master.web.port is not a valid port number.', 'alluxio.job.master.web.port is not a valid port number.', 'alluxio.job.worker.web.port is not a valid port number.', 'alluxio.worker.management.tier.promote.range is not a valid range.', 'alluxio.master.metastore.iterator.readahead.size is not a valid size.', 'alluxio.user.conf.cluster.default.enabled is not a valid boolean.', 'alluxio.underfs.s3.connection.ttl is not a valid time.', 'alluxio.worker.tieredstore.level1.watermark.high.ratio is not a valid ratio.', 'alluxio.worker.management.tier.promote.quota.percent is not a valid percentage.', 'alluxio.underfs.cleanup.enabled is not a valid boolean.']}
+
+Final result:
+
+There are 13 misconfiguration parameters in the input: alluxio.master.journal.folder	alluxio.master.journal.formatter.class	alluxio.master.rpc.port	alluxio.master.web.port	alluxio.job.master.web.port	alluxio.job.worker.web.port	alluxio.worker.management.tier.promote.range	alluxio.master.metastore.iterator.readahead.size	alluxio.user.conf.cluster.default.enabled	alluxio.underfs.s3.connection.ttl	alluxio.worker.tieredstore.level1.watermark.high.ratio	alluxio.worker.management.tier.promote.quota.percent	alluxio.underfs.cleanup.enabled
+[Ciri] Reason for alluxio.master.journal.folder: alluxio.master.journal.folder should be a directory in the local file system.
+[Ciri] Reason for alluxio.master.journal.formatter.class: alluxio.master.journal.formatter.class is not a valid class.
+[Ciri] Reason for alluxio.master.rpc.port: alluxio.master.rpc.port is not a valid port number.
+[Ciri] Reason for alluxio.master.web.port: alluxio.master.web.port is not a valid port number.
+[Ciri] Reason for alluxio.job.master.web.port: alluxio.job.master.web.port is not a valid port number.
+[Ciri] Reason for alluxio.job.worker.web.port: alluxio.job.worker.web.port is not a valid port number.
+[Ciri] Reason for alluxio.worker.management.tier.promote.range: alluxio.worker.management.tier.promote.range is not a valid range.
+[Ciri] Reason for alluxio.master.metastore.iterator.readahead.size: alluxio.master.metastore.iterator.readahead.size is not a valid size.
+[Ciri] Reason for alluxio.user.conf.cluster.default.enabled: alluxio.user.conf.cluster.default.enabled is not a valid boolean.
+[Ciri] Reason for alluxio.underfs.s3.connection.ttl: alluxio.underfs.s3.connection.ttl is not a valid time.
+[Ciri] Reason for alluxio.worker.tieredstore.level1.watermark.high.ratio: alluxio.worker.tieredstore.level1.watermark.high.ratio is not a valid ratio.
+[Ciri] Reason for alluxio.worker.management.tier.promote.quota.percent: alluxio.worker.management.tier.promote.quota.percent is not a valid percentage.
+[Ciri] Reason for alluxio.underfs.cleanup.enabled: alluxio.underfs.cleanup.enabled is not a valid boolean.

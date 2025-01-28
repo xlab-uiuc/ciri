@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.s3a.impl', 'fs.azure.secure.mode', 'hadoop.ssl.server.conf'], 'reason': ["The property 'fs.AbstractFileSystem.s3a.impl' is not a valid property for hcommon version 3.3.0.", "The property 'fs.azure.secure.mode' has an additional 'usage' tag which is not recognized in hcommon version 3.3.0.", "The property 'hadoop.ssl.server.conf' is not a valid property for hcommon version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.threshold', 'fs.AbstractFileSystem.s3a.impl', 'fs.azure.secure.mode', 'net.topology.script.number.args', 'hadoop.ssl.server.conf'], 'reason': ["The value '128M' for property 'fs.s3a.multipart.threshold' should be a numeric value with a suffix from the set {K,M,G,T,P}.", "The value 'org.apache.hadoop.fs.s3a.S3A' for property 'fs.AbstractFileSystem.s3a.impl' is not a valid implementation class.", "The value 'false' for property 'fs.azure.secure.mode' should be 'true' or 'false' without quotes.", "The value '100' for property 'net.topology.script.number.args' should be a numeric value.", "The value '/valid/file1' for property 'hadoop.ssl.server.conf' should be a valid file path."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.s3a.impl', 'fs.azure.secure.mode', 'hadoop.ssl.server.conf'], 'reason': ["The property 'fs.AbstractFileSystem.s3a.impl' is not a valid property for hcommon version 3.3.0.", "The property 'fs.azure.secure.mode' has an additional usage tag which is not recognized in hcommon version 3.3.0.", "The property 'hadoop.ssl.server.conf' is not a valid property for hcommon version 3.3.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.AbstractFileSystem.s3a.impl	fs.azure.secure.mode	hadoop.ssl.server.conf
+[Ciri] Reason for fs.AbstractFileSystem.s3a.impl: The property 'fs.AbstractFileSystem.s3a.impl' is not a valid property for hcommon version 3.3.0.
+[Ciri] Reason for fs.azure.secure.mode: The property 'fs.azure.secure.mode' has an additional usage tag which is not recognized in hcommon version 3.3.0.
+[Ciri] Reason for hadoop.ssl.server.conf: The property 'hadoop.ssl.server.conf' is not a valid property for hcommon version 3.3.0.

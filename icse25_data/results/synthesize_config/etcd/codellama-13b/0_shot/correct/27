@@ -1,0 +1,24 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log-outputs', 'proxy-read-timeout', 'proxy-write-timeout', 'snapshot-count', 'max-wals'], 'reason': ['log-outputs is not a valid property', 'proxy-read-timeout is not a valid property', 'proxy-write-timeout is not a valid property', 'snapshot-count is not a valid property', 'max-wals is not a valid property']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-token'], 'reason': ['initial-cluster-token should not be set in a single-node cluster']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout'], 'reason': ['proxy-read-timeout and proxy-write-timeout are not valid properties for etcd version 3.5.0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log-outputs', 'proxy-read-timeout', 'proxy-write-timeout', 'snapshot-count', 'max-wals'], 'reason': ['log-outputs is not a valid property for etcd version 3.5.0', 'proxy-read-timeout is not a valid property for etcd version 3.5.0', 'proxy-write-timeout is not a valid property for etcd version 3.5.0', 'snapshot-count is not a valid property for etcd version 3.5.0', 'max-wals is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['log-outputs', 'proxy-read-timeout', 'proxy-write-timeout', 'snapshot-count', 'max-wals'], 'reason': ['log-outputs is not a valid property for etcd version 3.5.0', 'proxy-read-timeout is not a valid property for etcd version 3.5.0', 'proxy-write-timeout is not a valid property for etcd version 3.5.0', 'snapshot-count is not a valid property for etcd version 3.5.0', 'max-wals is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout'], 'reason': ['proxy-read-timeout and proxy-write-timeout are not valid configuration options for etcd version 3.5.0.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: log-outputs	proxy-read-timeout	proxy-write-timeout	snapshot-count	max-wals
+[Ciri] Reason for log-outputs: log-outputs is not a valid property for etcd version 3.5.0
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout is not a valid property for etcd version 3.5.0
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout is not a valid property for etcd version 3.5.0
+[Ciri] Reason for snapshot-count: snapshot-count is not a valid property for etcd version 3.5.0
+[Ciri] Reason for max-wals: max-wals is not a valid property for etcd version 3.5.0

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.master.connect.retry.timeout', 'alluxio.job.master.hostname'], 'reason': ["Invalid value format. Timeout should not have 'hour' suffix.", 'Property value is referencing an undefined property.']}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.master.connect.retry.timeout', 'alluxio.job.master.hostname'], 'reason': ["Invalid value format. Timeout should not have 'hour' in the value.", 'Property not supported in Alluxio 2.5.0 version.']}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.master.connect.retry.timeout', 'alluxio.job.master.hostname'], 'reason': ["Incorrect value format. Timeout should not have 'hour' suffix.", 'Property value is not defined. It should be set to a valid hostname.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.worker.master.connect.retry.timeout	alluxio.job.master.hostname
+[Ciri] Reason for alluxio.worker.master.connect.retry.timeout: Invalid value format. Timeout should not have 'hour' suffix.
+[Ciri] Reason for alluxio.job.master.hostname: Property value is referencing an undefined property.

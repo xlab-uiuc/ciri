@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit', 'hbase.server.keyvalue.maxsize', 'hbase.column.max.version'], 'reason': ["The 'hbase.regionserver.regionSplitLimit' value should not be negative. It is meant to be a guideline for the maximum number of regions to split, with a default of 1000.", "The 'hbase.server.keyvalue.maxsize' default value is mentioned as 10MB, but the provided value is 5242880 bytes (5MB), which contradicts the default value description.", "The 'hbase.column.max.version' value is set to 0, which is invalid because it means no versions of the cell would be kept. There should be at least 1 version."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.regionSplitLimit	hbase.server.keyvalue.maxsize	hbase.column.max.version
+[Ciri] Reason for hbase.regionserver.regionSplitLimit: The 'hbase.regionserver.regionSplitLimit' value should not be negative. It is meant to be a guideline for the maximum number of regions to split, with a default of 1000.
+[Ciri] Reason for hbase.server.keyvalue.maxsize: The 'hbase.server.keyvalue.maxsize' default value is mentioned as 10MB, but the provided value is 5242880 bytes (5MB), which contradicts the default value description.
+[Ciri] Reason for hbase.column.max.version: The 'hbase.column.max.version' value is set to 0, which is invalid because it means no versions of the cell would be kept. There should be at least 1 version.

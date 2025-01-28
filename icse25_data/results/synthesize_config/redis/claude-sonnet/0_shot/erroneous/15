@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'repl-diskless-sync', 'supervised', 'aclfile', 'repl-diskless-load', 'appendonly', 'cluster-announce-tls-port', 'activerehashing'], 'reason': ["The 'cluster-announce-ip' parameter is invalid. It should be a valid IP address or hostname.", "The 'repl-diskless-sync' parameter is not a valid configuration option in Redis 7.0.0.", "The 'supervised' parameter is not a valid configuration option in Redis 7.0.0.", "The 'aclfile' parameter is not a valid configuration option in Redis 7.0.0. Access control lists (ACLs) are configured using the 'acl' configuration directive.", "The 'repl-diskless-load' parameter is not a valid configuration option in Redis 7.0.0.", "The 'appendonly' parameter is a valid configuration option, but it should be set to 'yes' or 'no' (without quotes).", "The 'cluster-announce-tls-port' parameter is not a valid configuration option in Redis 7.0.0. TLS configuration is done using the 'tls' configuration directives.", "The 'activerehashing' parameter is not a valid configuration option in Redis 7.0.0. Redis automatically handles rehashing as needed."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: cluster-announce-ip	repl-diskless-sync	supervised	aclfile	repl-diskless-load	appendonly	cluster-announce-tls-port	activerehashing
+[Ciri] Reason for cluster-announce-ip: The 'cluster-announce-ip' parameter is invalid. It should be a valid IP address or hostname.
+[Ciri] Reason for repl-diskless-sync: The 'repl-diskless-sync' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for supervised: The 'supervised' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for aclfile: The 'aclfile' parameter is not a valid configuration option in Redis 7.0.0. Access control lists (ACLs) are configured using the 'acl' configuration directive.
+[Ciri] Reason for repl-diskless-load: The 'repl-diskless-load' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for appendonly: The 'appendonly' parameter is a valid configuration option, but it should be set to 'yes' or 'no' (without quotes).
+[Ciri] Reason for cluster-announce-tls-port: The 'cluster-announce-tls-port' parameter is not a valid configuration option in Redis 7.0.0. TLS configuration is done using the 'tls' configuration directives.
+[Ciri] Reason for activerehashing: The 'activerehashing' parameter is not a valid configuration option in Redis 7.0.0. Redis automatically handles rehashing as needed.

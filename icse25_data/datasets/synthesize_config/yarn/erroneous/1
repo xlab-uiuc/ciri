@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.address</name>
+  <value>127.0.0.1</value>
+    <description>The address of the applications manager interface in the RM.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.amlauncher.thread-count</name>
+  <value>100</value>
+    <description>Number of threads used to launch/cleanup AM.</description>
+</property>
+
+<property>
+  <name>yarn.dispatcher.drain-events.timeout</name>
+  <value>9.9</value>
+    <description>Timeout in milliseconds when YARN dispatcher tries to drain the
+      events. Typically, this happens when service is stopping. e.g. RM drains
+      the ATS events dispatcher when stopping.
+    </description>
+</property>
+
+<property>
+  <name>yarn.scheduler.minimum-allocation-vcores</name>
+  <value>1</value>
+    <description>The minimum allocation for every container request at the RM
+    in terms of virtual CPU cores. Requests lower than this will be set to the
+    value of this property. Additionally, a node manager that is configured to
+    have fewer virtual cores than this value will be shut down by the resource
+    manager.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.delegation.token.renew-interval</name>
+  <value>86400000</value>
+    <description>
+    RM delegation token update interval in ms
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.localizer.cache.cleanup.interval-ms</name>
+  <value>300000</value>
+    <description>Interval in between cache cleanups.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.log-aggregation.num-log-files-per-app</name>
+  <value>60</value>
+    <description>Define how many aggregated log files per application per NM
+    we can have in remote file system. By default, the total number of
+    aggregated log files per application per NM is 30.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.nm-container-queuing.load-comparator</name>
+  <value>QUEUE_LENGTH</value>
+    <description>
+    Comparator for determining node load for Distributed Scheduling.
+    </description>
+</property>
+
+</configuration>

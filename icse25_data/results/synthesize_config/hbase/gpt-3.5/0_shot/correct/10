@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regions.slop', 'hfile.block.cache.size'], 'reason': ['The usage of \'hbase.regions.slop\' parameter is incorrect. The correct usage should be \'float slop = conf.getFloat("hbase.regions.slop", 0.1f);\'.', 'The usage of \'hfile.block.cache.size\' parameter is incorrect. The correct usage should be \'conf.setFloat("hfile.block.cache.size", 0.2f);\'.']}
+
+{'hasError': True, 'errParameter': ['hbase.regions.slop', 'hfile.block.cache.size'], 'reason': ["The usage of 'hbase.regions.slop' parameter is incorrect. The value should be a float, not a method call.", "The usage of 'hfile.block.cache.size' parameter is incorrect. The value should be a float, not a method call."]}
+
+{'hasError': True, 'errParameter': ['hbase.regions.slop', 'hfile.block.cache.size'], 'reason': ["The usage of 'hbase.regions.slop' parameter is incorrect. The value should be '0.002' instead of '0.1f'.", "The usage of 'hfile.block.cache.size' parameter is incorrect. The value should be '0.8' instead of '0.2f'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regions.slop	hfile.block.cache.size
+[Ciri] Reason for hbase.regions.slop: The usage of 'hbase.regions.slop' parameter is incorrect. The value should be '0.002' instead of '0.1f'.
+[Ciri] Reason for hfile.block.cache.size: The usage of 'hfile.block.cache.size' parameter is incorrect. The value should be '0.8' instead of '0.2f'.

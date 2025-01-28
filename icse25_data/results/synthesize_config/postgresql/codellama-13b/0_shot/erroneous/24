@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_ecdh_curve', 'wal_compression', 'tcp_keepalives_idle', 'timezone_abbreviations', 'maintenance_work_mem', 'commit_siblings', 'geqo_generations'], 'reason': ['ssl_ecdh_curve is not a valid option for this version of PostgreSQL', 'wal_compression is not a valid option for this version of PostgreSQL', 'tcp_keepalives_idle is not a valid option for this version of PostgreSQL', 'timezone_abbreviations is not a valid option for this version of PostgreSQL', 'maintenance_work_mem is not a valid option for this version of PostgreSQL', 'commit_siblings is not a valid option for this version of PostgreSQL', 'geqo_generations is not a valid option for this version of PostgreSQL']}
+
+{'hasError': True, 'errParameter': ['ssl_ecdh_curve', 'wal_compression', 'tcp_keepalives_idle', 'timezone_abbreviations', 'maintenance_work_mem', 'commit_siblings', 'geqo_generations'], 'reason': ['ssl_ecdh_curve is not a valid parameter', 'wal_compression is not a valid parameter', 'tcp_keepalives_idle is not a valid parameter', 'timezone_abbreviations is not a valid parameter', 'maintenance_work_mem is not a valid parameter', 'commit_siblings is not a valid parameter', 'geqo_generations is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['wal_compression', 'tcp_keepalives_idle', 'timezone_abbreviations', 'maintenance_work_mem', 'commit_siblings', 'geqo_generations'], 'reason': ['wal_compression is not a valid parameter for PostgreSQL 13.0', 'tcp_keepalives_idle is not a valid parameter for PostgreSQL 13.0', 'timezone_abbreviations is not a valid parameter for PostgreSQL 13.0', 'maintenance_work_mem is not a valid parameter for PostgreSQL 13.0', 'commit_siblings is not a valid parameter for PostgreSQL 13.0', 'geqo_generations is not a valid parameter for PostgreSQL 13.0']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: ssl_ecdh_curve	wal_compression	tcp_keepalives_idle	timezone_abbreviations	maintenance_work_mem	commit_siblings	geqo_generations
+[Ciri] Reason for ssl_ecdh_curve: ssl_ecdh_curve is not a valid option for this version of PostgreSQL
+[Ciri] Reason for wal_compression: wal_compression is not a valid parameter
+[Ciri] Reason for tcp_keepalives_idle: tcp_keepalives_idle is not a valid option for this version of PostgreSQL
+[Ciri] Reason for timezone_abbreviations: timezone_abbreviations is not a valid parameter
+[Ciri] Reason for maintenance_work_mem: maintenance_work_mem is not a valid option for this version of PostgreSQL
+[Ciri] Reason for commit_siblings: commit_siblings is not a valid option for this version of PostgreSQL
+[Ciri] Reason for geqo_generations: geqo_generations is not a valid option for this version of PostgreSQL

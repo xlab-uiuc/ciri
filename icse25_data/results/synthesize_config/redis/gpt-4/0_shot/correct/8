@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'oom-score-adj-values', 'proc-title-template'], 'reason': ["The 'enable-module-command' parameter does not exist in Redis configuration. It might be a typo or a misunderstanding of the configuration directives.", "The 'oom-score-adj-values' parameter is not a standard Redis configuration directive. It seems to be related to the Linux OOM (Out of Memory) killer settings, but it's not a part of Redis configuration.", "The 'proc-title-template' parameter does not exist in Redis configuration. This seems to be an attempt to customize the process title, but Redis does not support this through its configuration file."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable-module-command	oom-score-adj-values	proc-title-template
+[Ciri] Reason for enable-module-command: The 'enable-module-command' parameter does not exist in Redis configuration. It might be a typo or a misunderstanding of the configuration directives.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter is not a standard Redis configuration directive. It seems to be related to the Linux OOM (Out of Memory) killer settings, but it's not a part of Redis configuration.
+[Ciri] Reason for proc-title-template: The 'proc-title-template' parameter does not exist in Redis configuration. This seems to be an attempt to customize the process title, but Redis does not support this through its configuration file.

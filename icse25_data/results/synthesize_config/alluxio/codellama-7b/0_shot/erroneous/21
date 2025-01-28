@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.sequential.pread.threshold', 'alluxio.user.block.master.client.pool.gc.threshold'], 'reason': ['alluxio.user.file.sequential.pread.threshold should be a positive integer, but it is set to 4MB', 'alluxio.user.block.master.client.pool.gc.threshold should be a positive integer, but it is set to 1sec']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.sequential.pread.threshold', 'alluxio.zookeeper.election.path', 'alluxio.worker.management.tier.promote.quota.percent'], 'reason': ['alluxio.user.file.sequential.pread.threshold should be a positive integer', 'alluxio.zookeeper.election.path should be a valid path', 'alluxio.worker.management.tier.promote.quota.percent should be a percentage']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.sequential.pread.threshold'], 'reason': ['The value of alluxio.user.file.sequential.pread.threshold should be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.sequential.pread.threshold', 'alluxio.user.block.master.client.pool.gc.threshold', 'alluxio.zookeeper.election.path'], 'reason': ['alluxio.user.file.sequential.pread.threshold should be a positive integer, but got 4MB', 'alluxio.user.block.master.client.pool.gc.threshold should be a positive integer, but got 1sec', 'alluxio.zookeeper.election.path should be a valid zookeeper path, but got /valid/file2']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.sequential.pread.threshold', 'alluxio.user.block.master.client.pool.gc.threshold'], 'reason': ['alluxio.user.file.sequential.pread.threshold: The value of the property is not a valid integer.', 'alluxio.user.block.master.client.pool.gc.threshold: The value of the property is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.sequential.pread.threshold', 'alluxio.user.block.master.client.pool.gc.threshold'], 'reason': ['alluxio.user.file.sequential.pread.threshold must be a positive integer', 'alluxio.user.block.master.client.pool.gc.threshold must be a positive integer']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.file.sequential.pread.threshold	alluxio.user.block.master.client.pool.gc.threshold
+[Ciri] Reason for alluxio.user.file.sequential.pread.threshold: alluxio.user.file.sequential.pread.threshold: The value of the property is not a valid integer.
+[Ciri] Reason for alluxio.user.block.master.client.pool.gc.threshold: alluxio.user.block.master.client.pool.gc.threshold must be a positive integer

@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATE_FORMAT', 'SESSION_SERIALIZER', 'EMAIL_HOST', 'FORMAT_MODULE_PATH', 'CSRF_FAILURE_VIEW', 'USE_DEPRECATED_PYTZ'], 'reason': ["DATE_FORMAT 'N j, Y' is not a valid date format. It should be in the format specified by Django, such as 'Y-m-d'.", "SESSION_SERIALIZER 'django.contrib.sessions.serializers.JSONSerializer' is not a valid serializer for Django 4.0.", "EMAIL_HOST 'localhost' is not a valid email host. Please provide a valid SMTP server address.", 'FORMAT_MODULE_PATH should not be set to None in Django 4.0.', "CSRF_FAILURE_VIEW 'django.views.csrf.csrf_failure' is not a valid view for CSRF failure in Django 4.0.", 'USE_DEPRECATED_PYTZ should not be set to False in Django 4.0 as it is no longer supported.']}
+
+{'hasError': True, 'errParameter': ['DATE_FORMAT', 'SESSION_SERIALIZER', 'EMAIL_HOST', 'FORMAT_MODULE_PATH', 'CSRF_FAILURE_VIEW', 'USE_DEPRECATED_PYTZ'], 'reason': ["DATE_FORMAT should be in the format 'N j, Y' for example 'January 1, 2022'", "SESSION_SERIALIZER should be 'django.contrib.sessions.serializers.PickleSerializer' for Django 4.0", "EMAIL_HOST should be a valid email server address, not 'localhost'", "FORMAT_MODULE_PATH should be set to a valid Python path if needed, not 'None'", "CSRF_FAILURE_VIEW should be 'django.views.csrf.csrf_protect'", "USE_DEPRECATED_PYTZ should be set to 'True' if you want to use deprecated Pytz features"]}
+
+{'hasError': True, 'errParameter': ['DATE_FORMAT', 'FILE_UPLOAD_PERMISSIONS', 'SESSION_SERIALIZER', 'EMAIL_HOST', 'FORMAT_MODULE_PATH', 'CSRF_FAILURE_VIEW', 'USE_DEPRECATED_PYTZ'], 'reason': ["DATE_FORMAT should be in the format 'N j, Y' for example 'F j, Y'", 'FILE_UPLOAD_PERMISSIONS should be in octal format, for example 0o644', "SESSION_SERIALIZER should not be set to 'django.contrib.sessions.serializers.JSONSerializer' in Django 4.0", "EMAIL_HOST should not be set to 'localhost'", 'FORMAT_MODULE_PATH should not be set to None', "CSRF_FAILURE_VIEW should not be set to 'django.views.csrf.csrf_failure'", 'USE_DEPRECATED_PYTZ should not be set to False in Django 4.0']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: DATE_FORMAT	SESSION_SERIALIZER	EMAIL_HOST	FORMAT_MODULE_PATH	CSRF_FAILURE_VIEW	USE_DEPRECATED_PYTZ
+[Ciri] Reason for DATE_FORMAT: DATE_FORMAT should be in the format 'N j, Y' for example 'January 1, 2022'
+[Ciri] Reason for SESSION_SERIALIZER: SESSION_SERIALIZER should be 'django.contrib.sessions.serializers.PickleSerializer' for Django 4.0
+[Ciri] Reason for EMAIL_HOST: EMAIL_HOST 'localhost' is not a valid email host. Please provide a valid SMTP server address.
+[Ciri] Reason for FORMAT_MODULE_PATH: FORMAT_MODULE_PATH should be set to a valid Python path if needed, not 'None'
+[Ciri] Reason for CSRF_FAILURE_VIEW: CSRF_FAILURE_VIEW should be 'django.views.csrf.csrf_protect'
+[Ciri] Reason for USE_DEPRECATED_PYTZ: USE_DEPRECATED_PYTZ should not be set to False in Django 4.0 as it is no longer supported.

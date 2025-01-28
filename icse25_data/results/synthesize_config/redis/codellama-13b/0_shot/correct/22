@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'dir', 'enable-module-command', 'slowlog-max-len', 'cluster-announce-port', 'repl-diskless-load', 'jemalloc-bg-thread', 'hll-sparse-max-bytes'], 'reason': ['cluster-announce-ip is not a valid IP address.', 'dir is not a valid directory.', 'enable-module-command is not a valid boolean.', 'slowlog-max-len is not a valid integer.', 'cluster-announce-port is not a valid port.', 'repl-diskless-load is not a valid boolean.', 'jemalloc-bg-thread is not a valid boolean.', 'hll-sparse-max-bytes is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'repl-diskless-load', 'hll-sparse-max-bytes'], 'reason': ['cluster-announce-port must be between 0 and 65535', 'repl-diskless-load must be one of the following values: disabled, enabled', 'hll-sparse-max-bytes must be between 0 and 1073741824']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'dir', 'enable-module-command', 'slowlog-max-len', 'cluster-announce-port', 'repl-diskless-load', 'jemalloc-bg-thread', 'hll-sparse-max-bytes'], 'reason': ['cluster-announce-ip should be a valid IP address, dir should be a valid directory, enable-module-command should be yes or no, slowlog-max-len should be a positive integer, cluster-announce-port should be a valid port, repl-diskless-load should be enabled or disabled, jemalloc-bg-thread should be yes or no, hll-sparse-max-bytes should be a positive integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: cluster-announce-ip	dir	enable-module-command	slowlog-max-len	cluster-announce-port	repl-diskless-load	jemalloc-bg-thread	hll-sparse-max-bytes
+[Ciri] Reason for cluster-announce-ip: cluster-announce-ip is not a valid IP address.
+[Ciri] Reason for dir: dir is not a valid directory.
+[Ciri] Reason for enable-module-command: enable-module-command is not a valid boolean.
+[Ciri] Reason for slowlog-max-len: slowlog-max-len is not a valid integer.
+[Ciri] Reason for cluster-announce-port: cluster-announce-port is not a valid port.
+[Ciri] Reason for repl-diskless-load: repl-diskless-load is not a valid boolean.
+[Ciri] Reason for jemalloc-bg-thread: jemalloc-bg-thread is not a valid boolean.
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes is not a valid integer.

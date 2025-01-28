@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.min', 'alluxio.user.network.rpc.max.connections', 'alluxio.master.daily.backup.state.lock.try.duration', 'alluxio.user.network.rpc.keepalive.timeout', 'alluxio.master.rpc.executor.core.pool.size'], 'reason': ["The 'alluxio.user.file.replication.min' cannot be 0. The minimum replication factor should be at least 1.", "The 'alluxio.user.network.rpc.max.connections' should not be 0. It defines the maximum number of connections to each Alluxio worker, and a value of 0 could prevent connections.", "The format for 'alluxio.master.daily.backup.state.lock.try.duration' is incorrect. It should be specified in milliseconds without a unit, e.g., '240000' for 4 minutes.", "The format for 'alluxio.user.network.rpc.keepalive.timeout' is incorrect. It should be specified in milliseconds without a unit, e.g., '60000' for 60 seconds.", "The 'alluxio.master.rpc.executor.core.pool.size' setting might be too high depending on the hardware capabilities. While not necessarily incorrect, it should be adjusted carefully based on the system's resources."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.user.file.replication.min	alluxio.user.network.rpc.max.connections	alluxio.master.daily.backup.state.lock.try.duration	alluxio.user.network.rpc.keepalive.timeout	alluxio.master.rpc.executor.core.pool.size
+[Ciri] Reason for alluxio.user.file.replication.min: The 'alluxio.user.file.replication.min' cannot be 0. The minimum replication factor should be at least 1.
+[Ciri] Reason for alluxio.user.network.rpc.max.connections: The 'alluxio.user.network.rpc.max.connections' should not be 0. It defines the maximum number of connections to each Alluxio worker, and a value of 0 could prevent connections.
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.try.duration: The format for 'alluxio.master.daily.backup.state.lock.try.duration' is incorrect. It should be specified in milliseconds without a unit, e.g., '240000' for 4 minutes.
+[Ciri] Reason for alluxio.user.network.rpc.keepalive.timeout: The format for 'alluxio.user.network.rpc.keepalive.timeout' is incorrect. It should be specified in milliseconds without a unit, e.g., '60000' for 60 seconds.
+[Ciri] Reason for alluxio.master.rpc.executor.core.pool.size: The 'alluxio.master.rpc.executor.core.pool.size' setting might be too high depending on the hardware capabilities. While not necessarily incorrect, it should be adjusted carefully based on the system's resources.

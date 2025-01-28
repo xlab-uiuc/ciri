@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.scheduler.minimum-allocation-mb</name>
+  <value>2048</value>
+    <description>The minimum allocation for every container request at the RM
+    in MBs. Memory requests lower than this will be set to the value of this
+    property. Additionally, a node manager that is configured to have less memory
+    than this value will be shut down by the resource manager.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.proxy-user-privileges.enabled</name>
+  <value>true</value>
+  <description>If true, ResourceManager will have proxy-user privileges.
+    Use case: In a secure cluster, YARN requires the user hdfs delegation-tokens to
+    do localization and log-aggregation on behalf of the user. If this is set to true,
+    ResourceManager is able to request new hdfs delegation tokens on behalf of
+    the user. This is needed by long-running-service, because the hdfs tokens
+    will eventually expire and YARN requires new valid tokens to do localization
+    and log-aggregation. Note that to enable this use case, the corresponding
+    HDFS NameNode has to configure ResourceManager as the proxy-user so that
+    ResourceManager can itself ask for new tokens on behalf of the user when
+    tokens are past their max-life-time.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.collector-service.address</name>
+  <value>${yarn.nodemanager.hostname}:8048</value>
+    <description>Address where the collector service IPC is.</description>
+</property>
+
+<property>
+  <name>yarn.log-aggregation.file-controller.TFile.class</name>
+  <value>org.apache.hadoop.yarn.logaggregation.filecontroller.tfile.LogAggregationTFileController</value>
+    <description>Class that supports TFile read and write operations.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-diagnostics-maximum-size</name>
+  <value>20000</value>
+    <description>Maximum size of contain's diagnostics to keep for relaunching
+      container case.</description>
+</property>
+
+<property>
+  <name>yarn.client.application-client-protocol.poll-interval-ms</name>
+  <value>200</value>
+    <description>The interval that the yarn client library uses to poll the
+    completion status of the asynchronous API of application client protocol.
+    </description>
+</property>
+
+<property>
+  <name>yarn.intermediate-data-encryption.enable</name>
+  <value>false</value>
+    <description>
+    Enable/disable intermediate-data encryption at YARN level. For now,
+    this only is used by the FileSystemRMStateStore to setup right
+    file-system security attributes.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.containers-launcher.class</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher</value>
+    <description>
+      Containers launcher implementation for determining how containers
+      are launched within NodeManagers.
+    </description>
+</property>
+
+</configuration>

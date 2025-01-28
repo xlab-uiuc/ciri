@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.addresses', 'alluxio.user.network.streaming.keepalive.time'], 'reason': ["The 'alluxio.master.embedded.journal.addresses' configuration should include the port number along with the IP address in a format like 'host1:port1,host2:port2'.", "The 'alluxio.user.network.streaming.keepalive.time' value is too large and not practical. It should be a reasonable positive long value representing time in milliseconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.embedded.journal.addresses	alluxio.user.network.streaming.keepalive.time
+[Ciri] Reason for alluxio.master.embedded.journal.addresses: The 'alluxio.master.embedded.journal.addresses' configuration should include the port number along with the IP address in a format like 'host1:port1,host2:port2'.
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.time: The 'alluxio.user.network.streaming.keepalive.time' value is too large and not practical. It should be a reasonable positive long value representing time in milliseconds.

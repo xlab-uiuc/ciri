@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['huge_page_size', 'recovery_target_action', 'enable_async_append', 'data_sync_retry', 'wal_log_hints'], 'reason': ["huge_page_size value should be specified in kilobytes, for example, 'huge_page_size = 2kB'.", "recovery_target_action value should be one of 'pause', 'promote', or 'shutdown'.", 'enable_async_append is not a valid parameter in PostgreSQL version 13.0.', 'data_sync_retry is not a valid parameter in PostgreSQL version 13.0.', 'wal_log_hints is not a valid parameter in PostgreSQL version 13.0.']}
+
+{'hasError': True, 'errParameter': ['huge_page_size', 'recovery_target_action', 'data_sync_retry', 'wal_log_hints'], 'reason': ["huge_page_size value should be specified in kilobytes, for example, 'huge_page_size=2kB'.", "recovery_target_action only accepts values 'pause', 'promote', or 'shutdown'.", 'data_sync_retry parameter is not recognized in PostgreSQL version 13.0.', 'wal_log_hints parameter is not recognized in PostgreSQL version 13.0.']}
+
+{'hasError': True, 'errParameter': ['huge_page_size', 'recovery_target_action', 'data_sync_retry'], 'reason': ["huge_page_size value should be specified in kilobytes, not just '1'.", "recovery_target_action value should be 'pause' or 'promote'.", "data_sync_retry value should be 'on' or 'off'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['huge_page_size', 'recovery_target_action', 'data_sync_retry'], 'reason': ["huge_page_size value should be specified in kilobytes, not just '1'.", "recovery_target_action value should be 'pause' or 'shutdown'.", "data_sync_retry value should be 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['huge_page_size', 'recovery_target_action', 'data_sync_retry'], 'reason': ["huge_page_size value should be specified in kilobytes, not just '1'.", "recovery_target_action value should be one of 'pause', 'promote', or 'shutdown'.", 'data_sync_retry is not a valid parameter for PostgreSQL version 13.0.']}
+
+{'hasError': True, 'errParameter': ['huge_page_size', 'recovery_target_action', 'data_sync_retry'], 'reason': ["huge_page_size value should be specified in kilobytes, not just '1'.", "recovery_target_action only accepts 'pause', 'promote', or 'shutdown'.", 'data_sync_retry is not a valid parameter for PostgreSQL version 13.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: huge_page_size	recovery_target_action	data_sync_retry
+[Ciri] Reason for huge_page_size: huge_page_size value should be specified in kilobytes, not just '1'.
+[Ciri] Reason for recovery_target_action: recovery_target_action value should be one of 'pause', 'promote', or 'shutdown'.
+[Ciri] Reason for data_sync_retry: data_sync_retry is not a valid parameter for PostgreSQL version 13.0.

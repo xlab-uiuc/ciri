@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.s3a.multiobjectdelete.enable</name>
+  <value>true</value>
+  <description>When enabled, multiple single-object delete requests are replaced by
+    a single 'delete multiple objects'-request, reducing the number of requests.
+    Beware: legacy S3-compatible object stores might not support this request.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.csv.header</name>
+  <value>none</value>
+  <description>In S3 Select queries over CSV files: what is the role of the header? One of "none", "ignore" and "use"</description>
+</property>
+
+<property>
+  <name>fs.s3a.select.output.csv.quote.character</name>
+  <value>"</value>
+  <description>
+    In S3 Select queries: the quote character for generated CSV Files.
+  </description>
+</property>
+
+<property>
+  <name>ipc.ping.interval</name>
+  <value>30000</value>
+  <description>Timeout on waiting response from server, in milliseconds.
+  The client will send ping when the interval is passed without receiving bytes,
+  if ipc.client.ping is set to true.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].weighted-cost.lockshared</name>
+  <value>20</value>
+  <description>The weight multiplier to apply to the time spent in the
+    processing phase which holds a shared (read) lock.
+    This property applies to WeightedTimeCostProvider.
+  </description>
+</property>
+
+<property>
+  <name>ftp.blocksize</name>
+  <value>33554432</value>
+  <description>Block size</description>
+</property>
+
+<property>
+  <name>ha.health-monitor.check-interval.ms</name>
+  <value>2000</value>
+  <description>
+    How often to check the service.
+  </description>
+</property>
+
+<property>
+  <name>ha.health-monitor.sleep-after-disconnect.ms</name>
+  <value>1000</value>
+  <description>
+    How long to sleep after an unexpected RPC error.
+  </description>
+</property>
+
+</configuration>

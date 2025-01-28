@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'autopurge.snapRetainCount', 'quorum.auth.serverRequireSasl', 'minSessionTimeout', 'clientPort', 'localSessionsEnabled', 'localSessionsUpgradingEnabled', 'reconfigEnabled'], 'reason': ['dataDir is not a valid directory', 'autopurge.snapRetainCount must be a positive integer', 'quorum.auth.serverRequireSasl must be a boolean', 'minSessionTimeout must be a positive integer', 'clientPort must be a positive integer', 'localSessionsEnabled must be a boolean', 'localSessionsUpgradingEnabled must be a boolean', 'reconfigEnabled must be a boolean']}
+
+{'hasError': True, 'errParameter': ['autopurge.snapRetainCount', 'minSessionTimeout'], 'reason': ['autopurge.snapRetainCount should be an integer greater than or equal to 3', 'minSessionTimeout should be an integer greater than or equal to 2']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort'], 'reason': ['dataDir and dataLogDir must be absolute paths', 'clientPort must be a valid port number']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.snapRetainCount', 'minSessionTimeout'], 'reason': ['autopurge.snapRetainCount should be a positive integer', 'minSessionTimeout should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort'], 'reason': ['dataDir and dataLogDir must be absolute paths', 'clientPort must be a valid port number']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort'], 'reason': ['dataDir and dataLogDir are not valid paths', 'clientPort is not a valid port number']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dataDir	dataLogDir	clientPort
+[Ciri] Reason for dataDir: dataDir and dataLogDir must be absolute paths
+[Ciri] Reason for dataLogDir: clientPort is not a valid port number
+[Ciri] Reason for clientPort: 

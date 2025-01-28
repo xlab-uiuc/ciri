@@ -1,0 +1,18 @@
+Wrong shot number:
+[6, 1]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATICFILES_FINDERS', 'USE_X_FORWARDED_PORT', 'DATE_FORMAT', 'SESSION_EXPIRE_AT_BROWSER_CLOSE', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'STATICFILES_FINDERS' should be a tuple or list of finders, not a string.", "The property 'USE_X_FORWARDED_PORT' is not a valid setting for Django version 4.0.", "The property 'DATE_FORMAT' is not a valid setting for Django version 4.0.", "The property 'SESSION_EXPIRE_AT_BROWSER_CLOSE' is not a valid setting for Django version 4.0.", "The property 'CSRF_COOKIE_AGE' should be an integer representing the age of CSRF cookies in seconds."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: STATICFILES_FINDERS	USE_X_FORWARDED_PORT	DATE_FORMAT	SESSION_EXPIRE_AT_BROWSER_CLOSE	CSRF_COOKIE_AGE
+[Ciri] Reason for STATICFILES_FINDERS: The property 'STATICFILES_FINDERS' should be a tuple or list of finders, not a string.
+[Ciri] Reason for USE_X_FORWARDED_PORT: The property 'USE_X_FORWARDED_PORT' is not a valid setting for Django version 4.0.
+[Ciri] Reason for DATE_FORMAT: The property 'DATE_FORMAT' is not a valid setting for Django version 4.0.
+[Ciri] Reason for SESSION_EXPIRE_AT_BROWSER_CLOSE: The property 'SESSION_EXPIRE_AT_BROWSER_CLOSE' is not a valid setting for Django version 4.0.
+[Ciri] Reason for CSRF_COOKIE_AGE: The property 'CSRF_COOKIE_AGE' should be an integer representing the age of CSRF cookies in seconds.

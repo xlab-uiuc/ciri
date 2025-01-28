@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.default.mode', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio'], 'reason': ["The value '888' for property 'alluxio.underfs.gcs.default.mode' is invalid. It should be a valid POSIX mode in octal notation, e.g., '0755'.", "The value '1.6' for property 'alluxio.master.metastore.inode.cache.low.water.mark.ratio' is invalid. It should be a double value between 0.0 and 1.0 (inclusive)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.gcs.default.mode	alluxio.master.metastore.inode.cache.low.water.mark.ratio
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: The value '888' for property 'alluxio.underfs.gcs.default.mode' is invalid. It should be a valid POSIX mode in octal notation, e.g., '0755'.
+[Ciri] Reason for alluxio.master.metastore.inode.cache.low.water.mark.ratio: The value '1.6' for property 'alluxio.master.metastore.inode.cache.low.water.mark.ratio' is invalid. It should be a double value between 0.0 and 1.0 (inclusive).

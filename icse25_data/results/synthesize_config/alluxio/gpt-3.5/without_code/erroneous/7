@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 7, 3]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.connnection.timeout', 'alluxio.user.file.persistence.initial.wait.time'], 'reason': ["The property 'alluxio.underfs.web.connnection.timeout' has an invalid value '80hhhhh'.", "The property 'alluxio.user.file.persistence.initial.wait.time' has an invalid value '-1'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.connnection.timeout', 'alluxio.user.file.persistence.initial.wait.time'], 'reason': ["The property 'alluxio.underfs.web.connnection.timeout' has a typo in 'connnection'. It should be 'connection'.", "The property 'alluxio.user.file.persistence.initial.wait.time' has a negative value which is not valid."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.connnection.timeout', 'alluxio.user.file.persistence.initial.wait.time'], 'reason': ["The property 'alluxio.underfs.web.connnection.timeout' has a typo in 'connnection'.", "The property 'alluxio.user.file.persistence.initial.wait.time' has a negative value which is not allowed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.web.connnection.timeout	alluxio.user.file.persistence.initial.wait.time
+[Ciri] Reason for alluxio.underfs.web.connnection.timeout: The property 'alluxio.underfs.web.connnection.timeout' has a typo in 'connnection'.
+[Ciri] Reason for alluxio.user.file.persistence.initial.wait.time: The property 'alluxio.user.file.persistence.initial.wait.time' has a negative value which is not valid.

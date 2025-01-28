@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'EMAIL_BACKEND', 'SIGNING_BACKEND', 'DATABASE_ROUTERS'], 'reason': ['DEBUG should be false', 'EMAIL_BACKEND should be django.core.mail.backends.smtp.EmailBackend', 'SIGNING_BACKEND should be django.core.signing.TimestampSigner', 'DATABASE_ROUTERS should be empty']}
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS'], 'reason': ['SECURE_HSTS_SECONDS should be less than 10886400']}
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS'], 'reason': ['SECURE_HSTS_SECONDS is too large']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: SECURE_HSTS_SECONDS
+[Ciri] Reason for SECURE_HSTS_SECONDS: SECURE_HSTS_SECONDS is too large

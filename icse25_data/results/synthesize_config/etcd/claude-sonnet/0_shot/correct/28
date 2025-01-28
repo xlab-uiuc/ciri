@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'snapshot-count', 'quota-backend-bytes', 'max-wals'], 'reason': ['max-snapshots should be either 0 (disable) or a positive integer value. The value 1 is too low and may cause issues.', 'snapshot-count is a very high value and may cause issues with disk space usage. It is recommended to use a lower value or the default value.', 'quota-backend-bytes should be a positive integer value or 0 to disable quotas. The value 0 may cause issues with disk space usage.', 'max-wals is a low value and may cause issues with data consistency. It is recommended to use a higher value or the default value.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: max-snapshots	snapshot-count	quota-backend-bytes	max-wals
+[Ciri] Reason for max-snapshots: max-snapshots should be either 0 (disable) or a positive integer value. The value 1 is too low and may cause issues.
+[Ciri] Reason for snapshot-count: snapshot-count is a very high value and may cause issues with disk space usage. It is recommended to use a lower value or the default value.
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes should be a positive integer value or 0 to disable quotas. The value 0 may cause issues with disk space usage.
+[Ciri] Reason for max-wals: max-wals is a low value and may cause issues with data consistency. It is recommended to use a higher value or the default value.

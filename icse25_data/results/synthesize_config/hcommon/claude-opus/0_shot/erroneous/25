@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode', 'fs.client.resolve.topology.enabled'], 'reason': ["The value 'hadoop' is invalid for fs.permissions.umask-mode. It should be a valid umask value in octal or symbolic notation, e.g. '022' or 'u=rwx,g=,o='.", 'The property fs.client.resolve.topology.enabled is deprecated as of Hadoop 3.3.0. It should be removed from the configuration.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.permissions.umask-mode	fs.client.resolve.topology.enabled
+[Ciri] Reason for fs.permissions.umask-mode: The value 'hadoop' is invalid for fs.permissions.umask-mode. It should be a valid umask value in octal or symbolic notation, e.g. '022' or 'u=rwx,g=,o='.
+[Ciri] Reason for fs.client.resolve.topology.enabled: The property fs.client.resolve.topology.enabled is deprecated as of Hadoop 3.3.0. It should be removed from the configuration.

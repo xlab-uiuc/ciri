@@ -1,0 +1,20 @@
+Wrong shot number:
+[1, 6, 12]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['zookeeper.znode.acl.parent', 'hbase.normalizer.period', 'io.storefile.bloom.block.size'], 'reason': ["The property 'zookeeper.znode.acl.parent' is missing the description tag.", "The property 'hbase.normalizer.period' is missing the usage tag.", "The property 'io.storefile.bloom.block.size' is missing the usage tag."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.znode.acl.parent', 'hbase.normalizer.period', 'io.storefile.bloom.block.size'], 'reason': ["The property 'zookeeper.znode.acl.parent' is not a recognized configuration parameter for HBase version 2.2.7.", "The property 'hbase.normalizer.period' is not a recognized configuration parameter for HBase version 2.2.7.", "The property 'io.storefile.bloom.block.size' is not a recognized configuration parameter for HBase version 2.2.7."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: zookeeper.znode.acl.parent	hbase.normalizer.period	io.storefile.bloom.block.size
+[Ciri] Reason for zookeeper.znode.acl.parent: The property 'zookeeper.znode.acl.parent' is not a recognized configuration parameter for HBase version 2.2.7.
+[Ciri] Reason for hbase.normalizer.period: The property 'hbase.normalizer.period' is not a recognized configuration parameter for HBase version 2.2.7.
+[Ciri] Reason for io.storefile.bloom.block.size: The property 'io.storefile.bloom.block.size' is missing the usage tag.

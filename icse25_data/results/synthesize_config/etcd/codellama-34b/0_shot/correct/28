@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'initial-cluster-token', 'quota-backend-bytes', 'auto-compaction-mode', 'max-wals'], 'reason': ["initial-cluster-state should be either 'new' or 'existing'.", 'initial-cluster-token should be a non-empty string.', 'quota-backend-bytes should be a positive integer.', "auto-compaction-mode should be either 'periodic' or'revision'.", 'max-wals should be a positive integer.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: initial-cluster-state	initial-cluster-token	quota-backend-bytes	auto-compaction-mode	max-wals
+[Ciri] Reason for initial-cluster-state: initial-cluster-state should be either 'new' or 'existing'.
+[Ciri] Reason for initial-cluster-token: initial-cluster-token should be a non-empty string.
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes should be a positive integer.
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode should be either 'periodic' or'revision'.
+[Ciri] Reason for max-wals: max-wals should be a positive integer.

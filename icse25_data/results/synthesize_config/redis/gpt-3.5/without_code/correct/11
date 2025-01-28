@@ -1,0 +1,35 @@
+Wrong shot number:
+[8, 4, 1]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value'], 'reason': ["The property 'hash-max-listpack-value' is not a valid configuration parameter for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'replica-announce-port'], 'reason': ["The property 'hash-max-listpack-value' is not a valid property for Redis version 7.0.0.", "The property 'replica-announce-port' is not a valid property for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'bind-source-addr', 'replica-announce-port'], 'reason': ["The property 'hash-max-listpack-value' is incorrect. It should be 'hash-max-ziplist-value' for Redis version 7.0.0.", "The property 'bind-source-addr' has the value '127.0.0.1' which is not a valid IP address format.", "The property 'replica-announce-port' is incorrect. It should be 'replica-announce-ip' for specifying the IP address."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'bind-source-addr', 'replica-announce-port'], 'reason': ["The property 'hash-max-listpack-value' is misspelled. It should be 'hash-max-ziplist-value'.", "The property 'bind-source-addr' has the value '127.0.0.1' which is not a valid IP address format.", "The property 'replica-announce-port' is misspelled. It should be 'replica-announce-ip'."]}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'replica-announce-port'], 'reason': ["The property 'hash-max-listpack-value' is incorrect. It should be 'hash-max-ziplist-value'.", "The property 'replica-announce-port' is not a valid configuration parameter."]}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value'], 'reason': ["The property 'hash-max-listpack-value' is not a valid configuration parameter for Redis version 7.0.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'replica-announce-port'], 'reason': ["The property 'hash-max-listpack-value' is incorrect. The correct property name is 'hash-max-ziplist-value'.", "The property 'replica-announce-port' is not a valid property for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'replica-announce-port'], 'reason': ["The property 'hash-max-listpack-value' is not a valid property for Redis version 7.0.0.", "The property 'replica-announce-port' is not a valid property for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'bind-source-addr', 'replica-announce-port'], 'reason': ["The property 'hash-max-listpack-value' is misspelled. It should be 'hash-max-ziplist-value'.", "The property 'bind-source-addr' has the value '127.0.0.1' which is not a valid IP address format.", "The property 'replica-announce-port' is misspelled. It should be 'replica-announce-ip'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hash-max-listpack-value	replica-announce-port
+[Ciri] Reason for hash-max-listpack-value: The property 'hash-max-listpack-value' is not a valid property for Redis version 7.0.0.
+[Ciri] Reason for replica-announce-port: The property 'replica-announce-port' is not a valid property for Redis version 7.0.0.

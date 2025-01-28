@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.https.keystore.resource', 'dfs.blocksize', 'dfs.checksum.combine.mode'], 'reason': ["The property 'dfs.client.https.keystore.resource' is not a recognized configuration parameter in HDFS 3.3.0. It might be a custom or deprecated property.", "The 'dfs.blocksize' value is specified as '268435456' which is correct, but the usage example provided is misleading and incorrect. The usage should guide on setting the property in configuration files, not in code.", "The 'dfs.checksum.combine.mode' value 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' is not a valid option. The correct options include 'COMPOSITE_CRC' among others, but 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' is not recognized."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.client.https.keystore.resource	dfs.blocksize	dfs.checksum.combine.mode
+[Ciri] Reason for dfs.client.https.keystore.resource: The property 'dfs.client.https.keystore.resource' is not a recognized configuration parameter in HDFS 3.3.0. It might be a custom or deprecated property.
+[Ciri] Reason for dfs.blocksize: The 'dfs.blocksize' value is specified as '268435456' which is correct, but the usage example provided is misleading and incorrect. The usage should guide on setting the property in configuration files, not in code.
+[Ciri] Reason for dfs.checksum.combine.mode: The 'dfs.checksum.combine.mode' value 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' is not a valid option. The correct options include 'COMPOSITE_CRC' among others, but 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' is not recognized.

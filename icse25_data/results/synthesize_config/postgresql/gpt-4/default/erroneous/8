@@ -1,0 +1,17 @@
+Wrong shot number:
+[1, 8, 6]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'enable_async_append', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ["The value '128NS' for 'bgwriter_delay' is not valid. Valid units are ms (milliseconds).", "The property 'enable_async_append' does not exist in PostgreSQL version 13.0.", "The value '-2' for 'max_pred_locks_per_relation' is not valid. It must be a positive integer or set to zero for no limit.", "The value '-2' for 'log_min_duration_sample' is not valid. It must be a positive integer, -1 (disabled), or 0 (log everything)."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: bgwriter_delay	enable_async_append	max_pred_locks_per_relation	log_min_duration_sample
+[Ciri] Reason for bgwriter_delay: The value '128NS' for 'bgwriter_delay' is not valid. Valid units are ms (milliseconds).
+[Ciri] Reason for enable_async_append: The property 'enable_async_append' does not exist in PostgreSQL version 13.0.
+[Ciri] Reason for max_pred_locks_per_relation: The value '-2' for 'max_pred_locks_per_relation' is not valid. It must be a positive integer or set to zero for no limit.
+[Ciri] Reason for log_min_duration_sample: The value '-2' for 'log_min_duration_sample' is not valid. It must be a positive integer, -1 (disabled), or 0 (log everything).

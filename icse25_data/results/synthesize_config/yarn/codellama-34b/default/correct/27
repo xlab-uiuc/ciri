@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 8, 4]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The value of the property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' should not contain commas."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The value of the property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' should be a valid file path."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' has the value '/valid/file1' which does not exist."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.linux-container-executor.cgroups.hierarchy
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.hierarchy: The value of the property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' should be a valid file path.

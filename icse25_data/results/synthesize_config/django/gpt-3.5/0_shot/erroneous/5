@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'SESSION_FILE_PATH', 'CSRF_COOKIE_HTTPONLY'], 'reason': ["FILE_UPLOAD_DIRECTORY_PERMISSIONS should be set to a valid octal value or 'None'.", "SESSION_FILE_PATH should be set to a valid file path or 'None'.", 'CSRF_COOKIE_HTTPONLY should be set to either True or False.']}
+
+{'hasError': True, 'errParameter': ['FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'SESSION_FILE_PATH', 'CSRF_COOKIE_HTTPONLY'], 'reason': ["FILE_UPLOAD_DIRECTORY_PERMISSIONS should be set to a valid octal value or 'None'.", 'SESSION_FILE_PATH should be set to a directory path for storing session files.', "CSRF_COOKIE_HTTPONLY should be set to 'True' for security reasons."]}
+
+{'hasError': True, 'errParameter': ['FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'SESSION_FILE_PATH', 'CSRF_COOKIE_HTTPONLY'], 'reason': ["FILE_UPLOAD_DIRECTORY_PERMISSIONS should have a valid value, such as '0644' or '0755'.", 'SESSION_FILE_PATH should be set to a valid path for storing session data.', 'CSRF_COOKIE_HTTPONLY should be set to True for security reasons.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: FILE_UPLOAD_DIRECTORY_PERMISSIONS	SESSION_FILE_PATH	CSRF_COOKIE_HTTPONLY
+[Ciri] Reason for FILE_UPLOAD_DIRECTORY_PERMISSIONS: FILE_UPLOAD_DIRECTORY_PERMISSIONS should be set to a valid octal value or 'None'.
+[Ciri] Reason for SESSION_FILE_PATH: SESSION_FILE_PATH should be set to a valid file path or 'None'.
+[Ciri] Reason for CSRF_COOKIE_HTTPONLY: CSRF_COOKIE_HTTPONLY should be set to True for security reasons.

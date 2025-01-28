@@ -1,0 +1,35 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['compute_query_id', 'max_prepared_transactions', 'krb_caseins_users', 'wal_sync_method', 'effective_io_concurrency'], 'reason': ["Unknown parameter 'compute_query_id'", "The value for 'max_prepared_transactions' should be greater than zero", "Unknown parameter 'krb_caseins_users'", "The value for 'wal_sync_method' should be 'fsync' or 'open_datasync' for PostgreSQL 13.0", "The value for 'effective_io_concurrency' should be set to a positive integer"]}
+
+{'hasError': True, 'errParameter': ['compute_query_id', 'krb_caseins_users'], 'reason': ["'compute_query_id' is not a valid parameter for PostgreSQL version 13.0.", "'krb_caseins_users' is not a valid parameter for PostgreSQL version 13.0."]}
+
+{'hasError': True, 'errParameter': ['compute_query_id', 'max_prepared_transactions', 'krb_caseins_users', 'wal_sync_method', 'datestyle', 'effective_io_concurrency', 'max_locks_per_transaction', 'log_lock_waits'], 'reason': ['compute_query_id is not a valid parameter for PostgreSQL version 13.0', 'max_prepared_transactions should be set to a value greater than 0', "krb_caseins_users should be set to 'off' or 'on'", "wal_sync_method should be set to 'fsync', 'open_sync', 'fdatasync', or 'fsync_writethrough'", "datestyle should be in the format 'style, order', e.g., 'ISO, MDY'", 'effective_io_concurrency should be set to a value greater than 0', 'max_locks_per_transaction should be set to a value greater than 32', "log_lock_waits should be set to 'on' or 'off'"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['compute_query_id', 'krb_caseins_users', 'wal_sync_method', 'datestyle', 'effective_io_concurrency'], 'reason': ["Unknown parameter 'compute_query_id'", "Unknown parameter 'krb_caseins_users'", "Unknown parameter 'wal_sync_method'", "Unknown parameter 'datestyle'", "Unknown parameter 'effective_io_concurrency'"]}
+
+{'hasError': True, 'errParameter': ['compute_query_id', 'max_prepared_transactions', 'krb_caseins_users', 'wal_sync_method', 'datestyle', 'effective_io_concurrency', 'max_locks_per_transaction', 'log_lock_waits'], 'reason': ['compute_query_id is not a valid parameter for PostgreSQL version 13.0', 'max_prepared_transactions should be set to a value greater than 0', 'krb_caseins_users is not a valid parameter for PostgreSQL version 13.0', "wal_sync_method should be set to a valid synchronization method like 'fsync', 'open_sync', 'fdatasync', etc.", "datestyle should be in the format 'style, order', e.g., 'ISO, MDY'", 'effective_io_concurrency should be set to a value greater than 0', 'max_locks_per_transaction should be set to a value greater than 32', "log_lock_waits should be set to 'on' or 'true' to enable logging of lock waits"]}
+
+{'hasError': True, 'errParameter': ['compute_query_id', 'krb_caseins_users', 'effective_io_concurrency'], 'reason': ["Unknown parameter 'compute_query_id'", "Unknown parameter 'krb_caseins_users'", "Unknown parameter 'effective_io_concurrency'"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['compute_query_id', 'max_prepared_transactions', 'krb_caseins_users', 'wal_sync_method', 'datestyle', 'effective_io_concurrency', 'max_locks_per_transaction', 'log_lock_waits'], 'reason': ['compute_query_id is not a valid parameter for PostgreSQL version 13.0', 'max_prepared_transactions should be a positive integer value', "krb_caseins_users should be either 'on' or 'off'", "wal_sync_method should be set to 'fsync' or 'open_datasync'", "datestyle should be in the format 'style, order', e.g., 'iso, mdy'", 'effective_io_concurrency should be a positive integer value', 'max_locks_per_transaction should be a positive integer value', "log_lock_waits should be either 'on' or 'off'"]}
+
+{'hasError': True, 'errParameter': ['compute_query_id', 'max_prepared_transactions', 'krb_caseins_users', 'wal_sync_method', 'effective_io_concurrency'], 'reason': ['compute_query_id is not a valid parameter for PostgreSQL version 13.0', 'max_prepared_transactions should be a positive integer value', 'krb_caseins_users is not a valid parameter for PostgreSQL version 13.0', "wal_sync_method should be set to 'fsync' or 'open_sync' for PostgreSQL version 13.0", 'effective_io_concurrency should be set to a positive integer value']}
+
+{'hasError': True, 'errParameter': ['compute_query_id', 'max_prepared_transactions', 'krb_caseins_users', 'wal_sync_method', 'datestyle', 'effective_io_concurrency', 'max_locks_per_transaction', 'log_lock_waits'], 'reason': ['compute_query_id is not a valid parameter for PostgreSQL version 13.0', 'max_prepared_transactions should be set to a value greater than 0', "krb_caseins_users should be either 'on' or 'off'", "wal_sync_method should be set to 'fsync' or 'open_sync'", "datestyle should be in the format 'style, order', e.g., 'iso, mdy'", 'effective_io_concurrency should be set to a value greater than 0', 'max_locks_per_transaction should be set to a value greater than 32', "log_lock_waits should be either 'on' or 'off'"]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: compute_query_id	max_prepared_transactions	krb_caseins_users	wal_sync_method	datestyle	effective_io_concurrency	max_locks_per_transaction	log_lock_waits
+[Ciri] Reason for compute_query_id: compute_query_id is not a valid parameter for PostgreSQL version 13.0
+[Ciri] Reason for max_prepared_transactions: max_prepared_transactions should be a positive integer value
+[Ciri] Reason for krb_caseins_users: krb_caseins_users should be either 'on' or 'off'
+[Ciri] Reason for wal_sync_method: wal_sync_method should be set to 'fsync' or 'open_datasync'
+[Ciri] Reason for datestyle: datestyle should be in the format 'style, order', e.g., 'iso, mdy'
+[Ciri] Reason for effective_io_concurrency: effective_io_concurrency should be set to a value greater than 0
+[Ciri] Reason for max_locks_per_transaction: max_locks_per_transaction should be set to a value greater than 32
+[Ciri] Reason for log_lock_waits: log_lock_waits should be either 'on' or 'off'

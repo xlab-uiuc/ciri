@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 10, 5]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['unixsocketperm', 'zset-max-listpack-entries'], 'reason': ["The property 'unixsocketperm' has the value '1400' which is outside the valid range of 0-777 for Unix socket file permissions.", "The property 'zset-max-listpack-entries' has the value '-1' which is invalid. It should be a positive integer value."]}
+
+{'hasError': True, 'errParameter': ['unixsocketperm', 'zset-max-listpack-entries'], 'reason': ["The property 'unixsocketperm' has the value '1400' which is out of the valid range of Unix socket permissions (0-777).", "The property 'zset-max-listpack-entries' has the value '-1' which is invalid. It should be a positive integer or 0 to disable the limit."]}
+
+{'hasError': True, 'errParameter': ['unixsocketperm', 'zset-max-listpack-entries'], 'reason': ["The property 'unixsocketperm' has the value '1400' which is out of the valid range of Unix socket permissions (0-777).", "The property 'zset-max-listpack-entries' has the value '-1' which is invalid. It should be a positive integer or 0 to disable the limit."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: unixsocketperm	zset-max-listpack-entries
+[Ciri] Reason for unixsocketperm: The property 'unixsocketperm' has the value '1400' which is outside the valid range of 0-777 for Unix socket file permissions.
+[Ciri] Reason for zset-max-listpack-entries: The property 'zset-max-listpack-entries' has the value '-1' which is invalid. It should be a positive integer or 0 to disable the limit.

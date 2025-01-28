@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-debug-command', 'slowlog-max-len', 'slowlog-log-slower-than'], 'reason': ["The 'enable-debug-command' configuration parameter has been removed in Redis 7.0 and no longer has any effect.", "The 'slowlog-max-len' default value has been changed to 128 in Redis 7.0. While 64 is still a valid value, you may want to consider updating it to the new default.", "The 'slowlog-log-slower-than' configuration parameter has been renamed to 'slowlog-log-slower-than-usec' in Redis 7.0 to clarify that the value is in microseconds. You should update the parameter name."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable-debug-command	slowlog-max-len	slowlog-log-slower-than
+[Ciri] Reason for enable-debug-command: The 'enable-debug-command' configuration parameter has been removed in Redis 7.0 and no longer has any effect.
+[Ciri] Reason for slowlog-max-len: The 'slowlog-max-len' default value has been changed to 128 in Redis 7.0. While 64 is still a valid value, you may want to consider updating it to the new default.
+[Ciri] Reason for slowlog-log-slower-than: The 'slowlog-log-slower-than' configuration parameter has been renamed to 'slowlog-log-slower-than-usec' in Redis 7.0 to clarify that the value is in microseconds. You should update the parameter name.

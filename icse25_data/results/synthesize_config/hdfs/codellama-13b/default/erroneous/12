@@ -1,0 +1,34 @@
+Wrong shot number:
+[9, 3, 10]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.name.dir.restore', 'dfs.namenode.shared.edits.dir'], 'reason': ["The property 'dfs.namenode.name.dir.restore' has the value 'false' which is not within the accepted value {true,false}.", "The property 'dfs.namenode.shared.edits.dir' has the value 'dev/urandom///' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.keytab.file', 'dfs.namenode.shared.edits.dir'], 'reason': ["The property 'dfs.datanode.keytab.file' has the value '/valid/file1' which does not follow the correct path format.", "The property 'dfs.namenode.shared.edits.dir' has the value 'dev/urandom///' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.shared.edits.dir'], 'reason': ["The property 'dfs.namenode.shared.edits.dir' has the value 'dev/urandom///' which does not follow the correct path format."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.keytab.file', 'dfs.secondary.namenode.kerberos.internal.spnego.principal', 'dfs.namenode.shared.edits.dir'], 'reason': ["The property 'dfs.datanode.keytab.file' has the value '/valid/file1' which does not follow the correct path format.", "The property 'dfs.secondary.namenode.kerberos.internal.spnego.principal' has the value '${dfs.web.authentication.kerberos.principal}' which is not a valid principal.", "The property 'dfs.namenode.shared.edits.dir' has the value 'dev/urandom///' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.shared.edits.dir'], 'reason': ["The property 'dfs.namenode.shared.edits.dir' has the value 'dev/urandom///' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.keytab.file', 'dfs.namenode.shared.edits.dir'], 'reason': ["The property 'dfs.datanode.keytab.file' has the value '/valid/file1' which does not follow the correct path format.", "The property 'dfs.namenode.shared.edits.dir' has the value 'dev/urandom///' which does not follow the correct path format."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.shared.edits.dir'], 'reason': ["The property 'dfs.namenode.shared.edits.dir' has the value 'dev/urandom///' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.keytab.file', 'dfs.secondary.namenode.kerberos.internal.spnego.principal'], 'reason': ["The property 'dfs.datanode.keytab.file' has the value '/valid/file1' which does not follow the correct path format.", "The property 'dfs.secondary.namenode.kerberos.internal.spnego.principal' has the value '${dfs.web.authentication.kerberos.principal}' which is not a valid principal."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.shared.edits.dir'], 'reason': ["The property 'dfs.namenode.shared.edits.dir' has the value 'dev/urandom///' which does not follow the correct path format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.shared.edits.dir
+[Ciri] Reason for dfs.namenode.shared.edits.dir: The property 'dfs.namenode.shared.edits.dir' has the value 'dev/urandom///' which does not follow the correct path format.

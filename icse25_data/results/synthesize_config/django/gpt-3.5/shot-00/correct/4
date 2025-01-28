@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATE_FORMAT', 'FILE_UPLOAD_PERMISSIONS', 'SESSION_SERIALIZER', 'EMAIL_HOST', 'FORMAT_MODULE_PATH', 'CSRF_FAILURE_VIEW', 'USE_DEPRECATED_PYTZ'], 'reason': ["DATE_FORMAT should be in the format 'N j, Y' for example 'January 1, 2022'.", 'FILE_UPLOAD_PERMISSIONS should be in octal format, for example, 0o644.', "SESSION_SERIALIZER should be a valid serializer, not 'django.contrib.sessions.serializers.JSONSerializer'.", 'EMAIL_HOST should be a valid email host address.', 'FORMAT_MODULE_PATH should not be None, provide a valid path if needed.', 'CSRF_FAILURE_VIEW should be a valid view for CSRF failure.', 'USE_DEPRECATED_PYTZ should be set to either True or False.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: DATE_FORMAT	FILE_UPLOAD_PERMISSIONS	SESSION_SERIALIZER	EMAIL_HOST	FORMAT_MODULE_PATH	CSRF_FAILURE_VIEW	USE_DEPRECATED_PYTZ
+[Ciri] Reason for DATE_FORMAT: DATE_FORMAT should be in the format 'N j, Y' for example 'January 1, 2022'.
+[Ciri] Reason for FILE_UPLOAD_PERMISSIONS: FILE_UPLOAD_PERMISSIONS should be in octal format, for example, 0o644.
+[Ciri] Reason for SESSION_SERIALIZER: SESSION_SERIALIZER should be a valid serializer, not 'django.contrib.sessions.serializers.JSONSerializer'.
+[Ciri] Reason for EMAIL_HOST: EMAIL_HOST should be a valid email host address.
+[Ciri] Reason for FORMAT_MODULE_PATH: FORMAT_MODULE_PATH should not be None, provide a valid path if needed.
+[Ciri] Reason for CSRF_FAILURE_VIEW: CSRF_FAILURE_VIEW should be a valid view for CSRF failure.
+[Ciri] Reason for USE_DEPRECATED_PYTZ: USE_DEPRECATED_PYTZ should be set to either True or False.

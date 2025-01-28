@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_receiver_create_temp_slot', 'krb_server_keyfile', 'log_filename', 'default_toast_compression'], 'reason': ['wal_receiver_create_temp_slot is not a valid parameter for postgresql version 13.0', 'krb_server_keyfile should not have single quotes around the value', 'log_filename should use strftime format specifiers like %Y, %m, %d, %H, %M, %S', "default_toast_compression should be set to 'pglz' without quotes"]}
+
+{'hasError': True, 'errParameter': ['wal_receiver_create_temp_slot', 'krb_server_keyfile', 'dynamic_shared_memory_type', 'max_stack_depth', 'log_filename', 'default_toast_compression'], 'reason': ['wal_receiver_create_temp_slot is not a valid parameter for version 13.0', 'krb_server_keyfile should not have single quotes around the value', "dynamic_shared_memory_type should be set to 'posix' or 'sysv'", "max_stack_depth should be specified in bytes, e.g., '2MB' should be '2097152'", "log_filename should not contain strftime format, use 'postgresql.log' instead", "default_toast_compression should be set to 'plain' or 'pglz'"]}
+
+{'hasError': True, 'errParameter': ['wal_receiver_create_temp_slot', 'krb_server_keyfile', 'log_filename', 'default_toast_compression'], 'reason': ['wal_receiver_create_temp_slot is not a valid parameter for postgresql version 13.0', 'krb_server_keyfile should not have single quotes around the value', 'log_filename should use strftime format specifiers like %Y-%m-%d %H%M%S', "default_toast_compression value should be either 'plain' or 'pglz'"]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: wal_receiver_create_temp_slot	krb_server_keyfile	log_filename	default_toast_compression
+[Ciri] Reason for wal_receiver_create_temp_slot: wal_receiver_create_temp_slot is not a valid parameter for postgresql version 13.0
+[Ciri] Reason for krb_server_keyfile: krb_server_keyfile should not have single quotes around the value
+[Ciri] Reason for log_filename: log_filename should use strftime format specifiers like %Y, %m, %d, %H, %M, %S
+[Ciri] Reason for default_toast_compression: default_toast_compression should be set to 'pglz' without quotes

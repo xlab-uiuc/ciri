@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.file.access.time.update.precision', 'alluxio.worker.file.buffer.size', 'alluxio.worker.management.tier.align.reserved.bytes'], 'reason': ["The value for 'alluxio.master.file.access.time.update.precision' should be in milliseconds (ms), not days (d).", "The value for 'alluxio.worker.file.buffer.size' should use the correct unit, which is expected to be in bytes (B), kilobytes (KB), or megabytes (MB) without space, e.g., '10MB'.", "The value for 'alluxio.worker.management.tier.align.reserved.bytes' should use the correct unit, which is expected to be in bytes (B), kilobytes (KB), megabytes (MB), gigabytes (GB), etc., without space, e.g., '1GB'. However, the format itself may be correct, but the context of its usage and the precision of specifying 'GB' might be scrutinized for correctness in configuration."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.file.access.time.update.precision	alluxio.worker.file.buffer.size	alluxio.worker.management.tier.align.reserved.bytes
+[Ciri] Reason for alluxio.master.file.access.time.update.precision: The value for 'alluxio.master.file.access.time.update.precision' should be in milliseconds (ms), not days (d).
+[Ciri] Reason for alluxio.worker.file.buffer.size: The value for 'alluxio.worker.file.buffer.size' should use the correct unit, which is expected to be in bytes (B), kilobytes (KB), or megabytes (MB) without space, e.g., '10MB'.
+[Ciri] Reason for alluxio.worker.management.tier.align.reserved.bytes: The value for 'alluxio.worker.management.tier.align.reserved.bytes' should use the correct unit, which is expected to be in bytes (B), kilobytes (KB), megabytes (MB), gigabytes (GB), etc., without space, e.g., '1GB'. However, the format itself may be correct, but the context of its usage and the precision of specifying 'GB' might be scrutinized for correctness in configuration.

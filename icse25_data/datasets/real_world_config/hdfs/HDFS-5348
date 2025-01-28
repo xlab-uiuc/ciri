@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.redundancy.considerLoad.factor</name>
+  <value>2.0</value>
+    <description>The factor by which a node's load can exceed the average
+      before being rejected for writes, only if considerLoad is true.
+    </description>
+</property>
+
+<property>
+  <name>dfs.permissions.superusergroup</name>
+  <value>supergroup</value>
+  <description>The name of the group of super-users.
+    The value should be a single group name.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.read.shortcircuit</name>
+  <value>false</value>
+  <description>
+    This configuration parameter turns on short-circuit local reads.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reject-unresolved-dn-topology-mapping</name>
+  <value>true</value>
+  <description>
+    If the value is set to true, then namenode will reject datanode
+    registration if the topology mapping for a datanode is not resolved and
+    NULL is returned (script defined by net.topology.script.file.name fails
+    to execute). Otherwise, datanode will be registered and the default rack
+    will be assigned as the topology path. Topology paths are important for
+    data resiliency, since they define fault domains. Thus it may be unwanted
+    behavior to allow datanode registration with the default rack if the
+    resolving topology failed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reencrypt.batch.size</name>
+  <value>2000</value>
+  <description>How many EDEKs should the re-encrypt thread process in one batch.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reencrypt.throttle.limit.updater.ratio</name>
+  <value>2.0</value>
+  <description>Throttling ratio for the re-encryption, indicating what fraction
+    of time should the re-encrypt updater thread work under NN write lock.
+    Larger than 1.0 values are interpreted as 1.0. Negative value or 0 are
+    invalid values and will fail NN startup.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.max.block.acquire.failures</name>
+  <value>6</value>
+  <description>
+    Maximum failures allowed when trying to get block information from a specific datanode.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.max.locked.memory</name>
+  <value>2000000</value>
+  <description>
+    The amount of memory in bytes to use for caching of block replicas in
+    memory on the datanode. The datanode's maximum locked memory soft ulimit
+    (RLIMIT_MEMLOCK) must be set to at least this value, else the datanode
+    will abort on startup. Support multiple size unit suffix(case insensitive),
+    as described in dfs.blocksize.
+
+    By default, this parameter is set to 0, which disables in-memory caching.
+
+    If the native libraries are not available to the DataNode, this
+    configuration has no effect.
+  </description>
+</property>
+
+</configuration>

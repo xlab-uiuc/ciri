@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'ha.zookeeper.parent-znode'], 'reason': ['The value of fs.defaultFS is not a valid URI.', 'The value of ha.zookeeper.parent-znode is not a valid URI.']}
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'ha.zookeeper.parent-znode'], 'reason': ['fs.defaultFS is not a valid property', 'ha.zookeeper.parent-znode is not a valid property']}
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'ha.zookeeper.parent-znode'], 'reason': ["fs.defaultFS: The value is not a valid URI. The scheme and authority determine the FileSystem implementation. The uri's scheme determines the config property (fs.SCHEME.impl) naming the FileSystem implementation class. The uri's authority is used to determine the host, port, etc. for a filesystem.", 'ha.zookeeper.parent-znode: The value is not a valid ZooKeeper znode. The ZooKeeper znode under which the ZK failover controller stores its information. Note that the nameservice ID is automatically appended to this znode, so it is not normally necessary to configure this, even in a federated environment.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.defaultFS	ha.zookeeper.parent-znode
+[Ciri] Reason for fs.defaultFS: fs.defaultFS: The value is not a valid URI. The scheme and authority determine the FileSystem implementation. The uri's scheme determines the config property (fs.SCHEME.impl) naming the FileSystem implementation class. The uri's authority is used to determine the host, port, etc. for a filesystem.
+[Ciri] Reason for ha.zookeeper.parent-znode: ha.zookeeper.parent-znode: The value is not a valid ZooKeeper znode. The ZooKeeper znode under which the ZK failover controller stores its information. Note that the nameservice ID is automatically appended to this znode, so it is not normally necessary to configure this, even in a federated environment.

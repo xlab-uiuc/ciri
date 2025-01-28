@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.connnection.timeout=80hhhhh', 'alluxio.user.file.persistence.initial.wait.time=-1'], 'reason': ["The property 'alluxio.underfs.web.connnection.timeout' is misspelled as 'connnection' instead of 'connection'. Additionally, the value '80hhhhh' is invalid as it should be a valid duration string (e.g., '80s', '1m', '2h').", "The property 'alluxio.user.file.persistence.initial.wait.time' should be a valid non-negative duration string (e.g., '0s', '1m', '2h'). The value '-1' is invalid."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.web.connnection.timeout=80hhhhh	alluxio.user.file.persistence.initial.wait.time=-1
+[Ciri] Reason for alluxio.underfs.web.connnection.timeout=80hhhhh: The property 'alluxio.underfs.web.connnection.timeout' is misspelled as 'connnection' instead of 'connection'. Additionally, the value '80hhhhh' is invalid as it should be a valid duration string (e.g., '80s', '1m', '2h').
+[Ciri] Reason for alluxio.user.file.persistence.initial.wait.time=-1: The property 'alluxio.user.file.persistence.initial.wait.time' should be a valid non-negative duration string (e.g., '0s', '1m', '2h'). The value '-1' is invalid.

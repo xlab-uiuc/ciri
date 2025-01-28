@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_multixact_freeze_table_age', 'autovacuum_vacuum_cost_delay', 'event_triggers', 'syslog_facility', 'work_mem'], 'reason': ["The parameter 'vacuum_multixact_freeze_table_age' does not exist. The correct parameter is 'vacuum_multixact_freeze_max_age'.", "The value for 'autovacuum_vacuum_cost_delay' should be in milliseconds as an integer or 'min'/'default', but without the 'ms' suffix.", "The parameter 'event_triggers' does not exist. There is no such setting in PostgreSQL.", "The value for 'syslog_facility' should be in uppercase ('LOCAL0' is correct, but the format in the question suggests a potential misunderstanding or typo).", "The 'work_mem' setting might be too low for most environments. 1MB is usually not sufficient for work memory, leading to potential performance issues."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: vacuum_multixact_freeze_table_age	autovacuum_vacuum_cost_delay	event_triggers	syslog_facility	work_mem
+[Ciri] Reason for vacuum_multixact_freeze_table_age: The parameter 'vacuum_multixact_freeze_table_age' does not exist. The correct parameter is 'vacuum_multixact_freeze_max_age'.
+[Ciri] Reason for autovacuum_vacuum_cost_delay: The value for 'autovacuum_vacuum_cost_delay' should be in milliseconds as an integer or 'min'/'default', but without the 'ms' suffix.
+[Ciri] Reason for event_triggers: The parameter 'event_triggers' does not exist. There is no such setting in PostgreSQL.
+[Ciri] Reason for syslog_facility: The value for 'syslog_facility' should be in uppercase ('LOCAL0' is correct, but the format in the question suggests a potential misunderstanding or typo).
+[Ciri] Reason for work_mem: The 'work_mem' setting might be too low for most environments. 1MB is usually not sufficient for work memory, leading to potential performance issues.

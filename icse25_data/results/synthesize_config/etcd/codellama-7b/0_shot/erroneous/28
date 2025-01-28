@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'force-new-cluster', 'client-cert-auth', 'initial-cluster-state', 'max-wals', 'heartbeat-interval', 'auto-compaction-retention'], 'reason': ['proxy-write-timeout must be a positive integer', 'force-new-cluster must be a boolean', 'client-cert-auth must be a boolean', 'initial-cluster-state must be a string', 'max-wals must be a positive integer', 'heartbeat-interval must be a positive integer', 'auto-compaction-retention must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'force-new-cluster', 'client-cert-auth', 'initial-cluster-state', 'max-wals', 'heartbeat-interval', 'auto-compaction-retention'], 'reason': ['proxy-write-timeout: 5000: invalid value: time: invalid duration', 'force-new-cluster: true: invalid value: true: not a boolean', 'client-cert-auth: true: invalid value: true: not a boolean', "initial-cluster-state: 'new': invalid value: 'new': not a valid member state", 'max-wals: 1: invalid value: 1: not a valid integer', 'heartbeat-interval: 200: invalid value: 200: not a valid integer', 'auto-compaction-retention: 2: invalid value: 2: not a valid integer']}
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'force-new-cluster', 'client-cert-auth', 'initial-cluster-state', 'max-wals', 'heartbeat-interval', 'auto-compaction-retention'], 'reason': ['proxy-write-timeout must be a positive integer', 'force-new-cluster must be a boolean', 'client-cert-auth must be a boolean', "initial-cluster-state must be either 'new' or 'existing'", 'max-wals must be a positive integer', 'heartbeat-interval must be a positive integer', 'auto-compaction-retention must be a positive integer']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: proxy-write-timeout	force-new-cluster	client-cert-auth	initial-cluster-state	max-wals	heartbeat-interval	auto-compaction-retention
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout must be a positive integer
+[Ciri] Reason for force-new-cluster: force-new-cluster must be a boolean
+[Ciri] Reason for client-cert-auth: client-cert-auth must be a boolean
+[Ciri] Reason for initial-cluster-state: initial-cluster-state: 'new': invalid value: 'new': not a valid member state
+[Ciri] Reason for max-wals: max-wals must be a positive integer
+[Ciri] Reason for heartbeat-interval: heartbeat-interval must be a positive integer
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention must be a positive integer

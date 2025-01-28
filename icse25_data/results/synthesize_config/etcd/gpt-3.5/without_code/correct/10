@@ -1,0 +1,19 @@
+Wrong shot number:
+[5, 7, 2]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'initial-cluster-state'], 'reason': ["The property 'heartbeat-interval' should have a value greater than or equal to 1000.", "The property 'initial-cluster-state' should have the value 'existing' instead of 'new'."]}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ["The property 'initial-cluster-state' should have the value 'existing' instead of 'new' for a new member to join an existing cluster."]}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'initial-cluster-state'], 'reason': ["The property 'heartbeat-interval' should have a value greater than or equal to 1000.", "The property 'initial-cluster-state' should have the value 'existing' instead of 'new'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: heartbeat-interval	initial-cluster-state
+[Ciri] Reason for heartbeat-interval: The property 'heartbeat-interval' should have a value greater than or equal to 1000.
+[Ciri] Reason for initial-cluster-state: The property 'initial-cluster-state' should have the value 'existing' instead of 'new'.

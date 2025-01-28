@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port=1.1', 'alluxio.worker.management.tier.align.reserved.bytes=1GB'], 'reason': ["The property 'alluxio.job.master.rpc.port' expects an integer value, but '1.1' is not a valid integer.", "The property 'alluxio.worker.management.tier.align.reserved.bytes' expects a value in bytes (e.g., '1GB' should be '1073741824'). The provided value '1GB' is not a valid byte value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.rpc.port=1.1	alluxio.worker.management.tier.align.reserved.bytes=1GB
+[Ciri] Reason for alluxio.job.master.rpc.port=1.1: The property 'alluxio.job.master.rpc.port' expects an integer value, but '1.1' is not a valid integer.
+[Ciri] Reason for alluxio.worker.management.tier.align.reserved.bytes=1GB: The property 'alluxio.worker.management.tier.align.reserved.bytes' expects a value in bytes (e.g., '1GB' should be '1073741824'). The provided value '1GB' is not a valid byte value.

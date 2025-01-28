@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'proto-max-bulk-len'], 'reason': ["In Redis 7.0, the 'maxmemory-clients' parameter does not support a value with a unit suffix like '1g'. It expects a value in bytes without a unit.", "The 'proto-max-bulk-len' parameter does not support a value with a unit suffix like '512mb'. It expects a value in bytes without a unit."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: maxmemory-clients	proto-max-bulk-len
+[Ciri] Reason for maxmemory-clients: In Redis 7.0, the 'maxmemory-clients' parameter does not support a value with a unit suffix like '1g'. It expects a value in bytes without a unit.
+[Ciri] Reason for proto-max-bulk-len: The 'proto-max-bulk-len' parameter does not support a value with a unit suffix like '512mb'. It expects a value in bytes without a unit.

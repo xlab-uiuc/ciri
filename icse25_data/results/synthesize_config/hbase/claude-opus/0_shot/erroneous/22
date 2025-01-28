@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.compaction.enabled', 'hbase.hstore.blockingStoreFiles'], 'reason': ['hbase.regionserver.compaction.enabled should be a boolean value (true or false), but it is set to 10 which is an integer.', 'hbase.hstore.blockingStoreFiles is deprecated since HBase 2.0.0. Use hbase.hstore.blockingStoreFiles.count instead.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.compaction.enabled	hbase.hstore.blockingStoreFiles
+[Ciri] Reason for hbase.regionserver.compaction.enabled: hbase.regionserver.compaction.enabled should be a boolean value (true or false), but it is set to 10 which is an integer.
+[Ciri] Reason for hbase.hstore.blockingStoreFiles: hbase.hstore.blockingStoreFiles is deprecated since HBase 2.0.0. Use hbase.hstore.blockingStoreFiles.count instead.

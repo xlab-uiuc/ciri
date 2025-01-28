@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port', 'cluster-announce-bus-port', 'acllog-max-len', 'aof-timestamp-enabled'], 'reason': ['tls-port should be an integer value, not a file path', 'cluster-announce-bus-port was removed in Redis 7.0, use cluster-announce-port instead', 'acllog-max-len was renamed to acllog-max-len in Redis 7.0', 'aof-timestamp-enabled is not a valid configuration parameter in Redis 7.0']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: tls-port	cluster-announce-bus-port	acllog-max-len	aof-timestamp-enabled
+[Ciri] Reason for tls-port: tls-port should be an integer value, not a file path
+[Ciri] Reason for cluster-announce-bus-port: cluster-announce-bus-port was removed in Redis 7.0, use cluster-announce-port instead
+[Ciri] Reason for acllog-max-len: acllog-max-len was renamed to acllog-max-len in Redis 7.0
+[Ciri] Reason for aof-timestamp-enabled: aof-timestamp-enabled is not a valid configuration parameter in Redis 7.0

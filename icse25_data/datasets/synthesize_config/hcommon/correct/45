@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.read.timeout.ms</name>
+  <value>60000</value>
+  <description>
+    This property is the read timeout (in milliseconds) for LDAP
+    operations. If the LDAP provider doesn't get a LDAP response within the
+    specified period, it will abort the read attempt. Non-positive value
+    means no read timeout is specified in which case it waits for the response
+    infinitely.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.size</name>
+  <value>32M</value>
+  <description>How big (in bytes) to split upload or copy operations up into.
+    A suffix from the set {K,M,G,T,P} may be used to scale the numeric value.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.purge.age</name>
+  <value>172800</value>
+  <description>Minimum age in seconds of multipart uploads to purge
+    on startup if "fs.s3a.multipart.purge" is true
+  </description>
+</property>
+
+<property>
+  <name>fs.abfs.impl</name>
+  <value>org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem</value>
+  <description>The implementation class of the Azure Blob Filesystem</description>
+</property>
+
+<property>
+  <name>ipc.[port_number].cost-provider.impl</name>
+  <value>org.apache.hadoop.ipc.DefaultCostProvider</value>
+  <description>The cost provider mapping user requests to their cost. To
+    enable determination of cost based on processing time, use
+    org.apache.hadoop.ipc.WeightedTimeCostProvider.
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.require.client.cert</name>
+  <value>false</value>
+  <description>Whether client certificates are required</description>
+</property>
+
+<property>
+  <name>hadoop.security.kms.client.authentication.retry-count</name>
+  <value>1</value>
+  <description>
+    Number of time to retry connecting to KMS on authentication failure
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.ignore.namenode.default.kms.uri</name>
+  <value>false</value>
+    <description>
+      Ignore KMS default URI returned from NameNode.
+      When set to true, kms uri is searched in the following order:
+      1. If there is a mapping in Credential's secrets map for namenode uri.
+      2. Fallback to local conf. (i.e hadoop.security.key.provider.path)
+      If client choose to ignore KMS uri provided by NameNode then client
+      should set KMS URI using 'hadoop.security.key.provider.path' to access
+      the right KMS for encrypted files.
+    </description>
+</property>
+
+</configuration>

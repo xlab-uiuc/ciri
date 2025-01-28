@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.shell.backup.state.lock.timeout', 'alluxio.user.network.streaming.max.inbound.message.size', 'alluxio.network.connection.health.check.timeout', 'alluxio.master.file.access.time.update.precision', 'alluxio.user.master.polling.timeout'], 'reason': ["The correct property is 'alluxio.master.backup.state.lock.timeout'.", 'The size should be specified in bytes, not MB.', "The correct property is 'alluxio.network.connection.health.check.timeout.ms'.", "The time unit 'd' is not supported. It should be in ms, s, m, or h.", "The correct property is 'alluxio.user.master.poll.timeout'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.master.shell.backup.state.lock.timeout	alluxio.user.network.streaming.max.inbound.message.size	alluxio.network.connection.health.check.timeout	alluxio.master.file.access.time.update.precision	alluxio.user.master.polling.timeout
+[Ciri] Reason for alluxio.master.shell.backup.state.lock.timeout: The correct property is 'alluxio.master.backup.state.lock.timeout'.
+[Ciri] Reason for alluxio.user.network.streaming.max.inbound.message.size: The size should be specified in bytes, not MB.
+[Ciri] Reason for alluxio.network.connection.health.check.timeout: The correct property is 'alluxio.network.connection.health.check.timeout.ms'.
+[Ciri] Reason for alluxio.master.file.access.time.update.precision: The time unit 'd' is not supported. It should be in ms, s, m, or h.
+[Ciri] Reason for alluxio.user.master.polling.timeout: The correct property is 'alluxio.user.master.poll.timeout'.

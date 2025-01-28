@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['reconfigEnabled', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.purgeInterval', 'peerType'], 'reason': ['The reconfigEnabled parameter is deprecated in ZooKeeper 3.7.0 and should not be used.', 'The quorum.auth.kerberos.servicePrincipal parameter is used for Kerberos authentication, but the configuration does not specify any Kerberos-related parameters like jaasLoginRenew or server.jvmx-opts.', 'The autopurge.purgeInterval parameter is used for automatic purging of old transaction logs, but it is recommended to use the autopurge.snapRetainCount and autopurge.purgeInterval parameters together for better control over purging.', 'The peerType parameter is used to specify the role of the ZooKeeper server (participant, observer, or leader), but it is not a standard configuration parameter in ZooKeeper 3.7.0.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: reconfigEnabled	quorum.auth.kerberos.servicePrincipal	autopurge.purgeInterval	peerType
+[Ciri] Reason for reconfigEnabled: The reconfigEnabled parameter is deprecated in ZooKeeper 3.7.0 and should not be used.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: The quorum.auth.kerberos.servicePrincipal parameter is used for Kerberos authentication, but the configuration does not specify any Kerberos-related parameters like jaasLoginRenew or server.jvmx-opts.
+[Ciri] Reason for autopurge.purgeInterval: The autopurge.purgeInterval parameter is used for automatic purging of old transaction logs, but it is recommended to use the autopurge.snapRetainCount and autopurge.purgeInterval parameters together for better control over purging.
+[Ciri] Reason for peerType: The peerType parameter is used to specify the role of the ZooKeeper server (participant, observer, or leader), but it is not a standard configuration parameter in ZooKeeper 3.7.0.

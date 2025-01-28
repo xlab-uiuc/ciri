@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'repl-backlog-size', 'unixsocketperm', 'maxmemory-clients'], 'reason': ['slowlog-max-len cannot be negative. It should be a non-negative integer.', 'repl-backlog-size is too small. It should be at least a few megabytes.', 'unixsocketperm should be a valid octal unix file permission like 0700 instead of 700.', 'maxmemory-clients should be a memory value like 100mb or 1gb, not 1g.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: slowlog-max-len	repl-backlog-size	unixsocketperm	maxmemory-clients
+[Ciri] Reason for slowlog-max-len: slowlog-max-len cannot be negative. It should be a non-negative integer.
+[Ciri] Reason for repl-backlog-size: repl-backlog-size is too small. It should be at least a few megabytes.
+[Ciri] Reason for unixsocketperm: unixsocketperm should be a valid octal unix file permission like 0700 instead of 700.
+[Ciri] Reason for maxmemory-clients: maxmemory-clients should be a memory value like 100mb or 1gb, not 1g.

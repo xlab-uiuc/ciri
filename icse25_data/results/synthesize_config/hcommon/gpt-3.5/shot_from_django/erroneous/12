@@ -1,0 +1,17 @@
+Wrong shot number:
+[1, 6, 4]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'ipc.[port_number].scheduler.impl', 'hadoop.http.cross-origin.allowed-headers', 'hadoop.security.random.device.file.path'], 'reason': ["The property 'io.seqfile.local.dir' has a value '/valid/file1' which may not be a valid path or directory.", "The property 'ipc.[port_number].scheduler.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number.", "The property 'hadoop.http.cross-origin.allowed-headers' has a value 'X-Requested-With' which may not be a complete list of allowed headers for cross-origin support.", "The property 'hadoop.security.random.device.file.path' has a value 'dev/urandom///' which may not be a valid file path."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: io.seqfile.local.dir	ipc.[port_number].scheduler.impl	hadoop.http.cross-origin.allowed-headers	hadoop.security.random.device.file.path
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' has a value '/valid/file1' which may not be a valid path or directory.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The property 'ipc.[port_number].scheduler.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-headers: The property 'hadoop.http.cross-origin.allowed-headers' has a value 'X-Requested-With' which may not be a complete list of allowed headers for cross-origin support.
+[Ciri] Reason for hadoop.security.random.device.file.path: The property 'hadoop.security.random.device.file.path' has a value 'dev/urandom///' which may not be a valid file path.

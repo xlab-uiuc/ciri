@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.s3a.socket.send.buffer', 'ipc.[port_number].weighted-cost.response', 'hadoop.ssl.enabled.protocols', 'fs.client.resolve.remote.symlinks'], 'reason': ['The value of hadoop.security.dns.nameserver is not a valid IP address.', 'The value of fs.s3a.socket.send.buffer is not a valid integer.', 'The value of ipc.[port_number].weighted-cost.response is not a valid integer.', 'The value of hadoop.ssl.enabled.protocols is not a valid SSL protocol.', 'The value of fs.client.resolve.remote.symlinks is not a valid boolean.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.s3a.socket.send.buffer	ipc.[port_number].weighted-cost.response	hadoop.ssl.enabled.protocols	fs.client.resolve.remote.symlinks
+[Ciri] Reason for hadoop.security.dns.nameserver: The value of hadoop.security.dns.nameserver is not a valid IP address.
+[Ciri] Reason for fs.s3a.socket.send.buffer: The value of fs.s3a.socket.send.buffer is not a valid integer.
+[Ciri] Reason for ipc.[port_number].weighted-cost.response: The value of ipc.[port_number].weighted-cost.response is not a valid integer.
+[Ciri] Reason for hadoop.ssl.enabled.protocols: The value of hadoop.ssl.enabled.protocols is not a valid SSL protocol.
+[Ciri] Reason for fs.client.resolve.remote.symlinks: The value of fs.client.resolve.remote.symlinks is not a valid boolean.

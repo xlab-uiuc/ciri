@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.admin.threads.max', 'alluxio.master.backup.entry.buffer.count', 'alluxio.master.ufs.active.sync.event.rate.interval', 'alluxio.master.backup.connect.interval.max', 'alluxio.user.network.streaming.flowcontrol.window'], 'reason': ["alluxio.underfs.s3.admin.threads.max should have an integer value, but is set to a boolean 'true'", 'alluxio.master.backup.entry.buffer.count is not a valid configuration parameter in Alluxio 2.5.0', 'alluxio.master.ufs.active.sync.event.rate.interval is not a valid configuration parameter in Alluxio 2.5.0', 'alluxio.master.backup.connect.interval.max is not a valid configuration parameter in Alluxio 2.5.0', 'alluxio.user.network.streaming.flowcontrol.window is not a valid configuration parameter in Alluxio 2.5.0']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.underfs.s3.admin.threads.max	alluxio.master.backup.entry.buffer.count	alluxio.master.ufs.active.sync.event.rate.interval	alluxio.master.backup.connect.interval.max	alluxio.user.network.streaming.flowcontrol.window
+[Ciri] Reason for alluxio.underfs.s3.admin.threads.max: alluxio.underfs.s3.admin.threads.max should have an integer value, but is set to a boolean 'true'
+[Ciri] Reason for alluxio.master.backup.entry.buffer.count: alluxio.master.backup.entry.buffer.count is not a valid configuration parameter in Alluxio 2.5.0
+[Ciri] Reason for alluxio.master.ufs.active.sync.event.rate.interval: alluxio.master.ufs.active.sync.event.rate.interval is not a valid configuration parameter in Alluxio 2.5.0
+[Ciri] Reason for alluxio.master.backup.connect.interval.max: alluxio.master.backup.connect.interval.max is not a valid configuration parameter in Alluxio 2.5.0
+[Ciri] Reason for alluxio.user.network.streaming.flowcontrol.window: alluxio.user.network.streaming.flowcontrol.window is not a valid configuration parameter in Alluxio 2.5.0

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.optionalcacheflushinterval', 'hbase.bulkload.retries.number', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.hregion.max.filesize', 'hbase.superuser', 'hbase.table.max.rowsize', 'hbase.security.exec.permission.checks', 'hbase.snapshot.master.timeout.millis'], 'reason': ['The value of hbase.regionserver.optionalcacheflushinterval is too small. It should be at least 300000.', 'The value of hbase.bulkload.retries.number is too small. It should be at least 100.', 'The value of hbase.hregion.percolumnfamilyflush.size.lower.bound.min is too small. It should be at least 16777216.', 'The value of hbase.hregion.max.filesize is too small. It should be at least 107374182400.', 'The value of hbase.superuser is not a valid superuser. It should be a valid username.', 'The value of hbase.table.max.rowsize is too small. It should be at least 1073741824.', 'The value of hbase.security.exec.permission.checks is not a valid boolean. It should be either true or false.', 'The value of hbase.snapshot.master.timeout.millis is too small. It should be at least 1200000.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.regionserver.optionalcacheflushinterval	hbase.bulkload.retries.number	hbase.hregion.percolumnfamilyflush.size.lower.bound.min	hbase.hregion.max.filesize	hbase.superuser	hbase.table.max.rowsize	hbase.security.exec.permission.checks	hbase.snapshot.master.timeout.millis
+[Ciri] Reason for hbase.regionserver.optionalcacheflushinterval: The value of hbase.regionserver.optionalcacheflushinterval is too small. It should be at least 300000.
+[Ciri] Reason for hbase.bulkload.retries.number: The value of hbase.bulkload.retries.number is too small. It should be at least 100.
+[Ciri] Reason for hbase.hregion.percolumnfamilyflush.size.lower.bound.min: The value of hbase.hregion.percolumnfamilyflush.size.lower.bound.min is too small. It should be at least 16777216.
+[Ciri] Reason for hbase.hregion.max.filesize: The value of hbase.hregion.max.filesize is too small. It should be at least 107374182400.
+[Ciri] Reason for hbase.superuser: The value of hbase.superuser is not a valid superuser. It should be a valid username.
+[Ciri] Reason for hbase.table.max.rowsize: The value of hbase.table.max.rowsize is too small. It should be at least 1073741824.
+[Ciri] Reason for hbase.security.exec.permission.checks: The value of hbase.security.exec.permission.checks is not a valid boolean. It should be either true or false.
+[Ciri] Reason for hbase.snapshot.master.timeout.millis: The value of hbase.snapshot.master.timeout.millis is too small. It should be at least 1200000.

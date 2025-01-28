@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['USE_TZ', 'NUMBER_GROUPING', 'LANGUAGE_COOKIE_SAMESITE'], 'reason': ['USE_TZ should be a boolean value (True or False), not an integer.', 'NUMBER_GROUPING is not a valid Django setting. Did you mean USE_THOUSAND_SEPARATOR?', "LANGUAGE_COOKIE_SAMESITE should be a string value of either 'Lax', 'Strict', or 'None'. 'None' should be passed without quotes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: USE_TZ	NUMBER_GROUPING	LANGUAGE_COOKIE_SAMESITE
+[Ciri] Reason for USE_TZ: USE_TZ should be a boolean value (True or False), not an integer.
+[Ciri] Reason for NUMBER_GROUPING: NUMBER_GROUPING is not a valid Django setting. Did you mean USE_THOUSAND_SEPARATOR?
+[Ciri] Reason for LANGUAGE_COOKIE_SAMESITE: LANGUAGE_COOKIE_SAMESITE should be a string value of either 'Lax', 'Strict', or 'None'. 'None' should be passed without quotes.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[3, 5, 2]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATABASES', 'TEMPLATES'], 'reason': ["The property 'DATABASES' has the value '{}' which is not within the accepted value {a dictionary with a valid database configuration}.", "The property 'TEMPLATES' has the value '[]' which is not within the accepted value {a list with a valid template configuration}."]}
+
+{'hasError': True, 'errParameter': ['DATABASES', 'TEMPLATES'], 'reason': ["The property 'DATABASES' has the value '{}' which is not a valid dictionary.", "The property 'TEMPLATES' has the value '[]' which is not a valid list."]}
+
+{'hasError': True, 'errParameter': ['DEBUG_PROPAGATE_EXCEPTIONS'], 'reason': ["The property 'DEBUG_PROPAGATE_EXCEPTIONS' has the value 'True' which is not within the accepted value {true,false}."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: DATABASES	TEMPLATES
+[Ciri] Reason for DATABASES: The property 'DATABASES' has the value '{}' which is not within the accepted value {a dictionary with a valid database configuration}.
+[Ciri] Reason for TEMPLATES: The property 'TEMPLATES' has the value '[]' which is not within the accepted value {a list with a valid template configuration}.

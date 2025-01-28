@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.work.dir', 'alluxio.worker.tieredstore.level1.dirs.mediumtype', 'alluxio.worker.reviewer.probabilistic.softlimit.bytes', 'alluxio.master.journal.flush.batch.time', 'alluxio.worker.network.netty.channel'], 'reason': ['Invalid value for alluxio.work.dir. It should not start with double slashes.', 'Invalid reference in alluxio.worker.tieredstore.level1.dirs.mediumtype.', "Invalid format for alluxio.worker.reviewer.probabilistic.softlimit.bytes. It should not have 'MB' suffix.", "Invalid format for alluxio.master.journal.flush.batch.time. It should not have 'ms' suffix.", "Invalid value for alluxio.worker.network.netty.channel. Use 'EPOLL' or 'NIO'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.work.dir', 'alluxio.worker.tieredstore.level1.dirs.mediumtype', 'alluxio.worker.reviewer.probabilistic.softlimit.bytes', 'alluxio.master.journal.flush.batch.time', 'alluxio.worker.network.netty.channel'], 'reason': ['Invalid value format for alluxio.work.dir. It should not start with double slashes.', 'Invalid reference to alias in alluxio.worker.tieredstore.level1.dirs.mediumtype.', 'Invalid format for alluxio.worker.reviewer.probabilistic.softlimit.bytes. Use appropriate units like MB.', 'Invalid time format for alluxio.master.journal.flush.batch.time. Use appropriate units like ms.', 'Invalid network channel specified in alluxio.worker.network.netty.channel.']}
+
+{'hasError': True, 'errParameter': ['alluxio.work.dir', 'alluxio.worker.tieredstore.level1.dirs.mediumtype', 'alluxio.worker.reviewer.probabilistic.softlimit.bytes', 'alluxio.master.journal.flush.batch.time', 'alluxio.worker.network.netty.channel'], 'reason': ['Invalid value for alluxio.work.dir. It should not start with double slashes.', 'Invalid reference in alluxio.worker.tieredstore.level1.dirs.mediumtype. Alias not defined.', 'Invalid format for alluxio.worker.reviewer.probabilistic.softlimit.bytes. Use a valid size format.', 'Invalid format for alluxio.master.journal.flush.batch.time. Use a valid time format.', 'Invalid value for alluxio.worker.network.netty.channel. Use a valid Netty channel type.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.work.dir	alluxio.worker.tieredstore.level1.dirs.mediumtype	alluxio.worker.reviewer.probabilistic.softlimit.bytes	alluxio.master.journal.flush.batch.time	alluxio.worker.network.netty.channel
+[Ciri] Reason for alluxio.work.dir: Invalid value format for alluxio.work.dir. It should not start with double slashes.
+[Ciri] Reason for alluxio.worker.tieredstore.level1.dirs.mediumtype: Invalid reference in alluxio.worker.tieredstore.level1.dirs.mediumtype. Alias not defined.
+[Ciri] Reason for alluxio.worker.reviewer.probabilistic.softlimit.bytes: Invalid format for alluxio.worker.reviewer.probabilistic.softlimit.bytes. Use a valid size format.
+[Ciri] Reason for alluxio.master.journal.flush.batch.time: Invalid time format for alluxio.master.journal.flush.batch.time. Use appropriate units like ms.
+[Ciri] Reason for alluxio.worker.network.netty.channel: Invalid value for alluxio.worker.network.netty.channel. Use a valid Netty channel type.

@@ -1,0 +1,12 @@
+Wrong shot number:
+[8, 11, 5, 7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'fs.azure.user.agent.prefix'], 'reason': ["The property 'hadoop.security.groups.shell.command.timeout' has the value '0mm' which is not in the correct format for specifying time in seconds.", "The property 'fs.azure.user.agent.prefix' has an additional 'usage' field which is not a standard configuration property."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout	fs.azure.user.agent.prefix
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: The property 'hadoop.security.groups.shell.command.timeout' has the value '0mm' which is not in the correct format for specifying time in seconds.
+[Ciri] Reason for fs.azure.user.agent.prefix: The property 'fs.azure.user.agent.prefix' has an additional 'usage' field which is not a standard configuration property.

@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'max_connections', 'shared_buffers', 'effective_cache_size', 'maintenance_work_mem', 'checkpoint_completion_target', 'wal_buffers', 'default_statistics_target', 'random_page_cost', 'effective_io_concurrency', 'work_mem'], 'reason': ['port should be an integer between 1024 and 65535', 'max_connections should be an integer between 10 and 100', 'shared_buffers should be an integer between 100 and 1000', 'effective_cache_size should be an integer between 100 and 1000', 'maintenance_work_mem should be an integer between 10 and 100', 'checkpoint_completion_target should be a float between 0.1 and 0.9', 'wal_buffers should be an integer between 10 and 100', 'default_statistics_target should be an integer between 10 and 100', 'random_page_cost should be a float between 1 and 5', 'effective_io_concurrency should be an integer between 0 and 1000', 'work_mem should be an integer between 10 and 100']}
+
+Final result:
+
+There are 11 misconfiguration parameters in the input: port	max_connections	shared_buffers	effective_cache_size	maintenance_work_mem	checkpoint_completion_target	wal_buffers	default_statistics_target	random_page_cost	effective_io_concurrency	work_mem
+[Ciri] Reason for port: port should be an integer between 1024 and 65535
+[Ciri] Reason for max_connections: max_connections should be an integer between 10 and 100
+[Ciri] Reason for shared_buffers: shared_buffers should be an integer between 100 and 1000
+[Ciri] Reason for effective_cache_size: effective_cache_size should be an integer between 100 and 1000
+[Ciri] Reason for maintenance_work_mem: maintenance_work_mem should be an integer between 10 and 100
+[Ciri] Reason for checkpoint_completion_target: checkpoint_completion_target should be a float between 0.1 and 0.9
+[Ciri] Reason for wal_buffers: wal_buffers should be an integer between 10 and 100
+[Ciri] Reason for default_statistics_target: default_statistics_target should be an integer between 10 and 100
+[Ciri] Reason for random_page_cost: random_page_cost should be a float between 1 and 5
+[Ciri] Reason for effective_io_concurrency: effective_io_concurrency should be an integer between 0 and 1000
+[Ciri] Reason for work_mem: work_mem should be an integer between 10 and 100

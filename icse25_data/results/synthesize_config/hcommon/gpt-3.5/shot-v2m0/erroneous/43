@@ -1,0 +1,17 @@
+Correct shot number:
+[10, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size', 'ipc.client.connection.maxidletime', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable', 'ipc.[port_number].weighted-cost.lockfree', 'rpc.metrics.quantile.enable'], 'reason': ['Invalid IP address format in fs.ftp.host property', 'Invalid block size format in fs.s3a.block.size property', 'Value for ipc.client.connection.maxidletime should be in milliseconds', 'Missing port number in ipc properties', 'Missing port number in ipc properties', 'Missing port number in ipc properties', 'Missing port number in ipc properties']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.block.size	ipc.client.connection.maxidletime	ipc.[port_number].decay-scheduler.thresholds	ipc.[port_number].decay-scheduler.backoff.responsetime.enable	ipc.[port_number].weighted-cost.lockfree	rpc.metrics.quantile.enable
+[Ciri] Reason for fs.ftp.host: Invalid IP address format in fs.ftp.host property
+[Ciri] Reason for fs.s3a.block.size: Invalid block size format in fs.s3a.block.size property
+[Ciri] Reason for ipc.client.connection.maxidletime: Value for ipc.client.connection.maxidletime should be in milliseconds
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: Missing port number in ipc properties
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.enable: Missing port number in ipc properties
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: Missing port number in ipc properties
+[Ciri] Reason for rpc.metrics.quantile.enable: Missing port number in ipc properties

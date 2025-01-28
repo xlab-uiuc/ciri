@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.random.device.file.path', 'hadoop.registry.system.acls'], 'reason': ["The value 'dev/urandom///' for the property 'hadoop.security.random.device.file.path' is incorrect. The correct path for the random device file on most Unix-like systems is '/dev/urandom'.", "The value 'sasl:mapred@' for the property 'hadoop.registry.system.acls' is incorrect. The '@' symbol is used to indicate that the default Kerberos domain should be appended to the principal name, but it should not be followed by any characters."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.random.device.file.path	hadoop.registry.system.acls
+[Ciri] Reason for hadoop.security.random.device.file.path: The value 'dev/urandom///' for the property 'hadoop.security.random.device.file.path' is incorrect. The correct path for the random device file on most Unix-like systems is '/dev/urandom'.
+[Ciri] Reason for hadoop.registry.system.acls: The value 'sasl:mapred@' for the property 'hadoop.registry.system.acls' is incorrect. The '@' symbol is used to indicate that the default Kerberos domain should be appended to the principal name, but it should not be followed by any characters.

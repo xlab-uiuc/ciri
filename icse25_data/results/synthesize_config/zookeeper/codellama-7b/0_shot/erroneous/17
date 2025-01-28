@@ -1,0 +1,33 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'maxClientCnxns', 'initLimit'], 'reason': ['dataDir is not set', 'dataLogDir is not set', 'clientPort is not set', 'maxClientCnxns is not set', 'initLimit is not set']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'maxClientCnxns', 'quorum.cnxn.threads.size', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.enableSasl', 'standaloneEnabled', 'tickTime', 'peerType', 'initLimit'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port', 'maxClientCnxns is not a valid integer', 'quorum.cnxn.threads.size is not a valid integer', 'quorum.auth.learner.saslLoginContext is not a valid string', 'quorum.auth.enableSasl is not a valid boolean', 'standaloneEnabled is not a valid boolean', 'tickTime is not a valid integer', 'peerType is not a valid string', 'initLimit is not a valid integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1=localhost:2888:3888'], 'reason': ['The server.1=localhost:2888:3888 parameter is not a valid ZooKeeper server address.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'maxClientCnxns', 'initLimit'], 'reason': ['The value of dataDir is not a valid directory.', 'The value of clientPort is not a valid port number.', 'The value of maxClientCnxns is not a valid integer.', 'The value of initLimit is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'maxClientCnxns'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port', 'maxClientCnxns is not a valid integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'maxClientCnxns', 'tickTime', 'initLimit'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port', 'maxClientCnxns is not a valid integer', 'tickTime is not a valid integer', 'initLimit is not a valid integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'maxClientCnxns', 'tickTime', 'initLimit'], 'reason': ['dataDir is not set', 'dataLogDir is not set', 'clientPort is not set', 'maxClientCnxns is not set', 'tickTime is not set', 'initLimit is not set']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'server.1=localhost:2888:3888', 'server.2=localhost:2889:3889', 'server.3=localhost:2890:3890'], 'reason': ['dataDir is not a directory', 'dataLogDir is not a directory', 'clientPort is not a number', 'server.1 is not a valid server address', 'server.2 is not a valid server address', 'server.3 is not a valid server address']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: dataDir	dataLogDir	clientPort	maxClientCnxns	tickTime	initLimit
+[Ciri] Reason for dataDir: dataDir is not a valid directory
+[Ciri] Reason for dataLogDir: dataLogDir is not set
+[Ciri] Reason for clientPort: clientPort is not set
+[Ciri] Reason for maxClientCnxns: maxClientCnxns is not a valid integer
+[Ciri] Reason for tickTime: tickTime is not a valid integer
+[Ciri] Reason for initLimit: initLimit is not set

@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-session-cache-size'], 'reason': ['tls-session-cache-size is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['tls-session-caching'], 'reason': ['tls-session-caching is not a valid configuration parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['tls-session-caching', 'tls-ca-cert-dir'], 'reason': ['tls-session-caching is not a valid configuration parameter for redis version 7.0.0', 'tls-ca-cert-dir is not a valid configuration parameter for redis version 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-session-caching', 'tls-ca-cert-dir'], 'reason': ['tls-session-caching is not a valid configuration parameter', 'tls-ca-cert-dir is not a valid configuration parameter']}
+
+{'hasError': True, 'errParameter': ['tls-session-caching', 'tls-ca-cert-dir'], 'reason': ['tls-session-caching is not a valid parameter', 'tls-ca-cert-dir is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['tls-session-caching', 'tls-ca-cert-dir'], 'reason': ['tls-session-caching is not a valid configuration parameter', 'tls-ca-cert-dir is not a valid configuration parameter']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tls-session-caching	tls-ca-cert-dir
+[Ciri] Reason for tls-session-caching: tls-session-caching is not a valid parameter
+[Ciri] Reason for tls-ca-cert-dir: tls-ca-cert-dir is not a valid configuration parameter

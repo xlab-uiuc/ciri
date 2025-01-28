@@ -1,0 +1,32 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['pidfile', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['pidfile must be a valid file path', 'tls-port must be a valid port number', 'oom-score-adj-values must be a valid value', 'proc-title-template must be a valid template', 'stop-writes-on-bgsave-error must be a valid value']}
+
+{'hasError': True, 'errParameter': ['pidfile', 'tls-ca-cert-file', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['pidfile should be a valid file path', 'tls-ca-cert-file should be a valid file path', 'tls-port should be a valid port number', 'oom-score-adj-values should be a valid value', 'proc-title-template should be a valid template', 'stop-writes-on-bgsave-error should be a valid boolean']}
+
+{'hasError': True, 'errParameter': ['pidfile', 'oom-score-adj-values', 'stop-writes-on-bgsave-error', 'proc-title-template', 'tls-port'], 'reason': ['pidfile should be a valid file path.', 'oom-score-adj-values should be a valid range.', 'stop-writes-on-bgsave-error should be a valid boolean.', 'proc-title-template should be a valid template.', 'tls-port should be a valid port number.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['pidfile', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['pidfile should be a valid file path', 'oom-score-adj-values should be a valid integer', 'proc-title-template should be a valid string', 'stop-writes-on-bgsave-error should be a valid boolean']}
+
+{'hasError': True, 'errParameter': ['protected-mode', 'pidfile', 'tls-ca-cert-file', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ["protected-mode should be set to 'yes' or 'no'", 'pidfile should be a valid file path', 'tls-ca-cert-file should be a valid file path', 'tls-port should be a valid port number', 'oom-score-adj-values should be a valid list of integers', 'proc-title-template should be a valid template', "stop-writes-on-bgsave-error should be set to 'yes' or 'no'"]}
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-file', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['tls-ca-cert-file is not a valid parameter for redis version 7.0.0', 'tls-port is not a valid parameter for redis version 7.0.0', 'oom-score-adj-values is not a valid parameter for redis version 7.0.0', 'proc-title-template is not a valid parameter for redis version 7.0.0', 'stop-writes-on-bgsave-error is not a valid parameter for redis version 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['tls-port is not a valid port number.', 'oom-score-adj-values is not a valid value.', 'proc-title-template is not a valid template.', 'stop-writes-on-bgsave-error is not a valid value.']}
+
+{'hasError': True, 'errParameter': ['pidfile', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['pidfile should be a valid file path', 'tls-port should be a valid port number', 'oom-score-adj-values should be a valid range of values', 'proc-title-template should be a valid template', 'stop-writes-on-bgsave-error should be a valid boolean value']}
+
+{'hasError': True, 'errParameter': ['pidfile', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['pidfile path is not valid', 'tls-port is not a valid port number', 'oom-score-adj-values is not a valid value', 'proc-title-template is not a valid template', 'stop-writes-on-bgsave-error is not a valid value']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: pidfile	tls-port	oom-score-adj-values	proc-title-template	stop-writes-on-bgsave-error
+[Ciri] Reason for pidfile: pidfile should be a valid file path
+[Ciri] Reason for tls-port: tls-port is not a valid port number
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values is not a valid value
+[Ciri] Reason for proc-title-template: proc-title-template is not a valid template
+[Ciri] Reason for stop-writes-on-bgsave-error: stop-writes-on-bgsave-error is not a valid value

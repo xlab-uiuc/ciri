@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'repl-diskless-sync-delay', 'appenddirname', 'cluster-announce-bus-port', 'tls-port', 'tcp-keepalive', 'hash-max-listpack-entries', 'repl-diskless-sync'], 'reason': ['cluster-announce-port is not a valid port number', 'repl-diskless-sync-delay is not a valid time', 'appenddirname is not a valid directory name', 'cluster-announce-bus-port is not a valid port number', 'tls-port is not a valid port number', 'tcp-keepalive is not a valid time', 'hash-max-listpack-entries is not a valid number', 'repl-diskless-sync is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'repl-diskless-sync-delay', 'appenddirname', 'cluster-announce-bus-port', 'tls-port', 'tcp-keepalive', 'hash-max-listpack-entries', 'repl-diskless-sync'], 'reason': ['cluster-announce-port is not a valid port number', 'repl-diskless-sync-delay is not a valid number', 'appenddirname is not a valid directory name', 'cluster-announce-bus-port is not a valid port number', 'tls-port is not a valid port number', 'tcp-keepalive is not a valid number', 'hash-max-listpack-entries is not a valid number', 'repl-diskless-sync is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'repl-diskless-sync-delay', 'appenddirname', 'cluster-announce-bus-port', 'tls-port', 'tcp-keepalive', 'hash-max-listpack-entries', 'repl-diskless-sync'], 'reason': ['cluster-announce-port is not a valid port number', 'repl-diskless-sync-delay is not a valid integer', 'appenddirname is not a valid directory', 'cluster-announce-bus-port is not a valid port number', 'tls-port is not a valid port number', 'tcp-keepalive is not a valid integer', 'hash-max-listpack-entries is not a valid integer', 'repl-diskless-sync is not a valid boolean']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: cluster-announce-port	repl-diskless-sync-delay	appenddirname	cluster-announce-bus-port	tls-port	tcp-keepalive	hash-max-listpack-entries	repl-diskless-sync
+[Ciri] Reason for cluster-announce-port: cluster-announce-port is not a valid port number
+[Ciri] Reason for repl-diskless-sync-delay: repl-diskless-sync-delay is not a valid integer
+[Ciri] Reason for appenddirname: appenddirname is not a valid directory
+[Ciri] Reason for cluster-announce-bus-port: cluster-announce-bus-port is not a valid port number
+[Ciri] Reason for tls-port: tls-port is not a valid port number
+[Ciri] Reason for tcp-keepalive: tcp-keepalive is not a valid integer
+[Ciri] Reason for hash-max-listpack-entries: hash-max-listpack-entries is not a valid number
+[Ciri] Reason for repl-diskless-sync: repl-diskless-sync is not a valid boolean

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATIC_ROOT', 'FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'SESSION_COOKIE_NAME', 'DEFAULT_CHARSET', 'SESSION_FILE_PATH', 'DECIMAL_SEPARATOR', 'SECURE_CROSS_ORIGIN_OPENER_POLICY', 'CSRF_COOKIE_HTTPONLY'], 'reason': ['STATIC_ROOT should not start with a double forward slash (//). It should be an absolute path without leading slashes.', 'FILE_UPLOAD_DIRECTORY_PERMISSIONS is not a valid Django setting in version 4.0.', "SESSION_COOKIE_NAME should be 'sessionid' (without quotes) or a different string value.", 'DEFAULT_CHARSET is not a valid Django setting in version 4.0.', 'SESSION_FILE_PATH is not a valid Django setting in version 4.0.', 'DECIMAL_SEPARATOR is not a valid Django setting in version 4.0.', 'SECURE_CROSS_ORIGIN_OPENER_POLICY is not a valid Django setting in version 4.0.', 'CSRF_COOKIE_HTTPONLY should be True or False (without quotes).']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: STATIC_ROOT	FILE_UPLOAD_DIRECTORY_PERMISSIONS	SESSION_COOKIE_NAME	DEFAULT_CHARSET	SESSION_FILE_PATH	DECIMAL_SEPARATOR	SECURE_CROSS_ORIGIN_OPENER_POLICY	CSRF_COOKIE_HTTPONLY
+[Ciri] Reason for STATIC_ROOT: STATIC_ROOT should not start with a double forward slash (//). It should be an absolute path without leading slashes.
+[Ciri] Reason for FILE_UPLOAD_DIRECTORY_PERMISSIONS: FILE_UPLOAD_DIRECTORY_PERMISSIONS is not a valid Django setting in version 4.0.
+[Ciri] Reason for SESSION_COOKIE_NAME: SESSION_COOKIE_NAME should be 'sessionid' (without quotes) or a different string value.
+[Ciri] Reason for DEFAULT_CHARSET: DEFAULT_CHARSET is not a valid Django setting in version 4.0.
+[Ciri] Reason for SESSION_FILE_PATH: SESSION_FILE_PATH is not a valid Django setting in version 4.0.
+[Ciri] Reason for DECIMAL_SEPARATOR: DECIMAL_SEPARATOR is not a valid Django setting in version 4.0.
+[Ciri] Reason for SECURE_CROSS_ORIGIN_OPENER_POLICY: SECURE_CROSS_ORIGIN_OPENER_POLICY is not a valid Django setting in version 4.0.
+[Ciri] Reason for CSRF_COOKIE_HTTPONLY: CSRF_COOKIE_HTTPONLY should be True or False (without quotes).

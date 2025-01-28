@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['trusted-ca-file', 'advertise-client-urls', 'proxy-refresh-interval', 'election-timeout'], 'reason': ["trusted-ca-file: 'dev/urandom///' is not a valid file path for a CA certificate file", "advertise-client-urls: 'http://localhost:2379' uses an insecure http:// URL instead of https:// since auto-tls is enabled", "proxy-refresh-interval: 15000 is not a valid duration format. It should be a string with a time unit suffix, e.g. '15s'", "election-timeout: 1000 is not a valid duration format. It should be a string with a time unit suffix, e.g. '1s'"]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: trusted-ca-file	advertise-client-urls	proxy-refresh-interval	election-timeout
+[Ciri] Reason for trusted-ca-file: trusted-ca-file: 'dev/urandom///' is not a valid file path for a CA certificate file
+[Ciri] Reason for advertise-client-urls: advertise-client-urls: 'http://localhost:2379' uses an insecure http:// URL instead of https:// since auto-tls is enabled
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval: 15000 is not a valid duration format. It should be a string with a time unit suffix, e.g. '15s'
+[Ciri] Reason for election-timeout: election-timeout: 1000 is not a valid duration format. It should be a string with a time unit suffix, e.g. '1s'

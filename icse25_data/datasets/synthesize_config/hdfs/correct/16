@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.name.dir</name>
+  <value>/valid/dir2</value>
+  <description>Determines where on the local filesystem the DFS name node
+      should store the name table(fsimage).  If this is a comma-delimited list
+      of directories then the name table is replicated in all of the
+      directories, for redundancy. </description>
+</property>
+
+<property>
+  <name>nfs.dump.dir</name>
+  <value>/tmp/.hdfs-nfs</value>
+  <description>
+    This directory is used to temporarily save out-of-order writes before
+    writing to HDFS. For each file, the out-of-order writes are dumped after
+    they are accumulated to exceed certain threshold (e.g., 1MB) in memory. 
+    One needs to make sure the directory has enough space.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold</name>
+  <value>5368709120</value>
+  <description>
+    Only used when the dfs.datanode.fsdataset.volume.choosing.policy is set to
+    org.apache.hadoop.hdfs.server.datanode.fsdataset.AvailableSpaceVolumeChoosingPolicy.
+    This setting controls how much DN volumes are allowed to differ in terms of
+    bytes of free disk space before they are considered imbalanced. If the free
+    space of all the volumes are within this range of each other, the volumes
+    will be considered balanced and block assignments will be done on a pure
+    round robin basis. Support multiple size unit suffix(case insensitive), as
+    described in dfs.blocksize.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edit.log.autoroll.check.interval.ms</name>
+  <value>600000</value>
+  <description>
+    How often an active namenode will check if it needs to roll its edit log,
+    in milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reject-unresolved-dn-topology-mapping</name>
+  <value>false</value>
+  <description>
+    If the value is set to true, then namenode will reject datanode 
+    registration if the topology mapping for a datanode is not resolved and 
+    NULL is returned (script defined by net.topology.script.file.name fails 
+    to execute). Otherwise, datanode will be registered and the default rack 
+    will be assigned as the topology path. Topology paths are important for 
+    data resiliency, since they define fault domains. Thus it may be unwanted 
+    behavior to allow datanode registration with the default rack if the 
+    resolving topology failed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.oob.timeout-ms</name>
+  <value>[3000, 0, 0, 0]</value>
+  <description>
+    Timeout value when sending OOB response for each OOB type, which are
+    OOB_RESTART, OOB_RESERVED1, OOB_RESERVED2, and OOB_RESERVED3,
+    respectively.  Currently, only OOB_RESTART is used.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.storageinfo.defragment.interval.ms</name>
+  <value>1200000</value>
+  <description>
+    The thread for checking the StorageInfo for defragmentation will
+    run periodically.  The time between runs is determined by this
+    property.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.snapshot.skiplist.interval</name>
+  <value>1</value>
+  <description>
+    The interval after which the skip levels will be formed in the skip list
+    for storing directory snapshot diffs. By default, value is set to 10.
+  </description>
+</property>
+
+</configuration>

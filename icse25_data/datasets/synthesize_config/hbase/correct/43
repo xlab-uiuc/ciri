@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.zookeeper.property.maxClientCnxns</name>
+  <value>600</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    Limit on number of concurrent connections (at the socket level) that a
+    single client, identified by IP address, may make to a single member of
+    the ZooKeeper ensemble. Set high to avoid zk connection issues running
+    standalone and pseudo-distributed.</description>
+</property>
+
+<property>
+  <name>hbase.balancer.period</name>
+  <value>150000</value>
+    <description>Period at which the region balancer runs in the Master.</description>
+</property>
+
+<property>
+  <name>hbase.server.versionfile.writeattempts</name>
+  <value>3</value>
+    <description>
+    How many times to retry attempting to write a version file
+    before just aborting. Each attempt is separated by the
+    hbase.server.thread.wakefrequency milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.flusher.count</name>
+  <value>1</value>
+    <description> The number of flush threads. With fewer threads, the MemStore flushes will be
+      queued. With more threads, the flushes will be executed in parallel, increasing the load on
+      HDFS, and potentially causing more compactions. </description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.max</name>
+  <value>10</value>
+    <description>The maximum number of StoreFiles which will be selected for a single minor
+      compaction, regardless of the number of eligible StoreFiles. Effectively, the value of
+      hbase.hstore.compaction.max controls the length of time it takes a single compaction to
+      complete. Setting it larger means that more StoreFiles are included in a compaction. For most
+      cases, the default value is appropriate.</description>
+</property>
+
+<property>
+  <name>hbase.storescanner.parallel.seek.enable</name>
+  <value>false</value>
+    <description>
+      Enables StoreFileScanner parallel-seeking in StoreScanner,
+      a feature which can reduce response latency under special conditions.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.fallback-to-simple-auth-allowed</name>
+  <value>true</value>
+    <description>When a server is configured to require secure connections, it will
+      reject connection attempts from clients using SASL SIMPLE (unsecure) authentication.
+      This setting allows secure servers to accept SASL SIMPLE connections from clients
+      when the client requests.  When false (the default), the server will not allow the fallback
+      to SIMPLE authentication, and will reject the connection.  WARNING: This setting should ONLY
+      be used as a temporary measure while converting clients over to secure authentication.  It
+      MUST BE DISABLED for secure operation.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.storefile.refresh.period</name>
+  <value>0</value>
+    <description>
+      The period (in milliseconds) for refreshing the store files for the secondary regions. 0
+      means this feature is disabled. Secondary regions sees new files (from flushes and
+      compactions) from primary once the secondary region refreshes the list of files in the
+      region (there is no notification mechanism). But too frequent refreshes might cause
+      extra Namenode pressure. If the files cannot be refreshed for longer than HFile TTL
+      (hbase.master.hfilecleaner.ttl) the requests are rejected. Configuring HFile TTL to a larger
+      value is also recommended with this setting.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'cluster-config-file', 'lazyfree-lazy-expire', 'replica-serve-stale-data'], 'reason': ["The 'enable-protected-configs' parameter is not a valid configuration option in Redis 7.0.0.", "The 'cluster-config-file' parameter is used for Redis Cluster configuration and is not applicable for a single Redis instance.", "The 'lazyfree-lazy-expire' parameter is not a valid configuration option in Redis 7.0.0.", "The 'replica-serve-stale-data' parameter is used for Redis replication and is not applicable for a single Redis instance."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: enable-protected-configs	cluster-config-file	lazyfree-lazy-expire	replica-serve-stale-data
+[Ciri] Reason for enable-protected-configs: The 'enable-protected-configs' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for cluster-config-file: The 'cluster-config-file' parameter is used for Redis Cluster configuration and is not applicable for a single Redis instance.
+[Ciri] Reason for lazyfree-lazy-expire: The 'lazyfree-lazy-expire' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for replica-serve-stale-data: The 'replica-serve-stale-data' parameter is used for Redis replication and is not applicable for a single Redis instance.

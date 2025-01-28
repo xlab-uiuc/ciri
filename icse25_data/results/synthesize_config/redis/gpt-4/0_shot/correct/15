@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdb-del-sync-files', 'cluster-announce-ip', 'zset-max-listpack-value'], 'reason': ["The 'rdb-del-sync-files' configuration directive does not exist in Redis 7.0.0.", "Using 'cluster-announce-ip' with the loopback address (127.0.0.1) is typically incorrect for cluster mode since it should be an IP address accessible to other Redis cluster nodes.", "The 'zset-max-listpack-value' configuration directive does not exist. The correct directive for controlling the maximum listpack size for sorted sets is 'zset-max-ziplist-value' in versions before Redis 7.0 and 'hash-max-listpack-value' for Redis 6.0 and above, but it applies to hashes, not sorted sets."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: rdb-del-sync-files	cluster-announce-ip	zset-max-listpack-value
+[Ciri] Reason for rdb-del-sync-files: The 'rdb-del-sync-files' configuration directive does not exist in Redis 7.0.0.
+[Ciri] Reason for cluster-announce-ip: Using 'cluster-announce-ip' with the loopback address (127.0.0.1) is typically incorrect for cluster mode since it should be an IP address accessible to other Redis cluster nodes.
+[Ciri] Reason for zset-max-listpack-value: The 'zset-max-listpack-value' configuration directive does not exist. The correct directive for controlling the maximum listpack size for sorted sets is 'zset-max-ziplist-value' in versions before Redis 7.0 and 'hash-max-listpack-value' for Redis 6.0 and above, but it applies to hashes, not sorted sets.

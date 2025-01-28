@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 9, 10]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.offpeak.end.hour'], 'reason': ["The property 'hbase.master.logcleaner.ttl' has the value '-5.5' which is not a valid integer value.", "The property 'hbase.offpeak.end.hour' has the value '-2' which is out of the valid range between 0 and 23."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.offpeak.end.hour'], 'reason': ["The property 'hbase.master.logcleaner.ttl' has the value '-5.5' which is not a valid positive integer.", "The property 'hbase.offpeak.end.hour' has the value '-2' which is out of the valid range for hours (0-23)."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.offpeak.end.hour'], 'reason': ["The property 'hbase.master.logcleaner.ttl' has the value '-5.5' which is not a valid integer value.", "The property 'hbase.offpeak.end.hour' has the value '-2' which is out of the valid range of 0 to 23."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.master.logcleaner.ttl	hbase.offpeak.end.hour
+[Ciri] Reason for hbase.master.logcleaner.ttl: The property 'hbase.master.logcleaner.ttl' has the value '-5.5' which is not a valid integer value.
+[Ciri] Reason for hbase.offpeak.end.hour: The property 'hbase.offpeak.end.hour' has the value '-2' which is out of the valid range for hours (0-23).

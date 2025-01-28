@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'snapshot-count', 'max-wals'], 'reason': ['quota-backend-bytes is not a valid parameter', 'snapshot-count is not a valid parameter', 'max-wals is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['snapshot-count', 'advertise-client-urls', 'proxy-read-timeout'], 'reason': ['snapshot-count must be greater than 0', 'advertise-client-urls must be a valid URL', 'proxy-read-timeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'snapshot-count', 'max-wals'], 'reason': ['quota-backend-bytes is not a valid property', 'snapshot-count is not a valid property', 'max-wals is not a valid property']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quota-backend-bytes	snapshot-count	max-wals
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes is not a valid parameter
+[Ciri] Reason for snapshot-count: snapshot-count is not a valid parameter
+[Ciri] Reason for max-wals: max-wals is not a valid property

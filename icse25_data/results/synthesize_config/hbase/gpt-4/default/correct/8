@@ -1,0 +1,15 @@
+Wrong shot number:
+[10, 7, 6]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.start.hour', 'hbase.column.max.version'], 'reason': ["The property 'hbase.offpeak.start.hour' has an invalid value. It should be between 0 and 23 inclusive for valid hour specification.", "The property 'hbase.column.max.version' does not exist in HBase configuration. It seems to be a misunderstanding or typo. The correct property for setting maximum versions is 'hbase.column.max.versions'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.offpeak.start.hour	hbase.column.max.version
+[Ciri] Reason for hbase.offpeak.start.hour: The property 'hbase.offpeak.start.hour' has an invalid value. It should be between 0 and 23 inclusive for valid hour specification.
+[Ciri] Reason for hbase.column.max.version: The property 'hbase.column.max.version' does not exist in HBase configuration. It seems to be a misunderstanding or typo. The correct property for setting maximum versions is 'hbase.column.max.versions'.

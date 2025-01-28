@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.httpserver.filter.handlers</name>
+  <value>org.apache.hadoop.hdfs.server.datanode.web.RestCsrfPreventionFilterHandler</value>
+  <description>Comma separated list of Netty servlet-style filter handlers to inject into the Datanode WebHDFS I/O path
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.fs-limits.max-directory-items</name>
+  <value>2097152</value>
+  <description>Defines the maximum number of items that a directory may
+      contain. Cannot set the property to a value less than 1 or more than
+      6400000.</description>
+</property>
+
+<property>
+  <name>dfs.namenode.max.full.block.report.leases</name>
+  <value>6</value>
+  <description>The maximum number of leases for full block reports that the
+    NameNode will issue at any given time.  This prevents the NameNode from
+    being flooded with full block reports that use up all the RPC handler
+    threads.  This number should never be more than the number of RPC handler
+    threads or less than 1.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.blocks.per.postponedblocks.rescan</name>
+  <value>10000</value>
+  <description>Number of blocks to rescan for each iteration of
+    postponedMisreplicatedBlocks.
+  </description>
+</property>
+
+<property>
+  <name>dfs.balancer.dispatcherThreads</name>
+  <value>400</value>
+  <description>
+    Size of the thread pool for the HDFS balancer block mover.
+    dispatchExecutor
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edits.dir.minimum</name>
+  <value>2</value>
+  <description>
+    dfs.namenode.edits.dir includes both required directories
+    (specified by dfs.namenode.edits.dir.required) and optional directories.
+
+    The number of usable optional directories must be greater than or equal
+    to this property.  If the number of usable optional directories falls
+    below dfs.namenode.edits.dir.minimum, HDFS will issue an error.
+
+    This property defaults to 1.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.missing.checkpoint.periods.before.shutdown</name>
+  <value>1</value>
+  <description>
+    The number of checkpoint period windows (as defined by the property
+    dfs.namenode.checkpoint.period) allowed by the Namenode to perform
+    saving the namespace before shutdown.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.data.dir</name>
+  <value>file:////dfs/data</value>
+  <description>Determines where on the local filesystem an DFS data node
+  should store its blocks.  If this is a comma-delimited
+  list of directories, then data will be stored in all named
+  directories, typically on different devices. The directories should be tagged
+  with corresponding storage types ([SSD]/[DISK]/[ARCHIVE]/[RAM_DISK]) for HDFS
+  storage policies. The default storage type will be DISK if the directory does
+  not have a storage type tagged explicitly. Directories that do not exist will
+  be created if local filesystem permission allows.
+  </description>
+</property>
+
+</configuration>

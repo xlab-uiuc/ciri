@@ -1,0 +1,12 @@
+Correct shot number:
+[7, 14, 8, 4, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.s3guard.consistency.retry.interval'], 'reason': ['Invalid value format. The value should include a time unit (e.g., 10s for 10 seconds).', 'Invalid value format. The value should include a time unit (e.g., 2s for 2 seconds).']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.s3a.s3guard.consistency.retry.interval
+[Ciri] Reason for hadoop.service.shutdown.timeout: Invalid value format. The value should include a time unit (e.g., 10s for 10 seconds).
+[Ciri] Reason for fs.s3a.s3guard.consistency.retry.interval: Invalid value format. The value should include a time unit (e.g., 2s for 2 seconds).

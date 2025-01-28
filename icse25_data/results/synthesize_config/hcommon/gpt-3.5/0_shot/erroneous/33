@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.erasurecode.codec.xor.rawcoders', 'fs.azure.local.sas.key.mode', 'hadoop.caller.context.max.size'], 'reason': ["The property 'io.erasurecode.codec.xor.rawcoders' has a description that contains a typo. 'prior to followings' should be corrected.", "The property 'fs.azure.local.sas.key.mode' has a usage tag which is not a standard configuration parameter and may cause issues during parsing or processing.", "The property 'hadoop.caller.context.max.size' has an indentation issue in the description section."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.log-slow-lookups.enabled', 'io.erasurecode.codec.xor.rawcoders', 'fs.s3a.select.input.csv.comment.marker', 'fs.azure.local.sas.key.mode', 'hadoop.caller.context.max.size'], 'reason': ["The property 'hadoop.security.dns.log-slow-lookups.enabled' has a value that seems to be a number, but it should be a boolean (true/false).", "The property 'io.erasurecode.codec.xor.rawcoders' has a value 'xor_native' which might not be valid for this configuration.", "The property 'fs.s3a.select.input.csv.comment.marker' has a value '#', which might conflict with XML syntax.", "The property 'fs.azure.local.sas.key.mode' has a usage tag within the value field, which is not standard for configuration files.", "The property 'hadoop.caller.context.max.size' has an indentation issue in the description field."]}
+
+{'hasError': True, 'errParameter': ['fs.azure.local.sas.key.mode', 'hadoop.caller.context.max.size'], 'reason': ['The usage tag is not a standard configuration parameter.', 'The description tag is not properly closed for the hadoop.caller.context.max.size property.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.erasurecode.codec.xor.rawcoders', 'fs.azure.local.sas.key.mode', 'hadoop.caller.context.max.size'], 'reason': ["The property 'io.erasurecode.codec.xor.rawcoders' has a description that contains a typo. 'earlier factory is prior to followings' should be corrected.", "The property 'fs.azure.local.sas.key.mode' has a usage tag which is not a standard part of the configuration file. It should be removed.", "The property 'hadoop.caller.context.max.size' has an indentation issue in the description. The closing </description> tag should be aligned properly."]}
+
+{'hasError': True, 'errParameter': ['io.erasurecode.codec.xor.rawcoders', 'fs.azure.local.sas.key.mode', 'hadoop.caller.context.max.size'], 'reason': ["The property 'io.erasurecode.codec.xor.rawcoders' has a description that contains a typo. 'prior to followings' should be corrected.", "The property 'fs.azure.local.sas.key.mode' has a usage tag that is not a standard configuration parameter.", "The property 'hadoop.caller.context.max.size' has an indentation issue in the description."]}
+
+{'hasError': True, 'errParameter': ['io.erasurecode.codec.xor.rawcoders', 'fs.azure.local.sas.key.mode', 'hadoop.caller.context.max.size'], 'reason': ["The property 'io.erasurecode.codec.xor.rawcoders' has a description that contains a typo. 'earlier factory is prior to followings' should be corrected.", "The property 'fs.azure.local.sas.key.mode' has a usage tag within the value field which is not standard for configuration files.", "The property 'hadoop.caller.context.max.size' has an indentation issue in the description field."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: io.erasurecode.codec.xor.rawcoders	fs.azure.local.sas.key.mode	hadoop.caller.context.max.size
+[Ciri] Reason for io.erasurecode.codec.xor.rawcoders: The property 'io.erasurecode.codec.xor.rawcoders' has a description that contains a typo. 'earlier factory is prior to followings' should be corrected.
+[Ciri] Reason for fs.azure.local.sas.key.mode: The property 'fs.azure.local.sas.key.mode' has a usage tag within the value field which is not standard for configuration files.
+[Ciri] Reason for hadoop.caller.context.max.size: The property 'hadoop.caller.context.max.size' has an indentation issue in the description field.

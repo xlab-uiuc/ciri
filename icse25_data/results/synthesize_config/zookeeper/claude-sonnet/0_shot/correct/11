@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'dataLogDir', 'minSessionTimeout', 'secureClientPort', 'clientPort'], 'reason': ["The property 'quorum.auth.kerberos.servicePrincipal' should be in the format 'service/hostname@REALM'. The value 'zkquorum/localhost' is missing the realm part.", "The 'dataLogDir' property should be an absolute path. The provided value '/valid/dir1' is a relative path.", "The 'minSessionTimeout' property should be a positive integer value representing the minimum session timeout in milliseconds. The value '0' is not allowed.", "The 'secureClientPort' and 'clientPort' properties should have different values. In the provided configuration, both are set to '3001', which is not recommended for secure and non-secure communication.", "The 'secureClientPort' and 'clientPort' properties should have different values. In the provided configuration, both are set to '3001', which is not recommended for secure and non-secure communication."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: quorum.auth.kerberos.servicePrincipal	dataLogDir	minSessionTimeout	secureClientPort	clientPort
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: The property 'quorum.auth.kerberos.servicePrincipal' should be in the format 'service/hostname@REALM'. The value 'zkquorum/localhost' is missing the realm part.
+[Ciri] Reason for dataLogDir: The 'dataLogDir' property should be an absolute path. The provided value '/valid/dir1' is a relative path.
+[Ciri] Reason for minSessionTimeout: The 'minSessionTimeout' property should be a positive integer value representing the minimum session timeout in milliseconds. The value '0' is not allowed.
+[Ciri] Reason for secureClientPort: The 'secureClientPort' and 'clientPort' properties should have different values. In the provided configuration, both are set to '3001', which is not recommended for secure and non-secure communication.
+[Ciri] Reason for clientPort: The 'secureClientPort' and 'clientPort' properties should have different values. In the provided configuration, both are set to '3001', which is not recommended for secure and non-secure communication.

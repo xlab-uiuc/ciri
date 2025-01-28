@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.master.update.check.interval', 'alluxio.master.ufs.journal.max.catchup.time', 'alluxio.user.streaming.writer.flush.timeout', 'alluxio.user.network.rpc.flowcontrol.window'], 'reason': ["The correct format for durations should be like '100sec' should be '100s'.", "The correct format for durations should be like '7day' should be '7d'.", "The correct format for durations should be like '20min' should be '20m'.", "The correct format for durations should be like '60min' should be '60m'.", "The size unit should be lowercase, like '4MB' should be '4m'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: fs.cos.socket.timeout	alluxio.master.update.check.interval	alluxio.master.ufs.journal.max.catchup.time	alluxio.user.streaming.writer.flush.timeout	alluxio.user.network.rpc.flowcontrol.window
+[Ciri] Reason for fs.cos.socket.timeout: The correct format for durations should be like '100sec' should be '100s'.
+[Ciri] Reason for alluxio.master.update.check.interval: The correct format for durations should be like '7day' should be '7d'.
+[Ciri] Reason for alluxio.master.ufs.journal.max.catchup.time: The correct format for durations should be like '20min' should be '20m'.
+[Ciri] Reason for alluxio.user.streaming.writer.flush.timeout: The correct format for durations should be like '60min' should be '60m'.
+[Ciri] Reason for alluxio.user.network.rpc.flowcontrol.window: The size unit should be lowercase, like '4MB' should be '4m'.

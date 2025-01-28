@@ -1,0 +1,15 @@
+Wrong shot number:
+[7, 13, 2, 15]
+
+Correct shot number:
+[16]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.s3guard.consistency.retry.interval'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has the value '10nounit' which is missing the unit.", "The property 'fs.s3a.s3guard.consistency.retry.interval' has the value '2s' which should be specified in milliseconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.s3a.s3guard.consistency.retry.interval
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has the value '10nounit' which is missing the unit.
+[Ciri] Reason for fs.s3a.s3guard.consistency.retry.interval: The property 'fs.s3a.s3guard.consistency.retry.interval' has the value '2s' which should be specified in milliseconds.

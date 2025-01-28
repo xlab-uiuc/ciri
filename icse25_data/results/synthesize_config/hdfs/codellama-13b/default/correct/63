@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 8, 16]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.min'], 'reason': ["The property 'dfs.namenode.replication.min' has the value '2' which is not within the accepted value range of 1 to 3."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.min'], 'reason': ["The property 'dfs.namenode.replication.min' has the value '2' which is not within the accepted value range of 3-100."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.min'], 'reason': ["The property 'dfs.namenode.replication.min' has the value '2' which is not within the accepted value {1,2,3}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.replication.min
+[Ciri] Reason for dfs.namenode.replication.min: The property 'dfs.namenode.replication.min' has the value '2' which is not within the accepted value {1,2,3}.

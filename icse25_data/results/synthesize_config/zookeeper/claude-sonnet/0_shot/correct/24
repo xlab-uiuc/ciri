@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ["The property 'quorum.auth.enableSasl' is set to false, which disables SASL authentication. However, the properties 'quorum.auth.learner.saslLoginContext' and 'quorum.auth.kerberos.servicePrincipal' are related to SASL authentication and should not be set when SASL is disabled.", "The property 'quorum.auth.learner.saslLoginContext' is used to specify the SASL login context for learner connections, but it should not be set when SASL authentication is disabled.", "The property 'quorum.auth.kerberos.servicePrincipal' is used to specify the Kerberos service principal for ZooKeeper, but it should not be set when SASL authentication is disabled."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.learner.saslLoginContext	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for quorum.auth.enableSasl: The property 'quorum.auth.enableSasl' is set to false, which disables SASL authentication. However, the properties 'quorum.auth.learner.saslLoginContext' and 'quorum.auth.kerberos.servicePrincipal' are related to SASL authentication and should not be set when SASL is disabled.
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: The property 'quorum.auth.learner.saslLoginContext' is used to specify the SASL login context for learner connections, but it should not be set when SASL authentication is disabled.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: The property 'quorum.auth.kerberos.servicePrincipal' is used to specify the Kerberos service principal for ZooKeeper, but it should not be set when SASL authentication is disabled.

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.nodemanager-connect-retries</name>
+  <value>10</value>
+    <description>Retry times to connect with NM.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.fs.state-store.uri</name>
+  <value>/valid/file2</value>
+    <description>URI pointing to the location of the FileSystem path where
+    RM state will be stored. This must be supplied when using
+    org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore
+    as the value for yarn.resourcemanager.store.class</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.emit-container-events</name>
+  <value>false</value>
+    <description>The setting that controls whether yarn container events are
+      published to the timeline service or not by NM. This configuration setting
+      is for ATS V2.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.detect-hardware-capabilities</name>
+  <value>true</value>
+    <description>Enable auto-detection of node capabilities such as
+    memory and CPU.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.docker.allowed-container-runtimes</name>
+  <value>runc</value>
+    <description>The set of runtimes allowed when launching containers using the
+      DockerContainerRuntime.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.webapp.rest-csrf.methods-to-ignore</name>
+  <value>OPTIONS</value>
+    <description>
+      Optional parameter that indicates the list of HTTP methods that do not
+      require CSRF protection
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource-plugins</name>
+  <value>NOEXIST2</value>
+    <description>
+      Enable additional discovery/isolation of resources on the NodeManager,
+      split by comma. By default, this is empty.
+      Acceptable values: { "yarn.io/gpu", "yarn.io/fpga"}.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.containers-launcher.class</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher</value>
+    <description>
+      Containers launcher implementation for determining how containers
+      are launched within NodeManagers.
+    </description>
+</property>
+
+</configuration>

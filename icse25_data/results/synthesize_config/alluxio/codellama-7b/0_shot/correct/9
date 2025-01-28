@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size'], 'reason': ['Alluxio does not support setting the maximum inbound message size for the user client. The maximum inbound message size is determined by the worker.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.user.rpc.retry.max.duration', 'alluxio.user.short.circuit.enabled'], 'reason': ['alluxio.user.network.max.inbound.message.size should be a positive integer', 'alluxio.user.rpc.retry.max.duration should be a positive integer', 'alluxio.user.short.circuit.enabled should be a boolean']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.worker.network.max.inbound.message.size', 'alluxio.user.short.circuit.enabled'], 'reason': ['alluxio.user.network.max.inbound.message.size should be a positive integer', 'alluxio.worker.network.max.inbound.message.size should be a positive integer', 'alluxio.user.short.circuit.enabled should be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.user.rpc.retry.max.duration'], 'reason': ['The value of alluxio.user.network.max.inbound.message.size is not a valid number.', 'The value of alluxio.user.rpc.retry.max.duration is not a valid duration.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.user.rpc.retry.max.duration'], 'reason': ['alluxio.user.network.max.inbound.message.size should be a positive integer', 'alluxio.user.rpc.retry.max.duration should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.user.rpc.retry.max.duration'], 'reason': ['alluxio.user.network.max.inbound.message.size must be a positive integer', 'alluxio.user.rpc.retry.max.duration must be a positive duration']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.max.inbound.message.size	alluxio.user.rpc.retry.max.duration
+[Ciri] Reason for alluxio.user.network.max.inbound.message.size: alluxio.user.network.max.inbound.message.size should be a positive integer
+[Ciri] Reason for alluxio.user.rpc.retry.max.duration: The value of alluxio.user.rpc.retry.max.duration is not a valid duration.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.default.mode', 'alluxio.underfs.s3.intermediate.upload.clean.age'], 'reason': ["The property 'alluxio.underfs.gcs.default.mode' is invalid. The correct property name is 'alluxio.underfs.gcs.default.mode.enabled' which takes a boolean value.", "The value '3day' for property 'alluxio.underfs.s3.intermediate.upload.clean.age' is invalid. It should be specified as a time value in milliseconds, seconds, minutes, hours or days, e.g. '3d' for 3 days."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.gcs.default.mode	alluxio.underfs.s3.intermediate.upload.clean.age
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: The property 'alluxio.underfs.gcs.default.mode' is invalid. The correct property name is 'alluxio.underfs.gcs.default.mode.enabled' which takes a boolean value.
+[Ciri] Reason for alluxio.underfs.s3.intermediate.upload.clean.age: The value '3day' for property 'alluxio.underfs.s3.intermediate.upload.clean.age' is invalid. It should be specified as a time value in milliseconds, seconds, minutes, hours or days, e.g. '3d' for 3 days.

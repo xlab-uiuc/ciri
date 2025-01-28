@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal-dir', 'enable-v2', 'proxy-dial-timeout', 'proxy-write-timeout', 'discovery-fallback'], 'reason': ["The correct parameter for specifying the WAL directory is 'wal-dir', but it should be inside the '--data-dir' directory by default and not typically specified in the configuration file.", "'enable-v2' is not a valid configuration option for etcd 3.5.0 as the v2 API is deprecated.", "'proxy-dial-timeout' and 'proxy-write-timeout' are options related to the etcd proxy feature, which is part of the deprecated v2 API and not applicable.", "'discovery-fallback' is also related to the v2 API and not applicable in etcd 3.5.0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: wal-dir	enable-v2	proxy-dial-timeout	proxy-write-timeout	discovery-fallback
+[Ciri] Reason for wal-dir: The correct parameter for specifying the WAL directory is 'wal-dir', but it should be inside the '--data-dir' directory by default and not typically specified in the configuration file.
+[Ciri] Reason for enable-v2: 'enable-v2' is not a valid configuration option for etcd 3.5.0 as the v2 API is deprecated.
+[Ciri] Reason for proxy-dial-timeout: 'proxy-dial-timeout' and 'proxy-write-timeout' are options related to the etcd proxy feature, which is part of the deprecated v2 API and not applicable.
+[Ciri] Reason for proxy-write-timeout: 'discovery-fallback' is also related to the v2 API and not applicable in etcd 3.5.0.
+[Ciri] Reason for discovery-fallback: 

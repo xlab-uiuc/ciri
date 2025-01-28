@@ -1,0 +1,19 @@
+Wrong shot number:
+[3, 11, 14]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['nfs.dump.dir', 'dfs.namenode.reencrypt.batch.size'], 'reason': ["The property 'nfs.dump.dir' has the value 'tmp////staging' which does not follow the correct path format.", "The property 'dfs.namenode.reencrypt.batch.size' should not be present in the configuration file as it is a duplicate entry."]}
+
+{'hasError': True, 'errParameter': ['nfs.dump.dir', 'dfs.namenode.reencrypt.batch.size'], 'reason': ["The property 'nfs.dump.dir' has the value 'tmp////staging' which does not follow the correct path format.", "The property 'dfs.namenode.reencrypt.batch.size' should not be present in the configuration file for hdfs version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['nfs.dump.dir', 'dfs.namenode.reencrypt.batch.size'], 'reason': ["The property 'nfs.dump.dir' has the value 'tmp////staging' which does not follow the correct path format.", "The property 'dfs.namenode.reencrypt.batch.size' should not be present in the configuration file for hdfs version 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: nfs.dump.dir	dfs.namenode.reencrypt.batch.size
+[Ciri] Reason for nfs.dump.dir: The property 'nfs.dump.dir' has the value 'tmp////staging' which does not follow the correct path format.
+[Ciri] Reason for dfs.namenode.reencrypt.batch.size: The property 'dfs.namenode.reencrypt.batch.size' should not be present in the configuration file for hdfs version 3.3.0.

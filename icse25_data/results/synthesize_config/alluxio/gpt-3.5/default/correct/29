@@ -1,0 +1,26 @@
+Wrong shot number:
+[10, 5, 12]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.parent.names'], 'reason': ["The property 'alluxio.underfs.web.parent.names' contains invalid characters ('..')."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.data.server.domain.socket.address'], 'reason': ["The property 'alluxio.worker.data.server.domain.socket.address' has the value '127.0.0.1' which is not a valid domain socket address format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.web.threads', 'alluxio.underfs.web.parent.names'], 'reason': ["The property 'alluxio.web.threads' should have a value greater than 0.", "The property 'alluxio.underfs.web.parent.names' should not contain special characters like '..'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.parent.names'], 'reason': ["The property 'alluxio.underfs.web.parent.names' contains invalid characters '..' which are not allowed in the configuration value."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.parent.names'], 'reason': ["The property 'alluxio.underfs.web.parent.names' contains invalid characters ('..')."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.parent.names'], 'reason': ["The property 'alluxio.underfs.web.parent.names' contains invalid characters '..' which are not allowed in the configuration value."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.underfs.web.parent.names
+[Ciri] Reason for alluxio.underfs.web.parent.names: The property 'alluxio.underfs.web.parent.names' contains invalid characters '..' which are not allowed in the configuration value.

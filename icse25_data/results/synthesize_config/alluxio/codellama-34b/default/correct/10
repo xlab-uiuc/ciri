@@ -1,0 +1,26 @@
+Wrong shot number:
+[6, 5, 7]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.zookeeper.auth.enabled'], 'reason': ["The property 'alluxio.zookeeper.auth.enabled' has the value 'true' which is not within the accepted value {false}."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.configuration'], 'reason': ["The property 'alluxio.underfs.hdfs.configuration' has the value '/valid/file2' which is not a valid file path."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.configuration'], 'reason': ["The property 'alluxio.underfs.hdfs.configuration' has the value '/valid/file2' which does not follow the correct file path format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.configuration'], 'reason': ["The property 'alluxio.underfs.hdfs.configuration' has the value '/valid/file2' which does not follow the correct file path format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.configuration'], 'reason': ["The property 'alluxio.underfs.hdfs.configuration' has the value '/valid/file2' which is not a valid file path."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.underfs.hdfs.configuration
+[Ciri] Reason for alluxio.underfs.hdfs.configuration: The property 'alluxio.underfs.hdfs.configuration' has the value '/valid/file2' which does not follow the correct file path format.

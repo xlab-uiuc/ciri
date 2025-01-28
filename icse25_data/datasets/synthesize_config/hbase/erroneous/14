@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.port</name>
+  <value>-100.22</value>
+    <description>The port the HBase RegionServer binds to.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.logroll.errors.tolerated</name>
+  <value>1</value>
+    <description>The number of consecutive WAL close errors we will allow
+    before triggering a server abort.  A setting of 0 will cause the
+    region server to abort if closing the current WAL writer fails during
+    log rolling.  Even a small value (2 or 3) will allow a region server
+    to ride over transient HDFS errors.</description>
+</property>
+
+<property>
+  <name>zookeeper.session.timeout</name>
+  <value>45000</value>
+    <description>ZooKeeper session timeout in milliseconds. It is used in two different ways.
+      First, this value is used in the ZK client that HBase uses to connect to the ensemble.
+      It is also used by HBase when it starts a ZK server and it is passed as the 'maxSessionTimeout'.
+      See https://zookeeper.apache.org/doc/current/zookeeperProgrammers.html#ch_zkSessions.
+      For example, if an HBase region server connects to a ZK ensemble that's also managed
+      by HBase, then the session timeout will be the one specified by this configuration.
+      But, a region server that connects to an ensemble managed with a different configuration
+      will be subjected that ensemble's maxSessionTimeout. So, even though HBase might propose
+      using 90 seconds, the ensemble can have a max timeout lower than this and it will take
+      precedence. The current default maxSessionTimeout that ZK ships with is 40 seconds, which is lower than
+      HBase's.
+    </description>
+</property>
+
+<property>
+  <name>hbase.hregion.memstore.block.multiplier</name>
+  <value>4</value>
+    <description>
+    Block updates if memstore has hbase.hregion.memstore.block.multiplier
+    times hbase.hregion.memstore.flush.size bytes.  Useful preventing
+    runaway memstore during spikes in update traffic.  Without an
+    upper-bound, memstore fills such that when it flushes the
+    resultant flush files take a long time to compact or split, or
+    worse, we OOME.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.min.size</name>
+  <value>134217728</value>
+    <description>A StoreFile (or a selection of StoreFiles, when using ExploringCompactionPolicy)
+      smaller than this size will always be eligible for minor compaction.
+      HFiles this size or larger are evaluated by hbase.hstore.compaction.ratio to determine if
+      they are eligible. Because this limit represents the "automatic include" limit for all
+      StoreFiles smaller than this value, this value may need to be reduced in write-heavy
+      environments where many StoreFiles in the 1-2 MB range are being flushed, because every
+      StoreFile will be targeted for compaction and the resulting StoreFiles may still be under the
+      minimum size and require further compaction. If this parameter is lowered, the ratio check is
+      triggered more quickly. This addressed some issues seen in earlier versions of HBase but
+      changing this parameter is no longer necessary in most situations. Default: 128 MB expressed
+      in bytes.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.client.tcpnodelay</name>
+  <value>true</value>
+    <description>Set no delay on rpc socket connections.  See
+    http://docs.oracle.com/javase/1.5.0/docs/api/java/net/Socket.html#getTcpNoDelay()</description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.user.enabled</name>
+  <value>true</value>
+    <description>Enables or disables user (aka. table) coprocessor loading.
+    If 'false' (disabled), any table coprocessor attributes in table
+    descriptors will be ignored. If "hbase.coprocessor.enabled" is 'false'
+    this setting has no effect.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.delfile.max.count</name>
+  <value>1</value>
+    <description>
+      The max number of del files that is allowed in the mob compaction.
+      In the mob compaction, when the number of existing del files is larger than
+      this value, they are merged until number of del files is not larger this value.
+      The default value is 3.
+    </description>
+</property>
+
+</configuration>

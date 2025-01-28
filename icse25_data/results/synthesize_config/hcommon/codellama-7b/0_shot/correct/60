@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.bytes.per.checksum', 'ipc.client.connect.max.retries.on.timeouts', 'ipc.maximum.response.length', 'hadoop.http.authentication.simple.anonymous.allowed', 'hadoop.registry.jaas.context'], 'reason': ['io.bytes.per.checksum must not be larger than io.file.buffer.size', 'ipc.client.connect.max.retries.on.timeouts must be a positive integer', 'ipc.maximum.response.length must be a positive integer', 'hadoop.http.authentication.simple.anonymous.allowed must be a boolean', 'hadoop.registry.jaas.context must be a string']}
+
+{'hasError': True, 'errParameter': ['io.bytes.per.checksum', 'ipc.client.connect.max.retries.on.timeouts', 'ipc.maximum.response.length', 'hadoop.http.authentication.simple.anonymous.allowed', 'hadoop.registry.jaas.context'], 'reason': ['io.bytes.per.checksum must not be larger than io.file.buffer.size.', 'ipc.client.connect.max.retries.on.timeouts must be greater than 0', 'ipc.maximum.response.length must be greater than 0', 'hadoop.http.authentication.simple.anonymous.allowed must be false', 'hadoop.registry.jaas.context must be defined']}
+
+{'hasError': True, 'errParameter': ['io.bytes.per.checksum', 'ipc.client.connect.max.retries.on.timeouts', 'ipc.maximum.response.length', 'hadoop.http.authentication.simple.anonymous.allowed', 'hadoop.registry.jaas.context'], 'reason': ['io.bytes.per.checksum must not be larger than io.file.buffer.size', 'ipc.client.connect.max.retries.on.timeouts must be a positive integer', 'ipc.maximum.response.length must be a positive integer', 'hadoop.http.authentication.simple.anonymous.allowed must be a boolean', 'hadoop.registry.jaas.context must be a string']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: io.bytes.per.checksum	ipc.client.connect.max.retries.on.timeouts	ipc.maximum.response.length	hadoop.http.authentication.simple.anonymous.allowed	hadoop.registry.jaas.context
+[Ciri] Reason for io.bytes.per.checksum: io.bytes.per.checksum must not be larger than io.file.buffer.size.
+[Ciri] Reason for ipc.client.connect.max.retries.on.timeouts: ipc.client.connect.max.retries.on.timeouts must be a positive integer
+[Ciri] Reason for ipc.maximum.response.length: ipc.maximum.response.length must be a positive integer
+[Ciri] Reason for hadoop.http.authentication.simple.anonymous.allowed: hadoop.http.authentication.simple.anonymous.allowed must be a boolean
+[Ciri] Reason for hadoop.registry.jaas.context: hadoop.registry.jaas.context must be a string

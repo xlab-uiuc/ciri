@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.admin.threads.max', 'alluxio.master.ufs.active.sync.event.rate.interval', 'alluxio.master.backup.connect.interval.max', 'alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ["The property 'alluxio.underfs.s3.admin.threads.max' should be an integer value indicating the maximum number of threads to use for S3AFileSystem's ThreadPoolExecutor.", "The property 'alluxio.master.ufs.active.sync.event.rate.interval' should be specified in milliseconds without the 'sec' suffix.", "The property 'alluxio.master.backup.connect.interval.max' should be specified in milliseconds without the 'sec' suffix.", "The property 'alluxio.user.network.streaming.flowcontrol.window' should be specified in bytes without the 'MB' suffix.", "The property 'alluxio.user.logging.threshold' should be specified in milliseconds without the 's' suffix."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.underfs.s3.admin.threads.max	alluxio.master.ufs.active.sync.event.rate.interval	alluxio.master.backup.connect.interval.max	alluxio.user.network.streaming.flowcontrol.window	alluxio.user.logging.threshold
+[Ciri] Reason for alluxio.underfs.s3.admin.threads.max: The property 'alluxio.underfs.s3.admin.threads.max' should be an integer value indicating the maximum number of threads to use for S3AFileSystem's ThreadPoolExecutor.
+[Ciri] Reason for alluxio.master.ufs.active.sync.event.rate.interval: The property 'alluxio.master.ufs.active.sync.event.rate.interval' should be specified in milliseconds without the 'sec' suffix.
+[Ciri] Reason for alluxio.master.backup.connect.interval.max: The property 'alluxio.master.backup.connect.interval.max' should be specified in milliseconds without the 'sec' suffix.
+[Ciri] Reason for alluxio.user.network.streaming.flowcontrol.window: The property 'alluxio.user.network.streaming.flowcontrol.window' should be specified in bytes without the 'MB' suffix.
+[Ciri] Reason for alluxio.user.logging.threshold: The property 'alluxio.user.logging.threshold' should be specified in milliseconds without the 's' suffix.

@@ -1,0 +1,17 @@
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_CONTENT_TYPE_NOSNIFF', 'CSRF_COOKIE_DOMAIN', 'TEST_NON_SERIALIZED_APPS', 'DATA_UPLOAD_MAX_MEMORY_SIZE', 'DATABASES', 'DEBUG_PROPAGATE_EXCEPTIONS', 'TEMPLATES'], 'reason': ['SECURE_CONTENT_TYPE_NOSNIFF should be set to False for security reasons.', 'CSRF_COOKIE_DOMAIN should not be set to None for security reasons.', 'TEST_NON_SERIALIZED_APPS should be a list of app names, not an empty list.', 'DATA_UPLOAD_MAX_MEMORY_SIZE should be set to a value in bytes, not 1310720.', 'DATABASES should be configured with database settings.', 'DEBUG_PROPAGATE_EXCEPTIONS should be set to False for production environments.', 'TEMPLATES should be configured with template settings.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: SECURE_CONTENT_TYPE_NOSNIFF	CSRF_COOKIE_DOMAIN	TEST_NON_SERIALIZED_APPS	DATA_UPLOAD_MAX_MEMORY_SIZE	DATABASES	DEBUG_PROPAGATE_EXCEPTIONS	TEMPLATES
+[Ciri] Reason for SECURE_CONTENT_TYPE_NOSNIFF: SECURE_CONTENT_TYPE_NOSNIFF should be set to False for security reasons.
+[Ciri] Reason for CSRF_COOKIE_DOMAIN: CSRF_COOKIE_DOMAIN should not be set to None for security reasons.
+[Ciri] Reason for TEST_NON_SERIALIZED_APPS: TEST_NON_SERIALIZED_APPS should be a list of app names, not an empty list.
+[Ciri] Reason for DATA_UPLOAD_MAX_MEMORY_SIZE: DATA_UPLOAD_MAX_MEMORY_SIZE should be set to a value in bytes, not 1310720.
+[Ciri] Reason for DATABASES: DATABASES should be configured with database settings.
+[Ciri] Reason for DEBUG_PROPAGATE_EXCEPTIONS: DEBUG_PROPAGATE_EXCEPTIONS should be set to False for production environments.
+[Ciri] Reason for TEMPLATES: TEMPLATES should be configured with template settings.

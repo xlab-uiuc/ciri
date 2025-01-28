@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'snapshot-count'], 'reason': ["The 'max-snapshots' parameter is not a valid configuration option in etcd v3.5.0. It should be removed.", "The 'snapshot-count' default value is 100,000 in etcd v3.5.0. Setting it to 20,000 is valid but lower than the recommended value, which may cause excessive snapshots and impact performance."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: max-snapshots	snapshot-count
+[Ciri] Reason for max-snapshots: The 'max-snapshots' parameter is not a valid configuration option in etcd v3.5.0. It should be removed.
+[Ciri] Reason for snapshot-count: The 'snapshot-count' default value is 100,000 in etcd v3.5.0. Setting it to 20,000 is valid but lower than the recommended value, which may cause excessive snapshots and impact performance.

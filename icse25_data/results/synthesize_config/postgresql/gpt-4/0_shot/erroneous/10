@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ident_file', 'syslog_split_messages'], 'reason': ["The 'ident_file' parameter should not contain file paths. It is intended to specify the name of the file only, not the directory.", "The 'syslog_split_messages' parameter does not exist in PostgreSQL 13.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ident_file	syslog_split_messages
+[Ciri] Reason for ident_file: The 'ident_file' parameter should not contain file paths. It is intended to specify the name of the file only, not the directory.
+[Ciri] Reason for syslog_split_messages: The 'syslog_split_messages' parameter does not exist in PostgreSQL 13.0.

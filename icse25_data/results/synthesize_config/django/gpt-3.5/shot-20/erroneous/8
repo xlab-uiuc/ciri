@@ -1,0 +1,13 @@
+Correct shot number:
+[4, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATIC_URL', 'FORCE_SCRIPT_NAME', 'EMAIL_SSL_CERTFILE'], 'reason': ["STATIC_URL should be in the format '/path/to/static/', it seems to have extra characters at the end", 'FORCE_SCRIPT_NAME should be set to a string value, None is not a valid value', 'EMAIL_SSL_CERTFILE should not be set to None, provide a valid path or leave it empty']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: STATIC_URL	FORCE_SCRIPT_NAME	EMAIL_SSL_CERTFILE
+[Ciri] Reason for STATIC_URL: STATIC_URL should be in the format '/path/to/static/', it seems to have extra characters at the end
+[Ciri] Reason for FORCE_SCRIPT_NAME: FORCE_SCRIPT_NAME should be set to a string value, None is not a valid value
+[Ciri] Reason for EMAIL_SSL_CERTFILE: EMAIL_SSL_CERTFILE should not be set to None, provide a valid path or leave it empty

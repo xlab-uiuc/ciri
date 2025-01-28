@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'max-wals', 'proxy-write-timeout', 'heartbeat-interval'], 'reason': ["The 'max-snapshots' parameter is not a valid configuration option in etcd v3.5.0. It was removed in v3.0.", "The 'max-wals' parameter is not a valid configuration option in etcd v3.5.0. The correct parameter is 'max-wals-ttl'.", "The 'proxy-write-timeout' parameter is not a valid configuration option in etcd v3.5.0. The correct parameter is 'proxy-write-timeout-ms'.", "The value for 'heartbeat-interval' should be a string with a time unit suffix like '200ms', not just a number."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: max-snapshots	max-wals	proxy-write-timeout	heartbeat-interval
+[Ciri] Reason for max-snapshots: The 'max-snapshots' parameter is not a valid configuration option in etcd v3.5.0. It was removed in v3.0.
+[Ciri] Reason for max-wals: The 'max-wals' parameter is not a valid configuration option in etcd v3.5.0. The correct parameter is 'max-wals-ttl'.
+[Ciri] Reason for proxy-write-timeout: The 'proxy-write-timeout' parameter is not a valid configuration option in etcd v3.5.0. The correct parameter is 'proxy-write-timeout-ms'.
+[Ciri] Reason for heartbeat-interval: The value for 'heartbeat-interval' should be a string with a time unit suffix like '200ms', not just a number.

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'proxy-read-timeout', 'auto-tls', 'auto-compaction-mode', 'discovery-fallback'], 'reason': ["auto-compaction-retention is deprecated in etcd 3.5.0 and later versions. Use 'auto-compaction-retention-duration' instead.", 'proxy-read-timeout is not a valid configuration parameter in etcd 3.5.0.', "auto-tls is not a valid configuration parameter in etcd 3.5.0. Use 'cert-file' and 'key-file' instead.", "auto-compaction-mode is not a valid configuration parameter in etcd 3.5.0. Use 'auto-compaction-retention-duration' instead.", 'discovery-fallback is not a valid configuration parameter in etcd 3.5.0.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: auto-compaction-retention	proxy-read-timeout	auto-tls	auto-compaction-mode	discovery-fallback
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention is deprecated in etcd 3.5.0 and later versions. Use 'auto-compaction-retention-duration' instead.
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout is not a valid configuration parameter in etcd 3.5.0.
+[Ciri] Reason for auto-tls: auto-tls is not a valid configuration parameter in etcd 3.5.0. Use 'cert-file' and 'key-file' instead.
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode is not a valid configuration parameter in etcd 3.5.0. Use 'auto-compaction-retention-duration' instead.
+[Ciri] Reason for discovery-fallback: discovery-fallback is not a valid configuration parameter in etcd 3.5.0.

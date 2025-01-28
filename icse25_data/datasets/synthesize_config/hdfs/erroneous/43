@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.du.reserved.calculator</name>
+  <value>org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.ReservedSpaceCalculator$ReservedSpaceCalculatorAbsolute</value>
+  <description>Determines the class of ReservedSpaceCalculator to be used for
+    calculating disk space reservedfor non-HDFS data. The default calculator is
+    ReservedSpaceCalculatorAbsolute which will use dfs.datanode.du.reserved
+    for a static reserved number of bytes. ReservedSpaceCalculatorPercentage
+    will use dfs.datanode.du.reserved.pct to calculate the reserved number
+    of bytes based on the size of the storage. ReservedSpaceCalculatorConservative and
+    ReservedSpaceCalculatorAggressive will use their combination, Conservative will use
+    maximum, Aggressive minimum. For more details see ReservedSpaceCalculator.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.lazypersist.file.scrub.interval.sec</name>
+  <value>600</value>
+  <description>
+    The NameNode periodically scans the namespace for LazyPersist files with
+    missing blocks and unlinks them from the namespace. This configuration key
+    controls the interval between successive scans. If this value is set to 0,
+    the file scrubber is disabled.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.max.full.block.report.leases</name>
+  <value>6</value>
+  <description>The maximum number of leases for full block reports that the
+    NameNode will issue at any given time.  This prevents the NameNode from
+    being flooded with full block reports that use up all the RPC handler
+    threads.  This number should never be more than the number of RPC handler
+    threads or less than 1.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.read.shortcircuit</name>
+  <value>true</value>
+  <description>
+    This configuration parameter turns on short-circuit local reads.
+  </description>
+</property>
+
+<property>
+  <name>dfs.block.replicator.classname</name>
+  <value>org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault</value>
+  <description>
+    Class representing block placement policy for non-striped files.
+    There are four block placement policies currently being supported:
+    BlockPlacementPolicyDefault, BlockPlacementPolicyWithNodeGroup,
+    BlockPlacementPolicyRackFaultTolerant and BlockPlacementPolicyWithUpgradeDomain.
+    BlockPlacementPolicyDefault chooses the desired number of targets
+    for placing block replicas in a default way. BlockPlacementPolicyWithNodeGroup
+    places block replicas on environment with node-group layer. BlockPlacementPolicyRackFaultTolerant
+    places the replicas to more racks.
+    BlockPlacementPolicyWithUpgradeDomain places block replicas that honors upgrade domain policy.
+    The details of placing replicas are documented in the javadoc of the corresponding policy classes.
+    The default policy is BlockPlacementPolicyDefault, and the corresponding class is
+    org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.name.cache.threshold</name>
+  <value>20</value>
+  <description>
+    Frequently accessed files that are accessed more times than this
+    threshold are cached in the FSDirectory nameCache.
+  </description>
+</property>
+
+<property>
+  <name>dfs.disk.balancer.plan.valid.interval</name>
+  <value>2d</value>
+    <description>
+      Maximum amount of time disk balancer plan is valid. This setting
+      supports multiple time unit suffixes as described in
+      dfs.heartbeat.interval. If no suffix is specified then milliseconds
+      is assumed.
+    </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.inmemory.rpc.bind-host</name>
+  <value>999.-1.0.0</value>
+    <description>
+      The actual address the in-memory aliasmap server will bind to.
+      If this optional address is set, it overrides the hostname portion of
+      dfs.provided.aliasmap.inmemory.rpc.address.
+      This is useful for making the name node listen on all interfaces by
+      setting it to 0.0.0.0.
+    </description>
+</property>
+
+</configuration>

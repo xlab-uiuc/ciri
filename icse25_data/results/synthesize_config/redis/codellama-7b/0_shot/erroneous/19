@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'cluster-announce-ip'], 'reason': ['cluster-announce-bus-port is not a valid port number', 'cluster-announce-ip is not a valid IP address']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port'], 'reason': ['cluster-announce-bus-port must be a valid port number']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'cluster-announce-ip', 'cluster-config-file', 'tls-port'], 'reason': ['cluster-announce-bus-port is not a valid port number', 'cluster-announce-ip is not a valid IP address', 'cluster-config-file is not a valid file path', 'tls-port is not a valid port number']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendonly', 'aof-timestamp-enabled'], 'reason': ['appendonly is not a valid configuration parameter for redis version 7.0.0', 'aof-timestamp-enabled is not a valid configuration parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['appendonly', 'aof-timestamp-enabled'], 'reason': ["The parameter 'appendonly' is not supported in redis version 7.0.0.", "The parameter 'aof-timestamp-enabled' is not supported in redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['appendonly', 'aof-timestamp-enabled'], 'reason': ['appendonly is not a valid configuration parameter.', 'aof-timestamp-enabled is not a valid configuration parameter.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: appendonly	aof-timestamp-enabled
+[Ciri] Reason for appendonly: appendonly is not a valid configuration parameter for redis version 7.0.0
+[Ciri] Reason for aof-timestamp-enabled: aof-timestamp-enabled is not a valid configuration parameter.

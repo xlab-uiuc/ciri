@@ -1,0 +1,20 @@
+Wrong shot number:
+[4, 2, 7]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_memory_type', 'max_pred_locks_per_relation'], 'reason': ["The value of the property 'shared_memory_type' is invalid. It should be one of 'sysv', 'windows', 'mmap', 'posix', 'none'.", "The property 'max_pred_locks_per_relation' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['shared_memory_type', 'max_pred_locks_per_relation', 'tcp_user_timeout'], 'reason': ["The property 'shared_memory_type' has an invalid value 'NONE_MOUNTPOINT'.", "The property 'max_pred_locks_per_relation' has a negative value which is not allowed.", "The property 'tcp_user_timeout' should have a value greater than 0."]}
+
+{'hasError': True, 'errParameter': ['shared_memory_type', 'max_pred_locks_per_relation', 'tcp_user_timeout'], 'reason': ["The property 'shared_memory_type' has an invalid value 'NONE_MOUNTPOINT'.", "The property 'max_pred_locks_per_relation' has a negative value which is not allowed.", "The property 'tcp_user_timeout' has a value of '1' which is not in the correct format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: shared_memory_type	max_pred_locks_per_relation	tcp_user_timeout
+[Ciri] Reason for shared_memory_type: The property 'shared_memory_type' has an invalid value 'NONE_MOUNTPOINT'.
+[Ciri] Reason for max_pred_locks_per_relation: The property 'max_pred_locks_per_relation' has a negative value which is not allowed.
+[Ciri] Reason for tcp_user_timeout: The property 'tcp_user_timeout' should have a value greater than 0.

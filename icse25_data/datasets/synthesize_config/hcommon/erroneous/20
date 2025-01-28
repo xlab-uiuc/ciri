@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.dns.nameserver</name>
+  <value>x.0.0.0.0.0</value>
+  <description>
+    The host name or IP address of the name server (DNS) which a service Node
+    should use to determine its own host name for Kerberos Login. Requires
+    hadoop.security.dns.interface.
+
+    Most clusters will not require this setting.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.dns.log-slow-lookups.enabled</name>
+  <value>true</value>
+  <description>
+    Time name lookups (via SecurityUtil) and log them if they exceed the
+    configured threshold.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.groups.cache.background.reload.threads</name>
+  <value>3</value>
+  <description>
+    Only relevant if hadoop.security.groups.cache.background.reload is true.
+    Controls the number of concurrent background user->group cache entry
+    refreshes. Pending refresh requests beyond this value are queued and
+    processed when a thread is free.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.credential.clear-text-fallback</name>
+  <value>false</value>
+  <description>
+    true or false to indicate whether or not to fall back to storing credential
+    password as clear text. The default value is true. This property only works
+    when the password can't not be found from credential providers.
+  </description>
+</property>
+
+<property>
+  <name>ha.zookeeper.acl</name>
+  <value>world:anyone:rwcda</value>
+  <description>
+    A comma-separated list of ZooKeeper ACLs to apply to the znodes
+    used by automatic failover. These ACLs are specified in the same
+    format as used by the ZooKeeper CLI.
+
+    If the ACL itself contains secrets, you may instead specify a
+    path to a file, prefixed with the '@' symbol, and the value of
+    this configuration will be loaded from within.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.keystores.factory.class</name>
+  <value>org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory</value>
+  <description>
+    The keystores factory to use for retrieving certificates.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.kms.client.authentication.retry-count</name>
+  <value>2</value>
+  <description>
+    Number of time to retry connecting to KMS on authentication failure
+  </description>
+</property>
+
+<property>
+  <name>hadoop.metrics.jvm.use-thread-mxbean</name>
+  <value>true</value>
+    <description>
+      Whether or not ThreadMXBean is used for getting thread info in JvmMetrics,
+      ThreadGroup approach is preferred for better performance.
+    </description>
+</property>
+
+</configuration>

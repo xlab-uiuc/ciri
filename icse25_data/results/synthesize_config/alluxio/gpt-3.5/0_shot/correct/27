@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.addresses', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ["The property 'alluxio.master.embedded.journal.addresses' should not be set to '127.0.0.1' for production environments. It is recommended to use actual IP addresses or hostnames.", "The value '200MB' for 'alluxio.user.network.rpc.max.inbound.message.size' should be specified in bytes rather than using 'MB'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.addresses', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ["The property 'alluxio.master.embedded.journal.addresses' should have a list of journal addresses, not a single address.", "The value for 'alluxio.user.network.rpc.max.inbound.message.size' should be specified in bytes, not as 'MB'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ["The value '200MB' for 'alluxio.user.network.rpc.max.inbound.message.size' should be specified in bytes, not as '200MB'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.embedded.journal.addresses	alluxio.user.network.rpc.max.inbound.message.size
+[Ciri] Reason for alluxio.master.embedded.journal.addresses: The property 'alluxio.master.embedded.journal.addresses' should have a list of journal addresses, not a single address.
+[Ciri] Reason for alluxio.user.network.rpc.max.inbound.message.size: The value '200MB' for 'alluxio.user.network.rpc.max.inbound.message.size' should be specified in bytes rather than using 'MB'.

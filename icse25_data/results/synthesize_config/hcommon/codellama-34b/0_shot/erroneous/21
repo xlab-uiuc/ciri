@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'fs.s3a.attempts.maximum', 'fs.s3a.s3guard.ddb.table.create', 'fs.AbstractFileSystem.abfs.impl', 'ftp.bytes-per-checksum', 'hadoop.security.key.default.cipher'], 'reason': ['The value of fs.s3a.proxy.port is not a valid integer.', 'The value of fs.s3a.attempts.maximum is not a valid integer.', 'The value of fs.s3a.s3guard.ddb.table.create is not a valid boolean.', 'The value of fs.AbstractFileSystem.abfs.impl is not a valid class.', 'The value of ftp.bytes-per-checksum is not a valid integer.', 'The value of hadoop.security.key.default.cipher is not a valid CipherSuite.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.s3a.proxy.port	fs.s3a.attempts.maximum	fs.s3a.s3guard.ddb.table.create	fs.AbstractFileSystem.abfs.impl	ftp.bytes-per-checksum	hadoop.security.key.default.cipher
+[Ciri] Reason for fs.s3a.proxy.port: The value of fs.s3a.proxy.port is not a valid integer.
+[Ciri] Reason for fs.s3a.attempts.maximum: The value of fs.s3a.attempts.maximum is not a valid integer.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.create: The value of fs.s3a.s3guard.ddb.table.create is not a valid boolean.
+[Ciri] Reason for fs.AbstractFileSystem.abfs.impl: The value of fs.AbstractFileSystem.abfs.impl is not a valid class.
+[Ciri] Reason for ftp.bytes-per-checksum: The value of ftp.bytes-per-checksum is not a valid integer.
+[Ciri] Reason for hadoop.security.key.default.cipher: The value of hadoop.security.key.default.cipher is not a valid CipherSuite.

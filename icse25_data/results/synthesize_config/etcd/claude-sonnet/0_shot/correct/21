@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'snapshot-count', 'max-snapshots'], 'reason': ["The 'auto-compaction-retention' parameter should be a string representing a valid duration (e.g., '1h', '30m', '1d'). The value '1' is not a valid duration.", "The 'snapshot-count' parameter is deprecated in etcd 3.5.0 and should not be used.", "The 'max-snapshots' parameter is deprecated in etcd 3.5.0 and should not be used. Instead, use the 'auto-compaction-retention' parameter to control the retention of snapshots."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: auto-compaction-retention	snapshot-count	max-snapshots
+[Ciri] Reason for auto-compaction-retention: The 'auto-compaction-retention' parameter should be a string representing a valid duration (e.g., '1h', '30m', '1d'). The value '1' is not a valid duration.
+[Ciri] Reason for snapshot-count: The 'snapshot-count' parameter is deprecated in etcd 3.5.0 and should not be used.
+[Ciri] Reason for max-snapshots: The 'max-snapshots' parameter is deprecated in etcd 3.5.0 and should not be used. Instead, use the 'auto-compaction-retention' parameter to control the retention of snapshots.

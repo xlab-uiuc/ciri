@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.hstore.compaction.ratio.offpeak</name>
+  <value>2.5</value>
+    <description>Allows you to set a different (by default, more aggressive) ratio for determining
+      whether larger StoreFiles are included in compactions during off-peak hours. Works in the
+      same way as hbase.hstore.compaction.ratio. Only applies if hbase.offpeak.start.hour and
+      hbase.offpeak.end.hour are also enabled.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.time.to.purge.deletes</name>
+  <value>1</value>
+    <description>The amount of time to delay purging of delete markers with future timestamps. If
+      unset, or set to 0, all delete markers, including those with future timestamps, are purged
+      during the next major compaction. Otherwise, a delete marker is kept until the major compaction
+      which occurs after the marker's timestamp plus the value of this setting, in milliseconds.
+    </description>
+</property>
+
+<property>
+  <name>hbase.master.keytab.file</name>
+  <value>/valid/file1</value>
+    <description>Full path to the kerberos keytab file to use for logging in
+    the configured HMaster server principal.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.thrift.framed</name>
+  <value>true</value>
+    <description>Use Thrift TFramedTransport on the server side.
+      This is the recommended transport for thrift servers and requires a similar setting
+      on the client side. Changing this to false will select the default transport,
+      vulnerable to DoS when malformed requests are issued due to THRIFT-601.
+    </description>
+</property>
+
+<property>
+  <name>hbase.snapshot.restore.failsafe.name</name>
+  <value>hbase-failsafe-{snapshot.name}-{restore.timestamp}</value>
+    <description>Name of the failsafe snapshot taken by the restore operation.
+      You can use the {snapshot.name}, {table.name} and {restore.timestamp} variables
+      to create a name based on what you are restoring.</description>
+</property>
+
+<property>
+  <name>hbase.status.multicast.address.ip</name>
+  <value>x.0.0.0.0.0</value>
+    <description>
+      Multicast address to use for the status publication by multicast.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest-csrf.browser-useragents-regex</name>
+  <value>^Mozilla.*</value>
+  <description>
+    A comma-separated list of regular expressions used to match against an HTTP
+    request's User-Agent header when protection against cross-site request
+    forgery (CSRF) is enabled for REST server by setting
+    hbase.rest.csrf.enabled to true.  If the incoming User-Agent matches
+    any of these regular expressions, then the request is considered to be sent
+    by a browser, and therefore CSRF prevention is enforced.  If the request's
+    User-Agent does not match any of these regular expressions, then the request
+    is considered to be sent by something other than a browser, such as scripted
+    automation.  In this case, CSRF is not a potential attack vector, so
+    the prevention is not enforced.  This helps achieve backwards-compatibility
+    with existing automation that has not been updated to send the CSRF
+    prevention header.
+  </description>
+</property>
+
+<property>
+  <name>hbase.master.mob.ttl.cleaner.period</name>
+  <value>172800</value>
+    <description>
+      The period that ExpiredMobFileCleanerChore runs. The unit is second.
+      The default value is one day. The MOB file name uses only the date part of
+      the file creation time in it. We use this time for deciding TTL expiry of
+      the files. So the removal of TTL expired files might be delayed. The max
+      delay might be 24 hrs.
+    </description>
+</property>
+
+</configuration>

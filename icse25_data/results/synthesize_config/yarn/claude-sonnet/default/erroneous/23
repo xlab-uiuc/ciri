@@ -1,0 +1,15 @@
+Wrong shot number:
+[6, 7, 5]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.handler', 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb'], 'reason': ["The property 'yarn.resourcemanager.placement-constraints.handler' has the value 'NOEXIST' which is not within the accepted values {placement-processor, scheduler, disabled}.", "The property 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb' has the value '-1' which is not a valid positive integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.placement-constraints.handler	yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb
+[Ciri] Reason for yarn.resourcemanager.placement-constraints.handler: The property 'yarn.resourcemanager.placement-constraints.handler' has the value 'NOEXIST' which is not within the accepted values {placement-processor, scheduler, disabled}.
+[Ciri] Reason for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb: The property 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb' has the value '-1' which is not a valid positive integer.

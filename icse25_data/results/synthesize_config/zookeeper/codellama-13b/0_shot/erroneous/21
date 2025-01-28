@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'secureClientPortAddress'], 'reason': ['dataLogDir is not a valid directory', 'secureClientPortAddress is not a valid IP address']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'syncLimit', 'secureClientPortAddress', 'peerType', 'maxSessionTimeout'], 'reason': ['dataLogDir is not a valid directory', 'syncLimit must be a positive integer', 'secureClientPortAddress is not a valid address', 'peerType is not a valid type', 'maxSessionTimeout must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'syncLimit', 'secureClientPortAddress', 'peerType', 'maxSessionTimeout'], 'reason': ['dataLogDir is not a valid directory', 'syncLimit must be a positive integer', 'secureClientPortAddress is not a valid address', "peerType must be either 'participant' or 'observer'", 'maxSessionTimeout must be a positive integer']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: dataLogDir	syncLimit	secureClientPortAddress	peerType	maxSessionTimeout
+[Ciri] Reason for dataLogDir: dataLogDir is not a valid directory
+[Ciri] Reason for syncLimit: syncLimit must be a positive integer
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress is not a valid address
+[Ciri] Reason for peerType: peerType is not a valid type
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout must be a positive integer

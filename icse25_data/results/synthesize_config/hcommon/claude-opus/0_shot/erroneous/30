@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].scheduler.impl'], 'reason': ['The fs.default.name property is deprecated in Hadoop 3.x. It should be replaced with fs.defaultFS.', 'The ipc.[port_number].scheduler.impl property is not a valid configuration. The correct property name format is ipc.server.port where port is the actual port number, for example ipc.8020.scheduler.impl.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	ipc.[port_number].scheduler.impl
+[Ciri] Reason for fs.default.name: The fs.default.name property is deprecated in Hadoop 3.x. It should be replaced with fs.defaultFS.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The ipc.[port_number].scheduler.impl property is not a valid configuration. The correct property name format is ipc.server.port where port is the actual port number, for example ipc.8020.scheduler.impl.

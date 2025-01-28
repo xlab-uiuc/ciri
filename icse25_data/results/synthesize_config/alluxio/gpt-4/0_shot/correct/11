@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.remote', 'alluxio.underfs.gcs.version', 'alluxio.worker.data.folder', 'alluxio.underfs.s3.intermediate.upload.clean.age'], 'reason': ["The property 'alluxio.underfs.hdfs.remote' is not a recognized configuration parameter in Alluxio 2.5.0.", "The property 'alluxio.underfs.gcs.version' does not exist; instead, GCS access is configured without specifying a version in Alluxio 2.5.0.", "The correct property for specifying the worker data folder is 'alluxio.worker.tieredstore.levels.level0.dirs.path'. 'alluxio.worker.data.folder' is not a valid configuration parameter.", "The property 'alluxio.underfs.s3.intermediate.upload.clean.age' is incorrect. The correct property for configuring the age of intermediate S3 uploads to be cleaned is 'alluxio.master.mount.table.root.ufs.cleanup.enabled' for enabling cleanup and 'alluxio.master.mount.table.root.ufs.cleanup.interval' for the interval."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.underfs.hdfs.remote	alluxio.underfs.gcs.version	alluxio.worker.data.folder	alluxio.underfs.s3.intermediate.upload.clean.age
+[Ciri] Reason for alluxio.underfs.hdfs.remote: The property 'alluxio.underfs.hdfs.remote' is not a recognized configuration parameter in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.underfs.gcs.version: The property 'alluxio.underfs.gcs.version' does not exist; instead, GCS access is configured without specifying a version in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.worker.data.folder: The correct property for specifying the worker data folder is 'alluxio.worker.tieredstore.levels.level0.dirs.path'. 'alluxio.worker.data.folder' is not a valid configuration parameter.
+[Ciri] Reason for alluxio.underfs.s3.intermediate.upload.clean.age: The property 'alluxio.underfs.s3.intermediate.upload.clean.age' is incorrect. The correct property for configuring the age of intermediate S3 uploads to be cleaned is 'alluxio.master.mount.table.root.ufs.cleanup.enabled' for enabling cleanup and 'alluxio.master.mount.table.root.ufs.cleanup.interval' for the interval.

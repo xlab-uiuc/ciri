@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'repl-diskless-load'], 'reason': ["In Redis 7.0, 'cluster-announce-port' is no longer a valid configuration option. It has been replaced by 'cluster-announce-port-<port>' where <port> is the port number.", "The 'repl-diskless-load' option has been removed in Redis 7.0. The 'repl-diskless-load' and 'repl-diskless-sync' options have been replaced by the 'repl-diskless-sync-delay' option."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-announce-port	repl-diskless-load
+[Ciri] Reason for cluster-announce-port: In Redis 7.0, 'cluster-announce-port' is no longer a valid configuration option. It has been replaced by 'cluster-announce-port-<port>' where <port> is the port number.
+[Ciri] Reason for repl-diskless-load: The 'repl-diskless-load' option has been removed in Redis 7.0. The 'repl-diskless-load' and 'repl-diskless-sync' options have been replaced by the 'repl-diskless-sync-delay' option.

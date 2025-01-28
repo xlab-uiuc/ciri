@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hll-sparse-max-bytes', 'proto-max-bulk-len'], 'reason': ["In Redis 7.0, the 'hll-sparse-max-bytes' parameter has been renamed to 'hll-sparse-max-bytes-per-key'.", "The 'proto-max-bulk-len' parameter value of '512mb' is not valid. It should be an integer representing the number of bytes, without a unit suffix."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hll-sparse-max-bytes	proto-max-bulk-len
+[Ciri] Reason for hll-sparse-max-bytes: In Redis 7.0, the 'hll-sparse-max-bytes' parameter has been renamed to 'hll-sparse-max-bytes-per-key'.
+[Ciri] Reason for proto-max-bulk-len: The 'proto-max-bulk-len' parameter value of '512mb' is not valid. It should be an integer representing the number of bytes, without a unit suffix.

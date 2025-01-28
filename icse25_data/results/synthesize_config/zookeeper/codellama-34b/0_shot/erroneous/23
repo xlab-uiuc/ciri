@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl'], 'reason': ['dataLogDir is not a valid property', 'quorum.auth.enableSasl is not a valid property', 'quorum.auth.serverRequireSasl is not a valid property']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl'], 'reason': ['dataLogDir is not a valid directory', 'quorum.auth.enableSasl is not a valid property', 'quorum.auth.serverRequireSasl is not a valid property']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'dataDir', 'dataLogDir'], 'reason': ['clientPort must be a positive integer less than 65536', 'dataDir and dataLogDir must be valid directories', 'dataDir and dataLogDir must be different']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dataLogDir	quorum.auth.enableSasl	quorum.auth.serverRequireSasl
+[Ciri] Reason for dataLogDir: dataLogDir is not a valid property
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl is not a valid property
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl is not a valid property

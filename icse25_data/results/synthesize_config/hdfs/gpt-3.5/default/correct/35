@@ -1,0 +1,20 @@
+Wrong shot number:
+[11, 12, 2]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.webhdfs.socket.connect-timeout', 'dfs.datanode.processcommands.threshold', 'datanode.https.port', 'dfs.datanode.fixed.volume.size'], 'reason': ["The property 'dfs.webhdfs.socket.connect-timeout' has the value '60s' which is missing the unit specifier.", "The property 'dfs.datanode.processcommands.threshold' has the value '1s' which is missing the unit specifier.", "The property 'datanode.https.port' has the value '50475' which is out of the valid range of a port number.", "The property 'dfs.datanode.fixed.volume.size' has the value 'true' which should be a numeric value."]}
+
+{'hasError': True, 'errParameter': ['dfs.webhdfs.socket.connect-timeout', 'dfs.datanode.processcommands.threshold', 'datanode.https.port'], 'reason': ["The property 'dfs.webhdfs.socket.connect-timeout' has an invalid value '60s' without a valid unit specifier.", "The property 'dfs.datanode.processcommands.threshold' has an invalid value '1s' without a valid unit specifier.", "The property 'datanode.https.port' has an invalid value '50475' which is out of the valid range of a port number."]}
+
+{'hasError': True, 'errParameter': ['dfs.webhdfs.socket.connect-timeout', 'dfs.datanode.processcommands.threshold', 'datanode.https.port'], 'reason': ["The property 'dfs.webhdfs.socket.connect-timeout' has the value '60s' which is missing the unit specifier.", "The property 'dfs.datanode.processcommands.threshold' has the value '1s' which is missing the unit specifier.", "The property 'datanode.https.port' has the value '50475' which is out of the valid range of a port number."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.webhdfs.socket.connect-timeout	dfs.datanode.processcommands.threshold	datanode.https.port
+[Ciri] Reason for dfs.webhdfs.socket.connect-timeout: The property 'dfs.webhdfs.socket.connect-timeout' has the value '60s' which is missing the unit specifier.
+[Ciri] Reason for dfs.datanode.processcommands.threshold: The property 'dfs.datanode.processcommands.threshold' has an invalid value '1s' without a valid unit specifier.
+[Ciri] Reason for datanode.https.port: The property 'datanode.https.port' has the value '50475' which is out of the valid range of a port number.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[6, 10]
+
+Correct shot number:
+[10, 12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.common.configuration.version', 'io.file.buffer.size', 'io.bytes.per.checksum', 'fs.azure.authorization', 'hadoop.ssl.require.client.cert'], 'reason': ["The property 'hadoop.common.configuration.version' has the value '3.0.0' which may not be compatible with HCommon version 3.3.0.", "The property 'io.file.buffer.size' should be a multiple of the hardware page size.", "The property 'io.bytes.per.checksum' should not be larger than 'io.file.buffer.size'.", "The property 'fs.azure.authorization' should have a value of 'true' to enable authorization support in WASB.", "The property 'hadoop.ssl.require.client.cert' should have a value of 'true' if client certificates are required."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: hadoop.common.configuration.version	io.file.buffer.size	io.bytes.per.checksum	fs.azure.authorization	hadoop.ssl.require.client.cert
+[Ciri] Reason for hadoop.common.configuration.version: The property 'hadoop.common.configuration.version' has the value '3.0.0' which may not be compatible with HCommon version 3.3.0.
+[Ciri] Reason for io.file.buffer.size: The property 'io.file.buffer.size' should be a multiple of the hardware page size.
+[Ciri] Reason for io.bytes.per.checksum: The property 'io.bytes.per.checksum' should not be larger than 'io.file.buffer.size'.
+[Ciri] Reason for fs.azure.authorization: The property 'fs.azure.authorization' should have a value of 'true' to enable authorization support in WASB.
+[Ciri] Reason for hadoop.ssl.require.client.cert: The property 'hadoop.ssl.require.client.cert' should have a value of 'true' if client certificates are required.

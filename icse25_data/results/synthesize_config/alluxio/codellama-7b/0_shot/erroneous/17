@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.master.client.pool.size.max', 'alluxio.worker.network.block.reader.threads.max', 'alluxio.user.keytab.file', 'alluxio.master.tieredstore.global.mediumtype'], 'reason': ['alluxio.user.block.master.client.pool.size.max should be an integer', 'alluxio.worker.network.block.reader.threads.max should be an integer', 'alluxio.user.keytab.file should be a valid file path', 'alluxio.master.tieredstore.global.mediumtype should be a valid tieredstore medium type']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.master.client.pool.size.max', 'alluxio.worker.network.block.reader.threads.max', 'alluxio.worker.keytab.file'], 'reason': ['alluxio.user.block.master.client.pool.size.max should be an integer', 'alluxio.worker.network.block.reader.threads.max should be an integer', 'alluxio.worker.keytab.file should be a valid file path']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.master.client.pool.size.max', 'alluxio.worker.network.block.reader.threads.max', 'alluxio.worker.keytab.file'], 'reason': ['alluxio.user.block.master.client.pool.size.max should be an integer', 'alluxio.worker.network.block.reader.threads.max should be an integer', 'alluxio.worker.keytab.file should be a valid file path']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.user.block.master.client.pool.size.max	alluxio.worker.network.block.reader.threads.max	alluxio.worker.keytab.file
+[Ciri] Reason for alluxio.user.block.master.client.pool.size.max: alluxio.user.block.master.client.pool.size.max should be an integer
+[Ciri] Reason for alluxio.worker.network.block.reader.threads.max: alluxio.worker.network.block.reader.threads.max should be an integer
+[Ciri] Reason for alluxio.worker.keytab.file: alluxio.worker.keytab.file should be a valid file path

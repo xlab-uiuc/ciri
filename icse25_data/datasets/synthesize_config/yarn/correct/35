@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.container-tokens.master-key-rolling-interval-secs</name>
+  <value>43200</value>
+    <description>Interval for the roll over for the master key used to generate
+        container tokens. It is expected to be much greater than
+        yarn.nm.liveness-monitor.expiry-interval-ms and
+        yarn.resourcemanager.rm.container-allocation.expiry-interval-ms. Otherwise the
+        behavior is undefined.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.localizer.client.thread-count</name>
+  <value>10</value>
+    <description>Number of threads to handle localization requests.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.resources-handler.class</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.util.DefaultLCEResourcesHandler</value>
+    <description>The class which should help the LCE handle resources.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.allowed-runtimes</name>
+  <value>default</value>
+    <description>Comma separated list of runtimes that are allowed when using
+    LinuxContainerExecutor. The allowed values are default, docker, runc, and
+    javasandbox.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.state-store-class</name>
+  <value>org.apache.hadoop.yarn.server.timeline.recovery.LeveldbTimelineStateStore</value>
+    <description>Store class name for timeline state store.</description>
+</property>
+
+<property>
+  <name>yarn.federation.cache-ttl.secs</name>
+  <value>150</value>
+   <description>
+    The time in seconds after which the federation state store local cache
+    will be refreshed periodically
+   </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.webapp.xfs-filter.xframe-options</name>
+  <value>SAMEORIGIN</value>
+    <description>
+      Property specifying the xframe options value.
+    </description>
+</property>
+
+<property>
+  <name>yarn.webapp.filter-entity-list-by-user</name>
+  <value>true</value>
+      <description>
+        Flag to enable display of applications per user as an admin
+        configuration.
+      </description>
+</property>
+
+</configuration>

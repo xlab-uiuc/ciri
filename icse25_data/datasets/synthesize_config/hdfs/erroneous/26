@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.decommission.blocks.per.interval</name>
+  <value>250000</value>
+  <description>The approximate number of blocks to process per decommission
+    or maintenance interval, as defined in dfs.namenode.decommission.interval.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.scan.period.hours</name>
+  <value>504</value>
+  <description>
+        If this is positive, the DataNode will not scan any
+        individual block more than once in the specified scan period.
+        If this is negative, the block scanner is disabled.
+        If this is set to zero, then the default value of 504 hours
+        or 3 weeks is used. Prior versions of HDFS incorrectly documented
+        that setting this key to zero will disable the block scanner.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.metrics.logger.period.seconds</name>
+  <value>600</value>
+  <description>
+    This setting controls how frequently the NameNode logs its metrics. The
+    logging configuration must also define one or more appenders for
+    NameNodeMetricsLog for the metrics to be logged.
+    NameNode metrics logging is disabled if this value is set to zero or
+    less than zero.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.fsdatasetcache.max.threads.per.volume</name>
+  <value>8</value>
+  <description>
+    The maximum number of threads per volume to use for caching new data
+    on the datanode. These threads consume both I/O and CPU. This can affect
+    normal datanode operations.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.inotify.max.events.per.rpc</name>
+  <value>500</value>
+  <description>Maximum number of events that will be sent to an inotify client
+    in a single RPC response. The default value attempts to amortize away
+    the overhead for this RPC while avoiding huge memory requirements for the
+    client and NameNode (1000 events should consume no more than 1 MB.)
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.socketcache.capacity</name>
+  <value>32</value>
+  <description>
+    Socket cache capacity (in entries) for short-circuit reads.
+    If this value is set to 0, the client socket cache is disabled.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.missing.checkpoint.periods.before.shutdown</name>
+  <value>6</value>
+  <description>
+    The number of checkpoint period windows (as defined by the property
+    dfs.namenode.checkpoint.period) allowed by the Namenode to perform
+    saving the namespace before shutdown.
+  </description>
+</property>
+
+<property>
+  <name>dfs.journalnode.edits.dir.perm</name>
+  <value>hbase</value>
+    <description>
+      Permissions for the directories on on the local filesystem where
+      the DFS journal node stores the edits. The permissions can either be
+      octal or symbolic.
+    </description>
+</property>
+
+</configuration>

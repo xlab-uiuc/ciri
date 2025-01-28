@@ -1,0 +1,16 @@
+Wrong shot number:
+[11, 12, 2]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'list-max-listpack-size', 'zset-max-listpack-value'], 'reason': ["The value of 'tcp-keepalive' cannot be negative.", "The property 'list-max-listpack-size' does not exist. It might be a confusion with 'hash-max-listpack-size' or 'stream-node-max-bytes'.", "The property 'zset-max-listpack-value' does not exist. It might be a confusion with 'hash-max-listpack-value' or similar."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tcp-keepalive	list-max-listpack-size	zset-max-listpack-value
+[Ciri] Reason for tcp-keepalive: The value of 'tcp-keepalive' cannot be negative.
+[Ciri] Reason for list-max-listpack-size: The property 'list-max-listpack-size' does not exist. It might be a confusion with 'hash-max-listpack-size' or 'stream-node-max-bytes'.
+[Ciri] Reason for zset-max-listpack-value: The property 'zset-max-listpack-value' does not exist. It might be a confusion with 'hash-max-listpack-value' or similar.

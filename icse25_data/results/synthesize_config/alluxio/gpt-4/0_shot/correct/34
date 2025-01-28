@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.log.size.bytes.max', 'alluxio.worker.block.heartbeat.interval', 'alluxio.worker.ufs.instream.cache.max.size'], 'reason': ["The property 'alluxio.master.journal.log.size.bytes.max' should be 'alluxio.master.journal.log.size.bytes.max' but with a value in bytes, not with 'MB' suffix.", "The correct format for durations in Alluxio configuration is using 'ms', 's', 'm', 'h', 'd' as the unit. Therefore, 'alluxio.worker.block.heartbeat.interval' should use '10s' instead of '10sec'.", "The property 'alluxio.worker.ufs.instream.cache.max.size' is not recognized in Alluxio 2.5.0. It might be a deprecated or incorrect property name."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.journal.log.size.bytes.max	alluxio.worker.block.heartbeat.interval	alluxio.worker.ufs.instream.cache.max.size
+[Ciri] Reason for alluxio.master.journal.log.size.bytes.max: The property 'alluxio.master.journal.log.size.bytes.max' should be 'alluxio.master.journal.log.size.bytes.max' but with a value in bytes, not with 'MB' suffix.
+[Ciri] Reason for alluxio.worker.block.heartbeat.interval: The correct format for durations in Alluxio configuration is using 'ms', 's', 'm', 'h', 'd' as the unit. Therefore, 'alluxio.worker.block.heartbeat.interval' should use '10s' instead of '10sec'.
+[Ciri] Reason for alluxio.worker.ufs.instream.cache.max.size: The property 'alluxio.worker.ufs.instream.cache.max.size' is not recognized in Alluxio 2.5.0. It might be a deprecated or incorrect property name.

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'quorum.auth.learner.saslLoginContext', 'localSessionsUpgradingEnabled', 'localSessionsEnabled', 'maxClientCnxns', 'clientPort', 'quorum.auth.serverRequireSasl', 'syncLimit'], 'reason': ["Unknown property 'standaloneEnabled'", "Unknown property 'quorum.auth.learner.saslLoginContext'", "Unknown property 'localSessionsUpgradingEnabled'", "Unknown property 'localSessionsEnabled'", "Unknown property 'maxClientCnxns'", "Unknown property 'clientPort'", "Unknown property 'quorum.auth.serverRequireSasl'", "Unknown property 'syncLimit'"]}
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'quorum.auth.learner.saslLoginContext', 'localSessionsUpgradingEnabled'], 'reason': ["'standaloneEnabled' property is missing or incorrect.", "'quorum.auth.learner.saslLoginContext' property is missing or incorrect.", "'localSessionsUpgradingEnabled' property is missing or incorrect."]}
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'quorum.auth.learner.saslLoginContext', 'localSessionsUpgradingEnabled'], 'reason': ["'standaloneEnabled' property is missing or incorrect. It should be set to 'true' or 'false'.", "'quorum.auth.learner.saslLoginContext' property is missing or incorrect. It should be set to a valid SASL login context.", "'localSessionsUpgradingEnabled' property is missing or incorrect. It should be set to 'true' or 'false'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: standaloneEnabled	quorum.auth.learner.saslLoginContext	localSessionsUpgradingEnabled
+[Ciri] Reason for standaloneEnabled: 'standaloneEnabled' property is missing or incorrect. It should be set to 'true' or 'false'.
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: 'quorum.auth.learner.saslLoginContext' property is missing or incorrect. It should be set to a valid SASL login context.
+[Ciri] Reason for localSessionsUpgradingEnabled: 'localSessionsUpgradingEnabled' property is missing or incorrect. It should be set to 'true' or 'false'.

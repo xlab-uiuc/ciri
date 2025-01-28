@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.end.hour', 'hbase.server.scanner.max.result.size'], 'reason': ['The value for hbase.offpeak.end.hour should be between 0 and 23, inclusive. -2 is outside this range.', 'The default value for hbase.server.scanner.max.result.size in HBase 2.2.7 is 2097152 (2MB), not 209715200 (200MB). The configured value seems too high and may cause issues.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.offpeak.end.hour	hbase.server.scanner.max.result.size
+[Ciri] Reason for hbase.offpeak.end.hour: The value for hbase.offpeak.end.hour should be between 0 and 23, inclusive. -2 is outside this range.
+[Ciri] Reason for hbase.server.scanner.max.result.size: The default value for hbase.server.scanner.max.result.size in HBase 2.2.7 is 2097152 (2MB), not 209715200 (200MB). The configured value seems too high and may cause issues.

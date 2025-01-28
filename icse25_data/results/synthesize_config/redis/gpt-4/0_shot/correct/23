@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dir', 'zset-max-listpack-value'], 'reason': ["The 'dir' parameter is not a valid configuration directive for Redis. It seems to be an attempt to set a directory, but Redis configuration files do not include a directive for setting a directory in this manner.", "The 'zset-max-listpack-value' parameter does not exist in Redis configuration. It seems to be a confusion with 'zset-max-ziplist-value' or a similar parameter, but as of Redis 7.0.0, there's no 'zset-max-listpack-value' configuration directive."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dir	zset-max-listpack-value
+[Ciri] Reason for dir: The 'dir' parameter is not a valid configuration directive for Redis. It seems to be an attempt to set a directory, but Redis configuration files do not include a directive for setting a directory in this manner.
+[Ciri] Reason for zset-max-listpack-value: The 'zset-max-listpack-value' parameter does not exist in Redis configuration. It seems to be a confusion with 'zset-max-ziplist-value' or a similar parameter, but as of Redis 7.0.0, there's no 'zset-max-listpack-value' configuration directive.

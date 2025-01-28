@@ -1,0 +1,18 @@
+Wrong shot number:
+[16, 2, 8]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.web.authentication.kerberos.keytab'], 'reason': ["The file '/valid/file2' does not exist."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.gc.time.monitor.observation.window.ms'], 'reason': ["The property 'dfs.namenode.gc.time.monitor.observation.window.ms' has the value '2m' which uses an incorrect unit."]}
+
+{'hasError': True, 'errParameter': ['dfs.web.authentication.kerberos.keytab'], 'reason': ["The property 'dfs.web.authentication.kerberos.keytab' has the value '/valid/file2' which is not a valid file path."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.web.authentication.kerberos.keytab
+[Ciri] Reason for dfs.web.authentication.kerberos.keytab: The property 'dfs.web.authentication.kerberos.keytab' has the value '/valid/file2' which is not a valid file path.

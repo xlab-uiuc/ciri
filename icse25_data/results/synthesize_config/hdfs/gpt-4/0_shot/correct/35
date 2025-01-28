@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.processcommands.threshold', 'dfs.disk.balancer.enabled'], 'reason': ["The 'dfs.datanode.processcommands.threshold' property is expressed in seconds ('1s'), but it should be in milliseconds without a unit specifier.", "The description of 'dfs.disk.balancer.enabled' incorrectly states that disk balancer is enabled by default, but the default value is actually set to false in the configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.processcommands.threshold	dfs.disk.balancer.enabled
+[Ciri] Reason for dfs.datanode.processcommands.threshold: The 'dfs.datanode.processcommands.threshold' property is expressed in seconds ('1s'), but it should be in milliseconds without a unit specifier.
+[Ciri] Reason for dfs.disk.balancer.enabled: The description of 'dfs.disk.balancer.enabled' incorrectly states that disk balancer is enabled by default, but the default value is actually set to false in the configuration.

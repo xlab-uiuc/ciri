@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.logcleaner.ttl</name>
+  <value>300000</value>
+    <description>How long a WAL remain in the archive ({hbase.rootdir}/oldWALs) directory,
+    after which it will be cleaned by a Master thread. The value is in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.handler.count</name>
+  <value>15</value>
+    <description>Count of RPC Listener instances spun up on RegionServers.
+      Same property is used by the Master for count of master handlers.
+      Too many handlers can be counter-productive. Make it a multiple of
+      CPU count. If mostly read-only, handlers count close to cpu count
+      does well. Start with twice the CPU count and tune from there.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.callqueue.handler.factor</name>
+  <value>0.1</value>
+    <description>Factor to determine the number of call queues.
+      A value of 0 means a single queue shared between all the handlers.
+      A value of 1 means that each handler has its own queue.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.percolumnfamilyflush.size.lower.bound.min</name>
+  <value>8388608</value>
+    <description>
+    If FlushLargeStoresPolicy is used and there are multiple column families,
+    then every time that we hit the total memstore limit, we find out all the
+    column families whose memstores exceed a "lower bound" and only flush them
+    while retaining the others in memory. The "lower bound" will be
+    "hbase.hregion.memstore.flush.size / column_family_number" by default
+    unless value of this property is larger than that. If none of the families
+    have their memstore size more than lower bound, all the memstores will be
+    flushed (just as usual).
+    </description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.enabled</name>
+  <value>true</value>
+    <description>Enables or disables coprocessor loading. If 'false'
+    (disabled), any other coprocessor related configuration will be ignored.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest.threads.min</name>
+  <value>1</value>
+    <description>The minimum number of threads of the REST server thread pool.
+        The thread pool always has at least these number of threads so
+        the REST server is ready to serve incoming requests.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.thrift.framed</name>
+  <value>false</value>
+    <description>Use Thrift TFramedTransport on the server side.
+      This is the recommended transport for thrift servers and requires a similar setting
+      on the client side. Changing this to false will select the default transport,
+      vulnerable to DoS when malformed requests are issued due to THRIFT-601.
+    </description>
+</property>
+
+<property>
+  <name>hbase.master.loadbalancer.class</name>
+  <value>org.apache.hadoop.hbase.master.balancer.StochasticLoadBalancer</value>
+    <description>
+      Class used to execute the regions balancing when the period occurs.
+      See the class comment for more on how it works
+      http://hbase.apache.org/devapidocs/org/apache/hadoop/hbase/master/balancer/StochasticLoadBalancer.html
+      It replaces the DefaultLoadBalancer as the default (since renamed
+      as the SimpleLoadBalancer).
+    </description>
+</property>
+
+</configuration>

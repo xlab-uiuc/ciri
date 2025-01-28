@@ -1,0 +1,19 @@
+Wrong shot number:
+[15, 16, 2]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.namenode.top.windows.minutes'], 'reason': ["The value of the property 'dfs.datanode.data.dir.perm' should be in octal format.", "The property 'dfs.namenode.top.windows.minutes' should not have multiple values separated by commas."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.namenode.max.objects', 'dfs.namenode.top.windows.minutes'], 'reason': ["The value of the property 'dfs.datanode.data.dir.perm' should be in octal format.", "The value of the property 'dfs.namenode.max.objects' should be a positive integer or -1 for no limit.", "The property 'dfs.namenode.top.windows.minutes' has an incorrect format. It should be a single integer value or a comma-separated list of integers."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.namenode.top.windows.minutes'], 'reason': ["The value of the property 'dfs.datanode.data.dir.perm' should be in octal format.", "The property 'dfs.namenode.top.windows.minutes' should not have multiple values separated by commas."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.data.dir.perm	dfs.namenode.top.windows.minutes
+[Ciri] Reason for dfs.datanode.data.dir.perm: The value of the property 'dfs.datanode.data.dir.perm' should be in octal format.
+[Ciri] Reason for dfs.namenode.top.windows.minutes: The property 'dfs.namenode.top.windows.minutes' should not have multiple values separated by commas.

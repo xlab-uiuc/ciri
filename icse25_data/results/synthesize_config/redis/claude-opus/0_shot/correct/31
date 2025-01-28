@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'bind-source-addr', 'cluster-announce-bus-port', 'replica-announce-ip', 'oom-score-adj-values'], 'reason': ["The 'enable-protected-configs' parameter is not available in Redis 7.0.0. It was introduced in Redis 7.0.4.", "The 'bind-source-addr' parameter is not a valid Redis configuration directive.", "The 'cluster-announce-bus-port' parameter is not a valid Redis configuration directive.", "The 'replica-announce-ip' parameter is not a valid Redis configuration directive. The correct parameter is 'replica-announce-ip'.", "The 'oom-score-adj-values' parameter expects a single value, not multiple values."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: enable-protected-configs	bind-source-addr	cluster-announce-bus-port	replica-announce-ip	oom-score-adj-values
+[Ciri] Reason for enable-protected-configs: The 'enable-protected-configs' parameter is not available in Redis 7.0.0. It was introduced in Redis 7.0.4.
+[Ciri] Reason for bind-source-addr: The 'bind-source-addr' parameter is not a valid Redis configuration directive.
+[Ciri] Reason for cluster-announce-bus-port: The 'cluster-announce-bus-port' parameter is not a valid Redis configuration directive.
+[Ciri] Reason for replica-announce-ip: The 'replica-announce-ip' parameter is not a valid Redis configuration directive. The correct parameter is 'replica-announce-ip'.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter expects a single value, not multiple values.

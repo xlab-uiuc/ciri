@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'hash-max-listpack-entries', 'replica-serve-stale-data', 'hll-sparse-max-bytes', 'aof-timestamp-enabled', 'replica-announce-port', 'replica-lazy-flush', 'appendonly'], 'reason': ['daemonize is not a valid configuration parameter in Redis 7.0.0', 'hash-max-listpack-entries should be renamed to list-max-ziplist-entries in Redis 7.0.0', 'replica-serve-stale-data should be renamed to replica-read-only in Redis 7.0.0', 'hll-sparse-max-bytes should be renamed to hll-sparse-max-bytes in Redis 7.0.0', 'aof-timestamp-enabled is not a valid configuration parameter in Redis 7.0.0', 'replica-announce-port should be renamed to replica-announce-ip in Redis 7.0.0', 'replica-lazy-flush should be renamed to replica-lazy in Redis 7.0.0', 'appendonly is not a valid configuration parameter in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['daemonize', 'hash-max-listpack-entries', 'replica-serve-stale-data', 'hll-sparse-max-bytes', 'aof-timestamp-enabled', 'replica-announce-port', 'replica-lazy-flush', 'appendonly'], 'reason': ["The 'daemonize' parameter is not a valid configuration option in Redis 7.0.0.", "The 'hash-max-listpack-entries' parameter is not a valid configuration option in Redis 7.0.0.", "The 'replica-serve-stale-data' parameter is not a valid configuration option in Redis 7.0.0.", "The 'hll-sparse-max-bytes' parameter is not a valid configuration option in Redis 7.0.0.", "The 'aof-timestamp-enabled' parameter is not a valid configuration option in Redis 7.0.0.", "The 'replica-announce-port' parameter is not a valid configuration option in Redis 7.0.0.", "The 'replica-lazy-flush' parameter is not a valid configuration option in Redis 7.0.0.", "The 'appendonly' parameter is not a valid configuration option in Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['daemonize', 'hash-max-listpack-entries', 'replica-serve-stale-data', 'hll-sparse-max-bytes', 'aof-timestamp-enabled', 'replica-announce-port', 'replica-lazy-flush', 'appendonly'], 'reason': ["'daemonize' is not a valid configuration parameter in Redis 7.0.0", "'hash-max-listpack-entries' should be 'hash-max-ziplist-entries' in Redis 7.0.0", "'replica-serve-stale-data' should be 'replica-read-only' in Redis 7.0.0", "'hll-sparse-max-bytes' should be 'hll-sparse-max-bytes' in Redis 7.0.0", "'aof-timestamp-enabled' is not a valid configuration parameter in Redis 7.0.0", "'replica-announce-port' should be 'replica-announce-ip' in Redis 7.0.0", "'replica-lazy-flush' should be 'replica-lazy' in Redis 7.0.0", "'appendonly' is not a valid configuration parameter in Redis 7.0.0"]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: daemonize	hash-max-listpack-entries	replica-serve-stale-data	hll-sparse-max-bytes	aof-timestamp-enabled	replica-announce-port	replica-lazy-flush	appendonly
+[Ciri] Reason for daemonize: The 'daemonize' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for hash-max-listpack-entries: hash-max-listpack-entries should be renamed to list-max-ziplist-entries in Redis 7.0.0
+[Ciri] Reason for replica-serve-stale-data: 'replica-serve-stale-data' should be 'replica-read-only' in Redis 7.0.0
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes should be renamed to hll-sparse-max-bytes in Redis 7.0.0
+[Ciri] Reason for aof-timestamp-enabled: 'aof-timestamp-enabled' is not a valid configuration parameter in Redis 7.0.0
+[Ciri] Reason for replica-announce-port: 'replica-announce-port' should be 'replica-announce-ip' in Redis 7.0.0
+[Ciri] Reason for replica-lazy-flush: replica-lazy-flush should be renamed to replica-lazy in Redis 7.0.0
+[Ciri] Reason for appendonly: appendonly is not a valid configuration parameter in Redis 7.0.0

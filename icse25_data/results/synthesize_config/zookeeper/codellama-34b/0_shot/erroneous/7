@@ -1,0 +1,45 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['quorum.auth.serverRequireSasl and quorum.auth.enableSasl are mutually exclusive', 'quorum.auth.kerberos.servicePrincipal is not a valid property']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval'], 'reason': ['autopurge.purgeInterval should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'quorum.auth.kerberos.servicePrincipal', 'quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['dataLogDir should be a directory, not a file', 'quorum.auth.kerberos.servicePrincipal should be a valid service principal', 'quorum.auth.serverRequireSasl should be a boolean', 'quorum.auth.enableSasl should be a boolean']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl', 'quorumListenOnAllIPs'], 'reason': ['dataLogDir should be a subdirectory of dataDir', 'quorum.auth.serverRequireSasl should be false', 'quorum.auth.enableSasl should be false', 'quorumListenOnAllIPs should be true']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.kerberos.servicePrincipal is not a valid property', 'quorum.auth.serverRequireSasl is not a valid property', 'quorum.auth.enableSasl is not a valid property']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['quorum.auth.serverRequireSasl and quorum.auth.enableSasl are not supported in Zookeeper version 3.7.0', 'quorum.auth.kerberos.servicePrincipal is not supported in Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.serverRequireSasl and quorum.auth.enableSasl are not supported in Zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl and quorum.auth.enableSasl are not supported in Zookeeper version 3.7.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['quorum.auth.enableSasl is not a valid property', 'quorum.auth.serverRequireSasl is not a valid property', 'quorum.auth.kerberos.servicePrincipal is not a valid property']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.serverRequireSasl is not a valid property', 'quorum.auth.enableSasl is not a valid property']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['dataLogDir should be a subdirectory of dataDir', 'quorum.auth.serverRequireSasl and quorum.auth.enableSasl should be set to false', 'quorum.auth.serverRequireSasl and quorum.auth.enableSasl should be set to false']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.serverRequireSasl is not a valid property', 'quorum.auth.enableSasl is not a valid property']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.serverRequireSasl and quorum.auth.enableSasl are not supported in Zookeeper 3.7.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorum.auth.serverRequireSasl	quorum.auth.enableSasl
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl is not a valid property
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl is not a valid property

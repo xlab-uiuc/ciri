@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.ipc.server.callqueue.scan.ratio</name>
+  <value>0</value>
+    <description>Given the number of read call queues, calculated from the total number
+      of call queues multiplied by the callqueue.read.ratio, the scan.ratio property
+      will split the read call queues into small-read and long-read queues.
+      A value lower than 0.5 means that there will be less long-read queues than short-read queues.
+      A value of 0.5 means that there will be the same number of short-read and long-read queues.
+      A value greater than 0.5 means that there will be more long-read queues than short-read queues
+      A value of 0 or 1 indicate to use the same set of queues for gets and scans.
+
+      Example: Given the total number of read call queues being 8
+      a scan.ratio of 0 or 1 means that: 8 queues will contain both long and short read requests.
+      a scan.ratio of 0.3 means that: 2 queues will contain only long-read requests
+      and 6 queues will contain only short-read requests.
+      a scan.ratio of 0.5 means that: 4 queues will contain only long-read requests
+      and 4 queues will contain only short-read requests.
+      a scan.ratio of 0.8 means that: 6 queues will contain only long-read requests
+      and 2 queues will contain only short-read requests.
+    </description>
+</property>
+
+<property>
+  <name>hbase.client.max.total.tasks</name>
+  <value>60</value>
+    <description>The maximum number of concurrent mutation tasks a single HTable instance will
+    send to the cluster.</description>
+</property>
+
+<property>
+  <name>hbase.client.max.perregion.tasks</name>
+  <value>100</value>
+    <description>The maximum number of concurrent mutation tasks the client will
+    maintain to a single Region. That is, if there is already
+    hbase.client.max.perregion.tasks writes in progress for this region, new puts
+    won't be sent to this region until some writes finishes.</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.restore.take.failsafe.snapshot</name>
+  <value>true</value>
+    <description>Set to true to take a snapshot before the restore operation.
+      The snapshot taken will be used in case of failure, to restore the previous state.
+      At the end of the restore operation this snapshot will be deleted</description>
+</property>
+
+<property>
+  <name>hbase.status.multicast.address.ip</name>
+  <value>127.0.0.1</value>
+    <description>
+      Multicast address to use for the status publication by multicast.
+    </description>
+</property>
+
+<property>
+  <name>hbase.http.filter.initializers</name>
+  <value>org.apache.hadoop.hbase.http.lib.StaticUserWebFilter</value>
+    <description>
+      A comma separated list of class names. Each class in the list must extend
+      org.apache.hadoop.hbase.http.FilterInitializer. The corresponding Filter will
+      be initialized. Then, the Filter will be applied to all user facing jsp
+      and servlet web pages.
+      The ordering of the list defines the ordering of the filters.
+      The default StaticUserWebFilter add a user principal as defined by the
+      hbase.http.staticuser.user property.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.cache.evict.period</name>
+  <value>1800</value>
+    <description>
+      The amount of time in seconds before the mob cache evicts cached mob files.
+      The default value is 3600 seconds.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.compaction.batch.size</name>
+  <value>50</value>
+    <description>
+      The max number of the mob files that is allowed in a batch of the mob compaction.
+      The mob compaction merges the small mob files to bigger ones. If the number of the
+      small files is very large, it could lead to a "too many opened file handlers" in the merge.
+      And the merge has to be split into batches. This value limits the number of mob files
+      that are selected in a batch of the mob compaction. The default value is 100.
+    </description>
+</property>
+
+</configuration>

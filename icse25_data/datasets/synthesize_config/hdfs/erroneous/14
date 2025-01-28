@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.backup.address</name>
+  <value>0.0.0.0:3000</value>
+  <description>
+    The backup node server address and port.
+    If the port is 0 then the server will start on a free port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock</name>
+  <value>500</value>
+  <description>
+    When loading blocks into the replication queue, release the namenode write
+    lock after the defined number of blocks have been processed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.checkpoint.dir</name>
+  <value>ciri</value>
+  <description>Determines where on the local filesystem the DFS secondary
+      name node should store the temporary images to merge.
+      If this is a comma-delimited list of directories then the image is
+      replicated in all of the directories for redundancy.
+  </description>
+</property>
+
+<property>
+  <name>dfs.image.compression.codec</name>
+  <value>org.apache.hadoop.io.compress.DefaultCodec</value>
+  <description>If the dfs image is compressed, how should they be compressed?
+               This has to be a codec defined in io.compression.codecs.
+  </description>
+</property>
+
+<property>
+  <name>dfs.image.transfer.bandwidthPerSec</name>
+  <value>0</value>
+  <description>
+        Maximum bandwidth used for regular image transfers (instead of
+        bootstrapping the standby namenode), in bytes per second.
+        This can help keep normal namenode operations responsive during
+        checkpointing.
+        A default value of 0 indicates that throttling is disabled.
+        The maximum bandwidth used for bootstrapping standby namenode is
+        configured with dfs.image.transfer-bootstrap-standby.bandwidthPerSec.
+        Support multiple size unit suffix(case insensitive), as described
+        in dfs.blocksize.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.failover.connection.retries</name>
+  <value>-1</value>
+  <description>
+    Expert only. Indicates the number of retries a failover IPC client
+    will make to establish a server connection.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.legacy-oiv-image.dir</name>
+  <value>/valid/dir1</value>
+  <description>Determines where to save the namespace in the old fsimage format
+    during checkpointing by standby NameNode or SecondaryNameNode. Users can
+    dump the contents of the old format fsimage by oiv_legacy command. If
+    the value is not specified, old format fsimage will not be saved in
+    checkpoint.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.bp-ready.timeout</name>
+  <value>20s</value>
+  <description>
+    The maximum wait time for datanode to be ready before failing the
+    received request. Setting this to 0 fails requests right away if the
+    datanode is not yet registered with the namenode. This wait time
+    reduces initial request failures after datanode restart.
+    Support multiple time unit suffix(case insensitive), as described
+    in dfs.heartbeat.interval.If no time unit is specified then seconds
+    is assumed.
+  </description>
+</property>
+
+</configuration>

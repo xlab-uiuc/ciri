@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.buffer.dir', 'ipc.[port_number].weighted-cost.lockexclusive'], 'reason': ["The value '/valid/file2' for the property 'fs.s3a.buffer.dir' is not a valid directory path. It should be a comma-separated list of existing directories.", "The property 'ipc.[port_number].weighted-cost.lockexclusive' is not a valid Hadoop configuration property in version 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.buffer.dir	ipc.[port_number].weighted-cost.lockexclusive
+[Ciri] Reason for fs.s3a.buffer.dir: The value '/valid/file2' for the property 'fs.s3a.buffer.dir' is not a valid directory path. It should be a comma-separated list of existing directories.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockexclusive: The property 'ipc.[port_number].weighted-cost.lockexclusive' is not a valid Hadoop configuration property in version 3.3.0.

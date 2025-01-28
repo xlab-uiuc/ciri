@@ -1,0 +1,26 @@
+Wrong shot number:
+[9, 11, 3]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['slowlog-log-slower-than'], 'reason': ["The value of the property 'slowlog-log-slower-than' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['dir'], 'reason': ["The property 'dir' has the value './' which is not a valid directory path."]}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value'], 'reason': ["The property 'hash-max-listpack-value' has the value '32' which is out of the valid range of an integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dir'], 'reason': ["The property 'dir' has the value './' which is not a valid directory path."]}
+
+{'hasError': True, 'errParameter': ['slowlog-log-slower-than'], 'reason': ["The value of the property 'slowlog-log-slower-than' should be an integer greater than 0."]}
+
+{'hasError': True, 'errParameter': ['dir'], 'reason': ["The property 'dir' should not be set to './' as it is the default value in Redis 7.0.0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dir
+[Ciri] Reason for dir: The property 'dir' should not be set to './' as it is the default value in Redis 7.0.0.

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.authorization</name>
+  <value>false</value>
+  <description>Is service-level authorization enabled?</description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.search.attr.member</name>
+  <value>member</value>
+  <description>
+    The attribute of the group object that identifies the users that are
+    members of the group. The default will usually be appropriate for
+    any LDAP installation.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.output.csv.quote.fields</name>
+  <value>always</value>
+  <description>
+    In S3 Select queries: should fields in generated CSV Files be quoted?
+    One of: "always", "asneeded".
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].weighted-cost.lockfree</name>
+  <value>2</value>
+  <description>The weight multiplier to apply to the time spent in the
+    LOCKFREE phase which do not involve holding a lock.
+    See org.apache.hadoop.ipc.ProcessingDetails.Timing for more details on
+    this phase. This property applies to WeightedTimeCostProvider.
+  </description>
+</property>
+
+<property>
+  <name>ftp.blocksize</name>
+  <value>67108864</value>
+  <description>Block size</description>
+</property>
+
+<property>
+  <name>hadoop.http.cross-origin.enabled</name>
+  <value>false</value>
+  <description>Enable/disable the cross-origin (CORS) filter.</description>
+</property>
+
+<property>
+  <name>hadoop.security.crypto.codec.classes.aes.ctr.nopadding</name>
+  <value>org.apache.hadoop.crypto.OpensslAesCtrCryptoCodec</value>
+  <description>
+    Comma-separated list of crypto codec implementations for AES/CTR/NoPadding.
+    The first implementation will be used if available, others are fallbacks.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.tags.system</name>
+  <value>YARN</value>
+    <description>
+      System tags to group related properties together.
+    </description>
+</property>
+
+</configuration>

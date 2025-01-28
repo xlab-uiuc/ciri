@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dynamic-hz', 'cluster-announce-port'], 'reason': ['dynamic-hz is not a valid configuration parameter for Redis version 7.0.0', 'cluster-announce-port should have a valid port number specified']}
+
+{'hasError': True, 'errParameter': ['dynamic-hz', 'cluster-announce-port', 'oom-score-adj-values'], 'reason': ['dynamic-hz is not a valid configuration parameter for Redis 7.0.0', 'cluster-announce-port value should be a valid port number', 'oom-score-adj-values should have exactly 3 values separated by spaces']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'oom-score-adj-values'], 'reason': ['Invalid value for cluster-announce-port. It should be a valid port number.', 'Invalid format for oom-score-adj-values. It should be a list of three integers separated by spaces.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dynamic-hz', 'cluster-announce-port', 'oom-score-adj-values'], 'reason': ['dynamic-hz is not a valid configuration parameter for Redis version 7.0.0', 'cluster-announce-port value should be a valid port number', 'oom-score-adj-values should have three integer values separated by spaces']}
+
+{'hasError': True, 'errParameter': ['dynamic-hz', 'cluster-announce-port'], 'reason': ['dynamic-hz is not a valid configuration parameter for Redis version 7.0.0', 'cluster-announce-port is not a valid configuration parameter for Redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['dynamic-hz', 'cluster-announce-port', 'oom-score-adj-values'], 'reason': ['dynamic-hz is not a valid configuration parameter for Redis 7.0.0', 'cluster-announce-port value should be a valid port number', 'oom-score-adj-values should have 3 integer values separated by spaces']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dynamic-hz	cluster-announce-port	oom-score-adj-values
+[Ciri] Reason for dynamic-hz: dynamic-hz is not a valid configuration parameter for Redis version 7.0.0
+[Ciri] Reason for cluster-announce-port: cluster-announce-port value should be a valid port number
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values should have three integer values separated by spaces

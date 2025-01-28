@@ -1,0 +1,35 @@
+Wrong shot number:
+[9, 2, 11]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-config-file'], 'reason': ["The property 'cluster-config-file' is deprecated in Redis version 7.0.0. Consider using the newer configuration options for cluster setup."]}
+
+{'hasError': True, 'errParameter': ['daemonize', 'cluster-config-file'], 'reason': ["The property 'daemonize' is no longer supported in Redis version 7.0.0.", "The property 'cluster-config-file' is deprecated in Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['daemonize', 'cluster-node-timeout'], 'reason': ["The property 'daemonize' is no longer supported in Redis 7.0.0. Use 'supervised' instead.", "The property 'cluster-node-timeout' is deprecated in Redis 7.0.0. Consider reviewing the cluster configuration."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-config-file'], 'reason': ["The property 'cluster-config-file' is deprecated in Redis version 7.0.0. It is recommended to use 'cluster-config-file' instead."]}
+
+{'hasError': True, 'errParameter': ['cluster-node-timeout'], 'reason': ["The property 'cluster-node-timeout' is deprecated in Redis version 7.0.0. Consider updating the configuration."]}
+
+{'hasError': True, 'errParameter': ['daemonize', 'cluster-node-timeout'], 'reason': ["The property 'daemonize' is no longer supported in Redis 7.0.0. Use 'supervised' instead.", "The property 'cluster-node-timeout' is deprecated in Redis 7.0.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'cluster-node-timeout'], 'reason': ["The property 'daemonize' is not a valid configuration for Redis version 7.0.0. Use 'supervised' instead.", "The property 'cluster-node-timeout' is deprecated in Redis version 7.0.0. Consider updating to a different configuration."]}
+
+{'hasError': True, 'errParameter': ['daemonize', 'cluster-node-timeout'], 'reason': ["The property 'daemonize' is no longer supported in Redis version 7.0.0. Use 'supervised' instead.", "The property 'cluster-node-timeout' is deprecated in Redis version 7.0.0. Consider reviewing the cluster configuration."]}
+
+{'hasError': True, 'errParameter': ['cluster-config-file'], 'reason': ["The property 'cluster-config-file' is deprecated in Redis version 7.0.0 and should not be used."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: daemonize	cluster-node-timeout
+[Ciri] Reason for daemonize: The property 'daemonize' is not a valid configuration for Redis version 7.0.0. Use 'supervised' instead.
+[Ciri] Reason for cluster-node-timeout: The property 'cluster-node-timeout' is deprecated in Redis version 7.0.0. Consider reviewing the cluster configuration.

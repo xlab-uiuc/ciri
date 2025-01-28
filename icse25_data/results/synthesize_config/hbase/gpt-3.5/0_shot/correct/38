@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.kv.max'], 'reason': ["The 'usage' tag is not a valid tag in HBase configuration. Remove the 'usage' tag."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.kv.max', 'hbase.master.keytab.file'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.hstore.compaction.kv.max'.", "The 'usage' tag is not a valid tag for property 'hbase.master.keytab.file'."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.kv.max', 'hbase.master.keytab.file'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.hstore.compaction.kv.max'.", "The 'usage' tag is not a valid tag for property 'hbase.master.keytab.file'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.hstore.compaction.kv.max	hbase.master.keytab.file
+[Ciri] Reason for hbase.hstore.compaction.kv.max: The 'usage' tag is not a valid tag for property 'hbase.hstore.compaction.kv.max'.
+[Ciri] Reason for hbase.master.keytab.file: The 'usage' tag is not a valid tag for property 'hbase.master.keytab.file'.

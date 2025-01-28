@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'syncLimit'], 'reason': ["secureClientPortAddress should be a valid IPv4 or IPv6 address, but '2.2.2.2.2.2' is not a valid IP address format.", 'syncLimit is too low. It should be at least 2 for a single server setup, and at least 5 for a multi-server setup to avoid false positive failure detection.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPortAddress	syncLimit
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress should be a valid IPv4 or IPv6 address, but '2.2.2.2.2.2' is not a valid IP address format.
+[Ciri] Reason for syncLimit: syncLimit is too low. It should be at least 2 for a single server setup, and at least 5 for a multi-server setup to avoid false positive failure detection.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.http.address', 'dfs.ha.zkfc.port'], 'reason': ["The 'dfs.datanode.http.address' and 'dfs.ha.zkfc.port' both use port 3001, which could lead to a port conflict.", "It's unusual for 'dfs.namenode.max.objects' to be set to 1, as this severely limits the number of objects HDFS can manage. However, this might be intentional for testing purposes, so it's not marked as an error."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.http.address	dfs.ha.zkfc.port
+[Ciri] Reason for dfs.datanode.http.address: The 'dfs.datanode.http.address' and 'dfs.ha.zkfc.port' both use port 3001, which could lead to a port conflict.
+[Ciri] Reason for dfs.ha.zkfc.port: It's unusual for 'dfs.namenode.max.objects' to be set to 1, as this severely limits the number of objects HDFS can manage. However, this might be intentional for testing purposes, so it's not marked as an error.

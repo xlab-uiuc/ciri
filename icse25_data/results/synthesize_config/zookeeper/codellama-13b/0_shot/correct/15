@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initLimit', 'localSessionsUpgradingEnabled', 'portUnification', 'sslQuorumReloadCertFiles', 'clientPortAddress', 'clientPort', 'reconfigEnabled', 'tickTime'], 'reason': ['initLimit should be a positive integer', 'localSessionsUpgradingEnabled should be a boolean', 'portUnification should be a boolean', 'sslQuorumReloadCertFiles should be a boolean', 'clientPortAddress should be a string', 'clientPort should be a positive integer', 'reconfigEnabled should be a boolean', 'tickTime should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'clientPort'], 'reason': ['clientPortAddress should be in the format of host:port, not just port.', 'clientPort should be in the format of host:port, not just port.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress', 'clientPort'], 'reason': ['dataDir and dataLogDir must be absolute paths', 'clientPortAddress must be a valid address', 'clientPort must be a valid port']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initLimit', 'localSessionsUpgradingEnabled', 'portUnification', 'sslQuorumReloadCertFiles', 'clientPortAddress', 'clientPort', 'reconfigEnabled', 'tickTime'], 'reason': ['initLimit should be a positive integer', 'localSessionsUpgradingEnabled should be a boolean', 'portUnification should be a boolean', 'sslQuorumReloadCertFiles should be a boolean', 'clientPortAddress should be a string', 'clientPort should be a positive integer', 'reconfigEnabled should be a boolean', 'tickTime should be a positive integer']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['initLimit', 'localSessionsUpgradingEnabled', 'portUnification', 'sslQuorumReloadCertFiles', 'clientPortAddress', 'clientPort', 'reconfigEnabled', 'tickTime'], 'reason': ['initLimit must be greater than 0', 'localSessionsUpgradingEnabled must be true or false', 'portUnification must be true or false', 'sslQuorumReloadCertFiles must be true or false', 'clientPortAddress must be a valid IP address', 'clientPort must be a valid port number', 'reconfigEnabled must be true or false', 'tickTime must be greater than 0']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: initLimit	localSessionsUpgradingEnabled	portUnification	sslQuorumReloadCertFiles	clientPortAddress	clientPort	reconfigEnabled	tickTime
+[Ciri] Reason for initLimit: initLimit should be a positive integer
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled must be true or false
+[Ciri] Reason for portUnification: portUnification should be a boolean
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles should be a boolean
+[Ciri] Reason for clientPortAddress: clientPortAddress must be a valid IP address
+[Ciri] Reason for clientPort: clientPort should be a positive integer
+[Ciri] Reason for reconfigEnabled: reconfigEnabled must be true or false
+[Ciri] Reason for tickTime: tickTime must be greater than 0

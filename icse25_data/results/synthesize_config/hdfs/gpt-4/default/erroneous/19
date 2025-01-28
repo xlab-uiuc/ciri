@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 16, 14]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.volumes.replica-add.threadpool.size', 'dfs.provided.aliasmap.inmemory.rpc.bind-host'], 'reason': ["The value '0.1' for 'dfs.datanode.volumes.replica-add.threadpool.size' is invalid. It should be an integer value representing the maximum number of threads.", "The value '2.2.2.2.2.2' for 'dfs.provided.aliasmap.inmemory.rpc.bind-host' is invalid. It should be a valid IP address."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.volumes.replica-add.threadpool.size	dfs.provided.aliasmap.inmemory.rpc.bind-host
+[Ciri] Reason for dfs.datanode.volumes.replica-add.threadpool.size: The value '0.1' for 'dfs.datanode.volumes.replica-add.threadpool.size' is invalid. It should be an integer value representing the maximum number of threads.
+[Ciri] Reason for dfs.provided.aliasmap.inmemory.rpc.bind-host: The value '2.2.2.2.2.2' for 'dfs.provided.aliasmap.inmemory.rpc.bind-host' is invalid. It should be a valid IP address.

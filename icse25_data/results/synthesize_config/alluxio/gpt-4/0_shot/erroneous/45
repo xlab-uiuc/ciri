@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.default.mode', 'alluxio.master.journal.tailer.shutdown.quiet.wait.time', 'alluxio.user.network.rpc.netty.worker.threads', 'alluxio.worker.network.netty.watermark.high', 'alluxio.underfs.s3.streaming.upload.partition.size', 'alluxio.user.metrics.heartbeat.interval'], 'reason': ["The 'alluxio.underfs.s3.default.mode' should specify permissions in a format like '0777', not '999'.", "The 'alluxio.master.journal.tailer.shutdown.quiet.wait.time' format is incorrect. It should be in milliseconds without specifying 'sec', e.g., '1000'.", "The 'alluxio.user.network.rpc.netty.worker.threads' value is too low. It is recommended to have more than 1 thread for better performance.", "The 'alluxio.worker.network.netty.watermark.high' value should be in bytes without specifying 'KB'.", "The 'alluxio.underfs.s3.streaming.upload.partition.size' value should be in bytes without specifying 'MB'.", "The 'alluxio.user.metrics.heartbeat.interval' format is incorrect. It should be in milliseconds without specifying 'sec', e.g., '10000'."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: alluxio.underfs.s3.default.mode	alluxio.master.journal.tailer.shutdown.quiet.wait.time	alluxio.user.network.rpc.netty.worker.threads	alluxio.worker.network.netty.watermark.high	alluxio.underfs.s3.streaming.upload.partition.size	alluxio.user.metrics.heartbeat.interval
+[Ciri] Reason for alluxio.underfs.s3.default.mode: The 'alluxio.underfs.s3.default.mode' should specify permissions in a format like '0777', not '999'.
+[Ciri] Reason for alluxio.master.journal.tailer.shutdown.quiet.wait.time: The 'alluxio.master.journal.tailer.shutdown.quiet.wait.time' format is incorrect. It should be in milliseconds without specifying 'sec', e.g., '1000'.
+[Ciri] Reason for alluxio.user.network.rpc.netty.worker.threads: The 'alluxio.user.network.rpc.netty.worker.threads' value is too low. It is recommended to have more than 1 thread for better performance.
+[Ciri] Reason for alluxio.worker.network.netty.watermark.high: The 'alluxio.worker.network.netty.watermark.high' value should be in bytes without specifying 'KB'.
+[Ciri] Reason for alluxio.underfs.s3.streaming.upload.partition.size: The 'alluxio.underfs.s3.streaming.upload.partition.size' value should be in bytes without specifying 'MB'.
+[Ciri] Reason for alluxio.user.metrics.heartbeat.interval: The 'alluxio.user.metrics.heartbeat.interval' format is incorrect. It should be in milliseconds without specifying 'sec', e.g., '10000'.

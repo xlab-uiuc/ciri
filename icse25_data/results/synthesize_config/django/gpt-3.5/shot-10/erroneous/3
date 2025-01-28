@@ -1,0 +1,15 @@
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'SESSION_SAVE_EVERY_REQUEST', 'DEFAULT_AUTO_FIELD', 'SECURE_HSTS_PRELOAD', 'EMAIL_HOST'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should be an integer value, not a boolean', 'SESSION_SAVE_EVERY_REQUEST should be set to True for better security', "DEFAULT_AUTO_FIELD should be 'django.db.models.BigAutoField' for Django 4.0", 'SECURE_HSTS_PRELOAD should be set to True for better security', 'EMAIL_HOST should have a valid hostname or IP address']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	SESSION_SAVE_EVERY_REQUEST	DEFAULT_AUTO_FIELD	SECURE_HSTS_PRELOAD	EMAIL_HOST
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: CACHE_MIDDLEWARE_SECONDS should be an integer value, not a boolean
+[Ciri] Reason for SESSION_SAVE_EVERY_REQUEST: SESSION_SAVE_EVERY_REQUEST should be set to True for better security
+[Ciri] Reason for DEFAULT_AUTO_FIELD: DEFAULT_AUTO_FIELD should be 'django.db.models.BigAutoField' for Django 4.0
+[Ciri] Reason for SECURE_HSTS_PRELOAD: SECURE_HSTS_PRELOAD should be set to True for better security
+[Ciri] Reason for EMAIL_HOST: EMAIL_HOST should have a valid hostname or IP address

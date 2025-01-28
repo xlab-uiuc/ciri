@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 2, 11]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'tls-port'], 'reason': ["The property 'cluster-announce-ip' has the value '1.1.1.1.1.1' which is not a valid IP address.", "The property 'tls-port' has the same value as the default Redis port 6379. It should be set to a different port when enabling TLS."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-announce-ip	tls-port
+[Ciri] Reason for cluster-announce-ip: The property 'cluster-announce-ip' has the value '1.1.1.1.1.1' which is not a valid IP address.
+[Ciri] Reason for tls-port: The property 'tls-port' has the same value as the default Redis port 6379. It should be set to a different port when enabling TLS.

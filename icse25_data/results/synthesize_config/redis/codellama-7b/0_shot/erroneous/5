@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'appendfilename', 'appendfsync', 'aof-rewrite-incremental-fsync', 'oom-score-adj-values', 'enable-debug-command', 'dir'], 'reason': ['repl-backlog-size must be an integer', 'appendfilename must be a string', 'appendfsync must be a string', 'aof-rewrite-incremental-fsync must be a boolean', 'oom-score-adj-values must be an array', 'enable-debug-command must be a boolean', 'dir must be a string']}
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'appendfilename', 'appendfsync', 'aof-rewrite-incremental-fsync', 'oom-score-adj-values', 'enable-debug-command', 'dir'], 'reason': ['repl-backlog-size must be a positive integer', 'appendfilename must be a string', 'appendfsync must be a string', 'aof-rewrite-incremental-fsync must be a boolean', 'oom-score-adj-values must be an array of integers', 'enable-debug-command must be a boolean', 'dir must be a string']}
+
+{'hasError': True, 'errParameter': ['appendfilename', 'appendfsync', 'aof-rewrite-incremental-fsync', 'oom-score-adj-values', 'dir'], 'reason': ['appendfilename must be a string', 'appendfsync must be a string', 'aof-rewrite-incremental-fsync must be a boolean', 'oom-score-adj-values must be a string', 'dir must be a string']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: repl-backlog-size	appendfilename	appendfsync	aof-rewrite-incremental-fsync	oom-score-adj-values	enable-debug-command	dir
+[Ciri] Reason for repl-backlog-size: repl-backlog-size must be a positive integer
+[Ciri] Reason for appendfilename: appendfilename must be a string
+[Ciri] Reason for appendfsync: appendfsync must be a string
+[Ciri] Reason for aof-rewrite-incremental-fsync: aof-rewrite-incremental-fsync must be a boolean
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values must be an array
+[Ciri] Reason for enable-debug-command: enable-debug-command must be a boolean
+[Ciri] Reason for dir: dir must be a string

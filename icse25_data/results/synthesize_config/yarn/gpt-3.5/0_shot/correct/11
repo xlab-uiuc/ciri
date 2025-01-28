@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.webapp.address', 'yarn.sharedcache.webapp.address'], 'reason': ["The usage tag is not valid for property 'yarn.nodemanager.webapp.address'.", "The usage tag is not valid for property 'yarn.sharedcache.webapp.address'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.webapp.address', 'yarn.scheduler.configuration.fs.path'], 'reason': ["The property 'yarn.nodemanager.webapp.address' contains a placeholder '${yarn.nodemanager.hostname}' which may not be resolved correctly.", "The property 'yarn.scheduler.configuration.fs.path' should have a valid file system schema like 'file:///path/to/dir' or 'hdfs:///path/to/dir'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.webapp.address', 'yarn.scheduler.configuration.fs.path'], 'reason': ["The parameter 'yarn.nodemanager.webapp.address' contains a placeholder '${yarn.nodemanager.hostname}' which may not be resolved properly.", "The parameter 'yarn.scheduler.configuration.fs.path' should use 'hdfs' schema for storing configuration files if resource manager HA is enabled."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.webapp.address	yarn.scheduler.configuration.fs.path
+[Ciri] Reason for yarn.nodemanager.webapp.address: The property 'yarn.nodemanager.webapp.address' contains a placeholder '${yarn.nodemanager.hostname}' which may not be resolved correctly.
+[Ciri] Reason for yarn.scheduler.configuration.fs.path: The parameter 'yarn.scheduler.configuration.fs.path' should use 'hdfs' schema for storing configuration files if resource manager HA is enabled.

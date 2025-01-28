@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPort', 'clientPortAddress', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl'], 'reason': ["The 'clientPort' parameter should not include a protocol prefix (file://). It should be just a port number.", "The 'clientPortAddress' parameter format is incorrect. It should be separated into 'clientPortAddress' to specify the address and 'clientPort' for the port.", "The 'quorum.auth.enableSasl' and 'quorum.auth.serverRequireSasl' parameters are not recognized configurations in ZooKeeper 3.7.0. For SASL configuration, properties related to 'authProvider.x', 'jaasLoginRenew', 'requireClientAuthScheme', etc., should be used."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: clientPort	clientPortAddress	quorum.auth.enableSasl	quorum.auth.serverRequireSasl
+[Ciri] Reason for clientPort: The 'clientPort' parameter should not include a protocol prefix (file://). It should be just a port number.
+[Ciri] Reason for clientPortAddress: The 'clientPortAddress' parameter format is incorrect. It should be separated into 'clientPortAddress' to specify the address and 'clientPort' for the port.
+[Ciri] Reason for quorum.auth.enableSasl: The 'quorum.auth.enableSasl' and 'quorum.auth.serverRequireSasl' parameters are not recognized configurations in ZooKeeper 3.7.0. For SASL configuration, properties related to 'authProvider.x', 'jaasLoginRenew', 'requireClientAuthScheme', etc., should be used.
+[Ciri] Reason for quorum.auth.serverRequireSasl: 

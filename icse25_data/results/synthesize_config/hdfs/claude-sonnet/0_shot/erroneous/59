@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.blockreport.intervalMsec', 'dfs.namenode.max.objects'], 'reason': ['The value of dfs.blockreport.intervalMsec is set to 35000000 milliseconds, which is approximately 10 hours. This is an unusually large value for the block reporting interval. The recommended value for this parameter is typically in the range of 3600000 milliseconds (1 hour) to 21600000 milliseconds (6 hours).', 'The value of dfs.namenode.max.objects is set to 1, which is an extremely low value. This parameter specifies the maximum number of files, directories, and blocks that HDFS supports. A value of 1 would severely limit the capacity of the HDFS cluster. It is recommended to set this value to 0 (no limit) or a much higher value, depending on the expected size of the cluster.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.blockreport.intervalMsec	dfs.namenode.max.objects
+[Ciri] Reason for dfs.blockreport.intervalMsec: The value of dfs.blockreport.intervalMsec is set to 35000000 milliseconds, which is approximately 10 hours. This is an unusually large value for the block reporting interval. The recommended value for this parameter is typically in the range of 3600000 milliseconds (1 hour) to 21600000 milliseconds (6 hours).
+[Ciri] Reason for dfs.namenode.max.objects: The value of dfs.namenode.max.objects is set to 1, which is an extremely low value. This parameter specifies the maximum number of files, directories, and blocks that HDFS supports. A value of 1 would severely limit the capacity of the HDFS cluster. It is recommended to set this value to 0 (no limit) or a much higher value, depending on the expected size of the cluster.

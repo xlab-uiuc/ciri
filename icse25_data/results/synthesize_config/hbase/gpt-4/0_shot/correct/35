@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins', 'hbase.http.max.threads'], 'reason': ["The correct class name for the log cleaner plugin should be 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner' instead of 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner'.", "The 'usage' example for 'hbase.http.max.threads' suggests setting the value to 19, which contradicts the actual set value of 8. This could lead to confusion or misconfiguration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.master.logcleaner.plugins	hbase.http.max.threads
+[Ciri] Reason for hbase.master.logcleaner.plugins: The correct class name for the log cleaner plugin should be 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner' instead of 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner'.
+[Ciri] Reason for hbase.http.max.threads: The 'usage' example for 'hbase.http.max.threads' suggests setting the value to 19, which contradicts the actual set value of 8. This could lead to confusion or misconfiguration.

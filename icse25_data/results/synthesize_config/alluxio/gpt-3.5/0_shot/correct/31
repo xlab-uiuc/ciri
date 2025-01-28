@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level2.watermark.high.ratio', 'alluxio.worker.data.tmp.subdir.max', 'alluxio.underfs.oss.socket.timeout'], 'reason': ["Invalid value for property 'alluxio.worker.tieredstore.level2.watermark.high.ratio'. Ratio should be between 0.0 and 1.0.", "Invalid value for property 'alluxio.worker.data.tmp.subdir.max'. Maximum value should be less than or equal to 256.", "Invalid unit for property 'alluxio.underfs.oss.socket.timeout'. Use 'ms' for milliseconds, 'sec' for seconds, 'min' for minutes, etc."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level2.watermark.high.ratio', 'alluxio.worker.reviewer.class', 'alluxio.worker.data.tmp.subdir.max', 'alluxio.worker.master.periodical.rpc.timeout', 'alluxio.underfs.oss.socket.timeout'], 'reason': ['Invalid value. Ratio should be between 0.0 and 1.0.', 'Invalid class name. Please check the class name.', 'Invalid value. Maximum should be specified in bytes.', 'Invalid unit. Timeout should be specified in milliseconds.', 'Invalid unit. Timeout should be specified in milliseconds.']}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level2.watermark.high.ratio', 'alluxio.worker.reviewer.class', 'alluxio.worker.data.tmp.subdir.max', 'alluxio.worker.master.periodical.rpc.timeout', 'alluxio.underfs.oss.socket.timeout'], 'reason': ['Invalid property for alluxio.worker.tieredstore.level2.watermark.high.ratio', 'Invalid property for alluxio.worker.reviewer.class', 'Invalid property for alluxio.worker.data.tmp.subdir.max', 'Invalid property for alluxio.worker.master.periodical.rpc.timeout', 'Invalid property for alluxio.underfs.oss.socket.timeout']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.worker.tieredstore.level2.watermark.high.ratio	alluxio.worker.reviewer.class	alluxio.worker.data.tmp.subdir.max	alluxio.worker.master.periodical.rpc.timeout	alluxio.underfs.oss.socket.timeout
+[Ciri] Reason for alluxio.worker.tieredstore.level2.watermark.high.ratio: Invalid property for alluxio.worker.tieredstore.level2.watermark.high.ratio
+[Ciri] Reason for alluxio.worker.reviewer.class: Invalid class name. Please check the class name.
+[Ciri] Reason for alluxio.worker.data.tmp.subdir.max: Invalid value. Maximum should be specified in bytes.
+[Ciri] Reason for alluxio.worker.master.periodical.rpc.timeout: Invalid property for alluxio.worker.master.periodical.rpc.timeout
+[Ciri] Reason for alluxio.underfs.oss.socket.timeout: Invalid unit. Timeout should be specified in milliseconds.

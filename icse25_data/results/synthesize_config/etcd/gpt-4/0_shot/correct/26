@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'logger'], 'reason': ["The 'enable-v2' flag is deprecated and not supported as of etcd 3.5.0. It was used for enabling v2 API, which is removed in etcd 3.5.", "The 'logger' configuration is not valid. Starting from etcd 3.4, the valid options for logging are 'zap' for structured logging and 'capnslog'. The correct configuration should specify the logging format, such as 'log-level' for setting the logging level."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: enable-v2	logger
+[Ciri] Reason for enable-v2: The 'enable-v2' flag is deprecated and not supported as of etcd 3.5.0. It was used for enabling v2 API, which is removed in etcd 3.5.
+[Ciri] Reason for logger: The 'logger' configuration is not valid. Starting from etcd 3.4, the valid options for logging are 'zap' for structured logging and 'capnslog'. The correct configuration should specify the logging format, such as 'log-level' for setting the logging level.

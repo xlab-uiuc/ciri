@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.nodemanager.minimum.version', 'yarn.timeline-service.leveldb-state-store.path'], 'reason': ['The value for yarn.resourcemanager.nodemanager.minimum.version should be one of NONE, EqualToRM, or a Version String.', 'The value for yarn.timeline-service.leveldb-state-store.path should not contain special characters like backslash. It should be a valid file path.']}
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.leveldb-state-store.path'], 'reason': ['The value for yarn.timeline-service.leveldb-state-store.path contains an invalid character. The backslash should be escaped properly or removed.']}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.nodemanager.minimum.version', 'yarn.timeline-service.leveldb-state-store.path'], 'reason': ['The value for yarn.resourcemanager.nodemanager.minimum.version should be one of NONE, EqualToRM, or a Version String.', "The value for yarn.timeline-service.leveldb-state-store.path should not contain special characters like '\\'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.nodemanager.minimum.version	yarn.timeline-service.leveldb-state-store.path
+[Ciri] Reason for yarn.resourcemanager.nodemanager.minimum.version: The value for yarn.resourcemanager.nodemanager.minimum.version should be one of NONE, EqualToRM, or a Version String.
+[Ciri] Reason for yarn.timeline-service.leveldb-state-store.path: The value for yarn.timeline-service.leveldb-state-store.path should not contain special characters like backslash. It should be a valid file path.

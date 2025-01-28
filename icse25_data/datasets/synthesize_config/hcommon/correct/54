@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.tmp.dir</name>
+  <value>/tmp/hadoop-${user.name}</value>
+  <description>A base for other temporary directories.</description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping</name>
+  <value>org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback</value>
+  <description>
+    Class for user to group mapping (get groups for a given user) for ACL.
+    The default implementation,
+    org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback,
+    will determine if the Java Native Interface (JNI) is available. If JNI is
+    available the implementation will use the API within hadoop to resolve a
+    list of groups for a user. If JNI is not available then the shell
+    implementation, ShellBasedUnixGroupsMapping, is used.  This implementation
+    shells out to the Linux/Unix environment with the
+    <code>bash -c groups</code> command to resolve a list of groups for a user.
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.har.impl</name>
+  <value>org.apache.hadoop.fs.HarFs</value>
+  <description>The AbstractFileSystem for har: uris.</description>
+</property>
+
+<property>
+  <name>fs.ftp.transfer.mode</name>
+  <value>BLOCK_TRANSFER_MODE</value>
+  <description>
+    Set FTP's transfer mode based on configuration. Valid values are
+    STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE and COMPRESSED_TRANSFER_MODE.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.size</name>
+  <value>64M</value>
+  <description>How big (in bytes) to split upload or copy operations up into.
+    A suffix from the set {K,M,G,T,P} may be used to scale the numeric value.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.csv.record.delimiter</name>
+  <value>\n</value>
+  <description>In S3 Select queries over CSV files: the record delimiter.
+    \t is remapped to the TAB character, \r to CR \n to newline. \\ to \
+    and \" to "
+  </description>
+</property>
+
+<property>
+  <name>fs.azure.sas.expiry.period</name>
+  <value>180d</value>
+  <description>
+    The default value to be used for expiration period for SAS keys generated.
+    Can use the following suffix (case insensitive):
+    ms(millis), s(sec), m(min), h(hour), d(day)
+    to specify the time (such as 2s, 2m, 1h, etc.).
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.kms.client.encrypted.key.cache.expiry</name>
+  <value>43200000</value>
+  <description>
+    Cache expiry time for a Key, after which the cache Queue for this
+    key will be dropped. Default = 12hrs
+  </description>
+</property>
+
+</configuration>

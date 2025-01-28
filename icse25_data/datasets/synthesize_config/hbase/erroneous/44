@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.cluster.distributed</name>
+  <value>true</value>
+    <description>The mode the cluster will be in. Possible values are
+      false for standalone mode and true for distributed mode.  If
+      false, startup will run all HBase and ZooKeeper daemons together
+      in the one JVM.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.global.memstore.size</name>
+  <value>0.5</value>
+    <description>Maximum size of all memstores in a region server before new
+      updates are blocked and flushes are forced. Defaults to 40% of heap (0.4).
+      Updates are blocked and flushes are forced until size of all memstores
+      in a region server hits hbase.regionserver.global.memstore.size.lower.limit.
+      The default value in this configuration has been intentionally left empty in order to
+      honor the old hbase.regionserver.global.memstore.upperLimit property if present.
+    </description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.maxClientCnxns</name>
+  <value>300</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    Limit on number of concurrent connections (at the socket level) that a
+    single client, identified by IP address, may make to a single member of
+    the ZooKeeper ensemble. Set high to avoid zk connection issues running
+    standalone and pseudo-distributed.</description>
+</property>
+
+<property>
+  <name>hbase.client.max.total.tasks</name>
+  <value>100</value>
+    <description>The maximum number of concurrent mutation tasks a single HTable instance will
+    send to the cluster.</description>
+</property>
+
+<property>
+  <name>hbase.client.max.perregion.tasks</name>
+  <value>150</value>
+    <description>The maximum number of concurrent mutation tasks the client will
+    maintain to a single Region. That is, if there is already
+    hbase.client.max.perregion.tasks writes in progress for this region, new puts
+    won't be sent to this region until some writes finishes.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.memstore.flush.size</name>
+  <value>67108864</value>
+    <description>
+    Memstore will be flushed to disk if size of the memstore
+    exceeds this number of bytes.  Value is checked by a thread that runs
+    every hbase.server.thread.wakefrequency.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.max.size</name>
+  <value>18446744073709551614</value>
+    <description>A StoreFile (or a selection of StoreFiles, when using ExploringCompactionPolicy)
+      larger than this size will be excluded from compaction. The effect of
+      raising hbase.hstore.compaction.max.size is fewer, larger StoreFiles that do not get
+      compacted often. If you feel that compaction is happening too often without much benefit, you
+      can try raising this value. Default: the value of LONG.MAX_VALUE, expressed in bytes.</description>
+</property>
+
+<property>
+  <name>hbase.http.staticuser.user</name>
+  <value>xdsuper</value>
+    <description>
+      The user name to filter as, on static web filters
+      while rendering content. An example use is the HDFS
+      web UI (user to be used for browsing files).
+    </description>
+</property>
+
+</configuration>

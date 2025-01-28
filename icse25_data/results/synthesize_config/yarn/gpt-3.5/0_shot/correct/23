@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep', 'yarn.is.minicluster', 'yarn.resourcemanager.webapp.xfs-filter.xframe-options'], 'reason': ["The property 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep' should have a value less than or equal to 100.", "The value for 'yarn.is.minicluster' should be either 'true' or 'false'.", "The value for 'yarn.resourcemanager.webapp.xfs-filter.xframe-options' should be 'DENY', 'SAMEORIGIN', or 'ALLOW-FROM'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep', 'yarn.resourcemanager.webapp.xfs-filter.xframe-options'], 'reason': ["The property 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep' should have a value less than or equal to 100.", "The value 'SAMEORIGIN' for 'yarn.resourcemanager.webapp.xfs-filter.xframe-options' is not a valid xframe option."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep', 'yarn.resourcemanager.webapp.xfs-filter.xframe-options'], 'reason': ["The property 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep' should have a value less than or equal to 100.", "The value 'SAMEORIGIN' for 'yarn.resourcemanager.webapp.xfs-filter.xframe-options' is not a valid xframe option. Valid options are DENY, SAMEORIGIN, ALLOW-FROM uri."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep	yarn.resourcemanager.webapp.xfs-filter.xframe-options
+[Ciri] Reason for yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep: The property 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep' should have a value less than or equal to 100.
+[Ciri] Reason for yarn.resourcemanager.webapp.xfs-filter.xframe-options: The value 'SAMEORIGIN' for 'yarn.resourcemanager.webapp.xfs-filter.xframe-options' is not a valid xframe option. Valid options are DENY, SAMEORIGIN, ALLOW-FROM uri.

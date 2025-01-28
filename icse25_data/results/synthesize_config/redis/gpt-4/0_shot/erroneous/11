@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['aclfile', 'unixsocketperm'], 'reason': ["The 'aclfile' path should not include random data from '/dev/urandom'. It should point to a valid ACL file path.", "The 'unixsocketperm' should be a valid octal representation of file permissions. '1400' is not a valid permission mode. It should likely be '700' or similar."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: aclfile	unixsocketperm
+[Ciri] Reason for aclfile: The 'aclfile' path should not include random data from '/dev/urandom'. It should point to a valid ACL file path.
+[Ciri] Reason for unixsocketperm: The 'unixsocketperm' should be a valid octal representation of file permissions. '1400' is not a valid permission mode. It should likely be '700' or similar.

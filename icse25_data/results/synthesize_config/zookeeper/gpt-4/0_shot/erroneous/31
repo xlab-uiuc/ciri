@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.serverRequireSasl', 'portUnification', 'localSessionsUpgradingEnabled', 'quorum.cnxn.threads.size'], 'reason': ["The 'secureClientPort' should not be set to -1 if you intend to use secure client connections. It should be set to a valid port number.", "The 'quorum.auth.serverRequireSasl' configuration is not recognized in ZooKeeper version 3.7.0. This might be a configuration applicable to a different context or version.", "The 'portUnification' configuration is not recognized in ZooKeeper version 3.7.0. This might be a configuration applicable to a different context or version.", "The 'localSessionsUpgradingEnabled' configuration is not recognized in ZooKeeper version 3.7.0. This might be a configuration applicable to a different context or version.", "The 'quorum.cnxn.threads.size' configuration is not recognized in ZooKeeper version 3.7.0. It seems to be incorrectly named or not applicable for this version."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: secureClientPort	quorum.auth.serverRequireSasl	portUnification	localSessionsUpgradingEnabled	quorum.cnxn.threads.size
+[Ciri] Reason for secureClientPort: The 'secureClientPort' should not be set to -1 if you intend to use secure client connections. It should be set to a valid port number.
+[Ciri] Reason for quorum.auth.serverRequireSasl: The 'quorum.auth.serverRequireSasl' configuration is not recognized in ZooKeeper version 3.7.0. This might be a configuration applicable to a different context or version.
+[Ciri] Reason for portUnification: The 'portUnification' configuration is not recognized in ZooKeeper version 3.7.0. This might be a configuration applicable to a different context or version.
+[Ciri] Reason for localSessionsUpgradingEnabled: The 'localSessionsUpgradingEnabled' configuration is not recognized in ZooKeeper version 3.7.0. This might be a configuration applicable to a different context or version.
+[Ciri] Reason for quorum.cnxn.threads.size: The 'quorum.cnxn.threads.size' configuration is not recognized in ZooKeeper version 3.7.0. It seems to be incorrectly named or not applicable for this version.

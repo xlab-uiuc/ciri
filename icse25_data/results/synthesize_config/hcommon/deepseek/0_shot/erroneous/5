@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'ipc.[port_number].identity-provider.impl', 'ipc.[port_number].weighted-cost.response'], 'reason': ["The value for 'hadoop.security.groups.shell.command.timeout' is not valid. It should be expressed in seconds (e.g. 10s, 1m, etc.).", "The value for 'ipc.[port_number].identity-provider.impl' is not valid. It should be a valid class name.", "The value for 'ipc.[port_number].weighted-cost.response' is not valid. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'ipc.[port_number].identity-provider.impl', 'ipc.[port_number].weighted-cost.response'], 'reason': ["The value of 'hadoop.security.groups.shell.command.timeout' is not valid. It should be expressed in seconds (e.g. 10s, 1m, etc.).", "The value of 'ipc.[port_number].identity-provider.impl' is not valid. It should be a valid class name.", "The value of 'ipc.[port_number].weighted-cost.response' is not valid. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'ipc.[port_number].identity-provider.impl', 'ipc.[port_number].weighted-cost.response'], 'reason': ["Invalid value for 'hadoop.security.groups.shell.command.timeout'. Expected a time duration in seconds (e.g. 10s, 1m, etc.), but found '0mm'.", "Invalid value for 'ipc.[port_number].identity-provider.impl'. Expected a valid class name, but found 'org.apache.hadoop.ipc.UserIdentityProvider'.", "Invalid value for 'ipc.[port_number].weighted-cost.response'. Expected a number, but found '1'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout	ipc.[port_number].identity-provider.impl	ipc.[port_number].weighted-cost.response
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: The value of 'hadoop.security.groups.shell.command.timeout' is not valid. It should be expressed in seconds (e.g. 10s, 1m, etc.).
+[Ciri] Reason for ipc.[port_number].identity-provider.impl: The value of 'ipc.[port_number].identity-provider.impl' is not valid. It should be a valid class name.
+[Ciri] Reason for ipc.[port_number].weighted-cost.response: The value of 'ipc.[port_number].weighted-cost.response' is not valid. It should be a positive integer.

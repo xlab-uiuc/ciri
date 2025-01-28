@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.webapp.https.address', 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy', 'yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file'], 'reason': ["The value for yarn.resourcemanager.webapp.https.address should be a hostname or IP address, not just '127.0.0.1'.", "The value for yarn.nodemanager.linux-container-executor.cgroups.hierarchy should be a valid path, '/valid/file2' is not a valid path.", "The value for yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file should be a valid HDFS path, '/valid/file1' is not a valid HDFS path."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.resourcemanager.webapp.https.address	yarn.nodemanager.linux-container-executor.cgroups.hierarchy	yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file
+[Ciri] Reason for yarn.resourcemanager.webapp.https.address: The value for yarn.resourcemanager.webapp.https.address should be a hostname or IP address, not just '127.0.0.1'.
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.hierarchy: The value for yarn.nodemanager.linux-container-executor.cgroups.hierarchy should be a valid path, '/valid/file2' is not a valid path.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file: The value for yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file should be a valid HDFS path, '/valid/file1' is not a valid HDFS path.

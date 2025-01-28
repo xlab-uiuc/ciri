@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.s3a.retry.throttle.limit</name>
+  <value>20</value>
+  <description>
+    Number of times to retry any throttled request.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.connection.request.timeout</name>
+  <value>0</value>
+  <description>
+    Time out on HTTP requests to the AWS service; 0 means no timeout.
+    Measured in seconds; the usual time suffixes are all supported
+
+    Important: this is the maximum duration of any AWS service call,
+    including upload and copy operations. If non-zero, it must be larger
+    than the time to upload multi-megabyte blocks to S3 from the client,
+    and to rename many-GB files. Use with care.
+
+    Values that are larger than Integer.MAX_VALUE milliseconds are
+    converged to Integer.MAX_VALUE milliseconds
+  </description>
+</property>
+
+<property>
+  <name>fs.azure.saskey.usecontainersaskeyforallaccess</name>
+  <value>false</value>
+  <description>
+    Use container saskey for access to all blobs within the container.
+    Blob-specific saskeys are not used when this setting is enabled.
+    This setting provides better performance compared to blob-specific saskeys.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].decay-scheduler.decay-factor</name>
+  <value>1.0</value>
+  <description>When decaying the operation counts of users, the multiplicative
+    decay factor to apply. Higher values will weight older operations more
+    strongly, essentially giving the scheduler a longer memory, and penalizing
+    heavy clients for a longer period of time.
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.signature.secret.file</name>
+  <value>${user.home}/hadoop-http-auth-signature-secret</value>
+  <description>
+    The signature secret for signing the authentication tokens.
+    The same secret should be used for RM/NM/NN/DN configurations.
+  </description>
+</property>
+
+<property>
+  <name>ha.zookeeper.acl</name>
+  <value>world:anyone:rwcda</value>
+  <description>
+    A comma-separated list of ZooKeeper ACLs to apply to the znodes
+    used by automatic failover. These ACLs are specified in the same
+    format as used by the ZooKeeper CLI.
+
+    If the ACL itself contains secrets, you may instead specify a
+    path to a file, prefixed with the '@' symbol, and the value of
+    this configuration will be loaded from within.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.enabled</name>
+  <value>true</value>
+  <description>
+    Deprecated. Use dfs.http.policy and yarn.http.policy instead.
+  </description>
+</property>
+
+<property>
+  <name>ha.health-monitor.connect-retry-interval.ms</name>
+  <value>1000</value>
+  <description>
+    How often to retry connecting to the service.
+  </description>
+</property>
+
+</configuration>

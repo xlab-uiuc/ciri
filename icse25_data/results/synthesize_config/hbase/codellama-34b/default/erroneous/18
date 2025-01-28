@@ -1,0 +1,18 @@
+Wrong shot number:
+[7, 11, 5]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit', 'hbase.server.keyvalue.maxsize', 'hbase.column.max.version', 'hbase.mob.compaction.threads.max'], 'reason': ["The property 'hbase.regionserver.regionSplitLimit' has the value '-100' which is less than 0.", "The property 'hbase.server.keyvalue.maxsize' has the value '5242880' which is less than 0.", "The property 'hbase.column.max.version' has the value '0' which is less than 1.", "The property 'hbase.mob.compaction.threads.max' has the value '1' which is less than 2."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit'], 'reason': ["The value of the property 'hbase.regionserver.regionSplitLimit' should be positive."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit'], 'reason': ["The value of the property 'hbase.regionserver.regionSplitLimit' should be greater than 0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.regionSplitLimit
+[Ciri] Reason for hbase.regionserver.regionSplitLimit: The value of the property 'hbase.regionserver.regionSplitLimit' should be greater than 0.

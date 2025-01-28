@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'autopurge.purgeInterval', 'secureClientPortAddress'], 'reason': ['clientPortAddress should be in the format of host:port, not 1.1.1.1.1.1', 'autopurge.purgeInterval must be a positive integer greater than or equal to 1, so 1 is too small', 'secureClientPortAddress port 3000 is in the ephemeral port range (49152–65535) which is not recommended']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: clientPortAddress	autopurge.purgeInterval	secureClientPortAddress
+[Ciri] Reason for clientPortAddress: clientPortAddress should be in the format of host:port, not 1.1.1.1.1.1
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval must be a positive integer greater than or equal to 1, so 1 is too small
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress port 3000 is in the ephemeral port range (49152–65535) which is not recommended

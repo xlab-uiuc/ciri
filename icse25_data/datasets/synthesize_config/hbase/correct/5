@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.info.port</name>
+  <value>3001</value>
+    <description>The port for the HBase Master web UI.
+    Set to -1 if you do not want a UI instance run.</description>
+</property>
+
+<property>
+  <name>hbase.client.max.total.tasks</name>
+  <value>50</value>
+    <description>The maximum number of concurrent mutation tasks a single HTable instance will
+    send to the cluster.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.percolumnfamilyflush.size.lower.bound.min</name>
+  <value>16777216</value>
+    <description>
+    If FlushLargeStoresPolicy is used and there are multiple column families,
+    then every time that we hit the total memstore limit, we find out all the
+    column families whose memstores exceed a "lower bound" and only flush them
+    while retaining the others in memory. The "lower bound" will be
+    "hbase.hregion.memstore.flush.size / column_family_number" by default
+    unless value of this property is larger than that. If none of the families
+    have their memstore size more than lower bound, all the memstores will be
+    flushed (just as usual).
+    </description>
+</property>
+
+<property>
+  <name>hbase.hstore.blockingWaitTime</name>
+  <value>45000</value>
+    <description> The time for which a region will block updates after reaching the StoreFile limit
+    defined by hbase.hstore.blockingStoreFiles. After this time has elapsed, the region will stop
+    blocking updates even if a compaction has not been completed.</description>
+</property>
+
+<property>
+  <name>hbase.rpc.timeout</name>
+  <value>30000</value>
+    <description>This is for the RPC layer to define how long (millisecond) HBase client applications
+        take for a remote call to time out. It uses pings to check connections
+        but will eventually throw a TimeoutException.</description>
+</property>
+
+<property>
+  <name>hbase.auth.key.update.interval</name>
+  <value>172800000</value>
+    <description>The update interval for master key for authentication tokens
+    in servers in milliseconds.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.rest.threads.min</name>
+  <value>2</value>
+    <description>The minimum number of threads of the REST server thread pool.
+        The thread pool always has at least these number of threads so
+        the REST server is ready to serve incoming requests.</description>
+</property>
+
+<property>
+  <name>hbase.lease.recovery.dfs.timeout</name>
+  <value>32000</value>
+    <description>How long between dfs recover lease invocations. Should be larger than the sum of
+        the time it takes for the namenode to issue a block recovery command as part of
+        datanode; dfs.heartbeat.interval and the time it takes for the primary
+        datanode, performing block recovery to timeout on a dead datanode; usually
+        dfs.client.socket-timeout. See the end of HBASE-8389 for more.</description>
+</property>
+
+</configuration>

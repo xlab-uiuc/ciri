@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initLimit', 'autopurge.snapRetainCount'], 'reason': ['initLimit is set too low. It should be at least 5 for production use to allow enough time for leader election.', 'autopurge.snapRetainCount is set too low. It is recommended to keep at least 3 snapshots for data recovery in case of unexpected failures.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: initLimit	autopurge.snapRetainCount
+[Ciri] Reason for initLimit: initLimit is set too low. It should be at least 5 for production use to allow enough time for leader election.
+[Ciri] Reason for autopurge.snapRetainCount: autopurge.snapRetainCount is set too low. It is recommended to keep at least 3 snapshots for data recovery in case of unexpected failures.

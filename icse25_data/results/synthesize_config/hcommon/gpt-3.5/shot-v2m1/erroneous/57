@@ -1,0 +1,18 @@
+Wrong shot number:
+[2]
+
+Correct shot number:
+[3, 14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.trash.interval', 'fs.trash.checkpoint.interval', 'fs.s3a.multipart.purge.age', 'fs.s3a.change.detection.version.required', 'ipc.[port_number].scheduler.impl'], 'reason': ["The property 'fs.trash.interval' should have a value greater than 0 to enable the trash feature.", "The property 'fs.trash.checkpoint.interval' should have a value smaller or equal to 'fs.trash.interval'.", "The property 'fs.s3a.multipart.purge.age' should have a value greater than 0.", "The property 'fs.s3a.change.detection.version.required' should have a boolean value (true/false).", "The property 'ipc.[port_number].scheduler.impl' should specify a valid class implementation for the scheduler."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: fs.trash.interval	fs.trash.checkpoint.interval	fs.s3a.multipart.purge.age	fs.s3a.change.detection.version.required	ipc.[port_number].scheduler.impl
+[Ciri] Reason for fs.trash.interval: The property 'fs.trash.interval' should have a value greater than 0 to enable the trash feature.
+[Ciri] Reason for fs.trash.checkpoint.interval: The property 'fs.trash.checkpoint.interval' should have a value smaller or equal to 'fs.trash.interval'.
+[Ciri] Reason for fs.s3a.multipart.purge.age: The property 'fs.s3a.multipart.purge.age' should have a value greater than 0.
+[Ciri] Reason for fs.s3a.change.detection.version.required: The property 'fs.s3a.change.detection.version.required' should have a boolean value (true/false).
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The property 'ipc.[port_number].scheduler.impl' should specify a valid class implementation for the scheduler.

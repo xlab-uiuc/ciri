@@ -1,0 +1,20 @@
+Wrong shot number:
+[7, 1, 8]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].weighted-cost.lockfree'], 'reason': ["The property 'fs.ftp.host' has the value '999.-1.0.0' which is not a valid host format.", "The property 'ipc.[port_number].decay-scheduler.thresholds' has an invalid value format.", "The property 'ipc.[port_number].weighted-cost.lockfree' has the value '1' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'ipc.[port_number].decay-scheduler.thresholds'], 'reason': ["The property 'fs.ftp.host' has the value '999.-1.0.0' which is not a valid host format.", "The property 'ipc.[port_number].decay-scheduler.thresholds' has an invalid value format. It should be a comma-separated list of integer percentages."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].weighted-cost.lockfree'], 'reason': ["The property 'fs.ftp.host' has the value '999.-1.0.0' which is not a valid host format.", "The property 'ipc.[port_number].decay-scheduler.thresholds' should be a comma-separated list of integers representing client load thresholds.", "The property 'ipc.[port_number].weighted-cost.lockfree' should have a value that is a valid integer."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.host	ipc.[port_number].decay-scheduler.thresholds	ipc.[port_number].weighted-cost.lockfree
+[Ciri] Reason for fs.ftp.host: The property 'fs.ftp.host' has the value '999.-1.0.0' which is not a valid host format.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: The property 'ipc.[port_number].decay-scheduler.thresholds' should be a comma-separated list of integers representing client load thresholds.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The property 'ipc.[port_number].weighted-cost.lockfree' should have a value that is a valid integer.

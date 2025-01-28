@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-peer-urls'], 'reason': ['listen-peer-urls should be a comma-separated list of URLs with the same port and scheme.']}
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'max-wals', 'client-cert-auth', 'initial-cluster-state', 'enable-v2', 'strict-reconfig-check', 'discovery-fallback'], 'reason': ["listen-peer-urls: must be set to 'https://localhost:2380' for production use", "max-wals: must be set to '5' for production use", "client-cert-auth: must be set to 'true' for production use", "initial-cluster-state: must be set to 'existing' for production use", "enable-v2: must be set to 'false' for production use", "strict-reconfig-check: must be set to 'false' for production use", "discovery-fallback: must be set to 'proxy' for production use"]}
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'listen-client-urls', 'initial-cluster-state', 'discovery-fallback'], 'reason': ['listen-peer-urls: http://localhost:2380 is not a valid peer url', 'listen-client-urls: http://localhost:2379 is not a valid client url', "initial-cluster-state: 'new' is not a valid cluster state", "discovery-fallback: 'proxy' is not a valid discovery fallback"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'max-wals', 'client-cert-auth', 'initial-cluster-state', 'enable-v2', 'strict-reconfig-check', 'discovery-fallback'], 'reason': ['listen-peer-urls: should be a comma-separated list of URLs', 'max-wals: should be an integer', 'client-cert-auth: should be a boolean', "initial-cluster-state: should be either 'new' or 'existing'", 'enable-v2: should be a boolean', 'strict-reconfig-check: should be a boolean', "discovery-fallback: should be either 'proxy' or 'none'"]}
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'max-wals', 'client-cert-auth', 'initial-cluster-state', 'enable-v2', 'strict-reconfig-check', 'discovery-fallback'], 'reason': ["listen-peer-urls should be set to 'https://localhost:2380' for production environments", "max-wals should be set to '5' for production environments", "client-cert-auth should be set to 'true' for production environments", "initial-cluster-state should be set to 'existing' for production environments", "enable-v2 should be set to 'false' for production environments", "strict-reconfig-check should be set to 'false' for production environments", "discovery-fallback should be set to 'proxy' for production environments"]}
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'max-wals', 'client-cert-auth', 'initial-cluster-state', 'enable-v2', 'strict-reconfig-check', 'discovery-fallback'], 'reason': ['listen-peer-urls: invalid url format', 'max-wals: invalid value', 'client-cert-auth: invalid value', 'initial-cluster-state: invalid value', 'enable-v2: invalid value', 'strict-reconfig-check: invalid value', 'discovery-fallback: invalid value']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: listen-peer-urls	max-wals	client-cert-auth	initial-cluster-state	enable-v2	strict-reconfig-check	discovery-fallback
+[Ciri] Reason for listen-peer-urls: listen-peer-urls: invalid url format
+[Ciri] Reason for max-wals: max-wals: invalid value
+[Ciri] Reason for client-cert-auth: client-cert-auth: should be a boolean
+[Ciri] Reason for initial-cluster-state: initial-cluster-state: invalid value
+[Ciri] Reason for enable-v2: enable-v2: should be a boolean
+[Ciri] Reason for strict-reconfig-check: strict-reconfig-check: invalid value
+[Ciri] Reason for discovery-fallback: discovery-fallback: invalid value

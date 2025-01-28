@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'stream-node-max-bytes', 'repl-diskless-sync-max-replicas', 'appenddirname', 'timeout', 'cluster-node-timeout'], 'reason': ['bind-source-addr should be a valid IP address, not -1.0.0.0', 'stream-node-max-bytes should be between 0 and 4294967295', 'repl-diskless-sync-max-replicas is not a valid configuration parameter in Redis 7.0.0', 'appenddirname is not a valid configuration parameter, it should be appenddir', 'timeout value of 0 is invalid, it should be a positive integer', 'cluster-node-timeout should be a positive integer between 0 and 60000']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: bind-source-addr	stream-node-max-bytes	repl-diskless-sync-max-replicas	appenddirname	timeout	cluster-node-timeout
+[Ciri] Reason for bind-source-addr: bind-source-addr should be a valid IP address, not -1.0.0.0
+[Ciri] Reason for stream-node-max-bytes: stream-node-max-bytes should be between 0 and 4294967295
+[Ciri] Reason for repl-diskless-sync-max-replicas: repl-diskless-sync-max-replicas is not a valid configuration parameter in Redis 7.0.0
+[Ciri] Reason for appenddirname: appenddirname is not a valid configuration parameter, it should be appenddir
+[Ciri] Reason for timeout: timeout value of 0 is invalid, it should be a positive integer
+[Ciri] Reason for cluster-node-timeout: cluster-node-timeout should be a positive integer between 0 and 60000

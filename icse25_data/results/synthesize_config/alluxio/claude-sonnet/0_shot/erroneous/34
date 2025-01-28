@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type=CIRI', 'alluxio.master.embedded.journal.addresses=127.0.0.1', 'alluxio.underfs.gcs.default.mode=1400'], 'reason': ['The valid values for alluxio.master.journal.type are EMBEDDED, UFS, and ROCKS. CIRI is not a valid value.', 'The property alluxio.master.embedded.journal.addresses is only valid when alluxio.master.journal.type is set to EMBEDDED. Since CIRI is not a valid value for alluxio.master.journal.type, this property is invalid.', 'The property alluxio.underfs.gcs.default.mode should be a valid POSIX file mode represented as an octal value. 1400 is not a valid octal value.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.journal.type=CIRI	alluxio.master.embedded.journal.addresses=127.0.0.1	alluxio.underfs.gcs.default.mode=1400
+[Ciri] Reason for alluxio.master.journal.type=CIRI: The valid values for alluxio.master.journal.type are EMBEDDED, UFS, and ROCKS. CIRI is not a valid value.
+[Ciri] Reason for alluxio.master.embedded.journal.addresses=127.0.0.1: The property alluxio.master.embedded.journal.addresses is only valid when alluxio.master.journal.type is set to EMBEDDED. Since CIRI is not a valid value for alluxio.master.journal.type, this property is invalid.
+[Ciri] Reason for alluxio.underfs.gcs.default.mode=1400: The property alluxio.underfs.gcs.default.mode should be a valid POSIX file mode represented as an octal value. 1400 is not a valid octal value.

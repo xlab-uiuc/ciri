@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.address', 'dfs.ha.tail-edits.period.backoff-max'], 'reason': ["The property 'dfs.datanode.address' is deprecated in HDFS 3.3.0 and should not be used. Instead, use 'dfs.datanode.address.hostname' and 'dfs.datanode.address.ip' to specify the hostname and IP address separately.", "The property 'dfs.ha.tail-edits.period.backoff-max' is not a valid HDFS configuration property in version 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.address	dfs.ha.tail-edits.period.backoff-max
+[Ciri] Reason for dfs.datanode.address: The property 'dfs.datanode.address' is deprecated in HDFS 3.3.0 and should not be used. Instead, use 'dfs.datanode.address.hostname' and 'dfs.datanode.address.ip' to specify the hostname and IP address separately.
+[Ciri] Reason for dfs.ha.tail-edits.period.backoff-max: The property 'dfs.ha.tail-edits.period.backoff-max' is not a valid HDFS configuration property in version 3.3.0.

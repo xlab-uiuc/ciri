@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initLimit', 'localSessionsUpgradingEnabled', 'portUnification', 'sslQuorumReloadCertFiles', 'clientPortAddress'], 'reason': ['initLimit should be specified as a numeric value, e.g., initLimit=5', 'localSessionsUpgradingEnabled should be a boolean value, e.g., localSessionsUpgradingEnabled=true', 'portUnification should be a boolean value, e.g., portUnification=false', 'sslQuorumReloadCertFiles should be a boolean value, e.g., sslQuorumReloadCertFiles=true', 'clientPortAddress should be in the format host:port, e.g., clientPortAddress=127.0.0.1:3001']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress'], 'reason': ["The property 'clientPortAddress' is not a valid property for Zookeeper version 3.7.0. It should be 'clientPort' instead."]}
+
+{'hasError': True, 'errParameter': ['clientPortAddress'], 'reason': ['clientPortAddress should be in the format host:port, for example, 0.0.0.0:3001']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: clientPortAddress
+[Ciri] Reason for clientPortAddress: The property 'clientPortAddress' is not a valid property for Zookeeper version 3.7.0. It should be 'clientPort' instead.

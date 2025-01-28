@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.http.address', 'dfs.namenode.checkpoint.dir', 'dfs.datanode.restart.replica.expiration', 'dfs.namenode.storage.dir.perm'], 'reason': ['The default port for dfs.datanode.http.address is 9864 from Hadoop 3.0.0 onwards, not 3000.', 'The dfs.namenode.checkpoint.dir parameter is deprecated. Use dfs.namenode.checkpoint.dir.qjournal instead.', 'The dfs.datanode.restart.replica.expiration parameter is deprecated and has no effect in Hadoop 3.x. The expiration is no longer used.', 'The dfs.namenode.storage.dir.perm parameter is deprecated. Use dfs.namenode.storage.dir.permission instead.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dfs.datanode.http.address	dfs.namenode.checkpoint.dir	dfs.datanode.restart.replica.expiration	dfs.namenode.storage.dir.perm
+[Ciri] Reason for dfs.datanode.http.address: The default port for dfs.datanode.http.address is 9864 from Hadoop 3.0.0 onwards, not 3000.
+[Ciri] Reason for dfs.namenode.checkpoint.dir: The dfs.namenode.checkpoint.dir parameter is deprecated. Use dfs.namenode.checkpoint.dir.qjournal instead.
+[Ciri] Reason for dfs.datanode.restart.replica.expiration: The dfs.datanode.restart.replica.expiration parameter is deprecated and has no effect in Hadoop 3.x. The expiration is no longer used.
+[Ciri] Reason for dfs.namenode.storage.dir.perm: The dfs.namenode.storage.dir.perm parameter is deprecated. Use dfs.namenode.storage.dir.permission instead.

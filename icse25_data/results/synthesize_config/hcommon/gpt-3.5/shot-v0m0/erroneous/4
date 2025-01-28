@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.crypto.buffer.size', 'hadoop.tags.system', 'ipc.client.bind.wildcard.addr'], 'reason': ["Invalid value 'ciri/ciri' for property 'hadoop.security.crypto.buffer.size'. Expected a valid buffer size value.", "Property 'hadoop.tags.system' has an incorrect usage tag. Remove the usage tag or correct its format.", "Property 'ipc.client.bind.wildcard.addr' should have a boolean value (true/false) instead of 'true'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.crypto.buffer.size	hadoop.tags.system	ipc.client.bind.wildcard.addr
+[Ciri] Reason for hadoop.security.crypto.buffer.size: Invalid value 'ciri/ciri' for property 'hadoop.security.crypto.buffer.size'. Expected a valid buffer size value.
+[Ciri] Reason for hadoop.tags.system: Property 'hadoop.tags.system' has an incorrect usage tag. Remove the usage tag or correct its format.
+[Ciri] Reason for ipc.client.bind.wildcard.addr: Property 'ipc.client.bind.wildcard.addr' should have a boolean value (true/false) instead of 'true'.

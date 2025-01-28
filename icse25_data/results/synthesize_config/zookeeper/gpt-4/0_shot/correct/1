@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval'], 'reason': ['minSessionTimeout=-1 is invalid. It should be a positive integer representing the minimum session timeout in milliseconds.', 'autopurge.purgeInterval=0 is invalid. It should be a positive integer representing the interval in hours between ZooKeeper log and snapshot purges.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: minSessionTimeout	autopurge.purgeInterval
+[Ciri] Reason for minSessionTimeout: minSessionTimeout=-1 is invalid. It should be a positive integer representing the minimum session timeout in milliseconds.
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval=0 is invalid. It should be a positive integer representing the interval in hours between ZooKeeper log and snapshot purges.

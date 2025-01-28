@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.dispatcher.print-events-info.threshold</name>
+  <value>2500</value>
+    <description>
+      The threshold used to trigger the logging of event types
+      and counts in RM's main event dispatcher. Default length is 5000,
+      which means RM will print events info when the queue size cumulatively
+      reaches 5000 every time. Such info can be used to reveal what kind of events
+      that RM is stuck at processing mostly, it can help to
+      narrow down certain performance issues.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.local-cache.max-files-per-directory</name>
+  <value>4096</value>
+    <description>It limits the maximum number of files which will be localized
+      in a single local directory. If the limit is reached then sub-directories
+      will be created and new files will be localized in them. If it is set to
+      a value less than or equal to 36 [which are sub-directories (0-9 and then
+      a-z)] then NodeManager will fail to start. For example; [for public
+      cache] if this is configured with a value of 40 ( 4 files +
+      36 sub-directories) and the local-dir is "/tmp/local-dir1" then it will
+      allow 4 files to be created directly inside "/tmp/local-dir1/filecache".
+      For files that are localized further it will create a sub-directory "0"
+      inside "/tmp/local-dir1/filecache" and will localize files inside it
+      until it becomes full. If a file is removed from a sub-directory that
+      is marked full, then that sub-directory will be used back again to
+      localize files.
+   </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.memory-mb</name>
+  <value>-1</value>
+    <description>Amount of physical memory, in MB, that can be allocated 
+    for containers. If set to -1 and
+    yarn.nodemanager.resource.detect-hardware-capabilities is true, it is
+    automatically calculated(in case of Windows and Linux).
+    In other cases, the default is 8192MB.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.system-reserved-memory-mb</name>
+  <value>0</value>
+    <description>Amount of physical memory, in MB, that is reserved
+    for non-YARN processes. This configuration is only used if
+    yarn.nodemanager.resource.detect-hardware-capabilities is set
+    to true and yarn.nodemanager.resource.memory-mb is -1. If set
+    to -1, this amount is calculated as
+    20% of (system memory - 2*HADOOP_HEAPSIZE)
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.host-pid-namespace.allowed</name>
+  <value>false</value>
+    <description>Allow host pid namespace for runC containers.
+      Use with care.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds</name>
+  <value>-2</value>
+    <description>Defines how often NMs wake up to upload log files.
+    The default value is -1. By default, the logs will be uploaded when
+    the application is finished. By setting this configuration logs can
+    be uploaded periodically while the application is running.
+    The minimum positive accepted value can be configured by the setting
+    "yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min".
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.webapp.rest-csrf.enabled</name>
+  <value>true</value>
+  <description>
+      Enable the CSRF filter for the timeline service web app
+    </description>
+</property>
+
+<property>
+  <name>yarn.scheduler.configuration.store.class</name>
+  <value>file</value>
+    <description>
+      The type of configuration store to use for scheduler configurations.
+      Default is "file", which uses file based capacity-scheduler.xml to
+      retrieve and change scheduler configuration. To enable API based
+      scheduler configuration, use either "memory" (in memory storage, no
+      persistence across restarts), "leveldb" (leveldb based storage), or
+      "zk" (zookeeper based storage). API based configuration is only useful
+      when using a scheduler which supports mutable configuration. Currently
+      only capacity scheduler supports this.
+    </description>
+</property>
+
+</configuration>

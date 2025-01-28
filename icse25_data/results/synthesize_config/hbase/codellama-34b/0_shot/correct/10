@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.regionserver.region.split.policy', 'hbase.regions.slop', 'hfile.block.cache.size', 'hfile.block.index.cacheonwrite', 'hbase.auth.token.max.lifetime', 'hbase.rootdir.perms'], 'reason': ['The value of hbase.local.dir is not a valid directory.', 'The value of hbase.regionserver.region.split.policy is not a valid class name.', 'The value of hbase.regions.slop is not a valid float value.', 'The value of hfile.block.cache.size is not a valid float value.', 'The value of hfile.block.index.cacheonwrite is not a valid boolean value.', 'The value of hbase.auth.token.max.lifetime is not a valid long value.', 'The value of hbase.rootdir.perms is not a valid octal value.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: hbase.local.dir	hbase.regionserver.region.split.policy	hbase.regions.slop	hfile.block.cache.size	hfile.block.index.cacheonwrite	hbase.auth.token.max.lifetime	hbase.rootdir.perms
+[Ciri] Reason for hbase.local.dir: The value of hbase.local.dir is not a valid directory.
+[Ciri] Reason for hbase.regionserver.region.split.policy: The value of hbase.regionserver.region.split.policy is not a valid class name.
+[Ciri] Reason for hbase.regions.slop: The value of hbase.regions.slop is not a valid float value.
+[Ciri] Reason for hfile.block.cache.size: The value of hfile.block.cache.size is not a valid float value.
+[Ciri] Reason for hfile.block.index.cacheonwrite: The value of hfile.block.index.cacheonwrite is not a valid boolean value.
+[Ciri] Reason for hbase.auth.token.max.lifetime: The value of hbase.auth.token.max.lifetime is not a valid long value.
+[Ciri] Reason for hbase.rootdir.perms: The value of hbase.rootdir.perms is not a valid octal value.

@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'portUnification', 'localSessionsUpgradingEnabled', 'quorum.cnxn.threads.size', 'maxClientCnxns'], 'reason': ['dataLogDir is not a valid directory', 'portUnification is not a valid property', 'localSessionsUpgradingEnabled is not a valid property', 'quorum.cnxn.threads.size is not a valid property', 'maxClientCnxns is not a valid property']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'secureClientPort'], 'reason': ['dataDir must be a valid directory', 'dataLogDir must be a valid directory', 'secureClientPort must be a valid port number']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'localSessionsUpgradingEnabled', 'quorum.cnxn.threads.size', 'portUnification', 'quorum.auth.serverRequireSasl', 'secureClientPort', 'tickTime', 'maxClientCnxns'], 'reason': ['dataLogDir is not a valid directory', 'localSessionsUpgradingEnabled is not a valid boolean', 'quorum.cnxn.threads.size is not a valid integer', 'portUnification is not a valid boolean', 'quorum.auth.serverRequireSasl is not a valid boolean', 'secureClientPort is not a valid integer', 'tickTime is not a valid integer', 'maxClientCnxns is not a valid integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'localSessionsUpgradingEnabled'], 'reason': ['dataLogDir is not a valid directory', 'localSessionsUpgradingEnabled is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'localSessionsUpgradingEnabled'], 'reason': ['dataLogDir must be a valid directory', 'localSessionsUpgradingEnabled is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'dataDir'], 'reason': ['dataLogDir must be a valid directory', 'dataDir must be a valid directory']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataLogDir	localSessionsUpgradingEnabled
+[Ciri] Reason for dataLogDir: dataLogDir must be a valid directory
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled is not a valid boolean

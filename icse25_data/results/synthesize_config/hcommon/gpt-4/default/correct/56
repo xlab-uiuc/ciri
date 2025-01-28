@@ -1,0 +1,18 @@
+Wrong shot number:
+[16, 3, 14]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode'], 'reason': ["The property 'fs.ftp.transfer.mode' contains an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE, but they should be referenced without the '_TRANSFER_MODE' suffix."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode'], 'reason': ["The value 'BLOCK_TRANSFER_MODE' for 'fs.ftp.transfer.mode' is incorrect. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE, but they should not be in all caps."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode'], 'reason': ["The property 'fs.ftp.transfer.mode' contains an invalid value. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE, but it should be set without using constants."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.ftp.transfer.mode
+[Ciri] Reason for fs.ftp.transfer.mode: The value 'BLOCK_TRANSFER_MODE' for 'fs.ftp.transfer.mode' is incorrect. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE, but they should not be in all caps.

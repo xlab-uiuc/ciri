@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['huge_pages', 'autovacuum_work_mem'], 'reason': ["huge_pages parameter should have a value of 'on', 'off', or 'try'. 'try' is not a valid value.", 'autovacuum_work_mem parameter should be a positive integer. Negative values are not allowed.']}
+
+{'hasError': True, 'errParameter': ['huge_pages', 'autovacuum_work_mem'], 'reason': ["huge_pages parameter should be set to 'on', 'off', or 'mmap'. 'try' is not a valid value.", 'autovacuum_work_mem parameter should be a positive integer value. Negative values are not allowed.']}
+
+{'hasError': True, 'errParameter': ['huge_pages', 'autovacuum_work_mem'], 'reason': ["huge_pages parameter should be set to 'on', 'off', or 'mmap'. 'try' is not a valid value.", 'autovacuum_work_mem parameter should be a positive integer value. Negative values are not allowed.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: huge_pages	autovacuum_work_mem
+[Ciri] Reason for huge_pages: huge_pages parameter should be set to 'on', 'off', or 'mmap'. 'try' is not a valid value.
+[Ciri] Reason for autovacuum_work_mem: autovacuum_work_mem parameter should be a positive integer value. Negative values are not allowed.

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.info.port</name>
+  <value>3000</value>
+    <description>The port for the HBase Master web UI.
+    Set to -1 if you do not want a UI instance run.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.handler.count</name>
+  <value>true</value>
+    <description>Count of RPC Listener instances spun up on RegionServers.
+      Same property is used by the Master for count of master handlers.
+      Too many handlers can be counter-productive. Make it a multiple of
+      CPU count. If mostly read-only, handlers count close to cpu count
+      does well. Start with twice the CPU count and tune from there.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.region.split.policy</name>
+  <value>org.apache.hadoop.hbase.regionserver.SteppingSplitPolicy</value>
+    <description>
+      A split policy determines when a region should be split. The various
+      other split policies that are available currently are BusyRegionSplitPolicy,
+      ConstantSizeRegionSplitPolicy, DisabledRegionSplitPolicy,
+      DelimitedKeyPrefixRegionSplitPolicy, KeyPrefixRegionSplitPolicy, and
+      SteppingSplitPolicy. DisabledRegionSplitPolicy blocks manual region splitting.
+    </description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.timeout.period</name>
+  <value>120000</value>
+    <description>Client scanner lease period in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.auth.token.max.lifetime</name>
+  <value>1209600000</value>
+    <description>The maximum lifetime in milliseconds after which an
+    authentication token expires.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.rest.port</name>
+  <value>8080</value>
+    <description>The port for the HBase REST server.</description>
+</property>
+
+<property>
+  <name>hbase.data.umask</name>
+  <value>002</value>
+    <description>File permissions that should be used to write data
+      files when hbase.data.umask.enable is true</description>
+</property>
+
+<property>
+  <name>hbase.rest.filter.classes</name>
+  <value>org.apache.hadoop.hbase.rest.filter.GzipFilter</value>
+    <description>
+      Servlet filters for REST service.
+    </description>
+</property>
+
+</configuration>

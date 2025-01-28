@@ -1,0 +1,18 @@
+Wrong shot number:
+[11, 14, 10]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.hosts.provider.classname'], 'reason': ["The property 'dfs.namenode.hosts.provider.classname' has the value 'org.apache.hadoop.hdfs.server.blockmanagement.HostFileManager' which is not within the accepted value {org.apache.hadoop.hdfs.server.blockmanagement.HostFileManager,org.apache.hadoop.hdfs.server.blockmanagement.CombinedHostFileManager}."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.hosts.provider.classname'], 'reason': ["The property 'dfs.namenode.hosts.provider.classname' has the value 'org.apache.hadoop.hdfs.server.blockmanagement.HostFileManager' which is not within the accepted value {org.apache.hadoop.hdfs.server.blockmanagement.CombinedHostFileManager}."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.hosts.provider.classname'], 'reason': ["The property 'dfs.namenode.hosts.provider.classname' has the value 'org.apache.hadoop.hdfs.server.blockmanagement.HostFileManager' which is not within the accepted value {org.apache.hadoop.hdfs.server.blockmanagement.HostFileManager, org.apache.hadoop.hdfs.server.blockmanagement.CombinedHostFileManager}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.hosts.provider.classname
+[Ciri] Reason for dfs.namenode.hosts.provider.classname: The property 'dfs.namenode.hosts.provider.classname' has the value 'org.apache.hadoop.hdfs.server.blockmanagement.HostFileManager' which is not within the accepted value {org.apache.hadoop.hdfs.server.blockmanagement.CombinedHostFileManager}.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 1, 8]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_recycle', 'data_sync_retry'], 'reason': ["The property 'wal_recycle' is not a valid parameter in PostgreSQL version 13.0.", "The property 'data_sync_retry' is not a valid parameter in PostgreSQL version 13.0."]}
+
+{'hasError': True, 'errParameter': ['wal_recycle', 'data_sync_retry'], 'reason': ["The property 'wal_recycle' is not a valid parameter in PostgreSQL version 13.0.", "The property 'data_sync_retry' is not a valid parameter in PostgreSQL version 13.0."]}
+
+{'hasError': True, 'errParameter': ['wal_recycle', 'tcp_keepalives_idle', 'tcp_user_timeout', 'data_sync_retry'], 'reason': ["The property 'wal_recycle' is not a valid parameter in PostgreSQL version 13.0.", "The property 'tcp_keepalives_idle' is not a valid parameter in PostgreSQL version 13.0.", "The property 'tcp_user_timeout' is not a valid parameter in PostgreSQL version 13.0.", "The property 'data_sync_retry' is not a valid parameter in PostgreSQL version 13.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: wal_recycle	data_sync_retry
+[Ciri] Reason for wal_recycle: The property 'wal_recycle' is not a valid parameter in PostgreSQL version 13.0.
+[Ciri] Reason for data_sync_retry: The property 'data_sync_retry' is not a valid parameter in PostgreSQL version 13.0.

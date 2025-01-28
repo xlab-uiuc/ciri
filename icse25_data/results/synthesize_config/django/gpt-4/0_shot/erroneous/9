@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['LOGIN_URL', 'EMAIL_PORT', 'LANGUAGE_COOKIE_SAMESITE'], 'reason': ["LOGIN_URL should typically be a URL path, not just a keyword. For example, '/login/'.", "EMAIL_PORT 25 is commonly used for unencrypted SMTP. For secure email sending, it's recommended to use 587 with TLS.", "LANGUAGE_COOKIE_SAMESITE should be set to 'Lax' or 'Strict' for better security in Django 4.0, especially if your site uses cookies for language preferences."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: LOGIN_URL	EMAIL_PORT	LANGUAGE_COOKIE_SAMESITE
+[Ciri] Reason for LOGIN_URL: LOGIN_URL should typically be a URL path, not just a keyword. For example, '/login/'.
+[Ciri] Reason for EMAIL_PORT: EMAIL_PORT 25 is commonly used for unencrypted SMTP. For secure email sending, it's recommended to use 587 with TLS.
+[Ciri] Reason for LANGUAGE_COOKIE_SAMESITE: LANGUAGE_COOKIE_SAMESITE should be set to 'Lax' or 'Strict' for better security in Django 4.0, especially if your site uses cookies for language preferences.

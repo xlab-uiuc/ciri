@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'LANGUAGE_COOKIE_DOMAIN', 'USE_TZ', 'TEMPLATES'], 'reason': ["NUMBER_GROUPING should be a string, not a float. It should be '-5.5' instead of -5.5.", "LANGUAGE_COOKIE_DOMAIN should be a string, not None. It should be set to a domain string or an empty string ''.", 'USE_TZ should be a boolean, not False. It should be lowercase: True or False.', 'TEMPLATES should be a list containing at least one valid template configuration dictionary, not an empty list [].']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: NUMBER_GROUPING	LANGUAGE_COOKIE_DOMAIN	USE_TZ	TEMPLATES
+[Ciri] Reason for NUMBER_GROUPING: NUMBER_GROUPING should be a string, not a float. It should be '-5.5' instead of -5.5.
+[Ciri] Reason for LANGUAGE_COOKIE_DOMAIN: LANGUAGE_COOKIE_DOMAIN should be a string, not None. It should be set to a domain string or an empty string ''.
+[Ciri] Reason for USE_TZ: USE_TZ should be a boolean, not False. It should be lowercase: True or False.
+[Ciri] Reason for TEMPLATES: TEMPLATES should be a list containing at least one valid template configuration dictionary, not an empty list [].

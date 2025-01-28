@@ -1,0 +1,19 @@
+Wrong shot number:
+[5, 6, 7]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'autopurge.purgeInterval'], 'reason': ["The property 'quorumListenOnAllIPs' has the value 'hadoop' which is not a valid boolean value.", "The property 'autopurge.purgeInterval' has the value '-1' which should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'autopurge.purgeInterval'], 'reason': ["The property 'quorumListenOnAllIPs' has the value 'hadoop' which is not a valid boolean value.", "The property 'autopurge.purgeInterval' has the value '-1' which should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'autopurge.purgeInterval'], 'reason': ["The property 'quorumListenOnAllIPs' has the value 'hadoop' which is not within the accepted value {true,false}.", "The property 'autopurge.purgeInterval' has the value '-1' which should be a positive integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorumListenOnAllIPs	autopurge.purgeInterval
+[Ciri] Reason for quorumListenOnAllIPs: The property 'quorumListenOnAllIPs' has the value 'hadoop' which is not a valid boolean value.
+[Ciri] Reason for autopurge.purgeInterval: The property 'autopurge.purgeInterval' has the value '-1' which should be a positive integer.

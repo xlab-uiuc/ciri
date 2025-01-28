@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory.enabled', 'yarn.nodemanager.linux-container-executor.cgroups.mount', 'yarn.timeline-service.enabled'], 'reason': ["The property 'yarn.nodemanager.resource.memory.enabled' should be set to 'true' for YARN CGroups memory tracking to be enabled.", "The property 'yarn.nodemanager.linux-container-executor.cgroups.mount' should be set to 'true' if the LCE should attempt to mount cgroups if not found.", "The property 'yarn.timeline-service.enabled' should be set to 'true' to enable the timeline service."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory.enabled', 'yarn.nodemanager.linux-container-executor.cgroups.mount', 'yarn.timeline-service.enabled'], 'reason': ["The property 'yarn.nodemanager.resource.memory.enabled' should be set to 'true' for YARN CGroups memory tracking to be enabled.", "The property 'yarn.nodemanager.linux-container-executor.cgroups.mount' should be set to 'true' if the LCE should attempt to mount cgroups if not found.", "The property 'yarn.timeline-service.enabled' should be set to 'true' to enable the timeline service."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory.enabled', 'yarn.nodemanager.linux-container-executor.cgroups.mount', 'yarn.timeline-service.enabled'], 'reason': ["The property 'yarn.nodemanager.resource.memory.enabled' should have a value of 'true' for YARN version 3.3.0.", "The property 'yarn.nodemanager.linux-container-executor.cgroups.mount' should have a value of 'true' for YARN version 3.3.0.", "The property 'yarn.timeline-service.enabled' should have a value of 'true' for YARN version 3.3.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.nodemanager.resource.memory.enabled	yarn.nodemanager.linux-container-executor.cgroups.mount	yarn.timeline-service.enabled
+[Ciri] Reason for yarn.nodemanager.resource.memory.enabled: The property 'yarn.nodemanager.resource.memory.enabled' should be set to 'true' for YARN CGroups memory tracking to be enabled.
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.mount: The property 'yarn.nodemanager.linux-container-executor.cgroups.mount' should be set to 'true' if the LCE should attempt to mount cgroups if not found.
+[Ciri] Reason for yarn.timeline-service.enabled: The property 'yarn.timeline-service.enabled' should be set to 'true' to enable the timeline service.

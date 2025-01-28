@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'proxy', 'discovery-fallback'], 'reason': ["The 'quota-backend-bytes' parameter should be greater than 0 if set, to enforce a quota on the backend size.", "The 'proxy' parameter is deprecated and should not be used in etcd version 3.5.0.", "The 'discovery-fallback' parameter is not applicable without the 'proxy' parameter being active and correctly set."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quota-backend-bytes	proxy	discovery-fallback
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' parameter should be greater than 0 if set, to enforce a quota on the backend size.
+[Ciri] Reason for proxy: The 'proxy' parameter is deprecated and should not be used in etcd version 3.5.0.
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' parameter is not applicable without the 'proxy' parameter being active and correctly set.

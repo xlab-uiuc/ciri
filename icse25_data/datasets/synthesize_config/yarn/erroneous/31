@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.nodemanager.default-container-executor.log-dirs.permissions</name>
+  <value>355</value>
+    <description>
+      The permissions settings used for the creation of container
+      directories when using DefaultContainerExecutor.  This follows
+      standard user/group/all permissions format.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.health-checker.interval-ms</name>
+  <value>300000</value>
+    <description>Frequency of running node health scripts.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-metrics.enable</name>
+  <value>false</value>
+    <description>
+    Flag to enable container metrics
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.enabled</name>
+  <value>false</value>
+    <description>
+    In the server side it indicates whether timeline service is enabled or not.
+    And in the client side, users can enable it to indicate whether client wants
+    to use timeline service. If its enabled in the client side along with
+    security, then yarn client tries to fetch the delegation tokens for the
+    timeline server.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.leveldb-timeline-store.path</name>
+  <value>hadoop_tmp/yarn/timeline</value>
+    <description>Store file name for leveldb timeline store.</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.cleaner.initial-delay-mins</name>
+  <value>10</value>
+    <description>Initial delay before the first cleaner task is scheduled.
+    Specified in minutes.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.webapp.rest-csrf.enabled</name>
+  <value>false</value>
+    <description>
+      Enable the CSRF filter for the NM web app
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource-plugins.gpu.docker-plugin</name>
+  <value>nvidia-docker-v1</value>
+    <description>
+      Specify docker command plugin for GPU. By default uses Nvidia docker V1.
+    </description>
+</property>
+
+</configuration>

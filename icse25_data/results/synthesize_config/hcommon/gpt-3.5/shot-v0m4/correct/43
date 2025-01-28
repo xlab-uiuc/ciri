@@ -1,0 +1,12 @@
+Wrong shot number:
+[10, 4, 8, 12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.trash.checkpoint.interval', 'ha.zookeeper.parent-znode'], 'reason': ["The property 'fs.trash.checkpoint.interval' has the value '0' which should be smaller or equal to fs.trash.interval.", "The property 'ha.zookeeper.parent-znode' has the value '/valid/file1' which does not follow the correct format for a ZooKeeper znode path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.trash.checkpoint.interval	ha.zookeeper.parent-znode
+[Ciri] Reason for fs.trash.checkpoint.interval: The property 'fs.trash.checkpoint.interval' has the value '0' which should be smaller or equal to fs.trash.interval.
+[Ciri] Reason for ha.zookeeper.parent-znode: The property 'ha.zookeeper.parent-znode' has the value '/valid/file1' which does not follow the correct format for a ZooKeeper znode path.

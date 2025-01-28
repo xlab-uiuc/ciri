@@ -1,0 +1,13 @@
+Correct shot number:
+[6, 16, 2, 7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'hadoop.kerberos.kinit.command', 'fs.s3a.connection.establish.timeout'], 'reason': ["The value '10nounit' for property 'hadoop.service.shutdown.timeout' is not in the correct format. It should include a time unit (e.g., '10s' for 10 seconds).", "The property 'hadoop.kerberos.kinit.command' has an additional 'usage' tag which is not a valid property attribute.", "The value '5000' for property 'fs.s3a.connection.establish.timeout' should include a time unit (e.g., '5000ms' for 5000 milliseconds)."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	hadoop.kerberos.kinit.command	fs.s3a.connection.establish.timeout
+[Ciri] Reason for hadoop.service.shutdown.timeout: The value '10nounit' for property 'hadoop.service.shutdown.timeout' is not in the correct format. It should include a time unit (e.g., '10s' for 10 seconds).
+[Ciri] Reason for hadoop.kerberos.kinit.command: The property 'hadoop.kerberos.kinit.command' has an additional 'usage' tag which is not a valid property attribute.
+[Ciri] Reason for fs.s3a.connection.establish.timeout: The value '5000' for property 'fs.s3a.connection.establish.timeout' should include a time unit (e.g., '5000ms' for 5000 milliseconds).

@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['archive_mode', 'checkpoint_timeout', 'log_recovery_conflict_waits', 'from_collapse_limit', 'vacuum_freeze_min_age', 'superuser_reserved_connections', 'debug_pretty_print'], 'reason': ["archive_mode parameter value should be 'on' or 'always' for PostgreSQL version 13.0.", "checkpoint_timeout value should be specified in seconds, e.g., '300s' for 5 minutes.", 'log_recovery_conflict_waits parameter is not recognized in PostgreSQL version 13.0.', 'from_collapse_limit value should be an integer between 1 and 64.', "vacuum_freeze_min_age value should be specified in transactions, e.g., '100000000' is not a valid value.", 'superuser_reserved_connections value should be an integer greater than or equal to 3.', "debug_pretty_print parameter value should be 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['archive_mode', 'checkpoint_timeout', 'log_recovery_conflict_waits', 'from_collapse_limit', 'vacuum_freeze_min_age', 'superuser_reserved_connections', 'debug_pretty_print'], 'reason': ["archive_mode parameter should be set to 'on' for enabling archiving", 'checkpoint_timeout value should be specified in seconds, not minutes', "log_recovery_conflict_waits parameter should be set to 'on' for enabling conflict waits logging during recovery", 'from_collapse_limit value should be less than or equal to 8 for better performance', 'vacuum_freeze_min_age value should be specified in transactions, not a large number', 'superuser_reserved_connections value should be less than the maximum number of connections', "debug_pretty_print parameter should be set to 'off' for production environments"]}
+
+{'hasError': True, 'errParameter': ['archive_mode', 'checkpoint_timeout', 'log_recovery_conflict_waits', 'from_collapse_limit', 'vacuum_freeze_min_age', 'superuser_reserved_connections', 'debug_pretty_print'], 'reason': ["archive_mode parameter value should be 'on' or 'always' for enabling archiving, 'off' is invalid.", 'checkpoint_timeout value should be specified in seconds, not minutes.', "log_recovery_conflict_waits parameter value should be 'on' or 'off', 'off' is valid but it's recommended to set it to 'on'.", 'from_collapse_limit value should be between 1 and 64, 16 is valid.', 'vacuum_freeze_min_age value should be specified in transactions, not a large number like 100000000.', "superuser_reserved_connections value should be at least 3, 6 is valid but it's recommended to keep it at a lower value.", "debug_pretty_print parameter value should be 'on' or 'off'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: archive_mode	checkpoint_timeout	log_recovery_conflict_waits	from_collapse_limit	vacuum_freeze_min_age	superuser_reserved_connections	debug_pretty_print
+[Ciri] Reason for archive_mode: archive_mode parameter should be set to 'on' for enabling archiving
+[Ciri] Reason for checkpoint_timeout: checkpoint_timeout value should be specified in seconds, not minutes
+[Ciri] Reason for log_recovery_conflict_waits: log_recovery_conflict_waits parameter value should be 'on' or 'off', 'off' is valid but it's recommended to set it to 'on'.
+[Ciri] Reason for from_collapse_limit: from_collapse_limit value should be between 1 and 64, 16 is valid.
+[Ciri] Reason for vacuum_freeze_min_age: vacuum_freeze_min_age value should be specified in transactions, not a large number like 100000000.
+[Ciri] Reason for superuser_reserved_connections: superuser_reserved_connections value should be an integer greater than or equal to 3.
+[Ciri] Reason for debug_pretty_print: debug_pretty_print parameter value should be 'on' or 'off'.

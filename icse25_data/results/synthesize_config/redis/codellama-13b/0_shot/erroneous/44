@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'hash-max-listpack-entries', 'replica-serve-stale-data', 'tls-port', 'cluster-announce-port'], 'reason': ['maxmemory-clients is not a valid parameter in Redis 7.0.0', 'hash-max-listpack-entries is not a valid parameter in Redis 7.0.0', 'replica-serve-stale-data is not a valid parameter in Redis 7.0.0', 'tls-port is not a valid parameter in Redis 7.0.0', 'cluster-announce-port is not a valid parameter in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['locale-collate', 'lazyfree-lazy-user-del', 'lazyfree-lazy-user-flush', 'maxmemory-clients', 'hash-max-listpack-entries', 'replica-serve-stale-data', 'tls-port', 'cluster-announce-port'], 'reason': ['locale-collate is not a valid configuration parameter.', 'lazyfree-lazy-user-del is not a valid configuration parameter.', 'lazyfree-lazy-user-flush is not a valid configuration parameter.', 'maxmemory-clients is not a valid configuration parameter.', 'hash-max-listpack-entries is not a valid configuration parameter.', 'replica-serve-stale-data is not a valid configuration parameter.', 'tls-port is not a valid configuration parameter.', 'cluster-announce-port is not a valid configuration parameter.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port'], 'reason': ['The value of cluster-announce-port should be a valid port number.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'lazyfree-lazy-user-flush', 'maxmemory-clients', 'hash-max-listpack-entries', 'replica-serve-stale-data', 'tls-port', 'cluster-announce-port'], 'reason': ['lazyfree-lazy-user-del is not a valid parameter', 'lazyfree-lazy-user-flush is not a valid parameter', 'maxmemory-clients is not a valid parameter', 'hash-max-listpack-entries is not a valid parameter', 'replica-serve-stale-data is not a valid parameter', 'tls-port is not a valid parameter', 'cluster-announce-port is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'lazyfree-lazy-user-flush', 'maxmemory-clients', 'hash-max-listpack-entries', 'replica-serve-stale-data', 'tls-port', 'cluster-announce-port'], 'reason': ['lazyfree-lazy-user-del is not a valid parameter', 'lazyfree-lazy-user-flush is not a valid parameter', 'maxmemory-clients is not a valid parameter', 'hash-max-listpack-entries is not a valid parameter', 'replica-serve-stale-data is not a valid parameter', 'tls-port is not a valid parameter', 'cluster-announce-port is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'lazyfree-lazy-user-flush', 'maxmemory-clients', 'hash-max-listpack-entries', 'replica-serve-stale-data', 'tls-port', 'cluster-announce-port'], 'reason': ['lazyfree-lazy-user-del is not a valid configuration parameter', 'lazyfree-lazy-user-flush is not a valid configuration parameter', 'maxmemory-clients is not a valid configuration parameter', 'hash-max-listpack-entries is not a valid configuration parameter', 'replica-serve-stale-data is not a valid configuration parameter', 'tls-port is not a valid configuration parameter', 'cluster-announce-port is not a valid configuration parameter']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: lazyfree-lazy-user-del	lazyfree-lazy-user-flush	maxmemory-clients	hash-max-listpack-entries	replica-serve-stale-data	tls-port	cluster-announce-port
+[Ciri] Reason for lazyfree-lazy-user-del: lazyfree-lazy-user-del is not a valid configuration parameter
+[Ciri] Reason for lazyfree-lazy-user-flush: lazyfree-lazy-user-flush is not a valid configuration parameter
+[Ciri] Reason for maxmemory-clients: maxmemory-clients is not a valid parameter
+[Ciri] Reason for hash-max-listpack-entries: hash-max-listpack-entries is not a valid parameter
+[Ciri] Reason for replica-serve-stale-data: replica-serve-stale-data is not a valid parameter
+[Ciri] Reason for tls-port: tls-port is not a valid parameter
+[Ciri] Reason for cluster-announce-port: cluster-announce-port is not a valid configuration parameter

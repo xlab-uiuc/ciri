@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'appendfsync', 'no-appendfsync-on-rewrite', 'tls-ca-cert-file', 'repl-backlog-size', 'set-proc-title', 'aof-timestamp-enabled', 'daemonize'], 'reason': ["The parameter 'enable-protected-configs' is not a valid configuration option in Redis 7.0.0.", "The parameter 'appendfsync' should be one of 'no', 'everysec', or 'always'. 'everysec' is not a valid value.", "The parameter 'no-appendfsync-on-rewrite' is not a valid configuration option in Redis 7.0.0.", "The parameter 'tls-ca-cert-file' is not a valid configuration option in Redis 7.0.0.", "The parameter 'repl-backlog-size' should be a number followed by 'kb', 'mb', or 'gb'. '4mb' is not a valid value.", "The parameter 'set-proc-title' is not a valid configuration option in Redis 7.0.0.", "The parameter 'aof-timestamp-enabled' is not a valid configuration option in Redis 7.0.0.", "The parameter 'daemonize' is not a valid configuration option in Redis 7.0.0."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: enable-protected-configs	appendfsync	no-appendfsync-on-rewrite	tls-ca-cert-file	repl-backlog-size	set-proc-title	aof-timestamp-enabled	daemonize
+[Ciri] Reason for enable-protected-configs: The parameter 'enable-protected-configs' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for appendfsync: The parameter 'appendfsync' should be one of 'no', 'everysec', or 'always'. 'everysec' is not a valid value.
+[Ciri] Reason for no-appendfsync-on-rewrite: The parameter 'no-appendfsync-on-rewrite' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for tls-ca-cert-file: The parameter 'tls-ca-cert-file' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for repl-backlog-size: The parameter 'repl-backlog-size' should be a number followed by 'kb', 'mb', or 'gb'. '4mb' is not a valid value.
+[Ciri] Reason for set-proc-title: The parameter 'set-proc-title' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for aof-timestamp-enabled: The parameter 'aof-timestamp-enabled' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for daemonize: The parameter 'daemonize' is not a valid configuration option in Redis 7.0.0.

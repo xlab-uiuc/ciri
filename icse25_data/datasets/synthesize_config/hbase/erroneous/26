@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.rootdir</name>
+  <value>/valid/file1</value>
+    <description>The directory shared by region servers and into
+    which HBase persists.  The URL should be 'fully-qualified'
+    to include the filesystem scheme.  For example, to specify the
+    HDFS directory '/hbase' where the HDFS instance's namenode is
+    running at namenode.example.org on port 9000, set this value to:
+    hdfs://namenode.example.org:9000/hbase.  By default, we write
+    to whatever ${hbase.tmp.dir} is set too -- usually /tmp --
+    so change this configuration or else all data will be lost on
+    machine restart.</description>
+</property>
+
+<property>
+  <name>hbase.bulkload.retries.number</name>
+  <value>20</value>
+    <description>Maximum retries.  This is maximum number of iterations
+    to atomic bulk loads are attempted in the face of splitting operations
+    0 means never give up.</description>
+</property>
+
+<property>
+  <name>hbase.master.balancer.maxRitPercent</name>
+  <value>2.0</value>
+    <description>The max percent of regions in transition when balancing.
+      The default value is 1.0. So there are no balancer throttling. If set this config to 0.01,
+      It means that there are at most 1% regions in transition when balancing.
+      Then the cluster's availability is at least 99% when balancing.</description>
+</property>
+
+<property>
+  <name>hbase.auth.token.max.lifetime</name>
+  <value>604800000</value>
+    <description>The maximum lifetime in milliseconds after which an
+    authentication token expires.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.abortonerror</name>
+  <value>true</value>
+      <description>Set to true to cause the hosting server (master or regionserver)
+      to abort if a coprocessor fails to load, fails to initialize, or throws an
+      unexpected Throwable object. Setting this to false will allow the server to
+      continue execution but the system wide state of the coprocessor in question
+      will become inconsistent as it will be properly executing in only a subset
+      of servers, so this is most useful for debugging only.</description>
+</property>
+
+<property>
+  <name>hbase.server.compactchecker.interval.multiplier</name>
+  <value>1000</value>
+    <description>The number that determines how often we scan to see if compaction is necessary.
+        Normally, compactions are done after some events (such as memstore flush), but if
+        region didn't receive a lot of writes for some time, or due to different compaction
+        policies, it may be necessary to check it periodically. The interval between checks is
+        hbase.server.compactchecker.interval.multiplier multiplied by
+        hbase.server.thread.wakefrequency.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.checksum.algorithm</name>
+  <value>nonono</value>
+    <description>
+      Name of an algorithm that is used to compute checksums. Possible values
+      are NULL, CRC32, CRC32C.
+    </description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.max.result.size</name>
+  <value>1048576</value>
+    <description>Maximum number of bytes returned when calling a scanner's next method.
+    Note that when a single row is larger than this limit the row is still returned completely.
+    The default value is 2MB, which is good for 1ge networks.
+    With faster and/or high latency networks this value should be increased.
+    </description>
+</property>
+
+</configuration>

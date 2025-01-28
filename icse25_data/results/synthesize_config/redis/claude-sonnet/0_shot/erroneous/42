@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendonly', 'dir', 'repl-diskless-sync-max-replicas', 'aof-rewrite-incremental-fsync', 'port'], 'reason': ["The 'appendonly' option is deprecated in Redis 7.0.0 and has been replaced by 'aof-use-rdb-preamble'.", "The 'dir' option is not a valid configuration parameter in Redis 7.0.0.", "The 'repl-diskless-sync-max-replicas' option is not a valid configuration parameter in Redis 7.0.0.", "The 'aof-rewrite-incremental-fsync' option is not a valid configuration parameter in Redis 7.0.0.", "The 'port' option should be a valid port number between 0 and 65535."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: appendonly	dir	repl-diskless-sync-max-replicas	aof-rewrite-incremental-fsync	port
+[Ciri] Reason for appendonly: The 'appendonly' option is deprecated in Redis 7.0.0 and has been replaced by 'aof-use-rdb-preamble'.
+[Ciri] Reason for dir: The 'dir' option is not a valid configuration parameter in Redis 7.0.0.
+[Ciri] Reason for repl-diskless-sync-max-replicas: The 'repl-diskless-sync-max-replicas' option is not a valid configuration parameter in Redis 7.0.0.
+[Ciri] Reason for aof-rewrite-incremental-fsync: The 'aof-rewrite-incremental-fsync' option is not a valid configuration parameter in Redis 7.0.0.
+[Ciri] Reason for port: The 'port' option should be a valid port number between 0 and 65535.

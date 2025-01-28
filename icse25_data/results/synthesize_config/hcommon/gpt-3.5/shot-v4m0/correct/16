@@ -1,0 +1,12 @@
+Correct shot number:
+[5, 16, 1, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.http.filter.initializers', 'ipc.client.bind.wildcard.addr'], 'reason': ["Property 'hadoop.http.filter.initializers' has an additional 'usage' tag which is not a standard property field.", "Property 'ipc.client.bind.wildcard.addr' has an incorrect description format with an extra indentation."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.http.filter.initializers	ipc.client.bind.wildcard.addr
+[Ciri] Reason for hadoop.http.filter.initializers: Property 'hadoop.http.filter.initializers' has an additional 'usage' tag which is not a standard property field.
+[Ciri] Reason for ipc.client.bind.wildcard.addr: Property 'ipc.client.bind.wildcard.addr' has an incorrect description format with an extra indentation.

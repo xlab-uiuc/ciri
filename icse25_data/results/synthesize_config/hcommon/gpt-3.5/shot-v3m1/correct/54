@@ -1,0 +1,16 @@
+Wrong shot number:
+[5]
+
+Correct shot number:
+[9, 3, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.tmp.dir', 'fs.ftp.transfer.mode', 'fs.azure.sas.expiry.period'], 'reason': ['The property \'hadoop.tmp.dir\' has an invalid usage tag \'conf.get("hadoop.tmp.dir") + File.separator + STORAGE_DIR_ROOT);\'.', 'The property \'fs.ftp.transfer.mode\' has an invalid usage tag \'xmlPropsToSkipCompare.add("fs.ftp.transfer.mode");\'.', 'The property \'fs.azure.sas.expiry.period\' has an invalid usage tag \'xmlPropsToSkipCompare.add("fs.azure.sas.expiry.period");\'.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.tmp.dir	fs.ftp.transfer.mode	fs.azure.sas.expiry.period
+[Ciri] Reason for hadoop.tmp.dir: The property 'hadoop.tmp.dir' has an invalid usage tag 'conf.get("hadoop.tmp.dir") + File.separator + STORAGE_DIR_ROOT);'.
+[Ciri] Reason for fs.ftp.transfer.mode: The property 'fs.ftp.transfer.mode' has an invalid usage tag 'xmlPropsToSkipCompare.add("fs.ftp.transfer.mode");'.
+[Ciri] Reason for fs.azure.sas.expiry.period: The property 'fs.azure.sas.expiry.period' has an invalid usage tag 'xmlPropsToSkipCompare.add("fs.azure.sas.expiry.period");'.

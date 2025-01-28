@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.retries.number', 'hbase.offpeak.start.hour'], 'reason': ["The 'usage' tag is not a valid tag for property elements in HBase configuration files.", "The value for 'hbase.offpeak.start.hour' should be an integer between 0 and 23, or -1 to disable off-peak hours."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.retries.number', 'hbase.offpeak.start.hour'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.client.retries.number'.", "The value for 'hbase.offpeak.start.hour' is set to -1 which may not be a valid value for the start of off-peak hours."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.retries.number', 'hbase.offpeak.start.hour'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.client.retries.number'.", "The value for 'hbase.offpeak.start.hour' should be an integer between 0 and 23, or -1 to disable off-peak hours."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.client.retries.number	hbase.offpeak.start.hour
+[Ciri] Reason for hbase.client.retries.number: The 'usage' tag is not a valid tag for property 'hbase.client.retries.number'.
+[Ciri] Reason for hbase.offpeak.start.hour: The value for 'hbase.offpeak.start.hour' should be an integer between 0 and 23, or -1 to disable off-peak hours.

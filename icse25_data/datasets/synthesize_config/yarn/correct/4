@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.delegation.token.renew-interval</name>
+  <value>86400000</value>
+    <description>
+    RM delegation token update interval in ms
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.webapp.address</name>
+  <value>127.0.0.1</value>
+    <description>NM Webapp address.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.recovery.compaction-interval-secs</name>
+  <value>7200</value>
+    <description>The time in seconds between full compactions of the NM state
+    database. Setting the interval to zero disables the full compaction
+    cycles.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.entity-group-fs-store.scan-interval-seconds</name>
+  <value>60</value>
+    <description>
+      Scan interval for ATS v1.5 entity group file system storage reader.This
+      value controls how frequent the reader will scan the HDFS active directory
+      for application status.
+    </description>
+</property>
+
+<property>
+  <name>yarn.federation.enabled</name>
+  <value>false</value>
+    <description>
+      Flag to indicate whether the RM is participating in Federation or not.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container.stderr.pattern</name>
+  <value>*STDERR*}</value>
+    <description>
+    Error filename pattern, to identify the file in the container's
+    Log directory which contain the container's error log. As error file
+    redirection is done by client/AM and yarn will not be aware of the error
+    file name. YARN uses this pattern to identify the error file and tail
+    the error log as diagnostics when the container execution returns non zero
+    value. Filename patterns are case sensitive and should match the
+    specifications of FileSystem.globStatus(Path) api. If multiple filenames
+    matches the pattern, first file matching the pattern will be picked.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.application-timeouts.monitor.interval-ms</name>
+  <value>6000</value>
+    <description>
+    The RMAppLifetimeMonitor Service uses this value as monitor interval
+    </description>
+</property>
+
+<property>
+  <name>yarn.scheduler.configuration.leveldb-store.compaction-interval-secs</name>
+  <value>172800</value>
+    <description>
+      The compaction interval for LevelDB configuration store in secs,
+      when yarn.scheduler.configuration.store.class is configured to be
+      "leveldb". Default is one day.
+    </description>
+</property>
+
+</configuration>

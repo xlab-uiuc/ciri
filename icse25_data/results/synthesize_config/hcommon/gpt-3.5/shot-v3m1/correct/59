@@ -1,0 +1,16 @@
+Wrong shot number:
+[1]
+
+Correct shot number:
+[5, 13, 10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.abfs.impl', 'tfile.fs.input.buffer.size', 'ha.failover-controller.cli-check.rpc-timeout.ms'], 'reason': ["The property 'fs.AbstractFileSystem.abfs.impl' is using an incorrect value 'org.apache.hadoop.fs.azurebfs.Abfs'. Expected value should be 'org.apache.hadoop.fs.azurebfs.ABFS'", 'The property \'tfile.fs.input.buffer.size\' has an incorrect usage description. The correct format should be \'conf.setInt("tfile.fs.input.buffer.size", options.fsInputBufferSizeLzo);\'', "The property 'ha.failover-controller.cli-check.rpc-timeout.ms' should have a more descriptive name for the timeout value"]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.AbstractFileSystem.abfs.impl	tfile.fs.input.buffer.size	ha.failover-controller.cli-check.rpc-timeout.ms
+[Ciri] Reason for fs.AbstractFileSystem.abfs.impl: The property 'fs.AbstractFileSystem.abfs.impl' is using an incorrect value 'org.apache.hadoop.fs.azurebfs.Abfs'. Expected value should be 'org.apache.hadoop.fs.azurebfs.ABFS'
+[Ciri] Reason for tfile.fs.input.buffer.size: The property 'tfile.fs.input.buffer.size' has an incorrect usage description. The correct format should be 'conf.setInt("tfile.fs.input.buffer.size", options.fsInputBufferSizeLzo);'
+[Ciri] Reason for ha.failover-controller.cli-check.rpc-timeout.ms: The property 'ha.failover-controller.cli-check.rpc-timeout.ms' should have a more descriptive name for the timeout value

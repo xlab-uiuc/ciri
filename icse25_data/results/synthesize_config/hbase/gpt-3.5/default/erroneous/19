@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 6, 3]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['zookeeper.session.timeout', 'hbase.client.max.perregion.tasks'], 'reason': ["The property 'zookeeper.session.timeout' has the value '-1' which is not within the accepted range of ZooKeeper session timeout in milliseconds.", "The property 'hbase.client.max.perregion.tasks' has the value '0' which is not within the accepted range for the maximum number of concurrent mutation tasks the client will maintain to a single Region."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.session.timeout', 'hbase.client.max.perregion.tasks'], 'reason': ["The property 'zookeeper.session.timeout' has the value '-1' which is not within the accepted value range for session timeout.", "The property 'hbase.client.max.perregion.tasks' has the value '0' which is not within the accepted value range."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.session.timeout', 'hbase.client.max.perregion.tasks'], 'reason': ["The property 'zookeeper.session.timeout' has the value '-1' which is not within the accepted value range for session timeout.", "The property 'hbase.client.max.perregion.tasks' has the value '0' which is not within the accepted value range."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: zookeeper.session.timeout	hbase.client.max.perregion.tasks
+[Ciri] Reason for zookeeper.session.timeout: The property 'zookeeper.session.timeout' has the value '-1' which is not within the accepted value range for session timeout.
+[Ciri] Reason for hbase.client.max.perregion.tasks: The property 'hbase.client.max.perregion.tasks' has the value '0' which is not within the accepted value range.

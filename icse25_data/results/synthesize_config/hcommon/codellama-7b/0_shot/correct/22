@@ -1,0 +1,24 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.table.capacity.read'], 'reason': ['fs.s3a.s3guard.ddb.table.capacity.read is not a valid property.']}
+
+{'hasError': True, 'errParameter': ['io.erasurecode.codec.rs-legacy.rawcoders'], 'reason': ['The value of io.erasurecode.codec.rs-legacy.rawcoders is not a valid value.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.threads.max', 'fs.s3a.max.total.tasks', 'fs.s3a.multipart.size', 'fs.s3a.fast.upload.active.blocks', 'fs.s3a.s3guard.ddb.table.capacity.read'], 'reason': ['fs.s3a.threads.max must be greater than or equal to 1', 'fs.s3a.max.total.tasks must be greater than or equal to 1', 'fs.s3a.multipart.size must be greater than or equal to 5MB', 'fs.s3a.fast.upload.active.blocks must be greater than or equal to 1', 'fs.s3a.s3guard.ddb.table.capacity.read must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.threads.max', 'fs.s3a.max.total.tasks', 'fs.s3a.multipart.size', 'fs.s3a.fast.upload.active.blocks', 'fs.s3a.s3guard.ddb.table.capacity.read'], 'reason': ['fs.s3a.threads.max must be greater than 0', 'fs.s3a.max.total.tasks must be greater than 0', 'fs.s3a.multipart.size must be greater than 0', 'fs.s3a.fast.upload.active.blocks must be greater than 0', 'fs.s3a.s3guard.ddb.table.capacity.read must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.threads.max', 'fs.s3a.max.total.tasks', 'fs.s3a.buffer.dir', 'fs.s3a.multipart.size', 'fs.s3a.fast.upload.active.blocks', 'fs.s3a.s3guard.ddb.table.capacity.read'], 'reason': ['fs.s3a.threads.max must be greater than 0', 'fs.s3a.max.total.tasks must be greater than 0', 'fs.s3a.buffer.dir must be a valid directory', 'fs.s3a.multipart.size must be greater than 0', 'fs.s3a.fast.upload.active.blocks must be greater than 0', 'fs.s3a.s3guard.ddb.table.capacity.read must be greater than 0']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: fs.s3a.threads.max	fs.s3a.max.total.tasks	fs.s3a.multipart.size	fs.s3a.fast.upload.active.blocks	fs.s3a.s3guard.ddb.table.capacity.read
+[Ciri] Reason for fs.s3a.threads.max: fs.s3a.threads.max must be greater than or equal to 1
+[Ciri] Reason for fs.s3a.max.total.tasks: fs.s3a.max.total.tasks must be greater than or equal to 1
+[Ciri] Reason for fs.s3a.multipart.size: fs.s3a.multipart.size must be greater than 0
+[Ciri] Reason for fs.s3a.fast.upload.active.blocks: fs.s3a.fast.upload.active.blocks must be greater than 0
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.read: fs.s3a.s3guard.ddb.table.capacity.read must be greater than or equal to 0

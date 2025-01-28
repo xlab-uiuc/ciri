@@ -1,0 +1,13 @@
+Correct shot number:
+[4, 1, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'CSRF_COOKIE_AGE', 'MIDDLEWARE'], 'reason': ['NUMBER_GROUPING should be a positive integer, not a negative value.', 'CSRF_COOKIE_AGE should be a numerical value representing seconds, not an expression.', 'MIDDLEWARE should contain the list of middleware classes to use, it cannot be empty.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: NUMBER_GROUPING	CSRF_COOKIE_AGE	MIDDLEWARE
+[Ciri] Reason for NUMBER_GROUPING: NUMBER_GROUPING should be a positive integer, not a negative value.
+[Ciri] Reason for CSRF_COOKIE_AGE: CSRF_COOKIE_AGE should be a numerical value representing seconds, not an expression.
+[Ciri] Reason for MIDDLEWARE: MIDDLEWARE should contain the list of middleware classes to use, it cannot be empty.

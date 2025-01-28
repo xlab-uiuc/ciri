@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.intermediate.upload.clean.age=128N', 'alluxio.user.client.cache.evictor.lfu.logbase=1.0', 'alluxio.job.master.embedded.journal.addresses=127.0.0.1', 'alluxio.user.logging.threshold=20s', 'alluxio.jvm.monitor.sleep.interval=2sec'], 'reason': ["The property 'alluxio.underfs.s3.intermediate.upload.clean.age' expects a time value, but '128N' is not a valid time value.", "The property 'alluxio.user.client.cache.evictor.lfu.logbase' expects a valid double value, but '1.0' is not a valid double value.", "The property 'alluxio.job.master.embedded.journal.addresses' is not a valid Alluxio configuration property.", "The property 'alluxio.user.logging.threshold' expects a time value, but '20s' is not a valid time value.", "The property 'alluxio.jvm.monitor.sleep.interval' expects a time value, but '2sec' is not a valid time value."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.underfs.s3.intermediate.upload.clean.age=128N	alluxio.user.client.cache.evictor.lfu.logbase=1.0	alluxio.job.master.embedded.journal.addresses=127.0.0.1	alluxio.user.logging.threshold=20s	alluxio.jvm.monitor.sleep.interval=2sec
+[Ciri] Reason for alluxio.underfs.s3.intermediate.upload.clean.age=128N: The property 'alluxio.underfs.s3.intermediate.upload.clean.age' expects a time value, but '128N' is not a valid time value.
+[Ciri] Reason for alluxio.user.client.cache.evictor.lfu.logbase=1.0: The property 'alluxio.user.client.cache.evictor.lfu.logbase' expects a valid double value, but '1.0' is not a valid double value.
+[Ciri] Reason for alluxio.job.master.embedded.journal.addresses=127.0.0.1: The property 'alluxio.job.master.embedded.journal.addresses' is not a valid Alluxio configuration property.
+[Ciri] Reason for alluxio.user.logging.threshold=20s: The property 'alluxio.user.logging.threshold' expects a time value, but '20s' is not a valid time value.
+[Ciri] Reason for alluxio.jvm.monitor.sleep.interval=2sec: The property 'alluxio.jvm.monitor.sleep.interval' expects a time value, but '2sec' is not a valid time value.

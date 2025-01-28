@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'listen-client-urls', 'auto-tls', 'max-wals', 'log-level', 'enable-pprof', 'initial-advertise-peer-urls', 'election-timeout', 'logger'], 'reason': ['data-dir is not a valid directory', 'name is not a valid name', 'listen-client-urls is not a valid url', 'auto-tls is not a valid boolean', 'max-wals is not a valid integer', 'log-level is not a valid log level', 'enable-pprof is not a valid boolean', 'initial-advertise-peer-urls is not a valid url', 'election-timeout is not a valid integer', 'logger is not a valid logger']}
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'listen-peer-urls', 'listen-client-urls', 'auto-tls', 'max-wals', 'log-level', 'enable-pprof', 'initial-advertise-peer-urls', 'election-timeout', 'logger'], 'reason': ['data-dir must be a directory', 'name must be a string', 'listen-peer-urls must be a list of URLs', 'listen-client-urls must be a list of URLs', 'auto-tls must be a boolean', 'max-wals must be a number', 'log-level must be a string', 'enable-pprof must be a boolean', 'initial-advertise-peer-urls must be a list of URLs', 'election-timeout must be a number', 'logger must be a string']}
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'listen-client-urls', 'auto-tls', 'max-wals', 'log-level', 'enable-pprof', 'initial-advertise-peer-urls', 'election-timeout', 'logger'], 'reason': ['data-dir is required', 'name is required', 'listen-client-urls is required', 'auto-tls is required', 'max-wals is required', 'log-level is required', 'enable-pprof is required', 'initial-advertise-peer-urls is required', 'election-timeout is required', 'logger is required']}
+
+Final result:
+
+There are 10 misconfiguration parameters in the input: data-dir	name	listen-client-urls	auto-tls	max-wals	log-level	enable-pprof	initial-advertise-peer-urls	election-timeout	logger
+[Ciri] Reason for data-dir: data-dir is required
+[Ciri] Reason for name: name is required
+[Ciri] Reason for listen-client-urls: listen-client-urls is not a valid url
+[Ciri] Reason for auto-tls: auto-tls is not a valid boolean
+[Ciri] Reason for max-wals: max-wals is required
+[Ciri] Reason for log-level: log-level is not a valid log level
+[Ciri] Reason for enable-pprof: enable-pprof is required
+[Ciri] Reason for initial-advertise-peer-urls: initial-advertise-peer-urls is not a valid url
+[Ciri] Reason for election-timeout: election-timeout is required
+[Ciri] Reason for logger: logger is not a valid logger

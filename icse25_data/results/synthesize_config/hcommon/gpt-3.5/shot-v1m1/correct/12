@@ -1,0 +1,21 @@
+Wrong shot number:
+[9]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.hdfs.impl', 'fs.s3a.multipart.threshold', 'file.stream-buffer-size', 'ftp.stream-buffer-size', 'hadoop.http.authentication.token.validity', 'fs.permissions.umask-mode', 'hadoop.security.key.default.bitlength', 'hadoop.domainname.resolver.impl'], 'reason': ["The property 'fs.AbstractFileSystem.hdfs.impl' has the value 'org.apache.hadoop.fs.Hdfs' which is not a valid implementation for AbstractFileSystem.", "The property 'fs.s3a.multipart.threshold' has the value '128M' which should be a numeric value with a suffix from the set {K,M,G,T,P}.", "The property 'file.stream-buffer-size' has the value '8192' which is not a valid buffer size format.", "The property 'ftp.stream-buffer-size' has the value '4096' which is not a valid buffer size format.", "The property 'hadoop.http.authentication.token.validity' has the value '18000' which is not within the accepted range of validity time.", "The property 'fs.permissions.umask-mode' has the value '002' which is not in the correct format for umask.", "The property 'hadoop.security.key.default.bitlength' has the value '256' which is not within the accepted range of key lengths.", "The property 'hadoop.domainname.resolver.impl' has the value 'org.apache.hadoop.net.DNSDomainNameResolver' which is not a valid resolver implementation."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.AbstractFileSystem.hdfs.impl	fs.s3a.multipart.threshold	file.stream-buffer-size	ftp.stream-buffer-size	hadoop.http.authentication.token.validity	fs.permissions.umask-mode	hadoop.security.key.default.bitlength	hadoop.domainname.resolver.impl
+[Ciri] Reason for fs.AbstractFileSystem.hdfs.impl: The property 'fs.AbstractFileSystem.hdfs.impl' has the value 'org.apache.hadoop.fs.Hdfs' which is not a valid implementation for AbstractFileSystem.
+[Ciri] Reason for fs.s3a.multipart.threshold: The property 'fs.s3a.multipart.threshold' has the value '128M' which should be a numeric value with a suffix from the set {K,M,G,T,P}.
+[Ciri] Reason for file.stream-buffer-size: The property 'file.stream-buffer-size' has the value '8192' which is not a valid buffer size format.
+[Ciri] Reason for ftp.stream-buffer-size: The property 'ftp.stream-buffer-size' has the value '4096' which is not a valid buffer size format.
+[Ciri] Reason for hadoop.http.authentication.token.validity: The property 'hadoop.http.authentication.token.validity' has the value '18000' which is not within the accepted range of validity time.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has the value '002' which is not in the correct format for umask.
+[Ciri] Reason for hadoop.security.key.default.bitlength: The property 'hadoop.security.key.default.bitlength' has the value '256' which is not within the accepted range of key lengths.
+[Ciri] Reason for hadoop.domainname.resolver.impl: The property 'hadoop.domainname.resolver.impl' has the value 'org.apache.hadoop.net.DNSDomainNameResolver' which is not a valid resolver implementation.

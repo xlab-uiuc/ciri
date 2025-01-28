@@ -1,0 +1,19 @@
+Wrong shot number:
+[5, 6, 9]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'protected-mode'], 'reason': ["The property 'enable-module-command' has an invalid value 'no'. It should be either 'yes' or 'no'.", "The property 'protected-mode' has an invalid value 'yes'. It should be either 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'proc-title-template'], 'reason': ["The property 'enable-module-command' has an invalid value 'no'. It should be either 'yes' or 'no'.", "The property 'proc-title-template' is missing required placeholders like '{title}', '{listen-addr}', '{server-mode}'."]}
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'protected-mode'], 'reason': ["The property 'enable-module-command' has an invalid value 'no'. It should be 'yes' or 'no'.", "The property 'protected-mode' has an invalid value 'yes'. It should be 'yes' or 'no'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: enable-module-command	protected-mode
+[Ciri] Reason for enable-module-command: The property 'enable-module-command' has an invalid value 'no'. It should be either 'yes' or 'no'.
+[Ciri] Reason for protected-mode: The property 'protected-mode' has an invalid value 'yes'. It should be either 'yes' or 'no'.

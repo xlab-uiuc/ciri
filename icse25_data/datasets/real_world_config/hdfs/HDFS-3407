@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.https.server.keystore.resource</name>
+  <value>ssl-server.xml</value>
+  <description>Resource file from which ssl server keystore
+  information will be extracted
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.replication.min</name>
+  <value>1</value>
+  <description>Minimal block replication.
+  </description>
+</property>
+
+<property>
+  <name>dfs.blockreport.intervalMsec</name>
+  <value>10800000</value>
+  <description>Determines block reporting interval in milliseconds.</description>
+</property>
+
+<property>
+  <name>dfs.client.mmap.cache.timeout.ms</name>
+  <value>3600000</value>
+  <description>
+    The minimum length of time that we will keep an mmap entry in the cache
+    between uses.  If an entry is in the cache longer than this, and nobody
+    uses it, it will be removed by a background thread.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.directoryscan.interval</name>
+  <value>0</value>
+  <description>Interval in seconds for Datanode to scan data directories and
+  reconcile the difference between blocks in memory and on the disk.
+  Support multiple time unit suffix(case insensitive), as described
+  in dfs.heartbeat.interval.If no time unit is specified then seconds
+  is assumed.
+  </description>
+</property>>
+
+<property>
+  <name>dfs.datanode.data.write.bandwidthPerSec</name>
+  <value>-1</value>
+    <description>
+      Specifies the maximum amount of bandwidth that the data transfering can utilize for writing block or pipeline
+      recovery when
+      BlockConstructionStage is PIPELINE_SETUP_APPEND_RECOVERY or PIPELINE_SETUP_STREAMING_RECOVERY.
+      When the bandwidth value is zero, there is no limit.
+    </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.accept-recovery.timeout.ms</name>
+  <value>120000</value>
+  <description>
+    Quorum timeout in milliseconds during accept phase of
+    recovery/synchronization for a specific segment.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.lease-hard-limit-sec</name>
+  <value>600</value>
+    <description>
+      Determines the namenode automatic lease recovery interval in seconds.
+    </description>
+</property>
+
+</configuration>

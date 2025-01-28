@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry', 'dfs.client.block.write.replace-datanode-on-failure.min-replication', 'dfs.namenode.storageinfo.defragment.timeout.ms'], 'reason': ['The value of dfs.client.cached.conn.retry should be a positive integer, not -1.', 'The value of dfs.client.block.write.replace-datanode-on-failure.min-replication should be a non-negative integer, not -1.', 'The value of dfs.namenode.storageinfo.defragment.timeout.ms is too small. It should be a larger value in milliseconds.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.client.cached.conn.retry	dfs.client.block.write.replace-datanode-on-failure.min-replication	dfs.namenode.storageinfo.defragment.timeout.ms
+[Ciri] Reason for dfs.client.cached.conn.retry: The value of dfs.client.cached.conn.retry should be a positive integer, not -1.
+[Ciri] Reason for dfs.client.block.write.replace-datanode-on-failure.min-replication: The value of dfs.client.block.write.replace-datanode-on-failure.min-replication should be a non-negative integer, not -1.
+[Ciri] Reason for dfs.namenode.storageinfo.defragment.timeout.ms: The value of dfs.namenode.storageinfo.defragment.timeout.ms is too small. It should be a larger value in milliseconds.

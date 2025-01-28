@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 9, 7]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.worker.tieredstore.level0.dirs.mediumtype'], 'reason': ["The property 'alluxio.job.worker.rpc.port' has the value '-100.22' which is not a valid port number.", "The property 'alluxio.worker.tieredstore.level0.dirs.mediumtype' references a variable '${alluxio.worker.tieredstore.level0.alias}' which is not defined in the configuration."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.worker.tieredstore.level0.dirs.mediumtype'], 'reason': ["The property 'alluxio.job.worker.rpc.port' has the value '-100.22' which is not a valid port number.", "The property 'alluxio.worker.tieredstore.level0.dirs.mediumtype' references a variable '${alluxio.worker.tieredstore.level0.alias}' which is not defined."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.worker.tieredstore.level0.dirs.mediumtype'], 'reason': ["The property 'alluxio.job.worker.rpc.port' has the value '-100.22' which is not a valid port number.", "The property 'alluxio.worker.tieredstore.level0.dirs.mediumtype' references a variable '${alluxio.worker.tieredstore.level0.alias}' which is not defined."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.rpc.port	alluxio.worker.tieredstore.level0.dirs.mediumtype
+[Ciri] Reason for alluxio.job.worker.rpc.port: The property 'alluxio.job.worker.rpc.port' has the value '-100.22' which is not a valid port number.
+[Ciri] Reason for alluxio.worker.tieredstore.level0.dirs.mediumtype: The property 'alluxio.worker.tieredstore.level0.dirs.mediumtype' references a variable '${alluxio.worker.tieredstore.level0.alias}' which is not defined in the configuration.

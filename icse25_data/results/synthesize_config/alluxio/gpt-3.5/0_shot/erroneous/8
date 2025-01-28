@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.evictor.lfu.logbase', 'alluxio.job.master.embedded.journal.addresses', 'alluxio.user.logging.threshold', 'alluxio.jvm.monitor.sleep.interval', 'alluxio.master.metrics.time.series.interval'], 'reason': ['Invalid value format. Should be in milliseconds or seconds.', 'Invalid value format. Should not contain IP address.', 'Invalid value format. Should be in milliseconds or seconds.', 'Invalid value format. Should be in milliseconds or seconds.', 'Invalid value format. Should be in milliseconds or seconds.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.evictor.lfu.logbase', 'alluxio.user.logging.threshold', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ["Invalid value for property 'alluxio.user.client.cache.evictor.lfu.logbase'. Value should be a positive number.", "Invalid value for property 'alluxio.user.logging.threshold'. Value should be in milliseconds or a valid time format.", "Invalid value for property 'alluxio.jvm.monitor.sleep.interval'. Value should be in milliseconds or a valid time format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.evictor.lfu.logbase', 'alluxio.user.logging.threshold', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ["Invalid value for property 'alluxio.user.client.cache.evictor.lfu.logbase'. Value should be a positive number.", "Invalid value for property 'alluxio.user.logging.threshold'. Value should be in milliseconds format.", "Invalid value for property 'alluxio.jvm.monitor.sleep.interval'. Value should be in seconds format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.user.client.cache.evictor.lfu.logbase	alluxio.user.logging.threshold	alluxio.jvm.monitor.sleep.interval
+[Ciri] Reason for alluxio.user.client.cache.evictor.lfu.logbase: Invalid value for property 'alluxio.user.client.cache.evictor.lfu.logbase'. Value should be a positive number.
+[Ciri] Reason for alluxio.user.logging.threshold: Invalid value for property 'alluxio.user.logging.threshold'. Value should be in milliseconds or a valid time format.
+[Ciri] Reason for alluxio.jvm.monitor.sleep.interval: Invalid value for property 'alluxio.jvm.monitor.sleep.interval'. Value should be in milliseconds or a valid time format.

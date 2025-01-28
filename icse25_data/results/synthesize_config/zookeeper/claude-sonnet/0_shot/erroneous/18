@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['electionAlg', 'maxSessionTimeout'], 'reason': ["The 'electionAlg' property is deprecated in ZooKeeper 3.7.0 and should not be used. It is recommended to use the default election algorithm.", "The 'maxSessionTimeout' property should be a positive integer value representing the maximum session timeout in milliseconds. Setting it to 0 means that there is no maximum limit, which is not recommended for production environments."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: electionAlg	maxSessionTimeout
+[Ciri] Reason for electionAlg: The 'electionAlg' property is deprecated in ZooKeeper 3.7.0 and should not be used. It is recommended to use the default election algorithm.
+[Ciri] Reason for maxSessionTimeout: The 'maxSessionTimeout' property should be a positive integer value representing the maximum session timeout in milliseconds. Setting it to 0 means that there is no maximum limit, which is not recommended for production environments.

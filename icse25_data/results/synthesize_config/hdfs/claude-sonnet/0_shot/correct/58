@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.invalidate.work.pct.per.iteration', 'dfs.namenode.replication.max-streams-hard-limit'], 'reason': ['The value for dfs.namenode.invalidate.work.pct.per.iteration should be a float between 0 and 1, not 0.32f.', 'The value for dfs.namenode.replication.max-streams-hard-limit should be a higher number, as 1 is too low for most use cases.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.invalidate.work.pct.per.iteration	dfs.namenode.replication.max-streams-hard-limit
+[Ciri] Reason for dfs.namenode.invalidate.work.pct.per.iteration: The value for dfs.namenode.invalidate.work.pct.per.iteration should be a float between 0 and 1, not 0.32f.
+[Ciri] Reason for dfs.namenode.replication.max-streams-hard-limit: The value for dfs.namenode.replication.max-streams-hard-limit should be a higher number, as 1 is too low for most use cases.

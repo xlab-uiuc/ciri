@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.retry.throttle.interval', 'fs.s3a.ssl.channel.mode', 's3.bytes-per-checksum', 'fs.wasbs.impl', 'ipc.[port_number].weighted-cost.lockexclusive', 'file.stream-buffer-size', 'nfs.exports.allowed.hosts', 'hadoop.prometheus.endpoint.enabled'], 'reason': ["The parameter 'fs.s3a.retry.throttle.interval' has an incorrect value format. It should be in milliseconds.", "The parameter 'fs.s3a.ssl.channel.mode' has a value 'default_jsse' which may not be supported in hcommon version 3.3.0.", "The parameter 's3.bytes-per-checksum' is missing a description.", "The parameter 'fs.wasbs.impl' has an incorrect value format.", "The parameter 'ipc.[port_number].weighted-cost.lockexclusive' has an incorrect format.", "The parameter 'file.stream-buffer-size' is missing a description.", "The parameter 'nfs.exports.allowed.hosts' has an incorrect value format.", "The parameter 'hadoop.prometheus.endpoint.enabled' is missing a description."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.s3a.retry.throttle.interval	fs.s3a.ssl.channel.mode	s3.bytes-per-checksum	fs.wasbs.impl	ipc.[port_number].weighted-cost.lockexclusive	file.stream-buffer-size	nfs.exports.allowed.hosts	hadoop.prometheus.endpoint.enabled
+[Ciri] Reason for fs.s3a.retry.throttle.interval: The parameter 'fs.s3a.retry.throttle.interval' has an incorrect value format. It should be in milliseconds.
+[Ciri] Reason for fs.s3a.ssl.channel.mode: The parameter 'fs.s3a.ssl.channel.mode' has a value 'default_jsse' which may not be supported in hcommon version 3.3.0.
+[Ciri] Reason for s3.bytes-per-checksum: The parameter 's3.bytes-per-checksum' is missing a description.
+[Ciri] Reason for fs.wasbs.impl: The parameter 'fs.wasbs.impl' has an incorrect value format.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockexclusive: The parameter 'ipc.[port_number].weighted-cost.lockexclusive' has an incorrect format.
+[Ciri] Reason for file.stream-buffer-size: The parameter 'file.stream-buffer-size' is missing a description.
+[Ciri] Reason for nfs.exports.allowed.hosts: The parameter 'nfs.exports.allowed.hosts' has an incorrect value format.
+[Ciri] Reason for hadoop.prometheus.endpoint.enabled: The parameter 'hadoop.prometheus.endpoint.enabled' is missing a description.

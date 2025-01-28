@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.storage.dir.perm'], 'reason': ["The value for 'dfs.namenode.storage.dir.perm' should be in octal format for specifying permissions. It should be like '0755' instead of '1400'."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.storage.dir.perm', 'dfs.namenode.reencrypt.sleep.interval'], 'reason': ['Invalid value for dfs.namenode.storage.dir.perm. Permissions should be in octal format.', 'Invalid value for dfs.namenode.reencrypt.sleep.interval. The interval should specify units (e.g., 10m for 10 minutes).']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.storage.dir.perm'], 'reason': ["The value for property 'dfs.namenode.storage.dir.perm' should be a symbolic or octal representation of permissions, e.g., '755' or 'rwxr-xr-x'. The value '1400' is not a valid permission representation."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.storage.dir.perm
+[Ciri] Reason for dfs.namenode.storage.dir.perm: The value for 'dfs.namenode.storage.dir.perm' should be in octal format for specifying permissions. It should be like '0755' instead of '1400'.

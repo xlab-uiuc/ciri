@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.http.internal-proxy.port</name>
+  <value>-100</value>
+  <description>
+    The datanode's internal web proxy port.
+    By default it selects a random port available in runtime.
+  </description>
+</property>
+
+<property>
+  <name>dfs.block.access.key.update.interval</name>
+  <value>600</value>
+  <description>
+    Interval in minutes at which namenode updates its access keys.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.data.dir</name>
+  <value>file://${hadoop.tmp.dir}/dfs/data</value>
+  <description>Determines where on the local filesystem an DFS data node
+  should store its blocks.  If this is a comma-delimited
+  list of directories, then data will be stored in all named
+  directories, typically on different devices. The directories should be tagged
+  with corresponding storage types ([SSD]/[DISK]/[ARCHIVE]/[RAM_DISK]) for HDFS
+  storage policies. The default storage type will be DISK if the directory does
+  not have a storage type tagged explicitly. Directories that do not exist will
+  be created if local filesystem permission allows.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.failover.connection.retries.on.timeouts</name>
+  <value>0</value>
+  <description>
+    Expert only. The number of retry attempts a failover IPC client
+    will make on socket timeout when establishing a server connection.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.max.block.acquire.failures</name>
+  <value>3</value>
+  <description>
+    Maximum failures allowed when trying to get block information from a specific datanode.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.retry.times.get-last-block-length</name>
+  <value>6</value>
+  <description>
+    Number of retries for calls to fetchLocatedBlocksAndGetLastBlockLength().
+  </description>
+</property>
+
+<property>
+  <name>dfs.mover.keytab.file</name>
+  <value>/valid/file2</value>
+  <description>
+    The keytab file used by the Mover to login as its
+    service principal. The principal name is configured with
+    dfs.mover.kerberos.principal. Keytab based login can be
+    enabled with dfs.mover.keytab.enabled.
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.http.read.timeout.ms</name>
+  <value>60000</value>
+  <description>
+    Timeout in milliseconds when reading from a HTTP connection from remote
+    journals.
+  </description>
+</property>
+
+</configuration>

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes', 'alluxio.job.master.finished.job.purge.count'], 'reason': ['Invalid value format. Should be in the format <number>[KB|MB|GB|TB].', 'Invalid value. Should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes', 'alluxio.job.master.finished.job.purge.count'], 'reason': ["Invalid value format. Please specify the size in bytes for 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes'.", "Invalid value format. 'alluxio.job.master.finished.job.purge.count' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes', 'alluxio.job.master.finished.job.purge.count'], 'reason': ["Invalid value format. Please specify the size in bytes for 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes'.", "Invalid value format. Please provide a non-negative integer value for 'alluxio.job.master.finished.job.purge.count'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.block.avoid.eviction.policy.reserved.size.bytes	alluxio.job.master.finished.job.purge.count
+[Ciri] Reason for alluxio.user.block.avoid.eviction.policy.reserved.size.bytes: Invalid value format. Please specify the size in bytes for 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes'.
+[Ciri] Reason for alluxio.job.master.finished.job.purge.count: Invalid value format. Please provide a non-negative integer value for 'alluxio.job.master.finished.job.purge.count'.

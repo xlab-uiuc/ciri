@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.stream-buffer-size</name>
+  <value>8192</value>
+  <description>The size of buffer to stream files.
+  The size of this buffer should probably be a multiple of hardware
+  page size (4096 on Intel x86), and it determines how much data is
+  buffered during read and write operations.</description>
+</property>
+
+<property>
+  <name>nfs.server.port</name>
+  <value>2049</value>
+  <description>
+      Specify the port number used by Hadoop NFS.
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.enabled</name>
+  <value>false</value>
+  <description>
+    Allow users to change the storage policy on files and directories.
+  </description>
+</property>
+
+<property>
+  <name>dfs.balancer.getBlocks.min-block-size</name>
+  <value>20971520</value>
+  <description>
+    Minimum block threshold size in bytes to ignore when fetching a source's
+    block list.
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.select-input-streams.timeout.ms</name>
+  <value>40000</value>
+  <description>
+    Timeout in milliseconds for accepting streams from JournalManagers.
+  </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.inmemory.dnrpc-address</name>
+  <value>127.0.0.1</value>
+    <description>
+      The address where the aliasmap server will be running. In the case of
+      HA/Federation where multiple namenodes exist, and if the Namenode is
+      configured to run the aliasmap server
+      (dfs.provided.aliasmap.inmemory.enabled is set to true),
+      the name service id is added to the name, e.g.,
+      dfs.provided.aliasmap.inmemory.rpc.address.EXAMPLENAMESERVICE.
+      The value of this property will take the form of host:rpc-port.
+    </description>
+</property>
+
+<property>
+  <name>dfs.use.dfs.network.topology</name>
+  <value>false</value>
+    <description>
+      Enables DFSNetworkTopology to choose nodes for placing replicas.
+      When enabled, NetworkTopology will be instantiated as class defined in
+      property dfs.net.topology.impl, otherwise NetworkTopology will be
+      instantiated as class defined in property net.topology.impl.
+    </description>
+</property>
+
+<property>
+  <name>dfs.net.topology.impl</name>
+  <value>org.apache.hadoop.hdfs.net.DFSNetworkTopology</value>
+    <description>
+      The implementation class of NetworkTopology used in HDFS. By default,
+      the class org.apache.hadoop.hdfs.net.DFSNetworkTopology is specified and
+      used in block placement.
+      This property only works when dfs.use.dfs.network.topology is true.
+    </description>
+</property>
+
+</configuration>

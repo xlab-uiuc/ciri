@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.logcleaner.plugins</name>
+  <value>org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner,org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner</value>
+    <description>A comma-separated list of BaseLogCleanerDelegate invoked by
+    the LogsCleaner service. These WAL cleaners are called in order,
+    so put the cleaner that prunes the most files in front. To
+    implement your own BaseLogCleanerDelegate, just put it in HBase's classpath
+    and add the fully qualified class name here. Always add the above
+    default log cleaners in the list.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.info.bindAddress</name>
+  <value>0.0.0.0</value>
+    <description>The address for the HBase RegionServer web UI</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.info.port.auto</name>
+  <value>true</value>
+    <description>Whether or not the Master or RegionServer
+    UI should search for a port to bind to. Enables automatic port
+    search if hbase.regionserver.info.port is already in use.
+    Useful for testing, turned off by default.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.dns.interface</name>
+  <value>eth2</value>
+    <description>The name of the Network Interface from which a region server
+      should report its IP address.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.preclose.flush.size</name>
+  <value>5242880</value>
+    <description>
+      If the memstores in a region are this size or larger when we go
+      to close, run a "pre-flush" to clear out memstores before we put up
+      the region closed flag and take the region offline.  On close,
+      a flush is run under the close flag to empty memory.  During
+      this time the region is offline and we are not taking on any writes.
+      If the memstore content is large, this flush could take a long time to
+      complete.  The preflush is meant to clean out the bulk of the memstore
+      before putting up the close flag and taking the region offline so the
+      flush that runs under the close flag has little to do.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.client.tcpnodelay</name>
+  <value>true</value>
+    <description>Set no delay on rpc socket connections.  See
+    http://docs.oracle.com/javase/1.5.0/docs/api/java/net/Socket.html#getTcpNoDelay()</description>
+</property>
+
+<property>
+  <name>hbase.data.umask.enable</name>
+  <value>false</value>
+    <description>Enable, if true, that file permissions should be assigned
+      to the files written by the regionserver</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.enabled</name>
+  <value>false</value>
+    <description>Set to true to allow snapshots to be taken / restored / cloned.</description>
+</property>
+
+</configuration>

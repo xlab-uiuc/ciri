@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 7, 4]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.user.network.streaming.keepalive.time'], 'reason': ["The property 'alluxio.job.master.rpc.port' has the value '65536' which is out of the valid port range 0-65535.", "The property 'alluxio.user.network.streaming.keepalive.time' has the value '4611686018427387903' which is out of the valid range for keepalive time in nanoseconds. The max value is 9223372036854775807."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.rpc.port	alluxio.user.network.streaming.keepalive.time
+[Ciri] Reason for alluxio.job.master.rpc.port: The property 'alluxio.job.master.rpc.port' has the value '65536' which is out of the valid port range 0-65535.
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.time: The property 'alluxio.user.network.streaming.keepalive.time' has the value '4611686018427387903' which is out of the valid range for keepalive time in nanoseconds. The max value is 9223372036854775807.

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['unix_socket_directories', 'vacuum_multixact_freeze_min_age', 'max_wal_size'], 'reason': ["Incorrect value for 'unix_socket_directories'. It should be a valid directory path.", "Incorrect value for 'vacuum_multixact_freeze_min_age'. It should be specified in bytes or as a time interval.", "Incorrect value for 'max_wal_size'. It should be specified in bytes or as a time interval."]}
+
+{'hasError': True, 'errParameter': ['unix_socket_directories', 'vacuum_multixact_freeze_min_age', 'max_wal_size'], 'reason': ["The value for 'unix_socket_directories' should be a valid directory path, 'dev/urandom///' is not a valid path.", "The value for 'vacuum_multixact_freeze_min_age' should be in bytes, '5000000' is not a valid value.", "The value for 'max_wal_size' should not have 'GB' suffix, use only the numeric value."]}
+
+{'hasError': True, 'errParameter': ['unix_socket_directories', 'vacuum_multixact_freeze_min_age', 'max_wal_size'], 'reason': ["Invalid value for 'unix_socket_directories'. It should be a valid directory path.", "Invalid value for 'vacuum_multixact_freeze_min_age'. It should be an integer value.", "Invalid value for 'max_wal_size'. The value should be specified in bytes or as a unit (e.g., '2GB')."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: unix_socket_directories	vacuum_multixact_freeze_min_age	max_wal_size
+[Ciri] Reason for unix_socket_directories: Incorrect value for 'unix_socket_directories'. It should be a valid directory path.
+[Ciri] Reason for vacuum_multixact_freeze_min_age: Incorrect value for 'vacuum_multixact_freeze_min_age'. It should be specified in bytes or as a time interval.
+[Ciri] Reason for max_wal_size: Invalid value for 'max_wal_size'. The value should be specified in bytes or as a unit (e.g., '2GB').

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'client-output-buffer-limit', 'timeout', 'oom-score-adj'], 'reason': ["proto-max-bulk-len should be an integer value, not '80hhhhh'", 'client-output-buffer-limit has invalid syntax. It should be in the format: <class> <hard limit> <soft limit> <soft seconds>', 'timeout value of 2 is very low and may cause frequent client disconnections. It should be set to 0 or a higher value.', "oom-score-adj should be set to an integer value or not configured at all, 'no' is an invalid value"]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: proto-max-bulk-len	client-output-buffer-limit	timeout	oom-score-adj
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len should be an integer value, not '80hhhhh'
+[Ciri] Reason for client-output-buffer-limit: client-output-buffer-limit has invalid syntax. It should be in the format: <class> <hard limit> <soft limit> <soft seconds>
+[Ciri] Reason for timeout: timeout value of 2 is very low and may cause frequent client disconnections. It should be set to 0 or a higher value.
+[Ciri] Reason for oom-score-adj: oom-score-adj should be set to an integer value or not configured at all, 'no' is an invalid value

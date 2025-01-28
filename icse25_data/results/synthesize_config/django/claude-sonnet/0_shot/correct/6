@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_ALIAS', 'LOGGING_CONFIG', 'CSRF_HEADER_NAME'], 'reason': ['CACHE_MIDDLEWARE_ALIAS is not a valid setting in Django 4.0. It was used in older versions of Django for configuring cache middleware.', 'LOGGING_CONFIG is not a valid setting in Django 4.0. Logging configuration should be done using the LOGGING dictionary setting.', "CSRF_HEADER_NAME is not a valid setting in Django 4.0. The name of the CSRF header is now hardcoded to 'HTTP_X_CSRFTOKEN' and cannot be changed."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: CACHE_MIDDLEWARE_ALIAS	LOGGING_CONFIG	CSRF_HEADER_NAME
+[Ciri] Reason for CACHE_MIDDLEWARE_ALIAS: CACHE_MIDDLEWARE_ALIAS is not a valid setting in Django 4.0. It was used in older versions of Django for configuring cache middleware.
+[Ciri] Reason for LOGGING_CONFIG: LOGGING_CONFIG is not a valid setting in Django 4.0. Logging configuration should be done using the LOGGING dictionary setting.
+[Ciri] Reason for CSRF_HEADER_NAME: CSRF_HEADER_NAME is not a valid setting in Django 4.0. The name of the CSRF header is now hardcoded to 'HTTP_X_CSRFTOKEN' and cannot be changed.

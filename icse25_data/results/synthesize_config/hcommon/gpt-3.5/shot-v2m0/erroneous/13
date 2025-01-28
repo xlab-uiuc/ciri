@@ -1,0 +1,13 @@
+Correct shot number:
+[15, 7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.map.index.skip', 'fs.default.name', 'ipc.[port_number].weighted-cost.lockshared'], 'reason': ["The property 'io.map.index.skip' is not a valid Hadoop configuration property.", "The property 'fs.default.name' is deprecated and should be replaced with 'fs.defaultFS'.", "The property 'ipc.[port_number].weighted-cost.lockshared' contains invalid characters."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: io.map.index.skip	fs.default.name	ipc.[port_number].weighted-cost.lockshared
+[Ciri] Reason for io.map.index.skip: The property 'io.map.index.skip' is not a valid Hadoop configuration property.
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' is deprecated and should be replaced with 'fs.defaultFS'.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: The property 'ipc.[port_number].weighted-cost.lockshared' contains invalid characters.

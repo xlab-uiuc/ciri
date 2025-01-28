@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.http.address</name>
+  <value>0.0.0.0:3000</value>
+  <description>
+    The datanode http server address and port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edits.journal-plugin.qjournal</name>
+  <value>org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager</value>
+</property>
+
+<property>
+  <name>dfs.namenode.checkpoint.dir</name>
+  <value>/valid/dir1</value>
+  <description>Determines where on the local filesystem the DFS secondary
+      name node should store the temporary images to merge.
+      If this is a comma-delimited list of directories then the image is
+      replicated in all of the directories for redundancy.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.drop.cache.behind.writes</name>
+  <value>false</value>
+  <description>
+        In some workloads, the data written to HDFS is known to be significantly
+        large enough that it is unlikely to be useful to cache it in the
+        operating system buffer cache. In this case, the DataNode may be
+        configured to automatically purge all data from the buffer cache
+        after it is written to disk.
+
+        This may improve performance for some workloads by freeing buffer
+        cache space usage for more cacheable data.
+
+        If the Hadoop native libraries are not available, this configuration
+        has no effect.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.retry.policy.spec</name>
+  <value>[5000, 3, 30000, 5]</value>
+  <description>
+    Set to pairs of timeouts and retries for DFSClient.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.restart.replica.expiration</name>
+  <value>100</value>
+  <description>
+    During shutdown for restart, the amount of time in seconds budgeted for
+    datanode restart.
+  </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.inmemory.batch-size</name>
+  <value>500</value>
+    <description>
+      The batch size when iterating over the database backing the aliasmap
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.storage.dir.perm</name>
+  <value>1400</value>
+    <description>
+      Permissions for the directories on on the local filesystem where
+      the DFS namenode stores the fsImage. The permissions can either be
+      octal or symbolic.
+    </description>
+</property>
+
+</configuration>

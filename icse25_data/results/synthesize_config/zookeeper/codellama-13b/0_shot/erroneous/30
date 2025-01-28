@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'peerType', 'minSessionTimeout', 'quorum.auth.kerberos.servicePrincipal', 'quorumListenOnAllIPs', 'sslQuorumReloadCertFiles', 'syncLimit', 'sslQuorum'], 'reason': ['secureClientPort is not a valid port number', 'peerType is not a valid peer type', 'minSessionTimeout is not a valid timeout', 'quorum.auth.kerberos.servicePrincipal is not a valid kerberos service principal', 'quorumListenOnAllIPs is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'syncLimit is not a valid sync limit', 'sslQuorum is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'peerType', 'minSessionTimeout', 'quorum.auth.kerberos.servicePrincipal', 'quorumListenOnAllIPs', 'sslQuorumReloadCertFiles', 'syncLimit', 'sslQuorum'], 'reason': ['secureClientPort must be between 0 and 65535', "peerType must be either 'participant' or 'observer'", 'minSessionTimeout must be between 0 and 2147483647', "quorum.auth.kerberos.servicePrincipal must be in the format 'zkquorum/localhost'", "quorumListenOnAllIPs must be either 'true' or 'false'", "sslQuorumReloadCertFiles must be either 'true' or 'false'", 'syncLimit must be between 0 and 2147483647', "sslQuorum must be either 'true' or 'false'"]}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'peerType', 'minSessionTimeout', 'quorum.auth.kerberos.servicePrincipal', 'quorumListenOnAllIPs', 'sslQuorumReloadCertFiles', 'syncLimit', 'sslQuorum'], 'reason': ["The value of secureClientPort must be between 0 and 65535. The value of peerType must be either 'participant' or 'observer'. The value of minSessionTimeout must be between 0 and 2147483647. The value of quorum.auth.kerberos.servicePrincipal must be a valid Kerberos service principal. The value of quorumListenOnAllIPs must be either 'true' or 'false'. The value of sslQuorumReloadCertFiles must be either 'true' or 'false'. The value of syncLimit must be between 0 and 2147483647. The value of sslQuorum must be either 'true' or 'false'. "]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: secureClientPort	peerType	minSessionTimeout	quorum.auth.kerberos.servicePrincipal	quorumListenOnAllIPs	sslQuorumReloadCertFiles	syncLimit	sslQuorum
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid port number
+[Ciri] Reason for peerType: peerType must be either 'participant' or 'observer'
+[Ciri] Reason for minSessionTimeout: minSessionTimeout is not a valid timeout
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is not a valid kerberos service principal
+[Ciri] Reason for quorumListenOnAllIPs: quorumListenOnAllIPs must be either 'true' or 'false'
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles must be either 'true' or 'false'
+[Ciri] Reason for syncLimit: syncLimit is not a valid sync limit
+[Ciri] Reason for sslQuorum: sslQuorum must be either 'true' or 'false'

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.erasurecode.codec.rs-legacy.rawcoders', 'ipc.[port_number].cost-provider.impl'], 'reason': ["The property 'io.erasurecode.codec.rs-legacy.rawcoders' has an invalid value 'rs-legacy_java'.", "The property 'ipc.[port_number].cost-provider.impl' is missing the actual port number in the name."]}
+
+{'hasError': True, 'errParameter': ['io.erasurecode.codec.rs-legacy.rawcoders', 'ipc.[port_number].cost-provider.impl'], 'reason': ["The property 'io.erasurecode.codec.rs-legacy.rawcoders' has an invalid value 'rs-legacy_java'.", "The property 'ipc.[port_number].cost-provider.impl' has a placeholder '[port_number]' that needs to be replaced with an actual port number."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.conversion.rule', 'ipc.[port_number].cost-provider.impl'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.conversion.rule' has an incorrect value 'nonono'. It should be one of 'to_upper', 'to_lower', or 'none'.", "The property 'ipc.[port_number].cost-provider.impl' is missing the actual port number in the name."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.erasurecode.codec.rs-legacy.rawcoders	ipc.[port_number].cost-provider.impl
+[Ciri] Reason for io.erasurecode.codec.rs-legacy.rawcoders: The property 'io.erasurecode.codec.rs-legacy.rawcoders' has an invalid value 'rs-legacy_java'.
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: The property 'ipc.[port_number].cost-provider.impl' is missing the actual port number in the name.

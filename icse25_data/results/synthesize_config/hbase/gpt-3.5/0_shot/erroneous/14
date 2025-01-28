@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.port', 'zookeeper.session.timeout', 'hbase.hstore.compaction.min.size'], 'reason': ["The value for 'hbase.regionserver.port' is not a valid port number.", "The 'zookeeper.session.timeout' description contains unnecessary information that may cause confusion.", "The description for 'hbase.hstore.compaction.min.size' is too verbose and contains unnecessary details."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.port', 'zookeeper.session.timeout', 'hbase.hregion.memstore.block.multiplier', 'hbase.hstore.compaction.min.size'], 'reason': ["The value for 'hbase.regionserver.port' should be a positive integer representing the port number.", "The value for 'zookeeper.session.timeout' should be a positive integer representing the timeout in milliseconds.", "The value for 'hbase.hregion.memstore.block.multiplier' should be a positive integer.", "The value for 'hbase.hstore.compaction.min.size' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.port', 'zookeeper.session.timeout', 'hbase.hstore.compaction.min.size'], 'reason': ["The value for 'hbase.regionserver.port' should be a positive integer representing the port number.", "The value for 'zookeeper.session.timeout' should be a positive integer representing the timeout in milliseconds.", "The value for 'hbase.hstore.compaction.min.size' should be a positive integer representing the size in bytes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.port	zookeeper.session.timeout	hbase.hstore.compaction.min.size
+[Ciri] Reason for hbase.regionserver.port: The value for 'hbase.regionserver.port' should be a positive integer representing the port number.
+[Ciri] Reason for zookeeper.session.timeout: The value for 'zookeeper.session.timeout' should be a positive integer representing the timeout in milliseconds.
+[Ciri] Reason for hbase.hstore.compaction.min.size: The value for 'hbase.hstore.compaction.min.size' should be a positive integer representing the size in bytes.

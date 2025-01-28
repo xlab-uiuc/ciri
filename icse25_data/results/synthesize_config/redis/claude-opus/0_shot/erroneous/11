@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['aclfile', 'unixsocketperm'], 'reason': ["The 'aclfile' parameter value 'dev/urandom///users.acl' is invalid. It should be a valid file path.", "The 'unixsocketperm' parameter value '1400' is invalid. It should be a valid octal number representing file permissions, such as '0700'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: aclfile	unixsocketperm
+[Ciri] Reason for aclfile: The 'aclfile' parameter value 'dev/urandom///users.acl' is invalid. It should be a valid file path.
+[Ciri] Reason for unixsocketperm: The 'unixsocketperm' parameter value '1400' is invalid. It should be a valid octal number representing file permissions, such as '0700'.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 5, 11]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.close.timeout'], 'reason': ["The property 'alluxio.user.streaming.writer.close.timeout' has the value '1min' which is not a valid duration. The valid duration formats are '1sec', '1min', '1hour', '1day'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.close.timeout'], 'reason': ["The value of the property 'alluxio.user.streaming.writer.close.timeout' is too small. It should be at least 10 seconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.close.timeout'], 'reason': ["The value of 'alluxio.user.streaming.writer.close.timeout' is '1min' which is greater than the maximum allowed value of '59sec'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.streaming.writer.close.timeout
+[Ciri] Reason for alluxio.user.streaming.writer.close.timeout: The property 'alluxio.user.streaming.writer.close.timeout' has the value '1min' which is not a valid duration. The valid duration formats are '1sec', '1min', '1hour', '1day'.

@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'max-wals', 'listen-peer-urls', 'quota-backend-bytes', 'election-timeout', 'max-snapshots', 'logger', 'initial-cluster-token'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'", 'max-wals must be a positive integer', 'listen-peer-urls must be a list of URLs', 'quota-backend-bytes must be a positive integer', 'election-timeout must be a positive integer', 'max-snapshots must be a positive integer', "logger must be either 'zap' or 'capnslog'", 'initial-cluster-token must be a non-empty string']}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'max-snapshots'], 'reason': ['quota-backend-bytes should be a positive integer', 'max-snapshots should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'max-wals', 'quota-backend-bytes', 'election-timeout', 'max-snapshots', 'logger', 'initial-cluster-token'], 'reason': ["initial-cluster-state must be one of 'new' or 'existing'", 'max-wals must be greater than or equal to 0', 'quota-backend-bytes must be greater than or equal to 0', 'election-timeout must be greater than or equal to 0', 'max-snapshots must be greater than or equal to 0', "logger must be one of 'zap' or 'capnslog'", 'initial-cluster-token must be a non-empty string']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ["initial-cluster-state must be either 'existing' or 'new'"]}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'max-wals', 'quota-backend-bytes', 'election-timeout', 'max-snapshots', 'logger', 'initial-cluster-token'], 'reason': ["initial-cluster-state must be one of 'new', 'existing', or 'removed'", 'max-wals must be a positive integer', 'quota-backend-bytes must be a positive integer', 'election-timeout must be a positive integer', 'max-snapshots must be a positive integer', "logger must be one of 'zap', 'capnslog', or 'json'", 'initial-cluster-token must be a non-empty string']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'max-wals', 'quota-backend-bytes', 'election-timeout', 'max-snapshots', 'logger', 'initial-cluster-token'], 'reason': ["initial-cluster-state must be either 'existing' or 'new'", 'max-wals must be greater than 0', 'quota-backend-bytes must be greater than 0', 'election-timeout must be greater than 0', 'max-snapshots must be greater than 0', "logger must be either 'zap' or 'capnslog'", 'initial-cluster-token must be a non-empty string']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: initial-cluster-state	max-wals	quota-backend-bytes	election-timeout	max-snapshots	logger	initial-cluster-token
+[Ciri] Reason for initial-cluster-state: initial-cluster-state must be either 'existing' or 'new'
+[Ciri] Reason for max-wals: max-wals must be a positive integer
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes must be greater than 0
+[Ciri] Reason for election-timeout: election-timeout must be a positive integer
+[Ciri] Reason for max-snapshots: max-snapshots must be greater than 0
+[Ciri] Reason for logger: logger must be either 'zap' or 'capnslog'
+[Ciri] Reason for initial-cluster-token: initial-cluster-token must be a non-empty string

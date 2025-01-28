@@ -1,0 +1,18 @@
+Wrong shot number:
+[1, 11, 3]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.http.max.threads'], 'reason': ["The value of the property 'hbase.http.max.threads' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins'], 'reason': ["The value of the property 'hbase.master.logcleaner.plugins' should be a comma-separated list of BaseLogCleanerDelegate classes. The value 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner' is not a valid BaseLogCleanerDelegate class."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins'], 'reason': ["The value of the property 'hbase.master.logcleaner.plugins' should be a comma-separated list of BaseLogCleanerDelegate invoked by the LogsCleaner service. These WAL cleaners are called in order, so put the cleaner that prunes the most files in front. To implement your own BaseLogCleanerDelegate, just put it in HBase's classpath and add the fully qualified class name here. Always add the above default log cleaners in the list."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.master.logcleaner.plugins
+[Ciri] Reason for hbase.master.logcleaner.plugins: The value of the property 'hbase.master.logcleaner.plugins' should be a comma-separated list of BaseLogCleanerDelegate invoked by the LogsCleaner service. These WAL cleaners are called in order, so put the cleaner that prunes the most files in front. To implement your own BaseLogCleanerDelegate, just put it in HBase's classpath and add the fully qualified class name here. Always add the above default log cleaners in the list.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['zookeeper.recovery.retry.maxsleeptime', 'hbase.mob.file.cache.size'], 'reason': ["The value for 'zookeeper.recovery.retry.maxsleeptime' is expected to be an integer representing milliseconds. The provided value '9.9' is a floating-point number, which is incorrect for the usage context.", "The 'hbase.mob.file.cache.size' description mentions the default value is 1000, but the provided value is 500 without a clear indication if changing it is intentional or an oversight. Additionally, the description warns against setting it too high due to the risk of 'too many opened file handlers', but does not clarify if the provided value is within a safe range."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: zookeeper.recovery.retry.maxsleeptime	hbase.mob.file.cache.size
+[Ciri] Reason for zookeeper.recovery.retry.maxsleeptime: The value for 'zookeeper.recovery.retry.maxsleeptime' is expected to be an integer representing milliseconds. The provided value '9.9' is a floating-point number, which is incorrect for the usage context.
+[Ciri] Reason for hbase.mob.file.cache.size: The 'hbase.mob.file.cache.size' description mentions the default value is 1000, but the provided value is 500 without a clear indication if changing it is intentional or an oversight. Additionally, the description warns against setting it too high due to the risk of 'too many opened file handlers', but does not clarify if the provided value is within a safe range.

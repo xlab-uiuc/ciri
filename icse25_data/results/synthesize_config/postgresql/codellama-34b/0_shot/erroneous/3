@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'shared_buffers', 'effective_cache_size', 'maintenance_work_mem', 'checkpoint_completion_target', 'wal_buffers', 'default_statistics_target', 'random_page_cost', 'effective_io_concurrency', 'cpu_operator_cost', 'geqo_threshold'], 'reason': ['The value of max_connections is too small. It should be at least 100.', 'The value of shared_buffers is too small. It should be at least 128MB.', 'The value of effective_cache_size is too small. It should be at least 128MB.', 'The value of maintenance_work_mem is too small. It should be at least 64MB.', 'The value of checkpoint_completion_target is too small. It should be at least 0.5.', 'The value of wal_buffers is too small. It should be at least 16MB.', 'The value of default_statistics_target is too small. It should be at least 100.', 'The value of random_page_cost is too small. It should be at least 1.1.', 'The value of effective_io_concurrency is too small. It should be at least 1.', 'The value of cpu_operator_cost is too small. It should be at least 0.005.', 'The value of geqo_threshold is too small. It should be at least 12.']}
+
+Final result:
+
+There are 11 misconfiguration parameters in the input: max_connections	shared_buffers	effective_cache_size	maintenance_work_mem	checkpoint_completion_target	wal_buffers	default_statistics_target	random_page_cost	effective_io_concurrency	cpu_operator_cost	geqo_threshold
+[Ciri] Reason for max_connections: The value of max_connections is too small. It should be at least 100.
+[Ciri] Reason for shared_buffers: The value of shared_buffers is too small. It should be at least 128MB.
+[Ciri] Reason for effective_cache_size: The value of effective_cache_size is too small. It should be at least 128MB.
+[Ciri] Reason for maintenance_work_mem: The value of maintenance_work_mem is too small. It should be at least 64MB.
+[Ciri] Reason for checkpoint_completion_target: The value of checkpoint_completion_target is too small. It should be at least 0.5.
+[Ciri] Reason for wal_buffers: The value of wal_buffers is too small. It should be at least 16MB.
+[Ciri] Reason for default_statistics_target: The value of default_statistics_target is too small. It should be at least 100.
+[Ciri] Reason for random_page_cost: The value of random_page_cost is too small. It should be at least 1.1.
+[Ciri] Reason for effective_io_concurrency: The value of effective_io_concurrency is too small. It should be at least 1.
+[Ciri] Reason for cpu_operator_cost: The value of cpu_operator_cost is too small. It should be at least 0.005.
+[Ciri] Reason for geqo_threshold: The value of geqo_threshold is too small. It should be at least 12.

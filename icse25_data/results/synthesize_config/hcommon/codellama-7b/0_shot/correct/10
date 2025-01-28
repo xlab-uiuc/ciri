@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.multiobjectdelete.enable'], 'reason': ['fs.s3a.multiobjectdelete.enable is not a valid property for hcommon version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.multiobjectdelete.enable', 'fs.s3a.select.input.csv.header', 'fs.s3a.select.output.csv.quote.character', 'ipc.ping.interval', 'ipc.[port_number].weighted-cost.lockshared'], 'reason': ['fs.s3a.multiobjectdelete.enable: This property is not defined in the current version of hcommon.', 'fs.s3a.select.input.csv.header: This property is not defined in the current version of hcommon.', 'fs.s3a.select.output.csv.quote.character: This property is not defined in the current version of hcommon.', 'ipc.ping.interval: This property is not defined in the current version of hcommon.', 'ipc.[port_number].weighted-cost.lockshared: This property is not defined in the current version of hcommon.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.multiobjectdelete.enable', 'fs.s3a.select.input.csv.header', 'fs.s3a.select.output.csv.quote.character', 'ipc.ping.interval', 'ipc.[port_number].weighted-cost.lockshared'], 'reason': ['fs.s3a.multiobjectdelete.enable: This property is not defined in the current configuration file.', 'fs.s3a.select.input.csv.header: This property is not defined in the current configuration file.', 'fs.s3a.select.output.csv.quote.character: This property is not defined in the current configuration file.', 'ipc.ping.interval: This property is not defined in the current configuration file.', 'ipc.[port_number].weighted-cost.lockshared: This property is not defined in the current configuration file.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: fs.s3a.multiobjectdelete.enable	fs.s3a.select.input.csv.header	fs.s3a.select.output.csv.quote.character	ipc.ping.interval	ipc.[port_number].weighted-cost.lockshared
+[Ciri] Reason for fs.s3a.multiobjectdelete.enable: fs.s3a.multiobjectdelete.enable: This property is not defined in the current configuration file.
+[Ciri] Reason for fs.s3a.select.input.csv.header: fs.s3a.select.input.csv.header: This property is not defined in the current configuration file.
+[Ciri] Reason for fs.s3a.select.output.csv.quote.character: fs.s3a.select.output.csv.quote.character: This property is not defined in the current configuration file.
+[Ciri] Reason for ipc.ping.interval: ipc.ping.interval: This property is not defined in the current version of hcommon.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: ipc.[port_number].weighted-cost.lockshared: This property is not defined in the current configuration file.

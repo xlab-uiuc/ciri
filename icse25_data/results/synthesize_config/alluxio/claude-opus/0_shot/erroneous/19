@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.user.ufs.block.read.concurrency.max'], 'reason': ['alluxio.job.worker.rpc.port should be a non-negative integer, but is set to -100.22', 'alluxio.user.ufs.block.read.concurrency.max exceeds the maximum allowed value of 2147483647']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.rpc.port	alluxio.user.ufs.block.read.concurrency.max
+[Ciri] Reason for alluxio.job.worker.rpc.port: alluxio.job.worker.rpc.port should be a non-negative integer, but is set to -100.22
+[Ciri] Reason for alluxio.user.ufs.block.read.concurrency.max: alluxio.user.ufs.block.read.concurrency.max exceeds the maximum allowed value of 2147483647

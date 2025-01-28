@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 1, 15]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The property 'fs.permissions.umask-mode' has the value '1.1.1' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The property 'fs.permissions.umask-mode' has the value '1.1.1' which is not a valid umask value. Umask values should be in octal format (e.g., '022') or symbolic format (e.g., 'u=rwx,g=rx,o=rx')."]}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The property 'fs.permissions.umask-mode' has the value '1.1.1' which is not of the correct type (should be an octal or symbolic umask value)."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.permissions.umask-mode
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has the value '1.1.1' which is not of the correct type (should be an octal or symbolic umask value).

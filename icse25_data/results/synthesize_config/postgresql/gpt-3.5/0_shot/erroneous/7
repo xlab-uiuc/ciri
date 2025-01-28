@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['work_mem', 'plan_cache_mode', 'dynamic_library_path', 'wal_decode_buffer_size', 'max_pred_locks_per_relation'], 'reason': ['work_mem should be specified in bytes or as a valid memory unit (e.g., 8MB).', "plan_cache_mode does not have a valid value. Possible values are 'auto', 'force_custom_plan', 'force_generic_plan'.", "dynamic_library_path should not be enclosed in single quotes ('$libdir').", 'wal_decode_buffer_size should be specified in bytes or as a valid memory unit (e.g., 256kB).', 'max_pred_locks_per_relation should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['work_mem', 'plan_cache_mode', 'dynamic_library_path', 'wal_decode_buffer_size', 'max_pred_locks_per_relation'], 'reason': ['work_mem value should be specified in bytes or with units (e.g., 8MB).', "plan_cache_mode has an invalid value. Valid values are 'auto', 'force_custom_plan', or 'force_generic_plan'.", 'dynamic_library_path should not be enclosed in single quotes.', 'wal_decode_buffer_size value should be specified in bytes or with units (e.g., 256kB).', 'max_pred_locks_per_relation should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['work_mem', 'plan_cache_mode', 'dynamic_library_path', 'wal_decode_buffer_size', 'max_pred_locks_per_relation'], 'reason': ["Invalid value '8hhhhh' for work_mem. It should be a valid memory value.", "Invalid value 'auto' for plan_cache_mode. It should be 'auto' or 'force_custom_plan'.", "Invalid value '$libdir' for dynamic_library_path. It should be a valid path.", "Invalid value '256kB' for wal_decode_buffer_size. It should be a valid memory value.", "Invalid value '-4' for max_pred_locks_per_relation. It should be a positive integer."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: work_mem	plan_cache_mode	dynamic_library_path	wal_decode_buffer_size	max_pred_locks_per_relation
+[Ciri] Reason for work_mem: Invalid value '8hhhhh' for work_mem. It should be a valid memory value.
+[Ciri] Reason for plan_cache_mode: plan_cache_mode has an invalid value. Valid values are 'auto', 'force_custom_plan', or 'force_generic_plan'.
+[Ciri] Reason for dynamic_library_path: dynamic_library_path should not be enclosed in single quotes.
+[Ciri] Reason for wal_decode_buffer_size: wal_decode_buffer_size value should be specified in bytes or with units (e.g., 256kB).
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation should be a positive integer.

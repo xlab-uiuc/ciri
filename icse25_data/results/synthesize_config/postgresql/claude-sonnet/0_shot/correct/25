@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_slot_wal_keep_size', 'xmlbinary', 'enable_seqscan'], 'reason': ['max_slot_wal_keep_size should be a positive integer value representing the number of WAL files to keep for replication slots. -2 is an invalid value.', 'xmlbinary is not a valid PostgreSQL configuration parameter. It is likely a typo or intended for a different software.', 'enable_seqscan is not a valid PostgreSQL configuration parameter. It is likely a typo or intended for a different software.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max_slot_wal_keep_size	xmlbinary	enable_seqscan
+[Ciri] Reason for max_slot_wal_keep_size: max_slot_wal_keep_size should be a positive integer value representing the number of WAL files to keep for replication slots. -2 is an invalid value.
+[Ciri] Reason for xmlbinary: xmlbinary is not a valid PostgreSQL configuration parameter. It is likely a typo or intended for a different software.
+[Ciri] Reason for enable_seqscan: enable_seqscan is not a valid PostgreSQL configuration parameter. It is likely a typo or intended for a different software.

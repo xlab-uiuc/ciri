@@ -1,0 +1,16 @@
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'ipc.[port_number].decay-scheduler.decay-factor', 'tfile.fs.output.buffer.size', 'tfile.fs.input.buffer.size', 'hadoop.ssl.enabled', 'nfs.exports.allowed.hosts'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an additional 'usage' tag which is not a standard property field.", "The property 'ipc.[port_number].decay-scheduler.decay-factor' has an additional 'usage' tag which is not a standard property field.", "The property 'tfile.fs.output.buffer.size' has an additional 'usage' tag which is not a standard property field.", "The property 'tfile.fs.input.buffer.size' has an additional 'usage' tag which is not a standard property field.", "The property 'hadoop.ssl.enabled' has an additional 'usage' tag which is not a standard property field.", "The property 'nfs.exports.allowed.hosts' has an additional 'usage' tag which is not a standard property field."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.ftp.data.connection.mode	ipc.[port_number].decay-scheduler.decay-factor	tfile.fs.output.buffer.size	tfile.fs.input.buffer.size	hadoop.ssl.enabled	nfs.exports.allowed.hosts
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an additional 'usage' tag which is not a standard property field.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.decay-factor: The property 'ipc.[port_number].decay-scheduler.decay-factor' has an additional 'usage' tag which is not a standard property field.
+[Ciri] Reason for tfile.fs.output.buffer.size: The property 'tfile.fs.output.buffer.size' has an additional 'usage' tag which is not a standard property field.
+[Ciri] Reason for tfile.fs.input.buffer.size: The property 'tfile.fs.input.buffer.size' has an additional 'usage' tag which is not a standard property field.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' has an additional 'usage' tag which is not a standard property field.
+[Ciri] Reason for nfs.exports.allowed.hosts: The property 'nfs.exports.allowed.hosts' has an additional 'usage' tag which is not a standard property field.

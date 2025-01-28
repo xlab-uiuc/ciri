@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize'], 'reason': ["The parameter 'daemonize' is not supported in Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['daemonize', 'replica-serve-stale-data', 'hll-sparse-max-bytes', 'replica-announce-port', 'replica-lazy-flush', 'appendonly'], 'reason': ['daemonize is not a valid parameter for Redis 7.0.0', 'replica-serve-stale-data is not a valid parameter for Redis 7.0.0', 'hll-sparse-max-bytes is not a valid parameter for Redis 7.0.0', 'replica-announce-port is not a valid parameter for Redis 7.0.0', 'replica-lazy-flush is not a valid parameter for Redis 7.0.0', 'appendonly is not a valid parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-entries', 'replica-serve-stale-data', 'replica-lazy-flush', 'appendonly'], 'reason': ['hash-max-listpack-entries should be an integer between 0 and 65536', 'replica-serve-stale-data should be a boolean', 'replica-lazy-flush should be a boolean', 'appendonly should be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'replica-serve-stale-data', 'replica-lazy-flush', 'appendonly'], 'reason': ['daemonize is not a valid parameter for Redis 7.0.0', 'replica-serve-stale-data is not a valid parameter for Redis 7.0.0', 'replica-lazy-flush is not a valid parameter for Redis 7.0.0', 'appendonly is not a valid parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['daemonize', 'replica-serve-stale-data', 'replica-lazy-flush', 'appendonly'], 'reason': ['The daemonize option is not supported in Redis 7.0.0.', 'The replica-serve-stale-data option is not supported in Redis 7.0.0.', 'The replica-lazy-flush option is not supported in Redis 7.0.0.', 'The appendonly option is not supported in Redis 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['daemonize', 'replica-serve-stale-data', 'replica-lazy-flush', 'appendonly'], 'reason': ["The parameter 'daemonize' is not supported in Redis 7.0.0.", "The parameter 'replica-serve-stale-data' is not supported in Redis 7.0.0.", "The parameter 'replica-lazy-flush' is not supported in Redis 7.0.0.", "The parameter 'appendonly' is not supported in Redis 7.0.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: daemonize	replica-serve-stale-data	replica-lazy-flush	appendonly
+[Ciri] Reason for daemonize: The daemonize option is not supported in Redis 7.0.0.
+[Ciri] Reason for replica-serve-stale-data: The replica-serve-stale-data option is not supported in Redis 7.0.0.
+[Ciri] Reason for replica-lazy-flush: The parameter 'replica-lazy-flush' is not supported in Redis 7.0.0.
+[Ciri] Reason for appendonly: The parameter 'appendonly' is not supported in Redis 7.0.0.

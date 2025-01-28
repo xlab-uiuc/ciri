@@ -1,0 +1,19 @@
+Wrong shot number:
+[3, 1, 2]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl'], 'reason': ["The property 'quorum.auth.enableSasl' is set to false, which means SASL authentication is disabled. However, 'quorum.auth.serverRequireSasl' is set to true, which means SASL authentication is required for the server."]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl'], 'reason': ["The property 'quorum.auth.enableSasl' is set to false but 'quorum.auth.serverRequireSasl' is set to true. This means that SASL authentication is not enabled but it is required."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.serverRequireSasl
+[Ciri] Reason for quorum.auth.enableSasl: The property 'quorum.auth.enableSasl' is set to false, which means SASL authentication is disabled. However, 'quorum.auth.serverRequireSasl' is set to true, which means SASL authentication is required for the server.
+[Ciri] Reason for quorum.auth.serverRequireSasl: 

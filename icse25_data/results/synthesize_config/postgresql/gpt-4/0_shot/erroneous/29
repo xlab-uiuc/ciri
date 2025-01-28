@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_keep_segments', 'cpu_index_tuple_cost'], 'reason': ["In PostgreSQL 13.0, 'wal_keep_segments' is deprecated and replaced by 'wal_keep_size'.", "The 'cpu_index_tuple_cost' default value is 0.005, which is generally acceptable, but changing it requires careful consideration of the workload and performance metrics. It's not an error per se, but without context, it's hard to say if this adjustment is appropriate."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: wal_keep_segments	cpu_index_tuple_cost
+[Ciri] Reason for wal_keep_segments: In PostgreSQL 13.0, 'wal_keep_segments' is deprecated and replaced by 'wal_keep_size'.
+[Ciri] Reason for cpu_index_tuple_cost: The 'cpu_index_tuple_cost' default value is 0.005, which is generally acceptable, but changing it requires careful consideration of the workload and performance metrics. It's not an error per se, but without context, it's hard to say if this adjustment is appropriate.

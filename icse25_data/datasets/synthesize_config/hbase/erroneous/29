@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.client.max.perserver.tasks</name>
+  <value>4</value>
+    <description>The maximum number of concurrent mutation tasks a single HTable instance will
+    send to a single region server.</description>
+</property>
+
+<property>
+  <name>hbase.client.keyvalue.maxsize</name>
+  <value>20971520</value>
+    <description>Specifies the combined maximum allowed size of a KeyValue
+    instance. This is to set an upper boundary for a single entry saved in a
+    storage file. Since they cannot be split it helps avoiding that a region
+    cannot be split any further because the data is too large. It seems wise
+    to set this to a fraction of the maximum region size. Setting it to zero
+    or less disables the check.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.fallback-to-simple-auth-allowed</name>
+  <value>true</value>
+    <description>When a server is configured to require secure connections, it will
+      reject connection attempts from clients using SASL SIMPLE (unsecure) authentication.
+      This setting allows secure servers to accept SASL SIMPLE connections from clients
+      when the client requests.  When false (the default), the server will not allow the fallback
+      to SIMPLE authentication, and will reject the connection.  WARNING: This setting should ONLY
+      be used as a temporary measure while converting clients over to secure authentication.  It
+      MUST BE DISABLED for secure operation.</description>
+</property>
+
+<property>
+  <name>hbase.rest.readonly</name>
+  <value>false</value>
+    <description>Defines the mode the REST server will be started in. Possible values are:
+    false: All HTTP methods are permitted - GET/PUT/POST/DELETE.
+    true: Only the GET method is permitted.</description>
+</property>
+
+<property>
+  <name>hbase.data.umask.enable</name>
+  <value>false</value>
+    <description>Enable, if true, that file permissions should be assigned
+      to the files written by the regionserver</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.enabled</name>
+  <value>false</value>
+    <description>Set to true to allow snapshots to be taken / restored / cloned.</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.restore.take.failsafe.snapshot</name>
+  <value>false</value>
+    <description>Set to true to take a snapshot before the restore operation.
+      The snapshot taken will be used in case of failure, to restore the previous state.
+      At the end of the restore operation this snapshot will be deleted</description>
+</property>
+
+<property>
+  <name>hbase.hstore.checksum.algorithm</name>
+  <value>NOEXIST_ALGORITHM</value>
+    <description>
+      Name of an algorithm that is used to compute checksums. Possible values
+      are NULL, CRC32, CRC32C.
+    </description>
+</property>
+
+</configuration>

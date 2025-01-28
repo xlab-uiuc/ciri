@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'DEFAULT_CHARSET', 'SESSION_FILE_PATH', 'SECURE_CROSS_ORIGIN_OPENER_POLICY', 'CSRF_COOKIE_HTTPONLY'], 'reason': ["FILE_UPLOAD_DIRECTORY_PERMISSIONS should be set to a valid octal value or 'None'.", "DEFAULT_CHARSET should be 'utf-8' without quotes.", "SESSION_FILE_PATH should be set to a valid path or 'None'.", "SECURE_CROSS_ORIGIN_OPENER_POLICY should be set to a valid value like 'same-origin'.", 'CSRF_COOKIE_HTTPONLY should be set to either True or False.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: FILE_UPLOAD_DIRECTORY_PERMISSIONS	DEFAULT_CHARSET	SESSION_FILE_PATH	SECURE_CROSS_ORIGIN_OPENER_POLICY	CSRF_COOKIE_HTTPONLY
+[Ciri] Reason for FILE_UPLOAD_DIRECTORY_PERMISSIONS: FILE_UPLOAD_DIRECTORY_PERMISSIONS should be set to a valid octal value or 'None'.
+[Ciri] Reason for DEFAULT_CHARSET: DEFAULT_CHARSET should be 'utf-8' without quotes.
+[Ciri] Reason for SESSION_FILE_PATH: SESSION_FILE_PATH should be set to a valid path or 'None'.
+[Ciri] Reason for SECURE_CROSS_ORIGIN_OPENER_POLICY: SECURE_CROSS_ORIGIN_OPENER_POLICY should be set to a valid value like 'same-origin'.
+[Ciri] Reason for CSRF_COOKIE_HTTPONLY: CSRF_COOKIE_HTTPONLY should be set to either True or False.

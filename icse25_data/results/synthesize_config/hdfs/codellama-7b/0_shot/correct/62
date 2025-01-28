@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.locked.memory', 'dfs.datanode.data.write.bandwidthPerSec'], 'reason': ['The native libraries are not available to the DataNode, this configuration has no effect.', 'Specifies the maximum amount of bandwidth that the data transfering can utilize for writing block or pipeline recovery when BlockConstructionStage is PIPELINE_SETUP_APPEND_RECOVERY or PIPELINE_SETUP_STREAMING_RECOVERY. When the bandwidth value is zero, there is no limit.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.min'], 'reason': ['dfs.namenode.replication.min should be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.locked.memory'], 'reason': ["The datanode's maximum locked memory soft ulimit (RLIMIT_MEMLOCK) must be set to at least this value, else the datanode will abort on startup."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.min'], 'reason': ['dfs.namenode.replication.min value should be greater than or equal to 1']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.locked.memory'], 'reason': ["The datanode's maximum locked memory soft ulimit (RLIMIT_MEMLOCK) must be set to at least this value, else the datanode will abort on startup."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.max.locked.memory
+[Ciri] Reason for dfs.datanode.max.locked.memory: The datanode's maximum locked memory soft ulimit (RLIMIT_MEMLOCK) must be set to at least this value, else the datanode will abort on startup.

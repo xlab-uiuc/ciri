@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.s3a.max.total.tasks</name>
+  <value>64</value>
+  <description>The number of operations which can be queued for execution.
+  This is in addition to the number of active threads in fs.s3a.threads.max.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.output.csv.quote.character</name>
+  <value>"</value>
+  <description>
+    In S3 Select queries: the quote character for generated CSV Files.
+  </description>
+</property>
+
+<property>
+  <name>fs.wasbs.impl</name>
+  <value>org.apache.hadoop.fs.azure.NativeAzureFileSystem$Secure</value>
+  <description>The implementation class of the Secure Native Azure Filesystem</description>
+</property>
+
+<property>
+  <name>ipc.[port_number].decay-scheduler.period-ms</name>
+  <value>2500</value>
+  <description>How frequently the decay factor should be applied to the
+    operation counts of users. Higher values have less overhead, but respond
+    less quickly to changes in client behavior.
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].decay-scheduler.backoff.responsetime.enable</name>
+  <value>false</value>
+  <description>Whether or not to enable the backoff by response time feature.
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>fs.permissions.umask-mode</name>
+  <value>file://</value>
+  <description>
+    The umask used when creating files and directories.
+    Can be in octal or in symbolic. Examples are:
+    "022" (octal for u=rwx,g=r-x,o=r-x in symbolic),
+    or "u=rwx,g=rwx,o=" (symbolic for 007 in octal).
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.zk.quorum</name>
+  <value>localhost:2181</value>
+    <description>
+      List of hostname:port pairs defining the
+      zookeeper quorum binding for the registry
+    </description>
+</property>
+
+<property>
+  <name>adl.feature.ownerandgroup.enableupn</name>
+  <value>false</value>
+    <description>
+      When true : User and Group in FileStatus/AclStatus response is
+      represented as user friendly name as per Azure AD profile.
+
+      When false (default) : User and Group in FileStatus/AclStatus
+      response is represented by the unique identifier from Azure AD
+      profile (Object ID as GUID).
+
+      For optimal performance, false is recommended.
+    </description>
+</property>
+
+</configuration>

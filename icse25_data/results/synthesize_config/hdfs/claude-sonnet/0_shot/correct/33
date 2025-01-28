@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.balancer.moverThreads', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ['The value 1000 for dfs.balancer.moverThreads is too high and can cause performance issues. The recommended value is between 10 and 100.', "The value '1s' for dfs.namenode.gc.time.monitor.sleep.interval.ms is invalid. The value should be a numeric value in milliseconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.balancer.moverThreads	dfs.namenode.gc.time.monitor.sleep.interval.ms
+[Ciri] Reason for dfs.balancer.moverThreads: The value 1000 for dfs.balancer.moverThreads is too high and can cause performance issues. The recommended value is between 10 and 100.
+[Ciri] Reason for dfs.namenode.gc.time.monitor.sleep.interval.ms: The value '1s' for dfs.namenode.gc.time.monitor.sleep.interval.ms is invalid. The value should be a numeric value in milliseconds.

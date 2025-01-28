@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.handler', 'yarn.nodemanager.pmem-check-enabled', 'yarn.sharedcache.admin.address', 'yarn.scheduler.configuration.leveldb-store.compaction-interval-secs'], 'reason': ['Invalid value for yarn.resourcemanager.placement-constraints.handler: disabled. Valid values are: placement-processor, scheduler, disabled.', 'yarn.nodemanager.pmem-check-enabled should be a positive integer.', 'yarn.sharedcache.admin.address should be a valid IP address.', 'yarn.scheduler.configuration.leveldb-store.compaction-interval-secs should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.zk-appid-node.split-index'], 'reason': ['The value of yarn.resourcemanager.zk-appid-node.split-index should be between 0 and 4. The value of 5 is invalid.']}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.zk-appid-node.split-index'], 'reason': ['The value of yarn.resourcemanager.zk-appid-node.split-index is 5, which is outside the range of 0 to 4. A value larger than 0 (up to 4) should be configured if you are storing a large number of apps in ZK based RM state store and state store operations are failing due to LenError in Zookeeper.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.resourcemanager.zk-appid-node.split-index
+[Ciri] Reason for yarn.resourcemanager.zk-appid-node.split-index: The value of yarn.resourcemanager.zk-appid-node.split-index should be between 0 and 4. The value of 5 is invalid.

@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'lazyfree-lazy-eviction', 'repl-diskless-load', 'enable-protected-configs', 'set-proc-title'], 'reason': ["Invalid parameter 'cluster-announce-ip'. It should be in the format 'cluster-announce-ip <ip>'.", "Invalid parameter 'lazyfree-lazy-eviction'. Correct format is 'lazyfree-lazy-eviction yes' or 'lazyfree-lazy-eviction no'.", "Invalid parameter 'repl-diskless-load'. Correct format is 'repl-diskless-load yes' or 'repl-diskless-load no'.", "Invalid parameter 'enable-protected-configs'. Correct format is 'enable-protected-mode yes' or 'enable-protected-mode no'.", "Invalid parameter 'set-proc-title'. Correct format is 'set-proc-title <yes|no>'."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'lazyfree-lazy-eviction', 'repl-diskless-load', 'enable-protected-configs', 'set-proc-title'], 'reason': ['Invalid format for cluster-announce-ip. It should be a valid IP address.', "Invalid value for lazyfree-lazy-eviction. It should be 'yes' or 'no'.", "Invalid value for repl-diskless-load. It should be 'yes' or 'no'.", "Invalid value for enable-protected-configs. It should be 'yes' or 'no'.", "Invalid value for set-proc-title. It should be 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'lazyfree-lazy-eviction', 'repl-diskless-load', 'enable-protected-configs', 'set-proc-title'], 'reason': ["Invalid parameter 'cluster-announce-ip'. It should be in the format 'cluster-announce-ip <ip>'.", "Invalid value 'no' for 'lazyfree-lazy-eviction'. It should be 'yes' or 'no' without 'lazyfree-'.", "Invalid value 'disabled' for 'repl-diskless-load'. It should be 'enabled' or 'disabled' without 'repl-'.", "Invalid value 'no' for 'enable-protected-configs'. It should be 'yes' or 'no' without 'enable-'.", "Invalid value 'yes' for 'set-proc-title'. It should be 'yes' or 'no' without 'set-'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: cluster-announce-ip	lazyfree-lazy-eviction	repl-diskless-load	enable-protected-configs	set-proc-title
+[Ciri] Reason for cluster-announce-ip: Invalid parameter 'cluster-announce-ip'. It should be in the format 'cluster-announce-ip <ip>'.
+[Ciri] Reason for lazyfree-lazy-eviction: Invalid value for lazyfree-lazy-eviction. It should be 'yes' or 'no'.
+[Ciri] Reason for repl-diskless-load: Invalid value 'disabled' for 'repl-diskless-load'. It should be 'enabled' or 'disabled' without 'repl-'.
+[Ciri] Reason for enable-protected-configs: Invalid value 'no' for 'enable-protected-configs'. It should be 'yes' or 'no' without 'enable-'.
+[Ciri] Reason for set-proc-title: Invalid value for set-proc-title. It should be 'yes' or 'no'.

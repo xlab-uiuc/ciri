@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 13, 16]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.mover.keytab.file'], 'reason': ["The property 'dfs.mover.keytab.file' has the value '/valid/file2' which is not a valid file."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir'], 'reason': ["The property 'dfs.datanode.data.dir' has the value 'file://${hadoop.tmp.dir}/dfs/data' which is not a valid directory."]}
+
+{'hasError': True, 'errParameter': ['dfs.mover.keytab.file'], 'reason': ["The property 'dfs.mover.keytab.file' has the value '/valid/file2' which is not a valid file path."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.mover.keytab.file
+[Ciri] Reason for dfs.mover.keytab.file: The property 'dfs.mover.keytab.file' has the value '/valid/file2' which is not a valid file path.

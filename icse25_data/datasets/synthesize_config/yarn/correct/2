@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.webapp.api-service.enable</name>
+  <value>false</value>
+    <description>
+      Enable services rest api on ResourceManager.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.container.liveness-monitor.interval-ms</name>
+  <value>600000</value>
+    <description>How often to check that containers are still alive. </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.nonsecure-mode.local-user</name>
+  <value>samsuper</value>
+    <description>The UNIX user that containers will run as when
+      Linux-container-executor is used in nonsecure mode (a use case for this
+      is using cgroups) if the
+      yarn.nodemanager.linux-container-executor.nonsecure-mode.limit-users is
+      set to true.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.docker.stop.grace-period</name>
+  <value>1</value>
+    <description>A configurable value to pass to the Docker Stop command. This value
+      defines the number of seconds between the docker stop command sending
+      a SIGTERM and a SIGKILL.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.sandbox-mode.whitelist-group</name>
+  <value>samgroup</value>
+    <description>The group which will run by default without the java security
+      manager.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-metrics.enable</name>
+  <value>false</value>
+    <description>
+    Flag to enable container metrics
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.reader.class</name>
+  <value>org.apache.hadoop.yarn.server.timelineservice.storage.HBaseTimelineReaderImpl</value>
+    <description>
+      Storage implementation ATS v2 will use for the TimelineReader service.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.webapp.rest-csrf.enabled</name>
+  <value>false</value>
+    <description>
+      Enable the CSRF filter for the NM web app
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hregion.max.filesize', 'hbase.hstore.compaction.ratio'], 'reason': ['The value for hbase.hregion.max.filesize is set to 21474836480, which is 20GB. However, the recommended maximum value for HBase 2.2.7 is 10GB, so this value is too high.', "The value for hbase.hstore.compaction.ratio is set to 1.2F, which is a float value. However, this property expects a decimal value, so the 'F' suffix is incorrect."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.hregion.max.filesize	hbase.hstore.compaction.ratio
+[Ciri] Reason for hbase.hregion.max.filesize: The value for hbase.hregion.max.filesize is set to 21474836480, which is 20GB. However, the recommended maximum value for HBase 2.2.7 is 10GB, so this value is too high.
+[Ciri] Reason for hbase.hstore.compaction.ratio: The value for hbase.hstore.compaction.ratio is set to 1.2F, which is a float value. However, this property expects a decimal value, so the 'F' suffix is incorrect.

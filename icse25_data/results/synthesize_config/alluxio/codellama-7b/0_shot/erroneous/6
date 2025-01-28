@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.delete.unchecked', 'alluxio.user.conf.sync.interval', 'alluxio.proxy.stream.cache.timeout'], 'reason': ['The property alluxio.user.file.delete.unchecked is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.', 'The property alluxio.user.conf.sync.interval is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.', 'The property alluxio.proxy.stream.cache.timeout is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.delete.unchecked', 'alluxio.user.conf.sync.interval', 'alluxio.proxy.stream.cache.timeout'], 'reason': ['Invalid value for property alluxio.user.file.delete.unchecked. Valid values are true, false. Received value: true', 'Invalid value for property alluxio.user.conf.sync.interval. Valid values are 1min, 10min, 1hour, 1day, 1week, 1month. Received value: 1min', 'Invalid value for property alluxio.proxy.stream.cache.timeout. Valid values are 1min, 10min, 1hour, 1day, 1week, 1month. Received value: 2hour']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.delete.unchecked', 'alluxio.user.conf.sync.interval', 'alluxio.proxy.stream.cache.timeout'], 'reason': ['alluxio.user.file.delete.unchecked is not a valid property', 'alluxio.user.conf.sync.interval is not a valid property', 'alluxio.proxy.stream.cache.timeout is not a valid property']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.user.file.delete.unchecked	alluxio.user.conf.sync.interval	alluxio.proxy.stream.cache.timeout
+[Ciri] Reason for alluxio.user.file.delete.unchecked: The property alluxio.user.file.delete.unchecked is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.
+[Ciri] Reason for alluxio.user.conf.sync.interval: The property alluxio.user.conf.sync.interval is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.
+[Ciri] Reason for alluxio.proxy.stream.cache.timeout: The property alluxio.proxy.stream.cache.timeout is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.

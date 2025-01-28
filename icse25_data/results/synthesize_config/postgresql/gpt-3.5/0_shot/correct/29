@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem'], 'reason': ['autovacuum_work_mem should be a positive value. Set it to a specific value greater than 0.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'jit_provider', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem should be a positive integer value.', "jit_provider should be 'llvm' instead of 'llvmjit'.", 'unix_socket_permissions should be specified as an octal number, e.g., 0777.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'jit_provider', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem should be a positive value representing memory in kilobytes. Use -1 only if you want to disable autovacuum_work_mem setting.', "jit_provider should be 'llvm' for LLVM-based JIT or 'none' to disable JIT.", "unix_socket_permissions should be specified as a numeric mode (e.g., 0777) or a symbolic mode (e.g., 'rwxrwxrwx')."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: autovacuum_work_mem	jit_provider	unix_socket_permissions
+[Ciri] Reason for autovacuum_work_mem: autovacuum_work_mem should be a positive integer value.
+[Ciri] Reason for jit_provider: jit_provider should be 'llvm' instead of 'llvmjit'.
+[Ciri] Reason for unix_socket_permissions: unix_socket_permissions should be specified as an octal number, e.g., 0777.

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.maxClientCnxns', 'hbase.defaults.for.version.skip', 'hbase.rootdir.perms'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.zookeeper.property.maxClientCnxns'.", "The 'usage' tag is not a valid tag for property 'hbase.defaults.for.version.skip'.", "The 'usage' tag is not a valid tag for property 'hbase.rootdir.perms'."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.maxClientCnxns', 'hbase.defaults.for.version.skip', 'hbase.rootdir.perms'], 'reason': ["The 'hbase.zookeeper.property.dataDir' property should point to a valid directory path.", "The 'hbase.zookeeper.property.maxClientCnxns' property value should be set to 1000 instead of 150.", "The 'hbase.defaults.for.version.skip' property should have a boolean value instead of a string.", "The 'hbase.rootdir.perms' property value should be in octal format, e.g., 0750."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.maxClientCnxns', 'hbase.defaults.for.version.skip', 'hbase.rootdir.perms'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.zookeeper.property.maxClientCnxns'.", "The 'usage' tag is not a valid tag for property 'hbase.defaults.for.version.skip'.", "The 'usage' tag is not a valid tag for property 'hbase.rootdir.perms'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.zookeeper.property.maxClientCnxns	hbase.defaults.for.version.skip	hbase.rootdir.perms
+[Ciri] Reason for hbase.zookeeper.property.maxClientCnxns: The 'usage' tag is not a valid tag for property 'hbase.zookeeper.property.maxClientCnxns'.
+[Ciri] Reason for hbase.defaults.for.version.skip: The 'usage' tag is not a valid tag for property 'hbase.defaults.for.version.skip'.
+[Ciri] Reason for hbase.rootdir.perms: The 'usage' tag is not a valid tag for property 'hbase.rootdir.perms'.

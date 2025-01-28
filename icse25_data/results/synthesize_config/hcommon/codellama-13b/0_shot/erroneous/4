@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.metadatastore.fail.on.write.error', 'ipc.client.bind.wildcard.addr', 'net.topology.script.file.name', 'hadoop.security.crypto.buffer.size', 'hadoop.registry.jaas.context', 'hadoop.tags.system'], 'reason': ['The value of fs.s3a.metadatastore.fail.on.write.error should be a boolean', 'The value of ipc.client.bind.wildcard.addr should be a boolean', 'The value of net.topology.script.file.name should be a valid file path', 'The value of hadoop.security.crypto.buffer.size should be a positive integer', 'The value of hadoop.registry.jaas.context should be a valid JAAS context', 'The value of hadoop.tags.system should be a valid system tag']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.metadatastore.fail.on.write.error', 'fs.s3a.s3guard.consistency.retry.limit', 'ipc.client.bind.wildcard.addr'], 'reason': ['fs.s3a.metadatastore.fail.on.write.error: The value must be a boolean.', 'fs.s3a.s3guard.consistency.retry.limit: The value must be an integer.', 'ipc.client.bind.wildcard.addr: The value must be a boolean.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.metadatastore.fail.on.write.error', 'fs.s3a.s3guard.consistency.retry.limit', 'ipc.client.bind.wildcard.addr'], 'reason': ['fs.s3a.metadatastore.fail.on.write.error is not a valid property for hcommon version 3.3.0', 'fs.s3a.s3guard.consistency.retry.limit is not a valid property for hcommon version 3.3.0', 'ipc.client.bind.wildcard.addr is not a valid property for hcommon version 3.3.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.s3a.metadatastore.fail.on.write.error	fs.s3a.s3guard.consistency.retry.limit	ipc.client.bind.wildcard.addr
+[Ciri] Reason for fs.s3a.metadatastore.fail.on.write.error: fs.s3a.metadatastore.fail.on.write.error is not a valid property for hcommon version 3.3.0
+[Ciri] Reason for fs.s3a.s3guard.consistency.retry.limit: fs.s3a.s3guard.consistency.retry.limit: The value must be an integer.
+[Ciri] Reason for ipc.client.bind.wildcard.addr: ipc.client.bind.wildcard.addr is not a valid property for hcommon version 3.3.0

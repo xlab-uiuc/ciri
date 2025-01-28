@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 14, 1]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry', 'dfs.namenode.checkpoint.period', 'dfs.domain.socket.path'], 'reason': ["The value of the property 'dfs.client.cached.conn.retry' should be greater than or equal to 0.", "The value of the property 'dfs.namenode.checkpoint.period' should be greater than or equal to 0.", "The property 'dfs.domain.socket.path' has the value '/valid/file2' which does not follow the correct file path format."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry'], 'reason': ["The property 'dfs.client.cached.conn.retry' has the value '-1' which is less than the minimum allowed value of 0."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry'], 'reason': ["The value of the property 'dfs.client.cached.conn.retry' should be greater than or equal to 0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.client.cached.conn.retry
+[Ciri] Reason for dfs.client.cached.conn.retry: The property 'dfs.client.cached.conn.retry' has the value '-1' which is less than the minimum allowed value of 0.

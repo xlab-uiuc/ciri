@@ -1,0 +1,13 @@
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATE_FORMAT', 'FILE_UPLOAD_PERMISSIONS', 'USE_DEPRECATED_PYTZ'], 'reason': ["DATE_FORMAT 'N j, Y' is not a valid date format. It should be in the format accepted by Django.", 'FILE_UPLOAD_PERMISSIONS should be specified as an octal number, for example, 0o644.', 'USE_DEPRECATED_PYTZ is not a valid setting for Django version 4.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: DATE_FORMAT	FILE_UPLOAD_PERMISSIONS	USE_DEPRECATED_PYTZ
+[Ciri] Reason for DATE_FORMAT: DATE_FORMAT 'N j, Y' is not a valid date format. It should be in the format accepted by Django.
+[Ciri] Reason for FILE_UPLOAD_PERMISSIONS: FILE_UPLOAD_PERMISSIONS should be specified as an octal number, for example, 0o644.
+[Ciri] Reason for USE_DEPRECATED_PYTZ: USE_DEPRECATED_PYTZ is not a valid setting for Django version 4.0.

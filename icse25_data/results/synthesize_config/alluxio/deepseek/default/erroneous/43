@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 6, 7]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port'], 'reason': ["The property 'alluxio.job.worker.web.port' has the value '-100' which is not within the accepted value range for a positive integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level1.watermark.high.ratio', 'alluxio.underfs.s3.connection.ttl', 'alluxio.worker.management.tier.promote.quota.percent'], 'reason': ["The property 'alluxio.worker.tieredstore.level1.watermark.high.ratio' has the value '0.475' which is not within the accepted value {0.0-1.0}.", "The property 'alluxio.underfs.s3.connection.ttl' has the value '-2' which is not within the accepted value {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}.", "The property 'alluxio.worker.management.tier.promote.quota.percent' has the value '90' which is not within the accepted value {0-100}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port'], 'reason': ["The property 'alluxio.job.worker.web.port' has the value '-100' which is not within the accepted value range for a positive integer."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.job.worker.web.port
+[Ciri] Reason for alluxio.job.worker.web.port: The property 'alluxio.job.worker.web.port' has the value '-100' which is not within the accepted value range for a positive integer.

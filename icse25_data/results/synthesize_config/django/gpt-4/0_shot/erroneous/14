@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATA_UPLOAD_MAX_NUMBER_FIELDS', 'SECURE_REFERRER_POLICY'], 'reason': ['DATA_UPLOAD_MAX_NUMBER_FIELDS should not be negative. It defines the maximum number of fields that a form can have sent via POST. A negative value could disable this limit, which is not recommended for security reasons.', "SECURE_REFERRER_POLICY value 'same-origin' is not directly supported as a setting in Django. The correct setting for controlling the Referrer-Policy HTTP header is SECURE_REFERRER_POLICY, but its value should be one of the following: 'no-referrer', 'no-referrer-when-downgrade', 'origin', 'origin-when-cross-origin', 'same-origin', 'strict-origin', 'strict-origin-when-cross-origin', or 'unsafe-url'. However, 'same-origin' might be intended as a policy value, which is actually valid, so this might be a misunderstanding of how to apply it."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: DATA_UPLOAD_MAX_NUMBER_FIELDS	SECURE_REFERRER_POLICY
+[Ciri] Reason for DATA_UPLOAD_MAX_NUMBER_FIELDS: DATA_UPLOAD_MAX_NUMBER_FIELDS should not be negative. It defines the maximum number of fields that a form can have sent via POST. A negative value could disable this limit, which is not recommended for security reasons.
+[Ciri] Reason for SECURE_REFERRER_POLICY: SECURE_REFERRER_POLICY value 'same-origin' is not directly supported as a setting in Django. The correct setting for controlling the Referrer-Policy HTTP header is SECURE_REFERRER_POLICY, but its value should be one of the following: 'no-referrer', 'no-referrer-when-downgrade', 'origin', 'origin-when-cross-origin', 'same-origin', 'strict-origin', 'strict-origin-when-cross-origin', or 'unsafe-url'. However, 'same-origin' might be intended as a policy value, which is actually valid, so this might be a misunderstanding of how to apply it.

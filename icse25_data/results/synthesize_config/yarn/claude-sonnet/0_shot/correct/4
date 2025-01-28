@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.webapp.address', 'yarn.nodemanager.container.stderr.pattern'], 'reason': ['The yarn.nodemanager.webapp.address property is typically set to 0.0.0.0 to allow access from any host, rather than 127.0.0.1 which restricts access to the local machine only.', "The yarn.nodemanager.container.stderr.pattern property value '*STDERR*}' is incorrect. The correct value should be '*stderr*' (all lowercase) to match the default stderr file pattern used by YARN."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.webapp.address	yarn.nodemanager.container.stderr.pattern
+[Ciri] Reason for yarn.nodemanager.webapp.address: The yarn.nodemanager.webapp.address property is typically set to 0.0.0.0 to allow access from any host, rather than 127.0.0.1 which restricts access to the local machine only.
+[Ciri] Reason for yarn.nodemanager.container.stderr.pattern: The yarn.nodemanager.container.stderr.pattern property value '*STDERR*}' is incorrect. The correct value should be '*stderr*' (all lowercase) to match the default stderr file pattern used by YARN.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.ipc.server.callqueue.read.ratio', 'hbase.offpeak.end.hour'], 'reason': ["The value '999.-1.0.0' for 'hbase.regionserver.info.bindAddress' is not a valid IP address.", "The value '-1' for 'hbase.ipc.server.callqueue.read.ratio' is outside the valid range of 0.0 to 1.0.", "The value '0' for 'hbase.offpeak.end.hour' is valid, but setting it to '-1' to disable off-peak hours might have been intended as per the description. However, this is not strictly an error unless the intention was indeed to disable off-peak hours."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.info.bindAddress	hbase.ipc.server.callqueue.read.ratio	hbase.offpeak.end.hour
+[Ciri] Reason for hbase.regionserver.info.bindAddress: The value '999.-1.0.0' for 'hbase.regionserver.info.bindAddress' is not a valid IP address.
+[Ciri] Reason for hbase.ipc.server.callqueue.read.ratio: The value '-1' for 'hbase.ipc.server.callqueue.read.ratio' is outside the valid range of 0.0 to 1.0.
+[Ciri] Reason for hbase.offpeak.end.hour: The value '0' for 'hbase.offpeak.end.hour' is valid, but setting it to '-1' to disable off-peak hours might have been intended as per the description. However, this is not strictly an error unless the intention was indeed to disable off-peak hours.

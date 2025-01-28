@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.read.retry.sleep.base', 'alluxio.worker.network.writer.buffer.size.messages', 'alluxio.master.embedded.journal.catchup.retry.wait'], 'reason': ["Invalid format for 'alluxio.user.block.read.retry.sleep.base'. It should be in milliseconds format.", "Invalid format for 'alluxio.worker.network.writer.buffer.size.messages'. It should be an integer.", "Invalid format for 'alluxio.master.embedded.journal.catchup.retry.wait'. It should be in milliseconds format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.work.dir', 'alluxio.user.block.read.retry.sleep.base'], 'reason': ["Invalid property 'alluxio.work.dir'. Use 'alluxio.work.dir' instead.", "Invalid property 'alluxio.user.block.read.retry.sleep.base'. Use 'alluxio.user.block.read.retry.base.sleep' instead."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.read.retry.sleep.base', 'alluxio.worker.network.writer.buffer.size.messages', 'alluxio.master.embedded.journal.catchup.retry.wait'], 'reason': ['Invalid format for sleep base time. Should be in milliseconds.', 'Invalid value for buffer size messages. Should be an integer.', 'Invalid format for catchup retry wait time. Should include time unit (e.g., 2s, 1m).']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.user.block.read.retry.sleep.base	alluxio.worker.network.writer.buffer.size.messages	alluxio.master.embedded.journal.catchup.retry.wait
+[Ciri] Reason for alluxio.user.block.read.retry.sleep.base: Invalid format for sleep base time. Should be in milliseconds.
+[Ciri] Reason for alluxio.worker.network.writer.buffer.size.messages: Invalid format for 'alluxio.worker.network.writer.buffer.size.messages'. It should be an integer.
+[Ciri] Reason for alluxio.master.embedded.journal.catchup.retry.wait: Invalid format for 'alluxio.master.embedded.journal.catchup.retry.wait'. It should be in milliseconds format.

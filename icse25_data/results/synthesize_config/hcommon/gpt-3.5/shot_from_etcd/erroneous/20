@@ -1,0 +1,21 @@
+Wrong shot number:
+[7, 5, 8]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'hadoop.security.dns.log-slow-lookups.enabled', 'hadoop.security.groups.cache.background.reload.threads', 'hadoop.security.credential.clear-text-fallback', 'ha.zookeeper.acl', 'hadoop.ssl.keystores.factory.class', 'hadoop.security.kms.client.authentication.retry-count', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ["The property 'hadoop.security.dns.nameserver' has an invalid value 'x.0.0.0.0.0'.", "The property 'hadoop.security.dns.log-slow-lookups.enabled' should have a boolean value.", "The property 'hadoop.security.groups.cache.background.reload.threads' should have a numeric value.", "The property 'hadoop.security.credential.clear-text-fallback' should have a boolean value.", "The property 'ha.zookeeper.acl' has an invalid value 'world:anyone:rwcda'.", "The property 'hadoop.ssl.keystores.factory.class' has an invalid value 'org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory'.", "The property 'hadoop.security.kms.client.authentication.retry-count' should have a numeric value.", "The property 'hadoop.metrics.jvm.use-thread-mxbean' should have a boolean value."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hadoop.security.dns.nameserver	hadoop.security.dns.log-slow-lookups.enabled	hadoop.security.groups.cache.background.reload.threads	hadoop.security.credential.clear-text-fallback	ha.zookeeper.acl	hadoop.ssl.keystores.factory.class	hadoop.security.kms.client.authentication.retry-count	hadoop.metrics.jvm.use-thread-mxbean
+[Ciri] Reason for hadoop.security.dns.nameserver: The property 'hadoop.security.dns.nameserver' has an invalid value 'x.0.0.0.0.0'.
+[Ciri] Reason for hadoop.security.dns.log-slow-lookups.enabled: The property 'hadoop.security.dns.log-slow-lookups.enabled' should have a boolean value.
+[Ciri] Reason for hadoop.security.groups.cache.background.reload.threads: The property 'hadoop.security.groups.cache.background.reload.threads' should have a numeric value.
+[Ciri] Reason for hadoop.security.credential.clear-text-fallback: The property 'hadoop.security.credential.clear-text-fallback' should have a boolean value.
+[Ciri] Reason for ha.zookeeper.acl: The property 'ha.zookeeper.acl' has an invalid value 'world:anyone:rwcda'.
+[Ciri] Reason for hadoop.ssl.keystores.factory.class: The property 'hadoop.ssl.keystores.factory.class' has an invalid value 'org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory'.
+[Ciri] Reason for hadoop.security.kms.client.authentication.retry-count: The property 'hadoop.security.kms.client.authentication.retry-count' should have a numeric value.
+[Ciri] Reason for hadoop.metrics.jvm.use-thread-mxbean: The property 'hadoop.metrics.jvm.use-thread-mxbean' should have a boolean value.

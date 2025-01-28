@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hregion.max.filesize', 'hbase.hstore.compaction.ratio', 'hbase.ipc.server.fallback-to-simple-auth-allowed', 'hbase.status.multicast.address.ip'], 'reason': ['hbase.hregion.max.filesize is not a valid property', 'hbase.hstore.compaction.ratio is not a valid property', 'hbase.ipc.server.fallback-to-simple-auth-allowed is not a valid property', 'hbase.status.multicast.address.ip is not a valid property']}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.regionserver.port', 'hbase.zookeeper.property.clientPort', 'hbase.hregion.max.filesize', 'hbase.hstore.compaction.ratio', 'hbase.ipc.server.fallback-to-simple-auth-allowed', 'hbase.status.multicast.address.ip'], 'reason': ['hbase.local.dir is not a valid path', 'hbase.regionserver.port is not a valid port', 'hbase.zookeeper.property.clientPort is not a valid port', 'hbase.hregion.max.filesize is not a valid number', 'hbase.hstore.compaction.ratio is not a valid number', 'hbase.ipc.server.fallback-to-simple-auth-allowed is not a valid boolean', 'hbase.status.multicast.address.ip is not a valid IP address']}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.regionserver.port', 'hbase.zookeeper.property.clientPort', 'hbase.hregion.max.filesize', 'hbase.hstore.compaction.ratio', 'hbase.ipc.server.fallback-to-simple-auth-allowed', 'hbase.status.multicast.address.ip'], 'reason': ['The property hbase.local.dir is not valid.', 'The property hbase.regionserver.port is not valid.', 'The property hbase.zookeeper.property.clientPort is not valid.', 'The property hbase.hregion.max.filesize is not valid.', 'The property hbase.hstore.compaction.ratio is not valid.', 'The property hbase.ipc.server.fallback-to-simple-auth-allowed is not valid.', 'The property hbase.status.multicast.address.ip is not valid.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: hbase.local.dir	hbase.regionserver.port	hbase.zookeeper.property.clientPort	hbase.hregion.max.filesize	hbase.hstore.compaction.ratio	hbase.ipc.server.fallback-to-simple-auth-allowed	hbase.status.multicast.address.ip
+[Ciri] Reason for hbase.local.dir: The property hbase.local.dir is not valid.
+[Ciri] Reason for hbase.regionserver.port: hbase.regionserver.port is not a valid port
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The property hbase.zookeeper.property.clientPort is not valid.
+[Ciri] Reason for hbase.hregion.max.filesize: hbase.hregion.max.filesize is not a valid number
+[Ciri] Reason for hbase.hstore.compaction.ratio: hbase.hstore.compaction.ratio is not a valid number
+[Ciri] Reason for hbase.ipc.server.fallback-to-simple-auth-allowed: The property hbase.ipc.server.fallback-to-simple-auth-allowed is not valid.
+[Ciri] Reason for hbase.status.multicast.address.ip: The property hbase.status.multicast.address.ip is not valid.

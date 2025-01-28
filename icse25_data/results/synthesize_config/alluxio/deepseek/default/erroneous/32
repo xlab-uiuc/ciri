@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 1, 12]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.s3.writetype'], 'reason': ["The value 'nonono' for the property 'alluxio.proxy.s3.writetype' is not a valid option. The valid options are: MUST_CACHE, MUST_CACHE_THROUGH, MUST_CACHE_THROUGH_AND_PROMOTE, MUST_CACHE_AND_PROMOTE, ALL, NONE."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.s3.writetype'], 'reason': ["The property 'alluxio.proxy.s3.writetype' is not a valid property in Alluxio version 2.5.0."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.s3.writetype'], 'reason': ["The property 'alluxio.proxy.s3.writetype' has an invalid value 'nonono'. It should be one of the following: MUST_CACHE, MUST_CACHE_THROUGH, MUST_CACHE_THROUGH_AND_PROMOTE, MUST_PROMOTE, MUST_STORE, NO_CACHE, NO_PROMOTE, NO_STORE."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.proxy.s3.writetype
+[Ciri] Reason for alluxio.proxy.s3.writetype: The value 'nonono' for the property 'alluxio.proxy.s3.writetype' is not a valid option. The valid options are: MUST_CACHE, MUST_CACHE_THROUGH, MUST_CACHE_THROUGH_AND_PROMOTE, MUST_CACHE_AND_PROMOTE, ALL, NONE.

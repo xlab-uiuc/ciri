@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.handler.count</name>
+  <value>30</value>
+    <description>Count of RPC Listener instances spun up on RegionServers.
+      Same property is used by the Master for count of master handlers.
+      Too many handlers can be counter-productive. Make it a multiple of
+      CPU count. If mostly read-only, handlers count close to cpu count
+      does well. Start with twice the CPU count and tune from there.</description>
+</property>
+
+<property>
+  <name>zookeeper.session.timeout</name>
+  <value>-1</value>
+    <description>ZooKeeper session timeout in milliseconds. It is used in two different ways.
+      First, this value is used in the ZK client that HBase uses to connect to the ensemble.
+      It is also used by HBase when it starts a ZK server and it is passed as the 'maxSessionTimeout'.
+      See https://zookeeper.apache.org/doc/current/zookeeperProgrammers.html#ch_zkSessions.
+      For example, if an HBase region server connects to a ZK ensemble that's also managed
+      by HBase, then the session timeout will be the one specified by this configuration.
+      But, a region server that connects to an ensemble managed with a different configuration
+      will be subjected that ensemble's maxSessionTimeout. So, even though HBase might propose
+      using 90 seconds, the ensemble can have a max timeout lower than this and it will take
+      precedence. The current default maxSessionTimeout that ZK ships with is 40 seconds, which is lower than
+      HBase's.
+    </description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.dns.nameserver</name>
+  <value>default</value>
+    <description>The host name or IP address of the name server (DNS)
+      which a ZooKeeper server should use to determine the host name used by the
+      master for communication and display purposes.</description>
+</property>
+
+<property>
+  <name>hbase.client.max.perregion.tasks</name>
+  <value>0</value>
+    <description>The maximum number of concurrent mutation tasks the client will
+    maintain to a single Region. That is, if there is already
+    hbase.client.max.perregion.tasks writes in progress for this region, new puts
+    won't be sent to this region until some writes finishes.</description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.timeout.period</name>
+  <value>30000</value>
+    <description>Client scanner lease period in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.thread.compaction.throttle</name>
+  <value>2684354560</value>
+    <description>There are two different thread pools for compactions, one for large compactions and
+      the other for small compactions. This helps to keep compaction of lean tables (such as
+      hbase:meta) fast. If a compaction is larger than this threshold, it
+      goes into the large compaction pool. In most cases, the default value is appropriate. Default:
+      2 x hbase.hstore.compaction.max x hbase.hregion.memstore.flush.size (which defaults to 128MB).
+      The value field assumes that the value of hbase.hregion.memstore.flush.size is unchanged from
+      the default.</description>
+</property>
+
+<property>
+  <name>hbase.rest.threads.max</name>
+  <value>50</value>
+    <description>The maximum number of threads of the REST server thread pool.
+        Threads in the pool are reused to process REST requests. This
+        controls the maximum number of requests processed concurrently.
+        It may help to control the memory used by the REST server to
+        avoid OOM issues. If the thread pool is full, incoming requests
+        will be queued up and wait for some free threads.</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.restore.failsafe.name</name>
+  <value>hbase-failsafe-{snapshot.name}-{restore.timestamp}</value>
+    <description>Name of the failsafe snapshot taken by the restore operation.
+      You can use the {snapshot.name}, {table.name} and {restore.timestamp} variables
+      to create a name based on what you are restoring.</description>
+</property>
+
+</configuration>

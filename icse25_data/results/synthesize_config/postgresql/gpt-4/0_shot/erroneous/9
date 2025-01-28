@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hba_file', 'max_stack_depth'], 'reason': ["The correct parameter is 'hba_file', but it should not be prefixed with '//' for file paths.", "The 'max_stack_depth' value is specified in kilobytes (KB), not MB. The correct format should be an integer followed by 'kB'. For 2MB, it should be '2048kB'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hba_file	max_stack_depth
+[Ciri] Reason for hba_file: The correct parameter is 'hba_file', but it should not be prefixed with '//' for file paths.
+[Ciri] Reason for max_stack_depth: The 'max_stack_depth' value is specified in kilobytes (KB), not MB. The correct format should be an integer followed by 'kB'. For 2MB, it should be '2048kB'.

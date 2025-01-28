@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host', 'alluxio.worker.network.flowcontrol.window', 'alluxio.master.tieredstore.global.mediumtype', 'alluxio.fuse.logging.threshold', 'alluxio.job.master.embedded.journal.addresses', 'alluxio.worker.rpc.port', 'alluxio.master.rpc.executor.keepalive', 'alluxio.underfs.s3.upload.threads.max'], 'reason': ['alluxio.job.worker.bind.host should be set to 0.0.0.0', 'alluxio.worker.network.flowcontrol.window should be set to 1MB', 'alluxio.master.tieredstore.global.mediumtype should be set to SSD', 'alluxio.fuse.logging.threshold should be set to 10s', 'alluxio.job.master.embedded.journal.addresses should be set to 127.0.0.1', 'alluxio.worker.rpc.port should be set to 2001', 'alluxio.master.rpc.executor.keepalive should be set to 30sec', 'alluxio.underfs.s3.upload.threads.max should be set to 10']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.job.worker.bind.host	alluxio.worker.network.flowcontrol.window	alluxio.master.tieredstore.global.mediumtype	alluxio.fuse.logging.threshold	alluxio.job.master.embedded.journal.addresses	alluxio.worker.rpc.port	alluxio.master.rpc.executor.keepalive	alluxio.underfs.s3.upload.threads.max
+[Ciri] Reason for alluxio.job.worker.bind.host: alluxio.job.worker.bind.host should be set to 0.0.0.0
+[Ciri] Reason for alluxio.worker.network.flowcontrol.window: alluxio.worker.network.flowcontrol.window should be set to 1MB
+[Ciri] Reason for alluxio.master.tieredstore.global.mediumtype: alluxio.master.tieredstore.global.mediumtype should be set to SSD
+[Ciri] Reason for alluxio.fuse.logging.threshold: alluxio.fuse.logging.threshold should be set to 10s
+[Ciri] Reason for alluxio.job.master.embedded.journal.addresses: alluxio.job.master.embedded.journal.addresses should be set to 127.0.0.1
+[Ciri] Reason for alluxio.worker.rpc.port: alluxio.worker.rpc.port should be set to 2001
+[Ciri] Reason for alluxio.master.rpc.executor.keepalive: alluxio.master.rpc.executor.keepalive should be set to 30sec
+[Ciri] Reason for alluxio.underfs.s3.upload.threads.max: alluxio.underfs.s3.upload.threads.max should be set to 10

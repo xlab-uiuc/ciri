@@ -1,0 +1,13 @@
+Wrong shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.fast.upload.buffer', 'fs.s3a.select.input.csv.header'], 'reason': ["The property 'fs.ftp.host.port' has the value 'file://' which is not a valid port number.", "The property 'fs.s3a.fast.upload.buffer' has an invalid value 'disk'. Valid values are: disk, array, bytebuffer.", "The property 'fs.s3a.select.input.csv.header' has an invalid value 'none'. Valid values are: none, ignore, use."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.host.port	fs.s3a.fast.upload.buffer	fs.s3a.select.input.csv.header
+[Ciri] Reason for fs.ftp.host.port: The property 'fs.ftp.host.port' has the value 'file://' which is not a valid port number.
+[Ciri] Reason for fs.s3a.fast.upload.buffer: The property 'fs.s3a.fast.upload.buffer' has an invalid value 'disk'. Valid values are: disk, array, bytebuffer.
+[Ciri] Reason for fs.s3a.select.input.csv.header: The property 'fs.s3a.select.input.csv.header' has an invalid value 'none'. Valid values are: none, ignore, use.

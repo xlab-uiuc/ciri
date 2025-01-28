@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.fs.state-store.uri</name>
+  <value>${hadoop.tmp.dir}/yarn/system/rmstore</value>
+    <description>URI pointing to the location of the FileSystem path where
+    RM state will be stored. This must be supplied when using
+    org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore
+    as the value for yarn.resourcemanager.store.class</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.ha.automatic-failover.embedded</name>
+  <value>true</value>
+    <description>Enable embedded automatic failover.
+      By default, it is enabled only when HA is enabled.
+      The embedded elector relies on the RM state store to handle fencing,
+      and is primarily intended to be used in conjunction with ZKRMStateStore.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.max-completed-applications</name>
+  <value>500</value>
+    <description>The maximum number of completed applications RM keeps. </description>
+</property>
+
+<property>
+  <name>yarn.client.nodemanager-client-async.thread-pool-max-size</name>
+  <value>250</value>
+    <description>Max number of threads in NMClientAsync to process container
+    management events</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.recovery.dir</name>
+  <value>tmp////staging</value>
+    <description>The local filesystem directory in which the node manager will
+    store state when recovery is enabled.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.windows-secure-container-executor.group</name>
+  <value>xdgroup</value>
+    <description>
+    The Windows group that the windows-container-executor should run as.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.opportunistic-container-allocation.enabled</name>
+  <value>true</value>
+    <description>
+      Setting that controls whether opportunistic container allocation
+      is enabled.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.numa-awareness.read-topology</name>
+  <value>false</value>
+    <description>
+    Whether to read the NUMA topology from the system or from the
+    configurations. If the value is true then NM reads the NUMA topology from
+    system using the command 'numactl --hardware'. If the value is false then NM
+    reads the topology from the configurations
+    'yarn.nodemanager.numa-awareness.node-ids'(for node id's),
+    'yarn.nodemanager.numa-awareness.&lt;NODE_ID&gt;.memory'(for each node memory),
+    'yarn.nodemanager.numa-awareness.&lt;NODE_ID&gt;.cpus'(for each node cpus).
+    </description>
+</property>
+
+</configuration>

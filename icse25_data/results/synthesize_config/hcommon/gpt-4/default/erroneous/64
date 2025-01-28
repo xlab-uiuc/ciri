@@ -1,0 +1,26 @@
+Wrong shot number:
+[13, 4, 2]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.zk.acl'], 'reason': ["The value 'world:anyone:rwcda' for property 'hadoop.zk.acl' is not a valid ACL permission scheme. Valid permissions are 'r', 'w', 'c', 'd', 'a'. The 'rwcda' scheme contains redundant and potentially incorrect characters."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hadoop.security.sensitive-config-keys', 'hadoop.zk.acl'], 'reason': ["The property 'hadoop.security.sensitive-config-keys' value 'secret$' does not correctly use regular expression syntax for matching sensitive configuration keys.", "The property 'hadoop.zk.acl' value 'world:anyone:rwcda' is not a valid ACL configuration syntax for ZooKeeper."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.zk.acl'], 'reason': ["The value 'world:anyone:rwcda' for property 'hadoop.zk.acl' is not a valid ACL permission set. Valid permissions are 'r', 'w', 'c', 'd', 'a'. The permission 'rwcda' is not correctly formatted."]}
+
+{'hasError': True, 'errParameter': ['hadoop.zk.acl'], 'reason': ["The value 'world:anyone:rwcda' for property 'hadoop.zk.acl' is not a valid ACL permission set. Valid permissions are 'r', 'w', 'c', 'd', 'a'. The 'rwcda' sequence includes all valid permissions but is not a recognized format. Typically, permissions are specified as a comma-separated list without repetition."]}
+
+{'hasError': True, 'errParameter': ['hadoop.zk.acl'], 'reason': ["The value 'world:anyone:rwcda' for property 'hadoop.zk.acl' is not a valid ACL permission set. Valid permissions are 'r', 'w', 'c', 'd', 'a'. The permission 'rwcda' is not correctly formatted."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hadoop.zk.acl
+[Ciri] Reason for hadoop.zk.acl: The value 'world:anyone:rwcda' for property 'hadoop.zk.acl' is not a valid ACL permission set. Valid permissions are 'r', 'w', 'c', 'd', 'a'. The permission 'rwcda' is not correctly formatted.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['recovery_target_timeline', 'data_sync_retry', 'wal_skip_threshold'], 'reason': ["The 'recovery_target_timeline' parameter is not applicable for PostgreSQL version 13.0 as recovery configuration is done in postgresql.conf or via command line, but not with this specific parameter.", "'data_sync_retry' is not a recognized configuration parameter in PostgreSQL version 13.0.", "The 'wal_skip_threshold' parameter does not exist in PostgreSQL version 13.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: recovery_target_timeline	data_sync_retry	wal_skip_threshold
+[Ciri] Reason for recovery_target_timeline: The 'recovery_target_timeline' parameter is not applicable for PostgreSQL version 13.0 as recovery configuration is done in postgresql.conf or via command line, but not with this specific parameter.
+[Ciri] Reason for data_sync_retry: 'data_sync_retry' is not a recognized configuration parameter in PostgreSQL version 13.0.
+[Ciri] Reason for wal_skip_threshold: The 'wal_skip_threshold' parameter does not exist in PostgreSQL version 13.0.

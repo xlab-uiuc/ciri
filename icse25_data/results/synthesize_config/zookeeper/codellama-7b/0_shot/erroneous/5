@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'autopurge.snapRetainCount', 'syncLimit'], 'reason': ['The value of autopurge.purgeInterval must be a positive integer.', 'The value of autopurge.snapRetainCount must be a positive integer.', 'The value of syncLimit must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'autopurge.snapRetainCount'], 'reason': ['dataDir is not a directory', 'dataLogDir is not a directory', 'autopurge.snapRetainCount must be an integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'reconfigEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.snapRetainCount', 'syncEnabled', 'standaloneEnabled'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'reconfigEnabled is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'quorum.auth.kerberos.servicePrincipal is not a valid string', 'autopurge.snapRetainCount is not a valid integer', 'syncEnabled is not a valid boolean', 'standaloneEnabled is not a valid boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'reconfigEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.snapRetainCount', 'syncEnabled', 'standaloneEnabled'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'reconfigEnabled is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'quorum.auth.kerberos.servicePrincipal is not a valid string', 'autopurge.snapRetainCount is not a valid integer', 'syncEnabled is not a valid boolean', 'standaloneEnabled is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'reconfigEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.snapRetainCount', 'syncEnabled', 'standaloneEnabled'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'reconfigEnabled is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'quorum.auth.kerberos.servicePrincipal is not a valid string', 'autopurge.snapRetainCount is not a valid integer', 'syncEnabled is not a valid boolean', 'standaloneEnabled is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'quorum.auth.kerberos.servicePrincipal is not a valid property']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dataDir	dataLogDir	reconfigEnabled	sslQuorumReloadCertFiles	quorum.auth.kerberos.servicePrincipal	autopurge.snapRetainCount	syncEnabled	standaloneEnabled
+[Ciri] Reason for dataDir: dataDir is not a valid directory
+[Ciri] Reason for dataLogDir: dataLogDir is not a valid directory
+[Ciri] Reason for reconfigEnabled: reconfigEnabled is not a valid boolean
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles is not a valid boolean
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is not a valid string
+[Ciri] Reason for autopurge.snapRetainCount: autopurge.snapRetainCount is not a valid integer
+[Ciri] Reason for syncEnabled: syncEnabled is not a valid boolean
+[Ciri] Reason for standaloneEnabled: standaloneEnabled is not a valid boolean

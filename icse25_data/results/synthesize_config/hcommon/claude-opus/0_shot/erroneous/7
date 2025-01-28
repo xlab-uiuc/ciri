@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.assumed.role.session.duration', 'hadoop.security.random.device.file.path'], 'reason': ["The value '80hhhhh' for property fs.s3a.assumed.role.session.duration is invalid. It should be a duration between 15 minutes and 1 hour, specified in a format like '30m' or '1h'.", "The value '/valid/file1' for property hadoop.security.random.device.file.path is likely invalid. This path should point to a special device file like /dev/urandom on Unix systems to provide a source of random data for secure operations. A regular file path will not work."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.assumed.role.session.duration	hadoop.security.random.device.file.path
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The value '80hhhhh' for property fs.s3a.assumed.role.session.duration is invalid. It should be a duration between 15 minutes and 1 hour, specified in a format like '30m' or '1h'.
+[Ciri] Reason for hadoop.security.random.device.file.path: The value '/valid/file1' for property hadoop.security.random.device.file.path is likely invalid. This path should point to a special device file like /dev/urandom on Unix systems to provide a source of random data for secure operations. A regular file path will not work.

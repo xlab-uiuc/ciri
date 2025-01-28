@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'log_parser_stats', 'bgwriter_flush_after'], 'reason': ["autovacuum_naptime value should be specified in milliseconds, e.g., '1min' should be '60000'.", 'log_parser_stats is not a valid parameter for postgresql version 13.0.', "bgwriter_flush_after value should be specified in bytes, e.g., '1' should be '1kB' or '1MB'."]}
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'bgwriter_flush_after'], 'reason': ["autovacuum_naptime value should be specified in milliseconds, e.g., '1min' should be '1min' or '60000'.", "bgwriter_flush_after value should be specified in bytes, e.g., '1' should be '1kB' or '1MB'."]}
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'bgwriter_flush_after'], 'reason': ["autovacuum_naptime should be specified in milliseconds, e.g., '1min' should be '60000'.", "bgwriter_flush_after should be specified in bytes, e.g., '1' should be '1kB' or '1MB'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autovacuum_naptime	bgwriter_flush_after
+[Ciri] Reason for autovacuum_naptime: autovacuum_naptime value should be specified in milliseconds, e.g., '1min' should be '1min' or '60000'.
+[Ciri] Reason for bgwriter_flush_after: bgwriter_flush_after should be specified in bytes, e.g., '1' should be '1kB' or '1MB'.

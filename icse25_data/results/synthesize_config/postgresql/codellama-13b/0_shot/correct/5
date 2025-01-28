@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_replication_slots', 'max_slot_wal_keep_size'], 'reason': ['max_replication_slots should be a positive integer', 'max_slot_wal_keep_size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['max_replication_slots', 'max_slot_wal_keep_size'], 'reason': ['max_replication_slots should be an integer between 0 and 1000000', 'max_slot_wal_keep_size should be an integer between -1 and 1000000000']}
+
+{'hasError': True, 'errParameter': ['wal_level', 'max_replication_slots', 'max_slot_wal_keep_size'], 'reason': ['wal_level should be set to logical', 'max_replication_slots should be set to 5', 'max_slot_wal_keep_size should be set to -1']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: max_replication_slots	max_slot_wal_keep_size
+[Ciri] Reason for max_replication_slots: max_replication_slots should be a positive integer
+[Ciri] Reason for max_slot_wal_keep_size: max_slot_wal_keep_size should be an integer between -1 and 1000000000

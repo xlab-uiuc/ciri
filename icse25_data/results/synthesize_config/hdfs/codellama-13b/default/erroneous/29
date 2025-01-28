@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 4, 13]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern'], 'reason': ["The property 'dfs.namenode.kerberos.principal.pattern' has the value '*' which is not within the accepted value {.*@EXAMPLE.COM,.*@EXAMPLE.ORG}."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern'], 'reason': ["The property 'dfs.namenode.kerberos.principal.pattern' has the value '*' which is not within the accepted value {.*@.*,.*@.*\\..*}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.kerberos.principal.pattern
+[Ciri] Reason for dfs.namenode.kerberos.principal.pattern: The property 'dfs.namenode.kerberos.principal.pattern' has the value '*' which is not within the accepted value {.*@.*,.*@.*\..*}.

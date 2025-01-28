@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.transport.max.inbound.message.size', 'alluxio.zookeeper.job.leader.path'], 'reason': ['The value of alluxio.master.embedded.journal.transport.max.inbound.message.size should be a positive integer.', 'The value of alluxio.zookeeper.job.leader.path should be a valid file path.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.size.bytes.default', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ['alluxio.user.block.size.bytes.default should be a positive integer', 'alluxio.jvm.monitor.warn.threshold should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.size.bytes.default', 'alluxio.user.block.worker.client.pool.max', 'alluxio.worker.tieredstore.level0.alias'], 'reason': ['alluxio.user.block.size.bytes.default should be a positive integer', 'alluxio.user.block.worker.client.pool.max should be a positive integer', 'alluxio.worker.tieredstore.level0.alias should be a valid tier alias']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.transport.max.inbound.message.size', 'alluxio.zookeeper.job.leader.path'], 'reason': ['The value of alluxio.master.embedded.journal.transport.max.inbound.message.size is not a valid number', 'The value of alluxio.zookeeper.job.leader.path is not a valid file path']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.transport.max.inbound.message.size', 'alluxio.zookeeper.job.leader.path'], 'reason': ['The value of alluxio.master.embedded.journal.transport.max.inbound.message.size is not a valid size. The value should be a positive integer followed by a size unit such as KB, MB, GB, or TB.', 'The value of alluxio.zookeeper.job.leader.path is not a valid path. The value should be a valid file path.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.transport.max.inbound.message.size', 'alluxio.worker.tieredstore.level0.alias'], 'reason': ['alluxio.master.embedded.journal.transport.max.inbound.message.size must be a positive integer', 'alluxio.worker.tieredstore.level0.alias must be a valid tier alias']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.embedded.journal.transport.max.inbound.message.size	alluxio.zookeeper.job.leader.path
+[Ciri] Reason for alluxio.master.embedded.journal.transport.max.inbound.message.size: The value of alluxio.master.embedded.journal.transport.max.inbound.message.size is not a valid size. The value should be a positive integer followed by a size unit such as KB, MB, GB, or TB.
+[Ciri] Reason for alluxio.zookeeper.job.leader.path: The value of alluxio.zookeeper.job.leader.path is not a valid file path

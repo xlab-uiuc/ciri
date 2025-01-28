@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.webapp.address', 'yarn.scheduler.configuration.fs.path'], 'reason': ['The value for yarn.nodemanager.webapp.address should not contain ${yarn.nodemanager.hostname}. It should be a valid hostname or IP address.', 'The value for yarn.scheduler.configuration.fs.path should be a valid directory path, not a file path.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.webapp.address	yarn.scheduler.configuration.fs.path
+[Ciri] Reason for yarn.nodemanager.webapp.address: The value for yarn.nodemanager.webapp.address should not contain ${yarn.nodemanager.hostname}. It should be a valid hostname or IP address.
+[Ciri] Reason for yarn.scheduler.configuration.fs.path: The value for yarn.scheduler.configuration.fs.path should be a valid directory path, not a file path.

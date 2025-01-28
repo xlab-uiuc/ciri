@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.server.saslLoginContext', 'quorum.cnxn.threads.size'], 'reason': ['secureClientPort is not a valid configuration parameter in Zookeeper 3.7.0. The correct parameter is secureClientPortAddress.', 'quorum.auth.server.saslLoginContext is not a valid configuration parameter in Zookeeper 3.7.0. The correct parameter is quorum.auth.serverRequireSasl.', 'quorum.cnxn.threads.size is deprecated in Zookeeper 3.7.0 and its value will be ignored. The threads for quorum connection are now auto-scaled.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: secureClientPort	quorum.auth.server.saslLoginContext	quorum.cnxn.threads.size
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid configuration parameter in Zookeeper 3.7.0. The correct parameter is secureClientPortAddress.
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext is not a valid configuration parameter in Zookeeper 3.7.0. The correct parameter is quorum.auth.serverRequireSasl.
+[Ciri] Reason for quorum.cnxn.threads.size: quorum.cnxn.threads.size is deprecated in Zookeeper 3.7.0 and its value will be ignored. The threads for quorum connection are now auto-scaled.

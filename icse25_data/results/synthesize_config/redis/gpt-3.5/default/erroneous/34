@@ -1,0 +1,21 @@
+Wrong shot number:
+[3, 2, 4]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-announce-ip', 'unixsocketperm', 'hash-max-listpack-value'], 'reason': ["The property 'bind-source-addr' has an invalid IP address format '999.-1.0.0'.", "The property 'replica-announce-ip' has the value '5.5.5.5' which does not follow the correct IP address format.", "The property 'unixsocketperm' has an invalid permission value '1400'.", "The property 'hash-max-listpack-value' is not a valid property for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-announce-ip', 'unixsocketperm', 'hash-max-listpack-value'], 'reason': ["The property 'bind-source-addr' has an invalid IP address format.", "The property 'replica-announce-ip' has the value '5.5.5.5' which does not follow the correct IP address format.", "The property 'unixsocketperm' has an invalid permission value.", "The property 'hash-max-listpack-value' is not a valid property for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-announce-ip', 'unixsocketperm', 'hash-max-listpack-value'], 'reason': ["The property 'bind-source-addr' has an invalid IP address format.", "The property 'replica-announce-ip' has the value '5.5.5.5' which is not a valid IP address.", "The property 'unixsocketperm' should have a value between 0 and 511.", "The property 'hash-max-listpack-value' is not a valid property for Redis version 7.0.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: bind-source-addr	replica-announce-ip	unixsocketperm	hash-max-listpack-value
+[Ciri] Reason for bind-source-addr: The property 'bind-source-addr' has an invalid IP address format '999.-1.0.0'.
+[Ciri] Reason for replica-announce-ip: The property 'replica-announce-ip' has the value '5.5.5.5' which is not a valid IP address.
+[Ciri] Reason for unixsocketperm: The property 'unixsocketperm' has an invalid permission value '1400'.
+[Ciri] Reason for hash-max-listpack-value: The property 'hash-max-listpack-value' is not a valid property for Redis version 7.0.0.

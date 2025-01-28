@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.hlog.reader.impl</name>
+  <value>org.apache.hadoop.hbase.regionserver.wal.ProtobufLogReader</value>
+    <description>The WAL file reader implementation.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.majorcompaction.jitter</name>
+  <value>0.50</value>
+    <description>A multiplier applied to hbase.hregion.majorcompaction to cause compaction to occur
+      a given amount of time either side of hbase.hregion.majorcompaction. The smaller the number,
+      the closer the compactions will happen to the hbase.hregion.majorcompaction
+      interval.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.compaction.enabled</name>
+  <value>true</value>
+    <description>Enable/disable compactions on by setting true/false.
+      We can further switch compactions dynamically with the
+      compaction_switch shell command.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.kv.max</name>
+  <value>1</value>
+    <description>The maximum number of KeyValues to read and then write in a batch when flushing or
+      compacting. Set this lower if you have big KeyValues and problems with Out Of Memory
+      Exceptions Set this higher if you have wide, small rows. </description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.throughput.lower.bound</name>
+  <value>26214400</value>
+    <description>The target lower bound on aggregate compaction throughput, in bytes/sec. Allows
+    you to tune the minimum available compaction throughput when the
+    PressureAwareCompactionThroughputController throughput controller is active. (It is active by
+    default.)</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.fallback-to-simple-auth-allowed</name>
+  <value>false</value>
+    <description>When a server is configured to require secure connections, it will
+      reject connection attempts from clients using SASL SIMPLE (unsecure) authentication.
+      This setting allows secure servers to accept SASL SIMPLE connections from clients
+      when the client requests.  When false (the default), the server will not allow the fallback
+      to SIMPLE authentication, and will reject the connection.  WARNING: This setting should ONLY
+      be used as a temporary measure while converting clients over to secure authentication.  It
+      MUST BE DISABLED for secure operation.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.maxQueuedRequests</name>
+  <value>500</value>
+    <description>The maximum number of pending Thrift connections waiting in the queue. If
+     there are no idle threads in the pool, the server queues requests. Only
+     when the queue overflows, new threads are added, up to
+     hbase.thrift.maxQueuedRequests threads.</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.working.dir</name>
+  <value>/valid/dir1</value>
+    <description>Location where the snapshotting process will occur. The location of the
+      completed snapshots will not change, but the temporary directory where the snapshot
+      process occurs will be set to this location. This can be a separate filesystem than
+      the root directory, for performance increase purposes. See HBASE-21098 for more
+      information</description>
+</property>
+
+</configuration>

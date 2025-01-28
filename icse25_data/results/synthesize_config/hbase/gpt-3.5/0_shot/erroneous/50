@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.global.memstore.size'], 'reason': ["The description for 'hbase.regionserver.global.memstore.size' property mentions honoring the old 'hbase.regionserver.global.memstore.upperLimit' property if present, but the value is left empty in the configuration. It is recommended to provide a valid value for 'hbase.regionserver.global.memstore.size'."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.global.memstore.size'], 'reason': ["The description mentions honoring the old property 'hbase.regionserver.global.memstore.upperLimit' if present, but the new property name should be 'hbase.region.server.global.memstore.size.upper.limit'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.global.memstore.size
+[Ciri] Reason for hbase.regionserver.global.memstore.size: The description for 'hbase.regionserver.global.memstore.size' property mentions honoring the old 'hbase.regionserver.global.memstore.upperLimit' property if present, but the value is left empty in the configuration. It is recommended to provide a valid value for 'hbase.regionserver.global.memstore.size'.

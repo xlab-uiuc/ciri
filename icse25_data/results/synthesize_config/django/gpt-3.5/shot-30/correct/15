@@ -1,0 +1,12 @@
+Correct shot number:
+[4, 3, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_INCLUDE_SUBDOMAINS', 'PASSWORD_RESET_TIMEOUT'], 'reason': ['SECURE_HSTS_INCLUDE_SUBDOMAINS should be set to True for better security.', 'PASSWORD_RESET_TIMEOUT should not be calculated in the configuration file. It should be set to a specific value.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: SECURE_HSTS_INCLUDE_SUBDOMAINS	PASSWORD_RESET_TIMEOUT
+[Ciri] Reason for SECURE_HSTS_INCLUDE_SUBDOMAINS: SECURE_HSTS_INCLUDE_SUBDOMAINS should be set to True for better security.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: PASSWORD_RESET_TIMEOUT should not be calculated in the configuration file. It should be set to a specific value.

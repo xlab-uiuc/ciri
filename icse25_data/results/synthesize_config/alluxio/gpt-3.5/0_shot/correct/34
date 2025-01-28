@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.netty.channel', 'alluxio.user.date.format.pattern', 'alluxio.user.network.rpc.max.connections'], 'reason': ["Invalid value 'EPOLL' for property 'alluxio.user.network.streaming.netty.channel'.", "Invalid date format pattern 'MM-dd-yyyy HH:mm:ss:SSS' for property 'alluxio.user.date.format.pattern'.", "Invalid value '1' for property 'alluxio.user.network.rpc.max.connections'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.netty.channel', 'alluxio.user.date.format.pattern'], 'reason': ["Invalid value 'EPOLL' for property 'alluxio.user.network.streaming.netty.channel'.", "Invalid date format pattern 'MM-dd-yyyy HH:mm:ss:SSS' for property 'alluxio.user.date.format.pattern'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.netty.channel', 'alluxio.user.date.format.pattern', 'alluxio.user.network.rpc.max.connections'], 'reason': ["Invalid value 'EPOLL' for property 'alluxio.user.network.streaming.netty.channel'.", "Invalid date format pattern 'MM-dd-yyyy HH:mm:ss:SSS' for property 'alluxio.user.date.format.pattern'.", "Invalid value '1' for property 'alluxio.user.network.rpc.max.connections'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.user.network.streaming.netty.channel	alluxio.user.date.format.pattern	alluxio.user.network.rpc.max.connections
+[Ciri] Reason for alluxio.user.network.streaming.netty.channel: Invalid value 'EPOLL' for property 'alluxio.user.network.streaming.netty.channel'.
+[Ciri] Reason for alluxio.user.date.format.pattern: Invalid date format pattern 'MM-dd-yyyy HH:mm:ss:SSS' for property 'alluxio.user.date.format.pattern'.
+[Ciri] Reason for alluxio.user.network.rpc.max.connections: Invalid value '1' for property 'alluxio.user.network.rpc.max.connections'.

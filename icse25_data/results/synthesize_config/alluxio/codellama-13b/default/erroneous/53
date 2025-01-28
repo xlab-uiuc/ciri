@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 12, 5]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.worker.timeout'], 'reason': ["The property 'alluxio.job.master.worker.timeout' has the value '1sec' which is too short."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.worker.timeout'], 'reason': ["The property 'alluxio.job.master.worker.timeout' has the value '1sec' which is not a valid duration."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.worker.timeout'], 'reason': ["The property 'alluxio.job.master.worker.timeout' has the value '1sec' which is smaller than the minimum value '10sec'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.job.master.worker.timeout
+[Ciri] Reason for alluxio.job.master.worker.timeout: The property 'alluxio.job.master.worker.timeout' has the value '1sec' which is not a valid duration.

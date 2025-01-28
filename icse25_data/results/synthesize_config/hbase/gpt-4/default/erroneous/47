@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 9, 6]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins', 'hbase.master.loadbalancer.class'], 'reason': ["The property 'hbase.master.logcleaner.plugins' value 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner' is incorrect or not a valid class. The default cleaner is 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner'.", "The 'usage' element found within the 'hbase.master.loadbalancer.class' property is not a valid configuration element."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.master.logcleaner.plugins	hbase.master.loadbalancer.class
+[Ciri] Reason for hbase.master.logcleaner.plugins: The property 'hbase.master.logcleaner.plugins' value 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner' is incorrect or not a valid class. The default cleaner is 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner'.
+[Ciri] Reason for hbase.master.loadbalancer.class: The 'usage' element found within the 'hbase.master.loadbalancer.class' property is not a valid configuration element.

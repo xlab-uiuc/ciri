@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms', 'hadoop.security.credential.provider.path', 'fs.ftp.host', 'fs.s3a.buffer.dir', 'fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.kill.max', 'ipc.client.low-latency', 'ftp.client-write-packet-size'], 'reason': ['This property is not defined in the configuration file.', 'The value of this property is not a valid URL.', 'The value of this property is not a valid hostname.', 'The value of this property is not a valid directory.', 'The value of this property is not a valid number.', 'The value of this property is not a valid number.', 'The value of this property is not a valid boolean.', 'The value of this property is not a valid number.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.read.timeout.ms	hadoop.security.credential.provider.path	fs.ftp.host	fs.s3a.buffer.dir	fs.s3a.s3guard.ddb.table.capacity.write	ipc.client.kill.max	ipc.client.low-latency	ftp.client-write-packet-size
+[Ciri] Reason for hadoop.security.group.mapping.ldap.read.timeout.ms: This property is not defined in the configuration file.
+[Ciri] Reason for hadoop.security.credential.provider.path: The value of this property is not a valid URL.
+[Ciri] Reason for fs.ftp.host: The value of this property is not a valid hostname.
+[Ciri] Reason for fs.s3a.buffer.dir: The value of this property is not a valid directory.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: The value of this property is not a valid number.
+[Ciri] Reason for ipc.client.kill.max: The value of this property is not a valid number.
+[Ciri] Reason for ipc.client.low-latency: The value of this property is not a valid boolean.
+[Ciri] Reason for ftp.client-write-packet-size: The value of this property is not a valid number.

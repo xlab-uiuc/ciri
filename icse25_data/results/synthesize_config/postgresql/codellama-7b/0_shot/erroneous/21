@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_level'], 'reason': ['listen_addresses must be an array of strings', "wal_level must be one of 'minimal', 'replica', 'logical', or 'none'"]}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_level'], 'reason': ["listen_addresses must be set to a valid IP address or '*'", "wal_level must be set to 'archive', 'hot_standby', 'logical', or 'replica'"]}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_level'], 'reason': ['listen_addresses should be a comma-separated list of IP addresses or host names, not a single value.', "wal_level should be either 'minimal', 'replica', 'logical', or 'none'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: listen_addresses	wal_level
+[Ciri] Reason for listen_addresses: listen_addresses must be an array of strings
+[Ciri] Reason for wal_level: wal_level should be either 'minimal', 'replica', 'logical', or 'none'.

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>zookeeper.recovery.retry.maxsleeptime</name>
+  <value>120000</value>
+    <description>Max sleep time before retry zookeeper operations in milliseconds,
+    a max time is needed here so that sleep time won't grow unboundedly
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.logroll.errors.tolerated</name>
+  <value>2</value>
+    <description>The number of consecutive WAL close errors we will allow
+    before triggering a server abort.  A setting of 0 will cause the
+    region server to abort if closing the current WAL writer fails during
+    log rolling.  Even a small value (2 or 3) will allow a region server
+    to ride over transient HDFS errors.</description>
+</property>
+
+<property>
+  <name>hbase.normalizer.period</name>
+  <value>300000</value>
+    <description>Period at which the region normalizer runs in the Master.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.max</name>
+  <value>10</value>
+    <description>The maximum number of StoreFiles which will be selected for a single minor
+      compaction, regardless of the number of eligible StoreFiles. Effectively, the value of
+      hbase.hstore.compaction.max controls the length of time it takes a single compaction to
+      complete. Setting it larger means that more StoreFiles are included in a compaction. For most
+      cases, the default value is appropriate.</description>
+</property>
+
+<property>
+  <name>hbase.rest.threads.max</name>
+  <value>200</value>
+    <description>The maximum number of threads of the REST server thread pool.
+        Threads in the pool are reused to process REST requests. This
+        controls the maximum number of requests processed concurrently.
+        It may help to control the memory used by the REST server to
+        avoid OOM issues. If the thread pool is full, incoming requests
+        will be queued up and wait for some free threads.</description>
+</property>
+
+<property>
+  <name>hbase.table.max.rowsize</name>
+  <value>536870912</value>
+    <description>
+      Maximum size of single row in bytes (default is 1 Gb) for Get'ting
+      or Scan'ning without in-row scan flag set. If row size exceeds this limit
+      RowTooBigException is thrown to client.
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.thrift.framed.max_frame_size_in_mb</name>
+  <value>4</value>
+    <description>Default frame size when using framed transport, in MB</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.restore.failsafe.name</name>
+  <value>hbase-failsafe-{snapshot.name}-{restore.timestamp}</value>
+    <description>Name of the failsafe snapshot taken by the restore operation.
+      You can use the {snapshot.name}, {table.name} and {restore.timestamp} variables
+      to create a name based on what you are restoring.</description>
+</property>
+
+</configuration>

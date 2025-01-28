@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_INCLUDE_SUBDOMAINS', 'EMAIL_USE_LOCALTIME'], 'reason': ['SECURE_HSTS_INCLUDE_SUBDOMAINS should be set to True for better security.', 'EMAIL_USE_LOCALTIME should be set to False to use UTC time for emails.']}
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_INCLUDE_SUBDOMAINS', 'EMAIL_USE_LOCALTIME'], 'reason': ['SECURE_HSTS_INCLUDE_SUBDOMAINS should be set to True for better security.', 'EMAIL_USE_LOCALTIME should be set to False to use UTC time for email sending.']}
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_INCLUDE_SUBDOMAINS', 'PASSWORD_RESET_TIMEOUT', 'YEAR_MONTH_FORMAT', 'AUTH_PASSWORD_VALIDATORS', 'EMAIL_USE_LOCALTIME'], 'reason': ['SECURE_HSTS_INCLUDE_SUBDOMAINS should be set to True for better security.', 'PASSWORD_RESET_TIMEOUT value should not be calculated in the settings file. It should be a fixed value in seconds.', "YEAR_MONTH_FORMAT should be 'Y-m' for the correct format.", 'AUTH_PASSWORD_VALIDATORS should have at least one validator for security purposes.', 'EMAIL_USE_LOCALTIME should be set to False to use UTC time for emails.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: SECURE_HSTS_INCLUDE_SUBDOMAINS	EMAIL_USE_LOCALTIME
+[Ciri] Reason for SECURE_HSTS_INCLUDE_SUBDOMAINS: SECURE_HSTS_INCLUDE_SUBDOMAINS should be set to True for better security.
+[Ciri] Reason for EMAIL_USE_LOCALTIME: EMAIL_USE_LOCALTIME should be set to False to use UTC time for emails.

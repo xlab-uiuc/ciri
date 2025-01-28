@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 7, 5]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' has the value '/valid/file2' which is not a valid cgroups hierarchy."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.env-whitelist'], 'reason': ["The property 'yarn.nodemanager.env-whitelist' has the value 'JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_HOME,PATH,LANG,TZ' which contains the value 'HADOOP_YARN_HOME' which is not a valid environment variable."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' has the value '/valid/file2' which contains a comma. This is not allowed."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.linux-container-executor.cgroups.hierarchy
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.hierarchy: The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' has the value '/valid/file2' which is not a valid cgroups hierarchy.

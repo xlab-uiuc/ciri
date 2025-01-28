@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.mount.table.root.alluxio', 'alluxio.job.master.rpc.addresses'], 'reason': ["The value for 'alluxio.master.mount.table.root.alluxio' should start with '/' instead of '/valid/file2'.", "The value for 'alluxio.job.master.rpc.addresses' should be a comma-separated list of host:port pairs, not just an IP address."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.mount.table.root.alluxio	alluxio.job.master.rpc.addresses
+[Ciri] Reason for alluxio.master.mount.table.root.alluxio: The value for 'alluxio.master.mount.table.root.alluxio' should start with '/' instead of '/valid/file2'.
+[Ciri] Reason for alluxio.job.master.rpc.addresses: The value for 'alluxio.job.master.rpc.addresses' should be a comma-separated list of host:port pairs, not just an IP address.

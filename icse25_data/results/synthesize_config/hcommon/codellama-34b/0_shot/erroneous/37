@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.conversion.rule', 'io.erasurecode.codec.rs-legacy.rawcoders', 'fs.s3a.socket.recv.buffer', 'ipc.client.low-latency', 'ipc.client.ping', 'ipc.[port_number].cost-provider.impl', 'file.stream-buffer-size', 'ftp.bytes-per-checksum'], 'reason': ['The value of hadoop.security.group.mapping.ldap.conversion.rule is not one of the supported values.', 'io.erasurecode.codec.rs-legacy.rawcoders is not a supported property.', 'The value of fs.s3a.socket.recv.buffer is not a valid integer.', 'The value of ipc.client.low-latency is not a valid boolean.', 'The value of ipc.client.ping is not a valid boolean.', 'The value of ipc.[port_number].cost-provider.impl is not a valid class.', 'The value of file.stream-buffer-size is not a valid integer.', 'The value of ftp.bytes-per-checksum is not a valid integer.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.conversion.rule	io.erasurecode.codec.rs-legacy.rawcoders	fs.s3a.socket.recv.buffer	ipc.client.low-latency	ipc.client.ping	ipc.[port_number].cost-provider.impl	file.stream-buffer-size	ftp.bytes-per-checksum
+[Ciri] Reason for hadoop.security.group.mapping.ldap.conversion.rule: The value of hadoop.security.group.mapping.ldap.conversion.rule is not one of the supported values.
+[Ciri] Reason for io.erasurecode.codec.rs-legacy.rawcoders: io.erasurecode.codec.rs-legacy.rawcoders is not a supported property.
+[Ciri] Reason for fs.s3a.socket.recv.buffer: The value of fs.s3a.socket.recv.buffer is not a valid integer.
+[Ciri] Reason for ipc.client.low-latency: The value of ipc.client.low-latency is not a valid boolean.
+[Ciri] Reason for ipc.client.ping: The value of ipc.client.ping is not a valid boolean.
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: The value of ipc.[port_number].cost-provider.impl is not a valid class.
+[Ciri] Reason for file.stream-buffer-size: The value of file.stream-buffer-size is not a valid integer.
+[Ciri] Reason for ftp.bytes-per-checksum: The value of ftp.bytes-per-checksum is not a valid integer.

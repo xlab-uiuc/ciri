@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 8, 16]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.volumes.replica-add.threadpool.size', 'dfs.datanode.network.counts.cache.max.size'], 'reason': ["The property 'dfs.datanode.volumes.replica-add.threadpool.size' has the value '0.1' which is not a valid integer.", "The property 'dfs.datanode.network.counts.cache.max.size' has the value '1073741823' which exceeds the allowed maximum value of 2147483647."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.volumes.replica-add.threadpool.size	dfs.datanode.network.counts.cache.max.size
+[Ciri] Reason for dfs.datanode.volumes.replica-add.threadpool.size: The property 'dfs.datanode.volumes.replica-add.threadpool.size' has the value '0.1' which is not a valid integer.
+[Ciri] Reason for dfs.datanode.network.counts.cache.max.size: The property 'dfs.datanode.network.counts.cache.max.size' has the value '1073741823' which exceeds the allowed maximum value of 2147483647.

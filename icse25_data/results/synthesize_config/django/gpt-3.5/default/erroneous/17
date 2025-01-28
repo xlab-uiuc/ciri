@@ -1,0 +1,19 @@
+Wrong shot number:
+[1, 3, 5]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'MANAGERS'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' should have an integer value, not a float.", "The property 'MANAGERS' is referencing 'ADMINS' which should be a list of email addresses, not a variable."]}
+
+{'hasError': True, 'errParameter': ['MANAGERS'], 'reason': ["The property 'MANAGERS' is referencing 'ADMINS' which is not defined. It should be a list of email addresses."]}
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'MANAGERS'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' should have an integer value instead of '1.5'.", "The property 'MANAGERS' is referencing 'ADMINS' which is not defined."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	MANAGERS
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: The property 'CACHE_MIDDLEWARE_SECONDS' should have an integer value, not a float.
+[Ciri] Reason for MANAGERS: The property 'MANAGERS' is referencing 'ADMINS' which should be a list of email addresses, not a variable.

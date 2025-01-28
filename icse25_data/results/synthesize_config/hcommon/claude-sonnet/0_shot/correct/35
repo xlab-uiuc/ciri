@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.priority.levels', 'ipc.[port_number].decay-scheduler.period-ms', 'ipc.[port_number].weighted-cost.lockexclusive'], 'reason': ["The properties 'ipc.[port_number].scheduler.priority.levels', 'ipc.[port_number].decay-scheduler.period-ms', and 'ipc.[port_number].weighted-cost.lockexclusive' are not valid properties in Apache Hadoop Common 3.3.0. These properties are related to the RPC scheduler and are specific to the YARN or HDFS components, not the common library.", "The correct property names for these configurations in Apache Hadoop Common 3.3.0 are 'ipc.server.scheduler.priority.levels', 'ipc.server.decay-scheduler.period-ms', and 'ipc.server.weighted-cost.lockexclusive', respectively."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: ipc.[port_number].scheduler.priority.levels	ipc.[port_number].decay-scheduler.period-ms	ipc.[port_number].weighted-cost.lockexclusive
+[Ciri] Reason for ipc.[port_number].scheduler.priority.levels: The properties 'ipc.[port_number].scheduler.priority.levels', 'ipc.[port_number].decay-scheduler.period-ms', and 'ipc.[port_number].weighted-cost.lockexclusive' are not valid properties in Apache Hadoop Common 3.3.0. These properties are related to the RPC scheduler and are specific to the YARN or HDFS components, not the common library.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.period-ms: The correct property names for these configurations in Apache Hadoop Common 3.3.0 are 'ipc.server.scheduler.priority.levels', 'ipc.server.decay-scheduler.period-ms', and 'ipc.server.weighted-cost.lockexclusive', respectively.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockexclusive: 

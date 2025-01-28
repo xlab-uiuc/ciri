@@ -1,0 +1,17 @@
+Wrong shot number:
+[7]
+
+Correct shot number:
+[8, 1, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'tfile.fs.output.buffer.size', 'tfile.fs.input.buffer.size', 'hadoop.ssl.enabled'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an additional 'usage' tag which is not a standard property attribute.", "The property 'tfile.fs.output.buffer.size' has an additional 'usage' tag which is not a standard property attribute.", "The property 'tfile.fs.input.buffer.size' has an additional 'usage' tag which is not a standard property attribute.", "The property 'hadoop.ssl.enabled' is deprecated and should be replaced with 'dfs.http.policy' and 'yarn.http.policy' instead."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.ftp.data.connection.mode	tfile.fs.output.buffer.size	tfile.fs.input.buffer.size	hadoop.ssl.enabled
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an additional 'usage' tag which is not a standard property attribute.
+[Ciri] Reason for tfile.fs.output.buffer.size: The property 'tfile.fs.output.buffer.size' has an additional 'usage' tag which is not a standard property attribute.
+[Ciri] Reason for tfile.fs.input.buffer.size: The property 'tfile.fs.input.buffer.size' has an additional 'usage' tag which is not a standard property attribute.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' is deprecated and should be replaced with 'dfs.http.policy' and 'yarn.http.policy' instead.

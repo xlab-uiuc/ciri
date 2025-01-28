@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.info.port.auto</name>
+  <value>false</value>
+    <description>Whether or not the Master or RegionServer
+    UI should search for a port to bind to. Enables automatic port
+    search if hbase.regionserver.info.port is already in use.
+    Useful for testing, turned off by default.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.majorcompaction</name>
+  <value>604800000</value>
+    <description>Time between major compactions, expressed in milliseconds. Set to 0 to disable
+      time-based automatic major compactions. User-requested and size-based major compactions will
+      still run. This value is multiplied by hbase.hregion.majorcompaction.jitter to cause
+      compaction to start at a somewhat-random time during a given window of time. The default value
+      is 7 days, expressed in milliseconds. If major compactions are causing disruption in your
+      environment, you can configure them to run at off-peak times for your deployment, or disable
+      time-based major compactions by setting this parameter to 0, and run major compactions in a
+      cron job or by another external mechanism.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.max.size</name>
+  <value>4611686018427387903</value>
+    <description>A StoreFile (or a selection of StoreFiles, when using ExploringCompactionPolicy)
+      larger than this size will be excluded from compaction. The effect of
+      raising hbase.hstore.compaction.max.size is fewer, larger StoreFiles that do not get
+      compacted often. If you feel that compaction is happening too often without much benefit, you
+      can try raising this value. Default: the value of LONG.MAX_VALUE, expressed in bytes.</description>
+</property>
+
+<property>
+  <name>hfile.format.version</name>
+  <value>1</value>
+      <description>The HFile format version to use for new files.
+      Version 3 adds support for tags in hfiles (See http://hbase.apache.org/book.html#hbase.tags).
+      Also see the configuration 'hbase.replication.rpc.codec'.
+      </description>
+</property>
+
+<property>
+  <name>hbase.data.umask</name>
+  <value>002</value>
+    <description>File permissions that should be used to write data
+      files when hbase.data.umask.enable is true</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.restore.take.failsafe.snapshot</name>
+  <value>false</value>
+    <description>Set to true to take a snapshot before the restore operation.
+      The snapshot taken will be used in case of failure, to restore the previous state.
+      At the end of the restore operation this snapshot will be deleted</description>
+</property>
+
+<property>
+  <name>hbase.coordinated.state.manager.class</name>
+  <value>org.apache.hadoop.hbase.coordination.ZkCoordinatedStateManager</value>
+    <description>Fully qualified name of class implementing coordinated state manager.</description>
+</property>
+
+<property>
+  <name>hbase.region.replica.replication.enabled</name>
+  <value>true</value>
+    <description>
+      Whether asynchronous WAL replication to the secondary region replicas is enabled or not.
+      If this is enabled, a replication peer named "region_replica_replication" will be created
+      which will tail the logs and replicate the mutations to region replicas for tables that
+      have region replication > 1. If this is enabled once, disabling this replication also
+      requires disabling the replication peer using shell or Admin java class.
+      Replication to secondary region replicas works over standard inter-cluster replication.
+    </description>
+</property>
+
+</configuration>

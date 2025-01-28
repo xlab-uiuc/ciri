@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 3, 5]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['MANAGERS', 'TEMPLATES'], 'reason': ["The property 'MANAGERS' should be defined with actual values, not just a reference like 'ADMINS'.", "The property 'TEMPLATES' is empty and should contain configuration settings for template engines."]}
+
+{'hasError': True, 'errParameter': ['MANAGERS', 'TEMPLATES'], 'reason': ["The property 'MANAGERS' is referencing 'ADMINS' which is not defined.", "The property 'TEMPLATES' is an empty list which should contain template configurations."]}
+
+{'hasError': True, 'errParameter': ['SECURE_CROSS_ORIGIN_OPENER_POLICY', 'MANAGERS', 'TEMPLATES'], 'reason': ["The property 'SECURE_CROSS_ORIGIN_OPENER_POLICY' is commented out and should be uncommented for proper usage.", "The property 'MANAGERS' is not defined and should be assigned a value.", "The property 'TEMPLATES' is empty and should contain configuration settings for templates."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: MANAGERS	TEMPLATES
+[Ciri] Reason for MANAGERS: The property 'MANAGERS' should be defined with actual values, not just a reference like 'ADMINS'.
+[Ciri] Reason for TEMPLATES: The property 'TEMPLATES' is empty and should contain configuration settings for template engines.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 1, 4]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.scan.period.hours', 'dfs.webhdfs.socket.read-timeout'], 'reason': ["The property 'dfs.datanode.scan.period.hours' has the value '504' which is not of the correct type Integer.", "The property 'dfs.webhdfs.socket.read-timeout' has the value '60s' which does not follow the correct format for milliseconds."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.scan.period.hours', 'dfs.webhdfs.socket.read-timeout'], 'reason': ["The property 'dfs.datanode.scan.period.hours' has the value '504' which is not of the correct type Integer.", "The property 'dfs.webhdfs.socket.read-timeout' has the value '60s' which does not follow the correct format for timeout values."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.scan.period.hours', 'dfs.webhdfs.socket.read-timeout'], 'reason': ["The property 'dfs.datanode.scan.period.hours' has the value '504' which is not of the correct type Integer.", "The property 'dfs.webhdfs.socket.read-timeout' has the value '60s' which does not follow the correct format for timeout values."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.scan.period.hours	dfs.webhdfs.socket.read-timeout
+[Ciri] Reason for dfs.datanode.scan.period.hours: The property 'dfs.datanode.scan.period.hours' has the value '504' which is not of the correct type Integer.
+[Ciri] Reason for dfs.webhdfs.socket.read-timeout: The property 'dfs.webhdfs.socket.read-timeout' has the value '60s' which does not follow the correct format for timeout values.

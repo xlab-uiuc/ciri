@@ -1,0 +1,22 @@
+Wrong shot number:
+[8, 1, 2]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-compaction-mode', 'quota-backend-bytes', 'force-new-cluster', 'snapshot-count'], 'reason': ["The property 'heartbeat-interval' has a value of 9.9 which is not of the correct type Integer.", "The property 'auto-compaction-mode' has a value 'periodic' which is correct.", "The property 'quota-backend-bytes' has a value of 1 which is not of the correct type Integer.", "The property 'force-new-cluster' has a value 'true' which is not of the correct type Boolean.", "The property 'snapshot-count' has a value of 20000 which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-compaction-mode', 'quota-backend-bytes', 'force-new-cluster', 'snapshot-count'], 'reason': ["The property 'heartbeat-interval' has a value that is not of the correct type Integer.", "The property 'auto-compaction-mode' has a value that is not of the correct type String.", "The property 'quota-backend-bytes' has a value that is not of the correct type Integer.", "The property 'force-new-cluster' has a value that is not of the correct type Boolean.", "The property 'snapshot-count' has a value that is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'quota-backend-bytes', 'snapshot-count'], 'reason': ["The property 'heartbeat-interval' has a value of 9.9 which is not of the correct type Integer.", "The property 'quota-backend-bytes' has a value of 1 which is not allowed in the current version.", "The property 'snapshot-count' has a value of 20000 which is not of the correct type Integer."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: heartbeat-interval	auto-compaction-mode	quota-backend-bytes	force-new-cluster	snapshot-count
+[Ciri] Reason for heartbeat-interval: The property 'heartbeat-interval' has a value that is not of the correct type Integer.
+[Ciri] Reason for auto-compaction-mode: The property 'auto-compaction-mode' has a value 'periodic' which is correct.
+[Ciri] Reason for quota-backend-bytes: The property 'quota-backend-bytes' has a value that is not of the correct type Integer.
+[Ciri] Reason for force-new-cluster: The property 'force-new-cluster' has a value that is not of the correct type Boolean.
+[Ciri] Reason for snapshot-count: The property 'snapshot-count' has a value of 20000 which is not of the correct type Integer.

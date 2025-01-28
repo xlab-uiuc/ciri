@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_log_hints'], 'reason': ['wal_log_hints is not a valid parameter for postgresql version 13.0']}
+
+{'hasError': True, 'errParameter': ['enable_parallel_hash', 'geqo_threshold', 'logical_decoding_work_mem', 'huge_page_size', 'recovery_target_action', 'enable_async_append', 'data_sync_retry', 'wal_log_hints'], 'reason': ['enable_parallel_hash must be either on or off', 'geqo_threshold must be greater than 0', 'logical_decoding_work_mem must be greater than 0', 'huge_page_size must be greater than 0', 'recovery_target_action must be either pause or prompt', 'enable_async_append must be either on or off', 'data_sync_retry must be either on or off', 'wal_log_hints must be either on or off']}
+
+{'hasError': True, 'errParameter': ['enable_parallel_hash', 'geqo_threshold', 'logical_decoding_work_mem', 'huge_page_size', 'recovery_target_action', 'enable_async_append', 'data_sync_retry', 'wal_log_hints'], 'reason': ['enable_parallel_hash must be either on or off', 'geqo_threshold must be an integer greater than 0', 'logical_decoding_work_mem must be a positive integer', 'huge_page_size must be a positive integer', "recovery_target_action must be either 'pause' or 'promote'", 'enable_async_append must be either on or off', 'data_sync_retry must be either on or off', 'wal_log_hints must be either on or off']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: enable_parallel_hash	geqo_threshold	logical_decoding_work_mem	huge_page_size	recovery_target_action	enable_async_append	data_sync_retry	wal_log_hints
+[Ciri] Reason for enable_parallel_hash: enable_parallel_hash must be either on or off
+[Ciri] Reason for geqo_threshold: geqo_threshold must be greater than 0
+[Ciri] Reason for logical_decoding_work_mem: logical_decoding_work_mem must be a positive integer
+[Ciri] Reason for huge_page_size: huge_page_size must be a positive integer
+[Ciri] Reason for recovery_target_action: recovery_target_action must be either pause or prompt
+[Ciri] Reason for enable_async_append: enable_async_append must be either on or off
+[Ciri] Reason for data_sync_retry: data_sync_retry must be either on or off
+[Ciri] Reason for wal_log_hints: wal_log_hints must be either on or off

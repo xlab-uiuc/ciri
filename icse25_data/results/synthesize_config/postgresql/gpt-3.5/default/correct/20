@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 3, 4]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'log_parameter_max_length'], 'reason': ["The property 'wal_buffers' should not have a negative value.", "The property 'log_parameter_max_length' should not have a negative value."]}
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'log_parameter_max_length'], 'reason': ["The property 'wal_buffers' should not have a negative value.", "The property 'log_parameter_max_length' should not have a negative value."]}
+
+{'hasError': True, 'errParameter': ['log_parameter_max_length', 'wal_buffers'], 'reason': ["The property 'log_parameter_max_length' should be a positive integer.", "The property 'wal_buffers' should be a positive integer or -1 for the default value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: wal_buffers	log_parameter_max_length
+[Ciri] Reason for wal_buffers: The property 'wal_buffers' should not have a negative value.
+[Ciri] Reason for log_parameter_max_length: The property 'log_parameter_max_length' should not have a negative value.

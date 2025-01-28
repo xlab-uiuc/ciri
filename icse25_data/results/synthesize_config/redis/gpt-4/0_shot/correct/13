@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['disable-thp', 'oom-score-adj-values'], 'reason': ["The 'disable-thp' configuration is not a standard Redis configuration parameter.", "The 'oom-score-adj-values' parameter does not exist in Redis configuration. Perhaps it was intended to adjust the OOM score for the Redis process, but this should be managed outside of Redis configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: disable-thp	oom-score-adj-values
+[Ciri] Reason for disable-thp: The 'disable-thp' configuration is not a standard Redis configuration parameter.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter does not exist in Redis configuration. Perhaps it was intended to adjust the OOM score for the Redis process, but this should be managed outside of Redis configuration.

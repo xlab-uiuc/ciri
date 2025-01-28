@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.flush.timeout', 'alluxio.worker.ufs.block.open.timeout', 'alluxio.network.connection.shutdown.graceful.timeout'], 'reason': ["The 'alluxio.master.journal.flush.timeout' should not be less than 'alluxio.master.journal.flush.batch.time'.", "The value for 'alluxio.worker.ufs.block.open.timeout' should be in milliseconds, not '1min'.", "The value for 'alluxio.network.connection.shutdown.graceful.timeout' should be in milliseconds, not '90sec'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.journal.flush.timeout	alluxio.worker.ufs.block.open.timeout	alluxio.network.connection.shutdown.graceful.timeout
+[Ciri] Reason for alluxio.master.journal.flush.timeout: The 'alluxio.master.journal.flush.timeout' should not be less than 'alluxio.master.journal.flush.batch.time'.
+[Ciri] Reason for alluxio.worker.ufs.block.open.timeout: The value for 'alluxio.worker.ufs.block.open.timeout' should be in milliseconds, not '1min'.
+[Ciri] Reason for alluxio.network.connection.shutdown.graceful.timeout: The value for 'alluxio.network.connection.shutdown.graceful.timeout' should be in milliseconds, not '90sec'.

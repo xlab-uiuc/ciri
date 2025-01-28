@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server properties should be in the form of server.id=host:port:port. For example, server.1=zoo1:2888:3888']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'syncLimit', 'maxClientCnxns'], 'reason': ['secureClientPort is not a valid property', 'syncLimit must be greater than 0', 'maxClientCnxns must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.x properties are not supported in ZooKeeper version 3.7.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: server.1	server.2	server.3
+[Ciri] Reason for server.1: The server.x properties are not supported in ZooKeeper version 3.7.0
+[Ciri] Reason for server.2: 
+[Ciri] Reason for server.3: 

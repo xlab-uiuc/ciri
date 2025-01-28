@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.cleanup.interval', 'alluxio.worker.management.tier.promote.range', 'alluxio.underfs.hdfs.configuration', 'alluxio.master.file.access.time.journal.flush.interval'], 'reason': ["Invalid format for time unit in '10day'. Use '10d' for days.", "Value for 'alluxio.worker.management.tier.promote.range' should be a percentage value, e.g., '100%'", "Invalid file path format for 'alluxio.underfs.hdfs.configuration'.", "Invalid format for time unit in '10h'. Use '10hr' for hours."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.cleanup.interval', 'alluxio.worker.management.tier.promote.range', 'alluxio.underfs.hdfs.configuration', 'alluxio.master.file.access.time.journal.flush.interval'], 'reason': ["Invalid format for time duration. Use '10d' instead of '10day'.", "Value should be an integer. Remove '100'.", 'Invalid file path format. Use a valid file path.', "Invalid format for time duration. Use '10h' instead of '10h'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.cleanup.interval', 'alluxio.worker.management.tier.promote.range', 'alluxio.underfs.hdfs.configuration', 'alluxio.master.file.access.time.journal.flush.interval'], 'reason': ["Invalid format for time duration. Use '10d' instead of '10day' for 'alluxio.underfs.cleanup.interval'.", "Value should be an integer for 'alluxio.worker.management.tier.promote.range'.", "The file path provided is not valid for 'alluxio.underfs.hdfs.configuration'.", "Invalid format for time duration. Use '10h' instead of '10h' for 'alluxio.master.file.access.time.journal.flush.interval'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.underfs.cleanup.interval	alluxio.worker.management.tier.promote.range	alluxio.underfs.hdfs.configuration	alluxio.master.file.access.time.journal.flush.interval
+[Ciri] Reason for alluxio.underfs.cleanup.interval: Invalid format for time duration. Use '10d' instead of '10day'.
+[Ciri] Reason for alluxio.worker.management.tier.promote.range: Value should be an integer for 'alluxio.worker.management.tier.promote.range'.
+[Ciri] Reason for alluxio.underfs.hdfs.configuration: Invalid file path format for 'alluxio.underfs.hdfs.configuration'.
+[Ciri] Reason for alluxio.master.file.access.time.journal.flush.interval: Invalid format for time duration. Use '10h' instead of '10h'.

@@ -1,0 +1,35 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfilename'], 'reason': ['appendfilename is not a valid configuration parameter in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['daemonize', 'pidfile', 'logfile', 'dir', 'dbfilename', 'appendfilename'], 'reason': ['daemonize is not supported in Redis 7.0.0', 'pidfile is not supported in Redis 7.0.0', 'logfile is not supported in Redis 7.0.0', 'dir is not supported in Redis 7.0.0', 'dbfilename is not supported in Redis 7.0.0', 'appendfilename is not supported in Redis 7.0.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['activerehashing'], 'reason': ['activerehashing is not a valid configuration parameter in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['daemonize', 'pidfile', 'logfile', 'dbfilename', 'dir', 'appendfilename', 'always-show-logo'], 'reason': ['daemonize is not a valid configuration directive.', 'pidfile is not a valid configuration directive.', 'logfile is not a valid configuration directive.', 'dbfilename is not a valid configuration directive.', 'dir is not a valid configuration directive.', 'appendfilename is not a valid configuration directive.', 'always-show-logo is not a valid configuration directive.']}
+
+{'hasError': True, 'errParameter': ['activerehashing', 'appendfilename', 'always-show-logo', 'list-compress-depth', 'tls-port'], 'reason': ['activerehashing is not a valid parameter', 'appendfilename is not a valid parameter', 'always-show-logo is not a valid parameter', 'list-compress-depth is not a valid parameter', 'tls-port is not a valid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['activerehashing', 'no-appendfsync-on-rewrite', 'latency-monitor-threshold', 'appendfilename', 'client-output-buffer-limit', 'tls-port', 'list-compress-depth', 'always-show-logo'], 'reason': ['activerehashing is not a valid parameter in redis 7.0.0', 'no-appendfsync-on-rewrite is not a valid parameter in redis 7.0.0', 'latency-monitor-threshold is not a valid parameter in redis 7.0.0', 'appendfilename is not a valid parameter in redis 7.0.0', 'client-output-buffer-limit is not a valid parameter in redis 7.0.0', 'tls-port is not a valid parameter in redis 7.0.0', 'list-compress-depth is not a valid parameter in redis 7.0.0', 'always-show-logo is not a valid parameter in redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['activerehashing', 'no-appendfsync-on-rewrite', 'latency-monitor-threshold', 'appendfilename', 'client-output-buffer-limit', 'tls-port', 'list-compress-depth', 'always-show-logo'], 'reason': ['activerehashing is not a valid configuration option', 'no-appendfsync-on-rewrite is not a valid configuration option', 'latency-monitor-threshold is not a valid configuration option', 'appendfilename is not a valid configuration option', 'client-output-buffer-limit is not a valid configuration option', 'tls-port is not a valid configuration option', 'list-compress-depth is not a valid configuration option', 'always-show-logo is not a valid configuration option']}
+
+{'hasError': True, 'errParameter': ['appendfilename', 'always-show-logo'], 'reason': ['appendfilename is not a valid parameter for redis version 7.0.0', 'always-show-logo is not a valid parameter for redis version 7.0.0']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: activerehashing	no-appendfsync-on-rewrite	latency-monitor-threshold	appendfilename	client-output-buffer-limit	tls-port	list-compress-depth	always-show-logo
+[Ciri] Reason for activerehashing: activerehashing is not a valid configuration option
+[Ciri] Reason for no-appendfsync-on-rewrite: no-appendfsync-on-rewrite is not a valid parameter in redis 7.0.0
+[Ciri] Reason for latency-monitor-threshold: latency-monitor-threshold is not a valid parameter in redis 7.0.0
+[Ciri] Reason for appendfilename: appendfilename is not a valid parameter in redis 7.0.0
+[Ciri] Reason for client-output-buffer-limit: client-output-buffer-limit is not a valid parameter in redis 7.0.0
+[Ciri] Reason for tls-port: tls-port is not a valid parameter in redis 7.0.0
+[Ciri] Reason for list-compress-depth: list-compress-depth is not a valid configuration option
+[Ciri] Reason for always-show-logo: always-show-logo is not a valid parameter in redis 7.0.0

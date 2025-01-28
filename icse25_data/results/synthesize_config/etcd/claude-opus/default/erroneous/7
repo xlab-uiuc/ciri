@@ -1,0 +1,15 @@
+Wrong shot number:
+[3, 6, 8]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['key-file', 'auto-compaction-retention'], 'reason': ["The property 'key-file' has the value 'tmp////etcd/key' which is not a valid file path due to too many slashes.", 'The property \'auto-compaction-retention\' has the value \'"1"\' which is not a valid duration format. It should be a string with a number and time unit suffix, such as \'5m\' for 5 minutes.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: key-file	auto-compaction-retention
+[Ciri] Reason for key-file: The property 'key-file' has the value 'tmp////etcd/key' which is not a valid file path due to too many slashes.
+[Ciri] Reason for auto-compaction-retention: The property 'auto-compaction-retention' has the value '"1"' which is not a valid duration format. It should be a string with a number and time unit suffix, such as '5m' for 5 minutes.

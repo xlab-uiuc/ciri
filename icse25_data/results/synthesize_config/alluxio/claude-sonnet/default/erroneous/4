@@ -1,0 +1,15 @@
+Wrong shot number:
+[10, 11, 9]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.threadpool.size', 'alluxio.worker.keytab.file'], 'reason': ["The property 'alluxio.job.worker.threadpool.size' has an invalid value 'ciri/ciri'. It should be a valid integer.", "The property 'alluxio.worker.keytab.file' has the value '/valid/file2' which is not a valid file path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.threadpool.size	alluxio.worker.keytab.file
+[Ciri] Reason for alluxio.job.worker.threadpool.size: The property 'alluxio.job.worker.threadpool.size' has an invalid value 'ciri/ciri'. It should be a valid integer.
+[Ciri] Reason for alluxio.worker.keytab.file: The property 'alluxio.worker.keytab.file' has the value '/valid/file2' which is not a valid file path.

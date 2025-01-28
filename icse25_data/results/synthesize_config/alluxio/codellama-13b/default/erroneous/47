@@ -1,0 +1,18 @@
+Wrong shot number:
+[7, 4, 6]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.keepalive.timeout'], 'reason': ["The property 'alluxio.worker.network.keepalive.timeout' has the value '60sec' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.keepalive.timeout'], 'reason': ["The property 'alluxio.worker.network.keepalive.timeout' has the value '60sec' which is not within the accepted value {1min,10min,1hour,1day}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.keepalive.timeout'], 'reason': ["The property 'alluxio.worker.network.keepalive.timeout' has the value '60sec' which is not within the accepted value {1min,10min,30min,1hour,2hour,4hour,8hour,16hour,1day,2day,7day}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.worker.network.keepalive.timeout
+[Ciri] Reason for alluxio.worker.network.keepalive.timeout: The property 'alluxio.worker.network.keepalive.timeout' has the value '60sec' which is not within the accepted value {1min,10min,30min,1hour,2hour,4hour,8hour,16hour,1day,2day,7day}.

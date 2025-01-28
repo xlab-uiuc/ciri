@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.netty.worker.threads', 'alluxio.user.streaming.writer.flush.timeout'], 'reason': ['alluxio.user.network.netty.worker.threads should be a positive integer, but -1 is not a positive integer.', 'alluxio.user.streaming.writer.flush.timeout should be a positive integer, but 60min is not a positive integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.netty.worker.threads', 'alluxio.user.client.cache.local.store.file.buckets', 'alluxio.master.ufs.active.sync.thread.pool.size', 'alluxio.worker.ufs.instream.cache.enabled'], 'reason': ['alluxio.user.network.netty.worker.threads must be a positive integer', 'alluxio.user.client.cache.local.store.file.buckets must be a positive integer', 'alluxio.master.ufs.active.sync.thread.pool.size must be a positive integer', 'alluxio.worker.ufs.instream.cache.enabled must be a boolean']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.netty.worker.threads'], 'reason': ['alluxio.user.network.netty.worker.threads should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.flush.timeout'], 'reason': ['alluxio.user.streaming.writer.flush.timeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.flush.timeout'], 'reason': ['The value of alluxio.user.streaming.writer.flush.timeout is not a valid duration. The value should be in the format of 1s, 1m, 1h, 1d, 1M, 1y, where the suffix is the unit of time. For example, 1s means 1 second, 1m means 1 minute, 1h means 1 hour, 1d means 1 day, 1M means 1 month, 1y means 1 year.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.streaming.writer.flush.timeout
+[Ciri] Reason for alluxio.user.streaming.writer.flush.timeout: The value of alluxio.user.streaming.writer.flush.timeout is not a valid duration. The value should be in the format of 1s, 1m, 1h, 1d, 1M, 1y, where the suffix is the unit of time. For example, 1s means 1 second, 1m means 1 minute, 1h means 1 hour, 1d means 1 day, 1M means 1 month, 1y means 1 year.

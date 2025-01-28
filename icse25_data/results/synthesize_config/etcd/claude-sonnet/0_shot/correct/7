@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['election-timeout', 'quota-backend-bytes'], 'reason': ['The election-timeout value of 1000 is too low for etcd 3.5.0. The recommended value is at least 5000.', 'The quota-backend-bytes value of 0 disables the backend quota, which can lead to excessive disk usage. It is recommended to set a non-zero value based on the expected data size.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: election-timeout	quota-backend-bytes
+[Ciri] Reason for election-timeout: The election-timeout value of 1000 is too low for etcd 3.5.0. The recommended value is at least 5000.
+[Ciri] Reason for quota-backend-bytes: The quota-backend-bytes value of 0 disables the backend quota, which can lead to excessive disk usage. It is recommended to set a non-zero value based on the expected data size.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[15, 4, 7]
+
+Correct shot number:
+[7, 8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.azure.sas.expiry.period'], 'reason': ["The property 'io.seqfile.local.dir' has an invalid value '/valid/file2'.", "The value of the property 'fs.azure.sas.expiry.period' should specify the time with a valid suffix (ms, s, m, h, d)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.seqfile.local.dir	fs.azure.sas.expiry.period
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' has an invalid value '/valid/file2'.
+[Ciri] Reason for fs.azure.sas.expiry.period: The value of the property 'fs.azure.sas.expiry.period' should specify the time with a valid suffix (ms, s, m, h, d).

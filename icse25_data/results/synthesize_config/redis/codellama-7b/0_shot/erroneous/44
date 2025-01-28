@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'tls-port', 'cluster-announce-port'], 'reason': ['port must be an integer', 'tls-port must be an integer', 'cluster-announce-port must be an integer']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'lazyfree-lazy-user-flush'], 'reason': ['lazyfree-lazy-user-del and lazyfree-lazy-user-flush are not supported in redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'lazyfree-lazy-user-flush', 'maxmemory-clients', 'hash-max-listpack-entries', 'replica-serve-stale-data', 'tls-port', 'cluster-announce-port'], 'reason': ['Invalid parameter: lazyfree-lazy-user-del', 'Invalid parameter: lazyfree-lazy-user-flush', 'Invalid parameter: maxmemory-clients', 'Invalid parameter: hash-max-listpack-entries', 'Invalid parameter: replica-serve-stale-data', 'Invalid parameter: tls-port', 'Invalid parameter: cluster-announce-port']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'cluster-announce-port'], 'reason': ['port must be a number', 'cluster-announce-port must be a number']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'lazyfree-lazy-user-flush', 'maxmemory-clients', 'hash-max-listpack-entries', 'replica-serve-stale-data', 'tls-port', 'cluster-announce-port'], 'reason': ['Lazyfree-lazy-user-del is not a valid configuration parameter.', 'Lazyfree-lazy-user-flush is not a valid configuration parameter.', 'Maxmemory-clients must be a positive integer.', 'Hash-max-listpack-entries must be a positive integer.', 'Replica-serve-stale-data must be a boolean value.', 'Tls-port must be a positive integer.', 'Cluster-announce-port must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'lazyfree-lazy-user-flush', 'maxmemory-clients', 'hash-max-listpack-entries', 'replica-serve-stale-data', 'tls-port', 'cluster-announce-port'], 'reason': ['lazyfree-lazy-user-del must be a boolean', 'lazyfree-lazy-user-flush must be a boolean', 'maxmemory-clients must be a size', 'hash-max-listpack-entries must be a positive integer', 'replica-serve-stale-data must be a boolean', 'tls-port must be a port', 'cluster-announce-port must be a port']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: lazyfree-lazy-user-del	lazyfree-lazy-user-flush	maxmemory-clients	hash-max-listpack-entries	replica-serve-stale-data	tls-port	cluster-announce-port
+[Ciri] Reason for lazyfree-lazy-user-del: Lazyfree-lazy-user-del is not a valid configuration parameter.
+[Ciri] Reason for lazyfree-lazy-user-flush: Lazyfree-lazy-user-flush is not a valid configuration parameter.
+[Ciri] Reason for maxmemory-clients: Maxmemory-clients must be a positive integer.
+[Ciri] Reason for hash-max-listpack-entries: Hash-max-listpack-entries must be a positive integer.
+[Ciri] Reason for replica-serve-stale-data: replica-serve-stale-data must be a boolean
+[Ciri] Reason for tls-port: Tls-port must be a positive integer.
+[Ciri] Reason for cluster-announce-port: cluster-announce-port must be a port

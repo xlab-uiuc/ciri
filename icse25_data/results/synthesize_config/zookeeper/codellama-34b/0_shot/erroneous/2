@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.learnerRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['The quorum.auth.serverRequireSasl, quorum.auth.learnerRequireSasl, and quorum.auth.server.saslLoginContext properties are not supported in ZooKeeper version 3.7.0', 'The quorum.auth.serverRequireSasl, quorum.auth.learnerRequireSasl, and quorum.auth.server.saslLoginContext properties are not supported in ZooKeeper version 3.7.0', 'The quorum.auth.serverRequireSasl, quorum.auth.learnerRequireSasl, and quorum.auth.server.saslLoginContext properties are not supported in ZooKeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'quorum.auth.learnerRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for zookeeper version 3.7.0', 'quorum.auth.learnerRequireSasl is not a valid property for zookeeper version 3.7.0', 'quorum.auth.server.saslLoginContext is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.learnerRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.serverRequireSasl and quorum.auth.learnerRequireSasl are not supported in version 3.7.0', 'quorum.auth.server.saslLoginContext is not supported in version 3.7.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quorum.auth.serverRequireSasl	quorum.auth.learnerRequireSasl	quorum.auth.server.saslLoginContext
+[Ciri] Reason for quorum.auth.serverRequireSasl: The quorum.auth.serverRequireSasl, quorum.auth.learnerRequireSasl, and quorum.auth.server.saslLoginContext properties are not supported in ZooKeeper version 3.7.0
+[Ciri] Reason for quorum.auth.learnerRequireSasl: The quorum.auth.serverRequireSasl, quorum.auth.learnerRequireSasl, and quorum.auth.server.saslLoginContext properties are not supported in ZooKeeper version 3.7.0
+[Ciri] Reason for quorum.auth.server.saslLoginContext: The quorum.auth.serverRequireSasl, quorum.auth.learnerRequireSasl, and quorum.auth.server.saslLoginContext properties are not supported in ZooKeeper version 3.7.0

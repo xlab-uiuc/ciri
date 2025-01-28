@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'quota-backend-bytes', 'proxy-write-timeout'], 'reason': ["The 'heartbeat-interval' value should be an integer representing milliseconds.", "The 'quota-backend-bytes' value is too low; it should be set to at least several hundred megabytes to be effective.", "The 'proxy-write-timeout' is not a valid etcd configuration parameter."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: heartbeat-interval	quota-backend-bytes	proxy-write-timeout
+[Ciri] Reason for heartbeat-interval: The 'heartbeat-interval' value should be an integer representing milliseconds.
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' value is too low; it should be set to at least several hundred megabytes to be effective.
+[Ciri] Reason for proxy-write-timeout: The 'proxy-write-timeout' is not a valid etcd configuration parameter.

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.management.backoff.strategy', 'alluxio.job.worker.hostname', 'alluxio.master.persistence.initial.interval', 'alluxio.user.network.rpc.keepalive.timeout'], 'reason': ["The property 'alluxio.worker.management.backoff.strategy' does not exist in Alluxio 2.5.0. It's likely a misconfiguration or typo.", "The property 'alluxio.job.worker.hostname' is not a recognized configuration property in Alluxio 2.5.0. It might be incorrect or relevant to a different version.", "The format for 'alluxio.master.persistence.initial.interval' should be a number followed by 'ms', 's', 'm', 'h', 'd'. Example: '2s' should be '2000ms'.", "The format for 'alluxio.user.network.rpc.keepalive.timeout' should be a number followed by 'ms', 's', 'm', 'h', 'd'. Example: '60sec' should be '60s'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.worker.management.backoff.strategy	alluxio.job.worker.hostname	alluxio.master.persistence.initial.interval	alluxio.user.network.rpc.keepalive.timeout
+[Ciri] Reason for alluxio.worker.management.backoff.strategy: The property 'alluxio.worker.management.backoff.strategy' does not exist in Alluxio 2.5.0. It's likely a misconfiguration or typo.
+[Ciri] Reason for alluxio.job.worker.hostname: The property 'alluxio.job.worker.hostname' is not a recognized configuration property in Alluxio 2.5.0. It might be incorrect or relevant to a different version.
+[Ciri] Reason for alluxio.master.persistence.initial.interval: The format for 'alluxio.master.persistence.initial.interval' should be a number followed by 'ms', 's', 'm', 'h', 'd'. Example: '2s' should be '2000ms'.
+[Ciri] Reason for alluxio.user.network.rpc.keepalive.timeout: The format for 'alluxio.user.network.rpc.keepalive.timeout' should be a number followed by 'ms', 's', 'm', 'h', 'd'. Example: '60sec' should be '60s'.

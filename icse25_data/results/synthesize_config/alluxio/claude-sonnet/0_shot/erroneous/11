@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.metastore.dir', 'alluxio.worker.ufs.instream.cache.expiration.time', 'alluxio.user.date.format.pattern'], 'reason': ["The property 'alluxio.master.metastore.dir' should not contain multiple consecutive slashes ('//'). It should be a valid path.", "The property 'alluxio.worker.ufs.instream.cache.expiration.time' should be a valid time duration string (e.g., '1h', '30min', '1d'). '1min' is not a valid time duration string.", "The property 'alluxio.user.date.format.pattern' is not a valid configuration property in Alluxio 2.5.0. It was introduced in a later version."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.metastore.dir	alluxio.worker.ufs.instream.cache.expiration.time	alluxio.user.date.format.pattern
+[Ciri] Reason for alluxio.master.metastore.dir: The property 'alluxio.master.metastore.dir' should not contain multiple consecutive slashes ('//'). It should be a valid path.
+[Ciri] Reason for alluxio.worker.ufs.instream.cache.expiration.time: The property 'alluxio.worker.ufs.instream.cache.expiration.time' should be a valid time duration string (e.g., '1h', '30min', '1d'). '1min' is not a valid time duration string.
+[Ciri] Reason for alluxio.user.date.format.pattern: The property 'alluxio.user.date.format.pattern' is not a valid configuration property in Alluxio 2.5.0. It was introduced in a later version.

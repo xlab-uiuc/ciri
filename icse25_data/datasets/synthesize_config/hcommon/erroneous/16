@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.azure.user.agent.prefix</name>
+  <value>unknown</value>
+    <description>
+      WASB passes User-Agent header to the Azure back-end. The default value
+      contains WASB version, Java Runtime version, Azure Client library version,
+      and the value of the configuration option fs.azure.user.agent.prefix.
+    </description>
+</property>
+
+<property>
+  <name>hadoop.workaround.non.threadsafe.getpwuid</name>
+  <value>true</value>
+  <description>Some operating systems or authentication modules are known to
+  have broken implementations of getpwuid_r and getpwgid_r, such that these
+  calls are not thread-safe. Symptoms of this problem include JVM crashes
+  with a stack trace inside these functions. If your system exhibits this
+  issue, enable this configuration parameter to include a lock around the
+  calls as a workaround.
+
+  An incomplete list of some systems known to have this issue is available
+  at http://wiki.apache.org/hadoop/KnownBrokenPwuidImplementations
+  </description>
+</property>
+
+<property>
+  <name>fs.defaultFS</name>
+  <value>file:::</value>
+  <description>The name of the default file system.  A URI whose
+  scheme and authority determine the FileSystem implementation.  The
+  uri's scheme determines the config property (fs.SCHEME.impl) naming
+  the FileSystem implementation class.  The uri's authority is used to
+  determine the host, port, etc. for a filesystem.</description>
+</property>
+
+<property>
+  <name>fs.ftp.data.connection.mode</name>
+  <value>ACTIVE_LOCAL_DATA_CONNECTION_MODE</value>
+  <description>Set the FTPClient's data connection mode based on configuration.
+    Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE,
+    PASSIVE_LOCAL_DATA_CONNECTION_MODE and PASSIVE_REMOTE_DATA_CONNECTION_MODE.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.change.detection.mode</name>
+  <value>server</value>
+  <description>
+    Determines how change detection is applied to alert to inconsistent S3
+    objects read during or after an overwrite. Value 'server' indicates to apply
+    the attribute constraint directly on GetObject requests to S3. Value 'client'
+    means to do a client-side comparison of the attribute value returned in the
+    response.  Value 'server' would not work with third-party S3 implementations
+    that do not support these constraints on GetObject. Values 'server' and
+    'client' generate RemoteObjectChangedException when a mismatch is detected.
+    Value 'warn' works like 'client' but generates only a warning.  Value 'none'
+    will ignore change detection completely.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].backoff.enable</name>
+  <value>true</value>
+  <description>Whether or not to enable client backoff when a queue is full.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.shell.missing.defaultFs.warning</name>
+  <value>false</value>
+    <description>
+      Enable hdfs shell commands to display warnings if (fs.defaultFS) property
+      is not set.
+    </description>
+</property>
+
+<property>
+  <name>hadoop.zk.acl</name>
+  <value>world:anyone:rwcda</value>
+    <description>ACL's to be used for ZooKeeper znodes.</description>
+</property>
+
+</configuration>

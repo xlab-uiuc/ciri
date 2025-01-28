@@ -1,0 +1,25 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['set-max-intset-entries', 'dbfilename', 'protected-mode', 'appendonly', 'repl-diskless-sync-max-replicas', 'supervised'], 'reason': ['set-max-intset-entries should be an integer greater than or equal to 0', 'dbfilename should be a string', 'protected-mode should be yes or no', 'appendonly should be yes or no', 'repl-diskless-sync-max-replicas should be an integer greater than or equal to 0', 'supervised should be auto or systemd']}
+
+{'hasError': True, 'errParameter': ['set-max-intset-entries', 'aof-use-rdb-preamble', 'dbfilename', 'dynamic-hz', 'protected-mode', 'appendonly', 'repl-diskless-sync-max-replicas', 'supervised'], 'reason': ['set-max-intset-entries is not a valid configuration directive.', 'aof-use-rdb-preamble is not a valid configuration directive.', 'dbfilename is not a valid configuration directive.', 'dynamic-hz is not a valid configuration directive.', 'protected-mode is not a valid configuration directive.', 'appendonly is not a valid configuration directive.', 'repl-diskless-sync-max-replicas is not a valid configuration directive.', 'supervised is not a valid configuration directive.']}
+
+{'hasError': True, 'errParameter': ['set-max-intset-entries', 'dbfilename', 'aof-use-rdb-preamble', 'appendonly', 'repl-diskless-sync-max-replicas', 'supervised'], 'reason': ['set-max-intset-entries must be an integer between 0 and 512, inclusive.', 'dbfilename must be a string.', 'aof-use-rdb-preamble must be a boolean.', 'appendonly must be a boolean.', 'repl-diskless-sync-max-replicas must be an integer between 0 and 10, inclusive.', 'supervised must be one of auto, systemd, or upstart.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['set-max-intset-entries', 'dbfilename', 'dynamic-hz', 'protected-mode', 'appendonly', 'repl-diskless-sync-max-replicas', 'supervised'], 'reason': ['set-max-intset-entries is not a valid parameter', 'dbfilename is not a valid parameter', 'dynamic-hz is not a valid parameter', 'protected-mode is not a valid parameter', 'appendonly is not a valid parameter', 'repl-diskless-sync-max-replicas is not a valid parameter', 'supervised is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['set-max-intset-entries', 'dbfilename', 'aof-use-rdb-preamble', 'appendonly', 'repl-diskless-sync-max-replicas', 'supervised'], 'reason': ['set-max-intset-entries must be greater than or equal to 0', 'dbfilename must be a string', 'aof-use-rdb-preamble must be a boolean', 'appendonly must be a boolean', 'repl-diskless-sync-max-replicas must be greater than or equal to 0', 'supervised must be one of the following values: [yes, no, auto]']}
+
+{'hasError': True, 'errParameter': ['set-max-intset-entries', 'dbfilename', 'aof-use-rdb-preamble', 'appendonly', 'repl-diskless-sync-max-replicas', 'supervised'], 'reason': ['set-max-intset-entries is not a valid configuration directive.', 'dbfilename is not a valid configuration directive.', 'aof-use-rdb-preamble is not a valid configuration directive.', 'appendonly is not a valid configuration directive.', 'repl-diskless-sync-max-replicas is not a valid configuration directive.', 'supervised is not a valid configuration directive.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: set-max-intset-entries	dbfilename	aof-use-rdb-preamble	appendonly	repl-diskless-sync-max-replicas	supervised
+[Ciri] Reason for set-max-intset-entries: set-max-intset-entries must be greater than or equal to 0
+[Ciri] Reason for dbfilename: dbfilename is not a valid configuration directive.
+[Ciri] Reason for aof-use-rdb-preamble: aof-use-rdb-preamble is not a valid configuration directive.
+[Ciri] Reason for appendonly: appendonly must be a boolean
+[Ciri] Reason for repl-diskless-sync-max-replicas: repl-diskless-sync-max-replicas is not a valid configuration directive.
+[Ciri] Reason for supervised: supervised must be one of the following values: [yes, no, auto]

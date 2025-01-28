@@ -1,0 +1,28 @@
+Wrong shot number:
+[2, 8, 7]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.retries.number', 'hbase.http.staticuser.user'], 'reason': ["The property 'hbase.client.retries.number' has a value of '30' which may need adjustment based on workload requirements.", "The property 'hbase.http.staticuser.user' has the value 'dr.stack' which should be a valid user name."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.master.port', 'hbase.client.retries.number', 'hbase.http.staticuser.user'], 'reason': ["The property 'hbase.master.port' has the value '16000' which is not within the valid port range.", "The property 'hbase.client.retries.number' has a value that may need adjustment based on workload requirements.", "The property 'hbase.http.staticuser.user' has the value 'dr.stack' which may not be a valid user for static web filters."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.port', 'hbase.client.retries.number', 'hbase.http.staticuser.user'], 'reason': ["The property 'hbase.master.port' has the value '16000' which is not within the valid port range.", "The property 'hbase.client.retries.number' has a value that may need adjustment based on workload requirements.", "The property 'hbase.http.staticuser.user' has the value 'dr.stack' which may not be a valid user for static web filters."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.port', 'hbase.client.retries.number', 'hbase.http.staticuser.user'], 'reason': ["The property 'hbase.master.port' has the value '16000' which is not within the valid port range.", "The property 'hbase.client.retries.number' has a value that may need adjustment based on workload requirements.", "The property 'hbase.http.staticuser.user' has the value 'dr.stack' which may not be a valid user for static web filters."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.port', 'hbase.client.retries.number', 'hbase.http.staticuser.user'], 'reason': ["The property 'hbase.master.port' has the value '16000' which is not within the valid port range.", "The property 'hbase.client.retries.number' has a high value of '30' which may impact performance depending on the workload.", "The property 'hbase.http.staticuser.user' has the value 'dr.stack' which may not be a valid user for filtering."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.master.port	hbase.client.retries.number	hbase.http.staticuser.user
+[Ciri] Reason for hbase.master.port: The property 'hbase.master.port' has the value '16000' which is not within the valid port range.
+[Ciri] Reason for hbase.client.retries.number: The property 'hbase.client.retries.number' has a value that may need adjustment based on workload requirements.
+[Ciri] Reason for hbase.http.staticuser.user: The property 'hbase.http.staticuser.user' has the value 'dr.stack' which may not be a valid user for static web filters.

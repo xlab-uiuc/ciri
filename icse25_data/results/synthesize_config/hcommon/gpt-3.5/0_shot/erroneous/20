@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ["The value 'x.0.0.0.0.0' for property 'hadoop.security.dns.nameserver' seems incorrect.", "The value 'true' for property 'hadoop.metrics.jvm.use-thread-mxbean' should be 'false' for better performance."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ["The value 'x.0.0.0.0.0' for property 'hadoop.security.dns.nameserver' seems incorrect.", "The value 'true' for property 'hadoop.metrics.jvm.use-thread-mxbean' seems incorrect."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'hadoop.security.kms.client.authentication.retry-count'], 'reason': ["The value 'x.0.0.0.0.0' for property 'hadoop.security.dns.nameserver' is not a valid IP address format.", "The value '2' for property 'hadoop.security.kms.client.authentication.retry-count' should be a positive integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.dns.nameserver	hadoop.metrics.jvm.use-thread-mxbean
+[Ciri] Reason for hadoop.security.dns.nameserver: The value 'x.0.0.0.0.0' for property 'hadoop.security.dns.nameserver' seems incorrect.
+[Ciri] Reason for hadoop.metrics.jvm.use-thread-mxbean: The value 'true' for property 'hadoop.metrics.jvm.use-thread-mxbean' should be 'false' for better performance.

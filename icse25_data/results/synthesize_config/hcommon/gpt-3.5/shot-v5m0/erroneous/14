@@ -1,0 +1,18 @@
+Correct shot number:
+[4, 5, 12, 13, 15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'fs.wasbs.impl', 'fs.azure.sas.expiry.period', 'ipc.server.log.slow.rpc', 'ftp.bytes-per-checksum', 'hadoop.http.cross-origin.enabled', 'hadoop.http.cross-origin.allowed-origins', 'hadoop.caller.context.enabled'], 'reason': ["The value 'ciri' for property 'fs.defaultFS' is not a valid URI.", "The value 'org.apache.hadoop.fs.azure.NativeAzureFileSystem$Secure' for property 'fs.wasbs.impl' is not correct.", "The value '180d' for property 'fs.azure.sas.expiry.period' should specify the time unit (ms, s, m, h, d).", "The value 'false' for property 'ipc.server.log.slow.rpc' should be in lowercase (true/false).", "The property 'ftp.bytes-per-checksum' is not a valid Hadoop property.", "The value 'true' for property 'hadoop.http.cross-origin.enabled' should be in lowercase (true/false).", "The value '*' for property 'hadoop.http.cross-origin.allowed-origins' is not a valid configuration.", "The value 'false' for property 'hadoop.caller.context.enabled' should be in lowercase (true/false)."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.defaultFS	fs.wasbs.impl	fs.azure.sas.expiry.period	ipc.server.log.slow.rpc	ftp.bytes-per-checksum	hadoop.http.cross-origin.enabled	hadoop.http.cross-origin.allowed-origins	hadoop.caller.context.enabled
+[Ciri] Reason for fs.defaultFS: The value 'ciri' for property 'fs.defaultFS' is not a valid URI.
+[Ciri] Reason for fs.wasbs.impl: The value 'org.apache.hadoop.fs.azure.NativeAzureFileSystem$Secure' for property 'fs.wasbs.impl' is not correct.
+[Ciri] Reason for fs.azure.sas.expiry.period: The value '180d' for property 'fs.azure.sas.expiry.period' should specify the time unit (ms, s, m, h, d).
+[Ciri] Reason for ipc.server.log.slow.rpc: The value 'false' for property 'ipc.server.log.slow.rpc' should be in lowercase (true/false).
+[Ciri] Reason for ftp.bytes-per-checksum: The property 'ftp.bytes-per-checksum' is not a valid Hadoop property.
+[Ciri] Reason for hadoop.http.cross-origin.enabled: The value 'true' for property 'hadoop.http.cross-origin.enabled' should be in lowercase (true/false).
+[Ciri] Reason for hadoop.http.cross-origin.allowed-origins: The value '*' for property 'hadoop.http.cross-origin.allowed-origins' is not a valid configuration.
+[Ciri] Reason for hadoop.caller.context.enabled: The value 'false' for property 'hadoop.caller.context.enabled' should be in lowercase (true/false).

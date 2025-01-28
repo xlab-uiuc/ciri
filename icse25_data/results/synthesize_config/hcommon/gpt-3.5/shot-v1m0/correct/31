@@ -1,0 +1,16 @@
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.cache.secs', 'io.mapfile.bloom.error.rate', 'ipc.client.rpc-timeout.ms', 'hadoop.ssl.enabled', 'hadoop.registry.zk.retry.times', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ["Property 'hadoop.security.groups.cache.secs' has an additional 'usage' tag which is not a valid property element.", "Property 'io.mapfile.bloom.error.rate' has an additional 'usage' tag which is not a valid property element.", "Property 'ipc.client.rpc-timeout.ms' has an additional 'usage' tag which is not a valid property element.", "Property 'hadoop.ssl.enabled' has an additional 'usage' tag which is not a valid property element.", "Property 'hadoop.registry.zk.retry.times' has an additional 'description' tag which is not a valid property element.", "Property 'hadoop.metrics.jvm.use-thread-mxbean' has an additional 'description' tag which is not a valid property element."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: hadoop.security.groups.cache.secs	io.mapfile.bloom.error.rate	ipc.client.rpc-timeout.ms	hadoop.ssl.enabled	hadoop.registry.zk.retry.times	hadoop.metrics.jvm.use-thread-mxbean
+[Ciri] Reason for hadoop.security.groups.cache.secs: Property 'hadoop.security.groups.cache.secs' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for io.mapfile.bloom.error.rate: Property 'io.mapfile.bloom.error.rate' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for ipc.client.rpc-timeout.ms: Property 'ipc.client.rpc-timeout.ms' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for hadoop.ssl.enabled: Property 'hadoop.ssl.enabled' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for hadoop.registry.zk.retry.times: Property 'hadoop.registry.zk.retry.times' has an additional 'description' tag which is not a valid property element.
+[Ciri] Reason for hadoop.metrics.jvm.use-thread-mxbean: Property 'hadoop.metrics.jvm.use-thread-mxbean' has an additional 'description' tag which is not a valid property element.

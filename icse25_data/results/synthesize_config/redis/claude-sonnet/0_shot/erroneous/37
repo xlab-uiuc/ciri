@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'cluster-announce-bus-port', 'cluster-announce-tls-port'], 'reason': ['The value 65536 for cluster-announce-port is invalid. Valid values are between 0 and 65535.', 'The cluster-announce-bus-port parameter is not a valid configuration option in Redis 7.0.0.', 'The cluster-announce-tls-port parameter is not a valid configuration option in Redis 7.0.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-port	cluster-announce-bus-port	cluster-announce-tls-port
+[Ciri] Reason for cluster-announce-port: The value 65536 for cluster-announce-port is invalid. Valid values are between 0 and 65535.
+[Ciri] Reason for cluster-announce-bus-port: The cluster-announce-bus-port parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for cluster-announce-tls-port: The cluster-announce-tls-port parameter is not a valid configuration option in Redis 7.0.0.

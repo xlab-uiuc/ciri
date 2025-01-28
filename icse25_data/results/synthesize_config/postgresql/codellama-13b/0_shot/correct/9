@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['krb_caseins_users', 'cpu_operator_cost', 'vacuum_multixact_freeze_table_age', 'lc_numeric', 'log_temp_files', 'bytea_output', 'checkpoint_completion_target', 'track_activity_query_size'], 'reason': ['krb_caseins_users is not a valid parameter', 'cpu_operator_cost is not a valid parameter', 'vacuum_multixact_freeze_table_age is not a valid parameter', 'lc_numeric is not a valid parameter', 'log_temp_files is not a valid parameter', 'bytea_output is not a valid parameter', 'checkpoint_completion_target is not a valid parameter', 'track_activity_query_size is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['checkpoint_completion_target', 'track_activity_query_size'], 'reason': ['checkpoint_completion_target must be between 0 and 1', 'track_activity_query_size must be between 100 and 10000']}
+
+{'hasError': True, 'errParameter': ['checkpoint_completion_target', 'track_activity_query_size'], 'reason': ['checkpoint_completion_target must be a value between 0 and 1', 'track_activity_query_size must be a value between 100 and 10000']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: checkpoint_completion_target	track_activity_query_size
+[Ciri] Reason for checkpoint_completion_target: checkpoint_completion_target must be between 0 and 1
+[Ciri] Reason for track_activity_query_size: track_activity_query_size must be between 100 and 10000

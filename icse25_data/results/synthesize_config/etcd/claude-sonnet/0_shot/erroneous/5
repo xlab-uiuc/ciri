@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'discovery-fallback'], 'reason': ["In etcd 3.5.0, the advertise-client-urls parameter should use the URL scheme 'http://' or 'https://' depending on whether client-to-server connections use TLS. The provided value 'http://localhost:2379' is valid for non-TLS connections.", "The 'discovery-fallback' parameter is deprecated in etcd 3.5.0 and should not be used."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: advertise-client-urls	discovery-fallback
+[Ciri] Reason for advertise-client-urls: In etcd 3.5.0, the advertise-client-urls parameter should use the URL scheme 'http://' or 'https://' depending on whether client-to-server connections use TLS. The provided value 'http://localhost:2379' is valid for non-TLS connections.
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' parameter is deprecated in etcd 3.5.0 and should not be used.

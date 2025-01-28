@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'rdbcompression', 'disable-thp', 'aclfile', 'set-proc-title', 'timeout', 'activerehashing', 'repl-diskless-load', 'pidfile'], 'reason': ['daemonize is not a valid parameter', 'rdbcompression should be an integer between 0 and 9', 'disable-thp should be yes or no', 'aclfile should be a valid file path', 'set-proc-title should be yes or no', 'timeout should be an integer', 'activerehashing should be yes or no', 'repl-diskless-load should be enabled or disabled', 'pidfile should be a valid file path']}
+
+{'hasError': True, 'errParameter': ['daemonize', 'rdbcompression', 'disable-thp', 'aclfile', 'set-proc-title', 'timeout', 'activerehashing', 'repl-diskless-load', 'pidfile'], 'reason': ['daemonize is not a valid parameter', 'rdbcompression is not a valid parameter', 'disable-thp is not a valid parameter', 'aclfile is not a valid parameter', 'set-proc-title is not a valid parameter', 'timeout is not a valid parameter', 'activerehashing is not a valid parameter', 'repl-diskless-load is not a valid parameter', 'pidfile is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['daemonize'], 'reason': ['daemonize is not a valid configuration parameter in Redis 7.0.0']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: daemonize	rdbcompression	disable-thp	aclfile	set-proc-title	timeout	activerehashing	repl-diskless-load	pidfile
+[Ciri] Reason for daemonize: daemonize is not a valid parameter
+[Ciri] Reason for rdbcompression: rdbcompression is not a valid parameter
+[Ciri] Reason for disable-thp: disable-thp should be yes or no
+[Ciri] Reason for aclfile: aclfile should be a valid file path
+[Ciri] Reason for set-proc-title: set-proc-title should be yes or no
+[Ciri] Reason for timeout: timeout is not a valid parameter
+[Ciri] Reason for activerehashing: activerehashing should be yes or no
+[Ciri] Reason for repl-diskless-load: repl-diskless-load should be enabled or disabled
+[Ciri] Reason for pidfile: pidfile should be a valid file path

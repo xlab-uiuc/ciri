@@ -1,0 +1,77 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather', 'max_parallel_workers_per_gather'], 'reason': ['max_connections must be an integer between 1 and 1000000', 'max_parallel_workers_per_gather must be an integer between 0 and 1000000', 'max_parallel_workers_per_gather must be an integer between 0 and 1000000']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather', 'synchronize_seqscans'], 'reason': ['max_connections should be an integer', 'max_parallel_workers_per_gather should be an integer', 'synchronize_seqscans should be a boolean']}
+
+{'hasError': True, 'errParameter': ['max_parallel_workers_per_gather'], 'reason': ['max_parallel_workers_per_gather is not a valid parameter for PostgreSQL 13.0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather', 'max_parallel_workers_per_gather'], 'reason': ['max_connections must be greater than max_parallel_workers_per_gather', 'max_parallel_workers_per_gather must be greater than max_parallel_workers_per_gather']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather'], 'reason': ['max_connections must be greater than max_parallel_workers_per_gather', 'max_parallel_workers_per_gather must be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather'], 'reason': ['max_connections should be an integer', 'max_parallel_workers_per_gather should be an integer']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_worker_processes', 'max_parallel_workers_per_gather', 'max_parallel_workers', 'max_parallel_maintenance_workers', 'max_parallel_workers_per_gather'], 'reason': ['max_connections should be between 100 and 10000', 'max_worker_processes should be between 1 and 10000', 'max_parallel_workers_per_gather should be between 0 and 10000', 'max_parallel_workers should be between 0 and 10000', 'max_parallel_maintenance_workers should be between 0 and 10000', 'max_parallel_workers_per_gather should be between 0 and 10000']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather', 'max_parallel_workers', 'max_parallel_maintenance_workers', 'max_parallel_workers_per_gather', 'max_parallel_workers_per_gather'], 'reason': ['max_connections must be greater than or equal to 100', 'max_parallel_workers_per_gather must be greater than or equal to 0', 'max_parallel_workers must be greater than or equal to 0', 'max_parallel_maintenance_workers must be greater than or equal to 0', 'max_parallel_workers_per_gather must be greater than or equal to 0', 'max_parallel_workers_per_gather must be greater than or equal to 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather', 'max_parallel_workers', 'max_parallel_maintenance_workers', 'max_parallel_workers_per_gather', 'max_parallel_workers_per_gather'], 'reason': ['max_connections should be between 100 and 10000', 'max_parallel_workers_per_gather should be between 0 and 8', 'max_parallel_workers should be between 0 and 8', 'max_parallel_maintenance_workers should be between 0 and 2', 'max_parallel_workers_per_gather should be between 0 and 8', 'max_parallel_workers_per_gather should be between 0 and 8']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather'], 'reason': ['max_connections must be greater than or equal to max_parallel_workers_per_gather', 'max_parallel_workers_per_gather must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['max_parallel_workers_per_gather', 'recovery_target_action', 'geqo_threshold', 'track_activity_query_size'], 'reason': ['max_parallel_workers_per_gather is not a valid parameter for PostgreSQL 13.0', 'recovery_target_action is not a valid parameter for PostgreSQL 13.0', 'geqo_threshold is not a valid parameter for PostgreSQL 13.0', 'track_activity_query_size is not a valid parameter for PostgreSQL 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_parallel_workers_per_gather', 'synchronize_seqscans', 'recovery_target_action'], 'reason': ['max_parallel_workers_per_gather should be an integer', 'synchronize_seqscans should be a boolean', 'recovery_target_action should be a string']}
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be greater than or equal to 100.']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_worker_processes', 'max_parallel_workers_per_gather', 'synchronize_seqscans', 'recovery_target_action', 'geqo_threshold', 'track_activity_query_size'], 'reason': ['max_connections should be between 100 and 1000', 'max_worker_processes should be between 1 and 10', 'max_parallel_workers_per_gather should be between 1 and 10', 'synchronize_seqscans should be on or off', "recovery_target_action should be set to 'pause', 'promote', 'shutdown', or 'abort'", 'geqo_threshold should be between 1 and 100', 'track_activity_query_size should be between 100 and 102400']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather', 'max_parallel_workers_per_gather'], 'reason': ['max_connections must be a positive integer.', 'max_parallel_workers_per_gather must be a positive integer.', 'max_parallel_workers_per_gather must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather', 'max_parallel_workers', 'max_parallel_maintenance_workers', 'max_parallel_workers_per_gather'], 'reason': ['max_connections should be a positive integer', 'max_parallel_workers_per_gather should be a positive integer', 'max_parallel_workers should be a positive integer', 'max_parallel_maintenance_workers should be a positive integer', 'max_parallel_workers_per_gather should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather', 'synchronize_seqscans', 'recovery_target_action', 'geqo_threshold', 'track_activity_query_size'], 'reason': ['max_connections must be a positive integer.', 'max_parallel_workers_per_gather must be a positive integer.', 'synchronize_seqscans must be on or off.', 'recovery_target_action must be a string.', 'geqo_threshold must be a positive integer.', 'track_activity_query_size must be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather'], 'reason': ['max_connections must be greater than max_parallel_workers_per_gather', 'max_parallel_workers_per_gather must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather', 'synchronize_seqscans', 'recovery_target_action', 'geqo_threshold', 'track_activity_query_size'], 'reason': ['max_connections: The value must be between 1 and 10000.', 'max_parallel_workers_per_gather: The value must be between 0 and 10000.', 'synchronize_seqscans: The value must be either on or off.', 'recovery_target_action: The value must be either pause or shutdown.', 'geqo_threshold: The value must be between 0 and 100.', 'track_activity_query_size: The value must be between 100 and 102400.']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather', 'max_parallel_workers'], 'reason': ['max_connections should be between 1 and 1000', 'max_parallel_workers_per_gather should be between 0 and 1000', 'max_parallel_workers should be between 0 and 1000']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['timezone_abbreviations', 'synchronize_seqscans', 'recovery_target_action', 'geqo_threshold', 'track_activity_query_size'], 'reason': ['timezone_abbreviations is not a valid parameter', 'synchronize_seqscans is not a valid parameter', 'recovery_target_action is not a valid parameter', 'geqo_threshold is not a valid parameter', 'track_activity_query_size is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather'], 'reason': ['max_connections should be between 100 and 10000', 'max_parallel_workers_per_gather should be between 0 and 8']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather', 'max_parallel_workers'], 'reason': ['max_connections should be an integer between 1 and 1000000.', 'max_parallel_workers_per_gather should be an integer between 0 and 1000000.', 'max_parallel_workers should be an integer between 0 and 1000000.']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather'], 'reason': ['max_connections must be greater than or equal to max_parallel_workers_per_gather', 'max_parallel_workers_per_gather must be less than or equal to max_parallel_workers']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_parallel_workers_per_gather'], 'reason': ['max_connections should be an integer between 1 and 1000000', 'max_parallel_workers_per_gather should be an integer between 0 and 1000000']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: max_connections	max_parallel_workers_per_gather
+[Ciri] Reason for max_connections: max_connections should be an integer between 1 and 1000000
+[Ciri] Reason for max_parallel_workers_per_gather: max_parallel_workers_per_gather must be less than or equal to max_parallel_workers

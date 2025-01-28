@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'disable-thp', 'aclfile', 'set-proc-title', 'timeout', 'activerehashing', 'repl-diskless-load'], 'reason': ["Invalid parameter 'rdbcompression=10000'. Use 'rdbcompression yes' or 'rdbcompression no'.", "Invalid parameter 'disable-thp=yes'. Use 'disable-thp yes' or 'disable-thp no'.", "Invalid parameter 'aclfile=/valid/file2.acl'. Use 'aclfile /valid/file2.acl'.", "Invalid parameter 'set-proc-title=yes'. Use 'set-proc-title yes' or 'set-proc-title no'.", "Invalid parameter 'timeout=1'. Use 'timeout 1' or 'timeout 0'.", "Invalid parameter 'activerehashing=yes'. Use 'activerehashing yes' or 'activerehashing no'.", "Invalid parameter 'repl-diskless-load=disabled'. Use 'repl-diskless-load yes' or 'repl-diskless-load no'."]}
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'disable-thp', 'aclfile', 'set-proc-title', 'timeout', 'activerehashing', 'repl-diskless-load'], 'reason': ["rdbcompression value should be an integer, not '10000'.", "disable-thp value should be 'yes' or 'no', not 'yes'.", "aclfile path '/valid/file2.acl' may not be valid or accessible.", "set-proc-title value should be 'yes' or 'no', not 'yes'.", "timeout value should be in seconds, not '1'.", "activerehashing value should be 'yes' or 'no', not 'yes'.", "repl-diskless-load value should be 'enabled' or 'disabled', not 'disabled'."]}
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'disable-thp', 'aclfile', 'set-proc-title', 'timeout', 'activerehashing', 'repl-diskless-load'], 'reason': ["rdbcompression value should be an integer, not '10000'.", "disable-thp value should be 'yes' or 'no', not 'yes'.", "aclfile path '/valid/file2.acl' may not be valid or accessible.", "set-proc-title value should be 'yes' or 'no', not 'yes'.", "timeout value should be in seconds, not '1'.", "activerehashing value should be 'yes' or 'no', not 'yes'.", "repl-diskless-load value should be 'enabled' or 'disabled', not 'disabled'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: rdbcompression	disable-thp	aclfile	set-proc-title	timeout	activerehashing	repl-diskless-load
+[Ciri] Reason for rdbcompression: rdbcompression value should be an integer, not '10000'.
+[Ciri] Reason for disable-thp: disable-thp value should be 'yes' or 'no', not 'yes'.
+[Ciri] Reason for aclfile: aclfile path '/valid/file2.acl' may not be valid or accessible.
+[Ciri] Reason for set-proc-title: set-proc-title value should be 'yes' or 'no', not 'yes'.
+[Ciri] Reason for timeout: timeout value should be in seconds, not '1'.
+[Ciri] Reason for activerehashing: activerehashing value should be 'yes' or 'no', not 'yes'.
+[Ciri] Reason for repl-diskless-load: repl-diskless-load value should be 'enabled' or 'disabled', not 'disabled'.

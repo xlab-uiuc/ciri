@@ -1,0 +1,26 @@
+Wrong shot number:
+[1, 6, 5]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['lc_monetary', 'data_directory', 'session_replication_role'], 'reason': ["The property 'lc_monetary' should be set to a valid locale identifier.", "The property 'data_directory' should not be set to 'ConfigDir'. It should specify the actual data directory path.", "The property 'session_replication_role' should have a value of 'origin', 'replica', or 'local'."]}
+
+{'hasError': True, 'errParameter': ['lc_monetary'], 'reason': ["The value of the property 'lc_monetary' should be a valid locale identifier, not just 'C'."]}
+
+{'hasError': True, 'errParameter': ['session_replication_role'], 'reason': ["The value of the property 'session_replication_role' should be 'replica' or 'local' instead of 'origin'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['lc_monetary'], 'reason': ["The property 'lc_monetary' should have a valid locale name, not just 'C'."]}
+
+{'hasError': True, 'errParameter': ['session_replication_role'], 'reason': ["The value of the property 'session_replication_role' should be 'replica' or 'local' instead of 'origin'."]}
+
+{'hasError': True, 'errParameter': ['lc_monetary'], 'reason': ["The property 'lc_monetary' should be set to a valid locale identifier, not a string value."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: lc_monetary
+[Ciri] Reason for lc_monetary: The property 'lc_monetary' should be set to a valid locale identifier, not a string value.

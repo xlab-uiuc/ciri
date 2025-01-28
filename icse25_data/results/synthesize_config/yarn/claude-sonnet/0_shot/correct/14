@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.am.max-attempts', 'yarn.nodemanager.runtime.linux.docker.capabilities', 'yarn.timeline-service.entity-group-fs-store.done-dir'], 'reason': ['The default value for yarn.resourcemanager.am.max-attempts in Hadoop 3.3.0 is 2, not 1.', 'The default value for yarn.nodemanager.runtime.linux.docker.capabilities in Hadoop 3.3.0 is CHOWN, not DAC_OVERRIDE.', 'The default value for yarn.timeline-service.entity-group-fs-store.done-dir in Hadoop 3.3.0 is /ats/entity-file-history/done, not /tmp/entity-file-history/done/.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.resourcemanager.am.max-attempts	yarn.nodemanager.runtime.linux.docker.capabilities	yarn.timeline-service.entity-group-fs-store.done-dir
+[Ciri] Reason for yarn.resourcemanager.am.max-attempts: The default value for yarn.resourcemanager.am.max-attempts in Hadoop 3.3.0 is 2, not 1.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.docker.capabilities: The default value for yarn.nodemanager.runtime.linux.docker.capabilities in Hadoop 3.3.0 is CHOWN, not DAC_OVERRIDE.
+[Ciri] Reason for yarn.timeline-service.entity-group-fs-store.done-dir: The default value for yarn.timeline-service.entity-group-fs-store.done-dir in Hadoop 3.3.0 is /ats/entity-file-history/done, not /tmp/entity-file-history/done/.

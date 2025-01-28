@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.admin.acl</name>
+  <value>*</value>
+    <description>ACL of who can be admin of the YARN cluster.</description>
+</property>
+
+<property>
+  <name>yarn.scheduler.maximum-allocation-mb</name>
+  <value>4096</value>
+    <description>The maximum allocation for every container request at the RM
+    in MBs. Memory requests higher than this will throw an
+    InvalidResourceRequestException.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep</name>
+  <value>200</value>
+    <description>Target count of layer mounts that we should keep on disk
+      at one time.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.privileged-containers.allowed</name>
+  <value>false</value>
+    <description>Allow or disallow privileged containers.</description>
+</property>
+
+<property>
+  <name>yarn.web-proxy.keytab</name>
+  <value>/valid/file1</value>
+    <description>Keytab for WebAppProxy, if the proxy is not running as part of 
+    the RM.</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.client-server.address</name>
+  <value>0.0.0.0:3000</value>
+    <description>The address of the client interface in the SCM
+    (shared cache manager)</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.node-labels.provider.fetch-timeout-ms</name>
+  <value>600000</value>
+    <description>
+    When "yarn.nodemanager.node-labels.provider" is configured with "Script"
+    then this configuration provides the timeout period after which it will
+    interrupt the script which queries the Node labels. Defaults to 20 mins.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min</name>
+  <value>1800</value>
+    <description>Defines the positive minimum hard limit for
+    "yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds".
+    If this configuration has been set less than its default value (3600)
+    the NodeManager may raise a warning.
+    </description>
+</property>
+
+</configuration>

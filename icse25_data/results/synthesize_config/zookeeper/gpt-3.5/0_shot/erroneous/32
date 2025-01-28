@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPort', 'quorum.auth.enableSasl'], 'reason': ['clientPort value should be a positive integer.', 'quorum.auth.enableSasl should be set to true if quorum.auth.learnerRequireSasl is true.']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'quorum.auth.enableSasl'], 'reason': ['clientPort value should be a positive integer.', 'quorum.auth.enableSasl should be set to true since quorum.auth.learnerRequireSasl is true.']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'quorum.auth.enableSasl'], 'reason': ['clientPort value should be a positive integer.', 'quorum.auth.enableSasl should be set to true for enabling SASL authentication.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: clientPort	quorum.auth.enableSasl
+[Ciri] Reason for clientPort: clientPort value should be a positive integer.
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl should be set to true if quorum.auth.learnerRequireSasl is true.

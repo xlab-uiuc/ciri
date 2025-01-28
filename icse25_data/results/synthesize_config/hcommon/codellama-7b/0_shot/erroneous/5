@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.http.authentication.kerberos.keytab', 'hadoop.http.cross-origin.allowed-methods', 'hadoop.http.cross-origin.allowed-headers'], 'reason': ['hadoop.http.authentication.kerberos.keytab: The location of the keytab file with the credentials for the principal. Referring to the same keytab file Oozie uses for its Kerberos credentials for Hadoop.', 'hadoop.http.cross-origin.allowed-methods: Comma separated list of methods that are allowed for web services needing cross-origin (CORS) support.', 'hadoop.http.cross-origin.allowed-headers: Comma separated list of headers that are allowed for web services needing cross-origin (CORS) support.']}
+
+{'hasError': True, 'errParameter': ['hadoop.http.authentication.kerberos.keytab', 'hadoop.http.cross-origin.allowed-methods', 'hadoop.http.cross-origin.allowed-headers'], 'reason': ['The property hadoop.http.authentication.kerberos.keytab is not valid. The value /valid/file2 is not a valid file path.', 'The property hadoop.http.cross-origin.allowed-methods is not valid. The value POST is not a valid value for this property.', 'The property hadoop.http.cross-origin.allowed-headers is not valid. The value Content-Type is not a valid value for this property.']}
+
+{'hasError': True, 'errParameter': ['hadoop.http.authentication.kerberos.keytab'], 'reason': ['The value of property hadoop.http.authentication.kerberos.keytab is invalid. The value must be a valid file path.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.http.authentication.kerberos.keytab	hadoop.http.cross-origin.allowed-methods	hadoop.http.cross-origin.allowed-headers
+[Ciri] Reason for hadoop.http.authentication.kerberos.keytab: hadoop.http.authentication.kerberos.keytab: The location of the keytab file with the credentials for the principal. Referring to the same keytab file Oozie uses for its Kerberos credentials for Hadoop.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-methods: The property hadoop.http.cross-origin.allowed-methods is not valid. The value POST is not a valid value for this property.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-headers: The property hadoop.http.cross-origin.allowed-headers is not valid. The value Content-Type is not a valid value for this property.

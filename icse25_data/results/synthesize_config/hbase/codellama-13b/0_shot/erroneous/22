@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.regionserver.port', 'hbase.client.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.regionserver.compaction.enabled', 'hbase.hstore.blockingStoreFiles', 'hbase.master.keytab.file', 'hbase.thrift.minWorkerThreads'], 'reason': ['hbase.local.dir is not a valid directory', 'hbase.regionserver.port is not a valid port', 'hbase.client.keyvalue.maxsize is not a valid value', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not a valid value', 'hbase.regionserver.compaction.enabled is not a valid value', 'hbase.hstore.blockingStoreFiles is not a valid value', 'hbase.master.keytab.file is not a valid file', 'hbase.thrift.minWorkerThreads is not a valid value']}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.regionserver.port', 'hbase.client.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.regionserver.compaction.enabled', 'hbase.hstore.blockingStoreFiles', 'hbase.master.keytab.file', 'hbase.thrift.minWorkerThreads'], 'reason': ['The property hbase.local.dir is not valid.', 'The property hbase.regionserver.port is not valid.', 'The property hbase.client.keyvalue.maxsize is not valid.', 'The property hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not valid.', 'The property hbase.regionserver.compaction.enabled is not valid.', 'The property hbase.hstore.blockingStoreFiles is not valid.', 'The property hbase.master.keytab.file is not valid.', 'The property hbase.thrift.minWorkerThreads is not valid.']}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.regionserver.port', 'hbase.client.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.regionserver.compaction.enabled', 'hbase.hstore.blockingStoreFiles', 'hbase.master.keytab.file', 'hbase.thrift.minWorkerThreads'], 'reason': ['hbase.local.dir is not a valid directory', 'hbase.regionserver.port is not a valid port', 'hbase.client.keyvalue.maxsize is not a valid integer', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not a valid integer', 'hbase.regionserver.compaction.enabled is not a valid boolean', 'hbase.hstore.blockingStoreFiles is not a valid integer', 'hbase.master.keytab.file is not a valid file', 'hbase.thrift.minWorkerThreads is not a valid integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.local.dir	hbase.regionserver.port	hbase.client.keyvalue.maxsize	hbase.hregion.percolumnfamilyflush.size.lower.bound.min	hbase.regionserver.compaction.enabled	hbase.hstore.blockingStoreFiles	hbase.master.keytab.file	hbase.thrift.minWorkerThreads
+[Ciri] Reason for hbase.local.dir: hbase.local.dir is not a valid directory
+[Ciri] Reason for hbase.regionserver.port: hbase.regionserver.port is not a valid port
+[Ciri] Reason for hbase.client.keyvalue.maxsize: hbase.client.keyvalue.maxsize is not a valid value
+[Ciri] Reason for hbase.hregion.percolumnfamilyflush.size.lower.bound.min: hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not a valid integer
+[Ciri] Reason for hbase.regionserver.compaction.enabled: hbase.regionserver.compaction.enabled is not a valid boolean
+[Ciri] Reason for hbase.hstore.blockingStoreFiles: hbase.hstore.blockingStoreFiles is not a valid value
+[Ciri] Reason for hbase.master.keytab.file: The property hbase.master.keytab.file is not valid.
+[Ciri] Reason for hbase.thrift.minWorkerThreads: hbase.thrift.minWorkerThreads is not a valid value

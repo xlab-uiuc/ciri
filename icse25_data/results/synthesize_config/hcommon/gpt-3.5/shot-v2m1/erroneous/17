@@ -1,0 +1,20 @@
+Wrong shot number:
+[7]
+
+Correct shot number:
+[6, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.socket.recv.buffer', 'fs.s3a.s3guard.ddb.background.sleep', 'fs.s3a.select.input.csv.quote.character', 'ipc.client.connection.maxidletime', 'ipc.[port_number].weighted-cost.lockfree'], 'reason': ["The property 'hadoop.security.dns.nameserver' has an invalid IP address '0.0.0'.", "The property 'fs.defaultFS' has an invalid URI value 'file:///'.", "The property 'fs.s3a.socket.recv.buffer' should have a numeric value.", "The property 'fs.s3a.s3guard.ddb.background.sleep' should specify time in milliseconds.", "The property 'fs.s3a.select.input.csv.quote.character' should have a single character enclosed in quotes.", "The property 'ipc.client.connection.maxidletime' should have a numeric value.", "The property 'ipc.[port_number].weighted-cost.lockfree' should have a numeric value."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.defaultFS	fs.s3a.socket.recv.buffer	fs.s3a.s3guard.ddb.background.sleep	fs.s3a.select.input.csv.quote.character	ipc.client.connection.maxidletime	ipc.[port_number].weighted-cost.lockfree
+[Ciri] Reason for hadoop.security.dns.nameserver: The property 'hadoop.security.dns.nameserver' has an invalid IP address '0.0.0'.
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has an invalid URI value 'file:///'.
+[Ciri] Reason for fs.s3a.socket.recv.buffer: The property 'fs.s3a.socket.recv.buffer' should have a numeric value.
+[Ciri] Reason for fs.s3a.s3guard.ddb.background.sleep: The property 'fs.s3a.s3guard.ddb.background.sleep' should specify time in milliseconds.
+[Ciri] Reason for fs.s3a.select.input.csv.quote.character: The property 'fs.s3a.select.input.csv.quote.character' should have a single character enclosed in quotes.
+[Ciri] Reason for ipc.client.connection.maxidletime: The property 'ipc.client.connection.maxidletime' should have a numeric value.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The property 'ipc.[port_number].weighted-cost.lockfree' should have a numeric value.

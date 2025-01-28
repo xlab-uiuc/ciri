@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.webapp.ui2.enable', 'yarn.timeline-service.keytab'], 'reason': ["Property 'yarn.webapp.ui2.enable' is deprecated in yarn version 3.3.0.", "Property 'yarn.timeline-service.keytab' is deprecated in yarn version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.keytab', 'yarn.timeline-service.client.fd-flush-interval-secs'], 'reason': ["The property 'yarn.timeline-service.keytab' should not be set to '/valid/file1'. It should point to the actual keytab file for the timeline server.", "The property 'yarn.timeline-service.client.fd-flush-interval-secs' should not be set to '10'. It should be set to a higher value for better performance."]}
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.keytab', 'yarn.timeline-service.client.fd-flush-interval-secs'], 'reason': ["The property 'yarn.timeline-service.keytab' should not be pointing to a specific file path '/valid/file1'. It should be set to the keytab file path on the system.", "The property 'yarn.timeline-service.client.fd-flush-interval-secs' should not be set to '10'. It should be set to a higher value for better performance."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.timeline-service.keytab	yarn.timeline-service.client.fd-flush-interval-secs
+[Ciri] Reason for yarn.timeline-service.keytab: The property 'yarn.timeline-service.keytab' should not be set to '/valid/file1'. It should point to the actual keytab file for the timeline server.
+[Ciri] Reason for yarn.timeline-service.client.fd-flush-interval-secs: The property 'yarn.timeline-service.client.fd-flush-interval-secs' should not be set to '10'. It should be set to a higher value for better performance.

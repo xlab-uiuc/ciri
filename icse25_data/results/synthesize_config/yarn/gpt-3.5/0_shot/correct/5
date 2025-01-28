@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.collector-service.address', 'yarn.log-aggregation.file-controller.TFile.class', 'yarn.client.application-client-protocol.poll-interval-ms', 'yarn.intermediate-data-encryption.enable', 'yarn.nodemanager.containers-launcher.class'], 'reason': ["The property 'yarn.nodemanager.collector-service.address' should not contain placeholders like '${yarn.nodemanager.hostname}' in the value.", "The property 'yarn.log-aggregation.file-controller.TFile.class' should have a valid class value.", "The property 'yarn.client.application-client-protocol.poll-interval-ms' should have a numeric value.", "The property 'yarn.intermediate-data-encryption.enable' should have a boolean value (true/false).", "The property 'yarn.nodemanager.containers-launcher.class' should have a valid class value."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.collector-service.address', 'yarn.client.application-client-protocol.poll-interval-ms'], 'reason': ["The value '${yarn.nodemanager.hostname}:8048' for property 'yarn.nodemanager.collector-service.address' contains a reference to a variable 'yarn.nodemanager.hostname' which may not be defined or resolved properly.", "The value '200' for property 'yarn.client.application-client-protocol.poll-interval-ms' should be a higher value to reduce the frequency of polling."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.collector-service.address', 'yarn.client.application-client-protocol.poll-interval-ms'], 'reason': ["The value '${yarn.nodemanager.hostname}:8048' for property 'yarn.nodemanager.collector-service.address' contains a placeholder variable 'yarn.nodemanager.hostname' which may not be resolved correctly.", "The value '200' for property 'yarn.client.application-client-protocol.poll-interval-ms' should be greater than 1000 for better performance."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.collector-service.address	yarn.client.application-client-protocol.poll-interval-ms
+[Ciri] Reason for yarn.nodemanager.collector-service.address: The value '${yarn.nodemanager.hostname}:8048' for property 'yarn.nodemanager.collector-service.address' contains a reference to a variable 'yarn.nodemanager.hostname' which may not be defined or resolved properly.
+[Ciri] Reason for yarn.client.application-client-protocol.poll-interval-ms: The value '200' for property 'yarn.client.application-client-protocol.poll-interval-ms' should be greater than 1000 for better performance.

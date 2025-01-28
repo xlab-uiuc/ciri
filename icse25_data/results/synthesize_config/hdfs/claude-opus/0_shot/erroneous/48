@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.http.internal-proxy.port', 'dfs.mover.keytab.file'], 'reason': ['The value for dfs.datanode.http.internal-proxy.port cannot be negative. It should be a valid port number or 0 to select a random port.', "The value for dfs.mover.keytab.file should be a valid file path. '/valid/file2' does not look like a proper keytab file path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.http.internal-proxy.port	dfs.mover.keytab.file
+[Ciri] Reason for dfs.datanode.http.internal-proxy.port: The value for dfs.datanode.http.internal-proxy.port cannot be negative. It should be a valid port number or 0 to select a random port.
+[Ciri] Reason for dfs.mover.keytab.file: The value for dfs.mover.keytab.file should be a valid file path. '/valid/file2' does not look like a proper keytab file path.

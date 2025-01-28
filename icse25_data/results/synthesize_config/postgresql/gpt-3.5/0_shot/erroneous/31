@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['unix_socket_group', 'include', 'vacuum_multixact_failsafe_age', 'vacuum_cost_delay', 'syslog_facility', 'force_parallel_mode'], 'reason': ['unix_socket_group should not be an empty string', 'include parameter should have a valid path specified', 'vacuum_multixact_failsafe_age value should be in bytes, not just a number', 'vacuum_cost_delay should have a non-zero value', 'syslog_facility should be a valid syslog facility', "force_parallel_mode should be set to 'on' or 'off' only"]}
+
+{'hasError': True, 'errParameter': ['unix_socket_group', 'include', 'vacuum_multixact_failsafe_age', 'vacuum_cost_delay', 'syslog_facility', 'force_parallel_mode'], 'reason': ['unix_socket_group should have a value specified', 'include parameter should have the actual path or file to include', 'vacuum_multixact_failsafe_age value seems unusually high', 'vacuum_cost_delay value should be greater than or equal to zero', 'syslog_facility should be a valid syslog facility', "force_parallel_mode should be set to 'on' or 'off'"]}
+
+{'hasError': True, 'errParameter': ['unix_socket_group', 'include', 'vacuum_multixact_failsafe_age', 'vacuum_cost_delay', 'syslog_facility', 'force_parallel_mode'], 'reason': ['unix_socket_group should have a value specified', 'include parameter should have a valid file path', 'vacuum_multixact_failsafe_age value should be an integer', 'vacuum_cost_delay value should be an integer', 'syslog_facility should be a valid syslog facility', "force_parallel_mode should be set to 'on' or 'off'"]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: unix_socket_group	include	vacuum_multixact_failsafe_age	vacuum_cost_delay	syslog_facility	force_parallel_mode
+[Ciri] Reason for unix_socket_group: unix_socket_group should have a value specified
+[Ciri] Reason for include: include parameter should have a valid file path
+[Ciri] Reason for vacuum_multixact_failsafe_age: vacuum_multixact_failsafe_age value seems unusually high
+[Ciri] Reason for vacuum_cost_delay: vacuum_cost_delay value should be greater than or equal to zero
+[Ciri] Reason for syslog_facility: syslog_facility should be a valid syslog facility
+[Ciri] Reason for force_parallel_mode: force_parallel_mode should be set to 'on' or 'off'

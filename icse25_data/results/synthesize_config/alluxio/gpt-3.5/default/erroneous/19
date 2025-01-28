@@ -1,0 +1,21 @@
+Wrong shot number:
+[10, 2, 5]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.user.logging.threshold', 'alluxio.worker.tieredstore.level0.dirs.mediumtype', 'alluxio.user.ufs.block.read.concurrency.max'], 'reason': ["The property 'alluxio.job.worker.rpc.port' has a negative value which is invalid for a port number.", "The property 'alluxio.user.logging.threshold' has the value '10s' which is not in the correct format.", "The property 'alluxio.worker.tieredstore.level0.dirs.mediumtype' uses an incorrect reference format.", "The property 'alluxio.user.ufs.block.read.concurrency.max' has a value that exceeds the maximum allowed limit."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.user.logging.threshold', 'alluxio.worker.tieredstore.level0.dirs.mediumtype', 'alluxio.user.ufs.block.read.concurrency.max'], 'reason': ["The property 'alluxio.job.worker.rpc.port' has the value '-100.22' which is out of the valid range of a port number.", "The property 'alluxio.user.logging.threshold' has the value '10s' which uses an incorrect unit.", "The property 'alluxio.worker.tieredstore.level0.dirs.mediumtype' has a value reference '${alluxio.worker.tieredstore.level0.alias}' which may not be resolved correctly.", "The property 'alluxio.user.ufs.block.read.concurrency.max' has the value '1073741823' which is too large for the maximum concurrency."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.user.logging.threshold', 'alluxio.worker.tieredstore.level0.dirs.mediumtype', 'alluxio.user.ufs.block.read.concurrency.max'], 'reason': ["The property 'alluxio.job.worker.rpc.port' has a negative value which is invalid for a port number.", "The property 'alluxio.user.logging.threshold' has the value '10s' which is not in the correct format.", "The property 'alluxio.worker.tieredstore.level0.dirs.mediumtype' references an undefined property '${alluxio.worker.tieredstore.level0.alias}'.", "The property 'alluxio.user.ufs.block.read.concurrency.max' has a value that exceeds the maximum allowed value."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.job.worker.rpc.port	alluxio.user.logging.threshold	alluxio.worker.tieredstore.level0.dirs.mediumtype	alluxio.user.ufs.block.read.concurrency.max
+[Ciri] Reason for alluxio.job.worker.rpc.port: The property 'alluxio.job.worker.rpc.port' has a negative value which is invalid for a port number.
+[Ciri] Reason for alluxio.user.logging.threshold: The property 'alluxio.user.logging.threshold' has the value '10s' which is not in the correct format.
+[Ciri] Reason for alluxio.worker.tieredstore.level0.dirs.mediumtype: The property 'alluxio.worker.tieredstore.level0.dirs.mediumtype' references an undefined property '${alluxio.worker.tieredstore.level0.alias}'.
+[Ciri] Reason for alluxio.user.ufs.block.read.concurrency.max: The property 'alluxio.user.ufs.block.read.concurrency.max' has a value that exceeds the maximum allowed limit.

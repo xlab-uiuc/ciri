@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.connection.timeout.ms</name>
+  <value>120000</value>
+  <description>
+    This property is the connection timeout (in milliseconds) for LDAP
+    operations. If the LDAP provider doesn't establish a connection within the
+    specified period, it will abort the connect attempt. Non-positive value
+    means no LDAP connection timeout is specified in which case it waits for the
+    connection to establish until the underlying network times out.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.service.shutdown.timeout</name>
+  <value>60s</value>
+    <description>
+      Timeout to wait for each shutdown operation to complete.
+      If a hook takes longer than this time to complete, it will be interrupted,
+      so the service will shutdown. This allows the service shutdown
+      to recover from a blocked operation.
+      Some shutdown hooks may need more time than this, for example when
+      a large amount of data needs to be uploaded to an object store.
+      In this situation: increase the timeout.
+
+      The minimum duration of the timeout is 1 second, "1s".
+    </description>
+</property>
+
+<property>
+  <name>fs.trash.interval</name>
+  <value>1</value>
+  <description>Number of minutes after which the checkpoint
+  gets deleted.  If zero, the trash feature is disabled.
+  This option may be configured both on the server and the
+  client. If trash is disabled server side then the client
+  side configuration is checked. If trash is enabled on the
+  server side then the value configured on the server is
+  used and the client configuration value is ignored.
+  </description>
+</property>
+
+<property>
+  <name>fs.viewfs.rename.strategy</name>
+  <value>SAME_MOUNTPOINT</value>
+  <description>Allowed rename strategy to rename between multiple mountpoints.
+    Allowed values are SAME_MOUNTPOINT,SAME_TARGET_URI_ACROSS_MOUNTPOINT and
+    SAME_FILESYSTEM_ACROSS_MOUNTPOINT.
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.wasb.impl</name>
+  <value>org.apache.hadoop.fs.azure.Wasb</value>
+  <description>AbstractFileSystem implementation class of wasb://</description>
+</property>
+
+<property>
+  <name>tfile.fs.input.buffer.size</name>
+  <value>262144</value>
+  <description>
+    Buffer size used for FSDataInputStream in bytes.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.crypto.buffer.size</name>
+  <value>16384</value>
+  <description>
+    The buffer size used by CryptoInputStream and CryptoOutputStream.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.caller.context.signature.max.size</name>
+  <value>40</value>
+    <description>
+      The caller's signature (optional) is for offline validation. If the
+      signature exceeds the maximum allowed bytes in server, the caller context
+      will be abandoned, in which case the caller context will not be recorded
+      in audit logs.
+    </description>
+</property>
+
+</configuration>

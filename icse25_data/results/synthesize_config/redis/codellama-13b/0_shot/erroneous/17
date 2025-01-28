@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'tcp-keepalive'], 'reason': ['The value of hash-max-listpack-value is not in the range of 0-64', 'The value of tcp-keepalive is not in the range of 0-3600']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'hash-max-listpack-value', 'tcp-keepalive', 'dir', 'aof-use-rdb-preamble', 'enable-protected-configs', 'loglevel', 'proc-title-template'], 'reason': ['cluster-announce-port is not a valid port number.', 'hash-max-listpack-value is not a valid value.', 'tcp-keepalive is not a valid value.', 'dir is not a valid directory.', 'aof-use-rdb-preamble is not a valid value.', 'enable-protected-configs is not a valid value.', 'loglevel is not a valid value.', 'proc-title-template is not a valid template.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port'], 'reason': ['This parameter is not supported in Redis 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'hash-max-listpack-value', 'tcp-keepalive', 'dir', 'aof-use-rdb-preamble', 'enable-protected-configs', 'loglevel', 'proc-title-template'], 'reason': ['cluster-announce-port is not a valid port number', 'hash-max-listpack-value is not a valid value', 'tcp-keepalive is not a valid value', 'dir is not a valid directory', 'aof-use-rdb-preamble is not a valid value', 'enable-protected-configs is not a valid value', 'loglevel is not a valid value', 'proc-title-template is not a valid value']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port'], 'reason': ['cluster-announce-port is not a valid configuration parameter for Redis 7.0.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port'], 'reason': ['cluster-announce-port is not a valid configuration parameter in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port'], 'reason': ['cluster-announce-port is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port'], 'reason': ['The cluster-announce-port parameter is not available in Redis 7.0.0.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: cluster-announce-port
+[Ciri] Reason for cluster-announce-port: The cluster-announce-port parameter is not available in Redis 7.0.0.

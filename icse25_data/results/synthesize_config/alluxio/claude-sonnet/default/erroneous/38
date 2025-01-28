@@ -1,0 +1,15 @@
+Wrong shot number:
+[12, 4, 11]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.user.file.write.tier.default'], 'reason': ["The property 'alluxio.job.master.web.bind.host' has the value '999.-1.0.0' which does not follow the correct IP address format.", "The value of the property 'alluxio.user.file.write.tier.default' should be a non-negative integer representing the tier to write data to."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.web.bind.host	alluxio.user.file.write.tier.default
+[Ciri] Reason for alluxio.job.master.web.bind.host: The property 'alluxio.job.master.web.bind.host' has the value '999.-1.0.0' which does not follow the correct IP address format.
+[Ciri] Reason for alluxio.user.file.write.tier.default: The value of the property 'alluxio.user.file.write.tier.default' should be a non-negative integer representing the tier to write data to.

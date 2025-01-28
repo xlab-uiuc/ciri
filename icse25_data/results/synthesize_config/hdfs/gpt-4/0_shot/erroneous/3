@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.directoryscan.interval', 'dfs.namenode.blockreport.queue.size'], 'reason': ["The value for 'dfs.datanode.directoryscan.interval' is specified as '1s', but the correct format does not support specifying time units in this manner. It should be an integer representing seconds without any unit suffix.", "The value for 'dfs.namenode.blockreport.queue.size' is set to 'true', which is incorrect. It should be an integer value specifying the size of the queue."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.directoryscan.interval	dfs.namenode.blockreport.queue.size
+[Ciri] Reason for dfs.datanode.directoryscan.interval: The value for 'dfs.datanode.directoryscan.interval' is specified as '1s', but the correct format does not support specifying time units in this manner. It should be an integer representing seconds without any unit suffix.
+[Ciri] Reason for dfs.namenode.blockreport.queue.size: The value for 'dfs.namenode.blockreport.queue.size' is set to 'true', which is incorrect. It should be an integer value specifying the size of the queue.

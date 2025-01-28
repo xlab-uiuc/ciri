@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 8, 7]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.delegation-token-renewer.thread-timeout', 'yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions'], 'reason': ["The value '120s' for 'yarn.resourcemanager.delegation-token-renewer.thread-timeout' should be in milliseconds without the 's' suffix.", "The value 'read' for 'yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions' is not a valid permission setting. Valid permissions are numerical octal values."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.delegation-token-renewer.thread-timeout	yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions
+[Ciri] Reason for yarn.resourcemanager.delegation-token-renewer.thread-timeout: The value '120s' for 'yarn.resourcemanager.delegation-token-renewer.thread-timeout' should be in milliseconds without the 's' suffix.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions: The value 'read' for 'yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions' is not a valid permission setting. Valid permissions are numerical octal values.

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type', 'alluxio.master.metastore.dir', 'alluxio.user.client.cache.eviction.retries', 'alluxio.user.master.polling.timeout'], 'reason': ['alluxio.master.journal.type is not a valid journal type. Valid options are: UFS, EMBEDDED, ZOOKEEPER, and ROCKS', 'alluxio.master.metastore.dir is not a valid directory. The directory must be a valid directory on the local file system.', 'alluxio.user.client.cache.eviction.retries is not a valid integer. The value must be a positive integer.', 'alluxio.user.master.polling.timeout is not a valid duration. The value must be a valid duration in the format of <number><unit>, where unit can be one of: ms, s, m, h, d']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.master.journal.type	alluxio.master.metastore.dir	alluxio.user.client.cache.eviction.retries	alluxio.user.master.polling.timeout
+[Ciri] Reason for alluxio.master.journal.type: alluxio.master.journal.type is not a valid journal type. Valid options are: UFS, EMBEDDED, ZOOKEEPER, and ROCKS
+[Ciri] Reason for alluxio.master.metastore.dir: alluxio.master.metastore.dir is not a valid directory. The directory must be a valid directory on the local file system.
+[Ciri] Reason for alluxio.user.client.cache.eviction.retries: alluxio.user.client.cache.eviction.retries is not a valid integer. The value must be a positive integer.
+[Ciri] Reason for alluxio.user.master.polling.timeout: alluxio.user.master.polling.timeout is not a valid duration. The value must be a valid duration in the format of <number><unit>, where unit can be one of: ms, s, m, h, d

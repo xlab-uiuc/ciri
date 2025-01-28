@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'proxy-failure-wait', 'proxy-refresh-interval'], 'reason': ['auto-compaction-retention should be an integer value, not a string. The value represents the number of hours to retain data.', "proxy-failure-wait is deprecated in etcd v3.5.0. Use '--proxy-failure-wait-interval' and '--proxy-failure-wait-interval-max' instead.", "proxy-refresh-interval is deprecated in etcd v3.5.0. Use '--proxy-refresh-interval-duration' instead."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: auto-compaction-retention	proxy-failure-wait	proxy-refresh-interval
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention should be an integer value, not a string. The value represents the number of hours to retain data.
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait is deprecated in etcd v3.5.0. Use '--proxy-failure-wait-interval' and '--proxy-failure-wait-interval-max' instead.
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval is deprecated in etcd v3.5.0. Use '--proxy-refresh-interval-duration' instead.

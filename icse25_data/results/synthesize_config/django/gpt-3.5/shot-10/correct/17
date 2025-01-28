@@ -1,0 +1,12 @@
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_SAMESITE', 'FORCE_SCRIPT_NAME'], 'reason': ["CSRF_COOKIE_SAMESITE should be set to 'None' or 'Strict' for better security. It is not recommended to set it to 'Lax'.", 'FORCE_SCRIPT_NAME should be set to a string value if needed, setting it to None may cause issues.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: CSRF_COOKIE_SAMESITE	FORCE_SCRIPT_NAME
+[Ciri] Reason for CSRF_COOKIE_SAMESITE: CSRF_COOKIE_SAMESITE should be set to 'None' or 'Strict' for better security. It is not recommended to set it to 'Lax'.
+[Ciri] Reason for FORCE_SCRIPT_NAME: FORCE_SCRIPT_NAME should be set to a string value if needed, setting it to None may cause issues.

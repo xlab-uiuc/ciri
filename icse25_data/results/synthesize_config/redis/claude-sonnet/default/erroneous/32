@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 11, 9]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'appenddirname'], 'reason': ["The property 'bind-source-addr' has the value '-1.0.0.0' which is an invalid IP address.", "The property 'appenddirname' should be a directory path, not a string value."]}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'appenddirname'], 'reason': ["The property 'bind-source-addr' has the value '-1.0.0.0' which is an invalid IP address.", "The property 'appenddirname' should be a directory path, not a string in quotes."]}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'appenddirname'], 'reason': ["The property 'bind-source-addr' has the value '-1.0.0.0' which is an invalid IP address.", "The property 'appenddirname' should be a directory path, not a string in quotes."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: bind-source-addr	appenddirname
+[Ciri] Reason for bind-source-addr: The property 'bind-source-addr' has the value '-1.0.0.0' which is an invalid IP address.
+[Ciri] Reason for appenddirname: The property 'appenddirname' should be a directory path, not a string value.

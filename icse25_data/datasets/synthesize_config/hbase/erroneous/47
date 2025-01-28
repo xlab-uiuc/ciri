@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.logcleaner.plugins</name>
+  <value>org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner</value>
+    <description>A comma-separated list of BaseLogCleanerDelegate invoked by
+    the LogsCleaner service. These WAL cleaners are called in order,
+    so put the cleaner that prunes the most files in front. To
+    implement your own BaseLogCleanerDelegate, just put it in HBase's classpath
+    and add the fully qualified class name here. Always add the above
+    default log cleaners in the list.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.info.port.auto</name>
+  <value>false</value>
+    <description>Whether or not the Master or RegionServer
+    UI should search for a port to bind to. Enables automatic port
+    search if hbase.regionserver.info.port is already in use.
+    Useful for testing, turned off by default.</description>
+</property>
+
+<property>
+  <name>hbase.master.regions.recovery.check.interval</name>
+  <value>1200000</value>
+    <description>
+      Regions Recovery Chore interval in milliseconds.
+      This chore keeps running at this interval to
+      find all regions with configurable max store file ref count
+      and reopens them.
+    </description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.initLimit</name>
+  <value>1</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The number of ticks that the initial synchronization phase can take.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.majorcompaction.jitter</name>
+  <value>1.0</value>
+    <description>A multiplier applied to hbase.hregion.majorcompaction to cause compaction to occur
+      a given amount of time either side of hbase.hregion.majorcompaction. The smaller the number,
+      the closer the compactions will happen to the hbase.hregion.majorcompaction
+      interval.</description>
+</property>
+
+<property>
+  <name>hbase.master.loadbalancer.class</name>
+  <value>org.apache.hadoop.hbase.master.balancer.StochasticLoadBalancer</value>
+    <description>
+      Class used to execute the regions balancing when the period occurs.
+      See the class comment for more on how it works
+      http://hbase.apache.org/devapidocs/org/apache/hadoop/hbase/master/balancer/StochasticLoadBalancer.html
+      It replaces the DefaultLoadBalancer as the default (since renamed
+      as the SimpleLoadBalancer).
+    </description>
+</property>
+
+<property>
+  <name>hbase.security.exec.permission.checks</name>
+  <value>false</value>
+    <description>
+      If this setting is enabled and ACL based access control is active (the
+      AccessController coprocessor is installed either as a system coprocessor
+      or on a table as a table coprocessor) then you must grant all relevant
+      users EXEC privilege if they require the ability to execute coprocessor
+      endpoint calls. EXEC privilege, like any other permission, can be
+      granted globally to a user, or to a user on a per table or per namespace
+      basis. For more information on coprocessor endpoints, see the coprocessor
+      section of the HBase online manual. For more information on granting or
+      revoking permissions using the AccessController, see the security
+      section of the HBase online manual.
+    </description>
+</property>
+
+<property>
+  <name>hbase.master.wait.on.service.seconds</name>
+  <value>30</value>
+    <description>Default is 5 minutes. Make it 30 seconds for tests. See
+    HBASE-19794 for some context.</description>
+</property>
+
+</configuration>

@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 6, 7]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['localSessionsUpgradingEnabled', 'maxSessionTimeout'], 'reason': ["The property 'localSessionsUpgradingEnabled' has the value '10' which is not within the accepted value {true,false}.", "The property 'maxSessionTimeout' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['localSessionsUpgradingEnabled', 'maxSessionTimeout'], 'reason': ["The property 'localSessionsUpgradingEnabled' has the value '10' which is not within the accepted value {true,false}.", "The property 'maxSessionTimeout' has the value '-1' which should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['localSessionsUpgradingEnabled', 'maxSessionTimeout'], 'reason': ["The property 'localSessionsUpgradingEnabled' has the value '10' which is not within the accepted value {true,false}.", "The property 'maxSessionTimeout' has a negative value which is not allowed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: localSessionsUpgradingEnabled	maxSessionTimeout
+[Ciri] Reason for localSessionsUpgradingEnabled: The property 'localSessionsUpgradingEnabled' has the value '10' which is not within the accepted value {true,false}.
+[Ciri] Reason for maxSessionTimeout: The property 'maxSessionTimeout' has a negative value which is not allowed.

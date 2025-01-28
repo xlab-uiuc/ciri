@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.work.dir', 'alluxio.underfs.gcs.version', 'alluxio.worker.reviewer.probabilistic.softlimit.bytes'], 'reason': ["The property 'alluxio.work.dir' is not a recognized Alluxio configuration property. It might be a typo or an incorrect setting.", "The property 'alluxio.underfs.gcs.version' does not exist. The versioning for Google Cloud Storage under Alluxio is typically handled differently, not through a direct version property.", "The property 'alluxio.worker.reviewer.probabilistic.softlimit.bytes' seems to be incorrect or does not exist in Alluxio 2.5.0. It might be a typo or an outdated/invalid configuration."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.work.dir	alluxio.underfs.gcs.version	alluxio.worker.reviewer.probabilistic.softlimit.bytes
+[Ciri] Reason for alluxio.work.dir: The property 'alluxio.work.dir' is not a recognized Alluxio configuration property. It might be a typo or an incorrect setting.
+[Ciri] Reason for alluxio.underfs.gcs.version: The property 'alluxio.underfs.gcs.version' does not exist. The versioning for Google Cloud Storage under Alluxio is typically handled differently, not through a direct version property.
+[Ciri] Reason for alluxio.worker.reviewer.probabilistic.softlimit.bytes: The property 'alluxio.worker.reviewer.probabilistic.softlimit.bytes' seems to be incorrect or does not exist in Alluxio 2.5.0. It might be a typo or an outdated/invalid configuration.

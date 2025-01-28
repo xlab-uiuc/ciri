@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry', 'dfs.client.block.write.replace-datanode-on-failure.min-replication', 'dfs.namenode.storageinfo.defragment.timeout.ms'], 'reason': ['dfs.client.cached.conn.retry is deprecated as of version 3.3.0. It should be a non-negative value.', 'dfs.client.block.write.replace-datanode-on-failure.min-replication should be a non-negative value.', 'dfs.namenode.storageinfo.defragment.timeout.ms is not a valid configuration parameter for HDFS version 3.3.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.client.cached.conn.retry	dfs.client.block.write.replace-datanode-on-failure.min-replication	dfs.namenode.storageinfo.defragment.timeout.ms
+[Ciri] Reason for dfs.client.cached.conn.retry: dfs.client.cached.conn.retry is deprecated as of version 3.3.0. It should be a non-negative value.
+[Ciri] Reason for dfs.client.block.write.replace-datanode-on-failure.min-replication: dfs.client.block.write.replace-datanode-on-failure.min-replication should be a non-negative value.
+[Ciri] Reason for dfs.namenode.storageinfo.defragment.timeout.ms: dfs.namenode.storageinfo.defragment.timeout.ms is not a valid configuration parameter for HDFS version 3.3.0.

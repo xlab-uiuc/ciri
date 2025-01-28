@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 6, 2]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_statement'], 'reason': ["The value of the property 'log_statement' is not a valid option."]}
+
+{'hasError': True, 'errParameter': ['log_statement', 'min_wal_size'], 'reason': ["The value of the property 'log_statement' is invalid. It should be one of 'none', 'ddl', 'mod', 'all'.", "The value of the property 'min_wal_size' should be smaller or equal to the value of the property 'max_wal_size'."]}
+
+{'hasError': True, 'errParameter': ['log_statement', 'min_wal_size'], 'reason': ["The value 'NOEXIST_TRANSFER_MODE' for property 'log_statement' is not a valid option.", "The value of the property 'min_wal_size' should be smaller or equal to the value of the property 'max_wal_size'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: log_statement	min_wal_size
+[Ciri] Reason for log_statement: The value 'NOEXIST_TRANSFER_MODE' for property 'log_statement' is not a valid option.
+[Ciri] Reason for min_wal_size: The value of the property 'min_wal_size' should be smaller or equal to the value of the property 'max_wal_size'.

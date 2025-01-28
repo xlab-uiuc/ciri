@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.work.dir', 'alluxio.master.embedded.journal.transport.max.inbound.message.size', 'alluxio.user.block.worker.client.pool.max', 'alluxio.user.worker.list.refresh.interval', 'alluxio.zookeeper.job.leader.path', 'alluxio.worker.tieredstore.level0.alias', 'alluxio.user.block.size.bytes.default', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ['alluxio.work.dir is not a valid directory.', 'alluxio.master.embedded.journal.transport.max.inbound.message.size is not a valid size.', 'alluxio.user.block.worker.client.pool.max is not a valid integer.', 'alluxio.user.worker.list.refresh.interval is not a valid duration.', 'alluxio.zookeeper.job.leader.path is not a valid file path.', 'alluxio.worker.tieredstore.level0.alias is not a valid tier alias.', 'alluxio.user.block.size.bytes.default is not a valid size.', 'alluxio.jvm.monitor.warn.threshold is not a valid duration.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.work.dir	alluxio.master.embedded.journal.transport.max.inbound.message.size	alluxio.user.block.worker.client.pool.max	alluxio.user.worker.list.refresh.interval	alluxio.zookeeper.job.leader.path	alluxio.worker.tieredstore.level0.alias	alluxio.user.block.size.bytes.default	alluxio.jvm.monitor.warn.threshold
+[Ciri] Reason for alluxio.work.dir: alluxio.work.dir is not a valid directory.
+[Ciri] Reason for alluxio.master.embedded.journal.transport.max.inbound.message.size: alluxio.master.embedded.journal.transport.max.inbound.message.size is not a valid size.
+[Ciri] Reason for alluxio.user.block.worker.client.pool.max: alluxio.user.block.worker.client.pool.max is not a valid integer.
+[Ciri] Reason for alluxio.user.worker.list.refresh.interval: alluxio.user.worker.list.refresh.interval is not a valid duration.
+[Ciri] Reason for alluxio.zookeeper.job.leader.path: alluxio.zookeeper.job.leader.path is not a valid file path.
+[Ciri] Reason for alluxio.worker.tieredstore.level0.alias: alluxio.worker.tieredstore.level0.alias is not a valid tier alias.
+[Ciri] Reason for alluxio.user.block.size.bytes.default: alluxio.user.block.size.bytes.default is not a valid size.
+[Ciri] Reason for alluxio.jvm.monitor.warn.threshold: alluxio.jvm.monitor.warn.threshold is not a valid duration.

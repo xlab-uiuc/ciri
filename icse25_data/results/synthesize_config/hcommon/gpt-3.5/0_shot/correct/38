@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.interface', 'fs.s3a.s3guard.ddb.background.sleep'], 'reason': ["The property 'hadoop.security.dns.interface' is not a valid property for hcommon version 3.3.0.", "The value '50ms' for property 'fs.s3a.s3guard.ddb.background.sleep' is not in the correct format. It should be in milliseconds without 'ms'."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.interface', 'fs.s3a.s3guard.ddb.background.sleep'], 'reason': ["The property 'hadoop.security.dns.interface' should not be set unless required in a multi-homed environment.", "The value '50ms' for 'fs.s3a.s3guard.ddb.background.sleep' should be in milliseconds format without units."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.interface', 'hadoop.security.dns.log-slow-lookups.enabled', 'fs.s3a.s3guard.ddb.background.sleep', 'fs.s3a.retry.interval', 'fs.s3a.s3guard.consistency.retry.limit', 'net.topology.script.number.args', 'hadoop.http.authentication.signature.secret.file', 'hadoop.http.cross-origin.max-age'], 'reason': ["The property 'hadoop.security.dns.interface' should not be set unless required in a multi-homed environment.", "The property 'hadoop.security.dns.log-slow-lookups.enabled' should have a more descriptive name.", "The value '50ms' for 'fs.s3a.s3guard.ddb.background.sleep' should be in milliseconds without 'ms'.", "The value '1000ms' for 'fs.s3a.retry.interval' should be in milliseconds without 'ms'.", "The value '14' for 'fs.s3a.s3guard.consistency.retry.limit' should be an integer without quotes.", "The value '50' for 'net.topology.script.number.args' should be an integer without quotes.", "The value '/valid/file2' for 'hadoop.http.authentication.signature.secret.file' should be a valid file path.", "The value '1800' for 'hadoop.http.cross-origin.max-age' should be an integer without quotes."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.dns.interface	fs.s3a.s3guard.ddb.background.sleep
+[Ciri] Reason for hadoop.security.dns.interface: The property 'hadoop.security.dns.interface' is not a valid property for hcommon version 3.3.0.
+[Ciri] Reason for fs.s3a.s3guard.ddb.background.sleep: The value '50ms' for 'fs.s3a.s3guard.ddb.background.sleep' should be in milliseconds format without units.

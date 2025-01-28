@@ -1,0 +1,13 @@
+Correct shot number:
+[5, 16]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'fs.azure.user.agent.prefix', 'ipc.[port_number].identity-provider.impl'], 'reason': ['Invalid value format. The timeout value should be expressed in seconds (e.g., 10s, 1m, etc.)', 'Usage tag should not contain additional characters like xmlPropsToSkipCompare.add()', 'Parameter name should not contain placeholders like [port_number]']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout	fs.azure.user.agent.prefix	ipc.[port_number].identity-provider.impl
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: Invalid value format. The timeout value should be expressed in seconds (e.g., 10s, 1m, etc.)
+[Ciri] Reason for fs.azure.user.agent.prefix: Usage tag should not contain additional characters like xmlPropsToSkipCompare.add()
+[Ciri] Reason for ipc.[port_number].identity-provider.impl: Parameter name should not contain placeholders like [port_number]

@@ -1,0 +1,20 @@
+Wrong shot number:
+[4]
+
+Correct shot number:
+[3, 1, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'DEFAULT_EXCEPTION_REPORTER', 'STATICFILES_FINDERS', 'USE_X_FORWARDED_PORT', 'DATE_FORMAT', 'SESSION_EXPIRE_AT_BROWSER_CLOSE', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has a negative value which is not allowed.", "The property 'DEFAULT_EXCEPTION_REPORTER' is not a valid property for Django configuration.", "The property 'STATICFILES_FINDERS' should be a string, not a list.", "The property 'USE_X_FORWARDED_PORT' should not be set to a boolean value.", "The property 'DATE_FORMAT' has an invalid format.", "The property 'SESSION_EXPIRE_AT_BROWSER_CLOSE' should not be set to a boolean value.", "The property 'CSRF_COOKIE_AGE' has an invalid format."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	DEFAULT_EXCEPTION_REPORTER	STATICFILES_FINDERS	USE_X_FORWARDED_PORT	DATE_FORMAT	SESSION_EXPIRE_AT_BROWSER_CLOSE	CSRF_COOKIE_AGE
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: The property 'CACHE_MIDDLEWARE_SECONDS' has a negative value which is not allowed.
+[Ciri] Reason for DEFAULT_EXCEPTION_REPORTER: The property 'DEFAULT_EXCEPTION_REPORTER' is not a valid property for Django configuration.
+[Ciri] Reason for STATICFILES_FINDERS: The property 'STATICFILES_FINDERS' should be a string, not a list.
+[Ciri] Reason for USE_X_FORWARDED_PORT: The property 'USE_X_FORWARDED_PORT' should not be set to a boolean value.
+[Ciri] Reason for DATE_FORMAT: The property 'DATE_FORMAT' has an invalid format.
+[Ciri] Reason for SESSION_EXPIRE_AT_BROWSER_CLOSE: The property 'SESSION_EXPIRE_AT_BROWSER_CLOSE' should not be set to a boolean value.
+[Ciri] Reason for CSRF_COOKIE_AGE: The property 'CSRF_COOKIE_AGE' has an invalid format.

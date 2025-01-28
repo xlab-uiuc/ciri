@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.bind.users', 'ipc.[port_number].weighted-cost.response', 'ha.health-monitor.rpc.connect.max.retries'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.bind.users' is not correctly defined for Hadoop 3.3.0. The correct property should specify individual user aliases directly in the property name, not as a comma-separated list.", "The property 'ipc.[port_number].weighted-cost.response' uses a placeholder '[port_number]' which is not a valid property format. Specific port numbers should be used instead of placeholders.", "The property 'ha.health-monitor.rpc.connect.max.retries' does not exist in Hadoop 3.3.0. The correct property for configuring the number of retry attempts for RPC connections in HA configurations should be verified against the Hadoop 3.3.0 documentation."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.bind.users	ipc.[port_number].weighted-cost.response	ha.health-monitor.rpc.connect.max.retries
+[Ciri] Reason for hadoop.security.group.mapping.ldap.bind.users: The property 'hadoop.security.group.mapping.ldap.bind.users' is not correctly defined for Hadoop 3.3.0. The correct property should specify individual user aliases directly in the property name, not as a comma-separated list.
+[Ciri] Reason for ipc.[port_number].weighted-cost.response: The property 'ipc.[port_number].weighted-cost.response' uses a placeholder '[port_number]' which is not a valid property format. Specific port numbers should be used instead of placeholders.
+[Ciri] Reason for ha.health-monitor.rpc.connect.max.retries: The property 'ha.health-monitor.rpc.connect.max.retries' does not exist in Hadoop 3.3.0. The correct property for configuring the number of retry attempts for RPC connections in HA configurations should be verified against the Hadoop 3.3.0 documentation.

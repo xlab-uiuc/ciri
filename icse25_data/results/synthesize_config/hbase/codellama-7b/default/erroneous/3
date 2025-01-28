@@ -1,0 +1,34 @@
+Wrong shot number:
+[6, 11, 5]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.rest.port'], 'reason': ["The value of the property 'hbase.rest.port' is not a valid integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.rest.filter.classes'], 'reason': ["The property 'hbase.rest.filter.classes' has the value 'org.apache.hadoop.hbase.rest.filter.GzipFilter' which is not a valid value."]}
+
+{'hasError': True, 'errParameter': ['hbase.data.umask'], 'reason': ["The value of the property 'hbase.data.umask' should be an octal value."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.scanner.timeout.period'], 'reason': ["The value of the property 'hbase.client.scanner.timeout.period' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.rest.filter.classes'], 'reason': ["The value of the property 'hbase.rest.filter.classes' should be a comma-separated list of class names."]}
+
+{'hasError': True, 'errParameter': ['hbase.data.umask'], 'reason': ["The value of the property 'hbase.data.umask' should be a valid octal value."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.data.umask'], 'reason': ["The value of the property 'hbase.data.umask' should be a valid octal number."]}
+
+{'hasError': True, 'errParameter': ['hbase.data.umask'], 'reason': ["The value of the property 'hbase.data.umask' should be an octal number."]}
+
+{'hasError': True, 'errParameter': ['hbase.rest.port'], 'reason': ["The property 'hbase.rest.port' has the value '8080' which is not within the accepted range of [1024, 65535]."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.data.umask
+[Ciri] Reason for hbase.data.umask: The value of the property 'hbase.data.umask' should be an octal number.

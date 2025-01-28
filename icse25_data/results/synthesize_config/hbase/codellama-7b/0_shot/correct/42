@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count'], 'reason': ['hbase.regionserver.handler.count is not a valid property for hbase version 2.2.7']}
+
+{'hasError': True, 'errParameter': ['hbase.hregion.majorcompaction', 'hbase.hregion.memstore.flush.size', 'hbase.region.replica.replication.enabled'], 'reason': ['hbase.hregion.majorcompaction is not a valid property', 'hbase.hregion.memstore.flush.size is not a valid property', 'hbase.region.replica.replication.enabled is not a valid property']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count', 'hbase.client.scanner.timeout.period', 'hbase.hregion.memstore.flush.size', 'hbase.hregion.majorcompaction', 'hbase.rest.support.proxyuser', 'hbase.thrift.maxWorkerThreads', 'hbase.region.replica.replication.enabled', 'hbase.snapshot.region.timeout'], 'reason': ['hbase.regionserver.handler.count should be a positive integer', 'hbase.client.scanner.timeout.period should be a positive integer', 'hbase.hregion.memstore.flush.size should be a positive integer', 'hbase.hregion.majorcompaction should be a positive integer', 'hbase.rest.support.proxyuser should be a boolean', 'hbase.thrift.maxWorkerThreads should be a positive integer', 'hbase.region.replica.replication.enabled should be a boolean', 'hbase.snapshot.region.timeout should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count'], 'reason': ['hbase.regionserver.handler.count should be a multiple of CPU count. If mostly read-only, handlers count close to cpu count does well. Start with twice the CPU count and tune from there.']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count'], 'reason': ['The value of hbase.regionserver.handler.count is 60, which is not a multiple of CPU count. Too many handlers can be counter-productive. Make it a multiple of CPU count. If mostly read-only, handlers count close to cpu count does well. Start with twice the CPU count and tune from there.']}
+
+{'hasError': True, 'errParameter': ['hbase.hregion.memstore.flush.size', 'hbase.hregion.majorcompaction', 'hbase.rest.support.proxyuser'], 'reason': ['hbase.hregion.memstore.flush.size: The value is too small. It should be at least 1024 * 1024 * 10.', 'hbase.hregion.majorcompaction: The value is too small. It should be at least 7 days, expressed in milliseconds.', 'hbase.rest.support.proxyuser: The value is invalid. It should be either true or false.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.handler.count
+[Ciri] Reason for hbase.regionserver.handler.count: hbase.regionserver.handler.count should be a multiple of CPU count. If mostly read-only, handlers count close to cpu count does well. Start with twice the CPU count and tune from there.

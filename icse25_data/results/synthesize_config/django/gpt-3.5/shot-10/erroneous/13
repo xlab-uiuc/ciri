@@ -1,0 +1,12 @@
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'SIGNING_BACKEND'], 'reason': ['SECURE_HSTS_SECONDS should be an integer representing the number of seconds for which browsers should remember to force HTTPS. The value provided is too large.', 'SIGNING_BACKEND is not a valid Django setting. It seems to be a custom setting or a typo.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: SECURE_HSTS_SECONDS	SIGNING_BACKEND
+[Ciri] Reason for SECURE_HSTS_SECONDS: SECURE_HSTS_SECONDS should be an integer representing the number of seconds for which browsers should remember to force HTTPS. The value provided is too large.
+[Ciri] Reason for SIGNING_BACKEND: SIGNING_BACKEND is not a valid Django setting. It seems to be a custom setting or a typo.

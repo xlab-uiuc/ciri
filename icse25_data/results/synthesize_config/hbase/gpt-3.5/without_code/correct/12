@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 11, 8]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.min.size'], 'reason': ["The value of the property 'hbase.hstore.compaction.min.size' should be a power of 2 to align with HBase block sizes for better performance."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.min.size'], 'reason': ["The property 'hbase.hstore.compaction.min.size' should have a value smaller than the default HFile block size, which is usually 64k."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.min.size'], 'reason': ["The property 'hbase.hstore.compaction.min.size' should have a value smaller than or equal to the default value of 128 MB."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.hstore.compaction.min.size
+[Ciri] Reason for hbase.hstore.compaction.min.size: The value of the property 'hbase.hstore.compaction.min.size' should be a power of 2 to align with HBase block sizes for better performance.

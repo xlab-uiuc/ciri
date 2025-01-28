@@ -1,0 +1,19 @@
+Wrong shot number:
+[12, 15, 10]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'io.map.index.skip'], 'reason': ["The value of 'fs.default.name' is incorrect. It should be 'file:///' instead of 'file///'.", "The property 'io.map.index.skip' has a negative value, which is invalid for its intended use."]}
+
+{'hasError': True, 'errParameter': ['io.map.index.skip', 'fs.default.name'], 'reason': ["The property 'io.map.index.skip' has a negative value which is not valid for the number of index entries to skip.", "The value of 'fs.default.name' is incorrectly formatted. It should be 'file:///' instead of 'file///'."]}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'io.map.index.skip'], 'reason': ["The value for 'fs.default.name' is incorrectly formatted. It should be 'file:///' instead of 'file///'.", "The property 'io.map.index.skip' has a negative value, which is not valid for its intended use."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	io.map.index.skip
+[Ciri] Reason for fs.default.name: The value of 'fs.default.name' is incorrectly formatted. It should be 'file:///' instead of 'file///'.
+[Ciri] Reason for io.map.index.skip: The property 'io.map.index.skip' has a negative value, which is invalid for its intended use.

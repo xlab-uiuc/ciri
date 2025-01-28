@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'log-outputs'], 'reason': ["'proxy-refresh-interval' is not a valid configuration option for etcd 3.5.0. It was used in earlier versions of etcd but was removed in later versions.", "'log-outputs' should specify valid output paths or targets. 'stderr' is a valid target, but the value should be enclosed in double quotes to be correctly interpreted as a string in the configuration file."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: proxy-refresh-interval	log-outputs
+[Ciri] Reason for proxy-refresh-interval: 'proxy-refresh-interval' is not a valid configuration option for etcd 3.5.0. It was used in earlier versions of etcd but was removed in later versions.
+[Ciri] Reason for log-outputs: 'log-outputs' should specify valid output paths or targets. 'stderr' is a valid target, but the value should be enclosed in double quotes to be correctly interpreted as a string in the configuration file.

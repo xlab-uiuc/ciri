@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'maxClientCnxns'], 'reason': ['dataDir and dataLogDir cannot be the same', 'maxClientCnxns cannot be greater than 60']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'maxClientCnxns'], 'reason': ['dataDir and dataLogDir should not have the same value', 'maxClientCnxns should be less than 60']}
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'electionAlg'], 'reason': ['maxClientCnxns is deprecated in version 3.7.0', 'electionAlg is deprecated in version 3.7.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dataDir	dataLogDir	maxClientCnxns
+[Ciri] Reason for dataDir: dataDir and dataLogDir cannot be the same
+[Ciri] Reason for dataLogDir: maxClientCnxns should be less than 60
+[Ciri] Reason for maxClientCnxns: 

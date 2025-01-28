@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['stream-node-max-bytes', 'cluster-enabled', 'cluster-announce-ip', 'aclfile', 'stream-node-max-entries', 'replica-lazy-flush', 'repl-diskless-sync-delay', 'tls-protocols'], 'reason': ["stream-node-max-bytes should be specified in bytes without 'B' suffix.", "cluster-enabled should be either 'yes' or 'no'.", 'cluster-announce-ip should be an actual IP address.', 'aclfile should point to a valid ACL file.', 'stream-node-max-entries should be a positive integer.', "replica-lazy-flush should be either 'yes' or 'no'.", 'repl-diskless-sync-delay should be a positive integer.', 'tls-protocols should be a list of supported TLS protocols enclosed in double quotes.']}
+
+{'hasError': True, 'errParameter': ['stream-node-max-bytes', 'cluster-announce-ip', 'tls-protocols'], 'reason': ["stream-node-max-bytes should be specified in bytes without 'B' suffix.", 'cluster-announce-ip should not be set to a loopback address like 127.0.0.1 in a cluster setup.', 'tls-protocols should not be enclosed in quotes.']}
+
+{'hasError': True, 'errParameter': ['stream-node-max-bytes', 'cluster-announce-ip', 'aclfile', 'stream-node-max-entries', 'replica-lazy-flush', 'repl-diskless-sync-delay', 'tls-protocols'], 'reason': ['stream-node-max-bytes is not a valid parameter for Redis configuration.', 'cluster-announce-ip should not be set to loopback address 127.0.0.1 in a cluster setup.', 'aclfile should be aclfile instead of aclfile=/valid/file1.acl.', 'stream-node-max-entries is not a valid parameter for Redis configuration.', 'replica-lazy-flush should be set to yes or no.', 'repl-diskless-sync-delay is not a valid parameter for Redis configuration.', 'tls-protocols should not be enclosed in quotes.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['stream-node-max-bytes', 'cluster-announce-ip', 'tls-protocols'], 'reason': ["stream-node-max-bytes should be specified in bytes without 'B' suffix.", 'cluster-announce-ip should be set to the actual IP address of the node.', 'tls-protocols should be a list of supported protocols without quotes.']}
+
+{'hasError': True, 'errParameter': ['stream-node-max-bytes', 'cluster-announce-ip', 'tls-protocols'], 'reason': ["stream-node-max-bytes should be specified in bytes without 'B' suffix.", 'cluster-announce-ip should be set to the actual IP address of the host.', 'tls-protocols should be a list of supported TLS versions separated by spaces.']}
+
+{'hasError': True, 'errParameter': ['stream-node-max-bytes', 'cluster-enabled', 'cluster-announce-ip', 'aclfile', 'stream-node-max-entries', 'replica-lazy-flush', 'repl-diskless-sync-delay', 'tls-protocols'], 'reason': ["stream-node-max-bytes should be in bytes format without 'B'.", "cluster-enabled should be 'yes' or 'no'.", 'cluster-announce-ip should be a valid IP address.', 'aclfile path should be a valid file path.', 'stream-node-max-entries should be a numeric value.', "replica-lazy-flush should be 'yes' or 'no'.", 'repl-diskless-sync-delay should be a numeric value.', 'tls-protocols should be a list of valid TLS protocols.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: stream-node-max-bytes	cluster-announce-ip	tls-protocols
+[Ciri] Reason for stream-node-max-bytes: stream-node-max-bytes should be specified in bytes without 'B' suffix.
+[Ciri] Reason for cluster-announce-ip: cluster-announce-ip should be set to the actual IP address of the host.
+[Ciri] Reason for tls-protocols: tls-protocols should be a list of supported protocols without quotes.

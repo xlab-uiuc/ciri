@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.threshold', 'io.mapfile.bloom.error.rate', 'file.stream-buffer-size', 'hadoop.user.group.static.mapping.overrides'], 'reason': ['fs.s3a.multipart.threshold should be in bytes', 'io.mapfile.bloom.error.rate should be a number between 0 and 1', 'file.stream-buffer-size should be a power of 2', 'hadoop.user.group.static.mapping.overrides should be in the format user=group1,group2']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.s3a.multipart.threshold	io.mapfile.bloom.error.rate	file.stream-buffer-size	hadoop.user.group.static.mapping.overrides
+[Ciri] Reason for fs.s3a.multipart.threshold: fs.s3a.multipart.threshold should be in bytes
+[Ciri] Reason for io.mapfile.bloom.error.rate: io.mapfile.bloom.error.rate should be a number between 0 and 1
+[Ciri] Reason for file.stream-buffer-size: file.stream-buffer-size should be a power of 2
+[Ciri] Reason for hadoop.user.group.static.mapping.overrides: hadoop.user.group.static.mapping.overrides should be in the format user=group1,group2

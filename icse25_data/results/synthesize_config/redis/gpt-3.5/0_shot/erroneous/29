@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'enable-protected-configs', 'appenddirname'], 'reason': ['repl-diskless-load is not a valid configuration parameter for Redis version 7.0.0', 'enable-protected-configs is not a valid configuration parameter for Redis version 7.0.0', 'appenddirname should be appendonlydir without quotes']}
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'enable-protected-configs', 'appenddirname'], 'reason': ['repl-diskless-load is not a valid configuration parameter for Redis version 7.0.0', 'enable-protected-configs is not a valid configuration parameter for Redis version 7.0.0', 'appenddirname should be appendonlydir without quotes']}
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'enable-protected-configs', 'appenddirname'], 'reason': ['repl-diskless-load is not a valid parameter for Redis version 7.0.0', 'enable-protected-configs is not a valid parameter for Redis version 7.0.0', 'appenddirname should be appendonlydir without quotes']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: repl-diskless-load	enable-protected-configs	appenddirname
+[Ciri] Reason for repl-diskless-load: repl-diskless-load is not a valid configuration parameter for Redis version 7.0.0
+[Ciri] Reason for enable-protected-configs: enable-protected-configs is not a valid parameter for Redis version 7.0.0
+[Ciri] Reason for appenddirname: appenddirname should be appendonlydir without quotes

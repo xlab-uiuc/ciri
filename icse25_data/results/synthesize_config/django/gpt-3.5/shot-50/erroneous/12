@@ -1,0 +1,14 @@
+Correct shot number:
+[1, 2, 6, 3, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should be a positive integer representing the number of seconds.', 'STATICFILES_FINDERS should be a list of strings, not a single string.', 'PASSWORD_RESET_TIMEOUT should be a positive integer representing the number of seconds.', 'CSRF_COOKIE_AGE should be a positive integer representing the number of seconds.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	STATICFILES_FINDERS	PASSWORD_RESET_TIMEOUT	CSRF_COOKIE_AGE
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: CACHE_MIDDLEWARE_SECONDS should be a positive integer representing the number of seconds.
+[Ciri] Reason for STATICFILES_FINDERS: STATICFILES_FINDERS should be a list of strings, not a single string.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: PASSWORD_RESET_TIMEOUT should be a positive integer representing the number of seconds.
+[Ciri] Reason for CSRF_COOKIE_AGE: CSRF_COOKIE_AGE should be a positive integer representing the number of seconds.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hba_file', 'max_stack_depth'], 'reason': ["The 'hba_file' parameter should be an absolute path, not a URL like '//ConfigDir/pg_hba.conf'.", "The 'max_stack_depth' parameter does not accept a unit suffix like 'MB'. It should be an integer value representing kilobytes, e.g., '2048' for 2MB."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hba_file	max_stack_depth
+[Ciri] Reason for hba_file: The 'hba_file' parameter should be an absolute path, not a URL like '//ConfigDir/pg_hba.conf'.
+[Ciri] Reason for max_stack_depth: The 'max_stack_depth' parameter does not accept a unit suffix like 'MB'. It should be an integer value representing kilobytes, e.g., '2048' for 2MB.

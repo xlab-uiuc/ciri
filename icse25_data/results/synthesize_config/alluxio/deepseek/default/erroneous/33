@@ -1,0 +1,20 @@
+Wrong shot number:
+[6, 7, 12]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.metadata.sync.interval', 'alluxio.user.conf.sync.interval', 'alluxio.user.file.create.ttl'], 'reason': ["The property 'alluxio.user.file.metadata.sync.interval' has the value '-2' which is not within the accepted value {true,false}.", "The property 'alluxio.user.conf.sync.interval' has the value '2min' which is not within the accepted value {true,false}.", "The property 'alluxio.user.file.create.ttl' has the value '-2' which is not within the accepted value {true,false}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.metadata.sync.interval', 'alluxio.user.conf.sync.interval', 'alluxio.user.file.create.ttl'], 'reason': ["The property 'alluxio.user.file.metadata.sync.interval' has the value '-2' which is not within the accepted value {true,false}.", "The property 'alluxio.user.conf.sync.interval' has the value '2min' which is not within the accepted value {true,false}.", "The property 'alluxio.user.file.create.ttl' has the value '-2' which is not within the accepted value {true,false}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.metadata.sync.interval'], 'reason': ["The value of the property 'alluxio.user.file.metadata.sync.interval' should be a positive integer or 'FOREVER'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.user.file.metadata.sync.interval	alluxio.user.conf.sync.interval	alluxio.user.file.create.ttl
+[Ciri] Reason for alluxio.user.file.metadata.sync.interval: The property 'alluxio.user.file.metadata.sync.interval' has the value '-2' which is not within the accepted value {true,false}.
+[Ciri] Reason for alluxio.user.conf.sync.interval: The property 'alluxio.user.conf.sync.interval' has the value '2min' which is not within the accepted value {true,false}.
+[Ciri] Reason for alluxio.user.file.create.ttl: The property 'alluxio.user.file.create.ttl' has the value '-2' which is not within the accepted value {true,false}.

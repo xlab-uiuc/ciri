@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.snapshot.region.timeout'], 'reason': ['hbase.snapshot.region.timeout is not a valid property in hbase version 2.2.7']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.port', 'hbase.zookeeper.peerport'], 'reason': ['hbase.regionserver.port is not a valid port number.', 'hbase.zookeeper.peerport is not a valid port number.']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.port', 'hbase.zookeeper.peerport'], 'reason': ['The port the HBase RegionServer binds to.', 'Port used by ZooKeeper peers to talk to each other. See https://zookeeper.apache.org/doc/r3.3.3/zookeeperStarted.html#sc_RunningReplicatedZooKeeper for more information.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.port	hbase.zookeeper.peerport
+[Ciri] Reason for hbase.regionserver.port: The port the HBase RegionServer binds to.
+[Ciri] Reason for hbase.zookeeper.peerport: hbase.zookeeper.peerport is not a valid port number.

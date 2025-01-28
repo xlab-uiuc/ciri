@@ -1,0 +1,17 @@
+Correct shot number:
+[15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.bytes.per.checksum', 'io.map.index.interval', 'fs.AbstractFileSystem.abfs.impl', 'fs.azure.sas.expiry.period', 'ipc.[port_number].weighted-cost.response', 'ha.failover-controller.graceful-fence.rpc-timeout.ms', 'hadoop.security.key.default.cipher'], 'reason': ["The property 'io.bytes.per.checksum' is missing the 'usage' tag.", "The property 'io.map.index.interval' is missing the 'usage' tag.", "The property 'fs.AbstractFileSystem.abfs.impl' is missing the 'usage' tag.", "The property 'fs.azure.sas.expiry.period' is missing the 'usage' tag.", "The property 'ipc.[port_number].weighted-cost.response' is missing the 'usage' tag.", "The property 'ha.failover-controller.graceful-fence.rpc-timeout.ms' is missing the 'usage' tag.", "The property 'hadoop.security.key.default.cipher' is missing the 'usage' tag."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: io.bytes.per.checksum	io.map.index.interval	fs.AbstractFileSystem.abfs.impl	fs.azure.sas.expiry.period	ipc.[port_number].weighted-cost.response	ha.failover-controller.graceful-fence.rpc-timeout.ms	hadoop.security.key.default.cipher
+[Ciri] Reason for io.bytes.per.checksum: The property 'io.bytes.per.checksum' is missing the 'usage' tag.
+[Ciri] Reason for io.map.index.interval: The property 'io.map.index.interval' is missing the 'usage' tag.
+[Ciri] Reason for fs.AbstractFileSystem.abfs.impl: The property 'fs.AbstractFileSystem.abfs.impl' is missing the 'usage' tag.
+[Ciri] Reason for fs.azure.sas.expiry.period: The property 'fs.azure.sas.expiry.period' is missing the 'usage' tag.
+[Ciri] Reason for ipc.[port_number].weighted-cost.response: The property 'ipc.[port_number].weighted-cost.response' is missing the 'usage' tag.
+[Ciri] Reason for ha.failover-controller.graceful-fence.rpc-timeout.ms: The property 'ha.failover-controller.graceful-fence.rpc-timeout.ms' is missing the 'usage' tag.
+[Ciri] Reason for hadoop.security.key.default.cipher: The property 'hadoop.security.key.default.cipher' is missing the 'usage' tag.

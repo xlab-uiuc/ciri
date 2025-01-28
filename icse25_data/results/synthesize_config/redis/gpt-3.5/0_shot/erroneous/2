@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'rdb-save-incremental-fsync', 'unixsocketperm', 'list-max-listpack-size', 'hz', 'zset-max-listpack-value'], 'reason': ['tcp-keepalive value should be a positive integer', "rdb-save-incremental-fsync value should be 'yes' or 'no'", 'unixsocketperm value should be a valid permission value', 'list-max-listpack-size value should be a positive integer', 'hz value should be a positive integer', 'zset-max-listpack-value value should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'list-max-listpack-size'], 'reason': ['tcp-keepalive value should be a positive integer or 0.', 'list-max-listpack-size value should be a positive integer or 0.']}
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'list-max-listpack-size'], 'reason': ['tcp-keepalive value should be a positive integer or zero.', 'list-max-listpack-size value should be a positive integer or zero.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tcp-keepalive	list-max-listpack-size
+[Ciri] Reason for tcp-keepalive: tcp-keepalive value should be a positive integer or zero.
+[Ciri] Reason for list-max-listpack-size: list-max-listpack-size value should be a positive integer or 0.

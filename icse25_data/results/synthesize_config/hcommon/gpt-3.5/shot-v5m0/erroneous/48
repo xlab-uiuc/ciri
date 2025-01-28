@@ -1,0 +1,12 @@
+Correct shot number:
+[9, 4, 10, 13, 7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'hadoop.user.group.static.mapping.overrides'], 'reason': ['Invalid value for property fs.ftp.host.port. Port number cannot be negative.', 'Invalid format for property hadoop.user.group.static.mapping.overrides. Mapping should be in the format user1=group1,group2;user2=;user3=group2;']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host.port	hadoop.user.group.static.mapping.overrides
+[Ciri] Reason for fs.ftp.host.port: Invalid value for property fs.ftp.host.port. Port number cannot be negative.
+[Ciri] Reason for hadoop.user.group.static.mapping.overrides: Invalid format for property hadoop.user.group.static.mapping.overrides. Mapping should be in the format user1=group1,group2;user2=;user3=group2;

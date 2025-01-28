@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.job.capacity', 'alluxio.network.host.resolution.timeout', 'alluxio.master.backup.transport.timeout', 'alluxio.master.file.access.time.update.precision'], 'reason': ['alluxio.job.master.job.capacity should be a positive integer.', 'alluxio.network.host.resolution.timeout is deprecated since version 2.0.0 and removed in version 2.5.0.', 'alluxio.master.backup.transport.timeout is not a valid Alluxio 2.5.0 configuration property.', "alluxio.master.file.access.time.update.precision should use a valid time unit such as 'ms', 's', 'm', 'h', 'd'. '1d' is invalid."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.job.master.job.capacity	alluxio.network.host.resolution.timeout	alluxio.master.backup.transport.timeout	alluxio.master.file.access.time.update.precision
+[Ciri] Reason for alluxio.job.master.job.capacity: alluxio.job.master.job.capacity should be a positive integer.
+[Ciri] Reason for alluxio.network.host.resolution.timeout: alluxio.network.host.resolution.timeout is deprecated since version 2.0.0 and removed in version 2.5.0.
+[Ciri] Reason for alluxio.master.backup.transport.timeout: alluxio.master.backup.transport.timeout is not a valid Alluxio 2.5.0 configuration property.
+[Ciri] Reason for alluxio.master.file.access.time.update.precision: alluxio.master.file.access.time.update.precision should use a valid time unit such as 'ms', 's', 'm', 'h', 'd'. '1d' is invalid.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.keytab', 'quorum.auth.kerberos.principal', 'quorum.auth.learnerRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.kerberos.keytab is not a valid path', 'quorum.auth.kerberos.principal is not a valid principal', 'quorum.auth.learnerRequireSasl is not a valid boolean', 'quorum.auth.enableSasl is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.keytabLocation', 'quorum.auth.kerberos.servicePrincipal', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs', 'quorum.auth.enableSasl', 'localSessionsEnabled', 'electionAlg'], 'reason': ["The property 'quorum.auth.kerberos.keytabLocation' is not recognized.", "The property 'quorum.auth.kerberos.servicePrincipal' is not recognized.", "The property 'quorum.auth.learnerRequireSasl' is not recognized.", "The property 'quorumListenOnAllIPs' is not recognized.", "The property 'quorum.auth.enableSasl' is not recognized.", "The property 'localSessionsEnabled' is not recognized.", "The property 'electionAlg' is not recognized."]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.keytab', 'quorum.auth.kerberos.principal', 'quorum.auth.learnerRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['The quorum.auth.kerberos.keytab property is not set.', 'The quorum.auth.kerberos.principal property is not set.', 'The quorum.auth.learnerRequireSasl property is not set.', 'The quorum.auth.enableSasl property is not set.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: quorum.auth.kerberos.keytab	quorum.auth.kerberos.principal	quorum.auth.learnerRequireSasl	quorum.auth.enableSasl
+[Ciri] Reason for quorum.auth.kerberos.keytab: quorum.auth.kerberos.keytab is not a valid path
+[Ciri] Reason for quorum.auth.kerberos.principal: The quorum.auth.kerberos.principal property is not set.
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl is not a valid boolean
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl is not a valid boolean

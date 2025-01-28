@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'enable_nestloop', 'autovacuum_naptime', 'commit_delay'], 'reason': ['vacuum_freeze_min_age is set to an extremely high value (25000000 miliseconds or around 289 days). This could lead to bloat and performance issues. The recommended value is between 100000000 and 200000000 (around 1-2 days).', 'enable_nestloop is not a valid parameter in PostgreSQL 13. The nested loop join method is enabled by default and cannot be disabled.', 'autovacuum_naptime is set to 1min which is too low and could lead to excessive autovacuum activity. The recommended minimum value is 1min.', 'commit_delay is not a valid parameter in PostgreSQL 13. This parameter was removed in version 9.6.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: vacuum_freeze_min_age	enable_nestloop	autovacuum_naptime	commit_delay
+[Ciri] Reason for vacuum_freeze_min_age: vacuum_freeze_min_age is set to an extremely high value (25000000 miliseconds or around 289 days). This could lead to bloat and performance issues. The recommended value is between 100000000 and 200000000 (around 1-2 days).
+[Ciri] Reason for enable_nestloop: enable_nestloop is not a valid parameter in PostgreSQL 13. The nested loop join method is enabled by default and cannot be disabled.
+[Ciri] Reason for autovacuum_naptime: autovacuum_naptime is set to 1min which is too low and could lead to excessive autovacuum activity. The recommended minimum value is 1min.
+[Ciri] Reason for commit_delay: commit_delay is not a valid parameter in PostgreSQL 13. This parameter was removed in version 9.6.

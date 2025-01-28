@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.server.saslLoginContext', 'secureClientPort', 'secureClientPortAddress'], 'reason': ["The 'quorum.auth.server.saslLoginContext' property is not a valid configuration parameter in ZooKeeper 3.7.0. It should be 'quorum.auth.serverRequireSasl' instead.", "The 'secureClientPort' property is deprecated in ZooKeeper 3.7.0. It should be replaced with 'client.secure.port'.", "The 'secureClientPortAddress' property is deprecated in ZooKeeper 3.7.0. It should be replaced with 'client.secure.portAddress'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quorum.auth.server.saslLoginContext	secureClientPort	secureClientPortAddress
+[Ciri] Reason for quorum.auth.server.saslLoginContext: The 'quorum.auth.server.saslLoginContext' property is not a valid configuration parameter in ZooKeeper 3.7.0. It should be 'quorum.auth.serverRequireSasl' instead.
+[Ciri] Reason for secureClientPort: The 'secureClientPort' property is deprecated in ZooKeeper 3.7.0. It should be replaced with 'client.secure.port'.
+[Ciri] Reason for secureClientPortAddress: The 'secureClientPortAddress' property is deprecated in ZooKeeper 3.7.0. It should be replaced with 'client.secure.portAddress'.

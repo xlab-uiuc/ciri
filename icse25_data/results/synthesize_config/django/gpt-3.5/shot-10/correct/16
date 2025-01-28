@@ -1,0 +1,17 @@
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_ALIAS', 'FILE_UPLOAD_HANDLERS', 'LANGUAGE_COOKIE_PATH', 'DEFAULT_CHARSET', 'CSRF_TRUSTED_ORIGINS', 'MIDDLEWARE', 'CSRF_COOKIE_SECURE'], 'reason': ['CACHE_MIDDLEWARE_ALIAS is not a valid setting in Django 4.0', 'FILE_UPLOAD_HANDLERS should be a string, not a list', 'LANGUAGE_COOKIE_PATH should be a string, not a list', 'DEFAULT_CHARSET is not a valid setting in Django 4.0', 'CSRF_TRUSTED_ORIGINS should be a list of trusted origins', 'MIDDLEWARE should not be an empty list', 'CSRF_COOKIE_SECURE should be set to False for development environments']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: CACHE_MIDDLEWARE_ALIAS	FILE_UPLOAD_HANDLERS	LANGUAGE_COOKIE_PATH	DEFAULT_CHARSET	CSRF_TRUSTED_ORIGINS	MIDDLEWARE	CSRF_COOKIE_SECURE
+[Ciri] Reason for CACHE_MIDDLEWARE_ALIAS: CACHE_MIDDLEWARE_ALIAS is not a valid setting in Django 4.0
+[Ciri] Reason for FILE_UPLOAD_HANDLERS: FILE_UPLOAD_HANDLERS should be a string, not a list
+[Ciri] Reason for LANGUAGE_COOKIE_PATH: LANGUAGE_COOKIE_PATH should be a string, not a list
+[Ciri] Reason for DEFAULT_CHARSET: DEFAULT_CHARSET is not a valid setting in Django 4.0
+[Ciri] Reason for CSRF_TRUSTED_ORIGINS: CSRF_TRUSTED_ORIGINS should be a list of trusted origins
+[Ciri] Reason for MIDDLEWARE: MIDDLEWARE should not be an empty list
+[Ciri] Reason for CSRF_COOKIE_SECURE: CSRF_COOKIE_SECURE should be set to False for development environments

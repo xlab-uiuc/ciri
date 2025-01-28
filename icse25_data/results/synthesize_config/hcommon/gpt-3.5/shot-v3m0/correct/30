@@ -1,0 +1,18 @@
+Correct shot number:
+[2, 10, 1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.s3a.s3guard.ddb.throttle.retry.interval', 'fs.AbstractFileSystem.abfss.impl', 'ipc.[port_number].backoff.enable', 'ipc.[port_number].scheduler.impl', 'hadoop.zk.num-retries', 'hadoop.domainname.resolver.impl', 'hadoop.http.sni.host.check.enabled'], 'reason': ["Property 'fs.ftp.transfer.mode' has an additional 'usage' tag which is not standard in the configuration.", "Property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has an additional space before the description.", "Property 'fs.AbstractFileSystem.abfss.impl' has an additional space before the description.", "Property 'ipc.[port_number].backoff.enable' has an additional space before the description.", "Property 'ipc.[port_number].scheduler.impl' has an additional space before the description.", "Property 'hadoop.zk.num-retries' has an additional space before the description.", "Property 'hadoop.domainname.resolver.impl' has an additional space before the description.", "Property 'hadoop.http.sni.host.check.enabled' has an additional space before the description."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.s3a.s3guard.ddb.throttle.retry.interval	fs.AbstractFileSystem.abfss.impl	ipc.[port_number].backoff.enable	ipc.[port_number].scheduler.impl	hadoop.zk.num-retries	hadoop.domainname.resolver.impl	hadoop.http.sni.host.check.enabled
+[Ciri] Reason for fs.ftp.transfer.mode: Property 'fs.ftp.transfer.mode' has an additional 'usage' tag which is not standard in the configuration.
+[Ciri] Reason for fs.s3a.s3guard.ddb.throttle.retry.interval: Property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has an additional space before the description.
+[Ciri] Reason for fs.AbstractFileSystem.abfss.impl: Property 'fs.AbstractFileSystem.abfss.impl' has an additional space before the description.
+[Ciri] Reason for ipc.[port_number].backoff.enable: Property 'ipc.[port_number].backoff.enable' has an additional space before the description.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: Property 'ipc.[port_number].scheduler.impl' has an additional space before the description.
+[Ciri] Reason for hadoop.zk.num-retries: Property 'hadoop.zk.num-retries' has an additional space before the description.
+[Ciri] Reason for hadoop.domainname.resolver.impl: Property 'hadoop.domainname.resolver.impl' has an additional space before the description.
+[Ciri] Reason for hadoop.http.sni.host.check.enabled: Property 'hadoop.http.sni.host.check.enabled' has an additional space before the description.

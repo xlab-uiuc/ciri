@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['stream-node-max-entries', 'cluster-node-timeout', 'cluster-config-file', 'lazyfree-lazy-server-del', 'lazyfree-lazy-expire'], 'reason': ["The 'stream-node-max-entries' parameter is not a valid configuration option in Redis 7.0.0.", "The 'cluster-node-timeout' and 'cluster-config-file' parameters are related to Redis Cluster, which is a separate feature from the standalone Redis server.", "The 'lazyfree-lazy-server-del' and 'lazyfree-lazy-expire' parameters are not valid configuration options in Redis 7.0.0. These options were removed in Redis 6.0.0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: stream-node-max-entries	cluster-node-timeout	cluster-config-file	lazyfree-lazy-server-del	lazyfree-lazy-expire
+[Ciri] Reason for stream-node-max-entries: The 'stream-node-max-entries' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for cluster-node-timeout: The 'cluster-node-timeout' and 'cluster-config-file' parameters are related to Redis Cluster, which is a separate feature from the standalone Redis server.
+[Ciri] Reason for cluster-config-file: The 'lazyfree-lazy-server-del' and 'lazyfree-lazy-expire' parameters are not valid configuration options in Redis 7.0.0. These options were removed in Redis 6.0.0.
+[Ciri] Reason for lazyfree-lazy-server-del: 
+[Ciri] Reason for lazyfree-lazy-expire: 

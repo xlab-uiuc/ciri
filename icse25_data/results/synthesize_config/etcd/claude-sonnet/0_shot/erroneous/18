@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-pprof', 'log-outputs', 'proxy-dial-timeout', 'initial-cluster-token', 'heartbeat-interval', 'enable-v2', 'proxy-write-timeout', 'max-snapshots'], 'reason': ["The 'enable-pprof' parameter is not a valid configuration option for etcd 3.5.0.", "The 'log-outputs' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter for specifying log output is 'log-level'.", "The 'proxy-dial-timeout' parameter is not a valid configuration option for etcd 3.5.0.", "The 'initial-cluster-token' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter for specifying the initial cluster token is 'initial-cluster'.", "The 'heartbeat-interval' parameter is not a valid configuration option for etcd 3.5.0.", "The 'enable-v2' parameter is not a valid configuration option for etcd 3.5.0. etcd 3.5.0 does not support the v2 API.", "The 'proxy-write-timeout' parameter is not a valid configuration option for etcd 3.5.0.", "The 'max-snapshots' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter for specifying the maximum number of snapshots to retain is 'max-snapshots-to-keep'."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: enable-pprof	log-outputs	proxy-dial-timeout	initial-cluster-token	heartbeat-interval	enable-v2	proxy-write-timeout	max-snapshots
+[Ciri] Reason for enable-pprof: The 'enable-pprof' parameter is not a valid configuration option for etcd 3.5.0.
+[Ciri] Reason for log-outputs: The 'log-outputs' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter for specifying log output is 'log-level'.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' parameter is not a valid configuration option for etcd 3.5.0.
+[Ciri] Reason for initial-cluster-token: The 'initial-cluster-token' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter for specifying the initial cluster token is 'initial-cluster'.
+[Ciri] Reason for heartbeat-interval: The 'heartbeat-interval' parameter is not a valid configuration option for etcd 3.5.0.
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is not a valid configuration option for etcd 3.5.0. etcd 3.5.0 does not support the v2 API.
+[Ciri] Reason for proxy-write-timeout: The 'proxy-write-timeout' parameter is not a valid configuration option for etcd 3.5.0.
+[Ciri] Reason for max-snapshots: The 'max-snapshots' parameter is not a valid configuration option for etcd 3.5.0. The correct parameter for specifying the maximum number of snapshots to retain is 'max-snapshots-to-keep'.

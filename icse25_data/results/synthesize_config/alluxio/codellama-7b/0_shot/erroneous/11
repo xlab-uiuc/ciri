@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.persist.on.rename'], 'reason': ['alluxio.user.file.persist.on.rename is not a valid property for Alluxio version 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.persist.on.rename', 'alluxio.user.streaming.zerocopy.enabled', 'alluxio.user.date.format.pattern'], 'reason': ['The property alluxio.user.file.persist.on.rename is not a valid property.', 'The property alluxio.user.streaming.zerocopy.enabled is not a valid property.', 'The property alluxio.user.date.format.pattern is not a valid property.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.persist.on.rename', 'alluxio.user.streaming.zerocopy.enabled', 'alluxio.user.date.format.pattern'], 'reason': ['alluxio.user.file.persist.on.rename is not a valid property', 'alluxio.user.streaming.zerocopy.enabled is not a valid property', 'alluxio.user.date.format.pattern is not a valid property']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.user.file.persist.on.rename	alluxio.user.streaming.zerocopy.enabled	alluxio.user.date.format.pattern
+[Ciri] Reason for alluxio.user.file.persist.on.rename: alluxio.user.file.persist.on.rename is not a valid property
+[Ciri] Reason for alluxio.user.streaming.zerocopy.enabled: The property alluxio.user.streaming.zerocopy.enabled is not a valid property.
+[Ciri] Reason for alluxio.user.date.format.pattern: The property alluxio.user.date.format.pattern is not a valid property.

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.search.filter.user'], 'reason': ['The value of the property hadoop.security.group.mapping.ldap.search.filter.user is not valid. The value must be a valid LDAP search filter.']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.search.filter.user'], 'reason': ['The value of hadoop.security.group.mapping.ldap.search.filter.user is not a valid filter. The default will usually be appropriate for Active Directory installations. If connecting to an LDAP server with a non-AD schema, this should be replaced with (&(objectClass=inetOrgPerson)(uid={0}). {0} is a special string used to denote where the username fits into the filter.']}
+
+{'hasError': True, 'errParameter': ['hadoop.http.sni.host.check.enabled', 'fs.ftp.transfer.mode', 'fs.s3a.socket.recv.buffer', 'fs.wasb.impl', 'net.topology.impl'], 'reason': ['The property hadoop.http.sni.host.check.enabled is not a valid property for hcommon version 3.3.0.', 'The property fs.ftp.transfer.mode is not a valid property for hcommon version 3.3.0.', 'The property fs.s3a.socket.recv.buffer is not a valid property for hcommon version 3.3.0.', 'The property fs.wasb.impl is not a valid property for hcommon version 3.3.0.', 'The property net.topology.impl is not a valid property for hcommon version 3.3.0.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.search.filter.user
+[Ciri] Reason for hadoop.security.group.mapping.ldap.search.filter.user: The value of the property hadoop.security.group.mapping.ldap.search.filter.user is not valid. The value must be a valid LDAP search filter.

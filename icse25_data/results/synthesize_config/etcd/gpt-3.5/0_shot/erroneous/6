@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cert-file', 'enable-v2', 'election-timeout', 'initial-cluster-state', 'quota-backend-bytes', 'strict-reconfig-check', 'advertise-client-urls'], 'reason': ['cert-file parameter should be specified with the full path to the certificate file', 'enable-v2 parameter is not valid for etcd version 3.5.0', 'election-timeout parameter should be specified in milliseconds', "initial-cluster-state parameter should be 'new' or 'existing'", 'quota-backend-bytes parameter should be greater than 0', 'strict-reconfig-check parameter should be set to true for safety', 'advertise-client-urls parameter should use HTTPS instead of HTTP']}
+
+{'hasError': True, 'errParameter': ['cert-file', 'enable-v2', 'election-timeout', 'initial-cluster-state', 'quota-backend-bytes', 'strict-reconfig-check', 'advertise-client-urls'], 'reason': ["'cert-file' should be 'cert-file': '/etc/etcd/cert'", "'enable-v2' is not a valid configuration parameter for etcd version 3.5.0", "'election-timeout' should be 'election-timeout': 2000", "'initial-cluster-state' should be 'initial-cluster-state': 'new'", "'quota-backend-bytes' should be 'quota-backend-bytes': 0", "'strict-reconfig-check' should be 'strict-reconfig-check': false", "'advertise-client-urls' should be 'advertise-client-urls': http://localhost:2379"]}
+
+{'hasError': True, 'errParameter': ['cert-file', 'enable-v2', 'election-timeout', 'initial-cluster-state', 'quota-backend-bytes', 'strict-reconfig-check'], 'reason': ["cert-file parameter should be specified as 'cert-file' instead of '/\\etcd/cert'", 'enable-v2 parameter is not valid for etcd version 3.5.0', 'election-timeout parameter should be specified in milliseconds', "initial-cluster-state parameter should be 'new' or 'existing'", 'quota-backend-bytes parameter should be a positive integer', 'strict-reconfig-check parameter is not valid for etcd version 3.5.0']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: cert-file	enable-v2	election-timeout	initial-cluster-state	quota-backend-bytes	strict-reconfig-check	advertise-client-urls
+[Ciri] Reason for cert-file: 'cert-file' should be 'cert-file': '/etc/etcd/cert'
+[Ciri] Reason for enable-v2: enable-v2 parameter is not valid for etcd version 3.5.0
+[Ciri] Reason for election-timeout: election-timeout parameter should be specified in milliseconds
+[Ciri] Reason for initial-cluster-state: initial-cluster-state parameter should be 'new' or 'existing'
+[Ciri] Reason for quota-backend-bytes: 'quota-backend-bytes' should be 'quota-backend-bytes': 0
+[Ciri] Reason for strict-reconfig-check: 'strict-reconfig-check' should be 'strict-reconfig-check': false
+[Ciri] Reason for advertise-client-urls: advertise-client-urls parameter should use HTTPS instead of HTTP

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.finished.job.purge.count', 'alluxio.worker.management.backoff.strategy', 'alluxio.worker.network.shutdown.timeout', 'alluxio.web.file.info.enabled', 'alluxio.fuse.cached.paths.max', 'alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards', 'alluxio.worker.management.tier.promote.quota.percent', 'alluxio.proxy.web.bind.host'], 'reason': ['alluxio.job.master.finished.job.purge.count: The value of this property must be greater than or equal to 0.', 'alluxio.worker.management.backoff.strategy: The value of this property must be one of the following: [ANY, ALL, NONE].', 'alluxio.worker.network.shutdown.timeout: The value of this property must be a valid time duration.', 'alluxio.web.file.info.enabled: The value of this property must be a boolean.', 'alluxio.fuse.cached.paths.max: The value of this property must be greater than or equal to 0.', 'alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards: The value of this property must be greater than or equal to 1.', 'alluxio.worker.management.tier.promote.quota.percent: The value of this property must be between 0 and 100.', 'alluxio.proxy.web.bind.host: The value of this property must be a valid hostname or IP address.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.job.master.finished.job.purge.count	alluxio.worker.management.backoff.strategy	alluxio.worker.network.shutdown.timeout	alluxio.web.file.info.enabled	alluxio.fuse.cached.paths.max	alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards	alluxio.worker.management.tier.promote.quota.percent	alluxio.proxy.web.bind.host
+[Ciri] Reason for alluxio.job.master.finished.job.purge.count: alluxio.job.master.finished.job.purge.count: The value of this property must be greater than or equal to 0.
+[Ciri] Reason for alluxio.worker.management.backoff.strategy: alluxio.worker.management.backoff.strategy: The value of this property must be one of the following: [ANY, ALL, NONE].
+[Ciri] Reason for alluxio.worker.network.shutdown.timeout: alluxio.worker.network.shutdown.timeout: The value of this property must be a valid time duration.
+[Ciri] Reason for alluxio.web.file.info.enabled: alluxio.web.file.info.enabled: The value of this property must be a boolean.
+[Ciri] Reason for alluxio.fuse.cached.paths.max: alluxio.fuse.cached.paths.max: The value of this property must be greater than or equal to 0.
+[Ciri] Reason for alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards: alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards: The value of this property must be greater than or equal to 1.
+[Ciri] Reason for alluxio.worker.management.tier.promote.quota.percent: alluxio.worker.management.tier.promote.quota.percent: The value of this property must be between 0 and 100.
+[Ciri] Reason for alluxio.proxy.web.bind.host: alluxio.proxy.web.bind.host: The value of this property must be a valid hostname or IP address.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[11, 15, 14]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.permissions.enabled', 'dfs.storage.policy.satisfier.address'], 'reason': ["The value for the property 'dfs.permissions.enabled' should be a boolean (true or false), but 'hadoop' is specified which is invalid.", "The property 'dfs.storage.policy.satisfier.address' is used to specify the hostname for keytab based Kerberos login, but the value '0.0.0.0:3000' looks like an IP address and port number which is incorrect. It should be a hostname."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.permissions.enabled	dfs.storage.policy.satisfier.address
+[Ciri] Reason for dfs.permissions.enabled: The value for the property 'dfs.permissions.enabled' should be a boolean (true or false), but 'hadoop' is specified which is invalid.
+[Ciri] Reason for dfs.storage.policy.satisfier.address: The property 'dfs.storage.policy.satisfier.address' is used to specify the hostname for keytab based Kerberos login, but the value '0.0.0.0:3000' looks like an IP address and port number which is incorrect. It should be a hostname.

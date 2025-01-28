@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.logcleaner.plugins</name>
+  <value>org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner</value>
+    <description>A comma-separated list of BaseLogCleanerDelegate invoked by
+    the LogsCleaner service. These WAL cleaners are called in order,
+    so put the cleaner that prunes the most files in front. To
+    implement your own BaseLogCleanerDelegate, just put it in HBase's classpath
+    and add the fully qualified class name here. Always add the above
+    default log cleaners in the list.</description>
+</property>
+
+<property>
+  <name>hbase.client.max.perserver.tasks</name>
+  <value>4</value>
+    <description>The maximum number of concurrent mutation tasks a single HTable instance will
+    send to a single region server.</description>
+</property>
+
+<property>
+  <name>hbase.client.keyvalue.maxsize</name>
+  <value>5242880</value>
+    <description>Specifies the combined maximum allowed size of a KeyValue
+    instance. This is to set an upper boundary for a single entry saved in a
+    storage file. Since they cannot be split it helps avoiding that a region
+    cannot be split any further because the data is too large. It seems wise
+    to set this to a fraction of the maximum region size. Setting it to zero
+    or less disables the check.</description>
+</property>
+
+<property>
+  <name>hbase.master.balancer.maxRitPercent</name>
+  <value>2.0</value>
+    <description>The max percent of regions in transition when balancing.
+      The default value is 1.0. So there are no balancer throttling. If set this config to 0.01,
+      It means that there are at most 1% regions in transition when balancing.
+      Then the cluster's availability is at least 99% when balancing.</description>
+</property>
+
+<property>
+  <name>hbase.rest.port</name>
+  <value>3000</value>
+    <description>The port for the HBase REST server.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.maxQueuedRequests</name>
+  <value>2000</value>
+    <description>The maximum number of pending Thrift connections waiting in the queue. If
+     there are no idle threads in the pool, the server queues requests. Only
+     when the queue overflows, new threads are added, up to
+     hbase.thrift.maxQueuedRequests threads.</description>
+</property>
+
+<property>
+  <name>hbase.status.multicast.address.ip</name>
+  <value>256.256.256.256</value>
+    <description>
+      Multicast address to use for the status publication by multicast.
+    </description>
+</property>
+
+<property>
+  <name>hbase.region.replica.replication.enabled</name>
+  <value>true</value>
+    <description>
+      Whether asynchronous WAL replication to the secondary region replicas is enabled or not.
+      If this is enabled, a replication peer named "region_replica_replication" will be created
+      which will tail the logs and replicate the mutations to region replicas for tables that
+      have region replication > 1. If this is enabled once, disabling this replication also
+      requires disabling the replication peer using shell or Admin java class.
+      Replication to secondary region replicas works over standard inter-cluster replication.
+    </description>
+</property>
+
+</configuration>

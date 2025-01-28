@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl'], 'reason': ['quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0.']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.server.saslLoginContext', 'autopurge.purgeInterval', 'syncEnabled', 'localSessionsEnabled', 'autopurge.snapRetainCount'], 'reason': ['quorum.auth.enableSasl is not supported in Zookeeper 3.7.0', 'quorum.auth.server.saslLoginContext is not supported in Zookeeper 3.7.0', 'autopurge.purgeInterval is not supported in Zookeeper 3.7.0', 'syncEnabled is not supported in Zookeeper 3.7.0', 'localSessionsEnabled is not supported in Zookeeper 3.7.0', 'autopurge.snapRetainCount is not supported in Zookeeper 3.7.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.server.saslLoginContext', 'minSessionTimeout', 'standaloneEnabled', 'autopurge.purgeInterval', 'syncEnabled', 'localSessionsEnabled', 'autopurge.snapRetainCount'], 'reason': ['quorum.auth.enableSasl should be set to true', 'quorum.auth.server.saslLoginContext should be set to QuorumServer', 'minSessionTimeout should be set to 0', 'standaloneEnabled should be set to true', 'autopurge.purgeInterval should be set to 0', 'syncEnabled should be set to true', 'localSessionsEnabled should be set to true', 'autopurge.snapRetainCount should be set to 3']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.server.saslLoginContext', 'minSessionTimeout', 'standaloneEnabled', 'autopurge.purgeInterval', 'syncEnabled', 'localSessionsEnabled', 'autopurge.snapRetainCount'], 'reason': ['quorum.auth.enableSasl is not a valid property', 'quorum.auth.server.saslLoginContext is not a valid property', 'minSessionTimeout is not a valid property', 'standaloneEnabled is not a valid property', 'autopurge.purgeInterval is not a valid property', 'syncEnabled is not a valid property', 'localSessionsEnabled is not a valid property', 'autopurge.snapRetainCount is not a valid property']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.server.saslLoginContext', 'minSessionTimeout', 'standaloneEnabled', 'autopurge.purgeInterval', 'syncEnabled', 'localSessionsEnabled', 'autopurge.snapRetainCount'], 'reason': ['quorum.auth.enableSasl is not a valid property.', 'quorum.auth.server.saslLoginContext is not a valid property.', 'minSessionTimeout is not a valid property.', 'standaloneEnabled is not a valid property.', 'autopurge.purgeInterval is not a valid property.', 'syncEnabled is not a valid property.', 'localSessionsEnabled is not a valid property.', 'autopurge.snapRetainCount is not a valid property.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.server.saslLoginContext	minSessionTimeout	standaloneEnabled	autopurge.purgeInterval	syncEnabled	localSessionsEnabled	autopurge.snapRetainCount
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl is not a valid property.
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext is not a valid property
+[Ciri] Reason for minSessionTimeout: minSessionTimeout is not a valid property
+[Ciri] Reason for standaloneEnabled: standaloneEnabled is not a valid property
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval is not a valid property.
+[Ciri] Reason for syncEnabled: syncEnabled is not a valid property.
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled is not a valid property.
+[Ciri] Reason for autopurge.snapRetainCount: autopurge.snapRetainCount is not a valid property.

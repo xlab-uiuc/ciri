@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['huge_pages', 'recovery_init_sync_method'], 'reason': ["The 'huge_pages' parameter accepts values 'on', 'off', or 'try'. 'nonono' is not a valid value.", "The 'recovery_init_sync_method' parameter is not available in PostgreSQL 13. It was removed in version 12."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: huge_pages	recovery_init_sync_method
+[Ciri] Reason for huge_pages: The 'huge_pages' parameter accepts values 'on', 'off', or 'try'. 'nonono' is not a valid value.
+[Ciri] Reason for recovery_init_sync_method: The 'recovery_init_sync_method' parameter is not available in PostgreSQL 13. It was removed in version 12.

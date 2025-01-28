@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.network.host.resolution.timeout', 'alluxio.user.client.cache.page.size', 'alluxio.underfs.eventual.consistency.retry.max.num'], 'reason': ["The correct property name is 'alluxio.network.host.resolution.timeout.ms' and it expects a value in milliseconds.", "The size value should be specified without spaces, e.g., '2MB' should be '2MB' without spaces but the property name should be 'alluxio.user.client.cache.page.size.bytes' to correctly specify the size in bytes.", "The value '-1' for 'alluxio.underfs.eventual.consistency.retry.max.num' is not valid. If intending to specify no limit, the correct value should be '0'. However, this property does not exist in Alluxio 2.5.0, indicating a potential misunderstanding or misconfiguration."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.network.host.resolution.timeout	alluxio.user.client.cache.page.size	alluxio.underfs.eventual.consistency.retry.max.num
+[Ciri] Reason for alluxio.network.host.resolution.timeout: The correct property name is 'alluxio.network.host.resolution.timeout.ms' and it expects a value in milliseconds.
+[Ciri] Reason for alluxio.user.client.cache.page.size: The size value should be specified without spaces, e.g., '2MB' should be '2MB' without spaces but the property name should be 'alluxio.user.client.cache.page.size.bytes' to correctly specify the size in bytes.
+[Ciri] Reason for alluxio.underfs.eventual.consistency.retry.max.num: The value '-1' for 'alluxio.underfs.eventual.consistency.retry.max.num' is not valid. If intending to specify no limit, the correct value should be '0'. However, this property does not exist in Alluxio 2.5.0, indicating a potential misunderstanding or misconfiguration.

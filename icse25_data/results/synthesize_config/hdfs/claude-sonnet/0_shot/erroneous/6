@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.edits.dir', 'dfs.provided.aliasmap.inmemory.dnrpc-address', 'dfs.datanode.disk.check.timeout'], 'reason': ["The property 'dfs.namenode.checkpoint.edits.dir' is deprecated in Hadoop 3.3.0 and should not be used.", "The property 'dfs.provided.aliasmap.inmemory.dnrpc-address' is not a valid property in Hadoop 3.3.0.", "The value '10nounit' for the property 'dfs.datanode.disk.check.timeout' is invalid. It should be a valid time value with a unit suffix like '10s' for 10 seconds."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.checkpoint.edits.dir	dfs.provided.aliasmap.inmemory.dnrpc-address	dfs.datanode.disk.check.timeout
+[Ciri] Reason for dfs.namenode.checkpoint.edits.dir: The property 'dfs.namenode.checkpoint.edits.dir' is deprecated in Hadoop 3.3.0 and should not be used.
+[Ciri] Reason for dfs.provided.aliasmap.inmemory.dnrpc-address: The property 'dfs.provided.aliasmap.inmemory.dnrpc-address' is not a valid property in Hadoop 3.3.0.
+[Ciri] Reason for dfs.datanode.disk.check.timeout: The value '10nounit' for the property 'dfs.datanode.disk.check.timeout' is invalid. It should be a valid time value with a unit suffix like '10s' for 10 seconds.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-mb', 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy', 'yarn.web-proxy.address', 'yarn.timeline-service.ttl-enable', 'yarn.timeline-service.client.max-retries', 'yarn.sharedcache.admin.address', 'yarn.node-labels.configuration-type', 'yarn.timeline-service.entity-group-fs-store.with-user-dir'], 'reason': ['The value of yarn.scheduler.minimum-allocation-mb must be a positive integer.', 'The value of yarn.nodemanager.linux-container-executor.cgroups.hierarchy must be a valid file path.', 'The value of yarn.web-proxy.address must be a valid host:port.', 'The value of yarn.timeline-service.ttl-enable must be a boolean.', 'The value of yarn.timeline-service.client.max-retries must be a positive integer.', 'The value of yarn.sharedcache.admin.address must be a valid host:port.', 'The value of yarn.node-labels.configuration-type must be either centralized, delegated-centralized, or distributed.', 'The value of yarn.timeline-service.entity-group-fs-store.with-user-dir must be a boolean.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: yarn.scheduler.minimum-allocation-mb	yarn.nodemanager.linux-container-executor.cgroups.hierarchy	yarn.web-proxy.address	yarn.timeline-service.ttl-enable	yarn.timeline-service.client.max-retries	yarn.sharedcache.admin.address	yarn.node-labels.configuration-type	yarn.timeline-service.entity-group-fs-store.with-user-dir
+[Ciri] Reason for yarn.scheduler.minimum-allocation-mb: The value of yarn.scheduler.minimum-allocation-mb must be a positive integer.
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.hierarchy: The value of yarn.nodemanager.linux-container-executor.cgroups.hierarchy must be a valid file path.
+[Ciri] Reason for yarn.web-proxy.address: The value of yarn.web-proxy.address must be a valid host:port.
+[Ciri] Reason for yarn.timeline-service.ttl-enable: The value of yarn.timeline-service.ttl-enable must be a boolean.
+[Ciri] Reason for yarn.timeline-service.client.max-retries: The value of yarn.timeline-service.client.max-retries must be a positive integer.
+[Ciri] Reason for yarn.sharedcache.admin.address: The value of yarn.sharedcache.admin.address must be a valid host:port.
+[Ciri] Reason for yarn.node-labels.configuration-type: The value of yarn.node-labels.configuration-type must be either centralized, delegated-centralized, or distributed.
+[Ciri] Reason for yarn.timeline-service.entity-group-fs-store.with-user-dir: The value of yarn.timeline-service.entity-group-fs-store.with-user-dir must be a boolean.

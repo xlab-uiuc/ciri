@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['server.1 is not a valid hostname', 'server.2 is not a valid hostname', 'server.3 is not a valid hostname']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'quorum.auth.kerberos.servicePrincipal', 'quorum.cnxn.threads.size', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs', 'quorum.auth.enableSasl', 'localSessionsEnabled', 'electionAlg'], 'reason': ['clientPort should be a positive integer', 'quorum.auth.kerberos.servicePrincipal should be a string', 'quorum.cnxn.threads.size should be a positive integer', 'quorum.auth.learnerRequireSasl should be a boolean', 'quorumListenOnAllIPs should be a boolean', 'quorum.auth.enableSasl should be a boolean', 'localSessionsEnabled should be a boolean', 'electionAlg should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.kerberos.servicePrincipal', 'quorum.auth.learnerRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.enableSasl is set to false, but quorum.auth.kerberos.servicePrincipal is not empty.', 'quorum.auth.learnerRequireSasl is set to true, but quorum.auth.enableSasl is set to false.', 'quorum.auth.enableSasl is set to false, but quorum.auth.kerberos.servicePrincipal is not empty.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.kerberos.servicePrincipal should be a valid Kerberos principal name.', 'quorum.auth.enableSasl should be set to true if Kerberos authentication is enabled.']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'quorum.auth.kerberos.servicePrincipal', 'quorum.cnxn.threads.size', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs', 'quorum.auth.enableSasl', 'localSessionsEnabled', 'electionAlg'], 'reason': ['clientPort should be a positive integer', 'quorum.auth.kerberos.servicePrincipal should be a string', 'quorum.cnxn.threads.size should be a positive integer', 'quorum.auth.learnerRequireSasl should be a boolean', 'quorumListenOnAllIPs should be a boolean', 'quorum.auth.enableSasl should be a boolean', 'localSessionsEnabled should be a boolean', 'electionAlg should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'quorum.auth.kerberos.servicePrincipal', 'quorum.cnxn.threads.size', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs', 'quorum.auth.enableSasl', 'localSessionsEnabled', 'electionAlg'], 'reason': ['clientPort must be a positive integer', 'quorum.auth.kerberos.servicePrincipal must be a valid Kerberos principal', 'quorum.cnxn.threads.size must be a positive integer', 'quorum.auth.learnerRequireSasl must be a boolean value', 'quorumListenOnAllIPs must be a boolean value', 'quorum.auth.enableSasl must be a boolean value', 'localSessionsEnabled must be a boolean value', 'electionAlg must be a valid election algorithm']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: clientPort	quorum.auth.kerberos.servicePrincipal	quorum.cnxn.threads.size	quorum.auth.learnerRequireSasl	quorumListenOnAllIPs	quorum.auth.enableSasl	localSessionsEnabled	electionAlg
+[Ciri] Reason for clientPort: clientPort must be a positive integer
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal should be a string
+[Ciri] Reason for quorum.cnxn.threads.size: quorum.cnxn.threads.size must be a positive integer
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl must be a boolean value
+[Ciri] Reason for quorumListenOnAllIPs: quorumListenOnAllIPs must be a boolean value
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl should be a boolean
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled should be a boolean
+[Ciri] Reason for electionAlg: electionAlg should be a positive integer

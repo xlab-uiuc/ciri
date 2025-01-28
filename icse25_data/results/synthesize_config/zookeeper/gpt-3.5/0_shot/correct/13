@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.server.saslLoginContext'], 'reason': ["The 'quorum.auth.kerberos.servicePrincipal' property should be in the format 'zkquorum/hostname@REALM'.", "The 'quorum.auth.server.saslLoginContext' property is not a valid property for Zookeeper version 3.7.0."]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.server.saslLoginContext'], 'reason': ["The 'quorum.auth.kerberos.servicePrincipal' property should be in the format 'primary/instance@REALM'.", "The 'quorum.auth.server.saslLoginContext' property is not a valid property for Zookeeper version 3.7.0."]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.server.saslLoginContext'], 'reason': ["The value for 'quorum.auth.kerberos.servicePrincipal' should be in the format 'primary/instance@REALM'.", "The value for 'quorum.auth.server.saslLoginContext' should be 'Server' for server-side authentication."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorum.auth.kerberos.servicePrincipal	quorum.auth.server.saslLoginContext
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: The 'quorum.auth.kerberos.servicePrincipal' property should be in the format 'primary/instance@REALM'.
+[Ciri] Reason for quorum.auth.server.saslLoginContext: The 'quorum.auth.server.saslLoginContext' property is not a valid property for Zookeeper version 3.7.0.

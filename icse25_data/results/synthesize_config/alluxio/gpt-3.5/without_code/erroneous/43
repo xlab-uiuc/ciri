@@ -1,0 +1,19 @@
+Wrong shot number:
+[12, 1, 3]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.s3.connection.ttl'], 'reason': ["The property 'alluxio.job.worker.web.port' has a negative value which is invalid.", "The property 'alluxio.underfs.s3.connection.ttl' has a negative value which is invalid."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.s3.connection.ttl'], 'reason': ["The property 'alluxio.job.worker.web.port' has a negative value which is not valid.", "The property 'alluxio.underfs.s3.connection.ttl' has a negative value which is not valid."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.s3.connection.ttl'], 'reason': ["The property 'alluxio.job.worker.web.port' has a negative value which is not valid.", "The property 'alluxio.underfs.s3.connection.ttl' has a negative value which is not valid."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.web.port	alluxio.underfs.s3.connection.ttl
+[Ciri] Reason for alluxio.job.worker.web.port: The property 'alluxio.job.worker.web.port' has a negative value which is invalid.
+[Ciri] Reason for alluxio.underfs.s3.connection.ttl: The property 'alluxio.underfs.s3.connection.ttl' has a negative value which is not valid.

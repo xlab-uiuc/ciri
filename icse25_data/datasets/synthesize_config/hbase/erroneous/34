@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.zookeeper.leaderport</name>
+  <value>65536</value>
+    <description>Port used by ZooKeeper for leader election.
+    See https://zookeeper.apache.org/doc/r3.3.3/zookeeperStarted.html#sc_RunningReplicatedZooKeeper
+    for more information.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.preclose.flush.size</name>
+  <value>2621440</value>
+    <description>
+      If the memstores in a region are this size or larger when we go
+      to close, run a "pre-flush" to clear out memstores before we put up
+      the region closed flag and take the region offline.  On close,
+      a flush is run under the close flag to empty memory.  During
+      this time the region is offline and we are not taking on any writes.
+      If the memstore content is large, this flush could take a long time to
+      complete.  The preflush is meant to clean out the bulk of the memstore
+      before putting up the close flag and taking the region offline so the
+      flush that runs under the close flag has little to do.</description>
+</property>
+
+<property>
+  <name>hbase.client.operation.timeout</name>
+  <value>600000</value>
+    <description>Operation timeout is a top-level restriction (millisecond) that makes sure a
+      blocking operation in Table will not be blocked more than this. In each operation, if rpc
+      request fails because of timeout or other reason, it will retry until success or throw
+      RetriesExhaustedException. But if the total time being blocking reach the operation timeout
+      before retries exhausted, it will break early and throw SocketTimeoutException.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.client.fallback-to-simple-auth-allowed</name>
+  <value>false</value>
+    <description>When a client is configured to attempt a secure connection, but attempts to
+      connect to an insecure server, that server may instruct the client to
+      switch to SASL SIMPLE (unsecure) authentication. This setting controls
+      whether or not the client will accept this instruction from the server.
+      When false (the default), the client will not allow the fallback to SIMPLE
+      authentication, and will abort the connection.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.thrift.framed</name>
+  <value>true</value>
+    <description>Use Thrift TFramedTransport on the server side.
+      This is the recommended transport for thrift servers and requires a similar setting
+      on the client side. Changing this to false will select the default transport,
+      vulnerable to DoS when malformed requests are issued due to THRIFT-601.
+    </description>
+</property>
+
+<property>
+  <name>hbase.server.scanner.max.result.size</name>
+  <value>52428800</value>
+    <description>Maximum number of bytes returned when calling a scanner's next method.
+    Note that when a single row is larger than this limit the row is still returned completely.
+    The default value is 100MB.
+    This is a safety setting to protect the server from OOM situations.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest-csrf.browser-useragents-regex</name>
+  <value>^Mozilla.*,^Opera.*</value>
+  <description>
+    A comma-separated list of regular expressions used to match against an HTTP
+    request's User-Agent header when protection against cross-site request
+    forgery (CSRF) is enabled for REST server by setting
+    hbase.rest.csrf.enabled to true.  If the incoming User-Agent matches
+    any of these regular expressions, then the request is considered to be sent
+    by a browser, and therefore CSRF prevention is enforced.  If the request's
+    User-Agent does not match any of these regular expressions, then the request
+    is considered to be sent by something other than a browser, such as scripted
+    automation.  In this case, CSRF is not a potential attack vector, so
+    the prevention is not enforced.  This helps achieve backwards-compatibility
+    with existing automation that has not been updated to send the CSRF
+    prevention header.
+  </description>
+</property>
+
+<property>
+  <name>hbase.coordinated.state.manager.class</name>
+  <value>org.apache.hadoop.hbase.coordination.ZkCoordinatedStateManager</value>
+    <description>Fully qualified name of class implementing coordinated state manager.</description>
+</property>
+
+</configuration>

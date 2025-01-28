@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 1, 10]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.time.to.purge.deletes', 'hbase.status.multicast.address.ip'], 'reason': ["The value of 'hbase.hstore.time.to.purge.deletes' should be 0 or greater, but is set to 1 which is invalid based on the description.", "The value 'x.0.0.0.0.0' for 'hbase.status.multicast.address.ip' is not a valid IP address format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.hstore.time.to.purge.deletes	hbase.status.multicast.address.ip
+[Ciri] Reason for hbase.hstore.time.to.purge.deletes: The value of 'hbase.hstore.time.to.purge.deletes' should be 0 or greater, but is set to 1 which is invalid based on the description.
+[Ciri] Reason for hbase.status.multicast.address.ip: The value 'x.0.0.0.0.0' for 'hbase.status.multicast.address.ip' is not a valid IP address format.

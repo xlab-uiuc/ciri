@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'cluster-announce-port', 'hll-sparse-max-bytes'], 'reason': ['cluster-announce-ip should be set to the external IP address of the node, not the loopback address 127.0.0.1', 'cluster-announce-port should be set to the port number Redis listens on, typically 6379, not 1', 'hll-sparse-max-bytes is deprecated in Redis 7.0 and should be removed']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-ip	cluster-announce-port	hll-sparse-max-bytes
+[Ciri] Reason for cluster-announce-ip: cluster-announce-ip should be set to the external IP address of the node, not the loopback address 127.0.0.1
+[Ciri] Reason for cluster-announce-port: cluster-announce-port should be set to the port number Redis listens on, typically 6379, not 1
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes is deprecated in Redis 7.0 and should be removed

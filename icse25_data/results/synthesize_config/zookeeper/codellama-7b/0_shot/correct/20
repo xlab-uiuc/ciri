@@ -1,0 +1,25 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'maxClientCnxns', 'reconfigEnabled', 'quorum.auth.learnerRequireSasl'], 'reason': ['dataDir is not a valid directory', 'clientPort is not a valid port', 'maxClientCnxns is not a valid integer', 'reconfigEnabled is not a valid boolean', 'quorum.auth.learnerRequireSasl is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'maxClientCnxns', 'reconfigEnabled', 'quorum.auth.learnerRequireSasl'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port', 'maxClientCnxns is not a valid integer', 'reconfigEnabled is not a valid boolean', 'quorum.auth.learnerRequireSasl is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'quorumListenOnAllIPs', 'syncLimit', 'maxClientCnxns'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port', 'quorumListenOnAllIPs is not a valid boolean', 'syncLimit is not a valid integer', 'maxClientCnxns is not a valid integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'maxClientCnxns', 'quorum.auth.learnerRequireSasl'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port', 'maxClientCnxns is not a valid integer', 'quorum.auth.learnerRequireSasl is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'maxClientCnxns', 'reconfigEnabled', 'quorum.auth.learnerRequireSasl'], 'reason': ['dataDir is not a directory', 'dataLogDir is not a directory', 'clientPort is not a number', 'maxClientCnxns is not a number', 'reconfigEnabled is not a boolean', 'quorum.auth.learnerRequireSasl is not a boolean']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'maxClientCnxns', 'reconfigEnabled', 'quorum.auth.learnerRequireSasl'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port', 'maxClientCnxns is not a valid integer', 'reconfigEnabled is not a valid boolean', 'quorum.auth.learnerRequireSasl is not a valid boolean']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: dataDir	dataLogDir	clientPort	maxClientCnxns	reconfigEnabled	quorum.auth.learnerRequireSasl
+[Ciri] Reason for dataDir: dataDir is not a valid directory
+[Ciri] Reason for dataLogDir: dataLogDir is not a valid directory
+[Ciri] Reason for clientPort: clientPort is not a number
+[Ciri] Reason for maxClientCnxns: maxClientCnxns is not a valid integer
+[Ciri] Reason for reconfigEnabled: reconfigEnabled is not a valid boolean
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl is not a valid boolean

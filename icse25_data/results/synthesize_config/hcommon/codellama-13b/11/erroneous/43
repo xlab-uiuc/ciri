@@ -1,0 +1,18 @@
+Wrong shot number:
+[3]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host'], 'reason': ["The property 'fs.ftp.host' has the value '999.-1.0.0' which does not follow the correct IP address format."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'hadoop.registry.zk.root'], 'reason': ["The property 'fs.ftp.host' has the value '999.-1.0.0' which does not follow the correct IP address format.", "The property 'hadoop.registry.zk.root' has the value '/valid/file1' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host'], 'reason': ["The property 'fs.ftp.host' has the value '999.-1.0.0' which is not a valid IP address."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.ftp.host
+[Ciri] Reason for fs.ftp.host: The property 'fs.ftp.host' has the value '999.-1.0.0' which is not a valid IP address.

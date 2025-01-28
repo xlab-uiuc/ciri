@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.s3a.metadatastore.fail.on.write.error</name>
+  <value>true</value>
+  <description>
+    When true (default), FileSystem write operations generate
+    org.apache.hadoop.fs.s3a.MetadataPersistenceException if the metadata
+    cannot be saved to the metadata store.  When false, failures to save to
+    metadata store are logged at ERROR level, but the overall FileSystem
+    write operation succeeds.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.consistency.retry.limit</name>
+  <value>1</value>
+  <description>
+    Number of times to retry attempts to read/open/copy files when
+    S3Guard believes a specific version of the file to be available,
+    but the S3 request does not find any version of a file, or a different
+    version.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].callqueue.impl</name>
+  <value>java.util.concurrent.LinkedBlockingQueue</value>
+  <description>The fully qualified name of a class to use as the implementation
+    of a call queue. The default implementation is
+    java.util.concurrent.LinkedBlockingQueue (FIFO queue).
+    Use org.apache.hadoop.ipc.FairCallQueue for the Fair Call Queue.
+  </description>
+</property>
+
+<property>
+  <name>net.topology.script.file.name</name>
+  <value>/valid/file2</value>
+  <description> The script name that should be invoked to resolve DNS names to
+    NetworkTopology names. Example: the script would take host.foo.bar as an
+    argument, and return /rack1 as the output.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.crypto.buffer.size</name>
+  <value>ciri/ciri</value>
+  <description>
+    The buffer size used by CryptoInputStream and CryptoOutputStream.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.jaas.context</name>
+  <value>Client</value>
+    <description>
+      Key to define the JAAS context. Used in secure
+      mode
+    </description>
+</property>
+
+<property>
+  <name>hadoop.tags.system</name>
+  <value>HDFS</value>
+    <description>
+      System tags to group related properties together.
+    </description>
+</property>
+
+<property>
+  <name>ipc.client.bind.wildcard.addr</name>
+  <value>true</value>
+    <description>When set to true Clients will bind socket to wildcard
+      address. (i.e 0.0.0.0)
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.name', 'fs.permissions.umask-mode', 'fs.client.resolve.topology.enabled', 'ipc.client.bind.wildcard.addr'], 'reason': ["The property 'fs.s3a.committer.name' has an invalid value. Valid values are: 'file', 'directory', 'partitioned', 'magic'.", "The property 'fs.permissions.umask-mode' has an invalid value. It should be in octal or symbolic format.", "The property 'fs.client.resolve.topology.enabled' has an invalid value. It should be a boolean (true/false).", "The property 'ipc.client.bind.wildcard.addr' has an invalid value. It should be a boolean (true/false)."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.s3a.committer.name	fs.permissions.umask-mode	fs.client.resolve.topology.enabled	ipc.client.bind.wildcard.addr
+[Ciri] Reason for fs.s3a.committer.name: The property 'fs.s3a.committer.name' has an invalid value. Valid values are: 'file', 'directory', 'partitioned', 'magic'.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has an invalid value. It should be in octal or symbolic format.
+[Ciri] Reason for fs.client.resolve.topology.enabled: The property 'fs.client.resolve.topology.enabled' has an invalid value. It should be a boolean (true/false).
+[Ciri] Reason for ipc.client.bind.wildcard.addr: The property 'ipc.client.bind.wildcard.addr' has an invalid value. It should be a boolean (true/false).

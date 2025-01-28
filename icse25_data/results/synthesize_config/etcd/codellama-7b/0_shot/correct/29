@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'quota-backend-bytes', 'force-new-cluster', 'election-timeout'], 'reason': ['proxy-dial-timeout must be greater than or equal to 1000', 'proxy-refresh-interval must be greater than or equal to 1000', 'quota-backend-bytes must be greater than or equal to 0', 'force-new-cluster must be a boolean', 'election-timeout must be greater than or equal to 1000']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'logger', 'proxy', 'quota-backend-bytes', 'enable-v2', 'force-new-cluster', 'election-timeout'], 'reason': ['proxy-dial-timeout must be greater than or equal to 1000', 'proxy-refresh-interval must be greater than or equal to 1000', 'logger must be one of [capnslog, zap]', 'proxy must be one of [off, read, write, full]', 'quota-backend-bytes must be greater than or equal to 0', 'enable-v2 must be one of [true, false]', 'force-new-cluster must be one of [true, false]', 'election-timeout must be greater than or equal to 1000']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'quota-backend-bytes', 'election-timeout'], 'reason': ['proxy-dial-timeout must be greater than or equal to 1000', 'proxy-refresh-interval must be greater than or equal to 1000', 'quota-backend-bytes must be greater than or equal to 0', 'election-timeout must be greater than or equal to 1000']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'quota-backend-bytes', 'enable-v2', 'force-new-cluster', 'election-timeout'], 'reason': ['proxy-dial-timeout must be greater than or equal to 1000', 'proxy-refresh-interval must be greater than or equal to 1000', 'quota-backend-bytes must be greater than or equal to 0', 'enable-v2 must be a boolean', 'force-new-cluster must be a boolean', 'election-timeout must be greater than or equal to 500']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'quota-backend-bytes', 'election-timeout'], 'reason': ['proxy-dial-timeout must be greater than 0', 'proxy-refresh-interval must be greater than 0', 'quota-backend-bytes must be greater than 0', 'election-timeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'quota-backend-bytes', 'election-timeout'], 'reason': ['proxy-dial-timeout must be greater than 0', 'proxy-refresh-interval must be greater than 0', 'quota-backend-bytes must be greater than 0', 'election-timeout must be greater than 0']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: proxy-dial-timeout	proxy-refresh-interval	quota-backend-bytes	election-timeout
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout must be greater than 0
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval must be greater than 0
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes must be greater than 0
+[Ciri] Reason for election-timeout: election-timeout must be greater than 0

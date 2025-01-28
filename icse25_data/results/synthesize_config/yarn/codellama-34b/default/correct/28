@@ -1,0 +1,34 @@
+Wrong shot number:
+[1, 5, 9]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.recovery.dir'], 'reason': ["The value of the property 'yarn.nodemanager.recovery.dir' is not a valid file path."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.node-attributes.provider.fetch-interval-ms'], 'reason': ["The value of the property 'yarn.nodemanager.node-attributes.provider.fetch-interval-ms' should be smaller or equal to the value of the property 'yarn.resourcemanager.nm-container-queuing.max-queue-wait-time-ms'."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.recovery.dir'], 'reason': ["The property 'yarn.nodemanager.recovery.dir' has the value '/valid/file1' which is not a valid file path."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.webapp.https.address'], 'reason': ["The property 'yarn.timeline-service.webapp.https.address' has the value '${yarn.timeline-service.hostname}:8190' which is not a valid URL."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.node-attributes.provider.fetch-interval-ms'], 'reason': ["The value of the property 'yarn.nodemanager.node-attributes.provider.fetch-interval-ms' should be smaller or equal to the value of the property 'yarn.resourcemanager.container-tokens.master-key-rolling-interval-secs'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.recovery.dir'], 'reason': ["The property 'yarn.nodemanager.recovery.dir' has the value '/valid/file1' which is not a valid file path."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.node-attributes.provider.fetch-interval-ms'], 'reason': ["The property 'yarn.nodemanager.node-attributes.provider.fetch-interval-ms' has the value '300000' which is not within the accepted value {1000,10000}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.node-attributes.provider.fetch-interval-ms
+[Ciri] Reason for yarn.nodemanager.node-attributes.provider.fetch-interval-ms: The property 'yarn.nodemanager.node-attributes.provider.fetch-interval-ms' has the value '300000' which is not within the accepted value {1000,10000}.

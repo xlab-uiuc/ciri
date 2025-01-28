@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_PATH', 'CSRF_COOKIE_HTTPONLY'], 'reason': ["CSRF_COOKIE_PATH should not contain multiple consecutive forward slashes. Use a valid path like 'tmp/staging' instead.", 'CSRF_COOKIE_HTTPONLY should be set to True for better security. Setting it to False allows client-side JavaScript to access the CSRF cookie.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: CSRF_COOKIE_PATH	CSRF_COOKIE_HTTPONLY
+[Ciri] Reason for CSRF_COOKIE_PATH: CSRF_COOKIE_PATH should not contain multiple consecutive forward slashes. Use a valid path like 'tmp/staging' instead.
+[Ciri] Reason for CSRF_COOKIE_HTTPONLY: CSRF_COOKIE_HTTPONLY should be set to True for better security. Setting it to False allows client-side JavaScript to access the CSRF cookie.

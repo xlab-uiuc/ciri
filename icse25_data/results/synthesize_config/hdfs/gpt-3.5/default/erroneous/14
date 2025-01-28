@@ -1,0 +1,20 @@
+Wrong shot number:
+[12, 1, 3]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.dir', 'dfs.client.failover.connection.retries', 'dfs.datanode.bp-ready.timeout'], 'reason': ["The property 'dfs.namenode.checkpoint.dir' has the value 'ciri' which does not follow the correct path format.", "The property 'dfs.client.failover.connection.retries' has the value '-1' which is out of the valid range for retries.", "The property 'dfs.datanode.bp-ready.timeout' has the value '20s' which is not in the correct format for time unit suffix."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.dir', 'dfs.client.failover.connection.retries', 'dfs.datanode.bp-ready.timeout'], 'reason': ["The property 'dfs.namenode.checkpoint.dir' has the value 'ciri' which does not follow the correct path format.", "The property 'dfs.client.failover.connection.retries' has the value '-1' which is out of the valid range.", "The property 'dfs.datanode.bp-ready.timeout' has the value '20s' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.dir', 'dfs.client.failover.connection.retries', 'dfs.datanode.bp-ready.timeout'], 'reason': ["The property 'dfs.namenode.checkpoint.dir' has the value 'ciri' which does not follow the correct path format.", "The property 'dfs.client.failover.connection.retries' has the value '-1' which is out of the valid range for connection retries.", "The property 'dfs.datanode.bp-ready.timeout' has the value '20s' which is not in the correct format for time unit suffix."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.checkpoint.dir	dfs.client.failover.connection.retries	dfs.datanode.bp-ready.timeout
+[Ciri] Reason for dfs.namenode.checkpoint.dir: The property 'dfs.namenode.checkpoint.dir' has the value 'ciri' which does not follow the correct path format.
+[Ciri] Reason for dfs.client.failover.connection.retries: The property 'dfs.client.failover.connection.retries' has the value '-1' which is out of the valid range for retries.
+[Ciri] Reason for dfs.datanode.bp-ready.timeout: The property 'dfs.datanode.bp-ready.timeout' has the value '20s' which is not in the correct format for time unit suffix.

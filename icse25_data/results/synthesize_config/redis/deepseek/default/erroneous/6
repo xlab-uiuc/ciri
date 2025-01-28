@@ -1,0 +1,22 @@
+Wrong shot number:
+[11, 6, 12]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'slowlog-max-len', 'rdb-save-incremental-fsync', 'hll-sparse-max-bytes', 'proto-max-bulk-len'], 'reason': ["The value of the property 'maxmemory-clients' should be an integer value.", "The value of the property 'slowlog-max-len' should be an integer value.", "The value of the property 'rdb-save-incremental-fsync' should be 'always' or 'everysec'.", "The value of the property 'hll-sparse-max-bytes' should be an integer value.", "The value of the property 'proto-max-bulk-len' should be an integer value."]}
+
+{'hasError': True, 'errParameter': ['maxmemory-clients'], 'reason': ["The value of the property 'maxmemory-clients' should be an integer."]}
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'slowlog-max-len', 'rdb-save-incremental-fsync', 'hll-sparse-max-bytes', 'proto-max-bulk-len'], 'reason': ["The value of the property 'maxmemory-clients' should be an integer value.", "The value of the property 'slowlog-max-len' should be an integer value.", "The value of the property 'rdb-save-incremental-fsync' should be 'yes' or 'no'.", "The value of the property 'hll-sparse-max-bytes' should be an integer value.", "The value of the property 'proto-max-bulk-len' should be an integer value."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: maxmemory-clients	slowlog-max-len	rdb-save-incremental-fsync	hll-sparse-max-bytes	proto-max-bulk-len
+[Ciri] Reason for maxmemory-clients: The value of the property 'maxmemory-clients' should be an integer value.
+[Ciri] Reason for slowlog-max-len: The value of the property 'slowlog-max-len' should be an integer value.
+[Ciri] Reason for rdb-save-incremental-fsync: The value of the property 'rdb-save-incremental-fsync' should be 'always' or 'everysec'.
+[Ciri] Reason for hll-sparse-max-bytes: The value of the property 'hll-sparse-max-bytes' should be an integer value.
+[Ciri] Reason for proto-max-bulk-len: The value of the property 'proto-max-bulk-len' should be an integer value.

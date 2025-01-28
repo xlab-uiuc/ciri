@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.user.rpc.retry.max.duration'], 'reason': ["Invalid value for 'alluxio.user.network.max.inbound.message.size'. It should be specified in bytes or with a valid unit (e.g., 100MB).", "Invalid value for 'alluxio.user.rpc.retry.max.duration'. It should be specified with a valid unit (e.g., 1m for 1 minute)."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.user.rpc.retry.max.duration'], 'reason': ["The value for 'alluxio.user.network.max.inbound.message.size' should be specified in bytes, not as a decimal fraction. Please provide the size in bytes.", "The value for 'alluxio.user.rpc.retry.max.duration' should not contain units like 'min'. Please specify the duration in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.user.rpc.retry.max.duration'], 'reason': ["The value for 'alluxio.user.network.max.inbound.message.size' should be specified in bytes rather than a decimal number.", "The value for 'alluxio.user.rpc.retry.max.duration' should be specified with units (e.g., '1m' for 1 minute) rather than just '1min'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.max.inbound.message.size	alluxio.user.rpc.retry.max.duration
+[Ciri] Reason for alluxio.user.network.max.inbound.message.size: The value for 'alluxio.user.network.max.inbound.message.size' should be specified in bytes, not as a decimal fraction. Please provide the size in bytes.
+[Ciri] Reason for alluxio.user.rpc.retry.max.duration: The value for 'alluxio.user.rpc.retry.max.duration' should not contain units like 'min'. Please specify the duration in milliseconds.

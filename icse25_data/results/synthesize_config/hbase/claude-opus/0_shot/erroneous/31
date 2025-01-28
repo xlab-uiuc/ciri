@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.status.multicast.address.ip', 'hbase.region.replica.replication.enabled'], 'reason': ['The IP address 256.256.256.256 is invalid. IP address octets must be between 0 and 255.', 'The default value for hbase.region.replica.replication.enabled is false in HBase 2.2.7. Setting it to true requires additional configuration of the replication peer.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.status.multicast.address.ip	hbase.region.replica.replication.enabled
+[Ciri] Reason for hbase.status.multicast.address.ip: The IP address 256.256.256.256 is invalid. IP address octets must be between 0 and 255.
+[Ciri] Reason for hbase.region.replica.replication.enabled: The default value for hbase.region.replica.replication.enabled is false in HBase 2.2.7. Setting it to true requires additional configuration of the replication peer.

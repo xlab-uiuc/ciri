@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['discovery-fallback', 'enable-v2', 'client-cert-auth'], 'reason': ["The 'discovery-fallback' option is not supported in etcd v3.5. It was deprecated in v3.4 and removed in v3.5.", "The 'enable-v2' option to enable v2 API support is not available in etcd v3.5. The v2 API was deprecated in v3.4 and removed in v3.5.", "The 'client-cert-auth' option alone is not sufficient for enabling client certificate authentication. You also need to set 'client-cert-file' and 'client-key-file' options to specify the CA certificate and key files."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: discovery-fallback	enable-v2	client-cert-auth
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' option is not supported in etcd v3.5. It was deprecated in v3.4 and removed in v3.5.
+[Ciri] Reason for enable-v2: The 'enable-v2' option to enable v2 API support is not available in etcd v3.5. The v2 API was deprecated in v3.4 and removed in v3.5.
+[Ciri] Reason for client-cert-auth: The 'client-cert-auth' option alone is not sufficient for enabling client certificate authentication. You also need to set 'client-cert-file' and 'client-key-file' options to specify the CA certificate and key files.

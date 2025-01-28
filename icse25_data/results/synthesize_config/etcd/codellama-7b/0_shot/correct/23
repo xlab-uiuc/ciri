@@ -1,0 +1,33 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'auto-compaction-retention'], 'reason': ['proxy-write-timeout is not a valid configuration for etcd version 3.5.0', 'auto-compaction-retention is not a valid configuration for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['name'], 'reason': ["The 'name' property is not supported in etcd version 3.5.0. Please remove this property from your configuration file."]}
+
+{'hasError': True, 'errParameter': ['data-dir', 'heartbeat-interval', 'initial-advertise-peer-urls', 'proxy-write-timeout', 'auto-compaction-retention', 'name'], 'reason': ['data-dir: The directory specified does not exist.', 'heartbeat-interval: The value must be greater than 0.', 'initial-advertise-peer-urls: The value must be a valid URL.', 'proxy-write-timeout: The value must be greater than 0.', 'auto-compaction-retention: The value must be greater than 0.', 'name: The value must be a valid name.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'auto-compaction-retention'], 'reason': ['proxy-write-timeout is not a valid parameter for etcd version 3.5.0', 'auto-compaction-retention is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['data-dir', 'heartbeat-interval', 'initial-advertise-peer-urls', 'proxy-write-timeout', 'auto-compaction-retention', 'name'], 'reason': ['data-dir: The data-dir property is not a valid directory.', 'heartbeat-interval: The heartbeat-interval property must be a positive integer.', 'initial-advertise-peer-urls: The initial-advertise-peer-urls property must be a valid URL.', 'proxy-write-timeout: The proxy-write-timeout property must be a positive integer.', 'auto-compaction-retention: The auto-compaction-retention property must be a positive integer.', 'name: The name property is not a valid string.']}
+
+{'hasError': True, 'errParameter': ['data-dir', 'heartbeat-interval', 'initial-cluster-state', 'proxy-write-timeout', 'auto-compaction-retention'], 'reason': ['data-dir is not a valid path', 'heartbeat-interval must be greater than 0', 'initial-cluster-state must be either new or existing', 'proxy-write-timeout must be greater than 0', 'auto-compaction-retention must be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['data-dir', 'heartbeat-interval', 'initial-advertise-peer-urls', 'proxy-write-timeout', 'auto-compaction-retention', 'name'], 'reason': ['data-dir: The directory must be specified.', 'heartbeat-interval: The heartbeat interval must be specified.', 'initial-advertise-peer-urls: The initial advertise peer urls must be specified.', 'proxy-write-timeout: The proxy write timeout must be specified.', 'auto-compaction-retention: The auto compaction retention must be specified.', 'name: The name must be specified.']}
+
+{'hasError': True, 'errParameter': ['data-dir', 'heartbeat-interval', 'initial-advertise-peer-urls', 'proxy-write-timeout', 'auto-compaction-retention', 'name'], 'reason': ['data-dir: The directory must exist and be writable.', 'heartbeat-interval: The heartbeat interval must be greater than 0.', 'initial-advertise-peer-urls: The initial advertise peer URLs must be a valid URL.', 'proxy-write-timeout: The proxy write timeout must be greater than 0.', 'auto-compaction-retention: The auto compaction retention must be greater than 0.', 'name: The name must be a valid name.']}
+
+{'hasError': True, 'errParameter': ['data-dir', 'heartbeat-interval', 'initial-advertise-peer-urls', 'proxy-write-timeout', 'auto-compaction-retention', 'name'], 'reason': ['data-dir: The directory must exist and be writable.', 'heartbeat-interval: The heartbeat interval must be greater than 0.', 'initial-advertise-peer-urls: The initial advertise peer URLs must be a valid URL.', 'proxy-write-timeout: The proxy write timeout must be greater than 0.', 'auto-compaction-retention: The auto compaction retention must be greater than 0.', 'name: The name must be a valid name.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: data-dir	heartbeat-interval	initial-advertise-peer-urls	proxy-write-timeout	auto-compaction-retention	name
+[Ciri] Reason for data-dir: data-dir: The directory must exist and be writable.
+[Ciri] Reason for heartbeat-interval: heartbeat-interval: The heartbeat interval must be greater than 0.
+[Ciri] Reason for initial-advertise-peer-urls: initial-advertise-peer-urls: The initial advertise peer URLs must be a valid URL.
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout: The proxy write timeout must be greater than 0.
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention: The auto compaction retention must be greater than 0.
+[Ciri] Reason for name: name: The name must be a valid name.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 5, 7]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.local.dir'], 'reason': ["The property 'hbase.local.dir' has the value '/valid/file2' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.regionserver.port', 'hbase.zookeeper.property.clientPort'], 'reason': ["The property 'hbase.local.dir' has the value '/valid/file2' which does not follow the correct path format.", "The property 'hbase.regionserver.port' has the value '3001' which exceeds the range of an Integer.", "The property 'hbase.zookeeper.property.clientPort' has the value '2181' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir'], 'reason': ["The property 'hbase.local.dir' has the value '/valid/file2' which does not follow the correct path format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.local.dir
+[Ciri] Reason for hbase.local.dir: The property 'hbase.local.dir' has the value '/valid/file2' which does not follow the correct path format.

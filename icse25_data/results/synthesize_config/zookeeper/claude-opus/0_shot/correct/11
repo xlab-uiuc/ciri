@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'secureClientPort', 'clientPort'], 'reason': ['minSessionTimeout should be greater than or equal to 2 times the tickTime value. The default tickTime is 2000ms, so minSessionTimeout should be at least 4000ms.', 'secureClientPort and clientPort cannot be the same value. When using secure client port, the clientPort should be set to a different value or not set at all.', 'When using secureClientPort, the clientPort should be set to a different value or not set at all. It cannot be the same as secureClientPort.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: minSessionTimeout	secureClientPort	clientPort
+[Ciri] Reason for minSessionTimeout: minSessionTimeout should be greater than or equal to 2 times the tickTime value. The default tickTime is 2000ms, so minSessionTimeout should be at least 4000ms.
+[Ciri] Reason for secureClientPort: secureClientPort and clientPort cannot be the same value. When using secure client port, the clientPort should be set to a different value or not set at all.
+[Ciri] Reason for clientPort: When using secureClientPort, the clientPort should be set to a different value or not set at all. It cannot be the same as secureClientPort.

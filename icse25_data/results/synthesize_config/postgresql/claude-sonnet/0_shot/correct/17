@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_multixact_freeze_table_age', 'work_mem', 'krb_server_keyfile'], 'reason': ['vacuum_multixact_freeze_table_age is set to an extremely high value of 75000000, which could lead to bloat and performance issues. The recommended value is usually between 200000000 and 1000000000.', "work_mem is set to 1MB, which is very low and could lead to performance issues, especially for complex queries. The recommended value is usually between 4MB and 1GB, depending on the system's available memory.", "krb_server_keyfile uses a non-standard syntax '${sysconfdir}/krb5.keytab'. The correct syntax for specifying a file path in PostgreSQL is 'FILE:/path/to/file'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: vacuum_multixact_freeze_table_age	work_mem	krb_server_keyfile
+[Ciri] Reason for vacuum_multixact_freeze_table_age: vacuum_multixact_freeze_table_age is set to an extremely high value of 75000000, which could lead to bloat and performance issues. The recommended value is usually between 200000000 and 1000000000.
+[Ciri] Reason for work_mem: work_mem is set to 1MB, which is very low and could lead to performance issues, especially for complex queries. The recommended value is usually between 4MB and 1GB, depending on the system's available memory.
+[Ciri] Reason for krb_server_keyfile: krb_server_keyfile uses a non-standard syntax '${sysconfdir}/krb5.keytab'. The correct syntax for specifying a file path in PostgreSQL is 'FILE:/path/to/file'.

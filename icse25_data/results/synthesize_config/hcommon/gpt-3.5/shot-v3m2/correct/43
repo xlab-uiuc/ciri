@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 5]
+
+Correct shot number:
+[10, 7, 1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.cache.secs', 'fs.trash.checkpoint.interval'], 'reason': ["The property 'hadoop.security.groups.cache.secs' has the value '600' which is not a valid format for time duration.", "The property 'fs.trash.checkpoint.interval' has the value '0' which is not a valid value. It should be a positive integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.groups.cache.secs	fs.trash.checkpoint.interval
+[Ciri] Reason for hadoop.security.groups.cache.secs: The property 'hadoop.security.groups.cache.secs' has the value '600' which is not a valid format for time duration.
+[Ciri] Reason for fs.trash.checkpoint.interval: The property 'fs.trash.checkpoint.interval' has the value '0' which is not a valid value. It should be a positive integer.

@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'advertise-client-urls', 'proxy-read-timeout'], 'reason': ["The value for 'quota-backend-bytes' should be a string or a valid numeric value.", "The 'advertise-client-urls' should use 'https' instead of 'http' for secure communication.", "The 'proxy-read-timeout' value should be specified in seconds."]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'max-wals'], 'reason': ["quota-backend-bytes should be a string value representing the size limit, e.g., '1G'", 'max-wals should be an integer value, not a string']}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'max-wals', 'proxy-read-timeout'], 'reason': ['quota-backend-bytes should be a string value, not just a number.', 'max-wals should be a string value, not just a number.', 'proxy-read-timeout should be a string value, not just a number.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'advertise-client-urls'], 'reason': ["'quota-backend-bytes' should be a string value, not a number.", "'advertise-client-urls' should use 'https' instead of 'http' for security reasons."]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'max-wals'], 'reason': ["The 'quota-backend-bytes' parameter should be specified as a size value (e.g., 1G for 1 gigabyte).", "The 'max-wals' parameter should be specified as an integer value greater than 10."]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'max-wals'], 'reason': ["The values for 'quota-backend-bytes' and 'max-wals' should be specified with units (e.g., 1GB, 10MB) in etcd version 3.5.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quota-backend-bytes	max-wals
+[Ciri] Reason for quota-backend-bytes: The values for 'quota-backend-bytes' and 'max-wals' should be specified with units (e.g., 1GB, 10MB) in etcd version 3.5.0.
+[Ciri] Reason for max-wals: The 'max-wals' parameter should be specified as an integer value greater than 10.

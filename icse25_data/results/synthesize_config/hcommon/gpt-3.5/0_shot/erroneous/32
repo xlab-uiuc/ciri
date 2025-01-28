@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.map.index.interval', 'fs.ftp.transfer.mode'], 'reason': ['The value for io.map.index.interval should be a positive integer.', 'The value for fs.ftp.transfer.mode should be one of STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, or COMPRESSED_TRANSFER_MODE.']}
+
+{'hasError': True, 'errParameter': ['io.map.index.interval'], 'reason': ['The value for io.map.index.interval should be a positive integer representing the number of records written in the data file before creating an entry in the index file. It should not be negative.']}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'io.map.index.interval', 'fs.ftp.transfer.mode'], 'reason': ["The 'io.seqfile.local.dir' property has an incorrect 'usage' field. It should not contain code snippets or usage instructions.", "The 'io.map.index.interval' property has a negative value which may cause unexpected behavior.", "The 'fs.ftp.transfer.mode' property has an incorrect 'usage' field. It should not contain code snippets or usage instructions."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.map.index.interval'], 'reason': ['The value for io.map.index.interval should be a positive integer. Current value is negative (-10).']}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'io.map.index.interval', 'fs.ftp.transfer.mode'], 'reason': ["The 'usage' tag is not a valid tag for property 'io.seqfile.local.dir'.", "The value '-10' for property 'io.map.index.interval' should be a positive integer.", "The value 'BLOCK_TRANSFER_MODE' for property 'fs.ftp.transfer.mode' is not a valid transfer mode."]}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'io.map.index.interval'], 'reason': ["The 'usage' tag is not a valid tag for property 'io.seqfile.local.dir'.", "The value for property 'io.map.index.interval' should be a positive integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.map.index.interval'], 'reason': ['The value for io.map.index.interval should be a positive integer representing the number of records written in the data file before an entry is written in the index file. It should not be negative.']}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'io.map.index.interval', 'fs.ftp.transfer.mode'], 'reason': ["The property 'io.seqfile.local.dir' has an additional 'usage' tag which is not a standard property field.", "The property 'io.map.index.interval' has a negative value which is not valid.", "The property 'fs.ftp.transfer.mode' has an additional 'usage' tag which is not a standard property field."]}
+
+{'hasError': True, 'errParameter': ['io.map.index.interval'], 'reason': ['The value for io.map.index.interval should be a positive integer. Current value is negative (-10).']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: io.map.index.interval
+[Ciri] Reason for io.map.index.interval: The value for io.map.index.interval should be a positive integer. Current value is negative (-10).

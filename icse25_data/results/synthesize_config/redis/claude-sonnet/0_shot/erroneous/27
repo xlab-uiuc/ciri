@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'disable-thp', 'aclfile', 'set-proc-title', 'timeout', 'activerehashing', 'repl-diskless-load', 'pidfile'], 'reason': ["The 'rdbcompression' parameter is no longer used in Redis 7.0.0 and has been removed.", "The 'disable-thp' parameter is no longer used in Redis 7.0.0 and has been removed.", "The 'aclfile' parameter is no longer used in Redis 7.0.0. ACL rules are now defined using the 'acl' configuration directive or the 'ACL LOAD' command.", "The 'set-proc-title' parameter is no longer used in Redis 7.0.0 and has been removed.", "The 'timeout' parameter is no longer used in Redis 7.0.0. Timeouts are now configured using the 'timeout' configuration directive or the 'CONFIG SET timeout' command.", "The 'activerehashing' parameter is no longer used in Redis 7.0.0 and has been removed. Rehashing is now always active.", "The 'repl-diskless-load' parameter is no longer used in Redis 7.0.0 and has been removed. Diskless replication is now always enabled.", "The 'pidfile' parameter is no longer used in Redis 7.0.0. The PID file path is now configured using the 'pidfile' configuration directive."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: rdbcompression	disable-thp	aclfile	set-proc-title	timeout	activerehashing	repl-diskless-load	pidfile
+[Ciri] Reason for rdbcompression: The 'rdbcompression' parameter is no longer used in Redis 7.0.0 and has been removed.
+[Ciri] Reason for disable-thp: The 'disable-thp' parameter is no longer used in Redis 7.0.0 and has been removed.
+[Ciri] Reason for aclfile: The 'aclfile' parameter is no longer used in Redis 7.0.0. ACL rules are now defined using the 'acl' configuration directive or the 'ACL LOAD' command.
+[Ciri] Reason for set-proc-title: The 'set-proc-title' parameter is no longer used in Redis 7.0.0 and has been removed.
+[Ciri] Reason for timeout: The 'timeout' parameter is no longer used in Redis 7.0.0. Timeouts are now configured using the 'timeout' configuration directive or the 'CONFIG SET timeout' command.
+[Ciri] Reason for activerehashing: The 'activerehashing' parameter is no longer used in Redis 7.0.0 and has been removed. Rehashing is now always active.
+[Ciri] Reason for repl-diskless-load: The 'repl-diskless-load' parameter is no longer used in Redis 7.0.0 and has been removed. Diskless replication is now always enabled.
+[Ciri] Reason for pidfile: The 'pidfile' parameter is no longer used in Redis 7.0.0. The PID file path is now configured using the 'pidfile' configuration directive.

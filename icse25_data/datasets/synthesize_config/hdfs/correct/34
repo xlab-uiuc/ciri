@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.permissions.enabled</name>
+  <value>false</value>
+  <description>
+    If "true", enable permission checking in HDFS.
+    If "false", permission checking is turned off,
+    but all other behavior is unchanged.
+    Switching from one parameter value to the other does not change the mode,
+    owner or group of files or directories.
+  </description>
+</property>
+
+<property>
+  <name>dfs.block.access.key.update.interval</name>
+  <value>600</value>
+  <description>
+    Interval in minutes at which namenode updates its access keys.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.resource.check.interval</name>
+  <value>10000</value>
+  <description>
+    The interval in milliseconds at which the NameNode resource checker runs.
+    The checker calculates the number of the NameNode storage volumes whose
+    available spaces are more than dfs.namenode.resource.du.reserved, and
+    enters safemode if the number becomes lower than the minimum value
+    specified by dfs.namenode.resource.checked.volumes.minimum.
+  </description>
+</property>
+
+<property>
+  <name>dfs.encrypt.data.transfer</name>
+  <value>true</value>
+  <description>
+    Whether or not actual block data that is read/written from/to HDFS should
+    be encrypted on the wire. This only needs to be set on the NN and DNs,
+    clients will deduce this automatically. It is possible to override this setting 
+    per connection by specifying custom logic via dfs.trustedchannel.resolver.class. 
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.list.cache.directives.num.responses</name>
+  <value>100</value>
+  <description>
+    This value controls the number of cache directives that the NameNode will
+    send over the wire in response to a listDirectives RPC.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.deadnode.detection.probe.suspectnode.interval.ms</name>
+  <value>300</value>
+    <description>
+      Interval time in milliseconds for probing suspect node behavior.
+    </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.permissions.superuser-only</name>
+  <value>false</value>
+  <description>
+    Allow only superuser role to change the storage policy on files and
+    directories.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.socket.write.timeout</name>
+  <value>960000</value>
+  <description>
+    Timeout in ms for clients socket writes to DataNodes.
+  </description>
+</property>
+
+</configuration>

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'hadoop.caller.context.signature.max.size', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ['Invalid value format. The value should be a positive integer for port numbers.', 'The value should be a positive integer.', 'The value should be a boolean (true/false).']}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'hadoop.caller.context.signature.max.size', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ['Invalid value format. Expected a positive integer for port number.', 'The property value exceeds the maximum allowed bytes in server.', 'The property value should be a boolean (true/false) instead of a string.']}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'hadoop.caller.context.signature.max.size', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ['Invalid value format for property fs.ftp.host.port. Expected a positive integer.', 'Invalid indentation for property hadoop.caller.context.signature.max.size.', 'Invalid indentation for property hadoop.metrics.jvm.use-thread-mxbean.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.host.port	hadoop.caller.context.signature.max.size	hadoop.metrics.jvm.use-thread-mxbean
+[Ciri] Reason for fs.ftp.host.port: Invalid value format. The value should be a positive integer for port numbers.
+[Ciri] Reason for hadoop.caller.context.signature.max.size: Invalid indentation for property hadoop.caller.context.signature.max.size.
+[Ciri] Reason for hadoop.metrics.jvm.use-thread-mxbean: The value should be a boolean (true/false).

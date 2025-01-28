@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'DATABASES', 'LANGUAGE_COOKIE_AGE'], 'reason': ['SECURE_HSTS_SECONDS should be an integer value representing the number of seconds for which the HSTS policy should be enforced.', "DATABASES should be configured with database settings such as 'default' database engine, name, user, password, etc.", 'LANGUAGE_COOKIE_AGE should be set to an integer value representing the age of language cookie in seconds.']}
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'DATABASES', 'LANGUAGE_COOKIE_AGE'], 'reason': ['SECURE_HSTS_SECONDS should be an integer value representing the number of seconds for HSTS.', 'DATABASES should be configured with database settings.', 'LANGUAGE_COOKIE_AGE should be set to a valid integer value.']}
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'DATABASES', 'LANGUAGE_COOKIE_AGE'], 'reason': ['SECURE_HSTS_SECONDS should be an integer value representing the number of seconds for which browsers should remember to force HTTPS connections.', 'DATABASES should be configured with database connection details.', "LANGUAGE_COOKIE_AGE should be set to an integer value representing the age of language cookie, or set to None if the cookie should expire when the user's session ends."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: SECURE_HSTS_SECONDS	DATABASES	LANGUAGE_COOKIE_AGE
+[Ciri] Reason for SECURE_HSTS_SECONDS: SECURE_HSTS_SECONDS should be an integer value representing the number of seconds for which the HSTS policy should be enforced.
+[Ciri] Reason for DATABASES: DATABASES should be configured with database settings such as 'default' database engine, name, user, password, etc.
+[Ciri] Reason for LANGUAGE_COOKIE_AGE: LANGUAGE_COOKIE_AGE should be set to a valid integer value.

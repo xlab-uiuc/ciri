@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 8, 7]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['temp_buffers'], 'reason': ["The value of the property 'temp_buffers' should be specified in blocks (8kB) or pages (8kB) instead of '8BB'."]}
+
+{'hasError': True, 'errParameter': ['temp_buffers'], 'reason': ["The value of the property 'temp_buffers' should be specified in blocks (8kB) or MB (8MB), not BB."]}
+
+{'hasError': True, 'errParameter': ['temp_buffers'], 'reason': ["The value of the property 'temp_buffers' should be specified in blocks (8kB) or in shared_buffers (pages)."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: temp_buffers
+[Ciri] Reason for temp_buffers: The value of the property 'temp_buffers' should be specified in blocks (8kB) or in shared_buffers (pages).

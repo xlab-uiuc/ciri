@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.redundancy.queue.restart.iterations', 'dfs.namenode.path.based.cache.block.map.allocation.percent', 'dfs.namenode.fs-limits.max-xattr-size', 'dfs.datanode.cache.revocation.polling.ms', 'dfs.block.misreplication.processing.limit', 'dfs.content-summary.sleep-microsec', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ['The value of dfs.namenode.redundancy.queue.restart.iterations must be greater than 0.', 'The value of dfs.namenode.path.based.cache.block.map.allocation.percent must be between 0 and 1.', 'The value of dfs.namenode.fs-limits.max-xattr-size must be greater than 0 and less than or equal to 32768.', 'The value of dfs.datanode.cache.revocation.polling.ms must be greater than 0.', 'The value of dfs.block.misreplication.processing.limit must be greater than 0.', 'The value of dfs.content-summary.sleep-microsec must be greater than 0.', 'The value of dfs.provided.aliasmap.leveldb.path must be a valid path.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: dfs.namenode.redundancy.queue.restart.iterations	dfs.namenode.path.based.cache.block.map.allocation.percent	dfs.namenode.fs-limits.max-xattr-size	dfs.datanode.cache.revocation.polling.ms	dfs.block.misreplication.processing.limit	dfs.content-summary.sleep-microsec	dfs.provided.aliasmap.leveldb.path
+[Ciri] Reason for dfs.namenode.redundancy.queue.restart.iterations: The value of dfs.namenode.redundancy.queue.restart.iterations must be greater than 0.
+[Ciri] Reason for dfs.namenode.path.based.cache.block.map.allocation.percent: The value of dfs.namenode.path.based.cache.block.map.allocation.percent must be between 0 and 1.
+[Ciri] Reason for dfs.namenode.fs-limits.max-xattr-size: The value of dfs.namenode.fs-limits.max-xattr-size must be greater than 0 and less than or equal to 32768.
+[Ciri] Reason for dfs.datanode.cache.revocation.polling.ms: The value of dfs.datanode.cache.revocation.polling.ms must be greater than 0.
+[Ciri] Reason for dfs.block.misreplication.processing.limit: The value of dfs.block.misreplication.processing.limit must be greater than 0.
+[Ciri] Reason for dfs.content-summary.sleep-microsec: The value of dfs.content-summary.sleep-microsec must be greater than 0.
+[Ciri] Reason for dfs.provided.aliasmap.leveldb.path: The value of dfs.provided.aliasmap.leveldb.path must be a valid path.

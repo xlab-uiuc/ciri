@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.loadbalancer.class', 'hbase.security.exec.permission.checks'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.master.loadbalancer.class'.", "The 'usage' tag is not a valid tag for property 'hbase.security.exec.permission.checks'."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.loadbalancer.class', 'hbase.security.exec.permission.checks'], 'reason': ["The 'hbase.master.loadbalancer.class' property is using the deprecated StochasticLoadBalancer. Consider using the new default balancer SimpleLoadBalancer instead.", "The 'hbase.security.exec.permission.checks' property is set to false. It is recommended to enable permission checks for security purposes."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.loadbalancer.class', 'hbase.security.exec.permission.checks'], 'reason': ["The property 'hbase.master.loadbalancer.class' has an incorrect usage tag 'usage' instead of 'description'.", "The property 'hbase.security.exec.permission.checks' is missing the 'usage' tag."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.master.loadbalancer.class	hbase.security.exec.permission.checks
+[Ciri] Reason for hbase.master.loadbalancer.class: The property 'hbase.master.loadbalancer.class' has an incorrect usage tag 'usage' instead of 'description'.
+[Ciri] Reason for hbase.security.exec.permission.checks: The property 'hbase.security.exec.permission.checks' is missing the 'usage' tag.

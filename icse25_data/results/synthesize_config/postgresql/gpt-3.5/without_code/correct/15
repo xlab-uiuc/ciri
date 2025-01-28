@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 6, 1]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['default_table_access_method', 'bytea_output'], 'reason': ["The property 'default_table_access_method' is deprecated in PostgreSQL 13.0 and should not be used.", "The property 'bytea_output' is duplicated in the configuration file."]}
+
+{'hasError': True, 'errParameter': ['bytea_output'], 'reason': ["The property 'bytea_output' is duplicated in the configuration file."]}
+
+{'hasError': True, 'errParameter': ['bytea_output'], 'reason': ["The property 'bytea_output' is repeated with conflicting values. It should be specified only once."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: bytea_output
+[Ciri] Reason for bytea_output: The property 'bytea_output' is duplicated in the configuration file.

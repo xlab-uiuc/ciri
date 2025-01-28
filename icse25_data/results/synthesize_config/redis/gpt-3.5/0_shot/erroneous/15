@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'repl-diskless-sync', 'repl-diskless-load', 'appendonly'], 'reason': ["Invalid value for cluster-announce-ip. It should be in the format 'IP:PORT'.", "Invalid value for repl-diskless-sync. It should be 'yes' or 'no'.", "Invalid value for repl-diskless-load. It should be 'yes' or 'no'.", "Invalid value for appendonly. It should be 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'repl-diskless-sync', 'repl-diskless-load', 'appendonly'], 'reason': ["Invalid value for cluster-announce-ip. It should be in the format 'IP:PORT'.", "Invalid value for repl-diskless-sync. It should be 'yes' or 'no'.", "Invalid value for repl-diskless-load. It should be 'yes' or 'no'.", "Invalid value for appendonly. It should be 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'repl-diskless-sync', 'repl-diskless-load'], 'reason': ["Invalid value for cluster-announce-ip. It should be in the format 'IP:PORT'.", "Invalid value for repl-diskless-sync. It should be 'yes' or 'no'.", "Invalid value for repl-diskless-load. It should be 'yes' or 'no'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: cluster-announce-ip	repl-diskless-sync	repl-diskless-load	appendonly
+[Ciri] Reason for cluster-announce-ip: Invalid value for cluster-announce-ip. It should be in the format 'IP:PORT'.
+[Ciri] Reason for repl-diskless-sync: Invalid value for repl-diskless-sync. It should be 'yes' or 'no'.
+[Ciri] Reason for repl-diskless-load: Invalid value for repl-diskless-load. It should be 'yes' or 'no'.
+[Ciri] Reason for appendonly: Invalid value for appendonly. It should be 'yes' or 'no'.

@@ -1,0 +1,13 @@
+Wrong shot number:
+[4, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'DATABASES', 'LANGUAGE_COOKIE_AGE'], 'reason': ["The property 'SECURE_HSTS_SECONDS' has an invalid value 'ciri/ciri'. It should be a positive integer representing the duration in seconds.", "The property 'DATABASES' is empty. It should contain configuration settings for database connections.", "The property 'LANGUAGE_COOKIE_AGE' has the value 'None' which is not a valid integer value. It should be a positive integer representing the age of language cookie."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: SECURE_HSTS_SECONDS	DATABASES	LANGUAGE_COOKIE_AGE
+[Ciri] Reason for SECURE_HSTS_SECONDS: The property 'SECURE_HSTS_SECONDS' has an invalid value 'ciri/ciri'. It should be a positive integer representing the duration in seconds.
+[Ciri] Reason for DATABASES: The property 'DATABASES' is empty. It should contain configuration settings for database connections.
+[Ciri] Reason for LANGUAGE_COOKIE_AGE: The property 'LANGUAGE_COOKIE_AGE' has the value 'None' which is not a valid integer value. It should be a positive integer representing the age of language cookie.

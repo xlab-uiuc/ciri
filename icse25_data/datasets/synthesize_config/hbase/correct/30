@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.zookeeper.property.dataDir</name>
+  <value>/valid/file1</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The directory where the snapshot is stored.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.maxClientCnxns</name>
+  <value>150</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    Limit on number of concurrent connections (at the socket level) that a
+    single client, identified by IP address, may make to a single member of
+    the ZooKeeper ensemble. Set high to avoid zk connection issues running
+    standalone and pseudo-distributed.</description>
+</property>
+
+<property>
+  <name>hbase.defaults.for.version.skip</name>
+  <value>true</value>
+    <description>Set to true to skip the 'hbase.defaults.for.version' check.
+    Setting this to true can be useful in contexts other than
+    the other side of a maven generation; i.e. running in an
+    IDE.  You'll want to set this boolean to true to avoid
+    seeing the RuntimeException complaint: "hbase-default.xml file
+    seems to be for and old version of HBase (\${hbase.version}), this
+    version is X.X.X-SNAPSHOT"</description>
+</property>
+
+<property>
+  <name>hbase.table.lock.enable</name>
+  <value>true</value>
+    <description>Set to true to enable locking the table in zookeeper for schema change operations.
+    Table locking from master prevents concurrent schema modifications to corrupt table
+    state.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.maxQueuedRequests</name>
+  <value>1000</value>
+    <description>The maximum number of pending Thrift connections waiting in the queue. If
+     there are no idle threads in the pool, the server queues requests. Only
+     when the queue overflows, new threads are added, up to
+     hbase.thrift.maxQueuedRequests threads.</description>
+</property>
+
+<property>
+  <name>hbase.rootdir.perms</name>
+  <value>350</value>
+    <description>FS Permissions for the root data subdirectory in a secure (kerberos) setup.
+    When master starts, it creates the rootdir with this permissions or sets the permissions
+    if it does not match.</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.enabled</name>
+  <value>true</value>
+    <description>Set to true to allow snapshots to be taken / restored / cloned.</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.region.timeout</name>
+  <value>150000</value>
+    <description>
+       Timeout for regionservers to keep threads in snapshot request pool waiting.
+    </description>
+</property>
+
+</configuration>

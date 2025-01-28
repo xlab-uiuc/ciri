@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.crypto.buffer.size', 'net.topology.script.file.name'], 'reason': ["The value for hadoop.security.crypto.buffer.size should be an integer, but is set to 'ciri/ciri' which is invalid.", "The value for net.topology.script.file.name should be a valid file path, but '/valid/file2' does not appear to be a real file path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.crypto.buffer.size	net.topology.script.file.name
+[Ciri] Reason for hadoop.security.crypto.buffer.size: The value for hadoop.security.crypto.buffer.size should be an integer, but is set to 'ciri/ciri' which is invalid.
+[Ciri] Reason for net.topology.script.file.name: The value for net.topology.script.file.name should be a valid file path, but '/valid/file2' does not appear to be a real file path.

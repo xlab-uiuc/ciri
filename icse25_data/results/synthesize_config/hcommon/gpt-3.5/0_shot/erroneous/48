@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'file.stream-buffer-size', 'hadoop.http.cross-origin.allowed-methods', 'hadoop.user.group.static.mapping.overrides', 'hadoop.shell.missing.defaultFs.warning'], 'reason': ["Value of 'fs.ftp.host.port' should be a positive integer.", "Value of 'file.stream-buffer-size' should be a positive integer.", "Value of 'hadoop.http.cross-origin.allowed-methods' should be a comma-separated list of allowed methods.", "Value of 'hadoop.user.group.static.mapping.overrides' should be in the format 'user1=group1,group2;user2=;user3=group2;'", "Value of 'hadoop.shell.missing.defaultFs.warning' should be a boolean value."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'hadoop.user.group.static.mapping.overrides', 'hadoop.shell.missing.defaultFs.warning'], 'reason': ["Value should be a positive integer for property 'fs.ftp.host.port'.", "Invalid format for static mapping in property 'hadoop.user.group.static.mapping.overrides'.", "Value should be a boolean (true/false) for property 'hadoop.shell.missing.defaultFs.warning'."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'file.stream-buffer-size', 'hadoop.http.cross-origin.allowed-methods', 'hadoop.user.group.static.mapping.overrides', 'hadoop.shell.missing.defaultFs.warning'], 'reason': ["Value of 'fs.ftp.host.port' should be a positive integer.", "Value of 'file.stream-buffer-size' should be a positive integer.", "Value of 'hadoop.http.cross-origin.allowed-methods' should be a comma-separated list of methods.", "Value of 'hadoop.user.group.static.mapping.overrides' should be in the format 'user1=group1,group2;user2=;user3=group2;'", "Value of 'hadoop.shell.missing.defaultFs.warning' should be a boolean value."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: fs.ftp.host.port	file.stream-buffer-size	hadoop.http.cross-origin.allowed-methods	hadoop.user.group.static.mapping.overrides	hadoop.shell.missing.defaultFs.warning
+[Ciri] Reason for fs.ftp.host.port: Value of 'fs.ftp.host.port' should be a positive integer.
+[Ciri] Reason for file.stream-buffer-size: Value of 'file.stream-buffer-size' should be a positive integer.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-methods: Value of 'hadoop.http.cross-origin.allowed-methods' should be a comma-separated list of allowed methods.
+[Ciri] Reason for hadoop.user.group.static.mapping.overrides: Value of 'hadoop.user.group.static.mapping.overrides' should be in the format 'user1=group1,group2;user2=;user3=group2;'
+[Ciri] Reason for hadoop.shell.missing.defaultFs.warning: Value of 'hadoop.shell.missing.defaultFs.warning' should be a boolean value.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.metrics.logger.period.seconds', 'dfs.namenode.reencrypt.throttle.limit.handler.ratio', 'dfs.balancer.keytab.file', 'dfs.client.read.striped.threadpool.size', 'dfs.datanode.replica.cache.expiry.time', 'dfs.mover.keytab.file', 'dfs.storage.policy.satisfier.recheck.timeout.millis', 'dfs.disk.balancer.max.disk.errors'], 'reason': ['The value for dfs.namenode.metrics.logger.period.seconds should be greater than zero.', 'The value for dfs.namenode.reencrypt.throttle.limit.handler.ratio should not be negative or zero.', 'The value for dfs.client.read.striped.threadpool.size should be greater than zero.', 'The value for dfs.datanode.replica.cache.expiry.time should be specified in milliseconds.', 'The value for dfs.storage.policy.satisfier.recheck.timeout.millis should be specified in milliseconds.', 'The value for dfs.disk.balancer.max.disk.errors should be greater than zero.']}
+
+{'hasError': True, 'errParameter': ['dfs.balancer.keytab.file', 'dfs.mover.keytab.file'], 'reason': ['The property dfs.balancer.keytab.file is deprecated in HDFS 3.3.0. Please review the latest documentation for the updated keytab configuration for Balancer.', 'The property dfs.mover.keytab.file is deprecated in HDFS 3.3.0. Please review the latest documentation for the updated keytab configuration for Mover.']}
+
+{'hasError': True, 'errParameter': ['dfs.balancer.keytab.file', 'dfs.mover.keytab.file'], 'reason': ["The properties dfs.balancer.keytab.file and dfs.mover.keytab.file are using the same value '/valid/file2'. They should have unique keytab file paths."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.balancer.keytab.file	dfs.mover.keytab.file
+[Ciri] Reason for dfs.balancer.keytab.file: The properties dfs.balancer.keytab.file and dfs.mover.keytab.file are using the same value '/valid/file2'. They should have unique keytab file paths.
+[Ciri] Reason for dfs.mover.keytab.file: The property dfs.mover.keytab.file is deprecated in HDFS 3.3.0. Please review the latest documentation for the updated keytab configuration for Mover.

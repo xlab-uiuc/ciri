@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.log-aggregation-status.time-out.ms', 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min'], 'reason': ["Parameter 'yarn.log-aggregation-status.time-out.ms' should be 'yarn.log-aggregation-status.timeout-ms' for yarn version 3.3.0.", "Parameter 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min' should be 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.minimum' for yarn version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['yarn.log-aggregation-status.time-out.ms', 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min'], 'reason': ["Parameter 'yarn.log-aggregation-status.time-out.ms' should be 'yarn.log-aggregation-status.timeout-ms'.", "Parameter 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min' should be 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.minimum'."]}
+
+{'hasError': True, 'errParameter': ['yarn.log-aggregation-status.time-out.ms', 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min'], 'reason': ["Property 'yarn.log-aggregation-status.time-out.ms' should be 'yarn.log-aggregation-status.timeout-ms'.", "Property 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min' should be 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.log-aggregation-status.time-out.ms	yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min
+[Ciri] Reason for yarn.log-aggregation-status.time-out.ms: Parameter 'yarn.log-aggregation-status.time-out.ms' should be 'yarn.log-aggregation-status.timeout-ms'.
+[Ciri] Reason for yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min: Parameter 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min' should be 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.minimum' for yarn version 3.3.0.

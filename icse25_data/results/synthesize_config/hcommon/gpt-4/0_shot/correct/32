@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.table.capacity.write', 'fs.s3a.committer.magic.enabled', 'fs.wasb.impl', 'ipc.server.reuseaddr', 'tfile.fs.input.buffer.size', 'ha.zookeeper.session-timeout.ms', 'ha.failover-controller.graceful-fence.rpc-timeout.ms', 'hadoop.security.kms.client.encrypted.key.cache.num.refill.threads'], 'reason': ["The 'fs.s3a.s3guard.ddb.table.capacity.write' property is deprecated as S3Guard has been removed in Hadoop 3.3.0.", "The 'fs.s3a.committer.magic.enabled' property is related to S3Guard, which is not supported in Hadoop 3.3.0.", "The 'fs.wasb.impl' property is correctly defined, but ensure Azure support is included in your Hadoop build.", "The 'ipc.server.reuseaddr' property is valid, but ensure it is set according to your network and OS requirements.", "The 'tfile.fs.input.buffer.size' property is valid, but ensure the buffer size is optimized for your workload.", "The 'ha.zookeeper.session-timeout.ms' property is valid, but ensure the timeout is appropriate for your HA setup.", "The 'ha.failover-controller.graceful-fence.rpc-timeout.ms' property is valid, but ensure the timeout suits your failover strategy.", "The 'hadoop.security.kms.client.encrypted.key.cache.num.refill.threads' property is valid, but ensure the number of threads is optimized for your security requirements."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.s3a.s3guard.ddb.table.capacity.write	fs.s3a.committer.magic.enabled	fs.wasb.impl	ipc.server.reuseaddr	tfile.fs.input.buffer.size	ha.zookeeper.session-timeout.ms	ha.failover-controller.graceful-fence.rpc-timeout.ms	hadoop.security.kms.client.encrypted.key.cache.num.refill.threads
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: The 'fs.s3a.s3guard.ddb.table.capacity.write' property is deprecated as S3Guard has been removed in Hadoop 3.3.0.
+[Ciri] Reason for fs.s3a.committer.magic.enabled: The 'fs.s3a.committer.magic.enabled' property is related to S3Guard, which is not supported in Hadoop 3.3.0.
+[Ciri] Reason for fs.wasb.impl: The 'fs.wasb.impl' property is correctly defined, but ensure Azure support is included in your Hadoop build.
+[Ciri] Reason for ipc.server.reuseaddr: The 'ipc.server.reuseaddr' property is valid, but ensure it is set according to your network and OS requirements.
+[Ciri] Reason for tfile.fs.input.buffer.size: The 'tfile.fs.input.buffer.size' property is valid, but ensure the buffer size is optimized for your workload.
+[Ciri] Reason for ha.zookeeper.session-timeout.ms: The 'ha.zookeeper.session-timeout.ms' property is valid, but ensure the timeout is appropriate for your HA setup.
+[Ciri] Reason for ha.failover-controller.graceful-fence.rpc-timeout.ms: The 'ha.failover-controller.graceful-fence.rpc-timeout.ms' property is valid, but ensure the timeout suits your failover strategy.
+[Ciri] Reason for hadoop.security.kms.client.encrypted.key.cache.num.refill.threads: The 'hadoop.security.kms.client.encrypted.key.cache.num.refill.threads' property is valid, but ensure the number of threads is optimized for your security requirements.

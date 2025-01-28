@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>io.map.index.skip</name>
+  <value>-1</value>
+  <description>Number of index entries to skip between each entry.
+  Zero by default. Setting this to values larger than zero can
+  facilitate opening large MapFiles using less memory.</description>
+</property>
+
+<property>
+  <name>ipc.[port_number].backoff.enable</name>
+  <value>true</value>
+  <description>Whether or not to enable client backoff when a queue is full.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.kerberos.keytab</name>
+  <value>/valid/file1</value>
+  <description>
+    Location of the keytab file with the credentials for the principal.
+    Referring to the same keytab file Oozie uses for its Kerberos credentials for Hadoop.
+  </description>
+</property>
+
+<property>
+  <name>ha.health-monitor.check-interval.ms</name>
+  <value>500</value>
+  <description>
+    How often to check the service.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.java.secure.random.algorithm</name>
+  <value>SHA1PRNG</value>
+  <description>
+    The java secure random algorithm.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.secure</name>
+  <value>false</value>
+    <description>
+      Key to set if the registry is secure. Turning it on
+      changes the permissions policy from "open access"
+      to restrictions on kerberos with the option of
+      a user adding one or more auth key pairs down their
+      own tree.
+    </description>
+</property>
+
+<property>
+  <name>fs.adl.impl</name>
+  <value>org.apache.hadoop.fs.adl.AdlFileSystem</value>
+</property>
+
+<property>
+  <name>fs.getspaceused.jitterMillis</name>
+  <value>30000</value>
+    <description>
+      fs space usage statistics refresh jitter in msec.
+    </description>
+</property>
+
+</configuration>

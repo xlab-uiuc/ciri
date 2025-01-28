@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 10, 8]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.wal.dir.perms'], 'reason': ["The property 'hbase.wal.dir.perms' has the value '1400' which is not a valid permission format. Permissions should be specified in octal format, e.g., 755."]}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.master.logcleaner.plugins', 'hbase.wal.dir.perms'], 'reason': ["The property 'hbase.local.dir' contains a variable '${hbase.tmp.dir}' which may not be resolved properly.", "The property 'hbase.master.logcleaner.plugins' is missing the default log cleaner 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner'.", "The value of the property 'hbase.wal.dir.perms' should be in octal format, e.g., '0700'."]}
+
+{'hasError': True, 'errParameter': ['hbase.wal.dir.perms'], 'reason': ["The value of the property 'hbase.wal.dir.perms' should be in octal format, e.g., '0755', to represent the correct file system permissions."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.wal.dir.perms
+[Ciri] Reason for hbase.wal.dir.perms: The property 'hbase.wal.dir.perms' has the value '1400' which is not a valid permission format. Permissions should be specified in octal format, e.g., 755.

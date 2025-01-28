@@ -1,0 +1,26 @@
+Wrong shot number:
+[11, 9, 6]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.column.max.version'], 'reason': ["The value of the property 'hbase.column.max.version' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit'], 'reason': ["The value of the property 'hbase.regionserver.regionSplitLimit' should be larger than or equal to 0."]}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir'], 'reason': ["The property 'hbase.local.dir' has the value '/valid/file1' which is not a valid directory."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.local.dir'], 'reason': ["The property 'hbase.local.dir' has the value '/valid/file1' which is not a valid directory."]}
+
+{'hasError': True, 'errParameter': ['hbase.column.max.version'], 'reason': ["The value of the property 'hbase.column.max.version' should be larger than or equal to 0."]}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir'], 'reason': ["The property 'hbase.local.dir' has the value '/valid/file1' which is not a valid directory."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.local.dir
+[Ciri] Reason for hbase.local.dir: The property 'hbase.local.dir' has the value '/valid/file1' which is not a valid directory.

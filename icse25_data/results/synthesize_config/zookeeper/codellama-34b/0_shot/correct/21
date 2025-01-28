@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3', 'server.4', 'server.5'], 'reason': ['The server.x properties are not needed in Zookeeper version 3.7.0. They have been replaced by the server.x properties in the zoo.cfg file.']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'syncLimit', 'clientPortAddress'], 'reason': ['initLimit must be greater than 0', 'syncLimit must be greater than 0', 'clientPortAddress is not a valid address']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'syncLimit'], 'reason': ['initLimit should be greater than 0', 'syncLimit should be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initLimit', 'clientPort'], 'reason': ['initLimit should be greater than 0', 'clientPort should be greater than 1023']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'initLimit'], 'reason': ['clientPortAddress is not a valid property for Zookeeper version 3.7.0', 'initLimit is not a valid property for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'clientPort'], 'reason': ['initLimit should be a positive integer', 'clientPort should be an integer between 1024 and 65535']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: initLimit	clientPort
+[Ciri] Reason for initLimit: initLimit should be greater than 0
+[Ciri] Reason for clientPort: clientPort should be an integer between 1024 and 65535

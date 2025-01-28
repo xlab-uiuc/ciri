@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_receiver_create_temp_slot', 'krb_server_keyfile', 'max_stack_depth', 'constraint_exclusion', 'log_filename', 'default_toast_compression'], 'reason': ['wal_receiver_create_temp_slot is not a valid parameter for PostgreSQL 13.0', 'krb_server_keyfile is not a valid parameter for PostgreSQL 13.0', 'max_stack_depth is not a valid parameter for PostgreSQL 13.0', 'constraint_exclusion is not a valid parameter for PostgreSQL 13.0', 'log_filename is not a valid parameter for PostgreSQL 13.0', 'default_toast_compression is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['hba_file', 'wal_receiver_create_temp_slot', 'krb_server_keyfile', 'max_stack_depth', 'constraint_exclusion', 'log_filename', 'default_toast_compression'], 'reason': ['hba_file: The value of this property is not a valid path.', 'wal_receiver_create_temp_slot: The value of this property is not a valid boolean.', 'krb_server_keyfile: The value of this property is not a valid path.', 'max_stack_depth: The value of this property is not a valid integer.', 'constraint_exclusion: The value of this property is not a valid boolean.', 'log_filename: The value of this property is not a valid path.', 'default_toast_compression: The value of this property is not a valid compression algorithm.']}
+
+{'hasError': True, 'errParameter': ['wal_receiver_create_temp_slot', 'krb_server_keyfile', 'max_stack_depth', 'constraint_exclusion', 'log_filename', 'default_toast_compression'], 'reason': ['wal_receiver_create_temp_slot: Unknown parameter.', 'krb_server_keyfile: Unknown parameter.', 'max_stack_depth: Unknown parameter.', 'constraint_exclusion: Unknown parameter.', 'log_filename: Unknown parameter.', 'default_toast_compression: Unknown parameter.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: wal_receiver_create_temp_slot	krb_server_keyfile	max_stack_depth	constraint_exclusion	log_filename	default_toast_compression
+[Ciri] Reason for wal_receiver_create_temp_slot: wal_receiver_create_temp_slot is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for krb_server_keyfile: krb_server_keyfile is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for max_stack_depth: max_stack_depth: Unknown parameter.
+[Ciri] Reason for constraint_exclusion: constraint_exclusion is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for log_filename: log_filename: Unknown parameter.
+[Ciri] Reason for default_toast_compression: default_toast_compression: Unknown parameter.

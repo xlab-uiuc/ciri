@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout', 'autopurge.purgeInterval'], 'reason': ['In ZooKeeper 3.7.0, maxSessionTimeout is no longer a valid configuration parameter. It has been replaced by sessionRequireClientSASLAuth which defaults to true.', 'In ZooKeeper 3.7.0, the autopurge configuration has changed. The correct configuration parameters are autopurge.snapRetainCount and autopurge.purgeInterval, and the minimum value for autopurge.purgeInterval is 3 hours. A value of 1 is too low.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: maxSessionTimeout	autopurge.purgeInterval
+[Ciri] Reason for maxSessionTimeout: In ZooKeeper 3.7.0, maxSessionTimeout is no longer a valid configuration parameter. It has been replaced by sessionRequireClientSASLAuth which defaults to true.
+[Ciri] Reason for autopurge.purgeInterval: In ZooKeeper 3.7.0, the autopurge configuration has changed. The correct configuration parameters are autopurge.snapRetainCount and autopurge.purgeInterval, and the minimum value for autopurge.purgeInterval is 3 hours. A value of 1 is too low.

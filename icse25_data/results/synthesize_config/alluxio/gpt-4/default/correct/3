@@ -1,0 +1,15 @@
+Wrong shot number:
+[7, 3, 12]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.connnection.timeout', 'alluxio.master.tieredstore.global.level2.alias'], 'reason': ["The property name 'alluxio.underfs.web.connnection.timeout' is incorrect. It should be 'alluxio.underfs.web.connection.timeout'.", "The property 'alluxio.master.tieredstore.global.level2.alias' is specified, but 'alluxio.master.tieredstore.global.levels' is set to 1, indicating only one tier is configured. This property is unnecessary and potentially incorrect in this context."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.web.connnection.timeout	alluxio.master.tieredstore.global.level2.alias
+[Ciri] Reason for alluxio.underfs.web.connnection.timeout: The property name 'alluxio.underfs.web.connnection.timeout' is incorrect. It should be 'alluxio.underfs.web.connection.timeout'.
+[Ciri] Reason for alluxio.master.tieredstore.global.level2.alias: The property 'alluxio.master.tieredstore.global.level2.alias' is specified, but 'alluxio.master.tieredstore.global.levels' is set to 1, indicating only one tier is configured. This property is unnecessary and potentially incorrect in this context.

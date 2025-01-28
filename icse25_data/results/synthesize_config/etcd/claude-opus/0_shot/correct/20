@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-tls', 'heartbeat-interval'], 'reason': ["The 'enable-v2' flag is not supported in etcd version 3.5.0 and above. The v2 API is deprecated.", "The 'auto-tls' flag is not a valid configuration parameter for etcd. If you want to enable TLS, you need to configure it manually using the appropriate TLS flags and certificates.", "The 'heartbeat-interval' value of 50 is too low. It should be at least 100ms or higher to avoid excessive network traffic and CPU usage."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable-v2	auto-tls	heartbeat-interval
+[Ciri] Reason for enable-v2: The 'enable-v2' flag is not supported in etcd version 3.5.0 and above. The v2 API is deprecated.
+[Ciri] Reason for auto-tls: The 'auto-tls' flag is not a valid configuration parameter for etcd. If you want to enable TLS, you need to configure it manually using the appropriate TLS flags and certificates.
+[Ciri] Reason for heartbeat-interval: The 'heartbeat-interval' value of 50 is too low. It should be at least 100ms or higher to avoid excessive network traffic and CPU usage.

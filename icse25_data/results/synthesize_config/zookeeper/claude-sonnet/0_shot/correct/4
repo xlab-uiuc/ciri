@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'secureClientPortAddress', 'electionAlg'], 'reason': ['The secureClientPort and secureClientPortAddress properties are used for enabling TLS/SSL encryption, which is not recommended for ZooKeeper 3.7.0. Instead, you should use the clientPort and clientPortAddress properties for unencrypted client connections.', 'The electionAlg=3 setting is not a valid option in ZooKeeper 3.7.0. The valid options are 0 (default) for basic paxos, 1 for fast leader election, and 2 for auth fast leader election.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: secureClientPort	secureClientPortAddress	electionAlg
+[Ciri] Reason for secureClientPort: The secureClientPort and secureClientPortAddress properties are used for enabling TLS/SSL encryption, which is not recommended for ZooKeeper 3.7.0. Instead, you should use the clientPort and clientPortAddress properties for unencrypted client connections.
+[Ciri] Reason for secureClientPortAddress: The electionAlg=3 setting is not a valid option in ZooKeeper 3.7.0. The valid options are 0 (default) for basic paxos, 1 for fast leader election, and 2 for auth fast leader election.
+[Ciri] Reason for electionAlg: 

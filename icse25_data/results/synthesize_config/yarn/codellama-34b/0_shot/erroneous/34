@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-vcores', 'yarn.scheduler.maximum-allocation-vcores'], 'reason': ['The minimum allocation for every container request at the RM in terms of virtual CPU cores. Requests lower than this will be set to the value of this property. Additionally, a node manager that is configured to have fewer virtual cores than this value will be shut down by the resource manager.', 'The maximum allocation for every container request at the RM in terms of virtual CPU cores. Requests higher than this will throw an InvalidResourceRequestException.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.scheduler.minimum-allocation-vcores	yarn.scheduler.maximum-allocation-vcores
+[Ciri] Reason for yarn.scheduler.minimum-allocation-vcores: The minimum allocation for every container request at the RM in terms of virtual CPU cores. Requests lower than this will be set to the value of this property. Additionally, a node manager that is configured to have fewer virtual cores than this value will be shut down by the resource manager.
+[Ciri] Reason for yarn.scheduler.maximum-allocation-vcores: The maximum allocation for every container request at the RM in terms of virtual CPU cores. Requests higher than this will throw an InvalidResourceRequestException.

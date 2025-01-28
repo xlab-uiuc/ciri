@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.ufs.active.sync.event.rate.interval', 'alluxio.underfs.s3.upload.threads.max', 'alluxio.user.file.buffer.bytes', 'alluxio.security.login.impersonation.username'], 'reason': ['alluxio.master.ufs.active.sync.event.rate.interval: The value of this property is not a valid time duration. Valid time units are: ns, us, ms, s, m, h, d.', 'alluxio.underfs.s3.upload.threads.max: The value of this property must be greater than or equal to 1.', 'alluxio.user.file.buffer.bytes: The value of this property must be greater than or equal to 1.', 'alluxio.security.login.impersonation.username: The value of this property must be a valid username.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.master.ufs.active.sync.event.rate.interval	alluxio.underfs.s3.upload.threads.max	alluxio.user.file.buffer.bytes	alluxio.security.login.impersonation.username
+[Ciri] Reason for alluxio.master.ufs.active.sync.event.rate.interval: alluxio.master.ufs.active.sync.event.rate.interval: The value of this property is not a valid time duration. Valid time units are: ns, us, ms, s, m, h, d.
+[Ciri] Reason for alluxio.underfs.s3.upload.threads.max: alluxio.underfs.s3.upload.threads.max: The value of this property must be greater than or equal to 1.
+[Ciri] Reason for alluxio.user.file.buffer.bytes: alluxio.user.file.buffer.bytes: The value of this property must be greater than or equal to 1.
+[Ciri] Reason for alluxio.security.login.impersonation.username: alluxio.security.login.impersonation.username: The value of this property must be a valid username.

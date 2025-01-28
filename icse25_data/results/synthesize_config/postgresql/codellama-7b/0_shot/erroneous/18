@@ -1,0 +1,49 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'wal_log_hints'], 'reason': ['listen_addresses must be an array of strings', 'unix_socket_directories must be an array of strings', 'wal_log_hints must be a boolean']}
+
+{'hasError': True, 'errParameter': ['unix_socket_directories'], 'reason': ['unix_socket_directories should be a list of directories']}
+
+{'hasError': True, 'errParameter': ['shared_buffers'], 'reason': ['shared_buffers must be a power of 2']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'max_connections', 'max_prepared_transactions', 'max_locks_per_transaction', 'max_worker_processes', 'max_wal_senders', 'max_replication_slots'], 'reason': ['shared_buffers must be greater than 128kB', 'max_connections must be greater than 10', 'max_prepared_transactions must be greater than 0', 'max_locks_per_transaction must be greater than 64', 'max_worker_processes must be greater than 0', 'max_wal_senders must be greater than 0', 'max_replication_slots must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['shared_preload_libraries'], 'reason': ['shared_preload_libraries should be a comma-separated list of shared library names.']}
+
+{'hasError': True, 'errParameter': ['shared_preload_libraries', 'unix_socket_directories', 'max_pred_locks_per_relation', 'vacuum_cost_limit', 'wal_log_hints', 'logging_collector', 'tcp_user_timeout', 'max_replication_slots'], 'reason': ['shared_preload_libraries should be a list of strings', 'unix_socket_directories should be a list of strings', 'max_pred_locks_per_relation should be an integer', 'vacuum_cost_limit should be an integer', 'wal_log_hints should be a boolean', 'logging_collector should be a boolean', 'tcp_user_timeout should be an integer', 'max_replication_slots should be an integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'max_connections', 'max_prepared_transactions', 'max_replication_slots'], 'reason': ['shared_buffers must be a power of 2 between 131072 and 17179869184 inclusive.', 'max_connections must be between 10 and 1000 inclusive.', 'max_prepared_transactions must be between 0 and 1000 inclusive.', 'max_replication_slots must be between 0 and 1000 inclusive.']}
+
+{'hasError': True, 'errParameter': ['shared_buffers'], 'reason': ['The value of shared_buffers is too large. The maximum value is 128MB.']}
+
+{'hasError': True, 'errParameter': ['unix_socket_directories', 'max_pred_locks_per_relation', 'vacuum_cost_limit', 'wal_log_hints', 'logging_collector', 'tcp_user_timeout', 'max_replication_slots'], 'reason': ['unix_socket_directories must be a list of directories, but it is a string', 'max_pred_locks_per_relation must be a positive integer, but it is a negative integer', 'vacuum_cost_limit must be a positive integer, but it is a string', 'wal_log_hints must be a boolean, but it is a string', 'logging_collector must be a boolean, but it is a string', 'tcp_user_timeout must be a positive integer, but it is a string', 'max_replication_slots must be a positive integer, but it is a string']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers'], 'reason': ['The value of shared_buffers must be a power of 2 greater than 128kB.']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'max_pred_locks_per_relation', 'wal_log_hints', 'logging_collector', 'tcp_user_timeout', 'max_replication_slots'], 'reason': ['listen_addresses must be an array of strings', 'unix_socket_directories must be an array of strings', 'max_pred_locks_per_relation must be an integer', 'wal_log_hints must be a boolean', 'logging_collector must be a boolean', 'tcp_user_timeout must be an integer', 'max_replication_slots must be an integer']}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'max_connections', 'wal_level', 'max_replication_slots'], 'reason': ['shared_buffers must be greater than 128kB', 'max_connections must be greater than 10', 'wal_level must be one of {minimal, archive, hot_standby, logical}', 'max_replication_slots must be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'wal_log_hints', 'logging_collector', 'tcp_user_timeout', 'max_replication_slots'], 'reason': ['listen_addresses must be an array of strings', 'unix_socket_directories must be an array of strings', 'wal_log_hints must be a boolean', 'logging_collector must be a boolean', 'tcp_user_timeout must be an integer', 'max_replication_slots must be an integer']}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'max_connections', 'max_prepared_transactions', 'max_locks_per_transaction', 'max_worker_processes', 'max_wal_senders', 'wal_level', 'max_replication_slots'], 'reason': ['shared_buffers must be a power of 2 greater than 128kB', 'max_connections must be greater than 10', 'max_prepared_transactions must be greater than 0', 'max_locks_per_transaction must be greater than 64', 'max_worker_processes must be greater than 0', 'max_wal_senders must be greater than 0', 'wal_level must be one of {minimal, archive, hot_standby, logical}', 'max_replication_slots must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'wal_log_hints', 'logging_collector', 'tcp_user_timeout', 'max_replication_slots'], 'reason': ['listen_addresses should be a list of strings', 'unix_socket_directories should be a list of strings', 'wal_log_hints should be a boolean', 'logging_collector should be a boolean', 'tcp_user_timeout should be an integer', 'max_replication_slots should be an integer']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: listen_addresses	unix_socket_directories	wal_log_hints	logging_collector	tcp_user_timeout	max_replication_slots
+[Ciri] Reason for listen_addresses: listen_addresses should be a list of strings
+[Ciri] Reason for unix_socket_directories: unix_socket_directories must be an array of strings
+[Ciri] Reason for wal_log_hints: wal_log_hints should be a boolean
+[Ciri] Reason for logging_collector: logging_collector should be a boolean
+[Ciri] Reason for tcp_user_timeout: tcp_user_timeout should be an integer
+[Ciri] Reason for max_replication_slots: max_replication_slots should be an integer

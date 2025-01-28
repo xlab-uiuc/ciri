@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proc-title-template', 'stream-node-max-entries', 'oom-score-adj-values', 'oom-score-adj'], 'reason': ["The 'proc-title-template' configuration is not a standard Redis configuration directive.", "The 'stream-node-max-entries' configuration is not recognized. The correct directive might be 'hash-max-ziplist-entries' for controlling the size of hash entries.", "The 'oom-score-adj-values' configuration does not exist in Redis. Redis does not directly manage OOM (Out Of Memory) scores in its configuration.", "The 'oom-score-adj' configuration is not a recognized Redis configuration directive. Redis does not provide a direct way to adjust OOM scores through its configuration file."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: proc-title-template	stream-node-max-entries	oom-score-adj-values	oom-score-adj
+[Ciri] Reason for proc-title-template: The 'proc-title-template' configuration is not a standard Redis configuration directive.
+[Ciri] Reason for stream-node-max-entries: The 'stream-node-max-entries' configuration is not recognized. The correct directive might be 'hash-max-ziplist-entries' for controlling the size of hash entries.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' configuration does not exist in Redis. Redis does not directly manage OOM (Out Of Memory) scores in its configuration.
+[Ciri] Reason for oom-score-adj: The 'oom-score-adj' configuration is not a recognized Redis configuration directive. Redis does not provide a direct way to adjust OOM scores through its configuration file.

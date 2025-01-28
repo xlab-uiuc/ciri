@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.mover.retry.max.attempts', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The value for property 'dfs.mover.retry.max.attempts' should be a positive integer.", "The value for property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' should be in milliseconds format (e.g., '5000' for 5 seconds)."]}
+
+{'hasError': True, 'errParameter': ['dfs.mover.retry.max.attempts', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["Invalid value for property 'dfs.mover.retry.max.attempts'. It should be a positive integer.", "Invalid value for property 'dfs.namenode.gc.time.monitor.sleep.interval.ms'. It should be in milliseconds format."]}
+
+{'hasError': True, 'errParameter': ['dfs.mover.retry.max.attempts', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["Invalid value for property 'dfs.mover.retry.max.attempts'. Value should be a positive integer.", "Invalid value for property 'dfs.namenode.gc.time.monitor.sleep.interval.ms'. Value should be in milliseconds format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.mover.retry.max.attempts	dfs.namenode.gc.time.monitor.sleep.interval.ms
+[Ciri] Reason for dfs.mover.retry.max.attempts: Invalid value for property 'dfs.mover.retry.max.attempts'. It should be a positive integer.
+[Ciri] Reason for dfs.namenode.gc.time.monitor.sleep.interval.ms: The value for property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' should be in milliseconds format (e.g., '5000' for 5 seconds).

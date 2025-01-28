@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'unixsocketperm'], 'reason': ["bind-source-addr should be a valid IP address, but '999.-1.0.0' is not a valid IP address.", "unixsocketperm should be a valid octal number between 0000 and 0777, but '1400' is not in the valid range."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: bind-source-addr	unixsocketperm
+[Ciri] Reason for bind-source-addr: bind-source-addr should be a valid IP address, but '999.-1.0.0' is not a valid IP address.
+[Ciri] Reason for unixsocketperm: unixsocketperm should be a valid octal number between 0000 and 0777, but '1400' is not in the valid range.

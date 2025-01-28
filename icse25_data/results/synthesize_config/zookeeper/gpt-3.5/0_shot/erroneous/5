@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['dataLogDir should not start with double forward slashes. It should be a valid file path.', "quorum.auth.kerberos.servicePrincipal should not be set to 'zkquorum/localhost'. It should be a valid service principal."]}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'localSessionsEnabled', 'reconfigEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.snapRetainCount', 'syncEnabled', 'standaloneEnabled'], 'reason': ['dataLogDir path should use forward slashes instead of double slashes (//hadoop/io/local)', 'localSessionsEnabled should be set to true if needed', 'reconfigEnabled should be set to true if needed', 'sslQuorumReloadCertFiles should be set to true if needed', 'quorum.auth.kerberos.servicePrincipal should have a valid service principal name', 'autopurge.snapRetainCount should be set to a positive integer value', 'syncEnabled should be set to true if needed', 'standaloneEnabled should be set to true if needed']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ["The 'dataLogDir' parameter should not start with double slashes. It should be a valid file path.", "The 'quorum.auth.kerberos.servicePrincipal' parameter should be in the format 'primary/instance@REALM'. The 'zkquorum/localhost' format is incorrect."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataLogDir	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for dataLogDir: The 'dataLogDir' parameter should not start with double slashes. It should be a valid file path.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: The 'quorum.auth.kerberos.servicePrincipal' parameter should be in the format 'primary/instance@REALM'. The 'zkquorum/localhost' format is incorrect.

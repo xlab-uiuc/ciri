@@ -1,0 +1,19 @@
+Wrong shot number:
+[5, 6, 7]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['stream-node-max-entries', 'proto-max-bulk-len'], 'reason': ["The property 'stream-node-max-entries' has the value '100' which is below the minimum value allowed.", "The property 'proto-max-bulk-len' has the value '512mb' which does not follow the correct format for specifying size."]}
+
+{'hasError': True, 'errParameter': ['stream-node-max-entries', 'proto-max-bulk-len'], 'reason': ["The property 'stream-node-max-entries' has the value '100' which is below the minimum value of 1000.", "The property 'proto-max-bulk-len' has the value '512mb' which does not follow the correct format for specifying size."]}
+
+{'hasError': True, 'errParameter': ['stream-node-max-entries', 'proto-max-bulk-len'], 'reason': ["The property 'stream-node-max-entries' has the value '100' which is below the minimum allowed value.", "The property 'proto-max-bulk-len' has the value '512mb' which does not follow the correct format for specifying size."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: stream-node-max-entries	proto-max-bulk-len
+[Ciri] Reason for stream-node-max-entries: The property 'stream-node-max-entries' has the value '100' which is below the minimum value allowed.
+[Ciri] Reason for proto-max-bulk-len: The property 'proto-max-bulk-len' has the value '512mb' which does not follow the correct format for specifying size.

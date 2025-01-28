@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile', 'syslog_facility', 'enable_hashagg'], 'reason': ['krb_server_keyfile parameter should not have single quotes around the value.', 'syslog_facility parameter should not have single quotes around the value.', "enable_hashagg parameter should be set to 'true' or 'false' instead of 'on'."]}
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile', 'syslog_facility', 'enable_hashagg'], 'reason': ['krb_server_keyfile parameter should not be enclosed in single quotes.', 'syslog_facility parameter should not be enclosed in single quotes.', "enable_hashagg parameter should not be set to 'on', it should be set to 'true'."]}
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile', 'syslog_facility', 'enable_hashagg'], 'reason': ["krb_server_keyfile parameter should not have single quotes around the value. It should be krb_server_keyfile='FILE:${sysconfdir}/krb5.keytab'", "syslog_facility parameter should not have single quotes around the value. It should be syslog_facility='LOCAL0'", 'enable_hashagg parameter should not have single quotes around the value. It should be enable_hashagg=on']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: krb_server_keyfile	syslog_facility	enable_hashagg
+[Ciri] Reason for krb_server_keyfile: krb_server_keyfile parameter should not have single quotes around the value.
+[Ciri] Reason for syslog_facility: syslog_facility parameter should not have single quotes around the value. It should be syslog_facility='LOCAL0'
+[Ciri] Reason for enable_hashagg: enable_hashagg parameter should be set to 'true' or 'false' instead of 'on'.

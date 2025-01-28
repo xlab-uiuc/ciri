@@ -1,0 +1,26 @@
+Wrong shot number:
+[4, 12, 3]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.master.keytab.file'], 'reason': ["The property 'hbase.master.keytab.file' has the value '/valid/file2' which does not seem to be a valid file path."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.wait.on.service.seconds'], 'reason': ["The property 'hbase.master.wait.on.service.seconds' has the value '30' which is less than the minimum allowed value '60'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.wait.on.service.seconds'], 'reason': ["The property 'hbase.master.wait.on.service.seconds' has the value '30' which is less than the minimum allowed value '60'."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.wait.on.service.seconds'], 'reason': ["The property 'hbase.master.wait.on.service.seconds' has the value '30' which is less than the default value of '900'."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.wait.on.service.seconds'], 'reason': ["The property 'hbase.master.wait.on.service.seconds' has the value '30' which is less than the minimum allowed value '60'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.master.wait.on.service.seconds
+[Ciri] Reason for hbase.master.wait.on.service.seconds: The property 'hbase.master.wait.on.service.seconds' has the value '30' which is less than the default value of '900'.

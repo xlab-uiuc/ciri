@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-compaction-mode', 'auto-compaction-retention'], 'reason': ["The 'enable-v2' flag is deprecated and ignored in etcd version 3.5. The v2 API is no longer supported.", "The 'auto-compaction-mode' flag should be set to 'revision' instead of 'periodic' for etcd version 3.5 and later.", "The 'auto-compaction-retention' flag should be set to a number followed by a time unit (e.g., '5m' for 5 minutes) when 'auto-compaction-mode' is set to 'revision'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable-v2	auto-compaction-mode	auto-compaction-retention
+[Ciri] Reason for enable-v2: The 'enable-v2' flag is deprecated and ignored in etcd version 3.5. The v2 API is no longer supported.
+[Ciri] Reason for auto-compaction-mode: The 'auto-compaction-mode' flag should be set to 'revision' instead of 'periodic' for etcd version 3.5 and later.
+[Ciri] Reason for auto-compaction-retention: The 'auto-compaction-retention' flag should be set to a number followed by a time unit (e.g., '5m' for 5 minutes) when 'auto-compaction-mode' is set to 'revision'.

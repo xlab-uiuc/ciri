@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.s3a.multipart.size', 'fs.s3a.select.input.csv.record.delimiter', 'fs.azure.sas.expiry.period'], 'reason': ["The 'fs.ftp.transfer.mode' property does not exist in Hadoop 3.3.0.", "The 'fs.s3a.multipart.size' value format should be in bytes without using suffixes like 'M' for megabytes.", "The 'fs.s3a.select.input.csv.record.delimiter' property does not directly support escape sequences like '\\n'.", "The 'fs.azure.sas.expiry.period' property does not exist in Hadoop 3.3.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.s3a.multipart.size	fs.s3a.select.input.csv.record.delimiter	fs.azure.sas.expiry.period
+[Ciri] Reason for fs.ftp.transfer.mode: The 'fs.ftp.transfer.mode' property does not exist in Hadoop 3.3.0.
+[Ciri] Reason for fs.s3a.multipart.size: The 'fs.s3a.multipart.size' value format should be in bytes without using suffixes like 'M' for megabytes.
+[Ciri] Reason for fs.s3a.select.input.csv.record.delimiter: The 'fs.s3a.select.input.csv.record.delimiter' property does not directly support escape sequences like '\n'.
+[Ciri] Reason for fs.azure.sas.expiry.period: The 'fs.azure.sas.expiry.period' property does not exist in Hadoop 3.3.0.

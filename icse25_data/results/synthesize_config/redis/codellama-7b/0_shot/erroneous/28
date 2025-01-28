@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfsync', 'no-appendfsync-on-rewrite', 'tls-ca-cert-file', 'repl-backlog-size', 'set-proc-title', 'aof-timestamp-enabled', 'daemonize'], 'reason': ['appendfsync can only be set to no or always', 'no-appendfsync-on-rewrite can only be set to yes or no', 'tls-ca-cert-file can only be set to a valid file path', 'repl-backlog-size can only be set to a valid size', 'set-proc-title can only be set to yes or no', 'aof-timestamp-enabled can only be set to yes or no', 'daemonize can only be set to yes or no']}
+
+{'hasError': True, 'errParameter': ['enable-protected-configs'], 'reason': ['enable-protected-configs is not a valid configuration parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['protected-mode', 'appendfsync', 'no-appendfsync-on-rewrite', 'tls-ca-cert-file', 'repl-backlog-size', 'set-proc-title', 'aof-timestamp-enabled', 'daemonize'], 'reason': ['protected-mode must be either 0 or 1', 'appendfsync must be either everysec or no', 'no-appendfsync-on-rewrite must be either yes or no', 'tls-ca-cert-file must be a valid file path', 'repl-backlog-size must be a valid size', 'set-proc-title must be either yes or no', 'aof-timestamp-enabled must be either yes or no', 'daemonize must be either yes or no']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfsync', 'no-appendfsync-on-rewrite', 'tls-ca-cert-file', 'repl-backlog-size', 'set-proc-title', 'aof-timestamp-enabled', 'daemonize'], 'reason': ['appendfsync must be either everysec or always', 'no-appendfsync-on-rewrite must be either yes or no', 'tls-ca-cert-file must be a valid file path', 'repl-backlog-size must be a valid size', 'set-proc-title must be either yes or no', 'aof-timestamp-enabled must be either yes or no', 'daemonize must be either yes or no']}
+
+{'hasError': True, 'errParameter': ['appendfsync', 'no-appendfsync-on-rewrite', 'tls-ca-cert-file', 'repl-backlog-size', 'set-proc-title', 'aof-timestamp-enabled', 'daemonize'], 'reason': ['appendfsync must be either everysec or no', 'no-appendfsync-on-rewrite must be either yes or no', 'tls-ca-cert-file must be a valid file path', 'repl-backlog-size must be a valid size', 'set-proc-title must be either yes or no', 'aof-timestamp-enabled must be either yes or no', 'daemonize must be either yes or no']}
+
+{'hasError': True, 'errParameter': ['enable-protected-configs'], 'reason': ['The parameter enable-protected-configs is not a valid parameter for redis version 7.0.0.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: appendfsync	no-appendfsync-on-rewrite	tls-ca-cert-file	repl-backlog-size	set-proc-title	aof-timestamp-enabled	daemonize
+[Ciri] Reason for appendfsync: appendfsync must be either everysec or always
+[Ciri] Reason for no-appendfsync-on-rewrite: no-appendfsync-on-rewrite must be either yes or no
+[Ciri] Reason for tls-ca-cert-file: tls-ca-cert-file must be a valid file path
+[Ciri] Reason for repl-backlog-size: repl-backlog-size must be a valid size
+[Ciri] Reason for set-proc-title: set-proc-title must be either yes or no
+[Ciri] Reason for aof-timestamp-enabled: aof-timestamp-enabled must be either yes or no
+[Ciri] Reason for daemonize: daemonize must be either yes or no

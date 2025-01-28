@@ -1,0 +1,19 @@
+Wrong shot number:
+[12, 1, 3]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.handler.factor', 'hbase.client.scanner.caching'], 'reason': ["The property 'hbase.ipc.server.callqueue.handler.factor' has the value 'ciri/ciri' which is not of the correct type Integer.", "The property 'hbase.client.scanner.caching' has the value '1073741823' which is too large. It should be set to a reasonable integer value."]}
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.handler.factor', 'hbase.client.scanner.caching'], 'reason': ["The property 'hbase.ipc.server.callqueue.handler.factor' has the value 'ciri/ciri' which is not of the correct type Integer.", "The property 'hbase.client.scanner.caching' has the value '1073741823' which is too large and may lead to memory issues."]}
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.handler.factor', 'hbase.client.scanner.caching'], 'reason': ["The property 'hbase.ipc.server.callqueue.handler.factor' has the value 'ciri/ciri' which is not of the correct type Integer.", "The property 'hbase.client.scanner.caching' has the value '1073741823' which is too large and may lead to memory issues."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.ipc.server.callqueue.handler.factor	hbase.client.scanner.caching
+[Ciri] Reason for hbase.ipc.server.callqueue.handler.factor: The property 'hbase.ipc.server.callqueue.handler.factor' has the value 'ciri/ciri' which is not of the correct type Integer.
+[Ciri] Reason for hbase.client.scanner.caching: The property 'hbase.client.scanner.caching' has the value '1073741823' which is too large and may lead to memory issues.

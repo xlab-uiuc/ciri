@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.oss.connection.ttl', 'alluxio.network.host.resolution.timeout', 'alluxio.jvm.monitor.info.threshold', 'alluxio.user.block.master.client.pool.gc.threshold'], 'reason': ["The 'alluxio.job.worker.web.port' should not be set to a file scheme. It expects an integer value representing the port.", "The 'alluxio.underfs.oss.connection.ttl' value should be a positive integer or zero for infinite. Negative values are not valid.", "The 'alluxio.network.host.resolution.timeout' should be specified in milliseconds without the 'sec' suffix.", "The 'alluxio.jvm.monitor.info.threshold' should be specified in milliseconds without the 'sec' suffix.", "The 'alluxio.user.block.master.client.pool.gc.threshold' should be specified in milliseconds without the 'sec' suffix."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.job.worker.web.port	alluxio.underfs.oss.connection.ttl	alluxio.network.host.resolution.timeout	alluxio.jvm.monitor.info.threshold	alluxio.user.block.master.client.pool.gc.threshold
+[Ciri] Reason for alluxio.job.worker.web.port: The 'alluxio.job.worker.web.port' should not be set to a file scheme. It expects an integer value representing the port.
+[Ciri] Reason for alluxio.underfs.oss.connection.ttl: The 'alluxio.underfs.oss.connection.ttl' value should be a positive integer or zero for infinite. Negative values are not valid.
+[Ciri] Reason for alluxio.network.host.resolution.timeout: The 'alluxio.network.host.resolution.timeout' should be specified in milliseconds without the 'sec' suffix.
+[Ciri] Reason for alluxio.jvm.monitor.info.threshold: The 'alluxio.jvm.monitor.info.threshold' should be specified in milliseconds without the 'sec' suffix.
+[Ciri] Reason for alluxio.user.block.master.client.pool.gc.threshold: The 'alluxio.user.block.master.client.pool.gc.threshold' should be specified in milliseconds without the 'sec' suffix.

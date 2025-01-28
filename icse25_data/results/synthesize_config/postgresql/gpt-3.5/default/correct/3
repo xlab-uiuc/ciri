@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 6, 7]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['gss_accept_delegation'], 'reason': ["The property 'gss_accept_delegation' has the value 'off' which is not within the accepted value {on,yes,1,true}."]}
+
+{'hasError': True, 'errParameter': ['syslog_facility'], 'reason': ["The property 'syslog_facility' has the value 'LOCAL0' which is not within the accepted value {LOCAL0, LOCAL1, LOCAL2, LOCAL3, LOCAL4, LOCAL5, LOCAL6, LOCAL7, LOG_AUTH, LOG_AUTHPRIV, LOG_CRON, LOG_DAEMON, LOG_FTP, LOG_KERN, LOG_LPR, LOG_MAIL, LOG_NEWS, LOG_SYSLOG, LOG_USER, LOG_UUCP, DAEMON, AUTH, SYSLOG, LOCAL0, LOCAL1, LOCAL2, LOCAL3, LOCAL4, LOCAL5, LOCAL6, LOCAL7}."]}
+
+{'hasError': True, 'errParameter': ['syslog_facility'], 'reason': ["The property 'syslog_facility' has the value 'LOCAL0' which is not within the accepted value {LOCAL0, LOCAL1, LOCAL2, LOCAL3, LOCAL4, LOCAL5, LOCAL6, LOCAL7, LOG_AUTH, LOG_AUTHPRIV, LOG_CRON, LOG_DAEMON, LOG_FTP, LOG_KERN, LOG_LOCAL0, LOG_LOCAL1, LOG_LOCAL2, LOG_LOCAL3, LOG_LOCAL4, LOG_LOCAL5, LOG_LOCAL6, LOG_LOCAL7, LOG_LPR, LOG_MAIL, LOG_NEWS, LOG_SYSLOG, LOG_USER, LOG_UUCP, DAEMON, AUTH, AUTHPRIV, CRON, FTP, KERN, LPR, MAIL, NEWS, SYSLOG, USER, UUCP}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: syslog_facility
+[Ciri] Reason for syslog_facility: The property 'syslog_facility' has the value 'LOCAL0' which is not within the accepted value {LOCAL0, LOCAL1, LOCAL2, LOCAL3, LOCAL4, LOCAL5, LOCAL6, LOCAL7, LOG_AUTH, LOG_AUTHPRIV, LOG_CRON, LOG_DAEMON, LOG_FTP, LOG_KERN, LOG_LOCAL0, LOG_LOCAL1, LOG_LOCAL2, LOG_LOCAL3, LOG_LOCAL4, LOG_LOCAL5, LOG_LOCAL6, LOG_LOCAL7, LOG_LPR, LOG_MAIL, LOG_NEWS, LOG_SYSLOG, LOG_USER, LOG_UUCP, DAEMON, AUTH, AUTHPRIV, CRON, FTP, KERN, LPR, MAIL, NEWS, SYSLOG, USER, UUCP}.

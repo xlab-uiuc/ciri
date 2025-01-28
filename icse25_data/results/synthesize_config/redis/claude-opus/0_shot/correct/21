@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-entries', 'hll-sparse-max-bytes', 'replica-announce-port'], 'reason': ["In Redis 7.0, 'hash-max-listpack-entries' has been renamed to 'hash-max-listpack-size'.", "In Redis 7.0, 'hll-sparse-max-bytes' has been renamed to 'hll-sparse-max-size'.", "The 'replica-announce-port' directive is not a valid configuration parameter in Redis."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hash-max-listpack-entries	hll-sparse-max-bytes	replica-announce-port
+[Ciri] Reason for hash-max-listpack-entries: In Redis 7.0, 'hash-max-listpack-entries' has been renamed to 'hash-max-listpack-size'.
+[Ciri] Reason for hll-sparse-max-bytes: In Redis 7.0, 'hll-sparse-max-bytes' has been renamed to 'hll-sparse-max-size'.
+[Ciri] Reason for replica-announce-port: The 'replica-announce-port' directive is not a valid configuration parameter in Redis.

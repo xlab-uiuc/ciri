@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'localSessionsEnabled', 'reconfigEnabled', 'sslQuorumReloadCertFiles', 'syncEnabled', 'standaloneEnabled'], 'reason': ["The 'dataLogDir' path should use forward slashes ('/') for directories, even on Windows.", "The 'localSessionsEnabled' property is not a recognized configuration in ZooKeeper 3.7.0. It might be a custom or deprecated property.", "The 'reconfigEnabled' property is valid, but it should be set to 'true' to enable dynamic reconfiguration features.", "The 'sslQuorumReloadCertFiles' property is not recognized in the standard ZooKeeper 3.7.0 configuration. It might be a custom or deprecated property.", "The 'syncEnabled' property is not a recognized configuration in ZooKeeper 3.7.0. It might be a custom or deprecated property.", "The 'standaloneEnabled' property is valid, but if you are running a single ZooKeeper server for testing, you might want to set it to 'true'. Otherwise, if it's part of a quorum, this setting is not needed."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: dataLogDir	localSessionsEnabled	reconfigEnabled	sslQuorumReloadCertFiles	syncEnabled	standaloneEnabled
+[Ciri] Reason for dataLogDir: The 'dataLogDir' path should use forward slashes ('/') for directories, even on Windows.
+[Ciri] Reason for localSessionsEnabled: The 'localSessionsEnabled' property is not a recognized configuration in ZooKeeper 3.7.0. It might be a custom or deprecated property.
+[Ciri] Reason for reconfigEnabled: The 'reconfigEnabled' property is valid, but it should be set to 'true' to enable dynamic reconfiguration features.
+[Ciri] Reason for sslQuorumReloadCertFiles: The 'sslQuorumReloadCertFiles' property is not recognized in the standard ZooKeeper 3.7.0 configuration. It might be a custom or deprecated property.
+[Ciri] Reason for syncEnabled: The 'syncEnabled' property is not a recognized configuration in ZooKeeper 3.7.0. It might be a custom or deprecated property.
+[Ciri] Reason for standaloneEnabled: The 'standaloneEnabled' property is valid, but if you are running a single ZooKeeper server for testing, you might want to set it to 'true'. Otherwise, if it's part of a quorum, this setting is not needed.

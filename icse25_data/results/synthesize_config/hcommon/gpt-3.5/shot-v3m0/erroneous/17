@@ -1,0 +1,14 @@
+Correct shot number:
+[8, 15, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.s3guard.ddb.background.sleep', 'ipc.client.connection.maxidletime'], 'reason': ['Invalid value for hadoop.security.dns.nameserver. The value should be a valid IP address or hostname.', 'Invalid value for fs.defaultFS. It should be a valid file system URI.', 'Invalid value for fs.s3a.s3guard.ddb.background.sleep. The value should be in milliseconds format.', 'Invalid value for ipc.client.connection.maxidletime. The value should be in milliseconds.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.defaultFS	fs.s3a.s3guard.ddb.background.sleep	ipc.client.connection.maxidletime
+[Ciri] Reason for hadoop.security.dns.nameserver: Invalid value for hadoop.security.dns.nameserver. The value should be a valid IP address or hostname.
+[Ciri] Reason for fs.defaultFS: Invalid value for fs.defaultFS. It should be a valid file system URI.
+[Ciri] Reason for fs.s3a.s3guard.ddb.background.sleep: Invalid value for fs.s3a.s3guard.ddb.background.sleep. The value should be in milliseconds format.
+[Ciri] Reason for ipc.client.connection.maxidletime: Invalid value for ipc.client.connection.maxidletime. The value should be in milliseconds.

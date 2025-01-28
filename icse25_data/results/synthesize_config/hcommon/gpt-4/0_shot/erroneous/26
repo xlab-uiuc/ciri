@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'fs.permissions.umask-mode'], 'reason': ["The 'fs.default.name' property is deprecated and should be replaced with 'fs.defaultFS'.", "The value for 'fs.permissions.umask-mode' is set to 'hbase', which is not a valid umask value. It should be in octal or symbolic format, such as '022' or 'u=rwx,g=,o='."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	fs.permissions.umask-mode
+[Ciri] Reason for fs.default.name: The 'fs.default.name' property is deprecated and should be replaced with 'fs.defaultFS'.
+[Ciri] Reason for fs.permissions.umask-mode: The value for 'fs.permissions.umask-mode' is set to 'hbase', which is not a valid umask value. It should be in octal or symbolic format, such as '022' or 'u=rwx,g=,o='.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.master.daily.backup.state.lock.grace.mode'], 'reason': ['alluxio.job.master.client.threads should be an integer but is specified as 9.9', 'alluxio.master.daily.backup.state.lock.grace.mode has invalid value TIMEOUT. Valid values are BEST_EFFORT or SAFE_MODE for Alluxio 2.5.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.client.threads	alluxio.master.daily.backup.state.lock.grace.mode
+[Ciri] Reason for alluxio.job.master.client.threads: alluxio.job.master.client.threads should be an integer but is specified as 9.9
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.grace.mode: alluxio.master.daily.backup.state.lock.grace.mode has invalid value TIMEOUT. Valid values are BEST_EFFORT or SAFE_MODE for Alluxio 2.5.0

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash_mem_multiplier', 'autovacuum_work_mem', 'log_autovacuum_min_duration', 'vacuum_failsafe_age'], 'reason': ['hash_mem_multiplier must be greater than or equal to 0', 'autovacuum_work_mem must be greater than or equal to 1MB', 'log_autovacuum_min_duration must be between 0 and 2147483647ms', 'vacuum_failsafe_age must be between 0 and 2147483647']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hash_mem_multiplier	autovacuum_work_mem	log_autovacuum_min_duration	vacuum_failsafe_age
+[Ciri] Reason for hash_mem_multiplier: hash_mem_multiplier must be greater than or equal to 0
+[Ciri] Reason for autovacuum_work_mem: autovacuum_work_mem must be greater than or equal to 1MB
+[Ciri] Reason for log_autovacuum_min_duration: log_autovacuum_min_duration must be between 0 and 2147483647ms
+[Ciri] Reason for vacuum_failsafe_age: vacuum_failsafe_age must be between 0 and 2147483647

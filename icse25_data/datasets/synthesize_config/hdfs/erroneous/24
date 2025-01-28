@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.secondary.http-address</name>
+  <value>0.0.0.0:9868</value>
+  <description>
+    The secondary namenode http server address and port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.secondary.https-address</name>
+  <value>0.0.0.0:3001</value>
+  <description>
+    The secondary namenode HTTPS server address and port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.http.internal-proxy.port</name>
+  <value>file://</value>
+  <description>
+    The datanode's internal web proxy port.
+    By default it selects a random port available in runtime.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.fs-limits.min-block-size</name>
+  <value>1048576</value>
+  <description>Minimum block size in bytes, enforced by the Namenode at create
+      time. This prevents the accidental creation of files with tiny block
+      sizes (and thus many blocks), which can degrade performance. Support multiple
+      size unit suffix(case insensitive), as described in dfs.blocksize.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.block.write.replace-datanode-on-failure.best-effort</name>
+  <value>true</value>
+  <description>
+    This property is used only if the value of
+    dfs.client.block.write.replace-datanode-on-failure.enable is true.
+
+    Best effort means that the client will try to replace a failed datanode
+    in write pipeline (provided that the policy is satisfied), however, it 
+    continues the write operation in case that the datanode replacement also
+    fails.
+
+    Suppose the datanode replacement fails.
+    false: An exception should be thrown so that the write will fail.
+    true : The write should be resumed with the remaining datandoes.
+  
+    Note that setting this property to true allows writing to a pipeline
+    with a smaller number of datanodes.  As a result, it increases the
+    probability of data loss.
+  </description>
+</property>
+
+<property>
+  <name>dfs.journalnode.rpc-address</name>
+  <value>0.0.0.0:3000</value>
+  <description>
+    The JournalNode RPC server address and port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edits.noeditlogchannelflush</name>
+  <value>false</value>
+  <description>
+    Specifies whether to flush edit log file channel. When set, expensive
+    FileChannel#force calls are skipped and synchronous disk writes are
+    enabled instead by opening the edit log file with RandomAccessFile("rws")
+    flags. This can significantly improve the performance of edit log writes
+    on the Windows platform.
+    Note that the behavior of the "rws" flags is platform and hardware specific
+    and might not provide the same level of guarantees as FileChannel#force.
+    For example, the write will skip the disk-cache on SAS and SCSI devices
+    while it might not on SATA devices. This is an expert level setting,
+    change with caution.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.storageinfo.defragment.ratio</name>
+  <value>0.75</value>
+  <description>
+    The defragmentation threshold for the StorageInfo.
+  </description>
+</property>
+
+</configuration>

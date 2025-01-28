@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initLimit', 'maxSessionTimeout', 'reconfigEnabled', 'autopurge.purgeInterval', 'standaloneEnabled', 'syncLimit', 'quorum.auth.learner.saslLoginContext'], 'reason': ['initLimit must be greater than 0', 'maxSessionTimeout must be greater than 0', 'reconfigEnabled must be true or false', 'autopurge.purgeInterval must be greater than 0', 'standaloneEnabled must be true or false', 'syncLimit must be greater than 0', 'quorum.auth.learner.saslLoginContext must be a valid saslLoginContext']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'syncLimit', 'quorum.auth.learner.saslLoginContext'], 'reason': ['autopurge.purgeInterval must be a positive integer', 'syncLimit must be a positive integer', 'quorum.auth.learner.saslLoginContext is not a valid property']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'syncLimit'], 'reason': ['autopurge.purgeInterval should be an integer between 1 and 3600', 'syncLimit should be an integer between 2 and 7']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initLimit', 'maxSessionTimeout', 'reconfigEnabled', 'autopurge.purgeInterval', 'standaloneEnabled', 'syncLimit', 'quorum.auth.learner.saslLoginContext'], 'reason': ['initLimit should be a positive integer', 'maxSessionTimeout should be a positive integer', 'reconfigEnabled should be a boolean', 'autopurge.purgeInterval should be a positive integer', 'standaloneEnabled should be a boolean', 'syncLimit should be a positive integer', 'quorum.auth.learner.saslLoginContext should be a string']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'maxSessionTimeout', 'reconfigEnabled', 'autopurge.purgeInterval', 'standaloneEnabled', 'syncLimit', 'quorum.auth.learner.saslLoginContext'], 'reason': ['initLimit should be a positive integer. The value is 10.', 'maxSessionTimeout should be a positive integer. The value is 0.', 'reconfigEnabled should be a boolean. The value is false.', 'autopurge.purgeInterval should be a positive integer. The value is 1.', 'standaloneEnabled should be a boolean. The value is false.', 'syncLimit should be a positive integer. The value is 1.', 'quorum.auth.learner.saslLoginContext should be a string. The value is QuorumLearner']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'syncLimit'], 'reason': ['autopurge.purgeInterval should be set to 0 for ZooKeeper version 3.7.0', 'syncLimit should be set to 2 for ZooKeeper version 3.7.0']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: initLimit	maxSessionTimeout	reconfigEnabled	autopurge.purgeInterval	standaloneEnabled	syncLimit	quorum.auth.learner.saslLoginContext
+[Ciri] Reason for initLimit: initLimit should be a positive integer. The value is 10.
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout should be a positive integer. The value is 0.
+[Ciri] Reason for reconfigEnabled: reconfigEnabled should be a boolean
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval should be a positive integer. The value is 1.
+[Ciri] Reason for standaloneEnabled: standaloneEnabled should be a boolean
+[Ciri] Reason for syncLimit: syncLimit should be a positive integer. The value is 1.
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext should be a string

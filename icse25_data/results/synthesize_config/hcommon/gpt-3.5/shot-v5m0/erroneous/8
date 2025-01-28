@@ -1,0 +1,12 @@
+Correct shot number:
+[10, 5, 15, 12, 14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.size', 'ipc.[port_number].backoff.enable'], 'reason': ["Invalid value format. The value for 'fs.s3a.multipart.size' should be a numeric value with an optional suffix from the set {K,M,G,T,P}.", 'Invalid property name format. Property names should not contain square brackets.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.multipart.size	ipc.[port_number].backoff.enable
+[Ciri] Reason for fs.s3a.multipart.size: Invalid value format. The value for 'fs.s3a.multipart.size' should be a numeric value with an optional suffix from the set {K,M,G,T,P}.
+[Ciri] Reason for ipc.[port_number].backoff.enable: Invalid property name format. Property names should not contain square brackets.

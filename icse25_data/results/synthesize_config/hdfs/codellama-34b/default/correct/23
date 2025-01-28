@@ -1,0 +1,27 @@
+Wrong shot number:
+[13, 12, 6]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.metrics.logger.period.seconds', 'dfs.client.read.striped.threadpool.size', 'dfs.datanode.replica.cache.expiry.time', 'dfs.storage.policy.satisfier.recheck.timeout.millis'], 'reason': ["The property 'dfs.namenode.metrics.logger.period.seconds' has the value '300' which is out of the valid range of a period of time.", "The property 'dfs.client.read.striped.threadpool.size' has the value '9' which is out of the valid range of a thread pool size.", "The property 'dfs.datanode.replica.cache.expiry.time' has the value '1m' which is out of the valid range of a time.", "The property 'dfs.storage.policy.satisfier.recheck.timeout.millis' has the value '60000' which is out of the valid range of a time."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.metrics.logger.period.seconds', 'dfs.balancer.keytab.file', 'dfs.mover.keytab.file'], 'reason': ["The property 'dfs.namenode.metrics.logger.period.seconds' has the value '300' which is out of the valid range of a period.", "The property 'dfs.balancer.keytab.file' has the value '/valid/file2' which does not follow the correct file format.", "The property 'dfs.mover.keytab.file' has the value '/valid/file2' which does not follow the correct file format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.metrics.logger.period.seconds', 'dfs.client.read.striped.threadpool.size', 'dfs.storage.policy.satisfier.recheck.timeout.millis'], 'reason': ["The property 'dfs.namenode.metrics.logger.period.seconds' has the value '300' which is out of the valid range of a time period.", "The property 'dfs.client.read.striped.threadpool.size' has the value '9' which is out of the valid range of a thread pool size.", "The property 'dfs.storage.policy.satisfier.recheck.timeout.millis' has the value '60000' which is out of the valid range of a time period."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.metrics.logger.period.seconds', 'dfs.client.read.striped.threadpool.size'], 'reason': ["The property 'dfs.namenode.metrics.logger.period.seconds' has the value '300' which is out of the valid range of a time period.", "The property 'dfs.client.read.striped.threadpool.size' has the value '9' which is out of the valid range of a thread pool size."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.metrics.logger.period.seconds', 'dfs.client.read.striped.threadpool.size'], 'reason': ["The property 'dfs.namenode.metrics.logger.period.seconds' has the value '300' which is out of the valid range of a time period.", "The property 'dfs.client.read.striped.threadpool.size' has the value '9' which is out of the valid range of a thread pool size."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.metrics.logger.period.seconds', 'dfs.client.read.striped.threadpool.size'], 'reason': ["The property 'dfs.namenode.metrics.logger.period.seconds' has the value '300' which is out of the valid range of a positive integer.", "The property 'dfs.client.read.striped.threadpool.size' has the value '9' which is out of the valid range of a positive integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.metrics.logger.period.seconds	dfs.client.read.striped.threadpool.size
+[Ciri] Reason for dfs.namenode.metrics.logger.period.seconds: The property 'dfs.namenode.metrics.logger.period.seconds' has the value '300' which is out of the valid range of a time period.
+[Ciri] Reason for dfs.client.read.striped.threadpool.size: The property 'dfs.client.read.striped.threadpool.size' has the value '9' which is out of the valid range of a positive integer.

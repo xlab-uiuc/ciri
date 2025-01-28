@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.bind.host', 'alluxio.master.backup.state.lock.interrupt.cycle.enabled', 'alluxio.user.conf.cluster.default.enabled', 'alluxio.underfs.hdfs.remote', 'alluxio.user.network.rpc.keepalive.timeout', 'alluxio.user.file.create.ttl', 'alluxio.user.file.master.client.pool.gc.threshold', 'alluxio.master.worker.connect.wait.time'], 'reason': ['alluxio.job.worker.web.bind.host: The specified hostname cannot be resolved: 1.1.1.1.1.1', 'alluxio.master.backup.state.lock.interrupt.cycle.enabled: The specified value is not a valid boolean: true', 'alluxio.user.conf.cluster.default.enabled: The specified value is not a valid boolean: false', 'alluxio.underfs.hdfs.remote: The specified value is not a valid boolean: false', 'alluxio.user.network.rpc.keepalive.timeout: The specified value is not a valid duration: 1sec', 'alluxio.user.file.create.ttl: The specified value is not a valid duration: -2', 'alluxio.user.file.master.client.pool.gc.threshold: The specified value is not a valid duration: 240sec', 'alluxio.master.worker.connect.wait.time: The specified value is not a valid duration: 1sec']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.job.worker.web.bind.host	alluxio.master.backup.state.lock.interrupt.cycle.enabled	alluxio.user.conf.cluster.default.enabled	alluxio.underfs.hdfs.remote	alluxio.user.network.rpc.keepalive.timeout	alluxio.user.file.create.ttl	alluxio.user.file.master.client.pool.gc.threshold	alluxio.master.worker.connect.wait.time
+[Ciri] Reason for alluxio.job.worker.web.bind.host: alluxio.job.worker.web.bind.host: The specified hostname cannot be resolved: 1.1.1.1.1.1
+[Ciri] Reason for alluxio.master.backup.state.lock.interrupt.cycle.enabled: alluxio.master.backup.state.lock.interrupt.cycle.enabled: The specified value is not a valid boolean: true
+[Ciri] Reason for alluxio.user.conf.cluster.default.enabled: alluxio.user.conf.cluster.default.enabled: The specified value is not a valid boolean: false
+[Ciri] Reason for alluxio.underfs.hdfs.remote: alluxio.underfs.hdfs.remote: The specified value is not a valid boolean: false
+[Ciri] Reason for alluxio.user.network.rpc.keepalive.timeout: alluxio.user.network.rpc.keepalive.timeout: The specified value is not a valid duration: 1sec
+[Ciri] Reason for alluxio.user.file.create.ttl: alluxio.user.file.create.ttl: The specified value is not a valid duration: -2
+[Ciri] Reason for alluxio.user.file.master.client.pool.gc.threshold: alluxio.user.file.master.client.pool.gc.threshold: The specified value is not a valid duration: 240sec
+[Ciri] Reason for alluxio.master.worker.connect.wait.time: alluxio.master.worker.connect.wait.time: The specified value is not a valid duration: 1sec

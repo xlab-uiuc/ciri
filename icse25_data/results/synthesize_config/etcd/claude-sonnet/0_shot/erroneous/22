@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['discovery-fallback', 'auto-compaction-mode', 'auto-compaction-retention', 'initial-cluster-token', 'proxy-dial-timeout', 'logger'], 'reason': ["The 'discovery-fallback' parameter is not a valid configuration option in etcd 3.5.0.", "The 'auto-compaction-mode' parameter should be 'periodic' or 'revision' in etcd 3.5.0.", "The 'auto-compaction-retention' parameter is not a valid configuration option in etcd 3.5.0. It should be 'auto-compaction-retention-duration' instead.", "The 'initial-cluster-token' parameter is not a valid configuration option in etcd 3.5.0.", "The 'proxy-dial-timeout' parameter is not a valid configuration option in etcd 3.5.0.", "The 'logger' parameter is not a valid configuration option in etcd 3.5.0. It should be 'log-level' instead."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: discovery-fallback	auto-compaction-mode	auto-compaction-retention	initial-cluster-token	proxy-dial-timeout	logger
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' parameter is not a valid configuration option in etcd 3.5.0.
+[Ciri] Reason for auto-compaction-mode: The 'auto-compaction-mode' parameter should be 'periodic' or 'revision' in etcd 3.5.0.
+[Ciri] Reason for auto-compaction-retention: The 'auto-compaction-retention' parameter is not a valid configuration option in etcd 3.5.0. It should be 'auto-compaction-retention-duration' instead.
+[Ciri] Reason for initial-cluster-token: The 'initial-cluster-token' parameter is not a valid configuration option in etcd 3.5.0.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' parameter is not a valid configuration option in etcd 3.5.0.
+[Ciri] Reason for logger: The 'logger' parameter is not a valid configuration option in etcd 3.5.0. It should be 'log-level' instead.

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'maxSessionTimeout', 'minSessionTimeout'], 'reason': ['Invalid IP address format for clientPortAddress.', 'maxSessionTimeout should be greater than 0.', 'minSessionTimeout should be greater than 0.']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'maxSessionTimeout', 'minSessionTimeout'], 'reason': ['Invalid IP address format for clientPortAddress', 'maxSessionTimeout must be greater than 0', 'minSessionTimeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'maxSessionTimeout', 'minSessionTimeout'], 'reason': ['Invalid IP address format for clientPortAddress.', 'maxSessionTimeout must be greater than 0.', 'minSessionTimeout must be greater than or equal to 0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: clientPortAddress	maxSessionTimeout	minSessionTimeout
+[Ciri] Reason for clientPortAddress: Invalid IP address format for clientPortAddress
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout must be greater than 0.
+[Ciri] Reason for minSessionTimeout: minSessionTimeout must be greater than 0

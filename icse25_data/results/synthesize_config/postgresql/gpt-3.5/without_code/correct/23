@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 3, 1]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_cert_file'], 'reason': ["The property 'ssl_cert_file' should specify the full path to the server certificate file."]}
+
+{'hasError': True, 'errParameter': ['ssl_ciphers'], 'reason': ["The property 'ssl_ciphers' has the value 'HIGH:MEDIUM:+3DES:!aNULL' which includes weak ciphers like 3DES."]}
+
+{'hasError': True, 'errParameter': ['ssl_ciphers'], 'reason': ["The property 'ssl_ciphers' contains cipher suites that are considered weak or insecure."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: ssl_ciphers
+[Ciri] Reason for ssl_ciphers: The property 'ssl_ciphers' contains cipher suites that are considered weak or insecure.

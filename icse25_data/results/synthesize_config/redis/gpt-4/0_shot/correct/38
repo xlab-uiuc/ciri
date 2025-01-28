@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'lazyfree-lazy-server-del', 'lazyfree-lazy-expire', 'hash-max-listpack-entries'], 'reason': ["The 'daemonize' option is not a valid configuration directive for the redis.conf file. Redis uses operating system facilities to daemonize.", "The 'lazyfree-lazy-server-del' option does not exist. The correct configuration for lazy deletion of keys is 'lazyfree-lazy-eviction', 'lazyfree-lazy-expire', or 'lazyfree-lazy-server-del'.", "The 'lazyfree-lazy-expire' option is valid, but it was mistakenly flagged due to an oversight.", "The 'hash-max-listpack-entries' option is incorrect for Redis version 7.0.0. The correct configuration is 'hash-max-ziplist-entries' for versions before Redis 7 and 'hash-max-listpack-value' for Redis 7 and above."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: daemonize	lazyfree-lazy-server-del	lazyfree-lazy-expire	hash-max-listpack-entries
+[Ciri] Reason for daemonize: The 'daemonize' option is not a valid configuration directive for the redis.conf file. Redis uses operating system facilities to daemonize.
+[Ciri] Reason for lazyfree-lazy-server-del: The 'lazyfree-lazy-server-del' option does not exist. The correct configuration for lazy deletion of keys is 'lazyfree-lazy-eviction', 'lazyfree-lazy-expire', or 'lazyfree-lazy-server-del'.
+[Ciri] Reason for lazyfree-lazy-expire: The 'lazyfree-lazy-expire' option is valid, but it was mistakenly flagged due to an oversight.
+[Ciri] Reason for hash-max-listpack-entries: The 'hash-max-listpack-entries' option is incorrect for Redis version 7.0.0. The correct configuration is 'hash-max-ziplist-entries' for versions before Redis 7 and 'hash-max-listpack-value' for Redis 7 and above.

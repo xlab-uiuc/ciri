@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.replication.max</name>
+  <value>1024</value>
+  <description>Maximal block replication. 
+  </description>
+</property>
+
+<property>
+  <name>dfs.webhdfs.acl.provider.permission.pattern</name>
+  <value>^(default:)?(user|group|mask|other):[[A-Za-z_][A-Za-z0-9._-]]*:([rwx-]{3})?(,(default:)?(user|group|mask|other):[[A-Za-z_][A-Za-z0-9._-]]*:([rwx-]{3})?)*$</value>
+  <description>
+    Valid pattern for user and group names in webhdfs acl operations, it must be a valid java regex.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.top.window.num.buckets</name>
+  <value>20</value>
+  <description>Number of buckets in the rolling window implementation of nntop
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.hosts.provider.classname</name>
+  <value>org.apache.hadoop.hdfs.server.blockmanagement.HostFileManager</value>
+  <description>
+    The class that provides access for host files.
+    org.apache.hadoop.hdfs.server.blockmanagement.HostFileManager is used
+    by default which loads files specified by dfs.hosts and dfs.hosts.exclude.
+    If org.apache.hadoop.hdfs.server.blockmanagement.CombinedHostFileManager is
+    used, it will load the JSON file defined in dfs.hosts.
+    To change class name, nn restart is required. "dfsadmin -refreshNodes" only
+    refreshes the configuration files used by the class.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.max.block.acquire.failures</name>
+  <value>6</value>
+  <description>
+    Maximum failures allowed when trying to get block information from a specific datanode.
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.satisfier.queue.limit</name>
+  <value>2000</value>
+  <description>
+    Storage policy satisfier queue size. This queue contains the currently
+    scheduled file's inode ID for statisfy the policy.
+    Default value is 1000.
+  </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.leveldb.path</name>
+  <value>/valid/file2</value>
+    <description>
+      The read/write path for the leveldb-based alias map
+      (org.apache.hadoop.hdfs.server.common.blockaliasmap.impl.LevelDBFileRegionAliasMap).
+      The path has to be explicitly configured when this alias map is used.
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.gc.time.monitor.sleep.interval.ms</name>
+  <value>10s</value>
+    <description>
+      Determines the sleep interval in the window. The GcTimeMonitor wakes up in
+      the sleep interval periodically to compute the gc time proportion. The
+      shorter the interval the preciser the GcTimePercentage. The sleep interval
+      must be shorter than the window size.
+    </description>
+</property>
+
+</configuration>

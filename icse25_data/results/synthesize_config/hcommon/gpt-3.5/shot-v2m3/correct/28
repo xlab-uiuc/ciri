@@ -1,0 +1,15 @@
+Wrong shot number:
+[1, 6, 2]
+
+Correct shot number:
+[3, 9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.swift.impl', 'hadoop.ssl.enabled'], 'reason': ["The property 'fs.swift.impl' is missing the 'fs.' prefix in the name.", "The property 'hadoop.ssl.enabled' is deprecated. Use 'dfs.http.policy' and 'yarn.http.policy' instead."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.swift.impl	hadoop.ssl.enabled
+[Ciri] Reason for fs.swift.impl: The property 'fs.swift.impl' is missing the 'fs.' prefix in the name.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' is deprecated. Use 'dfs.http.policy' and 'yarn.http.policy' instead.

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.reader.impl', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.hregion.preclose.flush.size', 'hbase.auth.key.update.interval'], 'reason': ["The property 'hbase.regionserver.hlog.reader.impl' is deprecated since HBase 2.0.0. Use 'hbase.regionserver.wal.reader.impl' instead.", "The property 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min' is not a valid configuration for HBase 2.2.7. It was removed in HBase 2.0.0.", "The property 'hbase.hregion.preclose.flush.size' is deprecated since HBase 2.0.0. Use 'hbase.hregion.preclose.flush.size.bytes' instead.", "The property 'hbase.auth.key.update.interval' is deprecated since HBase 2.0.0. Use 'hbase.auth.token.max.lifetime' instead."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hbase.regionserver.hlog.reader.impl	hbase.hregion.percolumnfamilyflush.size.lower.bound.min	hbase.hregion.preclose.flush.size	hbase.auth.key.update.interval
+[Ciri] Reason for hbase.regionserver.hlog.reader.impl: The property 'hbase.regionserver.hlog.reader.impl' is deprecated since HBase 2.0.0. Use 'hbase.regionserver.wal.reader.impl' instead.
+[Ciri] Reason for hbase.hregion.percolumnfamilyflush.size.lower.bound.min: The property 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min' is not a valid configuration for HBase 2.2.7. It was removed in HBase 2.0.0.
+[Ciri] Reason for hbase.hregion.preclose.flush.size: The property 'hbase.hregion.preclose.flush.size' is deprecated since HBase 2.0.0. Use 'hbase.hregion.preclose.flush.size.bytes' instead.
+[Ciri] Reason for hbase.auth.key.update.interval: The property 'hbase.auth.key.update.interval' is deprecated since HBase 2.0.0. Use 'hbase.auth.token.max.lifetime' instead.

@@ -1,0 +1,16 @@
+Wrong shot number:
+[4]
+
+Correct shot number:
+[4, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'fs.permissions.umask-mode', 'hadoop.registry.zk.retry.interval.ms'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an additional 'usage' tag that is not part of the standard configuration format.", "The property 'fs.permissions.umask-mode' has an additional 'usage' tag that is not part of the standard configuration format.", "The property 'hadoop.registry.zk.retry.interval.ms' has an empty description which is not recommended."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.data.connection.mode	fs.permissions.umask-mode	hadoop.registry.zk.retry.interval.ms
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an additional 'usage' tag that is not part of the standard configuration format.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has an additional 'usage' tag that is not part of the standard configuration format.
+[Ciri] Reason for hadoop.registry.zk.retry.interval.ms: The property 'hadoop.registry.zk.retry.interval.ms' has an empty description which is not recommended.

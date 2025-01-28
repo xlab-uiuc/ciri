@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 10, 6]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.configuration.store.class'], 'reason': ["The value of the property 'yarn.scheduler.configuration.store.class' should be 'org.apache.hadoop.yarn.server.resourcemanager.scheduler.configuration.MutableConfigurationProvider' to enable the property 'yarn.scheduler.configuration.store.class'."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.configuration.store.class'], 'reason': ["The property 'yarn.scheduler.configuration.store.class' has the value 'file' which is not within the accepted value {memory,leveldb,zk}."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.configuration.store.class'], 'reason': ["The property 'yarn.scheduler.configuration.store.class' has the value 'file' which is not within the accepted value {memory,leveldb,zk}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.scheduler.configuration.store.class
+[Ciri] Reason for yarn.scheduler.configuration.store.class: The property 'yarn.scheduler.configuration.store.class' has the value 'file' which is not within the accepted value {memory,leveldb,zk}.

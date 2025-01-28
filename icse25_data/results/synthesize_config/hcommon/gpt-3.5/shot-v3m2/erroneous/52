@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 2]
+
+Correct shot number:
+[9, 4, 10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.http.filter.initializers', 'fs.permissions.umask-mode'], 'reason': ["The property 'hadoop.http.filter.initializers' has an additional 'usage' element which is not a standard configuration property.", "The property 'fs.permissions.umask-mode' has the value '008' which is not a valid umask format. Umask should be in octal or symbolic format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.http.filter.initializers	fs.permissions.umask-mode
+[Ciri] Reason for hadoop.http.filter.initializers: The property 'hadoop.http.filter.initializers' has an additional 'usage' element which is not a standard configuration property.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has the value '008' which is not a valid umask format. Umask should be in octal or symbolic format.

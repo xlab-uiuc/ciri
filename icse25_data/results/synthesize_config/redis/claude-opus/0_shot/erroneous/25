@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['always-show-logo', 'hash-max-listpack-value', 'client-output-buffer-limit', 'oom-score-adj-values'], 'reason': ["The 'always-show-logo' parameter does not accept a value. It should be specified as 'always-show-logo yes' to enable or removed to keep the default behavior.", "The 'hash-max-listpack-value' parameter in Redis 7.0 should have a value between 0 and 9223372036854775807. The specified value '128' is not a valid integer.", "The 'client-output-buffer-limit' parameter expects 4 values for the 'normal' class in the format 'hard_limit soft_limit soft_seconds'. Only 3 values are provided.", "The 'oom-score-adj-values' parameter is not a valid configuration directive in Redis 7.0.0. It seems to be a parameter used in older Redis versions."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: always-show-logo	hash-max-listpack-value	client-output-buffer-limit	oom-score-adj-values
+[Ciri] Reason for always-show-logo: The 'always-show-logo' parameter does not accept a value. It should be specified as 'always-show-logo yes' to enable or removed to keep the default behavior.
+[Ciri] Reason for hash-max-listpack-value: The 'hash-max-listpack-value' parameter in Redis 7.0 should have a value between 0 and 9223372036854775807. The specified value '128' is not a valid integer.
+[Ciri] Reason for client-output-buffer-limit: The 'client-output-buffer-limit' parameter expects 4 values for the 'normal' class in the format 'hard_limit soft_limit soft_seconds'. Only 3 values are provided.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter is not a valid configuration directive in Redis 7.0.0. It seems to be a parameter used in older Redis versions.

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['archive_mode', 'checkpoint_timeout', 'log_recovery_conflict_waits', 'from_collapse_limit'], 'reason': ["The 'archive_mode' parameter should be set to either 'on', 'off', or 'always', but it is correctly set to 'off'. There is no mistake with this parameter.", "The 'checkpoint_timeout' parameter is specified in minutes, but it should be in seconds or in a format including min (e.g., '5min' should be '300s' or simply '5min' is acceptable as well).", "The 'log_recovery_conflict_waits' parameter does not exist. The correct parameter for logging recovery conflicts is 'log_lock_waits'.", "The 'from_collapse_limit' parameter is incorrectly named. The correct parameter name is 'geqo_threshold'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: archive_mode	checkpoint_timeout	log_recovery_conflict_waits	from_collapse_limit
+[Ciri] Reason for archive_mode: The 'archive_mode' parameter should be set to either 'on', 'off', or 'always', but it is correctly set to 'off'. There is no mistake with this parameter.
+[Ciri] Reason for checkpoint_timeout: The 'checkpoint_timeout' parameter is specified in minutes, but it should be in seconds or in a format including min (e.g., '5min' should be '300s' or simply '5min' is acceptable as well).
+[Ciri] Reason for log_recovery_conflict_waits: The 'log_recovery_conflict_waits' parameter does not exist. The correct parameter for logging recovery conflicts is 'log_lock_waits'.
+[Ciri] Reason for from_collapse_limit: The 'from_collapse_limit' parameter is incorrectly named. The correct parameter name is 'geqo_threshold'.

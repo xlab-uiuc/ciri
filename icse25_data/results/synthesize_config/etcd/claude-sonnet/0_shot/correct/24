@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'enable-v2'], 'reason': ["The 'listen-peer-urls' parameter should use the URL scheme 'https://' for etcd 3.5.0 when auto-tls is enabled.", "The 'enable-v2' parameter is deprecated in etcd 3.5.0 and should be removed from the configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: listen-peer-urls	enable-v2
+[Ciri] Reason for listen-peer-urls: The 'listen-peer-urls' parameter should use the URL scheme 'https://' for etcd 3.5.0 when auto-tls is enabled.
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is deprecated in etcd 3.5.0 and should be removed from the configuration.

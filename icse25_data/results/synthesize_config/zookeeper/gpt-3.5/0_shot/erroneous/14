@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.learnerRequireSasl'], 'reason': ['secureClientPort cannot be negative.', 'quorum.auth.learnerRequireSasl should be a boolean value.']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.learnerRequireSasl', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['secureClientPort should be a positive integer value.', 'quorum.auth.learnerRequireSasl should be a boolean value (true/false).', "quorum.auth.kerberos.servicePrincipal should be in the format 'primary/instance@REALM'."]}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.learnerRequireSasl', 'quorum.auth.kerberos.servicePrincipal', 'syncEnabled', 'localSessionsUpgradingEnabled'], 'reason': ['secureClientPort value should be a positive integer.', 'quorum.auth.learnerRequireSasl should be a boolean value (true/false).', "quorum.auth.kerberos.servicePrincipal should be in the format 'primary/instance@REALM'.", 'syncEnabled should be a boolean value (true/false).', 'localSessionsUpgradingEnabled should be a boolean value (true/false).']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.learnerRequireSasl', 'quorum.auth.kerberos.servicePrincipal', 'syncEnabled', 'sslQuorum', 'localSessionsUpgradingEnabled'], 'reason': ['secureClientPort value should be a positive integer.', 'quorum.auth.learnerRequireSasl should be a boolean value (true/false).', 'quorum.auth.kerberos.servicePrincipal value should be in the correct format.', 'syncEnabled should be a boolean value (true/false).', 'sslQuorum should be a boolean value (true/false).', 'localSessionsUpgradingEnabled should be a boolean value (true/false).']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.learnerRequireSasl', 'syncEnabled', 'sslQuorum', 'localSessionsUpgradingEnabled'], 'reason': ['secureClientPort should be a positive integer value.', 'quorum.auth.learnerRequireSasl should be a boolean value (true/false).', 'syncEnabled should be a boolean value (true/false).', 'sslQuorum should be a boolean value (true/false).', 'localSessionsUpgradingEnabled should be a boolean value (true/false).']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.learnerRequireSasl'], 'reason': ['secureClientPort should be a positive integer value.', "quorum.auth.learnerRequireSasl should be set to 'false' for Zookeeper version 3.7.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.learnerRequireSasl', 'sslQuorum', 'localSessionsUpgradingEnabled'], 'reason': ['secureClientPort should be a positive integer', 'quorum.auth.learnerRequireSasl should be a boolean value (true/false)', "sslQuorum should be set to 'true' or 'false'", "localSessionsUpgradingEnabled should be set to 'true' or 'false'"]}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.learnerRequireSasl', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ["secureClientPort value should be a positive integer, quorum.auth.learnerRequireSasl should be a boolean value (true/false), quorum.auth.kerberos.servicePrincipal should be in the format 'primary/instance'"]}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.learnerRequireSasl', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['secureClientPort must be a positive integer value.', 'quorum.auth.learnerRequireSasl should be a boolean value (true/false).', "quorum.auth.kerberos.servicePrincipal should be in the format 'primary/instance'. For example, 'zkquorum/localhost'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: secureClientPort	quorum.auth.learnerRequireSasl	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for secureClientPort: secureClientPort must be a positive integer value.
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl should be a boolean value (true/false).
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal should be in the format 'primary/instance'. For example, 'zkquorum/localhost'.

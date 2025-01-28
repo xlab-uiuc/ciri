@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.local.dir</name>
+  <value>/valid/file1</value>
+    <description>Directory on the local filesystem to be used
+    as a local storage.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.regionSplitLimit</name>
+  <value>-100</value>
+    <description>
+      Limit for the number of regions after which no more region splitting
+      should take place. This is not hard limit for the number of regions
+      but acts as a guideline for the regionserver to stop splitting after
+      a certain limit. Default is set to 1000.
+    </description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.dns.interface</name>
+  <value>eth2</value>
+    <description>The name of the Network Interface from which a ZooKeeper server
+      should report its IP address.</description>
+</property>
+
+<property>
+  <name>hbase.server.keyvalue.maxsize</name>
+  <value>5242880</value>
+    <description>Maximum allowed size of an individual cell, inclusive of value and all key
+    components. A value of 0 or less disables the check.
+    The default value is 10MB.
+    This is a safety setting to protect the server from OOM situations.
+    </description>
+</property>
+
+<property>
+  <name>hbase.hregion.percolumnfamilyflush.size.lower.bound.min</name>
+  <value>8388608</value>
+    <description>
+    If FlushLargeStoresPolicy is used and there are multiple column families,
+    then every time that we hit the total memstore limit, we find out all the
+    column families whose memstores exceed a "lower bound" and only flush them
+    while retaining the others in memory. The "lower bound" will be
+    "hbase.hregion.memstore.flush.size / column_family_number" by default
+    unless value of this property is larger than that. If none of the families
+    have their memstore size more than lower bound, all the memstores will be
+    flushed (just as usual).
+    </description>
+</property>
+
+<property>
+  <name>hadoop.policy.file</name>
+  <value>/valid/file1</value>
+    <description>The policy configuration file used by RPC servers to make
+      authorization decisions on client requests.  Only used when HBase
+      security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.column.max.version</name>
+  <value>0</value>
+    <description>New column family descriptors will use this value as the default number of versions
+      to keep.</description>
+</property>
+
+<property>
+  <name>hbase.mob.compaction.threads.max</name>
+  <value>1</value>
+    <description>
+      The max number of threads used in MobCompactor.
+    </description>
+</property>
+
+</configuration>

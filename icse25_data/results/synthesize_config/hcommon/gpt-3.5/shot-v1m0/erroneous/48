@@ -1,0 +1,12 @@
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'hadoop.http.cross-origin.allowed-methods'], 'reason': ['Invalid value for property fs.ftp.host.port. Port number cannot be negative.', 'Invalid value for property hadoop.http.cross-origin.allowed-methods. Only GET method is allowed, other methods should be added for CORS support.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host.port	hadoop.http.cross-origin.allowed-methods
+[Ciri] Reason for fs.ftp.host.port: Invalid value for property fs.ftp.host.port. Port number cannot be negative.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-methods: Invalid value for property hadoop.http.cross-origin.allowed-methods. Only GET method is allowed, other methods should be added for CORS support.

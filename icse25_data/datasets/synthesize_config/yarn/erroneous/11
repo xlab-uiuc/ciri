@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.webapp.ui-actions.enabled</name>
+  <value>true</value>
+    <description>
+    Add button to kill application in the RM Application view.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.metrics.runtime.buckets</name>
+  <value>[30, 150, 720]</value>
+    <description>
+    Comma-separated list of values (in minutes) for schedule queue related
+    metrics.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.hostname</name>
+  <value>2.2.2.2.2.2</value>
+    <description>The hostname of the NM.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.log-container-debug-info.enabled</name>
+  <value>true</value>
+    <description>Generate additional logs about container launches.
+    Currently, this creates a copy of the launch script and lists the
+    directory contents of the container work dir. When listing directory
+    contents, we follow symlinks to a max-depth of 5(including symlinks
+    which point to outside the container work dir) which may lead to a
+    slowness in launching containers.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.health-checker.interval-ms</name>
+  <value>1200000</value>
+    <description>Frequency of running node health scripts.</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.admin.address</name>
+  <value>0.0.0.0:3000</value>
+    <description>The address of the admin interface in the SCM (shared cache manager)</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.node-labels.provider.script.path</name>
+  <value>/valid/file1</value>
+    <description>The Node Label script to run. Script output Line starting with
+     "NODE_PARTITION:" will be considered as Node Label Partition. In case of
+     multiple lines have this pattern, then last one will be considered
+    </description>
+</property>
+
+<property>
+  <name>yarn.client.load.resource-types.from-server</name>
+  <value>false</value>
+    <description>
+      Provides an option for client to load supported resource types from RM
+      instead of depending on local resource-types.xml file.
+    </description>
+</property>
+
+</configuration>

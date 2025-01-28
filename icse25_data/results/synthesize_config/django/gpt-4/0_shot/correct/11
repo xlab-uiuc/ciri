@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_HTTPONLY', 'SECURE_CROSS_ORIGIN_OPENER_POLICY', 'CSRF_COOKIE_DOMAIN', 'SECURE_REFERRER_POLICY'], 'reason': ['SESSION_COOKIE_HTTPONLY should be set to True to help prevent client-side script from accessing the session cookie.', 'SECURE_CROSS_ORIGIN_OPENER_POLICY does not exist as a Django setting. Perhaps you meant SECURE_CROSS_ORIGIN_OPENER_POLICY or another security setting.', 'CSRF_COOKIE_DOMAIN being None is the default value, but explicitly setting it to None without a specific reason might be unnecessary.', "SECURE_REFERRER_POLICY value 'same-origin' is valid, but ensuring it aligns with your application's privacy and security requirements is important. If 'same-origin' was intentionally chosen, this may not be an error."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: SESSION_COOKIE_HTTPONLY	SECURE_CROSS_ORIGIN_OPENER_POLICY	CSRF_COOKIE_DOMAIN	SECURE_REFERRER_POLICY
+[Ciri] Reason for SESSION_COOKIE_HTTPONLY: SESSION_COOKIE_HTTPONLY should be set to True to help prevent client-side script from accessing the session cookie.
+[Ciri] Reason for SECURE_CROSS_ORIGIN_OPENER_POLICY: SECURE_CROSS_ORIGIN_OPENER_POLICY does not exist as a Django setting. Perhaps you meant SECURE_CROSS_ORIGIN_OPENER_POLICY or another security setting.
+[Ciri] Reason for CSRF_COOKIE_DOMAIN: CSRF_COOKIE_DOMAIN being None is the default value, but explicitly setting it to None without a specific reason might be unnecessary.
+[Ciri] Reason for SECURE_REFERRER_POLICY: SECURE_REFERRER_POLICY value 'same-origin' is valid, but ensuring it aligns with your application's privacy and security requirements is important. If 'same-origin' was intentionally chosen, this may not be an error.

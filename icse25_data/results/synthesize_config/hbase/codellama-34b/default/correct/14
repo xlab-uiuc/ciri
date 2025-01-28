@@ -1,0 +1,26 @@
+Wrong shot number:
+[1, 8, 6]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hregion.memstore.mslab.enabled'], 'reason': ["The property 'hbase.hregion.memstore.mslab.enabled' has the value 'false' which is not within the accepted value {true,false}."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.time.to.purge.deletes'], 'reason': ["The property 'hbase.hstore.time.to.purge.deletes' has the value '1' which is not of the correct type Float."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.thrift.compact'], 'reason': ["The property 'hbase.regionserver.thrift.compact' has the value 'true' which is not within the accepted value {false}."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.thrift.compact'], 'reason': ["The property 'hbase.regionserver.thrift.compact' has the value 'true' which is not of the correct type Float."]}
+
+{'hasError': True, 'errParameter': ['hbase.hregion.memstore.mslab.enabled'], 'reason': ["The property 'hbase.hregion.memstore.mslab.enabled' has the value 'false' which is not within the accepted value {true,false}."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.thrift.compact'], 'reason': ["The property 'hbase.regionserver.thrift.compact' has the value 'true' which is not within the accepted value {false}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.thrift.compact
+[Ciri] Reason for hbase.regionserver.thrift.compact: The property 'hbase.regionserver.thrift.compact' has the value 'true' which is not of the correct type Float.

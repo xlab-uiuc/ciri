@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'proto-max-bulk-len'], 'reason': ["The 'maxmemory-clients' configuration option does not exist in Redis. It should be 'maxmemory'.", "The 'proto-max-bulk-len' configuration option is not valid in Redis 7.0.0. It was removed in Redis 6.0.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: maxmemory-clients	proto-max-bulk-len
+[Ciri] Reason for maxmemory-clients: The 'maxmemory-clients' configuration option does not exist in Redis. It should be 'maxmemory'.
+[Ciri] Reason for proto-max-bulk-len: The 'proto-max-bulk-len' configuration option is not valid in Redis 7.0.0. It was removed in Redis 6.0.0.

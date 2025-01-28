@@ -1,0 +1,18 @@
+Wrong shot number:
+[3, 12, 1]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.min'], 'reason': ["The property 'alluxio.master.backup.connect.interval.min' has the value '1sec' which is not of the correct type Duration."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.min', 'alluxio.master.backup.connect.interval.max', 'alluxio.master.backup.state.lock.interrupt.cycle.enabled'], 'reason': ["The property 'alluxio.master.backup.connect.interval.min' has the value '1sec' which is not of the correct type Long.", "The property 'alluxio.master.backup.connect.interval.max' has the value '30sec' which is not of the correct type Long.", "The property 'alluxio.master.backup.state.lock.interrupt.cycle.enabled' has the value 'false' which is not of the correct type Boolean."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.min'], 'reason': ["The value of the property 'alluxio.master.backup.connect.interval.min' should be smaller or equal to the value of the property 'alluxio.master.backup.connect.interval.max'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.master.backup.connect.interval.min
+[Ciri] Reason for alluxio.master.backup.connect.interval.min: The property 'alluxio.master.backup.connect.interval.min' has the value '1sec' which is not of the correct type Duration.

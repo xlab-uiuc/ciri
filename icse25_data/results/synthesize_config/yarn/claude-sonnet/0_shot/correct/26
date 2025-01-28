@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.hostname', 'yarn.sharedcache.webapp.address'], 'reason': ["The value '0.0.0.0' for 'yarn.timeline-service.hostname' is not recommended as it binds the service to all available network interfaces, which can be a security risk. It is better to specify a specific hostname or IP address.", "The value '0.0.0.0:8788' for 'yarn.sharedcache.webapp.address' is not recommended as it binds the service to all available network interfaces, which can be a security risk. It is better to specify a specific hostname or IP address."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.timeline-service.hostname	yarn.sharedcache.webapp.address
+[Ciri] Reason for yarn.timeline-service.hostname: The value '0.0.0.0' for 'yarn.timeline-service.hostname' is not recommended as it binds the service to all available network interfaces, which can be a security risk. It is better to specify a specific hostname or IP address.
+[Ciri] Reason for yarn.sharedcache.webapp.address: The value '0.0.0.0:8788' for 'yarn.sharedcache.webapp.address' is not recommended as it binds the service to all available network interfaces, which can be a security risk. It is better to specify a specific hostname or IP address.

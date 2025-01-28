@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention'], 'reason': ['The value of auto-compaction-retention is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'auto-compaction-mode', 'proxy-read-timeout', 'auto-tls', 'logger', 'discovery-fallback', 'max-snapshots'], 'reason': ['auto-compaction-retention must be an integer', 'auto-compaction-mode must be one of [periodic,revision]', 'proxy-read-timeout must be an integer', 'auto-tls must be a boolean', 'logger must be one of [zap,capnslog]', 'discovery-fallback must be one of [proxy,outbound]', 'max-snapshots must be an integer']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode', 'proxy-read-timeout', 'auto-tls', 'discovery-fallback', 'max-snapshots'], 'reason': ['The value of auto-compaction-mode is not valid. The valid values are periodic, revision, or date.', 'The value of proxy-read-timeout is not valid. The valid values are 0 or a positive integer.', 'The value of auto-tls is not valid. The valid values are true or false.', 'The value of discovery-fallback is not valid. The valid values are proxy or static.', 'The value of max-snapshots is not valid. The valid values are 0 or a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode', 'discovery-fallback', 'proxy-read-timeout'], 'reason': ['auto-compaction-mode must be one of [periodic, revision]', 'discovery-fallback must be one of [proxy, cdn]', 'proxy-read-timeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-refresh-interval', 'proxy-dial-timeout', 'proxy-write-timeout', 'proxy-read-timeout'], 'reason': ['proxy-failure-wait must be greater than or equal to 0', 'proxy-refresh-interval must be greater than or equal to 0', 'proxy-dial-timeout must be greater than or equal to 0', 'proxy-write-timeout must be greater than or equal to 0', 'proxy-read-timeout must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode', 'discovery-fallback', 'proxy-read-timeout'], 'reason': ['auto-compaction-mode must be one of [periodic,revision]', 'discovery-fallback must be one of [proxy,proxy-cache,grpc]', 'proxy-read-timeout must be greater than 0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: auto-compaction-mode	discovery-fallback	proxy-read-timeout
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode must be one of [periodic, revision]
+[Ciri] Reason for discovery-fallback: discovery-fallback must be one of [proxy, cdn]
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout must be greater than 0

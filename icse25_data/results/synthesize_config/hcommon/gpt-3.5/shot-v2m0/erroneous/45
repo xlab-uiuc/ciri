@@ -1,0 +1,13 @@
+Correct shot number:
+[8, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'fs.azure.secure.mode', 'ipc.[port_number].scheduler.priority.levels'], 'reason': ['Invalid value for fs.s3a.proxy.port. Port number should be between 1 and 65535.', "The property fs.azure.secure.mode is missing the 'usage' tag.", 'The property ipc.[port_number].scheduler.priority.levels should have a value greater than 1.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.s3a.proxy.port	fs.azure.secure.mode	ipc.[port_number].scheduler.priority.levels
+[Ciri] Reason for fs.s3a.proxy.port: Invalid value for fs.s3a.proxy.port. Port number should be between 1 and 65535.
+[Ciri] Reason for fs.azure.secure.mode: The property fs.azure.secure.mode is missing the 'usage' tag.
+[Ciri] Reason for ipc.[port_number].scheduler.priority.levels: The property ipc.[port_number].scheduler.priority.levels should have a value greater than 1.

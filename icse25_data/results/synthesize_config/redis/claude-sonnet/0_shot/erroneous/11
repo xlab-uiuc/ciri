@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['aclfile', 'auto-aof-rewrite-min-size', 'lazyfree-lazy-eviction', 'daemonize', 'jemalloc-bg-thread', 'aof-rewrite-incremental-fsync', 'unixsocketperm'], 'reason': ["The 'aclfile' parameter is not a valid configuration option in Redis 7.0.0.", "The 'auto-aof-rewrite-min-size' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'auto-aof-rewrite-percentage'.", "The 'lazyfree-lazy-eviction' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'lazyfree-lazy-eviction'.", "The 'daemonize' parameter is not a valid configuration option in Redis 7.0.0. Redis is designed to run as a daemon by default.", "The 'jemalloc-bg-thread' parameter is not a valid configuration option in Redis 7.0.0. Redis uses its own memory allocator.", "The 'aof-rewrite-incremental-fsync' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'aof-use-fsync'.", "The 'unixsocketperm' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'unixsocket' to specify the Unix socket path."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: aclfile	auto-aof-rewrite-min-size	lazyfree-lazy-eviction	daemonize	jemalloc-bg-thread	aof-rewrite-incremental-fsync	unixsocketperm
+[Ciri] Reason for aclfile: The 'aclfile' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for auto-aof-rewrite-min-size: The 'auto-aof-rewrite-min-size' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'auto-aof-rewrite-percentage'.
+[Ciri] Reason for lazyfree-lazy-eviction: The 'lazyfree-lazy-eviction' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'lazyfree-lazy-eviction'.
+[Ciri] Reason for daemonize: The 'daemonize' parameter is not a valid configuration option in Redis 7.0.0. Redis is designed to run as a daemon by default.
+[Ciri] Reason for jemalloc-bg-thread: The 'jemalloc-bg-thread' parameter is not a valid configuration option in Redis 7.0.0. Redis uses its own memory allocator.
+[Ciri] Reason for aof-rewrite-incremental-fsync: The 'aof-rewrite-incremental-fsync' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'aof-use-fsync'.
+[Ciri] Reason for unixsocketperm: The 'unixsocketperm' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'unixsocket' to specify the Unix socket path.

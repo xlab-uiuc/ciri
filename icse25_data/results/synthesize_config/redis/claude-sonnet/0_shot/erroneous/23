@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'maxmemory-clients'], 'reason': ['The slowlog-max-len parameter expects a non-negative integer value, but -10 is an invalid value.', 'The maxmemory-clients parameter expects a value in bytes, but 1g is not a valid unit. It should be specified as an integer followed by one of the following units: k, kb, m, mb, g, gb.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: slowlog-max-len	maxmemory-clients
+[Ciri] Reason for slowlog-max-len: The slowlog-max-len parameter expects a non-negative integer value, but -10 is an invalid value.
+[Ciri] Reason for maxmemory-clients: The maxmemory-clients parameter expects a value in bytes, but 1g is not a valid unit. It should be specified as an integer followed by one of the following units: k, kb, m, mb, g, gb.

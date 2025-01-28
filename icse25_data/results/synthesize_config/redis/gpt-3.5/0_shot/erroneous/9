@@ -1,0 +1,33 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'cluster-announce-port'], 'reason': ['tls-ca-cert-dir should not start with a forward slash (/)', 'cluster-announce-port should be a valid port number greater than 1']}
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'replica-lazy-flush', 'cluster-announce-port', 'dir', 'repl-diskless-sync', 'jemalloc-bg-thread'], 'reason': ['Invalid value for tls-ca-cert-dir parameter.', 'Invalid value for replica-lazy-flush parameter.', 'Invalid value for cluster-announce-port parameter.', 'Invalid value for dir parameter.', 'Invalid value for repl-diskless-sync parameter.', 'Invalid value for jemalloc-bg-thread parameter.']}
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'replica-lazy-flush', 'slowlog-log-slower-than', 'cluster-announce-port', 'aof-rewrite-incremental-fsync', 'repl-diskless-sync', 'jemalloc-bg-thread'], 'reason': ['tls-ca-cert-dir parameter should not start with a forward slash.', 'replica-lazy-flush parameter value should be yes or no.', 'slowlog-log-slower-than value should be in microseconds.', 'cluster-announce-port value should be a valid port number.', 'aof-rewrite-incremental-fsync parameter value should be yes or no.', 'repl-diskless-sync parameter value should be yes or no.', 'jemalloc-bg-thread parameter value should be yes or no.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'cluster-announce-port', 'dir'], 'reason': ['tls-ca-cert-dir should not start with a forward slash', 'cluster-announce-port value is invalid', 'dir should not end with a forward slash']}
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'cluster-announce-port'], 'reason': ['tls-ca-cert-dir should not start with a forward slash', 'cluster-announce-port should be a valid port number']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'dir', 'repl-diskless-sync', 'jemalloc-bg-thread'], 'reason': ['Invalid value for cluster-announce-port. It should be a valid port number.', 'Invalid value for dir. It should specify a valid directory path.', "Invalid value for repl-diskless-sync. It should be either 'yes' or 'no'.", "Invalid value for jemalloc-bg-thread. It should be either 'yes' or 'no'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'replica-lazy-flush', 'cluster-announce-port', 'dir', 'repl-diskless-sync', 'jemalloc-bg-thread'], 'reason': ['Invalid parameter tls-ca-cert-dir=/\\etc/ssl/certs', 'Invalid parameter replica-lazy-flush=no', 'Invalid parameter cluster-announce-port=1', 'Invalid parameter dir=./', 'Invalid parameter repl-diskless-sync=yes', 'Invalid parameter jemalloc-bg-thread=yes']}
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'replica-lazy-flush', 'cluster-announce-port', 'dir', 'repl-diskless-sync', 'jemalloc-bg-thread'], 'reason': ['Invalid parameter tls-ca-cert-dir=/\\etc/ssl/certs', 'Invalid parameter replica-lazy-flush=no', 'Invalid parameter cluster-announce-port=1', 'Invalid parameter dir=./', 'Invalid parameter repl-diskless-sync=yes', 'Invalid parameter jemalloc-bg-thread=yes']}
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'replica-lazy-flush', 'cluster-announce-port', 'dir', 'repl-diskless-sync', 'jemalloc-bg-thread'], 'reason': ['tls-ca-cert-dir parameter should not start with a forward slash (/)', 'Invalid value for replica-lazy-flush parameter', 'cluster-announce-port value should be a valid port number', 'dir parameter should specify a valid directory path', 'Invalid value for repl-diskless-sync parameter', 'Invalid value for jemalloc-bg-thread parameter']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: tls-ca-cert-dir	replica-lazy-flush	cluster-announce-port	dir	repl-diskless-sync	jemalloc-bg-thread
+[Ciri] Reason for tls-ca-cert-dir: Invalid parameter tls-ca-cert-dir=/\etc/ssl/certs
+[Ciri] Reason for replica-lazy-flush: Invalid parameter replica-lazy-flush=no
+[Ciri] Reason for cluster-announce-port: Invalid parameter cluster-announce-port=1
+[Ciri] Reason for dir: Invalid parameter dir=./
+[Ciri] Reason for repl-diskless-sync: Invalid parameter repl-diskless-sync=yes
+[Ciri] Reason for jemalloc-bg-thread: Invalid parameter jemalloc-bg-thread=yes

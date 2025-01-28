@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['ALLOWED_HOSTS', 'STATIC_ROOT', 'FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'SESSION_FILE_PATH'], 'reason': ['ALLOWED_HOSTS should be a list of strings, not a string', 'STATIC_ROOT should be a string, not a tuple', 'FILE_UPLOAD_DIRECTORY_PERMISSIONS should be a string, not None', 'SESSION_FILE_PATH should be a string, not None']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'STATIC_ROOT', 'FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'SESSION_COOKIE_NAME', 'DEFAULT_CHARSET', 'SESSION_FILE_PATH', 'DECIMAL_SEPARATOR', 'SECURE_CROSS_ORIGIN_OPENER_POLICY', 'CSRF_COOKIE_HTTPONLY'], 'reason': ['DEBUG is not a boolean value', 'STATIC_ROOT is not a string', 'FILE_UPLOAD_DIRECTORY_PERMISSIONS is not an integer', 'SESSION_COOKIE_NAME is not a string', 'DEFAULT_CHARSET is not a string', 'SESSION_FILE_PATH is not a string', 'DECIMAL_SEPARATOR is not a string', 'SECURE_CROSS_ORIGIN_OPENER_POLICY is not a string', 'CSRF_COOKIE_HTTPONLY is not a boolean value']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATIC_ROOT', 'FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'SESSION_FILE_PATH'], 'reason': ['STATIC_ROOT should be a string, FILE_UPLOAD_DIRECTORY_PERMISSIONS should be an integer, SESSION_FILE_PATH should be a string']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['STATIC_ROOT', 'FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'SESSION_FILE_PATH'], 'reason': ['STATIC_ROOT should be a string, FILE_UPLOAD_DIRECTORY_PERMISSIONS should be an integer, SESSION_FILE_PATH should be a string']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: STATIC_ROOT	FILE_UPLOAD_DIRECTORY_PERMISSIONS	SESSION_FILE_PATH
+[Ciri] Reason for STATIC_ROOT: STATIC_ROOT should be a string, FILE_UPLOAD_DIRECTORY_PERMISSIONS should be an integer, SESSION_FILE_PATH should be a string
+[Ciri] Reason for FILE_UPLOAD_DIRECTORY_PERMISSIONS: 
+[Ciri] Reason for SESSION_FILE_PATH: 

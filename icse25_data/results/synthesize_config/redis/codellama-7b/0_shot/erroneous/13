@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'repl-diskless-load', 'set-proc-title'], 'reason': ['cluster-announce-ip: invalid value', 'repl-diskless-load: invalid value', 'set-proc-title: invalid value']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'replica-announce-port'], 'reason': ['cluster-announce-ip must be an IPv4 or IPv6 address', 'replica-announce-port must be a port number']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'cluster-announce-port', 'cluster-announce-bus-port', 'cluster-announce-ip', 'repl-diskless-load', 'enable-protected-configs', 'replica-announce-port'], 'reason': ['cluster-announce-ip is not a valid IP address', 'cluster-announce-port is not a valid port number', 'cluster-announce-bus-port is not a valid port number', 'cluster-announce-ip is not a valid IP address', 'repl-diskless-load is not a valid value', 'enable-protected-configs is not a valid value', 'replica-announce-port is not a valid port number']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip'], 'reason': ['cluster-announce-ip is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip'], 'reason': ['cluster-announce-ip is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'replica-announce-port'], 'reason': ['cluster-announce-ip is not a valid IP address.', 'replica-announce-port is not a valid port.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: cluster-announce-ip
+[Ciri] Reason for cluster-announce-ip: cluster-announce-ip is not a valid parameter for redis version 7.0.0

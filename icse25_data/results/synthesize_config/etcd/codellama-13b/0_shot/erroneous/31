@@ -1,0 +1,24 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'discovery-fallback', 'proxy', 'advertise-client-urls', 'peer-cert-file'], 'reason': ['proxy-dial-timeout is not a valid parameter', 'discovery-fallback is not a valid parameter', 'proxy is not a valid parameter', 'advertise-client-urls is not a valid parameter', 'peer-cert-file is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ["initial-cluster-state should be set to 'new' if this is the first node in the cluster, or 'existing' if it is joining an existing cluster."]}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout'], 'reason': ['proxy-dial-timeout is not a valid parameter for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'discovery-fallback', 'proxy'], 'reason': ['proxy-dial-timeout should be a positive integer', "discovery-fallback should be 'proxy' or 'none'", "proxy should be 'on' or 'off'"]}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'discovery-fallback', 'proxy', 'advertise-client-urls', 'peer-cert-file'], 'reason': ['proxy-dial-timeout is not a valid property', 'discovery-fallback is not a valid property', 'proxy is not a valid property', 'advertise-client-urls is not a valid property', 'peer-cert-file is not a valid property']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'discovery-fallback', 'proxy', 'advertise-client-urls', 'peer-cert-file'], 'reason': ['proxy-dial-timeout must be a valid time duration string', "discovery-fallback must be either 'proxy' or 'none'", "proxy must be either 'on' or 'off'", 'advertise-client-urls must be a valid URL', 'peer-cert-file must be a valid path']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: proxy-dial-timeout	discovery-fallback	proxy	advertise-client-urls	peer-cert-file
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout must be a valid time duration string
+[Ciri] Reason for discovery-fallback: discovery-fallback is not a valid property
+[Ciri] Reason for proxy: proxy is not a valid property
+[Ciri] Reason for advertise-client-urls: advertise-client-urls is not a valid property
+[Ciri] Reason for peer-cert-file: peer-cert-file is not a valid property

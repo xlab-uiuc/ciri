@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'localSessionsEnabled'], 'reason': ['minSessionTimeout is set to 0. It should be set to a minimum of 2 times the tickTime value.', 'localSessionsEnabled is set to true. This configuration parameter is not available in ZooKeeper 3.7.0 and should be removed.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: minSessionTimeout	localSessionsEnabled
+[Ciri] Reason for minSessionTimeout: minSessionTimeout is set to 0. It should be set to a minimum of 2 times the tickTime value.
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled is set to true. This configuration parameter is not available in ZooKeeper 3.7.0 and should be removed.

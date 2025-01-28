@@ -1,0 +1,12 @@
+Correct shot number:
+[8, 4, 3, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3.sleepTimeSeconds', 'hadoop.tags.system'], 'reason': ["The property 'fs.s3.sleepTimeSeconds' should be 'fs.s3a.sleepTimeSeconds' for consistency with other S3A related properties.", "The property 'hadoop.tags.system' has an incorrect usage tag 'appendProperty' which is not a valid attribute for configuration properties."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3.sleepTimeSeconds	hadoop.tags.system
+[Ciri] Reason for fs.s3.sleepTimeSeconds: The property 'fs.s3.sleepTimeSeconds' should be 'fs.s3a.sleepTimeSeconds' for consistency with other S3A related properties.
+[Ciri] Reason for hadoop.tags.system: The property 'hadoop.tags.system' has an incorrect usage tag 'appendProperty' which is not a valid attribute for configuration properties.

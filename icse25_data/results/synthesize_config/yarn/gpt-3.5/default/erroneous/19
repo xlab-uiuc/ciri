@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 10, 6]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory.enforced'], 'reason': ["The property 'yarn.nodemanager.resource.memory.enforced' has the value '1.5' which should be a boolean (true/false) indicating whether YARN CGroups strict memory enforcement is enabled."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.log-dirs'], 'reason': ["The property 'yarn.nodemanager.log-dirs' has the value '/valid/file1' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory.enforced'], 'reason': ["The property 'yarn.nodemanager.resource.memory.enforced' has the value '1.5' which should be a boolean (true/false) indicating whether YARN CGroups strict memory enforcement is enabled."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.resource.memory.enforced
+[Ciri] Reason for yarn.nodemanager.resource.memory.enforced: The property 'yarn.nodemanager.resource.memory.enforced' has the value '1.5' which should be a boolean (true/false) indicating whether YARN CGroups strict memory enforcement is enabled.

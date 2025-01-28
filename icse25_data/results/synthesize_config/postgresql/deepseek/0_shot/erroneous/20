@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_statement', 'autovacuum_vacuum_scale_factor', 'min_wal_size'], 'reason': ['log_statement value NOEXIST_TRANSFER_MODE is not valid', 'autovacuum_vacuum_scale_factor value 0.1 is not valid', 'min_wal_size value 80MB is not valid']}
+
+{'hasError': True, 'errParameter': ['log_statement', 'autovacuum_vacuum_scale_factor', 'min_wal_size'], 'reason': ['log_statement value NOEXIST_TRANSFER_MODE is not valid', 'autovacuum_vacuum_scale_factor value 0.1 is not valid', 'min_wal_size value 80MB is not valid']}
+
+{'hasError': True, 'errParameter': ['log_statement', 'autovacuum_vacuum_scale_factor', 'extra_float_digits', 'wal_log_hints', 'min_wal_size', 'max_worker_processes', 'from_collapse_limit', 'update_process_title'], 'reason': ['log_statement is not a valid parameter', 'autovacuum_vacuum_scale_factor should be a float between 0 and 1', 'extra_float_digits should be an integer between 0 and 3', "wal_log_hints should be either 'on' or 'off'", "min_wal_size should be a positive integer followed by 'MB' or 'GB'", 'max_worker_processes should be an integer', 'from_collapse_limit should be an integer', "update_process_title should be either 'on' or 'off'"]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: log_statement	autovacuum_vacuum_scale_factor	min_wal_size
+[Ciri] Reason for log_statement: log_statement value NOEXIST_TRANSFER_MODE is not valid
+[Ciri] Reason for autovacuum_vacuum_scale_factor: autovacuum_vacuum_scale_factor value 0.1 is not valid
+[Ciri] Reason for min_wal_size: min_wal_size value 80MB is not valid

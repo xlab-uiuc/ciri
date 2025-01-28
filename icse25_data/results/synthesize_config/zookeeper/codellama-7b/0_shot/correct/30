@@ -1,0 +1,34 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPort', 'syncLimit', 'maxClientCnxns', 'minSessionTimeout'], 'reason': ['clientPortAddress must be in the format of ip:port', 'secureClientPort must be in the format of ip:port', 'syncLimit must be a positive integer', 'maxClientCnxns must be a positive integer', 'minSessionTimeout must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learner.saslLoginContext'], 'reason': ["The property 'quorum.auth.learner.saslLoginContext' is not a valid property for ZooKeeper version 3.7.0."]}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress', 'secureClientPort', 'quorum.auth.learnerRequireSasl', 'syncLimit', 'maxClientCnxns', 'minSessionTimeout', 'quorum.auth.learner.saslLoginContext'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPortAddress is not a valid address', 'secureClientPort is not a valid port', 'quorum.auth.learnerRequireSasl is not a valid boolean', 'syncLimit is not a valid integer', 'maxClientCnxns is not a valid integer', 'minSessionTimeout is not a valid integer', 'quorum.auth.learner.saslLoginContext is not a valid string']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'syncLimit', 'maxClientCnxns', 'minSessionTimeout', 'quorum.auth.learnerRequireSasl', 'quorum.auth.learner.saslLoginContext'], 'reason': ['clientPortAddress: The value of clientPortAddress is not a valid IP address', 'syncLimit: The value of syncLimit is not a valid integer', 'maxClientCnxns: The value of maxClientCnxns is not a valid integer', 'minSessionTimeout: The value of minSessionTimeout is not a valid integer', 'quorum.auth.learnerRequireSasl: The value of quorum.auth.learnerRequireSasl is not a valid boolean', 'quorum.auth.learner.saslLoginContext: The value of quorum.auth.learner.saslLoginContext is not a valid string']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPort', 'syncLimit', 'maxClientCnxns', 'minSessionTimeout', 'quorum.auth.learnerRequireSasl', 'quorum.auth.learner.saslLoginContext'], 'reason': ['clientPortAddress must be in the format of host:port', 'secureClientPort must be a number', 'syncLimit must be a number', 'maxClientCnxns must be a number', 'minSessionTimeout must be a number', 'quorum.auth.learnerRequireSasl must be a boolean', 'quorum.auth.learner.saslLoginContext must be a string']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPort', 'syncLimit', 'maxClientCnxns', 'minSessionTimeout'], 'reason': ['clientPortAddress: The value of clientPortAddress is not a valid IP address.', 'secureClientPort: The value of secureClientPort is not a valid port number.', 'syncLimit: The value of syncLimit is not a valid integer.', 'maxClientCnxns: The value of maxClientCnxns is not a valid integer.', 'minSessionTimeout: The value of minSessionTimeout is not a valid integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPort', 'quorum.auth.learnerRequireSasl', 'syncLimit', 'maxClientCnxns', 'minSessionTimeout', 'quorum.auth.learner.saslLoginContext'], 'reason': ['clientPortAddress is not a valid port address', 'secureClientPort is not a valid port', 'quorum.auth.learnerRequireSasl is not a boolean', 'syncLimit is not a valid integer', 'maxClientCnxns is not a valid integer', 'minSessionTimeout is not a valid integer', 'quorum.auth.learner.saslLoginContext is not a valid string']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPort', 'syncLimit', 'maxClientCnxns', 'minSessionTimeout', 'quorum.auth.learnerRequireSasl', 'quorum.auth.learner.saslLoginContext'], 'reason': ['clientPortAddress should be in the format of host:port', 'secureClientPort should be in the format of host:port', 'syncLimit should be an integer', 'maxClientCnxns should be an integer', 'minSessionTimeout should be an integer', 'quorum.auth.learnerRequireSasl should be a boolean', 'quorum.auth.learner.saslLoginContext should be a string']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPort', 'syncLimit', 'maxClientCnxns', 'minSessionTimeout', 'quorum.auth.learnerRequireSasl', 'quorum.auth.learner.saslLoginContext'], 'reason': ['clientPortAddress: Invalid port number', 'secureClientPort: Invalid port number', 'syncLimit: Invalid value', 'maxClientCnxns: Invalid value', 'minSessionTimeout: Invalid value', 'quorum.auth.learnerRequireSasl: Invalid value', 'quorum.auth.learner.saslLoginContext: Invalid value']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: clientPortAddress	secureClientPort	syncLimit	maxClientCnxns	minSessionTimeout	quorum.auth.learnerRequireSasl	quorum.auth.learner.saslLoginContext
+[Ciri] Reason for clientPortAddress: clientPortAddress: Invalid port number
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid port
+[Ciri] Reason for syncLimit: syncLimit is not a valid integer
+[Ciri] Reason for maxClientCnxns: maxClientCnxns should be an integer
+[Ciri] Reason for minSessionTimeout: minSessionTimeout: Invalid value
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl: Invalid value
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext should be a string

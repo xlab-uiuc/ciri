@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'shared_buffers', 'temp_buffers', 'wal_keep_size'], 'reason': ['max_connections must be greater than 0', 'shared_buffers must be greater than 0', 'temp_buffers must be greater than 0', 'wal_keep_size must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['log_min_messages', 'wal_keep_size'], 'reason': ["log_min_messages must be one of the following: DEBUG5, DEBUG4, DEBUG3, DEBUG2, DEBUG1, LOG, NOTICE, WARNING, ERROR, FATAL, or PANIC. The value 'warning' is not valid.", "wal_keep_size must be a positive integer. The value '1' is not valid."]}
+
+{'hasError': True, 'errParameter': ['log_min_messages'], 'reason': ['log_min_messages must be one of the following: debug5, debug4, debug3, debug2, debug1, info, notice, warning, error, log, fatal, or panic.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'shared_buffers', 'temp_buffers'], 'reason': ['max_connections must be greater than 10', 'shared_buffers must be greater than 100MB', 'temp_buffers must be greater than 100MB']}
+
+{'hasError': True, 'errParameter': ['log_min_messages', 'log_duration', 'wal_keep_size', 'huge_page_size', 'debug_print_rewritten', 'reserved_connections', 'enable_incremental_sort'], 'reason': ['log_min_messages must be one of the following: debug5, debug4, debug3, debug2, debug1, info, notice, warning, error, log, fatal, or panic', 'log_duration must be one of the following: on, off', 'wal_keep_size must be a positive integer', 'huge_page_size must be a positive integer', 'debug_print_rewritten must be one of the following: on, off', 'reserved_connections must be a positive integer', 'enable_incremental_sort must be one of the following: on, off']}
+
+{'hasError': True, 'errParameter': ['log_min_messages'], 'reason': ['log_min_messages must be one of the following: debug5, debug4, debug3, debug2, debug1, info, notice, warning, error, log, fatal, or panic.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_min_messages'], 'reason': ['log_min_messages must be one of the following: debug5, debug4, debug3, debug2, debug1, info, notice, warning, error, log, fatal, or panic.']}
+
+{'hasError': True, 'errParameter': ['log_min_messages', 'log_duration', 'wal_keep_size', 'huge_page_size', 'debug_print_rewritten', 'reserved_connections', 'enable_incremental_sort'], 'reason': ['log_min_messages is not a valid parameter', 'log_duration is not a valid parameter', 'wal_keep_size is not a valid parameter', 'huge_page_size is not a valid parameter', 'debug_print_rewritten is not a valid parameter', 'reserved_connections is not a valid parameter', 'enable_incremental_sort is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['log_min_messages'], 'reason': ['log_min_messages must be one of the following: debug5, debug4, debug3, debug2, debug1, info, notice, warning, error, log, fatal, or panic.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: log_min_messages
+[Ciri] Reason for log_min_messages: log_min_messages must be one of the following: debug5, debug4, debug3, debug2, debug1, info, notice, warning, error, log, fatal, or panic.

@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['archive_mode', 'checkpoint_timeout', 'log_recovery_conflict_waits', 'from_collapse_limit', 'vacuum_freeze_min_age', 'superuser_reserved_connections', 'debug_pretty_print'], 'reason': ['archive_mode is not a valid option for PostgreSQL version 13.0', 'checkpoint_timeout is not a valid option for PostgreSQL version 13.0', 'log_recovery_conflict_waits is not a valid option for PostgreSQL version 13.0', 'from_collapse_limit is not a valid option for PostgreSQL version 13.0', 'vacuum_freeze_min_age is not a valid option for PostgreSQL version 13.0', 'superuser_reserved_connections is not a valid option for PostgreSQL version 13.0', 'debug_pretty_print is not a valid option for PostgreSQL version 13.0']}
+
+{'hasError': True, 'errParameter': ['checkpoint_timeout', 'log_recovery_conflict_waits', 'from_collapse_limit', 'vacuum_freeze_min_age', 'superuser_reserved_connections', 'debug_pretty_print'], 'reason': ['checkpoint_timeout must be a valid time interval.', 'log_recovery_conflict_waits must be a boolean.', 'from_collapse_limit must be an integer.', 'vacuum_freeze_min_age must be a valid time interval.', 'superuser_reserved_connections must be an integer.', 'debug_pretty_print must be a boolean.']}
+
+{'hasError': True, 'errParameter': ['checkpoint_timeout', 'log_recovery_conflict_waits', 'from_collapse_limit', 'vacuum_freeze_min_age', 'superuser_reserved_connections', 'debug_pretty_print'], 'reason': ['checkpoint_timeout is not a valid value', 'log_recovery_conflict_waits is not a valid value', 'from_collapse_limit is not a valid value', 'vacuum_freeze_min_age is not a valid value', 'superuser_reserved_connections is not a valid value', 'debug_pretty_print is not a valid value']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: checkpoint_timeout	log_recovery_conflict_waits	from_collapse_limit	vacuum_freeze_min_age	superuser_reserved_connections	debug_pretty_print
+[Ciri] Reason for checkpoint_timeout: checkpoint_timeout is not a valid value
+[Ciri] Reason for log_recovery_conflict_waits: log_recovery_conflict_waits must be a boolean.
+[Ciri] Reason for from_collapse_limit: from_collapse_limit is not a valid value
+[Ciri] Reason for vacuum_freeze_min_age: vacuum_freeze_min_age is not a valid value
+[Ciri] Reason for superuser_reserved_connections: superuser_reserved_connections must be an integer.
+[Ciri] Reason for debug_pretty_print: debug_pretty_print must be a boolean.

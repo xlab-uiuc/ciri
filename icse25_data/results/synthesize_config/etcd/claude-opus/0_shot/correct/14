@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'quota-backend-bytes', 'snapshot-count', 'advertise-client-urls'], 'reason': ["The 'max-snapshots' parameter has been deprecated in etcd 3.5. Use 'snapshot-count' instead.", "The value for 'quota-backend-bytes' is too low. It should be at least 2GB (2147483648 bytes) for etcd to work properly.", "The default value for 'snapshot-count' is 100000, not 10000. While 10000 will work, it's recommended to use the default value.", "The 'advertise-client-urls' parameter should be set to a non-localhost value so that clients can connect to the etcd cluster from other machines."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: max-snapshots	quota-backend-bytes	snapshot-count	advertise-client-urls
+[Ciri] Reason for max-snapshots: The 'max-snapshots' parameter has been deprecated in etcd 3.5. Use 'snapshot-count' instead.
+[Ciri] Reason for quota-backend-bytes: The value for 'quota-backend-bytes' is too low. It should be at least 2GB (2147483648 bytes) for etcd to work properly.
+[Ciri] Reason for snapshot-count: The default value for 'snapshot-count' is 100000, not 10000. While 10000 will work, it's recommended to use the default value.
+[Ciri] Reason for advertise-client-urls: The 'advertise-client-urls' parameter should be set to a non-localhost value so that clients can connect to the etcd cluster from other machines.

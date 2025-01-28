@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'ipc.[port_number].decay-scheduler.thresholds'], 'reason': ['The property fs.ftp.timeout has an invalid value (-1). Timeout values should be positive integers.', 'The property ipc.[port_number].decay-scheduler.thresholds has a placeholder [port_number] that needs to be replaced with an actual port number.']}
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'ipc.[port_number].decay-scheduler.thresholds'], 'reason': ['The property fs.ftp.timeout has an invalid value of -1. Timeout values should be positive integers.', 'The property ipc.[port_number].decay-scheduler.thresholds has a placeholder [port_number] which should be replaced with an actual port number.']}
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'ipc.[port_number].decay-scheduler.thresholds'], 'reason': ['The property fs.ftp.timeout has an invalid value of -1. Timeout values should be positive integers.', 'The property ipc.[port_number].decay-scheduler.thresholds has a placeholder [port_number] instead of an actual port number.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.timeout	ipc.[port_number].decay-scheduler.thresholds
+[Ciri] Reason for fs.ftp.timeout: The property fs.ftp.timeout has an invalid value (-1). Timeout values should be positive integers.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: The property ipc.[port_number].decay-scheduler.thresholds has a placeholder [port_number] that needs to be replaced with an actual port number.

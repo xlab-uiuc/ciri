@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.metrics.logger.period.seconds</name>
+  <value>300</value>
+  <description>
+    This setting controls how frequently the NameNode logs its metrics. The
+    logging configuration must also define one or more appenders for
+    NameNodeMetricsLog for the metrics to be logged.
+    NameNode metrics logging is disabled if this value is set to zero or
+    less than zero.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reencrypt.throttle.limit.handler.ratio</name>
+  <value>1.0</value>
+  <description>Throttling ratio for the re-encryption, indicating what fraction
+    of time should the re-encrypt handler thread work under NN read lock.
+    Larger than 1.0 values are interpreted as 1.0. Negative value or 0 are
+    invalid values and will fail NN startup.
+  </description>
+</property>
+
+<property>
+  <name>dfs.balancer.keytab.file</name>
+  <value>/valid/file2</value>
+  <description>
+    The keytab file used by the Balancer to login as its
+    service principal. The principal name is configured with
+    dfs.balancer.kerberos.principal. Keytab based login can be
+    enabled with dfs.balancer.keytab.enabled.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.read.striped.threadpool.size</name>
+  <value>9</value>
+  <description>
+    The maximum number of threads used for parallel reading
+    in striped layout.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.replica.cache.expiry.time</name>
+  <value>1m</value>
+  <description>
+    Living time of replica cached files in milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.mover.keytab.file</name>
+  <value>/valid/file2</value>
+  <description>
+    The keytab file used by the Mover to login as its
+    service principal. The principal name is configured with
+    dfs.mover.kerberos.principal. Keytab based login can be
+    enabled with dfs.mover.keytab.enabled.
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.satisfier.recheck.timeout.millis</name>
+  <value>60000</value>
+  <description>
+    Blocks storage movements monitor re-check interval in milliseconds.
+    This check will verify whether any blocks storage movement results arrived from DN
+    and also verify if any of file blocks movements not at all reported to DN
+    since dfs.storage.policy.satisfier.self.retry.timeout.
+    The default value is 1 * 60 * 1000 (1 mins)
+  </description>
+</property>
+
+<property>
+  <name>dfs.disk.balancer.max.disk.errors</name>
+  <value>1</value>
+    <description>
+      During a block move from a source to destination disk, we might
+      encounter various errors. This defines how many errors we can tolerate
+      before we declare a move between 2 disks (or a step) has failed.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,15 @@
+Wrong shot number:
+[16, 13]
+
+Correct shot number:
+[8, 12, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'hadoop.ssl.enabled'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an additional 'usage' tag that is not standard in the configuration file.", "The property 'hadoop.ssl.enabled' is deprecated and should be replaced with 'dfs.http.policy' and 'yarn.http.policy'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.data.connection.mode	hadoop.ssl.enabled
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an additional 'usage' tag that is not standard in the configuration file.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' is deprecated and should be replaced with 'dfs.http.policy' and 'yarn.http.policy'.

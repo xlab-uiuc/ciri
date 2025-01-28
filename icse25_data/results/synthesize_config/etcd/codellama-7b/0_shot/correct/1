@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-write-timeout', 'auto-tls', 'discovery-fallback'], 'reason': ['proxy-dial-timeout should be greater than 0', 'proxy-write-timeout should be greater than 0', 'auto-tls should be a boolean', 'discovery-fallback should be a boolean']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout'], 'reason': ['proxy-dial-timeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout'], 'reason': ['proxy-dial-timeout is not a valid parameter for etcd version 3.5.0. Please refer to the documentation for the correct parameters.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: proxy-dial-timeout
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout is not a valid parameter for etcd version 3.5.0. Please refer to the documentation for the correct parameters.

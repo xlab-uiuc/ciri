@@ -1,0 +1,19 @@
+Wrong shot number:
+[12, 6, 2]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes', 'fs.gcs.credential.path'], 'reason': ["The property 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes' has the value '1MB' which is not a valid size. The property 'fs.gcs.credential.path' should point to a valid file."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes', 'fs.gcs.credential.path'], 'reason': ["The value of the property 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes' is not a valid size. The value '1MB' is not a valid size.", "The value of the property 'fs.gcs.credential.path' is not a valid file path. The value '/valid/file2' is not a valid file path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.block.avoid.eviction.policy.reserved.size.bytes	fs.gcs.credential.path
+[Ciri] Reason for alluxio.user.block.avoid.eviction.policy.reserved.size.bytes: The value of the property 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes' is not a valid size. The value '1MB' is not a valid size.
+[Ciri] Reason for fs.gcs.credential.path: The value of the property 'fs.gcs.credential.path' is not a valid file path. The value '/valid/file2' is not a valid file path.

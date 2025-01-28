@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['huge_page_size', 'enable_async_append', 'wal_log_hints'], 'reason': ["The 'huge_page_size' parameter does not exist in PostgreSQL configuration. It might be a misunderstanding with 'huge_pages' which is a different parameter.", "The 'enable_async_append' parameter does not exist in PostgreSQL 13.0. This might be a confusion or a typo.", "The 'wal_log_hints' parameter was removed in PostgreSQL 12. The correct parameter to use for similar functionality is 'wal_level' with the setting 'logical'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: huge_page_size	enable_async_append	wal_log_hints
+[Ciri] Reason for huge_page_size: The 'huge_page_size' parameter does not exist in PostgreSQL configuration. It might be a misunderstanding with 'huge_pages' which is a different parameter.
+[Ciri] Reason for enable_async_append: The 'enable_async_append' parameter does not exist in PostgreSQL 13.0. This might be a confusion or a typo.
+[Ciri] Reason for wal_log_hints: The 'wal_log_hints' parameter was removed in PostgreSQL 12. The correct parameter to use for similar functionality is 'wal_level' with the setting 'logical'.

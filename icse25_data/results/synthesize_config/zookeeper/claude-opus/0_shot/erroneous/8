@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'maxSessionTimeout', 'minSessionTimeout'], 'reason': ["The dataDir path 'dev/urandom///' is invalid. It should be a valid directory path where ZooKeeper can store its data.", 'The maxSessionTimeout value of -2 is invalid. It should be a positive integer representing the maximum session timeout in milliseconds.', 'The minSessionTimeout value of 0 is invalid. It should be a positive integer representing the minimum session timeout in milliseconds, and it should be less than or equal to maxSessionTimeout.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dataDir	maxSessionTimeout	minSessionTimeout
+[Ciri] Reason for dataDir: The dataDir path 'dev/urandom///' is invalid. It should be a valid directory path where ZooKeeper can store its data.
+[Ciri] Reason for maxSessionTimeout: The maxSessionTimeout value of -2 is invalid. It should be a positive integer representing the maximum session timeout in milliseconds.
+[Ciri] Reason for minSessionTimeout: The minSessionTimeout value of 0 is invalid. It should be a positive integer representing the minimum session timeout in milliseconds, and it should be less than or equal to maxSessionTimeout.

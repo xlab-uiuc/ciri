@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size', 'ipc.client.connection.maxidletime', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable', 'ipc.[port_number].weighted-cost.lockfree', 'rpc.metrics.quantile.enable', 'hadoop.registry.zk.root'], 'reason': ['The value of fs.ftp.host is not a valid hostname.', 'The value of fs.s3a.block.size is not a valid block size.', 'The value of ipc.client.connection.maxidletime is not a valid time.', 'The value of ipc.[port_number].decay-scheduler.thresholds is not a valid list of thresholds.', 'The value of ipc.[port_number].decay-scheduler.backoff.responsetime.enable is not a valid boolean.', 'The value of ipc.[port_number].weighted-cost.lockfree is not a valid integer.', 'The value of rpc.metrics.quantile.enable is not a valid boolean.', 'The value of hadoop.registry.zk.root is not a valid zookeeper node.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.block.size	ipc.client.connection.maxidletime	ipc.[port_number].decay-scheduler.thresholds	ipc.[port_number].decay-scheduler.backoff.responsetime.enable	ipc.[port_number].weighted-cost.lockfree	rpc.metrics.quantile.enable	hadoop.registry.zk.root
+[Ciri] Reason for fs.ftp.host: The value of fs.ftp.host is not a valid hostname.
+[Ciri] Reason for fs.s3a.block.size: The value of fs.s3a.block.size is not a valid block size.
+[Ciri] Reason for ipc.client.connection.maxidletime: The value of ipc.client.connection.maxidletime is not a valid time.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: The value of ipc.[port_number].decay-scheduler.thresholds is not a valid list of thresholds.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.enable: The value of ipc.[port_number].decay-scheduler.backoff.responsetime.enable is not a valid boolean.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The value of ipc.[port_number].weighted-cost.lockfree is not a valid integer.
+[Ciri] Reason for rpc.metrics.quantile.enable: The value of rpc.metrics.quantile.enable is not a valid boolean.
+[Ciri] Reason for hadoop.registry.zk.root: The value of hadoop.registry.zk.root is not a valid zookeeper node.

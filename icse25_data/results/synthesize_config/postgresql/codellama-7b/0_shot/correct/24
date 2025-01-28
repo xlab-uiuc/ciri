@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses'], 'reason': ['listen_addresses should be a list of addresses, not a single address.']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'krb_server_keyfile', 'gss_accept_delegation', 'lc_numeric', 'min_parallel_table_scan_size'], 'reason': ['listen_addresses should be a list of addresses, not a string', 'krb_server_keyfile should be a file path, not a string', 'gss_accept_delegation should be a boolean, not a string', 'lc_numeric should be a string, not a number', 'min_parallel_table_scan_size should be a number, not a string']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'krb_server_keyfile', 'gss_accept_delegation', 'lc_numeric', 'min_parallel_table_scan_size'], 'reason': ["listen_addresses can only be set to 'localhost' or '*'", 'krb_server_keyfile is not a valid file', "gss_accept_delegation must be either 'off' or 'allow_proxy'", 'lc_numeric must be set to a valid locale', 'min_parallel_table_scan_size must be greater than 0']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: listen_addresses	krb_server_keyfile	gss_accept_delegation	lc_numeric	min_parallel_table_scan_size
+[Ciri] Reason for listen_addresses: listen_addresses can only be set to 'localhost' or '*'
+[Ciri] Reason for krb_server_keyfile: krb_server_keyfile is not a valid file
+[Ciri] Reason for gss_accept_delegation: gss_accept_delegation should be a boolean, not a string
+[Ciri] Reason for lc_numeric: lc_numeric should be a string, not a number
+[Ciri] Reason for min_parallel_table_scan_size: min_parallel_table_scan_size must be greater than 0

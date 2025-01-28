@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.credential.clear-text-fallback</name>
+  <value>false</value>
+  <description>
+    true or false to indicate whether or not to fall back to storing credential
+    password as clear text. The default value is true. This property only works
+    when the password can't not be found from credential providers.
+  </description>
+</property>
+
+<property>
+  <name>fs.default.name</name>
+  <value>file:///</value>
+  <description>Deprecated. Use (fs.defaultFS) property
+  instead</description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.har.impl</name>
+  <value>org.apache.hadoop.fs.HarFs</value>
+  <description>The AbstractFileSystem for har: uris.</description>
+</property>
+
+<property>
+  <name>fs.s3a.threads.max</name>
+  <value>64</value>
+  <description>The total number of threads available in the filesystem for data
+    uploads *or any other queued filesystem operation*.</description>
+</property>
+
+<property>
+  <name>ipc.server.listen.queue.size</name>
+  <value>128</value>
+  <description>Indicates the length of the listen queue for servers accepting
+               client connections.
+  </description>
+</property>
+
+<property>
+  <name>ha.failover-controller.active-standby-elector.zk.op.retries</name>
+  <value>3</value>
+  <description>
+    The number of zookeeper operation retry times in ActiveStandbyElector
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.key.provider.path</name>
+  <value>/valid/file1</value>
+  <description>
+    The KeyProvider to use when managing zone keys, and interacting with
+    encryption keys when reading and writing to an encryption zone.
+    For hdfs clients, the provider path will be same as namenode's
+    provider path.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.sni.host.check.enabled</name>
+  <value>false</value>
+    <description>
+      Enable Server Name Indication (SNI) host check for HTTPS enabled server.
+    </description>
+</property>
+
+</configuration>

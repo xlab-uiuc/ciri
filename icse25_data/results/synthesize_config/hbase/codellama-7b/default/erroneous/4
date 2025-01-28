@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 6, 9]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.ipc.client.tcpnodelay'], 'reason': ["The property 'hbase.ipc.client.tcpnodelay' has the value 'true' which is not within the accepted value {false}."]}
+
+{'hasError': True, 'errParameter': ['hbase.ipc.client.tcpnodelay'], 'reason': ["The value of the property 'hbase.ipc.client.tcpnodelay' should be 'true' to enable the property 'hbase.client.scanner.max.result.size'."]}
+
+{'hasError': True, 'errParameter': ['hbase.table.lock.enable'], 'reason': ["The value of the property 'hbase.table.lock.enable' should be 'true' to enable the property 'hbase.status.published'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.ipc.client.tcpnodelay
+[Ciri] Reason for hbase.ipc.client.tcpnodelay: The value of the property 'hbase.ipc.client.tcpnodelay' should be 'true' to enable the property 'hbase.client.scanner.max.result.size'.

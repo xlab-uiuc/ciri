@@ -1,0 +1,19 @@
+Wrong shot number:
+[3]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'fs.AbstractFileSystem.wasbs.impl', 'ftp.replication', 's3.replication', 'ha.zookeeper.parent-znode', 'hadoop.ssl.server.conf'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_REMOTE_DATA_CONNECTION_MODE.", "The property 'fs.AbstractFileSystem.wasbs.impl' has an invalid value 'org.apache.hadoop.fs.azure.Wasbs'.", "The property 'ftp.replication' should not be used in this configuration.", "The property 's3.replication' should not be used in this configuration.", "The property 'ha.zookeeper.parent-znode' has the value '/valid/file1' which is not recommended to be configured.", "The property 'hadoop.ssl.server.conf' has the value '/valid/file1' which is not recommended to be configured."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.ftp.data.connection.mode	fs.AbstractFileSystem.wasbs.impl	ftp.replication	s3.replication	ha.zookeeper.parent-znode	hadoop.ssl.server.conf
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_REMOTE_DATA_CONNECTION_MODE.
+[Ciri] Reason for fs.AbstractFileSystem.wasbs.impl: The property 'fs.AbstractFileSystem.wasbs.impl' has an invalid value 'org.apache.hadoop.fs.azure.Wasbs'.
+[Ciri] Reason for ftp.replication: The property 'ftp.replication' should not be used in this configuration.
+[Ciri] Reason for s3.replication: The property 's3.replication' should not be used in this configuration.
+[Ciri] Reason for ha.zookeeper.parent-znode: The property 'ha.zookeeper.parent-znode' has the value '/valid/file1' which is not recommended to be configured.
+[Ciri] Reason for hadoop.ssl.server.conf: The property 'hadoop.ssl.server.conf' has the value '/valid/file1' which is not recommended to be configured.

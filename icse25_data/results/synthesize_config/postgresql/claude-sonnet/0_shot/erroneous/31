@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['include', 'vacuum_multixact_failsafe_age'], 'reason': ["The 'include' parameter is not a valid PostgreSQL configuration parameter in version 13.0.", "The 'vacuum_multixact_failsafe_age' parameter is not a valid PostgreSQL configuration parameter in version 13.0. The correct parameter name is 'vacuum_multixact_freeze_age'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: include	vacuum_multixact_failsafe_age
+[Ciri] Reason for include: The 'include' parameter is not a valid PostgreSQL configuration parameter in version 13.0.
+[Ciri] Reason for vacuum_multixact_failsafe_age: The 'vacuum_multixact_failsafe_age' parameter is not a valid PostgreSQL configuration parameter in version 13.0. The correct parameter name is 'vacuum_multixact_freeze_age'.

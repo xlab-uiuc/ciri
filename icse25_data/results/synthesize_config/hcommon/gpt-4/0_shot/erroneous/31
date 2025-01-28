@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.kerberos.keytab.login.autorenewal.enabled', 'fs.s3a.ssl.channel.mode', 'ipc.client.idlethreshold'], 'reason': ["The property 'hadoop.kerberos.keytab.login.autorenewal.enabled' is not a recognized configuration parameter in Hadoop 3.3.0.", "The 'fs.s3a.ssl.channel.mode' options 'default_jsse_with_gcm', 'default', and 'openssl' are not supported configurations in Hadoop 3.3.0. The only supported value is 'default_jsse'.", "The value for 'ipc.client.idlethreshold' exceeds the maximum integer value in Java. It should be within the range of an integer (i.e., -2,147,483,648 to 2,147,483,647)."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.kerberos.keytab.login.autorenewal.enabled	fs.s3a.ssl.channel.mode	ipc.client.idlethreshold
+[Ciri] Reason for hadoop.kerberos.keytab.login.autorenewal.enabled: The property 'hadoop.kerberos.keytab.login.autorenewal.enabled' is not a recognized configuration parameter in Hadoop 3.3.0.
+[Ciri] Reason for fs.s3a.ssl.channel.mode: The 'fs.s3a.ssl.channel.mode' options 'default_jsse_with_gcm', 'default', and 'openssl' are not supported configurations in Hadoop 3.3.0. The only supported value is 'default_jsse'.
+[Ciri] Reason for ipc.client.idlethreshold: The value for 'ipc.client.idlethreshold' exceeds the maximum integer value in Java. It should be within the range of an integer (i.e., -2,147,483,648 to 2,147,483,647).

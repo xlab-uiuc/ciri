@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.s3a.s3guard.ddb.table.capacity.write</name>
+  <value>1</value>
+  <description>
+    Provisioned throughput requirements for write operations in terms of
+    capacity units for the DynamoDB table.
+    If set to 0 (the default), new tables are created with "per-request" capacity.
+    Refer to related configuration option fs.s3a.s3guard.ddb.table.capacity.read
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.committer.magic.enabled</name>
+  <value>false</value>
+  <description>
+    Enable support in the filesystem for the S3 "Magic" committer.
+    When working with AWS S3, S3Guard must be enabled for the destination
+    bucket, as consistent metadata listings are required.
+  </description>
+</property>
+
+<property>
+  <name>fs.wasb.impl</name>
+  <value>org.apache.hadoop.fs.azure.NativeAzureFileSystem</value>
+  <description>The implementation class of the Native Azure Filesystem</description>
+</property>
+
+<property>
+  <name>ipc.server.reuseaddr</name>
+  <value>false</value>
+  <description>Enables the SO_REUSEADDR TCP option on the server.
+    Useful if BindException often prevents a certain service to be restarted
+    because the server side is stuck in TIME_WAIT state.
+  </description>
+</property>
+
+<property>
+  <name>tfile.fs.input.buffer.size</name>
+  <value>262144</value>
+  <description>
+    Buffer size used for FSDataInputStream in bytes.
+  </description>
+</property>
+
+<property>
+  <name>ha.zookeeper.session-timeout.ms</name>
+  <value>10000</value>
+  <description>
+    The session timeout to use when the ZKFC connects to ZooKeeper.
+    Setting this value to a lower value implies that server crashes
+    will be detected more quickly, but risks triggering failover too
+    aggressively in the case of a transient error or network blip.
+  </description>
+</property>
+
+<property>
+  <name>ha.failover-controller.graceful-fence.rpc-timeout.ms</name>
+  <value>5000</value>
+  <description>
+    Timeout that the FC waits for the old active to go to standby
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.kms.client.encrypted.key.cache.num.refill.threads</name>
+  <value>2</value>
+  <description>
+    Number of threads to use for refilling depleted EncryptedKeyVersion
+    cache Queues
+  </description>
+</property>
+
+</configuration>

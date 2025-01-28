@@ -1,0 +1,12 @@
+Wrong shot number:
+[3, 12, 8, 2, 9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'io.mapfile.bloom.error.rate'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has the value '30s' which is not in the correct format. It should be specified in milliseconds.", "The property 'io.mapfile.bloom.error.rate' has the value 'true' which is not a valid value. It should be a numeric value representing the rate of false positives."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	io.mapfile.bloom.error.rate
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has the value '30s' which is not in the correct format. It should be specified in milliseconds.
+[Ciri] Reason for io.mapfile.bloom.error.rate: The property 'io.mapfile.bloom.error.rate' has the value 'true' which is not a valid value. It should be a numeric value representing the rate of false positives.

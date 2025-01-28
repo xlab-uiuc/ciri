@@ -1,0 +1,26 @@
+Wrong shot number:
+[12, 4, 11]
+
+Correct shot number:
+[16]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.redundancy.queue.restart.iterations'], 'reason': ["The property 'dfs.namenode.redundancy.queue.restart.iterations' has the value '1200' which is out of the valid range of a positive integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.blocksize'], 'reason': ["The property 'dfs.blocksize' has the value '134217728' which is out of the valid range of a block size."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-xattr-size'], 'reason': ["The property 'dfs.namenode.fs-limits.max-xattr-size' has the value '16384' which is out of the valid range of a size in bytes."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.path.based.cache.block.map.allocation.percent', 'dfs.namenode.fs-limits.max-xattr-size'], 'reason': ["The property 'dfs.namenode.path.based.cache.block.map.allocation.percent' has the value '0.25' which is out of the valid range of a percentage (0.0 to 1.0).", "The property 'dfs.namenode.fs-limits.max-xattr-size' has the value '16384' which is out of the valid range of a size (1 to 32768)."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-xattr-size'], 'reason': ["The property 'dfs.namenode.fs-limits.max-xattr-size' has the value '16384' which is out of the valid range of a size in bytes. The value must be greater than 0 and less than or equal to 32768."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-xattr-size'], 'reason': ["The property 'dfs.namenode.fs-limits.max-xattr-size' has the value '16384' which is out of the valid range of a size (16384-32768)."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.fs-limits.max-xattr-size
+[Ciri] Reason for dfs.namenode.fs-limits.max-xattr-size: The property 'dfs.namenode.fs-limits.max-xattr-size' has the value '16384' which is out of the valid range of a size (16384-32768).

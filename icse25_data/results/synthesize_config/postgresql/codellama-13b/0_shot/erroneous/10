@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'wal_writer_flush_after', 'syslog_split_messages'], 'reason': ['shared_buffers: The value is too low. The minimum value is 128MB.', 'wal_writer_flush_after: The value is too low. The minimum value is 10MB.', 'syslog_split_messages: The value is not supported in PostgreSQL 13.0.']}
+
+{'hasError': True, 'errParameter': ['wal_writer_flush_after'], 'reason': ['wal_writer_flush_after is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'port', 'listen_addresses', 'shared_buffers', 'wal_writer_flush_after'], 'reason': ['max_connections is not a valid parameter for PostgreSQL 13.0', 'port is not a valid parameter for PostgreSQL 13.0', 'listen_addresses is not a valid parameter for PostgreSQL 13.0', 'shared_buffers is not a valid parameter for PostgreSQL 13.0', 'wal_writer_flush_after is not a valid parameter for PostgreSQL 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_writer_flush_after'], 'reason': ['wal_writer_flush_after is not a valid parameter for PostgreSQL 13.0. It is only available in PostgreSQL 14.0 and later.']}
+
+{'hasError': True, 'errParameter': ['wal_writer_flush_after'], 'reason': ['wal_writer_flush_after is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'shared_buffers', 'wal_writer_flush_after'], 'reason': ['max_connections must be between 1 and 1000000', 'shared_buffers must be between 1MB and 128GB', 'wal_writer_flush_after must be between 1MB and 1GB']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: wal_writer_flush_after
+[Ciri] Reason for wal_writer_flush_after: wal_writer_flush_after is not a valid parameter for PostgreSQL 13.0

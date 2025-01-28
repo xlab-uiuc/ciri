@@ -1,0 +1,12 @@
+Correct shot number:
+[15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.throttle.retry.interval', 'ipc.[port_number].decay-scheduler.period-ms'], 'reason': ["Property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has an invalid value format. It should be in milliseconds.", "Property 'ipc.[port_number].decay-scheduler.period-ms' contains a placeholder '[port_number]' which should be replaced with an actual port number."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.s3guard.ddb.throttle.retry.interval	ipc.[port_number].decay-scheduler.period-ms
+[Ciri] Reason for fs.s3a.s3guard.ddb.throttle.retry.interval: Property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has an invalid value format. It should be in milliseconds.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.period-ms: Property 'ipc.[port_number].decay-scheduler.period-ms' contains a placeholder '[port_number]' which should be replaced with an actual port number.

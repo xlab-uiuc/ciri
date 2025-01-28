@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cert-file', 'advertise-client-urls'], 'reason': ["The 'cert-file' path '/\\etcd/cert' appears to be invalid. It should be a valid file path without the extra backslash.", "The 'advertise-client-urls' value should be a valid URL starting with 'http://' or 'https://'. 'http://localhost:2379' is missing a '/' after 'http:'"]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cert-file	advertise-client-urls
+[Ciri] Reason for cert-file: The 'cert-file' path '/\etcd/cert' appears to be invalid. It should be a valid file path without the extra backslash.
+[Ciri] Reason for advertise-client-urls: The 'advertise-client-urls' value should be a valid URL starting with 'http://' or 'https://'. 'http://localhost:2379' is missing a '/' after 'http:'

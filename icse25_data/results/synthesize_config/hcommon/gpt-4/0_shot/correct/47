@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.assumed.role.credentials.provider', 'ipc.[port_number].decay-scheduler.period-ms'], 'reason': ["The value 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider' is incorrect or does not exist in Hadoop 3.3.0. The correct class name might be 'org.apache.hadoop.fs.s3a.auth.AssumedRoleCredentialProvider' for assumed role credentials provider.", "The property name 'ipc.[port_number].decay-scheduler.period-ms' uses a placeholder '[port_number]' which should be replaced with an actual port number. Property names cannot contain placeholders or variables."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.assumed.role.credentials.provider	ipc.[port_number].decay-scheduler.period-ms
+[Ciri] Reason for fs.s3a.assumed.role.credentials.provider: The value 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider' is incorrect or does not exist in Hadoop 3.3.0. The correct class name might be 'org.apache.hadoop.fs.s3a.auth.AssumedRoleCredentialProvider' for assumed role credentials provider.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.period-ms: The property name 'ipc.[port_number].decay-scheduler.period-ms' uses a placeholder '[port_number]' which should be replaced with an actual port number. Property names cannot contain placeholders or variables.

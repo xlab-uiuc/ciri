@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.learnerRequireSasl'], 'reason': ["The 'quorum.auth.enableSasl' configuration parameter is not valid in ZooKeeper 3.7.0. It has been replaced by 'authProvider.x509' or 'authProvider.sasl' depending on the desired authentication mechanism.", "The 'quorum.auth.learnerRequireSasl' configuration parameter is not valid in ZooKeeper 3.7.0. Similar to 'quorum.auth.enableSasl', it has been replaced by the new 'authProvider' configuration options."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.learnerRequireSasl
+[Ciri] Reason for quorum.auth.enableSasl: The 'quorum.auth.enableSasl' configuration parameter is not valid in ZooKeeper 3.7.0. It has been replaced by 'authProvider.x509' or 'authProvider.sasl' depending on the desired authentication mechanism.
+[Ciri] Reason for quorum.auth.learnerRequireSasl: The 'quorum.auth.learnerRequireSasl' configuration parameter is not valid in ZooKeeper 3.7.0. Similar to 'quorum.auth.enableSasl', it has been replaced by the new 'authProvider' configuration options.

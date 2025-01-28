@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.default.mode', 'alluxio.master.ufs.active.sync.event.rate.interval', 'alluxio.worker.free.space.timeout'], 'reason': ["The property 'alluxio.underfs.s3.default.mode' is not a recognized configuration parameter in Alluxio 2.5.0. It seems to be either incorrect or applicable to a different version.", "The correct property for setting the active sync event rate interval should be 'alluxio.master.ufs.active.sync.interval', not 'alluxio.master.ufs.active.sync.event.rate.interval'.", "The format for specifying durations should be in milliseconds without specifying the unit, so 'alluxio.worker.free.space.timeout' should be in milliseconds (e.g., '20000' for 20 seconds), not '20sec'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.underfs.s3.default.mode	alluxio.master.ufs.active.sync.event.rate.interval	alluxio.worker.free.space.timeout
+[Ciri] Reason for alluxio.underfs.s3.default.mode: The property 'alluxio.underfs.s3.default.mode' is not a recognized configuration parameter in Alluxio 2.5.0. It seems to be either incorrect or applicable to a different version.
+[Ciri] Reason for alluxio.master.ufs.active.sync.event.rate.interval: The correct property for setting the active sync event rate interval should be 'alluxio.master.ufs.active.sync.interval', not 'alluxio.master.ufs.active.sync.event.rate.interval'.
+[Ciri] Reason for alluxio.worker.free.space.timeout: The format for specifying durations should be in milliseconds without specifying the unit, so 'alluxio.worker.free.space.timeout' should be in milliseconds (e.g., '20000' for 20 seconds), not '20sec'.

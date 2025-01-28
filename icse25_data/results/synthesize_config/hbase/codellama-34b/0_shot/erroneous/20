@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count', 'hbase.regionserver.msginterval', 'hbase.regionserver.thrift.framed'], 'reason': ['The value of hbase.regionserver.handler.count is too small. It should be a multiple of CPU count.', 'The value of hbase.regionserver.msginterval is too small. It should be larger than 3 * 1000.', 'The value of hbase.regionserver.thrift.framed is false. It should be true.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.handler.count	hbase.regionserver.msginterval	hbase.regionserver.thrift.framed
+[Ciri] Reason for hbase.regionserver.handler.count: The value of hbase.regionserver.handler.count is too small. It should be a multiple of CPU count.
+[Ciri] Reason for hbase.regionserver.msginterval: The value of hbase.regionserver.msginterval is too small. It should be larger than 3 * 1000.
+[Ciri] Reason for hbase.regionserver.thrift.framed: The value of hbase.regionserver.thrift.framed is false. It should be true.

@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['name'], 'reason': ['The name field is required.']}
+
+{'hasError': True, 'errParameter': ['data-dir'], 'reason': ['data-dir must be a directory']}
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'initial-cluster'], 'reason': ['data-dir is a required parameter', 'name is a required parameter', 'initial-cluster is a required parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['name', 'data-dir', 'listen-client-urls', 'advertise-client-urls', 'quota-backend-bytes', 'log-level', 'snapshot-count', 'force-new-cluster', 'heartbeat-interval'], 'reason': ['name is required', 'data-dir is required', 'listen-client-urls is required', 'advertise-client-urls is required', 'quota-backend-bytes is required', 'log-level is required', 'snapshot-count is required', 'force-new-cluster is required', 'heartbeat-interval is required']}
+
+{'hasError': True, 'errParameter': ['name', 'initial-cluster-state'], 'reason': ["The parameter 'name' is not a valid parameter for etcd version 3.5.0. Please refer to the documentation for the correct parameters for this version.", "The parameter 'initial-cluster-state' is not a valid parameter for etcd version 3.5.0. Please refer to the documentation for the correct parameters for this version."]}
+
+{'hasError': True, 'errParameter': ['name', 'data-dir', 'listen-client-urls', 'advertise-client-urls', 'quota-backend-bytes', 'log-level', 'snapshot-count', 'force-new-cluster', 'heartbeat-interval'], 'reason': ['name is required', 'data-dir is required', 'listen-client-urls is required', 'advertise-client-urls is required', 'quota-backend-bytes is required', 'log-level is required', 'snapshot-count is required', 'force-new-cluster is required', 'heartbeat-interval is required']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: name	data-dir	listen-client-urls	advertise-client-urls	quota-backend-bytes	log-level	snapshot-count	force-new-cluster	heartbeat-interval
+[Ciri] Reason for name: name is required
+[Ciri] Reason for data-dir: data-dir is required
+[Ciri] Reason for listen-client-urls: listen-client-urls is required
+[Ciri] Reason for advertise-client-urls: advertise-client-urls is required
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes is required
+[Ciri] Reason for log-level: log-level is required
+[Ciri] Reason for snapshot-count: snapshot-count is required
+[Ciri] Reason for force-new-cluster: force-new-cluster is required
+[Ciri] Reason for heartbeat-interval: heartbeat-interval is required

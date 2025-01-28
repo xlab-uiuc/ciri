@@ -1,0 +1,36 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout'], 'reason': ['proxy-write-timeout is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'proxy-write-timeout', 'strict-reconfig-check', 'heartbeat-interval'], 'reason': ['initial-cluster-state must be either new or existing', 'proxy-write-timeout must be greater than 0', 'strict-reconfig-check must be either true or false', 'heartbeat-interval must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'strict-reconfig-check', 'heartbeat-interval'], 'reason': ['proxy-write-timeout should be a duration', 'strict-reconfig-check should be a boolean', 'heartbeat-interval should be a duration']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'max-snapshots', 'proxy-write-timeout', 'strict-reconfig-check', 'heartbeat-interval'], 'reason': ['initial-cluster-state must be either new or existing', 'max-snapshots must be greater than 0', 'proxy-write-timeout must be greater than 0', 'strict-reconfig-check must be either true or false', 'heartbeat-interval must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'strict-reconfig-check', 'heartbeat-interval'], 'reason': ['proxy-write-timeout must be greater than 0', 'strict-reconfig-check must be a boolean', 'heartbeat-interval must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'proxy-write-timeout', 'strict-reconfig-check', 'heartbeat-interval'], 'reason': ['listen-client-urls should be a list of URLs', 'proxy-write-timeout should be a positive integer', 'strict-reconfig-check should be a boolean', 'heartbeat-interval should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'strict-reconfig-check', 'heartbeat-interval'], 'reason': ['proxy-write-timeout is not a valid configuration parameter for etcd version 3.5.0', 'strict-reconfig-check is not a valid configuration parameter for etcd version 3.5.0', 'heartbeat-interval is not a valid configuration parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'proxy-write-timeout', 'strict-reconfig-check', 'heartbeat-interval'], 'reason': ["The parameter 'max-snapshots' is not a valid parameter for etcd version 3.5.0.", "The parameter 'proxy-write-timeout' is not a valid parameter for etcd version 3.5.0.", "The parameter 'strict-reconfig-check' is not a valid parameter for etcd version 3.5.0.", "The parameter 'heartbeat-interval' is not a valid parameter for etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'max-snapshots', 'proxy-write-timeout', 'strict-reconfig-check'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'", 'max-snapshots must be greater than 0', 'proxy-write-timeout must be greater than 0', "strict-reconfig-check must be either 'true' or 'false'"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout'], 'reason': ['proxy-write-timeout is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-snapshots'], 'reason': ["The parameter 'max-snapshots' is not a valid parameter for etcd version 3.5.0. Please refer to the documentation for the correct parameters for this version."]}
+
+{'hasError': True, 'errParameter': ['max-snapshots'], 'reason': ['max-snapshots must be a positive integer']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: max-snapshots
+[Ciri] Reason for max-snapshots: max-snapshots must be a positive integer

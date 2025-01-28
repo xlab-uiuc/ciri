@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 2, 10]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.time.to.purge.deletes', 'hbase.rest.port'], 'reason': ["The property 'hbase.hstore.time.to.purge.deletes' has a value of '1' but the description indicates it should be in milliseconds, so this value is likely too low.", "The property 'hbase.rest.port' has a <usage> tag that references a servlet configuration, but this is an HBase configuration file, not a servlet configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.hstore.time.to.purge.deletes	hbase.rest.port
+[Ciri] Reason for hbase.hstore.time.to.purge.deletes: The property 'hbase.hstore.time.to.purge.deletes' has a value of '1' but the description indicates it should be in milliseconds, so this value is likely too low.
+[Ciri] Reason for hbase.rest.port: The property 'hbase.rest.port' has a <usage> tag that references a servlet configuration, but this is an HBase configuration file, not a servlet configuration.

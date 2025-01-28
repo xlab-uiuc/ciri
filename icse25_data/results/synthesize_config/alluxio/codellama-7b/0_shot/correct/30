@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.catchup.retry.wait', 'alluxio.user.client.cache.eviction.retries'], 'reason': ['alluxio.master.embedded.journal.catchup.retry.wait is not a valid property', 'alluxio.user.client.cache.eviction.retries is not a valid property']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.read.retry.sleep.base', 'alluxio.worker.network.writer.buffer.size.messages', 'alluxio.master.embedded.journal.catchup.retry.wait', 'alluxio.worker.tieredstore.level0.alias', 'alluxio.work.dir'], 'reason': ['The value of alluxio.user.block.read.retry.sleep.base is not a valid duration.', 'The value of alluxio.worker.network.writer.buffer.size.messages is not a valid integer.', 'The value of alluxio.master.embedded.journal.catchup.retry.wait is not a valid duration.', 'The value of alluxio.worker.tieredstore.level0.alias is not a valid tier alias.', 'The value of alluxio.work.dir is not a valid directory.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.read.retry.sleep.base', 'alluxio.worker.network.writer.buffer.size.messages'], 'reason': ['alluxio.user.block.read.retry.sleep.base is not a valid property', 'alluxio.worker.network.writer.buffer.size.messages is not a valid property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.catchup.retry.wait', 'alluxio.worker.tieredstore.level0.alias', 'alluxio.user.client.cache.eviction.retries'], 'reason': ['alluxio.master.embedded.journal.catchup.retry.wait should be a duration', 'alluxio.worker.tieredstore.level0.alias should be a string', 'alluxio.user.client.cache.eviction.retries should be an integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.read.retry.sleep.base', 'alluxio.worker.network.writer.buffer.size.messages'], 'reason': ["The value of alluxio.user.block.read.retry.sleep.base is not a valid duration. It should be in the format of '1s', '1m', '1h', etc.", 'The value of alluxio.worker.network.writer.buffer.size.messages is not a valid integer. It should be an integer value.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.catchup.retry.wait', 'alluxio.worker.tieredstore.level0.alias', 'alluxio.user.client.cache.eviction.retries'], 'reason': ['alluxio.master.embedded.journal.catchup.retry.wait should be a duration value', 'alluxio.worker.tieredstore.level0.alias should be a string value', 'alluxio.user.client.cache.eviction.retries should be an integer value']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.embedded.journal.catchup.retry.wait	alluxio.worker.tieredstore.level0.alias	alluxio.user.client.cache.eviction.retries
+[Ciri] Reason for alluxio.master.embedded.journal.catchup.retry.wait: alluxio.master.embedded.journal.catchup.retry.wait should be a duration
+[Ciri] Reason for alluxio.worker.tieredstore.level0.alias: alluxio.worker.tieredstore.level0.alias should be a string value
+[Ciri] Reason for alluxio.user.client.cache.eviction.retries: alluxio.user.client.cache.eviction.retries should be an integer

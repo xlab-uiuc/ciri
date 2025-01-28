@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.mover.retry.max.attempts', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ['The value for dfs.mover.retry.max.attempts cannot be negative. It should be a non-negative integer.', "The value for dfs.namenode.gc.time.monitor.sleep.interval.ms should be specified in milliseconds, not seconds. For example, '5000' for 5 seconds instead of '5s'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.mover.retry.max.attempts	dfs.namenode.gc.time.monitor.sleep.interval.ms
+[Ciri] Reason for dfs.mover.retry.max.attempts: The value for dfs.mover.retry.max.attempts cannot be negative. It should be a non-negative integer.
+[Ciri] Reason for dfs.namenode.gc.time.monitor.sleep.interval.ms: The value for dfs.namenode.gc.time.monitor.sleep.interval.ms should be specified in milliseconds, not seconds. For example, '5000' for 5 seconds instead of '5s'.

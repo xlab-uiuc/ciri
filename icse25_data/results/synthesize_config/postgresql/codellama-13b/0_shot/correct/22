@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['cpu_tuple_cost', 'autovacuum_vacuum_cost_delay', 'min_wal_size', 'default_transaction_isolation', 'enable_hashjoin', 'enable_parallel_hash', 'password_encryption'], 'reason': ['cpu_tuple_cost should be a float value between 0 and 100', 'autovacuum_vacuum_cost_delay should be a float value between 0 and 100', 'min_wal_size should be a positive integer', 'default_transaction_isolation should be a string value', 'enable_hashjoin should be a boolean value', 'enable_parallel_hash should be a boolean value', 'password_encryption should be a string value']}
+
+{'hasError': True, 'errParameter': ['enable_mergejoin', 'cpu_tuple_cost', 'autovacuum_vacuum_cost_delay', 'min_wal_size', 'default_transaction_isolation', 'enable_hashjoin', 'enable_parallel_hash', 'password_encryption'], 'reason': ['enable_mergejoin should be a boolean', 'cpu_tuple_cost should be a real number', 'autovacuum_vacuum_cost_delay should be an integer', 'min_wal_size should be an integer', 'default_transaction_isolation should be a string', 'enable_hashjoin should be a boolean', 'enable_parallel_hash should be a boolean', 'password_encryption should be a string']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cpu_tuple_cost', 'autovacuum_vacuum_cost_delay', 'min_wal_size', 'default_transaction_isolation', 'enable_hashjoin', 'enable_parallel_hash', 'password_encryption'], 'reason': ['cpu_tuple_cost is not a valid parameter', 'autovacuum_vacuum_cost_delay is not a valid parameter', 'min_wal_size is not a valid parameter', 'default_transaction_isolation is not a valid parameter', 'enable_hashjoin is not a valid parameter', 'enable_parallel_hash is not a valid parameter', 'password_encryption is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['enable_mergejoin', 'cpu_tuple_cost', 'autovacuum_vacuum_cost_delay', 'min_wal_size', 'default_transaction_isolation', 'enable_hashjoin', 'enable_parallel_hash', 'password_encryption'], 'reason': ['enable_mergejoin should be a boolean value.', 'cpu_tuple_cost should be a numeric value.', 'autovacuum_vacuum_cost_delay should be a numeric value.', 'min_wal_size should be a numeric value.', 'default_transaction_isolation should be a string value.', 'enable_hashjoin should be a boolean value.', 'enable_parallel_hash should be a boolean value.', 'password_encryption should be a string value.']}
+
+{'hasError': True, 'errParameter': ['enable_mergejoin', 'cpu_tuple_cost', 'autovacuum_vacuum_cost_delay', 'min_wal_size', 'default_transaction_isolation', 'enable_hashjoin', 'enable_parallel_hash', 'password_encryption'], 'reason': ['enable_mergejoin is not a valid parameter.', 'cpu_tuple_cost is not a valid parameter.', 'autovacuum_vacuum_cost_delay is not a valid parameter.', 'min_wal_size is not a valid parameter.', 'default_transaction_isolation is not a valid parameter.', 'enable_hashjoin is not a valid parameter.', 'enable_parallel_hash is not a valid parameter.', 'password_encryption is not a valid parameter.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: enable_mergejoin	cpu_tuple_cost	autovacuum_vacuum_cost_delay	min_wal_size	default_transaction_isolation	enable_hashjoin	enable_parallel_hash	password_encryption
+[Ciri] Reason for enable_mergejoin: enable_mergejoin should be a boolean value.
+[Ciri] Reason for cpu_tuple_cost: cpu_tuple_cost is not a valid parameter.
+[Ciri] Reason for autovacuum_vacuum_cost_delay: autovacuum_vacuum_cost_delay is not a valid parameter.
+[Ciri] Reason for min_wal_size: min_wal_size is not a valid parameter.
+[Ciri] Reason for default_transaction_isolation: default_transaction_isolation is not a valid parameter.
+[Ciri] Reason for enable_hashjoin: enable_hashjoin should be a boolean value.
+[Ciri] Reason for enable_parallel_hash: enable_parallel_hash is not a valid parameter.
+[Ciri] Reason for password_encryption: password_encryption is not a valid parameter.

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.jvm.monitor.info.threshold', 'alluxio.worker.master.periodical.rpc.timeout', 'alluxio.web.threads', 'alluxio.underfs.web.parent.names', 'alluxio.underfs.hdfs.remote'], 'reason': ["The 'alluxio.jvm.monitor.info.threshold' property is not a recognized configuration property in Alluxio 2.5.0.", "The 'alluxio.worker.master.periodical.rpc.timeout' property is not correctly named. The correct property name might be intended to control RPC timeouts but should be verified for the correct syntax.", "The 'alluxio.web.threads' property should not be set to 0 as it would not allow for any web server threads.", "The 'alluxio.underfs.web.parent.names' property is not a recognized configuration property in Alluxio 2.5.0.", "The 'alluxio.underfs.hdfs.remote' property is not a recognized configuration property in Alluxio 2.5.0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.jvm.monitor.info.threshold	alluxio.worker.master.periodical.rpc.timeout	alluxio.web.threads	alluxio.underfs.web.parent.names	alluxio.underfs.hdfs.remote
+[Ciri] Reason for alluxio.jvm.monitor.info.threshold: The 'alluxio.jvm.monitor.info.threshold' property is not a recognized configuration property in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.worker.master.periodical.rpc.timeout: The 'alluxio.worker.master.periodical.rpc.timeout' property is not correctly named. The correct property name might be intended to control RPC timeouts but should be verified for the correct syntax.
+[Ciri] Reason for alluxio.web.threads: The 'alluxio.web.threads' property should not be set to 0 as it would not allow for any web server threads.
+[Ciri] Reason for alluxio.underfs.web.parent.names: The 'alluxio.underfs.web.parent.names' property is not a recognized configuration property in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.underfs.hdfs.remote: The 'alluxio.underfs.hdfs.remote' property is not a recognized configuration property in Alluxio 2.5.0.

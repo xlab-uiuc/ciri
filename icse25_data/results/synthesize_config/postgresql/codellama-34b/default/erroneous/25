@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 5, 6]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'effective_cache_size'], 'reason': ["The value of the property'shared_buffers' is greater than the value of the property 'effective_cache_size'.", "The value of the property 'effective_cache_size' is greater than the value of the property'shared_buffers'."]}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'effective_cache_size'], 'reason': ["The property'shared_buffers' has the value '5GB' which exceeds the range of an Integer.", "The property 'effective_cache_size' has the value '4GB' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'effective_cache_size'], 'reason': ["The property'shared_buffers' has the value '5GB' which exceeds the range of an Integer.", "The property 'effective_cache_size' has the value '4GB' which exceeds the range of an Integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: shared_buffers	effective_cache_size
+[Ciri] Reason for shared_buffers: The property'shared_buffers' has the value '5GB' which exceeds the range of an Integer.
+[Ciri] Reason for effective_cache_size: The property 'effective_cache_size' has the value '4GB' which exceeds the range of an Integer.

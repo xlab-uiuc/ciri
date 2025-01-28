@@ -1,0 +1,17 @@
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'fs.s3a.executor.capacity', 'fs.permissions.umask-mode', 'hadoop.registry.zk.retry.interval.ms', 'hadoop.registry.secure', 'hadoop.registry.system.acls', 'fs.getspaceused.jitterMillis'], 'reason': ["Property 'fs.ftp.data.connection.mode' has an extra element 'usage' which is not a valid property.", "Property 'fs.s3a.executor.capacity' has a long description that is not a valid property.", "Property 'fs.permissions.umask-mode' has an extra element 'usage' which is not a valid property.", "Property 'hadoop.registry.zk.retry.interval.ms' has an empty description.", "Property 'hadoop.registry.secure' has an empty description.", "Property 'hadoop.registry.system.acls' has an empty description.", "Property 'fs.getspaceused.jitterMillis' has an empty description."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: fs.ftp.data.connection.mode	fs.s3a.executor.capacity	fs.permissions.umask-mode	hadoop.registry.zk.retry.interval.ms	hadoop.registry.secure	hadoop.registry.system.acls	fs.getspaceused.jitterMillis
+[Ciri] Reason for fs.ftp.data.connection.mode: Property 'fs.ftp.data.connection.mode' has an extra element 'usage' which is not a valid property.
+[Ciri] Reason for fs.s3a.executor.capacity: Property 'fs.s3a.executor.capacity' has a long description that is not a valid property.
+[Ciri] Reason for fs.permissions.umask-mode: Property 'fs.permissions.umask-mode' has an extra element 'usage' which is not a valid property.
+[Ciri] Reason for hadoop.registry.zk.retry.interval.ms: Property 'hadoop.registry.zk.retry.interval.ms' has an empty description.
+[Ciri] Reason for hadoop.registry.secure: Property 'hadoop.registry.secure' has an empty description.
+[Ciri] Reason for hadoop.registry.system.acls: Property 'hadoop.registry.system.acls' has an empty description.
+[Ciri] Reason for fs.getspaceused.jitterMillis: Property 'fs.getspaceused.jitterMillis' has an empty description.

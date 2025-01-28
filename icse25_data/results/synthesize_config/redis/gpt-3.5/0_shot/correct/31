@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'hash-max-listpack-value', 'bind-source-addr', 'cluster-announce-bus-port', 'set-proc-title', 'replica-announce-ip', 'oom-score-adj-values', 'list-compress-depth'], 'reason': ['enable-protected-configs is not a valid configuration parameter for Redis version 7.0.0.', 'hash-max-listpack-value should be set to a value between 32 and 512.', 'bind-source-addr should be set to a valid IP address.', 'cluster-announce-bus-port should be set to a port number within the valid range.', 'set-proc-title is not a valid configuration parameter for Redis version 7.0.0.', 'replica-announce-ip should be set to a valid IP address.', 'oom-score-adj-values should be a list of three integers separated by spaces.', 'list-compress-depth should be set to a value greater than or equal to 2.']}
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'hash-max-listpack-value', 'bind-source-addr', 'cluster-announce-bus-port', 'set-proc-title', 'replica-announce-ip', 'oom-score-adj-values', 'list-compress-depth'], 'reason': ["'enable-protected-configs' is not a valid configuration parameter for Redis 7.0.0.", "'hash-max-listpack-value' is not a valid configuration parameter for Redis 7.0.0.", "'bind-source-addr' is not a valid configuration parameter for Redis 7.0.0.", "'cluster-announce-bus-port' is not a valid configuration parameter for Redis 7.0.0.", "'set-proc-title' is not a valid configuration parameter for Redis 7.0.0.", "'replica-announce-ip' is not a valid configuration parameter for Redis 7.0.0.", "'oom-score-adj-values' is not a valid configuration parameter for Redis 7.0.0.", "'list-compress-depth' is not a valid configuration parameter for Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'hash-max-listpack-value', 'bind-source-addr', 'cluster-announce-bus-port', 'set-proc-title', 'replica-announce-ip', 'oom-score-adj-values', 'list-compress-depth'], 'reason': ["Unknown configuration parameter 'enable-protected-configs'", "The value for 'hash-max-listpack-value' should be an integer", "Invalid IP address format for 'bind-source-addr'", "Unknown configuration parameter 'cluster-announce-bus-port'", "Unknown configuration parameter 'set-proc-title'", "Invalid IP address format for 'replica-announce-ip'", "Invalid format for 'oom-score-adj-values'. It should be a list of integers", "The value for 'list-compress-depth' should be an integer"]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: enable-protected-configs	hash-max-listpack-value	bind-source-addr	cluster-announce-bus-port	set-proc-title	replica-announce-ip	oom-score-adj-values	list-compress-depth
+[Ciri] Reason for enable-protected-configs: 'enable-protected-configs' is not a valid configuration parameter for Redis 7.0.0.
+[Ciri] Reason for hash-max-listpack-value: 'hash-max-listpack-value' is not a valid configuration parameter for Redis 7.0.0.
+[Ciri] Reason for bind-source-addr: bind-source-addr should be set to a valid IP address.
+[Ciri] Reason for cluster-announce-bus-port: Unknown configuration parameter 'cluster-announce-bus-port'
+[Ciri] Reason for set-proc-title: set-proc-title is not a valid configuration parameter for Redis version 7.0.0.
+[Ciri] Reason for replica-announce-ip: Invalid IP address format for 'replica-announce-ip'
+[Ciri] Reason for oom-score-adj-values: Invalid format for 'oom-score-adj-values'. It should be a list of integers
+[Ciri] Reason for list-compress-depth: The value for 'list-compress-depth' should be an integer

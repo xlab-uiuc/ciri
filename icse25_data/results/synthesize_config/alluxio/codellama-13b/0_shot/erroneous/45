@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.tailer.shutdown.quiet.wait.time', 'alluxio.underfs.s3.secure.http.enabled', 'alluxio.user.network.rpc.netty.worker.threads', 'alluxio.user.client.cache.store.type', 'alluxio.worker.network.netty.watermark.high', 'alluxio.underfs.s3.streaming.upload.partition.size', 'alluxio.user.metrics.heartbeat.interval'], 'reason': ['alluxio.master.journal.tailer.shutdown.quiet.wait.time is not a valid time unit.', 'alluxio.underfs.s3.secure.http.enabled is not a valid boolean.', 'alluxio.user.network.rpc.netty.worker.threads is not a valid integer.', 'alluxio.user.client.cache.store.type is not a valid enum value.', 'alluxio.worker.network.netty.watermark.high is not a valid memory size.', 'alluxio.underfs.s3.streaming.upload.partition.size is not a valid memory size.', 'alluxio.user.metrics.heartbeat.interval is not a valid time unit.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: alluxio.master.journal.tailer.shutdown.quiet.wait.time	alluxio.underfs.s3.secure.http.enabled	alluxio.user.network.rpc.netty.worker.threads	alluxio.user.client.cache.store.type	alluxio.worker.network.netty.watermark.high	alluxio.underfs.s3.streaming.upload.partition.size	alluxio.user.metrics.heartbeat.interval
+[Ciri] Reason for alluxio.master.journal.tailer.shutdown.quiet.wait.time: alluxio.master.journal.tailer.shutdown.quiet.wait.time is not a valid time unit.
+[Ciri] Reason for alluxio.underfs.s3.secure.http.enabled: alluxio.underfs.s3.secure.http.enabled is not a valid boolean.
+[Ciri] Reason for alluxio.user.network.rpc.netty.worker.threads: alluxio.user.network.rpc.netty.worker.threads is not a valid integer.
+[Ciri] Reason for alluxio.user.client.cache.store.type: alluxio.user.client.cache.store.type is not a valid enum value.
+[Ciri] Reason for alluxio.worker.network.netty.watermark.high: alluxio.worker.network.netty.watermark.high is not a valid memory size.
+[Ciri] Reason for alluxio.underfs.s3.streaming.upload.partition.size: alluxio.underfs.s3.streaming.upload.partition.size is not a valid memory size.
+[Ciri] Reason for alluxio.user.metrics.heartbeat.interval: alluxio.user.metrics.heartbeat.interval is not a valid time unit.

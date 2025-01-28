@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_ecdh_curve', 'tcp_keepalives_idle', 'timezone_abbreviations', 'geqo_generations'], 'reason': ["The parameter 'ssl_ecdh_curve' has a typo at the end; it should not have an apostrophe.", "The 'tcp_keepalives_idle' value of 0 may disable the mechanism, which is not recommended unless explicitly desired. It should be set to a positive integer.", "The 'timezone_abbreviations' value 'Default' is incorrect. It should be 'default', all lowercase.", "The 'geqo_generations' value of 1 is too low; it should be set to a value greater than 0, but for practical use, significantly higher values are recommended."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: ssl_ecdh_curve	tcp_keepalives_idle	timezone_abbreviations	geqo_generations
+[Ciri] Reason for ssl_ecdh_curve: The parameter 'ssl_ecdh_curve' has a typo at the end; it should not have an apostrophe.
+[Ciri] Reason for tcp_keepalives_idle: The 'tcp_keepalives_idle' value of 0 may disable the mechanism, which is not recommended unless explicitly desired. It should be set to a positive integer.
+[Ciri] Reason for timezone_abbreviations: The 'timezone_abbreviations' value 'Default' is incorrect. It should be 'default', all lowercase.
+[Ciri] Reason for geqo_generations: The 'geqo_generations' value of 1 is too low; it should be set to a value greater than 0, but for practical use, significantly higher values are recommended.

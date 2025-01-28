@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.worker.ramdisk.size', 'alluxio.master.shell.backup.state.lock.try.duration', 'alluxio.user.local.writer.chunk.size.bytes', 'alluxio.job.master.lost.worker.interval', 'alluxio.master.replication.check.interval', 'alluxio.user.file.write.tier.default'], 'reason': ['Invalid IP address format. It should be a valid IPv4 or IPv6 address.', "The value for ramdisk size is expected to be in bytes, and typically it's a larger value to accommodate data.", "The duration format is incorrect. It should be like '2ms', '2s', '2m', etc., without spaces.", "The size should be in bytes without any unit abbreviation, e.g., '65536' for 64KB.", "The interval format is incorrect. It should be like '10s' for seconds.", "The interval format is incorrect. It should be like '2m' for minutes.", 'The default tier should be a non-negative integer, where -1 is not a valid value.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: alluxio.job.master.web.bind.host	alluxio.worker.ramdisk.size	alluxio.master.shell.backup.state.lock.try.duration	alluxio.user.local.writer.chunk.size.bytes	alluxio.job.master.lost.worker.interval	alluxio.master.replication.check.interval	alluxio.user.file.write.tier.default
+[Ciri] Reason for alluxio.job.master.web.bind.host: Invalid IP address format. It should be a valid IPv4 or IPv6 address.
+[Ciri] Reason for alluxio.worker.ramdisk.size: The value for ramdisk size is expected to be in bytes, and typically it's a larger value to accommodate data.
+[Ciri] Reason for alluxio.master.shell.backup.state.lock.try.duration: The duration format is incorrect. It should be like '2ms', '2s', '2m', etc., without spaces.
+[Ciri] Reason for alluxio.user.local.writer.chunk.size.bytes: The size should be in bytes without any unit abbreviation, e.g., '65536' for 64KB.
+[Ciri] Reason for alluxio.job.master.lost.worker.interval: The interval format is incorrect. It should be like '10s' for seconds.
+[Ciri] Reason for alluxio.master.replication.check.interval: The interval format is incorrect. It should be like '2m' for minutes.
+[Ciri] Reason for alluxio.user.file.write.tier.default: The default tier should be a non-negative integer, where -1 is not a valid value.

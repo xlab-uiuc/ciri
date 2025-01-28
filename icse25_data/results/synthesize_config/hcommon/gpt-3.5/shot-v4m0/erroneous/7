@@ -1,0 +1,12 @@
+Correct shot number:
+[12, 14, 15, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.trash.interval', 'fs.s3a.assumed.role.session.duration'], 'reason': ['Invalid value. Number of minutes for fs.trash.interval cannot be negative.', "Invalid value. Duration for fs.s3a.assumed.role.session.duration should be in the format '15m to 1h'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.trash.interval	fs.s3a.assumed.role.session.duration
+[Ciri] Reason for fs.trash.interval: Invalid value. Number of minutes for fs.trash.interval cannot be negative.
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: Invalid value. Duration for fs.s3a.assumed.role.session.duration should be in the format '15m to 1h'.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hregion.max.filesize', 'hfile.format.version', 'hbase.status.multicast.address.port'], 'reason': ['The default value for hbase.hregion.max.filesize in HBase 2.2.7 is 10737418240 (10GB). The value 322122547200 (300GB) is too large and may cause performance issues.', 'The default value for hfile.format.version in HBase 2.2.7 is 3. Setting it explicitly to 3 is unnecessary.', 'The default value for hbase.status.multicast.address.port in HBase 2.2.7 is 16100. The value -100 is invalid, as port numbers must be positive integers between 0 and 65535.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.hregion.max.filesize	hfile.format.version	hbase.status.multicast.address.port
+[Ciri] Reason for hbase.hregion.max.filesize: The default value for hbase.hregion.max.filesize in HBase 2.2.7 is 10737418240 (10GB). The value 322122547200 (300GB) is too large and may cause performance issues.
+[Ciri] Reason for hfile.format.version: The default value for hfile.format.version in HBase 2.2.7 is 3. Setting it explicitly to 3 is unnecessary.
+[Ciri] Reason for hbase.status.multicast.address.port: The default value for hbase.status.multicast.address.port in HBase 2.2.7 is 16100. The value -100 is invalid, as port numbers must be positive integers between 0 and 65535.

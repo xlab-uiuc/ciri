@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['strict-reconfig-check', 'max-snapshots', 'heartbeat-interval', 'quota-backend-bytes', 'proxy-failure-wait'], 'reason': ['strict-reconfig-check is not a valid configuration parameter in etcd v3.5.0. It was removed in v3.5.0.', 'max-snapshots is not a valid configuration parameter in etcd v3.5.0. The correct parameter is snapshot-count.', 'heartbeat-interval must be at least 1000 milliseconds. A value of 200 is too low.', 'quota-backend-bytes must be at least 1024 (1 MB). A value of 2 is too low.', 'proxy-failure-wait is specified in milliseconds but must be a duration string with a unit suffix, e.g. 5s for 5 seconds.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: strict-reconfig-check	max-snapshots	heartbeat-interval	quota-backend-bytes	proxy-failure-wait
+[Ciri] Reason for strict-reconfig-check: strict-reconfig-check is not a valid configuration parameter in etcd v3.5.0. It was removed in v3.5.0.
+[Ciri] Reason for max-snapshots: max-snapshots is not a valid configuration parameter in etcd v3.5.0. The correct parameter is snapshot-count.
+[Ciri] Reason for heartbeat-interval: heartbeat-interval must be at least 1000 milliseconds. A value of 200 is too low.
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes must be at least 1024 (1 MB). A value of 2 is too low.
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait is specified in milliseconds but must be a duration string with a unit suffix, e.g. 5s for 5 seconds.

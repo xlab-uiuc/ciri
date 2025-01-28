@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.port</name>
+  <value>16000</value>
+    <description>The port the HBase Master should bind to.</description>
+</property>
+
+<property>
+  <name>hbase.master.logcleaner.plugins</name>
+  <value>org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner</value>
+    <description>A comma-separated list of BaseLogCleanerDelegate invoked by
+    the LogsCleaner service. These WAL cleaners are called in order,
+    so put the cleaner that prunes the most files in front. To
+    implement your own BaseLogCleanerDelegate, just put it in HBase's classpath
+    and add the fully qualified class name here. Always add the above
+    default log cleaners in the list.</description>
+</property>
+
+<property>
+  <name>hbase.client.retries.number</name>
+  <value>30</value>
+    <description>Maximum retries.  Used as maximum for all retryable
+    operations such as the getting of a cell's value, starting a row update,
+    etc.  Retry interval is a rough function based on hbase.client.pause.  At
+    first we retry at this interval but then with backoff, we pretty quickly reach
+    retrying every ten seconds.  See HConstants#RETRY_BACKOFF for how the backup
+    ramps up.  Change this setting and hbase.client.pause to suit your workload.</description>
+</property>
+
+<property>
+  <name>hfile.index.block.max.size</name>
+  <value>131072</value>
+      <description>When the size of a leaf-level, intermediate-level, or root-level
+          index block in a multi-level block index grows to this size, the
+          block is written out and a new block is started.</description>
+</property>
+
+<property>
+  <name>hbase.auth.key.update.interval</name>
+  <value>172800000</value>
+    <description>The update interval for master key for authentication tokens
+    in servers in milliseconds.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.auth.token.max.lifetime</name>
+  <value>1209600000</value>
+    <description>The maximum lifetime in milliseconds after which an
+    authentication token expires.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.storefile.refresh.period</name>
+  <value>-1</value>
+    <description>
+      The period (in milliseconds) for refreshing the store files for the secondary regions. 0
+      means this feature is disabled. Secondary regions sees new files (from flushes and
+      compactions) from primary once the secondary region refreshes the list of files in the
+      region (there is no notification mechanism). But too frequent refreshes might cause
+      extra Namenode pressure. If the files cannot be refreshed for longer than HFile TTL
+      (hbase.master.hfilecleaner.ttl) the requests are rejected. Configuring HFile TTL to a larger
+      value is also recommended with this setting.
+    </description>
+</property>
+
+<property>
+  <name>hbase.hstore.engine.class</name>
+  <value>hhh</value>
+</property>
+
+</configuration>

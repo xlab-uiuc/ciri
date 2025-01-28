@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 1, 6]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.container.stderr.pattern'], 'reason': ["The value '-1.0.0.0' for 'yarn.nodemanager.hostname' is not a valid hostname.", "The value '{*stderr*' for 'yarn.nodemanager.container.stderr.pattern' seems to be malformed. It should be a valid glob pattern without syntax errors."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.hostname	yarn.nodemanager.container.stderr.pattern
+[Ciri] Reason for yarn.nodemanager.hostname: The value '-1.0.0.0' for 'yarn.nodemanager.hostname' is not a valid hostname.
+[Ciri] Reason for yarn.nodemanager.container.stderr.pattern: The value '{*stderr*' for 'yarn.nodemanager.container.stderr.pattern' seems to be malformed. It should be a valid glob pattern without syntax errors.

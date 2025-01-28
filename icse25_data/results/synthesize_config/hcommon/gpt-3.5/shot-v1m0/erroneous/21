@@ -1,0 +1,12 @@
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'ftp.bytes-per-checksum'], 'reason': ['Invalid value type. Expected integer.', "Property 'ftp.bytes-per-checksum' must not be larger than 'ftp.stream-buffer-size'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.proxy.port	ftp.bytes-per-checksum
+[Ciri] Reason for fs.s3a.proxy.port: Invalid value type. Expected integer.
+[Ciri] Reason for ftp.bytes-per-checksum: Property 'ftp.bytes-per-checksum' must not be larger than 'ftp.stream-buffer-size'.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.assumed.role.session.duration', 'fs.s3a.select.input.compression'], 'reason': ["The value for 'fs.s3a.assumed.role.session.duration' is specified in minutes ('20m'), but should be in milliseconds according to the Hadoop 3.3.0 documentation.", "The 'fs.s3a.select.input.compression' property incorrectly lists 'none' as a valid option. The correct options should include 'bzip2', 'gzip', and possibly others, but 'none' is not a valid compression algorithm for S3 Select queries in Hadoop 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.assumed.role.session.duration	fs.s3a.select.input.compression
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The value for 'fs.s3a.assumed.role.session.duration' is specified in minutes ('20m'), but should be in milliseconds according to the Hadoop 3.3.0 documentation.
+[Ciri] Reason for fs.s3a.select.input.compression: The 'fs.s3a.select.input.compression' property incorrectly lists 'none' as a valid option. The correct options should include 'bzip2', 'gzip', and possibly others, but 'none' is not a valid compression algorithm for S3 Select queries in Hadoop 3.3.0.

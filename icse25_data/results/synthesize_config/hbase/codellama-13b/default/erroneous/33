@@ -1,0 +1,19 @@
+Wrong shot number:
+[11, 6, 3]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.regionserver.hlog.writer.impl', 'hbase.status.multicast.address.ip'], 'reason': ["The property 'hbase.regionserver.info.bindAddress' has the value '127.0.0.1' which is not within the accepted value {0.0.256.0}.", "The property 'hbase.regionserver.hlog.writer.impl' has the value 'org.apache.hadoop.hbase.regionserver.wal.ProtobufLogWriter' which is not within the accepted value {org.apache.hadoop.hbase.regionserver.wal.AsyncFSWAL}.", "The property 'hbase.status.multicast.address.ip' has the value '0.0.256.0' which is not within the accepted value {0.0.0.0}."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.status.multicast.address.ip'], 'reason': ["The property 'hbase.regionserver.info.bindAddress' has the value '127.0.0.1' which is not within the accepted value {0.0.256.0}.", "The property 'hbase.status.multicast.address.ip' has the value '0.0.256.0' which is not within the accepted value {0.0.0.0-255}."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.status.multicast.address.ip'], 'reason': ["The property 'hbase.regionserver.info.bindAddress' has the value '127.0.0.1' which is not within the accepted value {0.0.256.0}.", "The property 'hbase.status.multicast.address.ip' has the value '0.0.256.0' which is not within the accepted value {0.0.0.0, 127.0.0.1}."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.info.bindAddress	hbase.status.multicast.address.ip
+[Ciri] Reason for hbase.regionserver.info.bindAddress: The property 'hbase.regionserver.info.bindAddress' has the value '127.0.0.1' which is not within the accepted value {0.0.256.0}.
+[Ciri] Reason for hbase.status.multicast.address.ip: The property 'hbase.status.multicast.address.ip' has the value '0.0.256.0' which is not within the accepted value {0.0.0.0, 127.0.0.1}.

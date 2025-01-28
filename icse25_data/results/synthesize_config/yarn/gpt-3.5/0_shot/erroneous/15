@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms', 'yarn.nodemanager.amrmproxy.address'], 'reason': ["Property 'yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms' has an excessively large value (4000000000).", "Property 'yarn.nodemanager.amrmproxy.address' has an invalid IP address (0.0.0.0)."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms', 'yarn.nodemanager.amrmproxy.address'], 'reason': ["Property 'yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms' has a value of 4000000000 which may be too high or incorrect.", "Property 'yarn.nodemanager.amrmproxy.address' has an IP address '0.0.0.0' which may not be a valid address."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms	yarn.nodemanager.amrmproxy.address
+[Ciri] Reason for yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms: Property 'yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms' has an excessively large value (4000000000).
+[Ciri] Reason for yarn.nodemanager.amrmproxy.address: Property 'yarn.nodemanager.amrmproxy.address' has an IP address '0.0.0.0' which may not be a valid address.

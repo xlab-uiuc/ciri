@@ -1,0 +1,26 @@
+Wrong shot number:
+[10, 6, 7]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port.auto'], 'reason': ["The property 'hbase.regionserver.info.port.auto' has the value 'true' which is not within the accepted value {false}."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.keyvalue.maxsize'], 'reason': ["The property 'hbase.client.keyvalue.maxsize' has the value '10485760' which is larger than the maximum allowed value of 1048576."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.keyvalue.maxsize'], 'reason': ["The property 'hbase.client.keyvalue.maxsize' has the value '10485760' which is not within the accepted value {0,}."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.client.keyvalue.maxsize'], 'reason': ["The property 'hbase.client.keyvalue.maxsize' has the value '10485760' which is not within the accepted value {0,104857600}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.client.keyvalue.maxsize
+[Ciri] Reason for hbase.client.keyvalue.maxsize: The property 'hbase.client.keyvalue.maxsize' has the value '10485760' which is not within the accepted value {0,}.

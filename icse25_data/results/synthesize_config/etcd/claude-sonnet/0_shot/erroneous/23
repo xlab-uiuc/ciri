@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log-level', 'listen-peer-urls', 'client-cert-auth'], 'reason': ["The log-level 'NOEXIST_LEVEL' is not a valid log level for etcd 3.5.0. Valid log levels are: 'DEBUG', 'INFO', 'WARN', 'ERROR', 'DPANIC', 'PANIC', and 'FATAL'.", "The listen-peer-urls value 'http://localhost:2380' should use the URL scheme 'https://' for secure communication between etcd peers.", "The client-cert-auth option is set to 'true', but no certificate paths are specified. To enable client certificate authentication, you need to provide paths to the trusted CA certificate file, server certificate file, and server private key file."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: log-level	listen-peer-urls	client-cert-auth
+[Ciri] Reason for log-level: The log-level 'NOEXIST_LEVEL' is not a valid log level for etcd 3.5.0. Valid log levels are: 'DEBUG', 'INFO', 'WARN', 'ERROR', 'DPANIC', 'PANIC', and 'FATAL'.
+[Ciri] Reason for listen-peer-urls: The listen-peer-urls value 'http://localhost:2380' should use the URL scheme 'https://' for secure communication between etcd peers.
+[Ciri] Reason for client-cert-auth: The client-cert-auth option is set to 'true', but no certificate paths are specified. To enable client certificate authentication, you need to provide paths to the trusted CA certificate file, server certificate file, and server private key file.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-config-file'], 'reason': ['cluster-enabled is not a valid parameter for redis version 7.0.0', 'cluster-config-file is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-config-file'], 'reason': ['cluster-enabled must be set to yes or no', 'cluster-config-file must be set to a valid file path']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-config-file'], 'reason': ['cluster-enabled is not a valid parameter', 'cluster-config-file is not a valid parameter']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-enabled	cluster-config-file
+[Ciri] Reason for cluster-enabled: cluster-enabled is not a valid parameter for redis version 7.0.0
+[Ciri] Reason for cluster-config-file: cluster-config-file is not a valid parameter

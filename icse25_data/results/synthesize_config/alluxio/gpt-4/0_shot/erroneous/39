@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.job.master.finished.job.purge.count', 'alluxio.worker.management.tier.promote.quota.percent', 'alluxio.worker.network.shutdown.timeout'], 'reason': ['The IP address is invalid. IP addresses must be in the range from 0.0.0.0 to 255.255.255.255.', 'The value cannot be negative. It should specify the number of finished jobs to keep.', 'The percentage value must be between 0 and 100.', "The correct format for specifying a duration in Alluxio configuration is using time unit suffixes like 'ms', 'sec', 'min', etc., without spaces."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.proxy.web.bind.host	alluxio.job.master.finished.job.purge.count	alluxio.worker.management.tier.promote.quota.percent	alluxio.worker.network.shutdown.timeout
+[Ciri] Reason for alluxio.proxy.web.bind.host: The IP address is invalid. IP addresses must be in the range from 0.0.0.0 to 255.255.255.255.
+[Ciri] Reason for alluxio.job.master.finished.job.purge.count: The value cannot be negative. It should specify the number of finished jobs to keep.
+[Ciri] Reason for alluxio.worker.management.tier.promote.quota.percent: The percentage value must be between 0 and 100.
+[Ciri] Reason for alluxio.worker.network.shutdown.timeout: The correct format for specifying a duration in Alluxio configuration is using time unit suffixes like 'ms', 'sec', 'min', etc., without spaces.

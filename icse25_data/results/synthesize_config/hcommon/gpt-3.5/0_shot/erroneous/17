@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.socket.recv.buffer', 'fs.s3a.s3guard.ddb.background.sleep', 'fs.s3a.select.input.csv.quote.character', 'ipc.client.connection.maxidletime', 'ipc.[port_number].weighted-cost.lockfree', 'hadoop.ssl.keystores.factory.class'], 'reason': ['The value of hadoop.security.dns.nameserver is set to an invalid IP address (0.0.0).', 'The value of fs.defaultFS is set to a local file system (file:///). It should be set to an HDFS URI.', 'The value of fs.s3a.socket.recv.buffer should be represented in bytes, not just a number.', "The value of fs.s3a.s3guard.ddb.background.sleep should not have 'ms' in the value.", 'The value of fs.s3a.select.input.csv.quote.character should not be just a quote character.', 'The value of ipc.client.connection.maxidletime should be in milliseconds.', 'The property ipc.[port_number].weighted-cost.lockfree is not correctly defined.', 'The value of hadoop.ssl.keystores.factory.class is not a valid class name.']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.s3guard.ddb.background.sleep', 'ipc.[port_number].weighted-cost.lockfree'], 'reason': ['The value of hadoop.security.dns.nameserver should be a valid IP address.', 'The value of fs.defaultFS should be a valid file system URI.', 'The value of fs.s3a.s3guard.ddb.background.sleep should be specified in milliseconds without units.', 'The property ipc.[port_number].weighted-cost.lockfree is not correctly formatted.']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.socket.recv.buffer', 'fs.s3a.s3guard.ddb.background.sleep', 'fs.s3a.select.input.csv.quote.character', 'ipc.client.connection.maxidletime', 'ipc.[port_number].weighted-cost.lockfree', 'hadoop.ssl.keystores.factory.class'], 'reason': ['The value of hadoop.security.dns.nameserver should be a valid IP address.', 'The value of fs.defaultFS should be a valid file system URI.', 'The value of fs.s3a.socket.recv.buffer should be a numeric value.', 'The value of fs.s3a.s3guard.ddb.background.sleep should be in milliseconds format.', 'The value of fs.s3a.select.input.csv.quote.character should be a single character.', 'The value of ipc.client.connection.maxidletime should be in milliseconds.', 'The property ipc.[port_number].weighted-cost.lockfree is not properly defined.', 'The value of hadoop.ssl.keystores.factory.class should be a valid class name.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.defaultFS	fs.s3a.socket.recv.buffer	fs.s3a.s3guard.ddb.background.sleep	fs.s3a.select.input.csv.quote.character	ipc.client.connection.maxidletime	ipc.[port_number].weighted-cost.lockfree	hadoop.ssl.keystores.factory.class
+[Ciri] Reason for hadoop.security.dns.nameserver: The value of hadoop.security.dns.nameserver should be a valid IP address.
+[Ciri] Reason for fs.defaultFS: The value of fs.defaultFS is set to a local file system (file:///). It should be set to an HDFS URI.
+[Ciri] Reason for fs.s3a.socket.recv.buffer: The value of fs.s3a.socket.recv.buffer should be a numeric value.
+[Ciri] Reason for fs.s3a.s3guard.ddb.background.sleep: The value of fs.s3a.s3guard.ddb.background.sleep should be in milliseconds format.
+[Ciri] Reason for fs.s3a.select.input.csv.quote.character: The value of fs.s3a.select.input.csv.quote.character should not be just a quote character.
+[Ciri] Reason for ipc.client.connection.maxidletime: The value of ipc.client.connection.maxidletime should be in milliseconds.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The property ipc.[port_number].weighted-cost.lockfree is not properly defined.
+[Ciri] Reason for hadoop.ssl.keystores.factory.class: The value of hadoop.ssl.keystores.factory.class should be a valid class name.

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.local.dir</name>
+  <value>/valid/file1</value>
+    <description>Directory on the local filesystem to be used
+    as a local storage.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.region.split.policy</name>
+  <value>org.apache.hadoop.hbase.regionserver.SteppingSplitPolicy</value>
+    <description>
+      A split policy determines when a region should be split. The various
+      other split policies that are available currently are BusyRegionSplitPolicy,
+      ConstantSizeRegionSplitPolicy, DisabledRegionSplitPolicy,
+      DelimitedKeyPrefixRegionSplitPolicy, KeyPrefixRegionSplitPolicy, and
+      SteppingSplitPolicy. DisabledRegionSplitPolicy blocks manual region splitting.
+    </description>
+</property>
+
+<property>
+  <name>hbase.regions.slop</name>
+  <value>0.002</value>
+    <description>Rebalance if any regionserver has average + (average * slop) regions.
+      The default value of this parameter is 0.001 in StochasticLoadBalancer (the default load balancer),
+      while the default is 0.2 in other load balancers (i.e., SimpleLoadBalancer).</description>
+</property>
+
+<property>
+  <name>hbase.storescanner.parallel.seek.enable</name>
+  <value>true</value>
+    <description>
+      Enables StoreFileScanner parallel-seeking in StoreScanner,
+      a feature which can reduce response latency under special conditions.</description>
+</property>
+
+<property>
+  <name>hfile.block.cache.size</name>
+  <value>0.8</value>
+    <description>Percentage of maximum heap (-Xmx setting) to allocate to block cache
+        used by a StoreFile. Default of 0.4 means allocate 40%.
+        Set to 0 to disable but it's not recommended; you need at least
+        enough cache to hold the storefile indices.</description>
+</property>
+
+<property>
+  <name>hfile.block.index.cacheonwrite</name>
+  <value>false</value>
+      <description>This allows to put non-root multi-level index blocks into the block
+          cache at the time the index is being written.</description>
+</property>
+
+<property>
+  <name>hbase.auth.token.max.lifetime</name>
+  <value>1209600000</value>
+    <description>The maximum lifetime in milliseconds after which an
+    authentication token expires.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.rootdir.perms</name>
+  <value>700</value>
+    <description>FS Permissions for the root data subdirectory in a secure (kerberos) setup.
+    When master starts, it creates the rootdir with this permissions or sets the permissions
+    if it does not match.</description>
+</property>
+
+</configuration>

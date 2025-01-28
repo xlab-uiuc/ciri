@@ -1,0 +1,12 @@
+Wrong shot number:
+[4, 9, 10, 8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'ipc.[port_number].decay-scheduler.decay-factor'], 'reason': ["The property 'fs.ftp.transfer.mode' has the value 'NOEXIST_TRANSFER_MODE' which is not within the accepted values {STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, COMPRESSED_TRANSFER_MODE}.", "The property 'ipc.[port_number].decay-scheduler.decay-factor' has the value '1.0' which is not within the accepted range (0.0 - 1.0)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.transfer.mode	ipc.[port_number].decay-scheduler.decay-factor
+[Ciri] Reason for fs.ftp.transfer.mode: The property 'fs.ftp.transfer.mode' has the value 'NOEXIST_TRANSFER_MODE' which is not within the accepted values {STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, COMPRESSED_TRANSFER_MODE}.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.decay-factor: The property 'ipc.[port_number].decay-scheduler.decay-factor' has the value '1.0' which is not within the accepted range (0.0 - 1.0).

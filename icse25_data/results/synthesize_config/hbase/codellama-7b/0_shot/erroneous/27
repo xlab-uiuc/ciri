@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy'], 'reason': ['hbase.regionserver.region.split.policy is not a valid value. Valid values are NONE_POLICY, BUSY_SPLIT_POLICY, CONSTANT_SIZE_SPLIT_POLICY, DELIMITED_KEY_PREFIX_SPLIT_POLICY, KEY_PREFIX_SPLIT_POLICY, and STEPPING_SPLIT_POLICY.']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy', 'hbase.regionserver.regionSplitLimit'], 'reason': ['hbase.regionserver.region.split.policy is not a valid value. The valid values are NONE_POLICY, BUSY_SPLIT_POLICY, CONSTANT_SIZE_SPLIT_POLICY, DELIMITED_KEY_PREFIX_SPLIT_POLICY, KEY_PREFIX_SPLIT_POLICY, and STEPPING_SPLIT_POLICY.', 'hbase.regionserver.regionSplitLimit is not a valid value. The value must be greater than 0.']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy', 'hbase.regionserver.regionSplitLimit'], 'reason': ['hbase.regionserver.region.split.policy is not a valid value. The valid values are: NONE_POLICY, BUSY_SPLIT_POLICY, CONSTANT_SIZE_SPLIT_POLICY, DELIMITED_KEY_PREFIX_SPLIT_POLICY, KEY_PREFIX_SPLIT_POLICY, STEPPING_SPLIT_POLICY', 'hbase.regionserver.regionSplitLimit is not a valid value. The valid value is an integer greater than 0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.region.split.policy	hbase.regionserver.regionSplitLimit
+[Ciri] Reason for hbase.regionserver.region.split.policy: hbase.regionserver.region.split.policy is not a valid value. The valid values are: NONE_POLICY, BUSY_SPLIT_POLICY, CONSTANT_SIZE_SPLIT_POLICY, DELIMITED_KEY_PREFIX_SPLIT_POLICY, KEY_PREFIX_SPLIT_POLICY, STEPPING_SPLIT_POLICY
+[Ciri] Reason for hbase.regionserver.regionSplitLimit: hbase.regionserver.regionSplitLimit is not a valid value. The valid value is an integer greater than 0

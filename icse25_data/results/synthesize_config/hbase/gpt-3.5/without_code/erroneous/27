@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 10, 11]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy', 'hbase.hbase.regionserver.regionSplitLimit'], 'reason': ["The value of the property 'hbase.regionserver.region.split.policy' is 'NONE_POLICY' which is not a valid split policy. Valid options are BusyRegionSplitPolicy, ConstantSizeRegionSplitPolicy, DisabledRegionSplitPolicy, DelimitedKeyPrefixRegionSplitPolicy, KeyPrefixRegionSplitPolicy, and SteppingSplitPolicy.", "The value of the property 'hbase.regionserver.regionSplitLimit' should be greater than 0 to indicate a valid limit for region splitting."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy', 'hbase.hbase.regionserver.regionSplitLimit'], 'reason': ["The value of the property 'hbase.regionserver.region.split.policy' is 'NONE_POLICY' which is not a valid split policy. Valid split policies are BusyRegionSplitPolicy, ConstantSizeRegionSplitPolicy, DisabledRegionSplitPolicy, DelimitedKeyPrefixRegionSplitPolicy, KeyPrefixRegionSplitPolicy, and SteppingSplitPolicy.", "The value of the property 'hbase.regionserver.regionSplitLimit' should be greater than 0 to specify a valid limit for the number of regions after which no more region splitting should take place."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy', 'hbase.hbase.regionserver.regionSplitLimit'], 'reason': ["The value of the property 'hbase.regionserver.region.split.policy' is set to 'NONE_POLICY' which is not a valid split policy. Valid options are BusyRegionSplitPolicy, ConstantSizeRegionSplitPolicy, DisabledRegionSplitPolicy, DelimitedKeyPrefixRegionSplitPolicy, KeyPrefixRegionSplitPolicy, and SteppingSplitPolicy.", "The value of the property 'hbase.regionserver.regionSplitLimit' should be greater than 0 to specify a valid limit for the number of regions after which no more region splitting should take place."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.region.split.policy	hbase.hbase.regionserver.regionSplitLimit
+[Ciri] Reason for hbase.regionserver.region.split.policy: The value of the property 'hbase.regionserver.region.split.policy' is set to 'NONE_POLICY' which is not a valid split policy. Valid options are BusyRegionSplitPolicy, ConstantSizeRegionSplitPolicy, DisabledRegionSplitPolicy, DelimitedKeyPrefixRegionSplitPolicy, KeyPrefixRegionSplitPolicy, and SteppingSplitPolicy.
+[Ciri] Reason for hbase.hbase.regionserver.regionSplitLimit: The value of the property 'hbase.regionserver.regionSplitLimit' should be greater than 0 to indicate a valid limit for region splitting.

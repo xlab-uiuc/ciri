@@ -1,0 +1,21 @@
+Wrong shot number:
+[4, 8, 2]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'vacuum_multixact_failsafe_age', 'max_slot_wal_keep_size', 'autovacuum_naptime'], 'reason': ["The property 'shared_buffers' has the value '128mm' which uses an incorrect unit.", "The property 'vacuum_multixact_failsafe_age' has the value '3200000000' which exceeds the range of an Integer.", "The property 'max_slot_wal_keep_size' has the value '-1' which is out of range.", "The property 'autovacuum_naptime' has the value '10min' which uses an incorrect unit."]}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'vacuum_multixact_failsafe_age', 'max_slot_wal_keep_size', 'autovacuum_naptime'], 'reason': ["The property 'shared_buffers' has the value '128mm' which uses an incorrect unit.", "The property 'vacuum_multixact_failsafe_age' has the value '3200000000' which exceeds the range of an Integer.", "The property 'max_slot_wal_keep_size' has the value '-1' which is not a valid value.", "The property 'autovacuum_naptime' has the value '10min' which uses an incorrect unit."]}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'vacuum_multixact_failsafe_age', 'max_slot_wal_keep_size'], 'reason': ["The property 'shared_buffers' has the value '128mm' which uses an incorrect unit.", "The property 'vacuum_multixact_failsafe_age' has the value '3200000000' which exceeds the range of an Integer.", "The property 'max_slot_wal_keep_size' has the value '-1' which is out of the valid range."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: shared_buffers	vacuum_multixact_failsafe_age	max_slot_wal_keep_size	autovacuum_naptime
+[Ciri] Reason for shared_buffers: The property 'shared_buffers' has the value '128mm' which uses an incorrect unit.
+[Ciri] Reason for vacuum_multixact_failsafe_age: The property 'vacuum_multixact_failsafe_age' has the value '3200000000' which exceeds the range of an Integer.
+[Ciri] Reason for max_slot_wal_keep_size: The property 'max_slot_wal_keep_size' has the value '-1' which is out of range.
+[Ciri] Reason for autovacuum_naptime: The property 'autovacuum_naptime' has the value '10min' which uses an incorrect unit.

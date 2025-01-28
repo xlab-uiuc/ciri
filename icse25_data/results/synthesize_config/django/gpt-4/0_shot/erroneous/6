@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_PATH', 'WSGI_APPLICATION', 'PASSWORD_RESET_TIMEOUT'], 'reason': ['SESSION_COOKIE_PATH is not a standard Django setting. You might be looking for SESSION_COOKIE_PATH which should be a string specifying the path of the session cookie.', "WSGI_APPLICATION should not be None. It should be set to a string pointing to the WSGI application callable with your project. For example, 'myproject.wsgi.application'.", 'PASSWORD_RESET_TIMEOUT setting has been renamed to PASSWORD_RESET_TIMEOUT_DAYS in Django 4.0. The value should specify the number of days a password reset link is valid for.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: SESSION_COOKIE_PATH	WSGI_APPLICATION	PASSWORD_RESET_TIMEOUT
+[Ciri] Reason for SESSION_COOKIE_PATH: SESSION_COOKIE_PATH is not a standard Django setting. You might be looking for SESSION_COOKIE_PATH which should be a string specifying the path of the session cookie.
+[Ciri] Reason for WSGI_APPLICATION: WSGI_APPLICATION should not be None. It should be set to a string pointing to the WSGI application callable with your project. For example, 'myproject.wsgi.application'.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: PASSWORD_RESET_TIMEOUT setting has been renamed to PASSWORD_RESET_TIMEOUT_DAYS in Django 4.0. The value should specify the number of days a password reset link is valid for.

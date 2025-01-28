@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log-level', 'logger', 'client-cert-auth', 'force-new-cluster', 'election-timeout'], 'reason': ["Unknown log-level 'NOEXIST_LEVEL'.", "Unknown logger 'zap'.", "Unknown client-cert-auth 'true'.", "Unknown force-new-cluster 'false'.", "Unknown election-timeout '1000'."]}
+
+{'hasError': True, 'errParameter': ['log-level', 'logger', 'client-cert-auth', 'force-new-cluster', 'election-timeout'], 'reason': ['Invalid log-level parameter', 'Invalid logger parameter', 'client-cert-auth should be a boolean value', 'force-new-cluster should be a boolean value', 'election-timeout should be a duration value']}
+
+{'hasError': True, 'errParameter': ['log-level', 'logger', 'client-cert-auth', 'force-new-cluster', 'election-timeout'], 'reason': ['Invalid log-level parameter.', 'Invalid logger parameter.', 'client-cert-auth should be a boolean value.', 'force-new-cluster should be a boolean value.', 'election-timeout should be a string value.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: log-level	logger	client-cert-auth	force-new-cluster	election-timeout
+[Ciri] Reason for log-level: Invalid log-level parameter.
+[Ciri] Reason for logger: Invalid logger parameter.
+[Ciri] Reason for client-cert-auth: client-cert-auth should be a boolean value.
+[Ciri] Reason for force-new-cluster: force-new-cluster should be a boolean value
+[Ciri] Reason for election-timeout: election-timeout should be a string value.

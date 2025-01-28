@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.blocksize</name>
+  <value>67108864</value>
+  <description>
+      The default block size for new files, in bytes.
+      You can use the following suffix (case insensitive):
+      k(kilo), m(mega), g(giga), t(tera), p(peta), e(exa) to specify the size (such as 128k, 512m, 1g, etc.),
+      Or provide complete size in bytes (such as 134217728 for 128 MB).
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.full.block.report.lease.length.ms</name>
+  <value>600000</value>
+  <description>
+    The number of milliseconds that the NameNode will wait before invalidating
+    a full block report lease.  This prevents a crashed DataNode from
+    permanently using up a full block report lease.
+  </description>
+</property>
+
+<property>
+  <name>dfs.image.transfer.bandwidthPerSec</name>
+  <value>0</value>
+  <description>
+        Maximum bandwidth used for regular image transfers (instead of
+        bootstrapping the standby namenode), in bytes per second.
+        This can help keep normal namenode operations responsive during
+        checkpointing.
+        A default value of 0 indicates that throttling is disabled.
+        The maximum bandwidth used for bootstrapping standby namenode is
+        configured with dfs.image.transfer-bootstrap-standby.bandwidthPerSec.
+        Support multiple size unit suffix(case insensitive), as described
+        in dfs.blocksize.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.datanode-restart.timeout</name>
+  <value>60s</value>
+  <description>
+    Expert only. The time to wait, in seconds, from reception of an
+    datanode shutdown notification for quick restart, until declaring
+    the datanode dead and invoking the normal recovery mechanisms.
+    The notification is sent by a datanode when it is being shutdown
+    using the shutdownDatanode admin command with the upgrade option.
+    Support multiple time unit suffix(case insensitive), as described
+    in dfs.heartbeat.interval.If no time unit is specified then seconds
+    is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.read.shortcircuit</name>
+  <value>false</value>
+  <description>
+    This configuration parameter turns on short-circuit local reads.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.cache.revocation.polling.ms</name>
+  <value>500</value>
+  <description>How often the DataNode should poll to see if the clients have
+    stopped using a replica that the DataNode wants to uncache.
+  </description>
+</property>
+
+<property>
+  <name>dfs.data.transfer.server.tcpnodelay</name>
+  <value>false</value>
+  <description>
+    If true, set TCP_NODELAY to sockets for transferring data between Datanodes.
+  </description>
+</property>
+
+<property>
+  <name>dfs.mover.movedWinWidth</name>
+  <value>2700000</value>
+  <description>
+    The minimum time interval, in milliseconds, that a block can be
+    moved to another location again.
+  </description>
+</property>
+
+</configuration>

@@ -1,0 +1,27 @@
+Wrong shot number:
+[5, 6, 1]
+
+Correct shot number:
+[15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'ha.zookeeper.parent-znode', 'hadoop.ssl.server.conf'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, and PASSIVE_REMOTE_DATA_CONNECTION_MODE.", "The property 'ha.zookeeper.parent-znode' has the value '/valid/file1' which is not recommended as it should not be manually configured.", "The property 'hadoop.ssl.server.conf' should not have a value '/valid/file1' as it is a resource file and not a specific path."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'ftp.replication'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, and PASSIVE_REMOTE_DATA_CONNECTION_MODE.", "The property 'ftp.replication' should not be used as it is not a recognized configuration property."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'ftp.replication'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, and PASSIVE_REMOTE_DATA_CONNECTION_MODE.", "The property 'ftp.replication' should not be present in the configuration file for HCommon version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'ftp.replication'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, and PASSIVE_REMOTE_DATA_CONNECTION_MODE.", "The property 'ftp.replication' should not be present in the configuration for HCommon version 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.data.connection.mode	ftp.replication
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, and PASSIVE_REMOTE_DATA_CONNECTION_MODE.
+[Ciri] Reason for ftp.replication: The property 'ftp.replication' should not be present in the configuration for HCommon version 3.3.0.

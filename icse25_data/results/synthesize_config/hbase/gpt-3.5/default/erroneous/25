@@ -1,0 +1,19 @@
+Wrong shot number:
+[9, 2, 3]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.perserver.requests.threshold'], 'reason': ["The property 'hbase.client.perserver.requests.threshold' has a value of '4294967294' which is out of the valid range."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.perserver.requests.threshold', 'hbase.regionserver.thread.compaction.throttle'], 'reason': ["The property 'hbase.client.perserver.requests.threshold' has a value of '4294967294' which is out of the valid range.", "The property 'hbase.regionserver.thread.compaction.throttle' has a value of '2684354560' which is out of the valid range."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.perserver.requests.threshold', 'hbase.regionserver.thread.compaction.throttle'], 'reason': ["The property 'hbase.client.perserver.requests.threshold' has a value of '4294967294' which is out of the valid range.", "The property 'hbase.regionserver.thread.compaction.throttle' has a value of '2684354560' which is out of the valid range."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.client.perserver.requests.threshold	hbase.regionserver.thread.compaction.throttle
+[Ciri] Reason for hbase.client.perserver.requests.threshold: The property 'hbase.client.perserver.requests.threshold' has a value of '4294967294' which is out of the valid range.
+[Ciri] Reason for hbase.regionserver.thread.compaction.throttle: The property 'hbase.regionserver.thread.compaction.throttle' has a value of '2684354560' which is out of the valid range.

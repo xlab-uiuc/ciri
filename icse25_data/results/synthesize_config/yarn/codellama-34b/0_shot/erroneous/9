@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.local-cache.max-files-per-directory', 'yarn.nodemanager.pmem-check-enabled', 'yarn.nodemanager.runtime.linux.sandbox-mode', 'yarn.nodemanager.recovery.supervised', 'yarn.minicluster.fixed.ports', 'yarn.node-labels.enabled'], 'reason': ['yarn.nodemanager.hostname is not a valid hostname', 'yarn.nodemanager.local-cache.max-files-per-directory must be greater than 36', 'yarn.nodemanager.pmem-check-enabled must be false', 'yarn.nodemanager.runtime.linux.sandbox-mode must be enabled', 'yarn.nodemanager.recovery.supervised must be true', 'yarn.minicluster.fixed.ports must be true', 'yarn.node-labels.enabled must be false']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: yarn.nodemanager.hostname	yarn.nodemanager.local-cache.max-files-per-directory	yarn.nodemanager.pmem-check-enabled	yarn.nodemanager.runtime.linux.sandbox-mode	yarn.nodemanager.recovery.supervised	yarn.minicluster.fixed.ports	yarn.node-labels.enabled
+[Ciri] Reason for yarn.nodemanager.hostname: yarn.nodemanager.hostname is not a valid hostname
+[Ciri] Reason for yarn.nodemanager.local-cache.max-files-per-directory: yarn.nodemanager.local-cache.max-files-per-directory must be greater than 36
+[Ciri] Reason for yarn.nodemanager.pmem-check-enabled: yarn.nodemanager.pmem-check-enabled must be false
+[Ciri] Reason for yarn.nodemanager.runtime.linux.sandbox-mode: yarn.nodemanager.runtime.linux.sandbox-mode must be enabled
+[Ciri] Reason for yarn.nodemanager.recovery.supervised: yarn.nodemanager.recovery.supervised must be true
+[Ciri] Reason for yarn.minicluster.fixed.ports: yarn.minicluster.fixed.ports must be true
+[Ciri] Reason for yarn.node-labels.enabled: yarn.node-labels.enabled must be false

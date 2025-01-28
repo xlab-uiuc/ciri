@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.swift.impl</name>
+  <value>org.apache.hadoop.fs.swift.snative.SwiftNativeFileSystem</value>
+  <description>The implementation class of the OpenStack Swift Filesystem</description>
+</property>
+
+<property>
+  <name>fs.s3a.threads.max</name>
+  <value>32</value>
+  <description>The total number of threads available in the filesystem for data
+    uploads *or any other queued filesystem operation*.</description>
+</property>
+
+<property>
+  <name>ipc.server.log.slow.rpc</name>
+  <value>false</value>
+    <description>This setting is useful to troubleshoot performance issues for
+     various services. If this value is set to true then we log requests that
+     fall into 99th percentile as well as increment RpcSlowCalls counter.
+    </description>
+</property>
+
+<property>
+  <name>fs.permissions.umask-mode</name>
+  <value>1.1.1</value>
+  <description>
+    The umask used when creating files and directories.
+    Can be in octal or in symbolic. Examples are:
+    "022" (octal for u=rwx,g=r-x,o=r-x in symbolic),
+    or "u=rwx,g=rwx,o=" (symbolic for 007 in octal).
+  </description>
+</property>
+
+<property>
+  <name>ha.health-monitor.connect-retry-interval.ms</name>
+  <value>2000</value>
+  <description>
+    How often to retry connecting to the service.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.crypto.codec.classes.aes.ctr.nopadding</name>
+  <value>org.apache.hadoop.crypto.JceAesCtrCryptoCodec</value>
+  <description>
+    Comma-separated list of crypto codec implementations for AES/CTR/NoPadding.
+    The first implementation will be used if available, others are fallbacks.
+  </description>
+</property>
+
+<property>
+  <name>fs.client.resolve.topology.enabled</name>
+  <value>true</value>
+    <description>Whether the client machine will use the class specified by
+      property net.topology.node.switch.mapping.impl to compute the network
+      distance between itself and remote machines of the FileSystem. Additional
+      properties might need to be configured depending on the class specified
+      in net.topology.node.switch.mapping.impl. For example, if
+      org.apache.hadoop.net.ScriptBasedMapping is used, a valid script file
+      needs to be specified in net.topology.script.file.name.
+    </description>
+</property>
+
+<property>
+  <name>fs.adl.oauth2.msi.port</name>
+  <value>3000</value>
+    <description>
+      The localhost port for the MSI token service. This is the port specified
+      when creating the Azure VM. The default, if this setting is not specified,
+      is 50342.
+      Used by MSI token provider.
+    </description>
+</property>
+
+</configuration>

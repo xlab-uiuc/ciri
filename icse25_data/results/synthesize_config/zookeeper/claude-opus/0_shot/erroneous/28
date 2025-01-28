@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'maxSessionTimeout', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['secureClientPortAddress should be a valid IP address. 0.0.256.0 is not valid as the maximum value for each octet is 255.', 'maxSessionTimeout cannot be negative. It should be a positive integer value.', "quorum.auth.kerberos.servicePrincipal should be in the format 'service/hostname@REALM'. 'zkquorum/localhost' is missing the realm."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: secureClientPortAddress	maxSessionTimeout	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress should be a valid IP address. 0.0.256.0 is not valid as the maximum value for each octet is 255.
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout cannot be negative. It should be a positive integer value.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal should be in the format 'service/hostname@REALM'. 'zkquorum/localhost' is missing the realm.

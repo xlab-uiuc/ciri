@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.dir', 'dfs.image.transfer.bandwidthPerSec', 'dfs.namenode.legacy-oiv-image.dir'], 'reason': ["The value for dfs.namenode.checkpoint.dir should be a valid directory path, but 'ciri' is not a valid path.", 'The value for dfs.image.transfer.bandwidthPerSec is deprecated since version 3.0.0. It should be configured using dfs.image.transfer-bootstrap-standby.bandwidthPerSec instead.', 'The property dfs.namenode.legacy-oiv-image.dir is deprecated since version 3.0.0. The old fsimage format is not supported since 3.0.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.checkpoint.dir	dfs.image.transfer.bandwidthPerSec	dfs.namenode.legacy-oiv-image.dir
+[Ciri] Reason for dfs.namenode.checkpoint.dir: The value for dfs.namenode.checkpoint.dir should be a valid directory path, but 'ciri' is not a valid path.
+[Ciri] Reason for dfs.image.transfer.bandwidthPerSec: The value for dfs.image.transfer.bandwidthPerSec is deprecated since version 3.0.0. It should be configured using dfs.image.transfer-bootstrap-standby.bandwidthPerSec instead.
+[Ciri] Reason for dfs.namenode.legacy-oiv-image.dir: The property dfs.namenode.legacy-oiv-image.dir is deprecated since version 3.0.0. The old fsimage format is not supported since 3.0.0.

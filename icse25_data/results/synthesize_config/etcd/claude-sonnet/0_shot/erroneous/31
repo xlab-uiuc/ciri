@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'initial-advertise-peer-urls', 'proxy-dial-timeout', 'discovery-fallback', 'proxy', 'advertise-client-urls', 'peer-cert-file'], 'reason': ['proxy-refresh-interval is not a valid configuration parameter in etcd 3.5.0. It was introduced in etcd 3.5.1.', "initial-advertise-peer-urls should use the URL scheme 'https://' for secure communication between peers.", 'proxy-dial-timeout is not a valid configuration parameter in etcd 3.5.0. It was introduced in etcd 3.5.1.', 'discovery-fallback is not a valid configuration parameter in etcd 3.5.0. It was introduced in etcd 3.5.1.', "proxy should be set to 'on' or 'off' (case-insensitive) if used. However, it is not a valid configuration parameter in etcd 3.5.0. It was introduced in etcd 3.5.1.", "advertise-client-urls should use the URL scheme 'https://' for secure communication with clients.", 'peer-cert-file should be an absolute path to the peer server certificate file.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: proxy-refresh-interval	initial-advertise-peer-urls	proxy-dial-timeout	discovery-fallback	proxy	advertise-client-urls	peer-cert-file
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval is not a valid configuration parameter in etcd 3.5.0. It was introduced in etcd 3.5.1.
+[Ciri] Reason for initial-advertise-peer-urls: initial-advertise-peer-urls should use the URL scheme 'https://' for secure communication between peers.
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout is not a valid configuration parameter in etcd 3.5.0. It was introduced in etcd 3.5.1.
+[Ciri] Reason for discovery-fallback: discovery-fallback is not a valid configuration parameter in etcd 3.5.0. It was introduced in etcd 3.5.1.
+[Ciri] Reason for proxy: proxy should be set to 'on' or 'off' (case-insensitive) if used. However, it is not a valid configuration parameter in etcd 3.5.0. It was introduced in etcd 3.5.1.
+[Ciri] Reason for advertise-client-urls: advertise-client-urls should use the URL scheme 'https://' for secure communication with clients.
+[Ciri] Reason for peer-cert-file: peer-cert-file should be an absolute path to the peer server certificate file.

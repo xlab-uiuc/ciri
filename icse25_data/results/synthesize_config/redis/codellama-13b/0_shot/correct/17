@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-announce-port', 'replica-lazy-flush', 'replica-read-only', 'tls-ca-cert-dir'], 'reason': ['replica-announce-port is not a valid port number', 'replica-lazy-flush is not a valid boolean', 'replica-read-only is not a valid boolean', 'tls-ca-cert-dir is not a valid directory']}
+
+{'hasError': True, 'errParameter': ['loglevel', 'list-max-listpack-size', 'auto-aof-rewrite-percentage', 'replica-announce-port', 'replica-lazy-flush', 'unixsocketperm', 'replica-read-only', 'tls-ca-cert-dir'], 'reason': ['loglevel is not a valid option', 'list-max-listpack-size is not a valid option', 'auto-aof-rewrite-percentage is not a valid option', 'replica-announce-port is not a valid option', 'replica-lazy-flush is not a valid option', 'unixsocketperm is not a valid option', 'replica-read-only is not a valid option', 'tls-ca-cert-dir is not a valid option']}
+
+{'hasError': True, 'errParameter': ['loglevel', 'list-max-listpack-size', 'auto-aof-rewrite-percentage', 'replica-announce-port', 'replica-lazy-flush', 'unixsocketperm', 'replica-read-only', 'tls-ca-cert-dir'], 'reason': ['loglevel is not a valid parameter', 'list-max-listpack-size is not a valid parameter', 'auto-aof-rewrite-percentage is not a valid parameter', 'replica-announce-port is not a valid parameter', 'replica-lazy-flush is not a valid parameter', 'unixsocketperm is not a valid parameter', 'replica-read-only is not a valid parameter', 'tls-ca-cert-dir is not a valid parameter']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: loglevel	list-max-listpack-size	auto-aof-rewrite-percentage	replica-announce-port	replica-lazy-flush	unixsocketperm	replica-read-only	tls-ca-cert-dir
+[Ciri] Reason for loglevel: loglevel is not a valid option
+[Ciri] Reason for list-max-listpack-size: list-max-listpack-size is not a valid option
+[Ciri] Reason for auto-aof-rewrite-percentage: auto-aof-rewrite-percentage is not a valid option
+[Ciri] Reason for replica-announce-port: replica-announce-port is not a valid parameter
+[Ciri] Reason for replica-lazy-flush: replica-lazy-flush is not a valid option
+[Ciri] Reason for unixsocketperm: unixsocketperm is not a valid option
+[Ciri] Reason for replica-read-only: replica-read-only is not a valid parameter
+[Ciri] Reason for tls-ca-cert-dir: tls-ca-cert-dir is not a valid option

@@ -1,0 +1,12 @@
+Correct shot number:
+[15, 13, 14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.connection.request.timeout', 'hadoop.ssl.enabled'], 'reason': ["The value for 'fs.s3a.connection.request.timeout' should be greater than 0 to set a timeout for HTTP requests.", "The property 'hadoop.ssl.enabled' is deprecated. Use 'dfs.http.policy' and 'yarn.http.policy' instead."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.connection.request.timeout	hadoop.ssl.enabled
+[Ciri] Reason for fs.s3a.connection.request.timeout: The value for 'fs.s3a.connection.request.timeout' should be greater than 0 to set a timeout for HTTP requests.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' is deprecated. Use 'dfs.http.policy' and 'yarn.http.policy' instead.

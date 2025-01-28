@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'listen-peer-urls', 'discovery-fallback'], 'reason': ["The listen-client-urls and listen-peer-urls properties should use the URL scheme 'http://' for etcd version 3.5.0. The correct format is 'http://IP:PORT' or 'http://IP:PORT,http://IP:PORT'.", "The 'proxy' value for the discovery-fallback property is deprecated in etcd version 3.5.0 and should be removed."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: listen-client-urls	listen-peer-urls	discovery-fallback
+[Ciri] Reason for listen-client-urls: The listen-client-urls and listen-peer-urls properties should use the URL scheme 'http://' for etcd version 3.5.0. The correct format is 'http://IP:PORT' or 'http://IP:PORT,http://IP:PORT'.
+[Ciri] Reason for listen-peer-urls: The 'proxy' value for the discovery-fallback property is deprecated in etcd version 3.5.0 and should be removed.
+[Ciri] Reason for discovery-fallback: 

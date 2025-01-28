@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.default.mode=999', 'alluxio.user.network.rpc.netty.worker.threads=1'], 'reason': ["The property 'alluxio.underfs.s3.default.mode' should be a valid POSIX file mode represented as an octal number, e.g., 0644. The value '999' is not a valid octal number.", "The property 'alluxio.user.network.rpc.netty.worker.threads' should be set to a higher value, typically equal to the number of CPU cores, for better performance. Setting it to 1 may lead to poor performance."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.s3.default.mode=999	alluxio.user.network.rpc.netty.worker.threads=1
+[Ciri] Reason for alluxio.underfs.s3.default.mode=999: The property 'alluxio.underfs.s3.default.mode' should be a valid POSIX file mode represented as an octal number, e.g., 0644. The value '999' is not a valid octal number.
+[Ciri] Reason for alluxio.user.network.rpc.netty.worker.threads=1: The property 'alluxio.user.network.rpc.netty.worker.threads' should be set to a higher value, typically equal to the number of CPU cores, for better performance. Setting it to 1 may lead to poor performance.

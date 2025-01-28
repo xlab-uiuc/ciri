@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.logcleaner.ttl</name>
+  <value>600000</value>
+    <description>How long a WAL remain in the archive ({hbase.rootdir}/oldWALs) directory,
+    after which it will be cleaned by a Master thread. The value is in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.regionSplitLimit</name>
+  <value>500</value>
+    <description>
+      Limit for the number of regions after which no more region splitting
+      should take place. This is not hard limit for the number of regions
+      but acts as a guideline for the regionserver to stop splitting after
+      a certain limit. Default is set to 1000.
+    </description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.peerport</name>
+  <value>1444</value>
+    <description>Port used by ZooKeeper peers to talk to each other.
+    See https://zookeeper.apache.org/doc/r3.3.3/zookeeperStarted.html#sc_RunningReplicatedZooKeeper
+    for more information.</description>
+</property>
+
+<property>
+  <name>hbase.normalizer.period</name>
+  <value>300000</value>
+    <description>Period at which the region normalizer runs in the Master.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.min.size</name>
+  <value>134217728</value>
+    <description>A StoreFile (or a selection of StoreFiles, when using ExploringCompactionPolicy)
+      smaller than this size will always be eligible for minor compaction.
+      HFiles this size or larger are evaluated by hbase.hstore.compaction.ratio to determine if
+      they are eligible. Because this limit represents the "automatic include" limit for all
+      StoreFiles smaller than this value, this value may need to be reduced in write-heavy
+      environments where many StoreFiles in the 1-2 MB range are being flushed, because every
+      StoreFile will be targeted for compaction and the resulting StoreFiles may still be under the
+      minimum size and require further compaction. If this parameter is lowered, the ratio check is
+      triggered more quickly. This addressed some issues seen in earlier versions of HBase but
+      changing this parameter is no longer necessary in most situations. Default: 128 MB expressed
+      in bytes.</description>
+</property>
+
+<property>
+  <name>hbase.master.normalizer.class</name>
+  <value>org.apache.hadoop.hbase.master.normalizer.SimpleRegionNormalizer</value>
+    <description>
+      Class used to execute the region normalization when the period occurs.
+      See the class comment for more on how it works
+      http://hbase.apache.org/devapidocs/org/apache/hadoop/hbase/master/normalizer/SimpleRegionNormalizer.html
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.storefile.refresh.period</name>
+  <value>1</value>
+    <description>
+      The period (in milliseconds) for refreshing the store files for the secondary regions. 0
+      means this feature is disabled. Secondary regions sees new files (from flushes and
+      compactions) from primary once the secondary region refreshes the list of files in the
+      region (there is no notification mechanism). But too frequent refreshes might cause
+      extra Namenode pressure. If the files cannot be refreshed for longer than HFile TTL
+      (hbase.master.hfilecleaner.ttl) the requests are rejected. Configuring HFile TTL to a larger
+      value is also recommended with this setting.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.compaction.threads.max</name>
+  <value>1</value>
+    <description>
+      The max number of threads used in MobCompactor.
+    </description>
+</property>
+
+</configuration>

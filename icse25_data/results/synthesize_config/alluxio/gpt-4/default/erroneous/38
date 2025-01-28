@@ -1,0 +1,16 @@
+Wrong shot number:
+[8, 3, 7]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.worker.ramdisk.size', 'alluxio.user.file.write.tier.default'], 'reason': ["The property 'alluxio.job.master.web.bind.host' has an invalid IP address format.", "The property 'alluxio.worker.ramdisk.size' does not have a valid size format or value.", "The property 'alluxio.user.file.write.tier.default' has a value '-1' which is not valid for specifying a default write tier."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.web.bind.host	alluxio.worker.ramdisk.size	alluxio.user.file.write.tier.default
+[Ciri] Reason for alluxio.job.master.web.bind.host: The property 'alluxio.job.master.web.bind.host' has an invalid IP address format.
+[Ciri] Reason for alluxio.worker.ramdisk.size: The property 'alluxio.worker.ramdisk.size' does not have a valid size format or value.
+[Ciri] Reason for alluxio.user.file.write.tier.default: The property 'alluxio.user.file.write.tier.default' has a value '-1' which is not valid for specifying a default write tier.

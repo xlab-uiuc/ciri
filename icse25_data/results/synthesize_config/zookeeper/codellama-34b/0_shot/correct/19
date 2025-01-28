@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.snapRetainCount', 'autopurge.purgeInterval', 'quorum.auth.enableSasl'], 'reason': ['autopurge.snapRetainCount is not a valid property', 'autopurge.purgeInterval is not a valid property', 'quorum.auth.enableSasl is not a valid property']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['server.1, server.2, and server.3 are not valid property names. They should be server.1=host:port:port, server.2=host:port:port, and server.3=host:port:port']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.X properties are not needed in ZooKeeper version 3.7.0. Please remove them.']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.X properties are not valid for ZooKeeper version 3.7.0. Please use the server.X=A:B:C:D format instead.']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['server.1, server.2, and server.3 are not valid server IDs. They must be integers between 1 and 255.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: server.1	server.2	server.3
+[Ciri] Reason for server.1: The server.X properties are not needed in ZooKeeper version 3.7.0. Please remove them.
+[Ciri] Reason for server.2: 
+[Ciri] Reason for server.3: 

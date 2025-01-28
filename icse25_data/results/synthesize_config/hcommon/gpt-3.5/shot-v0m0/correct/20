@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.connection.establish.timeout'], 'reason': ["The value '60s' for property 'hadoop.service.shutdown.timeout' should be in milliseconds format.", "The value '5000' for property 'fs.s3a.connection.establish.timeout' should be suffixed with 'ms' for milliseconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.s3a.connection.establish.timeout
+[Ciri] Reason for hadoop.service.shutdown.timeout: The value '60s' for property 'hadoop.service.shutdown.timeout' should be in milliseconds format.
+[Ciri] Reason for fs.s3a.connection.establish.timeout: The value '5000' for property 'fs.s3a.connection.establish.timeout' should be suffixed with 'ms' for milliseconds.

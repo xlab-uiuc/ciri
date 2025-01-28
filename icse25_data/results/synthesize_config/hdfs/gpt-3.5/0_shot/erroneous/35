@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.block.write.replace-datanode-on-failure.best-effort', 'dfs.disk.balancer.max.disk.throughputInMBperSec'], 'reason': ["Property 'dfs.client.block.write.replace-datanode-on-failure.best-effort' has a value of type 'double' but should be of type 'boolean'.", "Property 'dfs.disk.balancer.max.disk.throughputInMBperSec' has a value of type 'string' but should be of type 'integer'."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.block.write.replace-datanode-on-failure.best-effort', 'dfs.disk.balancer.max.disk.throughputInMBperSec'], 'reason': ["The value for property 'dfs.client.block.write.replace-datanode-on-failure.best-effort' should be an integer, not a float.", "The value for property 'dfs.disk.balancer.max.disk.throughputInMBperSec' should be an integer, not a float."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.block.write.replace-datanode-on-failure.best-effort', 'dfs.disk.balancer.max.disk.throughputInMBperSec'], 'reason': ["Property 'dfs.client.block.write.replace-datanode-on-failure.best-effort' has a value of type 'double' but should be of type 'boolean'.", "Property 'dfs.disk.balancer.max.disk.throughputInMBperSec' has a value of type 'string' but should be of type 'int'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.client.block.write.replace-datanode-on-failure.best-effort	dfs.disk.balancer.max.disk.throughputInMBperSec
+[Ciri] Reason for dfs.client.block.write.replace-datanode-on-failure.best-effort: Property 'dfs.client.block.write.replace-datanode-on-failure.best-effort' has a value of type 'double' but should be of type 'boolean'.
+[Ciri] Reason for dfs.disk.balancer.max.disk.throughputInMBperSec: Property 'dfs.disk.balancer.max.disk.throughputInMBperSec' has a value of type 'string' but should be of type 'integer'.

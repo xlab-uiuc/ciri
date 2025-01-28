@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-tls', 'heartbeat-interval'], 'reason': ["The 'enable-v2' parameter is not valid for etcd version 3.5.0. It is used for enabling v2 client support which is deprecated.", "The 'auto-tls' parameter is not valid for etcd version 3.5.0. It is used for enabling automatic TLS configuration which is not supported in this version.", "The 'heartbeat-interval' parameter is not valid for etcd version 3.5.0. It should be 'heartbeat-interval-milliseconds' instead."]}
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-tls', 'heartbeat-interval'], 'reason': ["The 'enable-v2' parameter is not a valid configuration option in etcd version 3.5.0.", "The 'auto-tls' parameter is not a valid configuration option in etcd version 3.5.0.", "The 'heartbeat-interval' parameter should be specified in milliseconds, not just a number."]}
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-tls', 'heartbeat-interval'], 'reason': ["The 'enable-v2' parameter is not valid for etcd version 3.5.0.", "The 'auto-tls' parameter is not valid for etcd version 3.5.0.", "The 'heartbeat-interval' parameter should be specified in milliseconds, not just a number."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable-v2	auto-tls	heartbeat-interval
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is not valid for etcd version 3.5.0.
+[Ciri] Reason for auto-tls: The 'auto-tls' parameter is not a valid configuration option in etcd version 3.5.0.
+[Ciri] Reason for heartbeat-interval: The 'heartbeat-interval' parameter should be specified in milliseconds, not just a number.

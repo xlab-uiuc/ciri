@@ -1,0 +1,64 @@
+Syntax	Data Type	fs.s3a.threads.max	9.9		
+Syntax	Data Type	hadoop.security.group.mapping.ldap.num.attempts	-5.5		
+Syntax	Data Type	io.mapfile.bloom.error.rate	true		
+Syntax	Data Type	hadoop.security.crypto.buffer.size	ciri/ciri		
+Syntax	Data Type	hadoop.security.groups.shell.command.timeout	0mm		
+Syntax	Data Type	hadoop.service.shutdown.timeout	10nounit		
+Syntax	Data Type	fs.s3a.assumed.role.session.duration	80hhhhh		
+Syntax	Data Type	fs.s3a.multipart.size	128N		
+Syntax	Path	io.seqfile.local.dir	//hadoop/io/local		
+Syntax	Path	fs.s3a.buffer.dir	/\hadoop/s3a		
+Syntax	Path	fs.s3a.committer.staging.tmp.path	tmp////staging		
+Syntax	Path	hadoop.security.random.device.file.path	dev/urandom///		
+Syntax	URL	fs.default.name	file///		
+Syntax	URL	fs.defaultFS	ciri		
+Syntax	URL	fs.default.name	file//		
+Syntax	URL	fs.defaultFS	file:::		
+Syntax	IP Address	hadoop.security.dns.nameserver	0.0.0		
+Syntax	IP Address	hadoop.http.authentication.cookie.domain	1.1.1.1.1.1		
+Syntax	IP Address	fs.ftp.host	2.2.2.2.2.2		
+Syntax	IP Address	hadoop.security.dns.nameserver	x.0.0.0.0.0		
+Syntax	Port	fs.s3a.proxy.port	1.1		
+Syntax	Port	fs.ftp.host.port	-100.22		
+Syntax	Port	fs.s3a.proxy.port	ciri		
+Syntax	Port	fs.ftp.host.port	file://		
+Syntax	Permission	fs.permissions.umask-mode	hadoop		
+Syntax	Permission	fs.permissions.umask-mode	hbase		
+Syntax	Permission	fs.permissions.umask-mode	file://		
+Syntax	Permission	fs.permissions.umask-mode	1.1.1		
+Range	Basic Numeric	hadoop.security.uid.cache.secs	-100		
+Range	Basic Numeric	fs.s3a.socket.send.buffer	-1		
+Range	Basic Numeric	ipc.client.idlethreshold	4000000000		
+Range	Basic Numeric	io.map.index.interval	-10		
+Range	Bool	hadoop.security.dns.log-slow-lookups.enabled	10		
+Range	Bool	hadoop.security.groups.cache.background.reload	hadoop		
+Range	Bool	hadoop.security.group.mapping.ldap.ssl	1.5		
+Range	Bool	hadoop.security.credential.clear-text-fallback	10000		
+Range	Enum	hadoop.security.group.mapping.ldap.conversion.rule	nonono		
+Range	Enum	fs.viewfs.rename.strategy	NONE_MOUNTPOINT		
+Range	Enum	fs.ftp.data.connection.mode	NOEXIST_LOCAL_DATA_CONNECTION_MODE		
+Range	Enum	fs.ftp.transfer.mode	NOEXIST_TRANSFER_MODE		
+Range	IP Address	hadoop.security.dns.nameserver	-1.0.0.0		
+Range	IP Address	hadoop.http.authentication.cookie.domain	256.256.256.256		
+Range	IP Address	fs.ftp.host	999.-1.0.0		
+Range	IP Address	hadoop.security.dns.nameserver	0.0.256.0		
+Range	Port	fs.s3a.proxy.port	65536		
+Range	Port	fs.ftp.host.port	65536		
+Range	Port	fs.s3a.proxy.port	-1		
+Range	Port	fs.ftp.host.port	-100		
+Range	Permission	fs.permissions.umask-mode	999		
+Range	Permission	fs.permissions.umask-mode	800		
+Range	Permission	fs.permissions.umask-mode	080		
+Range	Permission	fs.permissions.umask-mode	008		
+Dependency	Control	fs.client.resolve.topology.enabled	false	net.topology.node.switch.mapping.impl	org.apache.hadoop.net.ScriptBasedMapping
+Dependency	Control	net.topology.node.switch.mapping.impl	org.apache.hadoop.net.NoTableMapping	net.topology.table.file.name	path/to/topology_table.txt
+Dependency	Control	fs.s3a.multipart.purge	false	fs.s3a.multipart.purge.age	86400
+Dependency	Control	fs.azure.secure.mode	false	fs.azure.local.sas.key.mode	true
+Dependency	Value Relationship	fs.trash.interval	5	fs.trash.checkpoint.interval	10
+Dependency	Value Relationship	ftp.stream-buffer-size	4096	ftp.bytes-per-checksum	8192
+Dependency	Value Relationship	io.file.buffer.size	4096	io.bytes.per.checksum	8192
+Dependency	Value Relationship	io.file.buffer.size	4096	io.bytes.per.checksum	16384
+Version	Parameter Change	fs.s3.sleepTimeSeconds	15		
+Version	Parameter Change	s3.bytes-per-checksum	1024		
+Version	Parameter Change	s3.replication	4		
+Version	Parameter Change	fs.s3.maxRetries	5		

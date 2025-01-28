@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.replication.min</name>
+  <value>1</value>
+  <description>Minimal block replication. 
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.use.datanode.hostname</name>
+  <value>false</value>
+  <description>Whether datanodes should use datanode hostnames when
+    connecting to other datanodes for data transfer.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.audit.loggers</name>
+  <value>default</value>
+  <description>
+    List of classes implementing audit loggers that will receive audit events.
+    These should be implementations of org.apache.hadoop.hdfs.server.namenode.AuditLogger.
+    The special value "default" can be used to reference the default audit
+    logger, which uses the configured log system. Installing custom audit loggers
+    may affect the performance and stability of the NameNode. Refer to the custom
+    logger's documentation for more details.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.server-defaults.validity.period.ms</name>
+  <value>7200000</value>
+  <description>
+    The amount of milliseconds after which cached server defaults are updated.
+
+    By default this parameter is set to 1 hour.
+    Support multiple time unit suffix(case insensitive), as described
+    in dfs.heartbeat.interval.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.max.locked.memory</name>
+  <value>0</value>
+  <description>
+    The amount of memory in bytes to use for caching of block replicas in
+    memory on the datanode. The datanode's maximum locked memory soft ulimit
+    (RLIMIT_MEMLOCK) must be set to at least this value, else the datanode
+    will abort on startup. Support multiple size unit suffix(case insensitive),
+    as described in dfs.blocksize.
+
+    By default, this parameter is set to 0, which disables in-memory caching.
+
+    If the native libraries are not available to the DataNode, this
+    configuration has no effect.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.read.shortcircuit.streams.cache.expiry.ms</name>
+  <value>150000</value>
+  <description>
+    This controls the minimum amount of time
+    file descriptors need to sit in the client cache context
+    before they can be closed for being inactive for too long.
+  </description>
+</property>
+
+<property>
+  <name>dfs.journalnode.edit-cache-size.bytes</name>
+  <value>2097152</value>
+  <description>
+    The size, in bytes, of the in-memory cache of edits to keep on the
+    JournalNode. This cache is used to serve edits for tailing via the RPC-based
+    mechanism, and is only enabled when dfs.ha.tail-edits.in-progress is true.
+    Transactions range in size but are around 200 bytes on average, so the
+    default of 1MB can store around 5000 transactions.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.name.cache.threshold</name>
+  <value>20</value>
+  <description>
+    Frequently accessed files that are accessed more times than this
+    threshold are cached in the FSDirectory nameCache.
+  </description>
+</property>
+
+</configuration>

@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.search.filter.user</name>
+  <value>posixAccount</value>
+  <description>
+    An additional filter to use when searching for LDAP users. The default will
+    usually be appropriate for Active Directory installations. If connecting to
+    an LDAP server with a non-AD schema, this should be replaced with
+    (&amp;(objectClass=inetOrgPerson)(uid={0}). {0} is a special string used to
+    denote where the username fits into the filter.
+
+    If the LDAP server supports posixGroups, Hadoop can enable the feature by
+    setting the value of this property to "posixAccount" and the value of
+    the hadoop.security.group.mapping.ldap.search.filter.group property to
+    "posixGroup".
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.assumed.role.credentials.provider</name>
+  <value>org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider</value>
+  <description>
+    List of credential providers to authenticate with the STS endpoint and
+    retrieve short-lived role credentials.
+    Only used if AssumedRoleCredentialProvider is the AWS credential provider.
+    If unset, uses "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider".
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.output.csv.quote.fields</name>
+  <value>always</value>
+  <description>
+    In S3 Select queries: should fields in generated CSV Files be quoted?
+    One of: "always", "asneeded".
+  </description>
+</property>
+
+<property>
+  <name>net.topology.node.switch.mapping.impl</name>
+  <value>org.apache.hadoop.net.NoTableMapping</value>
+  <description> The default implementation of the DNSToSwitchMapping. It
+    invokes a script specified in net.topology.script.file.name to resolve
+    node names. If the value for net.topology.script.file.name is not set, the
+    default value of DEFAULT_RACK is returned for all node names.
+  </description>
+</property>
+
+<property>
+  <name>net.topology.table.file.name</name>
+  <value>path/to/topology_table.txt</value>
+  <description> The file name for a topology file, which is used when the
+    net.topology.node.switch.mapping.impl property is set to
+    org.apache.hadoop.net.TableMapping. The file format is a two column text
+    file, with columns separated by whitespace. The first column is a DNS or
+    IP address and the second column specifies the rack where the address maps.
+    If no entry corresponding to a host in the cluster is found, then
+    /default-rack is assumed.
+  </description>
+</property>
+
+<property>
+  <name>file.client-write-packet-size</name>
+  <value>32768</value>
+  <description>Packet size for clients to write</description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.simple.anonymous.allowed</name>
+  <value>true</value>
+  <description>
+    Indicates if anonymous requests are allowed when using 'simple' authentication.
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.adl.impl</name>
+  <value>org.apache.hadoop.fs.adl.Adl</value>
+</property>
+
+</configuration>

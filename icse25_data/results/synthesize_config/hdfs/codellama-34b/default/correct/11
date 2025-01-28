@@ -1,0 +1,26 @@
+Wrong shot number:
+[14, 11, 12]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' has the value '10s' which is out of the valid range of a time unit."]}
+
+{'hasError': True, 'errParameter': ['dfs.replication.max', 'dfs.namenode.hosts.provider.classname', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["The property 'dfs.replication.max' has the value '1024' which is out of the valid range of replication factor.", "The class name 'org.apache.hadoop.hdfs.server.blockmanagement.CombinedHostFileManager' is not a valid class name for the property 'dfs.namenode.hosts.provider.classname'.", "The property 'dfs.provided.aliasmap.leveldb.path' has the value '/valid/file2' which is not a valid path."]}
+
+{'hasError': True, 'errParameter': ['dfs.replication.max'], 'reason': ["The property 'dfs.replication.max' has the value '1024' which is out of the valid range of replication factor."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.replication.max'], 'reason': ["The property 'dfs.replication.max' has the value '1024' which is out of the valid range of replication factor."]}
+
+{'hasError': True, 'errParameter': ['dfs.replication.max', 'dfs.namenode.hosts.provider.classname', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["The property 'dfs.replication.max' has the value '1024' which is out of the valid range of replication factor.", "The class name 'org.apache.hadoop.hdfs.server.blockmanagement.HostFileManager' is not a valid class name for the property 'dfs.namenode.hosts.provider.classname'.", "The property 'dfs.provided.aliasmap.leveldb.path' has the value '/valid/file2' which is not a valid file path."]}
+
+{'hasError': True, 'errParameter': ['dfs.replication.max'], 'reason': ["The property 'dfs.replication.max' has the value '1024' which is out of the valid range of a replication factor."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.replication.max
+[Ciri] Reason for dfs.replication.max: The property 'dfs.replication.max' has the value '1024' which is out of the valid range of replication factor.

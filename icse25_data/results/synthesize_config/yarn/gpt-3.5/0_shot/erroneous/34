@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-vcores', 'yarn.scheduler.maximum-allocation-vcores'], 'reason': ['The minimum allocation vcores should not be greater than the maximum allocation vcores.']}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-vcores', 'yarn.scheduler.maximum-allocation-vcores'], 'reason': ["The value of 'yarn.scheduler.minimum-allocation-vcores' should be less than or equal to 'yarn.scheduler.maximum-allocation-vcores'.", "The value of 'yarn.scheduler.maximum-allocation-vcores' should be greater than or equal to 'yarn.scheduler.minimum-allocation-vcores'."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-vcores', 'yarn.scheduler.maximum-allocation-vcores', 'yarn.resourcemanager.resource-profiles.enabled'], 'reason': ["The value of 'yarn.scheduler.minimum-allocation-vcores' should not be greater than 'yarn.scheduler.maximum-allocation-vcores'.", "The value of 'yarn.scheduler.maximum-allocation-vcores' should be greater than 'yarn.scheduler.minimum-allocation-vcores'.", "The 'yarn.resourcemanager.resource-profiles.enabled' property should be set to 'true' to enable resource profiles."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.scheduler.minimum-allocation-vcores	yarn.scheduler.maximum-allocation-vcores
+[Ciri] Reason for yarn.scheduler.minimum-allocation-vcores: The minimum allocation vcores should not be greater than the maximum allocation vcores.
+[Ciri] Reason for yarn.scheduler.maximum-allocation-vcores: The value of 'yarn.scheduler.maximum-allocation-vcores' should be greater than or equal to 'yarn.scheduler.minimum-allocation-vcores'.

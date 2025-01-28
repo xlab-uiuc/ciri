@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.hfilecleaner.plugins</name>
+  <value>org.apache.hadoop.hbase.master.cleaner.TimeToLiveHFileCleaner</value>
+    <description>A comma-separated list of BaseHFileCleanerDelegate invoked by
+    the HFileCleaner service. These HFiles cleaners are called in order,
+    so put the cleaner that prunes the most files in front. To
+    implement your own BaseHFileCleanerDelegate, just put it in HBase's classpath
+    and add the fully qualified class name here. Always add the above
+    default log cleaners in the list as they will be overwritten in
+    hbase-site.xml.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.port</name>
+  <value>16020</value>
+    <description>The port the HBase RegionServer binds to.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.hlog.reader.impl</name>
+  <value>org.apache.hadoop.hbase.regionserver.wal.ProtobufLogReader</value>
+    <description>The WAL file reader implementation.</description>
+</property>
+
+<property>
+  <name>zookeeper.znode.parent</name>
+  <value>/valid/file2</value>
+    <description>Root ZNode for HBase in ZooKeeper. All of HBase's ZooKeeper
+      files that are configured with a relative path will go under this node.
+      By default, all of HBase's ZooKeeper file paths are configured with a
+      relative path, so they will all go under this directory unless changed.
+    </description>
+</property>
+
+<property>
+  <name>hbase.hregion.percolumnfamilyflush.size.lower.bound.min</name>
+  <value>16777216</value>
+    <description>
+    If FlushLargeStoresPolicy is used and there are multiple column families,
+    then every time that we hit the total memstore limit, we find out all the
+    column families whose memstores exceed a "lower bound" and only flush them
+    while retaining the others in memory. The "lower bound" will be
+    "hbase.hregion.memstore.flush.size / column_family_number" by default
+    unless value of this property is larger than that. If none of the families
+    have their memstore size more than lower bound, all the memstores will be
+    flushed (just as usual).
+    </description>
+</property>
+
+<property>
+  <name>hbase.hregion.preclose.flush.size</name>
+  <value>10485760</value>
+    <description>
+      If the memstores in a region are this size or larger when we go
+      to close, run a "pre-flush" to clear out memstores before we put up
+      the region closed flag and take the region offline.  On close,
+      a flush is run under the close flag to empty memory.  During
+      this time the region is offline and we are not taking on any writes.
+      If the memstore content is large, this flush could take a long time to
+      complete.  The preflush is meant to clean out the bulk of the memstore
+      before putting up the close flag and taking the region offline so the
+      flush that runs under the close flag has little to do.</description>
+</property>
+
+<property>
+  <name>hbase.auth.key.update.interval</name>
+  <value>43200000</value>
+    <description>The update interval for master key for authentication tokens
+    in servers in milliseconds.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.master.normalizer.class</name>
+  <value>org.apache.hadoop.hbase.master.normalizer.SimpleRegionNormalizer</value>
+    <description>
+      Class used to execute the region normalization when the period occurs.
+      See the class comment for more on how it works
+      http://hbase.apache.org/devapidocs/org/apache/hadoop/hbase/master/normalizer/SimpleRegionNormalizer.html
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.enableSasl and quorum.auth.serverRequireSasl are mutually exclusive', 'quorum.auth.server.saslLoginContext is not a valid property']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.serverRequireSasl'], 'reason': ['secureClientPortAddress is not a valid property', 'quorum.auth.serverRequireSasl is not a valid property']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.enableSasl is set to false, but quorum.auth.serverRequireSasl is set to true. This will cause the Zookeeper server to require SASL authentication, but the server will not be able to authenticate any clients because SASL authentication is disabled.', 'quorum.auth.server.saslLoginContext is set to QuorumServer, but quorum.auth.enableSasl is set to false. This will cause the Zookeeper server to fail to start up because the server will not be able to authenticate any clients.', 'quorum.auth.serverRequireSasl is set to true, but quorum.auth.enableSasl is set to false. This will cause the Zookeeper server to require SASL authentication, but the server will not be able to authenticate any clients because SASL authentication is disabled.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.serverRequireSasl	quorum.auth.server.saslLoginContext
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl and quorum.auth.serverRequireSasl are mutually exclusive
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.server.saslLoginContext is not a valid property
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.serverRequireSasl is set to true, but quorum.auth.enableSasl is set to false. This will cause the Zookeeper server to require SASL authentication, but the server will not be able to authenticate any clients because SASL authentication is disabled.

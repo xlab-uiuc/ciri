@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable_hashagg', 'enable_parallel_append'], 'reason': ['enable_hashagg is not a valid parameter for PostgreSQL 13.0', 'enable_parallel_append is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['enable_hashagg', 'include_dir', 'checkpoint_warning', 'vacuum_multixact_freeze_min_age', 'session_replication_role', 'min_parallel_table_scan_size', 'enable_parallel_append', 'autovacuum_analyze_threshold'], 'reason': ['enable_hashagg is not a valid parameter', 'include_dir is not a valid parameter', 'checkpoint_warning is not a valid parameter', 'vacuum_multixact_freeze_min_age is not a valid parameter', 'session_replication_role is not a valid parameter', 'min_parallel_table_scan_size is not a valid parameter', 'enable_parallel_append is not a valid parameter', 'autovacuum_analyze_threshold is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['enable_hashagg', 'vacuum_multixact_freeze_min_age', 'session_replication_role', 'min_parallel_table_scan_size', 'enable_parallel_append', 'autovacuum_analyze_threshold'], 'reason': ['enable_hashagg should be a boolean value.', 'vacuum_multixact_freeze_min_age should be an integer value.', 'session_replication_role should be a string value.', 'min_parallel_table_scan_size should be an integer value.', 'enable_parallel_append should be a boolean value.', 'autovacuum_analyze_threshold should be an integer value.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable_hashagg', 'include_dir', 'checkpoint_warning', 'vacuum_multixact_freeze_min_age', 'session_replication_role', 'min_parallel_table_scan_size', 'enable_parallel_append', 'autovacuum_analyze_threshold'], 'reason': ['enable_hashagg: should be on or off', 'include_dir: should be a directory', 'checkpoint_warning: should be a time interval', 'vacuum_multixact_freeze_min_age: should be a number', 'session_replication_role: should be origin, replica, or bypass', 'min_parallel_table_scan_size: should be a size', 'enable_parallel_append: should be on or off', 'autovacuum_analyze_threshold: should be a number']}
+
+{'hasError': True, 'errParameter': ['enable_hashagg', 'include_dir', 'checkpoint_warning', 'vacuum_multixact_freeze_min_age', 'session_replication_role', 'min_parallel_table_scan_size', 'enable_parallel_append', 'autovacuum_analyze_threshold'], 'reason': ['enable_hashagg: should be a boolean value', 'include_dir: should be a directory path', 'checkpoint_warning: should be a time value', 'vacuum_multixact_freeze_min_age: should be a number', 'session_replication_role: should be a string value', 'min_parallel_table_scan_size: should be a size value', 'enable_parallel_append: should be a boolean value', 'autovacuum_analyze_threshold: should be a number']}
+
+{'hasError': True, 'errParameter': ['enable_hashagg', 'include_dir', 'checkpoint_warning', 'vacuum_multixact_freeze_min_age', 'session_replication_role', 'min_parallel_table_scan_size', 'enable_parallel_append', 'autovacuum_analyze_threshold'], 'reason': ['enable_hashagg is not a valid parameter', 'include_dir is not a valid parameter', 'checkpoint_warning is not a valid parameter', 'vacuum_multixact_freeze_min_age is not a valid parameter', 'session_replication_role is not a valid parameter', 'min_parallel_table_scan_size is not a valid parameter', 'enable_parallel_append is not a valid parameter', 'autovacuum_analyze_threshold is not a valid parameter']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: enable_hashagg	include_dir	checkpoint_warning	vacuum_multixact_freeze_min_age	session_replication_role	min_parallel_table_scan_size	enable_parallel_append	autovacuum_analyze_threshold
+[Ciri] Reason for enable_hashagg: enable_hashagg: should be a boolean value
+[Ciri] Reason for include_dir: include_dir: should be a directory path
+[Ciri] Reason for checkpoint_warning: checkpoint_warning is not a valid parameter
+[Ciri] Reason for vacuum_multixact_freeze_min_age: vacuum_multixact_freeze_min_age: should be a number
+[Ciri] Reason for session_replication_role: session_replication_role: should be a string value
+[Ciri] Reason for min_parallel_table_scan_size: min_parallel_table_scan_size: should be a size value
+[Ciri] Reason for enable_parallel_append: enable_parallel_append: should be a boolean value
+[Ciri] Reason for autovacuum_analyze_threshold: autovacuum_analyze_threshold: should be a number

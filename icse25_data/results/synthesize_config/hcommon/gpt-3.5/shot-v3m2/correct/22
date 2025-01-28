@@ -1,0 +1,15 @@
+Wrong shot number:
+[7, 12]
+
+Correct shot number:
+[10, 3, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.fast.upload.buffer', 'fs.s3a.s3guard.ddb.table.capacity.read'], 'reason': ["The property 'fs.s3a.fast.upload.buffer' has the value 'disk' which may lead to high memory consumption. Consider using 'array' or 'bytebuffer' for lower memory usage.", "The property 'fs.s3a.s3guard.ddb.table.capacity.read' has the value '0' which means new tables are created with 'per-request' capacity. Consider providing a positive integer for provisioned capacity."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.fast.upload.buffer	fs.s3a.s3guard.ddb.table.capacity.read
+[Ciri] Reason for fs.s3a.fast.upload.buffer: The property 'fs.s3a.fast.upload.buffer' has the value 'disk' which may lead to high memory consumption. Consider using 'array' or 'bytebuffer' for lower memory usage.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.read: The property 'fs.s3a.s3guard.ddb.table.capacity.read' has the value '0' which means new tables are created with 'per-request' capacity. Consider providing a positive integer for provisioned capacity.

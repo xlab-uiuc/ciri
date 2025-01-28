@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs'], 'reason': ['quorum.auth.serverRequireSasl is not a valid property', 'quorum.auth.learner.saslLoginContext is not a valid property', 'quorum.auth.learnerRequireSasl is not a valid property', 'quorumListenOnAllIPs is not a valid property']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs'], 'reason': ['quorum.auth.serverRequireSasl is not a valid parameter', 'quorum.auth.learner.saslLoginContext is not a valid parameter', 'quorum.auth.learnerRequireSasl is not a valid parameter', 'quorumListenOnAllIPs is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'secureClientPort', 'secureClientPortAddress', 'quorum.auth.serverRequireSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs'], 'reason': ['clientPort must be an integer', 'secureClientPort must be an integer', 'secureClientPortAddress must be an integer', 'quorum.auth.serverRequireSasl must be a boolean', 'quorum.auth.learner.saslLoginContext must be a string', 'quorum.auth.learnerRequireSasl must be a boolean', 'quorumListenOnAllIPs must be a boolean']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: quorum.auth.serverRequireSasl	quorum.auth.learner.saslLoginContext	quorum.auth.learnerRequireSasl	quorumListenOnAllIPs
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl is not a valid property
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext is not a valid property
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl is not a valid property
+[Ciri] Reason for quorumListenOnAllIPs: quorumListenOnAllIPs is not a valid property

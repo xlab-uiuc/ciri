@@ -1,0 +1,15 @@
+Wrong shot number:
+[12, 5, 10]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.state.lock.exclusive.duration', 'alluxio.user.network.rpc.netty.worker.threads'], 'reason': ["The value '1ms' for 'alluxio.master.backup.state.lock.exclusive.duration' is too low and not practical for any backup operation.", "The value '0' for 'alluxio.user.network.rpc.netty.worker.threads' is invalid, as there should be at least 1 thread."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.backup.state.lock.exclusive.duration	alluxio.user.network.rpc.netty.worker.threads
+[Ciri] Reason for alluxio.master.backup.state.lock.exclusive.duration: The value '1ms' for 'alluxio.master.backup.state.lock.exclusive.duration' is too low and not practical for any backup operation.
+[Ciri] Reason for alluxio.user.network.rpc.netty.worker.threads: The value '0' for 'alluxio.user.network.rpc.netty.worker.threads' is invalid, as there should be at least 1 thread.

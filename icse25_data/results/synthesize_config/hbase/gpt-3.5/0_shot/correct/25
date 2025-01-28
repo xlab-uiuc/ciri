@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.max.total.tasks', 'hbase.client.keyvalue.maxsize', 'hbase.regionserver.thread.compaction.throttle', 'hbase.dfs.client.read.shortcircuit.buffer.size'], 'reason': ["The property 'hbase.client.max.total.tasks' should be 'hbase.client.max.total.tasks.perchost'.", "The property 'hbase.client.keyvalue.maxsize' is deprecated in HBase version 2.2.7. It is recommended to remove it.", "The property 'hbase.regionserver.thread.compaction.throttle' should be 'hbase.hstore.compaction.throttle'.", "The property 'hbase.dfs.client.read.shortcircuit.buffer.size' should be 'hbase.shortcircuit.read.buffer.size'."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.client.max.total.tasks', 'hbase.client.keyvalue.maxsize', 'hbase.regionserver.thread.compaction.throttle', 'hbase.dfs.client.read.shortcircuit.buffer.size'], 'reason': ['hbase.zookeeper.property.clientPort should be set to a valid port number, e.g., 2181.', 'hbase.client.max.total.tasks should be set to a reasonable number based on the cluster size and workload.', 'hbase.client.keyvalue.maxsize should be set to a value greater than zero.', 'hbase.regionserver.thread.compaction.throttle should be set to a reasonable size based on the cluster configuration.', 'hbase.dfs.client.read.shortcircuit.buffer.size should be set to a value greater than zero.']}
+
+{'hasError': True, 'errParameter': ['hbase.client.max.total.tasks', 'hbase.client.keyvalue.maxsize', 'hbase.regionserver.thread.compaction.throttle', 'hbase.dfs.client.read.shortcircuit.buffer.size'], 'reason': ["The property 'hbase.client.max.total.tasks' is not a valid property for HBase version 2.2.7.", "The property 'hbase.client.keyvalue.maxsize' is not a valid property for HBase version 2.2.7.", "The property 'hbase.regionserver.thread.compaction.throttle' is not a valid property for HBase version 2.2.7.", "The property 'hbase.dfs.client.read.shortcircuit.buffer.size' is not a valid property for HBase version 2.2.7."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hbase.client.max.total.tasks	hbase.client.keyvalue.maxsize	hbase.regionserver.thread.compaction.throttle	hbase.dfs.client.read.shortcircuit.buffer.size
+[Ciri] Reason for hbase.client.max.total.tasks: The property 'hbase.client.max.total.tasks' is not a valid property for HBase version 2.2.7.
+[Ciri] Reason for hbase.client.keyvalue.maxsize: The property 'hbase.client.keyvalue.maxsize' is deprecated in HBase version 2.2.7. It is recommended to remove it.
+[Ciri] Reason for hbase.regionserver.thread.compaction.throttle: The property 'hbase.regionserver.thread.compaction.throttle' should be 'hbase.hstore.compaction.throttle'.
+[Ciri] Reason for hbase.dfs.client.read.shortcircuit.buffer.size: The property 'hbase.dfs.client.read.shortcircuit.buffer.size' is not a valid property for HBase version 2.2.7.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.local-cache.max-files-per-directory'], 'reason': ["The value for 'yarn.nodemanager.hostname' should be a valid hostname.", "The value for 'yarn.nodemanager.local-cache.max-files-per-directory' should be greater than 36 to avoid NodeManager startup failure."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.local-cache.max-files-per-directory'], 'reason': ["The value of 'yarn.nodemanager.hostname' should be a valid hostname.", "The value of 'yarn.nodemanager.local-cache.max-files-per-directory' should be greater than 36."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.local-cache.max-files-per-directory'], 'reason': ["The value '0.0.0' for property 'yarn.nodemanager.hostname' is not a valid hostname.", "The value '16384' for property 'yarn.nodemanager.local-cache.max-files-per-directory' is too high. It should be less than or equal to 36."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.hostname	yarn.nodemanager.local-cache.max-files-per-directory
+[Ciri] Reason for yarn.nodemanager.hostname: The value of 'yarn.nodemanager.hostname' should be a valid hostname.
+[Ciri] Reason for yarn.nodemanager.local-cache.max-files-per-directory: The value of 'yarn.nodemanager.local-cache.max-files-per-directory' should be greater than 36.

@@ -1,0 +1,14 @@
+Correct shot number:
+[1, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'WSGI_APPLICATION', 'LOGIN_REDIRECT_URL', 'USE_I18N'], 'reason': ["LOGIN_REDIRECT_URL should not end with double slashes '//'.", 'WSGI_APPLICATION should be specified.', "LOGIN_REDIRECT_URL should not end with double slashes '//'.", 'USE_I18N should be set to True for internationalization support.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: LOGIN_REDIRECT_URL	WSGI_APPLICATION	LOGIN_REDIRECT_URL	USE_I18N
+[Ciri] Reason for LOGIN_REDIRECT_URL: LOGIN_REDIRECT_URL should not end with double slashes '//'.
+[Ciri] Reason for WSGI_APPLICATION: WSGI_APPLICATION should be specified.
+[Ciri] Reason for LOGIN_REDIRECT_URL: LOGIN_REDIRECT_URL should not end with double slashes '//'.
+[Ciri] Reason for USE_I18N: USE_I18N should be set to True for internationalization support.

@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'localSessionsEnabled', 'peerType', 'quorum.auth.kerberos.servicePrincipal', 'clientPortAddress', 'quorum.auth.serverRequireSasl', 'secureClientPortAddress'], 'reason': ['minSessionTimeout is not a valid property for Zookeeper configuration in version 3.7.0', 'localSessionsEnabled is not a valid property for Zookeeper configuration in version 3.7.0', 'peerType is not a valid property for Zookeeper configuration in version 3.7.0', 'quorum.auth.kerberos.servicePrincipal is not a valid property for Zookeeper configuration in version 3.7.0', 'clientPortAddress should not be the same as secureClientPortAddress in Zookeeper configuration', 'quorum.auth.serverRequireSasl is not a valid property for Zookeeper configuration in version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'localSessionsEnabled', 'peerType', 'quorum.auth.kerberos.servicePrincipal', 'clientPortAddress', 'quorum.auth.serverRequireSasl', 'secureClientPortAddress', 'sslQuorum'], 'reason': ['minSessionTimeout is not a valid configuration parameter for Zookeeper version 3.7.0', 'localSessionsEnabled is not a valid configuration parameter for Zookeeper version 3.7.0', 'peerType is not a valid configuration parameter for Zookeeper version 3.7.0', 'quorum.auth.kerberos.servicePrincipal is not a valid configuration parameter for Zookeeper version 3.7.0', 'clientPortAddress is not a valid configuration parameter for Zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid configuration parameter for Zookeeper version 3.7.0', 'secureClientPortAddress is not a valid configuration parameter for Zookeeper version 3.7.0', 'sslQuorum is not a valid configuration parameter for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'localSessionsEnabled', 'secureClientPortAddress'], 'reason': ['minSessionTimeout is not a valid configuration property for Zookeeper version 3.7.0', 'localSessionsEnabled is not a valid configuration property for Zookeeper version 3.7.0', 'secureClientPortAddress should not be specified when sslQuorum is set to true']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'localSessionsEnabled', 'peerType', 'quorum.auth.kerberos.servicePrincipal', 'clientPortAddress', 'quorum.auth.serverRequireSasl', 'secureClientPortAddress', 'sslQuorum'], 'reason': ['minSessionTimeout is not a valid property for Zookeeper configuration.', 'localSessionsEnabled is not a valid property for Zookeeper configuration.', 'peerType is not a valid property for Zookeeper configuration.', 'quorum.auth.kerberos.servicePrincipal is not a valid property for Zookeeper configuration.', 'clientPortAddress should not be the same as secureClientPortAddress.', 'quorum.auth.serverRequireSasl is not a valid property for Zookeeper configuration.', 'secureClientPortAddress should not be the same as clientPortAddress.', 'sslQuorum is not a valid property for Zookeeper configuration.']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'localSessionsEnabled', 'secureClientPortAddress'], 'reason': ['minSessionTimeout is not a valid property for Zookeeper 3.7.0', 'localSessionsEnabled is not a valid property for Zookeeper 3.7.0', 'secureClientPortAddress should not be used when sslQuorum is true']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'localSessionsEnabled', 'peerType', 'quorum.auth.kerberos.servicePrincipal', 'clientPortAddress', 'quorum.auth.serverRequireSasl', 'secureClientPortAddress', 'sslQuorum'], 'reason': ['minSessionTimeout is not a valid configuration property for Zookeeper 3.7.0', 'localSessionsEnabled is not a valid configuration property for Zookeeper 3.7.0', 'peerType is not a valid configuration property for Zookeeper 3.7.0', 'quorum.auth.kerberos.servicePrincipal is not a valid configuration property for Zookeeper 3.7.0', 'clientPortAddress is not a valid configuration property for Zookeeper 3.7.0', 'quorum.auth.serverRequireSasl is not a valid configuration property for Zookeeper 3.7.0', 'secureClientPortAddress is not a valid configuration property for Zookeeper 3.7.0', 'sslQuorum is not a valid configuration property for Zookeeper 3.7.0']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: minSessionTimeout	localSessionsEnabled	peerType	quorum.auth.kerberos.servicePrincipal	clientPortAddress	quorum.auth.serverRequireSasl	secureClientPortAddress	sslQuorum
+[Ciri] Reason for minSessionTimeout: minSessionTimeout is not a valid property for Zookeeper configuration.
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled is not a valid configuration property for Zookeeper 3.7.0
+[Ciri] Reason for peerType: peerType is not a valid configuration property for Zookeeper 3.7.0
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is not a valid configuration property for Zookeeper 3.7.0
+[Ciri] Reason for clientPortAddress: clientPortAddress is not a valid configuration property for Zookeeper 3.7.0
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl is not a valid configuration property for Zookeeper 3.7.0
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress should not be the same as clientPortAddress.
+[Ciri] Reason for sslQuorum: sslQuorum is not a valid property for Zookeeper configuration.

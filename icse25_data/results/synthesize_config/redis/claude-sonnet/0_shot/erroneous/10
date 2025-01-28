@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'cluster-config-file', 'proc-title-template'], 'reason': ["The 'cluster-announce-tls-port' parameter is used for Redis Cluster and is not applicable for a standalone Redis instance.", "The 'cluster-config-file' parameter is used for Redis Cluster and is not applicable for a standalone Redis instance.", "The 'proc-title-template' parameter is not a valid configuration option in Redis 7.0.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-tls-port	cluster-config-file	proc-title-template
+[Ciri] Reason for cluster-announce-tls-port: The 'cluster-announce-tls-port' parameter is used for Redis Cluster and is not applicable for a standalone Redis instance.
+[Ciri] Reason for cluster-config-file: The 'cluster-config-file' parameter is used for Redis Cluster and is not applicable for a standalone Redis instance.
+[Ciri] Reason for proc-title-template: The 'proc-title-template' parameter is not a valid configuration option in Redis 7.0.0.

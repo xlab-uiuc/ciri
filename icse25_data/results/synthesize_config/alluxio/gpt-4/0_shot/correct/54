@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.timeout=1sec', 'alluxio.worker.network.netty.boss.threads=0'], 'reason': ["The correct format for timeouts in Alluxio configuration should include a time unit without spaces, e.g., '1sec' should be '1s'.", "For 'alluxio.worker.network.netty.boss.threads', a value of 0 is not recommended. It should be set to a positive integer, or left at its default value if unsure."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.cos.connection.timeout=1sec	alluxio.worker.network.netty.boss.threads=0
+[Ciri] Reason for fs.cos.connection.timeout=1sec: The correct format for timeouts in Alluxio configuration should include a time unit without spaces, e.g., '1sec' should be '1s'.
+[Ciri] Reason for alluxio.worker.network.netty.boss.threads=0: For 'alluxio.worker.network.netty.boss.threads', a value of 0 is not recommended. It should be set to a positive integer, or left at its default value if unsure.

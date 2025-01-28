@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress'], 'reason': ['The value of secureClientPortAddress is not a valid IP address']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'autopurge.snapRetainCount', 'secureClientPortAddress', 'standaloneEnabled'], 'reason': ['autopurge.purgeInterval must be an integer', 'autopurge.snapRetainCount must be an integer', 'secureClientPortAddress must be in the format of host:port', 'standaloneEnabled must be a boolean']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.learnerRequireSasl should be a boolean value', 'quorum.auth.server.saslLoginContext should be a string value']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.server.saslLoginContext', 'secureClientPortAddress'], 'reason': ['quorum.auth.learnerRequireSasl should be a boolean', 'quorum.auth.server.saslLoginContext should be a string', 'secureClientPortAddress should be a string']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress'], 'reason': ['The value of secureClientPortAddress is not a valid IP address.']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.learnerRequireSasl should be a boolean value', 'quorum.auth.server.saslLoginContext should be a string value']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.server.saslLoginContext', 'secureClientPortAddress'], 'reason': ['quorum.auth.learnerRequireSasl should be a boolean value', 'quorum.auth.server.saslLoginContext should be a string value', 'secureClientPortAddress should be a string value']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.server.saslLoginContext', 'secureClientPortAddress'], 'reason': ['quorum.auth.learnerRequireSasl must be a boolean value', 'quorum.auth.server.saslLoginContext must be a string value', 'secureClientPortAddress must be a string value']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.server.saslLoginContext', 'secureClientPortAddress'], 'reason': ['The value of quorum.auth.learnerRequireSasl is not a boolean value.', 'The value of quorum.auth.server.saslLoginContext is not a string value.', 'The value of secureClientPortAddress is not a string value.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quorum.auth.learnerRequireSasl	quorum.auth.server.saslLoginContext	secureClientPortAddress
+[Ciri] Reason for quorum.auth.learnerRequireSasl: The value of quorum.auth.learnerRequireSasl is not a boolean value.
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext must be a string value
+[Ciri] Reason for secureClientPortAddress: The value of secureClientPortAddress is not a string value.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout', 'heartbeat-interval'], 'reason': ['proxy-read-timeout must be greater than 0', 'proxy-write-timeout must be greater than 0', 'heartbeat-interval must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout'], 'reason': ['proxy-read-timeout: 0 is not a valid value for proxy-read-timeout. The value must be greater than 0.', 'proxy-write-timeout: 2500 is not a valid value for proxy-write-timeout. The value must be greater than 0.']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout'], 'reason': ['proxy-read-timeout must be greater than 0', 'proxy-write-timeout must be greater than 0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: proxy-read-timeout	proxy-write-timeout
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout must be greater than 0
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout: 2500 is not a valid value for proxy-write-timeout. The value must be greater than 0.

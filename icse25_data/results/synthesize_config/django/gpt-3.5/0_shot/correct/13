@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_AGE', 'CSRF_COOKIE_AGE', 'USE_DEPRECATED_PYTZ', 'SERVER_EMAIL', 'MONTH_DAY_FORMAT'], 'reason': ['The values for SESSION_COOKIE_AGE and CSRF_COOKIE_AGE should be integers representing the number of seconds. Consider changing the calculations to actual integer values.', 'USE_DEPRECATED_PYTZ should be removed as it is not a valid setting for Django 4.0.', 'SERVER_EMAIL should be set to a valid email address.', "MONTH_DAY_FORMAT should be in the format 'j F' instead of 'F j'."]}
+
+{'hasError': True, 'errParameter': ['USE_DEPRECATED_PYTZ', 'SERVER_EMAIL', 'MONTH_DAY_FORMAT'], 'reason': ['USE_DEPRECATED_PYTZ is not a valid setting in Django 4.0.', 'SERVER_EMAIL should be a valid email address.', 'MONTH_DAY_FORMAT is not a valid setting in Django 4.0.']}
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_AGE', 'CSRF_COOKIE_AGE', 'USE_DEPRECATED_PYTZ', 'SERVER_EMAIL', 'MONTH_DAY_FORMAT'], 'reason': ['SESSION_COOKIE_AGE should be specified in seconds, not a calculation.', 'CSRF_COOKIE_AGE should be specified in seconds, not a calculation.', 'USE_DEPRECATED_PYTZ is not a valid setting for Django 4.0.', 'SERVER_EMAIL should be a valid email address.', 'MONTH_DAY_FORMAT is not a valid setting for Django 4.0.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: SESSION_COOKIE_AGE	CSRF_COOKIE_AGE	USE_DEPRECATED_PYTZ	SERVER_EMAIL	MONTH_DAY_FORMAT
+[Ciri] Reason for SESSION_COOKIE_AGE: SESSION_COOKIE_AGE should be specified in seconds, not a calculation.
+[Ciri] Reason for CSRF_COOKIE_AGE: USE_DEPRECATED_PYTZ should be removed as it is not a valid setting for Django 4.0.
+[Ciri] Reason for USE_DEPRECATED_PYTZ: USE_DEPRECATED_PYTZ is not a valid setting for Django 4.0.
+[Ciri] Reason for SERVER_EMAIL: SERVER_EMAIL should be a valid email address.
+[Ciri] Reason for MONTH_DAY_FORMAT: MONTH_DAY_FORMAT is not a valid setting for Django 4.0.

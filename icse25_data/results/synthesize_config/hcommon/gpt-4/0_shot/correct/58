@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].backoff.enable', 'fs.adl.impl'], 'reason': ["The property name 'ipc.[port_number].backoff.enable' uses a placeholder '[port_number]' which is not a standard convention for property names in Hadoop configuration files. Property names should be explicit without requiring substitution.", "The property 'fs.adl.impl' specifies 'org.apache.hadoop.fs.adl.AdlFileSystem' which is for Azure Data Lake, but as of Hadoop 3.3.0, the correct implementation class should be 'org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem' for Azure Data Lake Storage Gen2 or similar. The specified class may not be compatible or may require additional dependencies."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].backoff.enable	fs.adl.impl
+[Ciri] Reason for ipc.[port_number].backoff.enable: The property name 'ipc.[port_number].backoff.enable' uses a placeholder '[port_number]' which is not a standard convention for property names in Hadoop configuration files. Property names should be explicit without requiring substitution.
+[Ciri] Reason for fs.adl.impl: The property 'fs.adl.impl' specifies 'org.apache.hadoop.fs.adl.AdlFileSystem' which is for Azure Data Lake, but as of Hadoop 3.3.0, the correct implementation class should be 'org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem' for Azure Data Lake Storage Gen2 or similar. The specified class may not be compatible or may require additional dependencies.

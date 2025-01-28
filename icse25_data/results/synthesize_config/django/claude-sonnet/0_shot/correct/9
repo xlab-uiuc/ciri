@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['MIGRATION_MODULES', 'SESSION_FILE_PATH', 'FORMAT_MODULE_PATH', 'LANGUAGE_COOKIE_SECURE'], 'reason': ["MIGRATION_MODULES should be a dictionary mapping app labels to a string specifying the package where the app's migrations are located.", 'SESSION_FILE_PATH is deprecated in Django 4.0 and should be removed.', 'FORMAT_MODULE_PATH is deprecated in Django 4.0 and should be removed.', 'LANGUAGE_COOKIE_SECURE is deprecated in Django 4.0 and should be removed. Use the CSRF_COOKIE_SECURE and SESSION_COOKIE_SECURE settings instead.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: MIGRATION_MODULES	SESSION_FILE_PATH	FORMAT_MODULE_PATH	LANGUAGE_COOKIE_SECURE
+[Ciri] Reason for MIGRATION_MODULES: MIGRATION_MODULES should be a dictionary mapping app labels to a string specifying the package where the app's migrations are located.
+[Ciri] Reason for SESSION_FILE_PATH: SESSION_FILE_PATH is deprecated in Django 4.0 and should be removed.
+[Ciri] Reason for FORMAT_MODULE_PATH: FORMAT_MODULE_PATH is deprecated in Django 4.0 and should be removed.
+[Ciri] Reason for LANGUAGE_COOKIE_SECURE: LANGUAGE_COOKIE_SECURE is deprecated in Django 4.0 and should be removed. Use the CSRF_COOKIE_SECURE and SESSION_COOKIE_SECURE settings instead.

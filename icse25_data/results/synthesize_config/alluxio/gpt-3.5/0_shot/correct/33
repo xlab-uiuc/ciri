@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.create.ttl', 'alluxio.master.embedded.journal.transport.request.timeout.ms'], 'reason': ['Invalid value for alluxio.user.file.create.ttl. It should be a positive value.', 'Invalid value for alluxio.master.embedded.journal.transport.request.timeout.ms. It should be specified in milliseconds.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.create.ttl', 'alluxio.master.embedded.journal.transport.request.timeout.ms'], 'reason': ["Invalid value for 'alluxio.user.file.create.ttl'. Value should be greater than 0.", "Invalid value for 'alluxio.master.embedded.journal.transport.request.timeout.ms'. Value should not have units like 'sec'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.create.ttl', 'alluxio.master.embedded.journal.transport.request.timeout.ms'], 'reason': ['Invalid value for alluxio.user.file.create.ttl. Value should be greater than 0.', 'Invalid value for alluxio.master.embedded.journal.transport.request.timeout.ms. Time unit missing or incorrect format.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.file.create.ttl	alluxio.master.embedded.journal.transport.request.timeout.ms
+[Ciri] Reason for alluxio.user.file.create.ttl: Invalid value for 'alluxio.user.file.create.ttl'. Value should be greater than 0.
+[Ciri] Reason for alluxio.master.embedded.journal.transport.request.timeout.ms: Invalid value for 'alluxio.master.embedded.journal.transport.request.timeout.ms'. Value should not have units like 'sec'.

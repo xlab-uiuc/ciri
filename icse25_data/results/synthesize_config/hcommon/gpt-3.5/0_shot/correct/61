@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].decay-scheduler.decay-factor', 'hadoop.ssl.enabled'], 'reason': ['Invalid parameter name format: ipc.[port_number].decay-scheduler.decay-factor', 'Deprecated property: hadoop.ssl.enabled. Use dfs.http.policy and yarn.http.policy instead.']}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].decay-scheduler.decay-factor', 'hadoop.http.authentication.signature.secret.file', 'ha.zookeeper.acl', 'hadoop.ssl.enabled'], 'reason': ["Parameter name contains placeholder '[port_number]' which should be replaced with an actual port number.", "The value for 'hadoop.http.authentication.signature.secret.file' should not contain '${user.home}', it should have an actual path.", "The value for 'ha.zookeeper.acl' should not contain 'world:anyone:rwcda', it should be a valid ACL format.", "The property 'hadoop.ssl.enabled' is deprecated and should be replaced with 'dfs.http.policy' and 'yarn.http.policy'."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].decay-scheduler.decay-factor', 'hadoop.ssl.enabled'], 'reason': ['Invalid parameter name format: ipc.[port_number].decay-scheduler.decay-factor', 'Deprecated parameter: hadoop.ssl.enabled. Use dfs.http.policy and yarn.http.policy instead.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].decay-scheduler.decay-factor	hadoop.ssl.enabled
+[Ciri] Reason for ipc.[port_number].decay-scheduler.decay-factor: Invalid parameter name format: ipc.[port_number].decay-scheduler.decay-factor
+[Ciri] Reason for hadoop.ssl.enabled: Deprecated parameter: hadoop.ssl.enabled. Use dfs.http.policy and yarn.http.policy instead.

@@ -1,0 +1,17 @@
+Wrong shot number:
+[4, 2, 5]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.scheduler.pool-size', 'yarn.nodemanager.aux-services.manifest.reload-ms', 'yarn.timeline-service.version', 'yarn.client.application-client-protocol.poll-timeout-ms'], 'reason': ["The property 'yarn.resourcemanager.placement-constraints.scheduler.pool-size' has the value '0' which is not valid. The pool size should be greater than 0.", "The property 'yarn.nodemanager.aux-services.manifest.reload-ms' has the value '1' which might be too low, potentially causing excessive reloading and performance issues.", "The property 'yarn.timeline-service.version' has the value '0.5' which is not a valid version for YARN 3.3.0. Valid versions are '1.0', '1.5', or '2.0'.", "The property 'yarn.client.application-client-protocol.poll-timeout-ms' has the value '-2' which is not valid. Valid values are -1 for unlimited wait time or a positive integer."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: yarn.resourcemanager.placement-constraints.scheduler.pool-size	yarn.nodemanager.aux-services.manifest.reload-ms	yarn.timeline-service.version	yarn.client.application-client-protocol.poll-timeout-ms
+[Ciri] Reason for yarn.resourcemanager.placement-constraints.scheduler.pool-size: The property 'yarn.resourcemanager.placement-constraints.scheduler.pool-size' has the value '0' which is not valid. The pool size should be greater than 0.
+[Ciri] Reason for yarn.nodemanager.aux-services.manifest.reload-ms: The property 'yarn.nodemanager.aux-services.manifest.reload-ms' has the value '1' which might be too low, potentially causing excessive reloading and performance issues.
+[Ciri] Reason for yarn.timeline-service.version: The property 'yarn.timeline-service.version' has the value '0.5' which is not a valid version for YARN 3.3.0. Valid versions are '1.0', '1.5', or '2.0'.
+[Ciri] Reason for yarn.client.application-client-protocol.poll-timeout-ms: The property 'yarn.client.application-client-protocol.poll-timeout-ms' has the value '-2' which is not valid. Valid values are -1 for unlimited wait time or a positive integer.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.ipc.rpc.class', 'yarn.nodemanager.runtime.linux.runc.allowed-container-runtimes', 'yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.cache-refresh-interval-secs'], 'reason': ["The value 'NONE_CLASS' is invalid for the property 'yarn.ipc.rpc.class'. It should be a valid RPC class implementation.", "The property 'yarn.nodemanager.runtime.linux.runc.allowed-container-runtimes' is not available in Hadoop 3.3.0. It was introduced in a later version.", "The property 'yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.cache-refresh-interval-secs' is not available in Hadoop 3.3.0. It was introduced in a later version."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.ipc.rpc.class	yarn.nodemanager.runtime.linux.runc.allowed-container-runtimes	yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.cache-refresh-interval-secs
+[Ciri] Reason for yarn.ipc.rpc.class: The value 'NONE_CLASS' is invalid for the property 'yarn.ipc.rpc.class'. It should be a valid RPC class implementation.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.runc.allowed-container-runtimes: The property 'yarn.nodemanager.runtime.linux.runc.allowed-container-runtimes' is not available in Hadoop 3.3.0. It was introduced in a later version.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.cache-refresh-interval-secs: The property 'yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.cache-refresh-interval-secs' is not available in Hadoop 3.3.0. It was introduced in a later version.

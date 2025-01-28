@@ -1,0 +1,15 @@
+Wrong shot number:
+[7, 8, 2]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.data.umask'], 'reason': ["The property 'hbase.regionserver.info.bindAddress' has an invalid IP address value '-1.0.0.0'.", "The property 'hbase.data.umask' has the value '000' which is an invalid umask. A valid umask contains digits 0-7."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.info.bindAddress	hbase.data.umask
+[Ciri] Reason for hbase.regionserver.info.bindAddress: The property 'hbase.regionserver.info.bindAddress' has an invalid IP address value '-1.0.0.0'.
+[Ciri] Reason for hbase.data.umask: The property 'hbase.data.umask' has the value '000' which is an invalid umask. A valid umask contains digits 0-7.

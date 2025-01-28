@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.domain.socket.disable.interval.seconds</name>
+  <value>300</value>
+  <description>
+    The interval that a DataNode is disabled for future Short-Circuit Reads,
+    after an error happens during a Short-Circuit Read. Setting this to 0 will
+    not disable Short-Circuit Reads at all after errors happen. Negative values
+    are invalid.
+  </description>
+</property>
+
+<property>
+  <name>dfs.webhdfs.rest-csrf.custom-header</name>
+  <value>X-XSRF-HEADER</value>
+  <description>
+    The name of a custom header that HTTP requests must send when protection
+    against cross-site request forgery (CSRF) is enabled for WebHDFS by setting
+    dfs.webhdfs.rest-csrf.enabled to true.  The WebHDFS client also uses this
+    property to determine whether or not it needs to send the custom CSRF
+    prevention header in its HTTP requests.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.max-num-blocks-to-log</name>
+  <value>1000</value>
+  <description>
+    Puts a limit on the number of blocks printed to the log by the Namenode
+    after a block report.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reconstruction.pending.timeout-sec</name>
+  <value>600</value>
+  <description>
+    Timeout in seconds for block reconstruction.  If this value is 0 or less,
+    then it will default to 5 minutes.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.stale.datanode.minimum.interval</name>
+  <value>6</value>
+  <description>
+    Minimum number of missed heartbeats intervals for a datanode to
+    be marked stale by the Namenode.  The actual interval is calculated as
+    (dfs.namenode.stale.datanode.minimum.interval * dfs.heartbeat.interval)
+    in seconds.  If this value is greater than the property
+    dfs.namenode.stale.datanode.interval, then the calculated value above
+    is used.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.storageinfo.defragment.ratio</name>
+  <value>0.375</value>
+  <description>
+    The defragmentation threshold for the StorageInfo.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.snapshot.skip.capture.accesstime-only-change</name>
+  <value>true</value>
+  <description>
+    If accessTime of a file/directory changed but there is no other
+    modification made to the file/directory, the changed accesstime will
+    not be captured in next snapshot. However, if there is other modification
+    made to the file/directory, the latest access time will be captured
+    together with the modification in next snapshot.
+  </description>
+</property>
+
+<property>
+  <name>dfs.journalnode.edits.dir.perm</name>
+  <value>008</value>
+    <description>
+      Permissions for the directories on on the local filesystem where
+      the DFS journal node stores the edits. The permissions can either be
+      octal or symbolic.
+    </description>
+</property>
+
+</configuration>

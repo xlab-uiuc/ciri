@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'secureClientPortAddress', 'quorum.auth.server.saslLoginContext', 'quorum.cnxn.threads.size'], 'reason': ["The 'quorum.auth.enableSasl' property does not exist in ZooKeeper 3.7.0. Authentication settings for quorum are typically prefixed with 'quorum.auth.' but 'enableSasl' is not a recognized configuration.", "The 'quorum.auth.serverRequireSasl' property does not exist. While 'quorum.auth.' is a valid prefix, 'serverRequireSasl' is not a recognized configuration for enabling SASL authentication requirements.", "The 'secureClientPortAddress' property is not valid. The correct property for setting the address for the secure client port is 'secureClientPort'.", "The 'quorum.auth.server.saslLoginContext' property is incorrectly named. The correct property name for specifying the SASL login context for quorum communication is 'quorum.saslLoginContextName'.", "The 'quorum.cnxn.threads.size' property does not exist. The correct property for setting the size of the connection thread pool is 'quorumCnxnThreadsSize'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.serverRequireSasl	secureClientPortAddress	quorum.auth.server.saslLoginContext	quorum.cnxn.threads.size
+[Ciri] Reason for quorum.auth.enableSasl: The 'quorum.auth.enableSasl' property does not exist in ZooKeeper 3.7.0. Authentication settings for quorum are typically prefixed with 'quorum.auth.' but 'enableSasl' is not a recognized configuration.
+[Ciri] Reason for quorum.auth.serverRequireSasl: The 'quorum.auth.serverRequireSasl' property does not exist. While 'quorum.auth.' is a valid prefix, 'serverRequireSasl' is not a recognized configuration for enabling SASL authentication requirements.
+[Ciri] Reason for secureClientPortAddress: The 'secureClientPortAddress' property is not valid. The correct property for setting the address for the secure client port is 'secureClientPort'.
+[Ciri] Reason for quorum.auth.server.saslLoginContext: The 'quorum.auth.server.saslLoginContext' property is incorrectly named. The correct property name for specifying the SASL login context for quorum communication is 'quorum.saslLoginContextName'.
+[Ciri] Reason for quorum.cnxn.threads.size: The 'quorum.cnxn.threads.size' property does not exist. The correct property for setting the size of the connection thread pool is 'quorumCnxnThreadsSize'.

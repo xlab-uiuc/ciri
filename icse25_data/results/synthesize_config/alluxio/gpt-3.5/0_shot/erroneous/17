@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.underfs.s3.list.objects.v1', 'alluxio.worker.network.writer.buffer.size.messages'], 'reason': ["Invalid value for property 'alluxio.proxy.web.bind.host'. Expected format is 'host' or 'IP:port'.", "Property 'alluxio.underfs.s3.list.objects.v1' is deprecated in version 2.5.0.", "Invalid value for property 'alluxio.worker.network.writer.buffer.size.messages'. Expected value should be greater than 1."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.worker.network.writer.buffer.size.messages', 'alluxio.worker.keytab.file', 'alluxio.master.tieredstore.global.mediumtype'], 'reason': ["Invalid value for property 'alluxio.proxy.web.bind.host'.", "Invalid value for property 'alluxio.worker.network.writer.buffer.size.messages'.", "Invalid value for property 'alluxio.worker.keytab.file'.", "Invalid value for property 'alluxio.master.tieredstore.global.mediumtype'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.worker.network.writer.buffer.size.messages', 'alluxio.worker.keytab.file', 'alluxio.master.tieredstore.global.mediumtype'], 'reason': ['Invalid value x.0.0.0.0.0 for property alluxio.proxy.web.bind.host', 'Value for property alluxio.worker.network.writer.buffer.size.messages should be an integer', 'Property alluxio.worker.keytab.file should not be set in the configuration file for version 2.5.0', 'Invalid value SSD for property alluxio.master.tieredstore.global.mediumtype']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.proxy.web.bind.host	alluxio.worker.network.writer.buffer.size.messages	alluxio.worker.keytab.file	alluxio.master.tieredstore.global.mediumtype
+[Ciri] Reason for alluxio.proxy.web.bind.host: Invalid value x.0.0.0.0.0 for property alluxio.proxy.web.bind.host
+[Ciri] Reason for alluxio.worker.network.writer.buffer.size.messages: Invalid value for property 'alluxio.worker.network.writer.buffer.size.messages'.
+[Ciri] Reason for alluxio.worker.keytab.file: Invalid value for property 'alluxio.worker.keytab.file'.
+[Ciri] Reason for alluxio.master.tieredstore.global.mediumtype: Invalid value for property 'alluxio.master.tieredstore.global.mediumtype'.

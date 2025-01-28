@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_FAILURE_VIEW', 'TEST_NON_SERIALIZED_APPS', 'CSRF_COOKIE_PATH', 'CSRF_COOKIE_NAME', 'DEFAULT_CHARSET', 'SECURE_SSL_HOST'], 'reason': ["CSRF_FAILURE_VIEW should be set to 'django.views.csrf.csrf_failure' in Django 4.0.", 'TEST_NON_SERIALIZED_APPS should not be used in Django 4.0.', "CSRF_COOKIE_PATH should not be set to '/' in Django 4.0.", "CSRF_COOKIE_NAME should be set to 'csrf' in Django 4.0.", 'DEFAULT_CHARSET should not be set in Django 4.0.', 'SECURE_SSL_HOST should not be set to None in Django 4.0.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: CSRF_FAILURE_VIEW	TEST_NON_SERIALIZED_APPS	CSRF_COOKIE_PATH	CSRF_COOKIE_NAME	DEFAULT_CHARSET	SECURE_SSL_HOST
+[Ciri] Reason for CSRF_FAILURE_VIEW: CSRF_FAILURE_VIEW should be set to 'django.views.csrf.csrf_failure' in Django 4.0.
+[Ciri] Reason for TEST_NON_SERIALIZED_APPS: TEST_NON_SERIALIZED_APPS should not be used in Django 4.0.
+[Ciri] Reason for CSRF_COOKIE_PATH: CSRF_COOKIE_PATH should not be set to '/' in Django 4.0.
+[Ciri] Reason for CSRF_COOKIE_NAME: CSRF_COOKIE_NAME should be set to 'csrf' in Django 4.0.
+[Ciri] Reason for DEFAULT_CHARSET: DEFAULT_CHARSET should not be set in Django 4.0.
+[Ciri] Reason for SECURE_SSL_HOST: SECURE_SSL_HOST should not be set to None in Django 4.0.

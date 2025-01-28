@@ -1,0 +1,15 @@
+Wrong shot number:
+[11, 8, 9]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.threadpool.size', 'alluxio.master.persistence.checker.interval'], 'reason': ["The value 'ciri/ciri' for property 'alluxio.job.worker.threadpool.size' is invalid. It should be a positive integer.", "The value '10s' for property 'alluxio.master.persistence.checker.interval' is invalid. The time unit should be 'ms', 's', 'm', 'h', 'd' (not case sensitive)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.threadpool.size	alluxio.master.persistence.checker.interval
+[Ciri] Reason for alluxio.job.worker.threadpool.size: The value 'ciri/ciri' for property 'alluxio.job.worker.threadpool.size' is invalid. It should be a positive integer.
+[Ciri] Reason for alluxio.master.persistence.checker.interval: The value '10s' for property 'alluxio.master.persistence.checker.interval' is invalid. The time unit should be 'ms', 's', 'm', 'h', 'd' (not case sensitive).

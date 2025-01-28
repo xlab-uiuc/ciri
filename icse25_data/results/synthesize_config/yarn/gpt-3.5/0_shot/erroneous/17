@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.acl.reservation-enable', 'yarn.minicluster.fixed.ports'], 'reason': ["The value for 'yarn.acl.reservation-enable' should be a boolean (true/false) instead of '10'.", "The value for 'yarn.minicluster.fixed.ports' should be a boolean (true/false) instead of 'false'."]}
+
+{'hasError': True, 'errParameter': ['yarn.acl.reservation-enable', 'yarn.scheduler.minimum-allocation-mb', 'yarn.nodemanager.container-manager.thread-count', 'yarn.nodemanager.emit-container-events', 'yarn.nodemanager.runtime.linux.docker.allowed-container-runtimes', 'yarn.timeline-service.client.fd-flush-interval-secs', 'yarn.minicluster.fixed.ports', 'yarn.federation.enabled'], 'reason': ["The value for 'yarn.acl.reservation-enable' should be a boolean (true/false) instead of '10'.", "The value for 'yarn.scheduler.minimum-allocation-mb' should be an integer.", "The value for 'yarn.nodemanager.container-manager.thread-count' should be an integer.", "The value for 'yarn.nodemanager.emit-container-events' should be a boolean (true/false) instead of 'false'.", "The value for 'yarn.nodemanager.runtime.linux.docker.allowed-container-runtimes' should be a list of allowed runtimes.", "The value for 'yarn.timeline-service.client.fd-flush-interval-secs' should be an integer.", "The value for 'yarn.minicluster.fixed.ports' should be a boolean (true/false) instead of 'false'.", "The value for 'yarn.federation.enabled' should be a boolean (true/false) instead of 'false'."]}
+
+{'hasError': True, 'errParameter': ['yarn.acl.reservation-enable', 'yarn.nodemanager.container-manager.thread-count', 'yarn.federation.enabled'], 'reason': ["Value should be a boolean (true/false) for property 'yarn.acl.reservation-enable'.", "Value should be an integer for property 'yarn.nodemanager.container-manager.thread-count'.", "Value should be a boolean (true/false) for property 'yarn.federation.enabled'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.acl.reservation-enable', 'yarn.minicluster.fixed.ports'], 'reason': ["Property 'yarn.acl.reservation-enable' should have a boolean value instead of '10'.", "Property 'yarn.minicluster.fixed.ports' should have a boolean value instead of 'false'."]}
+
+{'hasError': True, 'errParameter': ['yarn.acl.reservation-enable', 'yarn.scheduler.minimum-allocation-mb', 'yarn.nodemanager.container-manager.thread-count', 'yarn.nodemanager.emit-container-events', 'yarn.nodemanager.runtime.linux.docker.allowed-container-runtimes', 'yarn.timeline-service.client.fd-flush-interval-secs', 'yarn.minicluster.fixed.ports', 'yarn.federation.enabled'], 'reason': ["The value for 'yarn.acl.reservation-enable' should be a boolean (true/false) instead of '10'.", "The value for 'yarn.scheduler.minimum-allocation-mb' should be an integer value representing memory in MB.", "The value for 'yarn.nodemanager.container-manager.thread-count' should be an integer value.", "The value for 'yarn.nodemanager.emit-container-events' should be a boolean (true/false) instead of 'false'.", "The value for 'yarn.nodemanager.runtime.linux.docker.allowed-container-runtimes' should be a list of allowed container runtimes.", "The value for 'yarn.timeline-service.client.fd-flush-interval-secs' should be an integer value representing seconds.", "The value for 'yarn.minicluster.fixed.ports' should be a boolean (true/false) instead of 'false'.", "The value for 'yarn.federation.enabled' should be a boolean (true/false) instead of 'false'."]}
+
+{'hasError': True, 'errParameter': ['yarn.acl.reservation-enable', 'yarn.minicluster.fixed.ports'], 'reason': ["The value for 'yarn.acl.reservation-enable' should be a boolean (true/false) instead of '10'.", "The value for 'yarn.minicluster.fixed.ports' should be a boolean (true/false) instead of 'false'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.acl.reservation-enable	yarn.minicluster.fixed.ports
+[Ciri] Reason for yarn.acl.reservation-enable: The value for 'yarn.acl.reservation-enable' should be a boolean (true/false) instead of '10'.
+[Ciri] Reason for yarn.minicluster.fixed.ports: Property 'yarn.minicluster.fixed.ports' should have a boolean value instead of 'false'.

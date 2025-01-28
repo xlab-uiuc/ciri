@@ -1,0 +1,18 @@
+Wrong shot number:
+[15, 14, 11]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.lease-hard-limit-sec'], 'reason': ["The value of the property 'dfs.namenode.lease-hard-limit-sec' should be smaller or equal to the value of the property 'dfs.namenode.lease.hardlimit.period'."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.lease-hard-limit-sec'], 'reason': ["The value of the property 'dfs.namenode.lease-hard-limit-sec' should be smaller than the value of the property 'dfs.namenode.lease.reassign.interval.ms'."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.lease-hard-limit-sec'], 'reason': ["The value of the property 'dfs.namenode.lease-hard-limit-sec' should be greater than or equal to the value of the property 'dfs.namenode.lease.reassign.interval.ms'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.lease-hard-limit-sec
+[Ciri] Reason for dfs.namenode.lease-hard-limit-sec: The value of the property 'dfs.namenode.lease-hard-limit-sec' should be smaller or equal to the value of the property 'dfs.namenode.lease.hardlimit.period'.

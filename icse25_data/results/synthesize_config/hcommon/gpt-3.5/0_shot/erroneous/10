@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.buffer.dir', 'fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.kill.max', 'ipc.client.low-latency', 'ftp.client-write-packet-size'], 'reason': ["Invalid value '0.0.0.0' for property 'fs.ftp.host'.", "Invalid value '/\\hadoop/s3a' for property 'fs.s3a.buffer.dir'.", "Invalid value '-1' for property 'fs.s3a.s3guard.ddb.table.capacity.write'.", "Invalid value '1' for property 'ipc.client.kill.max'.", "Invalid value 'false' for property 'ipc.client.low-latency'.", "Invalid value '32768' for property 'ftp.client-write-packet-size'."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.buffer.dir', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ['Invalid value for fs.ftp.host property. It should be a valid hostname or IP address.', 'Invalid value for fs.s3a.buffer.dir property. The value contains an invalid character.', 'Invalid value for fs.s3a.s3guard.ddb.table.capacity.write property. The value should be a positive integer or -1.']}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.buffer.dir'], 'reason': ['Invalid value for property fs.ftp.host. It should be a valid hostname or IP address.', 'Invalid value for property fs.s3a.buffer.dir. The value contains an invalid character.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.buffer.dir'], 'reason': ["Invalid value for property 'fs.ftp.host'. It should be a valid hostname or IP address.", "Invalid value for property 'fs.s3a.buffer.dir'. The value contains an invalid character '\\'."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.buffer.dir'], 'reason': ['Invalid value for property fs.ftp.host. It should be a valid hostname or IP address.', 'Invalid value for property fs.s3a.buffer.dir. The value contains an invalid character.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.buffer.dir', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ['Invalid value for property fs.s3a.buffer.dir. The value should not contain backslashes. Correct value: /hadoop/s3a', 'Invalid value for property fs.s3a.s3guard.ddb.table.capacity.write. The value should be a positive integer or -1 for default. Correct value: Positive integer or -1']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.buffer.dir
+[Ciri] Reason for fs.ftp.host: Invalid value for property fs.ftp.host. It should be a valid hostname or IP address.
+[Ciri] Reason for fs.s3a.buffer.dir: Invalid value for property 'fs.s3a.buffer.dir'. The value contains an invalid character '\'.

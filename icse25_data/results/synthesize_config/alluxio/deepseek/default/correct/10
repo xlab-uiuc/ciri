@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 3, 5]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.cleanup.interval'], 'reason': ["The property 'alluxio.underfs.cleanup.interval' has the value '10day' which is not a valid value. Alluxio supports only milliseconds, seconds, minutes, hours, days as time units."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.cleanup.interval'], 'reason': ["The property 'alluxio.underfs.cleanup.interval' has the value '10day' which is not a valid value. The valid values are 'ms', 's', 'm', 'h', 'd', 'w', 'M', 'y'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.cleanup.interval'], 'reason': ["The property 'alluxio.underfs.cleanup.interval' has the value '10day' which is not a valid unit."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.underfs.cleanup.interval
+[Ciri] Reason for alluxio.underfs.cleanup.interval: The property 'alluxio.underfs.cleanup.interval' has the value '10day' which is not a valid unit.

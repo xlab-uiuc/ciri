@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.global.memstore.size.lower.limit</name>
+  <value>0.1</value>
+    <description>Maximum size of all memstores in a region server before flushes
+      are forced. Defaults to 95% of hbase.regionserver.global.memstore.size
+      (0.95). A 100% value for this value causes the minimum possible flushing
+      to occur when updates are blocked due to memstore limiting. The default
+      value in this configuration has been intentionally left empty in order to
+      honor the old hbase.regionserver.global.memstore.lowerLimit property if
+      present.
+    </description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.syncLimit</name>
+  <value>10</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The number of ticks that can pass between sending a request and getting an
+    acknowledgment.</description>
+</property>
+
+<property>
+  <name>hbase.client.localityCheck.threadPoolSize</name>
+  <value>2</value>
+</property>
+
+<property>
+  <name>hbase.master.keytab.file</name>
+  <value>/valid/file1</value>
+    <description>Full path to the kerberos keytab file to use for logging in
+    the configured HMaster server principal.</description>
+</property>
+
+<property>
+  <name>hbase.rest.readonly</name>
+  <value>false</value>
+    <description>Defines the mode the REST server will be started in. Possible values are:
+    false: All HTTP methods are permitted - GET/PUT/POST/DELETE.
+    true: Only the GET method is permitted.</description>
+</property>
+
+<property>
+  <name>hbase.server.compactchecker.interval.multiplier</name>
+  <value>1000</value>
+    <description>The number that determines how often we scan to see if compaction is necessary.
+        Normally, compactions are done after some events (such as memstore flush), but if
+        region didn't receive a lot of writes for some time, or due to different compaction
+        policies, it may be necessary to check it periodically. The interval between checks is
+        hbase.server.compactchecker.interval.multiplier multiplied by
+        hbase.server.thread.wakefrequency.</description>
+</property>
+
+<property>
+  <name>hbase.security.exec.permission.checks</name>
+  <value>true</value>
+    <description>
+      If this setting is enabled and ACL based access control is active (the
+      AccessController coprocessor is installed either as a system coprocessor
+      or on a table as a table coprocessor) then you must grant all relevant
+      users EXEC privilege if they require the ability to execute coprocessor
+      endpoint calls. EXEC privilege, like any other permission, can be
+      granted globally to a user, or to a user on a per table or per namespace
+      basis. For more information on coprocessor endpoints, see the coprocessor
+      section of the HBase online manual. For more information on granting or
+      revoking permissions using the AccessController, see the security
+      section of the HBase online manual.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rpc.rows.warning.threshold</name>
+  <value>2500</value>
+    <description>
+      Number of rows in a batch operation above which a warning will be logged.
+    </description>
+</property>
+
+</configuration>

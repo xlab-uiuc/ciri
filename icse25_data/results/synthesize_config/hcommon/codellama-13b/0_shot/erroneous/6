@@ -1,0 +1,39 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.consistency.retry.interval', 'hadoop.http.authentication.kerberos.keytab'], 'reason': ["fs.s3a.s3guard.consistency.retry.interval: The value is not a valid time duration. Valid time units are 'ms', 's', 'm', 'h', 'd'.", 'hadoop.http.authentication.kerberos.keytab: The file does not exist.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.consistency.retry.interval'], 'reason': ['fs.s3a.s3guard.consistency.retry.interval is not a valid property']}
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.s3guard.consistency.retry.interval', 'fs.s3a.select.input.csv.quote.escape.character', 'ha.failover-controller.cli-check.rpc-timeout.ms'], 'reason': ['The value of hadoop.service.shutdown.timeout is not a valid time duration.', 'The value of fs.s3a.s3guard.consistency.retry.interval is not a valid time duration.', 'The value of fs.s3a.select.input.csv.quote.escape.character is not a valid escape character.', 'The value of ha.failover-controller.cli-check.rpc-timeout.ms is not a valid time duration.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.s3guard.consistency.retry.interval', 'fs.s3a.select.input.csv.quote.escape.character', 'hadoop.http.authentication.kerberos.keytab'], 'reason': ['The value of hadoop.service.shutdown.timeout is not a valid time duration.', 'The value of fs.s3a.s3guard.consistency.retry.interval is not a valid time duration.', 'The value of fs.s3a.select.input.csv.quote.escape.character is not a valid escape character.', 'The value of hadoop.http.authentication.kerberos.keytab is not a valid file path.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.connection.establish.timeout', 'fs.s3a.s3guard.consistency.retry.interval', 'fs.s3a.select.input.csv.quote.escape.character', 'hadoop.http.authentication.kerberos.keytab', 'ha.failover-controller.cli-check.rpc-timeout.ms'], 'reason': ['fs.s3a.connection.establish.timeout is not a valid property', 'fs.s3a.s3guard.consistency.retry.interval is not a valid property', 'fs.s3a.select.input.csv.quote.escape.character is not a valid property', 'hadoop.http.authentication.kerberos.keytab is not a valid property', 'ha.failover-controller.cli-check.rpc-timeout.ms is not a valid property']}
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.s3guard.consistency.retry.interval'], 'reason': ['hadoop.service.shutdown.timeout: Timeout to wait for each shutdown operation to complete. If a hook takes longer than this time to complete, it will be interrupted, so the service will shutdown. This allows the service shutdown to recover from a blocked operation. Some shutdown hooks may need more time than this, for example when a large amount of data needs to be uploaded to an object store. In this situation: increase the timeout. The minimum duration of the timeout is 1 second, "1s".', 'fs.s3a.s3guard.consistency.retry.interval: Initial interval between attempts to retry operations while waiting for S3 to become consistent with the S3Guard data. An exponential back-off is used here: every failure doubles the delay.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.consistency.retry.interval'], 'reason': ['fs.s3a.s3guard.consistency.retry.interval is not a valid property for Hadoop Common 3.3.0']}
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.s3guard.consistency.retry.interval', 'fs.s3a.select.input.csv.quote.escape.character', 'hadoop.http.authentication.kerberos.keytab', 'ha.failover-controller.cli-check.rpc-timeout.ms'], 'reason': ['The value of hadoop.service.shutdown.timeout is not a valid time duration.', 'The value of fs.s3a.s3guard.consistency.retry.interval is not a valid time duration.', 'The value of fs.s3a.select.input.csv.quote.escape.character is not a valid escape character.', 'The value of hadoop.http.authentication.kerberos.keytab is not a valid file path.', 'The value of ha.failover-controller.cli-check.rpc-timeout.ms is not a valid time duration.']}
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.s3guard.consistency.retry.interval', 'hadoop.http.authentication.kerberos.keytab'], 'reason': ['The value of hadoop.service.shutdown.timeout is not a valid duration.', 'The value of fs.s3a.s3guard.consistency.retry.interval is not a valid duration.', 'The value of hadoop.http.authentication.kerberos.keytab is not a valid file path.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.consistency.retry.interval', 'hadoop.http.authentication.kerberos.keytab'], 'reason': ['fs.s3a.s3guard.consistency.retry.interval: The value must be a valid time duration.', 'hadoop.http.authentication.kerberos.keytab: The value must be a valid file path.']}
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.s3guard.consistency.retry.interval', 'fs.s3a.select.input.csv.quote.escape.character', 'hadoop.http.authentication.kerberos.keytab'], 'reason': ['The value of hadoop.service.shutdown.timeout is not a valid duration.', 'The value of fs.s3a.s3guard.consistency.retry.interval is not a valid duration.', 'The value of fs.s3a.select.input.csv.quote.escape.character is not a valid character.', 'The value of hadoop.http.authentication.kerberos.keytab is not a valid file.']}
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.s3guard.consistency.retry.interval', 'fs.s3a.select.input.csv.quote.escape.character', 'hadoop.http.authentication.kerberos.keytab'], 'reason': ['The value of hadoop.service.shutdown.timeout is not a valid duration', 'The value of fs.s3a.s3guard.consistency.retry.interval is not a valid duration', 'The value of fs.s3a.select.input.csv.quote.escape.character is not a valid escape character', 'The value of hadoop.http.authentication.kerberos.keytab is not a valid file']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.s3a.s3guard.consistency.retry.interval	fs.s3a.select.input.csv.quote.escape.character	hadoop.http.authentication.kerberos.keytab
+[Ciri] Reason for hadoop.service.shutdown.timeout: The value of hadoop.service.shutdown.timeout is not a valid duration
+[Ciri] Reason for fs.s3a.s3guard.consistency.retry.interval: The value of fs.s3a.s3guard.consistency.retry.interval is not a valid duration
+[Ciri] Reason for fs.s3a.select.input.csv.quote.escape.character: The value of fs.s3a.select.input.csv.quote.escape.character is not a valid character.
+[Ciri] Reason for hadoop.http.authentication.kerberos.keytab: The value of hadoop.http.authentication.kerberos.keytab is not a valid file

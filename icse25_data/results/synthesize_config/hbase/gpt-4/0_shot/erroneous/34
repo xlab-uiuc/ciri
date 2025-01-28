@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.server.scanner.max.result.size'], 'reason': ["The 'hbase.zookeeper.leaderport' value is 65536, which is outside the valid port range of 0-65535.", "The 'hbase.server.scanner.max.result.size' default value is mentioned as 100MB, but the set value is 52428800 bytes, which is actually 50MB."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.zookeeper.leaderport	hbase.server.scanner.max.result.size
+[Ciri] Reason for hbase.zookeeper.leaderport: The 'hbase.zookeeper.leaderport' value is 65536, which is outside the valid port range of 0-65535.
+[Ciri] Reason for hbase.server.scanner.max.result.size: The 'hbase.server.scanner.max.result.size' default value is mentioned as 100MB, but the set value is 52428800 bytes, which is actually 50MB.

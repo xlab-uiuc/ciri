@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.flush.batch.time', 'alluxio.master.journal.flush.timeout', 'alluxio.user.short.circuit.enabled', 'alluxio.master.filesystem.liststatus.result.message.length', 'alluxio.underfs.s3.proxy.port', 'alluxio.worker.keytab.file', 'alluxio.worker.ufs.block.open.timeout', 'alluxio.network.connection.shutdown.graceful.timeout'], 'reason': ['alluxio.master.journal.flush.batch.time: The value should be a valid time unit, such as 500ms or 1000us.', 'alluxio.master.journal.flush.timeout: The value should be a valid time unit, such as 400ms or 1000us.', 'alluxio.user.short.circuit.enabled: The value should be a boolean, such as true or false.', 'alluxio.master.filesystem.liststatus.result.message.length: The value should be a valid integer, such as 10000 or 2000.', 'alluxio.underfs.s3.proxy.port: The value should be a valid port number, such as 3000 or 4000.', 'alluxio.worker.keytab.file: The value should be a valid file path, such as /valid/file2.', 'alluxio.worker.ufs.block.open.timeout: The value should be a valid time unit, such as 1min or 2min.', 'alluxio.network.connection.shutdown.graceful.timeout: The value should be a valid time unit, such as 90sec or 100sec.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.master.journal.flush.batch.time	alluxio.master.journal.flush.timeout	alluxio.user.short.circuit.enabled	alluxio.master.filesystem.liststatus.result.message.length	alluxio.underfs.s3.proxy.port	alluxio.worker.keytab.file	alluxio.worker.ufs.block.open.timeout	alluxio.network.connection.shutdown.graceful.timeout
+[Ciri] Reason for alluxio.master.journal.flush.batch.time: alluxio.master.journal.flush.batch.time: The value should be a valid time unit, such as 500ms or 1000us.
+[Ciri] Reason for alluxio.master.journal.flush.timeout: alluxio.master.journal.flush.timeout: The value should be a valid time unit, such as 400ms or 1000us.
+[Ciri] Reason for alluxio.user.short.circuit.enabled: alluxio.user.short.circuit.enabled: The value should be a boolean, such as true or false.
+[Ciri] Reason for alluxio.master.filesystem.liststatus.result.message.length: alluxio.master.filesystem.liststatus.result.message.length: The value should be a valid integer, such as 10000 or 2000.
+[Ciri] Reason for alluxio.underfs.s3.proxy.port: alluxio.underfs.s3.proxy.port: The value should be a valid port number, such as 3000 or 4000.
+[Ciri] Reason for alluxio.worker.keytab.file: alluxio.worker.keytab.file: The value should be a valid file path, such as /valid/file2.
+[Ciri] Reason for alluxio.worker.ufs.block.open.timeout: alluxio.worker.ufs.block.open.timeout: The value should be a valid time unit, such as 1min or 2min.
+[Ciri] Reason for alluxio.network.connection.shutdown.graceful.timeout: alluxio.network.connection.shutdown.graceful.timeout: The value should be a valid time unit, such as 90sec or 100sec.

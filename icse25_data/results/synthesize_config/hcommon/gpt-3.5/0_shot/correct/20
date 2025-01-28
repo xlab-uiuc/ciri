@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.select.input.csv.header'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has an incorrect value format. It should be in the format of 'number + s' (e.g., '60s').", "The property 'fs.s3a.select.input.csv.header' has an invalid value. It should be one of 'none', 'ignore', or 'use'."]}
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.select.input.csv.header'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has an incorrect value format. It should be in the format of 'number + s' (e.g., '60s').", "The property 'fs.s3a.select.input.csv.header' has an invalid value. It should be one of 'none', 'ignore', or 'use'."]}
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.select.input.csv.header'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has an incorrect value format. It should be in the format '60s'.", "The property 'fs.s3a.select.input.csv.header' has an invalid value. It should be one of 'none', 'ignore', or 'use'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.s3a.select.input.csv.header
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has an incorrect value format. It should be in the format of 'number + s' (e.g., '60s').
+[Ciri] Reason for fs.s3a.select.input.csv.header: The property 'fs.s3a.select.input.csv.header' has an invalid value. It should be one of 'none', 'ignore', or 'use'.

@@ -1,0 +1,35 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'gss_accept_delegation', 'lc_numeric', 'min_parallel_table_scan_size'], 'reason': ['listen_addresses is not a valid IP address', 'gss_accept_delegation is not a valid boolean', 'lc_numeric is not a valid locale', 'min_parallel_table_scan_size is not a valid size']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'enable_bitmapscan', 'gss_accept_delegation', 'min_parallel_table_scan_size'], 'reason': ["listen_addresses: The value 'localhost' is not a valid IP address or a valid subnet. It should be a valid IP address or a valid subnet.", "enable_bitmapscan: The value 'on' is not a valid boolean. It should be a valid boolean.", "gss_accept_delegation: The value 'off' is not a valid boolean. It should be a valid boolean.", "min_parallel_table_scan_size: The value '16MB' is not a valid integer. It should be a valid integer."]}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'min_parallel_table_scan_size'], 'reason': ['listen_addresses should be a list of IP addresses or hostnames, not a string.', 'min_parallel_table_scan_size should be a number, not a string.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'gss_accept_delegation', 'min_parallel_table_scan_size'], 'reason': ['listen_addresses: should be a list of IP addresses, not a string', 'gss_accept_delegation: should be a boolean value, not a string', 'min_parallel_table_scan_size: should be an integer value, not a string']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'krb_server_keyfile', 'gss_accept_delegation', 'min_parallel_table_scan_size'], 'reason': ['listen_addresses is not a valid IP address', 'krb_server_keyfile is not a valid file path', 'gss_accept_delegation is not a valid boolean value', 'min_parallel_table_scan_size is not a valid size']}
+
+{'hasError': True, 'errParameter': ['listen_addresses'], 'reason': ['listen_addresses is not a valid parameter for PostgreSQL 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'gss_accept_delegation'], 'reason': ['listen_addresses is not a valid parameter for PostgreSQL 13.0', 'gss_accept_delegation is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'gss_accept_delegation', 'min_parallel_table_scan_size'], 'reason': ['listen_addresses should be a list of IP addresses or hostnames, not a string.', 'gss_accept_delegation should be a boolean, not a string.', 'min_parallel_table_scan_size should be a number, not a string.']}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'enable_bitmapscan', 'min_parallel_table_scan_size'], 'reason': ["listen_addresses should be a valid IP address or a hostname, not 'localhost'", "enable_bitmapscan should be a boolean, not 'on'", "min_parallel_table_scan_size should be a number, not '16MB'"]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+The CONFIGURATION FILE IS CORRECT

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'vacuum_multixact_freeze_min_age', 'superuser_reserved_connections'], 'reason': ['listen_addresses should be a comma-separated list of hostnames or IP addresses', 'unix_socket_directories should be a comma-separated list of directories', 'vacuum_multixact_freeze_min_age should be a positive integer', 'superuser_reserved_connections should be a positive integer']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: listen_addresses	unix_socket_directories	vacuum_multixact_freeze_min_age	superuser_reserved_connections
+[Ciri] Reason for listen_addresses: listen_addresses should be a comma-separated list of hostnames or IP addresses
+[Ciri] Reason for unix_socket_directories: unix_socket_directories should be a comma-separated list of directories
+[Ciri] Reason for vacuum_multixact_freeze_min_age: vacuum_multixact_freeze_min_age should be a positive integer
+[Ciri] Reason for superuser_reserved_connections: superuser_reserved_connections should be a positive integer

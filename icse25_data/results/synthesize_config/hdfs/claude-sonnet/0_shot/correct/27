@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.redundancy.interval.seconds', 'dfs.namenode.checkpoint.period'], 'reason': ["The value '1s' for the property 'dfs.namenode.redundancy.interval.seconds' is not valid in Hadoop 3.3.0. The minimum value allowed is 3 seconds.", "The value '7200s' for the property 'dfs.namenode.checkpoint.period' is not valid in Hadoop 3.3.0. The minimum value allowed is 1 hour (3600 seconds)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.redundancy.interval.seconds	dfs.namenode.checkpoint.period
+[Ciri] Reason for dfs.namenode.redundancy.interval.seconds: The value '1s' for the property 'dfs.namenode.redundancy.interval.seconds' is not valid in Hadoop 3.3.0. The minimum value allowed is 3 seconds.
+[Ciri] Reason for dfs.namenode.checkpoint.period: The value '7200s' for the property 'dfs.namenode.checkpoint.period' is not valid in Hadoop 3.3.0. The minimum value allowed is 1 hour (3600 seconds).

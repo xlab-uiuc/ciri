@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'fs.s3a.threads.max', 'ipc.server.listen.queue.size', 'ha.failover-controller.active-standby-elector.zk.op.retries', 'hadoop.security.key.provider.path', 'hadoop.http.sni.host.check.enabled'], 'reason': ['Deprecated property', 'Property should be positive', 'Property should be positive', 'Property should be positive', 'Property should be a valid file path', 'Property should be a boolean']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.default.name	fs.s3a.threads.max	ipc.server.listen.queue.size	ha.failover-controller.active-standby-elector.zk.op.retries	hadoop.security.key.provider.path	hadoop.http.sni.host.check.enabled
+[Ciri] Reason for fs.default.name: Deprecated property
+[Ciri] Reason for fs.s3a.threads.max: Property should be positive
+[Ciri] Reason for ipc.server.listen.queue.size: Property should be positive
+[Ciri] Reason for ha.failover-controller.active-standby-elector.zk.op.retries: Property should be positive
+[Ciri] Reason for hadoop.security.key.provider.path: Property should be a valid file path
+[Ciri] Reason for hadoop.http.sni.host.check.enabled: Property should be a boolean

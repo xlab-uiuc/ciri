@@ -1,0 +1,19 @@
+Wrong shot number:
+[1, 5, 3]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_ecdh_curve', 'timezone_abbreviations'], 'reason': ["The property 'ssl_ecdh_curve' has an invalid value 'prime256v1' with an extra single quote.", "The property 'timezone_abbreviations' has an invalid value 'Default' which is not a valid timezone abbreviation."]}
+
+{'hasError': True, 'errParameter': ['ssl_ecdh_curve', 'timezone_abbreviations'], 'reason': ["The property 'ssl_ecdh_curve' has an invalid value 'prime256v1' with an extra single quote at the end.", "The property 'timezone_abbreviations' should not have a value of 'Default'. It should be set to a valid timezone abbreviation."]}
+
+{'hasError': True, 'errParameter': ['ssl_ecdh_curve', 'timezone_abbreviations'], 'reason': ["The property 'ssl_ecdh_curve' has an invalid value 'prime256v1'' with an extra single quote at the end.", "The property 'timezone_abbreviations' has an invalid value 'Default' which is not a valid timezone abbreviation."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ssl_ecdh_curve	timezone_abbreviations
+[Ciri] Reason for ssl_ecdh_curve: The property 'ssl_ecdh_curve' has an invalid value 'prime256v1'' with an extra single quote at the end.
+[Ciri] Reason for timezone_abbreviations: The property 'timezone_abbreviations' has an invalid value 'Default' which is not a valid timezone abbreviation.

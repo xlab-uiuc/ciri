@@ -1,0 +1,20 @@
+Wrong shot number:
+[15, 14, 5]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['s3.bytes-per-checksum', 'ipc.[port_number].weighted-cost.lockexclusive', 'hadoop.prometheus.endpoint.enabled'], 'reason': ["The property 's3.bytes-per-checksum' is not a valid configuration for Hadoop Common version 3.3.0. It seems to be intended for S3 file system configurations but is incorrectly prefixed.", "The property 'ipc.[port_number].weighted-cost.lockexclusive' uses a placeholder '[port_number]' which should be replaced with an actual port number for a valid configuration.", "The property 'hadoop.prometheus.endpoint.enabled' does not exist in Hadoop Common version 3.3.0. There is no native support for Prometheus metrics in this version."]}
+
+{'hasError': True, 'errParameter': ['s3.bytes-per-checksum', 'fs.wasbs.impl', 'ipc.[port_number].weighted-cost.lockexclusive'], 'reason': ["The property 's3.bytes-per-checksum' is not a recognized configuration option for Hadoop.", "The property 'fs.wasbs.impl' seems to be incorrectly formatted or is not a standard property for Hadoop configurations.", "The property 'ipc.[port_number].weighted-cost.lockexclusive' uses a placeholder '[port_number]' which should be replaced with an actual port number if it is intended to be used."]}
+
+{'hasError': True, 'errParameter': ['s3.bytes-per-checksum', 'fs.wasbs.impl', 'ipc.[port_number].weighted-cost.lockexclusive'], 'reason': ["The property 's3.bytes-per-checksum' is not applicable for Hadoop Common configurations and seems to be incorrectly named or placed.", "The property 'fs.wasbs.impl' contains an XML element 'usage' which is not a valid configuration element.", "The property name 'ipc.[port_number].weighted-cost.lockexclusive' uses a placeholder '[port_number]' which should be replaced with an actual port number or removed if it is not applicable."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: s3.bytes-per-checksum	fs.wasbs.impl	ipc.[port_number].weighted-cost.lockexclusive
+[Ciri] Reason for s3.bytes-per-checksum: The property 's3.bytes-per-checksum' is not applicable for Hadoop Common configurations and seems to be incorrectly named or placed.
+[Ciri] Reason for fs.wasbs.impl: The property 'fs.wasbs.impl' contains an XML element 'usage' which is not a valid configuration element.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockexclusive: The property 'ipc.[port_number].weighted-cost.lockexclusive' uses a placeholder '[port_number]' which should be replaced with an actual port number if it is intended to be used.

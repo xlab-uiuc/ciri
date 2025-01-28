@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind', 'unixsocketperm', 'protected-mode', 'dbfilename', 'lazyfree-lazy-server-del', 'aclfile', 'supervised', 'tls-protocols', 'tcp-keepalive', 'enable-protected-configs'], 'reason': ['bind must be a valid IP address or hostname', 'unixsocketperm must be a valid file permission', 'protected-mode must be a boolean', 'dbfilename must be a valid file name', 'lazyfree-lazy-server-del must be a boolean', 'aclfile must be a valid file path', 'supervised must be a boolean', 'tls-protocols must be a valid TLS protocol list', 'tcp-keepalive must be a positive integer', 'enable-protected-configs must be a boolean']}
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'aclfile', 'supervised'], 'reason': ['repl-diskless-load is not a valid configuration parameter.', 'aclfile is not a valid configuration parameter.', 'supervised is not a valid configuration parameter.']}
+
+{'hasError': True, 'errParameter': ['aclfile', 'supervised'], 'reason': ['aclfile: ACL files are not supported in Redis 7.0.0 and later.', 'supervised: supervised is not a valid parameter in Redis 7.0.0 and later.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dbfilename', 'aclfile', 'supervised'], 'reason': ['dbfilename: The value of dbfilename is not a valid file path.', 'aclfile: The value of aclfile is not a valid file path.', 'supervised: The value of supervised is not a valid value. It must be one of auto, always, or never.']}
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'aclfile', 'supervised'], 'reason': ["The parameter 'repl-diskless-load' is not supported in redis version 7.0.0.", "The parameter 'aclfile' is not supported in redis version 7.0.0.", "The parameter 'supervised' is not supported in redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['aclfile', 'supervised'], 'reason': ["The parameter 'aclfile' is not a valid file path.", "The parameter 'supervised' is not a valid value. Valid values are 'no', 'yes', and 'auto'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['aclfile', 'supervised'], 'reason': ['aclfile: /valid/file2.acl is not a valid path', 'supervised: supervised can only be auto, yes, or no']}
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'aclfile', 'supervised'], 'reason': ['repl-diskless-load must be either enabled or disabled', 'aclfile must be a valid file path', 'supervised must be either auto, yes, or no']}
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'aclfile', 'supervised'], 'reason': ['repl-diskless-load is not a valid parameter for redis version 7.0.0', 'aclfile is not a valid parameter for redis version 7.0.0', 'supervised is not a valid parameter for redis version 7.0.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: repl-diskless-load	aclfile	supervised
+[Ciri] Reason for repl-diskless-load: repl-diskless-load is not a valid parameter for redis version 7.0.0
+[Ciri] Reason for aclfile: aclfile is not a valid parameter for redis version 7.0.0
+[Ciri] Reason for supervised: supervised must be either auto, yes, or no

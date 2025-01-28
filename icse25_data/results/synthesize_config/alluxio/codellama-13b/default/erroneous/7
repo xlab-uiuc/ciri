@@ -1,0 +1,19 @@
+Wrong shot number:
+[12, 4, 6]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.connnection.timeout', 'alluxio.network.host.resolution.timeout'], 'reason': ["The property 'alluxio.underfs.web.connnection.timeout' has the value '80hhhhh' which does not follow the correct duration format.", "The property 'alluxio.network.host.resolution.timeout' has the value '1sec' which does not follow the correct duration format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.connnection.timeout', 'alluxio.user.client.cache.evictor.class'], 'reason': ["The property 'alluxio.underfs.web.connnection.timeout' has the value '80hhhhh' which does not follow the correct time format.", "The property 'alluxio.user.client.cache.evictor.class' has the value 'alluxio.client.file.cache.evictor.LRUCacheEvictor' which is not a valid class name."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.connnection.timeout', 'alluxio.network.host.resolution.timeout'], 'reason': ["The property 'alluxio.underfs.web.connnection.timeout' has the value '80hhhhh' which does not follow the correct time format.", "The property 'alluxio.network.host.resolution.timeout' has the value '1sec' which does not follow the correct time format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.web.connnection.timeout	alluxio.network.host.resolution.timeout
+[Ciri] Reason for alluxio.underfs.web.connnection.timeout: The property 'alluxio.underfs.web.connnection.timeout' has the value '80hhhhh' which does not follow the correct time format.
+[Ciri] Reason for alluxio.network.host.resolution.timeout: The property 'alluxio.network.host.resolution.timeout' has the value '1sec' which does not follow the correct time format.

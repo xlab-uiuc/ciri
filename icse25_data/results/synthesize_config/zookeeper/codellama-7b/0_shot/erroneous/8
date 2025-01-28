@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'tickTime', 'maxClientCnxns', 'minSessionTimeout', 'maxSessionTimeout', 'syncEnabled', 'sslQuorumReloadCertFiles', 'localSessionsUpgradingEnabled', 'quorum.auth.server.saslLoginContext'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'tickTime is not a valid integer', 'maxClientCnxns is not a valid integer', 'minSessionTimeout is not a valid integer', 'maxSessionTimeout is not a valid integer', 'syncEnabled is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'localSessionsUpgradingEnabled is not a valid boolean', 'quorum.auth.server.saslLoginContext is not a valid string']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'tickTime', 'maxSessionTimeout', 'minSessionTimeout', 'syncEnabled', 'sslQuorumReloadCertFiles', 'localSessionsUpgradingEnabled', 'quorum.auth.server.saslLoginContext'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'tickTime is not a valid integer', 'maxSessionTimeout is not a valid integer', 'minSessionTimeout is not a valid integer', 'syncEnabled is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'localSessionsUpgradingEnabled is not a valid boolean', 'quorum.auth.server.saslLoginContext is not a valid string']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'tickTime', 'maxSessionTimeout', 'minSessionTimeout', 'syncEnabled', 'sslQuorumReloadCertFiles', 'localSessionsUpgradingEnabled', 'quorum.auth.server.saslLoginContext'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'tickTime must be greater than 0', 'maxSessionTimeout must be greater than or equal to 0', 'minSessionTimeout must be greater than or equal to 0', 'syncEnabled must be a boolean', 'sslQuorumReloadCertFiles must be a boolean', 'localSessionsUpgradingEnabled must be a boolean', 'quorum.auth.server.saslLoginContext must be a string']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: dataDir	dataLogDir	tickTime	maxSessionTimeout	minSessionTimeout	syncEnabled	sslQuorumReloadCertFiles	localSessionsUpgradingEnabled	quorum.auth.server.saslLoginContext
+[Ciri] Reason for dataDir: dataDir is not a valid directory
+[Ciri] Reason for dataLogDir: dataLogDir is not a valid directory
+[Ciri] Reason for tickTime: tickTime must be greater than 0
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout must be greater than or equal to 0
+[Ciri] Reason for minSessionTimeout: minSessionTimeout is not a valid integer
+[Ciri] Reason for syncEnabled: syncEnabled is not a valid boolean
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles must be a boolean
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled must be a boolean
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext must be a string

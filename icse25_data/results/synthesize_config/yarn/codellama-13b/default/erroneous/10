@@ -1,0 +1,26 @@
+Wrong shot number:
+[4, 8, 10]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.http.policy', 'yarn.timeline-service.hostname'], 'reason': ["The property 'yarn.http.policy' has the value 'HTTP_ONLY' which is not supported in the current version.", "The property 'yarn.timeline-service.hostname' has the value '1.1.1.1.1.1' which is not a valid hostname."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.monitor.policies'], 'reason': ["The property 'yarn.resourcemanager.scheduler.monitor.policies' has the value 'org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy' which is not a valid class name."]}
+
+{'hasError': True, 'errParameter': ['yarn.http.policy'], 'reason': ["The property 'yarn.http.policy' has the value 'HTTP_ONLY' which is not a valid value. The valid values are: HTTP_ONLY, HTTPS_ONLY."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.http.policy'], 'reason': ["The property 'yarn.http.policy' has the value 'HTTP_ONLY' which is not a valid value for this property. Valid values are 'HTTP_ONLY', 'HTTPS_ONLY'."]}
+
+{'hasError': True, 'errParameter': ['yarn.http.policy'], 'reason': ["The property 'yarn.http.policy' has the value 'HTTP_ONLY' which is not a valid value. Valid values are 'HTTP_ONLY' and 'HTTPS_ONLY'."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.monitor.policies'], 'reason': ["The property 'yarn.resourcemanager.scheduler.monitor.policies' has the value 'org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy' which is not supported in the current version."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.http.policy
+[Ciri] Reason for yarn.http.policy: The property 'yarn.http.policy' has the value 'HTTP_ONLY' which is not a valid value for this property. Valid values are 'HTTP_ONLY', 'HTTPS_ONLY'.

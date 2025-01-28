@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.space.monitor.interval', 'alluxio.user.master.polling.timeout'], 'reason': ["The correct property for journal space monitor interval should be 'alluxio.master.journal.checkpoint.period.entries', not 'alluxio.master.journal.space.monitor.interval'.", "The correct format for specifying durations in Alluxio configuration is using time unit suffixes without spaces, e.g., '30sec' should be '30sec' or '30s'. However, the property 'alluxio.user.master.polling.timeout' itself does not exist in Alluxio 2.5.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.journal.space.monitor.interval	alluxio.user.master.polling.timeout
+[Ciri] Reason for alluxio.master.journal.space.monitor.interval: The correct property for journal space monitor interval should be 'alluxio.master.journal.checkpoint.period.entries', not 'alluxio.master.journal.space.monitor.interval'.
+[Ciri] Reason for alluxio.user.master.polling.timeout: The correct format for specifying durations in Alluxio configuration is using time unit suffixes without spaces, e.g., '30sec' should be '30sec' or '30s'. However, the property 'alluxio.user.master.polling.timeout' itself does not exist in Alluxio 2.5.0.

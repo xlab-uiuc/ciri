@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maintenance_io_concurrency', 'wal_recycle', 'tcp_keepalives_idle', 'tcp_user_timeout', 'data_sync_retry', 'ident_file', 'include_if_exists', 'max_locks_per_transaction'], 'reason': ['maintenance_io_concurrency is not a valid parameter for PostgreSQL 13.0', 'wal_recycle is not a valid parameter for PostgreSQL 13.0', 'tcp_keepalives_idle is not a valid parameter for PostgreSQL 13.0', 'tcp_user_timeout is not a valid parameter for PostgreSQL 13.0', 'data_sync_retry is not a valid parameter for PostgreSQL 13.0', 'ident_file is not a valid parameter for PostgreSQL 13.0', 'include_if_exists is not a valid parameter for PostgreSQL 13.0', 'max_locks_per_transaction should be max_locks_per_transaction']}
+
+{'hasError': True, 'errParameter': ['maintenance_io_concurrency', 'wal_recycle', 'tcp_keepalives_idle', 'tcp_user_timeout', 'data_sync_retry', 'ident_file', 'include_if_exists', 'max_locks_per_transaction'], 'reason': ['maintenance_io_concurrency is not a valid parameter for PostgreSQL 13.0', 'wal_recycle is not a valid parameter for PostgreSQL 13.0', 'tcp_keepalives_idle is not a valid parameter for PostgreSQL 13.0', 'tcp_user_timeout is not a valid parameter for PostgreSQL 13.0', 'data_sync_retry is not a valid parameter for PostgreSQL 13.0', 'ident_file is not a valid parameter for PostgreSQL 13.0', 'include_if_exists is not a valid parameter for PostgreSQL 13.0', 'max_locks_per_transaction should be set using max_locks_per_transaction parameter in PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['maintenance_io_concurrency', 'wal_recycle', 'tcp_keepalives_idle', 'tcp_user_timeout', 'data_sync_retry', 'ident_file', 'include_if_exists', 'max_locks_per_transaction'], 'reason': ['maintenance_io_concurrency is not a valid parameter for PostgreSQL configuration.', 'wal_recycle is not a valid parameter for PostgreSQL configuration.', 'tcp_keepalives_idle is not a valid parameter for PostgreSQL configuration.', 'tcp_user_timeout is not a valid parameter for PostgreSQL configuration.', 'data_sync_retry is not a valid parameter for PostgreSQL configuration.', 'ident_file is not a valid parameter for PostgreSQL configuration.', 'include_if_exists is not a valid parameter for PostgreSQL configuration.', 'max_locks_per_transaction should be set to a value greater than 0.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: maintenance_io_concurrency	wal_recycle	tcp_keepalives_idle	tcp_user_timeout	data_sync_retry	ident_file	include_if_exists	max_locks_per_transaction
+[Ciri] Reason for maintenance_io_concurrency: maintenance_io_concurrency is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for wal_recycle: wal_recycle is not a valid parameter for PostgreSQL configuration.
+[Ciri] Reason for tcp_keepalives_idle: tcp_keepalives_idle is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for tcp_user_timeout: tcp_user_timeout is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for data_sync_retry: data_sync_retry is not a valid parameter for PostgreSQL configuration.
+[Ciri] Reason for ident_file: ident_file is not a valid parameter for PostgreSQL configuration.
+[Ciri] Reason for include_if_exists: include_if_exists is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for max_locks_per_transaction: max_locks_per_transaction should be set using max_locks_per_transaction parameter in PostgreSQL 13.0

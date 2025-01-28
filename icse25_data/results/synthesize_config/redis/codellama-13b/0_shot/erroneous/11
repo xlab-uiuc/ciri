@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['aclfile', 'auto-aof-rewrite-min-size', 'lazyfree-lazy-eviction', 'daemonize', 'jemalloc-bg-thread', 'port', 'aof-rewrite-incremental-fsync', 'unixsocketperm'], 'reason': ['The aclfile property is not valid. The path is not valid.', 'The auto-aof-rewrite-min-size property is not valid. The value must be a positive integer.', 'The lazyfree-lazy-eviction property is not valid. The value must be yes or no.', 'The daemonize property is not valid. The value must be yes or no.', 'The jemalloc-bg-thread property is not valid. The value must be yes or no.', 'The port property is not valid. The value must be a positive integer.', 'The aof-rewrite-incremental-fsync property is not valid. The value must be yes or no.', 'The unixsocketperm property is not valid. The value must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['aclfile'], 'reason': ['aclfile is not a valid parameter in Redis 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['aclfile'], 'reason': ['The aclfile property is not supported in Redis 7.0.0.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: aclfile
+[Ciri] Reason for aclfile: The aclfile property is not supported in Redis 7.0.0.

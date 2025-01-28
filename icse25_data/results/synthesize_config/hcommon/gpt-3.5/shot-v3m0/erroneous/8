@@ -1,0 +1,12 @@
+Correct shot number:
+[15, 13, 9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.size', 'ipc.[port_number].backoff.enable'], 'reason': ["Invalid value format. The value for 'fs.s3a.multipart.size' should be a numeric value with an optional suffix from the set {K,M,G,T,P}.", "Invalid value format. The value for 'ipc.[port_number].backoff.enable' should be a boolean (true/false)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.multipart.size	ipc.[port_number].backoff.enable
+[Ciri] Reason for fs.s3a.multipart.size: Invalid value format. The value for 'fs.s3a.multipart.size' should be a numeric value with an optional suffix from the set {K,M,G,T,P}.
+[Ciri] Reason for ipc.[port_number].backoff.enable: Invalid value format. The value for 'ipc.[port_number].backoff.enable' should be a boolean (true/false).

@@ -1,0 +1,19 @@
+Wrong shot number:
+[13, 16, 12]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.swift.impl', 'fs.permissions.umask-mode', 'fs.adl.oauth2.msi.port'], 'reason': ["The property 'fs.swift.impl' was removed in the previous version and is not used in the current version.", "The property 'fs.permissions.umask-mode' has the value '1.1.1' which is out of the valid range of a permission number.", "The property 'fs.adl.oauth2.msi.port' has the value '3000' which is out of the valid range of a port number."]}
+
+{'hasError': True, 'errParameter': ['fs.swift.impl'], 'reason': ["The property 'fs.swift.impl' was removed in the previous version and is not used in the current version."]}
+
+{'hasError': True, 'errParameter': ['fs.swift.impl', 'fs.permissions.umask-mode'], 'reason': ["The property 'fs.swift.impl' was removed in the previous version and is not used in the current version.", "The property 'fs.permissions.umask-mode' has the value '1.1.1' which is out of the valid range of a permission number."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.swift.impl	fs.permissions.umask-mode
+[Ciri] Reason for fs.swift.impl: The property 'fs.swift.impl' was removed in the previous version and is not used in the current version.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has the value '1.1.1' which is out of the valid range of a permission number.

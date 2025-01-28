@@ -1,0 +1,45 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.worker.rpc.port'], 'reason': ['alluxio.job.master.rpc.port should be an integer', 'alluxio.worker.rpc.port should be an integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.master.client.pool.gc.threshold'], 'reason': ['alluxio.user.file.master.client.pool.gc.threshold should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.master.client.pool.gc.interval', 'alluxio.user.file.master.client.pool.gc.threshold'], 'reason': ['alluxio.user.file.master.client.pool.gc.interval should be a positive integer', 'alluxio.user.file.master.client.pool.gc.threshold should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.time'], 'reason': ['The property alluxio.master.daily.backup.time is not a valid property for Alluxio version 2.5.0.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.master.client.pool.gc.threshold'], 'reason': ['The value of alluxio.user.file.master.client.pool.gc.threshold should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.master.client.pool.gc.interval', 'alluxio.user.file.master.client.pool.gc.threshold'], 'reason': ['alluxio.user.file.master.client.pool.gc.interval is not a valid duration', 'alluxio.user.file.master.client.pool.gc.threshold is not a valid duration']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.worker.rpc.port', 'alluxio.user.file.master.client.pool.gc.interval', 'alluxio.user.file.master.client.pool.gc.threshold'], 'reason': ['alluxio.job.master.rpc.port should be an integer', 'alluxio.worker.rpc.port should be an integer', 'alluxio.user.file.master.client.pool.gc.interval should be an integer', 'alluxio.user.file.master.client.pool.gc.threshold should be an integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.master.client.pool.gc.interval', 'alluxio.user.file.master.client.pool.gc.threshold'], 'reason': ['alluxio.user.file.master.client.pool.gc.interval should be a time unit, but is not.', 'alluxio.user.file.master.client.pool.gc.threshold should be a time unit, but is not.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.master.client.pool.gc.threshold'], 'reason': ['alluxio.user.file.master.client.pool.gc.threshold should be greater than or equal to 100ms']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.master.client.pool.gc.interval', 'alluxio.user.file.master.client.pool.gc.threshold'], 'reason': ['alluxio.user.file.master.client.pool.gc.interval should be a positive integer.', 'alluxio.user.file.master.client.pool.gc.threshold should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.worker.rpc.port', 'alluxio.user.file.master.client.pool.gc.interval', 'alluxio.user.file.master.client.pool.gc.threshold'], 'reason': ['alluxio.job.master.rpc.port must be an integer', 'alluxio.worker.rpc.port must be an integer', 'alluxio.user.file.master.client.pool.gc.interval must be an integer', 'alluxio.user.file.master.client.pool.gc.threshold must be an integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.master.client.pool.gc.threshold'], 'reason': ["The value of alluxio.user.file.master.client.pool.gc.threshold is not a valid time format. Please use the format '1d' for days, '1h' for hours, '1m' for minutes, and '1s' for seconds."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.master.client.pool.gc.threshold', 'alluxio.user.file.master.client.pool.gc.interval'], 'reason': ['alluxio.user.file.master.client.pool.gc.threshold is not a valid property', 'alluxio.user.file.master.client.pool.gc.interval is not a valid property']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.time'], 'reason': ['The value of alluxio.master.daily.backup.time is not a valid time format. Please use the format HH:mm']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.master.client.pool.gc.threshold', 'alluxio.user.file.master.client.pool.gc.interval'], 'reason': ['alluxio.user.file.master.client.pool.gc.threshold should be a positive integer', 'alluxio.user.file.master.client.pool.gc.interval should be a positive integer']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.file.master.client.pool.gc.threshold	alluxio.user.file.master.client.pool.gc.interval
+[Ciri] Reason for alluxio.user.file.master.client.pool.gc.threshold: alluxio.user.file.master.client.pool.gc.threshold is not a valid property
+[Ciri] Reason for alluxio.user.file.master.client.pool.gc.interval: alluxio.user.file.master.client.pool.gc.interval is not a valid property

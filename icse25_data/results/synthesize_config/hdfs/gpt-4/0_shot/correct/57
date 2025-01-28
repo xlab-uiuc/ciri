@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.user.home.dir.prefix', 'dfs.disk.balancer.plan.valid.interval'], 'reason': ["The property 'dfs.user.home.dir.prefix' is not a recognized configuration parameter in HDFS version 3.3.0.", "The value format for 'dfs.disk.balancer.plan.valid.interval' is incorrect. The correct format should use time unit suffixes like 'ms' for milliseconds, 's' for seconds, 'm' for minutes, 'h' for hours, etc. The provided value '1d' does not follow the convention used in HDFS configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.user.home.dir.prefix	dfs.disk.balancer.plan.valid.interval
+[Ciri] Reason for dfs.user.home.dir.prefix: The property 'dfs.user.home.dir.prefix' is not a recognized configuration parameter in HDFS version 3.3.0.
+[Ciri] Reason for dfs.disk.balancer.plan.valid.interval: The value format for 'dfs.disk.balancer.plan.valid.interval' is incorrect. The correct format should use time unit suffixes like 'ms' for milliseconds, 's' for seconds, 'm' for minutes, 'h' for hours, etc. The provided value '1d' does not follow the convention used in HDFS configuration.

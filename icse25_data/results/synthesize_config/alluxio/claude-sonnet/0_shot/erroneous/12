@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.zookeeper.election.path', 'alluxio.worker.web.hostname'], 'reason': ["The property 'alluxio.zookeeper.election.path' is not a valid Alluxio configuration property in version 2.5.0. It is used for Zookeeper-based leader election, which is not supported in Alluxio 2.5.0.", "The property 'alluxio.worker.web.hostname' is not a valid Alluxio configuration property in version 2.5.0. The correct property for configuring the hostname for the Alluxio worker's web UI is 'alluxio.worker.hostname'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.zookeeper.election.path	alluxio.worker.web.hostname
+[Ciri] Reason for alluxio.zookeeper.election.path: The property 'alluxio.zookeeper.election.path' is not a valid Alluxio configuration property in version 2.5.0. It is used for Zookeeper-based leader election, which is not supported in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.worker.web.hostname: The property 'alluxio.worker.web.hostname' is not a valid Alluxio configuration property in version 2.5.0. The correct property for configuring the hostname for the Alluxio worker's web UI is 'alluxio.worker.hostname'.

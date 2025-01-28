@@ -1,0 +1,19 @@
+Wrong shot number:
+[1, 2, 4]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.map.index.interval', 'fs.ftp.transfer.mode'], 'reason': ["The property 'io.map.index.interval' has a negative value which is not valid.", "The property 'fs.ftp.transfer.mode' has the value 'BLOCK_TRANSFER_MODE' which is not a valid FTP transfer mode. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE, but they should be specified without underscores."]}
+
+{'hasError': True, 'errParameter': ['io.map.index.interval', 'fs.ftp.transfer.mode'], 'reason': ["The property 'io.map.index.interval' has a negative value which is not valid. It should be a positive integer.", "The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE, but they should be specified without quotes as constants, not as string values."]}
+
+{'hasError': True, 'errParameter': ['io.map.index.interval', 'fs.ftp.transfer.mode'], 'reason': ["The property 'io.map.index.interval' has a negative value which is not valid.", "The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE, but they should be specified without underscores."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.map.index.interval	fs.ftp.transfer.mode
+[Ciri] Reason for io.map.index.interval: The property 'io.map.index.interval' has a negative value which is not valid.
+[Ciri] Reason for fs.ftp.transfer.mode: The property 'fs.ftp.transfer.mode' has the value 'BLOCK_TRANSFER_MODE' which is not a valid FTP transfer mode. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE, but they should be specified without underscores.

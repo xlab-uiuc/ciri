@@ -1,0 +1,37 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers'], 'reason': ['shared_buffers must be a power of 2']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'shared_buffers', 'autovacuum_naptime'], 'reason': ['max_connections must be a positive integer.', 'shared_buffers must be a positive integer.', 'autovacuum_naptime must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be greater than 100']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers'], 'reason': ['The value of shared_buffers must be a power of 2.']}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'wal_keep_segments', 'checkpoint_segments', 'max_wal_size', 'min_wal_size', 'max_slot_wal_keep_size', 'autovacuum_naptime'], 'reason': ['shared_buffers should be a power of 2', 'wal_keep_segments should be a power of 2', 'checkpoint_segments should be a power of 2', 'max_wal_size should be a power of 2', 'min_wal_size should be a power of 2', 'max_slot_wal_keep_size should be a power of 2', 'autovacuum_naptime should be a power of 2']}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'wal_buffers', 'max_slot_wal_keep_size'], 'reason': ['The value of shared_buffers is not valid. The value must be a positive integer.', 'The value of wal_buffers is not valid. The value must be a positive integer.', 'The value of max_slot_wal_keep_size is not valid. The value must be a positive integer or -1.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'max_slot_wal_keep_size'], 'reason': ['shared_buffers must be a power of 2 greater than 128kB', 'max_slot_wal_keep_size must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'shared_buffers', 'vacuum_multixact_failsafe_age', 'max_slot_wal_keep_size', 'max_parallel_workers', 'recovery_min_apply_delay', 'dynamic_shared_memory_type', 'autovacuum_naptime', 'recovery_prefetch'], 'reason': ['max_connections must be greater than 0', 'shared_buffers must be greater than 0', 'vacuum_multixact_failsafe_age must be greater than 0', 'max_slot_wal_keep_size must be greater than 0', 'max_parallel_workers must be greater than 0', 'recovery_min_apply_delay must be greater than 0', 'dynamic_shared_memory_type must be either posix or sysv', 'autovacuum_naptime must be greater than 0', 'recovery_prefetch must be either try or always']}
+
+{'hasError': True, 'errParameter': ['shared_buffers'], 'reason': ['shared_buffers should be a power of 2']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers'], 'reason': ['The value of shared_buffers is not a valid value. The value must be a power of 2 between 128MB and 1TB.']}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'max_slot_wal_keep_size'], 'reason': ['shared_buffers must be a power of 2 greater than 128kB', 'max_slot_wal_keep_size must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'max_slot_wal_keep_size'], 'reason': ['shared_buffers should be a power of 2', 'max_slot_wal_keep_size should be a positive integer']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: shared_buffers	max_slot_wal_keep_size
+[Ciri] Reason for shared_buffers: shared_buffers should be a power of 2
+[Ciri] Reason for max_slot_wal_keep_size: max_slot_wal_keep_size must be a positive integer

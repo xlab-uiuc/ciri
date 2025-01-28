@@ -1,0 +1,54 @@
+Syntax	Data Type	alluxio.job.master.client.threads	9.9			
+Syntax	Data Type	alluxio.job.master.job.capacity	-5.5			
+Syntax	Data Type	alluxio.underfs.s3.admin.threads.max	true			
+Syntax	Data Type	alluxio.job.worker.threadpool.size	ciri/ciri			
+Syntax	Data Type	alluxio.proxy.stream.cache.timeout	6HR			
+Syntax	Data Type	alluxio.job.master.finished.job.retention.time	60nounit			
+Syntax	Data Type	alluxio.underfs.web.connnection.timeout	80hhhhh			
+Syntax	Data Type	alluxio.underfs.s3.intermediate.upload.clean.age	128N			
+Syntax	Path	alluxio.work.dir	//hadoop/io/local			
+Syntax	Path	alluxio.home	/\hadoop/s3a			
+Syntax	Path	alluxio.master.metastore.dir	tmp////staging			
+Syntax	Path	alluxio.zookeeper.election.path	dev/urandom///			
+Syntax	URL	alluxio.underfs.hdfs.prefixes	file:/			
+Syntax	IP Address	alluxio.job.worker.bind.host	0.0.0			
+Syntax	IP Address	alluxio.job.worker.web.bind.host	1.1.1.1.1.1			
+Syntax	IP Address	alluxio.job.master.web.bind.host	2.2.2.2.2.2			
+Syntax	IP Address	alluxio.proxy.web.bind.host	x.0.0.0.0.0			
+Syntax	Port	alluxio.job.master.rpc.port	1.1			
+Syntax	Port	alluxio.job.worker.rpc.port	-100.22			
+Syntax	Port	alluxio.job.worker.data.port	ciri			
+Syntax	Port	alluxio.job.worker.web.port	file://			
+Syntax	Permission	alluxio.underfs.gcs.default.mode	ciri			
+Syntax	Permission	alluxio.underfs.s3.default.mode	hadoop			
+Range	Basic Numeric	alluxio.job.master.client.threads	-100			
+Range	Basic Numeric	alluxio.job.master.job.capacity	-1			
+Range	Basic Numeric	alluxio.underfs.s3.threads.max	4000000000			
+Range	Basic Numeric	alluxio.underfs.s3.upload.threads.max	-10			
+Range	Bool	alluxio.fuse.debug.enabled	10			
+Range	Bool	alluxio.fuse.jnifuse.enabled	hadoop			
+Range	Bool	alluxio.fuse.shared.caching.reader.enabled	1.5			
+Range	Bool	alluxio.fuse.user.group.translation.enabled	10000			
+Range	Enum	alluxio.proxy.s3.writetype	nonono			
+Range	Enum	alluxio.master.daily.backup.state.lock.grace.mode	TIME			
+Range	Enum	alluxio.master.journal.type	CIRI			
+Range	Enum	alluxio.master.shell.backup.state.lock.grace.mode	FORCE			
+Range	IP Address	alluxio.job.worker.bind.host	-1.0.0.0			
+Range	IP Address	alluxio.job.worker.web.bind.host	256.256.256.256			
+Range	IP Address	alluxio.job.master.web.bind.host	999.-1.0.0			
+Range	IP Address	alluxio.proxy.web.bind.host	0.0.256.0			
+Range	Port	alluxio.job.master.rpc.port	65536			
+Range	Port	alluxio.job.worker.rpc.port	65536			
+Range	Port	alluxio.job.worker.data.port	-1			
+Range	Port	alluxio.job.worker.web.port	-100			
+Range	Permission	alluxio.underfs.gcs.default.mode	888			
+Range	Permission	alluxio.underfs.s3.default.mode	999			
+Dependency	Control	alluxio.master.journal.type	UFS	alluxio.master.journal.space.monitor.interval	10min	
+Dependency	Control	alluxio.security.authentication.type	CUSTOM	alluxio.security.authentication.custom.provider.class		
+Dependency	Control	alluxio.security.authentication.type	NOSASL	alluxio.security.login.username	ciri	
+Dependency	Value Relationship	alluxio.master.journal.flush.batch.time	500ms	alluxio.master.journal.flush.timeout	400ms	
+Dependency	Value Relationship	alluxio.user.file.persistence.initial.wait.time	2day	alluxio.master.persistence.max.total.wait.time	1day	
+Version	Parameter Change	alluxio.network.thrift.frame.size.bytes.max	16MB			
+Version	Parameter Change	alluxio.underfs.s3a.consistency.timeout	1min			
+Version	Parameter Change	alluxio.underfs.s3a.inherit_acl	true			
+Version	Parameter Change	alluxio.underfs.s3a.request.timeout	1min			

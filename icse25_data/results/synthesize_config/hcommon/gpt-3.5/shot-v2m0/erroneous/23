@@ -1,0 +1,12 @@
+Correct shot number:
+[4, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.file.buffer.size', 'fs.s3a.proxy.port'], 'reason': ["The property 'io.file.buffer.size' has an additional 'usage' tag which is not a valid property element.", "The value for the property 'fs.s3a.proxy.port' should be a valid port number, but it is set to 'ciri'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.file.buffer.size	fs.s3a.proxy.port
+[Ciri] Reason for io.file.buffer.size: The property 'io.file.buffer.size' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for fs.s3a.proxy.port: The value for the property 'fs.s3a.proxy.port' should be a valid port number, but it is set to 'ciri'.

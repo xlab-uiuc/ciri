@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'autopurge.purgeInterval', 'quorum.auth.enableSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['The clientPortAddress parameter should be set to a specific IP address or hostname, not 0.0.0.0, which binds to all available IP addresses.', 'The autopurge.purgeInterval parameter is deprecated in ZooKeeper 3.5.0 and later versions. It should be removed or commented out.', 'The quorum.auth.enableSasl parameter is set to false, which means that ZooKeeper authentication is disabled. This is not recommended for production environments.', 'The quorum.auth.server.saslLoginContext parameter is set, but it is not needed if quorum.auth.enableSasl is set to false.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: clientPortAddress	autopurge.purgeInterval	quorum.auth.enableSasl	quorum.auth.server.saslLoginContext
+[Ciri] Reason for clientPortAddress: The clientPortAddress parameter should be set to a specific IP address or hostname, not 0.0.0.0, which binds to all available IP addresses.
+[Ciri] Reason for autopurge.purgeInterval: The autopurge.purgeInterval parameter is deprecated in ZooKeeper 3.5.0 and later versions. It should be removed or commented out.
+[Ciri] Reason for quorum.auth.enableSasl: The quorum.auth.enableSasl parameter is set to false, which means that ZooKeeper authentication is disabled. This is not recommended for production environments.
+[Ciri] Reason for quorum.auth.server.saslLoginContext: The quorum.auth.server.saslLoginContext parameter is set, but it is not needed if quorum.auth.enableSasl is set to false.

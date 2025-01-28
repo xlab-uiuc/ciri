@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 5, 11]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.security.login.impersonation.username'], 'reason': ["The value of the property 'alluxio.security.login.impersonation.username' should be different from the default '_HDFS_USER_'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.security.login.impersonation.username'], 'reason': ["The value of the property 'alluxio.security.login.impersonation.username' is '_HDFS_USER_', which is not a valid username."]}
+
+{'hasError': True, 'errParameter': ['alluxio.security.login.impersonation.username'], 'reason': ["The property 'alluxio.security.login.impersonation.username' is not valid as it is used in the context of SASL authentication. It should be set to a valid user name."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.security.login.impersonation.username
+[Ciri] Reason for alluxio.security.login.impersonation.username: The property 'alluxio.security.login.impersonation.username' is not valid as it is used in the context of SASL authentication. It should be set to a valid user name.

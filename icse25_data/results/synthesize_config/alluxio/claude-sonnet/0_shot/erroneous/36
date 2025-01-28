@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host', 'alluxio.master.tieredstore.global.mediumtype', 'alluxio.job.master.embedded.journal.addresses'], 'reason': ["The property 'alluxio.job.worker.bind.host' is not a valid Alluxio configuration property in version 2.5.0.", "The property 'alluxio.master.tieredstore.global.mediumtype' is not a valid Alluxio configuration property in version 2.5.0. The correct property for configuring the global medium type is 'alluxio.worker.tieredstore.level0.dirs.mediumtype'.", "The property 'alluxio.job.master.embedded.journal.addresses' is not a valid Alluxio configuration property in version 2.5.0. The correct property for configuring the embedded journal addresses is 'alluxio.master.embedded.journal.addresses'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.worker.bind.host	alluxio.master.tieredstore.global.mediumtype	alluxio.job.master.embedded.journal.addresses
+[Ciri] Reason for alluxio.job.worker.bind.host: The property 'alluxio.job.worker.bind.host' is not a valid Alluxio configuration property in version 2.5.0.
+[Ciri] Reason for alluxio.master.tieredstore.global.mediumtype: The property 'alluxio.master.tieredstore.global.mediumtype' is not a valid Alluxio configuration property in version 2.5.0. The correct property for configuring the global medium type is 'alluxio.worker.tieredstore.level0.dirs.mediumtype'.
+[Ciri] Reason for alluxio.job.master.embedded.journal.addresses: The property 'alluxio.job.master.embedded.journal.addresses' is not a valid Alluxio configuration property in version 2.5.0. The correct property for configuring the embedded journal addresses is 'alluxio.master.embedded.journal.addresses'.

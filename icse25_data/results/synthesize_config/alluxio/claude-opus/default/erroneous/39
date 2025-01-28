@@ -1,0 +1,17 @@
+Wrong shot number:
+[12, 1, 7]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.job.master.finished.job.purge.count', 'alluxio.worker.management.tier.promote.quota.percent', 'alluxio.worker.management.backoff.strategy'], 'reason': ["The property 'alluxio.proxy.web.bind.host' has the value '0.0.256.0' which is not a valid IP address.", "The property 'alluxio.job.master.finished.job.purge.count' has the value '-2' which is not within the accepted range [0, 2147483647].", "The property 'alluxio.worker.management.tier.promote.quota.percent' has the value '180' which is not within the accepted range [0, 100].", "The property 'alluxio.worker.management.backoff.strategy' has the value 'ANY' which is not within the accepted values {ANY, CONSTANT, EXPONENTIAL}."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.proxy.web.bind.host	alluxio.job.master.finished.job.purge.count	alluxio.worker.management.tier.promote.quota.percent	alluxio.worker.management.backoff.strategy
+[Ciri] Reason for alluxio.proxy.web.bind.host: The property 'alluxio.proxy.web.bind.host' has the value '0.0.256.0' which is not a valid IP address.
+[Ciri] Reason for alluxio.job.master.finished.job.purge.count: The property 'alluxio.job.master.finished.job.purge.count' has the value '-2' which is not within the accepted range [0, 2147483647].
+[Ciri] Reason for alluxio.worker.management.tier.promote.quota.percent: The property 'alluxio.worker.management.tier.promote.quota.percent' has the value '180' which is not within the accepted range [0, 100].
+[Ciri] Reason for alluxio.worker.management.backoff.strategy: The property 'alluxio.worker.management.backoff.strategy' has the value 'ANY' which is not within the accepted values {ANY, CONSTANT, EXPONENTIAL}.

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log-outputs', 'proxy-read-timeout', 'proxy-write-timeout', 'max-wals'], 'reason': ['log-outputs is not a valid configuration parameter for etcd version 3.5.0', 'proxy-read-timeout should be greater than 0', 'proxy-write-timeout should be greater than 0', 'max-wals should be greater than 1']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout', 'max-wals'], 'reason': ['proxy-read-timeout should be greater than 0', 'proxy-write-timeout should be greater than 0', 'max-wals should be greater than 1']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout', 'max-wals'], 'reason': ["The 'proxy-read-timeout' value should be greater than 0.", "The 'proxy-write-timeout' value should be greater than 0.", "The 'max-wals' value should be greater than 1."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-read-timeout	proxy-write-timeout	max-wals
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout should be greater than 0
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout should be greater than 0
+[Ciri] Reason for max-wals: max-wals should be greater than 1

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.s3.connection.ttl'], 'reason': ['Invalid value for alluxio.job.worker.web.port. Port number cannot be negative.', 'Invalid value for alluxio.underfs.s3.connection.ttl. TTL should be a positive value.']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.s3.connection.ttl'], 'reason': ['Invalid value for alluxio.job.worker.web.port. Port number cannot be negative.', 'Invalid value for alluxio.underfs.s3.connection.ttl. TTL should be a positive value.']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.worker.management.tier.promote.range', 'alluxio.master.metastore.iterator.readahead.size', 'alluxio.underfs.s3.connection.ttl', 'alluxio.worker.tieredstore.level1.watermark.high.ratio'], 'reason': ['Invalid value for alluxio.job.worker.web.port. Port number cannot be negative.', 'Invalid value for alluxio.worker.management.tier.promote.range. Value must be positive.', "Invalid format for alluxio.master.metastore.iterator.readahead.size. Use a valid size format like '64MB'.", 'Invalid value for alluxio.underfs.s3.connection.ttl. TTL cannot be negative.', 'Invalid value for alluxio.worker.tieredstore.level1.watermark.high.ratio. Value must be between 0 and 1.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.web.port	alluxio.underfs.s3.connection.ttl
+[Ciri] Reason for alluxio.job.worker.web.port: Invalid value for alluxio.job.worker.web.port. Port number cannot be negative.
+[Ciri] Reason for alluxio.underfs.s3.connection.ttl: Invalid value for alluxio.underfs.s3.connection.ttl. TTL should be a positive value.

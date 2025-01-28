@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_files_per_process'], 'reason': ['The value of max_files_per_process must be greater than or equal to 0.']}
+
+{'hasError': True, 'errParameter': ['wal_receiver_status_interval', 'log_startup_progress_interval', 'stats_fetch_consistency', 'log_hostname', 'synchronize_seqscans', 'default_transaction_read_only', 'jit_inline_above_cost'], 'reason': ['wal_receiver_status_interval should be a time value', 'log_startup_progress_interval should be a time value', 'stats_fetch_consistency should be one of [none, auto, cache]', 'log_hostname should be one of [on, off]', 'synchronize_seqscans should be one of [on, off]', 'default_transaction_read_only should be one of [on, off]', 'jit_inline_above_cost should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['max_files_per_process'], 'reason': ['The value of max_files_per_process must be greater than 0.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: max_files_per_process
+[Ciri] Reason for max_files_per_process: The value of max_files_per_process must be greater than or equal to 0.

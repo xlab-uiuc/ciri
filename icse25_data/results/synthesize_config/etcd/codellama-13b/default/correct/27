@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 7, 2]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout'], 'reason': ["The property 'proxy-read-timeout' has the value '0' which is less than the minimum value of '1000'.", "The property 'proxy-write-timeout' has the value '10000' which is greater than the maximum value of '60000'."]}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout'], 'reason': ["The property 'proxy-read-timeout' has the value '0' which is not a valid timeout value.", "The property 'proxy-write-timeout' has the value '10000' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout'], 'reason': ["The value of the property 'proxy-read-timeout' should be greater than 0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: proxy-read-timeout	proxy-write-timeout
+[Ciri] Reason for proxy-read-timeout: The property 'proxy-read-timeout' has the value '0' which is less than the minimum value of '1000'.
+[Ciri] Reason for proxy-write-timeout: The property 'proxy-write-timeout' has the value '10000' which exceeds the range of an Integer.

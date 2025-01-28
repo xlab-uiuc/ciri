@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 12, 7]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.folder'], 'reason': ["The property 'alluxio.master.journal.folder' has the value '/valid/file2' which is not a valid path."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type'], 'reason': ["The property 'alluxio.master.journal.type' has the value 'UFS' which is not within the accepted value {EMBEDDED, NOOP}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.folder'], 'reason': ["The property 'alluxio.master.journal.folder' has the value '/valid/file2' which is not a valid directory path."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.master.journal.folder
+[Ciri] Reason for alluxio.master.journal.folder: The property 'alluxio.master.journal.folder' has the value '/valid/file2' which is not a valid path.

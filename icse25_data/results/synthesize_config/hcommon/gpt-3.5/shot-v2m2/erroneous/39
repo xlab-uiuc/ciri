@@ -1,0 +1,17 @@
+Wrong shot number:
+[14, 13]
+
+Correct shot number:
+[2, 12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'fs.s3a.ssl.channel.mode', 'hadoop.util.hash.type', 'fs.permissions.umask-mode'], 'reason': ["The value of the property 'fs.ftp.data.connection.mode' is 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' which is not a valid value.", "The value of the property 'fs.s3a.ssl.channel.mode' should be one of 'default_jsse', 'default_jsse_with_gcm', 'default', or 'openssl'.", "The value of the property 'hadoop.util.hash.type' should be either 'murmur' or 'jenkins'.", "The property 'fs.permissions.umask-mode' has the value '002' which is not a valid umask value."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.ftp.data.connection.mode	fs.s3a.ssl.channel.mode	hadoop.util.hash.type	fs.permissions.umask-mode
+[Ciri] Reason for fs.ftp.data.connection.mode: The value of the property 'fs.ftp.data.connection.mode' is 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' which is not a valid value.
+[Ciri] Reason for fs.s3a.ssl.channel.mode: The value of the property 'fs.s3a.ssl.channel.mode' should be one of 'default_jsse', 'default_jsse_with_gcm', 'default', or 'openssl'.
+[Ciri] Reason for hadoop.util.hash.type: The value of the property 'hadoop.util.hash.type' should be either 'murmur' or 'jenkins'.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has the value '002' which is not a valid umask value.

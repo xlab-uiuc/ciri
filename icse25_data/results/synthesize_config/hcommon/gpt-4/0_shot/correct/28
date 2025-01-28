@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.cache.background.reload.threads', 'fs.s3a.ssl.channel.mode', 'hadoop.ssl.enabled'], 'reason': ["The property 'hadoop.security.groups.cache.background.reload.threads' is not recognized in Hadoop 3.3.0. It may be a typo, belong to a different version, or require a specific Hadoop module not present.", "The 'fs.s3a.ssl.channel.mode' property's value 'default_jsse_with_gcm' is not a recognized option in Hadoop 3.3.0. The valid options do not include 'default_jsse_with_gcm'.", "The 'hadoop.ssl.enabled' property is marked as deprecated. It is recommended to use 'dfs.http.policy' and 'yarn.http.policy' instead for enabling SSL."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.groups.cache.background.reload.threads	fs.s3a.ssl.channel.mode	hadoop.ssl.enabled
+[Ciri] Reason for hadoop.security.groups.cache.background.reload.threads: The property 'hadoop.security.groups.cache.background.reload.threads' is not recognized in Hadoop 3.3.0. It may be a typo, belong to a different version, or require a specific Hadoop module not present.
+[Ciri] Reason for fs.s3a.ssl.channel.mode: The 'fs.s3a.ssl.channel.mode' property's value 'default_jsse_with_gcm' is not a recognized option in Hadoop 3.3.0. The valid options do not include 'default_jsse_with_gcm'.
+[Ciri] Reason for hadoop.ssl.enabled: The 'hadoop.ssl.enabled' property is marked as deprecated. It is recommended to use 'dfs.http.policy' and 'yarn.http.policy' instead for enabling SSL.

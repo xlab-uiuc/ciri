@@ -1,0 +1,12 @@
+Correct shot number:
+[2, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATIC_ROOT', 'CSRF_COOKIE_HTTPONLY'], 'reason': ["STATIC_ROOT path should be a string without double slashes, e.g., '/var/www/example.com/static'", 'CSRF_COOKIE_HTTPONLY should be set to True for better security']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: STATIC_ROOT	CSRF_COOKIE_HTTPONLY
+[Ciri] Reason for STATIC_ROOT: STATIC_ROOT path should be a string without double slashes, e.g., '/var/www/example.com/static'
+[Ciri] Reason for CSRF_COOKIE_HTTPONLY: CSRF_COOKIE_HTTPONLY should be set to True for better security

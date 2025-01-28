@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'proto-max-bulk-len'], 'reason': ["The 'maxmemory-clients' configuration directive does not exist in Redis. It might be a typo or a misunderstanding of the 'maxmemory' configuration.", "The 'proto-max-bulk-len' value is excessively high. While technically not an error, setting it to such a high value (512mb) could lead to issues. The default value is much lower, and such a high limit could potentially cause memory issues or impact performance negatively."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: maxmemory-clients	proto-max-bulk-len
+[Ciri] Reason for maxmemory-clients: The 'maxmemory-clients' configuration directive does not exist in Redis. It might be a typo or a misunderstanding of the 'maxmemory' configuration.
+[Ciri] Reason for proto-max-bulk-len: The 'proto-max-bulk-len' value is excessively high. While technically not an error, setting it to such a high value (512mb) could lead to issues. The default value is much lower, and such a high limit could potentially cause memory issues or impact performance negatively.

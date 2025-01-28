@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.work.dir', 'alluxio.worker.tieredstore.level1.dirs.mediumtype'], 'reason': ["The property 'alluxio.work.dir' is deprecated in Alluxio 2.5.0 and should be replaced with 'alluxio.worker.data.folder'.", "The property 'alluxio.worker.tieredstore.level1.dirs.mediumtype' is not a valid property in Alluxio 2.5.0. The correct property for specifying the medium type directory for the first tier of the worker's tiered storage is 'alluxio.worker.tieredstore.level1.dirs.mediumtype'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.work.dir	alluxio.worker.tieredstore.level1.dirs.mediumtype
+[Ciri] Reason for alluxio.work.dir: The property 'alluxio.work.dir' is deprecated in Alluxio 2.5.0 and should be replaced with 'alluxio.worker.data.folder'.
+[Ciri] Reason for alluxio.worker.tieredstore.level1.dirs.mediumtype: The property 'alluxio.worker.tieredstore.level1.dirs.mediumtype' is not a valid property in Alluxio 2.5.0. The correct property for specifying the medium type directory for the first tier of the worker's tiered storage is 'alluxio.worker.tieredstore.level1.dirs.mediumtype'.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait'], 'reason': ["The value of 'proxy-failure-wait' should be a positive integer. Current value is -1."]}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'auto-compaction-retention', 'snapshot-count', 'proxy-refresh-interval'], 'reason': ['proxy-failure-wait value should be a positive integer.', 'auto-compaction-retention value should be a positive integer.', 'snapshot-count value should be a positive integer.', 'proxy-refresh-interval value should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'auto-compaction-retention', 'snapshot-count', 'proxy-refresh-interval'], 'reason': ['proxy-failure-wait value should be a positive integer or zero.', 'auto-compaction-retention value should be a positive integer.', 'snapshot-count value should be a positive integer.', 'proxy-refresh-interval value should be a positive integer.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: proxy-failure-wait	auto-compaction-retention	snapshot-count	proxy-refresh-interval
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait value should be a positive integer.
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention value should be a positive integer.
+[Ciri] Reason for snapshot-count: snapshot-count value should be a positive integer.
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval value should be a positive integer.

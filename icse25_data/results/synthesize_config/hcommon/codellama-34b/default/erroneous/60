@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 12, 8]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.file.buffer.size', 'io.bytes.per.checksum'], 'reason': ["The property 'io.file.buffer.size' has the value '4096' which is less than the value of 'io.bytes.per.checksum' which is 16384.", "The property 'io.bytes.per.checksum' has the value '16384' which is greater than the value of 'io.file.buffer.size' which is 4096."]}
+
+{'hasError': True, 'errParameter': ['io.file.buffer.size', 'io.bytes.per.checksum'], 'reason': ["The property 'io.file.buffer.size' has the value '4096' which is less than the value of 'io.bytes.per.checksum' which is '16384'.", "The property 'io.bytes.per.checksum' has the value '16384' which is greater than the value of 'io.file.buffer.size' which is '4096'."]}
+
+{'hasError': True, 'errParameter': ['io.file.buffer.size', 'io.bytes.per.checksum'], 'reason': ["The property 'io.file.buffer.size' has the value '4096' which is less than the value of 'io.bytes.per.checksum' which is '16384'.", "The property 'io.bytes.per.checksum' has the value '16384' which is greater than the value of 'io.file.buffer.size' which is '4096'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.file.buffer.size	io.bytes.per.checksum
+[Ciri] Reason for io.file.buffer.size: The property 'io.file.buffer.size' has the value '4096' which is less than the value of 'io.bytes.per.checksum' which is 16384.
+[Ciri] Reason for io.bytes.per.checksum: The property 'io.bytes.per.checksum' has the value '16384' which is greater than the value of 'io.file.buffer.size' which is '4096'.

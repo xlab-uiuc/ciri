@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.fs-limits.min-block-size</name>
+  <value>524288</value>
+  <description>Minimum block size in bytes, enforced by the Namenode at create
+      time. This prevents the accidental creation of files with tiny block
+      sizes (and thus many blocks), which can degrade performance. Support multiple
+      size unit suffix(case insensitive), as described in dfs.blocksize.
+  </description>
+</property>
+
+<property>
+  <name>dfs.ha.tail-edits.period.backoff-max</name>
+  <value>1</value>
+  <description>
+    The maximum time the tailer should wait between checking for new edit log
+    entries. Exponential backoff will be applied when an edit log tail is
+    performed but no edits are available to be read. Values less than or
+    equal to zero disable backoff entirely; this is the default behavior.
+    Supports multiple time unit suffix (case insensitive), as described
+    in dfs.heartbeat.interval.
+  </description>
+</property>
+
+<property>
+  <name>dfs.short.circuit.shared.memory.watcher.interrupt.check.ms</name>
+  <value>120000</value>
+  <description>
+    The length of time in milliseconds that the short-circuit shared memory
+    watcher will go between checking for java interruptions sent from other
+    threads.  This is provided mainly for unit tests.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.lock-reporting-threshold-ms</name>
+  <value>300</value>
+  <description>When thread waits to obtain a lock, or a thread holds a lock for
+    more than the threshold, a log message will be written. Note that
+    dfs.lock.suppress.warning.interval ensures a single log message is
+    emitted per interval for waiting threads and a single message for holding
+    threads to avoid excessive logging.
+  </description>
+</property>
+
+<property>
+  <name>dfs.webhdfs.rest-csrf.browser-useragents-regex</name>
+  <value>^Mozilla.*,^Opera.*</value>
+  <description>
+    A comma-separated list of regular expressions used to match against an HTTP
+    request's User-Agent header when protection against cross-site request
+    forgery (CSRF) is enabled for WebHDFS by setting
+    dfs.webhdfs.reset-csrf.enabled to true.  If the incoming User-Agent matches
+    any of these regular expressions, then the request is considered to be sent
+    by a browser, and therefore CSRF prevention is enforced.  If the request's
+    User-Agent does not match any of these regular expressions, then the request
+    is considered to be sent by something other than a browser, such as scripted
+    automation.  In this case, CSRF is not a potential attack vector, so
+    the prevention is not enforced.  This helps achieve backwards-compatibility
+    with existing automation that has not been updated to send the CSRF
+    prevention header.
+  </description>
+</property>
+
+<property>
+  <name>dfs.xframe.value</name>
+  <value>NOEXIST_TRANSFER_MODE</value>
+    <description>
+      This configration value allows user to specify the value for the
+      X-FRAME-OPTIONS. The possible values for this field are
+      DENY, SAMEORIGIN and ALLOW-FROM. Any other value will throw an
+      exception when namenode and datanodes are starting up.
+    </description>
+</property>
+
+<property>
+  <name>dfs.balancer.keytab.file</name>
+  <value>/valid/file1</value>
+  <description>
+    The keytab file used by the Balancer to login as its
+    service principal. The principal name is configured with
+    dfs.balancer.kerberos.principal. Keytab based login can be
+    enabled with dfs.balancer.keytab.enabled.
+  </description>
+</property>
+
+<property>
+  <name>dfs.block.invalidate.limit</name>
+  <value>2000</value>
+  <description>
+    The maximum number of invalidate blocks sent by namenode to a datanode
+    per heartbeat deletion command. This property works with
+    "dfs.namenode.invalidate.work.pct.per.iteration" to throttle block
+    deletions.
+  </description>
+</property>
+
+</configuration>

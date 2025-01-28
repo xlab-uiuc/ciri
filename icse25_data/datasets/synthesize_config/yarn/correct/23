@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.placement-constraints.handler</name>
+  <value>disabled</value>
+    <description>
+      Specify which handler will be used to process PlacementConstraints.
+      Acceptable values are: `placement-processor`, `scheduler` and `disabled`.
+      For a detailed explanation of these values, please refer to documentation.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.logaggregation.threadpool-size-max</name>
+  <value>200</value>
+    <description>
+    Thread pool size for LogAggregationService in Node Manager.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep</name>
+  <value>200</value>
+    <description>Target count of layer mounts that we should keep on disk
+      at one time.</description>
+</property>
+
+<property>
+  <name>yarn.is.minicluster</name>
+  <value>false</value>
+    <description>
+    Set to true for MiniYARNCluster unit tests
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.node-labels.provider.script.path</name>
+  <value>/valid/file1</value>
+    <description>The Node Label script to run. Script output Line starting with
+     "NODE_PARTITION:" will be considered as Node Label Partition. In case of
+     multiple lines have this pattern, then last one will be considered
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.amrmproxy.client.thread-count</name>
+  <value>12</value>
+    <description>
+    The number of threads used to handle requests by the AMRMProxyService.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.webapp.xfs-filter.xframe-options</name>
+  <value>SAMEORIGIN</value>
+    <description>
+      Property specifying the xframe options value.
+    </description>
+</property>
+
+<property>
+  <name>yarn.scheduler.configuration.max.version</name>
+  <value>200</value>
+    <description>
+      The max number of configuration file in filesystem.
+      Default is 100 for either.
+    </description>
+</property>
+
+</configuration>

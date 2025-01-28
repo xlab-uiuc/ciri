@@ -1,0 +1,13 @@
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].weighted-cost.lockshared', 'hadoop.security.kms.client.encrypted.key.cache.low-watermark'], 'reason': ["The property 'fs.default.name' is deprecated and should be replaced with 'fs.defaultFS'.", "The property 'ipc.[port_number].weighted-cost.lockshared' has an invalid format for the name.", "The value for 'hadoop.security.kms.client.encrypted.key.cache.low-watermark' should be a floating-point number."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.default.name	ipc.[port_number].weighted-cost.lockshared	hadoop.security.kms.client.encrypted.key.cache.low-watermark
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' is deprecated and should be replaced with 'fs.defaultFS'.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: The property 'ipc.[port_number].weighted-cost.lockshared' has an invalid format for the name.
+[Ciri] Reason for hadoop.security.kms.client.encrypted.key.cache.low-watermark: The value for 'hadoop.security.kms.client.encrypted.key.cache.low-watermark' should be a floating-point number.

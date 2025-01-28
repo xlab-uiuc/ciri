@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'TEST_RUNNER', 'SESSION_ENGINE', 'CSRF_COOKIE_DOMAIN', 'LANGUAGE_COOKIE_SECURE', 'APPEND_SLASH', 'LOCALE_PATHS', 'LOGGING_CONFIG'], 'reason': ['SECURE_HSTS_SECONDS should be an integer value representing the number of seconds HSTS should be enabled for. The value 10000 is a string.', 'TEST_RUNNER should be a dotted Python path to the test runner class. The value should be a string, not a quoted string.', 'SESSION_ENGINE should be a dotted Python path to the session engine class. The value should be a string, not a quoted string.', 'CSRF_COOKIE_DOMAIN should be a string value representing the domain to use for the CSRF cookie, or None. The value None should not be quoted.', 'LANGUAGE_COOKIE_SECURE should be a boolean value indicating whether the language cookie should be secure or not. The value False should not be quoted.', 'APPEND_SLASH should be a boolean value indicating whether to append a trailing slash to URLs or not. The value True should not be quoted.', 'LOCALE_PATHS should be a list of paths to locate translation files. The value should be a list, not an empty list wrapped in quotes.', 'LOGGING_CONFIG should be a dotted Python path to a function that configures the logging system. The value should be a string, not a quoted string.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: SECURE_HSTS_SECONDS	TEST_RUNNER	SESSION_ENGINE	CSRF_COOKIE_DOMAIN	LANGUAGE_COOKIE_SECURE	APPEND_SLASH	LOCALE_PATHS	LOGGING_CONFIG
+[Ciri] Reason for SECURE_HSTS_SECONDS: SECURE_HSTS_SECONDS should be an integer value representing the number of seconds HSTS should be enabled for. The value 10000 is a string.
+[Ciri] Reason for TEST_RUNNER: TEST_RUNNER should be a dotted Python path to the test runner class. The value should be a string, not a quoted string.
+[Ciri] Reason for SESSION_ENGINE: SESSION_ENGINE should be a dotted Python path to the session engine class. The value should be a string, not a quoted string.
+[Ciri] Reason for CSRF_COOKIE_DOMAIN: CSRF_COOKIE_DOMAIN should be a string value representing the domain to use for the CSRF cookie, or None. The value None should not be quoted.
+[Ciri] Reason for LANGUAGE_COOKIE_SECURE: LANGUAGE_COOKIE_SECURE should be a boolean value indicating whether the language cookie should be secure or not. The value False should not be quoted.
+[Ciri] Reason for APPEND_SLASH: APPEND_SLASH should be a boolean value indicating whether to append a trailing slash to URLs or not. The value True should not be quoted.
+[Ciri] Reason for LOCALE_PATHS: LOCALE_PATHS should be a list of paths to locate translation files. The value should be a list, not an empty list wrapped in quotes.
+[Ciri] Reason for LOGGING_CONFIG: LOGGING_CONFIG should be a dotted Python path to a function that configures the logging system. The value should be a string, not a quoted string.

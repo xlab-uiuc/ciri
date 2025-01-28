@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['disable-thp', 'cluster-announce-ip', 'oom-score-adj-values', 'tls-ca-cert-file'], 'reason': ["The 'disable-thp' parameter is not a valid configuration option in Redis 7.0.0. It should be 'disable-thp-warning' instead.", "The 'cluster-announce-ip' parameter is deprecated in Redis 7.0.0. It should be replaced with 'cluster-announce-ip=10.1.1.5:6379' specifying both IP and port.", "The 'oom-score-adj-values' parameter is not a valid configuration option in Redis 7.0.0. It should be 'oom-score-adj' instead, and it takes a single value, not multiple values.", "The 'tls-ca-cert-file' parameter is not a valid configuration option in Redis 7.0.0. It should be 'tls-ca-cert-file /path/to/ca.crt' specifying the full path to the CA certificate file."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: disable-thp	cluster-announce-ip	oom-score-adj-values	tls-ca-cert-file
+[Ciri] Reason for disable-thp: The 'disable-thp' parameter is not a valid configuration option in Redis 7.0.0. It should be 'disable-thp-warning' instead.
+[Ciri] Reason for cluster-announce-ip: The 'cluster-announce-ip' parameter is deprecated in Redis 7.0.0. It should be replaced with 'cluster-announce-ip=10.1.1.5:6379' specifying both IP and port.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter is not a valid configuration option in Redis 7.0.0. It should be 'oom-score-adj' instead, and it takes a single value, not multiple values.
+[Ciri] Reason for tls-ca-cert-file: The 'tls-ca-cert-file' parameter is not a valid configuration option in Redis 7.0.0. It should be 'tls-ca-cert-file /path/to/ca.crt' specifying the full path to the CA certificate file.

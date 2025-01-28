@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['zset-max-listpack-entries', 'unixsocketperm', 'hash-max-listpack-entries', 'auto-aof-rewrite-min-size', 'latency-monitor-threshold', 'lazyfree-lazy-eviction', 'lazyfree-lazy-user-flush', 'tls-ca-cert-dir'], 'reason': ['zset-max-listpack-entries is not a valid configuration parameter for Redis 7.0.0', "unixsocketperm value should be in octal format, e.g., 1400 should be written as '1400'", 'hash-max-listpack-entries is not a valid configuration parameter for Redis 7.0.0', "auto-aof-rewrite-min-size should be specified in bytes, e.g., '64mb' should be '64mb'", 'latency-monitor-threshold value should be an integer', "lazyfree-lazy-eviction should be either 'yes' or 'no'", "lazyfree-lazy-user-flush should be either 'yes' or 'no'", 'tls-ca-cert-dir is not a valid configuration parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-eviction', 'lazyfree-lazy-user-flush'], 'reason': ['Invalid configuration parameter: lazyfree-lazy-eviction. This parameter does not exist in Redis version 7.0.0.', 'Invalid configuration parameter: lazyfree-lazy-user-flush. This parameter does not exist in Redis version 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['zset-max-listpack-entries', 'unixsocketperm', 'hash-max-listpack-entries', 'auto-aof-rewrite-min-size', 'latency-monitor-threshold', 'lazyfree-lazy-eviction', 'lazyfree-lazy-user-flush', 'tls-ca-cert-dir'], 'reason': ['zset-max-listpack-entries is not a valid configuration parameter for Redis 7.0.0', "unixsocketperm should be in the format 'unixsocketperm 700' for Redis 7.0.0", 'hash-max-listpack-entries is not a valid configuration parameter for Redis 7.0.0', "auto-aof-rewrite-min-size should be in the format 'auto-aof-rewrite-min-size 64mb' for Redis 7.0.0", "latency-monitor-threshold should be in the format 'latency-monitor-threshold 1' for Redis 7.0.0", 'lazyfree-lazy-eviction is not a valid configuration parameter for Redis 7.0.0', 'lazyfree-lazy-user-flush is not a valid configuration parameter for Redis 7.0.0', "tls-ca-cert-dir should be in the format 'tls-ca-cert-dir /folder1/certs' for Redis 7.0.0"]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: zset-max-listpack-entries	unixsocketperm	hash-max-listpack-entries	auto-aof-rewrite-min-size	latency-monitor-threshold	lazyfree-lazy-eviction	lazyfree-lazy-user-flush	tls-ca-cert-dir
+[Ciri] Reason for zset-max-listpack-entries: zset-max-listpack-entries is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for unixsocketperm: unixsocketperm value should be in octal format, e.g., 1400 should be written as '1400'
+[Ciri] Reason for hash-max-listpack-entries: hash-max-listpack-entries is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for auto-aof-rewrite-min-size: auto-aof-rewrite-min-size should be in the format 'auto-aof-rewrite-min-size 64mb' for Redis 7.0.0
+[Ciri] Reason for latency-monitor-threshold: latency-monitor-threshold should be in the format 'latency-monitor-threshold 1' for Redis 7.0.0
+[Ciri] Reason for lazyfree-lazy-eviction: lazyfree-lazy-eviction is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for lazyfree-lazy-user-flush: lazyfree-lazy-user-flush is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for tls-ca-cert-dir: tls-ca-cert-dir should be in the format 'tls-ca-cert-dir /folder1/certs' for Redis 7.0.0

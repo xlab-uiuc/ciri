@@ -1,0 +1,40 @@
+Syntax	Data Type	yarn.dispatcher.drain-events.timeout	9.9		
+Syntax	Data Type	yarn.resourcemanager.placement-constraints.retry-attempts	-5.5		
+Syntax	Data Type	yarn.resourcemanager.connect.retry-interval.ms	true		
+Syntax	Data Type	yarn.nm.liveness-monitor.expiry-interval-ms	ciri/ciri		
+Syntax	Path	yarn.nodemanager.remote-app-log-dir	//hadoop/io/local		
+Syntax	Path	yarn.timeline-service.leveldb-state-store.path	/\hadoop/s3a		
+Syntax	Path	yarn.nodemanager.recovery.dir	tmp////staging		
+Syntax	Path	yarn.timeline-service.leveldb-state-store.path	dev/urandom///		
+Syntax	IP Address	yarn.nodemanager.hostname	0.0.0		
+Syntax	IP Address	yarn.timeline-service.hostname	1.1.1.1.1.1		
+Syntax	IP Address	yarn.nodemanager.hostname	2.2.2.2.2.2		
+Syntax	IP Address	yarn.timeline-service.hostname	x.0.0.0.0.0		
+Range	Basic Numeric	yarn.resourcemanager.zk-max-znode-size.bytes	-100		
+Range	Basic Numeric	yarn.nodemanager.logaggregation.threadpool-size-max	-1		
+Range	Basic Numeric	yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms	4000000000		
+Range	Basic Numeric	yarn.nodemanager.sleep-delay-before-sigkill.ms	-10		
+Range	Bool	yarn.acl.reservation-enable	10		
+Range	Bool	yarn.resourcemanager.resource-profiles.enabled	hadoop		
+Range	Bool	yarn.nodemanager.resource.memory.enforced	1.5		
+Range	Bool	yarn.nodemanager.pmem-check-enabled	10000		
+Range	Enum	yarn.log-aggregation.file-formats	nonono		
+Range	Enum	yarn.ipc.rpc.class	NONE_CLASS		
+Range	Enum	yarn.resourcemanager.placement-constraints.handler	NOEXIST		
+Range	Enum	yarn.nodemanager.resource-plugins	NOEXIST2		
+Range	IP Address	yarn.nodemanager.hostname	-1.0.0.0		
+Range	IP Address	yarn.timeline-service.hostname	256.256.256.256		
+Range	IP Address	yarn.nodemanager.hostname	999.-1.0.0		
+Range	IP Address	yarn.timeline-service.hostname	0.0.256.0		
+Dependency	Control	yarn.resourcemanager.ha.enabled	false	yarn.resourcemanager.ha.rm-ids	rm1,rm2
+Dependency	Control	yarn.timeline-service.enabled	false	yarn.timeline-service.hostname	0.0.0.0
+Dependency	Control	yarn.timeline-service.enabled	false	yarn.timeline-service.leveldb-timeline-store.path	hadoop_tmp/yarn/timeline
+Dependency	Control	yarn.acl.enable	false	yarn.admin.acl	*
+Dependency	Value Relationship	yarn.nodemanager.resource.memory-mb	2048	yarn.scheduler.maximum-allocation-mb	4096
+Dependency	Value Relationship	yarn.scheduler.minimum-allocation-vcores	5	yarn.scheduler.maximum-allocation-vcores	4
+Dependency	Value Relationship	yarn.nodemanager.resource.cpu-vcores	8	yarn.scheduler.maximum-allocation-vcores	16
+Dependency	Value Relationship	yarn.nodemanager.resource.memory-mb	1024	yarn.scheduler.maximum-allocation-mb	4096
+Version	Parameter Change	yarn.nodemanager.health-checker.script.timeout-ms	1200000		
+Version	Parameter Change	yarn.resourcemanager.zk-retry-interval-ms	1000		
+Version	Parameter Change	yarn.resourcemanager.zk-num-retries	1000		
+Version	Parameter Change	yarn.nodemanager.amrmproxy.enable	false		

@@ -1,0 +1,18 @@
+Wrong shot number:
+[3, 2, 9]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.tmp.dir'], 'reason': ["The property 'hbase.tmp.dir' has the value '/\\hadoop/s3a' which contains invalid characters or format for a directory path."]}
+
+{'hasError': True, 'errParameter': ['hbase.tmp.dir'], 'reason': ["The property 'hbase.tmp.dir' has the value '/\\hadoop/s3a' which contains invalid characters."]}
+
+{'hasError': True, 'errParameter': ['hbase.tmp.dir'], 'reason': ["The property 'hbase.tmp.dir' has the value '/\\hadoop/s3a' which does not follow the correct path format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.tmp.dir
+[Ciri] Reason for hbase.tmp.dir: The property 'hbase.tmp.dir' has the value '/\hadoop/s3a' which contains invalid characters or format for a directory path.

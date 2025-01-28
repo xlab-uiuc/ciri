@@ -1,0 +1,26 @@
+Wrong shot number:
+[10, 16, 4]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.cache.secs'], 'reason': ["The property 'hadoop.security.groups.cache.secs' has the value '300' which is not within the accepted value range of 0-300."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.read.timeout.ms' has the value '60000' which is not within the accepted value range of 0 to 2147483647."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.read.timeout.ms' has the value '60000' which is not within the accepted value range of 0 and 1000000000."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.read.timeout.ms' has the value '60000' which is not within the accepted value range of 0 to 2147483647."]}
+
+{'hasError': True, 'errParameter': ['hadoop.user.group.static.mapping.overrides'], 'reason': ["The property 'hadoop.user.group.static.mapping.overrides' has the value 'dr.who=;' which is not in the correct format. The correct format is 'user1=group1,group2;user2=;user3=group2;'"]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.read.timeout.ms
+[Ciri] Reason for hadoop.security.group.mapping.ldap.read.timeout.ms: The property 'hadoop.security.group.mapping.ldap.read.timeout.ms' has the value '60000' which is not within the accepted value range of 0 and 1000000000.

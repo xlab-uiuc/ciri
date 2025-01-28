@@ -1,0 +1,12 @@
+Correct shot number:
+[13, 10, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'hadoop.user.group.static.mapping.overrides'], 'reason': ['Invalid port number specified. Port number must be a positive integer.', "Invalid format for static user to group mapping. The format should be 'user1=group1,group2;user2=;user3=group2;'"]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host.port	hadoop.user.group.static.mapping.overrides
+[Ciri] Reason for fs.ftp.host.port: Invalid port number specified. Port number must be a positive integer.
+[Ciri] Reason for hadoop.user.group.static.mapping.overrides: Invalid format for static user to group mapping. The format should be 'user1=group1,group2;user2=;user3=group2;'

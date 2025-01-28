@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.maximum-allocation-vcores', 'yarn.resourcemanager.resource-profiles.enabled'], 'reason': ['The value of yarn.scheduler.maximum-allocation-vcores (4) is less than the value of yarn.scheduler.minimum-allocation-vcores (5). The maximum allocation should be greater than or equal to the minimum allocation.', 'The yarn.resourcemanager.resource-profiles.enabled property is set to false in Hadoop 3.x versions. It should be removed as resource profiles are enabled by default.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.scheduler.maximum-allocation-vcores	yarn.resourcemanager.resource-profiles.enabled
+[Ciri] Reason for yarn.scheduler.maximum-allocation-vcores: The value of yarn.scheduler.maximum-allocation-vcores (4) is less than the value of yarn.scheduler.minimum-allocation-vcores (5). The maximum allocation should be greater than or equal to the minimum allocation.
+[Ciri] Reason for yarn.resourcemanager.resource-profiles.enabled: The yarn.resourcemanager.resource-profiles.enabled property is set to false in Hadoop 3.x versions. It should be removed as resource profiles are enabled by default.

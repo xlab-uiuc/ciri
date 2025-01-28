@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval', 'quorum.auth.learner.saslLoginContext', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'clientPortAddress', 'secureClientPort'], 'reason': ['minSessionTimeout should be a positive integer', 'autopurge.purgeInterval should be a positive integer', 'quorum.auth.learner.saslLoginContext should be a valid string', 'localSessionsEnabled should be a boolean', 'sslQuorumReloadCertFiles should be a boolean', 'quorum.auth.kerberos.servicePrincipal should be a valid string', 'clientPortAddress should be a valid string', 'secureClientPort should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress', 'secureClientPort', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['dataDir and dataLogDir are not valid paths', 'clientPortAddress is not a valid address', 'secureClientPort is not a valid port number', 'quorum.auth.learner.saslLoginContext is not a valid SASL login context', 'quorum.auth.kerberos.servicePrincipal is not a valid Kerberos service principal']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress', 'secureClientPort'], 'reason': ['dataDir and dataLogDir are not valid directories', 'clientPortAddress is not a valid IP address', 'secureClientPort is not a valid port number']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'minSessionTimeout', 'autopurge.purgeInterval', 'quorum.auth.learner.saslLoginContext', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'clientPortAddress', 'secureClientPort'], 'reason': ['dataDir is not a valid directory', 'minSessionTimeout is not a valid integer', 'autopurge.purgeInterval is not a valid integer', 'quorum.auth.learner.saslLoginContext is not a valid string', 'localSessionsEnabled is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'quorum.auth.kerberos.servicePrincipal is not a valid string', 'clientPortAddress is not a valid string', 'secureClientPort is not a valid integer']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval', 'quorum.auth.learner.saslLoginContext', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'clientPortAddress', 'secureClientPort'], 'reason': ['minSessionTimeout must be greater than or equal to 1', 'autopurge.purgeInterval must be greater than or equal to 1', 'quorum.auth.learner.saslLoginContext must be set to a valid SASL login context', 'localSessionsEnabled must be set to true', 'sslQuorumReloadCertFiles must be set to true', 'quorum.auth.kerberos.servicePrincipal must be set to a valid Kerberos service principal', 'clientPortAddress must be set to a valid IP address and port', 'secureClientPort must be set to a valid port']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval', 'quorum.auth.learner.saslLoginContext', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'clientPortAddress', 'secureClientPort'], 'reason': ['minSessionTimeout is not a valid value. It must be a positive integer.', 'autopurge.purgeInterval is not a valid value. It must be a positive integer.', 'quorum.auth.learner.saslLoginContext is not a valid value. It must be a string.', 'localSessionsEnabled is not a valid value. It must be a boolean.', 'sslQuorumReloadCertFiles is not a valid value. It must be a boolean.', 'quorum.auth.kerberos.servicePrincipal is not a valid value. It must be a string.', 'clientPortAddress is not a valid value. It must be a string.', 'secureClientPort is not a valid value. It must be a positive integer.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: minSessionTimeout	autopurge.purgeInterval	quorum.auth.learner.saslLoginContext	localSessionsEnabled	sslQuorumReloadCertFiles	quorum.auth.kerberos.servicePrincipal	clientPortAddress	secureClientPort
+[Ciri] Reason for minSessionTimeout: minSessionTimeout must be greater than or equal to 1
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval must be greater than or equal to 1
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext is not a valid value. It must be a string.
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled must be set to true
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles must be set to true
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is not a valid value. It must be a string.
+[Ciri] Reason for clientPortAddress: clientPortAddress is not a valid value. It must be a string.
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid value. It must be a positive integer.

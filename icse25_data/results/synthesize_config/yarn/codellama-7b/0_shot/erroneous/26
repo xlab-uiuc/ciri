@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.monitor.policies'], 'reason': ['The list of SchedulingEditPolicy classes that interact with the scheduler. A particular module may be incompatible with the scheduler, other policies, or a configuration of either.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['yarn.sharedcache.store.in-memory.staleness-period-mins', 'yarn.nodemanager.amrmproxy.interceptor-class.pipeline', 'yarn.resourcemanager.nm-container-queuing.min-queue-wait-time-ms'], 'reason': ['The value of yarn.sharedcache.store.in-memory.staleness-period-mins is not a valid number.', 'The value of yarn.nodemanager.amrmproxy.interceptor-class.pipeline is not a valid class name.', 'The value of yarn.resourcemanager.nm-container-queuing.min-queue-wait-time-ms is not a valid number.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.remote-app-log-dir-include-older'], 'reason': ['The property yarn.nodemanager.remote-app-log-dir-include-older is not supported in yarn version 3.3.0.']}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.monitor.policies'], 'reason': ['The value of yarn.resourcemanager.scheduler.monitor.policies is not a valid list of policies. The list should be a comma-separated list of class names that implement the SchedulingEditPolicy interface.']}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.monitor.policies'], 'reason': ['The list of SchedulingEditPolicy classes that interact with the scheduler. A particular module may be incompatible with the scheduler, other policies, or a configuration of either.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.resourcemanager.scheduler.monitor.policies
+[Ciri] Reason for yarn.resourcemanager.scheduler.monitor.policies: The value of yarn.resourcemanager.scheduler.monitor.policies is not a valid list of policies. The list should be a comma-separated list of class names that implement the SchedulingEditPolicy interface.

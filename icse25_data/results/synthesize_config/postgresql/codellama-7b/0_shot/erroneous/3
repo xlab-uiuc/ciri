@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_parallel_workers_per_gather'], 'reason': ['max_parallel_workers_per_gather must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['max_parallel_workers_per_gather', 'geqo_threshold'], 'reason': ['The value of max_parallel_workers_per_gather should be greater than 0.', 'The value of geqo_threshold should be greater than 0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be greater than 100']}
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_prepared_transactions', 'max_locks_per_transaction', 'max_worker_processes', 'max_parallel_workers', 'max_parallel_workers_per_gather'], 'reason': ['max_connections must be greater than 0', 'max_prepared_transactions must be greater than 0', 'max_locks_per_transaction must be greater than 0', 'max_worker_processes must be greater than 0', 'max_parallel_workers must be greater than 0', 'max_parallel_workers_per_gather must be greater than 0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: max_connections
+[Ciri] Reason for max_connections: max_connections must be greater than 0

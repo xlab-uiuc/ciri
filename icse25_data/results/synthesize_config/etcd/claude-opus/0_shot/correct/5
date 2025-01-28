@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-advertise-peer-urls', 'proxy-refresh-interval', 'proxy-failure-wait'], 'reason': ["The 'initial-advertise-peer-urls' property should be a valid URL with an http:// or https:// scheme and a port number, such as 'http://localhost:2380'.", "The 'proxy-refresh-interval' and 'proxy-failure-wait' properties are not valid configuration options for etcd version 3.5.0. They were used in older versions of etcd but have been removed."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: initial-advertise-peer-urls	proxy-refresh-interval	proxy-failure-wait
+[Ciri] Reason for initial-advertise-peer-urls: The 'initial-advertise-peer-urls' property should be a valid URL with an http:// or https:// scheme and a port number, such as 'http://localhost:2380'.
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' and 'proxy-failure-wait' properties are not valid configuration options for etcd version 3.5.0. They were used in older versions of etcd but have been removed.
+[Ciri] Reason for proxy-failure-wait: 

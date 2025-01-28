@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-bind-host', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["The value for dfs.namenode.rpc-bind-host is invalid. It should be a valid IP address or hostname, but 'x.0.0.0.0.0' is not a valid IP address.", "The value for dfs.provided.aliasmap.leveldb.path is '/valid/file2' which looks like a file path. However, this property expects a directory path where the leveldb files will be stored, not an individual file path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.rpc-bind-host	dfs.provided.aliasmap.leveldb.path
+[Ciri] Reason for dfs.namenode.rpc-bind-host: The value for dfs.namenode.rpc-bind-host is invalid. It should be a valid IP address or hostname, but 'x.0.0.0.0.0' is not a valid IP address.
+[Ciri] Reason for dfs.provided.aliasmap.leveldb.path: The value for dfs.provided.aliasmap.leveldb.path is '/valid/file2' which looks like a file path. However, this property expects a directory path where the leveldb files will be stored, not an individual file path.

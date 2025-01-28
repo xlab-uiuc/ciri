@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.ratio.offpeak', 'hbase.hstore.time.to.purge.deletes', 'hbase.master.keytab.file', 'hbase.snapshot.restore.failsafe.name'], 'reason': ['hbase.hstore.compaction.ratio.offpeak should be a float value between 1.0 and 4.0', 'hbase.hstore.time.to.purge.deletes should be a long value greater than or equal to 0', 'hbase.master.keytab.file should be a valid file path', 'hbase.snapshot.restore.failsafe.name should be a valid file path']}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.ratio.offpeak', 'hbase.hstore.time.to.purge.deletes', 'hbase.master.keytab.file', 'hbase.snapshot.restore.failsafe.name'], 'reason': ['hbase.hstore.compaction.ratio.offpeak should be a double value', 'hbase.hstore.time.to.purge.deletes should be a long value', 'hbase.master.keytab.file should be a valid file path', 'hbase.snapshot.restore.failsafe.name should be a valid file path']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hbase.hstore.compaction.ratio.offpeak	hbase.hstore.time.to.purge.deletes	hbase.master.keytab.file	hbase.snapshot.restore.failsafe.name
+[Ciri] Reason for hbase.hstore.compaction.ratio.offpeak: hbase.hstore.compaction.ratio.offpeak should be a float value between 1.0 and 4.0
+[Ciri] Reason for hbase.hstore.time.to.purge.deletes: hbase.hstore.time.to.purge.deletes should be a long value
+[Ciri] Reason for hbase.master.keytab.file: hbase.master.keytab.file should be a valid file path
+[Ciri] Reason for hbase.snapshot.restore.failsafe.name: hbase.snapshot.restore.failsafe.name should be a valid file path

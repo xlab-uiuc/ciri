@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'minSessionTimeout', 'quorum.auth.kerberos.servicePrincipal', 'quorumListenOnAllIPs', 'sslQuorumReloadCertFiles', 'syncLimit'], 'reason': ['secureClientPort should be between 1024 and 65535', 'minSessionTimeout should be greater than 0', "quorum.auth.kerberos.servicePrincipal should be in the form of'service/fqdn@REALM'", "quorumListenOnAllIPs should be either 'true' or 'false'", "sslQuorumReloadCertFiles should be either 'true' or 'false'", 'syncLimit should be greater than 0']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'syncLimit'], 'reason': ['secureClientPort is out of range. It should be between 1024 and 65535.', 'syncLimit is out of range. It should be between 2 and 10.']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'syncLimit'], 'reason': ['secureClientPort should be less than 65535', 'syncLimit should be greater than 5']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPort	syncLimit
+[Ciri] Reason for secureClientPort: secureClientPort is out of range. It should be between 1024 and 65535.
+[Ciri] Reason for syncLimit: syncLimit is out of range. It should be between 2 and 10.

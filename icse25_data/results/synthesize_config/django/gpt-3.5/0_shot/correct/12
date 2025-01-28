@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['FORM_RENDERER', 'USE_TZ'], 'reason': ["The 'FORM_RENDERER' setting has been removed in Django 4.0. Please remove this setting.", "The 'USE_TZ' setting is no longer supported in Django 4.0. Please remove this setting."]}
+
+{'hasError': True, 'errParameter': ['FORM_RENDERER', 'USE_TZ'], 'reason': ["The 'FORM_RENDERER' setting is not valid for Django 4.0. It should be 'django.forms.renderers.Templates' instead of 'django.forms.renderers.DjangoTemplates'.", "The 'USE_TZ' setting is not valid for Django 4.0. It should be removed as timezone support is always enabled in Django 4.0."]}
+
+{'hasError': True, 'errParameter': ['USE_TZ'], 'reason': ["The 'USE_TZ' setting is removed in Django 4.0. It is no longer needed as timezone support is always enabled."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: FORM_RENDERER	USE_TZ
+[Ciri] Reason for FORM_RENDERER: The 'FORM_RENDERER' setting is not valid for Django 4.0. It should be 'django.forms.renderers.Templates' instead of 'django.forms.renderers.DjangoTemplates'.
+[Ciri] Reason for USE_TZ: The 'USE_TZ' setting is not valid for Django 4.0. It should be removed as timezone support is always enabled in Django 4.0.

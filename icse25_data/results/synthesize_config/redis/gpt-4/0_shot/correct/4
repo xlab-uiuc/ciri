@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-lazy-flush', 'list-compress-depth', 'rdb-del-sync-files', 'zset-max-listpack-value', 'zset-max-listpack-entries'], 'reason': ["The 'replica-lazy-flush' configuration directive does not exist in Redis 7.0.0.", "The 'list-compress-depth' configuration directive is not valid. The correct directive should be 'list-compress-depth' with a value that is not specific to a version, but the provided value of 1 is valid.", "The 'rdb-del-sync-files' configuration directive does not exist in Redis 7.0.0.", "The 'zset-max-listpack-value' configuration directive does not exist. The correct directive for controlling the size of zset values stored in a listpack is 'hash-max-listpack-value' in the context of Redis 7.0.0.", "The 'zset-max-listpack-entries' configuration directive does not exist. The correct directive for controlling the number of entries in a zset stored in a listpack is 'hash-max-listpack-entries' in the context of Redis 7.0.0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: replica-lazy-flush	list-compress-depth	rdb-del-sync-files	zset-max-listpack-value	zset-max-listpack-entries
+[Ciri] Reason for replica-lazy-flush: The 'replica-lazy-flush' configuration directive does not exist in Redis 7.0.0.
+[Ciri] Reason for list-compress-depth: The 'list-compress-depth' configuration directive is not valid. The correct directive should be 'list-compress-depth' with a value that is not specific to a version, but the provided value of 1 is valid.
+[Ciri] Reason for rdb-del-sync-files: The 'rdb-del-sync-files' configuration directive does not exist in Redis 7.0.0.
+[Ciri] Reason for zset-max-listpack-value: The 'zset-max-listpack-value' configuration directive does not exist. The correct directive for controlling the size of zset values stored in a listpack is 'hash-max-listpack-value' in the context of Redis 7.0.0.
+[Ciri] Reason for zset-max-listpack-entries: The 'zset-max-listpack-entries' configuration directive does not exist. The correct directive for controlling the number of entries in a zset stored in a listpack is 'hash-max-listpack-entries' in the context of Redis 7.0.0.

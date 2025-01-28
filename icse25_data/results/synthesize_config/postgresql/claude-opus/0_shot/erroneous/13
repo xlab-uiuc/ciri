@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_count', 'deadlock_timeout', 'wal_retrieve_retry_interval', 'default_toast_compression'], 'reason': ['tcp_keepalives_count must be a non-negative integer', 'deadlock_timeout must be at least 1ms', 'wal_retrieve_retry_interval must be at least 1s', "default_toast_compression must be 'lz4' for PostgreSQL 13"]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: tcp_keepalives_count	deadlock_timeout	wal_retrieve_retry_interval	default_toast_compression
+[Ciri] Reason for tcp_keepalives_count: tcp_keepalives_count must be a non-negative integer
+[Ciri] Reason for deadlock_timeout: deadlock_timeout must be at least 1ms
+[Ciri] Reason for wal_retrieve_retry_interval: wal_retrieve_retry_interval must be at least 1s
+[Ciri] Reason for default_toast_compression: default_toast_compression must be 'lz4' for PostgreSQL 13

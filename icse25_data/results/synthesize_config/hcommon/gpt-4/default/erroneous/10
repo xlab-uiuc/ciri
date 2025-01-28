@@ -1,0 +1,19 @@
+Wrong shot number:
+[3, 2, 13]
+
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.buffer.dir', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The property 'fs.s3a.buffer.dir' has an incorrect path format starting with '/\\hadoop/s3a'.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has a value '-1' which is invalid. The value should be 0 or a positive number."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.buffer.dir', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The property 'fs.s3a.buffer.dir' has the value '/\\hadoop/s3a' which contains an invalid path due to the backslash.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '-1' which is invalid as it must be 0 or a positive number."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.buffer.dir', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The property 'fs.s3a.buffer.dir' has an invalid value '/\\hadoop/s3a'. The path should not start with a backslash.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has an invalid value '-1'. The value must be 0 or a positive number."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.buffer.dir	fs.s3a.s3guard.ddb.table.capacity.write
+[Ciri] Reason for fs.s3a.buffer.dir: The property 'fs.s3a.buffer.dir' has an invalid value '/\hadoop/s3a'. The path should not start with a backslash.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: The property 'fs.s3a.s3guard.ddb.table.capacity.write' has a value '-1' which is invalid. The value should be 0 or a positive number.

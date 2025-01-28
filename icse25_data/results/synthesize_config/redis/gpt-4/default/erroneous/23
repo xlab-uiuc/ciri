@@ -1,0 +1,15 @@
+Wrong shot number:
+[10, 9, 7]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'maxmemory-clients'], 'reason': ["The property 'slowlog-max-len' has the value '-10' which is out of the valid range. It must be a positive integer.", "The property 'maxmemory-clients' does not exist in Redis configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: slowlog-max-len	maxmemory-clients
+[Ciri] Reason for slowlog-max-len: The property 'slowlog-max-len' has the value '-10' which is out of the valid range. It must be a positive integer.
+[Ciri] Reason for maxmemory-clients: The property 'maxmemory-clients' does not exist in Redis configuration.

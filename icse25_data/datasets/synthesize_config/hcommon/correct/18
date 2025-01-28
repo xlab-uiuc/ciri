@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.common.configuration.version</name>
+  <value>3.0.0</value>
+  <description>version of this configuration file</description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.conversion.rule</name>
+  <value>none</value>
+  <description>
+    The rule is applied on the group names received from LDAP when
+    RuleBasedLdapGroupsMapping is configured.
+    Supported rules are "to_upper", "to_lower" and "none".
+    to_upper: This will convert all the group names to uppercase.
+    to_lower: This will convert all the group names to lowercase.
+    none: This will retain the source formatting, this is default value.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.block.size</name>
+  <value>32M</value>
+  <description>Block size to use when reading files using s3a: file system.
+    A suffix from the set {K,M,G,T,P} may be used to scale the numeric value.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.committer.magic.enabled</name>
+  <value>false</value>
+  <description>
+    Enable support in the filesystem for the S3 "Magic" committer.
+    When working with AWS S3, S3Guard must be enabled for the destination
+    bucket, as consistent metadata listings are required.
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.abfss.impl</name>
+  <value>org.apache.hadoop.fs.azurebfs.Abfss</value>
+  <description>AbstractFileSystem implementation class of abfss://</description>
+</property>
+
+<property>
+  <name>io.seqfile.compress.blocksize</name>
+  <value>2000000</value>
+  <description>The minimum block size for compression in block compressed
+          SequenceFiles.
+  </description>
+</property>
+
+<property>
+  <name>ipc.maximum.response.length</name>
+  <value>268435456</value>
+  <description>This indicates the maximum IPC message length (bytes) that can be
+    accepted by the client. Messages larger than this value are rejected
+    immediately to avoid possible OOMs. This setting should rarely need to be
+    changed.  Set to 0 to disable.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.zk.num-retries</name>
+  <value>1000</value>
+    <description>Number of tries to connect to ZooKeeper.</description>
+</property>
+
+</configuration>

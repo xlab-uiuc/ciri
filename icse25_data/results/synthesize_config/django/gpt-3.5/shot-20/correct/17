@@ -1,0 +1,13 @@
+Correct shot number:
+[4, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['AUTHENTICATION_BACKENDS', 'SESSION_SERIALIZER', 'FORCE_SCRIPT_NAME'], 'reason': ['AUTHENTICATION_BACKENDS should be a list of strings, not a string.', 'SESSION_SERIALIZER value is not supported in Django 4.0.', 'FORCE_SCRIPT_NAME should be set to an empty string or a specific value, not None.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: AUTHENTICATION_BACKENDS	SESSION_SERIALIZER	FORCE_SCRIPT_NAME
+[Ciri] Reason for AUTHENTICATION_BACKENDS: AUTHENTICATION_BACKENDS should be a list of strings, not a string.
+[Ciri] Reason for SESSION_SERIALIZER: SESSION_SERIALIZER value is not supported in Django 4.0.
+[Ciri] Reason for FORCE_SCRIPT_NAME: FORCE_SCRIPT_NAME should be set to an empty string or a specific value, not None.

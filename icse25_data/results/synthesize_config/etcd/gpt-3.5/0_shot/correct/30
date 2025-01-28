@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-advertise-peer-urls', 'force-new-cluster', 'discovery-fallback', 'log-outputs', 'enable-v2', 'client-cert-auth', 'logger', 'initial-cluster-state'], 'reason': ["The parameter 'initial-advertise-peer-urls' should be in the format 'http://<ip>:<port>'", "The parameter 'force-new-cluster' should not be used in etcd version 3.5.0", "The parameter 'discovery-fallback' is not a valid configuration option", "The parameter 'log-outputs' should be an array of log output options", "The parameter 'enable-v2' is not a valid configuration option in etcd version 3.5.0", "The parameter 'client-cert-auth' should be set to 'false' if not using client certificate authentication", "The parameter 'logger' should specify a valid logging mechanism", "The parameter 'initial-cluster-state' should be 'existing' for a new cluster"]}
+
+{'hasError': True, 'errParameter': ['initial-advertise-peer-urls', 'force-new-cluster', 'discovery-fallback', 'enable-v2', 'client-cert-auth', 'logger', 'initial-cluster-state'], 'reason': ["The 'initial-advertise-peer-urls' parameter should be in the format 'http://<ip>:<port>',", "The 'force-new-cluster' parameter should be set to 'false' for an existing cluster or 'true' for a new cluster.", "The 'discovery-fallback' parameter should be a valid discovery method like 'dns', 'proxy', etc.", "The 'enable-v2' parameter is deprecated in etcd version 3.5.0.", "The 'client-cert-auth' parameter should be set to 'false' if not using client certificate authentication.", "The 'logger' parameter should specify a valid logging mechanism like 'zap', 'logrus', etc.", "The 'initial-cluster-state' parameter should be 'existing' for joining an existing cluster or 'new' for a new cluster."]}
+
+{'hasError': True, 'errParameter': ['initial-advertise-peer-urls', 'force-new-cluster', 'discovery-fallback', 'enable-v2', 'client-cert-auth', 'logger', 'initial-cluster-state'], 'reason': ["'initial-advertise-peer-urls' should be an array of URLs", "'force-new-cluster' should be a boolean value", "'discovery-fallback' should be a string value", "'enable-v2' should be removed as it is deprecated in etcd version 3.5.0", "'client-cert-auth' should be a boolean value", "'logger' should be a string value", "'initial-cluster-state' should be 'existing' instead of 'new' for a new cluster"]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: initial-advertise-peer-urls	force-new-cluster	discovery-fallback	enable-v2	client-cert-auth	logger	initial-cluster-state
+[Ciri] Reason for initial-advertise-peer-urls: 'initial-advertise-peer-urls' should be an array of URLs
+[Ciri] Reason for force-new-cluster: 'force-new-cluster' should be a boolean value
+[Ciri] Reason for discovery-fallback: 'discovery-fallback' should be a string value
+[Ciri] Reason for enable-v2: 'enable-v2' should be removed as it is deprecated in etcd version 3.5.0
+[Ciri] Reason for client-cert-auth: The 'client-cert-auth' parameter should be set to 'false' if not using client certificate authentication.
+[Ciri] Reason for logger: 'logger' should be a string value
+[Ciri] Reason for initial-cluster-state: The 'initial-cluster-state' parameter should be 'existing' for joining an existing cluster or 'new' for a new cluster.

@@ -1,0 +1,37 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.serverRequireSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs'], 'reason': ['secureClientPortAddress is not a valid port number', 'quorum.auth.serverRequireSasl is not a valid boolean', 'quorum.auth.learner.saslLoginContext is not a valid string', 'quorum.auth.learnerRequireSasl is not a valid boolean', 'quorumListenOnAllIPs is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'dataDir'], 'reason': ['dataLogDir and dataDir are not valid directories. Please provide valid directories.', 'dataLogDir and dataDir are not valid directories. Please provide valid directories.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'secureClientPort', 'secureClientPortAddress', 'quorum.auth.serverRequireSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs'], 'reason': ['dataDir and dataLogDir must be valid directories', 'secureClientPort must be a valid port number', 'secureClientPortAddress must be a valid IP address', 'quorum.auth.serverRequireSasl must be a boolean value', 'quorum.auth.learner.saslLoginContext must be a valid string', 'quorum.auth.learnerRequireSasl must be a boolean value', 'quorumListenOnAllIPs must be a boolean value']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'secureClientPortAddress'], 'reason': ['dataLogDir is not a valid directory', 'secureClientPortAddress is not a valid address']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'dataLogDir'], 'reason': ['secureClientPortAddress is not a valid port number', 'dataLogDir is not a valid directory']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.serverRequireSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs', 'dataLogDir'], 'reason': ['secureClientPortAddress: invalid port number', 'quorum.auth.serverRequireSasl: invalid boolean value', 'quorum.auth.learner.saslLoginContext: invalid string value', 'quorum.auth.learnerRequireSasl: invalid boolean value', 'quorumListenOnAllIPs: invalid boolean value', 'dataLogDir: invalid directory']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'dataDir', 'secureClientPortAddress'], 'reason': ['dataLogDir is not a valid directory', 'dataDir is not a valid directory', 'secureClientPortAddress is not a valid address']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.serverRequireSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs'], 'reason': ['secureClientPortAddress should be a valid ip address and port number', 'quorum.auth.serverRequireSasl should be a boolean value', 'quorum.auth.learner.saslLoginContext should be a valid sasl login context', 'quorum.auth.learnerRequireSasl should be a boolean value', 'quorumListenOnAllIPs should be a boolean value']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs', 'dataLogDir'], 'reason': ['secureClientPortAddress is not a valid port address', 'quorum.auth.learner.saslLoginContext is not a valid login context', 'quorum.auth.learnerRequireSasl is not a valid boolean', 'quorumListenOnAllIPs is not a valid boolean', 'dataLogDir is not a valid directory']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir and dataLogDir must be valid directories', 'dataDir and dataLogDir must be valid directories']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir and dataLogDir must be different directories', 'dataDir and dataLogDir must be different directories']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'secureClientPortAddress', 'quorum.auth.serverRequireSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs'], 'reason': ['secureClientPort is not a valid port number', 'secureClientPortAddress is not a valid IP address', 'quorum.auth.serverRequireSasl is not a valid boolean', 'quorum.auth.learner.saslLoginContext is not a valid string', 'quorum.auth.learnerRequireSasl is not a valid boolean', 'quorumListenOnAllIPs is not a valid boolean']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataDir	dataLogDir
+[Ciri] Reason for dataDir: dataDir and dataLogDir must be different directories
+[Ciri] Reason for dataLogDir: dataDir and dataLogDir must be valid directories

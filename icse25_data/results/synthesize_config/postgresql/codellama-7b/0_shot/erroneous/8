@@ -1,0 +1,60 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_min_duration_sample', 'log_min_duration_statement'], 'reason': ['log_min_duration_sample must be a positive integer or -1', 'log_min_duration_statement must be a positive integer or -1']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'max_pred_locks_per_relation'], 'reason': ['max_wal_size must be a power of 2 between 1MB and 1GB, inclusive.', 'max_pred_locks_per_relation must be a power of 2 between 1 and 1024, inclusive.']}
+
+{'hasError': True, 'errParameter': ['max_wal_size'], 'reason': ['max_wal_size must be a power of 2 between 1MB and 1GB.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_min_duration_sample', 'log_min_duration_statement', 'log_min_duration_session', 'max_pred_locks_per_relation'], 'reason': ['log_min_duration_sample must be >= -1', 'log_min_duration_statement must be >= -1', 'log_min_duration_session must be >= -1', 'max_pred_locks_per_relation must be >= -2']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['max_wal_size must be a power of 2 between 1MB and 1GB', 'max_pred_locks_per_relation must be a positive integer or -1', 'log_min_duration_sample must be a positive integer or -1']}
+
+{'hasError': True, 'errParameter': ['log_min_duration_sample', 'log_min_duration_statement', 'log_min_duration_session'], 'reason': ['log_min_duration_sample must be greater than or equal to -1', 'log_min_duration_statement must be greater than or equal to -1', 'log_min_duration_session must be greater than or equal to -1']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_min_duration_sample'], 'reason': ['log_min_duration_sample must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['log_min_duration_sample', 'log_min_duration_statement', 'log_min_duration_statement'], 'reason': ['log_min_duration_sample must be a positive integer', 'log_min_duration_statement must be a positive integer', 'log_min_duration_statement must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'max_pred_locks_per_relation'], 'reason': ['max_wal_size should be a power of 2', 'max_pred_locks_per_relation should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_min_duration_sample'], 'reason': ['log_min_duration_sample must be a positive integer or -1.']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'work_mem'], 'reason': ['max_wal_size should be a power of 2', 'work_mem should be a power of 2']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'log_min_duration_sample'], 'reason': ['max_wal_size must be a power of 2 between 1MB and 1GB', 'log_min_duration_sample must be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'max_pred_locks_per_relation'], 'reason': ['max_wal_size must be a power of 2 between 1MB and 1GB', 'max_pred_locks_per_relation must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['log_min_duration_sample'], 'reason': ['log_min_duration_sample must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['max_wal_size must be a power of 2 between 1MB and 1GB', 'max_pred_locks_per_relation must be a positive integer', 'log_min_duration_sample must be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_level', 'max_wal_size', 'max_pred_locks_per_relation'], 'reason': ['wal_level must be either hot_standby or logical', 'max_wal_size must be a power of 2 between 1MB and 1GB', 'max_pred_locks_per_relation must be a positive integer or -1']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'log_min_duration_sample', 'max_pred_locks_per_relation', 'work_mem'], 'reason': ['max_wal_size must be a power of 2 greater than 1MB', 'log_min_duration_sample must be >= -1', 'max_pred_locks_per_relation must be >= -2', 'work_mem must be a power of 2 greater than 1MB']}
+
+{'hasError': True, 'errParameter': ['log_min_duration_sample', 'log_min_duration_sample'], 'reason': ['The value of log_min_duration_sample is not valid. It must be a positive integer or -1.', 'The value of log_min_duration_sample is not valid. It must be a positive integer or -1.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_size'], 'reason': ['max_wal_size must be a power of 2']}
+
+{'hasError': True, 'errParameter': ['max_wal_size'], 'reason': ['max_wal_size must be a power of 2']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['max_wal_size should be a power of 2', 'max_pred_locks_per_relation should be a positive integer', 'log_min_duration_sample should be a positive integer']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: max_wal_size
+[Ciri] Reason for max_wal_size: max_wal_size must be a power of 2

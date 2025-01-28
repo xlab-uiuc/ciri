@@ -1,0 +1,19 @@
+Wrong shot number:
+[9, 3, 7]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hadoop.policy.file'], 'reason': ["The property 'hbase.local.dir' has the value '/valid/file1' which is not a valid directory.", "The property 'hadoop.policy.file' has the value '/valid/file1' which is not a valid file."]}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hadoop.policy.file'], 'reason': ["The property 'hbase.local.dir' has the value '/valid/file1' which does not follow the correct file path format.", "The property 'hadoop.policy.file' has the value '/valid/file1' which does not follow the correct file path format."]}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hadoop.policy.file'], 'reason': ["The property 'hbase.local.dir' has the value '/valid/file1' which does not follow the correct file path format.", "The property 'hadoop.policy.file' has the value '/valid/file1' which does not follow the correct file path format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.local.dir	hadoop.policy.file
+[Ciri] Reason for hbase.local.dir: The property 'hbase.local.dir' has the value '/valid/file1' which does not follow the correct file path format.
+[Ciri] Reason for hadoop.policy.file: The property 'hadoop.policy.file' has the value '/valid/file1' which is not a valid file.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['stream-node-max-entries', 'proto-max-bulk-len'], 'reason': ['stream-node-max-entries should be in the format stream-node-max-entries <count>', 'proto-max-bulk-len should be in the format proto-max-bulk-len <bytes>']}
+
+{'hasError': True, 'errParameter': ['stream-node-max-entries', 'proto-max-bulk-len'], 'reason': ['stream-node-max-entries should be stream-node-max-entries-per-stream', 'proto-max-bulk-len is not a valid parameter in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['stream-node-max-entries', 'enable-module-command', 'proto-max-bulk-len'], 'reason': ['stream-node-max-entries is not a valid configuration parameter for Redis 7.0.0', 'enable-module-command is not a valid configuration parameter for Redis 7.0.0', 'proto-max-bulk-len is not a valid configuration parameter for Redis 7.0.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: stream-node-max-entries	proto-max-bulk-len
+[Ciri] Reason for stream-node-max-entries: stream-node-max-entries should be stream-node-max-entries-per-stream
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len should be in the format proto-max-bulk-len <bytes>

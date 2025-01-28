@@ -1,0 +1,20 @@
+Wrong shot number:
+[11, 5, 9]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['set-max-listpack-value', 'cluster-announce-port'], 'reason': ["The property 'set-max-listpack-value' is not a valid configuration parameter.", "The value of the property 'cluster-announce-port' should be greater than 1 for proper cluster communication."]}
+
+{'hasError': True, 'errParameter': ['set-max-listpack-value', 'cluster-announce-port', 'proto-max-bulk-len'], 'reason': ["The property 'set-max-listpack-value' is not a valid configuration parameter.", "The value of 'cluster-announce-port' should be a valid port number.", "The value of 'proto-max-bulk-len' should not have 'mb' suffix. It should be specified in bytes."]}
+
+{'hasError': True, 'errParameter': ['set-max-listpack-value', 'cluster-announce-port', 'proto-max-bulk-len'], 'reason': ["The property 'set-max-listpack-value' is invalid.", "The property 'cluster-announce-port' should have a valid port number.", "The property 'proto-max-bulk-len' should not have 'mb' suffix. It should be a numeric value."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: set-max-listpack-value	cluster-announce-port	proto-max-bulk-len
+[Ciri] Reason for set-max-listpack-value: The property 'set-max-listpack-value' is invalid.
+[Ciri] Reason for cluster-announce-port: The value of 'cluster-announce-port' should be a valid port number.
+[Ciri] Reason for proto-max-bulk-len: The value of 'proto-max-bulk-len' should not have 'mb' suffix. It should be specified in bytes.

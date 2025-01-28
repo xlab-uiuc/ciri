@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.common.configuration.version', 'io.file.buffer.size', 'io.bytes.per.checksum', 'fs.azure.authorization', 'hadoop.shell.missing.defaultFs.warning'], 'reason': ['The version of this configuration file is not 3.3.0', 'The size of buffer for use in sequence files should be a multiple of hardware page size (4096 on Intel x86)', 'The number of bytes per checksum should not be larger than io.file.buffer.size', 'The fs.azure.authorization property is not a boolean value', 'The hadoop.shell.missing.defaultFs.warning property is not a boolean value']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: hadoop.common.configuration.version	io.file.buffer.size	io.bytes.per.checksum	fs.azure.authorization	hadoop.shell.missing.defaultFs.warning
+[Ciri] Reason for hadoop.common.configuration.version: The version of this configuration file is not 3.3.0
+[Ciri] Reason for io.file.buffer.size: The size of buffer for use in sequence files should be a multiple of hardware page size (4096 on Intel x86)
+[Ciri] Reason for io.bytes.per.checksum: The number of bytes per checksum should not be larger than io.file.buffer.size
+[Ciri] Reason for fs.azure.authorization: The fs.azure.authorization property is not a boolean value
+[Ciri] Reason for hadoop.shell.missing.defaultFs.warning: The hadoop.shell.missing.defaultFs.warning property is not a boolean value

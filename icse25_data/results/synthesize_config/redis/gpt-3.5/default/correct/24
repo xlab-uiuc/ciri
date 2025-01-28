@@ -1,0 +1,18 @@
+Wrong shot number:
+[6, 8, 4]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port'], 'reason': ["The property 'cluster-announce-port' has the value '1' which is not a valid port number."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port'], 'reason': ["The property 'cluster-announce-port' has the value '1' which is not within the valid port range."]}
+
+{'hasError': True, 'errParameter': ['port', 'aclfile', 'cluster-announce-port'], 'reason': ["The property 'port' has the value '12758' which is not within the accepted range of ports.", "The property 'aclfile' has an invalid file path '/valid/file2.acl'.", "The property 'cluster-announce-port' has the value '1' which is not within the accepted range of ports."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: cluster-announce-port
+[Ciri] Reason for cluster-announce-port: The property 'cluster-announce-port' has the value '1' which is not a valid port number.

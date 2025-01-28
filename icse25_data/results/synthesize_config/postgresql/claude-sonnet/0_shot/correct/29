@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem cannot be set to -1 in PostgreSQL 13.0. It expects a positive integer value representing the amount of memory in kilobytes.', 'unix_socket_permissions should be a 4-digit octal number representing the access permissions for the Unix domain socket. The value 388 is not a valid octal number.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autovacuum_work_mem	unix_socket_permissions
+[Ciri] Reason for autovacuum_work_mem: autovacuum_work_mem cannot be set to -1 in PostgreSQL 13.0. It expects a positive integer value representing the amount of memory in kilobytes.
+[Ciri] Reason for unix_socket_permissions: unix_socket_permissions should be a 4-digit octal number representing the access permissions for the Unix domain socket. The value 388 is not a valid octal number.

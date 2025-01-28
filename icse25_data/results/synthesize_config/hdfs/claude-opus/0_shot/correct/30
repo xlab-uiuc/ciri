@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.provided.aliasmap.leveldb.path', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The value '/valid/file1' for property 'dfs.provided.aliasmap.leveldb.path' is not a valid configuration. It should be a directory path, not a file path.", "The value '5s' for property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' is not a valid configuration. The value should be specified in milliseconds, not seconds (e.g. '5000' for 5 seconds)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.provided.aliasmap.leveldb.path	dfs.namenode.gc.time.monitor.sleep.interval.ms
+[Ciri] Reason for dfs.provided.aliasmap.leveldb.path: The value '/valid/file1' for property 'dfs.provided.aliasmap.leveldb.path' is not a valid configuration. It should be a directory path, not a file path.
+[Ciri] Reason for dfs.namenode.gc.time.monitor.sleep.interval.ms: The value '5s' for property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' is not a valid configuration. The value should be specified in milliseconds, not seconds (e.g. '5000' for 5 seconds).

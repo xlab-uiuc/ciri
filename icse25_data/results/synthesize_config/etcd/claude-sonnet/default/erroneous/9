@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 6, 3]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'auto-compaction-retention'], 'reason': ["The property 'listen-client-urls' has the value 'file:///' which does not follow the correct URL format.", 'The property \'auto-compaction-retention\' has the value \'"1"\' which is a string instead of an integer.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: listen-client-urls	auto-compaction-retention
+[Ciri] Reason for listen-client-urls: The property 'listen-client-urls' has the value 'file:///' which does not follow the correct URL format.
+[Ciri] Reason for auto-compaction-retention: The property 'auto-compaction-retention' has the value '"1"' which is a string instead of an integer.

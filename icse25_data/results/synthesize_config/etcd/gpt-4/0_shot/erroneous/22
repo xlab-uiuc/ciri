@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode', 'auto-compaction-retention', 'proxy-dial-timeout', 'logger'], 'reason': ["The 'auto-compaction-mode' parameter is not available in etcd version 3.5.0. Compaction settings are typically configured via API or etcdctl.", "The 'auto-compaction-retention' parameter should be a string specifying the retention window in hours ('h') for automatic compaction in etcd 3.5.0.", "The 'proxy-dial-timeout' parameter is not applicable to etcd version 3.5.0 as proxy feature was deprecated.", "The 'logger' parameter in etcd version 3.5.0 does not support the 'zap' value. The valid options are 'capnslog' and 'zap' was introduced in later versions."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: auto-compaction-mode	auto-compaction-retention	proxy-dial-timeout	logger
+[Ciri] Reason for auto-compaction-mode: The 'auto-compaction-mode' parameter is not available in etcd version 3.5.0. Compaction settings are typically configured via API or etcdctl.
+[Ciri] Reason for auto-compaction-retention: The 'auto-compaction-retention' parameter should be a string specifying the retention window in hours ('h') for automatic compaction in etcd 3.5.0.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' parameter is not applicable to etcd version 3.5.0 as proxy feature was deprecated.
+[Ciri] Reason for logger: The 'logger' parameter in etcd version 3.5.0 does not support the 'zap' value. The valid options are 'capnslog' and 'zap' was introduced in later versions.

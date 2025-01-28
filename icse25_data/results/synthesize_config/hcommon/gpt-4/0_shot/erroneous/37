@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.conversion.rule', 'io.erasurecode.codec.rs-legacy.rawcoders', 'ipc.[port_number].cost-provider.impl', 'ftp.bytes-per-checksum'], 'reason': ["The value 'nonono' is invalid. Valid options are 'to_upper', 'to_lower', or 'none'.", "The property 'io.erasurecode.codec.rs-legacy.rawcoders' is not recognized in Hadoop 3.3.0. It might be a typo or relevant to a different version.", "The property name 'ipc.[port_number].cost-provider.impl' uses a placeholder '[port_number]' which should be replaced with an actual port number.", "The 'ftp.bytes-per-checksum' property is not a standard Hadoop configuration parameter as of version 3.3.0. It might be a typo, custom extension, or relevant to a different context."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.conversion.rule	io.erasurecode.codec.rs-legacy.rawcoders	ipc.[port_number].cost-provider.impl	ftp.bytes-per-checksum
+[Ciri] Reason for hadoop.security.group.mapping.ldap.conversion.rule: The value 'nonono' is invalid. Valid options are 'to_upper', 'to_lower', or 'none'.
+[Ciri] Reason for io.erasurecode.codec.rs-legacy.rawcoders: The property 'io.erasurecode.codec.rs-legacy.rawcoders' is not recognized in Hadoop 3.3.0. It might be a typo or relevant to a different version.
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: The property name 'ipc.[port_number].cost-provider.impl' uses a placeholder '[port_number]' which should be replaced with an actual port number.
+[Ciri] Reason for ftp.bytes-per-checksum: The 'ftp.bytes-per-checksum' property is not a standard Hadoop configuration parameter as of version 3.3.0. It might be a typo, custom extension, or relevant to a different context.

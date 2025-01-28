@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.files.retained', 'alluxio.master.metastore.inode.cache.max.size', 'alluxio.master.journal.space.monitor.interval', 'alluxio.master.ufs.active.sync.poll.timeout', 'alluxio.user.block.read.retry.sleep.base', 'alluxio.fuse.cached.paths.max', 'alluxio.worker.tieredstore.block.locks'], 'reason': ["The property 'alluxio.master.daily.backup.files.retained' does not exist or is not correctly spelled.", "The property 'alluxio.master.metastore.inode.cache.max.size' does not exist or is not correctly spelled.", "The format for 'alluxio.master.journal.space.monitor.interval' should be in milliseconds, not '1min'.", "The format for 'alluxio.master.ufs.active.sync.poll.timeout' should be in milliseconds, not '20sec'.", "The property 'alluxio.user.block.read.retry.sleep.base' does not exist or is not correctly spelled.", "The property 'alluxio.fuse.cached.paths.max' does not exist or is not correctly spelled.", "The property 'alluxio.worker.tieredstore.block.locks' does not exist or is not correctly spelled."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: alluxio.master.daily.backup.files.retained	alluxio.master.metastore.inode.cache.max.size	alluxio.master.journal.space.monitor.interval	alluxio.master.ufs.active.sync.poll.timeout	alluxio.user.block.read.retry.sleep.base	alluxio.fuse.cached.paths.max	alluxio.worker.tieredstore.block.locks
+[Ciri] Reason for alluxio.master.daily.backup.files.retained: The property 'alluxio.master.daily.backup.files.retained' does not exist or is not correctly spelled.
+[Ciri] Reason for alluxio.master.metastore.inode.cache.max.size: The property 'alluxio.master.metastore.inode.cache.max.size' does not exist or is not correctly spelled.
+[Ciri] Reason for alluxio.master.journal.space.monitor.interval: The format for 'alluxio.master.journal.space.monitor.interval' should be in milliseconds, not '1min'.
+[Ciri] Reason for alluxio.master.ufs.active.sync.poll.timeout: The format for 'alluxio.master.ufs.active.sync.poll.timeout' should be in milliseconds, not '20sec'.
+[Ciri] Reason for alluxio.user.block.read.retry.sleep.base: The property 'alluxio.user.block.read.retry.sleep.base' does not exist or is not correctly spelled.
+[Ciri] Reason for alluxio.fuse.cached.paths.max: The property 'alluxio.fuse.cached.paths.max' does not exist or is not correctly spelled.
+[Ciri] Reason for alluxio.worker.tieredstore.block.locks: The property 'alluxio.worker.tieredstore.block.locks' does not exist or is not correctly spelled.

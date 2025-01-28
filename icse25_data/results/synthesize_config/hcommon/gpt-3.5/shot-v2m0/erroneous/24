@@ -1,0 +1,14 @@
+Correct shot number:
+[6, 13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.tmp.dir', 'fs.ftp.host.port', 'fs.s3a.fast.upload.buffer', 'ipc.[port_number].faircallqueue.multiplexer.weights'], 'reason': ["The 'usage' tag is not a valid property element.", "The 'usage' tag is not a valid property element.", "The description for 'fs.s3a.fast.upload.buffer' is too long and should be concise.", "The property name 'ipc.[port_number].faircallqueue.multiplexer.weights' is not a valid format."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.tmp.dir	fs.ftp.host.port	fs.s3a.fast.upload.buffer	ipc.[port_number].faircallqueue.multiplexer.weights
+[Ciri] Reason for hadoop.tmp.dir: The 'usage' tag is not a valid property element.
+[Ciri] Reason for fs.ftp.host.port: The 'usage' tag is not a valid property element.
+[Ciri] Reason for fs.s3a.fast.upload.buffer: The description for 'fs.s3a.fast.upload.buffer' is too long and should be concise.
+[Ciri] Reason for ipc.[port_number].faircallqueue.multiplexer.weights: The property name 'ipc.[port_number].faircallqueue.multiplexer.weights' is not a valid format.

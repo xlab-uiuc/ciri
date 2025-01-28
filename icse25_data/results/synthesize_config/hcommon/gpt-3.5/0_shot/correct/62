@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.max.retries', 'io.mapfile.bloom.error.rate', 'ipc.client.connection.maxidletime', 'ipc.client.connect.timeout', 'hadoop.shell.missing.defaultFs.warning'], 'reason': ["The property 'fs.s3a.s3guard.ddb.max.retries' is missing a 'usage' tag.", "The property 'io.mapfile.bloom.error.rate' is missing a 'usage' tag.", "The property 'ipc.client.connection.maxidletime' is missing a 'usage' tag.", "The property 'ipc.client.connect.timeout' is missing a 'usage' tag.", "The property 'hadoop.shell.missing.defaultFs.warning' is missing a 'usage' tag."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.max.retries', 'hadoop.shell.missing.defaultFs.warning'], 'reason': ["The property 'fs.s3a.s3guard.ddb.max.retries' should have a description.", "The property 'hadoop.shell.missing.defaultFs.warning' should have a usage."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.max.retries', 'io.mapfile.bloom.error.rate', 'ipc.client.connection.maxidletime', 'ipc.client.connect.timeout', 'hadoop.shell.missing.defaultFs.warning'], 'reason': ["The property 'fs.s3a.s3guard.ddb.max.retries' should have a 'usage' tag.", "The property 'io.mapfile.bloom.error.rate' should have a 'usage' tag.", "The property 'ipc.client.connection.maxidletime' should have a 'usage' tag.", "The property 'ipc.client.connect.timeout' should have a 'usage' tag.", "The property 'hadoop.shell.missing.defaultFs.warning' should have a 'usage' tag."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: fs.s3a.s3guard.ddb.max.retries	io.mapfile.bloom.error.rate	ipc.client.connection.maxidletime	ipc.client.connect.timeout	hadoop.shell.missing.defaultFs.warning
+[Ciri] Reason for fs.s3a.s3guard.ddb.max.retries: The property 'fs.s3a.s3guard.ddb.max.retries' should have a 'usage' tag.
+[Ciri] Reason for io.mapfile.bloom.error.rate: The property 'io.mapfile.bloom.error.rate' should have a 'usage' tag.
+[Ciri] Reason for ipc.client.connection.maxidletime: The property 'ipc.client.connection.maxidletime' should have a 'usage' tag.
+[Ciri] Reason for ipc.client.connect.timeout: The property 'ipc.client.connect.timeout' should have a 'usage' tag.
+[Ciri] Reason for hadoop.shell.missing.defaultFs.warning: The property 'hadoop.shell.missing.defaultFs.warning' should have a 'usage' tag.

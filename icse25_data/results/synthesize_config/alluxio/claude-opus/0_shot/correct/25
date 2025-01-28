@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.worker.keytab.file', 'alluxio.fuse.logging.threshold', 'alluxio.user.streaming.writer.close.timeout', 'alluxio.web.refresh.interval', 'alluxio.underfs.s3.intermediate.upload.clean.age'], 'reason': ['Invalid property name. Correct property is alluxio.underfs.cos.socket.timeout for Alluxio 2.5.0', 'Invalid value. File paths must be prefixed with file:/ or /', 'Invalid time format. Valid time units are ms, s, m, h, d. For example: 20000ms, 20s, 20m, 20h or 20d', 'Invalid time format. Valid time units are ms, s, m, h, d. For example: 1000ms, 1s, 1m, 1h or 1d', 'Invalid time format. Valid time units are ms, s, m, h, d. For example: 1000ms, 1s, 1m, 1h or 1d', 'Invalid time format. Valid time units are ms, s, m, h, d. For example: 1000ms, 1s, 1m, 1h or 1d']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.cos.socket.timeout	alluxio.worker.keytab.file	alluxio.fuse.logging.threshold	alluxio.user.streaming.writer.close.timeout	alluxio.web.refresh.interval	alluxio.underfs.s3.intermediate.upload.clean.age
+[Ciri] Reason for fs.cos.socket.timeout: Invalid property name. Correct property is alluxio.underfs.cos.socket.timeout for Alluxio 2.5.0
+[Ciri] Reason for alluxio.worker.keytab.file: Invalid value. File paths must be prefixed with file:/ or /
+[Ciri] Reason for alluxio.fuse.logging.threshold: Invalid time format. Valid time units are ms, s, m, h, d. For example: 20000ms, 20s, 20m, 20h or 20d
+[Ciri] Reason for alluxio.user.streaming.writer.close.timeout: Invalid time format. Valid time units are ms, s, m, h, d. For example: 1000ms, 1s, 1m, 1h or 1d
+[Ciri] Reason for alluxio.web.refresh.interval: Invalid time format. Valid time units are ms, s, m, h, d. For example: 1000ms, 1s, 1m, 1h or 1d
+[Ciri] Reason for alluxio.underfs.s3.intermediate.upload.clean.age: Invalid time format. Valid time units are ms, s, m, h, d. For example: 1000ms, 1s, 1m, 1h or 1d

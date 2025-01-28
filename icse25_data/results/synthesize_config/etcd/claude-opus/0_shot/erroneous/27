@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy', 'proxy-dial-timeout', 'proxy-failure-wait'], 'reason': ["The 'proxy' parameter is deprecated in etcd v3.5. Use 'proxy-mode' instead with values 'off', 'readonly' or 'grpc-proxy'.", "'proxy-dial-timeout' is not a valid configuration parameter for etcd v3.5. It was removed in v3.4.", "'proxy-failure-wait' is not a valid configuration parameter for etcd v3.5. It was removed in v3.4."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy	proxy-dial-timeout	proxy-failure-wait
+[Ciri] Reason for proxy: The 'proxy' parameter is deprecated in etcd v3.5. Use 'proxy-mode' instead with values 'off', 'readonly' or 'grpc-proxy'.
+[Ciri] Reason for proxy-dial-timeout: 'proxy-dial-timeout' is not a valid configuration parameter for etcd v3.5. It was removed in v3.4.
+[Ciri] Reason for proxy-failure-wait: 'proxy-failure-wait' is not a valid configuration parameter for etcd v3.5. It was removed in v3.4.

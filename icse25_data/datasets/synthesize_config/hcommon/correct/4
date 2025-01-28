@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.groups.cache.background.reload</name>
+  <value>true</value>
+  <description>
+    Whether to reload expired user->group mappings using a background thread
+    pool. If set to true, a pool of
+    hadoop.security.groups.cache.background.reload.threads is created to
+    update the cache in the background.
+  </description>
+</property>
+
+<property>
+  <name>io.erasurecode.codec.rs-legacy.rawcoders</name>
+  <value>rs-legacy_java</value>
+  <description>
+    Comma separated raw coder implementations for the rs-legacy codec. The earlier
+    factory is prior to followings in case of failure of creating raw coders.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.retry.interval</name>
+  <value>500ms</value>
+  <description>
+    Initial retry interval when retrying operations for any reason other
+    than S3 throttle errors and S3Guard inconsistency resolution.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.enabled</name>
+  <value>false</value>
+  <description>Is S3 Select enabled?</description>
+</property>
+
+<property>
+  <name>fs.permissions.umask-mode</name>
+  <value>007</value>
+  <description>
+    The umask used when creating files and directories.
+    Can be in octal or in symbolic. Examples are:
+    "022" (octal for u=rwx,g=r-x,o=r-x in symbolic),
+    or "u=rwx,g=rwx,o=" (symbolic for 007 in octal).
+  </description>
+</property>
+
+<property>
+  <name>ha.health-monitor.rpc.connect.max.retries</name>
+  <value>1</value>
+  <description>
+    The number of retries on connect error when establishing RPC proxy
+    connection to NameNode, used for monitorHealth() calls.
+  </description>
+</property>
+
+<property>
+  <name>ha.failover-controller.graceful-fence.connection.retries</name>
+  <value>2</value>
+  <description>
+    FC connection retries for graceful fencing
+  </description>
+</property>
+
+<property>
+  <name>hadoop.zk.acl</name>
+  <value>world:anyone:rwcda</value>
+    <description>ACL's to be used for ZooKeeper znodes.</description>
+</property>
+
+</configuration>

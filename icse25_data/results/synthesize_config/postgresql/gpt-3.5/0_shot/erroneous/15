@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['jit_optimize_above_cost', 'wal_writer_delay', 'enable_mergejoin', 'autovacuum_max_workers', 'syslog_split_messages', 'update_process_title', 'krb_caseins_users'], 'reason': ['jit_optimize_above_cost value should be an integer, e.g., 4000000 without extra zeros.', "wal_writer_delay value should be in milliseconds, e.g., 400 without 'ms'.", "enable_mergejoin value should be 'on' or 'off' without quotes.", 'autovacuum_max_workers value should be an integer greater than 1.', "syslog_split_messages value should be 'on' or 'off' without quotes.", "update_process_title value should be 'on' or 'off' without quotes.", "krb_caseins_users value should be 'on' or 'off' without quotes."]}
+
+{'hasError': True, 'errParameter': ['jit_optimize_above_cost', 'wal_writer_delay', 'enable_mergejoin', 'autovacuum_max_workers', 'syslog_split_messages', 'update_process_title', 'log_disconnections', 'krb_caseins_users'], 'reason': ['jit_optimize_above_cost should be an integer value.', 'wal_writer_delay should be specified in seconds, not milliseconds.', "enable_mergejoin should be set to 'true' or 'false' instead of 'on'.", 'autovacuum_max_workers should be set to a value greater than 1.', "syslog_split_messages should be set to 'true' or 'false' instead of 'on'.", "update_process_title should be set to 'true' or 'false' instead of 'on'.", "log_disconnections should be set to 'true' or 'false' instead of 'off'.", "krb_caseins_users should be set to 'true' or 'false' instead of 'off'."]}
+
+{'hasError': True, 'errParameter': ['jit_optimize_above_cost', 'wal_writer_delay', 'enable_mergejoin', 'autovacuum_max_workers', 'syslog_split_messages', 'update_process_title', 'log_disconnections', 'krb_caseins_users'], 'reason': ['jit_optimize_above_cost value should be an integer, e.g., 4000000 instead of 4000000000', 'wal_writer_delay value should be in milliseconds, e.g., 400 instead of 400ms', "enable_mergejoin value should be 'true' or 'false' instead of 'on'", 'autovacuum_max_workers value should be an integer greater than 0, e.g., 1 is valid', "syslog_split_messages value should be 'true' or 'false' instead of 'on'", "update_process_title value should be 'true' or 'false' instead of 'on'", "log_disconnections value should be 'true' or 'false' instead of 'off'", "krb_caseins_users value should be 'true' or 'false' instead of 'off'"]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: jit_optimize_above_cost	wal_writer_delay	enable_mergejoin	autovacuum_max_workers	syslog_split_messages	update_process_title	log_disconnections	krb_caseins_users
+[Ciri] Reason for jit_optimize_above_cost: jit_optimize_above_cost value should be an integer, e.g., 4000000 instead of 4000000000
+[Ciri] Reason for wal_writer_delay: wal_writer_delay should be specified in seconds, not milliseconds.
+[Ciri] Reason for enable_mergejoin: enable_mergejoin should be set to 'true' or 'false' instead of 'on'.
+[Ciri] Reason for autovacuum_max_workers: autovacuum_max_workers value should be an integer greater than 0, e.g., 1 is valid
+[Ciri] Reason for syslog_split_messages: syslog_split_messages value should be 'true' or 'false' instead of 'on'
+[Ciri] Reason for update_process_title: update_process_title should be set to 'true' or 'false' instead of 'on'.
+[Ciri] Reason for log_disconnections: log_disconnections should be set to 'true' or 'false' instead of 'off'.
+[Ciri] Reason for krb_caseins_users: krb_caseins_users should be set to 'true' or 'false' instead of 'off'.

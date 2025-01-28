@@ -1,0 +1,19 @@
+Wrong shot number:
+[12, 9, 6]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.minorcompaction.pagecache.drop', 'hbase.rootdir.perms'], 'reason': ["The property 'hbase.regionserver.minorcompaction.pagecache.drop' has the value '1.5' which is not within the accepted value {true,false}.", "The property 'hbase.rootdir.perms' has the value '1400' which is not a valid permission value. It should be in the format of 'xyz' where x, y, and z are numbers representing the permission bits."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.minorcompaction.pagecache.drop', 'hbase.rootdir.perms'], 'reason': ["The property 'hbase.regionserver.minorcompaction.pagecache.drop' has a value '1.5' which is not within the accepted value {true,false}.", "The property 'hbase.rootdir.perms' has the value '1400' which is not a valid permission value."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.perserver.requests.threshold', 'hbase.regionserver.minorcompaction.pagecache.drop', 'hbase.rootdir.perms'], 'reason': ["The property 'hbase.client.perserver.requests.threshold' has an invalid value. It should be an integer.", "The property 'hbase.regionserver.minorcompaction.pagecache.drop' has an invalid value. It should be a boolean (true/false).", "The property 'hbase.rootdir.perms' has an invalid value. It should be an octal number representing file permissions."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.minorcompaction.pagecache.drop	hbase.rootdir.perms
+[Ciri] Reason for hbase.regionserver.minorcompaction.pagecache.drop: The property 'hbase.regionserver.minorcompaction.pagecache.drop' has a value '1.5' which is not within the accepted value {true,false}.
+[Ciri] Reason for hbase.rootdir.perms: The property 'hbase.rootdir.perms' has the value '1400' which is not a valid permission value. It should be in the format of 'xyz' where x, y, and z are numbers representing the permission bits.

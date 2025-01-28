@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 1, 2]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout', 'minSessionTimeout'], 'reason': ["The property 'maxSessionTimeout' has the value '0' which should be greater than 0.", "The property 'minSessionTimeout' has the value '0' which should be greater than 0."]}
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout', 'minSessionTimeout'], 'reason': ["The property 'maxSessionTimeout' should have a value greater than 0.", "The property 'minSessionTimeout' should have a value greater than 0."]}
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout', 'minSessionTimeout'], 'reason': ["The property 'maxSessionTimeout' must have a value greater than 0.", "The property 'minSessionTimeout' must have a value greater than 0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: maxSessionTimeout	minSessionTimeout
+[Ciri] Reason for maxSessionTimeout: The property 'maxSessionTimeout' should have a value greater than 0.
+[Ciri] Reason for minSessionTimeout: The property 'minSessionTimeout' must have a value greater than 0.

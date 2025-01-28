@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.rootdir'], 'reason': ["The directory shared by region servers and into which HBase persists.  The URL should be 'fully-qualified' to include the filesystem scheme.  For example, to specify the HDFS directory '/hbase' where the HDFS instance's namenode is running at namenode.example.org on port 9000, set this value to: hdfs://namenode.example.org:9000/hbase.  By default, we write to whatever ${hbase.tmp.dir} is set too -- usually /tmp -- so change this configuration or else all data will be lost on machine restart."]}
+
+{'hasError': True, 'errParameter': ['hbase.rootdir'], 'reason': ['The value of hbase.rootdir is not a valid directory.']}
+
+{'hasError': True, 'errParameter': ['hbase.rootdir'], 'reason': ["The directory shared by region servers and into which HBase persists.  The URL should be 'fully-qualified' to include the filesystem scheme.  For example, to specify the HDFS directory '/hbase' where the HDFS instance's namenode is running at namenode.example.org on port 9000, set this value to: hdfs://namenode.example.org:9000/hbase.  By default, we write to whatever ${hbase.tmp.dir} is set too -- usually /tmp -- so change this configuration or else all data will be lost on machine restart."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.rootdir
+[Ciri] Reason for hbase.rootdir: The directory shared by region servers and into which HBase persists.  The URL should be 'fully-qualified' to include the filesystem scheme.  For example, to specify the HDFS directory '/hbase' where the HDFS instance's namenode is running at namenode.example.org on port 9000, set this value to: hdfs://namenode.example.org:9000/hbase.  By default, we write to whatever ${hbase.tmp.dir} is set too -- usually /tmp -- so change this configuration or else all data will be lost on machine restart.

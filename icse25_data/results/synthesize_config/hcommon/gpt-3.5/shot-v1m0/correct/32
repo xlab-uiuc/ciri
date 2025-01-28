@@ -1,0 +1,16 @@
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.wasb.impl', 'ipc.server.reuseaddr', 'tfile.fs.input.buffer.size', 'ha.zookeeper.session-timeout.ms', 'ha.failover-controller.graceful-fence.rpc-timeout.ms', 'hadoop.security.kms.client.encrypted.key.cache.num.refill.threads'], 'reason': ["The property 'fs.wasb.impl' has an additional usage tag that is not standard in the configuration file.", "The property 'ipc.server.reuseaddr' has a description that is too long and should be concise.", "The property 'tfile.fs.input.buffer.size' has an additional usage tag that is not standard in the configuration file.", "The property 'ha.zookeeper.session-timeout.ms' has a description that is too long and should be concise.", "The property 'ha.failover-controller.graceful-fence.rpc-timeout.ms' has a description that is too long and should be concise.", "The property 'hadoop.security.kms.client.encrypted.key.cache.num.refill.threads' has a description that is too long and should be concise."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.wasb.impl	ipc.server.reuseaddr	tfile.fs.input.buffer.size	ha.zookeeper.session-timeout.ms	ha.failover-controller.graceful-fence.rpc-timeout.ms	hadoop.security.kms.client.encrypted.key.cache.num.refill.threads
+[Ciri] Reason for fs.wasb.impl: The property 'fs.wasb.impl' has an additional usage tag that is not standard in the configuration file.
+[Ciri] Reason for ipc.server.reuseaddr: The property 'ipc.server.reuseaddr' has a description that is too long and should be concise.
+[Ciri] Reason for tfile.fs.input.buffer.size: The property 'tfile.fs.input.buffer.size' has an additional usage tag that is not standard in the configuration file.
+[Ciri] Reason for ha.zookeeper.session-timeout.ms: The property 'ha.zookeeper.session-timeout.ms' has a description that is too long and should be concise.
+[Ciri] Reason for ha.failover-controller.graceful-fence.rpc-timeout.ms: The property 'ha.failover-controller.graceful-fence.rpc-timeout.ms' has a description that is too long and should be concise.
+[Ciri] Reason for hadoop.security.kms.client.encrypted.key.cache.num.refill.threads: The property 'hadoop.security.kms.client.encrypted.key.cache.num.refill.threads' has a description that is too long and should be concise.

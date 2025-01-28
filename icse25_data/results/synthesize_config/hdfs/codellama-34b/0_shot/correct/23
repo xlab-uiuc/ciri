@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.metrics.logger.period.seconds', 'dfs.namenode.reencrypt.throttle.limit.handler.ratio', 'dfs.balancer.keytab.file', 'dfs.client.read.striped.threadpool.size', 'dfs.datanode.replica.cache.expiry.time', 'dfs.mover.keytab.file', 'dfs.storage.policy.satisfier.recheck.timeout.millis', 'dfs.disk.balancer.max.disk.errors'], 'reason': ['dfs.namenode.metrics.logger.period.seconds is less than 0', 'dfs.namenode.reencrypt.throttle.limit.handler.ratio is less than 0', 'dfs.balancer.keytab.file is not a valid file', 'dfs.client.read.striped.threadpool.size is not a valid number', 'dfs.datanode.replica.cache.expiry.time is not a valid time', 'dfs.mover.keytab.file is not a valid file', 'dfs.storage.policy.satisfier.recheck.timeout.millis is not a valid time', 'dfs.disk.balancer.max.disk.errors is not a valid number']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.namenode.metrics.logger.period.seconds	dfs.namenode.reencrypt.throttle.limit.handler.ratio	dfs.balancer.keytab.file	dfs.client.read.striped.threadpool.size	dfs.datanode.replica.cache.expiry.time	dfs.mover.keytab.file	dfs.storage.policy.satisfier.recheck.timeout.millis	dfs.disk.balancer.max.disk.errors
+[Ciri] Reason for dfs.namenode.metrics.logger.period.seconds: dfs.namenode.metrics.logger.period.seconds is less than 0
+[Ciri] Reason for dfs.namenode.reencrypt.throttle.limit.handler.ratio: dfs.namenode.reencrypt.throttle.limit.handler.ratio is less than 0
+[Ciri] Reason for dfs.balancer.keytab.file: dfs.balancer.keytab.file is not a valid file
+[Ciri] Reason for dfs.client.read.striped.threadpool.size: dfs.client.read.striped.threadpool.size is not a valid number
+[Ciri] Reason for dfs.datanode.replica.cache.expiry.time: dfs.datanode.replica.cache.expiry.time is not a valid time
+[Ciri] Reason for dfs.mover.keytab.file: dfs.mover.keytab.file is not a valid file
+[Ciri] Reason for dfs.storage.policy.satisfier.recheck.timeout.millis: dfs.storage.policy.satisfier.recheck.timeout.millis is not a valid time
+[Ciri] Reason for dfs.disk.balancer.max.disk.errors: dfs.disk.balancer.max.disk.errors is not a valid number

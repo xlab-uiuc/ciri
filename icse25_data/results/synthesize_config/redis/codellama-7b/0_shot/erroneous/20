@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['aof-use-rdb-preamble', 'appendonly', 'repl-diskless-sync-max-replicas', 'supervised'], 'reason': ["The parameter 'aof-use-rdb-preamble' is not a valid configuration parameter for redis version 7.0.0", "The parameter 'appendonly' is not a valid configuration parameter for redis version 7.0.0", "The parameter 'repl-diskless-sync-max-replicas' is not a valid configuration parameter for redis version 7.0.0", "The parameter 'supervised' is not a valid configuration parameter for redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['aof-use-rdb-preamble', 'appendonly', 'repl-diskless-sync-max-replicas', 'supervised'], 'reason': ["The parameter 'aof-use-rdb-preamble' is not recognized.", "The parameter 'appendonly' is not recognized.", "The parameter 'repl-diskless-sync-max-replicas' is not recognized.", "The parameter 'supervised' is not recognized."]}
+
+{'hasError': True, 'errParameter': ['repl-diskless-sync-max-replicas'], 'reason': ['The parameter repl-diskless-sync-max-replicas is not supported in redis version 7.0.0']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: aof-use-rdb-preamble	appendonly	repl-diskless-sync-max-replicas	supervised
+[Ciri] Reason for aof-use-rdb-preamble: The parameter 'aof-use-rdb-preamble' is not recognized.
+[Ciri] Reason for appendonly: The parameter 'appendonly' is not a valid configuration parameter for redis version 7.0.0
+[Ciri] Reason for repl-diskless-sync-max-replicas: The parameter 'repl-diskless-sync-max-replicas' is not a valid configuration parameter for redis version 7.0.0
+[Ciri] Reason for supervised: The parameter 'supervised' is not recognized.

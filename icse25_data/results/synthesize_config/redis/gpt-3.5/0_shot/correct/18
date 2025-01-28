@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'enable-debug-command', 'proto-max-bulk-len', 'aof-load-truncated', 'disable-thp'], 'reason': ['lazyfree-lazy-user-del is not a valid parameter for Redis version 7.0.0', 'enable-debug-command is not a valid parameter for Redis version 7.0.0', 'proto-max-bulk-len is not a valid parameter for Redis version 7.0.0', 'aof-load-truncated is not a valid parameter for Redis version 7.0.0', 'disable-thp is not a valid parameter for Redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'enable-debug-command', 'proto-max-bulk-len', 'aof-load-truncated', 'disable-thp'], 'reason': ["Invalid parameter 'lazyfree-lazy-user-del'", "Invalid parameter 'enable-debug-command'", "Invalid parameter 'proto-max-bulk-len'", "Invalid parameter 'aof-load-truncated'", "Invalid parameter 'disable-thp'"]}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'enable-debug-command', 'proto-max-bulk-len', 'aof-load-truncated', 'port', 'disable-thp'], 'reason': ['lazyfree-lazy-user-del is not a valid parameter for Redis 7.0.0', 'enable-debug-command is not a valid parameter for Redis 7.0.0', "proto-max-bulk-len value should be specified in bytes, not with 'mb'", 'aof-load-truncated is not a valid parameter for Redis 7.0.0', "port value should be specified without '='", 'disable-thp is not a valid parameter for Redis 7.0.0']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: lazyfree-lazy-user-del	enable-debug-command	proto-max-bulk-len	aof-load-truncated	disable-thp
+[Ciri] Reason for lazyfree-lazy-user-del: lazyfree-lazy-user-del is not a valid parameter for Redis version 7.0.0
+[Ciri] Reason for enable-debug-command: enable-debug-command is not a valid parameter for Redis version 7.0.0
+[Ciri] Reason for proto-max-bulk-len: Invalid parameter 'proto-max-bulk-len'
+[Ciri] Reason for aof-load-truncated: aof-load-truncated is not a valid parameter for Redis version 7.0.0
+[Ciri] Reason for disable-thp: disable-thp is not a valid parameter for Redis version 7.0.0

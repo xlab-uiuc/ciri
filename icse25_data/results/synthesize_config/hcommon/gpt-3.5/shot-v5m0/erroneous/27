@@ -1,0 +1,12 @@
+Correct shot number:
+[5, 7, 2, 3, 9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.wasbs.impl', 'fs.permissions.umask-mode'], 'reason': ["The property 'fs.wasbs.impl' has an additional 'usage' field which is not a standard configuration property.", "The value for the 'fs.permissions.umask-mode' property is not in the correct format. It should be in octal or symbolic representation."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.wasbs.impl	fs.permissions.umask-mode
+[Ciri] Reason for fs.wasbs.impl: The property 'fs.wasbs.impl' has an additional 'usage' field which is not a standard configuration property.
+[Ciri] Reason for fs.permissions.umask-mode: The value for the 'fs.permissions.umask-mode' property is not in the correct format. It should be in octal or symbolic representation.

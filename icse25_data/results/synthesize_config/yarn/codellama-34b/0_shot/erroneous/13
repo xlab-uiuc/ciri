@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.zk-max-znode-size.bytes', 'yarn.nodemanager.localizer.cache.cleanup.interval-ms', 'yarn.nodemanager.container-retry-minimum-interval-ms', 'yarn.timeline-service.ttl-enable', 'yarn.nodemanager.node-labels.resync-interval-ms'], 'reason': ['The value of yarn.resourcemanager.zk-max-znode-size.bytes is too small. It should be greater than 1MB.', 'The value of yarn.nodemanager.localizer.cache.cleanup.interval-ms is too small. It should be greater than 1000000.', 'The value of yarn.nodemanager.container-retry-minimum-interval-ms is too small. It should be greater than 1000.', 'The value of yarn.timeline-service.ttl-enable is false. It should be true.', 'The value of yarn.nodemanager.node-labels.resync-interval-ms is too small. It should be greater than 10000.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: yarn.resourcemanager.zk-max-znode-size.bytes	yarn.nodemanager.localizer.cache.cleanup.interval-ms	yarn.nodemanager.container-retry-minimum-interval-ms	yarn.timeline-service.ttl-enable	yarn.nodemanager.node-labels.resync-interval-ms
+[Ciri] Reason for yarn.resourcemanager.zk-max-znode-size.bytes: The value of yarn.resourcemanager.zk-max-znode-size.bytes is too small. It should be greater than 1MB.
+[Ciri] Reason for yarn.nodemanager.localizer.cache.cleanup.interval-ms: The value of yarn.nodemanager.localizer.cache.cleanup.interval-ms is too small. It should be greater than 1000000.
+[Ciri] Reason for yarn.nodemanager.container-retry-minimum-interval-ms: The value of yarn.nodemanager.container-retry-minimum-interval-ms is too small. It should be greater than 1000.
+[Ciri] Reason for yarn.timeline-service.ttl-enable: The value of yarn.timeline-service.ttl-enable is false. It should be true.
+[Ciri] Reason for yarn.nodemanager.node-labels.resync-interval-ms: The value of yarn.nodemanager.node-labels.resync-interval-ms is too small. It should be greater than 10000.

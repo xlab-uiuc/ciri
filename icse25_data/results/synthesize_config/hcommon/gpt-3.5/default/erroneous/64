@@ -1,0 +1,18 @@
+Wrong shot number:
+[3, 9, 13]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.zk.acl'], 'reason': ["The property 'hadoop.zk.acl' has the value 'world:anyone:rwcda' which is not a valid ACL format. ACL should be in the format scheme:id:perm."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.sensitive-config-keys', 'fs.s3a.retry.throttle.limit'], 'reason': ["The property 'hadoop.security.sensitive-config-keys' has the value 'secret$' which may not be a valid regular expression.", "The property 'fs.s3a.retry.throttle.limit' has the value '40' which is not within the accepted range."]}
+
+{'hasError': True, 'errParameter': ['hadoop.zk.acl'], 'reason': ["The property 'hadoop.zk.acl' has the value 'world:anyone:rwcda' which is not a valid ACL format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hadoop.zk.acl
+[Ciri] Reason for hadoop.zk.acl: The property 'hadoop.zk.acl' has the value 'world:anyone:rwcda' which is not a valid ACL format. ACL should be in the format scheme:id:perm.

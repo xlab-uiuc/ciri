@@ -1,0 +1,12 @@
+Wrong shot number:
+[12, 4, 13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.client.rpc-timeout.ms', 'fs.permissions.umask-mode'], 'reason': ["The property 'ipc.client.rpc-timeout.ms' has the value '1' which is too low for a reasonable RPC timeout.", "The property 'fs.permissions.umask-mode' has the value '999' which is out of the valid range of a permission number."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.client.rpc-timeout.ms	fs.permissions.umask-mode
+[Ciri] Reason for ipc.client.rpc-timeout.ms: The property 'ipc.client.rpc-timeout.ms' has the value '1' which is too low for a reasonable RPC timeout.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has the value '999' which is out of the valid range of a permission number.

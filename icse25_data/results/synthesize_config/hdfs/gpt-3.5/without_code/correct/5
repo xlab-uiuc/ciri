@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 16, 2]
+
+Correct shot number:
+[15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.balance.bandwidthPerSec'], 'reason': ["The property 'dfs.datanode.balance.bandwidthPerSec' has the value '1m' which uses an incorrect format. The value should be a number followed by a valid suffix (k, m, g, t, p, e) or complete size in bytes."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.balance.bandwidthPerSec'], 'reason': ["The property 'dfs.datanode.balance.bandwidthPerSec' has the value '1m' which is not in the correct format. It should be specified in bytes per second or with valid suffixes like k, m, g, t, p, e."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.balance.bandwidthPerSec'], 'reason': ["The property 'dfs.datanode.balance.bandwidthPerSec' has the value '1m' which uses an incorrect format. It should specify the size with valid suffixes like k, m, g, t, p, e, or provide complete size in bytes."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.balance.bandwidthPerSec
+[Ciri] Reason for dfs.datanode.balance.bandwidthPerSec: The property 'dfs.datanode.balance.bandwidthPerSec' has the value '1m' which uses an incorrect format. It should specify the size with valid suffixes like k, m, g, t, p, e, or provide complete size in bytes.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 4, 11]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' has the value '10s' which is not a valid integer value."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' has the value '10s' which is not a valid integer value."]}
+
+{'hasError': True, 'errParameter': ['dfs.replication.max', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The property 'dfs.replication.max' has a value of '1024' which seems unusually high for block replication.", "The property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' has the value '10s' which is not in milliseconds format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.gc.time.monitor.sleep.interval.ms
+[Ciri] Reason for dfs.namenode.gc.time.monitor.sleep.interval.ms: The property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' has the value '10s' which is not a valid integer value.

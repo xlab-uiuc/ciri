@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hfile.block.cache.size', 'hbase.rs.cacheblocksonwrite', 'hbase.coprocessor.user.enabled', 'dfs.domain.socket.path', 'hbase.security.visibility.mutations.checkauths', 'hbase.mob.compaction.chore.period'], 'reason': ['The value of hbase.regionserver.info.port is not a number.', 'The value of hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not a number.', 'The value of hfile.block.cache.size is not a number.', 'The value of hbase.rs.cacheblocksonwrite is not a boolean.', 'The value of hbase.coprocessor.user.enabled is not a boolean.', 'The value of dfs.domain.socket.path is not a valid path.', 'The value of hbase.security.visibility.mutations.checkauths is not a boolean.', 'The value of hbase.mob.compaction.chore.period is not a number.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.regionserver.info.port	hbase.hregion.percolumnfamilyflush.size.lower.bound.min	hfile.block.cache.size	hbase.rs.cacheblocksonwrite	hbase.coprocessor.user.enabled	dfs.domain.socket.path	hbase.security.visibility.mutations.checkauths	hbase.mob.compaction.chore.period
+[Ciri] Reason for hbase.regionserver.info.port: The value of hbase.regionserver.info.port is not a number.
+[Ciri] Reason for hbase.hregion.percolumnfamilyflush.size.lower.bound.min: The value of hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not a number.
+[Ciri] Reason for hfile.block.cache.size: The value of hfile.block.cache.size is not a number.
+[Ciri] Reason for hbase.rs.cacheblocksonwrite: The value of hbase.rs.cacheblocksonwrite is not a boolean.
+[Ciri] Reason for hbase.coprocessor.user.enabled: The value of hbase.coprocessor.user.enabled is not a boolean.
+[Ciri] Reason for dfs.domain.socket.path: The value of dfs.domain.socket.path is not a valid path.
+[Ciri] Reason for hbase.security.visibility.mutations.checkauths: The value of hbase.security.visibility.mutations.checkauths is not a boolean.
+[Ciri] Reason for hbase.mob.compaction.chore.period: The value of hbase.mob.compaction.chore.period is not a number.

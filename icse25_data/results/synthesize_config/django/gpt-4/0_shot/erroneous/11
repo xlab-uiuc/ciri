@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'ALLOWED_HOSTS', 'CSRF_COOKIE_AGE'], 'reason': ['NUMBER_GROUPING should typically be a positive integer. A value of -100 is likely incorrect.', 'ALLOWED_HOSTS being empty is a security risk in production. It should include the domain names/IP addresses that the Django site can serve.', "CSRF_COOKIE_AGE is set to a very high value, which is not necessarily an error, but it's unusually long for a CSRF token's lifespan."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: NUMBER_GROUPING	ALLOWED_HOSTS	CSRF_COOKIE_AGE
+[Ciri] Reason for NUMBER_GROUPING: NUMBER_GROUPING should typically be a positive integer. A value of -100 is likely incorrect.
+[Ciri] Reason for ALLOWED_HOSTS: ALLOWED_HOSTS being empty is a security risk in production. It should include the domain names/IP addresses that the Django site can serve.
+[Ciri] Reason for CSRF_COOKIE_AGE: CSRF_COOKIE_AGE is set to a very high value, which is not necessarily an error, but it's unusually long for a CSRF token's lifespan.

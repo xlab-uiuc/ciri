@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['MIGRATION_MODULES', 'AUTH_PASSWORD_VALIDATORS', 'YEAR_MONTH_FORMAT', 'IGNORABLE_404_URLS', 'LANGUAGE_COOKIE_SECURE', 'LANGUAGE_CODE', 'SHORT_DATE_FORMAT'], 'reason': ['MIGRATION_MODULES should be a dictionary, not an empty dictionary literal.', 'AUTH_PASSWORD_VALIDATORS should be a list containing password validators, not an empty list literal.', "YEAR_MONTH_FORMAT should be a string in the format 'N Y' (e.g. 'January 2023'), not 'F Y'.", 'IGNORABLE_404_URLS should be a list of URL patterns to ignore 404 errors for, not an empty list literal.', 'LANGUAGE_COOKIE_SECURE should be a boolean value (True or False), not a string.', "LANGUAGE_CODE should be a string representing a valid language code (e.g. 'en-us'), not a string literal.", "SHORT_DATE_FORMAT should be a string in the format 'm/d/Y' (e.g. '01/31/2023'), not a string literal."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: MIGRATION_MODULES	AUTH_PASSWORD_VALIDATORS	YEAR_MONTH_FORMAT	IGNORABLE_404_URLS	LANGUAGE_COOKIE_SECURE	LANGUAGE_CODE	SHORT_DATE_FORMAT
+[Ciri] Reason for MIGRATION_MODULES: MIGRATION_MODULES should be a dictionary, not an empty dictionary literal.
+[Ciri] Reason for AUTH_PASSWORD_VALIDATORS: AUTH_PASSWORD_VALIDATORS should be a list containing password validators, not an empty list literal.
+[Ciri] Reason for YEAR_MONTH_FORMAT: YEAR_MONTH_FORMAT should be a string in the format 'N Y' (e.g. 'January 2023'), not 'F Y'.
+[Ciri] Reason for IGNORABLE_404_URLS: IGNORABLE_404_URLS should be a list of URL patterns to ignore 404 errors for, not an empty list literal.
+[Ciri] Reason for LANGUAGE_COOKIE_SECURE: LANGUAGE_COOKIE_SECURE should be a boolean value (True or False), not a string.
+[Ciri] Reason for LANGUAGE_CODE: LANGUAGE_CODE should be a string representing a valid language code (e.g. 'en-us'), not a string literal.
+[Ciri] Reason for SHORT_DATE_FORMAT: SHORT_DATE_FORMAT should be a string in the format 'm/d/Y' (e.g. '01/31/2023'), not a string literal.

@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.serverRequireSasl should be set to false', 'quorum.auth.server.saslLoginContext should be set to QuorumServer']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl'], 'reason': ['The property quorum.auth.serverRequireSasl is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.enableSasl must be set to true if quorum.auth.serverRequireSasl is set to true', 'quorum.auth.serverRequireSasl must be set to true if quorum.auth.enableSasl is set to true', 'quorum.auth.server.saslLoginContext must be set if quorum.auth.enableSasl is set to true']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.serverRequireSasl must be true if quorum.auth.enableSasl is true', 'quorum.auth.serverRequireSasl must be true if quorum.auth.enableSasl is true', 'quorum.auth.server.saslLoginContext must be set if quorum.auth.enableSasl is true']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.server.saslLoginContext', 'quorum.auth.serverRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.serverRequireSasl should be true', 'quorum.auth.server.saslLoginContext should be QuorumServer', 'quorum.auth.serverRequireSasl should be true', 'quorum.auth.server.saslLoginContext should be QuorumServer']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.serverRequireSasl is not a valid property', 'quorum.auth.server.saslLoginContext is not a valid property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl'], 'reason': ['quorum.auth.serverRequireSasl should be set to false']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl'], 'reason': ['quorum.auth.serverRequireSasl is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl'], 'reason': ['quorum.auth.serverRequireSasl must be set to true if quorum.auth.enableSasl is set to true.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: quorum.auth.serverRequireSasl
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl must be set to true if quorum.auth.enableSasl is set to true.

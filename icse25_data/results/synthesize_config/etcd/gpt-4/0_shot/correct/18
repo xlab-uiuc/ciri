@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'client-cert-auth', 'strict-reconfig-check', 'auto-tls', 'proxy-dial-timeout'], 'reason': ["The 'quota-backend-bytes' value should be greater than 0 if you want to apply a quota on the storage size.", "The 'client-cert-auth' option is not a valid etcd configuration parameter. The correct parameter for enabling client certificate authentication is 'client-cert-auth' without the hyphen.", "The 'strict-reconfig-check' parameter is correctly named, but it's important to ensure that setting it to false is intentional, as it can impact the safety of cluster reconfiguration.", "The 'auto-tls' parameter is correctly named, but it's important to ensure that setting it to false is intentional, as it disables automatic TLS certificate generation.", "The 'proxy-dial-timeout' parameter is not applicable in etcd version 3.5.0 as the proxy feature was deprecated and removed in earlier versions."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: quota-backend-bytes	client-cert-auth	strict-reconfig-check	auto-tls	proxy-dial-timeout
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' value should be greater than 0 if you want to apply a quota on the storage size.
+[Ciri] Reason for client-cert-auth: The 'client-cert-auth' option is not a valid etcd configuration parameter. The correct parameter for enabling client certificate authentication is 'client-cert-auth' without the hyphen.
+[Ciri] Reason for strict-reconfig-check: The 'strict-reconfig-check' parameter is correctly named, but it's important to ensure that setting it to false is intentional, as it can impact the safety of cluster reconfiguration.
+[Ciri] Reason for auto-tls: The 'auto-tls' parameter is correctly named, but it's important to ensure that setting it to false is intentional, as it disables automatic TLS certificate generation.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' parameter is not applicable in etcd version 3.5.0 as the proxy feature was deprecated and removed in earlier versions.

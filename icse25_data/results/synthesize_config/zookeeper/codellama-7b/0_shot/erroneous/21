@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'syncLimit', 'secureClientPortAddress', 'peerType', 'maxSessionTimeout'], 'reason': ['dataLogDir is not a valid directory', 'syncLimit must be a positive integer', 'secureClientPortAddress is not a valid port address', 'peerType must be either participant or observer', 'maxSessionTimeout must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'syncLimit', 'secureClientPortAddress', 'peerType', 'maxSessionTimeout'], 'reason': ['dataLogDir: /valid/dir1 is not a valid directory', 'syncLimit: 10 is not a valid value for syncLimit', 'secureClientPortAddress: 0.0.0.0:3000 is not a valid value for secureClientPortAddress', 'peerType: participant is not a valid value for peerType', 'maxSessionTimeout: -1 is not a valid value for maxSessionTimeout']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'syncLimit', 'secureClientPortAddress', 'peerType', 'maxSessionTimeout'], 'reason': ['dataLogDir: The directory does not exist.', 'syncLimit: The value must be greater than or equal to 0.', 'secureClientPortAddress: The value must be in the format of host:port.', 'peerType: The value must be one of the following: participant, observer, leader.', 'maxSessionTimeout: The value must be greater than or equal to -1.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: dataLogDir	syncLimit	secureClientPortAddress	peerType	maxSessionTimeout
+[Ciri] Reason for dataLogDir: dataLogDir: /valid/dir1 is not a valid directory
+[Ciri] Reason for syncLimit: syncLimit must be a positive integer
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress: The value must be in the format of host:port.
+[Ciri] Reason for peerType: peerType: The value must be one of the following: participant, observer, leader.
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout: -1 is not a valid value for maxSessionTimeout

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins'], 'reason': ['The value of hbase.master.logcleaner.plugins is not a valid comma-separated list of BaseLogCleanerDelegate classes.']}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins'], 'reason': ['The value of hbase.master.logcleaner.plugins is not a valid comma-separated list of BaseLogCleanerDelegate classes.']}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins'], 'reason': ["The value of hbase.master.logcleaner.plugins is not a valid comma-separated list of BaseLogCleanerDelegate invoked by the LogsCleaner service. These WAL cleaners are called in order, so put the cleaner that prunes the most files in front. To implement your own BaseLogCleanerDelegate, just put it in HBase's classpath and add the fully qualified class name here. Always add the above default log cleaners in the list."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.master.logcleaner.plugins
+[Ciri] Reason for hbase.master.logcleaner.plugins: The value of hbase.master.logcleaner.plugins is not a valid comma-separated list of BaseLogCleanerDelegate classes.

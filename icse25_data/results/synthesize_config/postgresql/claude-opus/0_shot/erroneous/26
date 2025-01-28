@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_page', 'enable_async_append', 'enable_hashagg', 'geqo_threshold', 'exit_on_error', 'jit_above_cost'], 'reason': ['max_pred_locks_per_page is not a valid parameter in PostgreSQL 13.0. The correct parameter is max_pred_locks_per_transaction.', 'enable_async_append is not a valid parameter in PostgreSQL 13.0. The correct parameter is enable_async_append_toast.', 'enable_hashagg is not a valid parameter in PostgreSQL 13.0. It has been removed in this version.', 'geqo_threshold is not a valid parameter in PostgreSQL 13.0. The correct parameter is geqo_threshold.', 'exit_on_error is not a recommended parameter to set in PostgreSQL configuration file. It is used as a command-line option for psql.', 'jit_above_cost is not a valid parameter in PostgreSQL 13.0. The correct parameter is jit_above_cost.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: max_pred_locks_per_page	enable_async_append	enable_hashagg	geqo_threshold	exit_on_error	jit_above_cost
+[Ciri] Reason for max_pred_locks_per_page: max_pred_locks_per_page is not a valid parameter in PostgreSQL 13.0. The correct parameter is max_pred_locks_per_transaction.
+[Ciri] Reason for enable_async_append: enable_async_append is not a valid parameter in PostgreSQL 13.0. The correct parameter is enable_async_append_toast.
+[Ciri] Reason for enable_hashagg: enable_hashagg is not a valid parameter in PostgreSQL 13.0. It has been removed in this version.
+[Ciri] Reason for geqo_threshold: geqo_threshold is not a valid parameter in PostgreSQL 13.0. The correct parameter is geqo_threshold.
+[Ciri] Reason for exit_on_error: exit_on_error is not a recommended parameter to set in PostgreSQL configuration file. It is used as a command-line option for psql.
+[Ciri] Reason for jit_above_cost: jit_above_cost is not a valid parameter in PostgreSQL 13.0. The correct parameter is jit_above_cost.

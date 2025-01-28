@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'heartbeat-interval', 'proxy-write-timeout'], 'reason': ["The 'proxy-refresh-interval' parameter is not a valid configuration option in etcd v3.5.0. It was removed in v3.5.0 in favor of 'auto-sync-interval'.", "The 'heartbeat-interval' parameter is not a valid configuration option in etcd v3.5.0. It was removed in v3.5.0 in favor of 'heartbeat-interval' under the 'embed' section.", "The 'proxy-write-timeout' parameter is not a valid configuration option in etcd v3.5.0. It was removed in v3.5.0 in favor of 'proxy-write-timeout' under the 'embed' section."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-refresh-interval	heartbeat-interval	proxy-write-timeout
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter is not a valid configuration option in etcd v3.5.0. It was removed in v3.5.0 in favor of 'auto-sync-interval'.
+[Ciri] Reason for heartbeat-interval: The 'heartbeat-interval' parameter is not a valid configuration option in etcd v3.5.0. It was removed in v3.5.0 in favor of 'heartbeat-interval' under the 'embed' section.
+[Ciri] Reason for proxy-write-timeout: The 'proxy-write-timeout' parameter is not a valid configuration option in etcd v3.5.0. It was removed in v3.5.0 in favor of 'proxy-write-timeout' under the 'embed' section.

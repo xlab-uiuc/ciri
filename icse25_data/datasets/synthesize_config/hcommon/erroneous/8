@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.azure.user.agent.prefix</name>
+  <value>unknown</value>
+    <description>
+      WASB passes User-Agent header to the Azure back-end. The default value
+      contains WASB version, Java Runtime version, Azure Client library version,
+      and the value of the configuration option fs.azure.user.agent.prefix.
+    </description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.size</name>
+  <value>128N</value>
+  <description>How big (in bytes) to split upload or copy operations up into.
+    A suffix from the set {K,M,G,T,P} may be used to scale the numeric value.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.list.version</name>
+  <value>2</value>
+  <description>
+    Select which version of the S3 SDK's List Objects API to use.  Currently
+    support 2 (default) and 1 (older API).
+  </description>
+</property>
+
+<property>
+  <name>ipc.client.tcpnodelay</name>
+  <value>false</value>
+  <description>Use TCP_NODELAY flag to bypass Nagle's algorithm transmission delays.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].backoff.enable</name>
+  <value>false</value>
+  <description>Whether or not to enable client backoff when a queue is full.
+  </description>
+</property>
+
+<property>
+  <name>file.blocksize</name>
+  <value>134217728</value>
+  <description>Block size</description>
+</property>
+
+<property>
+  <name>hadoop.security.random.device.file.path</name>
+  <value>/dev/urandom</value>
+  <description>
+    OS security random device file path.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.zk.connection.timeout.ms</name>
+  <value>7500</value>
+    <description>
+      Zookeeper connection timeout in milliseconds
+    </description>
+</property>
+
+</configuration>

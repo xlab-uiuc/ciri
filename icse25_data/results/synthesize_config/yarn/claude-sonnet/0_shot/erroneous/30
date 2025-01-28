@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory.enabled', 'yarn.nodemanager.linux-container-executor.cgroups.mount', 'yarn.timeline-service.enabled', 'yarn.timeline-service.hostname'], 'reason': ["The property 'yarn.nodemanager.resource.memory.enabled' is deprecated in Hadoop 3.3.0 and should be removed.", "The property 'yarn.nodemanager.linux-container-executor.cgroups.mount' is deprecated in Hadoop 3.3.0 and should be removed.", "The property 'yarn.timeline-service.enabled' is deprecated in Hadoop 3.3.0 and should be removed. The Timeline Service is now a separate component and is enabled by default.", "The property 'yarn.timeline-service.hostname' is deprecated in Hadoop 3.3.0 and should be removed. The Timeline Service is now a separate component and has its own configuration."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: yarn.nodemanager.resource.memory.enabled	yarn.nodemanager.linux-container-executor.cgroups.mount	yarn.timeline-service.enabled	yarn.timeline-service.hostname
+[Ciri] Reason for yarn.nodemanager.resource.memory.enabled: The property 'yarn.nodemanager.resource.memory.enabled' is deprecated in Hadoop 3.3.0 and should be removed.
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.mount: The property 'yarn.nodemanager.linux-container-executor.cgroups.mount' is deprecated in Hadoop 3.3.0 and should be removed.
+[Ciri] Reason for yarn.timeline-service.enabled: The property 'yarn.timeline-service.enabled' is deprecated in Hadoop 3.3.0 and should be removed. The Timeline Service is now a separate component and is enabled by default.
+[Ciri] Reason for yarn.timeline-service.hostname: The property 'yarn.timeline-service.hostname' is deprecated in Hadoop 3.3.0 and should be removed. The Timeline Service is now a separate component and has its own configuration.

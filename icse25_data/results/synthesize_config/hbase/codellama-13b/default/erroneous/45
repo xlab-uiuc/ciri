@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 12, 8]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.dataDir'], 'reason': ["The property 'hbase.zookeeper.property.dataDir' has the value '/valid/file1' which is not a valid directory."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port.auto', 'hbase.zookeeper.property.dataDir'], 'reason': ["The property 'hbase.regionserver.info.port.auto' has the value 'true' which is not within the accepted value {false}.", "The property 'hbase.zookeeper.property.dataDir' has the value '/valid/file1' which is not within the accepted value {/valid/file2}."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port.auto', 'hbase.zookeeper.property.dataDir'], 'reason': ["The property 'hbase.regionserver.info.port.auto' has the value 'true' which is not within the accepted value {false}.", "The property 'hbase.zookeeper.property.dataDir' has the value '/valid/file1' which is not within the accepted value {/valid/file2}."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.info.port.auto	hbase.zookeeper.property.dataDir
+[Ciri] Reason for hbase.regionserver.info.port.auto: The property 'hbase.regionserver.info.port.auto' has the value 'true' which is not within the accepted value {false}.
+[Ciri] Reason for hbase.zookeeper.property.dataDir: The property 'hbase.zookeeper.property.dataDir' has the value '/valid/file1' which is not within the accepted value {/valid/file2}.

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'syncLimit', 'autopurge.snapRetainCount', 'clientPort', 'electionAlg', 'maxClientCnxns'], 'reason': ['minSessionTimeout is too small. It should be at least 10000000000', 'syncLimit is too small. It should be at least 5', 'autopurge.snapRetainCount is too small. It should be at least 3', 'clientPort is too small. It should be at least 2181', 'electionAlg is not a valid value. It should be 3 or 4', 'maxClientCnxns is too small. It should be at least 100']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'localSessionsUpgradingEnabled', 'syncLimit', 'autopurge.snapRetainCount', 'clientPort', 'electionAlg', 'standaloneEnabled', 'maxClientCnxns'], 'reason': ['minSessionTimeout should be a valid integer between 20000 and 2147483647', 'localSessionsUpgradingEnabled should be a boolean', 'syncLimit should be a valid integer between 1 and 10', 'autopurge.snapRetainCount should be a valid integer between 1 and 10', 'clientPort should be a valid integer between 1 and 65535', 'electionAlg should be a valid integer between 1 and 3', 'standaloneEnabled should be a boolean', 'maxClientCnxns should be a valid integer between 1 and 65535']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'localSessionsUpgradingEnabled', 'syncLimit', 'autopurge.snapRetainCount', 'clientPort', 'electionAlg', 'standaloneEnabled', 'maxClientCnxns'], 'reason': ['minSessionTimeout should be a positive integer', 'localSessionsUpgradingEnabled should be a boolean', 'syncLimit should be a positive integer', 'autopurge.snapRetainCount should be a positive integer', 'clientPort should be a positive integer', 'electionAlg should be a positive integer', 'standaloneEnabled should be a boolean', 'maxClientCnxns should be a positive integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: minSessionTimeout	localSessionsUpgradingEnabled	syncLimit	autopurge.snapRetainCount	clientPort	electionAlg	standaloneEnabled	maxClientCnxns
+[Ciri] Reason for minSessionTimeout: minSessionTimeout should be a positive integer
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled should be a boolean
+[Ciri] Reason for syncLimit: syncLimit should be a positive integer
+[Ciri] Reason for autopurge.snapRetainCount: autopurge.snapRetainCount should be a valid integer between 1 and 10
+[Ciri] Reason for clientPort: clientPort should be a positive integer
+[Ciri] Reason for electionAlg: electionAlg should be a positive integer
+[Ciri] Reason for standaloneEnabled: standaloneEnabled should be a boolean
+[Ciri] Reason for maxClientCnxns: maxClientCnxns should be a positive integer

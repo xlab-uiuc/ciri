@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.http-bind-host', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["The value '0.0.0' is invalid for the property 'dfs.journalnode.http-bind-host'. It should be a valid IP address like '0.0.0.0'.", "The value '/valid/file1' is not a valid path for the property 'dfs.provided.aliasmap.leveldb.path'. It should be an absolute path to a directory, not a file."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.journalnode.http-bind-host	dfs.provided.aliasmap.leveldb.path
+[Ciri] Reason for dfs.journalnode.http-bind-host: The value '0.0.0' is invalid for the property 'dfs.journalnode.http-bind-host'. It should be a valid IP address like '0.0.0.0'.
+[Ciri] Reason for dfs.provided.aliasmap.leveldb.path: The value '/valid/file1' is not a valid path for the property 'dfs.provided.aliasmap.leveldb.path'. It should be an absolute path to a directory, not a file.

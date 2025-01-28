@@ -1,0 +1,19 @@
+Wrong shot number:
+[1, 3, 6]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'secureClientPortAddress'], 'reason': ["The property 'minSessionTimeout' has the value 'true' which is not of the correct type Integer.", "The property 'secureClientPortAddress' is not a valid property for ZooKeeper configuration in version 3.7.0."]}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'secureClientPortAddress'], 'reason': ["The property 'minSessionTimeout' has the value 'true' which is not of the correct type Integer.", "The property 'secureClientPortAddress' is not a valid property for ZooKeeper version 3.7.0."]}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'secureClientPortAddress'], 'reason': ["The property 'minSessionTimeout' has the value 'true' which is not of the correct type Integer.", "The property 'secureClientPortAddress' is not a valid property for ZooKeeper version 3.7.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: minSessionTimeout	secureClientPortAddress
+[Ciri] Reason for minSessionTimeout: The property 'minSessionTimeout' has the value 'true' which is not of the correct type Integer.
+[Ciri] Reason for secureClientPortAddress: The property 'secureClientPortAddress' is not a valid property for ZooKeeper version 3.7.0.

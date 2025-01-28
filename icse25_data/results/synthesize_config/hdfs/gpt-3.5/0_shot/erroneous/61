@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.considerLoad.factor', 'dfs.ha.tail-edits.period', 'dfs.datanode.use.datanode.hostname', 'dfs.datanode.peer.metrics.min.outlier.detection.samples', 'dfs.namenode.path.based.cache.retry.interval.ms', 'dfs.storage.policy.enabled', 'dfs.client.retry.policy.spec', 'dfs.provided.aliasmap.inmemory.batch-size'], 'reason': ["The property 'dfs.namenode.replication.considerLoad.factor' is missing a required attribute.", "The property 'dfs.ha.tail-edits.period' is missing a required attribute.", "The property 'dfs.datanode.use.datanode.hostname' is missing a required attribute.", "The property 'dfs.datanode.peer.metrics.min.outlier.detection.samples' is missing a required attribute.", "The property 'dfs.namenode.path.based.cache.retry.interval.ms' is missing a required attribute.", "The property 'dfs.storage.policy.enabled' is missing a required attribute.", "The property 'dfs.client.retry.policy.spec' is missing a required attribute.", "The property 'dfs.provided.aliasmap.inmemory.batch-size' is missing a required attribute."]}
+
+{'hasError': True, 'errParameter': ['dfs.ha.tail-edits.period', 'dfs.datanode.peer.metrics.min.outlier.detection.samples'], 'reason': ["The property 'dfs.ha.tail-edits.period' has a value '60s' which may not be a valid format.", "The property 'dfs.datanode.peer.metrics.min.outlier.detection.samples' has a value '2000' which may not be appropriate for outlier detection."]}
+
+{'hasError': True, 'errParameter': ['dfs.ha.tail-edits.period', 'dfs.datanode.peer.metrics.min.outlier.detection.samples'], 'reason': ["Property 'dfs.ha.tail-edits.period' has an incorrect value format. It should be in milliseconds without units.", "Property 'dfs.datanode.peer.metrics.min.outlier.detection.samples' has a missing description."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.ha.tail-edits.period	dfs.datanode.peer.metrics.min.outlier.detection.samples
+[Ciri] Reason for dfs.ha.tail-edits.period: The property 'dfs.ha.tail-edits.period' has a value '60s' which may not be a valid format.
+[Ciri] Reason for dfs.datanode.peer.metrics.min.outlier.detection.samples: Property 'dfs.datanode.peer.metrics.min.outlier.detection.samples' has a missing description.

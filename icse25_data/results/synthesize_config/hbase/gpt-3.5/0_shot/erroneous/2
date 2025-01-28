@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.offpeak.end.hour', 'hbase.mob.cache.evict.remain.ratio'], 'reason': ["Value should be a positive integer for property 'hbase.master.logcleaner.ttl'.", "Value should be an integer between 0 and 23 for property 'hbase.offpeak.end.hour'.", "Value should be a float between 0.0 and 1.0 for property 'hbase.mob.cache.evict.remain.ratio'."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.offpeak.end.hour', 'hbase.mob.cache.evict.remain.ratio'], 'reason': ["Value should be a positive integer for property 'hbase.master.logcleaner.ttl'.", "Value should be an integer between 0 and 23 (inclusive) for property 'hbase.offpeak.end.hour'.", "Value should be a float between 0.0 and 1.0 for property 'hbase.mob.cache.evict.remain.ratio'."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.offpeak.end.hour', 'hbase.mob.cache.evict.remain.ratio'], 'reason': ["Value for 'hbase.master.logcleaner.ttl' should be a positive integer representing time in milliseconds.", "Value for 'hbase.offpeak.end.hour' should be an integer between 0 and 23, or -1 to disable off-peak hours.", "Value for 'hbase.mob.cache.evict.remain.ratio' should be a float between 0.0 and 1.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.master.logcleaner.ttl	hbase.offpeak.end.hour	hbase.mob.cache.evict.remain.ratio
+[Ciri] Reason for hbase.master.logcleaner.ttl: Value should be a positive integer for property 'hbase.master.logcleaner.ttl'.
+[Ciri] Reason for hbase.offpeak.end.hour: Value should be an integer between 0 and 23 for property 'hbase.offpeak.end.hour'.
+[Ciri] Reason for hbase.mob.cache.evict.remain.ratio: Value for 'hbase.mob.cache.evict.remain.ratio' should be a float between 0.0 and 1.0.

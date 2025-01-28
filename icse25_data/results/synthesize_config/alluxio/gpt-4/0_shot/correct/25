@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.fuse.logging.threshold', 'alluxio.user.streaming.writer.close.timeout', 'alluxio.web.refresh.interval', 'alluxio.underfs.s3.intermediate.upload.clean.age'], 'reason': ["The 'fs.cos.socket.timeout' parameter is not a recognized Alluxio configuration property.", "The 'alluxio.fuse.logging.threshold' should be specified in milliseconds, not seconds.", "The 'alluxio.user.streaming.writer.close.timeout' should be specified in milliseconds, not minutes.", "The 'alluxio.web.refresh.interval' should be specified in milliseconds, not seconds.", "The 'alluxio.underfs.s3.intermediate.upload.clean.age' should be specified in milliseconds, not days."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: fs.cos.socket.timeout	alluxio.fuse.logging.threshold	alluxio.user.streaming.writer.close.timeout	alluxio.web.refresh.interval	alluxio.underfs.s3.intermediate.upload.clean.age
+[Ciri] Reason for fs.cos.socket.timeout: The 'fs.cos.socket.timeout' parameter is not a recognized Alluxio configuration property.
+[Ciri] Reason for alluxio.fuse.logging.threshold: The 'alluxio.fuse.logging.threshold' should be specified in milliseconds, not seconds.
+[Ciri] Reason for alluxio.user.streaming.writer.close.timeout: The 'alluxio.user.streaming.writer.close.timeout' should be specified in milliseconds, not minutes.
+[Ciri] Reason for alluxio.web.refresh.interval: The 'alluxio.web.refresh.interval' should be specified in milliseconds, not seconds.
+[Ciri] Reason for alluxio.underfs.s3.intermediate.upload.clean.age: The 'alluxio.underfs.s3.intermediate.upload.clean.age' should be specified in milliseconds, not days.

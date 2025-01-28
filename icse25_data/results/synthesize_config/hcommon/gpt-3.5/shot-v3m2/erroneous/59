@@ -1,0 +1,15 @@
+Wrong shot number:
+[7, 9]
+
+Correct shot number:
+[9, 8, 11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.file.buffer.size', 'io.bytes.per.checksum'], 'reason': ["The property 'io.file.buffer.size' should be a multiple of the hardware page size (4096 on Intel x86).", "The property 'io.bytes.per.checksum' must not be larger than 'io.file.buffer.size'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.file.buffer.size	io.bytes.per.checksum
+[Ciri] Reason for io.file.buffer.size: The property 'io.file.buffer.size' should be a multiple of the hardware page size (4096 on Intel x86).
+[Ciri] Reason for io.bytes.per.checksum: The property 'io.bytes.per.checksum' must not be larger than 'io.file.buffer.size'.

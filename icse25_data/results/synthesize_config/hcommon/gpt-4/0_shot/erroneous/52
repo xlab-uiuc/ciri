@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.http.filter.initializers', 'ipc.[port_number].identity-provider.impl', 'fs.permissions.umask-mode'], 'reason': ["The property 'hadoop.http.filter.initializers' is correctly defined, but the usage example provided is not appropriate for a configuration file. Configuration files should not contain code or assertions.", "The property 'ipc.[port_number].identity-provider.impl' uses a placeholder '[port_number]' which is not a valid property name format for a static configuration file. Property names should be explicit and not contain placeholders.", 'The \'fs.permissions.umask-mode\' value \'008\' is valid, but the usage example \'config.set("fs.permissions.umask-mode", "u=rwx,g=,o=");\' mixes octal and symbolic notation in a way that could be confusing. The description suggests \'008\' (octal) or \'u=rwx,g=rwx,o=\' (symbolic) as examples, but the usage mixes these notations.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.http.filter.initializers	ipc.[port_number].identity-provider.impl	fs.permissions.umask-mode
+[Ciri] Reason for hadoop.http.filter.initializers: The property 'hadoop.http.filter.initializers' is correctly defined, but the usage example provided is not appropriate for a configuration file. Configuration files should not contain code or assertions.
+[Ciri] Reason for ipc.[port_number].identity-provider.impl: The property 'ipc.[port_number].identity-provider.impl' uses a placeholder '[port_number]' which is not a valid property name format for a static configuration file. Property names should be explicit and not contain placeholders.
+[Ciri] Reason for fs.permissions.umask-mode: The 'fs.permissions.umask-mode' value '008' is valid, but the usage example 'config.set("fs.permissions.umask-mode", "u=rwx,g=,o=");' mixes octal and symbolic notation in a way that could be confusing. The description suggests '008' (octal) or 'u=rwx,g=rwx,o=' (symbolic) as examples, but the usage mixes these notations.

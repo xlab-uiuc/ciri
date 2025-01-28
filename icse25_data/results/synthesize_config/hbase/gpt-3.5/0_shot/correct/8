@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.start.hour', 'hbase.hstore.compaction.throughput.higher.bound', 'hbase.column.max.version', 'hbase.mob.cache.evict.remain.ratio'], 'reason': ["The parameter 'hbase.offpeak.start.hour' should be an integer between 0 and 23, or -1 to disable off-peak hours.", "The parameter 'hbase.hstore.compaction.throughput.higher.bound' should have a value without units (e.g., 104857600 instead of 104857600 bytes).", "The parameter 'hbase.column.max.version' should not have a 'usage' field. It should only have 'name', 'value', and 'description'.", "The value for 'hbase.mob.cache.evict.remain.ratio' should be a float without 'f' (e.g., 0.5 instead of 0.5f)."]}
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.start.hour', 'hbase.hstore.compaction.throughput.higher.bound', 'hbase.column.max.version', 'hbase.mob.cache.evict.remain.ratio'], 'reason': ["The property 'hbase.offpeak.start.hour' has a value of -1 which is outside the valid range of 0 to 23.", "The property 'hbase.hstore.compaction.throughput.higher.bound' has a value of 104857600 which should not have spaces in the value.", "The property 'hbase.column.max.version' has a usage tag which is not a standard property attribute.", "The property 'hbase.mob.cache.evict.remain.ratio' has a value of 0.5f which should not have 'f' at the end."]}
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.start.hour', 'hbase.hstore.compaction.throughput.higher.bound', 'hbase.column.max.version', 'hbase.mob.cache.evict.remain.ratio'], 'reason': ["The parameter 'hbase.offpeak.start.hour' should be an integer between 0 and 23, or -1 to disable off-peak.", "The parameter 'hbase.hstore.compaction.throughput.higher.bound' should have a numeric value.", "The parameter 'hbase.column.max.version' should not have a 'usage' field. It should only have 'description'.", "The parameter 'hbase.mob.cache.evict.remain.ratio' should have a numeric value without 'f' suffix."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hbase.offpeak.start.hour	hbase.hstore.compaction.throughput.higher.bound	hbase.column.max.version	hbase.mob.cache.evict.remain.ratio
+[Ciri] Reason for hbase.offpeak.start.hour: The parameter 'hbase.offpeak.start.hour' should be an integer between 0 and 23, or -1 to disable off-peak.
+[Ciri] Reason for hbase.hstore.compaction.throughput.higher.bound: The parameter 'hbase.hstore.compaction.throughput.higher.bound' should have a value without units (e.g., 104857600 instead of 104857600 bytes).
+[Ciri] Reason for hbase.column.max.version: The parameter 'hbase.column.max.version' should not have a 'usage' field. It should only have 'name', 'value', and 'description'.
+[Ciri] Reason for hbase.mob.cache.evict.remain.ratio: The property 'hbase.mob.cache.evict.remain.ratio' has a value of 0.5f which should not have 'f' at the end.

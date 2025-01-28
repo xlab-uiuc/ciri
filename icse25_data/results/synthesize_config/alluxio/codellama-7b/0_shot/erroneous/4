@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.flush.timeout', 'alluxio.master.daily.backup.time'], 'reason': ['The value of alluxio.user.streaming.writer.flush.timeout is not a valid duration. The value should be in the format of 1s, 1m, 1h, 1d, 1M, 1y, where s, m, h, d, M, y represent seconds, minutes, hours, days, months, and years, respectively. The value of alluxio.master.daily.backup.time is not a valid time. The value should be in the format of hh:mm, where hh represents hours and mm represents minutes.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.flush.timeout', 'alluxio.master.daily.backup.time'], 'reason': ['alluxio.user.streaming.writer.flush.timeout should be a duration, but it is 60min', 'alluxio.master.daily.backup.time should be a time, but it is 05:00']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.flush.timeout'], 'reason': ['alluxio.user.streaming.writer.flush.timeout should be in the format of [0-9]+[smhd]']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.streaming.writer.flush.timeout	alluxio.master.daily.backup.time
+[Ciri] Reason for alluxio.user.streaming.writer.flush.timeout: alluxio.user.streaming.writer.flush.timeout should be a duration, but it is 60min
+[Ciri] Reason for alluxio.master.daily.backup.time: alluxio.master.daily.backup.time should be a time, but it is 05:00

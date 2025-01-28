@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>zookeeper.recovery.retry.maxsleeptime</name>
+  <value>30000</value>
+    <description>Max sleep time before retry zookeeper operations in milliseconds,
+    a max time is needed here so that sleep time won't grow unboundedly
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.region.split.policy</name>
+  <value>NONE_POLICY</value>
+    <description>
+      A split policy determines when a region should be split. The various
+      other split policies that are available currently are BusyRegionSplitPolicy,
+      ConstantSizeRegionSplitPolicy, DisabledRegionSplitPolicy,
+      DelimitedKeyPrefixRegionSplitPolicy, KeyPrefixRegionSplitPolicy, and
+      SteppingSplitPolicy. DisabledRegionSplitPolicy blocks manual region splitting.
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.regionSplitLimit</name>
+  <value>2000</value>
+    <description>
+      Limit for the number of regions after which no more region splitting
+      should take place. This is not hard limit for the number of regions
+      but acts as a guideline for the regionserver to stop splitting after
+      a certain limit. Default is set to 1000.
+    </description>
+</property>
+
+<property>
+  <name>hbase.server.versionfile.writeattempts</name>
+  <value>6</value>
+    <description>
+    How many times to retry attempting to write a version file
+    before just aborting. Each attempt is separated by the
+    hbase.server.thread.wakefrequency milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.percolumnfamilyflush.size.lower.bound.min</name>
+  <value>33554432</value>
+    <description>
+    If FlushLargeStoresPolicy is used and there are multiple column families,
+    then every time that we hit the total memstore limit, we find out all the
+    column families whose memstores exceed a "lower bound" and only flush them
+    while retaining the others in memory. The "lower bound" will be
+    "hbase.hregion.memstore.flush.size / column_family_number" by default
+    unless value of this property is larger than that. If none of the families
+    have their memstore size more than lower bound, all the memstores will be
+    flushed (just as usual).
+    </description>
+</property>
+
+<property>
+  <name>hbase.hregion.majorcompaction</name>
+  <value>1209600000</value>
+    <description>Time between major compactions, expressed in milliseconds. Set to 0 to disable
+      time-based automatic major compactions. User-requested and size-based major compactions will
+      still run. This value is multiplied by hbase.hregion.majorcompaction.jitter to cause
+      compaction to start at a somewhat-random time during a given window of time. The default value
+      is 7 days, expressed in milliseconds. If major compactions are causing disruption in your
+      environment, you can configure them to run at off-peak times for your deployment, or disable
+      time-based major compactions by setting this parameter to 0, and run major compactions in a
+      cron job or by another external mechanism.</description>
+</property>
+
+<property>
+  <name>hbase.mob.compaction.batch.size</name>
+  <value>200</value>
+    <description>
+      The max number of the mob files that is allowed in a batch of the mob compaction.
+      The mob compaction merges the small mob files to bigger ones. If the number of the
+      small files is very large, it could lead to a "too many opened file handlers" in the merge.
+      And the merge has to be split into batches. This value limits the number of mob files
+      that are selected in a batch of the mob compaction. The default value is 100.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.compaction.chore.period</name>
+  <value>1209600</value>
+    <description>
+      The period that MobCompactionChore runs. The unit is second.
+      The default value is one week.
+    </description>
+</property>
+
+</configuration>

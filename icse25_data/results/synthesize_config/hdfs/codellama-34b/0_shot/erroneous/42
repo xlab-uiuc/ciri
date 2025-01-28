@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.heartbeat.recheck-interval', 'dfs.default.chunk.view.size', 'dfs.namenode.name.dir.restore', 'dfs.namenode.fs-limits.max-blocks-per-file', 'dfs.journalnode.https-bind-host', 'dfs.cachereport.intervalMsec', 'dfs.user.home.dir.prefix', 'dfs.datanode.transfer.socket.send.buffer.size'], 'reason': ['The value of dfs.namenode.heartbeat.recheck-interval is too small. It must be at least 300000.', 'The value of dfs.default.chunk.view.size is too small. It must be at least 32768.', 'The value of dfs.namenode.name.dir.restore is not a valid boolean value.', 'The value of dfs.namenode.fs-limits.max-blocks-per-file is too small. It must be at least 100000.', 'The value of dfs.journalnode.https-bind-host is not a valid IP address.', 'The value of dfs.cachereport.intervalMsec is too small. It must be at least 300000.', 'The value of dfs.user.home.dir.prefix is not a valid directory.', 'The value of dfs.datanode.transfer.socket.send.buffer.size is too small. It must be at least 1024.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.namenode.heartbeat.recheck-interval	dfs.default.chunk.view.size	dfs.namenode.name.dir.restore	dfs.namenode.fs-limits.max-blocks-per-file	dfs.journalnode.https-bind-host	dfs.cachereport.intervalMsec	dfs.user.home.dir.prefix	dfs.datanode.transfer.socket.send.buffer.size
+[Ciri] Reason for dfs.namenode.heartbeat.recheck-interval: The value of dfs.namenode.heartbeat.recheck-interval is too small. It must be at least 300000.
+[Ciri] Reason for dfs.default.chunk.view.size: The value of dfs.default.chunk.view.size is too small. It must be at least 32768.
+[Ciri] Reason for dfs.namenode.name.dir.restore: The value of dfs.namenode.name.dir.restore is not a valid boolean value.
+[Ciri] Reason for dfs.namenode.fs-limits.max-blocks-per-file: The value of dfs.namenode.fs-limits.max-blocks-per-file is too small. It must be at least 100000.
+[Ciri] Reason for dfs.journalnode.https-bind-host: The value of dfs.journalnode.https-bind-host is not a valid IP address.
+[Ciri] Reason for dfs.cachereport.intervalMsec: The value of dfs.cachereport.intervalMsec is too small. It must be at least 300000.
+[Ciri] Reason for dfs.user.home.dir.prefix: The value of dfs.user.home.dir.prefix is not a valid directory.
+[Ciri] Reason for dfs.datanode.transfer.socket.send.buffer.size: The value of dfs.datanode.transfer.socket.send.buffer.size is too small. It must be at least 1024.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.blocksize', 'dfs.client.datanode-restart.timeout'], 'reason': ['The usage example for \'dfs.blocksize\' is incorrect. The correct way to set this property in code would be something like conf.setLong("dfs.blocksize", 67108864L); instead of using NO_TRACING_CONF.setLong.', "The value for 'dfs.client.datanode-restart.timeout' includes a time unit suffix ('60s'), which is inconsistent with the description that suggests if no time unit is specified then seconds is assumed. It should be clarified that specifying the unit is acceptable, or the value should be adjusted to not include a unit if that's not supported."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.blocksize	dfs.client.datanode-restart.timeout
+[Ciri] Reason for dfs.blocksize: The usage example for 'dfs.blocksize' is incorrect. The correct way to set this property in code would be something like conf.setLong("dfs.blocksize", 67108864L); instead of using NO_TRACING_CONF.setLong.
+[Ciri] Reason for dfs.client.datanode-restart.timeout: The value for 'dfs.client.datanode-restart.timeout' includes a time unit suffix ('60s'), which is inconsistent with the description that suggests if no time unit is specified then seconds is assumed. It should be clarified that specifying the unit is acceptable, or the value should be adjusted to not include a unit if that's not supported.

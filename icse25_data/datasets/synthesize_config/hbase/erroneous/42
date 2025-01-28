@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.tmp.dir</name>
+  <value>${java.io.tmpdir}/hbase-${user.name}</value>
+    <description>Temporary directory on the local filesystem.
+    Change this setting to point to a location more permanent
+    than '/tmp', the usual resolve for java.io.tmpdir, as the
+    '/tmp' directory is cleared on machine restart.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.quorum</name>
+  <value>localhost</value>
+    <description>Comma separated list of servers in the ZooKeeper ensemble
+    (This config. should have been named hbase.zookeeper.ensemble).
+    For example, "host1.mydomain.com,host2.mydomain.com,host3.mydomain.com".
+    By default this is set to localhost for local and pseudo-distributed modes
+    of operation. For a fully-distributed setup, this should be set to a full
+    list of ZooKeeper ensemble servers. If HBASE_MANAGES_ZK is set in hbase-env.sh
+    this is the list of servers which hbase will start/stop ZooKeeper on as
+    part of cluster start/stop.  Client-side, we will take this list of
+    ensemble members and put it together with the hbase.zookeeper.property.clientPort
+    config. and pass it into zookeeper constructor as the connectString
+    parameter.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.initLimit</name>
+  <value>10</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The number of ticks that the initial synchronization phase can take.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.fallback-to-simple-auth-allowed</name>
+  <value>true</value>
+    <description>When a server is configured to require secure connections, it will
+      reject connection attempts from clients using SASL SIMPLE (unsecure) authentication.
+      This setting allows secure servers to accept SASL SIMPLE connections from clients
+      when the client requests.  When false (the default), the server will not allow the fallback
+      to SIMPLE authentication, and will reject the connection.  WARNING: This setting should ONLY
+      be used as a temporary measure while converting clients over to secure authentication.  It
+      MUST BE DISABLED for secure operation.</description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.enabled</name>
+  <value>false</value>
+    <description>Enables or disables coprocessor loading. If 'false'
+    (disabled), any other coprocessor related configuration will be ignored.
+    </description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.user.enabled</name>
+  <value>false</value>
+    <description>Enables or disables user (aka. table) coprocessor loading.
+    If 'false' (disabled), any table coprocessor attributes in table
+    descriptors will be ignored. If "hbase.coprocessor.enabled" is 'false'
+    this setting has no effect.
+    </description>
+</property>
+
+<property>
+  <name>hbase.table.lock.enable</name>
+  <value>false</value>
+    <description>Set to true to enable locking the table in zookeeper for schema change operations.
+    Table locking from master prevents concurrent schema modifications to corrupt table
+    state.</description>
+</property>
+
+<property>
+  <name>hbase.region.replica.replication.enabled</name>
+  <value>false</value>
+    <description>
+      Whether asynchronous WAL replication to the secondary region replicas is enabled or not.
+      If this is enabled, a replication peer named "region_replica_replication" will be created
+      which will tail the logs and replicate the mutations to region replicas for tables that
+      have region replication > 1. If this is enabled once, disabling this replication also
+      requires disabling the replication peer using shell or Admin java class.
+      Replication to secondary region replicas works over standard inter-cluster replication.
+    </description>
+</property>
+
+</configuration>

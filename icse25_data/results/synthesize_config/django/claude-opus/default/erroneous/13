@@ -1,0 +1,15 @@
+Wrong shot number:
+[1, 2, 6]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECURE_HSTS_SECONDS'], 'reason': ["The 'DEBUG' setting should not be set to 'True' in a production environment as it can expose sensitive information.", "The value for 'SECURE_HSTS_SECONDS' is set to 4000000000 which is a very large value. It is recommended to set it to a reasonable value, such as 31536000 (1 year)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: DEBUG	SECURE_HSTS_SECONDS
+[Ciri] Reason for DEBUG: The 'DEBUG' setting should not be set to 'True' in a production environment as it can expose sensitive information.
+[Ciri] Reason for SECURE_HSTS_SECONDS: The value for 'SECURE_HSTS_SECONDS' is set to 4000000000 which is a very large value. It is recommended to set it to a reasonable value, such as 31536000 (1 year).

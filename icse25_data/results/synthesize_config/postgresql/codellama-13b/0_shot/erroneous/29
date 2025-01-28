@@ -1,0 +1,33 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_writer_flush_after', 'scram_iterations', 'commit_siblings', 'session_replication_role', 'archive_mode', 'wal_keep_segments', 'cpu_index_tuple_cost'], 'reason': ['wal_writer_flush_after is not a valid parameter', 'scram_iterations is not a valid parameter', 'commit_siblings is not a valid parameter', 'session_replication_role is not a valid parameter', 'archive_mode is not a valid parameter', 'wal_keep_segments is not a valid parameter', 'cpu_index_tuple_cost is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['wal_writer_flush_after', 'wal_keep_segments', 'cpu_index_tuple_cost'], 'reason': ['wal_writer_flush_after must be a multiple of wal_segment_size', 'wal_keep_segments must be greater than 0', 'cpu_index_tuple_cost must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['wal_writer_flush_after', 'commit_siblings', 'session_replication_role', 'wal_keep_segments', 'cpu_index_tuple_cost'], 'reason': ['wal_writer_flush_after is not a valid parameter for PostgreSQL 13.0', 'commit_siblings is not a valid parameter for PostgreSQL 13.0', 'session_replication_role is not a valid parameter for PostgreSQL 13.0', 'wal_keep_segments is not a valid parameter for PostgreSQL 13.0', 'cpu_index_tuple_cost is not a valid parameter for PostgreSQL 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_writer_flush_after', 'commit_siblings'], 'reason': ['wal_writer_flush_after should be a value between 0 and 1024MB', 'commit_siblings should be a value between 0 and 1000']}
+
+{'hasError': True, 'errParameter': ['wal_writer_flush_after', 'scram_iterations', 'commit_siblings', 'session_replication_role', 'archive_mode', 'wal_keep_segments', 'cpu_index_tuple_cost'], 'reason': ['wal_writer_flush_after is not a valid parameter', 'scram_iterations is not a valid parameter', 'commit_siblings is not a valid parameter', 'session_replication_role is not a valid parameter', 'archive_mode is not a valid parameter', 'wal_keep_segments is not a valid parameter', 'cpu_index_tuple_cost is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['wal_writer_flush_after', 'wal_keep_segments', 'cpu_index_tuple_cost'], 'reason': ['wal_writer_flush_after is not a valid parameter for PostgreSQL 13.0', 'wal_keep_segments is not a valid parameter for PostgreSQL 13.0', 'cpu_index_tuple_cost is not a valid parameter for PostgreSQL 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_writer_flush_after', 'commit_siblings', 'session_replication_role', 'archive_mode', 'wal_keep_segments', 'cpu_index_tuple_cost'], 'reason': ['wal_writer_flush_after is not a valid parameter for PostgreSQL 13.0', 'commit_siblings is not a valid parameter for PostgreSQL 13.0', 'session_replication_role is not a valid parameter for PostgreSQL 13.0', 'archive_mode is not a valid parameter for PostgreSQL 13.0', 'wal_keep_segments is not a valid parameter for PostgreSQL 13.0', 'cpu_index_tuple_cost is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['wal_writer_flush_after', 'commit_siblings', 'session_replication_role', 'archive_mode', 'wal_keep_segments', 'cpu_index_tuple_cost'], 'reason': ['wal_writer_flush_after is not a valid parameter for PostgreSQL 13.0', 'commit_siblings is not a valid parameter for PostgreSQL 13.0', 'session_replication_role is not a valid parameter for PostgreSQL 13.0', 'archive_mode is not a valid parameter for PostgreSQL 13.0', 'wal_keep_segments is not a valid parameter for PostgreSQL 13.0', 'cpu_index_tuple_cost is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: wal_writer_flush_after	commit_siblings	session_replication_role	archive_mode	wal_keep_segments	cpu_index_tuple_cost
+[Ciri] Reason for wal_writer_flush_after: wal_writer_flush_after is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for commit_siblings: commit_siblings is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for session_replication_role: session_replication_role is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for archive_mode: archive_mode is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for wal_keep_segments: wal_keep_segments is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for cpu_index_tuple_cost: cpu_index_tuple_cost is not a valid parameter for PostgreSQL 13.0

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['unix_socket_directories', 'vacuum_multixact_freeze_min_age', 'max_wal_size'], 'reason': ["The 'unix_socket_directories' parameter should be a single directory path, not multiple paths separated by slashes.", "The 'vacuum_multixact_freeze_min_age' parameter is not a valid parameter in PostgreSQL 13.0. It was introduced in PostgreSQL 14.0.", "The 'max_wal_size' parameter should be specified in kilobytes (e.g., '2048MB' or '2097152kB'), not in gigabytes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: unix_socket_directories	vacuum_multixact_freeze_min_age	max_wal_size
+[Ciri] Reason for unix_socket_directories: The 'unix_socket_directories' parameter should be a single directory path, not multiple paths separated by slashes.
+[Ciri] Reason for vacuum_multixact_freeze_min_age: The 'vacuum_multixact_freeze_min_age' parameter is not a valid parameter in PostgreSQL 13.0. It was introduced in PostgreSQL 14.0.
+[Ciri] Reason for max_wal_size: The 'max_wal_size' parameter should be specified in kilobytes (e.g., '2048MB' or '2097152kB'), not in gigabytes.

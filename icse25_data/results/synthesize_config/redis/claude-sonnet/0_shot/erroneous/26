@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['set-proc-title', 'appendfilename', 'tls-port', 'enable-module-command', 'hash-max-listpack-entries', 'always-show-logo'], 'reason': ["The 'set-proc-title' option is not a valid configuration parameter in Redis 7.0.0.", "The correct parameter for the appendonly file name is 'appendonly' (without 'filename').", "The 'tls-port' parameter is not a valid configuration parameter in Redis 7.0.0. Redis supports TLS/SSL configuration through other parameters.", "The 'enable-module-command' parameter is not a valid configuration parameter in Redis 7.0.0.", "The 'hash-max-listpack-entries' parameter is not a valid configuration parameter in Redis 7.0.0.", "The 'always-show-logo' parameter is not a valid configuration parameter in Redis 7.0.0."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: set-proc-title	appendfilename	tls-port	enable-module-command	hash-max-listpack-entries	always-show-logo
+[Ciri] Reason for set-proc-title: The 'set-proc-title' option is not a valid configuration parameter in Redis 7.0.0.
+[Ciri] Reason for appendfilename: The correct parameter for the appendonly file name is 'appendonly' (without 'filename').
+[Ciri] Reason for tls-port: The 'tls-port' parameter is not a valid configuration parameter in Redis 7.0.0. Redis supports TLS/SSL configuration through other parameters.
+[Ciri] Reason for enable-module-command: The 'enable-module-command' parameter is not a valid configuration parameter in Redis 7.0.0.
+[Ciri] Reason for hash-max-listpack-entries: The 'hash-max-listpack-entries' parameter is not a valid configuration parameter in Redis 7.0.0.
+[Ciri] Reason for always-show-logo: The 'always-show-logo' parameter is not a valid configuration parameter in Redis 7.0.0.

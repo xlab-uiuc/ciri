@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdb-del-sync-files', 'disable-thp', 'cluster-announce-ip', 'zset-max-listpack-value', 'cluster-announce-bus-port', 'timeout'], 'reason': ['rdb-del-sync-files is not a valid configuration directive.', 'disable-thp is not a valid configuration directive.', 'cluster-announce-ip is not a valid configuration directive.', 'zset-max-listpack-value is not a valid configuration directive.', 'cluster-announce-bus-port is not a valid configuration directive.', 'timeout is not a valid configuration directive.']}
+
+{'hasError': True, 'errParameter': ['rdb-del-sync-files', 'disable-thp', 'cluster-announce-bus-port', 'timeout'], 'reason': ['rdb-del-sync-files is not a valid property', 'disable-thp is not a valid property', 'cluster-announce-bus-port is not a valid property', 'timeout is not a valid property']}
+
+{'hasError': True, 'errParameter': ['rdb-del-sync-files', 'disable-thp', 'cluster-announce-ip', 'zset-max-listpack-value', 'cluster-announce-bus-port', 'timeout'], 'reason': ['rdb-del-sync-files is not a valid parameter', 'disable-thp is not a valid parameter', 'cluster-announce-ip is not a valid parameter', 'zset-max-listpack-value is not a valid parameter', 'cluster-announce-bus-port is not a valid parameter', 'timeout is not a valid parameter']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: rdb-del-sync-files	disable-thp	cluster-announce-ip	zset-max-listpack-value	cluster-announce-bus-port	timeout
+[Ciri] Reason for rdb-del-sync-files: rdb-del-sync-files is not a valid configuration directive.
+[Ciri] Reason for disable-thp: disable-thp is not a valid configuration directive.
+[Ciri] Reason for cluster-announce-ip: cluster-announce-ip is not a valid parameter
+[Ciri] Reason for zset-max-listpack-value: zset-max-listpack-value is not a valid parameter
+[Ciri] Reason for cluster-announce-bus-port: cluster-announce-bus-port is not a valid parameter
+[Ciri] Reason for timeout: timeout is not a valid configuration directive.

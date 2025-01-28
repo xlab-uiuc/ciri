@@ -1,0 +1,18 @@
+Wrong shot number:
+[7, 2, 9]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'repl-backlog-size', 'maxmemory-clients'], 'reason': ["The property 'slowlog-max-len' has a negative value which is invalid.", "The property 'repl-backlog-size' has the value '1mb' which is not in the correct format.", "The property 'maxmemory-clients' has the value '1g' which is not in the correct format."]}
+
+{'hasError': True, 'errParameter': ['slowlog-max-len'], 'reason': ["The property 'slowlog-max-len' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['slowlog-max-len'], 'reason': ["The property 'slowlog-max-len' has a negative value which is not allowed."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: slowlog-max-len
+[Ciri] Reason for slowlog-max-len: The property 'slowlog-max-len' has a negative value which is not allowed.

@@ -1,0 +1,27 @@
+Wrong shot number:
+[4, 9, 2]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '1090' which is out of the valid range of a port number."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.client.perserver.requests.threshold'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '1090' which is out of the valid range of a port number.", "The property 'hbase.client.perserver.requests.threshold' has a very high value which may lead to performance issues. It should be set to a more reasonable value."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.client.perserver.requests.threshold'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '1090' which is out of the valid range of a port number.", "The property 'hbase.client.perserver.requests.threshold' has a very high value which may lead to performance issues. It should be set to a more reasonable value."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.client.perserver.requests.threshold'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '1090' which is out of the valid range of a port number.", "The property 'hbase.client.perserver.requests.threshold' has a very high value which may lead to performance issues or unexpected behavior."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.client.perserver.requests.threshold'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '1090' which is out of the valid range of a port number.", "The property 'hbase.client.perserver.requests.threshold' has a very high value of '4000000000' which seems unrealistic for the max number of concurrent pending requests."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.zookeeper.property.clientPort	hbase.client.perserver.requests.threshold
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The property 'hbase.zookeeper.property.clientPort' has the value '1090' which is out of the valid range of a port number.
+[Ciri] Reason for hbase.client.perserver.requests.threshold: The property 'hbase.client.perserver.requests.threshold' has a very high value which may lead to performance issues. It should be set to a more reasonable value.

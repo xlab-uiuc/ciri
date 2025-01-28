@@ -1,0 +1,13 @@
+Wrong shot number:
+[3, 14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.defaultFS', 'ipc.server.log.slow.rpc'], 'reason': ["The property 'io.seqfile.local.dir' has an incorrect value format. It should not start with double slashes '//'.", "The property 'fs.defaultFS' has the value 'file:///' which may not be a valid default file system URI.", "The value of the property 'ipc.server.log.slow.rpc' should be 'true' to enable logging of slow RPC requests."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: io.seqfile.local.dir	fs.defaultFS	ipc.server.log.slow.rpc
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' has an incorrect value format. It should not start with double slashes '//'.
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has the value 'file:///' which may not be a valid default file system URI.
+[Ciri] Reason for ipc.server.log.slow.rpc: The value of the property 'ipc.server.log.slow.rpc' should be 'true' to enable logging of slow RPC requests.

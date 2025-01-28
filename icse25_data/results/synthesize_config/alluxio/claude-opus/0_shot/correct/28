@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.oss.connection.ttl', 'alluxio.master.daily.backup.state.lock.grace.mode'], 'reason': ['alluxio.underfs.oss.connection.ttl is set to -2 which is an invalid value. It should be a non-negative integer representing the number of milliseconds to keep idle connections alive.', 'alluxio.master.daily.backup.state.lock.grace.mode is set to TIMEOUT which is not a valid option in Alluxio 2.5.0. The valid options are BEST_EFFORT and ENFORCING.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.oss.connection.ttl	alluxio.master.daily.backup.state.lock.grace.mode
+[Ciri] Reason for alluxio.underfs.oss.connection.ttl: alluxio.underfs.oss.connection.ttl is set to -2 which is an invalid value. It should be a non-negative integer representing the number of milliseconds to keep idle connections alive.
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.grace.mode: alluxio.master.daily.backup.state.lock.grace.mode is set to TIMEOUT which is not a valid option in Alluxio 2.5.0. The valid options are BEST_EFFORT and ENFORCING.

@@ -1,0 +1,33 @@
+Wrong shot number:
+[3, 9, 7]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.directory.suffix'], 'reason': ["The property 'alluxio.underfs.s3.directory.suffix' has the value '/valid/file1' which is not a valid path."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.lost.worker.file.detection.interval'], 'reason': ["The property 'alluxio.master.lost.worker.file.detection.interval' has the value '1min' which is not within the accepted value {1min,10min,1hour,1day,1week}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.lost.worker.file.detection.interval', 'alluxio.master.journal.flush.batch.time', 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes', 'alluxio.underfs.s3.directory.suffix', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.ttl.checker.interval', 'alluxio.master.hostname', 'fs.gcs.credential.path'], 'reason': ["The property 'alluxio.master.lost.worker.file.detection.interval' has the value '1min' which is not within the accepted value {10min,100min}."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.gcs.credential.path'], 'reason': ["The property 'fs.gcs.credential.path' has the value '/valid/file2' which is not a valid path."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.lost.worker.file.detection.interval', 'alluxio.master.journal.flush.batch.time', 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes', 'alluxio.underfs.s3.directory.suffix', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.ttl.checker.interval', 'alluxio.master.hostname', 'fs.gcs.credential.path'], 'reason': ["The property 'alluxio.master.lost.worker.file.detection.interval' has the value '1min' which is not within the accepted value {10min,100min}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.lost.worker.file.detection.interval', 'alluxio.master.journal.flush.batch.time', 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes', 'alluxio.underfs.s3.directory.suffix', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.ttl.checker.interval', 'alluxio.master.hostname', 'fs.gcs.credential.path'], 'reason': ["The property 'alluxio.master.lost.worker.file.detection.interval' has the value '1min' which is not within the accepted value {10min,1hour,1day,1week,1month,1year}."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.master.lost.worker.file.detection.interval	alluxio.master.journal.flush.batch.time	alluxio.user.block.avoid.eviction.policy.reserved.size.bytes	alluxio.underfs.s3.directory.suffix	alluxio.security.stale.channel.purge.interval	alluxio.master.ttl.checker.interval	alluxio.master.hostname	fs.gcs.credential.path
+[Ciri] Reason for alluxio.master.lost.worker.file.detection.interval: The property 'alluxio.master.lost.worker.file.detection.interval' has the value '1min' which is not within the accepted value {10min,100min}.
+[Ciri] Reason for alluxio.master.journal.flush.batch.time: 
+[Ciri] Reason for alluxio.user.block.avoid.eviction.policy.reserved.size.bytes: 
+[Ciri] Reason for alluxio.underfs.s3.directory.suffix: 
+[Ciri] Reason for alluxio.security.stale.channel.purge.interval: 
+[Ciri] Reason for alluxio.master.ttl.checker.interval: 
+[Ciri] Reason for alluxio.master.hostname: 
+[Ciri] Reason for fs.gcs.credential.path: 

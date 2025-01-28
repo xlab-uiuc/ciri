@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.placement-constraints.retry-attempts</name>
+  <value>-5.5</value>
+    <description>Number of times to retry placing of rejected SchedulingRequests</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.webapp.https.address</name>
+  <value>127.0.0.1</value>
+    <description>
+      The https address of the RM web application.
+      If only a host is provided as the value,
+      the webapp will be served on a random port.
+    </description>
+</property>
+
+<property>
+  <name>yarn.client.failover-proxy-provider</name>
+  <value>org.apache.hadoop.yarn.client.ConfiguredRMFailoverProxyProvider</value>
+    <description>When HA is enabled, the class to be used by Clients, AMs and
+      NMs to failover to the Active RM. It should extend
+      org.apache.hadoop.yarn.client.RMFailoverProxyProvider</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-executor.class</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor</value>
+    <description>who will execute(launch) the containers.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.entity-group-fs-store.summary-store</name>
+  <value>org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore</value>
+     <description>Summary storage for ATS v1.5</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.node-attributes.provider.script.path</name>
+  <value>/valid/file1</value>
+    <description>
+      The node attribute script NM runs to collect node attributes.
+      Script output Line starting with "NODE_ATTRIBUTE:" will be
+      considered as a record of node attribute, attribute name, type
+      and value should be delimited by comma. Each of such lines
+      will be parsed to a node attribute.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.log-aggregation.num-log-files-per-app</name>
+  <value>30</value>
+    <description>Define how many aggregated log files per application per NM
+    we can have in remote file system. By default, the total number of
+    aggregated log files per application per NM is 30.
+    </description>
+</property>
+
+<property>
+  <name>yarn.webapp.xfs-filter.enabled</name>
+  <value>true</value>
+    <description>
+      Enable the XFS filter for YARN
+    </description>
+</property>
+
+</configuration>

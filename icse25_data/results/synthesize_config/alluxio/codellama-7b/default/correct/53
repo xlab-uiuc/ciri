@@ -1,0 +1,26 @@
+Wrong shot number:
+[10, 12, 6]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.zerocopy.enabled'], 'reason': ["The property 'alluxio.user.streaming.zerocopy.enabled' has the value 'false' which is not a valid value for this property. The valid values are 'true' and 'false'."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.max'], 'reason': ["The property 'fs.cos.connection.max' has the value '512' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.throttling'], 'reason': ["The property 'alluxio.job.worker.throttling' is not a valid property for Alluxio version 2.5.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.throttling'], 'reason': ["The property 'alluxio.job.worker.throttling' has the value 'true' which is not a valid boolean value."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.throttling'], 'reason': ["The property 'alluxio.job.worker.throttling' is not a valid property. Please check the Alluxio documentation for a list of valid properties."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.throttling'], 'reason': ["The property 'alluxio.job.worker.throttling' has the value 'true' which is not a valid boolean value."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.job.worker.throttling
+[Ciri] Reason for alluxio.job.worker.throttling: The property 'alluxio.job.worker.throttling' has the value 'true' which is not a valid boolean value.

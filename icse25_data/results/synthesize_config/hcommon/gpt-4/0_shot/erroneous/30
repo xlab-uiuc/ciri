@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].scheduler.impl'], 'reason': ["The property 'fs.default.name' is deprecated and should be replaced with 'fs.defaultFS'.", "The property 'ipc.[port_number].scheduler.impl' uses a placeholder '[port_number]' which should be replaced with an actual port number or removed if it's meant to be a general configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	ipc.[port_number].scheduler.impl
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' is deprecated and should be replaced with 'fs.defaultFS'.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The property 'ipc.[port_number].scheduler.impl' uses a placeholder '[port_number]' which should be replaced with an actual port number or removed if it's meant to be a general configuration.

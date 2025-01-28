@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping', 'hadoop.security.groups.cache.secs', 'io.compression.codec.bzip2.library', 'ipc.client.low-latency', 'net.topology.table.file.name', 'hadoop.http.cross-origin.allowed-origins', 'hadoop.registry.zk.connection.timeout.ms'], 'reason': ["The 'usage' tag is not a valid tag for property 'hadoop.security.groups.cache.secs'.", "The 'usage' tag is not a valid tag for property 'io.compression.codec.bzip2.library'.", "The 'usage' tag is not a valid tag for property 'ipc.client.low-latency'.", "The 'usage' tag is not a valid tag for property 'net.topology.table.file.name'.", "The 'usage' tag is not a valid tag for property 'hadoop.http.cross-origin.allowed-origins'.", "The 'usage' tag is not a valid tag for property 'hadoop.registry.zk.connection.timeout.ms'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: hadoop.security.group.mapping	hadoop.security.groups.cache.secs	io.compression.codec.bzip2.library	ipc.client.low-latency	net.topology.table.file.name	hadoop.http.cross-origin.allowed-origins	hadoop.registry.zk.connection.timeout.ms
+[Ciri] Reason for hadoop.security.group.mapping: The 'usage' tag is not a valid tag for property 'hadoop.security.groups.cache.secs'.
+[Ciri] Reason for hadoop.security.groups.cache.secs: The 'usage' tag is not a valid tag for property 'io.compression.codec.bzip2.library'.
+[Ciri] Reason for io.compression.codec.bzip2.library: The 'usage' tag is not a valid tag for property 'ipc.client.low-latency'.
+[Ciri] Reason for ipc.client.low-latency: The 'usage' tag is not a valid tag for property 'net.topology.table.file.name'.
+[Ciri] Reason for net.topology.table.file.name: The 'usage' tag is not a valid tag for property 'hadoop.http.cross-origin.allowed-origins'.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-origins: The 'usage' tag is not a valid tag for property 'hadoop.registry.zk.connection.timeout.ms'.
+[Ciri] Reason for hadoop.registry.zk.connection.timeout.ms: 

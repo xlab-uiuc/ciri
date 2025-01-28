@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.connection.request.timeout', 'ipc.[port_number].decay-scheduler.decay-factor', 'hadoop.ssl.enabled'], 'reason': ["The 'fs.s3a.connection.request.timeout' description suggests it supports time suffixes, but as of Hadoop 3.3.0, this property expects a value in milliseconds without suffixes.", "The 'ipc.[port_number].decay-scheduler.decay-factor' uses a placeholder '[port_number]' which should be replaced with an actual port number for a specific configuration.", "The 'hadoop.ssl.enabled' property is marked as deprecated. It's recommended to use 'dfs.http.policy' and 'yarn.http.policy' for configuring SSL."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.s3a.connection.request.timeout	ipc.[port_number].decay-scheduler.decay-factor	hadoop.ssl.enabled
+[Ciri] Reason for fs.s3a.connection.request.timeout: The 'fs.s3a.connection.request.timeout' description suggests it supports time suffixes, but as of Hadoop 3.3.0, this property expects a value in milliseconds without suffixes.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.decay-factor: The 'ipc.[port_number].decay-scheduler.decay-factor' uses a placeholder '[port_number]' which should be replaced with an actual port number for a specific configuration.
+[Ciri] Reason for hadoop.ssl.enabled: The 'hadoop.ssl.enabled' property is marked as deprecated. It's recommended to use 'dfs.http.policy' and 'yarn.http.policy' for configuring SSL.

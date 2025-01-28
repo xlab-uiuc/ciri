@@ -1,0 +1,17 @@
+Wrong shot number:
+[8, 2, 6]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.hregion.preclose.flush.size', 'hbase.hstore.compaction.ratio', 'hbase.dynamic.jars.dir'], 'reason': ["The property 'hbase.master.logcleaner.ttl' value should be in milliseconds, and the usage example provided is incorrect.", "The property 'hbase.hregion.preclose.flush.size' usage example provided is incorrect. The correct way to set this property is through the configuration file, not programmatically within the application.", "The property 'hbase.hstore.compaction.ratio' usage example provided is incorrect. Similar to the other properties, it should be set in the configuration file.", "The property 'hbase.dynamic.jars.dir' contains a placeholder '${hbase.rootdir}' which might not be correctly replaced in all deployment scenarios. It's better to specify an absolute path directly if possible."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hbase.master.logcleaner.ttl	hbase.hregion.preclose.flush.size	hbase.hstore.compaction.ratio	hbase.dynamic.jars.dir
+[Ciri] Reason for hbase.master.logcleaner.ttl: The property 'hbase.master.logcleaner.ttl' value should be in milliseconds, and the usage example provided is incorrect.
+[Ciri] Reason for hbase.hregion.preclose.flush.size: The property 'hbase.hregion.preclose.flush.size' usage example provided is incorrect. The correct way to set this property is through the configuration file, not programmatically within the application.
+[Ciri] Reason for hbase.hstore.compaction.ratio: The property 'hbase.hstore.compaction.ratio' usage example provided is incorrect. Similar to the other properties, it should be set in the configuration file.
+[Ciri] Reason for hbase.dynamic.jars.dir: The property 'hbase.dynamic.jars.dir' contains a placeholder '${hbase.rootdir}' which might not be correctly replaced in all deployment scenarios. It's better to specify an absolute path directly if possible.

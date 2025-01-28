@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.max-retries', 'dfs.namenode.checkpoint.check.quiet-multiplier', 'dfs.ha.log-roll.period', 'dfs.namenode.lock.detailed-metrics.enabled', 'dfs.datanode.cache.revocation.timeout.ms', 'dfs.mover.moverThreads', 'dfs.namenode.replication.max-streams', 'dfs.namenode.stale.datanode.minimum.interval'], 'reason': ['The value of dfs.namenode.checkpoint.max-retries is too small. It should be at least 3.', 'The value of dfs.namenode.checkpoint.check.quiet-multiplier is too small. It should be at least 1.5.', 'The value of dfs.ha.log-roll.period is too small. It should be at least 1800.', 'The value of dfs.namenode.lock.detailed-metrics.enabled is not true. It should be true.', 'The value of dfs.datanode.cache.revocation.timeout.ms is too small. It should be at least 3000000.', 'The value of dfs.mover.moverThreads is too large. It should be at most 1000.', 'The value of dfs.namenode.replication.max-streams is too large. It should be at most 2.', 'The value of dfs.namenode.stale.datanode.minimum.interval is too small. It should be at least 300.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.namenode.checkpoint.max-retries	dfs.namenode.checkpoint.check.quiet-multiplier	dfs.ha.log-roll.period	dfs.namenode.lock.detailed-metrics.enabled	dfs.datanode.cache.revocation.timeout.ms	dfs.mover.moverThreads	dfs.namenode.replication.max-streams	dfs.namenode.stale.datanode.minimum.interval
+[Ciri] Reason for dfs.namenode.checkpoint.max-retries: The value of dfs.namenode.checkpoint.max-retries is too small. It should be at least 3.
+[Ciri] Reason for dfs.namenode.checkpoint.check.quiet-multiplier: The value of dfs.namenode.checkpoint.check.quiet-multiplier is too small. It should be at least 1.5.
+[Ciri] Reason for dfs.ha.log-roll.period: The value of dfs.ha.log-roll.period is too small. It should be at least 1800.
+[Ciri] Reason for dfs.namenode.lock.detailed-metrics.enabled: The value of dfs.namenode.lock.detailed-metrics.enabled is not true. It should be true.
+[Ciri] Reason for dfs.datanode.cache.revocation.timeout.ms: The value of dfs.datanode.cache.revocation.timeout.ms is too small. It should be at least 3000000.
+[Ciri] Reason for dfs.mover.moverThreads: The value of dfs.mover.moverThreads is too large. It should be at most 1000.
+[Ciri] Reason for dfs.namenode.replication.max-streams: The value of dfs.namenode.replication.max-streams is too large. It should be at most 2.
+[Ciri] Reason for dfs.namenode.stale.datanode.minimum.interval: The value of dfs.namenode.stale.datanode.minimum.interval is too small. It should be at least 300.

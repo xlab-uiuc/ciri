@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.cluster.distributed', 'hbase.regionserver.global.memstore.size', 'hbase.zookeeper.property.maxClientCnxns', 'hbase.client.max.total.tasks', 'hbase.client.max.perregion.tasks', 'hbase.hregion.memstore.flush.size', 'hbase.hstore.compaction.max.size', 'hbase.http.staticuser.user'], 'reason': ['hbase.cluster.distributed should be a boolean value', 'hbase.regionserver.global.memstore.size should be a number', 'hbase.zookeeper.property.maxClientCnxns should be a number', 'hbase.client.max.total.tasks should be a number', 'hbase.client.max.perregion.tasks should be a number', 'hbase.hregion.memstore.flush.size should be a number', 'hbase.hstore.compaction.max.size should be a number', 'hbase.http.staticuser.user should be a string']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.cluster.distributed	hbase.regionserver.global.memstore.size	hbase.zookeeper.property.maxClientCnxns	hbase.client.max.total.tasks	hbase.client.max.perregion.tasks	hbase.hregion.memstore.flush.size	hbase.hstore.compaction.max.size	hbase.http.staticuser.user
+[Ciri] Reason for hbase.cluster.distributed: hbase.cluster.distributed should be a boolean value
+[Ciri] Reason for hbase.regionserver.global.memstore.size: hbase.regionserver.global.memstore.size should be a number
+[Ciri] Reason for hbase.zookeeper.property.maxClientCnxns: hbase.zookeeper.property.maxClientCnxns should be a number
+[Ciri] Reason for hbase.client.max.total.tasks: hbase.client.max.total.tasks should be a number
+[Ciri] Reason for hbase.client.max.perregion.tasks: hbase.client.max.perregion.tasks should be a number
+[Ciri] Reason for hbase.hregion.memstore.flush.size: hbase.hregion.memstore.flush.size should be a number
+[Ciri] Reason for hbase.hstore.compaction.max.size: hbase.hstore.compaction.max.size should be a number
+[Ciri] Reason for hbase.http.staticuser.user: hbase.http.staticuser.user should be a string

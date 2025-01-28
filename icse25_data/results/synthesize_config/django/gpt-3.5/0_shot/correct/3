@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_PROXY_SSL_HEADER', 'EMAIL_SSL_KEYFILE', 'SESSION_COOKIE_HTTPONLY'], 'reason': ['SECURE_PROXY_SSL_HEADER should be set to a tuple of header names where the proxy sends the original HTTPS request, or None if the proxy does not send these headers.', 'EMAIL_SSL_KEYFILE is not a valid setting for Django 4.0. It should be removed.', 'SESSION_COOKIE_HTTPONLY should be set to True for better security practices.']}
+
+{'hasError': True, 'errParameter': ['DEFAULT_EXCEPTION_REPORTER', 'SECURE_PROXY_SSL_HEADER', 'EMAIL_SSL_KEYFILE', 'SESSION_COOKIE_HTTPONLY'], 'reason': ["DEFAULT_EXCEPTION_REPORTER 'django.views.debug.ExceptionReporter' is not a valid setting for Django 4.0.", "SECURE_PROXY_SSL_HEADER should be set to a tuple of ('HTTP_X_FORWARDED_PROTO', 'https') for security in Django 4.0.", 'EMAIL_SSL_KEYFILE is not a valid setting for Django 4.0.', 'SESSION_COOKIE_HTTPONLY should be set to True for security reasons in Django 4.0.']}
+
+{'hasError': True, 'errParameter': ['DEFAULT_EXCEPTION_REPORTER', 'SECURE_PROXY_SSL_HEADER', 'EMAIL_SSL_KEYFILE', 'SESSION_COOKIE_HTTPONLY', 'LANGUAGE_COOKIE_PATH', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ["DEFAULT_EXCEPTION_REPORTER 'django.views.debug.ExceptionReporter' is not a valid setting for Django 4.0.", "SECURE_PROXY_SSL_HEADER should be set to a tuple of ('HTTP_X_FORWARDED_PROTO', 'https') for security in Django 4.0.", 'EMAIL_SSL_KEYFILE is not a valid setting for Django 4.0.', 'SESSION_COOKIE_HTTPONLY should be set to True for security in Django 4.0.', "LANGUAGE_COOKIE_PATH should be set to '/' for the root path in Django 4.0.", 'DATA_UPLOAD_MAX_NUMBER_FIELDS is not a valid setting for Django 4.0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEFAULT_EXCEPTION_REPORTER', 'SECURE_PROXY_SSL_HEADER', 'EMAIL_SSL_KEYFILE', 'SESSION_COOKIE_HTTPONLY'], 'reason': ["DEFAULT_EXCEPTION_REPORTER 'django.views.debug.ExceptionReporter' is not a valid setting for Django 4.0.", "SECURE_PROXY_SSL_HEADER should be set to a tuple of ('HTTP_X_FORWARDED_PROTO', 'https') for security in Django 4.0.", 'EMAIL_SSL_KEYFILE should not be set to None for secure email transmission in Django 4.0.', 'SESSION_COOKIE_HTTPONLY should be set to True for security reasons in Django 4.0.']}
+
+{'hasError': True, 'errParameter': ['SECURE_PROXY_SSL_HEADER', 'EMAIL_SSL_KEYFILE', 'SESSION_COOKIE_HTTPONLY'], 'reason': ['SECURE_PROXY_SSL_HEADER should be set to a tuple of header names where the proxy sends the original HTTPS request information.', 'EMAIL_SSL_KEYFILE is not a valid setting for Django 4.0. It should be removed or replaced with a valid setting.', 'SESSION_COOKIE_HTTPONLY should be set to True for better security by preventing client-side JavaScript from accessing the session cookie.']}
+
+{'hasError': True, 'errParameter': ['SECURE_PROXY_SSL_HEADER', 'EMAIL_SSL_KEYFILE', 'SESSION_COOKIE_HTTPONLY'], 'reason': ["SECURE_PROXY_SSL_HEADER should be set to a tuple of header and value, e.g., ('HTTP_X_FORWARDED_PROTO', 'https')", 'EMAIL_SSL_KEYFILE should be set to the path of the SSL key file for sending email securely', 'SESSION_COOKIE_HTTPONLY should be set to True for better security by preventing client-side access to cookies']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: SECURE_PROXY_SSL_HEADER	EMAIL_SSL_KEYFILE	SESSION_COOKIE_HTTPONLY
+[Ciri] Reason for SECURE_PROXY_SSL_HEADER: SECURE_PROXY_SSL_HEADER should be set to a tuple of header names where the proxy sends the original HTTPS request information.
+[Ciri] Reason for EMAIL_SSL_KEYFILE: EMAIL_SSL_KEYFILE should be set to the path of the SSL key file for sending email securely
+[Ciri] Reason for SESSION_COOKIE_HTTPONLY: SESSION_COOKIE_HTTPONLY should be set to True for better security by preventing client-side access to cookies

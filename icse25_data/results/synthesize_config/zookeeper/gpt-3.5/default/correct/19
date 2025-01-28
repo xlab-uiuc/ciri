@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 4, 8]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout', 'autopurge.purgeInterval'], 'reason': ["The property 'maxSessionTimeout' has the value '-1' which is out of the valid range of a session timeout.", "The property 'autopurge.purgeInterval' has the value '-1' which is out of the valid range for purge interval."]}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'maxSessionTimeout'], 'reason': ["The property 'autopurge.purgeInterval' has the value '-1' which is out of the valid range for purge interval.", "The property 'maxSessionTimeout' has the value '-1' which is out of the valid range for session timeout."]}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'maxSessionTimeout'], 'reason': ["The property 'autopurge.purgeInterval' has a negative value which is not allowed.", "The property 'maxSessionTimeout' has a negative value which is not allowed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autopurge.purgeInterval	maxSessionTimeout
+[Ciri] Reason for autopurge.purgeInterval: The property 'autopurge.purgeInterval' has the value '-1' which is out of the valid range for purge interval.
+[Ciri] Reason for maxSessionTimeout: The property 'maxSessionTimeout' has the value '-1' which is out of the valid range of a session timeout.

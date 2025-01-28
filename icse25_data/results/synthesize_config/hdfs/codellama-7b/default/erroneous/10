@@ -1,0 +1,18 @@
+Wrong shot number:
+[12, 1, 2]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.pmem.cache.dirs'], 'reason': ["The property 'dfs.datanode.pmem.cache.dirs' has the value '/\\hadoop/s3a' which is not a valid path."]}
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.keytab.file'], 'reason': ["The property 'dfs.journalnode.keytab.file' has the value '/valid/file1' which is not a valid path."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.pmem.cache.dirs'], 'reason': ["The property 'dfs.datanode.pmem.cache.dirs' has the value '/\\hadoop/s3a' which is not a valid directory."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.pmem.cache.dirs
+[Ciri] Reason for dfs.datanode.pmem.cache.dirs: The property 'dfs.datanode.pmem.cache.dirs' has the value '/\hadoop/s3a' which is not a valid directory.

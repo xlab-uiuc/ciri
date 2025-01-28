@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.webapp.ui2.enable', 'yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size', 'yarn.nodemanager.windows-container.cpu-limit.enabled'], 'reason': ["The property 'yarn.webapp.ui2.enable' is no longer supported in Hadoop 3.3.0 and later versions.", "The property 'yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size' is specific to the Docker container runtime and is not applicable to the default container runtime in Hadoop 3.3.0.", "The property 'yarn.nodemanager.windows-container.cpu-limit.enabled' is specific to Windows containers and is not applicable to the default container runtime in Hadoop 3.3.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.webapp.ui2.enable	yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size	yarn.nodemanager.windows-container.cpu-limit.enabled
+[Ciri] Reason for yarn.webapp.ui2.enable: The property 'yarn.webapp.ui2.enable' is no longer supported in Hadoop 3.3.0 and later versions.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size: The property 'yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size' is specific to the Docker container runtime and is not applicable to the default container runtime in Hadoop 3.3.0.
+[Ciri] Reason for yarn.nodemanager.windows-container.cpu-limit.enabled: The property 'yarn.nodemanager.windows-container.cpu-limit.enabled' is specific to Windows containers and is not applicable to the default container runtime in Hadoop 3.3.0.

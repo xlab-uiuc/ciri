@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.web.threads', 'alluxio.underfs.web.parent.names'], 'reason': ["Invalid value for property 'alluxio.web.threads'. It should be greater than 0.", "Invalid value for property 'alluxio.underfs.web.parent.names'. It should not contain '..'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.web.threads', 'alluxio.underfs.web.parent.names'], 'reason': ["Invalid value for property 'alluxio.web.threads'. Value should be greater than 0.", "Invalid value for property 'alluxio.underfs.web.parent.names'. Value should not be '..'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.web.threads', 'alluxio.underfs.web.parent.names'], 'reason': ['Invalid value for alluxio.web.threads. Value should be greater than 0.', "Invalid value for alluxio.underfs.web.parent.names. Value should not be '..'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.web.threads	alluxio.underfs.web.parent.names
+[Ciri] Reason for alluxio.web.threads: Invalid value for property 'alluxio.web.threads'. It should be greater than 0.
+[Ciri] Reason for alluxio.underfs.web.parent.names: Invalid value for alluxio.underfs.web.parent.names. Value should not be '..'.

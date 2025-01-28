@@ -1,0 +1,15 @@
+Wrong shot number:
+[3, 10, 1]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.directoryscan.interval', 'dfs.datanode.data.write.bandwidthPerSec'], 'reason': ["The property 'dfs.datanode.directoryscan.interval' has a value of 0, which disables directory scanning. This is not recommended as it prevents the detection of discrepancies between the in-memory block list and the block files on the disk.", "The property 'dfs.datanode.data.write.bandwidthPerSec' has a value of -1, which is not a valid setting. The description suggests a value of 0 means no limit, but -1 is used instead."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.directoryscan.interval	dfs.datanode.data.write.bandwidthPerSec
+[Ciri] Reason for dfs.datanode.directoryscan.interval: The property 'dfs.datanode.directoryscan.interval' has a value of 0, which disables directory scanning. This is not recommended as it prevents the detection of discrepancies between the in-memory block list and the block files on the disk.
+[Ciri] Reason for dfs.datanode.data.write.bandwidthPerSec: The property 'dfs.datanode.data.write.bandwidthPerSec' has a value of -1, which is not a valid setting. The description suggests a value of 0 means no limit, but -1 is used instead.

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.store.class</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore</value>
+    <description>The class to use as the persistent store.
+
+      If org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore
+      is used, the store is implicitly fenced; meaning a single ResourceManager
+      is able to use the store at any point in time. More details on this
+      implicit fencing, along with setting up appropriate ACLs is discussed
+      under yarn.resourcemanager.zk-state-store.root-node.acl.
+    </description>
+</property>
+
+<property>
+  <name>yarn.client.failover-proxy-provider</name>
+  <value>org.apache.hadoop.yarn.client.ConfiguredRMFailoverProxyProvider</value>
+    <description>When HA is enabled, the class to be used by Clients, AMs and
+      NMs to failover to the Active RM. It should extend
+      org.apache.hadoop.yarn.client.RMFailoverProxyProvider</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.scheduler.monitor.policies</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy</value>
+    <description>The list of SchedulingEditPolicy classes that interact with
+        the scheduler. A particular module may be incompatible with the
+        scheduler, other policies, or a configuration of either.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.allowed-runtimes</name>
+  <value>default</value>
+    <description>Comma separated list of runtimes that are allowed when using
+    LinuxContainerExecutor. The allowed values are default, docker, runc, and
+    javasandbox.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resourcemanager.minimum.version</name>
+  <value>NONE</value>
+    <description>The minimum allowed version of a resourcemanager that a nodemanager will connect to.  
+      The valid values are NONE (no version checking), EqualToNM (the resourcemanager's version is 
+      equal to or greater than the NM version), or a Version String.</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.cleaner.resource-sleep-ms</name>
+  <value>-1</value>
+    <description>The time to sleep between processing each shared cache
+    resource. Specified in milliseconds.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.nm-container-queuing.max-queue-length</name>
+  <value>15</value>
+    <description>
+    Max length of container queue at NodeManager.
+    </description>
+</property>
+
+<property>
+  <name>yarn.client.load.resource-types.from-server</name>
+  <value>false</value>
+    <description>
+      Provides an option for client to load supported resource types from RM
+      instead of depending on local resource-types.xml file.
+    </description>
+</property>
+
+</configuration>

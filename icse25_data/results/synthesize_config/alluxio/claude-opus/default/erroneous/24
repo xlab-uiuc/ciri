@@ -1,0 +1,15 @@
+Wrong shot number:
+[1, 2, 8]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.web.threads'], 'reason': ["The property 'alluxio.job.master.client.threads' has a negative value -100 which is not allowed. It must be a non-negative integer.", "The property 'alluxio.web.threads' has the value 0 which is not allowed. It must be a positive integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.client.threads	alluxio.web.threads
+[Ciri] Reason for alluxio.job.master.client.threads: The property 'alluxio.job.master.client.threads' has a negative value -100 which is not allowed. It must be a non-negative integer.
+[Ciri] Reason for alluxio.web.threads: The property 'alluxio.web.threads' has the value 0 which is not allowed. It must be a positive integer.

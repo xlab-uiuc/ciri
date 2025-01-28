@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 4, 7]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['recovery_target_action'], 'reason': ["The value of the property 'recovery_target_action' should be one of the following: 'pause', 'promote', 'shutdown', 'shutdown_immediate', 'finalize', 'abort'."]}
+
+{'hasError': True, 'errParameter': ['recovery_target_action'], 'reason': ["The value of the property 'recovery_target_action' is not a valid value. The valid values are 'pause', 'promote', 'shutdown', 'shutdown_immediate', 'finalize', 'abort', 'timeline_end', 'wal_end', 'time', 'name', 'lsn', 'immediate', 'standby_follow', 'standby_promote', 'standby_shutdown', 'standby_restart', 'standby_archive_cleanup', 'standby_archive_check', 'standby_ready', 'standby_off'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: recovery_target_action
+[Ciri] Reason for recovery_target_action: The value of the property 'recovery_target_action' should be one of the following: 'pause', 'promote', 'shutdown', 'shutdown_immediate', 'finalize', 'abort'.

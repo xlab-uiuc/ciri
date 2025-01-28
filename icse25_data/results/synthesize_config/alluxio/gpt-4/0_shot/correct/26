@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.network.connection.shutdown.graceful.timeout', 'alluxio.user.file.master.client.pool.gc.threshold', 'alluxio.master.daily.backup.state.lock.timeout', 'alluxio.zookeeper.leader.connection.error.policy'], 'reason': ['The value should be specified in bytes, not MB.', 'The value should be specified in ms (milliseconds), not sec.', 'The value should be specified in ms (milliseconds), not sec.', 'The value should be specified in ms (milliseconds), not h.', "The correct property is 'alluxio.zookeeper.leader.inquiry.retry.policy' for Alluxio version 2.5.0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.user.network.rpc.max.inbound.message.size	alluxio.network.connection.shutdown.graceful.timeout	alluxio.user.file.master.client.pool.gc.threshold	alluxio.master.daily.backup.state.lock.timeout	alluxio.zookeeper.leader.connection.error.policy
+[Ciri] Reason for alluxio.user.network.rpc.max.inbound.message.size: The value should be specified in bytes, not MB.
+[Ciri] Reason for alluxio.network.connection.shutdown.graceful.timeout: The value should be specified in ms (milliseconds), not sec.
+[Ciri] Reason for alluxio.user.file.master.client.pool.gc.threshold: The value should be specified in ms (milliseconds), not sec.
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.timeout: The value should be specified in ms (milliseconds), not h.
+[Ciri] Reason for alluxio.zookeeper.leader.connection.error.policy: The correct property is 'alluxio.zookeeper.leader.inquiry.retry.policy' for Alluxio version 2.5.0.

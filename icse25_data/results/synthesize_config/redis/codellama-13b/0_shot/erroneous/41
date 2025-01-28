@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'replica-read-only', 'repl-diskless-sync-max-replicas'], 'reason': ['cluster-enabled is not a valid parameter for Redis 7.0.0', 'replica-read-only is not a valid parameter for Redis 7.0.0', 'repl-diskless-sync-max-replicas is not a valid parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-node-timeout', 'unixsocketperm', 'repl-diskless-sync', 'replica-announce-ip', 'repl-diskless-sync-max-replicas', 'replica-read-only', 'hash-max-listpack-value'], 'reason': ['cluster-enabled is not a valid parameter', 'cluster-node-timeout is not a valid parameter', 'unixsocketperm is not a valid parameter', 'repl-diskless-sync is not a valid parameter', 'replica-announce-ip is not a valid parameter', 'repl-diskless-sync-max-replicas is not a valid parameter', 'replica-read-only is not a valid parameter', 'hash-max-listpack-value is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-node-timeout', 'repl-diskless-sync', 'replica-announce-ip', 'repl-diskless-sync-max-replicas', 'replica-read-only', 'hash-max-listpack-value'], 'reason': ['cluster-enabled is not a valid parameter for Redis 7.0.0', 'cluster-node-timeout is not a valid parameter for Redis 7.0.0', 'repl-diskless-sync is not a valid parameter for Redis 7.0.0', 'replica-announce-ip is not a valid parameter for Redis 7.0.0', 'repl-diskless-sync-max-replicas is not a valid parameter for Redis 7.0.0', 'replica-read-only is not a valid parameter for Redis 7.0.0', 'hash-max-listpack-value is not a valid parameter for Redis 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-node-timeout', 'repl-diskless-sync', 'replica-announce-ip', 'repl-diskless-sync-max-replicas', 'replica-read-only', 'hash-max-listpack-value'], 'reason': ['cluster-enabled is not a valid parameter for Redis 7.0.0', 'cluster-node-timeout is not a valid parameter for Redis 7.0.0', 'repl-diskless-sync is not a valid parameter for Redis 7.0.0', 'replica-announce-ip is not a valid parameter for Redis 7.0.0', 'repl-diskless-sync-max-replicas is not a valid parameter for Redis 7.0.0', 'replica-read-only is not a valid parameter for Redis 7.0.0', 'hash-max-listpack-value is not a valid parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-node-timeout', 'unixsocketperm', 'repl-diskless-sync', 'replica-announce-ip', 'repl-diskless-sync-max-replicas', 'replica-read-only', 'hash-max-listpack-value'], 'reason': ['cluster-enabled should be set to yes', 'cluster-node-timeout should be set to 10000', 'unixsocketperm should be set to 750', 'repl-diskless-sync should be set to no', 'replica-announce-ip should be set to 127.0.0.1', 'repl-diskless-sync-max-replicas should be set to 0', 'replica-read-only should be set to no', 'hash-max-listpack-value should be set to 64']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-node-timeout', 'repl-diskless-sync', 'replica-announce-ip', 'repl-diskless-sync-max-replicas', 'replica-read-only', 'hash-max-listpack-value'], 'reason': ['cluster-enabled is not a valid configuration parameter for Redis 7.0.0', 'cluster-node-timeout is not a valid configuration parameter for Redis 7.0.0', 'repl-diskless-sync is not a valid configuration parameter for Redis 7.0.0', 'replica-announce-ip is not a valid configuration parameter for Redis 7.0.0', 'repl-diskless-sync-max-replicas is not a valid configuration parameter for Redis 7.0.0', 'replica-read-only is not a valid configuration parameter for Redis 7.0.0', 'hash-max-listpack-value is not a valid configuration parameter for Redis 7.0.0']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: cluster-enabled	cluster-node-timeout	repl-diskless-sync	replica-announce-ip	repl-diskless-sync-max-replicas	replica-read-only	hash-max-listpack-value
+[Ciri] Reason for cluster-enabled: cluster-enabled is not a valid parameter for Redis 7.0.0
+[Ciri] Reason for cluster-node-timeout: cluster-node-timeout is not a valid parameter for Redis 7.0.0
+[Ciri] Reason for repl-diskless-sync: repl-diskless-sync is not a valid parameter for Redis 7.0.0
+[Ciri] Reason for replica-announce-ip: replica-announce-ip is not a valid parameter for Redis 7.0.0
+[Ciri] Reason for repl-diskless-sync-max-replicas: repl-diskless-sync-max-replicas is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for replica-read-only: replica-read-only is not a valid parameter for Redis 7.0.0
+[Ciri] Reason for hash-max-listpack-value: hash-max-listpack-value is not a valid configuration parameter for Redis 7.0.0

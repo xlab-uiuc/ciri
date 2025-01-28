@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['unix_socket_group', 'include', 'vacuum_multixact_failsafe_age', 'syslog_facility'], 'reason': ["The 'unix_socket_group' parameter should not be empty if intended to be used. It specifies the Unix-domain socket group or should be omitted if default permissions are desired.", "The 'include' parameter syntax seems incorrect. It should specify a file to include, e.g., include = 'somefile.conf'. If the intention was to use ellipsis as a placeholder, it's not clear without context.", "The 'vacuum_multixact_failsafe_age' value is too high. The maximum value for this setting should ensure that vacuuming occurs before the multixact ID wraps around. The provided value exceeds the 32-bit limit, which could lead to issues.", "The 'syslog_facility' value 'LOCAL0' is valid, but ensure that syslog is properly configured to handle PostgreSQL logs, as misconfiguration can lead to logging issues."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: unix_socket_group	include	vacuum_multixact_failsafe_age	syslog_facility
+[Ciri] Reason for unix_socket_group: The 'unix_socket_group' parameter should not be empty if intended to be used. It specifies the Unix-domain socket group or should be omitted if default permissions are desired.
+[Ciri] Reason for include: The 'include' parameter syntax seems incorrect. It should specify a file to include, e.g., include = 'somefile.conf'. If the intention was to use ellipsis as a placeholder, it's not clear without context.
+[Ciri] Reason for vacuum_multixact_failsafe_age: The 'vacuum_multixact_failsafe_age' value is too high. The maximum value for this setting should ensure that vacuuming occurs before the multixact ID wraps around. The provided value exceeds the 32-bit limit, which could lead to issues.
+[Ciri] Reason for syslog_facility: The 'syslog_facility' value 'LOCAL0' is valid, but ensure that syslog is properly configured to handle PostgreSQL logs, as misconfiguration can lead to logging issues.

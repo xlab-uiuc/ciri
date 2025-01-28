@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'proto-max-bulk-len', 'oom-score-adj-values'], 'reason': ["The 'cluster-announce-ip' value is not a valid IP address. IP addresses must be in the range from 0.0.0.0 to 255.255.255.255.", "The 'proto-max-bulk-len' value is too high. Redis supports a maximum bulk length of 512MB, but it should be specified in bytes, not megabytes.", "The 'oom-score-adj-values' format is incorrect. It should be a single value, not multiple values separated by spaces."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-ip	proto-max-bulk-len	oom-score-adj-values
+[Ciri] Reason for cluster-announce-ip: The 'cluster-announce-ip' value is not a valid IP address. IP addresses must be in the range from 0.0.0.0 to 255.255.255.255.
+[Ciri] Reason for proto-max-bulk-len: The 'proto-max-bulk-len' value is too high. Redis supports a maximum bulk length of 512MB, but it should be specified in bytes, not megabytes.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' format is incorrect. It should be a single value, not multiple values separated by spaces.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.ssl', 'hadoop.security.group.mapping.ldap.directory.search.timeout', 'fs.s3a.security.credential.provider.path', 'hadoop.prometheus.endpoint.enabled'], 'reason': ["Value should be a boolean (true/false) for property 'hadoop.security.group.mapping.ldap.ssl'.", "Value should be an integer for property 'hadoop.security.group.mapping.ldap.directory.search.timeout'.", "Value should be a valid file path for property 'fs.s3a.security.credential.provider.path'.", "Value should be a boolean (true/false) for property 'hadoop.prometheus.endpoint.enabled'."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.ssl', 'hadoop.security.group.mapping.ldap.directory.search.timeout', 'fs.s3a.security.credential.provider.path', 'hadoop.prometheus.endpoint.enabled'], 'reason': ['The value for hadoop.security.group.mapping.ldap.ssl should be a boolean (true/false).', 'The value for hadoop.security.group.mapping.ldap.directory.search.timeout should be an integer.', 'The value for fs.s3a.security.credential.provider.path should be a valid file path.', 'The value for hadoop.prometheus.endpoint.enabled should be a boolean (true/false).']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.ssl', 'hadoop.security.group.mapping.ldap.search.attr.member', 'hadoop.prometheus.endpoint.enabled'], 'reason': ['The value for hadoop.security.group.mapping.ldap.ssl should be a boolean (true/false).', 'The value for hadoop.security.group.mapping.ldap.search.attr.member should be a string.', 'The value for hadoop.prometheus.endpoint.enabled should be a boolean (true/false).']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.ssl	hadoop.security.group.mapping.ldap.directory.search.timeout	fs.s3a.security.credential.provider.path	hadoop.prometheus.endpoint.enabled
+[Ciri] Reason for hadoop.security.group.mapping.ldap.ssl: The value for hadoop.security.group.mapping.ldap.ssl should be a boolean (true/false).
+[Ciri] Reason for hadoop.security.group.mapping.ldap.directory.search.timeout: Value should be an integer for property 'hadoop.security.group.mapping.ldap.directory.search.timeout'.
+[Ciri] Reason for fs.s3a.security.credential.provider.path: Value should be a valid file path for property 'fs.s3a.security.credential.provider.path'.
+[Ciri] Reason for hadoop.prometheus.endpoint.enabled: The value for hadoop.prometheus.endpoint.enabled should be a boolean (true/false).

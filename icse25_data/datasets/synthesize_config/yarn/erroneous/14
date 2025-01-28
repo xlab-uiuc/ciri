@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled</name>
+  <value>true</value>
+    <description>Flag to enable override of the default kerberos authentication
+    filter with the RM authentication filter to allow authentication using
+    delegation tokens(fallback to kerberos if the tokens are missing). Only
+    applicable when the http authentication type is kerberos.</description>
+</property>
+
+<property>
+  <name>yarn.log-aggregation.debug.filesize</name>
+  <value>104857600</value>
+    <description>The log files created under NM Local Directories
+    will be logged if it exceeds the configured bytes. This
+    only takes effect if log4j level is at least Debug.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.logaggregation.threadpool-size-max</name>
+  <value>-1</value>
+    <description>
+    Thread pool size for LogAggregationService in Node Manager.
+    </description>
+</property>
+
+<property>
+  <name>yarn.web-proxy.keytab</name>
+  <value>/valid/file1</value>
+    <description>Keytab for WebAppProxy, if the proxy is not running as part of 
+    the RM.</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.admin.address</name>
+  <value>0.0.0.0:3000</value>
+    <description>The address of the admin interface in the SCM (shared cache manager)</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min</name>
+  <value>1800</value>
+    <description>Defines the positive minimum hard limit for
+    "yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds".
+    If this configuration has been set less than its default value (3600)
+    the NodeManager may raise a warning.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.disk-validator</name>
+  <value>basic</value>
+    <description>
+      The name of disk validator.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.submission-preprocessor.enabled</name>
+  <value>false</value>
+    <description>
+      Enable the Pre processing of Application Submission context with server side configuration
+    </description>
+</property>
+
+</configuration>

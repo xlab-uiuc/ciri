@@ -1,0 +1,27 @@
+Wrong shot number:
+[1, 6, 11]
+
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.balancer.keytab.file', 'dfs.mover.keytab.file'], 'reason': ["The property 'dfs.balancer.keytab.file' has the value '/valid/file2' which is not a valid file path.", "The property 'dfs.mover.keytab.file' has the value '/valid/file2' which is not a valid file path."]}
+
+{'hasError': True, 'errParameter': ['dfs.mover.keytab.file'], 'reason': ["The property 'dfs.mover.keytab.file' has the value '/valid/file2' which is not a valid file path."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.replica.cache.expiry.time'], 'reason': ["The property 'dfs.datanode.replica.cache.expiry.time' has the value '1m' which is not of the correct type Long."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.balancer.keytab.file', 'dfs.mover.keytab.file'], 'reason': ["The property 'dfs.balancer.keytab.file' has the value '/valid/file2' which is not a valid file path.", "The property 'dfs.mover.keytab.file' has the value '/valid/file2' which is not a valid file path."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['dfs.balancer.keytab.file', 'dfs.mover.keytab.file'], 'reason': ["The property 'dfs.balancer.keytab.file' has the value '/valid/file2' which is not a valid file path.", "The property 'dfs.mover.keytab.file' has the value '/valid/file2' which is not a valid file path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.balancer.keytab.file	dfs.mover.keytab.file
+[Ciri] Reason for dfs.balancer.keytab.file: The property 'dfs.balancer.keytab.file' has the value '/valid/file2' which is not a valid file path.
+[Ciri] Reason for dfs.mover.keytab.file: The property 'dfs.mover.keytab.file' has the value '/valid/file2' which is not a valid file path.

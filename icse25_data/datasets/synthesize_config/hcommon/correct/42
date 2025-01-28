@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.instrumentation.requires.admin</name>
+  <value>true</value>
+  <description>
+    Indicates if administrator ACLs are required to access
+    instrumentation servlets (JMX, METRICS, CONF, STACKS).
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.num.attempts.before.failover</name>
+  <value>6</value>
+  <description>
+    This property is the number of attempts to be made for LDAP operations
+    using a single LDAP instance. If multiple LDAP servers are configured
+    and this number of failed operations is reached, we will switch to the
+    next LDAP server. The configuration for the overall number of attempts
+    will still be respected, failover will thus be performed only if this
+    property is less than hadoop.security.group.mapping.ldap.num.attempts.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.fast.upload.buffer</name>
+  <value>disk</value>
+  <description>
+    The buffering mechanism to for data being written.
+    Values: disk, array, bytebuffer.
+
+    "disk" will use the directories listed in fs.s3a.buffer.dir as
+    the location(s) to save data prior to being uploaded.
+
+    "array" uses arrays in the JVM heap
+
+    "bytebuffer" uses off-heap memory within the JVM.
+
+    Both "array" and "bytebuffer" will consume memory in a single stream up to the number
+    of blocks set by:
+
+        fs.s3a.multipart.size * fs.s3a.fast.upload.active.blocks.
+
+    If using either of these mechanisms, keep this value low
+
+    The total number of threads performing work across all threads is set by
+    fs.s3a.threads.max, with fs.s3a.max.total.tasks values setting the number of queued
+    work items.
+  </description>
+</property>
+
+<property>
+  <name>fs.azure.authorization.caching.enable</name>
+  <value>true</value>
+  <description>
+    Config flag to enable caching of authorization results and saskeys in WASB.
+    This flag is relevant only when fs.azure.authorization is enabled.
+  </description>
+</property>
+
+<property>
+  <name>io.mapfile.bloom.size</name>
+  <value>524288</value>
+  <description>The size of BloomFilter-s used in BloomMapFile. Each time this many
+  keys is appended the next BloomFilter will be created (inside a DynamicBloomFilter).
+  Larger values minimize the number of filters, which slightly increases the performance,
+  but may waste too much space if the total number of keys is usually much smaller
+  than this number.
+  </description>
+</property>
+
+<property>
+  <name>file.blocksize</name>
+  <value>134217728</value>
+  <description>Block size</description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.token.validity</name>
+  <value>18000</value>
+  <description>
+    Indicates how long (in seconds) an authentication token is valid before it has
+    to be renewed.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.kms.client.encrypted.key.cache.size</name>
+  <value>250</value>
+  <description>
+    Size of the EncryptedKeyVersion cache Queue for each key
+  </description>
+</property>
+
+</configuration>

@@ -1,0 +1,20 @@
+Wrong shot number:
+[7, 3, 8]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.ratio.offpeak', 'hbase.offpeak.end.hour', 'hbase.status.multicast.address.port'], 'reason': ["The property 'hbase.hstore.compaction.ratio.offpeak' has the value '4.0F' which is not a valid float value.", "The property 'hbase.offpeak.end.hour' has the value '-1' which is out of the valid range for off-peak hours.", "The property 'hbase.status.multicast.address.port' has the value '3000' which is already in use by 'hbase.snapshot.restore.take.failsafe.snapshot'."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.ratio.offpeak', 'hbase.status.multicast.address.port'], 'reason': ["The property 'hbase.hstore.compaction.ratio.offpeak' has the value '4.0F' which is not a valid float value.", "The property 'hbase.status.multicast.address.port' has the value '3000' which is already in use by another property."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.ratio.offpeak', 'hbase.offpeak.end.hour', 'hbase.status.multicast.address.port'], 'reason': ["The property 'hbase.hstore.compaction.ratio.offpeak' has the value '4.0F' which is not a valid float value.", "The property 'hbase.offpeak.end.hour' has the value '-1' which is out of the valid range for off-peak hours.", "The property 'hbase.status.multicast.address.port' has the value '3000' which is already in use by another property."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.hstore.compaction.ratio.offpeak	hbase.offpeak.end.hour	hbase.status.multicast.address.port
+[Ciri] Reason for hbase.hstore.compaction.ratio.offpeak: The property 'hbase.hstore.compaction.ratio.offpeak' has the value '4.0F' which is not a valid float value.
+[Ciri] Reason for hbase.offpeak.end.hour: The property 'hbase.offpeak.end.hour' has the value '-1' which is out of the valid range for off-peak hours.
+[Ciri] Reason for hbase.status.multicast.address.port: The property 'hbase.status.multicast.address.port' has the value '3000' which is already in use by 'hbase.snapshot.restore.take.failsafe.snapshot'.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dynamic_shared_memory_type', 'lc_time'], 'reason': ["The parameter 'dynamic_shared_memory_type' does not exist in PostgreSQL 13.0. It was introduced in PostgreSQL 14.", "The parameter 'lc_time' should be set to a valid locale name, not 'C'. 'C' is a deprecated value and may cause issues with date/time formatting."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dynamic_shared_memory_type	lc_time
+[Ciri] Reason for dynamic_shared_memory_type: The parameter 'dynamic_shared_memory_type' does not exist in PostgreSQL 13.0. It was introduced in PostgreSQL 14.
+[Ciri] Reason for lc_time: The parameter 'lc_time' should be set to a valid locale name, not 'C'. 'C' is a deprecated value and may cause issues with date/time formatting.

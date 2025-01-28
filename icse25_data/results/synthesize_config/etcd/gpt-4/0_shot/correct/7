@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['election-timeout', 'quota-backend-bytes', 'discovery-fallback'], 'reason': ["The 'election-timeout' is usually specified in milliseconds, but the recommended value is at least 10000ms to avoid frequent leader changes.", "Setting 'quota-backend-bytes' to 0 is not recommended. This parameter should be set to a positive number to limit the storage size of the backend database. A value of 0 means no limit, which could potentially lead to issues if the database grows too large.", "The 'discovery-fallback' option is not a recognized configuration parameter in etcd version 3.5.0. This might be a typo or a misunderstanding of the available configuration options."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: election-timeout	quota-backend-bytes	discovery-fallback
+[Ciri] Reason for election-timeout: The 'election-timeout' is usually specified in milliseconds, but the recommended value is at least 10000ms to avoid frequent leader changes.
+[Ciri] Reason for quota-backend-bytes: Setting 'quota-backend-bytes' to 0 is not recommended. This parameter should be set to a positive number to limit the storage size of the backend database. A value of 0 means no limit, which could potentially lead to issues if the database grows too large.
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' option is not a recognized configuration parameter in etcd version 3.5.0. This might be a typo or a misunderstanding of the available configuration options.

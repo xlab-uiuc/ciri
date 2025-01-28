@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-lazy-flush', 'list-compress-depth', 'replica-announce-ip'], 'reason': ["The 'replica-lazy-flush' option was removed in Redis 6.0 and later versions.", "The 'list-compress-depth' option was removed in Redis 6.0 and later versions.", "The 'replica-announce-ip' option is not a valid configuration parameter in Redis 7.0.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: replica-lazy-flush	list-compress-depth	replica-announce-ip
+[Ciri] Reason for replica-lazy-flush: The 'replica-lazy-flush' option was removed in Redis 6.0 and later versions.
+[Ciri] Reason for list-compress-depth: The 'list-compress-depth' option was removed in Redis 6.0 and later versions.
+[Ciri] Reason for replica-announce-ip: The 'replica-announce-ip' option is not a valid configuration parameter in Redis 7.0.0.

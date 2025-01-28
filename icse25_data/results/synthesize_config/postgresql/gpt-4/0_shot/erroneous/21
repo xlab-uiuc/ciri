@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl=off', 'ssl_key_file', 'log_parameter_max_length', 'listen_addresses'], 'reason': ["The correct format for boolean settings is 'ssl = off' without quotes around the value.", "The 'ssl_key_file' parameter has a misplaced single quote at the end.", "The 'log_parameter_max_length' value should be a non-negative integer.", "The 'listen_addresses' value should be enclosed in double quotes, not single quotes."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: ssl=off	ssl_key_file	log_parameter_max_length	listen_addresses
+[Ciri] Reason for ssl=off: The correct format for boolean settings is 'ssl = off' without quotes around the value.
+[Ciri] Reason for ssl_key_file: The 'ssl_key_file' parameter has a misplaced single quote at the end.
+[Ciri] Reason for log_parameter_max_length: The 'log_parameter_max_length' value should be a non-negative integer.
+[Ciri] Reason for listen_addresses: The 'listen_addresses' value should be enclosed in double quotes, not single quotes.

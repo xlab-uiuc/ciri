@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.s3guard.ddb.max.retries', 'fs.s3a.select.output.csv.field.delimiter', 'file.stream-buffer-size', 'hadoop.http.cross-origin.allowed-methods', 'hadoop.user.group.static.mapping.overrides', 'hadoop.security.java.secure.random.algorithm', 'hadoop.shell.missing.defaultFs.warning'], 'reason': ['fs.ftp.host.port is not a valid port number.', 'fs.s3a.s3guard.ddb.max.retries is not a valid number.', 'fs.s3a.select.output.csv.field.delimiter is not a valid delimiter.', 'file.stream-buffer-size is not a valid buffer size.', 'hadoop.http.cross-origin.allowed-methods is not a valid method.', 'hadoop.user.group.static.mapping.overrides is not a valid mapping.', 'hadoop.security.java.secure.random.algorithm is not a valid algorithm.', 'hadoop.shell.missing.defaultFs.warning is not a valid boolean.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.ftp.host.port	fs.s3a.s3guard.ddb.max.retries	fs.s3a.select.output.csv.field.delimiter	file.stream-buffer-size	hadoop.http.cross-origin.allowed-methods	hadoop.user.group.static.mapping.overrides	hadoop.security.java.secure.random.algorithm	hadoop.shell.missing.defaultFs.warning
+[Ciri] Reason for fs.ftp.host.port: fs.ftp.host.port is not a valid port number.
+[Ciri] Reason for fs.s3a.s3guard.ddb.max.retries: fs.s3a.s3guard.ddb.max.retries is not a valid number.
+[Ciri] Reason for fs.s3a.select.output.csv.field.delimiter: fs.s3a.select.output.csv.field.delimiter is not a valid delimiter.
+[Ciri] Reason for file.stream-buffer-size: file.stream-buffer-size is not a valid buffer size.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-methods: hadoop.http.cross-origin.allowed-methods is not a valid method.
+[Ciri] Reason for hadoop.user.group.static.mapping.overrides: hadoop.user.group.static.mapping.overrides is not a valid mapping.
+[Ciri] Reason for hadoop.security.java.secure.random.algorithm: hadoop.security.java.secure.random.algorithm is not a valid algorithm.
+[Ciri] Reason for hadoop.shell.missing.defaultFs.warning: hadoop.shell.missing.defaultFs.warning is not a valid boolean.

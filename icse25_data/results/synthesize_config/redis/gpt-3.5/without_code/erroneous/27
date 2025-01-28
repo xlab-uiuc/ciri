@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 8, 12]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'disable-thp'], 'reason': ["The property 'rdbcompression' has an invalid value '10000'. It should be an integer value representing the compression level.", "The property 'disable-thp' has an invalid value 'yes'. The accepted values are {yes, no}."]}
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'disable-thp'], 'reason': ["The property 'rdbcompression' has an invalid value '10000'. It should be an integer value within the accepted range.", "The property 'disable-thp' has an invalid value 'yes'. The accepted values are {yes, no}."]}
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'disable-thp'], 'reason': ["The property 'rdbcompression' is not a valid property in Redis version 7.0.0.", "The property 'disable-thp' is not a valid property in Redis version 7.0.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: rdbcompression	disable-thp
+[Ciri] Reason for rdbcompression: The property 'rdbcompression' has an invalid value '10000'. It should be an integer value within the accepted range.
+[Ciri] Reason for disable-thp: The property 'disable-thp' has an invalid value 'yes'. The accepted values are {yes, no}.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 11, 9]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type', 'alluxio.underfs.gcs.default.mode'], 'reason': ["The value of the property 'alluxio.master.journal.type' should be 'UFS' or 'EMBEDDED' for journaling configuration.", "The property 'alluxio.underfs.gcs.default.mode' has an invalid mode value."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type', 'alluxio.underfs.gcs.default.mode'], 'reason': ["The property 'alluxio.master.journal.type' has an invalid value 'CIRI'. Valid values are 'EMBEDDED', 'EXTERNAL', or 'UFS'.", "The property 'alluxio.underfs.gcs.default.mode' has an invalid mode '1400'. The mode should be in octal format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type', 'alluxio.underfs.gcs.default.mode'], 'reason': ["The value of the property 'alluxio.master.journal.type' should be one of the supported journal types like 'UFS' or 'EMBEDDED'.", "The property 'alluxio.underfs.gcs.default.mode' has an invalid mode value '1400'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.journal.type	alluxio.underfs.gcs.default.mode
+[Ciri] Reason for alluxio.master.journal.type: The value of the property 'alluxio.master.journal.type' should be one of the supported journal types like 'UFS' or 'EMBEDDED'.
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: The property 'alluxio.underfs.gcs.default.mode' has an invalid mode '1400'. The mode should be in octal format.

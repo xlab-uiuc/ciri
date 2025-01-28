@@ -1,0 +1,13 @@
+Correct shot number:
+[11, 1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.http.filter.initializers', 'hadoop.service.shutdown.timeout', 'ipc.[port_number].identity-provider.impl'], 'reason': ["The property 'hadoop.http.filter.initializers' has an additional 'usage' element which is not a standard configuration property.", "The property 'hadoop.service.shutdown.timeout' has an additional 'usage' element which is not a standard configuration property.", "The property 'ipc.[port_number].identity-provider.impl' has an additional 'description' element which is not a standard configuration property."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.http.filter.initializers	hadoop.service.shutdown.timeout	ipc.[port_number].identity-provider.impl
+[Ciri] Reason for hadoop.http.filter.initializers: The property 'hadoop.http.filter.initializers' has an additional 'usage' element which is not a standard configuration property.
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has an additional 'usage' element which is not a standard configuration property.
+[Ciri] Reason for ipc.[port_number].identity-provider.impl: The property 'ipc.[port_number].identity-provider.impl' has an additional 'description' element which is not a standard configuration property.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 12, 3]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.image.transfer-bootstrap-standby.bandwidthPerSec', 'dfs.ha.tail-edits.period'], 'reason': ["The property 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec' has the value '-1' which is not a valid bandwidth value.", "The property 'dfs.ha.tail-edits.period' has the value '60s' which does not follow the correct time unit format."]}
+
+{'hasError': True, 'errParameter': ['dfs.image.transfer-bootstrap-standby.bandwidthPerSec', 'dfs.ha.tail-edits.period'], 'reason': ["The property 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec' has the value '-1' which is not a valid bandwidth value.", "The property 'dfs.ha.tail-edits.period' has the value '60s' which does not follow the correct format for time unit suffix."]}
+
+{'hasError': True, 'errParameter': ['dfs.image.transfer-bootstrap-standby.bandwidthPerSec', 'dfs.ha.tail-edits.period'], 'reason': ["The property 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec' has the value '-1' which is not a valid bandwidth value.", "The property 'dfs.ha.tail-edits.period' has the value '60s' which does not follow the correct format for time unit suffix."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.image.transfer-bootstrap-standby.bandwidthPerSec	dfs.ha.tail-edits.period
+[Ciri] Reason for dfs.image.transfer-bootstrap-standby.bandwidthPerSec: The property 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec' has the value '-1' which is not a valid bandwidth value.
+[Ciri] Reason for dfs.ha.tail-edits.period: The property 'dfs.ha.tail-edits.period' has the value '60s' which does not follow the correct format for time unit suffix.

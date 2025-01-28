@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 10, 12]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regionserver.storefile.refresh.period' was removed in the previous version and is not used in the current version."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regionserver.storefile.refresh.period' should be greater than 0."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.normalizer.class'], 'reason': ["The value of the property 'hbase.master.normalizer.class' should be 'org.apache.hadoop.hbase.master.normalizer.SimpleRegionNormalizer' to enable the property 'hbase.master.normalizer.enabled'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.storefile.refresh.period
+[Ciri] Reason for hbase.regionserver.storefile.refresh.period: The property 'hbase.regionserver.storefile.refresh.period' should be greater than 0.

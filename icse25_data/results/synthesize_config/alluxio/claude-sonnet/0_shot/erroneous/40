@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port=65536', 'alluxio.user.network.streaming.keepalive.time=4611686018427387903'], 'reason': ['The value 65536 for alluxio.job.master.rpc.port is outside the valid port range of 1-65535.', "The value 4611686018427387903 for alluxio.user.network.streaming.keepalive.time is too large and likely an invalid value. The keepalive time should be specified in a valid time duration format like '10min' or '2h'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.rpc.port=65536	alluxio.user.network.streaming.keepalive.time=4611686018427387903
+[Ciri] Reason for alluxio.job.master.rpc.port=65536: The value 65536 for alluxio.job.master.rpc.port is outside the valid port range of 1-65535.
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.time=4611686018427387903: The value 4611686018427387903 for alluxio.user.network.streaming.keepalive.time is too large and likely an invalid value. The keepalive time should be specified in a valid time duration format like '10min' or '2h'.

@@ -1,0 +1,28 @@
+Wrong shot number:
+[2, 11, 15]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.defaultFS', 'fs.s3a.multipart.purge.age'], 'reason': ["The property 'io.seqfile.local.dir' has an invalid value '//hadoop/io/local'.", "The property 'fs.defaultFS' has an invalid value 'file:///'.", "The property 'fs.s3a.multipart.purge.age' should have a value in seconds, but it is set to '86400'."]}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.defaultFS'], 'reason': ["The property 'io.seqfile.local.dir' has an invalid value '//hadoop/io/local'.", "The property 'fs.defaultFS' has an invalid value 'file:///'."]}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.s3a.multipart.purge.age'], 'reason': ["The property 'io.seqfile.local.dir' has an invalid value '//hadoop/io/local'.", "The property 'fs.s3a.multipart.purge.age' should have a value in seconds."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.defaultFS', 'ipc.server.log.slow.rpc'], 'reason': ["The property 'io.seqfile.local.dir' has an invalid value '//hadoop/io/local'.", "The property 'fs.defaultFS' has the value 'file:///' which is not a valid default file system URI.", "The property 'ipc.server.log.slow.rpc' should have a boolean value (true/false)."]}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.defaultFS', 'ipc.server.log.slow.rpc'], 'reason': ["The property 'io.seqfile.local.dir' has an invalid value '//hadoop/io/local'.", "The property 'fs.defaultFS' has an invalid value 'file:///'.", "The property 'ipc.server.log.slow.rpc' has an invalid value 'false'."]}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.defaultFS'], 'reason': ["The property 'io.seqfile.local.dir' has an invalid value '//hadoop/io/local'.", "The property 'fs.defaultFS' has an invalid value 'file:///'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: io.seqfile.local.dir	fs.defaultFS	ipc.server.log.slow.rpc
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' has an invalid value '//hadoop/io/local'.
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has an invalid value 'file:///'.
+[Ciri] Reason for ipc.server.log.slow.rpc: The property 'ipc.server.log.slow.rpc' has an invalid value 'false'.

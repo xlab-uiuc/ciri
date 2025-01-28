@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.webapp.cross-origin.enabled</name>
+  <value>true</value>
+    <description>Flag to enable cross-origin (CORS) support in the RM. This flag
+    requires the CORS filter initializer to be added to the filter initializers
+    list in core-site.xml.</description>
+</property>
+
+<property>
+  <name>yarn.log-aggregation.file-controller.TFile.class</name>
+  <value>org.apache.hadoop.yarn.logaggregation.filecontroller.tfile.LogAggregationTFileController</value>
+    <description>Class that supports TFile read and write operations.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.webapp.address</name>
+  <value>${yarn.nodemanager.hostname}:8042</value>
+    <description>NM Webapp address.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage</name>
+  <value>45.0</value>
+    <description>The maximum percentage of disk space utilization allowed after 
+    which a disk is marked as bad. Values can range from 0.0 to 100.0. 
+    If the value is greater than or equal to 100, the nodemanager will check 
+    for full disk. This applies to yarn.nodemanager.local-dirs and
+    yarn.nodemanager.log-dirs.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.allowed-runtimes</name>
+  <value>default</value>
+    <description>Comma separated list of runtimes that are allowed when using
+    LinuxContainerExecutor. The allowed values are default, docker, runc, and
+    javasandbox.</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.webapp.address</name>
+  <value>0.0.0.0:8788</value>
+    <description>The address of the web application in the SCM (shared cache manager)</description>
+</property>
+
+<property>
+  <name>yarn.scheduler.configuration.fs.path</name>
+  <value>/valid/file1</value>
+    <description>
+      The file system directory to store the configuration files. The path
+      can be any format as long as it follows hadoop compatible schema,
+      for example value "file:///path/to/dir" means to store files on local
+      file system, value "hdfs:///path/to/dir" means to store files on HDFS.
+      If resource manager HA is enabled, recommended to use hdfs schema so
+      it works in fail-over scenario.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.elastic-memory-control.timeout-sec</name>
+  <value>5</value>
+    <description>
+      Maximum time to wait for an OOM situation to get resolved before
+      bringing down the node.
+    </description>
+</property>
+
+</configuration>

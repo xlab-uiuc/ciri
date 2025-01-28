@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.rpc.executor.max.pool.size', 'alluxio.network.connection.server.shutdown.timeout'], 'reason': ['The value of alluxio.master.rpc.executor.max.pool.size is too large. It should be less than 500.', 'The value of alluxio.network.connection.server.shutdown.timeout is too small. It should be at least 10sec.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.rpc.executor.max.pool.size	alluxio.network.connection.server.shutdown.timeout
+[Ciri] Reason for alluxio.master.rpc.executor.max.pool.size: The value of alluxio.master.rpc.executor.max.pool.size is too large. It should be less than 500.
+[Ciri] Reason for alluxio.network.connection.server.shutdown.timeout: The value of alluxio.network.connection.server.shutdown.timeout is too small. It should be at least 10sec.

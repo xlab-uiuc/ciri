@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['electionAlg', 'maxSessionTimeout'], 'reason': ['Invalid value for electionAlg. It should be a positive integer.', 'Invalid value for maxSessionTimeout. It should be a positive integer greater than 0.']}
+
+{'hasError': True, 'errParameter': ['electionAlg', 'syncLimit', 'localSessionsEnabled', 'localSessionsUpgradingEnabled', 'maxSessionTimeout', 'quorum.auth.learnerRequireSasl', 'standaloneEnabled', 'peerType'], 'reason': ['Invalid value for electionAlg. It should be a positive integer.', 'Invalid value for syncLimit. It should be a positive integer.', 'Invalid value for localSessionsEnabled. It should be a boolean (true/false).', 'Invalid value for localSessionsUpgradingEnabled. It should be a boolean (true/false).', 'Invalid value for maxSessionTimeout. It should be a positive integer.', 'Invalid value for quorum.auth.learnerRequireSasl. It should be a boolean (true/false).', 'Invalid value for standaloneEnabled. It should be a boolean (true/false).', 'Invalid value for peerType. It should be one of the following: observer, participant, leader.']}
+
+{'hasError': True, 'errParameter': ['electionAlg', 'maxSessionTimeout'], 'reason': ['Invalid value for electionAlg. It should be a positive integer.', 'Invalid value for maxSessionTimeout. It should be a positive integer.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: electionAlg	maxSessionTimeout
+[Ciri] Reason for electionAlg: Invalid value for electionAlg. It should be a positive integer.
+[Ciri] Reason for maxSessionTimeout: Invalid value for maxSessionTimeout. It should be a positive integer.

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'quorum.auth.server.saslLoginContext', 'quorum.auth.enableSasl', 'autopurge.purgeInterval', 'reconfigEnabled', 'portUnification', 'electionAlg', 'secureClientPortAddress'], 'reason': ['clientPortAddress is not a valid IP address', 'quorum.auth.server.saslLoginContext is not a valid login context', 'quorum.auth.enableSasl is not a boolean', 'autopurge.purgeInterval is not a valid integer', 'reconfigEnabled is not a boolean', 'portUnification is not a boolean', 'electionAlg is not a valid integer', 'secureClientPortAddress is not a valid IP address']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'quorum.auth.server.saslLoginContext', 'quorum.auth.enableSasl', 'autopurge.purgeInterval', 'reconfigEnabled', 'portUnification', 'electionAlg', 'secureClientPortAddress'], 'reason': ['clientPortAddress should be a valid IP address', 'quorum.auth.server.saslLoginContext should be a valid login context', 'quorum.auth.enableSasl should be a boolean value', 'autopurge.purgeInterval should be a positive integer', 'reconfigEnabled should be a boolean value', 'portUnification should be a boolean value', 'electionAlg should be an integer value', 'secureClientPortAddress should be a valid IP address']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'quorum.auth.server.saslLoginContext', 'quorum.auth.enableSasl', 'autopurge.purgeInterval', 'reconfigEnabled', 'portUnification', 'electionAlg', 'secureClientPortAddress'], 'reason': ['clientPortAddress should be an integer', 'quorum.auth.server.saslLoginContext should be a string', 'quorum.auth.enableSasl should be a boolean', 'autopurge.purgeInterval should be an integer', 'reconfigEnabled should be a boolean', 'portUnification should be a boolean', 'electionAlg should be an integer', 'secureClientPortAddress should be a string']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: clientPortAddress	quorum.auth.server.saslLoginContext	quorum.auth.enableSasl	autopurge.purgeInterval	reconfigEnabled	portUnification	electionAlg	secureClientPortAddress
+[Ciri] Reason for clientPortAddress: clientPortAddress is not a valid IP address
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext should be a valid login context
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl should be a boolean
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval is not a valid integer
+[Ciri] Reason for reconfigEnabled: reconfigEnabled should be a boolean
+[Ciri] Reason for portUnification: portUnification should be a boolean
+[Ciri] Reason for electionAlg: electionAlg should be an integer value
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress should be a string

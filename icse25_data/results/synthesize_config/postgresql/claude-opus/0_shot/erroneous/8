@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['bgwriter_delay does not support units. It should be an integer value representing milliseconds.', 'max_pred_locks_per_relation must be a non-negative integer.', 'log_min_duration_sample must be a non-negative integer or -1 to disable sampling.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: bgwriter_delay	max_pred_locks_per_relation	log_min_duration_sample
+[Ciri] Reason for bgwriter_delay: bgwriter_delay does not support units. It should be an integer value representing milliseconds.
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation must be a non-negative integer.
+[Ciri] Reason for log_min_duration_sample: log_min_duration_sample must be a non-negative integer or -1 to disable sampling.

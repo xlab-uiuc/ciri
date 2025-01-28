@@ -1,0 +1,26 @@
+Wrong shot number:
+[9, 6, 3]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.scan.ratio'], 'reason': ["The property 'hbase.ipc.server.callqueue.scan.ratio' has the value '-1' which is not within the accepted value range of [0, 1]."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.bucketcache.size'], 'reason': ["The property 'hbase.bucketcache.size' has the value '0.1' which is not within the accepted value range. It should either represent a percentage of total heap memory size (< 1.0) or be the total capacity in megabytes of BucketCache."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.scan.ratio'], 'reason': ["The property 'hbase.ipc.server.callqueue.scan.ratio' has the value '-1' which is out of the accepted range of values."]}
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.scan.ratio'], 'reason': ["The property 'hbase.ipc.server.callqueue.scan.ratio' has the value '-1' which is out of the accepted range of values. It should be between 0 and 1."]}
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.scan.ratio'], 'reason': ["The property 'hbase.ipc.server.callqueue.scan.ratio' has the value '-1' which is out of the accepted range. It should be between 0 and 1."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.ipc.server.callqueue.scan.ratio
+[Ciri] Reason for hbase.ipc.server.callqueue.scan.ratio: The property 'hbase.ipc.server.callqueue.scan.ratio' has the value '-1' which is out of the accepted range of values.

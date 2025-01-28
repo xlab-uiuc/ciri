@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 4, 12]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'cluster-announce-port'], 'reason': ["The property 'tls-ca-cert-dir' has the value '/\\etc/ssl/certs' which contains an invalid escape character '\\' in the path.", "The property 'cluster-announce-port' has the value '1' which is not a valid port number. Port numbers should be between 1024 and 65535."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tls-ca-cert-dir	cluster-announce-port
+[Ciri] Reason for tls-ca-cert-dir: The property 'tls-ca-cert-dir' has the value '/\etc/ssl/certs' which contains an invalid escape character '\' in the path.
+[Ciri] Reason for cluster-announce-port: The property 'cluster-announce-port' has the value '1' which is not a valid port number. Port numbers should be between 1024 and 65535.

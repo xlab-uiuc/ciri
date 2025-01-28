@@ -1,0 +1,20 @@
+Wrong shot number:
+[7, 2, 3]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPort', 'maxSessionTimeout', 'minSessionTimeout'], 'reason': ["The property 'clientPort' is not valid for ZooKeeper version 3.7.0.", "The property 'maxSessionTimeout' has a value of '0' which is not allowed.", "The property 'minSessionTimeout' has a value of '0' which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['clientPort', 'maxSessionTimeout', 'minSessionTimeout'], 'reason': ["The property 'clientPort' is not valid for ZooKeeper version 3.7.0. Use 'clientPortAddress' instead.", "The property 'maxSessionTimeout' has a value of '0' which is not a valid timeout value.", "The property 'minSessionTimeout' has a value of '0' which is not a valid timeout value."]}
+
+{'hasError': True, 'errParameter': ['clientPort', 'maxSessionTimeout', 'minSessionTimeout'], 'reason': ["The property 'clientPort' is not valid for ZooKeeper version 3.7.0. Use 'clientPortAddress' instead.", "The property 'maxSessionTimeout' has a value of '0' which is not a valid timeout value.", "The property 'minSessionTimeout' has a value of '0' which is not a valid timeout value."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: clientPort	maxSessionTimeout	minSessionTimeout
+[Ciri] Reason for clientPort: The property 'clientPort' is not valid for ZooKeeper version 3.7.0. Use 'clientPortAddress' instead.
+[Ciri] Reason for maxSessionTimeout: The property 'maxSessionTimeout' has a value of '0' which is not a valid timeout value.
+[Ciri] Reason for minSessionTimeout: The property 'minSessionTimeout' has a value of '0' which is not a valid timeout value.

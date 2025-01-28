@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-lazy-flush', 'replica-serve-stale-data', 'dynamic-hz', 'replica-read-only', 'tls-ca-cert-file', 'jemalloc-bg-thread', 'cluster-config-file'], 'reason': ['bind-source-addr is not a valid parameter', 'replica-lazy-flush is not a valid parameter', 'replica-serve-stale-data is not a valid parameter', 'dynamic-hz is not a valid parameter', 'replica-read-only is not a valid parameter', 'tls-ca-cert-file is not a valid parameter', 'jemalloc-bg-thread is not a valid parameter', 'cluster-config-file is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-serve-stale-data', 'replica-read-only', 'tls-ca-cert-file', 'jemalloc-bg-thread', 'cluster-config-file'], 'reason': ['bind-source-addr is not a valid parameter in Redis 7.0.0', 'replica-serve-stale-data is not a valid parameter in Redis 7.0.0', 'replica-read-only is not a valid parameter in Redis 7.0.0', 'tls-ca-cert-file is not a valid parameter in Redis 7.0.0', 'jemalloc-bg-thread is not a valid parameter in Redis 7.0.0', 'cluster-config-file is not a valid parameter in Redis 7.0.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-lazy-flush', 'replica-serve-stale-data', 'dynamic-hz', 'replica-read-only', 'tls-ca-cert-file', 'jemalloc-bg-thread', 'cluster-config-file'], 'reason': ['bind-source-addr is not a valid parameter', 'replica-lazy-flush is not a valid parameter', 'replica-serve-stale-data is not a valid parameter', 'dynamic-hz is not a valid parameter', 'replica-read-only is not a valid parameter', 'tls-ca-cert-file is not a valid parameter', 'jemalloc-bg-thread is not a valid parameter', 'cluster-config-file is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-lazy-flush', 'replica-serve-stale-data', 'dynamic-hz', 'replica-read-only', 'tls-ca-cert-file', 'jemalloc-bg-thread', 'cluster-config-file'], 'reason': ['bind-source-addr is not a valid parameter', 'replica-lazy-flush is not a valid parameter', 'replica-serve-stale-data is not a valid parameter', 'dynamic-hz is not a valid parameter', 'replica-read-only is not a valid parameter', 'tls-ca-cert-file is not a valid parameter', 'jemalloc-bg-thread is not a valid parameter', 'cluster-config-file is not a valid parameter']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: bind-source-addr	replica-lazy-flush	replica-serve-stale-data	dynamic-hz	replica-read-only	tls-ca-cert-file	jemalloc-bg-thread	cluster-config-file
+[Ciri] Reason for bind-source-addr: bind-source-addr is not a valid parameter
+[Ciri] Reason for replica-lazy-flush: replica-lazy-flush is not a valid parameter
+[Ciri] Reason for replica-serve-stale-data: replica-serve-stale-data is not a valid parameter
+[Ciri] Reason for dynamic-hz: dynamic-hz is not a valid parameter
+[Ciri] Reason for replica-read-only: replica-read-only is not a valid parameter
+[Ciri] Reason for tls-ca-cert-file: tls-ca-cert-file is not a valid parameter
+[Ciri] Reason for jemalloc-bg-thread: jemalloc-bg-thread is not a valid parameter
+[Ciri] Reason for cluster-config-file: cluster-config-file is not a valid parameter

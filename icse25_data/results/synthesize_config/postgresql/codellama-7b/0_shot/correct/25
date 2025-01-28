@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'max_slot_wal_keep_size'], 'reason': ['max_wal_size must be greater than 0', 'max_slot_wal_keep_size must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'max_slot_wal_keep_size'], 'reason': ['max_wal_size must be greater than max_slot_wal_keep_size']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'max_slot_wal_keep_size'], 'reason': ['max_wal_size must be greater than 0', 'max_slot_wal_keep_size must be greater than 0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: max_wal_size	max_slot_wal_keep_size
+[Ciri] Reason for max_wal_size: max_wal_size must be greater than max_slot_wal_keep_size
+[Ciri] Reason for max_slot_wal_keep_size: max_slot_wal_keep_size must be greater than 0

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'proxy-read-timeout'], 'reason': ["The 'advertise-client-urls' parameter should be specified as a comma-separated list of URLs (e.g., http://localhost:2379).", "The 'proxy-read-timeout' parameter expects a duration string (e.g., 2s, 2m) but is specified as an integer. It should be changed to a valid duration string."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: advertise-client-urls	proxy-read-timeout
+[Ciri] Reason for advertise-client-urls: The 'advertise-client-urls' parameter should be specified as a comma-separated list of URLs (e.g., http://localhost:2379).
+[Ciri] Reason for proxy-read-timeout: The 'proxy-read-timeout' parameter expects a duration string (e.g., 2s, 2m) but is specified as an integer. It should be changed to a valid duration string.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-config-file', 'repl-diskless-load'], 'reason': ["The 'cluster-config-file' parameter is used for Redis Cluster configuration and is not applicable for a single Redis instance in version 7.0.0.", "The 'repl-diskless-load' parameter is deprecated in Redis 7.0.0 and has been removed. Instead, the 'repl-diskless-sync' parameter should be used to control diskless replication behavior."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-config-file	repl-diskless-load
+[Ciri] Reason for cluster-config-file: The 'cluster-config-file' parameter is used for Redis Cluster configuration and is not applicable for a single Redis instance in version 7.0.0.
+[Ciri] Reason for repl-diskless-load: The 'repl-diskless-load' parameter is deprecated in Redis 7.0.0 and has been removed. Instead, the 'repl-diskless-sync' parameter should be used to control diskless replication behavior.

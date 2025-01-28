@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.netty.worker.threads', 'fs.cos.connection.timeout'], 'reason': ["Invalid property 'alluxio.user.network.streaming.netty.worker.threads'. The value should be a positive integer.", "Invalid property 'fs.cos.connection.timeout'. The value should be in milliseconds format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.netty.worker.threads', 'fs.cos.connection.timeout'], 'reason': ["Invalid value for property 'alluxio.user.network.streaming.netty.worker.threads'. Value should be a positive integer or -1 for default.", "Invalid unit for property 'fs.cos.connection.timeout'. Use 's' for seconds, 'ms' for milliseconds, 'us' for microseconds, or 'ns' for nanoseconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.netty.worker.threads', 'fs.cos.connection.timeout'], 'reason': ['Invalid property: alluxio.user.network.streaming.netty.worker.threads', 'Invalid property: fs.cos.connection.timeout']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.streaming.netty.worker.threads	fs.cos.connection.timeout
+[Ciri] Reason for alluxio.user.network.streaming.netty.worker.threads: Invalid property: alluxio.user.network.streaming.netty.worker.threads
+[Ciri] Reason for fs.cos.connection.timeout: Invalid property: fs.cos.connection.timeout

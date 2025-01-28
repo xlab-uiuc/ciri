@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-lazy-flush', 'replica-serve-stale-data', 'dynamic-hz', 'replica-read-only', 'jemalloc-bg-thread'], 'reason': ["The 'bind-source-addr' parameter is invalid. It should be a valid IP address or hostname.", "The 'replica-lazy-flush' parameter is not a valid configuration option in Redis 7.0.0.", "The 'replica-serve-stale-data' parameter is not a valid configuration option in Redis 7.0.0.", "The 'dynamic-hz' parameter is not a valid configuration option in Redis 7.0.0.", "The 'replica-read-only' parameter is not a valid configuration option in Redis 7.0.0.", "The 'jemalloc-bg-thread' parameter is not a valid configuration option in Redis 7.0.0."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: bind-source-addr	replica-lazy-flush	replica-serve-stale-data	dynamic-hz	replica-read-only	jemalloc-bg-thread
+[Ciri] Reason for bind-source-addr: The 'bind-source-addr' parameter is invalid. It should be a valid IP address or hostname.
+[Ciri] Reason for replica-lazy-flush: The 'replica-lazy-flush' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for replica-serve-stale-data: The 'replica-serve-stale-data' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for dynamic-hz: The 'dynamic-hz' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for replica-read-only: The 'replica-read-only' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for jemalloc-bg-thread: The 'jemalloc-bg-thread' parameter is not a valid configuration option in Redis 7.0.0.

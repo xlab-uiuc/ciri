@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 5, 15]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm'], 'reason': ["The property 'dfs.datanode.data.dir.perm' has the value 'file://' which is not a valid directory path."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm'], 'reason': ["The property 'dfs.datanode.data.dir.perm' has an invalid value 'file://'. It should specify valid permissions for the directories on the local filesystem where the DFS data node stores its blocks."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm'], 'reason': ["The property 'dfs.datanode.data.dir.perm' has the value 'file://' which is not a valid directory path format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.data.dir.perm
+[Ciri] Reason for dfs.datanode.data.dir.perm: The property 'dfs.datanode.data.dir.perm' has the value 'file://' which is not a valid directory path.

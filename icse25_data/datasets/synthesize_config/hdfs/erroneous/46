@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.rpc-address</name>
+  <value>127.0.0.1</value>
+  <description>
+    RPC address that handles all clients requests. In the case of HA/Federation where multiple namenodes exist,
+    the name service id is added to the name e.g. dfs.namenode.rpc-address.ns1
+    dfs.namenode.rpc-address.EXAMPLENAMESERVICE
+    The value of this property will take the form of nn-host1:rpc-port. The NameNode's default RPC port is 8020.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.https.keystore.resource</name>
+  <value>ssl-client.xml</value>
+  <description>Resource file from which ssl client keystore
+  information will be extracted
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.failover.max.attempts</name>
+  <value>7</value>
+  <description>
+    Expert only. The number of client failover attempts that should be
+    made before the failover is considered failed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.avoid.write.stale.datanode</name>
+  <value>false</value>
+  <description>
+    Indicate whether or not to avoid writing to &quot;stale&quot; datanodes whose 
+    heartbeat messages have not been received by the namenode 
+    for more than a specified time interval. Writes will avoid using 
+    stale datanodes unless more than a configured ratio 
+    (dfs.namenode.write.stale.datanode.ratio) of datanodes are marked as 
+    stale. See dfs.namenode.avoid.read.stale.datanode for a similar setting
+    for reads.
+  </description>
+</property>
+
+<property>
+  <name>nfs.mountd.port</name>
+  <value>65536</value>
+  <description>
+      Specify the port number used by Hadoop mount daemon.
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.satisfier.keytab.file</name>
+  <value>/valid/file1</value>
+  <description>
+    The keytab file used by external StoragePolicySatisfier to login as its
+    service principal. The principal name is configured with
+    dfs.storage.policy.satisfier.kerberos.principal. Keytab based login
+    is required when dfs.storage.policy.satisfier.mode is external.
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.queued-edits.limit.mb</name>
+  <value>10</value>
+  <description>
+    Queue size in MB for quorum journal edits.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.send.qop.enabled</name>
+  <value>true</value>
+    <description>
+      A boolean specifies whether NameNode should encrypt the established QOP
+      and include it in block token. The encrypted QOP will be used by DataNode
+      as target QOP, overwriting DataNode configuration. This ensures DataNode
+      will use exactly the same QOP NameNode and client has already agreed on.
+    </description>
+</property>
+
+</configuration>

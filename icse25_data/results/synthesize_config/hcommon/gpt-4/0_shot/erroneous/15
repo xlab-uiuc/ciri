@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'fs.AbstractFileSystem.abfss.impl'], 'reason': ["The 'fs.default.name' property is deprecated and should be replaced with 'fs.defaultFS'.", "The value for 'fs.AbstractFileSystem.abfss.impl' seems incorrect. It should be 'org.apache.hadoop.fs.azurebfs.AzureBlobFileSystemStore' instead of 'org.apache.hadoop.fs.azurebfs.Abfss'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	fs.AbstractFileSystem.abfss.impl
+[Ciri] Reason for fs.default.name: The 'fs.default.name' property is deprecated and should be replaced with 'fs.defaultFS'.
+[Ciri] Reason for fs.AbstractFileSystem.abfss.impl: The value for 'fs.AbstractFileSystem.abfss.impl' seems incorrect. It should be 'org.apache.hadoop.fs.azurebfs.AzureBlobFileSystemStore' instead of 'org.apache.hadoop.fs.azurebfs.Abfss'.

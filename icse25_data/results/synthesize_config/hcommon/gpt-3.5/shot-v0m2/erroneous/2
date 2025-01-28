@@ -1,0 +1,12 @@
+Wrong shot number:
+[1, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.num.attempts', 'fs.s3a.assumed.role.session.duration'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.num.attempts' has the value '-5.5' which is not of the correct type Integer.", "The property 'fs.s3a.assumed.role.session.duration' has the value '20m' which is not of the correct type Integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.num.attempts	fs.s3a.assumed.role.session.duration
+[Ciri] Reason for hadoop.security.group.mapping.ldap.num.attempts: The property 'hadoop.security.group.mapping.ldap.num.attempts' has the value '-5.5' which is not of the correct type Integer.
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The property 'fs.s3a.assumed.role.session.duration' has the value '20m' which is not of the correct type Integer.

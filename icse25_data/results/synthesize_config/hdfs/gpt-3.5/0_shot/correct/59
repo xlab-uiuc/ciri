@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.nameservices', 'dfs.client.deadnode.detection.rpc.threads'], 'reason': ["The 'dfs.nameservices' property has a 'usage' tag which is not a valid tag for HDFS configuration.", "The 'dfs.client.deadnode.detection.rpc.threads' property has an extra space before the description tag."]}
+
+{'hasError': True, 'errParameter': ['dfs.nameservices', 'dfs.client.deadnode.detection.rpc.threads'], 'reason': ["The 'dfs.nameservices' property has an additional 'usage' element which is not a valid element for this property.", "The 'dfs.client.deadnode.detection.rpc.threads' property has an additional whitespace before the description element."]}
+
+{'hasError': True, 'errParameter': ['dfs.nameservices', 'dfs.client.deadnode.detection.rpc.threads'], 'reason': ["The 'dfs.nameservices' property has a 'usage' tag which is not a valid tag for HDFS configuration.", "The 'dfs.client.deadnode.detection.rpc.threads' property has an extra space before the description tag."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.nameservices	dfs.client.deadnode.detection.rpc.threads
+[Ciri] Reason for dfs.nameservices: The 'dfs.nameservices' property has a 'usage' tag which is not a valid tag for HDFS configuration.
+[Ciri] Reason for dfs.client.deadnode.detection.rpc.threads: The 'dfs.client.deadnode.detection.rpc.threads' property has an extra space before the description tag.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['scram_iterations=ciri/ciri', 'debug_print_parse=off', 'tcp_keepalives_interval=0'], 'reason': ["The 'scram_iterations' parameter should be an integer value, not a division or expression.", "The 'debug_print_parse' parameter does not exist in PostgreSQL configuration.", "The 'tcp_keepalives_interval' should not be set to 0. A value of 0 disables keepalives which might not be intended."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: scram_iterations=ciri/ciri	debug_print_parse=off	tcp_keepalives_interval=0
+[Ciri] Reason for scram_iterations=ciri/ciri: The 'scram_iterations' parameter should be an integer value, not a division or expression.
+[Ciri] Reason for debug_print_parse=off: The 'debug_print_parse' parameter does not exist in PostgreSQL configuration.
+[Ciri] Reason for tcp_keepalives_interval=0: The 'tcp_keepalives_interval' should not be set to 0. A value of 0 disables keepalives which might not be intended.

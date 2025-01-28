@@ -1,0 +1,13 @@
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_PATH', 'WSGI_APPLICATION', 'PASSWORD_RESET_TIMEOUT'], 'reason': ["SESSION_COOKIE_PATH should not start or end with a slash. It should be '/django/cookie' instead of '/\\django/cookie'.", 'WSGI_APPLICATION should be set to the WSGI application callable, not None.', 'PASSWORD_RESET_TIMEOUT should be a numerical value in seconds, not an expression.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: SESSION_COOKIE_PATH	WSGI_APPLICATION	PASSWORD_RESET_TIMEOUT
+[Ciri] Reason for SESSION_COOKIE_PATH: SESSION_COOKIE_PATH should not start or end with a slash. It should be '/django/cookie' instead of '/\django/cookie'.
+[Ciri] Reason for WSGI_APPLICATION: WSGI_APPLICATION should be set to the WSGI application callable, not None.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: PASSWORD_RESET_TIMEOUT should be a numerical value in seconds, not an expression.

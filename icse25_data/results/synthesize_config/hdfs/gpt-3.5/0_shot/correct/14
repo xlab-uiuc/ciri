@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.httpserver.filter.handlers', 'dfs.heartbeat.interval', 'dfs.client.datanode-restart.timeout', 'dfs.ha.log-roll.period', 'dfs.ha.tail-edits.period'], 'reason': ["The property 'dfs.datanode.httpserver.filter.handlers' has a description that exceeds 80 characters per line.", "The value '6s' for 'dfs.heartbeat.interval' should not have a time unit suffix in the configuration file for HDFS version 3.3.0.", "The value '60s' for 'dfs.client.datanode-restart.timeout' should not have a time unit suffix in the configuration file for HDFS version 3.3.0.", "The value '240s' for 'dfs.ha.log-roll.period' should not have a time unit suffix in the configuration file for HDFS version 3.3.0.", "The value '60s' for 'dfs.ha.tail-edits.period' should not have a time unit suffix in the configuration file for HDFS version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.httpserver.filter.handlers', 'dfs.heartbeat.interval', 'dfs.client.datanode-restart.timeout', 'dfs.ha.log-roll.period', 'dfs.ha.tail-edits.period'], 'reason': ["The property 'dfs.datanode.httpserver.filter.handlers' has a description that exceeds 80 characters per line.", "The value for 'dfs.heartbeat.interval' should not have a suffix 's'.", "The value for 'dfs.client.datanode-restart.timeout' should not have a suffix 's'.", "The value for 'dfs.ha.log-roll.period' should not have a suffix 's'.", "The value for 'dfs.ha.tail-edits.period' should not have a suffix 's'."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.httpserver.filter.handlers', 'dfs.heartbeat.interval', 'dfs.client.datanode-restart.timeout', 'dfs.ha.log-roll.period', 'dfs.ha.tail-edits.period'], 'reason': ["The property 'dfs.datanode.httpserver.filter.handlers' has an incorrect value format.", "The property 'dfs.heartbeat.interval' has an incorrect value format.", "The property 'dfs.client.datanode-restart.timeout' has an incorrect value format.", "The property 'dfs.ha.log-roll.period' has an incorrect value format.", "The property 'dfs.ha.tail-edits.period' has an incorrect value format."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: dfs.datanode.httpserver.filter.handlers	dfs.heartbeat.interval	dfs.client.datanode-restart.timeout	dfs.ha.log-roll.period	dfs.ha.tail-edits.period
+[Ciri] Reason for dfs.datanode.httpserver.filter.handlers: The property 'dfs.datanode.httpserver.filter.handlers' has a description that exceeds 80 characters per line.
+[Ciri] Reason for dfs.heartbeat.interval: The property 'dfs.heartbeat.interval' has an incorrect value format.
+[Ciri] Reason for dfs.client.datanode-restart.timeout: The property 'dfs.client.datanode-restart.timeout' has an incorrect value format.
+[Ciri] Reason for dfs.ha.log-roll.period: The property 'dfs.ha.log-roll.period' has an incorrect value format.
+[Ciri] Reason for dfs.ha.tail-edits.period: The property 'dfs.ha.tail-edits.period' has an incorrect value format.

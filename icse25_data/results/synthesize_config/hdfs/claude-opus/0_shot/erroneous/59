@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.blockreport.intervalMsec', 'dfs.namenode.max.objects', 'dfs.namenode.stale.datanode.interval'], 'reason': ['The default value for dfs.blockreport.intervalMsec is 6 hours (21600000 ms), but the configuration sets it to 35000000 ms which is about 9.7 hours. This is an unusually long interval and may cause issues with block reporting.', 'Setting dfs.namenode.max.objects to 1 severely limits the number of files, directories and blocks HDFS can support. This should be set to a much higher value or 0 to indicate no limit.', 'The default value for dfs.namenode.stale.datanode.interval is 30 seconds (30000 ms) in HDFS 3.x. However, the description mentions it should be at least 3 times the heartbeat interval. With the default heartbeat interval of 3 seconds, the stale interval should be at least 9 seconds (9000 ms). Setting it to the default 30 seconds may cause frequent stale state changes.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.blockreport.intervalMsec	dfs.namenode.max.objects	dfs.namenode.stale.datanode.interval
+[Ciri] Reason for dfs.blockreport.intervalMsec: The default value for dfs.blockreport.intervalMsec is 6 hours (21600000 ms), but the configuration sets it to 35000000 ms which is about 9.7 hours. This is an unusually long interval and may cause issues with block reporting.
+[Ciri] Reason for dfs.namenode.max.objects: Setting dfs.namenode.max.objects to 1 severely limits the number of files, directories and blocks HDFS can support. This should be set to a much higher value or 0 to indicate no limit.
+[Ciri] Reason for dfs.namenode.stale.datanode.interval: The default value for dfs.namenode.stale.datanode.interval is 30 seconds (30000 ms) in HDFS 3.x. However, the description mentions it should be at least 3 times the heartbeat interval. With the default heartbeat interval of 3 seconds, the stale interval should be at least 9 seconds (9000 ms). Setting it to the default 30 seconds may cause frequent stale state changes.

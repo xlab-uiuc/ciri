@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.safemode.min.datanodes', 'dfs.namenode.stale.datanode.interval', 'dfs.balancer.address'], 'reason': ['The default value for dfs.namenode.safemode.min.datanodes in HDFS 3.3.0 is 0.9, not 0.', 'The default value for dfs.namenode.stale.datanode.interval in HDFS 3.3.0 is 30000, not 60000.', 'The default value for dfs.balancer.address in HDFS 3.3.0 is 0.0.0.0:0, but it should be an empty string.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.safemode.min.datanodes	dfs.namenode.stale.datanode.interval	dfs.balancer.address
+[Ciri] Reason for dfs.namenode.safemode.min.datanodes: The default value for dfs.namenode.safemode.min.datanodes in HDFS 3.3.0 is 0.9, not 0.
+[Ciri] Reason for dfs.namenode.stale.datanode.interval: The default value for dfs.namenode.stale.datanode.interval in HDFS 3.3.0 is 30000, not 60000.
+[Ciri] Reason for dfs.balancer.address: The default value for dfs.balancer.address in HDFS 3.3.0 is 0.0.0.0:0, but it should be an empty string.

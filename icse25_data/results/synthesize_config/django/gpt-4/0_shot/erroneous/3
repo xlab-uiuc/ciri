@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'SESSION_SAVE_EVERY_REQUEST', 'SECURE_HSTS_PRELOAD'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should be an integer representing the number of seconds, not a boolean.', 'SESSION_SAVE_EVERY_REQUEST expects a boolean value, but it should be explicitly set to True or False, not a string.', 'SECURE_HSTS_PRELOAD should be a boolean value. If it is intended to be False, it is correctly set; however, if the intention was to enable it, the value should be True without quotes.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	SESSION_SAVE_EVERY_REQUEST	SECURE_HSTS_PRELOAD
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: CACHE_MIDDLEWARE_SECONDS should be an integer representing the number of seconds, not a boolean.
+[Ciri] Reason for SESSION_SAVE_EVERY_REQUEST: SESSION_SAVE_EVERY_REQUEST expects a boolean value, but it should be explicitly set to True or False, not a string.
+[Ciri] Reason for SECURE_HSTS_PRELOAD: SECURE_HSTS_PRELOAD should be a boolean value. If it is intended to be False, it is correctly set; however, if the intention was to enable it, the value should be True without quotes.

@@ -1,0 +1,33 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'work_mem', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['max_wal_size is not a valid value for this parameter.', 'work_mem is not a valid value for this parameter.', 'max_pred_locks_per_relation is not a valid value for this parameter.', 'log_min_duration_sample is not a valid value for this parameter.']}
+
+{'hasError': True, 'errParameter': ['bgwriter_delay'], 'reason': ['bgwriter_delay is not a valid parameter for PostgreSQL version 13.0']}
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_wal_size', 'enable_async_append', 'backslash_quote', 'work_mem', 'timezone_abbreviations', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['bgwriter_delay must be a positive integer', 'max_wal_size must be a positive integer', 'enable_async_append must be on or off', 'backslash_quote must be a string', 'work_mem must be a positive integer', 'timezone_abbreviations must be a string', 'max_pred_locks_per_relation must be a positive integer', 'log_min_duration_sample must be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'backslash_quote', 'work_mem', 'timezone_abbreviations', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['max_wal_size should be a positive integer', 'backslash_quote should be a string', 'work_mem should be a positive integer', 'timezone_abbreviations should be a string', 'max_pred_locks_per_relation should be a positive integer', 'log_min_duration_sample should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['max_wal_size must be a valid size in bytes, such as 8GB or 32kB. The current value is 4GB.', 'max_pred_locks_per_relation must be a positive integer. The current value is -2.', 'log_min_duration_sample must be a positive integer. The current value is -2.']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'enable_async_append', 'backslash_quote', 'work_mem', 'timezone_abbreviations', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['max_wal_size must be a positive integer, or an integer with a unit of measurement (such as kB, MB, or GB).', 'enable_async_append must be on or off.', 'backslash_quote must be on, off, or safe_encoding.', 'work_mem must be a positive integer, or an integer with a unit of measurement (such as kB, MB, or GB).', 'timezone_abbreviations must be a string.', 'max_pred_locks_per_relation must be a positive integer.', 'log_min_duration_sample must be a positive integer, or an integer with a unit of measurement (such as ms, s, or min).']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'enable_async_append', 'work_mem', 'timezone_abbreviations', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['max_wal_size must be a multiple of 8. Actual value is 4GB', 'enable_async_append must be on or off. Actual value is on', 'work_mem must be a multiple of 8. Actual value is 1MB', 'timezone_abbreviations must be a string. Actual value is Default', 'max_pred_locks_per_relation must be a positive integer. Actual value is -2', 'log_min_duration_sample must be a positive integer. Actual value is -2']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['max_wal_size must be a multiple of 8', 'max_pred_locks_per_relation must be greater than 0', 'log_min_duration_sample must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'enable_async_append', 'work_mem', 'timezone_abbreviations', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['max_wal_size should be a value between 16MB and 2TB', 'enable_async_append should be a boolean value', 'work_mem should be a value between 64KB and 1GB', 'timezone_abbreviations should be a string value', 'max_pred_locks_per_relation should be a value between -1 and 32767', 'log_min_duration_sample should be a value between 0 and 2147483647']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: max_wal_size	enable_async_append	work_mem	timezone_abbreviations	max_pred_locks_per_relation	log_min_duration_sample
+[Ciri] Reason for max_wal_size: max_wal_size should be a value between 16MB and 2TB
+[Ciri] Reason for enable_async_append: enable_async_append must be on or off. Actual value is on
+[Ciri] Reason for work_mem: work_mem should be a value between 64KB and 1GB
+[Ciri] Reason for timezone_abbreviations: timezone_abbreviations must be a string. Actual value is Default
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation should be a value between -1 and 32767
+[Ciri] Reason for log_min_duration_sample: log_min_duration_sample should be a value between 0 and 2147483647

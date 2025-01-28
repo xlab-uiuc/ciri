@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 5, 10]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host'], 'reason': ["The property 'alluxio.job.worker.bind.host' has the value '0.0.0' which does not follow the correct host format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host', 'alluxio.zookeeper.session.timeout', 'alluxio.user.metadata.cache.max.size'], 'reason': ["The property 'alluxio.job.worker.bind.host' has the value '0.0.0' which does not follow the correct host format.", "The property 'alluxio.zookeeper.session.timeout' has the value '120s' which uses an incorrect unit.", "The property 'alluxio.user.metadata.cache.max.size' has the value '0' which should be greater than 0."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host'], 'reason': ["The property 'alluxio.job.worker.bind.host' has the value '0.0.0' which is not a valid IP address format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.job.worker.bind.host
+[Ciri] Reason for alluxio.job.worker.bind.host: The property 'alluxio.job.worker.bind.host' has the value '0.0.0' which is not a valid IP address format.

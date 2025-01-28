@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 1, 9]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.normalizer.period', 'hbase.auth.key.update.interval'], 'reason': ["The property 'hbase.normalizer.period' has the value '150000' which is likely incorrect as it should be in milliseconds and typically much higher to avoid frequent normalizations. The default is usually '300000' (5 minutes).", "The property 'hbase.auth.key.update.interval' has the value '43200000' which is correct in milliseconds but the usage example provided suggests a default of '24*60*60*1000' (1 day), which might lead to confusion regarding the actual default value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.normalizer.period	hbase.auth.key.update.interval
+[Ciri] Reason for hbase.normalizer.period: The property 'hbase.normalizer.period' has the value '150000' which is likely incorrect as it should be in milliseconds and typically much higher to avoid frequent normalizations. The default is usually '300000' (5 minutes).
+[Ciri] Reason for hbase.auth.key.update.interval: The property 'hbase.auth.key.update.interval' has the value '43200000' which is correct in milliseconds but the usage example provided suggests a default of '24*60*60*1000' (1 day), which might lead to confusion regarding the actual default value.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'localSessionsEnabled', 'minSessionTimeout'], 'reason': ["The property 'quorum.auth.enableSasl' should be set to 'true' for enabling SASL authentication.", "The property 'quorum.auth.serverRequireSasl' should be set to 'false' when 'quorum.auth.enableSasl' is set to 'false'.", "The property 'localSessionsEnabled' should be set to 'true' to enable local sessions.", "The property 'minSessionTimeout' should be set to a value greater than 0."]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl'], 'reason': ["The property 'quorum.auth.enableSasl' should be set to 'true' for enabling SASL authentication.", "The property 'quorum.auth.serverRequireSasl' should be set to 'false' when SASL authentication is disabled."]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl'], 'reason': ['quorum.auth.enableSasl should be set to true for enabling SASL authentication.', 'quorum.auth.serverRequireSasl should be set to false when SASL authentication is not enabled.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.serverRequireSasl
+[Ciri] Reason for quorum.auth.enableSasl: The property 'quorum.auth.enableSasl' should be set to 'true' for enabling SASL authentication.
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl should be set to false when SASL authentication is not enabled.

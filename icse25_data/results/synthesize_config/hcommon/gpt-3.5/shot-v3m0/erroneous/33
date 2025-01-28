@@ -1,0 +1,12 @@
+Correct shot number:
+[9, 8, 15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.log-slow-lookups.enabled', 'fs.azure.local.sas.key.mode'], 'reason': ['The value for hadoop.security.dns.log-slow-lookups.enabled should be a boolean (true/false).', 'The property fs.azure.local.sas.key.mode has an additional usage tag that may cause parsing issues.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.dns.log-slow-lookups.enabled	fs.azure.local.sas.key.mode
+[Ciri] Reason for hadoop.security.dns.log-slow-lookups.enabled: The value for hadoop.security.dns.log-slow-lookups.enabled should be a boolean (true/false).
+[Ciri] Reason for fs.azure.local.sas.key.mode: The property fs.azure.local.sas.key.mode has an additional usage tag that may cause parsing issues.

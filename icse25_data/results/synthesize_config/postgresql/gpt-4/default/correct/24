@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 1, 6]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_table_age', 'reserved_connections'], 'reason': ["The property 'vacuum_freeze_table_age' has the value '300000000' which exceeds the maximum allowed value.", "The property 'reserved_connections' has the value '0' which is not allowed because at least one connection should be reserved for superusers."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: vacuum_freeze_table_age	reserved_connections
+[Ciri] Reason for vacuum_freeze_table_age: The property 'vacuum_freeze_table_age' has the value '300000000' which exceeds the maximum allowed value.
+[Ciri] Reason for reserved_connections: The property 'reserved_connections' has the value '0' which is not allowed because at least one connection should be reserved for superusers.

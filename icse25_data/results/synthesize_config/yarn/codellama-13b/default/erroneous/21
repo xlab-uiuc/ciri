@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 5, 3]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.log-aggregation.file-formats'], 'reason': ["The property 'yarn.log-aggregation.file-formats' has the value 'nonono' which is not within the accepted value {TFile,TFileS3,TFileLocal,TFileHDFS}."]}
+
+{'hasError': True, 'errParameter': ['yarn.log-aggregation.file-formats'], 'reason': ["The property 'yarn.log-aggregation.file-formats' has the value 'nonono' which is not within the accepted value {TFile,TFile-async,TFile-sync}."]}
+
+{'hasError': True, 'errParameter': ['yarn.log-aggregation.file-formats'], 'reason': ["The property 'yarn.log-aggregation.file-formats' has the value 'nonono' which is not within the accepted value {TFile, TFileBased, TFileBasedBuffers, TFileBasedBuffersWithFlush, TFileBasedBuffersWithFlushAndSync, TFileBasedBuffersWithFlushAndSyncAndSync, TFileBasedBuffersWithFlushAndSyncAndSyncAndSync}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.log-aggregation.file-formats
+[Ciri] Reason for yarn.log-aggregation.file-formats: The property 'yarn.log-aggregation.file-formats' has the value 'nonono' which is not within the accepted value {TFile,TFile-async,TFile-sync}.

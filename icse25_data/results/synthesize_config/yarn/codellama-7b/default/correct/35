@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 7, 6]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.localizer.client.thread-count'], 'reason': ["The value of the property 'yarn.nodemanager.localizer.client.thread-count' should be smaller or equal to the value of the property 'yarn.nodemanager.localizer.max-threads'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.resources-handler.class'], 'reason': ["The value of the property 'yarn.nodemanager.linux-container-executor.resources-handler.class' should be one of the following: org.apache.hadoop.yarn.server.nodemanager.util.CgroupsLCEResourcesHandler, org.apache.hadoop.yarn.server.nodemanager.util.DefaultLCEResourcesHandler, org.apache.hadoop.yarn.server.nodemanager.util.CgroupsLCEResourcesHandler, org.apache.hadoop.yarn.server.nodemanager.util.DefaultLCEResourcesHandler."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.localizer.client.thread-count'], 'reason': ["The value of the property 'yarn.nodemanager.localizer.client.thread-count' should be greater than or equal to the value of the property 'yarn.nodemanager.localizer.client.max-threads'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.localizer.client.thread-count
+[Ciri] Reason for yarn.nodemanager.localizer.client.thread-count: The value of the property 'yarn.nodemanager.localizer.client.thread-count' should be smaller or equal to the value of the property 'yarn.nodemanager.localizer.max-threads'.

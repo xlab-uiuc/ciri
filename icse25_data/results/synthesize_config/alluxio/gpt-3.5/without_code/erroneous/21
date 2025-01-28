@@ -1,0 +1,20 @@
+Wrong shot number:
+[4, 3, 1]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.oss.connection.ttl', 'alluxio.jvm.monitor.info.threshold'], 'reason': ["The property 'alluxio.job.worker.web.port' has the value 'file://' which is not a valid port number.", "The property 'alluxio.underfs.oss.connection.ttl' has a negative value which is not allowed.", "The property 'alluxio.jvm.monitor.info.threshold' has the value '10sec' which is not a valid time format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.oss.connection.ttl', 'alluxio.jvm.monitor.info.threshold'], 'reason': ["The property 'alluxio.job.worker.web.port' has the value 'file://' which is not a valid port number.", "The property 'alluxio.underfs.oss.connection.ttl' has a negative value which is not allowed.", "The property 'alluxio.jvm.monitor.info.threshold' has the value '10sec' which is not a valid format for a threshold value."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.oss.connection.ttl', 'alluxio.jvm.monitor.info.threshold'], 'reason': ["The property 'alluxio.job.worker.web.port' has the value 'file://' which is not a valid port number.", "The property 'alluxio.underfs.oss.connection.ttl' has a negative value which is not allowed.", "The property 'alluxio.jvm.monitor.info.threshold' has the value '10sec' which is not a valid format for a threshold value."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.worker.web.port	alluxio.underfs.oss.connection.ttl	alluxio.jvm.monitor.info.threshold
+[Ciri] Reason for alluxio.job.worker.web.port: The property 'alluxio.job.worker.web.port' has the value 'file://' which is not a valid port number.
+[Ciri] Reason for alluxio.underfs.oss.connection.ttl: The property 'alluxio.underfs.oss.connection.ttl' has a negative value which is not allowed.
+[Ciri] Reason for alluxio.jvm.monitor.info.threshold: The property 'alluxio.jvm.monitor.info.threshold' has the value '10sec' which is not a valid format for a threshold value.

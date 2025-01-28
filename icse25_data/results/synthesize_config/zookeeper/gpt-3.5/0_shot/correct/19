@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval', 'sslQuorum', 'maxSessionTimeout'], 'reason': ['minSessionTimeout should be greater than 0.', 'autopurge.purgeInterval should be greater than 0.', 'sslQuorum should be a boolean value (true/false).', 'maxSessionTimeout should be greater than 0.']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval', 'sslQuorum', 'maxSessionTimeout'], 'reason': ['minSessionTimeout should be a positive value greater than 0.', 'autopurge.purgeInterval should be a non-negative value.', 'sslQuorum should be set to true or false.', 'maxSessionTimeout should be a positive value greater than 0.']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'maxSessionTimeout'], 'reason': ['minSessionTimeout and maxSessionTimeout should not be set to -1. They should have positive values.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: minSessionTimeout	autopurge.purgeInterval	sslQuorum	maxSessionTimeout
+[Ciri] Reason for minSessionTimeout: minSessionTimeout should be greater than 0.
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval should be a non-negative value.
+[Ciri] Reason for sslQuorum: sslQuorum should be set to true or false.
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout should be a positive value greater than 0.

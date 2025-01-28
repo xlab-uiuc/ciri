@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.azure.user.agent.prefix', 'fs.s3a.assumed.role.credentials.provider', 'fs.s3a.buffer.dir', 'net.topology.script.file.name', 'fs.permissions.umask-mode'], 'reason': ["The 'usage' field in 'fs.azure.user.agent.prefix' is not a standard configuration property attribute.", "The value for 'fs.s3a.assumed.role.credentials.provider' should be 'com.amazonaws.auth.STSAssumeRoleSessionCredentialsProvider' when specifying an assumed role credentials provider.", "The 'fs.s3a.buffer.dir' should typically point to a local directory, not a specific file or shared directory. It's unusual to see a specific file path here.", "The value for 'net.topology.script.file.name' seems to be a file path that is also used for 'fs.s3a.buffer.dir', which could indicate a copy-paste error or misconfiguration.", "The 'fs.permissions.umask-mode' value and usage example are contradictory. The value is '007', but the usage example suggests a configuration of 'u=rwx,g=,o=', which corresponds to a umask of '077'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: fs.azure.user.agent.prefix	fs.s3a.assumed.role.credentials.provider	fs.s3a.buffer.dir	net.topology.script.file.name	fs.permissions.umask-mode
+[Ciri] Reason for fs.azure.user.agent.prefix: The 'usage' field in 'fs.azure.user.agent.prefix' is not a standard configuration property attribute.
+[Ciri] Reason for fs.s3a.assumed.role.credentials.provider: The value for 'fs.s3a.assumed.role.credentials.provider' should be 'com.amazonaws.auth.STSAssumeRoleSessionCredentialsProvider' when specifying an assumed role credentials provider.
+[Ciri] Reason for fs.s3a.buffer.dir: The 'fs.s3a.buffer.dir' should typically point to a local directory, not a specific file or shared directory. It's unusual to see a specific file path here.
+[Ciri] Reason for net.topology.script.file.name: The value for 'net.topology.script.file.name' seems to be a file path that is also used for 'fs.s3a.buffer.dir', which could indicate a copy-paste error or misconfiguration.
+[Ciri] Reason for fs.permissions.umask-mode: The 'fs.permissions.umask-mode' value and usage example are contradictory. The value is '007', but the usage example suggests a configuration of 'u=rwx,g=,o=', which corresponds to a umask of '077'.

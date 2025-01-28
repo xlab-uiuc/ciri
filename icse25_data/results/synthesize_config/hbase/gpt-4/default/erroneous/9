@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 7, 8]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.master.balancer.maxRitPercent'], 'reason': ["The property 'hbase.regionserver.info.bindAddress' has the value '0.0.0' which is not a valid IP address format.", "The property 'hbase.master.balancer.maxRitPercent' has the value '2.0' which is out of the valid range. The value should be between 0.0 and 1.0 inclusive."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.info.bindAddress	hbase.master.balancer.maxRitPercent
+[Ciri] Reason for hbase.regionserver.info.bindAddress: The property 'hbase.regionserver.info.bindAddress' has the value '0.0.0' which is not a valid IP address format.
+[Ciri] Reason for hbase.master.balancer.maxRitPercent: The property 'hbase.master.balancer.maxRitPercent' has the value '2.0' which is out of the valid range. The value should be between 0.0 and 1.0 inclusive.

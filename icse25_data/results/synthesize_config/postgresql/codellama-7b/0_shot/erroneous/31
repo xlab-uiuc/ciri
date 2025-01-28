@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses'], 'reason': ['listen_addresses must be a string or an array of strings']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'unix_socket_group'], 'reason': ['listen_addresses must be a valid IP address or a hostname', 'unix_socket_directories must be a valid directory', 'unix_socket_group must be a valid group name']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'unix_socket_group'], 'reason': ['listen_addresses must be a list of strings, but it is a string.', 'unix_socket_directories must be a list of strings, but it is a string.', 'unix_socket_group must be a string, but it is a list.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: listen_addresses	unix_socket_directories	unix_socket_group
+[Ciri] Reason for listen_addresses: listen_addresses must be a valid IP address or a hostname
+[Ciri] Reason for unix_socket_directories: unix_socket_directories must be a list of strings, but it is a string.
+[Ciri] Reason for unix_socket_group: unix_socket_group must be a string, but it is a list.

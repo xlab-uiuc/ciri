@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.intermediate.upload.clean.age', 'alluxio.jvm.monitor.sleep.interval', 'alluxio.master.metrics.time.series.interval'], 'reason': ["The property 'alluxio.underfs.s3.intermediate.upload.clean.age' does not exist or is not correctly formatted. The correct property might be 'alluxio.underfs.s3a.intermediate.upload.clean.age' if intending to specify the age for cleaning up intermediate S3A upload files, and it should be specified in milliseconds without the 'N' at the end.", "The value for 'alluxio.jvm.monitor.sleep.interval' is incorrectly formatted. It should be specified in milliseconds without 'sec'. For example, '2000ms' for 2 seconds.", "The value for 'alluxio.master.metrics.time.series.interval' is incorrectly formatted. It should be specified in milliseconds without 'min'. For example, '600000ms' for 10 minutes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.underfs.s3.intermediate.upload.clean.age	alluxio.jvm.monitor.sleep.interval	alluxio.master.metrics.time.series.interval
+[Ciri] Reason for alluxio.underfs.s3.intermediate.upload.clean.age: The property 'alluxio.underfs.s3.intermediate.upload.clean.age' does not exist or is not correctly formatted. The correct property might be 'alluxio.underfs.s3a.intermediate.upload.clean.age' if intending to specify the age for cleaning up intermediate S3A upload files, and it should be specified in milliseconds without the 'N' at the end.
+[Ciri] Reason for alluxio.jvm.monitor.sleep.interval: The value for 'alluxio.jvm.monitor.sleep.interval' is incorrectly formatted. It should be specified in milliseconds without 'sec'. For example, '2000ms' for 2 seconds.
+[Ciri] Reason for alluxio.master.metrics.time.series.interval: The value for 'alluxio.master.metrics.time.series.interval' is incorrectly formatted. It should be specified in milliseconds without 'min'. For example, '600000ms' for 10 minutes.

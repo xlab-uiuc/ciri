@@ -1,0 +1,19 @@
+Wrong shot number:
+[10, 3, 5]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.scanner.timeout.period', 'hbase.hbase.client.scanner.timeout.period'], 'reason': ["The property 'hbase.client.scanner.timeout.period' has a negative value which is not valid. It should be a positive integer.", "The property 'hbase.client.scanner.timeout.period' is misspelled. It should be 'hbase.client.scanner.timeout.period'."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.scanner.timeout.period', 'hbase.hregion.max.filesize', 'hbase.rootdir.perms'], 'reason': ["The property 'hbase.client.scanner.timeout.period' has a negative value which is invalid. It should be a positive integer.", "The property 'hbase.hregion.max.filesize' has a value that exceeds the range of an Integer. It should be within the valid range.", "The property 'hbase.rootdir.perms' has a value '1400' which is not a valid permission format. It should be in the format of 'rwxr-x---' or numerical equivalent."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.scanner.timeout.period', 'hbase.hbase.client.scanner.timeout.period'], 'reason': ["The property 'hbase.client.scanner.timeout.period' has a negative value which is invalid.", "The property 'hbase.client.scanner.timeout.period' is misspelled. It should be 'hbase.client.scanner.timeout.period'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.client.scanner.timeout.period	hbase.hbase.client.scanner.timeout.period
+[Ciri] Reason for hbase.client.scanner.timeout.period: The property 'hbase.client.scanner.timeout.period' has a negative value which is invalid.
+[Ciri] Reason for hbase.hbase.client.scanner.timeout.period: The property 'hbase.client.scanner.timeout.period' is misspelled. It should be 'hbase.client.scanner.timeout.period'.

@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'enable-debug-command', 'tls-session-cache-size', 'latency-monitor-threshold', 'dir', 'proto-max-bulk-len', 'stream-node-max-entries'], 'reason': ["Invalid parameter 'cluster-announce-port'.", "Invalid parameter 'enable-debug-command'.", "Invalid parameter 'tls-session-cache-size'.", "Invalid parameter 'latency-monitor-threshold'.", "Invalid parameter 'dir'.", "Invalid parameter 'proto-max-bulk-len'.", "Invalid parameter 'stream-node-max-entries'."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'enable-debug-command', 'tls-session-cache-size', 'latency-monitor-threshold', 'dir', 'proto-max-bulk-len', 'stream-node-max-entries'], 'reason': ['cluster-announce-port is not a valid parameter for Redis 7.0.0', 'enable-debug-command is not a valid parameter for Redis 7.0.0', 'tls-session-cache-size is not a valid parameter for Redis 7.0.0', 'latency-monitor-threshold is not a valid parameter for Redis 7.0.0', 'dir is not a valid parameter for Redis 7.0.0', 'proto-max-bulk-len is not a valid parameter for Redis 7.0.0', 'stream-node-max-entries is not a valid parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'enable-debug-command', 'tls-session-cache-size', 'latency-monitor-threshold', 'dir', 'proto-max-bulk-len', 'stream-node-max-entries'], 'reason': ['cluster-announce-port value should be a port number, e.g., 6379.', "enable-debug-command value should be 'yes' or 'no'.", 'tls-session-cache-size value should be an integer.', 'latency-monitor-threshold value should be a time in microseconds.', 'dir value should be a valid directory path.', 'proto-max-bulk-len value should be in bytes, e.g., 536870912 for 512mb.', 'stream-node-max-entries value should be an integer.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: cluster-announce-port	enable-debug-command	tls-session-cache-size	latency-monitor-threshold	dir	proto-max-bulk-len	stream-node-max-entries
+[Ciri] Reason for cluster-announce-port: cluster-announce-port value should be a port number, e.g., 6379.
+[Ciri] Reason for enable-debug-command: Invalid parameter 'enable-debug-command'.
+[Ciri] Reason for tls-session-cache-size: tls-session-cache-size value should be an integer.
+[Ciri] Reason for latency-monitor-threshold: latency-monitor-threshold is not a valid parameter for Redis 7.0.0
+[Ciri] Reason for dir: Invalid parameter 'dir'.
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len value should be in bytes, e.g., 536870912 for 512mb.
+[Ciri] Reason for stream-node-max-entries: Invalid parameter 'stream-node-max-entries'.

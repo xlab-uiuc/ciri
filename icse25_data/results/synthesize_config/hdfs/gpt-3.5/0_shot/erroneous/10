@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.pmem.cache.dirs', 'dfs.namenode.upgrade.domain.factor', 'dfs.balancer.keytab.file'], 'reason': ['Invalid character detected in property value for dfs.datanode.pmem.cache.dirs.', 'Invalid placeholder usage in property value for dfs.namenode.upgrade.domain.factor.', 'Invalid placeholder usage in property value for dfs.balancer.keytab.file.']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.pmem.cache.dirs', 'dfs.namenode.upgrade.domain.factor'], 'reason': ['Invalid character detected in property value for dfs.datanode.pmem.cache.dirs.', 'Invalid placeholder usage in property value for dfs.namenode.upgrade.domain.factor.']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.pmem.cache.dirs', 'dfs.namenode.upgrade.domain.factor'], 'reason': ['Invalid character detected in property value for dfs.datanode.pmem.cache.dirs.', 'Property value for dfs.namenode.upgrade.domain.factor contains an unresolved variable reference.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.pmem.cache.dirs	dfs.namenode.upgrade.domain.factor
+[Ciri] Reason for dfs.datanode.pmem.cache.dirs: Invalid character detected in property value for dfs.datanode.pmem.cache.dirs.
+[Ciri] Reason for dfs.namenode.upgrade.domain.factor: Invalid placeholder usage in property value for dfs.namenode.upgrade.domain.factor.

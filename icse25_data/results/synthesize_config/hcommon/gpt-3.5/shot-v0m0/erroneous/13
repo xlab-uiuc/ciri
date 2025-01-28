@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].weighted-cost.lockshared', 'fs.adl.oauth2.msi.port', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ["Usage tag 'usage' is not a valid tag for property 'fs.default.name'.", "Parameter name 'ipc.[port_number].weighted-cost.lockshared' contains invalid characters.", "Parameter name 'fs.adl.oauth2.msi.port' should not contain dots.", "Parameter name 'hadoop.metrics.jvm.use-thread-mxbean' should not contain dots."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.default.name	ipc.[port_number].weighted-cost.lockshared	fs.adl.oauth2.msi.port	hadoop.metrics.jvm.use-thread-mxbean
+[Ciri] Reason for fs.default.name: Usage tag 'usage' is not a valid tag for property 'fs.default.name'.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: Parameter name 'ipc.[port_number].weighted-cost.lockshared' contains invalid characters.
+[Ciri] Reason for fs.adl.oauth2.msi.port: Parameter name 'fs.adl.oauth2.msi.port' should not contain dots.
+[Ciri] Reason for hadoop.metrics.jvm.use-thread-mxbean: Parameter name 'hadoop.metrics.jvm.use-thread-mxbean' should not contain dots.

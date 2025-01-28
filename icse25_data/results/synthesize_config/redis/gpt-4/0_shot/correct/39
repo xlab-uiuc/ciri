@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['aof-timestamp-enabled', 'maxmemory-clients'], 'reason': ["The correct configuration directive is 'aof-use-rdb-preamble', not 'aof-timestamp-enabled'.", "The 'maxmemory-clients' directive does not exist. Perhaps you meant 'maxmemory' or 'maxmemory-policy'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: aof-timestamp-enabled	maxmemory-clients
+[Ciri] Reason for aof-timestamp-enabled: The correct configuration directive is 'aof-use-rdb-preamble', not 'aof-timestamp-enabled'.
+[Ciri] Reason for maxmemory-clients: The 'maxmemory-clients' directive does not exist. Perhaps you meant 'maxmemory' or 'maxmemory-policy'.

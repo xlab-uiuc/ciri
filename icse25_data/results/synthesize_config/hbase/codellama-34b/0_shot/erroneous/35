@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.client.pause', 'hbase.hregion.memstore.mslab.enabled', 'hbase.regionserver.compaction.enabled', 'hbase.hstore.compaction.max.size', 'hbase.rest.threads.min', 'hbase.wal.dir.perms', 'hbase.mob.cache.evict.remain.ratio'], 'reason': ['hbase.zookeeper.property.clientPort is not a valid port number', 'hbase.client.pause is not a valid number', 'hbase.hregion.memstore.mslab.enabled is not a valid boolean', 'hbase.regionserver.compaction.enabled is not a valid boolean', 'hbase.hstore.compaction.max.size is not a valid number', 'hbase.rest.threads.min is not a valid number', 'hbase.wal.dir.perms is not a valid number', 'hbase.mob.cache.evict.remain.ratio is not a valid number']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.zookeeper.property.clientPort	hbase.client.pause	hbase.hregion.memstore.mslab.enabled	hbase.regionserver.compaction.enabled	hbase.hstore.compaction.max.size	hbase.rest.threads.min	hbase.wal.dir.perms	hbase.mob.cache.evict.remain.ratio
+[Ciri] Reason for hbase.zookeeper.property.clientPort: hbase.zookeeper.property.clientPort is not a valid port number
+[Ciri] Reason for hbase.client.pause: hbase.client.pause is not a valid number
+[Ciri] Reason for hbase.hregion.memstore.mslab.enabled: hbase.hregion.memstore.mslab.enabled is not a valid boolean
+[Ciri] Reason for hbase.regionserver.compaction.enabled: hbase.regionserver.compaction.enabled is not a valid boolean
+[Ciri] Reason for hbase.hstore.compaction.max.size: hbase.hstore.compaction.max.size is not a valid number
+[Ciri] Reason for hbase.rest.threads.min: hbase.rest.threads.min is not a valid number
+[Ciri] Reason for hbase.wal.dir.perms: hbase.wal.dir.perms is not a valid number
+[Ciri] Reason for hbase.mob.cache.evict.remain.ratio: hbase.mob.cache.evict.remain.ratio is not a valid number

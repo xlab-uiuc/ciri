@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.catchup.retry.wait', 'alluxio.underfs.s3.streaming.upload.partition.size', 'alluxio.master.backup.transport.timeout', 'alluxio.security.stale.channel.purge.interval'], 'reason': ['alluxio.master.embedded.journal.catchup.retry.wait should be a duration', 'alluxio.underfs.s3.streaming.upload.partition.size should be a size', 'alluxio.master.backup.transport.timeout should be a duration', 'alluxio.security.stale.channel.purge.interval should be a duration']}
+
+{'hasError': True, 'errParameter': ['alluxio.security.authentication.type', 'alluxio.security.login.username'], 'reason': ['alluxio.security.authentication.type should be one of [SIMPLE, KERBEROS, NOSASL]', 'alluxio.security.login.username should be a valid username']}
+
+{'hasError': True, 'errParameter': ['alluxio.security.authentication.type', 'alluxio.security.login.username'], 'reason': ['alluxio.security.authentication.type must be one of [SIMPLE, KERBEROS, NOSASL]', 'alluxio.security.login.username is not a valid username']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.security.authentication.type	alluxio.security.login.username
+[Ciri] Reason for alluxio.security.authentication.type: alluxio.security.authentication.type should be one of [SIMPLE, KERBEROS, NOSASL]
+[Ciri] Reason for alluxio.security.login.username: alluxio.security.login.username is not a valid username

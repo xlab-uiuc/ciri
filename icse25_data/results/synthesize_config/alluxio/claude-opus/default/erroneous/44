@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 10, 11]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.default.mode', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio'], 'reason': ["The value '888' for property 'alluxio.underfs.gcs.default.mode' is invalid. It should be a valid POSIX mode like '0777'.", "The value '1.6' for property 'alluxio.master.metastore.inode.cache.low.water.mark.ratio' is invalid. It should be a ratio between 0 and 1."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.gcs.default.mode	alluxio.master.metastore.inode.cache.low.water.mark.ratio
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: The value '888' for property 'alluxio.underfs.gcs.default.mode' is invalid. It should be a valid POSIX mode like '0777'.
+[Ciri] Reason for alluxio.master.metastore.inode.cache.low.water.mark.ratio: The value '1.6' for property 'alluxio.master.metastore.inode.cache.low.water.mark.ratio' is invalid. It should be a ratio between 0 and 1.

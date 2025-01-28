@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.compaction.enabled', 'hbase.hstore.blockingStoreFiles'], 'reason': ["The property 'hbase.regionserver.compaction.enabled' should have a boolean value (true/false) instead of an integer value (10).", "The property 'hbase.hstore.blockingStoreFiles' should have a value of type integer, but it is currently set to a string value ('8')."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.compaction.enabled	hbase.hstore.blockingStoreFiles
+[Ciri] Reason for hbase.regionserver.compaction.enabled: The property 'hbase.regionserver.compaction.enabled' should have a boolean value (true/false) instead of an integer value (10).
+[Ciri] Reason for hbase.hstore.blockingStoreFiles: The property 'hbase.hstore.blockingStoreFiles' should have a value of type integer, but it is currently set to a string value ('8').

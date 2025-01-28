@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['external_pid_file', 'ssl_ciphers', 'log_parser_stats', 'enable_bitmapscan', 'enable_material', 'log_startup_progress_interval', 'max_pred_locks_per_transaction', 'scram_iterations'], 'reason': ['The value for external_pid_file contains too many / characters. It should be a valid file path.', 'The ssl_ciphers parameter is not valid for PostgreSQL 13. It has been replaced by ssl_ciphers_list and ssl_ciphers_list_v2.', 'The log_parser_stats parameter does not exist in PostgreSQL 13.', 'The enable_bitmapscan parameter does not exist in PostgreSQL 13.', 'The enable_material parameter does not exist in PostgreSQL 13.', "The log_startup_progress_interval parameter is not a valid time value. It should be specified as a number followed by 'ms' for milliseconds or 's' for seconds, e.g., '10s'.", 'The max_pred_locks_per_transaction parameter does not exist in PostgreSQL 13.', 'The scram_iterations parameter is too high. The recommended value is 4096.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: external_pid_file	ssl_ciphers	log_parser_stats	enable_bitmapscan	enable_material	log_startup_progress_interval	max_pred_locks_per_transaction	scram_iterations
+[Ciri] Reason for external_pid_file: The value for external_pid_file contains too many / characters. It should be a valid file path.
+[Ciri] Reason for ssl_ciphers: The ssl_ciphers parameter is not valid for PostgreSQL 13. It has been replaced by ssl_ciphers_list and ssl_ciphers_list_v2.
+[Ciri] Reason for log_parser_stats: The log_parser_stats parameter does not exist in PostgreSQL 13.
+[Ciri] Reason for enable_bitmapscan: The enable_bitmapscan parameter does not exist in PostgreSQL 13.
+[Ciri] Reason for enable_material: The enable_material parameter does not exist in PostgreSQL 13.
+[Ciri] Reason for log_startup_progress_interval: The log_startup_progress_interval parameter is not a valid time value. It should be specified as a number followed by 'ms' for milliseconds or 's' for seconds, e.g., '10s'.
+[Ciri] Reason for max_pred_locks_per_transaction: The max_pred_locks_per_transaction parameter does not exist in PostgreSQL 13.
+[Ciri] Reason for scram_iterations: The scram_iterations parameter is too high. The recommended value is 4096.

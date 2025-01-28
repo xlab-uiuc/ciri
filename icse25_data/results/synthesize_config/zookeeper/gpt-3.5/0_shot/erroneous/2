@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['electionAlg', 'secureClientPortAddress', 'standaloneEnabled'], 'reason': ['Invalid value for electionAlg. It should be a positive integer.', 'secureClientPortAddress should be in the format of IP:port.', 'standaloneEnabled should be set to false for a multi-server configuration.']}
+
+{'hasError': True, 'errParameter': ['electionAlg', 'secureClientPortAddress', 'minSessionTimeout'], 'reason': ['Invalid value for electionAlg. It should be a positive integer.', "Invalid value for secureClientPortAddress. It should be in the format 'hostname:port'.", 'Invalid value for minSessionTimeout. It should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['electionAlg', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs', 'secureClientPortAddress', 'standaloneEnabled', 'quorum.auth.server.saslLoginContext', 'minSessionTimeout'], 'reason': ['Invalid value for electionAlg. It should be a positive integer.', 'Invalid value for quorum.auth.learnerRequireSasl. It should be a boolean value (true/false).', 'Invalid value for quorumListenOnAllIPs. It should be a boolean value (true/false).', "Invalid value for secureClientPortAddress. It should be in the format 'hostname:port'.", 'Invalid value for standaloneEnabled. It should be a boolean value (true/false).', 'Invalid value for quorum.auth.server.saslLoginContext. It should be a valid login context.', 'Invalid value for minSessionTimeout. It should be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['electionAlg', 'secureClientPortAddress'], 'reason': ['Invalid value for electionAlg. It should be a positive integer.', 'secureClientPortAddress should specify a valid IP address and port number.']}
+
+{'hasError': True, 'errParameter': ['electionAlg', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs', 'secureClientPortAddress', 'standaloneEnabled', 'quorum.auth.server.saslLoginContext', 'minSessionTimeout'], 'reason': ['Invalid value for electionAlg. It should be an integer.', 'Invalid value for quorum.auth.learnerRequireSasl. It should be a boolean.', 'Invalid value for quorumListenOnAllIPs. It should be a boolean.', "Invalid value for secureClientPortAddress. It should be in the format 'hostname:port'.", 'Invalid value for standaloneEnabled. It should be a boolean.', 'Invalid value for quorum.auth.server.saslLoginContext. It should be a string.', 'Invalid value for minSessionTimeout. It should be an integer greater than 0.']}
+
+{'hasError': True, 'errParameter': ['electionAlg', 'secureClientPortAddress', 'minSessionTimeout'], 'reason': ['Invalid value for electionAlg. It should be a positive integer.', 'secureClientPortAddress should not be set to 0.0.0.0:3000. Use a specific IP address instead.', 'minSessionTimeout should be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['electionAlg', 'secureClientPortAddress'], 'reason': ['Invalid value for electionAlg. It should be a positive integer.', 'secureClientPortAddress should not be set to 0.0.0.0, use an actual IP address.']}
+
+{'hasError': True, 'errParameter': ['electionAlg', 'secureClientPortAddress', 'standaloneEnabled'], 'reason': ['Invalid value for electionAlg. It should be a positive integer.', 'secureClientPortAddress should specify a valid IP address and port.', 'standaloneEnabled should be set to false for a multi-server setup.']}
+
+{'hasError': True, 'errParameter': ['electionAlg', 'secureClientPortAddress', 'standaloneEnabled'], 'reason': ['Invalid value for electionAlg. It should be a positive integer.', "Invalid value for secureClientPortAddress. It should be in the format 'hostname:port'.", "Invalid value for standaloneEnabled. It should be set to 'false' for a multi-server setup."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: electionAlg	secureClientPortAddress	standaloneEnabled
+[Ciri] Reason for electionAlg: Invalid value for electionAlg. It should be a positive integer.
+[Ciri] Reason for secureClientPortAddress: Invalid value for secureClientPortAddress. It should be in the format 'hostname:port'.
+[Ciri] Reason for standaloneEnabled: Invalid value for standaloneEnabled. It should be set to 'false' for a multi-server setup.

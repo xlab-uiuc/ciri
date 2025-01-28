@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.search.group.hierarchy.levels', 'fs.trash.checkpoint.interval', 'fs.s3a.change.detection.mode'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.search.group.hierarchy.levels' has a negative value which may cause unexpected behavior.", "The property 'fs.trash.checkpoint.interval' has a value of 0 which may not be appropriate as it should be smaller or equal to fs.trash.interval.", "The property 'fs.s3a.change.detection.mode' has a value of 'server' which may not work with third-party S3 implementations that do not support these constraints on GetObject."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.search.group.hierarchy.levels	fs.trash.checkpoint.interval	fs.s3a.change.detection.mode
+[Ciri] Reason for hadoop.security.group.mapping.ldap.search.group.hierarchy.levels: The property 'hadoop.security.group.mapping.ldap.search.group.hierarchy.levels' has a negative value which may cause unexpected behavior.
+[Ciri] Reason for fs.trash.checkpoint.interval: The property 'fs.trash.checkpoint.interval' has a value of 0 which may not be appropriate as it should be smaller or equal to fs.trash.interval.
+[Ciri] Reason for fs.s3a.change.detection.mode: The property 'fs.s3a.change.detection.mode' has a value of 'server' which may not work with third-party S3 implementations that do not support these constraints on GetObject.

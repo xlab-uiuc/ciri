@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 10, 12]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['zookeeper.session.timeout', 'hbase.client.max.perregion.tasks'], 'reason': ["The property 'zookeeper.session.timeout' has an invalid value '-1'. It should be a positive integer.", "The property 'hbase.client.max.perregion.tasks' has an invalid value '0'. It should be a positive integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: zookeeper.session.timeout	hbase.client.max.perregion.tasks
+[Ciri] Reason for zookeeper.session.timeout: The property 'zookeeper.session.timeout' has an invalid value '-1'. It should be a positive integer.
+[Ciri] Reason for hbase.client.max.perregion.tasks: The property 'hbase.client.max.perregion.tasks' has an invalid value '0'. It should be a positive integer.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'tls-ca-cert-dir'], 'reason': ["The 'proto-max-bulk-len' parameter is no longer supported in Redis 7.0. It was renamed to 'proto-max-bulk-len-arbitrary' in Redis 7.0.", "The 'tls-ca-cert-dir' parameter is not a valid configuration directive in Redis. If you want to specify a CA certificate, you should use the 'tls-ca-cert-file' parameter instead, which takes a file path, not a directory path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: proto-max-bulk-len	tls-ca-cert-dir
+[Ciri] Reason for proto-max-bulk-len: The 'proto-max-bulk-len' parameter is no longer supported in Redis 7.0. It was renamed to 'proto-max-bulk-len-arbitrary' in Redis 7.0.
+[Ciri] Reason for tls-ca-cert-dir: The 'tls-ca-cert-dir' parameter is not a valid configuration directive in Redis. If you want to specify a CA certificate, you should use the 'tls-ca-cert-file' parameter instead, which takes a file path, not a directory path.

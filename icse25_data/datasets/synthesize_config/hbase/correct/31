@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.zookeeper.property.clientPort</name>
+  <value>4362</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The port at which the clients will connect.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.maxClientCnxns</name>
+  <value>150</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    Limit on number of concurrent connections (at the socket level) that a
+    single client, identified by IP address, may make to a single member of
+    the ZooKeeper ensemble. Set high to avoid zk connection issues running
+    standalone and pseudo-distributed.</description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.caching</name>
+  <value>1073741823</value>
+    <description>Number of rows that we try to fetch when calling next
+    on a scanner if it is not served from (local, client) memory. This configuration
+    works together with hbase.client.scanner.max.result.size to try and use the
+    network efficiently. The default value is Integer.MAX_VALUE by default so that
+    the network will fill the chunk size defined by hbase.client.scanner.max.result.size
+    rather than be limited by a particular number of rows since the size of rows varies
+    table to table. If you know ahead of time that you will not require more than a certain
+    number of rows from a scan, this configuration should be set to that row limit via
+    Scan#setCaching. Higher caching values will enable faster scanners but will eat up more
+    memory and some calls of next may take longer and longer times when the cache is empty.
+    Do not set this value such that the time between invocations is greater than the scanner
+    timeout; i.e. hbase.client.scanner.timeout.period</description>
+</property>
+
+<property>
+  <name>hbase.hstore.blockingWaitTime</name>
+  <value>90000</value>
+    <description> The time for which a region will block updates after reaching the StoreFile limit
+    defined by hbase.hstore.blockingStoreFiles. After this time has elapsed, the region will stop
+    blocking updates even if a compaction has not been completed.</description>
+</property>
+
+<property>
+  <name>hbase.auth.key.update.interval</name>
+  <value>172800000</value>
+    <description>The update interval for master key for authentication tokens
+    in servers in milliseconds.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.column.max.version</name>
+  <value>1</value>
+    <description>New column family descriptors will use this value as the default number of versions
+      to keep.</description>
+</property>
+
+<property>
+  <name>hbase.mob.delfile.max.count</name>
+  <value>3</value>
+    <description>
+      The max number of del files that is allowed in the mob compaction.
+      In the mob compaction, when the number of existing del files is larger than
+      this value, they are merged until number of del files is not larger this value.
+      The default value is 3.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.compaction.threads.max</name>
+  <value>2</value>
+    <description>
+      The max number of threads used in MobCompactor.
+    </description>
+</property>
+
+</configuration>

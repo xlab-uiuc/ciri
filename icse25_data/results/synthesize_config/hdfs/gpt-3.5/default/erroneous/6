@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 16, 10]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.disk.check.timeout'], 'reason': ["The property 'dfs.datanode.disk.check.timeout' has the value '10nounit' which is not in a valid format. It should include a time unit suffix (e.g., ms, s, m, h, d) after the numerical value."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.disk.check.timeout'], 'reason': ["The property 'dfs.datanode.disk.check.timeout' has the value '10nounit' which is not in the correct format. It should have a valid time unit suffix as described in dfs.heartbeat.interval."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.disk.check.timeout'], 'reason': ["The property 'dfs.datanode.disk.check.timeout' has the value '10nounit' which is not in the correct format. It should include a valid time unit suffix as described in dfs.heartbeat.interval."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.disk.check.timeout
+[Ciri] Reason for dfs.datanode.disk.check.timeout: The property 'dfs.datanode.disk.check.timeout' has the value '10nounit' which is not in the correct format. It should include a valid time unit suffix as described in dfs.heartbeat.interval.

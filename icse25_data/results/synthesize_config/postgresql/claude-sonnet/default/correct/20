@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 6, 3]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'log_parameter_max_length'], 'reason': ["The value of 'wal_buffers' should be a positive integer or -1 to set it to the maximum allowed value.", "The property 'log_parameter_max_length' was removed in PostgreSQL 13 and is no longer supported."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: wal_buffers	log_parameter_max_length
+[Ciri] Reason for wal_buffers: The value of 'wal_buffers' should be a positive integer or -1 to set it to the maximum allowed value.
+[Ciri] Reason for log_parameter_max_length: The property 'log_parameter_max_length' was removed in PostgreSQL 13 and is no longer supported.

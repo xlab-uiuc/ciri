@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy', 'hbase.ipc.client.fallback-to-simple-auth-allowed', 'hbase.status.multicast.address.ip'], 'reason': ['Invalid value for property hbase.regionserver.region.split.policy', 'Invalid value for property hbase.ipc.client.fallback-to-simple-auth-allowed', 'Invalid value for property hbase.status.multicast.address.ip']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy', 'hbase.ipc.client.fallback-to-simple-auth-allowed', 'hbase.status.multicast.address.ip'], 'reason': ["Invalid value for hbase.regionserver.region.split.policy. The specified split policy 'org.apache.hadoop.hbase.regionserver.SteppingSplitPolicy' is not available in HBase version 2.2.7.", "Invalid value for hbase.ipc.client.fallback-to-simple-auth-allowed. The value should be 'true' or 'false'.", "Invalid value for hbase.status.multicast.address.ip. The IP address '1.1.1.1.1.1' is not a valid IP address format."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy', 'hbase.ipc.client.fallback-to-simple-auth-allowed', 'hbase.status.multicast.address.ip'], 'reason': ["The value 'org.apache.hadoop.hbase.regionserver.SteppingSplitPolicy' for property 'hbase.regionserver.region.split.policy' is not a valid split policy for HBase version 2.2.7.", "The value '1.1.1.1.1.1' for property 'hbase.status.multicast.address.ip' is not a valid IP address format.", "The property 'hbase.ipc.client.fallback-to-simple-auth-allowed' should have a boolean value (true/false)."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.region.split.policy	hbase.ipc.client.fallback-to-simple-auth-allowed	hbase.status.multicast.address.ip
+[Ciri] Reason for hbase.regionserver.region.split.policy: The value 'org.apache.hadoop.hbase.regionserver.SteppingSplitPolicy' for property 'hbase.regionserver.region.split.policy' is not a valid split policy for HBase version 2.2.7.
+[Ciri] Reason for hbase.ipc.client.fallback-to-simple-auth-allowed: Invalid value for property hbase.ipc.client.fallback-to-simple-auth-allowed
+[Ciri] Reason for hbase.status.multicast.address.ip: Invalid value for property hbase.status.multicast.address.ip

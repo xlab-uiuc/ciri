@@ -1,0 +1,37 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'max_replication_slots', 'max_worker_processes'], 'reason': ['max_wal_senders must be greater than 0', 'max_replication_slots must be greater than 0', 'max_worker_processes must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'wal_sender_timeout', 'wal_receiver_timeout'], 'reason': ['max_wal_senders must be greater than 0', 'wal_sender_timeout must be greater than 0', 'wal_receiver_timeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'shared_buffers', 'maintenance_work_mem', 'wal_buffers', 'work_mem', 'effective_io_concurrency', 'max_worker_processes', 'max_parallel_maintenance_workers'], 'reason': ['max_connections must be greater than 0', 'shared_buffers must be greater than 0', 'maintenance_work_mem must be greater than 0', 'wal_buffers must be greater than 0', 'work_mem must be greater than 0', 'effective_io_concurrency must be greater than 0', 'max_worker_processes must be greater than 0', 'max_parallel_maintenance_workers must be greater than 0']}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'max_connections', 'shared_buffers', 'effective_cache_size', 'maintenance_work_mem', 'max_worker_processes', 'wal_receiver_timeout', 'max_parallel_maintenance_workers'], 'reason': ['max_wal_senders must be greater than 0', 'max_connections must be greater than 0', 'shared_buffers must be greater than 0', 'effective_cache_size must be greater than 0', 'maintenance_work_mem must be greater than 0', 'max_worker_processes must be greater than 0', 'wal_receiver_timeout must be greater than 0', 'max_parallel_maintenance_workers must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'max_worker_processes'], 'reason': ['max_wal_senders must be at least 1', 'max_worker_processes must be at least 1']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_receiver_timeout'], 'reason': ['The value of wal_receiver_timeout must be greater than 0s.']}
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'max_worker_processes', 'wal_receiver_timeout'], 'reason': ['max_wal_senders must be greater than 0', 'max_worker_processes must be greater than 0', 'wal_receiver_timeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'max_replication_slots', 'max_worker_processes', 'max_parallel_maintenance_workers'], 'reason': ['max_wal_senders must be greater than 0', 'max_replication_slots must be greater than 0', 'max_worker_processes must be greater than 0', 'max_parallel_maintenance_workers must be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'max_worker_processes'], 'reason': ['max_wal_senders must be greater than 0', 'max_worker_processes must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'max_worker_processes'], 'reason': ['max_wal_senders must be greater than 0', 'max_worker_processes must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'max_worker_processes', 'max_parallel_maintenance_workers'], 'reason': ['max_wal_senders must be greater than 0', 'max_worker_processes must be greater than 0', 'max_parallel_maintenance_workers must be greater than 0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: max_wal_senders	max_worker_processes
+[Ciri] Reason for max_wal_senders: max_wal_senders must be greater than 0
+[Ciri] Reason for max_worker_processes: max_worker_processes must be greater than 0

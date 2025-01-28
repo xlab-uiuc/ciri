@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 1, 5]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['recursive_worktable_factor', 'wal_receiver_timeout'], 'reason': ["The property 'recursive_worktable_factor' has the value '5.0' which is not within the accepted range of 0.0 to 1.0.", "The property 'wal_receiver_timeout' has the value '1s' which is below the minimum accepted value of 60000 ms."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: recursive_worktable_factor	wal_receiver_timeout
+[Ciri] Reason for recursive_worktable_factor: The property 'recursive_worktable_factor' has the value '5.0' which is not within the accepted range of 0.0 to 1.0.
+[Ciri] Reason for wal_receiver_timeout: The property 'wal_receiver_timeout' has the value '1s' which is below the minimum accepted value of 60000 ms.

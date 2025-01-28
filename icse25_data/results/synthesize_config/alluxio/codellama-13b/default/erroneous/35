@@ -1,0 +1,18 @@
+Wrong shot number:
+[6, 2, 13]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.lock.pool.low.watermark'], 'reason': ["The property 'alluxio.master.lock.pool.low.watermark' has the value '500000' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.lock.pool.low.watermark', 'alluxio.user.network.streaming.netty.worker.threads'], 'reason': ["The property 'alluxio.master.lock.pool.low.watermark' has the value '500000' which exceeds the range of an Integer.", "The property 'alluxio.user.network.streaming.netty.worker.threads' has the value '-1' which is less than the minimum value of '0'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.lock.pool.low.watermark'], 'reason': ["The property 'alluxio.master.lock.pool.low.watermark' has the value '500000' which exceeds the range of an Integer."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.master.lock.pool.low.watermark
+[Ciri] Reason for alluxio.master.lock.pool.low.watermark: The property 'alluxio.master.lock.pool.low.watermark' has the value '500000' which exceeds the range of an Integer.

@@ -1,0 +1,25 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['databases', 'hash-max-listpack-value', 'tls-ca-cert-file', 'proto-max-bulk-len'], 'reason': ['databases should be a positive integer', 'hash-max-listpack-value should be a positive integer', 'tls-ca-cert-file should be a valid file path', 'proto-max-bulk-len should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['databases', 'hash-max-listpack-value', 'supervised'], 'reason': ['databases should be an integer', 'hash-max-listpack-value should be an integer', 'supervised should be one of the following: yes, no, auto']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['databases', 'hash-max-listpack-value', 'tls-ca-cert-file', 'proto-max-bulk-len', 'activerehashing', 'supervised'], 'reason': ['databases should be an integer', 'hash-max-listpack-value should be an integer', 'tls-ca-cert-file should be a string', 'proto-max-bulk-len should be an integer', 'activerehashing should be a boolean', 'supervised should be a boolean']}
+
+{'hasError': True, 'errParameter': ['databases', 'hash-max-listpack-value', 'tls-ca-cert-file', 'proto-max-bulk-len', 'activerehashing', 'supervised'], 'reason': ['The value of databases should be a positive integer.', 'The value of hash-max-listpack-value should be a positive integer.', 'The value of tls-ca-cert-file should be a string.', 'The value of proto-max-bulk-len should be a positive integer.', 'The value of activerehashing should be a boolean.', 'The value of supervised should be a boolean.']}
+
+{'hasError': True, 'errParameter': ['databases', 'hash-max-listpack-value', 'supervised'], 'reason': ['databases should be an integer between 1 and 16384, inclusive.', 'hash-max-listpack-value should be an integer between 0 and 4294967295, inclusive.', 'supervised should be one of the following values: auto, systemd, or manual.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: databases	hash-max-listpack-value	tls-ca-cert-file	proto-max-bulk-len	activerehashing	supervised
+[Ciri] Reason for databases: The value of databases should be a positive integer.
+[Ciri] Reason for hash-max-listpack-value: hash-max-listpack-value should be an integer
+[Ciri] Reason for tls-ca-cert-file: tls-ca-cert-file should be a string
+[Ciri] Reason for proto-max-bulk-len: The value of proto-max-bulk-len should be a positive integer.
+[Ciri] Reason for activerehashing: The value of activerehashing should be a boolean.
+[Ciri] Reason for supervised: supervised should be a boolean

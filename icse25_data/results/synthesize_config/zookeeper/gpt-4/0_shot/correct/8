@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['syncEnabled', 'quorum.auth.enableSasl', 'reconfigEnabled', 'quorumListenOnAllIPs', 'sslQuorum', 'portUnification'], 'reason': ["The 'syncEnabled' parameter does not exist in ZooKeeper configuration.", "The correct parameter for enabling SASL authentication in a quorum is 'quorum.auth.enableSasl', but it should be 'quorum.auth.enableSasl=true' to enable it.", "The 'reconfigEnabled' parameter is incorrect. The correct parameter to enable dynamic reconfiguration is 'reconfigEnabled=true'.", "The 'quorumListenOnAllIPs' parameter does not exist in ZooKeeper configuration.", "The 'sslQuorum' parameter is recognized, but for enabling SSL in the quorum communication, it should be 'sslQuorum=true' if the intention was to enable it.", "The 'portUnification' parameter does not exist in ZooKeeper configuration."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: syncEnabled	quorum.auth.enableSasl	reconfigEnabled	quorumListenOnAllIPs	sslQuorum	portUnification
+[Ciri] Reason for syncEnabled: The 'syncEnabled' parameter does not exist in ZooKeeper configuration.
+[Ciri] Reason for quorum.auth.enableSasl: The correct parameter for enabling SASL authentication in a quorum is 'quorum.auth.enableSasl', but it should be 'quorum.auth.enableSasl=true' to enable it.
+[Ciri] Reason for reconfigEnabled: The 'reconfigEnabled' parameter is incorrect. The correct parameter to enable dynamic reconfiguration is 'reconfigEnabled=true'.
+[Ciri] Reason for quorumListenOnAllIPs: The 'quorumListenOnAllIPs' parameter does not exist in ZooKeeper configuration.
+[Ciri] Reason for sslQuorum: The 'sslQuorum' parameter is recognized, but for enabling SSL in the quorum communication, it should be 'sslQuorum=true' if the intention was to enable it.
+[Ciri] Reason for portUnification: The 'portUnification' parameter does not exist in ZooKeeper configuration.

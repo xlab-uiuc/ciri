@@ -1,0 +1,19 @@
+Wrong shot number:
+[3, 7, 4]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'maxSessionTimeout'], 'reason': ["The property 'dataDir' has an invalid value 'dev/urandom///'. Make sure the data directory path is correctly formatted.", "The property 'maxSessionTimeout' has a negative value (-2) which is not allowed. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['dataDir', 'maxSessionTimeout'], 'reason': ["The property 'dataDir' contains invalid characters ('///').", "The property 'maxSessionTimeout' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['dataDir', 'maxSessionTimeout'], 'reason': ["The property 'dataDir' has an invalid format with extra forward slashes.", "The property 'maxSessionTimeout' has a negative value which is not allowed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataDir	maxSessionTimeout
+[Ciri] Reason for dataDir: The property 'dataDir' contains invalid characters ('///').
+[Ciri] Reason for maxSessionTimeout: The property 'maxSessionTimeout' has a negative value which is not allowed.

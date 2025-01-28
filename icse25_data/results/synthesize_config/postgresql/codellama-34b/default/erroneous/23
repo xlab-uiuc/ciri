@@ -1,0 +1,18 @@
+Wrong shot number:
+[3, 5, 6]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['synchronous_standby_names'], 'reason': ["The value of the property'synchronous_standby_names' should be '*' to enable the property'synchronous_commit'."]}
+
+{'hasError': True, 'errParameter': ['hot_standby'], 'reason': ["The value of the property 'hot_standby' should be 'on' to enable the property'synchronous_standby_names'."]}
+
+{'hasError': True, 'errParameter': ['synchronous_standby_names'], 'reason': ["The value of the property'synchronous_standby_names' should be a comma-separated list of standby names."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: synchronous_standby_names
+[Ciri] Reason for synchronous_standby_names: The value of the property'synchronous_standby_names' should be a comma-separated list of standby names.

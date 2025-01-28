@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 6, 2]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.threads.max', 'alluxio.worker.tieredstore.level2.watermark.high.ratio'], 'reason': ["The property 'alluxio.underfs.s3.threads.max' has the value '4000000000' which exceeds the range of an Integer.", "The property 'alluxio.worker.tieredstore.level2.watermark.high.ratio' has the value '1.9' which exceeds the valid range of 0.0 to 1.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.s3.threads.max	alluxio.worker.tieredstore.level2.watermark.high.ratio
+[Ciri] Reason for alluxio.underfs.s3.threads.max: The property 'alluxio.underfs.s3.threads.max' has the value '4000000000' which exceeds the range of an Integer.
+[Ciri] Reason for alluxio.worker.tieredstore.level2.watermark.high.ratio: The property 'alluxio.worker.tieredstore.level2.watermark.high.ratio' has the value '1.9' which exceeds the valid range of 0.0 to 1.0.

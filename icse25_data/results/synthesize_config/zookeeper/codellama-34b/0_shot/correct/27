@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'portUnification'], 'reason': ['clientPortAddress is not a valid property for zookeeper version 3.7.0', 'portUnification is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['portUnification'], 'reason': ['portUnification is not a valid parameter for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'clientPortAddress', 'peerType', 'clientPort'], 'reason': ['initLimit should be a positive integer', 'clientPortAddress should be a valid IP address', 'peerType should be either observer or participant', 'clientPort should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'portUnification'], 'reason': ['clientPortAddress is not a valid property for Zookeeper version 3.7.0', 'portUnification is not a valid property for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'portUnification'], 'reason': ['clientPortAddress is not a valid property for Zookeeper version 3.7.0', 'portUnification is not a valid property for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'clientPortAddress', 'portUnification', 'peerType', 'clientPort'], 'reason': ['initLimit should be an integer', 'clientPortAddress should be an integer', 'portUnification should be a boolean', 'peerType should be a string', 'clientPort should be an integer']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: clientPortAddress	portUnification
+[Ciri] Reason for clientPortAddress: clientPortAddress is not a valid property for Zookeeper version 3.7.0
+[Ciri] Reason for portUnification: portUnification is not a valid property for Zookeeper version 3.7.0

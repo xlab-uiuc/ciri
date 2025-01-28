@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.handler.count</name>
+  <value>20</value>
+  <description>The number of server threads for the datanode.</description>
+</property>
+
+<property>
+  <name>dfs.datanode.pmem.cache.dirs</name>
+  <value>/\hadoop/s3a</value>
+  <description>
+    This value specifies the persistent memory directory used for caching block
+    replica. Multiple directories separated by "," are acceptable.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edit.log.autoroll.check.interval.ms</name>
+  <value>600000</value>
+  <description>
+    How often an active namenode will check if it needs to roll its edit log,
+    in milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.upgrade.domain.factor</name>
+  <value>${dfs.replication}</value>
+  <description>
+    This is valid only when block placement policy is set to
+    BlockPlacementPolicyWithUpgradeDomain. It defines the number of
+    unique upgrade domains any block's replicas should have.
+    When the number of replicas is less or equal to this value, the policy
+    ensures each replica has an unique upgrade domain. When the number of
+    replicas is greater than this value, the policy ensures the number of
+    unique domains is at least this value.
+  </description>
+</property>
+
+<property>
+  <name>dfs.balancer.keytab.file</name>
+  <value>/valid/file2</value>
+  <description>
+    The keytab file used by the Balancer to login as its
+    service principal. The principal name is configured with
+    dfs.balancer.kerberos.principal. Keytab based login can be
+    enabled with dfs.balancer.keytab.enabled.
+  </description>
+</property>
+
+<property>
+  <name>dfs.checksum.type</name>
+  <value>CRC32C</value>
+  <description>
+    Checksum type
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.failover.resolver.useFQDN</name>
+  <value>false</value>
+  <description>
+    Determines whether the resolved result is fully qualified domain name instead
+    of pure IP address(es). The config name can be extended with an optional
+    nameservice ID (of form dfs.client.failover.resolver.impl[.nameservice]) to
+    configure specific nameservices when multiple nameservices exist.
+    In secure environment, this has to be enabled since Kerberos is using fqdn
+    in machine's principal therefore accessing servers by IP won't be recognized
+    by the KDC.
+  </description>
+</property>
+
+<property>
+  <name>dfs.journalnode.keytab.file</name>
+  <value>/valid/file1</value>
+  <description>
+    Kerberos keytab file for the journal node.
+  </description>
+</property>
+
+</configuration>

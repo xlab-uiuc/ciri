@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.state.lock.timeout', 'alluxio.master.file.access.time.journal.flush.interval'], 'reason': ["Invalid value '1h' for property 'alluxio.master.daily.backup.state.lock.timeout'. Expected format is 'number[ms|s|m|h|d]'.", "Invalid value '1h' for property 'alluxio.master.file.access.time.journal.flush.interval'. Expected format is 'number[ms|s|m|h|d]'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.state.lock.timeout', 'alluxio.master.file.access.time.journal.flush.interval'], 'reason': ["The property 'alluxio.master.daily.backup.state.lock.timeout' has an incorrect value format. It should be in milliseconds or a valid time format.", "The property 'alluxio.master.file.access.time.journal.flush.interval' has an incorrect value format. It should be in milliseconds or a valid time format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.state.lock.timeout', 'alluxio.master.file.access.time.journal.flush.interval'], 'reason': ["Invalid time unit 'h' for property 'alluxio.master.daily.backup.state.lock.timeout'. Expected time unit format: <number>[dDhHmMsS]", "Invalid time unit 'h' for property 'alluxio.master.file.access.time.journal.flush.interval'. Expected time unit format: <number>[dDhHmMsS]"]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.daily.backup.state.lock.timeout	alluxio.master.file.access.time.journal.flush.interval
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.timeout: Invalid time unit 'h' for property 'alluxio.master.daily.backup.state.lock.timeout'. Expected time unit format: <number>[dDhHmMsS]
+[Ciri] Reason for alluxio.master.file.access.time.journal.flush.interval: Invalid value '1h' for property 'alluxio.master.file.access.time.journal.flush.interval'. Expected format is 'number[ms|s|m|h|d]'.

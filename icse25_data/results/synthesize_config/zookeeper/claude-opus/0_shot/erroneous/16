@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPort', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl'], 'reason': ['clientPort should be set to a port number, not a file:// URL', 'quorum.auth.enableSasl and quorum.auth.serverRequireSasl have conflicting values. If quorum.auth.serverRequireSasl is set to true, quorum.auth.enableSasl must also be set to true.', 'quorum.auth.serverRequireSasl is set to true, but quorum.auth.enableSasl is set to false. These properties must have matching values.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: clientPort	quorum.auth.enableSasl	quorum.auth.serverRequireSasl
+[Ciri] Reason for clientPort: clientPort should be set to a port number, not a file:// URL
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl and quorum.auth.serverRequireSasl have conflicting values. If quorum.auth.serverRequireSasl is set to true, quorum.auth.enableSasl must also be set to true.
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl is set to true, but quorum.auth.enableSasl is set to false. These properties must have matching values.

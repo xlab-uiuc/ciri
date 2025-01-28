@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maintenance_work_mem', 'parallel_leader_participation', 'enable_partition_pruning', 'cpu_operator_cost', 'enable_indexonlyscan', 'default_toast_compression', 'recovery_target_action'], 'reason': ['maintenance_work_mem should be a percentage, not a unit of memory', 'parallel_leader_participation should be on or off', 'enable_partition_pruning should be on or off', 'cpu_operator_cost should be a decimal number', 'enable_indexonlyscan should be on or off', 'default_toast_compression should be a valid compression method', 'recovery_target_action should be a valid recovery target action']}
+
+{'hasError': True, 'errParameter': ['maintenance_work_mem', 'parallel_leader_participation', 'enable_partition_pruning', 'cpu_operator_cost', 'enable_indexonlyscan', 'default_toast_compression', 'recovery_target_action'], 'reason': ['The value of maintenance_work_mem is not a valid value. The value must be a positive integer.', 'The value of parallel_leader_participation is not a valid value. The value must be a boolean.', 'The value of enable_partition_pruning is not a valid value. The value must be a boolean.', 'The value of cpu_operator_cost is not a valid value. The value must be a positive integer.', 'The value of enable_indexonlyscan is not a valid value. The value must be a boolean.', 'The value of default_toast_compression is not a valid value. The value must be a string.', 'The value of recovery_target_action is not a valid value. The value must be a string.']}
+
+{'hasError': True, 'errParameter': ['maintenance_work_mem', 'parallel_leader_participation', 'enable_partition_pruning', 'cpu_operator_cost', 'enable_indexonlyscan', 'default_toast_compression', 'recovery_target_action'], 'reason': ['maintenance_work_mem: The value must be a multiple of 1MB.', 'parallel_leader_participation: The value must be on or off.', 'enable_partition_pruning: The value must be on or off.', 'cpu_operator_cost: The value must be a decimal number.', 'enable_indexonlyscan: The value must be on or off.', 'default_toast_compression: The value must be a valid compression algorithm.', 'recovery_target_action: The value must be a valid recovery target action.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: maintenance_work_mem	parallel_leader_participation	enable_partition_pruning	cpu_operator_cost	enable_indexonlyscan	default_toast_compression	recovery_target_action
+[Ciri] Reason for maintenance_work_mem: maintenance_work_mem should be a percentage, not a unit of memory
+[Ciri] Reason for parallel_leader_participation: The value of parallel_leader_participation is not a valid value. The value must be a boolean.
+[Ciri] Reason for enable_partition_pruning: The value of enable_partition_pruning is not a valid value. The value must be a boolean.
+[Ciri] Reason for cpu_operator_cost: cpu_operator_cost: The value must be a decimal number.
+[Ciri] Reason for enable_indexonlyscan: The value of enable_indexonlyscan is not a valid value. The value must be a boolean.
+[Ciri] Reason for default_toast_compression: default_toast_compression should be a valid compression method
+[Ciri] Reason for recovery_target_action: recovery_target_action should be a valid recovery target action

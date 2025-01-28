@@ -1,0 +1,18 @@
+Wrong shot number:
+[12, 10, 4]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.max'], 'reason': ["The property 'fs.cos.connection.max' has the value '512' which is out of the valid range of a port number."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.lock.pool.high.watermark', 'alluxio.master.embedded.journal.retry.cache.expiry.time'], 'reason': ["The value of the property 'alluxio.master.lock.pool.high.watermark' should be smaller or equal to the value of the property 'alluxio.master.lock.pool.low.watermark'.", "The value of the property 'alluxio.master.embedded.journal.retry.cache.expiry.time' should be smaller or equal to the value of the property 'alluxio.master.embedded.journal.retry.cache.expiry.time'."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.max'], 'reason': ["The property 'fs.cos.connection.max' has the value '512' which is out of the valid range of a port number."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.cos.connection.max
+[Ciri] Reason for fs.cos.connection.max: The property 'fs.cos.connection.max' has the value '512' which is out of the valid range of a port number.

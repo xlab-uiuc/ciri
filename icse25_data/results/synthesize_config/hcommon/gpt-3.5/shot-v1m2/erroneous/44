@@ -1,0 +1,15 @@
+Wrong shot number:
+[10, 2]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.s3a.socket.send.buffer'], 'reason': ["The property 'hadoop.security.dns.nameserver' has the value '0.0.256.0' which is not a valid IP address.", "The property 'fs.s3a.socket.send.buffer' should represent the socket send buffer hint in bytes."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.s3a.socket.send.buffer
+[Ciri] Reason for hadoop.security.dns.nameserver: The property 'hadoop.security.dns.nameserver' has the value '0.0.256.0' which is not a valid IP address.
+[Ciri] Reason for fs.s3a.socket.send.buffer: The property 'fs.s3a.socket.send.buffer' should represent the socket send buffer hint in bytes.

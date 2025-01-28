@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appenddirname', 'hash-max-listpack-entries'], 'reason': ["The correct configuration directive is 'dir', not 'appenddirname'. 'appenddirname' does not exist in Redis configuration.", "'hash-max-listpack-entries' is not a valid configuration directive. The correct directive might be 'hash-max-ziplist-entries' for controlling hash max entries in Redis versions prior to 6.0. In Redis 7.0.0, the relevant configuration for controlling the size of Hash data types could be different, such as 'hash-max-listpack-value' or similar, but 'hash-max-listpack-entries' as specified does not exist."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: appenddirname	hash-max-listpack-entries
+[Ciri] Reason for appenddirname: The correct configuration directive is 'dir', not 'appenddirname'. 'appenddirname' does not exist in Redis configuration.
+[Ciri] Reason for hash-max-listpack-entries: 'hash-max-listpack-entries' is not a valid configuration directive. The correct directive might be 'hash-max-ziplist-entries' for controlling hash max entries in Redis versions prior to 6.0. In Redis 7.0.0, the relevant configuration for controlling the size of Hash data types could be different, such as 'hash-max-listpack-value' or similar, but 'hash-max-listpack-entries' as specified does not exist.

@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_min_duration_statement'], 'reason': ['log_min_duration_statement must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be an integer greater than 0']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'unix_socket_group', 'unix_socket_permissions', 'shared_preload_libraries', 'dynamic_library_path'], 'reason': ['listen_addresses must be an array', 'unix_socket_directories must be an array', 'unix_socket_group must be a string', 'unix_socket_permissions must be a string', 'shared_preload_libraries must be an array', 'dynamic_library_path must be a string']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_level', 'max_connections', 'shared_buffers', 'dynamic_library_path', 'log_duration'], 'reason': ["listen_addresses cannot be set to '*'", 'wal_level must be one of {minimal, archive, hot_standby, logical}', 'max_connections must be greater than 100', 'shared_buffers must be greater than 128MB', 'dynamic_library_path must be set to a valid directory', 'log_duration must be one of {on, off}']}
+
+{'hasError': True, 'errParameter': ['log_min_duration_statement'], 'reason': ['log_min_duration_statement must be a positive integer or -1.']}
+
+{'hasError': True, 'errParameter': ['log_min_duration_statement'], 'reason': ['log_min_duration_statement must be between 0 and 1000000000, inclusive.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: log_min_duration_statement
+[Ciri] Reason for log_min_duration_statement: log_min_duration_statement must be between 0 and 1000000000, inclusive.

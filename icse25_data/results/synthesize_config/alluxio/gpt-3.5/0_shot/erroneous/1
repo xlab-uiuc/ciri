@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.master.daily.backup.state.lock.grace.mode', 'alluxio.user.streaming.reader.buffer.size.messages', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ['Invalid value type. Value should be an integer.', "Invalid value. Possible values are 'TIMEOUT_GRACEFUL', 'TIMEOUT_FORCE', 'LOCK_FREE'.", 'Invalid value type. Value should be an integer.', "Invalid value format. Use '2s' instead of '2sec'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.master.daily.backup.state.lock.grace.mode', 'alluxio.user.streaming.reader.buffer.size.messages', 'alluxio.user.file.persist.on.rename', 'alluxio.worker.remote.io.slow.threshold', 'alluxio.underfs.s3.streaming.upload.enabled', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ['Invalid value type. Value should be an integer.', "Invalid value. Valid values are 'TIMEOUT_GRACEFUL', 'TIMEOUT_FORCE', 'EXCEPTION'", 'Invalid value type. Value should be an integer.', 'Invalid value type. Value should be a boolean.', "Invalid value format. Should be in milliseconds or seconds (e.g., '1000ms', '1s')", 'Invalid value type. Value should be a boolean.', "Invalid value format. Should be in milliseconds or seconds (e.g., '2000ms', '2s')"]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.master.daily.backup.state.lock.grace.mode', 'alluxio.user.streaming.reader.buffer.size.messages', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ['Invalid value type. Expected integer.', "Invalid value. Possible values are 'TIMEOUT', 'GRACEFUL'.", 'Invalid value type. Expected integer.', 'Invalid value format. Should be in milliseconds or seconds format.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.job.master.client.threads	alluxio.master.daily.backup.state.lock.grace.mode	alluxio.user.streaming.reader.buffer.size.messages	alluxio.jvm.monitor.sleep.interval
+[Ciri] Reason for alluxio.job.master.client.threads: Invalid value type. Expected integer.
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.grace.mode: Invalid value. Possible values are 'TIMEOUT', 'GRACEFUL'.
+[Ciri] Reason for alluxio.user.streaming.reader.buffer.size.messages: Invalid value type. Value should be an integer.
+[Ciri] Reason for alluxio.jvm.monitor.sleep.interval: Invalid value format. Use '2s' instead of '2sec'.

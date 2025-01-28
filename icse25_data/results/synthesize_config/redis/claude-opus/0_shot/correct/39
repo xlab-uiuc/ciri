@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['aof-timestamp-enabled', 'maxmemory-clients'], 'reason': ["The 'aof-timestamp-enabled' configuration parameter is not available in Redis 7.0.0. It was introduced in Redis 7.0.4.", "The 'maxmemory-clients' parameter expects a memory value, but the provided value '1g' is not a valid memory format. It should be an integer value representing the number of client output buffers."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: aof-timestamp-enabled	maxmemory-clients
+[Ciri] Reason for aof-timestamp-enabled: The 'aof-timestamp-enabled' configuration parameter is not available in Redis 7.0.0. It was introduced in Redis 7.0.4.
+[Ciri] Reason for maxmemory-clients: The 'maxmemory-clients' parameter expects a memory value, but the provided value '1g' is not a valid memory format. It should be an integer value representing the number of client output buffers.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.bind.host', 'alluxio.user.file.create.ttl'], 'reason': ["alluxio.job.worker.web.bind.host should be a valid IP address, but '1.1.1.1.1.1' is not a valid IP address.", "alluxio.user.file.create.ttl should be a non-negative value, but '-2' is negative."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.web.bind.host	alluxio.user.file.create.ttl
+[Ciri] Reason for alluxio.job.worker.web.bind.host: alluxio.job.worker.web.bind.host should be a valid IP address, but '1.1.1.1.1.1' is not a valid IP address.
+[Ciri] Reason for alluxio.user.file.create.ttl: alluxio.user.file.create.ttl should be a non-negative value, but '-2' is negative.

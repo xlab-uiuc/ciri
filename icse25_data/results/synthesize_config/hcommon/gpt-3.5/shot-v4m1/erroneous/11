@@ -1,0 +1,15 @@
+Wrong shot number:
+[1]
+
+Correct shot number:
+[6, 8, 3, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'fs.s3a.committer.staging.tmp.path'], 'reason': ["The property 'fs.ftp.timeout' has a negative value which is not valid for timeout settings.", "The property 'fs.s3a.committer.staging.tmp.path' has multiple consecutive forward slashes '////' in the value which may lead to incorrect path resolution."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.timeout	fs.s3a.committer.staging.tmp.path
+[Ciri] Reason for fs.ftp.timeout: The property 'fs.ftp.timeout' has a negative value which is not valid for timeout settings.
+[Ciri] Reason for fs.s3a.committer.staging.tmp.path: The property 'fs.s3a.committer.staging.tmp.path' has multiple consecutive forward slashes '////' in the value which may lead to incorrect path resolution.

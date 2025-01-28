@@ -1,0 +1,12 @@
+Correct shot number:
+[3, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'LOGGING_CONFIG'], 'reason': ['SECURE_HSTS_SECONDS should be a positive integer representing the number of seconds for which the HSTS policy should be in effect.', "LOGGING_CONFIG should not be set to 'logging.config.dictConfig' in Django 4.0. It should be configured using the LOGGING setting."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: SECURE_HSTS_SECONDS	LOGGING_CONFIG
+[Ciri] Reason for SECURE_HSTS_SECONDS: SECURE_HSTS_SECONDS should be a positive integer representing the number of seconds for which the HSTS policy should be in effect.
+[Ciri] Reason for LOGGING_CONFIG: LOGGING_CONFIG should not be set to 'logging.config.dictConfig' in Django 4.0. It should be configured using the LOGGING setting.

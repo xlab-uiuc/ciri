@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 7, 14]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.retry.throttle.interval', 'ipc.[port_number].scheduler.impl', 'io.serializations'], 'reason': ["The value '1ms' for property 'fs.s3a.retry.throttle.interval' does not follow the correct format. It should be an integer representing milliseconds.", "The property name 'ipc.[port_number].scheduler.impl' is invalid because it contains a placeholder '[port_number]' which should be replaced with an actual port number.", "The 'usage' element in the 'io.serializations' property is not a valid configuration element."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.retry.throttle.interval'], 'reason': ["The value '1ms' for property 'fs.s3a.retry.throttle.interval' is not correctly formatted. It should be a number without the 'ms' suffix."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.retry.throttle.interval'], 'reason': ["The value '1ms' for property 'fs.s3a.retry.throttle.interval' is not correctly formatted. It should be a number without a unit, as the unit is implicitly milliseconds."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.s3a.retry.throttle.interval
+[Ciri] Reason for fs.s3a.retry.throttle.interval: The value '1ms' for property 'fs.s3a.retry.throttle.interval' is not correctly formatted. It should be a number without a unit, as the unit is implicitly milliseconds.

@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['gss_accept_delegation', 'hot_standby_feedback', 'bytea_output', 'bonjour', 'max_prepared_transactions'], 'reason': ["The parameter 'gss_accept_delegation' is not recognized in PostgreSQL version 13.0.", "The parameter 'hot_standby_feedback' is not recognized in PostgreSQL version 13.0.", "The value 'hex' for 'bytea_output' is valid but not recommended. Consider using 'escape' or 'hex' instead.", "The parameter 'bonjour' is not recognized in PostgreSQL version 13.0.", "The value '0' for 'max_prepared_transactions' is not recommended. Consider setting a value greater than 0."]}
+
+{'hasError': True, 'errParameter': ['gss_accept_delegation', 'hot_standby_feedback', 'bytea_output', 'bonjour', 'max_prepared_transactions'], 'reason': ['gss_accept_delegation is not a valid parameter for PostgreSQL version 13.0', 'hot_standby_feedback is not a valid parameter for PostgreSQL version 13.0', 'bytea_output is not a valid parameter for PostgreSQL version 13.0', 'bonjour is not a valid parameter for PostgreSQL version 13.0', 'max_prepared_transactions should be set to a value greater than 0']}
+
+{'hasError': True, 'errParameter': ['gss_accept_delegation', 'hot_standby_feedback', 'bytea_output', 'bonjour', 'max_prepared_transactions'], 'reason': ["The parameter 'gss_accept_delegation' is not recognized in PostgreSQL version 13.0.", "The parameter 'hot_standby_feedback' is not recognized in PostgreSQL version 13.0.", "The value 'hex' for 'bytea_output' is valid but not recommended. It should be 'escape' or 'hex'.", "The parameter 'bonjour' is not recognized in PostgreSQL version 13.0.", "The value for 'max_prepared_transactions' should be greater than 0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: gss_accept_delegation	hot_standby_feedback	bytea_output	bonjour	max_prepared_transactions
+[Ciri] Reason for gss_accept_delegation: The parameter 'gss_accept_delegation' is not recognized in PostgreSQL version 13.0.
+[Ciri] Reason for hot_standby_feedback: The parameter 'hot_standby_feedback' is not recognized in PostgreSQL version 13.0.
+[Ciri] Reason for bytea_output: The value 'hex' for 'bytea_output' is valid but not recommended. Consider using 'escape' or 'hex' instead.
+[Ciri] Reason for bonjour: The parameter 'bonjour' is not recognized in PostgreSQL version 13.0.
+[Ciri] Reason for max_prepared_transactions: max_prepared_transactions should be set to a value greater than 0

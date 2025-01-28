@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['logical_decoding_work_mem', 'huge_page_size'], 'reason': ["The parameter 'logical_decoding_work_mem' is not available in PostgreSQL 13. It was removed in version 13.", "The value for 'huge_page_size' must be a valid memory unit such as kB, MB, GB, or TB. The value '1' is invalid."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: logical_decoding_work_mem	huge_page_size
+[Ciri] Reason for logical_decoding_work_mem: The parameter 'logical_decoding_work_mem' is not available in PostgreSQL 13. It was removed in version 13.
+[Ciri] Reason for huge_page_size: The value for 'huge_page_size' must be a valid memory unit such as kB, MB, GB, or TB. The value '1' is invalid.

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['aof-rewrite-incremental-fsync', 'tls-session-caching', 'proto-max-bulk-len', 'disable-thp'], 'reason': ["The correct parameter is 'aof-rewrite-incremental-fsync' without the '=yes'. It should be set as 'yes' or 'no' without the '='.", "The 'tls-session-caching' option does not exist in Redis configuration. There might be confusion with another setting or it could be a version-specific feature not present in Redis 7.0.0.", "The 'proto-max-bulk-len' value is specified in an incorrect format. Redis expects this value to be in bytes, and while the 'mb' suffix might be intended to denote 'megabytes', the correct format does not use such suffixes.", "The 'disable-thp' configuration is not a standard Redis configuration parameter. It seems to be related to Transparent Huge Pages (THP) settings, which are typically managed at the system level, not within Redis configuration."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: aof-rewrite-incremental-fsync	tls-session-caching	proto-max-bulk-len	disable-thp
+[Ciri] Reason for aof-rewrite-incremental-fsync: The correct parameter is 'aof-rewrite-incremental-fsync' without the '=yes'. It should be set as 'yes' or 'no' without the '='.
+[Ciri] Reason for tls-session-caching: The 'tls-session-caching' option does not exist in Redis configuration. There might be confusion with another setting or it could be a version-specific feature not present in Redis 7.0.0.
+[Ciri] Reason for proto-max-bulk-len: The 'proto-max-bulk-len' value is specified in an incorrect format. Redis expects this value to be in bytes, and while the 'mb' suffix might be intended to denote 'megabytes', the correct format does not use such suffixes.
+[Ciri] Reason for disable-thp: The 'disable-thp' configuration is not a standard Redis configuration parameter. It seems to be related to Transparent Huge Pages (THP) settings, which are typically managed at the system level, not within Redis configuration.

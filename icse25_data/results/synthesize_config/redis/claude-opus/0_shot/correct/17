@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['list-max-listpack-size', 'replica-announce-port', 'unixsocketperm'], 'reason': ["The 'list-max-listpack-size' parameter has been renamed to 'list-max-ziplist-size' in Redis 7.0.", "The 'replica-announce-port' parameter has been renamed to 'replica-announce-port' in Redis 7.0.", "The 'unixsocketperm' parameter should be an octal number, e.g., 0700 instead of 350."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: list-max-listpack-size	replica-announce-port	unixsocketperm
+[Ciri] Reason for list-max-listpack-size: The 'list-max-listpack-size' parameter has been renamed to 'list-max-ziplist-size' in Redis 7.0.
+[Ciri] Reason for replica-announce-port: The 'replica-announce-port' parameter has been renamed to 'replica-announce-port' in Redis 7.0.
+[Ciri] Reason for unixsocketperm: The 'unixsocketperm' parameter should be an octal number, e.g., 0700 instead of 350.

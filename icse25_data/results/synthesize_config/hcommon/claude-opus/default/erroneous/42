@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 3, 4]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.http.authentication.cookie.domain', 'hadoop.security.group.mapping.ldap.search.filter.user'], 'reason': ["The property 'hadoop.http.authentication.cookie.domain' has an invalid IP address value '256.256.256.256'. IP address octets must be between 0 and 255.", "The property 'hadoop.security.group.mapping.ldap.search.filter.user' has the value 'xdsuper' which is not a valid LDAP search filter."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.http.authentication.cookie.domain	hadoop.security.group.mapping.ldap.search.filter.user
+[Ciri] Reason for hadoop.http.authentication.cookie.domain: The property 'hadoop.http.authentication.cookie.domain' has an invalid IP address value '256.256.256.256'. IP address octets must be between 0 and 255.
+[Ciri] Reason for hadoop.security.group.mapping.ldap.search.filter.user: The property 'hadoop.security.group.mapping.ldap.search.filter.user' has the value 'xdsuper' which is not a valid LDAP search filter.

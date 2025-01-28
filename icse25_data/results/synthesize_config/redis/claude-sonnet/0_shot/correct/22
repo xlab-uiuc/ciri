@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'cluster-announce-port', 'repl-diskless-load'], 'reason': ["The 'cluster-announce-ip' parameter is used for Redis Cluster configuration, but Redis 7.0.0 is a single-instance version and does not support clustering.", "The 'cluster-announce-port' parameter is also used for Redis Cluster configuration, which is not supported in Redis 7.0.0.", "The 'repl-diskless-load' parameter is used for Redis replication, which is not supported in Redis 7.0.0 as it is a single-instance version."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-ip	cluster-announce-port	repl-diskless-load
+[Ciri] Reason for cluster-announce-ip: The 'cluster-announce-ip' parameter is used for Redis Cluster configuration, but Redis 7.0.0 is a single-instance version and does not support clustering.
+[Ciri] Reason for cluster-announce-port: The 'cluster-announce-port' parameter is also used for Redis Cluster configuration, which is not supported in Redis 7.0.0.
+[Ciri] Reason for repl-diskless-load: The 'repl-diskless-load' parameter is used for Redis replication, which is not supported in Redis 7.0.0 as it is a single-instance version.

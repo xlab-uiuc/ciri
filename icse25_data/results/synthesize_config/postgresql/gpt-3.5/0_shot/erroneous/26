@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable_async_append', 'enable_hashagg', 'geqo_threshold', 'exit_on_error', 'jit_above_cost'], 'reason': ["'enable_async_append' is not a valid parameter for PostgreSQL version 13.0.", "'enable_hashagg' is not a valid parameter for PostgreSQL version 13.0.", "'geqo_threshold' is not a valid parameter for PostgreSQL version 13.0.", "'exit_on_error' is not a valid parameter for PostgreSQL version 13.0.", "'jit_above_cost' is not a valid parameter for PostgreSQL version 13.0."]}
+
+{'hasError': True, 'errParameter': ['enable_async_append', 'geqo_threshold', 'exit_on_error', 'jit_above_cost'], 'reason': ['enable_async_append is not a valid parameter for PostgreSQL version 13.0.', 'geqo_threshold is not a valid parameter for PostgreSQL version 13.0.', 'exit_on_error is not a valid parameter for PostgreSQL version 13.0.', 'jit_above_cost is not a valid parameter for PostgreSQL version 13.0.']}
+
+{'hasError': True, 'errParameter': ['enable_async_append', 'enable_hashagg', 'geqo_threshold', 'exit_on_error', 'jit_above_cost'], 'reason': ["The parameters 'enable_async_append', 'enable_hashagg', 'geqo_threshold', 'exit_on_error', 'jit_above_cost' are not recognized in PostgreSQL version 13.0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: enable_async_append	enable_hashagg	geqo_threshold	exit_on_error	jit_above_cost
+[Ciri] Reason for enable_async_append: The parameters 'enable_async_append', 'enable_hashagg', 'geqo_threshold', 'exit_on_error', 'jit_above_cost' are not recognized in PostgreSQL version 13.0.
+[Ciri] Reason for enable_hashagg: 'enable_hashagg' is not a valid parameter for PostgreSQL version 13.0.
+[Ciri] Reason for geqo_threshold: 'geqo_threshold' is not a valid parameter for PostgreSQL version 13.0.
+[Ciri] Reason for exit_on_error: 'exit_on_error' is not a valid parameter for PostgreSQL version 13.0.
+[Ciri] Reason for jit_above_cost: 'jit_above_cost' is not a valid parameter for PostgreSQL version 13.0.

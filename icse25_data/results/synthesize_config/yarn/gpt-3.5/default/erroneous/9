@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 1, 8]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.runtime.linux.sandbox-mode'], 'reason': ["The property 'yarn.nodemanager.hostname' has the value '0.0.0' which is not a valid IP address.", "The value of the property 'yarn.nodemanager.runtime.linux.sandbox-mode' should be one of the following: 'disabled', 'permissive', 'enforcing'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.runtime.linux.sandbox-mode'], 'reason': ["The property 'yarn.nodemanager.hostname' has the value '0.0.0' which is not a valid IP address.", "The property 'yarn.nodemanager.runtime.linux.sandbox-mode' has the value 'disabled' which is not a valid mode. It should be one of the supported modes such as 'enabled', 'disabled', etc."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.runtime.linux.sandbox-mode'], 'reason': ["The property 'yarn.nodemanager.hostname' has the value '0.0.0' which is not a valid IP address.", "The property 'yarn.nodemanager.runtime.linux.sandbox-mode' has the value 'disabled' which is not of the correct type. It should be a boolean value (true/false)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.hostname	yarn.nodemanager.runtime.linux.sandbox-mode
+[Ciri] Reason for yarn.nodemanager.hostname: The property 'yarn.nodemanager.hostname' has the value '0.0.0' which is not a valid IP address.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.sandbox-mode: The property 'yarn.nodemanager.runtime.linux.sandbox-mode' has the value 'disabled' which is not a valid mode. It should be one of the supported modes such as 'enabled', 'disabled', etc.

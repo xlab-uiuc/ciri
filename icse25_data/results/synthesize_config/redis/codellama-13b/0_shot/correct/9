@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-module-command=no', 'maxmemory-clients=1g', 'replica-announce-ip=127.0.0.1', 'replica-lazy-flush=no', 'set-max-intset-entries=256', 'stop-writes-on-bgsave-error=yes', 'list-max-listpack-size=-2', 'pidfile=/valid/file2.pid'], 'reason': ['enable-module-command is not a valid configuration directive.', 'maxmemory-clients is not a valid configuration directive.', 'replica-announce-ip is not a valid configuration directive.', 'replica-lazy-flush is not a valid configuration directive.', 'set-max-intset-entries is not a valid configuration directive.', 'stop-writes-on-bgsave-error is not a valid configuration directive.', 'list-max-listpack-size is not a valid configuration directive.', 'pidfile is not a valid configuration directive.']}
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'maxmemory-clients', 'replica-announce-ip', 'replica-lazy-flush', 'set-max-intset-entries', 'stop-writes-on-bgsave-error', 'list-max-listpack-size', 'pidfile'], 'reason': ['enable-module-command is not a valid configuration directive.', 'maxmemory-clients is not a valid configuration directive.', 'replica-announce-ip is not a valid configuration directive.', 'replica-lazy-flush is not a valid configuration directive.', 'set-max-intset-entries is not a valid configuration directive.', 'stop-writes-on-bgsave-error is not a valid configuration directive.', 'list-max-listpack-size is not a valid configuration directive.', 'pidfile is not a valid configuration directive.']}
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'replica-announce-ip', 'replica-lazy-flush', 'set-max-intset-entries', 'stop-writes-on-bgsave-error', 'list-max-listpack-size', 'pidfile'], 'reason': ['enable-module-command is not a valid configuration directive.', 'replica-announce-ip is not a valid configuration directive.', 'replica-lazy-flush is not a valid configuration directive.', 'set-max-intset-entries is not a valid configuration directive.', 'stop-writes-on-bgsave-error is not a valid configuration directive.', 'list-max-listpack-size is not a valid configuration directive.', 'pidfile is not a valid configuration directive.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'maxmemory-clients', 'replica-announce-ip', 'replica-lazy-flush', 'set-max-intset-entries', 'stop-writes-on-bgsave-error', 'list-max-listpack-size', 'pidfile'], 'reason': ['enable-module-command is not a valid configuration directive.', 'maxmemory-clients is not a valid configuration directive.', 'replica-announce-ip is not a valid configuration directive.', 'replica-lazy-flush is not a valid configuration directive.', 'set-max-intset-entries is not a valid configuration directive.', 'stop-writes-on-bgsave-error is not a valid configuration directive.', 'list-max-listpack-size is not a valid configuration directive.', 'pidfile is not a valid configuration directive.']}
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'replica-announce-ip', 'replica-lazy-flush', 'set-max-intset-entries', 'stop-writes-on-bgsave-error', 'list-max-listpack-size', 'pidfile'], 'reason': ['maxmemory-clients should be a percentage value, not a fixed value.', 'replica-announce-ip should be a hostname, not an IP address.', 'replica-lazy-flush should be yes or no.', 'set-max-intset-entries should be a positive integer.', 'stop-writes-on-bgsave-error should be yes or no.', 'list-max-listpack-size should be a positive integer.', 'pidfile should be a valid file path.']}
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'maxmemory-clients', 'replica-announce-ip', 'replica-lazy-flush', 'set-max-intset-entries', 'stop-writes-on-bgsave-error', 'list-max-listpack-size', 'pidfile'], 'reason': ['enable-module-command is not a valid configuration directive.', 'maxmemory-clients is not a valid configuration directive.', 'replica-announce-ip is not a valid configuration directive.', 'replica-lazy-flush is not a valid configuration directive.', 'set-max-intset-entries is not a valid configuration directive.', 'stop-writes-on-bgsave-error is not a valid configuration directive.', 'list-max-listpack-size is not a valid configuration directive.', 'pidfile is not a valid configuration directive.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: enable-module-command	maxmemory-clients	replica-announce-ip	replica-lazy-flush	set-max-intset-entries	stop-writes-on-bgsave-error	list-max-listpack-size	pidfile
+[Ciri] Reason for enable-module-command: enable-module-command is not a valid configuration directive.
+[Ciri] Reason for maxmemory-clients: maxmemory-clients is not a valid configuration directive.
+[Ciri] Reason for replica-announce-ip: replica-announce-ip is not a valid configuration directive.
+[Ciri] Reason for replica-lazy-flush: replica-lazy-flush is not a valid configuration directive.
+[Ciri] Reason for set-max-intset-entries: set-max-intset-entries is not a valid configuration directive.
+[Ciri] Reason for stop-writes-on-bgsave-error: stop-writes-on-bgsave-error is not a valid configuration directive.
+[Ciri] Reason for list-max-listpack-size: list-max-listpack-size is not a valid configuration directive.
+[Ciri] Reason for pidfile: pidfile is not a valid configuration directive.

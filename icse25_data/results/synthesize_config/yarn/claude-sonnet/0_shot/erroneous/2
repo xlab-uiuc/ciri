@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.retry-attempts', 'yarn.resourcemanager.webapp.https.address', 'yarn.nodemanager.node-attributes.provider.script.path'], 'reason': ['The value for yarn.resourcemanager.placement-constraints.retry-attempts should be a non-negative integer, but it is set to -5.5 which is invalid.', 'The value for yarn.resourcemanager.webapp.https.address should be a valid hostname or IP address, but it is set to 127.0.0.1 which is the loopback address and not recommended for production use.', 'The value for yarn.nodemanager.node-attributes.provider.script.path should be a valid file path, but it is set to /valid/file1 which may not be a valid path on all systems.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.resourcemanager.placement-constraints.retry-attempts	yarn.resourcemanager.webapp.https.address	yarn.nodemanager.node-attributes.provider.script.path
+[Ciri] Reason for yarn.resourcemanager.placement-constraints.retry-attempts: The value for yarn.resourcemanager.placement-constraints.retry-attempts should be a non-negative integer, but it is set to -5.5 which is invalid.
+[Ciri] Reason for yarn.resourcemanager.webapp.https.address: The value for yarn.resourcemanager.webapp.https.address should be a valid hostname or IP address, but it is set to 127.0.0.1 which is the loopback address and not recommended for production use.
+[Ciri] Reason for yarn.nodemanager.node-attributes.provider.script.path: The value for yarn.nodemanager.node-attributes.provider.script.path should be a valid file path, but it is set to /valid/file1 which may not be a valid path on all systems.

@@ -1,0 +1,43 @@
+Wrong shot number:
+[11, 10, 2]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hfile.block.cache.size', 'hbase.coprocessor.user.enabled'], 'reason': ["The value of the property 'hbase.regionserver.info.port' should be an integer representing the port number or -1 to disable the RegionServer UI.", "The value of the property 'hfile.block.cache.size' should be a float value between 0 and 1.", "The value of the property 'hbase.coprocessor.user.enabled' should be 'true' to enable user (table) coprocessor loading."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hfile.block.cache.size'], 'reason': ["The value of the property 'hbase.regionserver.info.port' should be an integer representing the port number.", "The value of the property 'hfile.block.cache.size' should be a float value between 0 and 1."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hfile.block.cache.size'], 'reason': ["The value of the property 'hbase.regionserver.info.port' should be a valid port number or -1 to disable the RegionServer UI.", "The value of the property 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min' should be smaller or equal to the default value of 'hbase.hregion.memstore.flush.size / column_family_number'.", "The value of the property 'hfile.block.cache.size' should be between 0 and 1 to represent the percentage of maximum heap to allocate to block cache."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.coprocessor.user.enabled'], 'reason': ["The value of the property 'hbase.regionserver.info.port' should be a valid port number or -1 to disable the RegionServer UI.", "The value of the property 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min' should be smaller or equal to the default value of 'hbase.hregion.memstore.flush.size / column_family_number'.", "The property 'hbase.coprocessor.user.enabled' is not recognized. Use 'hbase.coprocessor.enabled' to enable or disable coprocessor loading."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hfile.block.cache.size'], 'reason': ["The value of the property 'hbase.regionserver.info.port' should be a valid port number or -1 to disable the RegionServer UI.", "The value of the property 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min' should be smaller or equal to the default value of 'hbase.hregion.memstore.flush.size / column_family_number'.", "The value of the property 'hfile.block.cache.size' should be between 0 and 1 to represent the percentage of maximum heap to allocate to block cache."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hfile.block.cache.size', 'hbase.coprocessor.user.enabled'], 'reason': ["The value of the property 'hbase.regionserver.info.port' should be a valid port number or -1 to disable the RegionServer UI.", "The value of the property 'hfile.block.cache.size' should be a float value between 0 and 1.", "The value of the property 'hbase.coprocessor.user.enabled' should be 'true' to enable user coprocessor loading."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hbase.hregion.percolumnfamilyflush.size.lower.bound.min'], 'reason': ["The value of the property 'hbase.regionserver.info.port' should be a valid port number or -1 to disable the RegionServer UI.", "The property 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min' has an incorrect value."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.mob.compaction.chore.period'], 'reason': ["The value of the property 'hbase.regionserver.info.port' should be a valid port number or -1 to disable the RegionServer UI.", "The value of the property 'hbase.mob.compaction.chore.period' should be in seconds and represent a reasonable time period."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hfile.block.cache.size'], 'reason': ["The value of the property 'hbase.regionserver.info.port' should be an integer representing the port number or -1 to disable the RegionServer UI.", "The value of the property 'hfile.block.cache.size' should be a float value between 0 and 1."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hfile.block.cache.size'], 'reason': ["The value of the property 'hbase.regionserver.info.port' should be an integer representing the port number or -1 to disable the RegionServer UI.", "The value of the property 'hfile.block.cache.size' should be a float value between 0 and 1."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hfile.block.cache.size'], 'reason': ["The value of the property 'hbase.regionserver.info.port' should be an integer representing the port number.", "The value of the property 'hfile.block.cache.size' should be a float value between 0 and 1."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hfile.block.cache.size'], 'reason': ["The value of the property 'hbase.regionserver.info.port' should be an integer representing the port number or -1 to disable the RegionServer UI.", "The value of the property 'hfile.block.cache.size' should be a float value between 0 and 1."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.info.port	hbase.hfile.block.cache.size
+[Ciri] Reason for hbase.regionserver.info.port: The value of the property 'hbase.regionserver.info.port' should be an integer representing the port number or -1 to disable the RegionServer UI.
+[Ciri] Reason for hbase.hfile.block.cache.size: The value of the property 'hfile.block.cache.size' should be a float value between 0 and 1.

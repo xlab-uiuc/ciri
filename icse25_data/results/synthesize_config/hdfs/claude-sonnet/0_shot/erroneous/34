@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.permissions.enabled', 'dfs.storage.policy.satisfier.address'], 'reason': ["The value 'hadoop' for the dfs.permissions.enabled property is invalid. It should be a boolean value (true or false).", "The value '0.0.0.0:3000' for the dfs.storage.policy.satisfier.address property is likely incorrect. This property is used to specify the hostname and port for the Storage Policy Satisfier service, which is typically a separate server from the NameNode. The value '0.0.0.0' is a non-routable IP address and is generally not a valid hostname."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.permissions.enabled	dfs.storage.policy.satisfier.address
+[Ciri] Reason for dfs.permissions.enabled: The value 'hadoop' for the dfs.permissions.enabled property is invalid. It should be a boolean value (true or false).
+[Ciri] Reason for dfs.storage.policy.satisfier.address: The value '0.0.0.0:3000' for the dfs.storage.policy.satisfier.address property is likely incorrect. This property is used to specify the hostname and port for the Storage Policy Satisfier service, which is typically a separate server from the NameNode. The value '0.0.0.0' is a non-routable IP address and is generally not a valid hostname.

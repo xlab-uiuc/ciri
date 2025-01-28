@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['temp_buffers', 'wal_keep_size', 'huge_page_size'], 'reason': ["temp_buffers should be set to a value like '8MB', not '8BB'", "wal_keep_size should be set to a non-zero value like '128MB' for write-ahead log archiving", 'huge_page_size is not a valid parameter in PostgreSQL 13. It was removed in version 13.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: temp_buffers	wal_keep_size	huge_page_size
+[Ciri] Reason for temp_buffers: temp_buffers should be set to a value like '8MB', not '8BB'
+[Ciri] Reason for wal_keep_size: wal_keep_size should be set to a non-zero value like '128MB' for write-ahead log archiving
+[Ciri] Reason for huge_page_size: huge_page_size is not a valid parameter in PostgreSQL 13. It was removed in version 13.

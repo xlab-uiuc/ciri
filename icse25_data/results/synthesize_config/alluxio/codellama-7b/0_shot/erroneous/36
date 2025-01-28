@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.hostname', 'alluxio.job.worker.bind.host'], 'reason': ['alluxio.master.hostname and alluxio.job.worker.bind.host must be set to the same value.']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host', 'alluxio.job.master.embedded.journal.addresses'], 'reason': ['alluxio.job.worker.bind.host should be set to a valid IP address or hostname, but -1.0.0.0 is not a valid IP address or hostname.', 'alluxio.job.master.embedded.journal.addresses should be set to a valid IP address or hostname, but 127.0.0.1 is not a valid IP address or hostname.']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host', 'alluxio.job.master.embedded.journal.addresses'], 'reason': ['alluxio.job.worker.bind.host should be set to a valid hostname or IP address', 'alluxio.job.master.embedded.journal.addresses should be set to a valid hostname or IP address']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.bind.host	alluxio.job.master.embedded.journal.addresses
+[Ciri] Reason for alluxio.job.worker.bind.host: alluxio.job.worker.bind.host should be set to a valid IP address or hostname, but -1.0.0.0 is not a valid IP address or hostname.
+[Ciri] Reason for alluxio.job.master.embedded.journal.addresses: alluxio.job.master.embedded.journal.addresses should be set to a valid hostname or IP address

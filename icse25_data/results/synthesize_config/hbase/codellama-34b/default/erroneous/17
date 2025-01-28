@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 9, 7]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hostname'], 'reason': ["The property 'hbase.regionserver.hostname' has the value '127.0.0.1' which is not a valid hostname."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.quorum'], 'reason': ["The property 'hbase.zookeeper.quorum' has the value 'localhost' which is not a valid hostname."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.quorum'], 'reason': ["The property 'hbase.zookeeper.quorum' has the value 'localhost' which is not within the accepted value {example1.com:5678,example2.com:9012,example3.com:3456}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.zookeeper.quorum
+[Ciri] Reason for hbase.zookeeper.quorum: The property 'hbase.zookeeper.quorum' has the value 'localhost' which is not a valid hostname.

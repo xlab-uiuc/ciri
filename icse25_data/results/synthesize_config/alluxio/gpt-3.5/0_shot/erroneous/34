@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type', 'alluxio.master.embedded.journal.addresses', 'alluxio.user.client.cache.timeout.duration', 'alluxio.master.ttl.checker.interval', 'alluxio.jvm.monitor.info.threshold', 'alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.underfs.gcs.default.mode'], 'reason': ["Invalid value for property 'alluxio.master.journal.type'.", "Invalid value for property 'alluxio.master.embedded.journal.addresses'.", "Invalid value for property 'alluxio.user.client.cache.timeout.duration'.", "Invalid value for property 'alluxio.master.ttl.checker.interval'.", "Invalid value for property 'alluxio.jvm.monitor.info.threshold'.", "Invalid value for property 'alluxio.user.network.rpc.max.inbound.message.size'.", "Invalid value for property 'alluxio.underfs.gcs.default.mode'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.timeout.duration', 'alluxio.master.ttl.checker.interval', 'alluxio.jvm.monitor.info.threshold', 'alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.underfs.gcs.default.mode'], 'reason': ["Invalid value for property 'alluxio.user.client.cache.timeout.duration'. Value should be a positive integer or -1 for no timeout.", "Invalid format for property 'alluxio.master.ttl.checker.interval'. Use format like '1h' for 1 hour.", "Invalid format for property 'alluxio.jvm.monitor.info.threshold'. Use format like '10s' for 10 seconds.", "Invalid value for property 'alluxio.user.network.rpc.max.inbound.message.size'. Value should be specified in bytes.", "Invalid value for property 'alluxio.underfs.gcs.default.mode'. Mode should be an integer representing permissions."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type', 'alluxio.master.embedded.journal.addresses', 'alluxio.user.client.cache.timeout.duration', 'alluxio.master.ttl.checker.interval', 'alluxio.jvm.monitor.info.threshold', 'alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.underfs.gcs.default.mode'], 'reason': ["Invalid value for property 'alluxio.master.journal.type'.", "Invalid value for property 'alluxio.master.embedded.journal.addresses'.", "Invalid value for property 'alluxio.user.client.cache.timeout.duration'.", "Invalid value for property 'alluxio.master.ttl.checker.interval'.", "Invalid value for property 'alluxio.jvm.monitor.info.threshold'.", "Invalid value for property 'alluxio.user.network.rpc.max.inbound.message.size'.", "Invalid value for property 'alluxio.underfs.gcs.default.mode'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: alluxio.master.journal.type	alluxio.master.embedded.journal.addresses	alluxio.user.client.cache.timeout.duration	alluxio.master.ttl.checker.interval	alluxio.jvm.monitor.info.threshold	alluxio.user.network.rpc.max.inbound.message.size	alluxio.underfs.gcs.default.mode
+[Ciri] Reason for alluxio.master.journal.type: Invalid value for property 'alluxio.master.journal.type'.
+[Ciri] Reason for alluxio.master.embedded.journal.addresses: Invalid value for property 'alluxio.master.embedded.journal.addresses'.
+[Ciri] Reason for alluxio.user.client.cache.timeout.duration: Invalid value for property 'alluxio.user.client.cache.timeout.duration'.
+[Ciri] Reason for alluxio.master.ttl.checker.interval: Invalid value for property 'alluxio.master.ttl.checker.interval'.
+[Ciri] Reason for alluxio.jvm.monitor.info.threshold: Invalid value for property 'alluxio.jvm.monitor.info.threshold'.
+[Ciri] Reason for alluxio.user.network.rpc.max.inbound.message.size: Invalid value for property 'alluxio.user.network.rpc.max.inbound.message.size'.
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: Invalid value for property 'alluxio.underfs.gcs.default.mode'.

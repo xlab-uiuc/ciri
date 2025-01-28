@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 5, 7]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hfile.block.cache.size', 'hbase.data.umask'], 'reason': ["The property 'hfile.block.cache.size' has the value '0.8' which exceeds the recommended maximum of 0.4 (40%).", "The property 'hbase.data.umask' has the value '888' which is not a valid umask. It should be an octal value like 000, 022, 077 etc."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hfile.block.cache.size	hbase.data.umask
+[Ciri] Reason for hfile.block.cache.size: The property 'hfile.block.cache.size' has the value '0.8' which exceeds the recommended maximum of 0.4 (40%).
+[Ciri] Reason for hbase.data.umask: The property 'hbase.data.umask' has the value '888' which is not a valid umask. It should be an octal value like 000, 022, 077 etc.

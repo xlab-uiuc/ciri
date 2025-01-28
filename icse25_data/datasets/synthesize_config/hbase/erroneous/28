@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.port</name>
+  <value>3000</value>
+    <description>The port the HBase RegionServer binds to.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.callqueue.handler.factor</name>
+  <value>0.05</value>
+    <description>Factor to determine the number of call queues.
+      A value of 0 means a single queue shared between all the handlers.
+      A value of 1 means that each handler has its own queue.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.optionalcacheflushinterval</name>
+  <value>7200000</value>
+    <description>
+    Maximum amount of time an edit lives in memory before being automatically flushed.
+    Default 1 hour. Set it to 0 to disable automatic flushing.
+  </description>
+</property>
+
+<property>
+  <name>hbase.hstore.flusher.count</name>
+  <value>4</value>
+    <description> The number of flush threads. With fewer threads, the MemStore flushes will be
+      queued. With more threads, the flushes will be executed in parallel, increasing the load on
+      HDFS, and potentially causing more compactions. </description>
+</property>
+
+<property>
+  <name>hbase.rs.cacheblocksonwrite</name>
+  <value>true</value>
+      <description>Whether an HFile block should be added to the block cache when the
+        block is finished.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.thrift.framed</name>
+  <value>false</value>
+    <description>Use Thrift TFramedTransport on the server side.
+      This is the recommended transport for thrift servers and requires a similar setting
+      on the client side. Changing this to false will select the default transport,
+      vulnerable to DoS when malformed requests are issued due to THRIFT-601.
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.thrift.framed.max_frame_size_in_mb</name>
+  <value>1</value>
+    <description>Default frame size when using framed transport, in MB</description>
+</property>
+
+<property>
+  <name>hbase.rest.filter.classes</name>
+  <value>NOEXIST_CLASS</value>
+    <description>
+      Servlet filters for REST service.
+    </description>
+</property>
+
+</configuration>

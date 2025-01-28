@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['stop-writes-on-bgsave-error', 'list-compress-depth', 'aof-load-truncated', 'repl-diskless-load'], 'reason': ['stop-writes-on-bgsave-error is deprecated in Redis 7.0.0.', 'list-compress-depth is not a valid parameter in Redis 7.0.0.', 'aof-load-truncated is not a valid parameter in Redis 7.0.0.', 'repl-diskless-load is not a valid parameter in Redis 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['stop-writes-on-bgsave-error', 'list-compress-depth', 'aof-load-truncated', 'repl-diskless-load'], 'reason': ['stop-writes-on-bgsave-error is not a valid parameter in Redis 7.0.0', 'list-compress-depth is not a valid parameter in Redis 7.0.0', 'aof-load-truncated is not a valid parameter in Redis 7.0.0', 'repl-diskless-load is not a valid parameter in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['list-compress-depth', 'repl-diskless-load'], 'reason': ['list-compress-depth is deprecated in Redis 7.0.0. Please remove or update this configuration.', 'repl-diskless-load is not a valid configuration parameter in Redis 7.0.0. Please remove or correct this configuration.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: stop-writes-on-bgsave-error	list-compress-depth	aof-load-truncated	repl-diskless-load
+[Ciri] Reason for stop-writes-on-bgsave-error: stop-writes-on-bgsave-error is not a valid parameter in Redis 7.0.0
+[Ciri] Reason for list-compress-depth: list-compress-depth is not a valid parameter in Redis 7.0.0.
+[Ciri] Reason for aof-load-truncated: aof-load-truncated is not a valid parameter in Redis 7.0.0.
+[Ciri] Reason for repl-diskless-load: repl-diskless-load is not a valid parameter in Redis 7.0.0

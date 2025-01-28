@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'timeout', 'no-appendfsync-on-rewrite'], 'reason': ['bind-source-addr value is invalid. It should be a valid IP address.', 'timeout value is invalid. It should be a positive integer representing the timeout value in milliseconds.', "no-appendfsync-on-rewrite value is invalid. It should be either 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'timeout', 'no-appendfsync-on-rewrite'], 'reason': ['bind-source-addr should be a valid IP address or hostname.', 'timeout value should be greater than 0.', 'no-appendfsync-on-rewrite should be yes or no.']}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'stream-node-max-bytes', 'repl-diskless-sync-max-replicas', 'appenddirname', 'timeout', 'hash-max-listpack-value', 'cluster-node-timeout', 'no-appendfsync-on-rewrite'], 'reason': ['Invalid value for bind-source-addr. It should be a valid IP address.', "stream-node-max-bytes should be in the format 'stream-node-max-bytes <bytes>'.", 'repl-diskless-sync-max-replicas should be a positive integer value.', "Invalid parameter appenddirname. It should be 'appendfilename' instead of 'appenddirname'.", 'timeout should be a positive integer value.', 'hash-max-listpack-value should be a positive integer value.', 'cluster-node-timeout should be a positive integer value.', "Invalid value for no-appendfsync-on-rewrite. It should be 'no-appendfsync-on-rewrite yes' or 'no-appendfsync-on-rewrite no'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: bind-source-addr	timeout	no-appendfsync-on-rewrite
+[Ciri] Reason for bind-source-addr: bind-source-addr should be a valid IP address or hostname.
+[Ciri] Reason for timeout: timeout value is invalid. It should be a positive integer representing the timeout value in milliseconds.
+[Ciri] Reason for no-appendfsync-on-rewrite: no-appendfsync-on-rewrite value is invalid. It should be either 'yes' or 'no'.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 3, 4]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes'], 'reason': ["The property 'quota-backend-bytes' has the value '0' which is not within the accepted value range {1, 2147483647}."]}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention'], 'reason': ['The property \'auto-compaction-retention\' has the value \'"1"\' which is not within the accepted value {0,1,2,3,4,5,6,7,8,9,10}.']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention'], 'reason': ["The property 'auto-compaction-retention' has the value '1' which is not within the accepted value {1,2,3,4,5,6,7,8,9,10}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: auto-compaction-retention
+[Ciri] Reason for auto-compaction-retention: The property 'auto-compaction-retention' has the value '1' which is not within the accepted value {1,2,3,4,5,6,7,8,9,10}.

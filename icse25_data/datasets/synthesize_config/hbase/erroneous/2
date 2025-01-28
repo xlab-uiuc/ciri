@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>zookeeper.recovery.retry.maxsleeptime</name>
+  <value>120000</value>
+    <description>Max sleep time before retry zookeeper operations in milliseconds,
+    a max time is needed here so that sleep time won't grow unboundedly
+    </description>
+</property>
+
+<property>
+  <name>hbase.master.logcleaner.ttl</name>
+  <value>-5.5</value>
+    <description>How long a WAL remain in the archive ({hbase.rootdir}/oldWALs) directory,
+    after which it will be cleaned by a Master thread. The value is in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compactionThreshold</name>
+  <value>3</value>
+    <description> If more than this number of StoreFiles exist in any one Store
+      (one StoreFile is written per flush of MemStore), a compaction is run to rewrite all
+      StoreFiles into a single StoreFile. Larger values delay compaction, but when compaction does
+      occur, it takes longer to complete.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.max</name>
+  <value>10</value>
+    <description>The maximum number of StoreFiles which will be selected for a single minor
+      compaction, regardless of the number of eligible StoreFiles. Effectively, the value of
+      hbase.hstore.compaction.max controls the length of time it takes a single compaction to
+      complete. Setting it larger means that more StoreFiles are included in a compaction. For most
+      cases, the default value is appropriate.</description>
+</property>
+
+<property>
+  <name>hbase.offpeak.end.hour</name>
+  <value>-2</value>
+    <description>The end of off-peak hours, expressed as an integer between 0 and 23, inclusive. Set
+      to -1 to disable off-peak.</description>
+</property>
+
+<property>
+  <name>hbase.client.operation.timeout</name>
+  <value>2400000</value>
+    <description>Operation timeout is a top-level restriction (millisecond) that makes sure a
+      blocking operation in Table will not be blocked more than this. In each operation, if rpc
+      request fails because of timeout or other reason, it will retry until success or throw
+      RetriesExhaustedException. But if the total time being blocking reach the operation timeout
+      before retries exhausted, it will break early and throw SocketTimeoutException.</description>
+</property>
+
+<property>
+  <name>hbase.table.lock.enable</name>
+  <value>true</value>
+    <description>Set to true to enable locking the table in zookeeper for schema change operations.
+    Table locking from master prevents concurrent schema modifications to corrupt table
+    state.</description>
+</property>
+
+<property>
+  <name>hbase.mob.cache.evict.remain.ratio</name>
+  <value>0.5f</value>
+    <description>
+      The ratio (between 0.0 and 1.0) of files that remains cached after an eviction
+      is triggered when the number of cached mob files exceeds the hbase.mob.file.cache.size.
+      The default value is 0.5f.
+    </description>
+</property>
+
+</configuration>

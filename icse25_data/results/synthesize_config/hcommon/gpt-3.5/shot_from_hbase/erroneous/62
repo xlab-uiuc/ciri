@@ -1,0 +1,15 @@
+Wrong shot number:
+[1, 2, 12]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.retry.throttle.interval', 'ipc.[port_number].weighted-cost.lockexclusive'], 'reason': ["The property 'fs.s3a.retry.throttle.interval' has the value '1ms' which should be in milliseconds format, e.g., '1000' for 1 second.", "The property 'ipc.[port_number].weighted-cost.lockexclusive' is not a valid property name format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.retry.throttle.interval	ipc.[port_number].weighted-cost.lockexclusive
+[Ciri] Reason for fs.s3a.retry.throttle.interval: The property 'fs.s3a.retry.throttle.interval' has the value '1ms' which should be in milliseconds format, e.g., '1000' for 1 second.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockexclusive: The property 'ipc.[port_number].weighted-cost.lockexclusive' is not a valid property name format.

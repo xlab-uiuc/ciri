@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.stream.cache.timeout', 'alluxio.job.master.worker.timeout', 'alluxio.underfs.s3a.consistency.timeout'], 'reason': ["Invalid value format. Use 'ms' for milliseconds, 'sec' for seconds, 'min' for minutes, etc.", "Invalid value format. Use 'ms' for milliseconds, 'sec' for seconds, 'min' for minutes, etc.", "Invalid value format. Use 'ms' for milliseconds, 'sec' for seconds, 'min' for minutes, etc."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.stream.cache.timeout', 'alluxio.job.master.worker.timeout', 'alluxio.underfs.s3a.consistency.timeout'], 'reason': ["Invalid value format. Use units like 'ms', 'sec', 'min', 'hour', etc.", "Invalid value format. Use units like 'ms', 'sec', 'min', 'hour', etc.", "Invalid value format. Use units like 'ms', 'sec', 'min', 'hour', etc."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.stream.cache.timeout', 'alluxio.job.master.worker.timeout', 'alluxio.underfs.s3a.consistency.timeout'], 'reason': ["Invalid time unit 'hour' for property 'alluxio.proxy.stream.cache.timeout'. Use valid time units like 'ms', 's', 'min', 'h', 'd'.", "Invalid time unit 'sec' for property 'alluxio.job.master.worker.timeout'. Use valid time units like 'ms', 's', 'min', 'h', 'd'.", "Invalid time unit 'min' for property 'alluxio.underfs.s3a.consistency.timeout'. Use valid time units like 'ms', 's', 'min', 'h', 'd'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.proxy.stream.cache.timeout	alluxio.job.master.worker.timeout	alluxio.underfs.s3a.consistency.timeout
+[Ciri] Reason for alluxio.proxy.stream.cache.timeout: Invalid time unit 'hour' for property 'alluxio.proxy.stream.cache.timeout'. Use valid time units like 'ms', 's', 'min', 'h', 'd'.
+[Ciri] Reason for alluxio.job.master.worker.timeout: Invalid value format. Use units like 'ms', 'sec', 'min', 'hour', etc.
+[Ciri] Reason for alluxio.underfs.s3a.consistency.timeout: Invalid value format. Use 'ms' for milliseconds, 'sec' for seconds, 'min' for minutes, etc.

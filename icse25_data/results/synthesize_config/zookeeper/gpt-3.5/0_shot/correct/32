@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.learner.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal', 'peerType'], 'reason': ['quorum.auth.learner.saslLoginContext is not a valid property for Zookeeper 3.7.0', 'quorum.auth.kerberos.servicePrincipal is not a valid property for Zookeeper 3.7.0', 'peerType is not a valid property for Zookeeper 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learner.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal', 'peerType'], 'reason': ['quorum.auth.learner.saslLoginContext property is not recognized in Zookeeper version 3.7.0', 'quorum.auth.kerberos.servicePrincipal property is not recognized in Zookeeper version 3.7.0', 'peerType property is not recognized in Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learner.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal', 'portUnification', 'peerType'], 'reason': ['Invalid property quorum.auth.learner.saslLoginContext for Zookeeper version 3.7.0', 'Invalid property quorum.auth.kerberos.servicePrincipal for Zookeeper version 3.7.0', 'Invalid property portUnification for Zookeeper version 3.7.0', 'Invalid property peerType for Zookeeper version 3.7.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quorum.auth.learner.saslLoginContext	quorum.auth.kerberos.servicePrincipal	peerType
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext property is not recognized in Zookeeper version 3.7.0
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is not a valid property for Zookeeper 3.7.0
+[Ciri] Reason for peerType: peerType property is not recognized in Zookeeper version 3.7.0

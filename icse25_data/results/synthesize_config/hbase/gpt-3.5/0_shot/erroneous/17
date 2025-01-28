@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.data.umask'], 'reason': ["The value for 'hbase.data.umask' parameter is not a valid umask value. Umask values should be in octal format, for example, '022'."]}
+
+{'hasError': True, 'errParameter': ['hbase.data.umask'], 'reason': ["The value for 'hbase.data.umask' should be a numeric umask value, not a string. It should be in octal format, for example, '0022'."]}
+
+{'hasError': True, 'errParameter': ['hbase.data.umask'], 'reason': ["The value 'ciri' for 'hbase.data.umask' is not a valid umask value. Umask values should be in octal format, such as '022' or '0022'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.data.umask
+[Ciri] Reason for hbase.data.umask: The value for 'hbase.data.umask' should be a numeric umask value, not a string. It should be in octal format, for example, '0022'.

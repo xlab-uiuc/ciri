@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['timeout', 'cluster-node-timeout', 'tls-ca-cert-dir', 'no-appendfsync-on-rewrite', 'slowlog-max-len', 'slowlog-log-slower-than', 'appendfsync', 'hash-max-listpack-value'], 'reason': ['timeout value should be specified in milliseconds, consider changing to an integer value', 'cluster-node-timeout value should be specified in milliseconds, consider changing to an integer value', 'tls-ca-cert-dir is not a valid parameter for Redis configuration', 'no-appendfsync-on-rewrite has been deprecated in Redis 7.0.0, consider removing it', 'slowlog-max-len should be an integer value', 'slowlog-log-slower-than value should be specified in microseconds, consider changing to an integer value', 'appendfsync has been deprecated in Redis 7.0.0, consider removing it', 'hash-max-listpack-value should be an integer value']}
+
+{'hasError': True, 'errParameter': ['timeout', 'cluster-node-timeout', 'tls-ca-cert-dir', 'slowlog-max-len', 'slowlog-log-slower-than', 'appendfsync', 'hash-max-listpack-value'], 'reason': ["The parameter 'timeout' is not valid for Redis version 7.0.0.", "The parameter 'cluster-node-timeout' is not valid for Redis version 7.0.0.", "The parameter 'tls-ca-cert-dir' is not valid for Redis version 7.0.0.", "The parameter 'slowlog-max-len' is not valid for Redis version 7.0.0.", "The parameter 'slowlog-log-slower-than' is not valid for Redis version 7.0.0.", "The parameter 'appendfsync' is not valid for Redis version 7.0.0.", "The parameter 'hash-max-listpack-value' is not valid for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['no-appendfsync-on-rewrite', 'slowlog-max-len', 'slowlog-log-slower-than', 'appendfsync', 'hash-max-listpack-value'], 'reason': ["The parameter 'no-appendfsync-on-rewrite' is deprecated in Redis 7.0.0.", "The parameter 'slowlog-max-len' is deprecated in Redis 7.0.0.", "The parameter 'slowlog-log-slower-than' is deprecated in Redis 7.0.0.", "The parameter 'appendfsync' is deprecated in Redis 7.0.0.", "The parameter 'hash-max-listpack-value' is deprecated in Redis 7.0.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['no-appendfsync-on-rewrite'], 'reason': ["'no-appendfsync-on-rewrite' is deprecated in Redis 7.0.0. It should be removed from the configuration."]}
+
+{'hasError': True, 'errParameter': ['timeout', 'cluster-node-timeout', 'tls-ca-cert-dir', 'no-appendfsync-on-rewrite', 'slowlog-max-len', 'slowlog-log-slower-than', 'appendfsync', 'hash-max-listpack-value'], 'reason': ['timeout value should be in milliseconds, consider changing to an integer value', 'cluster-node-timeout value should be in milliseconds, consider changing to an integer value', 'tls-ca-cert-dir should point to a file, not a directory', 'no-appendfsync-on-rewrite parameter is deprecated in Redis 7.0.0, consider removing it', 'slowlog-max-len value should be an integer', 'slowlog-log-slower-than value should be in microseconds, consider changing to an integer value', "appendfsync value should be changed to 'always', 'everysec', or 'no'", 'hash-max-listpack-value should be an integer']}
+
+{'hasError': True, 'errParameter': ['timeout', 'cluster-node-timeout', 'tls-ca-cert-dir', 'no-appendfsync-on-rewrite', 'slowlog-max-len', 'slowlog-log-slower-than', 'appendfsync', 'hash-max-listpack-value'], 'reason': ['timeout value should be specified in milliseconds, consider changing to milliseconds', 'cluster-node-timeout value should be specified in milliseconds, consider changing to milliseconds', 'tls-ca-cert-dir is not a valid parameter for Redis configuration', 'no-appendfsync-on-rewrite is deprecated in Redis 7.0.0, consider removing it', 'slowlog-max-len is deprecated in Redis 7.0.0, consider removing it', 'slowlog-log-slower-than is deprecated in Redis 7.0.0, consider removing it', 'appendfsync is deprecated in Redis 7.0.0, consider removing it', 'hash-max-listpack-value is deprecated in Redis 7.0.0, consider removing it']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: timeout	cluster-node-timeout	tls-ca-cert-dir	no-appendfsync-on-rewrite	slowlog-max-len	slowlog-log-slower-than	appendfsync	hash-max-listpack-value
+[Ciri] Reason for timeout: timeout value should be in milliseconds, consider changing to an integer value
+[Ciri] Reason for cluster-node-timeout: cluster-node-timeout value should be specified in milliseconds, consider changing to milliseconds
+[Ciri] Reason for tls-ca-cert-dir: tls-ca-cert-dir should point to a file, not a directory
+[Ciri] Reason for no-appendfsync-on-rewrite: no-appendfsync-on-rewrite parameter is deprecated in Redis 7.0.0, consider removing it
+[Ciri] Reason for slowlog-max-len: slowlog-max-len is deprecated in Redis 7.0.0, consider removing it
+[Ciri] Reason for slowlog-log-slower-than: slowlog-log-slower-than value should be in microseconds, consider changing to an integer value
+[Ciri] Reason for appendfsync: appendfsync is deprecated in Redis 7.0.0, consider removing it
+[Ciri] Reason for hash-max-listpack-value: hash-max-listpack-value should be an integer

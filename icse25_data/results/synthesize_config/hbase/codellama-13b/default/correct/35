@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 6, 7]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.http.filter.initializers'], 'reason': ["The property 'hbase.http.filter.initializers' has the value 'org.apache.hadoop.hbase.http.lib.StaticUserWebFilter' which is not within the accepted value {org.apache.hadoop.hbase.http.lib.StaticUserWebFilter}."]}
+
+{'hasError': True, 'errParameter': ['hbase.http.max.threads'], 'reason': ["The property 'hbase.http.max.threads' has the value '8' which is not within the accepted value range {10, 100}."]}
+
+{'hasError': True, 'errParameter': ['hbase.http.max.threads'], 'reason': ["The property 'hbase.http.max.threads' has the value '8' which is not within the accepted value range {19, 20}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.http.max.threads
+[Ciri] Reason for hbase.http.max.threads: The property 'hbase.http.max.threads' has the value '8' which is not within the accepted value range {10, 100}.

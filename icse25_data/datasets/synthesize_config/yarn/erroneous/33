@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.node-ip-cache.expiry-interval-secs</name>
+  <value>-1</value>
+    <description>The expiry interval for node IP caching. -1 disables the caching</description>
+</property>
+
+<property>
+  <name>yarn.scheduler.maximum-allocation-mb</name>
+  <value>4096</value>
+    <description>The maximum allocation for every container request at the RM
+    in MBs. Memory requests higher than this will throw an
+    InvalidResourceRequestException.</description>
+</property>
+
+<property>
+  <name>yarn.log-aggregation.file-formats</name>
+  <value>TFile</value>
+    <description>Specify which log file controllers we will support. The first
+    file controller we add will be used to write the aggregated logs.
+    This comma separated configuration will work with the configuration:
+    yarn.log-aggregation.file-controller.%s.class which defines the supported
+    file controller's class. By default, the TFile controller would be used.
+    The user could override this configuration by adding more file controllers.
+    To support back-ward compatibility, make sure that we always
+    add TFile file controller.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.memory-mb</name>
+  <value>2048</value>
+    <description>Amount of physical memory, in MB, that can be allocated 
+    for containers. If set to -1 and
+    yarn.nodemanager.resource.detect-hardware-capabilities is true, it is
+    automatically calculated(in case of Windows and Linux).
+    In other cases, the default is 8192MB.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep</name>
+  <value>200</value>
+    <description>Target count of layer mounts that we should keep on disk
+      at one time.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.disk-validator</name>
+  <value>basic</value>
+    <description>
+      The name of disk validator.
+    </description>
+</property>
+
+<property>
+  <name>yarn.scheduler.configuration.max.version</name>
+  <value>50</value>
+    <description>
+      The max number of configuration file in filesystem.
+      Default is 100 for either.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.activities-manager.scheduler-activities.ttl-ms</name>
+  <value>1200000</value>
+    <description>Time to live for scheduler activities in milliseconds.</description>
+</property>
+
+</configuration>

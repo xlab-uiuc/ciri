@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.address', 'yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms', 'yarn.resourcemanager.store.class', 'yarn.client.failover-no-ha-proxy-provider', 'yarn.nodemanager.admin-env', 'yarn.nodemanager.health-checker.timeout-ms', 'yarn.resourcemanager.nm-container-queuing.queue-limit-stdev', 'yarn.webapp.filter-invalid-xml-chars'], 'reason': ['The address of the scheduler interface.', 'Set the amount of time RM waits before allocating new containers on work-preserving-recovery.', 'The class to use as the persistent store.', 'When HA is not enabled, the class to be used by Clients, AMs and NMs to retry connecting to the Active RM.', "Environment variables that should be forwarded from the NodeManager's environment to the container's, specified as a comma separated list of VARNAME=value pairs.", 'Health check script time out period.', 'Value of standard deviation used for calculation of queue limit thresholds.', 'Flag to enable filter of invalid xml 1.0 characters present in the value of diagnostics field of apps output from RM WebService.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: yarn.resourcemanager.scheduler.address	yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms	yarn.resourcemanager.store.class	yarn.client.failover-no-ha-proxy-provider	yarn.nodemanager.admin-env	yarn.nodemanager.health-checker.timeout-ms	yarn.resourcemanager.nm-container-queuing.queue-limit-stdev	yarn.webapp.filter-invalid-xml-chars
+[Ciri] Reason for yarn.resourcemanager.scheduler.address: The address of the scheduler interface.
+[Ciri] Reason for yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms: Set the amount of time RM waits before allocating new containers on work-preserving-recovery.
+[Ciri] Reason for yarn.resourcemanager.store.class: The class to use as the persistent store.
+[Ciri] Reason for yarn.client.failover-no-ha-proxy-provider: When HA is not enabled, the class to be used by Clients, AMs and NMs to retry connecting to the Active RM.
+[Ciri] Reason for yarn.nodemanager.admin-env: Environment variables that should be forwarded from the NodeManager's environment to the container's, specified as a comma separated list of VARNAME=value pairs.
+[Ciri] Reason for yarn.nodemanager.health-checker.timeout-ms: Health check script time out period.
+[Ciri] Reason for yarn.resourcemanager.nm-container-queuing.queue-limit-stdev: Value of standard deviation used for calculation of queue limit thresholds.
+[Ciri] Reason for yarn.webapp.filter-invalid-xml-chars: Flag to enable filter of invalid xml 1.0 characters present in the value of diagnostics field of apps output from RM WebService.

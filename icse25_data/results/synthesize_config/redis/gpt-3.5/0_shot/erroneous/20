@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['set-max-intset-entries', 'aof-use-rdb-preamble', 'dynamic-hz', 'protected-mode', 'appendonly', 'repl-diskless-sync-max-replicas'], 'reason': ['Invalid value for set-max-intset-entries. It should be a positive integer.', "Invalid value for aof-use-rdb-preamble. It should be 'yes' or 'no'.", "Invalid value for dynamic-hz. It should be 'yes' or 'no'.", "Invalid value for protected-mode. It should be 'yes' or 'no'.", "Invalid value for appendonly. It should be 'yes' or 'no'.", 'Invalid value for repl-diskless-sync-max-replicas. It should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['set-max-intset-entries', 'aof-use-rdb-preamble', 'dynamic-hz', 'protected-mode', 'appendonly', 'repl-diskless-sync-max-replicas', 'supervised'], 'reason': ["Invalid parameter value for 'set-max-intset-entries'. Value should be a positive integer.", "Invalid parameter value for 'aof-use-rdb-preamble'. Value should be 'yes' or 'no'.", "Invalid parameter value for 'dynamic-hz'. Value should be 'yes' or 'no'.", "Invalid parameter value for 'protected-mode'. Value should be 'yes' or 'no'.", "Invalid parameter value for 'appendonly'. Value should be 'yes' or 'no'.", "Invalid parameter value for 'repl-diskless-sync-max-replicas'. Value should be an integer greater than or equal to 0.", "Invalid parameter value for 'supervised'. Value should be 'yes', 'no', or 'auto'."]}
+
+{'hasError': True, 'errParameter': ['set-max-intset-entries', 'aof-use-rdb-preamble', 'dynamic-hz', 'protected-mode', 'appendonly', 'repl-diskless-sync-max-replicas', 'supervised'], 'reason': ['Invalid value for set-max-intset-entries. It should be a positive integer.', "Invalid value for aof-use-rdb-preamble. It should be either 'yes' or 'no'.", "Invalid value for dynamic-hz. It should be either 'yes' or 'no'.", "Invalid value for protected-mode. It should be either 'yes' or 'no'.", "Invalid value for appendonly. It should be either 'yes' or 'no'.", 'Invalid value for repl-diskless-sync-max-replicas. It should be a positive integer.', "Invalid value for supervised. It should be either 'yes', 'no', or 'auto'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: set-max-intset-entries	aof-use-rdb-preamble	dynamic-hz	protected-mode	appendonly	repl-diskless-sync-max-replicas	supervised
+[Ciri] Reason for set-max-intset-entries: Invalid value for set-max-intset-entries. It should be a positive integer.
+[Ciri] Reason for aof-use-rdb-preamble: Invalid parameter value for 'aof-use-rdb-preamble'. Value should be 'yes' or 'no'.
+[Ciri] Reason for dynamic-hz: Invalid parameter value for 'dynamic-hz'. Value should be 'yes' or 'no'.
+[Ciri] Reason for protected-mode: Invalid parameter value for 'protected-mode'. Value should be 'yes' or 'no'.
+[Ciri] Reason for appendonly: Invalid value for appendonly. It should be either 'yes' or 'no'.
+[Ciri] Reason for repl-diskless-sync-max-replicas: Invalid value for repl-diskless-sync-max-replicas. It should be a positive integer.
+[Ciri] Reason for supervised: Invalid value for supervised. It should be either 'yes', 'no', or 'auto'.

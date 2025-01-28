@@ -1,0 +1,47 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'port', 'max_parallel_workers'], 'reason': ['max_connections should be a positive integer.', 'superuser_reserved_connections should be a positive integer.', 'port should be a positive integer.', 'max_parallel_workers should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'gin_fuzzy_search_limit', 'port', 'gss_accept_delegation', 'max_parallel_workers', 'krb_caseins_users', 'bgwriter_flush_after'], 'reason': ['max_connections must be greater than or equal to superuser_reserved_connections', 'gin_fuzzy_search_limit must be greater than or equal to 0', 'port must be greater than or equal to 1024', 'gss_accept_delegation must be one of the following: off, on, yes, no', 'max_parallel_workers must be greater than or equal to 0', 'krb_caseins_users must be one of the following: off, on, yes, no', 'bgwriter_flush_after must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections'], 'reason': ['max_connections must be greater than or equal to superuser_reserved_connections', 'superuser_reserved_connections must be greater than or equal to max_connections']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'port', 'gss_accept_delegation', 'max_parallel_workers', 'krb_caseins_users', 'bgwriter_flush_after'], 'reason': ['max_connections should be an integer', 'superuser_reserved_connections should be an integer', 'port should be an integer', 'gss_accept_delegation should be a boolean', 'max_parallel_workers should be an integer', 'krb_caseins_users should be a boolean', 'bgwriter_flush_after should be an integer']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'port'], 'reason': ['max_connections must be greater than or equal to superuser_reserved_connections', 'port must be greater than or equal to 1024', 'port must be less than or equal to 65535']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'port', 'max_parallel_workers'], 'reason': ['max_connections must be greater than or equal to superuser_reserved_connections', 'port must be greater than or equal to 1024', 'max_parallel_workers must be greater than or equal to 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'gin_fuzzy_search_limit', 'port', 'gss_accept_delegation', 'max_parallel_workers', 'krb_caseins_users', 'bgwriter_flush_after'], 'reason': ['max_connections should be between 50 and 10000', 'superuser_reserved_connections should be between 0 and 10000', 'gin_fuzzy_search_limit should be between 0 and 10000', 'port should be between 1024 and 65535', 'gss_accept_delegation should be on or off', 'max_parallel_workers should be between 0 and 10000', 'krb_caseins_users should be on or off', 'bgwriter_flush_after should be between 0 and 10000']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'port'], 'reason': ['max_connections must be greater than superuser_reserved_connections', 'port must be greater than 1024', 'port must be less than 65535']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'port', 'gss_accept_delegation', 'max_parallel_workers', 'krb_caseins_users', 'bgwriter_flush_after'], 'reason': ['max_connections should be between 100 and 1000', 'superuser_reserved_connections should be between 0 and 100', 'port should be between 1024 and 65535', 'gss_accept_delegation should be on or off', 'max_parallel_workers should be between 0 and 1024', 'krb_caseins_users should be on or off', 'bgwriter_flush_after should be between 0 and 1000']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections'], 'reason': ['max_connections should be greater than superuser_reserved_connections', 'superuser_reserved_connections should be less than max_connections']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'gin_fuzzy_search_limit', 'port', 'gss_accept_delegation', 'max_parallel_workers', 'krb_caseins_users', 'bgwriter_flush_after'], 'reason': ['max_connections should be a positive integer.', 'superuser_reserved_connections should be a positive integer.', 'gin_fuzzy_search_limit should be a positive integer.', 'port should be a positive integer.', 'gss_accept_delegation should be a boolean.', 'max_parallel_workers should be a positive integer.', 'krb_caseins_users should be a boolean.', 'bgwriter_flush_after should be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'port', 'max_parallel_workers'], 'reason': ['max_connections must be greater than or equal to superuser_reserved_connections', 'port must be greater than or equal to 1024', 'max_parallel_workers must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'port', 'max_parallel_workers'], 'reason': ['max_connections must be greater than or equal to superuser_reserved_connections', 'port must be greater than or equal to 1024', 'max_parallel_workers must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'port', 'gss_accept_delegation', 'max_parallel_workers', 'krb_caseins_users', 'bgwriter_flush_after'], 'reason': ['max_connections should be between 100 and 1000', 'superuser_reserved_connections should be between 1 and 999', 'port should be between 1024 and 65535', 'gss_accept_delegation should be on or off', 'max_parallel_workers should be between 0 and 16', 'krb_caseins_users should be on or off', 'bgwriter_flush_after should be between 0 and 10000']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: max_connections	superuser_reserved_connections	port	max_parallel_workers
+[Ciri] Reason for max_connections: max_connections must be greater than or equal to superuser_reserved_connections
+[Ciri] Reason for superuser_reserved_connections: port must be greater than or equal to 1024
+[Ciri] Reason for port: max_parallel_workers must be greater than or equal to 0
+[Ciri] Reason for max_parallel_workers: 

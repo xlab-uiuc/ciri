@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'secureClientPort'], 'reason': ['secureClientPortAddress should be secureClientPortAddress=0.0.0.0:3001', 'quorum.auth.learner.saslLoginContext should be quorum.auth.learner.saslLoginContext=QuorumLearner', 'quorum.auth.learnerRequireSasl should be quorum.auth.learnerRequireSasl=false', 'secureClientPort should be secureClientPort=3001']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.learnerRequireSasl'], 'reason': ['secureClientPortAddress is not a valid property.', 'quorum.auth.learner.saslLoginContext is not a valid property.', 'quorum.auth.learnerRequireSasl is not a valid property.']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'secureClientPort'], 'reason': ['secureClientPortAddress is not a valid property', 'quorum.auth.learner.saslLoginContext is not a valid property', 'quorum.auth.learnerRequireSasl is not a valid property', 'secureClientPort is not a valid property']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: secureClientPortAddress	quorum.auth.learner.saslLoginContext	quorum.auth.learnerRequireSasl	secureClientPort
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress is not a valid property
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext is not a valid property
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl should be quorum.auth.learnerRequireSasl=false
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid property

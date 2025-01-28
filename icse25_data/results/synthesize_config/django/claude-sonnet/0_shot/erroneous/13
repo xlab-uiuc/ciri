@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'EMAIL_BACKEND', 'SIGNING_BACKEND'], 'reason': ['SECURE_HSTS_SECONDS is not a standard Django setting. It is used to set the HTTP Strict Transport Security (HSTS) header, which should be configured at the web server level.', "EMAIL_BACKEND is not a standard Django setting. It should be set as EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' in the settings.py file.", 'SIGNING_BACKEND is not a standard Django setting. It is used to specify the signing backend for cryptographic signing, which is not typically configured in the settings.py file.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: SECURE_HSTS_SECONDS	EMAIL_BACKEND	SIGNING_BACKEND
+[Ciri] Reason for SECURE_HSTS_SECONDS: SECURE_HSTS_SECONDS is not a standard Django setting. It is used to set the HTTP Strict Transport Security (HSTS) header, which should be configured at the web server level.
+[Ciri] Reason for EMAIL_BACKEND: EMAIL_BACKEND is not a standard Django setting. It should be set as EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' in the settings.py file.
+[Ciri] Reason for SIGNING_BACKEND: SIGNING_BACKEND is not a standard Django setting. It is used to specify the signing backend for cryptographic signing, which is not typically configured in the settings.py file.

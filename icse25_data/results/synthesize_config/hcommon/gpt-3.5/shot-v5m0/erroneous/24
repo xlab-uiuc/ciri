@@ -1,0 +1,13 @@
+Correct shot number:
+[2, 16, 14, 6, 11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.tmp.dir', 'fs.ftp.host.port', 'ipc.[port_number].faircallqueue.multiplexer.weights'], 'reason': ["The property 'hadoop.tmp.dir' has an additional 'usage' tag which is not valid in the configuration file.", "The property 'fs.ftp.host.port' has an invalid value 'file://'. It should be a valid FTP host port number.", "The property 'ipc.[port_number].faircallqueue.multiplexer.weights' has an invalid value format. It should be a comma-separated list of weights."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.tmp.dir	fs.ftp.host.port	ipc.[port_number].faircallqueue.multiplexer.weights
+[Ciri] Reason for hadoop.tmp.dir: The property 'hadoop.tmp.dir' has an additional 'usage' tag which is not valid in the configuration file.
+[Ciri] Reason for fs.ftp.host.port: The property 'fs.ftp.host.port' has an invalid value 'file://'. It should be a valid FTP host port number.
+[Ciri] Reason for ipc.[port_number].faircallqueue.multiplexer.weights: The property 'ipc.[port_number].faircallqueue.multiplexer.weights' has an invalid value format. It should be a comma-separated list of weights.

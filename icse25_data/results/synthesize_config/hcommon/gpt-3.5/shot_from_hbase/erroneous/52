@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 10, 8]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.http.filter.initializers', 'hadoop.service.shutdown.timeout'], 'reason': ["The property 'hadoop.http.filter.initializers' has an additional 'usage' element which is not a standard property attribute.", "The property 'hadoop.service.shutdown.timeout' has the value '30s' which should be specified in milliseconds instead of seconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.http.filter.initializers	hadoop.service.shutdown.timeout
+[Ciri] Reason for hadoop.http.filter.initializers: The property 'hadoop.http.filter.initializers' has an additional 'usage' element which is not a standard property attribute.
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has the value '30s' which should be specified in milliseconds instead of seconds.

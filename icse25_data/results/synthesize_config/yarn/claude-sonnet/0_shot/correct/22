@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.log-aggregation.retain-seconds', 'yarn.log-aggregation.file-formats'], 'reason': ['The value of yarn.log-aggregation.retain-seconds is set to -2, which is not a valid value. It should be a non-negative integer or -1 to disable log aggregation.', "The value of yarn.log-aggregation.file-formats is set to 'TFile', which is not a valid value in Hadoop 3.3.0. The valid values are 'Indexed' and 'TFile'. It is recommended to use 'Indexed' as it provides better performance."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.log-aggregation.retain-seconds	yarn.log-aggregation.file-formats
+[Ciri] Reason for yarn.log-aggregation.retain-seconds: The value of yarn.log-aggregation.retain-seconds is set to -2, which is not a valid value. It should be a non-negative integer or -1 to disable log aggregation.
+[Ciri] Reason for yarn.log-aggregation.file-formats: The value of yarn.log-aggregation.file-formats is set to 'TFile', which is not a valid value in Hadoop 3.3.0. The valid values are 'Indexed' and 'TFile'. It is recommended to use 'Indexed' as it provides better performance.

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_HTTPONLY', 'LANGUAGE_COOKIE_HTTPONLY', 'EMAIL_SSL_KEYFILE', 'MIGRATION_MODULES', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ['SESSION_COOKIE_HTTPONLY should be set to True in production. This is a potential security risk.', 'LANGUAGE_COOKIE_HTTPONLY should be set to True in production. This is a potential security risk.', 'EMAIL_SSL_KEYFILE should be set to a valid SSL key file path in production. This is a potential security risk.', 'MIGRATION_MODULES should be set to an empty dictionary in production. This is a potential security risk.', 'DATA_UPLOAD_MAX_NUMBER_FIELDS should be set to a value greater than 1000 in production. This is a potential security risk.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: SESSION_COOKIE_HTTPONLY	LANGUAGE_COOKIE_HTTPONLY	EMAIL_SSL_KEYFILE	MIGRATION_MODULES	DATA_UPLOAD_MAX_NUMBER_FIELDS
+[Ciri] Reason for SESSION_COOKIE_HTTPONLY: SESSION_COOKIE_HTTPONLY should be set to True in production. This is a potential security risk.
+[Ciri] Reason for LANGUAGE_COOKIE_HTTPONLY: LANGUAGE_COOKIE_HTTPONLY should be set to True in production. This is a potential security risk.
+[Ciri] Reason for EMAIL_SSL_KEYFILE: EMAIL_SSL_KEYFILE should be set to a valid SSL key file path in production. This is a potential security risk.
+[Ciri] Reason for MIGRATION_MODULES: MIGRATION_MODULES should be set to an empty dictionary in production. This is a potential security risk.
+[Ciri] Reason for DATA_UPLOAD_MAX_NUMBER_FIELDS: DATA_UPLOAD_MAX_NUMBER_FIELDS should be set to a value greater than 1000 in production. This is a potential security risk.

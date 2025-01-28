@@ -1,0 +1,27 @@
+Wrong shot number:
+[1, 12, 2]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['zookeeper.recovery.retry.maxsleeptime', 'hbase.zookeeper.property.clientPort', 'hbase.client.max.total.tasks', 'hbase.regionserver.thread.compaction.throttle', 'hbase.dfs.client.read.shortcircuit.buffer.size'], 'reason': ["The property 'zookeeper.recovery.retry.maxsleeptime' is not a valid HBase configuration property.", "The property 'hbase.zookeeper.property.clientPort' has the value '1090' which is not the correct port number for ZooKeeper.", "The property 'hbase.client.max.total.tasks' is not a valid HBase configuration property.", "The property 'hbase.regionserver.thread.compaction.throttle' has a value that is not in the correct format or range.", "The property 'hbase.dfs.client.read.shortcircuit.buffer.size' has a value that is not in the correct format or range."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '1090' which is not the correct port number format. It should be a valid port number like 2181."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.recovery.retry.maxsleeptime', 'hbase.zookeeper.property.clientPort', 'hbase.client.max.total.tasks'], 'reason': ["The property 'zookeeper.recovery.retry.maxsleeptime' is not a valid HBase configuration property.", "The property 'hbase.zookeeper.property.clientPort' has the value '1090' which is not the correct port number format.", "The property 'hbase.client.max.total.tasks' is not a valid HBase configuration property."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['zookeeper.recovery.retry.maxsleeptime', 'hbase.zookeeper.property.clientPort'], 'reason': ["The property 'zookeeper.recovery.retry.maxsleeptime' is not a valid HBase configuration property.", "The property 'hbase.zookeeper.property.clientPort' should have a value that is a valid port number."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.recovery.retry.maxsleeptime', 'hbase.zookeeper.property.clientPort'], 'reason': ["The property 'zookeeper.recovery.retry.maxsleeptime' is not a valid HBase configuration property.", "The property 'hbase.zookeeper.property.clientPort' has the value '1090' which is not the correct port number format."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.recovery.retry.maxsleeptime', 'hbase.zookeeper.property.clientPort'], 'reason': ["The property 'zookeeper.recovery.retry.maxsleeptime' is not a valid HBase configuration property.", "The property 'hbase.zookeeper.property.clientPort' has the value '1090' which is not the correct port number format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: zookeeper.recovery.retry.maxsleeptime	hbase.zookeeper.property.clientPort
+[Ciri] Reason for zookeeper.recovery.retry.maxsleeptime: The property 'zookeeper.recovery.retry.maxsleeptime' is not a valid HBase configuration property.
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The property 'hbase.zookeeper.property.clientPort' has the value '1090' which is not the correct port number format.

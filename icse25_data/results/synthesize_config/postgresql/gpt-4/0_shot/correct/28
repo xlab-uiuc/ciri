@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'autovacuum_naptime', 'backslash_quote', 'commit_delay'], 'reason': ["The 'vacuum_freeze_min_age' value is too high. The maximum allowed value is 2000000000.", "The 'autovacuum_naptime' format is incorrect. It should be specified in seconds, not in 'min'.", "The 'backslash_quote' setting is deprecated and should not be used.", "The 'commit_delay' value is specified in microseconds, but the provided value seems to be in milliseconds. The typical range is from 0 to 100000 microseconds."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: vacuum_freeze_min_age	autovacuum_naptime	backslash_quote	commit_delay
+[Ciri] Reason for vacuum_freeze_min_age: The 'vacuum_freeze_min_age' value is too high. The maximum allowed value is 2000000000.
+[Ciri] Reason for autovacuum_naptime: The 'autovacuum_naptime' format is incorrect. It should be specified in seconds, not in 'min'.
+[Ciri] Reason for backslash_quote: The 'backslash_quote' setting is deprecated and should not be used.
+[Ciri] Reason for commit_delay: The 'commit_delay' value is specified in microseconds, but the provided value seems to be in milliseconds. The typical range is from 0 to 100000 microseconds.

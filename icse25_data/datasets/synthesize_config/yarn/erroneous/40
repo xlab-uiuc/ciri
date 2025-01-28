@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.nodemanager.runtime.linux.docker.allowed-container-networks</name>
+  <value>none</value>
+    <description>The set of networks allowed when launching containers using the
+      DockerContainerRuntime.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.cache-refresh-interval-secs</name>
+  <value>120</value>
+    <description>The interval in seconds between refreshing the hdfs image tag
+      to hash cache.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.retry-interval-ms</name>
+  <value>500</value>
+    <description>
+    Default retry time interval for timeline servive client.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.fd-clean-interval-secs</name>
+  <value>120</value>
+    <description>
+      Scan interval for ATS v1.5 writer. This value controls how frequent
+      the writer will scan the HDFS FSStream for the entity/domain.
+      If the FSStream is stale for a long time, this FSStream will be close.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.amrmproxy.enable</name>
+  <value>false</value>
+    <description>
+    Enable/Disable AMRMProxyService in the node manager. This service is used to intercept
+    calls from the application masters to the resource manager.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.nm-container-queuing.max-queue-length</name>
+  <value>30</value>
+    <description>
+    Max length of container queue at NodeManager.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.nm-container-queuing.min-queue-wait-time-ms</name>
+  <value>10</value>
+    <description>
+    Min queue wait time for a container at a NodeManager.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.webapp.rest-csrf.enabled</name>
+  <value>true</value>
+  <description>
+      Enable the CSRF filter for the timeline service web app
+    </description>
+</property>
+
+</configuration>

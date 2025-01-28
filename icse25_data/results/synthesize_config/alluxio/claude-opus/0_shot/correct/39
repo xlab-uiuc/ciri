@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.management.backoff.strategy', 'alluxio.user.network.netty.worker.threads', 'alluxio.underfs.s3.socket.timeout'], 'reason': ["Invalid value 'ANY' for property 'alluxio.worker.management.backoff.strategy'. Valid values are: ANY, CONSTANT, EXPONENTIAL.", "Invalid value '-1' for property 'alluxio.user.network.netty.worker.threads'. The value must be a non-negative integer.", "Invalid time format '1sec' for property 'alluxio.underfs.s3.socket.timeout'. The valid time unit options are 'ns', 'us', 'ms', 's', 'm', 'h', 'd'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.worker.management.backoff.strategy	alluxio.user.network.netty.worker.threads	alluxio.underfs.s3.socket.timeout
+[Ciri] Reason for alluxio.worker.management.backoff.strategy: Invalid value 'ANY' for property 'alluxio.worker.management.backoff.strategy'. Valid values are: ANY, CONSTANT, EXPONENTIAL.
+[Ciri] Reason for alluxio.user.network.netty.worker.threads: Invalid value '-1' for property 'alluxio.user.network.netty.worker.threads'. The value must be a non-negative integer.
+[Ciri] Reason for alluxio.underfs.s3.socket.timeout: Invalid time format '1sec' for property 'alluxio.underfs.s3.socket.timeout'. The valid time unit options are 'ns', 'us', 'ms', 's', 'm', 'h', 'd'.

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.posix.attr.uid.name</name>
+  <value>uidNumber</value>
+  <description>
+    The attribute of posixAccount to use when groups for membership.
+    Mostly useful for schemas wherein groups have memberUids that use an
+    attribute other than uidNumber.
+  </description>
+</property>
+
+<property>
+  <name>fs.viewfs.rename.strategy</name>
+  <value>NONE_MOUNTPOINT</value>
+  <description>Allowed rename strategy to rename between multiple mountpoints.
+    Allowed values are SAME_MOUNTPOINT,SAME_TARGET_URI_ACROSS_MOUNTPOINT and
+    SAME_FILESYSTEM_ACROSS_MOUNTPOINT.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.size</name>
+  <value>32M</value>
+  <description>How big (in bytes) to split upload or copy operations up into.
+    A suffix from the set {K,M,G,T,P} may be used to scale the numeric value.
+  </description>
+</property>
+
+<property>
+  <name>fs.azure.saskey.usecontainersaskeyforallaccess</name>
+  <value>false</value>
+  <description>
+    Use container saskey for access to all blobs within the container.
+    Blob-specific saskeys are not used when this setting is enabled.
+    This setting provides better performance compared to blob-specific saskeys.
+  </description>
+</property>
+
+<property>
+  <name>net.topology.node.switch.mapping.impl</name>
+  <value>org.apache.hadoop.net.ScriptBasedMapping</value>
+  <description> The default implementation of the DNSToSwitchMapping. It
+    invokes a script specified in net.topology.script.file.name to resolve
+    node names. If the value for net.topology.script.file.name is not set, the
+    default value of DEFAULT_RACK is returned for all node names.
+  </description>
+</property>
+
+<property>
+  <name>file.blocksize</name>
+  <value>67108864</value>
+  <description>Block size</description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.simple.anonymous.allowed</name>
+  <value>false</value>
+  <description>
+    Indicates if anonymous requests are allowed when using 'simple' authentication.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.caller.context.enabled</name>
+  <value>true</value>
+    <description>When the feature is enabled, additional fields are written into
+      name-node audit log records for auditing coarse granularity operations.
+    </description>
+</property>
+
+</configuration>

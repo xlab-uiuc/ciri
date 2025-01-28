@@ -1,0 +1,44 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards', 'alluxio.worker.management.backoff.strategy', 'alluxio.web.file.info.enabled'], 'reason': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards must be an integer', 'alluxio.worker.management.backoff.strategy must be one of [ANY, EXPONENTIAL, RANDOM]', 'alluxio.web.file.info.enabled must be a boolean']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards', 'alluxio.worker.management.tier.promote.quota.percent', 'alluxio.fuse.cached.paths.max', 'alluxio.worker.management.backoff.strategy', 'alluxio.web.file.info.enabled'], 'reason': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards should be an integer', 'alluxio.worker.management.tier.promote.quota.percent should be an integer', 'alluxio.fuse.cached.paths.max should be an integer', 'alluxio.worker.management.backoff.strategy should be a string', 'alluxio.web.file.info.enabled should be a boolean']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards', 'alluxio.worker.management.tier.promote.quota.percent'], 'reason': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards is not a valid property for alluxio version 2.5.0', 'alluxio.worker.management.tier.promote.quota.percent is not a valid property for alluxio version 2.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards', 'alluxio.worker.management.backoff.strategy', 'alluxio.worker.management.tier.promote.quota.percent'], 'reason': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards should be an integer', 'alluxio.worker.management.backoff.strategy should be one of [ANY, EXPONENTIAL, RANDOM]', 'alluxio.worker.management.tier.promote.quota.percent should be a percentage']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards', 'alluxio.worker.management.tier.promote.quota.percent', 'alluxio.fuse.cached.paths.max', 'alluxio.worker.management.backoff.strategy'], 'reason': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards should be an integer', 'alluxio.worker.management.tier.promote.quota.percent should be an integer', 'alluxio.fuse.cached.paths.max should be an integer', 'alluxio.worker.management.backoff.strategy should be one of [ANY, EXPONENTIAL, RANDOM]']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards'], 'reason': ['The value of alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards must be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards'], 'reason': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards is not a valid property for alluxio version 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.user.file.replication.min', 'alluxio.user.file.replication.durable.min'], 'reason': ['alluxio.user.file.replication.max must be greater than or equal to 1', 'alluxio.user.file.replication.min must be greater than or equal to 1', 'alluxio.user.file.replication.durable.min must be greater than or equal to 1']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards', 'alluxio.worker.management.tier.promote.quota.percent', 'alluxio.worker.network.shutdown.timeout'], 'reason': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards should be an integer greater than 0', 'alluxio.worker.management.tier.promote.quota.percent should be an integer between 0 and 100', 'alluxio.worker.network.shutdown.timeout should be a valid duration']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards', 'alluxio.worker.management.backoff.strategy', 'alluxio.worker.network.shutdown.timeout'], 'reason': ['The value of alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards should be a positive integer.', 'The value of alluxio.worker.management.backoff.strategy should be one of [ANY, EXPONENTIAL, RANDOM].', 'The value of alluxio.worker.network.shutdown.timeout should be a duration.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards'], 'reason': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards should be an integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards', 'alluxio.worker.management.tier.promote.quota.percent', 'alluxio.web.file.info.enabled'], 'reason': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards should be an integer', 'alluxio.worker.management.tier.promote.quota.percent should be an integer', 'alluxio.web.file.info.enabled should be a boolean']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards'], 'reason': ['The value of alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards'], 'reason': ['The value of alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards should be an integer between 1 and 1000000, but the given value is 180.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards
+[Ciri] Reason for alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards: The value of alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards should be an integer between 1 and 1000000, but the given value is 180.

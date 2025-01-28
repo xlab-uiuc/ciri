@@ -1,0 +1,27 @@
+Wrong shot number:
+[6, 3, 1]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'log_parameter_max_length'], 'reason': ["The value of the property 'wal_buffers' should be a positive integer or '-1' to indicate that the system default should be used.", "The value of the property 'log_parameter_max_length' should be a positive integer or '-1' to indicate that the system default should be used."]}
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'log_parameter_max_length', 'max_wal_size'], 'reason': ["The property 'wal_buffers' has the value '-1' which is not of the correct type Integer.", "The property 'log_parameter_max_length' has the value '-2' which is not of the correct type Integer.", "The property 'max_wal_size' has the value '1GB' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['wal_buffers'], 'reason': ["The property 'wal_buffers' has the value '-1' which is not of the correct type Integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'log_parameter_max_length'], 'reason': ["The property 'wal_buffers' has the value '-1' which is not a valid value for this property. The property 'log_parameter_max_length' has the value '-2' which is not a valid value for this property."]}
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'log_parameter_max_length'], 'reason': ["The property 'wal_buffers' has the value '-1' which is not of the correct type Integer.", "The property 'log_parameter_max_length' has the value '-2' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'log_parameter_max_length'], 'reason': ["The property 'wal_buffers' has the value '-1' which is not of the correct type Integer.", "The property 'log_parameter_max_length' has the value '-2' which is not of the correct type Integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: wal_buffers	log_parameter_max_length
+[Ciri] Reason for wal_buffers: The property 'wal_buffers' has the value '-1' which is not of the correct type Integer.
+[Ciri] Reason for log_parameter_max_length: The property 'log_parameter_max_length' has the value '-2' which is not of the correct type Integer.

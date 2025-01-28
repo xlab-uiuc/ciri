@@ -1,0 +1,13 @@
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.abfs.impl', 'ipc.[port_number].cost-provider.impl', 'dfs.client.ignore.namenode.default.kms.uri'], 'reason': ["The property 'fs.abfs.impl' is missing 'fs.' prefix in the name.", "The property 'ipc.[port_number].cost-provider.impl' contains invalid characters in the name.", "The property 'dfs.client.ignore.namenode.default.kms.uri' has an extra space before the description tag."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.abfs.impl	ipc.[port_number].cost-provider.impl	dfs.client.ignore.namenode.default.kms.uri
+[Ciri] Reason for fs.abfs.impl: The property 'fs.abfs.impl' is missing 'fs.' prefix in the name.
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: The property 'ipc.[port_number].cost-provider.impl' contains invalid characters in the name.
+[Ciri] Reason for dfs.client.ignore.namenode.default.kms.uri: The property 'dfs.client.ignore.namenode.default.kms.uri' has an extra space before the description tag.

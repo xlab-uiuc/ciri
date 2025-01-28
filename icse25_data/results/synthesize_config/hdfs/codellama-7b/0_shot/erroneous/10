@@ -1,0 +1,44 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.pmem.cache.dirs', 'dfs.namenode.upgrade.domain.factor', 'dfs.checksum.type', 'dfs.client.failover.resolver.useFQDN'], 'reason': ['dfs.datanode.pmem.cache.dirs: The value of this property is not a valid directory.', 'dfs.namenode.upgrade.domain.factor: The value of this property is not a valid integer.', 'dfs.checksum.type: The value of this property is not a valid checksum type.', 'dfs.client.failover.resolver.useFQDN: The value of this property is not a valid boolean.']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.handler.count', 'dfs.namenode.upgrade.domain.factor', 'dfs.journalnode.keytab.file'], 'reason': ['dfs.datanode.handler.count must be an integer', 'dfs.namenode.upgrade.domain.factor must be an integer', 'dfs.journalnode.keytab.file must be a valid file path']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.handler.count', 'dfs.namenode.upgrade.domain.factor', 'dfs.balancer.keytab.file', 'dfs.checksum.type', 'dfs.client.failover.resolver.useFQDN', 'dfs.journalnode.keytab.file'], 'reason': ['dfs.datanode.handler.count must be an integer', 'dfs.namenode.upgrade.domain.factor must be an integer', 'dfs.balancer.keytab.file must be a valid file', 'dfs.checksum.type must be a valid checksum type', 'dfs.client.failover.resolver.useFQDN must be a boolean', 'dfs.journalnode.keytab.file must be a valid file']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.failover.resolver.useFQDN'], 'reason': ['dfs.client.failover.resolver.useFQDN is not a valid property for HDFS 3.3.0.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.upgrade.domain.factor'], 'reason': ['dfs.namenode.upgrade.domain.factor is not a valid property for hdfs version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.handler.count'], 'reason': ['dfs.datanode.handler.count should be an integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.failover.resolver.useFQDN'], 'reason': ['dfs.client.failover.resolver.useFQDN is not a valid property for hdfs version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.upgrade.domain.factor', 'dfs.balancer.keytab.file', 'dfs.checksum.type', 'dfs.client.failover.resolver.useFQDN', 'dfs.journalnode.keytab.file'], 'reason': ['dfs.namenode.upgrade.domain.factor is not a valid property for hdfs version 3.3.0', 'dfs.balancer.keytab.file is not a valid property for hdfs version 3.3.0', 'dfs.checksum.type is not a valid property for hdfs version 3.3.0', 'dfs.client.failover.resolver.useFQDN is not a valid property for hdfs version 3.3.0', 'dfs.journalnode.keytab.file is not a valid property for hdfs version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.handler.count'], 'reason': ['dfs.datanode.handler.count should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.failover.resolver.useFQDN'], 'reason': ['dfs.client.failover.resolver.useFQDN is not a valid property for hdfs version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.upgrade.domain.factor', 'dfs.balancer.keytab.file', 'dfs.checksum.type', 'dfs.client.failover.resolver.useFQDN', 'dfs.journalnode.keytab.file'], 'reason': ['dfs.namenode.upgrade.domain.factor should be an integer', 'dfs.balancer.keytab.file should be a valid file path', 'dfs.checksum.type should be a valid checksum type', 'dfs.client.failover.resolver.useFQDN should be a boolean', 'dfs.journalnode.keytab.file should be a valid file path']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.handler.count'], 'reason': ['dfs.datanode.handler.count should be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.handler.count'], 'reason': ['dfs.datanode.handler.count should be an integer, but it is set to 20.']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.handler.count'], 'reason': ['dfs.datanode.handler.count is not a valid property for hdfs version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.keytab.file'], 'reason': ['dfs.journalnode.keytab.file is not a valid property for hdfs version 3.3.0.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.handler.count
+[Ciri] Reason for dfs.datanode.handler.count: dfs.datanode.handler.count is not a valid property for hdfs version 3.3.0

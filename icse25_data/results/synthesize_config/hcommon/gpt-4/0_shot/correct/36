@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.credential.clear-text-fallback', 'fs.du.interval', 'fs.s3a.readahead.range', 'ha.failover-controller.graceful-fence.connection.retries'], 'reason': ["The property 'hadoop.security.credential.clear-text-fallback' does not exist in Hadoop 3.3.0. It seems to be a made-up or incorrect configuration property.", "The property 'fs.du.interval' is not a standard Hadoop FileSystem configuration. It might be specific to a particular file system implementation or incorrect.", "The property 'fs.s3a.readahead.range' format is incorrect. The value should be in bytes, and while '64K' is a readable format, the standard configuration should explicitly use numeric values without suffixes.", "The property 'ha.failover-controller.graceful-fence.connection.retries' does not exist in Hadoop 3.3.0. It appears to be incorrect or specific to a different version or a different Hadoop component."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.credential.clear-text-fallback	fs.du.interval	fs.s3a.readahead.range	ha.failover-controller.graceful-fence.connection.retries
+[Ciri] Reason for hadoop.security.credential.clear-text-fallback: The property 'hadoop.security.credential.clear-text-fallback' does not exist in Hadoop 3.3.0. It seems to be a made-up or incorrect configuration property.
+[Ciri] Reason for fs.du.interval: The property 'fs.du.interval' is not a standard Hadoop FileSystem configuration. It might be specific to a particular file system implementation or incorrect.
+[Ciri] Reason for fs.s3a.readahead.range: The property 'fs.s3a.readahead.range' format is incorrect. The value should be in bytes, and while '64K' is a readable format, the standard configuration should explicitly use numeric values without suffixes.
+[Ciri] Reason for ha.failover-controller.graceful-fence.connection.retries: The property 'ha.failover-controller.graceful-fence.connection.retries' does not exist in Hadoop 3.3.0. It appears to be incorrect or specific to a different version or a different Hadoop component.

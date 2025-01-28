@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy', 'enable-pprof', 'heartbeat-interval', 'log-level'], 'reason': ['proxy is not a valid configuration parameter for etcd version 3.5.0', 'enable-pprof is not a valid configuration parameter for etcd version 3.5.0', 'heartbeat-interval is not a valid configuration parameter for etcd version 3.5.0', 'log-level is not a valid configuration parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy', 'enable-pprof', 'heartbeat-interval', 'log-level'], 'reason': ['proxy is not a valid configuration parameter for etcd version 3.5.0', 'enable-pprof is not a valid configuration parameter for etcd version 3.5.0', 'heartbeat-interval is not a valid configuration parameter for etcd version 3.5.0', 'log-level is not a valid configuration parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'advertise-client-urls'], 'reason': ['listen-client-urls and advertise-client-urls must be the same', 'listen-client-urls and advertise-client-urls must be the same']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: proxy	enable-pprof	heartbeat-interval	log-level
+[Ciri] Reason for proxy: proxy is not a valid configuration parameter for etcd version 3.5.0
+[Ciri] Reason for enable-pprof: enable-pprof is not a valid configuration parameter for etcd version 3.5.0
+[Ciri] Reason for heartbeat-interval: heartbeat-interval is not a valid configuration parameter for etcd version 3.5.0
+[Ciri] Reason for log-level: log-level is not a valid configuration parameter for etcd version 3.5.0

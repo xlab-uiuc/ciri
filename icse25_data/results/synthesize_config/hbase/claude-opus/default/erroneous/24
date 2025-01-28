@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 9, 11]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.perserver.requests.threshold', 'hbase.rootdir.perms'], 'reason': ['The value 1073741823 for hbase.client.perserver.requests.threshold exceeds the allowed range of 1-Integer.MAX_VALUE', 'The value 1400 for hbase.rootdir.perms is not a valid Unix-style permission. It should be an octal number like 0700.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.client.perserver.requests.threshold	hbase.rootdir.perms
+[Ciri] Reason for hbase.client.perserver.requests.threshold: The value 1073741823 for hbase.client.perserver.requests.threshold exceeds the allowed range of 1-Integer.MAX_VALUE
+[Ciri] Reason for hbase.rootdir.perms: The value 1400 for hbase.rootdir.perms is not a valid Unix-style permission. It should be an octal number like 0700.

@@ -1,0 +1,20 @@
+Wrong shot number:
+[16, 4, 15]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.negative-cache.secs', 'hadoop.security.group.mapping.ldap.num.attempts'], 'reason': ["The value of the property 'hadoop.security.groups.negative-cache.secs' should be a positive integer.", "The value of the property 'hadoop.security.group.mapping.ldap.num.attempts' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.negative-cache.secs', 'hadoop.security.group.mapping.ldap.num.attempts', 'fs.s3a.assumed.role.session.duration'], 'reason': ["The value of the property 'hadoop.security.groups.negative-cache.secs' should be a positive integer.", "The value of the property 'hadoop.security.group.mapping.ldap.num.attempts' should be a positive integer.", "The value of the property 'fs.s3a.assumed.role.session.duration' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.negative-cache.secs', 'hadoop.security.group.mapping.ldap.num.attempts', 'fs.s3a.assumed.role.session.duration'], 'reason': ["The value of the property 'hadoop.security.groups.negative-cache.secs' should be a positive integer.", "The value of the property 'hadoop.security.group.mapping.ldap.num.attempts' should be a positive integer.", "The value of the property 'fs.s3a.assumed.role.session.duration' should be in the range of 15m to 1h."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.groups.negative-cache.secs	hadoop.security.group.mapping.ldap.num.attempts	fs.s3a.assumed.role.session.duration
+[Ciri] Reason for hadoop.security.groups.negative-cache.secs: The value of the property 'hadoop.security.groups.negative-cache.secs' should be a positive integer.
+[Ciri] Reason for hadoop.security.group.mapping.ldap.num.attempts: The value of the property 'hadoop.security.group.mapping.ldap.num.attempts' should be a positive integer.
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The value of the property 'fs.s3a.assumed.role.session.duration' should be a positive integer.

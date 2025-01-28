@@ -1,0 +1,16 @@
+Wrong shot number:
+[4, 3, 1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'ipc.client.connection.maxidletime', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable', 'ipc.[port_number].weighted-cost.lockfree', 'rpc.metrics.quantile.enable'], 'reason': ["The property 'fs.ftp.host' has the value '999.-1.0.0' which is not a valid host format.", "The property 'ipc.client.connection.maxidletime' has the value '10000' which should be suffixed with 'ms' for milliseconds.", "The property 'ipc.[port_number].decay-scheduler.thresholds' is missing the specific port number and should not contain square brackets.", "The property 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable' is missing the specific port number and should not contain square brackets.", "The property 'ipc.[port_number].weighted-cost.lockfree' is missing the specific port number and should not contain square brackets.", "The property 'rpc.metrics.quantile.enable' has the value 'false' which should be a boolean value (true/false)."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.ftp.host	ipc.client.connection.maxidletime	ipc.[port_number].decay-scheduler.thresholds	ipc.[port_number].decay-scheduler.backoff.responsetime.enable	ipc.[port_number].weighted-cost.lockfree	rpc.metrics.quantile.enable
+[Ciri] Reason for fs.ftp.host: The property 'fs.ftp.host' has the value '999.-1.0.0' which is not a valid host format.
+[Ciri] Reason for ipc.client.connection.maxidletime: The property 'ipc.client.connection.maxidletime' has the value '10000' which should be suffixed with 'ms' for milliseconds.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: The property 'ipc.[port_number].decay-scheduler.thresholds' is missing the specific port number and should not contain square brackets.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.enable: The property 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable' is missing the specific port number and should not contain square brackets.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The property 'ipc.[port_number].weighted-cost.lockfree' is missing the specific port number and should not contain square brackets.
+[Ciri] Reason for rpc.metrics.quantile.enable: The property 'rpc.metrics.quantile.enable' has the value 'false' which should be a boolean value (true/false).

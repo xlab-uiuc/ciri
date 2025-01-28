@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size', 'ipc.client.connection.maxidletime', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable', 'ipc.[port_number].weighted-cost.lockfree', 'rpc.metrics.quantile.enable', 'hadoop.registry.zk.root'], 'reason': ['The hostname is invalid.', 'The block size is invalid.', 'The maximum idle time is invalid.', 'The threshold is invalid.', 'The backoff by response time is invalid.', 'The weighted cost is invalid.', 'The quantile is invalid.', 'The root zookeeper node is invalid.']}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host'], 'reason': ['The value of fs.ftp.host is not a valid IP address.']}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size', 'ipc.client.connection.maxidletime', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable', 'ipc.[port_number].weighted-cost.lockfree', 'rpc.metrics.quantile.enable', 'hadoop.registry.zk.root'], 'reason': ['Invalid hostname', 'Invalid block size', 'Invalid time in milliseconds', 'Invalid priority queue thresholds', 'Invalid backoff by response time feature', 'Invalid weight multiplier', 'Invalid percentile latency', 'Invalid root zookeeper node']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.block.size	ipc.client.connection.maxidletime	ipc.[port_number].decay-scheduler.thresholds	ipc.[port_number].decay-scheduler.backoff.responsetime.enable	ipc.[port_number].weighted-cost.lockfree	rpc.metrics.quantile.enable	hadoop.registry.zk.root
+[Ciri] Reason for fs.ftp.host: The hostname is invalid.
+[Ciri] Reason for fs.s3a.block.size: Invalid block size
+[Ciri] Reason for ipc.client.connection.maxidletime: Invalid time in milliseconds
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: Invalid priority queue thresholds
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.enable: The backoff by response time is invalid.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The weighted cost is invalid.
+[Ciri] Reason for rpc.metrics.quantile.enable: The quantile is invalid.
+[Ciri] Reason for hadoop.registry.zk.root: The root zookeeper node is invalid.

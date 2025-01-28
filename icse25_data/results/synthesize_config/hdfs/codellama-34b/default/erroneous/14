@@ -1,0 +1,18 @@
+Wrong shot number:
+[3, 15, 6]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.backup.address'], 'reason': ["The property 'dfs.namenode.backup.address' has the value '0.0.0.0:3000' which does not follow the correct port format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.backup.address', 'dfs.namenode.checkpoint.dir', 'dfs.namenode.legacy-oiv-image.dir'], 'reason': ["The property 'dfs.namenode.backup.address' has the value '0.0.0.0:3000' which does not follow the correct port format.", "The property 'dfs.namenode.checkpoint.dir' has the value 'ciri' which does not follow the correct path format.", "The property 'dfs.namenode.legacy-oiv-image.dir' has the value '/valid/dir1' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.backup.address'], 'reason': ["The property 'dfs.namenode.backup.address' has the value '0.0.0.0:3000' which does not follow the correct port format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.backup.address
+[Ciri] Reason for dfs.namenode.backup.address: The property 'dfs.namenode.backup.address' has the value '0.0.0.0:3000' which does not follow the correct port format.

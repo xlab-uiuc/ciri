@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 4]
+
+Correct shot number:
+[2, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'NUMBER_GROUPING' has the value '-100' which should be a positive integer.", "The property 'CSRF_COOKIE_AGE' has an invalid value '60 * 60 * 24 * 7 * 52'. It should be a single integer value representing the age of the CSRF cookie in seconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: NUMBER_GROUPING	CSRF_COOKIE_AGE
+[Ciri] Reason for NUMBER_GROUPING: The property 'NUMBER_GROUPING' has the value '-100' which should be a positive integer.
+[Ciri] Reason for CSRF_COOKIE_AGE: The property 'CSRF_COOKIE_AGE' has an invalid value '60 * 60 * 24 * 7 * 52'. It should be a single integer value representing the age of the CSRF cookie in seconds.

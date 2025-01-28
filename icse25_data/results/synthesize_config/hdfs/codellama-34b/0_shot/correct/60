@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.safemode.threshold-pct', 'dfs.namenode.checkpoint.txns', 'dfs.short.circuit.shared.memory.watcher.interrupt.check.ms', 'dfs.namenode.reencrypt.sleep.interval', 'dfs.namenode.hosts.provider.classname', 'dfs.client.block.reader.remote.buffer.size', 'dfs.namenode.audit.log.async', 'dfs.qjournal.accept-recovery.timeout.ms'], 'reason': ['The value of dfs.namenode.safemode.threshold-pct is too small, it should be greater than 0.', 'The value of dfs.namenode.checkpoint.txns is too small, it should be greater than 1.', 'The value of dfs.short.circuit.shared.memory.watcher.interrupt.check.ms is too small, it should be greater than 1000.', 'The value of dfs.namenode.reencrypt.sleep.interval is too small, it should be greater than 1000.', 'The value of dfs.namenode.hosts.provider.classname is not correct, it should be org.apache.hadoop.hdfs.server.blockmanagement.CombinedHostFileManager.', 'The value of dfs.client.block.reader.remote.buffer.size is too small, it should be greater than 1024.', 'The value of dfs.namenode.audit.log.async is not correct, it should be false.', 'The value of dfs.qjournal.accept-recovery.timeout.ms is too small, it should be greater than 30000.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.namenode.safemode.threshold-pct	dfs.namenode.checkpoint.txns	dfs.short.circuit.shared.memory.watcher.interrupt.check.ms	dfs.namenode.reencrypt.sleep.interval	dfs.namenode.hosts.provider.classname	dfs.client.block.reader.remote.buffer.size	dfs.namenode.audit.log.async	dfs.qjournal.accept-recovery.timeout.ms
+[Ciri] Reason for dfs.namenode.safemode.threshold-pct: The value of dfs.namenode.safemode.threshold-pct is too small, it should be greater than 0.
+[Ciri] Reason for dfs.namenode.checkpoint.txns: The value of dfs.namenode.checkpoint.txns is too small, it should be greater than 1.
+[Ciri] Reason for dfs.short.circuit.shared.memory.watcher.interrupt.check.ms: The value of dfs.short.circuit.shared.memory.watcher.interrupt.check.ms is too small, it should be greater than 1000.
+[Ciri] Reason for dfs.namenode.reencrypt.sleep.interval: The value of dfs.namenode.reencrypt.sleep.interval is too small, it should be greater than 1000.
+[Ciri] Reason for dfs.namenode.hosts.provider.classname: The value of dfs.namenode.hosts.provider.classname is not correct, it should be org.apache.hadoop.hdfs.server.blockmanagement.CombinedHostFileManager.
+[Ciri] Reason for dfs.client.block.reader.remote.buffer.size: The value of dfs.client.block.reader.remote.buffer.size is too small, it should be greater than 1024.
+[Ciri] Reason for dfs.namenode.audit.log.async: The value of dfs.namenode.audit.log.async is not correct, it should be false.
+[Ciri] Reason for dfs.qjournal.accept-recovery.timeout.ms: The value of dfs.qjournal.accept-recovery.timeout.ms is too small, it should be greater than 30000.

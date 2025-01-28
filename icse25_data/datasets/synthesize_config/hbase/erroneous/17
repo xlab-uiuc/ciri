@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.zookeeper.quorum</name>
+  <value>localhost</value>
+    <description>Comma separated list of servers in the ZooKeeper ensemble
+    (This config. should have been named hbase.zookeeper.ensemble).
+    For example, "host1.mydomain.com,host2.mydomain.com,host3.mydomain.com".
+    By default this is set to localhost for local and pseudo-distributed modes
+    of operation. For a fully-distributed setup, this should be set to a full
+    list of ZooKeeper ensemble servers. If HBASE_MANAGES_ZK is set in hbase-env.sh
+    this is the list of servers which hbase will start/stop ZooKeeper on as
+    part of cluster start/stop.  Client-side, we will take this list of
+    ensemble members and put it together with the hbase.zookeeper.property.clientPort
+    config. and pass it into zookeeper constructor as the connectString
+    parameter.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.callqueue.handler.factor</name>
+  <value>0.05</value>
+    <description>Factor to determine the number of call queues.
+      A value of 0 means a single queue shared between all the handlers.
+      A value of 1 means that each handler has its own queue.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.hlog.writer.impl</name>
+  <value>org.apache.hadoop.hbase.regionserver.wal.ProtobufLogWriter</value>
+    <description>The WAL file writer implementation.</description>
+</property>
+
+<property>
+  <name>hbase.client.max.perregion.tasks</name>
+  <value>0</value>
+    <description>The maximum number of concurrent mutation tasks the client will
+    maintain to a single Region. That is, if there is already
+    hbase.client.max.perregion.tasks writes in progress for this region, new puts
+    won't be sent to this region until some writes finishes.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.ratio.offpeak</name>
+  <value>10.0</value>
+    <description>Allows you to set a different (by default, more aggressive) ratio for determining
+      whether larger StoreFiles are included in compactions during off-peak hours. Works in the
+      same way as hbase.hstore.compaction.ratio. Only applies if hbase.offpeak.start.hour and
+      hbase.offpeak.end.hour are also enabled.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.hostname</name>
+  <value>127.0.0.1</value>
+    <description>This config is for experts: don't set its value unless you really know what you are doing.
+    When set to a non-empty value, this represents the (external facing) hostname for the underlying server.
+    See https://issues.apache.org/jira/browse/HBASE-12954 for details.</description>
+</property>
+
+<property>
+  <name>hbase.display.keys</name>
+  <value>false</value>
+    <description>When this is set to true the webUI and such will display all start/end keys
+                 as part of the table details, region names, etc. When this is set to false,
+                 the keys are hidden.</description>
+</property>
+
+<property>
+  <name>hbase.data.umask</name>
+  <value>ciri</value>
+    <description>File permissions that should be used to write data
+      files when hbase.data.umask.enable is true</description>
+</property>
+
+</configuration>

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'zset-max-listpack-entries', 'replica-announce-ip', 'oom-score-adj-values'], 'reason': ["The correct parameter is 'rdb-compression', not 'rdbcompression'.", "'zset-max-listpack-entries' does not exist in Redis 7.0.0. The correct parameter for controlling listpack size is 'hash-max-listpack-entries' for hashes and 'zset-max-ziplist-entries' for sorted sets in versions prior to Redis 7.0.0.", "Using 'replica-announce-ip' with the loopback address (127.0.0.1) is unusual unless this is specifically intended for testing purposes. In production, it should be set to the public IP address or hostname of the replica.", "'oom-score-adj-values' is not a valid Redis configuration directive. The correct directive for adjusting OOM scores is 'oom-score-adj'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: rdbcompression	zset-max-listpack-entries	replica-announce-ip	oom-score-adj-values
+[Ciri] Reason for rdbcompression: The correct parameter is 'rdb-compression', not 'rdbcompression'.
+[Ciri] Reason for zset-max-listpack-entries: 'zset-max-listpack-entries' does not exist in Redis 7.0.0. The correct parameter for controlling listpack size is 'hash-max-listpack-entries' for hashes and 'zset-max-ziplist-entries' for sorted sets in versions prior to Redis 7.0.0.
+[Ciri] Reason for replica-announce-ip: Using 'replica-announce-ip' with the loopback address (127.0.0.1) is unusual unless this is specifically intended for testing purposes. In production, it should be set to the public IP address or hostname of the replica.
+[Ciri] Reason for oom-score-adj-values: 'oom-score-adj-values' is not a valid Redis configuration directive. The correct directive for adjusting OOM scores is 'oom-score-adj'.

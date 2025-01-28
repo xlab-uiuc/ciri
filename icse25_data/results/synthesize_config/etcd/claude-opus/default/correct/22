@@ -1,0 +1,16 @@
+Wrong shot number:
+[8, 1, 5]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'max-snapshots', 'max-wals'], 'reason': ["The 'enable-v2' flag to enable v2 API support was removed in etcd 3.5. etcd 3.5 does not support v2 API.", "The value of 'max-snapshots' must be at least 2. A value of 1 is too low.", "The value of 'max-wals' must be at least 2. A value of 1 is too low."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable-v2	max-snapshots	max-wals
+[Ciri] Reason for enable-v2: The 'enable-v2' flag to enable v2 API support was removed in etcd 3.5. etcd 3.5 does not support v2 API.
+[Ciri] Reason for max-snapshots: The value of 'max-snapshots' must be at least 2. A value of 1 is too low.
+[Ciri] Reason for max-wals: The value of 'max-wals' must be at least 2. A value of 1 is too low.

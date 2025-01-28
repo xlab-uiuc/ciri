@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'wal_receiver_timeout'], 'reason': ['vacuum_freeze_min_age is set to an extremely high value of 50000000 (around 1.5 years). This could lead to bloat and performance issues. The recommended value is between 100000000 and 1000000000 (around 3 to 30 days).', 'wal_receiver_timeout is set to 1s which is too low. This could cause frequent disconnections and reconnections between the primary and standby servers. The recommended value is between 30s and 3600s (30 seconds to 1 hour).']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: vacuum_freeze_min_age	wal_receiver_timeout
+[Ciri] Reason for vacuum_freeze_min_age: vacuum_freeze_min_age is set to an extremely high value of 50000000 (around 1.5 years). This could lead to bloat and performance issues. The recommended value is between 100000000 and 1000000000 (around 3 to 30 days).
+[Ciri] Reason for wal_receiver_timeout: wal_receiver_timeout is set to 1s which is too low. This could cause frequent disconnections and reconnections between the primary and standby servers. The recommended value is between 30s and 3600s (30 seconds to 1 hour).

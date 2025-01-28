@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 3, 7]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout'], 'reason': ["The property 'proxy-read-timeout' has the value '0' which should be greater than 0."]}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'heartbeat-interval'], 'reason': ["The property 'proxy-read-timeout' has the value '0' which should be greater than 0.", "The property 'heartbeat-interval' has the value '50' which is not within the recommended range."]}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'heartbeat-interval'], 'reason': ["The property 'proxy-read-timeout' has the value '0' which should be greater than 0.", "The property 'heartbeat-interval' has the value '50' which is not within the recommended range."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: proxy-read-timeout	heartbeat-interval
+[Ciri] Reason for proxy-read-timeout: The property 'proxy-read-timeout' has the value '0' which should be greater than 0.
+[Ciri] Reason for heartbeat-interval: The property 'heartbeat-interval' has the value '50' which is not within the recommended range.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'DATE_FORMAT', 'STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has a negative value which is not valid.", "The property 'DATE_FORMAT' has an invalid date format 'N j, Y'.", "The property 'STATICFILES_FINDERS' should be a list of strings, not a string.", "The property 'PASSWORD_RESET_TIMEOUT' has an invalid value with mathematical operations.", "The property 'CSRF_COOKIE_AGE' has an invalid value with mathematical operations."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	DATE_FORMAT	STATICFILES_FINDERS	PASSWORD_RESET_TIMEOUT	CSRF_COOKIE_AGE
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: The property 'CACHE_MIDDLEWARE_SECONDS' has a negative value which is not valid.
+[Ciri] Reason for DATE_FORMAT: The property 'DATE_FORMAT' has an invalid date format 'N j, Y'.
+[Ciri] Reason for STATICFILES_FINDERS: The property 'STATICFILES_FINDERS' should be a list of strings, not a string.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: The property 'PASSWORD_RESET_TIMEOUT' has an invalid value with mathematical operations.
+[Ciri] Reason for CSRF_COOKIE_AGE: The property 'CSRF_COOKIE_AGE' has an invalid value with mathematical operations.

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl=off', 'log_parameter_max_length=-2', 'plan_cache_mode=auto', 'bgwriter_lru_maxpages=200', 'scram_iterations=8192', 'wal_level=replica', "listen_addresses='localhost'"], 'reason': ["The 'ssl=off' parameter is deprecated and should not be used in PostgreSQL 13. Use 'ssl=on' or 'ssl=off' instead.", "The 'log_parameter_max_length' parameter is not a valid parameter in PostgreSQL 13.", "The 'plan_cache_mode=auto' parameter is not a valid parameter in PostgreSQL 13. The valid values are 'force_custom_plan' or 'force_generic_plan'.", "The 'bgwriter_lru_maxpages' parameter is not a valid parameter in PostgreSQL 13.", "The 'scram_iterations' parameter is not a valid parameter in PostgreSQL 13.", "The 'wal_level=replica' parameter is not a valid value for the 'wal_level' parameter in PostgreSQL 13. The valid values are 'minimal', 'replica', 'logical', or a comma-separated list of these values.", "The 'listen_addresses='localhost'' parameter is not a valid value for the 'listen_addresses' parameter in PostgreSQL 13. The value should be a comma-separated list of IP addresses or hostnames, or '*' to listen on all available IP interfaces."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: ssl=off	log_parameter_max_length=-2	plan_cache_mode=auto	bgwriter_lru_maxpages=200	scram_iterations=8192	wal_level=replica	listen_addresses='localhost'
+[Ciri] Reason for ssl=off: The 'ssl=off' parameter is deprecated and should not be used in PostgreSQL 13. Use 'ssl=on' or 'ssl=off' instead.
+[Ciri] Reason for log_parameter_max_length=-2: The 'log_parameter_max_length' parameter is not a valid parameter in PostgreSQL 13.
+[Ciri] Reason for plan_cache_mode=auto: The 'plan_cache_mode=auto' parameter is not a valid parameter in PostgreSQL 13. The valid values are 'force_custom_plan' or 'force_generic_plan'.
+[Ciri] Reason for bgwriter_lru_maxpages=200: The 'bgwriter_lru_maxpages' parameter is not a valid parameter in PostgreSQL 13.
+[Ciri] Reason for scram_iterations=8192: The 'scram_iterations' parameter is not a valid parameter in PostgreSQL 13.
+[Ciri] Reason for wal_level=replica: The 'wal_level=replica' parameter is not a valid value for the 'wal_level' parameter in PostgreSQL 13. The valid values are 'minimal', 'replica', 'logical', or a comma-separated list of these values.
+[Ciri] Reason for listen_addresses='localhost': The 'listen_addresses='localhost'' parameter is not a valid value for the 'listen_addresses' parameter in PostgreSQL 13. The value should be a comma-separated list of IP addresses or hostnames, or '*' to listen on all available IP interfaces.

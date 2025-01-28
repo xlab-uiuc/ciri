@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockexclusive', 'adl.http.timeout'], 'reason': ['Invalid parameter name format: ipc.[port_number].weighted-cost.lockexclusive', 'Negative value for timeout: adl.http.timeout']}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockexclusive', 'adl.http.timeout'], 'reason': ["The property name 'ipc.[port_number].weighted-cost.lockexclusive' is not a valid format.", "The property name 'adl.http.timeout' is missing a closing tag for the 'value' element."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockexclusive', 'adl.http.timeout'], 'reason': ["The property 'ipc.[port_number].weighted-cost.lockexclusive' is not a valid property name format.", "The property 'adl.http.timeout' has an invalid value. Timeout value should be greater than zero."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].weighted-cost.lockexclusive	adl.http.timeout
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockexclusive: The property 'ipc.[port_number].weighted-cost.lockexclusive' is not a valid property name format.
+[Ciri] Reason for adl.http.timeout: Negative value for timeout: adl.http.timeout

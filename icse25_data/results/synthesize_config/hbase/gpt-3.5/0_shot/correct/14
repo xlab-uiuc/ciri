@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.ratio.offpeak', 'hbase.hstore.time.to.purge.deletes', 'hbase.rest.port', 'hbase.regionserver.storefile.refresh.period'], 'reason': ["The value '5.0F' for property 'hbase.hstore.compaction.ratio.offpeak' should be a float without the 'F' suffix.", "The property 'hbase.hstore.time.to.purge.deletes' has a 'usage' tag which is not a valid configuration parameter.", "The property 'hbase.rest.port' has a 'usage' tag which is not a valid configuration parameter.", "The value '-1' for property 'hbase.regionserver.storefile.refresh.period' should be a positive integer or 0."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.ratio.offpeak', 'hbase.rest.port', 'hbase.regionserver.storefile.refresh.period'], 'reason': ["The value '5.0F' for property 'hbase.hstore.compaction.ratio.offpeak' should be a valid floating-point number without the 'F' suffix.", "The value '3001' for property 'hbase.rest.port' should be an integer without quotes.", "The value '-1' for property 'hbase.regionserver.storefile.refresh.period' should be a positive integer. Use '0' to disable the feature."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.ratio.offpeak', 'hbase.hstore.time.to.purge.deletes', 'hbase.rest.port', 'hbase.regionserver.storefile.refresh.period'], 'reason': ["The value '5.0F' for property 'hbase.hstore.compaction.ratio.offpeak' should be a float without the 'F' suffix.", "The property 'hbase.hstore.time.to.purge.deletes' has a 'usage' tag instead of a 'description' tag.", "The property 'hbase.rest.port' has a 'usage' tag instead of a 'description' tag.", "The value '-1' for property 'hbase.regionserver.storefile.refresh.period' should be a positive integer or 0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hbase.hstore.compaction.ratio.offpeak	hbase.hstore.time.to.purge.deletes	hbase.rest.port	hbase.regionserver.storefile.refresh.period
+[Ciri] Reason for hbase.hstore.compaction.ratio.offpeak: The value '5.0F' for property 'hbase.hstore.compaction.ratio.offpeak' should be a float without the 'F' suffix.
+[Ciri] Reason for hbase.hstore.time.to.purge.deletes: The property 'hbase.hstore.time.to.purge.deletes' has a 'usage' tag instead of a 'description' tag.
+[Ciri] Reason for hbase.rest.port: The property 'hbase.rest.port' has a 'usage' tag instead of a 'description' tag.
+[Ciri] Reason for hbase.regionserver.storefile.refresh.period: The value '-1' for property 'hbase.regionserver.storefile.refresh.period' should be a positive integer or 0.

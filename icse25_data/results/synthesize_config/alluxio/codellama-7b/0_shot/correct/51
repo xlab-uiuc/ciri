@@ -1,0 +1,48 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.port', 'alluxio.job.master.web.port', 'alluxio.master.ufs.journal.max.catchup.time', 'alluxio.user.streaming.writer.flush.timeout', 'alluxio.user.network.rpc.flowcontrol.window'], 'reason': ['alluxio.master.embedded.journal.port should be a positive integer', 'alluxio.job.master.web.port should be a positive integer', 'alluxio.master.ufs.journal.max.catchup.time should be a positive integer', 'alluxio.user.streaming.writer.flush.timeout should be a positive integer', 'alluxio.user.network.rpc.flowcontrol.window should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['The value of alluxio.user.network.rpc.max.inbound.message.size is too large. The maximum value is 100MB.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.flush.timeout'], 'reason': ['alluxio.user.streaming.writer.flush.timeout is not a valid property in Alluxio 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.port', 'alluxio.job.master.web.port', 'alluxio.master.ufs.journal.max.catchup.time', 'alluxio.user.streaming.writer.flush.timeout', 'alluxio.user.network.rpc.flowcontrol.window'], 'reason': ['alluxio.master.embedded.journal.port should be a positive integer', 'alluxio.job.master.web.port should be a positive integer', 'alluxio.master.ufs.journal.max.catchup.time should be a positive integer', 'alluxio.user.streaming.writer.flush.timeout should be a positive integer', 'alluxio.user.network.rpc.flowcontrol.window should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.flowcontrol.window'], 'reason': ['alluxio.user.network.rpc.flowcontrol.window is not a valid property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.port'], 'reason': ['alluxio.master.embedded.journal.port is not a valid port number.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.port', 'alluxio.job.master.web.port', 'alluxio.master.ufs.journal.max.catchup.time', 'alluxio.user.streaming.writer.flush.timeout', 'alluxio.user.network.rpc.flowcontrol.window'], 'reason': ['alluxio.master.embedded.journal.port should be an integer', 'alluxio.job.master.web.port should be an integer', 'alluxio.master.ufs.journal.max.catchup.time should be an integer', 'alluxio.user.streaming.writer.flush.timeout should be an integer', 'alluxio.user.network.rpc.flowcontrol.window should be an integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.port', 'alluxio.job.master.web.port'], 'reason': ['The value of alluxio.master.embedded.journal.port is not a valid port number.', 'The value of alluxio.job.master.web.port is not a valid port number.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.flowcontrol.window'], 'reason': ['The value of alluxio.user.network.rpc.flowcontrol.window is not a valid value. It should be a non-negative integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.port', 'alluxio.job.master.web.port', 'alluxio.master.ufs.journal.max.catchup.time', 'alluxio.user.streaming.writer.flush.timeout', 'alluxio.user.network.rpc.flowcontrol.window'], 'reason': ['alluxio.master.embedded.journal.port should be an integer', 'alluxio.job.master.web.port should be an integer', 'alluxio.master.ufs.journal.max.catchup.time should be an integer', 'alluxio.user.streaming.writer.flush.timeout should be an integer', 'alluxio.user.network.rpc.flowcontrol.window should be an integer']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.port', 'alluxio.job.master.web.port', 'alluxio.master.ufs.journal.max.catchup.time', 'alluxio.user.streaming.writer.flush.timeout', 'alluxio.user.network.rpc.flowcontrol.window'], 'reason': ['alluxio.master.embedded.journal.port is not a valid port number', 'alluxio.job.master.web.port is not a valid port number', 'alluxio.master.ufs.journal.max.catchup.time is not a valid time unit', 'alluxio.user.streaming.writer.flush.timeout is not a valid time unit', 'alluxio.user.network.rpc.flowcontrol.window is not a valid size unit']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.flowcontrol.window'], 'reason': ['alluxio.user.network.rpc.flowcontrol.window is not a valid property']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.port', 'alluxio.job.master.web.port', 'alluxio.master.ufs.journal.max.catchup.time', 'alluxio.user.streaming.writer.flush.timeout', 'alluxio.user.network.rpc.flowcontrol.window'], 'reason': ['alluxio.master.embedded.journal.port should be an integer', 'alluxio.job.master.web.port should be an integer', 'alluxio.master.ufs.journal.max.catchup.time should be an integer', 'alluxio.user.streaming.writer.flush.timeout should be an integer', 'alluxio.user.network.rpc.flowcontrol.window should be an integer']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.master.embedded.journal.port	alluxio.job.master.web.port	alluxio.master.ufs.journal.max.catchup.time	alluxio.user.streaming.writer.flush.timeout	alluxio.user.network.rpc.flowcontrol.window
+[Ciri] Reason for alluxio.master.embedded.journal.port: alluxio.master.embedded.journal.port is not a valid port number
+[Ciri] Reason for alluxio.job.master.web.port: alluxio.job.master.web.port is not a valid port number
+[Ciri] Reason for alluxio.master.ufs.journal.max.catchup.time: alluxio.master.ufs.journal.max.catchup.time should be an integer
+[Ciri] Reason for alluxio.user.streaming.writer.flush.timeout: alluxio.user.streaming.writer.flush.timeout is not a valid time unit
+[Ciri] Reason for alluxio.user.network.rpc.flowcontrol.window: alluxio.user.network.rpc.flowcontrol.window is not a valid size unit

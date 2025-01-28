@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-bind-host', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The value '0.0.256.0' is not a valid IP address. It should be in the format x.x.x.x where x is between 0 and 255, for example '0.0.0.0' to listen on all interfaces.", "The value '5s' is not a valid integer in milliseconds. It should be an integer like '5000' for 5 seconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.rpc-bind-host	dfs.namenode.gc.time.monitor.sleep.interval.ms
+[Ciri] Reason for dfs.namenode.rpc-bind-host: The value '0.0.256.0' is not a valid IP address. It should be in the format x.x.x.x where x is between 0 and 255, for example '0.0.0.0' to listen on all interfaces.
+[Ciri] Reason for dfs.namenode.gc.time.monitor.sleep.interval.ms: The value '5s' is not a valid integer in milliseconds. It should be an integer like '5000' for 5 seconds.

@@ -1,0 +1,17 @@
+Correct shot number:
+[5, 4, 7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.num.attempts.before.failover', 'fs.ftp.data.connection.mode', 'fs.AbstractFileSystem.wasbs.impl', 'ftp.replication', 's3.replication', 'ha.zookeeper.parent-znode', 'hadoop.ssl.server.conf'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.num.attempts.before.failover' should have a value greater than 1.", "The property 'fs.ftp.data.connection.mode' has an additional 'usage' tag which is not a valid property attribute.", "The property 'fs.AbstractFileSystem.wasbs.impl' has an additional 'usage' tag which is not a valid property attribute.", "The property 'ftp.replication' should have a more descriptive name or a proper context for its usage.", "The property 's3.replication' should have a more descriptive name or a proper context for its usage.", "The property 'ha.zookeeper.parent-znode' has an additional 'usage' tag which is not a valid property attribute.", "The property 'hadoop.ssl.server.conf' should have a more descriptive name or a proper context for its usage."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.num.attempts.before.failover	fs.ftp.data.connection.mode	fs.AbstractFileSystem.wasbs.impl	ftp.replication	s3.replication	ha.zookeeper.parent-znode	hadoop.ssl.server.conf
+[Ciri] Reason for hadoop.security.group.mapping.ldap.num.attempts.before.failover: The property 'hadoop.security.group.mapping.ldap.num.attempts.before.failover' should have a value greater than 1.
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an additional 'usage' tag which is not a valid property attribute.
+[Ciri] Reason for fs.AbstractFileSystem.wasbs.impl: The property 'fs.AbstractFileSystem.wasbs.impl' has an additional 'usage' tag which is not a valid property attribute.
+[Ciri] Reason for ftp.replication: The property 'ftp.replication' should have a more descriptive name or a proper context for its usage.
+[Ciri] Reason for s3.replication: The property 's3.replication' should have a more descriptive name or a proper context for its usage.
+[Ciri] Reason for ha.zookeeper.parent-znode: The property 'ha.zookeeper.parent-znode' has an additional 'usage' tag which is not a valid property attribute.
+[Ciri] Reason for hadoop.ssl.server.conf: The property 'hadoop.ssl.server.conf' should have a more descriptive name or a proper context for its usage.

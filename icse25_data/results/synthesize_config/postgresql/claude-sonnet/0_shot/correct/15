@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['archive_timeout', 'max_pred_locks_per_page'], 'reason': ['archive_timeout is a deprecated parameter in PostgreSQL 13 and is ignored. Use archive_command and archive_mode instead.', 'max_pred_locks_per_page is a deprecated parameter in PostgreSQL 13 and is ignored. It has been replaced by a more general mechanism for controlling lock levels.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: archive_timeout	max_pred_locks_per_page
+[Ciri] Reason for archive_timeout: archive_timeout is a deprecated parameter in PostgreSQL 13 and is ignored. Use archive_command and archive_mode instead.
+[Ciri] Reason for max_pred_locks_per_page: max_pred_locks_per_page is a deprecated parameter in PostgreSQL 13 and is ignored. It has been replaced by a more general mechanism for controlling lock levels.

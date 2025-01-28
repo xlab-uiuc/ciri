@@ -1,0 +1,16 @@
+Correct shot number:
+[8, 12, 10, 13, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'fs.AbstractFileSystem.wasbs.impl', 'ftp.replication', 's3.replication', 'ha.zookeeper.parent-znode', 'hadoop.ssl.server.conf'], 'reason': ['Usage tag xmlPropsToSkipCompare.add is not a valid property.', 'Usage tag conf.set is not a valid property.', 'Property name contains invalid characters.', 'Property name contains invalid characters.', 'Usage tag xmlPropsToSkipCompare.add is not a valid property.', 'Property name contains invalid characters.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.ftp.data.connection.mode	fs.AbstractFileSystem.wasbs.impl	ftp.replication	s3.replication	ha.zookeeper.parent-znode	hadoop.ssl.server.conf
+[Ciri] Reason for fs.ftp.data.connection.mode: Usage tag xmlPropsToSkipCompare.add is not a valid property.
+[Ciri] Reason for fs.AbstractFileSystem.wasbs.impl: Usage tag conf.set is not a valid property.
+[Ciri] Reason for ftp.replication: Property name contains invalid characters.
+[Ciri] Reason for s3.replication: Property name contains invalid characters.
+[Ciri] Reason for ha.zookeeper.parent-znode: Usage tag xmlPropsToSkipCompare.add is not a valid property.
+[Ciri] Reason for hadoop.ssl.server.conf: Property name contains invalid characters.

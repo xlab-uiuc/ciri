@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 8]
+
+Correct shot number:
+[2, 4, 11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.attempts.maximum'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has the value '30s' which should be specified in milliseconds instead of seconds.", "The property 'fs.s3a.attempts.maximum' has the value '10' which is not within the recommended range for maximum retry attempts."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.s3a.attempts.maximum
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has the value '30s' which should be specified in milliseconds instead of seconds.
+[Ciri] Reason for fs.s3a.attempts.maximum: The property 'fs.s3a.attempts.maximum' has the value '10' which is not within the recommended range for maximum retry attempts.

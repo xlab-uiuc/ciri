@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.port</name>
+  <value>3001</value>
+    <description>The port the HBase RegionServer binds to.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.callqueue.handler.factor</name>
+  <value>ciri/ciri</value>
+    <description>Factor to determine the number of call queues.
+      A value of 0 means a single queue shared between all the handlers.
+      A value of 1 means that each handler has its own queue.</description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.caching</name>
+  <value>1073741823</value>
+    <description>Number of rows that we try to fetch when calling next
+    on a scanner if it is not served from (local, client) memory. This configuration
+    works together with hbase.client.scanner.max.result.size to try and use the
+    network efficiently. The default value is Integer.MAX_VALUE by default so that
+    the network will fill the chunk size defined by hbase.client.scanner.max.result.size
+    rather than be limited by a particular number of rows since the size of rows varies
+    table to table. If you know ahead of time that you will not require more than a certain
+    number of rows from a scan, this configuration should be set to that row limit via
+    Scan#setCaching. Higher caching values will enable faster scanners but will eat up more
+    memory and some calls of next may take longer and longer times when the cache is empty.
+    Do not set this value such that the time between invocations is greater than the scanner
+    timeout; i.e. hbase.client.scanner.timeout.period</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.minorcompaction.pagecache.drop</name>
+  <value>true</value>
+    <description>Specifies whether to drop pages read/written into the system page cache by
+      minor compactions. Setting it to true helps prevent minor compactions from
+      polluting the page cache, which is most beneficial on clusters with low
+      memory to storage ratio or very write heavy clusters. You may want to set it to
+      false under moderate to low write workload when bulk of the reads are
+      on the most recently written data.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.client.tcpnodelay</name>
+  <value>true</value>
+    <description>Set no delay on rpc socket connections.  See
+    http://docs.oracle.com/javase/1.5.0/docs/api/java/net/Socket.html#getTcpNoDelay()</description>
+</property>
+
+<property>
+  <name>hbase.table.lock.enable</name>
+  <value>false</value>
+    <description>Set to true to enable locking the table in zookeeper for schema change operations.
+    Table locking from master prevents concurrent schema modifications to corrupt table
+    state.</description>
+</property>
+
+<property>
+  <name>hbase.status.published</name>
+  <value>true</value>
+    <description>
+      This setting activates the publication by the master of the status of the region server.
+      When a region server dies and its recovery starts, the master will push this information
+      to the client application, to let them cut the connection immediately instead of waiting
+      for a timeout.
+    </description>
+</property>
+
+<property>
+  <name>hbase.replication.rpc.codec</name>
+  <value>org.apache.hadoop.hbase.codec.KeyValueCodecWithTags</value>
+  	<description>
+  		The codec that is to be used when replication is enabled so that
+  		the tags are also replicated. This is used along with HFileV3 which
+  		supports tags in them.  If tags are not used or if the hfile version used
+  		is HFileV2 then KeyValueCodec can be used as the replication codec. Note that
+  		using KeyValueCodecWithTags for replication when there are no tags causes no harm.
+  	</description>
+</property>
+
+</configuration>

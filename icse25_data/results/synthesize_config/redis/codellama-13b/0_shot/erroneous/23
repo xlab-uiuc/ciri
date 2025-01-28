@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'repl-backlog-size', 'disable-thp', 'unixsocketperm', 'replica-serve-stale-data', 'hz', 'maxmemory-clients'], 'reason': ['slowlog-max-len=-10 is not a valid value. It should be a positive integer.', 'repl-backlog-size=1mb is not a valid value. It should be a positive integer.', 'disable-thp=yes is not a valid value. It should be a boolean.', 'unixsocketperm=700 is not a valid value. It should be a positive integer.', 'replica-serve-stale-data=yes is not a valid value. It should be a boolean.', 'hz=10 is not a valid value. It should be a positive integer.', 'maxmemory-clients=1g is not a valid value. It should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'repl-backlog-size', 'disable-thp', 'unixsocketperm', 'replica-serve-stale-data', 'hz', 'maxmemory-clients'], 'reason': ['slowlog-max-len should be a positive integer', 'repl-backlog-size should be a positive integer', 'disable-thp should be a boolean', 'unixsocketperm should be a positive integer', 'replica-serve-stale-data should be a boolean', 'hz should be a positive integer', 'maxmemory-clients should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'repl-backlog-size', 'disable-thp', 'unixsocketperm', 'replica-serve-stale-data', 'hz', 'maxmemory-clients'], 'reason': ['slowlog-max-len should be a positive integer', 'repl-backlog-size should be a positive integer', 'disable-thp should be a boolean', 'unixsocketperm should be a positive integer', 'replica-serve-stale-data should be a boolean', 'hz should be a positive integer', 'maxmemory-clients should be a positive integer']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: slowlog-max-len	repl-backlog-size	disable-thp	unixsocketperm	replica-serve-stale-data	hz	maxmemory-clients
+[Ciri] Reason for slowlog-max-len: slowlog-max-len should be a positive integer
+[Ciri] Reason for repl-backlog-size: repl-backlog-size should be a positive integer
+[Ciri] Reason for disable-thp: disable-thp should be a boolean
+[Ciri] Reason for unixsocketperm: unixsocketperm should be a positive integer
+[Ciri] Reason for replica-serve-stale-data: replica-serve-stale-data should be a boolean
+[Ciri] Reason for hz: hz should be a positive integer
+[Ciri] Reason for maxmemory-clients: maxmemory-clients should be a positive integer

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfsync', 'oom-score-adj', 'rdb-save-incremental-fsync', 'dynamic-hz'], 'reason': ['appendfsync should be one of no, always, everysec, or everysec-delayed', 'oom-score-adj should be an integer between -1000 and 1000', 'rdb-save-incremental-fsync should be yes or no', 'dynamic-hz should be yes or no']}
+
+{'hasError': True, 'errParameter': ['replica-lazy-flush', 'aof-use-rdb-preamble', 'zset-max-listpack-value', 'hll-sparse-max-bytes', 'appendfsync', 'oom-score-adj', 'rdb-save-incremental-fsync', 'dynamic-hz'], 'reason': ['replica-lazy-flush=no is not a valid configuration', 'aof-use-rdb-preamble=yes is not a valid configuration', 'zset-max-listpack-value=32 is not a valid configuration', 'hll-sparse-max-bytes=1500 is not a valid configuration', 'appendfsync=everysec is not a valid configuration', 'oom-score-adj=no is not a valid configuration', 'rdb-save-incremental-fsync=yes is not a valid configuration', 'dynamic-hz=yes is not a valid configuration']}
+
+{'hasError': True, 'errParameter': ['replica-lazy-flush', 'aof-use-rdb-preamble', 'zset-max-listpack-value', 'hll-sparse-max-bytes', 'appendfsync', 'oom-score-adj', 'rdb-save-incremental-fsync', 'dynamic-hz'], 'reason': ['replica-lazy-flush is not a valid configuration directive.', 'aof-use-rdb-preamble is not a valid configuration directive.', 'zset-max-listpack-value is not a valid configuration directive.', 'hll-sparse-max-bytes is not a valid configuration directive.', 'appendfsync is not a valid configuration directive.', 'oom-score-adj is not a valid configuration directive.', 'rdb-save-incremental-fsync is not a valid configuration directive.', 'dynamic-hz is not a valid configuration directive.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: replica-lazy-flush	aof-use-rdb-preamble	zset-max-listpack-value	hll-sparse-max-bytes	appendfsync	oom-score-adj	rdb-save-incremental-fsync	dynamic-hz
+[Ciri] Reason for replica-lazy-flush: replica-lazy-flush is not a valid configuration directive.
+[Ciri] Reason for aof-use-rdb-preamble: aof-use-rdb-preamble=yes is not a valid configuration
+[Ciri] Reason for zset-max-listpack-value: zset-max-listpack-value=32 is not a valid configuration
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes=1500 is not a valid configuration
+[Ciri] Reason for appendfsync: appendfsync=everysec is not a valid configuration
+[Ciri] Reason for oom-score-adj: oom-score-adj is not a valid configuration directive.
+[Ciri] Reason for rdb-save-incremental-fsync: rdb-save-incremental-fsync is not a valid configuration directive.
+[Ciri] Reason for dynamic-hz: dynamic-hz is not a valid configuration directive.

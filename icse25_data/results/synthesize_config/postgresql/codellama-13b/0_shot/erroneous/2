@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'maintenance_work_mem', 'log_autovacuum_min_duration', 'vacuum_failsafe_age', 'wal_sender_timeout'], 'reason': ['autovacuum_work_mem must be greater than -1', 'maintenance_work_mem must be greater than -1', 'log_autovacuum_min_duration must be greater than -1', 'vacuum_failsafe_age must be greater than -1', 'wal_sender_timeout must be greater than -1']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'maintenance_work_mem', 'log_autovacuum_min_duration', 'vacuum_failsafe_age', 'wal_sender_timeout'], 'reason': ['autovacuum_work_mem should be a positive integer, not -2', 'maintenance_work_mem should be a positive integer, not 128MB', 'log_autovacuum_min_duration should be a positive integer, not 10min', 'vacuum_failsafe_age should be a positive integer, not 1600000000', 'wal_sender_timeout should be a positive integer, not 30s']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'maintenance_work_mem', 'log_autovacuum_min_duration', 'vacuum_failsafe_age', 'wal_sender_timeout'], 'reason': ['autovacuum_work_mem must be a positive integer.', 'maintenance_work_mem must be a positive integer.', 'log_autovacuum_min_duration must be a positive integer.', 'vacuum_failsafe_age must be a positive integer.', 'wal_sender_timeout must be a positive integer.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: autovacuum_work_mem	maintenance_work_mem	log_autovacuum_min_duration	vacuum_failsafe_age	wal_sender_timeout
+[Ciri] Reason for autovacuum_work_mem: autovacuum_work_mem must be a positive integer.
+[Ciri] Reason for maintenance_work_mem: maintenance_work_mem must be greater than -1
+[Ciri] Reason for log_autovacuum_min_duration: log_autovacuum_min_duration must be greater than -1
+[Ciri] Reason for vacuum_failsafe_age: vacuum_failsafe_age must be a positive integer.
+[Ciri] Reason for wal_sender_timeout: wal_sender_timeout should be a positive integer, not 30s

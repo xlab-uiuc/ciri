@@ -1,0 +1,18 @@
+Wrong shot number:
+[12, 2, 8]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.start.hour'], 'reason': ["The property 'hbase.offpeak.start.hour' has the value '-1' which is outside the valid range of 0 to 23."]}
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.start.hour'], 'reason': ["The property 'hbase.offpeak.start.hour' has a value of '-1' which is not a valid hour value. It should be an integer between 0 and 23, or -1 to disable off-peak hours."]}
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.start.hour'], 'reason': ["The property 'hbase.offpeak.start.hour' has the value '-1' which is out of the valid range. It should be an integer between 0 and 23, or -1 to disable off-peak hours."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.offpeak.start.hour
+[Ciri] Reason for hbase.offpeak.start.hour: The property 'hbase.offpeak.start.hour' has the value '-1' which is out of the valid range. It should be an integer between 0 and 23, or -1 to disable off-peak hours.

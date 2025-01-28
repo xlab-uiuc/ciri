@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['sslQuorum', 'sslQuorumReloadCertFiles', 'peerType'], 'reason': ["The 'sslQuorum' parameter is not applicable unless 'server.X' properties are defined for a quorum setup.", "The 'sslQuorumReloadCertFiles' parameter is not applicable without enabling 'sslQuorum'.", "The 'peerType' parameter is not recognized in ZooKeeper version 3.7.0 configuration. It seems to be an invalid or deprecated configuration parameter."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: sslQuorum	sslQuorumReloadCertFiles	peerType
+[Ciri] Reason for sslQuorum: The 'sslQuorum' parameter is not applicable unless 'server.X' properties are defined for a quorum setup.
+[Ciri] Reason for sslQuorumReloadCertFiles: The 'sslQuorumReloadCertFiles' parameter is not applicable without enabling 'sslQuorum'.
+[Ciri] Reason for peerType: The 'peerType' parameter is not recognized in ZooKeeper version 3.7.0 configuration. It seems to be an invalid or deprecated configuration parameter.

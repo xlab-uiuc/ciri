@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'replica-announce-ip'], 'reason': ['The cluster-announce-ip and replica-announce-ip parameters are not supported in Redis 7.0.0. You should use the cluster-announce-ip parameter instead.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'replica-announce-ip'], 'reason': ['cluster-announce-ip and replica-announce-ip are not supported in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'replica-announce-ip'], 'reason': ["The parameter 'cluster-announce-ip' is not supported in this version of Redis.", "The parameter 'replica-announce-ip' is not supported in this version of Redis."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-announce-ip	replica-announce-ip
+[Ciri] Reason for cluster-announce-ip: The cluster-announce-ip and replica-announce-ip parameters are not supported in Redis 7.0.0. You should use the cluster-announce-ip parameter instead.
+[Ciri] Reason for replica-announce-ip: The parameter 'replica-announce-ip' is not supported in this version of Redis.

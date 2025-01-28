@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['key-file', 'proxy-dial-timeout', 'discovery-fallback', 'enable-pprof'], 'reason': ["The 'key-file' path should not contain multiple forward slashes ('/') between directories.", "The 'proxy-dial-timeout' option is not available in etcd version 3.5.0.", "The 'discovery-fallback' option is not recognized in etcd version 3.5.0.", "The 'enable-pprof' option is not explicitly available as a configuration parameter in etcd version 3.5.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: key-file	proxy-dial-timeout	discovery-fallback	enable-pprof
+[Ciri] Reason for key-file: The 'key-file' path should not contain multiple forward slashes ('/') between directories.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' option is not available in etcd version 3.5.0.
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' option is not recognized in etcd version 3.5.0.
+[Ciri] Reason for enable-pprof: The 'enable-pprof' option is not explicitly available as a configuration parameter in etcd version 3.5.0.

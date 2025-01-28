@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.zerocopy.enabled', 'alluxio.web.threads'], 'reason': ["Property 'alluxio.user.streaming.zerocopy.enabled' should be set to 'true' or 'false'.", "Property 'alluxio.web.threads' should be set to a positive integer value greater than 0."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.zerocopy.enabled', 'alluxio.web.threads'], 'reason': ['Invalid value. Possible values are true or false.', 'Invalid value. The number of web threads should be greater than 0.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.zerocopy.enabled', 'alluxio.web.threads'], 'reason': ["Property 'alluxio.user.streaming.zerocopy.enabled' is not a valid property for Alluxio version 2.5.0.", "Property 'alluxio.web.threads' is not a valid property for Alluxio version 2.5.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.streaming.zerocopy.enabled	alluxio.web.threads
+[Ciri] Reason for alluxio.user.streaming.zerocopy.enabled: Invalid value. Possible values are true or false.
+[Ciri] Reason for alluxio.web.threads: Invalid value. The number of web threads should be greater than 0.

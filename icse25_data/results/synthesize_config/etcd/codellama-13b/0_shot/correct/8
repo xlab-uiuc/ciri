@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout'], 'reason': ['proxy-read-timeout and proxy-write-timeout must be greater than 0', 'proxy-write-timeout must be less than 2500']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-wals', 'proxy-write-timeout', 'proxy-read-timeout'], 'reason': ['heartbeat-interval should be an integer between 10 and 500', 'max-wals should be an integer between 1 and 1000', 'proxy-write-timeout should be an integer between 1000 and 30000', 'proxy-read-timeout should be an integer between 0 and 30000']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-wals'], 'reason': ['heartbeat-interval should be an integer between 100 and 500, inclusive', 'max-wals should be an integer between 1 and 10, inclusive']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-wals'], 'reason': ['heartbeat-interval must be greater than 0', 'max-wals must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-wals'], 'reason': ['heartbeat-interval must be greater than 0', 'max-wals must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout'], 'reason': ['proxy-read-timeout and proxy-write-timeout are not valid properties for etcd version 3.5.0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: heartbeat-interval	max-wals
+[Ciri] Reason for heartbeat-interval: heartbeat-interval must be greater than 0
+[Ciri] Reason for max-wals: max-wals must be greater than 0

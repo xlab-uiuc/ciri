@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'replica-lazy-flush', 'repl-diskless-sync-delay', 'lazyfree-lazy-user-del'], 'reason': ["In Redis 7.0, 'repl-backlog-size' should use a byte count like '1mb' instead of '1m'.", "'replica-lazy-flush' is not a valid configuration parameter in Redis 7.0 and should be removed.", "'repl-diskless-sync-delay' is not a valid configuration parameter in Redis 7.0 and should be removed.", "'lazyfree-lazy-user-del' is not a valid configuration parameter in Redis 7.0 and should be removed."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: repl-backlog-size	replica-lazy-flush	repl-diskless-sync-delay	lazyfree-lazy-user-del
+[Ciri] Reason for repl-backlog-size: In Redis 7.0, 'repl-backlog-size' should use a byte count like '1mb' instead of '1m'.
+[Ciri] Reason for replica-lazy-flush: 'replica-lazy-flush' is not a valid configuration parameter in Redis 7.0 and should be removed.
+[Ciri] Reason for repl-diskless-sync-delay: 'repl-diskless-sync-delay' is not a valid configuration parameter in Redis 7.0 and should be removed.
+[Ciri] Reason for lazyfree-lazy-user-del: 'lazyfree-lazy-user-del' is not a valid configuration parameter in Redis 7.0 and should be removed.

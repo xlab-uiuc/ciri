@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.min-block-size', 'dfs.ha.tail-edits.period.backoff-max', 'dfs.short.circuit.shared.memory.watcher.interrupt.check.ms', 'dfs.datanode.lock-reporting-threshold-ms', 'dfs.webhdfs.rest-csrf.browser-useragents-regex', 'dfs.xframe.value', 'dfs.balancer.keytab.file', 'dfs.block.invalidate.limit'], 'reason': ['dfs.namenode.fs-limits.min-block-size: The value should be a positive integer.', 'dfs.ha.tail-edits.period.backoff-max: The value should be a positive integer.', 'dfs.short.circuit.shared.memory.watcher.interrupt.check.ms: The value should be a positive integer.', 'dfs.datanode.lock-reporting-threshold-ms: The value should be a positive integer.', 'dfs.webhdfs.rest-csrf.browser-useragents-regex: The value should be a comma-separated list of regular expressions.', 'dfs.xframe.value: The value should be one of the following: DENY, SAMEORIGIN, ALLOW-FROM.', 'dfs.balancer.keytab.file: The value should be a valid file path.', 'dfs.block.invalidate.limit: The value should be a positive integer.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.namenode.fs-limits.min-block-size	dfs.ha.tail-edits.period.backoff-max	dfs.short.circuit.shared.memory.watcher.interrupt.check.ms	dfs.datanode.lock-reporting-threshold-ms	dfs.webhdfs.rest-csrf.browser-useragents-regex	dfs.xframe.value	dfs.balancer.keytab.file	dfs.block.invalidate.limit
+[Ciri] Reason for dfs.namenode.fs-limits.min-block-size: dfs.namenode.fs-limits.min-block-size: The value should be a positive integer.
+[Ciri] Reason for dfs.ha.tail-edits.period.backoff-max: dfs.ha.tail-edits.period.backoff-max: The value should be a positive integer.
+[Ciri] Reason for dfs.short.circuit.shared.memory.watcher.interrupt.check.ms: dfs.short.circuit.shared.memory.watcher.interrupt.check.ms: The value should be a positive integer.
+[Ciri] Reason for dfs.datanode.lock-reporting-threshold-ms: dfs.datanode.lock-reporting-threshold-ms: The value should be a positive integer.
+[Ciri] Reason for dfs.webhdfs.rest-csrf.browser-useragents-regex: dfs.webhdfs.rest-csrf.browser-useragents-regex: The value should be a comma-separated list of regular expressions.
+[Ciri] Reason for dfs.xframe.value: dfs.xframe.value: The value should be one of the following: DENY, SAMEORIGIN, ALLOW-FROM.
+[Ciri] Reason for dfs.balancer.keytab.file: dfs.balancer.keytab.file: The value should be a valid file path.
+[Ciri] Reason for dfs.block.invalidate.limit: dfs.block.invalidate.limit: The value should be a positive integer.

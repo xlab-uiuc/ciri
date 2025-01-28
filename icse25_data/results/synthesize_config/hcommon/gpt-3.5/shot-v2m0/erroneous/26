@@ -1,0 +1,12 @@
+Correct shot number:
+[13, 12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.priority.levels', 'fs.permissions.umask-mode'], 'reason': ["Property 'ipc.[port_number].scheduler.priority.levels' should not contain square brackets in the name.", "Property 'fs.permissions.umask-mode' has an incorrect value format. It should be in octal or symbolic format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].scheduler.priority.levels	fs.permissions.umask-mode
+[Ciri] Reason for ipc.[port_number].scheduler.priority.levels: Property 'ipc.[port_number].scheduler.priority.levels' should not contain square brackets in the name.
+[Ciri] Reason for fs.permissions.umask-mode: Property 'fs.permissions.umask-mode' has an incorrect value format. It should be in octal or symbolic format.

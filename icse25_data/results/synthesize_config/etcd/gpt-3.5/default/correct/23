@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 8, 7]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2'], 'reason': ["The property 'enable-v2' should not be used in etcd version 3.5.0 as it has been deprecated."]}
+
+{'hasError': True, 'errParameter': ['enable-v2'], 'reason': ["The property 'enable-v2' is set to 'true' which is not a valid value for etcd version 3.5.0. It should be set to 'false'."]}
+
+{'hasError': True, 'errParameter': ['enable-v2'], 'reason': ["The property 'enable-v2' is deprecated and should not be used in etcd version 3.5.0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: enable-v2
+[Ciri] Reason for enable-v2: The property 'enable-v2' is set to 'true' which is not a valid value for etcd version 3.5.0. It should be set to 'false'.

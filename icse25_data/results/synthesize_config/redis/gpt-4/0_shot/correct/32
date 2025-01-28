@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['jemalloc-bg-thread', 'enable-debug-command', 'set-proc-title'], 'reason': ["The correct parameter is 'jemalloc-bg-threads' (missing 's' at the end).", 'The parameter \'enable-debug-command\' does not exist. To disable debug commands, use \'rename-command DEBUG ""\'.', "The parameter 'set-proc-title' does not exist in Redis configuration."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: jemalloc-bg-thread	enable-debug-command	set-proc-title
+[Ciri] Reason for jemalloc-bg-thread: The correct parameter is 'jemalloc-bg-threads' (missing 's' at the end).
+[Ciri] Reason for enable-debug-command: The parameter 'enable-debug-command' does not exist. To disable debug commands, use 'rename-command DEBUG ""'.
+[Ciri] Reason for set-proc-title: The parameter 'set-proc-title' does not exist in Redis configuration.

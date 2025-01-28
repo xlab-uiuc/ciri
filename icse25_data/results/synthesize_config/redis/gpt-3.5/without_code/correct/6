@@ -1,0 +1,26 @@
+Wrong shot number:
+[5, 4, 8]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['oom-score-adj'], 'reason': ["The property 'oom-score-adj' has the value 'no' which is not a valid setting. It should be a numeric value."]}
+
+{'hasError': True, 'errParameter': ['appendfsync', 'oom-score-adj'], 'reason': ["The property 'appendfsync' has the value 'everysec' which is deprecated in Redis 7.0.0. Use 'always' instead.", "The property 'oom-score-adj' is not a valid configuration parameter in Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ["The property 'appendfsync' has the value 'everysec' which is deprecated in Redis 7.0.0. Use 'always' or 'no' instead."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['oom-score-adj'], 'reason': ["The property 'oom-score-adj' has the value 'no' which is not a valid value. It should be an integer value."]}
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ["The property 'appendfsync' has the value 'everysec' which is not within the accepted value {always, everysec, no}."]}
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ["The property 'appendfsync' has the value 'everysec' which is not within the accepted value {always, everysec, no}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: appendfsync
+[Ciri] Reason for appendfsync: The property 'appendfsync' has the value 'everysec' which is not within the accepted value {always, everysec, no}.

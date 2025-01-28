@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockfree', 'ftp.blocksize', 'hadoop.tags.system'], 'reason': ["Invalid property name 'ipc.[port_number].weighted-cost.lockfree'.", "Invalid property name 'ftp.blocksize'.", "Property 'hadoop.tags.system' has an incorrect 'usage' element."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockfree', 'ftp.blocksize', 'hadoop.tags.system'], 'reason': ["Invalid parameter name 'ipc.[port_number].weighted-cost.lockfree'.", "Invalid parameter name 'ftp.blocksize'.", "Usage tag 'usage' is not a valid tag for property 'hadoop.tags.system'."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockfree', 'ftp.blocksize', 'hadoop.tags.system'], 'reason': ['Invalid property name format: ipc.[port_number].weighted-cost.lockfree', 'Invalid property name format: ftp.blocksize', "Missing 'usage' tag for property 'hadoop.tags.system'"]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: ipc.[port_number].weighted-cost.lockfree	ftp.blocksize	hadoop.tags.system
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: Invalid property name format: ipc.[port_number].weighted-cost.lockfree
+[Ciri] Reason for ftp.blocksize: Invalid property name 'ftp.blocksize'.
+[Ciri] Reason for hadoop.tags.system: Property 'hadoop.tags.system' has an incorrect 'usage' element.

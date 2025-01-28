@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'tls-port', 'repl-disable-tcp-nodelay', 'enable-module-command', 'hash-max-listpack-entries', 'always-show-logo'], 'reason': ['port must be a number', 'tls-port must be a number', 'repl-disable-tcp-nodelay must be a boolean', 'enable-module-command must be a boolean', 'hash-max-listpack-entries must be a number', 'always-show-logo must be a boolean']}
+
+{'hasError': True, 'errParameter': ['port', 'tls-port', 'repl-disable-tcp-nodelay', 'enable-module-command', 'hash-max-listpack-entries', 'always-show-logo'], 'reason': ['port must be an integer', 'tls-port must be an integer', 'repl-disable-tcp-nodelay must be a boolean', 'enable-module-command must be a boolean', 'hash-max-listpack-entries must be an integer', 'always-show-logo must be a boolean']}
+
+{'hasError': True, 'errParameter': ['appendfilename', 'tls-port', 'repl-disable-tcp-nodelay', 'enable-module-command', 'hash-max-listpack-entries', 'always-show-logo'], 'reason': ['appendfilename: The value of this parameter is not a valid file name.', 'tls-port: The value of this parameter is not a valid port number.', 'repl-disable-tcp-nodelay: The value of this parameter is not a valid boolean value.', 'enable-module-command: The value of this parameter is not a valid boolean value.', 'hash-max-listpack-entries: The value of this parameter is not a valid integer value.', 'always-show-logo: The value of this parameter is not a valid boolean value.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: port	tls-port	repl-disable-tcp-nodelay	enable-module-command	hash-max-listpack-entries	always-show-logo
+[Ciri] Reason for port: port must be an integer
+[Ciri] Reason for tls-port: tls-port must be a number
+[Ciri] Reason for repl-disable-tcp-nodelay: repl-disable-tcp-nodelay must be a boolean
+[Ciri] Reason for enable-module-command: enable-module-command must be a boolean
+[Ciri] Reason for hash-max-listpack-entries: hash-max-listpack-entries must be an integer
+[Ciri] Reason for always-show-logo: always-show-logo must be a boolean

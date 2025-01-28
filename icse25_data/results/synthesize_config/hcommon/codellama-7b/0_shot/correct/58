@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.map.index.skip', 'ipc.[port_number].backoff.enable', 'hadoop.http.authentication.kerberos.keytab', 'ha.health-monitor.check-interval.ms', 'hadoop.security.java.secure.random.algorithm', 'hadoop.registry.secure', 'fs.adl.impl', 'fs.getspaceused.jitterMillis'], 'reason': ['io.map.index.skip should be a positive integer', 'ipc.[port_number].backoff.enable should be a boolean', 'hadoop.http.authentication.kerberos.keytab should be a valid file path', 'ha.health-monitor.check-interval.ms should be a positive integer', 'hadoop.security.java.secure.random.algorithm should be a valid algorithm', 'hadoop.registry.secure should be a boolean', 'fs.adl.impl should be a valid class name', 'fs.getspaceused.jitterMillis should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['io.map.index.skip'], 'reason': ['io.map.index.skip is not a valid property for hcommon version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['io.map.index.skip', 'ipc.[port_number].backoff.enable', 'hadoop.http.authentication.kerberos.keytab', 'ha.health-monitor.check-interval.ms', 'hadoop.security.java.secure.random.algorithm', 'hadoop.registry.secure', 'fs.adl.impl', 'fs.getspaceused.jitterMillis'], 'reason': ['io.map.index.skip should be an integer', 'ipc.[port_number].backoff.enable should be a boolean', 'hadoop.http.authentication.kerberos.keytab should be a valid file', 'ha.health-monitor.check-interval.ms should be an integer', 'hadoop.security.java.secure.random.algorithm should be a valid algorithm', 'hadoop.registry.secure should be a boolean', 'fs.adl.impl should be a valid class', 'fs.getspaceused.jitterMillis should be an integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: io.map.index.skip	ipc.[port_number].backoff.enable	hadoop.http.authentication.kerberos.keytab	ha.health-monitor.check-interval.ms	hadoop.security.java.secure.random.algorithm	hadoop.registry.secure	fs.adl.impl	fs.getspaceused.jitterMillis
+[Ciri] Reason for io.map.index.skip: io.map.index.skip should be an integer
+[Ciri] Reason for ipc.[port_number].backoff.enable: ipc.[port_number].backoff.enable should be a boolean
+[Ciri] Reason for hadoop.http.authentication.kerberos.keytab: hadoop.http.authentication.kerberos.keytab should be a valid file path
+[Ciri] Reason for ha.health-monitor.check-interval.ms: ha.health-monitor.check-interval.ms should be an integer
+[Ciri] Reason for hadoop.security.java.secure.random.algorithm: hadoop.security.java.secure.random.algorithm should be a valid algorithm
+[Ciri] Reason for hadoop.registry.secure: hadoop.registry.secure should be a boolean
+[Ciri] Reason for fs.adl.impl: fs.adl.impl should be a valid class
+[Ciri] Reason for fs.getspaceused.jitterMillis: fs.getspaceused.jitterMillis should be an integer

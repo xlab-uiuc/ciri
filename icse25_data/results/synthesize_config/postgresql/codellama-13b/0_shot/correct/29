@@ -1,0 +1,73 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_multixact_freeze_table_age', 'autovacuum_work_mem', 'jit_provider', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['vacuum_multixact_freeze_table_age must be an integer between 1 and 1000000000', 'autovacuum_work_mem must be an integer between -1 and 1048576', "jit_provider must be one of the following: 'llvmjit', 'llvmlto', 'jit', 'interpret', 'off'", 'effective_io_concurrency must be an integer between 1 and 1000', 'unix_socket_permissions must be an integer between 0 and 511']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'effective_io_concurrency', 'jit_provider', 'parallel_tuple_cost', 'unix_socket_permissions', 'vacuum_multixact_freeze_table_age'], 'reason': ['autovacuum_work_mem must be set to a value between 32 and 1024MB', 'effective_io_concurrency must be set to a value between 1 and 1024', "jit_provider must be set to a value between 'llvmjit', 'llvminterpreter', 'none'", 'parallel_tuple_cost must be set to a value between 0 and 1000000000', 'unix_socket_permissions must be set to a value between 0 and 511', 'vacuum_multixact_freeze_table_age must be set to a value between 100000 and 1000000000']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'effective_io_concurrency', 'jit_provider', 'parallel_tuple_cost', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be greater than -1.', 'effective_io_concurrency must be greater than 0.', "jit_provider must be one of the following: 'llvmjit', 'llvminit', 'none'.", 'parallel_tuple_cost must be greater than 0.', 'unix_socket_permissions must be between 0 and 777.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be greater than -1', 'parallel_tuple_cost must be greater than 0', 'effective_io_concurrency must be greater than 0', 'unix_socket_permissions must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'effective_io_concurrency', 'jit_provider', 'parallel_tuple_cost', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be a positive integer.', 'effective_io_concurrency must be a positive integer.', "jit_provider must be one of: 'llvmjit', 'llvmopt', 'builtin', 'none'.", 'parallel_tuple_cost must be a positive integer.', 'unix_socket_permissions must be an octal number.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost', 'jit_provider', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be a positive integer.', 'parallel_tuple_cost must be between 0 and 100000.', "jit_provider must be one of 'llvmjit', 'llvminit', 'none'.", 'effective_io_concurrency must be a positive integer.', 'unix_socket_permissions must be an octal number.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem should be a positive integer, but is set to -1', 'effective_io_concurrency should be a positive integer, but is set to 2', 'unix_socket_permissions should be a positive integer, but is set to 388']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost', 'effective_io_concurrency', 'jit_provider', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem should be a positive integer, not -1', 'parallel_tuple_cost should be a positive float, not 0.1', 'effective_io_concurrency should be a positive integer, not 2', "jit_provider should be one of 'llvmjit', 'llvminit', 'none', not 'llvmjit'", 'unix_socket_permissions should be an octal integer, not 388']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost', 'vacuum_multixact_freeze_table_age', 'jit_provider', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be a positive integer, or -1 to use the default value.', 'parallel_tuple_cost must be a positive real number.', 'vacuum_multixact_freeze_table_age must be a positive integer.', 'jit_provider must be a string.', 'effective_io_concurrency must be a positive integer.', 'unix_socket_permissions must be a positive integer.']}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be a positive integer.', 'parallel_tuple_cost must be a positive real number.', 'effective_io_concurrency must be a positive integer.', 'unix_socket_permissions must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost'], 'reason': ['autovacuum_work_mem should be a positive integer value.', 'parallel_tuple_cost should be a floating point value.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['jit_provider', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['jit_provider is not a valid value for this parameter.', 'effective_io_concurrency is not a valid value for this parameter.', 'unix_socket_permissions is not a valid value for this parameter.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost', 'vacuum_multixact_freeze_table_age', 'jit_provider', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be a positive integer, or -1 to use the default value.', 'parallel_tuple_cost must be a positive value.', 'vacuum_multixact_freeze_table_age must be a positive integer.', 'jit_provider must be a valid JIT provider.', 'effective_io_concurrency must be a positive integer.', 'unix_socket_permissions must be a valid Unix socket permissions value.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost', 'jit_provider', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be greater than -1.', 'parallel_tuple_cost must be greater than 0.0.', "jit_provider must be one of: 'llvmjit', 'llvmlto', 'interpret', 'none'.", 'effective_io_concurrency must be greater than 0.', 'unix_socket_permissions must be between 0 and 777.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be a positive integer.', 'parallel_tuple_cost must be a positive real number.', 'effective_io_concurrency must be a positive integer.', 'unix_socket_permissions must be an octal integer.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be a positive integer or -1', 'effective_io_concurrency must be a positive integer', 'unix_socket_permissions must be an octal number']}
+
+{'hasError': True, 'errParameter': ['vacuum_multixact_freeze_table_age', 'autovacuum_work_mem', 'jit_provider', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['vacuum_multixact_freeze_table_age must be between 10000000 and 2000000000', 'autovacuum_work_mem must be greater than -1', "jit_provider must be one of 'llvmjit', 'llvminit', 'none'", 'effective_io_concurrency must be greater than 0', 'unix_socket_permissions must be between 0 and 777']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be a positive integer.', 'effective_io_concurrency must be a positive integer.', 'unix_socket_permissions must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost', 'jit_provider', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be a positive integer, or -1 to use the default value.', 'parallel_tuple_cost must be a floating-point number.', "jit_provider must be one of: 'llvmjit', 'llvmopt', 'builtin'.", 'effective_io_concurrency must be a positive integer.', 'unix_socket_permissions must be an octal number.']}
+
+{'hasError': True, 'errParameter': ['effective_io_concurrency', 'autovacuum_work_mem', 'jit_provider', 'unix_socket_permissions'], 'reason': ['effective_io_concurrency: The value of this parameter is not within the valid range of 1 to 1000.', 'autovacuum_work_mem: The value of this parameter is not within the valid range of -1 to 1024.', "jit_provider: The value of this parameter is not within the valid range of 'llvmjit' or 'llvminterpreter'.", 'unix_socket_permissions: The value of this parameter is not within the valid range of 0 to 777.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be a positive integer or -1 to use the default value.', 'parallel_tuple_cost must be a positive value.', 'effective_io_concurrency must be a positive integer.', 'unix_socket_permissions must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost', 'vacuum_multixact_freeze_table_age', 'jit_provider', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be a positive integer.', 'parallel_tuple_cost must be a positive real number.', 'vacuum_multixact_freeze_table_age must be a positive integer.', 'jit_provider must be one of the following: llvmjit, llvminit, none.', 'effective_io_concurrency must be a positive integer.', 'unix_socket_permissions must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'parallel_tuple_cost', 'vacuum_multixact_freeze_table_age', 'jit_provider', 'effective_io_concurrency', 'unix_socket_permissions'], 'reason': ['autovacuum_work_mem must be a positive integer, or -1 to use the default value.', 'parallel_tuple_cost must be a positive value.', 'vacuum_multixact_freeze_table_age must be a positive integer.', 'jit_provider must be a valid JIT provider.', 'effective_io_concurrency must be a positive integer.', 'unix_socket_permissions must be a valid octal number.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: autovacuum_work_mem	parallel_tuple_cost	vacuum_multixact_freeze_table_age	jit_provider	effective_io_concurrency	unix_socket_permissions
+[Ciri] Reason for autovacuum_work_mem: autovacuum_work_mem must be a positive integer.
+[Ciri] Reason for parallel_tuple_cost: parallel_tuple_cost must be a positive real number.
+[Ciri] Reason for vacuum_multixact_freeze_table_age: vacuum_multixact_freeze_table_age must be a positive integer.
+[Ciri] Reason for jit_provider: jit_provider must be one of the following: llvmjit, llvminit, none.
+[Ciri] Reason for effective_io_concurrency: effective_io_concurrency must be a positive integer.
+[Ciri] Reason for unix_socket_permissions: unix_socket_permissions must be a valid octal number.

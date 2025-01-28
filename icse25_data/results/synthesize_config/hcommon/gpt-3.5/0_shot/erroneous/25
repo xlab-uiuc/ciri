@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.security.credential.provider.path', 'fs.s3a.connection.establish.timeout', 'fs.s3a.committer.name', 'ipc.client.kill.max', 'hadoop.http.cross-origin.allowed-headers', 'fs.permissions.umask-mode', 'fs.client.resolve.topology.enabled', 'ipc.client.bind.wildcard.addr'], 'reason': ["The property 'fs.s3a.security.credential.provider.path' is missing a required attribute.", "The property 'fs.s3a.connection.establish.timeout' is missing a required attribute.", "The property 'fs.s3a.committer.name' is missing a required attribute.", "The property 'ipc.client.kill.max' is missing a required attribute.", "The property 'hadoop.http.cross-origin.allowed-headers' is missing a required attribute.", "The property 'fs.permissions.umask-mode' is missing a required attribute.", "The property 'fs.client.resolve.topology.enabled' is missing a required attribute.", "The property 'ipc.client.bind.wildcard.addr' is missing a required attribute."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.name', 'ipc.client.bind.wildcard.addr'], 'reason': ["The property fs.s3a.committer.name has an incorrect value. It should be one of: 'file', 'directory', 'partitioned', 'magic'.", 'The property ipc.client.bind.wildcard.addr has an incorrect value. It should be a boolean value (true/false).']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.name', 'fs.permissions.umask-mode', 'fs.client.resolve.topology.enabled', 'ipc.client.bind.wildcard.addr'], 'reason': ["The value for property 'fs.s3a.committer.name' should be one of: 'file', 'directory', 'partitioned', 'magic'.", "The value for property 'fs.permissions.umask-mode' should be in octal format or symbolic format.", "The value for property 'fs.client.resolve.topology.enabled' should be a boolean value (true/false).", "The value for property 'ipc.client.bind.wildcard.addr' should be a boolean value (true/false)."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.name', 'ipc.client.bind.wildcard.addr'], 'reason': ["The property 'fs.s3a.committer.name' has an invalid value. Valid values are: 'file', 'directory', 'partitioned', 'magic'.", "The property 'ipc.client.bind.wildcard.addr' has an invalid value. It should be a boolean value (true/false)."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.name', 'ipc.client.bind.wildcard.addr'], 'reason': ["The value for property 'fs.s3a.committer.name' should be one of: 'file', 'directory', 'partitioned', 'magic'.", "The value for property 'ipc.client.bind.wildcard.addr' should be 'false' instead of 'true'."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.name', 'ipc.client.bind.wildcard.addr'], 'reason': ["The property 'fs.s3a.committer.name' has an invalid value. Valid values are: 'file', 'directory', 'partitioned', 'magic'.", "The property 'ipc.client.bind.wildcard.addr' has an invalid value. It should be a boolean value (true/false)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.committer.name	ipc.client.bind.wildcard.addr
+[Ciri] Reason for fs.s3a.committer.name: The property 'fs.s3a.committer.name' has an invalid value. Valid values are: 'file', 'directory', 'partitioned', 'magic'.
+[Ciri] Reason for ipc.client.bind.wildcard.addr: The property 'ipc.client.bind.wildcard.addr' has an invalid value. It should be a boolean value (true/false).

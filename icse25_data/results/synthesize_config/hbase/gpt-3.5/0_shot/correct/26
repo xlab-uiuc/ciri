@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.hregion.max.filesize', 'hbase.table.max.rowsize'], 'reason': ["The property 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min' is missing a usage example.", "The property 'hbase.hregion.max.filesize' is missing a description.", "The property 'hbase.table.max.rowsize' is missing a usage example."]}
+
+{'hasError': True, 'errParameter': ['hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.hregion.max.filesize', 'hbase.table.max.rowsize'], 'reason': ["The property 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min' should be 'hbase.hregion.percolumnfamilyflush.size.lower.bound.minimum' for HBase version 2.2.7.", "The property 'hbase.hregion.max.filesize' should have 'usage' tag removed as it is not a valid property attribute for HBase version 2.2.7.", "The property 'hbase.table.max.rowsize' should have 'usage' tag removed as it is not a valid property attribute for HBase version 2.2.7."]}
+
+{'hasError': True, 'errParameter': ['hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.hregion.max.filesize'], 'reason': ["The property 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min' is deprecated in HBase version 2.2.7.", "The property 'hbase.hregion.max.filesize' is deprecated in HBase version 2.2.7."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.hregion.percolumnfamilyflush.size.lower.bound.min	hbase.hregion.max.filesize	hbase.table.max.rowsize
+[Ciri] Reason for hbase.hregion.percolumnfamilyflush.size.lower.bound.min: The property 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min' should be 'hbase.hregion.percolumnfamilyflush.size.lower.bound.minimum' for HBase version 2.2.7.
+[Ciri] Reason for hbase.hregion.max.filesize: The property 'hbase.hregion.max.filesize' should have 'usage' tag removed as it is not a valid property attribute for HBase version 2.2.7.
+[Ciri] Reason for hbase.table.max.rowsize: The property 'hbase.table.max.rowsize' should have 'usage' tag removed as it is not a valid property attribute for HBase version 2.2.7.

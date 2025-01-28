@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['effective_cache_size', 'autovacuum_work_mem'], 'reason': ["The 'effective_cache_size' should generally be set to a value higher than 'shared_buffers' to effectively use the memory for caching.", "The 'autovacuum_work_mem' value of -2 is not valid. It should be set to a positive integer to specify the maximum amount of memory to be used by each autovacuum worker process, or -1 to allow the system to determine the value dynamically."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: effective_cache_size	autovacuum_work_mem
+[Ciri] Reason for effective_cache_size: The 'effective_cache_size' should generally be set to a value higher than 'shared_buffers' to effectively use the memory for caching.
+[Ciri] Reason for autovacuum_work_mem: The 'autovacuum_work_mem' value of -2 is not valid. It should be set to a positive integer to specify the maximum amount of memory to be used by each autovacuum worker process, or -1 to allow the system to determine the value dynamically.

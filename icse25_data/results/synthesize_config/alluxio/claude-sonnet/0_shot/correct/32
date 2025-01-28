@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.worker.timeout=1sec', 'alluxio.user.network.streaming.keepalive.timeout=30sec'], 'reason': ["The property 'alluxio.job.master.worker.timeout' expects a duration value in the format '<value><unit>', where value is a non-negative integer and unit is one of 'ms', 's', 'm', 'h', or 'd'. The value '1sec' is invalid because the unit 'sec' is not recognized.", "The property 'alluxio.user.network.streaming.keepalive.timeout' expects a duration value in the format '<value><unit>', where value is a non-negative integer and unit is one of 'ms', 's', 'm', 'h', or 'd'. The value '30sec' is invalid because the unit 'sec' is not recognized."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.worker.timeout=1sec	alluxio.user.network.streaming.keepalive.timeout=30sec
+[Ciri] Reason for alluxio.job.master.worker.timeout=1sec: The property 'alluxio.job.master.worker.timeout' expects a duration value in the format '<value><unit>', where value is a non-negative integer and unit is one of 'ms', 's', 'm', 'h', or 'd'. The value '1sec' is invalid because the unit 'sec' is not recognized.
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.timeout=30sec: The property 'alluxio.user.network.streaming.keepalive.timeout' expects a duration value in the format '<value><unit>', where value is a non-negative integer and unit is one of 'ms', 's', 'm', 'h', or 'd'. The value '30sec' is invalid because the unit 'sec' is not recognized.

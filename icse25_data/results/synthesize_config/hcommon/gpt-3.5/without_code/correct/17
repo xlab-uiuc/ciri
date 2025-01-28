@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 7, 8]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout'], 'reason': ["The property 'hadoop.security.groups.shell.command.timeout' has the value '1s' which is not in the correct format. It should be expressed in seconds without units (e.g., 10 for 10 seconds)."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout'], 'reason': ["The property 'hadoop.security.groups.shell.command.timeout' has the value '1s' which is not in the correct format. It should be expressed in seconds without the 's' suffix."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout'], 'reason': ["The property 'hadoop.security.groups.shell.command.timeout' has the value '1s' which should be specified in seconds without the 's' suffix."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: The property 'hadoop.security.groups.shell.command.timeout' has the value '1s' which is not in the correct format. It should be expressed in seconds without the 's' suffix.

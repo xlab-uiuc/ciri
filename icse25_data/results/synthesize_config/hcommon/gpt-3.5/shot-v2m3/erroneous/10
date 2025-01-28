@@ -1,0 +1,15 @@
+Wrong shot number:
+[11, 12, 15]
+
+Correct shot number:
+[10, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.buffer.dir', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The property 'fs.s3a.buffer.dir' has an invalid value '/\\hadoop/s3a'. The value should not contain special characters.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '-1' which is out of the valid range for capacity units."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.buffer.dir	fs.s3a.s3guard.ddb.table.capacity.write
+[Ciri] Reason for fs.s3a.buffer.dir: The property 'fs.s3a.buffer.dir' has an invalid value '/\hadoop/s3a'. The value should not contain special characters.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '-1' which is out of the valid range for capacity units.

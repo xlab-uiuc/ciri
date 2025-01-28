@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_PATH', 'CSRF_COOKIE_HTTPONLY'], 'reason': ['The CSRF_COOKIE_PATH should not contain multiple consecutive slashes (//) as it can lead to security vulnerabilities. It should be a single slash (/) or an empty string for setting it to the root path.', 'Setting CSRF_COOKIE_HTTPONLY to False is not recommended as it can make your application vulnerable to certain types of attacks, such as Cross-Site Scripting (XSS) attacks. It is generally recommended to keep this setting as True (the default value) for better security.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: CSRF_COOKIE_PATH	CSRF_COOKIE_HTTPONLY
+[Ciri] Reason for CSRF_COOKIE_PATH: The CSRF_COOKIE_PATH should not contain multiple consecutive slashes (//) as it can lead to security vulnerabilities. It should be a single slash (/) or an empty string for setting it to the root path.
+[Ciri] Reason for CSRF_COOKIE_HTTPONLY: Setting CSRF_COOKIE_HTTPONLY to False is not recommended as it can make your application vulnerable to certain types of attacks, such as Cross-Site Scripting (XSS) attacks. It is generally recommended to keep this setting as True (the default value) for better security.

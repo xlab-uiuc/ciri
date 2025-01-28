@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.volumes.replica-add.threadpool.size', 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec'], 'reason': ["The value for 'dfs.datanode.volumes.replica-add.threadpool.size' should be an integer representing the maximum number of threads. The provided value '0.1' is not a valid integer.", "The description for 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec' mentions a default value of 0 indicates that throttling is disabled, but the provided value is '-1'. This seems to be a contradiction or a mistake, as '-1' is typically used to indicate no limit in other configurations, but the description does not account for this value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.volumes.replica-add.threadpool.size	dfs.image.transfer-bootstrap-standby.bandwidthPerSec
+[Ciri] Reason for dfs.datanode.volumes.replica-add.threadpool.size: The value for 'dfs.datanode.volumes.replica-add.threadpool.size' should be an integer representing the maximum number of threads. The provided value '0.1' is not a valid integer.
+[Ciri] Reason for dfs.image.transfer-bootstrap-standby.bandwidthPerSec: The description for 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec' mentions a default value of 0 indicates that throttling is disabled, but the provided value is '-1'. This seems to be a contradiction or a mistake, as '-1' is typically used to indicate no limit in other configurations, but the description does not account for this value.

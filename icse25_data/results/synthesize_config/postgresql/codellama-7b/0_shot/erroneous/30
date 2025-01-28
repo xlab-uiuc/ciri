@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_line_prefix'], 'reason': ['The value of log_line_prefix is not a valid format.']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'max_connections', 'log_connections', 'geqo_effort', 'log_line_prefix', 'vacuum_defer_cleanup_age', 'hot_standby', 'stats_fetch_consistency'], 'reason': ['listen_addresses must be a list of strings', 'max_connections must be a positive integer', 'log_connections must be a boolean', 'geqo_effort must be a positive integer', 'log_line_prefix must be a string', 'vacuum_defer_cleanup_age must be a positive integer', 'hot_standby must be a boolean', 'stats_fetch_consistency must be a string']}
+
+{'hasError': True, 'errParameter': ['log_line_prefix'], 'reason': ['The value of log_line_prefix is not a valid value. The value must be a string.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: log_line_prefix
+[Ciri] Reason for log_line_prefix: The value of log_line_prefix is not a valid value. The value must be a string.

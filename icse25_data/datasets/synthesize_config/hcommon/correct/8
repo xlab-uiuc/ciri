@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.instrumentation.requires.admin</name>
+  <value>false</value>
+  <description>
+    Indicates if administrator ACLs are required to access
+    instrumentation servlets (JMX, METRICS, CONF, STACKS).
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.posix.attr.gid.name</name>
+  <value>gidNumber</value>
+  <description>
+    The attribute of posixAccount indicating the group id.
+  </description>
+</property>
+
+<property>
+  <name>io.erasurecode.codec.rs.rawcoders</name>
+  <value>rs_native</value>
+  <description>
+    Comma separated raw coder implementations for the rs codec. The earlier
+    factory is prior to followings in case of failure of creating raw coders.
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.viewfs.impl</name>
+  <value>org.apache.hadoop.fs.viewfs.ViewFs</value>
+  <description>The AbstractFileSystem for view file system for viewfs: uris
+  (ie client side mount table:).</description>
+</property>
+
+<property>
+  <name>fs.s3a.connection.timeout</name>
+  <value>400000</value>
+  <description>Socket connection timeout in milliseconds.</description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.ddb.table.capacity.write</name>
+  <value>-1</value>
+  <description>
+    Provisioned throughput requirements for write operations in terms of
+    capacity units for the DynamoDB table.
+    If set to 0 (the default), new tables are created with "per-request" capacity.
+    Refer to related configuration option fs.s3a.s3guard.ddb.table.capacity.read
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.secure</name>
+  <value>true</value>
+    <description>
+      Key to set if the registry is secure. Turning it on
+      changes the permissions policy from "open access"
+      to restrictions on kerberos with the option of
+      a user adding one or more auth key pairs down their
+      own tree.
+    </description>
+</property>
+
+<property>
+  <name>fs.adl.oauth2.access.token.provider.type</name>
+  <value>ClientCredential</value>
+    <description>
+      Defines Azure Active Directory OAuth2 access token provider type.
+      Supported types are ClientCredential, RefreshToken, MSI, DeviceCode,
+      and Custom.
+      The ClientCredential type requires property fs.adl.oauth2.client.id,
+      fs.adl.oauth2.credential, and fs.adl.oauth2.refresh.url.
+      The RefreshToken type requires property fs.adl.oauth2.client.id and
+      fs.adl.oauth2.refresh.token.
+      The MSI type reads optional property fs.adl.oauth2.msi.port, if specified.
+      The DeviceCode type requires property
+      fs.adl.oauth2.devicecode.clientapp.id.
+      The Custom type requires property fs.adl.oauth2.access.token.provider.
+    </description>
+</property>
+
+</configuration>

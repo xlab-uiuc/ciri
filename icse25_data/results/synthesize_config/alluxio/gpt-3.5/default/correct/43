@@ -1,0 +1,18 @@
+Wrong shot number:
+[11, 10, 8]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.gcs.credential.path'], 'reason': ["The property 'fs.gcs.credential.path' is not a valid property for Alluxio version 2.5.0."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes'], 'reason': ["The property 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes' has the value '1MB' which should be specified in bytes. Consider using a numeric value with the appropriate unit (e.g., '1048576' for 1MB)."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes'], 'reason': ["The property 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes' has the value '1MB' which should be specified in bytes. Consider using a numeric value instead."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.block.avoid.eviction.policy.reserved.size.bytes
+[Ciri] Reason for alluxio.user.block.avoid.eviction.policy.reserved.size.bytes: The property 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes' has the value '1MB' which should be specified in bytes. Consider using a numeric value with the appropriate unit (e.g., '1048576' for 1MB).

@@ -1,0 +1,18 @@
+Wrong shot number:
+[7, 5, 8]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['session_replication_role'], 'reason': ["The property 'session_replication_role' has the value 'origin' which is not within the accepted value {replica, local, remote_write}. 'origin' is not a valid value."]}
+
+{'hasError': True, 'errParameter': ['session_replication_role'], 'reason': ["The property 'session_replication_role' has the value 'origin' which is not within the accepted value {replica, local, remote_write, local_write}."]}
+
+{'hasError': True, 'errParameter': ['session_replication_role'], 'reason': ["The value 'origin' for property 'session_replication_role' is not valid. Valid values are 'replica' or 'local'. 'origin' is not a valid option."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: session_replication_role
+[Ciri] Reason for session_replication_role: The property 'session_replication_role' has the value 'origin' which is not within the accepted value {replica, local, remote_write}. 'origin' is not a valid value.

@@ -1,0 +1,37 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.timeout.duration', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.client.cache.timeout.duration should be a positive integer', 'alluxio.user.network.rpc.max.inbound.message.size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.timeout.duration', 'alluxio.master.embedded.journal.addresses', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.client.cache.timeout.duration should be a positive integer', 'alluxio.master.embedded.journal.addresses should be a comma-separated list of host:port pairs', 'alluxio.user.network.rpc.max.inbound.message.size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.timeout.duration'], 'reason': ['alluxio.user.client.cache.timeout.duration should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.timeout.duration', 'alluxio.master.embedded.journal.addresses', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.client.cache.timeout.duration should be a positive integer', 'alluxio.master.embedded.journal.addresses should be a comma-separated list of host:port pairs', 'alluxio.user.network.rpc.max.inbound.message.size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.timeout.duration', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.client.cache.timeout.duration should be a positive integer, but it is -1', 'alluxio.user.network.rpc.max.inbound.message.size should be a positive integer, but it is 1MB']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['The value of alluxio.user.network.rpc.max.inbound.message.size is not a valid integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.timeout.duration', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.client.cache.timeout.duration should be a positive integer', 'alluxio.user.network.rpc.max.inbound.message.size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['The value of alluxio.user.network.rpc.max.inbound.message.size is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.addresses'], 'reason': ['The property alluxio.master.embedded.journal.addresses is not supported in version 2.5.0. Please check the documentation for the correct properties to use.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.timeout.duration', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.client.cache.timeout.duration is not a valid duration format. The correct format is 100ms, 1s, 1m, 1h, 1d, 1M, 1y. For example, 100ms means 100 milliseconds.', 'alluxio.user.network.rpc.max.inbound.message.size is not a valid size format. The correct format is 100B, 100KB, 100MB, 100GB, 100TB. For example, 100KB means 100 kilobytes.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.timeout.duration', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.client.cache.timeout.duration must be a positive integer', 'alluxio.user.network.rpc.max.inbound.message.size must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.timeout.duration', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.client.cache.timeout.duration should be a positive integer', 'alluxio.user.network.rpc.max.inbound.message.size should be a positive integer']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.client.cache.timeout.duration	alluxio.user.network.rpc.max.inbound.message.size
+[Ciri] Reason for alluxio.user.client.cache.timeout.duration: alluxio.user.client.cache.timeout.duration should be a positive integer
+[Ciri] Reason for alluxio.user.network.rpc.max.inbound.message.size: alluxio.user.network.rpc.max.inbound.message.size should be a positive integer

@@ -1,0 +1,19 @@
+Wrong shot number:
+[1, 14, 6]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'fs.azure.sas.expiry.period'], 'reason': ["The property 'fs.defaultFS' has the value 'ciri' which is not a valid URI.", "The property 'fs.azure.sas.expiry.period' has the value '180d' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'fs.azure.sas.expiry.period'], 'reason': ["The property 'fs.defaultFS' has the value 'ciri' which is not a valid URI.", "The property 'fs.azure.sas.expiry.period' has the value '180d' which is not of the correct type. It should be specified in milliseconds or with valid suffixes like 'ms', 's', 'm', 'h', 'd'."]}
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'fs.azure.sas.expiry.period'], 'reason': ["The property 'fs.defaultFS' has the value 'ciri' which is not a valid URI.", "The property 'fs.azure.sas.expiry.period' has the value '180d' which is not of the correct type. It should be specified in milliseconds or with a valid time suffix (ms, s, m, h, d)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.defaultFS	fs.azure.sas.expiry.period
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has the value 'ciri' which is not a valid URI.
+[Ciri] Reason for fs.azure.sas.expiry.period: The property 'fs.azure.sas.expiry.period' has the value '180d' which is not of the correct type. It should be specified in milliseconds or with valid suffixes like 'ms', 's', 'm', 'h', 'd'.

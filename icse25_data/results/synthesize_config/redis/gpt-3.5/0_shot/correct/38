@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'lazyfree-lazy-server-del', 'lazyfree-lazy-expire'], 'reason': ["'daemonize' parameter is not supported in Redis 7.0.0.", "'lazyfree-lazy-server-del' parameter is not supported in Redis 7.0.0.", "'lazyfree-lazy-expire' parameter is not supported in Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['daemonize', 'lazyfree-lazy-server-del', 'lazyfree-lazy-expire'], 'reason': ["'daemonize' parameter is not supported in Redis 7.0.0", "'lazyfree-lazy-server-del' parameter is not valid in Redis 7.0.0", "'lazyfree-lazy-expire' parameter is not valid in Redis 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['daemonize', 'stream-node-max-entries', 'cluster-node-timeout', 'cluster-config-file', 'lazyfree-lazy-server-del', 'lazyfree-lazy-expire', 'hash-max-listpack-entries'], 'reason': ["The 'daemonize' parameter is not a valid configuration option in Redis 7.0.0.", "The 'stream-node-max-entries' parameter is not a valid configuration option in Redis 7.0.0.", "The 'cluster-node-timeout' parameter is not a valid configuration option in Redis 7.0.0.", "The 'cluster-config-file' parameter is not a valid configuration option in Redis 7.0.0.", "The 'lazyfree-lazy-server-del' parameter is not a valid configuration option in Redis 7.0.0.", "The 'lazyfree-lazy-expire' parameter is not a valid configuration option in Redis 7.0.0.", "The 'hash-max-listpack-entries' parameter is not a valid configuration option in Redis 7.0.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: daemonize	lazyfree-lazy-server-del	lazyfree-lazy-expire
+[Ciri] Reason for daemonize: 'daemonize' parameter is not supported in Redis 7.0.0
+[Ciri] Reason for lazyfree-lazy-server-del: 'lazyfree-lazy-server-del' parameter is not supported in Redis 7.0.0.
+[Ciri] Reason for lazyfree-lazy-expire: 'lazyfree-lazy-expire' parameter is not supported in Redis 7.0.0.

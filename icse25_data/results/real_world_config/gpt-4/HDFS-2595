@@ -1,0 +1,17 @@
+Wrong shot number:
+[2, 15, 4]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.azure.user.agent.prefix', 'fs.azure.secure.mode', 'ipc.client.tcpnodelay', 'fs.default.name'], 'reason': ["The property 'fs.azure.user.agent.prefix' should not contain 'unknown' as its value. It is intended to be customized to identify the application or service.", "The property 'fs.azure.secure.mode' is specific to Azure and should not be included without Azure-related configurations.", "The property 'ipc.client.tcpnodelay' is incorrectly documented with usage instructions instead of a description of its purpose and effects.", "The property 'fs.default.name' is deprecated and should not be used. The recommended property to use is 'fs.defaultFS'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.azure.user.agent.prefix	fs.azure.secure.mode	ipc.client.tcpnodelay	fs.default.name
+[Ciri] Reason for fs.azure.user.agent.prefix: The property 'fs.azure.user.agent.prefix' should not contain 'unknown' as its value. It is intended to be customized to identify the application or service.
+[Ciri] Reason for fs.azure.secure.mode: The property 'fs.azure.secure.mode' is specific to Azure and should not be included without Azure-related configurations.
+[Ciri] Reason for ipc.client.tcpnodelay: The property 'ipc.client.tcpnodelay' is incorrectly documented with usage instructions instead of a description of its purpose and effects.
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' is deprecated and should not be used. The recommended property to use is 'fs.defaultFS'.

@@ -1,0 +1,26 @@
+Wrong shot number:
+[2, 4, 1]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention'], 'reason': ["The property 'auto-compaction-retention' has the value '3' which is less than the minimum value '4'."]}
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode'], 'reason': ["The property 'auto-compaction-mode' has the value 'periodic' which is not one of the allowed values: 'revision', 'physical'."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-tls'], 'reason': ["The property 'auto-tls' has the value 'true' which is not of the correct type String."]}
+
+{'hasError': True, 'errParameter': ['auto-tls'], 'reason': ["The property 'auto-tls' has the value 'true' which is not of the correct type Boolean."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: auto-tls
+[Ciri] Reason for auto-tls: The property 'auto-tls' has the value 'true' which is not of the correct type Boolean.

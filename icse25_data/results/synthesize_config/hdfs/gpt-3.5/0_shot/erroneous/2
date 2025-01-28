@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.replication', 'dfs.namenode.available-space-block-placement-policy.balanced-space-preference-fraction', 'dfs.disk.balancer.block.tolerance.percent'], 'reason': ['The value for dfs.replication should be an integer, not a float.', 'The value for dfs.namenode.available-space-block-placement-policy.balanced-space-preference-fraction should be a float between 0 and 1, noninclusive.', 'The value for dfs.disk.balancer.block.tolerance.percent should be an integer.']}
+
+{'hasError': True, 'errParameter': ['dfs.replication', 'dfs.disk.balancer.block.tolerance.percent'], 'reason': ['The value for dfs.replication should be an integer, not a float.', 'The value for dfs.disk.balancer.block.tolerance.percent should be an integer, not a float.']}
+
+{'hasError': True, 'errParameter': ['dfs.replication', 'dfs.disk.balancer.block.tolerance.percent'], 'reason': ['The value for dfs.replication should be an integer, but it is set to a floating-point number (-5.5).', 'The value for dfs.disk.balancer.block.tolerance.percent should be an integer, but it is set to a floating-point number (1).']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.replication	dfs.disk.balancer.block.tolerance.percent
+[Ciri] Reason for dfs.replication: The value for dfs.replication should be an integer, but it is set to a floating-point number (-5.5).
+[Ciri] Reason for dfs.disk.balancer.block.tolerance.percent: The value for dfs.disk.balancer.block.tolerance.percent should be an integer, but it is set to a floating-point number (1).

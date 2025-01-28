@@ -1,0 +1,19 @@
+Wrong shot number:
+[5, 3, 8]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_count', 'default_toast_compression'], 'reason': ["The property 'tcp_keepalives_count' has a negative value which is not allowed. It should be a positive integer.", "The property 'default_toast_compression' has the value 'pglz' which is not within the accepted value {none,pglz}."]}
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_count', 'default_toast_compression'], 'reason': ["The property 'tcp_keepalives_count' has a negative value which is not allowed.", "The property 'default_toast_compression' has the value 'pglz' which is not within the accepted value {plain, compressed}."]}
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_count', 'default_toast_compression'], 'reason': ["The property 'tcp_keepalives_count' has a negative value which is not valid.", "The property 'default_toast_compression' has the value 'pglz' which is not within the accepted value {none,pglz,pglz_compressor}."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tcp_keepalives_count	default_toast_compression
+[Ciri] Reason for tcp_keepalives_count: The property 'tcp_keepalives_count' has a negative value which is not valid.
+[Ciri] Reason for default_toast_compression: The property 'default_toast_compression' has the value 'pglz' which is not within the accepted value {plain, compressed}.

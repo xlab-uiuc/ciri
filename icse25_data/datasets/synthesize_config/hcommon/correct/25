@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.bind.user</name>
+  <value>xdsuper</value>
+  <description>
+    The distinguished name of the user to bind as when connecting to the LDAP
+    server. This may be left blank if the LDAP server supports anonymous binds.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.bind.password.file</name>
+  <value>/valid/file1</value>
+  <description>
+    The path to a file containing the password of the bind user. If
+    the password is not configured in credential providers and the property
+    hadoop.security.group.mapping.ldap.bind.password is not set,
+    LDAPGroupsMapping reads password from the file.
+
+    IMPORTANT: This file should be readable only by the Unix user running
+    the daemons and should be a local file.
+  </description>
+</property>
+
+<property>
+  <name>io.erasurecode.codec.rs-legacy.rawcoders</name>
+  <value>rs-legacy_java</value>
+  <description>
+    Comma separated raw coder implementations for the rs-legacy codec. The earlier
+    factory is prior to followings in case of failure of creating raw coders.
+  </description>
+</property>
+
+<property>
+  <name>io.mapfile.bloom.error.rate</name>
+  <value>0.0025</value>
+  <description>The rate of false positives in BloomFilter-s used in BloomMapFile.
+  As this value decreases, the size of BloomFilter-s increases exponentially. This
+  value is the probability of encountering false positives (default is 0.5%).
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].scheduler.priority.levels</name>
+  <value>4</value>
+  <description>How many priority levels to use within the scheduler and call
+    queue. This property applies to RpcScheduler and CallQueue.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds</name>
+  <value>10s,20s,30s,40s</value>
+  <description>The response time thresholds, as time durations, for each
+    priority queue. If the average response time for a queue is above this
+    threshold, backoff will occur in lower priority queues. This should be a
+    comma-separated list of length equal to the number of priority levels.
+    Threshold increases by 10s per level (e.g., for 4 levels: 10s,20s,30s,40s)
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.key.default.bitlength</name>
+  <value>256</value>
+  <description>
+    The length (bits) of keys we want the KeyProvider to produce. Key length
+    defines the upper-bound on an algorithm's security, ideally, it would
+    coincide with the lower-bound on an algorithm's security.
+  </description>
+</property>
+
+<property>
+  <name>adl.http.timeout</name>
+  <value>-1</value>
+    <description>
+      Base timeout (in milliseconds) for HTTP requests from the ADL SDK. Values
+      of zero or less cause the SDK default to be used instead.
+    </description>
+</property>
+
+</configuration>

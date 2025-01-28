@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'ipc.[port_number].identity-provider.impl', 'ipc.[port_number].weighted-cost.response'], 'reason': ["The value '0mm' for 'hadoop.security.groups.shell.command.timeout' is invalid. It should be a valid time duration like '0s', '10s', '1m', etc.", "The property name 'ipc.[port_number].identity-provider.impl' is incorrect. It should not contain '[port_number]' as a placeholder.", "The property name 'ipc.[port_number].weighted-cost.response' is incorrect. It should not contain '[port_number]' as a placeholder."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout	ipc.[port_number].identity-provider.impl	ipc.[port_number].weighted-cost.response
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: The value '0mm' for 'hadoop.security.groups.shell.command.timeout' is invalid. It should be a valid time duration like '0s', '10s', '1m', etc.
+[Ciri] Reason for ipc.[port_number].identity-provider.impl: The property name 'ipc.[port_number].identity-provider.impl' is incorrect. It should not contain '[port_number]' as a placeholder.
+[Ciri] Reason for ipc.[port_number].weighted-cost.response: The property name 'ipc.[port_number].weighted-cost.response' is incorrect. It should not contain '[port_number]' as a placeholder.

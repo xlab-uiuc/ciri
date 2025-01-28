@@ -1,0 +1,34 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['protected-mode', 'pidfile', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['protected-mode must be either yes or no', 'pidfile must be a valid file path', 'oom-score-adj-values must be a list of integers', 'proc-title-template must be a valid template', 'stop-writes-on-bgsave-error must be either yes or no']}
+
+{'hasError': True, 'errParameter': ['protected-mode', 'pidfile', 'tls-ca-cert-file', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['protected-mode must be one of yes, no, or best-effort', 'pidfile must be a valid file path', 'tls-ca-cert-file must be a valid file path', 'tls-port must be a valid port number', 'oom-score-adj-values must be a list of integers', 'proc-title-template must be a valid template', 'stop-writes-on-bgsave-error must be one of yes, no, or always']}
+
+{'hasError': True, 'errParameter': ['protected-mode', 'enable-module-command', 'oom-score-adj-values', 'proc-title-template'], 'reason': ['protected-mode must be one of [yes, no, ask]', 'enable-module-command must be one of [yes, no]', 'oom-score-adj-values must be a list of integers', 'proc-title-template must be a string']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['protected-mode', 'pidfile', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['protected-mode must be either yes or no', 'pidfile must be a valid file path', 'oom-score-adj-values must be a list of integers', 'proc-title-template must be a valid template', 'stop-writes-on-bgsave-error must be either yes or no']}
+
+{'hasError': True, 'errParameter': ['protected-mode', 'enable-module-command', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['protected-mode is not a valid parameter for redis version 7.0.0', 'enable-module-command is not a valid parameter for redis version 7.0.0', 'oom-score-adj-values is not a valid parameter for redis version 7.0.0', 'proc-title-template is not a valid parameter for redis version 7.0.0', 'stop-writes-on-bgsave-error is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['protected-mode', 'pidfile', 'tls-ca-cert-file', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['protected-mode must be either yes or no', 'pidfile must be a valid file path', 'tls-ca-cert-file must be a valid file path', 'tls-port must be a valid port number', 'oom-score-adj-values must be a list of integers', 'proc-title-template must be a valid template', 'stop-writes-on-bgsave-error must be either yes or no']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['protected-mode', 'enable-module-command', 'oom-score-adj-values', 'proc-title-template'], 'reason': ['protected-mode must be either yes or no', 'enable-module-command must be either yes or no', 'oom-score-adj-values must be a list of integers', 'proc-title-template must be a string']}
+
+{'hasError': True, 'errParameter': ['protected-mode', 'pidfile', 'tls-ca-cert-file', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['protected-mode must be one of yes, no, or off', 'pidfile must be a valid file path', 'tls-ca-cert-file must be a valid file path', 'tls-port must be a valid port number', 'oom-score-adj-values must be a list of integers', 'proc-title-template must be a valid template', 'stop-writes-on-bgsave-error must be one of yes, no, or always']}
+
+{'hasError': True, 'errParameter': ['protected-mode', 'pidfile', 'tls-ca-cert-file', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['protected-mode must be one of yes, no, or best-effort', 'pidfile must be a valid file path', 'tls-ca-cert-file must be a valid file path', 'tls-port must be a valid port number', 'oom-score-adj-values must be a list of integers', 'proc-title-template must be a valid template', 'stop-writes-on-bgsave-error must be one of yes or no']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: protected-mode	pidfile	tls-ca-cert-file	tls-port	oom-score-adj-values	proc-title-template	stop-writes-on-bgsave-error
+[Ciri] Reason for protected-mode: protected-mode must be one of yes, no, or best-effort
+[Ciri] Reason for pidfile: pidfile must be a valid file path
+[Ciri] Reason for tls-ca-cert-file: tls-ca-cert-file must be a valid file path
+[Ciri] Reason for tls-port: tls-port must be a valid port number
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values must be a list of integers
+[Ciri] Reason for proc-title-template: proc-title-template must be a valid template
+[Ciri] Reason for stop-writes-on-bgsave-error: stop-writes-on-bgsave-error must be one of yes, no, or always

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.check.period', 'dfs.namenode.replication.work.multiplier.per.iteration', 'dfs.webhdfs.user.provider.user.pattern', 'dfs.namenode.fs-limits.max-xattrs-per-inode', 'dfs.client.deadnode.detection.deadnode.queue.max', 'dfs.namenode.upgrade.domain.factor', 'dfs.balancer.address', 'dfs.block.replicator.classname'], 'reason': ['The value of the property dfs.namenode.checkpoint.check.period is not a valid time unit. Supported time units are: ns, us, ms, s, m, h, d. For example, 10s.', 'The value of the property dfs.namenode.replication.work.multiplier.per.iteration must be a positive integer.', 'The value of the property dfs.webhdfs.user.provider.user.pattern must be a valid java regex.', 'The value of the property dfs.namenode.fs-limits.max-xattrs-per-inode must be a positive integer.', 'The value of the property dfs.client.deadnode.detection.deadnode.queue.max must be a positive integer.', 'The value of the property dfs.namenode.upgrade.domain.factor must be a positive integer.', 'The value of the property dfs.balancer.address must be a valid hostname.', 'The value of the property dfs.block.replicator.classname must be a valid classname.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.namenode.checkpoint.check.period	dfs.namenode.replication.work.multiplier.per.iteration	dfs.webhdfs.user.provider.user.pattern	dfs.namenode.fs-limits.max-xattrs-per-inode	dfs.client.deadnode.detection.deadnode.queue.max	dfs.namenode.upgrade.domain.factor	dfs.balancer.address	dfs.block.replicator.classname
+[Ciri] Reason for dfs.namenode.checkpoint.check.period: The value of the property dfs.namenode.checkpoint.check.period is not a valid time unit. Supported time units are: ns, us, ms, s, m, h, d. For example, 10s.
+[Ciri] Reason for dfs.namenode.replication.work.multiplier.per.iteration: The value of the property dfs.namenode.replication.work.multiplier.per.iteration must be a positive integer.
+[Ciri] Reason for dfs.webhdfs.user.provider.user.pattern: The value of the property dfs.webhdfs.user.provider.user.pattern must be a valid java regex.
+[Ciri] Reason for dfs.namenode.fs-limits.max-xattrs-per-inode: The value of the property dfs.namenode.fs-limits.max-xattrs-per-inode must be a positive integer.
+[Ciri] Reason for dfs.client.deadnode.detection.deadnode.queue.max: The value of the property dfs.client.deadnode.detection.deadnode.queue.max must be a positive integer.
+[Ciri] Reason for dfs.namenode.upgrade.domain.factor: The value of the property dfs.namenode.upgrade.domain.factor must be a positive integer.
+[Ciri] Reason for dfs.balancer.address: The value of the property dfs.balancer.address must be a valid hostname.
+[Ciri] Reason for dfs.block.replicator.classname: The value of the property dfs.block.replicator.classname must be a valid classname.

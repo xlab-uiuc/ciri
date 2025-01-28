@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.info.port</name>
+  <value>3001</value>
+    <description>The port for the HBase Master web UI.
+    Set to -1 if you do not want a UI instance run.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.leaderport</name>
+  <value>1944</value>
+    <description>Port used by ZooKeeper for leader election.
+    See https://zookeeper.apache.org/doc/r3.3.3/zookeeperStarted.html#sc_RunningReplicatedZooKeeper
+    for more information.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.dataDir</name>
+  <value>/valid/file2</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The directory where the snapshot is stored.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.clientPort</name>
+  <value>file://</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The port at which the clients will connect.</description>
+</property>
+
+<property>
+  <name>hbase.bulkload.retries.number</name>
+  <value>20</value>
+    <description>Maximum retries.  This is maximum number of iterations
+    to atomic bulk loads are attempted in the face of splitting operations
+    0 means never give up.</description>
+</property>
+
+<property>
+  <name>hfile.index.block.max.size</name>
+  <value>131072</value>
+      <description>When the size of a leaf-level, intermediate-level, or root-level
+          index block in a multi-level block index grows to this size, the
+          block is written out and a new block is started.</description>
+</property>
+
+<property>
+  <name>hbase.auth.key.update.interval</name>
+  <value>172800000</value>
+    <description>The update interval for master key for authentication tokens
+    in servers in milliseconds.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.data.umask.enable</name>
+  <value>true</value>
+    <description>Enable, if true, that file permissions should be assigned
+      to the files written by the regionserver</description>
+</property>
+
+</configuration>

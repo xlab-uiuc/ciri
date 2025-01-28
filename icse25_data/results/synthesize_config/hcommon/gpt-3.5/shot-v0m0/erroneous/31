@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.input.csv.field.delimiter', 'io.mapfile.bloom.error.rate'], 'reason': ['The property \'fs.s3a.select.input.csv.field.delimiter\' should not contain escape characters like \'\\t\', \'\\r\', \'\\n\', \'\\\\\', or \'\\"\'. It should directly specify the field delimiter character.', "The value for 'io.mapfile.bloom.error.rate' should be between 0.0 and 1.0 to represent the rate of false positives in BloomFilter-s."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.select.input.csv.field.delimiter	io.mapfile.bloom.error.rate
+[Ciri] Reason for fs.s3a.select.input.csv.field.delimiter: The property 'fs.s3a.select.input.csv.field.delimiter' should not contain escape characters like '\t', '\r', '\n', '\\', or '\"'. It should directly specify the field delimiter character.
+[Ciri] Reason for io.mapfile.bloom.error.rate: The value for 'io.mapfile.bloom.error.rate' should be between 0.0 and 1.0 to represent the rate of false positives in BloomFilter-s.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[14, 16, 6]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'fs.AbstractFileSystem.abfss.impl'], 'reason': ["The value of 'fs.default.name' is incorrect. It should be 'hdfs://' or another valid URI scheme, not 'file//'.", "The class name for 'fs.AbstractFileSystem.abfss.impl' is incorrect. It should be 'org.apache.hadoop.fs.azurebfs.AzureBlobFileSystemStore' if referring to the Azure Blob File System."]}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'fs.AbstractFileSystem.abfss.impl', 'hadoop.zk.retry-interval-ms'], 'reason': ["The value of 'fs.default.name' is incorrect. It should be 'hdfs://' or another valid URI scheme.", "The class name for 'fs.AbstractFileSystem.abfss.impl' is incorrect. It should be 'org.apache.hadoop.fs.azurebfs.AzureBlobFileSystemStore'.", "The property 'hadoop.zk.retry-interval-ms' is incorrect. It should be 'hadoop.registry.zk.retry.interval.ms'."]}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'fs.AbstractFileSystem.abfss.impl'], 'reason': ["The property 'fs.default.name' has an incorrect value format. It should be 'hdfs://' or a similar scheme followed by the filesystem authority.", "The value for 'fs.AbstractFileSystem.abfss.impl' is incorrect. The correct class name for Azure Blob File System is 'org.apache.hadoop.fs.azurebfs.AzureBlobFileSystemStore'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	fs.AbstractFileSystem.abfss.impl
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' has an incorrect value format. It should be 'hdfs://' or a similar scheme followed by the filesystem authority.
+[Ciri] Reason for fs.AbstractFileSystem.abfss.impl: The value for 'fs.AbstractFileSystem.abfss.impl' is incorrect. The correct class name for Azure Blob File System is 'org.apache.hadoop.fs.azurebfs.AzureBlobFileSystemStore'.

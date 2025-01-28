@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'log_parameter_max_length', 'escape_string_warning', 'geqo', 'max_parallel_workers_per_gather', 'max_wal_size'], 'reason': ['wal_buffers must be a positive integer.', 'log_parameter_max_length must be a positive integer.', 'escape_string_warning must be on or off.', 'geqo must be on or off.', 'max_parallel_workers_per_gather must be a positive integer.', 'max_wal_size must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'log_parameter_max_length', 'escape_string_warning', 'geqo', 'max_parallel_workers_per_gather', 'max_wal_size'], 'reason': ['wal_buffers must be a positive integer, -1 is not allowed', 'log_parameter_max_length must be a positive integer, -2 is not allowed', "escape_string_warning must be on or off, 'on' is not allowed", "geqo must be on or off, 'on' is not allowed", 'max_parallel_workers_per_gather must be a positive integer, -2 is not allowed', "max_wal_size must be a positive integer, '1GB' is not allowed"]}
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'log_parameter_max_length', 'escape_string_warning', 'geqo', 'max_parallel_workers_per_gather', 'max_wal_size'], 'reason': ['wal_buffers should be a positive integer.', 'log_parameter_max_length should be a positive integer.', 'escape_string_warning should be on or off.', 'geqo should be on or off.', 'max_parallel_workers_per_gather should be a positive integer.', 'max_wal_size should be a positive integer.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: wal_buffers	log_parameter_max_length	escape_string_warning	geqo	max_parallel_workers_per_gather	max_wal_size
+[Ciri] Reason for wal_buffers: wal_buffers should be a positive integer.
+[Ciri] Reason for log_parameter_max_length: log_parameter_max_length should be a positive integer.
+[Ciri] Reason for escape_string_warning: escape_string_warning must be on or off, 'on' is not allowed
+[Ciri] Reason for geqo: geqo must be on or off.
+[Ciri] Reason for max_parallel_workers_per_gather: max_parallel_workers_per_gather should be a positive integer.
+[Ciri] Reason for max_wal_size: max_wal_size must be a positive integer, '1GB' is not allowed

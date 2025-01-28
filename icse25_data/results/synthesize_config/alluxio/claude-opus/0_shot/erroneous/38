@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.worker.ramdisk.size', 'alluxio.master.shell.backup.state.lock.try.duration', 'alluxio.job.master.lost.worker.interval'], 'reason': ['Invalid host 999.-1.0.0. IP address components must be between 0 and 255.', 'ramdisk size cannot be less than 1MB. The provided value 0.1 is invalid.', 'Invalid duration format. Valid time units are ns, us, ms, s, m, h, d. The provided value 2s is missing a space between the number and unit.', 'Invalid duration format. Valid time units are ns, us, ms, s, m, h, d. The provided value 10sec should be 10s.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.job.master.web.bind.host	alluxio.worker.ramdisk.size	alluxio.master.shell.backup.state.lock.try.duration	alluxio.job.master.lost.worker.interval
+[Ciri] Reason for alluxio.job.master.web.bind.host: Invalid host 999.-1.0.0. IP address components must be between 0 and 255.
+[Ciri] Reason for alluxio.worker.ramdisk.size: ramdisk size cannot be less than 1MB. The provided value 0.1 is invalid.
+[Ciri] Reason for alluxio.master.shell.backup.state.lock.try.duration: Invalid duration format. Valid time units are ns, us, ms, s, m, h, d. The provided value 2s is missing a space between the number and unit.
+[Ciri] Reason for alluxio.job.master.lost.worker.interval: Invalid duration format. Valid time units are ns, us, ms, s, m, h, d. The provided value 10sec should be 10s.

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'port'], 'reason': ['listen_addresses must be a string', 'port must be an integer']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'gin_fuzzy_search_limit', 'port', 'gss_accept_delegation', 'max_parallel_workers', 'krb_caseins_users', 'bgwriter_flush_after'], 'reason': ['max_connections must be greater than 0', 'superuser_reserved_connections must be greater than 0', 'gin_fuzzy_search_limit must be greater than 0', 'port must be greater than 0', 'gss_accept_delegation must be one of off, allow, or disable', 'max_parallel_workers must be greater than 0', 'krb_caseins_users must be one of on or off', 'bgwriter_flush_after must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'gin_fuzzy_search_limit', 'port', 'gss_accept_delegation', 'max_parallel_workers', 'krb_caseins_users', 'bgwriter_flush_after'], 'reason': ['max_connections must be a positive integer', 'superuser_reserved_connections must be a positive integer', 'gin_fuzzy_search_limit must be a positive integer', 'port must be a positive integer', 'gss_accept_delegation must be a boolean', 'max_parallel_workers must be a positive integer', 'krb_caseins_users must be a boolean', 'bgwriter_flush_after must be a positive integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: max_connections	superuser_reserved_connections	gin_fuzzy_search_limit	port	gss_accept_delegation	max_parallel_workers	krb_caseins_users	bgwriter_flush_after
+[Ciri] Reason for max_connections: max_connections must be a positive integer
+[Ciri] Reason for superuser_reserved_connections: superuser_reserved_connections must be greater than 0
+[Ciri] Reason for gin_fuzzy_search_limit: gin_fuzzy_search_limit must be a positive integer
+[Ciri] Reason for port: port must be greater than 0
+[Ciri] Reason for gss_accept_delegation: gss_accept_delegation must be one of off, allow, or disable
+[Ciri] Reason for max_parallel_workers: max_parallel_workers must be greater than 0
+[Ciri] Reason for krb_caseins_users: krb_caseins_users must be a boolean
+[Ciri] Reason for bgwriter_flush_after: bgwriter_flush_after must be a positive integer

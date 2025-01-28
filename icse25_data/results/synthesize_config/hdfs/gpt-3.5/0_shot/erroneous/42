@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.https-bind-host', 'dfs.user.home.dir.prefix'], 'reason': ["Invalid IP address '256.256.256.256' for dfs.journalnode.https-bind-host. The IP address should be in a valid format.", "Typo in 'home direcotry' for dfs.user.home.dir.prefix. It should be 'home directory'."]}
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.https-bind-host', 'dfs.user.home.dir.prefix'], 'reason': ["Invalid IP address '256.256.256.256' provided for dfs.journalnode.https-bind-host.", "Typo in 'home direcotry' for dfs.user.home.dir.prefix. It should be 'home directory'."]}
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.https-bind-host', 'dfs.user.home.dir.prefix'], 'reason': ["Invalid IP address '256.256.256.256' for dfs.journalnode.https-bind-host. The IP address should be in a valid format.", "Typo in 'home direcotry' for dfs.user.home.dir.prefix. It should be 'home directory'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.journalnode.https-bind-host	dfs.user.home.dir.prefix
+[Ciri] Reason for dfs.journalnode.https-bind-host: Invalid IP address '256.256.256.256' provided for dfs.journalnode.https-bind-host.
+[Ciri] Reason for dfs.user.home.dir.prefix: Typo in 'home direcotry' for dfs.user.home.dir.prefix. It should be 'home directory'.

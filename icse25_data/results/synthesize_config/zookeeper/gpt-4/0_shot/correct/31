@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['electionAlg', 'syncEnabled', 'sslQuorumReloadCertFiles'], 'reason': ["The 'electionAlg' parameter is no longer used in ZooKeeper 3.5.0 and later versions. It should be removed.", "The 'syncEnabled' parameter does not exist in ZooKeeper configuration. It seems to be an invalid parameter.", "The 'sslQuorumReloadCertFiles' parameter is not recognized in ZooKeeper 3.7.0. The correct parameter for reloading SSL certificate files for quorum communication is 'sslQuorumReloadCertFiles'. However, it should be noted that this parameter is not applicable as there is no indication of quorum SSL being configured ('sslQuorum' parameters are not present)."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: electionAlg	syncEnabled	sslQuorumReloadCertFiles
+[Ciri] Reason for electionAlg: The 'electionAlg' parameter is no longer used in ZooKeeper 3.5.0 and later versions. It should be removed.
+[Ciri] Reason for syncEnabled: The 'syncEnabled' parameter does not exist in ZooKeeper configuration. It seems to be an invalid parameter.
+[Ciri] Reason for sslQuorumReloadCertFiles: The 'sslQuorumReloadCertFiles' parameter is not recognized in ZooKeeper 3.7.0. The correct parameter for reloading SSL certificate files for quorum communication is 'sslQuorumReloadCertFiles'. However, it should be noted that this parameter is not applicable as there is no indication of quorum SSL being configured ('sslQuorum' parameters are not present).

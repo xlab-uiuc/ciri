@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 3, 8]
+
+Correct shot number:
+[8, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.change.detection.mode', 'ha.zookeeper.parent-znode'], 'reason': ["The property 'fs.s3a.change.detection.mode' has the value 'server' which may not work with third-party S3 implementations that do not support these constraints on GetObject.", "The property 'ha.zookeeper.parent-znode' has the value '/valid/file1' which does not follow the correct path format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.change.detection.mode	ha.zookeeper.parent-znode
+[Ciri] Reason for fs.s3a.change.detection.mode: The property 'fs.s3a.change.detection.mode' has the value 'server' which may not work with third-party S3 implementations that do not support these constraints on GetObject.
+[Ciri] Reason for ha.zookeeper.parent-znode: The property 'ha.zookeeper.parent-znode' has the value '/valid/file1' which does not follow the correct path format.

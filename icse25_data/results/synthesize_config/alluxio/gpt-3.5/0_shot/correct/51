@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.job.master.web.port', 'alluxio.master.update.check.interval', 'alluxio.master.ufs.journal.max.catchup.time', 'alluxio.user.streaming.writer.flush.timeout', 'alluxio.user.network.rpc.flowcontrol.window'], 'reason': ["Invalid time unit 'sec' for property 'fs.cos.socket.timeout'. Use 's' for seconds.", "Port number '3000' for property 'alluxio.job.master.web.port' is already in use by 'alluxio.master.embedded.journal.port'. Choose a different port.", "Invalid time unit 'day' for property 'alluxio.master.update.check.interval'. Use 'd' for days.", "Invalid time unit 'min' for property 'alluxio.master.ufs.journal.max.catchup.time'. Use 'm' for minutes.", "Invalid time unit 'min' for property 'alluxio.user.streaming.writer.flush.timeout'. Use 'm' for minutes.", "Invalid size unit 'MB' for property 'alluxio.user.network.rpc.flowcontrol.window'. Use 'MB' for megabytes."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.user.streaming.writer.flush.timeout'], 'reason': ["Invalid time unit 'sec'. Use 's' for seconds.", "Invalid time unit 'min'. Use 'm' for minutes."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.user.streaming.writer.flush.timeout'], 'reason': ["Invalid time unit 'sec' for property 'fs.cos.socket.timeout'. Use 's' for seconds.", "Invalid time unit 'min' for property 'alluxio.user.streaming.writer.flush.timeout'. Use 'm' for minutes."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.cos.socket.timeout	alluxio.user.streaming.writer.flush.timeout
+[Ciri] Reason for fs.cos.socket.timeout: Invalid time unit 'sec' for property 'fs.cos.socket.timeout'. Use 's' for seconds.
+[Ciri] Reason for alluxio.user.streaming.writer.flush.timeout: Invalid time unit 'min'. Use 'm' for minutes.

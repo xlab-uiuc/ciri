@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.persist.on.rename', 'alluxio.worker.remote.io.slow.threshold'], 'reason': ['alluxio.user.file.persist.on.rename is not a valid property for Alluxio 2.5.0', 'alluxio.worker.remote.io.slow.threshold is not a valid property for Alluxio 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.persist.on.rename', 'alluxio.worker.remote.io.slow.threshold'], 'reason': ['The value of alluxio.user.file.persist.on.rename is not a boolean value. It should be either true or false.', 'The value of alluxio.worker.remote.io.slow.threshold is not a time value. It should be in the format of 1s, 1m, 1h, 1d, etc.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.file.persist.on.rename	alluxio.worker.remote.io.slow.threshold
+[Ciri] Reason for alluxio.user.file.persist.on.rename: alluxio.user.file.persist.on.rename is not a valid property for Alluxio 2.5.0
+[Ciri] Reason for alluxio.worker.remote.io.slow.threshold: alluxio.worker.remote.io.slow.threshold is not a valid property for Alluxio 2.5.0

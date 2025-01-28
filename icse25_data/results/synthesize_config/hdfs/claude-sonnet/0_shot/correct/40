@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.replication.max', 'dfs.namenode.max.objects'], 'reason': ['The dfs.replication.max property has a maximum allowed value of 512 in HDFS 3.3.0, but the value provided is 1024, which exceeds the limit.', 'The dfs.namenode.max.objects property is deprecated and no longer used in HDFS 3.3.0. It should be removed from the configuration.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.replication.max	dfs.namenode.max.objects
+[Ciri] Reason for dfs.replication.max: The dfs.replication.max property has a maximum allowed value of 512 in HDFS 3.3.0, but the value provided is 1024, which exceeds the limit.
+[Ciri] Reason for dfs.namenode.max.objects: The dfs.namenode.max.objects property is deprecated and no longer used in HDFS 3.3.0. It should be removed from the configuration.

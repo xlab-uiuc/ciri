@@ -1,0 +1,31 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.state.lock.grace.mode'], 'reason': ['alluxio.master.daily.backup.state.lock.grace.mode is not a valid property']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.metadata.sync.interval', 'alluxio.user.file.create.ttl'], 'reason': ['alluxio.user.file.metadata.sync.interval must be a positive integer, but -2 is not a positive integer.', 'alluxio.user.file.create.ttl must be a positive integer, but -2 is not a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.state.lock.grace.mode', 'alluxio.master.ufs.active.sync.max.activities', 'alluxio.user.file.metadata.sync.interval', 'alluxio.user.file.create.ttl'], 'reason': ['alluxio.master.daily.backup.state.lock.grace.mode should be one of [TIME, TASK]', 'alluxio.master.ufs.active.sync.max.activities should be a positive integer', 'alluxio.user.file.metadata.sync.interval should be a positive integer', 'alluxio.user.file.create.ttl should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.state.lock.grace.mode', 'alluxio.master.ufs.active.sync.max.activities'], 'reason': ['alluxio.master.daily.backup.state.lock.grace.mode must be one of [TIME, COUNT]', 'alluxio.master.ufs.active.sync.max.activities must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.metadata.sync.interval', 'alluxio.user.file.create.ttl'], 'reason': ['The value of alluxio.user.file.metadata.sync.interval is invalid. The value must be a positive integer or -1. The current value is -2.', 'The value of alluxio.user.file.create.ttl is invalid. The value must be a positive integer or -1. The current value is -2.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.state.lock.grace.mode', 'alluxio.master.ufs.active.sync.max.activities', 'alluxio.user.file.metadata.sync.interval', 'alluxio.user.file.create.ttl'], 'reason': ['alluxio.master.daily.backup.state.lock.grace.mode should be one of [TIME, COUNT]', 'alluxio.master.ufs.active.sync.max.activities should be a positive integer', 'alluxio.user.file.metadata.sync.interval should be a positive integer or -1', 'alluxio.user.file.create.ttl should be a positive integer or -1']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.state.lock.grace.mode', 'alluxio.master.ufs.active.sync.max.activities', 'alluxio.user.file.metadata.sync.interval', 'alluxio.user.file.create.ttl'], 'reason': ['alluxio.master.daily.backup.state.lock.grace.mode should be one of the following values: [TIME, LOCK_EXPIRATION]', 'alluxio.master.ufs.active.sync.max.activities should be a positive integer', 'alluxio.user.file.metadata.sync.interval should be a positive integer', 'alluxio.user.file.create.ttl should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.metadata.sync.interval', 'alluxio.user.file.create.ttl'], 'reason': ['alluxio.user.file.metadata.sync.interval should be >= 0', 'alluxio.user.file.create.ttl should be >= 0']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.master.daily.backup.state.lock.grace.mode	alluxio.master.ufs.active.sync.max.activities	alluxio.user.file.metadata.sync.interval	alluxio.user.file.create.ttl
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.grace.mode: alluxio.master.daily.backup.state.lock.grace.mode should be one of [TIME, COUNT]
+[Ciri] Reason for alluxio.master.ufs.active.sync.max.activities: alluxio.master.ufs.active.sync.max.activities should be a positive integer
+[Ciri] Reason for alluxio.user.file.metadata.sync.interval: alluxio.user.file.metadata.sync.interval should be a positive integer or -1
+[Ciri] Reason for alluxio.user.file.create.ttl: alluxio.user.file.create.ttl should be a positive integer or -1

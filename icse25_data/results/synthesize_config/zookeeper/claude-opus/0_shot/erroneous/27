@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'initLimit'], 'reason': ["secureClientPortAddress should be a valid IP address, but '999.-1.0.0' is not a valid IP address format.", 'initLimit should be at least 5 ticks for production use. A value of 1 is too low and may cause issues with leader election and synchronization.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPortAddress	initLimit
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress should be a valid IP address, but '999.-1.0.0' is not a valid IP address format.
+[Ciri] Reason for initLimit: initLimit should be at least 5 ticks for production use. A value of 1 is too low and may cause issues with leader election and synchronization.

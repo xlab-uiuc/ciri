@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['FIRST_DAY_OF_WEEK', 'STATICFILES_STORAGE', 'FIXTURE_DIRS', 'LANGUAGE_COOKIE_DOMAIN', 'SESSION_SAVE_EVERY_REQUEST', 'DEFAULT_EXCEPTION_REPORTER_FILTER', 'DEFAULT_EXCEPTION_REPORTER', 'STATICFILES_FINDERS'], 'reason': ['Invalid value for FIRST_DAY_OF_WEEK. It should be an integer representing the first day of the week (0 for Sunday, 1 for Monday, etc).', "STATICFILES_STORAGE value is not set correctly for Django 4.0. It should be 'django.contrib.staticfiles.storage.StaticFilesStorage'.", 'FIXTURE_DIRS should be a list of directories where Django looks for fixtures.', 'LANGUAGE_COOKIE_DOMAIN should be set to a string value if needed, not None.', 'SESSION_SAVE_EVERY_REQUEST should be set to True or False.', 'DEFAULT_EXCEPTION_REPORTER_FILTER value is not set correctly.', 'DEFAULT_EXCEPTION_REPORTER value is not set correctly.', "STATICFILES_FINDERS should include 'django.contrib.staticfiles.finders.FileSystemFinder' along with 'django.contrib.staticfiles.finders.AppDirectoriesFinder' for Django 4.0."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: FIRST_DAY_OF_WEEK	STATICFILES_STORAGE	FIXTURE_DIRS	LANGUAGE_COOKIE_DOMAIN	SESSION_SAVE_EVERY_REQUEST	DEFAULT_EXCEPTION_REPORTER_FILTER	DEFAULT_EXCEPTION_REPORTER	STATICFILES_FINDERS
+[Ciri] Reason for FIRST_DAY_OF_WEEK: Invalid value for FIRST_DAY_OF_WEEK. It should be an integer representing the first day of the week (0 for Sunday, 1 for Monday, etc).
+[Ciri] Reason for STATICFILES_STORAGE: STATICFILES_STORAGE value is not set correctly for Django 4.0. It should be 'django.contrib.staticfiles.storage.StaticFilesStorage'.
+[Ciri] Reason for FIXTURE_DIRS: FIXTURE_DIRS should be a list of directories where Django looks for fixtures.
+[Ciri] Reason for LANGUAGE_COOKIE_DOMAIN: LANGUAGE_COOKIE_DOMAIN should be set to a string value if needed, not None.
+[Ciri] Reason for SESSION_SAVE_EVERY_REQUEST: SESSION_SAVE_EVERY_REQUEST should be set to True or False.
+[Ciri] Reason for DEFAULT_EXCEPTION_REPORTER_FILTER: DEFAULT_EXCEPTION_REPORTER_FILTER value is not set correctly.
+[Ciri] Reason for DEFAULT_EXCEPTION_REPORTER: DEFAULT_EXCEPTION_REPORTER value is not set correctly.
+[Ciri] Reason for STATICFILES_FINDERS: STATICFILES_FINDERS should include 'django.contrib.staticfiles.finders.FileSystemFinder' along with 'django.contrib.staticfiles.finders.AppDirectoriesFinder' for Django 4.0.

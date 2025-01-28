@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.user.network.streaming.keepalive.time', 'alluxio.user.file.reserved.bytes', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ["The 'alluxio.job.master.rpc.port' value is out of the valid range for port numbers. Valid port numbers are between 0 and 65535.", "The 'alluxio.user.network.streaming.keepalive.time' value is excessively large and likely exceeds reasonable limits for a keepalive time.", "The 'alluxio.user.file.reserved.bytes' property is using a placeholder for its value, but it's unclear if this placeholder is replaced at runtime with a valid value.", "The 'alluxio.jvm.monitor.sleep.interval' format is incorrect. It should likely be specified in milliseconds without the 'sec' suffix."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.job.master.rpc.port	alluxio.user.network.streaming.keepalive.time	alluxio.user.file.reserved.bytes	alluxio.jvm.monitor.sleep.interval
+[Ciri] Reason for alluxio.job.master.rpc.port: The 'alluxio.job.master.rpc.port' value is out of the valid range for port numbers. Valid port numbers are between 0 and 65535.
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.time: The 'alluxio.user.network.streaming.keepalive.time' value is excessively large and likely exceeds reasonable limits for a keepalive time.
+[Ciri] Reason for alluxio.user.file.reserved.bytes: The 'alluxio.user.file.reserved.bytes' property is using a placeholder for its value, but it's unclear if this placeholder is replaced at runtime with a valid value.
+[Ciri] Reason for alluxio.jvm.monitor.sleep.interval: The 'alluxio.jvm.monitor.sleep.interval' format is incorrect. It should likely be specified in milliseconds without the 'sec' suffix.

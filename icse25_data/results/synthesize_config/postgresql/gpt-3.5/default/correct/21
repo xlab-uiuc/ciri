@@ -1,0 +1,21 @@
+Wrong shot number:
+[3, 5, 2]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['compute_query_id', 'max_prepared_transactions', 'krb_caseins_users', 'effective_io_concurrency'], 'reason': ["The property 'compute_query_id' has an invalid value 'auto'.", "The property 'max_prepared_transactions' has the value '0' which should be a positive integer.", "The property 'krb_caseins_users' has the value 'off' which is not within the accepted value {on, off}.", "The property 'effective_io_concurrency' has the value '0' which should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['compute_query_id', 'max_prepared_transactions', 'krb_caseins_users', 'effective_io_concurrency', 'max_locks_per_transaction'], 'reason': ["The property 'compute_query_id' has an invalid value 'auto'.", "The property 'max_prepared_transactions' has an invalid value '0'. It should be a positive integer.", "The property 'krb_caseins_users' has an invalid value 'off'.", "The property 'effective_io_concurrency' has an invalid value '0'. It should be a positive integer.", "The property 'max_locks_per_transaction' has an invalid value '32'. It should be greater than 32."]}
+
+{'hasError': True, 'errParameter': ['compute_query_id', 'max_prepared_transactions', 'krb_caseins_users', 'effective_io_concurrency'], 'reason': ["The property 'compute_query_id' has an invalid value 'auto'.", "The property 'max_prepared_transactions' has an invalid value '0'. It should be a positive integer.", "The property 'krb_caseins_users' has an invalid value 'off'. It should be 'on' or 'off'.", "The property 'effective_io_concurrency' has an invalid value '0'. It should be a positive integer."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: compute_query_id	max_prepared_transactions	krb_caseins_users	effective_io_concurrency
+[Ciri] Reason for compute_query_id: The property 'compute_query_id' has an invalid value 'auto'.
+[Ciri] Reason for max_prepared_transactions: The property 'max_prepared_transactions' has the value '0' which should be a positive integer.
+[Ciri] Reason for krb_caseins_users: The property 'krb_caseins_users' has the value 'off' which is not within the accepted value {on, off}.
+[Ciri] Reason for effective_io_concurrency: The property 'effective_io_concurrency' has an invalid value '0'. It should be a positive integer.

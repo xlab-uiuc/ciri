@@ -1,0 +1,18 @@
+Wrong shot number:
+[6, 11, 10]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.client.scanner.caching'], 'reason': ["The value of the property 'hbase.client.scanner.caching' is set to a very high value (1073741823) which may lead to excessive memory consumption and potential performance issues. It is recommended to set a more reasonable value based on the expected number of rows needed per scan."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.scanner.caching'], 'reason': ["The value of the property 'hbase.client.scanner.caching' is too large. It should be set to a reasonable number based on the expected number of rows to fetch."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.client.scanner.caching
+[Ciri] Reason for hbase.client.scanner.caching: The value of the property 'hbase.client.scanner.caching' is too large. It should be set to a reasonable number based on the expected number of rows to fetch.

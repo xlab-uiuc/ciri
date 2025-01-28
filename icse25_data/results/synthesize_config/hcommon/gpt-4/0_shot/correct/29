@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.instrumentation.requires.admin', 'fs.s3a.socket.recv.buffer', 'ha.zookeeper.parent-znode', 'ha.failover-controller.active-standby-elector.zk.op.retries'], 'reason': ["The property 'hadoop.security.instrumentation.requires.admin' does not exist in Hadoop Common version 3.3.0.", "The property 'fs.s3a.socket.recv.buffer' is not a recognized configuration in Hadoop 3.3.0. For S3A configurations, buffer sizes are typically managed with different properties.", "The property 'ha.zookeeper.parent-znode' is not correctly named. The correct property name should be 'ha.zookeeper.parent-znode.prefix' if intending to specify the parent znode for HA configurations.", "The property 'ha.failover-controller.active-standby-elector.zk.op.retries' does not exist. The correct property for configuring ZooKeeper operation retries in HA setups is 'ha.zookeeper.session-timeout.ms' or similar, depending on the exact behavior intended to be configured."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.instrumentation.requires.admin	fs.s3a.socket.recv.buffer	ha.zookeeper.parent-znode	ha.failover-controller.active-standby-elector.zk.op.retries
+[Ciri] Reason for hadoop.security.instrumentation.requires.admin: The property 'hadoop.security.instrumentation.requires.admin' does not exist in Hadoop Common version 3.3.0.
+[Ciri] Reason for fs.s3a.socket.recv.buffer: The property 'fs.s3a.socket.recv.buffer' is not a recognized configuration in Hadoop 3.3.0. For S3A configurations, buffer sizes are typically managed with different properties.
+[Ciri] Reason for ha.zookeeper.parent-znode: The property 'ha.zookeeper.parent-znode' is not correctly named. The correct property name should be 'ha.zookeeper.parent-znode.prefix' if intending to specify the parent znode for HA configurations.
+[Ciri] Reason for ha.failover-controller.active-standby-elector.zk.op.retries: The property 'ha.failover-controller.active-standby-elector.zk.op.retries' does not exist. The correct property for configuring ZooKeeper operation retries in HA setups is 'ha.zookeeper.session-timeout.ms' or similar, depending on the exact behavior intended to be configured.

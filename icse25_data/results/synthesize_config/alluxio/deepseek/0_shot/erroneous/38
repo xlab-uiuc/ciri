@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host=999.-1.0.0', 'alluxio.worker.ramdisk.size=0.1'], 'reason': ['Invalid IP address in alluxio.job.master.web.bind.host=999.-1.0.0. The IP address should be in the range from 0.0.0.0 to 255.255.255.255.', 'Invalid configuration for alluxio.worker.ramdisk.size=0.1. The value should be a positive number representing the size of ramdisk in bytes.']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host=999.-1.0.0', 'alluxio.worker.ramdisk.size=0.1'], 'reason': ['Invalid IP address in alluxio.job.master.web.bind.host=999.-1.0.0. The IP address should be in the range 0.0.0.0 to 255.255.255.255', 'Invalid value for alluxio.worker.ramdisk.size=0.1. The value should be a positive number representing the size of ramdisk in MB']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host=999.-1.0.0', 'alluxio.worker.ramdisk.size=0.1'], 'reason': ['Invalid IP address in alluxio.job.master.web.bind.host=999.-1.0.0. The IP address should be in the range 0.0.0.0 to 255.255.255.255.', 'alluxio.worker.ramdisk.size=0.1 is not a valid value. Ramdisk size should be a positive number.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.web.bind.host=999.-1.0.0	alluxio.worker.ramdisk.size=0.1
+[Ciri] Reason for alluxio.job.master.web.bind.host=999.-1.0.0: Invalid IP address in alluxio.job.master.web.bind.host=999.-1.0.0. The IP address should be in the range from 0.0.0.0 to 255.255.255.255.
+[Ciri] Reason for alluxio.worker.ramdisk.size=0.1: Invalid configuration for alluxio.worker.ramdisk.size=0.1. The value should be a positive number representing the size of ramdisk in bytes.

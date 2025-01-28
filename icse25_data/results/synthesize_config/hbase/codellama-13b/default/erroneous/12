@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 4, 3]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.keytab.file', 'hbase.status.multicast.address.ip', 'hbase.rest-csrf.browser-useragents-regex'], 'reason': ["The property 'hbase.master.keytab.file' has the value '/valid/file1' which does not follow the correct file path format.", "The property 'hbase.status.multicast.address.ip' has the value 'x.0.0.0.0.0' which does not follow the correct IP address format.", "The property 'hbase.rest-csrf.browser-useragents-regex' has the value '^Mozilla.*' which does not follow the correct regular expression format."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.keytab.file', 'hbase.status.multicast.address.ip'], 'reason': ["The property 'hbase.master.keytab.file' has the value '/valid/file1' which does not follow the correct file path format.", "The property 'hbase.status.multicast.address.ip' has the value 'x.0.0.0.0.0' which does not follow the correct IP address format."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.keytab.file', 'hbase.status.multicast.address.ip'], 'reason': ["The property 'hbase.master.keytab.file' has the value '/valid/file1' which does not follow the correct file path format.", "The property 'hbase.status.multicast.address.ip' has the value 'x.0.0.0.0.0' which does not follow the correct IP address format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.master.keytab.file	hbase.status.multicast.address.ip
+[Ciri] Reason for hbase.master.keytab.file: The property 'hbase.master.keytab.file' has the value '/valid/file1' which does not follow the correct file path format.
+[Ciri] Reason for hbase.status.multicast.address.ip: The property 'hbase.status.multicast.address.ip' has the value 'x.0.0.0.0.0' which does not follow the correct IP address format.

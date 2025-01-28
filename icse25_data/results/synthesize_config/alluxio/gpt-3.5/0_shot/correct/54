@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.timeout', 'alluxio.worker.tieredstore.level1.dirs.mediumtype'], 'reason': ['Invalid value for fs.cos.connection.timeout. The value should be in milliseconds or a valid time unit.', 'Invalid reference in alluxio.worker.tieredstore.level1.dirs.mediumtype. Alias substitution should be in the format ${tierAlias}.']}
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.timeout', 'alluxio.worker.management.backoff.strategy', 'alluxio.security.group.mapping.class', 'alluxio.master.log.config.report.heartbeat.interval', 'alluxio.master.metrics.service.threads', 'alluxio.worker.tieredstore.level1.dirs.mediumtype', 'alluxio.worker.network.netty.boss.threads', 'alluxio.master.rpc.port'], 'reason': ['Invalid value for fs.cos.connection.timeout. It should be in milliseconds format.', 'Invalid value for alluxio.worker.management.backoff.strategy.', 'Invalid value for alluxio.security.group.mapping.class.', 'Invalid value for alluxio.master.log.config.report.heartbeat.interval. It should be in seconds or milliseconds format.', 'Invalid value for alluxio.master.metrics.service.threads.', 'Invalid value for alluxio.worker.tieredstore.level1.dirs.mediumtype.', 'Invalid value for alluxio.worker.network.netty.boss.threads.', 'Invalid value for alluxio.master.rpc.port. It should be a valid port number.']}
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.timeout', 'alluxio.worker.management.backoff.strategy', 'alluxio.security.group.mapping.class', 'alluxio.master.log.config.report.heartbeat.interval', 'alluxio.master.metrics.service.threads', 'alluxio.worker.tieredstore.level1.dirs.mediumtype', 'alluxio.worker.network.netty.boss.threads', 'alluxio.master.rpc.port'], 'reason': ['Invalid value for fs.cos.connection.timeout. It should be in milliseconds format.', 'Invalid value for alluxio.worker.management.backoff.strategy.', 'Invalid value for alluxio.security.group.mapping.class.', 'Invalid value for alluxio.master.log.config.report.heartbeat.interval. It should be in seconds or milliseconds format.', 'Invalid value for alluxio.master.metrics.service.threads. It should be an integer value.', 'Invalid value for alluxio.worker.tieredstore.level1.dirs.mediumtype.', 'Invalid value for alluxio.worker.network.netty.boss.threads. It should be a positive integer value.', 'Invalid value for alluxio.master.rpc.port. It should be a valid port number.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.cos.connection.timeout	alluxio.worker.management.backoff.strategy	alluxio.security.group.mapping.class	alluxio.master.log.config.report.heartbeat.interval	alluxio.master.metrics.service.threads	alluxio.worker.tieredstore.level1.dirs.mediumtype	alluxio.worker.network.netty.boss.threads	alluxio.master.rpc.port
+[Ciri] Reason for fs.cos.connection.timeout: Invalid value for fs.cos.connection.timeout. It should be in milliseconds format.
+[Ciri] Reason for alluxio.worker.management.backoff.strategy: Invalid value for alluxio.worker.management.backoff.strategy.
+[Ciri] Reason for alluxio.security.group.mapping.class: Invalid value for alluxio.security.group.mapping.class.
+[Ciri] Reason for alluxio.master.log.config.report.heartbeat.interval: Invalid value for alluxio.master.log.config.report.heartbeat.interval. It should be in seconds or milliseconds format.
+[Ciri] Reason for alluxio.master.metrics.service.threads: Invalid value for alluxio.master.metrics.service.threads.
+[Ciri] Reason for alluxio.worker.tieredstore.level1.dirs.mediumtype: Invalid value for alluxio.worker.tieredstore.level1.dirs.mediumtype.
+[Ciri] Reason for alluxio.worker.network.netty.boss.threads: Invalid value for alluxio.worker.network.netty.boss.threads. It should be a positive integer value.
+[Ciri] Reason for alluxio.master.rpc.port: Invalid value for alluxio.master.rpc.port. It should be a valid port number.

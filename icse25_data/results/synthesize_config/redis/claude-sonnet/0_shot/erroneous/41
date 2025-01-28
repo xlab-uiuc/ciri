@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-node-timeout', 'repl-diskless-sync-max-replicas'], 'reason': ["The 'cluster-enabled' and 'cluster-node-timeout' parameters are related to Redis Cluster, which is a different feature from replication. These parameters are not applicable in a standalone Redis instance or a traditional master-replica setup.", "The 'repl-diskless-sync-max-replicas' parameter is not a valid configuration option in Redis 7.0.0. This parameter was introduced in a later version of Redis to limit the number of diskless replicas that can be connected to a master."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-enabled	cluster-node-timeout	repl-diskless-sync-max-replicas
+[Ciri] Reason for cluster-enabled: The 'cluster-enabled' and 'cluster-node-timeout' parameters are related to Redis Cluster, which is a different feature from replication. These parameters are not applicable in a standalone Redis instance or a traditional master-replica setup.
+[Ciri] Reason for cluster-node-timeout: The 'repl-diskless-sync-max-replicas' parameter is not a valid configuration option in Redis 7.0.0. This parameter was introduced in a later version of Redis to limit the number of diskless replicas that can be connected to a master.
+[Ciri] Reason for repl-diskless-sync-max-replicas: 

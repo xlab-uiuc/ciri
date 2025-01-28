@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.metadata.sync.interval', 'alluxio.user.file.create.ttl'], 'reason': ['Invalid value for alluxio.user.file.metadata.sync.interval. It should be a positive value.', 'Invalid value for alluxio.user.file.create.ttl. It should be a positive value.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.metadata.sync.interval', 'alluxio.user.file.create.ttl'], 'reason': ["Invalid value for property 'alluxio.user.file.metadata.sync.interval'. The value should be a positive integer representing the time interval in seconds.", "Invalid value for property 'alluxio.user.file.create.ttl'. The value should be a positive integer representing the time-to-live in seconds for created files."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.metadata.sync.interval', 'alluxio.user.file.create.ttl'], 'reason': ['Invalid values for negative intervals. Values should be positive or zero.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.file.metadata.sync.interval	alluxio.user.file.create.ttl
+[Ciri] Reason for alluxio.user.file.metadata.sync.interval: Invalid values for negative intervals. Values should be positive or zero.
+[Ciri] Reason for alluxio.user.file.create.ttl: Invalid value for alluxio.user.file.create.ttl. It should be a positive value.

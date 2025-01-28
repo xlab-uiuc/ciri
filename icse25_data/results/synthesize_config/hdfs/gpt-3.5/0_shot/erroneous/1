@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.hdfs.configuration.version', 'dfs.default.chunk.view.size'], 'reason': ['hadoop.hdfs.configuration.version should be updated to 3.3.0', 'dfs.default.chunk.view.size should be an integer value, not a decimal']}
+
+{'hasError': True, 'errParameter': ['hadoop.hdfs.configuration.version', 'dfs.default.chunk.view.size'], 'reason': ['hadoop.hdfs.configuration.version should be updated to 3.3.0', 'dfs.default.chunk.view.size should be an integer value, not a float']}
+
+{'hasError': True, 'errParameter': ['hadoop.hdfs.configuration.version', 'dfs.default.chunk.view.size'], 'reason': ["The property 'hadoop.hdfs.configuration.version' should be 'dfs.internal.configuration.version' for HDFS version 3.3.0.", "The value for 'dfs.default.chunk.view.size' should be an integer value, not a floating-point number."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.hdfs.configuration.version	dfs.default.chunk.view.size
+[Ciri] Reason for hadoop.hdfs.configuration.version: hadoop.hdfs.configuration.version should be updated to 3.3.0
+[Ciri] Reason for dfs.default.chunk.view.size: dfs.default.chunk.view.size should be an integer value, not a decimal

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maintenance_work_mem', 'default_toast_compression', 'recovery_target_action'], 'reason': ["The 'maintenance_work_mem' value is too low. It should be set to a higher value to improve maintenance tasks performance.", "The 'default_toast_compression' parameter is not available in PostgreSQL version 13.0. It was introduced in PostgreSQL version 14.", "The 'recovery_target_action' value 'pause' is not valid in the context of PostgreSQL configuration. The valid options are 'promote', 'shutdown', and 'pause_at_recovery_target' in later versions, but 'pause' alone is not a recognized action."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: maintenance_work_mem	default_toast_compression	recovery_target_action
+[Ciri] Reason for maintenance_work_mem: The 'maintenance_work_mem' value is too low. It should be set to a higher value to improve maintenance tasks performance.
+[Ciri] Reason for default_toast_compression: The 'default_toast_compression' parameter is not available in PostgreSQL version 13.0. It was introduced in PostgreSQL version 14.
+[Ciri] Reason for recovery_target_action: The 'recovery_target_action' value 'pause' is not valid in the context of PostgreSQL configuration. The valid options are 'promote', 'shutdown', and 'pause_at_recovery_target' in later versions, but 'pause' alone is not a recognized action.

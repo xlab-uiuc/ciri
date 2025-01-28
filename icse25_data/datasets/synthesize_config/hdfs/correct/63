@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.replication.min</name>
+  <value>2</value>
+  <description>Minimal block replication. 
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.resource.checked.volumes.minimum</name>
+  <value>1</value>
+  <description>
+    The minimum number of redundant NameNode storage volumes required.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.redundancy.interval.seconds</name>
+  <value>1s</value>
+  <description>The periodicity in seconds with which the namenode computes 
+  low redundancy work for datanodes. Support multiple time unit suffix(case insensitive),
+  as described in dfs.heartbeat.interval.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.num.extra.edits.retained</name>
+  <value>2000000</value>
+  <description>The number of extra transactions which should be retained
+  beyond what is minimally necessary for a NN restart.
+  It does not translate directly to file's age, or the number of files kept,
+  but to the number of transactions (here "edits" means transactions).
+  One edit file may contain several transactions (edits).
+  During checkpoint, NameNode will identify the total number of edits to retain as extra by
+  checking the latest checkpoint transaction value, subtracted by the value of this property.
+  Then, it scans edits files to identify the older ones that don't include the computed range of
+  retained transactions that are to be kept around, and purges them subsequently.
+  The retainment can be useful for audit purposes or for an HA setup where a remote Standby Node may have
+  been offline for some time and need to have a longer backlog of retained
+  edits in order to start again.
+  Typically each edit is on the order of a few hundred bytes, so the default
+  of 1 million edits should be on the order of hundreds of MBs or low GBs.
+
+  NOTE: Fewer extra edits may be retained than value specified for this setting
+  if doing so would mean that more segments would be retained than the number
+  configured by dfs.namenode.max.extra.edits.segments.retained.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.mmap.cache.timeout.ms</name>
+  <value>1800000</value>
+  <description>
+    The minimum length of time that we will keep an mmap entry in the cache
+    between uses.  If an entry is in the cache longer than this, and nobody
+    uses it, it will be removed by a background thread.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.lock-reporting-threshold-ms</name>
+  <value>300</value>
+  <description>When thread waits to obtain a lock, or a thread holds a lock for
+    more than the threshold, a log message will be written. Note that
+    dfs.lock.suppress.warning.interval ensures a single log message is
+    emitted per interval for waiting threads and a single message for holding
+    threads to avoid excessive logging.
+  </description>
+</property>
+
+<property>
+  <name>dfs.http.client.failover.max.attempts</name>
+  <value>30</value>
+  <description>
+    Specify the max number of failover attempts for WebHDFS client
+    in case of network exception.
+  </description>
+</property>
+
+<property>
+  <name>dfs.balancer.getBlocks.min-block-size</name>
+  <value>20971520</value>
+  <description>
+    Minimum block threshold size in bytes to ignore when fetching a source's
+    block list.
+  </description>
+</property>
+
+</configuration>

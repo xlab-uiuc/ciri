@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'auto-compaction-mode', 'max-snapshots', 'proxy-read-timeout', 'snapshot-count', 'proxy-dial-timeout', 'log-level'], 'reason': ['advertise-client-urls: file// is not a valid URL', 'auto-compaction-mode: periodic is not a valid auto-compaction mode', 'max-snapshots: 1 is not a valid number', 'proxy-read-timeout: 2 is not a valid time duration', 'snapshot-count: 10000 is not a valid number', 'proxy-dial-timeout: 1000 is not a valid time duration', 'log-level: debug is not a valid log level']}
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'auto-compaction-mode', 'max-snapshots', 'proxy-read-timeout', 'snapshot-count', 'proxy-dial-timeout', 'log-level'], 'reason': ['advertise-client-urls: file// is not a valid URL', 'auto-compaction-mode: periodic is not a valid mode', 'max-snapshots: 1 is not a valid number', 'proxy-read-timeout: 2 is not a valid timeout', 'snapshot-count: 10000 is not a valid number', 'proxy-dial-timeout: 1000 is not a valid timeout', 'log-level: debug is not a valid log level']}
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'auto-compaction-mode', 'max-snapshots', 'proxy-read-timeout', 'snapshot-count', 'name', 'proxy-dial-timeout', 'log-level'], 'reason': ['advertise-client-urls: file// is not a valid URL', 'auto-compaction-mode: periodic is not a valid auto-compaction mode', 'max-snapshots: 1 is not a valid number', 'proxy-read-timeout: 2 is not a valid duration', 'snapshot-count: 10000 is not a valid number', "name: 'default' is not a valid name", 'proxy-dial-timeout: 1000 is not a valid duration', 'log-level: debug is not a valid log level']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: advertise-client-urls	auto-compaction-mode	max-snapshots	proxy-read-timeout	snapshot-count	proxy-dial-timeout	log-level
+[Ciri] Reason for advertise-client-urls: advertise-client-urls: file// is not a valid URL
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode: periodic is not a valid auto-compaction mode
+[Ciri] Reason for max-snapshots: max-snapshots: 1 is not a valid number
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout: 2 is not a valid timeout
+[Ciri] Reason for snapshot-count: snapshot-count: 10000 is not a valid number
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout: 1000 is not a valid timeout
+[Ciri] Reason for log-level: log-level: debug is not a valid log level

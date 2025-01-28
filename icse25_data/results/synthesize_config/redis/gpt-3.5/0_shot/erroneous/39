@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port', 'repl-diskless-load', 'auto-aof-rewrite-percentage', 'replica-announce-port', 'lazyfree-lazy-user-del', 'replica-lazy-flush', 'hash-max-listpack-value'], 'reason': ['Invalid value for tls-port. Port numbers should be positive integers.', "Invalid value for repl-diskless-load. It should be either 'yes' or 'no'.", 'Invalid value for auto-aof-rewrite-percentage. It should be a value between 1 and 100.', 'Invalid value for replica-announce-port. Port numbers should be positive integers.', "Invalid value for lazyfree-lazy-user-del. It should be either 'yes' or 'no'.", "Invalid value for replica-lazy-flush. It should be either 'yes' or 'no'.", 'Invalid value for hash-max-listpack-value. It should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['tls-port', 'repl-diskless-load', 'list-compress-depth', 'auto-aof-rewrite-percentage', 'replica-announce-port', 'lazyfree-lazy-user-del', 'replica-lazy-flush', 'hash-max-listpack-value'], 'reason': ['Invalid value for tls-port. Port numbers must be positive integers.', "Invalid value for repl-diskless-load. It should be either 'yes' or 'no'.", 'Invalid value for list-compress-depth. It should be a positive integer.', 'Invalid value for auto-aof-rewrite-percentage. It should be a value between 1 and 100.', 'Invalid value for replica-announce-port. Port numbers must be positive integers.', "Invalid value for lazyfree-lazy-user-del. It should be either 'yes' or 'no'.", "Invalid value for replica-lazy-flush. It should be either 'yes' or 'no'.", 'Invalid value for hash-max-listpack-value. It should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['tls-port', 'repl-diskless-load', 'list-compress-depth', 'auto-aof-rewrite-percentage', 'replica-announce-port', 'lazyfree-lazy-user-del', 'replica-lazy-flush', 'hash-max-listpack-value'], 'reason': ['Invalid value for tls-port. Port numbers must be positive integers.', "Invalid value for repl-diskless-load. It should be 'yes' or 'no'.", 'Invalid value for list-compress-depth. It should be an integer greater than or equal to 0.', 'Invalid value for auto-aof-rewrite-percentage. It should be an integer between 1 and 100.', 'Invalid value for replica-announce-port. Port numbers must be positive integers.', "Invalid value for lazyfree-lazy-user-del. It should be 'yes' or 'no'.", "Invalid value for replica-lazy-flush. It should be 'yes' or 'no'.", 'Invalid value for hash-max-listpack-value. It should be an integer greater than 128.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: tls-port	repl-diskless-load	list-compress-depth	auto-aof-rewrite-percentage	replica-announce-port	lazyfree-lazy-user-del	replica-lazy-flush	hash-max-listpack-value
+[Ciri] Reason for tls-port: Invalid value for tls-port. Port numbers must be positive integers.
+[Ciri] Reason for repl-diskless-load: Invalid value for repl-diskless-load. It should be either 'yes' or 'no'.
+[Ciri] Reason for list-compress-depth: Invalid value for list-compress-depth. It should be an integer greater than or equal to 0.
+[Ciri] Reason for auto-aof-rewrite-percentage: Invalid value for auto-aof-rewrite-percentage. It should be a value between 1 and 100.
+[Ciri] Reason for replica-announce-port: Invalid value for replica-announce-port. Port numbers must be positive integers.
+[Ciri] Reason for lazyfree-lazy-user-del: Invalid value for lazyfree-lazy-user-del. It should be 'yes' or 'no'.
+[Ciri] Reason for replica-lazy-flush: Invalid value for replica-lazy-flush. It should be 'yes' or 'no'.
+[Ciri] Reason for hash-max-listpack-value: Invalid value for hash-max-listpack-value. It should be a positive integer.

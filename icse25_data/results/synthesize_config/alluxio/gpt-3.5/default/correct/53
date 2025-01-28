@@ -1,0 +1,24 @@
+Wrong shot number:
+[13, 3, 2]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.max', 'alluxio.master.lock.pool.high.watermark', 'alluxio.master.embedded.journal.retry.cache.expiry.time', 'alluxio.job.master.finished.job.retention.time', 'alluxio.proxy.s3.deletetype', 'alluxio.job.worker.throttling', 'alluxio.web.threads'], 'reason': ["The property 'fs.cos.connection.max' is not a valid property for Alluxio version 2.5.0.", "The property 'alluxio.master.lock.pool.high.watermark' has an invalid value.", "The property 'alluxio.master.embedded.journal.retry.cache.expiry.time' has an invalid unit.", "The property 'alluxio.job.master.finished.job.retention.time' has an invalid unit.", "The property 'alluxio.proxy.s3.deletetype' has an invalid value.", "The property 'alluxio.job.worker.throttling' has an invalid value.", "The property 'alluxio.web.threads' has an invalid value."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.max', 'alluxio.master.lock.pool.high.watermark', 'alluxio.master.embedded.journal.retry.cache.expiry.time', 'alluxio.job.master.finished.job.retention.time', 'alluxio.proxy.s3.deletetype', 'alluxio.job.worker.throttling', 'alluxio.web.threads'], 'reason': ["The property 'fs.cos.connection.max' is not a valid property for Alluxio version 2.5.0.", "The property 'alluxio.master.lock.pool.high.watermark' has an invalid value.", "The property 'alluxio.master.embedded.journal.retry.cache.expiry.time' has an invalid unit.", "The property 'alluxio.job.master.finished.job.retention.time' has an invalid unit.", "The property 'alluxio.proxy.s3.deletetype' has an invalid value.", "The property 'alluxio.job.worker.throttling' has an invalid value.", "The property 'alluxio.web.threads' has an invalid value."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.max', 'alluxio.master.lock.pool.high.watermark', 'alluxio.master.embedded.journal.retry.cache.expiry.time', 'alluxio.job.master.finished.job.retention.time', 'alluxio.proxy.s3.deletetype', 'alluxio.job.worker.throttling', 'alluxio.web.threads'], 'reason': ["The property 'fs.cos.connection.max' is not a valid property for Alluxio version 2.5.0.", "The property 'alluxio.master.lock.pool.high.watermark' has an invalid value.", "The property 'alluxio.master.embedded.journal.retry.cache.expiry.time' has an invalid unit.", "The property 'alluxio.job.master.finished.job.retention.time' has an invalid unit.", "The property 'alluxio.proxy.s3.deletetype' has an invalid value.", "The property 'alluxio.job.worker.throttling' should not be set to 'true'.", "The property 'alluxio.web.threads' should not be set to '0'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: fs.cos.connection.max	alluxio.master.lock.pool.high.watermark	alluxio.master.embedded.journal.retry.cache.expiry.time	alluxio.job.master.finished.job.retention.time	alluxio.proxy.s3.deletetype	alluxio.job.worker.throttling	alluxio.web.threads
+[Ciri] Reason for fs.cos.connection.max: The property 'fs.cos.connection.max' is not a valid property for Alluxio version 2.5.0.
+[Ciri] Reason for alluxio.master.lock.pool.high.watermark: The property 'alluxio.master.lock.pool.high.watermark' has an invalid value.
+[Ciri] Reason for alluxio.master.embedded.journal.retry.cache.expiry.time: The property 'alluxio.master.embedded.journal.retry.cache.expiry.time' has an invalid unit.
+[Ciri] Reason for alluxio.job.master.finished.job.retention.time: The property 'alluxio.job.master.finished.job.retention.time' has an invalid unit.
+[Ciri] Reason for alluxio.proxy.s3.deletetype: The property 'alluxio.proxy.s3.deletetype' has an invalid value.
+[Ciri] Reason for alluxio.job.worker.throttling: The property 'alluxio.job.worker.throttling' has an invalid value.
+[Ciri] Reason for alluxio.web.threads: The property 'alluxio.web.threads' has an invalid value.

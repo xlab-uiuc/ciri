@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.acl.reservation-enable', 'yarn.nodemanager.emit-container-events', 'yarn.timeline-service.client.fd-flush-interval-secs'], 'reason': ['The value for yarn.acl.reservation-enable should be a boolean (true or false), but 10 is provided which is an integer.', 'The yarn.nodemanager.emit-container-events property is not available in Hadoop 3.3.0. It was removed in 3.0.0.', 'The yarn.timeline-service.client.fd-flush-interval-secs property is not available in Hadoop 3.3.0. The ATS v1.5 was removed in 3.0.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.acl.reservation-enable	yarn.nodemanager.emit-container-events	yarn.timeline-service.client.fd-flush-interval-secs
+[Ciri] Reason for yarn.acl.reservation-enable: The value for yarn.acl.reservation-enable should be a boolean (true or false), but 10 is provided which is an integer.
+[Ciri] Reason for yarn.nodemanager.emit-container-events: The yarn.nodemanager.emit-container-events property is not available in Hadoop 3.3.0. It was removed in 3.0.0.
+[Ciri] Reason for yarn.timeline-service.client.fd-flush-interval-secs: The yarn.timeline-service.client.fd-flush-interval-secs property is not available in Hadoop 3.3.0. The ATS v1.5 was removed in 3.0.0.

@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait'], 'reason': ['proxy-failure-wait must be a duration string, not a number']}
+
+{'hasError': True, 'errParameter': ['name', 'data-dir', 'heartbeat-interval', 'election-timeout', 'listen-client-urls', 'listen-peer-urls', 'snapshot-count', 'max-snapshots'], 'reason': ['name is required', 'data-dir is required', 'heartbeat-interval is required', 'election-timeout is required', 'listen-client-urls is required', 'listen-peer-urls is required', 'snapshot-count is required', 'max-snapshots is required']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-refresh-interval'], 'reason': ['proxy-failure-wait is not a valid configuration parameter for etcd version 3.5.0', 'proxy-refresh-interval is not a valid configuration parameter for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-refresh-interval', 'proxy-dial-timeout', 'proxy-write-timeout', 'proxy-read-timeout', 'proxy-failure-wait', 'proxy-failure-wait'], 'reason': ['proxy-failure-wait should be greater than 0', 'proxy-refresh-interval should be greater than 0', 'proxy-dial-timeout should be greater than 0', 'proxy-write-timeout should be greater than 0', 'proxy-read-timeout should be greater than 0', 'proxy-failure-wait should be greater than 0', 'proxy-failure-wait should be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait'], 'reason': ['proxy-failure-wait must be a duration, not a number']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait'], 'reason': ['proxy-failure-wait is not a valid parameter for etcd version 3.5.0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: proxy-failure-wait
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait is not a valid parameter for etcd version 3.5.0

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'localSessionsEnabled', 'reconfigEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.snapRetainCount', 'syncEnabled', 'standaloneEnabled'], 'reason': ['dataLogDir is not a valid path', 'localSessionsEnabled is not a boolean', 'reconfigEnabled is not a boolean', 'sslQuorumReloadCertFiles is not a boolean', 'quorum.auth.kerberos.servicePrincipal is not a valid kerberos principal', 'autopurge.snapRetainCount is not a number', 'syncEnabled is not a boolean', 'standaloneEnabled is not a boolean']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'localSessionsEnabled', 'reconfigEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.snapRetainCount', 'syncEnabled', 'standaloneEnabled'], 'reason': ['dataLogDir is not a valid path', 'localSessionsEnabled is not a valid boolean', 'reconfigEnabled is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'quorum.auth.kerberos.servicePrincipal is not a valid string', 'autopurge.snapRetainCount is not a valid integer', 'syncEnabled is not a valid boolean', 'standaloneEnabled is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'localSessionsEnabled', 'reconfigEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.snapRetainCount', 'syncEnabled', 'standaloneEnabled'], 'reason': ['dataLogDir is not a valid path', 'localSessionsEnabled is not a boolean', 'reconfigEnabled is not a boolean', 'sslQuorumReloadCertFiles is not a boolean', 'quorum.auth.kerberos.servicePrincipal is not a valid service principal', 'autopurge.snapRetainCount is not a valid integer', 'syncEnabled is not a boolean', 'standaloneEnabled is not a boolean']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dataLogDir	localSessionsEnabled	reconfigEnabled	sslQuorumReloadCertFiles	quorum.auth.kerberos.servicePrincipal	autopurge.snapRetainCount	syncEnabled	standaloneEnabled
+[Ciri] Reason for dataLogDir: dataLogDir is not a valid path
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled is not a boolean
+[Ciri] Reason for reconfigEnabled: reconfigEnabled is not a valid boolean
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles is not a boolean
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is not a valid service principal
+[Ciri] Reason for autopurge.snapRetainCount: autopurge.snapRetainCount is not a valid integer
+[Ciri] Reason for syncEnabled: syncEnabled is not a valid boolean
+[Ciri] Reason for standaloneEnabled: standaloneEnabled is not a valid boolean

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.port</name>
+  <value>16000</value>
+    <description>The port the HBase Master should bind to.</description>
+</property>
+
+<property>
+  <name>hbase.storescanner.parallel.seek.enable</name>
+  <value>false</value>
+    <description>
+      Enables StoreFileScanner parallel-seeking in StoreScanner,
+      a feature which can reduce response latency under special conditions.</description>
+</property>
+
+<property>
+  <name>hfile.block.index.cacheonwrite</name>
+  <value>false</value>
+      <description>This allows to put non-root multi-level index blocks into the block
+          cache at the time the index is being written.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.throughput.lower.bound</name>
+  <value>104857600</value>
+    <description>The target lower bound on aggregate compaction throughput, in bytes/sec. Allows
+    you to tune the minimum available compaction throughput when the
+    PressureAwareCompactionThroughputController throughput controller is active. (It is active by
+    default.)</description>
+</property>
+
+<property>
+  <name>hbase.hstore.bytes.per.checksum</name>
+  <value>16384</value>
+    <description>
+        Number of bytes in a newly created checksum chunk for HBase-level
+        checksums in hfile blocks.
+    </description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.max.result.size</name>
+  <value>4194304</value>
+    <description>Maximum number of bytes returned when calling a scanner's next method.
+    Note that when a single row is larger than this limit the row is still returned completely.
+    The default value is 2MB, which is good for 1ge networks.
+    With faster and/or high latency networks this value should be increased.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest.filter.classes</name>
+  <value>org.apache.hadoop.hbase.rest.filter.GzipFilter</value>
+    <description>
+      Servlet filters for REST service.
+    </description>
+</property>
+
+<property>
+  <name>hbase.http.max.threads</name>
+  <value>8</value>
+    <description>
+      The maximum number of threads that the HTTP Server will create in its
+      ThreadPool.
+    </description>
+</property>
+
+</configuration>

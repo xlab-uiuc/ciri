@@ -1,0 +1,19 @@
+Wrong shot number:
+[12, 5, 10]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.user.network.streaming.keepalive.time'], 'reason': ["The property 'alluxio.job.master.rpc.port' has the value '65536' which is out of the valid range of a port number.", "The value of the property 'alluxio.user.network.streaming.keepalive.time' exceeds the maximum allowed value."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.user.network.streaming.keepalive.time'], 'reason': ["The property 'alluxio.job.master.rpc.port' has the value '65536' which is out of the valid range of a port number.", "The value of the property 'alluxio.user.network.streaming.keepalive.time' is too large."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.user.network.streaming.keepalive.time'], 'reason': ["The property 'alluxio.job.master.rpc.port' has the value '65536' which is out of the valid range of a port number.", "The value of the property 'alluxio.user.network.streaming.keepalive.time' is too large."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.rpc.port	alluxio.user.network.streaming.keepalive.time
+[Ciri] Reason for alluxio.job.master.rpc.port: The property 'alluxio.job.master.rpc.port' has the value '65536' which is out of the valid range of a port number.
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.time: The value of the property 'alluxio.user.network.streaming.keepalive.time' is too large.

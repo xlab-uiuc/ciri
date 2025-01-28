@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'fs.permissions.umask-mode'], 'reason': ['The fs.default.name property is deprecated in Hadoop 3.x. It should be replaced with fs.defaultFS.', "The fs.permissions.umask-mode property has an invalid value 'hbase'. It should be a valid umask value in octal or symbolic format, e.g., '022' or 'u=rwx,g=rwx,o='."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	fs.permissions.umask-mode
+[Ciri] Reason for fs.default.name: The fs.default.name property is deprecated in Hadoop 3.x. It should be replaced with fs.defaultFS.
+[Ciri] Reason for fs.permissions.umask-mode: The fs.permissions.umask-mode property has an invalid value 'hbase'. It should be a valid umask value in octal or symbolic format, e.g., '022' or 'u=rwx,g=rwx,o='.

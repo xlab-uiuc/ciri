@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.block.write.replace-datanode-on-failure.enable', 'dfs.webhdfs.socket.read-timeout', 'dfs.encrypt.data.overwrite.downstream.derived.qop'], 'reason': ["The property 'dfs.client.block.write.replace-datanode-on-failure.enable' should have a boolean value (true/false) instead of 'false'.", "The value for 'dfs.webhdfs.socket.read-timeout' should be in milliseconds format. Update '60s' to a valid numerical value in milliseconds.", "The property 'dfs.encrypt.data.overwrite.downstream.derived.qop' should have a boolean value (true/false) instead of 'false'."]}
+
+{'hasError': True, 'errParameter': ['dfs.webhdfs.socket.read-timeout', 'dfs.content-summary.sleep-microsec', 'dfs.disk.balancer.max.disk.errors', 'dfs.encrypt.data.overwrite.downstream.derived.qop'], 'reason': ['Invalid value format. Value should provide units.', "Parameter name contains a typo. It should be 'dfs.content-summary.sleep-micros'.", "Parameter name contains a typo. It should be 'dfs.disk.balancer.max.disk.error'.", "Parameter name contains a typo. It should be 'dfs.encrypt.data.overwrite.downstream.derived.qop'."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.block.write.replace-datanode-on-failure.enable', 'dfs.webhdfs.socket.read-timeout', 'dfs.encrypt.data.overwrite.downstream.derived.qop'], 'reason': ["The property 'dfs.client.block.write.replace-datanode-on-failure.enable' should have a boolean value (true/false).", "The value for 'dfs.webhdfs.socket.read-timeout' should be in milliseconds format.", "The property 'dfs.encrypt.data.overwrite.downstream.derived.qop' should have a boolean value (true/false)."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.client.block.write.replace-datanode-on-failure.enable	dfs.webhdfs.socket.read-timeout	dfs.encrypt.data.overwrite.downstream.derived.qop
+[Ciri] Reason for dfs.client.block.write.replace-datanode-on-failure.enable: The property 'dfs.client.block.write.replace-datanode-on-failure.enable' should have a boolean value (true/false) instead of 'false'.
+[Ciri] Reason for dfs.webhdfs.socket.read-timeout: The value for 'dfs.webhdfs.socket.read-timeout' should be in milliseconds format. Update '60s' to a valid numerical value in milliseconds.
+[Ciri] Reason for dfs.encrypt.data.overwrite.downstream.derived.qop: The property 'dfs.encrypt.data.overwrite.downstream.derived.qop' should have a boolean value (true/false) instead of 'false'.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[11, 4, 5]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.s3.connection.ttl'], 'reason': ["The property 'alluxio.job.worker.web.port' has an invalid value of -100. Port numbers should be positive integers.", "The property 'alluxio.underfs.s3.connection.ttl' has an invalid value of -2. The connection TTL should be a non-negative integer representing the TTL in milliseconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.web.port	alluxio.underfs.s3.connection.ttl
+[Ciri] Reason for alluxio.job.worker.web.port: The property 'alluxio.job.worker.web.port' has an invalid value of -100. Port numbers should be positive integers.
+[Ciri] Reason for alluxio.underfs.s3.connection.ttl: The property 'alluxio.underfs.s3.connection.ttl' has an invalid value of -2. The connection TTL should be a non-negative integer representing the TTL in milliseconds.

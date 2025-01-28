@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['default_table_access_method', 'log_destination', 'archive_timeout', 'max_parallel_maintenance_workers', 'max_pred_locks_per_page', 'unix_socket_directories', 'bytea_output', 'tcp_keepalives_count'], 'reason': ["The parameter 'default_table_access_method' is not recognized in PostgreSQL version 13.0.", "The parameter 'log_destination' is not recognized in PostgreSQL version 13.0.", "The value for 'archive_timeout' should be specified in seconds, not just '2'.", "The value for 'max_parallel_maintenance_workers' should be an integer greater than 0.", "The value for 'max_pred_locks_per_page' should be an integer greater than 1.", "The parameter 'unix_socket_directories' is not recognized in PostgreSQL version 13.0.", "The value for 'bytea_output' should be 'hex' or 'escape'.", "The value for 'tcp_keepalives_count' should be an integer greater than 0."]}
+
+{'hasError': True, 'errParameter': ['default_table_access_method', 'log_destination', 'archive_timeout', 'max_parallel_maintenance_workers', 'max_pred_locks_per_page', 'unix_socket_directories', 'bytea_output', 'tcp_keepalives_count'], 'reason': ['default_table_access_method is not a valid parameter for PostgreSQL 13.0', "log_destination value 'stderr' is not a valid option", "archive_timeout value should be specified in seconds, not just '2'", 'max_parallel_maintenance_workers value should be an integer greater than 0', 'max_pred_locks_per_page value should be an integer greater than 0', 'unix_socket_directories should specify a valid directory path', "bytea_output value 'hex' is valid but make sure it fits your use case", 'tcp_keepalives_count value should be an integer greater than 0']}
+
+{'hasError': True, 'errParameter': ['default_table_access_method', 'log_destination', 'archive_timeout', 'max_parallel_maintenance_workers', 'max_pred_locks_per_page', 'unix_socket_directories', 'bytea_output', 'tcp_keepalives_count'], 'reason': ["Invalid parameter 'default_table_access_method'.", "Invalid parameter 'log_destination'.", "Invalid parameter 'archive_timeout'.", "Invalid parameter 'max_parallel_maintenance_workers'.", "Invalid parameter 'max_pred_locks_per_page'.", "Invalid parameter 'unix_socket_directories'.", "Invalid parameter 'bytea_output'.", "Invalid parameter 'tcp_keepalives_count'."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: default_table_access_method	log_destination	archive_timeout	max_parallel_maintenance_workers	max_pred_locks_per_page	unix_socket_directories	bytea_output	tcp_keepalives_count
+[Ciri] Reason for default_table_access_method: Invalid parameter 'default_table_access_method'.
+[Ciri] Reason for log_destination: Invalid parameter 'log_destination'.
+[Ciri] Reason for archive_timeout: The value for 'archive_timeout' should be specified in seconds, not just '2'.
+[Ciri] Reason for max_parallel_maintenance_workers: The value for 'max_parallel_maintenance_workers' should be an integer greater than 0.
+[Ciri] Reason for max_pred_locks_per_page: max_pred_locks_per_page value should be an integer greater than 0
+[Ciri] Reason for unix_socket_directories: unix_socket_directories should specify a valid directory path
+[Ciri] Reason for bytea_output: The value for 'bytea_output' should be 'hex' or 'escape'.
+[Ciri] Reason for tcp_keepalives_count: tcp_keepalives_count value should be an integer greater than 0

@@ -1,0 +1,13 @@
+Correct shot number:
+[2, 1, 3, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_FAILURE_VIEW', 'DEFAULT_CHARSET', 'SECURE_SSL_HOST'], 'reason': ["CSRF_FAILURE_VIEW should be 'django.views.csrf.csrf_failure' for Django 4.0", 'DEFAULT_CHARSET is not a valid configuration parameter for Django 4.0', 'SECURE_SSL_HOST is not a valid configuration parameter for Django 4.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: CSRF_FAILURE_VIEW	DEFAULT_CHARSET	SECURE_SSL_HOST
+[Ciri] Reason for CSRF_FAILURE_VIEW: CSRF_FAILURE_VIEW should be 'django.views.csrf.csrf_failure' for Django 4.0
+[Ciri] Reason for DEFAULT_CHARSET: DEFAULT_CHARSET is not a valid configuration parameter for Django 4.0
+[Ciri] Reason for SECURE_SSL_HOST: SECURE_SSL_HOST is not a valid configuration parameter for Django 4.0

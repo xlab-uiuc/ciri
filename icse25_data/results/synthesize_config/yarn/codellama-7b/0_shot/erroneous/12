@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.zk-delegation-token-node.split-index'], 'reason': ['The value of yarn.resourcemanager.zk-delegation-token-node.split-index is 0, which is not a valid value. The value should be between 1 and 4.']}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.zk-delegation-token-node.split-index'], 'reason': ['The value of this config is outside the range of 0 to 4. 0 means there will be no split. If the value is outside this range, it will be treated as 0 (i.e. no split). A value larger than 0 (up to 4) should be configured if you are running a large number of applications, with long-lived delegation tokens and state store operations (e.g. failover) are failing due to LenError in Zookeeper.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.resourcemanager.zk-delegation-token-node.split-index
+[Ciri] Reason for yarn.resourcemanager.zk-delegation-token-node.split-index: The value of this config is outside the range of 0 to 4. 0 means there will be no split. If the value is outside this range, it will be treated as 0 (i.e. no split). A value larger than 0 (up to 4) should be configured if you are running a large number of applications, with long-lived delegation tokens and state store operations (e.g. failover) are failing due to LenError in Zookeeper.

@@ -1,0 +1,17 @@
+Wrong shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size', 'ipc.client.connection.maxidletime', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable', 'ipc.[port_number].weighted-cost.lockfree', 'rpc.metrics.quantile.enable'], 'reason': ["The property 'fs.ftp.host' has an invalid value '999.-1.0.0'. It should be a valid IP address.", "The property 'fs.s3a.block.size' has an invalid value '32M'. It should be a numeric value with a valid suffix {K,M,G,T,P}.", "The property 'ipc.client.connection.maxidletime' has an invalid value '10000'.", "The property 'ipc.[port_number].decay-scheduler.thresholds' has an invalid value '[26, 50, 100]'.", "The property 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable' has an invalid value 'false'.", "The property 'ipc.[port_number].weighted-cost.lockfree' has an invalid value '1'.", "The property 'rpc.metrics.quantile.enable' has an invalid value 'false'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.block.size	ipc.client.connection.maxidletime	ipc.[port_number].decay-scheduler.thresholds	ipc.[port_number].decay-scheduler.backoff.responsetime.enable	ipc.[port_number].weighted-cost.lockfree	rpc.metrics.quantile.enable
+[Ciri] Reason for fs.ftp.host: The property 'fs.ftp.host' has an invalid value '999.-1.0.0'. It should be a valid IP address.
+[Ciri] Reason for fs.s3a.block.size: The property 'fs.s3a.block.size' has an invalid value '32M'. It should be a numeric value with a valid suffix {K,M,G,T,P}.
+[Ciri] Reason for ipc.client.connection.maxidletime: The property 'ipc.client.connection.maxidletime' has an invalid value '10000'.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: The property 'ipc.[port_number].decay-scheduler.thresholds' has an invalid value '[26, 50, 100]'.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.enable: The property 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable' has an invalid value 'false'.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The property 'ipc.[port_number].weighted-cost.lockfree' has an invalid value '1'.
+[Ciri] Reason for rpc.metrics.quantile.enable: The property 'rpc.metrics.quantile.enable' has an invalid value 'false'.

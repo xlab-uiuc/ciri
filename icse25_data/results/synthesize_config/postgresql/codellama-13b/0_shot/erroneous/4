@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum', 'enable_mergejoin', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ['autovacuum is not a valid parameter for PostgreSQL 13.0', 'enable_mergejoin is not a valid parameter for PostgreSQL 13.0', 'tcp_keepalives_interval is not a valid parameter for PostgreSQL 13.0', 'vacuum_cost_page_miss is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['autovacuum', 'enable_mergejoin', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ['autovacuum is not a valid parameter for PostgreSQL 13.0', 'enable_mergejoin is not a valid parameter for PostgreSQL 13.0', 'tcp_keepalives_interval is not a valid parameter for PostgreSQL 13.0', 'vacuum_cost_page_miss is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['autovacuum', 'enable_mergejoin', 'vacuum_cost_page_miss'], 'reason': ["The value of the parameter 'autovacuum' is invalid. Valid values are 'on', 'off', or a number between 0 and 100.", "The value of the parameter 'enable_mergejoin' is invalid. Valid values are 'on', 'off', or a number between 0 and 100.", "The value of the parameter 'vacuum_cost_page_miss' is invalid. Valid values are 'on', 'off', or a number between 0 and 100."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: autovacuum	enable_mergejoin	tcp_keepalives_interval	vacuum_cost_page_miss
+[Ciri] Reason for autovacuum: autovacuum is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for enable_mergejoin: enable_mergejoin is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for tcp_keepalives_interval: tcp_keepalives_interval is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for vacuum_cost_page_miss: vacuum_cost_page_miss is not a valid parameter for PostgreSQL 13.0

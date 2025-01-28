@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.node-labels.provider.script.path'], 'reason': ["The value for 'yarn.nodemanager.hostname' seems to have too many periods. It should be a valid hostname or IP address.", "The value for 'yarn.nodemanager.node-labels.provider.script.path' should point to a valid script file."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.node-labels.provider.script.path'], 'reason': ["The property 'yarn.nodemanager.hostname' has an invalid value '2.2.2.2.2.2'.", "The property 'yarn.nodemanager.node-labels.provider.script.path' has an invalid value '/valid/file1'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname'], 'reason': ["The value for 'yarn.nodemanager.hostname' parameter seems to have too many dots in the IP address. It should be a valid IP address format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.hostname	yarn.nodemanager.node-labels.provider.script.path
+[Ciri] Reason for yarn.nodemanager.hostname: The property 'yarn.nodemanager.hostname' has an invalid value '2.2.2.2.2.2'.
+[Ciri] Reason for yarn.nodemanager.node-labels.provider.script.path: The property 'yarn.nodemanager.node-labels.provider.script.path' has an invalid value '/valid/file1'.

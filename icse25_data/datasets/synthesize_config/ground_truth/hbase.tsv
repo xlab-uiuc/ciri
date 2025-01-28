@@ -1,0 +1,50 @@
+Syntax	Data Type	zookeeper.recovery.retry.maxsleeptime	9.9		
+Syntax	Data Type	hbase.master.logcleaner.ttl	-5.5		
+Syntax	Data Type	hbase.regionserver.handler.count	true		
+Syntax	Data Type	hbase.ipc.server.callqueue.handler.factor	ciri/ciri		
+Syntax	Path	hbase.dynamic.jars.dir	//hadoop/io/local		
+Syntax	Path	hbase.tmp.dir	/\hadoop/s3a		
+Syntax	Path	hbase.rootdir	tmp////staging		
+Syntax	Path	hbase.local.dir	dev/urandom///		
+Syntax	IP Address	hbase.regionserver.info.bindAddress	0.0.0		
+Syntax	IP Address	hbase.status.multicast.address.ip	1.1.1.1.1.1		
+Syntax	IP Address	hbase.regionserver.info.bindAddress	2.2.2.2.2.2		
+Syntax	IP Address	hbase.status.multicast.address.ip	x.0.0.0.0.0		
+Syntax	Port	hbase.master.info.port	1.1		
+Syntax	Port	hbase.regionserver.port	-100.22		
+Syntax	Port	hbase.regionserver.info.port	ciri		
+Syntax	Port	hbase.zookeeper.property.clientPort	file://		
+Syntax	Permission	hbase.data.umask	ciri		
+Range	Basic Numeric	hbase.regionserver.regionSplitLimit	-100		
+Range	Basic Numeric	zookeeper.session.timeout	-1		
+Range	Basic Numeric	hbase.client.perserver.requests.threshold	4000000000		
+Range	Basic Numeric	hbase.client.scanner.timeout.period	-10		
+Range	Bool	hbase.regionserver.compaction.enabled	10		
+Range	Bool	hbase.regionserver.majorcompaction.pagecache.drop	hadoop		
+Range	Bool	hbase.regionserver.minorcompaction.pagecache.drop	1.5		
+Range	Bool	hbase.storescanner.parallel.seek.enable	10000		
+Range	Enum	hbase.hstore.checksum.algorithm	nonono		
+Range	Enum	hbase.regionserver.region.split.policy	NONE_POLICY		
+Range	Enum	hbase.rest.filter.classes	NOEXIST_CLASS		
+Range	Enum	hbase.hstore.checksum.algorithm	NOEXIST_ALGORITHM		
+Range	IP Address	hbase.regionserver.info.bindAddress	-1.0.0.0		
+Range	IP Address	hbase.status.multicast.address.ip	256.256.256.256		
+Range	IP Address	hbase.regionserver.info.bindAddress	999.-1.0.0		
+Range	IP Address	hbase.status.multicast.address.ip	0.0.256.0		
+Range	Port	hbase.zookeeper.leaderport	65536		
+Range	Port	hbase.zookeeper.property.clientPort	65536		
+Range	Port	hbase.rest.port	-1		
+Range	Port	hbase.status.multicast.address.port	-100		
+Range	Permission	hbase.data.umask	888		
+Dependency	Control	hbase.offpeak.start.hour	-1	hbase.hstore.compaction.ratio.offpeak	6.0F
+Dependency	Control	hbase.offpeak.end.hour	-1	hbase.hstore.compaction.ratio.offpeak	4.0F
+Dependency	Control	hbase.security.authentication	simple	hbase.auth.key.update.interval	43200000
+Dependency	Control	hbase.coprocessor.enabled	false	hbase.coprocessor.user.enabled	false
+Dependency	Value Relationship	hbase.hstore.compaction.max.size	130000000	hbase.hstore.compaction.min.size	134217728
+Dependency	Value Relationship	hbase.client.max.total.tasks	100	hbase.client.max.perregion.tasks	150
+Dependency	Value Relationship	hbase.rpc.timeout	3000	hbase.client.scanner.timeout.period	60000
+Dependency	Value Relationship	hbase.client.max.total.tasks	60	hbase.client.max.perregion.tasks	100
+Version	Parameter Change	hbase.master.regions.recovery.check.interval	1200000		
+Version	Parameter Change	hbase.regionserver.slowlog.ringbuffer.size	256		
+Version	Parameter Change	hbase.regions.recovery.store.file.ref.count	5		
+Version	Parameter Change	hbase.online.schema.update.enable	true		

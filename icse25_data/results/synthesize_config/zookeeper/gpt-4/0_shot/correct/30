@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['syncEnabled', 'clientPortAddress', 'secureClientPort', 'minSessionTimeout'], 'reason': ["The 'syncEnabled' property does not exist in ZooKeeper configuration.", "The 'clientPortAddress' should be 'clientPortAddress=0.0.0.0' without specifying the port, as the port is defined separately by 'clientPort' or 'secureClientPort'.", "The 'secureClientPort' should only specify the port number without an IP address, e.g., 'secureClientPort=3000'. The current format is correct, but the explanation is for clarity.", "The 'minSessionTimeout' cannot be negative. It should be a positive integer representing the minimum session timeout in milliseconds."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: syncEnabled	clientPortAddress	secureClientPort	minSessionTimeout
+[Ciri] Reason for syncEnabled: The 'syncEnabled' property does not exist in ZooKeeper configuration.
+[Ciri] Reason for clientPortAddress: The 'clientPortAddress' should be 'clientPortAddress=0.0.0.0' without specifying the port, as the port is defined separately by 'clientPort' or 'secureClientPort'.
+[Ciri] Reason for secureClientPort: The 'secureClientPort' should only specify the port number without an IP address, e.g., 'secureClientPort=3000'. The current format is correct, but the explanation is for clarity.
+[Ciri] Reason for minSessionTimeout: The 'minSessionTimeout' cannot be negative. It should be a positive integer representing the minimum session timeout in milliseconds.

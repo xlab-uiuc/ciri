@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.worker.client.pool.max', 'alluxio.user.conf.cluster.default.enabled', 'alluxio.user.network.streaming.max.inbound.message.size'], 'reason': ['alluxio.user.block.worker.client.pool.max should be an integer', 'alluxio.user.conf.cluster.default.enabled should be a boolean', 'alluxio.user.network.streaming.max.inbound.message.size should be a valid size']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.max.inbound.message.size', 'alluxio.user.block.worker.client.pool.max'], 'reason': ['alluxio.user.network.streaming.max.inbound.message.size should be a positive integer', 'alluxio.user.block.worker.client.pool.max should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.max.inbound.message.size', 'alluxio.user.block.worker.client.pool.max'], 'reason': ['alluxio.user.network.streaming.max.inbound.message.size is not a valid property', 'alluxio.user.block.worker.client.pool.max is not a valid property']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.streaming.max.inbound.message.size	alluxio.user.block.worker.client.pool.max
+[Ciri] Reason for alluxio.user.network.streaming.max.inbound.message.size: alluxio.user.network.streaming.max.inbound.message.size is not a valid property
+[Ciri] Reason for alluxio.user.block.worker.client.pool.max: alluxio.user.block.worker.client.pool.max should be a positive integer

@@ -1,0 +1,17 @@
+Wrong shot number:
+[2]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'DEFAULT_EXCEPTION_REPORTER', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' should be a positive integer representing the number of seconds for cache expiration.", "The property 'DEFAULT_EXCEPTION_REPORTER' should not be set directly in Django 4.0.", "The property 'PASSWORD_RESET_TIMEOUT' should be a positive integer representing the number of seconds for the password reset timeout.", "The property 'CSRF_COOKIE_AGE' should be a positive integer representing the age of CSRF cookies in seconds."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	DEFAULT_EXCEPTION_REPORTER	PASSWORD_RESET_TIMEOUT	CSRF_COOKIE_AGE
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: The property 'CACHE_MIDDLEWARE_SECONDS' should be a positive integer representing the number of seconds for cache expiration.
+[Ciri] Reason for DEFAULT_EXCEPTION_REPORTER: The property 'DEFAULT_EXCEPTION_REPORTER' should not be set directly in Django 4.0.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: The property 'PASSWORD_RESET_TIMEOUT' should be a positive integer representing the number of seconds for the password reset timeout.
+[Ciri] Reason for CSRF_COOKIE_AGE: The property 'CSRF_COOKIE_AGE' should be a positive integer representing the age of CSRF cookies in seconds.

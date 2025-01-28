@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_SAMESITE', 'TIME_ZONE', 'SESSION_SERIALIZER', 'FORCE_SCRIPT_NAME', 'ALLOWED_HOSTS', 'CSRF_USE_SESSIONS'], 'reason': ['CSRF_COOKIE_SAMESITE is not a valid parameter for Django 4.0', 'TIME_ZONE is not a valid parameter for Django 4.0', 'SESSION_SERIALIZER is not a valid parameter for Django 4.0', 'FORCE_SCRIPT_NAME is not a valid parameter for Django 4.0', 'ALLOWED_HOSTS is not a valid parameter for Django 4.0', 'CSRF_USE_SESSIONS is not a valid parameter for Django 4.0']}
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_SAMESITE', 'FORCE_SCRIPT_NAME'], 'reason': ['CSRF_COOKIE_SAMESITE is not a valid parameter for Django 4.0', 'FORCE_SCRIPT_NAME is not a valid parameter for Django 4.0']}
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_SAMESITE', 'FORCE_SCRIPT_NAME'], 'reason': ['CSRF_COOKIE_SAMESITE is not a valid parameter for django version 4.0', 'FORCE_SCRIPT_NAME is not a valid parameter for django version 4.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: CSRF_COOKIE_SAMESITE	FORCE_SCRIPT_NAME
+[Ciri] Reason for CSRF_COOKIE_SAMESITE: CSRF_COOKIE_SAMESITE is not a valid parameter for django version 4.0
+[Ciri] Reason for FORCE_SCRIPT_NAME: FORCE_SCRIPT_NAME is not a valid parameter for Django 4.0

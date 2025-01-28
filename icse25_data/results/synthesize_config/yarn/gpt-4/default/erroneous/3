@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 6, 1]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.connect.retry-interval.ms', 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb'], 'reason': ["The property 'yarn.resourcemanager.connect.retry-interval.ms' has the value 'true' which is not of the correct type Integer.", "The property 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb' has the value '0' which may lead to all disks being marked as bad because it does not meet the minimum free space requirement."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.connect.retry-interval.ms	yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb
+[Ciri] Reason for yarn.resourcemanager.connect.retry-interval.ms: The property 'yarn.resourcemanager.connect.retry-interval.ms' has the value 'true' which is not of the correct type Integer.
+[Ciri] Reason for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb: The property 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb' has the value '0' which may lead to all disks being marked as bad because it does not meet the minimum free space requirement.

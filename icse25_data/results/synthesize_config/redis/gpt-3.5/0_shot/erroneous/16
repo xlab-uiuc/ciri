@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'maxmemory-clients', 'auto-aof-rewrite-percentage', 'timeout', 'repl-backlog-size', 'tls-protocols', 'latency-monitor-threshold', 'lazyfree-lazy-expire'], 'reason': ['Invalid value for cluster-announce-tls-port. It should be a port number.', 'Invalid value for maxmemory-clients. It should be specified in bytes or with a suffix (k, m, g).', 'Invalid value for auto-aof-rewrite-percentage. It should be a percentage value.', 'Invalid value for timeout. It should be specified in seconds.', 'Invalid value for repl-backlog-size. It should be specified in bytes or with a suffix (k, m, g).', 'Invalid value for tls-protocols. It should be a list of supported TLS protocols.', 'Invalid value for latency-monitor-threshold. It should be a positive number.', 'Invalid value for lazyfree-lazy-expire. It should be a boolean value (yes/no).']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'maxmemory-clients', 'auto-aof-rewrite-percentage', 'timeout', 'repl-backlog-size', 'tls-protocols', 'latency-monitor-threshold', 'lazyfree-lazy-expire'], 'reason': ['Invalid value for cluster-announce-tls-port. It should be a valid port number.', 'Invalid value for maxmemory-clients. It should be specified in bytes (e.g., 1g should be 1gb).', 'Invalid value for auto-aof-rewrite-percentage. It should be a percentage value (e.g., 100 for 100%).', 'Invalid value for timeout. It should be specified in seconds.', 'Invalid value for repl-backlog-size. It should be specified in bytes (e.g., 1mb should be 1mb).', 'Invalid value for tls-protocols. It should be a comma-separated list of valid TLS protocol versions.', 'Invalid value for latency-monitor-threshold. It should be a positive integer.', 'Invalid value for lazyfree-lazy-expire. It should be a boolean value (yes or no).']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'maxmemory-clients', 'auto-aof-rewrite-percentage', 'repl-backlog-size', 'tls-protocols', 'lazyfree-lazy-expire'], 'reason': ['Invalid value for cluster-announce-tls-port. It should be a port number.', 'Invalid value for maxmemory-clients. It should be specified in bytes (e.g., 1g is not a valid format).', 'Invalid value for auto-aof-rewrite-percentage. It should be a percentage value between 1 and 100.', 'Invalid value for repl-backlog-size. It should be specified in bytes (e.g., 1mb is not a valid format).', 'Invalid value for tls-protocols. It should be a list of supported TLS protocols.', "Invalid value for lazyfree-lazy-expire. It should be either 'yes' or 'no'."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: cluster-announce-tls-port	maxmemory-clients	auto-aof-rewrite-percentage	timeout	repl-backlog-size	tls-protocols	latency-monitor-threshold	lazyfree-lazy-expire
+[Ciri] Reason for cluster-announce-tls-port: Invalid value for cluster-announce-tls-port. It should be a valid port number.
+[Ciri] Reason for maxmemory-clients: Invalid value for maxmemory-clients. It should be specified in bytes (e.g., 1g should be 1gb).
+[Ciri] Reason for auto-aof-rewrite-percentage: Invalid value for auto-aof-rewrite-percentage. It should be a percentage value.
+[Ciri] Reason for timeout: Invalid value for timeout. It should be specified in seconds.
+[Ciri] Reason for repl-backlog-size: Invalid value for repl-backlog-size. It should be specified in bytes or with a suffix (k, m, g).
+[Ciri] Reason for tls-protocols: Invalid value for tls-protocols. It should be a comma-separated list of valid TLS protocol versions.
+[Ciri] Reason for latency-monitor-threshold: Invalid value for latency-monitor-threshold. It should be a positive integer.
+[Ciri] Reason for lazyfree-lazy-expire: Invalid value for lazyfree-lazy-expire. It should be a boolean value (yes or no).

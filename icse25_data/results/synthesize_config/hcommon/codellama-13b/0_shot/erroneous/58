@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.credential.provider.path', 'fs.s3a.s3guard.cli.prune.age', 'ipc.[port_number].cost-provider.impl', 'ipc.[port_number].weighted-cost.lockshared', 'ftp.bytes-per-checksum'], 'reason': ['hadoop.security.credential.provider.path: The property is not valid.', 'fs.s3a.s3guard.cli.prune.age: The property is not valid.', 'ipc.[port_number].cost-provider.impl: The property is not valid.', 'ipc.[port_number].weighted-cost.lockshared: The property is not valid.', 'ftp.bytes-per-checksum: The property is not valid.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.cli.prune.age', 'ipc.[port_number].cost-provider.impl', 'ipc.[port_number].weighted-cost.lockshared', 'ftp.stream-buffer-size', 'ftp.bytes-per-checksum'], 'reason': ['fs.s3a.s3guard.cli.prune.age is not a valid property', 'ipc.[port_number].cost-provider.impl is not a valid property', 'ipc.[port_number].weighted-cost.lockshared is not a valid property', 'ftp.stream-buffer-size is not a valid property', 'ftp.bytes-per-checksum is not a valid property']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.cli.prune.age', 'ipc.[port_number].cost-provider.impl', 'ipc.[port_number].weighted-cost.lockshared', 'ftp.stream-buffer-size', 'ftp.bytes-per-checksum'], 'reason': ['fs.s3a.s3guard.cli.prune.age is not a valid property', 'ipc.[port_number].cost-provider.impl is not a valid property', 'ipc.[port_number].weighted-cost.lockshared is not a valid property', 'ftp.stream-buffer-size is not a valid property', 'ftp.bytes-per-checksum is not a valid property']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: fs.s3a.s3guard.cli.prune.age	ipc.[port_number].cost-provider.impl	ipc.[port_number].weighted-cost.lockshared	ftp.stream-buffer-size	ftp.bytes-per-checksum
+[Ciri] Reason for fs.s3a.s3guard.cli.prune.age: fs.s3a.s3guard.cli.prune.age is not a valid property
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: ipc.[port_number].cost-provider.impl is not a valid property
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: ipc.[port_number].weighted-cost.lockshared is not a valid property
+[Ciri] Reason for ftp.stream-buffer-size: ftp.stream-buffer-size is not a valid property
+[Ciri] Reason for ftp.bytes-per-checksum: ftp.bytes-per-checksum is not a valid property

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPortAddress'], 'reason': ['clientPortAddress is not a valid port number', 'secureClientPortAddress is not a valid port number']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPortAddress'], 'reason': ['clientPortAddress should be a port number, not an IP address', 'secureClientPortAddress should be a port number, not an IP address']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress'], 'reason': ['secureClientPortAddress is not a valid property for zookeeper version 3.7.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: clientPortAddress	secureClientPortAddress
+[Ciri] Reason for clientPortAddress: clientPortAddress is not a valid port number
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress should be a port number, not an IP address

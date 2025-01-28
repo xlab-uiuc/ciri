@@ -1,0 +1,12 @@
+Correct shot number:
+[10, 7, 9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'ipc.[port_number].decay-scheduler.thresholds'], 'reason': ['The property \'fs.ftp.timeout\' has an incorrect usage tag \'xmlPropsToSkipCompare.add("fs.ftp.timeout");\'.', "The property 'ipc.[port_number].decay-scheduler.thresholds' has an invalid parameter '[port_number]' in the name."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.timeout	ipc.[port_number].decay-scheduler.thresholds
+[Ciri] Reason for fs.ftp.timeout: The property 'fs.ftp.timeout' has an incorrect usage tag 'xmlPropsToSkipCompare.add("fs.ftp.timeout");'.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: The property 'ipc.[port_number].decay-scheduler.thresholds' has an invalid parameter '[port_number]' in the name.

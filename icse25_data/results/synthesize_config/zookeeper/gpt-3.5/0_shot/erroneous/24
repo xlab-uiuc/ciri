@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['reconfigEnabled', 'portUnification', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ["The property 'reconfigEnabled' is not a valid configuration parameter for Zookeeper version 3.7.0.", "The property 'portUnification' is not a valid configuration parameter for Zookeeper version 3.7.0.", "The property 'quorum.auth.kerberos.servicePrincipal' is not a valid configuration parameter for Zookeeper version 3.7.0."]}
+
+{'hasError': True, 'errParameter': ['reconfigEnabled', 'portUnification', 'quorum.auth.kerberos.servicePrincipal', 'minSessionTimeout'], 'reason': ["Invalid property 'reconfigEnabled' for Zookeeper version 3.7.0", "Invalid property 'portUnification' for Zookeeper version 3.7.0", "Invalid property 'quorum.auth.kerberos.servicePrincipal' for Zookeeper version 3.7.0", "Invalid property 'minSessionTimeout' for Zookeeper version 3.7.0"]}
+
+{'hasError': True, 'errParameter': ['reconfigEnabled', 'portUnification', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ["Invalid property 'reconfigEnabled' for Zookeeper version 3.7.0", "Invalid property 'portUnification' for Zookeeper version 3.7.0", "Invalid property 'quorum.auth.kerberos.servicePrincipal' for Zookeeper version 3.7.0"]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: reconfigEnabled	portUnification	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for reconfigEnabled: The property 'reconfigEnabled' is not a valid configuration parameter for Zookeeper version 3.7.0.
+[Ciri] Reason for portUnification: The property 'portUnification' is not a valid configuration parameter for Zookeeper version 3.7.0.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: The property 'quorum.auth.kerberos.servicePrincipal' is not a valid configuration parameter for Zookeeper version 3.7.0.

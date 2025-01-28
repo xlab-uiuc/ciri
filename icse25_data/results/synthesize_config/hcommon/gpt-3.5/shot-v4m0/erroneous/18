@@ -1,0 +1,13 @@
+Correct shot number:
+[1, 11, 12, 9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.mapfile.bloom.size', 'ipc.[port_number].callqueue.impl', 'hadoop.http.authentication.cookie.domain'], 'reason': ["The property 'io.mapfile.bloom.size' has an additional 'usage' tag which is not a standard property attribute.", "The property 'ipc.[port_number].callqueue.impl' contains a placeholder '[port_number]' which is not a valid parameter format.", "The property 'hadoop.http.authentication.cookie.domain' has an invalid value '1.1.1.1.1.1'. It should be a valid domain name."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: io.mapfile.bloom.size	ipc.[port_number].callqueue.impl	hadoop.http.authentication.cookie.domain
+[Ciri] Reason for io.mapfile.bloom.size: The property 'io.mapfile.bloom.size' has an additional 'usage' tag which is not a standard property attribute.
+[Ciri] Reason for ipc.[port_number].callqueue.impl: The property 'ipc.[port_number].callqueue.impl' contains a placeholder '[port_number]' which is not a valid parameter format.
+[Ciri] Reason for hadoop.http.authentication.cookie.domain: The property 'hadoop.http.authentication.cookie.domain' has an invalid value '1.1.1.1.1.1'. It should be a valid domain name.

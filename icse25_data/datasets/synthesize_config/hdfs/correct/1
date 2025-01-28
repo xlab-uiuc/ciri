@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.fs-limits.max-blocks-per-file</name>
+  <value>20000</value>
+    <description>Maximum number of blocks per file, enforced by the Namenode on
+        write. This prevents the creation of extremely large files which can
+        degrade performance.</description>
+</property>
+
+<property>
+  <name>dfs.client.block.write.replace-datanode-on-failure.enable</name>
+  <value>false</value>
+  <description>
+    If there is a datanode/network failure in the write pipeline,
+    DFSClient will try to remove the failed datanode from the pipeline
+    and then continue writing with the remaining datanodes. As a result,
+    the number of datanodes in the pipeline is decreased.  The feature is
+    to add new datanodes to the pipeline.
+
+    This is a site-wide property to enable/disable the feature.
+
+    When the cluster size is extremely small, e.g. 3 nodes or less, cluster
+    administrators may want to set the policy to NEVER in the default
+    configuration file or disable this feature.  Otherwise, users may
+    experience an unusually high rate of pipeline failures since it is
+    impossible to find new datanodes for replacement.
+
+    See also dfs.client.block.write.replace-datanode-on-failure.policy
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.directoryscan.throttle.limit.ms.per.sec</name>
+  <value>500</value>
+  <description>The report compilation threads are limited to only running for
+  a given number of milliseconds per second, as configured by the
+  property. The limit is taken per thread, not in aggregate, e.g. setting
+  a limit of 100ms for 4 compiler threads will result in each thread being
+  limited to 100ms, not 25ms.
+
+  Note that the throttle does not interrupt the report compiler threads, so the
+  actual running time of the threads per second will typically be somewhat
+  higher than the throttle limit, usually by no more than 20%.
+
+  Setting this limit to 1000 disables compiler thread throttling. Only
+  values between 1 and 1000 are valid. Setting an invalid value will result
+  in the throttle being disabled and an error message being logged. 1000 is
+  the default setting.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.checkpoint.check.quiet-multiplier</name>
+  <value>0.75</value>
+  <description>
+    Used to calculate the amount of time between retries when in the 'quiet' period
+    for creating checkpoints (active namenode already has an up-to-date image from another
+    checkpointer), so we wait a multiplier of the dfs.namenode.checkpoint.check.period before
+    retrying the checkpoint because another node likely is already managing the checkpoints,
+    allowing us to save bandwidth to transfer checkpoints that don't need to be used.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.failover.sleep.base.millis</name>
+  <value>500</value>
+  <description>
+    Expert only. The time to wait, in milliseconds, between failover
+    attempts increases exponentially as a function of the number of
+    attempts made so far, with a random factor of +/- 50%. This option
+    specifies the base value used in the failover calculation. The
+    first failover will retry immediately. The 2nd failover attempt
+    will delay at least dfs.client.failover.sleep.base.millis
+    milliseconds. And so on.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.deadnode.detection.probe.deadnode.threads</name>
+  <value>1</value>
+    <description>
+      The maximum number of threads to use for probing dead node.
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.snapshot.skiplist.max.levels</name>
+  <value>0</value>
+  <description>
+    Maximum no of the skip levels to be maintained in the skip list for
+    storing directory snapshot diffs. By default, it is set to 0 and a linear
+    list will be used to store the directory snapshot diffs.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.gc.time.monitor.enable</name>
+  <value>false</value>
+    <description>
+      Enable the GcTimePercentage metrics in NameNode's JvmMetrics. It will
+      start a thread(GcTimeMonitor) computing the metric.
+    </description>
+</property>
+
+</configuration>

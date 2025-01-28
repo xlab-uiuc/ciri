@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.keepalive.timeout', 'alluxio.worker.master.connect.retry.timeout', 'alluxio.master.embedded.journal.entry.size.max'], 'reason': ["The correct property name is 'alluxio.worker.network.keepalive.time.ms' and it should be specified in milliseconds.", "The correct property name is 'alluxio.worker.master.connect.retry.timeout.ms' and it should be specified in milliseconds.", "The correct property name is 'alluxio.master.journal.entry.size.max' and it should be specified in bytes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.worker.network.keepalive.timeout	alluxio.worker.master.connect.retry.timeout	alluxio.master.embedded.journal.entry.size.max
+[Ciri] Reason for alluxio.worker.network.keepalive.timeout: The correct property name is 'alluxio.worker.network.keepalive.time.ms' and it should be specified in milliseconds.
+[Ciri] Reason for alluxio.worker.master.connect.retry.timeout: The correct property name is 'alluxio.worker.master.connect.retry.timeout.ms' and it should be specified in milliseconds.
+[Ciri] Reason for alluxio.master.embedded.journal.entry.size.max: The correct property name is 'alluxio.master.journal.entry.size.max' and it should be specified in bytes.

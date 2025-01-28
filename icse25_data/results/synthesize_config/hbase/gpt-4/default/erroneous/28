@@ -1,0 +1,16 @@
+Wrong shot number:
+[2, 5, 9]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.port', 'hbase.ipc.server.callqueue.handler.factor', 'hbase.rest.filter.classes'], 'reason': ["The property 'hbase.regionserver.port' has the value '3000' which is not in the default port range for HBase RegionServers.", "The property 'hbase.ipc.server.callqueue.handler.factor' has the value '0.05' which might be too low for practical use, potentially leading to inefficient queue usage.", "The property 'hbase.rest.filter.classes' has the value 'NOEXIST_CLASS' which likely refers to a non-existent class, causing errors if REST services are used."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.port	hbase.ipc.server.callqueue.handler.factor	hbase.rest.filter.classes
+[Ciri] Reason for hbase.regionserver.port: The property 'hbase.regionserver.port' has the value '3000' which is not in the default port range for HBase RegionServers.
+[Ciri] Reason for hbase.ipc.server.callqueue.handler.factor: The property 'hbase.ipc.server.callqueue.handler.factor' has the value '0.05' which might be too low for practical use, potentially leading to inefficient queue usage.
+[Ciri] Reason for hbase.rest.filter.classes: The property 'hbase.rest.filter.classes' has the value 'NOEXIST_CLASS' which likely refers to a non-existent class, causing errors if REST services are used.

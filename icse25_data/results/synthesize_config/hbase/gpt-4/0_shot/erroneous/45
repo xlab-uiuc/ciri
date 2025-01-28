@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port.auto', 'hbase.mob.delfile.max.count'], 'reason': ["The 'hbase.regionserver.info.port.auto' property does not exist in HBase 2.2.7. The correct property for enabling automatic port search is not specified in this version.", "The default value for 'hbase.mob.delfile.max.count' is incorrect. The stated default value is 3, but the actual value set in the configuration is 6. If 6 is intended, the description should not mention a default value of 3."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.info.port.auto	hbase.mob.delfile.max.count
+[Ciri] Reason for hbase.regionserver.info.port.auto: The 'hbase.regionserver.info.port.auto' property does not exist in HBase 2.2.7. The correct property for enabling automatic port search is not specified in this version.
+[Ciri] Reason for hbase.mob.delfile.max.count: The default value for 'hbase.mob.delfile.max.count' is incorrect. The stated default value is 3, but the actual value set in the configuration is 6. If 6 is intended, the description should not mention a default value of 3.

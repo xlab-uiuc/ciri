@@ -1,0 +1,18 @@
+Wrong shot number:
+[11, 3, 8]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['aof-timestamp-enabled'], 'reason': ["The value of the property 'aof-timestamp-enabled' should be 'yes' to enable the property 'aof-load-truncated'.", "The value of the property 'aof-timestamp-enabled' should be 'yes' to enable the property 'aof-use-rdb-preamble'.", "The value of the property 'aof-timestamp-enabled' should be 'yes' to enable the property 'aof-rewrite-incremental-fsync'.", "The value of the property 'aof-timestamp-enabled' should be 'yes' to enable the property 'aof-load-truncated'.", "The value of the property 'aof-timestamp-enabled' should be 'yes' to enable the property 'aof-use-rdb-preamble'.", "The value of the property 'aof-timestamp-enabled' should be 'yes' to enable the property 'aof-rewrite-incremental-fsync'."]}
+
+{'hasError': True, 'errParameter': ['aof-timestamp-enabled'], 'reason': ["The property 'aof-timestamp-enabled' has the value 'no' which is not within the accepted value {yes,no}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: aof-timestamp-enabled
+[Ciri] Reason for aof-timestamp-enabled: The property 'aof-timestamp-enabled' has the value 'no' which is not within the accepted value {yes,no}.

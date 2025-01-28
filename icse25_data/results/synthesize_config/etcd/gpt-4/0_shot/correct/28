@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ["The 'max-snapshots' parameter is not recognized. The correct parameter for controlling the number of snapshot files is 'snapshot-count'.", "The 'quota-backend-bytes' value of 0 is not valid. It should be set to a positive integer representing the maximum size of the backend database in bytes, or left unset for the default.", "The 'auto-compaction-mode' value 'periodic' requires an additional 'auto-compaction-retention' parameter to specify the retention time."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max-snapshots	quota-backend-bytes	auto-compaction-mode
+[Ciri] Reason for max-snapshots: The 'max-snapshots' parameter is not recognized. The correct parameter for controlling the number of snapshot files is 'snapshot-count'.
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' value of 0 is not valid. It should be set to a positive integer representing the maximum size of the backend database in bytes, or left unset for the default.
+[Ciri] Reason for auto-compaction-mode: The 'auto-compaction-mode' value 'periodic' requires an additional 'auto-compaction-retention' parameter to specify the retention time.

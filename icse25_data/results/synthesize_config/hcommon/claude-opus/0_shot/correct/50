@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.input.compression', 'hadoop.security.random.device.file.path'], 'reason': ["For Hadoop 3.3.0, the valid values for fs.s3a.select.input.compression are 'none', 'gzip' and 'bzip2'. The configuration has 'none' and 'gzip' which is incorrect syntax.", 'The hadoop.security.random.device.file.path property should specify a path to a secure random number generating device file like /dev/urandom. Specifying a regular file path like /valid/file1 is not recommended and may lead to security issues.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.select.input.compression	hadoop.security.random.device.file.path
+[Ciri] Reason for fs.s3a.select.input.compression: For Hadoop 3.3.0, the valid values for fs.s3a.select.input.compression are 'none', 'gzip' and 'bzip2'. The configuration has 'none' and 'gzip' which is incorrect syntax.
+[Ciri] Reason for hadoop.security.random.device.file.path: The hadoop.security.random.device.file.path property should specify a path to a secure random number generating device file like /dev/urandom. Specifying a regular file path like /valid/file1 is not recommended and may lead to security issues.

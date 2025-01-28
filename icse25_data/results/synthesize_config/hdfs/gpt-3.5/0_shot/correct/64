@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.journal-plugin.qjournal', 'dfs.journalnode.https-address'], 'reason': ["Property 'dfs.namenode.edits.journal-plugin.qjournal' is deprecated in HDFS version 3.3.0.", "Property 'dfs.journalnode.https-address' is not a valid property in HDFS version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.service.handler.count', 'dfs.journalnode.https-address', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["The property 'dfs.namenode.service.handler.count' has a description that mentions a condition for validity based on another property 'dfs.namenode.servicerpc-address', but 'dfs.namenode.servicerpc-address' is not present in the configuration.", "The property 'dfs.journalnode.https-address' has a description that mentions the server starting on a free port if the port is set to 0, but this behavior may not be supported in HDFS version 3.3.0.", "The property 'dfs.provided.aliasmap.leveldb.path' has a description that specifies a path for the leveldb-based alias map, but it does not mention the necessity of enabling or configuring the alias map itself."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.journal-plugin.qjournal', 'dfs.namenode.service.handler.count', 'dfs.bytes-per-checksum', 'dfs.journalnode.https-address', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["Property 'dfs.namenode.edits.journal-plugin.qjournal' is not a valid property for HDFS version 3.3.0.", "Property 'dfs.namenode.service.handler.count' has a description that is not formatted correctly.", "Property 'dfs.bytes-per-checksum' has a description that is not formatted correctly.", "Property 'dfs.journalnode.https-address' is not a valid property for HDFS version 3.3.0.", "Property 'dfs.provided.aliasmap.leveldb.path' has a description that is not formatted correctly."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.journal-plugin.qjournal', 'dfs.journalnode.https-address'], 'reason': ["Property 'dfs.namenode.edits.journal-plugin.qjournal' is not a valid property for HDFS version 3.3.0.", "Property 'dfs.journalnode.https-address' is not a valid property for HDFS version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.journal-plugin.qjournal', 'dfs.namenode.service.handler.count', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["Property 'dfs.namenode.edits.journal-plugin.qjournal' is not a valid property for HDFS version 3.3.0.", "Property 'dfs.namenode.service.handler.count' is not a valid property for HDFS version 3.3.0.", "Property 'dfs.provided.aliasmap.leveldb.path' is not a valid property for HDFS version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.journal-plugin.qjournal', 'dfs.journalnode.https-address'], 'reason': ["Property 'dfs.namenode.edits.journal-plugin.qjournal' is not a valid property for HDFS version 3.3.0.", "Property 'dfs.journalnode.https-address' is not a valid property for HDFS version 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.edits.journal-plugin.qjournal	dfs.journalnode.https-address
+[Ciri] Reason for dfs.namenode.edits.journal-plugin.qjournal: Property 'dfs.namenode.edits.journal-plugin.qjournal' is not a valid property for HDFS version 3.3.0.
+[Ciri] Reason for dfs.journalnode.https-address: Property 'dfs.journalnode.https-address' is not a valid property for HDFS version 3.3.0.

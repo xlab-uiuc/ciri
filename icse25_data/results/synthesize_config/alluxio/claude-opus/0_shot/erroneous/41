@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.underfs.s3.default.mode'], 'reason': ['alluxio.job.worker.rpc.port should be set to a value between 0 and 65535. 65536 is out of range.', 'alluxio.underfs.s3.default.mode should be set to a valid POSIX mode in octal notation. 350 is not a valid mode. A valid example would be 0700.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.rpc.port	alluxio.underfs.s3.default.mode
+[Ciri] Reason for alluxio.job.worker.rpc.port: alluxio.job.worker.rpc.port should be set to a value between 0 and 65535. 65536 is out of range.
+[Ciri] Reason for alluxio.underfs.s3.default.mode: alluxio.underfs.s3.default.mode should be set to a valid POSIX mode in octal notation. 350 is not a valid mode. A valid example would be 0700.

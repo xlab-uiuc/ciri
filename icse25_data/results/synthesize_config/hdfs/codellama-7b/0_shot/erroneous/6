@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.max.full.block.report.leases'], 'reason': ['The value of dfs.namenode.max.full.block.report.leases should be greater than or equal to 1.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.edits.dir', 'dfs.namenode.checkpoint.edits.dir'], 'reason': ['The value of this property is the same as dfs.namenode.checkpoint.dir. This is not allowed.', 'The value of this property is the same as dfs.namenode.checkpoint.dir. This is not allowed.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.max.full.block.report.leases'], 'reason': ['The maximum number of leases for full block reports that the NameNode will issue at any given time. This prevents the NameNode from being flooded with full block reports that use up all the RPC handler threads. This number should never be more than the number of RPC handler threads or less than 1.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.max.full.block.report.leases
+[Ciri] Reason for dfs.namenode.max.full.block.report.leases: The maximum number of leases for full block reports that the NameNode will issue at any given time. This prevents the NameNode from being flooded with full block reports that use up all the RPC handler threads. This number should never be more than the number of RPC handler threads or less than 1.

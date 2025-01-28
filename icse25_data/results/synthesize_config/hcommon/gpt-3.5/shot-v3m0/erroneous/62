@@ -1,0 +1,13 @@
+Correct shot number:
+[13, 2, 10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.retry.throttle.interval', 'fs.wasbs.impl', 'ipc.[port_number].weighted-cost.lockexclusive'], 'reason': ["Invalid value '1ms' for property 'fs.s3a.retry.throttle.interval'. The value should be in milliseconds format.", "Invalid property 'fs.wasbs.impl'. Usage information should not be included within the property element.", "Invalid property 'ipc.[port_number].weighted-cost.lockexclusive'. The property name should not contain placeholders like '[port_number]'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.s3a.retry.throttle.interval	fs.wasbs.impl	ipc.[port_number].weighted-cost.lockexclusive
+[Ciri] Reason for fs.s3a.retry.throttle.interval: Invalid value '1ms' for property 'fs.s3a.retry.throttle.interval'. The value should be in milliseconds format.
+[Ciri] Reason for fs.wasbs.impl: Invalid property 'fs.wasbs.impl'. Usage information should not be included within the property element.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockexclusive: Invalid property 'ipc.[port_number].weighted-cost.lockexclusive'. The property name should not contain placeholders like '[port_number]'.

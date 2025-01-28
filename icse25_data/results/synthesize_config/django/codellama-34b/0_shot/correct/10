@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['EMAIL_USE_SSL', 'EMAIL_USE_TLS'], 'reason': ['EMAIL_USE_SSL and EMAIL_USE_TLS are mutually exclusive. Please only use one of them.']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'EMAIL_BACKEND', 'EMAIL_HOST', 'EMAIL_PORT', 'EMAIL_USE_TLS', 'EMAIL_HOST_USER', 'EMAIL_HOST_PASSWORD', 'EMAIL_USE_SSL', 'EMAIL_SSL_CERTFILE', 'EMAIL_SSL_KEYFILE'], 'reason': ['DEBUG should be a boolean', 'EMAIL_BACKEND should be a string', 'EMAIL_HOST should be a string', 'EMAIL_PORT should be an integer', 'EMAIL_USE_TLS should be a boolean', 'EMAIL_HOST_USER should be a string', 'EMAIL_HOST_PASSWORD should be a string', 'EMAIL_USE_SSL should be a boolean', 'EMAIL_SSL_CERTFILE should be a string', 'EMAIL_SSL_KEYFILE should be a string']}
+
+{'hasError': True, 'errParameter': ['EMAIL_USE_TLS', 'EMAIL_USE_SSL', 'EMAIL_SSL_CERTFILE', 'EMAIL_SSL_KEYFILE'], 'reason': ['EMAIL_USE_TLS is not a valid parameter for Django 4.0', 'EMAIL_USE_SSL is not a valid parameter for Django 4.0', 'EMAIL_SSL_CERTFILE is not a valid parameter for Django 4.0', 'EMAIL_SSL_KEYFILE is not a valid parameter for Django 4.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['EMAIL_USE_TLS', 'EMAIL_USE_SSL', 'EMAIL_SSL_KEYFILE'], 'reason': ['EMAIL_USE_TLS is not a valid parameter for Django 4.0', 'EMAIL_USE_SSL is not a valid parameter for Django 4.0', 'EMAIL_SSL_KEYFILE is not a valid parameter for Django 4.0']}
+
+{'hasError': True, 'errParameter': ['EMAIL_USE_TLS', 'EMAIL_USE_SSL', 'EMAIL_SSL_KEYFILE'], 'reason': ['EMAIL_USE_TLS, EMAIL_USE_SSL, and EMAIL_SSL_KEYFILE are deprecated in Django 4.0. Use EMAIL_USE_TLS, EMAIL_USE_SSL, and EMAIL_SSL_KEYFILE_PASSWORD instead.']}
+
+{'hasError': True, 'errParameter': ['EMAIL_USE_TLS', 'EMAIL_USE_SSL'], 'reason': ['EMAIL_USE_TLS and EMAIL_USE_SSL are mutually exclusive, you can only use one of them.', 'EMAIL_USE_TLS and EMAIL_USE_SSL are mutually exclusive, you can only use one of them.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: EMAIL_USE_TLS	EMAIL_USE_SSL	EMAIL_SSL_KEYFILE
+[Ciri] Reason for EMAIL_USE_TLS: EMAIL_USE_TLS is not a valid parameter for Django 4.0
+[Ciri] Reason for EMAIL_USE_SSL: EMAIL_USE_SSL is not a valid parameter for Django 4.0
+[Ciri] Reason for EMAIL_SSL_KEYFILE: EMAIL_SSL_KEYFILE is not a valid parameter for Django 4.0

@@ -1,0 +1,48 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'listen-peer-urls', 'listen-client-urls', 'strict-reconfig-check'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'", 'listen-peer-urls must be a list of URLs', 'listen-client-urls must be a list of URLs', 'strict-reconfig-check must be a boolean']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-retention', 'auto-compaction-mode', 'max-wals', 'strict-reconfig-check'], 'reason': ['initial-cluster-state is not a valid value for auto-compaction-mode', 'auto-compaction-retention is not a valid value for auto-compaction-mode', 'auto-compaction-mode is not a valid value for auto-compaction-mode', 'max-wals is not a valid value for auto-compaction-mode', 'strict-reconfig-check is not a valid value for auto-compaction-mode']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention'], 'reason': ['auto-compaction-retention is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-retention', 'auto-compaction-mode', 'strict-reconfig-check'], 'reason': ["initial-cluster-state is not a valid value. Valid values are 'new', 'existing', and 'removed'.", "auto-compaction-retention is not a valid value. Valid values are '0' and '1'.", "auto-compaction-mode is not a valid value. Valid values are 'periodic' and 'revision'.", "strict-reconfig-check is not a valid value. Valid values are 'true' and 'false'."]}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-retention', 'auto-compaction-mode', 'max-wals', 'strict-reconfig-check'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'", 'auto-compaction-retention must be a positive integer', "auto-compaction-mode must be either 'periodic' or 'revision'", 'max-wals must be a positive integer', 'strict-reconfig-check must be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-retention', 'auto-compaction-mode', 'max-wals', 'strict-reconfig-check'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'", 'auto-compaction-retention must be a positive integer', "auto-compaction-mode must be either 'periodic' or 'revision'", 'max-wals must be a positive integer', 'strict-reconfig-check must be a boolean']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'listen-client-urls', 'strict-reconfig-check'], 'reason': ["initial-cluster-state is not a valid value. Valid values are 'new' and 'existing'.", "listen-client-urls is not a valid value. Valid values are 'http://localhost:2379'.", "strict-reconfig-check is not a valid value. Valid values are 'true' and 'false'."]}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-retention'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'", 'auto-compaction-retention must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-retention', 'auto-compaction-mode', 'strict-reconfig-check'], 'reason': ['initial-cluster-state is not a valid value for auto-compaction-mode', 'auto-compaction-retention is not a valid value for auto-compaction-mode', 'auto-compaction-mode is not a valid value for auto-compaction-mode', 'strict-reconfig-check is not a valid value for auto-compaction-mode']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-mode', 'max-wals'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'", "auto-compaction-mode must be either 'periodic' or 'revision'", 'max-wals must be greater than or equal to 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-retention', 'auto-compaction-mode', 'max-wals', 'strict-reconfig-check'], 'reason': ['initial-cluster-state is not a valid value for auto-compaction-mode', 'auto-compaction-retention is not a valid value for auto-compaction-mode', 'auto-compaction-mode is not a valid value for auto-compaction-mode', 'max-wals is not a valid value for auto-compaction-mode', 'strict-reconfig-check is not a valid value for auto-compaction-mode']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-retention', 'auto-compaction-mode', 'max-wals', 'strict-reconfig-check'], 'reason': ['initial-cluster-state must be either new or existing', 'auto-compaction-retention must be a positive integer', 'auto-compaction-mode must be either periodic or revision', 'max-wals must be a positive integer', 'strict-reconfig-check must be a boolean']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention'], 'reason': ['auto-compaction-retention must be a positive integer']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: initial-cluster-state	auto-compaction-retention	auto-compaction-mode	max-wals	strict-reconfig-check
+[Ciri] Reason for initial-cluster-state: initial-cluster-state is not a valid value for auto-compaction-mode
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention is not a valid value for auto-compaction-mode
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode must be either periodic or revision
+[Ciri] Reason for max-wals: max-wals must be a positive integer
+[Ciri] Reason for strict-reconfig-check: strict-reconfig-check is not a valid value for auto-compaction-mode

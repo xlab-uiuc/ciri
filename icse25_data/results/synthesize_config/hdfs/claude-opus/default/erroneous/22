@@ -1,0 +1,16 @@
+Wrong shot number:
+[2, 3, 4]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.servicerpc-address', 'dfs.namenode.invalidate.work.pct.per.iteration', 'nfs.mountd.port'], 'reason': ["The property 'dfs.namenode.servicerpc-address' is missing the port number in the value '127.0.0.1'", "The property 'dfs.namenode.invalidate.work.pct.per.iteration' has an invalid float value '0.32f'. It should be a decimal value between 0.0 and 1.0", "The property 'nfs.mountd.port' has an invalid port number '-100.22'. Port numbers must be integers between 0 and 65535."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.servicerpc-address	dfs.namenode.invalidate.work.pct.per.iteration	nfs.mountd.port
+[Ciri] Reason for dfs.namenode.servicerpc-address: The property 'dfs.namenode.servicerpc-address' is missing the port number in the value '127.0.0.1'
+[Ciri] Reason for dfs.namenode.invalidate.work.pct.per.iteration: The property 'dfs.namenode.invalidate.work.pct.per.iteration' has an invalid float value '0.32f'. It should be a decimal value between 0.0 and 1.0
+[Ciri] Reason for nfs.mountd.port: The property 'nfs.mountd.port' has an invalid port number '-100.22'. Port numbers must be integers between 0 and 65535.

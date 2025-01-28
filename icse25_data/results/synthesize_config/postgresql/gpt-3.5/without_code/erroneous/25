@@ -1,0 +1,20 @@
+Wrong shot number:
+[7, 2, 1]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem'], 'reason': ["The property 'autovacuum_work_mem' has a negative value which is not valid."]}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'effective_cache_size', 'autovacuum_work_mem'], 'reason': ["The properties 'shared_buffers', 'effective_cache_size', and 'autovacuum_work_mem' should have values specified in bytes or as a percentage of total memory, not with units like 'GB' or '-2'."]}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'effective_cache_size', 'autovacuum_work_mem'], 'reason': ["The properties 'shared_buffers', 'effective_cache_size', and 'autovacuum_work_mem' should not have units like 'GB'. They should be specified as integers representing the number of disk blocks or as a percentage of total memory."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: shared_buffers	effective_cache_size	autovacuum_work_mem
+[Ciri] Reason for shared_buffers: The properties 'shared_buffers', 'effective_cache_size', and 'autovacuum_work_mem' should not have units like 'GB'. They should be specified as integers representing the number of disk blocks or as a percentage of total memory.
+[Ciri] Reason for effective_cache_size: 
+[Ciri] Reason for autovacuum_work_mem: 

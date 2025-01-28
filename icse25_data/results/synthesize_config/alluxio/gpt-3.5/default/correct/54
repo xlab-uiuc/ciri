@@ -1,0 +1,26 @@
+Wrong shot number:
+[10, 8, 2]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.timeout', 'alluxio.worker.network.netty.boss.threads'], 'reason': ["The property 'fs.cos.connection.timeout' has the value '1sec' which is not in the correct format. It should be specified in milliseconds.", "The property 'alluxio.worker.network.netty.boss.threads' has the value '0' which should be a positive integer greater than 0."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.netty.boss.threads'], 'reason': ["The property 'alluxio.worker.network.netty.boss.threads' has the value '0' which should be a positive integer greater than zero."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.timeout'], 'reason': ["The property 'fs.cos.connection.timeout' has the value '1sec' which is not in the correct format. It should be specified in milliseconds."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.netty.boss.threads'], 'reason': ["The property 'alluxio.worker.network.netty.boss.threads' has the value '0' which is not within the accepted range. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.timeout', 'alluxio.worker.network.netty.boss.threads'], 'reason': ["The property 'fs.cos.connection.timeout' has the value '1sec' which is not in the correct format. It should be specified in milliseconds.", "The property 'alluxio.worker.network.netty.boss.threads' has the value '0' which should be a positive integer greater than 0."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.netty.boss.threads'], 'reason': ["The property 'alluxio.worker.network.netty.boss.threads' has the value '0' which should be a positive integer greater than 0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.worker.network.netty.boss.threads
+[Ciri] Reason for alluxio.worker.network.netty.boss.threads: The property 'alluxio.worker.network.netty.boss.threads' has the value '0' which is not within the accepted range. It should be a positive integer.

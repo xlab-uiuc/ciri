@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.s3a.paging.maximum</name>
+  <value>5000</value>
+  <description>How many keys to request from S3 when doing
+     directory listings at a time.</description>
+</property>
+
+<property>
+  <name>fs.s3a.change.detection.mode</name>
+  <value>server</value>
+  <description>
+    Determines how change detection is applied to alert to inconsistent S3
+    objects read during or after an overwrite. Value 'server' indicates to apply
+    the attribute constraint directly on GetObject requests to S3. Value 'client'
+    means to do a client-side comparison of the attribute value returned in the
+    response.  Value 'server' would not work with third-party S3 implementations
+    that do not support these constraints on GetObject. Values 'server' and
+    'client' generate RemoteObjectChangedException when a mismatch is detected.
+    Value 'warn' works like 'client' but generates only a warning.  Value 'none'
+    will ignore change detection completely.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].weighted-cost.lockfree</name>
+  <value>1</value>
+  <description>The weight multiplier to apply to the time spent in the
+    LOCKFREE phase which do not involve holding a lock.
+    See org.apache.hadoop.ipc.ProcessingDetails.Timing for more details on
+    this phase. This property applies to WeightedTimeCostProvider.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.type</name>
+  <value>simple</value>
+  <description>
+    Defines authentication used for Oozie HTTP endpoint.
+    Supported values are: simple | kerberos | #AUTHENTICATION_HANDLER_CLASSNAME#
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.cross-origin.max-age</name>
+  <value>900</value>
+  <description>The number of seconds a pre-flighted request can be cached
+    for web services needing cross-origin (CORS) support.</description>
+</property>
+
+<property>
+  <name>hadoop.http.staticuser.user</name>
+  <value>dr.who</value>
+  <description>
+    The user name to filter as, on static web filters
+    while rendering content. An example use is the HDFS
+    web UI (user to be used for browsing files).
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.jaas.context</name>
+  <value>Client</value>
+    <description>
+      Key to define the JAAS context. Used in secure
+      mode
+    </description>
+</property>
+
+<property>
+  <name>hadoop.metrics.jvm.use-thread-mxbean</name>
+  <value>true</value>
+    <description>
+      Whether or not ThreadMXBean is used for getting thread info in JvmMetrics,
+      ThreadGroup approach is preferred for better performance.
+    </description>
+</property>
+
+</configuration>

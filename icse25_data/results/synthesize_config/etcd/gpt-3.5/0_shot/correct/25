@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'quota-backend-bytes', 'logger'], 'reason': ["listen-peer-urls should be an array of URLs, e.g., ['http://localhost:2380']", 'quota-backend-bytes should be specified as a number, e.g., 2 (without quotes)', "logger should be a valid logging configuration, e.g., 'zap' or 'logrus'"]}
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'quota-backend-bytes'], 'reason': ["The 'listen-peer-urls' parameter should be in the format 'http://localhost:2380', including the protocol and port.", "The 'quota-backend-bytes' parameter should have a numeric value specifying the quota in bytes."]}
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'quota-backend-bytes', 'logger'], 'reason': ["The 'listen-peer-urls' parameter should be an array of URLs.", "The 'quota-backend-bytes' parameter should be specified in bytes.", "The 'logger' parameter should be one of the supported logging options."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: listen-peer-urls	quota-backend-bytes	logger
+[Ciri] Reason for listen-peer-urls: The 'listen-peer-urls' parameter should be an array of URLs.
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes should be specified as a number, e.g., 2 (without quotes)
+[Ciri] Reason for logger: logger should be a valid logging configuration, e.g., 'zap' or 'logrus'

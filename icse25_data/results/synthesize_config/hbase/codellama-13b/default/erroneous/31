@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 5, 1]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins', 'hbase.status.multicast.address.ip'], 'reason': ["The property 'hbase.master.logcleaner.plugins' has the value 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner' which is not of the correct type String.", "The property 'hbase.status.multicast.address.ip' has the value '256.256.256.256' which is not of the correct type String."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins', 'hbase.status.multicast.address.ip'], 'reason': ["The property 'hbase.master.logcleaner.plugins' has the value 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner' which is not of the correct type String.", "The property 'hbase.status.multicast.address.ip' has the value '256.256.256.256' which is not of the correct type String."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins'], 'reason': ["The property 'hbase.master.logcleaner.plugins' has the value 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner' which is not of the correct type String."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.master.logcleaner.plugins	hbase.status.multicast.address.ip
+[Ciri] Reason for hbase.master.logcleaner.plugins: The property 'hbase.master.logcleaner.plugins' has the value 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner' which is not of the correct type String.
+[Ciri] Reason for hbase.status.multicast.address.ip: The property 'hbase.status.multicast.address.ip' has the value '256.256.256.256' which is not of the correct type String.

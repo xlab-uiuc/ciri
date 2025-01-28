@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEFAULT_EXCEPTION_REPORTER', 'STATICFILES_FINDERS'], 'reason': ["DEFAULT_EXCEPTION_REPORTER 'django.views.debug.ExceptionReporter' is not a valid setting for Django 4.0.", "STATICFILES_FINDERS should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' for Django 4.0."]}
+
+{'hasError': True, 'errParameter': ['STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ["STATICFILES_FINDERS should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' in addition to 'django.contrib.staticfiles.finders.FileSystemFinder'.", 'PASSWORD_RESET_TIMEOUT should be specified in seconds only, without multiplication operations.', 'CSRF_COOKIE_AGE should be specified in seconds only, without multiplication operations.']}
+
+{'hasError': True, 'errParameter': ['STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT'], 'reason': ["STATICFILES_FINDERS should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' in addition to 'django.contrib.staticfiles.finders.FileSystemFinder'.", 'PASSWORD_RESET_TIMEOUT should not be calculated in the settings file. It should be a direct value in seconds.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT'], 'reason': ["STATICFILES_FINDERS should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' in addition to 'django.contrib.staticfiles.finders.FileSystemFinder'.", 'PASSWORD_RESET_TIMEOUT value should be specified in seconds only, without multiplication.']}
+
+{'hasError': True, 'errParameter': ['STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ["STATICFILES_FINDERS should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' in addition to 'django.contrib.staticfiles.finders.FileSystemFinder'.", 'PASSWORD_RESET_TIMEOUT should not be calculated in the settings file directly. It should be set to a numeric value representing the number of seconds.', 'CSRF_COOKIE_AGE should not be calculated in the settings file directly. It should be set to a numeric value representing the number of seconds.']}
+
+{'hasError': True, 'errParameter': ['DEFAULT_EXCEPTION_REPORTER', 'STATICFILES_FINDERS'], 'reason': ["DEFAULT_EXCEPTION_REPORTER 'django.views.debug.ExceptionReporter' is not a valid path for Django 4.0.", "STATICFILES_FINDERS should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' for Django 4.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEFAULT_EXCEPTION_REPORTER', 'STATICFILES_FINDERS'], 'reason': ["DEFAULT_EXCEPTION_REPORTER 'django.views.debug.ExceptionReporter' is not a valid path for Django 4.0.", "STATICFILES_FINDERS should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' for Django 4.0."]}
+
+{'hasError': True, 'errParameter': ['DEFAULT_EXCEPTION_REPORTER', 'STATICFILES_FINDERS'], 'reason': ["DEFAULT_EXCEPTION_REPORTER 'django.views.debug.ExceptionReporter' is not a valid path for Django 4.0.", "STATICFILES_FINDERS should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' for Django 4.0."]}
+
+{'hasError': True, 'errParameter': ['STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT'], 'reason': ["STATICFILES_FINDERS should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' in addition to 'django.contrib.staticfiles.finders.FileSystemFinder'.", 'PASSWORD_RESET_TIMEOUT should be specified in seconds only, without multiplication operations.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: DEFAULT_EXCEPTION_REPORTER	STATICFILES_FINDERS
+[Ciri] Reason for DEFAULT_EXCEPTION_REPORTER: DEFAULT_EXCEPTION_REPORTER 'django.views.debug.ExceptionReporter' is not a valid path for Django 4.0.
+[Ciri] Reason for STATICFILES_FINDERS: STATICFILES_FINDERS should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' for Django 4.0.

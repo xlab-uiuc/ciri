@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'enable-debug-command', 'zset-max-listpack-value', 'tls-ca-cert-file'], 'reason': ["The 'proto-max-bulk-len' parameter is not available in Redis 7.0.0. It was renamed to 'proto-max-bulk-len' in Redis 6.0.", "The 'enable-debug-command' parameter is not available in Redis 7.0.0. Debug commands are always enabled in recent Redis versions.", "The 'zset-max-listpack-value' parameter is not available in Redis 7.0.0. It was renamed to 'zset-max-ziplist-value' in Redis 7.0.", "The 'tls-ca-cert-file' parameter requires Redis to be compiled with TLS support. Make sure Redis was built with TLS enabled."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: proto-max-bulk-len	enable-debug-command	zset-max-listpack-value	tls-ca-cert-file
+[Ciri] Reason for proto-max-bulk-len: The 'proto-max-bulk-len' parameter is not available in Redis 7.0.0. It was renamed to 'proto-max-bulk-len' in Redis 6.0.
+[Ciri] Reason for enable-debug-command: The 'enable-debug-command' parameter is not available in Redis 7.0.0. Debug commands are always enabled in recent Redis versions.
+[Ciri] Reason for zset-max-listpack-value: The 'zset-max-listpack-value' parameter is not available in Redis 7.0.0. It was renamed to 'zset-max-ziplist-value' in Redis 7.0.
+[Ciri] Reason for tls-ca-cert-file: The 'tls-ca-cert-file' parameter requires Redis to be compiled with TLS support. Make sure Redis was built with TLS enabled.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_stack_depth'], 'reason': ['max_stack_depth is not a valid property for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['wal_keep_segments', 'wal_keep_segments'], 'reason': ['The value of wal_keep_segments must be between 0 and 1024.', 'The value of wal_keep_segments must be between 0 and 1024.']}
+
+{'hasError': True, 'errParameter': ['wal_keep_segments', 'wal_keep_segments'], 'reason': ['wal_keep_segments should be a positive integer', 'wal_keep_segments should be a positive integer']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: wal_keep_segments	wal_keep_segments
+[Ciri] Reason for wal_keep_segments: wal_keep_segments should be a positive integer
+[Ciri] Reason for wal_keep_segments: The value of wal_keep_segments must be between 0 and 1024.

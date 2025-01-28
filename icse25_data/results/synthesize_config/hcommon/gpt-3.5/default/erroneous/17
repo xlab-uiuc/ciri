@@ -1,0 +1,24 @@
+Wrong shot number:
+[13, 11, 4]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.s3guard.ddb.background.sleep'], 'reason': ["The property 'hadoop.security.dns.nameserver' has the value '0.0.0' which is not a valid IP address.", "The property 'fs.defaultFS' has the value 'file:///' which does not follow the correct URL format.", "The property 'fs.s3a.s3guard.ddb.background.sleep' has the value '25ms' which is not in the correct format. It should be in milliseconds without units."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.socket.recv.buffer', 'fs.s3a.s3guard.ddb.background.sleep', 'ipc.client.connection.maxidletime', 'ipc.[port_number].weighted-cost.lockfree', 'hadoop.ssl.keystores.factory.class'], 'reason': ["The property 'hadoop.security.dns.nameserver' has the value '0.0.0' which is not a valid IP address.", "The property 'fs.defaultFS' has the value 'file:///' which does not follow the correct URL format.", "The property 'fs.s3a.socket.recv.buffer' should have a value in bytes, but it is '16384'.", "The property 'fs.s3a.s3guard.ddb.background.sleep' should have a value in milliseconds, but it is '25ms'.", "The property 'ipc.client.connection.maxidletime' should have a value in milliseconds, but it is '20000'.", "The property 'ipc.[port_number].weighted-cost.lockfree' should have a value greater than 1.", "The property 'hadoop.ssl.keystores.factory.class' has an invalid class name 'org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory'."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.socket.recv.buffer', 'fs.s3a.s3guard.ddb.background.sleep', 'ipc.client.connection.maxidletime', 'ipc.[port_number].weighted-cost.lockfree', 'hadoop.ssl.keystores.factory.class'], 'reason': ["The property 'hadoop.security.dns.nameserver' has the value '0.0.0' which is not a valid IP address.", "The property 'fs.defaultFS' has the value 'file:///' which does not follow the correct URL format.", "The property 'fs.s3a.socket.recv.buffer' should have a value in bytes, not '16384'.", "The property 'fs.s3a.s3guard.ddb.background.sleep' should have a value in milliseconds, not '25ms'.", "The property 'ipc.client.connection.maxidletime' should have a value in milliseconds, not '20000'.", "The property 'ipc.[port_number].weighted-cost.lockfree' should have a value greater than 1.", "The property 'hadoop.ssl.keystores.factory.class' has an invalid class name 'org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.defaultFS	fs.s3a.socket.recv.buffer	fs.s3a.s3guard.ddb.background.sleep	ipc.client.connection.maxidletime	ipc.[port_number].weighted-cost.lockfree	hadoop.ssl.keystores.factory.class
+[Ciri] Reason for hadoop.security.dns.nameserver: The property 'hadoop.security.dns.nameserver' has the value '0.0.0' which is not a valid IP address.
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has the value 'file:///' which does not follow the correct URL format.
+[Ciri] Reason for fs.s3a.socket.recv.buffer: The property 'fs.s3a.socket.recv.buffer' should have a value in bytes, but it is '16384'.
+[Ciri] Reason for fs.s3a.s3guard.ddb.background.sleep: The property 'fs.s3a.s3guard.ddb.background.sleep' should have a value in milliseconds, but it is '25ms'.
+[Ciri] Reason for ipc.client.connection.maxidletime: The property 'ipc.client.connection.maxidletime' should have a value in milliseconds, not '20000'.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The property 'ipc.[port_number].weighted-cost.lockfree' should have a value greater than 1.
+[Ciri] Reason for hadoop.ssl.keystores.factory.class: The property 'hadoop.ssl.keystores.factory.class' has an invalid class name 'org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory'.

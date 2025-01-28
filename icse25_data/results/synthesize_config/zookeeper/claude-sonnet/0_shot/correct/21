@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'minSessionTimeout'], 'reason': ["The property 'clientPortAddress' is not a valid configuration parameter in ZooKeeper 3.7.0. The correct parameter for specifying the client port address is 'clientPortAddress'.", "The 'minSessionTimeout' parameter is missing a value. It should be set to a non-zero integer value representing the minimum session timeout in milliseconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: clientPortAddress	minSessionTimeout
+[Ciri] Reason for clientPortAddress: The property 'clientPortAddress' is not a valid configuration parameter in ZooKeeper 3.7.0. The correct parameter for specifying the client port address is 'clientPortAddress'.
+[Ciri] Reason for minSessionTimeout: The 'minSessionTimeout' parameter is missing a value. It should be set to a non-zero integer value representing the minimum session timeout in milliseconds.

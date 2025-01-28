@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 7, 14]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.block.size'], 'reason': ["The property 'fs.s3a.block.size' has the value '16M' which should be a numeric value with a valid suffix (K, M, G, T, P) for scaling."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.block.size'], 'reason': ["The property 'fs.s3a.block.size' has the value '16M' which should be a numeric value with a valid suffix (K,M,G,T,P) for scaling."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.block.size'], 'reason': ["The property 'fs.s3a.block.size' has the value '16M' which should be a numeric value without suffix. Suffixes like {K,M,G,T,P} are used to scale the numeric value."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.s3a.block.size
+[Ciri] Reason for fs.s3a.block.size: The property 'fs.s3a.block.size' has the value '16M' which should be a numeric value with a valid suffix (K,M,G,T,P) for scaling.

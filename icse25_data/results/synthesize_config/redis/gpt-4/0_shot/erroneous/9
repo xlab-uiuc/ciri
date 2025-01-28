@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'cluster-announce-port'], 'reason': ["The path for 'tls-ca-cert-dir' should not start with a backslash for Unix-like systems. It should be 'etc/ssl/certs' or an absolute path without the initial backslash.", "The 'cluster-announce-port' should be set to a valid port number (between 1 and 65535) that the Redis node will announce to other cluster nodes. Setting it to 1 is technically valid but highly unconventional and likely a mistake unless explicitly intended for a very specific use case."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tls-ca-cert-dir	cluster-announce-port
+[Ciri] Reason for tls-ca-cert-dir: The path for 'tls-ca-cert-dir' should not start with a backslash for Unix-like systems. It should be 'etc/ssl/certs' or an absolute path without the initial backslash.
+[Ciri] Reason for cluster-announce-port: The 'cluster-announce-port' should be set to a valid port number (between 1 and 65535) that the Redis node will announce to other cluster nodes. Setting it to 1 is technically valid but highly unconventional and likely a mistake unless explicitly intended for a very specific use case.

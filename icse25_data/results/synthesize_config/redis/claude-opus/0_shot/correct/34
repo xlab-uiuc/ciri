@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'latency-monitor-threshold'], 'reason': ["In Redis 7.0, the 'slowlog-max-len' parameter has been renamed to 'slowlog-max-entries'.", "The 'latency-monitor-threshold' parameter has been removed in Redis 7.0. Latency monitoring is always enabled with a fixed threshold of 1 millisecond."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: slowlog-max-len	latency-monitor-threshold
+[Ciri] Reason for slowlog-max-len: In Redis 7.0, the 'slowlog-max-len' parameter has been renamed to 'slowlog-max-entries'.
+[Ciri] Reason for latency-monitor-threshold: The 'latency-monitor-threshold' parameter has been removed in Redis 7.0. Latency monitoring is always enabled with a fixed threshold of 1 millisecond.

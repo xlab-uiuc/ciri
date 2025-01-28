@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.zookeeper.leaderport</name>
+  <value>3888</value>
+    <description>Port used by ZooKeeper for leader election.
+    See https://zookeeper.apache.org/doc/r3.3.3/zookeeperStarted.html#sc_RunningReplicatedZooKeeper
+    for more information.</description>
+</property>
+
+<property>
+  <name>hbase.server.thread.wakefrequency</name>
+  <value>20000</value>
+    <description>Time to sleep in between searches for work (in milliseconds).
+    Used as sleep interval by service threads such as log roller.</description>
+</property>
+
+<property>
+  <name>hbase.storescanner.parallel.seek.enable</name>
+  <value>false</value>
+    <description>
+      Enables StoreFileScanner parallel-seeking in StoreScanner,
+      a feature which can reduce response latency under special conditions.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.throughput.lower.bound</name>
+  <value>104857600</value>
+    <description>The target lower bound on aggregate compaction throughput, in bytes/sec. Allows
+    you to tune the minimum available compaction throughput when the
+    PressureAwareCompactionThroughputController throughput controller is active. (It is active by
+    default.)</description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.user.enabled</name>
+  <value>false</value>
+    <description>Enables or disables user (aka. table) coprocessor loading.
+    If 'false' (disabled), any table coprocessor attributes in table
+    descriptors will be ignored. If "hbase.coprocessor.enabled" is 'false'
+    this setting has no effect.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest.support.proxyuser</name>
+  <value>true</value>
+    <description>Enables running the REST server to support proxy-user mode.</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.restore.failsafe.name</name>
+  <value>hbase-failsafe-{snapshot.name}-{restore.timestamp}</value>
+    <description>Name of the failsafe snapshot taken by the restore operation.
+      You can use the {snapshot.name}, {table.name} and {restore.timestamp} variables
+      to create a name based on what you are restoring.</description>
+</property>
+
+<property>
+  <name>hbase.master.mob.ttl.cleaner.period</name>
+  <value>86400</value>
+    <description>
+      The period that ExpiredMobFileCleanerChore runs. The unit is second.
+      The default value is one day. The MOB file name uses only the date part of
+      the file creation time in it. We use this time for deciding TTL expiry of
+      the files. So the removal of TTL expired files might be delayed. The max
+      delay might be 24 hrs.
+    </description>
+</property>
+
+</configuration>

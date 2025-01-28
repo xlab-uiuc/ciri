@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['nfs.server.port', 'nfs.rtmax'], 'reason': ['The default value for nfs.server.port is 2049. Setting it to 65536 is not recommended as it exceeds the valid port range of 0-65535.', 'The default value for nfs.rtmax is 1048576 bytes (1 MB). Setting it to 2097152 bytes (2 MB) may cause issues with certain NFS clients that have a lower default rsize limit.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: nfs.server.port	nfs.rtmax
+[Ciri] Reason for nfs.server.port: The default value for nfs.server.port is 2049. Setting it to 65536 is not recommended as it exceeds the valid port range of 0-65535.
+[Ciri] Reason for nfs.rtmax: The default value for nfs.rtmax is 1048576 bytes (1 MB). Setting it to 2097152 bytes (2 MB) may cause issues with certain NFS clients that have a lower default rsize limit.

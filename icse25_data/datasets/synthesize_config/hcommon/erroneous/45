@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.s3a.proxy.port</name>
+  <value>65536</value>
+  <description>Proxy server port. If this property is not set
+    but fs.s3a.proxy.host is, port 80 or 443 is assumed (consistent with
+    the value of fs.s3a.connection.ssl.enabled).</description>
+</property>
+
+<property>
+  <name>fs.azure.secure.mode</name>
+  <value>true</value>
+  <description>
+    Config flag to identify the mode in which fs.azure.NativeAzureFileSystem needs
+    to run under. Setting it "true" would make fs.azure.NativeAzureFileSystem use
+    SAS keys to communicate with Azure storage.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].scheduler.priority.levels</name>
+  <value>1</value>
+  <description>How many priority levels to use within the scheduler and call
+    queue. This property applies to RpcScheduler and CallQueue.
+  </description>
+</property>
+
+<property>
+  <name>net.topology.node.switch.mapping.impl</name>
+  <value>org.apache.hadoop.net.ScriptBasedMapping</value>
+  <description> The default implementation of the DNSToSwitchMapping. It
+    invokes a script specified in net.topology.script.file.name to resolve
+    node names. If the value for net.topology.script.file.name is not set, the
+    default value of DEFAULT_RACK is returned for all node names.
+  </description>
+</property>
+
+<property>
+  <name>file.blocksize</name>
+  <value>134217728</value>
+  <description>Block size</description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.token.validity</name>
+  <value>72000</value>
+  <description>
+    Indicates how long (in seconds) an authentication token is valid before it has
+    to be renewed.
+  </description>
+</property>
+
+<property>
+  <name>adl.feature.ownerandgroup.enableupn</name>
+  <value>true</value>
+    <description>
+      When true : User and Group in FileStatus/AclStatus response is
+      represented as user friendly name as per Azure AD profile.
+
+      When false (default) : User and Group in FileStatus/AclStatus
+      response is represented by the unique identifier from Azure AD
+      profile (Object ID as GUID).
+
+      For optimal performance, false is recommended.
+    </description>
+</property>
+
+<property>
+  <name>hadoop.zk.retry-interval-ms</name>
+  <value>2000</value>
+    <description>Retry interval in milliseconds when connecting to ZooKeeper.
+    </description>
+</property>
+
+</configuration>

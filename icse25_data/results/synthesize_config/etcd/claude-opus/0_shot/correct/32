@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'heartbeat-interval'], 'reason': ["The 'quota-backend-bytes' parameter is deprecated in etcd v3.5.0 and should be replaced with 'quota-size-bytes'.", "The 'heartbeat-interval' parameter is specified in milliseconds, but the value '50' is too low. It should be at least 100ms."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quota-backend-bytes	heartbeat-interval
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' parameter is deprecated in etcd v3.5.0 and should be replaced with 'quota-size-bytes'.
+[Ciri] Reason for heartbeat-interval: The 'heartbeat-interval' parameter is specified in milliseconds, but the value '50' is too low. It should be at least 100ms.

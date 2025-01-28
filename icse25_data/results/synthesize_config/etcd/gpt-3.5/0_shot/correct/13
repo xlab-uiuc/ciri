@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'enable-pprof', 'heartbeat-interval', 'advertise-client-urls', 'proxy-write-timeout', 'log-level', 'logger', 'listen-client-urls'], 'reason': ['proxy-refresh-interval should be in milliseconds format, e.g., 30000ms', 'enable-pprof should be a boolean value, true or false', 'heartbeat-interval should be in milliseconds format, e.g., 100ms', 'advertise-client-urls should include both HTTP and HTTPS URLs', 'proxy-write-timeout should be in milliseconds format, e.g., 10000ms', 'log-level should be one of the supported log levels, e.g., info, debug, warn, error', 'logger should be a valid logger configuration', 'listen-client-urls should include both HTTP and HTTPS URLs']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'heartbeat-interval', 'proxy-write-timeout'], 'reason': ['proxy-refresh-interval should be in milliseconds, e.g., 30000', 'heartbeat-interval should be in milliseconds, e.g., 100', 'proxy-write-timeout should be in milliseconds, e.g., 10000']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'heartbeat-interval', 'proxy-write-timeout'], 'reason': ['proxy-refresh-interval should be in milliseconds, e.g., 30000 for 30 seconds', 'heartbeat-interval should be in milliseconds, e.g., 100 for 100 milliseconds', 'proxy-write-timeout should be in milliseconds, e.g., 10000 for 10 seconds']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-refresh-interval	heartbeat-interval	proxy-write-timeout
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval should be in milliseconds, e.g., 30000 for 30 seconds
+[Ciri] Reason for heartbeat-interval: heartbeat-interval should be in milliseconds, e.g., 100
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout should be in milliseconds, e.g., 10000 for 10 seconds

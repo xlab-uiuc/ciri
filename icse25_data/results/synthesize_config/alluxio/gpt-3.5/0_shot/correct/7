@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.metrics.conf.file', 'alluxio.network.connection.shutdown.timeout', 'alluxio.master.journal.retry.interval'], 'reason': ["Invalid value for property 'alluxio.metrics.conf.file'. The provided value '/valid/file1' is not a valid file path.", "Invalid value for property 'alluxio.network.connection.shutdown.timeout'. The value '1sec' should be specified in milliseconds.", "Invalid value for property 'alluxio.master.journal.retry.interval'. The value '1sec' should be specified in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.metrics.conf.file', 'alluxio.network.connection.shutdown.timeout', 'alluxio.master.journal.retry.interval'], 'reason': ['Invalid value for alluxio.metrics.conf.file. The specified file path is not valid.', "Invalid value for alluxio.network.connection.shutdown.timeout. The timeout value should not have units like 'sec'.", "Invalid value for alluxio.master.journal.retry.interval. The interval value should not have units like 'sec'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.metrics.conf.file', 'alluxio.user.ufs.block.read.location.policy', 'alluxio.network.connection.shutdown.timeout', 'alluxio.master.journal.retry.interval'], 'reason': ['Invalid property: alluxio.metrics.conf.file=/valid/file1', 'Invalid property: alluxio.user.ufs.block.read.location.policy=alluxio.client.block.policy.LocalFirstPolicy', 'Invalid property: alluxio.network.connection.shutdown.timeout=1sec', 'Invalid property: alluxio.master.journal.retry.interval=1sec']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.metrics.conf.file	alluxio.network.connection.shutdown.timeout	alluxio.master.journal.retry.interval
+[Ciri] Reason for alluxio.metrics.conf.file: Invalid value for property 'alluxio.metrics.conf.file'. The provided value '/valid/file1' is not a valid file path.
+[Ciri] Reason for alluxio.network.connection.shutdown.timeout: Invalid value for alluxio.network.connection.shutdown.timeout. The timeout value should not have units like 'sec'.
+[Ciri] Reason for alluxio.master.journal.retry.interval: Invalid value for property 'alluxio.master.journal.retry.interval'. The value '1sec' should be specified in milliseconds.

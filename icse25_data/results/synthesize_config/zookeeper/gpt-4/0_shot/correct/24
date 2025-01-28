@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'portUnification', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal', 'quorum.cnxn.threads.size', 'electionAlg', 'reconfigEnabled'], 'reason': ["The 'quorum.auth.enableSasl' property does not exist in ZooKeeper version 3.7.0. Authentication should be configured differently.", "The 'portUnification' property is not a recognized configuration in ZooKeeper version 3.7.0.", "The 'quorum.auth.learner.saslLoginContext' property does not exist in ZooKeeper version 3.7.0.", "The 'quorum.auth.kerberos.servicePrincipal' property does not exist in ZooKeeper version 3.7.0.", "The 'quorum.cnxn.threads.size' property is not correctly named. It should be 'quorumCnxnThreadsSize' if intending to set the size of the connection threads for quorum members.", "The 'electionAlg' property is deprecated as of ZooKeeper 3.5.0 and should not be used. ZooKeeper now uses a new election algorithm that does not require this configuration.", "The 'reconfigEnabled' property is not correctly named. It should be 'reconfigEnabled' if intending to enable or disable dynamic reconfiguration support. However, the correct property name is 'dynamicConfigFile', and dynamic reconfiguration is enabled by specifying a configuration file."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: quorum.auth.enableSasl	portUnification	quorum.auth.learner.saslLoginContext	quorum.auth.kerberos.servicePrincipal	quorum.cnxn.threads.size	electionAlg	reconfigEnabled
+[Ciri] Reason for quorum.auth.enableSasl: The 'quorum.auth.enableSasl' property does not exist in ZooKeeper version 3.7.0. Authentication should be configured differently.
+[Ciri] Reason for portUnification: The 'portUnification' property is not a recognized configuration in ZooKeeper version 3.7.0.
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: The 'quorum.auth.learner.saslLoginContext' property does not exist in ZooKeeper version 3.7.0.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: The 'quorum.auth.kerberos.servicePrincipal' property does not exist in ZooKeeper version 3.7.0.
+[Ciri] Reason for quorum.cnxn.threads.size: The 'quorum.cnxn.threads.size' property is not correctly named. It should be 'quorumCnxnThreadsSize' if intending to set the size of the connection threads for quorum members.
+[Ciri] Reason for electionAlg: The 'electionAlg' property is deprecated as of ZooKeeper 3.5.0 and should not be used. ZooKeeper now uses a new election algorithm that does not require this configuration.
+[Ciri] Reason for reconfigEnabled: The 'reconfigEnabled' property is not correctly named. It should be 'reconfigEnabled' if intending to enable or disable dynamic reconfiguration support. However, the correct property name is 'dynamicConfigFile', and dynamic reconfiguration is enabled by specifying a configuration file.

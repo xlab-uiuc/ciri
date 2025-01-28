@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 5, 1]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.transfer.bandwidthPerSec'], 'reason': ["The property 'dfs.datanode.data.transfer.bandwidthPerSec' has the value '-1' which is not a valid bandwidth value. It should be a non-negative integer representing the maximum bandwidth in bytes per second."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.transfer.bandwidthPerSec'], 'reason': ["The property 'dfs.datanode.data.transfer.bandwidthPerSec' has the value '-1' which is not a valid bandwidth value. Bandwidth value should be a positive integer representing the maximum amount of bandwidth in bytes per second."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.transfer.bandwidthPerSec'], 'reason': ["The property 'dfs.datanode.data.transfer.bandwidthPerSec' has the value '-1' which is not a valid bandwidth value. It should be a positive integer representing the maximum bandwidth in bytes per second, or 0 for no limit."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.data.transfer.bandwidthPerSec
+[Ciri] Reason for dfs.datanode.data.transfer.bandwidthPerSec: The property 'dfs.datanode.data.transfer.bandwidthPerSec' has the value '-1' which is not a valid bandwidth value. It should be a positive integer representing the maximum bandwidth in bytes per second, or 0 for no limit.

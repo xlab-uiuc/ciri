@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.daily.backup.state.lock.grace.mode', 'alluxio.user.file.metadata.sync.interval', 'alluxio.user.file.create.ttl'], 'reason': ["The property 'alluxio.master.daily.backup.state.lock.grace.mode' does not exist or is not correctly named.", "The value for 'alluxio.user.file.metadata.sync.interval' should not be negative. It defines the interval between metadata syncs and should be a positive duration.", "The value for 'alluxio.user.file.create.ttl' should not be negative. It defines the time-to-live for created files and should be a positive duration or zero."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.daily.backup.state.lock.grace.mode	alluxio.user.file.metadata.sync.interval	alluxio.user.file.create.ttl
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.grace.mode: The property 'alluxio.master.daily.backup.state.lock.grace.mode' does not exist or is not correctly named.
+[Ciri] Reason for alluxio.user.file.metadata.sync.interval: The value for 'alluxio.user.file.metadata.sync.interval' should not be negative. It defines the interval between metadata syncs and should be a positive duration.
+[Ciri] Reason for alluxio.user.file.create.ttl: The value for 'alluxio.user.file.create.ttl' should not be negative. It defines the time-to-live for created files and should be a positive duration or zero.

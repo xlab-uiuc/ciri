@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.random.device.file.path', 'hadoop.registry.system.acls'], 'reason': ["The value 'dev/urandom///' for property 'hadoop.security.random.device.file.path' is invalid. It should be a valid file path like '/dev/urandom'.", "The value 'sasl:mapred@' for property 'hadoop.registry.system.acls' is missing a realm after the '@' symbol. It should be something like 'sasl:mapred@EXAMPLE.COM'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.random.device.file.path	hadoop.registry.system.acls
+[Ciri] Reason for hadoop.security.random.device.file.path: The value 'dev/urandom///' for property 'hadoop.security.random.device.file.path' is invalid. It should be a valid file path like '/dev/urandom'.
+[Ciri] Reason for hadoop.registry.system.acls: The value 'sasl:mapred@' for property 'hadoop.registry.system.acls' is missing a realm after the '@' symbol. It should be something like 'sasl:mapred@EXAMPLE.COM'.

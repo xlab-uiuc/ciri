@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.name.dir.restore</name>
+  <value>true</value>
+  <description>Set to true to enable NameNode to attempt recovering a
+      previously failed dfs.namenode.name.dir. When enabled, a recovery of any
+      failed directory is attempted during checkpoint.</description>
+</property>
+
+<property>
+  <name>dfs.datanode.sync.behind.writes</name>
+  <value>true</value>
+  <description>
+        If this configuration is enabled, the datanode will instruct the
+        operating system to enqueue all written data to the disk immediately
+        after it is written. This differs from the usual OS policy which
+        may wait for up to 30 seconds before triggering writeback.
+
+        This may improve performance for some workloads by smoothing the
+        IO profile for data written to disk.
+
+        If the Hadoop native libraries are not available, this configuration
+        has no effect.
+  </description>
+</property>
+
+<property>
+  <name>nfs.mountd.port</name>
+  <value>4242</value>
+  <description>
+      Specify the port number used by Hadoop mount daemon.
+  </description>
+</property>
+
+<property>
+  <name>dfs.domain.socket.path</name>
+  <value>/valid/file1</value>
+  <description>
+    Optional.  This is a path to a UNIX domain socket that will be used for
+    communication between the DataNode and local HDFS clients.
+    If the string "_PORT" is present in this path, it will be replaced by the
+    TCP port of the DataNode.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.retry.policy.spec</name>
+  <value>10000,6,60000,10</value>
+  <description>
+    Set to pairs of timeouts and retries for DFSClient.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.retry.times.get-last-block-length</name>
+  <value>1</value>
+  <description>
+    Number of retries for calls to fetchLocatedBlocksAndGetLastBlockLength().
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.replication.max-streams</name>
+  <value>1</value>
+  <description>
+    Hard limit for the number of highest-priority replication streams.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.storage.dir.perm</name>
+  <value>350</value>
+    <description>
+      Permissions for the directories on on the local filesystem where
+      the DFS namenode stores the fsImage. The permissions can either be
+      octal or symbolic.
+    </description>
+</property>
+
+</configuration>

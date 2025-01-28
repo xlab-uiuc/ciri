@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.reserved.bytes', 'alluxio.user.network.streaming.keepalive.time', 'alluxio.user.network.rpc.max.connections'], 'reason': ['alluxio.user.file.reserved.bytes is not a valid property', 'alluxio.user.network.streaming.keepalive.time is not a valid property', 'alluxio.user.network.rpc.max.connections is not a valid property']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.connections', 'alluxio.user.network.rpc.port', 'alluxio.user.network.streaming.keepalive.time', 'alluxio.worker.tieredstore.block.lock.readers', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ['alluxio.user.network.rpc.max.connections should be a positive integer', 'alluxio.user.network.rpc.port should be a positive integer', 'alluxio.user.network.streaming.keepalive.time should be a positive integer', 'alluxio.worker.tieredstore.block.lock.readers should be a positive integer', 'alluxio.jvm.monitor.sleep.interval should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.reserved.bytes', 'alluxio.user.network.rpc.max.connections'], 'reason': ['alluxio.user.file.reserved.bytes should be a positive integer', 'alluxio.user.network.rpc.max.connections should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.reserved.bytes', 'alluxio.user.network.rpc.max.connections'], 'reason': ['The value of alluxio.user.file.reserved.bytes is not a valid integer', 'The value of alluxio.user.network.rpc.max.connections is not a valid integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.reserved.bytes'], 'reason': ['alluxio.user.file.reserved.bytes must be greater than or equal to alluxio.user.block.size.bytes.default']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.reserved.bytes', 'alluxio.user.network.rpc.max.connections'], 'reason': ['alluxio.user.file.reserved.bytes is not a valid property', 'alluxio.user.network.rpc.max.connections is not a valid property']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.file.reserved.bytes	alluxio.user.network.rpc.max.connections
+[Ciri] Reason for alluxio.user.file.reserved.bytes: The value of alluxio.user.file.reserved.bytes is not a valid integer
+[Ciri] Reason for alluxio.user.network.rpc.max.connections: alluxio.user.network.rpc.max.connections is not a valid property

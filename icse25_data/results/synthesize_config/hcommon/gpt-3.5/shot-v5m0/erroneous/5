@@ -1,0 +1,14 @@
+Correct shot number:
+[2, 9, 3, 5, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'fs.azure.user.agent.prefix', 'ipc.[port_number].identity-provider.impl', 'ipc.[port_number].weighted-cost.response'], 'reason': ['Invalid value format. Expected format: <number>[s|m|h], e.g., 10s, 1m, etc.', 'Usage tag found within the property element.', 'Property name contains placeholder [port_number].', 'Property name contains placeholder [port_number].']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout	fs.azure.user.agent.prefix	ipc.[port_number].identity-provider.impl	ipc.[port_number].weighted-cost.response
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: Invalid value format. Expected format: <number>[s|m|h], e.g., 10s, 1m, etc.
+[Ciri] Reason for fs.azure.user.agent.prefix: Usage tag found within the property element.
+[Ciri] Reason for ipc.[port_number].identity-provider.impl: Property name contains placeholder [port_number].
+[Ciri] Reason for ipc.[port_number].weighted-cost.response: Property name contains placeholder [port_number].

@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.end.hour', 'hbase.regionserver.majorcompaction.pagecache.drop'], 'reason': ["The value for 'hbase.offpeak.end.hour' should be an integer between 0 and 23, or -1 to disable off-peak hours.", "The value for 'hbase.regionserver.majorcompaction.pagecache.drop' should be a boolean (true or false)."]}
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.end.hour', 'dfs.domain.socket.path'], 'reason': ["The value for 'hbase.offpeak.end.hour' should be an integer between 0 and 23, or -1 to disable off-peak hours.", "The value for 'dfs.domain.socket.path' should not be '/valid/file2'. It should be a valid path to a UNIX domain socket."]}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.offpeak.end.hour', 'dfs.domain.socket.path'], 'reason': ["The usage tag for property 'hbase.local.dir' contains a method call which is not standard in HBase configuration files.", "The value for property 'hbase.offpeak.end.hour' is set to -2 which is outside the valid range of 0 to 23.", "The usage tag for property 'dfs.domain.socket.path' contains a method call which is not standard in HBase configuration files."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.offpeak.end.hour', 'dfs.domain.socket.path'], 'reason': ["The usage tag for property 'hbase.local.dir' contains a method call which is not standard in HBase configuration files.", "The value for property 'hbase.offpeak.end.hour' is set to -2 which is outside the valid range of 0 to 23.", "The usage tag for property 'dfs.domain.socket.path' contains a method call which is not standard in HBase configuration files."]}
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.end.hour', 'dfs.domain.socket.path'], 'reason': ["The value for 'hbase.offpeak.end.hour' should be an integer between 0 and 23, or -1 to disable off-peak hours.", "The value for 'dfs.domain.socket.path' should not be '/valid/file2'. It should be a valid path to a UNIX domain socket for communication between DataNode and HDFS clients."]}
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.end.hour', 'dfs.domain.socket.path'], 'reason': ["The value for 'hbase.offpeak.end.hour' should be an integer between 0 and 23, or -1 to disable off-peak hours.", "The value for 'dfs.domain.socket.path' should not be '/valid/file2'. It should be a valid path to a UNIX domain socket for communication between DataNode and HDFS clients."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.offpeak.end.hour	dfs.domain.socket.path
+[Ciri] Reason for hbase.offpeak.end.hour: The value for 'hbase.offpeak.end.hour' should be an integer between 0 and 23, or -1 to disable off-peak hours.
+[Ciri] Reason for dfs.domain.socket.path: The value for 'dfs.domain.socket.path' should not be '/valid/file2'. It should be a valid path to a UNIX domain socket for communication between DataNode and HDFS clients.

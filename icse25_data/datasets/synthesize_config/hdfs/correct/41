@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.replication.min</name>
+  <value>0</value>
+  <description>Minimal block replication. 
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.maintenance.replication.min</name>
+  <value>2</value>
+  <description>Minimal live block replication in existence of maintenance mode.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.fileio.profiling.sampling.percentage</name>
+  <value>-1</value>
+  <description>
+    This setting controls the percentage of file I/O events which will be
+    profiled for DataNode disk statistics. The default value of 0 disables
+    disk statistics. Set to an integer value between 1 and 100 to enable disk
+    statistics.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reencrypt.sleep.interval</name>
+  <value>2m</value>
+  <description>Interval the re-encrypt EDEK thread sleeps in the main loop. The
+    interval accepts units. If none given, millisecond is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.block-pinning.enabled</name>
+  <value>true</value>
+  <description>Whether pin blocks on favored DataNode.</description>
+</property>
+
+<property>
+  <name>dfs.balancer.block-move.timeout</name>
+  <value>0</value>
+  <description>
+    Maximum amount of time in milliseconds for a block to move. If this is set
+    greater than 0, Balancer will stop waiting for a block move completion
+    after this time. In typical clusters, a 3 to 5 minute timeout is reasonable.
+    If timeout happens to a large proportion of block moves, this needs to be
+    increased. It could also be that too much work is dispatched and many nodes
+    are constantly exceeding the bandwidth limit as a result. In that case,
+    other balancer parameters might need to be adjusted.
+    It is disabled (0) by default.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.restart.replica.expiration</name>
+  <value>50</value>
+  <description>
+    During shutdown for restart, the amount of time in seconds budgeted for
+    datanode restart.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.gc.time.monitor.enable</name>
+  <value>false</value>
+    <description>
+      Enable the GcTimePercentage metrics in NameNode's JvmMetrics. It will
+      start a thread(GcTimeMonitor) computing the metric.
+    </description>
+</property>
+
+</configuration>

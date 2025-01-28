@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['EMAIL_USE_TLS', 'SECURE_REFERRER_POLICY', 'SESSION_COOKIE_SECURE'], 'reason': ['EMAIL_USE_TLS should be set to True for secure email connections.', "SECURE_REFERRER_POLICY should be set to 'strict-origin' for better security.", 'SESSION_COOKIE_SECURE should be set to True to ensure session cookies are only sent over HTTPS.']}
+
+{'hasError': True, 'errParameter': ['EMAIL_USE_TLS', 'SECURE_REFERRER_POLICY', 'SESSION_COOKIE_SECURE'], 'reason': ['EMAIL_USE_TLS should be renamed to EMAIL_USE_SSL in Django 4.0.', 'SECURE_REFERRER_POLICY is not a valid setting in Django 4.0.', 'SESSION_COOKIE_SECURE should be set to True for better security in Django 4.0.']}
+
+{'hasError': True, 'errParameter': ['EMAIL_USE_TLS', 'SECURE_REFERRER_POLICY', 'SESSION_COOKIE_SECURE'], 'reason': ['EMAIL_USE_TLS should be renamed to EMAIL_USE_SSL for Django 4.0.', 'SECURE_REFERRER_POLICY is not a valid setting for Django 4.0.', 'SESSION_COOKIE_SECURE should be set to True for better security in Django 4.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: EMAIL_USE_TLS	SECURE_REFERRER_POLICY	SESSION_COOKIE_SECURE
+[Ciri] Reason for EMAIL_USE_TLS: EMAIL_USE_TLS should be renamed to EMAIL_USE_SSL in Django 4.0.
+[Ciri] Reason for SECURE_REFERRER_POLICY: SECURE_REFERRER_POLICY is not a valid setting for Django 4.0.
+[Ciri] Reason for SESSION_COOKIE_SECURE: SESSION_COOKIE_SECURE should be set to True for better security in Django 4.0.

@@ -1,0 +1,35 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['disable-thp', 'cluster-announce-ip', 'oom-score-adj-values', 'stop-writes-on-bgsave-error', 'tls-ca-cert-file', 'appendonly', 'aof-rewrite-incremental-fsync', 'databases'], 'reason': ["Unknown parameter 'disable-thp' for Redis version 7.0.0", "Unknown parameter 'cluster-announce-ip' for Redis version 7.0.0", "Unknown parameter 'oom-score-adj-values' for Redis version 7.0.0", "Unknown parameter 'stop-writes-on-bgsave-error' for Redis version 7.0.0", "Unknown parameter 'tls-ca-cert-file' for Redis version 7.0.0", "Unknown parameter 'appendonly' for Redis version 7.0.0", "Unknown parameter 'aof-rewrite-incremental-fsync' for Redis version 7.0.0", "Unknown parameter 'databases' for Redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['disable-thp', 'appendonly'], 'reason': ["The parameter 'disable-thp' is not a valid configuration option in Redis version 7.0.0.", "The parameter 'appendonly' is not set to a valid value. It should be either 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['disable-thp', 'cluster-announce-ip', 'stop-writes-on-bgsave-error', 'tls-ca-cert-file', 'appendonly', 'aof-rewrite-incremental-fsync'], 'reason': ["Unknown parameter 'disable-thp' for Redis version 7.0.0.", "Unknown parameter 'cluster-announce-ip' for Redis version 7.0.0.", "Unknown parameter 'stop-writes-on-bgsave-error' for Redis version 7.0.0.", "Unknown parameter 'tls-ca-cert-file' for Redis version 7.0.0.", "Unknown parameter 'appendonly' for Redis version 7.0.0.", "Unknown parameter 'aof-rewrite-incremental-fsync' for Redis version 7.0.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['disable-thp', 'cluster-announce-ip', 'stop-writes-on-bgsave-error', 'appendonly', 'aof-rewrite-incremental-fsync'], 'reason': ["Unknown parameter 'disable-thp' for Redis version 7.0.0.", "Unknown parameter 'cluster-announce-ip' for Redis version 7.0.0.", "Unknown parameter 'stop-writes-on-bgsave-error' for Redis version 7.0.0.", "Unknown parameter 'appendonly' for Redis version 7.0.0.", "Unknown parameter 'aof-rewrite-incremental-fsync' for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['disable-thp', 'cluster-announce-ip', 'oom-score-adj-values', 'stop-writes-on-bgsave-error', 'tls-ca-cert-file', 'appendonly', 'aof-rewrite-incremental-fsync', 'databases'], 'reason': ["Unknown parameter 'disable-thp' for Redis version 7.0.0", "Unknown parameter 'cluster-announce-ip' for Redis version 7.0.0", "Unknown parameter 'oom-score-adj-values' for Redis version 7.0.0", "Unknown parameter 'stop-writes-on-bgsave-error' for Redis version 7.0.0", "Unknown parameter 'tls-ca-cert-file' for Redis version 7.0.0", "Unknown parameter 'appendonly' for Redis version 7.0.0", "Unknown parameter 'aof-rewrite-incremental-fsync' for Redis version 7.0.0", "Unknown parameter 'databases' for Redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['disable-thp', 'stop-writes-on-bgsave-error', 'appendonly', 'aof-rewrite-incremental-fsync'], 'reason': ["The parameter 'disable-thp' is not a valid configuration option in Redis 7.0.0.", "The parameter 'stop-writes-on-bgsave-error' is deprecated in Redis 7.0.0. Use 'bgsave-error-on-write-commands yes' instead.", "The parameter 'appendonly' should be set to 'yes' for enabling the append-only file mode.", "The parameter 'aof-rewrite-incremental-fsync' is not a valid configuration option in Redis 7.0.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['disable-thp', 'cluster-announce-ip', 'oom-score-adj-values', 'stop-writes-on-bgsave-error', 'tls-ca-cert-file', 'appendonly', 'aof-rewrite-incremental-fsync', 'databases'], 'reason': ["Unknown parameter 'disable-thp' for Redis configuration.", "Unknown parameter 'cluster-announce-ip' for Redis configuration.", "Unknown parameter 'oom-score-adj-values' for Redis configuration.", "Unknown parameter 'stop-writes-on-bgsave-error' for Redis configuration.", "Unknown parameter 'tls-ca-cert-file' for Redis configuration.", "Unknown parameter 'appendonly' for Redis configuration.", "Unknown parameter 'aof-rewrite-incremental-fsync' for Redis configuration.", "Unknown parameter 'databases' for Redis configuration."]}
+
+{'hasError': True, 'errParameter': ['disable-thp', 'stop-writes-on-bgsave-error', 'appendonly', 'aof-rewrite-incremental-fsync'], 'reason': ["Unknown parameter 'disable-thp' for Redis version 7.0.0.", "Unknown parameter 'stop-writes-on-bgsave-error' for Redis version 7.0.0.", "Unknown parameter 'appendonly' for Redis version 7.0.0.", "Unknown parameter 'aof-rewrite-incremental-fsync' for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['disable-thp', 'cluster-announce-ip', 'oom-score-adj-values', 'stop-writes-on-bgsave-error', 'tls-ca-cert-file', 'appendonly', 'aof-rewrite-incremental-fsync', 'databases'], 'reason': ["Unknown parameter 'disable-thp' for Redis version 7.0.0", "Unknown parameter 'cluster-announce-ip' for Redis version 7.0.0", "Unknown parameter 'oom-score-adj-values' for Redis version 7.0.0", "Unknown parameter 'stop-writes-on-bgsave-error' for Redis version 7.0.0", "Unknown parameter 'tls-ca-cert-file' for Redis version 7.0.0", "Unknown parameter 'appendonly' for Redis version 7.0.0", "Unknown parameter 'aof-rewrite-incremental-fsync' for Redis version 7.0.0", "Unknown parameter 'databases' for Redis version 7.0.0"]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: disable-thp	cluster-announce-ip	oom-score-adj-values	stop-writes-on-bgsave-error	tls-ca-cert-file	appendonly	aof-rewrite-incremental-fsync	databases
+[Ciri] Reason for disable-thp: Unknown parameter 'disable-thp' for Redis version 7.0.0
+[Ciri] Reason for cluster-announce-ip: Unknown parameter 'cluster-announce-ip' for Redis version 7.0.0
+[Ciri] Reason for oom-score-adj-values: Unknown parameter 'oom-score-adj-values' for Redis configuration.
+[Ciri] Reason for stop-writes-on-bgsave-error: Unknown parameter 'stop-writes-on-bgsave-error' for Redis version 7.0.0
+[Ciri] Reason for tls-ca-cert-file: Unknown parameter 'tls-ca-cert-file' for Redis configuration.
+[Ciri] Reason for appendonly: Unknown parameter 'appendonly' for Redis configuration.
+[Ciri] Reason for aof-rewrite-incremental-fsync: Unknown parameter 'aof-rewrite-incremental-fsync' for Redis version 7.0.0
+[Ciri] Reason for databases: Unknown parameter 'databases' for Redis version 7.0.0

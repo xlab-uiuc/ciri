@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.priority.levels', 'ipc.[port_number].decay-scheduler.period-ms', 'ipc.[port_number].weighted-cost.lockexclusive'], 'reason': ['Invalid parameter name format. [port_number] should be replaced with an actual port number.', 'Invalid parameter name format. [port_number] should be replaced with an actual port number.', 'Invalid parameter name format. [port_number] should be replaced with an actual port number.']}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.priority.levels', 'ipc.[port_number].decay-scheduler.period-ms', 'ipc.[port_number].weighted-cost.lockexclusive'], 'reason': ['Parameter names should not contain placeholders like [port_number].', 'Parameter names should not contain placeholders like [port_number].', 'Parameter names should not contain placeholders like [port_number].']}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.priority.levels', 'ipc.[port_number].decay-scheduler.period-ms', 'ipc.[port_number].weighted-cost.lockexclusive'], 'reason': ['The parameter names contain placeholders ([port_number]) which should be replaced with actual port numbers.', 'The parameter names contain placeholders ([port_number]) which should be replaced with actual port numbers.', 'The parameter names contain placeholders ([port_number]) which should be replaced with actual port numbers.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: ipc.[port_number].scheduler.priority.levels	ipc.[port_number].decay-scheduler.period-ms	ipc.[port_number].weighted-cost.lockexclusive
+[Ciri] Reason for ipc.[port_number].scheduler.priority.levels: Invalid parameter name format. [port_number] should be replaced with an actual port number.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.period-ms: The parameter names contain placeholders ([port_number]) which should be replaced with actual port numbers.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockexclusive: The parameter names contain placeholders ([port_number]) which should be replaced with actual port numbers.

@@ -1,0 +1,26 @@
+Wrong shot number:
+[8, 5, 7]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes'], 'reason': ["The value of the property 'quota-backend-bytes' should be greater than 0."]}
+
+{'hasError': True, 'errParameter': ['max-wals'], 'reason': ["The value of the property'max-wals' should be greater than 1."]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'max-snapshots'], 'reason': ["The property 'quota-backend-bytes' has the value '2' which is not within the accepted value {0, 8589934592}.", "The property'max-snapshots' has the value '5' which is not within the accepted value {0, 10000}."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes'], 'reason': ["The property 'quota-backend-bytes' has the value '2' which is not within the accepted value {0, 8589934592}."]}
+
+{'hasError': True, 'errParameter': ['max-wals'], 'reason': ["The property'max-wals' has the value '1' which is not within the accepted value {2, 10000000000}."]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes'], 'reason': ["The value of the property 'quota-backend-bytes' should be greater than 0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: quota-backend-bytes
+[Ciri] Reason for quota-backend-bytes: The value of the property 'quota-backend-bytes' should be greater than 0.

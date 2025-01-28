@@ -1,0 +1,33 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_duration', 'wal_keep_size', 'huge_page_size', 'debug_print_rewritten', 'reserved_connections', 'enable_incremental_sort'], 'reason': ['log_duration is not a valid parameter', 'wal_keep_size is not a valid parameter', 'huge_page_size is not a valid parameter', 'debug_print_rewritten is not a valid parameter', 'reserved_connections is not a valid parameter', 'enable_incremental_sort is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['temp_buffers', 'log_duration', 'wal_keep_size', 'huge_page_size', 'debug_print_rewritten', 'reserved_connections', 'enable_incremental_sort'], 'reason': ["temp_buffers: invalid value '8BB', must be an integer.", "log_duration: invalid value 'off', must be 'on' or 'off'.", "wal_keep_size: invalid value '1', must be an integer.", "huge_page_size: invalid value '0', must be an integer.", "debug_print_rewritten: invalid value 'off', must be 'on' or 'off'.", "reserved_connections: invalid value '1', must be an integer.", "enable_incremental_sort: invalid value 'on', must be 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['temp_buffers', 'wal_keep_size', 'huge_page_size', 'debug_print_rewritten', 'reserved_connections', 'enable_incremental_sort'], 'reason': ['temp_buffers: The value should be a multiple of 8KB.', 'wal_keep_size: The value should be a multiple of 16MB.', 'huge_page_size: The value should be a multiple of 1MB.', 'debug_print_rewritten: The value should be a boolean.', 'reserved_connections: The value should be a positive integer.', 'enable_incremental_sort: The value should be a boolean.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_keep_size', 'huge_page_size', 'debug_print_rewritten', 'reserved_connections', 'enable_incremental_sort'], 'reason': ['wal_keep_size: The value of this parameter is not in the range of 0 to 1024 MB.', 'huge_page_size: The value of this parameter is not in the range of 0 to 1024 MB.', 'debug_print_rewritten: The value of this parameter is not in the range of off to on.', 'reserved_connections: The value of this parameter is not in the range of 0 to 100.', 'enable_incremental_sort: The value of this parameter is not in the range of off to on.']}
+
+{'hasError': True, 'errParameter': ['temp_buffers', 'log_min_messages', 'log_duration', 'wal_keep_size', 'huge_page_size', 'debug_print_rewritten', 'reserved_connections', 'enable_incremental_sort'], 'reason': ["temp_buffers: Invalid value '8BB'.", "log_min_messages: Invalid value 'warning'.", "log_duration: Invalid value 'off'.", "wal_keep_size: Invalid value '1'.", "huge_page_size: Invalid value '0'.", "debug_print_rewritten: Invalid value 'off'.", "reserved_connections: Invalid value '1'.", "enable_incremental_sort: Invalid value 'on'."]}
+
+{'hasError': True, 'errParameter': ['temp_buffers'], 'reason': ['temp_buffers is not a valid parameter for PostgreSQL 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_keep_size', 'huge_page_size', 'debug_print_rewritten', 'reserved_connections', 'enable_incremental_sort'], 'reason': ['wal_keep_size: must be a positive integer', 'huge_page_size: must be a positive integer', 'debug_print_rewritten: must be on, off, or true, false', 'reserved_connections: must be a positive integer', 'enable_incremental_sort: must be on, off, or true, false']}
+
+{'hasError': True, 'errParameter': ['temp_buffers', 'wal_keep_size', 'huge_page_size', 'debug_print_rewritten', 'reserved_connections', 'enable_incremental_sort'], 'reason': ['temp_buffers should be set to 128MB or more', 'wal_keep_size should be set to 16MB or more', 'huge_page_size should be set to 1MB or more', 'debug_print_rewritten should be set to off', 'reserved_connections should be set to 5 or more', 'enable_incremental_sort should be set to off']}
+
+{'hasError': True, 'errParameter': ['temp_buffers', 'wal_keep_size', 'huge_page_size', 'debug_print_rewritten', 'reserved_connections', 'enable_incremental_sort'], 'reason': ['temp_buffers: The value 8BB is not a valid integer.', 'wal_keep_size: The value 1 is not a valid integer.', 'huge_page_size: The value 0 is not a valid integer.', 'debug_print_rewritten: The value off is not a valid boolean.', 'reserved_connections: The value 1 is not a valid integer.', 'enable_incremental_sort: The value on is not a valid boolean.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: temp_buffers	wal_keep_size	huge_page_size	debug_print_rewritten	reserved_connections	enable_incremental_sort
+[Ciri] Reason for temp_buffers: temp_buffers: The value 8BB is not a valid integer.
+[Ciri] Reason for wal_keep_size: wal_keep_size should be set to 16MB or more
+[Ciri] Reason for huge_page_size: huge_page_size: The value 0 is not a valid integer.
+[Ciri] Reason for debug_print_rewritten: debug_print_rewritten: The value off is not a valid boolean.
+[Ciri] Reason for reserved_connections: reserved_connections: The value 1 is not a valid integer.
+[Ciri] Reason for enable_incremental_sort: enable_incremental_sort: The value on is not a valid boolean.

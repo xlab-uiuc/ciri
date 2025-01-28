@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 3, 11]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'maxmemory-clients'], 'reason': ["The property 'slowlog-max-len' has an invalid value of -10. It should be a positive integer.", "The property 'maxmemory-clients' has an invalid value of '1g'. The value should be a valid number followed by 'kb', 'mb' or 'gb'."]}
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'maxmemory-clients'], 'reason': ["The property 'slowlog-max-len' has an invalid value of -10. It should be a positive integer.", "The property 'maxmemory-clients' has an invalid value of '1g'. The value should be a valid number followed by 'kb', 'mb' or 'gb'."]}
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'maxmemory-clients'], 'reason': ["The property 'slowlog-max-len' has an invalid value of -10. It should be a positive integer.", "The property 'maxmemory-clients' has an invalid value of '1g'. The value should be a valid number followed by 'kb', 'mb' or 'gb' to specify the units."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: slowlog-max-len	maxmemory-clients
+[Ciri] Reason for slowlog-max-len: The property 'slowlog-max-len' has an invalid value of -10. It should be a positive integer.
+[Ciri] Reason for maxmemory-clients: The property 'maxmemory-clients' has an invalid value of '1g'. The value should be a valid number followed by 'kb', 'mb' or 'gb'.

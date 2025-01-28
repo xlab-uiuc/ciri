@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['discovery', 'quota-backend-bytes', 'snapshot-count', 'max-wals', 'advertise-client-urls'], 'reason': ["The 'discovery' parameter should be a valid URL, not 'file:::'.", "The 'quota-backend-bytes' value is too low. It should be at least 8 MB (8388608 bytes).", "The 'snapshot-count' value is too high. The maximum allowed value is 100000.", "The 'max-wals' parameter has been deprecated in etcd 3.5. Use 'max-snapshots' and 'max-snapshot-files' instead.", "The 'advertise-client-urls' value should be a reachable URL, not 'localhost'. Use the server's public IP or DNS name."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: discovery	quota-backend-bytes	snapshot-count	max-wals	advertise-client-urls
+[Ciri] Reason for discovery: The 'discovery' parameter should be a valid URL, not 'file:::'.
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' value is too low. It should be at least 8 MB (8388608 bytes).
+[Ciri] Reason for snapshot-count: The 'snapshot-count' value is too high. The maximum allowed value is 100000.
+[Ciri] Reason for max-wals: The 'max-wals' parameter has been deprecated in etcd 3.5. Use 'max-snapshots' and 'max-snapshot-files' instead.
+[Ciri] Reason for advertise-client-urls: The 'advertise-client-urls' value should be a reachable URL, not 'localhost'. Use the server's public IP or DNS name.

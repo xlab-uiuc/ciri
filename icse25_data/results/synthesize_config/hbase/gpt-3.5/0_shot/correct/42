@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hregion.memstore.flush.size', 'hbase.hregion.majorcompaction'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.hregion.memstore.flush.size'.", "The 'usage' tag is not a valid tag for property 'hbase.hregion.majorcompaction'."]}
+
+{'hasError': True, 'errParameter': ['hbase.hregion.memstore.flush.size', 'hbase.hregion.majorcompaction'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.hregion.memstore.flush.size'.", "The 'usage' tag is not a valid tag for property 'hbase.hregion.majorcompaction'."]}
+
+{'hasError': True, 'errParameter': ['hbase.hregion.memstore.flush.size', 'hbase.hregion.majorcompaction', 'hbase.thrift.maxWorkerThreads'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.hregion.memstore.flush.size'.", "The value for 'hbase.hregion.majorcompaction' is set to 302400000 which corresponds to approximately 3.5 days, not 7 days as mentioned in the description.", "The value for 'hbase.thrift.maxWorkerThreads' is set to 2000 which may be too high and could potentially lead to resource exhaustion."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.hregion.memstore.flush.size	hbase.hregion.majorcompaction
+[Ciri] Reason for hbase.hregion.memstore.flush.size: The 'usage' tag is not a valid tag for property 'hbase.hregion.memstore.flush.size'.
+[Ciri] Reason for hbase.hregion.majorcompaction: The 'usage' tag is not a valid tag for property 'hbase.hregion.majorcompaction'.

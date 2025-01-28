@@ -1,0 +1,15 @@
+Wrong shot number:
+[2]
+
+Correct shot number:
+[3, 11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.mapfile.bloom.error.rate', 'ipc.client.rpc-timeout.ms'], 'reason': ["The property 'io.mapfile.bloom.error.rate' has a value of '0.01' which is higher than the default value of 0.005, increasing the false positive rate.", "The property 'ipc.client.rpc-timeout.ms' has a value of '0' which might lead to potential issues as it indicates no timeout set for waiting for a response from the server."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.mapfile.bloom.error.rate	ipc.client.rpc-timeout.ms
+[Ciri] Reason for io.mapfile.bloom.error.rate: The property 'io.mapfile.bloom.error.rate' has a value of '0.01' which is higher than the default value of 0.005, increasing the false positive rate.
+[Ciri] Reason for ipc.client.rpc-timeout.ms: The property 'ipc.client.rpc-timeout.ms' has a value of '0' which might lead to potential issues as it indicates no timeout set for waiting for a response from the server.

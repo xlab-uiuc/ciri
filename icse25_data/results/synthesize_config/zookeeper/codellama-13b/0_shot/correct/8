@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'secureClientPort', 'quorum.auth.enableSasl', 'quorumListenOnAllIPs', 'portUnification'], 'reason': ['dataDir and dataLogDir must be absolute paths.', 'clientPort and secureClientPort must be different.', 'quorum.auth.enableSasl must be set to true if using SASL authentication.', 'quorumListenOnAllIPs must be set to true if using a non-localhost address.', 'portUnification must be set to true if using a non-localhost address.']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'secureClientPort', 'reconfigEnabled', 'quorumListenOnAllIPs', 'clientPort', 'sslQuorum', 'portUnification'], 'reason': ['quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0', 'secureClientPort is not a valid property for zookeeper version 3.7.0', 'reconfigEnabled is not a valid property for zookeeper version 3.7.0', 'quorumListenOnAllIPs is not a valid property for zookeeper version 3.7.0', 'clientPort is not a valid property for zookeeper version 3.7.0', 'sslQuorum is not a valid property for zookeeper version 3.7.0', 'portUnification is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'secureClientPort', 'quorum.auth.enableSasl', 'quorumListenOnAllIPs', 'portUnification'], 'reason': ['dataDir and dataLogDir must be set to absolute paths', 'clientPort and secureClientPort must be set to different ports', 'quorum.auth.enableSasl must be set to false', 'quorumListenOnAllIPs must be set to false', 'portUnification must be set to false']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: dataDir	dataLogDir	clientPort	secureClientPort	quorum.auth.enableSasl	quorumListenOnAllIPs	portUnification
+[Ciri] Reason for dataDir: dataDir and dataLogDir must be set to absolute paths
+[Ciri] Reason for dataLogDir: clientPort and secureClientPort must be different.
+[Ciri] Reason for clientPort: quorum.auth.enableSasl must be set to true if using SASL authentication.
+[Ciri] Reason for secureClientPort: quorumListenOnAllIPs must be set to true if using a non-localhost address.
+[Ciri] Reason for quorum.auth.enableSasl: portUnification must be set to true if using a non-localhost address.
+[Ciri] Reason for quorumListenOnAllIPs: 
+[Ciri] Reason for portUnification: 

@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'hadoop.security.uid.cache.secs', 'ipc.[port_number].scheduler.impl', 'file.blocksize', 'hadoop.user.group.static.mapping.overrides', 'hadoop.registry.zk.root'], 'reason': ['fs.default.name is deprecated', 'hadoop.security.uid.cache.secs is not a valid property', 'ipc.[port_number].scheduler.impl is not a valid property', 'file.blocksize is not a valid property', 'hadoop.user.group.static.mapping.overrides is not a valid property', 'hadoop.registry.zk.root is not a valid property']}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'hadoop.security.instrumentation.requires.admin', 'hadoop.security.uid.cache.secs', 'ipc.[port_number].scheduler.impl', 'file.blocksize', 'hadoop.user.group.static.mapping.overrides', 'hadoop.registry.zk.root'], 'reason': ['fs.default.name is deprecated', 'hadoop.security.instrumentation.requires.admin is not a valid property', 'hadoop.security.uid.cache.secs is not a valid property', 'ipc.[port_number].scheduler.impl is not a valid property', 'file.blocksize is not a valid property', 'hadoop.user.group.static.mapping.overrides is not a valid property', 'hadoop.registry.zk.root is not a valid property']}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'hadoop.security.uid.cache.secs'], 'reason': ['Deprecated property', 'Property not found']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'hadoop.security.uid.cache.secs', 'ipc.[port_number].scheduler.impl', 'file.blocksize', 'hadoop.user.group.static.mapping.overrides', 'hadoop.registry.zk.root'], 'reason': ['fs.default.name is deprecated. Use fs.defaultFS instead.', 'hadoop.security.uid.cache.secs is not a valid property.', 'ipc.[port_number].scheduler.impl is not a valid property.', 'file.blocksize is not a valid property.', 'hadoop.user.group.static.mapping.overrides is not a valid property.', 'hadoop.registry.zk.root is not a valid property.']}
+
+{'hasError': True, 'errParameter': ['fs.default.name'], 'reason': ['Deprecated. Use (fs.defaultFS) property instead']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.instrumentation.requires.admin'], 'reason': ['The property hadoop.security.instrumentation.requires.admin is not recognized by Hadoop Common 3.3.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name'], 'reason': ['fs.default.name is deprecated. Use (fs.defaultFS) property instead']}
+
+{'hasError': True, 'errParameter': ['fs.default.name'], 'reason': ['fs.default.name is deprecated. Use (fs.defaultFS) property instead']}
+
+{'hasError': True, 'errParameter': ['fs.default.name'], 'reason': ['Deprecated property. Use (fs.defaultFS) property instead']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.default.name
+[Ciri] Reason for fs.default.name: fs.default.name is deprecated. Use (fs.defaultFS) property instead

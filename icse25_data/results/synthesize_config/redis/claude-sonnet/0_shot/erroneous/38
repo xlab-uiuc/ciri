@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'pidfile'], 'reason': ["The 'cluster-announce-bus-port' parameter is not a valid configuration option in Redis 7.0.0. It is used for Redis Cluster configuration.", "The 'pidfile' parameter should be a valid file path, but '/valid/file1.pid' is not a valid path on most systems."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-announce-bus-port	pidfile
+[Ciri] Reason for cluster-announce-bus-port: The 'cluster-announce-bus-port' parameter is not a valid configuration option in Redis 7.0.0. It is used for Redis Cluster configuration.
+[Ciri] Reason for pidfile: The 'pidfile' parameter should be a valid file path, but '/valid/file1.pid' is not a valid path on most systems.

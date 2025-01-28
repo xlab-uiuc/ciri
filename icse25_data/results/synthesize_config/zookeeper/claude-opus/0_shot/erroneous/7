@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'maxSessionTimeout', 'autopurge.purgeInterval'], 'reason': ["dataLogDir should not contain multiple consecutive forward slashes. It should be 'tmp/staging' instead of 'tmp////staging'.", 'maxSessionTimeout should be set to a positive integer value. Setting it to 0 means no session timeout.', 'autopurge.purgeInterval should be set to a non-negative integer value. Setting it to -1 disables auto purging.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dataLogDir	maxSessionTimeout	autopurge.purgeInterval
+[Ciri] Reason for dataLogDir: dataLogDir should not contain multiple consecutive forward slashes. It should be 'tmp/staging' instead of 'tmp////staging'.
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout should be set to a positive integer value. Setting it to 0 means no session timeout.
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval should be set to a non-negative integer value. Setting it to -1 disables auto purging.

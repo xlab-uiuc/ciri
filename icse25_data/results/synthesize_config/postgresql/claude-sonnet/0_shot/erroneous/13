@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_count', 'deadlock_timeout'], 'reason': ['tcp_keepalives_count should be a positive integer value, not a negative value like -100.', "deadlock_timeout should be a valid time value like '1s' or '1ms'. '1s' is not a valid time value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tcp_keepalives_count	deadlock_timeout
+[Ciri] Reason for tcp_keepalives_count: tcp_keepalives_count should be a positive integer value, not a negative value like -100.
+[Ciri] Reason for deadlock_timeout: deadlock_timeout should be a valid time value like '1s' or '1ms'. '1s' is not a valid time value.

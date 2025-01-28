@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.httpserver.filter.handlers</name>
+  <value>org.apache.hadoop.hdfs.server.datanode.web.RestCsrfPreventionFilterHandler</value>
+  <description>Comma separated list of Netty servlet-style filter handlers to inject into the Datanode WebHDFS I/O path
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.name.dir.restore</name>
+  <value>true</value>
+  <description>Set to true to enable NameNode to attempt recovering a
+      previously failed dfs.namenode.name.dir. When enabled, a recovery of any
+      failed directory is attempted during checkpoint.</description>
+</property>
+
+<property>
+  <name>dfs.namenode.handler.count</name>
+  <value>20</value>
+  <description>The number of Namenode RPC server threads that listen to
+  requests from clients.
+  If dfs.namenode.servicerpc-address is not configured then
+  Namenode RPC server threads listen to requests from all nodes.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.deadnode.detection.deadnode.queue.max</name>
+  <value>200</value>
+    <description>
+      The max queue size of probing dead node.
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.blocks.per.postponedblocks.rescan</name>
+  <value>20000</value>
+  <description>Number of blocks to rescan for each iteration of
+    postponedMisreplicatedBlocks.
+  </description>
+</property>
+
+<property>
+  <name>dfs.http.client.failover.sleep.max.millis</name>
+  <value>7500</value>
+  <description>
+    Specify the upper bound of sleep time in milliseconds between
+    retries or failovers for WebHDFS client.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.read.prefetch.size</name>
+  <value>0.5</value>
+  <description>
+    The number of bytes for the DFSClient will fetch from the Namenode
+    during a read operation.  Defaults to 10 * ${dfs.blocksize}.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.read.shortcircuit.buffer.size</name>
+  <value>524288</value>
+  <description>
+    Buffer size in bytes for short-circuit local reads.
+  </description>
+</property>
+
+</configuration>

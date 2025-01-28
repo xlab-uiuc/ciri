@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>io.seqfile.local.dir</name>
+  <value>/valid/file2</value>
+  <description>The local directory where sequence file stores intermediate
+  data files during merge.  May be a comma-separated list of
+  directories on different devices in order to spread disk i/o.
+  Directories that do not exist are ignored.
+  </description>
+</property>
+
+<property>
+  <name>fs.azure.sas.expiry.period</name>
+  <value>180d</value>
+  <description>
+    The default value to be used for expiration period for SAS keys generated.
+    Can use the following suffix (case insensitive):
+    ms(millis), s(sec), m(min), h(hour), d(day)
+    to specify the time (such as 2s, 2m, 1h, etc.).
+  </description>
+</property>
+
+<property>
+  <name>fs.azure.authorization.caching.enable</name>
+  <value>true</value>
+  <description>
+    Config flag to enable caching of authorization results and saskeys in WASB.
+    This flag is relevant only when fs.azure.authorization is enabled.
+  </description>
+</property>
+
+<property>
+  <name>ipc.server.listen.queue.size</name>
+  <value>128</value>
+  <description>Indicates the length of the listen queue for servers accepting
+               client connections.
+  </description>
+</property>
+
+<property>
+  <name>ftp.stream-buffer-size</name>
+  <value>4096</value>
+  <description>The size of buffer to stream files.
+  The size of this buffer should probably be a multiple of hardware
+  page size (4096 on Intel x86), and it determines how much data is
+  buffered during read and write operations.</description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.kerberos.keytab</name>
+  <value>/valid/file2</value>
+  <description>
+    Location of the keytab file with the credentials for the principal.
+    Referring to the same keytab file Oozie uses for its Kerberos credentials for Hadoop.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.cross-origin.allowed-headers</name>
+  <value>X-Requested-With,Content-Type,Accept,Origin</value>
+  <description>Comma separated list of headers that are allowed for web
+    services needing cross-origin (CORS) support.</description>
+</property>
+
+<property>
+  <name>ha.failover-controller.cli-check.rpc-timeout.ms</name>
+  <value>20000</value>
+  <description>
+    Timeout that the CLI (manual) FC waits for monitorHealth, getServiceState
+  </description>
+</property>
+
+</configuration>

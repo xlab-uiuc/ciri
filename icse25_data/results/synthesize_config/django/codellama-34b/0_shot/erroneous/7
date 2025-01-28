@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_PATH', 'CSRF_TRUSTED_ORIGINS', 'USE_X_FORWARDED_PORT', 'CSRF_COOKIE_HTTPONLY'], 'reason': ['CSRF_COOKIE_PATH should not end with a slash', 'CSRF_TRUSTED_ORIGINS should not be empty', 'USE_X_FORWARDED_PORT should be set to False', 'CSRF_COOKIE_HTTPONLY should be set to True']}
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_PATH', 'EMAIL_SUBJECT_PREFIX', 'CSRF_TRUSTED_ORIGINS', 'USE_I18N', 'YEAR_MONTH_FORMAT', 'USE_X_FORWARDED_PORT', 'CSRF_COOKIE_HTTPONLY', 'EMAIL_SSL_CERTFILE'], 'reason': ['CSRF_COOKIE_PATH is not a valid path', 'EMAIL_SUBJECT_PREFIX must start with a letter', 'CSRF_TRUSTED_ORIGINS must be a list of strings', 'USE_I18N must be a boolean', 'YEAR_MONTH_FORMAT must be a string', 'USE_X_FORWARDED_PORT must be a boolean', 'CSRF_COOKIE_HTTPONLY must be a boolean', 'EMAIL_SSL_CERTFILE must be a string']}
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_PATH', 'CSRF_TRUSTED_ORIGINS', 'USE_X_FORWARDED_PORT', 'CSRF_COOKIE_HTTPONLY'], 'reason': ['CSRF_COOKIE_PATH is not a valid path', 'CSRF_TRUSTED_ORIGINS should be a list of strings', 'USE_X_FORWARDED_PORT should be a boolean', 'CSRF_COOKIE_HTTPONLY should be a boolean']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: CSRF_COOKIE_PATH	CSRF_TRUSTED_ORIGINS	USE_X_FORWARDED_PORT	CSRF_COOKIE_HTTPONLY
+[Ciri] Reason for CSRF_COOKIE_PATH: CSRF_COOKIE_PATH is not a valid path
+[Ciri] Reason for CSRF_TRUSTED_ORIGINS: CSRF_TRUSTED_ORIGINS should not be empty
+[Ciri] Reason for USE_X_FORWARDED_PORT: USE_X_FORWARDED_PORT should be set to False
+[Ciri] Reason for CSRF_COOKIE_HTTPONLY: CSRF_COOKIE_HTTPONLY should be set to True

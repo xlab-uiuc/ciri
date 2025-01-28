@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.handler.count</name>
+  <value>60</value>
+    <description>Count of RPC Listener instances spun up on RegionServers.
+      Same property is used by the Master for count of master handlers.
+      Too many handlers can be counter-productive. Make it a multiple of
+      CPU count. If mostly read-only, handlers count close to cpu count
+      does well. Start with twice the CPU count and tune from there.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.hlog.writer.impl</name>
+  <value>org.apache.hadoop.hbase.regionserver.wal.ProtobufLogWriter</value>
+    <description>The WAL file writer implementation.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.global.memstore.size</name>
+  <value>0.1</value>
+    <description>Maximum size of all memstores in a region server before new
+      updates are blocked and flushes are forced. Defaults to 40% of heap (0.4).
+      Updates are blocked and flushes are forced until size of all memstores
+      in a region server hits hbase.regionserver.global.memstore.size.lower.limit.
+      The default value in this configuration has been intentionally left empty in order to
+      honor the old hbase.regionserver.global.memstore.upperLimit property if present.
+    </description>
+</property>
+
+<property>
+  <name>hbase.master.keytab.file</name>
+  <value>/valid/file2</value>
+    <description>Full path to the kerberos keytab file to use for logging in
+    the configured HMaster server principal.</description>
+</property>
+
+<property>
+  <name>hbase.replication.source.maxthreads</name>
+  <value>1</value>
+    <description>
+        The maximum number of threads any replication source will use for
+        shipping edits to the sinks in parallel. This also limits the number of
+        chunks each replication batch is broken into. Larger values can improve
+        the replication throughput between the master and slave clusters. The
+        default of 10 will rarely need to be changed.
+    </description>
+</property>
+
+<property>
+  <name>hbase.snapshot.master.timeout.millis</name>
+  <value>150000</value>
+    <description>
+       Timeout for master for the snapshot procedure execution.
+    </description>
+</property>
+
+<property>
+  <name>hbase.snapshot.region.timeout</name>
+  <value>600000</value>
+    <description>
+       Timeout for regionservers to keep threads in snapshot request pool waiting.
+    </description>
+</property>
+
+<property>
+  <name>hbase.master.wait.on.service.seconds</name>
+  <value>30</value>
+    <description>Default is 5 minutes. Make it 30 seconds for tests. See
+    HBASE-19794 for some context.</description>
+</property>
+
+</configuration>

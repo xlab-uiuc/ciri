@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.swebhdfs.impl', 'fs.ftp.host', 'ftp.stream-buffer-size'], 'reason': ["The property 'fs.AbstractFileSystem.swebhdfs.impl' is not a valid property for hcommon version 3.3.0.", "The property 'fs.ftp.host' has an invalid IP address format.", "The property 'ftp.stream-buffer-size' should have a value that is a multiple of the hardware page size (4096 on Intel x86)."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.AbstractFileSystem.swebhdfs.impl	fs.ftp.host	ftp.stream-buffer-size
+[Ciri] Reason for fs.AbstractFileSystem.swebhdfs.impl: The property 'fs.AbstractFileSystem.swebhdfs.impl' is not a valid property for hcommon version 3.3.0.
+[Ciri] Reason for fs.ftp.host: The property 'fs.ftp.host' has an invalid IP address format.
+[Ciri] Reason for ftp.stream-buffer-size: The property 'ftp.stream-buffer-size' should have a value that is a multiple of the hardware page size (4096 on Intel x86).

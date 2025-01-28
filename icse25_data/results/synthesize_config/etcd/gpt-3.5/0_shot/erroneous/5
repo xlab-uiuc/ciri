@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-tls'], 'reason': ["'enable-v2' is not a valid configuration parameter for etcd version 3.5.0", "'auto-tls' is not a valid configuration parameter for etcd version 3.5.0"]}
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-tls'], 'reason': ["The 'enable-v2' parameter is no longer supported in etcd version 3.5.0.", "The 'auto-tls' parameter is no longer supported in etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['wal-dir', 'enable-v2'], 'reason': ["'wal-dir' parameter should be 'wal-dir: /tmp/etcd_wal' with a single forward slash at the beginning.", "'enable-v2' parameter is not supported in etcd version 3.5.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: enable-v2	auto-tls
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is no longer supported in etcd version 3.5.0.
+[Ciri] Reason for auto-tls: The 'auto-tls' parameter is no longer supported in etcd version 3.5.0.

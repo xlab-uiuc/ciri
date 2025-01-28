@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.fileSplitTimeout</name>
+  <value>300000</value>
+    <description>Splitting a region, how long to wait on the file-splitting
+      step before aborting the attempt. Default: 600000. This setting used
+      to be known as hbase.regionserver.fileSplitTimeout in hbase-1.x.
+      Split is now run master-side hence the rename (If a
+      'hbase.master.fileSplitTimeout' setting found, will use it to
+      prime the current 'hbase.master.fileSplitTimeout'
+      Configuration.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.port</name>
+  <value>16020</value>
+    <description>The port the HBase RegionServer binds to.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.dns.nameserver</name>
+  <value>default</value>
+    <description>The host name or IP address of the name server (DNS)
+      which a region server should use to determine the host name used by the
+      master for communication and display purposes.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.leaderport</name>
+  <value>7776</value>
+    <description>Port used by ZooKeeper for leader election.
+    See https://zookeeper.apache.org/doc/r3.3.3/zookeeperStarted.html#sc_RunningReplicatedZooKeeper
+    for more information.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.initLimit</name>
+  <value>1</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The number of ticks that the initial synchronization phase can take.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.memstore.flush.size</name>
+  <value>67108864</value>
+    <description>
+    Memstore will be flushed to disk if size of the memstore
+    exceeds this number of bytes.  Value is checked by a thread that runs
+    every hbase.server.thread.wakefrequency.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.compaction.enabled</name>
+  <value>true</value>
+    <description>Enable/disable compactions on by setting true/false.
+      We can further switch compactions dynamically with the
+      compaction_switch shell command.</description>
+</property>
+
+<property>
+  <name>hbase.security.visibility.mutations.checkauths</name>
+  <value>false</value>
+    <description>
+      This property if enabled, will check whether the labels in the visibility
+      expression are associated with the user issuing the mutation
+    </description>
+</property>
+
+</configuration>

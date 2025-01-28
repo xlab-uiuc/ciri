@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'enable-v2', 'initial-cluster-token', 'client-cert-auth', 'proxy-read-timeout', 'discovery-fallback', 'listen-peer-urls', 'name'], 'reason': ['advertise-client-urls is not a valid URL', 'enable-v2 is not a valid boolean', 'initial-cluster-token is not a valid string', 'client-cert-auth is not a valid boolean', 'proxy-read-timeout is not a valid integer', 'discovery-fallback is not a valid string', 'listen-peer-urls is not a valid URL', 'name is not a valid string']}
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'enable-v2', 'initial-cluster-token', 'client-cert-auth', 'proxy-read-timeout', 'discovery-fallback', 'listen-peer-urls', 'name'], 'reason': ['advertise-client-urls is not a valid url', 'enable-v2 is not a valid boolean', 'initial-cluster-token is not a valid string', 'client-cert-auth is not a valid boolean', 'proxy-read-timeout is not a valid integer', 'discovery-fallback is not a valid string', 'listen-peer-urls is not a valid url', 'name is not a valid string']}
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'initial-cluster-token', 'client-cert-auth', 'proxy-read-timeout', 'discovery-fallback', 'listen-peer-urls', 'name'], 'reason': ['advertise-client-urls: http://localhost:2379 is not a valid URL', "initial-cluster-token: 'etcd-cluster' is not a valid token", 'client-cert-auth: false is not a valid boolean', 'proxy-read-timeout: 2 is not a valid timeout', "discovery-fallback: 'proxy' is not a valid fallback", 'listen-peer-urls: http://localhost:2380 is not a valid URL', "name: 'default' is not a valid name"]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: advertise-client-urls	enable-v2	initial-cluster-token	client-cert-auth	proxy-read-timeout	discovery-fallback	listen-peer-urls	name
+[Ciri] Reason for advertise-client-urls: advertise-client-urls is not a valid url
+[Ciri] Reason for enable-v2: enable-v2 is not a valid boolean
+[Ciri] Reason for initial-cluster-token: initial-cluster-token is not a valid string
+[Ciri] Reason for client-cert-auth: client-cert-auth is not a valid boolean
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout is not a valid integer
+[Ciri] Reason for discovery-fallback: discovery-fallback is not a valid string
+[Ciri] Reason for listen-peer-urls: listen-peer-urls is not a valid URL
+[Ciri] Reason for name: name is not a valid string

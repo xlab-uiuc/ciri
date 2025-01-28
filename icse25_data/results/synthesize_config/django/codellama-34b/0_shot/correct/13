@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_AGE', 'CSRF_COOKIE_AGE'], 'reason': ['SESSION_COOKIE_AGE is deprecated in Django 4.0', 'CSRF_COOKIE_AGE is deprecated in Django 4.0']}
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_AGE', 'CSRF_COOKIE_AGE'], 'reason': ['SESSION_COOKIE_AGE is not a valid parameter for django version 4.0', 'CSRF_COOKIE_AGE is not a valid parameter for django version 4.0']}
+
+{'hasError': True, 'errParameter': ['DEBUG'], 'reason': ['DEBUG is not a valid boolean value']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: SESSION_COOKIE_AGE	CSRF_COOKIE_AGE
+[Ciri] Reason for SESSION_COOKIE_AGE: SESSION_COOKIE_AGE is not a valid parameter for django version 4.0
+[Ciri] Reason for CSRF_COOKIE_AGE: CSRF_COOKIE_AGE is not a valid parameter for django version 4.0

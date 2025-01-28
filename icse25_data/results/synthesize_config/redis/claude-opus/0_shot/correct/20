@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'set-max-intset-entries', 'repl-diskless-sync', 'replica-lazy-flush'], 'reason': ["The 'enable-protected-configs' option has been renamed to 'protected-mode' in Redis 7.0.0 and later versions.", "The 'set-max-intset-entries' option has been removed in Redis 7.0.0 and later versions.", "The 'repl-diskless-sync' option has been removed in Redis 7.0.0 and later versions. Use 'repl-diskless-load' instead.", "The 'replica-lazy-flush' option has been removed in Redis 7.0.0 and later versions. Use 'repl-lazy-flush' instead."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: enable-protected-configs	set-max-intset-entries	repl-diskless-sync	replica-lazy-flush
+[Ciri] Reason for enable-protected-configs: The 'enable-protected-configs' option has been renamed to 'protected-mode' in Redis 7.0.0 and later versions.
+[Ciri] Reason for set-max-intset-entries: The 'set-max-intset-entries' option has been removed in Redis 7.0.0 and later versions.
+[Ciri] Reason for repl-diskless-sync: The 'repl-diskless-sync' option has been removed in Redis 7.0.0 and later versions. Use 'repl-diskless-load' instead.
+[Ciri] Reason for replica-lazy-flush: The 'replica-lazy-flush' option has been removed in Redis 7.0.0 and later versions. Use 'repl-lazy-flush' instead.

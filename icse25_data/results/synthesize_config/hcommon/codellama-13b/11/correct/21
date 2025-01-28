@@ -1,0 +1,19 @@
+Wrong shot number:
+[7]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'hadoop.http.authentication.kerberos.keytab'], 'reason': ["The property 'io.seqfile.local.dir' has the value '/valid/file2' which is not a valid directory.", "The property 'hadoop.http.authentication.kerberos.keytab' has the value '/valid/file2' which is not a valid file."]}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'hadoop.http.authentication.kerberos.keytab'], 'reason': ["The property 'io.seqfile.local.dir' has the value '/valid/file2' which does not exist on the file system.", "The property 'hadoop.http.authentication.kerberos.keytab' has the value '/valid/file2' which does not exist on the file system."]}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'hadoop.http.authentication.kerberos.keytab'], 'reason': ["The property 'io.seqfile.local.dir' has the value '/valid/file2' which is not a valid directory.", "The property 'hadoop.http.authentication.kerberos.keytab' has the value '/valid/file2' which is not a valid file."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.seqfile.local.dir	hadoop.http.authentication.kerberos.keytab
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' has the value '/valid/file2' which is not a valid directory.
+[Ciri] Reason for hadoop.http.authentication.kerberos.keytab: The property 'hadoop.http.authentication.kerberos.keytab' has the value '/valid/file2' which is not a valid file.

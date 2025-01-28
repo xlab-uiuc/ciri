@@ -1,0 +1,26 @@
+Wrong shot number:
+[8, 5, 4]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.conversion.rule'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.conversion.rule' has the value 'none' which is not a valid value for this property."]}
+
+{'hasError': True, 'errParameter': ['hadoop.common.configuration.version'], 'reason': ["The property 'hadoop.common.configuration.version' has the value '3.0.0' which does not match the expected version '3.3.0'."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.block.size'], 'reason': ["The property 'fs.s3a.block.size' has the value '32M' which exceeds the range of an Integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.common.configuration.version'], 'reason': ["The property 'hadoop.common.configuration.version' has the value '3.0.0' which does not match the expected version '3.3.0'."]}
+
+{'hasError': True, 'errParameter': ['hadoop.common.configuration.version'], 'reason': ["The property 'hadoop.common.configuration.version' has the value '3.0.0' which is not a valid version number for HCommon version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['hadoop.common.configuration.version'], 'reason': ["The property 'hadoop.common.configuration.version' has the value '3.0.0' which does not match the expected version of 3.3.0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hadoop.common.configuration.version
+[Ciri] Reason for hadoop.common.configuration.version: The property 'hadoop.common.configuration.version' has the value '3.0.0' which does not match the expected version of 3.3.0.

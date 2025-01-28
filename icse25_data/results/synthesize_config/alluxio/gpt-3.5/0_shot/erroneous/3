@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ["Invalid value for property 'alluxio.user.network.streaming.flowcontrol.window'. The value should be in bytes or with a valid unit (e.g., 2MB).", "Invalid value for property 'alluxio.user.logging.threshold'. The value should be in milliseconds or with a valid unit (e.g., 10s)."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.logging.threshold'], 'reason': ["Invalid value for property 'alluxio.user.logging.threshold'. It should be in milliseconds format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.entry.buffer.count', 'alluxio.master.ufs.active.sync.event.rate.interval', 'alluxio.master.backup.connect.interval.max', 'alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ['Invalid property: alluxio.master.backup.entry.buffer.count', 'Invalid property: alluxio.master.ufs.active.sync.event.rate.interval', 'Invalid property: alluxio.master.backup.connect.interval.max', 'Invalid property: alluxio.user.network.streaming.flowcontrol.window', 'Invalid property: alluxio.user.logging.threshold']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.ufs.active.sync.event.rate.interval', 'alluxio.master.backup.connect.interval.max', 'alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ["Invalid time unit 'sec' in property 'alluxio.master.ufs.active.sync.event.rate.interval'. Use valid time units like 's', 'ms', 'us', 'ns'.", "Invalid time unit 'sec' in property 'alluxio.master.backup.connect.interval.max'. Use valid time units like 's', 'ms', 'us', 'ns'.", "Invalid size unit 'MB' in property 'alluxio.user.network.streaming.flowcontrol.window'. Use valid size units like 'B', 'KB', 'MB', 'GB', 'TB'.", "Invalid time unit 's' in property 'alluxio.user.logging.threshold'. Use valid time units like 's', 'ms', 'us', 'ns'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ['Invalid value format. It should be in bytes or with a valid unit (e.g., 2MB).', 'Invalid value format. It should be in milliseconds or with a valid unit (e.g., 10s).']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.ufs.active.sync.event.rate.interval', 'alluxio.master.backup.connect.interval.max', 'alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ['Invalid value format. Should be in milliseconds (e.g., 120000).', 'Invalid value format. Should be in milliseconds (e.g., 30000).', 'Invalid value format. Should be in bytes (e.g., 2097152).', 'Invalid value format. Should be in milliseconds (e.g., 10000).']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.master.ufs.active.sync.event.rate.interval	alluxio.master.backup.connect.interval.max	alluxio.user.network.streaming.flowcontrol.window	alluxio.user.logging.threshold
+[Ciri] Reason for alluxio.master.ufs.active.sync.event.rate.interval: Invalid value format. Should be in milliseconds (e.g., 120000).
+[Ciri] Reason for alluxio.master.backup.connect.interval.max: Invalid value format. Should be in milliseconds (e.g., 30000).
+[Ciri] Reason for alluxio.user.network.streaming.flowcontrol.window: Invalid value format. Should be in bytes (e.g., 2097152).
+[Ciri] Reason for alluxio.user.logging.threshold: Invalid time unit 's' in property 'alluxio.user.logging.threshold'. Use valid time units like 's', 'ms', 'us', 'ns'.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 1, 9]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.delegation-token-renewer.thread-retry-interval', 'yarn.log-aggregation.file-formats'], 'reason': ["The value '60s' for property 'yarn.resourcemanager.delegation-token-renewer.thread-retry-interval' is not in the correct format. It should be an integer value representing milliseconds.", "The property 'yarn.log-aggregation.file-formats' has the value 'nonono' which is not a valid file format. Valid file formats are specified as comma-separated values corresponding to the supported log file controllers."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.delegation-token-renewer.thread-retry-interval	yarn.log-aggregation.file-formats
+[Ciri] Reason for yarn.resourcemanager.delegation-token-renewer.thread-retry-interval: The value '60s' for property 'yarn.resourcemanager.delegation-token-renewer.thread-retry-interval' is not in the correct format. It should be an integer value representing milliseconds.
+[Ciri] Reason for yarn.log-aggregation.file-formats: The property 'yarn.log-aggregation.file-formats' has the value 'nonono' which is not a valid file format. Valid file formats are specified as comma-separated values corresponding to the supported log file controllers.

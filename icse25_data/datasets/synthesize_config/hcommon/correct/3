@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.kerberos.keytab.login.autorenewal.enabled</name>
+  <value>true</value>
+  <description>Used to enable automatic renewal of keytab based kerberos login.
+    By default the automatic renewal is disabled for keytab based kerberos login.
+  </description>
+</property>
+
+<property>
+  <name>io.skip.checksum.errors</name>
+  <value>true</value>
+  <description>If true, when a checksum error is encountered while
+  reading a sequence file, entries are skipped, instead of throwing an
+  exception.</description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.threshold</name>
+  <value>128M</value>
+  <description>How big (in bytes) to split upload or copy operations up into.
+    This also controls the partition size in renamed files, as rename() involves
+    copying the source file(s).
+    A suffix from the set {K,M,G,T,P} may be used to scale the numeric value.
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.s3a.impl</name>
+  <value>org.apache.hadoop.fs.s3a.S3A</value>
+  <description>The implementation class of the S3A AbstractFileSystem.</description>
+</property>
+
+<property>
+  <name>fs.azure.secure.mode</name>
+  <value>false</value>
+  <description>
+    Config flag to identify the mode in which fs.azure.NativeAzureFileSystem needs
+    to run under. Setting it "true" would make fs.azure.NativeAzureFileSystem use
+    SAS keys to communicate with Azure storage.
+  </description>
+</property>
+
+<property>
+  <name>ipc.client.connect.max.retries</name>
+  <value>20</value>
+  <description>Indicates the number of retries a client will make to establish
+               a server connection.
+  </description>
+</property>
+
+<property>
+  <name>net.topology.script.number.args</name>
+  <value>100</value>
+  <description> The max number of args that the script configured with
+    net.topology.script.file.name should be run with. Each arg is an
+    IP address.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.server.conf</name>
+  <value>/valid/file1</value>
+  <description>
+    Resource file from which ssl server keystore information will be extracted.
+    This file is looked up in the classpath, typically it should be in Hadoop
+    conf/ directory.
+  </description>
+</property>
+
+</configuration>

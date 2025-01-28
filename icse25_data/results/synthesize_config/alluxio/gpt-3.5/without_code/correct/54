@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 3, 5]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.timeout', 'alluxio.worker.tieredstore.level1.dirs.mediumtype'], 'reason': ["The property 'fs.cos.connection.timeout' has the value '1sec' which uses an incorrect unit.", "The property 'alluxio.worker.tieredstore.level1.dirs.mediumtype' has a reference to '${alluxio.worker.tieredstore.level1.alias}' which may cause configuration issues."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.timeout', 'alluxio.worker.tieredstore.level1.dirs.mediumtype'], 'reason': ["The property 'fs.cos.connection.timeout' has the value '1sec' which uses an incorrect unit.", "The property 'alluxio.worker.tieredstore.level1.dirs.mediumtype' has a reference to '${alluxio.worker.tieredstore.level1.alias}' which may not resolve correctly."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.timeout', 'alluxio.worker.tieredstore.level1.dirs.mediumtype'], 'reason': ["The property 'fs.cos.connection.timeout' has the value '1sec' which uses an incorrect unit.", "The property 'alluxio.worker.tieredstore.level1.dirs.mediumtype' has a reference '${alluxio.worker.tieredstore.level1.alias}' which may not be resolved correctly."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.cos.connection.timeout	alluxio.worker.tieredstore.level1.dirs.mediumtype
+[Ciri] Reason for fs.cos.connection.timeout: The property 'fs.cos.connection.timeout' has the value '1sec' which uses an incorrect unit.
+[Ciri] Reason for alluxio.worker.tieredstore.level1.dirs.mediumtype: The property 'alluxio.worker.tieredstore.level1.dirs.mediumtype' has a reference to '${alluxio.worker.tieredstore.level1.alias}' which may cause configuration issues.

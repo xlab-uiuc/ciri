@@ -1,0 +1,19 @@
+Wrong shot number:
+[1, 2, 8]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['gin_fuzzy_search_limit', 'krb_caseins_users'], 'reason': ["The property 'gin_fuzzy_search_limit' has the value '-1' which is not a valid positive integer.", "The property 'krb_caseins_users' has the value 'off' which is not a recognized boolean value."]}
+
+{'hasError': True, 'errParameter': ['gin_fuzzy_search_limit', 'krb_caseins_users'], 'reason': ["The property 'gin_fuzzy_search_limit' has the value '-1' which is not a valid value. It should be a positive integer.", "The property 'krb_caseins_users' has the value 'off' which is not a valid value. It should be 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['superuser_reserved_connections', 'gin_fuzzy_search_limit'], 'reason': ["The property 'superuser_reserved_connections' should be less than 'max_connections'.", "The property 'gin_fuzzy_search_limit' has the value '-1' which is not of the correct type Integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: gin_fuzzy_search_limit	krb_caseins_users
+[Ciri] Reason for gin_fuzzy_search_limit: The property 'gin_fuzzy_search_limit' has the value '-1' which is not a valid positive integer.
+[Ciri] Reason for krb_caseins_users: The property 'krb_caseins_users' has the value 'off' which is not a recognized boolean value.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 1, 11]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.read.prefetch.size', 'dfs.namenode.snapshot.skiplist.max.levels'], 'reason': ["The property 'dfs.client.read.prefetch.size' has the value '0.5' which is not of the correct type. It should be an integer representing the number of bytes.", "The property 'dfs.namenode.snapshot.skiplist.max.levels' has the value '1' which contradicts the default description. By default, it is set to 0 and a linear list will be used. If skip list is used, the value should be greater than 1."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.client.read.prefetch.size	dfs.namenode.snapshot.skiplist.max.levels
+[Ciri] Reason for dfs.client.read.prefetch.size: The property 'dfs.client.read.prefetch.size' has the value '0.5' which is not of the correct type. It should be an integer representing the number of bytes.
+[Ciri] Reason for dfs.namenode.snapshot.skiplist.max.levels: The property 'dfs.namenode.snapshot.skiplist.max.levels' has the value '1' which contradicts the default description. By default, it is set to 0 and a linear list will be used. If skip list is used, the value should be greater than 1.

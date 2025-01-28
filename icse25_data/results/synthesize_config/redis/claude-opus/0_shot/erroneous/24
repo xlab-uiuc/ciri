@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'hash-max-listpack-value'], 'reason': ["In Redis 7.0, the 'daemonize' configuration parameter has been removed. Redis will run in the foreground by default. To run Redis in the background, use your operating system's init system or a process manager.", "The 'hash-max-listpack-value' configuration parameter has been renamed to 'hash-max-listpack-entries' in Redis 7.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: daemonize	hash-max-listpack-value
+[Ciri] Reason for daemonize: In Redis 7.0, the 'daemonize' configuration parameter has been removed. Redis will run in the foreground by default. To run Redis in the background, use your operating system's init system or a process manager.
+[Ciri] Reason for hash-max-listpack-value: The 'hash-max-listpack-value' configuration parameter has been renamed to 'hash-max-listpack-entries' in Redis 7.0.

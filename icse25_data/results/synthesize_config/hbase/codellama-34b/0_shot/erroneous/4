@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.port', 'hbase.ipc.server.callqueue.handler.factor', 'hbase.client.scanner.caching', 'hbase.regionserver.minorcompaction.pagecache.drop', 'hbase.ipc.client.tcpnodelay', 'hbase.table.lock.enable', 'hbase.status.published', 'hbase.replication.rpc.codec'], 'reason': ['The port the HBase RegionServer binds to.', 'Factor to determine the number of call queues.', 'Number of rows that we try to fetch when calling next on a scanner if it is not served from (local, client) memory.', 'Specifies whether to drop pages read/written into the system page cache by minor compactions.', 'Set no delay on rpc socket connections.', 'Set to true to enable locking the table in zookeeper for schema change operations.', 'This setting activates the publication by the master of the status of the region server.', 'The codec that is to be used when replication is enabled so that the tags are also replicated.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.regionserver.port	hbase.ipc.server.callqueue.handler.factor	hbase.client.scanner.caching	hbase.regionserver.minorcompaction.pagecache.drop	hbase.ipc.client.tcpnodelay	hbase.table.lock.enable	hbase.status.published	hbase.replication.rpc.codec
+[Ciri] Reason for hbase.regionserver.port: The port the HBase RegionServer binds to.
+[Ciri] Reason for hbase.ipc.server.callqueue.handler.factor: Factor to determine the number of call queues.
+[Ciri] Reason for hbase.client.scanner.caching: Number of rows that we try to fetch when calling next on a scanner if it is not served from (local, client) memory.
+[Ciri] Reason for hbase.regionserver.minorcompaction.pagecache.drop: Specifies whether to drop pages read/written into the system page cache by minor compactions.
+[Ciri] Reason for hbase.ipc.client.tcpnodelay: Set no delay on rpc socket connections.
+[Ciri] Reason for hbase.table.lock.enable: Set to true to enable locking the table in zookeeper for schema change operations.
+[Ciri] Reason for hbase.status.published: This setting activates the publication by the master of the status of the region server.
+[Ciri] Reason for hbase.replication.rpc.codec: The codec that is to be used when replication is enabled so that the tags are also replicated.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-tls', 'proxy-read-timeout'], 'reason': ["initial-cluster-state must be set to 'existing' when restoring a cluster from a snapshot", 'auto-tls cannot be set to true when restoring a cluster from a snapshot', "proxy-read-timeout must be set to a value greater than 0 when discovery-fallback is set to 'proxy'"]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: initial-cluster-state	auto-tls	proxy-read-timeout
+[Ciri] Reason for initial-cluster-state: initial-cluster-state must be set to 'existing' when restoring a cluster from a snapshot
+[Ciri] Reason for auto-tls: auto-tls cannot be set to true when restoring a cluster from a snapshot
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout must be set to a value greater than 0 when discovery-fallback is set to 'proxy'

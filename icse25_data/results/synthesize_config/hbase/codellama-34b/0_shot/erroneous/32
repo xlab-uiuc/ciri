@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.ipc.server.callqueue.read.ratio', 'hbase.client.max.total.tasks', 'hbase.offpeak.end.hour', 'hbase.regionserver.minorcompaction.pagecache.drop', 'hbase.thrift.maxQueuedRequests', 'hbase.master.loadbalancer.class', 'hbase.http.filter.initializers'], 'reason': ['hbase.regionserver.info.bindAddress is not a valid IP address.', 'hbase.ipc.server.callqueue.read.ratio is not a valid number.', 'hbase.client.max.total.tasks is not a valid number.', 'hbase.offpeak.end.hour is not a valid number.', 'hbase.regionserver.minorcompaction.pagecache.drop is not a valid boolean.', 'hbase.thrift.maxQueuedRequests is not a valid number.', 'hbase.master.loadbalancer.class is not a valid class.', 'hbase.http.filter.initializers is not a valid class.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.regionserver.info.bindAddress	hbase.ipc.server.callqueue.read.ratio	hbase.client.max.total.tasks	hbase.offpeak.end.hour	hbase.regionserver.minorcompaction.pagecache.drop	hbase.thrift.maxQueuedRequests	hbase.master.loadbalancer.class	hbase.http.filter.initializers
+[Ciri] Reason for hbase.regionserver.info.bindAddress: hbase.regionserver.info.bindAddress is not a valid IP address.
+[Ciri] Reason for hbase.ipc.server.callqueue.read.ratio: hbase.ipc.server.callqueue.read.ratio is not a valid number.
+[Ciri] Reason for hbase.client.max.total.tasks: hbase.client.max.total.tasks is not a valid number.
+[Ciri] Reason for hbase.offpeak.end.hour: hbase.offpeak.end.hour is not a valid number.
+[Ciri] Reason for hbase.regionserver.minorcompaction.pagecache.drop: hbase.regionserver.minorcompaction.pagecache.drop is not a valid boolean.
+[Ciri] Reason for hbase.thrift.maxQueuedRequests: hbase.thrift.maxQueuedRequests is not a valid number.
+[Ciri] Reason for hbase.master.loadbalancer.class: hbase.master.loadbalancer.class is not a valid class.
+[Ciri] Reason for hbase.http.filter.initializers: hbase.http.filter.initializers is not a valid class.

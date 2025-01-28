@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_error_verbosity', 'geqo_effort', 'stats_fetch_consistency'], 'reason': ["log_error_verbosity 'default' is not a valid value. It should be an integer (0-2).", "geqo_effort '10' is not a valid value. It should be an integer (1-10).", "stats_fetch_consistency 'cache' is not a valid value. It should be 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['log_error_verbosity', 'geqo_effort', 'stats_fetch_consistency'], 'reason': ["log_error_verbosity does not have a valid value. It should be one of 'terse', 'default', or 'verbose'.", 'geqo_effort has an invalid value. It should be an integer between 1 and 10.', "stats_fetch_consistency has an invalid value. It should be 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['log_error_verbosity', 'geqo_effort', 'stats_fetch_consistency'], 'reason': ["log_error_verbosity value 'default' is not valid. It should be an integer value.", "geqo_effort value '10' is not valid. It should be between 1 and 10.", "stats_fetch_consistency value 'cache' is not valid. It should be 'on' or 'off'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: log_error_verbosity	geqo_effort	stats_fetch_consistency
+[Ciri] Reason for log_error_verbosity: log_error_verbosity 'default' is not a valid value. It should be an integer (0-2).
+[Ciri] Reason for geqo_effort: geqo_effort '10' is not a valid value. It should be an integer (1-10).
+[Ciri] Reason for stats_fetch_consistency: stats_fetch_consistency 'cache' is not a valid value. It should be 'on' or 'off'.

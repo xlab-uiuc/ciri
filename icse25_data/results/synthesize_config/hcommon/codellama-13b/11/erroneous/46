@@ -1,0 +1,35 @@
+Wrong shot number:
+[5]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.s3guard.ddb.table.capacity.write', 'fs.azure.saskey.usecontainersaskeyforallaccess'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is not a valid port number.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '1' which is not a valid value for the provisioned throughput requirements for write operations in terms of capacity units for the DynamoDB table.", "The property 'fs.azure.saskey.usecontainersaskeyforallaccess' has the value 'false' which is not a valid value for the use container saskey for access to all blobs within the container."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.s3guard.ddb.table.capacity.write', 'net.topology.table.file.name'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is not a valid port number.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '1' which is not a valid value for the property.", "The property 'net.topology.table.file.name' has the value '/valid/file1' which is not a valid file name."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is not a valid port number.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '1' which is not a valid value for the property."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is not a valid port number.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '1' which is not a valid value for the provisioned throughput requirements for write operations in terms of capacity units for the DynamoDB table."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is greater than the maximum allowed value of 65535."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.s3guard.ddb.table.capacity.write', 'net.topology.table.file.name'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is not a valid port number.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '1' which is not a valid value for the property.", "The property 'net.topology.table.file.name' has the value '/valid/file1' which is not a valid file name."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is greater than the maximum allowed value of 65535.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '1' which is less than the minimum allowed value of 2."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is not a valid port number.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '1' which is not a valid provisioned throughput value. The value must be greater than or equal to 1."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is greater than the maximum allowed value of '65535'.", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '1' which is less than the minimum allowed value of '2'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host.port	fs.s3a.s3guard.ddb.table.capacity.write
+[Ciri] Reason for fs.ftp.host.port: The property 'fs.ftp.host.port' has the value '65536' which is greater than the maximum allowed value of '65535'.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: The property 'fs.s3a.s3guard.ddb.table.capacity.write' has the value '1' which is less than the minimum allowed value of 2.

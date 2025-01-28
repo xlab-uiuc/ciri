@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proc-title-template', 'appendfsync', 'hash-max-listpack-value', 'slowlog-max-len', 'oom-score-adj', 'oom-score-adj-values'], 'reason': ["The 'proc-title-template' option is not a valid configuration parameter in Redis 7.0.0.", "The 'appendfsync' option should be one of 'no', 'everysec', or 'always'. 'everysec' is not a valid value.", "The 'hash-max-listpack-value' option is not a valid configuration parameter in Redis 7.0.0.", "The 'slowlog-max-len' option is not a valid configuration parameter in Redis 7.0.0.", "The 'oom-score-adj' option should be a numeric value, not 'no'.", "The 'oom-score-adj-values' option is not a valid configuration parameter in Redis 7.0.0."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: proc-title-template	appendfsync	hash-max-listpack-value	slowlog-max-len	oom-score-adj	oom-score-adj-values
+[Ciri] Reason for proc-title-template: The 'proc-title-template' option is not a valid configuration parameter in Redis 7.0.0.
+[Ciri] Reason for appendfsync: The 'appendfsync' option should be one of 'no', 'everysec', or 'always'. 'everysec' is not a valid value.
+[Ciri] Reason for hash-max-listpack-value: The 'hash-max-listpack-value' option is not a valid configuration parameter in Redis 7.0.0.
+[Ciri] Reason for slowlog-max-len: The 'slowlog-max-len' option is not a valid configuration parameter in Redis 7.0.0.
+[Ciri] Reason for oom-score-adj: The 'oom-score-adj' option should be a numeric value, not 'no'.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' option is not a valid configuration parameter in Redis 7.0.0.

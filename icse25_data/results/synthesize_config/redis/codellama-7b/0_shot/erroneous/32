@@ -1,0 +1,36 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendonly', 'appendfsync', 'save', 'cluster-node-timeout', 'cluster-slave-validity-factor'], 'reason': ["appendonly must be either 'no' or 'always', not 'appendonlydir'", "appendfsync must be either 'no' or 'always', not 'appendfsync-always'", "save must be either '900 1 300 10 60 10000', not 'save-900-1-300-10-60-10000'", "cluster-node-timeout must be a positive integer, not '7500'", "cluster-slave-validity-factor must be a positive integer, not '0'"]}
+
+{'hasError': True, 'errParameter': ['bind-source-addr'], 'reason': ["The parameter 'bind-source-addr' is not a valid parameter for redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-config-file', 'cluster-node-timeout'], 'reason': ['cluster-enabled must be either yes or no', 'cluster-config-file must be a valid file path', 'cluster-node-timeout must be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendonly'], 'reason': ['appendonly can only be yes or no']}
+
+{'hasError': True, 'errParameter': ['appendonly', 'appendfsync', 'save', 'repl-backlog-size', 'repl-backlog-ttl', 'cluster-node-timeout'], 'reason': ['appendonly can only be yes or no', 'appendfsync can only be always, everysec, or no', 'save can only be 900, 300, 60, 1, or 0', 'repl-backlog-size must be at least 1', 'repl-backlog-ttl must be at least 1', 'cluster-node-timeout must be at least 1']}
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'repl-backlog-ttl', 'repl-backlog-size', 'repl-backlog-ttl', 'cluster-node-timeout', 'cluster-node-timeout'], 'reason': ['The value of repl-backlog-size must be greater than 0', 'The value of repl-backlog-ttl must be greater than 0', 'The value of repl-backlog-size must be greater than 0', 'The value of repl-backlog-ttl must be greater than 0', 'The value of cluster-node-timeout must be greater than 0', 'The value of cluster-node-timeout must be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-config-file', 'cluster-node-timeout'], 'reason': ['cluster-enabled must be either yes or no', 'cluster-config-file must be a valid path', 'cluster-node-timeout must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['appendonly', 'appendfsync', 'save', 'cluster-node-timeout', 'no-appendfsync-on-rewrite'], 'reason': ["Invalid value for 'appendonly'", "Invalid value for 'appendfsync'", "Invalid value for 'save'", "Invalid value for 'cluster-node-timeout'", "Invalid value for 'no-appendfsync-on-rewrite'"]}
+
+{'hasError': True, 'errParameter': ['appendonly', 'appendfsync', 'save', 'cluster-node-timeout', 'cluster-node-timeout', 'cluster-node-timeout', 'cluster-node-timeout'], 'reason': ["The parameter 'appendonly' is not a valid configuration parameter.", "The parameter 'appendfsync' is not a valid configuration parameter.", "The parameter 'save' is not a valid configuration parameter.", "The parameter 'cluster-node-timeout' is not a valid configuration parameter.", "The parameter 'cluster-node-timeout' is not a valid configuration parameter.", "The parameter 'cluster-node-timeout' is not a valid configuration parameter.", "The parameter 'cluster-node-timeout' is not a valid configuration parameter."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr'], 'reason': ["The parameter 'bind-source-addr' is not a valid parameter for Redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['cluster-node-timeout', 'no-appendfsync-on-rewrite'], 'reason': ['cluster-node-timeout is not a valid parameter for redis version 7.0.0', 'no-appendfsync-on-rewrite is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['bind-source-addr'], 'reason': ["The parameter 'bind-source-addr' is not a valid configuration parameter for Redis version 7.0.0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: bind-source-addr
+[Ciri] Reason for bind-source-addr: The parameter 'bind-source-addr' is not a valid parameter for Redis version 7.0.0

@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'recursive_worktable_factor', 'lo_compat_privileges', 'vacuum_cost_page_dirty', 'wal_receiver_timeout'], 'reason': ["vacuum_freeze_min_age value should be specified in bytes or as a time interval, e.g., '50MB' or '1h'.", 'recursive_worktable_factor should be an integer value, not a float.', "lo_compat_privileges should be set to 'on' or 'off'.", 'vacuum_cost_page_dirty value should be an integer.', "wal_receiver_timeout value should be specified in milliseconds, e.g., '1000'."]}
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'recursive_worktable_factor', 'lo_compat_privileges', 'vacuum_cost_page_dirty', 'wal_receiver_timeout', 'max_parallel_maintenance_workers', 'debug_print_rewritten'], 'reason': ['vacuum_freeze_min_age is not a valid parameter for PostgreSQL configuration.', 'recursive_worktable_factor should be an integer value, not a float.', 'lo_compat_privileges is not a valid parameter for PostgreSQL configuration.', 'vacuum_cost_page_dirty should be set to a numeric value.', "wal_receiver_timeout should not have 's' at the end of the value.", 'max_parallel_maintenance_workers should be set to an integer value.', "debug_print_rewritten should be set to 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'recursive_worktable_factor', 'lo_compat_privileges', 'vacuum_cost_page_dirty', 'wal_receiver_timeout', 'max_parallel_maintenance_workers', 'debug_print_rewritten'], 'reason': ['vacuum_freeze_min_age is not a valid parameter for PostgreSQL configuration.', 'recursive_worktable_factor should be an integer value, not a float.', 'lo_compat_privileges is not a valid parameter for PostgreSQL configuration.', 'vacuum_cost_page_dirty should be set to a numeric value.', "wal_receiver_timeout should not have 's' as a suffix for seconds.", 'max_parallel_maintenance_workers should be an integer value.', "debug_print_rewritten should be set to 'on' or 'off'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: vacuum_freeze_min_age	recursive_worktable_factor	lo_compat_privileges	vacuum_cost_page_dirty	wal_receiver_timeout	max_parallel_maintenance_workers	debug_print_rewritten
+[Ciri] Reason for vacuum_freeze_min_age: vacuum_freeze_min_age is not a valid parameter for PostgreSQL configuration.
+[Ciri] Reason for recursive_worktable_factor: recursive_worktable_factor should be an integer value, not a float.
+[Ciri] Reason for lo_compat_privileges: lo_compat_privileges is not a valid parameter for PostgreSQL configuration.
+[Ciri] Reason for vacuum_cost_page_dirty: vacuum_cost_page_dirty should be set to a numeric value.
+[Ciri] Reason for wal_receiver_timeout: wal_receiver_timeout should not have 's' as a suffix for seconds.
+[Ciri] Reason for max_parallel_maintenance_workers: max_parallel_maintenance_workers should be set to an integer value.
+[Ciri] Reason for debug_print_rewritten: debug_print_rewritten should be set to 'on' or 'off'.

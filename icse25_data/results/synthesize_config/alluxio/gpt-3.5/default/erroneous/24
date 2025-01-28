@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 1, 13]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.worker.tieredstore.level0.dirs.quota', 'alluxio.master.daily.backup.state.lock.sleep.duration', 'alluxio.master.ufs.active.sync.retry.timeout', 'alluxio.user.network.streaming.keepalive.timeout', 'alluxio.user.worker.list.refresh.interval', 'alluxio.master.daily.backup.files.retained', 'alluxio.web.threads'], 'reason': ["The property 'alluxio.job.master.client.threads' has a negative value which is not allowed.", "The property 'alluxio.worker.tieredstore.level0.dirs.quota' uses a placeholder '${alluxio.worker.ramdisk.size}' which may not be resolved correctly.", "The property 'alluxio.master.daily.backup.state.lock.sleep.duration' has the value '5m' which should be specified in seconds.", "The property 'alluxio.master.ufs.active.sync.retry.timeout' has the value '20sec' which should be specified in milliseconds.", "The property 'alluxio.user.network.streaming.keepalive.timeout' has the value '60sec' which should be specified in milliseconds.", "The property 'alluxio.user.worker.list.refresh.interval' has the value '2min' which should be specified in seconds.", "The property 'alluxio.master.daily.backup.files.retained' has a value that may be too low for retaining backups.", "The property 'alluxio.web.threads' has the value '0' which may not be a valid configuration."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.worker.tieredstore.level0.dirs.quota'], 'reason': ["The property 'alluxio.job.master.client.threads' has a negative value which is not allowed.", "The property 'alluxio.worker.tieredstore.level0.dirs.quota' uses a placeholder '${alluxio.worker.ramdisk.size}' which is not supported in this context."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.worker.tieredstore.level0.dirs.quota'], 'reason': ["The property 'alluxio.job.master.client.threads' has a negative value which is not allowed.", "The property 'alluxio.worker.tieredstore.level0.dirs.quota' uses a placeholder '${alluxio.worker.ramdisk.size}' which is not a valid value for defining the quota."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.client.threads	alluxio.worker.tieredstore.level0.dirs.quota
+[Ciri] Reason for alluxio.job.master.client.threads: The property 'alluxio.job.master.client.threads' has a negative value which is not allowed.
+[Ciri] Reason for alluxio.worker.tieredstore.level0.dirs.quota: The property 'alluxio.worker.tieredstore.level0.dirs.quota' uses a placeholder '${alluxio.worker.ramdisk.size}' which is not supported in this context.

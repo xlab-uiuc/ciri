@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.scheduler.monitor.enable</name>
+  <value>false</value>
+    <description>Enable a set of periodic monitors (specified in
+        yarn.resourcemanager.scheduler.monitor.policies) that affect the
+        scheduler.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.hostname</name>
+  <value>-1.0.0.0</value>
+    <description>The hostname of the NM.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file</name>
+  <value>/valid/file1</value>
+    <description>The HDFS location where the runC image tag to hash
+      file exists.</description>
+</property>
+
+<property>
+  <name>yarn.client.nodemanager-connect.max-wait-ms</name>
+  <value>360000</value>
+    <description>Max time to wait to establish a connection to NM</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.retry-interval-ms</name>
+  <value>500</value>
+    <description>
+    Default retry time interval for timeline servive client.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.amrmproxy.interceptor-class.pipeline</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.amrmproxy.DefaultRequestInterceptor</value>
+    <description>
+    The comma separated list of class names that implement the
+    RequestInterceptor interface. This is used by the AMRMProxyService to create
+    the request processing pipeline for applications.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.opportunistic-containers-use-pause-for-preemption</name>
+  <value>true</value>
+    <description>
+    Use container pause as the preemption policy over kill in the container
+    queue at a NodeManager.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container.stderr.pattern</name>
+  <value>{*stderr*</value>
+    <description>
+    Error filename pattern, to identify the file in the container's
+    Log directory which contain the container's error log. As error file
+    redirection is done by client/AM and yarn will not be aware of the error
+    file name. YARN uses this pattern to identify the error file and tail
+    the error log as diagnostics when the container execution returns non zero
+    value. Filename patterns are case sensitive and should match the
+    specifications of FileSystem.globStatus(Path) api. If multiple filenames
+    matches the pattern, first file matching the pattern will be picked.
+    </description>
+</property>
+
+</configuration>

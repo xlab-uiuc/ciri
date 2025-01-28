@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['oom-score-adj', 'pidfile', 'appenddirname', 'cluster-announce-tls-port'], 'reason': ["The 'oom-score-adj' parameter is not a valid Redis configuration option.", "The 'pidfile' parameter should be a valid file path, but '/valid/file1.pid' is not a valid path.", "The 'appenddirname' parameter is not a valid Redis configuration option.", "The 'cluster-announce-tls-port' parameter is not a valid Redis configuration option in version 7.0.0. This option is used for Redis Cluster configurations."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: oom-score-adj	pidfile	appenddirname	cluster-announce-tls-port
+[Ciri] Reason for oom-score-adj: The 'oom-score-adj' parameter is not a valid Redis configuration option.
+[Ciri] Reason for pidfile: The 'pidfile' parameter should be a valid file path, but '/valid/file1.pid' is not a valid path.
+[Ciri] Reason for appenddirname: The 'appenddirname' parameter is not a valid Redis configuration option.
+[Ciri] Reason for cluster-announce-tls-port: The 'cluster-announce-tls-port' parameter is not a valid Redis configuration option in version 7.0.0. This option is used for Redis Cluster configurations.

@@ -1,0 +1,13 @@
+Correct shot number:
+[4, 9, 15, 13, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.s3guard.ddb.background.sleep'], 'reason': ['Invalid value for hadoop.security.dns.nameserver. The value should be a valid IP address or hostname.', 'Invalid value for fs.defaultFS. The value should be a valid filesystem URI.', 'Invalid value for fs.s3a.s3guard.ddb.background.sleep. The value should be in milliseconds format.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.defaultFS	fs.s3a.s3guard.ddb.background.sleep
+[Ciri] Reason for hadoop.security.dns.nameserver: Invalid value for hadoop.security.dns.nameserver. The value should be a valid IP address or hostname.
+[Ciri] Reason for fs.defaultFS: Invalid value for fs.defaultFS. The value should be a valid filesystem URI.
+[Ciri] Reason for fs.s3a.s3guard.ddb.background.sleep: Invalid value for fs.s3a.s3guard.ddb.background.sleep. The value should be in milliseconds format.

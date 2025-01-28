@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-lazy-flush', 'list-compress-depth', 'zset-max-listpack-value', 'zset-max-listpack-entries'], 'reason': ['replica-lazy-flush is not a valid configuration parameter in Redis 7.0.0. The correct parameter is replica-lazy-flush.', 'list-compress-depth is not a valid configuration parameter in Redis 7.0.0. The correct parameter is list-max-listpack-size.', 'zset-max-listpack-value is not a valid configuration parameter in Redis 7.0.0. The correct parameter is zset-max-listpack-entries.', 'zset-max-listpack-entries is already defined in the configuration. Only one occurrence of each configuration parameter is allowed.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: replica-lazy-flush	list-compress-depth	zset-max-listpack-value	zset-max-listpack-entries
+[Ciri] Reason for replica-lazy-flush: replica-lazy-flush is not a valid configuration parameter in Redis 7.0.0. The correct parameter is replica-lazy-flush.
+[Ciri] Reason for list-compress-depth: list-compress-depth is not a valid configuration parameter in Redis 7.0.0. The correct parameter is list-max-listpack-size.
+[Ciri] Reason for zset-max-listpack-value: zset-max-listpack-value is not a valid configuration parameter in Redis 7.0.0. The correct parameter is zset-max-listpack-entries.
+[Ciri] Reason for zset-max-listpack-entries: zset-max-listpack-entries is already defined in the configuration. Only one occurrence of each configuration parameter is allowed.

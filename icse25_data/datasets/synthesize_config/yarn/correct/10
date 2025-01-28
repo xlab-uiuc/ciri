@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.scheduler.maximum-allocation-mb</name>
+  <value>16384</value>
+    <description>The maximum allocation for every container request at the RM
+    in MBs. Memory requests higher than this will throw an
+    InvalidResourceRequestException.</description>
+</property>
+
+<property>
+  <name>yarn.client.failover-no-ha-proxy-provider</name>
+  <value>org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider</value>
+    <description>When HA is not enabled, the class to be used by Clients, AMs and
+      NMs to retry connecting to the Active RM. It should extend
+      org.apache.hadoop.yarn.client.RMFailoverProxyProvider</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.delegation-token-renewer.thread-timeout</name>
+  <value>120s</value>
+    <description>
+    RM DelegationTokenRenewer thread timeout
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.percentage-physical-cpu-limit</name>
+  <value>100</value>
+    <description>Percentage of CPU that can be allocated
+    for containers. This setting allows users to limit the amount of
+    CPU that YARN containers use. Currently functional only
+    on Linux using cgroups. The default is to use 100% of CPU.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions</name>
+  <value>read</value>
+    <description>Permissions for application local directories.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.internal-timers-ttl-secs</name>
+  <value>420</value>
+    <description>
+      How long the internal Timer Tasks can be alive in writer. If there is no
+      write operation for this configured time, the internal timer tasks will
+      be close.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.nm-container-queuing.queue-limit-stdev</name>
+  <value>1.0f</value>
+    <description>
+    Value of standard deviation used for calculation of queue limit thresholds.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.reader.webapp.address</name>
+  <value>127.0.0.1</value>
+    <description>The http address of the timeline reader web application.</description>
+</property>
+
+</configuration>

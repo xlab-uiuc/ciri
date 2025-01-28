@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.mover.keytab.file', 'dfs.storage.policy.satisfier.address'], 'reason': ["The value for dfs.datanode.data.dir.perm should be a valid POSIX permission mode, not just a number. The correct format is like '755' or 'rwxr-xr-x'.", "The value for dfs.mover.keytab.file should be an absolute path to a valid keytab file on the system. '/valid/file1' is likely not a valid path.", "The value for dfs.storage.policy.satisfier.address should be a valid hostname or IP address, not '0.0.0.0:0'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.datanode.data.dir.perm	dfs.mover.keytab.file	dfs.storage.policy.satisfier.address
+[Ciri] Reason for dfs.datanode.data.dir.perm: The value for dfs.datanode.data.dir.perm should be a valid POSIX permission mode, not just a number. The correct format is like '755' or 'rwxr-xr-x'.
+[Ciri] Reason for dfs.mover.keytab.file: The value for dfs.mover.keytab.file should be an absolute path to a valid keytab file on the system. '/valid/file1' is likely not a valid path.
+[Ciri] Reason for dfs.storage.policy.satisfier.address: The value for dfs.storage.policy.satisfier.address should be a valid hostname or IP address, not '0.0.0.0:0'.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['databases', 'timeout', 'tcp-backlog', 'lazyfree-lazy-expire', 'repl-diskless-load', 'rdb-save-incremental-fsync', 'replica-announce-ip', 'repl-disable-tcp-nodelay'], 'reason': ["The 'databases' directive is valid, but the value should be within the range of 1 to 128.", "The 'timeout' directive is valid, but the value should be an integer greater than 0.", "The 'tcp-backlog' directive is valid, but the value should be between 511 and 65535.", "The 'lazyfree-lazy-expire' directive is not a valid configuration option.", "The 'repl-diskless-load' directive is valid, but its value must be 'on', 'off', or 'swapdb'.", "The 'rdb-save-incremental-fsync' directive is valid.", "The 'replica-announce-ip' directive is valid.", "The 'repl-disable-tcp-nodelay' directive is valid."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: databases	timeout	tcp-backlog	lazyfree-lazy-expire	repl-diskless-load	rdb-save-incremental-fsync	replica-announce-ip	repl-disable-tcp-nodelay
+[Ciri] Reason for databases: The 'databases' directive is valid, but the value should be within the range of 1 to 128.
+[Ciri] Reason for timeout: The 'timeout' directive is valid, but the value should be an integer greater than 0.
+[Ciri] Reason for tcp-backlog: The 'tcp-backlog' directive is valid, but the value should be between 511 and 65535.
+[Ciri] Reason for lazyfree-lazy-expire: The 'lazyfree-lazy-expire' directive is not a valid configuration option.
+[Ciri] Reason for repl-diskless-load: The 'repl-diskless-load' directive is valid, but its value must be 'on', 'off', or 'swapdb'.
+[Ciri] Reason for rdb-save-incremental-fsync: The 'rdb-save-incremental-fsync' directive is valid.
+[Ciri] Reason for replica-announce-ip: The 'replica-announce-ip' directive is valid.
+[Ciri] Reason for repl-disable-tcp-nodelay: The 'repl-disable-tcp-nodelay' directive is valid.

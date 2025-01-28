@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'wal_writer_flush_after', 'cpu_index_tuple_cost'], 'reason': ['wal_buffers must be a power of 2 between 16kB and 1GB', 'wal_writer_flush_after must be a power of 2 between 4MB and 1GB', 'cpu_index_tuple_cost must be a positive number']}
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'wal_writer_flush_after', 'cpu_index_tuple_cost'], 'reason': ['wal_buffers must be a power of 2 between 16384 and 1073741824, but was 10MB', 'wal_writer_flush_after must be a power of 2 between 512 and 1048576, but was 2MB', 'cpu_index_tuple_cost must be a positive number, but was 0.005']}
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'wal_writer_flush_after', 'cpu_index_tuple_cost'], 'reason': ['wal_buffers must be a power of 2 between 1MB and 1GB', 'wal_writer_flush_after must be a power of 2 between 1MB and 1GB', 'cpu_index_tuple_cost must be a positive number']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: wal_buffers	wal_writer_flush_after	cpu_index_tuple_cost
+[Ciri] Reason for wal_buffers: wal_buffers must be a power of 2 between 1MB and 1GB
+[Ciri] Reason for wal_writer_flush_after: wal_writer_flush_after must be a power of 2 between 1MB and 1GB
+[Ciri] Reason for cpu_index_tuple_cost: cpu_index_tuple_cost must be a positive number

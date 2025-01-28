@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-directory-items', 'dfs.client.deadnode.detection.probe.suspectnode.threads'], 'reason': ['The value for dfs.namenode.fs-limits.max-directory-items should be between 1 and 6400000.', 'The value for dfs.client.deadnode.detection.probe.suspectnode.threads should be greater than 1.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-directory-items', 'dfs.datanode.balance.bandwidthPerSec', 'dfs.client.deadnode.detection.probe.suspectnode.threads', 'dfs.namenode.block.deletion.increment'], 'reason': ['The value for dfs.namenode.fs-limits.max-directory-items should be between 1 and 6400000.', 'The value for dfs.datanode.balance.bandwidthPerSec should be in bytes or with valid suffixes (k, m, g, t, p, e).', 'The value for dfs.client.deadnode.detection.probe.suspectnode.threads should be greater than 1.', 'The value for dfs.namenode.block.deletion.increment should not have leading spaces.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-directory-items', 'dfs.client.deadnode.detection.probe.suspectnode.threads'], 'reason': ['The value for dfs.namenode.fs-limits.max-directory-items should be between 1 and 6400000.', 'The value for dfs.client.deadnode.detection.probe.suspectnode.threads should be greater than 1.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.fs-limits.max-directory-items	dfs.client.deadnode.detection.probe.suspectnode.threads
+[Ciri] Reason for dfs.namenode.fs-limits.max-directory-items: The value for dfs.namenode.fs-limits.max-directory-items should be between 1 and 6400000.
+[Ciri] Reason for dfs.client.deadnode.detection.probe.suspectnode.threads: The value for dfs.client.deadnode.detection.probe.suspectnode.threads should be greater than 1.

@@ -1,0 +1,12 @@
+Correct shot number:
+[2, 10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.size', 'ipc.client.tcpnodelay'], 'reason': ["Invalid value format. The value for 'fs.s3a.multipart.size' should be a numeric value followed by a valid suffix (e.g., K, M, G, T, P).", "Invalid value. 'ipc.client.tcpnodelay' should have a boolean value (true/false)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.multipart.size	ipc.client.tcpnodelay
+[Ciri] Reason for fs.s3a.multipart.size: Invalid value format. The value for 'fs.s3a.multipart.size' should be a numeric value followed by a valid suffix (e.g., K, M, G, T, P).
+[Ciri] Reason for ipc.client.tcpnodelay: Invalid value. 'ipc.client.tcpnodelay' should have a boolean value (true/false).

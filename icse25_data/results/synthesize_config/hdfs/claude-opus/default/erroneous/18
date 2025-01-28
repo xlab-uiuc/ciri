@@ -1,0 +1,15 @@
+Wrong shot number:
+[13, 12, 7]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.https-bind-host', 'datanode.https.port'], 'reason': ["The property 'dfs.journalnode.https-bind-host' has an invalid IP address value '1.1.1.1.1.1'.", "The property 'datanode.https.port' is not a valid HDFS configuration parameter name. The correct parameter name is 'dfs.datanode.https.port'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.journalnode.https-bind-host	datanode.https.port
+[Ciri] Reason for dfs.journalnode.https-bind-host: The property 'dfs.journalnode.https-bind-host' has an invalid IP address value '1.1.1.1.1.1'.
+[Ciri] Reason for datanode.https.port: The property 'datanode.https.port' is not a valid HDFS configuration parameter name. The correct parameter name is 'dfs.datanode.https.port'.

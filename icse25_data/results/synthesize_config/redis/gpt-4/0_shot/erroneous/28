@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'no-appendfsync-on-rewrite', 'aof-timestamp-enabled'], 'reason': ["The 'enable-protected-configs' parameter is not a valid configuration directive.", "The 'no-appendfsync-on-rewrite' parameter is not a recognized configuration option.", "The 'aof-timestamp-enabled' parameter does not exist in Redis 7.0.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable-protected-configs	no-appendfsync-on-rewrite	aof-timestamp-enabled
+[Ciri] Reason for enable-protected-configs: The 'enable-protected-configs' parameter is not a valid configuration directive.
+[Ciri] Reason for no-appendfsync-on-rewrite: The 'no-appendfsync-on-rewrite' parameter is not a recognized configuration option.
+[Ciri] Reason for aof-timestamp-enabled: The 'aof-timestamp-enabled' parameter does not exist in Redis 7.0.0.

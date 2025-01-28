@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.automatic.close', 'fs.s3a.readahead.range'], 'reason': ["The 'usage' tag is not a valid tag for property 'fs.automatic.close'.", "The value '64K' for property 'fs.s3a.readahead.range' should not contain a suffix. Use numeric values only."]}
+
+{'hasError': True, 'errParameter': ['fs.automatic.close', 'fs.s3a.readahead.range', 'ha.failover-controller.graceful-fence.connection.retries', 'nfs.exports.allowed.hosts'], 'reason': ["The property 'fs.automatic.close' has a usage tag which is not standard in the configuration file.", "The value for 'fs.s3a.readahead.range' should be in bytes format, not '64K'.", "The property 'ha.failover-controller.graceful-fence.connection.retries' should have a more descriptive name.", "The value for 'nfs.exports.allowed.hosts' should not contain spaces around the access privilege."]}
+
+{'hasError': True, 'errParameter': ['fs.automatic.close', 'fs.s3a.readahead.range'], 'reason': ["The property 'fs.automatic.close' has an incorrect usage tag 'usage' instead of 'description'.", "The property 'fs.s3a.readahead.range' has an incorrect description tag 'usage' instead of 'description'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.automatic.close	fs.s3a.readahead.range
+[Ciri] Reason for fs.automatic.close: The 'usage' tag is not a valid tag for property 'fs.automatic.close'.
+[Ciri] Reason for fs.s3a.readahead.range: The value '64K' for property 'fs.s3a.readahead.range' should not contain a suffix. Use numeric values only.

@@ -1,0 +1,16 @@
+Wrong shot number:
+[3, 16, 9]
+
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.heartbeat.interval', 'dfs.namenode.invalidate.work.pct.per.iteration', 'dfs.namenode.blockreport.max.lock.hold.time'], 'reason': ["The value for 'dfs.heartbeat.interval' should not contain a time unit suffix ('1s'). It should be specified in seconds without any suffix.", "The value for 'dfs.namenode.invalidate.work.pct.per.iteration' should be a decimal representing a percentage (e.g., 0.32), not a float with an 'f' suffix ('0.32f').", "The value for 'dfs.namenode.blockreport.max.lock.hold.time' is too low. It should be a reasonable number to allow for block report processing without causing unnecessary failures or retries."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.heartbeat.interval	dfs.namenode.invalidate.work.pct.per.iteration	dfs.namenode.blockreport.max.lock.hold.time
+[Ciri] Reason for dfs.heartbeat.interval: The value for 'dfs.heartbeat.interval' should not contain a time unit suffix ('1s'). It should be specified in seconds without any suffix.
+[Ciri] Reason for dfs.namenode.invalidate.work.pct.per.iteration: The value for 'dfs.namenode.invalidate.work.pct.per.iteration' should be a decimal representing a percentage (e.g., 0.32), not a float with an 'f' suffix ('0.32f').
+[Ciri] Reason for dfs.namenode.blockreport.max.lock.hold.time: The value for 'dfs.namenode.blockreport.max.lock.hold.time' is too low. It should be a reasonable number to allow for block report processing without causing unnecessary failures or retries.

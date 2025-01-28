@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 12, 8]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.scan.ratio'], 'reason': ["The property 'hbase.ipc.server.callqueue.scan.ratio' has the value '-1' which is not a valid value. The value should be between 0.0 and 1.0."]}
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.scan.ratio'], 'reason': ["The property 'hbase.ipc.server.callqueue.scan.ratio' has the value '-1' which is less than the minimum value of 0."]}
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.scan.ratio'], 'reason': ["The property 'hbase.ipc.server.callqueue.scan.ratio' has the value '-1' which is not a valid value. The value should be between 0 and 1."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.ipc.server.callqueue.scan.ratio
+[Ciri] Reason for hbase.ipc.server.callqueue.scan.ratio: The property 'hbase.ipc.server.callqueue.scan.ratio' has the value '-1' which is not a valid value. The value should be between 0 and 1.

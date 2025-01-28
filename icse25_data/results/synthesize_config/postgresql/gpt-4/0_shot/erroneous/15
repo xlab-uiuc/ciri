@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['jit_optimize_above_cost', 'wal_writer_delay', 'syslog_split_messages'], 'reason': ["The 'jit_optimize_above_cost' parameter does not exist in PostgreSQL 13.0. It was introduced in PostgreSQL 11 but was removed in later versions.", "The 'wal_writer_delay' value is specified in milliseconds (ms), but PostgreSQL expects this value in microseconds (us). The correct format should be 400000us for 400ms.", "The 'syslog_split_messages' parameter does not exist. The correct parameter for controlling syslog message splitting is 'log_destination' with appropriate settings for syslog."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: jit_optimize_above_cost	wal_writer_delay	syslog_split_messages
+[Ciri] Reason for jit_optimize_above_cost: The 'jit_optimize_above_cost' parameter does not exist in PostgreSQL 13.0. It was introduced in PostgreSQL 11 but was removed in later versions.
+[Ciri] Reason for wal_writer_delay: The 'wal_writer_delay' value is specified in milliseconds (ms), but PostgreSQL expects this value in microseconds (us). The correct format should be 400000us for 400ms.
+[Ciri] Reason for syslog_split_messages: The 'syslog_split_messages' parameter does not exist. The correct parameter for controlling syslog message splitting is 'log_destination' with appropriate settings for syslog.

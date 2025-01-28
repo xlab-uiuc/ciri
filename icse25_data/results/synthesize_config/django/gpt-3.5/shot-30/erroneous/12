@@ -1,0 +1,15 @@
+Correct shot number:
+[4, 2, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'SESSION_EXPIRE_AT_BROWSER_CLOSE', 'CSRF_COOKIE_AGE'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should be a positive integer representing the number of seconds. -1 is not a valid value.', "STATICFILES_FINDERS should be a list of finders. The correct format is ['django.contrib.staticfiles.finders.FileSystemFinder'].", 'PASSWORD_RESET_TIMEOUT should be a numerical value representing the timeout duration in seconds.', 'SESSION_EXPIRE_AT_BROWSER_CLOSE should be a boolean value (True/False).', 'CSRF_COOKIE_AGE should be a numerical value representing the age of the CSRF cookie in seconds.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	STATICFILES_FINDERS	PASSWORD_RESET_TIMEOUT	SESSION_EXPIRE_AT_BROWSER_CLOSE	CSRF_COOKIE_AGE
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: CACHE_MIDDLEWARE_SECONDS should be a positive integer representing the number of seconds. -1 is not a valid value.
+[Ciri] Reason for STATICFILES_FINDERS: STATICFILES_FINDERS should be a list of finders. The correct format is ['django.contrib.staticfiles.finders.FileSystemFinder'].
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: PASSWORD_RESET_TIMEOUT should be a numerical value representing the timeout duration in seconds.
+[Ciri] Reason for SESSION_EXPIRE_AT_BROWSER_CLOSE: SESSION_EXPIRE_AT_BROWSER_CLOSE should be a boolean value (True/False).
+[Ciri] Reason for CSRF_COOKIE_AGE: CSRF_COOKIE_AGE should be a numerical value representing the age of the CSRF cookie in seconds.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'appenddirname', 'no-appendfsync-on-rewrite'], 'reason': ["The 'bind-source-addr' configuration does not exist. Perhaps 'bind' was intended.", "The 'appenddirname' configuration is incorrect. The correct configuration is 'dir' for specifying the directory where append-only files are stored.", "The 'no-appendfsync-on-rewrite' configuration is incorrect. The correct configuration might be 'appendfsync' which controls how often changes are flushed to disk."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: bind-source-addr	appenddirname	no-appendfsync-on-rewrite
+[Ciri] Reason for bind-source-addr: The 'bind-source-addr' configuration does not exist. Perhaps 'bind' was intended.
+[Ciri] Reason for appenddirname: The 'appenddirname' configuration is incorrect. The correct configuration is 'dir' for specifying the directory where append-only files are stored.
+[Ciri] Reason for no-appendfsync-on-rewrite: The 'no-appendfsync-on-rewrite' configuration is incorrect. The correct configuration might be 'appendfsync' which controls how often changes are flushed to disk.

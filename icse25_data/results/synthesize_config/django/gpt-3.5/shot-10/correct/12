@@ -1,0 +1,18 @@
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['FORM_RENDERER', 'MIGRATION_MODULES', 'SESSION_COOKIE_DOMAIN', 'DATABASES', 'EMAIL_SSL_CERTFILE', 'USE_TZ', 'DATABASE_ROUTERS', 'SESSION_FILE_PATH'], 'reason': ["FORM_RENDERER should be 'django.forms.renderers.DjangoTemplates'", 'MIGRATION_MODULES should not be an empty dictionary', 'SESSION_COOKIE_DOMAIN should not be set to None', 'DATABASES should be configured with database settings', 'EMAIL_SSL_CERTFILE should not be set to None', 'USE_TZ should be set to True for timezone support', 'DATABASE_ROUTERS should be a list of database router classes', 'SESSION_FILE_PATH should not be set to None']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: FORM_RENDERER	MIGRATION_MODULES	SESSION_COOKIE_DOMAIN	DATABASES	EMAIL_SSL_CERTFILE	USE_TZ	DATABASE_ROUTERS	SESSION_FILE_PATH
+[Ciri] Reason for FORM_RENDERER: FORM_RENDERER should be 'django.forms.renderers.DjangoTemplates'
+[Ciri] Reason for MIGRATION_MODULES: MIGRATION_MODULES should not be an empty dictionary
+[Ciri] Reason for SESSION_COOKIE_DOMAIN: SESSION_COOKIE_DOMAIN should not be set to None
+[Ciri] Reason for DATABASES: DATABASES should be configured with database settings
+[Ciri] Reason for EMAIL_SSL_CERTFILE: EMAIL_SSL_CERTFILE should not be set to None
+[Ciri] Reason for USE_TZ: USE_TZ should be set to True for timezone support
+[Ciri] Reason for DATABASE_ROUTERS: DATABASE_ROUTERS should be a list of database router classes
+[Ciri] Reason for SESSION_FILE_PATH: SESSION_FILE_PATH should not be set to None

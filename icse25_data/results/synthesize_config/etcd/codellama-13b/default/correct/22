@@ -1,0 +1,42 @@
+Wrong shot number:
+[6, 7, 3]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention'], 'reason': ["The property 'auto-compaction-retention' has the value '3' which is not within the accepted value range {1,10}."]}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait'], 'reason': ["The property 'proxy-failure-wait' has the value '2500' which is not within the accepted value range [5000, 10000]."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log-outputs'], 'reason': ["The property 'log-outputs' has the value '[stderr]' which is not within the accepted value {stdout,stderr,syslog,file}."]}
+
+{'hasError': True, 'errParameter': ['discovery-fallback'], 'reason': ["The property 'discovery-fallback' has the value 'proxy' which is not within the accepted value {exit,proxy}."]}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention'], 'reason': ["The property 'auto-compaction-retention' has the value '3' which is not within the accepted value range [0, 10000]."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['discovery-fallback'], 'reason': ["The property 'discovery-fallback' has the value 'proxy' which is not within the accepted value {exit,proxy}."]}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention'], 'reason': ["The property 'auto-compaction-retention' has the value '3' which is not within the accepted value range [0, 10000]."]}
+
+{'hasError': True, 'errParameter': ['log-outputs'], 'reason': ["The property 'log-outputs' has the value '[stderr]' which is not within the accepted value {file,stderr,stdout}."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals'], 'reason': ["The property 'max-wals' has the value '1' which is less than the minimum value of '2'."]}
+
+{'hasError': True, 'errParameter': ['log-outputs'], 'reason': ["The property 'log-outputs' has the value 'stderr' which is not within the accepted value {file,stdout,stderr}."]}
+
+{'hasError': True, 'errParameter': ['log-outputs'], 'reason': ["The property 'log-outputs' has the value '[stderr]' which is not within the accepted value {stdout,stderr,syslog,file}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: log-outputs
+[Ciri] Reason for log-outputs: The property 'log-outputs' has the value '[stderr]' which is not within the accepted value {stdout,stderr,syslog,file}.

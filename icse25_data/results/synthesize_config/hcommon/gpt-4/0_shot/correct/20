@@ -1,0 +1,8 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.abfss.impl'], 'reason': ["The property name 'fs.AbstractFileSystem.abfss.impl' is incorrect or not applicable for Hadoop version 3.3.0. The correct property format for specifying an AbstractFileSystem implementation should start with 'fs.AbstractFileSystem.scheme.impl', where 'scheme' should be the actual file system scheme (e.g., 'file', 'hdfs', 's3a'). If 'abfss' is intended to represent Azure Blob File System, the scheme should be 'abfs' or 'abfss', and the property should be 'fs.AbstractFileSystem.abfs.impl' or 'fs.AbstractFileSystem.abfss.impl' for secure HTTPS respectively."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.AbstractFileSystem.abfss.impl
+[Ciri] Reason for fs.AbstractFileSystem.abfss.impl: The property name 'fs.AbstractFileSystem.abfss.impl' is incorrect or not applicable for Hadoop version 3.3.0. The correct property format for specifying an AbstractFileSystem implementation should start with 'fs.AbstractFileSystem.scheme.impl', where 'scheme' should be the actual file system scheme (e.g., 'file', 'hdfs', 's3a'). If 'abfss' is intended to represent Azure Blob File System, the scheme should be 'abfs' or 'abfss', and the property should be 'fs.AbstractFileSystem.abfs.impl' or 'fs.AbstractFileSystem.abfss.impl' for secure HTTPS respectively.

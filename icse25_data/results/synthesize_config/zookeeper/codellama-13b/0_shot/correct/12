@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'dataLogDir', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsEnabled', 'maxClientCnxns'], 'reason': ['standaloneEnabled should be true', 'dataLogDir should be a valid directory', 'quorum.auth.enableSasl should be false', 'quorum.auth.serverRequireSasl should be true', 'autopurge.purgeInterval should be a positive integer', 'localSessionsEnabled should be true', 'maxClientCnxns should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'dataLogDir', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsEnabled', 'maxClientCnxns'], 'reason': ['standaloneEnabled is not a valid property for zookeeper version 3.7.0', 'dataLogDir is not a valid property for zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for zookeeper version 3.7.0', 'autopurge.purgeInterval is not a valid property for zookeeper version 3.7.0', 'localSessionsEnabled is not a valid property for zookeeper version 3.7.0', 'maxClientCnxns is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'standaloneEnabled', 'dataLogDir', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsEnabled', 'maxClientCnxns'], 'reason': ['clientPort must be an integer', 'standaloneEnabled must be a boolean', 'dataLogDir must be a valid directory', 'quorum.auth.enableSasl must be a boolean', 'quorum.auth.serverRequireSasl must be a boolean', 'autopurge.purgeInterval must be an integer', 'localSessionsEnabled must be a boolean', 'maxClientCnxns must be an integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'dataLogDir', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsEnabled', 'maxClientCnxns'], 'reason': ['standaloneEnabled is not a valid property for zookeeper version 3.7.0', 'dataLogDir is not a valid property for zookeeper version 3.7.0', 'quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for zookeeper version 3.7.0', 'autopurge.purgeInterval is not a valid property for zookeeper version 3.7.0', 'localSessionsEnabled is not a valid property for zookeeper version 3.7.0', 'maxClientCnxns is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'standaloneEnabled', 'dataLogDir', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsEnabled', 'maxClientCnxns'], 'reason': ['clientPort must be an integer between 1 and 65535', 'standaloneEnabled must be a boolean', 'dataLogDir must be a valid directory', 'quorum.auth.enableSasl must be a boolean', 'quorum.auth.serverRequireSasl must be a boolean', 'autopurge.purgeInterval must be an integer greater than or equal to 1', 'localSessionsEnabled must be a boolean', 'maxClientCnxns must be an integer greater than or equal to 1']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'standaloneEnabled', 'dataLogDir', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsEnabled', 'maxClientCnxns'], 'reason': ['clientPort should be an integer', 'standaloneEnabled should be a boolean', 'dataLogDir should be a valid directory', 'quorum.auth.enableSasl should be a boolean', 'quorum.auth.serverRequireSasl should be a boolean', 'autopurge.purgeInterval should be an integer', 'localSessionsEnabled should be a boolean', 'maxClientCnxns should be an integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: clientPort	standaloneEnabled	dataLogDir	quorum.auth.enableSasl	quorum.auth.serverRequireSasl	autopurge.purgeInterval	localSessionsEnabled	maxClientCnxns
+[Ciri] Reason for clientPort: clientPort must be an integer between 1 and 65535
+[Ciri] Reason for standaloneEnabled: standaloneEnabled should be a boolean
+[Ciri] Reason for dataLogDir: dataLogDir should be a valid directory
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl should be a boolean
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl must be a boolean
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval must be an integer greater than or equal to 1
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled should be a boolean
+[Ciri] Reason for maxClientCnxns: maxClientCnxns should be an integer

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'CSRF_COOKIE_AGE', 'MIDDLEWARE'], 'reason': ['NUMBER_GROUPING should be a positive integer or zero.', 'CSRF_COOKIE_AGE should be an integer representing the age in seconds.', 'MIDDLEWARE should contain the list of middleware classes to use.']}
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'CSRF_COOKIE_AGE', 'MIDDLEWARE'], 'reason': ['NUMBER_GROUPING should be a positive integer, not a negative value.', 'CSRF_COOKIE_AGE should be a numerical value representing seconds, not an expression.', 'MIDDLEWARE should contain the necessary middleware classes for the Django application.']}
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'CSRF_COOKIE_AGE', 'MIDDLEWARE'], 'reason': ['Invalid value for NUMBER_GROUPING. It should be a positive integer.', 'Invalid value for CSRF_COOKIE_AGE. The expression should be evaluated to a number of seconds.', 'MIDDLEWARE is an essential setting and should not be an empty list.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: NUMBER_GROUPING	CSRF_COOKIE_AGE	MIDDLEWARE
+[Ciri] Reason for NUMBER_GROUPING: NUMBER_GROUPING should be a positive integer or zero.
+[Ciri] Reason for CSRF_COOKIE_AGE: CSRF_COOKIE_AGE should be a numerical value representing seconds, not an expression.
+[Ciri] Reason for MIDDLEWARE: MIDDLEWARE is an essential setting and should not be an empty list.

@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'io.mapfile.bloom.error.rate', 'fs.client.resolve.topology.enabled'], 'reason': ["The value for property 'hadoop.service.shutdown.timeout' should be in milliseconds format.", "The value for property 'io.mapfile.bloom.error.rate' should be a numeric value representing the rate of false positives.", "The value for property 'fs.client.resolve.topology.enabled' should be a boolean (true/false) instead of 'true'."]}
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'hadoop.user.group.static.mapping.overrides', 'fs.client.resolve.topology.enabled'], 'reason': ["The value for property 'hadoop.service.shutdown.timeout' should be in milliseconds format.", "The value for property 'hadoop.user.group.static.mapping.overrides' is not in the correct format.", "The description for property 'fs.client.resolve.topology.enabled' is missing a period at the end."]}
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.client.resolve.topology.enabled'], 'reason': ["The value for property 'hadoop.service.shutdown.timeout' should be in milliseconds format. Update '30s' to a valid numeric value.", "The value for property 'fs.client.resolve.topology.enabled' should be a boolean value (true/false). Update 'true' to either true or false."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'hadoop.user.group.static.mapping.overrides'], 'reason': ["The value for property 'hadoop.service.shutdown.timeout' should be in milliseconds format.", "The value for property 'hadoop.user.group.static.mapping.overrides' is not in the correct format. It should be 'user=group1,group2;'"]}
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.client.resolve.topology.enabled'], 'reason': ["Timeout value should be specified in milliseconds for property 'hadoop.service.shutdown.timeout'.", "Property 'fs.client.resolve.topology.enabled' is missing a description."]}
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'hadoop.user.group.static.mapping.overrides'], 'reason': ["The value for property 'hadoop.service.shutdown.timeout' should be specified in milliseconds. Update the value to a valid numeric value in milliseconds.", "The value for property 'hadoop.user.group.static.mapping.overrides' is not in the correct format. Update the value to a valid user to group mapping format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	hadoop.user.group.static.mapping.overrides
+[Ciri] Reason for hadoop.service.shutdown.timeout: The value for property 'hadoop.service.shutdown.timeout' should be in milliseconds format.
+[Ciri] Reason for hadoop.user.group.static.mapping.overrides: The value for property 'hadoop.user.group.static.mapping.overrides' is not in the correct format. It should be 'user=group1,group2;'

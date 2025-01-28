@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_cost_limit', 'ssl_ciphers', 'dynamic_library_path'], 'reason': ['autovacuum_vacuum_cost_limit should be a non-negative integer value, not -2.', 'ssl_ciphers is a deprecated parameter in PostgreSQL 13 and should not be used. Use ssl_cert_file, ssl_key_file, and ssl_ca_file instead.', 'dynamic_library_path should not be set in the configuration file. It is determined automatically by PostgreSQL.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: autovacuum_vacuum_cost_limit	ssl_ciphers	dynamic_library_path
+[Ciri] Reason for autovacuum_vacuum_cost_limit: autovacuum_vacuum_cost_limit should be a non-negative integer value, not -2.
+[Ciri] Reason for ssl_ciphers: ssl_ciphers is a deprecated parameter in PostgreSQL 13 and should not be used. Use ssl_cert_file, ssl_key_file, and ssl_ca_file instead.
+[Ciri] Reason for dynamic_library_path: dynamic_library_path should not be set in the configuration file. It is determined automatically by PostgreSQL.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size=0.1', 'alluxio.master.backup.connect.interval.max=1sec'], 'reason': ["The property 'alluxio.user.network.max.inbound.message.size' expects a value with a size unit (e.g., '100MB'). The value '0.1' is invalid.", "The property 'alluxio.master.backup.connect.interval.max' expects a value with a time unit (e.g., '10sec'). The value '1sec' is invalid."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.max.inbound.message.size=0.1	alluxio.master.backup.connect.interval.max=1sec
+[Ciri] Reason for alluxio.user.network.max.inbound.message.size=0.1: The property 'alluxio.user.network.max.inbound.message.size' expects a value with a size unit (e.g., '100MB'). The value '0.1' is invalid.
+[Ciri] Reason for alluxio.master.backup.connect.interval.max=1sec: The property 'alluxio.master.backup.connect.interval.max' expects a value with a time unit (e.g., '10sec'). The value '1sec' is invalid.

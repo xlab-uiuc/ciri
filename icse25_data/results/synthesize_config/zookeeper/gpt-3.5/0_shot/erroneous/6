@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.learner.saslLoginContext', 'localSessionsEnabled', 'quorum.auth.learnerRequireSasl', 'maxSessionTimeout'], 'reason': ['secureClientPortAddress should not have IP address 0.0.0.0, it should be a valid IP address or hostname.', 'quorum.auth.learner.saslLoginContext should not have a value of QuorumLearner.', 'localSessionsEnabled should be set to false for Zookeeper version 3.7.0.', 'quorum.auth.learnerRequireSasl should be set to true for better security.', 'maxSessionTimeout should not be set to -1, it should have a positive value.']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.learner.saslLoginContext', 'localSessionsEnabled', 'quorum.auth.learnerRequireSasl', 'maxSessionTimeout'], 'reason': ['secureClientPortAddress should not have an IP address of 0.0.0.0, it should be a valid IP address or hostname.', "quorum.auth.learner.saslLoginContext should be set to 'zookeeper' for Zookeeper version 3.7.0.", "localSessionsEnabled should be set to 'false' for Zookeeper version 3.7.0.", "quorum.auth.learnerRequireSasl should be set to 'true' for Zookeeper version 3.7.0.", 'maxSessionTimeout should not be set to -1, it should have a positive value.']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.learnerRequireSasl'], 'reason': ['secureClientPortAddress should not have 0.0.0.0 as the IP address, quorum.auth.learnerRequireSasl should be set to true for better security.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: secureClientPortAddress	quorum.auth.learner.saslLoginContext	localSessionsEnabled	quorum.auth.learnerRequireSasl	maxSessionTimeout
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress should not have an IP address of 0.0.0.0, it should be a valid IP address or hostname.
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext should be set to 'zookeeper' for Zookeeper version 3.7.0.
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled should be set to 'false' for Zookeeper version 3.7.0.
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl should be set to 'true' for Zookeeper version 3.7.0.
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout should not be set to -1, it should have a positive value.

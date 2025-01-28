@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'enable-v2', 'discovery-fallback'], 'reason': ["The 'listen-peer-urls' parameter should use the URL scheme 'http://' for etcd version 3.5.0.", "The 'enable-v2' parameter is deprecated in etcd version 3.5.0 and should be removed.", "The 'discovery-fallback' parameter is not a valid configuration option for etcd version 3.5.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: listen-peer-urls	enable-v2	discovery-fallback
+[Ciri] Reason for listen-peer-urls: The 'listen-peer-urls' parameter should use the URL scheme 'http://' for etcd version 3.5.0.
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is deprecated in etcd version 3.5.0 and should be removed.
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' parameter is not a valid configuration option for etcd version 3.5.0.

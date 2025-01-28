@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'localSessionsUpgradingEnabled', 'standaloneEnabled', 'electionAlg'], 'reason': ['quorumListenOnAllIPs is not a valid property for Zookeeper version 3.7.0', 'localSessionsUpgradingEnabled is not a valid property for Zookeeper version 3.7.0', 'standaloneEnabled is not a valid property for Zookeeper version 3.7.0', 'electionAlg is not a valid property for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'localSessionsUpgradingEnabled', 'standaloneEnabled'], 'reason': ['quorumListenOnAllIPs is not a valid property for Zookeeper version 3.7.0', 'localSessionsUpgradingEnabled is not a valid property for Zookeeper version 3.7.0', 'standaloneEnabled is not a valid property for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'standaloneEnabled'], 'reason': ['quorumListenOnAllIPs is not a valid property for Zookeeper version 3.7.0', 'standaloneEnabled is not a valid property for Zookeeper version 3.7.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'localSessionsUpgradingEnabled', 'standaloneEnabled'], 'reason': ['quorumListenOnAllIPs is not a valid configuration parameter for Zookeeper version 3.7.0', 'localSessionsUpgradingEnabled is not a valid configuration parameter for Zookeeper version 3.7.0', 'standaloneEnabled is not a valid configuration parameter for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'localSessionsUpgradingEnabled', 'standaloneEnabled'], 'reason': ["Invalid parameter 'quorumListenOnAllIPs'. It should be 'quorumListenOnAllIP'.", "Invalid parameter 'localSessionsUpgradingEnabled'. It should be 'localSessionsUpgradeEnabled'.", "Invalid parameter 'standaloneEnabled'. It should be 'standaloneEnabled'."]}
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'localSessionsUpgradingEnabled', 'standaloneEnabled'], 'reason': ['quorumListenOnAllIPs is not a valid property for Zookeeper version 3.7.0', 'localSessionsUpgradingEnabled is not a valid property for Zookeeper version 3.7.0', 'standaloneEnabled is not a valid property for Zookeeper version 3.7.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quorumListenOnAllIPs	localSessionsUpgradingEnabled	standaloneEnabled
+[Ciri] Reason for quorumListenOnAllIPs: quorumListenOnAllIPs is not a valid property for Zookeeper version 3.7.0
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled is not a valid property for Zookeeper version 3.7.0
+[Ciri] Reason for standaloneEnabled: standaloneEnabled is not a valid configuration parameter for Zookeeper version 3.7.0

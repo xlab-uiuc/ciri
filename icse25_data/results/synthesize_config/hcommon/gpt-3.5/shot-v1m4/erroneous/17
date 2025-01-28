@@ -1,0 +1,16 @@
+Wrong shot number:
+[2, 1, 6, 4]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.s3guard.ddb.background.sleep'], 'reason': ["The property 'hadoop.security.dns.nameserver' has the value '0.0.0' which is not a valid IP address.", "The property 'fs.defaultFS' has the value 'file:///' which does not follow the correct URL format.", "The property 'fs.s3a.s3guard.ddb.background.sleep' has the value '25ms' which is not of the correct type Integer."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.defaultFS	fs.s3a.s3guard.ddb.background.sleep
+[Ciri] Reason for hadoop.security.dns.nameserver: The property 'hadoop.security.dns.nameserver' has the value '0.0.0' which is not a valid IP address.
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has the value 'file:///' which does not follow the correct URL format.
+[Ciri] Reason for fs.s3a.s3guard.ddb.background.sleep: The property 'fs.s3a.s3guard.ddb.background.sleep' has the value '25ms' which is not of the correct type Integer.

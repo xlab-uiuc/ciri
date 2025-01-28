@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['huge_pages', 'recovery_init_sync_method', 'intervalstyle', 'krb_caseins_users'], 'reason': ["The 'huge_pages' parameter is not a valid PostgreSQL configuration parameter.", "The 'recovery_init_sync_method' parameter is only used in the recovery.conf file, not in the main postgresql.conf file.", "The correct spelling for the 'intervalstyle' parameter is 'IntervalStyle'.", "The 'krb_caseins_users' parameter is not a valid PostgreSQL configuration parameter."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: huge_pages	recovery_init_sync_method	intervalstyle	krb_caseins_users
+[Ciri] Reason for huge_pages: The 'huge_pages' parameter is not a valid PostgreSQL configuration parameter.
+[Ciri] Reason for recovery_init_sync_method: The 'recovery_init_sync_method' parameter is only used in the recovery.conf file, not in the main postgresql.conf file.
+[Ciri] Reason for intervalstyle: The correct spelling for the 'intervalstyle' parameter is 'IntervalStyle'.
+[Ciri] Reason for krb_caseins_users: The 'krb_caseins_users' parameter is not a valid PostgreSQL configuration parameter.

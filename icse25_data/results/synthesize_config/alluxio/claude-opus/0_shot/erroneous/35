@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.netty.worker.threads', 'fs.cos.connection.timeout'], 'reason': ["The property 'alluxio.user.network.streaming.netty.worker.threads' is deprecated since version 2.0.0 and removed in 2.5.0. Use 'alluxio.user.network.streaming.flowcontrol.window.size' instead.", "The property 'fs.cos.connection.timeout' is not a valid Alluxio configuration property for version 2.5.0. It seems to be a Hadoop configuration property for the Tencent Cloud Object Storage (COS) filesystem."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.streaming.netty.worker.threads	fs.cos.connection.timeout
+[Ciri] Reason for alluxio.user.network.streaming.netty.worker.threads: The property 'alluxio.user.network.streaming.netty.worker.threads' is deprecated since version 2.0.0 and removed in 2.5.0. Use 'alluxio.user.network.streaming.flowcontrol.window.size' instead.
+[Ciri] Reason for fs.cos.connection.timeout: The property 'fs.cos.connection.timeout' is not a valid Alluxio configuration property for version 2.5.0. It seems to be a Hadoop configuration property for the Tencent Cloud Object Storage (COS) filesystem.

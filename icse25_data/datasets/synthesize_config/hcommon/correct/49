@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.groups.shell.command.timeout</name>
+  <value>1s</value>
+  <description>
+    Used by the ShellBasedUnixGroupsMapping class, this property controls how
+    long to wait for the underlying shell command that is run to fetch groups.
+    Expressed in seconds (e.g. 10s, 1m, etc.), if the running command takes
+    longer than the value configured, the command is aborted and the groups
+    resolver would return a result of no groups found. A value of 0s (default)
+    would mean an infinite wait (i.e. wait until the command exits on its own).
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.posix.attr.uid.name</name>
+  <value>uidNumber</value>
+  <description>
+    The attribute of posixAccount to use when groups for membership.
+    Mostly useful for schemas wherein groups have memberUids that use an
+    attribute other than uidNumber.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.multiobjectdelete.enable</name>
+  <value>false</value>
+  <description>When enabled, multiple single-object delete requests are replaced by
+    a single 'delete multiple objects'-request, reducing the number of requests.
+    Beware: legacy S3-compatible object stores might not support this request.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.block.size</name>
+  <value>32M</value>
+  <description>Block size to use when reading files using s3a: file system.
+    A suffix from the set {K,M,G,T,P} may be used to scale the numeric value.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.list.version</name>
+  <value>4</value>
+  <description>
+    Select which version of the S3 SDK's List Objects API to use.  Currently
+    support 2 (default) and 1 (older API).
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.token.validity</name>
+  <value>18000</value>
+  <description>
+    Indicates how long (in seconds) an authentication token is valid before it has
+    to be renewed.
+  </description>
+</property>
+
+<property>
+  <name>ha.zookeeper.session-timeout.ms</name>
+  <value>5000</value>
+  <description>
+    The session timeout to use when the ZKFC connects to ZooKeeper.
+    Setting this value to a lower value implies that server crashes
+    will be detected more quickly, but risks triggering failover too
+    aggressively in the case of a transient error or network blip.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.client.conf</name>
+  <value>/valid/file1</value>
+  <description>
+    Resource file from which ssl client keystore information will be extracted
+    This file is looked up in the classpath, typically it should be in Hadoop
+    conf/ directory.
+  </description>
+</property>
+
+</configuration>

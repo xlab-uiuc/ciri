@@ -1,0 +1,31 @@
+Syntax	Data Type	reserved_connections	9.9			
+Syntax	Data Type	hash_mem_multiplier	-5.5			
+Syntax	Data Type	tcp_keepalives_idle	true			
+Syntax	Data Type	scram_iterations	ciri/ciri			
+Syntax	Data Type	shared_buffers	128mm			
+Syntax	Data Type	temp_buffers	8BB			
+Syntax	Data Type	work_mem	8hhhhh			
+Syntax	Data Type	bgwriter_delay	128NS			
+Syntax	Path	hba_file	//ConfigDir/pg_hba.conf			
+Syntax	Path	ident_file	/\ConfigDir/pg_ident.conf			
+Syntax	Path	external_pid_file	tmp////pid_file			
+Syntax	Path	unix_socket_directories	dev/urandom///			
+Range	Basic Numeric	tcp_keepalives_count	-100			
+Range	Basic Numeric	max_files_per_process	-1			
+Range	Basic Numeric	jit_optimize_above_cost	4000000000			
+Range	Basic Numeric	max_wal_senders	-10
+Range	Enum	huge_pages	nonono			
+Range	Enum	shared_memory_type	NONE_MOUNTPOINT			
+Range	Enum	dynamic_shared_memory_type	NOEXIST_LOCAL_DATA_CONNECTION_MODE			
+Range	Enum	log_statement	NOEXIST_TRANSFER_MODE			
+Dependency	Control	ssl	off	ssl_key_file	server.key'	
+Dependency	Control	ssl	off	ssl_cert_file	server.crt'	
+Dependency	Control	synchronous_commit	off	synchronous_standby_names	*'	
+Dependency	Control	ssl	off	ssl_ecdh_curve	prime256v1'	
+Dependency	Value Relationship	shared_buffers	5GB	effective_cache_size	4GB	
+Dependency	Value Relationship	work_mem	128MB	maintenance_work_mem	64MB	
+Dependency	Value Relationship	max_connections	5	superuser_reserved_connections	6	
+Version	Parameter Change	old_snapshot_threshold	-1			
+Version	Parameter Change	wal_keep_segments	0			
+Version	Parameter Change	vacuum_defer_cleanup_age	0			
+Version	Parameter Change	force_parallel_mode	off			

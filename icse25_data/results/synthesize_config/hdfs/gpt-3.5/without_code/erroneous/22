@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 3, 9]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['nfs.mountd.port', 'dfs.namenode.invalidate.work.pct.per.iteration'], 'reason': ["The property 'nfs.mountd.port' has the value '-100.22' which is not a valid port number.", "The property 'dfs.namenode.invalidate.work.pct.per.iteration' has the value '0.32f' which is not within the accepted value range {0, 1}."]}
+
+{'hasError': True, 'errParameter': ['nfs.mountd.port', 'dfs.namenode.invalidate.work.pct.per.iteration'], 'reason': ["The property 'nfs.mountd.port' has the value '-100.22' which is not a valid port number.", "The property 'dfs.namenode.invalidate.work.pct.per.iteration' has the value '0.32f' which is not a valid format. It should be a positive, non-zero percentage in float notation (X.Yf), with 1.0f meaning 100%."]}
+
+{'hasError': True, 'errParameter': ['nfs.mountd.port', 'dfs.namenode.invalidate.work.pct.per.iteration'], 'reason': ["The property 'nfs.mountd.port' has the value '-100.22' which is not a valid port number.", "The property 'dfs.namenode.invalidate.work.pct.per.iteration' has the value '0.32f' which is not within the accepted value range."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: nfs.mountd.port	dfs.namenode.invalidate.work.pct.per.iteration
+[Ciri] Reason for nfs.mountd.port: The property 'nfs.mountd.port' has the value '-100.22' which is not a valid port number.
+[Ciri] Reason for dfs.namenode.invalidate.work.pct.per.iteration: The property 'dfs.namenode.invalidate.work.pct.per.iteration' has the value '0.32f' which is not within the accepted value range.

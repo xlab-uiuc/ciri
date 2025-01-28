@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'quorum.auth.serverRequireSasl', 'maxSessionTimeout', 'quorum.auth.enableSasl', 'autopurge.purgeInterval', 'quorumListenOnAllIPs'], 'reason': ['standaloneEnabled is not a valid property for Zookeeper 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for Zookeeper 3.7.0', 'maxSessionTimeout is not a valid property for Zookeeper 3.7.0', 'quorum.auth.enableSasl is not a valid property for Zookeeper 3.7.0', 'autopurge.purgeInterval is not a valid property for Zookeeper 3.7.0', 'quorumListenOnAllIPs is not a valid property for Zookeeper 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.serverRequireSasl and quorum.auth.enableSasl cannot be set to true at the same time.']}
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'quorum.auth.serverRequireSasl', 'maxSessionTimeout', 'quorum.auth.enableSasl', 'autopurge.purgeInterval', 'quorumListenOnAllIPs'], 'reason': ['standaloneEnabled is not a valid property for zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for zookeeper version 3.7.0', 'maxSessionTimeout is not a valid property for zookeeper version 3.7.0', 'quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0', 'autopurge.purgeInterval is not a valid property for zookeeper version 3.7.0', 'quorumListenOnAllIPs is not a valid property for zookeeper version 3.7.0']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: standaloneEnabled	quorum.auth.serverRequireSasl	maxSessionTimeout	quorum.auth.enableSasl	autopurge.purgeInterval	quorumListenOnAllIPs
+[Ciri] Reason for standaloneEnabled: standaloneEnabled is not a valid property for Zookeeper 3.7.0
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl is not a valid property for Zookeeper 3.7.0
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval is not a valid property for Zookeeper 3.7.0
+[Ciri] Reason for quorumListenOnAllIPs: quorumListenOnAllIPs is not a valid property for zookeeper version 3.7.0

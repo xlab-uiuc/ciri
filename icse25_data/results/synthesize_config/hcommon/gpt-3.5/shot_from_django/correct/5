@@ -1,0 +1,15 @@
+Wrong shot number:
+[3, 4, 6]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.sensitive-config-keys', 'ipc.[port_number].weighted-cost.lockshared'], 'reason': ["The property 'hadoop.security.sensitive-config-keys' contains a value 'secret$' which may not be a valid regular expression.", "The property 'ipc.[port_number].weighted-cost.lockshared' contains a parameter '[port_number]' which is not a valid configuration key."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.sensitive-config-keys	ipc.[port_number].weighted-cost.lockshared
+[Ciri] Reason for hadoop.security.sensitive-config-keys: The property 'hadoop.security.sensitive-config-keys' contains a value 'secret$' which may not be a valid regular expression.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: The property 'ipc.[port_number].weighted-cost.lockshared' contains a parameter '[port_number]' which is not a valid configuration key.

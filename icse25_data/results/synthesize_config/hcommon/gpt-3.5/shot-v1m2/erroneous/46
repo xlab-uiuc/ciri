@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 6]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.ftp.timeout'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which exceeds the valid port range (0-65535).", "The property 'fs.ftp.timeout' has a negative value which is not valid for a timeout setting."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host.port	fs.ftp.timeout
+[Ciri] Reason for fs.ftp.host.port: The property 'fs.ftp.host.port' has the value '65536' which exceeds the valid port range (0-65535).
+[Ciri] Reason for fs.ftp.timeout: The property 'fs.ftp.timeout' has a negative value which is not valid for a timeout setting.

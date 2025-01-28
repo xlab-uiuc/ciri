@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'heartbeat-interval', 'auto-compaction-retention'], 'reason': ['proxy-write-timeout is not a valid property for etcd version 3.5.0', 'heartbeat-interval is not a valid property for etcd version 3.5.0', 'auto-compaction-retention is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'heartbeat-interval', 'auto-compaction-retention'], 'reason': ['proxy-write-timeout is not a valid parameter', 'heartbeat-interval is not a valid parameter', 'auto-compaction-retention is not a valid parameter']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-write-timeout	heartbeat-interval	auto-compaction-retention
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout is not a valid parameter
+[Ciri] Reason for heartbeat-interval: heartbeat-interval is not a valid parameter
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention is not a valid property for etcd version 3.5.0

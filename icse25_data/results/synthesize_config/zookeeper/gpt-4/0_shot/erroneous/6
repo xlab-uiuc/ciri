@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'maxSessionTimeout'], 'reason': ["The 'dataLogDir' path should not start with a slash when specifying a scheme such as 's3a://'. It should be formatted as 's3a://hadoop'.", "The 'maxSessionTimeout' should be a positive integer. A value of -1 indicates an incorrect configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataLogDir	maxSessionTimeout
+[Ciri] Reason for dataLogDir: The 'dataLogDir' path should not start with a slash when specifying a scheme such as 's3a://'. It should be formatted as 's3a://hadoop'.
+[Ciri] Reason for maxSessionTimeout: The 'maxSessionTimeout' should be a positive integer. A value of -1 indicates an incorrect configuration.

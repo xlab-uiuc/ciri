@@ -1,0 +1,13 @@
+Wrong shot number:
+[8, 7, 10, 13, 11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.socket.recv.buffer'], 'reason': ["The property 'hadoop.security.dns.nameserver' has the value '0.0.0' which is not a valid IP address.", "The property 'fs.defaultFS' has the value 'file:///' which is not a valid URI for the default file system.", "The property 'fs.s3a.socket.recv.buffer' has the value '16384' which is not a valid buffer size."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.defaultFS	fs.s3a.socket.recv.buffer
+[Ciri] Reason for hadoop.security.dns.nameserver: The property 'hadoop.security.dns.nameserver' has the value '0.0.0' which is not a valid IP address.
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has the value 'file:///' which is not a valid URI for the default file system.
+[Ciri] Reason for fs.s3a.socket.recv.buffer: The property 'fs.s3a.socket.recv.buffer' has the value '16384' which is not a valid buffer size.

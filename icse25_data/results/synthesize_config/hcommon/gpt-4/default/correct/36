@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 11, 15]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.credential.clear-text-fallback', 'fs.automatic.close'], 'reason': ["The property 'hadoop.security.credential.clear-text-fallback' has an incorrect default value in the description. The default value is stated as true, but it should be false as per the provided value.", "The 'usage' tag for 'fs.automatic.close' is not a recognized configuration tag and should be replaced with a proper 'description' tag."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.credential.clear-text-fallback	fs.automatic.close
+[Ciri] Reason for hadoop.security.credential.clear-text-fallback: The property 'hadoop.security.credential.clear-text-fallback' has an incorrect default value in the description. The default value is stated as true, but it should be false as per the provided value.
+[Ciri] Reason for fs.automatic.close: The 'usage' tag for 'fs.automatic.close' is not a recognized configuration tag and should be replaced with a proper 'description' tag.

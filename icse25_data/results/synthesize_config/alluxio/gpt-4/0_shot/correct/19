@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.reader.max.chunk.size.bytes', 'alluxio.user.network.rpc.flowcontrol.window', 'alluxio.master.embedded.journal.transport.max.inbound.message.size'], 'reason': ["The value for 'alluxio.worker.network.reader.max.chunk.size.bytes' should be in bytes, but '4MB' is not a valid byte format.", "The value for 'alluxio.user.network.rpc.flowcontrol.window' should be in bytes, but '1MB' is not a valid byte format.", "The value for 'alluxio.master.embedded.journal.transport.max.inbound.message.size' should be in bytes, but '200MB' is not a valid byte format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.worker.network.reader.max.chunk.size.bytes	alluxio.user.network.rpc.flowcontrol.window	alluxio.master.embedded.journal.transport.max.inbound.message.size
+[Ciri] Reason for alluxio.worker.network.reader.max.chunk.size.bytes: The value for 'alluxio.worker.network.reader.max.chunk.size.bytes' should be in bytes, but '4MB' is not a valid byte format.
+[Ciri] Reason for alluxio.user.network.rpc.flowcontrol.window: The value for 'alluxio.user.network.rpc.flowcontrol.window' should be in bytes, but '1MB' is not a valid byte format.
+[Ciri] Reason for alluxio.master.embedded.journal.transport.max.inbound.message.size: The value for 'alluxio.master.embedded.journal.transport.max.inbound.message.size' should be in bytes, but '200MB' is not a valid byte format.

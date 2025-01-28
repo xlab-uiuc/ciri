@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled'], 'reason': ['cluster-enabled must be either yes or no']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-node-timeout', 'unixsocketperm', 'repl-diskless-sync', 'replica-announce-ip', 'repl-diskless-sync-max-replicas', 'replica-read-only', 'hash-max-listpack-value'], 'reason': ['cluster-enabled should be yes or no', 'cluster-node-timeout should be a positive integer', 'unixsocketperm should be a positive integer', 'repl-diskless-sync should be yes or no', 'replica-announce-ip should be a valid IP address', 'repl-diskless-sync-max-replicas should be a positive integer', 'replica-read-only should be yes or no', 'hash-max-listpack-value should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-node-timeout', 'unixsocketperm', 'repl-diskless-sync', 'replica-announce-ip', 'repl-diskless-sync-max-replicas', 'replica-read-only', 'hash-max-listpack-value'], 'reason': ['cluster-enabled must be either yes or no', 'cluster-node-timeout must be a positive integer', 'unixsocketperm must be a positive integer', 'repl-diskless-sync must be either yes or no', 'replica-announce-ip must be a valid IP address', 'repl-diskless-sync-max-replicas must be a positive integer', 'replica-read-only must be either yes or no', 'hash-max-listpack-value must be a positive integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: cluster-enabled	cluster-node-timeout	unixsocketperm	repl-diskless-sync	replica-announce-ip	repl-diskless-sync-max-replicas	replica-read-only	hash-max-listpack-value
+[Ciri] Reason for cluster-enabled: cluster-enabled must be either yes or no
+[Ciri] Reason for cluster-node-timeout: cluster-node-timeout should be a positive integer
+[Ciri] Reason for unixsocketperm: unixsocketperm should be a positive integer
+[Ciri] Reason for repl-diskless-sync: repl-diskless-sync should be yes or no
+[Ciri] Reason for replica-announce-ip: replica-announce-ip must be a valid IP address
+[Ciri] Reason for repl-diskless-sync-max-replicas: repl-diskless-sync-max-replicas must be a positive integer
+[Ciri] Reason for replica-read-only: replica-read-only should be yes or no
+[Ciri] Reason for hash-max-listpack-value: hash-max-listpack-value should be a positive integer

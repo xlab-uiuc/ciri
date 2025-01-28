@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.ipc.rpc.class</name>
+  <value>org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC</value>
+    <description>RPC class implementation</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled</name>
+  <value>false</value>
+    <description>Flag to enable override of the default kerberos authentication
+    filter with the RM authentication filter to allow authentication using
+    delegation tokens(fallback to kerberos if the tokens are missing). Only
+    applicable when the http authentication type is kerberos.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.zk-max-znode-size.bytes</name>
+  <value>2097152</value>
+    <description>Specifies the maximum size of the data that can be stored
+      in a znode. Value should be same or less than jute.maxbuffer configured
+      in zookeeper. Default value configured is 1MB.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.scheduler.monitor.policies</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy</value>
+    <description>The list of SchedulingEditPolicy classes that interact with
+        the scheduler. A particular module may be incompatible with the
+        scheduler, other policies, or a configuration of either.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.store-class</name>
+  <value>org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore</value>
+    <description>Store class name for timeline store.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.http-authentication.type</name>
+  <value>simple</value>
+    <description>
+      Defines authentication used for the timeline server HTTP endpoint.
+      Supported values are: simple | kerberos | #AUTHENTICATION_HANDLER_CLASSNAME#
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.log-aggregation.policy.class</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.AllContainerLogAggregationPolicy</value>
+    <description>
+    The default log aggregation policy class. Applications can
+    override it via LogAggregationContext. This configuration can provide
+    some cluster-side default behavior so that if the application doesn't
+    specify any policy via LogAggregationContext administrators of the cluster
+    can adjust the policy globally.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.amrmproxy.client.thread-count</name>
+  <value>50</value>
+    <description>
+    The number of threads used to handle requests by the AMRMProxyService.
+    </description>
+</property>
+
+</configuration>

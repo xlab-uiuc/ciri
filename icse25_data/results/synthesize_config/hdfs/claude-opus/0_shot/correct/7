@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.read.prefetch.size', 'dfs.batched.ls.limit'], 'reason': ['dfs.client.read.prefetch.size should be an integer value, but 0.1 is specified which is a float.', 'dfs.batched.ls.limit references an undefined parameter DFS_LIST_LIMIT_DEFAULT. The correct parameter name is dfs.ls.limit.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.client.read.prefetch.size	dfs.batched.ls.limit
+[Ciri] Reason for dfs.client.read.prefetch.size: dfs.client.read.prefetch.size should be an integer value, but 0.1 is specified which is a float.
+[Ciri] Reason for dfs.batched.ls.limit: dfs.batched.ls.limit references an undefined parameter DFS_LIST_LIMIT_DEFAULT. The correct parameter name is dfs.ls.limit.

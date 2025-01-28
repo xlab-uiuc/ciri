@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'rdb-del-sync-files', 'repl-backlog-size', 'tls-session-cache-size'], 'reason': ["The 'bind-source-addr' parameter is not a valid Redis configuration option in version 7.0.0.", "The 'rdb-del-sync-files' parameter is not a valid Redis configuration option in version 7.0.0.", "The 'repl-backlog-size' parameter is not a valid Redis configuration option in version 7.0.0. The correct parameter is 'repl-backlog-size'.", "The 'tls-session-cache-size' parameter is not a valid Redis configuration option in version 7.0.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: bind-source-addr	rdb-del-sync-files	repl-backlog-size	tls-session-cache-size
+[Ciri] Reason for bind-source-addr: The 'bind-source-addr' parameter is not a valid Redis configuration option in version 7.0.0.
+[Ciri] Reason for rdb-del-sync-files: The 'rdb-del-sync-files' parameter is not a valid Redis configuration option in version 7.0.0.
+[Ciri] Reason for repl-backlog-size: The 'repl-backlog-size' parameter is not a valid Redis configuration option in version 7.0.0. The correct parameter is 'repl-backlog-size'.
+[Ciri] Reason for tls-session-cache-size: The 'tls-session-cache-size' parameter is not a valid Redis configuration option in version 7.0.0.

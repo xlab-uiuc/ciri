@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'hash-max-listpack-value', 'oom-score-adj-values'], 'reason': ["The 'enable-protected-configs' parameter does not exist in Redis configuration options.", "The correct parameter for setting the maximum listpack value is 'hash-max-ziplist-value' for Redis versions before 7.0 and 'hash-max-listpack-entries' for Redis 7.0 and above.", "The 'oom-score-adj-values' parameter does not exist. The correct parameter for adjusting OOM scores in Redis is 'oom-score-adj'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable-protected-configs	hash-max-listpack-value	oom-score-adj-values
+[Ciri] Reason for enable-protected-configs: The 'enable-protected-configs' parameter does not exist in Redis configuration options.
+[Ciri] Reason for hash-max-listpack-value: The correct parameter for setting the maximum listpack value is 'hash-max-ziplist-value' for Redis versions before 7.0 and 'hash-max-listpack-entries' for Redis 7.0 and above.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter does not exist. The correct parameter for adjusting OOM scores in Redis is 'oom-score-adj'.

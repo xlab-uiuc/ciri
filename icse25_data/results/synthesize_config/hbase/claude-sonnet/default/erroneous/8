@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 5, 6]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.wal.dir.perms'], 'reason': ["The property 'hbase.local.dir' has an invalid value 'dev/urandom///' which contains multiple consecutive slashes.", "The property 'hbase.wal.dir.perms' has the value '1400' which is not a valid octal representation of file permissions."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.local.dir	hbase.wal.dir.perms
+[Ciri] Reason for hbase.local.dir: The property 'hbase.local.dir' has an invalid value 'dev/urandom///' which contains multiple consecutive slashes.
+[Ciri] Reason for hbase.wal.dir.perms: The property 'hbase.wal.dir.perms' has the value '1400' which is not a valid octal representation of file permissions.

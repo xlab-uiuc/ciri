@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.buffer.dir', 'fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.kill.max'], 'reason': ["The value '/\\hadoop/s3a' for property 'fs.s3a.buffer.dir' contains backslashes. Forward slashes should be used instead for file paths.", "The value '-1' for property 'fs.s3a.s3guard.ddb.table.capacity.write' is invalid. It should be a non-negative integer.", "The value '1' for property 'ipc.client.kill.max' is too low. It should be at least 10 to avoid issues with multiple concurrent clients."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.s3a.buffer.dir	fs.s3a.s3guard.ddb.table.capacity.write	ipc.client.kill.max
+[Ciri] Reason for fs.s3a.buffer.dir: The value '/\hadoop/s3a' for property 'fs.s3a.buffer.dir' contains backslashes. Forward slashes should be used instead for file paths.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: The value '-1' for property 'fs.s3a.s3guard.ddb.table.capacity.write' is invalid. It should be a non-negative integer.
+[Ciri] Reason for ipc.client.kill.max: The value '1' for property 'ipc.client.kill.max' is too low. It should be at least 10 to avoid issues with multiple concurrent clients.

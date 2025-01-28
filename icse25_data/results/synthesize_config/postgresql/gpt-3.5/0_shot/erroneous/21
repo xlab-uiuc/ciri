@@ -1,0 +1,25 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl', 'ssl_key_file', 'log_parameter_max_length', 'plan_cache_mode', 'bgwriter_lru_maxpages', 'scram_iterations'], 'reason': ["ssl parameter should be 'on' or 'off'", "ssl_key_file should not have a trailing ' character", 'log_parameter_max_length should be a positive integer', "plan_cache_mode should be 'auto', 'force_custom_plan', or 'keep'", 'bgwriter_lru_maxpages should be a positive integer', 'scram_iterations should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['ssl', 'ssl_key_file', 'log_parameter_max_length', 'bgwriter_lru_maxpages', 'scram_iterations', 'wal_level', 'listen_addresses'], 'reason': ["ssl parameter should be 'off' or 'on' for PostgreSQL configuration.", 'ssl_key_file parameter has an extra single quote at the end.', 'log_parameter_max_length should be a positive integer value.', 'bgwriter_lru_maxpages should be a positive integer value.', 'scram_iterations should be a positive integer value.', "wal_level parameter should be 'replica', 'logical', or 'minimal'.", "listen_addresses should specify the IP addresses or '*' for all interfaces."]}
+
+{'hasError': True, 'errParameter': ['ssl', 'ssl_key_file', 'log_parameter_max_length', 'plan_cache_mode', 'bgwriter_lru_maxpages', 'scram_iterations', 'listen_addresses'], 'reason': ["ssl parameter should be 'on' or 'off', ssl_key_file should not have an extra single quote at the end, log_parameter_max_length should be a positive integer, plan_cache_mode should be 'auto', 'force', or 'none', bgwriter_lru_maxpages should be a positive integer, scram_iterations should be a power of 2, wal_level should be 'replica', listen_addresses should not be set to 'localhost'"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl', 'ssl_key_file', 'log_parameter_max_length', 'bgwriter_lru_maxpages', 'scram_iterations', 'listen_addresses'], 'reason': ["ssl parameter should be 'off' or 'on' for PostgreSQL version 13.0", "ssl_key_file parameter should not have an extra ' character at the end", 'log_parameter_max_length should be a positive integer value', 'bgwriter_lru_maxpages should be a positive integer value', 'scram_iterations should be a positive integer value', "listen_addresses should specify the IP address or '*' to listen on all available interfaces"]}
+
+{'hasError': True, 'errParameter': ['ssl', 'ssl_key_file', 'log_parameter_max_length', 'bgwriter_lru_maxpages', 'scram_iterations', 'listen_addresses'], 'reason': ["ssl parameter should be 'off' or 'on' for PostgreSQL version 13.0.", 'ssl_key_file parameter should not have an extra single quote at the end.', 'log_parameter_max_length should be a positive integer value.', 'bgwriter_lru_maxpages should be a positive integer value.', 'scram_iterations should be a power of 2.', "listen_addresses should not be set to 'localhost'."]}
+
+{'hasError': True, 'errParameter': ['ssl', 'ssl_key_file', 'log_parameter_max_length', 'plan_cache_mode', 'bgwriter_lru_maxpages', 'scram_iterations', 'listen_addresses'], 'reason': ["ssl parameter should be 'off' or 'on' for PostgreSQL 13.0", "ssl_key_file parameter should not have an extra ' character at the end", 'log_parameter_max_length should be a positive integer value', "plan_cache_mode should be 'auto', 'force_custom_plan', or 'keep'", 'bgwriter_lru_maxpages should be a positive integer value', 'scram_iterations should be a positive integer value', "listen_addresses should specify the IP addresses or hostnames to listen on, not just 'localhost'"]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: ssl	ssl_key_file	log_parameter_max_length	bgwriter_lru_maxpages	scram_iterations	listen_addresses
+[Ciri] Reason for ssl: ssl parameter should be 'off' or 'on' for PostgreSQL version 13.0
+[Ciri] Reason for ssl_key_file: ssl_key_file parameter should not have an extra ' character at the end
+[Ciri] Reason for log_parameter_max_length: log_parameter_max_length should be a positive integer value.
+[Ciri] Reason for bgwriter_lru_maxpages: bgwriter_lru_maxpages should be a positive integer value.
+[Ciri] Reason for scram_iterations: scram_iterations should be a power of 2.
+[Ciri] Reason for listen_addresses: listen_addresses should not be set to 'localhost'.

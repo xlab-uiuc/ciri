@@ -1,0 +1,12 @@
+Wrong shot number:
+[6, 8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'hadoop.http.authentication.token.validity'], 'reason': ["The property 'fs.s3a.proxy.port' has the value '65536' which exceeds the range of a valid port number.", "The property 'hadoop.http.authentication.token.validity' has a value that may be too high for a token validity period."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.proxy.port	hadoop.http.authentication.token.validity
+[Ciri] Reason for fs.s3a.proxy.port: The property 'fs.s3a.proxy.port' has the value '65536' which exceeds the range of a valid port number.
+[Ciri] Reason for hadoop.http.authentication.token.validity: The property 'hadoop.http.authentication.token.validity' has a value that may be too high for a token validity period.

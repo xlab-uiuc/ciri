@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.output.csv.quote.character', 'fs.permissions.umask-mode'], 'reason': ["The value for 'fs.s3a.select.output.csv.quote.character' should be escaped or enclosed in CDATA to avoid XML parsing errors.", "The value for 'fs.permissions.umask-mode' is incorrect. It should be an octal or symbolic value directly, not a URI scheme like 'file://'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.select.output.csv.quote.character	fs.permissions.umask-mode
+[Ciri] Reason for fs.s3a.select.output.csv.quote.character: The value for 'fs.s3a.select.output.csv.quote.character' should be escaped or enclosed in CDATA to avoid XML parsing errors.
+[Ciri] Reason for fs.permissions.umask-mode: The value for 'fs.permissions.umask-mode' is incorrect. It should be an octal or symbolic value directly, not a URI scheme like 'file://'.

@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'quota-backend-bytes', 'proxy-write-timeout', 'snapshot-count'], 'reason': ['The heartbeat-interval value should be between 500ms and 1000ms. The provided value of 9.9 is invalid.', 'The quota-backend-bytes value should be a positive integer representing the maximum size in bytes. The provided value of 1 is too small and may cause issues.', 'The proxy-write-timeout value is typically set to a higher value, such as 10000ms (10 seconds). A value of 2500ms may be too low and cause timeouts.', 'The snapshot-count value is typically set to a lower value, such as 100000. A value of 20000 may cause excessive disk usage for storing snapshots.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: heartbeat-interval	quota-backend-bytes	proxy-write-timeout	snapshot-count
+[Ciri] Reason for heartbeat-interval: The heartbeat-interval value should be between 500ms and 1000ms. The provided value of 9.9 is invalid.
+[Ciri] Reason for quota-backend-bytes: The quota-backend-bytes value should be a positive integer representing the maximum size in bytes. The provided value of 1 is too small and may cause issues.
+[Ciri] Reason for proxy-write-timeout: The proxy-write-timeout value is typically set to a higher value, such as 10000ms (10 seconds). A value of 2500ms may be too low and cause timeouts.
+[Ciri] Reason for snapshot-count: The snapshot-count value is typically set to a lower value, such as 100000. A value of 20000 may cause excessive disk usage for storing snapshots.

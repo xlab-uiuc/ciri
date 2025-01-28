@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.num.checkpoints.retained</name>
+  <value>2</value>
+  <description>The number of image checkpoint files (fsimage_*) that will be retained by
+  the NameNode and Secondary NameNode in their storage directories. All edit
+  logs (stored on edits_* files) necessary to recover an up-to-date namespace from the oldest retained
+  checkpoint will also be retained.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.context</name>
+  <value>default</value>
+  <description>
+    The name of the DFSClient context that we should use.  Clients that share
+    a context share a socket cache and short-circuit cache, among other things.
+    You should only change this if you don't want to share with another set of
+    threads.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.list.reencryption.status.num.responses</name>
+  <value>200</value>
+  <description>When listing re-encryption status, the maximum number of zones
+    that will be returned in a batch. Fetching the list incrementally in
+    batches improves namenode performance.
+  </description>
+</property>
+
+<property>
+  <name>dfs.balancer.max-iteration-time</name>
+  <value>2400000</value>
+  <description>
+    Maximum amount of time while an iteration can be run by the Balancer. After
+    this time the Balancer will stop the iteration, and reevaluate the work
+    needs to be done to Balance the cluster. The default value is 20 minutes.
+  </description>
+</property>
+
+<property>
+  <name>dfs.journalnode.edits.dir</name>
+  <value>//hadoop/io/local</value>
+  <description>
+    The directory where the journal edit files are stored.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.storageinfo.defragment.interval.ms</name>
+  <value>1200000</value>
+  <description>
+    The thread for checking the StorageInfo for defragmentation will
+    run periodically.  The time between runs is determined by this
+    property.
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.satisfier.enabled</name>
+  <value>true</value>
+  <description>
+    By default, StoragePolicySatisfier is disabled.
+    Administrator can dynamically change StoragePolicySatisfier mode by using reconfiguration option.
+    Dynamic mode change can be achieved in the following way.
+    1. Edit/update this configuration property values in hdfs-site.xml
+    2. Execute the reconfig command on hadoop command line prompt.
+       For example:$hdfs -reconfig namenode nn_host:port start
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.satisfier.retry.max.attempts</name>
+  <value>3</value>
+  <description>
+    Max retry to satisfy the block storage policy. After this retry block will be removed
+    from the movement needed queue.
+  </description>
+</property>
+
+</configuration>

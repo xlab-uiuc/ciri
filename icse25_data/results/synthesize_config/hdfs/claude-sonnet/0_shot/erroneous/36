@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.https.address', 'dfs.user.home.dir.prefix', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["The value '0.0.0.0:3000' for 'dfs.datanode.https.address' is not recommended as it binds to all available network interfaces. It is better to use a specific IP address or hostname.", "The value '/valid/file1' for 'dfs.user.home.dir.prefix' is not a valid directory path. It should be a directory path that exists on the system.", "The value '/valid/file1' for 'dfs.provided.aliasmap.leveldb.path' is not a valid directory path. It should be a directory path that exists on the system."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.datanode.https.address	dfs.user.home.dir.prefix	dfs.provided.aliasmap.leveldb.path
+[Ciri] Reason for dfs.datanode.https.address: The value '0.0.0.0:3000' for 'dfs.datanode.https.address' is not recommended as it binds to all available network interfaces. It is better to use a specific IP address or hostname.
+[Ciri] Reason for dfs.user.home.dir.prefix: The value '/valid/file1' for 'dfs.user.home.dir.prefix' is not a valid directory path. It should be a directory path that exists on the system.
+[Ciri] Reason for dfs.provided.aliasmap.leveldb.path: The value '/valid/file1' for 'dfs.provided.aliasmap.leveldb.path' is not a valid directory path. It should be a directory path that exists on the system.

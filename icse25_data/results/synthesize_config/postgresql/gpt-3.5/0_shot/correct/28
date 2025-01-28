@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'transform_null_equals', 'commit_delay'], 'reason': ["vacuum_freeze_min_age value should be specified in bytes or as a time interval, e.g., '25000000' is not a valid format.", "transform_null_equals only accepts 'on' or 'off' as values.", "commit_delay value should be specified in microseconds, e.g., '2' is not a valid format."]}
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'autovacuum_naptime'], 'reason': ['vacuum_freeze_min_age value should be specified in number of transactions, not in years.', 'autovacuum_naptime value should be specified in seconds, not in minutes.']}
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'enable_nestloop', 'transform_null_equals', 'autovacuum_naptime', 'backslash_quote', 'commit_delay', 'geqo'], 'reason': ['vacuum_freeze_min_age is not a valid parameter for PostgreSQL 13.0', "enable_nestloop should be set to 'on' or 'off'", "transform_null_equals should be set to 'on' or 'off'", 'autovacuum_naptime value should be specified in seconds, not in minutes', "backslash_quote should be set to 'safe' or 'on'", 'commit_delay value should be specified in microseconds, not in seconds', 'geqo is not a valid parameter for PostgreSQL 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'autovacuum_naptime'], 'reason': ["vacuum_freeze_min_age value should be specified in bytes or as a time interval, e.g., '25000000' should be '25min'", "autovacuum_naptime value should be specified in seconds, e.g., '1min' should be '60s'"]}
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'enable_nestloop', 'transform_null_equals', 'autovacuum_naptime', 'backslash_quote', 'commit_delay', 'geqo'], 'reason': ['vacuum_freeze_min_age is not a valid parameter for PostgreSQL 13.0', "enable_nestloop should be set to 'on' or 'off'", "transform_null_equals should be set to 'on' or 'off'", 'autovacuum_naptime should be specified in seconds, not minutes', "backslash_quote should be set to 'safe_encoding' or 'on'", 'commit_delay should be specified in milliseconds, not seconds', 'geqo is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'enable_nestloop', 'transform_null_equals', 'autovacuum_naptime', 'backslash_quote', 'commit_delay', 'geqo'], 'reason': ["vacuum_freeze_min_age should be specified in bytes or as a time interval, e.g., 25000000 bytes or '25000000ms'", "enable_nestloop should be set to 'on' or 'off'", "transform_null_equals should be set to 'on' or 'off'", "autovacuum_naptime should be specified in seconds, e.g., '1min' should be '60s'", "backslash_quote should be set to 'safe' or 'on'", "commit_delay should be specified in microseconds, e.g., '2' should be '2000'", "geqo should be set to 'on' or 'off'"]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: vacuum_freeze_min_age	enable_nestloop	transform_null_equals	autovacuum_naptime	backslash_quote	commit_delay	geqo
+[Ciri] Reason for vacuum_freeze_min_age: vacuum_freeze_min_age is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for enable_nestloop: enable_nestloop should be set to 'on' or 'off'
+[Ciri] Reason for transform_null_equals: transform_null_equals should be set to 'on' or 'off'
+[Ciri] Reason for autovacuum_naptime: autovacuum_naptime should be specified in seconds, not minutes
+[Ciri] Reason for backslash_quote: backslash_quote should be set to 'safe' or 'on'
+[Ciri] Reason for commit_delay: commit_delay should be specified in milliseconds, not seconds
+[Ciri] Reason for geqo: geqo is not a valid parameter for PostgreSQL 13.0

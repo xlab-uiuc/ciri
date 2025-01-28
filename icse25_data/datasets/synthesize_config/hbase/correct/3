@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>zookeeper.recovery.retry.maxsleeptime</name>
+  <value>60000</value>
+    <description>Max sleep time before retry zookeeper operations in milliseconds,
+    a max time is needed here so that sleep time won't grow unboundedly
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.handler.count</name>
+  <value>60</value>
+    <description>Count of RPC Listener instances spun up on RegionServers.
+      Same property is used by the Master for count of master handlers.
+      Too many handlers can be counter-productive. Make it a multiple of
+      CPU count. If mostly read-only, handlers count close to cpu count
+      does well. Start with twice the CPU count and tune from there.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.msginterval</name>
+  <value>1500</value>
+    <description>Interval between messages from the RegionServer to Master
+    in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.optionalcacheflushinterval</name>
+  <value>3600000</value>
+    <description>
+    Maximum amount of time an edit lives in memory before being automatically flushed.
+    Default 1 hour. Set it to 0 to disable automatic flushing.
+  </description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.dns.interface</name>
+  <value>eth2</value>
+    <description>The name of the Network Interface from which a ZooKeeper server
+      should report its IP address.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.dns.nameserver</name>
+  <value>default</value>
+    <description>The host name or IP address of the name server (DNS)
+      which a ZooKeeper server should use to determine the host name used by the
+      master for communication and display purposes.</description>
+</property>
+
+<property>
+  <name>hbase.client.max.perserver.tasks</name>
+  <value>1</value>
+    <description>The maximum number of concurrent mutation tasks a single HTable instance will
+    send to a single region server.</description>
+</property>
+
+<property>
+  <name>hbase.replication.source.maxthreads</name>
+  <value>10</value>
+    <description>
+        The maximum number of threads any replication source will use for
+        shipping edits to the sinks in parallel. This also limits the number of
+        chunks each replication batch is broken into. Larger values can improve
+        the replication throughput between the master and slave clusters. The
+        default of 10 will rarely need to be changed.
+    </description>
+</property>
+
+</configuration>

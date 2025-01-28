@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.cgroups.hierarchy', 'yarn.web-proxy.address', 'yarn.sharedcache.admin.address'], 'reason': ["The value '/valid/file1' for the property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' is not a valid cgroup hierarchy path. It should be a valid path on the system.", "The value '127.0.0.1' for the property 'yarn.web-proxy.address' is not a valid address for the web proxy. It should be a valid hostname or IP address.", "The value '0.0.0.0:3001' for the property 'yarn.sharedcache.admin.address' is not a valid address for the shared cache manager admin interface. It should be a valid hostname or IP address."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.nodemanager.linux-container-executor.cgroups.hierarchy	yarn.web-proxy.address	yarn.sharedcache.admin.address
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.hierarchy: The value '/valid/file1' for the property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' is not a valid cgroup hierarchy path. It should be a valid path on the system.
+[Ciri] Reason for yarn.web-proxy.address: The value '127.0.0.1' for the property 'yarn.web-proxy.address' is not a valid address for the web proxy. It should be a valid hostname or IP address.
+[Ciri] Reason for yarn.sharedcache.admin.address: The value '0.0.0.0:3001' for the property 'yarn.sharedcache.admin.address' is not a valid address for the shared cache manager admin interface. It should be a valid hostname or IP address.

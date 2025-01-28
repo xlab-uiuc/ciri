@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdb-del-sync-files', 'disable-thp', 'zset-max-listpack-value'], 'reason': ["Unknown parameter 'rdb-del-sync-files' for Redis version 7.0.0", "Unknown parameter 'disable-thp' for Redis version 7.0.0", "Unknown parameter 'zset-max-listpack-value' for Redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['rdb-del-sync-files', 'disable-thp', 'zset-max-listpack-value'], 'reason': ["Unknown parameter 'rdb-del-sync-files'", "Unknown parameter 'disable-thp'", "Unknown parameter 'zset-max-listpack-value'"]}
+
+{'hasError': True, 'errParameter': ['rdb-del-sync-files', 'disable-thp', 'cluster-announce-ip', 'zset-max-listpack-value', 'cluster-announce-bus-port'], 'reason': ["Unknown parameter 'rdb-del-sync-files'", "Unknown parameter 'disable-thp'", "Unknown parameter 'cluster-announce-ip'", "Unknown parameter 'zset-max-listpack-value'", "Unknown parameter 'cluster-announce-bus-port'"]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: rdb-del-sync-files	disable-thp	zset-max-listpack-value
+[Ciri] Reason for rdb-del-sync-files: Unknown parameter 'rdb-del-sync-files'
+[Ciri] Reason for disable-thp: Unknown parameter 'disable-thp'
+[Ciri] Reason for zset-max-listpack-value: Unknown parameter 'zset-max-listpack-value' for Redis version 7.0.0

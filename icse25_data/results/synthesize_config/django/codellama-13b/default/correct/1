@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 2, 5]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['PASSWORD_HASHERS'], 'reason': ["The property 'PASSWORD_HASHERS' has the value '['django.contrib.auth.hashers.PBKDF2PasswordHasher']' which is not within the accepted value {['django.contrib.auth.hashers.Argon2PasswordHasher', 'django.contrib.auth.hashers.PBKDF2PasswordHasher', 'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher', 'django.contrib.auth.hashers.BCryptSHA256PasswordHasher', 'django.contrib.auth.hashers.BCryptPasswordHasher', 'django.contrib.auth.hashers.SHA1PasswordHasher', 'django.contrib.auth.hashers.UnsaltedSHA1PasswordHasher', 'django.contrib.auth.hashers.UnsaltedMD5PasswordHasher', 'django.contrib.auth.hashers.CryptPasswordHasher']}."]}
+
+{'hasError': True, 'errParameter': ['PASSWORD_HASHERS'], 'reason': ["The property 'PASSWORD_HASHERS' has the value '['django.contrib.auth.hashers.PBKDF2PasswordHasher']' which does not follow the correct format. The correct format is '['django.contrib.auth.hashers.PBKDF2PasswordHasher', 'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher']'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: PASSWORD_HASHERS
+[Ciri] Reason for PASSWORD_HASHERS: The property 'PASSWORD_HASHERS' has the value '['django.contrib.auth.hashers.PBKDF2PasswordHasher']' which is not within the accepted value {['django.contrib.auth.hashers.Argon2PasswordHasher', 'django.contrib.auth.hashers.PBKDF2PasswordHasher', 'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher', 'django.contrib.auth.hashers.BCryptSHA256PasswordHasher', 'django.contrib.auth.hashers.BCryptPasswordHasher', 'django.contrib.auth.hashers.SHA1PasswordHasher', 'django.contrib.auth.hashers.UnsaltedSHA1PasswordHasher', 'django.contrib.auth.hashers.UnsaltedMD5PasswordHasher', 'django.contrib.auth.hashers.CryptPasswordHasher']}.

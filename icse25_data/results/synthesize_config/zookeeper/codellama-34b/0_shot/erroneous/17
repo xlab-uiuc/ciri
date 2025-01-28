@@ -1,0 +1,53 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['peerType', 'initLimit'], 'reason': ['peerType is not a valid property', 'initLimit is not a valid property']}
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'quorum.cnxn.threads.size', 'initLimit'], 'reason': ['maxClientCnxns should be a positive integer', 'quorum.cnxn.threads.size should be a positive integer', 'initLimit should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'syncLimit'], 'reason': ['initLimit should be a positive integer', 'syncLimit should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'quorum.cnxn.threads.size', 'initLimit'], 'reason': ['maxClientCnxns should be greater than 0', 'quorum.cnxn.threads.size should be greater than 0', 'initLimit should be greater than 0']}
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'quorum.cnxn.threads.size'], 'reason': ['maxClientCnxns should be a positive integer', 'quorum.cnxn.threads.size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'peerType'], 'reason': ['maxClientCnxns is not a valid property', 'peerType is not a valid property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'quorum.cnxn.threads.size', 'tickTime', 'initLimit'], 'reason': ['maxClientCnxns should be a positive integer', 'quorum.cnxn.threads.size should be a positive integer', 'tickTime should be a positive integer', 'initLimit should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'quorum.cnxn.threads.size'], 'reason': ['maxClientCnxns should be a positive integer', 'quorum.cnxn.threads.size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['peerType', 'initLimit'], 'reason': ['peerType is not a valid property for zookeeper version 3.7.0', 'initLimit is not a valid property for zookeeper version 3.7.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initLimit', 'syncLimit', 'maxClientCnxns'], 'reason': ['initLimit should be greater than 0', 'syncLimit should be greater than 0', 'maxClientCnxns should be greater than 0']}
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'quorum.cnxn.threads.size'], 'reason': ['maxClientCnxns should be a positive integer', 'quorum.cnxn.threads.size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'initLimit'], 'reason': ['dataDir should be a directory', 'clientPort should be an integer', 'initLimit should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'initLimit', 'peerType'], 'reason': ['dataDir should be a directory', 'clientPort should be an integer', 'initLimit should be a positive integer', "peerType should be either 'observer' or 'participant'"]}
+
+{'hasError': True, 'errParameter': ['peerType', 'initLimit'], 'reason': ['peerType is not a valid property', 'initLimit is not a valid property']}
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'quorum.cnxn.threads.size', 'initLimit'], 'reason': ['maxClientCnxns is too small', 'quorum.cnxn.threads.size is too small', 'initLimit is too small']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['peerType', 'initLimit'], 'reason': ['peerType is not a valid property', 'initLimit is not a valid property']}
+
+{'hasError': True, 'errParameter': ['peerType', 'initLimit'], 'reason': ['peerType is not a valid property in zookeeper version 3.7.0', 'initLimit is not a valid property in zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'peerType', 'initLimit'], 'reason': ['maxClientCnxns should be a positive integer', "peerType should be either 'observer' or 'participant'", 'initLimit should be a positive integer']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: peerType	initLimit
+[Ciri] Reason for peerType: peerType is not a valid property
+[Ciri] Reason for initLimit: initLimit is not a valid property in zookeeper version 3.7.0

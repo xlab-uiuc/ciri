@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['track_io_timing', 'enable_presorted_aggregate', 'statement_timeout', 'debug_pretty_print'], 'reason': ['track_io_timing is not a valid parameter for PostgreSQL version 13.0', 'enable_presorted_aggregate is not a valid parameter for PostgreSQL version 13.0', 'statement_timeout should not be set to 0. It should be a positive integer representing the maximum allowed time for a statement to execute in milliseconds.', 'debug_pretty_print is not a valid parameter for PostgreSQL version 13.0']}
+
+{'hasError': True, 'errParameter': ['fsync', 'tcp_keepalives_interval', 'cpu_tuple_cost', 'track_io_timing', 'enable_presorted_aggregate', 'statement_timeout', 'debug_pretty_print', 'ssl_ciphers'], 'reason': ["fsync value should be 'on' or 'off'", 'tcp_keepalives_interval value should be an integer', 'cpu_tuple_cost value should be a floating-point number', "track_io_timing value should be 'on' or 'off'", "enable_presorted_aggregate value should be 'on' or 'off'", "statement_timeout value should be an integer representing milliseconds, or '0' for no timeout", "debug_pretty_print value should be 'on' or 'off'", 'ssl_ciphers value should be a valid SSL cipher specification']}
+
+{'hasError': True, 'errParameter': ['fsync', 'tcp_keepalives_interval', 'cpu_tuple_cost', 'track_io_timing', 'enable_presorted_aggregate', 'statement_timeout', 'debug_pretty_print', 'ssl_ciphers'], 'reason': ["fsync value should be 'on' or 'off'", 'tcp_keepalives_interval value should be an integer', 'cpu_tuple_cost value should be a floating-point number', "track_io_timing value should be 'on' or 'off'", "enable_presorted_aggregate value should be 'on' or 'off'", "statement_timeout value should be an integer greater than zero or '0' for no timeout", "debug_pretty_print value should be 'on' or 'off'", 'ssl_ciphers value should be a valid SSL cipher specification']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fsync	tcp_keepalives_interval	cpu_tuple_cost	track_io_timing	enable_presorted_aggregate	statement_timeout	debug_pretty_print	ssl_ciphers
+[Ciri] Reason for fsync: fsync value should be 'on' or 'off'
+[Ciri] Reason for tcp_keepalives_interval: tcp_keepalives_interval value should be an integer
+[Ciri] Reason for cpu_tuple_cost: cpu_tuple_cost value should be a floating-point number
+[Ciri] Reason for track_io_timing: track_io_timing value should be 'on' or 'off'
+[Ciri] Reason for enable_presorted_aggregate: enable_presorted_aggregate value should be 'on' or 'off'
+[Ciri] Reason for statement_timeout: statement_timeout value should be an integer greater than zero or '0' for no timeout
+[Ciri] Reason for debug_pretty_print: debug_pretty_print value should be 'on' or 'off'
+[Ciri] Reason for ssl_ciphers: ssl_ciphers value should be a valid SSL cipher specification

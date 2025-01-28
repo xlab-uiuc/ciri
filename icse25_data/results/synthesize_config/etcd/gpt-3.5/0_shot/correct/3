@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-token', 'enable-v2', 'auto-compaction-mode', 'force-new-cluster', 'initial-advertise-peer-urls'], 'reason': ["'initial-cluster-token' is not a valid parameter for etcd version 3.5.0.", "'enable-v2' is not a valid parameter for etcd version 3.5.0.", "'auto-compaction-mode' is not a valid parameter for etcd version 3.5.0.", "'force-new-cluster' is not a valid parameter for etcd version 3.5.0.", "'initial-advertise-peer-urls' is not a valid parameter for etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['initial-cluster-token', 'enable-v2', 'force-new-cluster'], 'reason': ["The 'initial-cluster-token' parameter is not supported in etcd version 3.5.0.", "The 'enable-v2' parameter is not supported in etcd version 3.5.0.", "The 'force-new-cluster' parameter is not supported in etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['initial-cluster-token', 'enable-v2', 'force-new-cluster'], 'reason': ["The 'initial-cluster-token' parameter is not supported in etcd version 3.5.0.", "The 'enable-v2' parameter is not supported in etcd version 3.5.0.", "The 'force-new-cluster' parameter is not supported in etcd version 3.5.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: initial-cluster-token	enable-v2	force-new-cluster
+[Ciri] Reason for initial-cluster-token: The 'initial-cluster-token' parameter is not supported in etcd version 3.5.0.
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is not supported in etcd version 3.5.0.
+[Ciri] Reason for force-new-cluster: The 'force-new-cluster' parameter is not supported in etcd version 3.5.0.

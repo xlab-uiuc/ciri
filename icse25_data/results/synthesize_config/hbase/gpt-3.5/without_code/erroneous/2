@@ -1,0 +1,20 @@
+Wrong shot number:
+[9, 7, 10]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.offpeak.end.hour', 'hbase.mob.cache.evict.remain.ratio'], 'reason': ["The property 'hbase.master.logcleaner.ttl' has a negative value which is invalid. It should be a positive value representing time in milliseconds.", "The property 'hbase.offpeak.end.hour' has a value of '-2' which is outside the accepted range of 0 to 23.", "The property 'hbase.mob.cache.evict.remain.ratio' has a value '0.5f' which is not a valid float value. It should be a decimal number between 0.0 and 1.0."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.offpeak.end.hour', 'hbase.mob.cache.evict.remain.ratio'], 'reason': ["The property 'hbase.master.logcleaner.ttl' has a negative value which is not valid for time settings.", "The property 'hbase.offpeak.end.hour' has the value '-2' which is out of the valid range of hours (0-23).", "The property 'hbase.mob.cache.evict.remain.ratio' has a value '0.5f' which is not a valid float value. It should be a decimal number without 'f'."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.offpeak.end.hour', 'hbase.mob.cache.evict.remain.ratio'], 'reason': ["The property 'hbase.master.logcleaner.ttl' has a negative value which is not valid for time intervals.", "The property 'hbase.offpeak.end.hour' has a value of '-2' which is outside the accepted range of 0-23.", "The property 'hbase.mob.cache.evict.remain.ratio' has a value '0.5f' which is not a valid float format. It should be a decimal number without the 'f' suffix."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.master.logcleaner.ttl	hbase.offpeak.end.hour	hbase.mob.cache.evict.remain.ratio
+[Ciri] Reason for hbase.master.logcleaner.ttl: The property 'hbase.master.logcleaner.ttl' has a negative value which is not valid for time settings.
+[Ciri] Reason for hbase.offpeak.end.hour: The property 'hbase.offpeak.end.hour' has the value '-2' which is out of the valid range of hours (0-23).
+[Ciri] Reason for hbase.mob.cache.evict.remain.ratio: The property 'hbase.mob.cache.evict.remain.ratio' has a value '0.5f' which is not a valid float value. It should be a decimal number between 0.0 and 1.0.

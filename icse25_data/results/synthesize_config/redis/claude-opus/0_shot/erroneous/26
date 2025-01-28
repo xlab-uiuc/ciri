@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['set-proc-title', 'tls-port', 'enable-module-command', 'hash-max-listpack-entries'], 'reason': ['set-proc-title is not a valid configuration parameter in Redis 7.0.0. It was removed in Redis 6.2.', 'tls-port should be specified as tls-port-cert-file and tls-port-key-file to provide the certificate and key files for TLS.', 'enable-module-command is not a valid configuration parameter in Redis 7.0.0. Modules are enabled by default.', 'hash-max-listpack-entries is not a valid configuration parameter in Redis 7.0.0. It should be hash-max-ziplist-entries.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: set-proc-title	tls-port	enable-module-command	hash-max-listpack-entries
+[Ciri] Reason for set-proc-title: set-proc-title is not a valid configuration parameter in Redis 7.0.0. It was removed in Redis 6.2.
+[Ciri] Reason for tls-port: tls-port should be specified as tls-port-cert-file and tls-port-key-file to provide the certificate and key files for TLS.
+[Ciri] Reason for enable-module-command: enable-module-command is not a valid configuration parameter in Redis 7.0.0. Modules are enabled by default.
+[Ciri] Reason for hash-max-listpack-entries: hash-max-listpack-entries is not a valid configuration parameter in Redis 7.0.0. It should be hash-max-ziplist-entries.

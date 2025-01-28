@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms', 'fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.low-latency', 'ftp.client-write-packet-size'], 'reason': ['hadoop.security.group.mapping.ldap.read.timeout.ms is not a valid property for hcommon version 3.3.0', 'fs.s3a.s3guard.ddb.table.capacity.write is not a valid property for hcommon version 3.3.0', 'ipc.client.low-latency is not a valid property for hcommon version 3.3.0', 'ftp.client-write-packet-size is not a valid property for hcommon version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.low-latency'], 'reason': ['fs.s3a.s3guard.ddb.table.capacity.write is not a valid property for hcommon version 3.3.0', 'ipc.client.low-latency is not a valid property for hcommon version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ['fs.s3a.s3guard.ddb.table.capacity.write is not a valid property for Hadoop Common 3.3.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.low-latency'], 'reason': ['fs.s3a.s3guard.ddb.table.capacity.write: This property is not supported in Hadoop 3.3.0. Please check the documentation for supported properties.', 'ipc.client.low-latency: This property is not supported in Hadoop 3.3.0. Please check the documentation for supported properties.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ['fs.s3a.s3guard.ddb.table.capacity.write is not a valid property for Hadoop Common version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ['The value of hadoop.security.group.mapping.ldap.read.timeout.ms must be a positive integer.', 'The value of fs.s3a.s3guard.ddb.table.capacity.write must be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms', 'fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.low-latency'], 'reason': ['The property hadoop.security.group.mapping.ldap.read.timeout.ms is not recognized by Hadoop Common 3.3.0.', 'The property fs.s3a.s3guard.ddb.table.capacity.write is not recognized by Hadoop Common 3.3.0.', 'The property ipc.client.low-latency is not recognized by Hadoop Common 3.3.0.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.low-latency'], 'reason': ['fs.s3a.s3guard.ddb.table.capacity.write is not a valid property for hcommon version 3.3.0', 'ipc.client.low-latency is not a valid property for hcommon version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.low-latency'], 'reason': ['fs.s3a.s3guard.ddb.table.capacity.write: This property is not defined in hcommon version 3.3.0', 'ipc.client.low-latency: This property is not defined in hcommon version 3.3.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.s3guard.ddb.table.capacity.write	ipc.client.low-latency
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: fs.s3a.s3guard.ddb.table.capacity.write is not a valid property for hcommon version 3.3.0
+[Ciri] Reason for ipc.client.low-latency: ipc.client.low-latency: This property is not defined in hcommon version 3.3.0

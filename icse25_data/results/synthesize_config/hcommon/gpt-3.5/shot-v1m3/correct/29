@@ -1,0 +1,19 @@
+Wrong shot number:
+[5, 2, 8]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'ha.zookeeper.parent-znode'], 'reason': ["The property 'fs.defaultFS' has the value 'file:///' which is not a valid default file system URI.", "The property 'ha.zookeeper.parent-znode' has the value '/valid/file2' which does not follow the correct format for the ZooKeeper parent znode."]}
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'ha.zookeeper.parent-znode'], 'reason': ["The property 'fs.defaultFS' has the value 'file:///' which is not a valid default file system URI.", "The property 'ha.zookeeper.parent-znode' has the value '/valid/file2' which is not a valid ZooKeeper znode path."]}
+
+{'hasError': True, 'errParameter': ['fs.defaultFS'], 'reason': ["The property 'fs.defaultFS' has the value 'file:///' which is not a valid default file system URI."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.defaultFS	ha.zookeeper.parent-znode
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has the value 'file:///' which is not a valid default file system URI.
+[Ciri] Reason for ha.zookeeper.parent-znode: The property 'ha.zookeeper.parent-znode' has the value '/valid/file2' which does not follow the correct format for the ZooKeeper parent znode.

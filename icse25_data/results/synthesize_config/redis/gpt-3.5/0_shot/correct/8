@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'protected-mode', 'pidfile', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['enable-module-command is an invalid parameter for Redis version 7.0.0', "protected-mode should be set to 'yes' or 'no'", 'pidfile parameter should specify a valid file path', 'tls-port should be an integer value', 'oom-score-adj-values should have three integer values separated by spaces', 'proc-title-template is an invalid parameter for Redis version 7.0.0', "stop-writes-on-bgsave-error should be set to 'yes' or 'no'"]}
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'protected-mode', 'pidfile', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ['enable-module-command is not a valid parameter for Redis version 7.0.0', "protected-mode should be set to 'yes' or 'no'", 'pidfile should have a valid file path', 'tls-port should be a numeric value', 'oom-score-adj-values should have three numeric values separated by spaces', 'proc-title-template is missing required placeholders', "stop-writes-on-bgsave-error should be set to 'yes' or 'no'"]}
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'protected-mode', 'pidfile', 'tls-port', 'oom-score-adj-values', 'proc-title-template', 'stop-writes-on-bgsave-error'], 'reason': ["The parameter 'enable-module-command' is not recognized in Redis version 7.0.0.", "The parameter 'protected-mode' should be set to 'yes' or 'no' in Redis version 7.0.0.", "The 'pidfile' parameter should specify a valid file path.", "The 'tls-port' parameter should be an integer value.", "The 'oom-score-adj-values' parameter should have three integer values separated by spaces.", "The 'proc-title-template' parameter is not recognized in Redis version 7.0.0.", "The parameter 'stop-writes-on-bgsave-error' is not recognized in Redis version 7.0.0."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: enable-module-command	protected-mode	pidfile	tls-port	oom-score-adj-values	proc-title-template	stop-writes-on-bgsave-error
+[Ciri] Reason for enable-module-command: enable-module-command is an invalid parameter for Redis version 7.0.0
+[Ciri] Reason for protected-mode: protected-mode should be set to 'yes' or 'no'
+[Ciri] Reason for pidfile: The 'pidfile' parameter should specify a valid file path.
+[Ciri] Reason for tls-port: The 'tls-port' parameter should be an integer value.
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values should have three integer values separated by spaces
+[Ciri] Reason for proc-title-template: The 'proc-title-template' parameter is not recognized in Redis version 7.0.0.
+[Ciri] Reason for stop-writes-on-bgsave-error: stop-writes-on-bgsave-error should be set to 'yes' or 'no'

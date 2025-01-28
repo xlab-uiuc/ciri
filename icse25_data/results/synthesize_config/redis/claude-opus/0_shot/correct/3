@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-priority', 'tls-session-caching', 'auto-aof-rewrite-min-size'], 'reason': ["The 'replica-priority' parameter has been renamed to 'replica-announced-priority' since Redis 5.0.", "The 'tls-session-caching' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'tls-session-cache-mode'.", "The value for 'auto-aof-rewrite-min-size' should be specified in bytes, not using a unit like 'mb'. The correct value would be '33554432' for 32MB."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: replica-priority	tls-session-caching	auto-aof-rewrite-min-size
+[Ciri] Reason for replica-priority: The 'replica-priority' parameter has been renamed to 'replica-announced-priority' since Redis 5.0.
+[Ciri] Reason for tls-session-caching: The 'tls-session-caching' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'tls-session-cache-mode'.
+[Ciri] Reason for auto-aof-rewrite-min-size: The value for 'auto-aof-rewrite-min-size' should be specified in bytes, not using a unit like 'mb'. The correct value would be '33554432' for 32MB.

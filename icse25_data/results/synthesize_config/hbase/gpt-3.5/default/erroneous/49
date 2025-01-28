@@ -1,0 +1,26 @@
+Wrong shot number:
+[3, 11, 5]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regionserver.storefile.refresh.period' has the value '0' which should be greater than 0 to enable the feature. A value of 0 means the feature is disabled."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count', 'hbase.client.keyvalue.maxsize', 'hbase.regions.recovery.store.file.ref.count'], 'reason': ["The property 'hbase.regionserver.handler.count' has a value of '60' which may be too high and not optimized for performance.", "The property 'hbase.client.keyvalue.maxsize' has a value of '10485760' which may be too low for efficient storage.", "The property 'hbase.regions.recovery.store.file.ref.count' has a value of '-1' which is not a valid positive integer value."]}
+
+{'hasError': True, 'errParameter': ['hbase.regions.recovery.store.file.ref.count'], 'reason': ["The property 'hbase.regions.recovery.store.file.ref.count' has a negative value which is not allowed. Only positive integer values should be provided."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regionserver.storefile.refresh.period' has the value '0' which should be greater than 0 to enable the feature. A value of 0 means the feature is disabled."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regionserver.storefile.refresh.period' has the value '0' which is not a valid refresh period. It should be a positive value greater than 0."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regionserver.storefile.refresh.period' has the value '0' which is not a valid refresh period. It should be a positive value greater than 0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.storefile.refresh.period
+[Ciri] Reason for hbase.regionserver.storefile.refresh.period: The property 'hbase.regionserver.storefile.refresh.period' has the value '0' which is not a valid refresh period. It should be a positive value greater than 0.

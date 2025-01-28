@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy', 'proxy-write-timeout', 'max-wals'], 'reason': ["The 'proxy' flag is deprecated and not supported in etcd version 3.5.0.", "The 'proxy-write-timeout' flag does not exist in etcd configuration options.", "The 'max-wals' option is not directly configurable via the etcd configuration file or command line in version 3.5.0. Instead, 'max-wals' is managed internally based on the 'quota-backend-bytes' setting."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy	proxy-write-timeout	max-wals
+[Ciri] Reason for proxy: The 'proxy' flag is deprecated and not supported in etcd version 3.5.0.
+[Ciri] Reason for proxy-write-timeout: The 'proxy-write-timeout' flag does not exist in etcd configuration options.
+[Ciri] Reason for max-wals: The 'max-wals' option is not directly configurable via the etcd configuration file or command line in version 3.5.0. Instead, 'max-wals' is managed internally based on the 'quota-backend-bytes' setting.

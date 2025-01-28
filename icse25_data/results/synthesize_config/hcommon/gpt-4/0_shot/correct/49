@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'fs.s3a.list.version'], 'reason': ["The value format for 'hadoop.security.groups.shell.command.timeout' is incorrect. It should be expressed in milliseconds without a suffix (e.g., 1000 for 1 second).", "The 'fs.s3a.list.version' property does not exist in Hadoop 3.3.0. The S3A connector does not have a configuration option to select the version of the List Objects API."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout	fs.s3a.list.version
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: The value format for 'hadoop.security.groups.shell.command.timeout' is incorrect. It should be expressed in milliseconds without a suffix (e.g., 1000 for 1 second).
+[Ciri] Reason for fs.s3a.list.version: The 'fs.s3a.list.version' property does not exist in Hadoop 3.3.0. The S3A connector does not have a configuration option to select the version of the List Objects API.

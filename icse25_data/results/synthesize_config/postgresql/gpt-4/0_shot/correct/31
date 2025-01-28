@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['include_dir', 'checkpoint_warning', 'session_replication_role', 'min_parallel_table_scan_size'], 'reason': ["The 'include_dir' parameter does not exist in PostgreSQL configuration.", "The 'checkpoint_warning' parameter should be specified in milliseconds, not seconds.", "The 'session_replication_role' parameter is valid, but its typical values are 'replica', 'origin', 'local', not just 'origin'. The provided value is not incorrect but might be misunderstood without context.", "The 'min_parallel_table_scan_size' parameter should be specified in bytes, and the correct format is without the 'MB' suffix."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: include_dir	checkpoint_warning	session_replication_role	min_parallel_table_scan_size
+[Ciri] Reason for include_dir: The 'include_dir' parameter does not exist in PostgreSQL configuration.
+[Ciri] Reason for checkpoint_warning: The 'checkpoint_warning' parameter should be specified in milliseconds, not seconds.
+[Ciri] Reason for session_replication_role: The 'session_replication_role' parameter is valid, but its typical values are 'replica', 'origin', 'local', not just 'origin'. The provided value is not incorrect but might be misunderstood without context.
+[Ciri] Reason for min_parallel_table_scan_size: The 'min_parallel_table_scan_size' parameter should be specified in bytes, and the correct format is without the 'MB' suffix.

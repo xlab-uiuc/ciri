@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'gin_fuzzy_search_limit', 'gss_accept_delegation', 'krb_caseins_users', 'bgwriter_flush_after'], 'reason': ['max_connections should be greater than superuser_reserved_connections', 'gin_fuzzy_search_limit should not be set to -1', 'gss_accept_delegation should be set to on or off', 'krb_caseins_users should be set to on or off', 'bgwriter_flush_after should be set to a value greater than 1']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections'], 'reason': ['max_connections should be greater than superuser_reserved_connections.']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'superuser_reserved_connections', 'gin_fuzzy_search_limit', 'gss_accept_delegation', 'krb_caseins_users', 'bgwriter_flush_after'], 'reason': ['max_connections should be greater than superuser_reserved_connections.', 'gin_fuzzy_search_limit should not be set to -1.', 'gss_accept_delegation should be set to on.', 'krb_caseins_users should be set to on.', 'bgwriter_flush_after should be set to a value greater than 1.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: max_connections	superuser_reserved_connections	gin_fuzzy_search_limit	gss_accept_delegation	krb_caseins_users	bgwriter_flush_after
+[Ciri] Reason for max_connections: max_connections should be greater than superuser_reserved_connections
+[Ciri] Reason for superuser_reserved_connections: gin_fuzzy_search_limit should not be set to -1.
+[Ciri] Reason for gin_fuzzy_search_limit: gss_accept_delegation should be set to on.
+[Ciri] Reason for gss_accept_delegation: krb_caseins_users should be set to on or off
+[Ciri] Reason for krb_caseins_users: bgwriter_flush_after should be set to a value greater than 1.
+[Ciri] Reason for bgwriter_flush_after: 

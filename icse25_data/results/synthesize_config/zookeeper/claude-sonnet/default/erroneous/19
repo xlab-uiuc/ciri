@@ -1,0 +1,16 @@
+Wrong shot number:
+[8, 7, 4]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'electionAlg', 'standaloneEnabled'], 'reason': ["The property 'minSessionTimeout' has the value '4000000000' which exceeds the maximum allowed value.", "The property 'electionAlg' has the value '6' which is not a valid election algorithm. Valid values are 0, 1, 2, and 3.", "The property 'standaloneEnabled' cannot be set to 'true' when other quorum properties like 'syncLimit' and 'clientPort' are also set."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: minSessionTimeout	electionAlg	standaloneEnabled
+[Ciri] Reason for minSessionTimeout: The property 'minSessionTimeout' has the value '4000000000' which exceeds the maximum allowed value.
+[Ciri] Reason for electionAlg: The property 'electionAlg' has the value '6' which is not a valid election algorithm. Valid values are 0, 1, 2, and 3.
+[Ciri] Reason for standaloneEnabled: The property 'standaloneEnabled' cannot be set to 'true' when other quorum properties like 'syncLimit' and 'clientPort' are also set.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile', 'lc_numeric'], 'reason': ["Invalid value for krb_server_keyfile. It should not contain 'FILE:${sysconfdir}/'.", "Invalid value for lc_numeric. 'C' is not a valid value."]}
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile', 'gss_accept_delegation'], 'reason': ["krb_server_keyfile should not have 'FILE:' prefix, it should be 'krb_server_keyfile=${sysconfdir}/krb5.keytab'", 'gss_accept_delegation parameter is not supported in PostgreSQL version 13.0']}
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile', 'gss_accept_delegation'], 'reason': ["Invalid parameter 'krb_server_keyfile'. Use 'krb_server_keyfile' without the 'FILE' prefix.", "Invalid parameter 'gss_accept_delegation'. The correct parameter is 'krb_gss_acceptor'"]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: krb_server_keyfile	gss_accept_delegation
+[Ciri] Reason for krb_server_keyfile: krb_server_keyfile should not have 'FILE:' prefix, it should be 'krb_server_keyfile=${sysconfdir}/krb5.keytab'
+[Ciri] Reason for gss_accept_delegation: Invalid parameter 'gss_accept_delegation'. The correct parameter is 'krb_gss_acceptor'

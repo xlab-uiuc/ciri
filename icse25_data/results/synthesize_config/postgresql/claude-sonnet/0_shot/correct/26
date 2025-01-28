@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'bgwriter_flush_after'], 'reason': ["autovacuum_naptime is specified in minutes, but the value '1min' is not a valid time unit. It should be an integer value representing the number of seconds.", 'bgwriter_flush_after is a deprecated parameter in PostgreSQL 13 and should not be used.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autovacuum_naptime	bgwriter_flush_after
+[Ciri] Reason for autovacuum_naptime: autovacuum_naptime is specified in minutes, but the value '1min' is not a valid time unit. It should be an integer value representing the number of seconds.
+[Ciri] Reason for bgwriter_flush_after: bgwriter_flush_after is a deprecated parameter in PostgreSQL 13 and should not be used.

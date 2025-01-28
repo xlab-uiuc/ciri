@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.heartbeat.recheck-interval</name>
+  <value>300000</value>
+  <description>
+    This time decides the interval to check for expired datanodes.
+    With this value and dfs.heartbeat.interval, the interval of
+    deciding the datanode is stale or not is also calculated.
+    The unit of this configuration is millisecond.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.du.reserved.calculator</name>
+  <value>org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.ReservedSpaceCalculator$ReservedSpaceCalculatorAbsolute</value>
+  <description>Determines the class of ReservedSpaceCalculator to be used for
+    calculating disk space reservedfor non-HDFS data. The default calculator is
+    ReservedSpaceCalculatorAbsolute which will use dfs.datanode.du.reserved
+    for a static reserved number of bytes. ReservedSpaceCalculatorPercentage
+    will use dfs.datanode.du.reserved.pct to calculate the reserved number
+    of bytes based on the size of the storage. ReservedSpaceCalculatorConservative and
+    ReservedSpaceCalculatorAggressive will use their combination, Conservative will use
+    maximum, Aggressive minimum. For more details see ReservedSpaceCalculator.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.block.write.retries</name>
+  <value>-10</value>
+  <description>The number of retries for writing blocks to the data nodes, 
+  before we signal failure to the application.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.shared.file.descriptor.paths</name>
+  <value>/dev/shm,/tmp</value>
+  <description>
+    A comma-separated list of paths to use when creating file descriptors that
+    will be shared between the DataNode and the DFSClient.  Typically we use
+    /dev/shm, so that the file descriptors will not be written to disk.
+    It tries paths in order until creation of shared memory segment succeeds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.audit.loggers</name>
+  <value>default</value>
+  <description>
+    List of classes implementing audit loggers that will receive audit events.
+    These should be implementations of org.apache.hadoop.hdfs.server.namenode.AuditLogger.
+    The special value "default" can be used to reference the default audit
+    logger, which uses the configured log system. Installing custom audit loggers
+    may affect the performance and stability of the NameNode. Refer to the custom
+    logger's documentation for more details.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edekcacheloader.interval.ms</name>
+  <value>2000</value>
+  <description>When KeyProvider is configured, the interval time of warming
+    up edek cache on NN starts up / becomes active. All edeks will be loaded
+    from KMS into provider cache. The edek cache loader will try to warm up the
+    cache until succeed or NN leaves active state.
+  </description>
+</property>
+
+<property>
+  <name>dfs.checksum.combine.mode</name>
+  <value>MD5MD5CRC</value>
+  <description>
+    Defines how lower-level chunk/block checksums are combined into file-level
+    checksums; the original MD5MD5CRC mode is not comparable between files
+    with different block layouts, while modes like COMPOSITE_CRC are
+    comparable independently of block layout.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.failover.resolver.useFQDN</name>
+  <value>true</value>
+  <description>
+    Determines whether the resolved result is fully qualified domain name instead
+    of pure IP address(es). The config name can be extended with an optional
+    nameservice ID (of form dfs.client.failover.resolver.impl[.nameservice]) to
+    configure specific nameservices when multiple nameservices exist.
+    In secure environment, this has to be enabled since Kerberos is using fqdn
+    in machine's principal therefore accessing servers by IP won't be recognized
+    by the KDC.
+  </description>
+</property>
+
+</configuration>

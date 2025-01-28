@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_DOMAIN'], 'reason': ['CSRF_COOKIE_DOMAIN is not a valid parameter in Django 4.0. Please remove it from your configuration file.']}
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_DOMAIN'], 'reason': ['CSRF_COOKIE_DOMAIN is not a valid parameter for Django 4.0. Please remove this parameter from your configuration file.']}
+
+{'hasError': True, 'errParameter': ['SECRET_KEY', 'CSRF_COOKIE_SECURE', 'CSRF_COOKIE_DOMAIN', 'SESSION_ENGINE', 'LOGGING_CONFIG'], 'reason': ['SECRET_KEY is required', 'CSRF_COOKIE_SECURE must be True', 'CSRF_COOKIE_DOMAIN must be set', 'SESSION_ENGINE must be set', 'LOGGING_CONFIG must be set']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: CSRF_COOKIE_DOMAIN
+[Ciri] Reason for CSRF_COOKIE_DOMAIN: CSRF_COOKIE_DOMAIN is not a valid parameter for Django 4.0. Please remove this parameter from your configuration file.

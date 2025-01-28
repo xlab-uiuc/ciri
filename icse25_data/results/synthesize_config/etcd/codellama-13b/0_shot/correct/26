@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'auto-compaction-mode', 'max-snapshots'], 'reason': ['auto-compaction-retention is not a valid parameter for etcd version 3.5.0', 'auto-compaction-mode is not a valid parameter for etcd version 3.5.0', 'max-snapshots is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'enable-v2', 'proxy-read-timeout', 'auto-tls', 'logger', 'auto-compaction-mode', 'discovery-fallback', 'max-snapshots'], 'reason': ['auto-compaction-retention is not a valid property for etcd version 3.5.0', 'enable-v2 is not a valid property for etcd version 3.5.0', 'proxy-read-timeout is not a valid property for etcd version 3.5.0', 'auto-tls is not a valid property for etcd version 3.5.0', 'logger is not a valid property for etcd version 3.5.0', 'auto-compaction-mode is not a valid property for etcd version 3.5.0', 'discovery-fallback is not a valid property for etcd version 3.5.0', 'max-snapshots is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'auto-tls', 'auto-compaction-mode', 'max-snapshots'], 'reason': ['auto-compaction-retention is not a valid property for etcd version 3.5.0', 'auto-tls is not a valid property for etcd version 3.5.0', 'auto-compaction-mode is not a valid property for etcd version 3.5.0', 'max-snapshots is not a valid property for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'auto-tls', 'auto-compaction-mode', 'max-snapshots'], 'reason': ['auto-compaction-retention must be a positive integer', 'auto-tls must be a boolean', "auto-compaction-mode must be either 'revision' or 'periodic'", 'max-snapshots must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'enable-v2', 'proxy-read-timeout', 'auto-tls', 'logger', 'auto-compaction-mode', 'discovery-fallback', 'max-snapshots'], 'reason': ['auto-compaction-retention is not a valid parameter for etcd 3.5.0', 'enable-v2 is not a valid parameter for etcd 3.5.0', 'proxy-read-timeout is not a valid parameter for etcd 3.5.0', 'auto-tls is not a valid parameter for etcd 3.5.0', 'logger is not a valid parameter for etcd 3.5.0', 'auto-compaction-mode is not a valid parameter for etcd 3.5.0', 'discovery-fallback is not a valid parameter for etcd 3.5.0', 'max-snapshots is not a valid parameter for etcd 3.5.0']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'auto-compaction-mode'], 'reason': ['auto-compaction-retention is not a valid property for etcd version 3.5.0', 'auto-compaction-mode is not a valid property for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'auto-tls', 'auto-compaction-mode'], 'reason': ['auto-compaction-retention is not a valid property for etcd version 3.5.0', 'auto-tls is not a valid property for etcd version 3.5.0', 'auto-compaction-mode is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'auto-tls', 'auto-compaction-mode'], 'reason': ['auto-compaction-retention is not a valid property', 'auto-tls is not a valid property', 'auto-compaction-mode is not a valid property']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'auto-tls'], 'reason': ['auto-compaction-retention is not a valid parameter for etcd version 3.5.0', 'auto-tls is not a valid parameter for etcd version 3.5.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: auto-compaction-retention	auto-tls	auto-compaction-mode
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention is not a valid property
+[Ciri] Reason for auto-tls: auto-tls is not a valid property for etcd version 3.5.0
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode is not a valid property for etcd version 3.5.0

@@ -1,0 +1,15 @@
+Wrong shot number:
+[13, 9, 5]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-address', 'dfs.namenode.http-address'], 'reason': ["The property 'dfs.namenode.rpc-address' has the value '0.0.0.0:50070' but the default RPC port for the NameNode is 8020, not 50070.", "The property 'dfs.namenode.http-address' has the value '0.0.0.0:50070' but this is the default port for the NameNode web UI, not the RPC address. The NameNode web UI typically runs on port 9870."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.rpc-address	dfs.namenode.http-address
+[Ciri] Reason for dfs.namenode.rpc-address: The property 'dfs.namenode.rpc-address' has the value '0.0.0.0:50070' but the default RPC port for the NameNode is 8020, not 50070.
+[Ciri] Reason for dfs.namenode.http-address: The property 'dfs.namenode.http-address' has the value '0.0.0.0:50070' but this is the default port for the NameNode web UI, not the RPC address. The NameNode web UI typically runs on port 9870.

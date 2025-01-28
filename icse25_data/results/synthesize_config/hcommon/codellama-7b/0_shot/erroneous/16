@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['fs.azure.user.agent.prefix', 'hadoop.workaround.non.threadsafe.getpwuid'], 'reason': ['fs.azure.user.agent.prefix is not a valid property', 'hadoop.workaround.non.threadsafe.getpwuid is not a valid property']}
+
+{'hasError': True, 'errParameter': ['fs.azure.user.agent.prefix'], 'reason': ['The property fs.azure.user.agent.prefix is not a valid property for hcommon version 3.3.0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.azure.user.agent.prefix', 'fs.s3a.change.detection.mode', 'hadoop.shell.missing.defaultFs.warning'], 'reason': ["fs.azure.user.agent.prefix: The value 'unknown' is not a valid value for fs.azure.user.agent.prefix. Valid values are 'unknown', 'hadoop', 'hdi'", "fs.s3a.change.detection.mode: The value 'server' is not a valid value for fs.s3a.change.detection.mode. Valid values are 'server', 'client', 'warn', 'none'", "hadoop.shell.missing.defaultFs.warning: The value 'false' is not a valid value for hadoop.shell.missing.defaultFs.warning. Valid values are 'true', 'false'"]}
+
+{'hasError': True, 'errParameter': ['fs.azure.user.agent.prefix'], 'reason': ['fs.azure.user.agent.prefix is not a valid property.']}
+
+{'hasError': True, 'errParameter': ['fs.azure.user.agent.prefix'], 'reason': ['The property fs.azure.user.agent.prefix is not defined in the documentation for version 3.3.0 of hcommon.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.azure.user.agent.prefix
+[Ciri] Reason for fs.azure.user.agent.prefix: fs.azure.user.agent.prefix is not a valid property.

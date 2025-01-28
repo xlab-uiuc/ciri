@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.service.shutdown.timeout</name>
+  <value>30s</value>
+    <description>
+      Timeout to wait for each shutdown operation to complete.
+      If a hook takes longer than this time to complete, it will be interrupted,
+      so the service will shutdown. This allows the service shutdown
+      to recover from a blocked operation.
+      Some shutdown hooks may need more time than this, for example when
+      a large amount of data needs to be uploaded to an object store.
+      In this situation: increase the timeout.
+
+      The minimum duration of the timeout is 1 second, "1s".
+    </description>
+</property>
+
+<property>
+  <name>hadoop.rpc.protection</name>
+  <value>authentication</value>
+  <description>A comma-separated list of protection values for secured sasl
+      connections. Possible values are authentication, integrity and privacy.
+      authentication means authentication only and no integrity or privacy;
+      integrity implies authentication and integrity are enabled; and privacy
+      implies all of authentication, integrity and privacy are enabled.
+      hadoop.security.saslproperties.resolver.class can be used to override
+      the hadoop.rpc.protection for a connection at the server side.
+  </description>
+</property>
+
+<property>
+  <name>fs.ftp.transfer.mode</name>
+  <value>BLOCK_TRANSFER_MODE</value>
+  <description>
+    Set FTP's transfer mode based on configuration. Valid values are
+    STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE and COMPRESSED_TRANSFER_MODE.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.path.style.access</name>
+  <value>true</value>
+  <description>Enable S3 path style access ie disabling the default virtual hosting behaviour.
+    Useful for S3A-compliant storage providers as it removes the need to set up DNS for virtual hosting.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.attempts.maximum</name>
+  <value>10</value>
+  <description>How many times we should retry commands on transient errors.</description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.csv.quote.character</name>
+  <value>"</value>
+  <description>In S3 Select queries over CSV files: quote character.
+    \t is remapped to the TAB character, \r to CR \n to newline. \\ to \
+    and \" to "
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.kms.client.failover.sleep.max.millis</name>
+  <value>1000</value>
+  <description>
+    Expert only. The time to wait, in milliseconds, between failover
+    attempts increases exponentially as a function of the number of
+    attempts made so far, with a random factor of +/- 50%. This option
+    specifies the maximum value to wait between failovers.
+    Specifically, the time between two failover attempts will not
+    exceed +/- 50% of hadoop.security.client.failover.sleep.max.millis
+    milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>ipc.client.bind.wildcard.addr</name>
+  <value>false</value>
+    <description>When set to true Clients will bind socket to wildcard
+      address. (i.e 0.0.0.0)
+    </description>
+</property>
+
+</configuration>

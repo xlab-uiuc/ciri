@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port.auto', 'hbase.hstore.compaction.min.size', 'hbase.hstore.compaction.max.size', 'hbase.regionserver.majorcompaction.pagecache.drop', 'hbase.hstore.compaction.kv.max', 'hbase.auth.key.update.interval', 'hbase.display.keys', 'hbase.mob.cache.evict.period'], 'reason': ['The property hbase.regionserver.info.port.auto is not a valid property for hbase version 2.2.7', 'The value 134217728 for the property hbase.hstore.compaction.min.size is not a valid value for hbase version 2.2.7', 'The value 4611686018427387903 for the property hbase.hstore.compaction.max.size is not a valid value for hbase version 2.2.7', 'The property hbase.regionserver.majorcompaction.pagecache.drop is not a valid property for hbase version 2.2.7', 'The value 10 for the property hbase.hstore.compaction.kv.max is not a valid value for hbase version 2.2.7', 'The value 86400000 for the property hbase.auth.key.update.interval is not a valid value for hbase version 2.2.7', 'The value false for the property hbase.display.keys is not a valid value for hbase version 2.2.7', 'The value 3600 for the property hbase.mob.cache.evict.period is not a valid value for hbase version 2.2.7']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.regionserver.info.port.auto	hbase.hstore.compaction.min.size	hbase.hstore.compaction.max.size	hbase.regionserver.majorcompaction.pagecache.drop	hbase.hstore.compaction.kv.max	hbase.auth.key.update.interval	hbase.display.keys	hbase.mob.cache.evict.period
+[Ciri] Reason for hbase.regionserver.info.port.auto: The property hbase.regionserver.info.port.auto is not a valid property for hbase version 2.2.7
+[Ciri] Reason for hbase.hstore.compaction.min.size: The value 134217728 for the property hbase.hstore.compaction.min.size is not a valid value for hbase version 2.2.7
+[Ciri] Reason for hbase.hstore.compaction.max.size: The value 4611686018427387903 for the property hbase.hstore.compaction.max.size is not a valid value for hbase version 2.2.7
+[Ciri] Reason for hbase.regionserver.majorcompaction.pagecache.drop: The property hbase.regionserver.majorcompaction.pagecache.drop is not a valid property for hbase version 2.2.7
+[Ciri] Reason for hbase.hstore.compaction.kv.max: The value 10 for the property hbase.hstore.compaction.kv.max is not a valid value for hbase version 2.2.7
+[Ciri] Reason for hbase.auth.key.update.interval: The value 86400000 for the property hbase.auth.key.update.interval is not a valid value for hbase version 2.2.7
+[Ciri] Reason for hbase.display.keys: The value false for the property hbase.display.keys is not a valid value for hbase version 2.2.7
+[Ciri] Reason for hbase.mob.cache.evict.period: The value 3600 for the property hbase.mob.cache.evict.period is not a valid value for hbase version 2.2.7

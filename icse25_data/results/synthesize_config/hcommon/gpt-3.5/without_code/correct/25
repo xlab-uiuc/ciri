@@ -1,0 +1,19 @@
+Wrong shot number:
+[16, 7, 2]
+
+Correct shot number:
+[15]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['io.mapfile.bloom.error.rate', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds'], 'reason': ["The property 'io.mapfile.bloom.error.rate' has an invalid value. It should be a decimal number representing the rate of false positives.", "The property 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' has an invalid format. It should be a list of time durations for each priority queue."]}
+
+{'hasError': True, 'errParameter': ['io.mapfile.bloom.error.rate', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds'], 'reason': ["The property 'io.mapfile.bloom.error.rate' has a value of '0.0025' which is not a valid error rate. It should be a value between 0 and 1.", "The property 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' has incorrect time duration values. The values should be in milliseconds or seconds format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.mapfile.bloom.error.rate	ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds
+[Ciri] Reason for io.mapfile.bloom.error.rate: The property 'io.mapfile.bloom.error.rate' has a value of '0.0025' which is not a valid error rate. It should be a value between 0 and 1.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds: The property 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' has incorrect time duration values. The values should be in milliseconds or seconds format.

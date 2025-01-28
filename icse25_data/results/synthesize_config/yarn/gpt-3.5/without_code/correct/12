@@ -1,0 +1,20 @@
+Wrong shot number:
+[8, 5, 1]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.local-cache.max-files-per-directory', 'yarn.nodemanager.resource.memory-mb', 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds'], 'reason': ["The property 'yarn.nodemanager.local-cache.max-files-per-directory' has a value of '4096' which exceeds the limit of 36 sub-directories.", "The property 'yarn.nodemanager.resource.memory-mb' has a value of '-1' which should be a positive integer.", "The property 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds' has a value of '-2' which should be a positive integer or -1 for default behavior."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.local-cache.max-files-per-directory', 'yarn.nodemanager.resource.memory-mb', 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds'], 'reason': ["The property 'yarn.nodemanager.local-cache.max-files-per-directory' has a value of '4096' which exceeds the recommended maximum value of 36.", "The property 'yarn.nodemanager.resource.memory-mb' has a value of '-1' which is not within the accepted range of memory values.", "The property 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds' has a value of '-2' which is not within the accepted range of interval values."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.local-cache.max-files-per-directory', 'yarn.nodemanager.resource.memory-mb', 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds'], 'reason': ["The property 'yarn.nodemanager.local-cache.max-files-per-directory' has a value that is not within the accepted range.", "The property 'yarn.nodemanager.resource.memory-mb' should have a positive integer value.", "The property 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds' has a value that is not within the accepted range."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.nodemanager.local-cache.max-files-per-directory	yarn.nodemanager.resource.memory-mb	yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds
+[Ciri] Reason for yarn.nodemanager.local-cache.max-files-per-directory: The property 'yarn.nodemanager.local-cache.max-files-per-directory' has a value of '4096' which exceeds the limit of 36 sub-directories.
+[Ciri] Reason for yarn.nodemanager.resource.memory-mb: The property 'yarn.nodemanager.resource.memory-mb' has a value of '-1' which should be a positive integer.
+[Ciri] Reason for yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds: The property 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds' has a value that is not within the accepted range.

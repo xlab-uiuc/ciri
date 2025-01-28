@@ -1,0 +1,17 @@
+Correct shot number:
+[10, 16, 14, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size', 'ipc.client.connection.maxidletime', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable', 'ipc.[port_number].weighted-cost.lockfree', 'rpc.metrics.quantile.enable'], 'reason': ['Invalid IP address format. It should be in the form of x.x.x.x.', 'Invalid block size format. Use a numeric value followed by a suffix from the set {K, M, G, T, P}.', 'Value should be in milliseconds.', 'Value should be a comma-separated list of integers.', 'Value should be a boolean (true/false).', 'Value should be an integer.', 'Value should be a boolean (true/false).']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.block.size	ipc.client.connection.maxidletime	ipc.[port_number].decay-scheduler.thresholds	ipc.[port_number].decay-scheduler.backoff.responsetime.enable	ipc.[port_number].weighted-cost.lockfree	rpc.metrics.quantile.enable
+[Ciri] Reason for fs.ftp.host: Invalid IP address format. It should be in the form of x.x.x.x.
+[Ciri] Reason for fs.s3a.block.size: Invalid block size format. Use a numeric value followed by a suffix from the set {K, M, G, T, P}.
+[Ciri] Reason for ipc.client.connection.maxidletime: Value should be in milliseconds.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: Value should be a comma-separated list of integers.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.enable: Value should be a boolean (true/false).
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: Value should be an integer.
+[Ciri] Reason for rpc.metrics.quantile.enable: Value should be a boolean (true/false).

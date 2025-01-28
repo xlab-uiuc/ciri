@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy', 'advertise-client-urls'], 'reason': ["The 'proxy' parameter is not a valid configuration option for etcd 3.5.0. It should be removed.", "The 'advertise-client-urls' parameter should be a valid URL with the correct protocol, IP/hostname, and port. The provided value 'http://localhost:2379' may not be correct depending on your setup."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: proxy	advertise-client-urls
+[Ciri] Reason for proxy: The 'proxy' parameter is not a valid configuration option for etcd 3.5.0. It should be removed.
+[Ciri] Reason for advertise-client-urls: The 'advertise-client-urls' parameter should be a valid URL with the correct protocol, IP/hostname, and port. The provided value 'http://localhost:2379' may not be correct depending on your setup.

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-directory-items', 'dfs.namenode.safemode.min.datanodes', 'dfs.datanode.transfer.socket.recv.buffer.size'], 'reason': ['The value for dfs.namenode.fs-limits.max-directory-items should be between 1 and 6400000.', 'The value for dfs.namenode.safemode.min.datanodes should be greater than 0 and less than or equal to the number of datanodes in the cluster.', 'The value for dfs.datanode.transfer.socket.recv.buffer.size should not be set to 0.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-directory-items', 'dfs.datanode.transfer.socket.recv.buffer.size'], 'reason': ['The value for dfs.namenode.fs-limits.max-directory-items should be between 1 and 6400000.', 'The value for dfs.datanode.transfer.socket.recv.buffer.size should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-directory-items', 'dfs.namenode.safemode.min.datanodes', 'dfs.datanode.transfer.socket.recv.buffer.size'], 'reason': ['The value for dfs.namenode.fs-limits.max-directory-items should be between 1 and 6400000.', 'The value for dfs.namenode.safemode.min.datanodes should be greater than 0 and less than or equal to the number of datanodes in the cluster.', 'The value for dfs.datanode.transfer.socket.recv.buffer.size should not be set to 0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.fs-limits.max-directory-items	dfs.namenode.safemode.min.datanodes	dfs.datanode.transfer.socket.recv.buffer.size
+[Ciri] Reason for dfs.namenode.fs-limits.max-directory-items: The value for dfs.namenode.fs-limits.max-directory-items should be between 1 and 6400000.
+[Ciri] Reason for dfs.namenode.safemode.min.datanodes: The value for dfs.namenode.safemode.min.datanodes should be greater than 0 and less than or equal to the number of datanodes in the cluster.
+[Ciri] Reason for dfs.datanode.transfer.socket.recv.buffer.size: The value for dfs.datanode.transfer.socket.recv.buffer.size should not be set to 0.

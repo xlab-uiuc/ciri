@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'snapshot-count', 'listen-peer-urls', 'enable-pprof', 'logger', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ['proxy-dial-timeout is not a valid value', 'snapshot-count is not a valid value', 'listen-peer-urls is not a valid value', 'enable-pprof is not a valid value', 'logger is not a valid value', 'proxy-refresh-interval is not a valid value', 'quota-backend-bytes is not a valid value', 'auto-compaction-mode is not a valid value']}
+
+{'hasError': True, 'errParameter': ['snapshot-count', 'proxy-refresh-interval', 'auto-compaction-mode'], 'reason': ['snapshot-count is not a valid parameter for etcd version 3.5.0', 'proxy-refresh-interval is not a valid parameter for etcd version 3.5.0', 'auto-compaction-mode is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['snapshot-count', 'proxy-refresh-interval', 'auto-compaction-mode', 'quota-backend-bytes'], 'reason': ['snapshot-count must be greater than 0', 'proxy-refresh-interval must be greater than 0', 'auto-compaction-mode must be either periodic, revision or disabled', 'quota-backend-bytes must be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'snapshot-count', 'listen-peer-urls', 'enable-pprof', 'logger', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ['proxy-dial-timeout: invalid time duration', 'snapshot-count: invalid value', 'listen-peer-urls: invalid url', 'enable-pprof: invalid value', 'logger: invalid value', 'proxy-refresh-interval: invalid time duration', 'quota-backend-bytes: invalid value', 'auto-compaction-mode: invalid value']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'snapshot-count', 'listen-peer-urls', 'enable-pprof', 'logger', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ['proxy-dial-timeout: proxy-dial-timeout is not a valid parameter', 'snapshot-count: snapshot-count is not a valid parameter', 'listen-peer-urls: listen-peer-urls is not a valid parameter', 'enable-pprof: enable-pprof is not a valid parameter', 'logger: logger is not a valid parameter', 'proxy-refresh-interval: proxy-refresh-interval is not a valid parameter', 'quota-backend-bytes: quota-backend-bytes is not a valid parameter', 'auto-compaction-mode: auto-compaction-mode is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['snapshot-count', 'proxy-dial-timeout', 'proxy-refresh-interval', 'auto-compaction-mode'], 'reason': ['snapshot-count is not a valid property', 'proxy-dial-timeout is not a valid property', 'proxy-refresh-interval is not a valid property', 'auto-compaction-mode is not a valid property']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: proxy-dial-timeout	snapshot-count	listen-peer-urls	enable-pprof	logger	proxy-refresh-interval	quota-backend-bytes	auto-compaction-mode
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout: invalid time duration
+[Ciri] Reason for snapshot-count: snapshot-count: invalid value
+[Ciri] Reason for listen-peer-urls: listen-peer-urls: listen-peer-urls is not a valid parameter
+[Ciri] Reason for enable-pprof: enable-pprof: enable-pprof is not a valid parameter
+[Ciri] Reason for logger: logger: logger is not a valid parameter
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval: proxy-refresh-interval is not a valid parameter
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes: invalid value
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode: auto-compaction-mode is not a valid parameter

@@ -1,0 +1,17 @@
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'MIDDLEWARE', 'SECURE_SSL_HOST', 'CSRF_FAILURE_VIEW', 'EMAIL_HOST', 'DATETIME_FORMAT', 'MANAGERS'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should be an integer value representing the number of seconds.', 'MIDDLEWARE should not be an empty list. It should at least contain the default middleware classes.', 'SECURE_SSL_HOST should not be set to None. It should be a string value.', "CSRF_FAILURE_VIEW should not be set to 'django.views.csrf.csrf_failure'. The correct path for Django 4.0 is different.", "EMAIL_HOST should not be set to 'localhost'. It should be set to the actual email host server.", "DATETIME_FORMAT should be in a valid format like 'N j, Y, P'.", 'MANAGERS should be set to a list of email addresses of the managers.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	MIDDLEWARE	SECURE_SSL_HOST	CSRF_FAILURE_VIEW	EMAIL_HOST	DATETIME_FORMAT	MANAGERS
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: CACHE_MIDDLEWARE_SECONDS should be an integer value representing the number of seconds.
+[Ciri] Reason for MIDDLEWARE: MIDDLEWARE should not be an empty list. It should at least contain the default middleware classes.
+[Ciri] Reason for SECURE_SSL_HOST: SECURE_SSL_HOST should not be set to None. It should be a string value.
+[Ciri] Reason for CSRF_FAILURE_VIEW: CSRF_FAILURE_VIEW should not be set to 'django.views.csrf.csrf_failure'. The correct path for Django 4.0 is different.
+[Ciri] Reason for EMAIL_HOST: EMAIL_HOST should not be set to 'localhost'. It should be set to the actual email host server.
+[Ciri] Reason for DATETIME_FORMAT: DATETIME_FORMAT should be in a valid format like 'N j, Y, P'.
+[Ciri] Reason for MANAGERS: MANAGERS should be set to a list of email addresses of the managers.

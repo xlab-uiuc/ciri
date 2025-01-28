@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.posix.acl.inheritance.enabled</name>
+  <value>false</value>
+    <description>
+      Set to true to enable POSIX style ACL inheritance. When it is enabled
+      and the create request comes from a compatible client, the NameNode
+      will apply default ACLs from the parent directory to the create mode
+      and ignore the client umask. If no default ACL found, it will apply the
+      client umask.
+    </description>
+</property>
+
+<property>
+  <name>dfs.image.parallel.load</name>
+  <value>true</value>
+  <description>
+        If true, write sub-section entries to the fsimage index so it can
+        be loaded in parallel. Also controls whether parallel loading
+        will be used for an image previously created with sub-sections.
+        If the image contains sub-sections and this is set to false,
+        parallel loading will not be used.
+        Parallel loading is not compatible with image compression,
+        so if dfs.image.compress is set to true this setting will be
+        ignored and no parallel loading will occur.
+        Enabling this feature may impact rolling upgrades and downgrades if
+        the previous version does not support this feature. If the feature was
+        enabled and a downgrade is required, first set this parameter to
+        false and then save the namespace to create a fsimage with no
+        sub-sections and then perform the downgrade.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.max.transfer.threads</name>
+  <value>4096</value>
+  <description>
+        Specifies the maximum number of threads to use for transferring data
+        in and out of the DN.
+  </description>
+</property>
+
+<property>
+  <name>dfs.journalnode.https-bind-host</name>
+  <value>1.1.1.1.1.1</value>
+  <description>
+    The actual address the HTTP server will bind to. If this optional address
+    is set, it overrides only the hostname portion of
+    dfs.journalnode.https-address. This is useful for making the JournalNode
+    HTTP server listen on all interfaces by setting it to 0.0.0.0.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.path.based.cache.refresh.interval.ms</name>
+  <value>15000</value>
+  <description>
+    The amount of milliseconds between subsequent path cache rescans.  Path
+    cache rescans are when we calculate which blocks should be cached, and on
+    what datanodes.
+
+    By default, this parameter is set to 30 seconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.deadnode.detection.probe.deadnode.interval.ms</name>
+  <value>60000</value>
+    <description>
+      Interval time in milliseconds for probing dead node behavior.
+    </description>
+</property>
+
+<property>
+  <name>datanode.https.port</name>
+  <value>3000</value>
+  <description>
+    HTTPS port for DataNode.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.stale.datanode.minimum.interval</name>
+  <value>3</value>
+  <description>
+    Minimum number of missed heartbeats intervals for a datanode to
+    be marked stale by the Namenode.  The actual interval is calculated as
+    (dfs.namenode.stale.datanode.minimum.interval * dfs.heartbeat.interval)
+    in seconds.  If this value is greater than the property
+    dfs.namenode.stale.datanode.interval, then the calculated value above
+    is used.
+  </description>
+</property>
+
+</configuration>

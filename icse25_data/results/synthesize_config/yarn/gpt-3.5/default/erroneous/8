@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 7, 4]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.delegation-token-renewer.thread-retry-interval', 'yarn.timeline-service.leveldb-state-store.path'], 'reason': ["The property 'yarn.resourcemanager.delegation-token-renewer.thread-retry-interval' has the value '60s' which is not a valid integer value.", "The property 'yarn.timeline-service.leveldb-state-store.path' has an invalid path format."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.zk-delegation-token-node.split-index', 'yarn.resourcemanager.delegation-token-renewer.thread-retry-interval', 'yarn.nodemanager.resource.cpu-vcores', 'yarn.timeline-service.leveldb-state-store.path'], 'reason': ["The property 'yarn.resourcemanager.zk-delegation-token-node.split-index' has the value '-1' which is outside the accepted range of 0 to 4.", "The property 'yarn.resourcemanager.delegation-token-renewer.thread-retry-interval' has an invalid value format. It should be in milliseconds.", "The property 'yarn.nodemanager.resource.cpu-vcores' has the value '-1' which is outside the accepted range of non-negative values.", "The property 'yarn.timeline-service.leveldb-state-store.path' has an invalid path format."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.delegation-token-renewer.thread-retry-interval', 'yarn.timeline-service.leveldb-state-store.path'], 'reason': ["The property 'yarn.resourcemanager.delegation-token-renewer.thread-retry-interval' has the value '60s' which is not a valid integer value.", "The property 'yarn.timeline-service.leveldb-state-store.path' has an invalid path format 'dev/urandom///'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.delegation-token-renewer.thread-retry-interval	yarn.timeline-service.leveldb-state-store.path
+[Ciri] Reason for yarn.resourcemanager.delegation-token-renewer.thread-retry-interval: The property 'yarn.resourcemanager.delegation-token-renewer.thread-retry-interval' has the value '60s' which is not a valid integer value.
+[Ciri] Reason for yarn.timeline-service.leveldb-state-store.path: The property 'yarn.timeline-service.leveldb-state-store.path' has an invalid path format 'dev/urandom///'.

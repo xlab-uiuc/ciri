@@ -1,0 +1,15 @@
+Wrong shot number:
+[14, 15, 16]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.replica.cache.expiry.time', 'dfs.hosts'], 'reason': ["The value for 'dfs.datanode.replica.cache.expiry.time' should be specified in milliseconds without using unit suffixes.", "The 'dfs.hosts' configuration does not support specifying hosts with 'ro' (read-only) or 'rw' (read-write) modes. It should only contain a list of hostnames or IP addresses."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.replica.cache.expiry.time	dfs.hosts
+[Ciri] Reason for dfs.datanode.replica.cache.expiry.time: The value for 'dfs.datanode.replica.cache.expiry.time' should be specified in milliseconds without using unit suffixes.
+[Ciri] Reason for dfs.hosts: The 'dfs.hosts' configuration does not support specifying hosts with 'ro' (read-only) or 'rw' (read-write) modes. It should only contain a list of hostnames or IP addresses.

@@ -1,0 +1,44 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'aof-rewrite-incremental-fsync', 'hash-max-listpack-value'], 'reason': ['cluster-enabled is not a valid parameter', 'aof-rewrite-incremental-fsync is not a valid parameter', 'hash-max-listpack-value is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['port', 'bind-source-addr', 'replica-announce-ip', 'lazyfree-lazy-user-del', 'aof-rewrite-incremental-fsync', 'proc-title-template', 'unixsocketperm', 'cluster-enabled', 'hash-max-listpack-value'], 'reason': ['port must be a number between 1 and 65535', 'bind-source-addr must be a valid IP address', 'replica-announce-ip must be a valid IP address', 'lazyfree-lazy-user-del must be a boolean', 'aof-rewrite-incremental-fsync must be a boolean', 'proc-title-template must be a string', 'unixsocketperm must be a number between 0 and 777', 'cluster-enabled must be a boolean', 'hash-max-listpack-value must be a number between 0 and 512']}
+
+{'hasError': True, 'errParameter': ['daemonize', 'pidfile', 'port', 'cluster-enabled', 'hash-max-listpack-value'], 'reason': ['daemonize is not a valid parameter', 'pidfile is not a valid parameter', 'port is not a valid parameter', 'cluster-enabled is not a valid parameter', 'hash-max-listpack-value is not a valid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr'], 'reason': ["The parameter 'bind-source-addr' is not a valid parameter for redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['aof-rewrite-incremental-fsync'], 'reason': ['The value of aof-rewrite-incremental-fsync must be either yes or no.']}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'lazyfree-lazy-user-del', 'aof-rewrite-incremental-fsync', 'proc-title-template', 'unixsocketperm', 'cluster-enabled', 'hash-max-listpack-value'], 'reason': ["The parameter 'bind-source-addr' is not a valid IP address.", "The parameter 'lazyfree-lazy-user-del' is not a valid boolean value.", "The parameter 'aof-rewrite-incremental-fsync' is not a valid boolean value.", "The parameter 'proc-title-template' is not a valid string.", "The parameter 'unixsocketperm' is not a valid integer.", "The parameter 'cluster-enabled' is not a valid boolean value.", "The parameter 'hash-max-listpack-value' is not a valid integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendonly', 'appendfsync', 'save', 'appendonly-rewrite-incremental-fsync', 'aof-rewrite-incremental-fsync', 'lazyfree-lazy-user-del'], 'reason': ["The parameter 'appendonly' is not supported in redis version 7.0.0.", "The parameter 'appendfsync' is not supported in redis version 7.0.0.", "The parameter 'save' is not supported in redis version 7.0.0.", "The parameter 'appendonly-rewrite-incremental-fsync' is not supported in redis version 7.0.0.", "The parameter 'aof-rewrite-incremental-fsync' is not supported in redis version 7.0.0.", "The parameter 'lazyfree-lazy-user-del' is not supported in redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['port', 'cluster-enabled'], 'reason': ['port must be a number', 'cluster-enabled must be a boolean']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'hash-max-listpack-value', 'lazyfree-lazy-user-del', 'proc-title-template', 'unixsocketperm'], 'reason': ['cluster-enabled is not a valid configuration parameter', 'hash-max-listpack-value is not a valid configuration parameter', 'lazyfree-lazy-user-del is not a valid configuration parameter', 'proc-title-template is not a valid configuration parameter', 'unixsocketperm is not a valid configuration parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'cluster-enabled'], 'reason': ['port must be a number', 'cluster-enabled must be a boolean']}
+
+{'hasError': True, 'errParameter': ['port', 'cluster-enabled', 'hash-max-listpack-value'], 'reason': ['port must be an integer', 'cluster-enabled must be a boolean', 'hash-max-listpack-value must be an integer']}
+
+{'hasError': True, 'errParameter': ['port', 'bind-source-addr', 'lazyfree-lazy-user-del', 'proc-title-template', 'unixsocketperm', 'cluster-enabled', 'hash-max-listpack-value'], 'reason': ['port must be an integer', 'bind-source-addr must be an IP address', 'lazyfree-lazy-user-del must be a boolean', 'proc-title-template must be a string', 'unixsocketperm must be an integer', 'cluster-enabled must be a boolean', 'hash-max-listpack-value must be an integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['aof-rewrite-incremental-fsync'], 'reason': ['aof-rewrite-incremental-fsync is not a valid configuration parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'lazyfree-lazy-user-del', 'aof-rewrite-incremental-fsync', 'proc-title-template', 'unixsocketperm', 'cluster-enabled', 'hash-max-listpack-value'], 'reason': ["The parameter 'bind-source-addr' is not a valid parameter.", "The parameter 'lazyfree-lazy-user-del' is not a valid parameter.", "The parameter 'aof-rewrite-incremental-fsync' is not a valid parameter.", "The parameter 'proc-title-template' is not a valid parameter.", "The parameter 'unixsocketperm' is not a valid parameter.", "The parameter 'cluster-enabled' is not a valid parameter.", "The parameter 'hash-max-listpack-value' is not a valid parameter."]}
+
+{'hasError': True, 'errParameter': ['aof-rewrite-incremental-fsync'], 'reason': ['The value of aof-rewrite-incremental-fsync is not a boolean.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: aof-rewrite-incremental-fsync
+[Ciri] Reason for aof-rewrite-incremental-fsync: The value of aof-rewrite-incremental-fsync is not a boolean.

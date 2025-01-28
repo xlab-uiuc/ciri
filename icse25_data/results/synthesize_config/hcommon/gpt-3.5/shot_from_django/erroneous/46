@@ -1,0 +1,16 @@
+Wrong shot number:
+[3, 1, 2]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.ftp.timeout', 'ipc.[port_number].identity-provider.impl'], 'reason': ["The property 'fs.ftp.host.port' has the value '65536' which is out of the valid port range.", "The property 'fs.ftp.timeout' has a negative value which is not allowed.", "The property 'ipc.[port_number].identity-provider.impl' is not a valid parameter name format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.host.port	fs.ftp.timeout	ipc.[port_number].identity-provider.impl
+[Ciri] Reason for fs.ftp.host.port: The property 'fs.ftp.host.port' has the value '65536' which is out of the valid port range.
+[Ciri] Reason for fs.ftp.timeout: The property 'fs.ftp.timeout' has a negative value which is not allowed.
+[Ciri] Reason for ipc.[port_number].identity-provider.impl: The property 'ipc.[port_number].identity-provider.impl' is not a valid parameter name format.

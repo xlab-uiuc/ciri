@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout'], 'reason': ['proxy-read-timeout is not a valid configuration parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-tls', 'proxy-read-timeout', 'logger'], 'reason': ["initial-cluster-state must be set to 'new' if this is the first node in the cluster", 'auto-tls is not a valid option for etcd version 3.5.0', 'proxy-read-timeout must be set to a value greater than 0', 'logger is not a valid option for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-dial-timeout'], 'reason': ['proxy-read-timeout is not a valid property for etcd version 3.5.0', 'proxy-dial-timeout is not a valid property for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-read-timeout'], 'reason': ['proxy-dial-timeout is not a valid parameter', 'proxy-read-timeout is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-token', 'proxy-dial-timeout', 'log-level', 'auto-tls', 'proxy-read-timeout', 'logger', 'listen-client-urls'], 'reason': ['initial-cluster-token is not a valid property', 'proxy-dial-timeout is not a valid property', 'log-level is not a valid property', 'auto-tls is not a valid property', 'proxy-read-timeout is not a valid property', 'logger is not a valid property', 'listen-client-urls is not a valid property']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-read-timeout'], 'reason': ['proxy-dial-timeout is not a valid property for etcd version 3.5.0', 'proxy-read-timeout is not a valid property for etcd version 3.5.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: proxy-dial-timeout	proxy-read-timeout
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout is not a valid property for etcd version 3.5.0
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout is not a valid parameter

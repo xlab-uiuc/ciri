@@ -1,0 +1,27 @@
+Wrong shot number:
+[9, 6, 4]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.max.perregion.tasks', 'hbase.regionserver.thread.compaction.throttle'], 'reason': ["The property 'hbase.client.max.perregion.tasks' has the value '0' which should be greater than 0.", "The property 'hbase.regionserver.thread.compaction.throttle' has the value '2684354560' which is too large for the expected threshold."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['zookeeper.session.timeout', 'hbase.client.max.perregion.tasks', 'hbase.regionserver.thread.compaction.throttle'], 'reason': ["The property 'zookeeper.session.timeout' has the value '-1' which is out of the valid range for session timeout.", "The property 'hbase.client.max.perregion.tasks' has the value '0' which should be greater than 0.", "The property 'hbase.regionserver.thread.compaction.throttle' has the value '2684354560' which is too large for the threshold."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.max.perregion.tasks', 'hbase.regionserver.thread.compaction.throttle'], 'reason': ["The property 'hbase.client.max.perregion.tasks' has the value '0' which should be greater than 0.", "The property 'hbase.regionserver.thread.compaction.throttle' has the value '2684354560' which is too large for the threshold. It should be a reasonable size based on the use case."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.session.timeout', 'hbase.client.max.perregion.tasks', 'hbase.regionserver.thread.compaction.throttle'], 'reason': ["The property 'zookeeper.session.timeout' has the value '-1' which is out of the valid range for session timeout.", "The property 'hbase.client.max.perregion.tasks' has the value '0' which should be greater than 0.", "The property 'hbase.regionserver.thread.compaction.throttle' has the value '2684354560' which is not within the accepted range."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.max.perregion.tasks', 'hbase.regionserver.thread.compaction.throttle'], 'reason': ["The property 'hbase.client.max.perregion.tasks' has the value '0' which should be greater than 0.", "The property 'hbase.regionserver.thread.compaction.throttle' has the value '2684354560' which is too large for the expected threshold."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.client.max.perregion.tasks	hbase.regionserver.thread.compaction.throttle
+[Ciri] Reason for hbase.client.max.perregion.tasks: The property 'hbase.client.max.perregion.tasks' has the value '0' which should be greater than 0.
+[Ciri] Reason for hbase.regionserver.thread.compaction.throttle: The property 'hbase.regionserver.thread.compaction.throttle' has the value '2684354560' which is too large for the expected threshold.

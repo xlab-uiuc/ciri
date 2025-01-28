@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.wal.dir.perms', 'hbase.status.publisher.class'], 'reason': ["The value 'dev/urandom///' for hbase.local.dir is invalid. It should be a valid directory path.", "The value '1400' for hbase.wal.dir.perms is invalid. It should be a valid UNIX style permissions in octal format like '0700'.", "The value 'org.apache.hadoop.hbase.master.ClusterStatusPublisher$MulticastPublisher' for hbase.status.publisher.class is deprecated since HBase 1.0.0 and should not be used in HBase 2.2.7. Use 'org.apache.hadoop.hbase.master.ClusterStatusPublisher$MulticastPublisher' instead."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.local.dir	hbase.wal.dir.perms	hbase.status.publisher.class
+[Ciri] Reason for hbase.local.dir: The value 'dev/urandom///' for hbase.local.dir is invalid. It should be a valid directory path.
+[Ciri] Reason for hbase.wal.dir.perms: The value '1400' for hbase.wal.dir.perms is invalid. It should be a valid UNIX style permissions in octal format like '0700'.
+[Ciri] Reason for hbase.status.publisher.class: The value 'org.apache.hadoop.hbase.master.ClusterStatusPublisher$MulticastPublisher' for hbase.status.publisher.class is deprecated since HBase 1.0.0 and should not be used in HBase 2.2.7. Use 'org.apache.hadoop.hbase.master.ClusterStatusPublisher$MulticastPublisher' instead.

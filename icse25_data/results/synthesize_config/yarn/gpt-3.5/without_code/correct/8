@@ -1,0 +1,19 @@
+Wrong shot number:
+[9, 5, 3]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-mb', 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The value of the property 'yarn.scheduler.minimum-allocation-mb' should be smaller or equal to the value of the property 'yarn.scheduler.maximum-allocation-mb'.", "The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' should not contain commas."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-mb', 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The value of the property 'yarn.scheduler.minimum-allocation-mb' should be smaller or equal to the value of the property 'yarn.scheduler.maximum-allocation-mb'.", "The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' contains the phrase 'YARN proccesses' with a typo. It should be 'YARN processes'."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-mb', 'yarn.node-labels.configuration-type'], 'reason': ["The value of the property 'yarn.scheduler.minimum-allocation-mb' should be smaller or equal to the value of the property 'yarn.scheduler.maximum-allocation-mb'.", "The property 'yarn.node-labels.configuration-type' has an invalid value. Accepted values are 'centralized', 'delegated-centralized', or 'distributed'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.scheduler.minimum-allocation-mb	yarn.nodemanager.linux-container-executor.cgroups.hierarchy
+[Ciri] Reason for yarn.scheduler.minimum-allocation-mb: The value of the property 'yarn.scheduler.minimum-allocation-mb' should be smaller or equal to the value of the property 'yarn.scheduler.maximum-allocation-mb'.
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.hierarchy: The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' contains the phrase 'YARN proccesses' with a typo. It should be 'YARN processes'.

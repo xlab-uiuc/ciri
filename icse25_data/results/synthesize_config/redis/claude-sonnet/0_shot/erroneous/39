@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port', 'replica-announce-port', 'hash-max-listpack-value'], 'reason': ['The tls-port parameter should be a positive integer value representing the TCP port number to use for TLS secure connections. A value of -100 is invalid.', 'The replica-announce-port parameter is not a valid configuration option in Redis 7.0.0. This option is used for Redis Cluster and should not be present in a standalone Redis configuration.', 'The hash-max-listpack-value parameter is not a valid configuration option in Redis 7.0.0. This option is related to the Redis data encoding and should not be present in a Redis configuration file.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tls-port	replica-announce-port	hash-max-listpack-value
+[Ciri] Reason for tls-port: The tls-port parameter should be a positive integer value representing the TCP port number to use for TLS secure connections. A value of -100 is invalid.
+[Ciri] Reason for replica-announce-port: The replica-announce-port parameter is not a valid configuration option in Redis 7.0.0. This option is used for Redis Cluster and should not be present in a standalone Redis configuration.
+[Ciri] Reason for hash-max-listpack-value: The hash-max-listpack-value parameter is not a valid configuration option in Redis 7.0.0. This option is related to the Redis data encoding and should not be present in a Redis configuration file.

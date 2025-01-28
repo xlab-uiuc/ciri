@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>zookeeper.znode.parent</name>
+  <value>/hbase</value>
+    <description>Root ZNode for HBase in ZooKeeper. All of HBase's ZooKeeper
+      files that are configured with a relative path will go under this node.
+      By default, all of HBase's ZooKeeper file paths are configured with a
+      relative path, so they will all go under this directory unless changed.
+    </description>
+</property>
+
+<property>
+  <name>hbase.client.keyvalue.maxsize</name>
+  <value>5242880</value>
+    <description>Specifies the combined maximum allowed size of a KeyValue
+    instance. This is to set an upper boundary for a single entry saved in a
+    storage file. Since they cannot be split it helps avoiding that a region
+    cannot be split any further because the data is too large. It seems wise
+    to set this to a fraction of the maximum region size. Setting it to zero
+    or less disables the check.</description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.timeout.period</name>
+  <value>30000</value>
+    <description>Client scanner lease period in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.rest.support.proxyuser</name>
+  <value>true</value>
+    <description>Enables running the REST server to support proxy-user mode.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.maxWorkerThreads</name>
+  <value>500</value>
+    <description>The maximum size of the thread pool. When the pending request queue
+    overflows, new threads are created until their number reaches this number.
+    After that, the server starts dropping connections.</description>
+</property>
+
+<property>
+  <name>hbase.rootdir.perms</name>
+  <value>1400</value>
+    <description>FS Permissions for the root data subdirectory in a secure (kerberos) setup.
+    When master starts, it creates the rootdir with this permissions or sets the permissions
+    if it does not match.</description>
+</property>
+
+<property>
+  <name>hbase.security.authentication</name>
+  <value>simple</value>
+    <description>
+      Controls whether or not secure authentication is enabled for HBase.
+      Possible values are 'simple' (no authentication), and 'kerberos'.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.compactor.class</name>
+  <value>org.apache.hadoop.hbase.mob.compactions.PartitionedMobCompactor</value>
+    <description>
+      Implementation of mob compactor, the default one is PartitionedMobCompactor.
+    </description>
+</property>
+
+</configuration>

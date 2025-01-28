@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.ftp.data.connection.mode</name>
+  <value>ACTIVE_LOCAL_DATA_CONNECTION_MODE</value>
+  <description>Set the FTPClient's data connection mode based on configuration.
+    Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE,
+    PASSIVE_LOCAL_DATA_CONNECTION_MODE and PASSIVE_REMOTE_DATA_CONNECTION_MODE.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.executor.capacity</name>
+  <value>8</value>
+  <description>The maximum number of submitted tasks which is a single
+    operation (e.g. rename(), delete()) may submit simultaneously for
+    execution -excluding the IO-heavy block uploads, whose capacity
+    is set in "fs.s3a.fast.upload.active.blocks"
+
+    All tasks are submitted to the shared thread pool whose size is
+    set in "fs.s3a.threads.max"; the value of capacity should be less than that
+    of the thread pool itself, as the goal is to stop a single operation
+    from overloading that thread pool.
+  </description>
+</property>
+
+<property>
+  <name>fs.permissions.umask-mode</name>
+  <value>080</value>
+  <description>
+    The umask used when creating files and directories.
+    Can be in octal or in symbolic. Examples are:
+    "022" (octal for u=rwx,g=r-x,o=r-x in symbolic),
+    or "u=rwx,g=rwx,o=" (symbolic for 007 in octal).
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.java.secure.random.algorithm</name>
+  <value>SHA1PRNG</value>
+  <description>
+    The java secure random algorithm.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.zk.retry.interval.ms</name>
+  <value>2000</value>
+    <description>
+    </description>
+</property>
+
+<property>
+  <name>hadoop.registry.secure</name>
+  <value>true</value>
+    <description>
+      Key to set if the registry is secure. Turning it on
+      changes the permissions policy from "open access"
+      to restrictions on kerberos with the option of
+      a user adding one or more auth key pairs down their
+      own tree.
+    </description>
+</property>
+
+<property>
+  <name>hadoop.registry.system.acls</name>
+  <value>sasl:yarn@</value>
+    <description>
+      A comma separated list of Zookeeper ACL identifiers with
+      system access to the registry in a secure cluster.
+
+      These are given full access to all entries.
+
+      If there is an "@" at the end of a SASL entry it
+      instructs the registry client to append the default kerberos domain.
+    </description>
+</property>
+
+<property>
+  <name>fs.getspaceused.jitterMillis</name>
+  <value>30000</value>
+    <description>
+      fs space usage statistics refresh jitter in msec.
+    </description>
+</property>
+
+</configuration>

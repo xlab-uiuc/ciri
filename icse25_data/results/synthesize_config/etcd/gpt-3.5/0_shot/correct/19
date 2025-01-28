@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-write-timeout', 'heartbeat-interval', 'proxy-failure-wait'], 'reason': ['proxy-refresh-interval should be in milliseconds, e.g., 30000ms', 'proxy-write-timeout should be in milliseconds, e.g., 5000ms', 'heartbeat-interval should be in milliseconds, e.g., 200ms', 'proxy-failure-wait should be in milliseconds, e.g., 2500ms']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-write-timeout', 'heartbeat-interval', 'proxy-failure-wait'], 'reason': ["The values for 'proxy-refresh-interval', 'proxy-write-timeout', 'heartbeat-interval', and 'proxy-failure-wait' are not in the correct format or range for etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-write-timeout', 'heartbeat-interval', 'proxy-failure-wait'], 'reason': ["The values for 'proxy-refresh-interval', 'proxy-write-timeout', 'heartbeat-interval', and 'proxy-failure-wait' are not in the correct format or type for etcd version 3.5.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: proxy-refresh-interval	proxy-write-timeout	heartbeat-interval	proxy-failure-wait
+[Ciri] Reason for proxy-refresh-interval: The values for 'proxy-refresh-interval', 'proxy-write-timeout', 'heartbeat-interval', and 'proxy-failure-wait' are not in the correct format or range for etcd version 3.5.0.
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout should be in milliseconds, e.g., 5000ms
+[Ciri] Reason for heartbeat-interval: heartbeat-interval should be in milliseconds, e.g., 200ms
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait should be in milliseconds, e.g., 2500ms

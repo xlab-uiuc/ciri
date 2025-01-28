@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.max.full.block.report.leases', 'dfs.namenode.kerberos.principal.pattern', 'dfs.namenode.replication.work.multiplier.per.iteration', 'dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold', 'dfs.webhdfs.rest-csrf.methods-to-ignore', 'dfs.balancer.moverThreads', 'dfs.client.read.shortcircuit.buffer.size', 'dfs.namenode.provided.enabled'], 'reason': ['The value of dfs.namenode.max.full.block.report.leases is too small. It should be at least 1000.', 'The value of dfs.namenode.kerberos.principal.pattern is not a valid regular expression.', 'The value of dfs.namenode.replication.work.multiplier.per.iteration is too small. It should be at least 1.', 'The value of dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold is too small. It should be at least 1073741824.', 'The value of dfs.webhdfs.rest-csrf.methods-to-ignore is not a valid HTTP method.', 'The value of dfs.balancer.moverThreads is too small. It should be at least 100.', 'The value of dfs.client.read.shortcircuit.buffer.size is too small. It should be at least 1048576.', 'The value of dfs.namenode.provided.enabled is not a valid boolean value.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.namenode.max.full.block.report.leases	dfs.namenode.kerberos.principal.pattern	dfs.namenode.replication.work.multiplier.per.iteration	dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold	dfs.webhdfs.rest-csrf.methods-to-ignore	dfs.balancer.moverThreads	dfs.client.read.shortcircuit.buffer.size	dfs.namenode.provided.enabled
+[Ciri] Reason for dfs.namenode.max.full.block.report.leases: The value of dfs.namenode.max.full.block.report.leases is too small. It should be at least 1000.
+[Ciri] Reason for dfs.namenode.kerberos.principal.pattern: The value of dfs.namenode.kerberos.principal.pattern is not a valid regular expression.
+[Ciri] Reason for dfs.namenode.replication.work.multiplier.per.iteration: The value of dfs.namenode.replication.work.multiplier.per.iteration is too small. It should be at least 1.
+[Ciri] Reason for dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold: The value of dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold is too small. It should be at least 1073741824.
+[Ciri] Reason for dfs.webhdfs.rest-csrf.methods-to-ignore: The value of dfs.webhdfs.rest-csrf.methods-to-ignore is not a valid HTTP method.
+[Ciri] Reason for dfs.balancer.moverThreads: The value of dfs.balancer.moverThreads is too small. It should be at least 100.
+[Ciri] Reason for dfs.client.read.shortcircuit.buffer.size: The value of dfs.client.read.shortcircuit.buffer.size is too small. It should be at least 1048576.
+[Ciri] Reason for dfs.namenode.provided.enabled: The value of dfs.namenode.provided.enabled is not a valid boolean value.

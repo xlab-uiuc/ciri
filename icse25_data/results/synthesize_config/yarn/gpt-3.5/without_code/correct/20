@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 6, 5]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.sharedcache.cleaner.resource-sleep-ms'], 'reason': ["The property 'yarn.sharedcache.cleaner.resource-sleep-ms' has the value '-1' which should be a non-negative integer."]}
+
+{'hasError': True, 'errParameter': ['yarn.sharedcache.cleaner.resource-sleep-ms'], 'reason': ["The property 'yarn.sharedcache.cleaner.resource-sleep-ms' has the value '-1' which is not within the accepted value {>=0}."]}
+
+{'hasError': True, 'errParameter': ['yarn.sharedcache.cleaner.resource-sleep-ms'], 'reason': ["The property 'yarn.sharedcache.cleaner.resource-sleep-ms' has the value '-1' which should be a positive integer representing the time to sleep between processing each shared cache resource."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.sharedcache.cleaner.resource-sleep-ms
+[Ciri] Reason for yarn.sharedcache.cleaner.resource-sleep-ms: The property 'yarn.sharedcache.cleaner.resource-sleep-ms' has the value '-1' which is not within the accepted value {>=0}.

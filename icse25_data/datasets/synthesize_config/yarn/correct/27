@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.dispatcher.drain-events.timeout</name>
+  <value>600000</value>
+    <description>Timeout in milliseconds when YARN dispatcher tries to drain the
+      events. Typically, this happens when service is stopping. e.g. RM drains
+      the ATS events dispatcher when stopping.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.state-store.max-completed-applications</name>
+  <value>${yarn.resourcemanager.max-completed-applications}</value>
+    <description>The maximum number of completed applications RM state
+    store keeps, less than or equals to ${yarn.resourcemanager.max-completed-applications}.
+    By default, it equals to ${yarn.resourcemanager.max-completed-applications}.
+    This ensures that the applications kept in the state store are consistent with
+    the applications remembered in RM memory.
+    Any values larger than ${yarn.resourcemanager.max-completed-applications} will
+    be reset to ${yarn.resourcemanager.max-completed-applications}.
+    Note that this value impacts the RM recovery performance. Typically,
+    a smaller value indicates better performance on RM recovery.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.fs.state-store.retry-interval-ms</name>
+  <value>500</value>
+    <description>Retry interval in milliseconds in FileSystemRMStateStore.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.pmem-check-enabled</name>
+  <value>false</value>
+    <description>Whether physical memory limits will be enforced for
+    containers.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.cgroups.hierarchy</name>
+  <value>/valid/file1</value>
+    <description>The cgroups hierarchy under which to place YARN proccesses (cannot contain commas).
+    If yarn.nodemanager.linux-container-executor.cgroups.mount is false
+    (that is, if cgroups have been pre-configured) and the YARN user has write
+    access to the parent directory, then the directory will be created.
+    If the directory already exists, the administrator has to give YARN
+    write permissions to it recursively.
+    This property only applies when the LCE resources handler is set to
+    CgroupsLCEResourcesHandler.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.aux-services.manifest.reload-ms</name>
+  <value>0</value>
+    <description>Length of time in ms to wait between reloading aux services
+      manifest. If 0 or less, manifest will not be reloaded.</description>
+</property>
+
+<property>
+  <name>yarn.router.interceptor.user.threadpool-size</name>
+  <value>1</value>
+    <description>
+      The thread pool executor size of per user in Router ClientRM Service FederationClientInterceptor.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.containers-launcher.class</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher</value>
+    <description>
+      Containers launcher implementation for determining how containers
+      are launched within NodeManagers.
+    </description>
+</property>
+
+</configuration>

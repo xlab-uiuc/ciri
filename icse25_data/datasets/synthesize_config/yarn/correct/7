@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.placement-constraints.handler</name>
+  <value>disabled</value>
+    <description>
+      Specify which handler will be used to process PlacementConstraints.
+      Acceptable values are: `placement-processor`, `scheduler` and `disabled`.
+      For a detailed explanation of these values, please refer to documentation.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.fail-fast</name>
+  <value>${yarn.fail-fast}</value>
+    <description>Should RM fail fast if it encounters any errors. By defalt, it
+      points to ${yarn.fail-fast}. Errors include:
+      1) exceptions when state-store write/read operations fails.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-localizer.log.level</name>
+  <value>INFO</value>
+    <description>
+      The log level for container localizer while it is an independent process.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.sleep-delay-before-sigkill.ms</name>
+  <value>125</value>
+    <description>No. of ms to wait between sending a SIGTERM and SIGKILL to a container</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.fd-clean-interval-secs</name>
+  <value>120</value>
+    <description>
+      Scan interval for ATS v1.5 writer. This value controls how frequent
+      the writer will scan the HDFS FSStream for the entity/domain.
+      If the FSStream is stale for a long time, this FSStream will be close.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.hbase-schema.prefix</name>
+  <value>prod.</value>
+    <description>
+    The value of this parameter sets the prefix for all tables that are part of
+    timeline service in the hbase storage schema. It can be set to "dev."
+    or "staging." if it is to be used for development or staging instances.
+    This way the data in production tables stays in a separate set of tables
+    prefixed by "prod.".
+    </description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.client-server.thread-count</name>
+  <value>50</value>
+    <description>The number of threads used to handle shared cache manager
+    requests from clients (50 by default)</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.opportunistic-containers-use-pause-for-preemption</name>
+  <value>true</value>
+    <description>
+    Use container pause as the preemption policy over kill in the container
+    queue at a NodeManager.
+    </description>
+</property>
+
+</configuration>

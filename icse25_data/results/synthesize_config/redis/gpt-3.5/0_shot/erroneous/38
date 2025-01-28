@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'tcp-backlog', 'tls-session-caching'], 'reason': ['Invalid value for cluster-announce-bus-port. It should be a valid port number.', 'Invalid value for tcp-backlog. It should be a positive integer.', "Invalid value for tls-session-caching. It should be either 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'tcp-backlog', 'tls-session-caching'], 'reason': ['Invalid value for cluster-announce-bus-port. It should be a valid port number.', 'Invalid value for tcp-backlog. It should be a positive integer.', "Invalid value for tls-session-caching. Valid values are 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'tcp-backlog', 'tls-session-caching'], 'reason': ['Invalid value for cluster-announce-bus-port. It should be a valid port number.', 'Invalid value for tcp-backlog. It should be a positive integer.', "Invalid value for tls-session-caching. It should be 'yes' or 'no'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-bus-port	tcp-backlog	tls-session-caching
+[Ciri] Reason for cluster-announce-bus-port: Invalid value for cluster-announce-bus-port. It should be a valid port number.
+[Ciri] Reason for tcp-backlog: Invalid value for tcp-backlog. It should be a positive integer.
+[Ciri] Reason for tls-session-caching: Invalid value for tls-session-caching. It should be either 'yes' or 'no'.

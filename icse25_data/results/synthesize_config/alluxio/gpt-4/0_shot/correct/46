@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.management.backoff.strategy', 'alluxio.user.client.cache.local.store.file.buckets', 'alluxio.user.network.rpc.keepalive.time', 'alluxio.master.lock.pool.initsize', 'alluxio.worker.ufs.block.open.timeout', 'alluxio.master.ufs.active.sync.poll.batch.size', 'alluxio.worker.web.bind.host', 'alluxio.master.keytab.file'], 'reason': ["The property 'alluxio.worker.management.backoff.strategy' does not exist or is not applicable in Alluxio version 2.5.0.", "The property 'alluxio.user.client.cache.local.store.file.buckets' does not exist or is not applicable in Alluxio version 2.5.0.", "The format for 'alluxio.user.network.rpc.keepalive.time' should be in milliseconds without specifying 'sec'.", "The property 'alluxio.master.lock.pool.initsize' does not exist or is not applicable in Alluxio version 2.5.0.", "The format for 'alluxio.worker.ufs.block.open.timeout' should be in milliseconds without specifying 'min'.", "The property 'alluxio.master.ufs.active.sync.poll.batch.size' does not exist or is not applicable in Alluxio version 2.5.0.", "The property 'alluxio.worker.web.bind.host' is correctly named but ensuring it is intentionally set to bind to all interfaces.", "The property 'alluxio.master.keytab.file' is correctly named but ensure the file path provided is correct and accessible."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.worker.management.backoff.strategy	alluxio.user.client.cache.local.store.file.buckets	alluxio.user.network.rpc.keepalive.time	alluxio.master.lock.pool.initsize	alluxio.worker.ufs.block.open.timeout	alluxio.master.ufs.active.sync.poll.batch.size	alluxio.worker.web.bind.host	alluxio.master.keytab.file
+[Ciri] Reason for alluxio.worker.management.backoff.strategy: The property 'alluxio.worker.management.backoff.strategy' does not exist or is not applicable in Alluxio version 2.5.0.
+[Ciri] Reason for alluxio.user.client.cache.local.store.file.buckets: The property 'alluxio.user.client.cache.local.store.file.buckets' does not exist or is not applicable in Alluxio version 2.5.0.
+[Ciri] Reason for alluxio.user.network.rpc.keepalive.time: The format for 'alluxio.user.network.rpc.keepalive.time' should be in milliseconds without specifying 'sec'.
+[Ciri] Reason for alluxio.master.lock.pool.initsize: The property 'alluxio.master.lock.pool.initsize' does not exist or is not applicable in Alluxio version 2.5.0.
+[Ciri] Reason for alluxio.worker.ufs.block.open.timeout: The format for 'alluxio.worker.ufs.block.open.timeout' should be in milliseconds without specifying 'min'.
+[Ciri] Reason for alluxio.master.ufs.active.sync.poll.batch.size: The property 'alluxio.master.ufs.active.sync.poll.batch.size' does not exist or is not applicable in Alluxio version 2.5.0.
+[Ciri] Reason for alluxio.worker.web.bind.host: The property 'alluxio.worker.web.bind.host' is correctly named but ensuring it is intentionally set to bind to all interfaces.
+[Ciri] Reason for alluxio.master.keytab.file: The property 'alluxio.master.keytab.file' is correctly named but ensure the file path provided is correct and accessible.

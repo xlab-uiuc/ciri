@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].cost-provider.impl', 'ipc.[port_number].weighted-cost.lockshared'], 'reason': ["The parameter names contain placeholders '[port_number]' which should be replaced with actual port numbers.", "The properties 'ipc.[port_number].cost-provider.impl' and 'ipc.[port_number].weighted-cost.lockshared' are specific to the Hadoop IPC configuration and should be properly configured with valid port numbers."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].cost-provider.impl', 'ipc.[port_number].weighted-cost.lockshared'], 'reason': ['The parameter names contain placeholders ([port_number]) which should be replaced with actual port numbers.', 'The properties are specific to a certain port number and need to be configured accordingly.']}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].cost-provider.impl', 'ipc.[port_number].weighted-cost.lockshared'], 'reason': ['The placeholders [port_number] should be replaced with actual port numbers.', 'The properties ipc.[port_number].cost-provider.impl and ipc.[port_number].weighted-cost.lockshared are specific to a certain configuration and need to be customized with actual values.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].cost-provider.impl	ipc.[port_number].weighted-cost.lockshared
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: The parameter names contain placeholders ([port_number]) which should be replaced with actual port numbers.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: The properties 'ipc.[port_number].cost-provider.impl' and 'ipc.[port_number].weighted-cost.lockshared' are specific to the Hadoop IPC configuration and should be properly configured with valid port numbers.

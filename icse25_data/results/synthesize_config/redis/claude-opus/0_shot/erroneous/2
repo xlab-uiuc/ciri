@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'unixsocketperm', 'list-max-listpack-size'], 'reason': ['tcp-keepalive must be a positive integer value, but is set to -5.5', 'unixsocketperm must be between 0 and 777 (octal), but is set to 350 (decimal)', 'list-max-listpack-size must be between 0 and 512, but is set to -2']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tcp-keepalive	unixsocketperm	list-max-listpack-size
+[Ciri] Reason for tcp-keepalive: tcp-keepalive must be a positive integer value, but is set to -5.5
+[Ciri] Reason for unixsocketperm: unixsocketperm must be between 0 and 777 (octal), but is set to 350 (decimal)
+[Ciri] Reason for list-max-listpack-size: list-max-listpack-size must be between 0 and 512, but is set to -2

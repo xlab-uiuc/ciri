@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 5]
+
+Correct shot number:
+[13, 12, 14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'fs.s3a.socket.send.buffer'], 'reason': ["The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' property instead.", "The property 'fs.s3a.socket.send.buffer' has a value of '-1' which may not be a valid buffer size."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	fs.s3a.socket.send.buffer
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' property instead.
+[Ciri] Reason for fs.s3a.socket.send.buffer: The property 'fs.s3a.socket.send.buffer' has a value of '-1' which may not be a valid buffer size.

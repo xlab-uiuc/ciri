@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 6, 14]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.volumes.replica-add.threadpool.size', 'dfs.provided.aliasmap.inmemory.rpc.bind-host'], 'reason': ["The property 'dfs.datanode.volumes.replica-add.threadpool.size' has a non-integer value.", "The property 'dfs.provided.aliasmap.inmemory.rpc.bind-host' has an invalid IP address format."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.volumes.replica-add.threadpool.size', 'dfs.provided.aliasmap.inmemory.rpc.bind-host'], 'reason': ["The property 'dfs.datanode.volumes.replica-add.threadpool.size' has a non-integer value.", "The property 'dfs.provided.aliasmap.inmemory.rpc.bind-host' has an invalid IP address format."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.volumes.replica-add.threadpool.size', 'dfs.provided.aliasmap.inmemory.rpc.bind-host'], 'reason': ["The property 'dfs.datanode.volumes.replica-add.threadpool.size' has an invalid value. It should be an integer value.", "The property 'dfs.provided.aliasmap.inmemory.rpc.bind-host' has an invalid IP address format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.volumes.replica-add.threadpool.size	dfs.provided.aliasmap.inmemory.rpc.bind-host
+[Ciri] Reason for dfs.datanode.volumes.replica-add.threadpool.size: The property 'dfs.datanode.volumes.replica-add.threadpool.size' has a non-integer value.
+[Ciri] Reason for dfs.provided.aliasmap.inmemory.rpc.bind-host: The property 'dfs.provided.aliasmap.inmemory.rpc.bind-host' has an invalid IP address format.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.worker.network.block.reader.threads.max', 'alluxio.master.tieredstore.global.mediumtype'], 'reason': ['alluxio.proxy.web.bind.host should be a valid IP address or hostname, not x.0.0.0.0.0', 'alluxio.worker.network.block.reader.threads.max has a maximum allowed value of 512 in Alluxio 2.5.0', 'alluxio.master.tieredstore.global.mediumtype is not a valid configuration parameter in Alluxio 2.5.0. The correct parameter is alluxio.worker.tieredstore.level0.dirs.mediumtype']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.proxy.web.bind.host	alluxio.worker.network.block.reader.threads.max	alluxio.master.tieredstore.global.mediumtype
+[Ciri] Reason for alluxio.proxy.web.bind.host: alluxio.proxy.web.bind.host should be a valid IP address or hostname, not x.0.0.0.0.0
+[Ciri] Reason for alluxio.worker.network.block.reader.threads.max: alluxio.worker.network.block.reader.threads.max has a maximum allowed value of 512 in Alluxio 2.5.0
+[Ciri] Reason for alluxio.master.tieredstore.global.mediumtype: alluxio.master.tieredstore.global.mediumtype is not a valid configuration parameter in Alluxio 2.5.0. The correct parameter is alluxio.worker.tieredstore.level0.dirs.mediumtype

@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_key_file', 'log_parameter_max_length', 'plan_cache_mode', 'bgwriter_lru_maxpages', 'scram_iterations', 'wal_level', 'listen_addresses'], 'reason': ['ssl_key_file is not a valid parameter for PostgreSQL 13.0', 'log_parameter_max_length is not a valid parameter for PostgreSQL 13.0', 'plan_cache_mode is not a valid parameter for PostgreSQL 13.0', 'bgwriter_lru_maxpages is not a valid parameter for PostgreSQL 13.0', 'scram_iterations is not a valid parameter for PostgreSQL 13.0', 'wal_level is not a valid parameter for PostgreSQL 13.0', 'listen_addresses is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['ssl_key_file', 'log_parameter_max_length', 'plan_cache_mode', 'bgwriter_lru_maxpages', 'scram_iterations', 'wal_level', 'listen_addresses'], 'reason': ['ssl_key_file is not a valid configuration parameter.', 'log_parameter_max_length is not a valid configuration parameter.', 'plan_cache_mode is not a valid configuration parameter.', 'bgwriter_lru_maxpages is not a valid configuration parameter.', 'scram_iterations is not a valid configuration parameter.', 'wal_level is not a valid configuration parameter.', 'listen_addresses is not a valid configuration parameter.']}
+
+{'hasError': True, 'errParameter': ['ssl', 'ssl_key_file', 'log_parameter_max_length', 'plan_cache_mode', 'bgwriter_lru_maxpages', 'scram_iterations', 'wal_level', 'listen_addresses'], 'reason': ['ssl should be on or off', 'ssl_key_file should be a valid file path', 'log_parameter_max_length should be a valid integer', 'plan_cache_mode should be a valid mode', 'bgwriter_lru_maxpages should be a valid integer', 'scram_iterations should be a valid integer', 'wal_level should be a valid mode', 'listen_addresses should be a valid hostname or IP address']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: ssl_key_file	log_parameter_max_length	plan_cache_mode	bgwriter_lru_maxpages	scram_iterations	wal_level	listen_addresses
+[Ciri] Reason for ssl_key_file: ssl_key_file is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for log_parameter_max_length: log_parameter_max_length is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for plan_cache_mode: plan_cache_mode is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for bgwriter_lru_maxpages: bgwriter_lru_maxpages is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for scram_iterations: scram_iterations is not a valid configuration parameter.
+[Ciri] Reason for wal_level: wal_level is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for listen_addresses: listen_addresses is not a valid parameter for PostgreSQL 13.0

@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort'], 'reason': ['dataDir should be a directory', 'clientPort should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3', 'server.4', 'server.5', 'server.6', 'server.7', 'server.8', 'server.9', 'server.10'], 'reason': ['The server.x properties are not defined in the zookeeper.properties file. Please define these properties.']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['server.1, server.2, and server.3 are not valid hostnames']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['syncEnabled', 'quorum.auth.serverRequireSasl'], 'reason': ['syncEnabled is not a valid property for zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['Duplicate server entries found. Each server must have a unique server number.', 'Duplicate server entries found. Each server must have a unique server number.', 'Duplicate server entries found. Each server must have a unique server number.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.x properties are not supported in Zookeeper version 3.7.0. Use the server.x=y:z:w:v command instead.']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.x properties are not supported in Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['Server IDs must be unique. Duplicate server ID found: 1']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: server.1	server.2	server.3
+[Ciri] Reason for server.1: The server.x properties are not supported in Zookeeper version 3.7.0. Use the server.x=y:z:w:v command instead.
+[Ciri] Reason for server.2: 
+[Ciri] Reason for server.3: 

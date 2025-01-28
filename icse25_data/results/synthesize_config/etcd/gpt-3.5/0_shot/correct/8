@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'force-new-cluster', 'proxy-write-timeout', 'heartbeat-interval', 'max-wals'], 'reason': ['proxy-read-timeout value should be greater than 0', 'force-new-cluster should not be used in etcd version 3.5.0', 'proxy-write-timeout value should be less than 2500', 'heartbeat-interval value should be greater than 50', 'max-wals value should be greater than 10']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'force-new-cluster', 'proxy-write-timeout', 'heartbeat-interval', 'max-wals'], 'reason': ['proxy-read-timeout should not be set to 0, it should have a positive value', 'force-new-cluster should not be set to true unless you intend to force the creation of a new cluster', 'proxy-write-timeout should have a value greater than 0', 'heartbeat-interval should have a value greater than 0', 'max-wals should have a value greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'log-outputs', 'force-new-cluster', 'proxy-write-timeout', 'heartbeat-interval', 'max-wals'], 'reason': ['proxy-read-timeout should not be set to 0, it should have a positive value', 'log-outputs should be an array of strings, not a single string', 'force-new-cluster should be set to false if not explicitly needed', 'proxy-write-timeout should have a positive value, 2500 is fine', 'heartbeat-interval should have a value greater than 0', 'max-wals should have a value greater than 0']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: proxy-read-timeout	force-new-cluster	proxy-write-timeout	heartbeat-interval	max-wals
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout should not be set to 0, it should have a positive value
+[Ciri] Reason for force-new-cluster: force-new-cluster should not be set to true unless you intend to force the creation of a new cluster
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout value should be less than 2500
+[Ciri] Reason for heartbeat-interval: heartbeat-interval should have a value greater than 0
+[Ciri] Reason for max-wals: max-wals value should be greater than 10

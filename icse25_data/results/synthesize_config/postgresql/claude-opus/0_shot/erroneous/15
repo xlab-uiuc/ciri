@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['jit_optimize_above_cost', 'wal_writer_delay', 'autovacuum_max_workers'], 'reason': ["The parameter 'jit_optimize_above_cost' is not available in PostgreSQL 13.0. It was introduced in version 14.0.", "The value for 'wal_writer_delay' should be specified as a number of milliseconds without the unit (e.g., '400' instead of '400ms').", "The value for 'autovacuum_max_workers' is too low. It should be at least 3 for optimal performance in most cases."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: jit_optimize_above_cost	wal_writer_delay	autovacuum_max_workers
+[Ciri] Reason for jit_optimize_above_cost: The parameter 'jit_optimize_above_cost' is not available in PostgreSQL 13.0. It was introduced in version 14.0.
+[Ciri] Reason for wal_writer_delay: The value for 'wal_writer_delay' should be specified as a number of milliseconds without the unit (e.g., '400' instead of '400ms').
+[Ciri] Reason for autovacuum_max_workers: The value for 'autovacuum_max_workers' is too low. It should be at least 3 for optimal performance in most cases.

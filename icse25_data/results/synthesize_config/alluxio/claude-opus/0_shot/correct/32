@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.worker.timeout', 'alluxio.user.file.create.ttl', 'alluxio.underfs.gcs.default.mode'], 'reason': ["The time unit 'sec' in alluxio.job.master.worker.timeout is invalid. It should be 's' for seconds.", 'The value for alluxio.user.file.create.ttl must be greater than or equal to -1. 0 is an invalid value.', 'The value for alluxio.underfs.gcs.default.mode should be an octal number with 3 digits. 350 has only 3 digits in decimal.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.worker.timeout	alluxio.user.file.create.ttl	alluxio.underfs.gcs.default.mode
+[Ciri] Reason for alluxio.job.master.worker.timeout: The time unit 'sec' in alluxio.job.master.worker.timeout is invalid. It should be 's' for seconds.
+[Ciri] Reason for alluxio.user.file.create.ttl: The value for alluxio.user.file.create.ttl must be greater than or equal to -1. 0 is an invalid value.
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: The value for alluxio.underfs.gcs.default.mode should be an octal number with 3 digits. 350 has only 3 digits in decimal.

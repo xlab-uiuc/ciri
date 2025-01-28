@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_defer_cleanup_age', 'hot_standby', 'stats_fetch_consistency'], 'reason': ['vacuum_defer_cleanup_age is deprecated and ignored in PostgreSQL 13.0 and later versions.', 'hot_standby is deprecated and renamed to hot_standby_feedback in PostgreSQL 13.0 and later versions.', 'stats_fetch_consistency is a new parameter introduced in PostgreSQL 14.0, and is not available in PostgreSQL 13.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: vacuum_defer_cleanup_age	hot_standby	stats_fetch_consistency
+[Ciri] Reason for vacuum_defer_cleanup_age: vacuum_defer_cleanup_age is deprecated and ignored in PostgreSQL 13.0 and later versions.
+[Ciri] Reason for hot_standby: hot_standby is deprecated and renamed to hot_standby_feedback in PostgreSQL 13.0 and later versions.
+[Ciri] Reason for stats_fetch_consistency: stats_fetch_consistency is a new parameter introduced in PostgreSQL 14.0, and is not available in PostgreSQL 13.0.

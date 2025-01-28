@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-config-file', 'repl-diskless-load'], 'reason': ["In Redis 7.0, the 'cluster-config-file' configuration parameter has been renamed to 'cluster-config-file-name'.", "The 'repl-diskless-load' configuration parameter has been removed in Redis 7.0. The 'repl-diskless-load' and 'repl-diskless-sync' parameters have been replaced by the 'repl-diskless-sync-delay' parameter."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-config-file	repl-diskless-load
+[Ciri] Reason for cluster-config-file: In Redis 7.0, the 'cluster-config-file' configuration parameter has been renamed to 'cluster-config-file-name'.
+[Ciri] Reason for repl-diskless-load: The 'repl-diskless-load' configuration parameter has been removed in Redis 7.0. The 'repl-diskless-load' and 'repl-diskless-sync' parameters have been replaced by the 'repl-diskless-sync-delay' parameter.

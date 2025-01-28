@@ -1,0 +1,15 @@
+Wrong shot number:
+[1, 6]
+
+Correct shot number:
+[6, 8, 12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'fs.permissions.umask-mode'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, and PASSIVE_REMOTE_DATA_CONNECTION_MODE.", "The property 'fs.permissions.umask-mode' has an invalid value '080'. Umask values should be in octal or symbolic format, such as '022' or 'u=rwx,g=,o='."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.data.connection.mode	fs.permissions.umask-mode
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, and PASSIVE_REMOTE_DATA_CONNECTION_MODE.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has an invalid value '080'. Umask values should be in octal or symbolic format, such as '022' or 'u=rwx,g=,o='.

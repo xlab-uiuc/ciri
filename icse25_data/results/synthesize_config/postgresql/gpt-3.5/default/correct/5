@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 8, 1]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['data_sync_retry', 'checkpoint_timeout'], 'reason': ["The property 'data_sync_retry' is not a valid parameter for PostgreSQL version 13.0.", "The value of the property 'checkpoint_timeout' should not contain units like 'min'. It should be specified as an integer representing seconds."]}
+
+{'hasError': True, 'errParameter': ['data_sync_retry', 'checkpoint_timeout'], 'reason': ["The property 'data_sync_retry' is not a valid parameter for PostgreSQL version 13.0.", "The value of the property 'checkpoint_timeout' should not contain units like 'min'. It should be specified as an integer representing seconds."]}
+
+{'hasError': True, 'errParameter': ['data_sync_retry', 'checkpoint_timeout'], 'reason': ["The property 'data_sync_retry' is not a valid parameter for PostgreSQL version 13.0.", "The value of the property 'checkpoint_timeout' should not contain units like 'min'. It should be specified as an integer representing seconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: data_sync_retry	checkpoint_timeout
+[Ciri] Reason for data_sync_retry: The property 'data_sync_retry' is not a valid parameter for PostgreSQL version 13.0.
+[Ciri] Reason for checkpoint_timeout: The value of the property 'checkpoint_timeout' should not contain units like 'min'. It should be specified as an integer representing seconds.

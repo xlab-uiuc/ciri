@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'proxy'], 'reason': ["In etcd v3.5.0, the 'quota-backend-bytes' flag has been deprecated. It is recommended to use '--quota-backend-bytes' flag instead.", "The 'proxy' flag should have a value of either 'on' or 'off'. In etcd v3.5.0, the 'proxy' flag has been deprecated in favor of 'proxy-mode' which accepts values 'off', 'readonly' or 'readwrite'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quota-backend-bytes	proxy
+[Ciri] Reason for quota-backend-bytes: In etcd v3.5.0, the 'quota-backend-bytes' flag has been deprecated. It is recommended to use '--quota-backend-bytes' flag instead.
+[Ciri] Reason for proxy: The 'proxy' flag should have a value of either 'on' or 'off'. In etcd v3.5.0, the 'proxy' flag has been deprecated in favor of 'proxy-mode' which accepts values 'off', 'readonly' or 'readwrite'.

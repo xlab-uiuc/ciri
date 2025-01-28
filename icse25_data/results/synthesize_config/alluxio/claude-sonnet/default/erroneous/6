@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 10, 13]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.finished.job.retention.time', 'alluxio.master.whitelist'], 'reason': ["The property 'alluxio.job.master.finished.job.retention.time' has the value '60nounit' which is not a valid time duration format. The correct format should be a number followed by a valid time unit (e.g., 60sec, 1min, 2hour, etc.).", "The property 'alluxio.master.whitelist' is not a valid Alluxio configuration property in version 2.5.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.finished.job.retention.time	alluxio.master.whitelist
+[Ciri] Reason for alluxio.job.master.finished.job.retention.time: The property 'alluxio.job.master.finished.job.retention.time' has the value '60nounit' which is not a valid time duration format. The correct format should be a number followed by a valid time unit (e.g., 60sec, 1min, 2hour, etc.).
+[Ciri] Reason for alluxio.master.whitelist: The property 'alluxio.master.whitelist' is not a valid Alluxio configuration property in version 2.5.0.

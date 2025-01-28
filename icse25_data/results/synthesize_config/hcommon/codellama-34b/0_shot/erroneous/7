@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.trash.interval', 'fs.s3a.assumed.role.session.duration', 'fs.s3a.assumed.role.credentials.provider', 'fs.AbstractFileSystem.s3a.impl', 'ipc.client.connect.max.retries.on.timeouts', 'hadoop.security.random.device.file.path'], 'reason': ['fs.trash.interval should be a positive integer', 'fs.s3a.assumed.role.session.duration should be a positive integer', 'fs.s3a.assumed.role.credentials.provider should be a valid class', 'fs.AbstractFileSystem.s3a.impl should be a valid class', 'ipc.client.connect.max.retries.on.timeouts should be a positive integer', 'hadoop.security.random.device.file.path should be a valid file path']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.trash.interval	fs.s3a.assumed.role.session.duration	fs.s3a.assumed.role.credentials.provider	fs.AbstractFileSystem.s3a.impl	ipc.client.connect.max.retries.on.timeouts	hadoop.security.random.device.file.path
+[Ciri] Reason for fs.trash.interval: fs.trash.interval should be a positive integer
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: fs.s3a.assumed.role.session.duration should be a positive integer
+[Ciri] Reason for fs.s3a.assumed.role.credentials.provider: fs.s3a.assumed.role.credentials.provider should be a valid class
+[Ciri] Reason for fs.AbstractFileSystem.s3a.impl: fs.AbstractFileSystem.s3a.impl should be a valid class
+[Ciri] Reason for ipc.client.connect.max.retries.on.timeouts: ipc.client.connect.max.retries.on.timeouts should be a positive integer
+[Ciri] Reason for hadoop.security.random.device.file.path: hadoop.security.random.device.file.path should be a valid file path

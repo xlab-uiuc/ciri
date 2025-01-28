@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['trusted-ca-file', 'advertise-client-urls', 'election-timeout'], 'reason': ["The value 'dev/urandom///' for trusted-ca-file is invalid. It should be a valid file path to a certificate authority (CA) bundle file.", "The value 'http://localhost:2379' for advertise-client-urls is invalid. It should be a valid URL with the correct protocol (http or https) and port number.", "The value '1000' for election-timeout is too low. The recommended value for election-timeout is at least 5000 milliseconds."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: trusted-ca-file	advertise-client-urls	election-timeout
+[Ciri] Reason for trusted-ca-file: The value 'dev/urandom///' for trusted-ca-file is invalid. It should be a valid file path to a certificate authority (CA) bundle file.
+[Ciri] Reason for advertise-client-urls: The value 'http://localhost:2379' for advertise-client-urls is invalid. It should be a valid URL with the correct protocol (http or https) and port number.
+[Ciri] Reason for election-timeout: The value '1000' for election-timeout is too low. The recommended value for election-timeout is at least 5000 milliseconds.

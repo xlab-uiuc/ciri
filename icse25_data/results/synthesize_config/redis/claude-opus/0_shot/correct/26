@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appenddirname', 'cluster-announce-bus-port', 'tls-port', 'hash-max-listpack-entries'], 'reason': ["The 'appenddirname' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter for specifying the AOF directory is 'appenddir'.", "The 'cluster-announce-bus-port' parameter is not a valid configuration option in Redis 7.0.0. It was removed in Redis 7.0 as Redis Cluster no longer uses a bus port.", "The 'tls-port' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter for enabling TLS and specifying the TLS port is 'tls-port-cert-file' and 'port'.", "The 'hash-max-listpack-entries' parameter has been renamed to 'hash-max-ziplist-entries' in Redis 7.0.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: appenddirname	cluster-announce-bus-port	tls-port	hash-max-listpack-entries
+[Ciri] Reason for appenddirname: The 'appenddirname' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter for specifying the AOF directory is 'appenddir'.
+[Ciri] Reason for cluster-announce-bus-port: The 'cluster-announce-bus-port' parameter is not a valid configuration option in Redis 7.0.0. It was removed in Redis 7.0 as Redis Cluster no longer uses a bus port.
+[Ciri] Reason for tls-port: The 'tls-port' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter for enabling TLS and specifying the TLS port is 'tls-port-cert-file' and 'port'.
+[Ciri] Reason for hash-max-listpack-entries: The 'hash-max-listpack-entries' parameter has been renamed to 'hash-max-ziplist-entries' in Redis 7.0.0.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[7, 4, 8]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile'], 'reason': ["The property 'krb_server_keyfile' has an incorrect format. It should not contain '${sysconfdir}' which is not a valid reference in the configuration file."]}
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile'], 'reason': ["The property 'krb_server_keyfile' has an incorrect format. It should not contain '${sysconfdir}' which is not a valid reference in PostgreSQL configuration."]}
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile'], 'reason': ["The property 'krb_server_keyfile' has an incorrect format. It should not contain '${sysconfdir}' as a variable substitution."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: krb_server_keyfile
+[Ciri] Reason for krb_server_keyfile: The property 'krb_server_keyfile' has an incorrect format. It should not contain '${sysconfdir}' which is not a valid reference in PostgreSQL configuration.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.metrics.time.series.interval', 'alluxio.worker.network.netty.boss.threads'], 'reason': ["The property 'alluxio.master.metrics.time.series.interval' is not a valid property in Alluxio 2.5.0. The correct property name is 'alluxio.metrics.master.sink.poll.interval'.", "The property 'alluxio.worker.network.netty.boss.threads' is not a valid property in Alluxio 2.5.0. Alluxio uses a shared thread pool for both boss and worker threads, and the property to configure the number of threads is 'alluxio.worker.network.netty.rpc.threads'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.metrics.time.series.interval	alluxio.worker.network.netty.boss.threads
+[Ciri] Reason for alluxio.master.metrics.time.series.interval: The property 'alluxio.master.metrics.time.series.interval' is not a valid property in Alluxio 2.5.0. The correct property name is 'alluxio.metrics.master.sink.poll.interval'.
+[Ciri] Reason for alluxio.worker.network.netty.boss.threads: The property 'alluxio.worker.network.netty.boss.threads' is not a valid property in Alluxio 2.5.0. Alluxio uses a shared thread pool for both boss and worker threads, and the property to configure the number of threads is 'alluxio.worker.network.netty.rpc.threads'.

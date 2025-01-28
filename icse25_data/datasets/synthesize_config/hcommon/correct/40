@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.search.attr.group.name</name>
+  <value>cn</value>
+  <description>
+    The attribute of the group object that identifies the group name. The
+    default will usually be appropriate for all LDAP systems.
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.swebhdfs.impl</name>
+  <value>org.apache.hadoop.fs.SWebHdfs</value>
+  <description>The FileSystem for swebhdfs: uris.</description>
+</property>
+
+<property>
+  <name>fs.s3a.block.size</name>
+  <value>16M</value>
+  <description>Block size to use when reading files using s3a: file system.
+    A suffix from the set {K,M,G,T,P} may be used to scale the numeric value.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.csv.quote.escape.character</name>
+  <value>\\</value>
+  <description>In S3 Select queries over CSV files: quote escape character.
+    \t is remapped to the TAB character, \r to CR \n to newline. \\ to \
+    and \" to "
+  </description>
+</property>
+
+<property>
+  <name>ftp.bytes-per-checksum</name>
+  <value>1024</value>
+  <description>The number of bytes per checksum.  Must not be larger than
+  ftp.stream-buffer-size</description>
+</property>
+
+<property>
+  <name>ha.health-monitor.connect-retry-interval.ms</name>
+  <value>1000</value>
+  <description>
+    How often to retry connecting to the service.
+  </description>
+</property>
+
+<property>
+  <name>ha.failover-controller.graceful-fence.rpc-timeout.ms</name>
+  <value>2500</value>
+  <description>
+    Timeout that the FC waits for the old active to go to standby
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.kms.client.authentication.retry-count</name>
+  <value>2</value>
+  <description>
+    Number of time to retry connecting to KMS on authentication failure
+  </description>
+</property>
+
+</configuration>

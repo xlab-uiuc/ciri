@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.search.attr.member</name>
+  <value>member</value>
+  <description>
+    The attribute of the group object that identifies the users that are
+    members of the group. The default will usually be appropriate for
+    any LDAP installation.
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.ftp.impl</name>
+  <value>org.apache.hadoop.fs.ftp.FtpFs</value>
+  <description>The FileSystem for Ftp: uris.</description>
+</property>
+
+<property>
+  <name>fs.s3a.committer.threads</name>
+  <value>16</value>
+  <description>
+    Number of threads in committers for parallel operations on files
+    (upload, commit, abort, delete...)
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.abfs.impl</name>
+  <value>org.apache.hadoop.fs.azurebfs.Abfs</value>
+  <description>AbstractFileSystem implementation class of abfs://</description>
+</property>
+
+<property>
+  <name>ipc.client.connect.retry.interval</name>
+  <value>1000</value>
+  <description>Indicates the number of milliseconds a client will wait for
+    before retrying to establish a server connection.
+  </description>
+</property>
+
+<property>
+  <name>tfile.fs.input.buffer.size</name>
+  <value>262144</value>
+  <description>
+    Buffer size used for FSDataInputStream in bytes.
+  </description>
+</property>
+
+<property>
+  <name>ha.failover-controller.cli-check.rpc-timeout.ms</name>
+  <value>20000</value>
+  <description>
+    Timeout that the CLI (manual) FC waits for monitorHealth, getServiceState
+  </description>
+</property>
+
+<property>
+  <name>hadoop.tags.system</name>
+  <value>YARN</value>
+    <description>
+      System tags to group related properties together.
+    </description>
+</property>
+
+</configuration>

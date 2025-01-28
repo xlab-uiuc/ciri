@@ -1,0 +1,15 @@
+Wrong shot number:
+[6, 7, 5]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'maxSessionTimeout'], 'reason': ["The property 'dataLogDir' has an invalid directory path '/\\hadoop/s3a'. Directory paths should not contain backslashes.", "The property 'maxSessionTimeout' has the value '-1' which is not within the accepted range of [tickTime, 20*tickTime]."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataLogDir	maxSessionTimeout
+[Ciri] Reason for dataLogDir: The property 'dataLogDir' has an invalid directory path '/\hadoop/s3a'. Directory paths should not contain backslashes.
+[Ciri] Reason for maxSessionTimeout: The property 'maxSessionTimeout' has the value '-1' which is not within the accepted range of [tickTime, 20*tickTime].

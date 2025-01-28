@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 7, 10]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.handler', 'yarn.timeline-service.address'], 'reason': ["The value 'NOEXIST' is not a valid option for the property 'yarn.resourcemanager.placement-constraints.handler'. Valid options are: 'placement-processor', 'scheduler' and 'disabled'.", "The value '127.0.0.1' for the property 'yarn.timeline-service.address' is just an IP address. It should be in the format '${yarn.timeline-service.hostname}:10200'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.placement-constraints.handler	yarn.timeline-service.address
+[Ciri] Reason for yarn.resourcemanager.placement-constraints.handler: The value 'NOEXIST' is not a valid option for the property 'yarn.resourcemanager.placement-constraints.handler'. Valid options are: 'placement-processor', 'scheduler' and 'disabled'.
+[Ciri] Reason for yarn.timeline-service.address: The value '127.0.0.1' for the property 'yarn.timeline-service.address' is just an IP address. It should be in the format '${yarn.timeline-service.hostname}:10200'.

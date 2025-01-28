@@ -1,0 +1,16 @@
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEFAULT_EXCEPTION_REPORTER', 'EMAIL_SSL_KEYFILE', 'MIGRATION_MODULES', 'SESSION_COOKIE_HTTPONLY', 'LANGUAGE_COOKIE_PATH', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ['DEFAULT_EXCEPTION_REPORTER has been renamed to DEFAULT_EXCEPTION_REPORTER_FILTER in Django 4.0', 'EMAIL_SSL_KEYFILE is not a valid setting in Django 4.0', 'MIGRATION_MODULES should not be an empty dictionary in Django 4.0', 'SESSION_COOKIE_HTTPONLY should be set to True for security reasons in Django 4.0', "LANGUAGE_COOKIE_PATH should not be set to '/' in Django 4.0", 'DATA_UPLOAD_MAX_NUMBER_FIELDS is not a valid setting in Django 4.0']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: DEFAULT_EXCEPTION_REPORTER	EMAIL_SSL_KEYFILE	MIGRATION_MODULES	SESSION_COOKIE_HTTPONLY	LANGUAGE_COOKIE_PATH	DATA_UPLOAD_MAX_NUMBER_FIELDS
+[Ciri] Reason for DEFAULT_EXCEPTION_REPORTER: DEFAULT_EXCEPTION_REPORTER has been renamed to DEFAULT_EXCEPTION_REPORTER_FILTER in Django 4.0
+[Ciri] Reason for EMAIL_SSL_KEYFILE: EMAIL_SSL_KEYFILE is not a valid setting in Django 4.0
+[Ciri] Reason for MIGRATION_MODULES: MIGRATION_MODULES should not be an empty dictionary in Django 4.0
+[Ciri] Reason for SESSION_COOKIE_HTTPONLY: SESSION_COOKIE_HTTPONLY should be set to True for security reasons in Django 4.0
+[Ciri] Reason for LANGUAGE_COOKIE_PATH: LANGUAGE_COOKIE_PATH should not be set to '/' in Django 4.0
+[Ciri] Reason for DATA_UPLOAD_MAX_NUMBER_FIELDS: DATA_UPLOAD_MAX_NUMBER_FIELDS is not a valid setting in Django 4.0

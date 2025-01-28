@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>io.seqfile.local.dir</name>
+  <value>//hadoop/io/local</value>
+  <description>The local directory where sequence file stores intermediate
+  data files during merge.  May be a comma-separated list of
+  directories on different devices in order to spread disk i/o.
+  Directories that do not exist are ignored.
+  </description>
+</property>
+
+<property>
+  <name>fs.defaultFS</name>
+  <value>file:///</value>
+  <description>The name of the default file system.  A URI whose
+  scheme and authority determine the FileSystem implementation.  The
+  uri's scheme determines the config property (fs.SCHEME.impl) naming
+  the FileSystem implementation class.  The uri's authority is used to
+  determine the host, port, etc. for a filesystem.</description>
+</property>
+
+<property>
+  <name>fs.s3a.connection.establish.timeout</name>
+  <value>10000</value>
+  <description>Socket connection setup timeout in milliseconds.</description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.purge.age</name>
+  <value>86400</value>
+  <description>Minimum age in seconds of multipart uploads to purge
+    on startup if "fs.s3a.multipart.purge" is true
+  </description>
+</property>
+
+<property>
+  <name>ipc.server.log.slow.rpc</name>
+  <value>false</value>
+    <description>This setting is useful to troubleshoot performance issues for
+     various services. If this value is set to true then we log requests that
+     fall into 99th percentile as well as increment RpcSlowCalls counter.
+    </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].callqueue.impl</name>
+  <value>java.util.concurrent.LinkedBlockingQueue</value>
+  <description>The fully qualified name of a class to use as the implementation
+    of a call queue. The default implementation is
+    java.util.concurrent.LinkedBlockingQueue (FIFO queue).
+    Use org.apache.hadoop.ipc.FairCallQueue for the Fair Call Queue.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].weighted-cost.lockexclusive</name>
+  <value>100</value>
+  <description>The weight multiplier to apply to the time spent in the
+    processing phase which holds an exclusive (write) lock.
+    This property applies to WeightedTimeCostProvider.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.crypto.codec.classes.aes.ctr.nopadding</name>
+  <value>org.apache.hadoop.crypto.JceAesCtrCryptoCodec</value>
+  <description>
+    Comma-separated list of crypto codec implementations for AES/CTR/NoPadding.
+    The first implementation will be used if available, others are fallbacks.
+  </description>
+</property>
+
+</configuration>

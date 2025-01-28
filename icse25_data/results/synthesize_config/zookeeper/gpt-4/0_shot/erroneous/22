@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'autopurge.purgeInterval'], 'reason': ["The 'quorumListenOnAllIPs' parameter does not accept 'hadoop' as a valid value. It expects a boolean value (true or false).", "The 'autopurge.purgeInterval' parameter should be a positive integer. A value of -1 indicates that autopurge is disabled, which might not be an error per se, but it's important to ensure this is the intended configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorumListenOnAllIPs	autopurge.purgeInterval
+[Ciri] Reason for quorumListenOnAllIPs: The 'quorumListenOnAllIPs' parameter does not accept 'hadoop' as a valid value. It expects a boolean value (true or false).
+[Ciri] Reason for autopurge.purgeInterval: The 'autopurge.purgeInterval' parameter should be a positive integer. A value of -1 indicates that autopurge is disabled, which might not be an error per se, but it's important to ensure this is the intended configuration.

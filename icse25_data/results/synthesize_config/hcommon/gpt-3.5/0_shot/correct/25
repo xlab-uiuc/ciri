@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.priority.levels', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds'], 'reason': ["The parameter 'ipc.[port_number].scheduler.priority.levels' is not a valid parameter for hcommon version 3.3.0.", "The parameter 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' is not a valid parameter for hcommon version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['io.erasurecode.codec.rs-legacy.rawcoders', 'ipc.[port_number].scheduler.priority.levels', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds'], 'reason': ["The property 'io.erasurecode.codec.rs-legacy.rawcoders' has an invalid value 'rs-legacy_java'.", "The property 'ipc.[port_number].scheduler.priority.levels' is missing a specific port number.", "The property 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' is missing a specific port number."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.priority.levels', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds'], 'reason': ['Parameter names should not contain placeholders like [port_number].', 'Parameter names should not contain placeholders like [port_number].']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].scheduler.priority.levels	ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds
+[Ciri] Reason for ipc.[port_number].scheduler.priority.levels: Parameter names should not contain placeholders like [port_number].
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds: The parameter 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' is not a valid parameter for hcommon version 3.3.0.

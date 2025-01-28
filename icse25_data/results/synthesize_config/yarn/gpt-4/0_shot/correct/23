@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.handler', 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep', 'yarn.scheduler.configuration.max.version'], 'reason': ["The 'yarn.resourcemanager.placement-constraints.handler' property does not exist in YARN 3.3.0. The concept of placement constraints is handled differently.", "The 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep' property is not a recognized configuration in YARN 3.3.0. This seems to be related to container runtime configurations not directly exposed through YARN's nodemanager settings.", "The 'yarn.scheduler.configuration.max.version' property does not exist. While YARN allows for dynamic scheduler configuration, the property name or its purpose as described does not align with known settings in version 3.3.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.resourcemanager.placement-constraints.handler	yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep	yarn.scheduler.configuration.max.version
+[Ciri] Reason for yarn.resourcemanager.placement-constraints.handler: The 'yarn.resourcemanager.placement-constraints.handler' property does not exist in YARN 3.3.0. The concept of placement constraints is handled differently.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep: The 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep' property is not a recognized configuration in YARN 3.3.0. This seems to be related to container runtime configurations not directly exposed through YARN's nodemanager settings.
+[Ciri] Reason for yarn.scheduler.configuration.max.version: The 'yarn.scheduler.configuration.max.version' property does not exist. While YARN allows for dynamic scheduler configuration, the property name or its purpose as described does not align with known settings in version 3.3.0.

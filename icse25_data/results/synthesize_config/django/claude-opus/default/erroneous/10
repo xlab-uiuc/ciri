@@ -1,0 +1,16 @@
+Wrong shot number:
+[2, 1, 6]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'WSGI_APPLICATION', 'MIDDLEWARE'], 'reason': ["The property 'LOGIN_REDIRECT_URL' has the value 'file//' which does not follow the correct URL format.", "The property 'WSGI_APPLICATION' should not be set to None. It should be set to the Python path of the WSGI application object.", "The property 'MIDDLEWARE' should not be an empty list. It should contain a list of middleware classes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: LOGIN_REDIRECT_URL	WSGI_APPLICATION	MIDDLEWARE
+[Ciri] Reason for LOGIN_REDIRECT_URL: The property 'LOGIN_REDIRECT_URL' has the value 'file//' which does not follow the correct URL format.
+[Ciri] Reason for WSGI_APPLICATION: The property 'WSGI_APPLICATION' should not be set to None. It should be set to the Python path of the WSGI application object.
+[Ciri] Reason for MIDDLEWARE: The property 'MIDDLEWARE' should not be an empty list. It should contain a list of middleware classes.

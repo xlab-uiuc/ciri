@@ -1,0 +1,45 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories'], 'reason': ['listen_addresses should be a list of strings', 'unix_socket_directories should be a list of strings']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'vacuum_multixact_freeze_min_age', 'superuser_reserved_connections', 'archive_mode', 'max_wal_size', 'log_recovery_conflict_waits'], 'reason': ['listen_addresses should be a list of IP addresses or hostnames, not a string.', 'unix_socket_directories should be a list of directories, not a string.', 'vacuum_multixact_freeze_min_age should be an integer, not a string.', 'superuser_reserved_connections should be an integer, not a string.', 'archive_mode should be a boolean, not a string.', 'max_wal_size should be an integer, not a string.', 'log_recovery_conflict_waits should be a boolean, not a string.']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_level', 'archive_mode', 'max_wal_size', 'log_recovery_conflict_waits'], 'reason': ['listen_addresses must be a valid IP address or a hostname.', 'wal_level must be one of {minimal, archive, hot_standby, logical}.', 'archive_mode must be one of {on, off}.', 'max_wal_size must be a valid size.', 'log_recovery_conflict_waits must be one of {on, off}.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories'], 'reason': ['listen_addresses should be a list of IP addresses or hostnames, not a string.', 'unix_socket_directories should be a list of directories, not a string.']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'archive_mode', 'max_wal_size', 'log_recovery_conflict_waits'], 'reason': ["listen_addresses: The value 'dev/urandom///' is not a valid IP address or hostname.", "unix_socket_directories: The value 'dev/urandom///' is not a valid path.", "archive_mode: The value 'off' is not a valid boolean value.", "max_wal_size: The value '2GB' is not a valid size.", "log_recovery_conflict_waits: The value 'off' is not a valid boolean value."]}
+
+{'hasError': True, 'errParameter': ['archive_mode', 'max_wal_size', 'log_recovery_conflict_waits'], 'reason': ['archive_mode is not a valid parameter for postgresql version 13.0', 'max_wal_size must be a positive integer', 'log_recovery_conflict_waits is not a valid parameter for postgresql version 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'array_nulls', 'vacuum_multixact_freeze_min_age', 'superuser_reserved_connections', 'archive_mode', 'max_wal_size', 'log_recovery_conflict_waits'], 'reason': ['listen_addresses must be a list of strings', 'unix_socket_directories must be a list of strings', 'array_nulls must be a boolean', 'vacuum_multixact_freeze_min_age must be an integer', 'superuser_reserved_connections must be an integer', 'archive_mode must be a boolean', 'max_wal_size must be an integer', 'log_recovery_conflict_waits must be a boolean']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'vacuum_multixact_freeze_min_age', 'superuser_reserved_connections', 'archive_mode', 'max_wal_size', 'log_recovery_conflict_waits'], 'reason': ['listen_addresses must be a valid IP address or a hostname', 'unix_socket_directories must be a valid directory', 'vacuum_multixact_freeze_min_age must be a valid integer', 'superuser_reserved_connections must be a valid integer', 'archive_mode must be a valid boolean', 'max_wal_size must be a valid integer', 'log_recovery_conflict_waits must be a valid boolean']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories'], 'reason': ['listen_addresses should be a list of addresses to listen on, not a string', 'unix_socket_directories should be a list of directories to listen on, not a string']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories'], 'reason': ['listen_addresses should be an array of strings', 'unix_socket_directories should be an array of strings']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'vacuum_multixact_freeze_min_age', 'superuser_reserved_connections', 'archive_mode', 'max_wal_size', 'log_recovery_conflict_waits'], 'reason': ['listen_addresses must be a comma-separated list of IP addresses or host/netmask pairs', 'unix_socket_directories must be a comma-separated list of directories', 'vacuum_multixact_freeze_min_age must be a positive integer', 'superuser_reserved_connections must be a positive integer', 'archive_mode must be on or off', 'max_wal_size must be a positive integer', 'log_recovery_conflict_waits must be on or off']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'log_recovery_conflict_waits'], 'reason': ['max_wal_size must be a power of 2 between 1 MB and 1 TB', 'log_recovery_conflict_waits must be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories', 'array_nulls', 'vacuum_multixact_freeze_min_age', 'superuser_reserved_connections', 'archive_mode', 'max_wal_size', 'log_recovery_conflict_waits'], 'reason': ['listen_addresses must be a comma-separated list of IP addresses or host names', 'unix_socket_directories must be a comma-separated list of directories', 'array_nulls must be on or off', 'vacuum_multixact_freeze_min_age must be an integer', 'superuser_reserved_connections must be an integer', 'archive_mode must be on or off', 'max_wal_size must be an integer', 'log_recovery_conflict_waits must be on or off']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories'], 'reason': ["listen_addresses must be a comma-separated list of IP addresses or hostnames, or the special values '*' or 'localhost'", "unix_socket_directories must be a comma-separated list of directories, or the special value 'none'"]}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_directories'], 'reason': ['listen_addresses should be an array of strings', 'unix_socket_directories should be an array of strings']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: listen_addresses	unix_socket_directories
+[Ciri] Reason for listen_addresses: listen_addresses must be a comma-separated list of IP addresses or hostnames, or the special values '*' or 'localhost'
+[Ciri] Reason for unix_socket_directories: unix_socket_directories should be an array of strings

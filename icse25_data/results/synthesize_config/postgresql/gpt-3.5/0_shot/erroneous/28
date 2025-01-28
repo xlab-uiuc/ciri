@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['client_encoding'], 'reason': ["'sql_ascii' is not a valid value for client_encoding in PostgreSQL version 13.0. Valid values include 'SQL_ASCII', 'UTF8', 'LATIN1', etc."]}
+
+{'hasError': True, 'errParameter': ['client_encoding'], 'reason': ["'sql_ascii' is not a valid value for client_encoding. Valid values include 'UTF8', 'LATIN1', 'SQL_ASCII', etc."]}
+
+{'hasError': True, 'errParameter': ['client_encoding', 'min_wal_size'], 'reason': ["client_encoding 'sql_ascii' is not recommended. It is suggested to use UTF-8 encoding for better compatibility.", "min_wal_size value should be specified with units (e.g., '160MB' should be '160MB')."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: client_encoding
+[Ciri] Reason for client_encoding: 'sql_ascii' is not a valid value for client_encoding in PostgreSQL version 13.0. Valid values include 'SQL_ASCII', 'UTF8', 'LATIN1', etc.

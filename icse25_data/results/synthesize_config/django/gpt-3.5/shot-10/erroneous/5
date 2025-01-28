@@ -1,0 +1,16 @@
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATIC_ROOT', 'FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'DEFAULT_CHARSET', 'SESSION_FILE_PATH', 'SECURE_CROSS_ORIGIN_OPENER_POLICY', 'CSRF_COOKIE_HTTPONLY'], 'reason': ['STATIC_ROOT path should not have double slashes (//)', 'FILE_UPLOAD_DIRECTORY_PERMISSIONS should not be set to None', 'DEFAULT_CHARSET should not be set directly, use the LANGUAGE_CODE setting instead', 'SESSION_FILE_PATH should not be set to None', "SECURE_CROSS_ORIGIN_OPENER_POLICY should be set to 'same-origin-allow-popups' instead of 'same-origin'", 'CSRF_COOKIE_HTTPONLY should be set to True for better security']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: STATIC_ROOT	FILE_UPLOAD_DIRECTORY_PERMISSIONS	DEFAULT_CHARSET	SESSION_FILE_PATH	SECURE_CROSS_ORIGIN_OPENER_POLICY	CSRF_COOKIE_HTTPONLY
+[Ciri] Reason for STATIC_ROOT: STATIC_ROOT path should not have double slashes (//)
+[Ciri] Reason for FILE_UPLOAD_DIRECTORY_PERMISSIONS: FILE_UPLOAD_DIRECTORY_PERMISSIONS should not be set to None
+[Ciri] Reason for DEFAULT_CHARSET: DEFAULT_CHARSET should not be set directly, use the LANGUAGE_CODE setting instead
+[Ciri] Reason for SESSION_FILE_PATH: SESSION_FILE_PATH should not be set to None
+[Ciri] Reason for SECURE_CROSS_ORIGIN_OPENER_POLICY: SECURE_CROSS_ORIGIN_OPENER_POLICY should be set to 'same-origin-allow-popups' instead of 'same-origin'
+[Ciri] Reason for CSRF_COOKIE_HTTPONLY: CSRF_COOKIE_HTTPONLY should be set to True for better security

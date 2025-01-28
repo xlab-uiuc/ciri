@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.delete.unchecked', 'alluxio.user.client.cache.eviction.retries'], 'reason': ["The property 'alluxio.user.file.delete.unchecked' is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.", "The property 'alluxio.user.client.cache.eviction.retries' is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.delete.unchecked'], 'reason': ['The property alluxio.user.file.delete.unchecked is not supported in version 2.5.0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.delete.unchecked', 'alluxio.user.client.cache.eviction.retries'], 'reason': ['The property alluxio.user.file.delete.unchecked is not a valid property for Alluxio version 2.5.0.', 'The property alluxio.user.client.cache.eviction.retries is not a valid property for Alluxio version 2.5.0.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.delete.unchecked', 'alluxio.user.client.cache.eviction.retries'], 'reason': ['The property alluxio.user.file.delete.unchecked is not defined in the Alluxio configuration file.', 'The property alluxio.user.client.cache.eviction.retries is not defined in the Alluxio configuration file.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.delete.unchecked', 'alluxio.user.client.cache.eviction.retries'], 'reason': ['The property alluxio.user.file.delete.unchecked is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.', 'The property alluxio.user.client.cache.eviction.retries is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.file.delete.unchecked	alluxio.user.client.cache.eviction.retries
+[Ciri] Reason for alluxio.user.file.delete.unchecked: The property alluxio.user.file.delete.unchecked is not a valid property for Alluxio version 2.5.0.
+[Ciri] Reason for alluxio.user.client.cache.eviction.retries: The property alluxio.user.client.cache.eviction.retries is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.

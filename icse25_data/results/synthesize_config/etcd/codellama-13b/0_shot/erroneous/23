@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log-level', 'advertise-client-urls', 'enable-pprof', 'listen-peer-urls', 'logger', 'client-cert-auth', 'force-new-cluster', 'election-timeout'], 'reason': ['log-level: NOEXIST_LEVEL is not a valid log level', 'advertise-client-urls: http://localhost:2379 is not a valid URL', 'enable-pprof: true is not a valid boolean value', 'listen-peer-urls: http://localhost:2380 is not a valid URL', 'logger: zap is not a valid log level', 'client-cert-auth: true is not a valid boolean value', 'force-new-cluster: false is not a valid boolean value', 'election-timeout: 1000 is not a valid integer value']}
+
+{'hasError': True, 'errParameter': ['log-level'], 'reason': ['log-level is not a valid option. Valid options are: panic, fatal, error, warn, info, debug, trace']}
+
+{'hasError': True, 'errParameter': ['log-level'], 'reason': ['log-level is not a valid configuration parameter.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: log-level
+[Ciri] Reason for log-level: log-level is not a valid configuration parameter.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'max_connections', 'shared_buffers', 'wal_buffers', 'wal_compression', 'tcp_keepalives_idle', 'maintenance_work_mem', 'geqo_generations'], 'reason': ["listen_addresses should be set to 'localhost'", 'max_connections should be set to at least 100', 'shared_buffers should be set to at least 128MB', 'wal_buffers should be set to at least 16MB', "wal_compression should be set to 'on'", 'tcp_keepalives_idle should be set to at least 60', 'maintenance_work_mem should be set to at least 256MB', 'geqo_generations should be set to at least 10']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: listen_addresses	max_connections	shared_buffers	wal_buffers	wal_compression	tcp_keepalives_idle	maintenance_work_mem	geqo_generations
+[Ciri] Reason for listen_addresses: listen_addresses should be set to 'localhost'
+[Ciri] Reason for max_connections: max_connections should be set to at least 100
+[Ciri] Reason for shared_buffers: shared_buffers should be set to at least 128MB
+[Ciri] Reason for wal_buffers: wal_buffers should be set to at least 16MB
+[Ciri] Reason for wal_compression: wal_compression should be set to 'on'
+[Ciri] Reason for tcp_keepalives_idle: tcp_keepalives_idle should be set to at least 60
+[Ciri] Reason for maintenance_work_mem: maintenance_work_mem should be set to at least 256MB
+[Ciri] Reason for geqo_generations: geqo_generations should be set to at least 10

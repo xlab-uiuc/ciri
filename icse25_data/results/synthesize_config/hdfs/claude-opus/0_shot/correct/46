@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client-write-packet-size', 'dfs.web.authentication.kerberos.keytab'], 'reason': ["The property 'dfs.client-write-packet-size' is deprecated in hadoop version 3.3.0. It has been replaced by 'dfs.client.write.packet-size'.", "The value '/valid/file1' for property 'dfs.web.authentication.kerberos.keytab' is not a valid path. It should be an absolute path to the keytab file on the NameNode's local file system."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.client-write-packet-size	dfs.web.authentication.kerberos.keytab
+[Ciri] Reason for dfs.client-write-packet-size: The property 'dfs.client-write-packet-size' is deprecated in hadoop version 3.3.0. It has been replaced by 'dfs.client.write.packet-size'.
+[Ciri] Reason for dfs.web.authentication.kerberos.keytab: The value '/valid/file1' for property 'dfs.web.authentication.kerberos.keytab' is not a valid path. It should be an absolute path to the keytab file on the NameNode's local file system.

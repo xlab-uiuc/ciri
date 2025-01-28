@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_insert_threshold', 'checkpoint_flush_after', 'gss_accept_delegation'], 'reason': ['autovacuum_vacuum_insert_threshold must be a positive integer', 'checkpoint_flush_after must be a positive integer', 'gss_accept_delegation must be one of off, allow, or disable']}
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_insert_threshold', 'checkpoint_flush_after', 'gss_accept_delegation'], 'reason': ['The value of autovacuum_vacuum_insert_threshold must be greater than 0.', 'The value of checkpoint_flush_after must be greater than 0.', 'The value of gss_accept_delegation must be one of the following: off, allow, require']}
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_insert_threshold', 'autovacuum_vacuum_insert_threshold', 'autovacuum_vacuum_insert_threshold', 'autovacuum_vacuum_insert_threshold', 'autovacuum_vacuum_insert_threshold'], 'reason': ['The value of autovacuum_vacuum_insert_threshold must be greater than 0.', 'The value of autovacuum_vacuum_insert_threshold must be greater than 0.', 'The value of autovacuum_vacuum_insert_threshold must be greater than 0.', 'The value of autovacuum_vacuum_insert_threshold must be greater than 0.', 'The value of autovacuum_vacuum_insert_threshold must be greater than 0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: autovacuum_vacuum_insert_threshold	checkpoint_flush_after	gss_accept_delegation
+[Ciri] Reason for autovacuum_vacuum_insert_threshold: The value of autovacuum_vacuum_insert_threshold must be greater than 0.
+[Ciri] Reason for checkpoint_flush_after: The value of checkpoint_flush_after must be greater than 0.
+[Ciri] Reason for gss_accept_delegation: The value of gss_accept_delegation must be one of the following: off, allow, require

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'standaloneEnabled', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'initLimit', 'quorum.auth.learner.saslLoginContext', 'syncLimit', 'dataLogDir'], 'reason': ['Invalid IP address', 'Invalid boolean value', 'Invalid boolean value', 'Invalid boolean value', 'Invalid integer value', 'Invalid string value', 'Invalid integer value', 'Invalid directory']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'standaloneEnabled', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'initLimit', 'quorum.auth.learner.saslLoginContext', 'syncLimit', 'dataLogDir'], 'reason': ['secureClientPortAddress is not a valid IP address', 'standaloneEnabled is not a valid boolean value', 'localSessionsEnabled is not a valid boolean value', 'sslQuorumReloadCertFiles is not a valid boolean value', 'initLimit is not a valid integer value', 'quorum.auth.learner.saslLoginContext is not a valid string value', 'syncLimit is not a valid integer value', 'dataLogDir is not a valid directory']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'standaloneEnabled', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'initLimit', 'quorum.auth.learner.saslLoginContext', 'syncLimit', 'dataLogDir'], 'reason': ['secureClientPortAddress is not a valid IP address.', 'standaloneEnabled is not a valid boolean value.', 'localSessionsEnabled is not a valid boolean value.', 'sslQuorumReloadCertFiles is not a valid boolean value.', 'initLimit is not a valid integer value.', 'quorum.auth.learner.saslLoginContext is not a valid string value.', 'syncLimit is not a valid integer value.', 'dataLogDir is not a valid directory path.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: secureClientPortAddress	standaloneEnabled	localSessionsEnabled	sslQuorumReloadCertFiles	initLimit	quorum.auth.learner.saslLoginContext	syncLimit	dataLogDir
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress is not a valid IP address.
+[Ciri] Reason for standaloneEnabled: standaloneEnabled is not a valid boolean value
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled is not a valid boolean value.
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles is not a valid boolean value.
+[Ciri] Reason for initLimit: initLimit is not a valid integer value.
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext is not a valid string value
+[Ciri] Reason for syncLimit: syncLimit is not a valid integer value
+[Ciri] Reason for dataLogDir: dataLogDir is not a valid directory

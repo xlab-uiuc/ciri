@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'localSessionsEnabled', 'clientPortAddress', 'secureClientPortAddress'], 'reason': ["The 'minSessionTimeout' parameter should be an integer representing the minimum session timeout in milliseconds.", "The 'localSessionsEnabled' parameter is not a recognized configuration in ZooKeeper version 3.7.0.", "The 'clientPortAddress' and 'secureClientPortAddress' cannot have the same value if both ports are being used, as they would conflict.", "If 'sslQuorum' is true, specifying the same address for 'clientPortAddress' and 'secureClientPortAddress' is incorrect because one should be the SSL port and the other the non-SSL port."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: minSessionTimeout	localSessionsEnabled	clientPortAddress	secureClientPortAddress
+[Ciri] Reason for minSessionTimeout: The 'minSessionTimeout' parameter should be an integer representing the minimum session timeout in milliseconds.
+[Ciri] Reason for localSessionsEnabled: The 'localSessionsEnabled' parameter is not a recognized configuration in ZooKeeper version 3.7.0.
+[Ciri] Reason for clientPortAddress: The 'clientPortAddress' and 'secureClientPortAddress' cannot have the same value if both ports are being used, as they would conflict.
+[Ciri] Reason for secureClientPortAddress: If 'sslQuorum' is true, specifying the same address for 'clientPortAddress' and 'secureClientPortAddress' is incorrect because one should be the SSL port and the other the non-SSL port.

@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.server.saslLoginContext', 'quorum.auth.enableSasl', 'autopurge.purgeInterval', 'reconfigEnabled', 'portUnification', 'electionAlg', 'secureClientPortAddress'], 'reason': ['quorum.auth.server.saslLoginContext is not a valid property', 'quorum.auth.enableSasl is not a valid property', 'autopurge.purgeInterval is not a valid property', 'reconfigEnabled is not a valid property', 'portUnification is not a valid property', 'electionAlg is not a valid property', 'secureClientPortAddress is not a valid property']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.server.saslLoginContext', 'quorum.auth.server.saslLoginContext', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.server.saslLoginContext is not a valid property.', 'quorum.auth.server.saslLoginContext is not a valid property.', 'quorum.auth.server.saslLoginContext is not a valid property.']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.server.saslLoginContext', 'quorum.auth.enableSasl', 'autopurge.purgeInterval', 'reconfigEnabled', 'portUnification', 'electionAlg', 'secureClientPortAddress'], 'reason': ['quorum.auth.server.saslLoginContext: Property not found in zookeeper configuration file', 'quorum.auth.enableSasl: Property not found in zookeeper configuration file', 'autopurge.purgeInterval: Property not found in zookeeper configuration file', 'reconfigEnabled: Property not found in zookeeper configuration file', 'portUnification: Property not found in zookeeper configuration file', 'electionAlg: Property not found in zookeeper configuration file', 'secureClientPortAddress: Property not found in zookeeper configuration file']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: quorum.auth.server.saslLoginContext	quorum.auth.enableSasl	autopurge.purgeInterval	reconfigEnabled	portUnification	electionAlg	secureClientPortAddress
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext: Property not found in zookeeper configuration file
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl is not a valid property
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval: Property not found in zookeeper configuration file
+[Ciri] Reason for reconfigEnabled: reconfigEnabled is not a valid property
+[Ciri] Reason for portUnification: portUnification is not a valid property
+[Ciri] Reason for electionAlg: electionAlg is not a valid property
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress: Property not found in zookeeper configuration file

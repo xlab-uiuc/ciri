@@ -1,0 +1,19 @@
+Wrong shot number:
+[11, 9, 2]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'cluster-announce-port'], 'reason': ["The property 'tls-ca-cert-dir' has an invalid value '/\\etc/ssl/certs'. The backslash '\\' is an escape character and should not be used in file paths.", "The property 'cluster-announce-port' has the value '1' which is an invalid port number. Valid port numbers are between 1 and 65535."]}
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'cluster-announce-port'], 'reason': ["The value of the property 'tls-ca-cert-dir' is an invalid path '/\\etc/ssl/certs'. The backslash needs to be escaped properly.", "The property 'cluster-announce-port' has the value '1' which is outside the valid range for a port number."]}
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'cluster-announce-port'], 'reason': ["The value of 'tls-ca-cert-dir' is an invalid path. It should be an absolute path.", "The value of 'cluster-announce-port' should be greater than or equal to 10000 for Redis cluster ports."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tls-ca-cert-dir	cluster-announce-port
+[Ciri] Reason for tls-ca-cert-dir: The value of 'tls-ca-cert-dir' is an invalid path. It should be an absolute path.
+[Ciri] Reason for cluster-announce-port: The value of 'cluster-announce-port' should be greater than or equal to 10000 for Redis cluster ports.

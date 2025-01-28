@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.state-store.max-completed-applications', 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The value '${yarn.resourcemanager.max-completed-applications}' in 'yarn.resourcemanager.state-store.max-completed-applications' should be replaced with an actual numeric value.", "The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' contains a typo in 'proccesses'. It should be corrected to 'processes'."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.state-store.max-completed-applications', 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The value '${yarn.resourcemanager.max-completed-applications}' in property 'yarn.resourcemanager.state-store.max-completed-applications' should be replaced with an actual numeric value.", "The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' contains a typo in 'proccesses'. It should be corrected to 'processes'."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.state-store.max-completed-applications', 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ['The property yarn.resourcemanager.state-store.max-completed-applications has a value reference ${yarn.resourcemanager.max-completed-applications} which may not be resolved properly.', "The property yarn.nodemanager.linux-container-executor.cgroups.hierarchy contains a typo 'proccesses' instead of 'processes'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.state-store.max-completed-applications	yarn.nodemanager.linux-container-executor.cgroups.hierarchy
+[Ciri] Reason for yarn.resourcemanager.state-store.max-completed-applications: The value '${yarn.resourcemanager.max-completed-applications}' in 'yarn.resourcemanager.state-store.max-completed-applications' should be replaced with an actual numeric value.
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.hierarchy: The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' contains a typo in 'proccesses'. It should be corrected to 'processes'.

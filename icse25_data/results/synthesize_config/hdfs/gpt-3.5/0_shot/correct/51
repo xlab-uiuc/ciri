@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.check.quiet-multiplier', 'dfs.ha.log-roll.period', 'dfs.datanode.cache.revocation.timeout.ms', 'dfs.mover.moverThreads'], 'reason': ["The value '3.0' for property 'dfs.namenode.checkpoint.check.quiet-multiplier' should be an integer.", "The value '120s' for property 'dfs.ha.log-roll.period' should not have a time unit suffix.", "The value '1800000' for property 'dfs.datanode.cache.revocation.timeout.ms' should have a time unit suffix.", "The value '2000' for property 'dfs.mover.moverThreads' should be an integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.check.quiet-multiplier', 'dfs.ha.log-roll.period', 'dfs.datanode.cache.revocation.timeout.ms', 'dfs.mover.moverThreads'], 'reason': ["The value '3.0' for property 'dfs.namenode.checkpoint.check.quiet-multiplier' should be an integer.", "The value '120s' for property 'dfs.ha.log-roll.period' should not have a time unit suffix.", "The value '1800000' for property 'dfs.datanode.cache.revocation.timeout.ms' should have a time unit suffix.", "The value '2000' for property 'dfs.mover.moverThreads' should be an integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.check.quiet-multiplier', 'dfs.ha.log-roll.period', 'dfs.datanode.cache.revocation.timeout.ms', 'dfs.mover.moverThreads'], 'reason': ["The value '3.0' for property 'dfs.namenode.checkpoint.check.quiet-multiplier' should be an integer.", "The value '120s' for property 'dfs.ha.log-roll.period' should not contain a time unit suffix.", "The value '1800000' for property 'dfs.datanode.cache.revocation.timeout.ms' should not be in milliseconds.", "The value '2000' for property 'dfs.mover.moverThreads' should be a smaller integer value."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dfs.namenode.checkpoint.check.quiet-multiplier	dfs.ha.log-roll.period	dfs.datanode.cache.revocation.timeout.ms	dfs.mover.moverThreads
+[Ciri] Reason for dfs.namenode.checkpoint.check.quiet-multiplier: The value '3.0' for property 'dfs.namenode.checkpoint.check.quiet-multiplier' should be an integer.
+[Ciri] Reason for dfs.ha.log-roll.period: The value '120s' for property 'dfs.ha.log-roll.period' should not contain a time unit suffix.
+[Ciri] Reason for dfs.datanode.cache.revocation.timeout.ms: The value '1800000' for property 'dfs.datanode.cache.revocation.timeout.ms' should have a time unit suffix.
+[Ciri] Reason for dfs.mover.moverThreads: The value '2000' for property 'dfs.mover.moverThreads' should be an integer.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[10, 15, 12]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.log-slow-lookups.enabled', 'fs.azure.local.sas.key.mode'], 'reason': ["The property 'hadoop.security.dns.log-slow-lookups.enabled' should have a boolean value, but it has the value '10'.", "The property 'fs.azure.local.sas.key.mode' is defined twice with conflicting values 'true' and 'false'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.dns.log-slow-lookups.enabled	fs.azure.local.sas.key.mode
+[Ciri] Reason for hadoop.security.dns.log-slow-lookups.enabled: The property 'hadoop.security.dns.log-slow-lookups.enabled' should have a boolean value, but it has the value '10'.
+[Ciri] Reason for fs.azure.local.sas.key.mode: The property 'fs.azure.local.sas.key.mode' is defined twice with conflicting values 'true' and 'false'.

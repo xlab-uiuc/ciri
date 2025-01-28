@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'ipc.[port_number].backoff.enable'], 'reason': ["The value of fs.defaultFS is incorrectly set to 'file:::'. It should be a valid URI for the default file system.", 'The parameter name ipc.[port_number].backoff.enable is not a valid parameter name format.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.defaultFS	ipc.[port_number].backoff.enable
+[Ciri] Reason for fs.defaultFS: The value of fs.defaultFS is incorrectly set to 'file:::'. It should be a valid URI for the default file system.
+[Ciri] Reason for ipc.[port_number].backoff.enable: The parameter name ipc.[port_number].backoff.enable is not a valid parameter name format.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 6, 10]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.intermediate.upload.clean.age'], 'reason': ["The property 'alluxio.underfs.s3.intermediate.upload.clean.age' has the value '3day' which is not within the accepted value {1day, 1hour, 1min, 1sec}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.version'], 'reason': ["The property 'alluxio.underfs.gcs.version' has the value '1' which is not within the accepted value {1,2}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.intermediate.upload.clean.age'], 'reason': ["The property 'alluxio.underfs.s3.intermediate.upload.clean.age' has the value '3day' which is not within the accepted value {1d, 1day, 7d, 7day, 10d, 10day, 30d, 30day, 1m, 1month, 1y, 1year, 10y, 10year}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.underfs.s3.intermediate.upload.clean.age
+[Ciri] Reason for alluxio.underfs.s3.intermediate.upload.clean.age: The property 'alluxio.underfs.s3.intermediate.upload.clean.age' has the value '3day' which is not within the accepted value {1d, 1day, 7d, 7day, 10d, 10day, 30d, 30day, 1m, 1month, 1y, 1year, 10y, 10year}.

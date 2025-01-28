@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.handler.count</name>
+  <value>1</value>
+  <description>The number of server threads for the datanode.</description>
+</property>
+
+<property>
+  <name>dfs.webhdfs.socket.connect-timeout</name>
+  <value>60s</value>
+  <description>
+    Socket timeout for connecting to WebHDFS servers. This prevents a
+    WebHDFS client from hanging if the server hostname is
+    misconfigured, or the server does not response before the timeout
+    expires. Value is followed by a unit specifier: ns, us, ms, s, m,
+    h, d for nanoseconds, microseconds, milliseconds, seconds,
+    minutes, hours, days respectively. Values should provide units,
+    but milliseconds are assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.write-lock-reporting-threshold-ms</name>
+  <value>5000</value>
+  <description>When a write lock is held on the namenode for a long time,
+    this will be logged as the lock is released. This sets how long the
+    lock must be held for logging to occur.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.list.reencryption.status.num.responses</name>
+  <value>100</value>
+  <description>When listing re-encryption status, the maximum number of zones
+    that will be returned in a batch. Fetching the list incrementally in
+    batches improves namenode performance.
+  </description>
+</property>
+
+<property>
+  <name>dfs.webhdfs.rest-csrf.browser-useragents-regex</name>
+  <value>^Opera.*</value>
+  <description>
+    A comma-separated list of regular expressions used to match against an HTTP
+    request's User-Agent header when protection against cross-site request
+    forgery (CSRF) is enabled for WebHDFS by setting
+    dfs.webhdfs.reset-csrf.enabled to true.  If the incoming User-Agent matches
+    any of these regular expressions, then the request is considered to be sent
+    by a browser, and therefore CSRF prevention is enforced.  If the request's
+    User-Agent does not match any of these regular expressions, then the request
+    is considered to be sent by something other than a browser, such as scripted
+    automation.  In this case, CSRF is not a potential attack vector, so
+    the prevention is not enforced.  This helps achieve backwards-compatibility
+    with existing automation that has not been updated to send the CSRF
+    prevention header.
+  </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.text.delimiter</name>
+  <value>,</value>
+    <description>
+        The delimiter used when the provided block map is specified as
+        a text file.
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.rpc-address</name>
+  <value>0.0.0.0:50070</value>
+  <description>
+    RPC address that handles all clients requests. In the case of HA/Federation where multiple namenodes exist,
+    the name service id is added to the name e.g. dfs.namenode.rpc-address.ns1
+    dfs.namenode.rpc-address.EXAMPLENAMESERVICE
+    The value of this property will take the form of nn-host1:rpc-port. The NameNode's default RPC port is 8020.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.http-address</name>
+  <value>0.0.0.0:50070</value>
+  <description>
+    The address and the base port where the dfs namenode web ui will listen on.
+  </description>
+</property>
+
+</configuration>

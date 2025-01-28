@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.remote-app-log-dir', 'yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed'], 'reason': ['The value of yarn.nodemanager.remote-app-log-dir should not start with double forward slashes.', 'The property yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed should have a boolean value (true/false) instead of a string.']}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.remote-app-log-dir', 'yarn.nodemanager.linux-container-executor.path'], 'reason': ['Invalid value format for yarn.nodemanager.remote-app-log-dir. Double forward slashes are not allowed.', 'Invalid value format for yarn.nodemanager.linux-container-executor.path. The value should point to a valid executable file.']}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.remote-app-log-dir', 'yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed'], 'reason': ["The value '//hadoop/io/local' for property 'yarn.nodemanager.remote-app-log-dir' should not have double slashes at the beginning.", "The value 'true' for property 'yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed' should be in lowercase."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.remote-app-log-dir	yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed
+[Ciri] Reason for yarn.nodemanager.remote-app-log-dir: The value of yarn.nodemanager.remote-app-log-dir should not start with double forward slashes.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed: The property yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed should have a boolean value (true/false) instead of a string.

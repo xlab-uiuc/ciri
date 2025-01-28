@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'proxy-failure-wait', 'proxy-refresh-interval', 'proxy-dial-timeout', 'proxy-write-timeout', 'proxy-read-timeout', 'discovery-fallback'], 'reason': ['initial-cluster-state: invalid value', 'proxy-failure-wait: invalid value', 'proxy-refresh-interval: invalid value', 'proxy-dial-timeout: invalid value', 'proxy-write-timeout: invalid value', 'proxy-read-timeout: invalid value', 'discovery-fallback: invalid value']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'listen-client-urls', 'advertise-client-urls', 'discovery-fallback', 'proxy-read-timeout'], 'reason': ["initial-cluster-state: invalid value, must be 'new' or 'existing'", 'listen-client-urls: invalid value, must be a valid URL', 'advertise-client-urls: invalid value, must be a valid URL', "discovery-fallback: invalid value, must be 'proxy' or 'existing'", 'proxy-read-timeout: invalid value, must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'proxy-failure-wait', 'proxy-refresh-interval', 'proxy-dial-timeout', 'proxy-write-timeout', 'proxy-read-timeout'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'", 'proxy-failure-wait must be greater than or equal to 0', 'proxy-refresh-interval must be greater than or equal to 0', 'proxy-dial-timeout must be greater than or equal to 0', 'proxy-write-timeout must be greater than or equal to 0', 'proxy-read-timeout must be greater than or equal to 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ["The value of the initial-cluster-state parameter is not valid. Valid values are 'new' or 'existing'."]}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'proxy-failure-wait', 'proxy-refresh-interval', 'proxy-dial-timeout', 'proxy-write-timeout', 'proxy-read-timeout', 'discovery-fallback'], 'reason': ['initial-cluster-state: invalid value', 'proxy-failure-wait: invalid value', 'proxy-refresh-interval: invalid value', 'proxy-dial-timeout: invalid value', 'proxy-write-timeout: invalid value', 'proxy-read-timeout: invalid value', 'discovery-fallback: invalid value']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'proxy-failure-wait', 'proxy-refresh-interval', 'proxy-dial-timeout', 'proxy-write-timeout', 'proxy-read-timeout', 'discovery-fallback'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'", 'proxy-failure-wait must be a positive integer', 'proxy-refresh-interval must be a positive integer', 'proxy-dial-timeout must be a positive integer', 'proxy-write-timeout must be a positive integer', 'proxy-read-timeout must be a positive integer', "discovery-fallback must be either 'proxy' or 'exit'", 'listen-client-urls must be a list of URLs']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: initial-cluster-state	proxy-failure-wait	proxy-refresh-interval	proxy-dial-timeout	proxy-write-timeout	proxy-read-timeout	discovery-fallback
+[Ciri] Reason for initial-cluster-state: initial-cluster-state must be either 'new' or 'existing'
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait: invalid value
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval: invalid value
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout must be a positive integer
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout must be a positive integer
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout must be a positive integer
+[Ciri] Reason for discovery-fallback: discovery-fallback must be either 'proxy' or 'exit'

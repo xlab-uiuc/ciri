@@ -1,0 +1,35 @@
+Wrong shot number:
+[11, 5, 8]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.master.backup.state.lock.exclusive.duration', 'alluxio.user.network.rpc.netty.worker.threads'], 'reason': ["The property 'fs.cos.socket.timeout' has an incorrect value format, it should be in milliseconds.", "The property 'alluxio.master.backup.state.lock.exclusive.duration' has an incorrect value format, it should be in seconds or milliseconds.", "The property 'alluxio.user.network.rpc.netty.worker.threads' should have a value greater than 0."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.master.backup.state.lock.exclusive.duration'], 'reason': ["The property 'fs.cos.socket.timeout' has an invalid value format. It should be in milliseconds or a valid time unit (e.g., '50ms').", "The property 'alluxio.master.backup.state.lock.exclusive.duration' has an invalid value format. It should be in milliseconds or a valid time unit (e.g., '1ms')."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout'], 'reason': ["The property 'fs.cos.socket.timeout' has the value '50sec' which should be specified in milliseconds (e.g., '50000' for 50 seconds)."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.master.backup.state.lock.exclusive.duration'], 'reason': ["The property 'fs.cos.socket.timeout' has an invalid value format. It should be in milliseconds or seconds.", "The property 'alluxio.master.backup.state.lock.exclusive.duration' has an invalid value format. It should be in milliseconds or seconds."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout'], 'reason': ["The property 'fs.cos.socket.timeout' has the value '50sec' which should be in milliseconds format."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.master.backup.state.lock.exclusive.duration', 'alluxio.user.network.rpc.netty.worker.threads'], 'reason': ["The property 'fs.cos.socket.timeout' has an invalid value format, it should be in milliseconds.", "The property 'alluxio.master.backup.state.lock.exclusive.duration' has an invalid value format, it should be in seconds or milliseconds.", "The property 'alluxio.user.network.rpc.netty.worker.threads' should have a value greater than 0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.master.backup.state.lock.exclusive.duration'], 'reason': ["The property 'fs.cos.socket.timeout' has an invalid value format. It should be in milliseconds or a valid time unit (e.g., '50ms', '50s').", "The property 'alluxio.master.backup.state.lock.exclusive.duration' has an invalid value format. It should be in milliseconds or a valid time unit (e.g., '1ms', '1s')."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.master.backup.state.lock.exclusive.duration'], 'reason': ["The property 'fs.cos.socket.timeout' has an invalid value format. It should be in milliseconds or a valid time unit (e.g., '50ms', '50s').", "The property 'alluxio.master.backup.state.lock.exclusive.duration' has an invalid value format. It should be in milliseconds or a valid time unit (e.g., '1ms', '1s')."]}
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.master.backup.state.lock.exclusive.duration'], 'reason': ["The property 'fs.cos.socket.timeout' has an incorrect format for timeout value. It should be specified in milliseconds or with 'ms' suffix.", "The property 'alluxio.master.backup.state.lock.exclusive.duration' has an incorrect format for duration value. It should be specified in milliseconds or with 'ms' suffix."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.cos.socket.timeout	alluxio.master.backup.state.lock.exclusive.duration
+[Ciri] Reason for fs.cos.socket.timeout: The property 'fs.cos.socket.timeout' has an invalid value format. It should be in milliseconds or a valid time unit (e.g., '50ms', '50s').
+[Ciri] Reason for alluxio.master.backup.state.lock.exclusive.duration: The property 'alluxio.master.backup.state.lock.exclusive.duration' has an invalid value format. It should be in milliseconds or a valid time unit (e.g., '1ms', '1s').

@@ -1,0 +1,13 @@
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.ftp.timeout', 'ipc.[port_number].identity-provider.impl'], 'reason': ['The value for fs.ftp.host.port should be within the valid port range (0 - 65535).', 'The value for fs.ftp.timeout should be a positive integer representing timeout in seconds.', 'The property name ipc.[port_number].identity-provider.impl is not a standard Hadoop property format.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.host.port	fs.ftp.timeout	ipc.[port_number].identity-provider.impl
+[Ciri] Reason for fs.ftp.host.port: The value for fs.ftp.host.port should be within the valid port range (0 - 65535).
+[Ciri] Reason for fs.ftp.timeout: The value for fs.ftp.timeout should be a positive integer representing timeout in seconds.
+[Ciri] Reason for ipc.[port_number].identity-provider.impl: The property name ipc.[port_number].identity-provider.impl is not a standard Hadoop property format.

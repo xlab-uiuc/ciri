@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_relation', 'recovery_min_apply_delay', 'cpu_index_tuple_cost', 'enable_partitionwise_join', 'timezone', 'fsync', 'extra_float_digits', 'krb_caseins_users'], 'reason': ['max_pred_locks_per_relation must be a positive integer', 'recovery_min_apply_delay must be a positive integer', 'cpu_index_tuple_cost must be a positive real number', 'enable_partitionwise_join must be on or off', 'timezone must be a valid timezone', 'fsync must be on or off', 'extra_float_digits must be a positive integer', 'krb_caseins_users must be on or off']}
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_relation', 'recovery_min_apply_delay', 'cpu_index_tuple_cost', 'enable_partitionwise_join', 'timezone', 'fsync', 'extra_float_digits', 'krb_caseins_users'], 'reason': ['max_pred_locks_per_relation must be a positive integer.', 'recovery_min_apply_delay must be a positive integer.', 'cpu_index_tuple_cost must be a positive real number.', 'enable_partitionwise_join must be on or off.', 'timezone must be a valid timezone.', 'fsync must be on or off.', 'extra_float_digits must be a positive integer.', 'krb_caseins_users must be on or off.']}
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_relation'], 'reason': ['max_pred_locks_per_relation=-1 is not a valid value. The value must be greater than 0.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: max_pred_locks_per_relation	recovery_min_apply_delay	cpu_index_tuple_cost	enable_partitionwise_join	timezone	fsync	extra_float_digits	krb_caseins_users
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation must be a positive integer.
+[Ciri] Reason for recovery_min_apply_delay: recovery_min_apply_delay must be a positive integer
+[Ciri] Reason for cpu_index_tuple_cost: cpu_index_tuple_cost must be a positive real number
+[Ciri] Reason for enable_partitionwise_join: enable_partitionwise_join must be on or off.
+[Ciri] Reason for timezone: timezone must be a valid timezone.
+[Ciri] Reason for fsync: fsync must be on or off
+[Ciri] Reason for extra_float_digits: extra_float_digits must be a positive integer
+[Ciri] Reason for krb_caseins_users: krb_caseins_users must be on or off.

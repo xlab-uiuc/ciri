@@ -1,0 +1,64 @@
+Syntax	Data Type	dfs.default.chunk.view.size	9.9		
+Syntax	Data Type	dfs.replication	-5.5		
+Syntax	Data Type	dfs.namenode.blockreport.queue.size	true		
+Syntax	Data Type	httpfs.buffer.size	ciri/ciri		
+Syntax	Data Type	dfs.qjm.operations.timeout	0mm		
+Syntax	Data Type	dfs.datanode.disk.check.timeout	10nounit		
+Syntax	Data Type	dfs.datanode.disk.check.min.gap	80hhhhh		
+Syntax	Data Type	dfs.datanode.replica.cache.expiry.time	128N		
+Syntax	Path	dfs.journalnode.edits.dir	//hadoop/io/local		
+Syntax	Path	dfs.datanode.pmem.cache.dirs	/\hadoop/s3a		
+Syntax	Path	nfs.dump.dir	tmp////staging		
+Syntax	Path	dfs.namenode.shared.edits.dir	dev/urandom///		
+Syntax	URL	dfs.datanode.data.dir	file///		
+Syntax	URL	dfs.namenode.checkpoint.dir	ciri		
+Syntax	URL	dfs.datanode.data.dir	file//		
+Syntax	URL	dfs.namenode.checkpoint.dir	file:::		
+Syntax	IP Address	dfs.journalnode.http-bind-host	0.0.0		
+Syntax	IP Address	dfs.journalnode.https-bind-host	1.1.1.1.1.1		
+Syntax	IP Address	dfs.provided.aliasmap.inmemory.rpc.bind-host	2.2.2.2.2.2		
+Syntax	IP Address	dfs.namenode.rpc-bind-host	x.0.0.0.0.0		
+Syntax	Port	nfs.server.port	1.1		
+Syntax	Port	nfs.mountd.port	-100.22		
+Syntax	Port	datanode.https.port	ciri		
+Syntax	Port	dfs.datanode.http.internal-proxy.port	file://		
+Syntax	Permission	dfs.datanode.data.dir.perm	hadoop		
+Syntax	Permission	dfs.journalnode.edits.dir.perm	hbase		
+Syntax	Permission	dfs.datanode.data.dir.perm	file://		
+Syntax	Permission	dfs.journalnode.edits.dir.perm	1.1.1		
+Range	Basic Numeric	dfs.mover.retry.max.attempts	-100		
+Range	Basic Numeric	dfs.client.cached.conn.retry	-1		
+Range	Basic Numeric	dfs.default.chunk.view.size	4000000000		
+Range	Basic Numeric	dfs.client.block.write.retries	-10		
+Range	Bool	dfs.namenode.name.dir.restore	10		
+Range	Bool	dfs.permissions.enabled	hadoop		
+Range	Bool	dfs.client.block.write.replace-datanode-on-failure.best-effort	1.5		
+Range	Bool	dfs.permissions.allow.owner.set.quota	10000		
+Range	Enum	dfs.block.replicator.classname	nonono		
+Range	Enum	dfs.client.block.write.replace-datanode-on-failure.policy	NONE		
+Range	Enum	dfs.checksum.combine.mode	NOEXIST_LOCAL_DATA_CONNECTION_MODE		
+Range	Enum	dfs.xframe.value	NOEXIST_TRANSFER_MODE		
+Range	IP Address	dfs.journalnode.http-bind-host	-1.0.0.0		
+Range	IP Address	dfs.journalnode.https-bind-host	256.256.256.256		
+Range	IP Address	dfs.provided.aliasmap.inmemory.rpc.bind-host	999.-1.0.0		
+Range	IP Address	dfs.namenode.rpc-bind-host	0.0.256.0		
+Range	Port	nfs.server.port	65536		
+Range	Port	nfs.mountd.port	65536		
+Range	Port	datanode.https.port	-1		
+Range	Port	dfs.datanode.http.internal-proxy.port	-100		
+Range	Permission	dfs.datanode.data.dir.perm	999		
+Range	Permission	dfs.journalnode.edits.dir.perm	800		
+Range	Permission	dfs.datanode.data.dir.perm	080		
+Range	Permission	dfs.journalnode.edits.dir.perm	008		
+Dependency	Control	dfs.use.dfs.network.topology	false	dfs.net.topology.impl	org.apache.hadoop.hdfs.net.DFSNetworkTopology
+Dependency	Control	dfs.block.replicator.classname	org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault	dfs.namenode.available-space-block-placement-policy.balanced-space-preference-fraction	0.8
+Dependency	Control	dfs.encrypt.data.transfer	false	dfs.encrypt.data.transfer.cipher.suites	AES/CTR/NoPadding
+Dependency	Control	dfs.client.read.shortcircuit	false	dfs.client.read.shortcircuit.buffer.size	1000000
+Dependency	Value Relationship	dfs.namenode.handler.count	5	dfs.namenode.service.handler.count	10
+Dependency	Value Relationship	dfs.heartbeat.interval	40s	dfs.namenode.heartbeat.recheck-interval	30000
+Dependency	Value Relationship	dfs.blockreport.intervalMsec	35000000	dfs.namenode.stale.datanode.interval	30000
+Dependency	Value Relationship	dfs.namenode.handler.count	5	dfs.datanode.handler.count	10
+Version	Parameter Change	dfs.namenode.replication.considerLoad.factor	2.0		
+Version	Parameter Change	dfs.client.file-block-storage-locations.timeout.millis	1000		
+Version	Parameter Change	dfs.client.file-block-storage-locations.num-threads	10		
+Version	Parameter Change	dfs.namenode.replication.considerLoad	true		

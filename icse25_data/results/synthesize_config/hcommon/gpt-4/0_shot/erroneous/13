@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].weighted-cost.lockshared'], 'reason': ["The 'fs.default.name' property is deprecated and should be replaced with 'fs.defaultFS'.", "The property name 'ipc.[port_number].weighted-cost.lockshared' uses a placeholder '[port_number]' which is not a valid property name format. Property names should not contain placeholders."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	ipc.[port_number].weighted-cost.lockshared
+[Ciri] Reason for fs.default.name: The 'fs.default.name' property is deprecated and should be replaced with 'fs.defaultFS'.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: The property name 'ipc.[port_number].weighted-cost.lockshared' uses a placeholder '[port_number]' which is not a valid property name format. Property names should not contain placeholders.

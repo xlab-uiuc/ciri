@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.worker.timeout=1sec', 'alluxio.master.persistence.initial.interval=1s'], 'reason': ["The property 'alluxio.job.master.worker.timeout' is not a valid Alluxio configuration property in version 2.5.0. It was introduced in a later version.", "The property 'alluxio.master.persistence.initial.interval' expects a duration value in the format of a number followed by a time unit (e.g., 1m, 30s). The value '1s' is not a valid duration format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.worker.timeout=1sec	alluxio.master.persistence.initial.interval=1s
+[Ciri] Reason for alluxio.job.master.worker.timeout=1sec: The property 'alluxio.job.master.worker.timeout' is not a valid Alluxio configuration property in version 2.5.0. It was introduced in a later version.
+[Ciri] Reason for alluxio.master.persistence.initial.interval=1s: The property 'alluxio.master.persistence.initial.interval' expects a duration value in the format of a number followed by a time unit (e.g., 1m, 30s). The value '1s' is not a valid duration format.

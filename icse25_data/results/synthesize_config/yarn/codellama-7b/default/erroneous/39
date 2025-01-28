@@ -1,0 +1,26 @@
+Wrong shot number:
+[5, 3, 10]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.sharedcache.client-server.address'], 'reason': ["The property 'yarn.sharedcache.client-server.address' has the value '0.0.0.0:8045' which does not follow the correct IP address format."]}
+
+{'hasError': True, 'errParameter': ['yarn.client.nodemanager-client-async.thread-pool-max-size'], 'reason': ["The property 'yarn.client.nodemanager-client-async.thread-pool-max-size' has the value '250' which is not within the accepted value {1000,10000}."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.numa-awareness.numactl.cmd'], 'reason': ["The property 'yarn.nodemanager.numa-awareness.numactl.cmd' has the value '/usr/bin/numactl' which is not within the accepted value {/usr/bin/numactl,/usr/sbin/numactl}."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.zk-num-retries'], 'reason': ["The property 'yarn.resourcemanager.zk-num-retries' has the value '1000' which is not within the accepted range [1, 1000000]."]}
+
+{'hasError': True, 'errParameter': ['yarn.client.nodemanager-client-async.thread-pool-max-size'], 'reason': ["The property 'yarn.client.nodemanager-client-async.thread-pool-max-size' has the value '250' which is not within the accepted value range [1, 2147483647]."]}
+
+{'hasError': True, 'errParameter': ['yarn.client.nodemanager-client-async.thread-pool-max-size'], 'reason': ["The property 'yarn.client.nodemanager-client-async.thread-pool-max-size' has the value '250' which is not within the accepted value range [0, 1000]."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.client.nodemanager-client-async.thread-pool-max-size
+[Ciri] Reason for yarn.client.nodemanager-client-async.thread-pool-max-size: The property 'yarn.client.nodemanager-client-async.thread-pool-max-size' has the value '250' which is not within the accepted value range [0, 1000].

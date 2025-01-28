@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 11, 2]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.work.dir', 'alluxio.zookeeper.job.leader.path'], 'reason': ["The property 'alluxio.work.dir' has the value '/valid/dir1' which is not a valid directory path.", "The property 'alluxio.zookeeper.job.leader.path' has the value '/valid/file2' which is not a valid file path."]}
+
+{'hasError': True, 'errParameter': ['alluxio.work.dir'], 'reason': ["The property 'alluxio.work.dir' has the value '/valid/dir1' which is not a valid directory."]}
+
+{'hasError': True, 'errParameter': ['alluxio.work.dir'], 'reason': ["The property 'alluxio.work.dir' has the value '/valid/dir1' which is not a valid directory."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.work.dir
+[Ciri] Reason for alluxio.work.dir: The property 'alluxio.work.dir' has the value '/valid/dir1' which is not a valid directory.

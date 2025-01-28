@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'ipc.[port_number].scheduler.impl'], 'reason': ["The property 'fs.ftp.data.connection.mode' has a usage field which is not a standard field in the configuration file for hcommon version 3.3.0.", "The property 'ipc.[port_number].scheduler.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.impl', 'ha.failover-controller.cli-check.rpc-timeout.ms'], 'reason': ["The parameter 'ipc.[port_number].scheduler.impl' is not a valid configuration property for hcommon version 3.3.0.", "The parameter 'ha.failover-controller.cli-check.rpc-timeout.ms' is not a valid configuration property for hcommon version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.impl'], 'reason': ["The parameter name 'ipc.[port_number].scheduler.impl' is not a valid parameter name. It seems to be a placeholder '[port_number]' instead of an actual port number."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'ipc.[port_number].scheduler.impl'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an incorrect usage field.", "The property 'ipc.[port_number].scheduler.impl' has an incorrect description field."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'ipc.[port_number].scheduler.impl'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are 'ACTIVE_LOCAL_DATA_CONNECTION_MODE', 'PASSIVE_LOCAL_DATA_CONNECTION_MODE', and 'PASSIVE_REMOTE_DATA_CONNECTION_MODE'.", "The property 'ipc.[port_number].scheduler.impl' is missing the actual port number in the name. It should be replaced with the specific port number where the scheduler is configured."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.impl', 'ha.failover-controller.cli-check.rpc-timeout.ms'], 'reason': ["The parameter 'ipc.[port_number].scheduler.impl' is not a valid configuration property for hcommon version 3.3.0.", "The parameter 'ha.failover-controller.cli-check.rpc-timeout.ms' is not a valid configuration property for hcommon version 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.data.connection.mode	ipc.[port_number].scheduler.impl
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are 'ACTIVE_LOCAL_DATA_CONNECTION_MODE', 'PASSIVE_LOCAL_DATA_CONNECTION_MODE', and 'PASSIVE_REMOTE_DATA_CONNECTION_MODE'.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The property 'ipc.[port_number].scheduler.impl' has an incorrect description field.

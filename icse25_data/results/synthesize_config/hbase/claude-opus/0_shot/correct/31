@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.scanner.caching', 'hbase.hstore.blockingWaitTime'], 'reason': ["Setting hbase.client.scanner.caching to 1073741823 (Integer.MAX_VALUE) is not recommended as it can cause out of memory issues on the client side. It's better to set it to a reasonable value based on your use case and available memory.", "The default value for hbase.hstore.blockingWaitTime in HBase 2.2.7 is 30000 ms (30 seconds). Setting it to 90000 ms (90 seconds) is not a mistake per se, but it's a significant increase from the default which may not be necessary and could potentially delay compactions."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.client.scanner.caching	hbase.hstore.blockingWaitTime
+[Ciri] Reason for hbase.client.scanner.caching: Setting hbase.client.scanner.caching to 1073741823 (Integer.MAX_VALUE) is not recommended as it can cause out of memory issues on the client side. It's better to set it to a reasonable value based on your use case and available memory.
+[Ciri] Reason for hbase.hstore.blockingWaitTime: The default value for hbase.hstore.blockingWaitTime in HBase 2.2.7 is 30000 ms (30 seconds). Setting it to 90000 ms (90 seconds) is not a mistake per se, but it's a significant increase from the default which may not be necessary and could potentially delay compactions.

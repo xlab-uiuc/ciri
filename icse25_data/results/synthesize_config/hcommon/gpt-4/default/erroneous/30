@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 1, 11]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].scheduler.impl'], 'reason': ["The property 'fs.default.name' is deprecated and should be replaced with 'fs.defaultFS'.", "The property 'ipc.[port_number].scheduler.impl' uses a placeholder '[port_number]' which should be replaced with an actual port number."]}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].scheduler.impl'], 'reason': ["The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' property instead.", "The property 'ipc.[port_number].scheduler.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number."]}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].scheduler.impl'], 'reason': ["The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' property instead.", "The property 'ipc.[port_number].scheduler.impl' uses a placeholder '[port_number]' which should be replaced with an actual port number."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	ipc.[port_number].scheduler.impl
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' property instead.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The property 'ipc.[port_number].scheduler.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'cluster-announce-port', 'appenddirname'], 'reason': ['The value 65536 for cluster-announce-tls-port is invalid. It should be between 0 and 65535.', 'The value 1 for cluster-announce-port is invalid. It should be between 10000 and 65535.', "The parameter 'appenddirname' is not a valid Redis configuration parameter."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-tls-port	cluster-announce-port	appenddirname
+[Ciri] Reason for cluster-announce-tls-port: The value 65536 for cluster-announce-tls-port is invalid. It should be between 0 and 65535.
+[Ciri] Reason for cluster-announce-port: The value 1 for cluster-announce-port is invalid. It should be between 10000 and 65535.
+[Ciri] Reason for appenddirname: The parameter 'appenddirname' is not a valid Redis configuration parameter.

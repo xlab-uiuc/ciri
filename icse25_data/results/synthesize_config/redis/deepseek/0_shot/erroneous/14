@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr=2.2.2.2.2.2'], 'reason': ['Invalid IP address']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['bind-source-addr=2.2.2.2.2.2', 'replica-serve-stale-data=yes', 'tls-ca-cert-file=ca.crt', 'cluster-config-file=nodes-6379.conf'], 'reason': ['Invalid IP address in bind-source-addr', "Invalid value for replica-serve-stale-data. Valid options are 'yes' or 'no'", "File 'ca.crt' does not exist", "File 'nodes-6379.conf' does not exist"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr=2.2.2.2.2.2'], 'reason': ['Invalid IP address format']}
+
+{'hasError': True, 'errParameter': ['bind-source-addr=2.2.2.2.2.2'], 'reason': ['Invalid IP address']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: bind-source-addr=2.2.2.2.2.2
+[Ciri] Reason for bind-source-addr=2.2.2.2.2.2: Invalid IP address

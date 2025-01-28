@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.client.failover-retries', 'yarn.resourcemanager.configuration.file-system-based-store', 'yarn.timeline-service.entity-group-fs-store.done-dir'], 'reason': ['The value of yarn.client.failover-retries should be a positive integer, not -1.', "The value of yarn.resourcemanager.configuration.file-system-based-store should be a valid file path, but '/valid/file2' is not a valid path.", "The value of yarn.timeline-service.entity-group-fs-store.done-dir should be a valid file path, but '/valid/file2' is not a valid path."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.client.failover-retries	yarn.resourcemanager.configuration.file-system-based-store	yarn.timeline-service.entity-group-fs-store.done-dir
+[Ciri] Reason for yarn.client.failover-retries: The value of yarn.client.failover-retries should be a positive integer, not -1.
+[Ciri] Reason for yarn.resourcemanager.configuration.file-system-based-store: The value of yarn.resourcemanager.configuration.file-system-based-store should be a valid file path, but '/valid/file2' is not a valid path.
+[Ciri] Reason for yarn.timeline-service.entity-group-fs-store.done-dir: The value of yarn.timeline-service.entity-group-fs-store.done-dir should be a valid file path, but '/valid/file2' is not a valid path.

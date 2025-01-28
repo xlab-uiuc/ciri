@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.recovery.enabled', 'yarn.nodemanager.resourcemanager.minimum.version'], 'reason': ["The property 'yarn.resourcemanager.recovery.enabled' is set to 'false', but when it is set to 'false', the 'yarn.resourcemanager.store.class' property must be specified as well. This property is missing in the configuration.", "The value 'NONE' for the property 'yarn.nodemanager.resourcemanager.minimum.version' is not a valid value in YARN 3.3.0. The valid values are 'EqualToNM' or a specific version string."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.recovery.enabled	yarn.nodemanager.resourcemanager.minimum.version
+[Ciri] Reason for yarn.resourcemanager.recovery.enabled: The property 'yarn.resourcemanager.recovery.enabled' is set to 'false', but when it is set to 'false', the 'yarn.resourcemanager.store.class' property must be specified as well. This property is missing in the configuration.
+[Ciri] Reason for yarn.nodemanager.resourcemanager.minimum.version: The value 'NONE' for the property 'yarn.nodemanager.resourcemanager.minimum.version' is not a valid value in YARN 3.3.0. The valid values are 'EqualToNM' or a specific version string.

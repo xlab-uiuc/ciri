@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 8, 10]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy'], 'reason': ["The property 'hbase.regionserver.region.split.policy' has the value 'org.apache.hadoop.hbase.regionserver.SteppingSplitPolicy' which is not a valid class name."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy'], 'reason': ["The property 'hbase.regionserver.region.split.policy' has the value 'org.apache.hadoop.hbase.regionserver.SteppingSplitPolicy' which is not a valid split policy."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy'], 'reason': ["The property 'hbase.regionserver.region.split.policy' has the value 'org.apache.hadoop.hbase.regionserver.SteppingSplitPolicy' which is not a valid split policy for HBase version 2.2.7."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.region.split.policy
+[Ciri] Reason for hbase.regionserver.region.split.policy: The property 'hbase.regionserver.region.split.policy' has the value 'org.apache.hadoop.hbase.regionserver.SteppingSplitPolicy' which is not a valid split policy for HBase version 2.2.7.

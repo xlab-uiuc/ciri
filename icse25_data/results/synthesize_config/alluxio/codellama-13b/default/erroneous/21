@@ -1,0 +1,20 @@
+Wrong shot number:
+[9, 2, 11]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.oss.connection.ttl', 'alluxio.zookeeper.election.path'], 'reason': ["The property 'alluxio.job.worker.web.port' has the value 'file://' which is not a valid port number.", "The property 'alluxio.underfs.oss.connection.ttl' has the value '-2' which is not a valid time duration.", "The property 'alluxio.zookeeper.election.path' has the value '/valid/file2' which is not a valid zookeeper path."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.oss.connection.ttl', 'alluxio.zookeeper.election.path'], 'reason': ["The property 'alluxio.job.worker.web.port' has the value 'file://' which is not a valid port number.", "The property 'alluxio.underfs.oss.connection.ttl' has the value '-2' which is not a valid time duration.", "The property 'alluxio.zookeeper.election.path' has the value '/valid/file2' which is not a valid zookeeper path."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.oss.connection.ttl', 'alluxio.zookeeper.election.path'], 'reason': ["The property 'alluxio.job.worker.web.port' has the value 'file://' which is not a valid port number.", "The property 'alluxio.underfs.oss.connection.ttl' has the value '-2' which is not a valid time duration.", "The property 'alluxio.zookeeper.election.path' has the value '/valid/file2' which is not a valid zookeeper path."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.worker.web.port	alluxio.underfs.oss.connection.ttl	alluxio.zookeeper.election.path
+[Ciri] Reason for alluxio.job.worker.web.port: The property 'alluxio.job.worker.web.port' has the value 'file://' which is not a valid port number.
+[Ciri] Reason for alluxio.underfs.oss.connection.ttl: The property 'alluxio.underfs.oss.connection.ttl' has the value '-2' which is not a valid time duration.
+[Ciri] Reason for alluxio.zookeeper.election.path: The property 'alluxio.zookeeper.election.path' has the value '/valid/file2' which is not a valid zookeeper path.

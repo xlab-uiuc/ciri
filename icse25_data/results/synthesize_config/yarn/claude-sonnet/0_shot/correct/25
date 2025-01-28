@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.local-dirs', 'yarn.nodemanager.runtime.linux.docker.default-container-network', 'yarn.nodemanager.runtime.linux.docker.userremapping-uid-threshold', 'yarn.timeline-service.hostname'], 'reason': ['The value for yarn.nodemanager.local-dirs should be a comma-separated list of directories, not a single directory.', "The value for yarn.nodemanager.runtime.linux.docker.default-container-network should be one of the allowed container networks, such as 'host', 'bridge', or 'none'. The value 'host' is not recommended for security reasons.", 'The property yarn.nodemanager.runtime.linux.docker.userremapping-uid-threshold is not a valid property in YARN 3.3.0.', "The value for yarn.timeline-service.hostname should be a valid hostname or IP address, not '127.0.0.1' which is a loopback address."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: yarn.nodemanager.local-dirs	yarn.nodemanager.runtime.linux.docker.default-container-network	yarn.nodemanager.runtime.linux.docker.userremapping-uid-threshold	yarn.timeline-service.hostname
+[Ciri] Reason for yarn.nodemanager.local-dirs: The value for yarn.nodemanager.local-dirs should be a comma-separated list of directories, not a single directory.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.docker.default-container-network: The value for yarn.nodemanager.runtime.linux.docker.default-container-network should be one of the allowed container networks, such as 'host', 'bridge', or 'none'. The value 'host' is not recommended for security reasons.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.docker.userremapping-uid-threshold: The property yarn.nodemanager.runtime.linux.docker.userremapping-uid-threshold is not a valid property in YARN 3.3.0.
+[Ciri] Reason for yarn.timeline-service.hostname: The value for yarn.timeline-service.hostname should be a valid hostname or IP address, not '127.0.0.1' which is a loopback address.

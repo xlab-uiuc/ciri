@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.azure.authorization', 'hadoop.http.authentication.cookie.domain'], 'reason': ["The property 'fs.azure.authorization' has an additional 'usage' element which is not standard for hcommon version 3.3.0.", "The property 'hadoop.http.authentication.cookie.domain' contains an IP address '256.256.256.256' which is not a valid domain."]}
+
+{'hasError': True, 'errParameter': ['fs.azure.authorization', 'hadoop.http.authentication.cookie.domain'], 'reason': ["The property 'fs.azure.authorization' has an additional 'usage' element which is not standard for hcommon version 3.3.0.", "The property 'hadoop.http.authentication.cookie.domain' contains an IP address in the value which may cause issues with cookie domain settings."]}
+
+{'hasError': True, 'errParameter': ['fs.azure.authorization', 'hadoop.http.authentication.cookie.domain'], 'reason': ["The property 'fs.azure.authorization' has an additional 'usage' tag which is not standard for hcommon version 3.3.0.", "The property 'hadoop.http.authentication.cookie.domain' contains an IP address '256.256.256.256' which is not a valid domain."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.azure.authorization	hadoop.http.authentication.cookie.domain
+[Ciri] Reason for fs.azure.authorization: The property 'fs.azure.authorization' has an additional 'usage' element which is not standard for hcommon version 3.3.0.
+[Ciri] Reason for hadoop.http.authentication.cookie.domain: The property 'hadoop.http.authentication.cookie.domain' contains an IP address '256.256.256.256' which is not a valid domain.

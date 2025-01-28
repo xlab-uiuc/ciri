@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.min', 'alluxio.user.network.rpc.max.connections', 'alluxio.user.file.sequential.pread.threshold', 'alluxio.user.network.rpc.keepalive.timeout'], 'reason': ['alluxio.user.file.replication.min should be greater than 0', 'alluxio.user.network.rpc.max.connections should be greater than 0', 'alluxio.user.file.sequential.pread.threshold should be greater than 4MB', 'alluxio.user.network.rpc.keepalive.timeout should be greater than 60sec']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.min'], 'reason': ['alluxio.user.file.replication.min should be greater than or equal to 1']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.min', 'alluxio.user.network.rpc.max.connections', 'alluxio.user.file.sequential.pread.threshold', 'alluxio.user.network.rpc.keepalive.timeout'], 'reason': ['alluxio.user.file.replication.min should be greater than or equal to 1', 'alluxio.user.network.rpc.max.connections should be greater than or equal to 0', 'alluxio.user.file.sequential.pread.threshold should be greater than or equal to 4MB', 'alluxio.user.network.rpc.keepalive.timeout should be greater than or equal to 1sec']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.user.file.replication.min	alluxio.user.network.rpc.max.connections	alluxio.user.file.sequential.pread.threshold	alluxio.user.network.rpc.keepalive.timeout
+[Ciri] Reason for alluxio.user.file.replication.min: alluxio.user.file.replication.min should be greater than or equal to 1
+[Ciri] Reason for alluxio.user.network.rpc.max.connections: alluxio.user.network.rpc.max.connections should be greater than 0
+[Ciri] Reason for alluxio.user.file.sequential.pread.threshold: alluxio.user.file.sequential.pread.threshold should be greater than or equal to 4MB
+[Ciri] Reason for alluxio.user.network.rpc.keepalive.timeout: alluxio.user.network.rpc.keepalive.timeout should be greater than 60sec

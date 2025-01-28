@@ -1,0 +1,26 @@
+Wrong shot number:
+[2, 3, 11]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.peerport'], 'reason': ["The property 'hbase.zookeeper.peerport' should have a value within the valid port range (0-65535)."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.peerport', 'hbase.server.versionfile.writeattempts'], 'reason': ["The property 'hbase.zookeeper.peerport' should have a value within the valid port range.", "The property 'hbase.server.versionfile.writeattempts' should have a lower value to prevent excessive retries."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.peerport', 'hbase.server.versionfile.writeattempts', 'hbase.hstore.blockingWaitTime', 'hbase.regionserver.keytab.file'], 'reason': ["The property 'hbase.zookeeper.peerport' should have a value within the valid port range.", "The property 'hbase.server.versionfile.writeattempts' should have a positive integer value.", "The property 'hbase.hstore.blockingWaitTime' should have a positive integer value representing time in milliseconds.", "The property 'hbase.regionserver.keytab.file' should have a valid file path."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.peerport'], 'reason': ["The property 'hbase.zookeeper.peerport' should have a value within the valid port range (0-65535)."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.peerport', 'hbase.server.versionfile.writeattempts'], 'reason': ["The property 'hbase.zookeeper.peerport' should have a value greater than 1024.", "The property 'hbase.server.versionfile.writeattempts' should have a value greater than 0."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.peerport'], 'reason': ["The property 'hbase.zookeeper.peerport' should have a value within the valid port range (0-65535)."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.zookeeper.peerport
+[Ciri] Reason for hbase.zookeeper.peerport: The property 'hbase.zookeeper.peerport' should have a value within the valid port range (0-65535).

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.safemode.threshold-pct</name>
+  <value>1.998</value>
+  <description>
+    Specifies the percentage of blocks that should satisfy 
+    the minimal replication requirement defined by dfs.namenode.replication.min.
+    Values less than or equal to 0 mean not to wait for any particular
+    percentage of blocks before exiting safemode.
+    Values greater than 1 will make safe mode permanent.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.checkpoint.txns</name>
+  <value>500000</value>
+  <description>The Secondary NameNode or CheckpointNode will create a checkpoint
+  of the namespace every 'dfs.namenode.checkpoint.txns' transactions, regardless
+  of whether 'dfs.namenode.checkpoint.period' has expired.
+  </description>
+</property>
+
+<property>
+  <name>dfs.short.circuit.shared.memory.watcher.interrupt.check.ms</name>
+  <value>60000</value>
+  <description>
+    The length of time in milliseconds that the short-circuit shared memory
+    watcher will go between checking for java interruptions sent from other
+    threads.  This is provided mainly for unit tests.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reencrypt.sleep.interval</name>
+  <value>10m</value>
+  <description>Interval the re-encrypt EDEK thread sleeps in the main loop. The
+    interval accepts units. If none given, millisecond is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.hosts.provider.classname</name>
+  <value>org.apache.hadoop.hdfs.server.blockmanagement.HostFileManager</value>
+  <description>
+    The class that provides access for host files.
+    org.apache.hadoop.hdfs.server.blockmanagement.HostFileManager is used
+    by default which loads files specified by dfs.hosts and dfs.hosts.exclude.
+    If org.apache.hadoop.hdfs.server.blockmanagement.CombinedHostFileManager is
+    used, it will load the JSON file defined in dfs.hosts.
+    To change class name, nn restart is required. "dfsadmin -refreshNodes" only
+    refreshes the configuration files used by the class.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.block.reader.remote.buffer.size</name>
+  <value>1024</value>
+    <description>
+      The output stream buffer size of a DFSClient remote read. The buffer default value is 512B. The buffer includes
+      only some request parameters that are: block, blockToken, clientName, startOffset, len, verifyChecksum,
+      cachingStrategy.
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.audit.log.async</name>
+  <value>true</value>
+  <description>
+    If true, enables asynchronous audit log.
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.accept-recovery.timeout.ms</name>
+  <value>120000</value>
+  <description>
+    Quorum timeout in milliseconds during accept phase of
+    recovery/synchronization for a specific segment.
+  </description>
+</property>
+
+</configuration>

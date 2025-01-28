@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms', 'yarn.nodemanager.remote-app-log-dir'], 'reason': ['The value for yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms is set to an extremely high value of 4000000000 milliseconds (around 46 days). This is likely a mistake, as the recommended value is usually in the range of a few minutes.', 'The value for yarn.nodemanager.remote-app-log-dir is set to /tmp/logs, which is a temporary directory that may be cleared periodically. It is recommended to use a more persistent directory for log aggregation.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms	yarn.nodemanager.remote-app-log-dir
+[Ciri] Reason for yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms: The value for yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms is set to an extremely high value of 4000000000 milliseconds (around 46 days). This is likely a mistake, as the recommended value is usually in the range of a few minutes.
+[Ciri] Reason for yarn.nodemanager.remote-app-log-dir: The value for yarn.nodemanager.remote-app-log-dir is set to /tmp/logs, which is a temporary directory that may be cleared periodically. It is recommended to use a more persistent directory for log aggregation.

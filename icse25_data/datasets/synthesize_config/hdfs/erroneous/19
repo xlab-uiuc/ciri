@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.volumes.replica-add.threadpool.size</name>
+  <value>0.1</value>
+  <description>Specifies the maximum number of threads to use for
+  adding block in volume. Default value for this configuration is
+  max of (volume * number of bp_service, number of processor).
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.drop.cache.behind.writes</name>
+  <value>true</value>
+  <description>
+        In some workloads, the data written to HDFS is known to be significantly
+        large enough that it is unlikely to be useful to cache it in the
+        operating system buffer cache. In this case, the DataNode may be
+        configured to automatically purge all data from the buffer cache
+        after it is written to disk.
+
+        This may improve performance for some workloads by freeing buffer
+        cache space usage for more cacheable data.
+
+        If the Hadoop native libraries are not available, this configuration
+        has no effect.
+  </description>
+</property>
+
+<property>
+  <name>dfs.webhdfs.ugi.expire.after.access</name>
+  <value>1200000</value>
+    <description>How long in milliseconds after the last access
+      the cached UGI will expire. With 0, never expire.
+    </description>
+</property>
+
+<property>
+  <name>dfs.mover.keytab.enabled</name>
+  <value>true</value>
+  <description>
+    Set to true to enable login using a keytab for Kerberized Hadoop.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.available-space-block-placement-policy.balance-local-node</name>
+  <value>true</value>
+  <description>
+    Only used when the dfs.block.replicator.classname is set to
+    org.apache.hadoop.hdfs.server.blockmanagement.AvailableSpaceBlockPlacementPolicy.
+    If true, balances the local node too.
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.select-input-streams.timeout.ms</name>
+  <value>40000</value>
+  <description>
+    Timeout in milliseconds for accepting streams from JournalManagers.
+  </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.inmemory.rpc.bind-host</name>
+  <value>2.2.2.2.2.2</value>
+    <description>
+      The actual address the in-memory aliasmap server will bind to.
+      If this optional address is set, it overrides the hostname portion of
+      dfs.provided.aliasmap.inmemory.rpc.address.
+      This is useful for making the name node listen on all interfaces by
+      setting it to 0.0.0.0.
+    </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.load.retries</name>
+  <value>0</value>
+    <description>
+      The number of retries on the Datanode to load the provided aliasmap;
+      defaults to 0.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_DOMAIN', 'DATABASES', 'TEMPLATES'], 'reason': ["CSRF_COOKIE_DOMAIN should typically be set to a specific domain if CSRF protection needs to be enabled across subdomains. If not required, it's better to not include it rather than setting it to None.", 'DATABASES configuration is empty. Django applications usually require a database setup to function properly. It should at least have a default configuration.', "TEMPLATES configuration is empty. Django needs this configuration to locate and render templates. An empty TEMPLATES configuration means Django won't be able to render any views."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: CSRF_COOKIE_DOMAIN	DATABASES	TEMPLATES
+[Ciri] Reason for CSRF_COOKIE_DOMAIN: CSRF_COOKIE_DOMAIN should typically be set to a specific domain if CSRF protection needs to be enabled across subdomains. If not required, it's better to not include it rather than setting it to None.
+[Ciri] Reason for DATABASES: DATABASES configuration is empty. Django applications usually require a database setup to function properly. It should at least have a default configuration.
+[Ciri] Reason for TEMPLATES: TEMPLATES configuration is empty. Django needs this configuration to locate and render templates. An empty TEMPLATES configuration means Django won't be able to render any views.

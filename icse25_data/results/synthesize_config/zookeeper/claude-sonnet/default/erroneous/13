@@ -1,0 +1,15 @@
+Wrong shot number:
+[1, 8, 6]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'standaloneEnabled'], 'reason': ["The property 'secureClientPort' has the value '1.1' which is not a valid port number.", "The properties 'standaloneEnabled' and 'quorum.auth.enableSasl' are mutually exclusive. If 'standaloneEnabled' is true, 'quorum.auth.enableSasl' should be false."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPort	standaloneEnabled
+[Ciri] Reason for secureClientPort: The property 'secureClientPort' has the value '1.1' which is not a valid port number.
+[Ciri] Reason for standaloneEnabled: The properties 'standaloneEnabled' and 'quorum.auth.enableSasl' are mutually exclusive. If 'standaloneEnabled' is true, 'quorum.auth.enableSasl' should be false.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 3, 6]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-tls', 'enable-v2'], 'reason': ["The 'auto-tls' feature is not recommended for production use as it automatically generates self-signed TLS certificates for securing etcd communication, which might not be secure enough for all use cases.", "The 'enable-v2' API is deprecated and should not be used in new clusters."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: auto-tls	enable-v2
+[Ciri] Reason for auto-tls: The 'auto-tls' feature is not recommended for production use as it automatically generates self-signed TLS certificates for securing etcd communication, which might not be secure enough for all use cases.
+[Ciri] Reason for enable-v2: The 'enable-v2' API is deprecated and should not be used in new clusters.

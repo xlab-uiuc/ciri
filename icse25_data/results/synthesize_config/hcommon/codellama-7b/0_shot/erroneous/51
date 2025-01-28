@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The umask used when creating files and directories. Can be in octal or in symbolic. Examples are: '022' (octal for u=rwx,g=r-x,o=r-x in symbolic), or 'u=rwx,g=rwx,o=' (symbolic for 007 in octal)."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.executor.capacity', 'fs.permissions.umask-mode', 'hadoop.security.java.secure.random.algorithm', 'hadoop.registry.zk.retry.interval.ms', 'hadoop.registry.secure', 'hadoop.registry.system.acls'], 'reason': ['fs.s3a.executor.capacity is not a valid property', 'fs.permissions.umask-mode is not a valid property', 'hadoop.security.java.secure.random.algorithm is not a valid property', 'hadoop.registry.zk.retry.interval.ms is not a valid property', 'hadoop.registry.secure is not a valid property', 'hadoop.registry.system.acls is not a valid property']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.executor.capacity'], 'reason': ['The value of fs.s3a.executor.capacity is less than 1.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.executor.capacity'], 'reason': ['fs.s3a.executor.capacity is not a valid configuration property.']}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The value of fs.permissions.umask-mode is not a valid umask. It must be in octal or in symbolic. Examples are: '022' (octal for u=rwx,g=r-x,o=r-x in symbolic), or 'u=rwx,g=rwx,o=' (symbolic for 007 in octal)."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.s3a.executor.capacity
+[Ciri] Reason for fs.s3a.executor.capacity: fs.s3a.executor.capacity is not a valid configuration property.

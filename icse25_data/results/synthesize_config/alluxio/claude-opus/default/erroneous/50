@@ -1,0 +1,15 @@
+Wrong shot number:
+[6, 11, 12]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.persistence.initial.wait.time', 'alluxio.master.tieredstore.global.level2.alias'], 'reason': ["The value of the property 'alluxio.user.file.persistence.initial.wait.time' should be smaller than the value of the property 'alluxio.master.persistence.max.total.wait.time'.", "The property 'alluxio.master.tieredstore.global.level2.alias' is set but the property 'alluxio.worker.tieredstore.levels' is not set to a value greater than 1 in the previous configurations."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.file.persistence.initial.wait.time	alluxio.master.tieredstore.global.level2.alias
+[Ciri] Reason for alluxio.user.file.persistence.initial.wait.time: The value of the property 'alluxio.user.file.persistence.initial.wait.time' should be smaller than the value of the property 'alluxio.master.persistence.max.total.wait.time'.
+[Ciri] Reason for alluxio.master.tieredstore.global.level2.alias: The property 'alluxio.master.tieredstore.global.level2.alias' is set but the property 'alluxio.worker.tieredstore.levels' is not set to a value greater than 1 in the previous configurations.

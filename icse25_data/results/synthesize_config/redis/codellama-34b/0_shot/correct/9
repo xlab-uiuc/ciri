@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-policy', 'replica-announce-ip', 'pidfile'], 'reason': ['maxmemory-policy must be one of: volatile-lru, allkeys-lru, volatile-random, allkeys-random, volatile-ttl, noeviction', 'replica-announce-ip is only valid when replica-announce-port is set', 'pidfile is not a valid file']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: maxmemory-policy	replica-announce-ip	pidfile
+[Ciri] Reason for maxmemory-policy: maxmemory-policy must be one of: volatile-lru, allkeys-lru, volatile-random, allkeys-random, volatile-ttl, noeviction
+[Ciri] Reason for replica-announce-ip: replica-announce-ip is only valid when replica-announce-port is set
+[Ciri] Reason for pidfile: pidfile is not a valid file

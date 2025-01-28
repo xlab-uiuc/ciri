@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_receiver_timeout', 'max_parallel_maintenance_workers'], 'reason': ['wal_receiver_timeout is not a valid parameter', 'max_parallel_maintenance_workers is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['wal_receiver_timeout', 'max_parallel_maintenance_workers'], 'reason': ["wal_receiver_timeout should be a string in the format 'integer seconds' or 'integer ms'", 'max_parallel_maintenance_workers should be an integer greater than 0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: wal_receiver_timeout	max_parallel_maintenance_workers
+[Ciri] Reason for wal_receiver_timeout: wal_receiver_timeout is not a valid parameter
+[Ciri] Reason for max_parallel_maintenance_workers: max_parallel_maintenance_workers is not a valid parameter

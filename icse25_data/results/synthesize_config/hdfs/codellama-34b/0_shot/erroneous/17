@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.permissions.enabled', 'dfs.journalnode.http-bind-host', 'dfs.namenode.top.window.num.buckets', 'dfs.webhdfs.rest-csrf.custom-header', 'dfs.client.read.striped.threadpool.size', 'dfs.storage.policy.satisfier.recheck.timeout.millis', 'dfs.pipeline.ecn', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ['The value of dfs.permissions.enabled is not a boolean', 'The value of dfs.journalnode.http-bind-host is not an IP address', 'The value of dfs.namenode.top.window.num.buckets is not a positive integer', 'The value of dfs.webhdfs.rest-csrf.custom-header is not a string', 'The value of dfs.client.read.striped.threadpool.size is not a positive integer', 'The value of dfs.storage.policy.satisfier.recheck.timeout.millis is not a positive integer', 'The value of dfs.pipeline.ecn is not a boolean', 'The value of dfs.provided.aliasmap.leveldb.path is not a file path']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.permissions.enabled	dfs.journalnode.http-bind-host	dfs.namenode.top.window.num.buckets	dfs.webhdfs.rest-csrf.custom-header	dfs.client.read.striped.threadpool.size	dfs.storage.policy.satisfier.recheck.timeout.millis	dfs.pipeline.ecn	dfs.provided.aliasmap.leveldb.path
+[Ciri] Reason for dfs.permissions.enabled: The value of dfs.permissions.enabled is not a boolean
+[Ciri] Reason for dfs.journalnode.http-bind-host: The value of dfs.journalnode.http-bind-host is not an IP address
+[Ciri] Reason for dfs.namenode.top.window.num.buckets: The value of dfs.namenode.top.window.num.buckets is not a positive integer
+[Ciri] Reason for dfs.webhdfs.rest-csrf.custom-header: The value of dfs.webhdfs.rest-csrf.custom-header is not a string
+[Ciri] Reason for dfs.client.read.striped.threadpool.size: The value of dfs.client.read.striped.threadpool.size is not a positive integer
+[Ciri] Reason for dfs.storage.policy.satisfier.recheck.timeout.millis: The value of dfs.storage.policy.satisfier.recheck.timeout.millis is not a positive integer
+[Ciri] Reason for dfs.pipeline.ecn: The value of dfs.pipeline.ecn is not a boolean
+[Ciri] Reason for dfs.provided.aliasmap.leveldb.path: The value of dfs.provided.aliasmap.leveldb.path is not a file path

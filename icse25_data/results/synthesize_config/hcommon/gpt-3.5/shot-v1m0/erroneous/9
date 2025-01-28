@@ -1,0 +1,14 @@
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.defaultFS', 'ipc.server.log.slow.rpc', 'ipc.[port_number].callqueue.impl'], 'reason': ["Property 'io.seqfile.local.dir' has an extra 'usage' tag which is not a valid property element.", "Property 'fs.defaultFS' has an extra 'usage' tag which is not a valid property element.", "Property 'ipc.server.log.slow.rpc' has an extra indentation in the description.", "Property 'ipc.[port_number].callqueue.impl' has an invalid placeholder '[port_number]' in the name."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: io.seqfile.local.dir	fs.defaultFS	ipc.server.log.slow.rpc	ipc.[port_number].callqueue.impl
+[Ciri] Reason for io.seqfile.local.dir: Property 'io.seqfile.local.dir' has an extra 'usage' tag which is not a valid property element.
+[Ciri] Reason for fs.defaultFS: Property 'fs.defaultFS' has an extra 'usage' tag which is not a valid property element.
+[Ciri] Reason for ipc.server.log.slow.rpc: Property 'ipc.server.log.slow.rpc' has an extra indentation in the description.
+[Ciri] Reason for ipc.[port_number].callqueue.impl: Property 'ipc.[port_number].callqueue.impl' has an invalid placeholder '[port_number]' in the name.

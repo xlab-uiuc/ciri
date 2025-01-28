@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.connection.ssl.enabled', 'fs.s3a.metadatastore.fail.on.write.error', 'fs.s3a.select.input.csv.record.delimiter', 'ipc.server.max.connections'], 'reason': ["The value for fs.s3a.connection.ssl.enabled should be 'true' or 'false'.", "The value for fs.s3a.metadatastore.fail.on.write.error should be 'true' or 'false'.", "The value for fs.s3a.select.input.csv.record.delimiter should be an actual newline character instead of '\\n'.", "The value for ipc.server.max.connections should be a positive integer or '0' for no limit."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.s3a.connection.ssl.enabled	fs.s3a.metadatastore.fail.on.write.error	fs.s3a.select.input.csv.record.delimiter	ipc.server.max.connections
+[Ciri] Reason for fs.s3a.connection.ssl.enabled: The value for fs.s3a.connection.ssl.enabled should be 'true' or 'false'.
+[Ciri] Reason for fs.s3a.metadatastore.fail.on.write.error: The value for fs.s3a.metadatastore.fail.on.write.error should be 'true' or 'false'.
+[Ciri] Reason for fs.s3a.select.input.csv.record.delimiter: The value for fs.s3a.select.input.csv.record.delimiter should be an actual newline character instead of '\n'.
+[Ciri] Reason for ipc.server.max.connections: The value for ipc.server.max.connections should be a positive integer or '0' for no limit.

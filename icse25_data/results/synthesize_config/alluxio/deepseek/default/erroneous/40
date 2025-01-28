@@ -1,0 +1,20 @@
+Wrong shot number:
+[2, 3, 11]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.user.network.streaming.keepalive.time', 'alluxio.user.file.reserved.bytes'], 'reason': ["The property 'alluxio.job.master.rpc.port' should be less than 65536.", "The property 'alluxio.user.network.streaming.keepalive.time' should be less than 4611686018427387903.", "The property 'alluxio.user.file.reserved.bytes' should be less than 2147483648."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.user.network.streaming.keepalive.time', 'alluxio.user.file.reserved.bytes'], 'reason': ["The property 'alluxio.job.master.rpc.port' should be a value between 0 and 65535.", "The property 'alluxio.user.network.streaming.keepalive.time' should be a value between 0 and 2147483647.", "The property 'alluxio.user.file.reserved.bytes' should be a value greater than 0."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.user.network.streaming.keepalive.time', 'alluxio.user.file.reserved.bytes'], 'reason': ["The property 'alluxio.job.master.rpc.port' should be a value between 0 and 65535.", "The property 'alluxio.user.network.streaming.keepalive.time' should be a valid duration.", "The property 'alluxio.user.file.reserved.bytes' should be a valid size in bytes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.rpc.port	alluxio.user.network.streaming.keepalive.time	alluxio.user.file.reserved.bytes
+[Ciri] Reason for alluxio.job.master.rpc.port: The property 'alluxio.job.master.rpc.port' should be a value between 0 and 65535.
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.time: The property 'alluxio.user.network.streaming.keepalive.time' should be less than 4611686018427387903.
+[Ciri] Reason for alluxio.user.file.reserved.bytes: The property 'alluxio.user.file.reserved.bytes' should be a value greater than 0.

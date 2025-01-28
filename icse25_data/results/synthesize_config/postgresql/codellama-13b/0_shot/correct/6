@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_init_zero', 'vacuum_failsafe_age', 'update_process_title', 'geqo', 'port', 'vacuum_freeze_table_age'], 'reason': ['wal_init_zero is not a valid parameter for PostgreSQL 13.0', 'vacuum_failsafe_age is not a valid parameter for PostgreSQL 13.0', 'update_process_title is not a valid parameter for PostgreSQL 13.0', 'geqo is not a valid parameter for PostgreSQL 13.0', 'port is not a valid parameter for PostgreSQL 13.0', 'vacuum_freeze_table_age is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['wal_init_zero', 'vacuum_failsafe_age', 'update_process_title', 'geqo', 'port', 'vacuum_freeze_table_age'], 'reason': ["wal_init_zero: The value of this parameter is not valid. Valid values are 'on' or 'off'.", "vacuum_failsafe_age: The value of this parameter is not valid. Valid values are 'on' or 'off'.", "update_process_title: The value of this parameter is not valid. Valid values are 'on' or 'off'.", "geqo: The value of this parameter is not valid. Valid values are 'on' or 'off'.", "port: The value of this parameter is not valid. Valid values are 'on' or 'off'.", "vacuum_freeze_table_age: The value of this parameter is not valid. Valid values are 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['wal_init_zero', 'vacuum_failsafe_age', 'update_process_title', 'hot_standby_feedback', 'geqo', 'port', 'vacuum_freeze_table_age'], 'reason': ['wal_init_zero is not a valid parameter', 'vacuum_failsafe_age is not a valid parameter', 'update_process_title is not a valid parameter', 'hot_standby_feedback is not a valid parameter', 'geqo is not a valid parameter', 'port is not a valid parameter', 'vacuum_freeze_table_age is not a valid parameter']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: wal_init_zero	vacuum_failsafe_age	update_process_title	geqo	port	vacuum_freeze_table_age
+[Ciri] Reason for wal_init_zero: wal_init_zero is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for vacuum_failsafe_age: vacuum_failsafe_age: The value of this parameter is not valid. Valid values are 'on' or 'off'.
+[Ciri] Reason for update_process_title: update_process_title: The value of this parameter is not valid. Valid values are 'on' or 'off'.
+[Ciri] Reason for geqo: geqo: The value of this parameter is not valid. Valid values are 'on' or 'off'.
+[Ciri] Reason for port: port is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for vacuum_freeze_table_age: vacuum_freeze_table_age: The value of this parameter is not valid. Valid values are 'on' or 'off'.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'LANGUAGE_COOKIE_DOMAIN', 'TEMPLATES'], 'reason': ['Invalid value for NUMBER_GROUPING. It should be an integer.', 'Invalid value for LANGUAGE_COOKIE_DOMAIN. It should be a string.', 'TEMPLATES setting is missing or empty. It should be a list of template configurations.']}
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'LANGUAGE_COOKIE_DOMAIN', 'TEMPLATES', 'EMAIL_SSL_CERTFILE'], 'reason': ['Invalid value for NUMBER_GROUPING. It should be an integer.', 'Invalid value for LANGUAGE_COOKIE_DOMAIN. It should be a string.', 'TEMPLATES should not be an empty list.', 'EMAIL_SSL_CERTFILE should not be set to None.']}
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'LANGUAGE_COOKIE_DOMAIN', 'TEMPLATES', 'EMAIL_SSL_CERTFILE'], 'reason': ['Invalid value type. Expected integer.', 'Invalid value type. Expected string.', 'Missing required configuration.', 'Invalid value type. Expected string or None.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: NUMBER_GROUPING	LANGUAGE_COOKIE_DOMAIN	TEMPLATES	EMAIL_SSL_CERTFILE
+[Ciri] Reason for NUMBER_GROUPING: Invalid value type. Expected integer.
+[Ciri] Reason for LANGUAGE_COOKIE_DOMAIN: Invalid value type. Expected string.
+[Ciri] Reason for TEMPLATES: Missing required configuration.
+[Ciri] Reason for EMAIL_SSL_CERTFILE: EMAIL_SSL_CERTFILE should not be set to None.

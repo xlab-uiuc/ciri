@@ -1,0 +1,43 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_error_verbosity', 'max_connections', 'log_connections', 'geqo_effort', 'log_line_prefix', 'vacuum_defer_cleanup_age', 'hot_standby', 'stats_fetch_consistency'], 'reason': ['log_error_verbosity is not a valid parameter', 'max_connections is not a valid parameter', 'log_connections is not a valid parameter', 'geqo_effort is not a valid parameter', 'log_line_prefix is not a valid parameter', 'vacuum_defer_cleanup_age is not a valid parameter', 'hot_standby is not a valid parameter', 'stats_fetch_consistency is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['log_connections', 'log_error_verbosity', 'log_line_prefix'], 'reason': ['log_connections is not a valid parameter.', 'log_error_verbosity is not a valid parameter.', 'log_line_prefix is not a valid parameter.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_connections', 'geqo_effort', 'log_line_prefix', 'vacuum_defer_cleanup_age', 'hot_standby', 'stats_fetch_consistency'], 'reason': ['log_connections is not a valid parameter for PostgreSQL version 13.0', 'geqo_effort is not a valid parameter for PostgreSQL version 13.0', 'log_line_prefix is not a valid parameter for PostgreSQL version 13.0', 'vacuum_defer_cleanup_age is not a valid parameter for PostgreSQL version 13.0', 'hot_standby is not a valid parameter for PostgreSQL version 13.0', 'stats_fetch_consistency is not a valid parameter for PostgreSQL version 13.0']}
+
+{'hasError': True, 'errParameter': ['log_line_prefix'], 'reason': ['log_line_prefix is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['log_error_verbosity', 'max_connections', 'log_connections', 'geqo_effort', 'log_line_prefix', 'vacuum_defer_cleanup_age', 'hot_standby', 'stats_fetch_consistency'], 'reason': ['log_error_verbosity: invalid value "default"', 'max_connections: invalid value "50"', 'log_connections: invalid value "off"', 'geqo_effort: invalid value "10"', 'log_line_prefix: invalid value "%m [%p] "', 'vacuum_defer_cleanup_age: invalid value "0"', 'hot_standby: invalid value "on"', 'stats_fetch_consistency: invalid value "cache"']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_connections', 'geqo_effort', 'log_line_prefix', 'vacuum_defer_cleanup_age', 'hot_standby', 'stats_fetch_consistency'], 'reason': ['log_connections is not a valid parameter', 'geqo_effort is not a valid parameter', 'log_line_prefix is not a valid parameter', 'vacuum_defer_cleanup_age is not a valid parameter', 'hot_standby is not a valid parameter', 'stats_fetch_consistency is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['log_error_verbosity', 'max_connections', 'log_connections', 'geqo_effort', 'log_line_prefix', 'vacuum_defer_cleanup_age', 'hot_standby', 'stats_fetch_consistency'], 'reason': ['log_error_verbosity is not a valid value. Valid values are: default, terse, verbose.', 'max_connections must be an integer greater than or equal to 10.', 'log_connections must be a boolean value.', 'geqo_effort must be an integer between 0 and 10.', 'log_line_prefix must be a string.', 'vacuum_defer_cleanup_age must be an integer greater than or equal to 0.', 'hot_standby must be a boolean value.', 'stats_fetch_consistency must be a valid value. Valid values are: default, cache, force.']}
+
+{'hasError': True, 'errParameter': ['log_line_prefix'], 'reason': ['log_line_prefix is not a valid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_error_verbosity', 'max_connections', 'log_connections', 'geqo_effort', 'log_line_prefix', 'vacuum_defer_cleanup_age', 'hot_standby', 'stats_fetch_consistency'], 'reason': ['log_error_verbosity is not a valid value for this parameter', 'max_connections must be a positive integer', 'log_connections must be a boolean', 'geqo_effort must be a positive integer', 'log_line_prefix must be a string', 'vacuum_defer_cleanup_age must be a positive integer', 'hot_standby must be a boolean', 'stats_fetch_consistency must be a valid value']}
+
+{'hasError': True, 'errParameter': ['log_connections', 'log_error_verbosity', 'geqo_effort', 'log_line_prefix', 'vacuum_defer_cleanup_age', 'hot_standby', 'stats_fetch_consistency'], 'reason': ['log_connections is not a valid parameter', 'log_error_verbosity is not a valid parameter', 'geqo_effort is not a valid parameter', 'log_line_prefix is not a valid parameter', 'vacuum_defer_cleanup_age is not a valid parameter', 'hot_standby is not a valid parameter', 'stats_fetch_consistency is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['log_error_verbosity', 'max_connections', 'log_connections', 'geqo_effort', 'log_line_prefix', 'vacuum_defer_cleanup_age', 'hot_standby', 'stats_fetch_consistency'], 'reason': ['log_error_verbosity is not a valid parameter', 'max_connections is not a valid parameter', 'log_connections is not a valid parameter', 'geqo_effort is not a valid parameter', 'log_line_prefix is not a valid parameter', 'vacuum_defer_cleanup_age is not a valid parameter', 'hot_standby is not a valid parameter', 'stats_fetch_consistency is not a valid parameter']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: log_error_verbosity	max_connections	log_connections	geqo_effort	log_line_prefix	vacuum_defer_cleanup_age	hot_standby	stats_fetch_consistency
+[Ciri] Reason for log_error_verbosity: log_error_verbosity is not a valid value for this parameter
+[Ciri] Reason for max_connections: max_connections must be a positive integer
+[Ciri] Reason for log_connections: log_connections must be a boolean
+[Ciri] Reason for geqo_effort: geqo_effort is not a valid parameter
+[Ciri] Reason for log_line_prefix: log_line_prefix is not a valid parameter
+[Ciri] Reason for vacuum_defer_cleanup_age: vacuum_defer_cleanup_age is not a valid parameter
+[Ciri] Reason for hot_standby: hot_standby is not a valid parameter
+[Ciri] Reason for stats_fetch_consistency: stats_fetch_consistency is not a valid parameter

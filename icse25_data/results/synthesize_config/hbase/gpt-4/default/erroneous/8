@@ -1,0 +1,15 @@
+Wrong shot number:
+[11, 6, 3]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.wal.dir.perms'], 'reason': ["The property 'hbase.local.dir' has an invalid value 'dev/urandom///'. It should be a valid local filesystem path.", "The property 'hbase.wal.dir.perms' has an invalid value '1400'. It should be specified in octal format, such as '700' or '755'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.local.dir	hbase.wal.dir.perms
+[Ciri] Reason for hbase.local.dir: The property 'hbase.local.dir' has an invalid value 'dev/urandom///'. It should be a valid local filesystem path.
+[Ciri] Reason for hbase.wal.dir.perms: The property 'hbase.wal.dir.perms' has an invalid value '1400'. It should be specified in octal format, such as '700' or '755'.

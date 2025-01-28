@@ -1,0 +1,15 @@
+Wrong shot number:
+[6, 12, 3]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regions.recovery.store.file.ref.count', 'hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regions.recovery.store.file.ref.count' has a value of '-1' which is not a valid setting for enabling the feature. It should be a positive integer to enable this feature.", "The property 'hbase.regionserver.storefile.refresh.period' has a value of '0' which means this feature is disabled. However, if this is intended to enable the feature, it should be set to a positive integer representing the refresh period in milliseconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regions.recovery.store.file.ref.count	hbase.regionserver.storefile.refresh.period
+[Ciri] Reason for hbase.regions.recovery.store.file.ref.count: The property 'hbase.regions.recovery.store.file.ref.count' has a value of '-1' which is not a valid setting for enabling the feature. It should be a positive integer to enable this feature.
+[Ciri] Reason for hbase.regionserver.storefile.refresh.period: The property 'hbase.regionserver.storefile.refresh.period' has a value of '0' which means this feature is disabled. However, if this is intended to enable the feature, it should be set to a positive integer representing the refresh period in milliseconds.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[3, 6, 5]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['EMAIL_USE_SSL', 'EMAIL_SSL_KEYFILE'], 'reason': ["The property 'EMAIL_USE_SSL' is set to false, but 'EMAIL_SSL_KEYFILE' is provided which is contradictory. If 'EMAIL_USE_SSL' is false, 'EMAIL_SSL_KEYFILE' should not be set.", "The property 'EMAIL_SSL_KEYFILE' is provided but 'EMAIL_USE_SSL' is set to false, indicating SSL is not used for email. This configuration is contradictory."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: EMAIL_USE_SSL	EMAIL_SSL_KEYFILE
+[Ciri] Reason for EMAIL_USE_SSL: The property 'EMAIL_USE_SSL' is set to false, but 'EMAIL_SSL_KEYFILE' is provided which is contradictory. If 'EMAIL_USE_SSL' is false, 'EMAIL_SSL_KEYFILE' should not be set.
+[Ciri] Reason for EMAIL_SSL_KEYFILE: The property 'EMAIL_SSL_KEYFILE' is provided but 'EMAIL_USE_SSL' is set to false, indicating SSL is not used for email. This configuration is contradictory.

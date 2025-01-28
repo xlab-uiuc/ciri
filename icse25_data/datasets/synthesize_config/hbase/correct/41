@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.optionalcacheflushinterval</name>
+  <value>3600000</value>
+    <description>
+    Maximum amount of time an edit lives in memory before being automatically flushed.
+    Default 1 hour. Set it to 0 to disable automatic flushing.
+  </description>
+</property>
+
+<property>
+  <name>zookeeper.znode.parent</name>
+  <value>/valid/file1</value>
+    <description>Root ZNode for HBase in ZooKeeper. All of HBase's ZooKeeper
+      files that are configured with a relative path will go under this node.
+      By default, all of HBase's ZooKeeper file paths are configured with a
+      relative path, so they will all go under this directory unless changed.
+    </description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.ratio.offpeak</name>
+  <value>2.5</value>
+    <description>Allows you to set a different (by default, more aggressive) ratio for determining
+      whether larger StoreFiles are included in compactions during off-peak hours. Works in the
+      same way as hbase.hstore.compaction.ratio. Only applies if hbase.offpeak.start.hour and
+      hbase.offpeak.end.hour are also enabled.</description>
+</property>
+
+<property>
+  <name>hbase.cells.scanned.per.heartbeat.check</name>
+  <value>20000</value>
+    <description>The number of cells scanned in between heartbeat checks. Heartbeat
+        checks occur during the processing of scans to determine whether or not the
+        server should stop scanning in order to send back a heartbeat message to the
+        client. Heartbeat messages are used to keep the client-server connection alive
+        during long running scans. Small values mean that the heartbeat checks will
+        occur more often and thus will provide a tighter bound on the execution time of
+        the scan. Larger values mean that the heartbeat checks occur less frequently
+        </description>
+</property>
+
+<property>
+  <name>hbase.data.umask</name>
+  <value>007</value>
+    <description>File permissions that should be used to write data
+      files when hbase.data.umask.enable is true</description>
+</property>
+
+<property>
+  <name>hbase.status.published</name>
+  <value>true</value>
+    <description>
+      This setting activates the publication by the master of the status of the region server.
+      When a region server dies and its recovery starts, the master will push this information
+      to the client application, to let them cut the connection immediately instead of waiting
+      for a timeout.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest.filter.classes</name>
+  <value>org.apache.hadoop.hbase.rest.filter.GzipFilter</value>
+    <description>
+      Servlet filters for REST service.
+    </description>
+</property>
+
+<property>
+  <name>hbase.master.wait.on.service.seconds</name>
+  <value>30</value>
+    <description>Default is 5 minutes. Make it 30 seconds for tests. See
+    HBASE-19794 for some context.</description>
+</property>
+
+</configuration>

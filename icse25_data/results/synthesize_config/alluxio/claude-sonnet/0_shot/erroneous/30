@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.fuse.shared.caching.reader.enabled=1.5', 'alluxio.table.transform.manager.job.history.retention.time=300sec'], 'reason': ["The property 'alluxio.fuse.shared.caching.reader.enabled' expects a boolean value (true/false), but '1.5' is provided.", "The property 'alluxio.table.transform.manager.job.history.retention.time' expects a time duration value (e.g., 5h, 30m, 1d), but '300sec' is not a valid duration format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.fuse.shared.caching.reader.enabled=1.5	alluxio.table.transform.manager.job.history.retention.time=300sec
+[Ciri] Reason for alluxio.fuse.shared.caching.reader.enabled=1.5: The property 'alluxio.fuse.shared.caching.reader.enabled' expects a boolean value (true/false), but '1.5' is provided.
+[Ciri] Reason for alluxio.table.transform.manager.job.history.retention.time=300sec: The property 'alluxio.table.transform.manager.job.history.retention.time' expects a time duration value (e.g., 5h, 30m, 1d), but '300sec' is not a valid duration format.

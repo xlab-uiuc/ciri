@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled', 'yarn.resourcemanager.zk-max-znode-size.bytes', 'yarn.timeline-service.http-authentication.type'], 'reason': ["The property 'yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled' should have a value of 'true' or 'false'.", "The property 'yarn.resourcemanager.zk-max-znode-size.bytes' should have a value in bytes, not just a number.", "The property 'yarn.timeline-service.http-authentication.type' should have a valid authentication type like 'simple', 'kerberos', or a custom authentication handler class name."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled', 'yarn.resourcemanager.zk-max-znode-size.bytes', 'yarn.timeline-service.http-authentication.type'], 'reason': ["The property 'yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled' has a description that is too long and not properly formatted.", "The property 'yarn.resourcemanager.zk-max-znode-size.bytes' has a description that is not properly formatted.", "The property 'yarn.timeline-service.http-authentication.type' has a description that is not properly formatted."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled', 'yarn.resourcemanager.zk-max-znode-size.bytes', 'yarn.timeline-service.http-authentication.type'], 'reason': ["The property 'yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled' should have a boolean value (true/false) instead of 'false'.", "The property 'yarn.resourcemanager.zk-max-znode-size.bytes' should have a value in bytes format.", "The property 'yarn.timeline-service.http-authentication.type' should have one of the supported values: simple | kerberos | #AUTHENTICATION_HANDLER_CLASSNAME#."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled	yarn.resourcemanager.zk-max-znode-size.bytes	yarn.timeline-service.http-authentication.type
+[Ciri] Reason for yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled: The property 'yarn.resourcemanager.webapp.delegation-token-auth-filter.enabled' should have a boolean value (true/false) instead of 'false'.
+[Ciri] Reason for yarn.resourcemanager.zk-max-znode-size.bytes: The property 'yarn.resourcemanager.zk-max-znode-size.bytes' should have a value in bytes, not just a number.
+[Ciri] Reason for yarn.timeline-service.http-authentication.type: The property 'yarn.timeline-service.http-authentication.type' should have one of the supported values: simple | kerberos | #AUTHENTICATION_HANDLER_CLASSNAME#.

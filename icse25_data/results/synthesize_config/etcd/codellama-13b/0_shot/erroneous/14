@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'snapshot-count', 'proxy-refresh-interval'], 'reason': ['auto-compaction-retention is not a valid property', 'snapshot-count is not a valid property', 'proxy-refresh-interval is not a valid property']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'snapshot-count', 'election-timeout', 'proxy-refresh-interval'], 'reason': ['auto-compaction-retention should be an integer between 0 and 5000', 'snapshot-count should be an integer between 0 and 5000', 'election-timeout should be an integer between 1000 and 20000', 'proxy-refresh-interval should be an integer between 5000 and 180000']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-retention', 'snapshot-count', 'proxy-refresh-interval'], 'reason': ['auto-compaction-retention must be a positive integer', 'snapshot-count must be a positive integer', 'proxy-refresh-interval must be a positive integer']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: auto-compaction-retention	snapshot-count	proxy-refresh-interval
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention is not a valid property
+[Ciri] Reason for snapshot-count: snapshot-count is not a valid property
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval must be a positive integer

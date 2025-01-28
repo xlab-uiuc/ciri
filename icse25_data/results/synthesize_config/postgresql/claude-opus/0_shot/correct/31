@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['include_dir', 'checkpoint_warning', 'session_replication_role'], 'reason': ["include_dir should be set to a valid directory path, not '...'", "checkpoint_warning should be set to an integer value (number of seconds), not a time string like '30s'", 'session_replication_role is not a valid parameter in PostgreSQL 13. It was removed in version 10.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: include_dir	checkpoint_warning	session_replication_role
+[Ciri] Reason for include_dir: include_dir should be set to a valid directory path, not '...'
+[Ciri] Reason for checkpoint_warning: checkpoint_warning should be set to an integer value (number of seconds), not a time string like '30s'
+[Ciri] Reason for session_replication_role: session_replication_role is not a valid parameter in PostgreSQL 13. It was removed in version 10.

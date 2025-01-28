@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.s3a.multipart.purge.age</name>
+  <value>86400</value>
+  <description>Minimum age in seconds of multipart uploads to purge
+    on startup if "fs.s3a.multipart.purge" is true
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.committer.name</name>
+  <value>file</value>
+  <description>
+    Committer to create for output to S3A, one of:
+    "file", "directory", "partitioned", "magic".
+  </description>
+</property>
+
+<property>
+  <name>io.mapfile.bloom.size</name>
+  <value>1048576</value>
+  <description>The size of BloomFilter-s used in BloomMapFile. Each time this many
+  keys is appended the next BloomFilter will be created (inside a DynamicBloomFilter).
+  Larger values minimize the number of filters, which slightly increases the performance,
+  but may waste too much space if the total number of keys is usually much smaller
+  than this number.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].callqueue.impl</name>
+  <value>java.util.concurrent.LinkedBlockingQueue</value>
+  <description>The fully qualified name of a class to use as the implementation
+    of a call queue. The default implementation is
+    java.util.concurrent.LinkedBlockingQueue (FIFO queue).
+    Use org.apache.hadoop.ipc.FairCallQueue for the Fair Call Queue.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.cookie.domain</name>
+  <value>1.1.1.1.1.1</value>
+  <description>
+    The domain to use for the HTTP cookie that stores the authentication token.
+    In order to authentiation to work correctly across all Hadoop nodes web-consoles
+    the domain must be correctly set.
+    IMPORTANT: when using IP addresses, browsers ignore cookies with domain settings.
+    For this setting to work properly all nodes in the cluster must be configured
+    to generate URLs with hostname.domain names on it.
+  </description>
+</property>
+
+<property>
+  <name>ha.zookeeper.acl</name>
+  <value>world:anyone:rwcda</value>
+  <description>
+    A comma-separated list of ZooKeeper ACLs to apply to the znodes
+    used by automatic failover. These ACLs are specified in the same
+    format as used by the ZooKeeper CLI.
+
+    If the ACL itself contains secrets, you may instead specify a
+    path to a file, prefixed with the '@' symbol, and the value of
+    this configuration will be loaded from within.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.secure.random.impl</name>
+  <value>org.apache.hadoop.crypto.random.OpensslSecureRandom</value>
+  <description>
+    Implementation of secure random.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.kms.client.timeout</name>
+  <value>60</value>
+  <description>
+    Sets value for KMS client connection timeout, and the read timeout
+    to KMS servers.
+  </description>
+</property>
+
+</configuration>

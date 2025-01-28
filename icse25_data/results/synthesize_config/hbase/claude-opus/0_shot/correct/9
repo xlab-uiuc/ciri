@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.global.memstore.size', 'hbase.master.wait.on.service.seconds'], 'reason': ['For HBase 2.x, the default value of hbase.regionserver.global.memstore.size should be 0.4 instead of 0.1. The description also mentions the default is 40% of heap (0.4).', 'The description for hbase.master.wait.on.service.seconds mentions a default of 5 minutes, but the configured value is 30 seconds. For tests, this may be okay, but it seems inconsistent with the description.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.global.memstore.size	hbase.master.wait.on.service.seconds
+[Ciri] Reason for hbase.regionserver.global.memstore.size: For HBase 2.x, the default value of hbase.regionserver.global.memstore.size should be 0.4 instead of 0.1. The description also mentions the default is 40% of heap (0.4).
+[Ciri] Reason for hbase.master.wait.on.service.seconds: The description for hbase.master.wait.on.service.seconds mentions a default of 5 minutes, but the configured value is 30 seconds. For tests, this may be okay, but it seems inconsistent with the description.

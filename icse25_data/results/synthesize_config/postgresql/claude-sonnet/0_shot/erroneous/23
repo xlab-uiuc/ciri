@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['synchronous_commit', 'synchronous_standby_names', 'wal_init_zero', 'effective_cache_size', 'tcp_keepalives_interval', 'hot_standby', 'autovacuum_vacuum_cost_limit', 'shared_memory_type'], 'reason': ["synchronous_commit should be set to 'on' or 'remote_apply' for data integrity in case of a crash.", "synchronous_standby_names should be a comma-separated list of standby server names, not '*'.", 'wal_init_zero is deprecated and should be removed from the configuration file.', 'effective_cache_size should be set to a value between 1/4 and 1/2 of the total system memory.', 'tcp_keepalives_interval should be set to a non-zero value to prevent disconnections due to network issues.', 'hot_standby is deprecated and should be removed from the configuration file.', 'autovacuum_vacuum_cost_limit should be set to a non-zero value to allow autovacuum to run.', "shared_memory_type should be set to 'sysv' on older systems or 'mmap' on newer systems with enough kernel resources."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: synchronous_commit	synchronous_standby_names	wal_init_zero	effective_cache_size	tcp_keepalives_interval	hot_standby	autovacuum_vacuum_cost_limit	shared_memory_type
+[Ciri] Reason for synchronous_commit: synchronous_commit should be set to 'on' or 'remote_apply' for data integrity in case of a crash.
+[Ciri] Reason for synchronous_standby_names: synchronous_standby_names should be a comma-separated list of standby server names, not '*'.
+[Ciri] Reason for wal_init_zero: wal_init_zero is deprecated and should be removed from the configuration file.
+[Ciri] Reason for effective_cache_size: effective_cache_size should be set to a value between 1/4 and 1/2 of the total system memory.
+[Ciri] Reason for tcp_keepalives_interval: tcp_keepalives_interval should be set to a non-zero value to prevent disconnections due to network issues.
+[Ciri] Reason for hot_standby: hot_standby is deprecated and should be removed from the configuration file.
+[Ciri] Reason for autovacuum_vacuum_cost_limit: autovacuum_vacuum_cost_limit should be set to a non-zero value to allow autovacuum to run.
+[Ciri] Reason for shared_memory_type: shared_memory_type should be set to 'sysv' on older systems or 'mmap' on newer systems with enough kernel resources.

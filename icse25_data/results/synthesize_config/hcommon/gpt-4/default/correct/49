@@ -1,0 +1,15 @@
+Wrong shot number:
+[14, 6, 3]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'fs.s3a.list.version'], 'reason': ["The value '1s' for property 'hadoop.security.groups.shell.command.timeout' does not follow the correct format. It should be expressed in milliseconds without a unit suffix.", "The property 'fs.s3a.list.version' has an invalid value '4'. Valid options are '1' or '2'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout	fs.s3a.list.version
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: The value '1s' for property 'hadoop.security.groups.shell.command.timeout' does not follow the correct format. It should be expressed in milliseconds without a unit suffix.
+[Ciri] Reason for fs.s3a.list.version: The property 'fs.s3a.list.version' has an invalid value '4'. Valid options are '1' or '2'.

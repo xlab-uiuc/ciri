@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.groups.negative-cache.secs</name>
+  <value>60</value>
+  <description>
+    Expiration time for entries in the the negative user-to-group mapping
+    caching, in seconds. This is useful when invalid users are retrying
+    frequently. It is suggested to set a small value for this expiration, since
+    a transient error in group lookup could temporarily lock out a legitimate
+    user.
+
+    Set this to zero or negative value to disable negative user-to-group caching.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.num.attempts</name>
+  <value>-5.5</value>
+  <description>
+    This property is the number of attempts to be made for LDAP operations.
+    If this limit is exceeded, LdapGroupsMapping will return an empty
+    group list.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.search.filter.group</name>
+  <value>xdgroup</value>
+  <description>
+    An additional filter to use when searching for LDAP groups. This should be
+    changed when resolving groups against a non-Active Directory installation.
+
+    See the description of hadoop.security.group.mapping.ldap.search.filter.user
+    to enable posixGroups support.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.kerberos.keytab.login.autorenewal.enabled</name>
+  <value>false</value>
+  <description>Used to enable automatic renewal of keytab based kerberos login.
+    By default the automatic renewal is disabled for keytab based kerberos login.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.assumed.role.session.duration</name>
+  <value>20m</value>
+  <description>
+    Duration of assumed roles before a refresh is attempted.
+    Used when session tokens are requested.
+    Range: 15m to 1h
+  </description>
+</property>
+
+<property>
+  <name>file.blocksize</name>
+  <value>67108864</value>
+  <description>Block size</description>
+</property>
+
+<property>
+  <name>rpc.metrics.quantile.enable</name>
+  <value>true</value>
+  <description>
+    Setting this property to true and rpc.metrics.percentiles.intervals
+    to a comma-separated list of the granularity in seconds, the
+    50/75/90/95/99th percentile latency for rpc queue/processing time in
+    milliseconds are added to rpc metrics.
+  </description>
+</property>
+
+<property>
+  <name>seq.io.sort.mb</name>
+  <value>100</value>
+    <description>
+      The total amount of buffer memory to use while sorting files,
+      while using SequenceFile.Sorter, in megabytes. By default,
+      gives each merge stream 1MB, which should minimize seeks.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.groups.cache.background.reload.threads</name>
+  <value>6</value>
+  <description>
+    Only relevant if hadoop.security.groups.cache.background.reload is true.
+    Controls the number of concurrent background user->group cache entry
+    refreshes. Pending refresh requests beyond this value are queued and
+    processed when a thread is free.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.credential.clear-text-fallback</name>
+  <value>false</value>
+  <description>
+    true or false to indicate whether or not to fall back to storing credential
+    password as clear text. The default value is true. This property only works
+    when the password can't not be found from credential providers.
+  </description>
+</property>
+
+<property>
+  <name>fs.du.interval</name>
+  <value>1200000</value>
+  <description>File space usage statistics refresh interval in msec.</description>
+</property>
+
+<property>
+  <name>fs.automatic.close</name>
+  <value>true</value>
+  <description>By default, FileSystem instances are automatically closed at program
+  exit using a JVM shutdown hook. Setting this property to false disables this
+  behavior. This is an advanced option that should only be used by server applications
+  requiring a more carefully orchestrated shutdown sequence.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.readahead.range</name>
+  <value>64K</value>
+  <description>Bytes to read ahead during a seek() before closing and
+  re-opening the S3 HTTP connection. This option will be overridden if
+  any call to setReadahead() is made to an open stream.
+  A suffix from the set {K,M,G,T,P} may be used to scale the numeric value.
+  </description>
+</property>
+
+<property>
+  <name>ha.failover-controller.graceful-fence.connection.retries</name>
+  <value>0</value>
+  <description>
+    FC connection retries for graceful fencing
+  </description>
+</property>
+
+<property>
+  <name>nfs.exports.allowed.hosts</name>
+  <value>* rw</value>
+  <description>
+    By default, the export can be mounted by any client. The value string
+    contains machine name and access privilege, separated by whitespace
+    characters. The machine name format can be a single host, a Java regular
+    expression, or an IPv4 address. The access privilege uses rw or ro to
+    specify read/write or read-only access of the machines to exports. If the
+    access privilege is not provided, the default is read-only. Entries are separated by ";".
+    For example: "192.168.0.0/22 rw ; host.*\.example\.com ; host1.test.org ro;".
+    Only the NFS gateway needs to restart after this property is updated.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.sni.host.check.enabled</name>
+  <value>true</value>
+    <description>
+      Enable Server Name Indication (SNI) host check for HTTPS enabled server.
+    </description>
+</property>
+
+</configuration>

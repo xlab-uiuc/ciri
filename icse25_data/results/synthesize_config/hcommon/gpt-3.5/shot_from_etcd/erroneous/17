@@ -1,0 +1,21 @@
+Wrong shot number:
+[7, 2, 4]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.socket.recv.buffer', 'fs.s3a.s3guard.ddb.background.sleep', 'fs.s3a.select.input.csv.quote.character', 'ipc.client.connection.maxidletime', 'ipc.[port_number].weighted-cost.lockfree', 'hadoop.ssl.keystores.factory.class'], 'reason': ["The value '0.0.0' for property 'hadoop.security.dns.nameserver' is not a valid DNS nameserver address.", "The value 'file:///' for property 'fs.defaultFS' is not a valid default file system URI.", "The value '16384' for property 'fs.s3a.socket.recv.buffer' should be specified in bytes.", "The value '25ms' for property 'fs.s3a.s3guard.ddb.background.sleep' should be specified in milliseconds.", 'The value \'"\' for property \'fs.s3a.select.input.csv.quote.character\' is not a valid quote character.', "The value '20000' for property 'ipc.client.connection.maxidletime' should be specified in milliseconds.", "The property 'ipc.[port_number].weighted-cost.lockfree' is not a valid property name.", "The value 'org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory' for property 'hadoop.ssl.keystores.factory.class' is not a recognized keystores factory class."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.defaultFS	fs.s3a.socket.recv.buffer	fs.s3a.s3guard.ddb.background.sleep	fs.s3a.select.input.csv.quote.character	ipc.client.connection.maxidletime	ipc.[port_number].weighted-cost.lockfree	hadoop.ssl.keystores.factory.class
+[Ciri] Reason for hadoop.security.dns.nameserver: The value '0.0.0' for property 'hadoop.security.dns.nameserver' is not a valid DNS nameserver address.
+[Ciri] Reason for fs.defaultFS: The value 'file:///' for property 'fs.defaultFS' is not a valid default file system URI.
+[Ciri] Reason for fs.s3a.socket.recv.buffer: The value '16384' for property 'fs.s3a.socket.recv.buffer' should be specified in bytes.
+[Ciri] Reason for fs.s3a.s3guard.ddb.background.sleep: The value '25ms' for property 'fs.s3a.s3guard.ddb.background.sleep' should be specified in milliseconds.
+[Ciri] Reason for fs.s3a.select.input.csv.quote.character: The value '"' for property 'fs.s3a.select.input.csv.quote.character' is not a valid quote character.
+[Ciri] Reason for ipc.client.connection.maxidletime: The value '20000' for property 'ipc.client.connection.maxidletime' should be specified in milliseconds.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The property 'ipc.[port_number].weighted-cost.lockfree' is not a valid property name.
+[Ciri] Reason for hadoop.ssl.keystores.factory.class: The value 'org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory' for property 'hadoop.ssl.keystores.factory.class' is not a recognized keystores factory class.

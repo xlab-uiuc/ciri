@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.lock.pool.high.watermark', 'alluxio.job.master.finished.job.retention.time', 'alluxio.web.threads'], 'reason': ["The property 'alluxio.master.lock.pool.high.watermark' is not a valid Alluxio configuration property in version 2.5.0.", "The property 'alluxio.job.master.finished.job.retention.time' is not a valid Alluxio configuration property in version 2.5.0.", "The value '0' for the property 'alluxio.web.threads' is not recommended. It should be set to a positive value to allow the Alluxio web UI to function properly."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.lock.pool.high.watermark	alluxio.job.master.finished.job.retention.time	alluxio.web.threads
+[Ciri] Reason for alluxio.master.lock.pool.high.watermark: The property 'alluxio.master.lock.pool.high.watermark' is not a valid Alluxio configuration property in version 2.5.0.
+[Ciri] Reason for alluxio.job.master.finished.job.retention.time: The property 'alluxio.job.master.finished.job.retention.time' is not a valid Alluxio configuration property in version 2.5.0.
+[Ciri] Reason for alluxio.web.threads: The value '0' for the property 'alluxio.web.threads' is not recommended. It should be set to a positive value to allow the Alluxio web UI to function properly.

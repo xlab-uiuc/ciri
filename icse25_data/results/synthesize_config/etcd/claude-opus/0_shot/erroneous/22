@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['discovery-fallback', 'proxy-dial-timeout'], 'reason': ["The 'discovery-fallback' option is not a valid configuration parameter for etcd v3.5.0 and should be removed.", "The 'proxy-dial-timeout' option should have a time duration specified, such as '500ms' or '500s'. Just '500' is invalid."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: discovery-fallback	proxy-dial-timeout
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' option is not a valid configuration parameter for etcd v3.5.0 and should be removed.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' option should have a time duration specified, such as '500ms' or '500s'. Just '500' is invalid.

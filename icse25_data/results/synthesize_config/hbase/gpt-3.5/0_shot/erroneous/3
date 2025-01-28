@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count', 'hbase.auth.token.max.lifetime'], 'reason': ["Value for property 'hbase.regionserver.handler.count' should be an integer.", "Value for property 'hbase.auth.token.max.lifetime' should be an integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count', 'hbase.auth.token.max.lifetime'], 'reason': ["The value for 'hbase.regionserver.handler.count' should be an integer, but it is set to 'true'.", "The 'usage' tag is not a valid tag for 'hbase.auth.token.max.lifetime'."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count', 'hbase.auth.token.max.lifetime'], 'reason': ["The value for property 'hbase.regionserver.handler.count' should be an integer, but it is set to 'true'.", "The usage of property 'hbase.auth.token.max.lifetime' is incorrect. It should not contain code snippets like 'conf.getLong(...)' in the configuration file."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.handler.count	hbase.auth.token.max.lifetime
+[Ciri] Reason for hbase.regionserver.handler.count: The value for 'hbase.regionserver.handler.count' should be an integer, but it is set to 'true'.
+[Ciri] Reason for hbase.auth.token.max.lifetime: The usage of property 'hbase.auth.token.max.lifetime' is incorrect. It should not contain code snippets like 'conf.getLong(...)' in the configuration file.

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.keytab</name>
+  <value>/valid/file1</value>
+    <description>The keytab for the resource manager.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.scheduler.monitor.enable</name>
+  <value>false</value>
+    <description>Enable a set of periodic monitors (specified in
+        yarn.resourcemanager.scheduler.monitor.policies) that affect the
+        scheduler.</description>
+</property>
+
+<property>
+  <name>yarn.log-aggregation.debug.filesize</name>
+  <value>209715200</value>
+    <description>The log files created under NM Local Directories
+    will be logged if it exceeds the configured bytes. This
+    only takes effect if log4j level is at least Debug.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.resources-handler.class</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.util.DefaultLCEResourcesHandler</value>
+    <description>The class which should help the LCE handle resources.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-diagnostics-maximum-size</name>
+  <value>5000</value>
+    <description>Maximum size of contain's diagnostics to keep for relaunching
+      container case.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.recovery.dir</name>
+  <value>/valid/file1</value>
+    <description>The local filesystem directory in which the node manager will
+    store state when recovery is enabled.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.entity-group-fs-store.retain-seconds</name>
+  <value>302400</value>
+    <description>
+      How long the ATS v1.5 entity group file system storage will keep an
+      application's data in the done directory.
+    </description>
+</property>
+
+<property>
+  <name>yarn.node-attribute.fs-store.impl.class</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.nodelabels.FileSystemNodeAttributeStore</value>
+    <description>
+      Choose different implementation of node attribute's storage
+    </description>
+</property>
+
+</configuration>

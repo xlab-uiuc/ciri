@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.finished.job.retention.time', 'alluxio.underfs.web.parent.names', 'alluxio.master.whitelist'], 'reason': ["The property 'alluxio.job.master.finished.job.retention.time' should include a unit of time (e.g., '60s' for 60 seconds).", "The property 'alluxio.underfs.web.parent.names' does not exist in Alluxio 2.5.0.", "The property 'alluxio.master.whitelist' is incorrect or deprecated; the correct property might be 'alluxio.master.security.impersonation.root.groups' or 'alluxio.master.security.impersonation.root.users' for setting whitelists."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.finished.job.retention.time	alluxio.underfs.web.parent.names	alluxio.master.whitelist
+[Ciri] Reason for alluxio.job.master.finished.job.retention.time: The property 'alluxio.job.master.finished.job.retention.time' should include a unit of time (e.g., '60s' for 60 seconds).
+[Ciri] Reason for alluxio.underfs.web.parent.names: The property 'alluxio.underfs.web.parent.names' does not exist in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.master.whitelist: The property 'alluxio.master.whitelist' is incorrect or deprecated; the correct property might be 'alluxio.master.security.impersonation.root.groups' or 'alluxio.master.security.impersonation.root.users' for setting whitelists.

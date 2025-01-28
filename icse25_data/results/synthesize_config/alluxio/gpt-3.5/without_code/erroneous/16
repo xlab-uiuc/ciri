@@ -1,0 +1,19 @@
+Wrong shot number:
+[12, 11, 9]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.user.date.format.pattern'], 'reason': ["The property 'alluxio.job.master.web.bind.host' has an invalid IP address format.", "The date format pattern 'MM-dd-yyyy HH:mm:ss:SSS' contains an incorrect delimiter ':'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.user.date.format.pattern'], 'reason': ["The property 'alluxio.job.master.web.bind.host' has an invalid IP address format.", "The value of the property 'alluxio.user.date.format.pattern' contains an incorrect date format pattern."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.user.date.format.pattern'], 'reason': ["The property 'alluxio.job.master.web.bind.host' has an invalid IP address format.", "The value of the property 'alluxio.user.date.format.pattern' contains an incorrect date format pattern."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.web.bind.host	alluxio.user.date.format.pattern
+[Ciri] Reason for alluxio.job.master.web.bind.host: The property 'alluxio.job.master.web.bind.host' has an invalid IP address format.
+[Ciri] Reason for alluxio.user.date.format.pattern: The value of the property 'alluxio.user.date.format.pattern' contains an incorrect date format pattern.

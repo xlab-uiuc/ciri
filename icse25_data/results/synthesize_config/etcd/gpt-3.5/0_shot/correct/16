@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout', 'snapshot-count'], 'reason': ['max-wals should be max-wals-per-shard in etcd version 3.5.0', 'proxy-write-timeout should be write-timeout in etcd version 3.5.0', 'snapshot-count should be snapshot-count-per-node in etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout', 'snapshot-count', 'auto-compaction-mode', 'discovery-fallback'], 'reason': ['max-wals is not a valid configuration parameter for etcd version 3.5.0', 'proxy-write-timeout is not a valid configuration parameter for etcd version 3.5.0', 'snapshot-count is not a valid configuration parameter for etcd version 3.5.0', 'auto-compaction-mode is not a valid configuration parameter for etcd version 3.5.0', 'discovery-fallback is not a valid configuration parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout'], 'reason': ['max-wals is not a valid configuration parameter for etcd version 3.5.0', 'proxy-write-timeout is not a valid configuration parameter for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'auto-compaction-mode'], 'reason': ['max-wals is not a valid parameter for etcd version 3.5.0.', "auto-compaction-mode should be 'revision' or 'periodic' for etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout'], 'reason': ['max-wals is not a valid configuration parameter for etcd version 3.5.0', 'proxy-write-timeout should be specified in milliseconds, not seconds']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout'], 'reason': ['max-wals is not a valid configuration parameter for etcd version 3.5.0', 'proxy-write-timeout should be specified in milliseconds, not seconds']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: max-wals	proxy-write-timeout
+[Ciri] Reason for max-wals: max-wals is not a valid configuration parameter for etcd version 3.5.0
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout should be specified in milliseconds, not seconds

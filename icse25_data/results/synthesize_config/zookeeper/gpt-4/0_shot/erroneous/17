@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'quorum.cnxn.threads.size'], 'reason': ["The value for 'maxClientCnxns' should not be negative. It limits the number of concurrent connections that a single client may make to a single member of the ZooKeeper ensemble.", "The 'quorum.cnxn.threads.size' parameter should have a value greater than 1 to ensure proper handling of connections in a quorum setup."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: maxClientCnxns	quorum.cnxn.threads.size
+[Ciri] Reason for maxClientCnxns: The value for 'maxClientCnxns' should not be negative. It limits the number of concurrent connections that a single client may make to a single member of the ZooKeeper ensemble.
+[Ciri] Reason for quorum.cnxn.threads.size: The 'quorum.cnxn.threads.size' parameter should have a value greater than 1 to ensure proper handling of connections in a quorum setup.

@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.rs.cacheblocksonwrite', 'hbase.coprocessor.user.enabled', 'dfs.domain.socket.path', 'hbase.security.visibility.mutations.checkauths', 'hbase.mob.compaction.chore.period'], 'reason': ['hbase.regionserver.info.port is not a valid port number', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not a valid value', 'hbase.rs.cacheblocksonwrite is not a valid value', 'hbase.coprocessor.user.enabled is not a valid value', 'dfs.domain.socket.path is not a valid path', 'hbase.security.visibility.mutations.checkauths is not a valid value', 'hbase.mob.compaction.chore.period is not a valid value']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.rs.cacheblocksonwrite', 'hbase.coprocessor.user.enabled', 'dfs.domain.socket.path', 'hbase.security.visibility.mutations.checkauths', 'hbase.mob.compaction.chore.period'], 'reason': ['hbase.regionserver.info.port is not a valid port number', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not a valid float', 'hbase.rs.cacheblocksonwrite is not a valid boolean', 'hbase.coprocessor.user.enabled is not a valid boolean', 'dfs.domain.socket.path is not a valid path', 'hbase.security.visibility.mutations.checkauths is not a valid boolean', 'hbase.mob.compaction.chore.period is not a valid integer']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: hbase.regionserver.info.port	hbase.hregion.percolumnfamilyflush.size.lower.bound.min	hbase.rs.cacheblocksonwrite	hbase.coprocessor.user.enabled	dfs.domain.socket.path	hbase.security.visibility.mutations.checkauths	hbase.mob.compaction.chore.period
+[Ciri] Reason for hbase.regionserver.info.port: hbase.regionserver.info.port is not a valid port number
+[Ciri] Reason for hbase.hregion.percolumnfamilyflush.size.lower.bound.min: hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not a valid float
+[Ciri] Reason for hbase.rs.cacheblocksonwrite: hbase.rs.cacheblocksonwrite is not a valid value
+[Ciri] Reason for hbase.coprocessor.user.enabled: hbase.coprocessor.user.enabled is not a valid value
+[Ciri] Reason for dfs.domain.socket.path: dfs.domain.socket.path is not a valid path
+[Ciri] Reason for hbase.security.visibility.mutations.checkauths: hbase.security.visibility.mutations.checkauths is not a valid value
+[Ciri] Reason for hbase.mob.compaction.chore.period: hbase.mob.compaction.chore.period is not a valid value

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'jemalloc-bg-thread', 'stop-writes-on-bgsave-error', 'oom-score-adj-values', 'repl-diskless-sync-max-replicas'], 'reason': ['hash-max-listpack-value is not a valid parameter', 'jemalloc-bg-thread is not a valid parameter', 'stop-writes-on-bgsave-error is not a valid parameter', 'oom-score-adj-values is not a valid parameter', 'repl-diskless-sync-max-replicas is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'repl-diskless-sync-max-replicas'], 'reason': ['hash-max-listpack-value is not a valid value for redis version 7.0.0', 'repl-diskless-sync-max-replicas is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'repl-diskless-sync-max-replicas'], 'reason': ['hash-max-listpack-value should be between 0 and 65536', 'repl-diskless-sync-max-replicas should be between 0 and 1000']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hash-max-listpack-value	repl-diskless-sync-max-replicas
+[Ciri] Reason for hash-max-listpack-value: hash-max-listpack-value should be between 0 and 65536
+[Ciri] Reason for repl-diskless-sync-max-replicas: repl-diskless-sync-max-replicas is not a valid parameter for redis version 7.0.0

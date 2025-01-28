@@ -1,0 +1,13 @@
+Correct shot number:
+[14, 16, 6, 12, 8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.conversion.rule', 'io.erasurecode.codec.rs-legacy.rawcoders', 'ipc.client.ping'], 'reason': ["Invalid value 'nonono' for property 'hadoop.security.group.mapping.ldap.conversion.rule'. Supported values are 'to_upper', 'to_lower', or 'none'.", "Invalid value 'rs-legacy_java' for property 'io.erasurecode.codec.rs-legacy.rawcoders'.", "Invalid value 'false' for property 'ipc.client.ping'. Expected value should be 'true' or 'false'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.conversion.rule	io.erasurecode.codec.rs-legacy.rawcoders	ipc.client.ping
+[Ciri] Reason for hadoop.security.group.mapping.ldap.conversion.rule: Invalid value 'nonono' for property 'hadoop.security.group.mapping.ldap.conversion.rule'. Supported values are 'to_upper', 'to_lower', or 'none'.
+[Ciri] Reason for io.erasurecode.codec.rs-legacy.rawcoders: Invalid value 'rs-legacy_java' for property 'io.erasurecode.codec.rs-legacy.rawcoders'.
+[Ciri] Reason for ipc.client.ping: Invalid value 'false' for property 'ipc.client.ping'. Expected value should be 'true' or 'false'.

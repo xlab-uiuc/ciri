@@ -1,0 +1,19 @@
+Wrong shot number:
+[5, 8, 9]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.s3.writetype', 'alluxio.worker.data.folder'], 'reason': ["The property 'alluxio.proxy.s3.writetype' has the value 'nonono' which is not within the accepted value {CACHE_THROUGH,CACHE_THROUGH_PROMOTE_SYNC,ASYNC_THROUGH,ASYNC_THROUGH_PROMOTE_SYNC,THROUGH,THROUGH_PROMOTE_SYNC}.", "The property 'alluxio.worker.data.folder' has the value '/valid/file1' which is not a valid directory."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.s3.writetype', 'alluxio.worker.data.folder'], 'reason': ["The property 'alluxio.proxy.s3.writetype' has the value 'nonono' which is not within the accepted value {CACHE_THROUGH,MUST_CACHE,CACHE_THROUGH_WITH_REVERSE}.", "The property 'alluxio.worker.data.folder' has the value '/valid/file1' which is not a valid directory."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.s3.writetype', 'alluxio.worker.data.folder'], 'reason': ["The property 'alluxio.proxy.s3.writetype' has the value 'nonono' which is not within the accepted value {CACHE_THROUGH,CACHE_THROUGH_PROMOTE_SYNC,ASYNC_THROUGH,ASYNC_THROUGH_PROMOTE_SYNC,THROUGH,THROUGH_PROMOTE_SYNC}.", "The property 'alluxio.worker.data.folder' has the value '/valid/file1' which is not a valid directory."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.proxy.s3.writetype	alluxio.worker.data.folder
+[Ciri] Reason for alluxio.proxy.s3.writetype: The property 'alluxio.proxy.s3.writetype' has the value 'nonono' which is not within the accepted value {CACHE_THROUGH,CACHE_THROUGH_PROMOTE_SYNC,ASYNC_THROUGH,ASYNC_THROUGH_PROMOTE_SYNC,THROUGH,THROUGH_PROMOTE_SYNC}.
+[Ciri] Reason for alluxio.worker.data.folder: The property 'alluxio.worker.data.folder' has the value '/valid/file1' which is not a valid directory.

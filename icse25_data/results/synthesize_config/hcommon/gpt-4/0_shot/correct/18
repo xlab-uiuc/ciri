@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.common.configuration.version', 'fs.s3a.committer.magic.enabled', 'fs.AbstractFileSystem.abfss.impl'], 'reason': ["The 'hadoop.common.configuration.version' is set to '3.0.0', but the configuration file is intended for Hadoop version 3.3.0. This value should reflect the actual version of Hadoop being used.", "The 'fs.s3a.committer.magic.enabled' property is deprecated in Hadoop 3.3.0. For using magic committer with Hadoop 3.3.0, it's recommended to configure the output committer settings directly in the application or use the new output committer framework.", "The 'fs.AbstractFileSystem.abfss.impl' property value is incorrect. The correct class name for the Azure Blob File System is 'org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem'. The provided class name 'org.apache.hadoop.fs.azurebfs.Abfss' does not exist."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.common.configuration.version	fs.s3a.committer.magic.enabled	fs.AbstractFileSystem.abfss.impl
+[Ciri] Reason for hadoop.common.configuration.version: The 'hadoop.common.configuration.version' is set to '3.0.0', but the configuration file is intended for Hadoop version 3.3.0. This value should reflect the actual version of Hadoop being used.
+[Ciri] Reason for fs.s3a.committer.magic.enabled: The 'fs.s3a.committer.magic.enabled' property is deprecated in Hadoop 3.3.0. For using magic committer with Hadoop 3.3.0, it's recommended to configure the output committer settings directly in the application or use the new output committer framework.
+[Ciri] Reason for fs.AbstractFileSystem.abfss.impl: The 'fs.AbstractFileSystem.abfss.impl' property value is incorrect. The correct class name for the Azure Blob File System is 'org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem'. The provided class name 'org.apache.hadoop.fs.azurebfs.Abfss' does not exist.

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>io.bytes.per.checksum</name>
+  <value>1024</value>
+  <description>The number of bytes per checksum.  Must not be larger than
+  io.file.buffer.size.</description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.hdfs.impl</name>
+  <value>org.apache.hadoop.fs.Hdfs</value>
+  <description>The FileSystem for hdfs: uris.</description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.webhdfs.impl</name>
+  <value>org.apache.hadoop.fs.WebHdfs</value>
+  <description>The FileSystem for webhdfs: uris.</description>
+</property>
+
+<property>
+  <name>ipc.client.connect.max.retries.on.timeouts</name>
+  <value>22</value>
+  <description>Indicates the number of retries a client will make on socket timeout
+               to establish a server connection.
+  </description>
+</property>
+
+<property>
+  <name>ipc.maximum.response.length</name>
+  <value>134217728</value>
+  <description>This indicates the maximum IPC message length (bytes) that can be
+    accepted by the client. Messages larger than this value are rejected
+    immediately to avoid possible OOMs. This setting should rarely need to be
+    changed.  Set to 0 to disable.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].decay-scheduler.backoff.responsetime.enable</name>
+  <value>false</value>
+  <description>Whether or not to enable the backoff by response time feature.
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.simple.anonymous.allowed</name>
+  <value>false</value>
+  <description>
+    Indicates if anonymous requests are allowed when using 'simple' authentication.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.jaas.context</name>
+  <value>Client</value>
+    <description>
+      Key to define the JAAS context. Used in secure
+      mode
+    </description>
+</property>
+
+</configuration>

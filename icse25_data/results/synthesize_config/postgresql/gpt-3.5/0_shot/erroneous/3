@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['timezone_abbreviations', 'recovery_target_action'], 'reason': ["timezone_abbreviations should be set to a valid timezone abbreviation or 'Default' is not a valid timezone abbreviation.", "recovery_target_action should be set to one of the following values: 'pause', 'promote', 'shutdown', or 'immediate'."]}
+
+{'hasError': True, 'errParameter': ['timezone_abbreviations', 'recovery_target_action'], 'reason': ['timezone_abbreviations parameter should not be enclosed in single quotes.', 'recovery_target_action parameter should not be enclosed in single quotes.']}
+
+{'hasError': True, 'errParameter': ['timezone_abbreviations', 'recovery_target_action'], 'reason': ["timezone_abbreviations should be set to a valid timezone abbreviation or 'Default' is not a valid timezone abbreviation.", "recovery_target_action should be set to one of the following values: 'pause', 'promote', or 'shutdown'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: timezone_abbreviations	recovery_target_action
+[Ciri] Reason for timezone_abbreviations: timezone_abbreviations should be set to a valid timezone abbreviation or 'Default' is not a valid timezone abbreviation.
+[Ciri] Reason for recovery_target_action: recovery_target_action should be set to one of the following values: 'pause', 'promote', 'shutdown', or 'immediate'.

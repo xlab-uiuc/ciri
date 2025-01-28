@@ -1,0 +1,15 @@
+Wrong shot number:
+[11, 12, 10]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.select.input.csv.quote.escape.character'], 'reason': ["The value of the property 'hadoop.service.shutdown.timeout' should be in the format of duration (e.g., '10s' for 10 seconds).", "The value of the property 'fs.s3a.select.input.csv.quote.escape.character' should be escaped as '\\\\' instead of just '\\' to represent a single backslash."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.s3a.select.input.csv.quote.escape.character
+[Ciri] Reason for hadoop.service.shutdown.timeout: The value of the property 'hadoop.service.shutdown.timeout' should be in the format of duration (e.g., '10s' for 10 seconds).
+[Ciri] Reason for fs.s3a.select.input.csv.quote.escape.character: The value of the property 'fs.s3a.select.input.csv.quote.escape.character' should be escaped as '\\' instead of just '\' to represent a single backslash.

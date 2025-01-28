@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port', 'repl-diskless-load', 'lazyfree-lazy-user-del', 'replica-lazy-flush', 'hash-max-listpack-value'], 'reason': ["The 'tls-port' value should be a positive integer or zero, indicating the port Redis serves TLS connections on. '-100' is not a valid port number.", "The 'repl-diskless-load' option should be set to 'on', 'off', or 'swapdb', not 'disabled'.", "The 'lazyfree-lazy-user-del' option should be set to 'yes' or 'no'. However, the provided value is valid, indicating there was a misunderstanding in identifying the error.", "The 'replica-lazy-flush' option should be set to 'yes' or 'no'. However, the provided value is valid, indicating there was a misunderstanding in identifying the error.", "The 'hash-max-listpack-value' does not exist in Redis configuration. The correct configuration for controlling the maximum size of listpack entries in a hash is 'hash-max-ziplist-value' for Redis versions before 6.0, and 'hash-max-listpack-size' for versions 6.0 and above."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: tls-port	repl-diskless-load	lazyfree-lazy-user-del	replica-lazy-flush	hash-max-listpack-value
+[Ciri] Reason for tls-port: The 'tls-port' value should be a positive integer or zero, indicating the port Redis serves TLS connections on. '-100' is not a valid port number.
+[Ciri] Reason for repl-diskless-load: The 'repl-diskless-load' option should be set to 'on', 'off', or 'swapdb', not 'disabled'.
+[Ciri] Reason for lazyfree-lazy-user-del: The 'lazyfree-lazy-user-del' option should be set to 'yes' or 'no'. However, the provided value is valid, indicating there was a misunderstanding in identifying the error.
+[Ciri] Reason for replica-lazy-flush: The 'replica-lazy-flush' option should be set to 'yes' or 'no'. However, the provided value is valid, indicating there was a misunderstanding in identifying the error.
+[Ciri] Reason for hash-max-listpack-value: The 'hash-max-listpack-value' does not exist in Redis configuration. The correct configuration for controlling the maximum size of listpack entries in a hash is 'hash-max-ziplist-value' for Redis versions before 6.0, and 'hash-max-listpack-size' for versions 6.0 and above.

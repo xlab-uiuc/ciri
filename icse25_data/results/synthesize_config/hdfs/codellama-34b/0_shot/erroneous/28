@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-directory-items', 'dfs.namenode.datanode.registration.ip-hostname-check', 'dfs.namenode.stale.datanode.interval', 'dfs.namenode.reencrypt.edek.threads', 'dfs.namenode.audit.log.token.tracking.id', 'dfs.qjournal.http.read.timeout.ms', 'dfs.journalnode.edits.dir.perm'], 'reason': ['The value of dfs.namenode.fs-limits.max-directory-items is too large. It must be less than 6400000.', 'dfs.namenode.datanode.registration.ip-hostname-check is deprecated.', 'The value of dfs.namenode.stale.datanode.interval is too small. It must be greater than 30000.', 'The value of dfs.namenode.reencrypt.edek.threads is too large. It must be less than 100.', 'dfs.namenode.audit.log.token.tracking.id is deprecated.', 'dfs.qjournal.http.read.timeout.ms is deprecated.', 'The value of dfs.journalnode.edits.dir.perm is invalid. It must be octal or symbolic.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: dfs.namenode.fs-limits.max-directory-items	dfs.namenode.datanode.registration.ip-hostname-check	dfs.namenode.stale.datanode.interval	dfs.namenode.reencrypt.edek.threads	dfs.namenode.audit.log.token.tracking.id	dfs.qjournal.http.read.timeout.ms	dfs.journalnode.edits.dir.perm
+[Ciri] Reason for dfs.namenode.fs-limits.max-directory-items: The value of dfs.namenode.fs-limits.max-directory-items is too large. It must be less than 6400000.
+[Ciri] Reason for dfs.namenode.datanode.registration.ip-hostname-check: dfs.namenode.datanode.registration.ip-hostname-check is deprecated.
+[Ciri] Reason for dfs.namenode.stale.datanode.interval: The value of dfs.namenode.stale.datanode.interval is too small. It must be greater than 30000.
+[Ciri] Reason for dfs.namenode.reencrypt.edek.threads: The value of dfs.namenode.reencrypt.edek.threads is too large. It must be less than 100.
+[Ciri] Reason for dfs.namenode.audit.log.token.tracking.id: dfs.namenode.audit.log.token.tracking.id is deprecated.
+[Ciri] Reason for dfs.qjournal.http.read.timeout.ms: dfs.qjournal.http.read.timeout.ms is deprecated.
+[Ciri] Reason for dfs.journalnode.edits.dir.perm: The value of dfs.journalnode.edits.dir.perm is invalid. It must be octal or symbolic.

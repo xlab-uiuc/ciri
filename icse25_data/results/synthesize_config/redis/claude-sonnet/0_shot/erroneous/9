@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'jemalloc-bg-thread'], 'reason': ["The 'cluster-announce-port' parameter is not a valid configuration option in Redis 7.0.0. This option is used for Redis Cluster, which is a separate feature from the standalone Redis server.", "The 'jemalloc-bg-thread' parameter is not a valid configuration option in Redis 7.0.0. This option is related to the memory allocator used by Redis, and it is not a standard configuration parameter."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-announce-port	jemalloc-bg-thread
+[Ciri] Reason for cluster-announce-port: The 'cluster-announce-port' parameter is not a valid configuration option in Redis 7.0.0. This option is used for Redis Cluster, which is a separate feature from the standalone Redis server.
+[Ciri] Reason for jemalloc-bg-thread: The 'jemalloc-bg-thread' parameter is not a valid configuration option in Redis 7.0.0. This option is related to the memory allocator used by Redis, and it is not a standard configuration parameter.

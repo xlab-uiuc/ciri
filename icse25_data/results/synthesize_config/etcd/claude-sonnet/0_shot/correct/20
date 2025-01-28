@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'proxy', 'enable-pprof', 'auto-tls'], 'reason': ["The 'enable-v2' parameter is deprecated in etcd 3.5.0 and should not be used.", "The 'proxy' parameter is not a valid configuration option for etcd 3.5.0.", "The 'enable-pprof' parameter is not a valid configuration option for etcd 3.5.0.", "The 'auto-tls' parameter is not a valid configuration option for etcd 3.5.0. TLS must be configured manually."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: enable-v2	proxy	enable-pprof	auto-tls
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is deprecated in etcd 3.5.0 and should not be used.
+[Ciri] Reason for proxy: The 'proxy' parameter is not a valid configuration option for etcd 3.5.0.
+[Ciri] Reason for enable-pprof: The 'enable-pprof' parameter is not a valid configuration option for etcd 3.5.0.
+[Ciri] Reason for auto-tls: The 'auto-tls' parameter is not a valid configuration option for etcd 3.5.0. TLS must be configured manually.

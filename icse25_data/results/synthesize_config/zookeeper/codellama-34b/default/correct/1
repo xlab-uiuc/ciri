@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 1, 6]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout'], 'reason': ["The property'minSessionTimeout' has the value '-1' which is out of the valid range of a session timeout."]}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval'], 'reason': ["The property'minSessionTimeout' has the value '-1' which is not within the accepted value {1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000}.", "The property 'autopurge.purgeInterval' has the value '0' which is out of the valid range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval'], 'reason': ["The property'minSessionTimeout' has the value '-1' which is not within the accepted value {1000, 2000, 3000,...}.", "The property 'autopurge.purgeInterval' has the value '0' which is not within the accepted value {1, 2, 3,...}."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: minSessionTimeout	autopurge.purgeInterval
+[Ciri] Reason for minSessionTimeout: The property'minSessionTimeout' has the value '-1' which is not within the accepted value {1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000}.
+[Ciri] Reason for autopurge.purgeInterval: The property 'autopurge.purgeInterval' has the value '0' which is out of the valid range of an Integer.

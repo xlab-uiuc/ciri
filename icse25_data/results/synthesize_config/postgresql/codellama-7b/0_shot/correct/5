@@ -1,0 +1,67 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['max_replication_slots'], 'reason': ['max_replication_slots must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'wal_keep_segments', 'max_replication_slots', 'checkpoint_timeout'], 'reason': ['max_wal_senders must be greater than 0', 'wal_keep_segments must be greater than 0', 'max_replication_slots must be greater than 0', 'checkpoint_timeout must be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'max_wal_senders', 'wal_keep_segments', 'max_replication_slots', 'checkpoint_timeout'], 'reason': ['max_wal_size must be greater than 100MB', 'max_wal_senders must be greater than 0', 'wal_keep_segments must be greater than 0', 'max_replication_slots must be greater than 0', 'checkpoint_timeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_wal_size'], 'reason': ['max_wal_size must be greater than 100MB']}
+
+{'hasError': True, 'errParameter': ['wal_level'], 'reason': ['wal_level must be either archive or hot_standby']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'wal_keep_segments', 'max_replication_slots', 'checkpoint_timeout', 'gin_pending_list_limit'], 'reason': ['max_wal_senders should be at least 0', 'wal_keep_segments should be at least 1', 'max_replication_slots should be at least 0', 'checkpoint_timeout should be at least 30min', 'gin_pending_list_limit should be at least 1MB']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['max_replication_slots'], 'reason': ['max_replication_slots is not a valid parameter for postgresql version 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'max_replication_slots'], 'reason': ['max_wal_senders must be at least 1', 'max_replication_slots must be at least 1']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'wal_keep_segments', 'max_wal_senders', 'wal_sender_timeout', 'wal_receiver_timeout', 'max_replication_slots', 'checkpoint_timeout'], 'reason': ['max_wal_size must be a power of 2 between 1 MB and 1 TB', 'wal_keep_segments must be between 1 and 1000', 'max_wal_senders must be between 0 and 100', 'wal_sender_timeout must be between 1 and 3600', 'wal_receiver_timeout must be between 1 and 3600', 'max_replication_slots must be between 0 and 1000', 'checkpoint_timeout must be between 30s and 1d']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'wal_keep_segments', 'wal_sender_timeout', 'wal_receiver_status_interval', 'max_replication_slots', 'checkpoint_timeout'], 'reason': ['max_wal_senders must be between 0 and 1000', 'wal_keep_segments must be between 1 and 1000', 'wal_sender_timeout must be between 0 and 3600', 'wal_receiver_status_interval must be between 1 and 3600', 'max_replication_slots must be between 0 and 1000', 'checkpoint_timeout must be between 30s and 1d']}
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'wal_keep_segments', 'wal_sender_timeout', 'max_replication_slots', 'checkpoint_timeout'], 'reason': ['max_wal_senders must be greater than 0', 'wal_keep_segments must be greater than 0', 'wal_sender_timeout must be greater than 0', 'max_replication_slots must be greater than 0', 'checkpoint_timeout must be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_replication_slots', 'wal_level', 'max_slot_wal_keep_size'], 'reason': ['max_replication_slots must be greater than or equal to 0', 'wal_level must be one of {minimal, archive, hot_standby, logical}', 'max_slot_wal_keep_size must be greater than or equal to -1']}
+
+{'hasError': True, 'errParameter': ['max_wal_size', 'wal_keep_segments', 'max_wal_senders', 'wal_sender_delay', 'max_replication_slots', 'checkpoint_timeout'], 'reason': ['max_wal_size must be a power of 2 between 1 MB and 1 TB', 'wal_keep_segments must be a power of 2 between 1 and 1024', 'max_wal_senders must be a positive integer', 'wal_sender_delay must be a positive integer', 'max_replication_slots must be a positive integer', 'checkpoint_timeout must be a positive integer']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'max_replication_slots'], 'reason': ['max_wal_senders should be at least 10', 'max_replication_slots should be at least 10']}
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'wal_keep_segments', 'max_replication_slots', 'checkpoint_timeout', 'max_slot_wal_keep_size'], 'reason': ['max_wal_senders should be at least 0', 'wal_keep_segments should be at least 1', 'max_replication_slots should be at least 0', 'checkpoint_timeout should be at least 30min', 'max_slot_wal_keep_size should be at least 1MB']}
+
+{'hasError': True, 'errParameter': ['max_replication_slots'], 'reason': ['max_replication_slots must be an integer greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'wal_keep_segments', 'max_replication_slots', 'max_slot_wal_keep_size'], 'reason': ['max_wal_senders must be greater than 0', 'wal_keep_segments must be greater than 0', 'max_replication_slots must be greater than 0', 'max_slot_wal_keep_size must be greater than 0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+The CONFIGURATION FILE IS CORRECT

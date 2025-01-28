@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proc-title-template', 'hash-max-listpack-value', 'oom-score-adj', 'oom-score-adj-values'], 'reason': ["Invalid parameter 'proc-title-template' for Redis configuration.", "Invalid parameter 'hash-max-listpack-value' for Redis configuration.", "Invalid parameter 'oom-score-adj' for Redis configuration.", "Invalid parameter 'oom-score-adj-values' for Redis configuration."]}
+
+{'hasError': True, 'errParameter': ['unixsocket', 'proc-title-template', 'hash-max-listpack-value', 'oom-score-adj', 'oom-score-adj-values'], 'reason': ["unixsocket parameter is not in the correct format. It should be in the form of 'unixsocket /path/to/socket.sock'", 'proc-title-template parameter is not a valid configuration option in Redis version 7.0.0', 'hash-max-listpack-value parameter is not a valid configuration option in Redis version 7.0.0', 'oom-score-adj parameter is not a valid configuration option in Redis version 7.0.0', 'oom-score-adj-values parameter is not a valid configuration option in Redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['proc-title-template', 'hash-max-listpack-value', 'oom-score-adj', 'oom-score-adj-values'], 'reason': ["Invalid parameter 'proc-title-template' for Redis version 7.0.0", "Invalid parameter 'hash-max-listpack-value' for Redis version 7.0.0", "Invalid parameter 'oom-score-adj' for Redis version 7.0.0", "Invalid parameter 'oom-score-adj-values' for Redis version 7.0.0"]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: proc-title-template	hash-max-listpack-value	oom-score-adj	oom-score-adj-values
+[Ciri] Reason for proc-title-template: Invalid parameter 'proc-title-template' for Redis version 7.0.0
+[Ciri] Reason for hash-max-listpack-value: Invalid parameter 'hash-max-listpack-value' for Redis version 7.0.0
+[Ciri] Reason for oom-score-adj: Invalid parameter 'oom-score-adj' for Redis version 7.0.0
+[Ciri] Reason for oom-score-adj-values: Invalid parameter 'oom-score-adj-values' for Redis configuration.

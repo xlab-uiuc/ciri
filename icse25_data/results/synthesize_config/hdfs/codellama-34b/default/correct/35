@@ -1,0 +1,26 @@
+Wrong shot number:
+[6, 14, 2]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['dfs.block.misreplication.processing.limit'], 'reason': ["The property 'dfs.block.misreplication.processing.limit' has the value '20000' which is not a valid value for this property."]}
+
+{'hasError': True, 'errParameter': ['dfs.replication.max'], 'reason': ["The value of the property 'dfs.replication.max' should be less than or equal to 512."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.block.misreplication.processing.limit'], 'reason': ["The property 'dfs.block.misreplication.processing.limit' has the value '20000' which is not a valid value."]}
+
+{'hasError': True, 'errParameter': ['dfs.block.misreplication.processing.limit'], 'reason': ["The value of the property 'dfs.block.misreplication.processing.limit' should be less than 100000."]}
+
+{'hasError': True, 'errParameter': ['dfs.replication.max'], 'reason': ["The value of the property 'dfs.replication.max' should be less than or equal to 512."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.block.misreplication.processing.limit
+[Ciri] Reason for dfs.block.misreplication.processing.limit: The value of the property 'dfs.block.misreplication.processing.limit' should be less than 100000.

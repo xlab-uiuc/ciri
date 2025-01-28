@@ -1,0 +1,23 @@
+Wrong shot number:
+[11, 9, 3]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'rdb-save-incremental-fsync', 'unixsocketperm', 'auto-aof-rewrite-min-size', 'list-max-listpack-size', 'hz'], 'reason': ["The value of the property 'tcp-keepalive' should be an integer greater than 0 to enable the keepalive.", "The value of the property 'rdb-save-incremental-fsync' should be 'everysec' or 'no'.", "The value of the property 'unixsocketperm' should be an integer.", "The value of the property 'auto-aof-rewrite-min-size' should be an integer greater than 0 or 'off'.", "The value of the property 'list-max-listpack-size' should be an integer greater than 0.", "The value of the property 'hz' should be an integer greater than 0."]}
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'rdb-save-incremental-fsync', 'unixsocketperm', 'auto-aof-rewrite-min-size', 'list-max-listpack-size', 'hz'], 'reason': ["The value of the property 'tcp-keepalive' should be a positive integer or '0' to disable the keepalive.", "The value of the property 'rdb-save-incremental-fsync' should be 'always' or 'everysec'.", "The value of the property 'unixsocketperm' should be a valid unix file permission.", "The value of the property 'auto-aof-rewrite-min-size' should be a positive integer or '0'.", "The value of the property 'list-max-listpack-size' should be a positive integer or '0'.", "The value of the property 'hz' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'rdb-save-incremental-fsync', 'unixsocketperm', 'auto-aof-rewrite-min-size', 'list-max-listpack-size', 'hz'], 'reason': ["The value of the property 'tcp-keepalive' should be a positive integer.", "The value of the property 'rdb-save-incremental-fsync' should be 'always' or 'everysec'.", "The value of the property 'unixsocketperm' should be a valid unix file permission.", "The value of the property 'auto-aof-rewrite-min-size' should be a positive integer or 'off'.", "The value of the property 'list-max-listpack-size' should be a positive integer.", "The value of the property 'hz' should be a positive integer."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: tcp-keepalive	rdb-save-incremental-fsync	unixsocketperm	auto-aof-rewrite-min-size	list-max-listpack-size	hz
+[Ciri] Reason for tcp-keepalive: The value of the property 'tcp-keepalive' should be a positive integer.
+[Ciri] Reason for rdb-save-incremental-fsync: The value of the property 'rdb-save-incremental-fsync' should be 'always' or 'everysec'.
+[Ciri] Reason for unixsocketperm: The value of the property 'unixsocketperm' should be a valid unix file permission.
+[Ciri] Reason for auto-aof-rewrite-min-size: The value of the property 'auto-aof-rewrite-min-size' should be a positive integer or 'off'.
+[Ciri] Reason for list-max-listpack-size: The value of the property 'list-max-listpack-size' should be an integer greater than 0.
+[Ciri] Reason for hz: The value of the property 'hz' should be a positive integer.

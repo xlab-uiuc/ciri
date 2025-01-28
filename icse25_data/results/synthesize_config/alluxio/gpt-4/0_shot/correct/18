@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.user.network.rpc.netty.worker.threads'], 'reason': ["The property 'fs.cos.socket.timeout' is not a valid Alluxio configuration property.", "The value for 'alluxio.user.network.rpc.netty.worker.threads' should not be 0 as it specifies the number of threads to use for Netty RPCs, and having 0 threads would disable RPCs, which is not practical."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.cos.socket.timeout	alluxio.user.network.rpc.netty.worker.threads
+[Ciri] Reason for fs.cos.socket.timeout: The property 'fs.cos.socket.timeout' is not a valid Alluxio configuration property.
+[Ciri] Reason for alluxio.user.network.rpc.netty.worker.threads: The value for 'alluxio.user.network.rpc.netty.worker.threads' should not be 0 as it specifies the number of threads to use for Netty RPCs, and having 0 threads would disable RPCs, which is not practical.

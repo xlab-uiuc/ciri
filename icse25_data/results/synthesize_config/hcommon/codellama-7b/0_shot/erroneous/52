@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.http.filter.initializers'], 'reason': ['The value of hadoop.http.filter.initializers is not a valid value. The value must be a comma-separated list of class names. Each class in the list must extend org.apache.hadoop.http.FilterInitializer. The corresponding Filter will be initialized. Then, the Filter will be applied to all user-facing jsp and servlet web pages. The ordering of the list defines the ordering of the filters.']}
+
+{'hasError': True, 'errParameter': ['hadoop.http.filter.initializers'], 'reason': ['The value of hadoop.http.filter.initializers is org.apache.hadoop.http.lib.StaticUserWebFilter, which is not a valid value.']}
+
+{'hasError': True, 'errParameter': ['hadoop.http.filter.initializers'], 'reason': ['The value of hadoop.http.filter.initializers is not a valid comma-separated list of class names. The value is: org.apache.hadoop.http.lib.StaticUserWebFilter. The class name must be fully qualified and the class must exist.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hadoop.http.filter.initializers
+[Ciri] Reason for hadoop.http.filter.initializers: The value of hadoop.http.filter.initializers is not a valid value. The value must be a comma-separated list of class names. Each class in the list must extend org.apache.hadoop.http.FilterInitializer. The corresponding Filter will be initialized. Then, the Filter will be applied to all user-facing jsp and servlet web pages. The ordering of the list defines the ordering of the filters.

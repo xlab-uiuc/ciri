@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.webapp.https.address</name>
+  <value>127.0.0.1</value>
+    <description>
+      The https address of the RM web application.
+      If only a host is provided as the value,
+      the webapp will be served on a random port.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.resource-profiles.enabled</name>
+  <value>hadoop</value>
+    <description>
+    Flag to enable/disable resource profiles
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.env-whitelist</name>
+  <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_HOME,PATH,LANG,TZ</value>
+    <description>Environment variables that containers may override rather than use NodeManager's default.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb</name>
+  <value>0</value>
+    <description>The minimum space in megabytes that must be available on a disk for
+    it to be used. If space on a disk falls below this threshold, it will be marked
+    as bad. This applies to yarn.nodemanager.local-dirs and
+    yarn.nodemanager.log-dirs.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.cgroups.hierarchy</name>
+  <value>/valid/file2</value>
+    <description>The cgroups hierarchy under which to place YARN proccesses (cannot contain commas).
+    If yarn.nodemanager.linux-container-executor.cgroups.mount is false
+    (that is, if cgroups have been pre-configured) and the YARN user has write
+    access to the parent directory, then the directory will be created.
+    If the directory already exists, the administrator has to give YARN
+    write permissions to it recursively.
+    This property only applies when the LCE resources handler is set to
+    CgroupsLCEResourcesHandler.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file</name>
+  <value>/valid/file1</value>
+    <description>The HDFS location where the runC image tag to hash
+      file exists.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.hostname</name>
+  <value>127.0.0.1</value>
+    <description>The hostname of the timeline service web application.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.amrmproxy.enabled</name>
+  <value>false</value>
+    <description>
+    Enable/Disable AMRMProxyService in the node manager. This service is used to
+    intercept calls from the application masters to the resource manager.
+    </description>
+</property>
+
+</configuration>

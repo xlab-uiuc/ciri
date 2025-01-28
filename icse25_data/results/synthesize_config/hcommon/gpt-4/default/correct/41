@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 13, 6]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.assumed.role.session.duration', 'ipc.server.max.connections'], 'reason': ["The property 'fs.s3a.assumed.role.session.duration' has a value '40m' which is outside the specified range of 15m to 1h.", "The property 'ipc.server.max.connections' has a value '-1' which is not a valid setting as 0 means no limit, and negative values are not allowed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.assumed.role.session.duration	ipc.server.max.connections
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The property 'fs.s3a.assumed.role.session.duration' has a value '40m' which is outside the specified range of 15m to 1h.
+[Ciri] Reason for ipc.server.max.connections: The property 'ipc.server.max.connections' has a value '-1' which is not a valid setting as 0 means no limit, and negative values are not allowed.

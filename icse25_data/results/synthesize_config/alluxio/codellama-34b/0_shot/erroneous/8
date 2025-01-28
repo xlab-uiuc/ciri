@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.rpc.executor.max.pool.size', 'alluxio.user.client.cache.evictor.lfu.logbase', 'alluxio.underfs.s3.upload.threads.max'], 'reason': ['alluxio.master.rpc.executor.max.pool.size should be less than 1000', 'alluxio.user.client.cache.evictor.lfu.logbase should be greater than 1.0', 'alluxio.underfs.s3.upload.threads.max should be less than 10']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.rpc.executor.max.pool.size	alluxio.user.client.cache.evictor.lfu.logbase	alluxio.underfs.s3.upload.threads.max
+[Ciri] Reason for alluxio.master.rpc.executor.max.pool.size: alluxio.master.rpc.executor.max.pool.size should be less than 1000
+[Ciri] Reason for alluxio.user.client.cache.evictor.lfu.logbase: alluxio.user.client.cache.evictor.lfu.logbase should be greater than 1.0
+[Ciri] Reason for alluxio.underfs.s3.upload.threads.max: alluxio.underfs.s3.upload.threads.max should be less than 10

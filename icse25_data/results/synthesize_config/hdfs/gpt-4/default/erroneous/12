@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 14, 15]
+
+Correct shot number:
+[16]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.shared.edits.dir', 'dfs.balancer.moverThreads'], 'reason': ["The value 'dev/urandom///' for 'dfs.namenode.shared.edits.dir' is invalid. It should be a valid URI pointing to a directory on shared storage.", "The value '2000' for 'dfs.balancer.moverThreads' is excessively high and likely to cause resource issues. It should be a reasonable number that the system can handle."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.shared.edits.dir	dfs.balancer.moverThreads
+[Ciri] Reason for dfs.namenode.shared.edits.dir: The value 'dev/urandom///' for 'dfs.namenode.shared.edits.dir' is invalid. It should be a valid URI pointing to a directory on shared storage.
+[Ciri] Reason for dfs.balancer.moverThreads: The value '2000' for 'dfs.balancer.moverThreads' is excessively high and likely to cause resource issues. It should be a reasonable number that the system can handle.

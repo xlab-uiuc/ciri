@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.info.port', 'hbase.ipc.server.callqueue.scan.ratio', 'hbase.regionserver.global.memstore.size.lower.limit', 'hbase.zookeeper.property.syncLimit', 'hbase.server.keyvalue.maxsize', 'hfile.format.version', 'hbase.regionserver.hostname.disable.master.reversedns', 'hbase.replication.source.maxthreads'], 'reason': ['The value for hbase.master.info.port should be an integer, not a floating-point number.', 'The value for hbase.ipc.server.callqueue.scan.ratio should be a floating-point number between 0 and 1, not an integer.', 'The description for hbase.regionserver.global.memstore.size.lower.limit is incorrect. The default value is 0.95, not an empty string.', 'The property name hbase.zookeeper.property.syncLimit is incorrect. It should be hbase.zookeeper.peerSyncLimit.', 'The value for hbase.server.keyvalue.maxsize is too small. The recommended minimum value is 10485760 (10MB).', 'The value for hfile.format.version is outdated. The latest version for HBase 2.2.7 is 3.', 'The property name hbase.regionserver.hostname.disable.master.reversedns is incorrect. It should be hbase.regionserver.hostname.flattern.', 'The value for hbase.replication.source.maxthreads is too high. The recommended maximum value is 16.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.master.info.port	hbase.ipc.server.callqueue.scan.ratio	hbase.regionserver.global.memstore.size.lower.limit	hbase.zookeeper.property.syncLimit	hbase.server.keyvalue.maxsize	hfile.format.version	hbase.regionserver.hostname.disable.master.reversedns	hbase.replication.source.maxthreads
+[Ciri] Reason for hbase.master.info.port: The value for hbase.master.info.port should be an integer, not a floating-point number.
+[Ciri] Reason for hbase.ipc.server.callqueue.scan.ratio: The value for hbase.ipc.server.callqueue.scan.ratio should be a floating-point number between 0 and 1, not an integer.
+[Ciri] Reason for hbase.regionserver.global.memstore.size.lower.limit: The description for hbase.regionserver.global.memstore.size.lower.limit is incorrect. The default value is 0.95, not an empty string.
+[Ciri] Reason for hbase.zookeeper.property.syncLimit: The property name hbase.zookeeper.property.syncLimit is incorrect. It should be hbase.zookeeper.peerSyncLimit.
+[Ciri] Reason for hbase.server.keyvalue.maxsize: The value for hbase.server.keyvalue.maxsize is too small. The recommended minimum value is 10485760 (10MB).
+[Ciri] Reason for hfile.format.version: The value for hfile.format.version is outdated. The latest version for HBase 2.2.7 is 3.
+[Ciri] Reason for hbase.regionserver.hostname.disable.master.reversedns: The property name hbase.regionserver.hostname.disable.master.reversedns is incorrect. It should be hbase.regionserver.hostname.flattern.
+[Ciri] Reason for hbase.replication.source.maxthreads: The value for hbase.replication.source.maxthreads is too high. The recommended maximum value is 16.

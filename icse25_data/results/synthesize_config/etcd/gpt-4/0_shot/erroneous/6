@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cert-file', 'enable-v2', 'quota-backend-bytes'], 'reason': ["The 'cert-file' path should start with './' for relative paths or a '/' for absolute paths. The given path seems incorrect.", "The 'enable-v2' parameter is not applicable to etcd version 3.5.0 as API v2 is deprecated and not supported.", "The 'quota-backend-bytes' value should be greater than zero to set a quota on the backend size. A value of 0 disables the quota, which might not be intended."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cert-file	enable-v2	quota-backend-bytes
+[Ciri] Reason for cert-file: The 'cert-file' path should start with './' for relative paths or a '/' for absolute paths. The given path seems incorrect.
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is not applicable to etcd version 3.5.0 as API v2 is deprecated and not supported.
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' value should be greater than zero to set a quota on the backend size. A value of 0 disables the quota, which might not be intended.

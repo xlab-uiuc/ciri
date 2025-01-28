@@ -1,0 +1,18 @@
+Correct shot number:
+[5, 15, 1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size', 'ipc.client.connection.maxidletime', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable', 'ipc.[port_number].weighted-cost.lockfree', 'rpc.metrics.quantile.enable', 'hadoop.registry.zk.root'], 'reason': ['Invalid format for property value. The value should be in the format of IP address or domain name.', 'Invalid format for property value. The value should be a numeric value followed by a suffix from the set {K,M,G,T,P}.', 'Invalid format for property value. The value should be a numeric value without any suffix.', 'Invalid property name format. Replace [port_number] with an actual port number.', 'Invalid property name format. Replace [port_number] with an actual port number.', 'Invalid format for property value. The value should be a numeric value.', 'Invalid format for property value. The value should be a boolean (true/false).', 'Invalid format for property value. The value should be a valid zookeeper root node path.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.block.size	ipc.client.connection.maxidletime	ipc.[port_number].decay-scheduler.thresholds	ipc.[port_number].decay-scheduler.backoff.responsetime.enable	ipc.[port_number].weighted-cost.lockfree	rpc.metrics.quantile.enable	hadoop.registry.zk.root
+[Ciri] Reason for fs.ftp.host: Invalid format for property value. The value should be in the format of IP address or domain name.
+[Ciri] Reason for fs.s3a.block.size: Invalid format for property value. The value should be a numeric value followed by a suffix from the set {K,M,G,T,P}.
+[Ciri] Reason for ipc.client.connection.maxidletime: Invalid format for property value. The value should be a numeric value without any suffix.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: Invalid property name format. Replace [port_number] with an actual port number.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.enable: Invalid property name format. Replace [port_number] with an actual port number.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: Invalid format for property value. The value should be a numeric value.
+[Ciri] Reason for rpc.metrics.quantile.enable: Invalid format for property value. The value should be a boolean (true/false).
+[Ciri] Reason for hadoop.registry.zk.root: Invalid format for property value. The value should be a valid zookeeper root node path.

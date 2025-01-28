@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['set-max-listpack-value', 'cluster-announce-port', 'enable-debug-command', 'tls-session-cache-size', 'latency-monitor-threshold', 'proto-max-bulk-len', 'stream-node-max-entries'], 'reason': ["The correct parameter is 'list-max-listpack-value', not 'set-max-listpack-value'.", "The 'cluster-announce-port' value of 1 is typically not a valid port for Redis clustering; valid ports are usually between 1024 and 65535.", "The 'enable-debug-command' parameter should be 'yes' or 'no', but it's recommended to be careful with enabling debug commands in production environments.", "The 'tls-session-cache-size' parameter is not a standard Redis configuration directive.", "The 'latency-monitor-threshold' value of 0 disables the latency monitor. This is not an error per se, but it's worth noting if monitoring is desired.", "The 'proto-max-bulk-len' value is specified in an incorrect format. It should be in bytes, and the correct parameter name is 'proto-max-bulk-len'.", "The 'stream-node-max-entries' parameter is correctly named, but without context on whether the value of 100 is appropriate, it's hard to classify as an error."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: set-max-listpack-value	cluster-announce-port	enable-debug-command	tls-session-cache-size	latency-monitor-threshold	proto-max-bulk-len	stream-node-max-entries
+[Ciri] Reason for set-max-listpack-value: The correct parameter is 'list-max-listpack-value', not 'set-max-listpack-value'.
+[Ciri] Reason for cluster-announce-port: The 'cluster-announce-port' value of 1 is typically not a valid port for Redis clustering; valid ports are usually between 1024 and 65535.
+[Ciri] Reason for enable-debug-command: The 'enable-debug-command' parameter should be 'yes' or 'no', but it's recommended to be careful with enabling debug commands in production environments.
+[Ciri] Reason for tls-session-cache-size: The 'tls-session-cache-size' parameter is not a standard Redis configuration directive.
+[Ciri] Reason for latency-monitor-threshold: The 'latency-monitor-threshold' value of 0 disables the latency monitor. This is not an error per se, but it's worth noting if monitoring is desired.
+[Ciri] Reason for proto-max-bulk-len: The 'proto-max-bulk-len' value is specified in an incorrect format. It should be in bytes, and the correct parameter name is 'proto-max-bulk-len'.
+[Ciri] Reason for stream-node-max-entries: The 'stream-node-max-entries' parameter is correctly named, but without context on whether the value of 100 is appropriate, it's hard to classify as an error.

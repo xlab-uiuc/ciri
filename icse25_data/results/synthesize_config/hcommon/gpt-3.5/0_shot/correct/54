@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.s3a.select.input.csv.record.delimiter'], 'reason': ["The property 'fs.ftp.transfer.mode' has a usage tag which is not a standard configuration attribute.", "The property 'fs.s3a.select.input.csv.record.delimiter' contains special characters that may cause parsing issues."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.s3a.select.input.csv.record.delimiter'], 'reason': ["The property 'fs.ftp.transfer.mode' has a usage tag which is not a standard configuration element.", "The property 'fs.s3a.select.input.csv.record.delimiter' contains a value that may cause issues due to special characters."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.s3a.select.input.csv.record.delimiter'], 'reason': ["The property 'fs.ftp.transfer.mode' has an invalid value. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.", "The property 'fs.s3a.select.input.csv.record.delimiter' contains an escape character '\\'. It should be represented as '\\\\n' for newline."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.s3a.select.input.csv.record.delimiter
+[Ciri] Reason for fs.ftp.transfer.mode: The property 'fs.ftp.transfer.mode' has a usage tag which is not a standard configuration attribute.
+[Ciri] Reason for fs.s3a.select.input.csv.record.delimiter: The property 'fs.s3a.select.input.csv.record.delimiter' contains a value that may cause issues due to special characters.

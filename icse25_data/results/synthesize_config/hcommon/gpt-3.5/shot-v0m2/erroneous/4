@@ -1,0 +1,13 @@
+Wrong shot number:
+[8, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.metadatastore.fail.on.write.error', 'hadoop.security.crypto.buffer.size', 'hadoop.tags.system'], 'reason': ["The property 'fs.s3a.metadatastore.fail.on.write.error' has the value 'true' which is a boolean value. It should be a string representing 'true' or 'false'.", "The property 'hadoop.security.crypto.buffer.size' has an invalid value 'ciri/ciri'. It should be a numeric value representing the buffer size.", "The property 'hadoop.tags.system' is missing the closing tag '</value>'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.s3a.metadatastore.fail.on.write.error	hadoop.security.crypto.buffer.size	hadoop.tags.system
+[Ciri] Reason for fs.s3a.metadatastore.fail.on.write.error: The property 'fs.s3a.metadatastore.fail.on.write.error' has the value 'true' which is a boolean value. It should be a string representing 'true' or 'false'.
+[Ciri] Reason for hadoop.security.crypto.buffer.size: The property 'hadoop.security.crypto.buffer.size' has an invalid value 'ciri/ciri'. It should be a numeric value representing the buffer size.
+[Ciri] Reason for hadoop.tags.system: The property 'hadoop.tags.system' is missing the closing tag '</value>'.

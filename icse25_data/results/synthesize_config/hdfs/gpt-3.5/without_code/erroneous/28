@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 9, 12]
+
+Correct shot number:
+[16]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.directoryscan.interval', 'dfs.journalnode.edits.dir.perm'], 'reason': ["The property 'dfs.datanode.directoryscan.interval' has the value '1s' which is missing the time unit suffix.", "The property 'dfs.journalnode.edits.dir.perm' has the value '1.1.1' which is not a valid permission format."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.directoryscan.interval', 'dfs.journalnode.edits.dir.perm'], 'reason': ["The property 'dfs.datanode.directoryscan.interval' has the value '1s' which is missing a valid time unit suffix.", "The property 'dfs.journalnode.edits.dir.perm' has an invalid value '1.1.1' for permissions. It should be either octal or symbolic."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.directoryscan.interval', 'dfs.journalnode.edits.dir.perm'], 'reason': ["The property 'dfs.datanode.directoryscan.interval' has the value '1s' which is missing a valid time unit suffix.", "The property 'dfs.journalnode.edits.dir.perm' has the value '1.1.1' which is not a valid permission format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.directoryscan.interval	dfs.journalnode.edits.dir.perm
+[Ciri] Reason for dfs.datanode.directoryscan.interval: The property 'dfs.datanode.directoryscan.interval' has the value '1s' which is missing a valid time unit suffix.
+[Ciri] Reason for dfs.journalnode.edits.dir.perm: The property 'dfs.journalnode.edits.dir.perm' has the value '1.1.1' which is not a valid permission format.

@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes', 'alluxio.underfs.s3.directory.suffix', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.hostname', 'fs.gcs.credential.path'], 'reason': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes should be a positive integer', 'alluxio.underfs.s3.directory.suffix should be a valid path', 'alluxio.security.stale.channel.purge.interval should be a valid duration', 'alluxio.master.hostname should be a valid hostname', 'fs.gcs.credential.path should be a valid path']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes', 'alluxio.underfs.s3.directory.suffix', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.hostname', 'fs.gcs.credential.path'], 'reason': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes should be a positive integer', 'alluxio.underfs.s3.directory.suffix should be a valid directory path', 'alluxio.security.stale.channel.purge.interval should be a valid time duration', 'alluxio.master.hostname should be a valid hostname', 'fs.gcs.credential.path should be a valid file path']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes', 'alluxio.underfs.s3.directory.suffix', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.hostname', 'fs.gcs.credential.path'], 'reason': ['alluxio.user.block.avoid.eviction.policy.reserved.size.bytes should be a positive integer', 'alluxio.underfs.s3.directory.suffix should be a valid path', 'alluxio.security.stale.channel.purge.interval should be a valid time unit', 'alluxio.master.hostname should be a valid hostname', 'fs.gcs.credential.path should be a valid path']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.user.block.avoid.eviction.policy.reserved.size.bytes	alluxio.underfs.s3.directory.suffix	alluxio.security.stale.channel.purge.interval	alluxio.master.hostname	fs.gcs.credential.path
+[Ciri] Reason for alluxio.user.block.avoid.eviction.policy.reserved.size.bytes: alluxio.user.block.avoid.eviction.policy.reserved.size.bytes should be a positive integer
+[Ciri] Reason for alluxio.underfs.s3.directory.suffix: alluxio.underfs.s3.directory.suffix should be a valid directory path
+[Ciri] Reason for alluxio.security.stale.channel.purge.interval: alluxio.security.stale.channel.purge.interval should be a valid time unit
+[Ciri] Reason for alluxio.master.hostname: alluxio.master.hostname should be a valid hostname
+[Ciri] Reason for fs.gcs.credential.path: fs.gcs.credential.path should be a valid path

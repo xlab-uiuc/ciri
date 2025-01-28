@@ -1,0 +1,15 @@
+Wrong shot number:
+[14, 2, 15]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.dir', 'dfs.client.failover.connection.retries'], 'reason': ["The value of the property 'dfs.namenode.checkpoint.dir' should be a valid directory path, not 'ciri'.", "The value of the property 'dfs.client.failover.connection.retries' should be a non-negative integer, not '-1'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.checkpoint.dir	dfs.client.failover.connection.retries
+[Ciri] Reason for dfs.namenode.checkpoint.dir: The value of the property 'dfs.namenode.checkpoint.dir' should be a valid directory path, not 'ciri'.
+[Ciri] Reason for dfs.client.failover.connection.retries: The value of the property 'dfs.client.failover.connection.retries' should be a non-negative integer, not '-1'.

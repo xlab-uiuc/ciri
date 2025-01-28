@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.handler', 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb', 'yarn.timeline-service.address'], 'reason': ["The value 'NOEXIST' is not a valid option for yarn.resourcemanager.placement-constraints.handler. Valid options are 'placement-processor', 'scheduler' and 'disabled'.", 'The value for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb cannot be negative. It should be greater than or equal to yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb.', "The value '127.0.0.1' for yarn.timeline-service.address is just a loopback address. It should be a proper hostname or IP address that can be accessed by clients."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.resourcemanager.placement-constraints.handler	yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb	yarn.timeline-service.address
+[Ciri] Reason for yarn.resourcemanager.placement-constraints.handler: The value 'NOEXIST' is not a valid option for yarn.resourcemanager.placement-constraints.handler. Valid options are 'placement-processor', 'scheduler' and 'disabled'.
+[Ciri] Reason for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb: The value for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb cannot be negative. It should be greater than or equal to yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb.
+[Ciri] Reason for yarn.timeline-service.address: The value '127.0.0.1' for yarn.timeline-service.address is just a loopback address. It should be a proper hostname or IP address that can be accessed by clients.

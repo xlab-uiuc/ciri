@@ -1,0 +1,12 @@
+Correct shot number:
+[13, 11, 14, 15, 10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.client.connect.max.retries'], 'reason': ['Deprecated property fs.default.name should be replaced with fs.defaultFS', 'ipc.client.connect.max.retries should have a value greater than 1 for better connection establishment retries']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	ipc.client.connect.max.retries
+[Ciri] Reason for fs.default.name: Deprecated property fs.default.name should be replaced with fs.defaultFS
+[Ciri] Reason for ipc.client.connect.max.retries: ipc.client.connect.max.retries should have a value greater than 1 for better connection establishment retries

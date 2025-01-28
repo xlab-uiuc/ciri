@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['enable_async_append', 'wal_log_hints'], 'reason': ['enable_async_append is not a valid parameter', 'wal_log_hints is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['enable_async_append', 'wal_log_hints'], 'reason': ['enable_async_append is not a valid parameter for PostgreSQL 13.0', 'wal_log_hints is not a valid parameter for PostgreSQL 13.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: enable_async_append	wal_log_hints
+[Ciri] Reason for enable_async_append: enable_async_append is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for wal_log_hints: wal_log_hints is not a valid parameter for PostgreSQL 13.0

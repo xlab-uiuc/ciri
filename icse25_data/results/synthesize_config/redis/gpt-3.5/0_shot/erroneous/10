@@ -1,0 +1,24 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dir', 'proc-title-template', 'acllog-max-len', 'lazyfree-lazy-user-del'], 'reason': ["The 'dir' parameter should not have multiple consecutive slashes. It should be 'tmp/staging'.", "The 'proc-title-template' parameter should not contain curly braces. It should be 'proc-title-template=title listen-addr server-mode'.", "The 'acllog-max-len' parameter is not a valid configuration for Redis version 7.0.0.", "The 'lazyfree-lazy-user-del' parameter is not a valid configuration for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['proc-title-template', 'aof-load-truncated', 'acllog-max-len', 'lazyfree-lazy-user-del'], 'reason': ["The parameter 'proc-title-template' is not a valid configuration option in Redis version 7.0.0.", "The value 'yes' for 'aof-load-truncated' is not a valid option. It should be 'yes' or 'no'.", "The parameter 'acllog-max-len' is not a valid configuration option in Redis version 7.0.0.", "The value 'no' for 'lazyfree-lazy-user-del' is not a valid option. It should be 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['dir', 'proc-title-template', 'aof-load-truncated', 'acllog-max-len', 'lazyfree-lazy-user-del'], 'reason': ["The 'dir' parameter should not have extra slashes. It should be 'tmp/staging'.", "The 'proc-title-template' parameter is missing curly braces around 'title'. It should be '{title} {listen-addr} {server-mode}'.", "The 'aof-load-truncated' parameter should have a value of 'yes' or 'no'.", "The 'acllog-max-len' parameter should be an integer value.", "The 'lazyfree-lazy-user-del' parameter should have a value of 'yes' or 'no'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dir', 'proc-title-template', 'acllog-max-len', 'lazyfree-lazy-user-del'], 'reason': ["Invalid format for 'dir' parameter. It should be in the format 'dir=<directory>'.", "Invalid format for 'proc-title-template' parameter. It should not contain curly braces.", "Invalid value for 'acllog-max-len' parameter. It should be an integer.", "Invalid value for 'lazyfree-lazy-user-del' parameter. It should be 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['dir', 'proc-title-template', 'aof-load-truncated', 'acllog-max-len', 'lazyfree-lazy-user-del'], 'reason': ["The 'dir' parameter has extra slashes. It should be 'tmp/staging'.", "The 'proc-title-template' parameter contains unsupported characters '{' and '}'.", "The 'aof-load-truncated' parameter should have a value of 'yes' or 'no'.", "The 'acllog-max-len' parameter should be removed as it is not a valid configuration parameter for Redis version 7.0.0.", "The 'lazyfree-lazy-user-del' parameter should have a value of 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['dir', 'proc-title-template', 'aof-load-truncated', 'acllog-max-len', 'lazyfree-lazy-user-del'], 'reason': ["Invalid format for 'dir' parameter.", "Invalid format for 'proc-title-template' parameter.", "Invalid value for 'aof-load-truncated' parameter.", "Invalid value for 'acllog-max-len' parameter.", "Invalid value for 'lazyfree-lazy-user-del' parameter."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: dir	proc-title-template	aof-load-truncated	acllog-max-len	lazyfree-lazy-user-del
+[Ciri] Reason for dir: The 'dir' parameter has extra slashes. It should be 'tmp/staging'.
+[Ciri] Reason for proc-title-template: The 'proc-title-template' parameter contains unsupported characters '{' and '}'.
+[Ciri] Reason for aof-load-truncated: The 'aof-load-truncated' parameter should have a value of 'yes' or 'no'.
+[Ciri] Reason for acllog-max-len: Invalid value for 'acllog-max-len' parameter.
+[Ciri] Reason for lazyfree-lazy-user-del: Invalid value for 'lazyfree-lazy-user-del' parameter.

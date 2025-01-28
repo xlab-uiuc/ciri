@@ -1,0 +1,42 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'client-output-buffer-limit', 'aclfile', 'tls-ca-cert-file', 'oom-score-adj', 'replica-read-only', 'set-proc-title'], 'reason': ["The property 'proto-max-bulk-len' is not supported in Redis 7.0.0.", "The property 'client-output-buffer-limit' is not supported in Redis 7.0.0.", "The property 'aclfile' is not supported in Redis 7.0.0.", "The property 'tls-ca-cert-file' is not supported in Redis 7.0.0.", "The property 'oom-score-adj' is not supported in Redis 7.0.0.", "The property 'replica-read-only' is not supported in Redis 7.0.0.", "The property 'set-proc-title' is not supported in Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len'], 'reason': ["The property 'proto-max-bulk-len' is not supported in Redis 7.0.0."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'client-output-buffer-limit', 'aclfile', 'tls-ca-cert-file', 'oom-score-adj', 'replica-read-only', 'set-proc-title'], 'reason': ["The parameter 'proto-max-bulk-len' is not supported in Redis 7.0.0.", "The parameter 'client-output-buffer-limit' is not supported in Redis 7.0.0.", "The parameter 'aclfile' is not supported in Redis 7.0.0.", "The parameter 'tls-ca-cert-file' is not supported in Redis 7.0.0.", "The parameter 'oom-score-adj' is not supported in Redis 7.0.0.", "The parameter 'replica-read-only' is not supported in Redis 7.0.0.", "The parameter 'set-proc-title' is not supported in Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len'], 'reason': ['The proto-max-bulk-len parameter is not supported in Redis 7.0.0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len'], 'reason': ["The property 'proto-max-bulk-len' is not supported in Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['bind', 'port', 'tcp-backlog', 'timeout', 'tls-ca-cert-file', 'oom-score-adj', 'replica-read-only', 'set-proc-title'], 'reason': ['bind is not a valid parameter for redis version 7.0.0', 'port is not a valid parameter for redis version 7.0.0', 'tcp-backlog is not a valid parameter for redis version 7.0.0', 'timeout is not a valid parameter for redis version 7.0.0', 'tls-ca-cert-file is not a valid parameter for redis version 7.0.0', 'oom-score-adj is not a valid parameter for redis version 7.0.0', 'replica-read-only is not a valid parameter for redis version 7.0.0', 'set-proc-title is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'client-output-buffer-limit', 'aclfile', 'tls-ca-cert-file', 'oom-score-adj', 'replica-read-only', 'set-proc-title'], 'reason': ["The parameter 'proto-max-bulk-len' is not supported in Redis 7.0.0.", "The parameter 'client-output-buffer-limit' is not supported in Redis 7.0.0.", "The parameter 'aclfile' is not supported in Redis 7.0.0.", "The parameter 'tls-ca-cert-file' is not supported in Redis 7.0.0.", "The parameter 'oom-score-adj' is not supported in Redis 7.0.0.", "The parameter 'replica-read-only' is not supported in Redis 7.0.0.", "The parameter 'set-proc-title' is not supported in Redis 7.0.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'client-output-buffer-limit', 'aclfile', 'tls-ca-cert-file', 'oom-score-adj', 'replica-read-only', 'set-proc-title'], 'reason': ["The parameter 'proto-max-bulk-len' is not supported in Redis 7.0.0.", "The parameter 'client-output-buffer-limit' is not supported in Redis 7.0.0.", "The parameter 'aclfile' is not supported in Redis 7.0.0.", "The parameter 'tls-ca-cert-file' is not supported in Redis 7.0.0.", "The parameter 'oom-score-adj' is not supported in Redis 7.0.0.", "The parameter 'replica-read-only' is not supported in Redis 7.0.0.", "The parameter 'set-proc-title' is not supported in Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['replica-read-only', 'set-proc-title'], 'reason': ['replica-read-only is not a valid parameter for Redis 7.0.0', 'set-proc-title is not a valid parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'client-output-buffer-limit', 'aclfile', 'tls-ca-cert-file', 'oom-score-adj', 'replica-read-only', 'set-proc-title'], 'reason': ["The parameter 'proto-max-bulk-len' is not supported in Redis 7.0.0.", "The parameter 'client-output-buffer-limit' is not supported in Redis 7.0.0.", "The parameter 'aclfile' is not supported in Redis 7.0.0.", "The parameter 'tls-ca-cert-file' is not supported in Redis 7.0.0.", "The parameter 'oom-score-adj' is not supported in Redis 7.0.0.", "The parameter 'replica-read-only' is not supported in Redis 7.0.0.", "The parameter 'set-proc-title' is not supported in Redis 7.0.0."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: proto-max-bulk-len	client-output-buffer-limit	aclfile	tls-ca-cert-file	oom-score-adj	replica-read-only	set-proc-title
+[Ciri] Reason for proto-max-bulk-len: The parameter 'proto-max-bulk-len' is not supported in Redis 7.0.0.
+[Ciri] Reason for client-output-buffer-limit: The parameter 'client-output-buffer-limit' is not supported in Redis 7.0.0.
+[Ciri] Reason for aclfile: The parameter 'aclfile' is not supported in Redis 7.0.0.
+[Ciri] Reason for tls-ca-cert-file: The parameter 'tls-ca-cert-file' is not supported in Redis 7.0.0.
+[Ciri] Reason for oom-score-adj: The parameter 'oom-score-adj' is not supported in Redis 7.0.0.
+[Ciri] Reason for replica-read-only: The parameter 'replica-read-only' is not supported in Redis 7.0.0.
+[Ciri] Reason for set-proc-title: The parameter 'set-proc-title' is not supported in Redis 7.0.0.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[1, 13, 14]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.read.prefetch.size', 'dfs.balancer.moverThreads'], 'reason': ["The value of the property 'dfs.client.read.prefetch.size' should be an integer or long representing bytes, not a fraction.", "The value '500' for 'dfs.balancer.moverThreads' is likely too high and could lead to resource contention. The typical range for this setting is much lower."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.client.read.prefetch.size	dfs.balancer.moverThreads
+[Ciri] Reason for dfs.client.read.prefetch.size: The value of the property 'dfs.client.read.prefetch.size' should be an integer or long representing bytes, not a fraction.
+[Ciri] Reason for dfs.balancer.moverThreads: The value '500' for 'dfs.balancer.moverThreads' is likely too high and could lead to resource contention. The typical range for this setting is much lower.

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'cluster-announce-port'], 'reason': ['cluster-announce-ip and cluster-announce-port are not supported in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['replica-announce-port', 'stream-node-max-bytes', 'aclfile', 'daemonize', 'loglevel', 'cluster-announce-ip', 'hash-max-listpack-entries', 'cluster-announce-port'], 'reason': ['replica-announce-port is not a valid port number', 'stream-node-max-bytes is not a valid number', 'aclfile is not a valid file path', 'daemonize is not a valid boolean', 'loglevel is not a valid log level', 'cluster-announce-ip is not a valid IP address', 'hash-max-listpack-entries is not a valid number', 'cluster-announce-port is not a valid port number']}
+
+{'hasError': True, 'errParameter': ['replica-announce-port', 'stream-node-max-bytes', 'aclfile', 'daemonize', 'loglevel', 'cluster-announce-ip', 'hash-max-listpack-entries', 'cluster-announce-port'], 'reason': ['replica-announce-port is not a valid parameter', 'stream-node-max-bytes is not a valid parameter', 'aclfile is not a valid parameter', 'daemonize is not a valid parameter', 'loglevel is not a valid parameter', 'cluster-announce-ip is not a valid parameter', 'hash-max-listpack-entries is not a valid parameter', 'cluster-announce-port is not a valid parameter']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: replica-announce-port	stream-node-max-bytes	aclfile	daemonize	loglevel	cluster-announce-ip	hash-max-listpack-entries	cluster-announce-port
+[Ciri] Reason for replica-announce-port: replica-announce-port is not a valid port number
+[Ciri] Reason for stream-node-max-bytes: stream-node-max-bytes is not a valid parameter
+[Ciri] Reason for aclfile: aclfile is not a valid file path
+[Ciri] Reason for daemonize: daemonize is not a valid boolean
+[Ciri] Reason for loglevel: loglevel is not a valid log level
+[Ciri] Reason for cluster-announce-ip: cluster-announce-ip is not a valid parameter
+[Ciri] Reason for hash-max-listpack-entries: hash-max-listpack-entries is not a valid number
+[Ciri] Reason for cluster-announce-port: cluster-announce-port is not a valid port number

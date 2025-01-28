@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPortAddress'], 'reason': ['In ZooKeeper 3.7.0, the clientPortAddress and secureClientPortAddress properties should only specify the port number, not the IP address and port. The IP address binding is controlled separately using the clientPortListenBacklog property.', 'When sslQuorum is set to true, the secureClientPortAddress property is used instead of clientPortAddress. Having both properties configured with the same port number may lead to unexpected behavior.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: clientPortAddress	secureClientPortAddress
+[Ciri] Reason for clientPortAddress: In ZooKeeper 3.7.0, the clientPortAddress and secureClientPortAddress properties should only specify the port number, not the IP address and port. The IP address binding is controlled separately using the clientPortListenBacklog property.
+[Ciri] Reason for secureClientPortAddress: When sslQuorum is set to true, the secureClientPortAddress property is used instead of clientPortAddress. Having both properties configured with the same port number may lead to unexpected behavior.

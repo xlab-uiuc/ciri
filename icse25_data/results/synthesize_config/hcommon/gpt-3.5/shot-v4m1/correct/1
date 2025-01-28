@@ -1,0 +1,16 @@
+Wrong shot number:
+[6]
+
+Correct shot number:
+[9, 8, 2, 11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.automatic.close', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds'], 'reason': ["The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.", "The property 'fs.automatic.close' has an advanced usage that should only be used by server applications requiring a more carefully orchestrated shutdown sequence.", "The property 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' should have response time thresholds as time durations for each priority queue, with thresholds increasing by 10s per level."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.automatic.close	ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds
+[Ciri] Reason for fs.ftp.transfer.mode: The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.
+[Ciri] Reason for fs.automatic.close: The property 'fs.automatic.close' has an advanced usage that should only be used by server applications requiring a more carefully orchestrated shutdown sequence.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds: The property 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' should have response time thresholds as time durations for each priority queue, with thresholds increasing by 10s per level.

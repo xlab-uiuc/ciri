@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.transport.max.inbound.message.size', 'alluxio.user.worker.list.refresh.interval', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ["The value for 'alluxio.master.embedded.journal.transport.max.inbound.message.size' should be specified in bytes, not MB.", "The value for 'alluxio.user.worker.list.refresh.interval' should use a time unit suffix, such as 'ms', 's', 'm', or 'h'. For example, '4m' instead of '4min'.", "The value for 'alluxio.jvm.monitor.warn.threshold' should use a time unit suffix, such as 'ms', 's', 'm', or 'h'. For example, '20s' instead of '20sec'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.embedded.journal.transport.max.inbound.message.size	alluxio.user.worker.list.refresh.interval	alluxio.jvm.monitor.warn.threshold
+[Ciri] Reason for alluxio.master.embedded.journal.transport.max.inbound.message.size: The value for 'alluxio.master.embedded.journal.transport.max.inbound.message.size' should be specified in bytes, not MB.
+[Ciri] Reason for alluxio.user.worker.list.refresh.interval: The value for 'alluxio.user.worker.list.refresh.interval' should use a time unit suffix, such as 'ms', 's', 'm', or 'h'. For example, '4m' instead of '4min'.
+[Ciri] Reason for alluxio.jvm.monitor.warn.threshold: The value for 'alluxio.jvm.monitor.warn.threshold' should use a time unit suffix, such as 'ms', 's', 'm', or 'h'. For example, '20s' instead of '20sec'.

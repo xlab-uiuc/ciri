@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'minSessionTimeout', 'autopurge.purgeInterval', 'sslQuorum', 'peerType', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.enableSasl', 'maxSessionTimeout', 'portUnification'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port number', 'minSessionTimeout is not a valid integer', 'autopurge.purgeInterval is not a valid integer', 'sslQuorum is not a valid boolean', 'peerType is not a valid string', 'quorum.auth.learner.saslLoginContext is not a valid string', 'quorum.auth.enableSasl is not a valid boolean', 'maxSessionTimeout is not a valid integer', 'portUnification is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'minSessionTimeout', 'autopurge.purgeInterval', 'sslQuorum', 'peerType', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.enableSasl', 'maxSessionTimeout', 'portUnification'], 'reason': ['dataDir and dataLogDir must be set to the same value', 'clientPort must be set to 2181', 'minSessionTimeout must be set to 20000', 'autopurge.purgeInterval must be set to 1', 'sslQuorum must be set to false', 'peerType must be set to server', 'quorum.auth.learner.saslLoginContext must be set to QuorumLearner', 'quorum.auth.enableSasl must be set to true', 'maxSessionTimeout must be set to 20000', 'portUnification must be set to true']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'maxSessionTimeout'], 'reason': ['The value of autopurge.purgeInterval must be greater than or equal to 0.', 'The value of maxSessionTimeout must be greater than or equal to 0.']}
+
+Final result:
+
+There are 11 misconfiguration parameters in the input: dataDir	dataLogDir	clientPort	minSessionTimeout	autopurge.purgeInterval	sslQuorum	peerType	quorum.auth.learner.saslLoginContext	quorum.auth.enableSasl	maxSessionTimeout	portUnification
+[Ciri] Reason for dataDir: dataDir and dataLogDir must be set to the same value
+[Ciri] Reason for dataLogDir: dataLogDir is not a valid directory
+[Ciri] Reason for clientPort: minSessionTimeout must be set to 20000
+[Ciri] Reason for minSessionTimeout: minSessionTimeout is not a valid integer
+[Ciri] Reason for autopurge.purgeInterval: sslQuorum must be set to false
+[Ciri] Reason for sslQuorum: peerType must be set to server
+[Ciri] Reason for peerType: peerType is not a valid string
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext is not a valid string
+[Ciri] Reason for quorum.auth.enableSasl: maxSessionTimeout must be set to 20000
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout is not a valid integer
+[Ciri] Reason for portUnification: portUnification is not a valid boolean

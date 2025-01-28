@@ -1,0 +1,14 @@
+Correct shot number:
+[13, 7, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.select.enabled', 'ftp.stream-buffer-size', 'hadoop.http.cross-origin.allowed-origins'], 'reason': ['Invalid value format. Expected a valid IP address for fs.ftp.host.', 'Invalid value format. Expected a boolean value (true/false) for fs.s3a.select.enabled.', 'Invalid value format. Expected an integer value for ftp.stream-buffer-size.', 'Invalid value format. Expected a comma-separated list of origins or regex patterns for hadoop.http.cross-origin.allowed-origins.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.select.enabled	ftp.stream-buffer-size	hadoop.http.cross-origin.allowed-origins
+[Ciri] Reason for fs.ftp.host: Invalid value format. Expected a valid IP address for fs.ftp.host.
+[Ciri] Reason for fs.s3a.select.enabled: Invalid value format. Expected a boolean value (true/false) for fs.s3a.select.enabled.
+[Ciri] Reason for ftp.stream-buffer-size: Invalid value format. Expected an integer value for ftp.stream-buffer-size.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-origins: Invalid value format. Expected a comma-separated list of origins or regex patterns for hadoop.http.cross-origin.allowed-origins.

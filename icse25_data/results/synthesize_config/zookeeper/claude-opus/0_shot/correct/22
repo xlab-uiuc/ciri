@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initLimit', 'maxSessionTimeout', 'minSessionTimeout', 'secureClientPortAddress'], 'reason': ['initLimit must be at least 5 ticks for zookeeper 3.7.0', 'maxSessionTimeout must be greater than 0', 'minSessionTimeout must be greater than or equal to 2 ticks', 'secureClientPortAddress should use the secureClientPort property instead of clientPort']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: initLimit	maxSessionTimeout	minSessionTimeout	secureClientPortAddress
+[Ciri] Reason for initLimit: initLimit must be at least 5 ticks for zookeeper 3.7.0
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout must be greater than 0
+[Ciri] Reason for minSessionTimeout: minSessionTimeout must be greater than or equal to 2 ticks
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress should use the secureClientPort property instead of clientPort

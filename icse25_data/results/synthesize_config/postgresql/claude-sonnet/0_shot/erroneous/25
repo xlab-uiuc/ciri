@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'effective_cache_size', 'autovacuum_work_mem'], 'reason': ['The value for shared_buffers is too high. It should be set to a lower value, typically between 25% and 40% of the total system memory.', 'The value for effective_cache_size is too high. It should be set to a lower value, typically between 50% and 75% of the total system memory.', 'The value for autovacuum_work_mem is invalid. It should be a positive integer value representing the amount of memory in kilobytes.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: shared_buffers	effective_cache_size	autovacuum_work_mem
+[Ciri] Reason for shared_buffers: The value for shared_buffers is too high. It should be set to a lower value, typically between 25% and 40% of the total system memory.
+[Ciri] Reason for effective_cache_size: The value for effective_cache_size is too high. It should be set to a lower value, typically between 50% and 75% of the total system memory.
+[Ciri] Reason for autovacuum_work_mem: The value for autovacuum_work_mem is invalid. It should be a positive integer value representing the amount of memory in kilobytes.

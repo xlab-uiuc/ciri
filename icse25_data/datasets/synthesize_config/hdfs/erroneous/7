@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.permissions.ContentSummary.subAccess</name>
+  <value>false</value>
+  <description>
+    If "true", the ContentSummary permission checking will use subAccess.
+    If "false", the ContentSummary permission checking will NOT use subAccess.
+    subAccess means using recursion to check the access of all descendants.
+  </description>
+</property>
+
+<property>
+  <name>dfs.heartbeat.interval</name>
+  <value>1s</value>
+  <description>
+    Determines datanode heartbeat interval in seconds.
+    Can use the following suffix (case insensitive):
+    ms(millis), s(sec), m(min), h(hour), d(day)
+    to specify the time (such as 2s, 2m, 1h, etc.).
+    Or provide complete number in seconds (such as 30 for 30 seconds).
+    If no time unit is specified then seconds is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.block-placement-policy.default.prefer-local-node</name>
+  <value>true</value>
+  <description>Controls how the default block placement policy places
+  the first replica of a block. When true, it will prefer the node where
+  the client is running.  When false, it will prefer a node in the same rack
+  as the client. Setting to false avoids situations where entire copies of
+  large files end up on a single node, thus creating hotspots.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.replication.work.multiplier.per.iteration</name>
+  <value>1</value>
+  <description>
+    *Note*: Advanced property. Change with caution.
+    This determines the total amount of block transfers to begin in
+    parallel at a DN, for replication, when such a command list is being
+    sent over a DN heartbeat by the NN. The actual number is obtained by
+    multiplying this multiplier with the total number of live nodes in the
+    cluster. The result number is the number of blocks to begin transfers
+    immediately for, per DN heartbeat. This number can be any positive,
+    non-zero integer.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.path.based.cache.refresh.interval.ms</name>
+  <value>60000</value>
+  <description>
+    The amount of milliseconds between subsequent path cache rescans.  Path
+    cache rescans are when we calculate which blocks should be cached, and on
+    what datanodes.
+
+    By default, this parameter is set to 30 seconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.mover.keytab.enabled</name>
+  <value>false</value>
+  <description>
+    Set to true to enable login using a keytab for Kerberized Hadoop.
+  </description>
+</property>
+
+<property>
+  <name>dfs.provided.storage.id</name>
+  <value>DS-PROVIDED</value>
+    <description>
+      The storage ID used for provided stores.
+    </description>
+</property>
+
+<property>
+  <name>dfs.datanode.disk.check.min.gap</name>
+  <value>80hhhhh</value>
+    <description>
+      The minimum gap between two successive checks of the same DataNode
+      volume. This setting supports multiple time unit suffixes as described
+      in dfs.heartbeat.interval. If no suffix is specified then milliseconds
+      is assumed.
+    </description>
+</property>
+
+</configuration>

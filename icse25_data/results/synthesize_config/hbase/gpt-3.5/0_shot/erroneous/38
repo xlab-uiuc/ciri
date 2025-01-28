@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hfile.block.cache.size', 'hbase.rpc.timeout', 'hbase.rest.threads.min', 'hbase.thrift.maxQueuedRequests', 'hbase.data.umask', 'hbase.rest.filter.classes', 'hbase.rest.csrf.enabled', 'hbase.mob.compaction.chore.period'], 'reason': ["The 'usage' tag is not a valid tag for HBase configuration properties.", "The 'usage' tag is not a valid tag for HBase configuration properties.", "The 'usage' tag is not a valid tag for HBase configuration properties.", "The 'usage' tag is not a valid tag for HBase configuration properties.", "The 'usage' tag is not a valid tag for HBase configuration properties.", "The 'usage' tag is not a valid tag for HBase configuration properties.", "The 'usage' tag is not a valid tag for HBase configuration properties.", "The 'usage' tag is not a valid tag for HBase configuration properties."]}
+
+{'hasError': True, 'errParameter': ['hfile.block.cache.size', 'hbase.rpc.timeout'], 'reason': ['The usage for property \'hfile.block.cache.size\' is incorrect. It should be \'conf.setFloat("hfile.block.cache.size", 0.8f);\' instead of \'conf.setFloat("hfile.block.cache.size", 0.2f);\'.', 'The usage for property \'hbase.rpc.timeout\' is incorrect. It should be \'TEST_UTIL.getConfiguration().setInt("hbase.rpc.timeout", 120000);\' instead of \'TEST_UTIL.getConfiguration().setInt("hbase.rpc.timeout", 10 * 1000);\'.']}
+
+{'hasError': True, 'errParameter': ['hfile.block.cache.size', 'hbase.rpc.timeout', 'hbase.rest.threads.min', 'hbase.thrift.maxQueuedRequests', 'hbase.data.umask', 'hbase.rest.filter.classes', 'hbase.rest.csrf.enabled', 'hbase.mob.compaction.chore.period'], 'reason': ["The 'usage' tag is not valid for the property 'hfile.block.cache.size'.", "The 'usage' tag is not valid for the property 'hbase.rpc.timeout'.", "The 'usage' tag is missing for the property 'hbase.rest.threads.min'.", "The 'usage' tag is not valid for the property 'hbase.thrift.maxQueuedRequests'.", "The 'usage' tag is not valid for the property 'hbase.data.umask'.", "The 'usage' tag is missing for the property 'hbase.rest.filter.classes'.", "The 'usage' tag is missing for the property 'hbase.rest.csrf.enabled'.", "The 'usage' tag is not valid for the property 'hbase.mob.compaction.chore.period'."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hfile.block.cache.size	hbase.rpc.timeout	hbase.rest.threads.min	hbase.thrift.maxQueuedRequests	hbase.data.umask	hbase.rest.filter.classes	hbase.rest.csrf.enabled	hbase.mob.compaction.chore.period
+[Ciri] Reason for hfile.block.cache.size: The 'usage' tag is not valid for the property 'hfile.block.cache.size'.
+[Ciri] Reason for hbase.rpc.timeout: The 'usage' tag is not valid for the property 'hbase.rpc.timeout'.
+[Ciri] Reason for hbase.rest.threads.min: The 'usage' tag is missing for the property 'hbase.rest.threads.min'.
+[Ciri] Reason for hbase.thrift.maxQueuedRequests: The 'usage' tag is not a valid tag for HBase configuration properties.
+[Ciri] Reason for hbase.data.umask: The 'usage' tag is not a valid tag for HBase configuration properties.
+[Ciri] Reason for hbase.rest.filter.classes: The 'usage' tag is not a valid tag for HBase configuration properties.
+[Ciri] Reason for hbase.rest.csrf.enabled: The 'usage' tag is not a valid tag for HBase configuration properties.
+[Ciri] Reason for hbase.mob.compaction.chore.period: The 'usage' tag is not a valid tag for HBase configuration properties.

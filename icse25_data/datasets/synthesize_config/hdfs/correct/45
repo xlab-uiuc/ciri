@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.permissions.ContentSummary.subAccess</name>
+  <value>true</value>
+  <description>
+    If "true", the ContentSummary permission checking will use subAccess.
+    If "false", the ContentSummary permission checking will NOT use subAccess.
+    subAccess means using recursion to check the access of all descendants.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.lazypersist.file.scrub.interval.sec</name>
+  <value>150</value>
+  <description>
+    The NameNode periodically scans the namespace for LazyPersist files with
+    missing blocks and unlinks them from the namespace. This configuration key
+    controls the interval between successive scans. If this value is set to 0,
+    the file scrubber is disabled.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.safemode.extension</name>
+  <value>30000</value>
+  <description>
+    Determines extension of safe mode in milliseconds after the threshold level
+    is reached.  Support multiple time unit suffix (case insensitive), as
+    described in dfs.heartbeat.interval.
+  </description>
+</property>
+
+<property>
+  <name>dfs.cachereport.intervalMsec</name>
+  <value>20000</value>
+  <description>
+    Determines cache reporting interval in milliseconds.  After this amount of
+    time, the DataNode sends a full report of its cache state to the NameNode.
+    The NameNode uses the cache report to update its map of cached blocks to
+    DataNode locations.
+
+    This configuration has no effect if in-memory caching has been disabled by
+    setting dfs.datanode.max.locked.memory to 0 (which is the default).
+
+    If the native libraries are not available to the DataNode, this
+    configuration has no effect.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.fslock.fair</name>
+  <value>true</value>
+  <description>If this is true, the FS Namesystem lock will be used in Fair mode,
+    which will help to prevent writer threads from being starved, but can provide
+    lower lock throughput. See java.util.concurrent.locks.ReentrantReadWriteLock
+    for more information on fair/non-fair locks.
+  </description>
+</property>
+
+<property>
+  <name>dfs.balancer.keytab.enabled</name>
+  <value>false</value>
+  <description>
+    Set to true to enable login using a keytab for Kerberized Hadoop.
+  </description>
+</property>
+
+<property>
+  <name>dfs.mover.retry.max.attempts</name>
+  <value>20</value>
+  <description>
+    The maximum number of retries before the mover consider the
+    move failed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.parallel-read.num-threads</name>
+  <value>1</value>
+  <description>
+    Number of threads per JN to be used for tailing edits.
+  </description>
+</property>
+
+</configuration>

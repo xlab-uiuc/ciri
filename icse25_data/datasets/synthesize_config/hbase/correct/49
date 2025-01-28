@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.tmp.dir</name>
+  <value>${java.io.tmpdir}/hbase-${user.name}</value>
+    <description>Temporary directory on the local filesystem.
+    Change this setting to point to a location more permanent
+    than '/tmp', the usual resolve for java.io.tmpdir, as the
+    '/tmp' directory is cleared on machine restart.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.majorcompaction.jitter</name>
+  <value>0.50</value>
+    <description>A multiplier applied to hbase.hregion.majorcompaction to cause compaction to occur
+      a given amount of time either side of hbase.hregion.majorcompaction. The smaller the number,
+      the closer the compactions will happen to the hbase.hregion.majorcompaction
+      interval.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.hostname.disable.master.reversedns</name>
+  <value>false</value>
+    <description>This config is for experts: don't set its value unless you really know what you are doing.
+    When set to true, regionserver will use the current node hostname for the servername and HMaster will
+    skip reverse DNS lookup and use the hostname sent by regionserver instead. Note that this config and
+    hbase.regionserver.hostname are mutually exclusive. See https://issues.apache.org/jira/browse/HBASE-18226
+    for more details.</description>
+</property>
+
+<property>
+  <name>hbase.auth.key.update.interval</name>
+  <value>86400000</value>
+    <description>The update interval for master key for authentication tokens
+    in servers in milliseconds.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.auth.token.max.lifetime</name>
+  <value>1209600000</value>
+    <description>The maximum lifetime in milliseconds after which an
+    authentication token expires.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.fallback-to-simple-auth-allowed</name>
+  <value>true</value>
+    <description>When a server is configured to require secure connections, it will
+      reject connection attempts from clients using SASL SIMPLE (unsecure) authentication.
+      This setting allows secure servers to accept SASL SIMPLE connections from clients
+      when the client requests.  When false (the default), the server will not allow the fallback
+      to SIMPLE authentication, and will reject the connection.  WARNING: This setting should ONLY
+      be used as a temporary measure while converting clients over to secure authentication.  It
+      MUST BE DISABLED for secure operation.</description>
+</property>
+
+<property>
+  <name>hbase.region.replica.replication.enabled</name>
+  <value>true</value>
+    <description>
+      Whether asynchronous WAL replication to the secondary region replicas is enabled or not.
+      If this is enabled, a replication peer named "region_replica_replication" will be created
+      which will tail the logs and replicate the mutations to region replicas for tables that
+      have region replication > 1. If this is enabled once, disabling this replication also
+      requires disabling the replication peer using shell or Admin java class.
+      Replication to secondary region replicas works over standard inter-cluster replication.
+    </description>
+</property>
+
+<property>
+  <name>hbase.http.max.threads</name>
+  <value>16</value>
+    <description>
+      The maximum number of threads that the HTTP Server will create in its
+      ThreadPool.
+    </description>
+</property>
+
+</configuration>

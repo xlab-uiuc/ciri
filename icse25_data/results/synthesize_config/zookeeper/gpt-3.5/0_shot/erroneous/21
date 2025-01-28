@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['localSessionsUpgradingEnabled', 'maxSessionTimeout'], 'reason': ['localSessionsUpgradingEnabled should be a boolean value (true/false).', 'maxSessionTimeout should be a positive integer value.']}
+
+{'hasError': True, 'errParameter': ['localSessionsUpgradingEnabled', 'portUnification', 'localSessionsEnabled', 'dataLogDir', 'syncLimit', 'secureClientPortAddress', 'peerType', 'maxSessionTimeout'], 'reason': ['localSessionsUpgradingEnabled should be a boolean value', 'portUnification should be a boolean value', 'localSessionsEnabled should be a boolean value', 'dataLogDir should be a valid directory path', 'syncLimit should be a numeric value', "secureClientPortAddress should be in the format 'host:port'", "peerType should be either 'observer' or 'participant'", 'maxSessionTimeout should be a positive numeric value']}
+
+{'hasError': True, 'errParameter': ['localSessionsUpgradingEnabled', 'dataLogDir', 'syncLimit', 'secureClientPortAddress', 'maxSessionTimeout'], 'reason': ['localSessionsUpgradingEnabled should be a boolean value (true/false)', 'dataLogDir should be a valid directory path', 'syncLimit should be a numeric value', "secureClientPortAddress should be in the format 'host:port'", 'maxSessionTimeout should be a numeric value']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['localSessionsUpgradingEnabled', 'portUnification', 'localSessionsEnabled', 'maxSessionTimeout'], 'reason': ['Invalid property for Zookeeper version 3.7.0', 'Invalid property for Zookeeper version 3.7.0', 'Invalid property for Zookeeper version 3.7.0', 'Invalid property for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['localSessionsUpgradingEnabled', 'maxSessionTimeout'], 'reason': ['localSessionsUpgradingEnabled should be a boolean value (true/false)', 'maxSessionTimeout should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['localSessionsUpgradingEnabled', 'portUnification', 'localSessionsEnabled', 'maxSessionTimeout'], 'reason': ['localSessionsUpgradingEnabled should be a boolean value', 'portUnification should be a boolean value', 'localSessionsEnabled should be a boolean value', 'maxSessionTimeout should be a positive integer value']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: localSessionsUpgradingEnabled	portUnification	localSessionsEnabled	maxSessionTimeout
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled should be a boolean value
+[Ciri] Reason for portUnification: Invalid property for Zookeeper version 3.7.0
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled should be a boolean value
+[Ciri] Reason for maxSessionTimeout: Invalid property for Zookeeper version 3.7.0

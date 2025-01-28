@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.client.https.keystore.resource</name>
+  <value>ssl-client.xml</value>
+  <description>Resource file from which ssl client keystore
+  information will be extracted
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.data.dir</name>
+  <value>file://${hadoop.tmp.dir}/dfs/data</value>
+  <description>Determines where on the local filesystem an DFS data node
+  should store its blocks.  If this is a comma-delimited
+  list of directories, then data will be stored in all named
+  directories, typically on different devices. The directories should be tagged
+  with corresponding storage types ([SSD]/[DISK]/[ARCHIVE]/[RAM_DISK]) for HDFS
+  storage policies. The default storage type will be DISK if the directory does
+  not have a storage type tagged explicitly. Directories that do not exist will
+  be created if local filesystem permission allows.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.maintenance.replication.min</name>
+  <value>2</value>
+  <description>Minimal live block replication in existence of maintenance mode.
+  </description>
+</property>
+
+<property>
+  <name>nfs.mountd.port</name>
+  <value>4242</value>
+  <description>
+      Specify the port number used by Hadoop mount daemon.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.caching.enabled</name>
+  <value>false</value>
+  <description>
+    Set to true to enable block caching.  This flag enables the NameNode to
+    maintain a mapping of cached blocks to DataNodes via processing DataNode
+    cache reports.  Based on these reports and addition and removal of caching
+    directives, the NameNode will schedule caching and uncaching work.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.list.reencryption.status.num.responses</name>
+  <value>100</value>
+  <description>When listing re-encryption status, the maximum number of zones
+    that will be returned in a batch. Fetching the list incrementally in
+    batches improves namenode performance.
+  </description>
+</property>
+
+<property>
+  <name>dfs.xframe.value</name>
+  <value>SAMEORIGIN</value>
+    <description>
+      This configration value allows user to specify the value for the
+      X-FRAME-OPTIONS. The possible values for this field are
+      DENY, SAMEORIGIN and ALLOW-FROM. Any other value will throw an
+      exception when namenode and datanodes are starting up.
+    </description>
+</property>
+
+<property>
+  <name>dfs.client.key.provider.cache.expiry</name>
+  <value>864000000</value>
+  <description>
+    DFS client security key cache expiration in milliseconds.
+  </description>
+</property>
+
+</configuration>

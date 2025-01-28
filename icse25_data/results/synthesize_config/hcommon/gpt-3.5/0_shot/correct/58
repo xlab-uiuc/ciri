@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].backoff.enable', 'hadoop.registry.secure', 'fs.getspaceused.jitterMillis'], 'reason': ["Parameter name contains invalid characters '[port_number]'", "Description tag is not properly closed for property 'hadoop.registry.secure'", "Description tag is not properly closed for property 'fs.getspaceused.jitterMillis'"]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].backoff.enable', 'hadoop.security.java.secure.random.algorithm', 'fs.getspaceused.jitterMillis'], 'reason': ["Parameter name 'ipc.[port_number].backoff.enable' contains invalid characters.", "Parameter name 'hadoop.security.java.secure.random.algorithm' has an incorrect value.", "Parameter name 'fs.getspaceused.jitterMillis' is missing a description."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].backoff.enable', 'hadoop.registry.secure', 'fs.getspaceused.jitterMillis'], 'reason': ["Invalid property name 'ipc.[port_number].backoff.enable'.", "Invalid property name 'hadoop.registry.secure'.", "Invalid property name 'fs.getspaceused.jitterMillis'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: ipc.[port_number].backoff.enable	hadoop.registry.secure	fs.getspaceused.jitterMillis
+[Ciri] Reason for ipc.[port_number].backoff.enable: Parameter name contains invalid characters '[port_number]'
+[Ciri] Reason for hadoop.registry.secure: Invalid property name 'hadoop.registry.secure'.
+[Ciri] Reason for fs.getspaceused.jitterMillis: Invalid property name 'fs.getspaceused.jitterMillis'.

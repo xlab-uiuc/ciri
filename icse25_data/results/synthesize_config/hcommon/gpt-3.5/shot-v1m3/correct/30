@@ -1,0 +1,18 @@
+Wrong shot number:
+[6, 8, 15]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode'], 'reason': ["The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode'], 'reason': ["The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.s3a.s3guard.ddb.throttle.retry.interval'], 'reason': ["The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.", "The property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has an invalid value '200ms'. The value should be in milliseconds without units."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.ftp.transfer.mode
+[Ciri] Reason for fs.ftp.transfer.mode: The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.

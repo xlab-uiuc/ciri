@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG_PROPAGATE_EXCEPTIONS', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ['DEBUG_PROPAGATE_EXCEPTIONS setting is removed in Django 4.0. It should be removed from the configuration file.', 'DATA_UPLOAD_MAX_NUMBER_FIELDS setting is removed in Django 4.0. It should be removed from the configuration file.']}
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'DEBUG_PROPAGATE_EXCEPTIONS', 'STATICFILES_DIRS', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ['NUMBER_GROUPING should be a positive integer value, 0 is not allowed.', 'DEBUG_PROPAGATE_EXCEPTIONS should be set to True in development for better error handling.', 'STATICFILES_DIRS should contain directories where static files will be searched for. It should not be an empty list.', 'DATA_UPLOAD_MAX_NUMBER_FIELDS should be set to a reasonable value to prevent potential security risks.']}
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'DEBUG_PROPAGATE_EXCEPTIONS'], 'reason': ['The value of NUMBER_GROUPING should be a positive integer greater than 0.', 'DEBUG_PROPAGATE_EXCEPTIONS should be set to True for development purposes.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG_PROPAGATE_EXCEPTIONS', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ['DEBUG_PROPAGATE_EXCEPTIONS setting is removed in Django 4.0. It should not be used.', 'DATA_UPLOAD_MAX_NUMBER_FIELDS setting is removed in Django 4.0. It should not be used.']}
+
+{'hasError': True, 'errParameter': ['DEBUG_PROPAGATE_EXCEPTIONS', 'STATICFILES_DIRS'], 'reason': ['DEBUG_PROPAGATE_EXCEPTIONS setting is removed in Django 4.0. It should not be used.', 'STATICFILES_DIRS setting is removed in Django 4.0. It should not be used.']}
+
+{'hasError': True, 'errParameter': ['DEBUG_PROPAGATE_EXCEPTIONS', 'STATICFILES_DIRS', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ['DEBUG_PROPAGATE_EXCEPTIONS setting is removed in Django 4.0. Remove this setting.', 'STATICFILES_DIRS setting is removed in Django 4.0. Remove this setting.', 'DATA_UPLOAD_MAX_NUMBER_FIELDS setting is removed in Django 4.0. Remove this setting.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG_PROPAGATE_EXCEPTIONS', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ['DEBUG_PROPAGATE_EXCEPTIONS setting is removed in Django 4.0. It should be removed from the configuration.', 'DATA_UPLOAD_MAX_NUMBER_FIELDS setting is removed in Django 4.0. It should be removed from the configuration.']}
+
+{'hasError': True, 'errParameter': ['DEBUG_PROPAGATE_EXCEPTIONS', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ['DEBUG_PROPAGATE_EXCEPTIONS setting is deprecated in Django 4.0. It should be removed.', 'DATA_UPLOAD_MAX_NUMBER_FIELDS setting is deprecated in Django 4.0. It should be removed.']}
+
+{'hasError': True, 'errParameter': ['NUMBER_GROUPING', 'DEBUG_PROPAGATE_EXCEPTIONS'], 'reason': ['The value of NUMBER_GROUPING should be a positive integer greater than 0.', 'DEBUG_PROPAGATE_EXCEPTIONS setting is removed in Django 4.0. It should not be used.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: DEBUG_PROPAGATE_EXCEPTIONS	DATA_UPLOAD_MAX_NUMBER_FIELDS
+[Ciri] Reason for DEBUG_PROPAGATE_EXCEPTIONS: DEBUG_PROPAGATE_EXCEPTIONS setting is removed in Django 4.0. It should be removed from the configuration.
+[Ciri] Reason for DATA_UPLOAD_MAX_NUMBER_FIELDS: DATA_UPLOAD_MAX_NUMBER_FIELDS setting is deprecated in Django 4.0. It should be removed.

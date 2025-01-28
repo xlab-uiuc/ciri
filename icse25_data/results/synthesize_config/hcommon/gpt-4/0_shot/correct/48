@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockfree', 'hadoop.tags.system'], 'reason': ["The property name 'ipc.[port_number].weighted-cost.lockfree' is not a valid configuration parameter in Hadoop 3.3.0. Property names should not contain placeholders like '[port_number]'.", "The 'hadoop.tags.system' property does not exist in Hadoop 3.3.0 configuration. Additionally, the usage pattern provided is not a standard way to define or modify Hadoop configuration properties."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].weighted-cost.lockfree	hadoop.tags.system
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The property name 'ipc.[port_number].weighted-cost.lockfree' is not a valid configuration parameter in Hadoop 3.3.0. Property names should not contain placeholders like '[port_number]'.
+[Ciri] Reason for hadoop.tags.system: The 'hadoop.tags.system' property does not exist in Hadoop 3.3.0 configuration. Additionally, the usage pattern provided is not a standard way to define or modify Hadoop configuration properties.

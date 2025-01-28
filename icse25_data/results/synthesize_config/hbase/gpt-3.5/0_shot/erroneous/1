@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['zookeeper.recovery.retry.maxsleeptime', 'hbase.zookeeper.peerport', 'hbase.lease.recovery.timeout'], 'reason': ["The value for 'zookeeper.recovery.retry.maxsleeptime' should be an integer.", "The value for 'hbase.zookeeper.peerport' should be an integer.", "The value for 'hbase.lease.recovery.timeout' should be an integer."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.recovery.retry.maxsleeptime', 'hbase.zookeeper.peerport', 'hbase.thrift.maxWorkerThreads', 'hbase.lease.recovery.timeout', 'hbase.mob.file.cache.size', 'hbase.snapshot.region.timeout'], 'reason': ["The value for 'zookeeper.recovery.retry.maxsleeptime' should be an integer.", "The value for 'hbase.zookeeper.peerport' should be an integer.", "The value for 'hbase.thrift.maxWorkerThreads' should be an integer.", "The value for 'hbase.lease.recovery.timeout' should be an integer.", "The value for 'hbase.mob.file.cache.size' should be an integer.", "The value for 'hbase.snapshot.region.timeout' should be an integer."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.recovery.retry.maxsleeptime', 'hbase.zookeeper.peerport', 'hbase.lease.recovery.timeout'], 'reason': ["The value for 'zookeeper.recovery.retry.maxsleeptime' should be an integer, not a decimal.", "The value for 'hbase.zookeeper.peerport' should be an integer, not a decimal.", "The value for 'hbase.lease.recovery.timeout' should be an integer, not a decimal."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: zookeeper.recovery.retry.maxsleeptime	hbase.zookeeper.peerport	hbase.lease.recovery.timeout
+[Ciri] Reason for zookeeper.recovery.retry.maxsleeptime: The value for 'zookeeper.recovery.retry.maxsleeptime' should be an integer.
+[Ciri] Reason for hbase.zookeeper.peerport: The value for 'hbase.zookeeper.peerport' should be an integer.
+[Ciri] Reason for hbase.lease.recovery.timeout: The value for 'hbase.lease.recovery.timeout' should be an integer, not a decimal.

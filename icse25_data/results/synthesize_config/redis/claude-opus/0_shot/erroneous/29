@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'enable-protected-configs', 'acllog-max-len', 'slowlog-log-slower-than', 'appenddirname', 'replica-announce-port'], 'reason': ["The 'repl-diskless-load' parameter has been renamed to 'repl-diskless-load-on-sync' in Redis 7.0", "The 'enable-protected-configs' parameter has been removed in Redis 7.0 and is no longer supported", "The 'acllog-max-len' parameter has been removed in Redis 7.0. ACL logging is always enabled with a fixed maximum entry length", "The 'slowlog-log-slower-than' parameter now uses microsecond resolution instead of milliseconds in Redis 7.0", "The 'appenddirname' parameter has been removed in Redis 7.0. The AOF directory is now specified with the 'appenddirname' option in the 'appendonly' parameter", "The 'replica-announce-port' parameter has been renamed to 'replica-announced-port' in Redis 7.0"]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: repl-diskless-load	enable-protected-configs	acllog-max-len	slowlog-log-slower-than	appenddirname	replica-announce-port
+[Ciri] Reason for repl-diskless-load: The 'repl-diskless-load' parameter has been renamed to 'repl-diskless-load-on-sync' in Redis 7.0
+[Ciri] Reason for enable-protected-configs: The 'enable-protected-configs' parameter has been removed in Redis 7.0 and is no longer supported
+[Ciri] Reason for acllog-max-len: The 'acllog-max-len' parameter has been removed in Redis 7.0. ACL logging is always enabled with a fixed maximum entry length
+[Ciri] Reason for slowlog-log-slower-than: The 'slowlog-log-slower-than' parameter now uses microsecond resolution instead of milliseconds in Redis 7.0
+[Ciri] Reason for appenddirname: The 'appenddirname' parameter has been removed in Redis 7.0. The AOF directory is now specified with the 'appenddirname' option in the 'appendonly' parameter
+[Ciri] Reason for replica-announce-port: The 'replica-announce-port' parameter has been renamed to 'replica-announced-port' in Redis 7.0

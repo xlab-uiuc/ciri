@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-bind-host', 'dfs.namenode.heartbeat.recheck-interval', 'dfs.internal.nameservices', 'dfs.namenode.edekcacheloader.initial.delay.ms', 'dfs.balancer.keytab.enabled', 'dfs.storage.policy.satisfier.enabled', 'dfs.storage.policy.satisfier.datanode.cache.refresh.interval.ms', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ['The value of dfs.namenode.rpc-bind-host is not a valid hostname or IP address.', 'The value of dfs.namenode.heartbeat.recheck-interval is too small. It must be at least 300000.', 'The value of dfs.internal.nameservices is not a valid nameservice.', 'The value of dfs.namenode.edekcacheloader.initial.delay.ms is too small. It must be at least 300000.', 'The value of dfs.balancer.keytab.enabled is not a valid boolean.', 'The value of dfs.storage.policy.satisfier.enabled is not a valid boolean.', 'The value of dfs.storage.policy.satisfier.datanode.cache.refresh.interval.ms is too small. It must be at least 300000.', 'The value of dfs.provided.aliasmap.leveldb.path is not a valid file path.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.namenode.rpc-bind-host	dfs.namenode.heartbeat.recheck-interval	dfs.internal.nameservices	dfs.namenode.edekcacheloader.initial.delay.ms	dfs.balancer.keytab.enabled	dfs.storage.policy.satisfier.enabled	dfs.storage.policy.satisfier.datanode.cache.refresh.interval.ms	dfs.provided.aliasmap.leveldb.path
+[Ciri] Reason for dfs.namenode.rpc-bind-host: The value of dfs.namenode.rpc-bind-host is not a valid hostname or IP address.
+[Ciri] Reason for dfs.namenode.heartbeat.recheck-interval: The value of dfs.namenode.heartbeat.recheck-interval is too small. It must be at least 300000.
+[Ciri] Reason for dfs.internal.nameservices: The value of dfs.internal.nameservices is not a valid nameservice.
+[Ciri] Reason for dfs.namenode.edekcacheloader.initial.delay.ms: The value of dfs.namenode.edekcacheloader.initial.delay.ms is too small. It must be at least 300000.
+[Ciri] Reason for dfs.balancer.keytab.enabled: The value of dfs.balancer.keytab.enabled is not a valid boolean.
+[Ciri] Reason for dfs.storage.policy.satisfier.enabled: The value of dfs.storage.policy.satisfier.enabled is not a valid boolean.
+[Ciri] Reason for dfs.storage.policy.satisfier.datanode.cache.refresh.interval.ms: The value of dfs.storage.policy.satisfier.datanode.cache.refresh.interval.ms is too small. It must be at least 300000.
+[Ciri] Reason for dfs.provided.aliasmap.leveldb.path: The value of dfs.provided.aliasmap.leveldb.path is not a valid file path.

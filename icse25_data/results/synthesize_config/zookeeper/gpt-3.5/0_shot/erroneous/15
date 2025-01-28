@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'peerType', 'syncEnabled'], 'reason': ['secureClientPort should be a numeric value.', 'peerType should be either observer or participant.', 'syncEnabled should be set to true for a production environment.']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'peerType', 'syncEnabled'], 'reason': ["secureClientPort should be specified as a numeric value, not 'ciri'.", "peerType should be 'observer' or 'participant', not 'participant'.", "syncEnabled should be set to 'true' or 'false', not 'false'."]}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'peerType', 'syncEnabled'], 'reason': ['secureClientPort should be a numeric value', 'peerType should be observer for Zookeeper version 3.7.0', 'syncEnabled should be set to true for Zookeeper version 3.7.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: secureClientPort	peerType	syncEnabled
+[Ciri] Reason for secureClientPort: secureClientPort should be a numeric value.
+[Ciri] Reason for peerType: peerType should be either observer or participant.
+[Ciri] Reason for syncEnabled: syncEnabled should be set to true for Zookeeper version 3.7.0

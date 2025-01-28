@@ -1,0 +1,12 @@
+Correct shot number:
+[15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.size', 'ipc.[port_number].backoff.enable'], 'reason': ['Invalid value for property fs.s3a.multipart.size. The value should be a numeric value followed by a valid suffix {K,M,G,T,P}.', 'Property ipc.[port_number].backoff.enable is missing the actual port number in the name.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.multipart.size	ipc.[port_number].backoff.enable
+[Ciri] Reason for fs.s3a.multipart.size: Invalid value for property fs.s3a.multipart.size. The value should be a numeric value followed by a valid suffix {K,M,G,T,P}.
+[Ciri] Reason for ipc.[port_number].backoff.enable: Property ipc.[port_number].backoff.enable is missing the actual port number in the name.

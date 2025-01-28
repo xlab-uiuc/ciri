@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.leveldb-state-store.path', 'yarn.cluster.max-application-priority'], 'reason': ["The value '/valid/file1' for the property 'yarn.resourcemanager.leveldb-state-store.path' is not a valid path. It should be a valid directory path.", "The value '0' for the property 'yarn.cluster.max-application-priority' is not a valid value. It should be a positive integer greater than 0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.leveldb-state-store.path	yarn.cluster.max-application-priority
+[Ciri] Reason for yarn.resourcemanager.leveldb-state-store.path: The value '/valid/file1' for the property 'yarn.resourcemanager.leveldb-state-store.path' is not a valid path. It should be a valid directory path.
+[Ciri] Reason for yarn.cluster.max-application-priority: The value '0' for the property 'yarn.cluster.max-application-priority' is not a valid value. It should be a positive integer greater than 0.

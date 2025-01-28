@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'hash-max-listpack-entries'], 'reason': ["The 'bind-source-addr' configuration does not exist. Perhaps 'bind' was intended to specify the IP address that Redis listens on.", "The 'hash-max-listpack-entries' configuration is incorrect for Redis 7.0.0. The correct configuration should be 'hash-max-ziplist-entries' for controlling the maximum number of entries in a hash encoded as a ziplist."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: bind-source-addr	hash-max-listpack-entries
+[Ciri] Reason for bind-source-addr: The 'bind-source-addr' configuration does not exist. Perhaps 'bind' was intended to specify the IP address that Redis listens on.
+[Ciri] Reason for hash-max-listpack-entries: The 'hash-max-listpack-entries' configuration is incorrect for Redis 7.0.0. The correct configuration should be 'hash-max-ziplist-entries' for controlling the maximum number of entries in a hash encoded as a ziplist.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'hadoop.security.credential.clear-text-fallback'], 'reason': ["The property 'fs.default.name' is deprecated and should be replaced with 'fs.defaultFS'.", "The default value for 'hadoop.security.credential.clear-text-fallback' is incorrectly stated as true. The correct default value is false."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	hadoop.security.credential.clear-text-fallback
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' is deprecated and should be replaced with 'fs.defaultFS'.
+[Ciri] Reason for hadoop.security.credential.clear-text-fallback: The default value for 'hadoop.security.credential.clear-text-fallback' is incorrectly stated as true. The correct default value is false.

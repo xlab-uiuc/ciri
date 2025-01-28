@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy', 'proxy-refresh-interval', 'log-outputs', 'snapshot-count', 'max-snapshots'], 'reason': ["The 'proxy' parameter is not a valid configuration option in etcd v3.5.0. It has been removed since v3.2.0.", "The 'proxy-refresh-interval' parameter is not a valid configuration option in etcd v3.5.0. It is related to the deprecated 'proxy' feature.", "The 'log-outputs' parameter is not a valid configuration option in etcd v3.5.0. The correct parameter for configuring log outputs is '--log-outputs'.", "The 'snapshot-count' parameter has been deprecated since etcd v3.4.0. Use '--snapshot-count' instead.", "The 'max-snapshots' parameter has been deprecated since etcd v3.4.0. Use '--max-snapshots' instead."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: proxy	proxy-refresh-interval	log-outputs	snapshot-count	max-snapshots
+[Ciri] Reason for proxy: The 'proxy' parameter is not a valid configuration option in etcd v3.5.0. It has been removed since v3.2.0.
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter is not a valid configuration option in etcd v3.5.0. It is related to the deprecated 'proxy' feature.
+[Ciri] Reason for log-outputs: The 'log-outputs' parameter is not a valid configuration option in etcd v3.5.0. The correct parameter for configuring log outputs is '--log-outputs'.
+[Ciri] Reason for snapshot-count: The 'snapshot-count' parameter has been deprecated since etcd v3.4.0. Use '--snapshot-count' instead.
+[Ciri] Reason for max-snapshots: The 'max-snapshots' parameter has been deprecated since etcd v3.4.0. Use '--max-snapshots' instead.

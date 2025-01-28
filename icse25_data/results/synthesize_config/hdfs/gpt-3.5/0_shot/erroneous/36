@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edekcacheloader.initial.delay.ms', 'dfs.user.home.dir.prefix', 'dfs.http.client.retry.policy.spec', 'dfs.provided.aliasmap.leveldb.path', 'dfs.permissions.allow.owner.set.quota'], 'reason': ["Property 'dfs.namenode.edekcacheloader.initial.delay.ms' has a typo in the name.", "Property 'dfs.user.home.dir.prefix' has a typo in the name.", "Property 'dfs.http.client.retry.policy.spec' has a typo in the name.", "Property 'dfs.provided.aliasmap.leveldb.path' has a typo in the name.", "Property 'dfs.permissions.allow.owner.set.quota' has a typo in the name."]}
+
+{'hasError': True, 'errParameter': ['dfs.user.home.dir.prefix', 'dfs.http.client.retry.policy.spec', 'dfs.provided.aliasmap.leveldb.path', 'dfs.permissions.allow.owner.set.quota'], 'reason': ["The property 'dfs.user.home.dir.prefix' has a typo in the description field (direcotry should be directory).", "The property 'dfs.http.client.retry.policy.spec' has an incorrect value format. It should be an array of numbers.", "The property 'dfs.provided.aliasmap.leveldb.path' has a typo in the description field (read/write path should be specified).", "The property 'dfs.permissions.allow.owner.set.quota' has an incorrect value format. It should be a boolean value (true/false)."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edekcacheloader.initial.delay.ms', 'dfs.user.home.dir.prefix', 'dfs.http.client.retry.policy.spec', 'dfs.provided.aliasmap.leveldb.path', 'dfs.permissions.allow.owner.set.quota'], 'reason': ["Property name 'dfs.namenode.edekcacheloader.initial.delay.ms' contains a typo. It should be 'dfs.namenode.edek.cacheloader.initial.delay.ms'.", "Property name 'dfs.user.home.dir.prefix' contains a typo. It should be 'dfs.user.home.dir.prefix'.", "Property name 'dfs.http.client.retry.policy.spec' contains a typo. It should be 'dfs.http.client.retry.policy.spec'.", "Property name 'dfs.provided.aliasmap.leveldb.path' contains a typo. It should be 'dfs.provided.aliasmap.leveldb.path'.", "Property name 'dfs.permissions.allow.owner.set.quota' contains a typo. It should be 'dfs.permissions.allow.owner.set.quota'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: dfs.namenode.edekcacheloader.initial.delay.ms	dfs.user.home.dir.prefix	dfs.http.client.retry.policy.spec	dfs.provided.aliasmap.leveldb.path	dfs.permissions.allow.owner.set.quota
+[Ciri] Reason for dfs.namenode.edekcacheloader.initial.delay.ms: Property name 'dfs.namenode.edekcacheloader.initial.delay.ms' contains a typo. It should be 'dfs.namenode.edek.cacheloader.initial.delay.ms'.
+[Ciri] Reason for dfs.user.home.dir.prefix: Property name 'dfs.user.home.dir.prefix' contains a typo. It should be 'dfs.user.home.dir.prefix'.
+[Ciri] Reason for dfs.http.client.retry.policy.spec: Property name 'dfs.http.client.retry.policy.spec' contains a typo. It should be 'dfs.http.client.retry.policy.spec'.
+[Ciri] Reason for dfs.provided.aliasmap.leveldb.path: Property name 'dfs.provided.aliasmap.leveldb.path' contains a typo. It should be 'dfs.provided.aliasmap.leveldb.path'.
+[Ciri] Reason for dfs.permissions.allow.owner.set.quota: Property 'dfs.permissions.allow.owner.set.quota' has a typo in the name.

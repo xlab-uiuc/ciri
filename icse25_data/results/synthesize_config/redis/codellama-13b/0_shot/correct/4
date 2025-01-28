@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-announce-ip', 'rdb-del-sync-files', 'zset-max-listpack-value', 'zset-max-listpack-entries'], 'reason': ['replica-announce-ip is not a valid IP address', 'rdb-del-sync-files is not a valid boolean value', 'zset-max-listpack-value is not a valid integer value', 'zset-max-listpack-entries is not a valid integer value']}
+
+{'hasError': True, 'errParameter': ['replica-announce-ip'], 'reason': ['The parameter replica-announce-ip is not supported in Redis 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['replica-announce-ip', 'rdb-del-sync-files'], 'reason': ['replica-announce-ip is not a valid parameter for redis version 7.0.0', 'rdb-del-sync-files is not a valid parameter for redis version 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-announce-ip', 'rdb-del-sync-files'], 'reason': ['replica-announce-ip is not a valid parameter in Redis 7.0.0', 'rdb-del-sync-files is not a valid parameter in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['replica-announce-ip'], 'reason': ['replica-announce-ip is not a valid configuration parameter in Redis 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['replica-announce-ip'], 'reason': ['replica-announce-ip is not a valid configuration parameter for Redis version 7.0.0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: replica-announce-ip
+[Ciri] Reason for replica-announce-ip: replica-announce-ip is not a valid configuration parameter for Redis version 7.0.0

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['MIGRATION_MODULES', 'AUTH_PASSWORD_VALIDATORS', 'SESSION_COOKIE_DOMAIN', 'YEAR_MONTH_FORMAT', 'IGNORABLE_404_URLS', 'LANGUAGE_COOKIE_SECURE', 'LANGUAGE_CODE', 'SHORT_DATE_FORMAT'], 'reason': ['MIGRATION_MODULES must be a dictionary', 'AUTH_PASSWORD_VALIDATORS must be a list', 'SESSION_COOKIE_DOMAIN must be a string', 'YEAR_MONTH_FORMAT must be a string', 'IGNORABLE_404_URLS must be a list', 'LANGUAGE_COOKIE_SECURE must be a boolean', 'LANGUAGE_CODE must be a string', 'SHORT_DATE_FORMAT must be a string']}
+
+{'hasError': True, 'errParameter': ['MIGRATION_MODULES', 'AUTH_PASSWORD_VALIDATORS', 'SESSION_COOKIE_DOMAIN', 'YEAR_MONTH_FORMAT', 'IGNORABLE_404_URLS', 'LANGUAGE_COOKIE_SECURE', 'LANGUAGE_CODE', 'SHORT_DATE_FORMAT'], 'reason': ['MIGRATION_MODULES should be a dictionary', 'AUTH_PASSWORD_VALIDATORS should be a list', 'SESSION_COOKIE_DOMAIN should be a string', 'YEAR_MONTH_FORMAT should be a string', 'IGNORABLE_404_URLS should be a list', 'LANGUAGE_COOKIE_SECURE should be a boolean', 'LANGUAGE_CODE should be a string', 'SHORT_DATE_FORMAT should be a string']}
+
+{'hasError': True, 'errParameter': ['MIGRATION_MODULES'], 'reason': ['MIGRATION_MODULES is not a valid configuration parameter for django version 4.0']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: MIGRATION_MODULES	AUTH_PASSWORD_VALIDATORS	SESSION_COOKIE_DOMAIN	YEAR_MONTH_FORMAT	IGNORABLE_404_URLS	LANGUAGE_COOKIE_SECURE	LANGUAGE_CODE	SHORT_DATE_FORMAT
+[Ciri] Reason for MIGRATION_MODULES: MIGRATION_MODULES should be a dictionary
+[Ciri] Reason for AUTH_PASSWORD_VALIDATORS: AUTH_PASSWORD_VALIDATORS should be a list
+[Ciri] Reason for SESSION_COOKIE_DOMAIN: SESSION_COOKIE_DOMAIN should be a string
+[Ciri] Reason for YEAR_MONTH_FORMAT: YEAR_MONTH_FORMAT should be a string
+[Ciri] Reason for IGNORABLE_404_URLS: IGNORABLE_404_URLS should be a list
+[Ciri] Reason for LANGUAGE_COOKIE_SECURE: LANGUAGE_COOKIE_SECURE must be a boolean
+[Ciri] Reason for LANGUAGE_CODE: LANGUAGE_CODE should be a string
+[Ciri] Reason for SHORT_DATE_FORMAT: SHORT_DATE_FORMAT should be a string

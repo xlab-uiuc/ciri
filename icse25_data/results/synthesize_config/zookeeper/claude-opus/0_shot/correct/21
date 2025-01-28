@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'initLimit'], 'reason': ['minSessionTimeout must be greater than 0. Default value is 2 ticks.', 'initLimit default value is 10 ticks, but for large clusters it should be increased to 20 or more to avoid timeout issues during leader election.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: minSessionTimeout	initLimit
+[Ciri] Reason for minSessionTimeout: minSessionTimeout must be greater than 0. Default value is 2 ticks.
+[Ciri] Reason for initLimit: initLimit default value is 10 ticks, but for large clusters it should be increased to 20 or more to avoid timeout issues during leader election.

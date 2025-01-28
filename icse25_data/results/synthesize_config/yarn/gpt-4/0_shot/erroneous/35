@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.client.failover-retries', 'yarn.resourcemanager.configuration.file-system-based-store', 'yarn.timeline-service.entity-group-fs-store.done-dir'], 'reason': ["The 'yarn.client.failover-retries' value should not be negative. It represents the number of retry attempts, and a negative value does not make sense in this context.", "The 'yarn.resourcemanager.configuration.file-system-based-store' and 'yarn.timeline-service.entity-group-fs-store.done-dir' properties have the same value '/valid/file2'. While not necessarily incorrect, this could lead to confusion or misconfiguration if these paths are intended to be distinct.", "The 'yarn.timeline-service.entity-group-fs-store.done-dir' property is specific to ATS v1.5, which may not be compatible or fully supported in YARN version 3.3.0 without additional context or configuration."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.client.failover-retries	yarn.resourcemanager.configuration.file-system-based-store	yarn.timeline-service.entity-group-fs-store.done-dir
+[Ciri] Reason for yarn.client.failover-retries: The 'yarn.client.failover-retries' value should not be negative. It represents the number of retry attempts, and a negative value does not make sense in this context.
+[Ciri] Reason for yarn.resourcemanager.configuration.file-system-based-store: The 'yarn.resourcemanager.configuration.file-system-based-store' and 'yarn.timeline-service.entity-group-fs-store.done-dir' properties have the same value '/valid/file2'. While not necessarily incorrect, this could lead to confusion or misconfiguration if these paths are intended to be distinct.
+[Ciri] Reason for yarn.timeline-service.entity-group-fs-store.done-dir: The 'yarn.timeline-service.entity-group-fs-store.done-dir' property is specific to ATS v1.5, which may not be compatible or fully supported in YARN version 3.3.0 without additional context or configuration.

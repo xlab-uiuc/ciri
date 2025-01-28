@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_HTTPONLY', 'SECURE_CROSS_ORIGIN_OPENER_POLICY', 'LOGGING', 'NUMBER_GROUPING', 'CSRF_COOKIE_DOMAIN', 'MANAGERS', 'SECURE_REFERRER_POLICY', 'TEMPLATES'], 'reason': ['SESSION_COOKIE_HTTPONLY should be set to True for improved security.', 'SECURE_CROSS_ORIGIN_OPENER_POLICY is not a valid setting in Django 4.0. It should be removed.', 'LOGGING should be configured with a dictionary containing logging configuration.', 'NUMBER_GROUPING is not a valid setting in Django 4.0. It should be removed.', 'CSRF_COOKIE_DOMAIN should be set to a string value representing the domain, not None.', 'MANAGERS should be defined as a list of tuples, not set to ADMINS.', 'SECURE_REFERRER_POLICY is not a valid setting in Django 4.0. It should be removed.', 'TEMPLATES should be configured with a list of dictionaries containing template engine settings.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: SESSION_COOKIE_HTTPONLY	SECURE_CROSS_ORIGIN_OPENER_POLICY	LOGGING	NUMBER_GROUPING	CSRF_COOKIE_DOMAIN	MANAGERS	SECURE_REFERRER_POLICY	TEMPLATES
+[Ciri] Reason for SESSION_COOKIE_HTTPONLY: SESSION_COOKIE_HTTPONLY should be set to True for improved security.
+[Ciri] Reason for SECURE_CROSS_ORIGIN_OPENER_POLICY: SECURE_CROSS_ORIGIN_OPENER_POLICY is not a valid setting in Django 4.0. It should be removed.
+[Ciri] Reason for LOGGING: LOGGING should be configured with a dictionary containing logging configuration.
+[Ciri] Reason for NUMBER_GROUPING: NUMBER_GROUPING is not a valid setting in Django 4.0. It should be removed.
+[Ciri] Reason for CSRF_COOKIE_DOMAIN: CSRF_COOKIE_DOMAIN should be set to a string value representing the domain, not None.
+[Ciri] Reason for MANAGERS: MANAGERS should be defined as a list of tuples, not set to ADMINS.
+[Ciri] Reason for SECURE_REFERRER_POLICY: SECURE_REFERRER_POLICY is not a valid setting in Django 4.0. It should be removed.
+[Ciri] Reason for TEMPLATES: TEMPLATES should be configured with a list of dictionaries containing template engine settings.

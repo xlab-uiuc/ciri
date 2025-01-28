@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'DATABASES', 'EMAIL_SSL_CERTFILE', 'USE_TZ', 'DATABASE_ROUTERS', 'SESSION_FILE_PATH'], 'reason': ['DEBUG is not a boolean value', 'SECRET_KEY is not a string value', 'ALLOWED_HOSTS is not a list value', 'DATABASES is not a dictionary value', 'EMAIL_SSL_CERTFILE is not a string value', 'USE_TZ is not a boolean value', 'DATABASE_ROUTERS is not a list value', 'SESSION_FILE_PATH is not a string value']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'DATABASES'], 'reason': ['DEBUG should be a boolean, not a string', 'SECRET_KEY should be a string, not a boolean', 'ALLOWED_HOSTS should be a list, not a string', 'DATABASES should be a dictionary, not a list']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'DATABASES', 'EMAIL_SSL_CERTFILE', 'USE_TZ', 'DATABASE_ROUTERS', 'SESSION_FILE_PATH'], 'reason': ['DEBUG should be set to False', 'SECRET_KEY should be set to a secret key', 'ALLOWED_HOSTS should be set to a list of allowed hosts', 'DATABASES should be set to a dictionary containing database information', 'EMAIL_SSL_CERTFILE should be set to a path to a certificate file', 'USE_TZ should be set to True', 'DATABASE_ROUTERS should be set to a list of database routers', 'SESSION_FILE_PATH should be set to a path to a session file']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: DEBUG	SECRET_KEY	ALLOWED_HOSTS	DATABASES	EMAIL_SSL_CERTFILE	USE_TZ	DATABASE_ROUTERS	SESSION_FILE_PATH
+[Ciri] Reason for DEBUG: DEBUG is not a boolean value
+[Ciri] Reason for SECRET_KEY: SECRET_KEY should be set to a secret key
+[Ciri] Reason for ALLOWED_HOSTS: ALLOWED_HOSTS is not a list value
+[Ciri] Reason for DATABASES: DATABASES should be set to a dictionary containing database information
+[Ciri] Reason for EMAIL_SSL_CERTFILE: EMAIL_SSL_CERTFILE should be set to a path to a certificate file
+[Ciri] Reason for USE_TZ: USE_TZ is not a boolean value
+[Ciri] Reason for DATABASE_ROUTERS: DATABASE_ROUTERS is not a list value
+[Ciri] Reason for SESSION_FILE_PATH: SESSION_FILE_PATH should be set to a path to a session file

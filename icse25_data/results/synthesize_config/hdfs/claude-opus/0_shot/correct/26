@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.volumes.replica-add.threadpool.size', 'dfs.datanode.network.counts.cache.max.size'], 'reason': ['The value for dfs.datanode.volumes.replica-add.threadpool.size should be a positive integer, but 0.1 is specified which is invalid.', 'The value for dfs.datanode.network.counts.cache.max.size exceeds the maximum integer value in Java (2147483647). It should be set to a value less than or equal to 2147483647.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.volumes.replica-add.threadpool.size	dfs.datanode.network.counts.cache.max.size
+[Ciri] Reason for dfs.datanode.volumes.replica-add.threadpool.size: The value for dfs.datanode.volumes.replica-add.threadpool.size should be a positive integer, but 0.1 is specified which is invalid.
+[Ciri] Reason for dfs.datanode.network.counts.cache.max.size: The value for dfs.datanode.network.counts.cache.max.size exceeds the maximum integer value in Java (2147483647). It should be set to a value less than or equal to 2147483647.

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.ftp.data.connection.mode</name>
+  <value>ACTIVE_LOCAL_DATA_CONNECTION_MODE</value>
+  <description>Set the FTPClient's data connection mode based on configuration.
+    Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE,
+    PASSIVE_LOCAL_DATA_CONNECTION_MODE and PASSIVE_REMOTE_DATA_CONNECTION_MODE.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.path.style.access</name>
+  <value>false</value>
+  <description>Enable S3 path style access ie disabling the default virtual hosting behaviour.
+    Useful for S3A-compliant storage providers as it removes the need to set up DNS for virtual hosting.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].decay-scheduler.decay-factor</name>
+  <value>0.25</value>
+  <description>When decaying the operation counts of users, the multiplicative
+    decay factor to apply. Higher values will weight older operations more
+    strongly, essentially giving the scheduler a longer memory, and penalizing
+    heavy clients for a longer period of time.
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>tfile.fs.output.buffer.size</name>
+  <value>262144</value>
+  <description>
+    Buffer size used for FSDataOutputStream in bytes.
+  </description>
+</property>
+
+<property>
+  <name>tfile.fs.input.buffer.size</name>
+  <value>524288</value>
+  <description>
+    Buffer size used for FSDataInputStream in bytes.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.enabled</name>
+  <value>false</value>
+  <description>
+    Deprecated. Use dfs.http.policy and yarn.http.policy instead.
+  </description>
+</property>
+
+<property>
+  <name>nfs.exports.allowed.hosts</name>
+  <value>* rw</value>
+  <description>
+    By default, the export can be mounted by any client. The value string
+    contains machine name and access privilege, separated by whitespace
+    characters. The machine name format can be a single host, a Java regular
+    expression, or an IPv4 address. The access privilege uses rw or ro to
+    specify read/write or read-only access of the machines to exports. If the
+    access privilege is not provided, the default is read-only. Entries are separated by ";".
+    For example: "192.168.0.0/22 rw ; host.*\.example\.com ; host1.test.org ro;".
+    Only the NFS gateway needs to restart after this property is updated.
+  </description>
+</property>
+
+<property>
+  <name>fs.adl.impl</name>
+  <value>org.apache.hadoop.fs.adl.AdlFileSystem</value>
+</property>
+
+</configuration>

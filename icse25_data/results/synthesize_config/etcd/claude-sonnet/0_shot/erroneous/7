@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['key-file', 'auto-compaction-retention'], 'reason': ["The 'key-file' parameter is deprecated in etcd 3.5.0 and should be replaced with 'cert-file' and 'key-file' parameters for TLS configuration.", "The 'auto-compaction-retention' parameter expects a duration string (e.g., '1h', '24h', '7d') instead of a quoted integer value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: key-file	auto-compaction-retention
+[Ciri] Reason for key-file: The 'key-file' parameter is deprecated in etcd 3.5.0 and should be replaced with 'cert-file' and 'key-file' parameters for TLS configuration.
+[Ciri] Reason for auto-compaction-retention: The 'auto-compaction-retention' parameter expects a duration string (e.g., '1h', '24h', '7d') instead of a quoted integer value.

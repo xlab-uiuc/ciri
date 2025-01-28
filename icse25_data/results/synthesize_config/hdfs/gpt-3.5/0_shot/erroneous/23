@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.volumes.replica-add.threadpool.size', 'datanode.https.port'], 'reason': ["Value for property 'dfs.datanode.volumes.replica-add.threadpool.size' should be an integer.", "Value for property 'datanode.https.port' should be an integer for the HTTPS port."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.volumes.replica-add.threadpool.size', 'datanode.https.port'], 'reason': ["The value for 'dfs.datanode.volumes.replica-add.threadpool.size' should be an integer.", "The value for 'datanode.https.port' should be an integer for the HTTPS port."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.volumes.replica-add.threadpool.size', 'datanode.https.port', 'dfs.namenode.send.qop.enabled'], 'reason': ["Value for 'dfs.datanode.volumes.replica-add.threadpool.size' should be an integer.", "Value for 'datanode.https.port' should be an integer.", "Value for 'dfs.namenode.send.qop.enabled' should be a boolean (true/false)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.volumes.replica-add.threadpool.size	datanode.https.port
+[Ciri] Reason for dfs.datanode.volumes.replica-add.threadpool.size: Value for property 'dfs.datanode.volumes.replica-add.threadpool.size' should be an integer.
+[Ciri] Reason for datanode.https.port: The value for 'datanode.https.port' should be an integer for the HTTPS port.

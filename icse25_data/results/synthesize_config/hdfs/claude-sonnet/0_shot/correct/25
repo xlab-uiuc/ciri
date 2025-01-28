@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.max.objects', 'dfs.namenode.delegation.key.update-interval', 'nfs.mountd.port'], 'reason': ['The value of dfs.namenode.max.objects should be a positive integer or 0 (for no limit), not -1.', 'The value of dfs.namenode.delegation.key.update-interval should be a time duration in milliseconds, not 86400000 (which is 1 day in milliseconds).', 'The nfs.mountd.port property is not a valid HDFS configuration property in version 3.3.0. It is related to the NFS gateway, which is a separate component.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.max.objects	dfs.namenode.delegation.key.update-interval	nfs.mountd.port
+[Ciri] Reason for dfs.namenode.max.objects: The value of dfs.namenode.max.objects should be a positive integer or 0 (for no limit), not -1.
+[Ciri] Reason for dfs.namenode.delegation.key.update-interval: The value of dfs.namenode.delegation.key.update-interval should be a time duration in milliseconds, not 86400000 (which is 1 day in milliseconds).
+[Ciri] Reason for nfs.mountd.port: The nfs.mountd.port property is not a valid HDFS configuration property in version 3.3.0. It is related to the NFS gateway, which is a separate component.

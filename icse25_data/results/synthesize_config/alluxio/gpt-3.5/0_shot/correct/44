@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.worker.ufs.instream.cache.enabled', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.lost.worker.file.detection.interval'], 'reason': ['Invalid value. Value should be an integer.', 'Invalid value. Value should be a boolean (true/false).', 'Invalid value. Value should be specified in milliseconds.', 'Invalid value. Value should be specified in milliseconds.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.worker.ufs.instream.cache.enabled', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.lost.worker.file.detection.interval'], 'reason': ['Invalid value. Value should be an integer.', 'Invalid value. Value should be a boolean (true/false).', 'Invalid value. Value should be in milliseconds format.', 'Invalid value. Value should be in milliseconds format.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.worker.ufs.instream.cache.enabled', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.lost.worker.file.detection.interval'], 'reason': ['Invalid value. Value should be an integer.', 'Invalid value. Value should be a boolean (true/false).', 'Invalid value. Value should be in milliseconds.', 'Invalid value. Value should be in milliseconds.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.user.network.max.inbound.message.size	alluxio.worker.ufs.instream.cache.enabled	alluxio.security.stale.channel.purge.interval	alluxio.master.lost.worker.file.detection.interval
+[Ciri] Reason for alluxio.user.network.max.inbound.message.size: Invalid value. Value should be an integer.
+[Ciri] Reason for alluxio.worker.ufs.instream.cache.enabled: Invalid value. Value should be a boolean (true/false).
+[Ciri] Reason for alluxio.security.stale.channel.purge.interval: Invalid value. Value should be in milliseconds format.
+[Ciri] Reason for alluxio.master.lost.worker.file.detection.interval: Invalid value. Value should be in milliseconds.

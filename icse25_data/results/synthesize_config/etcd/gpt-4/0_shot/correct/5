@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'enable-pprof', 'proxy-failure-wait'], 'reason': ["The 'proxy-refresh-interval' parameter is not applicable to etcd version 3.5.0 as the proxy feature was deprecated.", "The 'enable-pprof' parameter does not exist in etcd version 3.5.0 configuration. Instead, profiling is enabled by default and can be controlled via the '--metrics' flag.", "The 'proxy-failure-wait' parameter is not applicable to etcd version 3.5.0 as the proxy feature was deprecated."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-refresh-interval	enable-pprof	proxy-failure-wait
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter is not applicable to etcd version 3.5.0 as the proxy feature was deprecated.
+[Ciri] Reason for enable-pprof: The 'enable-pprof' parameter does not exist in etcd version 3.5.0 configuration. Instead, profiling is enabled by default and can be controlled via the '--metrics' flag.
+[Ciri] Reason for proxy-failure-wait: The 'proxy-failure-wait' parameter is not applicable to etcd version 3.5.0 as the proxy feature was deprecated.

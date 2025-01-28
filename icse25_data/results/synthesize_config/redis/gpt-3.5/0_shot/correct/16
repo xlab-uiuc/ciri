@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'proto-max-bulk-len', 'lazyfree-lazy-user-del', 'hll-sparse-max-bytes', 'stop-writes-on-bgsave-error', 'tcp-backlog', 'enable-module-command', 'set-proc-title'], 'reason': ['replica-serve-stale-data is not a valid configuration parameter for Redis 7.0.0', 'proto-max-bulk-len should be specified in bytes with a suffix (e.g., 512mb)', 'lazyfree-lazy-user-del is not a valid configuration parameter for Redis 7.0.0', 'hll-sparse-max-bytes should be specified in bytes', 'stop-writes-on-bgsave-error is not a valid configuration parameter for Redis 7.0.0', 'tcp-backlog should be specified as an integer value', 'enable-module-command is not a valid configuration parameter for Redis 7.0.0', 'set-proc-title is not a valid configuration parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'proto-max-bulk-len', 'lazyfree-lazy-user-del', 'hll-sparse-max-bytes', 'stop-writes-on-bgsave-error', 'tcp-backlog', 'enable-module-command', 'set-proc-title'], 'reason': ['replica-serve-stale-data is not a valid configuration parameter for Redis 7.0.0', 'proto-max-bulk-len should be specified in bytes (e.g., 512mb should be 512mb)', 'lazyfree-lazy-user-del is not a valid configuration parameter for Redis 7.0.0', 'hll-sparse-max-bytes should be specified in bytes (e.g., 1500 should be 1500)', 'stop-writes-on-bgsave-error is not a valid configuration parameter for Redis 7.0.0', 'tcp-backlog should be an integer value, not 1022', 'enable-module-command is not a valid configuration parameter for Redis 7.0.0', 'set-proc-title is not a valid configuration parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'proto-max-bulk-len', 'lazyfree-lazy-user-del', 'hll-sparse-max-bytes', 'stop-writes-on-bgsave-error', 'tcp-backlog', 'enable-module-command', 'set-proc-title'], 'reason': ['replica-serve-stale-data is not a valid configuration parameter for Redis 7.0.0', 'proto-max-bulk-len should be specified in bytes (e.g., 512mb should be 512mb)', 'lazyfree-lazy-user-del is not a valid configuration parameter for Redis 7.0.0', 'hll-sparse-max-bytes should be specified in bytes (e.g., 1500 should be 1500)', 'stop-writes-on-bgsave-error is not a valid configuration parameter for Redis 7.0.0', 'tcp-backlog should be an integer value', 'enable-module-command is not a valid configuration parameter for Redis 7.0.0', 'set-proc-title is not a valid configuration parameter for Redis 7.0.0']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: replica-serve-stale-data	proto-max-bulk-len	lazyfree-lazy-user-del	hll-sparse-max-bytes	stop-writes-on-bgsave-error	tcp-backlog	enable-module-command	set-proc-title
+[Ciri] Reason for replica-serve-stale-data: replica-serve-stale-data is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len should be specified in bytes (e.g., 512mb should be 512mb)
+[Ciri] Reason for lazyfree-lazy-user-del: lazyfree-lazy-user-del is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes should be specified in bytes
+[Ciri] Reason for stop-writes-on-bgsave-error: stop-writes-on-bgsave-error is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for tcp-backlog: tcp-backlog should be specified as an integer value
+[Ciri] Reason for enable-module-command: enable-module-command is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for set-proc-title: set-proc-title is not a valid configuration parameter for Redis 7.0.0

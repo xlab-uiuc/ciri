@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.user.network.rpc.netty.worker.threads', 'alluxio.underfs.web.titles'], 'reason': ["The property 'fs.cos.socket.timeout' is not a valid Alluxio configuration property in version 2.5.0.", "The property 'alluxio.user.network.rpc.netty.worker.threads' is not a valid Alluxio configuration property in version 2.5.0. The correct property is 'alluxio.user.rpc.thread.count'.", "The property 'alluxio.underfs.web.titles' is not a valid Alluxio configuration property in version 2.5.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.cos.socket.timeout	alluxio.user.network.rpc.netty.worker.threads	alluxio.underfs.web.titles
+[Ciri] Reason for fs.cos.socket.timeout: The property 'fs.cos.socket.timeout' is not a valid Alluxio configuration property in version 2.5.0.
+[Ciri] Reason for alluxio.user.network.rpc.netty.worker.threads: The property 'alluxio.user.network.rpc.netty.worker.threads' is not a valid Alluxio configuration property in version 2.5.0. The correct property is 'alluxio.user.rpc.thread.count'.
+[Ciri] Reason for alluxio.underfs.web.titles: The property 'alluxio.underfs.web.titles' is not a valid Alluxio configuration property in version 2.5.0.

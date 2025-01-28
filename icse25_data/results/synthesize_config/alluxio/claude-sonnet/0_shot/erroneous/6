@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.finished.job.retention.time=60nounit', 'alluxio.underfs.web.parent.names=Parent Directory', 'alluxio.master.whitelist=/valid/file2'], 'reason': ["The property 'alluxio.job.master.finished.job.retention.time' expects a time unit (e.g. 60sec, 60min, 60hour, 60day). '60nounit' is not a valid value.", "The property 'alluxio.underfs.web.parent.names' is not a valid Alluxio configuration property.", "The property 'alluxio.master.whitelist' is deprecated in Alluxio 2.5.0. It has been replaced by 'alluxio.master.hostname'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.finished.job.retention.time=60nounit	alluxio.underfs.web.parent.names=Parent Directory	alluxio.master.whitelist=/valid/file2
+[Ciri] Reason for alluxio.job.master.finished.job.retention.time=60nounit: The property 'alluxio.job.master.finished.job.retention.time' expects a time unit (e.g. 60sec, 60min, 60hour, 60day). '60nounit' is not a valid value.
+[Ciri] Reason for alluxio.underfs.web.parent.names=Parent Directory: The property 'alluxio.underfs.web.parent.names' is not a valid Alluxio configuration property.
+[Ciri] Reason for alluxio.master.whitelist=/valid/file2: The property 'alluxio.master.whitelist' is deprecated in Alluxio 2.5.0. It has been replaced by 'alluxio.master.hostname'.

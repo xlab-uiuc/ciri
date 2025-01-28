@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.lazypersist.file.scrub.interval.sec</name>
+  <value>600</value>
+  <description>
+    The NameNode periodically scans the namespace for LazyPersist files with
+    missing blocks and unlinks them from the namespace. This configuration key
+    controls the interval between successive scans. If this value is set to 0,
+    the file scrubber is disabled.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.handler.count</name>
+  <value>5</value>
+  <description>The number of Namenode RPC server threads that listen to
+  requests from clients.
+  If dfs.namenode.servicerpc-address is not configured then
+  Namenode RPC server threads listen to requests from all nodes.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.service.handler.count</name>
+  <value>10</value>
+  <description>The number of Namenode RPC server threads that listen to
+  requests from DataNodes and from all other non-client nodes.
+  dfs.namenode.service.handler.count will be valid only if
+  dfs.namenode.servicerpc-address is configured.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.deadnode.detection.rpc.threads</name>
+  <value>40</value>
+    <description>
+      The maximum number of threads to use for calling RPC call to recheck the liveness of dead node.
+    </description>
+</property>
+
+<property>
+  <name>dfs.client.retry.interval-ms.get-last-block-length</name>
+  <value>8000</value>
+  <description>
+    Retry interval in milliseconds to wait between retries in getting
+    block lengths from the datanodes.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.max.op.size</name>
+  <value>104857600</value>
+  <description>
+    Maximum opcode size in bytes.
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.satisfier.mode</name>
+  <value>none</value>
+  <description>
+    Following values are supported - external, none.
+    If external, StoragePolicySatisfier will be enabled and started as an independent service outside namenode.
+    If none, StoragePolicySatisfier is disabled.
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.satisfier.work.multiplier.per.iteration</name>
+  <value>0</value>
+  <description>
+    *Note*: Advanced property. Change with caution.
+    This determines the total amount of block transfers to begin in
+    one iteration, for satisfy the policy. The actual number is obtained by
+    multiplying this multiplier with the total number of live nodes in the
+    cluster. The result number is the number of blocks to begin transfers
+    immediately. This number can be any positive, non-zero integer.
+  </description>
+</property>
+
+</configuration>

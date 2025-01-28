@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.groups.negative-cache.secs</name>
+  <value>30</value>
+  <description>
+    Expiration time for entries in the the negative user-to-group mapping
+    caching, in seconds. This is useful when invalid users are retrying
+    frequently. It is suggested to set a small value for this expiration, since
+    a transient error in group lookup could temporarily lock out a legitimate
+    user.
+
+    Set this to zero or negative value to disable negative user-to-group caching.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.assumed.role.session.duration</name>
+  <value>20m</value>
+  <description>
+    Duration of assumed roles before a refresh is attempted.
+    Used when session tokens are requested.
+    Range: 15m to 1h
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.purge.age</name>
+  <value>172800</value>
+  <description>Minimum age in seconds of multipart uploads to purge
+    on startup if "fs.s3a.multipart.purge" is true
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.readahead.range</name>
+  <value>64K</value>
+  <description>Bytes to read ahead during a seek() before closing and
+  re-opening the S3 HTTP connection. This option will be overridden if
+  any call to setReadahead() is made to an open stream.
+  A suffix from the set {K,M,G,T,P} may be used to scale the numeric value.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.compression</name>
+  <value>none</value>
+  <description>In S3 Select queries, the source compression
+    algorithm. One of: "none" and "gzip"</description>
+</property>
+
+<property>
+  <name>hadoop.http.cross-origin.allowed-methods</name>
+  <value>GET,POST,HEAD</value>
+  <description>Comma separated list of methods that are allowed for web
+    services needing cross-origin (CORS) support.</description>
+</property>
+
+<property>
+  <name>ha.failover-controller.active-standby-elector.zk.op.retries</name>
+  <value>1</value>
+  <description>
+    The number of zookeeper operation retry times in ActiveStandbyElector
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.random.device.file.path</name>
+  <value>/valid/file1</value>
+  <description>
+    OS security random device file path.
+  </description>
+</property>
+
+</configuration>

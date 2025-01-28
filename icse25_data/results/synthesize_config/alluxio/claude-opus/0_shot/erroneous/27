@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.upload.threads.max', 'alluxio.user.network.rpc.max.connections', 'alluxio.user.file.replication.durable'], 'reason': ['alluxio.underfs.s3.upload.threads.max should be a positive integer, but is set to -10', 'alluxio.user.network.rpc.max.connections should be a positive integer, but is set to 0', 'alluxio.user.file.replication.durable should be a non-negative integer, but is set to 1 which is not supported in 2.5.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.underfs.s3.upload.threads.max	alluxio.user.network.rpc.max.connections	alluxio.user.file.replication.durable
+[Ciri] Reason for alluxio.underfs.s3.upload.threads.max: alluxio.underfs.s3.upload.threads.max should be a positive integer, but is set to -10
+[Ciri] Reason for alluxio.user.network.rpc.max.connections: alluxio.user.network.rpc.max.connections should be a positive integer, but is set to 0
+[Ciri] Reason for alluxio.user.file.replication.durable: alluxio.user.file.replication.durable should be a non-negative integer, but is set to 1 which is not supported in 2.5.0

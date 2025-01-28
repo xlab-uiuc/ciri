@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dynamic-hz', 'oom-score-adj-values', 'cluster-announce-port'], 'reason': ["The 'dynamic-hz' parameter should be set to 'no' or 'yes'. However, it is correctly set here, so it's not actually an error. This was mistakenly included.", "The 'oom-score-adj-values' parameter does not exist in Redis configuration. It seems to be a misunderstanding or a typo.", "The 'cluster-announce-port' should be set to a valid port number greater than 0 when clustering is enabled. Setting it to 1 is technically valid but practically not advisable, as port 1 is reserved and typically not used for application services."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dynamic-hz	oom-score-adj-values	cluster-announce-port
+[Ciri] Reason for dynamic-hz: The 'dynamic-hz' parameter should be set to 'no' or 'yes'. However, it is correctly set here, so it's not actually an error. This was mistakenly included.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter does not exist in Redis configuration. It seems to be a misunderstanding or a typo.
+[Ciri] Reason for cluster-announce-port: The 'cluster-announce-port' should be set to a valid port number greater than 0 when clustering is enabled. Setting it to 1 is technically valid but practically not advisable, as port 1 is reserved and typically not used for application services.

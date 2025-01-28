@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.global.memstore.size', 'hbase.storescanner.parallel.seek.enable'], 'reason': ["The property 'hbase.regionserver.global.memstore.size' is deprecated in HBase 2.2.7 and should not be used. Instead, use 'hbase.regionserver.global.memstore.upperLimit' and 'hbase.regionserver.global.memstore.lowerLimit' to set the upper and lower limits for the memstore size.", "The property 'hbase.storescanner.parallel.seek.enable' is a boolean property, but the value '10000' is not a valid boolean value. It should be either 'true' or 'false'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.global.memstore.size	hbase.storescanner.parallel.seek.enable
+[Ciri] Reason for hbase.regionserver.global.memstore.size: The property 'hbase.regionserver.global.memstore.size' is deprecated in HBase 2.2.7 and should not be used. Instead, use 'hbase.regionserver.global.memstore.upperLimit' and 'hbase.regionserver.global.memstore.lowerLimit' to set the upper and lower limits for the memstore size.
+[Ciri] Reason for hbase.storescanner.parallel.seek.enable: The property 'hbase.storescanner.parallel.seek.enable' is a boolean property, but the value '10000' is not a valid boolean value. It should be either 'true' or 'false'.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 6, 7]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.input.compression'], 'reason': ["The property 'fs.s3a.select.input.compression' has the value 'none' which is not a valid compression algorithm for S3 Select. Valid options are 'gzip', 'bzip2', or omitted for no compression."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.input.compression'], 'reason': ["The value 'none' for property 'fs.s3a.select.input.compression' is not a valid option. Valid options are 'bzip2', 'gzip', and 'lz4'."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.input.compression'], 'reason': ["The value 'none' is not a valid option for 'fs.s3a.select.input.compression'. Valid options are 'bzip2', 'gzip', or not set."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.s3a.select.input.compression
+[Ciri] Reason for fs.s3a.select.input.compression: The value 'none' is not a valid option for 'fs.s3a.select.input.compression'. Valid options are 'bzip2', 'gzip', or not set.

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.ha.enabled</name>
+  <value>false</value>
+    <description>Enable RM high-availability. When enabled,
+      (1) The RM starts in the Standby mode by default, and transitions to
+      the Active mode when prompted to.
+      (2) The nodes in the RM ensemble are listed in
+      yarn.resourcemanager.ha.rm-ids
+      (3) The id of each RM either comes from yarn.resourcemanager.ha.id
+      if yarn.resourcemanager.ha.id is explicitly specified or can be
+      figured out by matching yarn.resourcemanager.address.{id} with local address
+      (4) The actual physical addresses come from the configs of the pattern
+      - {rpc-config}.{id}</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.ha.rm-ids</name>
+  <value>rm1,rm2</value>
+    <description>The list of RM nodes in the cluster when HA is
+      enabled. See description of yarn.resourcemanager.ha
+      .enabled for full details on how this is used.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.address</name>
+  <value>127.0.0.1</value>
+    <description>The address of the container manager in the NM.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.cache-refresh-interval-secs</name>
+  <value>120</value>
+    <description>The interval in seconds between refreshing the hdfs image tag
+      to hash cache.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-retry-minimum-interval-ms</name>
+  <value>2000</value>
+    <description>Minimum container restart interval in milliseconds.</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.store.in-memory.initial-delay-mins</name>
+  <value>10</value>
+    <description>Initial delay before the in-memory store runs its first check
+    to remove dead initial applications. Specified in minutes.</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.cleaner.period-mins</name>
+  <value>1440</value>
+    <description>The frequency at which a cleaner task runs.
+    Specified in minutes.</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.uploader.server.thread-count</name>
+  <value>100</value>
+    <description>The number of threads used to handle shared cache manager
+    requests from the node manager (50 by default)</description>
+</property>
+
+</configuration>

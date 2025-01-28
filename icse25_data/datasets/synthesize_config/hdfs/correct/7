@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.client.https.need-auth</name>
+  <value>false</value>
+  <description>Whether SSL client certificate authentication is required
+  </description>
+</property>
+
+<property>
+  <name>dfs.permissions.superusergroup</name>
+  <value>xdgroup</value>
+  <description>The name of the group of super-users.
+    The value should be a single group name.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.write.exclude.nodes.cache.expiry.interval.millis</name>
+  <value>600000</value>
+  <description>The maximum period to keep a DN in the excluded nodes list
+  at a client. After this period, in milliseconds, the previously excluded node(s) will
+  be removed automatically from the cache and will be considered good for block allocations
+  again. Useful to lower or raise in situations where you keep a file open for very long
+  periods (such as a Write-Ahead-Log (WAL) file) to make the writer tolerant to cluster maintenance
+  restarts. Defaults to 10 minutes.</description>
+</property>
+
+<property>
+  <name>dfs.datanode.slow.io.warning.threshold.ms</name>
+  <value>150</value>
+  <description>The threshold in milliseconds at which we will log a slow
+    io warning in a datanode. By default, this parameter is set to 300
+    milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.ha.nn.not-become-active-in-safemode</name>
+  <value>true</value>
+  <description>
+    This will prevent safe mode namenodes to become active while other standby
+    namenodes might be ready to serve requests when it is set to true.
+  </description>
+</property>
+
+<property>
+  <name>dfs.balancer.moverThreads</name>
+  <value>500</value>
+  <description>
+    Thread pool size for executing block moves.
+    moverThreadAllocator
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.read.prefetch.size</name>
+  <value>0.1</value>
+  <description>
+    The number of bytes for the DFSClient will fetch from the Namenode
+    during a read operation.  Defaults to 10 * ${dfs.blocksize}.
+  </description>
+</property>
+
+<property>
+  <name>dfs.batched.ls.limit</name>
+  <value>200</value>
+  <description>
+    Limit the number of paths that can be listed in a single batched
+    listing call. printed by ls. If less or equal to
+    zero, at most DFS_LIST_LIMIT_DEFAULT (= 1000) will be printed.
+  </description>
+</property>
+
+</configuration>

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.num.attempts', 'fs.s3a.assumed.role.session.duration'], 'reason': ['The value for hadoop.security.group.mapping.ldap.num.attempts should be a positive integer, but is set to -5.5 which is an invalid value.', 'The value for fs.s3a.assumed.role.session.duration should be in the range 15m to 1h, but is set to 20m which is outside the valid range.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.num.attempts	fs.s3a.assumed.role.session.duration
+[Ciri] Reason for hadoop.security.group.mapping.ldap.num.attempts: The value for hadoop.security.group.mapping.ldap.num.attempts should be a positive integer, but is set to -5.5 which is an invalid value.
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The value for fs.s3a.assumed.role.session.duration should be in the range 15m to 1h, but is set to 20m which is outside the valid range.

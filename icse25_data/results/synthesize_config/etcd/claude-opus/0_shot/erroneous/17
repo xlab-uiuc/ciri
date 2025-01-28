@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-tls', 'auto-compaction-mode', 'proxy-dial-timeout'], 'reason': ["The 'enable-v2' option has been deprecated and removed in etcd v3.5. It is no longer a valid configuration parameter.", "The 'auto-tls' option is not a valid configuration parameter in etcd v3.5. If you want to enable automatic TLS, you should use the 'client-transport-security' and 'peer-transport-security' options instead.", "The 'auto-compaction-mode' option expects a value of either 'revision' or 'periodic', but 'periodic' is not a valid value. It should be changed to 'revision'.", "The 'proxy-dial-timeout' option expects a duration string (e.g., '1s' or '100ms'), but '1000' is not a valid duration format. It should be changed to a valid duration string."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: enable-v2	auto-tls	auto-compaction-mode	proxy-dial-timeout
+[Ciri] Reason for enable-v2: The 'enable-v2' option has been deprecated and removed in etcd v3.5. It is no longer a valid configuration parameter.
+[Ciri] Reason for auto-tls: The 'auto-tls' option is not a valid configuration parameter in etcd v3.5. If you want to enable automatic TLS, you should use the 'client-transport-security' and 'peer-transport-security' options instead.
+[Ciri] Reason for auto-compaction-mode: The 'auto-compaction-mode' option expects a value of either 'revision' or 'periodic', but 'periodic' is not a valid value. It should be changed to 'revision'.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' option expects a duration string (e.g., '1s' or '100ms'), but '1000' is not a valid duration format. It should be changed to a valid duration string.

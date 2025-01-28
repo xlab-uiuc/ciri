@@ -1,0 +1,16 @@
+Wrong shot number:
+[9]
+
+Correct shot number:
+[2, 7, 8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.trash.interval', 'fs.trash.checkpoint.interval', 'fs.s3a.multipart.purge.age'], 'reason': ["The property 'fs.trash.interval' has the value '5' which is not within the accepted value {0,1,2,...}.", "The property 'fs.trash.checkpoint.interval' has the value '10' which is not within the accepted value {0,1,2,...}.", "The property 'fs.s3a.multipart.purge.age' has the value '86400' which is not within the accepted value {0,1,2,...}."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.trash.interval	fs.trash.checkpoint.interval	fs.s3a.multipart.purge.age
+[Ciri] Reason for fs.trash.interval: The property 'fs.trash.interval' has the value '5' which is not within the accepted value {0,1,2,...}.
+[Ciri] Reason for fs.trash.checkpoint.interval: The property 'fs.trash.checkpoint.interval' has the value '10' which is not within the accepted value {0,1,2,...}.
+[Ciri] Reason for fs.s3a.multipart.purge.age: The property 'fs.s3a.multipart.purge.age' has the value '86400' which is not within the accepted value {0,1,2,...}.

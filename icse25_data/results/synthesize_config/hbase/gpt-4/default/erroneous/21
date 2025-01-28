@@ -1,0 +1,15 @@
+Wrong shot number:
+[3, 2, 10]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.scanner.timeout.period', 'hbase.rootdir.perms'], 'reason': ["The property 'hbase.client.scanner.timeout.period' has a negative value, which is not valid.", "The property 'hbase.rootdir.perms' has an invalid value '1400'. Expected octal permission representation should be something like '700'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.client.scanner.timeout.period	hbase.rootdir.perms
+[Ciri] Reason for hbase.client.scanner.timeout.period: The property 'hbase.client.scanner.timeout.period' has a negative value, which is not valid.
+[Ciri] Reason for hbase.rootdir.perms: The property 'hbase.rootdir.perms' has an invalid value '1400'. Expected octal permission representation should be something like '700'.

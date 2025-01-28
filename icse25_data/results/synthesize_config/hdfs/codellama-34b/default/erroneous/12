@@ -1,0 +1,27 @@
+Wrong shot number:
+[12, 2, 8]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.read.short.circuit.replica.stale.threshold.ms'], 'reason': ["The property 'dfs.client.read.short.circuit.replica.stale.threshold.ms' has the value '3600000' which is out of the valid range of a time unit."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.name.dir.restore', 'dfs.datanode.keytab.file', 'dfs.secondary.namenode.kerberos.internal.spnego.principal'], 'reason': ["The property 'dfs.namenode.name.dir.restore' has the value 'false' which is not a valid directory path.", "The property 'dfs.datanode.keytab.file' has the value '/valid/file1' which is not a valid directory path.", "The property 'dfs.secondary.namenode.kerberos.internal.spnego.principal' has the value '${dfs.web.authentication.kerberos.principal}' which is not a valid directory path."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.replica.cache.expiry.time'], 'reason': ["The property 'dfs.datanode.replica.cache.expiry.time' has the value '10m' which uses an incorrect unit."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.read.short.circuit.replica.stale.threshold.ms', 'dfs.datanode.replica.cache.expiry.time'], 'reason': ["The property 'dfs.client.read.short.circuit.replica.stale.threshold.ms' has the value '3600000' which exceeds the range of an Integer.", "The property 'dfs.datanode.replica.cache.expiry.time' has the value '10m' which uses an incorrect unit."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.read.short.circuit.replica.stale.threshold.ms', 'dfs.datanode.replica.cache.expiry.time'], 'reason': ["The property 'dfs.client.read.short.circuit.replica.stale.threshold.ms' has the value '3600000' which exceeds the range of an Integer.", "The property 'dfs.datanode.replica.cache.expiry.time' has the value '10m' which uses an incorrect unit."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.shared.edits.dir'], 'reason': ["The property 'dfs.namenode.shared.edits.dir' has the value 'dev/urandom///' which is not a valid directory."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.client.read.short.circuit.replica.stale.threshold.ms	dfs.datanode.replica.cache.expiry.time
+[Ciri] Reason for dfs.client.read.short.circuit.replica.stale.threshold.ms: The property 'dfs.client.read.short.circuit.replica.stale.threshold.ms' has the value '3600000' which exceeds the range of an Integer.
+[Ciri] Reason for dfs.datanode.replica.cache.expiry.time: The property 'dfs.datanode.replica.cache.expiry.time' has the value '10m' which uses an incorrect unit.

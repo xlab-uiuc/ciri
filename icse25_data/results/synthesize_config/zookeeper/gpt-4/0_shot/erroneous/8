@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'maxSessionTimeout', 'minSessionTimeout', 'syncEnabled'], 'reason': ["The path for 'dataDir' is invalid. It should point to a valid directory path without special characters.", "'maxSessionTimeout' should be a positive integer.", "'minSessionTimeout' should be a positive integer greater than 0.", "'syncEnabled' is not a recognized configuration parameter in ZooKeeper 3.7.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dataDir	maxSessionTimeout	minSessionTimeout	syncEnabled
+[Ciri] Reason for dataDir: The path for 'dataDir' is invalid. It should point to a valid directory path without special characters.
+[Ciri] Reason for maxSessionTimeout: 'maxSessionTimeout' should be a positive integer.
+[Ciri] Reason for minSessionTimeout: 'minSessionTimeout' should be a positive integer greater than 0.
+[Ciri] Reason for syncEnabled: 'syncEnabled' is not a recognized configuration parameter in ZooKeeper 3.7.0.

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'enable_async_append', 'backslash_quote', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['bgwriter_delay should be in milliseconds (ms), not nanoseconds (NS).', 'enable_async_append is not a recognized configuration parameter in PostgreSQL.', 'backslash_quote is deprecated and should not be used in PostgreSQL 13.0.', 'max_pred_locks_per_relation cannot be negative. -2 is not a valid value.', 'log_min_duration_sample is not a valid configuration parameter. Perhaps it was meant to be log_min_duration_statement.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: bgwriter_delay	enable_async_append	backslash_quote	max_pred_locks_per_relation	log_min_duration_sample
+[Ciri] Reason for bgwriter_delay: bgwriter_delay should be in milliseconds (ms), not nanoseconds (NS).
+[Ciri] Reason for enable_async_append: enable_async_append is not a recognized configuration parameter in PostgreSQL.
+[Ciri] Reason for backslash_quote: backslash_quote is deprecated and should not be used in PostgreSQL 13.0.
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation cannot be negative. -2 is not a valid value.
+[Ciri] Reason for log_min_duration_sample: log_min_duration_sample is not a valid configuration parameter. Perhaps it was meant to be log_min_duration_statement.

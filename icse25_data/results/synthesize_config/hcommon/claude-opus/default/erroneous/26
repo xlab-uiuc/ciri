@@ -1,0 +1,15 @@
+Wrong shot number:
+[11, 15, 16]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'fs.permissions.umask-mode'], 'reason': ["The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' instead.", "The value 'hbase' for property 'fs.permissions.umask-mode' is invalid. It should be in octal or symbolic format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	fs.permissions.umask-mode
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' instead.
+[Ciri] Reason for fs.permissions.umask-mode: The value 'hbase' for property 'fs.permissions.umask-mode' is invalid. It should be in octal or symbolic format.

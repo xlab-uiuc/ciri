@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 1, 2]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['client-cert-auth', 'initial-cluster-token'], 'reason': ["The property 'client-cert-auth' should be set to 'true' to enable client certificate authentication.", "The property 'initial-cluster-token' should not have single quotes around the value."]}
+
+{'hasError': True, 'errParameter': ['client-cert-auth', 'enable-v2'], 'reason': ["The property 'client-cert-auth' should be 'true' to enable client certificate authentication.", "The property 'enable-v2' is deprecated in etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['client-cert-auth', 'initial-cluster-token'], 'reason': ["The value of the property 'client-cert-auth' should be 'true' to enable client certificate authentication.", "The property 'initial-cluster-token' should not have single quotes around the value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: client-cert-auth	initial-cluster-token
+[Ciri] Reason for client-cert-auth: The value of the property 'client-cert-auth' should be 'true' to enable client certificate authentication.
+[Ciri] Reason for initial-cluster-token: The property 'initial-cluster-token' should not have single quotes around the value.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.dir', 'dfs.namenode.checkpoint.dir', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ['The value for dfs.namenode.edits.dir should be a comma-separated list of directories, not a single directory.', 'The value for dfs.namenode.checkpoint.dir should be a comma-separated list of directories, not a single directory.', 'The dfs.provided.aliasmap.leveldb.path property is not a valid configuration property in Hadoop 3.3.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.edits.dir	dfs.namenode.checkpoint.dir	dfs.provided.aliasmap.leveldb.path
+[Ciri] Reason for dfs.namenode.edits.dir: The value for dfs.namenode.edits.dir should be a comma-separated list of directories, not a single directory.
+[Ciri] Reason for dfs.namenode.checkpoint.dir: The value for dfs.namenode.checkpoint.dir should be a comma-separated list of directories, not a single directory.
+[Ciri] Reason for dfs.provided.aliasmap.leveldb.path: The dfs.provided.aliasmap.leveldb.path property is not a valid configuration property in Hadoop 3.3.0.

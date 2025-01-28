@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout', 'quorum.auth.learner.saslLoginContext'], 'reason': ['maxSessionTimeout should be greater than 0 unless it is explicitly required to be unlimited, which is generally not recommended.', "The property 'quorum.auth.learner.saslLoginContext' is not correctly formatted. It should be 'quorum.auth.learner.saslLoginContext' followed by the context name, for example, 'quorum.auth.learner.saslLoginContext.QuorumLearner'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: maxSessionTimeout	quorum.auth.learner.saslLoginContext
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout should be greater than 0 unless it is explicitly required to be unlimited, which is generally not recommended.
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: The property 'quorum.auth.learner.saslLoginContext' is not correctly formatted. It should be 'quorum.auth.learner.saslLoginContext' followed by the context name, for example, 'quorum.auth.learner.saslLoginContext.QuorumLearner'.

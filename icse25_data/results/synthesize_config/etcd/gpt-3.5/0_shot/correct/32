@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'force-new-cluster', 'heartbeat-interval'], 'reason': ['quota-backend-bytes should be specified in bytes, e.g., 2GB', 'force-new-cluster should be a boolean value, true or false', 'heartbeat-interval should be specified in milliseconds, e.g., 500']}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'force-new-cluster'], 'reason': ['quota-backend-bytes should be specified in bytes, e.g., 2G for 2 gigabytes.', 'force-new-cluster should be set to false for an existing cluster, true is only for bootstrapping a new cluster.']}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'force-new-cluster', 'heartbeat-interval'], 'reason': ['quota-backend-bytes should be specified as a size value, for example, 2G for 2 gigabytes.', 'force-new-cluster should not be set to true in an existing cluster configuration.', 'heartbeat-interval should be specified in milliseconds, for example, 5000 for 5 seconds.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quota-backend-bytes	force-new-cluster	heartbeat-interval
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes should be specified in bytes, e.g., 2GB
+[Ciri] Reason for force-new-cluster: force-new-cluster should be a boolean value, true or false
+[Ciri] Reason for heartbeat-interval: heartbeat-interval should be specified in milliseconds, for example, 5000 for 5 seconds.

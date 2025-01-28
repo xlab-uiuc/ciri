@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_wal_size', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['bgwriter_delay is specified in milliseconds (ms), not nanoseconds (NS).', 'max_wal_size is specified in bytes, not gigabytes (GB). The maximum value is 1GB.', 'max_pred_locks_per_relation should be a non-negative integer, not -2.', 'log_min_duration_sample should be a non-negative integer, not -2.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: bgwriter_delay	max_wal_size	max_pred_locks_per_relation	log_min_duration_sample
+[Ciri] Reason for bgwriter_delay: bgwriter_delay is specified in milliseconds (ms), not nanoseconds (NS).
+[Ciri] Reason for max_wal_size: max_wal_size is specified in bytes, not gigabytes (GB). The maximum value is 1GB.
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation should be a non-negative integer, not -2.
+[Ciri] Reason for log_min_duration_sample: log_min_duration_sample should be a non-negative integer, not -2.

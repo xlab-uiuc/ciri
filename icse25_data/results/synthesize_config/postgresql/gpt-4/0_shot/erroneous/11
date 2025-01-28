@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['external_pid_file', 'ssl_ciphers', 'log_parser_stats', 'enable_bitmapscan', 'enable_material', 'log_startup_progress_interval', 'max_pred_locks_per_transaction', 'scram_iterations'], 'reason': ["The 'external_pid_file' parameter does not exist in PostgreSQL configuration. It might be a typo or a misunderstanding of the configuration directives.", "The 'ssl_ciphers' parameter is correctly named but ensure the cipher suite is compatible and recommended for use with PostgreSQL.", "The 'log_parser_stats' parameter does not exist. It seems to be a typo or confusion with other logging parameters.", "The 'enable_bitmapscan' parameter is valid, but it's important to ensure that enabling or disabling it is in line with your performance tuning strategy.", "The 'enable_material' parameter does not exist in PostgreSQL. This might be a confusion with other configuration parameters.", "The 'log_startup_progress_interval' parameter does not exist. It seems to be a misunderstanding or a typo.", "The 'max_pred_locks_per_transaction' parameter is valid, but ensure the value is set according to your application's needs and database performance.", "The 'scram_iterations' parameter is not a recognized configuration directive in PostgreSQL. It might be a misunderstanding or intended for a different context."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: external_pid_file	ssl_ciphers	log_parser_stats	enable_bitmapscan	enable_material	log_startup_progress_interval	max_pred_locks_per_transaction	scram_iterations
+[Ciri] Reason for external_pid_file: The 'external_pid_file' parameter does not exist in PostgreSQL configuration. It might be a typo or a misunderstanding of the configuration directives.
+[Ciri] Reason for ssl_ciphers: The 'ssl_ciphers' parameter is correctly named but ensure the cipher suite is compatible and recommended for use with PostgreSQL.
+[Ciri] Reason for log_parser_stats: The 'log_parser_stats' parameter does not exist. It seems to be a typo or confusion with other logging parameters.
+[Ciri] Reason for enable_bitmapscan: The 'enable_bitmapscan' parameter is valid, but it's important to ensure that enabling or disabling it is in line with your performance tuning strategy.
+[Ciri] Reason for enable_material: The 'enable_material' parameter does not exist in PostgreSQL. This might be a confusion with other configuration parameters.
+[Ciri] Reason for log_startup_progress_interval: The 'log_startup_progress_interval' parameter does not exist. It seems to be a misunderstanding or a typo.
+[Ciri] Reason for max_pred_locks_per_transaction: The 'max_pred_locks_per_transaction' parameter is valid, but ensure the value is set according to your application's needs and database performance.
+[Ciri] Reason for scram_iterations: The 'scram_iterations' parameter is not a recognized configuration directive in PostgreSQL. It might be a misunderstanding or intended for a different context.

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'initial-cluster-token', 'force-new-cluster', 'auto-compaction-mode', 'auto-compaction-retention'], 'reason': ["initial-cluster-state should be either 'new' or 'existing'.", 'initial-cluster-token is not used in etcd version 3.5.0.', 'force-new-cluster is not used in etcd version 3.5.0.', "auto-compaction-mode should be either 'periodic' or'revision'.", 'auto-compaction-retention should be a positive integer.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: initial-cluster-state	initial-cluster-token	force-new-cluster	auto-compaction-mode	auto-compaction-retention
+[Ciri] Reason for initial-cluster-state: initial-cluster-state should be either 'new' or 'existing'.
+[Ciri] Reason for initial-cluster-token: initial-cluster-token is not used in etcd version 3.5.0.
+[Ciri] Reason for force-new-cluster: force-new-cluster is not used in etcd version 3.5.0.
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode should be either 'periodic' or'revision'.
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention should be a positive integer.

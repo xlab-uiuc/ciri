@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.store.type', 'alluxio.user.network.rpc.flowcontrol.window', 'alluxio.worker.tieredstore.level1.watermark.high.ratio', 'alluxio.master.embedded.journal.transport.max.inbound.message.size'], 'reason': ['alluxio.user.client.cache.store.type should be one of [MEMORY, ROCKSDB, LEVELDB]', 'alluxio.user.network.rpc.flowcontrol.window should be a positive integer', 'alluxio.worker.tieredstore.level1.watermark.high.ratio should be a float between 0 and 1', 'alluxio.master.embedded.journal.transport.max.inbound.message.size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.store.type', 'alluxio.user.network.rpc.flowcontrol.window', 'alluxio.master.embedded.journal.transport.max.inbound.message.size'], 'reason': ['The property alluxio.user.client.cache.store.type is not a valid property.', 'The property alluxio.user.network.rpc.flowcontrol.window is not a valid property.', 'The property alluxio.master.embedded.journal.transport.max.inbound.message.size is not a valid property.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.flowcontrol.window'], 'reason': ['alluxio.user.network.rpc.flowcontrol.window is not a valid property.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.flowcontrol.window', 'alluxio.worker.tieredstore.level1.watermark.high.ratio', 'alluxio.master.embedded.journal.transport.max.inbound.message.size'], 'reason': ['alluxio.user.network.rpc.flowcontrol.window should be a positive integer', 'alluxio.worker.tieredstore.level1.watermark.high.ratio should be a double between 0 and 1', 'alluxio.master.embedded.journal.transport.max.inbound.message.size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.flowcontrol.window', 'alluxio.user.client.cache.store.type', 'alluxio.master.embedded.journal.transport.max.inbound.message.size'], 'reason': ['alluxio.user.network.rpc.flowcontrol.window must be a positive integer', 'alluxio.user.client.cache.store.type must be one of [LOCAL, ROCKSDB, LEVELDB, MEMORY]', 'alluxio.master.embedded.journal.transport.max.inbound.message.size must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.store.type'], 'reason': ['The value of alluxio.user.client.cache.store.type is not supported. The supported values are: LOCAL, ROCKSDB, LEVELDB, MEMORY, ROCKSDB_MEMORY_CACHE, ROCKSDB_MEMORY_CACHE_INV']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.reader.max.chunk.size.bytes'], 'reason': ['The value of alluxio.user.network.reader.max.chunk.size.bytes is 4MB, which is not a valid value. The value should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.store.type', 'alluxio.user.network.rpc.flowcontrol.window'], 'reason': ['The property alluxio.user.client.cache.store.type is not supported in version 2.5.0. Please check the Alluxio documentation for supported properties.', 'The property alluxio.user.network.rpc.flowcontrol.window is not supported in version 2.5.0. Please check the Alluxio documentation for supported properties.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.store.type', 'alluxio.user.network.rpc.flowcontrol.window'], 'reason': ['alluxio.user.client.cache.store.type is not a valid property', 'alluxio.user.network.rpc.flowcontrol.window is not a valid property']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.client.cache.store.type	alluxio.user.network.rpc.flowcontrol.window
+[Ciri] Reason for alluxio.user.client.cache.store.type: The property alluxio.user.client.cache.store.type is not supported in version 2.5.0. Please check the Alluxio documentation for supported properties.
+[Ciri] Reason for alluxio.user.network.rpc.flowcontrol.window: alluxio.user.network.rpc.flowcontrol.window is not a valid property

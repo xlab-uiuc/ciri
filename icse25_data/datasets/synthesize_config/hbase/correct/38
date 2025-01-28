@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.info.port</name>
+  <value>16030</value>
+    <description>The port for the HBase RegionServer web UI
+    Set to -1 if you do not want the RegionServer UI to run.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.dns.interface</name>
+  <value>eth1</value>
+    <description>The name of the Network Interface from which a region server
+      should report its IP address.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.kv.max</name>
+  <value>20</value>
+    <description>The maximum number of KeyValues to read and then write in a batch when flushing or
+      compacting. Set this lower if you have big KeyValues and problems with Out Of Memory
+      Exceptions Set this higher if you have wide, small rows. </description>
+</property>
+
+<property>
+  <name>hbase.storescanner.parallel.seek.threads</name>
+  <value>20</value>
+    <description>
+      The default thread pool size if parallel-seeking feature enabled.</description>
+</property>
+
+<property>
+  <name>hbase.master.keytab.file</name>
+  <value>/valid/file1</value>
+    <description>Full path to the kerberos keytab file to use for logging in
+    the configured HMaster server principal.</description>
+</property>
+
+<property>
+  <name>hbase.rest.threads.max</name>
+  <value>50</value>
+    <description>The maximum number of threads of the REST server thread pool.
+        Threads in the pool are reused to process REST requests. This
+        controls the maximum number of requests processed concurrently.
+        It may help to control the memory used by the REST server to
+        avoid OOM issues. If the thread pool is full, incoming requests
+        will be queued up and wait for some free threads.</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.enabled</name>
+  <value>true</value>
+    <description>Set to true to allow snapshots to be taken / restored / cloned.</description>
+</property>
+
+<property>
+  <name>hbase.mob.compactor.class</name>
+  <value>org.apache.hadoop.hbase.mob.compactions.PartitionedMobCompactor</value>
+    <description>
+      Implementation of mob compactor, the default one is PartitionedMobCompactor.
+    </description>
+</property>
+
+</configuration>

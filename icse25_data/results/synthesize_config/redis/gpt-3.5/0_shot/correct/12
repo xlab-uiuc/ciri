@@ -1,0 +1,32 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'replica-lazy-flush', 'tls-ca-cert-file', 'lazyfree-lazy-expire'], 'reason': ["Invalid configuration parameter 'lazyfree-lazy-user-del'", "Invalid configuration parameter 'replica-lazy-flush'", "Invalid configuration parameter 'tls-ca-cert-file'", "Invalid configuration parameter 'lazyfree-lazy-expire'"]}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'replica-lazy-flush', 'replica-read-only'], 'reason': ["'lazyfree-lazy-user-del' is not a valid parameter for Redis 7.0.0", "'replica-lazy-flush' is not a valid parameter for Redis 7.0.0", "'replica-read-only' is not a valid parameter for Redis 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'replica-lazy-flush', 'tls-ca-cert-file', 'lazyfree-lazy-expire', 'replica-read-only'], 'reason': ["Invalid parameter 'lazyfree-lazy-user-del'. It should be 'lazyfree-lazy-user-del yes' or 'lazyfree-lazy-user-del no'.", "Invalid parameter 'replica-lazy-flush'. It should be 'replica-lazy-flush yes' or 'replica-lazy-flush no'.", "Invalid parameter 'tls-ca-cert-file'. It should be 'tls-ca-cert-file /path/to/ca.crt'.", "Invalid parameter 'lazyfree-lazy-expire'. It should be 'lazyfree-lazy-expire yes' or 'lazyfree-lazy-expire no'.", "Invalid parameter 'replica-read-only'. It should be 'replica-read-only yes' or 'replica-read-only no'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'replica-lazy-flush', 'tls-ca-cert-file', 'lazyfree-lazy-expire', 'replica-read-only'], 'reason': ['lazyfree-lazy-user-del is not a valid parameter for Redis 7.0.0', 'replica-lazy-flush is not a valid parameter for Redis 7.0.0', 'tls-ca-cert-file is not a valid parameter for Redis 7.0.0', 'lazyfree-lazy-expire is not a valid parameter for Redis 7.0.0', 'replica-read-only is not a valid parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'replica-lazy-flush', 'list-compress-depth'], 'reason': ['lazyfree-lazy-user-del is not a valid parameter for Redis version 7.0.0', 'replica-lazy-flush is not a valid parameter for Redis version 7.0.0', 'list-compress-depth should be set to an integer value greater than 0']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'replica-lazy-flush', 'list-compress-depth', 'tls-ca-cert-file', 'lazyfree-lazy-expire', 'replica-read-only'], 'reason': ['lazyfree-lazy-user-del is not a valid parameter for Redis 7.0.0', 'replica-lazy-flush is not a valid parameter for Redis 7.0.0', 'list-compress-depth should be set to a value between 0 and 1 for Redis 7.0.0', 'tls-ca-cert-file is not a valid parameter for Redis 7.0.0', 'lazyfree-lazy-expire is not a valid parameter for Redis 7.0.0', 'replica-read-only is not a valid parameter for Redis 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'replica-lazy-flush', 'tls-ca-cert-file', 'lazyfree-lazy-expire', 'replica-read-only'], 'reason': ['lazyfree-lazy-user-del is not a valid parameter for Redis 7.0.0', 'replica-lazy-flush is not a valid parameter for Redis 7.0.0', 'tls-ca-cert-file should be tls-ca-cert-file-ca.crt', 'lazyfree-lazy-expire is not a valid parameter for Redis 7.0.0', 'replica-read-only is not a valid parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'replica-lazy-flush', 'tls-ca-cert-file'], 'reason': ["Invalid parameter 'lazyfree-lazy-user-del'. It should be 'lazyfree-lazy-user-del yes' or 'lazyfree-lazy-user-del no'.", "Invalid parameter 'replica-lazy-flush'. It should be 'replica-lazy-flush yes' or 'replica-lazy-flush no'.", "Invalid parameter 'tls-ca-cert-file'. It should be 'tls-ca-cert-file /path/to/ca.crt'."]}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'replica-lazy-flush', 'tls-ca-cert-file', 'lazyfree-lazy-expire', 'replica-read-only'], 'reason': ["The parameter 'lazyfree-lazy-user-del' is not a valid configuration for Redis version 7.0.0.", "The parameter 'replica-lazy-flush' is not a valid configuration for Redis version 7.0.0.", "The parameter 'tls-ca-cert-file' is not a valid configuration for Redis version 7.0.0.", "The parameter 'lazyfree-lazy-expire' is not a valid configuration for Redis version 7.0.0.", "The parameter 'replica-read-only' is not a valid configuration for Redis version 7.0.0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: lazyfree-lazy-user-del	replica-lazy-flush	tls-ca-cert-file	lazyfree-lazy-expire	replica-read-only
+[Ciri] Reason for lazyfree-lazy-user-del: The parameter 'lazyfree-lazy-user-del' is not a valid configuration for Redis version 7.0.0.
+[Ciri] Reason for replica-lazy-flush: The parameter 'replica-lazy-flush' is not a valid configuration for Redis version 7.0.0.
+[Ciri] Reason for tls-ca-cert-file: tls-ca-cert-file should be tls-ca-cert-file-ca.crt
+[Ciri] Reason for lazyfree-lazy-expire: The parameter 'lazyfree-lazy-expire' is not a valid configuration for Redis version 7.0.0.
+[Ciri] Reason for replica-read-only: replica-read-only is not a valid parameter for Redis 7.0.0

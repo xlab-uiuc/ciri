@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode', 'proxy-dial-timeout', 'heartbeat-interval', 'election-timeout'], 'reason': ["auto-compaction-mode should be either 'periodic' or 'revision'. 'NOEXIST_MODE' is not a valid value.", "proxy-dial-timeout is specified in milliseconds, but in etcd 3.5, the timeout related configuration should use duration format (e.g., '2s' for 2 seconds).", "heartbeat-interval is specified in milliseconds, but in etcd 3.5, the interval related configuration should use duration format (e.g., '200ms' for 200 milliseconds).", "election-timeout is specified in milliseconds, but in etcd 3.5, the timeout related configuration should use duration format (e.g., '1s' for 1 second)."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: auto-compaction-mode	proxy-dial-timeout	heartbeat-interval	election-timeout
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode should be either 'periodic' or 'revision'. 'NOEXIST_MODE' is not a valid value.
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout is specified in milliseconds, but in etcd 3.5, the timeout related configuration should use duration format (e.g., '2s' for 2 seconds).
+[Ciri] Reason for heartbeat-interval: heartbeat-interval is specified in milliseconds, but in etcd 3.5, the interval related configuration should use duration format (e.g., '200ms' for 200 milliseconds).
+[Ciri] Reason for election-timeout: election-timeout is specified in milliseconds, but in etcd 3.5, the timeout related configuration should use duration format (e.g., '1s' for 1 second).

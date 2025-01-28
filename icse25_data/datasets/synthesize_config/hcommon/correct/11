@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.rpc.protection</name>
+  <value>authentication</value>
+  <description>A comma-separated list of protection values for secured sasl
+      connections. Possible values are authentication, integrity and privacy.
+      authentication means authentication only and no integrity or privacy;
+      integrity implies authentication and integrity are enabled; and privacy
+      implies all of authentication, integrity and privacy are enabled.
+      hadoop.security.saslproperties.resolver.class can be used to override
+      the hadoop.rpc.protection for a connection at the server side.
+  </description>
+</property>
+
+<property>
+  <name>fs.ftp.timeout</name>
+  <value>-1</value>
+  <description>
+    FTP filesystem's timeout in seconds.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.path.style.access</name>
+  <value>true</value>
+  <description>Enable S3 path style access ie disabling the default virtual hosting behaviour.
+    Useful for S3A-compliant storage providers as it removes the need to set up DNS for virtual hosting.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.ddb.table.create</name>
+  <value>false</value>
+  <description>
+    If true, the S3A client will create the table if it does not already exist.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.enabled</name>
+  <value>false</value>
+  <description>Is S3 Select enabled?</description>
+</property>
+
+<property>
+  <name>fs.s3a.change.detection.mode</name>
+  <value>server</value>
+  <description>
+    Determines how change detection is applied to alert to inconsistent S3
+    objects read during or after an overwrite. Value 'server' indicates to apply
+    the attribute constraint directly on GetObject requests to S3. Value 'client'
+    means to do a client-side comparison of the attribute value returned in the
+    response.  Value 'server' would not work with third-party S3 implementations
+    that do not support these constraints on GetObject. Values 'server' and
+    'client' generate RemoteObjectChangedException when a mismatch is detected.
+    Value 'warn' works like 'client' but generates only a warning.  Value 'none'
+    will ignore change detection completely.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.caller.context.enabled</name>
+  <value>true</value>
+    <description>When the feature is enabled, additional fields are written into
+      name-node audit log records for auditing coarse granularity operations.
+    </description>
+</property>
+
+<property>
+  <name>hadoop.zk.acl</name>
+  <value>world:anyone:rwcda</value>
+    <description>ACL's to be used for ZooKeeper znodes.</description>
+</property>
+
+</configuration>

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['krb_caseins_users', 'log_temp_files'], 'reason': ['krb_caseins_users is not a valid PostgreSQL configuration parameter. The correct parameter name is krb_caseins_users.', 'log_temp_files value of -2 is not valid in PostgreSQL 13. The minimum allowed value is -1, which logs all temporary files. Use -1 or a non-negative integer.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: krb_caseins_users	log_temp_files
+[Ciri] Reason for krb_caseins_users: krb_caseins_users is not a valid PostgreSQL configuration parameter. The correct parameter name is krb_caseins_users.
+[Ciri] Reason for log_temp_files: log_temp_files value of -2 is not valid in PostgreSQL 13. The minimum allowed value is -1, which logs all temporary files. Use -1 or a non-negative integer.

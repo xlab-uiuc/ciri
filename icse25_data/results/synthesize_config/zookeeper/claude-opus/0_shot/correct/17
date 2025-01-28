@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl'], 'reason': ["In ZooKeeper 3.7.0, the property 'quorum.auth.enableSasl' has been removed. Use 'quorum.auth.serverRequireSasl' instead to enable or disable server-to-server SASL authentication.", "The value of 'quorum.auth.serverRequireSasl' is set to 'true', but 'quorum.auth.enableSasl' is set to 'false'. This is contradictory. If you want to enable server-to-server SASL authentication, remove the 'quorum.auth.enableSasl' property."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.serverRequireSasl
+[Ciri] Reason for quorum.auth.enableSasl: In ZooKeeper 3.7.0, the property 'quorum.auth.enableSasl' has been removed. Use 'quorum.auth.serverRequireSasl' instead to enable or disable server-to-server SASL authentication.
+[Ciri] Reason for quorum.auth.serverRequireSasl: The value of 'quorum.auth.serverRequireSasl' is set to 'true', but 'quorum.auth.enableSasl' is set to 'false'. This is contradictory. If you want to enable server-to-server SASL authentication, remove the 'quorum.auth.enableSasl' property.

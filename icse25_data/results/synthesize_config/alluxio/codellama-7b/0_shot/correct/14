@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.sequential.pread.threshold', 'alluxio.user.local.writer.chunk.size.bytes', 'alluxio.user.network.streaming.keepalive.time'], 'reason': ['alluxio.user.file.sequential.pread.threshold should be a positive integer', 'alluxio.user.local.writer.chunk.size.bytes should be a positive integer', 'alluxio.user.network.streaming.keepalive.time should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.sequential.pread.threshold', 'alluxio.user.local.writer.chunk.size.bytes', 'alluxio.user.block.read.retry.sleep.max', 'alluxio.user.network.streaming.keepalive.time'], 'reason': ['alluxio.user.file.sequential.pread.threshold must be a positive integer', 'alluxio.user.local.writer.chunk.size.bytes must be a positive integer', 'alluxio.user.block.read.retry.sleep.max must be a positive integer', 'alluxio.user.network.streaming.keepalive.time must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.sequential.pread.threshold', 'alluxio.user.local.writer.chunk.size.bytes', 'alluxio.user.block.read.retry.sleep.max', 'alluxio.user.network.streaming.keepalive.time'], 'reason': ['alluxio.user.file.sequential.pread.threshold should be a positive integer', 'alluxio.user.local.writer.chunk.size.bytes should be a positive integer', 'alluxio.user.block.read.retry.sleep.max should be a positive integer', 'alluxio.user.network.streaming.keepalive.time should be a positive integer']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.user.file.sequential.pread.threshold	alluxio.user.local.writer.chunk.size.bytes	alluxio.user.block.read.retry.sleep.max	alluxio.user.network.streaming.keepalive.time
+[Ciri] Reason for alluxio.user.file.sequential.pread.threshold: alluxio.user.file.sequential.pread.threshold must be a positive integer
+[Ciri] Reason for alluxio.user.local.writer.chunk.size.bytes: alluxio.user.local.writer.chunk.size.bytes must be a positive integer
+[Ciri] Reason for alluxio.user.block.read.retry.sleep.max: alluxio.user.block.read.retry.sleep.max must be a positive integer
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.time: alluxio.user.network.streaming.keepalive.time should be a positive integer

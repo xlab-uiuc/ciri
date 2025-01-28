@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.local.dir</name>
+  <value>${hbase.tmp.dir}/local/</value>
+    <description>Directory on the local filesystem to be used
+    as a local storage.</description>
+</property>
+
+<property>
+  <name>hbase.master.logcleaner.plugins</name>
+  <value>org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner</value>
+    <description>A comma-separated list of BaseLogCleanerDelegate invoked by
+    the LogsCleaner service. These WAL cleaners are called in order,
+    so put the cleaner that prunes the most files in front. To
+    implement your own BaseLogCleanerDelegate, just put it in HBase's classpath
+    and add the fully qualified class name here. Always add the above
+    default log cleaners in the list.</description>
+</property>
+
+<property>
+  <name>hbase.wal.dir.perms</name>
+  <value>1400</value>
+    <description>FS Permissions for the root WAL directory in a secure(kerberos) setup.
+      When master starts, it creates the WAL dir with this permissions or sets the permissions
+      if it does not match.</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.restore.failsafe.name</name>
+  <value>hbase-failsafe-{snapshot.name}-{restore.timestamp}</value>
+    <description>Name of the failsafe snapshot taken by the restore operation.
+      You can use the {snapshot.name}, {table.name} and {restore.timestamp} variables
+      to create a name based on what you are restoring.</description>
+</property>
+
+<property>
+  <name>hbase.master.loadbalancer.class</name>
+  <value>org.apache.hadoop.hbase.master.balancer.StochasticLoadBalancer</value>
+    <description>
+      Class used to execute the regions balancing when the period occurs.
+      See the class comment for more on how it works
+      http://hbase.apache.org/devapidocs/org/apache/hadoop/hbase/master/balancer/StochasticLoadBalancer.html
+      It replaces the DefaultLoadBalancer as the default (since renamed
+      as the SimpleLoadBalancer).
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.compaction.mergeable.threshold</name>
+  <value>1342177280</value>
+    <description>
+      If the size of a mob file is less than this value, it's regarded as a small
+      file and needs to be merged in mob compaction. The default value is 1280MB.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.compaction.chore.period</name>
+  <value>604800</value>
+    <description>
+      The period that MobCompactionChore runs. The unit is second.
+      The default value is one week.
+    </description>
+</property>
+
+<property>
+  <name>hbase.master.wait.on.service.seconds</name>
+  <value>30</value>
+    <description>Default is 5 minutes. Make it 30 seconds for tests. See
+    HBASE-19794 for some context.</description>
+</property>
+
+</configuration>

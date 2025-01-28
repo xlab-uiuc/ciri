@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'maxmemory-clients', 'list-max-listpack-size'], 'reason': ["The correct parameter is 'loadmodule' for loading modules, 'enable-module-command' does not exist.", "'maxmemory-clients' is not a valid configuration directive. Perhaps it's intended to be 'maxmemory' or 'maxclients'.", "'list-max-listpack-size' value must be at least 0. Negative values are not allowed."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable-module-command	maxmemory-clients	list-max-listpack-size
+[Ciri] Reason for enable-module-command: The correct parameter is 'loadmodule' for loading modules, 'enable-module-command' does not exist.
+[Ciri] Reason for maxmemory-clients: 'maxmemory-clients' is not a valid configuration directive. Perhaps it's intended to be 'maxmemory' or 'maxclients'.
+[Ciri] Reason for list-max-listpack-size: 'list-max-listpack-size' value must be at least 0. Negative values are not allowed.

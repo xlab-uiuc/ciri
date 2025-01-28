@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.default.chunk.view.size</name>
+  <value>4000000000</value>
+  <description>The number of bytes to view for a file on the browser.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edits.dir</name>
+  <value>/valid/dir1</value>
+  <description>Determines where on the local filesystem the DFS name node
+      should store the transaction (edits) file. If this is a comma-delimited list
+      of directories then the transaction file is replicated in all of the 
+      directories, for redundancy. Default value is same as dfs.namenode.name.dir
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.max.objects</name>
+  <value>-1</value>
+  <description>The maximum number of files, directories and blocks
+  dfs supports. A value of zero indicates no limit to the number
+  of objects that dfs supports.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.peer.stats.enabled</name>
+  <value>false</value>
+  <description>
+    A switch to turn on/off tracking DataNode peer statistics.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.test.drop.namenode.response.number</name>
+  <value>1</value>
+  <description>
+    The number of Namenode responses dropped by DFSClient for each RPC call.  Used
+    for testing the NN retry cache.
+  </description>
+</property>
+
+<property>
+  <name>dfs.batched.ls.limit</name>
+  <value>100</value>
+  <description>
+    Limit the number of paths that can be listed in a single batched
+    listing call. printed by ls. If less or equal to
+    zero, at most DFS_LIST_LIMIT_DEFAULT (= 1000) will be printed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.disk.balancer.plan.threshold.percent</name>
+  <value>10</value>
+    <description>
+      The percentage threshold value for volume Data Density in a plan.
+      If the absolute value of volume Data Density which is out of
+      threshold value in a node, it means that the volumes corresponding to
+      the disks should do the balancing in the plan. The default value is 10.
+    </description>
+</property>
+
+<property>
+  <name>dfs.use.dfs.network.topology</name>
+  <value>true</value>
+    <description>
+      Enables DFSNetworkTopology to choose nodes for placing replicas.
+      When enabled, NetworkTopology will be instantiated as class defined in
+      property dfs.net.topology.impl, otherwise NetworkTopology will be
+      instantiated as class defined in property net.topology.impl.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-config-file', 'oom-score-adj', 'timeout', 'aof-timestamp-enabled', 'rdbchecksum', 'jemalloc-bg-thread', 'repl-diskless-sync', 'dynamic-hz'], 'reason': ['cluster-enabled is not a valid parameter', 'cluster-config-file is not a valid parameter', 'oom-score-adj is not a valid parameter', 'timeout is not a valid parameter', 'aof-timestamp-enabled is not a valid parameter', 'rdbchecksum is not a valid parameter', 'jemalloc-bg-thread is not a valid parameter', 'repl-diskless-sync is not a valid parameter', 'dynamic-hz is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-config-file', 'oom-score-adj', 'timeout', 'aof-timestamp-enabled', 'jemalloc-bg-thread', 'repl-diskless-sync', 'dynamic-hz'], 'reason': ['cluster-enabled is not a valid configuration parameter', 'cluster-config-file is not a valid configuration parameter', 'oom-score-adj is not a valid configuration parameter', 'timeout is not a valid configuration parameter', 'aof-timestamp-enabled is not a valid configuration parameter', 'jemalloc-bg-thread is not a valid configuration parameter', 'repl-diskless-sync is not a valid configuration parameter', 'dynamic-hz is not a valid configuration parameter']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-config-file', 'oom-score-adj', 'timeout', 'aof-timestamp-enabled', 'jemalloc-bg-thread', 'repl-diskless-sync', 'dynamic-hz'], 'reason': ['cluster-enabled must be yes or no', 'cluster-config-file must be a valid file path', 'oom-score-adj must be yes or no', 'timeout must be a positive integer', 'aof-timestamp-enabled must be yes or no', 'jemalloc-bg-thread must be yes or no', 'repl-diskless-sync must be yes or no', 'dynamic-hz must be yes or no']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: cluster-enabled	cluster-config-file	oom-score-adj	timeout	aof-timestamp-enabled	jemalloc-bg-thread	repl-diskless-sync	dynamic-hz
+[Ciri] Reason for cluster-enabled: cluster-enabled is not a valid configuration parameter
+[Ciri] Reason for cluster-config-file: cluster-config-file must be a valid file path
+[Ciri] Reason for oom-score-adj: oom-score-adj is not a valid configuration parameter
+[Ciri] Reason for timeout: timeout is not a valid configuration parameter
+[Ciri] Reason for aof-timestamp-enabled: aof-timestamp-enabled must be yes or no
+[Ciri] Reason for jemalloc-bg-thread: jemalloc-bg-thread must be yes or no
+[Ciri] Reason for repl-diskless-sync: repl-diskless-sync must be yes or no
+[Ciri] Reason for dynamic-hz: dynamic-hz is not a valid configuration parameter

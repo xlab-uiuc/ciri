@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.uid.cache.secs', 'fs.s3a.multipart.purge', 'fs.s3a.s3guard.ddb.table.capacity.read'], 'reason': ['The value for hadoop.security.uid.cache.secs should be a positive integer representing the number of seconds for cache validity.', 'The value for fs.s3a.multipart.purge should be a boolean (true or false) instead of a string.', 'The value for fs.s3a.s3guard.ddb.table.capacity.read should be a positive integer representing the provisioned throughput requirements for read operations.']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.uid.cache.secs', 'fs.s3a.multipart.purge', 'fs.s3a.s3guard.ddb.table.capacity.read', 'hadoop.prometheus.endpoint.enabled'], 'reason': ['The value for hadoop.security.uid.cache.secs should be a positive integer representing the number of seconds.', 'The value for fs.s3a.multipart.purge should be a boolean (true or false).', 'The value for fs.s3a.s3guard.ddb.table.capacity.read should be a positive integer representing the provisioned throughput requirements.', 'The value for hadoop.prometheus.endpoint.enabled should be a boolean (true or false).']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.uid.cache.secs', 'fs.s3a.multipart.purge', 'fs.s3a.s3guard.ddb.table.capacity.read', 'hadoop.prometheus.endpoint.enabled'], 'reason': ['The value for hadoop.security.uid.cache.secs should be a positive integer representing the cache validity period.', 'The value for fs.s3a.multipart.purge should be a boolean (true/false) instead of a string.', 'The value for fs.s3a.s3guard.ddb.table.capacity.read should be a positive integer representing the provisioned throughput for read operations.', 'The value for hadoop.prometheus.endpoint.enabled should be a boolean (true/false) instead of a string.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.uid.cache.secs	fs.s3a.multipart.purge	fs.s3a.s3guard.ddb.table.capacity.read	hadoop.prometheus.endpoint.enabled
+[Ciri] Reason for hadoop.security.uid.cache.secs: The value for hadoop.security.uid.cache.secs should be a positive integer representing the number of seconds.
+[Ciri] Reason for fs.s3a.multipart.purge: The value for fs.s3a.multipart.purge should be a boolean (true/false) instead of a string.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.read: The value for fs.s3a.s3guard.ddb.table.capacity.read should be a positive integer representing the provisioned throughput for read operations.
+[Ciri] Reason for hadoop.prometheus.endpoint.enabled: The value for hadoop.prometheus.endpoint.enabled should be a boolean (true or false).

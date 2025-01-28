@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tickTime', 'initLimit', 'syncLimit'], 'reason': ['tickTime should be in milliseconds', 'initLimit should be in milliseconds', 'syncLimit should be in milliseconds']}
+
+{'hasError': True, 'errParameter': ['tickTime', 'initLimit', 'syncLimit', 'dataLogDir', 'quorum.auth.server.saslLoginContext', 'clientPort', 'secureClientPortAddress', 'secureClientPort', 'quorumListenOnAllIPs'], 'reason': ['tickTime is not an integer', 'initLimit is not an integer', 'syncLimit is not an integer', 'dataLogDir is not a valid directory', 'quorum.auth.server.saslLoginContext is not a valid value', 'clientPort is not an integer', 'secureClientPortAddress is not a valid IP address', 'secureClientPort is not an integer', 'quorumListenOnAllIPs is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['tickTime', 'initLimit', 'syncLimit'], 'reason': ['tickTime should be a positive integer', 'initLimit should be a positive integer', 'syncLimit should be a positive integer']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tickTime	initLimit	syncLimit
+[Ciri] Reason for tickTime: tickTime should be in milliseconds
+[Ciri] Reason for initLimit: initLimit should be a positive integer
+[Ciri] Reason for syncLimit: syncLimit should be in milliseconds

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.work-preserving-recovery.enabled', 'yarn.resourcemanager.proxy-user-privileges.enabled', 'yarn.resourcemanager.nodemanager.minimum.version', 'yarn.nodemanager.resource.pcores-vcores-multiplier', 'yarn.client.nodemanager-connect.max-wait-ms', 'yarn.timeline-service.leveldb-state-store.path', 'yarn.timeline-service.entity-group-fs-store.scan-interval-seconds'], 'reason': ['yarn.resourcemanager.work-preserving-recovery.enabled should be set to false', 'yarn.resourcemanager.proxy-user-privileges.enabled should be set to true', 'yarn.resourcemanager.nodemanager.minimum.version should be set to 3.3.0', 'yarn.nodemanager.resource.pcores-vcores-multiplier should be set to 1.0', 'yarn.client.nodemanager-connect.max-wait-ms should be set to 10000', 'yarn.timeline-service.leveldb-state-store.path should be set to /hadoop/yarn/timeline/leveldb', 'yarn.timeline-service.entity-group-fs-store.scan-interval-seconds should be set to 120']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: yarn.resourcemanager.work-preserving-recovery.enabled	yarn.resourcemanager.proxy-user-privileges.enabled	yarn.resourcemanager.nodemanager.minimum.version	yarn.nodemanager.resource.pcores-vcores-multiplier	yarn.client.nodemanager-connect.max-wait-ms	yarn.timeline-service.leveldb-state-store.path	yarn.timeline-service.entity-group-fs-store.scan-interval-seconds
+[Ciri] Reason for yarn.resourcemanager.work-preserving-recovery.enabled: yarn.resourcemanager.work-preserving-recovery.enabled should be set to false
+[Ciri] Reason for yarn.resourcemanager.proxy-user-privileges.enabled: yarn.resourcemanager.proxy-user-privileges.enabled should be set to true
+[Ciri] Reason for yarn.resourcemanager.nodemanager.minimum.version: yarn.resourcemanager.nodemanager.minimum.version should be set to 3.3.0
+[Ciri] Reason for yarn.nodemanager.resource.pcores-vcores-multiplier: yarn.nodemanager.resource.pcores-vcores-multiplier should be set to 1.0
+[Ciri] Reason for yarn.client.nodemanager-connect.max-wait-ms: yarn.client.nodemanager-connect.max-wait-ms should be set to 10000
+[Ciri] Reason for yarn.timeline-service.leveldb-state-store.path: yarn.timeline-service.leveldb-state-store.path should be set to /hadoop/yarn/timeline/leveldb
+[Ciri] Reason for yarn.timeline-service.entity-group-fs-store.scan-interval-seconds: yarn.timeline-service.entity-group-fs-store.scan-interval-seconds should be set to 120

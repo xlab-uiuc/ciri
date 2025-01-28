@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.impl', 'hadoop.registry.zk.root'], 'reason': ["The property 'ipc.[port_number].scheduler.impl' is not a valid Hadoop configuration property in version 3.3.0. It should be 'ipc.server.rpc-scheduler.class'.", "The property 'hadoop.registry.zk.root' is not a valid Hadoop configuration property in version 3.3.0. It should be 'hadoop.registry.zk.quorum'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].scheduler.impl	hadoop.registry.zk.root
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The property 'ipc.[port_number].scheduler.impl' is not a valid Hadoop configuration property in version 3.3.0. It should be 'ipc.server.rpc-scheduler.class'.
+[Ciri] Reason for hadoop.registry.zk.root: The property 'hadoop.registry.zk.root' is not a valid Hadoop configuration property in version 3.3.0. It should be 'hadoop.registry.zk.quorum'.

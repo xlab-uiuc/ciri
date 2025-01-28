@@ -1,0 +1,14 @@
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.swebhdfs.impl', 'fs.ftp.host', 'ftp.stream-buffer-size', 'hadoop.http.cross-origin.allowed-origins'], 'reason': ["Property 'fs.AbstractFileSystem.swebhdfs.impl' is not a recognized property for HCommon version 3.3.0.", "Property 'fs.ftp.host' has an invalid value format.", "Property 'ftp.stream-buffer-size' has a description that is too long and not properly formatted.", "Property 'hadoop.http.cross-origin.allowed-origins' has a description that is too long and not properly formatted."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.AbstractFileSystem.swebhdfs.impl	fs.ftp.host	ftp.stream-buffer-size	hadoop.http.cross-origin.allowed-origins
+[Ciri] Reason for fs.AbstractFileSystem.swebhdfs.impl: Property 'fs.AbstractFileSystem.swebhdfs.impl' is not a recognized property for HCommon version 3.3.0.
+[Ciri] Reason for fs.ftp.host: Property 'fs.ftp.host' has an invalid value format.
+[Ciri] Reason for ftp.stream-buffer-size: Property 'ftp.stream-buffer-size' has a description that is too long and not properly formatted.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-origins: Property 'hadoop.http.cross-origin.allowed-origins' has a description that is too long and not properly formatted.

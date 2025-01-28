@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.info.port</name>
+  <value>1.1</value>
+    <description>The port for the HBase Master web UI.
+    Set to -1 if you do not want a UI instance run.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.callqueue.scan.ratio</name>
+  <value>1</value>
+    <description>Given the number of read call queues, calculated from the total number
+      of call queues multiplied by the callqueue.read.ratio, the scan.ratio property
+      will split the read call queues into small-read and long-read queues.
+      A value lower than 0.5 means that there will be less long-read queues than short-read queues.
+      A value of 0.5 means that there will be the same number of short-read and long-read queues.
+      A value greater than 0.5 means that there will be more long-read queues than short-read queues
+      A value of 0 or 1 indicate to use the same set of queues for gets and scans.
+
+      Example: Given the total number of read call queues being 8
+      a scan.ratio of 0 or 1 means that: 8 queues will contain both long and short read requests.
+      a scan.ratio of 0.3 means that: 2 queues will contain only long-read requests
+      and 6 queues will contain only short-read requests.
+      a scan.ratio of 0.5 means that: 4 queues will contain only long-read requests
+      and 4 queues will contain only short-read requests.
+      a scan.ratio of 0.8 means that: 6 queues will contain only long-read requests
+      and 2 queues will contain only short-read requests.
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.global.memstore.size.lower.limit</name>
+  <value>0.5</value>
+    <description>Maximum size of all memstores in a region server before flushes
+      are forced. Defaults to 95% of hbase.regionserver.global.memstore.size
+      (0.95). A 100% value for this value causes the minimum possible flushing
+      to occur when updates are blocked due to memstore limiting. The default
+      value in this configuration has been intentionally left empty in order to
+      honor the old hbase.regionserver.global.memstore.lowerLimit property if
+      present.
+    </description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.syncLimit</name>
+  <value>10</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The number of ticks that can pass between sending a request and getting an
+    acknowledgment.</description>
+</property>
+
+<property>
+  <name>hbase.server.keyvalue.maxsize</name>
+  <value>5242880</value>
+    <description>Maximum allowed size of an individual cell, inclusive of value and all key
+    components. A value of 0 or less disables the check.
+    The default value is 10MB.
+    This is a safety setting to protect the server from OOM situations.
+    </description>
+</property>
+
+<property>
+  <name>hfile.format.version</name>
+  <value>6</value>
+      <description>The HFile format version to use for new files.
+      Version 3 adds support for tags in hfiles (See http://hbase.apache.org/book.html#hbase.tags).
+      Also see the configuration 'hbase.replication.rpc.codec'.
+      </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.hostname.disable.master.reversedns</name>
+  <value>true</value>
+    <description>This config is for experts: don't set its value unless you really know what you are doing.
+    When set to true, regionserver will use the current node hostname for the servername and HMaster will
+    skip reverse DNS lookup and use the hostname sent by regionserver instead. Note that this config and
+    hbase.regionserver.hostname are mutually exclusive. See https://issues.apache.org/jira/browse/HBASE-18226
+    for more details.</description>
+</property>
+
+<property>
+  <name>hbase.replication.source.maxthreads</name>
+  <value>20</value>
+    <description>
+        The maximum number of threads any replication source will use for
+        shipping edits to the sinks in parallel. This also limits the number of
+        chunks each replication batch is broken into. Larger values can improve
+        the replication throughput between the master and slave clusters. The
+        default of 10 will rarely need to be changed.
+    </description>
+</property>
+
+</configuration>

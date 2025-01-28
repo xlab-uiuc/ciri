@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.zookeeper.job.leader.path', 'alluxio.worker.tieredstore.level0.alias', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ["Invalid value for property 'alluxio.zookeeper.job.leader.path'. It should be a valid directory path.", "Invalid value for property 'alluxio.worker.tieredstore.level0.alias'. It should be one of the predefined tier aliases like 'MEM', 'SSD', 'HDD', etc.", "Invalid value for property 'alluxio.jvm.monitor.warn.threshold'. It should be in milliseconds format, e.g., '20000' for 20 seconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.zookeeper.job.leader.path', 'alluxio.worker.tieredstore.level0.alias', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ["Invalid value '/valid/file2' for property 'alluxio.zookeeper.job.leader.path'.", "Invalid value 'MEM' for property 'alluxio.worker.tieredstore.level0.alias'.", "Invalid value '20sec' for property 'alluxio.jvm.monitor.warn.threshold'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.zookeeper.job.leader.path', 'alluxio.worker.tieredstore.level0.alias', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ["The value '/valid/file2' for property 'alluxio.zookeeper.job.leader.path' is not a valid Zookeeper path.", "The value 'MEM' for property 'alluxio.worker.tieredstore.level0.alias' is not a valid storage tier alias.", "The value '20sec' for property 'alluxio.jvm.monitor.warn.threshold' should be in milliseconds format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.zookeeper.job.leader.path	alluxio.worker.tieredstore.level0.alias	alluxio.jvm.monitor.warn.threshold
+[Ciri] Reason for alluxio.zookeeper.job.leader.path: Invalid value '/valid/file2' for property 'alluxio.zookeeper.job.leader.path'.
+[Ciri] Reason for alluxio.worker.tieredstore.level0.alias: The value 'MEM' for property 'alluxio.worker.tieredstore.level0.alias' is not a valid storage tier alias.
+[Ciri] Reason for alluxio.jvm.monitor.warn.threshold: The value '20sec' for property 'alluxio.jvm.monitor.warn.threshold' should be in milliseconds format.

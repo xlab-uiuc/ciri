@@ -1,0 +1,16 @@
+Wrong shot number:
+[14, 2, 3]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.min', 'dfs.datanode.fileio.profiling.sampling.percentage', 'dfs.balancer.block-move.timeout'], 'reason': ["The value of the property 'dfs.namenode.replication.min' should not be less than 1.", "The value of the property 'dfs.datanode.fileio.profiling.sampling.percentage' should be between 0 and 100, inclusive.", "The value of the property 'dfs.balancer.block-move.timeout' should not be 0 if the feature is intended to be enabled. A positive value in milliseconds should be provided."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.replication.min	dfs.datanode.fileio.profiling.sampling.percentage	dfs.balancer.block-move.timeout
+[Ciri] Reason for dfs.namenode.replication.min: The value of the property 'dfs.namenode.replication.min' should not be less than 1.
+[Ciri] Reason for dfs.datanode.fileio.profiling.sampling.percentage: The value of the property 'dfs.datanode.fileio.profiling.sampling.percentage' should be between 0 and 100, inclusive.
+[Ciri] Reason for dfs.balancer.block-move.timeout: The value of the property 'dfs.balancer.block-move.timeout' should not be 0 if the feature is intended to be enabled. A positive value in milliseconds should be provided.

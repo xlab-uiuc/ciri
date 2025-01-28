@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['archive_mode'], 'reason': ['archive_mode is not a valid parameter for PostgreSQL version 13.0']}
+
+{'hasError': True, 'errParameter': ['archive_mode', 'event_source', 'log_recovery_conflict_waits', 'from_collapse_limit', 'vacuum_freeze_min_age', 'superuser_reserved_connections', 'debug_pretty_print'], 'reason': ['archive_mode must be either on or off', 'event_source must be a string', 'log_recovery_conflict_waits must be either on or off', 'from_collapse_limit must be a positive integer', 'vacuum_freeze_min_age must be a positive integer', 'superuser_reserved_connections must be a positive integer', 'debug_pretty_print must be either on or off']}
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be greater than 100']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['archive_mode'], 'reason': ['archive_mode is not a valid parameter for PostgreSQL version 13.0']}
+
+{'hasError': True, 'errParameter': ['log_connections'], 'reason': ['log_connections must be either on or off']}
+
+{'hasError': True, 'errParameter': ['log_connections'], 'reason': ['log_connections must be on or off']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: log_connections
+[Ciri] Reason for log_connections: log_connections must be on or off

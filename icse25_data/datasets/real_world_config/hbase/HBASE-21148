@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.optionalcacheflushinterval</name>
+  <value>1800000</value>
+    <description>
+    Maximum amount of time an edit lives in memory before being automatically flushed.
+    Default 1 hour. Set it to 0 to disable automatic flushing.
+  </description>
+</property>
+
+<property>
+  <name>hbase.bulkload.retries.number</name>
+  <value>10</value>
+    <description>Maximum retries.  This is maximum number of iterations
+    to atomic bulk loads are attempted in the face of splitting operations
+    0 means never give up.</description>
+</property>
+
+<property>
+  <name>hbase.server.thread.wakefrequency</name>
+  <value>20000</value>
+    <description>Time to sleep in between searches for work (in milliseconds).
+    Used as sleep interval by service threads such as log roller.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.max.filesize</name>
+  <value>10737418240</value>
+    <description>
+    Maximum HFile size. If the sum of the sizes of a region's HFiles has grown to exceed this
+    value, the region is split in two.</description>
+</property>
+
+  <property>
+    <name>hbase.coprocessor.regionserver.classes</name>
+    <value>org.apache.hadoop.hbase.security.access.ViisibilityController</value>
+  </property>
+
+<property>
+  <name>hbase.table.max.rowsize</name>
+  <value>1073741824</value>
+    <description>
+      Maximum size of single row in bytes (default is 1 Gb) for Get'ting
+      or Scan'ning without in-row scan flag set. If row size exceeds this limit
+      RowTooBigException is thrown to client.
+    </description>
+</property>
+
+<property>
+  <name>hbase.security.exec.permission.checks</name>
+  <value>false</value>
+    <description>
+      If this setting is enabled and ACL based access control is active (the
+      AccessController coprocessor is installed either as a system coprocessor
+      or on a table as a table coprocessor) then you must grant all relevant
+      users EXEC privilege if they require the ability to execute coprocessor
+      endpoint calls. EXEC privilege, like any other permission, can be
+      granted globally to a user, or to a user on a per table or per namespace
+      basis. For more information on coprocessor endpoints, see the coprocessor
+      section of the HBase online manual. For more information on granting or
+      revoking permissions using the AccessController, see the security
+      section of the HBase online manual.
+    </description>
+</property>
+
+<property>
+  <name>hbase.snapshot.master.timeout.millis</name>
+  <value>600000</value>
+    <description>
+       Timeout for master for the snapshot procedure execution.
+    </description>
+</property>
+
+</configuration>

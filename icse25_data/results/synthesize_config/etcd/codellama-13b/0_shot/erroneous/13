@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-tls', 'initial-advertise-peer-urls', 'proxy-refresh-interval', 'proxy-write-timeout'], 'reason': ['heartbeat-interval should be a positive integer, but it is -100', 'auto-tls should be a boolean, but it is a string', 'initial-advertise-peer-urls should be a string, but it is an array', 'proxy-refresh-interval should be a positive integer, but it is 30000', 'proxy-write-timeout should be a positive integer, but it is 10000']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-tls', 'initial-advertise-peer-urls', 'proxy-refresh-interval', 'proxy-write-timeout'], 'reason': ['heartbeat-interval must be greater than 0', 'auto-tls must be set to true', 'initial-advertise-peer-urls must be set to a valid URL', 'proxy-refresh-interval must be greater than 0', 'proxy-write-timeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-tls', 'initial-advertise-peer-urls', 'proxy-refresh-interval', 'proxy-write-timeout'], 'reason': ['heartbeat-interval is not a valid parameter', 'auto-tls is not a valid parameter', 'initial-advertise-peer-urls is not a valid parameter', 'proxy-refresh-interval is not a valid parameter', 'proxy-write-timeout is not a valid parameter']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: heartbeat-interval	auto-tls	initial-advertise-peer-urls	proxy-refresh-interval	proxy-write-timeout
+[Ciri] Reason for heartbeat-interval: heartbeat-interval must be greater than 0
+[Ciri] Reason for auto-tls: auto-tls is not a valid parameter
+[Ciri] Reason for initial-advertise-peer-urls: initial-advertise-peer-urls should be a string, but it is an array
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval should be a positive integer, but it is 30000
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout must be greater than 0

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.output.csv.quote.fields', 'fs.s3.sleepTimeSeconds', 'ipc.client.connection.maxidletime', 'ha.failover-controller.graceful-fence.connection.retries', 'hadoop.tags.system'], 'reason': ["The property 'fs.s3a.select.output.csv.quote.fields' should have a valid value of either 'always' or 'asneeded'.", "The property 'fs.s3.sleepTimeSeconds' should have a valid integer value for the number of seconds to sleep.", "The property 'ipc.client.connection.maxidletime' should have a valid integer value for the maximum time in milliseconds.", "The property 'ha.failover-controller.graceful-fence.connection.retries' should have a valid integer value for the number of FC connection retries.", "The property 'hadoop.tags.system' should not have the 'usage' tag inside the configuration."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: fs.s3a.select.output.csv.quote.fields	fs.s3.sleepTimeSeconds	ipc.client.connection.maxidletime	ha.failover-controller.graceful-fence.connection.retries	hadoop.tags.system
+[Ciri] Reason for fs.s3a.select.output.csv.quote.fields: The property 'fs.s3a.select.output.csv.quote.fields' should have a valid value of either 'always' or 'asneeded'.
+[Ciri] Reason for fs.s3.sleepTimeSeconds: The property 'fs.s3.sleepTimeSeconds' should have a valid integer value for the number of seconds to sleep.
+[Ciri] Reason for ipc.client.connection.maxidletime: The property 'ipc.client.connection.maxidletime' should have a valid integer value for the maximum time in milliseconds.
+[Ciri] Reason for ha.failover-controller.graceful-fence.connection.retries: The property 'ha.failover-controller.graceful-fence.connection.retries' should have a valid integer value for the number of FC connection retries.
+[Ciri] Reason for hadoop.tags.system: The property 'hadoop.tags.system' should not have the 'usage' tag inside the configuration.

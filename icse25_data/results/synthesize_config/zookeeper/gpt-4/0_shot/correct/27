@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'quorum.auth.enableSasl', 'quorum.auth.learnerRequireSasl'], 'reason': ["The 'clientPortAddress' parameter is not a valid configuration for ZooKeeper. Instead, 'clientPortAddress' should be split into 'clientPort' (which is correctly included) and an optional 'clientAddress' for binding to a specific address.", "The 'quorum.auth.enableSasl' and 'quorum.auth.learnerRequireSasl' parameters are not standard ZooKeeper configuration options. Authentication in ZooKeeper, including SASL, is typically configured with different properties.", "If SASL authentication is intended for quorum or client communication, the configuration should use properties like 'authProvider.x', 'kerberos.removeHostFromPrincipal', 'kerberos.removeRealmFromPrincipal', and specific JAAS configuration files for SASL."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: clientPortAddress	quorum.auth.enableSasl	quorum.auth.learnerRequireSasl
+[Ciri] Reason for clientPortAddress: The 'clientPortAddress' parameter is not a valid configuration for ZooKeeper. Instead, 'clientPortAddress' should be split into 'clientPort' (which is correctly included) and an optional 'clientAddress' for binding to a specific address.
+[Ciri] Reason for quorum.auth.enableSasl: The 'quorum.auth.enableSasl' and 'quorum.auth.learnerRequireSasl' parameters are not standard ZooKeeper configuration options. Authentication in ZooKeeper, including SASL, is typically configured with different properties.
+[Ciri] Reason for quorum.auth.learnerRequireSasl: If SASL authentication is intended for quorum or client communication, the configuration should use properties like 'authProvider.x', 'kerberos.removeHostFromPrincipal', 'kerberos.removeRealmFromPrincipal', and specific JAAS configuration files for SASL.

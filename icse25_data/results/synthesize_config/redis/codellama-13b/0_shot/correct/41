@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['pidfile', 'appenddirname', 'tcp-keepalive', 'cluster-announce-tls-port'], 'reason': ['pidfile should be a valid file path', 'appenddirname should be a valid directory path', 'tcp-keepalive should be a positive integer', 'cluster-announce-tls-port should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['pidfile', 'appenddirname', 'tcp-keepalive', 'cluster-announce-tls-port'], 'reason': ['pidfile: The path specified in the pidfile parameter is not valid.', 'appenddirname: The path specified in the appenddirname parameter is not valid.', 'tcp-keepalive: The value specified in the tcp-keepalive parameter is not valid.', 'cluster-announce-tls-port: The value specified in the cluster-announce-tls-port parameter is not valid.']}
+
+{'hasError': True, 'errParameter': ['pidfile', 'appenddirname', 'tcp-keepalive', 'cluster-announce-tls-port'], 'reason': ['pidfile must be a valid file path', 'appenddirname must be a valid directory path', 'tcp-keepalive must be a positive integer', 'cluster-announce-tls-port must be a valid port number']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: pidfile	appenddirname	tcp-keepalive	cluster-announce-tls-port
+[Ciri] Reason for pidfile: pidfile must be a valid file path
+[Ciri] Reason for appenddirname: appenddirname should be a valid directory path
+[Ciri] Reason for tcp-keepalive: tcp-keepalive should be a positive integer
+[Ciri] Reason for cluster-announce-tls-port: cluster-announce-tls-port should be a positive integer

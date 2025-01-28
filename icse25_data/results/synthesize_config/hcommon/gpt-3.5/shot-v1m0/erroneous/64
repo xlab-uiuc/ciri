@@ -1,0 +1,12 @@
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.registry.zk.retry.interval.ms', 'hadoop.zk.acl'], 'reason': ['Missing description for property hadoop.registry.zk.retry.interval.ms', "The value 'world:anyone:rwcda' for property hadoop.zk.acl is not a valid ACL format. It should follow the pattern scheme:id:perm"]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.registry.zk.retry.interval.ms	hadoop.zk.acl
+[Ciri] Reason for hadoop.registry.zk.retry.interval.ms: Missing description for property hadoop.registry.zk.retry.interval.ms
+[Ciri] Reason for hadoop.zk.acl: The value 'world:anyone:rwcda' for property hadoop.zk.acl is not a valid ACL format. It should follow the pattern scheme:id:perm

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>io.file.buffer.size</name>
+  <value>4096</value>
+  <description>The size of buffer for use in sequence files.
+  The size of this buffer should probably be a multiple of hardware
+  page size (4096 on Intel x86), and it determines how much data is
+  buffered during read and write operations.</description>
+</property>
+
+<property>
+  <name>fs.s3a.delegation.tokens.enabled</name>
+  <value>true</value>
+  <description></description>
+</property>
+
+<property>
+  <name>fs.s3a.proxy.port</name>
+  <value>ciri</value>
+  <description>Proxy server port. If this property is not set
+    but fs.s3a.proxy.host is, port 80 or 443 is assumed (consistent with
+    the value of fs.s3a.connection.ssl.enabled).</description>
+</property>
+
+<property>
+  <name>fs.azure.saskey.usecontainersaskeyforallaccess</name>
+  <value>true</value>
+  <description>
+    Use container saskey for access to all blobs within the container.
+    Blob-specific saskeys are not used when this setting is enabled.
+    This setting provides better performance compared to blob-specific saskeys.
+  </description>
+</property>
+
+<property>
+  <name>ipc.maximum.data.length</name>
+  <value>67108864</value>
+  <description>This indicates the maximum IPC message length (bytes) that can be
+    accepted by the server. Messages larger than this value are rejected by the
+    immediately to avoid possible OOMs. This setting should rarely need to be
+    changed.
+  </description>
+</property>
+
+<property>
+  <name>ipc.server.reuseaddr</name>
+  <value>false</value>
+  <description>Enables the SO_REUSEADDR TCP option on the server.
+    Useful if BindException often prevents a certain service to be restarted
+    because the server side is stuck in TIME_WAIT state.
+  </description>
+</property>
+
+<property>
+  <name>ftp.replication</name>
+  <value>1</value>
+  <description>Replication factor</description>
+</property>
+
+<property>
+  <name>hadoop.caller.context.max.size</name>
+  <value>128</value>
+    <description>The maximum bytes a caller context string can have. If the
+      passed caller context is longer than this maximum bytes, client will
+      truncate it before sending to server. Note that the server may have a
+      different maximum size, and will truncate the caller context to the
+      maximum size it allows.
+    </description>
+</property>
+
+</configuration>

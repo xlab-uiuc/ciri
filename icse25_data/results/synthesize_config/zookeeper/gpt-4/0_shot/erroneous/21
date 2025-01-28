@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['localSessionsUpgradingEnabled', 'portUnification', 'secureClientPortAddress', 'maxSessionTimeout'], 'reason': ["The 'localSessionsUpgradingEnabled' parameter is not recognized. It might be specific to a different version or incorrectly named.", "The 'portUnification' parameter is not recognized. It might be specific to a different version or incorrectly named.", "The format of 'secureClientPortAddress' should be just the port number without IP address, e.g., '3000'.", "The 'maxSessionTimeout' should not be negative. It defines the maximum time in milliseconds that a client can request for a session timeout."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: localSessionsUpgradingEnabled	portUnification	secureClientPortAddress	maxSessionTimeout
+[Ciri] Reason for localSessionsUpgradingEnabled: The 'localSessionsUpgradingEnabled' parameter is not recognized. It might be specific to a different version or incorrectly named.
+[Ciri] Reason for portUnification: The 'portUnification' parameter is not recognized. It might be specific to a different version or incorrectly named.
+[Ciri] Reason for secureClientPortAddress: The format of 'secureClientPortAddress' should be just the port number without IP address, e.g., '3000'.
+[Ciri] Reason for maxSessionTimeout: The 'maxSessionTimeout' should not be negative. It defines the maximum time in milliseconds that a client can request for a session timeout.

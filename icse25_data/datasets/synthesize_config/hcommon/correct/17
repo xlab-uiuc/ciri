@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.groups.cache.warn.after.ms</name>
+  <value>5000</value>
+  <description>
+    If looking up a single user to group takes longer than this amount of
+    milliseconds, we will log a warning message.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.groups.shell.command.timeout</name>
+  <value>1s</value>
+  <description>
+    Used by the ShellBasedUnixGroupsMapping class, this property controls how
+    long to wait for the underlying shell command that is run to fetch groups.
+    Expressed in seconds (e.g. 10s, 1m, etc.), if the running command takes
+    longer than the value configured, the command is aborted and the groups
+    resolver would return a result of no groups found. A value of 0s (default)
+    would mean an infinite wait (i.e. wait until the command exits on its own).
+  </description>
+</property>
+
+<property>
+  <name>fs.trash.checkpoint.interval</name>
+  <value>1</value>
+  <description>Number of minutes between trash checkpoints.
+  Should be smaller or equal to fs.trash.interval. If zero,
+  the value is set to the value of fs.trash.interval.
+  Every time the checkpointer runs it creates a new checkpoint
+  out of current and removes checkpoints created more than
+  fs.trash.interval minutes ago.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.committer.magic.enabled</name>
+  <value>true</value>
+  <description>
+    Enable support in the filesystem for the S3 "Magic" committer.
+    When working with AWS S3, S3Guard must be enabled for the destination
+    bucket, as consistent metadata listings are required.
+  </description>
+</property>
+
+<property>
+  <name>ha.failover-controller.new-active.rpc-timeout.ms</name>
+  <value>30000</value>
+  <description>
+    Timeout that the FC waits for the new active to become active
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.crypto.buffer.size</name>
+  <value>16384</value>
+  <description>
+    The buffer size used by CryptoInputStream and CryptoOutputStream.
+  </description>
+</property>
+
+<property>
+  <name>fs.har.impl.disable.cache</name>
+  <value>true</value>
+  <description>Don't cache 'har' filesystem instances.</description>
+</property>
+
+<property>
+  <name>ipc.server.max.connections</name>
+  <value>1</value>
+  <description>The maximum number of concurrent connections a server is allowed
+    to accept. If this limit is exceeded, incoming connections will first fill
+    the listen queue and then may go to an OS-specific listen overflow queue.
+    The client may fail or timeout, but the server can avoid running out of file
+    descriptors using this feature. 0 means no limit.
+  </description>
+</property>
+
+</configuration>

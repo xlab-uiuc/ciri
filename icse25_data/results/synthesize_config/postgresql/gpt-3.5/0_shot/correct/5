@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['data_sync_retry', 'max_slot_wal_keep_size'], 'reason': ["data_sync_retry should be set to 'on' or 'off' for PostgreSQL version 13.0.", 'max_slot_wal_keep_size should be a positive integer value for PostgreSQL version 13.0.']}
+
+{'hasError': True, 'errParameter': ['data_sync_retry', 'max_slot_wal_keep_size'], 'reason': ["'data_sync_retry' should be set to 'on' for PostgreSQL version 13.0.", "'max_slot_wal_keep_size' should not have a negative value."]}
+
+{'hasError': True, 'errParameter': ['data_sync_retry', 'max_slot_wal_keep_size'], 'reason': ["data_sync_retry does not have a valid value. It should be either 'on' or 'off'.", "max_slot_wal_keep_size should be a positive integer value. '-1' is not a valid value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: data_sync_retry	max_slot_wal_keep_size
+[Ciri] Reason for data_sync_retry: data_sync_retry should be set to 'on' or 'off' for PostgreSQL version 13.0.
+[Ciri] Reason for max_slot_wal_keep_size: max_slot_wal_keep_size should be a positive integer value. '-1' is not a valid value.

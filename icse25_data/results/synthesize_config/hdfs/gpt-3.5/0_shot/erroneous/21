@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.invalidate.work.pct.per.iteration', 'nfs.server.port', 'dfs.webhdfs.rest-csrf.browser-useragents-regex'], 'reason': ["The value for 'dfs.namenode.invalidate.work.pct.per.iteration' should be a float in the format X.Yf where X and Y are numbers.", "The value for 'nfs.server.port' should be an integer representing the port number.", "The property 'dfs.webhdfs.rest-csrf.browser-useragents-regex' has a typo in 'dfs.webhdfs.reset-csrf.enabled'. It should be 'dfs.webhdfs.rest-csrf.enabled'."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.invalidate.work.pct.per.iteration', 'nfs.server.port', 'dfs.webhdfs.rest-csrf.browser-useragents-regex'], 'reason': ["The value for 'dfs.namenode.invalidate.work.pct.per.iteration' should be a positive, non-zero percentage in float notation (X.Yf), with 1.0f meaning 100%.", "The value for 'nfs.server.port' should be an integer representing the port number used by Hadoop NFS.", "There is a typo in the property name 'dfs.webhdfs.rest-csrf.browser-useragents-regex'. It should be 'dfs.webhdfs.rest-csrf.browser-useragents-regex' instead."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.invalidate.work.pct.per.iteration', 'nfs.server.port', 'dfs.webhdfs.rest-csrf.browser-useragents-regex'], 'reason': ["The value '0.32f' for property 'dfs.namenode.invalidate.work.pct.per.iteration' should be a positive, non-zero percentage in float notation (X.Yf), with 1.0f meaning 100%.", "The value '1.1' for property 'nfs.server.port' should be a valid port number.", "The property 'dfs.webhdfs.rest-csrf.browser-useragents-regex' has a typo in 'dfs.webhdfs.reset-csrf.enabled'. It should be 'dfs.webhdfs.rest-csrf.enabled'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.invalidate.work.pct.per.iteration	nfs.server.port	dfs.webhdfs.rest-csrf.browser-useragents-regex
+[Ciri] Reason for dfs.namenode.invalidate.work.pct.per.iteration: The value '0.32f' for property 'dfs.namenode.invalidate.work.pct.per.iteration' should be a positive, non-zero percentage in float notation (X.Yf), with 1.0f meaning 100%.
+[Ciri] Reason for nfs.server.port: The value for 'nfs.server.port' should be an integer representing the port number used by Hadoop NFS.
+[Ciri] Reason for dfs.webhdfs.rest-csrf.browser-useragents-regex: There is a typo in the property name 'dfs.webhdfs.rest-csrf.browser-useragents-regex'. It should be 'dfs.webhdfs.rest-csrf.browser-useragents-regex' instead.

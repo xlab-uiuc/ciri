@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_PATH', 'CSRF_TRUSTED_ORIGINS', 'YEAR_MONTH_FORMAT', 'USE_X_FORWARDED_PORT', 'EMAIL_SSL_CERTFILE'], 'reason': ["CSRF_COOKIE_PATH should not have multiple consecutive slashes. It should be 'tmp/staging'.", 'CSRF_TRUSTED_ORIGINS should not be an empty list. If there are trusted origins, they should be specified.', "YEAR_MONTH_FORMAT should be in the format 'Y F'.", 'USE_X_FORWARDED_PORT should be set to False for security reasons unless specifically required.', 'EMAIL_SSL_CERTFILE should not be set to None. If SSL is required, a valid path to the certificate file should be provided.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: CSRF_COOKIE_PATH	CSRF_TRUSTED_ORIGINS	YEAR_MONTH_FORMAT	USE_X_FORWARDED_PORT	EMAIL_SSL_CERTFILE
+[Ciri] Reason for CSRF_COOKIE_PATH: CSRF_COOKIE_PATH should not have multiple consecutive slashes. It should be 'tmp/staging'.
+[Ciri] Reason for CSRF_TRUSTED_ORIGINS: CSRF_TRUSTED_ORIGINS should not be an empty list. If there are trusted origins, they should be specified.
+[Ciri] Reason for YEAR_MONTH_FORMAT: YEAR_MONTH_FORMAT should be in the format 'Y F'.
+[Ciri] Reason for USE_X_FORWARDED_PORT: USE_X_FORWARDED_PORT should be set to False for security reasons unless specifically required.
+[Ciri] Reason for EMAIL_SSL_CERTFILE: EMAIL_SSL_CERTFILE should not be set to None. If SSL is required, a valid path to the certificate file should be provided.

@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'ALLOWED_HOSTS', 'MIDDLEWARE', 'CSRF_COOKIE_AGE', 'DATABASE_ROUTERS', 'STATICFILES_STORAGE'], 'reason': ['DEBUG is a boolean, not a string', 'ALLOWED_HOSTS is an empty list', 'MIDDLEWARE is an empty list', 'CSRF_COOKIE_AGE is a string, not a number', 'DATABASE_ROUTERS is an empty list', 'STATICFILES_STORAGE is a string, not a class']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'MIDDLEWARE', 'TIME_ZONE', 'DATABASE_ROUTERS', 'STATICFILES_STORAGE'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list', 'MIDDLEWARE should be a list', 'TIME_ZONE should be a string', 'DATABASE_ROUTERS should be a list', 'STATICFILES_STORAGE should be a string']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'MIDDLEWARE', 'TIME_ZONE'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY is not a valid secret key', 'ALLOWED_HOSTS should not be empty', 'MIDDLEWARE should not be empty', 'TIME_ZONE is not a valid time zone']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'MIDDLEWARE', 'TIME_ZONE', 'DATABASE_ROUTERS', 'STATICFILES_STORAGE'], 'reason': ['DEBUG must be a boolean', 'SECRET_KEY must be a string', 'ALLOWED_HOSTS must be a list', 'MIDDLEWARE must be a list', 'TIME_ZONE must be a string', 'DATABASE_ROUTERS must be a list', 'STATICFILES_STORAGE must be a string']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'ALLOWED_HOSTS', 'MIDDLEWARE', 'TIME_ZONE', 'DATABASE_ROUTERS', 'STATICFILES_STORAGE'], 'reason': ['DEBUG is not a boolean value', 'ALLOWED_HOSTS is not a list of strings', 'MIDDLEWARE is not a list of strings', 'TIME_ZONE is not a string', 'DATABASE_ROUTERS is not a list of strings', 'STATICFILES_STORAGE is not a string']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'MIDDLEWARE', 'TIME_ZONE', 'DATABASE_ROUTERS', 'STATICFILES_STORAGE'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list', 'MIDDLEWARE should be a list', 'TIME_ZONE should be a string', 'DATABASE_ROUTERS should be a list', 'STATICFILES_STORAGE should be a string']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: DEBUG	SECRET_KEY	ALLOWED_HOSTS	MIDDLEWARE	TIME_ZONE	DATABASE_ROUTERS	STATICFILES_STORAGE
+[Ciri] Reason for DEBUG: DEBUG must be a boolean
+[Ciri] Reason for SECRET_KEY: SECRET_KEY must be a string
+[Ciri] Reason for ALLOWED_HOSTS: ALLOWED_HOSTS should be a list
+[Ciri] Reason for MIDDLEWARE: MIDDLEWARE must be a list
+[Ciri] Reason for TIME_ZONE: TIME_ZONE must be a string
+[Ciri] Reason for DATABASE_ROUTERS: DATABASE_ROUTERS should be a list
+[Ciri] Reason for STATICFILES_STORAGE: STATICFILES_STORAGE must be a string

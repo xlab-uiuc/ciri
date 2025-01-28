@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_destination', 'archive_timeout', 'max_parallel_maintenance_workers', 'max_pred_locks_per_page', 'unix_socket_directories', 'bytea_output', 'tcp_keepalives_count'], 'reason': ['log_destination must be one of stderr, syslog, csvlog, or eventlog', 'archive_timeout must be greater than 0', 'max_parallel_maintenance_workers must be greater than 0', 'max_pred_locks_per_page must be greater than 0', 'unix_socket_directories must be a list of directories', 'bytea_output must be one of hex, escape, or base64', 'tcp_keepalives_count must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['log_destination'], 'reason': ['log_destination must be one of stderr, syslog, csvlog, or eventlog']}
+
+{'hasError': True, 'errParameter': ['log_destination', 'unix_socket_directories'], 'reason': ['log_destination must be one of stderr, syslog, csvlog, or eventlog', 'unix_socket_directories must be a list of directories separated by commas']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_destination'], 'reason': ['The value of log_destination is not a valid value. Valid values are stderr, syslog, csvlog, and eventlog.']}
+
+{'hasError': True, 'errParameter': ['log_directory'], 'reason': ['log_directory is not a valid directory.']}
+
+{'hasError': True, 'errParameter': ['log_destination'], 'reason': ['log_destination should be one of stderr, syslog, csvlog, eventlog, or a path to a file.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: log_destination
+[Ciri] Reason for log_destination: The value of log_destination is not a valid value. Valid values are stderr, syslog, csvlog, and eventlog.

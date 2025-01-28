@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.master.daily.backup.state.lock.grace.mode', 'alluxio.worker.remote.io.slow.threshold', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ["The value for 'alluxio.job.master.client.threads' should be an integer.", "'alluxio.master.daily.backup.state.lock.grace.mode' is not a recognized configuration property.", "The value for 'alluxio.worker.remote.io.slow.threshold' should be in milliseconds without a unit suffix.", "The value for 'alluxio.jvm.monitor.sleep.interval' should be in milliseconds without a unit suffix."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.job.master.client.threads	alluxio.master.daily.backup.state.lock.grace.mode	alluxio.worker.remote.io.slow.threshold	alluxio.jvm.monitor.sleep.interval
+[Ciri] Reason for alluxio.job.master.client.threads: The value for 'alluxio.job.master.client.threads' should be an integer.
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.grace.mode: 'alluxio.master.daily.backup.state.lock.grace.mode' is not a recognized configuration property.
+[Ciri] Reason for alluxio.worker.remote.io.slow.threshold: The value for 'alluxio.worker.remote.io.slow.threshold' should be in milliseconds without a unit suffix.
+[Ciri] Reason for alluxio.jvm.monitor.sleep.interval: The value for 'alluxio.jvm.monitor.sleep.interval' should be in milliseconds without a unit suffix.

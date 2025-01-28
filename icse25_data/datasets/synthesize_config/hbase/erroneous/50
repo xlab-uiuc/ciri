@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.fileSplitTimeout</name>
+  <value>600000</value>
+    <description>Splitting a region, how long to wait on the file-splitting
+      step before aborting the attempt. Default: 600000. This setting used
+      to be known as hbase.regionserver.fileSplitTimeout in hbase-1.x.
+      Split is now run master-side hence the rename (If a
+      'hbase.master.fileSplitTimeout' setting found, will use it to
+      prime the current 'hbase.master.fileSplitTimeout'
+      Configuration.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.callqueue.handler.factor</name>
+  <value>0.2</value>
+    <description>Factor to determine the number of call queues.
+      A value of 0 means a single queue shared between all the handlers.
+      A value of 1 means that each handler has its own queue.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.global.memstore.size</name>
+  <value>0.5</value>
+    <description>Maximum size of all memstores in a region server before new
+      updates are blocked and flushes are forced. Defaults to 40% of heap (0.4).
+      Updates are blocked and flushes are forced until size of all memstores
+      in a region server hits hbase.regionserver.global.memstore.size.lower.limit.
+      The default value in this configuration has been intentionally left empty in order to
+      honor the old hbase.regionserver.global.memstore.upperLimit property if present.
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.regionSplitLimit</name>
+  <value>1000</value>
+    <description>
+      Limit for the number of regions after which no more region splitting
+      should take place. This is not hard limit for the number of regions
+      but acts as a guideline for the regionserver to stop splitting after
+      a certain limit. Default is set to 1000.
+    </description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.syncLimit</name>
+  <value>5</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The number of ticks that can pass between sending a request and getting an
+    acknowledgment.</description>
+</property>
+
+<property>
+  <name>hbase.online.schema.update.enable</name>
+  <value>true</value>
+    <description>Set true to enable online schema changes.</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.working.dir</name>
+  <value>/valid/dir1</value>
+    <description>Location where the snapshotting process will occur. The location of the
+      completed snapshots will not change, but the temporary directory where the snapshot
+      process occurs will be set to this location. This can be a separate filesystem than
+      the root directory, for performance increase purposes. See HBASE-21098 for more
+      information</description>
+</property>
+
+<property>
+  <name>hbase.mob.compaction.mergeable.threshold</name>
+  <value>2684354560</value>
+    <description>
+      If the size of a mob file is less than this value, it's regarded as a small
+      file and needs to be merged in mob compaction. The default value is 1280MB.
+    </description>
+</property>
+
+</configuration>

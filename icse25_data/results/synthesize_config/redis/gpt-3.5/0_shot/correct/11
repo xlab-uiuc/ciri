@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-expire', 'replica-announce-port', 'jemalloc-bg-thread', 'stop-writes-on-bgsave-error', 'oom-score-adj-values', 'repl-diskless-sync-max-replicas'], 'reason': ['lazyfree-lazy-expire is not a valid parameter for Redis 7.0.0', 'replica-announce-port is not a valid parameter for Redis 7.0.0', 'jemalloc-bg-thread is not a valid parameter for Redis 7.0.0', 'stop-writes-on-bgsave-error is not a valid parameter for Redis 7.0.0', 'oom-score-adj-values is not a valid parameter for Redis 7.0.0', 'repl-diskless-sync-max-replicas is not a valid parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-expire', 'replica-announce-port', 'jemalloc-bg-thread', 'stop-writes-on-bgsave-error', 'oom-score-adj-values', 'repl-diskless-sync-max-replicas'], 'reason': ['lazyfree-lazy-expire is not a valid parameter for Redis configuration.', 'replica-announce-port is not a valid parameter for Redis configuration.', 'jemalloc-bg-thread is not a valid parameter for Redis configuration.', 'stop-writes-on-bgsave-error is not a valid parameter for Redis configuration.', 'oom-score-adj-values is not a valid parameter for Redis configuration.', 'repl-diskless-sync-max-replicas is not a valid parameter for Redis configuration.']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-expire', 'replica-announce-port', 'jemalloc-bg-thread', 'stop-writes-on-bgsave-error', 'oom-score-adj-values', 'repl-diskless-sync-max-replicas'], 'reason': ["Invalid parameter 'lazyfree-lazy-expire'", "Invalid parameter 'replica-announce-port'", "Invalid parameter 'jemalloc-bg-thread'", "Invalid parameter 'stop-writes-on-bgsave-error'", "Invalid parameter 'oom-score-adj-values'", "Invalid parameter 'repl-diskless-sync-max-replicas'"]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: lazyfree-lazy-expire	replica-announce-port	jemalloc-bg-thread	stop-writes-on-bgsave-error	oom-score-adj-values	repl-diskless-sync-max-replicas
+[Ciri] Reason for lazyfree-lazy-expire: lazyfree-lazy-expire is not a valid parameter for Redis configuration.
+[Ciri] Reason for replica-announce-port: replica-announce-port is not a valid parameter for Redis configuration.
+[Ciri] Reason for jemalloc-bg-thread: jemalloc-bg-thread is not a valid parameter for Redis 7.0.0
+[Ciri] Reason for stop-writes-on-bgsave-error: stop-writes-on-bgsave-error is not a valid parameter for Redis configuration.
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values is not a valid parameter for Redis 7.0.0
+[Ciri] Reason for repl-diskless-sync-max-replicas: repl-diskless-sync-max-replicas is not a valid parameter for Redis configuration.

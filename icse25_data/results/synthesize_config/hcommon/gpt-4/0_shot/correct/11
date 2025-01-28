@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'hadoop.zk.acl'], 'reason': ["The 'fs.ftp.timeout' property value should be a positive integer to set a specific timeout or 0 for an infinite timeout. A value of -1 is not a valid configuration.", "The 'hadoop.zk.acl' property value 'world:anyone:rwcda' is incorrect. The correct format for specifying ACLs in ZooKeeper is 'scheme:id:permission', where 'scheme' can be 'world', 'auth', 'digest', or 'ip'. The 'permission' string should consist of one or more of 'r', 'w', 'c', 'd', 'a' (in any order), but the value should not contain duplicates. The provided value includes 'rwcda', which seems to be intended as a correct permission set but the format description implies a misunderstanding of how to specify multiple permissions."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.timeout	hadoop.zk.acl
+[Ciri] Reason for fs.ftp.timeout: The 'fs.ftp.timeout' property value should be a positive integer to set a specific timeout or 0 for an infinite timeout. A value of -1 is not a valid configuration.
+[Ciri] Reason for hadoop.zk.acl: The 'hadoop.zk.acl' property value 'world:anyone:rwcda' is incorrect. The correct format for specifying ACLs in ZooKeeper is 'scheme:id:permission', where 'scheme' can be 'world', 'auth', 'digest', or 'ip'. The 'permission' string should consist of one or more of 'r', 'w', 'c', 'd', 'a' (in any order), but the value should not contain duplicates. The provided value includes 'rwcda', which seems to be intended as a correct permission set but the format description implies a misunderstanding of how to specify multiple permissions.

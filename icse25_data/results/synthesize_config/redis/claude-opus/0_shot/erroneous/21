@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['zset-max-listpack-entries', 'unixsocketperm', 'tls-ca-cert-dir'], 'reason': ["In Redis 7.0, 'zset-max-listpack-entries' was renamed to 'zset-max-listpack-value'. Using the old parameter name will result in an error.", "'unixsocketperm' should be an octal number like 0700, not 1400. The leading zero is required for octal notation.", "The 'tls-ca-cert-dir' parameter was introduced in Redis 6.0 and deprecated in 6.2. In Redis 7.0, this parameter no longer exists and using it will cause an error. Use 'tls-cert-file' and 'tls-key-file' instead to specify the certificate and key files directly."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: zset-max-listpack-entries	unixsocketperm	tls-ca-cert-dir
+[Ciri] Reason for zset-max-listpack-entries: In Redis 7.0, 'zset-max-listpack-entries' was renamed to 'zset-max-listpack-value'. Using the old parameter name will result in an error.
+[Ciri] Reason for unixsocketperm: 'unixsocketperm' should be an octal number like 0700, not 1400. The leading zero is required for octal notation.
+[Ciri] Reason for tls-ca-cert-dir: The 'tls-ca-cert-dir' parameter was introduced in Redis 6.0 and deprecated in 6.2. In Redis 7.0, this parameter no longer exists and using it will cause an error. Use 'tls-cert-file' and 'tls-key-file' instead to specify the certificate and key files directly.

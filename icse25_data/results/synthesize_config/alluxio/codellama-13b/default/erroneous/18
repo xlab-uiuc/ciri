@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 12, 4]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.worker.rpc.port'], 'reason': ["The property 'alluxio.job.master.rpc.port' has the value '1.1' which is not a valid port number.", "The property 'alluxio.worker.rpc.port' has the value '3001' which is not a valid port number."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.worker.rpc.port'], 'reason': ["The property 'alluxio.job.master.rpc.port' has the value '1.1' which is not a valid port number.", "The property 'alluxio.worker.rpc.port' has the value '3001' which is not a valid port number."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.worker.rpc.port', 'alluxio.master.daily.backup.time'], 'reason': ["The property 'alluxio.job.master.rpc.port' has the value '1.1' which is not a valid port number.", "The property 'alluxio.worker.rpc.port' has the value '3001' which is not a valid port number.", "The property 'alluxio.master.daily.backup.time' has the value '05:00' which is not a valid time format. The correct format is 'HH:mm'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.rpc.port	alluxio.worker.rpc.port
+[Ciri] Reason for alluxio.job.master.rpc.port: The property 'alluxio.job.master.rpc.port' has the value '1.1' which is not a valid port number.
+[Ciri] Reason for alluxio.worker.rpc.port: The property 'alluxio.worker.rpc.port' has the value '3001' which is not a valid port number.

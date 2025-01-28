@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 3, 6]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_AGE', 'CSRF_COOKIE_AGE'], 'reason': ["The properties 'SESSION_COOKIE_AGE' and 'CSRF_COOKIE_AGE' have incorrect values. Expressions like '60 * 60 * 24 * 7 * 2' and '60 * 60 * 24 * 7 * 52' are not valid in the configuration file. Please provide integer values directly."]}
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_AGE', 'USE_DEPRECATED_PYTZ', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'SESSION_COOKIE_AGE' has an invalid value. It seems to be an expression rather than a numerical value.", "The property 'USE_DEPRECATED_PYTZ' is set to True, which indicates the use of deprecated functionality.", "The property 'CSRF_COOKIE_AGE' has an invalid value. It seems to be an expression rather than a numerical value."]}
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_AGE', 'CSRF_COOKIE_AGE'], 'reason': ["The properties 'SESSION_COOKIE_AGE' and 'CSRF_COOKIE_AGE' have incorrect values. They should be specified as integers representing seconds, not mathematical expressions."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: SESSION_COOKIE_AGE	CSRF_COOKIE_AGE
+[Ciri] Reason for SESSION_COOKIE_AGE: The properties 'SESSION_COOKIE_AGE' and 'CSRF_COOKIE_AGE' have incorrect values. Expressions like '60 * 60 * 24 * 7 * 2' and '60 * 60 * 24 * 7 * 52' are not valid in the configuration file. Please provide integer values directly.
+[Ciri] Reason for CSRF_COOKIE_AGE: 

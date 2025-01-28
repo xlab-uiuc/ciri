@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'tickTime', 'initLimit', 'syncLimit', 'maxClientCnxns', 'maxSessionTimeout', 'peerType', 'secureClientPort'], 'reason': ['dataDir is not a valid directory', 'clientPort is not a valid port', 'tickTime is not a valid time', 'initLimit is not a valid number', 'syncLimit is not a valid number', 'maxClientCnxns is not a valid number', 'maxSessionTimeout is not a valid time', 'peerType is not a valid peer type', 'secureClientPort is not a valid port']}
+
+{'hasError': True, 'errParameter': ['tickTime', 'initLimit', 'maxClientCnxns', 'maxSessionTimeout', 'syncLimit', 'peerType', 'secureClientPort'], 'reason': ['tickTime must be a positive integer', 'initLimit must be a positive integer', 'maxClientCnxns must be a positive integer', 'maxSessionTimeout must be a positive integer', 'syncLimit must be a positive integer', 'peerType must be either participant or observer', 'secureClientPort must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'tickTime', 'initLimit', 'syncLimit', 'maxClientCnxns', 'maxSessionTimeout', 'peerType', 'secureClientPort'], 'reason': ['dataDir is not a directory', 'clientPort is not a valid port', 'tickTime is not a valid integer', 'initLimit is not a valid integer', 'syncLimit is not a valid integer', 'maxClientCnxns is not a valid integer', 'maxSessionTimeout is not a valid integer', 'peerType is not a valid peer type', 'secureClientPort is not a valid port']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: dataDir	clientPort	tickTime	initLimit	syncLimit	maxClientCnxns	maxSessionTimeout	peerType	secureClientPort
+[Ciri] Reason for dataDir: dataDir is not a directory
+[Ciri] Reason for clientPort: clientPort is not a valid port
+[Ciri] Reason for tickTime: tickTime is not a valid time
+[Ciri] Reason for initLimit: initLimit is not a valid number
+[Ciri] Reason for syncLimit: syncLimit is not a valid number
+[Ciri] Reason for maxClientCnxns: maxClientCnxns is not a valid integer
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout is not a valid time
+[Ciri] Reason for peerType: peerType is not a valid peer type
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid port

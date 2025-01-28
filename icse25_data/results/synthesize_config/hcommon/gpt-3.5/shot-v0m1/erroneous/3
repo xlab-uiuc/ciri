@@ -1,0 +1,12 @@
+Wrong shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'file.stream-buffer-size'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has the value '30s' which should be specified in milliseconds.", "The property 'file.stream-buffer-size' has a value of '2048' which is not a multiple of the hardware page size."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	file.stream-buffer-size
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has the value '30s' which should be specified in milliseconds.
+[Ciri] Reason for file.stream-buffer-size: The property 'file.stream-buffer-size' has a value of '2048' which is not a multiple of the hardware page size.

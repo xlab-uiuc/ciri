@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.default.mode', 'alluxio.underfs.s3.intermediate.upload.clean.age'], 'reason': ["The property 'alluxio.underfs.gcs.default.mode' is not a valid Alluxio configuration property in version 2.5.0. The correct property for setting the default mode for GCS under file system is 'alluxio.underfs.gcs.mode.default'.", "The property 'alluxio.underfs.s3.intermediate.upload.clean.age' is not a valid Alluxio configuration property in version 2.5.0. The correct property for setting the age for cleaning up intermediate S3 upload streams is 'alluxio.underfs.s3.upload.stream.cleanup.age'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.gcs.default.mode	alluxio.underfs.s3.intermediate.upload.clean.age
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: The property 'alluxio.underfs.gcs.default.mode' is not a valid Alluxio configuration property in version 2.5.0. The correct property for setting the default mode for GCS under file system is 'alluxio.underfs.gcs.mode.default'.
+[Ciri] Reason for alluxio.underfs.s3.intermediate.upload.clean.age: The property 'alluxio.underfs.s3.intermediate.upload.clean.age' is not a valid Alluxio configuration property in version 2.5.0. The correct property for setting the age for cleaning up intermediate S3 upload streams is 'alluxio.underfs.s3.upload.stream.cleanup.age'.

@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-advertise-peer-urls', 'initial-cluster-state', 'name', 'auto-tls', 'max-snapshots', 'election-timeout', 'proxy-read-timeout', 'discovery-fallback'], 'reason': ['initial-advertise-peer-urls: ciri', "initial-cluster-state: 'new'", "name: 'default'", 'auto-tls: true', 'max-snapshots: 10', 'election-timeout: 2000', 'proxy-read-timeout: 0', "discovery-fallback: 'proxy'"]}
+
+{'hasError': True, 'errParameter': ['initial-advertise-peer-urls', 'initial-cluster-state', 'auto-tls', 'max-snapshots', 'election-timeout', 'proxy-read-timeout', 'discovery-fallback'], 'reason': ['initial-advertise-peer-urls: ciri', "initial-cluster-state: 'new'", 'auto-tls: true', 'max-snapshots: 10', 'election-timeout: 2000', 'proxy-read-timeout: 0', "discovery-fallback: 'proxy'"]}
+
+{'hasError': True, 'errParameter': ['initial-advertise-peer-urls'], 'reason': ['initial-advertise-peer-urls should be a list of URLs']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-advertise-peer-urls', 'initial-cluster-state', 'auto-tls', 'max-snapshots', 'election-timeout', 'proxy-read-timeout', 'discovery-fallback'], 'reason': ['initial-advertise-peer-urls: ciri', "initial-cluster-state: 'new'", 'auto-tls: true', 'max-snapshots: 10', 'election-timeout: 2000', 'proxy-read-timeout: 0', "discovery-fallback: 'proxy'"]}
+
+{'hasError': True, 'errParameter': ['initial-advertise-peer-urls', 'initial-cluster-state', 'auto-tls', 'max-snapshots', 'election-timeout', 'proxy-read-timeout', 'discovery-fallback'], 'reason': ['initial-advertise-peer-urls must be set to a valid URL', "initial-cluster-state must be set to 'new'", "auto-tls must be set to 'true'", 'max-snapshots must be set to a positive integer', 'election-timeout must be set to a positive integer', 'proxy-read-timeout must be set to a positive integer', "discovery-fallback must be set to 'proxy'"]}
+
+{'hasError': True, 'errParameter': ['initial-advertise-peer-urls'], 'reason': ['initial-advertise-peer-urls is not a valid property for etcd version 3.5.0']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: initial-advertise-peer-urls	initial-cluster-state	auto-tls	max-snapshots	election-timeout	proxy-read-timeout	discovery-fallback
+[Ciri] Reason for initial-advertise-peer-urls: initial-advertise-peer-urls: ciri
+[Ciri] Reason for initial-cluster-state: initial-cluster-state: 'new'
+[Ciri] Reason for auto-tls: auto-tls must be set to 'true'
+[Ciri] Reason for max-snapshots: max-snapshots must be set to a positive integer
+[Ciri] Reason for election-timeout: election-timeout: 2000
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout must be set to a positive integer
+[Ciri] Reason for discovery-fallback: discovery-fallback: 'proxy'

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.search.attr.member</name>
+  <value>member</value>
+  <description>
+    The attribute of the group object that identifies the users that are
+    members of the group. The default will usually be appropriate for
+    any LDAP installation.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.auth_to_local.mechanism</name>
+  <value>hadoop</value>
+  <description>The mechanism by which auth_to_local rules are evaluated.
+    If set to 'hadoop' it will not allow resulting local user names to have
+    either '@' or '/'. If set to 'MIT' it will follow MIT evaluation rules
+    and the restrictions of 'hadoop' do not apply.</description>
+</property>
+
+<property>
+  <name>fs.default.name</name>
+  <value>file//</value>
+  <description>Deprecated. Use (fs.defaultFS) property
+  instead</description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.abfss.impl</name>
+  <value>org.apache.hadoop.fs.azurebfs.Abfss</value>
+  <description>AbstractFileSystem implementation class of abfss://</description>
+</property>
+
+<property>
+  <name>ha.health-monitor.connect-retry-interval.ms</name>
+  <value>500</value>
+  <description>
+    How often to retry connecting to the service.
+  </description>
+</property>
+
+<property>
+  <name>ha.failover-controller.graceful-fence.rpc-timeout.ms</name>
+  <value>5000</value>
+  <description>
+    Timeout that the FC waits for the old active to go to standby
+  </description>
+</property>
+
+<property>
+  <name>hadoop.zk.retry-interval-ms</name>
+  <value>1000</value>
+    <description>Retry interval in milliseconds when connecting to ZooKeeper.
+    </description>
+</property>
+
+<property>
+  <name>hadoop.prometheus.endpoint.enabled</name>
+  <value>true</value>
+    <description>
+      If set to true, prometheus compatible metric page on the HTTP servers
+      is enabled via '/prom' endpoint.
+    </description>
+</property>
+
+</configuration>

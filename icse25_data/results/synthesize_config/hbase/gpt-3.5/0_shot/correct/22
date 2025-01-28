@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl', 'hbase.regionserver.thrift.framed.max_frame_size_in_mb'], 'reason': ['The property \'hbase.regionserver.hlog.writer.impl\' has an incorrect usage value. It should be \'conf.set("hbase.regionserver.hlog.writer.impl", HighLatencySyncWriter.class.getName());\'', "The property 'hbase.regionserver.thrift.framed.max_frame_size_in_mb' should have a larger value for the frame size, typically greater than 2 MB."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl', 'hbase.client.max.perregion.tasks', 'hbase.regionserver.thrift.framed.max_frame_size_in_mb'], 'reason': ["The usage for property 'hbase.regionserver.hlog.writer.impl' is incorrect.", "The description for property 'hbase.client.max.perregion.tasks' is not clear and needs improvement.", "The value for property 'hbase.regionserver.thrift.framed.max_frame_size_in_mb' should be in bytes rather than MB."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl', 'hbase.regionserver.thrift.framed.max_frame_size_in_mb'], 'reason': ["The property 'hbase.regionserver.hlog.writer.impl' has a usage example that is not valid for HBase version 2.2.7.", "The property 'hbase.regionserver.thrift.framed.max_frame_size_in_mb' should have a larger value for better performance."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.hlog.writer.impl	hbase.regionserver.thrift.framed.max_frame_size_in_mb
+[Ciri] Reason for hbase.regionserver.hlog.writer.impl: The property 'hbase.regionserver.hlog.writer.impl' has an incorrect usage value. It should be 'conf.set("hbase.regionserver.hlog.writer.impl", HighLatencySyncWriter.class.getName());'
+[Ciri] Reason for hbase.regionserver.thrift.framed.max_frame_size_in_mb: The property 'hbase.regionserver.thrift.framed.max_frame_size_in_mb' should have a larger value for better performance.

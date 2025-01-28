@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'maxmemory-clients', 'replica-announce-ip', 'list-max-listpack-size'], 'reason': ['enable-module-command is not a valid configuration parameter in Redis 7.0.0', 'maxmemory-clients should be an integer value representing number of clients, not memory size', 'replica-announce-ip should be set to the external IP of the replica, not loopback address', 'list-max-listpack-size value of -2 is invalid, should be -1, -3, -4 or -5']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: enable-module-command	maxmemory-clients	replica-announce-ip	list-max-listpack-size
+[Ciri] Reason for enable-module-command: enable-module-command is not a valid configuration parameter in Redis 7.0.0
+[Ciri] Reason for maxmemory-clients: maxmemory-clients should be an integer value representing number of clients, not memory size
+[Ciri] Reason for replica-announce-ip: replica-announce-ip should be set to the external IP of the replica, not loopback address
+[Ciri] Reason for list-max-listpack-size: list-max-listpack-size value of -2 is invalid, should be -1, -3, -4 or -5

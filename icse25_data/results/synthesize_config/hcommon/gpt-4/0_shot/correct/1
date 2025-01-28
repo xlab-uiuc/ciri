@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds'], 'reason': ["The 'fs.ftp.transfer.mode' property does not exist in Hadoop Common version 3.3.0. FTP transfer modes are typically configured within the client or application code, not through Hadoop's configuration.", "The 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' property is not a standard configuration parameter in Hadoop Common version 3.3.0. While Hadoop allows for custom IPC properties, this specific format with a placeholder '[port_number]' is not standard and would not be recognized without custom handling."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.transfer.mode	ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds
+[Ciri] Reason for fs.ftp.transfer.mode: The 'fs.ftp.transfer.mode' property does not exist in Hadoop Common version 3.3.0. FTP transfer modes are typically configured within the client or application code, not through Hadoop's configuration.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds: The 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' property is not a standard configuration parameter in Hadoop Common version 3.3.0. While Hadoop allows for custom IPC properties, this specific format with a placeholder '[port_number]' is not standard and would not be recognized without custom handling.

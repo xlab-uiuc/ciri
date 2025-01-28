@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.har.impl', 'fs.s3a.socket.recv.buffer', 'fs.s3a.s3guard.ddb.table.sse.enabled', 'fs.AbstractFileSystem.abfss.impl', 'ipc.[port_number].scheduler.impl', 'hadoop.http.authentication.kerberos.principal', 'fs.permissions.umask-mode', 'ha.health-monitor.rpc.connect.max.retries'], 'reason': ['fs.AbstractFileSystem.har.impl is not a valid property', 'fs.s3a.socket.recv.buffer is not a valid property', 'fs.s3a.s3guard.ddb.table.sse.enabled is not a valid property', 'fs.AbstractFileSystem.abfss.impl is not a valid property', 'ipc.[port_number].scheduler.impl is not a valid property', 'hadoop.http.authentication.kerberos.principal is not a valid property', 'fs.permissions.umask-mode is not a valid property', 'ha.health-monitor.rpc.connect.max.retries is not a valid property']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.AbstractFileSystem.har.impl	fs.s3a.socket.recv.buffer	fs.s3a.s3guard.ddb.table.sse.enabled	fs.AbstractFileSystem.abfss.impl	ipc.[port_number].scheduler.impl	hadoop.http.authentication.kerberos.principal	fs.permissions.umask-mode	ha.health-monitor.rpc.connect.max.retries
+[Ciri] Reason for fs.AbstractFileSystem.har.impl: fs.AbstractFileSystem.har.impl is not a valid property
+[Ciri] Reason for fs.s3a.socket.recv.buffer: fs.s3a.socket.recv.buffer is not a valid property
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.sse.enabled: fs.s3a.s3guard.ddb.table.sse.enabled is not a valid property
+[Ciri] Reason for fs.AbstractFileSystem.abfss.impl: fs.AbstractFileSystem.abfss.impl is not a valid property
+[Ciri] Reason for ipc.[port_number].scheduler.impl: ipc.[port_number].scheduler.impl is not a valid property
+[Ciri] Reason for hadoop.http.authentication.kerberos.principal: hadoop.http.authentication.kerberos.principal is not a valid property
+[Ciri] Reason for fs.permissions.umask-mode: fs.permissions.umask-mode is not a valid property
+[Ciri] Reason for ha.health-monitor.rpc.connect.max.retries: ha.health-monitor.rpc.connect.max.retries is not a valid property

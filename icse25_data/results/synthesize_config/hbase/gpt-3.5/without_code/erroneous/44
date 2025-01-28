@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 10, 9]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.max.size'], 'reason': ["The property 'hbase.hstore.compaction.max.size' has the value '18446744073709551614' which is too large and may cause unexpected behavior. It should be set to a reasonable size."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.max.size'], 'reason': ["The property 'hbase.hstore.compaction.max.size' has the value '18446744073709551614' which is too large and may cause unexpected behavior. It should be set to a reasonable size for effective compaction."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.max.size'], 'reason': ["The property 'hbase.hstore.compaction.max.size' has the value '18446744073709551614' which is too large. It should be a valid size limit for compaction."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.hstore.compaction.max.size
+[Ciri] Reason for hbase.hstore.compaction.max.size: The property 'hbase.hstore.compaction.max.size' has the value '18446744073709551614' which is too large. It should be a valid size limit for compaction.

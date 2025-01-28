@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_prepared_transactions', 'max_locks_per_transaction'], 'reason': ['max_connections must be greater than 0', 'max_prepared_transactions must be greater than 0', 'max_locks_per_transaction must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_prepared_transactions', 'max_locks_per_transaction'], 'reason': ['max_connections must be greater than 10', 'max_prepared_transactions must be greater than 0', 'max_locks_per_transaction must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_prepared_transactions', 'max_locks_per_transaction', 'wal_recycle'], 'reason': ['max_connections must be a power of 2 between 32 and 2048', 'max_prepared_transactions must be a power of 2 between 0 and 2048', 'max_locks_per_transaction must be a power of 2 between 0 and 2048', 'wal_recycle must be on or off']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max_connections	max_prepared_transactions	max_locks_per_transaction
+[Ciri] Reason for max_connections: max_connections must be greater than 10
+[Ciri] Reason for max_prepared_transactions: max_prepared_transactions must be greater than 0
+[Ciri] Reason for max_locks_per_transaction: max_locks_per_transaction must be greater than 0

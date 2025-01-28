@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.master.client.pool.size.min', 'alluxio.user.block.worker.client.pool.gc.threshold'], 'reason': ['alluxio.user.block.master.client.pool.size.min should be greater than 0', 'alluxio.user.block.worker.client.pool.gc.threshold should be greater than 0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.master.client.pool.size.min', 'alluxio.user.block.worker.client.pool.gc.threshold'], 'reason': ['alluxio.user.block.master.client.pool.size.min should be greater than or equal to 0', 'alluxio.user.block.worker.client.pool.gc.threshold should be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.master.client.pool.size.min', 'alluxio.user.block.worker.client.pool.gc.threshold'], 'reason': ['alluxio.user.block.master.client.pool.size.min must be greater than or equal to 0', 'alluxio.user.block.worker.client.pool.gc.threshold must be greater than or equal to 0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.block.master.client.pool.size.min	alluxio.user.block.worker.client.pool.gc.threshold
+[Ciri] Reason for alluxio.user.block.master.client.pool.size.min: alluxio.user.block.master.client.pool.size.min must be greater than or equal to 0
+[Ciri] Reason for alluxio.user.block.worker.client.pool.gc.threshold: alluxio.user.block.worker.client.pool.gc.threshold should be greater than 0

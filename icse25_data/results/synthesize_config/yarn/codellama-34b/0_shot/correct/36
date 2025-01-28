@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.zk-delegation-token-node.split-index', 'yarn.resourcemanager.zk-max-znode-size.bytes', 'yarn.resourcemanager.configuration.provider-class', 'yarn.resourcemanager.metrics.runtime.buckets', 'yarn.nodemanager.runtime.linux.docker.host-pid-namespace.allowed', 'yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin', 'yarn.nodemanager.aux-services.mapreduce_shuffle.class', 'yarn.resourcemanager.nm-container-queuing.min-queue-length'], 'reason': ['The value of yarn.resourcemanager.zk-delegation-token-node.split-index is not an integer', 'The value of yarn.resourcemanager.zk-max-znode-size.bytes is not an integer', 'The value of yarn.resourcemanager.configuration.provider-class is not a valid class', 'The value of yarn.resourcemanager.metrics.runtime.buckets is not a list of integers', 'The value of yarn.nodemanager.runtime.linux.docker.host-pid-namespace.allowed is not a boolean', 'The value of yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin is not a valid class', 'The value of yarn.nodemanager.aux-services.mapreduce_shuffle.class is not a valid class', 'The value of yarn.resourcemanager.nm-container-queuing.min-queue-length is not an integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: yarn.resourcemanager.zk-delegation-token-node.split-index	yarn.resourcemanager.zk-max-znode-size.bytes	yarn.resourcemanager.configuration.provider-class	yarn.resourcemanager.metrics.runtime.buckets	yarn.nodemanager.runtime.linux.docker.host-pid-namespace.allowed	yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin	yarn.nodemanager.aux-services.mapreduce_shuffle.class	yarn.resourcemanager.nm-container-queuing.min-queue-length
+[Ciri] Reason for yarn.resourcemanager.zk-delegation-token-node.split-index: The value of yarn.resourcemanager.zk-delegation-token-node.split-index is not an integer
+[Ciri] Reason for yarn.resourcemanager.zk-max-znode-size.bytes: The value of yarn.resourcemanager.zk-max-znode-size.bytes is not an integer
+[Ciri] Reason for yarn.resourcemanager.configuration.provider-class: The value of yarn.resourcemanager.configuration.provider-class is not a valid class
+[Ciri] Reason for yarn.resourcemanager.metrics.runtime.buckets: The value of yarn.resourcemanager.metrics.runtime.buckets is not a list of integers
+[Ciri] Reason for yarn.nodemanager.runtime.linux.docker.host-pid-namespace.allowed: The value of yarn.nodemanager.runtime.linux.docker.host-pid-namespace.allowed is not a boolean
+[Ciri] Reason for yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin: The value of yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin is not a valid class
+[Ciri] Reason for yarn.nodemanager.aux-services.mapreduce_shuffle.class: The value of yarn.nodemanager.aux-services.mapreduce_shuffle.class is not a valid class
+[Ciri] Reason for yarn.resourcemanager.nm-container-queuing.min-queue-length: The value of yarn.resourcemanager.nm-container-queuing.min-queue-length is not an integer

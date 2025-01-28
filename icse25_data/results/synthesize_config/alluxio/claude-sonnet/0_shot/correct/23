@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.finished.job.retention.time=1sec', 'alluxio.user.client.cache.page.size=2MB', 'alluxio.underfs.eventual.consistency.retry.max.num=-1'], 'reason': ["The property 'alluxio.job.master.finished.job.retention.time' is not a valid Alluxio configuration property in version 2.5.0.", "The property 'alluxio.user.client.cache.page.size' is not a valid Alluxio configuration property in version 2.5.0.", "The value '-1' for the property 'alluxio.underfs.eventual.consistency.retry.max.num' is invalid. It should be a non-negative integer."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.finished.job.retention.time=1sec	alluxio.user.client.cache.page.size=2MB	alluxio.underfs.eventual.consistency.retry.max.num=-1
+[Ciri] Reason for alluxio.job.master.finished.job.retention.time=1sec: The property 'alluxio.job.master.finished.job.retention.time' is not a valid Alluxio configuration property in version 2.5.0.
+[Ciri] Reason for alluxio.user.client.cache.page.size=2MB: The property 'alluxio.user.client.cache.page.size' is not a valid Alluxio configuration property in version 2.5.0.
+[Ciri] Reason for alluxio.underfs.eventual.consistency.retry.max.num=-1: The value '-1' for the property 'alluxio.underfs.eventual.consistency.retry.max.num' is invalid. It should be a non-negative integer.

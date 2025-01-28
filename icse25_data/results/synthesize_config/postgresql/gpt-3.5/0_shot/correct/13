@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['unix_socket_group', 'recovery_target_action'], 'reason': ['unix_socket_group should not be an empty string. It should be set to a valid group name or left unset.', "recovery_target_action should not be set to 'pause' in version 13.0. It should be set to 'promote' or 'shutdown'."]}
+
+{'hasError': True, 'errParameter': ['unix_socket_group', 'recovery_target_action'], 'reason': ['unix_socket_group should not be an empty string. It should be set to a valid group name or left unset.', "recovery_target_action should not be set to 'pause'. It should be set to 'promote' or 'shutdown'."]}
+
+{'hasError': True, 'errParameter': ['unix_socket_group', 'recovery_target_action'], 'reason': ['unix_socket_group should be set to a valid group name or left as an empty string.', "recovery_target_action only accepts values 'pause', 'promote', or 'shutdown'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: unix_socket_group	recovery_target_action
+[Ciri] Reason for unix_socket_group: unix_socket_group should be set to a valid group name or left as an empty string.
+[Ciri] Reason for recovery_target_action: recovery_target_action should not be set to 'pause' in version 13.0. It should be set to 'promote' or 'shutdown'.

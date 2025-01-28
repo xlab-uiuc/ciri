@@ -1,0 +1,19 @@
+Wrong shot number:
+[11, 7, 2]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['list-max-listpack-size', 'unixsocketperm'], 'reason': ["The property 'list-max-listpack-size' has an invalid value of -1. It should be a positive integer.", "The property 'unixsocketperm' has an invalid value of 350. It should be a 3-digit octal number."]}
+
+{'hasError': True, 'errParameter': ['list-max-listpack-size'], 'reason': ["The property 'list-max-listpack-size' has an invalid value of -1. It should be a positive integer or 0 to disable the limit."]}
+
+{'hasError': True, 'errParameter': ['list-max-listpack-size', 'unixsocketperm'], 'reason': ["The property 'list-max-listpack-size' has an invalid value of -1. It should be a positive integer.", "The property 'unixsocketperm' has an invalid value of 350. It should be a valid Unix permission mode represented as a 3-digit octal number."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: list-max-listpack-size	unixsocketperm
+[Ciri] Reason for list-max-listpack-size: The property 'list-max-listpack-size' has an invalid value of -1. It should be a positive integer.
+[Ciri] Reason for unixsocketperm: The property 'unixsocketperm' has an invalid value of 350. It should be a 3-digit octal number.

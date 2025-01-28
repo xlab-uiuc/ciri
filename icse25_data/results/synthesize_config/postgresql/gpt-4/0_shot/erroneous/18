@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_memory_type', 'max_pred_locks_per_relation', 'tcp_user_timeout'], 'reason': ["The 'shared_memory_type' parameter does not exist in PostgreSQL configuration. The correct parameter for controlling shared memory is 'dynamic_shared_memory_type'.", "The 'max_pred_locks_per_relation' parameter cannot be negative. It should be set to a positive value or zero to use the default setting.", "The 'tcp_user_timeout' parameter is specified in milliseconds, and setting it to 1 might be too low for practical use. It should be set to a higher value to avoid unintended disconnections."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: shared_memory_type	max_pred_locks_per_relation	tcp_user_timeout
+[Ciri] Reason for shared_memory_type: The 'shared_memory_type' parameter does not exist in PostgreSQL configuration. The correct parameter for controlling shared memory is 'dynamic_shared_memory_type'.
+[Ciri] Reason for max_pred_locks_per_relation: The 'max_pred_locks_per_relation' parameter cannot be negative. It should be set to a positive value or zero to use the default setting.
+[Ciri] Reason for tcp_user_timeout: The 'tcp_user_timeout' parameter is specified in milliseconds, and setting it to 1 might be too low for practical use. It should be set to a higher value to avoid unintended disconnections.

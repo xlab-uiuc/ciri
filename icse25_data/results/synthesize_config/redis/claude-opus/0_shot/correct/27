@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'cluster-announce-bus-port', 'cluster-announce-tls-port'], 'reason': ["In Redis 7.0, 'hash-max-listpack-value' has been renamed to 'hash-max-listpack-entries'.", "'cluster-announce-bus-port' is not a valid configuration parameter in Redis.", "'cluster-announce-tls-port' is not a valid configuration parameter in Redis."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hash-max-listpack-value	cluster-announce-bus-port	cluster-announce-tls-port
+[Ciri] Reason for hash-max-listpack-value: In Redis 7.0, 'hash-max-listpack-value' has been renamed to 'hash-max-listpack-entries'.
+[Ciri] Reason for cluster-announce-bus-port: 'cluster-announce-bus-port' is not a valid configuration parameter in Redis.
+[Ciri] Reason for cluster-announce-tls-port: 'cluster-announce-tls-port' is not a valid configuration parameter in Redis.

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.configuration.provider-class</name>
+  <value>org.apache.hadoop.yarn.LocalConfigurationProvider</value>
+    <description>The class to use as the configuration provider.
+    If org.apache.hadoop.yarn.LocalConfigurationProvider is used,
+    the local configuration will be loaded.
+    If org.apache.hadoop.yarn.FileSystemBasedConfigurationProvider is used,
+    the configuration which will be loaded should be uploaded to remote File system first.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-localizer.log.level</name>
+  <value>INFO</value>
+    <description>
+      The log level for container localizer while it is an independent process.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.resources-handler.class</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.util.DefaultLCEResourcesHandler</value>
+    <description>The class which should help the LCE handle resources.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.windows-container.memory-limit.enabled</name>
+  <value>true</value>
+    <description>This flag determines whether memory limit will be set for the Windows Job
+    Object of the containers launched by the default container executor.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resourcemanager.minimum.version</name>
+  <value>NONE</value>
+    <description>The minimum allowed version of a resourcemanager that a nodemanager will connect to.  
+      The valid values are NONE (no version checking), EqualToNM (the resourcemanager's version is 
+      equal to or greater than the NM version), or a Version String.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-retry-minimum-interval-ms</name>
+  <value>500</value>
+    <description>Minimum container restart interval in milliseconds.</description>
+</property>
+
+<property>
+  <name>yarn.is.minicluster</name>
+  <value>false</value>
+    <description>
+    Set to true for MiniYARNCluster unit tests
+    </description>
+</property>
+
+<property>
+  <name>yarn.client.load.resource-types.from-server</name>
+  <value>false</value>
+    <description>
+      Provides an option for client to load supported resource types from RM
+      instead of depending on local resource-types.xml file.
+    </description>
+</property>
+
+</configuration>

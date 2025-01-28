@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['list-max-listpack-size', 'unixsocketperm'], 'reason': ["'list-max-listpack-size' is not a valid configuration directive. It seems to be a mix of 'list-max-ziplist-size' and 'hash-max-listpack-size', which are valid directives in older versions of Redis. For Redis 7.0.0, the correct directives would be related to data type specific configurations like 'hash-max-ziplist-entries', 'list-max-ziplist-size', etc.", "'unixsocketperm' should be set to a valid octal value representing file system permissions. The value '350' is not a valid octal because octal values can only contain digits 0-7. A correct value might look like '0750' or '0700'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: list-max-listpack-size	unixsocketperm
+[Ciri] Reason for list-max-listpack-size: 'list-max-listpack-size' is not a valid configuration directive. It seems to be a mix of 'list-max-ziplist-size' and 'hash-max-listpack-size', which are valid directives in older versions of Redis. For Redis 7.0.0, the correct directives would be related to data type specific configurations like 'hash-max-ziplist-entries', 'list-max-ziplist-size', etc.
+[Ciri] Reason for unixsocketperm: 'unixsocketperm' should be set to a valid octal value representing file system permissions. The value '350' is not a valid octal because octal values can only contain digits 0-7. A correct value might look like '0750' or '0700'.

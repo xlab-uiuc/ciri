@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.dir', 'dfs.namenode.edits.journal-plugin.qjournal'], 'reason': ['dfs.namenode.checkpoint.dir is not a valid directory', 'dfs.namenode.edits.journal-plugin.qjournal is not a valid property']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.dir', 'dfs.namenode.edits.journal-plugin.qjournal'], 'reason': ['dfs.namenode.checkpoint.dir: Determines where on the local filesystem the DFS secondary name node should store the temporary images to merge. If this is a comma-delimited list of directories then the image is replicated in all of the directories for redundancy.', 'dfs.namenode.edits.journal-plugin.qjournal: org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.dir'], 'reason': ['The value of dfs.namenode.checkpoint.dir is not a valid directory.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.checkpoint.dir	dfs.namenode.edits.journal-plugin.qjournal
+[Ciri] Reason for dfs.namenode.checkpoint.dir: dfs.namenode.checkpoint.dir: Determines where on the local filesystem the DFS secondary name node should store the temporary images to merge. If this is a comma-delimited list of directories then the image is replicated in all of the directories for redundancy.
+[Ciri] Reason for dfs.namenode.edits.journal-plugin.qjournal: dfs.namenode.edits.journal-plugin.qjournal: org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager

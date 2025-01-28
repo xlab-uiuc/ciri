@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['disable-thp', 'cluster-announce-ip', 'oom-score-adj-values', 'tls-ca-cert-file', 'appendonly', 'aof-rewrite-incremental-fsync', 'databases'], 'reason': ["The 'disable-thp' parameter is not a valid Redis configuration option.", "The 'cluster-announce-ip' parameter is used for Redis Cluster configuration and is not applicable for a single Redis instance.", "The 'oom-score-adj-values' parameter is not a valid Redis configuration option.", "The 'tls-ca-cert-file' parameter is used for configuring TLS/SSL encryption and is not a standard Redis configuration option.", "The 'appendonly' parameter should be set to 'yes' or 'no' (without quotes) to enable or disable the Append Only File (AOF) persistence.", "The 'aof-rewrite-incremental-fsync' parameter should be set to 'yes' or 'no' (without quotes) to enable or disable incremental fsync for AOF rewrite.", "The 'databases' parameter should be an integer value representing the number of databases (default is 16)."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: disable-thp	cluster-announce-ip	oom-score-adj-values	tls-ca-cert-file	appendonly	aof-rewrite-incremental-fsync	databases
+[Ciri] Reason for disable-thp: The 'disable-thp' parameter is not a valid Redis configuration option.
+[Ciri] Reason for cluster-announce-ip: The 'cluster-announce-ip' parameter is used for Redis Cluster configuration and is not applicable for a single Redis instance.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter is not a valid Redis configuration option.
+[Ciri] Reason for tls-ca-cert-file: The 'tls-ca-cert-file' parameter is used for configuring TLS/SSL encryption and is not a standard Redis configuration option.
+[Ciri] Reason for appendonly: The 'appendonly' parameter should be set to 'yes' or 'no' (without quotes) to enable or disable the Append Only File (AOF) persistence.
+[Ciri] Reason for aof-rewrite-incremental-fsync: The 'aof-rewrite-incremental-fsync' parameter should be set to 'yes' or 'no' (without quotes) to enable or disable incremental fsync for AOF rewrite.
+[Ciri] Reason for databases: The 'databases' parameter should be an integer value representing the number of databases (default is 16).

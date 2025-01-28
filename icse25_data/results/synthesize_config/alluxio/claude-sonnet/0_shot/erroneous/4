@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.threadpool.size', 'alluxio.user.streaming.writer.flush.timeout'], 'reason': ["The property 'alluxio.job.worker.threadpool.size' is not a valid Alluxio configuration property in version 2.5.0. It seems to be a typo or an invalid property name.", "The value 'ciri/ciri' for the property 'alluxio.job.worker.threadpool.size' is not a valid value. It should be an integer representing the thread pool size.", "The value '60min' for the property 'alluxio.user.streaming.writer.flush.timeout' is not a valid value. It should be a duration value like '60s', '5m', or '1h'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.threadpool.size	alluxio.user.streaming.writer.flush.timeout
+[Ciri] Reason for alluxio.job.worker.threadpool.size: The property 'alluxio.job.worker.threadpool.size' is not a valid Alluxio configuration property in version 2.5.0. It seems to be a typo or an invalid property name.
+[Ciri] Reason for alluxio.user.streaming.writer.flush.timeout: The value 'ciri/ciri' for the property 'alluxio.job.worker.threadpool.size' is not a valid value. It should be an integer representing the thread pool size.

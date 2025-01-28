@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 13, 1]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.timeout', 'alluxio.worker.management.backoff.strategy'], 'reason': ["The property 'fs.cos.connection.timeout' is not a valid Alluxio configuration property.", "The value 'ANY' for the property 'alluxio.worker.management.backoff.strategy' is not a valid value. The accepted values are: EXPONENTIAL, SLEEP."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.cos.connection.timeout	alluxio.worker.management.backoff.strategy
+[Ciri] Reason for fs.cos.connection.timeout: The property 'fs.cos.connection.timeout' is not a valid Alluxio configuration property.
+[Ciri] Reason for alluxio.worker.management.backoff.strategy: The value 'ANY' for the property 'alluxio.worker.management.backoff.strategy' is not a valid value. The accepted values are: EXPONENTIAL, SLEEP.

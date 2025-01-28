@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.master.backup.state.lock.exclusive.duration', 'alluxio.user.network.rpc.netty.worker.threads'], 'reason': ["The property 'fs.cos.socket.timeout' is not a valid Alluxio 2.5.0 configuration property.", "The property 'alluxio.master.backup.state.lock.exclusive.duration' is deprecated since version 2.0.0 and removed in version 2.5.0.", "The value of 'alluxio.user.network.rpc.netty.worker.threads' cannot be 0. It must be a positive integer."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.cos.socket.timeout	alluxio.master.backup.state.lock.exclusive.duration	alluxio.user.network.rpc.netty.worker.threads
+[Ciri] Reason for fs.cos.socket.timeout: The property 'fs.cos.socket.timeout' is not a valid Alluxio 2.5.0 configuration property.
+[Ciri] Reason for alluxio.master.backup.state.lock.exclusive.duration: The property 'alluxio.master.backup.state.lock.exclusive.duration' is deprecated since version 2.0.0 and removed in version 2.5.0.
+[Ciri] Reason for alluxio.user.network.rpc.netty.worker.threads: The value of 'alluxio.user.network.rpc.netty.worker.threads' cannot be 0. It must be a positive integer.

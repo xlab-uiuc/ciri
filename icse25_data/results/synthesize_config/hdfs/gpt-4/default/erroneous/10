@@ -1,0 +1,15 @@
+Wrong shot number:
+[7, 13, 12]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.pmem.cache.dirs', 'dfs.namenode.upgrade.domain.factor'], 'reason': ["The property 'dfs.datanode.pmem.cache.dirs' contains an invalid path '/\\hadoop/s3a'. Paths should not contain backslashes or invalid characters.", "The property 'dfs.namenode.upgrade.domain.factor' uses a placeholder '${dfs.replication}' which may not be replaced properly if 'dfs.replication' is not defined elsewhere in the configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.pmem.cache.dirs	dfs.namenode.upgrade.domain.factor
+[Ciri] Reason for dfs.datanode.pmem.cache.dirs: The property 'dfs.datanode.pmem.cache.dirs' contains an invalid path '/\hadoop/s3a'. Paths should not contain backslashes or invalid characters.
+[Ciri] Reason for dfs.namenode.upgrade.domain.factor: The property 'dfs.namenode.upgrade.domain.factor' uses a placeholder '${dfs.replication}' which may not be replaced properly if 'dfs.replication' is not defined elsewhere in the configuration.

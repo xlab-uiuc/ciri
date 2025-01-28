@@ -1,0 +1,16 @@
+listen-client-urls: file///
+
+auto-compaction-retention: "1"
+
+log-outputs: [stderr]
+
+enable-pprof: true
+
+initial-advertise-peer-urls: http://localhost:2380
+
+auto-compaction-mode: periodic
+
+initial-cluster-token: 'etcd-cluster'
+
+initial-cluster-state: 'new'
+

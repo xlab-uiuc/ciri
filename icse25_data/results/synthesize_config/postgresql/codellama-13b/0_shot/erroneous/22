@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_cert_file', 'ssl_min_protocol_version'], 'reason': ['ssl_cert_file is not a valid file path.', 'ssl_min_protocol_version is not a valid protocol version.']}
+
+{'hasError': True, 'errParameter': ['ssl_cert_file', 'ssl_min_protocol_version'], 'reason': ['ssl_cert_file is not a valid parameter in PostgreSQL 13.0', 'ssl_min_protocol_version is not a valid parameter in PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['ssl_cert_file', 'ssl_min_protocol_version'], 'reason': ['ssl_cert_file is not a valid file path', 'ssl_min_protocol_version is not a valid value']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ssl_cert_file	ssl_min_protocol_version
+[Ciri] Reason for ssl_cert_file: ssl_cert_file is not a valid file path
+[Ciri] Reason for ssl_min_protocol_version: ssl_min_protocol_version is not a valid parameter in PostgreSQL 13.0

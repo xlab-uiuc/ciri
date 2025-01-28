@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['electionAlg', 'maxSessionTimeout', 'quorum.auth.learnerRequireSasl', 'peerType'], 'reason': ["The 'electionAlg' parameter is deprecated and should not be used.", "The 'maxSessionTimeout' should be greater than 0.", "The 'quorum.auth.learnerRequireSasl' parameter is not recognized. The correct parameter for enabling SASL authentication for learners is 'quorumLearner.saslAuthEnable'.", "The 'peerType' parameter is not recognized in the configuration. The role of a server (participant, observer) is determined by its entry in the ensemble configuration."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: electionAlg	maxSessionTimeout	quorum.auth.learnerRequireSasl	peerType
+[Ciri] Reason for electionAlg: The 'electionAlg' parameter is deprecated and should not be used.
+[Ciri] Reason for maxSessionTimeout: The 'maxSessionTimeout' should be greater than 0.
+[Ciri] Reason for quorum.auth.learnerRequireSasl: The 'quorum.auth.learnerRequireSasl' parameter is not recognized. The correct parameter for enabling SASL authentication for learners is 'quorumLearner.saslAuthEnable'.
+[Ciri] Reason for peerType: The 'peerType' parameter is not recognized in the configuration. The role of a server (participant, observer) is determined by its entry in the ensemble configuration.

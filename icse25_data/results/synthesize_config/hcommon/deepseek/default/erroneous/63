@@ -1,0 +1,19 @@
+Wrong shot number:
+[14, 9, 6]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ha.zookeeper.parent-znode', 'hadoop.ssl.server.conf'], 'reason': ["The property 'ha.zookeeper.parent-znode' has the value '/valid/file1' which is not a valid znode path. The path should start with '/' and should not contain '..'", "The property 'hadoop.ssl.server.conf' has the value '/valid/file1' which is not a valid file path. The path should start with '/' and should not contain '..'"]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['ha.zookeeper.parent-znode', 'hadoop.ssl.server.conf'], 'reason': ["The property 'ha.zookeeper.parent-znode' has the value '/valid/file1' which is not a valid znode path.", "The property 'hadoop.ssl.server.conf' has the value '/valid/file1' which is not a valid file path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ha.zookeeper.parent-znode	hadoop.ssl.server.conf
+[Ciri] Reason for ha.zookeeper.parent-znode: The property 'ha.zookeeper.parent-znode' has the value '/valid/file1' which is not a valid znode path.
+[Ciri] Reason for hadoop.ssl.server.conf: The property 'hadoop.ssl.server.conf' has the value '/valid/file1' which is not a valid file path. The path should start with '/' and should not contain '..'

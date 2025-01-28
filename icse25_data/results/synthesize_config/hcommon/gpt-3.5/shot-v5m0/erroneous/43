@@ -1,0 +1,17 @@
+Correct shot number:
+[14, 13, 11, 8, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable', 'ipc.[port_number].weighted-cost.lockfree', 'rpc.metrics.quantile.enable', 'hadoop.registry.zk.root'], 'reason': ["Invalid value format. The value should be in the format of an IP address for 'fs.ftp.host'.", "Invalid value format. The value should be a numeric value followed by a suffix from the set {K,M,G,T,P} for 'fs.s3a.block.size'.", "Invalid value format. The value should be a list of integers enclosed in square brackets for 'ipc.[port_number].decay-scheduler.thresholds'.", "Invalid value format. The value should be a boolean (true/false) for 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable'.", "Invalid value format. The value should be a numeric value for 'ipc.[port_number].weighted-cost.lockfree'.", "Invalid value format. The value should be a boolean (true/false) for 'rpc.metrics.quantile.enable'.", "Invalid value format. The value should be a valid Zookeeper node path for 'hadoop.registry.zk.root'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.block.size	ipc.[port_number].decay-scheduler.thresholds	ipc.[port_number].decay-scheduler.backoff.responsetime.enable	ipc.[port_number].weighted-cost.lockfree	rpc.metrics.quantile.enable	hadoop.registry.zk.root
+[Ciri] Reason for fs.ftp.host: Invalid value format. The value should be in the format of an IP address for 'fs.ftp.host'.
+[Ciri] Reason for fs.s3a.block.size: Invalid value format. The value should be a numeric value followed by a suffix from the set {K,M,G,T,P} for 'fs.s3a.block.size'.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: Invalid value format. The value should be a list of integers enclosed in square brackets for 'ipc.[port_number].decay-scheduler.thresholds'.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.enable: Invalid value format. The value should be a boolean (true/false) for 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable'.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: Invalid value format. The value should be a numeric value for 'ipc.[port_number].weighted-cost.lockfree'.
+[Ciri] Reason for rpc.metrics.quantile.enable: Invalid value format. The value should be a boolean (true/false) for 'rpc.metrics.quantile.enable'.
+[Ciri] Reason for hadoop.registry.zk.root: Invalid value format. The value should be a valid Zookeeper node path for 'hadoop.registry.zk.root'.

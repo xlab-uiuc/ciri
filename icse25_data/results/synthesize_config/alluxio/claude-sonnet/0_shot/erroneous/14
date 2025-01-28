@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.version=1', 'alluxio.worker.keytab.file=/valid/file1'], 'reason': ["The property 'alluxio.underfs.gcs.version' is deprecated in Alluxio 2.5.0 and should not be used.", "The property 'alluxio.worker.keytab.file' is not a valid Alluxio configuration property in version 2.5.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.gcs.version=1	alluxio.worker.keytab.file=/valid/file1
+[Ciri] Reason for alluxio.underfs.gcs.version=1: The property 'alluxio.underfs.gcs.version' is deprecated in Alluxio 2.5.0 and should not be used.
+[Ciri] Reason for alluxio.worker.keytab.file=/valid/file1: The property 'alluxio.worker.keytab.file' is not a valid Alluxio configuration property in version 2.5.0.

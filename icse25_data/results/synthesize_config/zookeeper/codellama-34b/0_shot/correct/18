@@ -1,0 +1,37 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'dataDir'], 'reason': ['secureClientPort is not a valid property', 'dataDir must be an absolute path']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['Duplicate server entries found. Each server must have a unique ID.', 'Duplicate server entries found. Each server must have a unique ID.', 'Duplicate server entries found. Each server must have a unique ID.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'secureClientPort'], 'reason': ['dataDir is not a valid directory', 'secureClientPort is not a valid port']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'secureClientPort'], 'reason': ['quorum.auth.kerberos.servicePrincipal is not a valid property for zookeeper version 3.7.0', 'secureClientPort is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['secureClientPort is not a valid port number', 'quorum.auth.kerberos.servicePrincipal is not a valid Kerberos principal']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'secureClientPortAddress', 'secureClientPortAddress'], 'reason': ['secureClientPort and secureClientPortAddress are mutually exclusive, you can only have one of them', 'secureClientPortAddress is deprecated, use clientPortAddress instead', 'secureClientPortAddress is deprecated, use clientPortAddress instead']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'dataDir'], 'reason': ['secureClientPort is not a valid property name', 'dataDir is not a valid property name']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'secureClientPort', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['dataDir cannot be a subdirectory of the parent directory', 'secureClientPort is not a valid port number', 'quorum.auth.kerberos.servicePrincipal is not a valid Kerberos principal']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'dataDir', 'dataLogDir'], 'reason': ['secureClientPort is not a valid port number', 'dataDir is not a valid directory', 'dataLogDir is not a valid directory']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['secureClientPort is not a valid port number', 'quorum.auth.kerberos.servicePrincipal is not a valid Kerberos principal']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir and dataLogDir cannot be the same directory']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['secureClientPort is not a valid property', 'quorum.auth.kerberos.servicePrincipal is not a valid property']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPort	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid property
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is not a valid Kerberos principal

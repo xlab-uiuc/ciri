@@ -1,0 +1,54 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'USE_DEPRECATED_PYTZ'], 'reason': ['DEBUG is not a valid parameter for Django 4.0', 'USE_DEPRECATED_PYTZ is not a valid parameter for Django 4.0']}
+
+{'hasError': True, 'errParameter': ['ALLOWED_HOSTS', 'TIME_ZONE', 'USE_DEPRECATED_PYTZ'], 'reason': ['ALLOWED_HOSTS should be a list of strings, not a string', 'TIME_ZONE should be a string, not a list', 'USE_DEPRECATED_PYTZ is not a valid setting']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'TIME_ZONE', 'USE_DEPRECATED_PYTZ'], 'reason': ['DEBUG is not a valid boolean.', 'TIME_ZONE is not a valid timezone.', 'USE_DEPRECATED_PYTZ is not a valid boolean.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATABASES'], 'reason': ['DATABASES is not a valid parameter for Django 4.0']}
+
+{'hasError': True, 'errParameter': ['SECRET_KEY', 'ALLOWED_HOSTS'], 'reason': ['SECRET_KEY should be a 50 character string of random letters and numbers', 'ALLOWED_HOSTS should be a list of strings']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'USE_DEPRECATED_PYTZ'], 'reason': ['DEBUG is not a valid parameter for Django 4.0', 'USE_DEPRECATED_PYTZ is not a valid parameter for Django 4.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECRET_KEY', 'ALLOWED_HOSTS'], 'reason': ['SECRET_KEY is not set', 'ALLOWED_HOSTS is not set']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'ALLOWED_HOSTS', 'SECRET_KEY'], 'reason': ['DEBUG should be a boolean', 'ALLOWED_HOSTS should be a list', 'SECRET_KEY should be a string']}
+
+{'hasError': True, 'errParameter': ['DATABASES', 'TIME_ZONE', 'USE_DEPRECATED_PYTZ'], 'reason': ['DATABASES is not a valid parameter', 'TIME_ZONE is not a valid parameter', 'USE_DEPRECATED_PYTZ is not a valid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'USE_DEPRECATED_PYTZ'], 'reason': ['DEBUG is not a valid parameter for Django 4.0', 'USE_DEPRECATED_PYTZ is not a valid parameter for Django 4.0']}
+
+{'hasError': True, 'errParameter': ['SECRET_KEY', 'ALLOWED_HOSTS', 'X_FRAME_OPTIONS', 'THOUSAND_SEPARATOR', 'USE_X_FORWARDED_HOST'], 'reason': ['SECRET_KEY is not a valid key.', 'ALLOWED_HOSTS is not a valid key.', 'X_FRAME_OPTIONS is not a valid key.', 'THOUSAND_SEPARATOR is not a valid key.', 'USE_X_FORWARDED_HOST is not a valid key.']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'ALLOWED_HOSTS', 'USE_X_FORWARDED_HOST'], 'reason': ['DEBUG is not a valid boolean value', 'ALLOWED_HOSTS is not a valid list', 'USE_X_FORWARDED_HOST is not a valid boolean value']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'USE_DEPRECATED_PYTZ'], 'reason': ['DEBUG is not a valid parameter for Django 4.0', 'USE_DEPRECATED_PYTZ is not a valid parameter for Django 4.0']}
+
+{'hasError': True, 'errParameter': ['SECRET_KEY', 'ALLOWED_HOSTS', 'DATABASES', 'TIME_ZONE'], 'reason': ['SECRET_KEY is not a valid secret key', 'ALLOWED_HOSTS is not a valid list of hosts', 'DATABASES is not a valid database configuration', 'TIME_ZONE is not a valid time zone']}
+
+{'hasError': True, 'errParameter': ['SECRET_KEY', 'ALLOWED_HOSTS', 'DATABASES'], 'reason': ['SECRET_KEY is not set', 'ALLOWED_HOSTS is not set', 'DATABASES is not set']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'USE_DEPRECATED_PYTZ'], 'reason': ['DEBUG is not a valid parameter for Django 4.0', 'USE_DEPRECATED_PYTZ is not a valid parameter for Django 4.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: DEBUG	SECRET_KEY	ALLOWED_HOSTS
+[Ciri] Reason for DEBUG: DEBUG should be a boolean
+[Ciri] Reason for SECRET_KEY: SECRET_KEY should be a string
+[Ciri] Reason for ALLOWED_HOSTS: ALLOWED_HOSTS should be a list

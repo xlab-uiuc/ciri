@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type', 'alluxio.user.client.cache.timeout.duration'], 'reason': ['In Alluxio 2.5.0, the valid options for alluxio.master.journal.type are UFS and EMBEDDED. CIRI is not a valid option.', 'alluxio.user.client.cache.timeout.duration should be a non-negative value. -1 is invalid.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.journal.type	alluxio.user.client.cache.timeout.duration
+[Ciri] Reason for alluxio.master.journal.type: In Alluxio 2.5.0, the valid options for alluxio.master.journal.type are UFS and EMBEDDED. CIRI is not a valid option.
+[Ciri] Reason for alluxio.user.client.cache.timeout.duration: alluxio.user.client.cache.timeout.duration should be a non-negative value. -1 is invalid.

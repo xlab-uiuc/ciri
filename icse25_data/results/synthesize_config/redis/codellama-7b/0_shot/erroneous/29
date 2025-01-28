@@ -1,0 +1,25 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'protected-mode', 'enable-protected-configs', 'acllog-max-len', 'slowlog-log-slower-than', 'replica-serve-stale-data', 'appenddirname', 'replica-announce-port'], 'reason': ['repl-diskless-load must be either NONE or SOFT', 'protected-mode must be either yes or no', 'enable-protected-configs must be either yes or no', 'acllog-max-len must be an integer', 'slowlog-log-slower-than must be an integer', 'replica-serve-stale-data must be either yes or no', 'appenddirname must be a valid directory', 'replica-announce-port must be a valid port number']}
+
+{'hasError': True, 'errParameter': ['replica-announce-port'], 'reason': ['The value of replica-announce-port is not a valid port number.']}
+
+{'hasError': True, 'errParameter': ['protected-mode', 'acllog-max-len', 'replica-serve-stale-data', 'appenddirname', 'replica-announce-port'], 'reason': ['protected-mode must be one of [yes, no]', 'acllog-max-len must be a positive integer', 'replica-serve-stale-data must be one of [yes, no]', 'appenddirname must be a valid directory path', 'replica-announce-port must be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-diskless-load'], 'reason': ["The parameter 'repl-diskless-load' is not supported in redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['protected-mode', 'acllog-max-len', 'slowlog-log-slower-than', 'replica-serve-stale-data', 'appenddirname', 'replica-announce-port'], 'reason': ['protected-mode must be either yes or no', 'acllog-max-len must be an integer', 'slowlog-log-slower-than must be an integer', 'replica-serve-stale-data must be either yes or no', 'appenddirname must be a string', 'replica-announce-port must be an integer']}
+
+{'hasError': True, 'errParameter': ['protected-mode', 'acllog-max-len', 'slowlog-log-slower-than', 'replica-serve-stale-data', 'appenddirname', 'replica-announce-port'], 'reason': ['protected-mode must be either yes or no', 'acllog-max-len must be an integer', 'slowlog-log-slower-than must be an integer', 'replica-serve-stale-data must be either yes or no', 'appenddirname must be a valid directory', 'replica-announce-port must be an integer']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: protected-mode	acllog-max-len	slowlog-log-slower-than	replica-serve-stale-data	appenddirname	replica-announce-port
+[Ciri] Reason for protected-mode: protected-mode must be either yes or no
+[Ciri] Reason for acllog-max-len: acllog-max-len must be an integer
+[Ciri] Reason for slowlog-log-slower-than: slowlog-log-slower-than must be an integer
+[Ciri] Reason for replica-serve-stale-data: replica-serve-stale-data must be either yes or no
+[Ciri] Reason for appenddirname: appenddirname must be a valid directory
+[Ciri] Reason for replica-announce-port: replica-announce-port must be an integer

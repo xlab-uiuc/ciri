@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'enable-pprof', 'proxy-write-timeout'], 'reason': ["The 'proxy-refresh-interval' parameter is not applicable in etcd version 3.5.0 as proxy mode has been deprecated.", "The 'enable-pprof' parameter does not exist in the etcd configuration. Profiling is controlled through different means.", "The 'proxy-write-timeout' parameter is not applicable in etcd version 3.5.0 as proxy mode has been deprecated."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-refresh-interval	enable-pprof	proxy-write-timeout
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter is not applicable in etcd version 3.5.0 as proxy mode has been deprecated.
+[Ciri] Reason for enable-pprof: The 'enable-pprof' parameter does not exist in the etcd configuration. Profiling is controlled through different means.
+[Ciri] Reason for proxy-write-timeout: The 'proxy-write-timeout' parameter is not applicable in etcd version 3.5.0 as proxy mode has been deprecated.

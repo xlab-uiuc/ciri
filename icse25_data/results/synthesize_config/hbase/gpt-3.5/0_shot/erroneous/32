@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.ipc.server.callqueue.read.ratio', 'hbase.offpeak.end.hour'], 'reason': ['Invalid value format for hbase.regionserver.info.bindAddress. It should be a valid IP address.', 'Invalid value format for hbase.ipc.server.callqueue.read.ratio. It should be a value between 0.0 and 1.0.', 'Invalid value format for hbase.offpeak.end.hour. It should be an integer between 0 and 23, or -1 to disable off-peak.']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.ipc.server.callqueue.read.ratio', 'hbase.offpeak.end.hour', 'hbase.regionserver.minorcompaction.pagecache.drop'], 'reason': ['Invalid value format for hbase.regionserver.info.bindAddress. It should be a valid IP address.', 'Invalid value for hbase.ipc.server.callqueue.read.ratio. It should be a float value between 0.0 and 1.0.', 'Invalid value for hbase.offpeak.end.hour. It should be an integer between 0 and 23, or -1 to disable off-peak.', 'Invalid value for hbase.regionserver.minorcompaction.pagecache.drop. It should be a boolean value (true/false).']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.ipc.server.callqueue.read.ratio', 'hbase.offpeak.end.hour'], 'reason': ['Invalid value for hbase.regionserver.info.bindAddress. It should be a valid IP address.', 'Invalid value for hbase.ipc.server.callqueue.read.ratio. It should be between 0.0 and 1.0.', 'Invalid value for hbase.offpeak.end.hour. It should be an integer between 0 and 23, or -1 to disable off-peak.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.info.bindAddress	hbase.ipc.server.callqueue.read.ratio	hbase.offpeak.end.hour
+[Ciri] Reason for hbase.regionserver.info.bindAddress: Invalid value for hbase.regionserver.info.bindAddress. It should be a valid IP address.
+[Ciri] Reason for hbase.ipc.server.callqueue.read.ratio: Invalid value for hbase.ipc.server.callqueue.read.ratio. It should be between 0.0 and 1.0.
+[Ciri] Reason for hbase.offpeak.end.hour: Invalid value format for hbase.offpeak.end.hour. It should be an integer between 0 and 23, or -1 to disable off-peak.

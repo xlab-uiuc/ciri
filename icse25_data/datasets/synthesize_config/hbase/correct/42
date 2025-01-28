@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.handler.count</name>
+  <value>60</value>
+    <description>Count of RPC Listener instances spun up on RegionServers.
+      Same property is used by the Master for count of master handlers.
+      Too many handlers can be counter-productive. Make it a multiple of
+      CPU count. If mostly read-only, handlers count close to cpu count
+      does well. Start with twice the CPU count and tune from there.</description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.timeout.period</name>
+  <value>60000</value>
+    <description>Client scanner lease period in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.memstore.flush.size</name>
+  <value>268435456</value>
+    <description>
+    Memstore will be flushed to disk if size of the memstore
+    exceeds this number of bytes.  Value is checked by a thread that runs
+    every hbase.server.thread.wakefrequency.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.majorcompaction</name>
+  <value>302400000</value>
+    <description>Time between major compactions, expressed in milliseconds. Set to 0 to disable
+      time-based automatic major compactions. User-requested and size-based major compactions will
+      still run. This value is multiplied by hbase.hregion.majorcompaction.jitter to cause
+      compaction to start at a somewhat-random time during a given window of time. The default value
+      is 7 days, expressed in milliseconds. If major compactions are causing disruption in your
+      environment, you can configure them to run at off-peak times for your deployment, or disable
+      time-based major compactions by setting this parameter to 0, and run major compactions in a
+      cron job or by another external mechanism.</description>
+</property>
+
+<property>
+  <name>hbase.rest.support.proxyuser</name>
+  <value>false</value>
+    <description>Enables running the REST server to support proxy-user mode.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.maxWorkerThreads</name>
+  <value>2000</value>
+    <description>The maximum size of the thread pool. When the pending request queue
+    overflows, new threads are created until their number reaches this number.
+    After that, the server starts dropping connections.</description>
+</property>
+
+<property>
+  <name>hbase.region.replica.replication.enabled</name>
+  <value>false</value>
+    <description>
+      Whether asynchronous WAL replication to the secondary region replicas is enabled or not.
+      If this is enabled, a replication peer named "region_replica_replication" will be created
+      which will tail the logs and replicate the mutations to region replicas for tables that
+      have region replication > 1. If this is enabled once, disabling this replication also
+      requires disabling the replication peer using shell or Admin java class.
+      Replication to secondary region replicas works over standard inter-cluster replication.
+    </description>
+</property>
+
+<property>
+  <name>hbase.snapshot.region.timeout</name>
+  <value>150000</value>
+    <description>
+       Timeout for regionservers to keep threads in snapshot request pool waiting.
+    </description>
+</property>
+
+</configuration>

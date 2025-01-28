@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.entry.buffer.count', 'alluxio.worker.allocator.class', 'alluxio.worker.tieredstore.free.ahead.bytes', 'alluxio.master.file.access.time.updater.shutdown.timeout'], 'reason': ['alluxio.master.backup.entry.buffer.count: The value of this property is not a valid integer. Please check the value.', 'alluxio.worker.allocator.class: This property is not supported in Alluxio 2.5.0. Please check the Alluxio documentation for the correct configuration.', 'alluxio.worker.tieredstore.free.ahead.bytes: This property is not supported in Alluxio 2.5.0. Please check the Alluxio documentation for the correct configuration.', 'alluxio.master.file.access.time.updater.shutdown.timeout: This property is not supported in Alluxio 2.5.0. Please check the Alluxio documentation for the correct configuration.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.master.backup.entry.buffer.count	alluxio.worker.allocator.class	alluxio.worker.tieredstore.free.ahead.bytes	alluxio.master.file.access.time.updater.shutdown.timeout
+[Ciri] Reason for alluxio.master.backup.entry.buffer.count: alluxio.master.backup.entry.buffer.count: The value of this property is not a valid integer. Please check the value.
+[Ciri] Reason for alluxio.worker.allocator.class: alluxio.worker.allocator.class: This property is not supported in Alluxio 2.5.0. Please check the Alluxio documentation for the correct configuration.
+[Ciri] Reason for alluxio.worker.tieredstore.free.ahead.bytes: alluxio.worker.tieredstore.free.ahead.bytes: This property is not supported in Alluxio 2.5.0. Please check the Alluxio documentation for the correct configuration.
+[Ciri] Reason for alluxio.master.file.access.time.updater.shutdown.timeout: alluxio.master.file.access.time.updater.shutdown.timeout: This property is not supported in Alluxio 2.5.0. Please check the Alluxio documentation for the correct configuration.

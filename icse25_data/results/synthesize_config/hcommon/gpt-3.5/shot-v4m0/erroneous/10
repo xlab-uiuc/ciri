@@ -1,0 +1,16 @@
+Correct shot number:
+[14, 8, 16, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.buffer.dir', 'fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.kill.max', 'ipc.client.low-latency', 'ftp.client-write-packet-size'], 'reason': ["Invalid property name 'fs.ftp.host'.", "Invalid property name 'fs.s3a.buffer.dir'.", "Invalid property name 'fs.s3a.s3guard.ddb.table.capacity.write'.", "Invalid property name 'ipc.client.kill.max'.", "Invalid property name 'ipc.client.low-latency'.", "Duplicate property name 'ftp.client-write-packet-size'."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.buffer.dir	fs.s3a.s3guard.ddb.table.capacity.write	ipc.client.kill.max	ipc.client.low-latency	ftp.client-write-packet-size
+[Ciri] Reason for fs.ftp.host: Invalid property name 'fs.ftp.host'.
+[Ciri] Reason for fs.s3a.buffer.dir: Invalid property name 'fs.s3a.buffer.dir'.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: Invalid property name 'fs.s3a.s3guard.ddb.table.capacity.write'.
+[Ciri] Reason for ipc.client.kill.max: Invalid property name 'ipc.client.kill.max'.
+[Ciri] Reason for ipc.client.low-latency: Invalid property name 'ipc.client.low-latency'.
+[Ciri] Reason for ftp.client-write-packet-size: Duplicate property name 'ftp.client-write-packet-size'.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'maxSessionTimeout'], 'reason': ['The autopurge.purgeInterval property should be a positive integer value representing the number of hours to keep transaction log files. Setting it to -1 disables automatic purging of old transaction log files, which can lead to disk space issues over time.', 'The maxSessionTimeout property should be a positive integer value representing the maximum session timeout in milliseconds that the server will allow the client to negotiate. Setting it to -1 is not a valid value and can cause issues with client connections.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autopurge.purgeInterval	maxSessionTimeout
+[Ciri] Reason for autopurge.purgeInterval: The autopurge.purgeInterval property should be a positive integer value representing the number of hours to keep transaction log files. Setting it to -1 disables automatic purging of old transaction log files, which can lead to disk space issues over time.
+[Ciri] Reason for maxSessionTimeout: The maxSessionTimeout property should be a positive integer value representing the maximum session timeout in milliseconds that the server will allow the client to negotiate. Setting it to -1 is not a valid value and can cause issues with client connections.

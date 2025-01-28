@@ -1,0 +1,31 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum', 'archive_timeout', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ["The value of autovacuum should be either 'on' or 'off'.", 'The value of archive_timeout should be a positive integer.', 'The value of tcp_keepalives_interval should be a positive integer.', 'The value of vacuum_cost_page_miss should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['archive_timeout', 'autovacuum', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ['archive_timeout is not a valid parameter for postgresql version 13.0', 'autovacuum is not a valid parameter for postgresql version 13.0', 'tcp_keepalives_interval is not a valid parameter for postgresql version 13.0', 'vacuum_cost_page_miss is not a valid parameter for postgresql version 13.0']}
+
+{'hasError': True, 'errParameter': ['archive_mode', 'archive_command', 'archive_timeout', 'autovacuum', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ['archive_mode must be either "off" or "on"', 'archive_command must be a valid command', 'archive_timeout must be a positive integer', 'autovacuum must be either "on" or "off"', 'tcp_keepalives_interval must be a positive integer', 'vacuum_cost_page_miss must be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_files_per_process', 'archive_timeout', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ['max_files_per_process must be an integer', 'archive_timeout must be an integer', 'tcp_keepalives_interval must be an integer', 'vacuum_cost_page_miss must be an integer']}
+
+{'hasError': True, 'errParameter': ['archive_mode', 'archive_command', 'archive_timeout', 'autovacuum', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ["archive_mode must be either 'always' or 'on'", 'archive_command must be a valid command', 'archive_timeout must be a positive integer', "autovacuum must be either 'on' or 'off'", 'tcp_keepalives_interval must be a positive integer', 'vacuum_cost_page_miss must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['max_files_per_process', 'archive_timeout', 'tcp_keepalives_interval'], 'reason': ['max_files_per_process must be a positive integer', 'archive_timeout must be a positive integer', 'tcp_keepalives_interval must be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_files_per_process'], 'reason': ['max_files_per_process must be an integer greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_files_per_process', 'archive_timeout', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ['The value of max_files_per_process must be greater than 0.', 'The value of archive_timeout must be greater than 0.', 'The value of tcp_keepalives_interval must be greater than 0.', 'The value of vacuum_cost_page_miss must be greater than 0.']}
+
+{'hasError': True, 'errParameter': ['max_files_per_process', 'archive_timeout', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ['max_files_per_process must be a positive integer.', 'archive_timeout must be a positive integer.', 'tcp_keepalives_interval must be a positive integer.', 'vacuum_cost_page_miss must be a positive integer.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: max_files_per_process	archive_timeout	tcp_keepalives_interval	vacuum_cost_page_miss
+[Ciri] Reason for max_files_per_process: The value of max_files_per_process must be greater than 0.
+[Ciri] Reason for archive_timeout: The value of archive_timeout must be greater than 0.
+[Ciri] Reason for tcp_keepalives_interval: tcp_keepalives_interval must be a positive integer.
+[Ciri] Reason for vacuum_cost_page_miss: The value of vacuum_cost_page_miss must be greater than 0.

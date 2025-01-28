@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.https.keystore.resource', 'dfs.namenode.storageinfo.defragment.timeout.ms', 'dfs.qjournal.http.open.timeout.ms'], 'reason': ["The property 'dfs.client.https.keystore.resource' is not a valid configuration parameter in HDFS 3.3.0.", "The property 'dfs.namenode.storageinfo.defragment.timeout.ms' is not a valid configuration parameter in HDFS 3.3.0.", "The property 'dfs.qjournal.http.open.timeout.ms' is not a valid configuration parameter in HDFS 3.3.0. The correct property name is 'dfs.qjournal.queued-edits.http.open-timeout.ms'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.client.https.keystore.resource	dfs.namenode.storageinfo.defragment.timeout.ms	dfs.qjournal.http.open.timeout.ms
+[Ciri] Reason for dfs.client.https.keystore.resource: The property 'dfs.client.https.keystore.resource' is not a valid configuration parameter in HDFS 3.3.0.
+[Ciri] Reason for dfs.namenode.storageinfo.defragment.timeout.ms: The property 'dfs.namenode.storageinfo.defragment.timeout.ms' is not a valid configuration parameter in HDFS 3.3.0.
+[Ciri] Reason for dfs.qjournal.http.open.timeout.ms: The property 'dfs.qjournal.http.open.timeout.ms' is not a valid configuration parameter in HDFS 3.3.0. The correct property name is 'dfs.qjournal.queued-edits.http.open-timeout.ms'.

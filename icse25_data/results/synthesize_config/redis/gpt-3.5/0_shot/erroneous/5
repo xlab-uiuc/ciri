@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'replica-priority', 'appendfsync', 'aof-rewrite-incremental-fsync', 'oom-score-adj-values', 'enable-debug-command'], 'reason': ["Invalid parameter 'repl-backlog-size'. It should be 'repl-backlog-size-mb' instead.", "Invalid parameter 'replica-priority'. It should be 'replica-priority' instead.", "Invalid value for 'appendfsync'. Valid values are 'always', 'everysec', 'no'.", "Invalid value for 'aof-rewrite-incremental-fsync'. Valid values are 'yes' or 'no'.", "Invalid value for 'oom-score-adj-values'. It should be a single value or a range of values separated by '-'.", "Invalid value for 'enable-debug-command'. Valid values are 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'replica-priority', 'appendfsync', 'aof-rewrite-incremental-fsync', 'oom-score-adj-values', 'enable-debug-command'], 'reason': ['repl-backlog-size should be specified in bytes, e.g., 1mb for 1 megabyte.', 'replica-priority should be an integer value between 0 and 100.', "appendfsync value should be one of 'always', 'everysec', or 'no'.", "aof-rewrite-incremental-fsync should be either 'yes' or 'no'.", 'oom-score-adj-values should have three integer values separated by spaces.', "enable-debug-command should be either 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'replica-priority', 'appendfilename', 'appendfsync', 'aof-rewrite-incremental-fsync', 'oom-score-adj-values', 'enable-debug-command'], 'reason': ["Invalid parameter repl-backlog-size. Use 'repl-backlog-size' instead of 'repl-backlog-size'.", "Invalid parameter replica-priority. Use 'replica-priority' instead of 'replica-priority'.", "Invalid parameter appendfilename. Use 'appendfilename' instead of 'appendfilename'.", "Invalid parameter appendfsync. Use 'appendfsync' instead of 'appendfsync'.", "Invalid parameter aof-rewrite-incremental-fsync. Use 'aof-rewrite-incremental-fsync' instead of 'aof-rewrite-incremental-fsync'.", "Invalid parameter oom-score-adj-values. Use 'oom-score-adj-values' instead of 'oom-score-adj-values'.", "Invalid parameter enable-debug-command. Use 'enable-debug-command' instead of 'enable-debug-command'."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: repl-backlog-size	replica-priority	appendfsync	aof-rewrite-incremental-fsync	oom-score-adj-values	enable-debug-command
+[Ciri] Reason for repl-backlog-size: repl-backlog-size should be specified in bytes, e.g., 1mb for 1 megabyte.
+[Ciri] Reason for replica-priority: replica-priority should be an integer value between 0 and 100.
+[Ciri] Reason for appendfsync: appendfsync value should be one of 'always', 'everysec', or 'no'.
+[Ciri] Reason for aof-rewrite-incremental-fsync: Invalid value for 'aof-rewrite-incremental-fsync'. Valid values are 'yes' or 'no'.
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values should have three integer values separated by spaces.
+[Ciri] Reason for enable-debug-command: Invalid value for 'enable-debug-command'. Valid values are 'yes' or 'no'.

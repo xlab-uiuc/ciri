@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['jemalloc-bg-thread', 'enable-debug-command', 'appendfilename', 'tls-protocols', 'set-proc-title'], 'reason': ['jemalloc-bg-thread is not a valid configuration parameter for Redis 7.0.0', 'enable-debug-command is not a valid configuration parameter for Redis 7.0.0', 'appendfilename should not be enclosed in quotes', 'tls-protocols should not be enclosed in quotes', 'set-proc-title is not a valid configuration parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['jemalloc-bg-thread', 'enable-debug-command', 'appendfilename', 'tls-protocols', 'set-proc-title'], 'reason': ['jemalloc-bg-thread is not a valid configuration parameter for Redis 7.0.0', 'enable-debug-command is not a valid configuration parameter for Redis 7.0.0', 'appendfilename should be specified without quotes', 'tls-protocols should not be enclosed in quotes', 'set-proc-title is not a valid configuration parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['jemalloc-bg-thread', 'enable-debug-command', 'tls-protocols', 'set-proc-title'], 'reason': ["Invalid parameter 'jemalloc-bg-thread'", "Invalid parameter 'enable-debug-command'", "Invalid parameter 'tls-protocols'", "Invalid parameter 'set-proc-title'"]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: jemalloc-bg-thread	enable-debug-command	appendfilename	tls-protocols	set-proc-title
+[Ciri] Reason for jemalloc-bg-thread: jemalloc-bg-thread is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for enable-debug-command: enable-debug-command is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for appendfilename: appendfilename should be specified without quotes
+[Ciri] Reason for tls-protocols: tls-protocols should not be enclosed in quotes
+[Ciri] Reason for set-proc-title: set-proc-title is not a valid configuration parameter for Redis 7.0.0

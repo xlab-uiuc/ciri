@@ -1,0 +1,26 @@
+Wrong shot number:
+[7, 5, 6]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age'], 'reason': ["The value of the property 'vacuum_freeze_min_age' should be greater than 0."]}
+
+{'hasError': True, 'errParameter': ['wal_receiver_timeout'], 'reason': ["The value of the property 'wal_receiver_timeout' should be greater than or equal to the value of the property 'wal_sender_timeout'."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age'], 'reason': ["The value of the property 'vacuum_freeze_min_age' should be greater than or equal to the value of the property 'autovacuum_freeze_min_age'."]}
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age'], 'reason': ["The value of the property 'vacuum_freeze_min_age' should be greater than or equal to the value of the property 'autovacuum_freeze_min_age'."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: vacuum_freeze_min_age
+[Ciri] Reason for vacuum_freeze_min_age: The value of the property 'vacuum_freeze_min_age' should be greater than or equal to the value of the property 'autovacuum_freeze_min_age'.

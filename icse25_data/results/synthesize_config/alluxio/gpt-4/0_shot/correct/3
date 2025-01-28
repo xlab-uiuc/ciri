@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.shell.backup.state.lock.timeout', 'alluxio.underfs.web.connnection.timeout', 'alluxio.master.tieredstore.global.level2.alias'], 'reason': ["The property 'alluxio.master.shell.backup.state.lock.timeout' is not recognized. It might be misspelled or not applicable to Alluxio version 2.5.0.", "The property 'alluxio.underfs.web.connnection.timeout' contains a typo. It should be 'alluxio.underfs.web.connection.timeout'.", "The property 'alluxio.master.tieredstore.global.level2.alias' is incorrect because 'alluxio.master.tieredstore.global.levels=1' indicates there is only one tier level. Therefore, specifying a level 2 alias is not applicable."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.shell.backup.state.lock.timeout	alluxio.underfs.web.connnection.timeout	alluxio.master.tieredstore.global.level2.alias
+[Ciri] Reason for alluxio.master.shell.backup.state.lock.timeout: The property 'alluxio.master.shell.backup.state.lock.timeout' is not recognized. It might be misspelled or not applicable to Alluxio version 2.5.0.
+[Ciri] Reason for alluxio.underfs.web.connnection.timeout: The property 'alluxio.underfs.web.connnection.timeout' contains a typo. It should be 'alluxio.underfs.web.connection.timeout'.
+[Ciri] Reason for alluxio.master.tieredstore.global.level2.alias: The property 'alluxio.master.tieredstore.global.level2.alias' is incorrect because 'alluxio.master.tieredstore.global.levels=1' indicates there is only one tier level. Therefore, specifying a level 2 alias is not applicable.

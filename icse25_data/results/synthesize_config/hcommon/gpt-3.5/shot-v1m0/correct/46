@@ -1,0 +1,13 @@
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.azure.user.agent.prefix', 'io.seqfile.compress.blocksize', 'ipc.[port_number].scheduler.priority.levels'], 'reason': ["The property 'fs.azure.user.agent.prefix' has an additional 'usage' tag which is not a standard configuration property.", "The property 'io.seqfile.compress.blocksize' has an additional 'usage' tag which is not a standard configuration property.", "The property 'ipc.[port_number].scheduler.priority.levels' contains invalid characters in the name."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.azure.user.agent.prefix	io.seqfile.compress.blocksize	ipc.[port_number].scheduler.priority.levels
+[Ciri] Reason for fs.azure.user.agent.prefix: The property 'fs.azure.user.agent.prefix' has an additional 'usage' tag which is not a standard configuration property.
+[Ciri] Reason for io.seqfile.compress.blocksize: The property 'io.seqfile.compress.blocksize' has an additional 'usage' tag which is not a standard configuration property.
+[Ciri] Reason for ipc.[port_number].scheduler.priority.levels: The property 'ipc.[port_number].scheduler.priority.levels' contains invalid characters in the name.

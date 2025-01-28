@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.connnection.timeout', 'alluxio.master.tieredstore.global.level2.alias'], 'reason': ["The property 'alluxio.underfs.web.connnection.timeout' has a typo. It should be 'alluxio.underfs.web.connection.timeout' with a single 'n' in 'connection'.", "The property 'alluxio.master.tieredstore.global.level2.alias' is invalid because 'alluxio.master.tieredstore.global.levels' is set to 1. There should not be a level2 alias when there is only 1 level defined."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.web.connnection.timeout	alluxio.master.tieredstore.global.level2.alias
+[Ciri] Reason for alluxio.underfs.web.connnection.timeout: The property 'alluxio.underfs.web.connnection.timeout' has a typo. It should be 'alluxio.underfs.web.connection.timeout' with a single 'n' in 'connection'.
+[Ciri] Reason for alluxio.master.tieredstore.global.level2.alias: The property 'alluxio.master.tieredstore.global.level2.alias' is invalid because 'alluxio.master.tieredstore.global.levels' is set to 1. There should not be a level2 alias when there is only 1 level defined.

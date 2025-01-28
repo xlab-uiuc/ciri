@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.blocksize</name>
+  <value>134217728</value>
+  <description>
+      The default block size for new files, in bytes.
+      You can use the following suffix (case insensitive):
+      k(kilo), m(mega), g(giga), t(tera), p(peta), e(exa) to specify the size (such as 128k, 512m, 1g, etc.),
+      Or provide complete size in bytes (such as 134217728 for 128 MB).
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.redundancy.queue.restart.iterations</name>
+  <value>1200</value>
+  <description>When picking blocks from the low redundancy queues, reset the
+    bookmarked iterator after the set number of iterations to ensure any blocks
+    which were not processed on the first pass are retried before the iterators
+    would naturally reach their end point. This ensures blocks are retried
+    more frequently when there are many pending blocks or blocks are
+    continuously added to the queues preventing the iterator reaching its
+    natural endpoint.
+    The default setting of 2400 combined with the default of
+    dfs.namenode.redundancy.interval.seconds means the iterators will be reset
+    approximately every 2 hours.
+    Setting this parameter to zero disables the feature and the iterators will
+    be reset only when the end of all queues has been reached.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.path.based.cache.block.map.allocation.percent</name>
+  <value>0.25</value>
+  <description>
+    The percentage of the Java heap which we will allocate to the cached blocks
+    map.  The cached blocks map is a hash map which uses chained hashing.
+    Smaller maps may be accessed more slowly if the number of cached blocks is
+    large; larger maps will consume more memory.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.fs-limits.max-xattr-size</name>
+  <value>16384</value>
+  <description>
+    The maximum combined size of the name and value of an extended attribute
+    in bytes. It should be larger than 0, and less than or equal to maximum
+    size hard limit which is 32768.
+    Support multiple size unit suffix(case insensitive), as described in
+    dfs.blocksize.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.cache.revocation.polling.ms</name>
+  <value>250</value>
+  <description>How often the DataNode should poll to see if the clients have
+    stopped using a replica that the DataNode wants to uncache.
+  </description>
+</property>
+
+<property>
+  <name>dfs.block.misreplication.processing.limit</name>
+  <value>20000</value>
+  <description>
+    Maximum number of blocks to process for initializing replication queues.
+  </description>
+</property>
+
+<property>
+  <name>dfs.content-summary.sleep-microsec</name>
+  <value>1000</value>
+  <description>
+    The length of time in microseconds to put the thread to sleep, between reaquiring the locks
+    in content summary computation.
+  </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.leveldb.path</name>
+  <value>/valid/file1</value>
+    <description>
+      The read/write path for the leveldb-based alias map
+      (org.apache.hadoop.hdfs.server.common.blockaliasmap.impl.LevelDBFileRegionAliasMap).
+      The path has to be explicitly configured when this alias map is used.
+    </description>
+</property>
+
+</configuration>

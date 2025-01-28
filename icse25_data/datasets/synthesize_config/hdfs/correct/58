@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.backup.http-address</name>
+  <value>0.0.0.0:3000</value>
+  <description>
+    The backup node http server address and port.
+    If the port is 0 then the server will start on a free port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.heartbeat.interval</name>
+  <value>1s</value>
+  <description>
+    Determines datanode heartbeat interval in seconds.
+    Can use the following suffix (case insensitive):
+    ms(millis), s(sec), m(min), h(hour), d(day)
+    to specify the time (such as 2s, 2m, 1h, etc.).
+    Or provide complete number in seconds (such as 30 for 30 seconds).
+    If no time unit is specified then seconds is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.service.handler.count</name>
+  <value>20</value>
+  <description>The number of Namenode RPC server threads that listen to
+  requests from DataNodes and from all other non-client nodes.
+  dfs.namenode.service.handler.count will be valid only if
+  dfs.namenode.servicerpc-address is configured.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.drop.cache.behind.writes</name>
+  <value>true</value>
+  <description>
+        In some workloads, the data written to HDFS is known to be significantly
+        large enough that it is unlikely to be useful to cache it in the
+        operating system buffer cache. In this case, the DataNode may be
+        configured to automatically purge all data from the buffer cache
+        after it is written to disk.
+
+        This may improve performance for some workloads by freeing buffer
+        cache space usage for more cacheable data.
+
+        If the Hadoop native libraries are not available, this configuration
+        has no effect.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.invalidate.work.pct.per.iteration</name>
+  <value>0.32f</value>
+  <description>
+    *Note*: Advanced property. Change with caution.
+    This determines the percentage amount of block
+    invalidations (deletes) to do over a single DN heartbeat
+    deletion command. The final deletion count is determined by applying this
+    percentage to the number of live nodes in the system.
+    The resultant number is the number of blocks from the deletion list
+    chosen for proper invalidation over a single heartbeat of a single DN.
+    Value should be a positive, non-zero percentage in float notation (X.Yf),
+    with 1.0f meaning 100%.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reencrypt.edek.threads</name>
+  <value>10</value>
+  <description>Maximum number of re-encrypt threads to contact the KMS
+    and re-encrypt the edeks.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.replication.max-streams-hard-limit</name>
+  <value>1</value>
+  <description>
+    Hard limit for all replication streams.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.blockreport.max.lock.hold.time</name>
+  <value>1</value>
+    <description>
+      The BlockReportProcessingThread max write lock hold time in ms.
+    </description>
+</property>
+
+</configuration>

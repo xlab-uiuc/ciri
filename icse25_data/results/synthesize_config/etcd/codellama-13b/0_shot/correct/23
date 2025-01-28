@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'auto-compaction-retention', 'name'], 'reason': ['proxy-write-timeout is not a valid property', 'auto-compaction-retention is not a valid property', 'name is not a valid property']}
+
+{'hasError': True, 'errParameter': ['proxy', 'heartbeat-interval', 'advertise-client-urls', 'initial-advertise-peer-urls', 'enable-v2', 'proxy-write-timeout', 'auto-compaction-retention', 'name'], 'reason': ['proxy is not a valid property', 'heartbeat-interval is not a valid property', 'advertise-client-urls is not a valid property', 'initial-advertise-peer-urls is not a valid property', 'enable-v2 is not a valid property', 'proxy-write-timeout is not a valid property', 'auto-compaction-retention is not a valid property', 'name is not a valid property']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'advertise-client-urls', 'initial-advertise-peer-urls', 'proxy-write-timeout', 'auto-compaction-retention', 'name'], 'reason': ['heartbeat-interval is not a valid property for etcd version 3.5.0', 'advertise-client-urls is not a valid property for etcd version 3.5.0', 'initial-advertise-peer-urls is not a valid property for etcd version 3.5.0', 'proxy-write-timeout is not a valid property for etcd version 3.5.0', 'auto-compaction-retention is not a valid property for etcd version 3.5.0', 'name is not a valid property for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'auto-compaction-retention'], 'reason': ['proxy-write-timeout is not a valid property for etcd version 3.5.0', 'auto-compaction-retention is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-write-timeout', 'auto-compaction-retention'], 'reason': ['heartbeat-interval should be a string', 'proxy-write-timeout should be a string', 'auto-compaction-retention should be a string']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-write-timeout', 'auto-compaction-retention'], 'reason': ['heartbeat-interval is not a valid property', 'proxy-write-timeout is not a valid property', 'auto-compaction-retention is not a valid property']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: heartbeat-interval	proxy-write-timeout	auto-compaction-retention
+[Ciri] Reason for heartbeat-interval: heartbeat-interval is not a valid property
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout is not a valid property
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention is not a valid property

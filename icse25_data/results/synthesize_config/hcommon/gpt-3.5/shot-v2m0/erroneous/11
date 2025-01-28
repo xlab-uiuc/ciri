@@ -1,0 +1,12 @@
+Correct shot number:
+[6, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'ipc.[port_number].backoff.enable'], 'reason': ["The property 'fs.ftp.timeout' has an unexpected 'usage' tag which is not a standard configuration attribute.", "The property 'ipc.[port_number].backoff.enable' contains square brackets in the name which is not allowed in a standard configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.timeout	ipc.[port_number].backoff.enable
+[Ciri] Reason for fs.ftp.timeout: The property 'fs.ftp.timeout' has an unexpected 'usage' tag which is not a standard configuration attribute.
+[Ciri] Reason for ipc.[port_number].backoff.enable: The property 'ipc.[port_number].backoff.enable' contains square brackets in the name which is not allowed in a standard configuration.

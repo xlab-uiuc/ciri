@@ -1,0 +1,14 @@
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.azure.user.agent.prefix', 'ipc.[port_number].identity-provider.impl', 'ipc.[port_number].weighted-cost.response', 'hadoop.tags.system'], 'reason': ["The property 'fs.azure.user.agent.prefix' has an additional 'usage' tag which is not a valid property field.", "The property 'ipc.[port_number].identity-provider.impl' has an invalid property name format.", "The property 'ipc.[port_number].weighted-cost.response' has an invalid property name format.", "The property 'hadoop.tags.system' has an additional 'usage' tag which is not a valid property field."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.azure.user.agent.prefix	ipc.[port_number].identity-provider.impl	ipc.[port_number].weighted-cost.response	hadoop.tags.system
+[Ciri] Reason for fs.azure.user.agent.prefix: The property 'fs.azure.user.agent.prefix' has an additional 'usage' tag which is not a valid property field.
+[Ciri] Reason for ipc.[port_number].identity-provider.impl: The property 'ipc.[port_number].identity-provider.impl' has an invalid property name format.
+[Ciri] Reason for ipc.[port_number].weighted-cost.response: The property 'ipc.[port_number].weighted-cost.response' has an invalid property name format.
+[Ciri] Reason for hadoop.tags.system: The property 'hadoop.tags.system' has an additional 'usage' tag which is not a valid property field.

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.placement-constraints.scheduler.pool-size</name>
+  <value>0</value>
+    <description>Threadpool size for the Scheduler invocation phase of placement constraint processing.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.metrics.runtime.buckets</name>
+  <value>[120, 600, 2880]</value>
+    <description>
+    Comma-separated list of values (in minutes) for schedule queue related
+    metrics.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.keytab</name>
+  <value>/etc/krb5.keytab</value>
+    <description>Keytab for NM.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.emit-container-events</name>
+  <value>true</value>
+    <description>The setting that controls whether yarn container events are
+      published to the timeline service or not by NM. This configuration setting
+      is for ATS V2.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.aux-services.manifest.reload-ms</name>
+  <value>1</value>
+    <description>Length of time in ms to wait between reloading aux services
+      manifest. If 0 or less, manifest will not be reloaded.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.version</name>
+  <value>0.5</value>
+    <description>Indicate what is the current version of the running
+    timeline service. For example, if "yarn.timeline-service.version" is 1.5,
+    and "yarn.timeline-service.enabled" is true, it means the cluster will and
+    should bring up the timeline service v.1.5 (and nothing else).
+    On the client side, if the client uses the same version of timeline service,
+    it should succeed. If the client chooses to use a smaller version in spite of this,
+    then depending on how robust the compatibility story is between versions,
+    the results may vary.
+    </description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.uploader.server.thread-count</name>
+  <value>100</value>
+    <description>The number of threads used to handle shared cache manager
+    requests from the node manager (50 by default)</description>
+</property>
+
+<property>
+  <name>yarn.client.application-client-protocol.poll-timeout-ms</name>
+  <value>-2</value>
+    <description>
+    The duration (in ms) the YARN client waits for an expected state change
+    to occur.  -1 means unlimited wait time.
+    </description>
+</property>
+
+</configuration>

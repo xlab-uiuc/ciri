@@ -1,0 +1,18 @@
+Wrong shot number:
+[16, 9, 4]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.assumed.role.credentials.provider'], 'reason': ["The property 'fs.s3a.assumed.role.credentials.provider' has the value 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider' which is not within the accepted value {org.apache.hadoop.fs.s3a.AssumedRoleCredentialProvider}."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.assumed.role.credentials.provider'], 'reason': ["The property 'fs.s3a.assumed.role.credentials.provider' has the value 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider' which is not within the accepted value {org.apache.hadoop.fs.s3a.TemporaryAWSCredentialsProvider,org.apache.hadoop.fs.s3a.auth.AssumedRoleCredentialProvider}."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.assumed.role.credentials.provider'], 'reason': ["The property 'fs.s3a.assumed.role.credentials.provider' has the value 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider' which is not within the accepted value {org.apache.hadoop.fs.s3a.TemporaryAWSCredentialsProvider,org.apache.hadoop.fs.s3a.auth.AssumedRoleCredentialProvider}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.s3a.assumed.role.credentials.provider
+[Ciri] Reason for fs.s3a.assumed.role.credentials.provider: The property 'fs.s3a.assumed.role.credentials.provider' has the value 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider' which is not within the accepted value {org.apache.hadoop.fs.s3a.TemporaryAWSCredentialsProvider,org.apache.hadoop.fs.s3a.auth.AssumedRoleCredentialProvider}.

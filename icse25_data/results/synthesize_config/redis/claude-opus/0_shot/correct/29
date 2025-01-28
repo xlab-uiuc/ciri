@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['stream-node-max-bytes', 'repl-diskless-sync-max-replicas'], 'reason': ["The 'stream-node-max-bytes' parameter has been renamed to 'stream-node-max-entries' in Redis 7.0.", "The 'repl-diskless-sync-max-replicas' parameter has been removed in Redis 7.0. The 'repl-diskless-sync' parameter now accepts a boolean value to enable/disable diskless replication."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: stream-node-max-bytes	repl-diskless-sync-max-replicas
+[Ciri] Reason for stream-node-max-bytes: The 'stream-node-max-bytes' parameter has been renamed to 'stream-node-max-entries' in Redis 7.0.
+[Ciri] Reason for repl-diskless-sync-max-replicas: The 'repl-diskless-sync-max-replicas' parameter has been removed in Redis 7.0. The 'repl-diskless-sync' parameter now accepts a boolean value to enable/disable diskless replication.

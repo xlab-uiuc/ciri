@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'cluster-announce-port', 'tls-port', 'tcp-keepalive'], 'reason': ["The parameter 'cluster-announce-bus-port' is not a valid port number.", "The parameter 'cluster-announce-port' is not a valid port number.", "The parameter 'tls-port' is not a valid port number.", "The parameter 'tcp-keepalive' is not a valid port number."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'cluster-announce-port', 'cluster-announce-port', 'cluster-announce-bus-port'], 'reason': ['The value of the parameter cluster-announce-bus-port is not a valid port number.', 'The value of the parameter cluster-announce-port is not a valid port number.', 'The value of the parameter cluster-announce-port is not a valid port number.', 'The value of the parameter cluster-announce-bus-port is not a valid port number.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'cluster-announce-port', 'repl-diskless-sync-delay', 'appenddirname', 'cluster-announce-bus-port', 'tls-port', 'tcp-keepalive', 'hash-max-listpack-entries', 'repl-diskless-sync'], 'reason': ['cluster-announce-bus-port must be an integer', 'cluster-announce-port must be an integer', 'repl-diskless-sync-delay must be an integer', 'appenddirname must be a string', 'cluster-announce-bus-port must be an integer', 'tls-port must be an integer', 'tcp-keepalive must be an integer', 'hash-max-listpack-entries must be an integer', 'repl-diskless-sync must be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'cluster-announce-port', 'cluster-announce-port', 'cluster-announce-bus-port'], 'reason': ['The value of cluster-announce-bus-port is not a valid port number.', 'The value of cluster-announce-port is not a valid port number.', 'The value of cluster-announce-port is not a valid port number.', 'The value of cluster-announce-bus-port is not a valid port number.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'cluster-announce-port', 'cluster-announce-port'], 'reason': ['cluster-announce-bus-port should be an integer', 'cluster-announce-port should be an integer', 'cluster-announce-port should be an integer']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'cluster-announce-port', 'cluster-announce-port', 'cluster-announce-bus-port'], 'reason': ['cluster-announce-bus-port must be greater than 0', 'cluster-announce-port must be greater than 0', 'cluster-announce-port must be greater than 0', 'cluster-announce-bus-port must be greater than 0']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: cluster-announce-bus-port	cluster-announce-port	cluster-announce-port	cluster-announce-bus-port
+[Ciri] Reason for cluster-announce-bus-port: cluster-announce-bus-port should be an integer
+[Ciri] Reason for cluster-announce-port: cluster-announce-port should be an integer
+[Ciri] Reason for cluster-announce-port: The value of cluster-announce-port is not a valid port number.
+[Ciri] Reason for cluster-announce-bus-port: cluster-announce-bus-port should be an integer

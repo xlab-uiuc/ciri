@@ -1,0 +1,20 @@
+Wrong shot number:
+[11, 3, 9]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.cache.secs', 'fs.defaultFS', 'ha.zookeeper.parent-znode'], 'reason': ["The property 'hadoop.security.groups.cache.secs' contains a 'usage' field which is not a standard configuration property attribute.", "The property 'fs.defaultFS' contains a 'usage' field which is not a standard configuration property attribute.", "The property 'ha.zookeeper.parent-znode' contains a 'usage' field which is not a standard configuration property attribute."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.cache.secs', 'fs.defaultFS', 'ha.zookeeper.parent-znode'], 'reason': ["The property 'hadoop.security.groups.cache.secs' contains a 'usage' field which is not a standard configuration property attribute.", "The property 'fs.defaultFS' contains a 'usage' field which is not a standard configuration property attribute.", "The property 'ha.zookeeper.parent-znode' contains a 'usage' field which is not a standard configuration property attribute."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.groups.cache.secs	fs.defaultFS	ha.zookeeper.parent-znode
+[Ciri] Reason for hadoop.security.groups.cache.secs: The property 'hadoop.security.groups.cache.secs' contains a 'usage' field which is not a standard configuration property attribute.
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' contains a 'usage' field which is not a standard configuration property attribute.
+[Ciri] Reason for ha.zookeeper.parent-znode: The property 'ha.zookeeper.parent-znode' contains a 'usage' field which is not a standard configuration property attribute.

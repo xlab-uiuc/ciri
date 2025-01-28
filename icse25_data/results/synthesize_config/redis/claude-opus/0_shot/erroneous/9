@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'cluster-announce-port', 'slowlog-log-slower-than'], 'reason': ["The 'tls-ca-cert-dir' parameter should be '/etc/ssl/certs' instead of '/\\etc/ssl/certs'.", "The 'cluster-announce-port' parameter should be a valid port number, not '1'.", "The 'slowlog-log-slower-than' parameter should be in microseconds, so '20000' should be '20000000' for 20 milliseconds."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tls-ca-cert-dir	cluster-announce-port	slowlog-log-slower-than
+[Ciri] Reason for tls-ca-cert-dir: The 'tls-ca-cert-dir' parameter should be '/etc/ssl/certs' instead of '/\etc/ssl/certs'.
+[Ciri] Reason for cluster-announce-port: The 'cluster-announce-port' parameter should be a valid port number, not '1'.
+[Ciri] Reason for slowlog-log-slower-than: The 'slowlog-log-slower-than' parameter should be in microseconds, so '20000' should be '20000000' for 20 milliseconds.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 6, 7]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy', 'initial-cluster-state'], 'reason': ["The property 'proxy' should have the value 'off' enclosed in quotes.", "The property 'initial-cluster-state' should have the value 'new' enclosed in quotes."]}
+
+{'hasError': True, 'errParameter': ['proxy', 'initial-cluster-state'], 'reason': ["The property 'proxy' should have the value 'off' enclosed in quotes.", "The property 'initial-cluster-state' should have the value 'new' without quotes."]}
+
+{'hasError': True, 'errParameter': ['proxy'], 'reason': ["The property 'proxy' should have the value 'off' enclosed in quotes."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: proxy	initial-cluster-state
+[Ciri] Reason for proxy: The property 'proxy' should have the value 'off' enclosed in quotes.
+[Ciri] Reason for initial-cluster-state: The property 'initial-cluster-state' should have the value 'new' without quotes.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'replica-announce-port', 'oom-score-adj-values'], 'reason': ["In Redis 7.0, 'hash-max-ziplist-value' was renamed to 'hash-max-listpack-entries'.", "The 'replica-announce-port' option requires Redis to be bound to a non-loopback address. With 'bind-source-addr' set to 127.0.0.1, replica announce will not function properly.", "The 'oom-score-adj-values' option is not available in Redis 7.0. It was removed in Redis 6.0 and replaced by 'oom-score-adj' which takes a single value."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hash-max-listpack-value	replica-announce-port	oom-score-adj-values
+[Ciri] Reason for hash-max-listpack-value: In Redis 7.0, 'hash-max-ziplist-value' was renamed to 'hash-max-listpack-entries'.
+[Ciri] Reason for replica-announce-port: The 'replica-announce-port' option requires Redis to be bound to a non-loopback address. With 'bind-source-addr' set to 127.0.0.1, replica announce will not function properly.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' option is not available in Redis 7.0. It was removed in Redis 6.0 and replaced by 'oom-score-adj' which takes a single value.

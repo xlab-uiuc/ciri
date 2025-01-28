@@ -1,0 +1,29 @@
+Wrong shot number:
+[2, 3, 6]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT'], 'reason': ["The property 'STATICFILES_FINDERS' should be a list of strings, not a single string.", "The property 'PASSWORD_RESET_TIMEOUT' has an incorrect value format."]}
+
+{'hasError': True, 'errParameter': ['DATE_FORMAT', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'DATE_FORMAT' has the value 'N j, Y' which does not follow the correct date format.", "The property 'PASSWORD_RESET_TIMEOUT' has an incorrect value assignment.", "The property 'CSRF_COOKIE_AGE' has an incorrect value assignment."]}
+
+{'hasError': True, 'errParameter': ['DATE_FORMAT', 'STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'DATE_FORMAT' has the value 'N j, Y' which does not follow the correct date format.", "The property 'STATICFILES_FINDERS' should be a list of strings.", "The property 'PASSWORD_RESET_TIMEOUT' has an incorrect value assignment.", "The property 'CSRF_COOKIE_AGE' has an incorrect value assignment."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATE_FORMAT', 'STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'DATE_FORMAT' has the value 'N j, Y' which does not follow the correct date format.", "The property 'STATICFILES_FINDERS' should be a list of strings, but it is not formatted correctly.", "The property 'PASSWORD_RESET_TIMEOUT' has an invalid value.", "The property 'CSRF_COOKIE_AGE' has an invalid value."]}
+
+{'hasError': True, 'errParameter': ['STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'STATICFILES_FINDERS' should be a list of strings, but it is not formatted correctly.", "The property 'PASSWORD_RESET_TIMEOUT' has an incorrect value format.", "The property 'CSRF_COOKIE_AGE' has an incorrect value format."]}
+
+{'hasError': True, 'errParameter': ['DATE_FORMAT', 'STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'DATE_FORMAT' has the value 'N j, Y' which does not follow the correct date format.", "The property 'STATICFILES_FINDERS' should be a list of strings, but it is not formatted correctly.", "The property 'PASSWORD_RESET_TIMEOUT' has an invalid expression for the timeout value.", "The property 'CSRF_COOKIE_AGE' has an invalid expression for the cookie age value."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: DATE_FORMAT	STATICFILES_FINDERS	PASSWORD_RESET_TIMEOUT	CSRF_COOKIE_AGE
+[Ciri] Reason for DATE_FORMAT: The property 'DATE_FORMAT' has the value 'N j, Y' which does not follow the correct date format.
+[Ciri] Reason for STATICFILES_FINDERS: The property 'STATICFILES_FINDERS' should be a list of strings, but it is not formatted correctly.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: The property 'PASSWORD_RESET_TIMEOUT' has an invalid expression for the timeout value.
+[Ciri] Reason for CSRF_COOKIE_AGE: The property 'CSRF_COOKIE_AGE' has an invalid expression for the cookie age value.

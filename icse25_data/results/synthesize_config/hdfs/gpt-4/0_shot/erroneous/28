@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.directoryscan.interval', 'dfs.journalnode.edits.dir.perm'], 'reason': ["The value for 'dfs.datanode.directoryscan.interval' should not include a time unit suffix ('s' for seconds). It should be an integer representing seconds.", "The value for 'dfs.journalnode.edits.dir.perm' is '1.1.1', which is not a valid octal or symbolic permission format. A correct format would be an octal number like '700' or a symbolic format like 'rwx------'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.directoryscan.interval	dfs.journalnode.edits.dir.perm
+[Ciri] Reason for dfs.datanode.directoryscan.interval: The value for 'dfs.datanode.directoryscan.interval' should not include a time unit suffix ('s' for seconds). It should be an integer representing seconds.
+[Ciri] Reason for dfs.journalnode.edits.dir.perm: The value for 'dfs.journalnode.edits.dir.perm' is '1.1.1', which is not a valid octal or symbolic permission format. A correct format would be an octal number like '700' or a symbolic format like 'rwx------'.

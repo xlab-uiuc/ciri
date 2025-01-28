@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_freeze_min_age', 'recursive_worktable_factor', 'wal_receiver_timeout'], 'reason': ['vacuum_freeze_min_age is set to 50000000 which is too high. The recommended value is 200000000.', 'recursive_worktable_factor is not a valid parameter in PostgreSQL 13. It was removed in version 12.', "wal_receiver_timeout is set to '1s' but the unit 's' is not supported. Valid units are ms, s, min, h, d."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: vacuum_freeze_min_age	recursive_worktable_factor	wal_receiver_timeout
+[Ciri] Reason for vacuum_freeze_min_age: vacuum_freeze_min_age is set to 50000000 which is too high. The recommended value is 200000000.
+[Ciri] Reason for recursive_worktable_factor: recursive_worktable_factor is not a valid parameter in PostgreSQL 13. It was removed in version 12.
+[Ciri] Reason for wal_receiver_timeout: wal_receiver_timeout is set to '1s' but the unit 's' is not supported. Valid units are ms, s, min, h, d.

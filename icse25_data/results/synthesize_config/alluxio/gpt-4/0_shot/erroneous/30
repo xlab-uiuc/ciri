@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.fuse.shared.caching.reader.enabled', 'alluxio.worker.network.reader.max.chunk.size.bytes', 'alluxio.worker.file.buffer.size', 'alluxio.table.transform.manager.job.history.retention.time', 'alluxio.underfs.eventual.consistency.retry.max.num'], 'reason': ['The correct property should be a boolean (true or false), not a numeric value.', "The value should be in bytes without the 'MB' suffix; use 1048576 for 1MB.", "The value should be in bytes without the 'MB' suffix; use 10485760 for 10MB.", "The time unit should be 'ms' for milliseconds, 's' for seconds, 'm' for minutes, etc. 'sec' is not recognized.", 'A value of 0 might disable retries, which could lead to consistency issues. If retries are intentionally disabled, ensure this is the desired behavior.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.fuse.shared.caching.reader.enabled	alluxio.worker.network.reader.max.chunk.size.bytes	alluxio.worker.file.buffer.size	alluxio.table.transform.manager.job.history.retention.time	alluxio.underfs.eventual.consistency.retry.max.num
+[Ciri] Reason for alluxio.fuse.shared.caching.reader.enabled: The correct property should be a boolean (true or false), not a numeric value.
+[Ciri] Reason for alluxio.worker.network.reader.max.chunk.size.bytes: The value should be in bytes without the 'MB' suffix; use 1048576 for 1MB.
+[Ciri] Reason for alluxio.worker.file.buffer.size: The value should be in bytes without the 'MB' suffix; use 10485760 for 10MB.
+[Ciri] Reason for alluxio.table.transform.manager.job.history.retention.time: The time unit should be 'ms' for milliseconds, 's' for seconds, 'm' for minutes, etc. 'sec' is not recognized.
+[Ciri] Reason for alluxio.underfs.eventual.consistency.retry.max.num: A value of 0 might disable retries, which could lead to consistency issues. If retries are intentionally disabled, ensure this is the desired behavior.

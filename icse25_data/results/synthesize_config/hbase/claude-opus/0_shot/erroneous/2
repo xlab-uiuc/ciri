@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.offpeak.end.hour'], 'reason': ['hbase.master.logcleaner.ttl should be a positive long value representing milliseconds, but is set to a negative double value -5.5', 'hbase.offpeak.end.hour should be an integer between 0 and 23 inclusive, or -1 to disable, but is set to an invalid value -2']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.master.logcleaner.ttl	hbase.offpeak.end.hour
+[Ciri] Reason for hbase.master.logcleaner.ttl: hbase.master.logcleaner.ttl should be a positive long value representing milliseconds, but is set to a negative double value -5.5
+[Ciri] Reason for hbase.offpeak.end.hour: hbase.offpeak.end.hour should be an integer between 0 and 23 inclusive, or -1 to disable, but is set to an invalid value -2

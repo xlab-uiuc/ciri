@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.webapp.api-service.enable</name>
+  <value>true</value>
+    <description>
+      Enable services rest api on ResourceManager.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.delegation-token.max-conf-size-bytes</name>
+  <value>12800</value>
+    <description>Maximum size in bytes for configurations that can be provided
+      by application to RM for delegation token renewal.
+      By experiment, its roughly 128 bytes per key-value pair.
+      The default value 12800 allows roughly 100 configs, may be less.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.remote-app-log-dir-suffix</name>
+  <value>logs</value>
+    <description>The remote log dir will be created at 
+      {yarn.nodemanager.remote-app-log-dir}/${user}/{thisParam}
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.drain-entities.timeout.ms</name>
+  <value>4000</value>
+    <description>
+    The time period for which timeline v2 client will wait for draining
+    leftover entities after stop.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.internal-timers-ttl-secs</name>
+  <value>210</value>
+    <description>
+      How long the internal Timer Tasks can be alive in writer. If there is no
+      write operation for this configured time, the internal timer tasks will
+      be close.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.node-labels.provider.fetch-interval-ms</name>
+  <value>1200000</value>
+    <description>
+    When "yarn.nodemanager.node-labels.provider" is configured with "config",
+    "Script" or the configured class extends AbstractNodeLabelsProvider, then
+    periodically node labels are retrieved from the node labels provider. This
+    configuration is to define the interval period.
+    If -1 is configured then node labels are retrieved from provider only
+    during initialization. Defaults to 10 mins.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.nm-container-queuing.load-comparator</name>
+  <value>QUEUE_LENGTH</value>
+    <description>
+    Comparator for determining node load for Distributed Scheduling.
+    </description>
+</property>
+
+<property>
+  <name>yarn.scheduler.configuration.leveldb-store.path</name>
+  <value>/valid/file1</value>
+    <description>
+      The storage path for LevelDB implementation of configuration store,
+      when yarn.scheduler.configuration.store.class is configured to be
+      "leveldb".
+    </description>
+</property>
+
+</configuration>

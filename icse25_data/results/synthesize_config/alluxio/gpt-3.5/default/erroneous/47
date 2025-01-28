@@ -1,0 +1,18 @@
+Wrong shot number:
+[1, 2, 12]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.master.connect.retry.timeout'], 'reason': ["The property 'alluxio.worker.master.connect.retry.timeout' has the value '10hour' which is not in a valid format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.master.connect.retry.timeout'], 'reason': ["The property 'alluxio.worker.master.connect.retry.timeout' has the value '10hour' which is not in the correct format. It should specify the time unit explicitly."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.master.connect.retry.timeout'], 'reason': ["The property 'alluxio.worker.master.connect.retry.timeout' has the value '10hour' which is not in the correct format. It should specify the time unit along with the value."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.worker.master.connect.retry.timeout
+[Ciri] Reason for alluxio.worker.master.connect.retry.timeout: The property 'alluxio.worker.master.connect.retry.timeout' has the value '10hour' which is not in the correct format. It should specify the time unit along with the value.

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ident_file', 'parallel_leader_participation', 'default_table_access_method', 'default_toast_compression', 'compute_query_id'], 'reason': ["The 'ident_file' parameter is not a valid PostgreSQL configuration parameter in version 13.0. It is used for user authentication and should be set in the 'pg_hba.conf' file.", "The 'parallel_leader_participation' parameter is not a valid PostgreSQL configuration parameter in version 13.0.", "The 'default_table_access_method' parameter is not a valid PostgreSQL configuration parameter in version 13.0.", "The 'default_toast_compression' parameter is not a valid PostgreSQL configuration parameter in version 13.0.", "The 'compute_query_id' parameter is not a valid PostgreSQL configuration parameter in version 13.0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: ident_file	parallel_leader_participation	default_table_access_method	default_toast_compression	compute_query_id
+[Ciri] Reason for ident_file: The 'ident_file' parameter is not a valid PostgreSQL configuration parameter in version 13.0. It is used for user authentication and should be set in the 'pg_hba.conf' file.
+[Ciri] Reason for parallel_leader_participation: The 'parallel_leader_participation' parameter is not a valid PostgreSQL configuration parameter in version 13.0.
+[Ciri] Reason for default_table_access_method: The 'default_table_access_method' parameter is not a valid PostgreSQL configuration parameter in version 13.0.
+[Ciri] Reason for default_toast_compression: The 'default_toast_compression' parameter is not a valid PostgreSQL configuration parameter in version 13.0.
+[Ciri] Reason for compute_query_id: The 'compute_query_id' parameter is not a valid PostgreSQL configuration parameter in version 13.0.

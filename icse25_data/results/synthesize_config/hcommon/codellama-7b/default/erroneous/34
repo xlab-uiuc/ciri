@@ -1,0 +1,26 @@
+Wrong shot number:
+[3, 8, 15]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.purge.age'], 'reason': ["The property 'fs.s3a.multipart.purge.age' has the value '1000000000' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.purge'], 'reason': ["The value of the property 'fs.s3a.multipart.purge' should be a boolean value."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.kms.client.encrypted.key.cache.expiry'], 'reason': ["The property 'hadoop.security.kms.client.encrypted.key.cache.expiry' has the value '21600000' which exceeds the range of an Integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.purge.age'], 'reason': ["The property 'fs.s3a.multipart.purge.age' has the value '1000000000' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.purge'], 'reason': ["The value of the property 'fs.s3a.multipart.purge' should be a boolean value."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.purge.age'], 'reason': ["The property 'fs.s3a.multipart.purge.age' has the value '1440m' which does not follow the correct time format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.s3a.multipart.purge.age
+[Ciri] Reason for fs.s3a.multipart.purge.age: The property 'fs.s3a.multipart.purge.age' has the value '1440m' which does not follow the correct time format.

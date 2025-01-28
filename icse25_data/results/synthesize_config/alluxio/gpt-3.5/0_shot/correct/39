@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.netty.worker.threads', 'alluxio.underfs.s3.socket.timeout'], 'reason': ["Invalid value for property 'alluxio.user.network.netty.worker.threads'. Value should be a positive integer.", "Invalid value for property 'alluxio.underfs.s3.socket.timeout'. Value should be specified in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.netty.worker.threads', 'alluxio.underfs.s3.socket.timeout'], 'reason': ["Invalid value for property 'alluxio.user.network.netty.worker.threads'. Value should be a positive integer.", "Invalid value for property 'alluxio.underfs.s3.socket.timeout'. Value should be in milliseconds format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.netty.worker.threads', 'alluxio.underfs.s3.socket.timeout'], 'reason': ["Invalid value for property 'alluxio.user.network.netty.worker.threads'. Value should be a positive integer.", "Invalid value for property 'alluxio.underfs.s3.socket.timeout'. Value should be in milliseconds or a valid time format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.netty.worker.threads	alluxio.underfs.s3.socket.timeout
+[Ciri] Reason for alluxio.user.network.netty.worker.threads: Invalid value for property 'alluxio.user.network.netty.worker.threads'. Value should be a positive integer.
+[Ciri] Reason for alluxio.underfs.s3.socket.timeout: Invalid value for property 'alluxio.underfs.s3.socket.timeout'. Value should be in milliseconds format.

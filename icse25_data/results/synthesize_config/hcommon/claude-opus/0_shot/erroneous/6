@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.s3guard.consistency.retry.interval', 'fs.s3a.select.input.csv.quote.escape.character'], 'reason': ["The value '10nounit' is invalid. It should be a valid time duration including the unit, e.g. '10s' for 10 seconds.", "The value '2s' is invalid. Time durations in Hadoop configuration should end with 'ms', 'us', 'ns', 'm', 'h', or 'd' rather than 's'.", "The value '\\\\' is invalid. It should be a single character. To represent a backslash, use '\\' instead of '\\\\'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.s3a.s3guard.consistency.retry.interval	fs.s3a.select.input.csv.quote.escape.character
+[Ciri] Reason for hadoop.service.shutdown.timeout: The value '10nounit' is invalid. It should be a valid time duration including the unit, e.g. '10s' for 10 seconds.
+[Ciri] Reason for fs.s3a.s3guard.consistency.retry.interval: The value '2s' is invalid. Time durations in Hadoop configuration should end with 'ms', 'us', 'ns', 'm', 'h', or 'd' rather than 's'.
+[Ciri] Reason for fs.s3a.select.input.csv.quote.escape.character: The value '\\' is invalid. It should be a single character. To represent a backslash, use '\' instead of '\\'.

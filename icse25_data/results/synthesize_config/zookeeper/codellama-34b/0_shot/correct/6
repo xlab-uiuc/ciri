@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server property should be in the format server.id=host:port:port. For example, server.1=zoo1:2888:3888']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'secureClientPort'], 'reason': ['dataDir is not a valid directory', 'clientPort is not a valid port', 'secureClientPort is not a valid port']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'secureClientPort'], 'reason': ['dataDir must be a directory', 'clientPort must be a positive integer', 'secureClientPort must be a positive integer']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dataDir	clientPort	secureClientPort
+[Ciri] Reason for dataDir: dataDir must be a directory
+[Ciri] Reason for clientPort: clientPort is not a valid port
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid port

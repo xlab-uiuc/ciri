@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.aws.credentials.provider', 'fs.s3a.select.input.csv.field.delimiter'], 'reason': ["The property 'fs.s3a.aws.credentials.provider' contains multiple credential provider class names separated by commas. This may cause conflicts or unexpected behavior.", "The property 'fs.s3a.select.input.csv.field.delimiter' specifies the field delimiter for S3 Select queries over CSV files. The description mentions remapping certain characters, but the actual value should be a single character or escape sequence."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.aws.credentials.provider', 'fs.s3a.select.input.csv.field.delimiter'], 'reason': ["The value of 'fs.s3a.aws.credentials.provider' contains multiple credential provider classes separated by commas, which may cause conflicts or unexpected behavior. It's recommended to specify only one credential provider class.", "The value of 'fs.s3a.select.input.csv.field.delimiter' should be a single character representing the field delimiter. Using multiple characters may lead to incorrect parsing of CSV files."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.aws.credentials.provider', 'fs.s3a.select.input.csv.field.delimiter'], 'reason': ["The value for 'fs.s3a.aws.credentials.provider' contains multiple class names separated by commas, which may cause issues in class loading and credential provider selection.", "The value for 'fs.s3a.select.input.csv.field.delimiter' should be a single character representing the field delimiter, not a string."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.aws.credentials.provider	fs.s3a.select.input.csv.field.delimiter
+[Ciri] Reason for fs.s3a.aws.credentials.provider: The value of 'fs.s3a.aws.credentials.provider' contains multiple credential provider classes separated by commas, which may cause conflicts or unexpected behavior. It's recommended to specify only one credential provider class.
+[Ciri] Reason for fs.s3a.select.input.csv.field.delimiter: The value of 'fs.s3a.select.input.csv.field.delimiter' should be a single character representing the field delimiter. Using multiple characters may lead to incorrect parsing of CSV files.

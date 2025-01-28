@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.instrumentation.requires.admin</name>
+  <value>true</value>
+  <description>
+    Indicates if administrator ACLs are required to access
+    instrumentation servlets (JMX, METRICS, CONF, STACKS).
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.connection.timeout.ms</name>
+  <value>120000</value>
+  <description>
+    This property is the connection timeout (in milliseconds) for LDAP
+    operations. If the LDAP provider doesn't establish a connection within the
+    specified period, it will abort the connect attempt. Non-positive value
+    means no LDAP connection timeout is specified in which case it waits for the
+    connection to establish until the underlying network times out.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.purge</name>
+  <value>false</value>
+  <description>True if you want to purge existing multipart uploads that may not have been
+    completed/aborted correctly. The corresponding purge age is defined in
+    fs.s3a.multipart.purge.age.
+    If set, when the filesystem is instantiated then all outstanding uploads
+    older than the purge age will be terminated -across the entire bucket.
+    This will impact multipart uploads by other applications and users. so should
+    be used sparingly, with an age value chosen to stop failed uploads, without
+    breaking ongoing operations.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.purge.age</name>
+  <value>86400</value>
+  <description>Minimum age in seconds of multipart uploads to purge
+    on startup if "fs.s3a.multipart.purge" is true
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.consistency.retry.limit</name>
+  <value>7</value>
+  <description>
+    Number of times to retry attempts to read/open/copy files when
+    S3Guard believes a specific version of the file to be available,
+    but the S3 request does not find any version of a file, or a different
+    version.
+  </description>
+</property>
+
+<property>
+  <name>ipc.client.rpc-timeout.ms</name>
+  <value>1</value>
+  <description>Timeout on waiting response from server, in milliseconds.
+  If ipc.client.ping is set to true and this rpc-timeout is greater than
+  the value of ipc.ping.interval, the effective value of the rpc-timeout is
+  rounded up to multiple of ipc.ping.interval.
+  </description>
+</property>
+
+<property>
+  <name>ha.health-monitor.rpc-timeout.ms</name>
+  <value>45000</value>
+  <description>
+    Timeout for the actual monitorHealth() calls.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.ignore.namenode.default.kms.uri</name>
+  <value>false</value>
+    <description>
+      Ignore KMS default URI returned from NameNode.
+      When set to true, kms uri is searched in the following order:
+      1. If there is a mapping in Credential's secrets map for namenode uri.
+      2. Fallback to local conf. (i.e hadoop.security.key.provider.path)
+      If client choose to ignore KMS uri provided by NameNode then client
+      should set KMS URI using 'hadoop.security.key.provider.path' to access
+      the right KMS for encrypted files.
+    </description>
+</property>
+
+</configuration>

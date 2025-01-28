@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log-package-levels', 'auto-compaction-mode'], 'reason': ["Invalid log level specified. Use values like 'debug', 'info', 'warn', 'error', etc.", "Invalid auto-compaction mode specified. Use 'periodic' or 'revision'."]}
+
+{'hasError': True, 'errParameter': ['log-package-levels', 'auto-compaction-mode'], 'reason': ["Invalid value for log-package-levels. It should be one of: 'debug', 'info', 'warn', 'error', 'dpanic', 'panic', 'fatal'.", "Invalid value for auto-compaction-mode. It should be 'periodic' or 'revision'."]}
+
+{'hasError': True, 'errParameter': ['log-package-levels', 'auto-compaction-mode'], 'reason': ["Invalid log level specified. Valid options are: 'debug', 'info', 'warn', 'error', 'dpanic', 'panic', 'fatal'.", "Invalid auto-compaction mode specified. Valid options are: 'periodic', 'revision'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: log-package-levels	auto-compaction-mode
+[Ciri] Reason for log-package-levels: Invalid log level specified. Valid options are: 'debug', 'info', 'warn', 'error', 'dpanic', 'panic', 'fatal'.
+[Ciri] Reason for auto-compaction-mode: Invalid value for auto-compaction-mode. It should be 'periodic' or 'revision'.

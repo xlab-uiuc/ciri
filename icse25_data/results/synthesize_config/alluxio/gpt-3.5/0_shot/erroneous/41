@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.zookeeper.leader.inquiry.retry', 'alluxio.user.network.rpc.keepalive.timeout', 'alluxio.underfs.s3.default.mode', 'alluxio.worker.free.space.timeout'], 'reason': ['Invalid value for alluxio.job.worker.rpc.port. Port number should be between 1 and 65535.', 'Invalid value for alluxio.zookeeper.leader.inquiry.retry. Retry count should be a positive integer.', 'Invalid format for alluxio.user.network.rpc.keepalive.timeout. Please specify the timeout in milliseconds or seconds.', 'Invalid value for alluxio.underfs.s3.default.mode. Mode should be specified in octal format (e.g., 0755).', 'Invalid format for alluxio.worker.free.space.timeout. Please specify the timeout in milliseconds or seconds.']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.zookeeper.leader.inquiry.retry', 'alluxio.user.network.rpc.keepalive.timeout', 'alluxio.underfs.s3.default.mode', 'alluxio.worker.free.space.timeout'], 'reason': ['Invalid value for alluxio.job.worker.rpc.port. Port number should be between 1 and 65535.', 'Invalid value for alluxio.zookeeper.leader.inquiry.retry. Retry count should be a positive integer.', "Invalid format for alluxio.user.network.rpc.keepalive.timeout. Timeout value should not have 'sec' suffix.", 'Invalid value for alluxio.underfs.s3.default.mode. Mode should be in octal format (e.g., 0755).', "Invalid format for alluxio.worker.free.space.timeout. Timeout value should not have 'sec' suffix."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.zookeeper.leader.inquiry.retry', 'alluxio.user.network.rpc.keepalive.timeout', 'alluxio.underfs.s3.default.mode', 'alluxio.worker.free.space.timeout'], 'reason': ['Invalid value for alluxio.job.worker.rpc.port. Port number should be between 1 and 65535.', 'Invalid value for alluxio.zookeeper.leader.inquiry.retry. Retry count should be a positive integer.', "Invalid format for alluxio.user.network.rpc.keepalive.timeout. Please specify the timeout value without 'sec'.", 'Invalid value for alluxio.underfs.s3.default.mode. Mode should be specified in octal format.', "Invalid format for alluxio.worker.free.space.timeout. Please specify the timeout value without 'sec'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.job.worker.rpc.port	alluxio.zookeeper.leader.inquiry.retry	alluxio.user.network.rpc.keepalive.timeout	alluxio.underfs.s3.default.mode	alluxio.worker.free.space.timeout
+[Ciri] Reason for alluxio.job.worker.rpc.port: Invalid value for alluxio.job.worker.rpc.port. Port number should be between 1 and 65535.
+[Ciri] Reason for alluxio.zookeeper.leader.inquiry.retry: Invalid value for alluxio.zookeeper.leader.inquiry.retry. Retry count should be a positive integer.
+[Ciri] Reason for alluxio.user.network.rpc.keepalive.timeout: Invalid format for alluxio.user.network.rpc.keepalive.timeout. Please specify the timeout in milliseconds or seconds.
+[Ciri] Reason for alluxio.underfs.s3.default.mode: Invalid value for alluxio.underfs.s3.default.mode. Mode should be in octal format (e.g., 0755).
+[Ciri] Reason for alluxio.worker.free.space.timeout: Invalid format for alluxio.worker.free.space.timeout. Please specify the timeout value without 'sec'.

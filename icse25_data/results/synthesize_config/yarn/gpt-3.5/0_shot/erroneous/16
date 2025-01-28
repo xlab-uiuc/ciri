@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.sleep-delay-before-sigkill.ms'], 'reason': ["The value for 'yarn.nodemanager.sleep-delay-before-sigkill.ms' should be a positive integer. Current value is negative."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.sleep-delay-before-sigkill.ms'], 'reason': ['The value for yarn.nodemanager.sleep-delay-before-sigkill.ms should be a positive integer representing milliseconds. Current value is negative (-10).']}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.sleep-delay-before-sigkill.ms'], 'reason': ["The value for 'yarn.nodemanager.sleep-delay-before-sigkill.ms' should be a positive integer representing the number of milliseconds to wait between sending a SIGTERM and SIGKILL to a container. Negative values are not allowed."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.sleep-delay-before-sigkill.ms
+[Ciri] Reason for yarn.nodemanager.sleep-delay-before-sigkill.ms: The value for 'yarn.nodemanager.sleep-delay-before-sigkill.ms' should be a positive integer. Current value is negative.

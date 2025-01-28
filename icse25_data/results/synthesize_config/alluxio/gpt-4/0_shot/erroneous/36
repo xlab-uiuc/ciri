@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host', 'alluxio.master.tieredstore.global.mediumtype', 'alluxio.fuse.logging.threshold'], 'reason': ["The correct property is 'alluxio.job.worker.bind.host', but the value '-1.0.0.0' is incorrect. It should likely be '0.0.0.0' for listening on all interfaces.", "The property 'alluxio.master.tieredstore.global.mediumtype' is incorrect or not properly formatted. It should be 'alluxio.master.tieredstore.global.levels' with specific level and medium type, for example, 'alluxio.master.tieredstore.global.level0.alias=MEM'.", "The 'alluxio.fuse.logging.threshold' format is incorrect. It should be specified in milliseconds, not seconds. For example, '20000ms' for 20 seconds."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.worker.bind.host	alluxio.master.tieredstore.global.mediumtype	alluxio.fuse.logging.threshold
+[Ciri] Reason for alluxio.job.worker.bind.host: The correct property is 'alluxio.job.worker.bind.host', but the value '-1.0.0.0' is incorrect. It should likely be '0.0.0.0' for listening on all interfaces.
+[Ciri] Reason for alluxio.master.tieredstore.global.mediumtype: The property 'alluxio.master.tieredstore.global.mediumtype' is incorrect or not properly formatted. It should be 'alluxio.master.tieredstore.global.levels' with specific level and medium type, for example, 'alluxio.master.tieredstore.global.level0.alias=MEM'.
+[Ciri] Reason for alluxio.fuse.logging.threshold: The 'alluxio.fuse.logging.threshold' format is incorrect. It should be specified in milliseconds, not seconds. For example, '20000ms' for 20 seconds.

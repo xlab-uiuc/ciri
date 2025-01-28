@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.retries.number', 'hfile.index.block.max.size', 'hbase.regionserver.storefile.refresh.period'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.client.retries.number'.", "The 'description' tag is missing for property 'hfile.index.block.max.size'.", "The 'description' tag is missing for property 'hbase.regionserver.storefile.refresh.period'."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.retries.number', 'hfile.index.block.max.size'], 'reason': ["The 'usage' tag is not a valid tag for the property 'hbase.client.retries.number'.", "The 'description' tag is missing for the property 'hfile.index.block.max.size'."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.retries.number', 'hfile.index.block.max.size', 'hbase.regionserver.storefile.refresh.period'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.client.retries.number'.", "The 'description' tag is not properly indented for property 'hfile.index.block.max.size'.", "The 'description' tag is not properly formatted for property 'hbase.regionserver.storefile.refresh.period'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.client.retries.number	hfile.index.block.max.size	hbase.regionserver.storefile.refresh.period
+[Ciri] Reason for hbase.client.retries.number: The 'usage' tag is not a valid tag for property 'hbase.client.retries.number'.
+[Ciri] Reason for hfile.index.block.max.size: The 'description' tag is not properly indented for property 'hfile.index.block.max.size'.
+[Ciri] Reason for hbase.regionserver.storefile.refresh.period: The 'description' tag is missing for property 'hbase.regionserver.storefile.refresh.period'.

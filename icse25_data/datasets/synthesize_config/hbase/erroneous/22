@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.local.dir</name>
+  <value>/valid/file1</value>
+    <description>Directory on the local filesystem to be used
+    as a local storage.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.port</name>
+  <value>3000</value>
+    <description>The port the HBase RegionServer binds to.</description>
+</property>
+
+<property>
+  <name>hbase.client.keyvalue.maxsize</name>
+  <value>10485760</value>
+    <description>Specifies the combined maximum allowed size of a KeyValue
+    instance. This is to set an upper boundary for a single entry saved in a
+    storage file. Since they cannot be split it helps avoiding that a region
+    cannot be split any further because the data is too large. It seems wise
+    to set this to a fraction of the maximum region size. Setting it to zero
+    or less disables the check.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.percolumnfamilyflush.size.lower.bound.min</name>
+  <value>33554432</value>
+    <description>
+    If FlushLargeStoresPolicy is used and there are multiple column families,
+    then every time that we hit the total memstore limit, we find out all the
+    column families whose memstores exceed a "lower bound" and only flush them
+    while retaining the others in memory. The "lower bound" will be
+    "hbase.hregion.memstore.flush.size / column_family_number" by default
+    unless value of this property is larger than that. If none of the families
+    have their memstore size more than lower bound, all the memstores will be
+    flushed (just as usual).
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.compaction.enabled</name>
+  <value>10</value>
+    <description>Enable/disable compactions on by setting true/false.
+      We can further switch compactions dynamically with the
+      compaction_switch shell command.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.blockingStoreFiles</name>
+  <value>8</value>
+    <description> If more than this number of StoreFiles exist in any one Store (one StoreFile
+     is written per flush of MemStore), updates are blocked for this region until a compaction is
+      completed, or until hbase.hstore.blockingWaitTime has been exceeded.</description>
+</property>
+
+<property>
+  <name>hbase.master.keytab.file</name>
+  <value>/valid/file2</value>
+    <description>Full path to the kerberos keytab file to use for logging in
+    the configured HMaster server principal.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.minWorkerThreads</name>
+  <value>16</value>
+    <description>The "core size" of the thread pool. New threads are created on every
+    connection until this many threads are created.</description>
+</property>
+
+</configuration>

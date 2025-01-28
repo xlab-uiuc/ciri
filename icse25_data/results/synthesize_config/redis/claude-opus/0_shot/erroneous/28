@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'tls-ca-cert-file', 'repl-backlog-size'], 'reason': ["The 'enable-protected-configs' parameter expects a 'yes' or 'no' value, but 'nonono' is invalid.", "The 'tls-ca-cert-file' parameter is not available in Redis 7.0.0. It was introduced in Redis 6.0 and renamed to 'tls-cert-file' in Redis 7.0.", "The 'repl-backlog-size' parameter does not support a unit suffix like 'mb'. It expects an integer value representing bytes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable-protected-configs	tls-ca-cert-file	repl-backlog-size
+[Ciri] Reason for enable-protected-configs: The 'enable-protected-configs' parameter expects a 'yes' or 'no' value, but 'nonono' is invalid.
+[Ciri] Reason for tls-ca-cert-file: The 'tls-ca-cert-file' parameter is not available in Redis 7.0.0. It was introduced in Redis 6.0 and renamed to 'tls-cert-file' in Redis 7.0.
+[Ciri] Reason for repl-backlog-size: The 'repl-backlog-size' parameter does not support a unit suffix like 'mb'. It expects an integer value representing bytes.

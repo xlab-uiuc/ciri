@@ -1,0 +1,41 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_cost_delay', 'event_triggers', 'work_mem', 'krb_server_keyfile', 'syslog_facility', 'enable_hashagg'], 'reason': ['autovacuum_vacuum_cost_delay is not a valid value. Valid values are integers between 0 and 1000000000.', 'event_triggers is not a valid value. Valid values are on and off.', 'work_mem is not a valid value. Valid values are integers between 64kB and 1GB.', 'krb_server_keyfile is not a valid value. Valid values are strings.', 'syslog_facility is not a valid value. Valid values are strings.', 'enable_hashagg is not a valid value. Valid values are on and off.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_cost_delay', 'work_mem', 'krb_server_keyfile', 'syslog_facility', 'enable_hashagg'], 'reason': ['autovacuum_vacuum_cost_delay should be a number in milliseconds', 'work_mem should be a number in MB', 'krb_server_keyfile should be a string', 'syslog_facility should be a string', 'enable_hashagg should be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_cost_delay'], 'reason': ['autovacuum_vacuum_cost_delay must be a value between 0 and 10000 milliseconds']}
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_cost_delay', 'work_mem', 'krb_server_keyfile'], 'reason': ['autovacuum_vacuum_cost_delay must be a value between 0 and 100,000', 'work_mem must be a value between 64 and 10240', 'krb_server_keyfile must be a valid file path']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_cost_delay', 'event_triggers', 'work_mem', 'krb_server_keyfile', 'syslog_facility', 'enable_hashagg'], 'reason': ['autovacuum_vacuum_cost_delay must be a value between 0 and 10000', 'event_triggers must be on or off', 'work_mem must be a value between 64kB and 1024MB', 'krb_server_keyfile must be a valid file path', 'syslog_facility must be a valid syslog facility', 'enable_hashagg must be on or off']}
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_cost_delay'], 'reason': ['autovacuum_vacuum_cost_delay must be a value between 0 and 10000']}
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_cost_delay', 'work_mem', 'krb_server_keyfile', 'syslog_facility', 'enable_hashagg'], 'reason': ['autovacuum_vacuum_cost_delay must be a value between 0 and 100 milliseconds.', 'work_mem must be a value between 1MB and 1GB.', 'krb_server_keyfile must be a valid file path.', 'syslog_facility must be a valid syslog facility.', 'enable_hashagg must be a boolean value.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_cost_delay', 'event_triggers', 'work_mem', 'krb_server_keyfile', 'syslog_facility', 'enable_hashagg'], 'reason': ['autovacuum_vacuum_cost_delay is not a valid value. Valid values are integers between 0 and 100.', 'event_triggers is not a valid value. Valid values are on, off.', 'work_mem is not a valid value. Valid values are integers between 64kB and 1GB.', 'krb_server_keyfile is not a valid value. Valid values are strings.', 'syslog_facility is not a valid value. Valid values are strings.', 'enable_hashagg is not a valid value. Valid values are on, off.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_cost_delay', 'event_triggers', 'work_mem', 'krb_server_keyfile', 'syslog_facility', 'enable_hashagg'], 'reason': ['autovacuum_vacuum_cost_delay should be a number between 0 and 10000. The value 2ms is not a valid value.', 'event_triggers should be a boolean. The value on is not a valid value.', 'work_mem should be a number between 64 and 10240. The value 1MB is not a valid value.', "krb_server_keyfile should be a string. The value 'FILE:${sysconfdir}/krb5.keytab' is not a valid value.", "syslog_facility should be a string. The value 'LOCAL0' is not a valid value.", 'enable_hashagg should be a boolean. The value on is not a valid value.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: autovacuum_vacuum_cost_delay	event_triggers	work_mem	krb_server_keyfile	syslog_facility	enable_hashagg
+[Ciri] Reason for autovacuum_vacuum_cost_delay: autovacuum_vacuum_cost_delay should be a number between 0 and 10000. The value 2ms is not a valid value.
+[Ciri] Reason for event_triggers: event_triggers should be a boolean. The value on is not a valid value.
+[Ciri] Reason for work_mem: work_mem should be a number between 64 and 10240. The value 1MB is not a valid value.
+[Ciri] Reason for krb_server_keyfile: krb_server_keyfile should be a string. The value 'FILE:${sysconfdir}/krb5.keytab' is not a valid value.
+[Ciri] Reason for syslog_facility: syslog_facility should be a string. The value 'LOCAL0' is not a valid value.
+[Ciri] Reason for enable_hashagg: enable_hashagg is not a valid value. Valid values are on, off.

@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['databases', 'hash-max-listpack-value', 'proto-max-bulk-len'], 'reason': ['The value of the databases property must be a positive integer.', 'The value of the hash-max-listpack-value property must be a positive integer.', 'The value of the proto-max-bulk-len property must be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['stream-node-max-entries', 'databases', 'hash-max-listpack-value', 'tls-ca-cert-file', 'proto-max-bulk-len', 'activerehashing', 'supervised'], 'reason': ['stream-node-max-entries must be an integer', 'databases must be an integer', 'hash-max-listpack-value must be an integer', 'tls-ca-cert-file must be a string', 'proto-max-bulk-len must be an integer', 'activerehashing must be a boolean', 'supervised must be a string']}
+
+{'hasError': True, 'errParameter': ['stream-node-max-entries'], 'reason': ['The value of stream-node-max-entries is not a valid integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['stream-node-max-entries'], 'reason': ["The parameter 'stream-node-max-entries' is not a valid parameter for redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['databases', 'hash-max-listpack-value', 'proto-max-bulk-len'], 'reason': ["The value of the 'databases' parameter must be a positive integer.", "The value of the 'hash-max-listpack-value' parameter must be a positive integer.", "The value of the 'proto-max-bulk-len' parameter must be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['databases', 'hash-max-listpack-value', 'proto-max-bulk-len'], 'reason': ['The value of databases must be a positive integer.', 'The value of hash-max-listpack-value must be a positive integer.', 'The value of proto-max-bulk-len must be a positive integer.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: databases	hash-max-listpack-value	proto-max-bulk-len
+[Ciri] Reason for databases: The value of databases must be a positive integer.
+[Ciri] Reason for hash-max-listpack-value: The value of hash-max-listpack-value must be a positive integer.
+[Ciri] Reason for proto-max-bulk-len: The value of proto-max-bulk-len must be a positive integer.

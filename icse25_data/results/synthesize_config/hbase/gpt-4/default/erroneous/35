@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 6, 10]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.wal.dir.perms'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '65536' which is out of the valid range for port numbers (0 - 65535).", "The property 'hbase.wal.dir.perms' has the value '350' which is not a valid permission format. Permission format should be in octal."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.zookeeper.property.clientPort	hbase.wal.dir.perms
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The property 'hbase.zookeeper.property.clientPort' has the value '65536' which is out of the valid range for port numbers (0 - 65535).
+[Ciri] Reason for hbase.wal.dir.perms: The property 'hbase.wal.dir.perms' has the value '350' which is not a valid permission format. Permission format should be in octal.

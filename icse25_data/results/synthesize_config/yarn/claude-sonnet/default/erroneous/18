@@ -1,0 +1,16 @@
+Wrong shot number:
+[4, 5, 7]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.resource-profiles.enabled', 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy', 'yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file'], 'reason': ["The property 'yarn.resourcemanager.resource-profiles.enabled' has the value 'hadoop' which is not a valid boolean value. It should be either 'true' or 'false'.", "The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' has the value '/valid/file2' which is not a valid cgroup hierarchy path.", "The property 'yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file' has the value '/valid/file1' which is not a valid HDFS path."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.resourcemanager.resource-profiles.enabled	yarn.nodemanager.linux-container-executor.cgroups.hierarchy	yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file
+[Ciri] Reason for yarn.resourcemanager.resource-profiles.enabled: The property 'yarn.resourcemanager.resource-profiles.enabled' has the value 'hadoop' which is not a valid boolean value. It should be either 'true' or 'false'.
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.hierarchy: The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' has the value '/valid/file2' which is not a valid cgroup hierarchy path.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file: The property 'yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file' has the value '/valid/file1' which is not a valid HDFS path.

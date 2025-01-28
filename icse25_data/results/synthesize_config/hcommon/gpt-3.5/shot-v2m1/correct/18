@@ -1,0 +1,15 @@
+Wrong shot number:
+[5]
+
+Correct shot number:
+[8, 7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.magic.enabled', 'io.seqfile.compress.blocksize'], 'reason': ["The property 'fs.s3a.committer.magic.enabled' has the value 'false' which may cause issues when working with the S3 'Magic' committer. S3Guard must be enabled for the destination bucket.", "The property 'io.seqfile.compress.blocksize' has a usage tag but it is not a recognized property attribute."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.committer.magic.enabled	io.seqfile.compress.blocksize
+[Ciri] Reason for fs.s3a.committer.magic.enabled: The property 'fs.s3a.committer.magic.enabled' has the value 'false' which may cause issues when working with the S3 'Magic' committer. S3Guard must be enabled for the destination bucket.
+[Ciri] Reason for io.seqfile.compress.blocksize: The property 'io.seqfile.compress.blocksize' has a usage tag but it is not a recognized property attribute.

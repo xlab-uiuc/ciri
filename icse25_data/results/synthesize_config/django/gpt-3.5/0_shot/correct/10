@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'EMAIL_SSL_KEYFILE', 'EMAIL_SSL_KEYFILE', 'LANGUAGE_COOKIE_HTTPONLY', 'ABSOLUTE_URL_OVERRIDES', 'SESSION_COOKIE_PATH', 'EMAIL_USE_SSL'], 'reason': ['FILE_UPLOAD_DIRECTORY_PERMISSIONS should have a value specified.', 'EMAIL_SSL_KEYFILE should have a value specified.', 'LANGUAGE_COOKIE_HTTPONLY should be set to true for security reasons.', 'ABSOLUTE_URL_OVERRIDES should have a value specified.', 'SESSION_COOKIE_PATH should be set to a specific path.', 'EMAIL_USE_SSL should be set to true if SSL is to be used for emails.']}
+
+{'hasError': True, 'errParameter': ['FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'EMAIL_SSL_KEYFILE', 'LANGUAGE_COOKIE_HTTPONLY', 'ABSOLUTE_URL_OVERRIDES', 'EMAIL_USE_SSL'], 'reason': ['FILE_UPLOAD_DIRECTORY_PERMISSIONS should be set to a specific value, such as the directory path where files will be uploaded.', 'EMAIL_SSL_KEYFILE should be set to the path of the SSL key file if SSL is used for email.', 'LANGUAGE_COOKIE_HTTPONLY should be set to true for better security by preventing client-side scripts from accessing the cookie.', 'ABSOLUTE_URL_OVERRIDES should contain mappings of models to functions that return the URLs for instances of those models.', 'EMAIL_USE_SSL should be set to true if SSL is used for email communication.']}
+
+{'hasError': True, 'errParameter': ['FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'EMAIL_SSL_KEYFILE', 'LANGUAGE_COOKIE_HTTPONLY', 'ABSOLUTE_URL_OVERRIDES', 'EMAIL_USE_SSL'], 'reason': ['FILE_UPLOAD_DIRECTORY_PERMISSIONS should have a value specified.', 'EMAIL_SSL_KEYFILE should have a value specified.', 'LANGUAGE_COOKIE_HTTPONLY should be set to true for better security.', 'ABSOLUTE_URL_OVERRIDES should not be an empty dictionary.', 'EMAIL_USE_SSL should be set to true if SSL is to be used for emails.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: FILE_UPLOAD_DIRECTORY_PERMISSIONS	EMAIL_SSL_KEYFILE	LANGUAGE_COOKIE_HTTPONLY	ABSOLUTE_URL_OVERRIDES	EMAIL_USE_SSL
+[Ciri] Reason for FILE_UPLOAD_DIRECTORY_PERMISSIONS: FILE_UPLOAD_DIRECTORY_PERMISSIONS should be set to a specific value, such as the directory path where files will be uploaded.
+[Ciri] Reason for EMAIL_SSL_KEYFILE: EMAIL_SSL_KEYFILE should have a value specified.
+[Ciri] Reason for LANGUAGE_COOKIE_HTTPONLY: LANGUAGE_COOKIE_HTTPONLY should be set to true for better security by preventing client-side scripts from accessing the cookie.
+[Ciri] Reason for ABSOLUTE_URL_OVERRIDES: ABSOLUTE_URL_OVERRIDES should not be an empty dictionary.
+[Ciri] Reason for EMAIL_USE_SSL: EMAIL_USE_SSL should be set to true if SSL is to be used for emails.

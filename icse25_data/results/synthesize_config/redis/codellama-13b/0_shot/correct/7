@@ -1,0 +1,40 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hz', 'lazyfree-lazy-server-del', 'slowlog-max-len', 'hash-max-listpack-entries', 'repl-disable-tcp-nodelay', 'oom-score-adj-values', 'tcp-keepalive'], 'reason': ['hz is not a valid property', 'lazyfree-lazy-server-del is not a valid property', 'slowlog-max-len is not a valid property', 'hash-max-listpack-entries is not a valid property', 'repl-disable-tcp-nodelay is not a valid property', 'oom-score-adj-values is not a valid property', 'tcp-keepalive is not a valid property']}
+
+{'hasError': True, 'errParameter': ['hz'], 'reason': ['hz is not a valid configuration parameter for Redis 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['hz', 'repl-disable-tcp-nodelay', 'oom-score-adj-values', 'tcp-keepalive'], 'reason': ['hz is not a valid parameter for Redis 7.0.0', 'repl-disable-tcp-nodelay is not a valid parameter for Redis 7.0.0', 'oom-score-adj-values is not a valid parameter for Redis 7.0.0', 'tcp-keepalive is not a valid parameter for Redis 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hz', 'repl-disable-tcp-nodelay', 'oom-score-adj-values', 'tcp-keepalive'], 'reason': ['hz is not a valid parameter for Redis 7.0.0', 'repl-disable-tcp-nodelay is not a valid parameter for Redis 7.0.0', 'oom-score-adj-values is not a valid parameter for Redis 7.0.0', 'tcp-keepalive is not a valid parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-entries', 'oom-score-adj-values', 'repl-disable-tcp-nodelay'], 'reason': ["'hash-max-listpack-entries' is not a valid parameter in Redis 7.0.0", "'oom-score-adj-values' is not a valid parameter in Redis 7.0.0", "'repl-disable-tcp-nodelay' is not a valid parameter in Redis 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['slowlog-max-len', 'hash-max-listpack-entries', 'oom-score-adj-values'], 'reason': ['slowlog-max-len is not a valid parameter for Redis 7.0.0', 'hash-max-listpack-entries is not a valid parameter for Redis 7.0.0', 'oom-score-adj-values is not a valid parameter for Redis 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hz', 'lazyfree-lazy-server-del', 'slowlog-max-len', 'hash-max-listpack-entries', 'repl-disable-tcp-nodelay', 'oom-score-adj-values', 'tcp-keepalive'], 'reason': ['hz is not a valid parameter in Redis 7.0.0', 'lazyfree-lazy-server-del is not a valid parameter in Redis 7.0.0', 'slowlog-max-len is not a valid parameter in Redis 7.0.0', 'hash-max-listpack-entries is not a valid parameter in Redis 7.0.0', 'repl-disable-tcp-nodelay is not a valid parameter in Redis 7.0.0', 'oom-score-adj-values is not a valid parameter in Redis 7.0.0', 'tcp-keepalive is not a valid parameter in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['hz', 'hash-max-listpack-entries', 'repl-disable-tcp-nodelay', 'oom-score-adj-values', 'tcp-keepalive'], 'reason': ['hz is not a valid property for Redis 7.0.0', 'hash-max-listpack-entries is not a valid property for Redis 7.0.0', 'repl-disable-tcp-nodelay is not a valid property for Redis 7.0.0', 'oom-score-adj-values is not a valid property for Redis 7.0.0', 'tcp-keepalive is not a valid property for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['hz', 'hash-max-listpack-entries', 'oom-score-adj-values', 'tcp-keepalive'], 'reason': ['hz is not a valid parameter', 'hash-max-listpack-entries is not a valid parameter', 'oom-score-adj-values is not a valid parameter', 'tcp-keepalive is not a valid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hz', 'hash-max-listpack-entries', 'repl-disable-tcp-nodelay', 'oom-score-adj-values', 'tcp-keepalive'], 'reason': ['hz is not a valid parameter', 'hash-max-listpack-entries is not a valid parameter', 'repl-disable-tcp-nodelay is not a valid parameter', 'oom-score-adj-values is not a valid parameter', 'tcp-keepalive is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['hz', 'lazyfree-lazy-server-del', 'slowlog-max-len', 'hash-max-listpack-entries', 'repl-disable-tcp-nodelay', 'oom-score-adj-values', 'tcp-keepalive'], 'reason': ['hz is not a valid property for redis version 7.0.0', 'lazyfree-lazy-server-del is not a valid property for redis version 7.0.0', 'slowlog-max-len is not a valid property for redis version 7.0.0', 'hash-max-listpack-entries is not a valid property for redis version 7.0.0', 'repl-disable-tcp-nodelay is not a valid property for redis version 7.0.0', 'oom-score-adj-values is not a valid property for redis version 7.0.0', 'tcp-keepalive is not a valid property for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['hz', 'hash-max-listpack-entries', 'repl-disable-tcp-nodelay', 'oom-score-adj-values', 'tcp-keepalive'], 'reason': ['hz is not a valid configuration parameter.', 'hash-max-listpack-entries is not a valid configuration parameter.', 'repl-disable-tcp-nodelay is not a valid configuration parameter.', 'oom-score-adj-values is not a valid configuration parameter.', 'tcp-keepalive is not a valid configuration parameter.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: hz	hash-max-listpack-entries	repl-disable-tcp-nodelay	oom-score-adj-values	tcp-keepalive
+[Ciri] Reason for hz: hz is not a valid parameter
+[Ciri] Reason for hash-max-listpack-entries: hash-max-listpack-entries is not a valid parameter
+[Ciri] Reason for repl-disable-tcp-nodelay: repl-disable-tcp-nodelay is not a valid configuration parameter.
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values is not a valid configuration parameter.
+[Ciri] Reason for tcp-keepalive: tcp-keepalive is not a valid parameter

@@ -1,0 +1,16 @@
+Wrong shot number:
+[12, 10, 3]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.shell.backup.state.lock.timeout', 'alluxio.underfs.web.connnection.timeout', 'alluxio.master.tieredstore.global.level2.alias'], 'reason': ["The property 'alluxio.master.shell.backup.state.lock.timeout' has an invalid time value '1s'. It should be at least 1m.", "The property 'alluxio.underfs.web.connnection.timeout' is misspelled. It should be 'alluxio.underfs.web.connection.timeout'.", "The property 'alluxio.master.tieredstore.global.level2.alias' is invalid because the 'alluxio.master.tieredstore.global.levels' is set to 1, so there is no second level."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.shell.backup.state.lock.timeout	alluxio.underfs.web.connnection.timeout	alluxio.master.tieredstore.global.level2.alias
+[Ciri] Reason for alluxio.master.shell.backup.state.lock.timeout: The property 'alluxio.master.shell.backup.state.lock.timeout' has an invalid time value '1s'. It should be at least 1m.
+[Ciri] Reason for alluxio.underfs.web.connnection.timeout: The property 'alluxio.underfs.web.connnection.timeout' is misspelled. It should be 'alluxio.underfs.web.connection.timeout'.
+[Ciri] Reason for alluxio.master.tieredstore.global.level2.alias: The property 'alluxio.master.tieredstore.global.level2.alias' is invalid because the 'alluxio.master.tieredstore.global.levels' is set to 1, so there is no second level.

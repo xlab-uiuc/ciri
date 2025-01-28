@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl'], 'reason': ['quorum.auth.enableSasl and quorum.auth.serverRequireSasl are mutually exclusive. If one is set to true, the other must be set to false.', 'quorum.auth.serverRequireSasl is deprecated in version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl'], 'reason': ['quorum.auth.enableSasl is not a valid property for Zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl'], 'reason': ['quorum.auth.enableSasl and quorum.auth.serverRequireSasl are mutually exclusive', 'quorum.auth.serverRequireSasl is only valid if quorum.auth.enableSasl is true']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.serverRequireSasl
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl is not a valid property for Zookeeper version 3.7.0
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl is only valid if quorum.auth.enableSasl is true

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-protocols', 'cluster-announce-port', 'repl-disable-tcp-nodelay'], 'reason': ["tls-protocols has an invalid value 'NOEXIST_TLS'. It should be a combination of TLSv1, TLSv1.1, TLSv1.2, TLSv1.3 separated by spaces.", 'cluster-announce-port must be a valid TCP port number between 0 and 65535.', 'repl-disable-tcp-nodelay is no longer supported since Redis 7.0, and should be removed.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tls-protocols	cluster-announce-port	repl-disable-tcp-nodelay
+[Ciri] Reason for tls-protocols: tls-protocols has an invalid value 'NOEXIST_TLS'. It should be a combination of TLSv1, TLSv1.1, TLSv1.2, TLSv1.3 separated by spaces.
+[Ciri] Reason for cluster-announce-port: cluster-announce-port must be a valid TCP port number between 0 and 65535.
+[Ciri] Reason for repl-disable-tcp-nodelay: repl-disable-tcp-nodelay is no longer supported since Redis 7.0, and should be removed.

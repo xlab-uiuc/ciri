@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level2.watermark.high.ratio', 'alluxio.master.tieredstore.global.level0.alias', 'alluxio.worker.reviewer.class', 'alluxio.worker.data.tmp.subdir.max', 'alluxio.worker.master.periodical.rpc.timeout', 'alluxio.underfs.oss.socket.timeout', 'alluxio.user.client.cache.size'], 'reason': ["The 'alluxio.worker.tieredstore.level2.watermark.high.ratio' value cannot be greater than 1.0 as it represents a percentage.", "The 'alluxio.master.tieredstore.global.level0.alias' property does not exist. The correct property should be related to worker configuration, not master.", "The 'alluxio.worker.reviewer.class' property does not exist in Alluxio 2.5.0.", "The 'alluxio.worker.data.tmp.subdir.max' property does not exist. It might be a misconfiguration or not applicable to Alluxio 2.5.0.", "The 'alluxio.worker.master.periodical.rpc.timeout' property does not exist. The correct property might be 'alluxio.worker.master.connect.period.max'.", "The 'alluxio.underfs.oss.socket.timeout' format is incorrect. Time values should be in milliseconds without specifying the unit.", "The 'alluxio.user.client.cache.size' format is incorrect. Size values should be in bytes without specifying the unit."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: alluxio.worker.tieredstore.level2.watermark.high.ratio	alluxio.master.tieredstore.global.level0.alias	alluxio.worker.reviewer.class	alluxio.worker.data.tmp.subdir.max	alluxio.worker.master.periodical.rpc.timeout	alluxio.underfs.oss.socket.timeout	alluxio.user.client.cache.size
+[Ciri] Reason for alluxio.worker.tieredstore.level2.watermark.high.ratio: The 'alluxio.worker.tieredstore.level2.watermark.high.ratio' value cannot be greater than 1.0 as it represents a percentage.
+[Ciri] Reason for alluxio.master.tieredstore.global.level0.alias: The 'alluxio.master.tieredstore.global.level0.alias' property does not exist. The correct property should be related to worker configuration, not master.
+[Ciri] Reason for alluxio.worker.reviewer.class: The 'alluxio.worker.reviewer.class' property does not exist in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.worker.data.tmp.subdir.max: The 'alluxio.worker.data.tmp.subdir.max' property does not exist. It might be a misconfiguration or not applicable to Alluxio 2.5.0.
+[Ciri] Reason for alluxio.worker.master.periodical.rpc.timeout: The 'alluxio.worker.master.periodical.rpc.timeout' property does not exist. The correct property might be 'alluxio.worker.master.connect.period.max'.
+[Ciri] Reason for alluxio.underfs.oss.socket.timeout: The 'alluxio.underfs.oss.socket.timeout' format is incorrect. Time values should be in milliseconds without specifying the unit.
+[Ciri] Reason for alluxio.user.client.cache.size: The 'alluxio.user.client.cache.size' format is incorrect. Size values should be in bytes without specifying the unit.

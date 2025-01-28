@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.webapp.address</name>
+  <value>${yarn.resourcemanager.hostname}:8088</value>
+    <description>
+      The http address of the RM web application.
+      If only a host is provided as the value,
+      the webapp will be served on a random port.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.scheduler.monitor.enable</name>
+  <value>false</value>
+    <description>Enable a set of periodic monitors (specified in
+        yarn.resourcemanager.scheduler.monitor.policies) that affect the
+        scheduler.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-localizer.java.opts</name>
+  <value>-Xmx256m</value>
+    <description>
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-localizer.log.level</name>
+  <value>INFO</value>
+    <description>
+      The log level for container localizer while it is an independent process.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.image-toplevel-dir</name>
+  <value>/valid/file2</value>
+    <description>The HDFS location under which the oci image manifests, layers,
+      and configs directories exist.</description>
+</property>
+
+<property>
+  <name>yarn.webapp.filter-invalid-xml-chars</name>
+  <value>true</value>
+    <description>
+      Flag to enable filter of invalid xml 1.0 characters present in the
+      value of diagnostics field of apps output from RM WebService.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.elastic-memory-control.enabled</name>
+  <value>false</value>
+    <description>
+      Enable elastic memory control. This is a Linux only feature.
+      When enabled, the node manager adds a listener to receive an
+      event, if all the containers exceeded a limit.
+      The limit is specified by yarn.nodemanager.resource.memory-mb.
+      If this is not set, the limit is set based on the capabilities.
+      See yarn.nodemanager.resource.detect-hardware-capabilities
+      for details.
+      The limit applies to the physical or virtual (rss+swap) memory
+      depending on whether yarn.nodemanager.pmem-check-enabled or
+      yarn.nodemanager.vmem-check-enabled is set.
+    </description>
+</property>
+
+<property>
+  <name>yarn.node-attribute.fs-store.impl.class</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.nodelabels.FileSystemNodeAttributeStore</value>
+    <description>
+      Choose different implementation of node attribute's storage
+    </description>
+</property>
+
+</configuration>

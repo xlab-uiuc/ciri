@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'proxy-failure-wait', 'logger'], 'reason': ["The 'quota-backend-bytes' parameter is not a valid configuration option in etcd 3.5.0.", "The 'proxy-failure-wait' parameter is not a valid configuration option in etcd 3.5.0.", "The 'logger' parameter is not a valid configuration option in etcd 3.5.0. In etcd 3.5.0, logging is configured through the '--log-level' and '--log-outputs' command-line flags or the 'ETCD_LOG_LEVEL' and 'ETCD_LOG_OUTPUTS' environment variables."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quota-backend-bytes	proxy-failure-wait	logger
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' parameter is not a valid configuration option in etcd 3.5.0.
+[Ciri] Reason for proxy-failure-wait: The 'proxy-failure-wait' parameter is not a valid configuration option in etcd 3.5.0.
+[Ciri] Reason for logger: The 'logger' parameter is not a valid configuration option in etcd 3.5.0. In etcd 3.5.0, logging is configured through the '--log-level' and '--log-outputs' command-line flags or the 'ETCD_LOG_LEVEL' and 'ETCD_LOG_OUTPUTS' environment variables.

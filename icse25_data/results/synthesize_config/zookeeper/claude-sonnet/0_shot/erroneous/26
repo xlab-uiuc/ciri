@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'maxSessionTimeout', 'minSessionTimeout'], 'reason': ['The clientPortAddress value 256.256.256.256 is not a valid IPv4 address. It should be in the range of 0.0.0.0 to 255.255.255.255.', 'The maxSessionTimeout value 0 is not valid. It should be a positive integer representing the maximum session timeout in milliseconds.', 'The minSessionTimeout value -2 is not valid. It should be a positive integer representing the minimum session timeout in milliseconds.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: clientPortAddress	maxSessionTimeout	minSessionTimeout
+[Ciri] Reason for clientPortAddress: The clientPortAddress value 256.256.256.256 is not a valid IPv4 address. It should be in the range of 0.0.0.0 to 255.255.255.255.
+[Ciri] Reason for maxSessionTimeout: The maxSessionTimeout value 0 is not valid. It should be a positive integer representing the maximum session timeout in milliseconds.
+[Ciri] Reason for minSessionTimeout: The minSessionTimeout value -2 is not valid. It should be a positive integer representing the minimum session timeout in milliseconds.

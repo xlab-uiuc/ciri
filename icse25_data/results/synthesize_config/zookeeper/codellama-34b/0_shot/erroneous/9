@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server property is not configured correctly. It should be of the form server.id=host:port:port. For example, server.1=zoo1:2888:3888']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'syncLimit'], 'reason': ['secureClientPortAddress is not a valid property', 'syncLimit is not a valid property']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.x properties are not supported in version 3.7.0. Please use the server.x=y:z:w command instead.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: server.1	server.2	server.3
+[Ciri] Reason for server.1: The server.x properties are not supported in version 3.7.0. Please use the server.x=y:z:w command instead.
+[Ciri] Reason for server.2: 
+[Ciri] Reason for server.3: 

@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_max_workers', 'event_triggers', 'enable_hashjoin', 'enable_seqscan', 'debug_print_rewritten', 'default_transaction_isolation', 'log_duration'], 'reason': ['autovacuum_max_workers must be an integer between 1 and 32767', 'event_triggers must be on or off', 'enable_hashjoin must be on or off', 'enable_seqscan must be on or off', 'debug_print_rewritten must be on, off, or plain', 'default_transaction_isolation must be a string', 'log_duration must be on, off, or plain']}
+
+{'hasError': True, 'errParameter': ['autovacuum_max_workers', 'event_triggers', 'enable_hashjoin', 'enable_seqscan', 'debug_print_rewritten', 'default_transaction_isolation', 'log_duration'], 'reason': ['autovacuum_max_workers must be an integer between 1 and 1000', 'event_triggers must be on or off', 'enable_hashjoin must be on or off', 'enable_seqscan must be on or off', 'debug_print_rewritten must be on or off', 'default_transaction_isolation must be a string', 'log_duration must be on or off']}
+
+{'hasError': True, 'errParameter': ['autovacuum_max_workers', 'event_triggers', 'enable_hashjoin', 'enable_seqscan', 'default_transaction_isolation', 'log_duration'], 'reason': ['autovacuum_max_workers must be an integer between 1 and 32767', 'event_triggers must be on or off', 'enable_hashjoin must be on or off', 'enable_seqscan must be on or off', 'default_transaction_isolation must be a string', 'log_duration must be on or off']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: autovacuum_max_workers	event_triggers	enable_hashjoin	enable_seqscan	debug_print_rewritten	default_transaction_isolation	log_duration
+[Ciri] Reason for autovacuum_max_workers: autovacuum_max_workers must be an integer between 1 and 1000
+[Ciri] Reason for event_triggers: event_triggers must be on or off
+[Ciri] Reason for enable_hashjoin: enable_hashjoin must be on or off
+[Ciri] Reason for enable_seqscan: enable_seqscan must be on or off
+[Ciri] Reason for debug_print_rewritten: debug_print_rewritten must be on or off
+[Ciri] Reason for default_transaction_isolation: default_transaction_isolation must be a string
+[Ciri] Reason for log_duration: log_duration must be on or off

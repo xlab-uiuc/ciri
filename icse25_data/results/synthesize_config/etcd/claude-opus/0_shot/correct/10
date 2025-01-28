@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode', 'proxy-failure-wait', 'proxy-refresh-interval'], 'reason': ["The 'auto-compaction-mode' parameter is not valid for etcd v3.5.0. It should be 'auto-compaction-mode' and the valid values are 'revision' or 'periodic'.", "The 'proxy-failure-wait' parameter is not valid for etcd v3.5.0. The correct parameter is 'proxy-failure-wait-time' and the value should be a duration string, e.g., '2500ms'.", "The 'proxy-refresh-interval' parameter is not valid for etcd v3.5.0. The correct parameter is 'proxy-refresh-interval' and the value should be a duration string, e.g., '15s'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: auto-compaction-mode	proxy-failure-wait	proxy-refresh-interval
+[Ciri] Reason for auto-compaction-mode: The 'auto-compaction-mode' parameter is not valid for etcd v3.5.0. It should be 'auto-compaction-mode' and the valid values are 'revision' or 'periodic'.
+[Ciri] Reason for proxy-failure-wait: The 'proxy-failure-wait' parameter is not valid for etcd v3.5.0. The correct parameter is 'proxy-failure-wait-time' and the value should be a duration string, e.g., '2500ms'.
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter is not valid for etcd v3.5.0. The correct parameter is 'proxy-refresh-interval' and the value should be a duration string, e.g., '15s'.

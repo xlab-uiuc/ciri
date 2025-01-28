@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.metadatastore.fail.on.write.error', 'fs.s3a.select.output.csv.field.delimiter', 'fs.azure.authorization.caching.enable', 'hadoop.ssl.enabled'], 'reason': ["The property 'fs.s3a.metadatastore.fail.on.write.error' is specific to Hadoop AWS module and may not be recognized in core Hadoop or Hadoop common configurations.", "The property 'fs.s3a.select.output.csv.field.delimiter' is specific to the Hadoop AWS module for handling S3 Select queries and may not be recognized in core Hadoop or Hadoop common configurations.", "The property 'fs.azure.authorization.caching.enable' is specific to the Hadoop Azure module and may not be recognized in core Hadoop or Hadoop common configurations.", "The property 'hadoop.ssl.enabled' is marked as deprecated. It is recommended to use 'dfs.http.policy' and 'yarn.http.policy' instead for configuring SSL."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.s3a.metadatastore.fail.on.write.error	fs.s3a.select.output.csv.field.delimiter	fs.azure.authorization.caching.enable	hadoop.ssl.enabled
+[Ciri] Reason for fs.s3a.metadatastore.fail.on.write.error: The property 'fs.s3a.metadatastore.fail.on.write.error' is specific to Hadoop AWS module and may not be recognized in core Hadoop or Hadoop common configurations.
+[Ciri] Reason for fs.s3a.select.output.csv.field.delimiter: The property 'fs.s3a.select.output.csv.field.delimiter' is specific to the Hadoop AWS module for handling S3 Select queries and may not be recognized in core Hadoop or Hadoop common configurations.
+[Ciri] Reason for fs.azure.authorization.caching.enable: The property 'fs.azure.authorization.caching.enable' is specific to the Hadoop Azure module and may not be recognized in core Hadoop or Hadoop common configurations.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' is marked as deprecated. It is recommended to use 'dfs.http.policy' and 'yarn.http.policy' instead for configuring SSL.

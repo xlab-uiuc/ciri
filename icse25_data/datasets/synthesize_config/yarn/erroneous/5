@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.nodemanager.remote-app-log-dir</name>
+  <value>//hadoop/io/local</value>
+    <description>Where to aggregate logs to.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.system-reserved-memory-mb</name>
+  <value>0</value>
+    <description>Amount of physical memory, in MB, that is reserved
+    for non-YARN processes. This configuration is only used if
+    yarn.nodemanager.resource.detect-hardware-capabilities is set
+    to true and yarn.nodemanager.resource.memory-mb is -1. If set
+    to -1, this amount is calculated as
+    20% of (system memory - 2*HADOOP_HEAPSIZE)
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.health-checker.timeout-ms</name>
+  <value>1200000</value>
+    <description>Health check script time out period.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.path</name>
+  <value>/valid/file1</value>
+    <description>The path to the Linux container executor.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed</name>
+  <value>true</value>
+    <description>Whether or not users are allowed to request that Docker
+      containers honor the debug deletion delay. This is useful for
+      troubleshooting Docker container related launch failures.</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.app-checker.class</name>
+  <value>org.apache.hadoop.yarn.server.sharedcachemanager.RemoteAppChecker</value>
+    <description>The implementation to be used for the SCM app-checker</description>
+</property>
+
+<property>
+  <name>yarn.client.application-client-protocol.poll-interval-ms</name>
+  <value>400</value>
+    <description>The interval that the yarn client library uses to poll the
+    completion status of the asynchronous API of application client protocol.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.pluggable-device-framework.enabled</name>
+  <value>false</value>
+    <description>
+      This setting controls if pluggable device framework is enabled.
+      Disabled by default
+    </description>
+</property>
+
+</configuration>

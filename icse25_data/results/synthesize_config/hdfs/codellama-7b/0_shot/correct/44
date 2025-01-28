@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.stale.datanode.interval'], 'reason': ['The value of dfs.namenode.stale.datanode.interval cannot be less than 3 times of heartbeat interval.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern'], 'reason': ['dfs.namenode.kerberos.principal.pattern is not a valid property.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.stale.datanode.interval'], 'reason': ['dfs.namenode.stale.datanode.interval cannot be less than 3 times of heartbeat interval']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.stale.datanode.interval'], 'reason': ['The value of dfs.namenode.stale.datanode.interval is 15000, which is less than the minimum value of 3 times of heartbeat interval.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.stale.datanode.interval'], 'reason': ['dfs.namenode.stale.datanode.interval cannot be less than the minimum value of 3 times of heartbeat interval']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.stale.datanode.interval
+[Ciri] Reason for dfs.namenode.stale.datanode.interval: The value of dfs.namenode.stale.datanode.interval is 15000, which is less than the minimum value of 3 times of heartbeat interval.

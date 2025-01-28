@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.regionserver.regionSplitLimit', 'hbase.normalizer.period', 'hbase.hstore.compaction.min.size', 'hbase.regionserver.storefile.refresh.period'], 'reason': ["The usage tag for property 'hbase.master.logcleaner.ttl' is incorrect.", "The usage tag for property 'hbase.regionserver.regionSplitLimit' is missing.", "The usage tag for property 'hbase.normalizer.period' is incorrect.", "The usage tag for property 'hbase.hstore.compaction.min.size' is missing.", "The usage tag for property 'hbase.regionserver.storefile.refresh.period' is missing."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.regionserver.regionSplitLimit', 'hbase.zookeeper.peerport', 'hbase.normalizer.period', 'hbase.hstore.compaction.min.size', 'hbase.master.normalizer.class', 'hbase.regionserver.storefile.refresh.period', 'hbase.mob.compaction.threads.max'], 'reason': ["The usage tag for property 'hbase.master.logcleaner.ttl' contains incorrect code.", "The description for property 'hbase.regionserver.regionSplitLimit' is not clear and concise.", "The usage tag for property 'hbase.zookeeper.peerport' contains incorrect code.", "The usage tag for property 'hbase.normalizer.period' contains incorrect code.", "The description for property 'hbase.hstore.compaction.min.size' is too long and complex.", "The description for property 'hbase.master.normalizer.class' is not clear and concise.", "The description for property 'hbase.regionserver.storefile.refresh.period' is not clear and concise.", "The description for property 'hbase.mob.compaction.threads.max' is not clear and concise."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl', 'hbase.regionserver.regionSplitLimit', 'hbase.normalizer.period', 'hbase.hstore.compaction.min.size', 'hbase.regionserver.storefile.refresh.period'], 'reason': ["The usage tag for property 'hbase.master.logcleaner.ttl' is incorrect. It should not contain code snippets.", "The usage tag for property 'hbase.regionserver.regionSplitLimit' is missing.", "The usage tag for property 'hbase.normalizer.period' is incorrect. It should not contain code snippets.", "The value for property 'hbase.hstore.compaction.min.size' should be 134217728 (128 MB) instead of 134217728.", "The value for property 'hbase.regionserver.storefile.refresh.period' should be greater than 0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: hbase.master.logcleaner.ttl	hbase.regionserver.regionSplitLimit	hbase.normalizer.period	hbase.hstore.compaction.min.size	hbase.regionserver.storefile.refresh.period
+[Ciri] Reason for hbase.master.logcleaner.ttl: The usage tag for property 'hbase.master.logcleaner.ttl' is incorrect.
+[Ciri] Reason for hbase.regionserver.regionSplitLimit: The usage tag for property 'hbase.regionserver.regionSplitLimit' is missing.
+[Ciri] Reason for hbase.normalizer.period: The usage tag for property 'hbase.normalizer.period' is incorrect.
+[Ciri] Reason for hbase.hstore.compaction.min.size: The usage tag for property 'hbase.hstore.compaction.min.size' is missing.
+[Ciri] Reason for hbase.regionserver.storefile.refresh.period: The usage tag for property 'hbase.regionserver.storefile.refresh.period' is missing.

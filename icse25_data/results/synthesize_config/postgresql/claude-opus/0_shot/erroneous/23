@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_interval', 'autovacuum_vacuum_cost_limit'], 'reason': ["The 'tcp_keepalives_interval' parameter is not valid in PostgreSQL 13. It was removed in version 12. Use the 'tcp_keepalives_time' parameter instead.", "Setting 'autovacuum_vacuum_cost_limit' to 0 is not recommended as it may cause autovacuum to be too aggressive and impact performance. It's better to tune this value based on your system resources and requirements."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tcp_keepalives_interval	autovacuum_vacuum_cost_limit
+[Ciri] Reason for tcp_keepalives_interval: The 'tcp_keepalives_interval' parameter is not valid in PostgreSQL 13. It was removed in version 12. Use the 'tcp_keepalives_time' parameter instead.
+[Ciri] Reason for autovacuum_vacuum_cost_limit: Setting 'autovacuum_vacuum_cost_limit' to 0 is not recommended as it may cause autovacuum to be too aggressive and impact performance. It's better to tune this value based on your system resources and requirements.

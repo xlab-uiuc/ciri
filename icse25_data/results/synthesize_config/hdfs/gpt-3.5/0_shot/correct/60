@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.reencrypt.sleep.interval'], 'reason': ["The value '10m' for property 'dfs.namenode.reencrypt.sleep.interval' is not in a valid format. It should specify units such as 'ms', 's', 'm', 'h', or 'd'."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.safemode.threshold-pct', 'dfs.namenode.reencrypt.sleep.interval', 'dfs.client.block.reader.remote.buffer.size'], 'reason': ["The value '1.998' for property 'dfs.namenode.safemode.threshold-pct' should be an integer or a float greater than 0 and less than or equal to 1.", "The value '10m' for property 'dfs.namenode.reencrypt.sleep.interval' should be in milliseconds format.", "The value '1024' for property 'dfs.client.block.reader.remote.buffer.size' should be in bytes format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.reencrypt.sleep.interval', 'dfs.client.block.reader.remote.buffer.size'], 'reason': ["The value '10m' for property 'dfs.namenode.reencrypt.sleep.interval' should have units specified (e.g., '10ms' for milliseconds).", "The value '1024' for property 'dfs.client.block.reader.remote.buffer.size' should have units specified (e.g., '1024B' for bytes)."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.safemode.threshold-pct', 'dfs.namenode.reencrypt.sleep.interval', 'dfs.client.block.reader.remote.buffer.size'], 'reason': ["The value '1.998' for property 'dfs.namenode.safemode.threshold-pct' should be between 0 and 1, or greater than 1 to make safe mode permanent.", "The value '10m' for property 'dfs.namenode.reencrypt.sleep.interval' should have units specified. If none given, millisecond is assumed.", "The value '1024' for property 'dfs.client.block.reader.remote.buffer.size' should be in bytes, not in plain numbers."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.reencrypt.sleep.interval'], 'reason': ["The value '10m' for property 'dfs.namenode.reencrypt.sleep.interval' is not in a valid format. It should be a numerical value with a valid time unit (e.g., '10ms', '10s', '10m', '10h', '10d')."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.safemode.threshold-pct', 'dfs.namenode.reencrypt.sleep.interval', 'dfs.client.block.reader.remote.buffer.size'], 'reason': ["The value '1.998' for property 'dfs.namenode.safemode.threshold-pct' should be between 0 and 1, or greater than 1 to make safe mode permanent.", "The value '10m' for property 'dfs.namenode.reencrypt.sleep.interval' should specify the units (e.g., '10m' for minutes). If no units are given, milliseconds are assumed.", "The value '1024' for property 'dfs.client.block.reader.remote.buffer.size' should have a unit specified (e.g., '1024B' for bytes)."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.safemode.threshold-pct	dfs.namenode.reencrypt.sleep.interval	dfs.client.block.reader.remote.buffer.size
+[Ciri] Reason for dfs.namenode.safemode.threshold-pct: The value '1.998' for property 'dfs.namenode.safemode.threshold-pct' should be between 0 and 1, or greater than 1 to make safe mode permanent.
+[Ciri] Reason for dfs.namenode.reencrypt.sleep.interval: The value '10m' for property 'dfs.namenode.reencrypt.sleep.interval' should have units specified. If none given, millisecond is assumed.
+[Ciri] Reason for dfs.client.block.reader.remote.buffer.size: The value '1024' for property 'dfs.client.block.reader.remote.buffer.size' should have a unit specified (e.g., '1024B' for bytes).

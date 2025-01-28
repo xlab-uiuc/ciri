@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.client.cached.conn.retry</name>
+  <value>3</value>
+  <description>The number of times the HDFS client will pull a socket from the
+   cache.  Once this number is exceeded, the client will try to create a new
+   socket.
+  </description>
+</property>
+
+<property>
+  <name>dfs.replication.max</name>
+  <value>512</value>
+  <description>Maximal block replication. 
+  </description>
+</property>
+
+<property>
+  <name>dfs.webhdfs.socket.connect-timeout</name>
+  <value>60s</value>
+  <description>
+    Socket timeout for connecting to WebHDFS servers. This prevents a
+    WebHDFS client from hanging if the server hostname is
+    misconfigured, or the server does not response before the timeout
+    expires. Value is followed by a unit specifier: ns, us, ms, s, m,
+    h, d for nanoseconds, microseconds, milliseconds, seconds,
+    minutes, hours, days respectively. Values should provide units,
+    but milliseconds are assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.processcommands.threshold</name>
+  <value>1s</value>
+    <description>The threshold in milliseconds at which we will log a slow
+      command processing in BPServiceActor. By default, this parameter is set
+      to 2 seconds.
+    </description>
+</property>
+
+<property>
+  <name>datanode.https.port</name>
+  <value>50475</value>
+  <description>
+    HTTPS port for DataNode.
+  </description>
+</property>
+
+<property>
+  <name>dfs.block.misreplication.processing.limit</name>
+  <value>20000</value>
+  <description>
+    Maximum number of blocks to process for initializing replication queues.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.fixed.volume.size</name>
+  <value>true</value>
+  <description>
+    If false, call function getTotalSpace of File to get capacity of volume
+    during every heartbeat.
+    If true, cache the capacity when when the first call, and reuse it later.
+  </description>
+</property>
+
+<property>
+  <name>dfs.disk.balancer.enabled</name>
+  <value>false</value>
+    <description>
+        This enables the diskbalancer feature on a cluster. By default, disk
+      balancer is enabled.
+    </description>
+</property>
+
+</configuration>

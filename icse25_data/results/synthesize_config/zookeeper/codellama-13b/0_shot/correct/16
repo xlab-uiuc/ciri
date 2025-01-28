@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'maxClientCnxns', 'localSessionsEnabled', 'localSessionsUpgradingEnabled', 'standaloneEnabled', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.serverRequireSasl'], 'reason': ['dataDir and dataLogDir must be set to the same value', 'clientPort must be set to a value between 1024 and 65535', 'maxClientCnxns must be set to a value between 1 and 65535', 'localSessionsEnabled must be set to true', 'localSessionsUpgradingEnabled must be set to false', 'standaloneEnabled must be set to false', 'quorum.auth.learner.saslLoginContext must be set to a value', 'quorum.auth.serverRequireSasl must be set to true']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learner.saslLoginContext', 'quorum.auth.serverRequireSasl', 'localSessionsUpgradingEnabled', 'localSessionsEnabled', 'clientPort', 'syncLimit'], 'reason': ['quorum.auth.learner.saslLoginContext is not a valid property for zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for zookeeper version 3.7.0', 'localSessionsUpgradingEnabled is not a valid property for zookeeper version 3.7.0', 'localSessionsEnabled is not a valid property for zookeeper version 3.7.0', 'clientPort is not a valid property for zookeeper version 3.7.0', 'syncLimit is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learner.saslLoginContext', 'quorum.auth.serverRequireSasl'], 'reason': ['quorum.auth.learner.saslLoginContext is not a valid property for zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learner.saslLoginContext', 'quorum.auth.serverRequireSasl'], 'reason': ['quorum.auth.learner.saslLoginContext is not a valid property for zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for zookeeper version 3.7.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorum.auth.learner.saslLoginContext	quorum.auth.serverRequireSasl
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl is not a valid property for zookeeper version 3.7.0

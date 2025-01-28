@@ -1,0 +1,63 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-snapshots', 'auto-compaction-mode'], 'reason': ['heartbeat-interval must be greater than 0', 'max-snapshots must be greater than 0', 'auto-compaction-mode must be either periodic or revision']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'auto-compaction-mode'], 'reason': ['proxy-failure-wait is not a valid property', 'auto-compaction-mode is not a valid property']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-failure-wait', 'auto-compaction-mode'], 'reason': ['heartbeat-interval must be greater than 0', 'proxy-failure-wait must be greater than 0', 'auto-compaction-mode must be set to either periodic or revision']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-snapshots', 'auto-compaction-mode'], 'reason': ['heartbeat-interval should be a positive integer', 'max-snapshots should be a positive integer', 'auto-compaction-mode should be either periodic, revision, or size']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'auto-compaction-mode'], 'reason': ['proxy-failure-wait is not a valid property for etcd version 3.5.0', 'auto-compaction-mode is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-snapshots', 'proxy-failure-wait', 'auto-tls', 'auto-compaction-mode'], 'reason': ['heartbeat-interval should be a positive integer', 'max-snapshots should be a positive integer', 'proxy-failure-wait should be a positive integer', 'auto-tls should be a boolean', 'auto-compaction-mode should be one of periodic, revision, or size']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-failure-wait'], 'reason': ['heartbeat-interval should be a positive integer', 'proxy-failure-wait should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-snapshots', 'proxy-failure-wait', 'auto-compaction-mode'], 'reason': ['heartbeat-interval must be greater than 0', 'max-snapshots must be greater than 0', 'proxy-failure-wait must be greater than 0', 'auto-compaction-mode must be one of periodic, revision, or size']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-write-timeout', 'heartbeat-interval', 'max-snapshots', 'proxy-failure-wait', 'auto-tls', 'auto-compaction-mode'], 'reason': ['proxy-refresh-interval: 30000 is not a valid duration', 'proxy-write-timeout: 5000 is not a valid duration', 'heartbeat-interval: 200 is not a valid duration', 'max-snapshots: 10 is not a valid integer', 'proxy-failure-wait: 2500 is not a valid duration', 'auto-tls: true is not a valid boolean', 'auto-compaction-mode: periodic is not a valid mode']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-snapshots', 'proxy-failure-wait'], 'reason': ['heartbeat-interval must be greater than 0', 'max-snapshots must be greater than 0', 'proxy-failure-wait must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-compaction-mode'], 'reason': ['heartbeat-interval must be greater than 0', "auto-compaction-mode must be either 'revision' or 'periodic'"]}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-write-timeout', 'heartbeat-interval', 'max-snapshots', 'proxy-failure-wait', 'auto-tls', 'auto-compaction-mode'], 'reason': ['proxy-refresh-interval: unknown field', 'proxy-write-timeout: unknown field', 'heartbeat-interval: unknown field', 'max-snapshots: unknown field', 'proxy-failure-wait: unknown field', 'auto-tls: unknown field', 'auto-compaction-mode: unknown field']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'auto-compaction-mode'], 'reason': ['proxy-failure-wait is not a valid property for etcd version 3.5.0', 'auto-compaction-mode is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-write-timeout', 'auto-tls', 'auto-compaction-mode'], 'reason': ['heartbeat-interval should be greater than 0', 'proxy-write-timeout should be greater than 0', 'auto-tls should be true or false', 'auto-compaction-mode should be periodic, revision or size']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'auto-compaction-mode', 'auto-tls'], 'reason': ['proxy-failure-wait is not a valid property', 'auto-compaction-mode is not a valid property', 'auto-tls is not a valid property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-snapshots', 'auto-compaction-mode'], 'reason': ['heartbeat-interval must be greater than 0', 'max-snapshots must be greater than 0', 'auto-compaction-mode must be one of periodic, revision, or size']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode'], 'reason': ['auto-compaction-mode is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'auto-tls', 'auto-compaction-mode'], 'reason': ['proxy-failure-wait is not a valid configuration property', 'auto-tls is not a valid configuration property', 'auto-compaction-mode is not a valid configuration property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-snapshots', 'proxy-failure-wait', 'auto-compaction-mode'], 'reason': ['heartbeat-interval is not a valid property', 'max-snapshots is not a valid property', 'proxy-failure-wait is not a valid property', 'auto-compaction-mode is not a valid property']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'auto-compaction-mode'], 'reason': ['proxy-failure-wait is not a valid property', 'auto-compaction-mode is not a valid property']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-snapshots', 'proxy-failure-wait', 'auto-compaction-mode'], 'reason': ['heartbeat-interval is not a valid parameter', 'max-snapshots is not a valid parameter', 'proxy-failure-wait is not a valid parameter', 'auto-compaction-mode is not a valid parameter']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: heartbeat-interval	max-snapshots	proxy-failure-wait	auto-compaction-mode
+[Ciri] Reason for heartbeat-interval: heartbeat-interval is not a valid property
+[Ciri] Reason for max-snapshots: max-snapshots is not a valid parameter
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait is not a valid property
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode is not a valid property

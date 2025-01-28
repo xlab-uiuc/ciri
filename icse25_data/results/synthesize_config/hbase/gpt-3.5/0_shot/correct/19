@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hregion.majorcompaction', 'hbase.hstore.compaction.max.size', 'hfile.format.version'], 'reason': ["The description for 'hbase.hregion.majorcompaction' parameter is too long and should be concise.", "The description for 'hbase.hstore.compaction.max.size' parameter is too long and should be concise.", "The 'usage' tag for 'hfile.format.version' parameter is not a valid tag for HBase configuration files."]}
+
+{'hasError': True, 'errParameter': ['hbase.hregion.majorcompaction', 'hbase.hstore.compaction.max.size', 'hfile.format.version'], 'reason': ["The property 'hbase.hregion.majorcompaction' has a value of 604800000 which is not in the correct format for time. It should be specified in seconds.", "The property 'hbase.hstore.compaction.max.size' has a value of 4611686018427387903 which is not a valid size. It should be specified in bytes.", "The property 'hfile.format.version' has a value of 1 which is outdated for HBase version 2.2.7. It should be set to a higher value like 3 for supporting tags in hfiles."]}
+
+{'hasError': True, 'errParameter': ['hbase.hregion.majorcompaction', 'hbase.hstore.compaction.max.size', 'hfile.format.version'], 'reason': ["The property 'hbase.hregion.majorcompaction' has a description that is too long and contains unnecessary details.", "The property 'hbase.hstore.compaction.max.size' has a description that is too long and contains unnecessary details.", "The property 'hfile.format.version' has an unnecessary 'usage' tag that is not standard in HBase configuration files."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.hregion.majorcompaction	hbase.hstore.compaction.max.size	hfile.format.version
+[Ciri] Reason for hbase.hregion.majorcompaction: The description for 'hbase.hregion.majorcompaction' parameter is too long and should be concise.
+[Ciri] Reason for hbase.hstore.compaction.max.size: The property 'hbase.hstore.compaction.max.size' has a value of 4611686018427387903 which is not a valid size. It should be specified in bytes.
+[Ciri] Reason for hfile.format.version: The property 'hfile.format.version' has an unnecessary 'usage' tag that is not standard in HBase configuration files.

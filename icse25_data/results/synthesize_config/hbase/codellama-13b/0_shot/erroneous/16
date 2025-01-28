@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.clientPort'], 'reason': ['hbase.zookeeper.leaderport is not a valid port number.', 'hbase.zookeeper.property.dataDir is not a valid file path.', 'hbase.zookeeper.property.clientPort is not a valid port number.']}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.clientPort'], 'reason': ['The value of hbase.zookeeper.leaderport is not a valid port number.', 'The value of hbase.zookeeper.property.dataDir is not a valid file path.', 'The value of hbase.zookeeper.property.clientPort is not a valid port number.']}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.clientPort'], 'reason': ['hbase.zookeeper.leaderport: The value must be between 1 and 65535.', 'hbase.zookeeper.property.dataDir: The value must be a valid file path.', 'hbase.zookeeper.property.clientPort: The value must be a valid port number.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.zookeeper.leaderport	hbase.zookeeper.property.dataDir	hbase.zookeeper.property.clientPort
+[Ciri] Reason for hbase.zookeeper.leaderport: The value of hbase.zookeeper.leaderport is not a valid port number.
+[Ciri] Reason for hbase.zookeeper.property.dataDir: hbase.zookeeper.property.dataDir is not a valid file path.
+[Ciri] Reason for hbase.zookeeper.property.clientPort: hbase.zookeeper.property.clientPort is not a valid port number.

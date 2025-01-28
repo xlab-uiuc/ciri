@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port', 'alluxio.underfs.oss.connection.ttl', 'alluxio.zookeeper.election.path'], 'reason': ['alluxio.job.worker.web.port should be an integer value, not a file path.', 'alluxio.underfs.oss.connection.ttl should be a non-negative integer value.', "alluxio.zookeeper.election.path should be a valid Zookeeper path starting with a '/', not a file path."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.worker.web.port	alluxio.underfs.oss.connection.ttl	alluxio.zookeeper.election.path
+[Ciri] Reason for alluxio.job.worker.web.port: alluxio.job.worker.web.port should be an integer value, not a file path.
+[Ciri] Reason for alluxio.underfs.oss.connection.ttl: alluxio.underfs.oss.connection.ttl should be a non-negative integer value.
+[Ciri] Reason for alluxio.zookeeper.election.path: alluxio.zookeeper.election.path should be a valid Zookeeper path starting with a '/', not a file path.

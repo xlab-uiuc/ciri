@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-session-caching', 'repl-diskless-sync-max-replicas', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['tls-session-caching parameter is invalid for Redis version 7.0.0', 'repl-diskless-sync-max-replicas parameter is invalid for Redis version 7.0.0', 'hll-sparse-max-bytes parameter is invalid for Redis version 7.0.0', 'proto-max-bulk-len parameter is invalid for Redis version 7.0.0', 'aof-rewrite-incremental-fsync parameter is invalid for Redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['tls-session-caching', 'repl-diskless-sync-max-replicas', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ["tls-session-caching parameter value should be 'yes' or 'no'.", 'repl-diskless-sync-max-replicas value should be greater than 0.', 'hll-sparse-max-bytes value should be less than or equal to 2048.', 'proto-max-bulk-len value should be less than or equal to 512mb.', "aof-rewrite-incremental-fsync parameter value should be 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['tls-session-caching', 'repl-diskless-sync-max-replicas', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['tls-session-caching is an invalid parameter for Redis configuration.', 'repl-diskless-sync-max-replicas should have a value greater than 0 for Redis configuration.', 'hll-sparse-max-bytes should be set to a value greater than 3000 for Redis configuration.', 'proto-max-bulk-len should not exceed a reasonable size for Redis configuration.', 'aof-rewrite-incremental-fsync is an invalid parameter for Redis configuration.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: tls-session-caching	repl-diskless-sync-max-replicas	hll-sparse-max-bytes	proto-max-bulk-len	aof-rewrite-incremental-fsync
+[Ciri] Reason for tls-session-caching: tls-session-caching is an invalid parameter for Redis configuration.
+[Ciri] Reason for repl-diskless-sync-max-replicas: repl-diskless-sync-max-replicas parameter is invalid for Redis version 7.0.0
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes should be set to a value greater than 3000 for Redis configuration.
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len parameter is invalid for Redis version 7.0.0
+[Ciri] Reason for aof-rewrite-incremental-fsync: aof-rewrite-incremental-fsync is an invalid parameter for Redis configuration.

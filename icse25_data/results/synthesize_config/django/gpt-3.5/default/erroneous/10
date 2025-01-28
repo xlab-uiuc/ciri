@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 6, 3]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'MANAGERS'], 'reason': ["The property 'LOGIN_REDIRECT_URL' has the value 'file//' which does not follow the correct URL format.", "The property 'MANAGERS' is referencing 'ADMINS' but the correct usage is to define 'MANAGERS' separately."]}
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'MANAGERS'], 'reason': ["The property 'LOGIN_REDIRECT_URL' has the value 'file//' which does not follow the correct URL format.", "The property 'MANAGERS' is set to 'ADMINS' which should be a list of email addresses instead."]}
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'MANAGERS'], 'reason': ["The property 'LOGIN_REDIRECT_URL' has the value 'file//' which does not follow the correct URL format.", "The property 'MANAGERS' is not defined correctly. It should be assigned a list of email addresses."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: LOGIN_REDIRECT_URL	MANAGERS
+[Ciri] Reason for LOGIN_REDIRECT_URL: The property 'LOGIN_REDIRECT_URL' has the value 'file//' which does not follow the correct URL format.
+[Ciri] Reason for MANAGERS: The property 'MANAGERS' is referencing 'ADMINS' but the correct usage is to define 'MANAGERS' separately.

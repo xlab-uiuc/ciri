@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.keytab.file'], 'reason': ['alluxio.master.keytab.file is not a valid file path']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.local.store.file.buckets', 'alluxio.master.ufs.active.sync.poll.batch.size', 'alluxio.worker.ufs.block.open.timeout', 'alluxio.master.keytab.file'], 'reason': ['alluxio.user.client.cache.local.store.file.buckets should be an integer', 'alluxio.master.ufs.active.sync.poll.batch.size should be an integer', 'alluxio.worker.ufs.block.open.timeout should be a time', 'alluxio.master.keytab.file should be a valid file path']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.local.store.file.buckets'], 'reason': ['alluxio.user.client.cache.local.store.file.buckets should be an integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.local.store.file.buckets'], 'reason': ['alluxio.user.client.cache.local.store.file.buckets should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.local.store.file.buckets'], 'reason': ['The value of alluxio.user.client.cache.local.store.file.buckets is not a valid number.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.keytab.file', 'alluxio.worker.network.bind.host'], 'reason': ['alluxio.master.keytab.file: The property alluxio.master.keytab.file is not a valid file path.', 'alluxio.worker.network.bind.host: The property alluxio.worker.network.bind.host is not a valid hostname.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.client.cache.local.store.file.buckets
+[Ciri] Reason for alluxio.user.client.cache.local.store.file.buckets: alluxio.user.client.cache.local.store.file.buckets should be a positive integer

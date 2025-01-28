@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].scheduler.priority.levels', 'file.client-write-packet-size'], 'reason': ['Deprecated property. Use fs.defaultFS instead.', 'Invalid parameter name format.', 'Invalid parameter name format.']}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].scheduler.priority.levels', 'file.client-write-packet-size'], 'reason': ['Deprecated property. Use fs.defaultFS instead.', 'Invalid parameter name format.', 'Invalid parameter name format.']}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].scheduler.priority.levels', 'file.client-write-packet-size'], 'reason': ['Deprecated property. Use fs.defaultFS instead.', 'Invalid property name format. Replace [port_number] with an actual port number.', 'Property name contains invalid characters.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.default.name	ipc.[port_number].scheduler.priority.levels	file.client-write-packet-size
+[Ciri] Reason for fs.default.name: Deprecated property. Use fs.defaultFS instead.
+[Ciri] Reason for ipc.[port_number].scheduler.priority.levels: Invalid parameter name format.
+[Ciri] Reason for file.client-write-packet-size: Invalid parameter name format.

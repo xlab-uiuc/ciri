@@ -1,0 +1,16 @@
+Wrong shot number:
+[1, 8, 3]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory-mb', 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds', 'yarn.scheduler.configuration.store.class'], 'reason': ["The value of 'yarn.nodemanager.resource.memory-mb' cannot be negative. It should be a positive integer or -1 for auto-configuration.", "The value of 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds' cannot be negative. It should be a non-negative integer or -1 to upload logs only when the application finishes.", "The value 'file' for property 'yarn.scheduler.configuration.store.class' is invalid. Valid values are 'memory', 'leveldb', 'zk' or the fully qualified class name."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.nodemanager.resource.memory-mb	yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds	yarn.scheduler.configuration.store.class
+[Ciri] Reason for yarn.nodemanager.resource.memory-mb: The value of 'yarn.nodemanager.resource.memory-mb' cannot be negative. It should be a positive integer or -1 for auto-configuration.
+[Ciri] Reason for yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds: The value of 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds' cannot be negative. It should be a non-negative integer or -1 to upload logs only when the application finishes.
+[Ciri] Reason for yarn.scheduler.configuration.store.class: The value 'file' for property 'yarn.scheduler.configuration.store.class' is invalid. Valid values are 'memory', 'leveldb', 'zk' or the fully qualified class name.

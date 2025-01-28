@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.home', 'alluxio.master.embedded.journal.transport.request.timeout.ms', 'alluxio.user.block.worker.client.pool.gc.threshold', 'alluxio.user.network.rpc.keepalive.time', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ["The 'alluxio.home' property is not a valid Alluxio configuration property.", "The time unit for 'alluxio.master.embedded.journal.transport.request.timeout.ms' should be in milliseconds without specifying 'sec'.", "The time unit for 'alluxio.user.block.worker.client.pool.gc.threshold' should be in milliseconds without specifying 'sec'.", "The time unit for 'alluxio.user.network.rpc.keepalive.time' should be in milliseconds without specifying 'sec'.", "The time unit for 'alluxio.jvm.monitor.warn.threshold' should be in milliseconds without specifying 'sec'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.home	alluxio.master.embedded.journal.transport.request.timeout.ms	alluxio.user.block.worker.client.pool.gc.threshold	alluxio.user.network.rpc.keepalive.time	alluxio.jvm.monitor.warn.threshold
+[Ciri] Reason for alluxio.home: The 'alluxio.home' property is not a valid Alluxio configuration property.
+[Ciri] Reason for alluxio.master.embedded.journal.transport.request.timeout.ms: The time unit for 'alluxio.master.embedded.journal.transport.request.timeout.ms' should be in milliseconds without specifying 'sec'.
+[Ciri] Reason for alluxio.user.block.worker.client.pool.gc.threshold: The time unit for 'alluxio.user.block.worker.client.pool.gc.threshold' should be in milliseconds without specifying 'sec'.
+[Ciri] Reason for alluxio.user.network.rpc.keepalive.time: The time unit for 'alluxio.user.network.rpc.keepalive.time' should be in milliseconds without specifying 'sec'.
+[Ciri] Reason for alluxio.jvm.monitor.warn.threshold: The time unit for 'alluxio.jvm.monitor.warn.threshold' should be in milliseconds without specifying 'sec'.

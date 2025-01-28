@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 6, 2]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ident_file'], 'reason': ["The property 'ident_file' has an incorrect format. It should not contain '/\\'. The correct format is 'ident_file=ConfigDir/pg_ident.conf'."]}
+
+{'hasError': True, 'errParameter': ['ident_file'], 'reason': ["The property 'ident_file' has an incorrect format. It should not contain the escape character '\\' before 'ConfigDir'. The correct format should be 'ident_file=/ConfigDir/pg_ident.conf'."]}
+
+{'hasError': True, 'errParameter': ['ident_file'], 'reason': ["The property 'ident_file' has an incorrect format. It should not contain '/\\'. The correct format is 'ident_file=ConfigDir/pg_ident.conf'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: ident_file
+[Ciri] Reason for ident_file: The property 'ident_file' has an incorrect format. It should not contain '/\'. The correct format is 'ident_file=ConfigDir/pg_ident.conf'.

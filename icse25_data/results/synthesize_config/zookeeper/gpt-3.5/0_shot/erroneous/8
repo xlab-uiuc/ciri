@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'maxSessionTimeout', 'minSessionTimeout'], 'reason': ['dataDir should not have extra slashes at the end', 'maxSessionTimeout should be a positive value', 'minSessionTimeout should be a positive value']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'maxSessionTimeout', 'minSessionTimeout'], 'reason': ['dataDir should not end with extra slashes', 'maxSessionTimeout should be a positive value', 'minSessionTimeout should be a positive value']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'maxSessionTimeout', 'minSessionTimeout'], 'reason': ['dataDir should not end with multiple slashes.', 'maxSessionTimeout should be a positive value.', 'minSessionTimeout should be a positive value.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dataDir	maxSessionTimeout	minSessionTimeout
+[Ciri] Reason for dataDir: dataDir should not end with multiple slashes.
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout should be a positive value.
+[Ciri] Reason for minSessionTimeout: minSessionTimeout should be a positive value

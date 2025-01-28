@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['work_mem', 'max_pred_locks_per_relation'], 'reason': ['work_mem must be a positive integer', 'max_pred_locks_per_relation must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['work_mem', 'max_pred_locks_per_relation'], 'reason': ['work_mem is not a valid parameter', 'max_pred_locks_per_relation must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'shared_buffers', 'work_mem', 'wal_decode_buffer_size'], 'reason': ['max_connections must be greater than 0', 'shared_buffers must be greater than 0', 'work_mem must be greater than 0', 'wal_decode_buffer_size must be greater than 0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: work_mem	max_pred_locks_per_relation
+[Ciri] Reason for work_mem: work_mem must be a positive integer
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation must be a positive integer

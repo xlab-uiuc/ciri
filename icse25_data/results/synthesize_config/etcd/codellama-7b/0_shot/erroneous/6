@@ -1,0 +1,51 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'initial-cluster-state', 'quota-backend-bytes'], 'reason': ['data-dir is not a valid directory', 'name is not a valid name', 'initial-cluster-state is not a valid initial cluster state', 'quota-backend-bytes is not a valid quota backend bytes']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'quota-backend-bytes', 'strict-reconfig-check'], 'reason': ['initial-cluster-state is not a valid option for etcd version 3.5.0', 'quota-backend-bytes is not a valid option for etcd version 3.5.0', 'strict-reconfig-check is not a valid option for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ["initial-cluster-state must be either 'new' or 'existing'"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'initial-cluster-state'], 'reason': ['data-dir is not a valid directory', 'name is not a valid name', 'initial-cluster-state is not a valid initial cluster state']}
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'client-transport-security', 'peer-transport-security', 'initial-cluster-state', 'quota-backend-bytes'], 'reason': ['The data-dir property is not supported in etcd version 3.5.0. Please remove this property from the configuration file.', 'The name property is not supported in etcd version 3.5.0. Please remove this property from the configuration file.', 'The client-transport-security property is not supported in etcd version 3.5.0. Please remove this property from the configuration file.', 'The peer-transport-security property is not supported in etcd version 3.5.0. Please remove this property from the configuration file.', 'The initial-cluster-state property is not supported in etcd version 3.5.0. Please remove this property from the configuration file.', 'The quota-backend-bytes property is not supported in etcd version 3.5.0. Please remove this property from the configuration file.']}
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'listen-peer-urls', 'listen-client-urls', 'initial-cluster', 'initial-cluster-token', 'initial-cluster-state', 'strict-reconfig-check'], 'reason': ['data-dir is not a valid directory', 'name is not a valid name', 'listen-peer-urls is not a valid URL', 'listen-client-urls is not a valid URL', 'initial-cluster is not a valid initial cluster', 'initial-cluster-token is not a valid initial cluster token', 'initial-cluster-state is not a valid initial cluster state', 'strict-reconfig-check is not a valid strict reconfig check']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'initial-cluster', 'initial-cluster-state', 'advertise-client-urls'], 'reason': ['data-dir is not a valid directory', 'name is not a valid name', 'initial-cluster is not a valid initial cluster', 'initial-cluster-state is not a valid initial cluster state', 'advertise-client-urls is not a valid advertise client urls']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['name', 'data-dir', 'wal-dir', 'snap-count', 'heartbeat-interval', 'election-timeout', 'initial-cluster-state', 'quota-backend-bytes', 'strict-reconfig-check', 'advertise-client-urls'], 'reason': ['name must be set', 'data-dir must be set', 'wal-dir must be set', 'snap-count must be set', 'heartbeat-interval must be set', 'election-timeout must be set', 'initial-cluster-state must be set', 'quota-backend-bytes must be set', 'strict-reconfig-check must be set', 'advertise-client-urls must be set']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'initial-cluster-state', 'quota-backend-bytes', 'strict-reconfig-check', 'advertise-client-urls'], 'reason': ['data-dir: The directory must be specified.', 'name: The name must be specified.', 'initial-cluster-state: The initial cluster state must be specified.', 'quota-backend-bytes: The quota backend bytes must be specified.', 'strict-reconfig-check: The strict reconfig check must be specified.', 'advertise-client-urls: The advertise client URLs must be specified.']}
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'listen-client-urls', 'initial-cluster', 'initial-cluster-token', 'initial-cluster-state', 'strict-reconfig-check'], 'reason': ['data-dir is required', 'name is required', 'listen-client-urls is required', 'initial-cluster is required', 'initial-cluster-token is required', 'initial-cluster-state is required', 'strict-reconfig-check is required']}
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'initial-cluster', 'initial-cluster-state', 'advertise-client-urls'], 'reason': ['data-dir: The data-dir property is not a valid directory.', 'name: The name property is not a valid name.', 'initial-cluster: The initial-cluster property is not a valid initial cluster.', 'initial-cluster-state: The initial-cluster-state property is not a valid initial cluster state.', 'advertise-client-urls: The advertise-client-urls property is not a valid advertise client URLs.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['name', 'data-dir', 'heartbeat-interval', 'election-timeout', 'initial-cluster-state', 'quota-backend-bytes', 'strict-reconfig-check', 'advertise-client-urls'], 'reason': ['name is required', 'data-dir is required', 'heartbeat-interval must be greater than 0', 'election-timeout must be greater than 0', "initial-cluster-state must be either 'new' or 'existing'", 'quota-backend-bytes must be greater than 0', "strict-reconfig-check must be either 'true' or 'false'", 'advertise-client-urls must be a valid URL']}
+
+{'hasError': True, 'errParameter': ['name', 'data-dir', 'heartbeat-interval', 'election-timeout', 'initial-cluster-state', 'quota-backend-bytes', 'strict-reconfig-check', 'advertise-client-urls'], 'reason': ['name is required', 'data-dir is required', 'heartbeat-interval must be greater than 0', 'election-timeout must be greater than 0', "initial-cluster-state must be one of 'new', 'existing'", 'quota-backend-bytes must be greater than or equal to 0', 'strict-reconfig-check must be a boolean', 'advertise-client-urls must be a valid URL']}
+
+{'hasError': True, 'errParameter': ['data-dir', 'name', 'initial-cluster'], 'reason': ['data-dir is required', 'name is required', 'initial-cluster is required']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: name	data-dir	heartbeat-interval	election-timeout	initial-cluster-state	quota-backend-bytes	strict-reconfig-check	advertise-client-urls
+[Ciri] Reason for name: name is required
+[Ciri] Reason for data-dir: data-dir is required
+[Ciri] Reason for heartbeat-interval: heartbeat-interval must be greater than 0
+[Ciri] Reason for election-timeout: election-timeout must be greater than 0
+[Ciri] Reason for initial-cluster-state: initial-cluster-state must be one of 'new', 'existing'
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes must be greater than 0
+[Ciri] Reason for strict-reconfig-check: strict-reconfig-check must be either 'true' or 'false'
+[Ciri] Reason for advertise-client-urls: advertise-client-urls must be a valid URL

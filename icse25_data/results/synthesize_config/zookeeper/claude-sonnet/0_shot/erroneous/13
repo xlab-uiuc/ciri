@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'clientPort', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['The secureClientPort property is deprecated in ZooKeeper 3.7.0 and should be replaced with the secure.client.portUnification property.', 'The clientPort property is deprecated in ZooKeeper 3.7.0 when portUnification is enabled. The client port should be specified using the clientPortAddress property.', 'The quorum.auth.kerberos.servicePrincipal property is not a valid ZooKeeper configuration property in version 3.7.0. It should be replaced with the server.principal and server.principal.keytab properties for Kerberos authentication.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: secureClientPort	clientPort	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for secureClientPort: The secureClientPort property is deprecated in ZooKeeper 3.7.0 and should be replaced with the secure.client.portUnification property.
+[Ciri] Reason for clientPort: The clientPort property is deprecated in ZooKeeper 3.7.0 when portUnification is enabled. The client port should be specified using the clientPortAddress property.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: The quorum.auth.kerberos.servicePrincipal property is not a valid ZooKeeper configuration property in version 3.7.0. It should be replaced with the server.principal and server.principal.keytab properties for Kerberos authentication.

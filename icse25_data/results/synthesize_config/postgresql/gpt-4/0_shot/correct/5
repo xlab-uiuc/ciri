@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['syslog_sequence_numbers', 'data_sync_retry', 'max_slot_wal_keep_size'], 'reason': ["The parameter 'syslog_sequence_numbers' does not exist in PostgreSQL 13.0.", "The parameter 'data_sync_retry' does not exist in PostgreSQL 13.0.", "The parameter 'max_slot_wal_keep_size' should not be set to -1. In PostgreSQL 13.0, setting this value to -1 is not valid; it should be a positive integer or 'unlimited'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: syslog_sequence_numbers	data_sync_retry	max_slot_wal_keep_size
+[Ciri] Reason for syslog_sequence_numbers: The parameter 'syslog_sequence_numbers' does not exist in PostgreSQL 13.0.
+[Ciri] Reason for data_sync_retry: The parameter 'data_sync_retry' does not exist in PostgreSQL 13.0.
+[Ciri] Reason for max_slot_wal_keep_size: The parameter 'max_slot_wal_keep_size' should not be set to -1. In PostgreSQL 13.0, setting this value to -1 is not valid; it should be a positive integer or 'unlimited'.

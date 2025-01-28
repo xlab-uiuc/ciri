@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['lc_monetary', 'data_directory', 'session_replication_role'], 'reason': ["lc_monetary should be set to 'en_US.utf8' for proper formatting of monetary values.", "data_directory should specify the actual data directory path, not just 'ConfigDir'.", "session_replication_role should be set to 'replica' or 'local' instead of 'origin'."]}
+
+{'hasError': True, 'errParameter': ['lc_monetary', 'data_directory', 'session_replication_role'], 'reason': ["lc_monetary should be set to a valid locale name, such as 'en_US.UTF-8'.", "data_directory should specify the actual data directory path, not just 'ConfigDir'.", "session_replication_role should be set to 'replica' or 'local'."]}
+
+{'hasError': True, 'errParameter': ['lc_monetary', 'data_directory', 'session_replication_role'], 'reason': ["lc_monetary should be set to a valid locale name, such as 'en_US.UTF-8'.", "data_directory should specify the actual path to the data directory, not just 'ConfigDir'.", "session_replication_role should be set to 'replica' or 'local'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: lc_monetary	data_directory	session_replication_role
+[Ciri] Reason for lc_monetary: lc_monetary should be set to a valid locale name, such as 'en_US.UTF-8'.
+[Ciri] Reason for data_directory: data_directory should specify the actual path to the data directory, not just 'ConfigDir'.
+[Ciri] Reason for session_replication_role: session_replication_role should be set to 'replica' or 'local'.

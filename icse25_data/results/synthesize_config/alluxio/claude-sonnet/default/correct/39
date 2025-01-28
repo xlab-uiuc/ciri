@@ -1,0 +1,15 @@
+Wrong shot number:
+[7, 1, 13]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.netty.worker.threads', 'alluxio.underfs.s3.socket.timeout'], 'reason': ["The property 'alluxio.user.network.netty.worker.threads' has the value '-1' which is not within the accepted range [0, Integer.MAX_VALUE].", "The property 'alluxio.underfs.s3.socket.timeout' has the value '1sec' which is not within the accepted range [5sec, 5min]."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.netty.worker.threads	alluxio.underfs.s3.socket.timeout
+[Ciri] Reason for alluxio.user.network.netty.worker.threads: The property 'alluxio.user.network.netty.worker.threads' has the value '-1' which is not within the accepted range [0, Integer.MAX_VALUE].
+[Ciri] Reason for alluxio.underfs.s3.socket.timeout: The property 'alluxio.underfs.s3.socket.timeout' has the value '1sec' which is not within the accepted range [5sec, 5min].

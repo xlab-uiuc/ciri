@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1=localhost:2888:3888'], 'reason': ['The server.1=localhost:2888:3888 parameter is not valid. The server.x=localhost:port:port parameter must be in the format of server.x=localhost:port:port']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'tickTime', 'initLimit', 'syncLimit', 'clientPort'], 'reason': ['dataDir is not defined', 'dataLogDir is not defined', 'tickTime is not defined', 'initLimit is not defined', 'syncLimit is not defined', 'clientPort is not defined']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tickTime', 'initLimit', 'syncLimit', 'clientPort'], 'reason': ['tickTime must be greater than 0', 'initLimit must be greater than 0', 'syncLimit must be greater than 0', 'clientPort must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort'], 'reason': ['dataDir is not a directory', 'dataLogDir is not a directory', 'clientPort is not a number']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dataDir	dataLogDir	clientPort
+[Ciri] Reason for dataDir: dataDir is not a directory
+[Ciri] Reason for dataLogDir: dataLogDir is not a directory
+[Ciri] Reason for clientPort: clientPort is not a valid port

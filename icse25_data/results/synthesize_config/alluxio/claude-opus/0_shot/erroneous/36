@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host', 'alluxio.master.tieredstore.global.mediumtype'], 'reason': ['The value for alluxio.job.worker.bind.host should be a valid IP address, not -1.0.0.0', 'The configuration property alluxio.master.tieredstore.global.mediumtype is not valid for Alluxio version 2.5.0. The correct property name is alluxio.worker.tieredstore.level0.alias']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.bind.host	alluxio.master.tieredstore.global.mediumtype
+[Ciri] Reason for alluxio.job.worker.bind.host: The value for alluxio.job.worker.bind.host should be a valid IP address, not -1.0.0.0
+[Ciri] Reason for alluxio.master.tieredstore.global.mediumtype: The configuration property alluxio.master.tieredstore.global.mediumtype is not valid for Alluxio version 2.5.0. The correct property name is alluxio.worker.tieredstore.level0.alias

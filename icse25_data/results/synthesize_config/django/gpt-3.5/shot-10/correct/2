@@ -1,0 +1,17 @@
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['MIGRATION_MODULES', 'AUTH_PASSWORD_VALIDATORS', 'SESSION_COOKIE_DOMAIN', 'YEAR_MONTH_FORMAT', 'IGNORABLE_404_URLS', 'LANGUAGE_COOKIE_SECURE', 'SHORT_DATE_FORMAT'], 'reason': ['MIGRATION_MODULES should not be an empty dictionary. It should contain mappings of app names to module names.', 'AUTH_PASSWORD_VALIDATORS should not be an empty list. It should contain a list of validator dictionaries.', 'SESSION_COOKIE_DOMAIN should not be None. It should be a string value.', "YEAR_MONTH_FORMAT should be in the format 'Y F' instead of 'F Y'.", 'IGNORABLE_404_URLS should not be an empty list. It should contain a list of URL patterns.', 'LANGUAGE_COOKIE_SECURE should be set to False for development environments.', "SHORT_DATE_FORMAT should be in the format 'm/d/Y' instead of 'd/m/Y'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: MIGRATION_MODULES	AUTH_PASSWORD_VALIDATORS	SESSION_COOKIE_DOMAIN	YEAR_MONTH_FORMAT	IGNORABLE_404_URLS	LANGUAGE_COOKIE_SECURE	SHORT_DATE_FORMAT
+[Ciri] Reason for MIGRATION_MODULES: MIGRATION_MODULES should not be an empty dictionary. It should contain mappings of app names to module names.
+[Ciri] Reason for AUTH_PASSWORD_VALIDATORS: AUTH_PASSWORD_VALIDATORS should not be an empty list. It should contain a list of validator dictionaries.
+[Ciri] Reason for SESSION_COOKIE_DOMAIN: SESSION_COOKIE_DOMAIN should not be None. It should be a string value.
+[Ciri] Reason for YEAR_MONTH_FORMAT: YEAR_MONTH_FORMAT should be in the format 'Y F' instead of 'F Y'.
+[Ciri] Reason for IGNORABLE_404_URLS: IGNORABLE_404_URLS should not be an empty list. It should contain a list of URL patterns.
+[Ciri] Reason for LANGUAGE_COOKIE_SECURE: LANGUAGE_COOKIE_SECURE should be set to False for development environments.
+[Ciri] Reason for SHORT_DATE_FORMAT: SHORT_DATE_FORMAT should be in the format 'm/d/Y' instead of 'd/m/Y'.

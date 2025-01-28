@@ -1,0 +1,18 @@
+Wrong shot number:
+[6, 7, 4]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['stream-node-max-entries'], 'reason': ["The property 'stream-node-max-entries' has the value '50' which is less than the minimum value 100."]}
+
+{'hasError': True, 'errParameter': ['repl-backlog-size'], 'reason': ["The property 'repl-backlog-size' has the value '4mb' which is not a valid value. The valid values are an integer followed by 'mb' or 'MB'."]}
+
+{'hasError': True, 'errParameter': ['repl-backlog-size'], 'reason': ["The property 'repl-backlog-size' has the value '4mb' which is not within the accepted value {1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304 8388608 16777216 33554432 67108864 134217728 268435456 536870912 1073741824}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: repl-backlog-size
+[Ciri] Reason for repl-backlog-size: The property 'repl-backlog-size' has the value '4mb' which is not a valid value. The valid values are an integer followed by 'mb' or 'MB'.

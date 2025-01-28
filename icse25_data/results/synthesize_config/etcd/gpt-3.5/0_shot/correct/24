@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'proxy-failure-wait', 'proxy-refresh-interval'], 'reason': ['listen-peer-urls should use https instead of http', 'proxy-failure-wait value should be in milliseconds', 'proxy-refresh-interval value should be in milliseconds']}
+
+{'hasError': True, 'errParameter': ['enable-pprof', 'listen-peer-urls', 'proxy-failure-wait', 'enable-v2', 'proxy-refresh-interval'], 'reason': ["The 'enable-pprof' parameter should be a boolean value (true/false).", "The 'listen-peer-urls' parameter should use the 'https' protocol for secure communication.", "The 'proxy-failure-wait' parameter should be specified in milliseconds.", "The 'enable-v2' parameter is not a valid configuration for etcd version 3.5.0.", "The 'proxy-refresh-interval' parameter should be specified in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['enable-pprof', 'listen-peer-urls', 'proxy-failure-wait', 'enable-v2', 'proxy-refresh-interval'], 'reason': ["The 'enable-pprof' parameter should be a boolean value (true/false).", "The 'listen-peer-urls' parameter should use the 'https' protocol for secure communication.", "The 'proxy-failure-wait' parameter should be specified in milliseconds.", "The 'enable-v2' parameter is not supported in etcd version 3.5.0.", "The 'proxy-refresh-interval' parameter should be specified in milliseconds."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: enable-pprof	listen-peer-urls	proxy-failure-wait	enable-v2	proxy-refresh-interval
+[Ciri] Reason for enable-pprof: The 'enable-pprof' parameter should be a boolean value (true/false).
+[Ciri] Reason for listen-peer-urls: The 'listen-peer-urls' parameter should use the 'https' protocol for secure communication.
+[Ciri] Reason for proxy-failure-wait: The 'proxy-failure-wait' parameter should be specified in milliseconds.
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is not supported in etcd version 3.5.0.
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter should be specified in milliseconds.

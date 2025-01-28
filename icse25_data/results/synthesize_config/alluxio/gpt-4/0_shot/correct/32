@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.shell.backup.state.lock.try.duration', 'alluxio.job.master.worker.timeout', 'alluxio.user.network.streaming.keepalive.timeout', 'alluxio.underfs.gcs.default.mode'], 'reason': ["The correct property is 'alluxio.master.backup.state.lock.try.duration'.", "The correct format for durations should be like '1ms', '1s', '1m', etc. For 'alluxio.job.master.worker.timeout', it should be '1s' instead of '1sec'.", "Similarly, 'alluxio.user.network.streaming.keepalive.timeout' should use a duration format like '30s' instead of '30sec'.", "The value for 'alluxio.underfs.gcs.default.mode' should be in octal format, so it should start with a '0', making it '0350' instead of '350'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.master.shell.backup.state.lock.try.duration	alluxio.job.master.worker.timeout	alluxio.user.network.streaming.keepalive.timeout	alluxio.underfs.gcs.default.mode
+[Ciri] Reason for alluxio.master.shell.backup.state.lock.try.duration: The correct property is 'alluxio.master.backup.state.lock.try.duration'.
+[Ciri] Reason for alluxio.job.master.worker.timeout: The correct format for durations should be like '1ms', '1s', '1m', etc. For 'alluxio.job.master.worker.timeout', it should be '1s' instead of '1sec'.
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.timeout: Similarly, 'alluxio.user.network.streaming.keepalive.timeout' should use a duration format like '30s' instead of '30sec'.
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: The value for 'alluxio.underfs.gcs.default.mode' should be in octal format, so it should start with a '0', making it '0350' instead of '350'.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_buffers', 'log_parameter_max_length'], 'reason': ['wal_buffers should be set to a positive integer or -1 (to allow the system to decide). However, setting it explicitly to -1 is not an error but rather a choice to let the system manage its size.', 'log_parameter_max_length must be a positive integer or -1 to log all parameters regardless of length. A value of -2 is invalid.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: wal_buffers	log_parameter_max_length
+[Ciri] Reason for wal_buffers: wal_buffers should be set to a positive integer or -1 (to allow the system to decide). However, setting it explicitly to -1 is not an error but rather a choice to let the system manage its size.
+[Ciri] Reason for log_parameter_max_length: log_parameter_max_length must be a positive integer or -1 to log all parameters regardless of length. A value of -2 is invalid.

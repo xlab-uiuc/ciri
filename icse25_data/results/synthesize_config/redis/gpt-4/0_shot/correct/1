@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'replica-announce-ip'], 'reason': ["Using the loopback address (127.0.0.1) for 'cluster-announce-ip' and 'replica-announce-ip' is typically incorrect for a cluster setup, as it refers to 'localhost' and will not allow other nodes to communicate with this one.", 'If this configuration is intended for a single-node setup for testing or development on the same machine, it might be acceptable. However, for a production environment or any setup involving multiple nodes, these should be set to an IP address that is reachable by other nodes.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-announce-ip	replica-announce-ip
+[Ciri] Reason for cluster-announce-ip: Using the loopback address (127.0.0.1) for 'cluster-announce-ip' and 'replica-announce-ip' is typically incorrect for a cluster setup, as it refers to 'localhost' and will not allow other nodes to communicate with this one.
+[Ciri] Reason for replica-announce-ip: If this configuration is intended for a single-node setup for testing or development on the same machine, it might be acceptable. However, for a production environment or any setup involving multiple nodes, these should be set to an IP address that is reachable by other nodes.

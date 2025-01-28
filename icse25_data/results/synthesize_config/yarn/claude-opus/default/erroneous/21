@@ -1,0 +1,15 @@
+Wrong shot number:
+[1, 6, 7]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.delegation-token-renewer.thread-retry-interval', 'yarn.log-aggregation.file-formats'], 'reason': ["The property 'yarn.resourcemanager.delegation-token-renewer.thread-retry-interval' has the value '60s' which is not of the correct type Long.", "The property 'yarn.log-aggregation.file-formats' has the value 'nonono' which is not within the accepted values {TFile,TFile.gz,TFile.lz4,TFile.zst,TFile.deflate,TFile.snappy,TFile.lzo,TFile.lz4_deflate,TFile.lz4_snappy,TFile.zstd_nocompress,TFile.zstd,JSON,JSON.gz,JSON.lz4,JSON.zst,JSON.deflate,JSON.snappy,JSON.lzo,JSON.lz4_deflate,JSON.lz4_snappy,JSON.zstd_nocompress,JSON.zstd}."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.delegation-token-renewer.thread-retry-interval	yarn.log-aggregation.file-formats
+[Ciri] Reason for yarn.resourcemanager.delegation-token-renewer.thread-retry-interval: The property 'yarn.resourcemanager.delegation-token-renewer.thread-retry-interval' has the value '60s' which is not of the correct type Long.
+[Ciri] Reason for yarn.log-aggregation.file-formats: The property 'yarn.log-aggregation.file-formats' has the value 'nonono' which is not within the accepted values {TFile,TFile.gz,TFile.lz4,TFile.zst,TFile.deflate,TFile.snappy,TFile.lzo,TFile.lz4_deflate,TFile.lz4_snappy,TFile.zstd_nocompress,TFile.zstd,JSON,JSON.gz,JSON.lz4,JSON.zst,JSON.deflate,JSON.snappy,JSON.lzo,JSON.lz4_deflate,JSON.lz4_snappy,JSON.zstd_nocompress,JSON.zstd}.

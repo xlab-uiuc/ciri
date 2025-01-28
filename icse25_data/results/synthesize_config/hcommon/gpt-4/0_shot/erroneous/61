@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3.sleepTimeSeconds', 'hadoop.tags.system'], 'reason': ["The property 'fs.s3.sleepTimeSeconds' is not a recognized configuration parameter. It might be a typo or specific to a version not compatible with hcommon 3.3.0.", "The 'hadoop.tags.system' property does not exist in the standard Hadoop configuration parameters. Additionally, the usage pattern provided ('appendProperty') is not a standard method for defining Hadoop configuration properties."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3.sleepTimeSeconds	hadoop.tags.system
+[Ciri] Reason for fs.s3.sleepTimeSeconds: The property 'fs.s3.sleepTimeSeconds' is not a recognized configuration parameter. It might be a typo or specific to a version not compatible with hcommon 3.3.0.
+[Ciri] Reason for hadoop.tags.system: The 'hadoop.tags.system' property does not exist in the standard Hadoop configuration parameters. Additionally, the usage pattern provided ('appendProperty') is not a standard method for defining Hadoop configuration properties.

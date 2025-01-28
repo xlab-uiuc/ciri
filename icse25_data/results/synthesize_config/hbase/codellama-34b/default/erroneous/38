@@ -1,0 +1,18 @@
+Wrong shot number:
+[6, 1, 7]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.data.umask'], 'reason': ["The property 'hbase.data.umask' has the value '888' which is not within the accepted value {000,007,020,022,027,030,032,037,070,072,077,200,202,207,220,222,227,230,232,237,270,272,277,300,302,307,320,322,327,330,332,337,370,372,377,700,702,707,720,722,727,730,732,737,770,772,777}."]}
+
+{'hasError': True, 'errParameter': ['hbase.data.umask'], 'reason': ["The property 'hbase.data.umask' has the value '888' which is not within the accepted value {000,007,020,022,027,070,077,200,202,207,220,222,227,700,702,707,720,722,727,770,772,777}."]}
+
+{'hasError': True, 'errParameter': ['hbase.data.umask'], 'reason': ["The property 'hbase.data.umask' has the value '888' which is not within the accepted value {000,007,070,077}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.data.umask
+[Ciri] Reason for hbase.data.umask: The property 'hbase.data.umask' has the value '888' which is not within the accepted value {000,007,020,022,027,070,077,200,202,207,220,222,227,700,702,707,720,722,727,770,772,777}.

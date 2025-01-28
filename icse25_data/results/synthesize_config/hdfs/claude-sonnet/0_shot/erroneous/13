@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir', 'dfs.balancer.moverThreads'], 'reason': ["The value for dfs.datanode.data.dir is set to 'file:///', which is an invalid path. It should be a comma-separated list of directories on the local filesystem.", 'The value for dfs.balancer.moverThreads is set to 500, which is an unusually high number for the thread pool size for executing block moves. A more reasonable value would be between 10 and 100.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.data.dir	dfs.balancer.moverThreads
+[Ciri] Reason for dfs.datanode.data.dir: The value for dfs.datanode.data.dir is set to 'file:///', which is an invalid path. It should be a comma-separated list of directories on the local filesystem.
+[Ciri] Reason for dfs.balancer.moverThreads: The value for dfs.balancer.moverThreads is set to 500, which is an unusually high number for the thread pool size for executing block moves. A more reasonable value would be between 10 and 100.

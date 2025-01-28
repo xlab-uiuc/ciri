@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.nodemanager.resource.memory.enforced</name>
+  <value>true</value>
+    <description>Whether YARN CGroups strict memory enforcement is enabled.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.cgroups.mount</name>
+  <value>true</value>
+    <description>Whether the LCE should attempt to mount cgroups if not found.
+    This property only applies when the LCE resources handler is set to
+    CgroupsLCEResourcesHandler.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.drain-entities.timeout.ms</name>
+  <value>2000</value>
+    <description>
+    The time period for which timeline v2 client will wait for draining
+    leftover entities after stop.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.leveldb-state-store.path</name>
+  <value>${hadoop.tmp.dir}/yarn/timeline</value>
+    <description>Store file name for leveldb state store.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.entity-group-fs-store.scan-interval-seconds</name>
+  <value>30</value>
+    <description>
+      Scan interval for ATS v1.5 entity group file system storage reader.This
+      value controls how frequent the reader will scan the HDFS active directory
+      for application status.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.entity-group-fs-store.leveldb-cache-read-cache-size</name>
+  <value>20971520</value>
+    <description>
+      Read cache size for the leveldb cache storage in ATS v1.5 plugin storage.
+    </description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.checksum.algo.impl</name>
+  <value>org.apache.hadoop.yarn.sharedcache.ChecksumSHA256Impl</value>
+    <description>The algorithm used to compute checksums of files (SHA-256 by
+    default)</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.webapp.rest-csrf.enabled</name>
+  <value>true</value>
+    <description>
+      Enable the CSRF filter for the NM web app
+    </description>
+</property>
+
+</configuration>

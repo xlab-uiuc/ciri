@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 6, 12]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins', 'hbase.status.multicast.address.ip'], 'reason': ["The property 'hbase.master.logcleaner.plugins' is missing the required cleaner 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner'.", "The property 'hbase.status.multicast.address.ip' has an invalid IP address value '256.256.256.256'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.master.logcleaner.plugins	hbase.status.multicast.address.ip
+[Ciri] Reason for hbase.master.logcleaner.plugins: The property 'hbase.master.logcleaner.plugins' is missing the required cleaner 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner'.
+[Ciri] Reason for hbase.status.multicast.address.ip: The property 'hbase.status.multicast.address.ip' has an invalid IP address value '256.256.256.256'.

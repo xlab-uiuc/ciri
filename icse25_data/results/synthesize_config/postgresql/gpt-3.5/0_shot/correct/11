@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['data_sync_retry', 'wal_skip_threshold', 'max_stack_depth'], 'reason': ["data_sync_retry does not have a valid value. It should be 'on' or 'off'.", "wal_skip_threshold value should be specified in bytes, not just as '4MB'.", "max_stack_depth value should be specified in bytes, not just as '4MB'."]}
+
+{'hasError': True, 'errParameter': ['data_sync_retry', 'wal_skip_threshold'], 'reason': ['data_sync_retry parameter does not exist in PostgreSQL configuration.', 'wal_skip_threshold value should be specified in bytes, not in MB.']}
+
+{'hasError': True, 'errParameter': ['data_sync_retry', 'wal_skip_threshold', 'max_stack_depth'], 'reason': ["Invalid value 'off' for data_sync_retry. Valid values are 'on' or 'off'.", "Invalid value '4MB' for wal_skip_threshold. It should be an integer value representing the size in bytes.", "Invalid value '4MB' for max_stack_depth. It should be an integer value representing the size in bytes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: data_sync_retry	wal_skip_threshold	max_stack_depth
+[Ciri] Reason for data_sync_retry: Invalid value 'off' for data_sync_retry. Valid values are 'on' or 'off'.
+[Ciri] Reason for wal_skip_threshold: Invalid value '4MB' for wal_skip_threshold. It should be an integer value representing the size in bytes.
+[Ciri] Reason for max_stack_depth: Invalid value '4MB' for max_stack_depth. It should be an integer value representing the size in bytes.

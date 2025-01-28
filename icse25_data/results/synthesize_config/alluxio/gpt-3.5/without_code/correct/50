@@ -1,0 +1,18 @@
+Wrong shot number:
+[13, 2, 5]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.metastore.inode.cache.max.size'], 'reason': ["The property 'alluxio.master.metastore.inode.cache.max.size' has a value of '1' which seems too low for cache size."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.metastore.inode.cache.max.size', 'alluxio.user.block.read.retry.sleep.base'], 'reason': ["The property 'alluxio.master.metastore.inode.cache.max.size' should have a value greater than 1.", "The property 'alluxio.user.block.read.retry.sleep.base' should not have a unit in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.metastore.inode.cache.max.size'], 'reason': ["The property 'alluxio.master.metastore.inode.cache.max.size' has a value of '1' which seems unusually low for cache size."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.master.metastore.inode.cache.max.size
+[Ciri] Reason for alluxio.master.metastore.inode.cache.max.size: The property 'alluxio.master.metastore.inode.cache.max.size' has a value of '1' which seems too low for cache size.

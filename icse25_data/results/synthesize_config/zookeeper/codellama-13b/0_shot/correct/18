@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'dataDir', 'secureClientPort'], 'reason': ['clientPortAddress should be in the format of host:port', 'dataDir should be a valid directory', 'secureClientPort should be a valid port number']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'secureClientPort'], 'reason': ['dataDir is not a valid directory. Please check the path.', 'secureClientPort is not a valid port number. Please check the port number.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'secureClientPort'], 'reason': ['dataDir is not a valid directory', 'secureClientPort is not a valid port number']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataDir	secureClientPort
+[Ciri] Reason for dataDir: dataDir is not a valid directory
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid port number. Please check the port number.

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.recovery.dir'], 'reason': ["The value for 'yarn.nodemanager.recovery.dir' contains multiple consecutive forward slashes '////'. It should be corrected to a single forward slash '/' or a valid directory path."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.recovery.dir', 'yarn.nodemanager.windows-secure-container-executor.group', 'yarn.nodemanager.numa-awareness.read-topology'], 'reason': ["The value of 'yarn.nodemanager.recovery.dir' contains multiple consecutive slashes. It should be corrected to 'tmp/staging'.", "The property 'yarn.nodemanager.windows-secure-container-executor.group' should be 'yarn.nodemanager.windows-secure-container-executor-account' in YARN version 3.3.0.", "The property 'yarn.nodemanager.numa-awareness.read-topology' is not a valid property in YARN version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.recovery.dir'], 'reason': ["The value for 'yarn.nodemanager.recovery.dir' contains multiple consecutive forward slashes '////'. It should be corrected to a single forward slash '/' or double backslashes '\\\\'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.recovery.dir
+[Ciri] Reason for yarn.nodemanager.recovery.dir: The value for 'yarn.nodemanager.recovery.dir' contains multiple consecutive forward slashes '////'. It should be corrected to a single forward slash '/' or double backslashes '\\'.

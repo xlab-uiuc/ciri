@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['syncEnabled', 'localSessionsEnabled', 'sslQuorumReloadCertFiles'], 'reason': ["The 'syncEnabled' parameter is not a recognized configuration option for ZooKeeper.", "The 'localSessionsEnabled' parameter is not applicable in the context of this configuration. It's relevant only when 'localSessionsUpgradingEnabled' is set to true.", "The 'sslQuorumReloadCertFiles' parameter is not a valid configuration option. The correct parameter for enabling SSL certificate reloading for the quorum is 'sslQuorumReloadCertFiles'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: syncEnabled	localSessionsEnabled	sslQuorumReloadCertFiles
+[Ciri] Reason for syncEnabled: The 'syncEnabled' parameter is not a recognized configuration option for ZooKeeper.
+[Ciri] Reason for localSessionsEnabled: The 'localSessionsEnabled' parameter is not applicable in the context of this configuration. It's relevant only when 'localSessionsUpgradingEnabled' is set to true.
+[Ciri] Reason for sslQuorumReloadCertFiles: The 'sslQuorumReloadCertFiles' parameter is not a valid configuration option. The correct parameter for enabling SSL certificate reloading for the quorum is 'sslQuorumReloadCertFiles'.

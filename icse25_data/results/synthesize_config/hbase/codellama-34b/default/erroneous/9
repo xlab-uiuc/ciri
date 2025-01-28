@@ -1,0 +1,19 @@
+Wrong shot number:
+[5, 8, 6]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.snapshot.working.dir'], 'reason': ["The property 'hbase.regionserver.info.bindAddress' has the value '0.0.0' which is out of the valid range of an IP address.", "The property 'hbase.snapshot.working.dir' has the value '/valid/dir1' which is not a valid directory."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress'], 'reason': ["The property 'hbase.regionserver.info.bindAddress' has the value '0.0.0' which is out of the valid range of an IP address."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.snapshot.working.dir'], 'reason': ["The property 'hbase.regionserver.info.bindAddress' has the value '0.0.0' which is not within the accepted range of IP addresses.", "The property 'hbase.snapshot.working.dir' has the value '/valid/dir1' which is not within the accepted range of directories."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.info.bindAddress	hbase.snapshot.working.dir
+[Ciri] Reason for hbase.regionserver.info.bindAddress: The property 'hbase.regionserver.info.bindAddress' has the value '0.0.0' which is not within the accepted range of IP addresses.
+[Ciri] Reason for hbase.snapshot.working.dir: The property 'hbase.snapshot.working.dir' has the value '/valid/dir1' which is not within the accepted range of directories.

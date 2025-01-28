@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.fixed.volume.size', 'dfs.disk.balancer.enabled'], 'reason': ["The property 'dfs.datanode.fixed.volume.size' expects a value of type long, but the provided value is a boolean 'true'.", "The property 'dfs.disk.balancer.enabled' is set to 'false' by default in Hadoop 3.x. The description incorrectly states it is enabled by default."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.fixed.volume.size	dfs.disk.balancer.enabled
+[Ciri] Reason for dfs.datanode.fixed.volume.size: The property 'dfs.datanode.fixed.volume.size' expects a value of type long, but the provided value is a boolean 'true'.
+[Ciri] Reason for dfs.disk.balancer.enabled: The property 'dfs.disk.balancer.enabled' is set to 'false' by default in Hadoop 3.x. The description incorrectly states it is enabled by default.

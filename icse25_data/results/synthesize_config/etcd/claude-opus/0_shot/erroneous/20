@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-tls', 'proxy-dial-timeout', 'proxy-read-timeout'], 'reason': ["The 'auto-tls' parameter is not a valid configuration option in etcd v3.5.0. It was removed in v3.5.0.", "The value for 'proxy-dial-timeout' should be a duration string (e.g., '500ms') rather than an integer.", "The value for 'proxy-read-timeout' should be a duration string (e.g., '0s') rather than an integer."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: auto-tls	proxy-dial-timeout	proxy-read-timeout
+[Ciri] Reason for auto-tls: The 'auto-tls' parameter is not a valid configuration option in etcd v3.5.0. It was removed in v3.5.0.
+[Ciri] Reason for proxy-dial-timeout: The value for 'proxy-dial-timeout' should be a duration string (e.g., '500ms') rather than an integer.
+[Ciri] Reason for proxy-read-timeout: The value for 'proxy-read-timeout' should be a duration string (e.g., '0s') rather than an integer.

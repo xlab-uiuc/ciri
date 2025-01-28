@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.http.authentication.kerberos.keytab'], 'reason': ['The location of the keytab file with the credentials for the principal. Referring to the same keytab file Oozie uses for its Kerberos credentials for Hadoop.']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.sensitive-config-keys', 'hadoop.http.authentication.kerberos.keytab', 'hadoop.zk.acl'], 'reason': ['hadoop.security.sensitive-config-keys: The value of the property should be a comma-separated or multi-line list of regular expressions to match configuration keys that should be redacted where appropriate, for example, when logging modified properties during a reconfiguration, private credentials should not be logged. The value of the property is not a valid regular expression.', 'hadoop.http.authentication.kerberos.keytab: The value of the property should be a valid file path. The value of the property is not a valid file path.', 'hadoop.zk.acl: The value of the property should be a valid ACL. The value of the property is not a valid ACL.']}
+
+{'hasError': True, 'errParameter': ['hadoop.http.authentication.kerberos.keytab', 'hadoop.registry.zk.retry.interval.ms', 'hadoop.zk.acl'], 'reason': ['hadoop.http.authentication.kerberos.keytab: The location of the keytab file with the credentials for the principal. Referring to the same keytab file Oozie uses for its Kerberos credentials for Hadoop.', 'hadoop.registry.zk.retry.interval.ms: ', "hadoop.zk.acl: ACL's to be used for ZooKeeper znodes."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.sensitive-config-keys', 'hadoop.http.authentication.kerberos.keytab', 'hadoop.zk.acl'], 'reason': ["hadoop.security.sensitive-config-keys: The value 'secret$' is not a valid regular expression.", "hadoop.http.authentication.kerberos.keytab: The value '/valid/file1' is not a valid path.", "hadoop.zk.acl: The value 'world:anyone:rwcda' is not a valid ACL."]}
+
+{'hasError': True, 'errParameter': ['hadoop.http.authentication.kerberos.keytab'], 'reason': ['The value of hadoop.http.authentication.kerberos.keytab is not a valid file path.']}
+
+{'hasError': True, 'errParameter': ['hadoop.http.authentication.kerberos.keytab'], 'reason': ['The value of hadoop.http.authentication.kerberos.keytab is not a valid file path.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hadoop.http.authentication.kerberos.keytab
+[Ciri] Reason for hadoop.http.authentication.kerberos.keytab: The value of hadoop.http.authentication.kerberos.keytab is not a valid file path.

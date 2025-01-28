@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['exit_on_error', 'krb_server_keyfile', 'autovacuum_vacuum_insert_threshold', 'log_statement_stats', 'checkpoint_flush_after', 'gss_accept_delegation'], 'reason': ['exit_on_error is not a valid parameter for PostgreSQL configuration.', 'krb_server_keyfile should not have single quotes around the value.', 'autovacuum_vacuum_insert_threshold is not a valid parameter for PostgreSQL configuration.', "log_statement_stats should be set to 'on' or 'off'.", "checkpoint_flush_after value should be specified in bytes or '0' for disabling.", 'gss_accept_delegation is not a valid parameter for PostgreSQL configuration.']}
+
+{'hasError': True, 'errParameter': ['exit_on_error', 'krb_server_keyfile', 'autovacuum_vacuum_insert_threshold', 'log_statement_stats', 'checkpoint_flush_after', 'gss_accept_delegation'], 'reason': ['exit_on_error parameter is not recognized in PostgreSQL 13.0 configuration.', 'krb_server_keyfile parameter should not have single quotes around the value.', 'autovacuum_vacuum_insert_threshold parameter is not recognized in PostgreSQL 13.0 configuration.', 'log_statement_stats parameter is not recognized in PostgreSQL 13.0 configuration.', 'checkpoint_flush_after parameter is not recognized in PostgreSQL 13.0 configuration.', 'gss_accept_delegation parameter is not recognized in PostgreSQL 13.0 configuration.']}
+
+{'hasError': True, 'errParameter': ['exit_on_error', 'krb_server_keyfile', 'autovacuum_vacuum_insert_threshold', 'log_statement_stats', 'checkpoint_flush_after', 'gss_accept_delegation'], 'reason': ['exit_on_error is not a valid parameter for PostgreSQL configuration.', 'krb_server_keyfile should not have single quotes around the value.', 'autovacuum_vacuum_insert_threshold should be set to a numeric value, not a string.', "log_statement_stats should be set to 'on' or 'off', not a boolean value.", 'checkpoint_flush_after should be set to a time value, not a number.', 'gss_accept_delegation is not a valid parameter for PostgreSQL configuration.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: exit_on_error	krb_server_keyfile	autovacuum_vacuum_insert_threshold	log_statement_stats	checkpoint_flush_after	gss_accept_delegation
+[Ciri] Reason for exit_on_error: exit_on_error is not a valid parameter for PostgreSQL configuration.
+[Ciri] Reason for krb_server_keyfile: krb_server_keyfile parameter should not have single quotes around the value.
+[Ciri] Reason for autovacuum_vacuum_insert_threshold: autovacuum_vacuum_insert_threshold parameter is not recognized in PostgreSQL 13.0 configuration.
+[Ciri] Reason for log_statement_stats: log_statement_stats should be set to 'on' or 'off', not a boolean value.
+[Ciri] Reason for checkpoint_flush_after: checkpoint_flush_after parameter is not recognized in PostgreSQL 13.0 configuration.
+[Ciri] Reason for gss_accept_delegation: gss_accept_delegation is not a valid parameter for PostgreSQL configuration.

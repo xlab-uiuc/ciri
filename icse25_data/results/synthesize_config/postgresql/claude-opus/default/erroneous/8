@@ -1,0 +1,16 @@
+Wrong shot number:
+[8, 2, 4]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ["The property 'bgwriter_delay' has the value '128NS' which uses an incorrect unit. Valid units are ms, s, min, h, d.", "The property 'max_pred_locks_per_relation' has the value '-2' which is outside the valid range of -1 to INT_MAX.", "The property 'log_min_duration_sample' has the value '-2' which is outside the valid range of -1 to INT_MAX."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: bgwriter_delay	max_pred_locks_per_relation	log_min_duration_sample
+[Ciri] Reason for bgwriter_delay: The property 'bgwriter_delay' has the value '128NS' which uses an incorrect unit. Valid units are ms, s, min, h, d.
+[Ciri] Reason for max_pred_locks_per_relation: The property 'max_pred_locks_per_relation' has the value '-2' which is outside the valid range of -1 to INT_MAX.
+[Ciri] Reason for log_min_duration_sample: The property 'log_min_duration_sample' has the value '-2' which is outside the valid range of -1 to INT_MAX.

@@ -1,0 +1,13 @@
+Correct shot number:
+[15, 9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.num.attempts', 'fs.s3a.assumed.role.session.duration', 'seq.io.sort.mb'], 'reason': ["The value for 'hadoop.security.group.mapping.ldap.num.attempts' should be a positive integer.", "The value for 'fs.s3a.assumed.role.session.duration' should be in the format of 'Xm' where X is a positive integer representing minutes.", "The value for 'seq.io.sort.mb' should be a positive integer."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.num.attempts	fs.s3a.assumed.role.session.duration	seq.io.sort.mb
+[Ciri] Reason for hadoop.security.group.mapping.ldap.num.attempts: The value for 'hadoop.security.group.mapping.ldap.num.attempts' should be a positive integer.
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The value for 'fs.s3a.assumed.role.session.duration' should be in the format of 'Xm' where X is a positive integer representing minutes.
+[Ciri] Reason for seq.io.sort.mb: The value for 'seq.io.sort.mb' should be a positive integer.

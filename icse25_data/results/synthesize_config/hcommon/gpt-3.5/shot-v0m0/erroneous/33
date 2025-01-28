@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.log-slow-lookups.enabled', 'io.erasurecode.codec.xor.rawcoders', 'fs.azure.local.sas.key.mode', 'hadoop.caller.context.max.size'], 'reason': ["The property 'hadoop.security.dns.log-slow-lookups.enabled' has a value of type 'int', but it should be of type 'boolean'.", "The property 'io.erasurecode.codec.xor.rawcoders' has a value 'xor_native' which might not be a valid raw coder implementation.", "The property 'fs.azure.local.sas.key.mode' has a usage tag which is not a standard configuration property.", "The property 'hadoop.caller.context.max.size' has an indentation issue in the description."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.dns.log-slow-lookups.enabled	io.erasurecode.codec.xor.rawcoders	fs.azure.local.sas.key.mode	hadoop.caller.context.max.size
+[Ciri] Reason for hadoop.security.dns.log-slow-lookups.enabled: The property 'hadoop.security.dns.log-slow-lookups.enabled' has a value of type 'int', but it should be of type 'boolean'.
+[Ciri] Reason for io.erasurecode.codec.xor.rawcoders: The property 'io.erasurecode.codec.xor.rawcoders' has a value 'xor_native' which might not be a valid raw coder implementation.
+[Ciri] Reason for fs.azure.local.sas.key.mode: The property 'fs.azure.local.sas.key.mode' has a usage tag which is not a standard configuration property.
+[Ciri] Reason for hadoop.caller.context.max.size: The property 'hadoop.caller.context.max.size' has an indentation issue in the description.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['zset-max-listpack-entries', 'unixsocketperm', 'tls-ca-cert-dir'], 'reason': ["The 'zset-max-listpack-entries' parameter is not a valid configuration option in Redis 7.0.0.", "The 'unixsocketperm' parameter is not a valid configuration option in Redis 7.0.0.", "The 'tls-ca-cert-dir' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter for specifying the directory containing CA certificates is 'tls-ca-cert-file'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: zset-max-listpack-entries	unixsocketperm	tls-ca-cert-dir
+[Ciri] Reason for zset-max-listpack-entries: The 'zset-max-listpack-entries' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for unixsocketperm: The 'unixsocketperm' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for tls-ca-cert-dir: The 'tls-ca-cert-dir' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter for specifying the directory containing CA certificates is 'tls-ca-cert-file'.

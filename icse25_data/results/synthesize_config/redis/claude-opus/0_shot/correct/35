@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'repl-diskless-sync-max-replicas', 'jemalloc-bg-thread', 'timeout'], 'reason': ["The 'enable-module-command' configuration parameter is not available in Redis 7.0.0. It was introduced in Redis 7.0.4.", "The 'repl-diskless-sync-max-replicas' configuration parameter is not available in Redis 7.0.0. It was renamed to 'repl-diskless-sync-max-replicas' in Redis 7.0.0.", "The 'jemalloc-bg-thread' configuration parameter is not available in Redis 7.0.0. It was removed in Redis 7.0.0.", "The 'timeout' configuration parameter is set to 1 second, which is too low. It is recommended to set it to at least 30 seconds to allow clients to send commands and receive responses without being disconnected."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: enable-module-command	repl-diskless-sync-max-replicas	jemalloc-bg-thread	timeout
+[Ciri] Reason for enable-module-command: The 'enable-module-command' configuration parameter is not available in Redis 7.0.0. It was introduced in Redis 7.0.4.
+[Ciri] Reason for repl-diskless-sync-max-replicas: The 'repl-diskless-sync-max-replicas' configuration parameter is not available in Redis 7.0.0. It was renamed to 'repl-diskless-sync-max-replicas' in Redis 7.0.0.
+[Ciri] Reason for jemalloc-bg-thread: The 'jemalloc-bg-thread' configuration parameter is not available in Redis 7.0.0. It was removed in Redis 7.0.0.
+[Ciri] Reason for timeout: The 'timeout' configuration parameter is set to 1 second, which is too low. It is recommended to set it to at least 30 seconds to allow clients to send commands and receive responses without being disconnected.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[13, 6, 5]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The property 'fs.permissions.umask-mode' has the value '008' which is not a valid permission mode. It should be a 3-digit octal number representing file permissions."]}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The property 'fs.permissions.umask-mode' has the value '008' which is not a valid permission number format. It should be in octal format with three digits."]}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The property 'fs.permissions.umask-mode' has the value '008' which is not a valid permission number format. It should be in the range of 0 to 777."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.permissions.umask-mode
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has the value '008' which is not a valid permission number format. It should be in octal format with three digits.

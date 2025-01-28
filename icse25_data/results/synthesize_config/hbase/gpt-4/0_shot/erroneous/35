@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.wal.dir.perms'], 'reason': ["The 'hbase.zookeeper.property.clientPort' value is set to 65536, which is outside the valid port range (0-65535).", "The 'hbase.wal.dir.perms' value is set to 350, which does not follow the correct octal permission notation."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.zookeeper.property.clientPort	hbase.wal.dir.perms
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The 'hbase.zookeeper.property.clientPort' value is set to 65536, which is outside the valid port range (0-65535).
+[Ciri] Reason for hbase.wal.dir.perms: The 'hbase.wal.dir.perms' value is set to 350, which does not follow the correct octal permission notation.

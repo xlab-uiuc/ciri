@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['reconfigEnabled', 'quorum.cnxn.threads.size', 'portUnification', 'minSessionTimeout'], 'reason': ["The correct parameter for enabling reconfiguration should be 'reconfigEnabled=true' or 'reconfigEnabled=false', not a numerical value.", "The correct parameter for setting the size of the connection threads for quorum peers is 'quorumCnxnThreadsSize', not 'quorum.cnxn.threads.size'.", "The 'portUnification' parameter is not a recognized configuration option for ZooKeeper.", "The 'minSessionTimeout' should not be set to 0. It must be greater than 0 and at least twice the tickTime."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: reconfigEnabled	quorum.cnxn.threads.size	portUnification	minSessionTimeout
+[Ciri] Reason for reconfigEnabled: The correct parameter for enabling reconfiguration should be 'reconfigEnabled=true' or 'reconfigEnabled=false', not a numerical value.
+[Ciri] Reason for quorum.cnxn.threads.size: The correct parameter for setting the size of the connection threads for quorum peers is 'quorumCnxnThreadsSize', not 'quorum.cnxn.threads.size'.
+[Ciri] Reason for portUnification: The 'portUnification' parameter is not a recognized configuration option for ZooKeeper.
+[Ciri] Reason for minSessionTimeout: The 'minSessionTimeout' should not be set to 0. It must be greater than 0 and at least twice the tickTime.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.block.write.replace-datanode-on-failure.best-effort', 'nfs.dump.dir'], 'reason': ['The value for dfs.client.block.write.replace-datanode-on-failure.best-effort should be a boolean (true or false), but 1.5 is specified which is not a valid boolean value.', 'The value for nfs.dump.dir should be a valid directory path, but /valid/file2 is specified which looks like a file path, not a directory path.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.client.block.write.replace-datanode-on-failure.best-effort	nfs.dump.dir
+[Ciri] Reason for dfs.client.block.write.replace-datanode-on-failure.best-effort: The value for dfs.client.block.write.replace-datanode-on-failure.best-effort should be a boolean (true or false), but 1.5 is specified which is not a valid boolean value.
+[Ciri] Reason for nfs.dump.dir: The value for nfs.dump.dir should be a valid directory path, but /valid/file2 is specified which looks like a file path, not a directory path.

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.client.https.keystore.resource</name>
+  <value>ssl-client.xml</value>
+  <description>Resource file from which ssl client keystore
+  information will be extracted
+  </description>
+</property>
+
+<property>
+  <name>dfs.blocksize</name>
+  <value>268435456</value>
+  <description>
+      The default block size for new files, in bytes.
+      You can use the following suffix (case insensitive):
+      k(kilo), m(mega), g(giga), t(tera), p(peta), e(exa) to specify the size (such as 128k, 512m, 1g, etc.),
+      Or provide complete size in bytes (such as 134217728 for 128 MB).
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.inotify.max.events.per.rpc</name>
+  <value>1000</value>
+  <description>Maximum number of events that will be sent to an inotify client
+    in a single RPC response. The default value attempts to amortize away
+    the overhead for this RPC while avoiding huge memory requirements for the
+    client and NameNode (1000 events should consume no more than 1 MB.)
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.legacy-oiv-image.dir</name>
+  <value>/valid/dir1</value>
+  <description>Determines where to save the namespace in the old fsimage format
+    during checkpointing by standby NameNode or SecondaryNameNode. Users can
+    dump the contents of the old format fsimage by oiv_legacy command. If
+    the value is not specified, old format fsimage will not be saved in
+    checkpoint.
+  </description>
+</property>
+
+<property>
+  <name>dfs.ha.zkfc.nn.http.timeout.ms</name>
+  <value>10000</value>
+  <description>
+    The HTTP connection and read timeout value (unit is ms ) when DFS ZKFC
+    tries to get local NN thread dump after local NN becomes
+    SERVICE_NOT_RESPONDING or SERVICE_UNHEALTHY.
+    If it is set to zero, DFS ZKFC won't get local NN thread dump.
+  </description>
+</property>
+
+<property>
+  <name>dfs.checksum.combine.mode</name>
+  <value>NOEXIST_LOCAL_DATA_CONNECTION_MODE</value>
+  <description>
+    Defines how lower-level chunk/block checksums are combined into file-level
+    checksums; the original MD5MD5CRC mode is not comparable between files
+    with different block layouts, while modes like COMPOSITE_CRC are
+    comparable independently of block layout.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.hostname</name>
+  <value>127.0.0.1</value>
+  <description>
+    Optional.  The hostname for the Datanode containing this
+    configuration file.  Will be different for each machine.
+    Defaults to current hostname.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.missing.checkpoint.periods.before.shutdown</name>
+  <value>1</value>
+  <description>
+    The number of checkpoint period windows (as defined by the property
+    dfs.namenode.checkpoint.period) allowed by the Namenode to perform
+    saving the namespace before shutdown.
+  </description>
+</property>
+
+</configuration>

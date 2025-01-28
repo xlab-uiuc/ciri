@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-config-file', 'aof-timestamp-enabled', 'rdbchecksum', 'dynamic-hz'], 'reason': ['cluster-config-file is not a valid configuration parameter for Redis 7.0.0.', 'aof-timestamp-enabled is not a valid configuration parameter for Redis 7.0.0.', 'rdbchecksum is not a valid configuration parameter for Redis 7.0.0.', 'dynamic-hz is not a valid configuration parameter for Redis 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['cluster-config-file', 'rdbchecksum', 'repl-diskless-sync', 'dynamic-hz'], 'reason': ['cluster-config-file is not a valid parameter for Redis 7.0.0', 'rdbchecksum is not a valid parameter for Redis 7.0.0', 'repl-diskless-sync is not a valid parameter for Redis 7.0.0', 'dynamic-hz is not a valid parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-config-file', 'timeout', 'aof-timestamp-enabled', 'rdbchecksum', 'jemalloc-bg-thread', 'repl-diskless-sync', 'dynamic-hz'], 'reason': ['cluster-config-file is not a valid configuration parameter for Redis 7.0.0', 'timeout is not a valid configuration parameter for Redis 7.0.0', 'aof-timestamp-enabled is not a valid configuration parameter for Redis 7.0.0', 'rdbchecksum is not a valid configuration parameter for Redis 7.0.0', 'jemalloc-bg-thread is not a valid configuration parameter for Redis 7.0.0', 'repl-diskless-sync is not a valid configuration parameter for Redis 7.0.0', 'dynamic-hz is not a valid configuration parameter for Redis 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-config-file', 'aof-timestamp-enabled', 'rdbchecksum', 'jemalloc-bg-thread', 'repl-diskless-sync', 'dynamic-hz'], 'reason': ['cluster-config-file is not a valid configuration parameter for Redis 7.0.0', 'aof-timestamp-enabled is not a valid configuration parameter for Redis 7.0.0', 'rdbchecksum is not a valid configuration parameter for Redis 7.0.0', 'jemalloc-bg-thread is not a valid configuration parameter for Redis 7.0.0', 'repl-diskless-sync is not a valid configuration parameter for Redis 7.0.0', 'dynamic-hz is not a valid configuration parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-config-file', 'timeout', 'aof-timestamp-enabled', 'rdbchecksum', 'jemalloc-bg-thread', 'repl-diskless-sync', 'dynamic-hz'], 'reason': ['cluster-config-file is not a valid configuration parameter', 'timeout is not a valid configuration parameter', 'aof-timestamp-enabled is not a valid configuration parameter', 'rdbchecksum is not a valid configuration parameter', 'jemalloc-bg-thread is not a valid configuration parameter', 'repl-diskless-sync is not a valid configuration parameter', 'dynamic-hz is not a valid configuration parameter']}
+
+{'hasError': True, 'errParameter': ['cluster-config-file', 'timeout', 'aof-timestamp-enabled', 'rdbchecksum', 'jemalloc-bg-thread', 'repl-diskless-sync', 'dynamic-hz'], 'reason': ['cluster-config-file is not a valid configuration parameter for Redis 7.0.0', 'timeout is not a valid configuration parameter for Redis 7.0.0', 'aof-timestamp-enabled is not a valid configuration parameter for Redis 7.0.0', 'rdbchecksum is not a valid configuration parameter for Redis 7.0.0', 'jemalloc-bg-thread is not a valid configuration parameter for Redis 7.0.0', 'repl-diskless-sync is not a valid configuration parameter for Redis 7.0.0', 'dynamic-hz is not a valid configuration parameter for Redis 7.0.0']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: cluster-config-file	timeout	aof-timestamp-enabled	rdbchecksum	jemalloc-bg-thread	repl-diskless-sync	dynamic-hz
+[Ciri] Reason for cluster-config-file: cluster-config-file is not a valid configuration parameter
+[Ciri] Reason for timeout: timeout is not a valid configuration parameter
+[Ciri] Reason for aof-timestamp-enabled: aof-timestamp-enabled is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for rdbchecksum: rdbchecksum is not a valid configuration parameter
+[Ciri] Reason for jemalloc-bg-thread: jemalloc-bg-thread is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for repl-diskless-sync: repl-diskless-sync is not a valid configuration parameter
+[Ciri] Reason for dynamic-hz: dynamic-hz is not a valid configuration parameter

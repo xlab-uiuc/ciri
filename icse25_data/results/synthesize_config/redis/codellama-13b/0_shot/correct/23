@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dir', 'no-appendfsync-on-rewrite', 'proto-max-bulk-len', 'enable-debug-command', 'zset-max-listpack-value', 'tls-ca-cert-file', 'rdbchecksum', 'databases'], 'reason': ['dir is not a valid directory', 'no-appendfsync-on-rewrite is not a valid boolean', 'proto-max-bulk-len is not a valid integer', 'enable-debug-command is not a valid boolean', 'zset-max-listpack-value is not a valid integer', 'tls-ca-cert-file is not a valid file', 'rdbchecksum is not a valid boolean', 'databases is not a valid integer']}
+
+{'hasError': True, 'errParameter': ['dir', 'no-appendfsync-on-rewrite', 'proto-max-bulk-len', 'enable-debug-command', 'zset-max-listpack-value', 'tls-ca-cert-file', 'rdbchecksum', 'databases'], 'reason': ['dir is not a valid parameter', 'no-appendfsync-on-rewrite is not a valid parameter', 'proto-max-bulk-len is not a valid parameter', 'enable-debug-command is not a valid parameter', 'zset-max-listpack-value is not a valid parameter', 'tls-ca-cert-file is not a valid parameter', 'rdbchecksum is not a valid parameter', 'databases is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['dir', 'no-appendfsync-on-rewrite', 'proto-max-bulk-len', 'enable-debug-command', 'zset-max-listpack-value', 'tls-ca-cert-file', 'rdbchecksum', 'databases'], 'reason': ['dir should be a directory path', 'no-appendfsync-on-rewrite should be yes or no', 'proto-max-bulk-len should be a number', 'enable-debug-command should be yes or no', 'zset-max-listpack-value should be a number', 'tls-ca-cert-file should be a file path', 'rdbchecksum should be yes or no', 'databases should be a number']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dir	no-appendfsync-on-rewrite	proto-max-bulk-len	enable-debug-command	zset-max-listpack-value	tls-ca-cert-file	rdbchecksum	databases
+[Ciri] Reason for dir: dir is not a valid directory
+[Ciri] Reason for no-appendfsync-on-rewrite: no-appendfsync-on-rewrite is not a valid parameter
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len is not a valid parameter
+[Ciri] Reason for enable-debug-command: enable-debug-command is not a valid boolean
+[Ciri] Reason for zset-max-listpack-value: zset-max-listpack-value is not a valid integer
+[Ciri] Reason for tls-ca-cert-file: tls-ca-cert-file is not a valid parameter
+[Ciri] Reason for rdbchecksum: rdbchecksum is not a valid boolean
+[Ciri] Reason for databases: databases is not a valid parameter

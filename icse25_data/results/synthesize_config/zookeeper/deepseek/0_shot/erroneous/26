@@ -1,0 +1,38 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'dataDir', 'minSessionTimeout'], 'reason': ['clientPortAddress value is out of range, dataDir does not exist, minSessionTimeout value is invalid']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'dataDir'], 'reason': ['clientPortAddress value 256.256.256.256 is not valid. It should be a valid IP address.', 'dataDir value /valid/dir1 is not valid. It should be a valid directory.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'dataDir'], 'reason': ['clientPortAddress value is not valid. It should be a valid IP address.', 'dataDir value is not valid. It should be a valid directory.']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'dataDir', 'minSessionTimeout'], 'reason': ['clientPortAddress is not a valid IP address', 'dataDir is not a valid directory', 'minSessionTimeout should be a positive integer or zero']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress=256.256.256.256', 'dataDir=/valid/dir1'], 'reason': ['clientPortAddress should be a valid IP address and it should be within the range 0-65535', 'dataDir should be a valid directory']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'dataDir', 'minSessionTimeout'], 'reason': ['clientPortAddress value is not valid. It should be a valid IP address.', 'dataDir value is not valid. It should be a valid directory.', 'minSessionTimeout value is not valid. It should be a positive integer or zero.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'dataDir', 'minSessionTimeout'], 'reason': ['clientPortAddress value 256.256.256.256 is not a valid IP address. It should be in the range of 0.0.0.0 to 255.255.255.255', 'dataDir path /valid/dir1 does not exist', 'minSessionTimeout value -2 is not valid. It should be in the range of 0 to 2147483647']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress=256.256.256.256', 'dataDir=/valid/dir1'], 'reason': ['clientPortAddress should be a valid IP address and should be between 0 and 65535', 'dataDir should be a valid directory']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'dataDir', 'minSessionTimeout'], 'reason': ['clientPortAddress should be between 0 and 65535', 'dataDir is not a valid directory', 'minSessionTimeout should be between 0 and 2147483647']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: clientPortAddress	dataDir	minSessionTimeout
+[Ciri] Reason for clientPortAddress: clientPortAddress value 256.256.256.256 is not a valid IP address. It should be in the range of 0.0.0.0 to 255.255.255.255
+[Ciri] Reason for dataDir: dataDir path /valid/dir1 does not exist
+[Ciri] Reason for minSessionTimeout: minSessionTimeout should be between 0 and 2147483647

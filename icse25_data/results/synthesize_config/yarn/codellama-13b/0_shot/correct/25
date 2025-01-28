@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.algorithm.pool-size', 'yarn.nodemanager.local-dirs', 'yarn.nodemanager.runtime.linux.docker.default-container-network', 'yarn.nodemanager.runtime.linux.docker.userremapping-uid-threshold', 'yarn.client.nodemanager-connect.max-wait-ms', 'yarn.timeline-service.hostname', 'yarn.resourcemanager.nodemanager-graceful-decommission-timeout-secs', 'yarn.router.webapp.address'], 'reason': ['yarn.resourcemanager.placement-constraints.algorithm.pool-size: The value must be an integer.', 'yarn.nodemanager.local-dirs: The value must be a comma-separated list of directories.', 'yarn.nodemanager.runtime.linux.docker.default-container-network: The value must be a valid network.', 'yarn.nodemanager.runtime.linux.docker.userremapping-uid-threshold: The value must be an integer.', 'yarn.client.nodemanager-connect.max-wait-ms: The value must be an integer.', 'yarn.timeline-service.hostname: The value must be a valid hostname.', 'yarn.resourcemanager.nodemanager-graceful-decommission-timeout-secs: The value must be an integer.', 'yarn.router.webapp.address: The value must be a valid hostname and port.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: yarn.resourcemanager.placement-constraints.algorithm.pool-size	yarn.nodemanager.local-dirs	yarn.nodemanager.runtime.linux.docker.default-container-network	yarn.nodemanager.runtime.linux.docker.userremapping-uid-threshold	yarn.client.nodemanager-connect.max-wait-ms	yarn.timeline-service.hostname	yarn.resourcemanager.nodemanager-graceful-decommission-timeout-secs	yarn.router.webapp.address
+[Ciri] Reason for yarn.resourcemanager.placement-constraints.algorithm.pool-size: yarn.resourcemanager.placement-constraints.algorithm.pool-size: The value must be an integer.
+[Ciri] Reason for yarn.nodemanager.local-dirs: yarn.nodemanager.local-dirs: The value must be a comma-separated list of directories.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.docker.default-container-network: yarn.nodemanager.runtime.linux.docker.default-container-network: The value must be a valid network.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.docker.userremapping-uid-threshold: yarn.nodemanager.runtime.linux.docker.userremapping-uid-threshold: The value must be an integer.
+[Ciri] Reason for yarn.client.nodemanager-connect.max-wait-ms: yarn.client.nodemanager-connect.max-wait-ms: The value must be an integer.
+[Ciri] Reason for yarn.timeline-service.hostname: yarn.timeline-service.hostname: The value must be a valid hostname.
+[Ciri] Reason for yarn.resourcemanager.nodemanager-graceful-decommission-timeout-secs: yarn.resourcemanager.nodemanager-graceful-decommission-timeout-secs: The value must be an integer.
+[Ciri] Reason for yarn.router.webapp.address: yarn.router.webapp.address: The value must be a valid hostname and port.

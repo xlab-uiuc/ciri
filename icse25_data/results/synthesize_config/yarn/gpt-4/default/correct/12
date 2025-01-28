@@ -1,0 +1,16 @@
+Wrong shot number:
+[3, 2, 1]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory-mb', 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds', 'yarn.scheduler.configuration.store.class'], 'reason': ["The property 'yarn.nodemanager.resource.memory-mb' has the value '-1' which is not a valid setting unless 'yarn.nodemanager.resource.detect-hardware-capabilities' is set to true.", "The property 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds' has the value '-2' which is not valid. The value should be -1 for default behavior or a positive integer.", "The property 'yarn.scheduler.configuration.store.class' has the value 'file' which is not a valid option. Valid options are 'memory', 'leveldb', or 'zk'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.nodemanager.resource.memory-mb	yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds	yarn.scheduler.configuration.store.class
+[Ciri] Reason for yarn.nodemanager.resource.memory-mb: The property 'yarn.nodemanager.resource.memory-mb' has the value '-1' which is not a valid setting unless 'yarn.nodemanager.resource.detect-hardware-capabilities' is set to true.
+[Ciri] Reason for yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds: The property 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds' has the value '-2' which is not valid. The value should be -1 for default behavior or a positive integer.
+[Ciri] Reason for yarn.scheduler.configuration.store.class: The property 'yarn.scheduler.configuration.store.class' has the value 'file' which is not a valid option. Valid options are 'memory', 'leveldb', or 'zk'.

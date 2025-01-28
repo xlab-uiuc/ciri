@@ -1,0 +1,15 @@
+Wrong shot number:
+[5, 4, 12]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.handler.factor', 'hbase.client.scanner.caching'], 'reason': ["The property 'hbase.ipc.server.callqueue.handler.factor' has an invalid value 'ciri/ciri'. It should be a numeric value.", "The property 'hbase.client.scanner.caching' has a value '1073741823' which exceeds the maximum integer value (2147483647)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.ipc.server.callqueue.handler.factor	hbase.client.scanner.caching
+[Ciri] Reason for hbase.ipc.server.callqueue.handler.factor: The property 'hbase.ipc.server.callqueue.handler.factor' has an invalid value 'ciri/ciri'. It should be a numeric value.
+[Ciri] Reason for hbase.client.scanner.caching: The property 'hbase.client.scanner.caching' has a value '1073741823' which exceeds the maximum integer value (2147483647).

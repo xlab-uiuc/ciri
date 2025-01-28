@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.user.network.streaming.keepalive.time', 'alluxio.user.file.reserved.bytes', 'alluxio.worker.tieredstore.block.lock.readers', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ['Invalid value for alluxio.job.master.rpc.port. Port number should be between 1 and 65535.', 'Invalid value for alluxio.user.network.streaming.keepalive.time. Value exceeds maximum allowed value.', 'Invalid reference in alluxio.user.file.reserved.bytes. Cannot reference another property in this context.', 'Invalid value for alluxio.worker.tieredstore.block.lock.readers. Value should be less than or equal to 1024.', "Invalid format for alluxio.jvm.monitor.sleep.interval. Use a valid time format like '2s' for seconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.user.network.streaming.keepalive.time', 'alluxio.user.file.reserved.bytes', 'alluxio.worker.tieredstore.block.lock.readers', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ['Invalid value for alluxio.job.master.rpc.port. Port number should be between 1 and 65535.', 'Invalid value for alluxio.user.network.streaming.keepalive.time. Value exceeds maximum allowed value.', 'Invalid reference in alluxio.user.file.reserved.bytes. Default block size should be specified directly.', 'Invalid value for alluxio.worker.tieredstore.block.lock.readers. Value should be a positive integer.', "Invalid format for alluxio.jvm.monitor.sleep.interval. Use a valid time format like '2s' for 2 seconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.user.network.streaming.keepalive.time', 'alluxio.user.file.reserved.bytes', 'alluxio.worker.tieredstore.block.lock.readers', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ['Invalid value for alluxio.job.master.rpc.port. Port number should be between 1 and 65535.', 'Invalid value for alluxio.user.network.streaming.keepalive.time. Value exceeds maximum allowed value.', 'Invalid reference in alluxio.user.file.reserved.bytes. Default block size should be specified directly.', 'Invalid value for alluxio.worker.tieredstore.block.lock.readers. Value should be less than 1024.', "Invalid unit in alluxio.jvm.monitor.sleep.interval. Use units like 'ms', 's', 'm', 'h'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.job.master.rpc.port	alluxio.user.network.streaming.keepalive.time	alluxio.user.file.reserved.bytes	alluxio.worker.tieredstore.block.lock.readers	alluxio.jvm.monitor.sleep.interval
+[Ciri] Reason for alluxio.job.master.rpc.port: Invalid value for alluxio.job.master.rpc.port. Port number should be between 1 and 65535.
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.time: Invalid value for alluxio.user.network.streaming.keepalive.time. Value exceeds maximum allowed value.
+[Ciri] Reason for alluxio.user.file.reserved.bytes: Invalid reference in alluxio.user.file.reserved.bytes. Default block size should be specified directly.
+[Ciri] Reason for alluxio.worker.tieredstore.block.lock.readers: Invalid value for alluxio.worker.tieredstore.block.lock.readers. Value should be less than or equal to 1024.
+[Ciri] Reason for alluxio.jvm.monitor.sleep.interval: Invalid format for alluxio.jvm.monitor.sleep.interval. Use a valid time format like '2s' for seconds.

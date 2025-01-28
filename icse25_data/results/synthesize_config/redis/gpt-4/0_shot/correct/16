@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'lazyfree-lazy-user-del', 'hll-sparse-max-bytes'], 'reason': ["The 'proto-max-bulk-len' configuration is specified in bytes, but Redis expects this value in megabytes. The correct format should be something like 'proto-max-bulk-len 512mb' without specifying 'mb', just the number.", "The 'lazyfree-lazy-user-del' option does not exist in Redis configuration. The correct directive might be 'lazyfree-lazy-server-del' or it's a misunderstanding of the configuration directives.", "The 'hll-sparse-max-bytes' directive is not a valid configuration option for Redis. This might be a misunderstanding or a typo of the correct configuration directive."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proto-max-bulk-len	lazyfree-lazy-user-del	hll-sparse-max-bytes
+[Ciri] Reason for proto-max-bulk-len: The 'proto-max-bulk-len' configuration is specified in bytes, but Redis expects this value in megabytes. The correct format should be something like 'proto-max-bulk-len 512mb' without specifying 'mb', just the number.
+[Ciri] Reason for lazyfree-lazy-user-del: The 'lazyfree-lazy-user-del' option does not exist in Redis configuration. The correct directive might be 'lazyfree-lazy-server-del' or it's a misunderstanding of the configuration directives.
+[Ciri] Reason for hll-sparse-max-bytes: The 'hll-sparse-max-bytes' directive is not a valid configuration option for Redis. This might be a misunderstanding or a typo of the correct configuration directive.

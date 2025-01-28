@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.permissions.enabled', 'dfs.storage.policy.satisfier.address'], 'reason': ["The value for dfs.permissions.enabled should be a boolean (true or false), but the provided value is 'hadoop' which is invalid.", 'The property dfs.storage.policy.satisfier.address is not a valid configuration parameter for HDFS version 3.3.0. It seems to be a custom property or belongs to a different Hadoop component.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.permissions.enabled	dfs.storage.policy.satisfier.address
+[Ciri] Reason for dfs.permissions.enabled: The value for dfs.permissions.enabled should be a boolean (true or false), but the provided value is 'hadoop' which is invalid.
+[Ciri] Reason for dfs.storage.policy.satisfier.address: The property dfs.storage.policy.satisfier.address is not a valid configuration parameter for HDFS version 3.3.0. It seems to be a custom property or belongs to a different Hadoop component.

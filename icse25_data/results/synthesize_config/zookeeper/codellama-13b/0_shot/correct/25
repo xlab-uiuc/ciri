@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'dataDir', 'quorum.auth.server.saslLoginContext', 'autopurge.purgeInterval', 'clientPort'], 'reason': ['dataLogDir is not a valid directory', 'dataDir is not a valid directory', 'quorum.auth.server.saslLoginContext is not a valid login context', 'autopurge.purgeInterval is not a valid integer', 'clientPort is not a valid port number']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'dataDir'], 'reason': ['dataLogDir is not a valid directory', 'dataDir is not a valid directory']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'dataDir', 'quorum.auth.enableSasl', 'maxClientCnxns', 'quorum.auth.server.saslLoginContext', 'autopurge.purgeInterval', 'clientPort'], 'reason': ['dataLogDir is not a valid directory', 'dataDir is not a valid directory', 'quorum.auth.enableSasl is not a valid boolean', 'maxClientCnxns is not a valid integer', 'quorum.auth.server.saslLoginContext is not a valid string', 'autopurge.purgeInterval is not a valid integer', 'clientPort is not a valid integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'dataDir'], 'reason': ['dataLogDir is not a valid directory', 'dataDir is not a valid directory']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'dataDir'], 'reason': ['dataLogDir and dataDir are not valid directories.', 'dataLogDir and dataDir are not valid directories.']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'dataDir', 'quorum.auth.enableSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['dataLogDir is not a valid directory', 'dataDir is not a valid directory', 'quorum.auth.enableSasl is not a valid boolean value', 'quorum.auth.server.saslLoginContext is not a valid string value']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataLogDir	dataDir
+[Ciri] Reason for dataLogDir: dataLogDir is not a valid directory
+[Ciri] Reason for dataDir: dataLogDir and dataDir are not valid directories.

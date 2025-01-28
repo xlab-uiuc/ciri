@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.dns.log-slow-lookups.enabled</name>
+  <value>10</value>
+  <description>
+    Time name lookups (via SecurityUtil) and log them if they exceed the
+    configured threshold.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.ssl</name>
+  <value>true</value>
+  <description>
+    Whether or not to use SSL when connecting to the LDAP server.
+  </description>
+</property>
+
+<property>
+  <name>io.erasurecode.codec.xor.rawcoders</name>
+  <value>xor_native</value>
+  <description>
+    Comma separated raw coder implementations for the xor codec. The earlier
+    factory is prior to followings in case of failure of creating raw coders.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.csv.comment.marker</name>
+  <value>#</value>
+  <description>In S3 Select queries: the marker for comment lines in CSV files</description>
+</property>
+
+<property>
+  <name>fs.azure.local.sas.key.mode</name>
+  <value>false</value>
+  <description>
+    Works in conjuction with fs.azure.secure.mode. Setting this config to true
+    results in fs.azure.NativeAzureFileSystem using the local SAS key generation
+    where the SAS keys are generating in the same process as fs.azure.NativeAzureFileSystem.
+    If fs.azure.secure.mode flag is set to false, this flag has no effect.
+  </description>
+</property>
+
+<property>
+  <name>file.replication</name>
+  <value>2</value>
+  <description>Replication factor</description>
+</property>
+
+<property>
+  <name>ha.failover-controller.cli-check.rpc-timeout.ms</name>
+  <value>10000</value>
+  <description>
+    Timeout that the CLI (manual) FC waits for monitorHealth, getServiceState
+  </description>
+</property>
+
+<property>
+  <name>hadoop.caller.context.max.size</name>
+  <value>256</value>
+    <description>The maximum bytes a caller context string can have. If the
+      passed caller context is longer than this maximum bytes, client will
+      truncate it before sending to server. Note that the server may have a
+      different maximum size, and will truncate the caller context to the
+      maximum size it allows.
+    </description>
+</property>
+
+</configuration>

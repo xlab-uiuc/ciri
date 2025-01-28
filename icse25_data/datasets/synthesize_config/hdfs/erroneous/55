@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.maintenance.replication.min</name>
+  <value>2</value>
+  <description>Minimal live block replication in existence of maintenance mode.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.fuse.connection.timeout</name>
+  <value>150</value>
+  <description>
+    The minimum number of seconds that we'll cache libhdfs connection objects
+    in fuse_dfs. Lower values will result in lower memory consumption; higher
+    values may speed up access by avoiding the overhead of creating new
+    connection objects.
+  </description>
+</property>
+
+<property>
+  <name>dfs.encrypt.data.transfer</name>
+  <value>false</value>
+  <description>
+    Whether or not actual block data that is read/written from/to HDFS should
+    be encrypted on the wire. This only needs to be set on the NN and DNs,
+    clients will deduce this automatically. It is possible to override this setting 
+    per connection by specifying custom logic via dfs.trustedchannel.resolver.class. 
+  </description>
+</property>
+
+<property>
+  <name>dfs.encrypt.data.transfer.cipher.suites</name>
+  <value>AES/CTR/NoPadding</value>
+  <description>
+    This value may be either undefined or AES/CTR/NoPadding.  If defined, then
+    dfs.encrypt.data.transfer uses the specified cipher suite for data
+    encryption.  If not defined, then only the algorithm specified in
+    dfs.encrypt.data.transfer.algorithm is used.  By default, the property is
+    not defined.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.list.encryption.zones.num.responses</name>
+  <value>100</value>
+  <description>When listing encryption zones, the maximum number of zones
+    that will be returned in a batch. Fetching the list incrementally in
+    batches improves namenode performance.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.transferTo.allowed</name>
+  <value>true</value>
+  <description>
+    If false, break block transfers on 32-bit machines greater than
+    or equal to 2GB into smaller chunks.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.stale.datanode.minimum.interval</name>
+  <value>3</value>
+  <description>
+    Minimum number of missed heartbeats intervals for a datanode to
+    be marked stale by the Namenode.  The actual interval is calculated as
+    (dfs.namenode.stale.datanode.minimum.interval * dfs.heartbeat.interval)
+    in seconds.  If this value is greater than the property
+    dfs.namenode.stale.datanode.interval, then the calculated value above
+    is used.
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.finalize-segment.timeout.ms</name>
+  <value>60000</value>
+  <description>
+    Quorum timeout in milliseconds during finalizing for a specific
+    segment.
+  </description>
+</property>
+
+</configuration>

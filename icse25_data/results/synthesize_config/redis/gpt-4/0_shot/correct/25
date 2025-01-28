@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'replica-lazy-flush', 'lazyfree-lazy-user-del'], 'reason': ["The correct parameter for enabling serving stale data is 'replica-serve-stale', not 'replica-serve-stale-data'.", "The parameter 'replica-lazy-flush' does not exist. The correct parameter for controlling the flushing of replicas on full sync is 'repl-diskless-load'.", "The parameter 'lazyfree-lazy-user-del' is incorrect. The correct parameter for controlling lazy freeing of objects deleted by user commands is 'lazyfree-lazy-eviction'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: replica-serve-stale-data	replica-lazy-flush	lazyfree-lazy-user-del
+[Ciri] Reason for replica-serve-stale-data: The correct parameter for enabling serving stale data is 'replica-serve-stale', not 'replica-serve-stale-data'.
+[Ciri] Reason for replica-lazy-flush: The parameter 'replica-lazy-flush' does not exist. The correct parameter for controlling the flushing of replicas on full sync is 'repl-diskless-load'.
+[Ciri] Reason for lazyfree-lazy-user-del: The parameter 'lazyfree-lazy-user-del' is incorrect. The correct parameter for controlling lazy freeing of objects deleted by user commands is 'lazyfree-lazy-eviction'.

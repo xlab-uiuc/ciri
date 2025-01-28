@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.secondary.https-address</name>
+  <value>0.0.0.0:3001</value>
+  <description>
+    The secondary namenode HTTPS server address and port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.data.dir.perm</name>
+  <value>080</value>
+  <description>Permissions for the directories on on the local filesystem where
+  the DFS data node store its blocks. The permissions can either be octal or
+  symbolic.</description>
+</property>
+
+<property>
+  <name>dfs.namenode.datanode.registration.ip-hostname-check</name>
+  <value>false</value>
+  <description>
+    If true (the default), then the namenode requires that a connecting
+    datanode's address must be resolved to a hostname.  If necessary, a reverse
+    DNS lookup is performed.  All attempts to register a datanode from an
+    unresolvable address are rejected.
+
+    It is recommended that this setting be left on to prevent accidental
+    registration of datanodes listed by hostname in the excludes file during a
+    DNS outage.  Only set this to false in environments where there is no
+    infrastructure to support reverse DNS lookup.
+  </description>
+</property>
+
+<property>
+  <name>nfs.mountd.port</name>
+  <value>4242</value>
+  <description>
+      Specify the port number used by Hadoop mount daemon.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction</name>
+  <value>0.75f</value>
+  <description>
+    Only used when the dfs.datanode.fsdataset.volume.choosing.policy is set to
+    org.apache.hadoop.hdfs.server.datanode.fsdataset.AvailableSpaceVolumeChoosingPolicy.
+    This setting controls what percentage of new block allocations will be sent
+    to volumes with more available disk space than others. This setting should
+    be in the range 0.0 - 1.0, though in practice 0.5 - 1.0, since there should
+    be no reason to prefer that volumes with less available disk space receive
+    more block allocations.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.block.write.locateFollowingBlock.initial.delay.ms</name>
+  <value>200</value>
+  <description>The initial delay (unit is ms) for locateFollowingBlock,
+    the delay time will increase exponentially(double) for each retry
+    until dfs.client.block.write.locateFollowingBlock.max.delay.ms is reached,
+    after that the delay for each retry will be
+    dfs.client.block.write.locateFollowingBlock.max.delay.ms.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.max.block.acquire.failures</name>
+  <value>1</value>
+  <description>
+    Maximum failures allowed when trying to get block information from a specific datanode.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.delegation.token.always-use</name>
+  <value>false</value>
+  <description>
+    For testing.  Setting to true always allows the DT secret manager
+    to be used, even if security is disabled.
+  </description>
+</property>
+
+</configuration>

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-blocks-per-file', 'dfs.client.block.write.replace-datanode-on-failure.enable', 'dfs.datanode.directoryscan.throttle.limit.ms.per.sec', 'dfs.namenode.checkpoint.check.quiet-multiplier', 'dfs.client.failover.sleep.base.millis', 'dfs.namenode.snapshot.skiplist.max.levels', 'dfs.namenode.gc.time.monitor.enable'], 'reason': ['The value of dfs.namenode.fs-limits.max-blocks-per-file is too small. It should be at least 1000000.', 'The value of dfs.client.block.write.replace-datanode-on-failure.enable should be true.', 'The value of dfs.datanode.directoryscan.throttle.limit.ms.per.sec is too small. It should be at least 1000.', 'The value of dfs.namenode.checkpoint.check.quiet-multiplier is too small. It should be at least 1.', 'The value of dfs.client.failover.sleep.base.millis is too small. It should be at least 1000.', 'The value of dfs.namenode.snapshot.skiplist.max.levels is too small. It should be at least 1.', 'The value of dfs.namenode.gc.time.monitor.enable should be true.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: dfs.namenode.fs-limits.max-blocks-per-file	dfs.client.block.write.replace-datanode-on-failure.enable	dfs.datanode.directoryscan.throttle.limit.ms.per.sec	dfs.namenode.checkpoint.check.quiet-multiplier	dfs.client.failover.sleep.base.millis	dfs.namenode.snapshot.skiplist.max.levels	dfs.namenode.gc.time.monitor.enable
+[Ciri] Reason for dfs.namenode.fs-limits.max-blocks-per-file: The value of dfs.namenode.fs-limits.max-blocks-per-file is too small. It should be at least 1000000.
+[Ciri] Reason for dfs.client.block.write.replace-datanode-on-failure.enable: The value of dfs.client.block.write.replace-datanode-on-failure.enable should be true.
+[Ciri] Reason for dfs.datanode.directoryscan.throttle.limit.ms.per.sec: The value of dfs.datanode.directoryscan.throttle.limit.ms.per.sec is too small. It should be at least 1000.
+[Ciri] Reason for dfs.namenode.checkpoint.check.quiet-multiplier: The value of dfs.namenode.checkpoint.check.quiet-multiplier is too small. It should be at least 1.
+[Ciri] Reason for dfs.client.failover.sleep.base.millis: The value of dfs.client.failover.sleep.base.millis is too small. It should be at least 1000.
+[Ciri] Reason for dfs.namenode.snapshot.skiplist.max.levels: The value of dfs.namenode.snapshot.skiplist.max.levels is too small. It should be at least 1.
+[Ciri] Reason for dfs.namenode.gc.time.monitor.enable: The value of dfs.namenode.gc.time.monitor.enable should be true.

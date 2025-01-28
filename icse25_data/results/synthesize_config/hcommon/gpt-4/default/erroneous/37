@@ -1,0 +1,19 @@
+Wrong shot number:
+[15, 9, 1]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.conversion.rule', 'ipc.client.ping'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.conversion.rule' has an invalid value 'nonono'. Accepted values are 'to_upper', 'to_lower', and 'none'.", "The property 'ipc.client.ping' contains an invalid element 'usage'. The configuration should only include 'name', 'value', and 'description'."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.conversion.rule', 'ipc.client.ping'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.conversion.rule' has an invalid value 'nonono'. Accepted values are 'to_upper', 'to_lower', and 'none'.", "The 'ipc.client.ping' property contains an invalid tag <usage> which is not supported in the configuration file."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.conversion.rule', 'ipc.client.ping'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.conversion.rule' has the value 'nonono' which is not within the accepted values {to_upper, to_lower, none}.", "The 'ipc.client.ping' property contains an invalid element 'usage' which is not part of the standard configuration specification."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.conversion.rule	ipc.client.ping
+[Ciri] Reason for hadoop.security.group.mapping.ldap.conversion.rule: The property 'hadoop.security.group.mapping.ldap.conversion.rule' has an invalid value 'nonono'. Accepted values are 'to_upper', 'to_lower', and 'none'.
+[Ciri] Reason for ipc.client.ping: The 'ipc.client.ping' property contains an invalid tag <usage> which is not supported in the configuration file.

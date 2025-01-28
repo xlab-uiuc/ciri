@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'replica-serve-stale-data', 'proc-title-template', 'enable-protected-configs', 'aof-use-rdb-preamble'], 'reason': ["Invalid parameter 'cluster-announce-bus-port=ciri'. It should be 'cluster-announce-bus-port ciri'.", "Invalid value 'yes' for 'replica-serve-stale-data'. It should be 'yes' or 'no'.", "Invalid parameter 'proc-title-template={title} {listen-addr} {server-mode}'. It should not contain curly braces.", "Invalid value 'no' for 'enable-protected-configs'. It should be 'yes' or 'no'.", "Invalid value 'yes' for 'aof-use-rdb-preamble'. It should be 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'replica-serve-stale-data', 'proc-title-template', 'enable-protected-configs', 'aof-use-rdb-preamble'], 'reason': ["Invalid parameter 'cluster-announce-bus-port'", "Invalid parameter 'replica-serve-stale-data'", "Invalid parameter 'proc-title-template'", "Invalid parameter 'enable-protected-configs'", "Invalid parameter 'aof-use-rdb-preamble'"]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'replica-serve-stale-data', 'proc-title-template', 'enable-protected-configs', 'aof-use-rdb-preamble'], 'reason': ["Invalid parameter 'cluster-announce-bus-port'.", "Invalid parameter 'replica-serve-stale-data'.", "Invalid parameter 'proc-title-template'.", "Invalid parameter 'enable-protected-configs'.", "Invalid parameter 'aof-use-rdb-preamble'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: cluster-announce-bus-port	replica-serve-stale-data	proc-title-template	enable-protected-configs	aof-use-rdb-preamble
+[Ciri] Reason for cluster-announce-bus-port: Invalid parameter 'cluster-announce-bus-port'.
+[Ciri] Reason for replica-serve-stale-data: Invalid parameter 'replica-serve-stale-data'
+[Ciri] Reason for proc-title-template: Invalid parameter 'proc-title-template'.
+[Ciri] Reason for enable-protected-configs: Invalid parameter 'enable-protected-configs'
+[Ciri] Reason for aof-use-rdb-preamble: Invalid parameter 'aof-use-rdb-preamble'.

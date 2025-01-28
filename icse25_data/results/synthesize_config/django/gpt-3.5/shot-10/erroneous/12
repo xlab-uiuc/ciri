@@ -1,0 +1,18 @@
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'DEFAULT_EXCEPTION_REPORTER', 'USE_X_FORWARDED_PORT', 'DATE_FORMAT', 'STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'SESSION_EXPIRE_AT_BROWSER_CLOSE', 'CSRF_COOKIE_AGE'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should be a positive integer representing the number of seconds.', 'DEFAULT_EXCEPTION_REPORTER is not a valid setting for Django 4.0.', 'USE_X_FORWARDED_PORT should be a boolean value (True/False).', 'DATE_FORMAT should be a valid date format string.', 'STATICFILES_FINDERS should be a list of staticfiles finders.', 'PASSWORD_RESET_TIMEOUT should be an integer representing the number of seconds.', 'SESSION_EXPIRE_AT_BROWSER_CLOSE should be a boolean value (True/False).', 'CSRF_COOKIE_AGE should be an integer representing the age of the CSRF cookie in seconds.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	DEFAULT_EXCEPTION_REPORTER	USE_X_FORWARDED_PORT	DATE_FORMAT	STATICFILES_FINDERS	PASSWORD_RESET_TIMEOUT	SESSION_EXPIRE_AT_BROWSER_CLOSE	CSRF_COOKIE_AGE
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: CACHE_MIDDLEWARE_SECONDS should be a positive integer representing the number of seconds.
+[Ciri] Reason for DEFAULT_EXCEPTION_REPORTER: DEFAULT_EXCEPTION_REPORTER is not a valid setting for Django 4.0.
+[Ciri] Reason for USE_X_FORWARDED_PORT: USE_X_FORWARDED_PORT should be a boolean value (True/False).
+[Ciri] Reason for DATE_FORMAT: DATE_FORMAT should be a valid date format string.
+[Ciri] Reason for STATICFILES_FINDERS: STATICFILES_FINDERS should be a list of staticfiles finders.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: PASSWORD_RESET_TIMEOUT should be an integer representing the number of seconds.
+[Ciri] Reason for SESSION_EXPIRE_AT_BROWSER_CLOSE: SESSION_EXPIRE_AT_BROWSER_CLOSE should be a boolean value (True/False).
+[Ciri] Reason for CSRF_COOKIE_AGE: CSRF_COOKIE_AGE should be an integer representing the age of the CSRF cookie in seconds.

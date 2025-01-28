@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl', 'ssl_cert_file', 'ssl_min_protocol_version', 'enable_nestloop', 'default_transaction_isolation', 'min_parallel_index_scan_size'], 'reason': ["ssl parameter should be 'on' or 'off', not just 'off'.", 'ssl_cert_file parameter has an extra single quote at the end.', "ssl_min_protocol_version should be 'TLSv1.2' without single quotes.", "enable_nestloop parameter should be 'true' or 'false', not 'on'.", "default_transaction_isolation should be 'read committed' without single quotes.", "min_parallel_index_scan_size value should not have 'kB' at the end."]}
+
+{'hasError': True, 'errParameter': ['ssl', 'ssl_cert_file', 'ssl_min_protocol_version'], 'reason': ["ssl parameter should be 'on' or 'true' for enabling SSL.", "There is an extra single quote at the end of 'server.crt'.", "ssl_min_protocol_version should be 'TLSv1.2' without single quotes."]}
+
+{'hasError': True, 'errParameter': ['ssl', 'ssl_cert_file', 'ssl_min_protocol_version'], 'reason': ["ssl parameter should be 'on' for enabling SSL connections.", 'ssl_cert_file parameter has an extra single quote at the end.', 'ssl_min_protocol_version should be specified without single quotes, e.g., TLSv1.2']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: ssl	ssl_cert_file	ssl_min_protocol_version
+[Ciri] Reason for ssl: ssl parameter should be 'on' or 'true' for enabling SSL.
+[Ciri] Reason for ssl_cert_file: There is an extra single quote at the end of 'server.crt'.
+[Ciri] Reason for ssl_min_protocol_version: ssl_min_protocol_version should be specified without single quotes, e.g., TLSv1.2

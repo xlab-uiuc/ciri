@@ -1,0 +1,41 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'tickTime', 'initLimit', 'maxClientCnxns', 'electionAlg'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'tickTime must be a positive integer', 'initLimit must be a positive integer', 'maxClientCnxns must be a positive integer', 'electionAlg must be a valid integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'initLimit', 'maxClientCnxns', 'standaloneEnabled', 'localSessionsEnabled', 'electionAlg'], 'reason': ['dataDir is not a valid directory', 'initLimit must be greater than 0', 'maxClientCnxns must be greater than 0', 'standaloneEnabled must be true or false', 'localSessionsEnabled must be true or false', 'electionAlg must be 1, 2, 3, 4, 5, or 6']}
+
+{'hasError': True, 'errParameter': ['dataDir'], 'reason': ['dataDir must be an absolute path']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'tickTime', 'initLimit', 'maxClientCnxns', 'electionAlg'], 'reason': ['dataDir must be a valid directory', 'dataLogDir must be a valid directory', 'tickTime must be an integer', 'initLimit must be an integer', 'maxClientCnxns must be an integer', 'electionAlg must be an integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataDir'], 'reason': ['dataDir must be a valid directory', 'dataDir must be a valid directory']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'initLimit', 'maxClientCnxns', 'standaloneEnabled', 'localSessionsEnabled', 'electionAlg'], 'reason': ['dataDir must be a valid directory', 'initLimit must be a positive integer', 'maxClientCnxns must be a positive integer', 'standaloneEnabled must be a boolean', 'localSessionsEnabled must be a boolean', 'electionAlg must be a valid election algorithm']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir and dataLogDir must be valid directories']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'tickTime', 'initLimit', 'maxClientCnxns', 'standaloneEnabled', 'localSessionsEnabled', 'electionAlg'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'tickTime is not a valid integer', 'initLimit is not a valid integer', 'maxClientCnxns is not a valid integer', 'standaloneEnabled is not a valid boolean', 'localSessionsEnabled is not a valid boolean', 'electionAlg is not a valid integer']}
+
+{'hasError': True, 'errParameter': ['dataDir'], 'reason': ['dataDir is not a valid directory']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir'], 'reason': ['dataDir is not a valid directory']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'initLimit', 'maxClientCnxns', 'standaloneEnabled', 'localSessionsEnabled', 'electionAlg'], 'reason': ['dataDir must be a valid directory', 'initLimit must be an integer', 'maxClientCnxns must be an integer', 'standaloneEnabled must be a boolean', 'localSessionsEnabled must be a boolean', 'electionAlg must be an integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'initLimit', 'maxClientCnxns', 'standaloneEnabled', 'localSessionsEnabled', 'electionAlg'], 'reason': ['dataDir must be a valid directory', 'initLimit must be a positive integer', 'maxClientCnxns must be a positive integer', 'standaloneEnabled must be a boolean', 'localSessionsEnabled must be a boolean', 'electionAlg must be a valid election algorithm']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: dataDir	initLimit	maxClientCnxns	standaloneEnabled	localSessionsEnabled	electionAlg
+[Ciri] Reason for dataDir: dataDir must be a valid directory
+[Ciri] Reason for initLimit: initLimit must be an integer
+[Ciri] Reason for maxClientCnxns: maxClientCnxns must be a positive integer
+[Ciri] Reason for standaloneEnabled: standaloneEnabled must be a boolean
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled must be a boolean
+[Ciri] Reason for electionAlg: electionAlg must be an integer

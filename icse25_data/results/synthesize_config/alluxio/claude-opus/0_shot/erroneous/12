@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.zookeeper.election.path', 'alluxio.worker.web.hostname'], 'reason': ["The value 'dev/urandom///' for property 'alluxio.zookeeper.election.path' is invalid. It should be a valid Zookeeper path.", "The value '127.0.0.1' for property 'alluxio.worker.web.hostname' is not recommended. It should be set to an externally resolvable hostname or IP address of the worker node."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.zookeeper.election.path	alluxio.worker.web.hostname
+[Ciri] Reason for alluxio.zookeeper.election.path: The value 'dev/urandom///' for property 'alluxio.zookeeper.election.path' is invalid. It should be a valid Zookeeper path.
+[Ciri] Reason for alluxio.worker.web.hostname: The value '127.0.0.1' for property 'alluxio.worker.web.hostname' is not recommended. It should be set to an externally resolvable hostname or IP address of the worker node.

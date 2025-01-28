@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.consistency.retry.limit', 'ipc.client.idlethreshold', 'ipc.client.rpc-timeout.ms', 'tfile.fs.output.buffer.size', 'hadoop.http.cross-origin.allowed-methods', 'fs.permissions.umask-mode', 'fs.adl.oauth2.msi.port'], 'reason': ['The value of fs.s3a.s3guard.consistency.retry.limit is too low. It should be at least 1000.', 'The value of ipc.client.idlethreshold is too low. It should be at least 10000.', 'The value of ipc.client.rpc-timeout.ms is too low. It should be at least 1000.', 'The value of tfile.fs.output.buffer.size is too low. It should be at least 262144.', 'The value of hadoop.http.cross-origin.allowed-methods is too short. It should be at least 10 characters.', 'The value of fs.permissions.umask-mode is too short. It should be at least 10 characters.', 'The value of fs.adl.oauth2.msi.port is too low. It should be at least 50342.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: fs.s3a.s3guard.consistency.retry.limit	ipc.client.idlethreshold	ipc.client.rpc-timeout.ms	tfile.fs.output.buffer.size	hadoop.http.cross-origin.allowed-methods	fs.permissions.umask-mode	fs.adl.oauth2.msi.port
+[Ciri] Reason for fs.s3a.s3guard.consistency.retry.limit: The value of fs.s3a.s3guard.consistency.retry.limit is too low. It should be at least 1000.
+[Ciri] Reason for ipc.client.idlethreshold: The value of ipc.client.idlethreshold is too low. It should be at least 10000.
+[Ciri] Reason for ipc.client.rpc-timeout.ms: The value of ipc.client.rpc-timeout.ms is too low. It should be at least 1000.
+[Ciri] Reason for tfile.fs.output.buffer.size: The value of tfile.fs.output.buffer.size is too low. It should be at least 262144.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-methods: The value of hadoop.http.cross-origin.allowed-methods is too short. It should be at least 10 characters.
+[Ciri] Reason for fs.permissions.umask-mode: The value of fs.permissions.umask-mode is too short. It should be at least 10 characters.
+[Ciri] Reason for fs.adl.oauth2.msi.port: The value of fs.adl.oauth2.msi.port is too low. It should be at least 50342.

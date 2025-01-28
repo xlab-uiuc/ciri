@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['minSessionTimeout is no longer a valid configuration in Zookeeper 3.7.0. It has been replaced by minSessionTimeoutMillis.', 'autopurge.purgeInterval is no longer a valid configuration in Zookeeper 3.7.0. It has been replaced by autopurge.snapRetainCount and autopurge.purgeInterval.', 'quorum.auth.learner.saslLoginContext is no longer a valid configuration in Zookeeper 3.7.0. SASL authentication for learners is now configured using quorum.auth.learner.loginContext.', 'quorum.auth.kerberos.servicePrincipal is no longer a valid configuration in Zookeeper 3.7.0. Kerberos authentication is now configured using quorum.auth.serverRequireSasl and quorum.auth.learnerRequireSasl.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: minSessionTimeout	autopurge.purgeInterval	quorum.auth.learner.saslLoginContext	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for minSessionTimeout: minSessionTimeout is no longer a valid configuration in Zookeeper 3.7.0. It has been replaced by minSessionTimeoutMillis.
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval is no longer a valid configuration in Zookeeper 3.7.0. It has been replaced by autopurge.snapRetainCount and autopurge.purgeInterval.
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext is no longer a valid configuration in Zookeeper 3.7.0. SASL authentication for learners is now configured using quorum.auth.learner.loginContext.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is no longer a valid configuration in Zookeeper 3.7.0. Kerberos authentication is now configured using quorum.auth.serverRequireSasl and quorum.auth.learnerRequireSasl.

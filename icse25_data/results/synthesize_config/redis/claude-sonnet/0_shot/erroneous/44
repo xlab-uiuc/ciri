@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['locale-collate', 'lazyfree-lazy-user-del', 'lazyfree-lazy-user-flush', 'maxmemory-clients', 'hash-max-listpack-entries', 'replica-serve-stale-data', 'tls-port', 'cluster-announce-port'], 'reason': ["The 'locale-collate' parameter is not a valid Redis configuration option.", "The 'lazyfree-lazy-user-del' parameter is not a valid Redis configuration option.", "The 'lazyfree-lazy-user-flush' parameter is not a valid Redis configuration option.", "The 'maxmemory-clients' parameter is not a valid Redis configuration option. The correct parameter for setting the maximum memory usage is 'maxmemory'.", "The 'hash-max-listpack-entries' parameter is not a valid Redis configuration option.", "The 'replica-serve-stale-data' parameter is not a valid Redis configuration option. The correct parameter for enabling serving stale data from replicas is 'replica-serve-stale-data'.", "The 'tls-port' parameter is not a valid Redis configuration option. Redis does not have a built-in TLS support, and TLS configuration is typically handled by a proxy or load balancer in front of Redis.", "The 'cluster-announce-port' parameter is not a valid Redis configuration option. Redis Cluster uses a different set of configuration options, such as 'cluster-enabled', 'cluster-config-file', and 'cluster-node-timeout'."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: locale-collate	lazyfree-lazy-user-del	lazyfree-lazy-user-flush	maxmemory-clients	hash-max-listpack-entries	replica-serve-stale-data	tls-port	cluster-announce-port
+[Ciri] Reason for locale-collate: The 'locale-collate' parameter is not a valid Redis configuration option.
+[Ciri] Reason for lazyfree-lazy-user-del: The 'lazyfree-lazy-user-del' parameter is not a valid Redis configuration option.
+[Ciri] Reason for lazyfree-lazy-user-flush: The 'lazyfree-lazy-user-flush' parameter is not a valid Redis configuration option.
+[Ciri] Reason for maxmemory-clients: The 'maxmemory-clients' parameter is not a valid Redis configuration option. The correct parameter for setting the maximum memory usage is 'maxmemory'.
+[Ciri] Reason for hash-max-listpack-entries: The 'hash-max-listpack-entries' parameter is not a valid Redis configuration option.
+[Ciri] Reason for replica-serve-stale-data: The 'replica-serve-stale-data' parameter is not a valid Redis configuration option. The correct parameter for enabling serving stale data from replicas is 'replica-serve-stale-data'.
+[Ciri] Reason for tls-port: The 'tls-port' parameter is not a valid Redis configuration option. Redis does not have a built-in TLS support, and TLS configuration is typically handled by a proxy or load balancer in front of Redis.
+[Ciri] Reason for cluster-announce-port: The 'cluster-announce-port' parameter is not a valid Redis configuration option. Redis Cluster uses a different set of configuration options, such as 'cluster-enabled', 'cluster-config-file', and 'cluster-node-timeout'.

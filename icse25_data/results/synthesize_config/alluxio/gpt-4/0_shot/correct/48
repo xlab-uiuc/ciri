@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.version', 'alluxio.network.host.resolution.timeout'], 'reason': ["The property 'alluxio.underfs.gcs.version' does not exist in Alluxio 2.5.0. Configuration for GCS (Google Cloud Storage) in Alluxio is typically done through 'alluxio.underfs.gcs.*' properties, but 'version' is not a recognized property.", "The format for 'alluxio.network.host.resolution.timeout' is incorrect. It should be specified in milliseconds without the 'sec' suffix, e.g., '1000ms' for 1 second."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.gcs.version	alluxio.network.host.resolution.timeout
+[Ciri] Reason for alluxio.underfs.gcs.version: The property 'alluxio.underfs.gcs.version' does not exist in Alluxio 2.5.0. Configuration for GCS (Google Cloud Storage) in Alluxio is typically done through 'alluxio.underfs.gcs.*' properties, but 'version' is not a recognized property.
+[Ciri] Reason for alluxio.network.host.resolution.timeout: The format for 'alluxio.network.host.resolution.timeout' is incorrect. It should be specified in milliseconds without the 'sec' suffix, e.g., '1000ms' for 1 second.

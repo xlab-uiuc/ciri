@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hba_file', 'krb_server_keyfile'], 'reason': ["The 'hba_file' parameter should be specified as an absolute path, not a relative path starting with '//'. The correct format is 'hba_file = '/path/to/pg_hba.conf''", "The 'krb_server_keyfile' parameter should not include the '${sysconfdir}' variable. It should be an absolute path to the Kerberos keytab file."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hba_file	krb_server_keyfile
+[Ciri] Reason for hba_file: The 'hba_file' parameter should be specified as an absolute path, not a relative path starting with '//'. The correct format is 'hba_file = '/path/to/pg_hba.conf''
+[Ciri] Reason for krb_server_keyfile: The 'krb_server_keyfile' parameter should not include the '${sysconfdir}' variable. It should be an absolute path to the Kerberos keytab file.

@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'aof-rewrite-incremental-fsync', 'stream-node-max-bytes', 'cluster-config-file', 'lazyfree-lazy-expire', 'replica-serve-stale-data', 'hll-sparse-max-bytes'], 'reason': ["'enable-protected-configs' is not a valid configuration parameter for Redis 7.0.0.", "'aof-rewrite-incremental-fsync' is not a valid configuration parameter for Redis 7.0.0.", "'stream-node-max-bytes' is not a valid configuration parameter for Redis 7.0.0.", "'cluster-config-file' is not a valid configuration parameter for Redis 7.0.0.", "'lazyfree-lazy-expire' is not a valid configuration parameter for Redis 7.0.0.", "'replica-serve-stale-data' is not a valid configuration parameter for Redis 7.0.0.", "'hll-sparse-max-bytes' is not a valid configuration parameter for Redis 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'aof-rewrite-incremental-fsync', 'slowlog-log-slower-than', 'stream-node-max-bytes', 'cluster-config-file', 'lazyfree-lazy-expire', 'replica-serve-stale-data', 'hll-sparse-max-bytes'], 'reason': ["Unknown parameter 'enable-protected-configs'", "Unknown parameter 'aof-rewrite-incremental-fsync'", "Unknown parameter 'slowlog-log-slower-than'", "Unknown parameter 'stream-node-max-bytes'", "Unknown parameter 'cluster-config-file'", "Unknown parameter 'lazyfree-lazy-expire'", "Unknown parameter 'replica-serve-stale-data'", "Unknown parameter 'hll-sparse-max-bytes'"]}
+
+{'hasError': True, 'errParameter': ['enable-protected-configs', 'aof-rewrite-incremental-fsync', 'stream-node-max-bytes', 'cluster-config-file', 'lazyfree-lazy-expire', 'replica-serve-stale-data', 'hll-sparse-max-bytes'], 'reason': ["Unknown configuration parameter 'enable-protected-configs'", "Unknown configuration parameter 'aof-rewrite-incremental-fsync'", "Unknown configuration parameter 'stream-node-max-bytes'", "Unknown configuration parameter 'cluster-config-file'", "Unknown configuration parameter 'lazyfree-lazy-expire'", "Unknown configuration parameter 'replica-serve-stale-data'", "Unknown configuration parameter 'hll-sparse-max-bytes'"]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: enable-protected-configs	aof-rewrite-incremental-fsync	stream-node-max-bytes	cluster-config-file	lazyfree-lazy-expire	replica-serve-stale-data	hll-sparse-max-bytes
+[Ciri] Reason for enable-protected-configs: Unknown configuration parameter 'enable-protected-configs'
+[Ciri] Reason for aof-rewrite-incremental-fsync: 'aof-rewrite-incremental-fsync' is not a valid configuration parameter for Redis 7.0.0.
+[Ciri] Reason for stream-node-max-bytes: 'stream-node-max-bytes' is not a valid configuration parameter for Redis 7.0.0.
+[Ciri] Reason for cluster-config-file: 'cluster-config-file' is not a valid configuration parameter for Redis 7.0.0.
+[Ciri] Reason for lazyfree-lazy-expire: 'lazyfree-lazy-expire' is not a valid configuration parameter for Redis 7.0.0.
+[Ciri] Reason for replica-serve-stale-data: Unknown configuration parameter 'replica-serve-stale-data'
+[Ciri] Reason for hll-sparse-max-bytes: 'hll-sparse-max-bytes' is not a valid configuration parameter for Redis 7.0.0.

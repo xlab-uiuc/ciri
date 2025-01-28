@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_group', 'include', 'default_transaction_isolation', 'vacuum_multixact_failsafe_age', 'vacuum_cost_delay', 'syslog_facility', 'hba_file', 'force_parallel_mode'], 'reason': ['listen_addresses is not a valid IP address or a valid IP address range.', 'unix_socket_group is not a valid group name.', 'include is not a valid file path.', 'default_transaction_isolation is not a valid transaction isolation level.', 'vacuum_multixact_failsafe_age is not a valid integer.', 'vacuum_cost_delay is not a valid integer.', 'syslog_facility is not a valid syslog facility.', 'hba_file is not a valid file path.', 'force_parallel_mode is not a valid boolean.']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'unix_socket_group', 'include', 'default_transaction_isolation', 'vacuum_multixact_failsafe_age', 'vacuum_cost_delay', 'syslog_facility', 'hba_file', 'force_parallel_mode'], 'reason': ['listen_addresses must be a string', 'unix_socket_group must be a string', 'include must be a string', 'default_transaction_isolation must be a string', 'vacuum_multixact_failsafe_age must be an integer', 'vacuum_cost_delay must be an integer', 'syslog_facility must be a string', 'hba_file must be a string', 'force_parallel_mode must be a boolean']}
+
+{'hasError': True, 'errParameter': ['unix_socket_group', 'include', 'default_transaction_isolation', 'vacuum_multixact_failsafe_age', 'vacuum_cost_delay', 'syslog_facility', 'hba_file', 'force_parallel_mode'], 'reason': ['The value of unix_socket_group is not a valid group name.', 'The value of include is not a valid path.', 'The value of default_transaction_isolation is not a valid isolation level.', 'The value of vacuum_multixact_failsafe_age is not a valid age.', 'The value of vacuum_cost_delay is not a valid delay.', 'The value of syslog_facility is not a valid facility.', 'The value of hba_file is not a valid path.', 'The value of force_parallel_mode is not a valid mode.']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: listen_addresses	unix_socket_group	include	default_transaction_isolation	vacuum_multixact_failsafe_age	vacuum_cost_delay	syslog_facility	hba_file	force_parallel_mode
+[Ciri] Reason for listen_addresses: listen_addresses must be a string
+[Ciri] Reason for unix_socket_group: unix_socket_group is not a valid group name.
+[Ciri] Reason for include: include must be a string
+[Ciri] Reason for default_transaction_isolation: default_transaction_isolation must be a string
+[Ciri] Reason for vacuum_multixact_failsafe_age: vacuum_multixact_failsafe_age must be an integer
+[Ciri] Reason for vacuum_cost_delay: vacuum_cost_delay is not a valid integer.
+[Ciri] Reason for syslog_facility: syslog_facility is not a valid syslog facility.
+[Ciri] Reason for hba_file: hba_file is not a valid file path.
+[Ciri] Reason for force_parallel_mode: force_parallel_mode is not a valid boolean.

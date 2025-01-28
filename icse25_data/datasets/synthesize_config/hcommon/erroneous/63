@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.num.attempts.before.failover</name>
+  <value>1</value>
+  <description>
+    This property is the number of attempts to be made for LDAP operations
+    using a single LDAP instance. If multiple LDAP servers are configured
+    and this number of failed operations is reached, we will switch to the
+    next LDAP server. The configuration for the overall number of attempts
+    will still be respected, failover will thus be performed only if this
+    property is less than hadoop.security.group.mapping.ldap.num.attempts.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.kerberos.min.seconds.before.relogin</name>
+  <value>30</value>
+    <description>The minimum time between relogin attempts for Kerberos, in
+    seconds.
+    </description>
+</property>
+
+<property>
+  <name>fs.ftp.data.connection.mode</name>
+  <value>ACTIVE_LOCAL_DATA_CONNECTION_MODE</value>
+  <description>Set the FTPClient's data connection mode based on configuration.
+    Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE,
+    PASSIVE_LOCAL_DATA_CONNECTION_MODE and PASSIVE_REMOTE_DATA_CONNECTION_MODE.
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.wasbs.impl</name>
+  <value>org.apache.hadoop.fs.azure.Wasbs</value>
+  <description>AbstractFileSystem implementation class of wasbs://</description>
+</property>
+
+<property>
+  <name>ftp.replication</name>
+  <value>1</value>
+  <description>Replication factor</description>
+</property>
+
+<property>
+  <name>s3.replication</name>
+  <value>4</value>
+  <description>Replication factor</description>
+</property>
+
+<property>
+  <name>ha.zookeeper.parent-znode</name>
+  <value>/valid/file1</value>
+  <description>
+    The ZooKeeper znode under which the ZK failover controller stores
+    its information. Note that the nameservice ID is automatically
+    appended to this znode, so it is not normally necessary to
+    configure this, even in a federated environment.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.server.conf</name>
+  <value>/valid/file1</value>
+  <description>
+    Resource file from which ssl server keystore information will be extracted.
+    This file is looked up in the classpath, typically it should be in Hadoop
+    conf/ directory.
+  </description>
+</property>
+
+</configuration>

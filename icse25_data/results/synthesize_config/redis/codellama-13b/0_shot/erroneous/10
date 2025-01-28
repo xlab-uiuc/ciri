@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dir', 'cluster-announce-tls-port', 'cluster-config-file', 'proc-title-template', 'aof-load-truncated', 'acllog-max-len', 'stop-writes-on-bgsave-error', 'lazyfree-lazy-user-del'], 'reason': ['dir is not a valid directory', 'cluster-announce-tls-port is not a valid port', 'cluster-config-file is not a valid file', 'proc-title-template is not a valid template', 'aof-load-truncated is not a valid value', 'acllog-max-len is not a valid value', 'stop-writes-on-bgsave-error is not a valid value', 'lazyfree-lazy-user-del is not a valid value']}
+
+{'hasError': True, 'errParameter': ['dir', 'cluster-announce-tls-port', 'cluster-config-file', 'proc-title-template', 'aof-load-truncated', 'acllog-max-len', 'stop-writes-on-bgsave-error', 'lazyfree-lazy-user-del'], 'reason': ['The value of the dir parameter is not a valid directory path.', 'The value of the cluster-announce-tls-port parameter is not a valid port number.', 'The value of the cluster-config-file parameter is not a valid file path.', 'The value of the proc-title-template parameter is not a valid template.', 'The value of the aof-load-truncated parameter is not a valid boolean.', 'The value of the acllog-max-len parameter is not a valid integer.', 'The value of the stop-writes-on-bgsave-error parameter is not a valid boolean.', 'The value of the lazyfree-lazy-user-del parameter is not a valid boolean.']}
+
+{'hasError': True, 'errParameter': ['dir', 'cluster-announce-tls-port', 'cluster-config-file', 'proc-title-template', 'aof-load-truncated', 'acllog-max-len', 'stop-writes-on-bgsave-error', 'lazyfree-lazy-user-del'], 'reason': ['dir: The value must be a valid directory path.', 'cluster-announce-tls-port: The value must be an integer between 1 and 65535.', 'cluster-config-file: The value must be a valid file path.', 'proc-title-template: The value must be a valid string.', 'aof-load-truncated: The value must be a valid boolean.', 'acllog-max-len: The value must be an integer greater than 0.', 'stop-writes-on-bgsave-error: The value must be a valid boolean.', 'lazyfree-lazy-user-del: The value must be a valid boolean.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dir	cluster-announce-tls-port	cluster-config-file	proc-title-template	aof-load-truncated	acllog-max-len	stop-writes-on-bgsave-error	lazyfree-lazy-user-del
+[Ciri] Reason for dir: dir: The value must be a valid directory path.
+[Ciri] Reason for cluster-announce-tls-port: The value of the cluster-announce-tls-port parameter is not a valid port number.
+[Ciri] Reason for cluster-config-file: cluster-config-file is not a valid file
+[Ciri] Reason for proc-title-template: proc-title-template is not a valid template
+[Ciri] Reason for aof-load-truncated: aof-load-truncated is not a valid value
+[Ciri] Reason for acllog-max-len: The value of the acllog-max-len parameter is not a valid integer.
+[Ciri] Reason for stop-writes-on-bgsave-error: stop-writes-on-bgsave-error is not a valid value
+[Ciri] Reason for lazyfree-lazy-user-del: lazyfree-lazy-user-del: The value must be a valid boolean.

@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['synchronous_standby_names'], 'reason': ['synchronous_standby_names is not a valid parameter for PostgreSQL version 13.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['synchronous_commit', 'synchronous_standby_names', 'wal_init_zero', 'effective_cache_size', 'tcp_keepalives_interval', 'hot_standby', 'autovacuum_vacuum_cost_limit', 'shared_memory_type'], 'reason': ['synchronous_commit=off', "synchronous_standby_names=*'", 'wal_init_zero=on', 'effective_cache_size=4GB', 'tcp_keepalives_interval=0', 'hot_standby=on', 'autovacuum_vacuum_cost_limit=0', 'shared_memory_type=mmap']}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['synchronous_commit', 'synchronous_standby_names', 'wal_init_zero', 'effective_cache_size', 'tcp_keepalives_interval', 'hot_standby', 'autovacuum_vacuum_cost_limit', 'shared_memory_type'], 'reason': ['synchronous_commit=off is not recommended', "synchronous_standby_names=*' is not recommended", 'wal_init_zero=on is not recommended', 'effective_cache_size=4GB is not recommended', 'tcp_keepalives_interval=0 is not recommended', 'hot_standby=on is not recommended', 'autovacuum_vacuum_cost_limit=0 is not recommended', 'shared_memory_type=mmap is not recommended']}
+
+{'hasError': True, 'errParameter': ['synchronous_standby_names'], 'reason': ['synchronous_standby_names is not a valid parameter for PostgreSQL 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['synchronous_commit', 'synchronous_standby_names', 'wal_init_zero', 'effective_cache_size', 'tcp_keepalives_interval', 'hot_standby', 'autovacuum_vacuum_cost_limit', 'shared_memory_type'], 'reason': ['synchronous_commit=off', 'synchronous_standby_names=*', 'wal_init_zero=on', 'effective_cache_size=4GB', 'tcp_keepalives_interval=0', 'hot_standby=on', 'autovacuum_vacuum_cost_limit=0', 'shared_memory_type=mmap']}
+
+{'hasError': True, 'errParameter': ['synchronous_standby_names'], 'reason': ['synchronous_standby_names is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['synchronous_standby_names'], 'reason': ['synchronous_standby_names is not a valid parameter for postgresql version 13.0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: synchronous_standby_names
+[Ciri] Reason for synchronous_standby_names: synchronous_standby_names is not a valid parameter for postgresql version 13.0

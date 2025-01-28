@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['zset-max-listpack-entries', 'tls-ca-cert-dir', 'replica-announce-ip', 'oom-score-adj-values'], 'reason': ["In Redis 7.0, 'zset-max-ziplist-entries' was renamed to 'zset-max-listpack-entries' and the default value was changed from 128 to 512.", "The 'tls-ca-cert-dir' parameter is not a valid configuration directive in Redis 7.0. Instead, use 'tls-ca-cert-file' to specify the path to a single CA certificate file.", "The 'replica-announce-ip' parameter is deprecated in Redis 7.0. Use 'replica-announce-ip' instead.", "The 'oom-score-adj-values' parameter is not a valid configuration directive in Redis 7.0. It was removed in Redis 6.0. Use 'oom-score-adj' instead to set a single value."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: zset-max-listpack-entries	tls-ca-cert-dir	replica-announce-ip	oom-score-adj-values
+[Ciri] Reason for zset-max-listpack-entries: In Redis 7.0, 'zset-max-ziplist-entries' was renamed to 'zset-max-listpack-entries' and the default value was changed from 128 to 512.
+[Ciri] Reason for tls-ca-cert-dir: The 'tls-ca-cert-dir' parameter is not a valid configuration directive in Redis 7.0. Instead, use 'tls-ca-cert-file' to specify the path to a single CA certificate file.
+[Ciri] Reason for replica-announce-ip: The 'replica-announce-ip' parameter is deprecated in Redis 7.0. Use 'replica-announce-ip' instead.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter is not a valid configuration directive in Redis 7.0. It was removed in Redis 6.0. Use 'oom-score-adj' instead to set a single value.

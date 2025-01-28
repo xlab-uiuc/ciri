@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'hash-max-listpack-value'], 'reason': ["The 'cluster-announce-port' value should be a valid port number between 0 and 65535. The value '-100.22' is not a valid port number.", "The 'hash-max-listpack-value' parameter has been renamed to 'hash-max-listpack-entries' in Redis 7.0. The 'hash-max-listpack-value' parameter is no longer supported."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-announce-port	hash-max-listpack-value
+[Ciri] Reason for cluster-announce-port: The 'cluster-announce-port' value should be a valid port number between 0 and 65535. The value '-100.22' is not a valid port number.
+[Ciri] Reason for hash-max-listpack-value: The 'hash-max-listpack-value' parameter has been renamed to 'hash-max-listpack-entries' in Redis 7.0. The 'hash-max-listpack-value' parameter is no longer supported.

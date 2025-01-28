@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_level', 'max_connections', 'max_prepared_transactions', 'max_locks_per_transaction'], 'reason': ["listen_addresses should be set to 'localhost'", "wal_level should be set to'replica'", 'max_connections should be set to at least 100', 'max_prepared_transactions should be set to at least 0', 'max_locks_per_transaction should be set to at least 64']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: listen_addresses	wal_level	max_connections	max_prepared_transactions	max_locks_per_transaction
+[Ciri] Reason for listen_addresses: listen_addresses should be set to 'localhost'
+[Ciri] Reason for wal_level: wal_level should be set to'replica'
+[Ciri] Reason for max_connections: max_connections should be set to at least 100
+[Ciri] Reason for max_prepared_transactions: max_prepared_transactions should be set to at least 0
+[Ciri] Reason for max_locks_per_transaction: max_locks_per_transaction should be set to at least 64

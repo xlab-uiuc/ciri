@@ -1,0 +1,42 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'tcp-keepalive', 'tcp-keepalive-time', 'tcp-keepalive-interval', 'tcp-keepalive-probes', 'timeout', 'tcp-backlog', 'set-proc-title'], 'reason': ['port must be an integer', 'tcp-keepalive must be an integer', 'tcp-keepalive-time must be an integer', 'tcp-keepalive-interval must be an integer', 'tcp-keepalive-probes must be an integer', 'timeout must be an integer', 'tcp-backlog must be an integer', 'set-proc-title must be a boolean']}
+
+{'hasError': True, 'errParameter': ['port', 'tcp-keepalive', 'tcp-keepalive-time', 'tcp-keepalive-interval', 'tcp-keepalive-probes', 'tcp-backlog', 'set-proc-title'], 'reason': ['port is not a valid port number', 'tcp-keepalive is not a valid boolean', 'tcp-keepalive-time is not a valid integer', 'tcp-keepalive-interval is not a valid integer', 'tcp-keepalive-probes is not a valid integer', 'tcp-backlog is not a valid integer', 'set-proc-title is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['appendonly-no-cow', 'replica-serve-stale-data'], 'reason': ['appendonly-no-cow is not a valid parameter for redis version 7.0.0', 'replica-serve-stale-data is not a valid parameter for redis version 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'tcp-backlog', 'set-proc-title'], 'reason': ['The port parameter is not a valid port number.', 'The tcp-backlog parameter is not a valid integer.', 'The set-proc-title parameter is not a valid boolean.']}
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'tcp-keepalive', 'tcp-keepalive-interval', 'tcp-keepalive-probes', 'tcp-backlog', 'set-proc-title'], 'reason': ["The parameter 'port' is not a valid port number.", "The parameter 'timeout' is not a valid timeout value.", "The parameter 'tcp-keepalive' is not a valid boolean value.", "The parameter 'tcp-keepalive-interval' is not a valid integer value.", "The parameter 'tcp-keepalive-probes' is not a valid integer value.", "The parameter 'tcp-backlog' is not a valid integer value.", "The parameter 'set-proc-title' is not a valid boolean value."]}
+
+{'hasError': True, 'errParameter': ['maxmemory-policy', 'maxmemory-samples'], 'reason': ['maxmemory-policy is not a valid value. Valid values are volatile-lru, allkeys-lru, volatile-random, allkeys-random, volatile-ttl, noeviction.', 'maxmemory-samples is not a valid value. Valid values are 0, 1, 5, 10, 100, 5000.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'tcp-keepalive', 'tcp-keepalive-interval', 'tcp-keepalive-probes', 'tcp-keepalive-time', 'tcp-backlog', 'set-proc-title'], 'reason': ["The parameter 'port' is not a valid port number.", "The parameter 'timeout' is not a valid timeout value.", "The parameter 'tcp-keepalive' is not a valid boolean value.", "The parameter 'tcp-keepalive-interval' is not a valid integer value.", "The parameter 'tcp-keepalive-probes' is not a valid integer value.", "The parameter 'tcp-keepalive-time' is not a valid integer value.", "The parameter 'tcp-backlog' is not a valid integer value.", "The parameter 'set-proc-title' is not a valid boolean value."]}
+
+{'hasError': True, 'errParameter': ['port'], 'reason': ['The value of port is not a valid port number.']}
+
+{'hasError': True, 'errParameter': ['maxmemory-policy'], 'reason': ['maxmemory-policy is not a valid parameter for redis version 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['aof-load-truncated'], 'reason': ["The parameter 'aof-load-truncated' is not supported in redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'tcp-keepalive', 'tcp-keepalive-interval', 'tcp-keepalive-probes', 'tcp-backlog', 'set-proc-title'], 'reason': ['port must be an integer', 'timeout must be an integer', 'tcp-keepalive must be an integer', 'tcp-keepalive-interval must be an integer', 'tcp-keepalive-probes must be an integer', 'tcp-backlog must be an integer', 'set-proc-title must be a boolean']}
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'tcp-keepalive', 'tcp-keepalive-interval', 'tcp-keepalive-probes', 'tcp-backlog', 'set-proc-title'], 'reason': ['port must be a number', 'timeout must be a number', 'tcp-keepalive must be a number', 'tcp-keepalive-interval must be a number', 'tcp-keepalive-probes must be a number', 'tcp-backlog must be a number', 'set-proc-title must be a boolean']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: port	timeout	tcp-keepalive	tcp-keepalive-interval	tcp-keepalive-probes	tcp-backlog	set-proc-title
+[Ciri] Reason for port: port must be an integer
+[Ciri] Reason for timeout: timeout must be an integer
+[Ciri] Reason for tcp-keepalive: tcp-keepalive must be a number
+[Ciri] Reason for tcp-keepalive-interval: tcp-keepalive-interval must be an integer
+[Ciri] Reason for tcp-keepalive-probes: tcp-keepalive-probes must be a number
+[Ciri] Reason for tcp-backlog: tcp-backlog must be an integer
+[Ciri] Reason for set-proc-title: set-proc-title must be a boolean

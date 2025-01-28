@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl=off', 'log_parameter_max_length=-2'], 'reason': ["The 'ssl' parameter is not valid in PostgreSQL 13. Instead, use 'ssl = on' or 'ssl = off' in the postgresql.conf file.", "The 'log_parameter_max_length' value cannot be negative. It must be a non-negative integer or -1 for no limit."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ssl=off	log_parameter_max_length=-2
+[Ciri] Reason for ssl=off: The 'ssl' parameter is not valid in PostgreSQL 13. Instead, use 'ssl = on' or 'ssl = off' in the postgresql.conf file.
+[Ciri] Reason for log_parameter_max_length=-2: The 'log_parameter_max_length' value cannot be negative. It must be a non-negative integer or -1 for no limit.

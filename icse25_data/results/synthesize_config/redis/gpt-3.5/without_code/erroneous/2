@@ -1,0 +1,20 @@
+Wrong shot number:
+[2, 1, 3]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'list-max-listpack-size', 'zset-max-listpack-value'], 'reason': ["The property 'tcp-keepalive' has an invalid value '-5.5'. It should be a positive integer.", "The property 'list-max-listpack-size' has an invalid value '-2'. It should be a positive integer.", "The property 'zset-max-listpack-value' has an invalid value '32'. It should be a negative integer."]}
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'list-max-listpack-size', 'zset-max-listpack-value'], 'reason': ["The property 'tcp-keepalive' has an invalid value '-5.5'. It should be a positive integer.", "The property 'list-max-listpack-size' has an invalid value '-2'. It should be a positive integer.", "The property 'zset-max-listpack-value' has an invalid value '32'. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'list-max-listpack-size', 'zset-max-listpack-value'], 'reason': ["The property 'tcp-keepalive' has an invalid value '-5.5'. It should be a positive integer.", "The property 'list-max-listpack-size' has an invalid value '-2'. It should be a positive integer.", "The property 'zset-max-listpack-value' has an invalid value '32'. It should be a positive integer."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tcp-keepalive	list-max-listpack-size	zset-max-listpack-value
+[Ciri] Reason for tcp-keepalive: The property 'tcp-keepalive' has an invalid value '-5.5'. It should be a positive integer.
+[Ciri] Reason for list-max-listpack-size: The property 'list-max-listpack-size' has an invalid value '-2'. It should be a positive integer.
+[Ciri] Reason for zset-max-listpack-value: The property 'zset-max-listpack-value' has an invalid value '32'. It should be a positive integer.

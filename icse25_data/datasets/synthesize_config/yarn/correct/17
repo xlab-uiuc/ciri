@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.webapp.https.address</name>
+  <value>${yarn.resourcemanager.hostname}:8090</value>
+    <description>
+      The https address of the RM web application.
+      If only a host is provided as the value,
+      the webapp will be served on a random port.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.recovery.enabled</name>
+  <value>false</value>
+    <description>Enable RM to recover state after starting. If true, then
+      yarn.resourcemanager.store.class must be specified. </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.resource-profiles.enabled</name>
+  <value>false</value>
+    <description>
+    Flag to enable/disable resource profiles
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.count-logical-processors-as-cores</name>
+  <value>true</value>
+    <description>Flag to determine if logical processors(such as
+    hyperthreads) should be counted as cores. Only applicable on Linux
+    when yarn.nodemanager.resource.cpu-vcores is set to -1 and
+    yarn.nodemanager.resource.detect-hardware-capabilities is true.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.docker.image-update</name>
+  <value>true</value>
+    <description>Default option to decide whether to pull the latest image
+      or not.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resourcemanager.minimum.version</name>
+  <value>NONE</value>
+    <description>The minimum allowed version of a resourcemanager that a nodemanager will connect to.  
+      The valid values are NONE (no version checking), EqualToNM (the resourcemanager's version is 
+      equal to or greater than the NM version), or a Version String.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.recovery.dir</name>
+  <value>/valid/file2</value>
+    <description>The local filesystem directory in which the node manager will
+    store state when recovery is enabled.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.entity-group-fs-store.active-dir</name>
+  <value>/valid/file1</value>
+    <description>HDFS path to store active application’s timeline data</description>
+</property>
+
+</configuration>

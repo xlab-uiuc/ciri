@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['nfs.mountd.port', 'dfs.namenode.get-blocks.max-qps'], 'reason': ['The value for nfs.mountd.port is invalid. Port numbers must be in the range of 1 to 65535.', 'The value for dfs.namenode.get-blocks.max-qps is too low. As per the description, values less than or equal to 0 disable throttling, but 10 is a very low value that could negatively impact performance of data movement utilities.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: nfs.mountd.port	dfs.namenode.get-blocks.max-qps
+[Ciri] Reason for nfs.mountd.port: The value for nfs.mountd.port is invalid. Port numbers must be in the range of 1 to 65535.
+[Ciri] Reason for dfs.namenode.get-blocks.max-qps: The value for dfs.namenode.get-blocks.max-qps is too low. As per the description, values less than or equal to 0 disable throttling, but 10 is a very low value that could negatively impact performance of data movement utilities.

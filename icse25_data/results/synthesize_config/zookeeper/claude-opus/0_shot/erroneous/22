@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'quorum.auth.server.saslLoginContext'], 'reason': ["The 'quorumListenOnAllIPs' parameter is not a valid configuration property in Zookeeper 3.7.0. It should be removed.", "The 'quorum.auth.server.saslLoginContext' parameter is deprecated in Zookeeper 3.7.0. It should be replaced with 'quorum.auth.serverRequireSasl' which expects a Boolean value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorumListenOnAllIPs	quorum.auth.server.saslLoginContext
+[Ciri] Reason for quorumListenOnAllIPs: The 'quorumListenOnAllIPs' parameter is not a valid configuration property in Zookeeper 3.7.0. It should be removed.
+[Ciri] Reason for quorum.auth.server.saslLoginContext: The 'quorum.auth.server.saslLoginContext' parameter is deprecated in Zookeeper 3.7.0. It should be replaced with 'quorum.auth.serverRequireSasl' which expects a Boolean value.

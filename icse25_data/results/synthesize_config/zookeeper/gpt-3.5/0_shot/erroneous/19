@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'electionAlg'], 'reason': ['minSessionTimeout value is too large. It should be within the range of 4000 to 40000.', 'electionAlg value is not valid for Zookeeper version 3.7.0. It should be either 0, 1, 2, 3, 4, or 8.']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'electionAlg'], 'reason': ['minSessionTimeout value is too large. It should be within the range of 4000 to 40000.', 'electionAlg value 6 is not a valid option for Zookeeper version 3.7.0. It should be either 0, 1, 2, 3, 4, or 5.']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'clientPort'], 'reason': ['minSessionTimeout value is too large. It should be in the range of 4000 to 40000.', 'clientPort value is not in the valid range. It should be between 1 and 65535.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: minSessionTimeout	electionAlg
+[Ciri] Reason for minSessionTimeout: minSessionTimeout value is too large. It should be within the range of 4000 to 40000.
+[Ciri] Reason for electionAlg: electionAlg value 6 is not a valid option for Zookeeper version 3.7.0. It should be either 0, 1, 2, 3, 4, or 5.

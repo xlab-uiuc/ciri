@@ -1,0 +1,45 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.learnerRequireSasl is not a valid property for zookeeper version 3.7.0', 'quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal'], 'reason': ['quorum.auth.kerberos.servicePrincipal is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl'], 'reason': ['quorum.auth.enableSasl is not supported in Zookeeper 3.7.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl'], 'reason': ['quorum.auth.learnerRequireSasl is not a valid property for ZooKeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.kerberos.servicePrincipal is not a valid property for zookeeper version 3.7.0', 'quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.learnerRequireSasl and quorum.auth.enableSasl cannot both be true.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.learnerRequireSasl and quorum.auth.enableSasl are mutually exclusive. You cannot set both to true.', 'quorum.auth.enableSasl is deprecated. Please use quorum.auth.learnerRequireSasl instead.']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal'], 'reason': ['quorum.auth.kerberos.servicePrincipal is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.kerberos.servicePrincipal is not a valid property for zookeeper version 3.7.0', 'quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.learnerRequireSasl and quorum.auth.enableSasl cannot be set to true at the same time.', 'quorum.auth.enableSasl is deprecated and should be set to false.']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.enableSasl', 'localSessionsEnabled', 'electionAlg'], 'reason': ['quorum.auth.kerberos.servicePrincipal is not a valid property for zookeeper version 3.7.0', 'quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0', 'localSessionsEnabled is not a valid property for zookeeper version 3.7.0', 'electionAlg is not a valid property for zookeeper version 3.7.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.learnerRequireSasl is not a valid property. Please use quorum.auth.learner.login.context.name instead.', 'quorum.auth.enableSasl is not a valid property. Please use quorum.auth.server.login.context.name instead.']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'quorum.auth.kerberos.servicePrincipal', 'quorum.cnxn.threads.size', 'quorum.auth.learnerRequireSasl', 'quorumListenOnAllIPs', 'quorum.auth.enableSasl', 'localSessionsEnabled', 'electionAlg'], 'reason': ['clientPort should be a positive integer.', 'quorum.auth.kerberos.servicePrincipal should be a valid kerberos principal.', 'quorum.cnxn.threads.size should be a positive integer.', 'quorum.auth.learnerRequireSasl should be a boolean.', 'quorumListenOnAllIPs should be a boolean.', 'quorum.auth.enableSasl should be a boolean.', 'localSessionsEnabled should be a boolean.', 'electionAlg should be a valid election algorithm.']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.learnerRequireSasl and quorum.auth.enableSasl cannot be set to true at the same time.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorum.auth.learnerRequireSasl	quorum.auth.enableSasl
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl is not a valid property. Please use quorum.auth.learner.login.context.name instead.
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl is not a valid property. Please use quorum.auth.server.login.context.name instead.

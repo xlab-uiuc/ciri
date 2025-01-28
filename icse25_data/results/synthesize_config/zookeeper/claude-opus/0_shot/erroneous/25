@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'maxSessionTimeout', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval'], 'reason': ['secureClientPortAddress should be set to 0.0.0.0 instead of -1.0.0.0', 'maxSessionTimeout should be greater than the minimum of 4000 ms (4 seconds)', 'quorum.auth.serverRequireSasl is not a valid configuration parameter in Zookeeper 3.7.0. The correct parameter is quorum.auth.enableSasl', 'autopurge.purgeInterval should be greater than 0. Setting it to 1 will cause very frequent purging which can affect performance']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: secureClientPortAddress	maxSessionTimeout	quorum.auth.serverRequireSasl	autopurge.purgeInterval
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress should be set to 0.0.0.0 instead of -1.0.0.0
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout should be greater than the minimum of 4000 ms (4 seconds)
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl is not a valid configuration parameter in Zookeeper 3.7.0. The correct parameter is quorum.auth.enableSasl
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval should be greater than 0. Setting it to 1 will cause very frequent purging which can affect performance

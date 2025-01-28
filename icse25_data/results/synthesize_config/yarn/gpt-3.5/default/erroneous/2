@@ -1,0 +1,19 @@
+Wrong shot number:
+[5, 1, 6]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.retry-attempts', 'yarn.resourcemanager.webapp.https.address'], 'reason': ["The property 'yarn.resourcemanager.placement-constraints.retry-attempts' has the value '-5.5' which is not of the correct type Integer.", "The property 'yarn.resourcemanager.webapp.https.address' has the value '127.0.0.1' which is not a valid https address format."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.retry-attempts', 'yarn.resourcemanager.webapp.https.address'], 'reason': ["The property 'yarn.resourcemanager.placement-constraints.retry-attempts' has the value '-5.5' which is not of the correct type Integer.", "The property 'yarn.resourcemanager.webapp.https.address' has the value '127.0.0.1' which is not of the correct type Hostname:Port."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.retry-attempts', 'yarn.resourcemanager.webapp.https.address'], 'reason': ["The property 'yarn.resourcemanager.placement-constraints.retry-attempts' has the value '-5.5' which is not of the correct type Integer.", "The property 'yarn.resourcemanager.webapp.https.address' has the value '127.0.0.1' which is not within the accepted value {hostname:port}."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.placement-constraints.retry-attempts	yarn.resourcemanager.webapp.https.address
+[Ciri] Reason for yarn.resourcemanager.placement-constraints.retry-attempts: The property 'yarn.resourcemanager.placement-constraints.retry-attempts' has the value '-5.5' which is not of the correct type Integer.
+[Ciri] Reason for yarn.resourcemanager.webapp.https.address: The property 'yarn.resourcemanager.webapp.https.address' has the value '127.0.0.1' which is not within the accepted value {hostname:port}.

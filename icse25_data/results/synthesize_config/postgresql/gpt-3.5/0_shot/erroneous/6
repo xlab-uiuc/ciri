@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['temp_buffers', 'wal_keep_size'], 'reason': ["temp_buffers should be specified in a valid format (e.g., '8MB' for megabytes)", 'wal_keep_size should be set to a value greater than 1 for proper WAL retention']}
+
+{'hasError': True, 'errParameter': ['temp_buffers', 'wal_keep_size'], 'reason': ["temp_buffers value should be specified in a valid format (e.g., '8MB' for megabytes).", "wal_keep_size value should be specified in a valid format (e.g., '1GB' for gigabytes)."]}
+
+{'hasError': True, 'errParameter': ['temp_buffers', 'wal_keep_size', 'huge_page_size'], 'reason': ["temp_buffers should be specified in a valid format, for example, '8MB' for megabytes.", 'wal_keep_size should be set to a value greater than the default of 0 for proper WAL management.', 'huge_page_size should be set to a valid size if using huge pages, or set to 0 if not using huge pages.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: temp_buffers	wal_keep_size
+[Ciri] Reason for temp_buffers: temp_buffers value should be specified in a valid format (e.g., '8MB' for megabytes).
+[Ciri] Reason for wal_keep_size: wal_keep_size value should be specified in a valid format (e.g., '1GB' for gigabytes).

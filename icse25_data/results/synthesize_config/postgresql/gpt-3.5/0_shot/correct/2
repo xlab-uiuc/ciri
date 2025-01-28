@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['client_encoding', 'max_files_per_process', 'lc_monetary'], 'reason': ["client_encoding 'sql_ascii' is not recommended, consider using UTF-8 for better compatibility.", 'max_files_per_process is set to 500 which may be too high and could lead to resource exhaustion.', "lc_monetary 'C' is a generic setting, consider setting it to a specific locale for proper currency formatting."]}
+
+{'hasError': True, 'errParameter': ['client_encoding', 'lc_monetary'], 'reason': ["client_encoding 'sql_ascii' is not recommended, consider using UTF-8 encoding for better compatibility.", "lc_monetary 'C' is not a valid setting for lc_monetary, consider using a valid locale setting."]}
+
+{'hasError': True, 'errParameter': ['client_encoding', 'lc_monetary'], 'reason': ["client_encoding 'sql_ascii' is not recommended, consider using UTF-8 encoding for better compatibility.", "lc_monetary 'C' is not a valid setting, consider using a valid locale setting like 'en_US.UTF-8'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: client_encoding	lc_monetary
+[Ciri] Reason for client_encoding: client_encoding 'sql_ascii' is not recommended, consider using UTF-8 encoding for better compatibility.
+[Ciri] Reason for lc_monetary: lc_monetary 'C' is not a valid setting, consider using a valid locale setting like 'en_US.UTF-8'.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 3, 9]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.defaults.for.version'], 'reason': ["The property 'hbase.regionserver.info.bindAddress' has the value '-1.0.0.0' which does not follow the correct IP address format.", "The property 'hbase.defaults.for.version' has the value '@@@VERSION@@@' which may not be a valid version placeholder."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.defaults.for.version'], 'reason': ["The property 'hbase.regionserver.info.bindAddress' has the value '-1.0.0.0' which does not follow the correct IP address format.", "The property 'hbase.defaults.for.version' has the value '@@@VERSION@@@' which may not be a valid version placeholder."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.defaults.for.version'], 'reason': ["The property 'hbase.regionserver.info.bindAddress' has the value '-1.0.0.0' which does not follow the correct IP address format.", "The property 'hbase.defaults.for.version' has the value '@@@VERSION@@@' which is not a valid version placeholder."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.info.bindAddress	hbase.defaults.for.version
+[Ciri] Reason for hbase.regionserver.info.bindAddress: The property 'hbase.regionserver.info.bindAddress' has the value '-1.0.0.0' which does not follow the correct IP address format.
+[Ciri] Reason for hbase.defaults.for.version: The property 'hbase.defaults.for.version' has the value '@@@VERSION@@@' which may not be a valid version placeholder.

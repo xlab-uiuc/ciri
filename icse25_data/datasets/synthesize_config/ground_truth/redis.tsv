@@ -1,0 +1,44 @@
+Syntax	Data Type	timeout	9.9		
+Syntax	Data Type	tcp-keepalive	-5.5		
+Syntax	Data Type	databases	true		
+Syntax	Data Type	replica-priority	ciri/ciri		
+Syntax	Data Type	repl-backlog-size	1mm		
+Syntax	Data Type	maxmemory-clients	10nounit		
+Syntax	Data Type	proto-max-bulk-len	80hhhhh		
+Syntax	Path	unixsocket	//hadoop/io/local/redis.sock		
+Syntax	Path	tls-ca-cert-dir	/\etc/ssl/certs		
+Syntax	Path	dir	tmp////staging		
+Syntax	Path	aclfile	dev/urandom///users.acl		
+Syntax	IP Address	bind-source-addr	0.0.0		
+Syntax	IP Address	cluster-announce-ip	1.1.1.1.1.1		
+Syntax	IP Address	bind-source-addr	2.2.2.2.2.2		
+Syntax	IP Address	cluster-announce-ip	x.0.0.0.0.0		
+Syntax	Port	cluster-announce-tls-port	1.1		
+Syntax	Port	cluster-announce-port	-100.22		
+Syntax	Port	cluster-announce-bus-port	ciri		
+Syntax	Port	tls-port	file://		
+Range	Basic Numeric	set-max-intset-entries	-100		
+Range	Basic Numeric	zset-max-listpack-entries	-1		
+Range	Basic Numeric	stream-node-max-bytes	4000000000		
+Range	Basic Numeric	slowlog-max-len	-10		
+Range	Bool	daemonize	10		
+Range	Bool	always-show-logo	hadoop		
+Range	Bool	set-proc-title	1.5		
+Range	Bool	rdbcompression	10000		
+Range	Enum	enable-protected-configs	nonono		
+Range	Enum	repl-diskless-load	NONE		
+Range	Enum	supervised	NOEXIST		
+Range	Enum	tls-protocols	NOEXIST_TLS		
+Range	IP Address	bind-source-addr	-1.0.0.0		
+Range	IP Address	cluster-announce-ip	256.256.256.256		
+Range	IP Address	bind-source-addr	999.-1.0.0		
+Range	IP Address	cluster-announce-ip	0.0.256.0		
+Range	Port	cluster-announce-tls-port	65536		
+Range	Port	cluster-announce-port	65536		
+Range	Port	cluster-announce-bus-port	-1		
+Range	Port	tls-port	-100		
+Dependency	Control	cluster-enabled	no	cluster-config-file	nodes-6378.conf
+Dependency	Control	cluster-enabled	no	cluster-node-timeout	10000
+Dependency	Control	appendonly	no	appendfsync	always
+Version	Parameter Change	set-max-listpack-value	64		
+Version	Parameter Change	locale-collate	""		

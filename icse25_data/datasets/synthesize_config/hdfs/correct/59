@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.max.objects</name>
+  <value>-1</value>
+  <description>The maximum number of files, directories and blocks
+  dfs supports. A value of zero indicates no limit to the number
+  of objects that dfs supports.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.decommission.max.concurrent.tracked.nodes</name>
+  <value>200</value>
+  <description>
+    The maximum number of decommission-in-progress or
+    entering-maintenance datanodes nodes that will be tracked at one time by
+    the namenode. Tracking these datanode consumes additional NN memory
+    proportional to the number of blocks on the datnode. Having a conservative
+    limit reduces the potential impact of decommissioning or maintenance of
+    a large number of nodes at once.
+      
+    A value of 0 means no limit will be enforced.
+  </description>
+</property>
+
+<property>
+  <name>dfs.nameservices</name>
+  <value>ns1</value>
+  <description>
+    Comma-separated list of nameservices.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.deadnode.detection.suspectnode.queue.max</name>
+  <value>2000</value>
+    <description>
+      The max queue size of probing suspect node.
+    </description>
+</property>
+
+<property>
+  <name>dfs.client.deadnode.detection.rpc.threads</name>
+  <value>40</value>
+    <description>
+      The maximum number of threads to use for calling RPC call to recheck the liveness of dead node.
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.ec.userdefined.policy.allowed</name>
+  <value>false</value>
+  <description>If set to false, doesn't allow addition of user defined
+    erasure coding policies.
+  </description>
+</property>
+
+<property>
+  <name>dfs.http.client.retry.policy.spec</name>
+  <value>[5000, 3, 30000, 5]</value>
+  <description>
+    Specify a policy of multiple linear random retry for WebHDFS client,
+    e.g. given pairs of number of retries and sleep time (n0, t0), (n1, t1),
+    ..., the first n0 retries sleep t0 milliseconds on average,
+    the following n1 retries sleep t1 milliseconds on average, and so on.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.block.write.locateFollowingBlock.retries</name>
+  <value>5</value>
+  <description>
+    Number of retries to use when finding the next block during HDFS writes.
+  </description>
+</property>
+
+</configuration>

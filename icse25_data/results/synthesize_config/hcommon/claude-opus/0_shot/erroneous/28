@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode', 'ha.health-monitor.connect-retry-interval.ms'], 'reason': ["The value '1.1.1' for property 'fs.permissions.umask-mode' is invalid. It should be a valid umask value in octal (e.g., '022') or symbolic (e.g., 'u=rwx,g=,o=') format.", "The value '2000' for property 'ha.health-monitor.connect-retry-interval.ms' is not a valid time duration. It should include a unit suffix like 's' for seconds or 'ms' for milliseconds (e.g., '2000ms')."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.permissions.umask-mode	ha.health-monitor.connect-retry-interval.ms
+[Ciri] Reason for fs.permissions.umask-mode: The value '1.1.1' for property 'fs.permissions.umask-mode' is invalid. It should be a valid umask value in octal (e.g., '022') or symbolic (e.g., 'u=rwx,g=,o=') format.
+[Ciri] Reason for ha.health-monitor.connect-retry-interval.ms: The value '2000' for property 'ha.health-monitor.connect-retry-interval.ms' is not a valid time duration. It should include a unit suffix like 's' for seconds or 'ms' for milliseconds (e.g., '2000ms').

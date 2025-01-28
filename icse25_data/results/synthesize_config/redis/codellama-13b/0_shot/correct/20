@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port'], 'reason': ['tls-port is not a valid configuration option in Redis 7.0.0.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['tls-port', 'appendfsync', 'enable-protected-configs', 'replica-lazy-flush'], 'reason': ['tls-port is not a valid configuration parameter for Redis 7.0.0', 'appendfsync is not a valid configuration parameter for Redis 7.0.0', 'enable-protected-configs is not a valid configuration parameter for Redis 7.0.0', 'replica-lazy-flush is not a valid configuration parameter for Redis 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port', 'appendfsync', 'enable-protected-configs', 'replica-lazy-flush'], 'reason': ['tls-port is not a valid configuration parameter for Redis 7.0.0', 'appendfsync is not a valid configuration parameter for Redis 7.0.0', 'enable-protected-configs is not a valid configuration parameter for Redis 7.0.0', 'replica-lazy-flush is not a valid configuration parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['tls-port', 'appendfsync', 'enable-protected-configs', 'repl-diskless-sync', 'replica-lazy-flush'], 'reason': ['tls-port is not supported in Redis 7.0.0', 'appendfsync is not supported in Redis 7.0.0', 'enable-protected-configs is not supported in Redis 7.0.0', 'repl-diskless-sync is not supported in Redis 7.0.0', 'replica-lazy-flush is not supported in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['tls-port', 'appendfsync', 'enable-protected-configs', 'replica-lazy-flush'], 'reason': ['tls-port is not a valid configuration parameter', 'appendfsync is not a valid configuration parameter', 'enable-protected-configs is not a valid configuration parameter', 'replica-lazy-flush is not a valid configuration parameter']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: tls-port	appendfsync	enable-protected-configs	replica-lazy-flush
+[Ciri] Reason for tls-port: tls-port is not a valid configuration parameter
+[Ciri] Reason for appendfsync: appendfsync is not a valid configuration parameter
+[Ciri] Reason for enable-protected-configs: enable-protected-configs is not a valid configuration parameter
+[Ciri] Reason for replica-lazy-flush: replica-lazy-flush is not a valid configuration parameter

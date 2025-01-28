@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'oom-score-adj-values'], 'reason': ["The correct configuration for controlling the maximum listpack size for hash objects is 'hash-max-listpack-size', not 'hash-max-listpack-value'.", "The 'oom-score-adj-values' configuration does not exist in Redis. The correct configuration for adjusting OOM scores for different Redis processes is 'oom-score-adj', which accepts a single value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hash-max-listpack-value	oom-score-adj-values
+[Ciri] Reason for hash-max-listpack-value: The correct configuration for controlling the maximum listpack size for hash objects is 'hash-max-listpack-size', not 'hash-max-listpack-value'.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' configuration does not exist in Redis. The correct configuration for adjusting OOM scores for different Redis processes is 'oom-score-adj', which accepts a single value.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 10, 5]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'cluster-announce-port'], 'reason': ["The property 'cluster-announce-tls-port' has the value '65536' which is out of the valid range for port numbers.", "The property 'cluster-announce-port' has the value '1' which is technically within range but generally not used for services due to it being a well-known port."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-announce-tls-port	cluster-announce-port
+[Ciri] Reason for cluster-announce-tls-port: The property 'cluster-announce-tls-port' has the value '65536' which is out of the valid range for port numbers.
+[Ciri] Reason for cluster-announce-port: The property 'cluster-announce-port' has the value '1' which is technically within range but generally not used for services due to it being a well-known port.

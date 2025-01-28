@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>io.map.index.skip</name>
+  <value>-1</value>
+  <description>Number of index entries to skip between each entry.
+  Zero by default. Setting this to values larger than zero can
+  facilitate opening large MapFiles using less memory.</description>
+</property>
+
+<property>
+  <name>fs.default.name</name>
+  <value>file///</value>
+  <description>Deprecated. Use (fs.defaultFS) property
+  instead</description>
+</property>
+
+<property>
+  <name>fs.s3a.threads.max</name>
+  <value>128</value>
+  <description>The total number of threads available in the filesystem for data
+    uploads *or any other queued filesystem operation*.</description>
+</property>
+
+<property>
+  <name>ipc.[port_number].weighted-cost.lockshared</name>
+  <value>1</value>
+  <description>The weight multiplier to apply to the time spent in the
+    processing phase which holds a shared (read) lock.
+    This property applies to WeightedTimeCostProvider.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.java.secure.random.algorithm</name>
+  <value>SHA1PRNG</value>
+  <description>
+    The java secure random algorithm.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.kms.client.encrypted.key.cache.low-watermark</name>
+  <value>0.3f</value>
+  <description>
+    If size of the EncryptedKeyVersion cache Queue falls below the
+    low watermark, this cache queue will be scheduled for a refill
+  </description>
+</property>
+
+<property>
+  <name>fs.adl.oauth2.msi.port</name>
+  <value>3000</value>
+    <description>
+      The localhost port for the MSI token service. This is the port specified
+      when creating the Azure VM. The default, if this setting is not specified,
+      is 50342.
+      Used by MSI token provider.
+    </description>
+</property>
+
+<property>
+  <name>hadoop.metrics.jvm.use-thread-mxbean</name>
+  <value>true</value>
+    <description>
+      Whether or not ThreadMXBean is used for getting thread info in JvmMetrics,
+      ThreadGroup approach is preferred for better performance.
+    </description>
+</property>
+
+</configuration>

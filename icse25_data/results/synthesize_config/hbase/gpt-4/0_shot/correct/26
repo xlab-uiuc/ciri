@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.optionalcacheflushinterval', 'hbase.hregion.max.filesize', 'hbase.security.exec.permission.checks'], 'reason': ["The 'hbase.regionserver.optionalcacheflushinterval' property's default value is incorrect. The default is actually 3600000 milliseconds (1 hour), not 1800000.", "The 'hbase.hregion.max.filesize' usage example sets the value to 322122547200L, which is significantly larger than the specified value of 10737418240. This discrepancy could lead to confusion or misconfiguration.", "The 'hbase.security.exec.permission.checks' property is not available in HBase version 2.2.7. This feature was introduced in later versions."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.optionalcacheflushinterval	hbase.hregion.max.filesize	hbase.security.exec.permission.checks
+[Ciri] Reason for hbase.regionserver.optionalcacheflushinterval: The 'hbase.regionserver.optionalcacheflushinterval' property's default value is incorrect. The default is actually 3600000 milliseconds (1 hour), not 1800000.
+[Ciri] Reason for hbase.hregion.max.filesize: The 'hbase.hregion.max.filesize' usage example sets the value to 322122547200L, which is significantly larger than the specified value of 10737418240. This discrepancy could lead to confusion or misconfiguration.
+[Ciri] Reason for hbase.security.exec.permission.checks: The 'hbase.security.exec.permission.checks' property is not available in HBase version 2.2.7. This feature was introduced in later versions.

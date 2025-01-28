@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.lost.worker.file.detection.interval', 'alluxio.master.journal.flush.batch.time', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.ttl.checker.interval'], 'reason': ["The property 'alluxio.master.lost.worker.file.detection.interval' expects a duration value in the format '<int><unit>', e.g. '5min', '2hour'. The value '1min' is not valid.", "The property 'alluxio.master.journal.flush.batch.time' expects a duration value in the format '<int><unit>', e.g. '100ms', '5sec'. The value '100ms' is not valid.", "The property 'alluxio.security.stale.channel.purge.interval' expects a duration value in the format '<int><unit>', e.g. '3day', '10hour'. The value '3day' is not valid.", "The property 'alluxio.master.ttl.checker.interval' expects a duration value in the format '<int><unit>', e.g. '10hour', '2min'. The value '10hour' is not valid."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.master.lost.worker.file.detection.interval	alluxio.master.journal.flush.batch.time	alluxio.security.stale.channel.purge.interval	alluxio.master.ttl.checker.interval
+[Ciri] Reason for alluxio.master.lost.worker.file.detection.interval: The property 'alluxio.master.lost.worker.file.detection.interval' expects a duration value in the format '<int><unit>', e.g. '5min', '2hour'. The value '1min' is not valid.
+[Ciri] Reason for alluxio.master.journal.flush.batch.time: The property 'alluxio.master.journal.flush.batch.time' expects a duration value in the format '<int><unit>', e.g. '100ms', '5sec'. The value '100ms' is not valid.
+[Ciri] Reason for alluxio.security.stale.channel.purge.interval: The property 'alluxio.security.stale.channel.purge.interval' expects a duration value in the format '<int><unit>', e.g. '3day', '10hour'. The value '3day' is not valid.
+[Ciri] Reason for alluxio.master.ttl.checker.interval: The property 'alluxio.master.ttl.checker.interval' expects a duration value in the format '<int><unit>', e.g. '10hour', '2min'. The value '10hour' is not valid.

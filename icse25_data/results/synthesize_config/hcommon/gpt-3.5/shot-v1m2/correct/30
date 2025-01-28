@@ -1,0 +1,15 @@
+Wrong shot number:
+[16, 1]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.s3a.s3guard.ddb.throttle.retry.interval'], 'reason': ["The property 'fs.ftp.transfer.mode' has an invalid value. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.", "The property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has the value '200ms' which is not of the correct type Integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.s3a.s3guard.ddb.throttle.retry.interval
+[Ciri] Reason for fs.ftp.transfer.mode: The property 'fs.ftp.transfer.mode' has an invalid value. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.
+[Ciri] Reason for fs.s3a.s3guard.ddb.throttle.retry.interval: The property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has the value '200ms' which is not of the correct type Integer.

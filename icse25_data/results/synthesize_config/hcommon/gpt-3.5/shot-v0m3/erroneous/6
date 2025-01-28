@@ -1,0 +1,12 @@
+Wrong shot number:
+[16, 5, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'hadoop.kerberos.kinit.command'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has an invalid value '10nounit'. The timeout value should include a valid unit (e.g., '10s' for 10 seconds).", "The property 'hadoop.kerberos.kinit.command' has an incorrect usage tag 'usage'. The correct tag should be 'description'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	hadoop.kerberos.kinit.command
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has an invalid value '10nounit'. The timeout value should include a valid unit (e.g., '10s' for 10 seconds).
+[Ciri] Reason for hadoop.kerberos.kinit.command: The property 'hadoop.kerberos.kinit.command' has an incorrect usage tag 'usage'. The correct tag should be 'description'.

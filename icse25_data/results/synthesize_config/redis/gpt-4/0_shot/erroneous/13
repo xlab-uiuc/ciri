@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'tls-port'], 'reason': ["The 'cluster-announce-ip' value '1.1.1.1.1.1' is not a valid IP address.", "The 'tls-port' configuration is set to the same default port (6379) used for non-TLS connections, which could lead to conflicts if both TLS and non-TLS connections are enabled."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-announce-ip	tls-port
+[Ciri] Reason for cluster-announce-ip: The 'cluster-announce-ip' value '1.1.1.1.1.1' is not a valid IP address.
+[Ciri] Reason for tls-port: The 'tls-port' configuration is set to the same default port (6379) used for non-TLS connections, which could lead to conflicts if both TLS and non-TLS connections are enabled.

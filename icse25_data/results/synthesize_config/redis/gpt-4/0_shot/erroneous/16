@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'maxmemory-clients', 'lazyfree-lazy-expire'], 'reason': ["The 'cluster-announce-tls-port' parameter should be an integer representing the port number, not a version-like string.", "The 'maxmemory-clients' parameter does not exist in Redis configuration. Perhaps 'maxmemory-per-client' was intended.", "The 'lazyfree-lazy-expire' option should be set to 'yes' or 'no'. The correct configuration directive is 'lazyfree-lazy-eviction'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-tls-port	maxmemory-clients	lazyfree-lazy-expire
+[Ciri] Reason for cluster-announce-tls-port: The 'cluster-announce-tls-port' parameter should be an integer representing the port number, not a version-like string.
+[Ciri] Reason for maxmemory-clients: The 'maxmemory-clients' parameter does not exist in Redis configuration. Perhaps 'maxmemory-per-client' was intended.
+[Ciri] Reason for lazyfree-lazy-expire: The 'lazyfree-lazy-expire' option should be set to 'yes' or 'no'. The correct configuration directive is 'lazyfree-lazy-eviction'.

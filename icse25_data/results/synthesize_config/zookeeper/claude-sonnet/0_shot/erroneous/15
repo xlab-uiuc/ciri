@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'peerType', 'quorum.auth.server.saslLoginContext'], 'reason': ["The 'secureClientPort' property is not a valid configuration parameter for ZooKeeper 3.7.0. It should be replaced with 'secureClient.portUnification' to enable secure client connections.", "The 'peerType' property is not a valid configuration parameter for ZooKeeper 3.7.0. It should be removed.", "The 'quorum.auth.server.saslLoginContext' property is not a valid configuration parameter for ZooKeeper 3.7.0. It should be replaced with 'quorum.auth.serverPrincipal' and 'quorum.auth.serverLoginContext' for configuring server authentication."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: secureClientPort	peerType	quorum.auth.server.saslLoginContext
+[Ciri] Reason for secureClientPort: The 'secureClientPort' property is not a valid configuration parameter for ZooKeeper 3.7.0. It should be replaced with 'secureClient.portUnification' to enable secure client connections.
+[Ciri] Reason for peerType: The 'peerType' property is not a valid configuration parameter for ZooKeeper 3.7.0. It should be removed.
+[Ciri] Reason for quorum.auth.server.saslLoginContext: The 'quorum.auth.server.saslLoginContext' property is not a valid configuration parameter for ZooKeeper 3.7.0. It should be replaced with 'quorum.auth.serverPrincipal' and 'quorum.auth.serverLoginContext' for configuring server authentication.

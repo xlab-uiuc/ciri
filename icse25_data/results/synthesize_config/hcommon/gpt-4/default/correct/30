@@ -1,0 +1,15 @@
+Wrong shot number:
+[16, 10, 5]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.AbstractFileSystem.abfss.impl'], 'reason': ["The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE, but the property value should be lowercase.", "The property 'fs.AbstractFileSystem.abfss.impl' has an incorrect class name. The correct class name should be 'org.apache.hadoop.fs.azurebfs.AzureBlobFileSystemStore'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.AbstractFileSystem.abfss.impl
+[Ciri] Reason for fs.ftp.transfer.mode: The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE, but the property value should be lowercase.
+[Ciri] Reason for fs.AbstractFileSystem.abfss.impl: The property 'fs.AbstractFileSystem.abfss.impl' has an incorrect class name. The correct class name should be 'org.apache.hadoop.fs.azurebfs.AzureBlobFileSystemStore'.

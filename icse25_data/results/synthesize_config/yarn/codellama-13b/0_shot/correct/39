@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.webapp.address', 'yarn.nodemanager.container-localizer.java.opts', 'yarn.nodemanager.runtime.linux.runc.image-toplevel-dir', 'yarn.nodemanager.elastic-memory-control.enabled', 'yarn.node-attribute.fs-store.impl.class'], 'reason': ['The property yarn.resourcemanager.webapp.address is not valid. The correct format is <host>:<port>.', 'The property yarn.nodemanager.container-localizer.java.opts is not valid. The correct format is -Xmx<memory>m. For example, -Xmx256m.', 'The property yarn.nodemanager.runtime.linux.runc.image-toplevel-dir is not valid. The correct format is /valid/file2.', 'The property yarn.nodemanager.elastic-memory-control.enabled is not valid. The correct format is false.', 'The property yarn.node-attribute.fs-store.impl.class is not valid. The correct format is org.apache.hadoop.yarn.server.resourcemanager.nodelabels.FileSystemNodeAttributeStore.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: yarn.resourcemanager.webapp.address	yarn.nodemanager.container-localizer.java.opts	yarn.nodemanager.runtime.linux.runc.image-toplevel-dir	yarn.nodemanager.elastic-memory-control.enabled	yarn.node-attribute.fs-store.impl.class
+[Ciri] Reason for yarn.resourcemanager.webapp.address: The property yarn.resourcemanager.webapp.address is not valid. The correct format is <host>:<port>.
+[Ciri] Reason for yarn.nodemanager.container-localizer.java.opts: The property yarn.nodemanager.container-localizer.java.opts is not valid. The correct format is -Xmx<memory>m. For example, -Xmx256m.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.runc.image-toplevel-dir: The property yarn.nodemanager.runtime.linux.runc.image-toplevel-dir is not valid. The correct format is /valid/file2.
+[Ciri] Reason for yarn.nodemanager.elastic-memory-control.enabled: The property yarn.nodemanager.elastic-memory-control.enabled is not valid. The correct format is false.
+[Ciri] Reason for yarn.node-attribute.fs-store.impl.class: The property yarn.node-attribute.fs-store.impl.class is not valid. The correct format is org.apache.hadoop.yarn.server.resourcemanager.nodelabels.FileSystemNodeAttributeStore.

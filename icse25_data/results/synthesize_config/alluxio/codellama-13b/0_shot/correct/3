@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.local.writer.chunk.size.bytes', 'alluxio.master.tieredstore.global.levels', 'alluxio.job.master.finished.job.retention.time', 'alluxio.security.authorization.permission.umask', 'alluxio.underfs.web.connnection.timeout', 'alluxio.master.tieredstore.global.level2.alias', 'alluxio.user.network.netty.channel'], 'reason': ['alluxio.user.local.writer.chunk.size.bytes: Invalid value. The value must be a power of 2 between 64KB and 128MB.', 'alluxio.master.tieredstore.global.levels: Invalid value. The value must be between 1 and 10.', 'alluxio.job.master.finished.job.retention.time: Invalid value. The value must be between 10sec and 1day.', 'alluxio.security.authorization.permission.umask: Invalid value. The value must be between 000 and 077.', 'alluxio.underfs.web.connnection.timeout: Invalid value. The value must be between 1sec and 1day.', 'alluxio.master.tieredstore.global.level2.alias: Invalid value. The value must be a valid tier alias.', 'alluxio.user.network.netty.channel: Invalid value. The value must be either NIO or EPOLL.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: alluxio.user.local.writer.chunk.size.bytes	alluxio.master.tieredstore.global.levels	alluxio.job.master.finished.job.retention.time	alluxio.security.authorization.permission.umask	alluxio.underfs.web.connnection.timeout	alluxio.master.tieredstore.global.level2.alias	alluxio.user.network.netty.channel
+[Ciri] Reason for alluxio.user.local.writer.chunk.size.bytes: alluxio.user.local.writer.chunk.size.bytes: Invalid value. The value must be a power of 2 between 64KB and 128MB.
+[Ciri] Reason for alluxio.master.tieredstore.global.levels: alluxio.master.tieredstore.global.levels: Invalid value. The value must be between 1 and 10.
+[Ciri] Reason for alluxio.job.master.finished.job.retention.time: alluxio.job.master.finished.job.retention.time: Invalid value. The value must be between 10sec and 1day.
+[Ciri] Reason for alluxio.security.authorization.permission.umask: alluxio.security.authorization.permission.umask: Invalid value. The value must be between 000 and 077.
+[Ciri] Reason for alluxio.underfs.web.connnection.timeout: alluxio.underfs.web.connnection.timeout: Invalid value. The value must be between 1sec and 1day.
+[Ciri] Reason for alluxio.master.tieredstore.global.level2.alias: alluxio.master.tieredstore.global.level2.alias: Invalid value. The value must be a valid tier alias.
+[Ciri] Reason for alluxio.user.network.netty.channel: alluxio.user.network.netty.channel: Invalid value. The value must be either NIO or EPOLL.

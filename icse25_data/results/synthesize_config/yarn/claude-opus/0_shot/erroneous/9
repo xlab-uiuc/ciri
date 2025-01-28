@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.minicluster.fixed.ports'], 'reason': ["The value for yarn.nodemanager.hostname should be a valid hostname or IP address, not '0.0.0'.", 'The property yarn.minicluster.fixed.ports is not a valid configuration parameter in Hadoop YARN 3.3.0 and should be removed.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.hostname	yarn.minicluster.fixed.ports
+[Ciri] Reason for yarn.nodemanager.hostname: The value for yarn.nodemanager.hostname should be a valid hostname or IP address, not '0.0.0'.
+[Ciri] Reason for yarn.minicluster.fixed.ports: The property yarn.minicluster.fixed.ports is not a valid configuration parameter in Hadoop YARN 3.3.0 and should be removed.

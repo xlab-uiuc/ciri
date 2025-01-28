@@ -1,0 +1,15 @@
+Wrong shot number:
+[11, 4, 3]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.timeout.duration', 'alluxio.underfs.gcs.default.mode'], 'reason': ["The property 'alluxio.user.client.cache.timeout.duration' should have a non-negative integer value representing the timeout duration in milliseconds. The value '-1' is invalid.", "The property 'alluxio.underfs.gcs.default.mode' should be a valid POSIX file mode represented as an octal value. The value '1400' is invalid."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.client.cache.timeout.duration	alluxio.underfs.gcs.default.mode
+[Ciri] Reason for alluxio.user.client.cache.timeout.duration: The property 'alluxio.user.client.cache.timeout.duration' should have a non-negative integer value representing the timeout duration in milliseconds. The value '-1' is invalid.
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: The property 'alluxio.underfs.gcs.default.mode' should be a valid POSIX file mode represented as an octal value. The value '1400' is invalid.

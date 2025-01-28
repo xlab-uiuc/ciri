@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.interface', 'fs.s3a.s3guard.ddb.background.sleep'], 'reason': ["The property 'hadoop.security.dns.interface' has a value 'eth2' which may not be a valid network interface name.", "The property 'fs.s3a.s3guard.ddb.background.sleep' has a value '50ms' which should be specified in milliseconds without units."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.dns.interface	fs.s3a.s3guard.ddb.background.sleep
+[Ciri] Reason for hadoop.security.dns.interface: The property 'hadoop.security.dns.interface' has a value 'eth2' which may not be a valid network interface name.
+[Ciri] Reason for fs.s3a.s3guard.ddb.background.sleep: The property 'fs.s3a.s3guard.ddb.background.sleep' has a value '50ms' which should be specified in milliseconds without units.

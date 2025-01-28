@@ -1,0 +1,14 @@
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.log-slow-lookups.enabled', 'io.erasurecode.codec.xor.rawcoders', 'fs.azure.local.sas.key.mode', 'hadoop.caller.context.max.size'], 'reason': ['The value for hadoop.security.dns.log-slow-lookups.enabled should be a boolean.', 'The value for io.erasurecode.codec.xor.rawcoders should be a list of raw coder implementations.', 'The property fs.azure.local.sas.key.mode has an additional usage tag that is not part of the standard configuration.', 'The description for hadoop.caller.context.max.size is not properly formatted.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.dns.log-slow-lookups.enabled	io.erasurecode.codec.xor.rawcoders	fs.azure.local.sas.key.mode	hadoop.caller.context.max.size
+[Ciri] Reason for hadoop.security.dns.log-slow-lookups.enabled: The value for hadoop.security.dns.log-slow-lookups.enabled should be a boolean.
+[Ciri] Reason for io.erasurecode.codec.xor.rawcoders: The value for io.erasurecode.codec.xor.rawcoders should be a list of raw coder implementations.
+[Ciri] Reason for fs.azure.local.sas.key.mode: The property fs.azure.local.sas.key.mode has an additional usage tag that is not part of the standard configuration.
+[Ciri] Reason for hadoop.caller.context.max.size: The description for hadoop.caller.context.max.size is not properly formatted.

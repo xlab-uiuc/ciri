@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['commit_siblings', 'krb_server_keyfile', 'autovacuum_vacuum_insert_threshold', 'checkpoint_flush_after'], 'reason': ['commit_siblings is not a valid PostgreSQL configuration parameter.', "krb_server_keyfile is not a valid PostgreSQL configuration parameter. The correct parameter for specifying the Kerberos keytab file is 'krb_server_keyfile'.", "autovacuum_vacuum_insert_threshold is not a valid PostgreSQL configuration parameter. The correct parameter for specifying the minimum number of inserted tuples before triggering an AUTOVACUUM in any one table is 'autovacuum_vacuum_insert_threshold'.", "checkpoint_flush_after is not a valid PostgreSQL configuration parameter. The correct parameter for specifying the number of pages after which previously performed writes will be flushed to disk is 'checkpoint_flush_after'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: commit_siblings	krb_server_keyfile	autovacuum_vacuum_insert_threshold	checkpoint_flush_after
+[Ciri] Reason for commit_siblings: commit_siblings is not a valid PostgreSQL configuration parameter.
+[Ciri] Reason for krb_server_keyfile: krb_server_keyfile is not a valid PostgreSQL configuration parameter. The correct parameter for specifying the Kerberos keytab file is 'krb_server_keyfile'.
+[Ciri] Reason for autovacuum_vacuum_insert_threshold: autovacuum_vacuum_insert_threshold is not a valid PostgreSQL configuration parameter. The correct parameter for specifying the minimum number of inserted tuples before triggering an AUTOVACUUM in any one table is 'autovacuum_vacuum_insert_threshold'.
+[Ciri] Reason for checkpoint_flush_after: checkpoint_flush_after is not a valid PostgreSQL configuration parameter. The correct parameter for specifying the number of pages after which previously performed writes will be flushed to disk is 'checkpoint_flush_after'.

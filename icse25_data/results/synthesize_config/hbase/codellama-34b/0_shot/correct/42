@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count', 'hbase.client.scanner.timeout.period', 'hbase.hregion.majorcompaction', 'hbase.thrift.maxWorkerThreads', 'hbase.region.replica.replication.enabled', 'hbase.snapshot.region.timeout'], 'reason': ['hbase.regionserver.handler.count is too high.', 'hbase.client.scanner.timeout.period is too low.', 'hbase.hregion.majorcompaction is too low.', 'hbase.thrift.maxWorkerThreads is too high.', 'hbase.region.replica.replication.enabled is not a valid property.', 'hbase.snapshot.region.timeout is too high.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: hbase.regionserver.handler.count	hbase.client.scanner.timeout.period	hbase.hregion.majorcompaction	hbase.thrift.maxWorkerThreads	hbase.region.replica.replication.enabled	hbase.snapshot.region.timeout
+[Ciri] Reason for hbase.regionserver.handler.count: hbase.regionserver.handler.count is too high.
+[Ciri] Reason for hbase.client.scanner.timeout.period: hbase.client.scanner.timeout.period is too low.
+[Ciri] Reason for hbase.hregion.majorcompaction: hbase.hregion.majorcompaction is too low.
+[Ciri] Reason for hbase.thrift.maxWorkerThreads: hbase.thrift.maxWorkerThreads is too high.
+[Ciri] Reason for hbase.region.replica.replication.enabled: hbase.region.replica.replication.enabled is not a valid property.
+[Ciri] Reason for hbase.snapshot.region.timeout: hbase.snapshot.region.timeout is too high.

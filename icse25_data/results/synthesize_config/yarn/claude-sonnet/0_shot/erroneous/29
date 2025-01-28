@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.ha.enabled', 'yarn.resourcemanager.ha.rm-ids'], 'reason': ["The properties 'yarn.resourcemanager.ha.enabled' and 'yarn.resourcemanager.ha.rm-ids' are related to ResourceManager High Availability (HA) configuration, which is not recommended for Yarn 3.3.0. Yarn 3.3.0 uses a single ResourceManager instance by default.", "The properties 'yarn.resourcemanager.ha.enabled' and 'yarn.resourcemanager.ha.rm-ids' are not required for a non-HA setup and should be removed or commented out."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.ha.enabled	yarn.resourcemanager.ha.rm-ids
+[Ciri] Reason for yarn.resourcemanager.ha.enabled: The properties 'yarn.resourcemanager.ha.enabled' and 'yarn.resourcemanager.ha.rm-ids' are related to ResourceManager High Availability (HA) configuration, which is not recommended for Yarn 3.3.0. Yarn 3.3.0 uses a single ResourceManager instance by default.
+[Ciri] Reason for yarn.resourcemanager.ha.rm-ids: The properties 'yarn.resourcemanager.ha.enabled' and 'yarn.resourcemanager.ha.rm-ids' are not required for a non-HA setup and should be removed or commented out.

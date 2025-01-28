@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout', 'discovery-fallback'], 'reason': ["The 'max-wals' parameter is incorrect or not applicable for etcd version 3.5.0. The correct parameter for controlling the maximum number of wal files is 'max-wal-files'.", "The 'proxy-write-timeout' parameter does not exist in etcd version 3.5.0. This parameter might be confused with another or is not applicable.", "The 'discovery-fallback' parameter is not applicable for etcd version 3.5.0. Discovery or discovery-fallback mechanisms have been deprecated and are not recommended for use."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max-wals	proxy-write-timeout	discovery-fallback
+[Ciri] Reason for max-wals: The 'max-wals' parameter is incorrect or not applicable for etcd version 3.5.0. The correct parameter for controlling the maximum number of wal files is 'max-wal-files'.
+[Ciri] Reason for proxy-write-timeout: The 'proxy-write-timeout' parameter does not exist in etcd version 3.5.0. This parameter might be confused with another or is not applicable.
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' parameter is not applicable for etcd version 3.5.0. Discovery or discovery-fallback mechanisms have been deprecated and are not recommended for use.

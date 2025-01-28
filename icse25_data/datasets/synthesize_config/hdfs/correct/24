@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.fs-limits.max-component-length</name>
+  <value>510</value>
+  <description>Defines the maximum number of bytes in UTF-8 encoding in each
+      component of a path.  A value of 0 will disable the check. Support
+      multiple size unit suffix(case insensitive), as described in dfs.blocksize.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.block.write.replace-datanode-on-failure.enable</name>
+  <value>true</value>
+  <description>
+    If there is a datanode/network failure in the write pipeline,
+    DFSClient will try to remove the failed datanode from the pipeline
+    and then continue writing with the remaining datanodes. As a result,
+    the number of datanodes in the pipeline is decreased.  The feature is
+    to add new datanodes to the pipeline.
+
+    This is a site-wide property to enable/disable the feature.
+
+    When the cluster size is extremely small, e.g. 3 nodes or less, cluster
+    administrators may want to set the policy to NEVER in the default
+    configuration file or disable this feature.  Otherwise, users may
+    experience an unusually high rate of pipeline failures since it is
+    impossible to find new datanodes for replacement.
+
+    See also dfs.client.block.write.replace-datanode-on-failure.policy
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.service.handler.count</name>
+  <value>10</value>
+  <description>The number of Namenode RPC server threads that listen to
+  requests from DataNodes and from all other non-client nodes.
+  dfs.namenode.service.handler.count will be valid only if
+  dfs.namenode.servicerpc-address is configured.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.socket.send.buffer.size</name>
+  <value>0</value>
+  <description>
+    Socket send buffer size for a write pipeline in DFSClient side.
+    This may affect TCP connection throughput.
+    If it is set to zero or negative value,
+    no buffer size will be set explicitly,
+    thus enable tcp auto-tuning on some system.
+    The default value is 0.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edekcacheloader.initial.delay.ms</name>
+  <value>6000</value>
+  <description>When KeyProvider is configured, the time delayed until the first
+    attempt to warm up edek cache on NN start up / become active.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.ec.reconstruction.threads</name>
+  <value>16</value>
+  <description>
+    Number of threads used by the Datanode for background
+    reconstruction work.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.cached-dfsused.check.interval.ms</name>
+  <value>600000</value>
+  <description>
+    The interval check time of loading DU_CACHE_FILE in each volume.
+    When the cluster doing the rolling upgrade operations, it will
+    usually lead dfsUsed cache file of each volume expired and redo the
+    du operations in datanode and that makes datanode start slowly. Adjust
+    this property can make cache file be available for the time as you want.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.send.qop.enabled</name>
+  <value>false</value>
+    <description>
+      A boolean specifies whether NameNode should encrypt the established QOP
+      and include it in block token. The encrypted QOP will be used by DataNode
+      as target QOP, overwriting DataNode configuration. This ensures DataNode
+      will use exactly the same QOP NameNode and client has already agreed on.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.instrumentation.requires.admin</name>
+  <value>true</value>
+  <description>
+    Indicates if administrator ACLs are required to access
+    instrumentation servlets (JMX, METRICS, CONF, STACKS).
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.uid.cache.secs</name>
+  <value>7200</value>
+    <description>
+        This is the config controlling the validity of the entries in the cache
+        containing the userId to userName and groupId to groupName used by
+        NativeIO getFstat().
+    </description>
+</property>
+
+<property>
+  <name>fs.default.name</name>
+  <value>file:///</value>
+  <description>Deprecated. Use (fs.defaultFS) property
+  instead</description>
+</property>
+
+<property>
+  <name>fs.s3a.socket.send.buffer</name>
+  <value>-1</value>
+  <description>Socket send buffer hint to amazon connector. Represented in bytes.</description>
+</property>
+
+<property>
+  <name>ipc.[port_number].scheduler.impl</name>
+  <value>org.apache.hadoop.ipc.DefaultRpcScheduler</value>
+  <description>The fully qualified name of a class to use as the
+    implementation of the scheduler. The default implementation is
+    org.apache.hadoop.ipc.DefaultRpcScheduler (no-op scheduler) when not using
+    FairCallQueue. If using FairCallQueue, defaults to
+    org.apache.hadoop.ipc.DecayRpcScheduler. Use
+    org.apache.hadoop.ipc.DecayRpcScheduler in conjunction with the Fair Call
+    Queue.
+  </description>
+</property>
+
+<property>
+  <name>file.blocksize</name>
+  <value>67108864</value>
+  <description>Block size</description>
+</property>
+
+<property>
+  <name>hadoop.user.group.static.mapping.overrides</name>
+  <value>dr.who=;</value>
+  <description>
+    Static mapping of user to groups. This will override the groups if
+    available in the system for the specified user. In other words, groups
+    look-up will not happen for these users, instead groups mapped in this
+    configuration will be used.
+    Mapping should be in this format.
+    user1=group1,group2;user2=;user3=group2;
+    Default, "dr.who=;" will consider "dr.who" as user without groups.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.zk.root</name>
+  <value>/valid/file2</value>
+    <description>
+      The root zookeeper node for the registry
+    </description>
+</property>
+
+</configuration>

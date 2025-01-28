@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_ecdh_curve', 'wal_compression', 'commit_siblings', 'geqo_generations'], 'reason': ['ssl_ecdh_curve is not a valid PostgreSQL configuration parameter in version 13.0.', 'wal_compression is not a valid PostgreSQL configuration parameter in version 13.0. The correct parameter is wal_compression_method.', 'commit_siblings is not a valid PostgreSQL configuration parameter in version 13.0.', 'geqo_generations is not a valid PostgreSQL configuration parameter in version 13.0. The correct parameter is geqo_effort.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: ssl_ecdh_curve	wal_compression	commit_siblings	geqo_generations
+[Ciri] Reason for ssl_ecdh_curve: ssl_ecdh_curve is not a valid PostgreSQL configuration parameter in version 13.0.
+[Ciri] Reason for wal_compression: wal_compression is not a valid PostgreSQL configuration parameter in version 13.0. The correct parameter is wal_compression_method.
+[Ciri] Reason for commit_siblings: commit_siblings is not a valid PostgreSQL configuration parameter in version 13.0.
+[Ciri] Reason for geqo_generations: geqo_generations is not a valid PostgreSQL configuration parameter in version 13.0. The correct parameter is geqo_effort.

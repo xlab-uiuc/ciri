@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['discovery-fallback', 'logger', 'proxy', 'proxy-failure-wait', 'enable-pprof'], 'reason': ["The 'discovery-fallback' parameter is not a valid etcd configuration option.", "The 'logger' option in etcd 3.5.0 should be 'zap' or 'zap-logger-config', but it needs to be specified in the configuration file with the correct key 'log-level' or 'logger'.", "The 'proxy' parameter is not valid for etcd server configuration. If intending to configure etcd as a proxy, the correct approach is to use etcd in proxy mode, which is a separate mode of operation and not a configuration parameter.", "The 'proxy-failure-wait' parameter does not exist in etcd configuration. If it's intended to control behavior related to a proxy, it should be noted that etcd does not have this configuration.", "The 'enable-pprof' parameter is not a recognized configuration option for etcd. Profiling in etcd is controlled through different means, not via the etcd server configuration file."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: discovery-fallback	logger	proxy	proxy-failure-wait	enable-pprof
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' parameter is not a valid etcd configuration option.
+[Ciri] Reason for logger: The 'logger' option in etcd 3.5.0 should be 'zap' or 'zap-logger-config', but it needs to be specified in the configuration file with the correct key 'log-level' or 'logger'.
+[Ciri] Reason for proxy: The 'proxy' parameter is not valid for etcd server configuration. If intending to configure etcd as a proxy, the correct approach is to use etcd in proxy mode, which is a separate mode of operation and not a configuration parameter.
+[Ciri] Reason for proxy-failure-wait: The 'proxy-failure-wait' parameter does not exist in etcd configuration. If it's intended to control behavior related to a proxy, it should be noted that etcd does not have this configuration.
+[Ciri] Reason for enable-pprof: The 'enable-pprof' parameter is not a recognized configuration option for etcd. Profiling in etcd is controlled through different means, not via the etcd server configuration file.

@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'snapshot-count'], 'reason': ['max-snapshots and snapshot-count are not supported in etcd 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-wals'], 'reason': ['max-wals is not a valid configuration parameter for etcd version 3.5.0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['snapshot-count', 'max-wals'], 'reason': ['snapshot-count is not a valid property for etcd version 3.5.0', 'max-wals is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['snapshot-count', 'max-wals'], 'reason': ['snapshot-count is not a valid property for etcd version 3.5.0', 'max-wals is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'snapshot-count', 'initial-cluster-token', 'listen-client-urls', 'quota-backend-bytes', 'auto-compaction-mode', 'max-wals', 'strict-reconfig-check'], 'reason': ['max-snapshots is not a valid parameter', 'snapshot-count is not a valid parameter', 'initial-cluster-token is not a valid parameter', 'listen-client-urls is not a valid parameter', 'quota-backend-bytes is not a valid parameter', 'auto-compaction-mode is not a valid parameter', 'max-wals is not a valid parameter', 'strict-reconfig-check is not a valid parameter']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: snapshot-count	max-wals
+[Ciri] Reason for snapshot-count: snapshot-count is not a valid property for etcd version 3.5.0
+[Ciri] Reason for max-wals: max-wals is not a valid property for etcd version 3.5.0

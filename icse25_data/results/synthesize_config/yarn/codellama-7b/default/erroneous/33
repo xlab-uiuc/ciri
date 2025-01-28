@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 6, 7]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory-mb'], 'reason': ["The property 'yarn.nodemanager.resource.memory-mb' has the value '2048' which is out of the valid range of an integer."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.node-ip-cache.expiry-interval-secs'], 'reason': ["The property 'yarn.resourcemanager.node-ip-cache.expiry-interval-secs' has the value '-1' which is not within the accepted value {0, positive integer}."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory-mb'], 'reason': ["The property 'yarn.nodemanager.resource.memory-mb' has the value '-1' which is out of the valid range of a positive integer."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.resource.memory-mb
+[Ciri] Reason for yarn.nodemanager.resource.memory-mb: The property 'yarn.nodemanager.resource.memory-mb' has the value '-1' which is out of the valid range of a positive integer.

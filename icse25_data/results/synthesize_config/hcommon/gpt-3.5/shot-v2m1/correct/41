@@ -1,0 +1,15 @@
+Wrong shot number:
+[3]
+
+Correct shot number:
+[10, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.connection.ssl.enabled', 'ipc.server.max.connections'], 'reason': ["The property 'fs.s3a.connection.ssl.enabled' has the value 'false' which should typically be set to 'true' for enabling SSL connections to AWS services.", "The property 'ipc.server.max.connections' has a negative value '-1' which may lead to unexpected behavior. It's recommended to set a positive value or '0' for no limit."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.connection.ssl.enabled	ipc.server.max.connections
+[Ciri] Reason for fs.s3a.connection.ssl.enabled: The property 'fs.s3a.connection.ssl.enabled' has the value 'false' which should typically be set to 'true' for enabling SSL connections to AWS services.
+[Ciri] Reason for ipc.server.max.connections: The property 'ipc.server.max.connections' has a negative value '-1' which may lead to unexpected behavior. It's recommended to set a positive value or '0' for no limit.

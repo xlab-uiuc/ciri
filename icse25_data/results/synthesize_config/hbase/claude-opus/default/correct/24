@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 10, 5]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.offpeak.end.hour', 'hbase.regionserver.regionSplitLimit'], 'reason': ['The value of hbase.offpeak.end.hour must be between 0 and 23 inclusive, or -1 to disable. The provided value -2 is invalid.', 'The property hbase.regionserver.regionSplitLimit is deprecated since HBase 2.0.0 and no longer has any effect. Use hbase.hregion.max.filesize instead to limit region size.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.offpeak.end.hour	hbase.regionserver.regionSplitLimit
+[Ciri] Reason for hbase.offpeak.end.hour: The value of hbase.offpeak.end.hour must be between 0 and 23 inclusive, or -1 to disable. The provided value -2 is invalid.
+[Ciri] Reason for hbase.regionserver.regionSplitLimit: The property hbase.regionserver.regionSplitLimit is deprecated since HBase 2.0.0 and no longer has any effect. Use hbase.hregion.max.filesize instead to limit region size.

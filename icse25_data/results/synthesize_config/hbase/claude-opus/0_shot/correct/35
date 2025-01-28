@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.snapshot.working.dir', 'hbase.mob.delfile.max.count'], 'reason': ['The hbase.snapshot.working.dir property was introduced in HBase 2.3.0 (HBASE-21098). It is not available in HBase 2.2.7.', 'The default value for hbase.mob.delfile.max.count is 3, but it is set to 1 in the provided configuration. While this is not an error, it deviates from the default value mentioned in the description.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.snapshot.working.dir	hbase.mob.delfile.max.count
+[Ciri] Reason for hbase.snapshot.working.dir: The hbase.snapshot.working.dir property was introduced in HBase 2.3.0 (HBASE-21098). It is not available in HBase 2.2.7.
+[Ciri] Reason for hbase.mob.delfile.max.count: The default value for hbase.mob.delfile.max.count is 3, but it is set to 1 in the provided configuration. While this is not an error, it deviates from the default value mentioned in the description.

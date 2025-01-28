@@ -1,0 +1,16 @@
+Wrong shot number:
+[7, 6, 9]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host', 'alluxio.worker.ramdisk.size', 'alluxio.user.file.write.tier.default'], 'reason': ["The property 'alluxio.job.master.web.bind.host' has the value '999.-1.0.0' which is not a valid IP address.", "The property 'alluxio.worker.ramdisk.size' has the value '0.1' which is not a valid size. It should be a non-negative number followed by a size unit suffix.", "The property 'alluxio.user.file.write.tier.default' has the value '-1' which is not within the accepted range of tier ordinal numbers."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.web.bind.host	alluxio.worker.ramdisk.size	alluxio.user.file.write.tier.default
+[Ciri] Reason for alluxio.job.master.web.bind.host: The property 'alluxio.job.master.web.bind.host' has the value '999.-1.0.0' which is not a valid IP address.
+[Ciri] Reason for alluxio.worker.ramdisk.size: The property 'alluxio.worker.ramdisk.size' has the value '0.1' which is not a valid size. It should be a non-negative number followed by a size unit suffix.
+[Ciri] Reason for alluxio.user.file.write.tier.default: The property 'alluxio.user.file.write.tier.default' has the value '-1' which is not within the accepted range of tier ordinal numbers.

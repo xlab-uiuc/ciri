@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['jemalloc-bg-thread', 'appendfilename', 'tls-protocols'], 'reason': ["The 'jemalloc-bg-thread' option is not a valid Redis configuration parameter in version 7.0.0.", "The correct parameter for specifying the append-only file name is 'appendonly' (without 'filename').", "The 'tls-protocols' parameter is not a valid Redis configuration parameter in version 7.0.0. Redis does not support TLS configuration directly; it needs to be configured through the proxy or load balancer in front of Redis."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: jemalloc-bg-thread	appendfilename	tls-protocols
+[Ciri] Reason for jemalloc-bg-thread: The 'jemalloc-bg-thread' option is not a valid Redis configuration parameter in version 7.0.0.
+[Ciri] Reason for appendfilename: The correct parameter for specifying the append-only file name is 'appendonly' (without 'filename').
+[Ciri] Reason for tls-protocols: The 'tls-protocols' parameter is not a valid Redis configuration parameter in version 7.0.0. Redis does not support TLS configuration directly; it needs to be configured through the proxy or load balancer in front of Redis.

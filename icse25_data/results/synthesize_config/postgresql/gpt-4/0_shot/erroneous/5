@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'vacuum_multixact_failsafe_age', 'recovery_prefetch'], 'reason': ["shared_buffers value should be in kB, MB, or GB. '128mm' is not a valid unit.", "vacuum_multixact_failsafe_age maximum value is 2000000000. '3200000000' exceeds this maximum.", 'recovery_prefetch is not a recognized configuration parameter in PostgreSQL version 13.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: shared_buffers	vacuum_multixact_failsafe_age	recovery_prefetch
+[Ciri] Reason for shared_buffers: shared_buffers value should be in kB, MB, or GB. '128mm' is not a valid unit.
+[Ciri] Reason for vacuum_multixact_failsafe_age: vacuum_multixact_failsafe_age maximum value is 2000000000. '3200000000' exceeds this maximum.
+[Ciri] Reason for recovery_prefetch: recovery_prefetch is not a recognized configuration parameter in PostgreSQL version 13.0.

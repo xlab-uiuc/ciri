@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].cost-provider.impl', 'ipc.[port_number].weighted-cost.lockshared'], 'reason': ["The properties 'ipc.[port_number].cost-provider.impl' and 'ipc.[port_number].weighted-cost.lockshared' are not valid properties in Apache Hadoop Common 3.3.0. These properties are related to the DecayRpcScheduler and WeightedTimeCostProvider, which are not part of Hadoop Common.", "The properties 'ftp.stream-buffer-size' and 'ftp.bytes-per-checksum' are also not valid properties in Apache Hadoop Common 3.3.0. These properties are related to the FTP client, which is not part of Hadoop Common."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].cost-provider.impl	ipc.[port_number].weighted-cost.lockshared
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: The properties 'ipc.[port_number].cost-provider.impl' and 'ipc.[port_number].weighted-cost.lockshared' are not valid properties in Apache Hadoop Common 3.3.0. These properties are related to the DecayRpcScheduler and WeightedTimeCostProvider, which are not part of Hadoop Common.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: The properties 'ftp.stream-buffer-size' and 'ftp.bytes-per-checksum' are also not valid properties in Apache Hadoop Common 3.3.0. These properties are related to the FTP client, which is not part of Hadoop Common.

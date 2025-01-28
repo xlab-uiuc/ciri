@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 7, 13]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.socket.recv.buffer'], 'reason': ["The property 'fs.s3a.socket.recv.buffer' has the value '16384' which is out of the valid range of a buffer size."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.socket.recv.buffer'], 'reason': ["The property 'fs.s3a.socket.recv.buffer' has the value '16384' which is not within the accepted value range of 1-1000000000."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.max.retries'], 'reason': ["The property 'fs.s3a.s3guard.ddb.max.retries' has the value '1' which is not within the accepted value range of [2, 10]."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.s3a.socket.recv.buffer
+[Ciri] Reason for fs.s3a.socket.recv.buffer: The property 'fs.s3a.socket.recv.buffer' has the value '16384' which is not within the accepted value range of 1-1000000000.

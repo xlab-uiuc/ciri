@@ -1,0 +1,15 @@
+Wrong shot number:
+[10, 8, 4]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.proxy.s3.writetype'], 'reason': ["The property 'alluxio.user.file.replication.max' has the value '-2' which is out of the valid range of a maximum replication value.", "The property 'alluxio.proxy.s3.writetype' has the value 'CACHE_THROUGH' which is not within the accepted values {MUST_CACHE, ASYNC_THROUGH, CACHE_THROUGH}."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.file.replication.max	alluxio.proxy.s3.writetype
+[Ciri] Reason for alluxio.user.file.replication.max: The property 'alluxio.user.file.replication.max' has the value '-2' which is out of the valid range of a maximum replication value.
+[Ciri] Reason for alluxio.proxy.s3.writetype: The property 'alluxio.proxy.s3.writetype' has the value 'CACHE_THROUGH' which is not within the accepted values {MUST_CACHE, ASYNC_THROUGH, CACHE_THROUGH}.

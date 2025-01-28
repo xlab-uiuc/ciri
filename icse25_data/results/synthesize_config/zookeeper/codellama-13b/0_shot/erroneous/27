@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'secureClientPort', 'initLimit', 'electionAlg', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'reconfigEnabled', 'quorum.auth.serverRequireSasl'], 'reason': ['secureClientPortAddress is not a valid address', 'secureClientPort is not a valid port number', 'initLimit is not a valid integer', 'electionAlg is not a valid integer', 'localSessionsEnabled is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'reconfigEnabled is not a valid boolean', 'quorum.auth.serverRequireSasl is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress'], 'reason': ['secureClientPortAddress is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['initLimit', 'electionAlg', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'reconfigEnabled', 'quorum.auth.serverRequireSasl'], 'reason': ['initLimit must be a positive integer.', 'electionAlg must be a positive integer.', 'localSessionsEnabled must be a boolean.', 'sslQuorumReloadCertFiles must be a boolean.', 'reconfigEnabled must be a boolean.', 'quorum.auth.serverRequireSasl must be a boolean.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'secureClientPort', 'initLimit', 'electionAlg', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'reconfigEnabled', 'quorum.auth.serverRequireSasl'], 'reason': ['secureClientPortAddress is not a valid IP address', 'secureClientPort is not a valid port number', 'initLimit is not a valid integer', 'electionAlg is not a valid integer', 'localSessionsEnabled is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'reconfigEnabled is not a valid boolean', 'quorum.auth.serverRequireSasl is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress'], 'reason': ['secureClientPortAddress is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'secureClientPort', 'initLimit', 'electionAlg', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'reconfigEnabled', 'quorum.auth.serverRequireSasl'], 'reason': ['secureClientPortAddress is not a valid address', 'secureClientPort is not a valid port number', 'initLimit is not a valid integer', 'electionAlg is not a valid integer', 'localSessionsEnabled is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'reconfigEnabled is not a valid boolean', 'quorum.auth.serverRequireSasl is not a valid boolean']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: secureClientPortAddress	secureClientPort	initLimit	electionAlg	localSessionsEnabled	sslQuorumReloadCertFiles	reconfigEnabled	quorum.auth.serverRequireSasl
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress is not a valid IP address
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid port number
+[Ciri] Reason for initLimit: initLimit is not a valid integer
+[Ciri] Reason for electionAlg: electionAlg is not a valid integer
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled is not a valid boolean
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles is not a valid boolean
+[Ciri] Reason for reconfigEnabled: reconfigEnabled is not a valid boolean
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl is not a valid boolean

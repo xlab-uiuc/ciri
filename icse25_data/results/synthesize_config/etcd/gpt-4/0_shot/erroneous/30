@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['strict-reconfig-check', 'log-package-levels', 'proxy', 'snapshot-count', 'auto-compaction-mode', 'election-timeout', 'max-wals'], 'reason': ["The correct parameter is 'strict-reconfig-check', but it should be a boolean value without quotes.", "'log-package-levels' is not a valid etcd configuration parameter.", "'proxy' is deprecated in etcd 3.5.0 and should not be used.", "'snapshot-count' is a valid parameter, but it should be within the context of a specific configuration block or correctly named according to its usage context.", "'auto-compaction-mode' is a valid parameter, but it should be within the context of a specific configuration block or correctly named according to its usage context.", "'election-timeout' is a valid parameter, but it should be specified in milliseconds as an integer without quotes.", "'max-wals' is not a recognized configuration parameter for etcd 3.5.0."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: strict-reconfig-check	log-package-levels	proxy	snapshot-count	auto-compaction-mode	election-timeout	max-wals
+[Ciri] Reason for strict-reconfig-check: The correct parameter is 'strict-reconfig-check', but it should be a boolean value without quotes.
+[Ciri] Reason for log-package-levels: 'log-package-levels' is not a valid etcd configuration parameter.
+[Ciri] Reason for proxy: 'proxy' is deprecated in etcd 3.5.0 and should not be used.
+[Ciri] Reason for snapshot-count: 'snapshot-count' is a valid parameter, but it should be within the context of a specific configuration block or correctly named according to its usage context.
+[Ciri] Reason for auto-compaction-mode: 'auto-compaction-mode' is a valid parameter, but it should be within the context of a specific configuration block or correctly named according to its usage context.
+[Ciri] Reason for election-timeout: 'election-timeout' is a valid parameter, but it should be specified in milliseconds as an integer without quotes.
+[Ciri] Reason for max-wals: 'max-wals' is not a recognized configuration parameter for etcd 3.5.0.

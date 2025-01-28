@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.replica.cache.expiry.time', 'dfs.namenode.stale.datanode.minimum.interval'], 'reason': ["The property 'dfs.datanode.replica.cache.expiry.time' is not a valid configuration parameter in HDFS 3.3.0.", "The value for 'dfs.namenode.stale.datanode.minimum.interval' should be specified in seconds, not as an integer. It should be something like '30s' for 30 seconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.replica.cache.expiry.time	dfs.namenode.stale.datanode.minimum.interval
+[Ciri] Reason for dfs.datanode.replica.cache.expiry.time: The property 'dfs.datanode.replica.cache.expiry.time' is not a valid configuration parameter in HDFS 3.3.0.
+[Ciri] Reason for dfs.namenode.stale.datanode.minimum.interval: The value for 'dfs.namenode.stale.datanode.minimum.interval' should be specified in seconds, not as an integer. It should be something like '30s' for 30 seconds.

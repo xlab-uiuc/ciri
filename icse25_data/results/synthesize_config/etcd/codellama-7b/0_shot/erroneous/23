@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log-level'], 'reason': ['log-level: NOEXIST_LEVEL']}
+
+{'hasError': True, 'errParameter': ['log-level'], 'reason': ['log-level is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['log-level', 'advertise-client-urls', 'enable-pprof', 'listen-peer-urls', 'logger', 'client-cert-auth', 'force-new-cluster', 'election-timeout'], 'reason': ['log-level: NOEXIST_LEVEL', 'advertise-client-urls: http://localhost:2379', 'enable-pprof: true', 'listen-peer-urls: http://localhost:2380', 'logger: zap', 'client-cert-auth: true', 'force-new-cluster: false', 'election-timeout: 1000']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: log-level
+[Ciri] Reason for log-level: log-level is not a valid parameter for etcd version 3.5.0

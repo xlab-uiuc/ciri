@@ -1,0 +1,60 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'max-snapshots', 'election-timeout'], 'reason': ['max-wals should be an integer greater than 0', 'max-snapshots should be an integer greater than 0', 'election-timeout should be an integer greater than 0']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['initial-cluster-state is not a valid configuration parameter for etcd version 3.5.0.']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'max-snapshots'], 'reason': ['max-wals and max-snapshots are not valid properties for etcd version 3.5.0', 'max-snapshots is not valid for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ["initial-cluster-state should be set to 'new' if the cluster has no previous state."]}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'max-wals', 'max-snapshots', 'election-timeout'], 'reason': ["initial-cluster-state is not a valid value. Valid values are 'new', 'existing', or 'default'.", 'max-wals must be greater than or equal to 0.', 'max-snapshots must be greater than or equal to 0.', 'election-timeout must be greater than or equal to 0.']}
+
+{'hasError': True, 'errParameter': ['max-wals'], 'reason': ['max-wals is not a valid configuration parameter for etcd version 3.5.0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'max-snapshots'], 'reason': ['max-wals is not a valid property for etcd version 3.5.0', 'max-snapshots is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'max-wals', 'quota-backend-bytes', 'election-timeout', 'max-snapshots', 'logger', 'initial-cluster-token'], 'reason': ["initial-cluster-state should be set to 'new' or 'existing'", 'max-wals should be greater than or equal to 1', 'quota-backend-bytes should be greater than or equal to 1', 'election-timeout should be greater than or equal to 5000', 'max-snapshots should be greater than or equal to 1', "logger should be set to 'capnslog' or 'zap'", 'initial-cluster-token should be set to a string']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'quota-backend-bytes', 'election-timeout', 'max-snapshots', 'logger', 'initial-cluster-token'], 'reason': ['max-wals should be a positive integer', 'quota-backend-bytes should be a positive integer', 'election-timeout should be a positive integer', 'max-snapshots should be a positive integer', 'logger should be one of the following values: capnslog, zerolog, or go-kit', 'initial-cluster-token should be a string']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'max-snapshots'], 'reason': ['max-wals and max-snapshots are not valid configuration options for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'max-wals', 'listen-peer-urls', 'quota-backend-bytes', 'election-timeout', 'max-snapshots', 'logger', 'initial-cluster-token'], 'reason': ["initial-cluster-state should be set to 'new' or 'existing'", 'max-wals should be set to a positive integer', "listen-peer-urls should be set to 'http://localhost:2380'", 'quota-backend-bytes should be set to a positive integer', 'election-timeout should be set to a positive integer', 'max-snapshots should be set to a positive integer', "logger should be set to 'zap'", "initial-cluster-token should be set to 'etcd-cluster'"]}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'max-wals', 'election-timeout', 'max-snapshots', 'logger', 'initial-cluster-token'], 'reason': ['initial-cluster-state is not a valid value', 'max-wals is not a valid value', 'election-timeout is not a valid value', 'max-snapshots is not a valid value', 'logger is not a valid value', 'initial-cluster-token is not a valid value']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'max-snapshots'], 'reason': ['max-wals is not a valid property for etcd version 3.5.0', 'max-snapshots is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'max-snapshots', 'election-timeout'], 'reason': ['max-wals should be an integer greater than 0', 'max-snapshots should be an integer greater than 0', 'election-timeout should be an integer greater than 0']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ["initial-cluster-state should be set to 'new' if this is the first node in the cluster, or 'existing' if it is joining an existing cluster."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'election-timeout', 'max-snapshots', 'initial-cluster-token'], 'reason': ['max-wals should be a positive integer', 'election-timeout should be a positive integer', 'max-snapshots should be a positive integer', 'initial-cluster-token should be a string']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'max-snapshots'], 'reason': ['max-wals and max-snapshots are not supported in etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'quota-backend-bytes', 'election-timeout', 'max-snapshots'], 'reason': ['max-wals must be greater than 0', 'quota-backend-bytes must be greater than 0', 'election-timeout must be greater than 0', 'max-snapshots must be greater than 0']}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['max-wals'], 'reason': ['The parameter max-wals is not supported in etcd version 3.5.0.']}
+
+{'hasError': True, 'errParameter': ['max-wals'], 'reason': ['max-wals is not a valid property for etcd version 3.5.0.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: max-wals
+[Ciri] Reason for max-wals: max-wals is not a valid property for etcd version 3.5.0.

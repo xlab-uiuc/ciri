@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'hadoop.ssl.enabled'], 'reason': ["The 'fs.ftp.data.connection.mode' property may not be applicable or correctly named for Hadoop common version 3.3.0. Typically, FTP configuration details are specific and should be verified against the Hadoop version documentation.", "The 'hadoop.ssl.enabled' property is marked as deprecated. It is recommended to use 'dfs.http.policy' and 'yarn.http.policy' for SSL configuration in Hadoop 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.data.connection.mode	hadoop.ssl.enabled
+[Ciri] Reason for fs.ftp.data.connection.mode: The 'fs.ftp.data.connection.mode' property may not be applicable or correctly named for Hadoop common version 3.3.0. Typically, FTP configuration details are specific and should be verified against the Hadoop version documentation.
+[Ciri] Reason for hadoop.ssl.enabled: The 'hadoop.ssl.enabled' property is marked as deprecated. It is recommended to use 'dfs.http.policy' and 'yarn.http.policy' for SSL configuration in Hadoop 3.3.0.

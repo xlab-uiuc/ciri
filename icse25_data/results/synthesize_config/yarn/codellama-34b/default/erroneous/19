@@ -1,0 +1,26 @@
+Wrong shot number:
+[2, 5, 6]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.log-dirs'], 'reason': ["The property 'yarn.nodemanager.log-dirs' has the value '/valid/file1' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.connect.retry-interval.ms'], 'reason': ["The property 'yarn.resourcemanager.connect.retry-interval.ms' has the value '30000' which is not within the accepted value {1000,10000}."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.local-dirs', 'yarn.nodemanager.log-dirs'], 'reason': ["The property 'yarn.nodemanager.local-dirs' has the value '/valid/file1' which does not follow the correct path format.", "The property 'yarn.nodemanager.log-dirs' has the value '/valid/file1' which does not follow the correct path format."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.log-dirs'], 'reason': ["The property 'yarn.nodemanager.log-dirs' has the value '/valid/file1' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.log-dirs'], 'reason': ["The property 'yarn.nodemanager.log-dirs' has the value '/valid/file1' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.log-dirs'], 'reason': ["The property 'yarn.nodemanager.log-dirs' has the value '/valid/file1' which does not follow the correct path format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.log-dirs
+[Ciri] Reason for yarn.nodemanager.log-dirs: The property 'yarn.nodemanager.log-dirs' has the value '/valid/file1' which does not follow the correct path format.

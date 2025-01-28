@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'fs.azure.sas.expiry.period'], 'reason': ["The value for 'fs.defaultFS' is set to 'ciri', which does not appear to be a valid URI scheme. Typically, this should be something like 'hdfs://namenode:8020' for HDFS or a similar URI for other filesystems.", "The value for 'fs.azure.sas.expiry.period' is '180d', which is not a standard format recognized by Hadoop configurations. The correct format should not include a letter to denote the time unit; it should be specified in milliseconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.defaultFS	fs.azure.sas.expiry.period
+[Ciri] Reason for fs.defaultFS: The value for 'fs.defaultFS' is set to 'ciri', which does not appear to be a valid URI scheme. Typically, this should be something like 'hdfs://namenode:8020' for HDFS or a similar URI for other filesystems.
+[Ciri] Reason for fs.azure.sas.expiry.period: The value for 'fs.azure.sas.expiry.period' is '180d', which is not a standard format recognized by Hadoop configurations. The correct format should not include a letter to denote the time unit; it should be specified in milliseconds.

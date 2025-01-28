@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'proxy-write-timeout', 'proxy-refresh-interval'], 'reason': ["The 'enable-v2' parameter is not applicable to etcd version 3.5.0 as v2 API support is deprecated and not recommended for enabling.", "The 'proxy-write-timeout' parameter is not valid for etcd server configuration. It is a parameter for the etcd proxy feature, which is deprecated in etcd 3.5.", "The 'proxy-refresh-interval' parameter is also not valid for etcd server configuration. It is associated with the deprecated etcd proxy feature."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable-v2	proxy-write-timeout	proxy-refresh-interval
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is not applicable to etcd version 3.5.0 as v2 API support is deprecated and not recommended for enabling.
+[Ciri] Reason for proxy-write-timeout: The 'proxy-write-timeout' parameter is not valid for etcd server configuration. It is a parameter for the etcd proxy feature, which is deprecated in etcd 3.5.
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter is also not valid for etcd server configuration. It is associated with the deprecated etcd proxy feature.

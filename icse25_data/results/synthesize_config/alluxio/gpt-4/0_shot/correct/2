@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.jvm.monitor.sleep.interval', 'alluxio.master.backup.connect.interval.min', 'alluxio.jvm.monitor.warn.threshold'], 'reason': ["The correct property for setting the JVM monitor sleep interval should be 'alluxio.jvm.monitor.sleep.interval.ms' and expects a value in milliseconds.", "The correct property for setting the master backup connect interval should be 'alluxio.master.backup.connect.interval', and it expects a value in milliseconds.", "The correct property for setting the JVM monitor warning threshold should be 'alluxio.jvm.monitor.warn.threshold.ms' and expects a value in milliseconds."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.jvm.monitor.sleep.interval	alluxio.master.backup.connect.interval.min	alluxio.jvm.monitor.warn.threshold
+[Ciri] Reason for alluxio.jvm.monitor.sleep.interval: The correct property for setting the JVM monitor sleep interval should be 'alluxio.jvm.monitor.sleep.interval.ms' and expects a value in milliseconds.
+[Ciri] Reason for alluxio.master.backup.connect.interval.min: The correct property for setting the master backup connect interval should be 'alluxio.master.backup.connect.interval', and it expects a value in milliseconds.
+[Ciri] Reason for alluxio.jvm.monitor.warn.threshold: The correct property for setting the JVM monitor warning threshold should be 'alluxio.jvm.monitor.warn.threshold.ms' and expects a value in milliseconds.

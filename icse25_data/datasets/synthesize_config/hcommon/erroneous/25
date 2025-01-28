@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.s3a.security.credential.provider.path</name>
+  <value>/valid/file1</value>
+  <description>
+    Optional comma separated list of credential providers, a list
+    which is prepended to that set in hadoop.security.credential.provider.path
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.connection.establish.timeout</name>
+  <value>2500</value>
+  <description>Socket connection setup timeout in milliseconds.</description>
+</property>
+
+<property>
+  <name>fs.s3a.committer.name</name>
+  <value>file</value>
+  <description>
+    Committer to create for output to S3A, one of:
+    "file", "directory", "partitioned", "magic".
+  </description>
+</property>
+
+<property>
+  <name>ipc.client.kill.max</name>
+  <value>10</value>
+  <description>Defines the maximum number of clients to disconnect in one go.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.cross-origin.allowed-headers</name>
+  <value>X-Requested-With</value>
+  <description>Comma separated list of headers that are allowed for web
+    services needing cross-origin (CORS) support.</description>
+</property>
+
+<property>
+  <name>fs.permissions.umask-mode</name>
+  <value>hadoop</value>
+  <description>
+    The umask used when creating files and directories.
+    Can be in octal or in symbolic. Examples are:
+    "022" (octal for u=rwx,g=r-x,o=r-x in symbolic),
+    or "u=rwx,g=rwx,o=" (symbolic for 007 in octal).
+  </description>
+</property>
+
+<property>
+  <name>fs.client.resolve.topology.enabled</name>
+  <value>false</value>
+    <description>Whether the client machine will use the class specified by
+      property net.topology.node.switch.mapping.impl to compute the network
+      distance between itself and remote machines of the FileSystem. Additional
+      properties might need to be configured depending on the class specified
+      in net.topology.node.switch.mapping.impl. For example, if
+      org.apache.hadoop.net.ScriptBasedMapping is used, a valid script file
+      needs to be specified in net.topology.script.file.name.
+    </description>
+</property>
+
+<property>
+  <name>ipc.client.bind.wildcard.addr</name>
+  <value>true</value>
+    <description>When set to true Clients will bind socket to wildcard
+      address. (i.e 0.0.0.0)
+    </description>
+</property>
+
+</configuration>

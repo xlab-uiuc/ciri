@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-dial-timeout', 'discovery-fallback', 'proxy', 'quota-backend-bytes'], 'reason': ["The 'proxy-refresh-interval' parameter is not a valid etcd configuration option.", "The 'proxy-dial-timeout' parameter is not a valid etcd configuration option.", "The 'discovery-fallback' parameter is not a valid etcd configuration option for etcd version 3.5.0.", "The 'proxy' parameter is not a valid etcd configuration option for etcd version 3.5.0.", "The 'quota-backend-bytes' should not be set to 0. It specifies the maximum size of the backend database, setting it to 0 disables the quota."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: proxy-refresh-interval	proxy-dial-timeout	discovery-fallback	proxy	quota-backend-bytes
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter is not a valid etcd configuration option.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' parameter is not a valid etcd configuration option.
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' parameter is not a valid etcd configuration option for etcd version 3.5.0.
+[Ciri] Reason for proxy: The 'proxy' parameter is not a valid etcd configuration option for etcd version 3.5.0.
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' should not be set to 0. It specifies the maximum size of the backend database, setting it to 0 disables the quota.

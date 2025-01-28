@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.info.port', 'hbase.zookeeper.leaderport', 'hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.clientPort', 'hfile.index.block.max.size', 'hbase.auth.key.update.interval', 'hbase.data.umask.enable'], 'reason': ['The port for the HBase Master web UI. Set to -1 if you do not want a UI instance run.', "Property from ZooKeeper's config zoo.cfg. The port at which the clients will connect.", "Property from ZooKeeper's config zoo.cfg. The directory where the snapshot is stored.", 'When the size of a leaf-level, intermediate-level, or root-level index block in a multi-level block index grows to this size, the block is written out and a new block is started.', 'Maximum retries.  This is maximum number of iterations to atomic bulk loads are attempted in the face of splitting operations 0 means never give up.', 'The update interval for master key for authentication tokens in servers in milliseconds.  Only used when HBase security is enabled.', 'Enable, if true, that file permissions should be assigned to the files written by the regionserver']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: hbase.master.info.port	hbase.zookeeper.leaderport	hbase.zookeeper.property.dataDir	hbase.zookeeper.property.clientPort	hfile.index.block.max.size	hbase.auth.key.update.interval	hbase.data.umask.enable
+[Ciri] Reason for hbase.master.info.port: The port for the HBase Master web UI. Set to -1 if you do not want a UI instance run.
+[Ciri] Reason for hbase.zookeeper.leaderport: Property from ZooKeeper's config zoo.cfg. The port at which the clients will connect.
+[Ciri] Reason for hbase.zookeeper.property.dataDir: Property from ZooKeeper's config zoo.cfg. The directory where the snapshot is stored.
+[Ciri] Reason for hbase.zookeeper.property.clientPort: When the size of a leaf-level, intermediate-level, or root-level index block in a multi-level block index grows to this size, the block is written out and a new block is started.
+[Ciri] Reason for hfile.index.block.max.size: Maximum retries.  This is maximum number of iterations to atomic bulk loads are attempted in the face of splitting operations 0 means never give up.
+[Ciri] Reason for hbase.auth.key.update.interval: The update interval for master key for authentication tokens in servers in milliseconds.  Only used when HBase security is enabled.
+[Ciri] Reason for hbase.data.umask.enable: Enable, if true, that file permissions should be assigned to the files written by the regionserver

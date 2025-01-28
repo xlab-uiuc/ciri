@@ -1,0 +1,13 @@
+Correct shot number:
+[10, 12, 15, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockexclusive', 'file.stream-buffer-size', 'nfs.exports.allowed.hosts'], 'reason': ["The parameter 'ipc.[port_number].weighted-cost.lockexclusive' contains invalid characters.", "The parameter 'file.stream-buffer-size' is missing the 'fs.' prefix.", "The parameter 'nfs.exports.allowed.hosts' has an invalid value format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: ipc.[port_number].weighted-cost.lockexclusive	file.stream-buffer-size	nfs.exports.allowed.hosts
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockexclusive: The parameter 'ipc.[port_number].weighted-cost.lockexclusive' contains invalid characters.
+[Ciri] Reason for file.stream-buffer-size: The parameter 'file.stream-buffer-size' is missing the 'fs.' prefix.
+[Ciri] Reason for nfs.exports.allowed.hosts: The parameter 'nfs.exports.allowed.hosts' has an invalid value format.

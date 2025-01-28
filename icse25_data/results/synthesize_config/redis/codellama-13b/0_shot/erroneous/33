@@ -1,0 +1,34 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'repl-diskless-load', 'proto-max-bulk-len', 'oom-score-adj-values'], 'reason': ['cluster-announce-ip should be a valid IP address', 'repl-diskless-load should be enabled or disabled', 'proto-max-bulk-len should be a valid size', 'oom-score-adj-values should be a list of integers']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'repl-diskless-load', 'appendonly', 'cluster-announce-port', 'proto-max-bulk-len', 'oom-score-adj-values'], 'reason': ['cluster-announce-ip: The value should be a valid IP address.', 'repl-diskless-load: The value should be enabled or disabled.', 'appendonly: The value should be enabled or disabled.', 'cluster-announce-port: The value should be a valid port number.', 'proto-max-bulk-len: The value should be a valid length.', 'oom-score-adj-values: The value should be a valid list of integers.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'cluster-announce-port'], 'reason': ['cluster-announce-ip is not a valid IP address', 'cluster-announce-port is not a valid port number']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'repl-diskless-load', 'appendonly', 'cluster-announce-port', 'proto-max-bulk-len', 'oom-score-adj-values'], 'reason': ['cluster-announce-ip: The value should be an IP address.', 'repl-diskless-load: The value should be enabled or disabled.', 'appendonly: The value should be enabled or disabled.', 'cluster-announce-port: The value should be a port number.', 'proto-max-bulk-len: The value should be a number.', 'oom-score-adj-values: The value should be a list of integers.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'cluster-announce-port', 'tls-session-caching', 'repl-diskless-load', 'appendonly', 'proto-max-bulk-len', 'oom-score-adj-values'], 'reason': ['cluster-announce-ip should be set to 0.0.0.0 to announce the IP address of the current host.', 'cluster-announce-port should be set to 0 to announce the port of the current host.', 'tls-session-caching should be set to yes to enable session caching.', 'repl-diskless-load should be set to enabled to enable diskless replication.', 'appendonly should be set to yes to enable append-only mode.', 'proto-max-bulk-len should be set to 512mb to set the maximum size of bulk requests.', 'oom-score-adj-values should be set to 0 200 800 to set the oom score adjustment values.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'repl-diskless-load', 'tls-session-caching', 'proto-max-bulk-len', 'oom-score-adj-values'], 'reason': ['cluster-announce-ip should be a valid IP address', 'repl-diskless-load is not a valid value', 'tls-session-caching is not a valid value', 'proto-max-bulk-len should be a valid size', 'oom-score-adj-values should be a list of integers']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'cluster-announce-port', 'repl-diskless-load', 'appendonly'], 'reason': ['cluster-announce-ip: The value is not a valid IP address.', 'cluster-announce-port: The value is not a valid port number.', 'repl-diskless-load: The value is not a valid option.', 'appendonly: The value is not a valid option.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'tls-session-caching', 'repl-diskless-load', 'appendonly', 'cluster-announce-port', 'proto-max-bulk-len', 'oom-score-adj-values'], 'reason': ['cluster-announce-ip is not a valid IP address', 'tls-session-caching is not a valid option', 'repl-diskless-load is not a valid option', 'appendonly is not a valid option', 'cluster-announce-port is not a valid port', 'proto-max-bulk-len is not a valid value', 'oom-score-adj-values is not a valid value']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'tls-session-caching', 'repl-diskless-load', 'appendonly', 'cluster-announce-port', 'proto-max-bulk-len', 'oom-score-adj-values'], 'reason': ['cluster-announce-ip is not a valid IP address', 'tls-session-caching is not a valid boolean value', 'repl-diskless-load is not a valid boolean value', 'appendonly is not a valid boolean value', 'cluster-announce-port is not a valid port number', 'proto-max-bulk-len is not a valid value', 'oom-score-adj-values is not a valid value']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: cluster-announce-ip	tls-session-caching	repl-diskless-load	appendonly	cluster-announce-port	proto-max-bulk-len	oom-score-adj-values
+[Ciri] Reason for cluster-announce-ip: cluster-announce-ip is not a valid IP address
+[Ciri] Reason for tls-session-caching: tls-session-caching is not a valid boolean value
+[Ciri] Reason for repl-diskless-load: repl-diskless-load is not a valid boolean value
+[Ciri] Reason for appendonly: appendonly is not a valid option
+[Ciri] Reason for cluster-announce-port: cluster-announce-port is not a valid port
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len is not a valid value
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values is not a valid value

@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes'], 'reason': ['quota-backend-bytes must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['name', 'proxy-read-timeout'], 'reason': ['name: name is not a valid field in etcd configuration file', 'proxy-read-timeout: proxy-read-timeout is not a valid field in etcd configuration file']}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'snapshot-count', 'max-wals', 'proxy-read-timeout'], 'reason': ['quota-backend-bytes: 1 is not a valid value for quota-backend-bytes. The value must be a positive integer.', 'snapshot-count: 10000 is not a valid value for snapshot-count. The value must be a positive integer.', 'max-wals: 10 is not a valid value for max-wals. The value must be a positive integer.', 'proxy-read-timeout: 1 is not a valid value for proxy-read-timeout. The value must be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['name', 'proxy-read-timeout'], 'reason': ['name: must be a valid DNS-1123 subdomain', 'proxy-read-timeout: must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'max-wals'], 'reason': ['quota-backend-bytes must be a positive integer', 'max-wals must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['name', 'quota-backend-bytes', 'snapshot-count', 'proxy-read-timeout'], 'reason': ["name: 'default' is not a valid name for an etcd cluster. The name must be a valid DNS label.", 'quota-backend-bytes: 1 is not a valid value for quota-backend-bytes. The value must be a positive integer.', 'snapshot-count: 10000 is not a valid value for snapshot-count. The value must be a positive integer.', 'proxy-read-timeout: 1 is not a valid value for proxy-read-timeout. The value must be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'snapshot-count', 'proxy-read-timeout'], 'reason': ['quota-backend-bytes: 1 is not a valid value for quota-backend-bytes. It must be an integer greater than 0.', 'snapshot-count: 10000 is not a valid value for snapshot-count. It must be an integer greater than 0.', 'proxy-read-timeout: 1 is not a valid value for proxy-read-timeout. It must be an integer greater than 0.']}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'snapshot-count', 'proxy-read-timeout'], 'reason': ['quota-backend-bytes must be a positive integer', 'snapshot-count must be a positive integer', 'proxy-read-timeout must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'snapshot-count', 'proxy-read-timeout'], 'reason': ['quota-backend-bytes: 1 is not a valid value for quota-backend-bytes. The value must be greater than 0.', 'snapshot-count: 10000 is not a valid value for snapshot-count. The value must be greater than 0.', 'proxy-read-timeout: 1 is not a valid value for proxy-read-timeout. The value must be greater than 0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quota-backend-bytes	snapshot-count	proxy-read-timeout
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes: 1 is not a valid value for quota-backend-bytes. The value must be greater than 0.
+[Ciri] Reason for snapshot-count: snapshot-count: 10000 is not a valid value for snapshot-count. The value must be greater than 0.
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout: 1 is not a valid value for proxy-read-timeout. The value must be greater than 0.

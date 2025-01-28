@@ -1,0 +1,17 @@
+Wrong shot number:
+[3, 1, 5]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.conversion.rule', 'ipc.client.low-latency', 'ipc.client.ping', 'ipc.[port_number].cost-provider.impl'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.conversion.rule' has the value 'nonono' which is not a supported rule.", "The property 'ipc.client.low-latency' has the value 'false' which may not be the correct setting for low-latency QoS markers.", "The property 'ipc.client.ping' has the value 'false' which may not be the correct setting for sending a ping to the server.", "The property 'ipc.[port_number].cost-provider.impl' has the value 'org.apache.hadoop.ipc.DefaultCostProvider' which may not be the optimal cost provider for DecayRpcScheduler."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.conversion.rule	ipc.client.low-latency	ipc.client.ping	ipc.[port_number].cost-provider.impl
+[Ciri] Reason for hadoop.security.group.mapping.ldap.conversion.rule: The property 'hadoop.security.group.mapping.ldap.conversion.rule' has the value 'nonono' which is not a supported rule.
+[Ciri] Reason for ipc.client.low-latency: The property 'ipc.client.low-latency' has the value 'false' which may not be the correct setting for low-latency QoS markers.
+[Ciri] Reason for ipc.client.ping: The property 'ipc.client.ping' has the value 'false' which may not be the correct setting for sending a ping to the server.
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: The property 'ipc.[port_number].cost-provider.impl' has the value 'org.apache.hadoop.ipc.DefaultCostProvider' which may not be the optimal cost provider for DecayRpcScheduler.

@@ -1,0 +1,47 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind'], 'reason': ['The value of bind must be a valid IP address or hostname.']}
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'activerehashing', 'repl-diskless-load', 'pidfile'], 'reason': ['port must be a number', 'timeout must be a number', 'activerehashing must be a boolean', 'repl-diskless-load must be a boolean', 'pidfile must be a string']}
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'activerehashing'], 'reason': ['port must be a number', 'timeout must be a number', 'activerehashing must be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'activerehashing', 'repl-diskless-load'], 'reason': ['port must be a number', 'timeout must be a number', 'activerehashing must be a boolean', 'repl-diskless-load must be a boolean']}
+
+{'hasError': True, 'errParameter': ['bind', 'unixsocketperm', 'tcp-backlog', 'databases', 'save', 'rdbcompression', 'activerehashing', 'pidfile'], 'reason': ["Invalid value for 'bind'", "Invalid value for 'unixsocketperm'", "Invalid value for 'tcp-backlog'", "Invalid value for 'databases'", "Invalid value for 'save'", "Invalid value for 'rdbcompression'", "Invalid value for 'activerehashing'", "Invalid value for 'pidfile'"]}
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'activerehashing'], 'reason': ['port must be a number', 'timeout must be a number', 'activerehashing must be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'activerehashing'], 'reason': ['port must be an integer', 'timeout must be a positive integer', 'activerehashing must be a boolean']}
+
+{'hasError': True, 'errParameter': ['port', 'unixsocketperm', 'timeout', 'activerehashing', 'repl-diskless-load', 'pidfile'], 'reason': ['port must be an integer', 'unixsocketperm must be an integer', 'timeout must be an integer', 'activerehashing must be a boolean', 'repl-diskless-load must be a boolean', 'pidfile must be a string']}
+
+{'hasError': True, 'errParameter': ['daemonize', 'pidfile'], 'reason': ["The parameter 'daemonize' is not supported in redis version 7.0.0", "The parameter 'pidfile' is not supported in redis version 7.0.0"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'unixsocketperm', 'timeout', 'activerehashing', 'pidfile'], 'reason': ['port must be a number', 'unixsocketperm must be a number', 'timeout must be a number', 'activerehashing must be a boolean', 'pidfile must be a string']}
+
+{'hasError': True, 'errParameter': ['port', 'unixsocket'], 'reason': ['port and unixsocket cannot be used together', 'unixsocket is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'activerehashing', 'repl-diskless-load'], 'reason': ['Invalid parameter', 'Invalid parameter', 'Invalid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'activerehashing', 'repl-diskless-load'], 'reason': ['port must be a number', 'timeout must be a number', 'activerehashing must be a boolean', 'repl-diskless-load must be a boolean']}
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'activerehashing', 'repl-diskless-load', 'set-proc-title'], 'reason': ['port must be an integer', 'timeout must be an integer', 'activerehashing must be a boolean', 'repl-diskless-load must be a boolean', 'set-proc-title must be a boolean']}
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'activerehashing', 'repl-diskless-load'], 'reason': ['port must be an integer', 'timeout must be an integer', 'activerehashing must be a boolean', 'repl-diskless-load must be a boolean']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: port	timeout	activerehashing	repl-diskless-load
+[Ciri] Reason for port: port must be an integer
+[Ciri] Reason for timeout: timeout must be an integer
+[Ciri] Reason for activerehashing: activerehashing must be a boolean
+[Ciri] Reason for repl-diskless-load: repl-diskless-load must be a boolean

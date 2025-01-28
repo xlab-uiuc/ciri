@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'quorumListenOnAllIPs', 'dataLogDir', 'quorum.auth.server.saslLoginContext', 'electionAlg', 'maxSessionTimeout'], 'reason': ['Invalid value for autopurge.purgeInterval. It should be an integer.', 'Invalid value for quorumListenOnAllIPs. It should be a boolean.', 'Invalid value for dataLogDir. The directory path is not valid.', 'Invalid value for quorum.auth.server.saslLoginContext. It should be a valid login context.', 'Invalid value for electionAlg. It should be an integer.', 'Invalid value for maxSessionTimeout. It should be an integer.']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'maxSessionTimeout'], 'reason': ['The value for autopurge.purgeInterval should be an integer, not a decimal.', 'The value for maxSessionTimeout should be a positive integer. A value of -1 is not allowed.']}
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout'], 'reason': ['The value of maxSessionTimeout should be greater than 0. Please provide a positive value.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout'], 'reason': ['The value for maxSessionTimeout should be greater than 0. Current value is -1.']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'maxSessionTimeout'], 'reason': ['The value for autopurge.purgeInterval should be an integer, not a decimal.', 'The value for maxSessionTimeout should be a positive integer. A value of -1 is not allowed.']}
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout'], 'reason': ["The property 'maxSessionTimeout' should be a positive value. Please provide a valid session timeout value."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: maxSessionTimeout
+[Ciri] Reason for maxSessionTimeout: The property 'maxSessionTimeout' should be a positive value. Please provide a valid session timeout value.

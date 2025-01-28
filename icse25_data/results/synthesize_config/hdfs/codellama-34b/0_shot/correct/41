@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.min', 'dfs.namenode.maintenance.replication.min', 'dfs.datanode.fileio.profiling.sampling.percentage', 'dfs.namenode.reencrypt.sleep.interval', 'dfs.datanode.block-pinning.enabled', 'dfs.balancer.block-move.timeout', 'dfs.datanode.restart.replica.expiration', 'dfs.namenode.gc.time.monitor.enable'], 'reason': ['dfs.namenode.replication.min should be greater than 0', 'dfs.namenode.maintenance.replication.min should be greater than 0', 'dfs.datanode.fileio.profiling.sampling.percentage should be greater than 0', 'dfs.namenode.reencrypt.sleep.interval should be greater than 0', 'dfs.datanode.block-pinning.enabled should be false', 'dfs.balancer.block-move.timeout should be greater than 0', 'dfs.datanode.restart.replica.expiration should be greater than 0', 'dfs.namenode.gc.time.monitor.enable should be true']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.namenode.replication.min	dfs.namenode.maintenance.replication.min	dfs.datanode.fileio.profiling.sampling.percentage	dfs.namenode.reencrypt.sleep.interval	dfs.datanode.block-pinning.enabled	dfs.balancer.block-move.timeout	dfs.datanode.restart.replica.expiration	dfs.namenode.gc.time.monitor.enable
+[Ciri] Reason for dfs.namenode.replication.min: dfs.namenode.replication.min should be greater than 0
+[Ciri] Reason for dfs.namenode.maintenance.replication.min: dfs.namenode.maintenance.replication.min should be greater than 0
+[Ciri] Reason for dfs.datanode.fileio.profiling.sampling.percentage: dfs.datanode.fileio.profiling.sampling.percentage should be greater than 0
+[Ciri] Reason for dfs.namenode.reencrypt.sleep.interval: dfs.namenode.reencrypt.sleep.interval should be greater than 0
+[Ciri] Reason for dfs.datanode.block-pinning.enabled: dfs.datanode.block-pinning.enabled should be false
+[Ciri] Reason for dfs.balancer.block-move.timeout: dfs.balancer.block-move.timeout should be greater than 0
+[Ciri] Reason for dfs.datanode.restart.replica.expiration: dfs.datanode.restart.replica.expiration should be greater than 0
+[Ciri] Reason for dfs.namenode.gc.time.monitor.enable: dfs.namenode.gc.time.monitor.enable should be true

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'WSGI_APPLICATION', 'USE_THOUSAND_SEPARATOR', 'ALLOWED_HOSTS', 'MIDDLEWARE', 'MANAGERS', 'SECURE_CONTENT_TYPE_NOSNIFF', 'USE_I18N'], 'reason': ["LOGIN_REDIRECT_URL should not contain 'file//' as it can be a security risk.", 'WSGI_APPLICATION should be specified with a valid WSGI application path.', 'ALLOWED_HOSTS should have at least one valid host specified.', 'MIDDLEWARE should have at least one middleware class specified.', 'MANAGERS should be a list of email addresses for error notifications.', 'USE_I18N should be set to True for internationalization support.']}
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'WSGI_APPLICATION', 'USE_THOUSAND_SEPARATOR', 'ALLOWED_HOSTS', 'MIDDLEWARE', 'MANAGERS', 'SECURE_CONTENT_TYPE_NOSNIFF', 'USE_I18N'], 'reason': ["LOGIN_REDIRECT_URL should not have 'file//' as the value.", 'WSGI_APPLICATION should not be set to None.', 'USE_THOUSAND_SEPARATOR should be set to False if not needed.', 'ALLOWED_HOSTS should have at least one host specified.', 'MIDDLEWARE should have at least one middleware specified.', 'MANAGERS should specify actual admin email addresses.', 'SECURE_CONTENT_TYPE_NOSNIFF should be set to False if not needed.', 'USE_I18N should be set to True if internationalization is needed.']}
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'WSGI_APPLICATION', 'USE_THOUSAND_SEPARATOR', 'ALLOWED_HOSTS', 'MIDDLEWARE', 'MANAGERS', 'SECURE_CONTENT_TYPE_NOSNIFF', 'USE_I18N'], 'reason': ["LOGIN_REDIRECT_URL should not have 'file//' as the value.", 'WSGI_APPLICATION should not be set to None.', 'USE_THOUSAND_SEPARATOR should be set to False for Django 4.0.', 'ALLOWED_HOSTS should have at least one host specified.', 'MIDDLEWARE should have at least one middleware specified.', 'MANAGERS should specify actual admin email addresses.', 'SECURE_CONTENT_TYPE_NOSNIFF should be set to False for Django 4.0.', 'USE_I18N should be set to True for internationalization support.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: LOGIN_REDIRECT_URL	WSGI_APPLICATION	USE_THOUSAND_SEPARATOR	ALLOWED_HOSTS	MIDDLEWARE	MANAGERS	SECURE_CONTENT_TYPE_NOSNIFF	USE_I18N
+[Ciri] Reason for LOGIN_REDIRECT_URL: LOGIN_REDIRECT_URL should not have 'file//' as the value.
+[Ciri] Reason for WSGI_APPLICATION: WSGI_APPLICATION should not be set to None.
+[Ciri] Reason for USE_THOUSAND_SEPARATOR: USE_THOUSAND_SEPARATOR should be set to False if not needed.
+[Ciri] Reason for ALLOWED_HOSTS: ALLOWED_HOSTS should have at least one host specified.
+[Ciri] Reason for MIDDLEWARE: MIDDLEWARE should have at least one middleware specified.
+[Ciri] Reason for MANAGERS: MANAGERS should specify actual admin email addresses.
+[Ciri] Reason for SECURE_CONTENT_TYPE_NOSNIFF: SECURE_CONTENT_TYPE_NOSNIFF should be set to False if not needed.
+[Ciri] Reason for USE_I18N: USE_I18N should be set to True for internationalization support.

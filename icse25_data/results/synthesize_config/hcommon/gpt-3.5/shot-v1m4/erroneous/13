@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 13, 4, 5]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'hadoop.security.kms.client.encrypted.key.cache.low-watermark'], 'reason': ["The property 'fs.default.name' has the value 'file///' which does not follow the correct URL format.", "The property 'hadoop.security.kms.client.encrypted.key.cache.low-watermark' has the value '0.3f' which is not a valid float number."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.default.name	hadoop.security.kms.client.encrypted.key.cache.low-watermark
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' has the value 'file///' which does not follow the correct URL format.
+[Ciri] Reason for hadoop.security.kms.client.encrypted.key.cache.low-watermark: The property 'hadoop.security.kms.client.encrypted.key.cache.low-watermark' has the value '0.3f' which is not a valid float number.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.tieredstore.global.level2.alias=HDD', 'alluxio.master.mount.table.root.ufs=/valid/file1'], 'reason': ["The property 'alluxio.master.tieredstore.global.level2.alias' is deprecated in Alluxio 2.5.0 and should be replaced with 'alluxio.master.tieredstore.level2.alias'.", "The property 'alluxio.master.mount.table.root.ufs' is not a valid property in Alluxio 2.5.0. The root UFS path should be set using the 'alluxio.master.mount.table.root.ufs.uri' property."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.tieredstore.global.level2.alias=HDD	alluxio.master.mount.table.root.ufs=/valid/file1
+[Ciri] Reason for alluxio.master.tieredstore.global.level2.alias=HDD: The property 'alluxio.master.tieredstore.global.level2.alias' is deprecated in Alluxio 2.5.0 and should be replaced with 'alluxio.master.tieredstore.level2.alias'.
+[Ciri] Reason for alluxio.master.mount.table.root.ufs=/valid/file1: The property 'alluxio.master.mount.table.root.ufs' is not a valid property in Alluxio 2.5.0. The root UFS path should be set using the 'alluxio.master.mount.table.root.ufs.uri' property.

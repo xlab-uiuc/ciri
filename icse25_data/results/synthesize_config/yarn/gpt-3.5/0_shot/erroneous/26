@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.hostname', 'yarn.sharedcache.store.in-memory.staleness-period-mins', 'yarn.nodemanager.amrmproxy.interceptor-class.pipeline', 'yarn.resourcemanager.nm-container-queuing.min-queue-wait-time-ms'], 'reason': ["The value '256.256.256.256' for 'yarn.timeline-service.hostname' is not a valid IP address.", "The value '20160' for 'yarn.sharedcache.store.in-memory.staleness-period-mins' should be in seconds instead of minutes.", "The property 'yarn.nodemanager.amrmproxy.interceptor-class.pipeline' is missing the 'yarn.' prefix in the name.", "The value '20' for 'yarn.resourcemanager.nm-container-queuing.min-queue-wait-time-ms' should be in milliseconds instead of seconds."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.monitor.policies', 'yarn.sharedcache.store.in-memory.staleness-period-mins', 'yarn.nodemanager.amrmproxy.interceptor-class.pipeline'], 'reason': ["The property 'yarn.resourcemanager.scheduler.monitor.policies' is not a valid property for YARN version 3.3.0.", "The property 'yarn.sharedcache.store.in-memory.staleness-period-mins' is not a valid property for YARN version 3.3.0.", "The property 'yarn.nodemanager.amrmproxy.interceptor-class.pipeline' is not a valid property for YARN version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.hostname', 'yarn.sharedcache.store.in-memory.staleness-period-mins', 'yarn.nodemanager.amrmproxy.interceptor-class.pipeline'], 'reason': ["The value '256.256.256.256' for 'yarn.timeline-service.hostname' is not a valid IP address.", "The value '20160' for 'yarn.sharedcache.store.in-memory.staleness-period-mins' should be specified in minutes, but it seems to be too high.", "The property 'yarn.nodemanager.amrmproxy.interceptor-class.pipeline' is missing the correct format for specifying a list of class names."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.hostname', 'yarn.sharedcache.store.in-memory.staleness-period-mins'], 'reason': ["The value '256.256.256.256' for 'yarn.timeline-service.hostname' is not a valid IP address.", "The value '20160' for 'yarn.sharedcache.store.in-memory.staleness-period-mins' is too large for specifying minutes."]}
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.hostname', 'yarn.sharedcache.store.in-memory.staleness-period-mins', 'yarn.nodemanager.amrmproxy.interceptor-class.pipeline'], 'reason': ["The value '256.256.256.256' for 'yarn.timeline-service.hostname' is not a valid IP address.", "The value '20160' for 'yarn.sharedcache.store.in-memory.staleness-period-mins' should be specified in minutes, but it seems to be a very large value.", "The property 'yarn.nodemanager.amrmproxy.interceptor-class.pipeline' should not contain dots (.) in the name."]}
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.hostname', 'yarn.sharedcache.store.in-memory.staleness-period-mins', 'yarn.nodemanager.amrmproxy.interceptor-class.pipeline'], 'reason': ["The value '256.256.256.256' for 'yarn.timeline-service.hostname' is not a valid IP address.", "The value '20160' for 'yarn.sharedcache.store.in-memory.staleness-period-mins' should be in seconds, not minutes.", "The property 'yarn.nodemanager.amrmproxy.interceptor-class.pipeline' is missing the correct format for specifying interceptor classes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.timeline-service.hostname	yarn.sharedcache.store.in-memory.staleness-period-mins	yarn.nodemanager.amrmproxy.interceptor-class.pipeline
+[Ciri] Reason for yarn.timeline-service.hostname: The value '256.256.256.256' for 'yarn.timeline-service.hostname' is not a valid IP address.
+[Ciri] Reason for yarn.sharedcache.store.in-memory.staleness-period-mins: The value '20160' for 'yarn.sharedcache.store.in-memory.staleness-period-mins' should be in seconds, not minutes.
+[Ciri] Reason for yarn.nodemanager.amrmproxy.interceptor-class.pipeline: The property 'yarn.nodemanager.amrmproxy.interceptor-class.pipeline' should not contain dots (.) in the name.

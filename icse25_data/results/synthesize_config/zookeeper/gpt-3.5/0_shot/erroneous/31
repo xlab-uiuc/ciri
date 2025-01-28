@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.serverRequireSasl', 'portUnification', 'localSessionsUpgradingEnabled', 'dataLogDir'], 'reason': ['secureClientPort should be a positive integer value', 'quorum.auth.serverRequireSasl should be set to false for Zookeeper version 3.7.0', 'portUnification is not a valid property for Zookeeper version 3.7.0', 'localSessionsUpgradingEnabled is not a valid property for Zookeeper version 3.7.0', 'dataLogDir should be set to a valid directory path']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'localSessionsUpgradingEnabled'], 'reason': ['secureClientPort should not be set to -1, it should be a valid port number.', 'localSessionsUpgradingEnabled is not a valid property for Zookeeper version 3.7.0.']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'localSessionsUpgradingEnabled'], 'reason': ['secureClientPort should be a positive integer value.', 'localSessionsUpgradingEnabled is not a valid property for Zookeeper version 3.7.0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPort	localSessionsUpgradingEnabled
+[Ciri] Reason for secureClientPort: secureClientPort should be a positive integer value.
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled is not a valid property for Zookeeper version 3.7.0.

@@ -1,0 +1,12 @@
+Correct shot number:
+[5, 10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].decay-scheduler.decay-factor', 'hadoop.ssl.enabled'], 'reason': ["The property 'ipc.[port_number].decay-scheduler.decay-factor' is not correctly formatted. It should not contain '[port_number]' and should have a valid port number.", "The property 'hadoop.ssl.enabled' is deprecated. Use 'dfs.http.policy' and 'yarn.http.policy' instead."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].decay-scheduler.decay-factor	hadoop.ssl.enabled
+[Ciri] Reason for ipc.[port_number].decay-scheduler.decay-factor: The property 'ipc.[port_number].decay-scheduler.decay-factor' is not correctly formatted. It should not contain '[port_number]' and should have a valid port number.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' is deprecated. Use 'dfs.http.policy' and 'yarn.http.policy' instead.

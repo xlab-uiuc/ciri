@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.server.saslLoginContext', 'portUnification', 'sslQuorum', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['Invalid value for secureClientPortAddress. It should be in the format of IP address without extra dots.', 'quorum.auth.server.saslLoginContext is not a valid property for Zookeeper configuration.', 'portUnification should not be set to true in Zookeeper version 3.7.0.', 'sslQuorum should be set to true if SSL is required for quorum communication.', "quorum.auth.kerberos.servicePrincipal should be in the format of 'primary/instance@REALM'."]}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.server.saslLoginContext', 'portUnification', 'sslQuorum', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['Invalid value format for secureClientPortAddress', 'Property quorum.auth.server.saslLoginContext is not supported in Zookeeper 3.7.0', 'Property portUnification is not supported in Zookeeper 3.7.0', 'Property sslQuorum is not supported in Zookeeper 3.7.0', 'Property quorum.auth.kerberos.servicePrincipal is not supported in Zookeeper 3.7.0']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'quorum.auth.server.saslLoginContext', 'portUnification', 'sslQuorum', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['Invalid value format for secureClientPortAddress', 'Property quorum.auth.server.saslLoginContext is not supported in Zookeeper 3.7.0', 'Property portUnification is not supported in Zookeeper 3.7.0', 'Property sslQuorum is not supported in Zookeeper 3.7.0', 'Invalid value format for quorum.auth.kerberos.servicePrincipal']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: secureClientPortAddress	quorum.auth.server.saslLoginContext	portUnification	sslQuorum	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for secureClientPortAddress: Invalid value format for secureClientPortAddress
+[Ciri] Reason for quorum.auth.server.saslLoginContext: Property quorum.auth.server.saslLoginContext is not supported in Zookeeper 3.7.0
+[Ciri] Reason for portUnification: Property portUnification is not supported in Zookeeper 3.7.0
+[Ciri] Reason for sslQuorum: Property sslQuorum is not supported in Zookeeper 3.7.0
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: Property quorum.auth.kerberos.servicePrincipal is not supported in Zookeeper 3.7.0

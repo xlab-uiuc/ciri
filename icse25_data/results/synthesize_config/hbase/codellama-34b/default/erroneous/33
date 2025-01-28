@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 5, 8]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl'], 'reason': ["The value of the property 'hbase.regionserver.hlog.writer.impl' should be 'org.apache.hadoop.hbase.regionserver.wal.ProtobufLogWriter' to enable the property 'hbase.regionserver.hlog.writer.impl'."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl'], 'reason': ["The property 'hbase.regionserver.hlog.writer.impl' has the value 'org.apache.hadoop.hbase.regionserver.wal.ProtobufLogWriter' which is not a valid class name."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl', 'hbase.status.multicast.address.ip'], 'reason': ["The property 'hbase.regionserver.hlog.writer.impl' has the value 'org.apache.hadoop.hbase.regionserver.wal.ProtobufLogWriter' which is not a valid class.", "The property 'hbase.status.multicast.address.ip' has the value '0.0.256.0' which is not a valid IP address."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.hlog.writer.impl
+[Ciri] Reason for hbase.regionserver.hlog.writer.impl: The property 'hbase.regionserver.hlog.writer.impl' has the value 'org.apache.hadoop.hbase.regionserver.wal.ProtobufLogWriter' which is not a valid class name.

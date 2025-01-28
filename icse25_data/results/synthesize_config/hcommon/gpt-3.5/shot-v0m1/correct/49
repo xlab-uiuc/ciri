@@ -1,0 +1,12 @@
+Wrong shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'fs.s3a.block.size'], 'reason': ["The property 'hadoop.security.groups.shell.command.timeout' has the value '1s' which should be expressed in seconds without the 's' suffix.", "The property 'fs.s3a.block.size' has the value '32M' which should not have a suffix. Use a numeric value without any suffix."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout	fs.s3a.block.size
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: The property 'hadoop.security.groups.shell.command.timeout' has the value '1s' which should be expressed in seconds without the 's' suffix.
+[Ciri] Reason for fs.s3a.block.size: The property 'fs.s3a.block.size' has the value '32M' which should not have a suffix. Use a numeric value without any suffix.

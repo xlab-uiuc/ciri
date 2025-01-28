@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.default.mode', 'alluxio.underfs.s3a.request.timeout', 'alluxio.user.streaming.writer.buffer.size.messages'], 'reason': ["The property 'alluxio.underfs.s3.default.mode' is not a recognized configuration parameter in Alluxio 2.5.0. It might be a version-specific or deprecated property.", "The format of 'alluxio.underfs.s3a.request.timeout' value is incorrect. It should be specified in milliseconds without the 'min' suffix.", "The property 'alluxio.user.streaming.writer.buffer.size.messages' does not exist in Alluxio 2.5.0. It might be a version-specific or deprecated property."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.underfs.s3.default.mode	alluxio.underfs.s3a.request.timeout	alluxio.user.streaming.writer.buffer.size.messages
+[Ciri] Reason for alluxio.underfs.s3.default.mode: The property 'alluxio.underfs.s3.default.mode' is not a recognized configuration parameter in Alluxio 2.5.0. It might be a version-specific or deprecated property.
+[Ciri] Reason for alluxio.underfs.s3a.request.timeout: The format of 'alluxio.underfs.s3a.request.timeout' value is incorrect. It should be specified in milliseconds without the 'min' suffix.
+[Ciri] Reason for alluxio.user.streaming.writer.buffer.size.messages: The property 'alluxio.user.streaming.writer.buffer.size.messages' does not exist in Alluxio 2.5.0. It might be a version-specific or deprecated property.

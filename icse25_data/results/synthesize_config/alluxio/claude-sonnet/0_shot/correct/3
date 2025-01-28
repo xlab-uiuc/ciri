@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.tieredstore.global.level2.alias=HDD', 'alluxio.user.network.netty.channel=NIO'], 'reason': ["The property 'alluxio.master.tieredstore.global.level2.alias' is not valid because there is only one tier level specified in 'alluxio.master.tieredstore.global.levels=1'.", "The property 'alluxio.user.network.netty.channel' is not a valid Alluxio configuration property in version 2.5.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.tieredstore.global.level2.alias=HDD	alluxio.user.network.netty.channel=NIO
+[Ciri] Reason for alluxio.master.tieredstore.global.level2.alias=HDD: The property 'alluxio.master.tieredstore.global.level2.alias' is not valid because there is only one tier level specified in 'alluxio.master.tieredstore.global.levels=1'.
+[Ciri] Reason for alluxio.user.network.netty.channel=NIO: The property 'alluxio.user.network.netty.channel' is not a valid Alluxio configuration property in version 2.5.0.

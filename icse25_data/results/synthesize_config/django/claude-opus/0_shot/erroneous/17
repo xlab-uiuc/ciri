@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['MIDDLEWARE', 'SECURE_SSL_HOST', 'CSRF_FAILURE_VIEW'], 'reason': ['MIDDLEWARE should be a list containing middleware classes, not an empty list.', 'SECURE_SSL_HOST has been removed in Django 4.0. Use SECURE_SSL_REDIRECT instead.', "CSRF_FAILURE_VIEW should be a string in the format 'appname.views.viewname', not 'django.views.csrf.csrf_failure'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: MIDDLEWARE	SECURE_SSL_HOST	CSRF_FAILURE_VIEW
+[Ciri] Reason for MIDDLEWARE: MIDDLEWARE should be a list containing middleware classes, not an empty list.
+[Ciri] Reason for SECURE_SSL_HOST: SECURE_SSL_HOST has been removed in Django 4.0. Use SECURE_SSL_REDIRECT instead.
+[Ciri] Reason for CSRF_FAILURE_VIEW: CSRF_FAILURE_VIEW should be a string in the format 'appname.views.viewname', not 'django.views.csrf.csrf_failure'.

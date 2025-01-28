@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['zookeeper.session.timeout', 'hbase.client.max.perregion.tasks'], 'reason': ["The 'zookeeper.session.timeout' value is set to -1, which is not a valid session timeout period. It should be a positive integer representing the timeout in milliseconds.", "The 'hbase.client.max.perregion.tasks' value is set to 0, which means no concurrent mutation tasks would be allowed per region, effectively disabling mutations. This should be a positive integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: zookeeper.session.timeout	hbase.client.max.perregion.tasks
+[Ciri] Reason for zookeeper.session.timeout: The 'zookeeper.session.timeout' value is set to -1, which is not a valid session timeout period. It should be a positive integer representing the timeout in milliseconds.
+[Ciri] Reason for hbase.client.max.perregion.tasks: The 'hbase.client.max.perregion.tasks' value is set to 0, which means no concurrent mutation tasks would be allowed per region, effectively disabling mutations. This should be a positive integer.

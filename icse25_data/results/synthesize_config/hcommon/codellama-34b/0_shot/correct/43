@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.cache.secs', 'hadoop.security.group.mapping.ldap.search.group.hierarchy.levels', 'fs.trash.checkpoint.interval', 'fs.s3a.change.detection.mode', 'ipc.client.low-latency', 'hadoop.http.cross-origin.allowed-headers', 'ha.zookeeper.parent-znode', 'hadoop.security.crypto.codec.classes.aes.ctr.nopadding'], 'reason': ['The value of hadoop.security.groups.cache.secs is not a valid integer.', 'The value of hadoop.security.group.mapping.ldap.search.group.hierarchy.levels is not a valid integer.', 'The value of fs.trash.checkpoint.interval is not a valid integer.', 'The value of fs.s3a.change.detection.mode is not a valid value.', 'The value of ipc.client.low-latency is not a valid boolean.', 'The value of hadoop.http.cross-origin.allowed-headers is not a valid header.', 'The value of ha.zookeeper.parent-znode is not a valid znode.', 'The value of hadoop.security.crypto.codec.classes.aes.ctr.nopadding is not a valid class.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hadoop.security.groups.cache.secs	hadoop.security.group.mapping.ldap.search.group.hierarchy.levels	fs.trash.checkpoint.interval	fs.s3a.change.detection.mode	ipc.client.low-latency	hadoop.http.cross-origin.allowed-headers	ha.zookeeper.parent-znode	hadoop.security.crypto.codec.classes.aes.ctr.nopadding
+[Ciri] Reason for hadoop.security.groups.cache.secs: The value of hadoop.security.groups.cache.secs is not a valid integer.
+[Ciri] Reason for hadoop.security.group.mapping.ldap.search.group.hierarchy.levels: The value of hadoop.security.group.mapping.ldap.search.group.hierarchy.levels is not a valid integer.
+[Ciri] Reason for fs.trash.checkpoint.interval: The value of fs.trash.checkpoint.interval is not a valid integer.
+[Ciri] Reason for fs.s3a.change.detection.mode: The value of fs.s3a.change.detection.mode is not a valid value.
+[Ciri] Reason for ipc.client.low-latency: The value of ipc.client.low-latency is not a valid boolean.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-headers: The value of hadoop.http.cross-origin.allowed-headers is not a valid header.
+[Ciri] Reason for ha.zookeeper.parent-znode: The value of ha.zookeeper.parent-znode is not a valid znode.
+[Ciri] Reason for hadoop.security.crypto.codec.classes.aes.ctr.nopadding: The value of hadoop.security.crypto.codec.classes.aes.ctr.nopadding is not a valid class.

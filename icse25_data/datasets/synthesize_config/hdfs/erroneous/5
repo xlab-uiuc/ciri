@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.permissions.ContentSummary.subAccess</name>
+  <value>true</value>
+  <description>
+    If "true", the ContentSummary permission checking will use subAccess.
+    If "false", the ContentSummary permission checking will NOT use subAccess.
+    subAccess means using recursion to check the access of all descendants.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.keytab.file</name>
+  <value>/valid/file2</value>
+  <description>
+    The keytab file used by each NameNode daemon to login as its
+    service principal. The principal name is configured with
+    dfs.namenode.kerberos.principal.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.fuse.connection.timeout</name>
+  <value>300</value>
+  <description>
+    The minimum number of seconds that we'll cache libhdfs connection objects
+    in fuse_dfs. Lower values will result in lower memory consumption; higher
+    values may speed up access by avoiding the overhead of creating new
+    connection objects.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.retrycache.expirytime.millis</name>
+  <value>1200000</value>
+  <description>
+    The time for which retry cache entries are retained.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.audit.log.token.tracking.id</name>
+  <value>false</value>
+  <description>
+    If true, adds a tracking ID for all audit log events.
+  </description>
+</property>
+
+<property>
+  <name>dfs.disk.balancer.block.tolerance.percent</name>
+  <value>10</value>
+    <description>
+      When a disk balancer copy operation is proceeding, the datanode is still
+      active. So it might not be possible to move the exactly specified
+      amount of data. So tolerance allows us to define a percentage which
+      defines a good enough move.
+    </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.inmemory.server.log</name>
+  <value>true</value>
+    <description>
+      Ensures that InMemoryAliasMap server logs every call to it.
+      Set to false by default.
+    </description>
+</property>
+
+<property>
+  <name>dfs.qjm.operations.timeout</name>
+  <value>0mm</value>
+    <description>
+      Common key to set timeout for related operations in
+      QuorumJournalManager. This setting supports multiple time unit suffixes
+      as described in dfs.heartbeat.interval.
+      If no suffix is specified then milliseconds is assumed.
+    </description>
+</property>
+
+</configuration>

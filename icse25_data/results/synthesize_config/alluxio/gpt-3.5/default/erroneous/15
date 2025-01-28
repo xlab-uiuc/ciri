@@ -1,0 +1,19 @@
+Wrong shot number:
+[10, 5, 13]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.bind.host', 'alluxio.user.file.create.ttl'], 'reason': ["The property 'alluxio.job.worker.web.bind.host' has an invalid host format with too many segments.", "The property 'alluxio.user.file.create.ttl' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.bind.host', 'alluxio.user.file.create.ttl'], 'reason': ["The property 'alluxio.job.worker.web.bind.host' has an invalid host format with too many segments.", "The property 'alluxio.user.file.create.ttl' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.bind.host', 'alluxio.user.file.create.ttl'], 'reason': ["The property 'alluxio.job.worker.web.bind.host' has an invalid host format.", "The property 'alluxio.user.file.create.ttl' has a negative value which is not allowed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.web.bind.host	alluxio.user.file.create.ttl
+[Ciri] Reason for alluxio.job.worker.web.bind.host: The property 'alluxio.job.worker.web.bind.host' has an invalid host format.
+[Ciri] Reason for alluxio.user.file.create.ttl: The property 'alluxio.user.file.create.ttl' has a negative value which is not allowed.

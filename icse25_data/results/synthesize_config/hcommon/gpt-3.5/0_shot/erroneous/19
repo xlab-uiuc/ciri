@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.swebhdfs.impl', 'fs.ftp.host', 'fs.s3a.select.enabled', 'ftp.stream-buffer-size', 'hadoop.http.cross-origin.allowed-origins'], 'reason': ["Property 'fs.AbstractFileSystem.swebhdfs.impl' is not a valid property for hcommon version 3.3.0.", "Property 'fs.ftp.host' has an invalid value '2.2.2.2.2.2'.", "Property 'fs.s3a.select.enabled' has an invalid value 'true'.", "Property 'ftp.stream-buffer-size' has a description that is too long.", "Property 'hadoop.http.cross-origin.allowed-origins' has a description that is too long."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.swebhdfs.impl', 'fs.ftp.host'], 'reason': ["Property 'fs.AbstractFileSystem.swebhdfs.impl' is not a valid property for hcommon version 3.3.0.", "Property 'fs.ftp.host' has an invalid value '2.2.2.2.2.2'."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.swebhdfs.impl', 'fs.ftp.host'], 'reason': ["Property 'fs.AbstractFileSystem.swebhdfs.impl' is not a valid property for hcommon version 3.3.0.", "Property 'fs.ftp.host' has an invalid value '2.2.2.2.2.2'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.AbstractFileSystem.swebhdfs.impl	fs.ftp.host
+[Ciri] Reason for fs.AbstractFileSystem.swebhdfs.impl: Property 'fs.AbstractFileSystem.swebhdfs.impl' is not a valid property for hcommon version 3.3.0.
+[Ciri] Reason for fs.ftp.host: Property 'fs.ftp.host' has an invalid value '2.2.2.2.2.2'.

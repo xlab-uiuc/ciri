@@ -1,0 +1,20 @@
+Wrong shot number:
+[13, 7, 6]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern', 'dfs.mover.retry.max.attempts', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The property 'dfs.namenode.kerberos.principal.pattern' has the value '*' which is not a valid principal pattern.", "The property 'dfs.mover.retry.max.attempts' has the value '-100' which should be a positive integer.", "The property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' has the value '5s' which does not follow the correct format for time intervals."]}
+
+{'hasError': True, 'errParameter': ['dfs.mover.retry.max.attempts', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The property 'dfs.mover.retry.max.attempts' has a negative value which is not valid.", "The property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' has the value '5s' which does not follow the correct format for milliseconds."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern', 'dfs.mover.retry.max.attempts', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The property 'dfs.namenode.kerberos.principal.pattern' has the value '*' which is not a valid Kerberos principal pattern.", "The property 'dfs.mover.retry.max.attempts' has a negative value which is not allowed.", "The property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' has the value '5s' which does not follow the correct format for time intervals."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.kerberos.principal.pattern	dfs.mover.retry.max.attempts	dfs.namenode.gc.time.monitor.sleep.interval.ms
+[Ciri] Reason for dfs.namenode.kerberos.principal.pattern: The property 'dfs.namenode.kerberos.principal.pattern' has the value '*' which is not a valid principal pattern.
+[Ciri] Reason for dfs.mover.retry.max.attempts: The property 'dfs.mover.retry.max.attempts' has a negative value which is not allowed.
+[Ciri] Reason for dfs.namenode.gc.time.monitor.sleep.interval.ms: The property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' has the value '5s' which does not follow the correct format for time intervals.

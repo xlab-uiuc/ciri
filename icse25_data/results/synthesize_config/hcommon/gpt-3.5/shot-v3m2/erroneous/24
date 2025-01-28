@@ -1,0 +1,16 @@
+Wrong shot number:
+[14, 7]
+
+Correct shot number:
+[10, 11, 13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.tmp.dir', 'fs.ftp.host.port', 'fs.s3a.fast.upload.buffer'], 'reason': ["The property 'hadoop.tmp.dir' has an additional 'usage' tag which is not a valid property attribute.", "The property 'fs.ftp.host.port' has an invalid value 'file://'. It should be a valid hostname or IP address with a port number.", "The property 'fs.s3a.fast.upload.buffer' has a description that contains multiple values and configurations. It should have a clear and concise description of the property."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.tmp.dir	fs.ftp.host.port	fs.s3a.fast.upload.buffer
+[Ciri] Reason for hadoop.tmp.dir: The property 'hadoop.tmp.dir' has an additional 'usage' tag which is not a valid property attribute.
+[Ciri] Reason for fs.ftp.host.port: The property 'fs.ftp.host.port' has an invalid value 'file://'. It should be a valid hostname or IP address with a port number.
+[Ciri] Reason for fs.s3a.fast.upload.buffer: The property 'fs.s3a.fast.upload.buffer' has a description that contains multiple values and configurations. It should have a clear and concise description of the property.

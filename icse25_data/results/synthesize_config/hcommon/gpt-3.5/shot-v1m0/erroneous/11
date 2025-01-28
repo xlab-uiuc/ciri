@@ -1,0 +1,12 @@
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'ipc.[port_number].decay-scheduler.thresholds'], 'reason': ["The property 'fs.ftp.timeout' has an additional 'usage' tag that is not a standard configuration property.", "The property 'ipc.[port_number].decay-scheduler.thresholds' contains square brackets in the name, which is not a valid format for a property name."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.timeout	ipc.[port_number].decay-scheduler.thresholds
+[Ciri] Reason for fs.ftp.timeout: The property 'fs.ftp.timeout' has an additional 'usage' tag that is not a standard configuration property.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: The property 'ipc.[port_number].decay-scheduler.thresholds' contains square brackets in the name, which is not a valid format for a property name.

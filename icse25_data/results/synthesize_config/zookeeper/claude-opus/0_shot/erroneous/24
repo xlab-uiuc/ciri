@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['reconfigEnabled', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ["reconfigEnabled is not a valid configuration parameter in Zookeeper 3.7.0. It was removed in 3.5.0 and replaced with 'reconfigEnabled' within a dynamic configuration file.", "quorum.auth.kerberos.servicePrincipal is deprecated in 3.7.0. It has been replaced with 'quorum.auth.serverRequireSasl' and 'quorum.auth.learnerRequireSasl' properties for enabling Kerberos authentication."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: reconfigEnabled	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for reconfigEnabled: reconfigEnabled is not a valid configuration parameter in Zookeeper 3.7.0. It was removed in 3.5.0 and replaced with 'reconfigEnabled' within a dynamic configuration file.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is deprecated in 3.7.0. It has been replaced with 'quorum.auth.serverRequireSasl' and 'quorum.auth.learnerRequireSasl' properties for enabling Kerberos authentication.

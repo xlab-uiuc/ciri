@@ -1,0 +1,20 @@
+Wrong shot number:
+[8, 2, 5]
+
+Correct shot number:
+[15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.dir', 'dfs.namenode.checkpoint.dir', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["The property 'dfs.namenode.edits.dir' has the value '/valid/dir2' which does not follow the correct directory format.", "The property 'dfs.namenode.checkpoint.dir' has the value '/valid/dir1' which does not follow the correct directory format.", "The property 'dfs.provided.aliasmap.leveldb.path' has the value '/valid/file1' which does not follow the correct file format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.dir', 'dfs.namenode.checkpoint.dir', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["The property 'dfs.namenode.edits.dir' has the value '/valid/dir2' which does not follow the correct directory format.", "The property 'dfs.namenode.checkpoint.dir' has the value '/valid/dir1' which does not follow the correct directory format.", "The property 'dfs.provided.aliasmap.leveldb.path' has the value '/valid/file1' which does not follow the correct file format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.dir', 'dfs.namenode.checkpoint.dir', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["The property 'dfs.namenode.edits.dir' has the value '/valid/dir2' which does not follow the correct directory format.", "The property 'dfs.namenode.checkpoint.dir' has the value '/valid/dir1' which does not follow the correct directory format.", "The property 'dfs.provided.aliasmap.leveldb.path' has the value '/valid/file1' which does not follow the correct file format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.edits.dir	dfs.namenode.checkpoint.dir	dfs.provided.aliasmap.leveldb.path
+[Ciri] Reason for dfs.namenode.edits.dir: The property 'dfs.namenode.edits.dir' has the value '/valid/dir2' which does not follow the correct directory format.
+[Ciri] Reason for dfs.namenode.checkpoint.dir: The property 'dfs.namenode.checkpoint.dir' has the value '/valid/dir1' which does not follow the correct directory format.
+[Ciri] Reason for dfs.provided.aliasmap.leveldb.path: The property 'dfs.provided.aliasmap.leveldb.path' has the value '/valid/file1' which does not follow the correct file format.

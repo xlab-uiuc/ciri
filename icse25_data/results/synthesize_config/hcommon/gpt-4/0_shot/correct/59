@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.ftp.impl', 'fs.AbstractFileSystem.abfs.impl', 'hadoop.tags.system'], 'reason': ["The property 'fs.AbstractFileSystem.ftp.impl' is not a standard configuration property for Hadoop 3.3.0. FTP FileSystem is typically configured with 'fs.ftp.host', 'fs.ftp.host.port', etc.", "The property 'fs.AbstractFileSystem.abfs.impl' is incorrect. The correct property should be 'fs.AbstractFileSystem.abfss.impl' for Azure Blob File System support in Hadoop 3.3.0.", "The property 'hadoop.tags.system' does not exist in the standard Hadoop 3.3.0 configuration. It appears to be a custom or non-standard property."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.AbstractFileSystem.ftp.impl	fs.AbstractFileSystem.abfs.impl	hadoop.tags.system
+[Ciri] Reason for fs.AbstractFileSystem.ftp.impl: The property 'fs.AbstractFileSystem.ftp.impl' is not a standard configuration property for Hadoop 3.3.0. FTP FileSystem is typically configured with 'fs.ftp.host', 'fs.ftp.host.port', etc.
+[Ciri] Reason for fs.AbstractFileSystem.abfs.impl: The property 'fs.AbstractFileSystem.abfs.impl' is incorrect. The correct property should be 'fs.AbstractFileSystem.abfss.impl' for Azure Blob File System support in Hadoop 3.3.0.
+[Ciri] Reason for hadoop.tags.system: The property 'hadoop.tags.system' does not exist in the standard Hadoop 3.3.0 configuration. It appears to be a custom or non-standard property.

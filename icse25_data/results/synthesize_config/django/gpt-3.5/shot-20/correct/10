@@ -1,0 +1,14 @@
+Correct shot number:
+[3, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['EMAIL_SSL_KEYFILE', 'LANGUAGE_COOKIE_HTTPONLY', 'ABSOLUTE_URL_OVERRIDES', 'EMAIL_USE_SSL'], 'reason': ['EMAIL_SSL_KEYFILE should not be set to None. It should be a path to the SSL key file.', 'LANGUAGE_COOKIE_HTTPONLY should be set to True for security reasons.', 'ABSOLUTE_URL_OVERRIDES should not be an empty dictionary. It should contain overrides for the get_absolute_url method.', 'EMAIL_USE_SSL is deprecated in Django 4.0. Use the EMAIL_BACKEND setting to configure SSL/TLS settings.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: EMAIL_SSL_KEYFILE	LANGUAGE_COOKIE_HTTPONLY	ABSOLUTE_URL_OVERRIDES	EMAIL_USE_SSL
+[Ciri] Reason for EMAIL_SSL_KEYFILE: EMAIL_SSL_KEYFILE should not be set to None. It should be a path to the SSL key file.
+[Ciri] Reason for LANGUAGE_COOKIE_HTTPONLY: LANGUAGE_COOKIE_HTTPONLY should be set to True for security reasons.
+[Ciri] Reason for ABSOLUTE_URL_OVERRIDES: ABSOLUTE_URL_OVERRIDES should not be an empty dictionary. It should contain overrides for the get_absolute_url method.
+[Ciri] Reason for EMAIL_USE_SSL: EMAIL_USE_SSL is deprecated in Django 4.0. Use the EMAIL_BACKEND setting to configure SSL/TLS settings.

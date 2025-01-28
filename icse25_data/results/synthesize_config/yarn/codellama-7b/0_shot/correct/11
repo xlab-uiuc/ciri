@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.webapp.address'], 'reason': ['yarn.nodemanager.webapp.address is not a valid configuration property for yarn version 3.3.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage'], 'reason': ['The value of yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage is 45.0, which is not a valid value. It should be in the range of 0.0 to 100.0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.webapp.address'], 'reason': ['The value of yarn.nodemanager.webapp.address is not a valid IP address.']}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage'], 'reason': ['The value of yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage is 45.0, which is greater than or equal to 100.0. This value should be less than 100.0.']}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage'], 'reason': ['The value of yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage is 45.0, which is not a valid value. The value must be a double between 0.0 and 100.0, inclusive.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage
+[Ciri] Reason for yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage: The value of yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage is 45.0, which is greater than or equal to 100.0. This value should be less than 100.0.

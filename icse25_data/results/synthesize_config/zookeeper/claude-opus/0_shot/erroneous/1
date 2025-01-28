@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'maxSessionTimeout'], 'reason': ['autopurge.purgeInterval must be an integer value, but 9.9 is a floating-point number.', 'maxSessionTimeout must be between 4 and 60*60*1000 (1 hour) inclusive, but -1 is outside this range.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autopurge.purgeInterval	maxSessionTimeout
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval must be an integer value, but 9.9 is a floating-point number.
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout must be between 4 and 60*60*1000 (1 hour) inclusive, but -1 is outside this range.

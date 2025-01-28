@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.mmap.cache.timeout.ms', 'dfs.datanode.max.locked.memory', 'dfs.datanode.data.write.bandwidthPerSec', 'dfs.namenode.lease-hard-limit-sec'], 'reason': ['The description for dfs.client.mmap.cache.timeout.ms is not properly formatted.', 'The description for dfs.datanode.max.locked.memory is not properly formatted.', 'The description for dfs.datanode.data.write.bandwidthPerSec is not properly formatted.', 'The description for dfs.namenode.lease-hard-limit-sec is not properly formatted.']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.locked.memory', 'dfs.datanode.data.write.bandwidthPerSec', 'dfs.namenode.lease-hard-limit-sec'], 'reason': ["The parameter dfs.datanode.max.locked.memory requires the datanode's maximum locked memory soft ulimit (RLIMIT_MEMLOCK) to be set to at least the specified value.", 'The value for dfs.datanode.data.write.bandwidthPerSec should not be negative. If there is no limit, use 0 instead.', 'The parameter dfs.namenode.lease-hard-limit-sec should not have leading or trailing spaces in the value.']}
+
+{'hasError': True, 'errParameter': ['dfs.client.mmap.cache.timeout.ms', 'dfs.datanode.max.locked.memory', 'dfs.datanode.data.write.bandwidthPerSec', 'dfs.namenode.lease-hard-limit-sec'], 'reason': ['The description for dfs.client.mmap.cache.timeout.ms is missing.', 'The description for dfs.datanode.max.locked.memory is missing.', 'The description for dfs.datanode.data.write.bandwidthPerSec is missing.', 'The description for dfs.namenode.lease-hard-limit-sec is missing.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dfs.client.mmap.cache.timeout.ms	dfs.datanode.max.locked.memory	dfs.datanode.data.write.bandwidthPerSec	dfs.namenode.lease-hard-limit-sec
+[Ciri] Reason for dfs.client.mmap.cache.timeout.ms: The description for dfs.client.mmap.cache.timeout.ms is missing.
+[Ciri] Reason for dfs.datanode.max.locked.memory: The description for dfs.datanode.max.locked.memory is missing.
+[Ciri] Reason for dfs.datanode.data.write.bandwidthPerSec: The description for dfs.datanode.data.write.bandwidthPerSec is not properly formatted.
+[Ciri] Reason for dfs.namenode.lease-hard-limit-sec: The description for dfs.namenode.lease-hard-limit-sec is missing.

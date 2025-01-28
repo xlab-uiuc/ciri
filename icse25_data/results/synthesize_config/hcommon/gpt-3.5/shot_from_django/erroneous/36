@@ -1,0 +1,17 @@
+Wrong shot number:
+[3, 4, 6]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.credential.clear-text-fallback', 'fs.s3a.paging.maximum', 'ipc.client.kill.max', 'hadoop.security.crypto.buffer.size'], 'reason': ["The property 'hadoop.security.credential.clear-text-fallback' has the value '10000' which should be a boolean (true or false).", "The property 'fs.s3a.paging.maximum' has the value '10000' which may be too high for the intended purpose.", "The property 'ipc.client.kill.max' has the value '20' which may be too high for the intended purpose.", "The property 'hadoop.security.crypto.buffer.size' has the value '16384' which may be too low for efficient buffer size."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.credential.clear-text-fallback	fs.s3a.paging.maximum	ipc.client.kill.max	hadoop.security.crypto.buffer.size
+[Ciri] Reason for hadoop.security.credential.clear-text-fallback: The property 'hadoop.security.credential.clear-text-fallback' has the value '10000' which should be a boolean (true or false).
+[Ciri] Reason for fs.s3a.paging.maximum: The property 'fs.s3a.paging.maximum' has the value '10000' which may be too high for the intended purpose.
+[Ciri] Reason for ipc.client.kill.max: The property 'ipc.client.kill.max' has the value '20' which may be too high for the intended purpose.
+[Ciri] Reason for hadoop.security.crypto.buffer.size: The property 'hadoop.security.crypto.buffer.size' has the value '16384' which may be too low for efficient buffer size.

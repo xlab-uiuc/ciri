@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.logroll.period</name>
+  <value>7200000</value>
+    <description>Period at which we will roll the commit log regardless
+    of how many edits it has.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.hlog.writer.impl</name>
+  <value>org.apache.hadoop.hbase.regionserver.wal.ProtobufLogWriter</value>
+    <description>The WAL file writer implementation.</description>
+</property>
+
+<property>
+  <name>hbase.server.versionfile.writeattempts</name>
+  <value>6</value>
+    <description>
+    How many times to retry attempting to write a version file
+    before just aborting. Each attempt is separated by the
+    hbase.server.thread.wakefrequency milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.client.tcpnodelay</name>
+  <value>false</value>
+    <description>Set no delay on rpc socket connections.  See
+    http://docs.oracle.com/javase/1.5.0/docs/api/java/net/Socket.html#getTcpNoDelay()</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.hostname.disable.master.reversedns</name>
+  <value>false</value>
+    <description>This config is for experts: don't set its value unless you really know what you are doing.
+    When set to true, regionserver will use the current node hostname for the servername and HMaster will
+    skip reverse DNS lookup and use the hostname sent by regionserver instead. Note that this config and
+    hbase.regionserver.hostname are mutually exclusive. See https://issues.apache.org/jira/browse/HBASE-18226
+    for more details.</description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.user.enabled</name>
+  <value>false</value>
+    <description>Enables or disables user (aka. table) coprocessor loading.
+    If 'false' (disabled), any table coprocessor attributes in table
+    descriptors will be ignored. If "hbase.coprocessor.enabled" is 'false'
+    this setting has no effect.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest.port</name>
+  <value>3001</value>
+    <description>The port for the HBase REST server.</description>
+</property>
+
+<property>
+  <name>hbase.defaults.for.version.skip</name>
+  <value>false</value>
+    <description>Set to true to skip the 'hbase.defaults.for.version' check.
+    Setting this to true can be useful in contexts other than
+    the other side of a maven generation; i.e. running in an
+    IDE.  You'll want to set this boolean to true to avoid
+    seeing the RuntimeException complaint: "hbase-default.xml file
+    seems to be for and old version of HBase (\${hbase.version}), this
+    version is X.X.X-SNAPSHOT"</description>
+</property>
+
+</configuration>

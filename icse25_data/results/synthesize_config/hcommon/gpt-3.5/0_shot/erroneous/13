@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].weighted-cost.lockshared', 'fs.adl.oauth2.msi.port', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ["The property 'fs.default.name' is using 'usage' instead of 'description'.", "The property 'ipc.[port_number].weighted-cost.lockshared' has an invalid placeholder '[port_number]'.", "The property 'fs.adl.oauth2.msi.port' has an extra indentation in the value.", "The property 'hadoop.metrics.jvm.use-thread-mxbean' has an extra indentation in the value."]}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].weighted-cost.lockshared', 'fs.adl.oauth2.msi.port', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ["The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' property instead.", "The property 'ipc.[port_number].weighted-cost.lockshared' has invalid characters in the name.", "The property 'fs.adl.oauth2.msi.port' has an extra space before the description.", "The property 'hadoop.metrics.jvm.use-thread-mxbean' has an extra space before the description."]}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.[port_number].weighted-cost.lockshared', 'fs.adl.oauth2.msi.port', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ["The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' property instead.", "The property 'ipc.[port_number].weighted-cost.lockshared' has an invalid placeholder '[port_number]'.", "The property 'fs.adl.oauth2.msi.port' has an extra indentation in the value field.", "The property 'hadoop.metrics.jvm.use-thread-mxbean' has an extra indentation in the value field."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.default.name	ipc.[port_number].weighted-cost.lockshared	fs.adl.oauth2.msi.port	hadoop.metrics.jvm.use-thread-mxbean
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' property instead.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: The property 'ipc.[port_number].weighted-cost.lockshared' has an invalid placeholder '[port_number]'.
+[Ciri] Reason for fs.adl.oauth2.msi.port: The property 'fs.adl.oauth2.msi.port' has an extra indentation in the value.
+[Ciri] Reason for hadoop.metrics.jvm.use-thread-mxbean: The property 'hadoop.metrics.jvm.use-thread-mxbean' has an extra indentation in the value field.

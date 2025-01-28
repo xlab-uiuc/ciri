@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'maxmemory-clients', 'auto-aof-rewrite-percentage', 'timeout', 'repl-backlog-size', 'latency-monitor-threshold', 'lazyfree-lazy-expire'], 'reason': ["The 'cluster-announce-tls-port' parameter is not a valid Redis configuration option.", "The 'maxmemory-clients' parameter is not a valid Redis configuration option. The correct option is 'maxmemory'.", "The 'auto-aof-rewrite-percentage' parameter is not a valid Redis configuration option. The correct option is 'auto-aof-rewrite-percentage'.", "The 'timeout' parameter is not a valid Redis configuration option. The correct option is 'timeout'.", "The 'repl-backlog-size' parameter is not a valid Redis configuration option. The correct option is 'repl-backlog-size'.", "The 'latency-monitor-threshold' parameter is not a valid Redis configuration option. The correct option is 'latency-monitor-threshold'.", "The 'lazyfree-lazy-expire' parameter is not a valid Redis configuration option. The correct option is 'lazyfree-lazy-eviction'."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: cluster-announce-tls-port	maxmemory-clients	auto-aof-rewrite-percentage	timeout	repl-backlog-size	latency-monitor-threshold	lazyfree-lazy-expire
+[Ciri] Reason for cluster-announce-tls-port: The 'cluster-announce-tls-port' parameter is not a valid Redis configuration option.
+[Ciri] Reason for maxmemory-clients: The 'maxmemory-clients' parameter is not a valid Redis configuration option. The correct option is 'maxmemory'.
+[Ciri] Reason for auto-aof-rewrite-percentage: The 'auto-aof-rewrite-percentage' parameter is not a valid Redis configuration option. The correct option is 'auto-aof-rewrite-percentage'.
+[Ciri] Reason for timeout: The 'timeout' parameter is not a valid Redis configuration option. The correct option is 'timeout'.
+[Ciri] Reason for repl-backlog-size: The 'repl-backlog-size' parameter is not a valid Redis configuration option. The correct option is 'repl-backlog-size'.
+[Ciri] Reason for latency-monitor-threshold: The 'latency-monitor-threshold' parameter is not a valid Redis configuration option. The correct option is 'latency-monitor-threshold'.
+[Ciri] Reason for lazyfree-lazy-expire: The 'lazyfree-lazy-expire' parameter is not a valid Redis configuration option. The correct option is 'lazyfree-lazy-eviction'.

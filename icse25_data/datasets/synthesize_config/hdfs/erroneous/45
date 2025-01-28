@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.lifeline.rpc-address</name>
+  <value>127.0.0.1</value>
+  <description>
+    NameNode RPC lifeline address.  This is an optional separate RPC address
+    that can be used to isolate health checks and liveness to protect against
+    resource exhaustion in the main RPC handler pool.  In the case of
+    HA/Federation where multiple NameNodes exist, the name service ID is added
+    to the name e.g. dfs.namenode.lifeline.rpc-address.ns1.  The value of this
+    property will take the form of nn-host1:rpc-port.  If this property is not
+    defined, then the NameNode will not start a lifeline RPC server.  By
+    default, the property is not defined.
+  </description>
+</property>
+
+<property>
+  <name>nfs.server.port</name>
+  <value>65536</value>
+  <description>
+      Specify the port number used by Hadoop NFS.
+  </description>
+</property>
+
+<property>
+  <name>nfs.rtmax</name>
+  <value>2097152</value>
+  <description>This is the maximum size in bytes of a READ request
+    supported by the NFS gateway. If you change this, make sure you
+    also update the nfs mount's rsize(add rsize= # of bytes to the 
+    mount directive).
+  </description>
+</property>
+
+<property>
+  <name>dfs.block.local-path-access.user</name>
+  <value>samsuper</value>
+  <description>
+    Comma separated list of the users allowed to open block files
+    on legacy short-circuit local read.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.quota.init-threads</name>
+  <value>8</value>
+  <description>
+    The number of concurrent threads to be used in quota initialization. The
+    speed of quota initialization also affects the namenode fail-over latency.
+    If the size of name space is big, try increasing this.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.read.striped.threadpool.size</name>
+  <value>36</value>
+  <description>
+    The maximum number of threads used for parallel reading
+    in striped layout.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.write.max-packets-in-flight</name>
+  <value>80</value>
+  <description>
+    The maximum number of DFSPackets allowed in flight.
+  </description>
+</property>
+
+<property>
+  <name>dfs.disk.balancer.plan.threshold.percent</name>
+  <value>20</value>
+    <description>
+      The percentage threshold value for volume Data Density in a plan.
+      If the absolute value of volume Data Density which is out of
+      threshold value in a node, it means that the volumes corresponding to
+      the disks should do the balancing in the plan. The default value is 10.
+    </description>
+</property>
+
+</configuration>

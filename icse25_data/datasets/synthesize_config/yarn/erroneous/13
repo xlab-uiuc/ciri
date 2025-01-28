@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.resource-tracker.nm.ip-hostname-check</name>
+  <value>true</value>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.zk-max-znode-size.bytes</name>
+  <value>-100</value>
+    <description>Specifies the maximum size of the data that can be stored
+      in a znode. Value should be same or less than jute.maxbuffer configured
+      in zookeeper. Default value configured is 1MB.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.container-tokens.master-key-rolling-interval-secs</name>
+  <value>43200</value>
+    <description>Interval for the roll over for the master key used to generate
+        container tokens. It is expected to be much greater than
+        yarn.nm.liveness-monitor.expiry-interval-ms and
+        yarn.resourcemanager.rm.container-allocation.expiry-interval-ms. Otherwise the
+        behavior is undefined.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.localizer.cache.cleanup.interval-ms</name>
+  <value>1200000</value>
+    <description>Interval in between cache cleanups.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-retry-minimum-interval-ms</name>
+  <value>500</value>
+    <description>Minimum container restart interval in milliseconds.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.ttl-enable</name>
+  <value>false</value>
+    <description>Enable age off of timeline store data.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.node-labels.resync-interval-ms</name>
+  <value>120000</value>
+    <description>
+   Interval at which NM syncs its node labels with RM. NM will send its loaded
+   labels every x intervals configured, along with heartbeat to RM.
+    </description>
+</property>
+
+<property>
+  <name>yarn.router.webapp.https.address</name>
+  <value>0.0.0.0:3001</value>
+    <description>
+      The https address of the Router web application.
+      If only a host is provided as the value,
+      the webapp will be served on a random port.
+    </description>
+</property>
+
+</configuration>

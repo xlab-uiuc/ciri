@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tickTime', 'autopurge.snapRetainCount', 'peerType', 'quorum.cnxn.threads.size', 'quorum.auth.server.saslLoginContext', 'syncEnabled', 'electionAlg'], 'reason': ['tickTime must be an integer', 'autopurge.snapRetainCount must be an integer', 'peerType must be either participant or observer', 'quorum.cnxn.threads.size must be an integer', 'quorum.auth.server.saslLoginContext must be a string', 'syncEnabled must be a boolean', 'electionAlg must be an integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'tickTime', 'autopurge.snapRetainCount', 'peerType', 'quorum.cnxn.threads.size', 'quorum.auth.server.saslLoginContext', 'syncEnabled', 'electionAlg'], 'reason': ['dataDir is not a valid directory', 'clientPort is not a valid port', 'tickTime is not a valid time', 'autopurge.snapRetainCount is not a valid number', 'peerType is not a valid peer type', 'quorum.cnxn.threads.size is not a valid number', 'quorum.auth.server.saslLoginContext is not a valid string', 'syncEnabled is not a valid boolean', 'electionAlg is not a valid election algorithm']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'tickTime', 'autopurge.snapRetainCount', 'peerType', 'quorum.cnxn.threads.size', 'quorum.auth.server.saslLoginContext', 'syncEnabled', 'electionAlg'], 'reason': ['dataDir is not a valid directory', 'clientPort is not a valid port', 'tickTime is not a valid integer', 'autopurge.snapRetainCount is not a valid integer', 'peerType is not a valid peer type', 'quorum.cnxn.threads.size is not a valid integer', 'quorum.auth.server.saslLoginContext is not a valid string', 'syncEnabled is not a valid boolean', 'electionAlg is not a valid election algorithm']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: dataDir	clientPort	tickTime	autopurge.snapRetainCount	peerType	quorum.cnxn.threads.size	quorum.auth.server.saslLoginContext	syncEnabled	electionAlg
+[Ciri] Reason for dataDir: dataDir is not a valid directory
+[Ciri] Reason for clientPort: clientPort is not a valid port
+[Ciri] Reason for tickTime: tickTime is not a valid integer
+[Ciri] Reason for autopurge.snapRetainCount: autopurge.snapRetainCount is not a valid integer
+[Ciri] Reason for peerType: peerType is not a valid peer type
+[Ciri] Reason for quorum.cnxn.threads.size: quorum.cnxn.threads.size is not a valid integer
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext is not a valid string
+[Ciri] Reason for syncEnabled: syncEnabled is not a valid boolean
+[Ciri] Reason for electionAlg: electionAlg is not a valid election algorithm

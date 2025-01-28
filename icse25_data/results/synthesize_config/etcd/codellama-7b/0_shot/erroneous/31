@@ -1,0 +1,24 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-dial-timeout', 'discovery-fallback', 'proxy'], 'reason': ['proxy-refresh-interval: 30000 is not a valid value for proxy-refresh-interval. The value must be a positive integer.', 'proxy-dial-timeout: 500 is not a valid value for proxy-dial-timeout. The value must be a positive integer.', 'discovery-fallback: proxy is not a valid value for discovery-fallback. The value must be one of [proxy, gossip]', 'proxy: off is not a valid value for proxy. The value must be one of [off, read-only, on]']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout'], 'reason': ['proxy-dial-timeout must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'proxy-refresh-interval', 'proxy-dial-timeout', 'discovery-fallback', 'proxy'], 'reason': ['initial-cluster-state must be either new or existing', 'proxy-refresh-interval must be greater than 0', 'proxy-dial-timeout must be greater than 0', 'discovery-fallback must be either proxy or static', 'proxy must be either on or off']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval'], 'reason': ['proxy-refresh-interval is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'proxy-refresh-interval', 'proxy-dial-timeout', 'discovery-fallback', 'proxy'], 'reason': ['initial-cluster-state must be either new or existing', 'proxy-refresh-interval must be greater than 0', 'proxy-dial-timeout must be greater than 0', 'discovery-fallback must be either proxy or static', 'proxy must be either on or off']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'proxy-refresh-interval', 'proxy-dial-timeout', 'discovery-fallback', 'proxy'], 'reason': ['initial-cluster-state is not a valid value. Valid values are new, existing, and remove.', 'proxy-refresh-interval is not a valid value. Valid values are integer values greater than 0.', 'proxy-dial-timeout is not a valid value. Valid values are integer values greater than 0.', 'discovery-fallback is not a valid value. Valid values are exit, proxy, and disable.', 'proxy is not a valid value. Valid values are on, off, and auto.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: initial-cluster-state	proxy-refresh-interval	proxy-dial-timeout	discovery-fallback	proxy
+[Ciri] Reason for initial-cluster-state: initial-cluster-state is not a valid value. Valid values are new, existing, and remove.
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval must be greater than 0
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout must be greater than 0
+[Ciri] Reason for discovery-fallback: discovery-fallback must be either proxy or static
+[Ciri] Reason for proxy: proxy is not a valid value. Valid values are on, off, and auto.

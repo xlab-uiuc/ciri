@@ -1,0 +1,26 @@
+Wrong shot number:
+[10, 15, 3]
+
+Correct shot number:
+[15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.snapshot.skiplist.max.levels'], 'reason': ["The value of the property 'dfs.namenode.snapshot.skiplist.max.levels' should be greater than or equal to 1."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.gc.time.monitor.enable'], 'reason': ["The property 'dfs.namenode.gc.time.monitor.enable' has the value 'false' which is not within the accepted value {true,false}."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.snapshot.skiplist.max.levels'], 'reason': ["The property 'dfs.namenode.snapshot.skiplist.max.levels' has the value '0' which is not within the accepted value range of [1, 10]."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.failover.sleep.base.millis'], 'reason': ["The value of the property 'dfs.client.failover.sleep.base.millis' should be smaller or equal to the value of the property 'dfs.heartbeat.interval'."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.failover.sleep.base.millis'], 'reason': ["The value of the property 'dfs.client.failover.sleep.base.millis' should be greater than or equal to 1000."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.client.failover.sleep.base.millis
+[Ciri] Reason for dfs.client.failover.sleep.base.millis: The value of the property 'dfs.client.failover.sleep.base.millis' should be greater than or equal to 1000.

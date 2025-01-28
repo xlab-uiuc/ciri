@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 10, 15]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.file.close.num-committed-allowed'], 'reason': ["The property 'dfs.namenode.file.close.num-committed-allowed' has the value '0' which is not within the accepted range of 1 to 2147483647."]}
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.edit-cache-size.bytes'], 'reason': ["The value of the property 'dfs.journalnode.edit-cache-size.bytes' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.edit-cache-size.bytes'], 'reason': ["The value of the property 'dfs.journalnode.edit-cache-size.bytes' should be greater than or equal to 0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.journalnode.edit-cache-size.bytes
+[Ciri] Reason for dfs.journalnode.edit-cache-size.bytes: The value of the property 'dfs.journalnode.edit-cache-size.bytes' should be greater than or equal to 0.

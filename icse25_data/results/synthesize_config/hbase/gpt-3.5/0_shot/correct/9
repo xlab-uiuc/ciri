@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl', 'hbase.master.keytab.file'], 'reason': ["The 'usage' tag is not a valid tag for the property 'hbase.regionserver.hlog.writer.impl'.", "The 'usage' tag is not a valid tag for the property 'hbase.master.keytab.file'."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl', 'hbase.regionserver.global.memstore.size'], 'reason': ["The 'usage' tag is not a valid tag for the property 'hbase.regionserver.hlog.writer.impl'.", "The 'usage' tag is not a valid tag for the property 'hbase.regionserver.global.memstore.size'."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl', 'hbase.master.keytab.file'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.regionserver.hlog.writer.impl'.", "The 'usage' tag is not a valid tag for property 'hbase.master.keytab.file'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.hlog.writer.impl	hbase.master.keytab.file
+[Ciri] Reason for hbase.regionserver.hlog.writer.impl: The 'usage' tag is not a valid tag for the property 'hbase.regionserver.hlog.writer.impl'.
+[Ciri] Reason for hbase.master.keytab.file: The 'usage' tag is not a valid tag for property 'hbase.master.keytab.file'.

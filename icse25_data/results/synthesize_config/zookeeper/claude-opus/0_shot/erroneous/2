@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['electionAlg', 'secureClientPortAddress', 'minSessionTimeout'], 'reason': ['electionAlg should be a positive integer value. The default value is 3.', 'secureClientPortAddress is not a valid configuration parameter for Zookeeper 3.7.0. It should be secureClientPort instead.', 'minSessionTimeout should be a positive integer value. The default minimum value is 2 ticks (which is 4000 ms if tickTime is 2000 ms).']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: electionAlg	secureClientPortAddress	minSessionTimeout
+[Ciri] Reason for electionAlg: electionAlg should be a positive integer value. The default value is 3.
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress is not a valid configuration parameter for Zookeeper 3.7.0. It should be secureClientPort instead.
+[Ciri] Reason for minSessionTimeout: minSessionTimeout should be a positive integer value. The default minimum value is 2 ticks (which is 4000 ms if tickTime is 2000 ms).

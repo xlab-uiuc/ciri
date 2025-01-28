@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.staging.tmp.path', 'ipc.[port_number].decay-scheduler.thresholds'], 'reason': ['The value for fs.s3a.committer.staging.tmp.path contains multiple consecutive slashes, which is not recommended.', 'The property name ipc.[port_number].decay-scheduler.thresholds is not a valid property name in Hadoop common 3.3.0. The correct property name should be ipc.server.decayScheduler.thresholds.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.committer.staging.tmp.path	ipc.[port_number].decay-scheduler.thresholds
+[Ciri] Reason for fs.s3a.committer.staging.tmp.path: The value for fs.s3a.committer.staging.tmp.path contains multiple consecutive slashes, which is not recommended.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: The property name ipc.[port_number].decay-scheduler.thresholds is not a valid property name in Hadoop common 3.3.0. The correct property name should be ipc.server.decayScheduler.thresholds.

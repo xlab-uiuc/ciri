@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 1, 7]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'clientPort'], 'reason': ["The property 'clientPortAddress' is redundant as 'clientPort' is already defined. Remove 'clientPortAddress'.", "The property 'clientPort' is not a valid property for ZooKeeper version 3.7.0."]}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'clientPort'], 'reason': ["The property 'clientPortAddress' and 'clientPort' are conflicting as they both define the client port. Use only one of them.", "The property 'clientPort' is not a valid property for ZooKeeper version 3.7.0."]}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'clientPort'], 'reason': ["The property 'clientPortAddress' is specified along with 'clientPort'. Only one of them should be used.", "The property 'clientPort' is not a valid property for ZooKeeper version 3.7.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: clientPortAddress	clientPort
+[Ciri] Reason for clientPortAddress: The property 'clientPortAddress' is specified along with 'clientPort'. Only one of them should be used.
+[Ciri] Reason for clientPort: The property 'clientPort' is not a valid property for ZooKeeper version 3.7.0.

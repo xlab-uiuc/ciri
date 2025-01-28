@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.rootdir.perms'], 'reason': ["The value for 'hbase.rootdir.perms' should be in octal format. It should be prefixed with a '0' to indicate octal representation. For example, '700' instead of '1400'."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.fileSplitTimeout', 'hbase.client.perserver.requests.threshold', 'hbase.rootdir.perms', 'hbase.mob.file.cache.size'], 'reason': ["The property 'hbase.master.fileSplitTimeout' has a description that is too long and contains unnecessary details.", "The property 'hbase.client.perserver.requests.threshold' has a description that is too long and contains unnecessary details.", "The property 'hbase.rootdir.perms' has a usage tag that is not standard in HBase configuration files.", "The property 'hbase.mob.file.cache.size' has a description that is too long and contains unnecessary details."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.fileSplitTimeout', 'hbase.client.perserver.requests.threshold', 'hbase.rootdir.perms'], 'reason': ["The property 'hbase.master.fileSplitTimeout' has a description that is too long and contains unnecessary details.", "The property 'hbase.client.perserver.requests.threshold' has a description that is too long and contains unnecessary details.", "The property 'hbase.rootdir.perms' has a usage tag that is not standard for HBase configuration files."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.fileSplitTimeout', 'hbase.client.perserver.requests.threshold', 'hbase.rootdir.perms'], 'reason': ["The property 'hbase.master.fileSplitTimeout' has a description that is too long and contains unnecessary details.", "The property 'hbase.client.perserver.requests.threshold' has a description that is too long and contains unnecessary details.", "The property 'hbase.rootdir.perms' has a usage tag that is not valid for this property."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.fileSplitTimeout', 'hbase.client.perserver.requests.threshold', 'hbase.rootdir.perms'], 'reason': ["The property 'hbase.master.fileSplitTimeout' has a long description that is not properly formatted.", "The property 'hbase.client.perserver.requests.threshold' has a description that is too long and should be concise.", "The property 'hbase.rootdir.perms' has a usage tag that is not standard in HBase configuration files."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.fileSplitTimeout', 'hbase.client.perserver.requests.threshold', 'hbase.regionserver.minorcompaction.pagecache.drop', 'hbase.rootdir.perms', 'hbase.mob.file.cache.size'], 'reason': ["The property 'hbase.master.fileSplitTimeout' has a long description that is too detailed and contains unnecessary information.", "The property 'hbase.client.perserver.requests.threshold' has a long description that is too detailed and contains unnecessary information.", "The property 'hbase.regionserver.minorcompaction.pagecache.drop' has a long description that is too detailed and contains unnecessary information.", "The property 'hbase.rootdir.perms' has a usage tag that is not standard for HBase configuration files.", "The property 'hbase.mob.file.cache.size' has a long description that is too detailed and contains unnecessary information."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.master.fileSplitTimeout	hbase.client.perserver.requests.threshold	hbase.rootdir.perms
+[Ciri] Reason for hbase.master.fileSplitTimeout: The property 'hbase.master.fileSplitTimeout' has a long description that is not properly formatted.
+[Ciri] Reason for hbase.client.perserver.requests.threshold: The property 'hbase.client.perserver.requests.threshold' has a description that is too long and contains unnecessary details.
+[Ciri] Reason for hbase.rootdir.perms: The property 'hbase.rootdir.perms' has a usage tag that is not valid for this property.

@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_threshold', 'autovacuum_vacuum_cost_limit', 'autovacuum_analyze_threshold'], 'reason': ['autovacuum_vacuum_threshold must be greater than or equal to 0', 'autovacuum_vacuum_cost_limit must be greater than or equal to 0', 'autovacuum_analyze_threshold must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['The value of max_connections must be greater than 0.']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_worker_processes', 'max_parallel_workers'], 'reason': ['max_connections must be greater than 10', 'max_worker_processes must be greater than 8', 'max_parallel_workers must be greater than 7']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['The value of max_connections must be greater than 0.']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'shared_buffers', 'effective_cache_size', 'maintenance_work_mem', 'work_mem', 'max_stack_depth'], 'reason': ['max_connections must be greater than 10', 'shared_buffers must be greater than 128MB', 'effective_cache_size must be greater than 48MB', 'maintenance_work_mem must be greater than 16MB', 'work_mem must be greater than 4MB', 'max_stack_depth must be greater than 2MB']}
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be greater than 0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: max_connections
+[Ciri] Reason for max_connections: max_connections must be greater than 0

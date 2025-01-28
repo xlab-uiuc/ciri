@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.azure.user.agent.prefix</name>
+  <value>unknown</value>
+    <description>
+      WASB passes User-Agent header to the Azure back-end. The default value
+      contains WASB version, Java Runtime version, Azure Client library version,
+      and the value of the configuration option fs.azure.user.agent.prefix.
+    </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.ftp.impl</name>
+  <value>org.apache.hadoop.fs.ftp.FtpFs</value>
+  <description>The FileSystem for Ftp: uris.</description>
+</property>
+
+<property>
+  <name>fs.s3a.committer.staging.tmp.path</name>
+  <value>tmp/staging</value>
+  <description>
+    Path in the cluster filesystem for temporary data.
+    This is for HDFS, not the local filesystem.
+    It is only for the summary data of each file, not the actual
+    data being committed.
+    Using an unqualified path guarantees that the full path will be
+    generated relative to the home directory of the user creating the job,
+    hence private (assuming home directory permissions are secure).
+  </description>
+</property>
+
+<property>
+  <name>fs.azure.secure.mode</name>
+  <value>true</value>
+  <description>
+    Config flag to identify the mode in which fs.azure.NativeAzureFileSystem needs
+    to run under. Setting it "true" would make fs.azure.NativeAzureFileSystem use
+    SAS keys to communicate with Azure storage.
+  </description>
+</property>
+
+<property>
+  <name>ipc.client.tcpnodelay</name>
+  <value>false</value>
+  <description>Use TCP_NODELAY flag to bypass Nagle's algorithm transmission delays.
+  </description>
+</property>
+
+<property>
+  <name>fs.default.name</name>
+  <value>file:///</value>
+  <description>Deprecated. Use (fs.defaultFS) property
+  instead</description>
+</property>
+
+<property>
+  <name>file.blocksize</name>
+  <value>33554432</value>
+  <description>Block size</description>
+</property>
+
+<property>
+  <name>fs.adl.oauth2.msi.port</name>
+  <value>3000</value>
+    <description>
+      The localhost port for the MSI token service. This is the port specified
+      when creating the Azure VM. The default, if this setting is not specified,
+      is 50342.
+      Used by MSI token provider.
+    </description>
+</property>
+
+</configuration>

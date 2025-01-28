@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.rpc-bind-host</name>
+  <value>x.0.0.0.0.0</value>
+  <description>
+    The actual address the RPC server will bind to. If this optional address is
+    set, it overrides only the hostname portion of dfs.namenode.rpc-address.
+    It can also be specified per name node or name service for HA/Federation.
+    This is useful for making the name node listen on all interfaces by
+    setting it to 0.0.0.0.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.heartbeat.recheck-interval</name>
+  <value>150000</value>
+  <description>
+    This time decides the interval to check for expired datanodes.
+    With this value and dfs.heartbeat.interval, the interval of
+    deciding the datanode is stale or not is also calculated.
+    The unit of this configuration is millisecond.
+  </description>
+</property>
+
+<property>
+  <name>dfs.internal.nameservices</name>
+  <value>ns2</value>
+  <description>
+    Comma-separated list of nameservices that belong to this cluster.
+    Datanode will report to all the nameservices in this list. By default
+    this is set to the value of dfs.nameservices.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edekcacheloader.initial.delay.ms</name>
+  <value>3000</value>
+  <description>When KeyProvider is configured, the time delayed until the first
+    attempt to warm up edek cache on NN start up / become active.
+  </description>
+</property>
+
+<property>
+  <name>dfs.balancer.keytab.enabled</name>
+  <value>true</value>
+  <description>
+    Set to true to enable login using a keytab for Kerberized Hadoop.
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.satisfier.enabled</name>
+  <value>true</value>
+  <description>
+    By default, StoragePolicySatisfier is disabled.
+    Administrator can dynamically change StoragePolicySatisfier mode by using reconfiguration option.
+    Dynamic mode change can be achieved in the following way.
+    1. Edit/update this configuration property values in hdfs-site.xml
+    2. Execute the reconfig command on hadoop command line prompt.
+       For example:$hdfs -reconfig namenode nn_host:port start
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.satisfier.datanode.cache.refresh.interval.ms</name>
+  <value>150000</value>
+  <description>
+    How often to refresh the datanode storages cache in milliseconds. This cache
+    keeps live datanode storage reports fetched from namenode. After elapsed time,
+    it will again fetch latest datanodes from namenode.
+    By default, this parameter is set to 5 minutes.
+  </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.leveldb.path</name>
+  <value>/valid/file2</value>
+    <description>
+      The read/write path for the leveldb-based alias map
+      (org.apache.hadoop.hdfs.server.common.blockaliasmap.impl.LevelDBFileRegionAliasMap).
+      The path has to be explicitly configured when this alias map is used.
+    </description>
+</property>
+
+</configuration>

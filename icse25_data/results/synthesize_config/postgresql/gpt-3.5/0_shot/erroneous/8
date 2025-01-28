@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ["bgwriter_delay value should be in milliseconds, e.g., '128ms'.", 'max_pred_locks_per_relation value should be a positive integer.', 'log_min_duration_sample value should be a positive integer representing the minimum duration for sample logging.']}
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ["bgwriter_delay value should be in milliseconds, e.g., '128ms'.", 'max_pred_locks_per_relation value should be a positive integer.', 'log_min_duration_sample value should be a positive integer representing the duration in milliseconds.']}
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ['Invalid value for bgwriter_delay. It should be in milliseconds.', 'max_pred_locks_per_relation cannot be negative.', 'Invalid value for log_min_duration_sample. It should be a positive integer.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: bgwriter_delay	max_pred_locks_per_relation	log_min_duration_sample
+[Ciri] Reason for bgwriter_delay: bgwriter_delay value should be in milliseconds, e.g., '128ms'.
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation value should be a positive integer.
+[Ciri] Reason for log_min_duration_sample: log_min_duration_sample value should be a positive integer representing the minimum duration for sample logging.

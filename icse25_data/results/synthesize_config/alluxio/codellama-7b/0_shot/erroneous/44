@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.size', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio', 'alluxio.worker.tieredstore.level0.alias', 'alluxio.master.ufs.journal.max.catchup.time'], 'reason': ['alluxio.user.client.cache.size must be a positive integer', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio must be a positive float', 'alluxio.worker.tieredstore.level0.alias must be a valid tier alias', 'alluxio.master.ufs.journal.max.catchup.time must be a positive duration']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.size'], 'reason': ['alluxio.user.client.cache.size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.folder', 'alluxio.master.journal.folder', 'alluxio.user.client.cache.size', 'alluxio.worker.tieredstore.level0.alias', 'alluxio.master.ufs.journal.max.catchup.time'], 'reason': ['The value of alluxio.master.journal.folder is not a valid URI', 'The value of alluxio.master.journal.folder is not a valid URI', 'The value of alluxio.user.client.cache.size is not a valid size', 'The value of alluxio.worker.tieredstore.level0.alias is not a valid tier alias', 'The value of alluxio.master.ufs.journal.max.catchup.time is not a valid duration']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.size', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio', 'alluxio.worker.tieredstore.level0.alias', 'alluxio.master.ufs.journal.max.catchup.time'], 'reason': ['alluxio.user.client.cache.size should be a positive integer, but the value is 512MB', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio should be a float between 0 and 1, but the value is 1.6', 'alluxio.worker.tieredstore.level0.alias should be a string, but the value is MEM', 'alluxio.master.ufs.journal.max.catchup.time should be a duration, but the value is 1min']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.size', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio', 'alluxio.worker.tieredstore.level0.alias', 'alluxio.master.ufs.journal.max.catchup.time'], 'reason': ['alluxio.user.client.cache.size should be a positive integer', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio should be a float between 0 and 1', 'alluxio.worker.tieredstore.level0.alias should be a string', 'alluxio.master.ufs.journal.max.catchup.time should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.size', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio', 'alluxio.worker.tieredstore.level0.alias', 'alluxio.master.ufs.journal.max.catchup.time'], 'reason': ['alluxio.user.client.cache.size should be a positive integer', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio should be a float between 0 and 1', 'alluxio.worker.tieredstore.level0.alias should be a string', 'alluxio.master.ufs.journal.max.catchup.time should be a positive integer']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.user.client.cache.size	alluxio.master.metastore.inode.cache.low.water.mark.ratio	alluxio.worker.tieredstore.level0.alias	alluxio.master.ufs.journal.max.catchup.time
+[Ciri] Reason for alluxio.user.client.cache.size: alluxio.user.client.cache.size should be a positive integer
+[Ciri] Reason for alluxio.master.metastore.inode.cache.low.water.mark.ratio: alluxio.master.metastore.inode.cache.low.water.mark.ratio should be a float between 0 and 1, but the value is 1.6
+[Ciri] Reason for alluxio.worker.tieredstore.level0.alias: alluxio.worker.tieredstore.level0.alias should be a string
+[Ciri] Reason for alluxio.master.ufs.journal.max.catchup.time: alluxio.master.ufs.journal.max.catchup.time should be a positive integer

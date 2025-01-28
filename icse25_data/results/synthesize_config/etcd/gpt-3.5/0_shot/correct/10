@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode', 'proxy-failure-wait', 'heartbeat-interval', 'initial-cluster-state', 'log-level', 'client-cert-auth', 'proxy-refresh-interval', 'listen-peer-urls'], 'reason': ["Invalid value for 'auto-compaction-mode'.", "Invalid value for 'proxy-failure-wait'.", "Invalid value for 'heartbeat-interval'.", "Invalid value for 'initial-cluster-state'.", "Invalid value for 'log-level'.", "Invalid value for 'client-cert-auth'.", "Invalid value for 'proxy-refresh-interval'.", "Invalid value for 'listen-peer-urls'."]}
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode', 'proxy-failure-wait', 'heartbeat-interval', 'initial-cluster-state', 'log-level', 'client-cert-auth', 'proxy-refresh-interval', 'listen-peer-urls'], 'reason': ["Invalid value for auto-compaction-mode. It should be 'periodic' or 'revision'.", 'Invalid value for proxy-failure-wait. It should be a duration in milliseconds.', 'Invalid value for heartbeat-interval. It should be a duration in milliseconds.', "Invalid value for initial-cluster-state. It should be 'new', 'existing', or 'existing|new'.", "Invalid value for log-level. It should be one of 'debug', 'info', 'warn', 'error', 'panic', or 'fatal'.", 'Invalid value for client-cert-auth. It should be a boolean value (true or false).', 'Invalid value for proxy-refresh-interval. It should be a duration in milliseconds.', 'Invalid value for listen-peer-urls. It should be a list of URLs.']}
+
+{'hasError': True, 'errParameter': ['auto-compaction-mode', 'proxy-failure-wait', 'heartbeat-interval', 'initial-cluster-state', 'client-cert-auth', 'proxy-refresh-interval', 'listen-peer-urls'], 'reason': ["Invalid value for 'auto-compaction-mode'.", "Invalid value for 'proxy-failure-wait'.", "Invalid value for 'heartbeat-interval'.", "Invalid value for 'initial-cluster-state'.", "Invalid value for 'client-cert-auth'.", "Invalid value for 'proxy-refresh-interval'.", "Invalid value for 'listen-peer-urls'."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: auto-compaction-mode	proxy-failure-wait	heartbeat-interval	initial-cluster-state	log-level	client-cert-auth	proxy-refresh-interval	listen-peer-urls
+[Ciri] Reason for auto-compaction-mode: Invalid value for 'auto-compaction-mode'.
+[Ciri] Reason for proxy-failure-wait: Invalid value for proxy-failure-wait. It should be a duration in milliseconds.
+[Ciri] Reason for heartbeat-interval: Invalid value for 'heartbeat-interval'.
+[Ciri] Reason for initial-cluster-state: Invalid value for 'initial-cluster-state'.
+[Ciri] Reason for log-level: Invalid value for 'log-level'.
+[Ciri] Reason for client-cert-auth: Invalid value for 'client-cert-auth'.
+[Ciri] Reason for proxy-refresh-interval: Invalid value for 'proxy-refresh-interval'.
+[Ciri] Reason for listen-peer-urls: Invalid value for listen-peer-urls. It should be a list of URLs.

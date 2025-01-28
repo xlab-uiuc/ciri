@@ -1,0 +1,15 @@
+Wrong shot number:
+[3, 2, 9]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.admin.threads.max', 'alluxio.user.logging.threshold'], 'reason': ["The property 'alluxio.underfs.s3.admin.threads.max' has the value 'true' which is not a valid integer value.", "The property 'alluxio.user.logging.threshold' has the value '10s' which uses an incorrect time unit format. It should be something like '10sec' or '10min'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.s3.admin.threads.max	alluxio.user.logging.threshold
+[Ciri] Reason for alluxio.underfs.s3.admin.threads.max: The property 'alluxio.underfs.s3.admin.threads.max' has the value 'true' which is not a valid integer value.
+[Ciri] Reason for alluxio.user.logging.threshold: The property 'alluxio.user.logging.threshold' has the value '10s' which uses an incorrect time unit format. It should be something like '10sec' or '10min'.

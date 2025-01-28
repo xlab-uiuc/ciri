@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable', 'ipc.[port_number].weighted-cost.lockfree', 'rpc.metrics.quantile.enable', 'hadoop.registry.zk.root'], 'reason': ["The value '999.-1.0.0' for property 'fs.ftp.host' seems incorrect.", "The value '32M' for property 'fs.s3a.block.size' should have a valid suffix (e.g., K, M, G, T, P).", "The property 'ipc.[port_number].decay-scheduler.thresholds' has placeholders that need to be replaced with actual port numbers.", "The value 'false' for property 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable' should be a boolean (true/false).", "The value '1' for property 'ipc.[port_number].weighted-cost.lockfree' should be a floating-point number.", "The value 'false' for property 'rpc.metrics.quantile.enable' should be a boolean (true/false).", "The value '/valid/file1' for property 'hadoop.registry.zk.root' seems valid."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.block.size	ipc.[port_number].decay-scheduler.thresholds	ipc.[port_number].decay-scheduler.backoff.responsetime.enable	ipc.[port_number].weighted-cost.lockfree	rpc.metrics.quantile.enable	hadoop.registry.zk.root
+[Ciri] Reason for fs.ftp.host: The value '999.-1.0.0' for property 'fs.ftp.host' seems incorrect.
+[Ciri] Reason for fs.s3a.block.size: The value '32M' for property 'fs.s3a.block.size' should have a valid suffix (e.g., K, M, G, T, P).
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: The property 'ipc.[port_number].decay-scheduler.thresholds' has placeholders that need to be replaced with actual port numbers.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.enable: The value 'false' for property 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable' should be a boolean (true/false).
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The value '1' for property 'ipc.[port_number].weighted-cost.lockfree' should be a floating-point number.
+[Ciri] Reason for rpc.metrics.quantile.enable: The value 'false' for property 'rpc.metrics.quantile.enable' should be a boolean (true/false).
+[Ciri] Reason for hadoop.registry.zk.root: The value '/valid/file1' for property 'hadoop.registry.zk.root' seems valid.

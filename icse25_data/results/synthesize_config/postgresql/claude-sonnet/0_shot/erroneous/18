@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_relation', 'vacuum_cost_limit', 'tcp_user_timeout'], 'reason': ['max_pred_locks_per_relation should be a non-negative integer, -4 is an invalid value.', 'vacuum_cost_limit is a deprecated parameter in PostgreSQL 13 and should not be used.', 'tcp_user_timeout is not a valid parameter in PostgreSQL 13. The correct parameter is tcp_user_timeout.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max_pred_locks_per_relation	vacuum_cost_limit	tcp_user_timeout
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation should be a non-negative integer, -4 is an invalid value.
+[Ciri] Reason for vacuum_cost_limit: vacuum_cost_limit is a deprecated parameter in PostgreSQL 13 and should not be used.
+[Ciri] Reason for tcp_user_timeout: tcp_user_timeout is not a valid parameter in PostgreSQL 13. The correct parameter is tcp_user_timeout.

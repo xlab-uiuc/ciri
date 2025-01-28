@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.sensitive-config-keys</name>
+  <value>secret$</value>
+  <description>A comma-separated or multi-line list of regular expressions to
+      match configuration keys that should be redacted where appropriate, for
+      example, when logging modified properties during a reconfiguration,
+      private credentials should not be logged.
+  </description>
+</property>
+
+<property>
+  <name>fs.df.interval</name>
+  <value>30000</value>
+  <description>Disk usage statistics refresh interval in msec.</description>
+</property>
+
+<property>
+  <name>fs.s3a.retry.throttle.limit</name>
+  <value>40</value>
+  <description>
+    Number of times to retry any throttled request.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3.maxRetries</name>
+  <value>5</value>
+  <description>The maximum number of retries for reading or writing files to S3,
+  before we signal failure to the application.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].cost-provider.impl</name>
+  <value>org.apache.hadoop.ipc.DefaultCostProvider</value>
+  <description>The cost provider mapping user requests to their cost. To
+    enable determination of cost based on processing time, use
+    org.apache.hadoop.ipc.WeightedTimeCostProvider.
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.kerberos.keytab</name>
+  <value>/valid/file1</value>
+  <description>
+    Location of the keytab file with the credentials for the principal.
+    Referring to the same keytab file Oozie uses for its Kerberos credentials for Hadoop.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.zk.retry.interval.ms</name>
+  <value>500</value>
+    <description>
+    </description>
+</property>
+
+<property>
+  <name>hadoop.zk.acl</name>
+  <value>world:anyone:rwcda</value>
+    <description>ACL's to be used for ZooKeeper znodes.</description>
+</property>
+
+</configuration>

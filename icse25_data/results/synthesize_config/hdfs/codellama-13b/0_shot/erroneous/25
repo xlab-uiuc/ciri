@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.datanode.use.datanode.hostname', 'dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold', 'dfs.http.client.retry.policy.spec', 'dfs.client.block.write.locateFollowingBlock.retries', 'dfs.datanode.transferTo.allowed', 'dfs.datanode.replica.cache.root.dir', 'dfs.qjournal.finalize-segment.timeout.ms'], 'reason': ['dfs.datanode.data.dir.perm: The value of this property is not a valid octal number.', 'dfs.datanode.use.datanode.hostname: The value of this property is not a valid boolean.', 'dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold: The value of this property is not a valid size unit.', 'dfs.http.client.retry.policy.spec: The value of this property is not a valid list of integers.', 'dfs.client.block.write.locateFollowingBlock.retries: The value of this property is not a valid integer.', 'dfs.datanode.transferTo.allowed: The value of this property is not a valid boolean.', 'dfs.datanode.replica.cache.root.dir: The value of this property is not a valid directory.', 'dfs.qjournal.finalize-segment.timeout.ms: The value of this property is not a valid integer.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.datanode.data.dir.perm	dfs.datanode.use.datanode.hostname	dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold	dfs.http.client.retry.policy.spec	dfs.client.block.write.locateFollowingBlock.retries	dfs.datanode.transferTo.allowed	dfs.datanode.replica.cache.root.dir	dfs.qjournal.finalize-segment.timeout.ms
+[Ciri] Reason for dfs.datanode.data.dir.perm: dfs.datanode.data.dir.perm: The value of this property is not a valid octal number.
+[Ciri] Reason for dfs.datanode.use.datanode.hostname: dfs.datanode.use.datanode.hostname: The value of this property is not a valid boolean.
+[Ciri] Reason for dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold: dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold: The value of this property is not a valid size unit.
+[Ciri] Reason for dfs.http.client.retry.policy.spec: dfs.http.client.retry.policy.spec: The value of this property is not a valid list of integers.
+[Ciri] Reason for dfs.client.block.write.locateFollowingBlock.retries: dfs.client.block.write.locateFollowingBlock.retries: The value of this property is not a valid integer.
+[Ciri] Reason for dfs.datanode.transferTo.allowed: dfs.datanode.transferTo.allowed: The value of this property is not a valid boolean.
+[Ciri] Reason for dfs.datanode.replica.cache.root.dir: dfs.datanode.replica.cache.root.dir: The value of this property is not a valid directory.
+[Ciri] Reason for dfs.qjournal.finalize-segment.timeout.ms: dfs.qjournal.finalize-segment.timeout.ms: The value of this property is not a valid integer.

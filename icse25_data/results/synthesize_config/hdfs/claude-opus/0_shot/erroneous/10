@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.pmem.cache.dirs', 'dfs.namenode.upgrade.domain.factor'], 'reason': ["The value '/\\hadoop/s3a' for dfs.datanode.pmem.cache.dirs is invalid. It should be a valid directory path without backslashes.", "The value '${dfs.replication}' for dfs.namenode.upgrade.domain.factor is invalid. It should be an integer value, not a variable reference."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.pmem.cache.dirs	dfs.namenode.upgrade.domain.factor
+[Ciri] Reason for dfs.datanode.pmem.cache.dirs: The value '/\hadoop/s3a' for dfs.datanode.pmem.cache.dirs is invalid. It should be a valid directory path without backslashes.
+[Ciri] Reason for dfs.namenode.upgrade.domain.factor: The value '${dfs.replication}' for dfs.namenode.upgrade.domain.factor is invalid. It should be an integer value, not a variable reference.

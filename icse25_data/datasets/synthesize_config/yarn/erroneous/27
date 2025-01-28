@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.ipc.rpc.class</name>
+  <value>org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC</value>
+    <description>RPC class implementation</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.placement-constraints.algorithm.iterator</name>
+  <value>SERIAL</value>
+    <description>Placement Algorithm Requests Iterator to be used.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.scheduler.class</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>
+    <description>The class to use as the resource scheduler.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.configuration.provider-class</name>
+  <value>org.apache.hadoop.yarn.LocalConfigurationProvider</value>
+    <description>The class to use as the configuration provider.
+    If org.apache.hadoop.yarn.LocalConfigurationProvider is used,
+    the local configuration will be loaded.
+    If org.apache.hadoop.yarn.FileSystemBasedConfigurationProvider is used,
+    the configuration which will be loaded should be uploaded to remote File system first.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.hostname</name>
+  <value>999.-1.0.0</value>
+    <description>The hostname of the NM.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.host-pid-namespace.allowed</name>
+  <value>false</value>
+    <description>Allow host pid namespace for runC containers.
+      Use with care.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-timeout-interval-secs</name>
+  <value>360</value>
+    <description>The timeout value in seconds for the values in
+      the stat cache.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.webapp.rest-csrf.methods-to-ignore</name>
+  <value>OPTIONS</value>
+    <description>
+      Optional parameter that indicates the list of HTTP methods that do not
+      require CSRF protection
+    </description>
+</property>
+
+</configuration>

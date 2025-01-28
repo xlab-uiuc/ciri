@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 8, 4]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.recovery.dir', 'yarn.timeline-service.entity-group-fs-store.active-dir'], 'reason': ["The property 'yarn.nodemanager.recovery.dir' has the value '/valid/file2' which does not follow the correct path format.", "The property 'yarn.timeline-service.entity-group-fs-store.active-dir' has the value '/valid/file1' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.webapp.https.address', 'yarn.nodemanager.recovery.dir', 'yarn.timeline-service.entity-group-fs-store.active-dir'], 'reason': ["The property 'yarn.resourcemanager.webapp.https.address' has the value '${yarn.resourcemanager.hostname}:8090' which does not follow the correct hostname:port format.", "The property 'yarn.nodemanager.recovery.dir' has the value '/valid/file2' which does not follow the correct path format.", "The property 'yarn.timeline-service.entity-group-fs-store.active-dir' has the value '/valid/file1' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.recovery.dir', 'yarn.timeline-service.entity-group-fs-store.active-dir'], 'reason': ["The property 'yarn.nodemanager.recovery.dir' has the value '/valid/file2' which does not follow the correct path format.", "The property 'yarn.timeline-service.entity-group-fs-store.active-dir' has the value '/valid/file1' which does not follow the correct path format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.recovery.dir	yarn.timeline-service.entity-group-fs-store.active-dir
+[Ciri] Reason for yarn.nodemanager.recovery.dir: The property 'yarn.nodemanager.recovery.dir' has the value '/valid/file2' which does not follow the correct path format.
+[Ciri] Reason for yarn.timeline-service.entity-group-fs-store.active-dir: The property 'yarn.timeline-service.entity-group-fs-store.active-dir' has the value '/valid/file1' which does not follow the correct path format.

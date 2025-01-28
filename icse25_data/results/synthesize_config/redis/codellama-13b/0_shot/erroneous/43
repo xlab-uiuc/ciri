@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dir', 'stream-node-max-entries'], 'reason': ['dir must be a directory', 'stream-node-max-entries must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['set-max-listpack-value', 'enable-debug-command', 'tls-session-cache-size', 'stream-node-max-entries'], 'reason': ['set-max-listpack-value is not a valid parameter for Redis 7.0.0', 'enable-debug-command is not a valid parameter for Redis 7.0.0', 'tls-session-cache-size is not a valid parameter for Redis 7.0.0', 'stream-node-max-entries is not a valid parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['set-max-listpack-value', 'enable-debug-command', 'tls-session-cache-size', 'latency-monitor-threshold', 'dir', 'proto-max-bulk-len', 'stream-node-max-entries'], 'reason': ['set-max-listpack-value: The value must be an integer.', 'enable-debug-command: The value must be yes or no.', 'tls-session-cache-size: The value must be an integer.', 'latency-monitor-threshold: The value must be an integer.', 'dir: The value must be a directory.', 'proto-max-bulk-len: The value must be an integer.', 'stream-node-max-entries: The value must be an integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dir', 'stream-node-max-entries'], 'reason': ['dir should be a directory path, not a file path.', 'stream-node-max-entries should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['set-max-listpack-value', 'enable-debug-command', 'tls-session-cache-size', 'latency-monitor-threshold', 'dir', 'proto-max-bulk-len', 'stream-node-max-entries'], 'reason': ['set-max-listpack-value is not a valid parameter', 'enable-debug-command is not a valid parameter', 'tls-session-cache-size is not a valid parameter', 'latency-monitor-threshold is not a valid parameter', 'dir is not a valid parameter', 'proto-max-bulk-len is not a valid parameter', 'stream-node-max-entries is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['set-max-listpack-value', 'enable-debug-command', 'tls-session-cache-size', 'latency-monitor-threshold', 'dir', 'proto-max-bulk-len', 'stream-node-max-entries'], 'reason': ['set-max-listpack-value is not a valid parameter', 'enable-debug-command is not a valid parameter', 'tls-session-cache-size is not a valid parameter', 'latency-monitor-threshold is not a valid parameter', 'dir is not a valid parameter', 'proto-max-bulk-len is not a valid parameter', 'stream-node-max-entries is not a valid parameter']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: set-max-listpack-value	enable-debug-command	tls-session-cache-size	latency-monitor-threshold	dir	proto-max-bulk-len	stream-node-max-entries
+[Ciri] Reason for set-max-listpack-value: set-max-listpack-value is not a valid parameter
+[Ciri] Reason for enable-debug-command: enable-debug-command is not a valid parameter
+[Ciri] Reason for tls-session-cache-size: tls-session-cache-size is not a valid parameter
+[Ciri] Reason for latency-monitor-threshold: latency-monitor-threshold is not a valid parameter
+[Ciri] Reason for dir: dir is not a valid parameter
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len is not a valid parameter
+[Ciri] Reason for stream-node-max-entries: stream-node-max-entries is not a valid parameter

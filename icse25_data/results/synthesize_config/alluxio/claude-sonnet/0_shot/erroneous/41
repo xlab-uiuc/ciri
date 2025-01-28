@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port=65536', 'alluxio.underfs.s3.default.mode=350', 'alluxio.worker.free.space.timeout=1sec'], 'reason': ['The value 65536 for alluxio.job.worker.rpc.port is outside the valid range of 0-65535 for a port number.', 'The value 350 for alluxio.underfs.s3.default.mode is not a valid POSIX file mode. It should be a 3-digit octal value.', 'The value 1sec for alluxio.worker.free.space.timeout is too small. The recommended minimum value is 10sec.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.worker.rpc.port=65536	alluxio.underfs.s3.default.mode=350	alluxio.worker.free.space.timeout=1sec
+[Ciri] Reason for alluxio.job.worker.rpc.port=65536: The value 65536 for alluxio.job.worker.rpc.port is outside the valid range of 0-65535 for a port number.
+[Ciri] Reason for alluxio.underfs.s3.default.mode=350: The value 350 for alluxio.underfs.s3.default.mode is not a valid POSIX file mode. It should be a 3-digit octal value.
+[Ciri] Reason for alluxio.worker.free.space.timeout=1sec: The value 1sec for alluxio.worker.free.space.timeout is too small. The recommended minimum value is 10sec.

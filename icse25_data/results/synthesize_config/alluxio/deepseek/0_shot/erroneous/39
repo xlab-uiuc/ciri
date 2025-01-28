@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host=0.0.256.0', 'alluxio.job.master.finished.job.purge.count=-2', 'alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards=1'], 'reason': ['Invalid IP address in alluxio.proxy.web.bind.host. The IP address should be in the range 0.0.0.0 to 255.255.255.255.', 'alluxio.job.master.finished.job.purge.count should be a positive integer or 0, indicating how many finished jobs to keep.', 'alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host=0.0.256.0', 'alluxio.job.master.finished.job.purge.count=-2', 'alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards=1'], 'reason': ['Invalid IP address in alluxio.proxy.web.bind.host. The IP address should be in the range 0.0.0.0 to 255.255.255.255', 'alluxio.job.master.finished.job.purge.count should be a positive integer or 0', 'alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host=0.0.256.0', 'alluxio.job.master.finished.job.purge.count=-2', 'alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards=1'], 'reason': ['Invalid IP address in alluxio.proxy.web.bind.host=0.0.256.0. The IP address should be in the range 0.0.0.0 to 255.255.255.255', 'alluxio.job.master.finished.job.purge.count=-2 is not a valid value. Job purge count should be a positive integer or 0 to disable job purging', 'alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards=1 is not a valid value. Deterministic hash shards should be a positive integer']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.proxy.web.bind.host=0.0.256.0	alluxio.job.master.finished.job.purge.count=-2	alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards=1
+[Ciri] Reason for alluxio.proxy.web.bind.host=0.0.256.0: Invalid IP address in alluxio.proxy.web.bind.host. The IP address should be in the range 0.0.0.0 to 255.255.255.255
+[Ciri] Reason for alluxio.job.master.finished.job.purge.count=-2: alluxio.job.master.finished.job.purge.count should be a positive integer or 0
+[Ciri] Reason for alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards=1: alluxio.user.ufs.block.read.location.policy.deterministic.hash.shards should be a positive integer

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.directory.search.timeout</name>
+  <value>5000</value>
+  <description>
+    The attribute applied to the LDAP SearchControl properties to set a
+    maximum time limit when searching and awaiting a result.
+    Set to 0 if infinite wait period is desired.
+    Default is 10 seconds. Units in milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.uid.cache.secs</name>
+  <value>28800</value>
+    <description>
+        This is the config controlling the validity of the entries in the cache
+        containing the userId to userName and groupId to groupName used by
+        NativeIO getFstat().
+    </description>
+</property>
+
+<property>
+  <name>io.serializations</name>
+  <value>org.apache.hadoop.io.serializer.WritableSerialization, org.apache.hadoop.io.serializer.avro.AvroSpecificSerialization, org.apache.hadoop.io.serializer.avro.AvroReflectSerialization</value>
+  <description>A list of serialization classes that can be used for
+  obtaining serializers and deserializers.</description>
+</property>
+
+<property>
+  <name>fs.s3a.threads.max</name>
+  <value>64</value>
+  <description>The total number of threads available in the filesystem for data
+    uploads *or any other queued filesystem operation*.</description>
+</property>
+
+<property>
+  <name>fs.s3a.retry.throttle.interval</name>
+  <value>1ms</value>
+  <description>
+    Initial between retry attempts on throttled requests, +/- 50%. chosen at random.
+    i.e. for an intial value of 3000ms, the initial delay would be in the range 1500ms to 4500ms.
+    Backoffs are exponential; again randomness is used to avoid the thundering heard problem.
+    500ms is the default value used by the AWS S3 Retry policy.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].scheduler.impl</name>
+  <value>org.apache.hadoop.ipc.DefaultRpcScheduler</value>
+  <description>The fully qualified name of a class to use as the
+    implementation of the scheduler. The default implementation is
+    org.apache.hadoop.ipc.DefaultRpcScheduler (no-op scheduler) when not using
+    FairCallQueue. If using FairCallQueue, defaults to
+    org.apache.hadoop.ipc.DecayRpcScheduler. Use
+    org.apache.hadoop.ipc.DecayRpcScheduler in conjunction with the Fair Call
+    Queue.
+  </description>
+</property>
+
+<property>
+  <name>net.topology.node.switch.mapping.impl</name>
+  <value>org.apache.hadoop.net.ScriptBasedMapping</value>
+  <description> The default implementation of the DNSToSwitchMapping. It
+    invokes a script specified in net.topology.script.file.name to resolve
+    node names. If the value for net.topology.script.file.name is not set, the
+    default value of DEFAULT_RACK is returned for all node names.
+  </description>
+</property>
+
+<property>
+  <name>fs.client.resolve.topology.enabled</name>
+  <value>false</value>
+    <description>Whether the client machine will use the class specified by
+      property net.topology.node.switch.mapping.impl to compute the network
+      distance between itself and remote machines of the FileSystem. Additional
+      properties might need to be configured depending on the class specified
+      in net.topology.node.switch.mapping.impl. For example, if
+      org.apache.hadoop.net.ScriptBasedMapping is used, a valid script file
+      needs to be specified in net.topology.script.file.name.
+    </description>
+</property>
+
+</configuration>

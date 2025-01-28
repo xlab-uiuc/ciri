@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'enable-pprof', 'discovery-fallback', 'proxy', 'initial-cluster-token'], 'reason': ["The 'quota-backend-bytes' parameter is set to 0 which may not be a valid value.", "The 'enable-pprof' parameter is set to false which may not be a valid value.", "The 'discovery-fallback' parameter should be a valid discovery mechanism, not 'proxy'.", "The 'proxy' parameter is set to 'off' which may not be a valid value.", "The 'initial-cluster-token' parameter should be set to a unique token for cluster initialization."]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'enable-pprof', 'log-level', 'discovery-fallback', 'proxy', 'initial-cluster-token'], 'reason': ['quota-backend-bytes should have a value greater than 0', 'enable-pprof should be a boolean value', 'log-level should be one of the valid log levels (e.g., info, debug, warning, error)', 'discovery-fallback should be one of the valid options (e.g., proxy, exit)', 'proxy should be a boolean value', 'initial-cluster-token should not be empty']}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'enable-pprof', 'discovery-fallback', 'proxy', 'initial-cluster-token'], 'reason': ['quota-backend-bytes should be set to a positive value', 'enable-pprof should be a boolean value (true/false)', "discovery-fallback should be one of 'proxy', 'dns', or 'off'", "proxy should be one of 'on', 'readonly', or 'off'", 'initial-cluster-token should be a unique token for the cluster']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: quota-backend-bytes	enable-pprof	discovery-fallback	proxy	initial-cluster-token
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes should be set to a positive value
+[Ciri] Reason for enable-pprof: The 'enable-pprof' parameter is set to false which may not be a valid value.
+[Ciri] Reason for discovery-fallback: discovery-fallback should be one of 'proxy', 'dns', or 'off'
+[Ciri] Reason for proxy: proxy should be one of 'on', 'readonly', or 'off'
+[Ciri] Reason for initial-cluster-token: initial-cluster-token should be a unique token for the cluster

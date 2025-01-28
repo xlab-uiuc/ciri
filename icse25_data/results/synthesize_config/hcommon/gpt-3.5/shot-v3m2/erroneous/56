@@ -1,0 +1,15 @@
+Wrong shot number:
+[13, 8]
+
+Correct shot number:
+[4, 13, 8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.azure.secure.mode', 'fs.azure.local.sas.key.mode'], 'reason': ["The property 'fs.azure.secure.mode' has the value 'false' which is not recommended for secure communication with Azure storage.", "The property 'fs.azure.local.sas.key.mode' has the value 'true' which conflicts with the 'fs.azure.secure.mode' being set to 'false'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.azure.secure.mode	fs.azure.local.sas.key.mode
+[Ciri] Reason for fs.azure.secure.mode: The property 'fs.azure.secure.mode' has the value 'false' which is not recommended for secure communication with Azure storage.
+[Ciri] Reason for fs.azure.local.sas.key.mode: The property 'fs.azure.local.sas.key.mode' has the value 'true' which conflicts with the 'fs.azure.secure.mode' being set to 'false'.

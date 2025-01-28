@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.flush.batch.time', 'alluxio.master.journal.flush.timeout'], 'reason': ['alluxio.master.journal.flush.batch.time should be a valid time duration', 'alluxio.master.journal.flush.timeout should be a valid time duration']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.flush.batch.time', 'alluxio.master.journal.flush.timeout'], 'reason': ['alluxio.master.journal.flush.batch.time must be greater than or equal to 100ms', 'alluxio.master.journal.flush.timeout must be greater than or equal to 100ms']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.flush.batch.time', 'alluxio.master.journal.flush.timeout'], 'reason': ['alluxio.master.journal.flush.batch.time should be greater than or equal to 100ms', 'alluxio.master.journal.flush.timeout should be greater than or equal to 100ms']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.journal.flush.batch.time	alluxio.master.journal.flush.timeout
+[Ciri] Reason for alluxio.master.journal.flush.batch.time: alluxio.master.journal.flush.batch.time must be greater than or equal to 100ms
+[Ciri] Reason for alluxio.master.journal.flush.timeout: alluxio.master.journal.flush.timeout must be greater than or equal to 100ms

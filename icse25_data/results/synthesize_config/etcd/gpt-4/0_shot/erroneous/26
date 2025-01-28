@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy', 'proxy-refresh-interval', 'log-outputs', 'snapshot-count'], 'reason': ["The 'proxy' parameter is not a valid etcd configuration option.", "The 'proxy-refresh-interval' parameter is related to the 'proxy' parameter, which is invalid.", "The 'log-outputs' parameter is valid but should be 'log-output' in etcd 3.5.0.", "The 'snapshot-count' parameter is not directly configurable in etcd 3.5.0. The correct parameter for controlling snapshot count is 'snapshot-count', but it is typically managed within the context of etcd's automatic snapshot and compaction mechanism, not directly set as a startup parameter."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: proxy	proxy-refresh-interval	log-outputs	snapshot-count
+[Ciri] Reason for proxy: The 'proxy' parameter is not a valid etcd configuration option.
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter is related to the 'proxy' parameter, which is invalid.
+[Ciri] Reason for log-outputs: The 'log-outputs' parameter is valid but should be 'log-output' in etcd 3.5.0.
+[Ciri] Reason for snapshot-count: The 'snapshot-count' parameter is not directly configurable in etcd 3.5.0. The correct parameter for controlling snapshot count is 'snapshot-count', but it is typically managed within the context of etcd's automatic snapshot and compaction mechanism, not directly set as a startup parameter.

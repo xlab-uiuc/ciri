@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maintenance_io_concurrency', 'wal_recycle', 'tcp_keepalives_idle', 'tcp_user_timeout', 'data_sync_retry', 'ident_file', 'include_if_exists', 'max_locks_per_transaction'], 'reason': ['maintenance_io_concurrency is not a valid parameter', 'wal_recycle is not a valid parameter', 'tcp_keepalives_idle is not a valid parameter', 'tcp_user_timeout is not a valid parameter', 'data_sync_retry is not a valid parameter', 'ident_file is not a valid parameter', 'include_if_exists is not a valid parameter', 'max_locks_per_transaction is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'maintenance_io_concurrency', 'wal_recycle', 'tcp_keepalives_idle', 'tcp_user_timeout', 'data_sync_retry', 'ident_file', 'include_if_exists', 'max_locks_per_transaction'], 'reason': ['max_connections should be between 100 and 5000', 'maintenance_io_concurrency should be between 0 and 1000', 'wal_recycle should be on or off', 'tcp_keepalives_idle should be between 0 and 3600', 'tcp_user_timeout should be between 0 and 3600', 'data_sync_retry should be on or off', 'ident_file should be a file', 'include_if_exists should be a file', 'max_locks_per_transaction should be between 64 and 128']}
+
+{'hasError': True, 'errParameter': ['maintenance_io_concurrency', 'wal_recycle', 'tcp_keepalives_idle', 'tcp_user_timeout', 'data_sync_retry', 'ident_file', 'include_if_exists', 'max_locks_per_transaction'], 'reason': ['maintenance_io_concurrency is not a valid parameter', 'wal_recycle is not a valid parameter', 'tcp_keepalives_idle is not a valid parameter', 'tcp_user_timeout is not a valid parameter', 'data_sync_retry is not a valid parameter', 'ident_file is not a valid parameter', 'include_if_exists is not a valid parameter', 'max_locks_per_transaction is not a valid parameter']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: maintenance_io_concurrency	wal_recycle	tcp_keepalives_idle	tcp_user_timeout	data_sync_retry	ident_file	include_if_exists	max_locks_per_transaction
+[Ciri] Reason for maintenance_io_concurrency: maintenance_io_concurrency is not a valid parameter
+[Ciri] Reason for wal_recycle: wal_recycle is not a valid parameter
+[Ciri] Reason for tcp_keepalives_idle: tcp_keepalives_idle is not a valid parameter
+[Ciri] Reason for tcp_user_timeout: tcp_user_timeout is not a valid parameter
+[Ciri] Reason for data_sync_retry: data_sync_retry is not a valid parameter
+[Ciri] Reason for ident_file: ident_file is not a valid parameter
+[Ciri] Reason for include_if_exists: include_if_exists is not a valid parameter
+[Ciri] Reason for max_locks_per_transaction: max_locks_per_transaction is not a valid parameter

@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'repl-disable-tcp-nodelay'], 'reason': ["The parameter 'repl-diskless-load' is not supported in redis version 7.0.0.", "The parameter 'repl-disable-tcp-nodelay' is not supported in redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['repl-diskless-load'], 'reason': ["The parameter 'repl-diskless-load' is not supported in redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'repl-backlog-ttl', 'repl-backlog-size', 'repl-backlog-ttl'], 'reason': ['repl-backlog-size must be a positive integer', 'repl-backlog-ttl must be a positive integer', 'repl-backlog-size must be a positive integer', 'repl-backlog-ttl must be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-disable-tcp-nodelay'], 'reason': ["The parameter 'repl-disable-tcp-nodelay' is not a valid parameter for redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['repl-disable-tcp-nodelay'], 'reason': ["The parameter 'repl-disable-tcp-nodelay' is not a valid parameter in redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['repl-disable-tcp-nodelay'], 'reason': ["The parameter 'repl-disable-tcp-nodelay' is not a valid parameter for redis version 7.0.0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: repl-disable-tcp-nodelay
+[Ciri] Reason for repl-disable-tcp-nodelay: The parameter 'repl-disable-tcp-nodelay' is not a valid parameter in redis version 7.0.0

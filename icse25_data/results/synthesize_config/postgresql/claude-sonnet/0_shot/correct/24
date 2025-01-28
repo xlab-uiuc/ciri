@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile', 'gss_accept_delegation'], 'reason': ['The krb_server_keyfile parameter is deprecated and should not be used in PostgreSQL 13.0. It has been replaced by the krb_creds parameter.', 'The gss_accept_delegation parameter is not a valid configuration parameter in PostgreSQL 13.0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: krb_server_keyfile	gss_accept_delegation
+[Ciri] Reason for krb_server_keyfile: The krb_server_keyfile parameter is deprecated and should not be used in PostgreSQL 13.0. It has been replaced by the krb_creds parameter.
+[Ciri] Reason for gss_accept_delegation: The gss_accept_delegation parameter is not a valid configuration parameter in PostgreSQL 13.0.

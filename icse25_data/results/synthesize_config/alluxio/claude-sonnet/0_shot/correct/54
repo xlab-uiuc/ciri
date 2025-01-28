@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.timeout=1sec', 'alluxio.worker.management.backoff.strategy=ANY', 'alluxio.worker.tieredstore.level1.dirs.mediumtype=${alluxio.worker.tieredstore.level1.alias}'], 'reason': ["The property 'fs.cos.connection.timeout' is not a valid Alluxio configuration property in version 2.5.0.", "The value 'ANY' for the property 'alluxio.worker.management.backoff.strategy' is not a valid option in Alluxio 2.5.0. The valid options are 'SLEEP' and 'EXPONENTIAL'.", "The property 'alluxio.worker.tieredstore.level1.dirs.mediumtype' is not a valid Alluxio configuration property in version 2.5.0. The correct property for specifying the medium type of the second level storage directory is 'alluxio.worker.tieredstore.level1.dirs.mediumtype'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.cos.connection.timeout=1sec	alluxio.worker.management.backoff.strategy=ANY	alluxio.worker.tieredstore.level1.dirs.mediumtype=${alluxio.worker.tieredstore.level1.alias}
+[Ciri] Reason for fs.cos.connection.timeout=1sec: The property 'fs.cos.connection.timeout' is not a valid Alluxio configuration property in version 2.5.0.
+[Ciri] Reason for alluxio.worker.management.backoff.strategy=ANY: The value 'ANY' for the property 'alluxio.worker.management.backoff.strategy' is not a valid option in Alluxio 2.5.0. The valid options are 'SLEEP' and 'EXPONENTIAL'.
+[Ciri] Reason for alluxio.worker.tieredstore.level1.dirs.mediumtype=${alluxio.worker.tieredstore.level1.alias}: The property 'alluxio.worker.tieredstore.level1.dirs.mediumtype' is not a valid Alluxio configuration property in version 2.5.0. The correct property for specifying the medium type of the second level storage directory is 'alluxio.worker.tieredstore.level1.dirs.mediumtype'.

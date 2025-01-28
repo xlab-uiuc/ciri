@@ -1,0 +1,18 @@
+Wrong shot number:
+[3, 8, 4]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['scram_iterations'], 'reason': ["The property 'scram_iterations' has the value '8192' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['wal_retrieve_retry_interval'], 'reason': ["The property 'wal_retrieve_retry_interval' has the value '10s' which is less than the minimum allowed value '5s'."]}
+
+{'hasError': True, 'errParameter': ['wal_retrieve_retry_interval'], 'reason': ["The property 'wal_retrieve_retry_interval' has the value '10s' which is less than the minimum allowed value '5s'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: wal_retrieve_retry_interval
+[Ciri] Reason for wal_retrieve_retry_interval: The property 'wal_retrieve_retry_interval' has the value '10s' which is less than the minimum allowed value '5s'.

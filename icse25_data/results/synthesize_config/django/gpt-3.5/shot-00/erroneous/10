@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'WSGI_APPLICATION', 'USE_THOUSAND_SEPARATOR', 'ALLOWED_HOSTS', 'MIDDLEWARE', 'MANAGERS', 'SECURE_CONTENT_TYPE_NOSNIFF', 'USE_I18N'], 'reason': ["LOGIN_REDIRECT_URL should not contain 'file//' as it may pose security risks.", 'WSGI_APPLICATION should be specified with a valid value.', 'USE_THOUSAND_SEPARATOR should be set to either True or False.', 'ALLOWED_HOSTS should contain at least one valid host/domain.', 'MIDDLEWARE should include necessary middleware classes.', 'MANAGERS should be defined with specific admin email addresses.', 'SECURE_CONTENT_TYPE_NOSNIFF should be set to either True or False.', 'USE_I18N should be set to either True or False.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: LOGIN_REDIRECT_URL	WSGI_APPLICATION	USE_THOUSAND_SEPARATOR	ALLOWED_HOSTS	MIDDLEWARE	MANAGERS	SECURE_CONTENT_TYPE_NOSNIFF	USE_I18N
+[Ciri] Reason for LOGIN_REDIRECT_URL: LOGIN_REDIRECT_URL should not contain 'file//' as it may pose security risks.
+[Ciri] Reason for WSGI_APPLICATION: WSGI_APPLICATION should be specified with a valid value.
+[Ciri] Reason for USE_THOUSAND_SEPARATOR: USE_THOUSAND_SEPARATOR should be set to either True or False.
+[Ciri] Reason for ALLOWED_HOSTS: ALLOWED_HOSTS should contain at least one valid host/domain.
+[Ciri] Reason for MIDDLEWARE: MIDDLEWARE should include necessary middleware classes.
+[Ciri] Reason for MANAGERS: MANAGERS should be defined with specific admin email addresses.
+[Ciri] Reason for SECURE_CONTENT_TYPE_NOSNIFF: SECURE_CONTENT_TYPE_NOSNIFF should be set to either True or False.
+[Ciri] Reason for USE_I18N: USE_I18N should be set to either True or False.

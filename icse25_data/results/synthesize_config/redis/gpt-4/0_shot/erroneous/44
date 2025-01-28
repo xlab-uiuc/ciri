@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['locale-collate', 'lazyfree-lazy-user-del', 'lazyfree-lazy-user-flush', 'maxmemory-clients', 'hash-max-listpack-entries', 'cluster-announce-port'], 'reason': ["The 'locale-collate' parameter does not exist in Redis configuration.", "The correct parameter is 'lazyfree-lazy-eviction' instead of 'lazyfree-lazy-user-del'.", "The correct parameter is 'lazyfree-lazy-expire' instead of 'lazyfree-lazy-user-flush'.", "'maxmemory-clients' is not a valid configuration directive. It might be confused with 'maxmemory' or 'maxclients'.", "'hash-max-listpack-entries' is not a valid configuration. The correct directive might be 'hash-max-ziplist-entries' for Redis versions prior to 6.0. In Redis 6.0 and later, the configuration for data structure encoding and limits was revised.", "The 'cluster-announce-port' should not be set to 1 as it is intended to be the port that this instance will announce to other cluster nodes. It should match the port that this instance listens on or a port that is forwarded to it."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: locale-collate	lazyfree-lazy-user-del	lazyfree-lazy-user-flush	maxmemory-clients	hash-max-listpack-entries	cluster-announce-port
+[Ciri] Reason for locale-collate: The 'locale-collate' parameter does not exist in Redis configuration.
+[Ciri] Reason for lazyfree-lazy-user-del: The correct parameter is 'lazyfree-lazy-eviction' instead of 'lazyfree-lazy-user-del'.
+[Ciri] Reason for lazyfree-lazy-user-flush: The correct parameter is 'lazyfree-lazy-expire' instead of 'lazyfree-lazy-user-flush'.
+[Ciri] Reason for maxmemory-clients: 'maxmemory-clients' is not a valid configuration directive. It might be confused with 'maxmemory' or 'maxclients'.
+[Ciri] Reason for hash-max-listpack-entries: 'hash-max-listpack-entries' is not a valid configuration. The correct directive might be 'hash-max-ziplist-entries' for Redis versions prior to 6.0. In Redis 6.0 and later, the configuration for data structure encoding and limits was revised.
+[Ciri] Reason for cluster-announce-port: The 'cluster-announce-port' should not be set to 1 as it is intended to be the port that this instance will announce to other cluster nodes. It should match the port that this instance listens on or a port that is forwarded to it.

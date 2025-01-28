@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.retry.cache.expiry.time', 'alluxio.master.metastore.dir', 'alluxio.worker.tieredstore.level2.watermark.high.ratio', 'alluxio.master.ufs.active.sync.interval'], 'reason': ['alluxio.master.embedded.journal.retry.cache.expiry.time should be a duration', 'alluxio.master.metastore.dir should be a valid directory path', 'alluxio.worker.tieredstore.level2.watermark.high.ratio should be a double between 0 and 1', 'alluxio.master.ufs.active.sync.interval should be a duration']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.folder', 'alluxio.master.metastore.dir'], 'reason': ['The value of alluxio.master.journal.folder is not a valid directory.', 'The value of alluxio.master.metastore.dir is not a valid directory.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.retry.cache.expiry.time', 'alluxio.master.ufs.active.sync.interval'], 'reason': ['alluxio.master.embedded.journal.retry.cache.expiry.time should be a duration', 'alluxio.master.ufs.active.sync.interval should be a duration']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.metastore', 'alluxio.master.ufs.active.sync.interval'], 'reason': ['alluxio.master.metastore is not a valid property for Alluxio version 2.5.0', 'alluxio.master.ufs.active.sync.interval is not a valid property for Alluxio version 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.metastore', 'alluxio.master.ufs.active.sync.interval', 'alluxio.worker.tieredstore.level2.watermark.high.ratio'], 'reason': ['alluxio.master.metastore should be one of [ROCKS, ROCKSDB, MEMORY, NOSQL]', 'alluxio.worker.tieredstore.level2.watermark.high.ratio should be a double value between 0 and 1', 'alluxio.master.ufs.active.sync.interval should be a duration value']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.metastore', 'alluxio.master.ufs.active.sync.interval', 'alluxio.worker.tieredstore.level2.watermark.high.ratio'], 'reason': ['alluxio.master.metastore is not a valid property for Alluxio version 2.5.0', 'alluxio.worker.tieredstore.level2.watermark.high.ratio must be a float between 0 and 1', 'alluxio.master.ufs.active.sync.interval must be a duration']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.metastore	alluxio.master.ufs.active.sync.interval	alluxio.worker.tieredstore.level2.watermark.high.ratio
+[Ciri] Reason for alluxio.master.metastore: alluxio.master.metastore is not a valid property for Alluxio version 2.5.0
+[Ciri] Reason for alluxio.master.ufs.active.sync.interval: alluxio.worker.tieredstore.level2.watermark.high.ratio should be a double value between 0 and 1
+[Ciri] Reason for alluxio.worker.tieredstore.level2.watermark.high.ratio: alluxio.master.ufs.active.sync.interval should be a duration value

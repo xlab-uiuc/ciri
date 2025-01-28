@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfsync', 'oom-score-adj', 'oom-score-adj-values', 'dir'], 'reason': ['appendfsync must be either always, everysec, or no', 'oom-score-adj must be a number between -1000 and 1000', 'oom-score-adj-values must be a list of numbers between -1000 and 1000', 'dir must be a directory']}
+
+{'hasError': True, 'errParameter': ['dir'], 'reason': ["The 'dir' parameter is not supported in Redis 7.0.0 and above."]}
+
+{'hasError': True, 'errParameter': ['port', 'unixsocket', 'proc-title-template', 'appendfsync', 'hash-max-listpack-value', 'slowlog-max-len', 'oom-score-adj', 'dir', 'oom-score-adj-values'], 'reason': ['port must be an integer', 'unixsocket must be a string', 'proc-title-template must be a string', 'appendfsync must be a string', 'hash-max-listpack-value must be an integer', 'slowlog-max-len must be an integer', 'oom-score-adj must be a string', 'dir must be a string', 'oom-score-adj-values must be an array']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'unixsocket', 'proc-title-template', 'appendfsync', 'hash-max-listpack-value', 'slowlog-max-len', 'oom-score-adj', 'dir', 'oom-score-adj-values'], 'reason': ['port must be a number', 'unixsocket must be a string', 'proc-title-template must be a string', 'appendfsync must be a string', 'hash-max-listpack-value must be a number', 'slowlog-max-len must be a number', 'oom-score-adj must be a string', 'dir must be a string', 'oom-score-adj-values must be a string']}
+
+{'hasError': True, 'errParameter': ['port', 'unixsocket', 'proc-title-template', 'appendfsync', 'hash-max-listpack-value', 'slowlog-max-len', 'oom-score-adj', 'dir', 'oom-score-adj-values'], 'reason': ['port must be a number', 'unixsocket must be a string', 'proc-title-template must be a string', 'appendfsync must be a string', 'hash-max-listpack-value must be a number', 'slowlog-max-len must be a number', 'oom-score-adj must be a string', 'dir must be a string', 'oom-score-adj-values must be a list']}
+
+{'hasError': True, 'errParameter': ['port', 'unixsocket', 'proc-title-template', 'appendfsync', 'hash-max-listpack-value', 'slowlog-max-len', 'oom-score-adj', 'dir', 'oom-score-adj-values'], 'reason': ['port is not a valid port number', 'unixsocket is not a valid path', 'proc-title-template is not a valid template', 'appendfsync is not a valid value', 'hash-max-listpack-value is not a valid value', 'slowlog-max-len is not a valid value', 'oom-score-adj is not a valid value', 'dir is not a valid path', 'oom-score-adj-values is not a valid value']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: port	unixsocket	proc-title-template	appendfsync	hash-max-listpack-value	slowlog-max-len	oom-score-adj	dir	oom-score-adj-values
+[Ciri] Reason for port: port must be a number
+[Ciri] Reason for unixsocket: unixsocket must be a string
+[Ciri] Reason for proc-title-template: proc-title-template must be a string
+[Ciri] Reason for appendfsync: appendfsync must be a string
+[Ciri] Reason for hash-max-listpack-value: hash-max-listpack-value must be a number
+[Ciri] Reason for slowlog-max-len: slowlog-max-len must be a number
+[Ciri] Reason for oom-score-adj: oom-score-adj must be a string
+[Ciri] Reason for dir: dir must be a string
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values must be a string

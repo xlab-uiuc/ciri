@@ -1,0 +1,26 @@
+Wrong shot number:
+[8, 2, 3]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.connections'], 'reason': ["The property 'alluxio.user.network.rpc.max.connections' has the value '1' which is not within the accepted value {1,2,4,8,16,32,64,128}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.date.format.pattern'], 'reason': ["The property 'alluxio.user.date.format.pattern' has the value 'MM-dd-yyyy HH:mm:ss:SSS' which uses an incorrect date format."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.log.size.bytes.max'], 'reason': ["The property 'alluxio.master.journal.log.size.bytes.max' has the value '10MB' which is not a valid size."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.passive.cache.enabled'], 'reason': ["The property 'alluxio.user.file.passive.cache.enabled' has the value 'false' which is not within the accepted value {true,false}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.passive.cache.enabled'], 'reason': ["The property 'alluxio.user.file.passive.cache.enabled' has the value 'false' which is not within the accepted value {true,false}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.file.passive.cache.enabled
+[Ciri] Reason for alluxio.user.file.passive.cache.enabled: The property 'alluxio.user.file.passive.cache.enabled' has the value 'false' which is not within the accepted value {true,false}.

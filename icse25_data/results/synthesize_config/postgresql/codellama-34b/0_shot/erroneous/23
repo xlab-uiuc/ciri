@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_init_zero', 'tcp_keepalives_interval', 'autovacuum_vacuum_cost_limit'], 'reason': ['wal_init_zero is not a valid parameter for version 13.0', 'tcp_keepalives_interval must be greater than 0', 'autovacuum_vacuum_cost_limit must be greater than 0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: wal_init_zero	tcp_keepalives_interval	autovacuum_vacuum_cost_limit
+[Ciri] Reason for wal_init_zero: wal_init_zero is not a valid parameter for version 13.0
+[Ciri] Reason for tcp_keepalives_interval: tcp_keepalives_interval must be greater than 0
+[Ciri] Reason for autovacuum_vacuum_cost_limit: autovacuum_vacuum_cost_limit must be greater than 0

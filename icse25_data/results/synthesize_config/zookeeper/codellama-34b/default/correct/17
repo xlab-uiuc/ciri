@@ -1,0 +1,26 @@
+Wrong shot number:
+[1, 8, 5]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['standaloneEnabled'], 'reason': ["The property'standaloneEnabled' has the value 'true' which is not allowed when 'quorum.auth.enableSasl' is set to 'false'."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl'], 'reason': ["The property 'quorum.auth.serverRequireSasl' has the value 'true' which is not allowed when 'quorum.auth.enableSasl' is set to 'false'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl'], 'reason': ["The property 'quorum.auth.serverRequireSasl' is set to 'true' but 'quorum.auth.enableSasl' is set to 'false'. This is an invalid configuration."]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl'], 'reason': ["The property 'quorum.auth.serverRequireSasl' is set to 'true' but 'quorum.auth.enableSasl' is set to 'false'."]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.serverRequireSasl'], 'reason': ["The property 'quorum.auth.serverRequireSasl' is set to 'true' but 'quorum.auth.enableSasl' is set to 'false'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: quorum.auth.serverRequireSasl
+[Ciri] Reason for quorum.auth.serverRequireSasl: The property 'quorum.auth.serverRequireSasl' is set to 'true' but 'quorum.auth.enableSasl' is set to 'false'.

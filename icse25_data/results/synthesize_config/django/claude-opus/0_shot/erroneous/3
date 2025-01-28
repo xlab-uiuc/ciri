@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'CSRF_COOKIE_SAMESITE'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should be set to an integer value representing the number of seconds, not a boolean.', "CSRF_COOKIE_SAMESITE should be set to a string value of either 'Lax', 'Strict', or 'None'. In Django 4.0, setting it to 'None' requires CSRF_COOKIE_SECURE to be True."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	CSRF_COOKIE_SAMESITE
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: CACHE_MIDDLEWARE_SECONDS should be set to an integer value representing the number of seconds, not a boolean.
+[Ciri] Reason for CSRF_COOKIE_SAMESITE: CSRF_COOKIE_SAMESITE should be set to a string value of either 'Lax', 'Strict', or 'None'. In Django 4.0, setting it to 'None' requires CSRF_COOKIE_SECURE to be True.

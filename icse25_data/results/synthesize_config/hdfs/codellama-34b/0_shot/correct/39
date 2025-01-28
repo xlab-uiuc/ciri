@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.datanode.registration.ip-hostname-check', 'dfs.namenode.decommission.blocks.per.interval', 'dfs.client.use.datanode.hostname', 'dfs.journalnode.https-address', 'dfs.balancer.service.retries.on.exception', 'dfs.storage.policy.satisfier.max.outstanding.paths', 'dfs.qjournal.write-txns.timeout.ms', 'dfs.qjournal.parallel-read.num-threads'], 'reason': ['The value of dfs.namenode.datanode.registration.ip-hostname-check is true, but it should be false', 'The value of dfs.namenode.decommission.blocks.per.interval is 1000000, but it should be 100000', 'The value of dfs.client.use.datanode.hostname is true, but it should be false', 'The value of dfs.journalnode.https-address is 0.0.0.0:3000, but it should be 0.0.0.0:3001', 'The value of dfs.balancer.service.retries.on.exception is 5, but it should be 10', 'The value of dfs.storage.policy.satisfier.max.outstanding.paths is 5000, but it should be 10000', 'The value of dfs.qjournal.write-txns.timeout.ms is 20000, but it should be 10000', 'The value of dfs.qjournal.parallel-read.num-threads is 5, but it should be 10']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.namenode.datanode.registration.ip-hostname-check	dfs.namenode.decommission.blocks.per.interval	dfs.client.use.datanode.hostname	dfs.journalnode.https-address	dfs.balancer.service.retries.on.exception	dfs.storage.policy.satisfier.max.outstanding.paths	dfs.qjournal.write-txns.timeout.ms	dfs.qjournal.parallel-read.num-threads
+[Ciri] Reason for dfs.namenode.datanode.registration.ip-hostname-check: The value of dfs.namenode.datanode.registration.ip-hostname-check is true, but it should be false
+[Ciri] Reason for dfs.namenode.decommission.blocks.per.interval: The value of dfs.namenode.decommission.blocks.per.interval is 1000000, but it should be 100000
+[Ciri] Reason for dfs.client.use.datanode.hostname: The value of dfs.client.use.datanode.hostname is true, but it should be false
+[Ciri] Reason for dfs.journalnode.https-address: The value of dfs.journalnode.https-address is 0.0.0.0:3000, but it should be 0.0.0.0:3001
+[Ciri] Reason for dfs.balancer.service.retries.on.exception: The value of dfs.balancer.service.retries.on.exception is 5, but it should be 10
+[Ciri] Reason for dfs.storage.policy.satisfier.max.outstanding.paths: The value of dfs.storage.policy.satisfier.max.outstanding.paths is 5000, but it should be 10000
+[Ciri] Reason for dfs.qjournal.write-txns.timeout.ms: The value of dfs.qjournal.write-txns.timeout.ms is 20000, but it should be 10000
+[Ciri] Reason for dfs.qjournal.parallel-read.num-threads: The value of dfs.qjournal.parallel-read.num-threads is 5, but it should be 10

@@ -1,0 +1,16 @@
+Wrong shot number:
+[10, 3, 12]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.fast.upload.buffer', 'ipc.[port_number].faircallqueue.multiplexer.weights'], 'reason': ["The property 'fs.ftp.host.port' has an invalid value 'file://'. It should specify the FTP host port number.", "The property 'fs.s3a.fast.upload.buffer' has an invalid value 'disk'. It should be set to 'array' or 'bytebuffer' for the buffering mechanism.", "The property 'ipc.[port_number].faircallqueue.multiplexer.weights' should have weights in descending order by a factor of 2."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.host.port	fs.s3a.fast.upload.buffer	ipc.[port_number].faircallqueue.multiplexer.weights
+[Ciri] Reason for fs.ftp.host.port: The property 'fs.ftp.host.port' has an invalid value 'file://'. It should specify the FTP host port number.
+[Ciri] Reason for fs.s3a.fast.upload.buffer: The property 'fs.s3a.fast.upload.buffer' has an invalid value 'disk'. It should be set to 'array' or 'bytebuffer' for the buffering mechanism.
+[Ciri] Reason for ipc.[port_number].faircallqueue.multiplexer.weights: The property 'ipc.[port_number].faircallqueue.multiplexer.weights' should have weights in descending order by a factor of 2.

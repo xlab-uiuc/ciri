@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval'], 'reason': ['minSessionTimeout should be greater than or equal to 2 * tickTime which is the minimum session timeout in milliseconds.', 'autopurge.purgeInterval should be a positive integer representing the time interval in hours for purging old data.']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval'], 'reason': ['minSessionTimeout should be greater than or equal to 2 * tickTime which is the minimum session timeout in milliseconds.', 'autopurge.purgeInterval should be set to a value greater than 0 for enabling automatic purging of old data.']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval'], 'reason': ["The property 'autopurge.purgeInterval' should have a value greater than 0 for Zookeeper version 3.7.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: minSessionTimeout	autopurge.purgeInterval
+[Ciri] Reason for minSessionTimeout: minSessionTimeout should be greater than or equal to 2 * tickTime which is the minimum session timeout in milliseconds.
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval should be a positive integer representing the time interval in hours for purging old data.

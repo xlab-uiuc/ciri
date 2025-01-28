@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.local-dirs', 'yarn.router.webapp.address'], 'reason': ["The value '/valid/file2' for property 'yarn.nodemanager.local-dirs' should not contain '/'.", "The value '0.0.0.0:3000' for property 'yarn.router.webapp.address' should have a valid host address."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.local-dirs', 'yarn.router.webapp.address'], 'reason': ["The description for property 'yarn.nodemanager.local-dirs' is not properly formatted. It should be on a single line.", "The value for property 'yarn.router.webapp.address' should not contain both host and port. Separate them for clarity."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.local-dirs', 'yarn.router.webapp.address'], 'reason': ["The value '/valid/file2' for property 'yarn.nodemanager.local-dirs' should be a comma-separated list of directories.", "The value '0.0.0.0:3000' for property 'yarn.router.webapp.address' should include the protocol (http://) before the host and port."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.local-dirs	yarn.router.webapp.address
+[Ciri] Reason for yarn.nodemanager.local-dirs: The description for property 'yarn.nodemanager.local-dirs' is not properly formatted. It should be on a single line.
+[Ciri] Reason for yarn.router.webapp.address: The value '0.0.0.0:3000' for property 'yarn.router.webapp.address' should have a valid host address.

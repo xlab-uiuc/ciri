@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable_hashagg', 'include_dir', 'checkpoint_warning', 'vacuum_multixact_freeze_min_age', 'session_replication_role', 'min_parallel_table_scan_size', 'enable_parallel_append', 'autovacuum_analyze_threshold'], 'reason': ['enable_hashagg is not a valid parameter for PostgreSQL 13.0', 'include_dir should specify a valid directory path', 'checkpoint_warning value should be specified in bytes or time units', 'vacuum_multixact_freeze_min_age value should be specified in bytes or time units', "session_replication_role should be set to 'replica' or 'local'", 'min_parallel_table_scan_size value should be specified in bytes', 'enable_parallel_append is not a valid parameter for PostgreSQL 13.0', 'autovacuum_analyze_threshold value should be specified in bytes or time units']}
+
+{'hasError': True, 'errParameter': ['enable_hashagg', 'include_dir', 'checkpoint_warning', 'vacuum_multixact_freeze_min_age', 'session_replication_role', 'min_parallel_table_scan_size', 'enable_parallel_append', 'autovacuum_analyze_threshold'], 'reason': ['enable_hashagg is not a valid parameter for PostgreSQL 13.0', 'include_dir is not a valid parameter for PostgreSQL 13.0', "checkpoint_warning value should be specified in seconds, e.g., '30s' is not a valid format", "vacuum_multixact_freeze_min_age value should be specified in transactions, e.g., '5000000' is not a valid format", "session_replication_role should be 'replica' or 'local', 'origin' is not a valid value", "min_parallel_table_scan_size should be specified in bytes, e.g., '1MB' is not a valid format", 'enable_parallel_append is not a valid parameter for PostgreSQL 13.0', "autovacuum_analyze_threshold value should be specified as a percentage, e.g., '50' is not a valid format"]}
+
+{'hasError': True, 'errParameter': ['enable_hashagg', 'include_dir', 'checkpoint_warning', 'vacuum_multixact_freeze_min_age', 'session_replication_role', 'min_parallel_table_scan_size', 'enable_parallel_append', 'autovacuum_analyze_threshold'], 'reason': ['enable_hashagg is not a valid parameter for PostgreSQL 13.0', 'include_dir should specify a valid directory path', 'checkpoint_warning value should be specified in bytes or time units', 'vacuum_multixact_freeze_min_age value should be specified in transactions or time units', "session_replication_role should be 'replica' or 'local'", 'min_parallel_table_scan_size value should be specified in bytes', 'enable_parallel_append is not a valid parameter for PostgreSQL 13.0', 'autovacuum_analyze_threshold value should be specified in number of tuples']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: enable_hashagg	include_dir	checkpoint_warning	vacuum_multixact_freeze_min_age	session_replication_role	min_parallel_table_scan_size	enable_parallel_append	autovacuum_analyze_threshold
+[Ciri] Reason for enable_hashagg: enable_hashagg is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for include_dir: include_dir should specify a valid directory path
+[Ciri] Reason for checkpoint_warning: checkpoint_warning value should be specified in bytes or time units
+[Ciri] Reason for vacuum_multixact_freeze_min_age: vacuum_multixact_freeze_min_age value should be specified in bytes or time units
+[Ciri] Reason for session_replication_role: session_replication_role should be set to 'replica' or 'local'
+[Ciri] Reason for min_parallel_table_scan_size: min_parallel_table_scan_size value should be specified in bytes
+[Ciri] Reason for enable_parallel_append: enable_parallel_append is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for autovacuum_analyze_threshold: autovacuum_analyze_threshold value should be specified in bytes or time units

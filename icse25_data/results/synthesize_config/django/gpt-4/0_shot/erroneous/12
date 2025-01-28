@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should not be negative. A typical value is a positive number indicating the number of seconds each page should be cached.', "STATICFILES_FINDERS is missing the 'django.contrib.staticfiles.finders.AppDirectoriesFinder'. Usually, both 'FileSystemFinder' and 'AppDirectoriesFinder' are included to handle static files correctly.", "PASSWORD_RESET_TIMEOUT's default value has changed in Django 3.1 to use seconds instead of days. The given value is correct for versions before Django 3.1, but for Django 4.0, it should be directly in seconds without calculation."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	STATICFILES_FINDERS	PASSWORD_RESET_TIMEOUT
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: CACHE_MIDDLEWARE_SECONDS should not be negative. A typical value is a positive number indicating the number of seconds each page should be cached.
+[Ciri] Reason for STATICFILES_FINDERS: STATICFILES_FINDERS is missing the 'django.contrib.staticfiles.finders.AppDirectoriesFinder'. Usually, both 'FileSystemFinder' and 'AppDirectoriesFinder' are included to handle static files correctly.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: PASSWORD_RESET_TIMEOUT's default value has changed in Django 3.1 to use seconds instead of days. The given value is correct for versions before Django 3.1, but for Django 4.0, it should be directly in seconds without calculation.

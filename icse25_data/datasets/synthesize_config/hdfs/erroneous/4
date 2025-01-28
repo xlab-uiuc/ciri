@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.dns.interface</name>
+  <value>default</value>
+   <description>
+     The name of the Network Interface from which a data node should
+     report its IP address. e.g. eth2. This setting may be required for some
+     multi-homed nodes where the DataNodes are assigned multiple hostnames
+     and it is desirable for the DataNodes to use a non-default hostname.
+
+     Prefer using hadoop.security.dns.interface over
+     dfs.datanode.dns.interface.
+   </description>
+</property>
+
+<property>
+  <name>dfs.namenode.lifeline.handler.ratio</name>
+  <value>0.2</value>
+  <description>
+    A ratio applied to the value of dfs.namenode.handler.count, which then
+    provides the number of RPC server threads the NameNode runs for handling the
+    lifeline RPC server.  For example, if dfs.namenode.handler.count is 100, and
+    dfs.namenode.lifeline.handler.factor is 0.10, then the NameNode starts
+    100 * 0.10 = 10 threads for handling the lifeline RPC server.  It is common
+    to tune the value of dfs.namenode.handler.count as a function of the number
+    of DataNodes in a cluster.  Using this property allows for the lifeline RPC
+    server handler threads to be tuned automatically without needing to touch a
+    separate property.  Lifeline message processing is lightweight, so it is
+    expected to require many fewer threads than the main NameNode RPC server.
+    This property is not used if dfs.namenode.lifeline.handler.count is defined,
+    which sets an absolute thread count.  This property has no effect if
+    dfs.namenode.lifeline.rpc-address is not defined.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.safemode.extension</name>
+  <value>60000</value>
+  <description>
+    Determines extension of safe mode in milliseconds after the threshold level
+    is reached.  Support multiple time unit suffix (case insensitive), as
+    described in dfs.heartbeat.interval.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.failed.volumes.tolerated</name>
+  <value>-1</value>
+  <description>The number of volumes that are allowed to
+  fail before a datanode stops offering service. By default
+  any volume failure will cause a datanode to shutdown.
+  The value should be greater than or equal to -1 , -1 represents minimum
+  1 valid volume.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edit.log.autoroll.check.interval.ms</name>
+  <value>300000</value>
+  <description>
+    How often an active namenode will check if it needs to roll its edit log,
+    in milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.write.max-packets-in-flight</name>
+  <value>40</value>
+  <description>
+    The maximum number of DFSPackets allowed in flight.
+  </description>
+</property>
+
+<property>
+  <name>dfs.provided.acls.import.enabled</name>
+  <value>false</value>
+    <description>
+      Set to true to inherit ACLs (Access Control Lists) from remote stores
+      during mount. Disabled by default, i.e., ACLs are not inherited from
+      remote stores. Note had HDFS ACLs have to be enabled
+      (dfs.namenode.acls.enabled must be set to true) for this to take effect.
+    </description>
+</property>
+
+<property>
+  <name>httpfs.buffer.size</name>
+  <value>ciri/ciri</value>
+    <description>
+      The size buffer to be used when creating or opening httpfs filesystem IO stream.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'stream-node-max-entries', 'cluster-node-timeout', 'cluster-config-file', 'lazyfree-lazy-server-del', 'lazyfree-lazy-expire', 'dbfilename', 'hash-max-listpack-entries'], 'reason': ['daemonize must be set to yes or no', 'stream-node-max-entries must be an integer', 'cluster-node-timeout must be an integer', 'cluster-config-file must be a valid path', 'lazyfree-lazy-server-del must be set to yes or no', 'lazyfree-lazy-expire must be set to yes or no', 'dbfilename must be a valid path', 'hash-max-listpack-entries must be an integer']}
+
+{'hasError': True, 'errParameter': ['daemonize'], 'reason': ['The daemonize parameter is not supported in redis version 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['cluster-config-file'], 'reason': ['cluster-config-file is not a valid parameter for redis version 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'stream-node-max-entries', 'cluster-node-timeout', 'cluster-config-file', 'lazyfree-lazy-server-del', 'lazyfree-lazy-expire', 'dbfilename', 'hash-max-listpack-entries'], 'reason': ['daemonize is not a valid configuration parameter', 'stream-node-max-entries is not a valid configuration parameter', 'cluster-node-timeout is not a valid configuration parameter', 'cluster-config-file is not a valid configuration parameter', 'lazyfree-lazy-server-del is not a valid configuration parameter', 'lazyfree-lazy-expire is not a valid configuration parameter', 'dbfilename is not a valid configuration parameter', 'hash-max-listpack-entries is not a valid configuration parameter']}
+
+{'hasError': True, 'errParameter': ['daemonize', 'stream-node-max-entries', 'cluster-node-timeout', 'cluster-config-file', 'lazyfree-lazy-server-del', 'lazyfree-lazy-expire', 'dbfilename', 'hash-max-listpack-entries'], 'reason': ['daemonize is not a valid configuration parameter', 'stream-node-max-entries is not a valid configuration parameter', 'cluster-node-timeout is not a valid configuration parameter', 'cluster-config-file is not a valid configuration parameter', 'lazyfree-lazy-server-del is not a valid configuration parameter', 'lazyfree-lazy-expire is not a valid configuration parameter', 'dbfilename is not a valid configuration parameter', 'hash-max-listpack-entries is not a valid configuration parameter']}
+
+{'hasError': True, 'errParameter': ['cluster-config-file'], 'reason': ['cluster-config-file is not a valid configuration parameter for redis version 7.0.0']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: daemonize	stream-node-max-entries	cluster-node-timeout	cluster-config-file	lazyfree-lazy-server-del	lazyfree-lazy-expire	dbfilename	hash-max-listpack-entries
+[Ciri] Reason for daemonize: daemonize is not a valid configuration parameter
+[Ciri] Reason for stream-node-max-entries: stream-node-max-entries is not a valid configuration parameter
+[Ciri] Reason for cluster-node-timeout: cluster-node-timeout is not a valid configuration parameter
+[Ciri] Reason for cluster-config-file: cluster-config-file is not a valid configuration parameter
+[Ciri] Reason for lazyfree-lazy-server-del: lazyfree-lazy-server-del is not a valid configuration parameter
+[Ciri] Reason for lazyfree-lazy-expire: lazyfree-lazy-expire is not a valid configuration parameter
+[Ciri] Reason for dbfilename: dbfilename is not a valid configuration parameter
+[Ciri] Reason for hash-max-listpack-entries: hash-max-listpack-entries is not a valid configuration parameter

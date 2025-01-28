@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy', 'initial-advertise-peer-urls'], 'reason': ["The 'proxy-refresh-interval' parameter is not a valid etcd configuration option in version 3.5.0.", "The 'proxy' parameter should be set to either 'on' or 'off' (without quotes) in etcd 3.5.0.", "The 'initial-advertise-peer-urls' parameter should use the URL scheme 'http://' or 'https://' in etcd 3.5.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-refresh-interval	proxy	initial-advertise-peer-urls
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter is not a valid etcd configuration option in version 3.5.0.
+[Ciri] Reason for proxy: The 'proxy' parameter should be set to either 'on' or 'off' (without quotes) in etcd 3.5.0.
+[Ciri] Reason for initial-advertise-peer-urls: The 'initial-advertise-peer-urls' parameter should use the URL scheme 'http://' or 'https://' in etcd 3.5.0.

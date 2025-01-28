@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPort', 'secureClientPort', 'initLimit', 'electionAlg', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'reconfigEnabled', 'quorum.auth.serverRequireSasl'], 'reason': ['clientPort must be a positive integer', 'secureClientPort must be a positive integer', 'initLimit must be a positive integer', 'electionAlg must be a positive integer', 'localSessionsEnabled must be a boolean', 'sslQuorumReloadCertFiles must be a boolean', 'reconfigEnabled must be a boolean', 'quorum.auth.serverRequireSasl must be a boolean']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'secureClientPort', 'electionAlg', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'reconfigEnabled', 'quorum.auth.serverRequireSasl'], 'reason': ['clientPort must be a positive integer', 'secureClientPort must be a positive integer', 'electionAlg must be a positive integer', 'localSessionsEnabled must be a boolean', 'sslQuorumReloadCertFiles must be a boolean', 'reconfigEnabled must be a boolean', 'quorum.auth.serverRequireSasl must be a boolean']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'secureClientPort', 'initLimit', 'electionAlg', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'reconfigEnabled', 'quorum.auth.serverRequireSasl'], 'reason': ['clientPort should be an integer', 'secureClientPort should be an integer', 'initLimit should be an integer', 'electionAlg should be an integer', 'localSessionsEnabled should be a boolean', 'sslQuorumReloadCertFiles should be a boolean', 'reconfigEnabled should be a boolean', 'quorum.auth.serverRequireSasl should be a boolean']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: clientPort	secureClientPort	initLimit	electionAlg	localSessionsEnabled	sslQuorumReloadCertFiles	reconfigEnabled	quorum.auth.serverRequireSasl
+[Ciri] Reason for clientPort: clientPort should be an integer
+[Ciri] Reason for secureClientPort: secureClientPort must be a positive integer
+[Ciri] Reason for initLimit: initLimit must be a positive integer
+[Ciri] Reason for electionAlg: electionAlg must be a positive integer
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled must be a boolean
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles should be a boolean
+[Ciri] Reason for reconfigEnabled: reconfigEnabled must be a boolean
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl should be a boolean

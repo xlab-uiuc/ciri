@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 9, 12]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.wal.dir.perms'], 'reason': ["The value 'dev/urandom///' for property 'hbase.local.dir' is not a valid directory path.", "The value '1400' for property 'hbase.wal.dir.perms' is not a valid Unix-style permission. It should be an octal number like 0700."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.local.dir	hbase.wal.dir.perms
+[Ciri] Reason for hbase.local.dir: The value 'dev/urandom///' for property 'hbase.local.dir' is not a valid directory path.
+[Ciri] Reason for hbase.wal.dir.perms: The value '1400' for property 'hbase.wal.dir.perms' is not a valid Unix-style permission. It should be an octal number like 0700.

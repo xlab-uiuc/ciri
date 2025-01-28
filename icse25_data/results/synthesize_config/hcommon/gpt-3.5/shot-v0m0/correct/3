@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.s3a.impl', 'fs.azure.secure.mode', 'hadoop.ssl.server.conf'], 'reason': ["The property 'fs.AbstractFileSystem.s3a.impl' is not a valid property for hcommon version 3.3.0.", 'The property \'fs.azure.secure.mode\' has an additional usage tag \'xmlPropsToSkipCompare.add("fs.azure.secure.mode");\' which is not a standard configuration and may cause issues.', "The property 'hadoop.ssl.server.conf' is not a valid property for hcommon version 3.3.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.AbstractFileSystem.s3a.impl	fs.azure.secure.mode	hadoop.ssl.server.conf
+[Ciri] Reason for fs.AbstractFileSystem.s3a.impl: The property 'fs.AbstractFileSystem.s3a.impl' is not a valid property for hcommon version 3.3.0.
+[Ciri] Reason for fs.azure.secure.mode: The property 'fs.azure.secure.mode' has an additional usage tag 'xmlPropsToSkipCompare.add("fs.azure.secure.mode");' which is not a standard configuration and may cause issues.
+[Ciri] Reason for hadoop.ssl.server.conf: The property 'hadoop.ssl.server.conf' is not a valid property for hcommon version 3.3.0.

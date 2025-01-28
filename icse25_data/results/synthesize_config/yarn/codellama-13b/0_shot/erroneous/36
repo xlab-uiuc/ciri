@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.maximum-allocation-mb', 'yarn.resourcemanager.reservation-system.enable', 'yarn.nodemanager.resource.memory-mb', 'yarn.nodemanager.resource.memory.enabled', 'yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size', 'yarn.nodemanager.windows-secure-container-executor.group', 'yarn.sharedcache.nm.uploader.thread-count', 'yarn.timeline-service.webapp.xfs-filter.xframe-options'], 'reason': ['yarn.scheduler.maximum-allocation-mb is not a valid property for yarn version 3.3.0', 'yarn.resourcemanager.reservation-system.enable is not a valid property for yarn version 3.3.0', 'yarn.nodemanager.resource.memory-mb is not a valid property for yarn version 3.3.0', 'yarn.nodemanager.resource.memory.enabled is not a valid property for yarn version 3.3.0', 'yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size is not a valid property for yarn version 3.3.0', 'yarn.nodemanager.windows-secure-container-executor.group is not a valid property for yarn version 3.3.0', 'yarn.sharedcache.nm.uploader.thread-count is not a valid property for yarn version 3.3.0', 'yarn.timeline-service.webapp.xfs-filter.xframe-options is not a valid property for yarn version 3.3.0']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: yarn.scheduler.maximum-allocation-mb	yarn.resourcemanager.reservation-system.enable	yarn.nodemanager.resource.memory-mb	yarn.nodemanager.resource.memory.enabled	yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size	yarn.nodemanager.windows-secure-container-executor.group	yarn.sharedcache.nm.uploader.thread-count	yarn.timeline-service.webapp.xfs-filter.xframe-options
+[Ciri] Reason for yarn.scheduler.maximum-allocation-mb: yarn.scheduler.maximum-allocation-mb is not a valid property for yarn version 3.3.0
+[Ciri] Reason for yarn.resourcemanager.reservation-system.enable: yarn.resourcemanager.reservation-system.enable is not a valid property for yarn version 3.3.0
+[Ciri] Reason for yarn.nodemanager.resource.memory-mb: yarn.nodemanager.resource.memory-mb is not a valid property for yarn version 3.3.0
+[Ciri] Reason for yarn.nodemanager.resource.memory.enabled: yarn.nodemanager.resource.memory.enabled is not a valid property for yarn version 3.3.0
+[Ciri] Reason for yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size: yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-size is not a valid property for yarn version 3.3.0
+[Ciri] Reason for yarn.nodemanager.windows-secure-container-executor.group: yarn.nodemanager.windows-secure-container-executor.group is not a valid property for yarn version 3.3.0
+[Ciri] Reason for yarn.sharedcache.nm.uploader.thread-count: yarn.sharedcache.nm.uploader.thread-count is not a valid property for yarn version 3.3.0
+[Ciri] Reason for yarn.timeline-service.webapp.xfs-filter.xframe-options: yarn.timeline-service.webapp.xfs-filter.xframe-options is not a valid property for yarn version 3.3.0

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.dir', 'dfs.namenode.max.objects', 'dfs.client.test.drop.namenode.response.number'], 'reason': ["The value '/valid/dir1' for 'dfs.namenode.edits.dir' is not a comma-separated list of directories as per the description.", "The value '-1' for 'dfs.namenode.max.objects' is not recommended as it can lead to performance issues and potential data loss.", "The property 'dfs.client.test.drop.namenode.response.number' is a test property and should not be set in a production environment."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.edits.dir	dfs.namenode.max.objects	dfs.client.test.drop.namenode.response.number
+[Ciri] Reason for dfs.namenode.edits.dir: The value '/valid/dir1' for 'dfs.namenode.edits.dir' is not a comma-separated list of directories as per the description.
+[Ciri] Reason for dfs.namenode.max.objects: The value '-1' for 'dfs.namenode.max.objects' is not recommended as it can lead to performance issues and potential data loss.
+[Ciri] Reason for dfs.client.test.drop.namenode.response.number: The property 'dfs.client.test.drop.namenode.response.number' is a test property and should not be set in a production environment.

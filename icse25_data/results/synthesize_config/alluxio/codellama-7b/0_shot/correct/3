@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.local.writer.chunk.size.bytes', 'alluxio.master.tieredstore.global.level1.alias', 'alluxio.master.tieredstore.global.level2.alias'], 'reason': ['The value of alluxio.user.local.writer.chunk.size.bytes is not a valid integer.', 'The value of alluxio.master.tieredstore.global.level1.alias is not a valid string.', 'The value of alluxio.master.tieredstore.global.level2.alias is not a valid string.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.local.writer.chunk.size.bytes', 'alluxio.user.network.netty.channel'], 'reason': ['alluxio.user.local.writer.chunk.size.bytes must be a positive integer', 'alluxio.user.network.netty.channel must be one of the following values: NIO, EPOLL, KQUEUE']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.local.writer.chunk.size.bytes', 'alluxio.user.network.netty.channel'], 'reason': ['alluxio.user.local.writer.chunk.size.bytes should be an integer, but it is set to 64KB', 'alluxio.user.network.netty.channel should be one of [NIO, EPOLL, KQUEUE], but it is set to NIO']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.local.writer.chunk.size.bytes	alluxio.user.network.netty.channel
+[Ciri] Reason for alluxio.user.local.writer.chunk.size.bytes: alluxio.user.local.writer.chunk.size.bytes must be a positive integer
+[Ciri] Reason for alluxio.user.network.netty.channel: alluxio.user.network.netty.channel must be one of the following values: NIO, EPOLL, KQUEUE

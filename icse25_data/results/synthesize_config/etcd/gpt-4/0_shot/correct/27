@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log-outputs', 'proxy-read-timeout', 'proxy-write-timeout'], 'reason': ["The 'log-outputs' parameter should specify the output type, such as 'default' or a file path, not 'stderr'.", "The 'proxy-read-timeout' and 'proxy-write-timeout' parameters are not applicable to etcd version 3.5.0 as the proxy feature was deprecated and removed in earlier versions."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: log-outputs	proxy-read-timeout	proxy-write-timeout
+[Ciri] Reason for log-outputs: The 'log-outputs' parameter should specify the output type, such as 'default' or a file path, not 'stderr'.
+[Ciri] Reason for proxy-read-timeout: The 'proxy-read-timeout' and 'proxy-write-timeout' parameters are not applicable to etcd version 3.5.0 as the proxy feature was deprecated and removed in earlier versions.
+[Ciri] Reason for proxy-write-timeout: 

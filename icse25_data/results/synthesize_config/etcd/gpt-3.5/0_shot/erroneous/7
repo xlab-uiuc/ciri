@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['key-file'], 'reason': ["The 'key-file' parameter should not have '////' in the path."]}
+
+{'hasError': True, 'errParameter': ['key-file', 'proxy-dial-timeout', 'discovery-fallback', 'log-outputs', 'auto-compaction-retention', 'force-new-cluster', 'enable-pprof', 'max-snapshots'], 'reason': ["Invalid value for 'key-file' parameter. It should not contain '////'.", "Invalid value for 'proxy-dial-timeout' parameter. It should be a number.", "Invalid value for 'discovery-fallback' parameter. It should be a string without quotes.", "Invalid value for 'log-outputs' parameter. It should be an array of strings.", "Invalid value for 'auto-compaction-retention' parameter. It should be a number.", "Invalid value for 'force-new-cluster' parameter. It should be a boolean.", "Invalid value for 'enable-pprof' parameter. It should be a boolean.", "Invalid value for 'max-snapshots' parameter. It should be a number."]}
+
+{'hasError': True, 'errParameter': ['key-file', 'discovery-fallback', 'log-outputs', 'auto-compaction-retention'], 'reason': ["The 'key-file' parameter should not have '////'. It should be 'tmp/etcd/key'.", "The 'discovery-fallback' parameter should not be in single quotes. It should be without quotes.", "The 'log-outputs' parameter should not be in square brackets. It should be without brackets.", "The 'auto-compaction-retention' parameter should not be in double quotes. It should be without quotes."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['key-file', 'proxy-dial-timeout', 'discovery-fallback', 'log-outputs', 'auto-compaction-retention', 'force-new-cluster', 'enable-pprof', 'max-snapshots'], 'reason': ["Invalid value for 'key-file'. It should not have '////'.", "Invalid value for 'proxy-dial-timeout'. It should be a number without quotes.", "Invalid value for 'discovery-fallback'. It should not have quotes around 'proxy'.", "Invalid value for 'log-outputs'. It should be an array of strings.", "Invalid value for 'auto-compaction-retention'. It should not have quotes around the number.", "Invalid value for 'force-new-cluster'. It should be a boolean value without quotes.", "Invalid value for 'enable-pprof'. It should be a boolean value without quotes.", "Invalid value for 'max-snapshots'. It should be a number without quotes."]}
+
+{'hasError': True, 'errParameter': ['key-file', 'proxy-dial-timeout', 'discovery-fallback', 'log-outputs', 'auto-compaction-retention', 'force-new-cluster', 'enable-pprof', 'max-snapshots'], 'reason': ["Invalid value for 'key-file'. It should not contain '////'.", "Invalid value for 'proxy-dial-timeout'. It should be a number.", "Invalid value for 'discovery-fallback'. It should not have quotes around it.", "Invalid value for 'log-outputs'. It should be a string, not an array.", "Invalid value for 'auto-compaction-retention'. It should be a number, not a string.", "Invalid value for 'force-new-cluster'. It should be a boolean value (true/false).", "Invalid value for 'enable-pprof'. It should be a boolean value (true/false).", "Invalid value for 'max-snapshots'. It should be a number."]}
+
+{'hasError': True, 'errParameter': ['key-file', 'discovery-fallback', 'log-outputs', 'auto-compaction-retention'], 'reason': ["The 'key-file' parameter should not have '////'. It should be 'tmp/etcd/key'.", "The 'discovery-fallback' parameter should not have single quotes around 'proxy'. It should be without quotes.", "The 'log-outputs' parameter should not be an array. It should be a single value like 'stderr'.", "The 'auto-compaction-retention' parameter should not be in double quotes. It should be a number without quotes."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: key-file	proxy-dial-timeout	discovery-fallback	log-outputs	auto-compaction-retention	force-new-cluster	enable-pprof	max-snapshots
+[Ciri] Reason for key-file: Invalid value for 'key-file'. It should not have '////'.
+[Ciri] Reason for proxy-dial-timeout: Invalid value for 'proxy-dial-timeout'. It should be a number.
+[Ciri] Reason for discovery-fallback: Invalid value for 'discovery-fallback'. It should not have quotes around 'proxy'.
+[Ciri] Reason for log-outputs: Invalid value for 'log-outputs'. It should be a string, not an array.
+[Ciri] Reason for auto-compaction-retention: Invalid value for 'auto-compaction-retention'. It should not have quotes around the number.
+[Ciri] Reason for force-new-cluster: Invalid value for 'force-new-cluster'. It should be a boolean value without quotes.
+[Ciri] Reason for enable-pprof: Invalid value for 'enable-pprof'. It should be a boolean value (true/false).
+[Ciri] Reason for max-snapshots: Invalid value for 'max-snapshots'. It should be a number.

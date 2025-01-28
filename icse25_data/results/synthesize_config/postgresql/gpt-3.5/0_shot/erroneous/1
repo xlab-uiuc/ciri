@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['reserved_connections', 'enable_hashjoin'], 'reason': ['reserved_connections should be an integer value, not a float.', "enable_hashjoin should be set to 'true' or 'false' instead of 'on'."]}
+
+{'hasError': True, 'errParameter': ['reserved_connections', 'autovacuum_max_workers', 'event_triggers', 'enable_hashjoin', 'enable_seqscan', 'debug_print_rewritten', 'default_transaction_isolation', 'log_duration'], 'reason': ['reserved_connections should be an integer value, not a float.', 'autovacuum_max_workers should be an integer value, not a float.', "event_triggers should be either 'on' or 'off'.", "enable_hashjoin should be either 'on' or 'off'.", "enable_seqscan should be either 'on' or 'off'.", "debug_print_rewritten should be either 'on' or 'off'.", 'default_transaction_isolation should be in single quotes.', "log_duration should be either 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['reserved_connections', 'event_triggers', 'enable_hashjoin', 'enable_seqscan', 'debug_print_rewritten', 'default_transaction_isolation', 'log_duration'], 'reason': ['reserved_connections should be an integer value, not a float.', "event_triggers should be 'off' or 'none' for version 13.0.", "enable_hashjoin should be 'true' or 'false'.", "enable_seqscan should be 'true' or 'false'.", "debug_print_rewritten should be 'on' or 'off'.", "default_transaction_isolation should be 'read committed' without quotes.", "log_duration should be 'on' or 'off'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['reserved_connections', 'event_triggers', 'enable_hashjoin', 'enable_seqscan', 'debug_print_rewritten', 'default_transaction_isolation', 'log_duration'], 'reason': ['reserved_connections should be an integer value, not a float.', "event_triggers should be set to 'off' or 'none' for this version of PostgreSQL.", "enable_hashjoin should be set to 'true' or 'false' instead of 'on'.", "enable_seqscan should be set to 'true' or 'false' instead of 'on'.", "debug_print_rewritten should be set to 'on' or 'off' instead of 'off'.", "default_transaction_isolation should be set to 'read-committed' without quotes.", "log_duration should be set to 'on' or 'off' instead of 'off'."]}
+
+{'hasError': True, 'errParameter': ['reserved_connections', 'autovacuum_max_workers', 'event_triggers', 'enable_hashjoin', 'enable_seqscan', 'debug_print_rewritten', 'default_transaction_isolation', 'log_duration'], 'reason': ['reserved_connections should be an integer value, not a float.', 'autovacuum_max_workers should be an integer value, not a float.', "event_triggers should be set to 'on' or 'off'.", "enable_hashjoin should be set to 'on' or 'off'.", "enable_seqscan should be set to 'on' or 'off'.", "debug_print_rewritten should be set to 'on' or 'off'.", "default_transaction_isolation should be set to a valid isolation level like 'read committed'.", "log_duration should be set to 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['reserved_connections', 'event_triggers'], 'reason': ['reserved_connections should be an integer value, not a float.', "event_triggers should be set to 'off' or 'none' for PostgreSQL version 13.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['reserved_connections', 'event_triggers'], 'reason': ['reserved_connections should be an integer value, not a float.', "event_triggers should be set to 'off' or 'none' for PostgreSQL version 13.0."]}
+
+{'hasError': True, 'errParameter': ['reserved_connections', 'enable_hashjoin'], 'reason': ['reserved_connections should be an integer value, not a float.', "enable_hashjoin should be set to 'true' or 'false' instead of 'on'."]}
+
+{'hasError': True, 'errParameter': ['reserved_connections', 'event_triggers'], 'reason': ['reserved_connections should be an integer value, not a float.', "event_triggers should be set to 'off' or 'none' for this version of PostgreSQL."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: reserved_connections	event_triggers
+[Ciri] Reason for reserved_connections: reserved_connections should be an integer value, not a float.
+[Ciri] Reason for event_triggers: event_triggers should be set to 'off' or 'none' for this version of PostgreSQL.

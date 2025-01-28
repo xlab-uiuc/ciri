@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'maxSessionTimeout', 'autopurge.purgeInterval'], 'reason': ["The path for 'dataLogDir' should not contain multiple slashes or backslashes. It should be a valid directory path.", "'maxSessionTimeout' should be greater than 0. A value of 0 is not valid as it would disable session timeouts entirely.", "'autopurge.purgeInterval' should be a positive integer. A value of -1 is not valid as it would disable the autopurge feature, which is not recommended."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dataLogDir	maxSessionTimeout	autopurge.purgeInterval
+[Ciri] Reason for dataLogDir: The path for 'dataLogDir' should not contain multiple slashes or backslashes. It should be a valid directory path.
+[Ciri] Reason for maxSessionTimeout: 'maxSessionTimeout' should be greater than 0. A value of 0 is not valid as it would disable session timeouts entirely.
+[Ciri] Reason for autopurge.purgeInterval: 'autopurge.purgeInterval' should be a positive integer. A value of -1 is not valid as it would disable the autopurge feature, which is not recommended.

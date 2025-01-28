@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tickTime', 'secureClientPortAddress'], 'reason': ['Invalid value for tickTime property.', 'secureClientPortAddress should not be set to 0.0.0.0:3001.']}
+
+{'hasError': True, 'errParameter': ['tickTime', 'secureClientPortAddress'], 'reason': ["Invalid value 'ciri/ciri' for tickTime. It should be a numeric value.", "secureClientPortAddress should not be set to '0.0.0.0:3001'. Use '0.0.0.0' for all IPs or specify a specific IP."]}
+
+{'hasError': True, 'errParameter': ['tickTime', 'secureClientPortAddress'], 'reason': ['Invalid format for tickTime parameter. It should be in milliseconds.', 'secureClientPortAddress should not include the port number. Use only the IP address.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tickTime	secureClientPortAddress
+[Ciri] Reason for tickTime: Invalid value for tickTime property.
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress should not be set to 0.0.0.0:3001.

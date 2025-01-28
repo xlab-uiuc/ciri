@@ -1,0 +1,15 @@
+Wrong shot number:
+[5]
+
+Correct shot number:
+[10, 1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.impl', 'hadoop.security.random.device.file.path'], 'reason': ["The property 'ipc.[port_number].scheduler.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number.", "The property 'hadoop.security.random.device.file.path' has an invalid file path 'dev/urandom///'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].scheduler.impl	hadoop.security.random.device.file.path
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The property 'ipc.[port_number].scheduler.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number.
+[Ciri] Reason for hadoop.security.random.device.file.path: The property 'hadoop.security.random.device.file.path' has an invalid file path 'dev/urandom///'.

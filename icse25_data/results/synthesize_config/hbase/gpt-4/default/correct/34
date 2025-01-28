@@ -1,0 +1,16 @@
+Wrong shot number:
+[12, 6, 7]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins', 'hbase.client.retries.number', 'hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.master.logcleaner.plugins' has an incorrect value. The correct class name should be 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner' for cleaning WAL files based on their age.", "The 'usage' tag found within the 'hbase.client.retries.number' property is not a standard configuration tag and should be removed or commented out.", "The property 'hbase.regionserver.storefile.refresh.period' has an invalid value of '-1'. To disable this feature, it should be set to '0'. A negative value is not valid."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.master.logcleaner.plugins	hbase.client.retries.number	hbase.regionserver.storefile.refresh.period
+[Ciri] Reason for hbase.master.logcleaner.plugins: The property 'hbase.master.logcleaner.plugins' has an incorrect value. The correct class name should be 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner' for cleaning WAL files based on their age.
+[Ciri] Reason for hbase.client.retries.number: The 'usage' tag found within the 'hbase.client.retries.number' property is not a standard configuration tag and should be removed or commented out.
+[Ciri] Reason for hbase.regionserver.storefile.refresh.period: The property 'hbase.regionserver.storefile.refresh.period' has an invalid value of '-1'. To disable this feature, it should be set to '0'. A negative value is not valid.

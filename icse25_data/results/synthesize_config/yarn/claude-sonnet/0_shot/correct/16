@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.keytab', 'yarn.nodemanager.recovery.dir'], 'reason': ["The value '/valid/file1' for the 'yarn.resourcemanager.keytab' property is not a valid path. The keytab file should be an absolute path on the ResourceManager host.", "The value '/valid/file1' for the 'yarn.nodemanager.recovery.dir' property is not a valid path. The recovery directory should be an absolute path on the NodeManager host."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.keytab	yarn.nodemanager.recovery.dir
+[Ciri] Reason for yarn.resourcemanager.keytab: The value '/valid/file1' for the 'yarn.resourcemanager.keytab' property is not a valid path. The keytab file should be an absolute path on the ResourceManager host.
+[Ciri] Reason for yarn.nodemanager.recovery.dir: The value '/valid/file1' for the 'yarn.nodemanager.recovery.dir' property is not a valid path. The recovery directory should be an absolute path on the NodeManager host.

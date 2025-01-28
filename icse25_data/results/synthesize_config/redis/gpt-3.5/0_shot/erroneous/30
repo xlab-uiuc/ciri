@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['supervised', 'aof-rewrite-incremental-fsync', 'stream-node-max-bytes', 'repl-disable-tcp-nodelay', 'port', 'protected-mode', 'replica-priority', 'acllog-max-len'], 'reason': ["Unknown parameter 'supervised'", "Unknown parameter 'aof-rewrite-incremental-fsync'", "Unknown parameter 'stream-node-max-bytes'", "Unknown parameter 'repl-disable-tcp-nodelay'", "Unknown parameter 'port'", "Unknown parameter 'protected-mode'", "Unknown parameter 'replica-priority'", "Unknown parameter 'acllog-max-len'"]}
+
+{'hasError': True, 'errParameter': ['supervised', 'aof-rewrite-incremental-fsync', 'stream-node-max-bytes', 'repl-disable-tcp-nodelay', 'protected-mode', 'replica-priority', 'acllog-max-len'], 'reason': ["Unknown parameter 'supervised' for Redis version 7.0.0", "Unknown parameter 'aof-rewrite-incremental-fsync' for Redis version 7.0.0", "Unknown parameter 'stream-node-max-bytes' for Redis version 7.0.0", "Unknown parameter 'repl-disable-tcp-nodelay' for Redis version 7.0.0", "Unknown parameter 'protected-mode' for Redis version 7.0.0", "Unknown parameter 'replica-priority' for Redis version 7.0.0", "Unknown parameter 'acllog-max-len' for Redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['supervised', 'aof-rewrite-incremental-fsync', 'stream-node-max-bytes', 'repl-disable-tcp-nodelay', 'protected-mode', 'replica-priority', 'acllog-max-len'], 'reason': ["Parameter 'supervised' is not recognized in Redis version 7.0.0", "Parameter 'aof-rewrite-incremental-fsync' is not recognized in Redis version 7.0.0", "Parameter 'stream-node-max-bytes' is not recognized in Redis version 7.0.0", "Parameter 'repl-disable-tcp-nodelay' is not recognized in Redis version 7.0.0", "Parameter 'protected-mode' is not recognized in Redis version 7.0.0", "Parameter 'replica-priority' is not recognized in Redis version 7.0.0", "Parameter 'acllog-max-len' is not recognized in Redis version 7.0.0"]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: supervised	aof-rewrite-incremental-fsync	stream-node-max-bytes	repl-disable-tcp-nodelay	protected-mode	replica-priority	acllog-max-len
+[Ciri] Reason for supervised: Parameter 'supervised' is not recognized in Redis version 7.0.0
+[Ciri] Reason for aof-rewrite-incremental-fsync: Unknown parameter 'aof-rewrite-incremental-fsync' for Redis version 7.0.0
+[Ciri] Reason for stream-node-max-bytes: Unknown parameter 'stream-node-max-bytes' for Redis version 7.0.0
+[Ciri] Reason for repl-disable-tcp-nodelay: Parameter 'repl-disable-tcp-nodelay' is not recognized in Redis version 7.0.0
+[Ciri] Reason for protected-mode: Unknown parameter 'protected-mode' for Redis version 7.0.0
+[Ciri] Reason for replica-priority: Parameter 'replica-priority' is not recognized in Redis version 7.0.0
+[Ciri] Reason for acllog-max-len: Parameter 'acllog-max-len' is not recognized in Redis version 7.0.0

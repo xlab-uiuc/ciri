@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>zookeeper.znode.parent</name>
+  <value>/hbase</value>
+    <description>Root ZNode for HBase in ZooKeeper. All of HBase's ZooKeeper
+      files that are configured with a relative path will go under this node.
+      By default, all of HBase's ZooKeeper file paths are configured with a
+      relative path, so they will all go under this directory unless changed.
+    </description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.dataDir</name>
+  <value>/valid/file1</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The directory where the snapshot is stored.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.flusher.count</name>
+  <value>1</value>
+    <description> The number of flush threads. With fewer threads, the MemStore flushes will be
+      queued. With more threads, the flushes will be executed in parallel, increasing the load on
+      HDFS, and potentially causing more compactions. </description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.max</name>
+  <value>20</value>
+    <description>The maximum number of StoreFiles which will be selected for a single minor
+      compaction, regardless of the number of eligible StoreFiles. Effectively, the value of
+      hbase.hstore.compaction.max controls the length of time it takes a single compaction to
+      complete. Setting it larger means that more StoreFiles are included in a compaction. For most
+      cases, the default value is appropriate.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.client.fallback-to-simple-auth-allowed</name>
+  <value>false</value>
+    <description>When a client is configured to attempt a secure connection, but attempts to
+      connect to an insecure server, that server may instruct the client to
+      switch to SASL SIMPLE (unsecure) authentication. This setting controls
+      whether or not the client will accept this instruction from the server.
+      When false (the default), the client will not allow the fallback to SIMPLE
+      authentication, and will abort the connection.</description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.user.enabled</name>
+  <value>true</value>
+    <description>Enables or disables user (aka. table) coprocessor loading.
+    If 'false' (disabled), any table coprocessor attributes in table
+    descriptors will be ignored. If "hbase.coprocessor.enabled" is 'false'
+    this setting has no effect.
+    </description>
+</property>
+
+<property>
+  <name>hbase.status.listener.class</name>
+  <value>org.apache.hadoop.hbase.client.ClusterStatusListener$MulticastListener</value>
+    <description>
+      Implementation of the status listener with a multicast message.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest.filter.classes</name>
+  <value>org.apache.hadoop.hbase.rest.filter.GzipFilter</value>
+    <description>
+      Servlet filters for REST service.
+    </description>
+</property>
+
+</configuration>

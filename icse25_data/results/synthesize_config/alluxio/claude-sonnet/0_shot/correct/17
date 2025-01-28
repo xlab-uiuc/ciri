@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.oss.connection.ttl', 'alluxio.master.mount.table.root.ufs'], 'reason': ["The property 'alluxio.underfs.oss.connection.ttl' is not a valid Alluxio configuration property in version 2.5.0. It was introduced in a later version.", "The value '/valid/file1' for the property 'alluxio.master.mount.table.root.ufs' is not a valid path. It should be a URI representing the root UFS path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.oss.connection.ttl	alluxio.master.mount.table.root.ufs
+[Ciri] Reason for alluxio.underfs.oss.connection.ttl: The property 'alluxio.underfs.oss.connection.ttl' is not a valid Alluxio configuration property in version 2.5.0. It was introduced in a later version.
+[Ciri] Reason for alluxio.master.mount.table.root.ufs: The value '/valid/file1' for the property 'alluxio.master.mount.table.root.ufs' is not a valid path. It should be a URI representing the root UFS path.

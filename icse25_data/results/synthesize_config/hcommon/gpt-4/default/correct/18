@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 1, 14]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.abfss.impl'], 'reason': ["The property 'fs.AbstractFileSystem.abfss.impl' is incorrect or not recognized. The correct property should likely be 'fs.AbstractFileSystem.abfs.impl' for Azure Blob File System support."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.abfss.impl'], 'reason': ["The property 'fs.AbstractFileSystem.abfss.impl' is incorrect or not recognized. The correct property should likely be 'fs.AbstractFileSystem.abfs.impl' for Azure Blob File System support."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.abfss.impl'], 'reason': ["The property 'fs.AbstractFileSystem.abfss.impl' is incorrect or unsupported. The correct property should be for supported file systems such as 'fs.AbstractFileSystem.file.impl', 'fs.AbstractFileSystem.hdfs.impl', etc. There is no support for 'abfss://' as a scheme in Hadoop 3.3.0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.AbstractFileSystem.abfss.impl
+[Ciri] Reason for fs.AbstractFileSystem.abfss.impl: The property 'fs.AbstractFileSystem.abfss.impl' is incorrect or not recognized. The correct property should likely be 'fs.AbstractFileSystem.abfs.impl' for Azure Blob File System support.

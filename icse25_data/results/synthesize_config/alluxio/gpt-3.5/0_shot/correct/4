@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.hostname', 'alluxio.security.login.impersonation.username'], 'reason': ["The property 'alluxio.user.hostname' should be set to the actual hostname or IP address of the machine running Alluxio, not a loopback address like '127.0.0.1'.", "The property 'alluxio.security.login.impersonation.username' should be set to a valid username for impersonation, not '_HDFS_USER_'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.hostname', 'alluxio.security.login.impersonation.username'], 'reason': ["The property 'alluxio.user.hostname' should be set to the actual hostname or IP address of the machine running Alluxio, not a loopback address like '127.0.0.1'.", "The property 'alluxio.security.login.impersonation.username' should not be set to '_HDFS_USER_'. It should be set to the username that Alluxio will use for impersonation when accessing HDFS."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.hostname', 'alluxio.security.login.impersonation.username'], 'reason': ["The property 'alluxio.user.hostname' should be set to the actual hostname or IP address of the machine running Alluxio, not a loopback address like '127.0.0.1'.", "The property 'alluxio.security.login.impersonation.username' should be set to a valid username for impersonation, not '_HDFS_USER_'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.hostname	alluxio.security.login.impersonation.username
+[Ciri] Reason for alluxio.user.hostname: The property 'alluxio.user.hostname' should be set to the actual hostname or IP address of the machine running Alluxio, not a loopback address like '127.0.0.1'.
+[Ciri] Reason for alluxio.security.login.impersonation.username: The property 'alluxio.security.login.impersonation.username' should not be set to '_HDFS_USER_'. It should be set to the username that Alluxio will use for impersonation when accessing HDFS.

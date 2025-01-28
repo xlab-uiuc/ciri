@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.close.timeout', 'alluxio.worker.network.netty.watermark.low'], 'reason': ['alluxio.user.streaming.writer.close.timeout should be a duration', 'alluxio.worker.network.netty.watermark.low should be a size']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.close.timeout', 'alluxio.worker.network.netty.watermark.low'], 'reason': ['alluxio.user.streaming.writer.close.timeout should be a duration, but it is not.', 'alluxio.worker.network.netty.watermark.low should be a size, but it is not.']}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.netty.watermark.high', 'alluxio.worker.network.netty.watermark.low'], 'reason': ['The value of alluxio.worker.network.netty.watermark.high is greater than the value of alluxio.worker.network.netty.watermark.low. The high watermark should be set to a value greater than the low watermark.', 'The value of alluxio.worker.network.netty.watermark.high is greater than the value of alluxio.worker.network.netty.watermark.low. The high watermark should be set to a value greater than the low watermark.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.streaming.writer.close.timeout	alluxio.worker.network.netty.watermark.low
+[Ciri] Reason for alluxio.user.streaming.writer.close.timeout: alluxio.user.streaming.writer.close.timeout should be a duration
+[Ciri] Reason for alluxio.worker.network.netty.watermark.low: alluxio.worker.network.netty.watermark.low should be a size

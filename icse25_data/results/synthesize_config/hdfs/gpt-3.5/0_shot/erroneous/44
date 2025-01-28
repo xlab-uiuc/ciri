@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-bind-host', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["Invalid IP address '0.0.256.0' for dfs.namenode.rpc-bind-host. The octet '256' is out of range.", "Invalid value '5s' for dfs.namenode.gc.time.monitor.sleep.interval.ms. The value should be in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-bind-host', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["Invalid IP address '0.0.256.0' for dfs.namenode.rpc-bind-host. The octet value '256' is out of range.", "Invalid value '5s' for dfs.namenode.gc.time.monitor.sleep.interval.ms. The value should be in milliseconds format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-bind-host', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ['Invalid IP address format. The value should be a valid IPv4 address.', 'Invalid value format. The value should be in milliseconds format (e.g., 5000 for 5 seconds).']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.rpc-bind-host	dfs.namenode.gc.time.monitor.sleep.interval.ms
+[Ciri] Reason for dfs.namenode.rpc-bind-host: Invalid IP address '0.0.256.0' for dfs.namenode.rpc-bind-host. The octet '256' is out of range.
+[Ciri] Reason for dfs.namenode.gc.time.monitor.sleep.interval.ms: Invalid value '5s' for dfs.namenode.gc.time.monitor.sleep.interval.ms. The value should be in milliseconds.

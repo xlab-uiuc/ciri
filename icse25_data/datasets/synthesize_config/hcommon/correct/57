@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>io.erasurecode.codec.xor.rawcoders</name>
+  <value>xor_native,xor_java</value>
+  <description>
+    Comma separated raw coder implementations for the xor codec. The earlier
+    factory is prior to followings in case of failure of creating raw coders.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.assumed.role.session.duration</name>
+  <value>30m</value>
+  <description>
+    Duration of assumed roles before a refresh is attempted.
+    Used when session tokens are requested.
+    Range: 15m to 1h
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.purge.age</name>
+  <value>43200</value>
+  <description>Minimum age in seconds of multipart uploads to purge
+    on startup if "fs.s3a.multipart.purge" is true
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.retry.throttle.limit</name>
+  <value>20</value>
+  <description>
+    Number of times to retry any throttled request.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.csv.quote.character</name>
+  <value>"</value>
+  <description>In S3 Select queries over CSV files: quote character.
+    \t is remapped to the TAB character, \r to CR \n to newline. \\ to \
+    and \" to "
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.change.detection.version.required</name>
+  <value>true</value>
+  <description>
+    Determines if S3 object version attribute defined by
+    fs.s3a.change.detection.source should be treated as required.  If true and the
+    referred attribute is unavailable in an S3 GetObject response,
+    NoVersionAttributeException is thrown.  Setting to 'true' is encouraged to
+    avoid potential for inconsistent reads with third-party S3 implementations or
+    against S3 buckets that have object versioning disabled.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.shell.missing.defaultFs.warning</name>
+  <value>true</value>
+    <description>
+      Enable hdfs shell commands to display warnings if (fs.defaultFS) property
+      is not set.
+    </description>
+</property>
+
+<property>
+  <name>fs.adl.oauth2.msi.port</name>
+  <value>3001</value>
+    <description>
+      The localhost port for the MSI token service. This is the port specified
+      when creating the Azure VM. The default, if this setting is not specified,
+      is 50342.
+      Used by MSI token provider.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['random_page_cost', 'old_snapshot_threshold', 'track_functions', 'enable_parallel_hash', 'client_encoding'], 'reason': ["The parameter 'random_page_cost' is not a valid PostgreSQL configuration parameter in version 13.0.", "The parameter 'old_snapshot_threshold' is not a valid PostgreSQL configuration parameter in version 13.0.", "The parameter 'track_functions' is not a valid PostgreSQL configuration parameter in version 13.0.", "The parameter 'enable_parallel_hash' is not a valid PostgreSQL configuration parameter in version 13.0.", "The value 'sql_ascii' for the 'client_encoding' parameter is not a valid encoding in PostgreSQL 13.0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: random_page_cost	old_snapshot_threshold	track_functions	enable_parallel_hash	client_encoding
+[Ciri] Reason for random_page_cost: The parameter 'random_page_cost' is not a valid PostgreSQL configuration parameter in version 13.0.
+[Ciri] Reason for old_snapshot_threshold: The parameter 'old_snapshot_threshold' is not a valid PostgreSQL configuration parameter in version 13.0.
+[Ciri] Reason for track_functions: The parameter 'track_functions' is not a valid PostgreSQL configuration parameter in version 13.0.
+[Ciri] Reason for enable_parallel_hash: The parameter 'enable_parallel_hash' is not a valid PostgreSQL configuration parameter in version 13.0.
+[Ciri] Reason for client_encoding: The value 'sql_ascii' for the 'client_encoding' parameter is not a valid encoding in PostgreSQL 13.0.

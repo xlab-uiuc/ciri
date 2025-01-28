@@ -1,0 +1,15 @@
+Wrong shot number:
+[16, 11, 6]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir', 'dfs.balancer.moverThreads'], 'reason': ["The property 'dfs.datanode.data.dir' has an incorrect value format. It should start with 'file:///' instead of 'file///'.", "The property 'dfs.balancer.moverThreads' has a value '500' which is excessively high and likely to cause resource issues."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.data.dir	dfs.balancer.moverThreads
+[Ciri] Reason for dfs.datanode.data.dir: The property 'dfs.datanode.data.dir' has an incorrect value format. It should start with 'file:///' instead of 'file///'.
+[Ciri] Reason for dfs.balancer.moverThreads: The property 'dfs.balancer.moverThreads' has a value '500' which is excessively high and likely to cause resource issues.

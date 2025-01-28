@@ -1,0 +1,15 @@
+Wrong shot number:
+[3, 12, 10]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.time.to.purge.deletes', 'hbase.rest.port'], 'reason': ["The property 'hbase.hstore.time.to.purge.deletes' expects a value in milliseconds as a long type but is given as an integer without specifying 'ms' or 's' for milliseconds or seconds.", "The property 'hbase.rest.port' usage example suggests a default value of 8080, but the provided value is 3001. This is not an error in configuration but might be misleading if the default value is expected elsewhere."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.hstore.time.to.purge.deletes	hbase.rest.port
+[Ciri] Reason for hbase.hstore.time.to.purge.deletes: The property 'hbase.hstore.time.to.purge.deletes' expects a value in milliseconds as a long type but is given as an integer without specifying 'ms' or 's' for milliseconds or seconds.
+[Ciri] Reason for hbase.rest.port: The property 'hbase.rest.port' usage example suggests a default value of 8080, but the provided value is 3001. This is not an error in configuration but might be misleading if the default value is expected elsewhere.

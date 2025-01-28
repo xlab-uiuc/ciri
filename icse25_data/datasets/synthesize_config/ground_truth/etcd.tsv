@@ -1,0 +1,32 @@
+Syntax	Data Type	heartbeat-interval	9.9			
+Syntax	Data Type	election-timeout	-5.5			
+Syntax	Data Type	max-snapshots	true			
+Syntax	Data Type	proxy-refresh-interval	ciri/ciri			
+Syntax	Path	wal-dir	//tmp/etcd_wal			
+Syntax	Path	cert-file	/\etcd/cert			
+Syntax	Path	key-file	tmp////etcd/key			
+Syntax	Path	trusted-ca-file	dev/urandom///			
+Syntax	URL	listen-client-urls	file///			
+Syntax	URL	initial-advertise-peer-urls	ciri			
+Syntax	URL	advertise-client-urls	file//			
+Syntax	URL	discovery	file:::			
+Range	Basic Numeric	heartbeat-interval	-100			
+Range	Basic Numeric	proxy-failure-wait	-1			
+Range	Basic Numeric	proxy-dial-timeout	4000000000			
+Range	Basic Numeric	proxy-refresh-interval	-10			
+Range	Bool	enable-v2	10			
+Range	Bool	enable-pprof	hadoop			
+Range	Bool	client-cert-auth	1.5			
+Range	Bool	auto-tls	10000			
+Range	Enum	proxy	nonono			
+Range	Enum	discovery-fallback	NONE			
+Range	Enum	log-level	NOEXIST_LEVEL			
+Range	Enum	auto-compaction-mode	NOEXIST_MODE			
+Dependency	Control	proxy	off	proxy-failure-wait	5000	
+Dependency	Control	proxy	off	proxy-refresh-interval	30000	
+Dependency	Control	proxy	off	proxy-dial-timeout	1000	
+Dependency	Control	proxy	off	proxy-write-timeout	5000	
+Version	Parameter Change	debug	false			
+Version	Parameter Change	log-package-levels	DEBUG			
+Version	Parameter Change	peer-cert-file	/etcd/peer_cert_file			
+Version	Parameter Change	peer-key-file	/etcd/peer_key_file			

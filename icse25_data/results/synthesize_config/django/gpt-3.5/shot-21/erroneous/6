@@ -1,0 +1,16 @@
+Wrong shot number:
+[3]
+
+Correct shot number:
+[1, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_PATH', 'WSGI_APPLICATION', 'PASSWORD_RESET_TIMEOUT'], 'reason': ["The property 'SESSION_COOKIE_PATH' has the value '/\\django/cookie' which is not a valid path format.", "The property 'WSGI_APPLICATION' is set to 'None' which should be a valid WSGI application path.", "The property 'PASSWORD_RESET_TIMEOUT' has the value '60 * 60 * 24 * 3' which is not a valid timeout format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: SESSION_COOKIE_PATH	WSGI_APPLICATION	PASSWORD_RESET_TIMEOUT
+[Ciri] Reason for SESSION_COOKIE_PATH: The property 'SESSION_COOKIE_PATH' has the value '/\django/cookie' which is not a valid path format.
+[Ciri] Reason for WSGI_APPLICATION: The property 'WSGI_APPLICATION' is set to 'None' which should be a valid WSGI application path.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: The property 'PASSWORD_RESET_TIMEOUT' has the value '60 * 60 * 24 * 3' which is not a valid timeout format.

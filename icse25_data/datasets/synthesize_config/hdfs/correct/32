@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.dns.nameserver</name>
+  <value>default</value>
+  <description>
+    The host name or IP address of the name server (DNS) which a DataNode
+    should use to determine its own host name.
+
+    Prefer using hadoop.security.dns.nameserver over
+    dfs.datanode.dns.nameserver.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.read.considerLoad</name>
+  <value>true</value>
+  <description>
+    Decide if sort block locations considers the target's load or not when read.
+    Turn off by default.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.du.reserved.calculator</name>
+  <value>org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.ReservedSpaceCalculator$ReservedSpaceCalculatorAbsolute</value>
+  <description>Determines the class of ReservedSpaceCalculator to be used for
+    calculating disk space reservedfor non-HDFS data. The default calculator is
+    ReservedSpaceCalculatorAbsolute which will use dfs.datanode.du.reserved
+    for a static reserved number of bytes. ReservedSpaceCalculatorPercentage
+    will use dfs.datanode.du.reserved.pct to calculate the reserved number
+    of bytes based on the size of the storage. ReservedSpaceCalculatorConservative and
+    ReservedSpaceCalculatorAggressive will use their combination, Conservative will use
+    maximum, Aggressive minimum. For more details see ReservedSpaceCalculator.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.write.exclude.nodes.cache.expiry.interval.millis</name>
+  <value>1200000</value>
+  <description>The maximum period to keep a DN in the excluded nodes list
+  at a client. After this period, in milliseconds, the previously excluded node(s) will
+  be removed automatically from the cache and will be considered good for block allocations
+  again. Useful to lower or raise in situations where you keep a file open for very long
+  periods (such as a Write-Ahead-Log (WAL) file) to make the writer tolerant to cluster maintenance
+  restarts. Defaults to 10 minutes.</description>
+</property>
+
+<property>
+  <name>dfs.image.transfer-bootstrap-standby.bandwidthPerSec</name>
+  <value>-1</value>
+    <description>
+      Maximum bandwidth used for transferring image to bootstrap standby
+      namenode, in bytes per second.
+      A default value of 0 indicates that throttling is disabled. This default
+      value should be used in most cases, to ensure timely HA operations.
+      The maximum bandwidth used for regular image transfers is configured
+      with dfs.image.transfer.bandwidthPerSec.
+      Support multiple size unit suffix(case insensitive), as described in
+      dfs.blocksize.
+    </description>
+</property>
+
+<property>
+  <name>dfs.ha.tail-edits.period</name>
+  <value>60s</value>
+  <description>
+    How often, the StandbyNode and ObserverNode should check if there are new
+    edit log entries ready to be consumed. This is the minimum period between
+    checking; exponential backoff will be applied if no edits are found and
+    dfs.ha.tail-edits.period.backoff-max is configured. By default, no
+    backoff is applied.
+    Supports multiple time unit suffix (case insensitive), as described
+    in dfs.heartbeat.interval.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.top.enabled</name>
+  <value>true</value>
+  <description>Enable nntop: reporting top users on namenode
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.satisfier.keytab.file</name>
+  <value>/valid/file2</value>
+  <description>
+    The keytab file used by external StoragePolicySatisfier to login as its
+    service principal. The principal name is configured with
+    dfs.storage.policy.satisfier.kerberos.principal. Keytab based login
+    is required when dfs.storage.policy.satisfier.mode is external.
+  </description>
+</property>
+
+</configuration>

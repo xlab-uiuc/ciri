@@ -1,0 +1,18 @@
+Wrong shot number:
+[7, 4, 1]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hot_standby'], 'reason': ["The value of the property 'hot_standby' should be 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['synchronous_commit'], 'reason': ["The value of the property 'synchronous_commit' should be one of the following: 'on', 'off', 'local', 'remote_apply', 'remote_write'. The value 'off' is not allowed."]}
+
+{'hasError': True, 'errParameter': ['synchronous_commit'], 'reason': ["The value of the property 'synchronous_commit' should be one of the following: 'off', 'on', 'local', 'remote_write', 'remote_apply', 'remote_apply_on_write'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: synchronous_commit
+[Ciri] Reason for synchronous_commit: The value of the property 'synchronous_commit' should be one of the following: 'on', 'off', 'local', 'remote_apply', 'remote_write'. The value 'off' is not allowed.

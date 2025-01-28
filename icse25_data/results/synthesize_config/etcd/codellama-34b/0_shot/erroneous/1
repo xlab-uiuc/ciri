@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['snapshot-count', 'auto-compaction-mode', 'quota-backend-bytes', 'proxy-write-timeout'], 'reason': ['snapshot-count is too small', "auto-compaction-mode should be set to either'revision' or 'periodic'", 'quota-backend-bytes is too small', 'proxy-write-timeout is too small']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: snapshot-count	auto-compaction-mode	quota-backend-bytes	proxy-write-timeout
+[Ciri] Reason for snapshot-count: snapshot-count is too small
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode should be set to either'revision' or 'periodic'
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes is too small
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout is too small

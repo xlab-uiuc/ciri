@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-priority', 'unixsocketperm', 'hll-sparse-max-bytes', 'acllog-max-len', 'appendfilename', 'repl-diskless-sync', 'cluster-announce-port', 'port'], 'reason': ['replica-priority is not a valid parameter in redis 7.0.0', 'unixsocketperm is not a valid parameter in redis 7.0.0', 'hll-sparse-max-bytes is not a valid parameter in redis 7.0.0', 'acllog-max-len is not a valid parameter in redis 7.0.0', 'appendfilename is not a valid parameter in redis 7.0.0', 'repl-diskless-sync is not a valid parameter in redis 7.0.0', 'cluster-announce-port is not a valid parameter in redis 7.0.0', 'port is not a valid parameter in redis 7.0.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['replica-priority', 'unixsocketperm', 'hll-sparse-max-bytes', 'acllog-max-len', 'appendfilename', 'repl-diskless-sync', 'cluster-announce-port', 'port'], 'reason': ['replica-priority is not a valid configuration parameter for redis version 7.0.0', 'unixsocketperm is not a valid configuration parameter for redis version 7.0.0', 'hll-sparse-max-bytes is not a valid configuration parameter for redis version 7.0.0', 'acllog-max-len is not a valid configuration parameter for redis version 7.0.0', 'appendfilename is not a valid configuration parameter for redis version 7.0.0', 'repl-diskless-sync is not a valid configuration parameter for redis version 7.0.0', 'cluster-announce-port is not a valid configuration parameter for redis version 7.0.0', 'port is not a valid configuration parameter for redis version 7.0.0']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: replica-priority	unixsocketperm	hll-sparse-max-bytes	acllog-max-len	appendfilename	repl-diskless-sync	cluster-announce-port	port
+[Ciri] Reason for replica-priority: replica-priority is not a valid configuration parameter for redis version 7.0.0
+[Ciri] Reason for unixsocketperm: unixsocketperm is not a valid configuration parameter for redis version 7.0.0
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes is not a valid parameter in redis 7.0.0
+[Ciri] Reason for acllog-max-len: acllog-max-len is not a valid parameter in redis 7.0.0
+[Ciri] Reason for appendfilename: appendfilename is not a valid parameter in redis 7.0.0
+[Ciri] Reason for repl-diskless-sync: repl-diskless-sync is not a valid configuration parameter for redis version 7.0.0
+[Ciri] Reason for cluster-announce-port: cluster-announce-port is not a valid configuration parameter for redis version 7.0.0
+[Ciri] Reason for port: port is not a valid configuration parameter for redis version 7.0.0

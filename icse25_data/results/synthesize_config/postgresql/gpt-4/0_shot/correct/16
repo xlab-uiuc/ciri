@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable_presorted_aggregate', 'ssl_ciphers'], 'reason': ["The parameter 'enable_presorted_aggregate' does not exist in PostgreSQL 13.0. It might be a typo or relevant in older versions or custom patches.", "The parameter 'ssl_ciphers' is not directly configurable in postgresql.conf. SSL cipher configurations should be managed in the PostgreSQL server's SSL library or environment."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: enable_presorted_aggregate	ssl_ciphers
+[Ciri] Reason for enable_presorted_aggregate: The parameter 'enable_presorted_aggregate' does not exist in PostgreSQL 13.0. It might be a typo or relevant in older versions or custom patches.
+[Ciri] Reason for ssl_ciphers: The parameter 'ssl_ciphers' is not directly configurable in postgresql.conf. SSL cipher configurations should be managed in the PostgreSQL server's SSL library or environment.

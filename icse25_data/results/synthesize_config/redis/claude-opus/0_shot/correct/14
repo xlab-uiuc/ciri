@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-session-cache-size', 'tls-ca-cert-dir', 'enable-module-command'], 'reason': ['tls-session-cache-size is not a valid configuration parameter in Redis 7.0.0.', 'tls-ca-cert-dir is not a valid configuration parameter in Redis 7.0.0. The correct parameter is tls-ca-cert-file to specify a single CA certificate file.', 'enable-module-command is not a valid configuration parameter in Redis 7.0.0. MODULE is always enabled and there is no option to disable it.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tls-session-cache-size	tls-ca-cert-dir	enable-module-command
+[Ciri] Reason for tls-session-cache-size: tls-session-cache-size is not a valid configuration parameter in Redis 7.0.0.
+[Ciri] Reason for tls-ca-cert-dir: tls-ca-cert-dir is not a valid configuration parameter in Redis 7.0.0. The correct parameter is tls-ca-cert-file to specify a single CA certificate file.
+[Ciri] Reason for enable-module-command: enable-module-command is not a valid configuration parameter in Redis 7.0.0. MODULE is always enabled and there is no option to disable it.

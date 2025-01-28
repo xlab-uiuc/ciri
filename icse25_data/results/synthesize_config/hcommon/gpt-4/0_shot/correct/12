@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.hdfs.impl', 'fs.permissions.umask-mode'], 'reason': ["The correct class name for 'fs.AbstractFileSystem.hdfs.impl' should be 'org.apache.hadoop.fs.HdfsFileSystem'.", "The 'fs.permissions.umask-mode' property's usage example is incorrect. The correct way to set this property in code is not provided; it should be set in the configuration file directly, e.g., 'fs.permissions.umask-mode'='002'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.AbstractFileSystem.hdfs.impl	fs.permissions.umask-mode
+[Ciri] Reason for fs.AbstractFileSystem.hdfs.impl: The correct class name for 'fs.AbstractFileSystem.hdfs.impl' should be 'org.apache.hadoop.fs.HdfsFileSystem'.
+[Ciri] Reason for fs.permissions.umask-mode: The 'fs.permissions.umask-mode' property's usage example is incorrect. The correct way to set this property in code is not provided; it should be set in the configuration file directly, e.g., 'fs.permissions.umask-mode'='002'.

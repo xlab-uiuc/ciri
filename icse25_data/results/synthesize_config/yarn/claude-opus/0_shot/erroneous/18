@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.resource-profiles.enabled', 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb'], 'reason': ["The value for yarn.resourcemanager.resource-profiles.enabled should be a boolean (true or false), but 'hadoop' is provided instead.", "The value for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb should be a positive integer, but '0' is provided which is not a recommended value as it may lead to disk space issues."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.resource-profiles.enabled	yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb
+[Ciri] Reason for yarn.resourcemanager.resource-profiles.enabled: The value for yarn.resourcemanager.resource-profiles.enabled should be a boolean (true or false), but 'hadoop' is provided instead.
+[Ciri] Reason for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb: The value for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb should be a positive integer, but '0' is provided which is not a recommended value as it may lead to disk space issues.

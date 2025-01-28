@@ -1,0 +1,16 @@
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.s3a.s3guard.ddb.throttle.retry.interval', 'ipc.[port_number].backoff.enable', 'ipc.[port_number].scheduler.impl', 'hadoop.zk.num-retries', 'hadoop.domainname.resolver.impl'], 'reason': ["Property 'fs.ftp.transfer.mode' has an additional 'usage' element which is not standard in HCommon configuration.", "Property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has an extra space in the name.", "Property 'ipc.[port_number].backoff.enable' has an invalid placeholder '[port_number]' in the name.", "Property 'ipc.[port_number].scheduler.impl' has an invalid placeholder '[port_number]' in the name.", "Property 'hadoop.zk.num-retries' has an extra space in the name.", "Property 'hadoop.domainname.resolver.impl' has an extra space in the name."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.s3a.s3guard.ddb.throttle.retry.interval	ipc.[port_number].backoff.enable	ipc.[port_number].scheduler.impl	hadoop.zk.num-retries	hadoop.domainname.resolver.impl
+[Ciri] Reason for fs.ftp.transfer.mode: Property 'fs.ftp.transfer.mode' has an additional 'usage' element which is not standard in HCommon configuration.
+[Ciri] Reason for fs.s3a.s3guard.ddb.throttle.retry.interval: Property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has an extra space in the name.
+[Ciri] Reason for ipc.[port_number].backoff.enable: Property 'ipc.[port_number].backoff.enable' has an invalid placeholder '[port_number]' in the name.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: Property 'ipc.[port_number].scheduler.impl' has an invalid placeholder '[port_number]' in the name.
+[Ciri] Reason for hadoop.zk.num-retries: Property 'hadoop.zk.num-retries' has an extra space in the name.
+[Ciri] Reason for hadoop.domainname.resolver.impl: Property 'hadoop.domainname.resolver.impl' has an extra space in the name.

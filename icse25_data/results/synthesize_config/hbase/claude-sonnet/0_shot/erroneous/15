@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.port', 'dfs.domain.socket.path'], 'reason': ["The value 'ciri' for the 'hbase.regionserver.info.port' property is not a valid port number. It should be an integer value or -1 to disable the RegionServer UI.", "The value '/valid/file2' for the 'dfs.domain.socket.path' property is not a valid path. The description mentions that this should be a path to a UNIX domain socket, typically located in a directory like '/var/lib/hadoop-hdfs/dn_socket'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.info.port	dfs.domain.socket.path
+[Ciri] Reason for hbase.regionserver.info.port: The value 'ciri' for the 'hbase.regionserver.info.port' property is not a valid port number. It should be an integer value or -1 to disable the RegionServer UI.
+[Ciri] Reason for dfs.domain.socket.path: The value '/valid/file2' for the 'dfs.domain.socket.path' property is not a valid path. The description mentions that this should be a path to a UNIX domain socket, typically located in a directory like '/var/lib/hadoop-hdfs/dn_socket'.

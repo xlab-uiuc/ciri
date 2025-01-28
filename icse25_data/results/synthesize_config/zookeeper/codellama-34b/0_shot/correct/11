@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'secureClientPort', 'clientPort'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'secureClientPort and clientPort cannot be the same', 'secureClientPort and clientPort cannot be the same']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.server.saslLoginContext'], 'reason': ["quorum.auth.kerberos.servicePrincipal should be in the format of 'zookeeper/localhost@EXAMPLE.COM'", "quorum.auth.server.saslLoginContext should be in the format of 'QuorumServer'"]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'dataLogDir', 'quorum.auth.server.saslLoginContext'], 'reason': ["quorum.auth.kerberos.servicePrincipal should be in the format of 'zookeeper/<host>@<realm>', dataLogDir should be a valid directory, quorum.auth.server.saslLoginContext should be in the format of 'QuorumServer'"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'clientPort'], 'reason': ['secureClientPort and clientPort cannot have the same value']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'quorum.auth.server.saslLoginContext', 'quorum.auth.learnerRequireSasl'], 'reason': ['dataLogDir should be a directory', 'quorum.auth.server.saslLoginContext is not a valid property', 'quorum.auth.learnerRequireSasl is not a valid property']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'clientPort'], 'reason': ['secureClientPort and clientPort cannot have the same value']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPort	clientPort
+[Ciri] Reason for secureClientPort: secureClientPort and clientPort cannot have the same value
+[Ciri] Reason for clientPort: 

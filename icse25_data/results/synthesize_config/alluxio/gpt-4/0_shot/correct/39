@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.netty.worker.threads', 'alluxio.user.file.master.client.pool.gc.threshold', 'alluxio.user.block.master.client.pool.gc.interval', 'alluxio.underfs.s3.socket.timeout'], 'reason': ["The value '-1' is not a valid setting for 'alluxio.user.network.netty.worker.threads'. It should be a positive integer.", "The correct property format for 'alluxio.user.file.master.client.pool.gc.threshold' is 'alluxio.user.file.master.client.threads.pool.gc.threshold'.", "The correct property format for 'alluxio.user.block.master.client.pool.gc.interval' is 'alluxio.user.block.master.client.threads.pool.gc.interval'.", "The value '1sec' for 'alluxio.underfs.s3.socket.timeout' is too low and not practical. It should be increased to avoid potential socket timeout issues."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.user.network.netty.worker.threads	alluxio.user.file.master.client.pool.gc.threshold	alluxio.user.block.master.client.pool.gc.interval	alluxio.underfs.s3.socket.timeout
+[Ciri] Reason for alluxio.user.network.netty.worker.threads: The value '-1' is not a valid setting for 'alluxio.user.network.netty.worker.threads'. It should be a positive integer.
+[Ciri] Reason for alluxio.user.file.master.client.pool.gc.threshold: The correct property format for 'alluxio.user.file.master.client.pool.gc.threshold' is 'alluxio.user.file.master.client.threads.pool.gc.threshold'.
+[Ciri] Reason for alluxio.user.block.master.client.pool.gc.interval: The correct property format for 'alluxio.user.block.master.client.pool.gc.interval' is 'alluxio.user.block.master.client.threads.pool.gc.interval'.
+[Ciri] Reason for alluxio.underfs.s3.socket.timeout: The value '1sec' for 'alluxio.underfs.s3.socket.timeout' is too low and not practical. It should be increased to avoid potential socket timeout issues.

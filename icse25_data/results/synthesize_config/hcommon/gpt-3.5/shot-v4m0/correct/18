@@ -1,0 +1,13 @@
+Correct shot number:
+[12, 9, 3, 15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.compress.blocksize', 'ipc.maximum.response.length', 'hadoop.zk.num-retries'], 'reason': ["The property 'io.seqfile.compress.blocksize' has an additional 'usage' tag which is not a standard property tag.", "The property 'ipc.maximum.response.length' has a description that is too long and should be concise.", "The property 'hadoop.zk.num-retries' has an unnecessary indentation in the description."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: io.seqfile.compress.blocksize	ipc.maximum.response.length	hadoop.zk.num-retries
+[Ciri] Reason for io.seqfile.compress.blocksize: The property 'io.seqfile.compress.blocksize' has an additional 'usage' tag which is not a standard property tag.
+[Ciri] Reason for ipc.maximum.response.length: The property 'ipc.maximum.response.length' has a description that is too long and should be concise.
+[Ciri] Reason for hadoop.zk.num-retries: The property 'hadoop.zk.num-retries' has an unnecessary indentation in the description.

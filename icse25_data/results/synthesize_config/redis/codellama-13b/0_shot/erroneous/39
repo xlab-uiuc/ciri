@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port', 'repl-diskless-load', 'list-compress-depth', 'auto-aof-rewrite-percentage', 'replica-announce-port', 'lazyfree-lazy-user-del', 'replica-lazy-flush', 'hash-max-listpack-value'], 'reason': ['tls-port is not a valid port number.', 'repl-diskless-load is not a valid option.', 'list-compress-depth is not a valid integer.', 'auto-aof-rewrite-percentage is not a valid integer.', 'replica-announce-port is not a valid port number.', 'lazyfree-lazy-user-del is not a valid option.', 'replica-lazy-flush is not a valid option.', 'hash-max-listpack-value is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['tls-port', 'repl-diskless-load', 'list-compress-depth', 'auto-aof-rewrite-percentage', 'replica-announce-port', 'lazyfree-lazy-user-del', 'replica-lazy-flush', 'hash-max-listpack-value'], 'reason': ['tls-port is not a valid port number.', 'repl-diskless-load is not a valid value.', 'list-compress-depth is not a valid value.', 'auto-aof-rewrite-percentage is not a valid value.', 'replica-announce-port is not a valid port number.', 'lazyfree-lazy-user-del is not a valid value.', 'replica-lazy-flush is not a valid value.', 'hash-max-listpack-value is not a valid value.']}
+
+{'hasError': True, 'errParameter': ['tls-port', 'repl-diskless-load', 'list-compress-depth', 'auto-aof-rewrite-percentage', 'replica-announce-port', 'lazyfree-lazy-user-del', 'replica-lazy-flush', 'hash-max-listpack-value'], 'reason': ['tls-port is not a valid port number', 'repl-diskless-load is not a valid value', 'list-compress-depth is not a valid integer', 'auto-aof-rewrite-percentage is not a valid integer', 'replica-announce-port is not a valid port number', 'lazyfree-lazy-user-del is not a valid boolean', 'replica-lazy-flush is not a valid boolean', 'hash-max-listpack-value is not a valid integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: tls-port	repl-diskless-load	list-compress-depth	auto-aof-rewrite-percentage	replica-announce-port	lazyfree-lazy-user-del	replica-lazy-flush	hash-max-listpack-value
+[Ciri] Reason for tls-port: tls-port is not a valid port number.
+[Ciri] Reason for repl-diskless-load: repl-diskless-load is not a valid value.
+[Ciri] Reason for list-compress-depth: list-compress-depth is not a valid integer
+[Ciri] Reason for auto-aof-rewrite-percentage: auto-aof-rewrite-percentage is not a valid integer
+[Ciri] Reason for replica-announce-port: replica-announce-port is not a valid port number.
+[Ciri] Reason for lazyfree-lazy-user-del: lazyfree-lazy-user-del is not a valid boolean
+[Ciri] Reason for replica-lazy-flush: replica-lazy-flush is not a valid value.
+[Ciri] Reason for hash-max-listpack-value: hash-max-listpack-value is not a valid integer.

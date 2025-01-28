@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.prefixes', 'alluxio.master.mount.table.root.alluxio', 'alluxio.job.master.web.port', 'alluxio.worker.data.folder.permissions'], 'reason': ["The property 'alluxio.underfs.hdfs.prefixes' is deprecated in Alluxio 2.5.0 and should be replaced with 'alluxio.master.mount.table.root.ufs'.", "The property 'alluxio.master.mount.table.root.alluxio' is invalid. The root UFS path should be specified using 'alluxio.master.mount.table.root.ufs'.", "The property 'alluxio.job.master.web.port' is invalid in Alluxio 2.5.0. The job service has been removed in this version.", "The property 'alluxio.worker.data.folder.permissions' is invalid in Alluxio 2.5.0. The permissions for the worker data folder are now automatically managed by Alluxio."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.underfs.hdfs.prefixes	alluxio.master.mount.table.root.alluxio	alluxio.job.master.web.port	alluxio.worker.data.folder.permissions
+[Ciri] Reason for alluxio.underfs.hdfs.prefixes: The property 'alluxio.underfs.hdfs.prefixes' is deprecated in Alluxio 2.5.0 and should be replaced with 'alluxio.master.mount.table.root.ufs'.
+[Ciri] Reason for alluxio.master.mount.table.root.alluxio: The property 'alluxio.master.mount.table.root.alluxio' is invalid. The root UFS path should be specified using 'alluxio.master.mount.table.root.ufs'.
+[Ciri] Reason for alluxio.job.master.web.port: The property 'alluxio.job.master.web.port' is invalid in Alluxio 2.5.0. The job service has been removed in this version.
+[Ciri] Reason for alluxio.worker.data.folder.permissions: The property 'alluxio.worker.data.folder.permissions' is invalid in Alluxio 2.5.0. The permissions for the worker data folder are now automatically managed by Alluxio.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.user.logging.threshold', 'alluxio.worker.tieredstore.level0.dirs.mediumtype', 'alluxio.user.ufs.block.read.concurrency.max'], 'reason': ["Invalid value for 'alluxio.job.worker.rpc.port'. Port number cannot be negative.", "Invalid format for 'alluxio.user.logging.threshold'. It should be in milliseconds.", "Invalid reference in 'alluxio.worker.tieredstore.level0.dirs.mediumtype'. Alias not defined.", "Invalid value for 'alluxio.user.ufs.block.read.concurrency.max'. Maximum concurrency value is too high."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.user.logging.threshold', 'alluxio.worker.tieredstore.level0.dirs.mediumtype', 'alluxio.user.ufs.block.read.concurrency.max', 'alluxio.worker.data.folder.permissions'], 'reason': ['Invalid value for alluxio.job.worker.rpc.port. Port number cannot be negative.', 'Invalid format for alluxio.user.logging.threshold. It should be in milliseconds or a valid time format.', 'Invalid reference in alluxio.worker.tieredstore.level0.dirs.mediumtype. Alias not defined.', 'Invalid value for alluxio.user.ufs.block.read.concurrency.max. Maximum concurrency value is too high.', 'Invalid format for alluxio.worker.data.folder.permissions. Correct format should be in octal notation.']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.user.logging.threshold', 'alluxio.worker.tieredstore.level0.dirs.mediumtype', 'alluxio.user.ufs.block.read.concurrency.max'], 'reason': ['Invalid value for alluxio.job.worker.rpc.port. Port number cannot be negative.', 'Invalid format for alluxio.user.logging.threshold. Expected format is a number followed by a time unit (e.g., 10ms, 1s, 5m).', 'Invalid reference in alluxio.worker.tieredstore.level0.dirs.mediumtype. The property cannot reference itself.', 'Invalid value for alluxio.user.ufs.block.read.concurrency.max. Maximum concurrency value is too large.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.job.worker.rpc.port	alluxio.user.logging.threshold	alluxio.worker.tieredstore.level0.dirs.mediumtype	alluxio.user.ufs.block.read.concurrency.max
+[Ciri] Reason for alluxio.job.worker.rpc.port: Invalid value for 'alluxio.job.worker.rpc.port'. Port number cannot be negative.
+[Ciri] Reason for alluxio.user.logging.threshold: Invalid format for 'alluxio.user.logging.threshold'. It should be in milliseconds.
+[Ciri] Reason for alluxio.worker.tieredstore.level0.dirs.mediumtype: Invalid reference in 'alluxio.worker.tieredstore.level0.dirs.mediumtype'. Alias not defined.
+[Ciri] Reason for alluxio.user.ufs.block.read.concurrency.max: Invalid value for alluxio.user.ufs.block.read.concurrency.max. Maximum concurrency value is too large.

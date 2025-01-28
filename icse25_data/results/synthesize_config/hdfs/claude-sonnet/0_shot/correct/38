@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.max-streams', 'dfs.namenode.storage.dir.perm'], 'reason': ['The value for dfs.namenode.replication.max-streams should be a higher number, typically 10 or more, to allow for parallel replication streams.', 'The value for dfs.namenode.storage.dir.perm should be an octal value between 0 and 0777, representing the Unix permissions. The value 350 is not a valid octal permission.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.replication.max-streams	dfs.namenode.storage.dir.perm
+[Ciri] Reason for dfs.namenode.replication.max-streams: The value for dfs.namenode.replication.max-streams should be a higher number, typically 10 or more, to allow for parallel replication streams.
+[Ciri] Reason for dfs.namenode.storage.dir.perm: The value for dfs.namenode.storage.dir.perm should be an octal value between 0 and 0777, representing the Unix permissions. The value 350 is not a valid octal permission.

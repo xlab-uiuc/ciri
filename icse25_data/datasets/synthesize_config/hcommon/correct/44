@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping</name>
+  <value>org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback</value>
+  <description>
+    Class for user to group mapping (get groups for a given user) for ACL.
+    The default implementation,
+    org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback,
+    will determine if the Java Native Interface (JNI) is available. If JNI is
+    available the implementation will use the API within hadoop to resolve a
+    list of groups for a user. If JNI is not available then the shell
+    implementation, ShellBasedUnixGroupsMapping, is used.  This implementation
+    shells out to the Linux/Unix environment with the
+    <code>bash -c groups</code> command to resolve a list of groups for a user.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.groups.cache.secs</name>
+  <value>150</value>
+  <description>
+    This is the config controlling the validity of the entries in the cache
+    containing the user->group mapping. When this duration has expired,
+    then the implementation of the group mapping provider is invoked to get
+    the groups of the user and then cached back.
+  </description>
+</property>
+
+<property>
+  <name>io.compression.codec.bzip2.library</name>
+  <value>system-native</value>
+  <description>The native-code library to be used for compression and
+  decompression by the bzip2 codec.  This library could be specified
+  either by by name or the full pathname.  In the former case, the
+  library is located by the dynamic linker, usually searching the
+  directories specified in the environment variable LD_LIBRARY_PATH.
+
+  The value of "system-native" indicates that the default system
+  library should be used.  To indicate that the algorithm should
+  operate entirely in Java, specify "java-builtin".</description>
+</property>
+
+<property>
+  <name>fs.df.interval</name>
+  <value>60000</value>
+  <description>Disk usage statistics refresh interval in msec.</description>
+</property>
+
+<property>
+  <name>ipc.client.low-latency</name>
+  <value>false</value>
+  <description>Use low-latency QoS markers for IPC connections.
+  </description>
+</property>
+
+<property>
+  <name>net.topology.table.file.name</name>
+  <value>/valid/file2</value>
+  <description> The file name for a topology file, which is used when the
+    net.topology.node.switch.mapping.impl property is set to
+    org.apache.hadoop.net.TableMapping. The file format is a two column text
+    file, with columns separated by whitespace. The first column is a DNS or
+    IP address and the second column specifies the rack where the address maps.
+    If no entry corresponding to a host in the cluster is found, then
+    /default-rack is assumed.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.cross-origin.allowed-origins</name>
+  <value>*</value>
+  <description>Comma separated list of origins that are allowed for web services
+    needing cross-origin (CORS) support. If a value in the list contains an
+    asterix (*), a regex pattern, escaping any dots ('.' -> '\.') and replacing
+    the asterix such that it captures any characters ('*' -> '.*'), is generated.
+    Values prefixed with 'regex:' are interpreted directly as regular expressions,
+    e.g. use the expression 'regex:https?:\/\/foo\.bar:([0-9]+)?' to allow any
+    origin using the 'http' or 'https' protocol in the domain 'foo.bar' on any
+    port. The use of simple wildcards ('*') is discouraged, and only available for
+    backward compatibility.</description>
+</property>
+
+<property>
+  <name>hadoop.registry.zk.connection.timeout.ms</name>
+  <value>15000</value>
+    <description>
+      Zookeeper connection timeout in milliseconds
+    </description>
+</property>
+
+</configuration>

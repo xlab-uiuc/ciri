@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.s3a.select.input.csv.quote.character'], 'reason': ["The value '0.0.0' for 'hadoop.security.dns.nameserver' is not a valid IP address.", 'The value \'"\' for \'fs.s3a.select.input.csv.quote.character\' is not correctly escaped in XML. It should be \'&quot;\' or represented differently.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.s3a.select.input.csv.quote.character
+[Ciri] Reason for hadoop.security.dns.nameserver: The value '0.0.0' for 'hadoop.security.dns.nameserver' is not a valid IP address.
+[Ciri] Reason for fs.s3a.select.input.csv.quote.character: The value '"' for 'fs.s3a.select.input.csv.quote.character' is not correctly escaped in XML. It should be '&quot;' or represented differently.

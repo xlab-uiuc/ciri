@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.max.size'], 'reason': ['The value for hbase.hstore.compaction.max.size is set to an invalid value. It should be a positive integer representing the maximum size of a StoreFile for compaction. The current value is larger than the maximum value that can be represented by a long integer.']}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.max.size'], 'reason': ['The value of hbase.hstore.compaction.max.size is set to an invalid value (18446744073709551614). It should be a positive integer value.']}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.max.size'], 'reason': ["The value of 'hbase.hstore.compaction.max.size' is set to an invalid value. It should be a positive integer representing the maximum size of a StoreFile that will be excluded from compaction. The current value is set to a very large number which is not a valid configuration."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.hstore.compaction.max.size
+[Ciri] Reason for hbase.hstore.compaction.max.size: The value for hbase.hstore.compaction.max.size is set to an invalid value. It should be a positive integer representing the maximum size of a StoreFile for compaction. The current value is larger than the maximum value that can be represented by a long integer.

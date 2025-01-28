@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.rootdir</name>
+  <value>tmp////staging</value>
+    <description>The directory shared by region servers and into
+    which HBase persists.  The URL should be 'fully-qualified'
+    to include the filesystem scheme.  For example, to specify the
+    HDFS directory '/hbase' where the HDFS instance's namenode is
+    running at namenode.example.org on port 9000, set this value to:
+    hdfs://namenode.example.org:9000/hbase.  By default, we write
+    to whatever ${hbase.tmp.dir} is set too -- usually /tmp --
+    so change this configuration or else all data will be lost on
+    machine restart.</description>
+</property>
+
+<property>
+  <name>hbase.local.dir</name>
+  <value>/valid/file1</value>
+    <description>Directory on the local filesystem to be used
+    as a local storage.</description>
+</property>
+
+<property>
+  <name>hbase.master.logcleaner.ttl</name>
+  <value>300000</value>
+    <description>How long a WAL remain in the archive ({hbase.rootdir}/oldWALs) directory,
+    after which it will be cleaned by a Master thread. The value is in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.maxWorkerThreads</name>
+  <value>500</value>
+    <description>The maximum size of the thread pool. When the pending request queue
+    overflows, new threads are created until their number reaches this number.
+    After that, the server starts dropping connections.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.maxQueuedRequests</name>
+  <value>2000</value>
+    <description>The maximum number of pending Thrift connections waiting in the queue. If
+     there are no idle threads in the pool, the server queues requests. Only
+     when the queue overflows, new threads are added, up to
+     hbase.thrift.maxQueuedRequests threads.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.thrift.framed</name>
+  <value>true</value>
+    <description>Use Thrift TFramedTransport on the server side.
+      This is the recommended transport for thrift servers and requires a similar setting
+      on the client side. Changing this to false will select the default transport,
+      vulnerable to DoS when malformed requests are issued due to THRIFT-601.
+    </description>
+</property>
+
+<property>
+  <name>hbase.status.multicast.address.ip</name>
+  <value>127.0.0.1</value>
+    <description>
+      Multicast address to use for the status publication by multicast.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.file.cache.size</name>
+  <value>500</value>
+    <description>
+      Number of opened file handlers to cache.
+      A larger value will benefit reads by providing more file handlers per mob
+      file cache and would reduce frequent file opening and closing.
+      However, if this is set too high, this could lead to a "too many opened file handlers"
+      The default value is 1000.
+    </description>
+</property>
+
+</configuration>

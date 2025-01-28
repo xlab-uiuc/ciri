@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'election-timeout'], 'reason': ['The enable-v2 parameter is deprecated in etcd 3.5.0 and should be removed from the configuration file.', "The election-timeout parameter is not a valid configuration option in etcd 3.5.0. The correct parameter for setting the election timeout is 'election-timeout-ticks'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: enable-v2	election-timeout
+[Ciri] Reason for enable-v2: The enable-v2 parameter is deprecated in etcd 3.5.0 and should be removed from the configuration file.
+[Ciri] Reason for election-timeout: The election-timeout parameter is not a valid configuration option in etcd 3.5.0. The correct parameter for setting the election timeout is 'election-timeout-ticks'.

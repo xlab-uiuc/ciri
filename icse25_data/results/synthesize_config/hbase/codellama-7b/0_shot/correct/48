@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.hfilecleaner.plugins'], 'reason': ['The value of hbase.master.hfilecleaner.plugins is not a valid comma-separated list of BaseHFileCleanerDelegate. The value is org.apache.hadoop.hbase.master.cleaner.TimeToLiveHFileCleaner. Please check the documentation for the correct value.']}
+
+{'hasError': True, 'errParameter': ['hbase.master.hfilecleaner.plugins'], 'reason': ["The value of property hbase.master.hfilecleaner.plugins is not valid. The value should be a comma-separated list of BaseHFileCleanerDelegate invoked by the HFileCleaner service. These HFiles cleaners are called in order, so put the cleaner that prunes the most files in front. To implement your own BaseHFileCleanerDelegate, just put it in HBase's classpath and add the fully qualified class name here. Always add the above default log cleaners in the list as they will be overwritten in hbase-site.xml."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.hfilecleaner.plugins'], 'reason': ['The value of hbase.master.hfilecleaner.plugins is not a valid comma-separated list of BaseHFileCleanerDelegate implementations.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.master.hfilecleaner.plugins
+[Ciri] Reason for hbase.master.hfilecleaner.plugins: The value of hbase.master.hfilecleaner.plugins is not a valid comma-separated list of BaseHFileCleanerDelegate. The value is org.apache.hadoop.hbase.master.cleaner.TimeToLiveHFileCleaner. Please check the documentation for the correct value.

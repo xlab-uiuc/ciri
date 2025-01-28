@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.output.csv.quote.fields', 'ftp.client-write-packet-size', 'ha.failover-controller.cli-check.rpc-timeout.ms'], 'reason': ["The property 'fs.s3a.select.output.csv.quote.fields' has an incorrect value 'always'. It should be one of: 'always', 'asneeded'.", "The property 'ftp.client-write-packet-size' has an incorrect value '65536'.", "The property 'ha.failover-controller.cli-check.rpc-timeout.ms' has an incorrect value '40000'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.s3a.select.output.csv.quote.fields	ftp.client-write-packet-size	ha.failover-controller.cli-check.rpc-timeout.ms
+[Ciri] Reason for fs.s3a.select.output.csv.quote.fields: The property 'fs.s3a.select.output.csv.quote.fields' has an incorrect value 'always'. It should be one of: 'always', 'asneeded'.
+[Ciri] Reason for ftp.client-write-packet-size: The property 'ftp.client-write-packet-size' has an incorrect value '65536'.
+[Ciri] Reason for ha.failover-controller.cli-check.rpc-timeout.ms: The property 'ha.failover-controller.cli-check.rpc-timeout.ms' has an incorrect value '40000'.

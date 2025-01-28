@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.webapp.address</name>
+  <value>${yarn.resourcemanager.hostname}:8088</value>
+    <description>
+      The http address of the RM web application.
+      If only a host is provided as the value,
+      the webapp will be served on a random port.
+    </description>
+</property>
+
+<property>
+  <name>yarn.client.failover-retries-on-socket-timeouts</name>
+  <value>0</value>
+    <description>When HA is enabled, the number of retries per
+      attempt to connect to a ResourceManager on socket timeouts. In other
+      words, it is the ipc.client.connect.max.retries.on.timeouts to be used
+      during failover attempts</description>
+</property>
+
+<property>
+  <name>yarn.log-aggregation.retain-seconds</name>
+  <value>-2</value>
+    <description>How long to keep aggregation logs before deleting them.  -1 disables. 
+    Be careful set this too small and you will spam the name node.</description>
+</property>
+
+<property>
+  <name>yarn.log-aggregation.file-formats</name>
+  <value>TFile</value>
+    <description>Specify which log file controllers we will support. The first
+    file controller we add will be used to write the aggregated logs.
+    This comma separated configuration will work with the configuration:
+    yarn.log-aggregation.file-controller.%s.class which defines the supported
+    file controller's class. By default, the TFile controller would be used.
+    The user could override this configuration by adding more file controllers.
+    To support back-ward compatibility, make sure that we always
+    add TFile file controller.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-monitor.enabled</name>
+  <value>true</value>
+    <description>Enable container monitor</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.amrmproxy.client.thread-count</name>
+  <value>25</value>
+    <description>
+    The number of threads used to handle requests by the AMRMProxyService.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.nm-container-queuing.sorting-nodes-interval-ms</name>
+  <value>1000</value>
+    <description>
+    Frequency for computing least loaded NMs.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.elastic-memory-control.enabled</name>
+  <value>true</value>
+    <description>
+      Enable elastic memory control. This is a Linux only feature.
+      When enabled, the node manager adds a listener to receive an
+      event, if all the containers exceeded a limit.
+      The limit is specified by yarn.nodemanager.resource.memory-mb.
+      If this is not set, the limit is set based on the capabilities.
+      See yarn.nodemanager.resource.detect-hardware-capabilities
+      for details.
+      The limit applies to the physical or virtual (rss+swap) memory
+      depending on whether yarn.nodemanager.pmem-check-enabled or
+      yarn.nodemanager.vmem-check-enabled is set.
+    </description>
+</property>
+
+</configuration>

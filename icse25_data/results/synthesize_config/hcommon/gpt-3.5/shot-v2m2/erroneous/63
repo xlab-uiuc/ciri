@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 6]
+
+Correct shot number:
+[3, 15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ftp.replication', 's3.replication'], 'reason': ["The property 'ftp.replication' has an invalid value '1'. Replication factor should be greater than 1.", "The property 's3.replication' has an invalid value '4'. Replication factor should be greater than 1."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ftp.replication	s3.replication
+[Ciri] Reason for ftp.replication: The property 'ftp.replication' has an invalid value '1'. Replication factor should be greater than 1.
+[Ciri] Reason for s3.replication: The property 's3.replication' has an invalid value '4'. Replication factor should be greater than 1.

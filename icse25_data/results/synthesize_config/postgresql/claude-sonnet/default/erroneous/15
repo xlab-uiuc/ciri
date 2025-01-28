@@ -1,0 +1,15 @@
+Wrong shot number:
+[1, 4, 5]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['jit_optimize_above_cost', 'krb_caseins_users'], 'reason': ["The property 'jit_optimize_above_cost' has the value '4000000000' which exceeds the range of an Integer.", "The property 'krb_caseins_users' is not a valid PostgreSQL configuration parameter."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: jit_optimize_above_cost	krb_caseins_users
+[Ciri] Reason for jit_optimize_above_cost: The property 'jit_optimize_above_cost' has the value '4000000000' which exceeds the range of an Integer.
+[Ciri] Reason for krb_caseins_users: The property 'krb_caseins_users' is not a valid PostgreSQL configuration parameter.

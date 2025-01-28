@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'auto-compaction-mode', 'proxy-failure-wait', 'logger'], 'reason': ['initial-cluster-state must be either existing or new', 'auto-compaction-mode must be either periodic or revision', 'proxy-failure-wait must be a positive integer', 'logger must be either zap or cap']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'heartbeat-interval', 'auto-compaction-mode', 'quota-backend-bytes', 'proxy-failure-wait'], 'reason': ['initial-cluster-state is not a valid value for initial-cluster-state. Valid values are existing, new, and removed.', 'heartbeat-interval is not a valid value for heartbeat-interval. Valid values are positive integers.', 'auto-compaction-mode is not a valid value for auto-compaction-mode. Valid values are periodic, revision, and time.', 'quota-backend-bytes is not a valid value for quota-backend-bytes. Valid values are positive integers.', 'proxy-failure-wait is not a valid value for proxy-failure-wait. Valid values are positive integers.']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait'], 'reason': ['proxy-failure-wait is not a valid parameter for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait'], 'reason': ['proxy-failure-wait must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'proxy-failure-wait'], 'reason': ["initial-cluster-state must be either 'existing' or 'new'", 'proxy-failure-wait must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'max-snapshots', 'heartbeat-interval', 'auto-compaction-mode', 'quota-backend-bytes', 'proxy-failure-wait', 'logger'], 'reason': ["initial-cluster-state is not a valid value. Valid values are 'existing' and 'new'.", 'max-snapshots must be an integer greater than 0.', 'heartbeat-interval must be an integer greater than 0.', "auto-compaction-mode is not a valid value. Valid values are 'periodic' and 'revision'.", 'quota-backend-bytes must be an integer greater than 0.', 'proxy-failure-wait must be an integer greater than 0.', "logger is not a valid value. Valid values are 'zap' and 'capnslog'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'heartbeat-interval', 'auto-compaction-mode', 'initial-cluster-state', 'quota-backend-bytes', 'max-snapshots', 'strict-reconfig-check', 'logger'], 'reason': ['proxy-failure-wait must be greater than 0', 'heartbeat-interval must be greater than 0', 'auto-compaction-mode must be one of [periodic, revision]', 'initial-cluster-state must be one of [existing, new]', 'quota-backend-bytes must be greater than 0', 'max-snapshots must be greater than 0', 'strict-reconfig-check must be a boolean', 'logger must be one of [capnslog, zap]']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait'], 'reason': ['proxy-failure-wait is not a valid configuration for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait'], 'reason': ['proxy-failure-wait must be a duration']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: proxy-failure-wait
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait must be a duration

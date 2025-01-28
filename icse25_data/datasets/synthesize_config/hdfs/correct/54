@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.hdfs.configuration.version</name>
+  <value>2</value>
+  <description>version of this configuration file</description>
+</property>
+
+<property>
+  <name>dfs.datanode.address</name>
+  <value>0.0.0.0:3001</value>
+  <description>
+    The datanode server address and port for data transfer.
+  </description>
+</property>
+
+<property>
+  <name>dfs.ha.tail-edits.period.backoff-max</name>
+  <value>0</value>
+  <description>
+    The maximum time the tailer should wait between checking for new edit log
+    entries. Exponential backoff will be applied when an edit log tail is
+    performed but no edits are available to be read. Values less than or
+    equal to zero disable backoff entirely; this is the default behavior.
+    Supports multiple time unit suffix (case insensitive), as described
+    in dfs.heartbeat.interval.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.use.datanode.hostname</name>
+  <value>false</value>
+  <description>Whether clients should use datanode hostnames when
+    connecting to datanodes.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.metrics.logger.period.seconds</name>
+  <value>1200</value>
+  <description>
+    This setting controls how frequently the NameNode logs its metrics. The
+    logging configuration must also define one or more appenders for
+    NameNodeMetricsLog for the metrics to be logged.
+    NameNode metrics logging is disabled if this value is set to zero or
+    less than zero.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.state.context.enabled</name>
+  <value>true</value>
+  <description>
+    Whether enable namenode sending back its current txnid back to client.
+    Setting this to true is required by Consistent Read from Standby feature.
+    But for regular cases, this should be set to false to avoid the overhead
+    of updating and maintaining this state.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.restart.replica.expiration</name>
+  <value>50</value>
+  <description>
+    During shutdown for restart, the amount of time in seconds budgeted for
+    datanode restart.
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.new-epoch.timeout.ms</name>
+  <value>60000</value>
+  <description>
+    Timeout in milliseconds when getting an epoch number for write
+    access to JournalNodes.
+  </description>
+</property>
+
+</configuration>

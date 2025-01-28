@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode', 'adl.feature.ownerandgroup.enableupn'], 'reason': ["The value for 'fs.permissions.umask-mode' should not be 'file://'. It should be a valid umask value in octal or symbolic format.", "The property 'adl.feature.ownerandgroup.enableupn' is missing a usage description."]}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode', 'adl.feature.ownerandgroup.enableupn'], 'reason': ["The value for 'fs.permissions.umask-mode' should not be 'file://'. It should be set as an octal or symbolic umask.", "The property 'adl.feature.ownerandgroup.enableupn' is missing a usage example or configuration information."]}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode', 'hadoop.registry.zk.quorum', 'adl.feature.ownerandgroup.enableupn'], 'reason': ["The property 'fs.permissions.umask-mode' has an incorrect value 'file://'. It should be set to a valid umask value.", "The property 'hadoop.registry.zk.quorum' is missing the 'fs.' prefix in the name.", "The property 'adl.feature.ownerandgroup.enableupn' is missing the 'fs.' prefix in the name."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.permissions.umask-mode	adl.feature.ownerandgroup.enableupn
+[Ciri] Reason for fs.permissions.umask-mode: The value for 'fs.permissions.umask-mode' should not be 'file://'. It should be a valid umask value in octal or symbolic format.
+[Ciri] Reason for adl.feature.ownerandgroup.enableupn: The property 'adl.feature.ownerandgroup.enableupn' is missing a usage description.

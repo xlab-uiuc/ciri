@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['oom-score-adj', 'timeout', 'aof-timestamp-enabled', 'jemalloc-bg-thread', 'repl-diskless-sync'], 'reason': ['oom-score-adj parameter is not valid for Redis configuration.', 'timeout parameter is not valid for Redis configuration.', 'aof-timestamp-enabled parameter is not valid for Redis configuration.', 'jemalloc-bg-thread parameter is not valid for Redis configuration.', 'repl-diskless-sync parameter is not valid for Redis configuration.']}
+
+{'hasError': True, 'errParameter': ['oom-score-adj', 'timeout', 'aof-timestamp-enabled', 'jemalloc-bg-thread', 'repl-diskless-sync'], 'reason': ['oom-score-adj is not a valid parameter for Redis configuration.', "timeout value should be specified in seconds, not just '1'.", 'aof-timestamp-enabled is not a valid parameter for Redis configuration.', 'jemalloc-bg-thread is not a valid parameter for Redis configuration.', 'repl-diskless-sync is not a valid parameter for Redis configuration.']}
+
+{'hasError': True, 'errParameter': ['oom-score-adj', 'timeout', 'aof-timestamp-enabled', 'jemalloc-bg-thread', 'repl-diskless-sync', 'dynamic-hz'], 'reason': ['oom-score-adj is not a valid parameter for Redis configuration.', "timeout value should be specified in seconds, not just '1'.", 'aof-timestamp-enabled is not a valid parameter for Redis configuration.', 'jemalloc-bg-thread is not a valid parameter for Redis configuration.', 'repl-diskless-sync is not a valid parameter for Redis configuration.', 'dynamic-hz is not a valid parameter for Redis configuration.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: oom-score-adj	timeout	aof-timestamp-enabled	jemalloc-bg-thread	repl-diskless-sync
+[Ciri] Reason for oom-score-adj: oom-score-adj is not a valid parameter for Redis configuration.
+[Ciri] Reason for timeout: timeout value should be specified in seconds, not just '1'.
+[Ciri] Reason for aof-timestamp-enabled: aof-timestamp-enabled is not a valid parameter for Redis configuration.
+[Ciri] Reason for jemalloc-bg-thread: jemalloc-bg-thread is not a valid parameter for Redis configuration.
+[Ciri] Reason for repl-diskless-sync: repl-diskless-sync parameter is not valid for Redis configuration.

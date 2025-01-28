@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['nfs.dump.dir', 'dfs.namenode.top.windows.minutes'], 'reason': ["The value of 'nfs.dump.dir' contains multiple consecutive forward slashes. It should be corrected to 'tmp/staging'.", "The value of 'dfs.namenode.top.windows.minutes' is not in the correct format. It should be a single integer value, not an array. It should be corrected to a single integer value like '10'."]}
+
+{'hasError': True, 'errParameter': ['nfs.dump.dir', 'dfs.namenode.top.windows.minutes'], 'reason': ["The value of 'nfs.dump.dir' contains multiple consecutive forward slashes. It should be corrected to 'tmp/staging'.", "The value of 'dfs.namenode.top.windows.minutes' is not in the correct format. It should be a single integer value, not an array. Please correct it."]}
+
+{'hasError': True, 'errParameter': ['nfs.dump.dir', 'dfs.namenode.top.windows.minutes'], 'reason': ["The value of 'nfs.dump.dir' contains multiple consecutive forward slashes ('////'). It should be corrected to a single forward slash ('/') or a valid directory path.", "The value of 'dfs.namenode.top.windows.minutes' is not in the correct format. It should be a single integer value, not an array."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: nfs.dump.dir	dfs.namenode.top.windows.minutes
+[Ciri] Reason for nfs.dump.dir: The value of 'nfs.dump.dir' contains multiple consecutive forward slashes. It should be corrected to 'tmp/staging'.
+[Ciri] Reason for dfs.namenode.top.windows.minutes: The value of 'dfs.namenode.top.windows.minutes' is not in the correct format. It should be a single integer value, not an array. It should be corrected to a single integer value like '10'.

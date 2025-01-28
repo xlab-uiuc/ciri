@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'max-wals', 'max-snapshots'], 'reason': ["The 'proxy-failure-wait' parameter is not a valid configuration option for etcd version 3.5.0.", "The 'max-wals' parameter is not a valid configuration option for etcd version 3.5.0. The correct parameter is 'max-wals-dirs'.", "The 'max-snapshots' parameter is not a valid configuration option for etcd version 3.5.0. The correct parameter is 'max-snap-entries'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-failure-wait	max-wals	max-snapshots
+[Ciri] Reason for proxy-failure-wait: The 'proxy-failure-wait' parameter is not a valid configuration option for etcd version 3.5.0.
+[Ciri] Reason for max-wals: The 'max-wals' parameter is not a valid configuration option for etcd version 3.5.0. The correct parameter is 'max-wals-dirs'.
+[Ciri] Reason for max-snapshots: The 'max-snapshots' parameter is not a valid configuration option for etcd version 3.5.0. The correct parameter is 'max-snap-entries'.

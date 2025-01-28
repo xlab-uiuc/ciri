@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.netty.boss.threads', 'alluxio.proxy.web.port', 'alluxio.network.connection.server.shutdown.timeout'], 'reason': ["Property 'alluxio.worker.network.netty.boss.threads' should not be set to 0.", "Property 'alluxio.proxy.web.port' is not a valid property for Alluxio version 2.5.0.", "Property 'alluxio.network.connection.server.shutdown.timeout' should not be set to 1sec. Use a valid time unit like '1s' for seconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.netty.boss.threads', 'alluxio.network.connection.server.shutdown.timeout'], 'reason': ["Property 'alluxio.worker.network.netty.boss.threads' should not be set to '0'.", "Property 'alluxio.network.connection.server.shutdown.timeout' should not be set to '1sec'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.netty.boss.threads', 'alluxio.proxy.web.port', 'alluxio.network.connection.server.shutdown.timeout'], 'reason': ['Invalid property: alluxio.worker.network.netty.boss.threads', 'Invalid property: alluxio.proxy.web.port', 'Invalid property: alluxio.network.connection.server.shutdown.timeout']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.worker.network.netty.boss.threads	alluxio.proxy.web.port	alluxio.network.connection.server.shutdown.timeout
+[Ciri] Reason for alluxio.worker.network.netty.boss.threads: Invalid property: alluxio.worker.network.netty.boss.threads
+[Ciri] Reason for alluxio.proxy.web.port: Property 'alluxio.proxy.web.port' is not a valid property for Alluxio version 2.5.0.
+[Ciri] Reason for alluxio.network.connection.server.shutdown.timeout: Invalid property: alluxio.network.connection.server.shutdown.timeout

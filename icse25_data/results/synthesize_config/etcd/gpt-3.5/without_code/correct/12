@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 3, 2]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['auto-tls'], 'reason': ["The property 'auto-tls' is not a valid configuration parameter for etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'max-wals'], 'reason': ["The property 'listen-peer-urls' should use the correct URL format.", "The value of the property 'max-wals' should be greater than 1."]}
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'max-wals'], 'reason': ["The property 'listen-peer-urls' should start with 'http://' or 'https://'.", "The value of the property 'max-wals' should be greater than 1."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: listen-peer-urls	max-wals
+[Ciri] Reason for listen-peer-urls: The property 'listen-peer-urls' should start with 'http://' or 'https://'.
+[Ciri] Reason for max-wals: The value of the property 'max-wals' should be greater than 1.

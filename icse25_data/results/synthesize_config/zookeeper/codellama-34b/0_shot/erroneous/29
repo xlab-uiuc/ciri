@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'secureClientPortAddress', 'quorumListenOnAllIPs'], 'reason': ['secureClientPort is greater than 65535', 'secureClientPortAddress is not a valid IP address', 'quorumListenOnAllIPs is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'secureClientPortAddress', 'quorumListenOnAllIPs'], 'reason': ['secureClientPort is not a valid port number', 'secureClientPortAddress is not a valid IP address', 'quorumListenOnAllIPs is not a valid boolean value']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'secureClientPortAddress', 'quorumListenOnAllIPs'], 'reason': ['secureClientPort is not a valid port number', 'secureClientPortAddress is not a valid IP address', 'quorumListenOnAllIPs is not a valid boolean']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: secureClientPort	secureClientPortAddress	quorumListenOnAllIPs
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid port number
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress is not a valid IP address
+[Ciri] Reason for quorumListenOnAllIPs: quorumListenOnAllIPs is not a valid boolean

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'listen-peer-urls', 'client-cert-auth'], 'reason': ["For etcd 3.5.0, the listen-client-urls and advertise-client-urls should use the URL scheme 'https://' instead of 'http://' when client-cert-auth is enabled.", "For etcd 3.5.0, the listen-peer-urls should use the URL scheme 'https://' instead of 'http://' when client-cert-auth is enabled.", "For etcd 3.5.0, client-cert-auth should be set to 'false' if the URLs are using the 'http://' scheme."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: listen-client-urls	listen-peer-urls	client-cert-auth
+[Ciri] Reason for listen-client-urls: For etcd 3.5.0, the listen-client-urls and advertise-client-urls should use the URL scheme 'https://' instead of 'http://' when client-cert-auth is enabled.
+[Ciri] Reason for listen-peer-urls: For etcd 3.5.0, the listen-peer-urls should use the URL scheme 'https://' instead of 'http://' when client-cert-auth is enabled.
+[Ciri] Reason for client-cert-auth: For etcd 3.5.0, client-cert-auth should be set to 'false' if the URLs are using the 'http://' scheme.

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>io.skip.checksum.errors</name>
+  <value>false</value>
+  <description>If true, when a checksum error is encountered while
+  reading a sequence file, entries are skipped, instead of throwing an
+  exception.</description>
+</property>
+
+<property>
+  <name>fs.s3a.metadatastore.fail.on.write.error</name>
+  <value>true</value>
+  <description>
+    When true (default), FileSystem write operations generate
+    org.apache.hadoop.fs.s3a.MetadataPersistenceException if the metadata
+    cannot be saved to the metadata store.  When false, failures to save to
+    metadata store are logged at ERROR level, but the overall FileSystem
+    write operation succeeds.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.output.csv.field.delimiter</name>
+  <value>,</value>
+  <description>
+    In S3 Select queries: the field delimiter for generated CSV Files.
+  </description>
+</property>
+
+<property>
+  <name>fs.azure.authorization.caching.enable</name>
+  <value>false</value>
+  <description>
+    Config flag to enable caching of authorization results and saskeys in WASB.
+    This flag is relevant only when fs.azure.authorization is enabled.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.staticuser.user</name>
+  <value>samsuper</value>
+  <description>
+    The user name to filter as, on static web filters
+    while rendering content. An example use is the HDFS
+    web UI (user to be used for browsing files).
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.client.conf</name>
+  <value>/valid/file1</value>
+  <description>
+    Resource file from which ssl client keystore information will be extracted
+    This file is looked up in the classpath, typically it should be in Hadoop
+    conf/ directory.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.enabled</name>
+  <value>true</value>
+  <description>
+    Deprecated. Use dfs.http.policy and yarn.http.policy instead.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.key.default.bitlength</name>
+  <value>256</value>
+  <description>
+    The length (bits) of keys we want the KeyProvider to produce. Key length
+    defines the upper-bound on an algorithm's security, ideally, it would
+    coincide with the lower-bound on an algorithm's security.
+  </description>
+</property>
+
+</configuration>

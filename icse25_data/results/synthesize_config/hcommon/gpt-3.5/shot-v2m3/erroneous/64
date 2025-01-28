@@ -1,0 +1,16 @@
+Wrong shot number:
+[4, 2, 1]
+
+Correct shot number:
+[1, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.retry.throttle.limit', 'fs.s3.maxRetries', 'hadoop.registry.zk.retry.interval.ms'], 'reason': ["The property 'fs.s3a.retry.throttle.limit' should have a value that is a positive integer.", "The property 'fs.s3.maxRetries' should have a value that is a positive integer.", "The property 'hadoop.registry.zk.retry.interval.ms' should have a value that is a positive integer."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.s3a.retry.throttle.limit	fs.s3.maxRetries	hadoop.registry.zk.retry.interval.ms
+[Ciri] Reason for fs.s3a.retry.throttle.limit: The property 'fs.s3a.retry.throttle.limit' should have a value that is a positive integer.
+[Ciri] Reason for fs.s3.maxRetries: The property 'fs.s3.maxRetries' should have a value that is a positive integer.
+[Ciri] Reason for hadoop.registry.zk.retry.interval.ms: The property 'hadoop.registry.zk.retry.interval.ms' should have a value that is a positive integer.

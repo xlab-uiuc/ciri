@@ -1,0 +1,16 @@
+Wrong shot number:
+[3, 1, 9]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.defaults.for.version', 'hbase.data.umask'], 'reason': ["The property 'hbase.regionserver.info.bindAddress' has the value '-1.0.0.0' which does not follow the correct IP address format.", "The property 'hbase.defaults.for.version' contains placeholder '@@@VERSION@@@' which should be replaced with the actual version the configuration is intended for.", "The property 'hbase.data.umask' has the value '000' which might not be secure. It's recommended to use a more restrictive umask value."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.info.bindAddress	hbase.defaults.for.version	hbase.data.umask
+[Ciri] Reason for hbase.regionserver.info.bindAddress: The property 'hbase.regionserver.info.bindAddress' has the value '-1.0.0.0' which does not follow the correct IP address format.
+[Ciri] Reason for hbase.defaults.for.version: The property 'hbase.defaults.for.version' contains placeholder '@@@VERSION@@@' which should be replaced with the actual version the configuration is intended for.
+[Ciri] Reason for hbase.data.umask: The property 'hbase.data.umask' has the value '000' which might not be secure. It's recommended to use a more restrictive umask value.

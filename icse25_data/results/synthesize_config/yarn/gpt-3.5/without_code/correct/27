@@ -1,0 +1,18 @@
+Wrong shot number:
+[6, 3, 1]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' value '/valid/file1' contains a path that cannot contain commas."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' contains a value '/valid/file1' which is not a valid cgroups hierarchy path."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.cgroups.hierarchy'], 'reason': ["The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' value '/valid/file1' contains an invalid character ',' which is not allowed in the value."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.linux-container-executor.cgroups.hierarchy
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.hierarchy: The property 'yarn.nodemanager.linux-container-executor.cgroups.hierarchy' value '/valid/file1' contains an invalid character ',' which is not allowed in the value.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 7, 12]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr'], 'reason': ["The property 'bind-source-addr' is not a valid configuration parameter for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['oom-score-adj-values'], 'reason': ["The property 'oom-score-adj-values' has the value '0 200 800' which does not follow the correct format. It should be a single integer."]}
+
+{'hasError': True, 'errParameter': ['oom-score-adj-values'], 'reason': ["The property 'oom-score-adj-values' has an invalid value format. It should be a single integer."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: oom-score-adj-values
+[Ciri] Reason for oom-score-adj-values: The property 'oom-score-adj-values' has the value '0 200 800' which does not follow the correct format. It should be a single integer.

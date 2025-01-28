@@ -1,0 +1,18 @@
+Wrong shot number:
+[6, 7, 1]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.system-reserved-memory-mb'], 'reason': ["The property 'yarn.nodemanager.resource.system-reserved-memory-mb' has the value '0' which is less than the minimum value '2048'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory-mb'], 'reason': ["The property 'yarn.nodemanager.resource.memory-mb' has the value '-1' which is out of the valid range of 0 to 2147483647."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory-mb'], 'reason': ["The property 'yarn.nodemanager.resource.memory-mb' has the value '-1' which is out of the valid range of 0-2147483647."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.resource.memory-mb
+[Ciri] Reason for yarn.nodemanager.resource.memory-mb: The property 'yarn.nodemanager.resource.memory-mb' has the value '-1' which is out of the valid range of 0-2147483647.

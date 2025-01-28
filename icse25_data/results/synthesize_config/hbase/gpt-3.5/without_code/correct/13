@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 3, 9]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.auth.token.max.lifetime'], 'reason': ["The property 'hbase.auth.token.max.lifetime' should have a value in milliseconds, but the current value is '604800000' which is equivalent to 7 days. It should be adjusted to a value that represents the desired token lifetime in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['hbase.auth.token.max.lifetime'], 'reason': ["The property 'hbase.auth.token.max.lifetime' has a value of '604800000' which may be too high and needs to be reviewed for security reasons."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.auth.token.max.lifetime
+[Ciri] Reason for hbase.auth.token.max.lifetime: The property 'hbase.auth.token.max.lifetime' has a value of '604800000' which may be too high and needs to be reviewed for security reasons.

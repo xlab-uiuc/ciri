@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'standaloneEnabled'], 'reason': ['dataLogDir is not a valid directory', 'standaloneEnabled is not a valid property']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir and dataLogDir must be the same directory', 'dataLogDir must be a valid directory']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir and dataLogDir must be different directories', 'dataLogDir must be a valid directory']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'standaloneEnabled'], 'reason': ['dataLogDir is not a valid directory.', 'standaloneEnabled is not a valid property.']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'standaloneEnabled'], 'reason': ['dataLogDir must be a valid directory', 'standaloneEnabled must be set to true']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataLogDir	standaloneEnabled
+[Ciri] Reason for dataLogDir: dataLogDir must be a valid directory
+[Ciri] Reason for standaloneEnabled: standaloneEnabled must be set to true

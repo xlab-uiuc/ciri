@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>io.erasurecode.codec.rs-legacy.rawcoders</name>
+  <value>rs-legacy_java</value>
+  <description>
+    Comma separated raw coder implementations for the rs-legacy codec. The earlier
+    factory is prior to followings in case of failure of creating raw coders.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.assumed.role.session.duration</name>
+  <value>40m</value>
+  <description>
+    Duration of assumed roles before a refresh is attempted.
+    Used when session tokens are requested.
+    Range: 15m to 1h
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.connection.ssl.enabled</name>
+  <value>false</value>
+  <description>Enables or disables SSL connections to AWS services.
+    Also sets the default port to use for the s3a proxy settings,
+    when not explicitly set in fs.s3a.proxy.port.</description>
+</property>
+
+<property>
+  <name>fs.s3a.metadatastore.fail.on.write.error</name>
+  <value>true</value>
+  <description>
+    When true (default), FileSystem write operations generate
+    org.apache.hadoop.fs.s3a.MetadataPersistenceException if the metadata
+    cannot be saved to the metadata store.  When false, failures to save to
+    metadata store are logged at ERROR level, but the overall FileSystem
+    write operation succeeds.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.retry.limit</name>
+  <value>14</value>
+  <description>
+    Number of times to retry any repeatable S3 client request on failure,
+    excluding throttling requests and S3Guard inconsistency resolution.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.csv.record.delimiter</name>
+  <value>\n</value>
+  <description>In S3 Select queries over CSV files: the record delimiter.
+    \t is remapped to the TAB character, \r to CR \n to newline. \\ to \
+    and \" to "
+  </description>
+</property>
+
+<property>
+  <name>ftp.bytes-per-checksum</name>
+  <value>512</value>
+  <description>The number of bytes per checksum.  Must not be larger than
+  ftp.stream-buffer-size</description>
+</property>
+
+<property>
+  <name>ipc.server.max.connections</name>
+  <value>-1</value>
+  <description>The maximum number of concurrent connections a server is allowed
+    to accept. If this limit is exceeded, incoming connections will first fill
+    the listen queue and then may go to an OS-specific listen overflow queue.
+    The client may fail or timeout, but the server can avoid running out of file
+    descriptors using this feature. 0 means no limit.
+  </description>
+</property>
+
+</configuration>

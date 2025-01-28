@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 11, 7]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.upload.threads.max', 'alluxio.user.network.rpc.max.connections'], 'reason': ["The property 'alluxio.underfs.s3.upload.threads.max' has the value '-10' which should be a positive integer.", "The property 'alluxio.user.network.rpc.max.connections' has the value '0' which should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.upload.threads.max', 'alluxio.user.network.rpc.max.connections'], 'reason': ["The property 'alluxio.underfs.s3.upload.threads.max' has a negative value which is not valid. It should be a positive integer.", "The property 'alluxio.user.network.rpc.max.connections' has the value '0' which is not within the accepted range. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.upload.threads.max', 'alluxio.user.network.rpc.max.connections'], 'reason': ["The property 'alluxio.underfs.s3.upload.threads.max' has a negative value which is not valid.", "The property 'alluxio.user.network.rpc.max.connections' should have a value greater than 0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.s3.upload.threads.max	alluxio.user.network.rpc.max.connections
+[Ciri] Reason for alluxio.underfs.s3.upload.threads.max: The property 'alluxio.underfs.s3.upload.threads.max' has a negative value which is not valid. It should be a positive integer.
+[Ciri] Reason for alluxio.user.network.rpc.max.connections: The property 'alluxio.user.network.rpc.max.connections' has the value '0' which should be a positive integer.

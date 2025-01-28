@@ -1,0 +1,19 @@
+Wrong shot number:
+[5, 1, 11]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'repl-diskless-load'], 'reason': ["The property 'rdbcompression' should be a boolean value (yes/no), not an integer.", "The value 'disabled' for the property 'repl-diskless-load' is invalid. It should be either 'enabled' or 'disabled'."]}
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'repl-diskless-load'], 'reason': ["The property 'rdbcompression' should be a boolean value (yes/no) instead of an integer value.", "The value 'disabled' for the property 'repl-diskless-load' is invalid. It should be either 'enabled' or 'disabled'."]}
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'repl-diskless-load'], 'reason': ["The property 'rdbcompression' should be a boolean value (yes/no), but it has the value '10000' which is invalid.", "The value 'disabled' for the property 'repl-diskless-load' is invalid. It should be either 'enabled' or 'disabled'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: rdbcompression	repl-diskless-load
+[Ciri] Reason for rdbcompression: The property 'rdbcompression' should be a boolean value (yes/no), not an integer.
+[Ciri] Reason for repl-diskless-load: The value 'disabled' for the property 'repl-diskless-load' is invalid. It should be either 'enabled' or 'disabled'.

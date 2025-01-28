@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.create.ttl', 'alluxio.underfs.s3.streaming.upload.partition.size', 'alluxio.network.thrift.frame.size.bytes.max'], 'reason': ["The 'alluxio.user.file.create.ttl' value should not be negative. It defines the time-to-live for files created in Alluxio. A negative value is invalid.", "The 'alluxio.underfs.s3.streaming.upload.partition.size' is specified in bytes by default, not MB. If intending to use 64MB, the value should be '67108864' (64*1024*1024).", "The 'alluxio.network.thrift.frame.size.bytes.max' value seems unusually high. While not necessarily incorrect, it's important to ensure that clients and servers have sufficient memory to handle frames of this size."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.user.file.create.ttl	alluxio.underfs.s3.streaming.upload.partition.size	alluxio.network.thrift.frame.size.bytes.max
+[Ciri] Reason for alluxio.user.file.create.ttl: The 'alluxio.user.file.create.ttl' value should not be negative. It defines the time-to-live for files created in Alluxio. A negative value is invalid.
+[Ciri] Reason for alluxio.underfs.s3.streaming.upload.partition.size: The 'alluxio.underfs.s3.streaming.upload.partition.size' is specified in bytes by default, not MB. If intending to use 64MB, the value should be '67108864' (64*1024*1024).
+[Ciri] Reason for alluxio.network.thrift.frame.size.bytes.max: The 'alluxio.network.thrift.frame.size.bytes.max' value seems unusually high. While not necessarily incorrect, it's important to ensure that clients and servers have sufficient memory to handle frames of this size.

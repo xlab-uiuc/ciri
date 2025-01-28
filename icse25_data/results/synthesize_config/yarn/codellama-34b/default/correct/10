@@ -1,0 +1,26 @@
+Wrong shot number:
+[6, 8, 7]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.percentage-physical-cpu-limit'], 'reason': ["The value of the property 'yarn.nodemanager.resource.percentage-physical-cpu-limit' should be between 1 and 100."]}
+
+{'hasError': True, 'errParameter': ['yarn.client.failover-no-ha-proxy-provider'], 'reason': ["The property 'yarn.client.failover-no-ha-proxy-provider' should be 'org.apache.hadoop.yarn.client.RMProxyProvider' to enable the property 'yarn.resourcemanager.ha.enabled'."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.maximum-allocation-mb'], 'reason': ["The value of the property 'yarn.scheduler.maximum-allocation-mb' should be a positive integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.maximum-allocation-mb'], 'reason': ["The value of the property 'yarn.scheduler.maximum-allocation-mb' should be less than or equal to 16384."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.maximum-allocation-mb'], 'reason': ["The value of the property 'yarn.scheduler.maximum-allocation-mb' should be less than or equal to 16384 MB."]}
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.maximum-allocation-mb'], 'reason': ["The property 'yarn.scheduler.maximum-allocation-mb' has the value '16384' which is out of the valid range of 0 to 8192."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.scheduler.maximum-allocation-mb
+[Ciri] Reason for yarn.scheduler.maximum-allocation-mb: The value of the property 'yarn.scheduler.maximum-allocation-mb' should be less than or equal to 16384.

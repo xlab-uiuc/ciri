@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'sslQuorum', 'localSessionsUpgradingEnabled', 'reconfigEnabled'], 'reason': ['secureClientPort cannot be negative', 'sslQuorum is not a valid boolean value', 'localSessionsUpgradingEnabled is not a valid boolean value', 'reconfigEnabled is not a valid boolean value']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'syncEnabled', 'sslQuorum'], 'reason': ['secureClientPort cannot be negative', 'syncEnabled must be true', 'sslQuorum must be false']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'sslQuorum', 'localSessionsUpgradingEnabled', 'reconfigEnabled'], 'reason': ['secureClientPort is not a valid port number', 'sslQuorum is not a valid boolean value', 'localSessionsUpgradingEnabled is not a valid boolean value', 'reconfigEnabled is not a valid boolean value']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: secureClientPort	sslQuorum	localSessionsUpgradingEnabled	reconfigEnabled
+[Ciri] Reason for secureClientPort: secureClientPort cannot be negative
+[Ciri] Reason for sslQuorum: sslQuorum is not a valid boolean value
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled is not a valid boolean value
+[Ciri] Reason for reconfigEnabled: reconfigEnabled is not a valid boolean value

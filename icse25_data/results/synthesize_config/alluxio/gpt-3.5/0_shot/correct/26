@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.network.connection.shutdown.graceful.timeout', 'alluxio.user.file.master.client.pool.gc.threshold', 'alluxio.master.daily.backup.state.lock.timeout'], 'reason': ['Invalid value format. It should be in milliseconds.', "Invalid value format. It should not contain 'sec'.", 'Invalid value format. It should be in milliseconds.', 'Invalid value format. It should be in milliseconds.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.network.connection.shutdown.graceful.timeout', 'alluxio.user.file.master.client.pool.gc.threshold', 'alluxio.master.daily.backup.state.lock.timeout'], 'reason': ['Invalid value format. It should be in milliseconds.', "Invalid value format. It should not contain 'sec'.", 'Invalid value format. It should be in milliseconds.', 'Invalid value format. It should be in milliseconds.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.network.connection.shutdown.graceful.timeout', 'alluxio.user.file.master.client.pool.gc.threshold', 'alluxio.master.daily.backup.state.lock.timeout'], 'reason': ["The value '100MB' for 'alluxio.user.network.rpc.max.inbound.message.size' should be specified in bytes.", "The value '45sec' for 'alluxio.network.connection.shutdown.graceful.timeout' should be specified in milliseconds.", "The value '240sec' for 'alluxio.user.file.master.client.pool.gc.threshold' should be specified in milliseconds.", "The value '10h' for 'alluxio.master.daily.backup.state.lock.timeout' should be specified in milliseconds."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.user.network.rpc.max.inbound.message.size	alluxio.network.connection.shutdown.graceful.timeout	alluxio.user.file.master.client.pool.gc.threshold	alluxio.master.daily.backup.state.lock.timeout
+[Ciri] Reason for alluxio.user.network.rpc.max.inbound.message.size: Invalid value format. It should be in milliseconds.
+[Ciri] Reason for alluxio.network.connection.shutdown.graceful.timeout: Invalid value format. It should not contain 'sec'.
+[Ciri] Reason for alluxio.user.file.master.client.pool.gc.threshold: Invalid value format. It should be in milliseconds.
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.timeout: Invalid value format. It should be in milliseconds.

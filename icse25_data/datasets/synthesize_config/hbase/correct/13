@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.hstore.compaction.min.size</name>
+  <value>134217728</value>
+    <description>A StoreFile (or a selection of StoreFiles, when using ExploringCompactionPolicy)
+      smaller than this size will always be eligible for minor compaction.
+      HFiles this size or larger are evaluated by hbase.hstore.compaction.ratio to determine if
+      they are eligible. Because this limit represents the "automatic include" limit for all
+      StoreFiles smaller than this value, this value may need to be reduced in write-heavy
+      environments where many StoreFiles in the 1-2 MB range are being flushed, because every
+      StoreFile will be targeted for compaction and the resulting StoreFiles may still be under the
+      minimum size and require further compaction. If this parameter is lowered, the ratio check is
+      triggered more quickly. This addressed some issues seen in earlier versions of HBase but
+      changing this parameter is no longer necessary in most situations. Default: 128 MB expressed
+      in bytes.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.minorcompaction.pagecache.drop</name>
+  <value>true</value>
+    <description>Specifies whether to drop pages read/written into the system page cache by
+      minor compactions. Setting it to true helps prevent minor compactions from
+      polluting the page cache, which is most beneficial on clusters with low
+      memory to storage ratio or very write heavy clusters. You may want to set it to
+      false under moderate to low write workload when bulk of the reads are
+      on the most recently written data.</description>
+</property>
+
+<property>
+  <name>hbase.auth.token.max.lifetime</name>
+  <value>604800000</value>
+    <description>The maximum lifetime in milliseconds after which an
+    authentication token expires.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.abortonerror</name>
+  <value>true</value>
+      <description>Set to true to cause the hosting server (master or regionserver)
+      to abort if a coprocessor fails to load, fails to initialize, or throws an
+      unexpected Throwable object. Setting this to false will allow the server to
+      continue execution but the system wide state of the coprocessor in question
+      will become inconsistent as it will be properly executing in only a subset
+      of servers, so this is most useful for debugging only.</description>
+</property>
+
+<property>
+  <name>hbase.status.published</name>
+  <value>false</value>
+    <description>
+      This setting activates the publication by the master of the status of the region server.
+      When a region server dies and its recovery starts, the master will push this information
+      to the client application, to let them cut the connection immediately instead of waiting
+      for a timeout.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest.csrf.enabled</name>
+  <value>false</value>
+  <description>
+    Set to true to enable protection against cross-site request forgery (CSRF)
+	</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.handler.abort.on.error.percent</name>
+  <value>1.0</value>
+    <description>The percent of region server RPC threads failed to abort RS.
+    -1 Disable aborting; 0 Abort if even a single handler has died;
+    0.x Abort only when this percent of handlers have died;
+    1 Abort only all of the handers have died.</description>
+</property>
+
+<property>
+  <name>hbase.mob.cache.evict.period</name>
+  <value>7200</value>
+    <description>
+      The amount of time in seconds before the mob cache evicts cached mob files.
+      The default value is 3600 seconds.
+    </description>
+</property>
+
+</configuration>

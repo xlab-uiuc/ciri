@@ -1,0 +1,16 @@
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'fs.s3a.assumed.role.session.duration', 'fs.s3a.multipart.threshold', 'fs.s3a.ssl.channel.mode', 'hadoop.util.hash.type', 'fs.permissions.umask-mode'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an incorrect 'usage' tag.", "The property 'fs.s3a.assumed.role.session.duration' has an incorrect 'usage' tag.", "The property 'fs.s3a.multipart.threshold' has an incorrect 'usage' tag.", "The property 'fs.s3a.ssl.channel.mode' has an incorrect 'usage' tag.", "The property 'hadoop.util.hash.type' has an incorrect 'usage' tag.", "The property 'fs.permissions.umask-mode' has an incorrect 'usage' tag."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.ftp.data.connection.mode	fs.s3a.assumed.role.session.duration	fs.s3a.multipart.threshold	fs.s3a.ssl.channel.mode	hadoop.util.hash.type	fs.permissions.umask-mode
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an incorrect 'usage' tag.
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The property 'fs.s3a.assumed.role.session.duration' has an incorrect 'usage' tag.
+[Ciri] Reason for fs.s3a.multipart.threshold: The property 'fs.s3a.multipart.threshold' has an incorrect 'usage' tag.
+[Ciri] Reason for fs.s3a.ssl.channel.mode: The property 'fs.s3a.ssl.channel.mode' has an incorrect 'usage' tag.
+[Ciri] Reason for hadoop.util.hash.type: The property 'hadoop.util.hash.type' has an incorrect 'usage' tag.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has an incorrect 'usage' tag.

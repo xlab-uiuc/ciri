@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.ipc.rpc.class</name>
+  <value>NONE_CLASS</value>
+    <description>RPC class implementation</description>
+</property>
+
+<property>
+  <name>yarn.http.policy</name>
+  <value>HTTP_ONLY</value>
+      <description>
+        This configures the HTTP endpoint for YARN Daemons.The following
+        values are supported:
+        - HTTP_ONLY : Service is provided only on http
+        - HTTPS_ONLY : Service is provided only on https
+      </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.webapp.ui-actions.enabled</name>
+  <value>false</value>
+    <description>
+    Add button to kill application in the RM Application view.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.log-container-debug-info.enabled</name>
+  <value>false</value>
+    <description>Generate additional logs about container launches.
+    Currently, this creates a copy of the launch script and lists the
+    directory contents of the container work dir. When listing directory
+    contents, we follow symlinks to a max-depth of 5(including symlinks
+    which point to outside the container work dir) which may lead to a
+    slowness in launching containers.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.system-reserved-memory-mb</name>
+  <value>0</value>
+    <description>Amount of physical memory, in MB, that is reserved
+    for non-YARN processes. This configuration is only used if
+    yarn.nodemanager.resource.detect-hardware-capabilities is set
+    to true and yarn.nodemanager.resource.memory-mb is -1. If set
+    to -1, this amount is calculated as
+    20% of (system memory - 2*HADOOP_HEAPSIZE)
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.cgroups.mount</name>
+  <value>true</value>
+    <description>Whether the LCE should attempt to mount cgroups if not found.
+    This property only applies when the LCE resources handler is set to
+    CgroupsLCEResourcesHandler.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.allowed-container-runtimes</name>
+  <value>runc</value>
+    <description>The set of runtimes allowed when launching containers
+      using the RuncContainerRuntime.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.cache-refresh-interval-secs</name>
+  <value>60</value>
+    <description>The interval in seconds between refreshing the hdfs image tag
+      to hash cache.</description>
+</property>
+
+</configuration>

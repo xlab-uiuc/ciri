@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.num.extra.edits.retained', 'dfs.image.parallel.load', 'dfs.provided.aliasmap.class', 'dfs.journalnode.edits.dir.perm'], 'reason': ["The property 'dfs.namenode.num.extra.edits.retained' has a very lengthy description which may be difficult to understand or maintain.", "The property 'dfs.image.parallel.load' has a lengthy description which may be difficult to understand or maintain.", "The property 'dfs.provided.aliasmap.class' has a lengthy description which may be difficult to understand or maintain.", "The value for the property 'dfs.journalnode.edits.dir.perm' should be in octal format, but it is provided as a decimal value."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.num.extra.edits.retained', 'dfs.image.parallel.load', 'dfs.balancer.max-iteration-time', 'dfs.provided.aliasmap.class', 'dfs.journalnode.edits.dir.perm'], 'reason': ["The property 'dfs.namenode.num.extra.edits.retained' has a very long description which may be difficult to manage or maintain.", "The property 'dfs.image.parallel.load' has a very detailed description which may be hard to understand quickly.", "The property 'dfs.balancer.max-iteration-time' has a description that is too long and complex.", "The property 'dfs.provided.aliasmap.class' has a description that is too verbose and could be simplified.", "The property 'dfs.journalnode.edits.dir.perm' should specify permissions in octal format, but the value '800' is not a valid octal value."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.num.extra.edits.retained', 'dfs.image.parallel.load', 'dfs.provided.aliasmap.class', 'dfs.journalnode.edits.dir.perm'], 'reason': ["The property 'dfs.namenode.num.extra.edits.retained' has a lengthy description that may be difficult to understand at a glance.", "The property 'dfs.image.parallel.load' has a lengthy description that may be difficult to understand at a glance.", "The property 'dfs.provided.aliasmap.class' has a lengthy description that may be difficult to understand at a glance.", "The value for the property 'dfs.journalnode.edits.dir.perm' should be in octal format, but it is provided as a decimal value."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dfs.namenode.num.extra.edits.retained	dfs.image.parallel.load	dfs.provided.aliasmap.class	dfs.journalnode.edits.dir.perm
+[Ciri] Reason for dfs.namenode.num.extra.edits.retained: The property 'dfs.namenode.num.extra.edits.retained' has a very lengthy description which may be difficult to understand or maintain.
+[Ciri] Reason for dfs.image.parallel.load: The property 'dfs.image.parallel.load' has a lengthy description which may be difficult to understand or maintain.
+[Ciri] Reason for dfs.provided.aliasmap.class: The property 'dfs.provided.aliasmap.class' has a lengthy description which may be difficult to understand or maintain.
+[Ciri] Reason for dfs.journalnode.edits.dir.perm: The value for the property 'dfs.journalnode.edits.dir.perm' should be in octal format, but it is provided as a decimal value.

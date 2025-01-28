@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.lifeline.rpc-address</name>
+  <value>127.0.0.1</value>
+  <description>
+    NameNode RPC lifeline address.  This is an optional separate RPC address
+    that can be used to isolate health checks and liveness to protect against
+    resource exhaustion in the main RPC handler pool.  In the case of
+    HA/Federation where multiple NameNodes exist, the name service ID is added
+    to the name e.g. dfs.namenode.lifeline.rpc-address.ns1.  The value of this
+    property will take the form of nn-host1:rpc-port.  If this property is not
+    defined, then the NameNode will not start a lifeline RPC server.  By
+    default, the property is not defined.
+  </description>
+</property>
+
+<property>
+  <name>dfs.heartbeat.interval</name>
+  <value>3s</value>
+  <description>
+    Determines datanode heartbeat interval in seconds.
+    Can use the following suffix (case insensitive):
+    ms(millis), s(sec), m(min), h(hour), d(day)
+    to specify the time (such as 2s, 2m, 1h, etc.).
+    Or provide complete number in seconds (such as 30 for 30 seconds).
+    If no time unit is specified then seconds is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.drop.cache.behind.writes</name>
+  <value>false</value>
+  <description>
+        In some workloads, the data written to HDFS is known to be significantly
+        large enough that it is unlikely to be useful to cache it in the
+        operating system buffer cache. In this case, the DataNode may be
+        configured to automatically purge all data from the buffer cache
+        after it is written to disk.
+
+        This may improve performance for some workloads by freeing buffer
+        cache space usage for more cacheable data.
+
+        If the Hadoop native libraries are not available, this configuration
+        has no effect.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reject-unresolved-dn-topology-mapping</name>
+  <value>true</value>
+  <description>
+    If the value is set to true, then namenode will reject datanode 
+    registration if the topology mapping for a datanode is not resolved and 
+    NULL is returned (script defined by net.topology.script.file.name fails 
+    to execute). Otherwise, datanode will be registered and the default rack 
+    will be assigned as the topology path. Topology paths are important for 
+    data resiliency, since they define fault domains. Thus it may be unwanted 
+    behavior to allow datanode registration with the default rack if the 
+    resolving topology failed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.get-blocks.max-qps</name>
+  <value>10</value>
+  <description>
+    The maximum number of getBlocks RPCs data movement utilities can make to
+    a NameNode per second. Values less than or equal to 0 disable throttling.
+    This affects anything that uses a NameNodeConnector, i.e., the Balancer,
+    Mover, and StoragePolicySatisfier.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.retry.policy.enabled</name>
+  <value>false</value>
+  <description>
+    If true, turns on DFSClient retry policy.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.storageinfo.defragment.interval.ms</name>
+  <value>1200000</value>
+  <description>
+    The thread for checking the StorageInfo for defragmentation will
+    run periodically.  The time between runs is determined by this
+    property.
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.start-segment.timeout.ms</name>
+  <value>40000</value>
+  <description>
+    Quorum timeout in milliseconds for starting a log segment.
+  </description>
+</property>
+
+</configuration>

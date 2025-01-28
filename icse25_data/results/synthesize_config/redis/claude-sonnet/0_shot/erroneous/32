@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'stream-node-max-bytes', 'repl-diskless-sync-max-replicas', 'appenddirname', 'timeout', 'hash-max-listpack-value', 'cluster-node-timeout', 'no-appendfsync-on-rewrite'], 'reason': ["The 'bind-source-addr' parameter is not a valid Redis configuration option.", "The 'stream-node-max-bytes' parameter is not a valid Redis configuration option.", "The 'repl-diskless-sync-max-replicas' parameter is not a valid Redis configuration option.", "The 'appenddirname' parameter is not a valid Redis configuration option. The correct parameter is 'appendonly' or 'appendfilename'.", "The 'timeout' parameter is not a valid Redis configuration option.", "The 'hash-max-listpack-value' parameter is not a valid Redis configuration option.", "The 'cluster-node-timeout' parameter is not a valid Redis configuration option.", "The 'no-appendfsync-on-rewrite' parameter is not a valid Redis configuration option. The correct parameter is 'appendfsync'."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: bind-source-addr	stream-node-max-bytes	repl-diskless-sync-max-replicas	appenddirname	timeout	hash-max-listpack-value	cluster-node-timeout	no-appendfsync-on-rewrite
+[Ciri] Reason for bind-source-addr: The 'bind-source-addr' parameter is not a valid Redis configuration option.
+[Ciri] Reason for stream-node-max-bytes: The 'stream-node-max-bytes' parameter is not a valid Redis configuration option.
+[Ciri] Reason for repl-diskless-sync-max-replicas: The 'repl-diskless-sync-max-replicas' parameter is not a valid Redis configuration option.
+[Ciri] Reason for appenddirname: The 'appenddirname' parameter is not a valid Redis configuration option. The correct parameter is 'appendonly' or 'appendfilename'.
+[Ciri] Reason for timeout: The 'timeout' parameter is not a valid Redis configuration option.
+[Ciri] Reason for hash-max-listpack-value: The 'hash-max-listpack-value' parameter is not a valid Redis configuration option.
+[Ciri] Reason for cluster-node-timeout: The 'cluster-node-timeout' parameter is not a valid Redis configuration option.
+[Ciri] Reason for no-appendfsync-on-rewrite: The 'no-appendfsync-on-rewrite' parameter is not a valid Redis configuration option. The correct parameter is 'appendfsync'.

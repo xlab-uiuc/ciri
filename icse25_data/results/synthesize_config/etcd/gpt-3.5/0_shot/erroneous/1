@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-write-timeout'], 'reason': ['heartbeat-interval value should be a duration string (e.g., 100ms, 1s, 2h)', 'proxy-write-timeout value should be a duration string (e.g., 100ms, 1s, 2h)']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'log-level'], 'reason': ['heartbeat-interval value should be an integer', 'log-level value should be one of: debug, info, warn, error']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'log-level', 'initial-advertise-peer-urls'], 'reason': ["heartbeat-interval should be a duration string like '100ms', '1.5h', etc.", "log-level should be one of: 'debug', 'info', 'warn', 'error', 'dpanic', 'panic', 'fatal'", "initial-advertise-peer-urls should use 'https' instead of 'http' for secure communication"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'quota-backend-bytes', 'proxy-write-timeout', 'initial-advertise-peer-urls', 'force-new-cluster', 'snapshot-count'], 'reason': ['heartbeat-interval should be an integer value', 'quota-backend-bytes should be an integer value', 'proxy-write-timeout should be an integer value', 'initial-advertise-peer-urls should use https instead of http', 'force-new-cluster should be a boolean value', 'snapshot-count should be an integer value']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'log-level'], 'reason': ['heartbeat-interval value should be a string with time unit (e.g., 9.9s)', 'log-level value should be one of: debug, info, warn, error, panic, fatal']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'log-level'], 'reason': ['Invalid value for heartbeat-interval. It should be a positive integer or float.', 'Invalid value for log-level. It should be one of: debug, info, warn, error, or critical.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: heartbeat-interval	log-level
+[Ciri] Reason for heartbeat-interval: Invalid value for heartbeat-interval. It should be a positive integer or float.
+[Ciri] Reason for log-level: Invalid value for log-level. It should be one of: debug, info, warn, error, or critical.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.handler.factor', 'hbase.client.scanner.caching', 'hbase.regionserver.minorcompaction.pagecache.drop'], 'reason': ["The value for 'hbase.ipc.server.callqueue.handler.factor' should be a numeric value, not 'ciri/ciri'.", "The value for 'hbase.client.scanner.caching' should be a numeric value, not '1073741823'.", "The value for 'hbase.regionserver.minorcompaction.pagecache.drop' should be a boolean value, not 'true'."]}
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.handler.factor', 'hbase.client.scanner.caching', 'hbase.regionserver.minorcompaction.pagecache.drop', 'hbase.ipc.client.tcpnodelay'], 'reason': ["The value for 'hbase.ipc.server.callqueue.handler.factor' should be a numeric value, not 'ciri/ciri'.", "The 'hbase.client.scanner.caching' value is set to a very high value which may lead to memory issues. It's recommended to set a reasonable value based on your use case.", "The 'hbase.regionserver.minorcompaction.pagecache.drop' value should be a boolean (true/false) instead of 'true'.", "The 'hbase.ipc.client.tcpnodelay' value should be a boolean (true/false) instead of 'true'."]}
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.handler.factor', 'hbase.client.scanner.caching', 'hbase.regionserver.minorcompaction.pagecache.drop', 'hbase.ipc.client.tcpnodelay'], 'reason': ["The value for 'hbase.ipc.server.callqueue.handler.factor' should be a numeric value, not 'ciri/ciri'.", "The 'hbase.client.scanner.caching' value should not be set to Integer.MAX_VALUE directly. It should be set based on the specific requirements.", "The 'hbase.regionserver.minorcompaction.pagecache.drop' value should be a boolean (true/false) instead of 'true'.", "The 'hbase.ipc.client.tcpnodelay' value should be a boolean (true/false) instead of 'true'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hbase.ipc.server.callqueue.handler.factor	hbase.client.scanner.caching	hbase.regionserver.minorcompaction.pagecache.drop	hbase.ipc.client.tcpnodelay
+[Ciri] Reason for hbase.ipc.server.callqueue.handler.factor: The value for 'hbase.ipc.server.callqueue.handler.factor' should be a numeric value, not 'ciri/ciri'.
+[Ciri] Reason for hbase.client.scanner.caching: The 'hbase.client.scanner.caching' value should not be set to Integer.MAX_VALUE directly. It should be set based on the specific requirements.
+[Ciri] Reason for hbase.regionserver.minorcompaction.pagecache.drop: The 'hbase.regionserver.minorcompaction.pagecache.drop' value should be a boolean (true/false) instead of 'true'.
+[Ciri] Reason for hbase.ipc.client.tcpnodelay: The 'hbase.ipc.client.tcpnodelay' value should be a boolean (true/false) instead of 'true'.

@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compactionThreshold', 'hbase.hstore.compaction.max', 'hbase.offpeak.end.hour'], 'reason': ['hbase.hstore.compactionThreshold must be an integer', 'hbase.hstore.compaction.max must be an integer', 'hbase.offpeak.end.hour must be an integer between 0 and 23, inclusive. Set to -1 to disable off-peak']}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl'], 'reason': ['The value of hbase.master.logcleaner.ttl is not a valid number.']}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl'], 'reason': ['The value of hbase.master.logcleaner.ttl is not a valid number.']}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.ttl'], 'reason': ['hbase.master.logcleaner.ttl should be a positive integer']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.master.logcleaner.ttl
+[Ciri] Reason for hbase.master.logcleaner.ttl: hbase.master.logcleaner.ttl should be a positive integer

@@ -1,0 +1,21 @@
+Wrong shot number:
+[6, 5, 2]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has the value '-1' which is not a valid positive integer.", "The property 'STATICFILES_FINDERS' should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' in addition to 'django.contrib.staticfiles.finders.FileSystemFinder'.", "The property 'PASSWORD_RESET_TIMEOUT' has an invalid value assignment.", "The property 'CSRF_COOKIE_AGE' has an invalid value assignment."]}
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has a negative value which is not valid.", "The property 'STATICFILES_FINDERS' should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' along with 'django.contrib.staticfiles.finders.FileSystemFinder'.", "The property 'PASSWORD_RESET_TIMEOUT' has an incorrect value assignment.", "The property 'CSRF_COOKIE_AGE' has an incorrect value assignment."]}
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has a negative value which is not valid.", "The property 'STATICFILES_FINDERS' should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' in addition to 'django.contrib.staticfiles.finders.FileSystemFinder'.", "The property 'PASSWORD_RESET_TIMEOUT' has an incorrect value assignment.", "The property 'CSRF_COOKIE_AGE' has an incorrect value assignment."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	STATICFILES_FINDERS	PASSWORD_RESET_TIMEOUT	CSRF_COOKIE_AGE
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: The property 'CACHE_MIDDLEWARE_SECONDS' has the value '-1' which is not a valid positive integer.
+[Ciri] Reason for STATICFILES_FINDERS: The property 'STATICFILES_FINDERS' should include 'django.contrib.staticfiles.finders.AppDirectoriesFinder' along with 'django.contrib.staticfiles.finders.FileSystemFinder'.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: The property 'PASSWORD_RESET_TIMEOUT' has an invalid value assignment.
+[Ciri] Reason for CSRF_COOKIE_AGE: The property 'CSRF_COOKIE_AGE' has an incorrect value assignment.

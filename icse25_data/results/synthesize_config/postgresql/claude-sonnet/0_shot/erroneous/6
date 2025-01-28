@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['temp_buffers', 'wal_keep_size', 'huge_page_size'], 'reason': ['The temp_buffers parameter expects a value in kilobytes (e.g., 8192KB), not bytes.', 'The wal_keep_size parameter expects a value in megabytes (e.g., 1024MB), not a single integer value.', 'The huge_page_size parameter expects a value in kilobytes (e.g., 2048KB), not a single integer value.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: temp_buffers	wal_keep_size	huge_page_size
+[Ciri] Reason for temp_buffers: The temp_buffers parameter expects a value in kilobytes (e.g., 8192KB), not bytes.
+[Ciri] Reason for wal_keep_size: The wal_keep_size parameter expects a value in megabytes (e.g., 1024MB), not a single integer value.
+[Ciri] Reason for huge_page_size: The huge_page_size parameter expects a value in kilobytes (e.g., 2048KB), not a single integer value.

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.search.filter.user</name>
+  <value>xdsuper</value>
+  <description>
+    An additional filter to use when searching for LDAP users. The default will
+    usually be appropriate for Active Directory installations. If connecting to
+    an LDAP server with a non-AD schema, this should be replaced with
+    (&amp;(objectClass=inetOrgPerson)(uid={0}). {0} is a special string used to
+    denote where the username fits into the filter.
+
+    If the LDAP server supports posixGroups, Hadoop can enable the feature by
+    setting the value of this property to "posixAccount" and the value of
+    the hadoop.security.group.mapping.ldap.search.filter.group property to
+    "posixGroup".
+  </description>
+</property>
+
+<property>
+  <name>io.seqfile.local.dir</name>
+  <value>/valid/file1</value>
+  <description>The local directory where sequence file stores intermediate
+  data files during merge.  May be a comma-separated list of
+  directories on different devices in order to spread disk i/o.
+  Directories that do not exist are ignored.
+  </description>
+</property>
+
+<property>
+  <name>io.map.index.interval</name>
+  <value>-10</value>
+  <description>
+    MapFile consist of two files - data file (tuples) and index file
+    (keys). For every io.map.index.interval records written in the
+    data file, an entry (record-key, data-file-position) is written
+    in the index file. This is to allow for doing binary search later
+    within the index file to look up records by their keys and get their
+    closest positions in the data file.
+  </description>
+</property>
+
+<property>
+  <name>fs.ftp.transfer.mode</name>
+  <value>BLOCK_TRANSFER_MODE</value>
+  <description>
+    Set FTP's transfer mode based on configuration. Valid values are
+    STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE and COMPRESSED_TRANSFER_MODE.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.socket.recv.buffer</name>
+  <value>8192</value>
+  <description>Socket receive buffer hint to amazon connector. Represented in bytes.</description>
+</property>
+
+<property>
+  <name>fs.wasb.impl</name>
+  <value>org.apache.hadoop.fs.azure.NativeAzureFileSystem</value>
+  <description>The implementation class of the Native Azure Filesystem</description>
+</property>
+
+<property>
+  <name>net.topology.impl</name>
+  <value>org.apache.hadoop.net.NetworkTopology</value>
+  <description> The default implementation of NetworkTopology which is classic three layer one.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.sni.host.check.enabled</name>
+  <value>true</value>
+    <description>
+      Enable Server Name Indication (SNI) host check for HTTPS enabled server.
+    </description>
+</property>
+
+</configuration>

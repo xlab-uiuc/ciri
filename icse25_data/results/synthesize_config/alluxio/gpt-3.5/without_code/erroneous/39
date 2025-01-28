@@ -1,0 +1,20 @@
+Wrong shot number:
+[9, 12, 13]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.job.master.finished.job.purge.count', 'alluxio.worker.management.tier.promote.quota.percent'], 'reason': ["The property 'alluxio.proxy.web.bind.host' has the value '0.0.256.0' which is out of the valid range of an IP address.", "The property 'alluxio.job.master.finished.job.purge.count' should have a non-negative value.", "The property 'alluxio.worker.management.tier.promote.quota.percent' should have a value between 0 and 100."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.job.master.finished.job.purge.count', 'alluxio.worker.management.tier.promote.quota.percent'], 'reason': ["The property 'alluxio.proxy.web.bind.host' has an invalid IP address format.", "The value of the property 'alluxio.job.master.finished.job.purge.count' should be a non-negative integer.", "The value of the property 'alluxio.worker.management.tier.promote.quota.percent' should be in the range [0, 100]."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.job.master.finished.job.purge.count', 'alluxio.worker.management.tier.promote.quota.percent'], 'reason': ["The property 'alluxio.proxy.web.bind.host' has an invalid IP address format.", "The property 'alluxio.job.master.finished.job.purge.count' should have a non-negative value.", "The value of the property 'alluxio.worker.management.tier.promote.quota.percent' should be between 0 and 100."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.proxy.web.bind.host	alluxio.job.master.finished.job.purge.count	alluxio.worker.management.tier.promote.quota.percent
+[Ciri] Reason for alluxio.proxy.web.bind.host: The property 'alluxio.proxy.web.bind.host' has an invalid IP address format.
+[Ciri] Reason for alluxio.job.master.finished.job.purge.count: The property 'alluxio.job.master.finished.job.purge.count' should have a non-negative value.
+[Ciri] Reason for alluxio.worker.management.tier.promote.quota.percent: The value of the property 'alluxio.worker.management.tier.promote.quota.percent' should be between 0 and 100.

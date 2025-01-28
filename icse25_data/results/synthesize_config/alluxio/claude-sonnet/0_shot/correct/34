@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.connections=1', 'alluxio.worker.ufs.instream.cache.max.size=5000'], 'reason': ['alluxio.user.network.rpc.max.connections is deprecated in Alluxio 2.5.0 and should be removed from the configuration.', 'alluxio.worker.ufs.instream.cache.max.size is not a valid property in Alluxio 2.5.0. The correct property is alluxio.worker.ufs.instream.cache.enabled.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.rpc.max.connections=1	alluxio.worker.ufs.instream.cache.max.size=5000
+[Ciri] Reason for alluxio.user.network.rpc.max.connections=1: alluxio.user.network.rpc.max.connections is deprecated in Alluxio 2.5.0 and should be removed from the configuration.
+[Ciri] Reason for alluxio.worker.ufs.instream.cache.max.size=5000: alluxio.worker.ufs.instream.cache.max.size is not a valid property in Alluxio 2.5.0. The correct property is alluxio.worker.ufs.instream.cache.enabled.

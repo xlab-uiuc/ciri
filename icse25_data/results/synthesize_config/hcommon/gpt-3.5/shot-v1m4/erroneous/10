@@ -1,0 +1,15 @@
+Wrong shot number:
+[11, 13, 14, 9]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.buffer.dir'], 'reason': ["The property 'fs.ftp.host' has the value '0.0.0.0' which is not a valid FTP server address.", "The property 'fs.s3a.buffer.dir' has the value '/\\hadoop/s3a' which contains invalid characters."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.buffer.dir
+[Ciri] Reason for fs.ftp.host: The property 'fs.ftp.host' has the value '0.0.0.0' which is not a valid FTP server address.
+[Ciri] Reason for fs.s3a.buffer.dir: The property 'fs.s3a.buffer.dir' has the value '/\hadoop/s3a' which contains invalid characters.

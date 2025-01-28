@@ -1,0 +1,24 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'syncLimit', 'quorum.auth.server.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['secureClientPortAddress is not a valid IP address', 'syncLimit is not a valid integer', 'quorum.auth.server.saslLoginContext is not a valid SASL login context', 'quorum.auth.kerberos.servicePrincipal is not a valid Kerberos service principal']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'syncLimit', 'quorum.auth.server.saslLoginContext', 'portUnification', 'sslQuorum', 'quorum.auth.kerberos.servicePrincipal', 'maxClientCnxns'], 'reason': ['secureClientPortAddress is not a valid IP address', 'syncLimit should be an integer between 1 and 2147483647', 'quorum.auth.server.saslLoginContext is not a valid SASL login context', 'portUnification should be set to true or false', 'sslQuorum should be set to true or false', 'quorum.auth.kerberos.servicePrincipal is not a valid Kerberos service principal', 'maxClientCnxns should be an integer between 1 and 2147483647']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'syncLimit', 'quorum.auth.server.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal', 'maxClientCnxns'], 'reason': ['secureClientPortAddress is not a valid IP address.', 'syncLimit must be an odd number.', 'quorum.auth.server.saslLoginContext is not a valid SASL login context.', 'quorum.auth.kerberos.servicePrincipal is not a valid Kerberos service principal.', 'maxClientCnxns must be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'syncLimit', 'quorum.auth.server.saslLoginContext', 'sslQuorum', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['secureClientPortAddress is not a valid IP address', 'syncLimit should be 2 or more', 'quorum.auth.server.saslLoginContext is not a valid SASL login context', 'sslQuorum should be set to true', 'quorum.auth.kerberos.servicePrincipal should be set to zkquorum/localhost@REALM']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'syncLimit', 'quorum.auth.server.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['secureClientPortAddress is not a valid IP address', 'syncLimit must be greater than 2', 'quorum.auth.server.saslLoginContext is not a valid SASL login context', 'quorum.auth.kerberos.servicePrincipal is not a valid Kerberos service principal']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'syncLimit', 'quorum.auth.server.saslLoginContext', 'sslQuorum', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['secureClientPortAddress is not a valid IP address', 'syncLimit is not a valid integer', 'quorum.auth.server.saslLoginContext is not a valid login context', 'sslQuorum is not a valid boolean', 'quorum.auth.kerberos.servicePrincipal is not a valid service principal']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: secureClientPortAddress	syncLimit	quorum.auth.server.saslLoginContext	sslQuorum	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress is not a valid IP address
+[Ciri] Reason for syncLimit: syncLimit is not a valid integer
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext is not a valid SASL login context
+[Ciri] Reason for sslQuorum: sslQuorum is not a valid boolean
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal should be set to zkquorum/localhost@REALM

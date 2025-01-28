@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.durable', 'alluxio.worker.tieredstore.level1.dirs.path', 'alluxio.underfs.cleanup.interval', 'alluxio.network.connection.health.check.timeout', 'alluxio.master.backup.state.lock.forced.duration'], 'reason': ['alluxio.user.file.replication.durable should be an integer', 'alluxio.worker.tieredstore.level1.dirs.path should be a valid directory path', 'alluxio.underfs.cleanup.interval should be a valid time format', 'alluxio.network.connection.health.check.timeout should be a valid time format', 'alluxio.master.backup.state.lock.forced.duration should be a valid time format']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.durable', 'alluxio.worker.tieredstore.level1.dirs.path', 'alluxio.underfs.cleanup.interval', 'alluxio.network.connection.health.check.timeout', 'alluxio.master.backup.state.lock.forced.duration'], 'reason': ['alluxio.user.file.replication.durable should be an integer', 'alluxio.worker.tieredstore.level1.dirs.path should be a valid directory path', 'alluxio.underfs.cleanup.interval should be a valid time format', 'alluxio.network.connection.health.check.timeout should be a valid time format', 'alluxio.master.backup.state.lock.forced.duration should be a valid time format']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.durable', 'alluxio.worker.tieredstore.level1.dirs.path', 'alluxio.underfs.cleanup.interval', 'alluxio.network.connection.health.check.timeout', 'alluxio.master.backup.state.lock.forced.duration'], 'reason': ['alluxio.user.file.replication.durable must be an integer', 'alluxio.worker.tieredstore.level1.dirs.path must be a valid directory path', 'alluxio.underfs.cleanup.interval must be a valid duration', 'alluxio.network.connection.health.check.timeout must be a valid duration', 'alluxio.master.backup.state.lock.forced.duration must be a valid duration']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.user.file.replication.durable	alluxio.worker.tieredstore.level1.dirs.path	alluxio.underfs.cleanup.interval	alluxio.network.connection.health.check.timeout	alluxio.master.backup.state.lock.forced.duration
+[Ciri] Reason for alluxio.user.file.replication.durable: alluxio.user.file.replication.durable must be an integer
+[Ciri] Reason for alluxio.worker.tieredstore.level1.dirs.path: alluxio.worker.tieredstore.level1.dirs.path must be a valid directory path
+[Ciri] Reason for alluxio.underfs.cleanup.interval: alluxio.underfs.cleanup.interval should be a valid time format
+[Ciri] Reason for alluxio.network.connection.health.check.timeout: alluxio.network.connection.health.check.timeout should be a valid time format
+[Ciri] Reason for alluxio.master.backup.state.lock.forced.duration: alluxio.master.backup.state.lock.forced.duration should be a valid time format

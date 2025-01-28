@@ -1,0 +1,18 @@
+Wrong shot number:
+[3, 4, 12]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.thrift.maxWorkerThreads'], 'reason': ["The property 'hbase.thrift.maxWorkerThreads' has the value '2000' which is greater than the recommended value of 1000."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.recovery.retry.maxsleeptime'], 'reason': ["The property 'zookeeper.recovery.retry.maxsleeptime' has the value '9.9' which does not follow the correct format."]}
+
+{'hasError': True, 'errParameter': ['hbase.thrift.maxWorkerThreads'], 'reason': ["The property 'hbase.thrift.maxWorkerThreads' has the value '2000' which is less than the recommended minimum value of '10000'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.thrift.maxWorkerThreads
+[Ciri] Reason for hbase.thrift.maxWorkerThreads: The property 'hbase.thrift.maxWorkerThreads' has the value '2000' which is less than the recommended minimum value of '10000'.

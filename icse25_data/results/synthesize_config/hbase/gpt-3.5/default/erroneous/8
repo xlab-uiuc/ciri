@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 4, 3]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.local.dir'], 'reason': ["The property 'hbase.local.dir' has the value 'dev/urandom///' which is not a valid directory path."]}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir'], 'reason': ["The property 'hbase.local.dir' has the value 'dev/urandom///' which does not follow the correct directory path format."]}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.wal.dir.perms'], 'reason': ["The property 'hbase.local.dir' has the value 'dev/urandom///' which does not specify a valid directory path.", "The property 'hbase.wal.dir.perms' has the value '1400' which is not a valid permission format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.local.dir
+[Ciri] Reason for hbase.local.dir: The property 'hbase.local.dir' has the value 'dev/urandom///' which is not a valid directory path.

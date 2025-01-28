@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.maxClientCnxns', 'hbase.hstore.flusher.count'], 'reason': ["The 'usage' example for 'hbase.zookeeper.property.maxClientCnxns' suggests setting the value to 1000, which contradicts the actual value of 600 set in the configuration. This could lead to confusion or misconfiguration.", "The 'usage' example for 'hbase.hstore.flusher.count' suggests a default value of 2, but the actual value set in the configuration is 1. This inconsistency might cause confusion regarding the default behavior."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.zookeeper.property.maxClientCnxns	hbase.hstore.flusher.count
+[Ciri] Reason for hbase.zookeeper.property.maxClientCnxns: The 'usage' example for 'hbase.zookeeper.property.maxClientCnxns' suggests setting the value to 1000, which contradicts the actual value of 600 set in the configuration. This could lead to confusion or misconfiguration.
+[Ciri] Reason for hbase.hstore.flusher.count: The 'usage' example for 'hbase.hstore.flusher.count' suggests a default value of 2, but the actual value set in the configuration is 1. This inconsistency might cause confusion regarding the default behavior.

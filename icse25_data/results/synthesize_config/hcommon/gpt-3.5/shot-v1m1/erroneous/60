@@ -1,0 +1,18 @@
+Wrong shot number:
+[3]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.file.buffer.size', 'io.bytes.per.checksum', 'fs.s3a.multipart.purge.age', 'ipc.client.idlethreshold', 'ipc.[port_number].weighted-cost.lockfree'], 'reason': ["The property 'io.file.buffer.size' has an additional 'usage' tag which is not a valid property element.", "The property 'io.bytes.per.checksum' has an additional 'usage' tag which is not a valid property element.", "The property 'fs.s3a.multipart.purge.age' is missing a 'usage' tag which is a required property element.", "The property 'ipc.client.idlethreshold' is missing a 'usage' tag which is a required property element.", "The property 'ipc.[port_number].weighted-cost.lockfree' is missing a 'usage' tag which is a required property element."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: io.file.buffer.size	io.bytes.per.checksum	fs.s3a.multipart.purge.age	ipc.client.idlethreshold	ipc.[port_number].weighted-cost.lockfree
+[Ciri] Reason for io.file.buffer.size: The property 'io.file.buffer.size' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for io.bytes.per.checksum: The property 'io.bytes.per.checksum' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for fs.s3a.multipart.purge.age: The property 'fs.s3a.multipart.purge.age' is missing a 'usage' tag which is a required property element.
+[Ciri] Reason for ipc.client.idlethreshold: The property 'ipc.client.idlethreshold' is missing a 'usage' tag which is a required property element.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The property 'ipc.[port_number].weighted-cost.lockfree' is missing a 'usage' tag which is a required property element.

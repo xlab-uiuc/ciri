@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.table.create', 'fs.s3a.select.enabled'], 'reason': ["The property 'fs.s3a.s3guard.ddb.table.create' is related to S3Guard, which is a feature for consistent metadata operations on S3. However, S3Guard is not supported in Hadoop 3.3.0 and was removed in Hadoop 3.2.0.", "The property 'fs.s3a.select.enabled' is related to S3 Select, which is a feature for querying data directly from S3 without downloading the entire object. However, S3 Select is not supported in Hadoop 3.3.0 and was removed in Hadoop 3.2.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.s3guard.ddb.table.create	fs.s3a.select.enabled
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.create: The property 'fs.s3a.s3guard.ddb.table.create' is related to S3Guard, which is a feature for consistent metadata operations on S3. However, S3Guard is not supported in Hadoop 3.3.0 and was removed in Hadoop 3.2.0.
+[Ciri] Reason for fs.s3a.select.enabled: The property 'fs.s3a.select.enabled' is related to S3 Select, which is a feature for querying data directly from S3 without downloading the entire object. However, S3 Select is not supported in Hadoop 3.3.0 and was removed in Hadoop 3.2.0.

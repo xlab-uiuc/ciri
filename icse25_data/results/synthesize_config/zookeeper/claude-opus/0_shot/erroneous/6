@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'secureClientPortAddress'], 'reason': ['dataLogDir should not contain backslashes. Use forward slashes instead, like /hadoop/s3a', 'secureClientPortAddress is not a valid configuration parameter in Zookeeper 3.7.0. Use secureClientPortAddress.x.x.x.x instead, where x.x.x.x is the IP address to bind to']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataLogDir	secureClientPortAddress
+[Ciri] Reason for dataLogDir: dataLogDir should not contain backslashes. Use forward slashes instead, like /hadoop/s3a
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress is not a valid configuration parameter in Zookeeper 3.7.0. Use secureClientPortAddress.x.x.x.x instead, where x.x.x.x is the IP address to bind to

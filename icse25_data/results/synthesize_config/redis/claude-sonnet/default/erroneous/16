@@ -1,0 +1,20 @@
+Wrong shot number:
+[3, 1, 5]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'maxmemory-clients', 'tls-protocols'], 'reason': ["The property 'cluster-announce-tls-port' has the value '1.1' which is not of the correct type Integer.", "The property 'maxmemory-clients' has the value '1g' which does not follow the correct byte format.", 'The property \'tls-protocols\' has the value \'"TLSv1.2 TLSv1.3"\' which should be a list instead of a quoted string.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'maxmemory-clients', 'tls-protocols'], 'reason': ["The property 'cluster-announce-tls-port' has the value '1.1' which is not a valid integer port number.", "The property 'maxmemory-clients' has the value '1g' which is not a valid value for the maxmemory setting. It should be a number followed by 'kb', 'mb' or 'gb'.", "The property 'tls-protocols' has an invalid value format. It should be a space-separated list of protocol names enclosed in double quotes."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'maxmemory-clients', 'tls-protocols'], 'reason': ["The property 'cluster-announce-tls-port' has the value '1.1' which is not a valid integer port number.", "The property 'maxmemory-clients' has the value '1g' which is not a valid value for the maxmemory setting. It should be a number followed by 'kb', 'mb' or 'gb'.", "The property 'tls-protocols' has an invalid value format. It should be a space-separated list of protocol names enclosed in double quotes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-tls-port	maxmemory-clients	tls-protocols
+[Ciri] Reason for cluster-announce-tls-port: The property 'cluster-announce-tls-port' has the value '1.1' which is not of the correct type Integer.
+[Ciri] Reason for maxmemory-clients: The property 'maxmemory-clients' has the value '1g' which is not a valid value for the maxmemory setting. It should be a number followed by 'kb', 'mb' or 'gb'.
+[Ciri] Reason for tls-protocols: The property 'tls-protocols' has an invalid value format. It should be a space-separated list of protocol names enclosed in double quotes.

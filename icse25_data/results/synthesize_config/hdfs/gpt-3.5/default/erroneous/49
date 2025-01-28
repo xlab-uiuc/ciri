@@ -1,0 +1,19 @@
+Wrong shot number:
+[15, 11, 1]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.storage.policy.satisfier.address'], 'reason': ["The property 'dfs.datanode.data.dir.perm' has the value '999' which is not a valid permission format.", "The property 'dfs.storage.policy.satisfier.address' has the value '0.0.0.0:0' which is not a valid IP address."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.storage.policy.satisfier.address'], 'reason': ["The property 'dfs.datanode.data.dir.perm' has an invalid value. Permissions should be in octal or symbolic format.", "The property 'dfs.storage.policy.satisfier.address' has the value '0.0.0.0:0' which is not a valid IP address and port combination."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm'], 'reason': ["The property 'dfs.datanode.data.dir.perm' has the value '999' which is not a valid permission format. It should be either octal or symbolic."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.data.dir.perm	dfs.storage.policy.satisfier.address
+[Ciri] Reason for dfs.datanode.data.dir.perm: The property 'dfs.datanode.data.dir.perm' has the value '999' which is not a valid permission format.
+[Ciri] Reason for dfs.storage.policy.satisfier.address: The property 'dfs.storage.policy.satisfier.address' has the value '0.0.0.0:0' which is not a valid IP address and port combination.

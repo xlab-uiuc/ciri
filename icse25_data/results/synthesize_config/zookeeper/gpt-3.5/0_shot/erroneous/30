@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'minSessionTimeout', 'quorum.auth.kerberos.servicePrincipal', 'sslQuorumReloadCertFiles', 'sslQuorum'], 'reason': ['secureClientPort value should be between 1024 and 65535.', 'minSessionTimeout value should be greater than 0.', 'quorum.auth.kerberos.servicePrincipal should have a valid Kerberos service principal name.', "sslQuorumReloadCertFiles should be set to 'false' for Zookeeper version 3.7.0.", "sslQuorum should be set to 'true' for SSL Quorum configuration."]}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'minSessionTimeout', 'quorum.auth.kerberos.servicePrincipal', 'sslQuorumReloadCertFiles', 'sslQuorum'], 'reason': ['secureClientPort value exceeds the maximum port number (65536).', 'minSessionTimeout value should be greater than 0.', "quorum.auth.kerberos.servicePrincipal should not contain special characters like '/'", "sslQuorumReloadCertFiles should be set to 'false' for Zookeeper version 3.7.0.", "sslQuorum should be set to 'true' for enabling SSL Quorum in Zookeeper version 3.7.0."]}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'minSessionTimeout', 'quorum.auth.kerberos.servicePrincipal', 'sslQuorumReloadCertFiles', 'syncLimit'], 'reason': ['secureClientPort value exceeds the maximum port number (65535).', 'minSessionTimeout value should be greater than 0.', "quorum.auth.kerberos.servicePrincipal should not contain '/' character.", "sslQuorumReloadCertFiles should be set to 'false' for Zookeeper version 3.7.0.", 'syncLimit value should be within the range of 2 to 60.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: secureClientPort	minSessionTimeout	quorum.auth.kerberos.servicePrincipal	sslQuorumReloadCertFiles	sslQuorum
+[Ciri] Reason for secureClientPort: secureClientPort value exceeds the maximum port number (65536).
+[Ciri] Reason for minSessionTimeout: minSessionTimeout value should be greater than 0.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal should have a valid Kerberos service principal name.
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles should be set to 'false' for Zookeeper version 3.7.0.
+[Ciri] Reason for sslQuorum: sslQuorum should be set to 'true' for SSL Quorum configuration.

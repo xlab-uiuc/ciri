@@ -1,0 +1,15 @@
+Wrong shot number:
+[12, 16, 5]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.swebhdfs.impl', 'ftp.bytes-per-checksum'], 'reason': ["The property 'fs.AbstractFileSystem.swebhdfs.impl' is incorrect or not applicable for Hadoop Common version 3.3.0. The correct property should be 'fs.AbstractFileSystem.webhdfs.impl' if intending to set the implementation class for the WebHDFS file system.", "The property 'ftp.bytes-per-checksum' does not exist in Hadoop Common configuration. It seems to be incorrectly specified or relevant to a different context not covered by Hadoop's configuration parameters."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.AbstractFileSystem.swebhdfs.impl	ftp.bytes-per-checksum
+[Ciri] Reason for fs.AbstractFileSystem.swebhdfs.impl: The property 'fs.AbstractFileSystem.swebhdfs.impl' is incorrect or not applicable for Hadoop Common version 3.3.0. The correct property should be 'fs.AbstractFileSystem.webhdfs.impl' if intending to set the implementation class for the WebHDFS file system.
+[Ciri] Reason for ftp.bytes-per-checksum: The property 'ftp.bytes-per-checksum' does not exist in Hadoop Common configuration. It seems to be incorrectly specified or relevant to a different context not covered by Hadoop's configuration parameters.

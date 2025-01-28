@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['scram_iterations', 'debug_print_parse', 'archive_timeout'], 'reason': ["The parameter 'scram_iterations' is not a valid PostgreSQL configuration parameter in version 13.0. It is related to the SCRAM authentication method, which was introduced in PostgreSQL 14.", "The parameter 'debug_print_parse' is not a valid PostgreSQL configuration parameter in version 13.0. It is used for debugging purposes and is not a standard configuration parameter.", "The parameter 'archive_timeout' is not a valid PostgreSQL configuration parameter in version 13.0. It is related to the WAL archiving process, which is used for point-in-time recovery and streaming replication."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: scram_iterations	debug_print_parse	archive_timeout
+[Ciri] Reason for scram_iterations: The parameter 'scram_iterations' is not a valid PostgreSQL configuration parameter in version 13.0. It is related to the SCRAM authentication method, which was introduced in PostgreSQL 14.
+[Ciri] Reason for debug_print_parse: The parameter 'debug_print_parse' is not a valid PostgreSQL configuration parameter in version 13.0. It is used for debugging purposes and is not a standard configuration parameter.
+[Ciri] Reason for archive_timeout: The parameter 'archive_timeout' is not a valid PostgreSQL configuration parameter in version 13.0. It is related to the WAL archiving process, which is used for point-in-time recovery and streaming replication.

@@ -1,0 +1,16 @@
+Wrong shot number:
+[11, 1, 12]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.msginterval', 'hbase.zookeeper.peerport', 'hbase.zookeeper.property.clientPort'], 'reason': ["The 'usage' tag is not a valid configuration property and should be removed for hbase.regionserver.msginterval", "The 'usage' tag is not a valid configuration property and should be removed for hbase.zookeeper.peerport", 'The default client port for ZooKeeper is 2181, not 1090. The value should likely be changed to 2181.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.msginterval	hbase.zookeeper.peerport	hbase.zookeeper.property.clientPort
+[Ciri] Reason for hbase.regionserver.msginterval: The 'usage' tag is not a valid configuration property and should be removed for hbase.regionserver.msginterval
+[Ciri] Reason for hbase.zookeeper.peerport: The 'usage' tag is not a valid configuration property and should be removed for hbase.zookeeper.peerport
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The default client port for ZooKeeper is 2181, not 1090. The value should likely be changed to 2181.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[5, 8, 6]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['huge_pages', 'autovacuum_work_mem'], 'reason': ["The property 'huge_pages' has the value 'try' which is not a valid value. Valid values are 'on' or 'off'.", "The property 'autovacuum_work_mem' has a negative value which is not allowed. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['huge_pages', 'autovacuum_work_mem'], 'reason': ["The property 'huge_pages' has the value 'try' which is not a valid value. Valid values are 'on' or 'off'.", "The property 'autovacuum_work_mem' has a negative value which is not allowed. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['huge_pages', 'autovacuum_work_mem'], 'reason': ["The property 'huge_pages' has an invalid value 'try'. It should be either 'on' or 'off'.", "The property 'autovacuum_work_mem' has a negative value which is not allowed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: huge_pages	autovacuum_work_mem
+[Ciri] Reason for huge_pages: The property 'huge_pages' has the value 'try' which is not a valid value. Valid values are 'on' or 'off'.
+[Ciri] Reason for autovacuum_work_mem: The property 'autovacuum_work_mem' has a negative value which is not allowed.

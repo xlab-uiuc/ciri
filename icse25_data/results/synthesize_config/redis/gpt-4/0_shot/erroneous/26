@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['set-proc-title', 'hash-max-listpack-entries'], 'reason': ["'set-proc-title' is not a valid configuration directive.", "'hash-max-listpack-entries' does not exist in Redis 7.0.0; it should be 'hash-max-ziplist-entries' for Redis versions prior to 7.0 or 'hash-max-listpack-size' for Redis 7.0 and above."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: set-proc-title	hash-max-listpack-entries
+[Ciri] Reason for set-proc-title: 'set-proc-title' is not a valid configuration directive.
+[Ciri] Reason for hash-max-listpack-entries: 'hash-max-listpack-entries' does not exist in Redis 7.0.0; it should be 'hash-max-ziplist-entries' for Redis versions prior to 7.0 or 'hash-max-listpack-size' for Redis 7.0 and above.

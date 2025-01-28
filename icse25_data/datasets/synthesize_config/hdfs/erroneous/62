@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.client.block.write.replace-datanode-on-failure.enable</name>
+  <value>false</value>
+  <description>
+    If there is a datanode/network failure in the write pipeline,
+    DFSClient will try to remove the failed datanode from the pipeline
+    and then continue writing with the remaining datanodes. As a result,
+    the number of datanodes in the pipeline is decreased.  The feature is
+    to add new datanodes to the pipeline.
+
+    This is a site-wide property to enable/disable the feature.
+
+    When the cluster size is extremely small, e.g. 3 nodes or less, cluster
+    administrators may want to set the policy to NEVER in the default
+    configuration file or disable this feature.  Otherwise, users may
+    experience an unusually high rate of pipeline failures since it is
+    impossible to find new datanodes for replacement.
+
+    See also dfs.client.block.write.replace-datanode-on-failure.policy
+  </description>
+</property>
+
+<property>
+  <name>dfs.image.compression.codec</name>
+  <value>org.apache.hadoop.io.compress.DefaultCodec</value>
+  <description>If the dfs image is compressed, how should they be compressed?
+               This has to be a codec defined in io.compression.codecs.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.scan.period.hours</name>
+  <value>504</value>
+  <description>
+        If this is positive, the DataNode will not scan any
+        individual block more than once in the specified scan period.
+        If this is negative, the block scanner is disabled.
+        If this is set to zero, then the default value of 504 hours
+        or 3 weeks is used. Prior versions of HDFS incorrectly documented
+        that setting this key to zero will disable the block scanner.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.file-block-storage-locations.timeout.millis</name>
+  <value>1000</value>
+  <description>
+    Timeout (in milliseconds) for the parallel RPCs made in DistributedFileSystem#getFileBlockStorageLocations().
+  </description>
+</property>
+
+<property>
+  <name>dfs.webhdfs.socket.read-timeout</name>
+  <value>60s</value>
+  <description>
+    Socket timeout for reading data from WebHDFS servers. This
+    prevents a WebHDFS client from hanging if the server stops sending
+    data. Value is followed by a unit specifier: ns, us, ms, s, m, h,
+    d for nanoseconds, microseconds, milliseconds, seconds, minutes,
+    hours, days respectively. Values should provide units,
+    but milliseconds are assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.content-summary.sleep-microsec</name>
+  <value>1000</value>
+  <description>
+    The length of time in microseconds to put the thread to sleep, between reaquiring the locks
+    in content summary computation.
+  </description>
+</property>
+
+<property>
+  <name>dfs.disk.balancer.max.disk.errors</name>
+  <value>1</value>
+    <description>
+      During a block move from a source to destination disk, we might
+      encounter various errors. This defines how many errors we can tolerate
+      before we declare a move between 2 disks (or a step) has failed.
+    </description>
+</property>
+
+<property>
+  <name>dfs.encrypt.data.overwrite.downstream.derived.qop</name>
+  <value>false</value>
+    <description>
+      A boolean specifies whether DN should overwrite the downstream
+      QOP in a write pipeline. This is used in the case where client
+      talks to first DN with a QOP, but inter-DN communication needs to be
+      using a different QOP. If set to false, the default behaviour is that
+      inter-DN communication will use the same QOP as client-DN connection.
+    </description>
+</property>
+
+</configuration>

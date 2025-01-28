@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'repl-backlog-size', 'hash-max-listpack-entries', 'tls-session-cache-size'], 'reason': ['bind-source-addr should be set to a valid IP address, not 0.0.0', 'repl-backlog-size should be at least 16mb for Redis 7.0.0 and above', 'hash-max-listpack-entries is deprecated in Redis 7.0, use list-max-listpack-size instead', 'tls-session-cache-size is not a valid configuration parameter in Redis 7.0.0']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: bind-source-addr	repl-backlog-size	hash-max-listpack-entries	tls-session-cache-size
+[Ciri] Reason for bind-source-addr: bind-source-addr should be set to a valid IP address, not 0.0.0
+[Ciri] Reason for repl-backlog-size: repl-backlog-size should be at least 16mb for Redis 7.0.0 and above
+[Ciri] Reason for hash-max-listpack-entries: hash-max-listpack-entries is deprecated in Redis 7.0, use list-max-listpack-size instead
+[Ciri] Reason for tls-session-cache-size: tls-session-cache-size is not a valid configuration parameter in Redis 7.0.0

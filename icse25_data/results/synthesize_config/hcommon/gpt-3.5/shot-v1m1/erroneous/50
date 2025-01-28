@@ -1,0 +1,15 @@
+Wrong shot number:
+[11]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.har.impl', 'ipc.[port_number].scheduler.impl'], 'reason': ["The property 'fs.AbstractFileSystem.har.impl' is using 'org.apache.hadoop.fs.HarFs' which is not a valid implementation for HCommon version 3.3.0.", "The property 'ipc.[port_number].scheduler.impl' is using 'org.apache.hadoop.ipc.DefaultRpcScheduler' which is not recommended for use with FairCallQueue in HCommon version 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.AbstractFileSystem.har.impl	ipc.[port_number].scheduler.impl
+[Ciri] Reason for fs.AbstractFileSystem.har.impl: The property 'fs.AbstractFileSystem.har.impl' is using 'org.apache.hadoop.fs.HarFs' which is not a valid implementation for HCommon version 3.3.0.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The property 'ipc.[port_number].scheduler.impl' is using 'org.apache.hadoop.ipc.DefaultRpcScheduler' which is not recommended for use with FairCallQueue in HCommon version 3.3.0.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.flusher.count', 'hbase.hstore.compaction.max'], 'reason': ['The property \'hbase.hstore.flusher.count\' has a usage example that is incorrect. The correct method to retrieve the value is \'conf.getInt("hbase.hstore.flusher.count", defaultValue);\'.', 'The property \'hbase.hstore.compaction.max\' has a usage example that is incorrect. The correct method to set the value is \'configuration.setInt("hbase.hstore.compaction.max", value);\'.']}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.flusher.count', 'hbase.hstore.compaction.max', 'hbase.regionserver.storefile.refresh.period'], 'reason': ['The usage for property \'hbase.hstore.flusher.count\' is incorrect. It should be \'conf.getInt("hbase.hstore.flusher.count", defaultValue);\'', 'The usage for property \'hbase.hstore.compaction.max\' is incorrect. It should be \'configuration.getInt("hbase.hstore.compaction.max", defaultValue);\'', "The value for property 'hbase.regionserver.storefile.refresh.period' should not be set to '0'. It is recommended to set a non-zero value to enable store file refreshing for secondary regions."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.flusher.count', 'hbase.hstore.compaction.max'], 'reason': ["The property 'hbase.hstore.flusher.count' has a usage example that is not valid for HBase version 2.2.7.", "The property 'hbase.hstore.compaction.max' has a usage example that is not valid for HBase version 2.2.7."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.hstore.flusher.count	hbase.hstore.compaction.max
+[Ciri] Reason for hbase.hstore.flusher.count: The property 'hbase.hstore.flusher.count' has a usage example that is incorrect. The correct method to retrieve the value is 'conf.getInt("hbase.hstore.flusher.count", defaultValue);'.
+[Ciri] Reason for hbase.hstore.compaction.max: The property 'hbase.hstore.compaction.max' has a usage example that is incorrect. The correct method to set the value is 'configuration.setInt("hbase.hstore.compaction.max", value);'.

@@ -1,0 +1,12 @@
+Correct shot number:
+[2, 4, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['TEST_NON_SERIALIZED_APPS', 'SIGNING_BACKEND'], 'reason': ['TEST_NON_SERIALIZED_APPS should be a list of app names that should not be serialized in the test database. It is missing or incorrectly defined.', 'SIGNING_BACKEND is not a valid configuration parameter in Django 4.0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: TEST_NON_SERIALIZED_APPS	SIGNING_BACKEND
+[Ciri] Reason for TEST_NON_SERIALIZED_APPS: TEST_NON_SERIALIZED_APPS should be a list of app names that should not be serialized in the test database. It is missing or incorrectly defined.
+[Ciri] Reason for SIGNING_BACKEND: SIGNING_BACKEND is not a valid configuration parameter in Django 4.0.

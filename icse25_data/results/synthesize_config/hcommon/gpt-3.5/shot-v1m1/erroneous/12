@@ -1,0 +1,16 @@
+Wrong shot number:
+[6]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'ipc.[port_number].scheduler.impl', 'hadoop.security.random.device.file.path'], 'reason': ["The property 'io.seqfile.local.dir' has an additional 'usage' tag which is not a valid property tag.", "The property 'ipc.[port_number].scheduler.impl' contains '[port_number]' placeholder which is not a valid parameter format.", "The property 'hadoop.security.random.device.file.path' has an extra forward slash at the end which is not a valid file path format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: io.seqfile.local.dir	ipc.[port_number].scheduler.impl	hadoop.security.random.device.file.path
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' has an additional 'usage' tag which is not a valid property tag.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The property 'ipc.[port_number].scheduler.impl' contains '[port_number]' placeholder which is not a valid parameter format.
+[Ciri] Reason for hadoop.security.random.device.file.path: The property 'hadoop.security.random.device.file.path' has an extra forward slash at the end which is not a valid file path format.

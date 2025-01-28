@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 2, 3]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATIC_ROOT', 'CSRF_COOKIE_HTTPONLY'], 'reason': ["The property 'STATIC_ROOT' has the value '//var/www/example.com/static' which does not follow the correct path format.", "The property 'CSRF_COOKIE_HTTPONLY' should be set to True for better security."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: STATIC_ROOT	CSRF_COOKIE_HTTPONLY
+[Ciri] Reason for STATIC_ROOT: The property 'STATIC_ROOT' has the value '//var/www/example.com/static' which does not follow the correct path format.
+[Ciri] Reason for CSRF_COOKIE_HTTPONLY: The property 'CSRF_COOKIE_HTTPONLY' should be set to True for better security.

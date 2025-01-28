@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.nodemanager.container-executor.exit-code-file.timeout-ms</name>
+  <value>2000</value>
+    <description>
+      How long the container executor should wait for the exit code file to
+      appear after a reacquired container has exited.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.local-cache.max-files-per-directory</name>
+  <value>16384</value>
+    <description>It limits the maximum number of files which will be localized
+      in a single local directory. If the limit is reached then sub-directories
+      will be created and new files will be localized in them. If it is set to
+      a value less than or equal to 36 [which are sub-directories (0-9 and then
+      a-z)] then NodeManager will fail to start. For example; [for public
+      cache] if this is configured with a value of 40 ( 4 files +
+      36 sub-directories) and the local-dir is "/tmp/local-dir1" then it will
+      allow 4 files to be created directly inside "/tmp/local-dir1/filecache".
+      For files that are localized further it will create a sub-directory "0"
+      inside "/tmp/local-dir1/filecache" and will localize files inside it
+      until it becomes full. If a file is removed from a sub-directory that
+      is marked full, then that sub-directory will be used back again to
+      localize files.
+   </description>
+</property>
+
+<property>
+  <name>yarn.log-aggregation-status.time-out.ms</name>
+  <value>300000</value>
+    <description>
+    How long for ResourceManager to wait for NodeManager to report its
+    log aggregation status. If waiting time of which the log aggregation
+    status is reported from NodeManager exceeds the configured value, RM
+    will report log aggregation status for this NodeManager as TIME_OUT.
+    This configuration will be used in NodeManager as well to decide
+    whether and when to delete the cached log aggregation status.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.vmem-pmem-ratio</name>
+  <value>4.2</value>
+    <description>Ratio between virtual memory to physical memory when
+    setting memory limits for containers. Container allocations are
+    expressed in terms of physical memory, and virtual memory usage
+    is allowed to exceed this allocation by this ratio.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.health-checker.script.timeout-ms</name>
+  <value>1200000</value>
+    <description>Script time out period.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds.min</name>
+  <value>3600</value>
+    <description>Defines the positive minimum hard limit for
+    "yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds".
+    If this configuration has been set less than its default value (3600)
+    the NodeManager may raise a warning.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.webapp.rest-csrf.custom-header</name>
+  <value>X-XSRF-Header</value>
+    <description>
+      Optional parameter that indicates the custom header name to use for CSRF
+      protection.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.numa-awareness.enabled</name>
+  <value>false</value>
+    <description>
+    Whether to enable the NUMA awareness for containers in Node Manager.
+    </description>
+</property>
+
+</configuration>

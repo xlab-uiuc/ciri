@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.logcleaner.ttl</name>
+  <value>300000</value>
+    <description>How long a WAL remain in the archive ({hbase.rootdir}/oldWALs) directory,
+    after which it will be cleaned by a Master thread. The value is in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.handler.count</name>
+  <value>15</value>
+    <description>Count of RPC Listener instances spun up on RegionServers.
+      Same property is used by the Master for count of master handlers.
+      Too many handlers can be counter-productive. Make it a multiple of
+      CPU count. If mostly read-only, handlers count close to cpu count
+      does well. Start with twice the CPU count and tune from there.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.callqueue.handler.factor</name>
+  <value>0.1</value>
+    <description>Factor to determine the number of call queues.
+      A value of 0 means a single queue shared between all the handlers.
+      A value of 1 means that each handler has its own queue.</description>
+</property>
+
+<property>
+  <name>hbase.master.fileSplitTimeout</name>
+  <value>1200000</value>
+    <description>Splitting a region, how long to wait on the file-splitting
+      step before aborting the attempt. Default: 600000. This setting used
+      to be known as hbase.regionserver.fileSplitTimeout in hbase-1.x.
+      Split is now run master-side hence the rename (If a
+      'hbase.master.fileSplitTimeout' setting found, will use it to
+      prime the current 'hbase.master.fileSplitTimeout'
+      Configuration.</description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.enabled</name>
+  <value>true</value>
+    <description>Enables or disables coprocessor loading. If 'false'
+    (disabled), any other coprocessor related configuration will be ignored.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest.threads.min</name>
+  <value>1</value>
+    <description>The minimum number of threads of the REST server thread pool.
+        The thread pool always has at least these number of threads so
+        the REST server is ready to serve incoming requests.</description>
+</property>
+
+    <property>
+    <name>hbase.bucketcache.ioengine</name>
+    <value>heap</value>
+    <description>Where to store the contents of the bucketcache. One of: offheap,
+    file, files, mmap or pmem. If a file or files, set it to file(s):PATH_TO_FILE.
+    mmap means the content will be in an mmaped file. Use mmap:PATH_TO_FILE. 'pmem'
+    is bucket cache over a file on the persistent memory device.
+    Use pmem:PATH_TO_FILE.
+    See http://hbase.apache.org/book.html#offheap.blockcache for more information.
+    </description>
+  </property>
+
+  <property>
+    <name>hbase.bucketcache.size</name>
+    <value>0</value>
+    <description>A float that EITHER represents a percentage of total heap memory
+    size to give to the cache (if &lt; 1.0) OR, it is the total capacity in
+    megabytes of BucketCache. Default: 0.0</description>
+  </property>
+
+</configuration>

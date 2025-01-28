@@ -1,0 +1,37 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.configuration', 'alluxio.underfs.hdfs.configuration'], 'reason': ['The property alluxio.underfs.hdfs.configuration is set twice in the configuration file.', 'The property alluxio.underfs.hdfs.configuration is set twice in the configuration file.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.folder', 'alluxio.master.journal.folder2', 'alluxio.worker.data.server.domain.socket.as.uuid'], 'reason': ['alluxio.master.journal.folder is not a valid folder path', 'alluxio.master.journal.folder2 is not a valid folder path', 'alluxio.worker.data.server.domain.socket.as.uuid is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.configuration', 'alluxio.master.file.access.time.journal.flush.interval', 'alluxio.zookeeper.auth.enabled'], 'reason': ['alluxio.underfs.hdfs.configuration should be a valid file path', 'alluxio.master.file.access.time.journal.flush.interval should be a valid time duration', 'alluxio.zookeeper.auth.enabled should be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.configuration'], 'reason': ['The property alluxio.underfs.hdfs.configuration is not a valid configuration property for alluxio version 2.5.0.']}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.configuration', 'alluxio.underfs.hdfs.configuration'], 'reason': ['The property alluxio.underfs.hdfs.configuration is set twice in the configuration file.', 'The property alluxio.underfs.hdfs.configuration is set twice in the configuration file.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.enabled', 'alluxio.worker.data.server.domain.socket.as.uuid'], 'reason': ["Property 'alluxio.user.short.circuit.enabled' is not a valid property.", "Property 'alluxio.worker.data.server.domain.socket.as.uuid' is not a valid property."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.enabled', 'alluxio.underfs.hdfs.configuration'], 'reason': ['alluxio.user.short.circuit.enabled should be a boolean. Found: false', 'alluxio.underfs.hdfs.configuration should be a valid file path. Found: /valid/file2']}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.configuration'], 'reason': ['The value of alluxio.underfs.hdfs.configuration is not a valid file path.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.enabled', 'alluxio.worker.data.server.domain.socket.as.uuid'], 'reason': ['alluxio.user.short.circuit.enabled should be a boolean value.', 'alluxio.worker.data.server.domain.socket.as.uuid should be a boolean value.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.configuration', 'alluxio.underfs.hdfs.configuration'], 'reason': ['The value of alluxio.underfs.hdfs.configuration is not a valid file path.', 'The value of alluxio.underfs.hdfs.configuration is not a valid file path.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.enabled', 'alluxio.worker.data.server.domain.socket.as.uuid'], 'reason': ['alluxio.user.short.circuit.enabled is not a valid property', 'alluxio.worker.data.server.domain.socket.as.uuid is not a valid property']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.enabled', 'alluxio.worker.data.server.domain.socket.as.uuid'], 'reason': ['alluxio.user.short.circuit.enabled is not a boolean property', 'alluxio.worker.data.server.domain.socket.as.uuid is not a boolean property']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.short.circuit.enabled	alluxio.worker.data.server.domain.socket.as.uuid
+[Ciri] Reason for alluxio.user.short.circuit.enabled: alluxio.user.short.circuit.enabled is not a valid property
+[Ciri] Reason for alluxio.worker.data.server.domain.socket.as.uuid: alluxio.worker.data.server.domain.socket.as.uuid is not a boolean property

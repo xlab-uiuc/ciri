@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['oom-score-adj', 'aof-timestamp-enabled', 'jemalloc-bg-thread'], 'reason': ["The 'oom-score-adj' parameter is not a valid Redis configuration directive.", "The 'aof-timestamp-enabled' parameter does not exist in Redis 7.0.0.", "The 'jemalloc-bg-thread' parameter is not directly configurable in the Redis configuration file."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: oom-score-adj	aof-timestamp-enabled	jemalloc-bg-thread
+[Ciri] Reason for oom-score-adj: The 'oom-score-adj' parameter is not a valid Redis configuration directive.
+[Ciri] Reason for aof-timestamp-enabled: The 'aof-timestamp-enabled' parameter does not exist in Redis 7.0.0.
+[Ciri] Reason for jemalloc-bg-thread: The 'jemalloc-bg-thread' parameter is not directly configurable in the Redis configuration file.

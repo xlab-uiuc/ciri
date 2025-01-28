@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.azure.sas.expiry.period', 'fs.azure.authorization.caching.enable', 'ipc.server.listen.queue.size', 'hadoop.http.authentication.kerberos.keytab', 'hadoop.http.cross-origin.allowed-headers', 'ha.failover-controller.cli-check.rpc-timeout.ms'], 'reason': ['io.seqfile.local.dir is not a valid file path', 'fs.azure.sas.expiry.period is not a valid time format', 'fs.azure.authorization.caching.enable is not a valid boolean', 'ipc.server.listen.queue.size is not a valid integer', 'hadoop.http.authentication.kerberos.keytab is not a valid file path', 'hadoop.http.cross-origin.allowed-headers is not a valid string', 'ha.failover-controller.cli-check.rpc-timeout.ms is not a valid integer']}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.azure.sas.expiry.period', 'fs.azure.authorization.caching.enable', 'ipc.server.listen.queue.size', 'hadoop.http.authentication.kerberos.keytab', 'hadoop.http.cross-origin.allowed-headers', 'ha.failover-controller.cli-check.rpc-timeout.ms'], 'reason': ['io.seqfile.local.dir is not a valid directory.', 'fs.azure.sas.expiry.period is not a valid time.', 'fs.azure.authorization.caching.enable is not a valid boolean value.', 'ipc.server.listen.queue.size is not a valid integer.', 'hadoop.http.authentication.kerberos.keytab is not a valid file.', 'hadoop.http.cross-origin.allowed-headers is not a valid comma-separated list of headers.', 'ha.failover-controller.cli-check.rpc-timeout.ms is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.azure.sas.expiry.period', 'fs.azure.authorization.caching.enable', 'ipc.server.listen.queue.size', 'hadoop.http.authentication.kerberos.keytab', 'hadoop.http.cross-origin.allowed-headers', 'ha.failover-controller.cli-check.rpc-timeout.ms'], 'reason': ['io.seqfile.local.dir is not a valid directory', 'fs.azure.sas.expiry.period is not a valid time period', 'fs.azure.authorization.caching.enable is not a valid boolean', 'ipc.server.listen.queue.size is not a valid integer', 'hadoop.http.authentication.kerberos.keytab is not a valid file', 'hadoop.http.cross-origin.allowed-headers is not a valid comma-separated list', 'ha.failover-controller.cli-check.rpc-timeout.ms is not a valid integer']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: io.seqfile.local.dir	fs.azure.sas.expiry.period	fs.azure.authorization.caching.enable	ipc.server.listen.queue.size	hadoop.http.authentication.kerberos.keytab	hadoop.http.cross-origin.allowed-headers	ha.failover-controller.cli-check.rpc-timeout.ms
+[Ciri] Reason for io.seqfile.local.dir: io.seqfile.local.dir is not a valid directory.
+[Ciri] Reason for fs.azure.sas.expiry.period: fs.azure.sas.expiry.period is not a valid time period
+[Ciri] Reason for fs.azure.authorization.caching.enable: fs.azure.authorization.caching.enable is not a valid boolean value.
+[Ciri] Reason for ipc.server.listen.queue.size: ipc.server.listen.queue.size is not a valid integer
+[Ciri] Reason for hadoop.http.authentication.kerberos.keytab: hadoop.http.authentication.kerberos.keytab is not a valid file
+[Ciri] Reason for hadoop.http.cross-origin.allowed-headers: hadoop.http.cross-origin.allowed-headers is not a valid comma-separated list of headers.
+[Ciri] Reason for ha.failover-controller.cli-check.rpc-timeout.ms: ha.failover-controller.cli-check.rpc-timeout.ms is not a valid integer.

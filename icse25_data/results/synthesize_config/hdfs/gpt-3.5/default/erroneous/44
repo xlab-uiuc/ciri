@@ -1,0 +1,19 @@
+Wrong shot number:
+[15, 8, 1]
+
+Correct shot number:
+[16]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-bind-host', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The property 'dfs.namenode.rpc-bind-host' has an invalid IP address format.", "The value of the property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' should be in milliseconds format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-bind-host', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The property 'dfs.namenode.rpc-bind-host' has the value '0.0.256.0' which is not a valid IP address format.", "The value of the property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' should be in milliseconds format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-bind-host', 'dfs.namenode.gc.time.monitor.sleep.interval.ms'], 'reason': ["The property 'dfs.namenode.rpc-bind-host' has an invalid IP address format.", "The value of the property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' should be in milliseconds format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.rpc-bind-host	dfs.namenode.gc.time.monitor.sleep.interval.ms
+[Ciri] Reason for dfs.namenode.rpc-bind-host: The property 'dfs.namenode.rpc-bind-host' has an invalid IP address format.
+[Ciri] Reason for dfs.namenode.gc.time.monitor.sleep.interval.ms: The value of the property 'dfs.namenode.gc.time.monitor.sleep.interval.ms' should be in milliseconds format.

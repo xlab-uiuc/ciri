@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'ipc.[port_number].backoff.enable'], 'reason': ["The value for fs.defaultFS is not a valid URI. It should be in the format 'scheme://authority/path'.", 'The parameter name ipc.[port_number].backoff.enable is not properly formatted. It should not contain square brackets.']}
+
+{'hasError': True, 'errParameter': ['fs.defaultFS'], 'reason': ['The value of fs.defaultFS is not a valid URI. It should follow the format scheme://authority/path.']}
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'ipc.[port_number].backoff.enable'], 'reason': ['The value of fs.defaultFS is not a valid URI format.', 'The parameter name ipc.[port_number].backoff.enable contains square brackets which are not allowed in property names.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.defaultFS	ipc.[port_number].backoff.enable
+[Ciri] Reason for fs.defaultFS: The value for fs.defaultFS is not a valid URI. It should be in the format 'scheme://authority/path'.
+[Ciri] Reason for ipc.[port_number].backoff.enable: The parameter name ipc.[port_number].backoff.enable is not properly formatted. It should not contain square brackets.

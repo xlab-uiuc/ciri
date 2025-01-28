@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout', 'standaloneEnabled', 'syncLimit', 'reconfigEnabled', 'localSessionsUpgradingEnabled', 'maxClientCnxns', 'quorum.auth.server.saslLoginContext'], 'reason': ['maxSessionTimeout should be a positive integer.', 'standaloneEnabled should be a boolean.', 'syncLimit should be a positive integer.', 'reconfigEnabled should be a boolean.', 'localSessionsUpgradingEnabled should be a boolean.', 'maxClientCnxns should be a positive integer.', 'quorum.auth.server.saslLoginContext should be a string.']}
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout', 'standaloneEnabled', 'syncLimit', 'reconfigEnabled', 'localSessionsUpgradingEnabled', 'maxClientCnxns', 'quorum.auth.server.saslLoginContext'], 'reason': ['maxSessionTimeout should be a positive integer or -1 to allow connections to have no limit on their session timeout.', 'standaloneEnabled should be set to true if you want to run ZooKeeper in standalone mode. Otherwise, set it to false.', 'syncLimit should be a positive integer.', 'reconfigEnabled should be set to true if you want to enable reconfiguration. Otherwise, set it to false.', 'localSessionsUpgradingEnabled should be set to true if you want to allow local sessions to be upgraded to global sessions. Otherwise, set it to false.', 'maxClientCnxns should be a positive integer.', 'quorum.auth.server.saslLoginContext should be set to the login context for the quorum server.']}
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout', 'syncLimit', 'reconfigEnabled', 'localSessionsUpgradingEnabled', 'maxClientCnxns', 'quorum.auth.server.saslLoginContext'], 'reason': ['maxSessionTimeout should be set to a positive integer', 'syncLimit should be set to a positive integer', 'reconfigEnabled should be set to true', 'localSessionsUpgradingEnabled should be set to true', 'maxClientCnxns should be set to a positive integer', 'quorum.auth.server.saslLoginContext should be set to a valid sasl login context']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: maxSessionTimeout	standaloneEnabled	syncLimit	reconfigEnabled	localSessionsUpgradingEnabled	maxClientCnxns	quorum.auth.server.saslLoginContext
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout should be a positive integer or -1 to allow connections to have no limit on their session timeout.
+[Ciri] Reason for standaloneEnabled: standaloneEnabled should be set to true if you want to run ZooKeeper in standalone mode. Otherwise, set it to false.
+[Ciri] Reason for syncLimit: syncLimit should be a positive integer.
+[Ciri] Reason for reconfigEnabled: reconfigEnabled should be a boolean.
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled should be set to true if you want to allow local sessions to be upgraded to global sessions. Otherwise, set it to false.
+[Ciri] Reason for maxClientCnxns: maxClientCnxns should be a positive integer.
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext should be set to the login context for the quorum server.

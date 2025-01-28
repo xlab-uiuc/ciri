@@ -1,0 +1,15 @@
+Correct shot number:
+[2, 1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'SESSION_SAVE_EVERY_REQUEST', 'CSRF_COOKIE_SAMESITE', 'DEFAULT_AUTO_FIELD', 'SECURE_HSTS_PRELOAD'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should be an integer value, not a boolean', 'SESSION_SAVE_EVERY_REQUEST should be a boolean value, not a string', "CSRF_COOKIE_SAMESITE should not be repeated, it's already defined earlier", 'DEFAULT_AUTO_FIELD should not be a string, it should be a reference to a model field', 'SECURE_HSTS_PRELOAD should be a boolean value, not a string']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	SESSION_SAVE_EVERY_REQUEST	CSRF_COOKIE_SAMESITE	DEFAULT_AUTO_FIELD	SECURE_HSTS_PRELOAD
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: CACHE_MIDDLEWARE_SECONDS should be an integer value, not a boolean
+[Ciri] Reason for SESSION_SAVE_EVERY_REQUEST: SESSION_SAVE_EVERY_REQUEST should be a boolean value, not a string
+[Ciri] Reason for CSRF_COOKIE_SAMESITE: CSRF_COOKIE_SAMESITE should not be repeated, it's already defined earlier
+[Ciri] Reason for DEFAULT_AUTO_FIELD: DEFAULT_AUTO_FIELD should not be a string, it should be a reference to a model field
+[Ciri] Reason for SECURE_HSTS_PRELOAD: SECURE_HSTS_PRELOAD should be a boolean value, not a string

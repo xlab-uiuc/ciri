@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.dns.nameserver', 'dfs.namenode.read.considerLoad', 'dfs.client.write.exclude.nodes.cache.expiry.interval.millis', 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec', 'dfs.ha.tail-edits.period'], 'reason': ["The 'usage' tag is not a valid tag for property elements.", "The 'usage' tag is not a valid tag for property elements.", "The 'usage' tag is not a valid tag for property elements.", "The 'usage' tag is not a valid tag for property elements.", "The value for 'dfs.ha.tail-edits.period' should be in milliseconds format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.read.considerLoad', 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec', 'dfs.ha.tail-edits.period'], 'reason': ["Property 'dfs.namenode.read.considerLoad' is missing a usage description.", "Property 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec' has a negative value which may cause issues.", "Property 'dfs.ha.tail-edits.period' value should include a time unit suffix (e.g., '60s' for seconds)."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.dns.nameserver', 'dfs.namenode.read.considerLoad', 'dfs.client.write.exclude.nodes.cache.expiry.interval.millis', 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec', 'dfs.ha.tail-edits.period'], 'reason': ["The property 'dfs.datanode.dns.nameserver' has an extra ')' in the usage value.", "The property 'dfs.namenode.read.considerLoad' has a typo in the description ('sort block locations' should be 'sorts block locations').", "The property 'dfs.client.write.exclude.nodes.cache.expiry.interval.millis' has a typo in the description ('restarts' should be 'restart').", "The property 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec' has a typo in the description ('throttling' should be 'throttled').", "The property 'dfs.ha.tail-edits.period' has an incorrect value format ('60s' should be '60')."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: dfs.datanode.dns.nameserver	dfs.namenode.read.considerLoad	dfs.client.write.exclude.nodes.cache.expiry.interval.millis	dfs.image.transfer-bootstrap-standby.bandwidthPerSec	dfs.ha.tail-edits.period
+[Ciri] Reason for dfs.datanode.dns.nameserver: The 'usage' tag is not a valid tag for property elements.
+[Ciri] Reason for dfs.namenode.read.considerLoad: The property 'dfs.namenode.read.considerLoad' has a typo in the description ('sort block locations' should be 'sorts block locations').
+[Ciri] Reason for dfs.client.write.exclude.nodes.cache.expiry.interval.millis: The property 'dfs.client.write.exclude.nodes.cache.expiry.interval.millis' has a typo in the description ('restarts' should be 'restart').
+[Ciri] Reason for dfs.image.transfer-bootstrap-standby.bandwidthPerSec: The 'usage' tag is not a valid tag for property elements.
+[Ciri] Reason for dfs.ha.tail-edits.period: The value for 'dfs.ha.tail-edits.period' should be in milliseconds format.

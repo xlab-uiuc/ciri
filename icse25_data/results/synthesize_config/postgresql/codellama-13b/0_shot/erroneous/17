@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_threshold', 'enable_hashjoin', 'krb_caseins_users', 'log_lock_waits', 'recovery_init_sync_method', 'intervalstyle', 'huge_pages', 'plan_cache_mode'], 'reason': ['autovacuum_vacuum_threshold must be between 0 and 1000000000.', 'enable_hashjoin must be on or off.', 'krb_caseins_users must be on or off.', 'log_lock_waits must be on or off.', 'recovery_init_sync_method must be one of the following: fsync, fsync_writethrough, or open_sync.', 'intervalstyle must be one of the following: postgres, postgres_verbose, sql_standard.', 'huge_pages must be one of the following: on, off, try.', 'plan_cache_mode must be one of the following: auto, force_custom_plan, force_generic_plan.']}
+
+{'hasError': True, 'errParameter': ['huge_pages', 'recovery_init_sync_method', 'intervalstyle', 'enable_hashjoin', 'krb_caseins_users', 'plan_cache_mode', 'autovacuum_vacuum_threshold', 'log_lock_waits'], 'reason': ['huge_pages is not a valid parameter', 'recovery_init_sync_method is not a valid parameter', 'intervalstyle is not a valid parameter', 'enable_hashjoin is not a valid parameter', 'krb_caseins_users is not a valid parameter', 'plan_cache_mode is not a valid parameter', 'autovacuum_vacuum_threshold is not a valid parameter', 'log_lock_waits is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['huge_pages', 'recovery_init_sync_method', 'intervalstyle', 'enable_hashjoin', 'krb_caseins_users', 'plan_cache_mode', 'autovacuum_vacuum_threshold', 'log_lock_waits'], 'reason': ['huge_pages is not a valid parameter', 'recovery_init_sync_method is not a valid parameter', 'intervalstyle is not a valid parameter', 'enable_hashjoin is not a valid parameter', 'krb_caseins_users is not a valid parameter', 'plan_cache_mode is not a valid parameter', 'autovacuum_vacuum_threshold is not a valid parameter', 'log_lock_waits is not a valid parameter']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: huge_pages	recovery_init_sync_method	intervalstyle	enable_hashjoin	krb_caseins_users	plan_cache_mode	autovacuum_vacuum_threshold	log_lock_waits
+[Ciri] Reason for huge_pages: huge_pages is not a valid parameter
+[Ciri] Reason for recovery_init_sync_method: recovery_init_sync_method is not a valid parameter
+[Ciri] Reason for intervalstyle: intervalstyle is not a valid parameter
+[Ciri] Reason for enable_hashjoin: enable_hashjoin is not a valid parameter
+[Ciri] Reason for krb_caseins_users: krb_caseins_users is not a valid parameter
+[Ciri] Reason for plan_cache_mode: plan_cache_mode is not a valid parameter
+[Ciri] Reason for autovacuum_vacuum_threshold: autovacuum_vacuum_threshold is not a valid parameter
+[Ciri] Reason for log_lock_waits: log_lock_waits is not a valid parameter

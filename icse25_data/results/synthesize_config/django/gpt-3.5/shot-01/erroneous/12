@@ -1,0 +1,18 @@
+Wrong shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'DEFAULT_EXCEPTION_REPORTER', 'STATICFILES_FINDERS', 'PASSWORD_RESET_TIMEOUT', 'DATE_FORMAT', 'USE_X_FORWARDED_PORT', 'SESSION_EXPIRE_AT_BROWSER_CLOSE', 'CSRF_COOKIE_AGE'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has a negative value which is not valid.", "The property 'DEFAULT_EXCEPTION_REPORTER' has a string value but it should be a callable.", "The property 'STATICFILES_FINDERS' should be a list of finders, not a string.", "The property 'PASSWORD_RESET_TIMEOUT' has an invalid expression for timeout duration.", "The property 'DATE_FORMAT' has an invalid date format string.", "The property 'USE_X_FORWARDED_PORT' should be a boolean value.", "The property 'SESSION_EXPIRE_AT_BROWSER_CLOSE' should be a boolean value.", "The property 'CSRF_COOKIE_AGE' has an invalid expression for age duration."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	DEFAULT_EXCEPTION_REPORTER	STATICFILES_FINDERS	PASSWORD_RESET_TIMEOUT	DATE_FORMAT	USE_X_FORWARDED_PORT	SESSION_EXPIRE_AT_BROWSER_CLOSE	CSRF_COOKIE_AGE
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: The property 'CACHE_MIDDLEWARE_SECONDS' has a negative value which is not valid.
+[Ciri] Reason for DEFAULT_EXCEPTION_REPORTER: The property 'DEFAULT_EXCEPTION_REPORTER' has a string value but it should be a callable.
+[Ciri] Reason for STATICFILES_FINDERS: The property 'STATICFILES_FINDERS' should be a list of finders, not a string.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: The property 'PASSWORD_RESET_TIMEOUT' has an invalid expression for timeout duration.
+[Ciri] Reason for DATE_FORMAT: The property 'DATE_FORMAT' has an invalid date format string.
+[Ciri] Reason for USE_X_FORWARDED_PORT: The property 'USE_X_FORWARDED_PORT' should be a boolean value.
+[Ciri] Reason for SESSION_EXPIRE_AT_BROWSER_CLOSE: The property 'SESSION_EXPIRE_AT_BROWSER_CLOSE' should be a boolean value.
+[Ciri] Reason for CSRF_COOKIE_AGE: The property 'CSRF_COOKIE_AGE' has an invalid expression for age duration.

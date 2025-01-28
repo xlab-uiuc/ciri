@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['huge_pages', 'recovery_target_inclusive', 'debug_print_rewritten'], 'reason': ['huge_pages is not a valid parameter in PostgreSQL 13. The correct parameter is huge_page_size.', 'recovery_target_inclusive is not a valid parameter in PostgreSQL 13. It was removed in version 12.', 'debug_print_rewritten is not a valid parameter in PostgreSQL 13. The correct parameter is debug_print_parse.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: huge_pages	recovery_target_inclusive	debug_print_rewritten
+[Ciri] Reason for huge_pages: huge_pages is not a valid parameter in PostgreSQL 13. The correct parameter is huge_page_size.
+[Ciri] Reason for recovery_target_inclusive: recovery_target_inclusive is not a valid parameter in PostgreSQL 13. It was removed in version 12.
+[Ciri] Reason for debug_print_rewritten: debug_print_rewritten is not a valid parameter in PostgreSQL 13. The correct parameter is debug_print_parse.

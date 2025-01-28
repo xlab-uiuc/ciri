@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl'], 'reason': ["quorum.auth.kerberos.servicePrincipal: The property 'quorum.auth.kerberos.servicePrincipal' is not a valid property for version 3.7.0", "quorum.auth.serverRequireSasl: The property 'quorum.auth.serverRequireSasl' is not a valid property for version 3.7.0", "quorum.auth.enableSasl: The property 'quorum.auth.enableSasl' is not a valid property for version 3.7.0"]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.kerberos.servicePrincipal is not a valid property for zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for zookeeper version 3.7.0', 'quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.serverRequireSasl', 'quorum.auth.enableSasl'], 'reason': ["quorum.auth.kerberos.servicePrincipal must start with 'zookeeper/'", 'quorum.auth.serverRequireSasl must be true or false', 'quorum.auth.enableSasl must be true or false']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quorum.auth.kerberos.servicePrincipal	quorum.auth.serverRequireSasl	quorum.auth.enableSasl
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal: The property 'quorum.auth.kerberos.servicePrincipal' is not a valid property for version 3.7.0
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl: The property 'quorum.auth.serverRequireSasl' is not a valid property for version 3.7.0
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl: The property 'quorum.auth.enableSasl' is not a valid property for version 3.7.0

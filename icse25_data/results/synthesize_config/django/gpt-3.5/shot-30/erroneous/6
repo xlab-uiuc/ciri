@@ -1,0 +1,12 @@
+Correct shot number:
+[4, 5, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_PATH', 'WSGI_APPLICATION'], 'reason': ["SESSION_COOKIE_PATH should not start or end with a slash. It should be set to '/django/cookie' instead of '/\\django/cookie'.", 'WSGI_APPLICATION should be set to the WSGI application entry point for the project. It should not be set to None.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: SESSION_COOKIE_PATH	WSGI_APPLICATION
+[Ciri] Reason for SESSION_COOKIE_PATH: SESSION_COOKIE_PATH should not start or end with a slash. It should be set to '/django/cookie' instead of '/\django/cookie'.
+[Ciri] Reason for WSGI_APPLICATION: WSGI_APPLICATION should be set to the WSGI application entry point for the project. It should not be set to None.

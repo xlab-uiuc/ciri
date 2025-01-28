@@ -1,0 +1,20 @@
+Wrong shot number:
+[8, 13, 16]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'fs.s3a.socket.send.buffer', 'hadoop.user.group.static.mapping.overrides'], 'reason': ["The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' property instead.", "The property 'fs.s3a.socket.send.buffer' has the value '-1' which is not a valid buffer size.", "The property 'hadoop.user.group.static.mapping.overrides' has an invalid format. The mapping should be in the format 'user1=group1,group2;user2=;user3=group2;'"]}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'fs.s3a.socket.send.buffer', 'hadoop.registry.zk.root'], 'reason': ["The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' property instead.", "The property 'fs.s3a.socket.send.buffer' has the value '-1' which is not a valid buffer size.", "The property 'hadoop.registry.zk.root' has the value '/valid/file2' which is not a valid Zookeeper root node path."]}
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'fs.s3a.socket.send.buffer', 'hadoop.user.group.static.mapping.overrides'], 'reason': ["The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' property instead.", "The property 'fs.s3a.socket.send.buffer' has the value '-1' which is not a valid buffer size.", "The property 'hadoop.user.group.static.mapping.overrides' has an invalid format. The mapping should be in the format 'user1=group1,group2;user2=;user3=group2;'"]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.default.name	fs.s3a.socket.send.buffer	hadoop.user.group.static.mapping.overrides
+[Ciri] Reason for fs.default.name: The property 'fs.default.name' is deprecated. Use 'fs.defaultFS' property instead.
+[Ciri] Reason for fs.s3a.socket.send.buffer: The property 'fs.s3a.socket.send.buffer' has the value '-1' which is not a valid buffer size.
+[Ciri] Reason for hadoop.user.group.static.mapping.overrides: The property 'hadoop.user.group.static.mapping.overrides' has an invalid format. The mapping should be in the format 'user1=group1,group2;user2=;user3=group2;'

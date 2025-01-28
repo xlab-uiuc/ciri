@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.servicerpc-address</name>
+  <value>127.0.0.1</value>
+  <description>
+    RPC address for HDFS Services communication. BackupNode, Datanodes and all other services should be
+    connecting to this address if it is configured. In the case of HA/Federation where multiple namenodes exist,
+    the name service id is added to the name e.g. dfs.namenode.servicerpc-address.ns1
+    dfs.namenode.rpc-address.EXAMPLENAMESERVICE
+    The value of this property will take the form of nn-host1:rpc-port.
+    If the value of this property is unset the value of dfs.namenode.rpc-address will be used as the default.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.invalidate.work.pct.per.iteration</name>
+  <value>0.32f</value>
+  <description>
+    *Note*: Advanced property. Change with caution.
+    This determines the percentage amount of block
+    invalidations (deletes) to do over a single DN heartbeat
+    deletion command. The final deletion count is determined by applying this
+    percentage to the number of live nodes in the system.
+    The resultant number is the number of blocks from the deletion list
+    chosen for proper invalidation over a single heartbeat of a single DN.
+    Value should be a positive, non-zero percentage in float notation (X.Yf),
+    with 1.0f meaning 100%.
+  </description>
+</property>
+
+<property>
+  <name>nfs.mountd.port</name>
+  <value>-100.22</value>
+  <description>
+      Specify the port number used by Hadoop mount daemon.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.outliers.report.interval</name>
+  <value>30m</value>
+  <description>
+    This setting controls how frequently DataNodes will report their peer
+    latencies to the NameNode via heartbeats.  This setting supports
+    multiple time unit suffixes as described in dfs.heartbeat.interval.
+    If no suffix is specified then milliseconds is assumed.
+
+    It is ignored if dfs.datanode.peer.stats.enabled is false.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.mmap.enabled</name>
+  <value>false</value>
+  <description>
+    If this is set to false, the client won't attempt to perform memory-mapped reads.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.cache.revocation.polling.ms</name>
+  <value>500</value>
+  <description>How often the DataNode should poll to see if the clients have
+    stopped using a replica that the DataNode wants to uncache.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.get-blocks.max-qps</name>
+  <value>10</value>
+  <description>
+    The maximum number of getBlocks RPCs data movement utilities can make to
+    a NameNode per second. Values less than or equal to 0 disable throttling.
+    This affects anything that uses a NameNodeConnector, i.e., the Balancer,
+    Mover, and StoragePolicySatisfier.
+  </description>
+</property>
+
+<property>
+  <name>httpfs.buffer.size</name>
+  <value>8192</value>
+    <description>
+      The size buffer to be used when creating or opening httpfs filesystem IO stream.
+    </description>
+</property>
+
+</configuration>

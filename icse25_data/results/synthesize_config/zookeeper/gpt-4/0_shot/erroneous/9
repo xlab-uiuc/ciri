@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'autopurge.purgeInterval'], 'reason': ["The 'secureClientPortAddress' value should be in the format of 'IP:port' or just ':port' if you want to bind to all interfaces. '0.0.0' is not a valid setting.", "The 'autopurge.purgeInterval' should be a positive integer. A value of '-1' means that autopurge is disabled, which might not be an error per se, but it's important to ensure this is the intended configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPortAddress	autopurge.purgeInterval
+[Ciri] Reason for secureClientPortAddress: The 'secureClientPortAddress' value should be in the format of 'IP:port' or just ':port' if you want to bind to all interfaces. '0.0.0' is not a valid setting.
+[Ciri] Reason for autopurge.purgeInterval: The 'autopurge.purgeInterval' should be a positive integer. A value of '-1' means that autopurge is disabled, which might not be an error per se, but it's important to ensure this is the intended configuration.

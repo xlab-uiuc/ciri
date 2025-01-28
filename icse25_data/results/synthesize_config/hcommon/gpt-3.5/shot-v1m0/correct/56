@@ -1,0 +1,13 @@
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.ftp.transfer.mode', 'ipc.client.bind.wildcard.addr'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has an invalid value '30s'. The value should be specified in milliseconds.", "The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, or COMPRESSED_TRANSFER_MODE.", "The property 'ipc.client.bind.wildcard.addr' has an invalid value 'false'. It should be a boolean value (true or false)."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	fs.ftp.transfer.mode	ipc.client.bind.wildcard.addr
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has an invalid value '30s'. The value should be specified in milliseconds.
+[Ciri] Reason for fs.ftp.transfer.mode: The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, or COMPRESSED_TRANSFER_MODE.
+[Ciri] Reason for ipc.client.bind.wildcard.addr: The property 'ipc.client.bind.wildcard.addr' has an invalid value 'false'. It should be a boolean value (true or false).

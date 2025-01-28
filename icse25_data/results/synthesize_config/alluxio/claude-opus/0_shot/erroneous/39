@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.job.master.finished.job.purge.count', 'alluxio.worker.management.tier.promote.quota.percent', 'alluxio.worker.management.backoff.strategy'], 'reason': ['Invalid IP address. IP address octets must be between 0 and 255.', 'Value cannot be negative. It should be a non-negative integer.', 'Percentage cannot exceed 100.', 'Invalid value. Valid options are ANY, BOUNDED, or EXPONENTIAL.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.proxy.web.bind.host	alluxio.job.master.finished.job.purge.count	alluxio.worker.management.tier.promote.quota.percent	alluxio.worker.management.backoff.strategy
+[Ciri] Reason for alluxio.proxy.web.bind.host: Invalid IP address. IP address octets must be between 0 and 255.
+[Ciri] Reason for alluxio.job.master.finished.job.purge.count: Value cannot be negative. It should be a non-negative integer.
+[Ciri] Reason for alluxio.worker.management.tier.promote.quota.percent: Percentage cannot exceed 100.
+[Ciri] Reason for alluxio.worker.management.backoff.strategy: Invalid value. Valid options are ANY, BOUNDED, or EXPONENTIAL.

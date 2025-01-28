@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'ipc.[port_number].scheduler.impl', 'hadoop.security.random.device.file.path'], 'reason': ["The 'usage' tag is not a valid tag for property 'io.seqfile.local.dir'.", "The property 'ipc.[port_number].scheduler.impl' contains placeholder '[port_number]' which should be replaced with an actual port number.", "The value for 'hadoop.security.random.device.file.path' is not a valid file path format."]}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'ipc.[port_number].scheduler.impl', 'hadoop.security.random.device.file.path'], 'reason': ["The 'usage' tag is not a valid parameter for property 'io.seqfile.local.dir'.", "The property 'ipc.[port_number].scheduler.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number.", "The value for 'hadoop.security.random.device.file.path' is not a valid file path."]}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'ipc.[port_number].scheduler.impl', 'hadoop.security.random.device.file.path'], 'reason': ["The 'usage' tag is not a valid tag for property 'io.seqfile.local.dir'.", "The property 'ipc.[port_number].scheduler.impl' contains invalid characters '[port_number]' in the name.", "The value for 'hadoop.security.random.device.file.path' contains extra slashes '///'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: io.seqfile.local.dir	ipc.[port_number].scheduler.impl	hadoop.security.random.device.file.path
+[Ciri] Reason for io.seqfile.local.dir: The 'usage' tag is not a valid parameter for property 'io.seqfile.local.dir'.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The property 'ipc.[port_number].scheduler.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number.
+[Ciri] Reason for hadoop.security.random.device.file.path: The value for 'hadoop.security.random.device.file.path' is not a valid file path format.

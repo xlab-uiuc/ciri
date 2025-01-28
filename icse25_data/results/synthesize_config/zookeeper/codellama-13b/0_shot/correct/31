@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'reconfigEnabled', 'portUnification', 'electionAlg', 'maxClientCnxns', 'syncEnabled', 'sslQuorumReloadCertFiles'], 'reason': ['standaloneEnabled is not a valid property for zookeeper version 3.7.0', 'reconfigEnabled is not a valid property for zookeeper version 3.7.0', 'portUnification is not a valid property for zookeeper version 3.7.0', 'electionAlg is not a valid property for zookeeper version 3.7.0', 'maxClientCnxns is not a valid property for zookeeper version 3.7.0', 'syncEnabled is not a valid property for zookeeper version 3.7.0', 'sslQuorumReloadCertFiles is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'reconfigEnabled'], 'reason': ['standaloneEnabled and reconfigEnabled cannot both be true.', 'reconfigEnabled cannot be true if standaloneEnabled is true.']}
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'reconfigEnabled', 'portUnification', 'electionAlg', 'maxClientCnxns', 'syncEnabled', 'sslQuorumReloadCertFiles'], 'reason': ['standaloneEnabled is not a valid property for zookeeper version 3.7.0', 'reconfigEnabled is not a valid property for zookeeper version 3.7.0', 'portUnification is not a valid property for zookeeper version 3.7.0', 'electionAlg is not a valid property for zookeeper version 3.7.0', 'maxClientCnxns is not a valid property for zookeeper version 3.7.0', 'syncEnabled is not a valid property for zookeeper version 3.7.0', 'sslQuorumReloadCertFiles is not a valid property for zookeeper version 3.7.0']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: standaloneEnabled	reconfigEnabled	portUnification	electionAlg	maxClientCnxns	syncEnabled	sslQuorumReloadCertFiles
+[Ciri] Reason for standaloneEnabled: standaloneEnabled is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for reconfigEnabled: reconfigEnabled is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for portUnification: portUnification is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for electionAlg: electionAlg is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for maxClientCnxns: maxClientCnxns is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for syncEnabled: syncEnabled is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles is not a valid property for zookeeper version 3.7.0

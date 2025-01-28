@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind', 'timeout', 'tls-ca-cert-file', 'oom-score-adj', 'replica-read-only', 'set-proc-title'], 'reason': ['bind is not a valid parameter', 'timeout is not a valid parameter', 'tls-ca-cert-file is not a valid parameter', 'oom-score-adj is not a valid parameter', 'replica-read-only is not a valid parameter', 'set-proc-title is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['bind', 'unixsocket', 'unixsocketperm', 'timeout', 'oom-score-adj', 'set-proc-title'], 'reason': ["The parameter 'bind' is not supported in redis version 7.0.0", "The parameter 'unixsocket' is not supported in redis version 7.0.0", "The parameter 'unixsocketperm' is not supported in redis version 7.0.0", "The parameter 'timeout' is not supported in redis version 7.0.0", "The parameter 'oom-score-adj' is not supported in redis version 7.0.0", "The parameter 'set-proc-title' is not supported in redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['bind', 'port', 'timeout', 'tls-ca-cert-file', 'oom-score-adj', 'replica-read-only', 'set-proc-title'], 'reason': ["Invalid value for 'bind'", "Invalid value for 'port'", "Invalid value for 'timeout'", "Invalid value for 'tls-ca-cert-file'", "Invalid value for 'oom-score-adj'", "Invalid value for 'replica-read-only'", "Invalid value for 'set-proc-title'"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'tls-ca-cert-file', 'oom-score-adj', 'replica-read-only', 'set-proc-title'], 'reason': ['port must be a number', 'timeout must be a number', 'tls-ca-cert-file must be a string', 'oom-score-adj must be a number', 'replica-read-only must be a boolean', 'set-proc-title must be a boolean']}
+
+{'hasError': True, 'errParameter': ['bind', 'unixsocket'], 'reason': ["The parameter 'bind' is not a valid parameter for redis version 7.0.0", "The parameter 'unixsocket' is not a valid parameter for redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['bind', 'unixsocket'], 'reason': ["The parameter 'bind' is not supported in redis version 7.0.0. Please refer to the redis documentation for more information."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: bind	unixsocket
+[Ciri] Reason for bind: The parameter 'bind' is not supported in redis version 7.0.0. Please refer to the redis documentation for more information.
+[Ciri] Reason for unixsocket: The parameter 'unixsocket' is not a valid parameter for redis version 7.0.0

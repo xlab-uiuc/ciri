@@ -1,0 +1,16 @@
+Correct shot number:
+[9, 14, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'fs.azure.secure.mode', 'ipc.[port_number].scheduler.priority.levels', 'file.blocksize', 'adl.feature.ownerandgroup.enableupn', 'hadoop.zk.retry-interval-ms'], 'reason': ['Invalid value for property fs.s3a.proxy.port. Port number should be between 1 and 65535.', 'The property fs.azure.secure.mode has an additional usage tag that is not standard in the configuration file.', 'The property ipc.[port_number].scheduler.priority.levels should not contain square brackets in the name.', 'The property file.blocksize has a valid value but might need to be reviewed based on specific requirements.', 'The property adl.feature.ownerandgroup.enableupn has an additional indentation in the description.', 'The property hadoop.zk.retry-interval-ms has a valid value but might need to be reviewed based on specific requirements.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.s3a.proxy.port	fs.azure.secure.mode	ipc.[port_number].scheduler.priority.levels	file.blocksize	adl.feature.ownerandgroup.enableupn	hadoop.zk.retry-interval-ms
+[Ciri] Reason for fs.s3a.proxy.port: Invalid value for property fs.s3a.proxy.port. Port number should be between 1 and 65535.
+[Ciri] Reason for fs.azure.secure.mode: The property fs.azure.secure.mode has an additional usage tag that is not standard in the configuration file.
+[Ciri] Reason for ipc.[port_number].scheduler.priority.levels: The property ipc.[port_number].scheduler.priority.levels should not contain square brackets in the name.
+[Ciri] Reason for file.blocksize: The property file.blocksize has a valid value but might need to be reviewed based on specific requirements.
+[Ciri] Reason for adl.feature.ownerandgroup.enableupn: The property adl.feature.ownerandgroup.enableupn has an additional indentation in the description.
+[Ciri] Reason for hadoop.zk.retry-interval-ms: The property hadoop.zk.retry-interval-ms has a valid value but might need to be reviewed based on specific requirements.

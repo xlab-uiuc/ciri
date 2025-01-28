@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-expire', 'replica-announce-ip'], 'reason': ['lazyfree-lazy-expire is not a valid configuration parameter in Redis 7.0.0', 'replica-announce-ip should be replaced with replica-announce-ip-addr in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'replica-announce-ip'], 'reason': ['repl-diskless-load is not a valid configuration parameter in Redis version 7.0.0', 'replica-announce-ip should be replaced with replica-announce-ip-addr in Redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['repl-diskless-load', 'replica-announce-ip'], 'reason': ["Invalid parameter 'repl-diskless-load'. It should be 'repl-diskless' in Redis 7.0.0.", "Invalid parameter 'replica-announce-ip'. It should be 'replica-announce-ip' in Redis 7.0.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: repl-diskless-load	replica-announce-ip
+[Ciri] Reason for repl-diskless-load: repl-diskless-load is not a valid configuration parameter in Redis version 7.0.0
+[Ciri] Reason for replica-announce-ip: Invalid parameter 'replica-announce-ip'. It should be 'replica-announce-ip' in Redis 7.0.0.

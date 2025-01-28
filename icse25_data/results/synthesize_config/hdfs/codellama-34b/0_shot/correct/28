@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.ha.tail-edits.rolledits.timeout', 'dfs.client.mmap.cache.size', 'dfs.namenode.fs-limits.max-xattrs-per-inode', 'dfs.balancer.max-no-move-interval', 'dfs.client.socketcache.capacity', 'dfs.storage.policy.satisfier.datanode.cache.refresh.interval.ms', 'dfs.provided.aliasmap.text.read.file', 'dfs.qjm.operations.timeout'], 'reason': ['dfs.ha.tail-edits.rolledits.timeout: The value is not in the range of [1, 3600]', 'dfs.client.mmap.cache.size: The value is not in the range of [0, 1024]', 'dfs.namenode.fs-limits.max-xattrs-per-inode: The value is not in the range of [0, 64]', 'dfs.balancer.max-no-move-interval: The value is not in the range of [0, 60000]', 'dfs.client.socketcache.capacity: The value is not in the range of [0, 128]', 'dfs.storage.policy.satisfier.datanode.cache.refresh.interval.ms: The value is not in the range of [0, 300000]', 'dfs.provided.aliasmap.text.read.file: The value is not a valid URI', 'dfs.qjm.operations.timeout: The value is not in the range of [1000, 600000]']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.ha.tail-edits.rolledits.timeout	dfs.client.mmap.cache.size	dfs.namenode.fs-limits.max-xattrs-per-inode	dfs.balancer.max-no-move-interval	dfs.client.socketcache.capacity	dfs.storage.policy.satisfier.datanode.cache.refresh.interval.ms	dfs.provided.aliasmap.text.read.file	dfs.qjm.operations.timeout
+[Ciri] Reason for dfs.ha.tail-edits.rolledits.timeout: dfs.ha.tail-edits.rolledits.timeout: The value is not in the range of [1, 3600]
+[Ciri] Reason for dfs.client.mmap.cache.size: dfs.client.mmap.cache.size: The value is not in the range of [0, 1024]
+[Ciri] Reason for dfs.namenode.fs-limits.max-xattrs-per-inode: dfs.namenode.fs-limits.max-xattrs-per-inode: The value is not in the range of [0, 64]
+[Ciri] Reason for dfs.balancer.max-no-move-interval: dfs.balancer.max-no-move-interval: The value is not in the range of [0, 60000]
+[Ciri] Reason for dfs.client.socketcache.capacity: dfs.client.socketcache.capacity: The value is not in the range of [0, 128]
+[Ciri] Reason for dfs.storage.policy.satisfier.datanode.cache.refresh.interval.ms: dfs.storage.policy.satisfier.datanode.cache.refresh.interval.ms: The value is not in the range of [0, 300000]
+[Ciri] Reason for dfs.provided.aliasmap.text.read.file: dfs.provided.aliasmap.text.read.file: The value is not a valid URI
+[Ciri] Reason for dfs.qjm.operations.timeout: dfs.qjm.operations.timeout: The value is not in the range of [1000, 600000]

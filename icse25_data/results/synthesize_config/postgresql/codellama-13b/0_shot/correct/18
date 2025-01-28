@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['huge_pages', 'recovery_target_inclusive', 'lc_monetary', 'track_activities', 'max_worker_processes', 'jit_optimize_above_cost', 'log_timezone'], 'reason': ['huge_pages is not a valid parameter', 'recovery_target_inclusive is not a valid parameter', 'lc_monetary is not a valid parameter', 'track_activities is not a valid parameter', 'max_worker_processes is not a valid parameter', 'jit_optimize_above_cost is not a valid parameter', 'log_timezone is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['max_worker_processes', 'jit_optimize_above_cost'], 'reason': ['max_worker_processes should be an integer between 1 and 1024', 'jit_optimize_above_cost should be an integer between 0 and 1000000000']}
+
+{'hasError': True, 'errParameter': ['huge_pages', 'recovery_target_inclusive', 'lc_monetary', 'track_activities', 'max_worker_processes', 'jit_optimize_above_cost', 'log_timezone'], 'reason': ['huge_pages is not a valid parameter for PostgreSQL 13.0.', 'recovery_target_inclusive is not a valid parameter for PostgreSQL 13.0.', 'lc_monetary is not a valid parameter for PostgreSQL 13.0.', 'track_activities is not a valid parameter for PostgreSQL 13.0.', 'max_worker_processes is not a valid parameter for PostgreSQL 13.0.', 'jit_optimize_above_cost is not a valid parameter for PostgreSQL 13.0.', 'log_timezone is not a valid parameter for PostgreSQL 13.0.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: huge_pages	recovery_target_inclusive	lc_monetary	track_activities	max_worker_processes	jit_optimize_above_cost	log_timezone
+[Ciri] Reason for huge_pages: huge_pages is not a valid parameter for PostgreSQL 13.0.
+[Ciri] Reason for recovery_target_inclusive: recovery_target_inclusive is not a valid parameter
+[Ciri] Reason for lc_monetary: lc_monetary is not a valid parameter
+[Ciri] Reason for track_activities: track_activities is not a valid parameter
+[Ciri] Reason for max_worker_processes: max_worker_processes is not a valid parameter
+[Ciri] Reason for jit_optimize_above_cost: jit_optimize_above_cost is not a valid parameter
+[Ciri] Reason for log_timezone: log_timezone is not a valid parameter

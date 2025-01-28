@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.scan.ratio', 'hbase.status.multicast.address.port'], 'reason': ["The value for 'hbase.ipc.server.callqueue.scan.ratio' should be between 0.0 and 1.0, but it is set to -1.", "The value for 'hbase.status.multicast.address.port' should be a positive integer, but it is set to -100."]}
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.scan.ratio', 'hbase.status.multicast.address.port'], 'reason': ['The value for hbase.ipc.server.callqueue.scan.ratio should be between 0 and 1, or -1 to indicate not splitting the read call queues.', 'The value for hbase.status.multicast.address.port should be a positive integer representing the port number to use for status publication by multicast.']}
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.scan.ratio', 'hbase.hregion.max.filesize', 'hbase.thrift.maxQueuedRequests', 'hbase.status.multicast.address.port'], 'reason': ["The value for 'hbase.ipc.server.callqueue.scan.ratio' should be between 0 and 1, but it is set to -1.", "The 'hbase.hregion.max.filesize' value should be in bytes, but it is set to 10737418240.", "The 'hbase.thrift.maxQueuedRequests' value should be an integer, but it is set to 2000.", "The 'hbase.status.multicast.address.port' value should be a valid port number, but it is set to -100."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.ipc.server.callqueue.scan.ratio	hbase.status.multicast.address.port
+[Ciri] Reason for hbase.ipc.server.callqueue.scan.ratio: The value for hbase.ipc.server.callqueue.scan.ratio should be between 0 and 1, or -1 to indicate not splitting the read call queues.
+[Ciri] Reason for hbase.status.multicast.address.port: The value for hbase.status.multicast.address.port should be a positive integer representing the port number to use for status publication by multicast.

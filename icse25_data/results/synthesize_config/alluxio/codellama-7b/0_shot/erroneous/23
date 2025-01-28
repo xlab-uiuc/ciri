@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.threads.max', 'alluxio.user.block.size.bytes.default'], 'reason': ['alluxio.underfs.s3.threads.max should be an integer, but it is set to 80', 'alluxio.user.block.size.bytes.default should be an integer, but it is set to 128MB']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.writetype.default'], 'reason': ['The property alluxio.user.file.writetype.default is not supported in Alluxio 2.5.0. Please remove this property from the configuration file.']}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.threads.max', 'alluxio.user.block.size.bytes.default'], 'reason': ['alluxio.underfs.s3.threads.max must be an integer', 'alluxio.user.block.size.bytes.default must be an integer']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.s3.threads.max	alluxio.user.block.size.bytes.default
+[Ciri] Reason for alluxio.underfs.s3.threads.max: alluxio.underfs.s3.threads.max must be an integer
+[Ciri] Reason for alluxio.user.block.size.bytes.default: alluxio.user.block.size.bytes.default must be an integer

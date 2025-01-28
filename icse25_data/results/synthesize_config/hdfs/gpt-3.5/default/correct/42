@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 15, 5]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.storage.dir.perm'], 'reason': ["The property 'dfs.namenode.storage.dir.perm' should have permissions in octal format or symbolic format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.storage.dir.perm'], 'reason': ["The value of the property 'dfs.namenode.storage.dir.perm' should be in octal format for specifying permissions."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.storage.dir.perm'], 'reason': ["The property 'dfs.namenode.storage.dir.perm' has the value '1400' which is not a valid permission format. Permissions should be specified in octal format (e.g., 0755) or symbolic format (e.g., drwxr-xr-x)."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.storage.dir.perm
+[Ciri] Reason for dfs.namenode.storage.dir.perm: The property 'dfs.namenode.storage.dir.perm' should have permissions in octal format or symbolic format.

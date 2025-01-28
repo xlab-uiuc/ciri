@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.ssl.channel.mode', 'hadoop.ssl.enabled'], 'reason': ["The value 'default_jsse' for the property 'fs.s3a.ssl.channel.mode' is not recommended for Hadoop 3.3.0. The recommended value is 'openssl' or 'default'.", "The property 'hadoop.ssl.enabled' is deprecated in Hadoop 3.3.0 and should not be used. Instead, use 'dfs.http.policy' and 'yarn.http.policy' properties."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.ssl.channel.mode	hadoop.ssl.enabled
+[Ciri] Reason for fs.s3a.ssl.channel.mode: The value 'default_jsse' for the property 'fs.s3a.ssl.channel.mode' is not recommended for Hadoop 3.3.0. The recommended value is 'openssl' or 'default'.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' is deprecated in Hadoop 3.3.0 and should not be used. Instead, use 'dfs.http.policy' and 'yarn.http.policy' properties.

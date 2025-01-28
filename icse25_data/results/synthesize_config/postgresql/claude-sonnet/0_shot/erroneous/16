@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_wal_senders', 'dynamic_shared_memory_type', 'enable_nestloop'], 'reason': ['max_wal_senders cannot be a negative value. It should be a positive integer or 0 to disable it.', 'dynamic_shared_memory_type is not a valid parameter in PostgreSQL 13.0. This parameter was removed in PostgreSQL 9.4.', 'enable_nestloop is not a valid parameter in PostgreSQL 13.0. Nested loop joins are always enabled and cannot be disabled.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max_wal_senders	dynamic_shared_memory_type	enable_nestloop
+[Ciri] Reason for max_wal_senders: max_wal_senders cannot be a negative value. It should be a positive integer or 0 to disable it.
+[Ciri] Reason for dynamic_shared_memory_type: dynamic_shared_memory_type is not a valid parameter in PostgreSQL 13.0. This parameter was removed in PostgreSQL 9.4.
+[Ciri] Reason for enable_nestloop: enable_nestloop is not a valid parameter in PostgreSQL 13.0. Nested loop joins are always enabled and cannot be disabled.

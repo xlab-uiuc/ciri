@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'maxSessionTimeout', 'syncLimit', 'maxClientCnxns', 'initLimit', 'peerType', 'secureClientPort'], 'reason': ['dataDir and dataLogDir must be absolute paths', 'clientPort must be an integer', 'maxSessionTimeout must be an integer', 'syncLimit must be an integer', 'maxClientCnxns must be an integer', 'initLimit must be an integer', "peerType must be either 'participant' or 'observer'", 'secureClientPort must be an integer']}
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout', 'minSessionTimeout', 'syncLimit', 'maxClientCnxns', 'initLimit'], 'reason': ['maxSessionTimeout and minSessionTimeout should be set to 0', 'syncLimit should be set to 2', 'maxClientCnxns should be set to 0', 'initLimit should be set to 5']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'maxSessionTimeout', 'syncLimit', 'maxClientCnxns', 'initLimit', 'peerType', 'secureClientPort'], 'reason': ['dataDir and dataLogDir must be absolute paths', 'clientPort must be a valid port number', 'maxSessionTimeout must be a valid number of milliseconds', 'syncLimit must be a valid number of milliseconds', 'maxClientCnxns must be a valid number of connections', 'initLimit must be a valid number of milliseconds', "peerType must be either 'participant' or 'observer'", 'secureClientPort must be a valid port number']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: dataDir	dataLogDir	clientPort	maxSessionTimeout	syncLimit	maxClientCnxns	initLimit	peerType	secureClientPort
+[Ciri] Reason for dataDir: dataDir and dataLogDir must be absolute paths
+[Ciri] Reason for dataLogDir: clientPort must be an integer
+[Ciri] Reason for clientPort: maxSessionTimeout must be an integer
+[Ciri] Reason for maxSessionTimeout: syncLimit must be a valid number of milliseconds
+[Ciri] Reason for syncLimit: maxClientCnxns must be an integer
+[Ciri] Reason for maxClientCnxns: initLimit must be a valid number of milliseconds
+[Ciri] Reason for initLimit: peerType must be either 'participant' or 'observer'
+[Ciri] Reason for peerType: secureClientPort must be a valid port number
+[Ciri] Reason for secureClientPort: 

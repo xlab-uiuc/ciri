@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['checkpoint_flush_after', 'gss_accept_delegation'], 'reason': ["The parameter 'checkpoint_flush_after' is not available in PostgreSQL 13. It was removed in version 9.6.", "The parameter 'gss_accept_delegation' is not a valid PostgreSQL configuration parameter. It may be related to Kerberos authentication, but is not a core PostgreSQL setting."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: checkpoint_flush_after	gss_accept_delegation
+[Ciri] Reason for checkpoint_flush_after: The parameter 'checkpoint_flush_after' is not available in PostgreSQL 13. It was removed in version 9.6.
+[Ciri] Reason for gss_accept_delegation: The parameter 'gss_accept_delegation' is not a valid PostgreSQL configuration parameter. It may be related to Kerberos authentication, but is not a core PostgreSQL setting.

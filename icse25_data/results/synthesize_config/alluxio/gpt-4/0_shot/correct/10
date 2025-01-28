@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.cleanup.interval', 'alluxio.worker.management.tier.promote.range', 'alluxio.master.file.access.time.journal.flush.interval'], 'reason': ["The 'alluxio.underfs.cleanup.interval' value should be in milliseconds, not in 'day'.", "The 'alluxio.worker.management.tier.promote.range' property does not exist in Alluxio 2.5.0.", "The 'alluxio.master.file.access.time.journal.flush.interval' value should be in milliseconds, not in 'h'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.underfs.cleanup.interval	alluxio.worker.management.tier.promote.range	alluxio.master.file.access.time.journal.flush.interval
+[Ciri] Reason for alluxio.underfs.cleanup.interval: The 'alluxio.underfs.cleanup.interval' value should be in milliseconds, not in 'day'.
+[Ciri] Reason for alluxio.worker.management.tier.promote.range: The 'alluxio.worker.management.tier.promote.range' property does not exist in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.master.file.access.time.journal.flush.interval: The 'alluxio.master.file.access.time.journal.flush.interval' value should be in milliseconds, not in 'h'.

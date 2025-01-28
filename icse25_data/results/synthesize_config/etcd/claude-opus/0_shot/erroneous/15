@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'snapshot-count', 'quota-backend-bytes'], 'reason': ['proxy-dial-timeout is set to 4000000000, which is too large. It should be a duration string between 0 and 2m0s.', 'snapshot-count is set to 5000, which is too large. It should be in the range of 10000 to 100000.', 'quota-backend-bytes is set to 2, which is too small. It should be at least 1024 bytes (1 MB).']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-dial-timeout	snapshot-count	quota-backend-bytes
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout is set to 4000000000, which is too large. It should be a duration string between 0 and 2m0s.
+[Ciri] Reason for snapshot-count: snapshot-count is set to 5000, which is too large. It should be in the range of 10000 to 100000.
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes is set to 2, which is too small. It should be at least 1024 bytes (1 MB).

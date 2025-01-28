@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-write-timeout', 'log-level', 'logger'], 'reason': ['heartbeat-interval should be a positive integer', 'proxy-write-timeout should be a positive integer', 'log-level should be one of the following: panic, fatal, error, warn, info, debug', 'logger should be one of the following: capnslog, zerolog, go-kit, logrus, hclog']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'proxy-write-timeout', 'log-level', 'logger'], 'reason': ["heartbeat-interval: invalid unit '10000' in duration '10000'", "proxy-write-timeout: invalid unit '10000' in duration '10000'", "log-level: invalid log level 'debug'", "logger: invalid logger type 'zap'"]}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'heartbeat-interval', 'proxy-write-timeout'], 'reason': ['proxy-refresh-interval is not a valid property', 'heartbeat-interval is not a valid property', 'proxy-write-timeout is not a valid property']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: heartbeat-interval	proxy-write-timeout	log-level	logger
+[Ciri] Reason for heartbeat-interval: heartbeat-interval should be a positive integer
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout should be a positive integer
+[Ciri] Reason for log-level: log-level: invalid log level 'debug'
+[Ciri] Reason for logger: logger: invalid logger type 'zap'

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ["The property 'quorum.auth.enableSasl' is not a valid property for Zookeeper version 3.7.0.", "The property 'quorum.auth.learner.saslLoginContext' is not a valid property for Zookeeper version 3.7.0.", "The property 'quorum.auth.kerberos.servicePrincipal' is not a valid property for Zookeeper version 3.7.0."]}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal', 'quorum.cnxn.threads.size', 'electionAlg', 'clientPort'], 'reason': ['quorum.auth.enableSasl is not a valid property for Zookeeper version 3.7.0', 'quorum.auth.learner.saslLoginContext is not a valid property for Zookeeper version 3.7.0', 'quorum.auth.kerberos.servicePrincipal is not a valid property for Zookeeper version 3.7.0', 'quorum.cnxn.threads.size is not a valid property for Zookeeper version 3.7.0', 'electionAlg is not a valid property for Zookeeper version 3.7.0', 'clientPort is not a valid property for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ["The property 'quorum.auth.enableSasl' is misspelled. It should be 'quorum.auth.enableSasl'.", "The property 'quorum.auth.learner.saslLoginContext' is not a valid property for Zookeeper version 3.7.0.", "The property 'quorum.auth.kerberos.servicePrincipal' is not a valid property for Zookeeper version 3.7.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.learner.saslLoginContext	quorum.auth.kerberos.servicePrincipal
+[Ciri] Reason for quorum.auth.enableSasl: The property 'quorum.auth.enableSasl' is misspelled. It should be 'quorum.auth.enableSasl'.
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: The property 'quorum.auth.learner.saslLoginContext' is not a valid property for Zookeeper version 3.7.0.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: The property 'quorum.auth.kerberos.servicePrincipal' is not a valid property for Zookeeper version 3.7.0.

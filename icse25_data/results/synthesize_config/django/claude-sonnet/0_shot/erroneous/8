@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATIC_URL', 'FORCE_SCRIPT_NAME'], 'reason': ["The STATIC_URL setting should not start with 'file://'. It should be a URL path relative to the project's root, e.g., '/static/'.", 'The FORCE_SCRIPT_NAME setting should be a non-empty string if the Django instance is deployed behind a proxy server and the proxy does not strip the script name from the request URLs. Otherwise, it should be left as None.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: STATIC_URL	FORCE_SCRIPT_NAME
+[Ciri] Reason for STATIC_URL: The STATIC_URL setting should not start with 'file://'. It should be a URL path relative to the project's root, e.g., '/static/'.
+[Ciri] Reason for FORCE_SCRIPT_NAME: The FORCE_SCRIPT_NAME setting should be a non-empty string if the Django instance is deployed behind a proxy server and the proxy does not strip the script name from the request URLs. Otherwise, it should be left as None.

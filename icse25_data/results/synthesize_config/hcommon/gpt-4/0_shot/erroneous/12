@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].scheduler.impl', 'hadoop.http.cross-origin.allowed-headers', 'hadoop.security.random.device.file.path', 'hadoop.registry.system.acls'], 'reason': ["The property 'ipc.[port_number].scheduler.impl' uses a placeholder '[port_number]' which should be replaced with an actual port number or removed if it's meant to be a general setting.", "The property 'hadoop.http.cross-origin.allowed-headers' might not be correctly configured for Hadoop 3.3.0 as it typically expects a more extensive list of headers for CORS support.", "The value for 'hadoop.security.random.device.file.path' is 'dev/urandom///' which seems to be incorrectly formatted. The correct path usually does not end with multiple slashes.", "The value for 'hadoop.registry.system.acls' ends with an '@', which suggests it will append the default Kerberos domain. However, the value 'sasl:mapred@' seems incomplete or incorrectly formatted."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: ipc.[port_number].scheduler.impl	hadoop.http.cross-origin.allowed-headers	hadoop.security.random.device.file.path	hadoop.registry.system.acls
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The property 'ipc.[port_number].scheduler.impl' uses a placeholder '[port_number]' which should be replaced with an actual port number or removed if it's meant to be a general setting.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-headers: The property 'hadoop.http.cross-origin.allowed-headers' might not be correctly configured for Hadoop 3.3.0 as it typically expects a more extensive list of headers for CORS support.
+[Ciri] Reason for hadoop.security.random.device.file.path: The value for 'hadoop.security.random.device.file.path' is 'dev/urandom///' which seems to be incorrectly formatted. The correct path usually does not end with multiple slashes.
+[Ciri] Reason for hadoop.registry.system.acls: The value for 'hadoop.registry.system.acls' ends with an '@', which suggests it will append the default Kerberos domain. However, the value 'sasl:mapred@' seems incomplete or incorrectly formatted.

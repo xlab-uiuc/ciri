@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'oom-score-adj-values'], 'reason': ["repl-backlog-size should be an integer value representing size in bytes, but '1mm' is not a valid integer", "oom-score-adj-values is not a valid configuration parameter in Redis 7.0.0. It was removed in Redis 6.0 and should be configured using 'oom-score-adj' instead"]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: repl-backlog-size	oom-score-adj-values
+[Ciri] Reason for repl-backlog-size: repl-backlog-size should be an integer value representing size in bytes, but '1mm' is not a valid integer
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values is not a valid configuration parameter in Redis 7.0.0. It was removed in Redis 6.0 and should be configured using 'oom-score-adj' instead

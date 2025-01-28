@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep', 'yarn.nodemanager.node-labels.provider.script.path'], 'reason': ["The property 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep' is specific to Docker container runtimes and is not applicable to YARN 3.3.0, which uses the Kubernetes Container Runtime Interface (CRI) for container management.", "The property 'yarn.nodemanager.node-labels.provider.script.path' is used for specifying a script to provide node labels. In YARN 3.3.0, node labels are managed through the Kubernetes API and not through a script."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep	yarn.nodemanager.node-labels.provider.script.path
+[Ciri] Reason for yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep: The property 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep' is specific to Docker container runtimes and is not applicable to YARN 3.3.0, which uses the Kubernetes Container Runtime Interface (CRI) for container management.
+[Ciri] Reason for yarn.nodemanager.node-labels.provider.script.path: The property 'yarn.nodemanager.node-labels.provider.script.path' is used for specifying a script to provide node labels. In YARN 3.3.0, node labels are managed through the Kubernetes API and not through a script.

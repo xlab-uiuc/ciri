@@ -1,0 +1,16 @@
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.max.retries', 'fs.wasbs.impl', 'ipc.client.connect.retry.interval', 'hadoop.rpc.socket.factory.class.default', 'hadoop.security.crypto.buffer.size', 'hadoop.registry.zk.retry.times'], 'reason': ["The property 'fs.s3a.s3guard.ddb.max.retries' has an extra space in the description.", "The property 'fs.wasbs.impl' has an unexpected 'usage' element.", "The property 'ipc.client.connect.retry.interval' has an extra space in the description.", "The property 'hadoop.rpc.socket.factory.class.default' has an extra space in the description.", "The property 'hadoop.security.crypto.buffer.size' has an extra space in the description.", "The property 'hadoop.registry.zk.retry.times' has an extra space in the description."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.s3a.s3guard.ddb.max.retries	fs.wasbs.impl	ipc.client.connect.retry.interval	hadoop.rpc.socket.factory.class.default	hadoop.security.crypto.buffer.size	hadoop.registry.zk.retry.times
+[Ciri] Reason for fs.s3a.s3guard.ddb.max.retries: The property 'fs.s3a.s3guard.ddb.max.retries' has an extra space in the description.
+[Ciri] Reason for fs.wasbs.impl: The property 'fs.wasbs.impl' has an unexpected 'usage' element.
+[Ciri] Reason for ipc.client.connect.retry.interval: The property 'ipc.client.connect.retry.interval' has an extra space in the description.
+[Ciri] Reason for hadoop.rpc.socket.factory.class.default: The property 'hadoop.rpc.socket.factory.class.default' has an extra space in the description.
+[Ciri] Reason for hadoop.security.crypto.buffer.size: The property 'hadoop.security.crypto.buffer.size' has an extra space in the description.
+[Ciri] Reason for hadoop.registry.zk.retry.times: The property 'hadoop.registry.zk.retry.times' has an extra space in the description.

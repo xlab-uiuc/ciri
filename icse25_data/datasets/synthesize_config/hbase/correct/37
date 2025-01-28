@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.zookeeper.dns.interface</name>
+  <value>eth2</value>
+    <description>The name of the Network Interface from which a ZooKeeper server
+      should report its IP address.</description>
+</property>
+
+<property>
+  <name>hbase.client.max.perregion.tasks</name>
+  <value>2</value>
+    <description>The maximum number of concurrent mutation tasks the client will
+    maintain to a single Region. That is, if there is already
+    hbase.client.max.perregion.tasks writes in progress for this region, new puts
+    won't be sent to this region until some writes finishes.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.memstore.flush.size</name>
+  <value>268435456</value>
+    <description>
+    Memstore will be flushed to disk if size of the memstore
+    exceeds this number of bytes.  Value is checked by a thread that runs
+    every hbase.server.thread.wakefrequency.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.majorcompaction</name>
+  <value>302400000</value>
+    <description>Time between major compactions, expressed in milliseconds. Set to 0 to disable
+      time-based automatic major compactions. User-requested and size-based major compactions will
+      still run. This value is multiplied by hbase.hregion.majorcompaction.jitter to cause
+      compaction to start at a somewhat-random time during a given window of time. The default value
+      is 7 days, expressed in milliseconds. If major compactions are causing disruption in your
+      environment, you can configure them to run at off-peak times for your deployment, or disable
+      time-based major compactions by setting this parameter to 0, and run major compactions in a
+      cron job or by another external mechanism.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.max.size</name>
+  <value>4611686018427387903</value>
+    <description>A StoreFile (or a selection of StoreFiles, when using ExploringCompactionPolicy)
+      larger than this size will be excluded from compaction. The effect of
+      raising hbase.hstore.compaction.max.size is fewer, larger StoreFiles that do not get
+      compacted often. If you feel that compaction is happening too often without much benefit, you
+      can try raising this value. Default: the value of LONG.MAX_VALUE, expressed in bytes.</description>
+</property>
+
+<property>
+  <name>hbase.client.operation.timeout</name>
+  <value>1200000</value>
+    <description>Operation timeout is a top-level restriction (millisecond) that makes sure a
+      blocking operation in Table will not be blocked more than this. In each operation, if rpc
+      request fails because of timeout or other reason, it will retry until success or throw
+      RetriesExhaustedException. But if the total time being blocking reach the operation timeout
+      before retries exhausted, it will break early and throw SocketTimeoutException.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.hostname.disable.master.reversedns</name>
+  <value>true</value>
+    <description>This config is for experts: don't set its value unless you really know what you are doing.
+    When set to true, regionserver will use the current node hostname for the servername and HMaster will
+    skip reverse DNS lookup and use the hostname sent by regionserver instead. Note that this config and
+    hbase.regionserver.hostname are mutually exclusive. See https://issues.apache.org/jira/browse/HBASE-18226
+    for more details.</description>
+</property>
+
+<property>
+  <name>hbase.mob.compaction.mergeable.threshold</name>
+  <value>1342177280</value>
+    <description>
+      If the size of a mob file is less than this value, it's regarded as a small
+      file and needs to be merged in mob compaction. The default value is 1280MB.
+    </description>
+</property>
+
+</configuration>

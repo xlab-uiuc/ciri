@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'initLimit', 'syncLimit'], 'reason': ['minSessionTimeout cannot be 0. It must be a positive integer.', 'initLimit value is too low. It should be at least 2 to ensure servers have enough time to connect.', 'syncLimit value is unusually high. Typically, this value should be between 2 and 5.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: minSessionTimeout	initLimit	syncLimit
+[Ciri] Reason for minSessionTimeout: minSessionTimeout cannot be 0. It must be a positive integer.
+[Ciri] Reason for initLimit: initLimit value is too low. It should be at least 2 to ensure servers have enough time to connect.
+[Ciri] Reason for syncLimit: syncLimit value is unusually high. Typically, this value should be between 2 and 5.

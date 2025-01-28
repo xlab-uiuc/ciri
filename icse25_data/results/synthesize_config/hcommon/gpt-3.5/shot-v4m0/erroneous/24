@@ -1,0 +1,13 @@
+Correct shot number:
+[13, 3, 14, 9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.s3a.fast.upload.buffer', 'ipc.[port_number].faircallqueue.multiplexer.weights'], 'reason': ['Invalid value. Expected a valid port number.', "Invalid value. Allowed values are 'disk', 'array', or 'bytebuffer'.", 'Invalid value format. Expected a comma-separated list of weights.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.host.port	fs.s3a.fast.upload.buffer	ipc.[port_number].faircallqueue.multiplexer.weights
+[Ciri] Reason for fs.ftp.host.port: Invalid value. Expected a valid port number.
+[Ciri] Reason for fs.s3a.fast.upload.buffer: Invalid value. Allowed values are 'disk', 'array', or 'bytebuffer'.
+[Ciri] Reason for ipc.[port_number].faircallqueue.multiplexer.weights: Invalid value format. Expected a comma-separated list of weights.

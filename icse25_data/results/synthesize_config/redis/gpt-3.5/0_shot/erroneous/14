@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr=2.2.2.2.2.2', 'dynamic-hz=yes'], 'reason': ['Invalid IP address format in bind-source-addr parameter.', "Invalid value for dynamic-hz parameter. Valid values are 'yes' or 'no'."]}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'tls-ca-cert-file'], 'reason': ['Invalid format for bind-source-addr parameter.', 'tls-ca-cert-file parameter is not supported in Redis version 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'tls-ca-cert-file'], 'reason': ['Invalid IP address format in bind-source-addr parameter.', 'Invalid file path format in tls-ca-cert-file parameter.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: bind-source-addr	tls-ca-cert-file
+[Ciri] Reason for bind-source-addr: Invalid IP address format in bind-source-addr parameter.
+[Ciri] Reason for tls-ca-cert-file: tls-ca-cert-file parameter is not supported in Redis version 7.0.0.

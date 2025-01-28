@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'enable-v2'], 'reason': ['max-wals is not a valid configuration parameter for etcd version 3.5.0', 'enable-v2 is not a valid configuration parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'enable-v2'], 'reason': ['max-wals is not a valid configuration parameter in etcd version 3.5.0', 'enable-v2 is not a valid configuration parameter in etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'enable-v2', 'strict-reconfig-check'], 'reason': ['max-wals is not a valid parameter for etcd version 3.5.0', 'enable-v2 is not a valid parameter for etcd version 3.5.0', 'strict-reconfig-check is not a valid parameter for etcd version 3.5.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: max-wals	enable-v2
+[Ciri] Reason for max-wals: max-wals is not a valid configuration parameter in etcd version 3.5.0
+[Ciri] Reason for enable-v2: enable-v2 is not a valid configuration parameter in etcd version 3.5.0

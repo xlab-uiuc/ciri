@@ -1,0 +1,19 @@
+Wrong shot number:
+[12, 8, 1]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.client.rpc-timeout.ms', 'fs.permissions.umask-mode'], 'reason': ["The property 'ipc.client.rpc-timeout.ms' has the value '1' which is below the recommended threshold for RPC timeout.", "The property 'fs.permissions.umask-mode' has the value '999' which is not a valid umask value."]}
+
+{'hasError': True, 'errParameter': ['ipc.client.rpc-timeout.ms', 'fs.permissions.umask-mode'], 'reason': ["The property 'ipc.client.rpc-timeout.ms' has the value '1' which is less than the recommended minimum value of 1000 milliseconds.", "The property 'fs.permissions.umask-mode' has the value '999' which is not a valid octal or symbolic umask value."]}
+
+{'hasError': True, 'errParameter': ['ipc.client.rpc-timeout.ms', 'fs.permissions.umask-mode'], 'reason': ["The property 'ipc.client.rpc-timeout.ms' has the value '1' which is below the recommended threshold for RPC timeout.", "The property 'fs.permissions.umask-mode' has the value '999' which is not a valid umask value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.client.rpc-timeout.ms	fs.permissions.umask-mode
+[Ciri] Reason for ipc.client.rpc-timeout.ms: The property 'ipc.client.rpc-timeout.ms' has the value '1' which is below the recommended threshold for RPC timeout.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has the value '999' which is not a valid umask value.

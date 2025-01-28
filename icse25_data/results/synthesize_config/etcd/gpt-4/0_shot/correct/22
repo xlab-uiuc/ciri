@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'max-snapshots', 'snapshot-count', 'log-outputs', 'max-wals', 'proxy-failure-wait'], 'reason': ["The 'enable-v2' parameter is not applicable for etcd version 3.5.0 as v2 API support is deprecated.", "The 'max-snapshots' parameter is not recognized. The correct parameter for controlling the number of snapshot files is 'max-snapshot'.", "The 'snapshot-count' parameter does not exist. The correct parameter for controlling the number of committed transactions to trigger a snapshot is 'snapshot-count'.", "The 'log-outputs' parameter is valid, but the correct usage is to specify the output types as strings within the array, such as 'default', 'stdout', or 'stderr'.", "The 'max-wals' parameter is not recognized. The correct parameter for controlling the number of WAL files is 'max-wals'.", "The 'proxy-failure-wait' parameter is not applicable as the proxy feature is removed in etcd 3.5.0."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: enable-v2	max-snapshots	snapshot-count	log-outputs	max-wals	proxy-failure-wait
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is not applicable for etcd version 3.5.0 as v2 API support is deprecated.
+[Ciri] Reason for max-snapshots: The 'max-snapshots' parameter is not recognized. The correct parameter for controlling the number of snapshot files is 'max-snapshot'.
+[Ciri] Reason for snapshot-count: The 'snapshot-count' parameter does not exist. The correct parameter for controlling the number of committed transactions to trigger a snapshot is 'snapshot-count'.
+[Ciri] Reason for log-outputs: The 'log-outputs' parameter is valid, but the correct usage is to specify the output types as strings within the array, such as 'default', 'stdout', or 'stderr'.
+[Ciri] Reason for max-wals: The 'max-wals' parameter is not recognized. The correct parameter for controlling the number of WAL files is 'max-wals'.
+[Ciri] Reason for proxy-failure-wait: The 'proxy-failure-wait' parameter is not applicable as the proxy feature is removed in etcd 3.5.0.

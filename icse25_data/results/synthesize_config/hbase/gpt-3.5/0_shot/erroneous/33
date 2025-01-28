@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.ipc.server.callqueue.scan.ratio', 'hbase.status.multicast.address.ip'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.regionserver.info.bindAddress'.", "The 'usage' tag is not a valid tag for property 'hbase.ipc.server.callqueue.scan.ratio'.", "The value '0.0.256.0' for property 'hbase.status.multicast.address.ip' is not a valid IP address format."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.ipc.server.callqueue.scan.ratio', 'hbase.status.multicast.address.ip'], 'reason': ['The usage tag is not a valid tag for the property hbase.regionserver.info.bindAddress.', 'The description for property hbase.ipc.server.callqueue.scan.ratio is too long and should be concise.', 'The value for property hbase.status.multicast.address.ip is not a valid IP address format.']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.info.bindAddress', 'hbase.ipc.server.callqueue.scan.ratio', 'hbase.status.multicast.address.ip'], 'reason': ["The 'usage' tag is not a valid tag for property 'hbase.regionserver.info.bindAddress'.", "The description for property 'hbase.ipc.server.callqueue.scan.ratio' is too long and should be concise.", "The value '0.0.256.0' for property 'hbase.status.multicast.address.ip' is not a valid IP address."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.info.bindAddress	hbase.ipc.server.callqueue.scan.ratio	hbase.status.multicast.address.ip
+[Ciri] Reason for hbase.regionserver.info.bindAddress: The 'usage' tag is not a valid tag for property 'hbase.regionserver.info.bindAddress'.
+[Ciri] Reason for hbase.ipc.server.callqueue.scan.ratio: The description for property 'hbase.ipc.server.callqueue.scan.ratio' is too long and should be concise.
+[Ciri] Reason for hbase.status.multicast.address.ip: The value '0.0.256.0' for property 'hbase.status.multicast.address.ip' is not a valid IP address.

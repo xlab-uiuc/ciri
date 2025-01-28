@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'minSessionTimeout', 'quorum.auth.kerberos.servicePrincipal', 'quorumListenOnAllIPs', 'sslQuorumReloadCertFiles'], 'reason': ['secureClientPort must be between 1 and 65535', 'minSessionTimeout is not a valid configuration parameter for Zookeeper 3.7.0', 'quorum.auth.kerberos.servicePrincipal is not a valid configuration parameter for Zookeeper 3.7.0', 'quorumListenOnAllIPs is not a valid configuration parameter for Zookeeper 3.7.0', 'sslQuorumReloadCertFiles is not a valid configuration parameter for Zookeeper 3.7.0']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: secureClientPort	minSessionTimeout	quorum.auth.kerberos.servicePrincipal	quorumListenOnAllIPs	sslQuorumReloadCertFiles
+[Ciri] Reason for secureClientPort: secureClientPort must be between 1 and 65535
+[Ciri] Reason for minSessionTimeout: minSessionTimeout is not a valid configuration parameter for Zookeeper 3.7.0
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is not a valid configuration parameter for Zookeeper 3.7.0
+[Ciri] Reason for quorumListenOnAllIPs: quorumListenOnAllIPs is not a valid configuration parameter for Zookeeper 3.7.0
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles is not a valid configuration parameter for Zookeeper 3.7.0

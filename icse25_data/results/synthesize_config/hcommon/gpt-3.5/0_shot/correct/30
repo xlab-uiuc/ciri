@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].backoff.enable', 'ipc.[port_number].scheduler.impl'], 'reason': ['Parameter name contains placeholder [port_number], which should be replaced with an actual port number.', 'Parameter name contains placeholder [port_number], which should be replaced with an actual port number.']}
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'ipc.[port_number].backoff.enable', 'hadoop.zk.num-retries'], 'reason': ['The property \'fs.ftp.transfer.mode\' has an extra usage tag \'xmlPropsToSkipCompare.add("fs.ftp.transfer.mode");\' which is not standard for hcommon version 3.3.0.', "The property 'ipc.[port_number].backoff.enable' has an extra square bracket notation '[port_number]' which is not standard for hcommon version 3.3.0.", "The property 'hadoop.zk.num-retries' has an extra indentation in the description field which is not standard for hcommon version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].backoff.enable', 'ipc.[port_number].scheduler.impl'], 'reason': ["Parameter 'ipc.[port_number].backoff.enable' is missing a description.", "Parameter 'ipc.[port_number].scheduler.impl' is missing a usage."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].backoff.enable	ipc.[port_number].scheduler.impl
+[Ciri] Reason for ipc.[port_number].backoff.enable: Parameter 'ipc.[port_number].backoff.enable' is missing a description.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: Parameter 'ipc.[port_number].scheduler.impl' is missing a usage.

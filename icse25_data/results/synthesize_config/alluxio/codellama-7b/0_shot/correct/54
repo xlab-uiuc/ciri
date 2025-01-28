@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.master.hostname', 'alluxio.worker.hostname', 'alluxio.worker.tieredstore.level1.dirs.mediumtype'], 'reason': ['alluxio.master.hostname is not a valid hostname', 'alluxio.worker.hostname is not a valid hostname', 'alluxio.worker.tieredstore.level1.dirs.mediumtype is not a valid mediumtype']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.hostname', 'alluxio.worker.hostname', 'alluxio.worker.tieredstore.level1.dirs.mediumtype'], 'reason': ['alluxio.master.hostname is not a valid hostname', 'alluxio.worker.hostname is not a valid hostname', 'alluxio.worker.tieredstore.level1.dirs.mediumtype is not a valid medium type']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.hostname	alluxio.worker.hostname	alluxio.worker.tieredstore.level1.dirs.mediumtype
+[Ciri] Reason for alluxio.master.hostname: alluxio.master.hostname is not a valid hostname
+[Ciri] Reason for alluxio.worker.hostname: alluxio.worker.hostname is not a valid hostname
+[Ciri] Reason for alluxio.worker.tieredstore.level1.dirs.mediumtype: alluxio.worker.tieredstore.level1.dirs.mediumtype is not a valid medium type

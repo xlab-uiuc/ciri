@@ -1,0 +1,15 @@
+Wrong shot number:
+[14, 5, 12]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.invalidate.work.pct.per.iteration', 'nfs.server.port'], 'reason': ["The value of 'dfs.namenode.invalidate.work.pct.per.iteration' should not have the 'f' suffix. It should be a float value between 0.0 and 1.0.", "The value of 'nfs.server.port' should be a valid port number, which is an integer between 1 and 65535."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.invalidate.work.pct.per.iteration	nfs.server.port
+[Ciri] Reason for dfs.namenode.invalidate.work.pct.per.iteration: The value of 'dfs.namenode.invalidate.work.pct.per.iteration' should not have the 'f' suffix. It should be a float value between 0.0 and 1.0.
+[Ciri] Reason for nfs.server.port: The value of 'nfs.server.port' should be a valid port number, which is an integer between 1 and 65535.

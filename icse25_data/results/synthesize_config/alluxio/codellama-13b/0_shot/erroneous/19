@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.network.connection.auth.timeout', 'alluxio.user.logging.threshold', 'alluxio.worker.tieredstore.level0.dirs.mediumtype', 'alluxio.master.ufs.path.cache.threads', 'alluxio.user.ufs.block.read.concurrency.max', 'alluxio.fuse.shared.caching.reader.enabled', 'alluxio.worker.data.folder.permissions'], 'reason': ['alluxio.job.worker.rpc.port: -100.22 is not a valid port number.', 'alluxio.network.connection.auth.timeout: 30sec is not a valid duration.', 'alluxio.user.logging.threshold: 10s is not a valid duration.', 'alluxio.worker.tieredstore.level0.dirs.mediumtype: ${alluxio.worker.tieredstore.level0.alias} is not a valid medium type.', 'alluxio.master.ufs.path.cache.threads: 64 is not a valid integer.', 'alluxio.user.ufs.block.read.concurrency.max: 1073741823 is not a valid integer.', 'alluxio.fuse.shared.caching.reader.enabled: false is not a valid boolean.', 'alluxio.worker.data.folder.permissions: rwxrwx--- is not a valid permission.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.job.worker.rpc.port	alluxio.network.connection.auth.timeout	alluxio.user.logging.threshold	alluxio.worker.tieredstore.level0.dirs.mediumtype	alluxio.master.ufs.path.cache.threads	alluxio.user.ufs.block.read.concurrency.max	alluxio.fuse.shared.caching.reader.enabled	alluxio.worker.data.folder.permissions
+[Ciri] Reason for alluxio.job.worker.rpc.port: alluxio.job.worker.rpc.port: -100.22 is not a valid port number.
+[Ciri] Reason for alluxio.network.connection.auth.timeout: alluxio.network.connection.auth.timeout: 30sec is not a valid duration.
+[Ciri] Reason for alluxio.user.logging.threshold: alluxio.user.logging.threshold: 10s is not a valid duration.
+[Ciri] Reason for alluxio.worker.tieredstore.level0.dirs.mediumtype: alluxio.worker.tieredstore.level0.dirs.mediumtype: ${alluxio.worker.tieredstore.level0.alias} is not a valid medium type.
+[Ciri] Reason for alluxio.master.ufs.path.cache.threads: alluxio.master.ufs.path.cache.threads: 64 is not a valid integer.
+[Ciri] Reason for alluxio.user.ufs.block.read.concurrency.max: alluxio.user.ufs.block.read.concurrency.max: 1073741823 is not a valid integer.
+[Ciri] Reason for alluxio.fuse.shared.caching.reader.enabled: alluxio.fuse.shared.caching.reader.enabled: false is not a valid boolean.
+[Ciri] Reason for alluxio.worker.data.folder.permissions: alluxio.worker.data.folder.permissions: rwxrwx--- is not a valid permission.

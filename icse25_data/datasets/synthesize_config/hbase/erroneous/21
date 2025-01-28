@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.logcleaner.plugins</name>
+  <value>org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner,org.apache.hadoop.hbase.master.cleaner.TimeToLiveProcedureWALCleaner</value>
+    <description>A comma-separated list of BaseLogCleanerDelegate invoked by
+    the LogsCleaner service. These WAL cleaners are called in order,
+    so put the cleaner that prunes the most files in front. To
+    implement your own BaseLogCleanerDelegate, just put it in HBase's classpath
+    and add the fully qualified class name here. Always add the above
+    default log cleaners in the list.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.msginterval</name>
+  <value>3000</value>
+    <description>Interval between messages from the RegionServer to Master
+    in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.timeout.period</name>
+  <value>-10</value>
+    <description>Client scanner lease period in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.normalizer.period</name>
+  <value>300000</value>
+    <description>Period at which the region normalizer runs in the Master.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.max.filesize</name>
+  <value>21474836480</value>
+    <description>
+    Maximum HFile size. If the sum of the sizes of a region's HFiles has grown to exceed this
+    value, the region is split in two.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.blockingWaitTime</name>
+  <value>180000</value>
+    <description> The time for which a region will block updates after reaching the StoreFile limit
+    defined by hbase.hstore.blockingStoreFiles. After this time has elapsed, the region will stop
+    blocking updates even if a compaction has not been completed.</description>
+</property>
+
+<property>
+  <name>hbase.master.keytab.file</name>
+  <value>/valid/file2</value>
+    <description>Full path to the kerberos keytab file to use for logging in
+    the configured HMaster server principal.</description>
+</property>
+
+<property>
+  <name>hbase.rootdir.perms</name>
+  <value>1400</value>
+    <description>FS Permissions for the root data subdirectory in a secure (kerberos) setup.
+    When master starts, it creates the rootdir with this permissions or sets the permissions
+    if it does not match.</description>
+</property>
+
+</configuration>

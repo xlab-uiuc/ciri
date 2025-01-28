@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.viewfs.rename.strategy', 'hadoop.http.authentication.simple.anonymous.allowed'], 'reason': ["The property 'fs.viewfs.rename.strategy' has an additional usage tag which is not standard for hcommon version 3.3.0.", "The property 'hadoop.http.authentication.simple.anonymous.allowed' has an incorrect value. It should be 'true' for 'simple' authentication."]}
+
+{'hasError': True, 'errParameter': ['fs.viewfs.rename.strategy', 'fs.azure.saskey.usecontainersaskeyforallaccess'], 'reason': ["The property 'fs.viewfs.rename.strategy' has an additional usage tag that is not standard for hcommon version 3.3.0.", "The property 'fs.azure.saskey.usecontainersaskeyforallaccess' has an additional description that is not standard for hcommon version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['fs.viewfs.rename.strategy', 'hadoop.http.authentication.simple.anonymous.allowed'], 'reason': ["The property 'fs.viewfs.rename.strategy' has an additional usage tag that may not be valid for hcommon version 3.3.0.", "The property 'hadoop.http.authentication.simple.anonymous.allowed' is set to 'false' which may not be valid for hcommon version 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.viewfs.rename.strategy	hadoop.http.authentication.simple.anonymous.allowed
+[Ciri] Reason for fs.viewfs.rename.strategy: The property 'fs.viewfs.rename.strategy' has an additional usage tag which is not standard for hcommon version 3.3.0.
+[Ciri] Reason for hadoop.http.authentication.simple.anonymous.allowed: The property 'hadoop.http.authentication.simple.anonymous.allowed' is set to 'false' which may not be valid for hcommon version 3.3.0.

@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['net.topology.node.switch.mapping.impl', 'net.topology.table.file.name'], 'reason': ["The property 'net.topology.node.switch.mapping.impl' should have the value 'org.apache.hadoop.net.NoTableMapping' for Hadoop 3.3.0.", "The property 'net.topology.table.file.name' is not a valid property for Hadoop 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.output.csv.quote.fields', 'net.topology.node.switch.mapping.impl', 'net.topology.table.file.name', 'file.client-write-packet-size', 'fs.AbstractFileSystem.adl.impl'], 'reason': ["The property 'fs.s3a.select.output.csv.quote.fields' has an incorrect value. It should be one of: 'always', 'asneeded'.", "The property 'net.topology.node.switch.mapping.impl' has an incorrect value. It should be a valid implementation class.", "The property 'net.topology.table.file.name' has an incorrect value. It should specify the path to a valid topology file.", "The property 'file.client-write-packet-size' has an incorrect value. It should be a numeric value.", "The property 'fs.AbstractFileSystem.adl.impl' is missing the 'description' field."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.search.filter.user', 'fs.s3a.select.output.csv.quote.fields', 'net.topology.node.switch.mapping.impl', 'net.topology.table.file.name', 'file.client-write-packet-size', 'hadoop.http.authentication.simple.anonymous.allowed', 'fs.AbstractFileSystem.adl.impl'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.search.filter.user' has an incorrect value. It should be set to '(&(objectClass=inetOrgPerson)(uid={0})'.", "The property 'fs.s3a.select.output.csv.quote.fields' has an incorrect value. It should be one of: 'always', 'asneeded'.", "The property 'net.topology.node.switch.mapping.impl' has an incorrect value. It should be set to 'org.apache.hadoop.net.NoTableMapping'.", "The property 'net.topology.table.file.name' has an incorrect value. The path should be specified correctly.", "The property 'file.client-write-packet-size' should have a numerical value.", "The property 'hadoop.http.authentication.simple.anonymous.allowed' should have a boolean value (true/false).", "The property 'fs.AbstractFileSystem.adl.impl' is missing the description."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['net.topology.node.switch.mapping.impl', 'net.topology.table.file.name'], 'reason': ["The property 'net.topology.node.switch.mapping.impl' is deprecated in Hadoop 3.3.0. Consider using a different implementation.", "The property 'net.topology.table.file.name' is deprecated in Hadoop 3.3.0. Consider using a different approach for topology mapping."]}
+
+{'hasError': True, 'errParameter': ['net.topology.node.switch.mapping.impl', 'net.topology.table.file.name'], 'reason': ["The property 'net.topology.node.switch.mapping.impl' should have the value 'org.apache.hadoop.net.NoTableMapping' for Hadoop version 3.3.0.", "The property 'net.topology.table.file.name' is not a valid property for Hadoop version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['net.topology.node.switch.mapping.impl', 'net.topology.table.file.name'], 'reason': ["The property 'net.topology.node.switch.mapping.impl' should have the value 'org.apache.hadoop.net.NoTableMapping' for hcommon version 3.3.0.", "The property 'net.topology.table.file.name' should not be used for hcommon version 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: net.topology.node.switch.mapping.impl	net.topology.table.file.name
+[Ciri] Reason for net.topology.node.switch.mapping.impl: The property 'net.topology.node.switch.mapping.impl' should have the value 'org.apache.hadoop.net.NoTableMapping' for Hadoop version 3.3.0.
+[Ciri] Reason for net.topology.table.file.name: The property 'net.topology.table.file.name' is deprecated in Hadoop 3.3.0. Consider using a different approach for topology mapping.

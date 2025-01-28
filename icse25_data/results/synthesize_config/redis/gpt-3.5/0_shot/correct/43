@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'zset-max-listpack-entries', 'tls-ca-cert-dir', 'replica-announce-ip', 'auto-aof-rewrite-percentage', 'client-output-buffer-limit', 'oom-score-adj-values'], 'reason': ["Unknown parameter 'rdbcompression'", "Unknown parameter 'zset-max-listpack-entries'", "Unknown parameter 'tls-ca-cert-dir'", "Unknown parameter 'replica-announce-ip'", "Unknown parameter 'auto-aof-rewrite-percentage'", "Invalid value for 'client-output-buffer-limit'", "Invalid value for 'oom-score-adj-values'"]}
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'zset-max-listpack-entries', 'tls-ca-cert-dir', 'replica-announce-ip', 'auto-aof-rewrite-percentage', 'client-output-buffer-limit', 'oom-score-adj-values'], 'reason': ["Unknown configuration parameter 'rdbcompression'", "Unknown configuration parameter 'zset-max-listpack-entries'", "Unknown configuration parameter 'tls-ca-cert-dir'", "Unknown configuration parameter 'replica-announce-ip'", "Unknown configuration parameter 'auto-aof-rewrite-percentage'", "Unknown configuration parameter 'client-output-buffer-limit'", "Unknown configuration parameter 'oom-score-adj-values'"]}
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'zset-max-listpack-entries', 'tls-ca-cert-dir', 'replica-announce-ip', 'auto-aof-rewrite-percentage', 'client-output-buffer-limit', 'oom-score-adj-values'], 'reason': ['rdbcompression is not a valid configuration parameter for Redis 7.0.0', 'zset-max-listpack-entries should be zset-max-ziplist-entries for Redis 7.0.0', 'tls-ca-cert-dir should be tls-ca-cert-file for Redis 7.0.0', 'replica-announce-ip is not a valid configuration parameter for Redis 7.0.0', 'auto-aof-rewrite-percentage is not a valid configuration parameter for Redis 7.0.0', 'client-output-buffer-limit should have format client-output-buffer-limit <class> <hard limit> <soft limit> <soft seconds>', 'oom-score-adj-values should have format oom-score-adj-values <oom_score_adj> <oom_score_adj_min> <oom_score_adj_max> for Redis 7.0.0']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: rdbcompression	zset-max-listpack-entries	tls-ca-cert-dir	replica-announce-ip	auto-aof-rewrite-percentage	client-output-buffer-limit	oom-score-adj-values
+[Ciri] Reason for rdbcompression: Unknown parameter 'rdbcompression'
+[Ciri] Reason for zset-max-listpack-entries: Unknown configuration parameter 'zset-max-listpack-entries'
+[Ciri] Reason for tls-ca-cert-dir: Unknown parameter 'tls-ca-cert-dir'
+[Ciri] Reason for replica-announce-ip: Unknown configuration parameter 'replica-announce-ip'
+[Ciri] Reason for auto-aof-rewrite-percentage: Unknown parameter 'auto-aof-rewrite-percentage'
+[Ciri] Reason for client-output-buffer-limit: Unknown configuration parameter 'client-output-buffer-limit'
+[Ciri] Reason for oom-score-adj-values: Unknown configuration parameter 'oom-score-adj-values'

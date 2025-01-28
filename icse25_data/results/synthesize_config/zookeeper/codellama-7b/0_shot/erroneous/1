@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'quorum.auth.server.saslLoginContext'], 'reason': ['dataDir must be a valid directory', 'dataLogDir must be a valid directory', 'quorum.auth.server.saslLoginContext is not a valid property']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'dataDir', 'dataLogDir', 'dataDir'], 'reason': ['dataDir and dataLogDir cannot be the same directory', 'dataDir and dataLogDir cannot be the same directory', 'dataDir and dataLogDir cannot be the same directory', 'dataDir and dataLogDir cannot be the same directory']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir must be a valid directory', 'dataLogDir must be a valid directory']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'dataDir', 'dataLogDir', 'dataDir', 'dataLogDir', 'dataDir'], 'reason': ['dataDir and dataLogDir cannot be the same directory', 'dataDir and dataLogDir cannot be the same directory', 'dataDir and dataLogDir cannot be the same directory', 'dataDir and dataLogDir cannot be the same directory', 'dataDir and dataLogDir cannot be the same directory', 'dataDir and dataLogDir cannot be the same directory']}
+
+{'hasError': True, 'errParameter': ['dataLogDir'], 'reason': ['dataLogDir should be a valid directory']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['The dataDir and dataLogDir properties must be set to valid directories.', 'The dataDir and dataLogDir properties must be set to valid directories.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir and dataLogDir must be absolute paths']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'quorumListenOnAllIPs'], 'reason': ['dataDir must be a valid directory', 'dataLogDir must be a valid directory', 'quorumListenOnAllIPs must be a boolean']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataDir	dataLogDir
+[Ciri] Reason for dataDir: dataDir is not a valid directory
+[Ciri] Reason for dataLogDir: dataLogDir is not a valid directory

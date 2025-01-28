@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['old_snapshot_threshold', 'min_wal_size'], 'reason': ["The 'old_snapshot_threshold' parameter has been removed in PostgreSQL 13. It was used in earlier versions to set the minimum time that a snapshot could be used for. This is now automatically managed by the system.", "The default value for 'min_wal_size' in PostgreSQL 13 is 80MB. Setting it to 160MB is valid but you should ensure you have a reason for increasing this as it will impact the amount of disk space used by WAL files."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: old_snapshot_threshold	min_wal_size
+[Ciri] Reason for old_snapshot_threshold: The 'old_snapshot_threshold' parameter has been removed in PostgreSQL 13. It was used in earlier versions to set the minimum time that a snapshot could be used for. This is now automatically managed by the system.
+[Ciri] Reason for min_wal_size: The default value for 'min_wal_size' in PostgreSQL 13 is 80MB. Setting it to 160MB is valid but you should ensure you have a reason for increasing this as it will impact the amount of disk space used by WAL files.

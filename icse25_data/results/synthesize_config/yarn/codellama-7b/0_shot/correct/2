@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.nonsecure-mode.local-user', 'yarn.nodemanager.runtime.linux.docker.stop.grace-period', 'yarn.nodemanager.runtime.linux.sandbox-mode.whitelist-group'], 'reason': ['The UNIX user that containers will run as when Linux-container-executor is used in nonsecure mode (a use case for this is using cgroups) if the yarn.nodemanager.linux-container-executor.nonsecure-mode.limit-users is set to true.', 'A configurable value to pass to the Docker Stop command. This value defines the number of seconds between the docker stop command sending a SIGTERM and a SIGKILL.', 'The group which will run by default without the java security manager.']}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.docker.stop.grace-period'], 'reason': ['The value of yarn.nodemanager.runtime.linux.docker.stop.grace-period is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.docker.stop.grace-period'], 'reason': ['yarn.nodemanager.runtime.linux.docker.stop.grace-period is not a valid property for yarn version 3.3.0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.runtime.linux.docker.stop.grace-period
+[Ciri] Reason for yarn.nodemanager.runtime.linux.docker.stop.grace-period: The value of yarn.nodemanager.runtime.linux.docker.stop.grace-period is not a valid integer.

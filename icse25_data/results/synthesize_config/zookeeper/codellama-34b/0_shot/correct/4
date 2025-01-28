@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.server.saslLoginContext', 'peerType', 'electionAlg'], 'reason': ['quorum.auth.enableSasl is not a valid property for version 3.7.0', 'quorum.auth.server.saslLoginContext is not a valid property for version 3.7.0', 'peerType is not a valid property for version 3.7.0', 'electionAlg is not a valid property for version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The property server.1 is not a valid property for zookeeper version 3.7.0', 'The property server.2 is not a valid property for zookeeper version 3.7.0', 'The property server.3 is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.X properties are not supported in ZooKeeper version 3.7.0. Please use the server.X=host:port:port:type format instead.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: server.1	server.2	server.3
+[Ciri] Reason for server.1: The property server.1 is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for server.2: The property server.2 is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for server.3: The property server.3 is not a valid property for zookeeper version 3.7.0

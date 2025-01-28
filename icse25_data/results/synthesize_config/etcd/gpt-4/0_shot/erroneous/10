@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-advertise-peer-urls', 'proxy-read-timeout', 'discovery-fallback'], 'reason': ["The value for 'initial-advertise-peer-urls' should be a URL or a comma-separated list of URLs.", "The 'proxy-read-timeout' parameter is not a valid etcd configuration option.", "The 'discovery-fallback' option is not valid in etcd version 3.5.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: initial-advertise-peer-urls	proxy-read-timeout	discovery-fallback
+[Ciri] Reason for initial-advertise-peer-urls: The value for 'initial-advertise-peer-urls' should be a URL or a comma-separated list of URLs.
+[Ciri] Reason for proxy-read-timeout: The 'proxy-read-timeout' parameter is not a valid etcd configuration option.
+[Ciri] Reason for discovery-fallback: The 'discovery-fallback' option is not valid in etcd version 3.5.0.

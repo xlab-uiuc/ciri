@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'quota-backend-bytes', 'election-timeout'], 'reason': ['max-wals is no longer supported in etcd v3.5. The --max-wals flag was deprecated in v3.4 and removed in v3.5.', 'quota-backend-bytes must be at least 8 MB (8388608 bytes). Setting it to 2 bytes is too low.', 'election-timeout must be at least 1000ms. Setting it to 2000 (2ms) is too low.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max-wals	quota-backend-bytes	election-timeout
+[Ciri] Reason for max-wals: max-wals is no longer supported in etcd v3.5. The --max-wals flag was deprecated in v3.4 and removed in v3.5.
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes must be at least 8 MB (8388608 bytes). Setting it to 2 bytes is too low.
+[Ciri] Reason for election-timeout: election-timeout must be at least 1000ms. Setting it to 2000 (2ms) is too low.

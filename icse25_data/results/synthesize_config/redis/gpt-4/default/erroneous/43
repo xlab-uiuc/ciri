@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 1, 4]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['set-max-listpack-value', 'proto-max-bulk-len'], 'reason': ["The property 'set-max-listpack-value' is not a valid configuration directive.", "The value for 'proto-max-bulk-len' should be in bytes, but '512mb' is not a valid Redis size format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: set-max-listpack-value	proto-max-bulk-len
+[Ciri] Reason for set-max-listpack-value: The property 'set-max-listpack-value' is not a valid configuration directive.
+[Ciri] Reason for proto-max-bulk-len: The value for 'proto-max-bulk-len' should be in bytes, but '512mb' is not a valid Redis size format.

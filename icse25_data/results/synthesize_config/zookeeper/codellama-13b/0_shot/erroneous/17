@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'quorum.cnxn.threads.size', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.enableSasl', 'standaloneEnabled', 'tickTime', 'peerType', 'initLimit'], 'reason': ['maxClientCnxns should be a positive integer', 'quorum.cnxn.threads.size should be a positive integer', 'quorum.auth.learner.saslLoginContext should be a valid login context', 'quorum.auth.enableSasl should be a boolean', 'standaloneEnabled should be a boolean', 'tickTime should be a positive integer', 'peerType should be a valid peer type', 'initLimit should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'quorum.cnxn.threads.size', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.enableSasl', 'standaloneEnabled', 'tickTime', 'peerType', 'initLimit'], 'reason': ['maxClientCnxns should be a positive integer', 'quorum.cnxn.threads.size should be a positive integer', 'quorum.auth.learner.saslLoginContext should be a valid login context', 'quorum.auth.enableSasl should be a boolean', 'standaloneEnabled should be a boolean', 'tickTime should be a positive integer', 'peerType should be a valid peer type', 'initLimit should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['maxClientCnxns'], 'reason': ['maxClientCnxns=-100 is not a valid value. It must be a positive integer.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: maxClientCnxns	quorum.cnxn.threads.size	quorum.auth.learner.saslLoginContext	quorum.auth.enableSasl	standaloneEnabled	tickTime	peerType	initLimit
+[Ciri] Reason for maxClientCnxns: maxClientCnxns should be a positive integer
+[Ciri] Reason for quorum.cnxn.threads.size: quorum.cnxn.threads.size should be a positive integer
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext should be a valid login context
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl should be a boolean
+[Ciri] Reason for standaloneEnabled: standaloneEnabled should be a boolean
+[Ciri] Reason for tickTime: tickTime should be a positive integer
+[Ciri] Reason for peerType: peerType should be a valid peer type
+[Ciri] Reason for initLimit: initLimit should be a positive integer

@@ -1,0 +1,19 @@
+Wrong shot number:
+[11, 10, 9]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern', 'dfs.mover.retry.max.attempts'], 'reason': ["The property 'dfs.namenode.kerberos.principal.pattern' has the value '*' which is not a valid format for a Kerberos principal pattern.", "The property 'dfs.mover.retry.max.attempts' has the value '-100' which should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern', 'dfs.mover.retry.max.attempts'], 'reason': ["The property 'dfs.namenode.kerberos.principal.pattern' has the value '*' which is not a valid format for a Kerberos principal pattern.", "The property 'dfs.mover.retry.max.attempts' has the value '-100' which should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern', 'dfs.mover.retry.max.attempts'], 'reason': ["The property 'dfs.namenode.kerberos.principal.pattern' has the value '*' which is not a valid RegEx pattern.", "The property 'dfs.mover.retry.max.attempts' has the value '-100' which should be a positive integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.kerberos.principal.pattern	dfs.mover.retry.max.attempts
+[Ciri] Reason for dfs.namenode.kerberos.principal.pattern: The property 'dfs.namenode.kerberos.principal.pattern' has the value '*' which is not a valid RegEx pattern.
+[Ciri] Reason for dfs.mover.retry.max.attempts: The property 'dfs.mover.retry.max.attempts' has the value '-100' which should be a positive integer.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[7, 1, 2]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['huge_page_size'], 'reason': ["The property 'huge_page_size' should have a value in bytes, not just a numeric value."]}
+
+{'hasError': True, 'errParameter': ['huge_page_size'], 'reason': ["The property 'huge_page_size' should be specified in kilobytes or blocks, not just a numeric value."]}
+
+{'hasError': True, 'errParameter': ['huge_page_size', 'recovery_target_action', 'data_sync_retry'], 'reason': ["The property 'huge_page_size' should have a value in bytes, not just '1'.", "The property 'recovery_target_action' has an invalid value 'pause'.", "The property 'data_sync_retry' has an invalid value 'off'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: huge_page_size
+[Ciri] Reason for huge_page_size: The property 'huge_page_size' should have a value in bytes, not just a numeric value.

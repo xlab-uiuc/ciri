@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.webapp.api-service.enable</name>
+  <value>true</value>
+    <description>
+      Enable services rest api on ResourceManager.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.resource-tracker.nm.ip-hostname-check</name>
+  <value>true</value>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.memory.enabled</name>
+  <value>false</value>
+    <description>Whether YARN CGroups memory tracking is enabled.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage</name>
+  <value>90.0</value>
+    <description>The maximum percentage of disk space utilization allowed after 
+    which a disk is marked as bad. Values can range from 0.0 to 100.0. 
+    If the value is greater than or equal to 100, the nodemanager will check 
+    for full disk. This applies to yarn.nodemanager.local-dirs and
+    yarn.nodemanager.log-dirs.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.cgroups.mount</name>
+  <value>false</value>
+    <description>Whether the LCE should attempt to mount cgroups if not found.
+    This property only applies when the LCE resources handler is set to
+    CgroupsLCEResourcesHandler.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.enabled</name>
+  <value>false</value>
+    <description>
+    In the server side it indicates whether timeline service is enabled or not.
+    And in the client side, users can enable it to indicate whether client wants
+    to use timeline service. If its enabled in the client side along with
+    security, then yarn client tries to fetch the delegation tokens for the
+    timeline server.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.hostname</name>
+  <value>0.0.0.0</value>
+    <description>The hostname of the timeline service web application.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.elastic-memory-control.oom-handler</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.DefaultOOMHandler</value>
+    <description>
+      The name of a JVM class. The class must implement the Runnable
+      interface. It is called,
+      if yarn.nodemanager.elastic-memory-control.enabled
+      is set and the system reaches its memory limit.
+      When called the handler must preempt a container,
+      since all containers are frozen by cgroups.
+      Once preempted some memory is released, so that the
+      kernel can resume all containers. Because of this the
+      handler has to act quickly.
+    </description>
+</property>
+
+</configuration>

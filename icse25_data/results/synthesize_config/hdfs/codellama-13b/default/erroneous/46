@@ -1,0 +1,35 @@
+Wrong shot number:
+[11, 2, 15]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-address'], 'reason': ["The value of the property 'dfs.namenode.rpc-address' should be a valid IP address."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-address', 'nfs.mountd.port'], 'reason': ["The property 'dfs.namenode.rpc-address' has the value '127.0.0.1' which is not a valid IP address.", "The property 'nfs.mountd.port' has the value '65536' which is out of the valid range of an IP port."]}
+
+{'hasError': True, 'errParameter': ['nfs.mountd.port'], 'reason': ["The value of the property 'nfs.mountd.port' should be a valid port number."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-address', 'nfs.mountd.port'], 'reason': ["The property 'dfs.namenode.rpc-address' has the value '127.0.0.1' which is not a valid IP address.", "The property 'nfs.mountd.port' has the value '65536' which is out of the valid range of a port number."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-address'], 'reason': ["The property 'dfs.namenode.rpc-address' has the value '127.0.0.1' which is not a valid IP address."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-address', 'nfs.mountd.port', 'dfs.storage.policy.satisfier.keytab.file'], 'reason': ["The property 'dfs.namenode.rpc-address' has the value '127.0.0.1' which is not a valid IP address.", "The property 'nfs.mountd.port' has the value '65536' which is out of the valid range of a port number.", "The property 'dfs.storage.policy.satisfier.keytab.file' has the value '/valid/file1' which is not a valid file path."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-address', 'nfs.mountd.port'], 'reason': ["The property 'dfs.namenode.rpc-address' has the value '127.0.0.1' which is not a valid IP address.", "The property 'nfs.mountd.port' has the value '65536' which is not a valid port number."]}
+
+{'hasError': True, 'errParameter': ['nfs.mountd.port'], 'reason': ["The value of the property 'nfs.mountd.port' is not a valid port number."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.rpc-address', 'nfs.mountd.port'], 'reason': ["The property 'dfs.namenode.rpc-address' has the value '127.0.0.1' which is not a valid IP address.", "The property 'nfs.mountd.port' has the value '65536' which is out of the valid range of an IP port."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.rpc-address	nfs.mountd.port
+[Ciri] Reason for dfs.namenode.rpc-address: The property 'dfs.namenode.rpc-address' has the value '127.0.0.1' which is not a valid IP address.
+[Ciri] Reason for nfs.mountd.port: The property 'nfs.mountd.port' has the value '65536' which is out of the valid range of an IP port.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.replication.max', 'datanode.https.port'], 'reason': ['The maximum replication factor for HDFS 3.3.0 is 512, which is too high and can lead to performance issues. A more reasonable value would be around 3.', 'The default HTTPS port for DataNode in HDFS 3.3.0 is 9865, not 50475.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.replication.max	datanode.https.port
+[Ciri] Reason for dfs.replication.max: The maximum replication factor for HDFS 3.3.0 is 512, which is too high and can lead to performance issues. A more reasonable value would be around 3.
+[Ciri] Reason for datanode.https.port: The default HTTPS port for DataNode in HDFS 3.3.0 is 9865, not 50475.

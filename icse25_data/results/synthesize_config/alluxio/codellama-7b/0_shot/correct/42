@@ -1,0 +1,44 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.reader.close.timeout', 'alluxio.user.local.writer.chunk.size.bytes'], 'reason': ['alluxio.user.streaming.reader.close.timeout is not a valid property', 'alluxio.user.local.writer.chunk.size.bytes is not a valid property']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.reader.close.timeout', 'alluxio.user.file.ufs.tier.enabled', 'alluxio.user.client.cache.store.type', 'alluxio.underfs.oss.connection.max'], 'reason': ['alluxio.user.streaming.reader.close.timeout should be a positive integer', 'alluxio.user.file.ufs.tier.enabled should be a boolean', 'alluxio.user.client.cache.store.type should be one of [LOCAL, REDIS, LEVELDB, ROCKSDB]', 'alluxio.underfs.oss.connection.max should be a positive integer']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.reader.close.timeout'], 'reason': ['alluxio.user.streaming.reader.close.timeout is not a valid property']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.user.streaming.reader.close.timeout', 'alluxio.user.local.writer.chunk.size.bytes'], 'reason': ['alluxio.user.file.replication.max should be an integer', 'alluxio.user.streaming.reader.close.timeout should be a duration', 'alluxio.user.local.writer.chunk.size.bytes should be a size']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.user.file.replication.min', 'alluxio.user.streaming.reader.close.timeout', 'alluxio.user.local.writer.chunk.size.bytes'], 'reason': ['alluxio.user.file.replication.max should be greater than or equal to 1', 'alluxio.user.file.replication.min should be greater than or equal to 1', 'alluxio.user.streaming.reader.close.timeout should be greater than or equal to 0', 'alluxio.user.local.writer.chunk.size.bytes should be greater than or equal to 64KB']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.local.writer.chunk.size.bytes'], 'reason': ['alluxio.user.local.writer.chunk.size.bytes is not a valid property in Alluxio 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.reader.close.timeout', 'alluxio.user.file.ufs.tier.enabled', 'alluxio.user.client.cache.store.type', 'alluxio.underfs.oss.connection.max'], 'reason': ['alluxio.user.streaming.reader.close.timeout should be a positive integer', 'alluxio.user.file.ufs.tier.enabled should be a boolean', 'alluxio.user.client.cache.store.type should be a string', 'alluxio.underfs.oss.connection.max should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.reader.close.timeout', 'alluxio.user.file.ufs.tier.enabled', 'alluxio.user.client.cache.store.type', 'alluxio.underfs.oss.connection.max'], 'reason': ['alluxio.user.streaming.reader.close.timeout must be a positive integer', 'alluxio.user.file.ufs.tier.enabled must be a boolean', 'alluxio.user.client.cache.store.type must be a string', 'alluxio.underfs.oss.connection.max must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.user.file.replication.min', 'alluxio.user.streaming.reader.close.timeout'], 'reason': ['alluxio.user.file.replication.max must be greater than or equal to 1', 'alluxio.user.file.replication.min must be less than or equal to 1', 'alluxio.user.streaming.reader.close.timeout must be greater than or equal to 0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.reader.close.timeout'], 'reason': ['The value of alluxio.user.streaming.reader.close.timeout is not a valid time duration']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.reader.close.timeout', 'alluxio.user.file.ufs.tier.enabled', 'alluxio.user.client.cache.store.type', 'alluxio.underfs.oss.connection.max'], 'reason': ['alluxio.user.streaming.reader.close.timeout is not a valid property', 'alluxio.user.file.ufs.tier.enabled is not a valid property', 'alluxio.user.client.cache.store.type is not a valid property', 'alluxio.underfs.oss.connection.max is not a valid property']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.reader.close.timeout'], 'reason': ['alluxio.user.streaming.reader.close.timeout is not a valid property for Alluxio version 2.5.0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.streaming.reader.close.timeout
+[Ciri] Reason for alluxio.user.streaming.reader.close.timeout: alluxio.user.streaming.reader.close.timeout is not a valid property for Alluxio version 2.5.0

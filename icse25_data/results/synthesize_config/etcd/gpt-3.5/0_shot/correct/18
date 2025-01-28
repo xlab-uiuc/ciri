@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'auto-tls', 'max-snapshots', 'auto-compaction-retention', 'proxy-dial-timeout', 'initial-cluster-state'], 'reason': ['quota-backend-bytes should be set to a non-zero value', 'auto-tls should be set to true for enabling automatic TLS', 'max-snapshots should be set to a positive integer value', "auto-compaction-retention should be set to a duration string, e.g., '1h'", 'proxy-dial-timeout should be set to a positive integer value', "initial-cluster-state should be set to 'existing' for an existing cluster or 'new' for a new cluster"]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'auto-tls'], 'reason': ["'quota-backend-bytes' is missing a value.", "'auto-tls' is set to false which is not a valid value for etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'auto-tls', 'auto-compaction-retention', 'initial-cluster-state'], 'reason': ['quota-backend-bytes is set to 0, it should have a valid value', 'auto-tls should be set to true or false', 'auto-compaction-retention should be a duration string', "initial-cluster-state should be 'new', 'existing', or 'existing|new'"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'auto-tls'], 'reason': ["The 'quota-backend-bytes' parameter is missing a value or set to 0, it should have a valid size value.", "The 'auto-tls' parameter is set to false, but it should be set to true for enabling automatic TLS configuration."]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'auto-tls', 'auto-compaction-retention'], 'reason': ['quota-backend-bytes should be set to a positive value', 'auto-tls should be set to true for automatic TLS configuration', "auto-compaction-retention should be a duration string, e.g., '1h' for 1 hour"]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'auto-tls', 'auto-compaction-retention', 'initial-cluster-state'], 'reason': ['quota-backend-bytes should have a non-zero value', 'auto-tls should be set to true for automatic TLS', 'auto-compaction-retention should have a numeric value', "initial-cluster-state should be 'existing' or 'new'"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'auto-tls', 'auto-compaction-retention'], 'reason': ['quota-backend-bytes should be set to a positive integer value', 'auto-tls should be set to true or false', "auto-compaction-retention should be a duration string, e.g., '1h'"]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'auto-tls', 'auto-compaction-retention', 'proxy-dial-timeout'], 'reason': ['quota-backend-bytes should be set to a positive value', 'auto-tls should be set to true or false', 'auto-compaction-retention should be a number', 'proxy-dial-timeout should be a string with time unit (e.g., 2s)']}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'auto-tls', 'auto-compaction-retention'], 'reason': ["The 'quota-backend-bytes' parameter should have a non-zero value.", "The 'auto-tls' parameter should be set to 'true' for enabling automatic TLS.", "The 'auto-compaction-retention' parameter should be a duration string, e.g., '1h' for 1 hour."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quota-backend-bytes	auto-tls	auto-compaction-retention
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' parameter should have a non-zero value.
+[Ciri] Reason for auto-tls: auto-tls should be set to true or false
+[Ciri] Reason for auto-compaction-retention: The 'auto-compaction-retention' parameter should be a duration string, e.g., '1h' for 1 hour.

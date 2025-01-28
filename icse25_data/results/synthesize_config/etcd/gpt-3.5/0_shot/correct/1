@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'listen-peer-urls', 'proxy-write-timeout', 'auto-tls', 'advertise-client-urls', 'enable-pprof', 'discovery-fallback', 'proxy-dial-timeout'], 'reason': ['max-wals is not a valid configuration parameter for etcd version 3.5.0', 'listen-peer-urls should be an array of URLs', 'proxy-write-timeout should be specified in milliseconds', 'auto-tls should be a boolean value', 'advertise-client-urls should be an array of URLs', 'enable-pprof should be a boolean value', "discovery-fallback should be one of 'exit', 'proxy', or 'off'", 'proxy-dial-timeout should be specified in milliseconds']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'listen-peer-urls', 'proxy-write-timeout', 'auto-tls', 'advertise-client-urls', 'enable-pprof', 'discovery-fallback', 'proxy-dial-timeout'], 'reason': ["Unknown parameter 'max-wals' for etcd version 3.5.0", "Unknown parameter 'listen-peer-urls' for etcd version 3.5.0", "Unknown parameter 'proxy-write-timeout' for etcd version 3.5.0", "Unknown parameter 'auto-tls' for etcd version 3.5.0", "Unknown parameter 'advertise-client-urls' for etcd version 3.5.0", "Unknown parameter 'enable-pprof' for etcd version 3.5.0", "Unknown parameter 'discovery-fallback' for etcd version 3.5.0", "Unknown parameter 'proxy-dial-timeout' for etcd version 3.5.0"]}
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout', 'auto-tls', 'enable-pprof', 'discovery-fallback'], 'reason': ['max-wals should be max-wals-per-shard', 'proxy-write-timeout should be written as proxy-write-timeout-milliseconds', 'auto-tls should be written as auto-tls-enabled', 'enable-pprof should be written as enable-pprof-server', 'discovery-fallback should be written as discovery-fallback-servers']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: max-wals	listen-peer-urls	proxy-write-timeout	auto-tls	advertise-client-urls	enable-pprof	discovery-fallback	proxy-dial-timeout
+[Ciri] Reason for max-wals: max-wals is not a valid configuration parameter for etcd version 3.5.0
+[Ciri] Reason for listen-peer-urls: listen-peer-urls should be an array of URLs
+[Ciri] Reason for proxy-write-timeout: Unknown parameter 'proxy-write-timeout' for etcd version 3.5.0
+[Ciri] Reason for auto-tls: auto-tls should be a boolean value
+[Ciri] Reason for advertise-client-urls: advertise-client-urls should be an array of URLs
+[Ciri] Reason for enable-pprof: enable-pprof should be a boolean value
+[Ciri] Reason for discovery-fallback: Unknown parameter 'discovery-fallback' for etcd version 3.5.0
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout should be specified in milliseconds

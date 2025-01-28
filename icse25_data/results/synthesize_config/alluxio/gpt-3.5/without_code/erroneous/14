@@ -1,0 +1,26 @@
+Wrong shot number:
+[1, 13, 12]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host', 'alluxio.zookeeper.session.timeout', 'alluxio.underfs.gcs.version', 'alluxio.user.metadata.cache.max.size', 'alluxio.security.authentication.type', 'alluxio.user.client.cache.evictor.lfu.logbase', 'alluxio.master.network.max.inbound.message.size'], 'reason': ["The property 'alluxio.job.worker.bind.host' has an invalid IP address format.", "The property 'alluxio.zookeeper.session.timeout' should not have 's' as the unit for seconds.", "The property 'alluxio.underfs.gcs.version' should be an integer value.", "The property 'alluxio.user.metadata.cache.max.size' should have a value greater than 0.", "The property 'alluxio.security.authentication.type' has an invalid value.", "The property 'alluxio.user.client.cache.evictor.lfu.logbase' should be a floating-point number.", "The property 'alluxio.master.network.max.inbound.message.size' should have a value greater than 1MB."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host'], 'reason': ["The property 'alluxio.job.worker.bind.host' has an invalid IP address format. It should be a valid IP address."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host', 'alluxio.zookeeper.session.timeout', 'alluxio.underfs.gcs.version'], 'reason': ["The property 'alluxio.job.worker.bind.host' has an invalid IP address format.", "The value of the property 'alluxio.zookeeper.session.timeout' should not have 's' as a unit.", "The property 'alluxio.underfs.gcs.version' should be an integer value."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host'], 'reason': ["The property 'alluxio.job.worker.bind.host' has an invalid IP address format. It should be a valid IP address."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host', 'alluxio.zookeeper.session.timeout', 'alluxio.underfs.gcs.version', 'alluxio.user.metadata.cache.max.size', 'alluxio.security.authentication.type', 'alluxio.user.client.cache.evictor.lfu.logbase', 'alluxio.master.network.max.inbound.message.size'], 'reason': ["The property 'alluxio.job.worker.bind.host' has an invalid IP address format.", "The value of 'alluxio.zookeeper.session.timeout' should not have 's' as the unit.", "The property 'alluxio.underfs.gcs.version' should be an integer value.", "The value of 'alluxio.user.metadata.cache.max.size' should be greater than 0.", "The property 'alluxio.security.authentication.type' has an invalid authentication type.", "The value of 'alluxio.user.client.cache.evictor.lfu.logbase' should be a positive number.", "The value of 'alluxio.master.network.max.inbound.message.size' should not have 'MB' as the unit."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.bind.host'], 'reason': ["The property 'alluxio.job.worker.bind.host' has an invalid IP address format. It should be a valid IP address."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.job.worker.bind.host
+[Ciri] Reason for alluxio.job.worker.bind.host: The property 'alluxio.job.worker.bind.host' has an invalid IP address format. It should be a valid IP address.

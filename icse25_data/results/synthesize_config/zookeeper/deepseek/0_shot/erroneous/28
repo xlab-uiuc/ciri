@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress=0.0.256.0', 'quorum.auth.kerberos.servicePrincipal=zkquorum/localhost'], 'reason': ["The 'secureClientPortAddress' should be a valid IP address and it should be in the range 0.0.0.1 to 0.0.255.0. The value you provided 0.0.256.0 is not valid.", "The 'quorum.auth.kerberos.servicePrincipal' should be in the format of 'host/service', where 'host' is the hostname of the Kerberos server and 'service' is the service name. The value you provided zkquorum/localhost is not valid."]}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress=0.0.256.0', 'quorum.auth.kerberos.servicePrincipal=zkquorum/localhost'], 'reason': ["The 'secureClientPortAddress' should be in the range 0.0.0.1 to 0.0.255.255. The value you provided '0.0.256.0' is not in this range.", "The 'quorum.auth.kerberos.servicePrincipal' should be in the format of 'host/service'. The value you provided 'zkquorum/localhost' is not in this format."]}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress=0.0.256.0', 'quorum.auth.kerberos.servicePrincipal=zkquorum/localhost'], 'reason': ["The 'secureClientPortAddress' should be a valid IP address and it should not be greater than 255. In the given configuration, it is set to '0.0.256.0' which is not valid.", "The 'quorum.auth.kerberos.servicePrincipal' should be in the format of 'host/service'. In the given configuration, it is set to 'zkquorum/localhost' which is not in the correct format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPortAddress=0.0.256.0	quorum.auth.kerberos.servicePrincipal=zkquorum/localhost
+[Ciri] Reason for secureClientPortAddress=0.0.256.0: The 'secureClientPortAddress' should be a valid IP address and it should not be greater than 255. In the given configuration, it is set to '0.0.256.0' which is not valid.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal=zkquorum/localhost: The 'quorum.auth.kerberos.servicePrincipal' should be in the format of 'host/service'. The value you provided 'zkquorum/localhost' is not in this format.

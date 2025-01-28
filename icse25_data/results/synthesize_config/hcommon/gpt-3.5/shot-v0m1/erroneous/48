@@ -1,0 +1,13 @@
+Wrong shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'file.stream-buffer-size', 'hadoop.shell.missing.defaultFs.warning'], 'reason': ["The property 'fs.ftp.host.port' has the value '-100' which should be a positive integer.", "The property 'file.stream-buffer-size' is not a valid property for the HCommon version 3.3.0 configuration.", "The property 'hadoop.shell.missing.defaultFs.warning' has the value 'false' which is not a recognized configuration."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.host.port	file.stream-buffer-size	hadoop.shell.missing.defaultFs.warning
+[Ciri] Reason for fs.ftp.host.port: The property 'fs.ftp.host.port' has the value '-100' which should be a positive integer.
+[Ciri] Reason for file.stream-buffer-size: The property 'file.stream-buffer-size' is not a valid property for the HCommon version 3.3.0 configuration.
+[Ciri] Reason for hadoop.shell.missing.defaultFs.warning: The property 'hadoop.shell.missing.defaultFs.warning' has the value 'false' which is not a recognized configuration.

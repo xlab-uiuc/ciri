@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'fs.azure.secure.mode', 'ipc.[port_number].scheduler.priority.levels', 'adl.feature.ownerandgroup.enableupn'], 'reason': ['Invalid port number specified for fs.s3a.proxy.port. Port number should be between 1 and 65535.', "The property fs.azure.secure.mode has an incorrect usage tag 'usage' instead of 'description'.", "The property ipc.[port_number].scheduler.priority.levels has a placeholder '[port_number]' which should be replaced with an actual port number.", 'The property adl.feature.ownerandgroup.enableupn has an extra indentation in the value section.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.s3a.proxy.port	fs.azure.secure.mode	ipc.[port_number].scheduler.priority.levels	adl.feature.ownerandgroup.enableupn
+[Ciri] Reason for fs.s3a.proxy.port: Invalid port number specified for fs.s3a.proxy.port. Port number should be between 1 and 65535.
+[Ciri] Reason for fs.azure.secure.mode: The property fs.azure.secure.mode has an incorrect usage tag 'usage' instead of 'description'.
+[Ciri] Reason for ipc.[port_number].scheduler.priority.levels: The property ipc.[port_number].scheduler.priority.levels has a placeholder '[port_number]' which should be replaced with an actual port number.
+[Ciri] Reason for adl.feature.ownerandgroup.enableupn: The property adl.feature.ownerandgroup.enableupn has an extra indentation in the value section.

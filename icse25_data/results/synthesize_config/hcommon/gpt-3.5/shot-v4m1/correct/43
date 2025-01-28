@@ -1,0 +1,16 @@
+Wrong shot number:
+[12]
+
+Correct shot number:
+[13, 4, 5, 9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.search.group.hierarchy.levels', 'fs.trash.checkpoint.interval', 'ha.zookeeper.parent-znode'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.search.group.hierarchy.levels' has the value '-1' which is not a valid number of levels.", "The property 'fs.trash.checkpoint.interval' has the value '0' which should be greater than zero for proper trash checkpointing.", "The property 'ha.zookeeper.parent-znode' has a usage tag 'xmlPropsToSkipCompare.add' which is not a standard configuration property."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.search.group.hierarchy.levels	fs.trash.checkpoint.interval	ha.zookeeper.parent-znode
+[Ciri] Reason for hadoop.security.group.mapping.ldap.search.group.hierarchy.levels: The property 'hadoop.security.group.mapping.ldap.search.group.hierarchy.levels' has the value '-1' which is not a valid number of levels.
+[Ciri] Reason for fs.trash.checkpoint.interval: The property 'fs.trash.checkpoint.interval' has the value '0' which should be greater than zero for proper trash checkpointing.
+[Ciri] Reason for ha.zookeeper.parent-znode: The property 'ha.zookeeper.parent-znode' has a usage tag 'xmlPropsToSkipCompare.add' which is not a standard configuration property.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['unixsocketperm', 'hash-max-listpack-value'], 'reason': ["The 'unixsocketperm' value should be in the format of standard Unix permissions, which is typically a three-digit octal number (e.g., 775). The provided value '350' does not conform to this format.", "The 'hash-max-listpack-value' parameter does not exist in Redis configuration. The correct parameter for controlling the maximum size of a listpack value within a hash is 'hash-max-ziplist-value' in versions prior to Redis 6.0, and 'hash-max-listpack-size' in Redis 6.0 and later."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: unixsocketperm	hash-max-listpack-value
+[Ciri] Reason for unixsocketperm: The 'unixsocketperm' value should be in the format of standard Unix permissions, which is typically a three-digit octal number (e.g., 775). The provided value '350' does not conform to this format.
+[Ciri] Reason for hash-max-listpack-value: The 'hash-max-listpack-value' parameter does not exist in Redis configuration. The correct parameter for controlling the maximum size of a listpack value within a hash is 'hash-max-ziplist-value' in versions prior to Redis 6.0, and 'hash-max-listpack-size' in Redis 6.0 and later.

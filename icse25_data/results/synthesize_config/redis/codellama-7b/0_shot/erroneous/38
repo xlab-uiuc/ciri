@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'cluster-announce-bus-port', 'zset-max-listpack-entries', 'tcp-backlog', 'pidfile', 'rdb-save-incremental-fsync'], 'reason': ['daemonize is not a valid configuration parameter', 'cluster-announce-bus-port is not a valid configuration parameter', 'zset-max-listpack-entries is not a valid configuration parameter', 'tcp-backlog is not a valid configuration parameter', 'pidfile is not a valid configuration parameter', 'rdb-save-incremental-fsync is not a valid configuration parameter']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'zset-max-listpack-entries', 'tcp-backlog', 'pidfile', 'rdb-save-incremental-fsync', 'hll-sparse-max-bytes', 'tls-session-caching'], 'reason': ['cluster-announce-bus-port must be an integer', 'zset-max-listpack-entries must be an integer', 'tcp-backlog must be an integer', 'pidfile must be a valid file path', 'rdb-save-incremental-fsync must be a boolean', 'hll-sparse-max-bytes must be an integer', 'tls-session-caching must be a boolean']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'hll-sparse-max-bytes', 'tls-session-caching'], 'reason': ['cluster-announce-bus-port must be a positive integer', 'hll-sparse-max-bytes must be a positive integer', 'tls-session-caching must be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'hll-sparse-max-bytes', 'tls-session-caching'], 'reason': ['cluster-announce-bus-port must be an integer', 'hll-sparse-max-bytes must be an integer', 'tls-session-caching must be a boolean']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'hll-sparse-max-bytes', 'tls-session-caching', 'rdbcompression', 'tcp-backlog', 'pidfile', 'rdb-save-incremental-fsync', 'zset-max-listpack-entries'], 'reason': ['cluster-announce-bus-port must be an integer', 'hll-sparse-max-bytes must be an integer', 'tls-session-caching must be a boolean', 'rdbcompression must be a boolean', 'tcp-backlog must be an integer', 'pidfile must be a valid file path', 'rdb-save-incremental-fsync must be a boolean', 'zset-max-listpack-entries must be an integer']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-bus-port', 'hll-sparse-max-bytes', 'tls-session-caching'], 'reason': ['cluster-announce-bus-port should be an integer', 'hll-sparse-max-bytes should be an integer', 'tls-session-caching should be a boolean']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-bus-port	hll-sparse-max-bytes	tls-session-caching
+[Ciri] Reason for cluster-announce-bus-port: cluster-announce-bus-port should be an integer
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes should be an integer
+[Ciri] Reason for tls-session-caching: tls-session-caching should be a boolean

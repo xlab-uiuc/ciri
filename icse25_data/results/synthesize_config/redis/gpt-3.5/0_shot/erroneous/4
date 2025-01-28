@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-priority', 'unixsocketperm', 'hll-sparse-max-bytes', 'acllog-max-len', 'cluster-announce-port'], 'reason': ["Invalid parameter 'replica-priority'.", "Invalid parameter 'unixsocketperm'.", "Invalid parameter 'hll-sparse-max-bytes'.", "Invalid parameter 'acllog-max-len'.", "Invalid parameter 'cluster-announce-port'."]}
+
+{'hasError': True, 'errParameter': ['replica-priority', 'cluster-announce-port'], 'reason': ["Invalid parameter 'replica-priority'. It should be 'replica-priority 1' or 'replica-priority 2'.", "Invalid parameter 'cluster-announce-port'. It should be a valid port number."]}
+
+{'hasError': True, 'errParameter': ['replica-priority', 'cluster-announce-port'], 'reason': ["Invalid parameter 'replica-priority'. Use 'replica-priority' without the '=' sign.", "Invalid parameter 'cluster-announce-port'. Check the value provided for 'cluster-announce-port'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: replica-priority	cluster-announce-port
+[Ciri] Reason for replica-priority: Invalid parameter 'replica-priority'. It should be 'replica-priority 1' or 'replica-priority 2'.
+[Ciri] Reason for cluster-announce-port: Invalid parameter 'cluster-announce-port'. Check the value provided for 'cluster-announce-port'.

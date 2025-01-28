@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'nfs.mountd.port'], 'reason': ['The value for dfs.datanode.data.dir.perm should be a string representing the permissions in octal or symbolic format, not a number.', 'The nfs.mountd.port property is not a valid HDFS configuration property in version 3.3.0. It is likely related to the NFS gateway, which is a separate component.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.data.dir.perm	nfs.mountd.port
+[Ciri] Reason for dfs.datanode.data.dir.perm: The value for dfs.datanode.data.dir.perm should be a string representing the permissions in octal or symbolic format, not a number.
+[Ciri] Reason for nfs.mountd.port: The nfs.mountd.port property is not a valid HDFS configuration property in version 3.3.0. It is likely related to the NFS gateway, which is a separate component.

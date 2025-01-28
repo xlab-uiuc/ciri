@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.connection.max', 'alluxio.proxy.s3.deletetype', 'alluxio.web.threads'], 'reason': ["The property 'fs.cos.connection.max' is not a recognized Alluxio configuration property. It seems to be related to a different system or is incorrectly named.", "The correct property for specifying the delete type in Alluxio's S3 API is 'alluxio.proxy.s3.deleteType', not 'alluxio.proxy.s3.deletetype'. Property names are case-sensitive.", "The 'alluxio.web.threads' property cannot be set to 0. A value of 0 would imply no threads are available for the web server, which is not valid. A positive integer is expected."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.cos.connection.max	alluxio.proxy.s3.deletetype	alluxio.web.threads
+[Ciri] Reason for fs.cos.connection.max: The property 'fs.cos.connection.max' is not a recognized Alluxio configuration property. It seems to be related to a different system or is incorrectly named.
+[Ciri] Reason for alluxio.proxy.s3.deletetype: The correct property for specifying the delete type in Alluxio's S3 API is 'alluxio.proxy.s3.deleteType', not 'alluxio.proxy.s3.deletetype'. Property names are case-sensitive.
+[Ciri] Reason for alluxio.web.threads: The 'alluxio.web.threads' property cannot be set to 0. A value of 0 would imply no threads are available for the web server, which is not valid. A positive integer is expected.

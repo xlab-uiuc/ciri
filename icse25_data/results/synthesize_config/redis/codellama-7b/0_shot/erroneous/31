@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-protocols', 'aclfile', 'cluster-announce-port', 'repl-disable-tcp-nodelay', 'zset-max-listpack-entries', 'rdb-save-incremental-fsync'], 'reason': ["The parameter 'tls-protocols' does not exist in redis version 7.0.0", "The parameter 'aclfile' does not exist in redis version 7.0.0", "The parameter 'cluster-announce-port' must be between 0 and 65535", "The parameter 'repl-disable-tcp-nodelay' must be either 'yes' or 'no'", "The parameter 'zset-max-listpack-entries' must be between 16 and 1024", "The parameter 'rdb-save-incremental-fsync' must be either 'yes' or 'no'"]}
+
+{'hasError': True, 'errParameter': ['tls-protocols'], 'reason': ['The parameter tls-protocols does not exist in redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['tls-protocols'], 'reason': ["The parameter 'tls-protocols' is not a valid parameter for redis version 7.0.0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: tls-protocols
+[Ciri] Reason for tls-protocols: The parameter 'tls-protocols' is not a valid parameter for redis version 7.0.0.

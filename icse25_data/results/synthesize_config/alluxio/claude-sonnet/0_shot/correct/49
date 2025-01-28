@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.netty.worker.threads=0', 'alluxio.master.lock.pool.initsize=2000', 'alluxio.worker.network.netty.worker.threads=8'], 'reason': ['alluxio.user.network.streaming.netty.worker.threads should be greater than 0 for better performance.', 'alluxio.master.lock.pool.initsize is deprecated in Alluxio 2.5.0 and should be removed.', 'alluxio.worker.network.netty.worker.threads is deprecated in Alluxio 2.5.0 and should be removed.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.user.network.streaming.netty.worker.threads=0	alluxio.master.lock.pool.initsize=2000	alluxio.worker.network.netty.worker.threads=8
+[Ciri] Reason for alluxio.user.network.streaming.netty.worker.threads=0: alluxio.user.network.streaming.netty.worker.threads should be greater than 0 for better performance.
+[Ciri] Reason for alluxio.master.lock.pool.initsize=2000: alluxio.master.lock.pool.initsize is deprecated in Alluxio 2.5.0 and should be removed.
+[Ciri] Reason for alluxio.worker.network.netty.worker.threads=8: alluxio.worker.network.netty.worker.threads is deprecated in Alluxio 2.5.0 and should be removed.

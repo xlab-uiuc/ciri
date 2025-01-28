@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.webapp.ui2.enable', 'yarn.acl.enable', 'yarn.nodemanager.windows-container.cpu-limit.enabled'], 'reason': ["Property 'yarn.webapp.ui2.enable' should be set to 'true' for enabling RM web ui2 application.", "Property 'yarn.acl.enable' should be set to 'true' if ACLs are enabled.", "Property 'yarn.nodemanager.windows-container.cpu-limit.enabled' should be set to 'true' to enable CPU limit for Windows Job Object of containers."]}
+
+{'hasError': True, 'errParameter': ['yarn.webapp.ui2.enable', 'yarn.acl.enable', 'yarn.nodemanager.windows-container.cpu-limit.enabled'], 'reason': ["Property 'yarn.webapp.ui2.enable' is not recognized in YARN version 3.3.0.", "Property 'yarn.acl.enable' is not recognized in YARN version 3.3.0.", "Property 'yarn.nodemanager.windows-container.cpu-limit.enabled' is not recognized in YARN version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['yarn.webapp.ui2.enable', 'yarn.acl.enable', 'yarn.nodemanager.windows-container.cpu-limit.enabled'], 'reason': ["Property 'yarn.webapp.ui2.enable' should be set to 'true' for enabling RM web ui2 application.", "Property 'yarn.acl.enable' should be set to 'true' if ACLs are enabled.", "Property 'yarn.nodemanager.windows-container.cpu-limit.enabled' should be set to 'true' if CPU limit needs to be set for Windows Job Object of the containers."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.webapp.ui2.enable	yarn.acl.enable	yarn.nodemanager.windows-container.cpu-limit.enabled
+[Ciri] Reason for yarn.webapp.ui2.enable: Property 'yarn.webapp.ui2.enable' should be set to 'true' for enabling RM web ui2 application.
+[Ciri] Reason for yarn.acl.enable: Property 'yarn.acl.enable' should be set to 'true' if ACLs are enabled.
+[Ciri] Reason for yarn.nodemanager.windows-container.cpu-limit.enabled: Property 'yarn.nodemanager.windows-container.cpu-limit.enabled' should be set to 'true' to enable CPU limit for Windows Job Object of containers.

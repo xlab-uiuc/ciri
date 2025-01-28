@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry', 'dfs.client.block.write.replace-datanode-on-failure.min-replication', 'dfs.namenode.checkpoint.period', 'dfs.namenode.caching.enabled', 'dfs.domain.socket.path', 'dfs.namenode.storageinfo.defragment.timeout.ms', 'dfs.webhdfs.oauth2.enabled', 'dfs.reformat.disabled'], 'reason': ['The value of dfs.client.cached.conn.retry should be a positive integer. The value of -1 is invalid.', 'The value of dfs.client.block.write.replace-datanode-on-failure.min-replication should be a positive integer. The value of -1 is invalid.', 'The value of dfs.namenode.checkpoint.period should be a positive integer. The value of 3600s is invalid.', 'The value of dfs.namenode.caching.enabled should be a boolean. The value of false is invalid.', 'The value of dfs.domain.socket.path should be a valid path. The value of /valid/file2 is invalid.', 'The value of dfs.namenode.storageinfo.defragment.timeout.ms should be a positive integer. The value of 8 is invalid.', 'The value of dfs.webhdfs.oauth2.enabled should be a boolean. The value of true is invalid.', 'The value of dfs.reformat.disabled should be a boolean. The value of false is invalid.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.client.cached.conn.retry	dfs.client.block.write.replace-datanode-on-failure.min-replication	dfs.namenode.checkpoint.period	dfs.namenode.caching.enabled	dfs.domain.socket.path	dfs.namenode.storageinfo.defragment.timeout.ms	dfs.webhdfs.oauth2.enabled	dfs.reformat.disabled
+[Ciri] Reason for dfs.client.cached.conn.retry: The value of dfs.client.cached.conn.retry should be a positive integer. The value of -1 is invalid.
+[Ciri] Reason for dfs.client.block.write.replace-datanode-on-failure.min-replication: The value of dfs.client.block.write.replace-datanode-on-failure.min-replication should be a positive integer. The value of -1 is invalid.
+[Ciri] Reason for dfs.namenode.checkpoint.period: The value of dfs.namenode.checkpoint.period should be a positive integer. The value of 3600s is invalid.
+[Ciri] Reason for dfs.namenode.caching.enabled: The value of dfs.namenode.caching.enabled should be a boolean. The value of false is invalid.
+[Ciri] Reason for dfs.domain.socket.path: The value of dfs.domain.socket.path should be a valid path. The value of /valid/file2 is invalid.
+[Ciri] Reason for dfs.namenode.storageinfo.defragment.timeout.ms: The value of dfs.namenode.storageinfo.defragment.timeout.ms should be a positive integer. The value of 8 is invalid.
+[Ciri] Reason for dfs.webhdfs.oauth2.enabled: The value of dfs.webhdfs.oauth2.enabled should be a boolean. The value of true is invalid.
+[Ciri] Reason for dfs.reformat.disabled: The value of dfs.reformat.disabled should be a boolean. The value of false is invalid.

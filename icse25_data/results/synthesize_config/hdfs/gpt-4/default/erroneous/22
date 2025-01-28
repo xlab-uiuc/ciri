@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 6, 5]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.invalidate.work.pct.per.iteration', 'nfs.mountd.port'], 'reason': ["The property 'dfs.namenode.invalidate.work.pct.per.iteration' has the value '0.32f' which is not a valid format. It should be a decimal representing a percentage without the 'f' suffix.", "The property 'nfs.mountd.port' has the value '-100.22' which is not a valid port number. Port numbers should be an integer between 0 and 65535."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.invalidate.work.pct.per.iteration	nfs.mountd.port
+[Ciri] Reason for dfs.namenode.invalidate.work.pct.per.iteration: The property 'dfs.namenode.invalidate.work.pct.per.iteration' has the value '0.32f' which is not a valid format. It should be a decimal representing a percentage without the 'f' suffix.
+[Ciri] Reason for nfs.mountd.port: The property 'nfs.mountd.port' has the value '-100.22' which is not a valid port number. Port numbers should be an integer between 0 and 65535.

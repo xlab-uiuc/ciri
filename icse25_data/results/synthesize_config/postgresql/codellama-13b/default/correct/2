@@ -1,0 +1,26 @@
+Wrong shot number:
+[8, 5, 7]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['client_encoding'], 'reason': ["The property 'client_encoding' has the value 'sql_ascii' which is not within the accepted value {UTF8, SQL_ASCII}."]}
+
+{'hasError': True, 'errParameter': ['work_mem'], 'reason': ["The value of the property 'work_mem' should be greater than or equal to the value of the property 'shared_buffers'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['work_mem'], 'reason': ["The value of the property 'work_mem' should be a multiple of 1MB."]}
+
+{'hasError': True, 'errParameter': ['work_mem'], 'reason': ["The value of the property 'work_mem' should be larger than the value of the property 'shared_buffers'."]}
+
+{'hasError': True, 'errParameter': ['work_mem'], 'reason': ["The value of the property 'work_mem' should be larger than the value of the property 'shared_buffers'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: work_mem
+[Ciri] Reason for work_mem: The value of the property 'work_mem' should be larger than the value of the property 'shared_buffers'.

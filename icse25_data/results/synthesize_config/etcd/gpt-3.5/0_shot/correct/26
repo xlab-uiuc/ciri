@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'logger'], 'reason': ["The 'proxy-read-timeout' parameter should be in seconds, but the value '2' does not specify the unit. It should be specified as '2s'.", "The 'logger' parameter should specify a valid logging configuration, such as 'zap', 'logrus', etc."]}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'logger', 'discovery-fallback'], 'reason': ["The 'proxy-read-timeout' parameter should be specified in seconds, not just the number 2.", "The 'logger' parameter should specify a valid logging configuration, such as 'zap' or 'logrus'.", "The 'discovery-fallback' parameter should be a valid fallback option, such as 'proxy' or 'dns'."]}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout'], 'reason': ["'proxy-read-timeout' is not a valid parameter for etcd version 3.5.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout'], 'reason': ["The parameter 'proxy-read-timeout' should be specified in seconds, not just the number 2. It should be in the format '2s'."]}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout'], 'reason': ["The 'proxy-read-timeout' parameter should be specified in seconds, but the value provided is 2 which might be too low for a read timeout."]}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout'], 'reason': ["The parameter 'proxy-read-timeout' is not a valid configuration option for etcd version 3.5.0."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: proxy-read-timeout
+[Ciri] Reason for proxy-read-timeout: The 'proxy-read-timeout' parameter should be specified in seconds, but the value provided is 2 which might be too low for a read timeout.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['recovery_target_timeline', 'recovery_target_inclusive', 'max_stack_depth'], 'reason': ['recovery_target_timeline is a command-line option, not a configuration parameter.', 'recovery_target_inclusive is a command-line option, not a configuration parameter.', 'max_stack_depth is not a valid configuration parameter in PostgreSQL 13.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: recovery_target_timeline	recovery_target_inclusive	max_stack_depth
+[Ciri] Reason for recovery_target_timeline: recovery_target_timeline is a command-line option, not a configuration parameter.
+[Ciri] Reason for recovery_target_inclusive: recovery_target_inclusive is a command-line option, not a configuration parameter.
+[Ciri] Reason for max_stack_depth: max_stack_depth is not a valid configuration parameter in PostgreSQL 13.0.

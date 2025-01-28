@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 12, 6]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.worker.tieredstore.level0.dirs.quota'], 'reason': ["The property 'alluxio.job.master.client.threads' should have a positive value.", "The property 'alluxio.worker.tieredstore.level0.dirs.quota' is referencing another property '${alluxio.worker.ramdisk.size}' which may not be defined or resolved correctly."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.worker.tieredstore.level0.dirs.quota'], 'reason': ["The property 'alluxio.job.master.client.threads' should have a positive value.", "The property 'alluxio.worker.tieredstore.level0.dirs.quota' has a reference to '${alluxio.worker.ramdisk.size}' which may not be resolved properly."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.worker.tieredstore.level0.dirs.quota'], 'reason': ["The property 'alluxio.job.master.client.threads' should have a positive value.", "The property 'alluxio.worker.tieredstore.level0.dirs.quota' is referencing another property '${alluxio.worker.ramdisk.size}' which may cause issues if 'alluxio.worker.ramdisk.size' is not defined or has an incorrect value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.client.threads	alluxio.worker.tieredstore.level0.dirs.quota
+[Ciri] Reason for alluxio.job.master.client.threads: The property 'alluxio.job.master.client.threads' should have a positive value.
+[Ciri] Reason for alluxio.worker.tieredstore.level0.dirs.quota: The property 'alluxio.worker.tieredstore.level0.dirs.quota' is referencing another property '${alluxio.worker.ramdisk.size}' which may cause issues if 'alluxio.worker.ramdisk.size' is not defined or has an incorrect value.

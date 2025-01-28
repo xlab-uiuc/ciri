@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.fuse.shared.caching.reader.enabled', 'alluxio.worker.network.reader.max.chunk.size.bytes', 'alluxio.table.transform.manager.job.history.retention.time', 'alluxio.web.file.info.enabled', 'alluxio.underfs.eventual.consistency.retry.max.num'], 'reason': ['Invalid value type. Expected integer.', 'Invalid value format. Should be in bytes (e.g., 1048576 for 1MB).', 'Invalid value format. Should be in seconds.', 'Invalid value type. Expected boolean.', 'Invalid value. Should be greater than 0.']}
+
+{'hasError': True, 'errParameter': ['alluxio.fuse.shared.caching.reader.enabled', 'alluxio.worker.network.reader.max.chunk.size.bytes', 'alluxio.table.transform.manager.job.history.retention.time', 'alluxio.web.file.info.enabled', 'alluxio.underfs.eventual.consistency.retry.max.num'], 'reason': ['Invalid value type. Expected integer.', 'Invalid value format. Should be in bytes format.', 'Invalid value format. Should be in seconds format.', 'Invalid value type. Expected boolean.', 'Invalid value. Must be greater than or equal to 1.']}
+
+{'hasError': True, 'errParameter': ['alluxio.fuse.shared.caching.reader.enabled', 'alluxio.worker.network.reader.max.chunk.size.bytes', 'alluxio.table.transform.manager.job.history.retention.time', 'alluxio.web.file.info.enabled', 'alluxio.underfs.eventual.consistency.retry.max.num'], 'reason': ['Invalid value type. Value should be a boolean.', 'Invalid value format. Value should be in bytes format (e.g., 1048576 for 1MB).', 'Invalid value format. Value should be in seconds format (e.g., 300s for 300 seconds).', 'Invalid value type. Value should be a boolean.', 'Invalid value. Value should be greater than 0.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.fuse.shared.caching.reader.enabled	alluxio.worker.network.reader.max.chunk.size.bytes	alluxio.table.transform.manager.job.history.retention.time	alluxio.web.file.info.enabled	alluxio.underfs.eventual.consistency.retry.max.num
+[Ciri] Reason for alluxio.fuse.shared.caching.reader.enabled: Invalid value type. Expected integer.
+[Ciri] Reason for alluxio.worker.network.reader.max.chunk.size.bytes: Invalid value format. Should be in bytes format.
+[Ciri] Reason for alluxio.table.transform.manager.job.history.retention.time: Invalid value format. Should be in seconds format.
+[Ciri] Reason for alluxio.web.file.info.enabled: Invalid value type. Expected boolean.
+[Ciri] Reason for alluxio.underfs.eventual.consistency.retry.max.num: Invalid value. Should be greater than 0.

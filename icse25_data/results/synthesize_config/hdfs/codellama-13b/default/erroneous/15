@@ -1,0 +1,18 @@
+Wrong shot number:
+[15, 4, 8]
+
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.du.reserved.pct'], 'reason': ["The value of the property 'dfs.datanode.du.reserved.pct' should be a non-negative integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.du.reserved.pct', 'dfs.namenode.checkpoint.dir'], 'reason': ["The property 'dfs.datanode.du.reserved.pct' has the value '0' which is less than the minimum value of 1.0.", "The property 'dfs.namenode.checkpoint.dir' has the value '/valid/dir2' which does not follow the correct URL format."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.du.reserved.pct'], 'reason': ["The value of the property 'dfs.datanode.du.reserved.pct' should be between 0 and 100."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.du.reserved.pct
+[Ciri] Reason for dfs.datanode.du.reserved.pct: The value of the property 'dfs.datanode.du.reserved.pct' should be a non-negative integer.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.balancer.moverThreads', 'dfs.client.read.prefetch.size'], 'reason': ['The value 500 for dfs.balancer.moverThreads is too high and can lead to resource exhaustion. A recommended value is between 100-200.', 'The value 0.1 for dfs.client.read.prefetch.size is invalid. It should be an integer value representing the number of bytes to prefetch.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.balancer.moverThreads	dfs.client.read.prefetch.size
+[Ciri] Reason for dfs.balancer.moverThreads: The value 500 for dfs.balancer.moverThreads is too high and can lead to resource exhaustion. A recommended value is between 100-200.
+[Ciri] Reason for dfs.client.read.prefetch.size: The value 0.1 for dfs.client.read.prefetch.size is invalid. It should be an integer value representing the number of bytes to prefetch.

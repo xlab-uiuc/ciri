@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'no-appendfsync-on-rewrite', 'bind-source-addr', 'lazyfree-lazy-eviction', 'aof-rewrite-incremental-fsync', 'cluster-announce-port', 'appenddirname', 'activerehashing'], 'reason': ['cluster-announce-tls-port is not a valid port number', 'no-appendfsync-on-rewrite is not a valid boolean', 'bind-source-addr is not a valid IP address', 'lazyfree-lazy-eviction is not a valid boolean', 'aof-rewrite-incremental-fsync is not a valid boolean', 'cluster-announce-port is not a valid port number', 'appenddirname is not a valid directory', 'activerehashing is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'no-appendfsync-on-rewrite', 'bind-source-addr', 'lazyfree-lazy-eviction', 'aof-rewrite-incremental-fsync', 'cluster-announce-port', 'appenddirname', 'activerehashing'], 'reason': ['cluster-announce-tls-port should be a port number, not a string', 'no-appendfsync-on-rewrite should be a boolean, not a string', 'bind-source-addr should be an IP address, not a string', 'lazyfree-lazy-eviction should be a boolean, not a string', 'aof-rewrite-incremental-fsync should be a boolean, not a string', 'cluster-announce-port should be a port number, not a string', 'appenddirname should be a directory, not a string', 'activerehashing should be a boolean, not a string']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'no-appendfsync-on-rewrite', 'bind-source-addr', 'lazyfree-lazy-eviction', 'aof-rewrite-incremental-fsync', 'cluster-announce-port', 'appenddirname', 'activerehashing'], 'reason': ['cluster-announce-tls-port is not a valid port number', 'no-appendfsync-on-rewrite is not a valid boolean', 'bind-source-addr is not a valid IP address', 'lazyfree-lazy-eviction is not a valid boolean', 'aof-rewrite-incremental-fsync is not a valid boolean', 'cluster-announce-port is not a valid port number', 'appenddirname is not a valid directory name', 'activerehashing is not a valid boolean']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: cluster-announce-tls-port	no-appendfsync-on-rewrite	bind-source-addr	lazyfree-lazy-eviction	aof-rewrite-incremental-fsync	cluster-announce-port	appenddirname	activerehashing
+[Ciri] Reason for cluster-announce-tls-port: cluster-announce-tls-port is not a valid port number
+[Ciri] Reason for no-appendfsync-on-rewrite: no-appendfsync-on-rewrite is not a valid boolean
+[Ciri] Reason for bind-source-addr: bind-source-addr is not a valid IP address
+[Ciri] Reason for lazyfree-lazy-eviction: lazyfree-lazy-eviction is not a valid boolean
+[Ciri] Reason for aof-rewrite-incremental-fsync: aof-rewrite-incremental-fsync is not a valid boolean
+[Ciri] Reason for cluster-announce-port: cluster-announce-port is not a valid port number
+[Ciri] Reason for appenddirname: appenddirname is not a valid directory
+[Ciri] Reason for activerehashing: activerehashing is not a valid boolean

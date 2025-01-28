@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.infoserver.redirect</name>
+  <value>true</value>
+    <description>Whether or not the Master listens to the Master web
+      UI port (hbase.master.info.port) and redirects requests to the web
+      UI server shared by the Master and RegionServer. Config. makes
+      sense when Master is serving Regions (not the default).</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.info.bindAddress</name>
+  <value>127.0.0.1</value>
+    <description>The address for the HBase RegionServer web UI</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.callqueue.scan.ratio</name>
+  <value>0</value>
+    <description>Given the number of read call queues, calculated from the total number
+      of call queues multiplied by the callqueue.read.ratio, the scan.ratio property
+      will split the read call queues into small-read and long-read queues.
+      A value lower than 0.5 means that there will be less long-read queues than short-read queues.
+      A value of 0.5 means that there will be the same number of short-read and long-read queues.
+      A value greater than 0.5 means that there will be more long-read queues than short-read queues
+      A value of 0 or 1 indicate to use the same set of queues for gets and scans.
+
+      Example: Given the total number of read call queues being 8
+      a scan.ratio of 0 or 1 means that: 8 queues will contain both long and short read requests.
+      a scan.ratio of 0.3 means that: 2 queues will contain only long-read requests
+      and 6 queues will contain only short-read requests.
+      a scan.ratio of 0.5 means that: 4 queues will contain only long-read requests
+      and 4 queues will contain only short-read requests.
+      a scan.ratio of 0.8 means that: 6 queues will contain only long-read requests
+      and 2 queues will contain only short-read requests.
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.hlog.writer.impl</name>
+  <value>org.apache.hadoop.hbase.regionserver.wal.ProtobufLogWriter</value>
+    <description>The WAL file writer implementation.</description>
+</property>
+
+<property>
+  <name>hbase.offpeak.end.hour</name>
+  <value>-1</value>
+    <description>The end of off-peak hours, expressed as an integer between 0 and 23, inclusive. Set
+      to -1 to disable off-peak.</description>
+</property>
+
+<property>
+  <name>hbase.rest.support.proxyuser</name>
+  <value>false</value>
+    <description>Enables running the REST server to support proxy-user mode.</description>
+</property>
+
+<property>
+  <name>hbase.status.publisher.class</name>
+  <value>org.apache.hadoop.hbase.master.ClusterStatusPublisher$MulticastPublisher</value>
+    <description>
+      Implementation of the status publication with a multicast message.
+    </description>
+</property>
+
+<property>
+  <name>hbase.status.multicast.address.ip</name>
+  <value>0.0.256.0</value>
+    <description>
+      Multicast address to use for the status publication by multicast.
+    </description>
+</property>
+
+</configuration>

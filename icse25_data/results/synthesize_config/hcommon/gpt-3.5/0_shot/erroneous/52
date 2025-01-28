@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'fs.s3a.select.input.compression', 'ipc.[port_number].identity-provider.impl'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has an incorrect value format. It should be in the format 'number[smhd]'.", "The property 'fs.s3a.select.input.compression' has an incorrect value. It should be either 'none' or 'gzip'.", "The property 'ipc.[port_number].identity-provider.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number."]}
+
+{'hasError': True, 'errParameter': ['hadoop.http.filter.initializers', 'fs.s3a.select.input.compression'], 'reason': ["The property 'hadoop.http.filter.initializers' is missing a usage example.", "The property 'fs.s3a.select.input.compression' is missing a usage example."]}
+
+{'hasError': True, 'errParameter': ['hadoop.http.filter.initializers', 'fs.s3a.select.input.compression'], 'reason': ["The property 'hadoop.http.filter.initializers' is missing the 'usage' tag.", "The property 'fs.s3a.select.input.compression' is missing the 'usage' tag."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.http.filter.initializers	fs.s3a.select.input.compression
+[Ciri] Reason for hadoop.http.filter.initializers: The property 'hadoop.http.filter.initializers' is missing the 'usage' tag.
+[Ciri] Reason for fs.s3a.select.input.compression: The property 'fs.s3a.select.input.compression' is missing the 'usage' tag.

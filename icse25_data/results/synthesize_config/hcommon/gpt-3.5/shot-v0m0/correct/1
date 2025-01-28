@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.automatic.close', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds'], 'reason': ["The 'fs.ftp.transfer.mode' property has an additional 'usage' tag which is not a standard configuration property.", "The 'fs.automatic.close' property has an additional 'usage' tag which is not a standard configuration property.", "The 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' property contains square brackets in the name which is not a valid format for a property name."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.automatic.close	ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds
+[Ciri] Reason for fs.ftp.transfer.mode: The 'fs.ftp.transfer.mode' property has an additional 'usage' tag which is not a standard configuration property.
+[Ciri] Reason for fs.automatic.close: The 'fs.automatic.close' property has an additional 'usage' tag which is not a standard configuration property.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds: The 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' property contains square brackets in the name which is not a valid format for a property name.

@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SHORT_DATE_FORMAT', 'CSRF_COOKIE_DOMAIN', 'DEFAULT_AUTO_FIELD', 'SIGNING_BACKEND', 'PREPEND_WWW'], 'reason': ["The 'SHORT_DATE_FORMAT' setting should be in the format 'd/m/Y' for day/month/year.", "The 'CSRF_COOKIE_DOMAIN' setting should not be set to None. It should be a string value.", "The 'DEFAULT_AUTO_FIELD' setting should be 'django.db.models.BigAutoField' for Django 4.0.", "The 'SIGNING_BACKEND' setting should be 'django.core.signing.JSONWebSignatureSerializer' for Django 4.0.", "The 'PREPEND_WWW' setting should be set to False for Django 4.0."]}
+
+{'hasError': True, 'errParameter': ['PREPEND_WWW'], 'reason': ['PREPEND_WWW setting is not supported in Django 4.0. It has been removed.']}
+
+{'hasError': True, 'errParameter': ['SHORT_DATE_FORMAT', 'CSRF_COOKIE_DOMAIN', 'DEFAULT_AUTO_FIELD', 'SIGNING_BACKEND', 'PREPEND_WWW'], 'reason': ["The 'SHORT_DATE_FORMAT' should be in the format 'd/m/Y' for day/month/year.", "The 'CSRF_COOKIE_DOMAIN' should not be set to 'None'.", "The 'DEFAULT_AUTO_FIELD' should be 'django.db.models.BigAutoField' for Django 4.0.", "The 'SIGNING_BACKEND' should be 'django.core.signing.JSONWebSignatureSerializer' for Django 4.0.", "The 'PREPEND_WWW' should be set to 'False' for Django 4.0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: SHORT_DATE_FORMAT	CSRF_COOKIE_DOMAIN	DEFAULT_AUTO_FIELD	SIGNING_BACKEND	PREPEND_WWW
+[Ciri] Reason for SHORT_DATE_FORMAT: The 'SHORT_DATE_FORMAT' should be in the format 'd/m/Y' for day/month/year.
+[Ciri] Reason for CSRF_COOKIE_DOMAIN: The 'CSRF_COOKIE_DOMAIN' should not be set to 'None'.
+[Ciri] Reason for DEFAULT_AUTO_FIELD: The 'DEFAULT_AUTO_FIELD' setting should be 'django.db.models.BigAutoField' for Django 4.0.
+[Ciri] Reason for SIGNING_BACKEND: The 'SIGNING_BACKEND' should be 'django.core.signing.JSONWebSignatureSerializer' for Django 4.0.
+[Ciri] Reason for PREPEND_WWW: The 'PREPEND_WWW' should be set to 'False' for Django 4.0.

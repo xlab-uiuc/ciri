@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'max-wals', 'proxy-write-timeout', 'max-snapshots', 'force-new-cluster', 'log-level', 'auto-tls'], 'reason': ['proxy-failure-wait must be a duration string', 'max-wals must be an integer', 'proxy-write-timeout must be a duration string', 'max-snapshots must be an integer', 'force-new-cluster must be a boolean', 'log-level must be a string', 'auto-tls must be a boolean']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'max-wals', 'proxy-write-timeout', 'max-snapshots', 'force-new-cluster', 'auto-tls'], 'reason': ['proxy-failure-wait must be a positive integer', 'max-wals must be a positive integer', 'proxy-write-timeout must be a positive integer', 'max-snapshots must be a positive integer', 'force-new-cluster must be a boolean', 'auto-tls must be a boolean']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'max-wals', 'proxy-write-timeout', 'max-snapshots', 'force-new-cluster', 'auto-tls'], 'reason': ['proxy-failure-wait must be a duration', 'max-wals must be a positive integer', 'proxy-write-timeout must be a duration', 'max-snapshots must be a positive integer', 'force-new-cluster must be a boolean', 'auto-tls must be a boolean']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: proxy-failure-wait	max-wals	proxy-write-timeout	max-snapshots	force-new-cluster	auto-tls
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait must be a positive integer
+[Ciri] Reason for max-wals: max-wals must be a positive integer
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout must be a duration
+[Ciri] Reason for max-snapshots: max-snapshots must be a positive integer
+[Ciri] Reason for force-new-cluster: force-new-cluster must be a boolean
+[Ciri] Reason for auto-tls: auto-tls must be a boolean

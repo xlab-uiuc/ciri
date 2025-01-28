@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'list-max-listpack-size'], 'reason': ["The 'hash-max-listpack-value' parameter is incorrect or not applicable for Redis version 7.0.0. The correct parameter for controlling the maximum listpack value size for hash fields is 'hash-max-ziplist-value'.", "The 'list-max-listpack-size' parameter is incorrect or not applicable for Redis version 7.0.0. The correct parameter for controlling the maximum listpack size for lists is 'list-max-ziplist-size'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hash-max-listpack-value	list-max-listpack-size
+[Ciri] Reason for hash-max-listpack-value: The 'hash-max-listpack-value' parameter is incorrect or not applicable for Redis version 7.0.0. The correct parameter for controlling the maximum listpack value size for hash fields is 'hash-max-ziplist-value'.
+[Ciri] Reason for list-max-listpack-size: The 'list-max-listpack-size' parameter is incorrect or not applicable for Redis version 7.0.0. The correct parameter for controlling the maximum listpack size for lists is 'list-max-ziplist-size'.

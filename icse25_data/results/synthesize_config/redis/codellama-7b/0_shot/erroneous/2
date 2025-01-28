@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdb-save-incremental-fsync', 'unixsocketperm', 'hz', 'zset-max-listpack-value'], 'reason': ["The parameter 'rdb-save-incremental-fsync' is not supported in redis version 7.0.0.", "The parameter 'unixsocketperm' is not supported in redis version 7.0.0.", "The parameter 'hz' is not supported in redis version 7.0.0.", "The parameter 'zset-max-listpack-value' is not supported in redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['rdb-save-incremental-fsync'], 'reason': ['rdb-save-incremental-fsync is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['timeout', 'tcp-keepalive', 'zset-max-listpack-value'], 'reason': ['timeout must be a positive integer', 'tcp-keepalive must be a positive integer', 'zset-max-listpack-value must be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdb-save-incremental-fsync', 'unixsocketperm', 'list-max-listpack-size', 'hz', 'zset-max-listpack-value'], 'reason': ["The parameter 'rdb-save-incremental-fsync' is not supported in redis version 7.0.0.", "The parameter 'unixsocketperm' is not supported in redis version 7.0.0.", "The parameter 'list-max-listpack-size' is not supported in redis version 7.0.0.", "The parameter 'hz' is not supported in redis version 7.0.0.", "The parameter 'zset-max-listpack-value' is not supported in redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['timeout', 'tcp-keepalive', 'list-max-listpack-size', 'zset-max-listpack-value'], 'reason': ['timeout value must be greater than 0', 'tcp-keepalive value must be greater than 0', 'list-max-listpack-size value must be greater than or equal to -2', 'zset-max-listpack-value value must be greater than or equal to 32']}
+
+{'hasError': True, 'errParameter': ['rdb-save-incremental-fsync', 'list-max-listpack-size', 'zset-max-listpack-value'], 'reason': ["The parameter 'rdb-save-incremental-fsync' is not supported in redis version 7.0.0", "The parameter 'list-max-listpack-size' is not supported in redis version 7.0.0", "The parameter 'zset-max-listpack-value' is not supported in redis version 7.0.0"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['timeout', 'tcp-keepalive', 'zset-max-listpack-value'], 'reason': ['timeout must be a positive integer', 'tcp-keepalive must be a positive integer', 'zset-max-listpack-value must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['timeout', 'tcp-keepalive', 'zset-max-listpack-value'], 'reason': ['timeout must be a positive integer', 'tcp-keepalive must be a positive integer', 'zset-max-listpack-value must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['timeout', 'tcp-keepalive', 'zset-max-listpack-value'], 'reason': ['timeout must be a positive integer', 'tcp-keepalive must be a positive integer', 'zset-max-listpack-value must be a positive integer']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: timeout	tcp-keepalive	zset-max-listpack-value
+[Ciri] Reason for timeout: timeout must be a positive integer
+[Ciri] Reason for tcp-keepalive: tcp-keepalive must be a positive integer
+[Ciri] Reason for zset-max-listpack-value: zset-max-listpack-value must be a positive integer

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.remote-app-log-dir', 'yarn.nodemanager.resource.system-reserved-memory-mb', 'yarn.nodemanager.health-checker.timeout-ms', 'yarn.nodemanager.linux-container-executor.path', 'yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed', 'yarn.sharedcache.app-checker.class', 'yarn.client.application-client-protocol.poll-interval-ms', 'yarn.nodemanager.pluggable-device-framework.enabled'], 'reason': ['yarn.nodemanager.remote-app-log-dir: The value must be a valid file system path.', 'yarn.nodemanager.resource.system-reserved-memory-mb: The value must be greater than or equal to 0.', 'yarn.nodemanager.health-checker.timeout-ms: The value must be greater than or equal to 0.', 'yarn.nodemanager.linux-container-executor.path: The value must be a valid file system path.', 'yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed: The value must be a boolean.', 'yarn.sharedcache.app-checker.class: The value must be a valid class name.', 'yarn.client.application-client-protocol.poll-interval-ms: The value must be greater than or equal to 0.', 'yarn.nodemanager.pluggable-device-framework.enabled: The value must be a boolean.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: yarn.nodemanager.remote-app-log-dir	yarn.nodemanager.resource.system-reserved-memory-mb	yarn.nodemanager.health-checker.timeout-ms	yarn.nodemanager.linux-container-executor.path	yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed	yarn.sharedcache.app-checker.class	yarn.client.application-client-protocol.poll-interval-ms	yarn.nodemanager.pluggable-device-framework.enabled
+[Ciri] Reason for yarn.nodemanager.remote-app-log-dir: yarn.nodemanager.remote-app-log-dir: The value must be a valid file system path.
+[Ciri] Reason for yarn.nodemanager.resource.system-reserved-memory-mb: yarn.nodemanager.resource.system-reserved-memory-mb: The value must be greater than or equal to 0.
+[Ciri] Reason for yarn.nodemanager.health-checker.timeout-ms: yarn.nodemanager.health-checker.timeout-ms: The value must be greater than or equal to 0.
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.path: yarn.nodemanager.linux-container-executor.path: The value must be a valid file system path.
+[Ciri] Reason for yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed: yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed: The value must be a boolean.
+[Ciri] Reason for yarn.sharedcache.app-checker.class: yarn.sharedcache.app-checker.class: The value must be a valid class name.
+[Ciri] Reason for yarn.client.application-client-protocol.poll-interval-ms: yarn.client.application-client-protocol.poll-interval-ms: The value must be greater than or equal to 0.
+[Ciri] Reason for yarn.nodemanager.pluggable-device-framework.enabled: yarn.nodemanager.pluggable-device-framework.enabled: The value must be a boolean.

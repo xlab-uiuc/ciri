@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-protocols', 'cluster-announce-port'], 'reason': ["'NOEXIST_TLS' is not a valid value for 'tls-protocols'. Valid options usually include specific TLS versions.", "'cluster-announce-port' value of 2 is not valid. It should be a valid port number (between 1 and 65535) that the Redis node will announce to other nodes in the cluster."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tls-protocols	cluster-announce-port
+[Ciri] Reason for tls-protocols: 'NOEXIST_TLS' is not a valid value for 'tls-protocols'. Valid options usually include specific TLS versions.
+[Ciri] Reason for cluster-announce-port: 'cluster-announce-port' value of 2 is not valid. It should be a valid port number (between 1 and 65535) that the Redis node will announce to other nodes in the cluster.

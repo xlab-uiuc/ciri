@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'localSessionsUpgradingEnabled', 'autopurge.purgeInterval'], 'reason': ["The value for 'standaloneEnabled' should be either 'true' or 'false', not a numeric value.", "'localSessionsUpgradingEnabled' is not a recognized configuration parameter in ZooKeeper version 3.7.0.", "The 'autopurge.purgeInterval' should be greater than 0 if autopurge is enabled."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: standaloneEnabled	localSessionsUpgradingEnabled	autopurge.purgeInterval
+[Ciri] Reason for standaloneEnabled: The value for 'standaloneEnabled' should be either 'true' or 'false', not a numeric value.
+[Ciri] Reason for localSessionsUpgradingEnabled: 'localSessionsUpgradingEnabled' is not a recognized configuration parameter in ZooKeeper version 3.7.0.
+[Ciri] Reason for autopurge.purgeInterval: The 'autopurge.purgeInterval' should be greater than 0 if autopurge is enabled.

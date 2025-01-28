@@ -1,0 +1,18 @@
+Wrong shot number:
+[1, 8, 10]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.cluster.distributed'], 'reason': ["The property 'hbase.cluster.distributed' has the value 'true' which is not of the correct type Boolean."]}
+
+{'hasError': True, 'errParameter': ['hbase.http.staticuser.user'], 'reason': ["The property 'hbase.http.staticuser.user' has the value 'xdsuper' which is not a valid username."]}
+
+{'hasError': True, 'errParameter': ['hbase.cluster.distributed'], 'reason': ["The value of the property 'hbase.cluster.distributed' should be 'false' to enable the property 'hbase.regionserver.global.memstore.size'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.cluster.distributed
+[Ciri] Reason for hbase.cluster.distributed: The value of the property 'hbase.cluster.distributed' should be 'false' to enable the property 'hbase.regionserver.global.memstore.size'.

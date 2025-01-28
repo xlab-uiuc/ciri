@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'advertise-client-urls', 'quota-backend-bytes', 'log-level', 'snapshot-count', 'force-new-cluster', 'heartbeat-interval'], 'reason': ['listen-client-urls is not a valid URL', 'advertise-client-urls is not a valid URL', 'quota-backend-bytes is not a valid integer', 'log-level is not a valid log level', 'snapshot-count is not a valid integer', 'force-new-cluster is not a valid boolean', 'heartbeat-interval is not a valid integer']}
+
+{'hasError': True, 'errParameter': ['snapshot-count', 'force-new-cluster', 'heartbeat-interval'], 'reason': ['snapshot-count is not a valid property', 'force-new-cluster is not a valid property', 'heartbeat-interval is not a valid property']}
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'advertise-client-urls', 'snapshot-count', 'heartbeat-interval'], 'reason': ['listen-client-urls and advertise-client-urls should be https://localhost:2379', 'snapshot-count should be a positive integer', 'heartbeat-interval should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'advertise-client-urls', 'quota-backend-bytes', 'log-level', 'snapshot-count', 'force-new-cluster', 'heartbeat-interval'], 'reason': ['listen-client-urls is not a valid URL', 'advertise-client-urls is not a valid URL', 'quota-backend-bytes is not a valid integer', 'log-level is not a valid log level', 'snapshot-count is not a valid integer', 'force-new-cluster is not a valid boolean', 'heartbeat-interval is not a valid integer']}
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'advertise-client-urls', 'quota-backend-bytes', 'log-level', 'snapshot-count', 'force-new-cluster', 'heartbeat-interval'], 'reason': ['listen-client-urls and advertise-client-urls must be the same', 'quota-backend-bytes must be a positive integer', 'log-level must be one of: panic, fatal, error, warn, info, debug', 'snapshot-count must be a positive integer', 'force-new-cluster must be true or false', 'heartbeat-interval must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'advertise-client-urls', 'quota-backend-bytes', 'log-level', 'snapshot-count', 'force-new-cluster', 'heartbeat-interval'], 'reason': ['listen-client-urls and advertise-client-urls are not valid URLs', 'quota-backend-bytes is not a valid integer', 'log-level is not a valid log level', 'snapshot-count is not a valid integer', 'force-new-cluster is not a valid boolean', 'heartbeat-interval is not a valid integer']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: listen-client-urls	advertise-client-urls	quota-backend-bytes	log-level	snapshot-count	force-new-cluster	heartbeat-interval
+[Ciri] Reason for listen-client-urls: listen-client-urls and advertise-client-urls must be the same
+[Ciri] Reason for advertise-client-urls: quota-backend-bytes is not a valid integer
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes is not a valid integer
+[Ciri] Reason for log-level: log-level is not a valid log level
+[Ciri] Reason for snapshot-count: snapshot-count is not a valid integer
+[Ciri] Reason for force-new-cluster: force-new-cluster is not a valid boolean
+[Ciri] Reason for heartbeat-interval: heartbeat-interval is not a valid integer

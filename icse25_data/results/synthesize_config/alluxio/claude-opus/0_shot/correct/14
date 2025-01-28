@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.addresses', 'alluxio.user.network.streaming.keepalive.time'], 'reason': ["For Alluxio 2.5.0, alluxio.master.embedded.journal.addresses should be a comma-separated list of all masters' addresses. A single address is not valid for this version.", 'alluxio.user.network.streaming.keepalive.time has an invalid value. The maximum allowed value for this property is 9223372036854775807.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.embedded.journal.addresses	alluxio.user.network.streaming.keepalive.time
+[Ciri] Reason for alluxio.master.embedded.journal.addresses: For Alluxio 2.5.0, alluxio.master.embedded.journal.addresses should be a comma-separated list of all masters' addresses. A single address is not valid for this version.
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.time: alluxio.user.network.streaming.keepalive.time has an invalid value. The maximum allowed value for this property is 9223372036854775807.

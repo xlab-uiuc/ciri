@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.max.retries', 'fs.wasbs.impl'], 'reason': ["The property 'fs.s3a.s3guard.ddb.max.retries' is related to S3Guard, which has been removed in Hadoop 3.3.0. S3Guard provided a metadata caching layer for Amazon S3 to improve performance and consistency, but it is no longer supported or necessary with the improvements in S3 and Hadoop 3.3.0.", "The property 'fs.wasbs.impl' specifies the implementation class for Azure Blob Storage support in Hadoop. However, the class name provided 'org.apache.hadoop.fs.azure.NativeAzureFileSystem$Secure' may be incorrect or outdated. The correct class name for enabling secure Azure Blob Storage in Hadoop 3.3.0 should be verified, as the Azure file system integration has been updated and the class names may have changed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.s3guard.ddb.max.retries	fs.wasbs.impl
+[Ciri] Reason for fs.s3a.s3guard.ddb.max.retries: The property 'fs.s3a.s3guard.ddb.max.retries' is related to S3Guard, which has been removed in Hadoop 3.3.0. S3Guard provided a metadata caching layer for Amazon S3 to improve performance and consistency, but it is no longer supported or necessary with the improvements in S3 and Hadoop 3.3.0.
+[Ciri] Reason for fs.wasbs.impl: The property 'fs.wasbs.impl' specifies the implementation class for Azure Blob Storage support in Hadoop. However, the class name provided 'org.apache.hadoop.fs.azure.NativeAzureFileSystem$Secure' may be incorrect or outdated. The correct class name for enabling secure Azure Blob Storage in Hadoop 3.3.0 should be verified, as the Azure file system integration has been updated and the class names may have changed.

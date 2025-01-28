@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'fs.azure.secure.mode', 'ipc.[port_number].scheduler.priority.levels', 'adl.feature.ownerandgroup.enableupn'], 'reason': ['Invalid port number value (65536) for fs.s3a.proxy.port. Port number should be between 1 and 65535.', 'The property fs.azure.secure.mode is missing a description.', 'The property ipc.[port_number].scheduler.priority.levels is missing a usage.', 'The property adl.feature.ownerandgroup.enableupn has an extra indentation in the description.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'fs.azure.secure.mode', 'ipc.[port_number].scheduler.priority.levels', 'adl.feature.ownerandgroup.enableupn'], 'reason': ['Invalid port number value. Port number must be between 0 and 65535.', "Invalid usage tag. 'usage' tag is not a valid property element.", "Invalid property name. Property name should not contain placeholders like '[port_number]'.", 'Incorrect property description format. The description should be within the <description> tags.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'fs.azure.secure.mode', 'ipc.[port_number].scheduler.priority.levels', 'adl.feature.ownerandgroup.enableupn'], 'reason': ['Invalid port number value. Port number should be between 1 and 65535.', "Usage tag 'usage' is not a valid property element.", 'Invalid property name format.', 'Description tag is not closed properly.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.s3a.proxy.port	fs.azure.secure.mode	ipc.[port_number].scheduler.priority.levels	adl.feature.ownerandgroup.enableupn
+[Ciri] Reason for fs.s3a.proxy.port: Invalid port number value (65536) for fs.s3a.proxy.port. Port number should be between 1 and 65535.
+[Ciri] Reason for fs.azure.secure.mode: Usage tag 'usage' is not a valid property element.
+[Ciri] Reason for ipc.[port_number].scheduler.priority.levels: The property ipc.[port_number].scheduler.priority.levels is missing a usage.
+[Ciri] Reason for adl.feature.ownerandgroup.enableupn: Description tag is not closed properly.

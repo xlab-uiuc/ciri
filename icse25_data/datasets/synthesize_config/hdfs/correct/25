@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.data.dir.perm</name>
+  <value>350</value>
+  <description>Permissions for the directories on on the local filesystem where
+  the DFS data node store its blocks. The permissions can either be octal or
+  symbolic.</description>
+</property>
+
+<property>
+  <name>dfs.datanode.directoryscan.interval</name>
+  <value>43200s</value>
+  <description>Interval in seconds for Datanode to scan data directories and
+  reconcile the difference between blocks in memory and on the disk.
+  Support multiple time unit suffix(case insensitive), as described
+  in dfs.heartbeat.interval.If no time unit is specified then seconds
+  is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.max.objects</name>
+  <value>-1</value>
+  <description>The maximum number of files, directories and blocks
+  dfs supports. A value of zero indicates no limit to the number
+  of objects that dfs supports.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.delegation.key.update-interval</name>
+  <value>86400000</value>
+  <description>The update interval for master key for delegation tokens 
+       in the namenode in milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.image.transfer.timeout</name>
+  <value>30000</value>
+  <description>
+        Socket timeout for the HttpURLConnection instance used in the image
+        transfer. This is measured in milliseconds.
+        This timeout prevents client hangs if the connection is idle
+        for this configured timeout, during image transfer.
+  </description>
+</property>
+
+<property>
+  <name>nfs.mountd.port</name>
+  <value>4242</value>
+  <description>
+      Specify the port number used by Hadoop mount daemon.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edit.log.autoroll.check.interval.ms</name>
+  <value>150000</value>
+  <description>
+    How often an active namenode will check if it needs to roll its edit log,
+    in milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.top.windows.minutes</name>
+  <value>1,5,25</value>
+  <description>comma separated list of nntop reporting periods in minutes
+  </description>
+</property>
+
+</configuration>

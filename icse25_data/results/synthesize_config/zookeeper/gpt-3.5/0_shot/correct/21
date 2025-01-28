@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'initLimit'], 'reason': ['minSessionTimeout should be greater than 0.', 'initLimit should be set to a value between 0 and 12.']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'initLimit'], 'reason': ['minSessionTimeout should be greater than 0.', 'initLimit should be set to a value between 1 and 255.']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'initLimit'], 'reason': ['minSessionTimeout should be greater than 0.', 'initLimit should be set to a value greater than 0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: minSessionTimeout	initLimit
+[Ciri] Reason for minSessionTimeout: minSessionTimeout should be greater than 0.
+[Ciri] Reason for initLimit: initLimit should be set to a value between 0 and 12.

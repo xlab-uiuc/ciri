@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.netty.watermark.low', 'alluxio.worker.ramdisk.size'], 'reason': ["In Alluxio 2.5.0, the 'alluxio.worker.network.netty.watermark.low' property uses bytes as the unit. The correct format is an integer value without a unit suffix.", "The 'alluxio.worker.ramdisk.size' property in Alluxio 2.5.0 should be specified as a percentage between 1.0 and 100.0, or as a byte size. The provided value '0.1' is invalid."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.worker.network.netty.watermark.low	alluxio.worker.ramdisk.size
+[Ciri] Reason for alluxio.worker.network.netty.watermark.low: In Alluxio 2.5.0, the 'alluxio.worker.network.netty.watermark.low' property uses bytes as the unit. The correct format is an integer value without a unit suffix.
+[Ciri] Reason for alluxio.worker.ramdisk.size: The 'alluxio.worker.ramdisk.size' property in Alluxio 2.5.0 should be specified as a percentage between 1.0 and 100.0, or as a byte size. The provided value '0.1' is invalid.

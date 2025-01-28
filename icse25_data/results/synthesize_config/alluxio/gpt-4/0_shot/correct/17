@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.inherit.acl', 'alluxio.underfs.object.store.service.threads', 'alluxio.underfs.oss.connection.ttl', 'alluxio.user.network.streaming.max.inbound.message.size'], 'reason': ["The property 'alluxio.underfs.s3.inherit.acl' does not exist in Alluxio version 2.5.0.", "The property 'alluxio.underfs.object.store.service.threads' is not a recognized configuration property in Alluxio version 2.5.0.", "The property 'alluxio.underfs.oss.connection.ttl' is not a recognized configuration property in Alluxio version 2.5.0.", "The value for 'alluxio.user.network.streaming.max.inbound.message.size' should be specified in bytes, not with a 'MB' suffix."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.underfs.s3.inherit.acl	alluxio.underfs.object.store.service.threads	alluxio.underfs.oss.connection.ttl	alluxio.user.network.streaming.max.inbound.message.size
+[Ciri] Reason for alluxio.underfs.s3.inherit.acl: The property 'alluxio.underfs.s3.inherit.acl' does not exist in Alluxio version 2.5.0.
+[Ciri] Reason for alluxio.underfs.object.store.service.threads: The property 'alluxio.underfs.object.store.service.threads' is not a recognized configuration property in Alluxio version 2.5.0.
+[Ciri] Reason for alluxio.underfs.oss.connection.ttl: The property 'alluxio.underfs.oss.connection.ttl' is not a recognized configuration property in Alluxio version 2.5.0.
+[Ciri] Reason for alluxio.user.network.streaming.max.inbound.message.size: The value for 'alluxio.user.network.streaming.max.inbound.message.size' should be specified in bytes, not with a 'MB' suffix.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[10, 3, 13]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.pmem.cache.dirs', 'dfs.balancer.keytab.file'], 'reason': ["The property 'dfs.datanode.pmem.cache.dirs' has the value '/\\hadoop/s3a' which does not follow the correct path format.", "The property 'dfs.balancer.keytab.file' has the value '/valid/file2' which is not a valid path."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.pmem.cache.dirs', 'dfs.balancer.keytab.file'], 'reason': ["The property 'dfs.datanode.pmem.cache.dirs' has the value '/\\hadoop/s3a' which does not follow the correct path format.", "The property 'dfs.balancer.keytab.file' has the value '/valid/file2' which is not a valid path."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.pmem.cache.dirs', 'dfs.balancer.keytab.file'], 'reason': ["The property 'dfs.datanode.pmem.cache.dirs' has the value '/\\hadoop/s3a' which does not follow the correct path format.", "The property 'dfs.balancer.keytab.file' has the value '/valid/file2' which is not a valid path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.pmem.cache.dirs	dfs.balancer.keytab.file
+[Ciri] Reason for dfs.datanode.pmem.cache.dirs: The property 'dfs.datanode.pmem.cache.dirs' has the value '/\hadoop/s3a' which does not follow the correct path format.
+[Ciri] Reason for dfs.balancer.keytab.file: The property 'dfs.balancer.keytab.file' has the value '/valid/file2' which is not a valid path.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 2, 15]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.credential.clear-text-fallback'], 'reason': ["The property 'hadoop.security.credential.clear-text-fallback' has the value 'false' which is not a boolean value."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.key.provider.path'], 'reason': ["The value of the property 'hadoop.security.key.provider.path' should be a valid path."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.key.provider.path'], 'reason': ["The property 'hadoop.security.key.provider.path' has the value '/valid/file1' which does not follow the correct file path format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hadoop.security.key.provider.path
+[Ciri] Reason for hadoop.security.key.provider.path: The property 'hadoop.security.key.provider.path' has the value '/valid/file1' which does not follow the correct file path format.

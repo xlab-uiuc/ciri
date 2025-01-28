@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['debug_print_plan', 'transform_null_equals'], 'reason': ['debug_print_plan is an unknown parameter for PostgreSQL version 13.0.', 'transform_null_equals is an unknown parameter for PostgreSQL version 13.0.']}
+
+{'hasError': True, 'errParameter': ['debug_print_plan', 'transform_null_equals'], 'reason': ['debug_print_plan is not a valid parameter in the configuration file for PostgreSQL version 13.0.', 'transform_null_equals is not a valid parameter in the configuration file for PostgreSQL version 13.0.']}
+
+{'hasError': True, 'errParameter': ['debug_print_plan', 'transform_null_equals'], 'reason': ['debug_print_plan is not a valid parameter for postgresql version 13.0', 'transform_null_equals is not a valid parameter for postgresql version 13.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: debug_print_plan	transform_null_equals
+[Ciri] Reason for debug_print_plan: debug_print_plan is not a valid parameter for postgresql version 13.0
+[Ciri] Reason for transform_null_equals: transform_null_equals is not a valid parameter in the configuration file for PostgreSQL version 13.0.

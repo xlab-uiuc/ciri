@@ -1,0 +1,19 @@
+Wrong shot number:
+[12, 3, 9]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.hregion.preclose.flush.size'], 'reason': ["The property 'hbase.zookeeper.leaderport' has the value '65536' which is out of the valid range of a port number.", "The property 'hbase.hregion.preclose.flush.size' has a usage tag instead of a description."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.hregion.preclose.flush.size'], 'reason': ["The property 'hbase.zookeeper.leaderport' has the value '65536' which is out of the valid range of a port number.", "The property 'hbase.hregion.preclose.flush.size' has a value that is not recommended for efficient operation."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.hregion.preclose.flush.size'], 'reason': ["The property 'hbase.zookeeper.leaderport' has the value '65536' which is out of the valid range of a port number.", "The property 'hbase.hregion.preclose.flush.size' has an incorrect value or usage."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.zookeeper.leaderport	hbase.hregion.preclose.flush.size
+[Ciri] Reason for hbase.zookeeper.leaderport: The property 'hbase.zookeeper.leaderport' has the value '65536' which is out of the valid range of a port number.
+[Ciri] Reason for hbase.hregion.preclose.flush.size: The property 'hbase.hregion.preclose.flush.size' has an incorrect value or usage.

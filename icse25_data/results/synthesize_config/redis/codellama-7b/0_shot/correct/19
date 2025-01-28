@@ -1,0 +1,44 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfsync', 'save', 'appendfilename', 'client-output-buffer-limit', 'tls-port', 'list-compress-depth', 'always-show-logo'], 'reason': ["Invalid value for 'appendfsync'", "Invalid value for 'save'", "Invalid value for 'appendfilename'", "Invalid value for 'client-output-buffer-limit'", "Invalid value for 'tls-port'", "Invalid value for 'list-compress-depth'", "Invalid value for 'always-show-logo'"]}
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ['The value of the appendfsync parameter must be either no, always, or everysec.']}
+
+{'hasError': True, 'errParameter': ['appendfsync-on-rewrite'], 'reason': ['appendfsync-on-rewrite is not a valid parameter for redis version 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['save', 'appendfsync', 'no-appendfsync-on-rewrite', 'latency-monitor-threshold', 'client-output-buffer-limit', 'tls-port', 'list-compress-depth', 'always-show-logo'], 'reason': ['save parameter should be a list of strings', 'appendfsync parameter should be a string', 'no-appendfsync-on-rewrite parameter should be a boolean', 'latency-monitor-threshold parameter should be an integer', 'client-output-buffer-limit parameter should be a list of strings', 'tls-port parameter should be an integer', 'list-compress-depth parameter should be an integer', 'always-show-logo parameter should be a boolean']}
+
+{'hasError': True, 'errParameter': ['appendfsync', 'save', 'appendfilename', 'client-output-buffer-limit', 'tls-port'], 'reason': ['appendfsync is not a valid property', 'save is not a valid property', 'appendfilename is not a valid property', 'client-output-buffer-limit is not a valid property', 'tls-port is not a valid property']}
+
+{'hasError': True, 'errParameter': ['requirepass', 'appendfsync', 'no-appendfsync-on-rewrite', 'latency-monitor-threshold', 'appendfilename', 'client-output-buffer-limit', 'tls-port', 'list-compress-depth', 'always-show-logo'], 'reason': ['requirepass is not a valid parameter', 'appendfsync is not a valid parameter', 'no-appendfsync-on-rewrite is not a valid parameter', 'latency-monitor-threshold is not a valid parameter', 'appendfilename is not a valid parameter', 'client-output-buffer-limit is not a valid parameter', 'tls-port is not a valid parameter', 'list-compress-depth is not a valid parameter', 'always-show-logo is not a valid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ['appendfsync is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['appendfsync', 'save', 'appendfilename', 'client-output-buffer-limit', 'tls-port', 'list-compress-depth', 'always-show-logo'], 'reason': ["appendfsync must be either 'no' or 'always'", 'save must be a list of two integers separated by a comma', 'appendfilename must be a string', 'client-output-buffer-limit must be a list of three integers separated by a comma', 'tls-port must be an integer', 'list-compress-depth must be an integer', 'always-show-logo must be a boolean']}
+
+{'hasError': True, 'errParameter': ['daemonize', 'pidfile', 'port', 'timeout', 'logfile', 'databases', 'always-show-logo'], 'reason': ['daemonize is not a valid configuration parameter', 'pidfile is not a valid configuration parameter', 'port is not a valid configuration parameter', 'timeout is not a valid configuration parameter', 'logfile is not a valid configuration parameter', 'databases is not a valid configuration parameter', 'always-show-logo is not a valid configuration parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ["The parameter 'appendfsync' is not a valid parameter for redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['appendfsync', 'save', 'appendfilename', 'client-output-buffer-limit', 'tls-port', 'list-compress-depth'], 'reason': ["The parameter 'appendfsync' is not a valid parameter.", "The parameter 'save' is not a valid parameter.", "The parameter 'appendfilename' is not a valid parameter.", "The parameter 'client-output-buffer-limit' is not a valid parameter.", "The parameter 'tls-port' is not a valid parameter.", "The parameter 'list-compress-depth' is not a valid parameter."]}
+
+{'hasError': True, 'errParameter': ['appendfsync', 'save', 'appendfsync-on-rewrite', 'no-appendfsync-on-rewrite', 'latency-monitor-threshold', 'client-output-buffer-limit', 'tls-port', 'list-compress-depth', 'always-show-logo'], 'reason': ['appendfsync is not a valid parameter', 'save is not a valid parameter', 'appendfsync-on-rewrite is not a valid parameter', 'no-appendfsync-on-rewrite is not a valid parameter', 'latency-monitor-threshold is not a valid parameter', 'client-output-buffer-limit is not a valid parameter', 'tls-port is not a valid parameter', 'list-compress-depth is not a valid parameter', 'always-show-logo is not a valid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ["The parameter 'appendfsync' is not a valid parameter for redis version 7.0.0. Please refer to the redis documentation for a list of valid parameters."]}
+
+{'hasError': True, 'errParameter': ['appendfsync', 'save', 'appendfilename', 'client-output-buffer-limit', 'tls-port'], 'reason': ['appendfsync must be either always, everysec, or no', 'save must be either 900 1 300 10 60 10000 or empty', 'appendfilename must be a string', 'client-output-buffer-limit must be a list of three integers', 'tls-port must be an integer']}
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ["The parameter 'appendfsync' is not valid. The valid values are 'no', 'always', 'everysec', 'no-async'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: appendfsync
+[Ciri] Reason for appendfsync: The parameter 'appendfsync' is not a valid parameter for redis version 7.0.0. Please refer to the redis documentation for a list of valid parameters.

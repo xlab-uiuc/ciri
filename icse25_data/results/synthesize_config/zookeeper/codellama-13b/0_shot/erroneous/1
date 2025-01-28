@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'localSessionsUpgradingEnabled', 'quorumListenOnAllIPs', 'standaloneEnabled', 'dataLogDir', 'quorum.auth.server.saslLoginContext', 'electionAlg', 'maxSessionTimeout'], 'reason': ['The value of autopurge.purgeInterval is not a valid integer.', 'The value of localSessionsUpgradingEnabled is not a valid boolean.', 'The value of quorumListenOnAllIPs is not a valid boolean.', 'The value of standaloneEnabled is not a valid boolean.', 'The value of dataLogDir is not a valid directory.', 'The value of quorum.auth.server.saslLoginContext is not a valid string.', 'The value of electionAlg is not a valid integer.', 'The value of maxSessionTimeout is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'dataLogDir', 'quorum.auth.server.saslLoginContext', 'electionAlg', 'maxSessionTimeout'], 'reason': ['autopurge.purgeInterval must be a positive integer', 'dataLogDir must be a valid directory', 'quorum.auth.server.saslLoginContext must be a valid sasl login context', 'electionAlg must be a valid election algorithm', 'maxSessionTimeout must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'quorum.auth.server.saslLoginContext', 'electionAlg', 'maxSessionTimeout'], 'reason': ['dataLogDir is not a valid directory', 'quorum.auth.server.saslLoginContext is not a valid login context', 'electionAlg is not a valid election algorithm', 'maxSessionTimeout is not a valid session timeout']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'standaloneEnabled', 'quorum.auth.server.saslLoginContext', 'electionAlg', 'maxSessionTimeout'], 'reason': ['dataLogDir is not a valid directory', 'standaloneEnabled is not a valid value', 'quorum.auth.server.saslLoginContext is not a valid value', 'electionAlg is not a valid value', 'maxSessionTimeout is not a valid value']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'localSessionsUpgradingEnabled', 'quorumListenOnAllIPs', 'standaloneEnabled', 'dataLogDir', 'quorum.auth.server.saslLoginContext', 'electionAlg', 'maxSessionTimeout'], 'reason': ['autopurge.purgeInterval must be an integer greater than or equal to 1', 'localSessionsUpgradingEnabled must be a boolean', 'quorumListenOnAllIPs must be a boolean', 'standaloneEnabled must be a boolean', 'dataLogDir must be a valid directory', 'quorum.auth.server.saslLoginContext must be a valid string', 'electionAlg must be an integer between 1 and 3', 'maxSessionTimeout must be an integer greater than or equal to -1']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'localSessionsUpgradingEnabled', 'quorumListenOnAllIPs', 'standaloneEnabled', 'dataLogDir', 'quorum.auth.server.saslLoginContext', 'electionAlg', 'maxSessionTimeout'], 'reason': ['autopurge.purgeInterval should be a positive integer', 'localSessionsUpgradingEnabled should be a boolean', 'quorumListenOnAllIPs should be a boolean', 'standaloneEnabled should be a boolean', 'dataLogDir should be a valid directory', 'quorum.auth.server.saslLoginContext should be a valid login context', 'electionAlg should be an integer between 1 and 3', 'maxSessionTimeout should be a positive integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: autopurge.purgeInterval	localSessionsUpgradingEnabled	quorumListenOnAllIPs	standaloneEnabled	dataLogDir	quorum.auth.server.saslLoginContext	electionAlg	maxSessionTimeout
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval should be a positive integer
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled should be a boolean
+[Ciri] Reason for quorumListenOnAllIPs: quorumListenOnAllIPs should be a boolean
+[Ciri] Reason for standaloneEnabled: standaloneEnabled should be a boolean
+[Ciri] Reason for dataLogDir: dataLogDir must be a valid directory
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext should be a valid login context
+[Ciri] Reason for electionAlg: electionAlg must be an integer between 1 and 3
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout should be a positive integer

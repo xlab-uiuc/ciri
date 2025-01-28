@@ -1,0 +1,14 @@
+Correct shot number:
+[13, 11, 8, 16, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.retry.throttle.interval', 'fs.wasbs.impl', 'file.stream-buffer-size', 'nfs.exports.allowed.hosts'], 'reason': ["Invalid value '1ms' for property 'fs.s3a.retry.throttle.interval'. Expected a valid time format.", "Property 'fs.wasbs.impl' has an additional 'usage' tag which is not a valid property attribute.", "Property 'file.stream-buffer-size' has a description that suggests a specific value but does not provide a valid range or format.", "Property 'nfs.exports.allowed.hosts' has a description that mentions a format but the provided example is not in a valid format."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.s3a.retry.throttle.interval	fs.wasbs.impl	file.stream-buffer-size	nfs.exports.allowed.hosts
+[Ciri] Reason for fs.s3a.retry.throttle.interval: Invalid value '1ms' for property 'fs.s3a.retry.throttle.interval'. Expected a valid time format.
+[Ciri] Reason for fs.wasbs.impl: Property 'fs.wasbs.impl' has an additional 'usage' tag which is not a valid property attribute.
+[Ciri] Reason for file.stream-buffer-size: Property 'file.stream-buffer-size' has a description that suggests a specific value but does not provide a valid range or format.
+[Ciri] Reason for nfs.exports.allowed.hosts: Property 'nfs.exports.allowed.hosts' has a description that mentions a format but the provided example is not in a valid format.

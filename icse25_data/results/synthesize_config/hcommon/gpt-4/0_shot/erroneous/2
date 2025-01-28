@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.num.attempts', 'fs.s3a.assumed.role.session.duration'], 'reason': ["The value for 'hadoop.security.group.mapping.ldap.num.attempts' should be a positive integer, but it is set to a negative decimal value.", "The value for 'fs.s3a.assumed.role.session.duration' should be in milliseconds as an integer or a string representing a duration in ISO8601 format. The provided value '20m' does not match the expected format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.num.attempts	fs.s3a.assumed.role.session.duration
+[Ciri] Reason for hadoop.security.group.mapping.ldap.num.attempts: The value for 'hadoop.security.group.mapping.ldap.num.attempts' should be a positive integer, but it is set to a negative decimal value.
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The value for 'fs.s3a.assumed.role.session.duration' should be in milliseconds as an integer or a string representing a duration in ISO8601 format. The provided value '20m' does not match the expected format.

@@ -1,0 +1,35 @@
+Wrong shot number:
+[15]
+
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms', 'fs.s3a.s3guard.ddb.table.capacity.write', 'ftp.client-write-packet-size'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.read.timeout.ms' is not a valid property for Hadoop Common version 3.3.0", "The property 'fs.s3a.s3guard.ddb.table.capacity.write' is not a valid property for Hadoop Common version 3.3.0", "The property 'ftp.client-write-packet-size' is not a valid property for Hadoop Common version 3.3.0"]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms', 'fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.kill.max'], 'reason': ["The value of the property 'hadoop.security.group.mapping.ldap.read.timeout.ms' should be a positive integer.", "The value of the property 'fs.s3a.s3guard.ddb.table.capacity.write' should be a positive integer.", "The value of the property 'ipc.client.kill.max' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The value of the property 'fs.s3a.s3guard.ddb.table.capacity.write' should be greater than or equal to 0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The value of the property 'hadoop.security.group.mapping.ldap.read.timeout.ms' should be a positive integer.", "The value of the property 'fs.s3a.s3guard.ddb.table.capacity.write' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The value of the property 'fs.s3a.s3guard.ddb.table.capacity.write' should be greater than or equal to 0."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms', 'fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.kill.max', 'ipc.client.low-latency', 'ftp.client-write-packet-size'], 'reason': ["The value of the property 'hadoop.security.group.mapping.ldap.read.timeout.ms' should be a positive integer.", "The value of the property 'fs.s3a.s3guard.ddb.table.capacity.write' should be a positive integer.", "The value of the property 'ipc.client.kill.max' should be a positive integer.", "The value of the property 'ipc.client.low-latency' should be a boolean.", "The value of the property 'ftp.client-write-packet-size' should be a positive integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms', 'fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.kill.max', 'ftp.client-write-packet-size'], 'reason': ["The value of the property 'hadoop.security.group.mapping.ldap.read.timeout.ms' should be a positive integer.", "The value of the property 'fs.s3a.s3guard.ddb.table.capacity.write' should be a positive integer.", "The value of the property 'ipc.client.kill.max' should be a positive integer.", "The value of the property 'ftp.client-write-packet-size' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The value of the property 'hadoop.security.group.mapping.ldap.read.timeout.ms' should be a positive integer.", "The value of the property 'fs.s3a.s3guard.ddb.table.capacity.write' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.read.timeout.ms', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ["The value of the property 'hadoop.security.group.mapping.ldap.read.timeout.ms' should be a positive integer.", "The value of the property 'fs.s3a.s3guard.ddb.table.capacity.write' should be a positive integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.read.timeout.ms	fs.s3a.s3guard.ddb.table.capacity.write
+[Ciri] Reason for hadoop.security.group.mapping.ldap.read.timeout.ms: The value of the property 'hadoop.security.group.mapping.ldap.read.timeout.ms' should be a positive integer.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: The value of the property 'fs.s3a.s3guard.ddb.table.capacity.write' should be a positive integer.

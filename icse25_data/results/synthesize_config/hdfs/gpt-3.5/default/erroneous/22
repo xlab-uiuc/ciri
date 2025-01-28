@@ -1,0 +1,28 @@
+Wrong shot number:
+[10, 2, 11]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['nfs.mountd.port', 'dfs.datanode.outliers.report.interval'], 'reason': ["The property 'nfs.mountd.port' has the value '-100.22' which is not a valid port number.", "The property 'dfs.datanode.outliers.report.interval' has the value '30m' which is not in the correct format. It should be specified with a valid time unit suffix."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.servicerpc-address', 'nfs.mountd.port', 'dfs.datanode.outliers.report.interval'], 'reason': ["The property 'dfs.namenode.servicerpc-address' is missing the port number in the value.", "The property 'nfs.mountd.port' has an invalid value '-100.22'. Port number should be a positive integer.", "The property 'dfs.datanode.outliers.report.interval' has an invalid value '30m'. Time unit suffix is not supported."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.servicerpc-address', 'nfs.mountd.port', 'dfs.datanode.outliers.report.interval', 'httpfs.buffer.size'], 'reason': ["The property 'dfs.namenode.servicerpc-address' is missing the port number in the value.", "The property 'nfs.mountd.port' has an invalid value '-100.22'. Port number should be a positive integer.", "The property 'dfs.datanode.outliers.report.interval' has an invalid value '30m'. It should specify the time unit (e.g., 30ms, 30s, 30m, 30h).", "The property 'httpfs.buffer.size' is missing the unit in the value. It should specify the size with the unit (e.g., 8192, 8192k, 8192m)."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.servicerpc-address', 'nfs.mountd.port', 'dfs.datanode.outliers.report.interval'], 'reason': ["The property 'dfs.namenode.servicerpc-address' is missing the port number in the value.", "The property 'nfs.mountd.port' has a negative value which is not valid for a port number.", "The property 'dfs.datanode.outliers.report.interval' has the value '30m' which is not in milliseconds format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.servicerpc-address', 'nfs.mountd.port', 'dfs.datanode.outliers.report.interval'], 'reason': ["The property 'dfs.namenode.servicerpc-address' should have a valid IP address format with port number.", "The property 'nfs.mountd.port' has an invalid value '-100.22'. Port numbers should be positive integers.", "The property 'dfs.datanode.outliers.report.interval' has an invalid value '30m'. It should specify the time interval in milliseconds or with a valid time unit suffix."]}
+
+{'hasError': True, 'errParameter': ['nfs.mountd.port', 'dfs.datanode.outliers.report.interval'], 'reason': ["The property 'nfs.mountd.port' has the value '-100.22' which is not a valid port number.", "The property 'dfs.datanode.outliers.report.interval' has the value '30m' which is not in a valid time format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.servicerpc-address	nfs.mountd.port	dfs.datanode.outliers.report.interval
+[Ciri] Reason for dfs.namenode.servicerpc-address: The property 'dfs.namenode.servicerpc-address' should have a valid IP address format with port number.
+[Ciri] Reason for nfs.mountd.port: The property 'nfs.mountd.port' has an invalid value '-100.22'. Port numbers should be positive integers.
+[Ciri] Reason for dfs.datanode.outliers.report.interval: The property 'dfs.datanode.outliers.report.interval' has an invalid value '30m'. It should specify the time interval in milliseconds or with a valid time unit suffix.

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.redundancy.considerLoad.factor</name>
+  <value>2.0</value>
+    <description>The factor by which a node's load can exceed the average
+      before being rejected for writes, only if considerLoad is true.
+    </description>
+</property>
+
+<property>
+  <name>dfs.journalnode.rpc-address</name>
+  <value>0.0.0.0:8485</value>
+  <description>
+    The JournalNode RPC server address and port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.retrycache.heap.percent</name>
+  <value>0.015</value>
+  <description>
+    This parameter configures the heap size allocated for retry cache
+    (excluding the response cached). This corresponds to approximately
+    4096 entries for every 64MB of namenode process java heap size.
+    Assuming retry cache entry expiration time (configured using
+    dfs.namenode.retrycache.expirytime.millis) of 10 minutes, this
+    enables retry cache to support 7 operations per second sustained
+    for 10 minutes. As the heap size is increased, the operation rate
+    linearly increases.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edekcacheloader.initial.delay.ms</name>
+  <value>6000</value>
+  <description>When KeyProvider is configured, the time delayed until the first
+    attempt to warm up edek cache on NN start up / become active.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reencrypt.sleep.interval</name>
+  <value>10m</value>
+  <description>Interval the re-encrypt EDEK thread sleeps in the main loop. The
+    interval accepts units. If none given, millisecond is assumed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.read.shortcircuit.buffer.size</name>
+  <value>524288</value>
+  <description>
+    Buffer size in bytes for short-circuit local reads.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reconstruction.pending.timeout-sec</name>
+  <value>600</value>
+  <description>
+    Timeout in seconds for block reconstruction.  If this value is 0 or less,
+    then it will default to 5 minutes.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.storage.dir.perm</name>
+  <value>1400</value>
+    <description>
+      Permissions for the directories on on the local filesystem where
+      the DFS namenode stores the fsImage. The permissions can either be
+      octal or symbolic.
+    </description>
+</property>
+
+</configuration>

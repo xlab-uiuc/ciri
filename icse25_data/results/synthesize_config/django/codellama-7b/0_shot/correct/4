@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['DATABASES', 'TIME_ZONE', 'LANGUAGE_CODE', 'EMAIL_HOST', 'CSRF_FAILURE_VIEW', 'USE_DEPRECATED_PYTZ'], 'reason': ['DATABASES is not a valid configuration parameter.', 'TIME_ZONE is not a valid configuration parameter.', 'LANGUAGE_CODE is not a valid configuration parameter.', 'EMAIL_HOST is not a valid configuration parameter.', 'CSRF_FAILURE_VIEW is not a valid configuration parameter.', 'USE_DEPRECATED_PYTZ is not a valid configuration parameter.']}
+
+{'hasError': True, 'errParameter': ['CSRF_FAILURE_VIEW'], 'reason': ['CSRF_FAILURE_VIEW is not a valid property for Django 4.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATABASES'], 'reason': ['DATABASES is not a valid configuration parameter. Please use DATABASES_DEFAULT instead.']}
+
+{'hasError': True, 'errParameter': ['TIME_ZONE', 'DATABASES'], 'reason': ['TIME_ZONE is not a valid setting.', 'DATABASES is not a valid setting.']}
+
+{'hasError': True, 'errParameter': ['DATABASES'], 'reason': ['DATABASES is a required property']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: DATABASES
+[Ciri] Reason for DATABASES: DATABASES is a required property

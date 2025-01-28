@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_slot_wal_keep_size', 'checkpoint_warning'], 'reason': ['max_slot_wal_keep_size must be a positive value.', 'checkpoint_warning value should be specified in bytes or time units (e.g., 30s, 1h, 512MB).']}
+
+{'hasError': True, 'errParameter': ['max_slot_wal_keep_size', 'checkpoint_warning'], 'reason': ['max_slot_wal_keep_size must be a positive value or -1 for unlimited.', 'checkpoint_warning value should be specified in bytes.']}
+
+{'hasError': True, 'errParameter': ['max_slot_wal_keep_size', 'checkpoint_warning', 'idle_in_transaction_session_timeout'], 'reason': ['max_slot_wal_keep_size should be a positive integer or zero.', 'checkpoint_warning value should be specified in bytes or time units (e.g., 30s, 1h, 512MB).', 'idle_in_transaction_session_timeout value should be specified in milliseconds.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: max_slot_wal_keep_size	checkpoint_warning
+[Ciri] Reason for max_slot_wal_keep_size: max_slot_wal_keep_size must be a positive value or -1 for unlimited.
+[Ciri] Reason for checkpoint_warning: checkpoint_warning value should be specified in bytes or time units (e.g., 30s, 1h, 512MB).

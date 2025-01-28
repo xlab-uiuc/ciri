@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.max.objects', 'dfs.client.datanode-restart.timeout', 'dfs.datanode.socket.reuse.keepalive', 'dfs.journalnode.edit-cache-size.bytes', 'dfs.namenode.snapshotdiff.listing.limit'], 'reason': ['dfs.namenode.max.objects is not a valid property for hdfs version 3.3.0', 'dfs.client.datanode-restart.timeout is not a valid property for hdfs version 3.3.0', 'dfs.datanode.socket.reuse.keepalive is not a valid property for hdfs version 3.3.0', 'dfs.journalnode.edit-cache-size.bytes is not a valid property for hdfs version 3.3.0', 'dfs.namenode.snapshotdiff.listing.limit is not a valid property for hdfs version 3.3.0']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: dfs.namenode.max.objects	dfs.client.datanode-restart.timeout	dfs.datanode.socket.reuse.keepalive	dfs.journalnode.edit-cache-size.bytes	dfs.namenode.snapshotdiff.listing.limit
+[Ciri] Reason for dfs.namenode.max.objects: dfs.namenode.max.objects is not a valid property for hdfs version 3.3.0
+[Ciri] Reason for dfs.client.datanode-restart.timeout: dfs.client.datanode-restart.timeout is not a valid property for hdfs version 3.3.0
+[Ciri] Reason for dfs.datanode.socket.reuse.keepalive: dfs.datanode.socket.reuse.keepalive is not a valid property for hdfs version 3.3.0
+[Ciri] Reason for dfs.journalnode.edit-cache-size.bytes: dfs.journalnode.edit-cache-size.bytes is not a valid property for hdfs version 3.3.0
+[Ciri] Reason for dfs.namenode.snapshotdiff.listing.limit: dfs.namenode.snapshotdiff.listing.limit is not a valid property for hdfs version 3.3.0

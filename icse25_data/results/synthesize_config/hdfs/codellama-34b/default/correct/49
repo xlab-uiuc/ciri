@@ -1,0 +1,18 @@
+Wrong shot number:
+[14, 16, 11]
+
+Correct shot number:
+[15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.min'], 'reason': ["The property 'dfs.namenode.replication.min' has the value '0' which is out of the valid range of replication factors."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.https.address'], 'reason': ["The property 'dfs.datanode.https.address' was removed in the previous version and is not used in the current version."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.https.address'], 'reason': ["The property 'dfs.datanode.https.address' has the value '0.0.0.0:3000' which is out of the valid range of a port number."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.https.address
+[Ciri] Reason for dfs.datanode.https.address: The property 'dfs.datanode.https.address' has the value '0.0.0.0:3000' which is out of the valid range of a port number.

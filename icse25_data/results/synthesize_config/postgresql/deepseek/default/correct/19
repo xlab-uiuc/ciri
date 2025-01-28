@@ -1,0 +1,18 @@
+Wrong shot number:
+[3, 4, 6]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_receiver_timeout'], 'reason': ["The value of the property 'wal_receiver_timeout' should be less than or equal to 60s."]}
+
+{'hasError': True, 'errParameter': ['wal_receiver_timeout'], 'reason': ["The value of 'wal_receiver_timeout' is '1s' which is less than the default value '60s'."]}
+
+{'hasError': True, 'errParameter': ['wal_receiver_timeout'], 'reason': ["The value of the property 'wal_receiver_timeout' should be less than or equal to 60s as per the property 'session_replication_role'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: wal_receiver_timeout
+[Ciri] Reason for wal_receiver_timeout: The value of the property 'wal_receiver_timeout' should be less than or equal to 60s.

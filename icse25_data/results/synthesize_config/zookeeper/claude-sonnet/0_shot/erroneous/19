@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.snapRetainCount', 'electionAlg'], 'reason': ['The minSessionTimeout value of 4000000000 (approximately 47 days) is too high. It should be set to a lower value, typically between 2000 and 20000 milliseconds.', 'The autopurge.snapRetainCount value of 1 is too low and can lead to data loss in case of failures. It is recommended to set it to a higher value, typically 3 or more.', 'The electionAlg value of 6 is not a valid election algorithm. Valid values are 0 (for hostbased), 1 (for X-based), 2 (for leaderElection), and 3 (for authFastLeaderElection).']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: minSessionTimeout	autopurge.snapRetainCount	electionAlg
+[Ciri] Reason for minSessionTimeout: The minSessionTimeout value of 4000000000 (approximately 47 days) is too high. It should be set to a lower value, typically between 2000 and 20000 milliseconds.
+[Ciri] Reason for autopurge.snapRetainCount: The autopurge.snapRetainCount value of 1 is too low and can lead to data loss in case of failures. It is recommended to set it to a higher value, typically 3 or more.
+[Ciri] Reason for electionAlg: The electionAlg value of 6 is not a valid election algorithm. Valid values are 0 (for hostbased), 1 (for X-based), 2 (for leaderElection), and 3 (for authFastLeaderElection).

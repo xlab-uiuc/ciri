@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.trash.checkpoint.interval', 'fs.s3a.committer.magic.enabled', 'ha.failover-controller.new-active.rpc-timeout.ms', 'ipc.server.max.connections'], 'reason': ["The property 'fs.trash.checkpoint.interval' should have a value greater than 0.", "The property 'fs.s3a.committer.magic.enabled' should have a boolean value (true/false).", "The property 'ha.failover-controller.new-active.rpc-timeout.ms' should have a value greater than 0.", "The property 'ipc.server.max.connections' should have a value greater than 0 or set to 0 for no limit."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.magic.enabled', 'ipc.server.max.connections'], 'reason': ["The property 'fs.s3a.committer.magic.enabled' may require additional configuration or dependencies for proper functionality.", "The property 'ipc.server.max.connections' has a value of '1' which may not be suitable for handling multiple concurrent connections."]}
+
+{'hasError': True, 'errParameter': ['fs.trash.checkpoint.interval', 'ipc.server.max.connections'], 'reason': ["The property 'fs.trash.checkpoint.interval' should have a value greater than 0.", "The property 'ipc.server.max.connections' should have a value greater than 0 or set to 0 for no limit."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.magic.enabled', 'ipc.server.max.connections'], 'reason': ["The property 'fs.s3a.committer.magic.enabled' is not recognized in hcommon version 3.3.0.", "The property 'ipc.server.max.connections' is not recognized in hcommon version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['fs.trash.checkpoint.interval', 'fs.s3a.committer.magic.enabled', 'ha.failover-controller.new-active.rpc-timeout.ms', 'ipc.server.max.connections'], 'reason': ["The property 'fs.trash.checkpoint.interval' should have a value greater than 1.", "The property 'fs.s3a.committer.magic.enabled' should have a boolean value (true/false).", "The property 'ha.failover-controller.new-active.rpc-timeout.ms' should have a value greater than 0.", "The property 'ipc.server.max.connections' should have a value greater than 1."]}
+
+{'hasError': True, 'errParameter': ['fs.trash.checkpoint.interval', 'fs.s3a.committer.magic.enabled', 'ha.failover-controller.new-active.rpc-timeout.ms', 'ipc.server.max.connections'], 'reason': ["The value for 'fs.trash.checkpoint.interval' should be greater than 0.", "The value for 'fs.s3a.committer.magic.enabled' should be a boolean (true/false).", "The value for 'ha.failover-controller.new-active.rpc-timeout.ms' should be greater than 0.", "The value for 'ipc.server.max.connections' should be greater than 0 or set to 0 for no limit."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.trash.checkpoint.interval	fs.s3a.committer.magic.enabled	ha.failover-controller.new-active.rpc-timeout.ms	ipc.server.max.connections
+[Ciri] Reason for fs.trash.checkpoint.interval: The value for 'fs.trash.checkpoint.interval' should be greater than 0.
+[Ciri] Reason for fs.s3a.committer.magic.enabled: The property 'fs.s3a.committer.magic.enabled' should have a boolean value (true/false).
+[Ciri] Reason for ha.failover-controller.new-active.rpc-timeout.ms: The value for 'ha.failover-controller.new-active.rpc-timeout.ms' should be greater than 0.
+[Ciri] Reason for ipc.server.max.connections: The property 'ipc.server.max.connections' should have a value greater than 1.

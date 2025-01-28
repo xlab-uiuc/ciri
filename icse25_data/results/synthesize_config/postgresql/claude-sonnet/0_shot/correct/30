@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_relation', 'recovery_min_apply_delay'], 'reason': ['max_pred_locks_per_relation is a non-existent parameter in PostgreSQL 13.0. The correct parameter is max_pred_locks_per_transaction.', 'recovery_min_apply_delay is a parameter specific to logical replication and is not a general PostgreSQL configuration parameter.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: max_pred_locks_per_relation	recovery_min_apply_delay
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation is a non-existent parameter in PostgreSQL 13.0. The correct parameter is max_pred_locks_per_transaction.
+[Ciri] Reason for recovery_min_apply_delay: recovery_min_apply_delay is a parameter specific to logical replication and is not a general PostgreSQL configuration parameter.

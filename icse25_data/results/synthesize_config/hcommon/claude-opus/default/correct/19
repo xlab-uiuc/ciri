@@ -1,0 +1,16 @@
+Wrong shot number:
+[14, 16, 7]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.common.configuration.version', 'io.bytes.per.checksum', 'io.map.index.interval'], 'reason': ['The hadoop.common.configuration.version property should be set to 3.3.0 for HCommon version 3.3.0, but it is set to 3.0.0', 'The io.bytes.per.checksum property is deprecated in HCommon 3.3.0 and should not be used', 'The io.map.index.interval property is deprecated in HCommon 3.3.0 and should not be used']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.common.configuration.version	io.bytes.per.checksum	io.map.index.interval
+[Ciri] Reason for hadoop.common.configuration.version: The hadoop.common.configuration.version property should be set to 3.3.0 for HCommon version 3.3.0, but it is set to 3.0.0
+[Ciri] Reason for io.bytes.per.checksum: The io.bytes.per.checksum property is deprecated in HCommon 3.3.0 and should not be used
+[Ciri] Reason for io.map.index.interval: The io.map.index.interval property is deprecated in HCommon 3.3.0 and should not be used

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_ecdh_curve', 'timezone_abbreviations'], 'reason': ['Invalid value for ssl_ecdh_curve parameter. Remove the extra single quote at the end.', "Invalid value for timezone_abbreviations parameter. Use a valid timezone abbreviation or 'Default' is not a valid timezone abbreviation."]}
+
+{'hasError': True, 'errParameter': ['ssl', 'ssl_ecdh_curve', 'wal_compression', 'tcp_keepalives_idle', 'timezone_abbreviations', 'maintenance_work_mem', 'commit_siblings', 'geqo_generations'], 'reason': ["ssl parameter should be 'on' or 'off'", 'Extra single quote at the end of ssl_ecdh_curve value', "wal_compression parameter should be 'on' or 'off'", 'tcp_keepalives_idle should be a positive integer value', "timezone_abbreviations should be a valid timezone abbreviation or 'Default' if needed", 'maintenance_work_mem should be specified in bytes or as a valid memory unit', 'commit_siblings should be a positive integer value', 'geqo_generations should be a positive integer value greater than 1']}
+
+{'hasError': True, 'errParameter': ['ssl', 'ssl_ecdh_curve', 'wal_compression', 'tcp_keepalives_idle', 'timezone_abbreviations', 'maintenance_work_mem', 'commit_siblings', 'geqo_generations'], 'reason': ["ssl parameter should be 'on' or 'off'", 'Extra single quote at the end of ssl_ecdh_curve value', "wal_compression parameter should be 'on' or 'off'", 'tcp_keepalives_idle value should be greater than 0', "timezone_abbreviations should be a valid timezone abbreviation or 'Default' if needed", "maintenance_work_mem value should be specified in bytes (e.g., '1MB' should be '1MB' or '1048576')", 'commit_siblings value should be greater than 1', 'geqo_generations value should be greater than 1']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: ssl	ssl_ecdh_curve	wal_compression	tcp_keepalives_idle	timezone_abbreviations	maintenance_work_mem	commit_siblings	geqo_generations
+[Ciri] Reason for ssl: ssl parameter should be 'on' or 'off'
+[Ciri] Reason for ssl_ecdh_curve: Extra single quote at the end of ssl_ecdh_curve value
+[Ciri] Reason for wal_compression: wal_compression parameter should be 'on' or 'off'
+[Ciri] Reason for tcp_keepalives_idle: tcp_keepalives_idle value should be greater than 0
+[Ciri] Reason for timezone_abbreviations: timezone_abbreviations should be a valid timezone abbreviation or 'Default' if needed
+[Ciri] Reason for maintenance_work_mem: maintenance_work_mem value should be specified in bytes (e.g., '1MB' should be '1MB' or '1048576')
+[Ciri] Reason for commit_siblings: commit_siblings value should be greater than 1
+[Ciri] Reason for geqo_generations: geqo_generations value should be greater than 1

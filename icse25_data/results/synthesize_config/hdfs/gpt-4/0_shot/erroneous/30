@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry', 'dfs.client.block.write.replace-datanode-on-failure.min-replication', 'dfs.namenode.checkpoint.period', 'dfs.namenode.storageinfo.defragment.timeout.ms'], 'reason': ["The value for 'dfs.client.cached.conn.retry' should not be negative. It defines the number of retry attempts for pulling a socket from the cache.", "The value for 'dfs.client.block.write.replace-datanode-on-failure.min-replication' should not be negative. It specifies the minimum replication necessary to continue writing, not to disable the feature.", "The value for 'dfs.namenode.checkpoint.period' should not include a unit ('s' for seconds) directly. It should be an integer representing seconds.", "The value for 'dfs.namenode.storageinfo.defragment.timeout.ms' seems too low. While technically not incorrect, practical values are usually in the range of thousands (e.g., 3000ms) to ensure the operation can complete."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dfs.client.cached.conn.retry	dfs.client.block.write.replace-datanode-on-failure.min-replication	dfs.namenode.checkpoint.period	dfs.namenode.storageinfo.defragment.timeout.ms
+[Ciri] Reason for dfs.client.cached.conn.retry: The value for 'dfs.client.cached.conn.retry' should not be negative. It defines the number of retry attempts for pulling a socket from the cache.
+[Ciri] Reason for dfs.client.block.write.replace-datanode-on-failure.min-replication: The value for 'dfs.client.block.write.replace-datanode-on-failure.min-replication' should not be negative. It specifies the minimum replication necessary to continue writing, not to disable the feature.
+[Ciri] Reason for dfs.namenode.checkpoint.period: The value for 'dfs.namenode.checkpoint.period' should not include a unit ('s' for seconds) directly. It should be an integer representing seconds.
+[Ciri] Reason for dfs.namenode.storageinfo.defragment.timeout.ms: The value for 'dfs.namenode.storageinfo.defragment.timeout.ms' seems too low. While technically not incorrect, practical values are usually in the range of thousands (e.g., 3000ms) to ensure the operation can complete.

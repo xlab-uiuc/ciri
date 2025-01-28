@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.name.dir</name>
+  <value>file://${hadoop.tmp.dir}/dfs/name</value>
+  <description>Determines where on the local filesystem the DFS name node
+      should store the name table(fsimage).  If this is a comma-delimited list
+      of directories then the name table is replicated in all of the
+      directories, for redundancy. </description>
+</property>
+
+<property>
+  <name>dfs.namenode.fs-limits.max-directory-items</name>
+  <value>524288</value>
+  <description>Defines the maximum number of items that a directory may
+      contain. Cannot set the property to a value less than 1 or more than
+      6400000.</description>
+</property>
+
+<property>
+  <name>dfs.datanode.balance.bandwidthPerSec</name>
+  <value>100m</value>
+  <description>
+        Specifies the maximum amount of bandwidth that each datanode
+        can utilize for the balancing purpose in term of
+        the number of bytes per second. You can use the following
+        suffix (case insensitive):
+        k(kilo), m(mega), g(giga), t(tera), p(peta), e(exa)to specify the size
+        (such as 128k, 512m, 1g, etc.).
+        Or provide complete size in bytes (such as 134217728 for 128 MB).
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.short.circuit.replica.stale.threshold.ms</name>
+  <value>1800000</value>
+  <description>
+    The maximum amount of time that we will consider a short-circuit replica to
+    be valid, if there is no communication from the DataNode.  After this time
+    has elapsed, we will re-fetch the short-circuit replica even if it is in
+    the cache.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.deadnode.detection.probe.suspectnode.threads</name>
+  <value>1</value>
+    <description>
+      The maximum number of threads to use for probing suspect node.
+    </description>
+</property>
+
+<property>
+  <name>dfs.balancer.keytab.enabled</name>
+  <value>true</value>
+  <description>
+    Set to true to enable login using a keytab for Kerberized Hadoop.
+  </description>
+</property>
+
+<property>
+  <name>dfs.mover.moverThreads</name>
+  <value>1000</value>
+  <description>
+    Configure the balancer's mover thread pool size.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.block.deletion.increment</name>
+  <value>2000</value>
+    <description>
+      The number of block deletion increment.
+      This setting will control the block increment deletion rate to
+      ensure that other waiters on the lock can get in.
+    </description>
+</property>
+
+</configuration>

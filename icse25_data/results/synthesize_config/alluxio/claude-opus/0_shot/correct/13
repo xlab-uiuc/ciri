@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level1.dirs.path', 'alluxio.worker.management.tier.align.reserved.bytes'], 'reason': ['The property alluxio.worker.tieredstore.level1.dirs.path should be a comma-separated list of directories, not a single file path.', 'The property alluxio.worker.management.tier.align.reserved.bytes is not a valid configuration parameter in Alluxio 2.5.0. It was introduced in later versions.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.worker.tieredstore.level1.dirs.path	alluxio.worker.management.tier.align.reserved.bytes
+[Ciri] Reason for alluxio.worker.tieredstore.level1.dirs.path: The property alluxio.worker.tieredstore.level1.dirs.path should be a comma-separated list of directories, not a single file path.
+[Ciri] Reason for alluxio.worker.management.tier.align.reserved.bytes: The property alluxio.worker.management.tier.align.reserved.bytes is not a valid configuration parameter in Alluxio 2.5.0. It was introduced in later versions.

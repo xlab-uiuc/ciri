@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.ssl', 'hadoop.security.group.mapping.ldap.directory.search.timeout'], 'reason': ["The value for hadoop.security.group.mapping.ldap.ssl should be a boolean (either 'true' or 'false'), but '1.5' is specified which is not a valid boolean value.", "The value for hadoop.security.group.mapping.ldap.directory.search.timeout is specified as 5000, but the description states the default is 10 seconds. For consistency, the value should be changed to '10000' to match the 10 second default mentioned in the description (since the units are milliseconds)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.ssl	hadoop.security.group.mapping.ldap.directory.search.timeout
+[Ciri] Reason for hadoop.security.group.mapping.ldap.ssl: The value for hadoop.security.group.mapping.ldap.ssl should be a boolean (either 'true' or 'false'), but '1.5' is specified which is not a valid boolean value.
+[Ciri] Reason for hadoop.security.group.mapping.ldap.directory.search.timeout: The value for hadoop.security.group.mapping.ldap.directory.search.timeout is specified as 5000, but the description states the default is 10 seconds. For consistency, the value should be changed to '10000' to match the 10 second default mentioned in the description (since the units are milliseconds).

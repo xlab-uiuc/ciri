@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['FIRST_DAY_OF_WEEK', 'PASSWORD_RESET_TIMEOUT', 'YEAR_MONTH_FORMAT'], 'reason': ["FIRST_DAY_OF_WEEK is not a Django setting. The correct setting for the first day of the week is determined within templates using the 'first_day_of_week' tag or by setting LANGUAGE_CODE to match the desired locale.", "PASSWORD_RESET_TIMEOUT setting's value should be in seconds. Since Django 3.1, the default unit is seconds, not days. The provided value calculates to 3 days in seconds, which might be intended, but the description could be misleading.", "YEAR_MONTH_FORMAT is a valid Django setting but the format string 'F Y' might not produce the expected result. Django uses the strftime format, where '%B %Y' is the correct format for full month name followed by year."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: FIRST_DAY_OF_WEEK	PASSWORD_RESET_TIMEOUT	YEAR_MONTH_FORMAT
+[Ciri] Reason for FIRST_DAY_OF_WEEK: FIRST_DAY_OF_WEEK is not a Django setting. The correct setting for the first day of the week is determined within templates using the 'first_day_of_week' tag or by setting LANGUAGE_CODE to match the desired locale.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: PASSWORD_RESET_TIMEOUT setting's value should be in seconds. Since Django 3.1, the default unit is seconds, not days. The provided value calculates to 3 days in seconds, which might be intended, but the description could be misleading.
+[Ciri] Reason for YEAR_MONTH_FORMAT: YEAR_MONTH_FORMAT is a valid Django setting but the format string 'F Y' might not produce the expected result. Django uses the strftime format, where '%B %Y' is the correct format for full month name followed by year.

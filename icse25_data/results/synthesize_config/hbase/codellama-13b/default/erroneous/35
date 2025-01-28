@@ -1,0 +1,26 @@
+Wrong shot number:
+[1, 11, 7]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.wal.dir.perms'], 'reason': ["The value of the property 'hbase.wal.dir.perms' should be between 0 and 511."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '65536' which is not within the accepted value {1025..65535}."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.pause'], 'reason': ["The value of the property 'hbase.client.pause' should be an integer between 0 and 1000000."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '65536' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort'], 'reason': ["The value of the property 'hbase.zookeeper.property.clientPort' is greater than the maximum value of 65535."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort'], 'reason': ["The value of the property 'hbase.zookeeper.property.clientPort' is not within the accepted range of values {1024,65535}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.zookeeper.property.clientPort
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The property 'hbase.zookeeper.property.clientPort' has the value '65536' which is not of the correct type Integer.

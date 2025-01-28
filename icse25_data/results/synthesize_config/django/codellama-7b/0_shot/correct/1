@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATABASES'], 'reason': ['DATABASES is not a valid configuration parameter.']}
+
+{'hasError': True, 'errParameter': ['STATIC_ROOT'], 'reason': ['STATIC_ROOT is not defined']}
+
+{'hasError': True, 'errParameter': ['DATABASES', 'PASSWORD_HASHERS', 'FORM_RENDERER', 'NUMBER_GROUPING', 'MIGRATION_MODULES', 'AUTHENTICATION_BACKENDS', 'DEBUG_PROPAGATE_EXCEPTIONS', 'STATICFILES_DIRS', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ['DATABASES is not a valid configuration parameter.', 'PASSWORD_HASHERS is not a valid configuration parameter.', 'FORM_RENDERER is not a valid configuration parameter.', 'NUMBER_GROUPING is not a valid configuration parameter.', 'MIGRATION_MODULES is not a valid configuration parameter.', 'AUTHENTICATION_BACKENDS is not a valid configuration parameter.', 'DEBUG_PROPAGATE_EXCEPTIONS is not a valid configuration parameter.', 'STATICFILES_DIRS is not a valid configuration parameter.', 'DATA_UPLOAD_MAX_NUMBER_FIELDS is not a valid configuration parameter.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATABASES', 'PASSWORD_HASHERS', 'FORM_RENDERER', 'NUMBER_GROUPING', 'MIGRATION_MODULES', 'AUTHENTICATION_BACKENDS', 'DEBUG_PROPAGATE_EXCEPTIONS', 'STATICFILES_DIRS', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ['DATABASES should be a dictionary', 'PASSWORD_HASHERS should be a list', 'FORM_RENDERER should be a string', 'NUMBER_GROUPING should be an integer', 'MIGRATION_MODULES should be a dictionary', 'AUTHENTICATION_BACKENDS should be a list', 'DEBUG_PROPAGATE_EXCEPTIONS should be a boolean', 'STATICFILES_DIRS should be a list', 'DATA_UPLOAD_MAX_NUMBER_FIELDS should be an integer']}
+
+{'hasError': True, 'errParameter': ['DATABASES', 'PASSWORD_HASHERS', 'FORM_RENDERER', 'NUMBER_GROUPING', 'MIGRATION_MODULES', 'AUTHENTICATION_BACKENDS', 'DEBUG_PROPAGATE_EXCEPTIONS', 'STATICFILES_DIRS', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ['DATABASES is not a valid configuration parameter', 'PASSWORD_HASHERS is not a valid configuration parameter', 'FORM_RENDERER is not a valid configuration parameter', 'NUMBER_GROUPING is not a valid configuration parameter', 'MIGRATION_MODULES is not a valid configuration parameter', 'AUTHENTICATION_BACKENDS is not a valid configuration parameter', 'DEBUG_PROPAGATE_EXCEPTIONS is not a valid configuration parameter', 'STATICFILES_DIRS is not a valid configuration parameter', 'DATA_UPLOAD_MAX_NUMBER_FIELDS is not a valid configuration parameter']}
+
+{'hasError': True, 'errParameter': ['INSTALLED_APPS', 'MIDDLEWARE', 'PASSWORD_HASHERS', 'FORM_RENDERER', 'NUMBER_GROUPING', 'MIGRATION_MODULES', 'AUTHENTICATION_BACKENDS', 'DEBUG_PROPAGATE_EXCEPTIONS', 'STATICFILES_DIRS', 'DATA_UPLOAD_MAX_NUMBER_FIELDS'], 'reason': ['INSTALLED_APPS', 'MIDDLEWARE', 'PASSWORD_HASHERS', 'FORM_RENDERER', 'NUMBER_GROUPING', 'MIGRATION_MODULES', 'AUTHENTICATION_BACKENDS', 'DEBUG_PROPAGATE_EXCEPTIONS', 'STATICFILES_DIRS', 'DATA_UPLOAD_MAX_NUMBER_FIELDS']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: DATABASES	PASSWORD_HASHERS	FORM_RENDERER	NUMBER_GROUPING	MIGRATION_MODULES	AUTHENTICATION_BACKENDS	DEBUG_PROPAGATE_EXCEPTIONS	STATICFILES_DIRS	DATA_UPLOAD_MAX_NUMBER_FIELDS
+[Ciri] Reason for DATABASES: DATABASES should be a dictionary
+[Ciri] Reason for PASSWORD_HASHERS: PASSWORD_HASHERS is not a valid configuration parameter
+[Ciri] Reason for FORM_RENDERER: FORM_RENDERER should be a string
+[Ciri] Reason for NUMBER_GROUPING: NUMBER_GROUPING is not a valid configuration parameter
+[Ciri] Reason for MIGRATION_MODULES: MIGRATION_MODULES is not a valid configuration parameter
+[Ciri] Reason for AUTHENTICATION_BACKENDS: AUTHENTICATION_BACKENDS should be a list
+[Ciri] Reason for DEBUG_PROPAGATE_EXCEPTIONS: DEBUG_PROPAGATE_EXCEPTIONS is not a valid configuration parameter
+[Ciri] Reason for STATICFILES_DIRS: STATICFILES_DIRS should be a list
+[Ciri] Reason for DATA_UPLOAD_MAX_NUMBER_FIELDS: DATA_UPLOAD_MAX_NUMBER_FIELDS is not a valid configuration parameter

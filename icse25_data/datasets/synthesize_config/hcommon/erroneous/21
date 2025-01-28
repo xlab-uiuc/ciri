@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.groups.cache.background.reload</name>
+  <value>true</value>
+  <description>
+    Whether to reload expired user->group mappings using a background thread
+    pool. If set to true, a pool of
+    hadoop.security.groups.cache.background.reload.threads is created to
+    update the cache in the background.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.ssl.truststore.password.file</name>
+  <value>/valid/file2</value>
+  <description>
+    The path to a file containing the password of the LDAP SSL truststore.
+
+    IMPORTANT: This file should be readable only by the Unix user running
+    the daemons.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.proxy.port</name>
+  <value>1.1</value>
+  <description>Proxy server port. If this property is not set
+    but fs.s3a.proxy.host is, port 80 or 443 is assumed (consistent with
+    the value of fs.s3a.connection.ssl.enabled).</description>
+</property>
+
+<property>
+  <name>fs.s3a.attempts.maximum</name>
+  <value>10</value>
+  <description>How many times we should retry commands on transient errors.</description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.ddb.table.create</name>
+  <value>true</value>
+  <description>
+    If true, the S3A client will create the table if it does not already exist.
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.abfs.impl</name>
+  <value>org.apache.hadoop.fs.azurebfs.Abfs</value>
+  <description>AbstractFileSystem implementation class of abfs://</description>
+</property>
+
+<property>
+  <name>ftp.bytes-per-checksum</name>
+  <value>1024</value>
+  <description>The number of bytes per checksum.  Must not be larger than
+  ftp.stream-buffer-size</description>
+</property>
+
+<property>
+  <name>hadoop.security.key.default.cipher</name>
+  <value>AES/CTR/NoPadding</value>
+  <description>
+    This indicates the algorithm that be used by KeyProvider for generating
+    key, and will be converted to CipherSuite when creating encryption zone.
+  </description>
+</property>
+
+</configuration>

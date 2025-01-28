@@ -1,0 +1,18 @@
+Wrong shot number:
+[11, 5, 10]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.msginterval'], 'reason': ["The property 'hbase.regionserver.msginterval' has the value '3000' which is less than the minimum value of 300000."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.msginterval'], 'reason': ["The property 'hbase.regionserver.msginterval' has the value '3000' which is less than the minimum value of '300000'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.msginterval
+[Ciri] Reason for hbase.regionserver.msginterval: The property 'hbase.regionserver.msginterval' has the value '3000' which is less than the minimum value of 300000.

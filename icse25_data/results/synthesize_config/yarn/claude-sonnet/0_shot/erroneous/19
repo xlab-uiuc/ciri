@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.log-dirs', 'yarn.nodemanager.resource.memory.enforced', 'yarn.resourcemanager.nm-container-queuing.queue-limit-stdev'], 'reason': ['The value for yarn.nodemanager.log-dirs should be a comma-separated list of directories, not a single directory.', 'The value for yarn.nodemanager.resource.memory.enforced should be a boolean (true or false), not a floating-point number.', "The value for yarn.resourcemanager.nm-container-queuing.queue-limit-stdev should be a floating-point number, not a string with 'f' appended."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: yarn.nodemanager.log-dirs	yarn.nodemanager.resource.memory.enforced	yarn.resourcemanager.nm-container-queuing.queue-limit-stdev
+[Ciri] Reason for yarn.nodemanager.log-dirs: The value for yarn.nodemanager.log-dirs should be a comma-separated list of directories, not a single directory.
+[Ciri] Reason for yarn.nodemanager.resource.memory.enforced: The value for yarn.nodemanager.resource.memory.enforced should be a boolean (true or false), not a floating-point number.
+[Ciri] Reason for yarn.resourcemanager.nm-container-queuing.queue-limit-stdev: The value for yarn.resourcemanager.nm-container-queuing.queue-limit-stdev should be a floating-point number, not a string with 'f' appended.

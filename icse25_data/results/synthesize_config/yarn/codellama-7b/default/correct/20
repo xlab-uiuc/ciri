@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 9, 2]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.store.class'], 'reason': ["The value of the property 'yarn.resourcemanager.store.class' should be 'org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore'."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.monitor.policies'], 'reason': ["The value of the property 'yarn.resourcemanager.scheduler.monitor.policies' should be a comma-separated list of class names. The value 'org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy' is not a valid class name."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.monitor.policies'], 'reason': ["The value of the property 'yarn.resourcemanager.scheduler.monitor.policies' should be a comma-separated list of class names, but the value 'org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy' is not a valid class name."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.resourcemanager.scheduler.monitor.policies
+[Ciri] Reason for yarn.resourcemanager.scheduler.monitor.policies: The value of the property 'yarn.resourcemanager.scheduler.monitor.policies' should be a comma-separated list of class names, but the value 'org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy' is not a valid class name.

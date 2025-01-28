@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.buffer.dir', 'fs.s3a.s3guard.ddb.table.capacity.write'], 'reason': ['The value for fs.s3a.buffer.dir should not contain backslashes. It should be a valid directory path.', 'The value for fs.s3a.s3guard.ddb.table.capacity.write should be a non-negative integer. A value of -1 is not valid.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.buffer.dir	fs.s3a.s3guard.ddb.table.capacity.write
+[Ciri] Reason for fs.s3a.buffer.dir: The value for fs.s3a.buffer.dir should not contain backslashes. It should be a valid directory path.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: The value for fs.s3a.s3guard.ddb.table.capacity.write should be a non-negative integer. A value of -1 is not valid.

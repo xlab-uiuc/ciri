@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['initial-cluster-state is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'auto-tls', 'initial-cluster-token', 'log-outputs', 'listen-peer-urls', 'proxy-failure-wait', 'advertise-client-urls'], 'reason': ['proxy-dial-timeout: is not a valid integer', 'auto-tls: is not a valid boolean', 'initial-cluster-token: is not a valid string', 'log-outputs: is not a valid array', 'listen-peer-urls: is not a valid array', 'proxy-failure-wait: is not a valid integer', 'advertise-client-urls: is not a valid array']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'auto-tls', 'proxy-failure-wait'], 'reason': ['proxy-dial-timeout is not a valid parameter', 'auto-tls is not a valid parameter', 'proxy-failure-wait is not a valid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'auto-tls', 'initial-cluster-token', 'log-outputs', 'listen-peer-urls', 'proxy-failure-wait', 'advertise-client-urls'], 'reason': ['proxy-dial-timeout is not a valid property', 'auto-tls is not a valid property', 'initial-cluster-token is not a valid property', 'log-outputs is not a valid property', 'listen-peer-urls is not a valid property', 'proxy-failure-wait is not a valid property', 'advertise-client-urls is not a valid property']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'auto-tls', 'proxy-failure-wait'], 'reason': ['proxy-dial-timeout should be a string', 'auto-tls should be a boolean', 'proxy-failure-wait should be a string']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'auto-tls', 'proxy-failure-wait'], 'reason': ['proxy-dial-timeout must be a string', 'auto-tls must be a boolean', 'proxy-failure-wait must be a string']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-dial-timeout	auto-tls	proxy-failure-wait
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout must be a string
+[Ciri] Reason for auto-tls: auto-tls should be a boolean
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait should be a string

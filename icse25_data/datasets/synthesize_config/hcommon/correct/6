@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.ssl</name>
+  <value>true</value>
+  <description>
+    Whether or not to use SSL when connecting to the LDAP server.
+  </description>
+</property>
+
+<property>
+  <name>fs.azure.user.agent.prefix</name>
+  <value>unknown</value>
+    <description>
+      WASB passes User-Agent header to the Azure back-end. The default value
+      contains WASB version, Java Runtime version, Azure Client library version,
+      and the value of the configuration option fs.azure.user.agent.prefix.
+    </description>
+</property>
+
+<property>
+  <name>fs.s3a.assumed.role.credentials.provider</name>
+  <value>org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider</value>
+  <description>
+    List of credential providers to authenticate with the STS endpoint and
+    retrieve short-lived role credentials.
+    Only used if AssumedRoleCredentialProvider is the AWS credential provider.
+    If unset, uses "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider".
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.buffer.dir</name>
+  <value>/valid/file2</value>
+  <description>Comma separated list of directories that will be used to buffer file
+    uploads to.</description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.ddb.background.sleep</name>
+  <value>25ms</value>
+  <description>
+    Length (in milliseconds) of pause between each batch of deletes when
+    pruning metadata.  Prevents prune operations (which can typically be low
+    priority background operations) from overly interfering with other I/O
+    operations.
+  </description>
+</property>
+
+<property>
+  <name>net.topology.script.file.name</name>
+  <value>/valid/file2</value>
+  <description> The script name that should be invoked to resolve DNS names to
+    NetworkTopology names. Example: the script would take host.foo.bar as an
+    argument, and return /rack1 as the output.
+  </description>
+</property>
+
+<property>
+  <name>fs.permissions.umask-mode</name>
+  <value>007</value>
+  <description>
+    The umask used when creating files and directories.
+    Can be in octal or in symbolic. Examples are:
+    "022" (octal for u=rwx,g=r-x,o=r-x in symbolic),
+    or "u=rwx,g=rwx,o=" (symbolic for 007 in octal).
+  </description>
+</property>
+
+<property>
+  <name>fs.adl.oauth2.access.token.provider.type</name>
+  <value>ClientCredential</value>
+    <description>
+      Defines Azure Active Directory OAuth2 access token provider type.
+      Supported types are ClientCredential, RefreshToken, MSI, DeviceCode,
+      and Custom.
+      The ClientCredential type requires property fs.adl.oauth2.client.id,
+      fs.adl.oauth2.credential, and fs.adl.oauth2.refresh.url.
+      The RefreshToken type requires property fs.adl.oauth2.client.id and
+      fs.adl.oauth2.refresh.token.
+      The MSI type reads optional property fs.adl.oauth2.msi.port, if specified.
+      The DeviceCode type requires property
+      fs.adl.oauth2.devicecode.clientapp.id.
+      The Custom type requires property fs.adl.oauth2.access.token.provider.
+    </description>
+</property>
+
+</configuration>

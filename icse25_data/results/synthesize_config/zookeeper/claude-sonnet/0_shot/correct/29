@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout', 'autopurge.purgeInterval'], 'reason': ["maxSessionTimeout=0 is not recommended as it disables session timeout, which can lead to resource leaks and performance issues. It's better to set it to a reasonable value, like 60000 (1 minute).", "autopurge.purgeInterval=1 is too low and can cause performance issues. It's recommended to set it to a higher value, like 24 hours (86400000 milliseconds) or more, depending on your use case."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: maxSessionTimeout	autopurge.purgeInterval
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout=0 is not recommended as it disables session timeout, which can lead to resource leaks and performance issues. It's better to set it to a reasonable value, like 60000 (1 minute).
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval=1 is too low and can cause performance issues. It's recommended to set it to a higher value, like 24 hours (86400000 milliseconds) or more, depending on your use case.

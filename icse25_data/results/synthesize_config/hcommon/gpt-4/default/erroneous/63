@@ -1,0 +1,27 @@
+Wrong shot number:
+[13, 1, 4]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.wasbs.impl', 'ftp.replication', 's3.replication'], 'reason': ["The property 'fs.AbstractFileSystem.wasbs.impl' is incorrect or not applicable for Hadoop Common version 3.3.0.", "The property 'ftp.replication' is not a recognized configuration parameter in Hadoop.", "The property 's3.replication' is not a recognized configuration parameter in Hadoop."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.wasbs.impl', 's3.replication'], 'reason': ["The property 'fs.AbstractFileSystem.wasbs.impl' specifies an incorrect class name. The correct class name should be 'org.apache.hadoop.fs.azure.Wasb'.", "The property 's3.replication' is not a recognized configuration property for Hadoop."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.wasbs.impl', 'ftp.replication', 's3.replication'], 'reason': ["The property 'fs.AbstractFileSystem.wasbs.impl' is incorrect or not applicable for Hadoop common version 3.3.0. The correct property should likely be 'fs.AbstractFileSystem.wasbs.impl' with a value pointing to the correct class for Azure Blob Storage support.", "The property 'ftp.replication' is not a standard Hadoop configuration property and does not apply to FTP file systems.", "The property 's3.replication' is not a standard Hadoop configuration property and does not apply to S3 file systems."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.wasbs.impl', 's3.replication'], 'reason': ["The property 'fs.AbstractFileSystem.wasbs.impl' has an incorrect class name. The correct class name should be 'org.apache.hadoop.fs.azure.Wasb'", "The property 's3.replication' is not a recognized configuration property for Hadoop."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.wasbs.impl', 's3.replication'], 'reason': ["The property 'fs.AbstractFileSystem.wasbs.impl' specifies an incorrect class name. The correct class name should be 'org.apache.hadoop.fs.azure.Wasb' for the Azure Blob Storage FileSystem implementation.", "The property 's3.replication' is not a valid configuration property for Hadoop and seems to be incorrectly specified."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.AbstractFileSystem.wasbs.impl	s3.replication
+[Ciri] Reason for fs.AbstractFileSystem.wasbs.impl: The property 'fs.AbstractFileSystem.wasbs.impl' has an incorrect class name. The correct class name should be 'org.apache.hadoop.fs.azure.Wasb'
+[Ciri] Reason for s3.replication: The property 's3.replication' is not a valid configuration property for Hadoop and seems to be incorrectly specified.

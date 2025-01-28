@@ -1,0 +1,18 @@
+Wrong shot number:
+[3, 5, 8]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.hostname'], 'reason': ["The property 'alluxio.master.hostname' is not defined."]}
+
+{'hasError': True, 'errParameter': ['alluxio.table.transform.manager.job.history.retention.time'], 'reason': ["The property 'alluxio.table.transform.manager.job.history.retention.time' has the value '300sec' which is not within the accepted value {1min,10min,30min,1h,2h,4h,8h,12h,1d,1w,1mo}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.table.transform.manager.job.history.retention.time'], 'reason': ["The property 'alluxio.table.transform.manager.job.history.retention.time' has the value '300sec' which is not within the accepted value {1sec,10sec,30sec,60sec,300sec,600sec,900sec,1800sec,3600sec,7200sec,21600sec,43200sec,86400sec}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.table.transform.manager.job.history.retention.time
+[Ciri] Reason for alluxio.table.transform.manager.job.history.retention.time: The property 'alluxio.table.transform.manager.job.history.retention.time' has the value '300sec' which is not within the accepted value {1sec,10sec,30sec,60sec,300sec,600sec,900sec,1800sec,3600sec,7200sec,21600sec,43200sec,86400sec}.

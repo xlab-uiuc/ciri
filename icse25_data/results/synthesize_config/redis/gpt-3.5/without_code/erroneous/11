@@ -1,0 +1,26 @@
+Wrong shot number:
+[2, 4, 1]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['aclfile'], 'reason': ["The property 'aclfile' has an incorrect path format. It should be a valid file path."]}
+
+{'hasError': True, 'errParameter': ['aclfile', 'aclfile', 'aclfile'], 'reason': ["The property 'aclfile' has an incorrect path format.", "The property 'aclfile' has an incorrect path format.", "The property 'aclfile' has an incorrect path format."]}
+
+{'hasError': True, 'errParameter': ['aclfile', 'auto-aof-rewrite-min-size', 'unixsocketperm'], 'reason': ["The property 'aclfile' has an incorrect path format.", "The property 'auto-aof-rewrite-min-size' has the value '32mb' which uses an incorrect unit.", "The property 'unixsocketperm' has an invalid permission value."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['aclfile', 'auto-aof-rewrite-min-size', 'unixsocketperm'], 'reason': ["The property 'aclfile' has an incorrect path format.", "The property 'auto-aof-rewrite-min-size' has the value '32mb' which uses an incorrect unit.", "The property 'unixsocketperm' has the value '1400' which is not a valid permission value."]}
+
+{'hasError': True, 'errParameter': ['aclfile'], 'reason': ["The property 'aclfile' has an invalid path format. It should be an absolute path starting from the root directory."]}
+
+{'hasError': True, 'errParameter': ['aclfile'], 'reason': ["The property 'aclfile' has an invalid path format. It should be an absolute path starting with '/'.", "The property 'aclfile' has an incorrect value 'dev/urandom///users.acl'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: aclfile
+[Ciri] Reason for aclfile: The property 'aclfile' has an invalid path format. It should be an absolute path starting with '/'.

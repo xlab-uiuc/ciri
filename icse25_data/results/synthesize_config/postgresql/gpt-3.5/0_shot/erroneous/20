@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_statement', 'wal_log_hints', 'min_wal_size', 'from_collapse_limit'], 'reason': ["Invalid value for log_statement. Valid values are 'none', 'ddl', 'mod', 'all'.", "Invalid value for wal_log_hints. Valid values are 'on' or 'off'.", "Invalid format for min_wal_size. It should be specified in bytes, for example, '80MB' should be '80MB' or '83886080'.", 'Invalid value for from_collapse_limit. It should be a positive integer greater than or equal to 1.']}
+
+{'hasError': True, 'errParameter': ['log_statement', 'wal_log_hints', 'from_collapse_limit'], 'reason': ["log_statement value should be one of 'none', 'ddl', 'mod', 'all'.", "wal_log_hints value should be 'on' or 'off'.", 'from_collapse_limit value should be greater than or equal to 2.']}
+
+{'hasError': True, 'errParameter': ['log_statement', 'wal_log_hints', 'from_collapse_limit'], 'reason': ["log_statement value should be one of 'none', 'ddl', 'mod', 'all'.", "wal_log_hints value should be 'on' or 'off'.", 'from_collapse_limit value should be greater than or equal to 2.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: log_statement	wal_log_hints	from_collapse_limit
+[Ciri] Reason for log_statement: log_statement value should be one of 'none', 'ddl', 'mod', 'all'.
+[Ciri] Reason for wal_log_hints: wal_log_hints value should be 'on' or 'off'.
+[Ciri] Reason for from_collapse_limit: from_collapse_limit value should be greater than or equal to 2.

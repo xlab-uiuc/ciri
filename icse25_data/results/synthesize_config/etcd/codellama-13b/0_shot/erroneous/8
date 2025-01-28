@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['trusted-ca-file', 'auto-tls', 'force-new-cluster', 'advertise-client-urls', 'proxy-refresh-interval', 'initial-cluster-state', 'election-timeout', 'strict-reconfig-check'], 'reason': ['trusted-ca-file: dev/urandom/// is not a valid path', 'auto-tls: true is not a valid value', 'force-new-cluster: false is not a valid value', 'advertise-client-urls: http://localhost:2379 is not a valid URL', 'proxy-refresh-interval: 15000 is not a valid value', "initial-cluster-state: 'new' is not a valid value", 'election-timeout: 1000 is not a valid value', 'strict-reconfig-check: true is not a valid value']}
+
+{'hasError': True, 'errParameter': ['trusted-ca-file', 'auto-tls', 'force-new-cluster', 'advertise-client-urls', 'proxy-refresh-interval', 'initial-cluster-state', 'election-timeout', 'strict-reconfig-check'], 'reason': ['trusted-ca-file: dev/urandom/// is not a valid file path', 'auto-tls: true is not a valid value', 'force-new-cluster: false is not a valid value', 'advertise-client-urls: http://localhost:2379 is not a valid URL', 'proxy-refresh-interval: 15000 is not a valid value', "initial-cluster-state: 'new' is not a valid value", 'election-timeout: 1000 is not a valid value', 'strict-reconfig-check: true is not a valid value']}
+
+{'hasError': True, 'errParameter': ['trusted-ca-file', 'auto-tls', 'force-new-cluster', 'advertise-client-urls', 'proxy-refresh-interval', 'initial-cluster-state', 'election-timeout', 'strict-reconfig-check'], 'reason': ['trusted-ca-file is not a valid path', 'auto-tls is not a valid boolean', 'force-new-cluster is not a valid boolean', 'advertise-client-urls is not a valid URL', 'proxy-refresh-interval is not a valid integer', 'initial-cluster-state is not a valid string', 'election-timeout is not a valid integer', 'strict-reconfig-check is not a valid boolean']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: trusted-ca-file	auto-tls	force-new-cluster	advertise-client-urls	proxy-refresh-interval	initial-cluster-state	election-timeout	strict-reconfig-check
+[Ciri] Reason for trusted-ca-file: trusted-ca-file is not a valid path
+[Ciri] Reason for auto-tls: auto-tls: true is not a valid value
+[Ciri] Reason for force-new-cluster: force-new-cluster: false is not a valid value
+[Ciri] Reason for advertise-client-urls: advertise-client-urls: http://localhost:2379 is not a valid URL
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval: 15000 is not a valid value
+[Ciri] Reason for initial-cluster-state: initial-cluster-state: 'new' is not a valid value
+[Ciri] Reason for election-timeout: election-timeout: 1000 is not a valid value
+[Ciri] Reason for strict-reconfig-check: strict-reconfig-check: true is not a valid value

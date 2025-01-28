@@ -1,0 +1,28 @@
+Wrong shot number:
+[3]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.ssl', 'hadoop.registry.zk.root', 'fs.s3a.security.credential.provider.path'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.ssl' has the value '1.5' which is not a valid boolean value.", "The property 'hadoop.registry.zk.root' has the value '/valid/file2' which does not follow the correct path format.", "The property 'fs.s3a.security.credential.provider.path' has the value '/valid/file1' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.search.filter.group'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.search.filter.group' has the value '(objectClass=group)' which does not follow the correct filter format."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.ssl'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.ssl' has the value '1.5' which is not a valid boolean value."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.ssl', 'hadoop.registry.zk.root', 'fs.s3a.security.credential.provider.path'], 'reason': ["The value of the property 'hadoop.security.group.mapping.ldap.ssl' is not a valid SSL version. Valid values are: 1.0, 1.1, 1.2, 1.3", "The value of the property 'hadoop.registry.zk.root' is not a valid zookeeper root node. The root node should be a valid zookeeper node.", "The value of the property 'fs.s3a.security.credential.provider.path' is not a valid credential provider path. The path should be a valid credential provider path."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.ssl', 'hadoop.registry.zk.root', 'fs.s3a.security.credential.provider.path'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.ssl' has the value '1.5' which is not a valid boolean value.", "The property 'hadoop.registry.zk.root' has the value '/valid/file2' which does not follow the correct path format.", "The property 'fs.s3a.security.credential.provider.path' has the value '/valid/file1' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.search.filter.group', 'hadoop.security.group.mapping.ldap.search.attr.member', 'hadoop.registry.zk.root'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.search.filter.group' has the value '(objectClass=group)' which does not follow the correct format.", "The property 'hadoop.security.group.mapping.ldap.search.attr.member' has the value 'member' which does not follow the correct format.", "The property 'hadoop.registry.zk.root' has the value '/valid/file2' which does not follow the correct path format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.ssl	hadoop.registry.zk.root	fs.s3a.security.credential.provider.path
+[Ciri] Reason for hadoop.security.group.mapping.ldap.ssl: The property 'hadoop.security.group.mapping.ldap.ssl' has the value '1.5' which is not a valid boolean value.
+[Ciri] Reason for hadoop.registry.zk.root: The value of the property 'hadoop.registry.zk.root' is not a valid zookeeper root node. The root node should be a valid zookeeper node.
+[Ciri] Reason for fs.s3a.security.credential.provider.path: The property 'fs.s3a.security.credential.provider.path' has the value '/valid/file1' which does not follow the correct path format.

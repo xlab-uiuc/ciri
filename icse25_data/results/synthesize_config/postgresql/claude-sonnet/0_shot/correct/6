@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['vacuum_failsafe_age', 'vacuum_freeze_table_age', 'from standby(s)'], 'reason': ['vacuum_failsafe_age is a non-standard parameter in PostgreSQL 13.0 and is not recognized.', 'vacuum_freeze_table_age is a non-standard parameter in PostgreSQL 13.0 and is not recognized.', "'from standby(s); '*'=all' is not a valid parameter in PostgreSQL configuration files."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: vacuum_failsafe_age	vacuum_freeze_table_age	from standby(s)
+[Ciri] Reason for vacuum_failsafe_age: vacuum_failsafe_age is a non-standard parameter in PostgreSQL 13.0 and is not recognized.
+[Ciri] Reason for vacuum_freeze_table_age: vacuum_freeze_table_age is a non-standard parameter in PostgreSQL 13.0 and is not recognized.
+[Ciri] Reason for from standby(s): 'from standby(s); '*'=all' is not a valid parameter in PostgreSQL configuration files.

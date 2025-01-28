@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.monitor.enable', 'yarn.nodemanager.linux-container-executor.resources-handler.class', 'yarn.nodemanager.recovery.dir', 'yarn.timeline-service.entity-group-fs-store.retain-seconds', 'yarn.node-attribute.fs-store.impl.class'], 'reason': ['yarn.resourcemanager.scheduler.monitor.enable is not a valid property', 'yarn.nodemanager.linux-container-executor.resources-handler.class is not a valid property', 'yarn.nodemanager.recovery.dir is not a valid property', 'yarn.timeline-service.entity-group-fs-store.retain-seconds is not a valid property', 'yarn.node-attribute.fs-store.impl.class is not a valid property']}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.keytab', 'yarn.nodemanager.linux-container-executor.resources-handler.class', 'yarn.nodemanager.recovery.dir', 'yarn.timeline-service.entity-group-fs-store.retain-seconds', 'yarn.node-attribute.fs-store.impl.class'], 'reason': ['The keytab for the resource manager.', 'The class which should help the LCE handle resources.', 'The local filesystem directory in which the node manager will store state when recovery is enabled.', "How long the ATS v1.5 entity group file system storage will keep an application's data in the done directory.", "Choose different implementation of node attribute's storage"]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.keytab'], 'reason': ['The value of yarn.resourcemanager.keytab is not a valid file path.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.keytab', 'yarn.nodemanager.linux-container-executor.resources-handler.class', 'yarn.nodemanager.recovery.dir', 'yarn.timeline-service.entity-group-fs-store.retain-seconds', 'yarn.node-attribute.fs-store.impl.class'], 'reason': ['The keytab for the resource manager should be a valid file.', 'The class which should help the LCE handle resources should be a valid class.', 'The local filesystem directory in which the node manager will store state when recovery is enabled should be a valid file.', "How long the ATS v1.5 entity group file system storage will keep an application's data in the done directory should be a valid integer.", "Choose different implementation of node attribute's storage should be a valid class."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.monitor.enable'], 'reason': ['yarn.resourcemanager.scheduler.monitor.enable is not a valid property for yarn version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.keytab'], 'reason': ['The value of yarn.resourcemanager.keytab is not a valid file path.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.linux-container-executor.resources-handler.class', 'yarn.nodemanager.recovery.dir', 'yarn.timeline-service.entity-group-fs-store.retain-seconds', 'yarn.node-attribute.fs-store.impl.class'], 'reason': ['The class which should help the LCE handle resources.', 'The local filesystem directory in which the node manager will store state when recovery is enabled.', "How long the ATS v1.5 entity group file system storage will keep an application's data in the done directory.", "Choose different implementation of node attribute's storage"]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.monitor.enable'], 'reason': ['yarn.resourcemanager.scheduler.monitor.enable should be true or false']}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.scheduler.monitor.enable'], 'reason': ['The value of yarn.resourcemanager.scheduler.monitor.enable is not a boolean.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.resourcemanager.scheduler.monitor.enable
+[Ciri] Reason for yarn.resourcemanager.scheduler.monitor.enable: The value of yarn.resourcemanager.scheduler.monitor.enable is not a boolean.

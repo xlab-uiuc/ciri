@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.mount.table.root.ufs', 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes', 'alluxio.master.tieredstore.global.levels'], 'reason': ["The property 'alluxio.master.mount.table.root.ufs' is not a recognized Alluxio configuration property as of version 2.5.0. It might be a custom or deprecated property, or simply a typo.", "The value for 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes' should not include units (MB). It should be specified in bytes without a unit.", "The maximum number of tiered storage levels Alluxio supports by default is 3. Setting 'alluxio.master.tieredstore.global.levels' to 6 exceeds this default maximum. This configuration might be ignored or lead to unexpected behavior unless additional storage tiers are properly configured."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.mount.table.root.ufs	alluxio.user.block.avoid.eviction.policy.reserved.size.bytes	alluxio.master.tieredstore.global.levels
+[Ciri] Reason for alluxio.master.mount.table.root.ufs: The property 'alluxio.master.mount.table.root.ufs' is not a recognized Alluxio configuration property as of version 2.5.0. It might be a custom or deprecated property, or simply a typo.
+[Ciri] Reason for alluxio.user.block.avoid.eviction.policy.reserved.size.bytes: The value for 'alluxio.user.block.avoid.eviction.policy.reserved.size.bytes' should not include units (MB). It should be specified in bytes without a unit.
+[Ciri] Reason for alluxio.master.tieredstore.global.levels: The maximum number of tiered storage levels Alluxio supports by default is 3. Setting 'alluxio.master.tieredstore.global.levels' to 6 exceeds this default maximum. This configuration might be ignored or lead to unexpected behavior unless additional storage tiers are properly configured.

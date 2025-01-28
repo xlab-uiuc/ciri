@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-session-cache-size', 'activerehashing', 'set-proc-title', 'jemalloc-bg-thread', 'enable-module-command', 'lazyfree-lazy-user-flush'], 'reason': ["The 'tls-session-cache-size' parameter does not exist in Redis 7.0.0 configuration.", "The 'activerehashing' parameter is valid, but its value must be either 'yes' or 'no'. The provided configuration is correct, so this was mistakenly listed.", "The 'set-proc-title' parameter does not exist in Redis 7.0.0 configuration.", "The 'jemalloc-bg-thread' parameter does not exist in Redis 7.0.0 configuration.", "The 'enable-module-command' parameter does not exist in Redis 7.0.0 configuration.", "The 'lazyfree-lazy-user-flush' parameter does not exist in Redis 7.0.0 configuration."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: tls-session-cache-size	activerehashing	set-proc-title	jemalloc-bg-thread	enable-module-command	lazyfree-lazy-user-flush
+[Ciri] Reason for tls-session-cache-size: The 'tls-session-cache-size' parameter does not exist in Redis 7.0.0 configuration.
+[Ciri] Reason for activerehashing: The 'activerehashing' parameter is valid, but its value must be either 'yes' or 'no'. The provided configuration is correct, so this was mistakenly listed.
+[Ciri] Reason for set-proc-title: The 'set-proc-title' parameter does not exist in Redis 7.0.0 configuration.
+[Ciri] Reason for jemalloc-bg-thread: The 'jemalloc-bg-thread' parameter does not exist in Redis 7.0.0 configuration.
+[Ciri] Reason for enable-module-command: The 'enable-module-command' parameter does not exist in Redis 7.0.0 configuration.
+[Ciri] Reason for lazyfree-lazy-user-flush: The 'lazyfree-lazy-user-flush' parameter does not exist in Redis 7.0.0 configuration.

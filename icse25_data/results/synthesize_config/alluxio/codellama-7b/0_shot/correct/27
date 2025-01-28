@@ -1,0 +1,37 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.async.restore.enabled', 'alluxio.master.backup.state.lock.forced.duration', 'alluxio.master.embedded.journal.addresses'], 'reason': ['alluxio.user.client.cache.async.restore.enabled is not a valid property for Alluxio 2.5.0', 'alluxio.master.backup.state.lock.forced.duration is not a valid property for Alluxio 2.5.0', 'alluxio.master.embedded.journal.addresses is not a valid property for Alluxio 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.addresses'], 'reason': ['The property alluxio.master.embedded.journal.addresses is not supported in version 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.async.restore.enabled', 'alluxio.master.backup.state.lock.forced.duration', 'alluxio.master.embedded.journal.addresses', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.client.cache.async.restore.enabled is not a valid property.', 'alluxio.master.backup.state.lock.forced.duration is not a valid property.', 'alluxio.master.embedded.journal.addresses is not a valid property.', 'alluxio.user.network.rpc.max.inbound.message.size is not a valid property.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.addresses', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.master.embedded.journal.addresses is not a valid property for Alluxio version 2.5.0', 'alluxio.user.network.rpc.max.inbound.message.size is not a valid property for Alluxio version 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.async.restore.enabled'], 'reason': ['alluxio.user.client.cache.async.restore.enabled is not a valid property for alluxio version 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.async.restore.enabled', 'alluxio.user.client.cache.async.enabled', 'alluxio.user.block.write.location.policy.class', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.client.cache.async.restore.enabled should be a boolean value', 'alluxio.user.client.cache.async.enabled should be a boolean value', 'alluxio.user.block.write.location.policy.class should be a string value', 'alluxio.user.network.rpc.max.inbound.message.size should be a string value']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.state.lock.forced.duration', 'alluxio.master.embedded.journal.addresses', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.master.backup.state.lock.forced.duration should be a duration', 'alluxio.master.embedded.journal.addresses should be a list of strings', 'alluxio.user.network.rpc.max.inbound.message.size should be a size']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.async.restore.enabled', 'alluxio.user.client.cache.async.enabled', 'alluxio.user.block.write.location.policy.class', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.client.cache.async.restore.enabled is not a boolean', 'alluxio.user.client.cache.async.enabled is not a boolean', 'alluxio.user.block.write.location.policy.class is not a valid class', 'alluxio.user.network.rpc.max.inbound.message.size is not a valid size']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.addresses', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.master.embedded.journal.addresses should be a list of strings, but is actually a string', 'alluxio.user.network.rpc.max.inbound.message.size should be a string with a unit suffix, but is actually a number']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.client.cache.async.restore.enabled'], 'reason': ['alluxio.user.client.cache.async.restore.enabled is not a valid property for alluxio version 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.addresses', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['The property alluxio.master.embedded.journal.addresses is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.', 'The property alluxio.user.network.rpc.max.inbound.message.size is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.embedded.journal.addresses	alluxio.user.network.rpc.max.inbound.message.size
+[Ciri] Reason for alluxio.master.embedded.journal.addresses: alluxio.master.embedded.journal.addresses should be a list of strings, but is actually a string
+[Ciri] Reason for alluxio.user.network.rpc.max.inbound.message.size: The property alluxio.user.network.rpc.max.inbound.message.size is not a valid property for Alluxio version 2.5.0. Please check the Alluxio documentation for the correct properties for this version.

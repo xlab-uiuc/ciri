@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.logaggregation.threadpool-size-max'], 'reason': ["The value for 'yarn.nodemanager.logaggregation.threadpool-size-max' should be a positive integer. Current value is negative (-1)."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.logaggregation.threadpool-size-max', 'yarn.nodemanager.disk-validator'], 'reason': ["The value for 'yarn.nodemanager.logaggregation.threadpool-size-max' should be a positive integer.", "The value for 'yarn.nodemanager.disk-validator' should be one of the valid disk validators."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.logaggregation.threadpool-size-max', 'yarn.nodemanager.disk-validator'], 'reason': ["The value for 'yarn.nodemanager.logaggregation.threadpool-size-max' should be a positive integer. Current value is -1.", "The value for 'yarn.nodemanager.disk-validator' should be one of the supported disk validators. Current value is 'basic'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.logaggregation.threadpool-size-max	yarn.nodemanager.disk-validator
+[Ciri] Reason for yarn.nodemanager.logaggregation.threadpool-size-max: The value for 'yarn.nodemanager.logaggregation.threadpool-size-max' should be a positive integer.
+[Ciri] Reason for yarn.nodemanager.disk-validator: The value for 'yarn.nodemanager.disk-validator' should be one of the valid disk validators.

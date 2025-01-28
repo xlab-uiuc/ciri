@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.directory.search.timeout</name>
+  <value>10000</value>
+  <description>
+    The attribute applied to the LDAP SearchControl properties to set a
+    maximum time limit when searching and awaiting a result.
+    Set to 0 if infinite wait period is desired.
+    Default is 10 seconds. Units in milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.swebhdfs.impl</name>
+  <value>org.apache.hadoop.fs.SWebHdfs</value>
+  <description>The FileSystem for swebhdfs: uris.</description>
+</property>
+
+<property>
+  <name>fs.ftp.host</name>
+  <value>2.2.2.2.2.2</value>
+  <description>FTP filesystem connects to this server</description>
+</property>
+
+<property>
+  <name>fs.s3a.attempts.maximum</name>
+  <value>10</value>
+  <description>How many times we should retry commands on transient errors.</description>
+</property>
+
+<property>
+  <name>fs.s3a.select.enabled</name>
+  <value>true</value>
+  <description>Is S3 Select enabled?</description>
+</property>
+
+<property>
+  <name>ftp.stream-buffer-size</name>
+  <value>8192</value>
+  <description>The size of buffer to stream files.
+  The size of this buffer should probably be a multiple of hardware
+  page size (4096 on Intel x86), and it determines how much data is
+  buffered during read and write operations.</description>
+</property>
+
+<property>
+  <name>hadoop.http.cross-origin.allowed-origins</name>
+  <value>*</value>
+  <description>Comma separated list of origins that are allowed for web services
+    needing cross-origin (CORS) support. If a value in the list contains an
+    asterix (*), a regex pattern, escaping any dots ('.' -> '\.') and replacing
+    the asterix such that it captures any characters ('*' -> '.*'), is generated.
+    Values prefixed with 'regex:' are interpreted directly as regular expressions,
+    e.g. use the expression 'regex:https?:\/\/foo\.bar:([0-9]+)?' to allow any
+    origin using the 'http' or 'https' protocol in the domain 'foo.bar' on any
+    port. The use of simple wildcards ('*') is discouraged, and only available for
+    backward compatibility.</description>
+</property>
+
+<property>
+  <name>fs.client.resolve.remote.symlinks</name>
+  <value>true</value>
+  <description>
+      Whether to resolve symlinks when accessing a remote Hadoop filesystem.
+      Setting this to false causes an exception to be thrown upon encountering
+      a symlink. This setting does not apply to local filesystems, which
+      automatically resolve local symlinks.
+  </description>
+</property>
+
+</configuration>

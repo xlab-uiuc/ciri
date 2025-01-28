@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.user.file.replication.min', 'alluxio.user.block.master.client.pool.size.min'], 'reason': ['alluxio.user.file.replication.max must be greater than or equal to alluxio.user.file.replication.min', 'alluxio.user.block.master.client.pool.size.min must be greater than or equal to 1', 'alluxio.user.file.replication.max must be greater than or equal to alluxio.user.file.replication.min']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.min', 'alluxio.user.file.replication.max', 'alluxio.user.block.master.client.pool.size.min'], 'reason': ['alluxio.user.file.replication.min must be greater than or equal to 1', 'alluxio.user.file.replication.max must be greater than or equal to 1', 'alluxio.user.block.master.client.pool.size.min must be greater than or equal to 1']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.user.file.replication.min', 'alluxio.user.block.master.client.pool.size.min', 'alluxio.user.client.cache.evictor.class'], 'reason': ['alluxio.user.file.replication.max must be greater than or equal to 1', 'alluxio.user.file.replication.min must be greater than or equal to 1', 'alluxio.user.block.master.client.pool.size.min must be greater than or equal to 1', 'alluxio.user.client.cache.evictor.class must be a valid class name']}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.user.file.replication.min', 'alluxio.user.block.master.client.pool.size.min', 'alluxio.user.client.cache.evictor.class'], 'reason': ['alluxio.user.file.replication.max must be greater than or equal to 1', 'alluxio.user.file.replication.min must be greater than or equal to 1', 'alluxio.user.block.master.client.pool.size.min must be greater than or equal to 1', 'alluxio.user.client.cache.evictor.class must be a valid class name']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.user.file.replication.min', 'alluxio.user.block.master.client.pool.size.min', 'alluxio.user.client.cache.evictor.class'], 'reason': ['alluxio.user.file.replication.max should be greater than or equal to alluxio.user.file.replication.min', 'alluxio.user.block.master.client.pool.size.min should be greater than or equal to 1', 'alluxio.user.client.cache.evictor.class should be a valid class name']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.user.file.replication.max	alluxio.user.file.replication.min	alluxio.user.block.master.client.pool.size.min	alluxio.user.client.cache.evictor.class
+[Ciri] Reason for alluxio.user.file.replication.max: alluxio.user.file.replication.max should be greater than or equal to alluxio.user.file.replication.min
+[Ciri] Reason for alluxio.user.file.replication.min: alluxio.user.block.master.client.pool.size.min should be greater than or equal to 1
+[Ciri] Reason for alluxio.user.block.master.client.pool.size.min: alluxio.user.client.cache.evictor.class should be a valid class name
+[Ciri] Reason for alluxio.user.client.cache.evictor.class: alluxio.user.client.cache.evictor.class must be a valid class name

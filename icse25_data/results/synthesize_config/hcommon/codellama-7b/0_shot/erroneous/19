@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host'], 'reason': ["The property 'fs.ftp.host' is not a valid property for hcommon version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['hadoop.http.cross-origin.allowed-origins'], 'reason': ["The value '*' is not a valid regular expression. The value must be a valid regular expression, or a string starting with 'regex:' followed by a valid regular expression."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.enabled'], 'reason': ['fs.s3a.select.enabled is not a valid property for hcommon version 3.3.0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.http.cross-origin.allowed-origins'], 'reason': ["The value '*' is not a valid regular expression. It must be a valid regular expression, or a valid regular expression with the prefix 'regex:'."]}
+
+{'hasError': True, 'errParameter': ['hadoop.http.cross-origin.allowed-origins'], 'reason': ["The value '*' is not a valid regular expression. It must be a valid regular expression. For example, 'regex:https?://foo.bar:([0-9]+)?'."]}
+
+{'hasError': True, 'errParameter': ['hadoop.http.cross-origin.allowed-origins'], 'reason': ["The value '*' is not a valid regular expression. It should be in the format 'regex:<regex>'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hadoop.http.cross-origin.allowed-origins
+[Ciri] Reason for hadoop.http.cross-origin.allowed-origins: The value '*' is not a valid regular expression. It should be in the format 'regex:<regex>'.

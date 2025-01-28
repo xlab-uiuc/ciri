@@ -1,0 +1,15 @@
+Wrong shot number:
+[7, 5, 1]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'minSessionTimeout'], 'reason': ["The property 'secureClientPort' has the value '3000' which conflicts with the 'clientPortAddress' value of '0.0.0.0:3000'. The ports must be different.", "The property 'minSessionTimeout' has the value '-2' which is not in the valid range. It must be between 'tickTime' and '20 * tickTime'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPort	minSessionTimeout
+[Ciri] Reason for secureClientPort: The property 'secureClientPort' has the value '3000' which conflicts with the 'clientPortAddress' value of '0.0.0.0:3000'. The ports must be different.
+[Ciri] Reason for minSessionTimeout: The property 'minSessionTimeout' has the value '-2' which is not in the valid range. It must be between 'tickTime' and '20 * tickTime'.

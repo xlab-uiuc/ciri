@@ -1,0 +1,13 @@
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SESSION_COOKIE_AGE', 'CSRF_COOKIE_AGE', 'USE_DEPRECATED_PYTZ'], 'reason': ['SESSION_COOKIE_AGE should be an integer representing the number of seconds the session will expire after.', 'CSRF_COOKIE_AGE should be an integer representing the number of seconds the CSRF cookie will expire after.', 'USE_DEPRECATED_PYTZ is not a valid setting for Django version 4.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: SESSION_COOKIE_AGE	CSRF_COOKIE_AGE	USE_DEPRECATED_PYTZ
+[Ciri] Reason for SESSION_COOKIE_AGE: SESSION_COOKIE_AGE should be an integer representing the number of seconds the session will expire after.
+[Ciri] Reason for CSRF_COOKIE_AGE: CSRF_COOKIE_AGE should be an integer representing the number of seconds the CSRF cookie will expire after.
+[Ciri] Reason for USE_DEPRECATED_PYTZ: USE_DEPRECATED_PYTZ is not a valid setting for Django version 4.0.

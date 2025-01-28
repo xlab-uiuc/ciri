@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections', 'shared_buffers', 'wal_writer_flush_after'], 'reason': ['max_connections must be greater than 0', 'shared_buffers must be greater than 0', 'wal_writer_flush_after must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'wal_writer_flush_after'], 'reason': ['The value of shared_buffers must be a power of 2 greater than 4MB. The value of wal_writer_flush_after must be a power of 2 greater than 1MB.', 'The value of shared_buffers must be a power of 2 greater than 4MB. The value of wal_writer_flush_after must be a power of 2 greater than 1MB.']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'shared_buffers', 'wal_writer_flush_after'], 'reason': ['max_connections must be an integer', 'shared_buffers must be a valid memory size', 'wal_writer_flush_after must be a valid memory size']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max_connections	shared_buffers	wal_writer_flush_after
+[Ciri] Reason for max_connections: max_connections must be greater than 0
+[Ciri] Reason for shared_buffers: shared_buffers must be a valid memory size
+[Ciri] Reason for wal_writer_flush_after: wal_writer_flush_after must be a valid memory size

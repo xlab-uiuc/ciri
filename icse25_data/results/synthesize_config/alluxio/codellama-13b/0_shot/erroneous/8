@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.rpc.executor.max.pool.size', 'alluxio.user.client.cache.evictor.lfu.logbase', 'alluxio.underfs.s3.upload.threads.max', 'alluxio.job.master.embedded.journal.addresses', 'alluxio.user.logging.threshold', 'alluxio.jvm.monitor.sleep.interval', 'alluxio.master.metrics.time.series.interval'], 'reason': ['alluxio.master.rpc.executor.max.pool.size should be an integer', 'alluxio.user.client.cache.evictor.lfu.logbase should be a double', 'alluxio.underfs.s3.upload.threads.max should be an integer', 'alluxio.job.master.embedded.journal.addresses should be a list of host:port', 'alluxio.user.logging.threshold should be a duration', 'alluxio.jvm.monitor.sleep.interval should be a duration', 'alluxio.master.metrics.time.series.interval should be a duration']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: alluxio.master.rpc.executor.max.pool.size	alluxio.user.client.cache.evictor.lfu.logbase	alluxio.underfs.s3.upload.threads.max	alluxio.job.master.embedded.journal.addresses	alluxio.user.logging.threshold	alluxio.jvm.monitor.sleep.interval	alluxio.master.metrics.time.series.interval
+[Ciri] Reason for alluxio.master.rpc.executor.max.pool.size: alluxio.master.rpc.executor.max.pool.size should be an integer
+[Ciri] Reason for alluxio.user.client.cache.evictor.lfu.logbase: alluxio.user.client.cache.evictor.lfu.logbase should be a double
+[Ciri] Reason for alluxio.underfs.s3.upload.threads.max: alluxio.underfs.s3.upload.threads.max should be an integer
+[Ciri] Reason for alluxio.job.master.embedded.journal.addresses: alluxio.job.master.embedded.journal.addresses should be a list of host:port
+[Ciri] Reason for alluxio.user.logging.threshold: alluxio.user.logging.threshold should be a duration
+[Ciri] Reason for alluxio.jvm.monitor.sleep.interval: alluxio.jvm.monitor.sleep.interval should be a duration
+[Ciri] Reason for alluxio.master.metrics.time.series.interval: alluxio.master.metrics.time.series.interval should be a duration

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'listen-client-urls', 'logger', 'election-timeout', 'quota-backend-bytes', 'discovery-fallback', 'snapshot-count', 'initial-cluster-token'], 'reason': ["The value 'new' for 'initial-cluster-state' is not valid. It should be 'existing' or 'new'", "The value 'http://localhost:2379' for 'listen-client-urls' should be in the format 'http://ip:port'", "The value 'zap' for 'logger' is not a valid logger configuration. Please check the correct logger configuration for etcd", "The value '1000' for 'election-timeout' is not valid. It should be in milliseconds", "The value '0' for 'quota-backend-bytes' is not a valid value. It should be a positive integer", "The value 'proxy' for 'discovery-fallback' is not a valid discovery fallback option", "The value '5000' for 'snapshot-count' is not a valid value. It should be a positive integer", "The value 'etcd-cluster' for 'initial-cluster-token' is not a valid token. It should be a unique token for the cluster"]}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'listen-client-urls', 'logger', 'election-timeout', 'quota-backend-bytes', 'discovery-fallback', 'snapshot-count', 'initial-cluster-token'], 'reason': ["The value 'new' for 'initial-cluster-state' is not valid. It should be either 'new' or 'existing'.", "The value 'http://localhost:2379' for 'listen-client-urls' should be in the format 'http://ip:port'.", "The value 'zap' for 'logger' is not a valid logger option.", "The value '1000' for 'election-timeout' is not valid. It should be a duration string like '1s'.", "The value '0' for 'quota-backend-bytes' is not valid. It should be a positive integer.", "The value 'proxy' for 'discovery-fallback' is not a valid option.", "The value '5000' for 'snapshot-count' is not valid. It should be a positive integer.", "The value 'etcd-cluster' for 'initial-cluster-token' is not a valid token."]}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'logger', 'quota-backend-bytes', 'discovery-fallback', 'initial-cluster-token'], 'reason': ["The 'initial-cluster-state' parameter should be 'new', 'existing', or 'snapshot'.", "The 'logger' parameter should specify a valid logging configuration.", "The 'quota-backend-bytes' parameter should be a positive integer or '0' for unlimited.", "The 'discovery-fallback' parameter should be 'proxy' or 'exit'.", "The 'initial-cluster-token' parameter should be a unique identifier for the cluster."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: initial-cluster-state	listen-client-urls	logger	election-timeout	quota-backend-bytes	discovery-fallback	snapshot-count	initial-cluster-token
+[Ciri] Reason for initial-cluster-state: The value 'new' for 'initial-cluster-state' is not valid. It should be either 'new' or 'existing'.
+[Ciri] Reason for listen-client-urls: The value 'http://localhost:2379' for 'listen-client-urls' should be in the format 'http://ip:port'.
+[Ciri] Reason for logger: The value 'zap' for 'logger' is not a valid logger configuration. Please check the correct logger configuration for etcd
+[Ciri] Reason for election-timeout: The value '1000' for 'election-timeout' is not valid. It should be in milliseconds
+[Ciri] Reason for quota-backend-bytes: The value '0' for 'quota-backend-bytes' is not valid. It should be a positive integer.
+[Ciri] Reason for discovery-fallback: The value 'proxy' for 'discovery-fallback' is not a valid option.
+[Ciri] Reason for snapshot-count: The value '5000' for 'snapshot-count' is not valid. It should be a positive integer.
+[Ciri] Reason for initial-cluster-token: The value 'etcd-cluster' for 'initial-cluster-token' is not a valid token.

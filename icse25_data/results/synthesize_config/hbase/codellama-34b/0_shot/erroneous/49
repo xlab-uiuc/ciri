@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count', 'hbase.client.max.total.tasks', 'hbase.client.keyvalue.maxsize'], 'reason': ['hbase.regionserver.handler.count is too low, it should be a multiple of CPU count', 'hbase.client.max.total.tasks is too low, it should be a multiple of CPU count', 'hbase.client.keyvalue.maxsize is too low, it should be a multiple of CPU count']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.handler.count	hbase.client.max.total.tasks	hbase.client.keyvalue.maxsize
+[Ciri] Reason for hbase.regionserver.handler.count: hbase.regionserver.handler.count is too low, it should be a multiple of CPU count
+[Ciri] Reason for hbase.client.max.total.tasks: hbase.client.max.total.tasks is too low, it should be a multiple of CPU count
+[Ciri] Reason for hbase.client.keyvalue.maxsize: hbase.client.keyvalue.maxsize is too low, it should be a multiple of CPU count

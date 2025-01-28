@@ -1,0 +1,16 @@
+Correct shot number:
+[5, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.s3a.s3guard.ddb.throttle.retry.interval', 'fs.AbstractFileSystem.abfss.impl', 'ipc.[port_number].scheduler.impl', 'hadoop.zk.num-retries', 'hadoop.domainname.resolver.impl'], 'reason': ["Property 'fs.ftp.transfer.mode' has an additional 'usage' tag which is not a valid property element.", "Property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has an additional whitespace character in the property name.", "Property 'fs.AbstractFileSystem.abfss.impl' has an additional whitespace character in the property name.", "Property 'ipc.[port_number].scheduler.impl' has an additional whitespace character in the property name.", "Property 'hadoop.zk.num-retries' has an additional whitespace character in the property name.", "Property 'hadoop.domainname.resolver.impl' has an additional whitespace character in the property name."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.s3a.s3guard.ddb.throttle.retry.interval	fs.AbstractFileSystem.abfss.impl	ipc.[port_number].scheduler.impl	hadoop.zk.num-retries	hadoop.domainname.resolver.impl
+[Ciri] Reason for fs.ftp.transfer.mode: Property 'fs.ftp.transfer.mode' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for fs.s3a.s3guard.ddb.throttle.retry.interval: Property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has an additional whitespace character in the property name.
+[Ciri] Reason for fs.AbstractFileSystem.abfss.impl: Property 'fs.AbstractFileSystem.abfss.impl' has an additional whitespace character in the property name.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: Property 'ipc.[port_number].scheduler.impl' has an additional whitespace character in the property name.
+[Ciri] Reason for hadoop.zk.num-retries: Property 'hadoop.zk.num-retries' has an additional whitespace character in the property name.
+[Ciri] Reason for hadoop.domainname.resolver.impl: Property 'hadoop.domainname.resolver.impl' has an additional whitespace character in the property name.

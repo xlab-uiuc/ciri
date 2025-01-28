@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host=2.2.2.2.2.2', 'alluxio.user.date.format.pattern=MM-dd-yyyy HH:mm:ss:SSS', 'alluxio.master.shell.backup.state.lock.grace.mode=FORCED'], 'reason': ["The property 'alluxio.job.master.web.bind.host' expects a valid IP address or hostname, but '2.2.2.2.2.2' is not a valid value.", "The property 'alluxio.user.date.format.pattern' expects a valid date format pattern, but 'MM-dd-yyyy HH:mm:ss:SSS' is not a valid pattern. The correct pattern should be 'MM-dd-yyyy HH:mm:ss:SSS'.", "The property 'alluxio.master.shell.backup.state.lock.grace.mode' is not a valid Alluxio configuration property in version 2.5.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.web.bind.host=2.2.2.2.2.2	alluxio.user.date.format.pattern=MM-dd-yyyy HH:mm:ss:SSS	alluxio.master.shell.backup.state.lock.grace.mode=FORCED
+[Ciri] Reason for alluxio.job.master.web.bind.host=2.2.2.2.2.2: The property 'alluxio.job.master.web.bind.host' expects a valid IP address or hostname, but '2.2.2.2.2.2' is not a valid value.
+[Ciri] Reason for alluxio.user.date.format.pattern=MM-dd-yyyy HH:mm:ss:SSS: The property 'alluxio.user.date.format.pattern' expects a valid date format pattern, but 'MM-dd-yyyy HH:mm:ss:SSS' is not a valid pattern. The correct pattern should be 'MM-dd-yyyy HH:mm:ss:SSS'.
+[Ciri] Reason for alluxio.master.shell.backup.state.lock.grace.mode=FORCED: The property 'alluxio.master.shell.backup.state.lock.grace.mode' is not a valid Alluxio configuration property in version 2.5.0.

@@ -1,0 +1,13 @@
+Correct shot number:
+[10, 1, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'ipc.server.log.slow.rpc', 'hadoop.http.cross-origin.enabled'], 'reason': ['The value for fs.defaultFS parameter is not a valid URI.', 'The value for ipc.server.log.slow.rpc parameter should be a boolean (true/false).', 'The value for hadoop.http.cross-origin.enabled parameter should be a boolean (true/false).']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.defaultFS	ipc.server.log.slow.rpc	hadoop.http.cross-origin.enabled
+[Ciri] Reason for fs.defaultFS: The value for fs.defaultFS parameter is not a valid URI.
+[Ciri] Reason for ipc.server.log.slow.rpc: The value for ipc.server.log.slow.rpc parameter should be a boolean (true/false).
+[Ciri] Reason for hadoop.http.cross-origin.enabled: The value for hadoop.http.cross-origin.enabled parameter should be a boolean (true/false).

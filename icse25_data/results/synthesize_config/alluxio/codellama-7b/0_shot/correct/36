@@ -1,0 +1,36 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.file.replication.max must be greater than or equal to 1', 'alluxio.user.network.rpc.max.inbound.message.size must be greater than or equal to 1MB']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.master.metadata.sync.ufs.prefetch.pool.size', 'alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.master.ufs.path.cache.capacity'], 'reason': ['alluxio.user.file.replication.max should be greater than or equal to 1', 'alluxio.master.metadata.sync.ufs.prefetch.pool.size should be greater than or equal to 1', 'alluxio.user.network.rpc.max.inbound.message.size should be greater than or equal to 1MB', 'alluxio.master.ufs.path.cache.capacity should be greater than or equal to 100000']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['alluxio.user.file.replication.max should be a positive integer', 'alluxio.user.network.rpc.max.inbound.message.size should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.master.metadata.sync.ufs.prefetch.pool.size', 'alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.master.ufs.path.cache.capacity'], 'reason': ['alluxio.user.file.replication.max must be greater than or equal to 1', 'alluxio.master.metadata.sync.ufs.prefetch.pool.size must be greater than or equal to 1', 'alluxio.user.network.rpc.max.inbound.message.size must be greater than or equal to 1MB', 'alluxio.master.ufs.path.cache.capacity must be greater than or equal to 100000']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max'], 'reason': ['alluxio.user.file.replication.max must be greater than or equal to 1']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.retry.cache.expiry.time', 'alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.zookeeper.leader.inquiry.retry'], 'reason': ['alluxio.master.embedded.journal.retry.cache.expiry.time should be a duration', 'alluxio.user.network.rpc.max.inbound.message.size should be a positive integer', 'alluxio.zookeeper.leader.inquiry.retry should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max'], 'reason': ['alluxio.user.file.replication.max should be a positive integer']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max'], 'reason': ['alluxio.user.file.replication.max should be greater than or equal to 1']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.master.metadata.sync.ufs.prefetch.pool.size', 'alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.master.ufs.path.cache.capacity'], 'reason': ['alluxio.user.file.replication.max should be greater than or equal to 1', 'alluxio.master.metadata.sync.ufs.prefetch.pool.size should be greater than or equal to 1', 'alluxio.user.network.rpc.max.inbound.message.size should be greater than or equal to 100MB', 'alluxio.master.ufs.path.cache.capacity should be greater than or equal to 100000']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max'], 'reason': ['alluxio.user.file.replication.max is not a valid property in version 2.5.0.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.file.replication.max
+[Ciri] Reason for alluxio.user.file.replication.max: alluxio.user.file.replication.max should be greater than or equal to 1

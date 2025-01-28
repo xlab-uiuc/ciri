@@ -1,0 +1,16 @@
+Wrong shot number:
+[7, 16, 4]
+
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.read.considerLoad', 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec', 'dfs.namenode.secondary.http-address'], 'reason': ["The property 'dfs.namenode.read.considerLoad' description incorrectly states it is 'Turn off by default.' The default value is actually true as specified.", "The property 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec' has an invalid default value of -1. The description suggests 0 indicates throttling is disabled, which conflicts with the stated default.", "The port number '500090' in 'dfs.namenode.secondary.http-address' is outside the valid range of 0-65535 for TCP/IP ports."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.read.considerLoad	dfs.image.transfer-bootstrap-standby.bandwidthPerSec	dfs.namenode.secondary.http-address
+[Ciri] Reason for dfs.namenode.read.considerLoad: The property 'dfs.namenode.read.considerLoad' description incorrectly states it is 'Turn off by default.' The default value is actually true as specified.
+[Ciri] Reason for dfs.image.transfer-bootstrap-standby.bandwidthPerSec: The property 'dfs.image.transfer-bootstrap-standby.bandwidthPerSec' has an invalid default value of -1. The description suggests 0 indicates throttling is disabled, which conflicts with the stated default.
+[Ciri] Reason for dfs.namenode.secondary.http-address: The port number '500090' in 'dfs.namenode.secondary.http-address' is outside the valid range of 0-65535 for TCP/IP ports.

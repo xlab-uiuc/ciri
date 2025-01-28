@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.finished.job.retention.time', 'alluxio.user.date.format.pattern', 'alluxio.user.client.cache.page.size', 'alluxio.underfs.eventual.consistency.retry.max.num'], 'reason': ["Invalid value for 'alluxio.job.master.finished.job.retention.time'. It should be specified in milliseconds.", "Invalid value for 'alluxio.user.date.format.pattern'. The correct format pattern should be specified.", "Invalid value for 'alluxio.user.client.cache.page.size'. It should be specified in bytes.", "Invalid value for 'alluxio.underfs.eventual.consistency.retry.max.num'. It should be a positive integer or -1 for unlimited retries."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.finished.job.retention.time', 'alluxio.user.date.format.pattern', 'alluxio.user.client.cache.page.size', 'alluxio.underfs.eventual.consistency.retry.max.num'], 'reason': ["Invalid value for 'alluxio.job.master.finished.job.retention.time'. It should be specified in milliseconds.", "Invalid value for 'alluxio.user.date.format.pattern'. The correct format pattern should be specified.", "Invalid value for 'alluxio.user.client.cache.page.size'. It should be specified in bytes.", "Invalid value for 'alluxio.underfs.eventual.consistency.retry.max.num'. It should be a positive integer or -1 for unlimited retries."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.finished.job.retention.time', 'alluxio.user.date.format.pattern', 'alluxio.user.client.cache.page.size', 'alluxio.underfs.eventual.consistency.retry.max.num'], 'reason': ["Invalid value '1sec' for property 'alluxio.job.master.finished.job.retention.time'. Expected format: <duration>s, <duration>ms, <duration>us, <duration>ns.", "Invalid value 'MM-dd-yyyy HH:mm:ss:SSS' for property 'alluxio.user.date.format.pattern'. Expected format: Java SimpleDateFormat pattern.", "Invalid value '2MB' for property 'alluxio.user.client.cache.page.size'. Expected format: <long>[B|KB|MB|GB|TB].", "Invalid value '-1' for property 'alluxio.underfs.eventual.consistency.retry.max.num'. Expected a positive integer or -1 for unlimited retries."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.job.master.finished.job.retention.time	alluxio.user.date.format.pattern	alluxio.user.client.cache.page.size	alluxio.underfs.eventual.consistency.retry.max.num
+[Ciri] Reason for alluxio.job.master.finished.job.retention.time: Invalid value for 'alluxio.job.master.finished.job.retention.time'. It should be specified in milliseconds.
+[Ciri] Reason for alluxio.user.date.format.pattern: Invalid value for 'alluxio.user.date.format.pattern'. The correct format pattern should be specified.
+[Ciri] Reason for alluxio.user.client.cache.page.size: Invalid value for 'alluxio.user.client.cache.page.size'. It should be specified in bytes.
+[Ciri] Reason for alluxio.underfs.eventual.consistency.retry.max.num: Invalid value '-1' for property 'alluxio.underfs.eventual.consistency.retry.max.num'. Expected a positive integer or -1 for unlimited retries.

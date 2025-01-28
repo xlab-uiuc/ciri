@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.master.connect.retry.timeout', 'alluxio.user.client.cache.async.restore.enabled'], 'reason': ["In Alluxio 2.5.0, the 'alluxio.worker.master.connect.retry.timeout' property has been renamed to 'alluxio.worker.master.connect.timeout'.", "The 'alluxio.user.client.cache.async.restore.enabled' property is not a valid configuration in Alluxio 2.5.0. It was introduced in later versions (2.6.0 onwards)."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.worker.master.connect.retry.timeout	alluxio.user.client.cache.async.restore.enabled
+[Ciri] Reason for alluxio.worker.master.connect.retry.timeout: In Alluxio 2.5.0, the 'alluxio.worker.master.connect.retry.timeout' property has been renamed to 'alluxio.worker.master.connect.timeout'.
+[Ciri] Reason for alluxio.user.client.cache.async.restore.enabled: The 'alluxio.user.client.cache.async.restore.enabled' property is not a valid configuration in Alluxio 2.5.0. It was introduced in later versions (2.6.0 onwards).

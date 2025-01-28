@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.min.size', 'hbase.hstore.compaction.max.size', 'hbase.regionserver.majorcompaction.pagecache.drop', 'hbase.hstore.compaction.kv.max', 'hbase.auth.key.update.interval', 'hbase.display.keys', 'hbase.mob.cache.evict.period'], 'reason': ["The descriptions for 'hbase.hstore.compaction.min.size' and 'hbase.hstore.compaction.max.size' are too long and detailed. They should be concise and to the point.", "The description for 'hbase.regionserver.majorcompaction.pagecache.drop' is not clear and needs to be more specific.", "The 'usage' tag is not a valid tag for 'hbase.hstore.compaction.kv.max'.", "The 'usage' tag is not a valid tag for 'hbase.auth.key.update.interval'.", "The 'usage' tag is not a valid tag for 'hbase.display.keys'.", "The 'usage' tag is not a valid tag for 'hbase.mob.cache.evict.period'."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.min.size', 'hbase.hstore.compaction.max.size', 'hbase.regionserver.majorcompaction.pagecache.drop'], 'reason': ["The description for 'hbase.hstore.compaction.min.size' parameter is too long and contains unnecessary details.", "The value for 'hbase.hstore.compaction.max.size' parameter is too large and should be a valid integer value.", "The value for 'hbase.regionserver.majorcompaction.pagecache.drop' parameter should be a boolean value (true/false)."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.min.size', 'hbase.hstore.compaction.max.size', 'hbase.regionserver.majorcompaction.pagecache.drop', 'hbase.hstore.compaction.kv.max', 'hbase.auth.key.update.interval', 'hbase.display.keys', 'hbase.mob.cache.evict.period'], 'reason': ["The description for property 'hbase.hstore.compaction.min.size' is too lengthy and contains unnecessary details.", "The description for property 'hbase.hstore.compaction.max.size' is too lengthy and contains unnecessary details.", "The description for property 'hbase.regionserver.majorcompaction.pagecache.drop' is not clear and concise.", "The 'usage' tag is not a valid tag for property 'hbase.hstore.compaction.kv.max'.", "The 'usage' tag is not a valid tag for property 'hbase.auth.key.update.interval'.", "The 'usage' tag is not a valid tag for property 'hbase.display.keys'.", "The description for property 'hbase.mob.cache.evict.period' is missing important details."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: hbase.hstore.compaction.min.size	hbase.hstore.compaction.max.size	hbase.regionserver.majorcompaction.pagecache.drop	hbase.hstore.compaction.kv.max	hbase.auth.key.update.interval	hbase.display.keys	hbase.mob.cache.evict.period
+[Ciri] Reason for hbase.hstore.compaction.min.size: The description for property 'hbase.hstore.compaction.min.size' is too lengthy and contains unnecessary details.
+[Ciri] Reason for hbase.hstore.compaction.max.size: The description for 'hbase.regionserver.majorcompaction.pagecache.drop' is not clear and needs to be more specific.
+[Ciri] Reason for hbase.regionserver.majorcompaction.pagecache.drop: The description for property 'hbase.regionserver.majorcompaction.pagecache.drop' is not clear and concise.
+[Ciri] Reason for hbase.hstore.compaction.kv.max: The 'usage' tag is not a valid tag for property 'hbase.hstore.compaction.kv.max'.
+[Ciri] Reason for hbase.auth.key.update.interval: The 'usage' tag is not a valid tag for 'hbase.display.keys'.
+[Ciri] Reason for hbase.display.keys: The 'usage' tag is not a valid tag for property 'hbase.display.keys'.
+[Ciri] Reason for hbase.mob.cache.evict.period: The description for property 'hbase.mob.cache.evict.period' is missing important details.

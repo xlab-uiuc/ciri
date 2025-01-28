@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 10, 6]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.security.visibility.mutations.checkauths'], 'reason': ["The value of the property 'hbase.security.visibility.mutations.checkauths' should be 'false' to enable the property 'hbase.security.visibility.authorization.enabled'."]}
+
+{'hasError': True, 'errParameter': ['hbase.security.visibility.mutations.checkauths'], 'reason': ["The value of the property 'hbase.security.visibility.mutations.checkauths' should be 'false' to enable the property 'hbase.security.visibility.authorizations.enabled'."]}
+
+{'hasError': True, 'errParameter': ['hbase.ipc.client.fallback-to-simple-auth-allowed'], 'reason': ["The property 'hbase.ipc.client.fallback-to-simple-auth-allowed' has the value 'true' which is not within the accepted value {false}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.security.visibility.mutations.checkauths
+[Ciri] Reason for hbase.security.visibility.mutations.checkauths: The value of the property 'hbase.security.visibility.mutations.checkauths' should be 'false' to enable the property 'hbase.security.visibility.authorization.enabled'.

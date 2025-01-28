@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.server.saslLoginContext', 'minSessionTimeout', 'autopurge.purgeInterval'], 'reason': ["The correct property is 'quorum.auth.enableSaslQuorum', not 'quorum.auth.enableSasl'.", "The correct property is 'quorum.auth.serverSaslLoginContext', not 'quorum.auth.server.saslLoginContext'.", "The 'minSessionTimeout' cannot be 0. It must be a positive integer.", "The 'autopurge.purgeInterval' should not be 0 if you want to enable autopurge. It must be a positive integer."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.server.saslLoginContext	minSessionTimeout	autopurge.purgeInterval
+[Ciri] Reason for quorum.auth.enableSasl: The correct property is 'quorum.auth.enableSaslQuorum', not 'quorum.auth.enableSasl'.
+[Ciri] Reason for quorum.auth.server.saslLoginContext: The correct property is 'quorum.auth.serverSaslLoginContext', not 'quorum.auth.server.saslLoginContext'.
+[Ciri] Reason for minSessionTimeout: The 'minSessionTimeout' cannot be 0. It must be a positive integer.
+[Ciri] Reason for autopurge.purgeInterval: The 'autopurge.purgeInterval' should not be 0 if you want to enable autopurge. It must be a positive integer.

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.local.dir</name>
+  <value>/valid/file2</value>
+    <description>Directory on the local filesystem to be used
+    as a local storage.</description>
+</property>
+
+<property>
+  <name>hbase.master.fileSplitTimeout</name>
+  <value>1200000</value>
+    <description>Splitting a region, how long to wait on the file-splitting
+      step before aborting the attempt. Default: 600000. This setting used
+      to be known as hbase.regionserver.fileSplitTimeout in hbase-1.x.
+      Split is now run master-side hence the rename (If a
+      'hbase.master.fileSplitTimeout' setting found, will use it to
+      prime the current 'hbase.master.fileSplitTimeout'
+      Configuration.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.logroll.period</name>
+  <value>1800000</value>
+    <description>Period at which we will roll the commit log regardless
+    of how many edits it has.</description>
+</property>
+
+<property>
+  <name>hbase.client.max.perregion.tasks</name>
+  <value>2</value>
+    <description>The maximum number of concurrent mutation tasks the client will
+    maintain to a single Region. That is, if there is already
+    hbase.client.max.perregion.tasks writes in progress for this region, new puts
+    won't be sent to this region until some writes finishes.</description>
+</property>
+
+<property>
+  <name>hfile.block.cache.size</name>
+  <value>0.8</value>
+    <description>Percentage of maximum heap (-Xmx setting) to allocate to block cache
+        used by a StoreFile. Default of 0.4 means allocate 40%.
+        Set to 0 to disable but it's not recommended; you need at least
+        enough cache to hold the storefile indices.</description>
+</property>
+
+<property>
+  <name>hbase.ipc.client.fallback-to-simple-auth-allowed</name>
+  <value>true</value>
+    <description>When a client is configured to attempt a secure connection, but attempts to
+      connect to an insecure server, that server may instruct the client to
+      switch to SASL SIMPLE (unsecure) authentication. This setting controls
+      whether or not the client will accept this instruction from the server.
+      When false (the default), the client will not allow the fallback to SIMPLE
+      authentication, and will abort the connection.</description>
+</property>
+
+<property>
+  <name>hbase.defaults.for.version.skip</name>
+  <value>false</value>
+    <description>Set to true to skip the 'hbase.defaults.for.version' check.
+    Setting this to true can be useful in contexts other than
+    the other side of a maven generation; i.e. running in an
+    IDE.  You'll want to set this boolean to true to avoid
+    seeing the RuntimeException complaint: "hbase-default.xml file
+    seems to be for and old version of HBase (\${hbase.version}), this
+    version is X.X.X-SNAPSHOT"</description>
+</property>
+
+<property>
+  <name>hbase.master.loadbalance.bytable</name>
+  <value>false</value>
+    <description>Factor Table name when the balancer runs.
+      Default: false.
+    </description>
+</property>
+
+</configuration>

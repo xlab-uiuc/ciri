@@ -1,0 +1,13 @@
+Wrong shot number:
+[9, 1, 14, 16, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'hadoop.kerberos.kinit.command', 'fs.s3a.select.input.csv.quote.escape.character'], 'reason': ["The property 'hadoop.service.shutdown.timeout' has the value '10nounit' which is not a valid duration format.", "The property 'hadoop.kerberos.kinit.command' has an additional 'usage' field which is not part of the standard configuration format.", "The property 'fs.s3a.select.input.csv.quote.escape.character' has the value '\\' which may cause issues as it needs to be properly escaped."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	hadoop.kerberos.kinit.command	fs.s3a.select.input.csv.quote.escape.character
+[Ciri] Reason for hadoop.service.shutdown.timeout: The property 'hadoop.service.shutdown.timeout' has the value '10nounit' which is not a valid duration format.
+[Ciri] Reason for hadoop.kerberos.kinit.command: The property 'hadoop.kerberos.kinit.command' has an additional 'usage' field which is not part of the standard configuration format.
+[Ciri] Reason for fs.s3a.select.input.csv.quote.escape.character: The property 'fs.s3a.select.input.csv.quote.escape.character' has the value '\' which may cause issues as it needs to be properly escaped.

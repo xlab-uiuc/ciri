@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.common.configuration.version</name>
+  <value>3.0.0</value>
+  <description>version of this configuration file</description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.ssl</name>
+  <value>false</value>
+  <description>
+    Whether or not to use SSL when connecting to the LDAP server.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.credential.clear-text-fallback</name>
+  <value>false</value>
+  <description>
+    true or false to indicate whether or not to fall back to storing credential
+    password as clear text. The default value is true. This property only works
+    when the password can't not be found from credential providers.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.connection.establish.timeout</name>
+  <value>10000</value>
+  <description>Socket connection setup timeout in milliseconds.</description>
+</property>
+
+<property>
+  <name>fs.s3a.multipart.purge.age</name>
+  <value>43200</value>
+  <description>Minimum age in seconds of multipart uploads to purge
+    on startup if "fs.s3a.multipart.purge" is true
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.csv.quote.character</name>
+  <value>"</value>
+  <description>In S3 Select queries over CSV files: quote character.
+    \t is remapped to the TAB character, \r to CR \n to newline. \\ to \
+    and \" to "
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].decay-scheduler.metrics.top.user.count</name>
+  <value>10</value>
+  <description>The number of top (i.e., heaviest) users to emit metric
+    information about. This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>ipc.server.max.connections</name>
+  <value>1</value>
+  <description>The maximum number of concurrent connections a server is allowed
+    to accept. If this limit is exceeded, incoming connections will first fill
+    the listen queue and then may go to an OS-specific listen overflow queue.
+    The client may fail or timeout, but the server can avoid running out of file
+    descriptors using this feature. 0 means no limit.
+  </description>
+</property>
+
+</configuration>

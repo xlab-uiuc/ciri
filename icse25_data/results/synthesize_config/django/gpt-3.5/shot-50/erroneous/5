@@ -1,0 +1,14 @@
+Correct shot number:
+[3, 1, 2, 4, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATIC_ROOT', 'FILE_UPLOAD_DIRECTORY_PERMISSIONS', 'SESSION_FILE_PATH', 'CSRF_COOKIE_HTTPONLY'], 'reason': ['STATIC_ROOT path should not start with double slashes.', 'FILE_UPLOAD_DIRECTORY_PERMISSIONS should be specified with a valid value.', 'SESSION_FILE_PATH should be set to a valid path.', 'CSRF_COOKIE_HTTPONLY should be set to True for security reasons.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: STATIC_ROOT	FILE_UPLOAD_DIRECTORY_PERMISSIONS	SESSION_FILE_PATH	CSRF_COOKIE_HTTPONLY
+[Ciri] Reason for STATIC_ROOT: STATIC_ROOT path should not start with double slashes.
+[Ciri] Reason for FILE_UPLOAD_DIRECTORY_PERMISSIONS: FILE_UPLOAD_DIRECTORY_PERMISSIONS should be specified with a valid value.
+[Ciri] Reason for SESSION_FILE_PATH: SESSION_FILE_PATH should be set to a valid path.
+[Ciri] Reason for CSRF_COOKIE_HTTPONLY: CSRF_COOKIE_HTTPONLY should be set to True for security reasons.

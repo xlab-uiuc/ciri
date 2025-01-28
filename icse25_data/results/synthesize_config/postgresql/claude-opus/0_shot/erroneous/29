@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_writer_flush_after', 'scram_iterations'], 'reason': ["The 'wal_writer_flush_after' parameter is not available in PostgreSQL 13. It was introduced in version 14.", "The 'scram_iterations' parameter is not available in PostgreSQL 13. The minimum supported version for this parameter is 14."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: wal_writer_flush_after	scram_iterations
+[Ciri] Reason for wal_writer_flush_after: The 'wal_writer_flush_after' parameter is not available in PostgreSQL 13. It was introduced in version 14.
+[Ciri] Reason for scram_iterations: The 'scram_iterations' parameter is not available in PostgreSQL 13. The minimum supported version for this parameter is 14.

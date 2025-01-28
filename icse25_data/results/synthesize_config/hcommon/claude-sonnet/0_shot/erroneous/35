@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.ssl', 'fs.s3a.security.credential.provider.path', 'hadoop.registry.zk.root'], 'reason': ['The value for hadoop.security.group.mapping.ldap.ssl should be a boolean (true/false) instead of a number.', 'The property fs.s3a.security.credential.provider.path is not a valid property in Hadoop Common 3.3.0. It is a property specific to the Hadoop AWS module.', 'The property hadoop.registry.zk.root is not a valid property in Hadoop Common 3.3.0. It is a property specific to the Hadoop Registry module.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.ssl	fs.s3a.security.credential.provider.path	hadoop.registry.zk.root
+[Ciri] Reason for hadoop.security.group.mapping.ldap.ssl: The value for hadoop.security.group.mapping.ldap.ssl should be a boolean (true/false) instead of a number.
+[Ciri] Reason for fs.s3a.security.credential.provider.path: The property fs.s3a.security.credential.provider.path is not a valid property in Hadoop Common 3.3.0. It is a property specific to the Hadoop AWS module.
+[Ciri] Reason for hadoop.registry.zk.root: The property hadoop.registry.zk.root is not a valid property in Hadoop Common 3.3.0. It is a property specific to the Hadoop Registry module.

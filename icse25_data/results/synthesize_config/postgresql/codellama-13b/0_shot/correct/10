@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['autovacuum_analyze_threshold', 'max_parallel_workers', 'max_stack_depth'], 'reason': ['The value of autovacuum_analyze_threshold must be between 0 and 10000.', 'The value of max_parallel_workers must be between 0 and 16384.', 'The value of max_stack_depth must be between 1MB and 32MB.']}
+
+{'hasError': True, 'errParameter': ['bytea_output', 'autovacuum_analyze_threshold', 'autovacuum', 'superuser_reserved_connections', 'max_parallel_workers', 'transform_null_equals', 'max_stack_depth'], 'reason': ["bytea_output should be set to 'escape' or 'disable_escape'", 'autovacuum_analyze_threshold should be set to a value between 0 and 100', "autovacuum should be set to 'on' or 'off'", 'superuser_reserved_connections should be set to a value between 0 and 1000', 'max_parallel_workers should be set to a value between 0 and 1024', "transform_null_equals should be set to 'on' or 'off'", 'max_stack_depth should be set to a value between 1MB and 1GB']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_analyze_threshold', 'max_parallel_workers', 'max_stack_depth'], 'reason': ['autovacuum_analyze_threshold should be between 0 and 10000', 'max_parallel_workers should be between 0 and 16384', 'max_stack_depth should be between 1MB and 32MB']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['autovacuum_analyze_threshold', 'max_parallel_workers', 'max_stack_depth'], 'reason': ['autovacuum_analyze_threshold should be between 0 and 10000', 'max_parallel_workers should be between 0 and 1024', 'max_stack_depth should be between 1MB and 32MB']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: autovacuum_analyze_threshold	max_parallel_workers	max_stack_depth
+[Ciri] Reason for autovacuum_analyze_threshold: autovacuum_analyze_threshold should be between 0 and 10000
+[Ciri] Reason for max_parallel_workers: max_parallel_workers should be between 0 and 1024
+[Ciri] Reason for max_stack_depth: max_stack_depth should be between 1MB and 32MB

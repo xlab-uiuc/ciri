@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 8, 6]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_memory_type', 'max_pred_locks_per_relation'], 'reason': ["The value of 'shared_memory_type' is invalid. It should be one of 'sysv', 'windows', 'mmap', 'posix', 'none'.", "The property 'max_pred_locks_per_relation' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['shared_memory_type', 'max_pred_locks_per_relation'], 'reason': ["The property 'shared_memory_type' has an invalid value. It should be one of 'sysv', 'windows', 'mmap', 'posix', 'sysv_ipc', 'none'.", "The property 'max_pred_locks_per_relation' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['shared_memory_type', 'max_pred_locks_per_relation'], 'reason': ["The value of the property 'shared_memory_type' is not valid. It should be one of 'sysv', 'windows', 'mmap', 'posix', 'sysv_ipc', 'none'.", "The property 'max_pred_locks_per_relation' has a negative value which is not allowed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: shared_memory_type	max_pred_locks_per_relation
+[Ciri] Reason for shared_memory_type: The value of the property 'shared_memory_type' is not valid. It should be one of 'sysv', 'windows', 'mmap', 'posix', 'sysv_ipc', 'none'.
+[Ciri] Reason for max_pred_locks_per_relation: The property 'max_pred_locks_per_relation' has a negative value which is not allowed.

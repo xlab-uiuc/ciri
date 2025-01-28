@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.hstore.compaction.max.size'], 'reason': ['The value 65536 for hbase.zookeeper.property.clientPort is invalid. The valid range for ZooKeeper client port is between 1024 and 65535.', 'The value 4611686018427387903 for hbase.hstore.compaction.max.size is invalid. It exceeds the maximum value of a long data type, which is 9223372036854775807.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.zookeeper.property.clientPort	hbase.hstore.compaction.max.size
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The value 65536 for hbase.zookeeper.property.clientPort is invalid. The valid range for ZooKeeper client port is between 1024 and 65535.
+[Ciri] Reason for hbase.hstore.compaction.max.size: The value 4611686018427387903 for hbase.hstore.compaction.max.size is invalid. It exceeds the maximum value of a long data type, which is 9223372036854775807.

@@ -1,0 +1,20 @@
+Wrong shot number:
+[7, 2, 3]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ["The property 'bgwriter_delay' has an incorrect unit 'NS'. Use 'ns' instead.", "The value of the property 'max_pred_locks_per_relation' should be a positive integer.", "The value of the property 'log_min_duration_sample' should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ["The property 'bgwriter_delay' has an incorrect unit 'NS'. Use a valid unit like 'ms' for milliseconds.", "The property 'max_pred_locks_per_relation' should have a non-negative value.", "The property 'log_min_duration_sample' should have a non-negative value."]}
+
+{'hasError': True, 'errParameter': ['bgwriter_delay', 'max_pred_locks_per_relation', 'log_min_duration_sample'], 'reason': ["The property 'bgwriter_delay' has an incorrect unit 'NS'. Use 'ns' for nanoseconds.", "The value of the property 'max_pred_locks_per_relation' should be a positive integer or -1 for no limit.", "The value of the property 'log_min_duration_sample' should be a positive integer or zero."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: bgwriter_delay	max_pred_locks_per_relation	log_min_duration_sample
+[Ciri] Reason for bgwriter_delay: The property 'bgwriter_delay' has an incorrect unit 'NS'. Use 'ns' for nanoseconds.
+[Ciri] Reason for max_pred_locks_per_relation: The value of the property 'max_pred_locks_per_relation' should be a positive integer.
+[Ciri] Reason for log_min_duration_sample: The value of the property 'log_min_duration_sample' should be a positive integer or zero.

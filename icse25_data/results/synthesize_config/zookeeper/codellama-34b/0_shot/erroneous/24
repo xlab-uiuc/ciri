@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir and dataLogDir should not be the same directory']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'quorum.cnxn.threads.size', 'portUnification', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.purgeInterval', 'peerType', 'maxClientCnxns', 'minSessionTimeout'], 'reason': ['dataDir should be a directory', 'clientPort should be a number', 'quorum.cnxn.threads.size should be a number', 'portUnification should be a boolean', 'quorum.auth.kerberos.servicePrincipal should be a string', 'autopurge.purgeInterval should be a number', 'peerType should be a string', 'maxClientCnxns should be a number', 'minSessionTimeout should be a number']}
+
+{'hasError': True, 'errParameter': ['quorum.cnxn.threads.size', 'portUnification', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.purgeInterval', 'peerType'], 'reason': ['quorum.cnxn.threads.size is not a valid property', 'portUnification is not a valid property', 'quorum.auth.kerberos.servicePrincipal is not a valid property', 'autopurge.purgeInterval is not a valid property', 'peerType is not a valid property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'server.1', 'server.2', 'server.3'], 'reason': ['dataDir and dataLogDir should be different', 'clientPort should be an integer', 'server.1, server.2, and server.3 should be in the form of server.id=host:port:port']}
+
+{'hasError': True, 'errParameter': ['quorum.cnxn.threads.size', 'quorum.auth.kerberos.servicePrincipal', 'peerType'], 'reason': ['quorum.cnxn.threads.size is deprecated', 'quorum.auth.kerberos.servicePrincipal is not a valid property', 'peerType is not a valid property']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'dataDir', 'dataLogDir', 'quorum.cnxn.threads.size', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.purgeInterval', 'peerType', 'maxClientCnxns', 'minSessionTimeout'], 'reason': ['clientPort is missing a value', 'dataDir is missing a value', 'dataLogDir is missing a value', 'quorum.cnxn.threads.size is not a valid value', 'quorum.auth.kerberos.servicePrincipal is not a valid value', 'autopurge.purgeInterval is not a valid value', 'peerType is not a valid value', 'maxClientCnxns is not a valid value', 'minSessionTimeout is not a valid value']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.x properties are not supported in ZooKeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.x properties are not supported in ZooKeeper version 3.7.0. Please use the server.x=y:z:w format instead.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'peerType', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['dataDir should be a directory', 'clientPort should be a positive integer', 'peerType should be either leader or follower', 'quorum.auth.kerberos.servicePrincipal should be in the format of service/host']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: server.1	server.2	server.3
+[Ciri] Reason for server.1: The server.x properties are not supported in ZooKeeper version 3.7.0
+[Ciri] Reason for server.2: 
+[Ciri] Reason for server.3: 

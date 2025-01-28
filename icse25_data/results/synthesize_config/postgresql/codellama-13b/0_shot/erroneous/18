@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_relation', 'max_replication_slots'], 'reason': ['max_pred_locks_per_relation should be a positive integer', 'max_replication_slots should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_relation', 'max_replication_slots'], 'reason': ['max_pred_locks_per_relation should be a positive integer.', 'max_replication_slots should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_relation', 'wal_log_hints', 'tcp_user_timeout', 'max_replication_slots'], 'reason': ['max_pred_locks_per_relation should be a positive integer.', 'wal_log_hints should be a boolean.', 'tcp_user_timeout should be a positive integer.', 'max_replication_slots should be a positive integer.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: max_pred_locks_per_relation	max_replication_slots
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation should be a positive integer
+[Ciri] Reason for max_replication_slots: max_replication_slots should be a positive integer.

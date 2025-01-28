@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.threads.max', 'alluxio.master.metastore', 'alluxio.master.log.config.report.heartbeat.interval', 'alluxio.worker.tieredstore.level2.watermark.high.ratio', 'alluxio.master.ufs.active.sync.interval'], 'reason': ["The value for 'alluxio.underfs.s3.threads.max' is excessively high and likely exceeds practical limits or integer bounds.", "The value 'ROCKS' for 'alluxio.master.metastore' is invalid. Valid options are 'HEAP' or 'ROCKS' in newer versions, but the configuration should be checked against the specific Alluxio version documentation.", "The value for 'alluxio.master.log.config.report.heartbeat.interval' uses 'h' which is not a valid time unit. Valid time units are 'ms', 's', 'm', 'min', 'h', 'd'.", "The value '1.9' for 'alluxio.worker.tieredstore.level2.watermark.high.ratio' is invalid because ratios should be between 0 and 1.", "The value for 'alluxio.master.ufs.active.sync.interval' uses 'sec' which is not a recognized time unit. Valid time units are 'ms', 's', 'm', 'min', 'h', 'd'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.underfs.s3.threads.max	alluxio.master.metastore	alluxio.master.log.config.report.heartbeat.interval	alluxio.worker.tieredstore.level2.watermark.high.ratio	alluxio.master.ufs.active.sync.interval
+[Ciri] Reason for alluxio.underfs.s3.threads.max: The value for 'alluxio.underfs.s3.threads.max' is excessively high and likely exceeds practical limits or integer bounds.
+[Ciri] Reason for alluxio.master.metastore: The value 'ROCKS' for 'alluxio.master.metastore' is invalid. Valid options are 'HEAP' or 'ROCKS' in newer versions, but the configuration should be checked against the specific Alluxio version documentation.
+[Ciri] Reason for alluxio.master.log.config.report.heartbeat.interval: The value for 'alluxio.master.log.config.report.heartbeat.interval' uses 'h' which is not a valid time unit. Valid time units are 'ms', 's', 'm', 'min', 'h', 'd'.
+[Ciri] Reason for alluxio.worker.tieredstore.level2.watermark.high.ratio: The value '1.9' for 'alluxio.worker.tieredstore.level2.watermark.high.ratio' is invalid because ratios should be between 0 and 1.
+[Ciri] Reason for alluxio.master.ufs.active.sync.interval: The value for 'alluxio.master.ufs.active.sync.interval' uses 'sec' which is not a recognized time unit. Valid time units are 'ms', 's', 'm', 'min', 'h', 'd'.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-announce-ip', 'rdb-del-sync-files'], 'reason': ['replica-announce-ip is not a valid configuration parameter for Redis 7.0.0', 'rdb-del-sync-files is not a valid configuration parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['replica-lazy-flush', 'list-compress-depth', 'replica-announce-ip', 'rdb-del-sync-files'], 'reason': ['Invalid parameter: replica-lazy-flush', 'Invalid parameter: list-compress-depth', 'Invalid parameter: replica-announce-ip', 'Invalid parameter: rdb-del-sync-files']}
+
+{'hasError': True, 'errParameter': ['replica-announce-ip', 'rdb-del-sync-files'], 'reason': ['replica-announce-ip is not a valid configuration parameter for Redis version 7.0.0', 'rdb-del-sync-files is not a valid configuration parameter for Redis version 7.0.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: replica-announce-ip	rdb-del-sync-files
+[Ciri] Reason for replica-announce-ip: replica-announce-ip is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for rdb-del-sync-files: rdb-del-sync-files is not a valid configuration parameter for Redis version 7.0.0

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.nodemanager.collector-service.thread-count</name>
+  <value>5</value>
+    <description>Number of threads collector service uses.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.memory.enabled</name>
+  <value>false</value>
+    <description>Whether YARN CGroups memory tracking is enabled.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.health-checker.interval-ms</name>
+  <value>600000</value>
+    <description>Frequency of running node health scripts.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.runc.ImageTagToManifestPlugin</value>
+    <description>The runC image tag to manifest plugin
+      class to be used.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions</name>
+  <value>read</value>
+    <description>Permissions for application local directories.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.sleep-delay-before-sigkill.ms</name>
+  <value>-10</value>
+    <description>No. of ms to wait between sending a SIGTERM and SIGKILL to a container</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.keytab</name>
+  <value>/valid/file2</value>
+    <description>The Kerberos keytab for the timeline server.</description>
+</property>
+
+<property>
+  <name>yarn.router.pipeline.cache-max-size</name>
+  <value>50</value>
+    <description>
+      Size of LRU cache for Router ClientRM Service and RMAdmin Service.
+    </description>
+</property>
+
+</configuration>

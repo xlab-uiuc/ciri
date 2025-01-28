@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.info.bindAddress</name>
+  <value>999.-1.0.0</value>
+    <description>The address for the HBase RegionServer web UI</description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.callqueue.read.ratio</name>
+  <value>-1</value>
+    <description>Split the call queues into read and write queues.
+      The specified interval (which should be between 0.0 and 1.0)
+      will be multiplied by the number of call queues.
+      A value of 0 indicate to not split the call queues, meaning that both read and write
+      requests will be pushed to the same set of queues.
+      A value lower than 0.5 means that there will be less read queues than write queues.
+      A value of 0.5 means there will be the same number of read and write queues.
+      A value greater than 0.5 means that there will be more read queues than write queues.
+      A value of 1.0 means that all the queues except one are used to dispatch read requests.
+
+      Example: Given the total number of call queues being 10
+      a read.ratio of 0 means that: the 10 queues will contain both read/write requests.
+      a read.ratio of 0.3 means that: 3 queues will contain only read requests
+      and 7 queues will contain only write requests.
+      a read.ratio of 0.5 means that: 5 queues will contain only read requests
+      and 5 queues will contain only write requests.
+      a read.ratio of 0.8 means that: 8 queues will contain only read requests
+      and 2 queues will contain only write requests.
+      a read.ratio of 1 means that: 9 queues will contain only read requests
+      and 1 queues will contain only write requests.
+    </description>
+</property>
+
+<property>
+  <name>hbase.client.max.total.tasks</name>
+  <value>50</value>
+    <description>The maximum number of concurrent mutation tasks a single HTable instance will
+    send to the cluster.</description>
+</property>
+
+<property>
+  <name>hbase.offpeak.end.hour</name>
+  <value>0</value>
+    <description>The end of off-peak hours, expressed as an integer between 0 and 23, inclusive. Set
+      to -1 to disable off-peak.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.minorcompaction.pagecache.drop</name>
+  <value>false</value>
+    <description>Specifies whether to drop pages read/written into the system page cache by
+      minor compactions. Setting it to true helps prevent minor compactions from
+      polluting the page cache, which is most beneficial on clusters with low
+      memory to storage ratio or very write heavy clusters. You may want to set it to
+      false under moderate to low write workload when bulk of the reads are
+      on the most recently written data.</description>
+</property>
+
+<property>
+  <name>hbase.thrift.maxQueuedRequests</name>
+  <value>2000</value>
+    <description>The maximum number of pending Thrift connections waiting in the queue. If
+     there are no idle threads in the pool, the server queues requests. Only
+     when the queue overflows, new threads are added, up to
+     hbase.thrift.maxQueuedRequests threads.</description>
+</property>
+
+<property>
+  <name>hbase.master.loadbalancer.class</name>
+  <value>org.apache.hadoop.hbase.master.balancer.StochasticLoadBalancer</value>
+    <description>
+      Class used to execute the regions balancing when the period occurs.
+      See the class comment for more on how it works
+      http://hbase.apache.org/devapidocs/org/apache/hadoop/hbase/master/balancer/StochasticLoadBalancer.html
+      It replaces the DefaultLoadBalancer as the default (since renamed
+      as the SimpleLoadBalancer).
+    </description>
+</property>
+
+<property>
+  <name>hbase.http.filter.initializers</name>
+  <value>org.apache.hadoop.hbase.http.lib.StaticUserWebFilter</value>
+    <description>
+      A comma separated list of class names. Each class in the list must extend
+      org.apache.hadoop.hbase.http.FilterInitializer. The corresponding Filter will
+      be initialized. Then, the Filter will be applied to all user facing jsp
+      and servlet web pages.
+      The ordering of the list defines the ordering of the filters.
+      The default StaticUserWebFilter add a user principal as defined by the
+      hbase.http.staticuser.user property.
+    </description>
+</property>
+
+</configuration>

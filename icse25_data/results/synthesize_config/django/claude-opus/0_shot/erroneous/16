@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATIC_URL', 'CSRF_COOKIE_AGE', 'LOGOUT_REDIRECT_URL'], 'reason': ["STATIC_URL should not be set to None. It should be set to a valid URL path where Django can serve static files from, for example '/static/'.", 'CSRF_COOKIE_AGE should be an integer value specifying the number of seconds, not an expression. For example, to set it to one year, use 31449600 instead of 60 * 60 * 24 * 7 * 52.', "LOGOUT_REDIRECT_URL should not be set to None. It should be set to a valid URL path where the user should be redirected after logging out, for example '/accounts/login/'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: STATIC_URL	CSRF_COOKIE_AGE	LOGOUT_REDIRECT_URL
+[Ciri] Reason for STATIC_URL: STATIC_URL should not be set to None. It should be set to a valid URL path where Django can serve static files from, for example '/static/'.
+[Ciri] Reason for CSRF_COOKIE_AGE: CSRF_COOKIE_AGE should be an integer value specifying the number of seconds, not an expression. For example, to set it to one year, use 31449600 instead of 60 * 60 * 24 * 7 * 52.
+[Ciri] Reason for LOGOUT_REDIRECT_URL: LOGOUT_REDIRECT_URL should not be set to None. It should be set to a valid URL path where the user should be redirected after logging out, for example '/accounts/login/'.

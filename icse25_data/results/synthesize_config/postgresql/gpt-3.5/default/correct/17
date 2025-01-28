@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 6, 8]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile'], 'reason': ["The property 'krb_server_keyfile' should not use the syntax '${sysconfdir}' in the value."]}
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile'], 'reason': ["The property 'krb_server_keyfile' should not contain the prefix 'FILE:${sysconfdir}/'. It should directly specify the path to the keytab file."]}
+
+{'hasError': True, 'errParameter': ['krb_server_keyfile'], 'reason': ["The property 'krb_server_keyfile' should not contain the prefix 'FILE:${sysconfdir}/'. It should directly specify the path to the keytab file."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: krb_server_keyfile
+[Ciri] Reason for krb_server_keyfile: The property 'krb_server_keyfile' should not contain the prefix 'FILE:${sysconfdir}/'. It should directly specify the path to the keytab file.

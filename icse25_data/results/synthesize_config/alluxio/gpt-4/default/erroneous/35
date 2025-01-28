@@ -1,0 +1,15 @@
+Wrong shot number:
+[7, 11, 2]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.netty.worker.threads', 'fs.cos.connection.timeout'], 'reason': ["The property 'alluxio.user.network.streaming.netty.worker.threads' has an invalid value '-1'. The number of threads should be a positive integer.", "The property 'fs.cos.connection.timeout' is not a recognized Alluxio configuration property."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.streaming.netty.worker.threads	fs.cos.connection.timeout
+[Ciri] Reason for alluxio.user.network.streaming.netty.worker.threads: The property 'alluxio.user.network.streaming.netty.worker.threads' has an invalid value '-1'. The number of threads should be a positive integer.
+[Ciri] Reason for fs.cos.connection.timeout: The property 'fs.cos.connection.timeout' is not a recognized Alluxio configuration property.

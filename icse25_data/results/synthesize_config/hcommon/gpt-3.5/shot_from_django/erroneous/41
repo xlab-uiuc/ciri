@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 4, 5]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'ipc.maximum.data.length'], 'reason': ["The property 'hadoop.security.dns.nameserver' has the value '-1.0.0.0' which is not a valid IP address.", "The property 'ipc.maximum.data.length' has the value '268435456' which may lead to potential OOMs (Out of Memory errors) and should be reviewed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.dns.nameserver	ipc.maximum.data.length
+[Ciri] Reason for hadoop.security.dns.nameserver: The property 'hadoop.security.dns.nameserver' has the value '-1.0.0.0' which is not a valid IP address.
+[Ciri] Reason for ipc.maximum.data.length: The property 'ipc.maximum.data.length' has the value '268435456' which may lead to potential OOMs (Out of Memory errors) and should be reviewed.

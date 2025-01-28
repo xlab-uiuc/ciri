@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_DOMAIN', 'LOGGING', 'SIGNING_BACKEND', 'PREPEND_WWW'], 'reason': ['CSRF_COOKIE_DOMAIN should be set to a valid domain or None to allow all domains.', 'LOGGING should be a dictionary containing logging configuration.', "SIGNING_BACKEND should be a string representing the signing backend to use for cryptographic signing. The recommended value is 'django.core.signing.TimestampSigner'.", 'PREPEND_WWW is not a valid Django setting. It is likely a setting for a third-party package or a custom setting.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: CSRF_COOKIE_DOMAIN	LOGGING	SIGNING_BACKEND	PREPEND_WWW
+[Ciri] Reason for CSRF_COOKIE_DOMAIN: CSRF_COOKIE_DOMAIN should be set to a valid domain or None to allow all domains.
+[Ciri] Reason for LOGGING: LOGGING should be a dictionary containing logging configuration.
+[Ciri] Reason for SIGNING_BACKEND: SIGNING_BACKEND should be a string representing the signing backend to use for cryptographic signing. The recommended value is 'django.core.signing.TimestampSigner'.
+[Ciri] Reason for PREPEND_WWW: PREPEND_WWW is not a valid Django setting. It is likely a setting for a third-party package or a custom setting.

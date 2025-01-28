@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>io.compression.codec.bzip2.library</name>
+  <value>system-native</value>
+  <description>The native-code library to be used for compression and
+  decompression by the bzip2 codec.  This library could be specified
+  either by by name or the full pathname.  In the former case, the
+  library is located by the dynamic linker, usually searching the
+  directories specified in the environment variable LD_LIBRARY_PATH.
+
+  The value of "system-native" indicates that the default system
+  library should be used.  To indicate that the algorithm should
+  operate entirely in Java, specify "java-builtin".</description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.csv.comment.marker</name>
+  <value>#</value>
+  <description>In S3 Select queries: the marker for comment lines in CSV files</description>
+</property>
+
+<property>
+  <name>net.topology.table.file.name</name>
+  <value>/valid/file2</value>
+  <description> The file name for a topology file, which is used when the
+    net.topology.node.switch.mapping.impl property is set to
+    org.apache.hadoop.net.TableMapping. The file format is a two column text
+    file, with columns separated by whitespace. The first column is a DNS or
+    IP address and the second column specifies the rack where the address maps.
+    If no entry corresponding to a host in the cluster is found, then
+    /default-rack is assumed.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.type</name>
+  <value>simple</value>
+  <description>
+    Defines authentication used for Oozie HTTP endpoint.
+    Supported values are: simple | kerberos | #AUTHENTICATION_HANDLER_CLASSNAME#
+  </description>
+</property>
+
+<property>
+  <name>dfs.ha.fencing.ssh.connect-timeout</name>
+  <value>30000</value>
+  <description>
+    SSH connection timeout, in milliseconds, to use with the builtin
+    sshfence fencer.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.zk.session.timeout.ms</name>
+  <value>60000</value>
+    <description>
+      Zookeeper session timeout in milliseconds
+    </description>
+</property>
+
+<property>
+  <name>hadoop.shell.missing.defaultFs.warning</name>
+  <value>false</value>
+    <description>
+      Enable hdfs shell commands to display warnings if (fs.defaultFS) property
+      is not set.
+    </description>
+</property>
+
+<property>
+  <name>seq.io.sort.mb</name>
+  <value>50</value>
+    <description>
+      The total amount of buffer memory to use while sorting files,
+      while using SequenceFile.Sorter, in megabytes. By default,
+      gives each merge stream 1MB, which should minimize seeks.
+    </description>
+</property>
+
+</configuration>

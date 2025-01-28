@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'SESSION_SAVE_EVERY_REQUEST', 'CSRF_COOKIE_SAMESITE', 'DEFAULT_AUTO_FIELD', 'CSRF_FAILURE_VIEW', 'SECURE_HSTS_PRELOAD', 'SESSION_COOKIE_NAME', 'EMAIL_HOST'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should be set to an integer value, not a boolean.', 'SESSION_SAVE_EVERY_REQUEST should be set to either True or False, not a string.', "CSRF_COOKIE_SAMESITE should be set to 'Strict', 'Lax', or 'None', not a string.", 'DEFAULT_AUTO_FIELD should be set to a valid field type, not a string.', 'CSRF_FAILURE_VIEW should be a valid view function, not a string.', 'SECURE_HSTS_PRELOAD should be set to either True or False, not a string.', 'SESSION_COOKIE_NAME should be a string, not a boolean.', 'EMAIL_HOST should be set to a valid email host, not a string.']}
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'SESSION_SAVE_EVERY_REQUEST', 'CSRF_COOKIE_SAMESITE', 'DEFAULT_AUTO_FIELD', 'CSRF_FAILURE_VIEW', 'SECURE_HSTS_PRELOAD', 'SESSION_COOKIE_NAME', 'EMAIL_HOST'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should be set to an integer value, not a boolean.', 'SESSION_SAVE_EVERY_REQUEST should be set to either True or False, not a string.', "CSRF_COOKIE_SAMESITE should be set to 'Strict', 'Lax', or 'None', not a string.", 'DEFAULT_AUTO_FIELD should be set to a valid model field type, not a string.', 'CSRF_FAILURE_VIEW should be a valid view function, not a string.', 'SECURE_HSTS_PRELOAD should be set to either True or False, not a string.', 'SESSION_COOKIE_NAME should be a string, not a boolean.', 'EMAIL_HOST should be set to a valid email server host, not a string.']}
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'SESSION_SAVE_EVERY_REQUEST', 'CSRF_COOKIE_SAMESITE', 'DEFAULT_AUTO_FIELD', 'CSRF_FAILURE_VIEW', 'SECURE_HSTS_PRELOAD', 'SESSION_COOKIE_NAME', 'EMAIL_HOST'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should be an integer value, not a boolean.', 'SESSION_SAVE_EVERY_REQUEST should be a boolean value, not a string.', 'CSRF_COOKIE_SAMESITE should be a string value, not a boolean.', 'DEFAULT_AUTO_FIELD should be a string specifying the model field type.', 'CSRF_FAILURE_VIEW should be a string specifying the view to be used.', 'SECURE_HSTS_PRELOAD should be a boolean value, not a string.', 'SESSION_COOKIE_NAME should be a string value, not a boolean.', 'EMAIL_HOST should be a string specifying the email host.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	SESSION_SAVE_EVERY_REQUEST	CSRF_COOKIE_SAMESITE	DEFAULT_AUTO_FIELD	CSRF_FAILURE_VIEW	SECURE_HSTS_PRELOAD	SESSION_COOKIE_NAME	EMAIL_HOST
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: CACHE_MIDDLEWARE_SECONDS should be set to an integer value, not a boolean.
+[Ciri] Reason for SESSION_SAVE_EVERY_REQUEST: SESSION_SAVE_EVERY_REQUEST should be set to either True or False, not a string.
+[Ciri] Reason for CSRF_COOKIE_SAMESITE: CSRF_COOKIE_SAMESITE should be set to 'Strict', 'Lax', or 'None', not a string.
+[Ciri] Reason for DEFAULT_AUTO_FIELD: DEFAULT_AUTO_FIELD should be set to a valid model field type, not a string.
+[Ciri] Reason for CSRF_FAILURE_VIEW: CSRF_FAILURE_VIEW should be a valid view function, not a string.
+[Ciri] Reason for SECURE_HSTS_PRELOAD: SECURE_HSTS_PRELOAD should be set to either True or False, not a string.
+[Ciri] Reason for SESSION_COOKIE_NAME: SESSION_COOKIE_NAME should be a string, not a boolean.
+[Ciri] Reason for EMAIL_HOST: EMAIL_HOST should be set to a valid email server host, not a string.

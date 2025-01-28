@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'DATABASES', 'TEMPLATES'], 'reason': ['DEBUG should be set to False in production', 'SECRET_KEY should be set to a secret key', 'ALLOWED_HOSTS should be set to a list of allowed hosts', 'DATABASES should be set to a dictionary containing database configuration', 'TEMPLATES should be set to a list of template configuration']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'DATABASES', 'TEMPLATES'], 'reason': ['DEBUG should be set to False in production', 'SECRET_KEY should be set to a secret key', 'ALLOWED_HOSTS should be set to a list of allowed hosts', 'DATABASES should be set to a dictionary containing database settings', 'TEMPLATES should be set to a list of template settings']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'DATABASES', 'TEMPLATES'], 'reason': ['DEBUG should be False in production', 'SECRET_KEY should be set to a secret key', 'ALLOWED_HOSTS should be set to the domain name of the site', 'DATABASES should be set to a database configuration', 'TEMPLATES should be set to a list of template configurations']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: DEBUG	SECRET_KEY	ALLOWED_HOSTS	DATABASES	TEMPLATES
+[Ciri] Reason for DEBUG: DEBUG should be set to False in production
+[Ciri] Reason for SECRET_KEY: SECRET_KEY should be set to a secret key
+[Ciri] Reason for ALLOWED_HOSTS: ALLOWED_HOSTS should be set to a list of allowed hosts
+[Ciri] Reason for DATABASES: DATABASES should be set to a database configuration
+[Ciri] Reason for TEMPLATES: TEMPLATES should be set to a list of template configurations

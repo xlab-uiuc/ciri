@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'quota-backend-bytes'], 'reason': ['proxy-dial-timeout: 4000000000 is not a valid value for proxy-dial-timeout. It should be a positive integer.', 'proxy-refresh-interval: 30000 is not a valid value for proxy-refresh-interval. It should be a positive integer.', 'quota-backend-bytes: 2 is not a valid value for quota-backend-bytes. It should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'quota-backend-bytes', 'auto-compaction-mode'], 'reason': ['proxy-dial-timeout: 4000000000 is not a valid value for proxy-dial-timeout. The value must be a positive integer.', 'proxy-refresh-interval: 30000 is not a valid value for proxy-refresh-interval. The value must be a positive integer.', 'quota-backend-bytes: 2 is not a valid value for quota-backend-bytes. The value must be a positive integer.', "auto-compaction-mode: periodic is not a valid value for auto-compaction-mode. The value must be either 'periodic' or 'revision'."]}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'quota-backend-bytes'], 'reason': ['proxy-dial-timeout: 4000000000 is out of range', 'proxy-refresh-interval: 30000 is out of range', 'quota-backend-bytes: 2 is out of range']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-dial-timeout	proxy-refresh-interval	quota-backend-bytes
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout: 4000000000 is out of range
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval: 30000 is not a valid value for proxy-refresh-interval. It should be a positive integer.
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes: 2 is out of range

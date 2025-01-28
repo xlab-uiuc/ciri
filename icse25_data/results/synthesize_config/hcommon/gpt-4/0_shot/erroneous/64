@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.sensitive-config-keys', 'ipc.[port_number].cost-provider.impl'], 'reason': ["The value for 'hadoop.security.sensitive-config-keys' should likely include actual regex patterns to match sensitive keys, rather than the placeholder 'secret$'.", "The property 'ipc.[port_number].cost-provider.impl' uses a placeholder '[port_number]' which should be replaced with an actual port number or removed if it's meant to be a general configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.sensitive-config-keys	ipc.[port_number].cost-provider.impl
+[Ciri] Reason for hadoop.security.sensitive-config-keys: The value for 'hadoop.security.sensitive-config-keys' should likely include actual regex patterns to match sensitive keys, rather than the placeholder 'secret$'.
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: The property 'ipc.[port_number].cost-provider.impl' uses a placeholder '[port_number]' which should be replaced with an actual port number or removed if it's meant to be a general configuration.

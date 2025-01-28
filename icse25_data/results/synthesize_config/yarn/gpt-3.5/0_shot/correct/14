@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.am.max-attempts', 'yarn.resourcemanager.delegation-token-renewer.thread-timeout', 'yarn.nodemanager.runtime.linux.docker.capabilities', 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep', 'yarn.timeline-service.leveldb-timeline-store.read-cache-size', 'yarn.timeline-service.entity-group-fs-store.done-dir', 'yarn.timeline-service.writer.async.queue.capacity'], 'reason': ["The property 'yarn.resourcemanager.am.max-attempts' should have a value greater than 1 for better reliability.", "The value '120s' for 'yarn.resourcemanager.delegation-token-renewer.thread-timeout' should be in milliseconds.", "The value 'DAC_OVERRIDE' for 'yarn.nodemanager.runtime.linux.docker.capabilities' should be in uppercase like 'DAC_OVERRIDE'.", "The property 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep' should have a value greater than 100 for better performance.", "The value '52428800' for 'yarn.timeline-service.leveldb-timeline-store.read-cache-size' should be in bytes.", "The value '/tmp/entity-file-history/done/' for 'yarn.timeline-service.entity-group-fs-store.done-dir' should be a valid HDFS path.", "The property 'yarn.timeline-service.writer.async.queue.capacity' should have a value greater than 100 for better performance."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.delegation-token-renewer.thread-timeout', 'yarn.nodemanager.runtime.linux.docker.capabilities', 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep'], 'reason': ['Invalid property name format. It should not contain dots.', 'Invalid property name format. It should not contain dots.', 'Invalid property name format. It should not contain dots.']}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.am.max-attempts', 'yarn.resourcemanager.delegation-token-renewer.thread-timeout'], 'reason': ["The property 'yarn.resourcemanager.am.max-attempts' should have a value greater than 1 for better reliability.", "The property 'yarn.resourcemanager.delegation-token-renewer.thread-timeout' should have a value in milliseconds rather than '120s'."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.am.max-attempts', 'yarn.resourcemanager.delegation-token-renewer.thread-timeout', 'yarn.nodemanager.runtime.linux.docker.capabilities', 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep'], 'reason': ["The property 'yarn.resourcemanager.am.max-attempts' should have a value greater than 1 for better reliability.", "The property 'yarn.resourcemanager.delegation-token-renewer.thread-timeout' should have a value in milliseconds rather than '120s'.", "The value for 'yarn.nodemanager.runtime.linux.docker.capabilities' should be in uppercase, e.g., 'DAC_OVERRIDE' instead of 'dac_override'.", "The property 'yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep' should have a value greater than 100 for better performance."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.delegation-token-renewer.thread-timeout', 'yarn.nodemanager.runtime.linux.docker.capabilities'], 'reason': ["Invalid property name 'yarn.resourcemanager.delegation-token-renewer.thread-timeout'.", "Invalid property name 'yarn.nodemanager.runtime.linux.docker.capabilities'."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+The CONFIGURATION FILE IS CORRECT

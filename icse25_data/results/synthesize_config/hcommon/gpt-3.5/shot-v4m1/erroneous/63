@@ -1,0 +1,19 @@
+Wrong shot number:
+[9]
+
+Correct shot number:
+[4, 10, 1, 14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'fs.AbstractFileSystem.wasbs.impl', 'ftp.replication', 's3.replication', 'ha.zookeeper.parent-znode', 'hadoop.ssl.server.conf'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_REMOTE_DATA_CONNECTION_MODE.", "The property 'fs.AbstractFileSystem.wasbs.impl' should have the value 'org.apache.hadoop.fs.azure.Wasbs' for HCommon version 3.3.0.", "The property 'ftp.replication' should have a value greater than 1 for replication factor.", "The property 's3.replication' should have a value greater than 1 for replication factor.", "The property 'ha.zookeeper.parent-znode' should have a valid path under which the ZK failover controller stores its information.", "The property 'hadoop.ssl.server.conf' should have a valid resource file path from which SSL server keystore information will be extracted."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.ftp.data.connection.mode	fs.AbstractFileSystem.wasbs.impl	ftp.replication	s3.replication	ha.zookeeper.parent-znode	hadoop.ssl.server.conf
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an invalid value 'ACTIVE_LOCAL_DATA_CONNECTION_MODE'. Valid values are ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_REMOTE_DATA_CONNECTION_MODE.
+[Ciri] Reason for fs.AbstractFileSystem.wasbs.impl: The property 'fs.AbstractFileSystem.wasbs.impl' should have the value 'org.apache.hadoop.fs.azure.Wasbs' for HCommon version 3.3.0.
+[Ciri] Reason for ftp.replication: The property 'ftp.replication' should have a value greater than 1 for replication factor.
+[Ciri] Reason for s3.replication: The property 's3.replication' should have a value greater than 1 for replication factor.
+[Ciri] Reason for ha.zookeeper.parent-znode: The property 'ha.zookeeper.parent-znode' should have a valid path under which the ZK failover controller stores its information.
+[Ciri] Reason for hadoop.ssl.server.conf: The property 'hadoop.ssl.server.conf' should have a valid resource file path from which SSL server keystore information will be extracted.

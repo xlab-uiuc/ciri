@@ -1,0 +1,34 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'secureClientPort', 'autopurge.snapRetainCount', 'peerType', 'quorum.cnxn.threads.size', 'quorum.auth.server.saslLoginContext', 'syncEnabled', 'electionAlg'], 'reason': ['dataDir is not a valid directory', 'secureClientPort is not a valid port number', 'autopurge.snapRetainCount is not a valid number', 'peerType is not a valid value', 'quorum.cnxn.threads.size is not a valid number', 'quorum.auth.server.saslLoginContext is not a valid value', 'syncEnabled is not a valid boolean', 'electionAlg is not a valid value']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'autopurge.snapRetainCount', 'quorum.cnxn.threads.size', 'quorum.auth.server.saslLoginContext', 'electionAlg'], 'reason': ['secureClientPort is not a valid port number.', 'autopurge.snapRetainCount must be greater than 0.', 'quorum.cnxn.threads.size must be greater than 0.', 'quorum.auth.server.saslLoginContext is not a valid SASL login context.', 'electionAlg is not a valid election algorithm.']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'autopurge.snapRetainCount', 'quorum.auth.server.saslLoginContext', 'electionAlg'], 'reason': ['secureClientPort is not a valid port number', 'autopurge.snapRetainCount is not a valid number', 'quorum.auth.server.saslLoginContext is not a valid login context', 'electionAlg is not a valid election algorithm']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'autopurge.snapRetainCount', 'peerType', 'quorum.cnxn.threads.size', 'quorum.auth.server.saslLoginContext', 'syncEnabled', 'electionAlg'], 'reason': ['secureClientPort is not a valid port number', 'autopurge.snapRetainCount is not a valid number', 'peerType is not a valid peer type', 'quorum.cnxn.threads.size is not a valid number', 'quorum.auth.server.saslLoginContext is not a valid login context', 'syncEnabled is not a valid boolean value', 'electionAlg is not a valid election algorithm']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'autopurge.snapRetainCount', 'quorum.cnxn.threads.size', 'quorum.auth.server.saslLoginContext', 'electionAlg'], 'reason': ['secureClientPort: is not a valid port number', 'autopurge.snapRetainCount: is not a valid number', 'quorum.cnxn.threads.size: is not a valid number', 'quorum.auth.server.saslLoginContext: is not a valid context', 'electionAlg: is not a valid election algorithm']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'tickTime', 'autopurge.snapRetainCount', 'peerType', 'quorum.cnxn.threads.size', 'quorum.auth.server.saslLoginContext', 'syncEnabled', 'electionAlg'], 'reason': ['secureClientPort is not a valid port number', 'tickTime is not a valid time', 'autopurge.snapRetainCount is not a valid number', 'peerType is not a valid type', 'quorum.cnxn.threads.size is not a valid number', 'quorum.auth.server.saslLoginContext is not a valid context', 'syncEnabled is not a valid boolean', 'electionAlg is not a valid algorithm']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'autopurge.snapRetainCount', 'quorum.cnxn.threads.size', 'quorum.auth.server.saslLoginContext', 'electionAlg'], 'reason': ['The value of secureClientPort is not an integer.', 'The value of autopurge.snapRetainCount is not an integer.', 'The value of quorum.cnxn.threads.size is not an integer.', 'The value of quorum.auth.server.saslLoginContext is not a valid SASL login context.', 'The value of electionAlg is not a valid election algorithm.']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'autopurge.snapRetainCount', 'peerType', 'quorum.cnxn.threads.size', 'quorum.auth.server.saslLoginContext', 'syncEnabled', 'electionAlg'], 'reason': ['secureClientPort is not a valid port number', 'autopurge.snapRetainCount is not a valid integer', 'peerType is not a valid peer type', 'quorum.cnxn.threads.size is not a valid integer', 'quorum.auth.server.saslLoginContext is not a valid SASL login context', 'syncEnabled is not a valid boolean', 'electionAlg is not a valid election algorithm']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'autopurge.snapRetainCount', 'peerType', 'quorum.cnxn.threads.size', 'quorum.auth.server.saslLoginContext', 'syncEnabled', 'electionAlg'], 'reason': ['secureClientPort is not a valid port number', 'autopurge.snapRetainCount is not a valid integer', 'peerType is not a valid peer type', 'quorum.cnxn.threads.size is not a valid integer', 'quorum.auth.server.saslLoginContext is not a valid SASL login context', 'syncEnabled is not a valid boolean', 'electionAlg is not a valid election algorithm']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: secureClientPort	autopurge.snapRetainCount	peerType	quorum.cnxn.threads.size	quorum.auth.server.saslLoginContext	syncEnabled	electionAlg
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid port number
+[Ciri] Reason for autopurge.snapRetainCount: autopurge.snapRetainCount is not a valid integer
+[Ciri] Reason for peerType: peerType is not a valid peer type
+[Ciri] Reason for quorum.cnxn.threads.size: quorum.cnxn.threads.size is not a valid integer
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext is not a valid SASL login context
+[Ciri] Reason for syncEnabled: syncEnabled is not a valid boolean
+[Ciri] Reason for electionAlg: electionAlg is not a valid election algorithm

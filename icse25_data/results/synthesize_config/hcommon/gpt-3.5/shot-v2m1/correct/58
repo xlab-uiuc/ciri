@@ -1,0 +1,15 @@
+Wrong shot number:
+[13]
+
+Correct shot number:
+[2, 12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.map.index.skip', 'hadoop.http.authentication.kerberos.keytab'], 'reason': ["The property 'io.map.index.skip' has a negative value (-1) which is invalid. It should be a non-negative integer.", "The property 'hadoop.http.authentication.kerberos.keytab' should not be directly pointing to a file path. It should reference a keytab entry."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.map.index.skip	hadoop.http.authentication.kerberos.keytab
+[Ciri] Reason for io.map.index.skip: The property 'io.map.index.skip' has a negative value (-1) which is invalid. It should be a non-negative integer.
+[Ciri] Reason for hadoop.http.authentication.kerberos.keytab: The property 'hadoop.http.authentication.kerberos.keytab' should not be directly pointing to a file path. It should reference a keytab entry.

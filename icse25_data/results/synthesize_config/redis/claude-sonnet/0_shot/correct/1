@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'replica-announce-ip', 'cluster-config-file'], 'reason': ["The 'cluster-announce-ip' parameter is used for Redis Cluster mode, which is not available in Redis 7.0.0. This parameter should be removed or commented out.", "The 'replica-announce-ip' parameter is used for Redis Replication, which is not available in Redis 7.0.0. This parameter should be removed or commented out.", "The 'cluster-config-file' parameter is used for Redis Cluster mode, which is not available in Redis 7.0.0. This parameter should be removed or commented out."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-ip	replica-announce-ip	cluster-config-file
+[Ciri] Reason for cluster-announce-ip: The 'cluster-announce-ip' parameter is used for Redis Cluster mode, which is not available in Redis 7.0.0. This parameter should be removed or commented out.
+[Ciri] Reason for replica-announce-ip: The 'replica-announce-ip' parameter is used for Redis Replication, which is not available in Redis 7.0.0. This parameter should be removed or commented out.
+[Ciri] Reason for cluster-config-file: The 'cluster-config-file' parameter is used for Redis Cluster mode, which is not available in Redis 7.0.0. This parameter should be removed or commented out.

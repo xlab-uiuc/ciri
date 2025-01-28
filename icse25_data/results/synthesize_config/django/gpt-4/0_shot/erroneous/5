@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['STATIC_ROOT', 'CSRF_COOKIE_HTTPONLY'], 'reason': ["STATIC_ROOT path should use forward slashes ('/') even on Windows. The provided path uses double forward slashes ('//') at the beginning.", 'CSRF_COOKIE_HTTPONLY should typically be set to True to help prevent Cross-Site Scripting attacks by not allowing the CSRF cookie to be accessed by JavaScript.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: STATIC_ROOT	CSRF_COOKIE_HTTPONLY
+[Ciri] Reason for STATIC_ROOT: STATIC_ROOT path should use forward slashes ('/') even on Windows. The provided path uses double forward slashes ('//') at the beginning.
+[Ciri] Reason for CSRF_COOKIE_HTTPONLY: CSRF_COOKIE_HTTPONLY should typically be set to True to help prevent Cross-Site Scripting attacks by not allowing the CSRF cookie to be accessed by JavaScript.

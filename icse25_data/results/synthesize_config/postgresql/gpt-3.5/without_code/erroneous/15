@@ -1,0 +1,19 @@
+Wrong shot number:
+[1, 3, 4]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['jit_optimize_above_cost', 'wal_writer_delay'], 'reason': ["The property 'jit_optimize_above_cost' has the value '4000000000' which exceeds the range of an Integer.", "The property 'wal_writer_delay' has the value '400ms' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['jit_optimize_above_cost', 'wal_writer_delay'], 'reason': ["The property 'jit_optimize_above_cost' has the value '4000000000' which exceeds the range of an Integer.", "The property 'wal_writer_delay' has the value '400ms' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['jit_optimize_above_cost', 'wal_writer_delay'], 'reason': ["The property 'jit_optimize_above_cost' has an invalid value '4000000000'. It should be within a valid range.", "The property 'wal_writer_delay' has an invalid value '400ms'. It should be specified in seconds or milliseconds without units."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: jit_optimize_above_cost	wal_writer_delay
+[Ciri] Reason for jit_optimize_above_cost: The property 'jit_optimize_above_cost' has the value '4000000000' which exceeds the range of an Integer.
+[Ciri] Reason for wal_writer_delay: The property 'wal_writer_delay' has the value '400ms' which is not of the correct type Integer.

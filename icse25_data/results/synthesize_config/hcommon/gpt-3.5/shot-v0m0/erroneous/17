@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.s3guard.ddb.background.sleep', 'ipc.[port_number].weighted-cost.lockfree'], 'reason': ['The value of hadoop.security.dns.nameserver should be a valid IP address.', 'The value of fs.defaultFS should be a valid file system URI.', 'The value of fs.s3a.s3guard.ddb.background.sleep should be in milliseconds format.', 'The property ipc.[port_number].weighted-cost.lockfree is not correctly formatted.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.defaultFS	fs.s3a.s3guard.ddb.background.sleep	ipc.[port_number].weighted-cost.lockfree
+[Ciri] Reason for hadoop.security.dns.nameserver: The value of hadoop.security.dns.nameserver should be a valid IP address.
+[Ciri] Reason for fs.defaultFS: The value of fs.defaultFS should be a valid file system URI.
+[Ciri] Reason for fs.s3a.s3guard.ddb.background.sleep: The value of fs.s3a.s3guard.ddb.background.sleep should be in milliseconds format.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: The property ipc.[port_number].weighted-cost.lockfree is not correctly formatted.

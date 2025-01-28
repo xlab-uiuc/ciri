@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['min_wal_size', 'autovacuum_vacuum_cost_delay'], 'reason': ['min_wal_size is not a valid parameter in PostgreSQL 13. The correct parameter is min_wal_size_mb.', "The unit for autovacuum_vacuum_cost_delay should be milliseconds (ms) without a space, not '1ms'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: min_wal_size	autovacuum_vacuum_cost_delay
+[Ciri] Reason for min_wal_size: min_wal_size is not a valid parameter in PostgreSQL 13. The correct parameter is min_wal_size_mb.
+[Ciri] Reason for autovacuum_vacuum_cost_delay: The unit for autovacuum_vacuum_cost_delay should be milliseconds (ms) without a space, not '1ms'.

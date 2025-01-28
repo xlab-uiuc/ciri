@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'hash-max-listpack-value', 'tcp-keepalive', 'dir', 'aof-use-rdb-preamble', 'enable-protected-configs', 'loglevel', 'proc-title-template'], 'reason': ['cluster-announce-port must be a positive integer.', 'hash-max-listpack-value must be a positive integer.', 'tcp-keepalive must be a positive integer.', 'dir must be a directory.', 'aof-use-rdb-preamble must be a boolean.', 'enable-protected-configs must be a boolean.', 'loglevel must be a valid log level.', 'proc-title-template must be a string.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'hash-max-listpack-value', 'tcp-keepalive', 'dir', 'aof-use-rdb-preamble', 'enable-protected-configs', 'loglevel', 'proc-title-template'], 'reason': ['cluster-announce-port must be an integer', 'hash-max-listpack-value must be an integer', 'tcp-keepalive must be an integer', 'dir must be a valid directory', 'aof-use-rdb-preamble must be a boolean', 'enable-protected-configs must be a boolean', 'loglevel must be a valid log level', 'proc-title-template must be a valid template']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port'], 'reason': ['The value of cluster-announce-port is not a valid port number.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: cluster-announce-port	hash-max-listpack-value	tcp-keepalive	dir	aof-use-rdb-preamble	enable-protected-configs	loglevel	proc-title-template
+[Ciri] Reason for cluster-announce-port: cluster-announce-port must be an integer
+[Ciri] Reason for hash-max-listpack-value: hash-max-listpack-value must be a positive integer.
+[Ciri] Reason for tcp-keepalive: tcp-keepalive must be an integer
+[Ciri] Reason for dir: dir must be a valid directory
+[Ciri] Reason for aof-use-rdb-preamble: aof-use-rdb-preamble must be a boolean.
+[Ciri] Reason for enable-protected-configs: enable-protected-configs must be a boolean
+[Ciri] Reason for loglevel: loglevel must be a valid log level.
+[Ciri] Reason for proc-title-template: proc-title-template must be a valid template

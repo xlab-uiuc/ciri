@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.max.full.block.report.leases</name>
+  <value>12</value>
+  <description>The maximum number of leases for full block reports that the
+    NameNode will issue at any given time.  This prevents the NameNode from
+    being flooded with full block reports that use up all the RPC handler
+    threads.  This number should never be more than the number of RPC handler
+    threads or less than 1.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.kerberos.principal.pattern</name>
+  <value>*</value>
+  <description>
+    A client-side RegEx that can be configured to control
+    allowed realms to authenticate with (useful in cross-realm env.)
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.replication.work.multiplier.per.iteration</name>
+  <value>4</value>
+  <description>
+    *Note*: Advanced property. Change with caution.
+    This determines the total amount of block transfers to begin in
+    parallel at a DN, for replication, when such a command list is being
+    sent over a DN heartbeat by the NN. The actual number is obtained by
+    multiplying this multiplier with the total number of live nodes in the
+    cluster. The result number is the number of blocks to begin transfers
+    immediately for, per DN heartbeat. This number can be any positive,
+    non-zero integer.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold</name>
+  <value>5368709120</value>
+  <description>
+    Only used when the dfs.datanode.fsdataset.volume.choosing.policy is set to
+    org.apache.hadoop.hdfs.server.datanode.fsdataset.AvailableSpaceVolumeChoosingPolicy.
+    This setting controls how much DN volumes are allowed to differ in terms of
+    bytes of free disk space before they are considered imbalanced. If the free
+    space of all the volumes are within this range of each other, the volumes
+    will be considered balanced and block assignments will be done on a pure
+    round robin basis. Support multiple size unit suffix(case insensitive), as
+    described in dfs.blocksize.
+  </description>
+</property>
+
+<property>
+  <name>dfs.webhdfs.rest-csrf.methods-to-ignore</name>
+  <value>OPTIONS</value>
+  <description>
+    A comma-separated list of HTTP methods that do not require HTTP requests to
+    include a custom header when protection against cross-site request forgery
+    (CSRF) is enabled for WebHDFS by setting dfs.webhdfs.rest-csrf.enabled to
+    true.  The WebHDFS client also uses this property to determine whether or
+    not it needs to send the custom CSRF prevention header in its HTTP requests.
+  </description>
+</property>
+
+<property>
+  <name>dfs.balancer.moverThreads</name>
+  <value>500</value>
+  <description>
+    Thread pool size for executing block moves.
+    moverThreadAllocator
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.read.shortcircuit.buffer.size</name>
+  <value>2097152</value>
+  <description>
+    Buffer size in bytes for short-circuit local reads.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.provided.enabled</name>
+  <value>true</value>
+    <description>
+      Enables the Namenode to handle provided storages.
+    </description>
+</property>
+
+</configuration>

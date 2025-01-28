@@ -1,0 +1,26 @@
+Wrong shot number:
+[5, 10, 8]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport'], 'reason': ["The property 'hbase.zookeeper.leaderport' has the value '7776' which is not the default port used by ZooKeeper for leader election."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.fileSplitTimeout', 'hbase.regionserver.port', 'hbase.zookeeper.leaderport'], 'reason': ["The property 'hbase.master.fileSplitTimeout' should be renamed to 'hbase.master.file.split.timeout'.", "The property 'hbase.regionserver.port' has the value '16020' which is a commonly used port and might conflict with other services.", "The property 'hbase.zookeeper.leaderport' has the value '7776' which is not the default port used by ZooKeeper for leader election."]}
+
+{'hasError': True, 'errParameter': ['hbase.security.visibility.mutations.checkauths'], 'reason': ["The value of the property 'hbase.security.visibility.mutations.checkauths' should be 'true' to enable the feature."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.dns.nameserver'], 'reason': ["The property 'hbase.regionserver.dns.nameserver' has the value 'default' which is not a valid host name or IP address."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.dns.nameserver'], 'reason': ["The value of the property 'hbase.regionserver.dns.nameserver' should be a valid host name or IP address, 'default' is not a valid value."]}
+
+{'hasError': True, 'errParameter': ['hbase.security.visibility.mutations.checkauths'], 'reason': ["The property 'hbase.security.visibility.mutations.checkauths' should have the value 'true' to enable the feature."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.dns.nameserver
+[Ciri] Reason for hbase.regionserver.dns.nameserver: The value of the property 'hbase.regionserver.dns.nameserver' should be a valid host name or IP address, 'default' is not a valid value.

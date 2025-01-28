@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 3, 6]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['trusted-ca-file', 'election-timeout'], 'reason': ["The value 'dev/urandom///' for 'trusted-ca-file' is not a valid file path.", "The value '1000' for 'election-timeout' is too low. It should be at least 1000ms."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: trusted-ca-file	election-timeout
+[Ciri] Reason for trusted-ca-file: The value 'dev/urandom///' for 'trusted-ca-file' is not a valid file path.
+[Ciri] Reason for election-timeout: The value '1000' for 'election-timeout' is too low. It should be at least 1000ms.

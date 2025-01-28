@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.write.stale.datanode.ratio', 'dfs.namenode.top.windows.minutes'], 'reason': ["The value for 'dfs.namenode.write.stale.datanode.ratio' should be an integer, not a decimal.", "The value for 'dfs.namenode.top.windows.minutes' should be a single integer, not a list."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.write.stale.datanode.ratio', 'dfs.namenode.top.windows.minutes'], 'reason': ['The value for dfs.namenode.write.stale.datanode.ratio should be between 0.0 and 1.0.', 'The value for dfs.namenode.top.windows.minutes should be a single integer representing the reporting period in minutes, not a list.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.write.stale.datanode.ratio', 'dfs.namenode.top.windows.minutes'], 'reason': ['The value for dfs.namenode.write.stale.datanode.ratio should be between 0.0 and 1.0.', 'The value for dfs.namenode.top.windows.minutes should be a single integer value, not a list.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.write.stale.datanode.ratio	dfs.namenode.top.windows.minutes
+[Ciri] Reason for dfs.namenode.write.stale.datanode.ratio: The value for dfs.namenode.write.stale.datanode.ratio should be between 0.0 and 1.0.
+[Ciri] Reason for dfs.namenode.top.windows.minutes: The value for 'dfs.namenode.top.windows.minutes' should be a single integer, not a list.

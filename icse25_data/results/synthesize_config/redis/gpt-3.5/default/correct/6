@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 1, 11]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ["The property 'appendfsync' has the value 'everysec' which is not a valid option. It should be either 'always', 'everysec', or 'no'. Please correct the value."]}
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ["The property 'appendfsync' has the value 'everysec' which is not a valid option. It should be either 'always', 'everysec', or 'no'. Check the correct syntax for this property."]}
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ["The property 'appendfsync' has the value 'everysec' which is not a valid option. It should be either 'always', 'everysec', or 'no'. If you want to disable fsync during rewrites, you should set 'advise_no_appendfsync' to 1."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: appendfsync
+[Ciri] Reason for appendfsync: The property 'appendfsync' has the value 'everysec' which is not a valid option. It should be either 'always', 'everysec', or 'no'. Please correct the value.

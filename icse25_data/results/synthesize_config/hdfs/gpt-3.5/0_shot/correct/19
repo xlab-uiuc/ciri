@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.replica.cache.expiry.time'], 'reason': ["The value '5m' for 'dfs.datanode.replica.cache.expiry.time' should be specified in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.replica.cache.expiry.time'], 'reason': ["The value '5m' for 'dfs.datanode.replica.cache.expiry.time' should be in milliseconds format, e.g., '300000' for 5 minutes."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edekcacheloader.initial.delay.ms', 'dfs.datanode.replica.cache.expiry.time'], 'reason': ["The property 'dfs.namenode.edekcacheloader.initial.delay.ms' should be 'dfs.namenode.edek.cacheloader.initial.delay.ms'.", "The value '5m' for 'dfs.datanode.replica.cache.expiry.time' should be in milliseconds format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.replica.cache.expiry.time
+[Ciri] Reason for dfs.datanode.replica.cache.expiry.time: The value '5m' for 'dfs.datanode.replica.cache.expiry.time' should be specified in milliseconds.

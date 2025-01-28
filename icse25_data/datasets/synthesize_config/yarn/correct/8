@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.scheduler.minimum-allocation-mb</name>
+  <value>1024</value>
+    <description>The minimum allocation for every container request at the RM
+    in MBs. Memory requests lower than this will be set to the value of this
+    property. Additionally, a node manager that is configured to have less memory
+    than this value will be shut down by the resource manager.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.cgroups.hierarchy</name>
+  <value>/valid/file1</value>
+    <description>The cgroups hierarchy under which to place YARN proccesses (cannot contain commas).
+    If yarn.nodemanager.linux-container-executor.cgroups.mount is false
+    (that is, if cgroups have been pre-configured) and the YARN user has write
+    access to the parent directory, then the directory will be created.
+    If the directory already exists, the administrator has to give YARN
+    write permissions to it recursively.
+    This property only applies when the LCE resources handler is set to
+    CgroupsLCEResourcesHandler.</description>
+</property>
+
+<property>
+  <name>yarn.web-proxy.address</name>
+  <value>127.0.0.1</value>
+    <description>The address for the web proxy as HOST:PORT, if this is not
+     given then the proxy will run as part of the RM</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.ttl-enable</name>
+  <value>false</value>
+    <description>Enable age off of timeline store data.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.client.max-retries</name>
+  <value>60</value>
+    <description>
+    Default maximum number of retries for timeline service client
+    and value -1 means no limit.
+    </description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.admin.address</name>
+  <value>0.0.0.0:3001</value>
+    <description>The address of the admin interface in the SCM (shared cache manager)</description>
+</property>
+
+<property>
+  <name>yarn.node-labels.configuration-type</name>
+  <value>centralized</value>
+    <description>
+    Set configuration type for node labels. Administrators can specify
+    "centralized", "delegated-centralized" or "distributed".
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.entity-group-fs-store.with-user-dir</name>
+  <value>false</value>
+    <description>
+       It is TimelineClient 1.5 configuration whether to store active
+       application’s timeline data with in user directory i.e
+       ${yarn.timeline-service.entity-group-fs-store.active-dir}/${user.name}
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,14 @@
+Correct shot number:
+[16]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.default.name', 'ipc.server.listen.queue.size', 'ha.failover-controller.active-standby-elector.zk.op.retries', 'hadoop.http.sni.host.check.enabled'], 'reason': ['The property fs.default.name is deprecated. Use fs.defaultFS property instead.', 'The property ipc.server.listen.queue.size should have a value greater than 0.', 'The property ha.failover-controller.active-standby-elector.zk.op.retries should have a value greater than 0.', 'The property hadoop.http.sni.host.check.enabled should be set to true to enable Server Name Indication (SNI) host check for HTTPS enabled server.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.default.name	ipc.server.listen.queue.size	ha.failover-controller.active-standby-elector.zk.op.retries	hadoop.http.sni.host.check.enabled
+[Ciri] Reason for fs.default.name: The property fs.default.name is deprecated. Use fs.defaultFS property instead.
+[Ciri] Reason for ipc.server.listen.queue.size: The property ipc.server.listen.queue.size should have a value greater than 0.
+[Ciri] Reason for ha.failover-controller.active-standby-elector.zk.op.retries: The property ha.failover-controller.active-standby-elector.zk.op.retries should have a value greater than 0.
+[Ciri] Reason for hadoop.http.sni.host.check.enabled: The property hadoop.http.sni.host.check.enabled should be set to true to enable Server Name Indication (SNI) host check for HTTPS enabled server.

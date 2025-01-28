@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.preferred', 'alluxio.worker.network.max.inbound.message.size', 'alluxio.worker.data.server.class', 'alluxio.user.network.netty.channel'], 'reason': ['The value of alluxio.user.short.circuit.preferred is not a boolean value.', 'The value of alluxio.worker.network.max.inbound.message.size is not a valid size.', 'The value of alluxio.worker.data.server.class is not a valid class.', 'The value of alluxio.user.network.netty.channel is not a valid value.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.preferred', 'alluxio.worker.data.server.class', 'alluxio.worker.management.task.thread.count', 'alluxio.worker.data.folder'], 'reason': ['alluxio.user.short.circuit.preferred is not a valid property', 'alluxio.worker.data.server.class is not a valid property', 'alluxio.worker.management.task.thread.count is not a valid property', 'alluxio.worker.data.folder is not a valid property']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.preferred'], 'reason': ['alluxio.user.short.circuit.preferred is not a valid property for alluxio version 2.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.preferred', 'alluxio.security.stale.channel.purge.interval', 'alluxio.user.network.netty.channel', 'alluxio.worker.management.task.thread.count', 'alluxio.worker.data.folder'], 'reason': ['alluxio.user.short.circuit.preferred should be a boolean value', 'alluxio.security.stale.channel.purge.interval should be a duration value', 'alluxio.user.network.netty.channel should be one of [NIO, EPOLL, KQUEUE]', 'alluxio.worker.management.task.thread.count should be a positive integer', 'alluxio.worker.data.folder should be a valid folder path']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.preferred'], 'reason': ['The value of alluxio.user.short.circuit.preferred is not a valid boolean value.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.preferred', 'alluxio.worker.data.server.class', 'alluxio.user.network.netty.channel', 'alluxio.worker.management.task.thread.count', 'alluxio.worker.data.folder'], 'reason': ['alluxio.user.short.circuit.preferred must be a boolean', 'alluxio.worker.data.server.class must be a string', 'alluxio.user.network.netty.channel must be a string', 'alluxio.worker.management.task.thread.count must be a positive integer', 'alluxio.worker.data.folder must be a valid folder']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.preferred'], 'reason': ['alluxio.user.short.circuit.preferred is not a valid property for alluxio version 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.preferred'], 'reason': ['alluxio.user.short.circuit.preferred is not a valid property for alluxio version 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.short.circuit.preferred', 'alluxio.user.network.netty.channel'], 'reason': ['Invalid value for alluxio.user.short.circuit.preferred: true. Valid values are [true, false].', 'Invalid value for alluxio.user.network.netty.channel: NIO. Valid values are [NIO, EPOLL, KQUEUE, IO_URING].']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.user.short.circuit.preferred
+[Ciri] Reason for alluxio.user.short.circuit.preferred: alluxio.user.short.circuit.preferred is not a valid property for alluxio version 2.5.0

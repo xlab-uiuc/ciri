@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.master.backup.connect.interval.max'], 'reason': ['alluxio.user.network.max.inbound.message.size should be specified in bytes, but the provided value 0.1 is invalid.', 'alluxio.master.backup.connect.interval.max should be at least 1min, but 1sec is below the minimum value.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.max.inbound.message.size	alluxio.master.backup.connect.interval.max
+[Ciri] Reason for alluxio.user.network.max.inbound.message.size: alluxio.user.network.max.inbound.message.size should be specified in bytes, but the provided value 0.1 is invalid.
+[Ciri] Reason for alluxio.master.backup.connect.interval.max: alluxio.master.backup.connect.interval.max should be at least 1min, but 1sec is below the minimum value.

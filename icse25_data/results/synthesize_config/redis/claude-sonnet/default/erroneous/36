@@ -1,0 +1,20 @@
+Wrong shot number:
+[3, 4, 1]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'cluster-announce-port', 'appenddirname'], 'reason': ["The property 'cluster-announce-tls-port' has the value 65536 which is outside the valid range for a port number (1-65535).", "The property 'cluster-announce-port' has the value 1 which is a reserved port number and should not be used.", 'The property \'appenddirname\' has the value \'"appendonlydir"\' which is not a valid configuration parameter for Redis 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'cluster-announce-port', 'appenddirname'], 'reason': ["The property 'cluster-announce-tls-port' has the value 65536 which is outside the valid range for a port number (1-65535).", "The property 'cluster-announce-port' has the value 1 which is a reserved port number and should not be used.", "The property 'appenddirname' should not be enclosed in double quotes."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'cluster-announce-port', 'appenddirname'], 'reason': ["The property 'cluster-announce-tls-port' has the value 65536 which is outside the valid range for a port number (1-65535).", "The property 'cluster-announce-port' has the value 1 which is a reserved port number and should not be used.", "The property 'appenddirname' should not have double quotes around the value."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-tls-port	cluster-announce-port	appenddirname
+[Ciri] Reason for cluster-announce-tls-port: The property 'cluster-announce-tls-port' has the value 65536 which is outside the valid range for a port number (1-65535).
+[Ciri] Reason for cluster-announce-port: The property 'cluster-announce-port' has the value 1 which is a reserved port number and should not be used.
+[Ciri] Reason for appenddirname: The property 'appenddirname' should not have double quotes around the value.

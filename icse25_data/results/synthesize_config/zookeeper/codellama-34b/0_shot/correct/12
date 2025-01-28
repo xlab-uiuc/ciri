@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPort', 'dataLogDir', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsEnabled', 'maxClientCnxns'], 'reason': ['clientPort is not an integer', 'dataLogDir is not a valid directory', 'quorum.auth.enableSasl is not a boolean', 'quorum.auth.serverRequireSasl is not a boolean', 'autopurge.purgeInterval is not an integer', 'localSessionsEnabled is not a boolean', 'maxClientCnxns is not an integer']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'dataLogDir', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsEnabled', 'maxClientCnxns'], 'reason': ['clientPort should be an integer between 1024 and 65535', 'dataLogDir should be an absolute path', 'quorum.auth.enableSasl should be a boolean', 'quorum.auth.serverRequireSasl should be a boolean', 'autopurge.purgeInterval should be an integer greater than 0', 'localSessionsEnabled should be a boolean', 'maxClientCnxns should be an integer greater than 0']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'dataLogDir', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'localSessionsEnabled', 'maxClientCnxns'], 'reason': ['clientPort should be an integer between 1024 and 65535', 'dataLogDir should be a valid directory', 'quorum.auth.enableSasl should be a boolean', 'quorum.auth.serverRequireSasl should be a boolean', 'autopurge.purgeInterval should be a positive integer', 'localSessionsEnabled should be a boolean', 'maxClientCnxns should be a positive integer']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: clientPort	dataLogDir	quorum.auth.enableSasl	quorum.auth.serverRequireSasl	autopurge.purgeInterval	localSessionsEnabled	maxClientCnxns
+[Ciri] Reason for clientPort: clientPort should be an integer between 1024 and 65535
+[Ciri] Reason for dataLogDir: dataLogDir is not a valid directory
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl should be a boolean
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl should be a boolean
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval should be an integer greater than 0
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled should be a boolean
+[Ciri] Reason for maxClientCnxns: maxClientCnxns should be an integer greater than 0

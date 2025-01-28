@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host=999.-1.0.0', 'alluxio.user.file.write.tier.default=-1'], 'reason': ["The value '999.-1.0.0' for 'alluxio.job.master.web.bind.host' is not a valid IP address or hostname.", "The value '-1' for 'alluxio.user.file.write.tier.default' is not a valid tier index. It should be a non-negative integer representing the tier index."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.web.bind.host=999.-1.0.0	alluxio.user.file.write.tier.default=-1
+[Ciri] Reason for alluxio.job.master.web.bind.host=999.-1.0.0: The value '999.-1.0.0' for 'alluxio.job.master.web.bind.host' is not a valid IP address or hostname.
+[Ciri] Reason for alluxio.user.file.write.tier.default=-1: The value '-1' for 'alluxio.user.file.write.tier.default' is not a valid tier index. It should be a non-negative integer representing the tier index.

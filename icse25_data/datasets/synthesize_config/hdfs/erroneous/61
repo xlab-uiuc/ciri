@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.replication.considerLoad.factor</name>
+  <value>2.0</value>
+    <description>The factor by which a node's load can exceed the average
+      before being rejected for writes, only if considerLoad is true.
+    </description>
+</property>
+
+<property>
+  <name>dfs.ha.tail-edits.period</name>
+  <value>60s</value>
+  <description>
+    How often, the StandbyNode and ObserverNode should check if there are new
+    edit log entries ready to be consumed. This is the minimum period between
+    checking; exponential backoff will be applied if no edits are found and
+    dfs.ha.tail-edits.period.backoff-max is configured. By default, no
+    backoff is applied.
+    Supports multiple time unit suffix (case insensitive), as described
+    in dfs.heartbeat.interval.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.use.datanode.hostname</name>
+  <value>false</value>
+  <description>Whether datanodes should use datanode hostnames when
+    connecting to other datanodes for data transfer.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.peer.metrics.min.outlier.detection.samples</name>
+  <value>2000</value>
+    <description>
+      Minimum number of packet send samples which are required to qualify for outlier detection.
+      If the number of samples is below this then outlier detection is skipped.
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.path.based.cache.retry.interval.ms</name>
+  <value>60000</value>
+  <description>
+    When the NameNode needs to uncache something that is cached, or cache
+    something that is not cached, it must direct the DataNodes to do so by
+    sending a DNA_CACHE or DNA_UNCACHE command in response to a DataNode
+    heartbeat.  This parameter controls how frequently the NameNode will
+    resend these commands.
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.enabled</name>
+  <value>false</value>
+  <description>
+    Allow users to change the storage policy on files and directories.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.retry.policy.spec</name>
+  <value>[5000, 3, 30000, 5]</value>
+  <description>
+    Set to pairs of timeouts and retries for DFSClient.
+  </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.inmemory.batch-size</name>
+  <value>1000</value>
+    <description>
+      The batch size when iterating over the database backing the aliasmap
+    </description>
+</property>
+
+</configuration>

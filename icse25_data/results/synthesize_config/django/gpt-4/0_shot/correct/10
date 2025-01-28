@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['EMAIL_USE_SSL', 'EMAIL_SSL_KEYFILE'], 'reason': ['When EMAIL_USE_SSL is set to False, EMAIL_SSL_KEYFILE should not be specified as it implies the use of SSL for email. If SSL is not used, EMAIL_SSL_KEYFILE should be omitted or set to a default value that indicates it is not in use.', 'Setting EMAIL_SSL_KEYFILE to None while EMAIL_USE_SSL is False is contradictory. Either enable SSL with EMAIL_USE_SSL set to True and provide a valid EMAIL_SSL_KEYFILE, or disable SSL and ensure EMAIL_SSL_KEYFILE is not set or is irrelevant.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: EMAIL_USE_SSL	EMAIL_SSL_KEYFILE
+[Ciri] Reason for EMAIL_USE_SSL: When EMAIL_USE_SSL is set to False, EMAIL_SSL_KEYFILE should not be specified as it implies the use of SSL for email. If SSL is not used, EMAIL_SSL_KEYFILE should be omitted or set to a default value that indicates it is not in use.
+[Ciri] Reason for EMAIL_SSL_KEYFILE: Setting EMAIL_SSL_KEYFILE to None while EMAIL_USE_SSL is False is contradictory. Either enable SSL with EMAIL_USE_SSL set to True and provide a valid EMAIL_SSL_KEYFILE, or disable SSL and ensure EMAIL_SSL_KEYFILE is not set or is irrelevant.

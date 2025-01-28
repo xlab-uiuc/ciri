@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 4, 5]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.reader.max.chunk.size.bytes'], 'reason': ["The property 'alluxio.worker.network.reader.max.chunk.size.bytes' has the value '4MB' which is not a valid size. The value must be a positive integer followed by a unit of measurement (e.g. '4MB', '1GB', '100KB')."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.transport.max.inbound.message.size'], 'reason': ["The property 'alluxio.master.embedded.journal.transport.max.inbound.message.size' has the value '200MB' which is larger than the maximum allowed value of '100MB'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.embedded.journal.transport.max.inbound.message.size'], 'reason': ["The property 'alluxio.master.embedded.journal.transport.max.inbound.message.size' has the value '200MB' which is greater than the maximum allowed value of '100MB'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.master.embedded.journal.transport.max.inbound.message.size
+[Ciri] Reason for alluxio.master.embedded.journal.transport.max.inbound.message.size: The property 'alluxio.master.embedded.journal.transport.max.inbound.message.size' has the value '200MB' which is larger than the maximum allowed value of '100MB'.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.bind.host', 'alluxio.user.file.create.ttl', 'alluxio.master.worker.connect.wait.time'], 'reason': ['The IP address format is incorrect. It should be in the form of x.x.x.x, where x is a number from 0 to 255.', "The value for TTL (Time To Live) cannot be negative. It should be a non-negative value or 'no ttl'.", "The value for 'alluxio.master.worker.connect.wait.time' is too short. It's unlikely that 1 second is sufficient for a reliable connection setup."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.worker.web.bind.host	alluxio.user.file.create.ttl	alluxio.master.worker.connect.wait.time
+[Ciri] Reason for alluxio.job.worker.web.bind.host: The IP address format is incorrect. It should be in the form of x.x.x.x, where x is a number from 0 to 255.
+[Ciri] Reason for alluxio.user.file.create.ttl: The value for TTL (Time To Live) cannot be negative. It should be a non-negative value or 'no ttl'.
+[Ciri] Reason for alluxio.master.worker.connect.wait.time: The value for 'alluxio.master.worker.connect.wait.time' is too short. It's unlikely that 1 second is sufficient for a reliable connection setup.

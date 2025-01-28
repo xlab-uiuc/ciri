@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.stream.cache.timeout', 'alluxio.job.master.worker.timeout', 'alluxio.zookeeper.leader.connection.error.policy', 'alluxio.underfs.s3a.consistency.timeout'], 'reason': ["The correct property for setting the proxy stream cache timeout is 'alluxio.user.streaming.data.timeout', and it should be specified in milliseconds.", "The correct property for setting the job master worker timeout is 'alluxio.master.job.worker.timeout', and it should be specified in milliseconds.", "The 'alluxio.zookeeper.leader.connection.error.policy' property does not exist. The correct property for setting Zookeeper leader connection error policy is 'alluxio.master.zookeeper.connection.error.policy'.", "The correct property for setting the S3A under filesystem consistency timeout is 'alluxio.underfs.s3a.consistency.timeout.ms', and it should be specified in milliseconds."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.proxy.stream.cache.timeout	alluxio.job.master.worker.timeout	alluxio.zookeeper.leader.connection.error.policy	alluxio.underfs.s3a.consistency.timeout
+[Ciri] Reason for alluxio.proxy.stream.cache.timeout: The correct property for setting the proxy stream cache timeout is 'alluxio.user.streaming.data.timeout', and it should be specified in milliseconds.
+[Ciri] Reason for alluxio.job.master.worker.timeout: The correct property for setting the job master worker timeout is 'alluxio.master.job.worker.timeout', and it should be specified in milliseconds.
+[Ciri] Reason for alluxio.zookeeper.leader.connection.error.policy: The 'alluxio.zookeeper.leader.connection.error.policy' property does not exist. The correct property for setting Zookeeper leader connection error policy is 'alluxio.master.zookeeper.connection.error.policy'.
+[Ciri] Reason for alluxio.underfs.s3a.consistency.timeout: The correct property for setting the S3A under filesystem consistency timeout is 'alluxio.underfs.s3a.consistency.timeout.ms', and it should be specified in milliseconds.

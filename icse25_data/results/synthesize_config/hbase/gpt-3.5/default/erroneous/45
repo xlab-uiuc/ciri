@@ -1,0 +1,19 @@
+Wrong shot number:
+[11, 9, 7]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.keyvalue.maxsize', 'hbase.mob.delfile.max.count'], 'reason': ["The value of the property 'hbase.client.keyvalue.maxsize' should be greater than 0.", "The value of the property 'hbase.mob.delfile.max.count' should be less than or equal to 3."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.keyvalue.maxsize', 'hbase.mob.delfile.max.count'], 'reason': ["The property 'hbase.client.keyvalue.maxsize' has a value that is not recommended for HBase version 2.2.7.", "The property 'hbase.mob.delfile.max.count' has a value that is not recommended for HBase version 2.2.7."]}
+
+{'hasError': True, 'errParameter': ['hbase.client.keyvalue.maxsize', 'hbase.mob.delfile.max.count'], 'reason': ["The property 'hbase.client.keyvalue.maxsize' should have a value greater than 0.", "The value of the property 'hbase.mob.delfile.max.count' should be an integer greater than or equal to 0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.client.keyvalue.maxsize	hbase.mob.delfile.max.count
+[Ciri] Reason for hbase.client.keyvalue.maxsize: The value of the property 'hbase.client.keyvalue.maxsize' should be greater than 0.
+[Ciri] Reason for hbase.mob.delfile.max.count: The value of the property 'hbase.mob.delfile.max.count' should be an integer greater than or equal to 0.

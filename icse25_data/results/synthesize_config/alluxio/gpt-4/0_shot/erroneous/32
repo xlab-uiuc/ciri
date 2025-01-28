@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.s3.writetype', 'alluxio.security.stale.channel.purge.interval', 'alluxio.worker.data.folder'], 'reason': ["The property 'alluxio.proxy.s3.writetype' is invalid or does not exist. Valid options usually include 'CACHE_THROUGH', 'MUST_CACHE', 'THROUGH', and 'ASYNC_THROUGH'.", "The value for 'alluxio.security.stale.channel.purge.interval' is incorrectly formatted. It should be in the format of a duration such as '6d' for 6 days.", "The property 'alluxio.worker.data.folder' is not a recognized configuration property. It might be a version-specific issue or simply incorrect."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.proxy.s3.writetype	alluxio.security.stale.channel.purge.interval	alluxio.worker.data.folder
+[Ciri] Reason for alluxio.proxy.s3.writetype: The property 'alluxio.proxy.s3.writetype' is invalid or does not exist. Valid options usually include 'CACHE_THROUGH', 'MUST_CACHE', 'THROUGH', and 'ASYNC_THROUGH'.
+[Ciri] Reason for alluxio.security.stale.channel.purge.interval: The value for 'alluxio.security.stale.channel.purge.interval' is incorrectly formatted. It should be in the format of a duration such as '6d' for 6 days.
+[Ciri] Reason for alluxio.worker.data.folder: The property 'alluxio.worker.data.folder' is not a recognized configuration property. It might be a version-specific issue or simply incorrect.

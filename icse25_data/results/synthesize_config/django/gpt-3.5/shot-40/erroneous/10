@@ -1,0 +1,15 @@
+Correct shot number:
+[3, 6, 5, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'WSGI_APPLICATION', 'MIDDLEWARE', 'MANAGERS', 'USE_I18N'], 'reason': ['LOGIN_REDIRECT_URL should not end with double forward slashes.', 'WSGI_APPLICATION should be specified.', 'MIDDLEWARE should contain at least one middleware.', 'MANAGERS should not be set to ADMINS.', 'USE_I18N should be set to True for internationalization support.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: LOGIN_REDIRECT_URL	WSGI_APPLICATION	MIDDLEWARE	MANAGERS	USE_I18N
+[Ciri] Reason for LOGIN_REDIRECT_URL: LOGIN_REDIRECT_URL should not end with double forward slashes.
+[Ciri] Reason for WSGI_APPLICATION: WSGI_APPLICATION should be specified.
+[Ciri] Reason for MIDDLEWARE: MIDDLEWARE should contain at least one middleware.
+[Ciri] Reason for MANAGERS: MANAGERS should not be set to ADMINS.
+[Ciri] Reason for USE_I18N: USE_I18N should be set to True for internationalization support.

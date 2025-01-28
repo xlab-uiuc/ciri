@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.create.ttl'], 'reason': ['alluxio.user.file.create.ttl should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.create.ttl', 'alluxio.user.block.worker.client.pool.max'], 'reason': ['alluxio.user.file.create.ttl must be a positive integer or -1, but was -2', 'alluxio.user.block.worker.client.pool.max must be a positive integer, but was 512']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.create.ttl', 'alluxio.user.block.worker.client.pool.max'], 'reason': ['alluxio.user.file.create.ttl must be a positive integer or -1, but is -2', 'alluxio.user.block.worker.client.pool.max must be a positive integer, but is 512']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.file.create.ttl	alluxio.user.block.worker.client.pool.max
+[Ciri] Reason for alluxio.user.file.create.ttl: alluxio.user.file.create.ttl must be a positive integer or -1, but is -2
+[Ciri] Reason for alluxio.user.block.worker.client.pool.max: alluxio.user.block.worker.client.pool.max must be a positive integer, but was 512

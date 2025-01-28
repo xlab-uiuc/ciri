@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'aclfile', 'replica-lazy-flush', 'repl-diskless-sync-delay'], 'reason': ['cluster-announce-ip should be set to the actual IP address of the node, not 127.0.0.1 (localhost)', 'The aclfile parameter is not valid in Redis 7.0.0. Access control lists (ACLs) are now configured using the ACL commands', 'replica-lazy-flush is not a valid configuration parameter in Redis 7.0.0', 'repl-diskless-sync-delay is not a valid configuration parameter in Redis 7.0.0']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: cluster-announce-ip	aclfile	replica-lazy-flush	repl-diskless-sync-delay
+[Ciri] Reason for cluster-announce-ip: cluster-announce-ip should be set to the actual IP address of the node, not 127.0.0.1 (localhost)
+[Ciri] Reason for aclfile: The aclfile parameter is not valid in Redis 7.0.0. Access control lists (ACLs) are now configured using the ACL commands
+[Ciri] Reason for replica-lazy-flush: replica-lazy-flush is not a valid configuration parameter in Redis 7.0.0
+[Ciri] Reason for repl-diskless-sync-delay: repl-diskless-sync-delay is not a valid configuration parameter in Redis 7.0.0

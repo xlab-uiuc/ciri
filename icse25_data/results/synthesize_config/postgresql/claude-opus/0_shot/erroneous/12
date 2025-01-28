@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['unix_socket_directories', 'vacuum_multixact_freeze_min_age'], 'reason': ["unix_socket_directories should be a valid directory path, not 'dev/urandom///'", 'vacuum_multixact_freeze_min_age should be set to a value between 10000000 and 2000000000 for PostgreSQL 13']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: unix_socket_directories	vacuum_multixact_freeze_min_age
+[Ciri] Reason for unix_socket_directories: unix_socket_directories should be a valid directory path, not 'dev/urandom///'
+[Ciri] Reason for vacuum_multixact_freeze_min_age: vacuum_multixact_freeze_min_age should be set to a value between 10000000 and 2000000000 for PostgreSQL 13

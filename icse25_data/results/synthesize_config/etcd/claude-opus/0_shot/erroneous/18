@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-pprof', 'log-outputs', 'proxy-dial-timeout', 'heartbeat-interval', 'proxy-write-timeout'], 'reason': ["The 'enable-pprof' parameter is not a valid configuration option for etcd v3.5.0.", 'The \'log-outputs\' parameter expects a comma-separated list of outputs enclosed in double quotes, e.g., "stderr".', 'The \'proxy-dial-timeout\' parameter expects a duration string, e.g., "2s" for 2 seconds, not an integer value.', 'The \'heartbeat-interval\' parameter expects a duration string, e.g., "50ms" for 50 milliseconds, not an integer value.', 'The \'proxy-write-timeout\' parameter expects a duration string, e.g., "10s" for 10 seconds, not an integer value.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: enable-pprof	log-outputs	proxy-dial-timeout	heartbeat-interval	proxy-write-timeout
+[Ciri] Reason for enable-pprof: The 'enable-pprof' parameter is not a valid configuration option for etcd v3.5.0.
+[Ciri] Reason for log-outputs: The 'log-outputs' parameter expects a comma-separated list of outputs enclosed in double quotes, e.g., "stderr".
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' parameter expects a duration string, e.g., "2s" for 2 seconds, not an integer value.
+[Ciri] Reason for heartbeat-interval: The 'heartbeat-interval' parameter expects a duration string, e.g., "50ms" for 50 milliseconds, not an integer value.
+[Ciri] Reason for proxy-write-timeout: The 'proxy-write-timeout' parameter expects a duration string, e.g., "10s" for 10 seconds, not an integer value.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.rpc.port=3000', 'alluxio.job.worker.hostname=127.0.0.1'], 'reason': ["The property 'alluxio.worker.rpc.port' is deprecated in Alluxio 2.5.0 and should be replaced with 'alluxio.worker.rpc.web.bind.host' and 'alluxio.worker.rpc.web.bind.port'.", "The property 'alluxio.job.worker.hostname' is not a valid Alluxio configuration property in version 2.5.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.worker.rpc.port=3000	alluxio.job.worker.hostname=127.0.0.1
+[Ciri] Reason for alluxio.worker.rpc.port=3000: The property 'alluxio.worker.rpc.port' is deprecated in Alluxio 2.5.0 and should be replaced with 'alluxio.worker.rpc.web.bind.host' and 'alluxio.worker.rpc.web.bind.port'.
+[Ciri] Reason for alluxio.job.worker.hostname=127.0.0.1: The property 'alluxio.job.worker.hostname' is not a valid Alluxio configuration property in version 2.5.0.

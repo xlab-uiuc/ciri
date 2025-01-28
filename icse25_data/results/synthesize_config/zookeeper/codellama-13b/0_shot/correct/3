@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'initLimit', 'maxClientCnxns', 'standaloneEnabled', 'localSessionsEnabled', 'electionAlg'], 'reason': ['dataDir is not a valid directory', 'initLimit is not a valid integer', 'maxClientCnxns is not a valid integer', 'standaloneEnabled is not a valid boolean', 'localSessionsEnabled is not a valid boolean', 'electionAlg is not a valid integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'electionAlg'], 'reason': ['dataDir must be a valid directory', 'electionAlg must be a valid integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'initLimit', 'maxClientCnxns', 'standaloneEnabled', 'localSessionsEnabled', 'electionAlg'], 'reason': ['dataDir should be a valid directory', 'initLimit should be a positive integer', 'maxClientCnxns should be a positive integer', 'standaloneEnabled should be a boolean', 'localSessionsEnabled should be a boolean', 'electionAlg should be a valid integer']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: dataDir	initLimit	maxClientCnxns	standaloneEnabled	localSessionsEnabled	electionAlg
+[Ciri] Reason for dataDir: dataDir is not a valid directory
+[Ciri] Reason for initLimit: initLimit should be a positive integer
+[Ciri] Reason for maxClientCnxns: maxClientCnxns is not a valid integer
+[Ciri] Reason for standaloneEnabled: standaloneEnabled should be a boolean
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled is not a valid boolean
+[Ciri] Reason for electionAlg: electionAlg is not a valid integer

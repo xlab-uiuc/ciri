@@ -1,0 +1,31 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress'], 'reason': ['dataDir must be a directory', 'dataLogDir must be a directory', 'clientPortAddress must be a valid address']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPortAddress'], 'reason': ['The dataDir property is not set.', 'The clientPortAddress property is not set.']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'localSessionsUpgradingEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.enableSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['clientPortAddress must be a valid IP address', 'localSessionsUpgradingEnabled must be a boolean value', 'sslQuorumReloadCertFiles must be a boolean value', 'quorum.auth.enableSasl must be a boolean value', 'quorum.auth.server.saslLoginContext must be a string']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress'], 'reason': ['The value of clientPortAddress is not a valid IP address.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress'], 'reason': ['dataDir is not a directory', 'dataLogDir is not a directory', 'clientPortAddress is not a valid address']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress', 'server.1', 'server.2', 'server.3'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPortAddress is not a valid address', 'server.1 is not a valid address', 'server.2 is not a valid address', 'server.3 is not a valid address']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress', 'localSessionsUpgradingEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.server.saslLoginContext'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPortAddress is not a valid address', 'localSessionsUpgradingEnabled is not a boolean', 'sslQuorumReloadCertFiles is not a boolean', 'quorum.auth.server.saslLoginContext is not a string']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress', 'quorumListenOnAllIPs'], 'reason': ['dataDir must be a directory', 'dataLogDir must be a directory', 'clientPortAddress must be a valid address', 'quorumListenOnAllIPs must be a boolean']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress', 'quorumListenOnAllIPs'], 'reason': ['dataDir and dataLogDir must be absolute paths', 'clientPortAddress must be a valid IP address', 'quorumListenOnAllIPs must be a boolean']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dataDir	dataLogDir	clientPortAddress	quorumListenOnAllIPs
+[Ciri] Reason for dataDir: dataDir must be a directory
+[Ciri] Reason for dataLogDir: dataLogDir must be a directory
+[Ciri] Reason for clientPortAddress: clientPortAddress must be a valid address
+[Ciri] Reason for quorumListenOnAllIPs: quorumListenOnAllIPs must be a boolean

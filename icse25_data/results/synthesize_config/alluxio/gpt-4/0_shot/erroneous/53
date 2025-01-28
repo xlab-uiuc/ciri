@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.max.inbound.message.size', 'alluxio.master.metadata.sync.executor.pool.size', 'alluxio.user.client.cache.eviction.retries'], 'reason': ["The correct property name is 'alluxio.worker.network.reader.max.inbound.message.size'.", "The property 'alluxio.master.metadata.sync.executor.pool.size' does not exist in Alluxio 2.5.0.", "The property 'alluxio.user.client.cache.eviction.retries' does not exist in Alluxio 2.5.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.worker.network.max.inbound.message.size	alluxio.master.metadata.sync.executor.pool.size	alluxio.user.client.cache.eviction.retries
+[Ciri] Reason for alluxio.worker.network.max.inbound.message.size: The correct property name is 'alluxio.worker.network.reader.max.inbound.message.size'.
+[Ciri] Reason for alluxio.master.metadata.sync.executor.pool.size: The property 'alluxio.master.metadata.sync.executor.pool.size' does not exist in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.user.client.cache.eviction.retries: The property 'alluxio.user.client.cache.eviction.retries' does not exist in Alluxio 2.5.0.

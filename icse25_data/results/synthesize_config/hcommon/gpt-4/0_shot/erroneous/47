@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.bind.users', 'fs.s3a.proxy.port', 'adl.http.timeout'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.bind.users' is not correctly defined for Hadoop 3.3.0. The correct property should specify individual user aliases in separate properties, not as a comma-separated list.", "The 'fs.s3a.proxy.port' should not have a value of -1 if a proxy host is specified. It should be set to a valid port number.", "The 'adl.http.timeout' should not have a value of -1. For disabling timeouts, a positive value should be used, or it should be set to the SDK default by not specifying this property."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.bind.users	fs.s3a.proxy.port	adl.http.timeout
+[Ciri] Reason for hadoop.security.group.mapping.ldap.bind.users: The property 'hadoop.security.group.mapping.ldap.bind.users' is not correctly defined for Hadoop 3.3.0. The correct property should specify individual user aliases in separate properties, not as a comma-separated list.
+[Ciri] Reason for fs.s3a.proxy.port: The 'fs.s3a.proxy.port' should not have a value of -1 if a proxy host is specified. It should be set to a valid port number.
+[Ciri] Reason for adl.http.timeout: The 'adl.http.timeout' should not have a value of -1. For disabling timeouts, a positive value should be used, or it should be set to the SDK default by not specifying this property.

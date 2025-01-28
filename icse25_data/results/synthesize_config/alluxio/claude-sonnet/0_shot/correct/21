@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.directory.suffix', 'alluxio.master.web.hostname', 'alluxio.user.network.streaming.max.inbound.message.size', 'alluxio.master.web.port'], 'reason': ["The property 'alluxio.underfs.gcs.directory.suffix' is not a valid Alluxio configuration property in version 2.5.0.", "The property 'alluxio.master.web.hostname' is not a valid Alluxio configuration property in version 2.5.0. The correct property is 'alluxio.master.hostname'.", "The property 'alluxio.user.network.streaming.max.inbound.message.size' is not a valid Alluxio configuration property in version 2.5.0.", "The property 'alluxio.master.web.port' is not a valid Alluxio configuration property in version 2.5.0. The correct property is 'alluxio.master.web.bind.host'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.underfs.gcs.directory.suffix	alluxio.master.web.hostname	alluxio.user.network.streaming.max.inbound.message.size	alluxio.master.web.port
+[Ciri] Reason for alluxio.underfs.gcs.directory.suffix: The property 'alluxio.underfs.gcs.directory.suffix' is not a valid Alluxio configuration property in version 2.5.0.
+[Ciri] Reason for alluxio.master.web.hostname: The property 'alluxio.master.web.hostname' is not a valid Alluxio configuration property in version 2.5.0. The correct property is 'alluxio.master.hostname'.
+[Ciri] Reason for alluxio.user.network.streaming.max.inbound.message.size: The property 'alluxio.user.network.streaming.max.inbound.message.size' is not a valid Alluxio configuration property in version 2.5.0.
+[Ciri] Reason for alluxio.master.web.port: The property 'alluxio.master.web.port' is not a valid Alluxio configuration property in version 2.5.0. The correct property is 'alluxio.master.web.bind.host'.

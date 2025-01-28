@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'initial-advertise-peer-urls', 'enable-v2'], 'reason': ["In etcd 3.5.0, the advertise-client-urls and initial-advertise-peer-urls parameters should use the URL scheme 'http://' or 'https://' instead of just 'http://'. For example, 'http://localhost:2379' should be 'http://localhost:2379'.", 'In etcd 3.5.0, the enable-v2 parameter is deprecated and should not be used. etcd 3.5.0 only supports the v3 API.', 'The proxy-write-timeout parameter is not a valid configuration option in etcd 3.5.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: advertise-client-urls	initial-advertise-peer-urls	enable-v2
+[Ciri] Reason for advertise-client-urls: In etcd 3.5.0, the advertise-client-urls and initial-advertise-peer-urls parameters should use the URL scheme 'http://' or 'https://' instead of just 'http://'. For example, 'http://localhost:2379' should be 'http://localhost:2379'.
+[Ciri] Reason for initial-advertise-peer-urls: In etcd 3.5.0, the enable-v2 parameter is deprecated and should not be used. etcd 3.5.0 only supports the v3 API.
+[Ciri] Reason for enable-v2: The proxy-write-timeout parameter is not a valid configuration option in etcd 3.5.0.

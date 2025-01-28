@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.timeline-service.address', 'yarn.nodemanager.numa-awareness.numactl.cmd'], 'reason': ["The value '127.0.0.1' for the 'yarn.timeline-service.address' property is not recommended as it binds the Timeline Server to the loopback address, which makes it inaccessible from other hosts.", "The value '/valid/file2' for the 'yarn.nodemanager.numa-awareness.numactl.cmd' property is likely an invalid path for the numactl command. The numactl command is typically located in a system directory like '/usr/bin/numactl'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.timeline-service.address	yarn.nodemanager.numa-awareness.numactl.cmd
+[Ciri] Reason for yarn.timeline-service.address: The value '127.0.0.1' for the 'yarn.timeline-service.address' property is not recommended as it binds the Timeline Server to the loopback address, which makes it inaccessible from other hosts.
+[Ciri] Reason for yarn.nodemanager.numa-awareness.numactl.cmd: The value '/valid/file2' for the 'yarn.nodemanager.numa-awareness.numactl.cmd' property is likely an invalid path for the numactl command. The numactl command is typically located in a system directory like '/usr/bin/numactl'.

@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.global.memstore.size', 'hbase.regionserver.hlog.writer.impl', 'hbase.master.keytab.file'], 'reason': ['hbase.regionserver.global.memstore.size: The default value in this configuration has been intentionally left empty in order to honor the old hbase.regionserver.global.memstore.upperLimit property if present.', 'hbase.regionserver.hlog.writer.impl: The WAL file writer implementation.', 'hbase.master.keytab.file: Full path to the kerberos keytab file to use for logging in the configured HMaster server principal.']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.global.memstore.size'], 'reason': ['The default value in this configuration has been intentionally left empty in order to honor the old hbase.regionserver.global.memstore.upperLimit property if present.']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count'], 'reason': ['The value of hbase.regionserver.handler.count is 60, which is not a valid value. The value of hbase.regionserver.handler.count should be a multiple of CPU count. If mostly read-only, handlers count close to cpu count does well. Start with twice the CPU count and tune from there.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.writer.impl'], 'reason': ['The WAL file writer implementation.']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.global.memstore.size'], 'reason': ['hbase.regionserver.global.memstore.size has no value']}
+
+{'hasError': True, 'errParameter': ['hbase.master.keytab.file'], 'reason': ['hbase.master.keytab.file is not a valid property for hbase version 2.2.7.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count'], 'reason': ['The value of hbase.regionserver.handler.count is 60, which is not a valid value. The value should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.global.memstore.size', 'hbase.master.keytab.file'], 'reason': ['hbase.regionserver.global.memstore.size has no value', 'hbase.master.keytab.file has no value']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.global.memstore.size', 'hbase.master.keytab.file'], 'reason': ['hbase.regionserver.global.memstore.size has a value of 0.1, which is not a valid value. The value must be greater than 0.', 'hbase.master.keytab.file has a value of /valid/file2, which is not a valid value. The value must be a valid file path.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.global.memstore.size	hbase.master.keytab.file
+[Ciri] Reason for hbase.regionserver.global.memstore.size: hbase.regionserver.global.memstore.size has no value
+[Ciri] Reason for hbase.master.keytab.file: hbase.master.keytab.file has no value

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.info.port', 'hbase.server.keyvalue.maxsize'], 'reason': ['The default value for hbase.master.info.port in HBase 2.2.7 should be 16010, not 1.1.', 'The default value for hbase.server.keyvalue.maxsize in HBase 2.2.7 is 10485760 (10MB), not 5242880 (5MB).']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.master.info.port	hbase.server.keyvalue.maxsize
+[Ciri] Reason for hbase.master.info.port: The default value for hbase.master.info.port in HBase 2.2.7 should be 16010, not 1.1.
+[Ciri] Reason for hbase.server.keyvalue.maxsize: The default value for hbase.server.keyvalue.maxsize in HBase 2.2.7 is 10485760 (10MB), not 5242880 (5MB).

@@ -1,0 +1,18 @@
+Wrong shot number:
+[10, 8, 3]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource-plugins'], 'reason': ["The value of the property 'yarn.nodemanager.resource-plugins' is 'NOEXIST2' which is not a valid value. The valid values are: 'yarn.io/gpu', 'yarn.io/fpga'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource-plugins'], 'reason': ["The value of the property 'yarn.nodemanager.resource-plugins' should be 'NOEXIST' to enable the property 'yarn.nodemanager.resource-plugins'."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.fs.state-store.uri'], 'reason': ["The property 'yarn.resourcemanager.fs.state-store.uri' has the value '/valid/file2' which does not follow the correct URI format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.resource-plugins
+[Ciri] Reason for yarn.nodemanager.resource-plugins: The value of the property 'yarn.nodemanager.resource-plugins' should be 'NOEXIST' to enable the property 'yarn.nodemanager.resource-plugins'.

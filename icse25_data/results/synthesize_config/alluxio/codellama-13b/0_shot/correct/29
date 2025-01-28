@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level1.dirs.path', 'alluxio.worker.data.server.domain.socket.address', 'alluxio.underfs.web.parent.names', 'alluxio.underfs.hdfs.remote', 'alluxio.worker.network.async.cache.manager.threads.max'], 'reason': ['alluxio.worker.tieredstore.level1.dirs.path: The path must be a valid directory.', 'alluxio.worker.data.server.domain.socket.address: The domain socket address must be a valid domain socket.', 'alluxio.underfs.web.parent.names: The parent names must be a valid directory.', 'alluxio.underfs.hdfs.remote: The remote must be a valid directory.', 'alluxio.worker.network.async.cache.manager.threads.max: The maximum number of threads must be a positive integer.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.worker.tieredstore.level1.dirs.path	alluxio.worker.data.server.domain.socket.address	alluxio.underfs.web.parent.names	alluxio.underfs.hdfs.remote	alluxio.worker.network.async.cache.manager.threads.max
+[Ciri] Reason for alluxio.worker.tieredstore.level1.dirs.path: alluxio.worker.tieredstore.level1.dirs.path: The path must be a valid directory.
+[Ciri] Reason for alluxio.worker.data.server.domain.socket.address: alluxio.worker.data.server.domain.socket.address: The domain socket address must be a valid domain socket.
+[Ciri] Reason for alluxio.underfs.web.parent.names: alluxio.underfs.web.parent.names: The parent names must be a valid directory.
+[Ciri] Reason for alluxio.underfs.hdfs.remote: alluxio.underfs.hdfs.remote: The remote must be a valid directory.
+[Ciri] Reason for alluxio.worker.network.async.cache.manager.threads.max: alluxio.worker.network.async.cache.manager.threads.max: The maximum number of threads must be a positive integer.

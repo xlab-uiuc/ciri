@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'logger', 'proxy', 'quota-backend-bytes', 'enable-v2', 'force-new-cluster'], 'reason': ["The 'proxy-dial-timeout' parameter is no longer supported in etcd v3.5. Use 'dial-timeout' instead.", "The 'proxy-refresh-interval' parameter is no longer supported in etcd v3.5.", "The 'logger' parameter is no longer supported in etcd v3.5. Use '--logger' command line flag instead.", "The 'proxy' parameter is no longer supported in etcd v3.5. Use 'proxy' command instead.", "The 'quota-backend-bytes' parameter is no longer supported in etcd v3.5. Use '--quota-backend-bytes' command line flag instead.", "The 'enable-v2' parameter is no longer supported in etcd v3.5. The v2 API is not supported.", "The 'force-new-cluster' parameter is no longer supported in etcd v3.5. Use '--force-new-cluster' command line flag instead."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: proxy-dial-timeout	proxy-refresh-interval	logger	proxy	quota-backend-bytes	enable-v2	force-new-cluster
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' parameter is no longer supported in etcd v3.5. Use 'dial-timeout' instead.
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter is no longer supported in etcd v3.5.
+[Ciri] Reason for logger: The 'logger' parameter is no longer supported in etcd v3.5. Use '--logger' command line flag instead.
+[Ciri] Reason for proxy: The 'proxy' parameter is no longer supported in etcd v3.5. Use 'proxy' command instead.
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' parameter is no longer supported in etcd v3.5. Use '--quota-backend-bytes' command line flag instead.
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is no longer supported in etcd v3.5. The v2 API is not supported.
+[Ciri] Reason for force-new-cluster: The 'force-new-cluster' parameter is no longer supported in etcd v3.5. Use '--force-new-cluster' command line flag instead.

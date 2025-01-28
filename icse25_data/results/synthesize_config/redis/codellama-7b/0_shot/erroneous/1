@@ -1,0 +1,38 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-node-timeout', 'slowlog-log-slower-than'], 'reason': ['cluster-node-timeout must be greater than 0', 'slowlog-log-slower-than must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['cluster-node-timeout', 'slowlog-log-slower-than', 'hash-max-listpack-value'], 'reason': ['cluster-node-timeout must be an integer', 'slowlog-log-slower-than must be an integer', 'hash-max-listpack-value must be an integer']}
+
+{'hasError': True, 'errParameter': ['bind'], 'reason': ['The value of the bind parameter is not valid. The value must be a valid IP address or a hostname.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind', 'port', 'cluster-node-timeout', 'tls-ca-cert-dir', 'no-appendfsync-on-rewrite', 'slowlog-max-len', 'slowlog-log-slower-than', 'appendfsync', 'hash-max-listpack-value'], 'reason': ['bind must be a valid IP address or hostname', 'port must be a valid port number', 'cluster-node-timeout must be a valid integer', 'tls-ca-cert-dir must be a valid path', 'no-appendfsync-on-rewrite must be a valid boolean', 'slowlog-max-len must be a valid integer', 'slowlog-log-slower-than must be a valid integer', 'appendfsync must be a valid string', 'hash-max-listpack-value must be a valid integer']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-config-file', 'cluster-node-timeout', 'tls-ca-cert-dir', 'no-appendfsync-on-rewrite', 'slowlog-max-len', 'slowlog-log-slower-than', 'appendfsync', 'hash-max-listpack-value'], 'reason': ['cluster-enabled should be set to yes or no', 'cluster-config-file should be set to a valid file path', 'cluster-node-timeout should be set to a positive integer', 'tls-ca-cert-dir should be set to a valid directory path', 'no-appendfsync-on-rewrite should be set to yes or no', 'slowlog-max-len should be set to a positive integer', 'slowlog-log-slower-than should be set to a positive integer', 'appendfsync should be set to no or always', 'hash-max-listpack-value should be set to a positive integer']}
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'cluster-node-timeout', 'slowlog-max-len', 'slowlog-log-slower-than', 'appendfsync'], 'reason': ['port must be an integer', 'timeout must be a float', 'cluster-node-timeout must be an integer', 'slowlog-max-len must be an integer', 'slowlog-log-slower-than must be an integer', 'appendfsync must be one of [everysec, no]']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-config-file', 'cluster-node-timeout', 'tls-ca-cert-dir', 'no-appendfsync-on-rewrite', 'slowlog-max-len', 'slowlog-log-slower-than', 'appendfsync', 'hash-max-listpack-value'], 'reason': ['cluster-enabled must be either yes or no', 'cluster-config-file must be a valid file path', 'cluster-node-timeout must be a positive integer', 'tls-ca-cert-dir must be a valid directory path', 'no-appendfsync-on-rewrite must be either yes or no', 'slowlog-max-len must be a positive integer', 'slowlog-log-slower-than must be a positive integer', 'appendfsync must be either everysec or no', 'hash-max-listpack-value must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['cluster-node-timeout', 'slowlog-log-slower-than', 'hash-max-listpack-value'], 'reason': ['cluster-node-timeout must be a positive integer', 'slowlog-log-slower-than must be a positive integer', 'hash-max-listpack-value must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['bind'], 'reason': ["The parameter 'bind' is not valid for redis version 7.0.0"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-node-timeout', 'slowlog-log-slower-than'], 'reason': ["The parameter 'cluster-node-timeout' is not a valid parameter for redis version 7.0.0", "The parameter 'slowlog-log-slower-than' is not a valid parameter for redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['cluster-node-timeout', 'slowlog-log-slower-than', 'hash-max-listpack-value'], 'reason': ['cluster-node-timeout must be an integer', 'slowlog-log-slower-than must be an integer', 'hash-max-listpack-value must be an integer']}
+
+{'hasError': True, 'errParameter': ['cluster-node-timeout', 'slowlog-log-slower-than', 'hash-max-listpack-value'], 'reason': ['cluster-node-timeout: The value of cluster-node-timeout must be greater than 0', 'slowlog-log-slower-than: The value of slowlog-log-slower-than must be greater than 0', 'hash-max-listpack-value: The value of hash-max-listpack-value must be greater than 0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-node-timeout	slowlog-log-slower-than	hash-max-listpack-value
+[Ciri] Reason for cluster-node-timeout: cluster-node-timeout: The value of cluster-node-timeout must be greater than 0
+[Ciri] Reason for slowlog-log-slower-than: slowlog-log-slower-than: The value of slowlog-log-slower-than must be greater than 0
+[Ciri] Reason for hash-max-listpack-value: hash-max-listpack-value must be an integer

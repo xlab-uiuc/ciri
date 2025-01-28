@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.management.tier.promote.range=200', 'alluxio.metrics.conf.file=/valid/file1'], 'reason': ["The property 'alluxio.worker.management.tier.promote.range' is not a valid configuration property in Alluxio 2.5.0.", "The property 'alluxio.metrics.conf.file' is not a valid configuration property in Alluxio 2.5.0. The correct property for specifying the metrics configuration file is 'alluxio.metrics.conf.path'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.worker.management.tier.promote.range=200	alluxio.metrics.conf.file=/valid/file1
+[Ciri] Reason for alluxio.worker.management.tier.promote.range=200: The property 'alluxio.worker.management.tier.promote.range' is not a valid configuration property in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.metrics.conf.file=/valid/file1: The property 'alluxio.metrics.conf.file' is not a valid configuration property in Alluxio 2.5.0. The correct property for specifying the metrics configuration file is 'alluxio.metrics.conf.path'.

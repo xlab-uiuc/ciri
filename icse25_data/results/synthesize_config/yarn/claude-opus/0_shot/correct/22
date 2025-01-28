@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.log-aggregation.retain-seconds', 'yarn.nodemanager.elastic-memory-control.enabled'], 'reason': ['The value -2 is invalid for yarn.log-aggregation.retain-seconds. It should be a non-negative integer or -1 to disable log aggregation.', 'The property yarn.nodemanager.elastic-memory-control.enabled is not supported in Hadoop 3.3.0. It was removed in Hadoop 3.0.0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.log-aggregation.retain-seconds	yarn.nodemanager.elastic-memory-control.enabled
+[Ciri] Reason for yarn.log-aggregation.retain-seconds: The value -2 is invalid for yarn.log-aggregation.retain-seconds. It should be a non-negative integer or -1 to disable log aggregation.
+[Ciri] Reason for yarn.nodemanager.elastic-memory-control.enabled: The property yarn.nodemanager.elastic-memory-control.enabled is not supported in Hadoop 3.3.0. It was removed in Hadoop 3.0.0.

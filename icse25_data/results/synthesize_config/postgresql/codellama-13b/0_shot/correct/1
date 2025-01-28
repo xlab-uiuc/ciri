@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_insert_threshold', 'checkpoint_flush_after'], 'reason': ['The value of autovacuum_vacuum_insert_threshold should be an integer between 0 and 10000, but 500 is not.', 'The value of checkpoint_flush_after should be an integer between 0 and 10000, but 1 is not.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_insert_threshold', 'checkpoint_flush_after'], 'reason': ['The value of autovacuum_vacuum_insert_threshold is not a valid integer.', 'The value of checkpoint_flush_after is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_insert_threshold', 'checkpoint_flush_after', 'gss_accept_delegation'], 'reason': ['autovacuum_vacuum_insert_threshold is not a valid parameter for PostgreSQL version 13.0.', 'checkpoint_flush_after is not a valid parameter for PostgreSQL version 13.0.', 'gss_accept_delegation is not a valid parameter for PostgreSQL version 13.0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autovacuum_vacuum_insert_threshold	checkpoint_flush_after
+[Ciri] Reason for autovacuum_vacuum_insert_threshold: The value of autovacuum_vacuum_insert_threshold should be an integer between 0 and 10000, but 500 is not.
+[Ciri] Reason for checkpoint_flush_after: The value of checkpoint_flush_after should be an integer between 0 and 10000, but 1 is not.

@@ -1,0 +1,36 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'clientPortAddress', 'secureClientPort', 'secureClientPortAddress', 'quorumListenOnAllIPs', 'electionAlg', 'localSessionsEnabled'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port', 'clientPortAddress is not a valid address', 'secureClientPort is not a valid port', 'secureClientPortAddress is not a valid address', 'quorumListenOnAllIPs is not a valid boolean', 'electionAlg is not a valid integer', 'localSessionsEnabled is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'clientPortAddress', 'secureClientPort', 'secureClientPortAddress', 'quorumListenOnAllIPs', 'electionAlg', 'localSessionsEnabled'], 'reason': ['clientPort must be an integer', 'clientPortAddress must be an integer', 'secureClientPort must be an integer', 'secureClientPortAddress must be an integer', 'quorumListenOnAllIPs must be a boolean', 'electionAlg must be an integer', 'localSessionsEnabled must be a boolean']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'clientPortAddress', 'secureClientPort', 'secureClientPortAddress', 'quorumListenOnAllIPs', 'electionAlg', 'portUnification', 'localSessionsEnabled'], 'reason': ['dataDir is not a valid directory', 'clientPort is not a valid port', 'clientPortAddress is not a valid address', 'secureClientPort is not a valid port', 'secureClientPortAddress is not a valid address', 'quorumListenOnAllIPs is not a valid boolean', 'electionAlg is not a valid integer', 'portUnification is not a valid boolean', 'localSessionsEnabled is not a valid boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPort', 'clientPortAddress', 'secureClientPort', 'secureClientPortAddress', 'quorumListenOnAllIPs', 'electionAlg', 'localSessionsEnabled'], 'reason': ['clientPort must be an integer', 'clientPortAddress must be an IP address', 'secureClientPort must be an integer', 'secureClientPortAddress must be an IP address', 'quorumListenOnAllIPs must be a boolean', 'electionAlg must be an integer', 'localSessionsEnabled must be a boolean']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress'], 'reason': ["secureClientPortAddress should be in the format of 'host:port'"]}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'clientPortAddress', 'secureClientPort', 'secureClientPortAddress', 'quorumListenOnAllIPs', 'electionAlg', 'localSessionsEnabled'], 'reason': ['dataDir must be specified', 'dataLogDir must be specified', 'clientPort must be specified', 'clientPortAddress must be specified', 'secureClientPort must be specified', 'secureClientPortAddress must be specified', 'quorumListenOnAllIPs must be specified', 'electionAlg must be specified', 'localSessionsEnabled must be specified']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'clientPortAddress', 'secureClientPort', 'secureClientPortAddress', 'quorumListenOnAllIPs', 'electionAlg', 'localSessionsEnabled'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port', 'clientPortAddress is not a valid address', 'secureClientPort is not a valid port', 'secureClientPortAddress is not a valid address', 'quorumListenOnAllIPs is not a valid boolean', 'electionAlg is not a valid integer', 'localSessionsEnabled is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs'], 'reason': ['The quorumListenOnAllIPs parameter is not supported in Zookeeper version 3.7.0.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort', 'clientPortAddress', 'secureClientPort', 'secureClientPortAddress', 'quorumListenOnAllIPs', 'electionAlg', 'localSessionsEnabled'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port', 'clientPortAddress is not a valid address', 'secureClientPort is not a valid port', 'secureClientPortAddress is not a valid address', 'quorumListenOnAllIPs is not a valid boolean', 'electionAlg is not a valid election algorithm', 'localSessionsEnabled is not a valid boolean']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: dataDir	dataLogDir	clientPort	clientPortAddress	secureClientPort	secureClientPortAddress	quorumListenOnAllIPs	electionAlg	localSessionsEnabled
+[Ciri] Reason for dataDir: dataDir is not a valid directory
+[Ciri] Reason for dataLogDir: dataLogDir is not a valid directory
+[Ciri] Reason for clientPort: clientPort is not a valid port
+[Ciri] Reason for clientPortAddress: clientPortAddress is not a valid address
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid port
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress is not a valid address
+[Ciri] Reason for quorumListenOnAllIPs: quorumListenOnAllIPs is not a valid boolean
+[Ciri] Reason for electionAlg: electionAlg is not a valid election algorithm
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled is not a valid boolean

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory.enabled'], 'reason': ['The value of yarn.nodemanager.resource.memory.enabled is false, but it should be true.']}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory.enabled'], 'reason': ['The value of yarn.nodemanager.resource.memory.enabled is set to false, but yarn.nodemanager.linux-container-executor.cgroups.mount is set to true. This is not allowed.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.resource.memory.enabled
+[Ciri] Reason for yarn.nodemanager.resource.memory.enabled: The value of yarn.nodemanager.resource.memory.enabled is set to false, but yarn.nodemanager.linux-container-executor.cgroups.mount is set to true. This is not allowed.

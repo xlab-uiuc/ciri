@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['temp_buffers', 'wal_keep_size', 'huge_page_size'], 'reason': ["temp_buffers value should be in kB, MB, or GB. '8BB' is not a valid unit.", 'wal_keep_size is measured in megabytes (MB) as of PostgreSQL 13, not in number of segments.', 'huge_page_size is not a valid PostgreSQL configuration parameter.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: temp_buffers	wal_keep_size	huge_page_size
+[Ciri] Reason for temp_buffers: temp_buffers value should be in kB, MB, or GB. '8BB' is not a valid unit.
+[Ciri] Reason for wal_keep_size: wal_keep_size is measured in megabytes (MB) as of PostgreSQL 13, not in number of segments.
+[Ciri] Reason for huge_page_size: huge_page_size is not a valid PostgreSQL configuration parameter.

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'quota-backend-bytes', 'max-snapshots', 'enable-pprof', 'log-level', 'discovery-fallback', 'proxy', 'initial-cluster-token'], 'reason': ['proxy-dial-timeout is not a valid property', 'quota-backend-bytes is not a valid property', 'max-snapshots is not a valid property', 'enable-pprof is not a valid property', 'log-level is not a valid property', 'discovery-fallback is not a valid property', 'proxy is not a valid property', 'initial-cluster-token is not a valid property']}
+
+{'hasError': True, 'errParameter': ['proxy'], 'reason': ['proxy is not a valid configuration parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'quota-backend-bytes', 'max-snapshots', 'enable-pprof', 'log-level', 'discovery-fallback', 'proxy', 'initial-cluster-token'], 'reason': ['proxy-dial-timeout: should be a duration', 'quota-backend-bytes: should be a size', 'max-snapshots: should be a number', 'enable-pprof: should be a boolean', 'log-level: should be a log level', 'discovery-fallback: should be a discovery fallback', 'proxy: should be a proxy', 'initial-cluster-token: should be a string']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: proxy-dial-timeout	quota-backend-bytes	max-snapshots	enable-pprof	log-level	discovery-fallback	proxy	initial-cluster-token
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout: should be a duration
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes: should be a size
+[Ciri] Reason for max-snapshots: max-snapshots is not a valid property
+[Ciri] Reason for enable-pprof: enable-pprof: should be a boolean
+[Ciri] Reason for log-level: log-level: should be a log level
+[Ciri] Reason for discovery-fallback: discovery-fallback is not a valid property
+[Ciri] Reason for proxy: proxy is not a valid property
+[Ciri] Reason for initial-cluster-token: initial-cluster-token: should be a string

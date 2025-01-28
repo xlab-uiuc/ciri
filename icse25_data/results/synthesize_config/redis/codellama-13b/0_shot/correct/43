@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'zset-max-listpack-entries', 'tls-ca-cert-dir', 'replica-announce-ip', 'auto-aof-rewrite-percentage', 'port', 'client-output-buffer-limit', 'oom-score-adj-values'], 'reason': ['rdbcompression is not a valid parameter', 'zset-max-listpack-entries is not a valid parameter', 'tls-ca-cert-dir is not a valid parameter', 'replica-announce-ip is not a valid parameter', 'auto-aof-rewrite-percentage is not a valid parameter', 'port is not a valid parameter', 'client-output-buffer-limit is not a valid parameter', 'oom-score-adj-values is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'replica-announce-ip', 'auto-aof-rewrite-percentage', 'oom-score-adj-values'], 'reason': ['tls-ca-cert-dir is not a valid parameter for redis version 7.0.0', 'replica-announce-ip is not a valid parameter for redis version 7.0.0', 'auto-aof-rewrite-percentage is not a valid parameter for redis version 7.0.0', 'oom-score-adj-values is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['tls-ca-cert-dir', 'replica-announce-ip', 'auto-aof-rewrite-percentage', 'oom-score-adj-values'], 'reason': ['tls-ca-cert-dir is not a valid parameter for redis version 7.0.0', 'replica-announce-ip is not a valid parameter for redis version 7.0.0', 'auto-aof-rewrite-percentage is not a valid parameter for redis version 7.0.0', 'oom-score-adj-values is not a valid parameter for redis version 7.0.0']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: tls-ca-cert-dir	replica-announce-ip	auto-aof-rewrite-percentage	oom-score-adj-values
+[Ciri] Reason for tls-ca-cert-dir: tls-ca-cert-dir is not a valid parameter for redis version 7.0.0
+[Ciri] Reason for replica-announce-ip: replica-announce-ip is not a valid parameter for redis version 7.0.0
+[Ciri] Reason for auto-aof-rewrite-percentage: auto-aof-rewrite-percentage is not a valid parameter for redis version 7.0.0
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values is not a valid parameter for redis version 7.0.0

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.rpc.addresses', 'alluxio.worker.tieredstore.free.ahead.bytes'], 'reason': ["Invalid value for 'alluxio.master.rpc.addresses'. It should be a valid IP address or hostname.", "Invalid value for 'alluxio.worker.tieredstore.free.ahead.bytes'. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.free.ahead.bytes', 'alluxio.master.file.access.time.updater.shutdown.timeout'], 'reason': ['Invalid property: alluxio.worker.tieredstore.free.ahead.bytes', 'Invalid property: alluxio.master.file.access.time.updater.shutdown.timeout']}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.free.ahead.bytes', 'alluxio.master.file.access.time.updater.shutdown.timeout'], 'reason': ["Incorrect property value for 'alluxio.worker.tieredstore.free.ahead.bytes'. It should be a positive integer value.", "Incorrect property value for 'alluxio.master.file.access.time.updater.shutdown.timeout'. It should be specified in milliseconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.worker.tieredstore.free.ahead.bytes	alluxio.master.file.access.time.updater.shutdown.timeout
+[Ciri] Reason for alluxio.worker.tieredstore.free.ahead.bytes: Invalid property: alluxio.worker.tieredstore.free.ahead.bytes
+[Ciri] Reason for alluxio.master.file.access.time.updater.shutdown.timeout: Invalid property: alluxio.master.file.access.time.updater.shutdown.timeout

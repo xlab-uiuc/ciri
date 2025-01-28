@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 12, 4]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.threshold'], 'reason': ["The property 'fs.s3a.multipart.threshold' has the value '128M' which uses an incorrect unit."]}
+
+{'hasError': True, 'errParameter': ['hadoop.ssl.server.conf'], 'reason': ["The property 'hadoop.ssl.server.conf' has the value '/valid/file1' which does not follow the correct URL format."]}
+
+{'hasError': True, 'errParameter': ['hadoop.ssl.server.conf'], 'reason': ["The property 'hadoop.ssl.server.conf' has the value '/valid/file1' which does not follow the correct path format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hadoop.ssl.server.conf
+[Ciri] Reason for hadoop.ssl.server.conf: The property 'hadoop.ssl.server.conf' has the value '/valid/file1' which does not follow the correct path format.

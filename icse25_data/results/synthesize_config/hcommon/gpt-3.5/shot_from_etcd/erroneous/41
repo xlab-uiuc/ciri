@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 3, 6]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'ipc.client.bind.wildcard.addr'], 'reason': ["The property 'hadoop.security.dns.nameserver' has the value '-1.0.0.0' which is not a valid IP address.", "The property 'ipc.client.bind.wildcard.addr' has the value 'false' which should be a boolean (true/false) instead."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.dns.nameserver	ipc.client.bind.wildcard.addr
+[Ciri] Reason for hadoop.security.dns.nameserver: The property 'hadoop.security.dns.nameserver' has the value '-1.0.0.0' which is not a valid IP address.
+[Ciri] Reason for ipc.client.bind.wildcard.addr: The property 'ipc.client.bind.wildcard.addr' has the value 'false' which should be a boolean (true/false) instead.

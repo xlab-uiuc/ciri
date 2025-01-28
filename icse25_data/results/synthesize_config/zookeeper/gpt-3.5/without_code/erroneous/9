@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 2, 1]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'autopurge.purgeInterval'], 'reason': ["The property 'secureClientPortAddress' has an invalid value '0.0.0' which does not follow the correct format.", "The property 'autopurge.purgeInterval' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'autopurge.purgeInterval'], 'reason': ["The property 'secureClientPortAddress' has the value '0.0.0' which does not follow the correct format for IP and port.", "The property 'autopurge.purgeInterval' has a negative value which is not allowed. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'autopurge.purgeInterval'], 'reason': ["The property 'secureClientPortAddress' has an invalid format. It should include both IP address and port number separated by a colon.", "The property 'autopurge.purgeInterval' has a negative value which is not allowed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPortAddress	autopurge.purgeInterval
+[Ciri] Reason for secureClientPortAddress: The property 'secureClientPortAddress' has the value '0.0.0' which does not follow the correct format for IP and port.
+[Ciri] Reason for autopurge.purgeInterval: The property 'autopurge.purgeInterval' has a negative value which is not allowed.

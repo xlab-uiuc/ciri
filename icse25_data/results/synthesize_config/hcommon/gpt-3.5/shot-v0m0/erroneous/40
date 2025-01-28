@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'fs.ftp.transfer.mode', 'ipc.[port_number].decay-scheduler.decay-factor'], 'reason': ['The value for fs.ftp.data.connection.mode should be one of ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, or PASSIVE_REMOTE_DATA_CONNECTION_MODE.', 'The value for fs.ftp.transfer.mode should be one of STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, or COMPRESSED_TRANSFER_MODE.', 'The property name ipc.[port_number].decay-scheduler.decay-factor is not a valid property name format.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.data.connection.mode	fs.ftp.transfer.mode	ipc.[port_number].decay-scheduler.decay-factor
+[Ciri] Reason for fs.ftp.data.connection.mode: The value for fs.ftp.data.connection.mode should be one of ACTIVE_LOCAL_DATA_CONNECTION_MODE, PASSIVE_LOCAL_DATA_CONNECTION_MODE, or PASSIVE_REMOTE_DATA_CONNECTION_MODE.
+[Ciri] Reason for fs.ftp.transfer.mode: The value for fs.ftp.transfer.mode should be one of STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, or COMPRESSED_TRANSFER_MODE.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.decay-factor: The property name ipc.[port_number].decay-scheduler.decay-factor is not a valid property name format.

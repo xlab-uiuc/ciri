@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable_mergejoin', 'cpu_tuple_cost', 'autovacuum_vacuum_cost_delay', 'min_wal_size', 'default_transaction_isolation', 'enable_hashjoin', 'enable_parallel_hash'], 'reason': ['enable_mergejoin is not a valid parameter for PostgreSQL 13.0', 'cpu_tuple_cost should be set to a value greater than 0', 'autovacuum_vacuum_cost_delay should be specified in seconds, not milliseconds', 'min_wal_size should be specified in bytes, not MB', "default_transaction_isolation should be set to 'read committed' without quotes", 'enable_hashjoin is not a valid parameter for PostgreSQL 13.0', 'enable_parallel_hash is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['enable_mergejoin', 'autovacuum_vacuum_cost_delay', 'min_wal_size', 'default_transaction_isolation', 'enable_parallel_hash'], 'reason': ['enable_mergejoin is not a valid parameter for PostgreSQL 13.0.', "autovacuum_vacuum_cost_delay value should be specified in milliseconds, e.g., '1ms'.", "min_wal_size value should be specified with units, e.g., '80MB'.", "default_transaction_isolation should be set to 'read committed' without quotes.", 'enable_parallel_hash is not a valid parameter for PostgreSQL 13.0.']}
+
+{'hasError': True, 'errParameter': ['enable_mergejoin', 'cpu_tuple_cost', 'autovacuum_vacuum_cost_delay', 'min_wal_size', 'default_transaction_isolation', 'enable_hashjoin', 'enable_parallel_hash'], 'reason': ['enable_mergejoin is not a valid parameter for PostgreSQL 13.0', 'cpu_tuple_cost should be a positive value greater than zero', 'autovacuum_vacuum_cost_delay should be specified in milliseconds', 'min_wal_size should be specified in bytes', "default_transaction_isolation should be set to 'read committed' without quotes", 'enable_hashjoin is not a valid parameter for PostgreSQL 13.0', 'enable_parallel_hash is not a valid parameter for PostgreSQL 13.0']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: enable_mergejoin	cpu_tuple_cost	autovacuum_vacuum_cost_delay	min_wal_size	default_transaction_isolation	enable_hashjoin	enable_parallel_hash
+[Ciri] Reason for enable_mergejoin: enable_mergejoin is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for cpu_tuple_cost: cpu_tuple_cost should be set to a value greater than 0
+[Ciri] Reason for autovacuum_vacuum_cost_delay: autovacuum_vacuum_cost_delay should be specified in milliseconds
+[Ciri] Reason for min_wal_size: min_wal_size should be specified in bytes
+[Ciri] Reason for default_transaction_isolation: default_transaction_isolation should be set to 'read committed' without quotes
+[Ciri] Reason for enable_hashjoin: enable_hashjoin is not a valid parameter for PostgreSQL 13.0
+[Ciri] Reason for enable_parallel_hash: enable_parallel_hash is not a valid parameter for PostgreSQL 13.0

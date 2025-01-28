@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 10, 1]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.permissions.ContentSummary.subAccess', 'dfs.namenode.safemode.extension'], 'reason': ["The property 'dfs.permissions.ContentSummary.subAccess' is not a recognized configuration parameter in HDFS version 3.3.0.", "The property 'dfs.namenode.safemode.extension' does not support multiple time unit suffixes as described. It only accepts time in milliseconds without any suffix."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.permissions.ContentSummary.subAccess	dfs.namenode.safemode.extension
+[Ciri] Reason for dfs.permissions.ContentSummary.subAccess: The property 'dfs.permissions.ContentSummary.subAccess' is not a recognized configuration parameter in HDFS version 3.3.0.
+[Ciri] Reason for dfs.namenode.safemode.extension: The property 'dfs.namenode.safemode.extension' does not support multiple time unit suffixes as described. It only accepts time in milliseconds without any suffix.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 11, 9]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode', 'ipc.client.rpc-timeout.ms'], 'reason': ["The property 'fs.permissions.umask-mode' has the value '999' which is not a valid umask value. Valid umask values are in the range from '000' to '777'.", "The property 'ipc.client.rpc-timeout.ms' has the value '1' which might be too low for practical use, potentially leading to frequent timeouts. While technically not incorrect, it is recommended to use a higher value for network stability."]}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode', 'ipc.client.rpc-timeout.ms'], 'reason': ["The property 'fs.permissions.umask-mode' has the value '999' which is not a valid umask value.", "The property 'ipc.client.rpc-timeout.ms' has the value '1' which is too low, potentially leading to premature timeouts."]}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode', 'ipc.client.rpc-timeout.ms'], 'reason': ["The property 'fs.permissions.umask-mode' has the value '999' which is not a valid umask value.", "The property 'ipc.client.rpc-timeout.ms' has the value '1' which is too low, potentially leading to premature timeouts."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.permissions.umask-mode	ipc.client.rpc-timeout.ms
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has the value '999' which is not a valid umask value.
+[Ciri] Reason for ipc.client.rpc-timeout.ms: The property 'ipc.client.rpc-timeout.ms' has the value '1' which is too low, potentially leading to premature timeouts.

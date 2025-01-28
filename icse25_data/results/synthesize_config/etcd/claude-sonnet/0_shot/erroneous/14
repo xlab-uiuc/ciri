@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'advertise-client-urls', 'listen-peer-urls', 'proxy-refresh-interval', 'proxy'], 'reason': ['proxy-failure-wait should be a positive integer value representing the time (in milliseconds) an endpoint will be waited upon having temporarily failed to respond.', "advertise-client-urls and listen-peer-urls should use the URL scheme 'http://ip:port' or 'https://ip:port' for production clusters. Using 'localhost' is not recommended.", 'proxy-refresh-interval is typically set to 30000 (30 seconds) or higher. A value of 15000 may cause excessive refreshing.', "The 'proxy' parameter is deprecated in etcd 3.5.0 and should be removed."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: proxy-failure-wait	advertise-client-urls	listen-peer-urls	proxy-refresh-interval	proxy
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait should be a positive integer value representing the time (in milliseconds) an endpoint will be waited upon having temporarily failed to respond.
+[Ciri] Reason for advertise-client-urls: advertise-client-urls and listen-peer-urls should use the URL scheme 'http://ip:port' or 'https://ip:port' for production clusters. Using 'localhost' is not recommended.
+[Ciri] Reason for listen-peer-urls: proxy-refresh-interval is typically set to 30000 (30 seconds) or higher. A value of 15000 may cause excessive refreshing.
+[Ciri] Reason for proxy-refresh-interval: The 'proxy' parameter is deprecated in etcd 3.5.0 and should be removed.
+[Ciri] Reason for proxy: 

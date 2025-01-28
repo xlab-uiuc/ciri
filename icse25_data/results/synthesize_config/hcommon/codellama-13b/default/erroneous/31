@@ -1,0 +1,18 @@
+Wrong shot number:
+[11, 8, 16]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.connection.timeout.ms'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.connection.timeout.ms' has the value '120000' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.aws.credentials.provider'], 'reason': ["The property 'fs.s3a.aws.credentials.provider' has the value 'org.apache.hadoop.fs.s3a.TemporaryAWSCredentialsProvider,org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider,com.amazonaws.auth.EnvironmentVariableCredentialsProvider,org.apache.hadoop.fs.s3a.auth.IAMInstanceCredentialsProvider' which is not a valid class name."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.aws.credentials.provider'], 'reason': ["The property 'fs.s3a.aws.credentials.provider' has the value 'org.apache.hadoop.fs.s3a.TemporaryAWSCredentialsProvider,org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider,com.amazonaws.auth.EnvironmentVariableCredentialsProvider,org.apache.hadoop.fs.s3a.auth.IAMInstanceCredentialsProvider' which is not a valid class name."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.s3a.aws.credentials.provider
+[Ciri] Reason for fs.s3a.aws.credentials.provider: The property 'fs.s3a.aws.credentials.provider' has the value 'org.apache.hadoop.fs.s3a.TemporaryAWSCredentialsProvider,org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider,com.amazonaws.auth.EnvironmentVariableCredentialsProvider,org.apache.hadoop.fs.s3a.auth.IAMInstanceCredentialsProvider' which is not a valid class name.

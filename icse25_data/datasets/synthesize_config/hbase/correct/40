@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.port</name>
+  <value>3001</value>
+    <description>The port the HBase Master should bind to.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.hlog.reader.impl</name>
+  <value>org.apache.hadoop.hbase.regionserver.wal.ProtobufLogReader</value>
+    <description>The WAL file reader implementation.</description>
+</property>
+
+<property>
+  <name>hbase.client.perserver.requests.threshold</name>
+  <value>2147483647</value>
+    <description>The max number of concurrent pending requests for one server in all client threads
+    (process level). Exceeding requests will be thrown ServerTooBusyException immediately to prevent
+    user's threads being occupied and blocked by only one slow region server. If you use a fix
+    number of threads to access HBase in a synchronous way, set this to a suitable value which is
+    related to the number of threads will help you. See
+    https://issues.apache.org/jira/browse/HBASE-16388 for details.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.min.size</name>
+  <value>67108864</value>
+    <description>A StoreFile (or a selection of StoreFiles, when using ExploringCompactionPolicy)
+      smaller than this size will always be eligible for minor compaction.
+      HFiles this size or larger are evaluated by hbase.hstore.compaction.ratio to determine if
+      they are eligible. Because this limit represents the "automatic include" limit for all
+      StoreFiles smaller than this value, this value may need to be reduced in write-heavy
+      environments where many StoreFiles in the 1-2 MB range are being flushed, because every
+      StoreFile will be targeted for compaction and the resulting StoreFiles may still be under the
+      minimum size and require further compaction. If this parameter is lowered, the ratio check is
+      triggered more quickly. This addressed some issues seen in earlier versions of HBase but
+      changing this parameter is no longer necessary in most situations. Default: 128 MB expressed
+      in bytes.</description>
+</property>
+
+<property>
+  <name>hbase.cells.scanned.per.heartbeat.check</name>
+  <value>20000</value>
+    <description>The number of cells scanned in between heartbeat checks. Heartbeat
+        checks occur during the processing of scans to determine whether or not the
+        server should stop scanning in order to send back a heartbeat message to the
+        client. Heartbeat messages are used to keep the client-server connection alive
+        during long running scans. Small values mean that the heartbeat checks will
+        occur more often and thus will provide a tighter bound on the execution time of
+        the scan. Larger values mean that the heartbeat checks occur less frequently
+        </description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.fallback-to-simple-auth-allowed</name>
+  <value>true</value>
+    <description>When a server is configured to require secure connections, it will
+      reject connection attempts from clients using SASL SIMPLE (unsecure) authentication.
+      This setting allows secure servers to accept SASL SIMPLE connections from clients
+      when the client requests.  When false (the default), the server will not allow the fallback
+      to SIMPLE authentication, and will reject the connection.  WARNING: This setting should ONLY
+      be used as a temporary measure while converting clients over to secure authentication.  It
+      MUST BE DISABLED for secure operation.</description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.max.result.size</name>
+  <value>4194304</value>
+    <description>Maximum number of bytes returned when calling a scanner's next method.
+    Note that when a single row is larger than this limit the row is still returned completely.
+    The default value is 2MB, which is good for 1ge networks.
+    With faster and/or high latency networks this value should be increased.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest.csrf.enabled</name>
+  <value>true</value>
+  <description>
+    Set to true to enable protection against cross-site request forgery (CSRF)
+	</description>
+</property>
+
+</configuration>

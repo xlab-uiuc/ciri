@@ -1,0 +1,33 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'enable-pprof'], 'reason': ['max-wals is not a valid parameter for etcd version 3.5.0', 'enable-pprof is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'auto-tls', 'max-wals', 'initial-advertise-peer-urls'], 'reason': ['listen-client-urls should use HTTPS instead of HTTP for security reasons.', 'auto-tls should be set to true for enabling TLS encryption.', 'max-wals should have a value greater than 1 for better performance.', 'initial-advertise-peer-urls should use HTTPS instead of HTTP for security reasons.']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'log-level', 'enable-pprof', 'initial-advertise-peer-urls', 'election-timeout', 'logger'], 'reason': ['max-wals is not a valid parameter for etcd configuration.', "log-level should be one of the valid log levels like 'info', 'debug', 'warn', 'error', etc.", 'enable-pprof should be a boolean value (true/false).', "initial-advertise-peer-urls should use the format 'https://<host>:<port>' for secure communication.", 'election-timeout should be specified in milliseconds.', 'logger should be a valid logging configuration.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'log-level', 'enable-pprof'], 'reason': ['max-wals should be an integer value greater than 1.', 'log-level should be one of the supported log levels.', 'enable-pprof should be a boolean value.']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'log-level', 'enable-pprof', 'initial-advertise-peer-urls', 'election-timeout', 'logger'], 'reason': ['max-wals should be an integer value greater than 1.', 'log-level should be one of the supported log levels (info, debug, warn, error).', 'enable-pprof should be a boolean value (true or false).', "initial-advertise-peer-urls should use the format 'https://<host>:<port>'.", 'election-timeout should be an integer value greater than 0.', 'logger should be a valid logger configuration.']}
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'initial-advertise-peer-urls'], 'reason': ['listen-client-urls should use https instead of http for security reasons.', 'initial-advertise-peer-urls should use https instead of http for security reasons.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'log-level', 'enable-pprof'], 'reason': ['max-wals should be an integer value greater than 1.', 'log-level should be one of the supported log levels (info, debug, warn, error, dpanic, panic, fatal).', 'enable-pprof should be a boolean value (true or false).']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'log-level', 'enable-pprof', 'initial-advertise-peer-urls', 'election-timeout', 'logger'], 'reason': ['max-wals is not a valid parameter for etcd configuration.', "log-level should be one of: 'info', 'debug', 'warn', 'error'.", 'enable-pprof should be a boolean value.', "initial-advertise-peer-urls should use the 'https' scheme for secure communication.", 'election-timeout should be a duration value.', 'logger is not a valid parameter for etcd configuration.']}
+
+{'hasError': True, 'errParameter': ['max-wals', 'log-level', 'enable-pprof', 'initial-advertise-peer-urls', 'election-timeout', 'logger'], 'reason': ['max-wals is not a valid parameter for etcd configuration', "log-level should be one of: 'info', 'debug', 'warn', 'error'", 'enable-pprof should be a boolean value', "initial-advertise-peer-urls should use 'https' instead of 'http'", 'election-timeout should be specified in milliseconds', 'logger should be configured with valid settings']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: max-wals	log-level	enable-pprof	initial-advertise-peer-urls	election-timeout	logger
+[Ciri] Reason for max-wals: max-wals is not a valid parameter for etcd configuration.
+[Ciri] Reason for log-level: log-level should be one of: 'info', 'debug', 'warn', 'error'
+[Ciri] Reason for enable-pprof: enable-pprof should be a boolean value
+[Ciri] Reason for initial-advertise-peer-urls: initial-advertise-peer-urls should use the 'https' scheme for secure communication.
+[Ciri] Reason for election-timeout: election-timeout should be a duration value.
+[Ciri] Reason for logger: logger is not a valid parameter for etcd configuration.

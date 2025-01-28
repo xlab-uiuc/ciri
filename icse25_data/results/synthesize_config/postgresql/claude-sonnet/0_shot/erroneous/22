@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_cert_file', 'ssl_min_protocol_version'], 'reason': ["The 'ssl_cert_file' parameter requires the full path to the server certificate file. The value 'server.crt' is likely missing the path.", "The 'ssl_min_protocol_version' parameter should be set to a valid SSL/TLS protocol version. The value 'TLSv1.2' is enclosed in single quotes, which is not the correct syntax."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ssl_cert_file	ssl_min_protocol_version
+[Ciri] Reason for ssl_cert_file: The 'ssl_cert_file' parameter requires the full path to the server certificate file. The value 'server.crt' is likely missing the path.
+[Ciri] Reason for ssl_min_protocol_version: The 'ssl_min_protocol_version' parameter should be set to a valid SSL/TLS protocol version. The value 'TLSv1.2' is enclosed in single quotes, which is not the correct syntax.

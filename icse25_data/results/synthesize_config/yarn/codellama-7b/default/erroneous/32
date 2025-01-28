@@ -1,0 +1,26 @@
+Wrong shot number:
+[8, 2, 1]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.router.webapp.https.address'], 'reason': ["The property 'yarn.router.webapp.https.address' has the value '0.0.0.0:8091' which does not follow the correct format."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.webapp.ui-actions.enabled'], 'reason': ["The value of the property 'yarn.resourcemanager.webapp.ui-actions.enabled' should be 'false' to disable the property 'yarn.webapp.ui2.enable'."]}
+
+{'hasError': True, 'errParameter': ['yarn.acl.enable'], 'reason': ["The value of the property 'yarn.acl.enable' should be 'true' to enable the property 'yarn.admin.acl'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.webapp.ui2.enable'], 'reason': ["The value of the property 'yarn.webapp.ui2.enable' should be 'true' to enable the property 'yarn.resourcemanager.webapp.ui-actions.enabled'."]}
+
+{'hasError': True, 'errParameter': ['yarn.webapp.ui2.enable'], 'reason': ["The value of the property 'yarn.webapp.ui2.enable' should be 'true' to enable the property 'yarn.resourcemanager.webapp.ui-actions.enabled'."]}
+
+{'hasError': True, 'errParameter': ['yarn.acl.enable'], 'reason': ["The value of the property 'yarn.acl.enable' should be 'true' to enable the property 'yarn.admin.acl'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.webapp.ui2.enable
+[Ciri] Reason for yarn.webapp.ui2.enable: The value of the property 'yarn.webapp.ui2.enable' should be 'true' to enable the property 'yarn.resourcemanager.webapp.ui-actions.enabled'.

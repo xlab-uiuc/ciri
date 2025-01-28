@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.ipc.server.callqueue.scan.ratio', 'hbase.hstore.compaction.max.size'], 'reason': ['The value of hbase.ipc.server.callqueue.scan.ratio should be between 0 and 1, but it is set to -1 which is invalid.', 'The value of hbase.hstore.compaction.max.size is set to 130000000, which is lower than the default value of Long.MAX_VALUE. This may cause issues with compaction and should be set to a higher value or left at the default.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.ipc.server.callqueue.scan.ratio	hbase.hstore.compaction.max.size
+[Ciri] Reason for hbase.ipc.server.callqueue.scan.ratio: The value of hbase.ipc.server.callqueue.scan.ratio should be between 0 and 1, but it is set to -1 which is invalid.
+[Ciri] Reason for hbase.hstore.compaction.max.size: The value of hbase.hstore.compaction.max.size is set to 130000000, which is lower than the default value of Long.MAX_VALUE. This may cause issues with compaction and should be set to a higher value or left at the default.

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.local.dir</name>
+  <value>/valid/file2</value>
+    <description>Directory on the local filesystem to be used
+    as a local storage.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.regionSplitLimit</name>
+  <value>2000</value>
+    <description>
+      Limit for the number of regions after which no more region splitting
+      should take place. This is not hard limit for the number of regions
+      but acts as a guideline for the regionserver to stop splitting after
+      a certain limit. Default is set to 1000.
+    </description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.peerport</name>
+  <value>5776</value>
+    <description>Port used by ZooKeeper peers to talk to each other.
+    See https://zookeeper.apache.org/doc/r3.3.3/zookeeperStarted.html#sc_RunningReplicatedZooKeeper
+    for more information.</description>
+</property>
+
+<property>
+  <name>hbase.offpeak.end.hour</name>
+  <value>-2</value>
+    <description>The end of off-peak hours, expressed as an integer between 0 and 23, inclusive. Set
+      to -1 to disable off-peak.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.majorcompaction.pagecache.drop</name>
+  <value>true</value>
+    <description>Specifies whether to drop pages read/written into the system page cache by
+      major compactions. Setting it to true helps prevent major compactions from
+      polluting the page cache, which is almost always required, especially for clusters
+      with low/moderate memory to storage ratio.</description>
+</property>
+
+<property>
+  <name>hbase.auth.key.update.interval</name>
+  <value>86400000</value>
+    <description>The update interval for master key for authentication tokens
+    in servers in milliseconds.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>dfs.domain.socket.path</name>
+  <value>/valid/file2</value>
+    <description>
+      This is a path to a UNIX domain socket that will be used for
+      communication between the DataNode and local HDFS clients, if
+      dfs.client.read.shortcircuit is set to true. If the string "_PORT" is
+      present in this path, it will be replaced by the TCP port of the DataNode.
+      Be careful about permissions for the directory that hosts the shared
+      domain socket; dfsclient will complain if open to other users than the HBase user.
+    </description>
+</property>
+
+<property>
+  <name>hbase.server.scanner.max.result.size</name>
+  <value>209715200</value>
+    <description>Maximum number of bytes returned when calling a scanner's next method.
+    Note that when a single row is larger than this limit the row is still returned completely.
+    The default value is 100MB.
+    This is a safety setting to protect the server from OOM situations.
+    </description>
+</property>
+
+</configuration>

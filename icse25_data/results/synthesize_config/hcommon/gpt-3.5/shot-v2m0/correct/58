@@ -1,0 +1,13 @@
+Correct shot number:
+[9, 12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.map.index.skip', 'ipc.[port_number].backoff.enable', 'hadoop.registry.secure'], 'reason': ["Invalid property name 'io.map.index.skip'. Property names should not contain special characters like '[' or ']'", "Invalid property name 'ipc.[port_number].backoff.enable'. Property names should not contain special characters like '[' or ']'", "Invalid property name 'hadoop.registry.secure'. Property names should not contain special characters like '[' or ']'"]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: io.map.index.skip	ipc.[port_number].backoff.enable	hadoop.registry.secure
+[Ciri] Reason for io.map.index.skip: Invalid property name 'io.map.index.skip'. Property names should not contain special characters like '[' or ']'
+[Ciri] Reason for ipc.[port_number].backoff.enable: Invalid property name 'ipc.[port_number].backoff.enable'. Property names should not contain special characters like '[' or ']'
+[Ciri] Reason for hadoop.registry.secure: Invalid property name 'hadoop.registry.secure'. Property names should not contain special characters like '[' or ']'

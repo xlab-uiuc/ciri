@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy', 'heartbeat-interval', 'advertise-client-urls', 'initial-advertise-peer-urls', 'enable-v2', 'proxy-write-timeout', 'auto-compaction-retention'], 'reason': ["'proxy' is not a valid configuration parameter for etcd v3.5.0. The 'proxy' flag was removed in v3.5.0.", "'heartbeat-interval' is not a valid configuration parameter for etcd v3.5.0. It was renamed to '--heartbeat-interval' and moved under the 'embed' section.", "'advertise-client-urls' is not a valid configuration parameter for etcd v3.5.0. It was renamed to '--advertise-client-urls' and moved under the 'embed' section.", "'initial-advertise-peer-urls' is not a valid configuration parameter for etcd v3.5.0. It was renamed to '--initial-advertise-peer-urls' and moved under the 'embed' section.", "'enable-v2' is not a valid configuration parameter for etcd v3.5.0. The v2 API was deprecated and cannot be enabled in v3.5.0.", "'proxy-write-timeout' is not a valid configuration parameter for etcd v3.5.0. It was removed in v3.5.0.", "'auto-compaction-retention' is not a valid configuration parameter for etcd v3.5.0. It was renamed to '--auto-compaction-mode' and '--auto-compaction-retention' under the 'embed' section."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: proxy	heartbeat-interval	advertise-client-urls	initial-advertise-peer-urls	enable-v2	proxy-write-timeout	auto-compaction-retention
+[Ciri] Reason for proxy: 'proxy' is not a valid configuration parameter for etcd v3.5.0. The 'proxy' flag was removed in v3.5.0.
+[Ciri] Reason for heartbeat-interval: 'heartbeat-interval' is not a valid configuration parameter for etcd v3.5.0. It was renamed to '--heartbeat-interval' and moved under the 'embed' section.
+[Ciri] Reason for advertise-client-urls: 'advertise-client-urls' is not a valid configuration parameter for etcd v3.5.0. It was renamed to '--advertise-client-urls' and moved under the 'embed' section.
+[Ciri] Reason for initial-advertise-peer-urls: 'initial-advertise-peer-urls' is not a valid configuration parameter for etcd v3.5.0. It was renamed to '--initial-advertise-peer-urls' and moved under the 'embed' section.
+[Ciri] Reason for enable-v2: 'enable-v2' is not a valid configuration parameter for etcd v3.5.0. The v2 API was deprecated and cannot be enabled in v3.5.0.
+[Ciri] Reason for proxy-write-timeout: 'proxy-write-timeout' is not a valid configuration parameter for etcd v3.5.0. It was removed in v3.5.0.
+[Ciri] Reason for auto-compaction-retention: 'auto-compaction-retention' is not a valid configuration parameter for etcd v3.5.0. It was renamed to '--auto-compaction-mode' and '--auto-compaction-retention' under the 'embed' section.

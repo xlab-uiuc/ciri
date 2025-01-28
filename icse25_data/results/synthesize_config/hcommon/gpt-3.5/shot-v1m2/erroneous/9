@@ -1,0 +1,15 @@
+Wrong shot number:
+[3, 10]
+
+Correct shot number:
+[15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.defaultFS'], 'reason': ["The property 'io.seqfile.local.dir' has the value '//hadoop/io/local' which does not follow the correct path format.", "The property 'fs.defaultFS' has the value 'file:///' which is not within the accepted value {hdfs://, viewfs://, file://, etc.}."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.seqfile.local.dir	fs.defaultFS
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' has the value '//hadoop/io/local' which does not follow the correct path format.
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has the value 'file:///' which is not within the accepted value {hdfs://, viewfs://, file://, etc.}.

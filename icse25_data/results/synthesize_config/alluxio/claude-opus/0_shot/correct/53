@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.lock.pool.high.watermark', 'alluxio.master.embedded.journal.retry.cache.expiry.time', 'alluxio.job.master.finished.job.retention.time'], 'reason': ["Property 'alluxio.master.lock.pool.high.watermark' is deprecated since version 2.0.0 and removed in version 2.5.0.", "Property 'alluxio.master.embedded.journal.retry.cache.expiry.time' is not a valid configuration property in Alluxio version 2.5.0.", "The unit 'sec' in 'alluxio.job.master.finished.job.retention.time' is invalid. It should be 'ms', 's', 'm', 'h', or 'd' instead."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.master.lock.pool.high.watermark	alluxio.master.embedded.journal.retry.cache.expiry.time	alluxio.job.master.finished.job.retention.time
+[Ciri] Reason for alluxio.master.lock.pool.high.watermark: Property 'alluxio.master.lock.pool.high.watermark' is deprecated since version 2.0.0 and removed in version 2.5.0.
+[Ciri] Reason for alluxio.master.embedded.journal.retry.cache.expiry.time: Property 'alluxio.master.embedded.journal.retry.cache.expiry.time' is not a valid configuration property in Alluxio version 2.5.0.
+[Ciri] Reason for alluxio.job.master.finished.job.retention.time: The unit 'sec' in 'alluxio.job.master.finished.job.retention.time' is invalid. It should be 'ms', 's', 'm', 'h', or 'd' instead.

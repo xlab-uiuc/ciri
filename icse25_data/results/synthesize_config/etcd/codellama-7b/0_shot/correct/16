@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'snapshot-count', 'discovery-fallback', 'strict-reconfig-check'], 'reason': ['proxy-write-timeout is an invalid property', 'snapshot-count is an invalid property', 'discovery-fallback is an invalid property', 'strict-reconfig-check is an invalid property']}
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'auto-compaction-mode', 'discovery-fallback', 'strict-reconfig-check'], 'reason': ['proxy-write-timeout: 2500 is not a valid value for proxy-write-timeout. It should be a positive integer.', 'auto-compaction-mode: periodic is not a valid value for auto-compaction-mode. It should be a valid auto-compaction-mode.', 'discovery-fallback: proxy is not a valid value for discovery-fallback. It should be a valid discovery-fallback.', 'strict-reconfig-check: true is not a valid value for strict-reconfig-check. It should be a boolean.']}
+
+{'hasError': True, 'errParameter': ['proxy-write-timeout', 'snapshot-count', 'discovery-fallback', 'strict-reconfig-check'], 'reason': ['proxy-write-timeout: 2500 is not a valid value for proxy-write-timeout. The valid range is [1000, 5000].', 'snapshot-count: 10000 is not a valid value for snapshot-count. The valid range is [1000, 100000].', "discovery-fallback: 'proxy' is not a valid value for discovery-fallback. The valid values are 'proxy' and 'outlier'.", "strict-reconfig-check: true is not a valid value for strict-reconfig-check. The valid values are 'true' and 'false'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: proxy-write-timeout	snapshot-count	discovery-fallback	strict-reconfig-check
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout: 2500 is not a valid value for proxy-write-timeout. The valid range is [1000, 5000].
+[Ciri] Reason for snapshot-count: snapshot-count is an invalid property
+[Ciri] Reason for discovery-fallback: discovery-fallback is an invalid property
+[Ciri] Reason for strict-reconfig-check: strict-reconfig-check: true is not a valid value for strict-reconfig-check. The valid values are 'true' and 'false'.

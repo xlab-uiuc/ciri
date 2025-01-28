@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 4, 2]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.committer.name', 'ipc.client.kill.max', 'hadoop.http.cross-origin.allowed-headers', 'fs.permissions.umask-mode', 'fs.client.resolve.topology.enabled', 'ipc.client.bind.wildcard.addr'], 'reason': ["The property 'fs.s3a.committer.name' has the value 'file' which may not be a valid option for the current version.", "The property 'ipc.client.kill.max' has the value '10' which may not be appropriate for the current version.", "The property 'hadoop.http.cross-origin.allowed-headers' has the value 'X-Requested-With' which may not be applicable for the current version.", "The property 'fs.permissions.umask-mode' has the value 'hadoop' which may not be a valid umask mode for the current version.", "The property 'fs.client.resolve.topology.enabled' has the value 'false' which may not be suitable for the current version.", "The property 'ipc.client.bind.wildcard.addr' has the value 'true' which may not be recommended for the current version."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.s3a.committer.name	ipc.client.kill.max	hadoop.http.cross-origin.allowed-headers	fs.permissions.umask-mode	fs.client.resolve.topology.enabled	ipc.client.bind.wildcard.addr
+[Ciri] Reason for fs.s3a.committer.name: The property 'fs.s3a.committer.name' has the value 'file' which may not be a valid option for the current version.
+[Ciri] Reason for ipc.client.kill.max: The property 'ipc.client.kill.max' has the value '10' which may not be appropriate for the current version.
+[Ciri] Reason for hadoop.http.cross-origin.allowed-headers: The property 'hadoop.http.cross-origin.allowed-headers' has the value 'X-Requested-With' which may not be applicable for the current version.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has the value 'hadoop' which may not be a valid umask mode for the current version.
+[Ciri] Reason for fs.client.resolve.topology.enabled: The property 'fs.client.resolve.topology.enabled' has the value 'false' which may not be suitable for the current version.
+[Ciri] Reason for ipc.client.bind.wildcard.addr: The property 'ipc.client.bind.wildcard.addr' has the value 'true' which may not be recommended for the current version.

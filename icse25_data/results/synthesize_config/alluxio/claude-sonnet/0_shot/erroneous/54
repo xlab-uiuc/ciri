@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.default.mode=1400', 'alluxio.job.worker.web.port=3000'], 'reason': ["The property 'alluxio.underfs.s3.default.mode' is not a valid Alluxio configuration property in version 2.5.0. The correct property for setting the default mode for S3 objects is 'alluxio.underfs.s3.default.mode.perm'.", "The property 'alluxio.job.worker.web.port' is not a valid Alluxio configuration property in version 2.5.0. There is no such property for configuring the web port of the job worker."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.s3.default.mode=1400	alluxio.job.worker.web.port=3000
+[Ciri] Reason for alluxio.underfs.s3.default.mode=1400: The property 'alluxio.underfs.s3.default.mode' is not a valid Alluxio configuration property in version 2.5.0. The correct property for setting the default mode for S3 objects is 'alluxio.underfs.s3.default.mode.perm'.
+[Ciri] Reason for alluxio.job.worker.web.port=3000: The property 'alluxio.job.worker.web.port' is not a valid Alluxio configuration property in version 2.5.0. There is no such property for configuring the web port of the job worker.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.dir', 'dfs.datanode.drop.cache.behind.writes'], 'reason': ["Invalid value for dfs.namenode.checkpoint.dir. It should not contain double colons ':::'", "Invalid value for dfs.datanode.drop.cache.behind.writes. The value should be 'true' or 'false'."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.dir'], 'reason': ['Invalid value for dfs.namenode.checkpoint.dir. It should not have extra colons. Correct the value.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.dir', 'dfs.datanode.drop.cache.behind.writes'], 'reason': ['Invalid value for dfs.namenode.checkpoint.dir. It should not contain extra colons.', "Invalid value for dfs.datanode.drop.cache.behind.writes. The value should be 'true' or 'false'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.checkpoint.dir	dfs.datanode.drop.cache.behind.writes
+[Ciri] Reason for dfs.namenode.checkpoint.dir: Invalid value for dfs.namenode.checkpoint.dir. It should not contain double colons ':::'
+[Ciri] Reason for dfs.datanode.drop.cache.behind.writes: Invalid value for dfs.datanode.drop.cache.behind.writes. The value should be 'true' or 'false'.

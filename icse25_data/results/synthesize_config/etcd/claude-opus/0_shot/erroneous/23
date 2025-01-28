@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log-level', 'advertise-client-urls', 'enable-pprof', 'election-timeout'], 'reason': ["log-level: The specified value 'NOEXIST_LEVEL' is not a valid log level. Valid options are: debug, info, warn, error, panic, or fatal.", "advertise-client-urls: The URL scheme should be 'http://' instead of 'http:/'. The correct format is 'http://<IP>:<port>'.", "enable-pprof: The 'enable-pprof' parameter is deprecated in etcd v3.5.0. Use '--enable-grpc-gateway' instead to enable the gRPC gateway, which includes pprof endpoints.", 'election-timeout: The specified value of 1000 is too low. It is recommended to have a minimum value of 1000ms (1s). A very low election timeout can cause unnecessary leader elections.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: log-level	advertise-client-urls	enable-pprof	election-timeout
+[Ciri] Reason for log-level: log-level: The specified value 'NOEXIST_LEVEL' is not a valid log level. Valid options are: debug, info, warn, error, panic, or fatal.
+[Ciri] Reason for advertise-client-urls: advertise-client-urls: The URL scheme should be 'http://' instead of 'http:/'. The correct format is 'http://<IP>:<port>'.
+[Ciri] Reason for enable-pprof: enable-pprof: The 'enable-pprof' parameter is deprecated in etcd v3.5.0. Use '--enable-grpc-gateway' instead to enable the gRPC gateway, which includes pprof endpoints.
+[Ciri] Reason for election-timeout: election-timeout: The specified value of 1000 is too low. It is recommended to have a minimum value of 1000ms (1s). A very low election timeout can cause unnecessary leader elections.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 10, 4]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.stream.cache.timeout', 'alluxio.job.master.finished.job.purge.count'], 'reason': ["The property 'alluxio.proxy.stream.cache.timeout' has the value '6HR' which is not in a valid time format.", "The property 'alluxio.job.master.finished.job.purge.count' has the value '-2' which should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.stream.cache.timeout', 'alluxio.job.master.finished.job.purge.count'], 'reason': ["The property 'alluxio.proxy.stream.cache.timeout' has the value '6HR' which is not in a valid time format.", "The property 'alluxio.job.master.finished.job.purge.count' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.stream.cache.timeout', 'alluxio.job.master.finished.job.purge.count'], 'reason': ["The property 'alluxio.proxy.stream.cache.timeout' has the value '6HR' which is not in a valid time format.", "The property 'alluxio.job.master.finished.job.purge.count' has a negative value which is not allowed."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.proxy.stream.cache.timeout	alluxio.job.master.finished.job.purge.count
+[Ciri] Reason for alluxio.proxy.stream.cache.timeout: The property 'alluxio.proxy.stream.cache.timeout' has the value '6HR' which is not in a valid time format.
+[Ciri] Reason for alluxio.job.master.finished.job.purge.count: The property 'alluxio.job.master.finished.job.purge.count' has a negative value which is not allowed.

@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.bind.password.file</name>
+  <value>/valid/file1</value>
+  <description>
+    The path to a file containing the password of the bind user. If
+    the password is not configured in credential providers and the property
+    hadoop.security.group.mapping.ldap.bind.password is not set,
+    LDAPGroupsMapping reads password from the file.
+
+    IMPORTANT: This file should be readable only by the Unix user running
+    the daemons and should be a local file.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.ddb.table.create</name>
+  <value>false</value>
+  <description>
+    If true, the S3A client will create the table if it does not already exist.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.csv.record.delimiter</name>
+  <value>\n</value>
+  <description>In S3 Select queries over CSV files: the record delimiter.
+    \t is remapped to the TAB character, \r to CR \n to newline. \\ to \
+    and \" to "
+  </description>
+</property>
+
+<property>
+  <name>ipc.client.connect.timeout</name>
+  <value>10000</value>
+  <description>Indicates the number of milliseconds a client will wait for the
+               socket to establish a server connection.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].scheduler.impl</name>
+  <value>org.apache.hadoop.ipc.DefaultRpcScheduler</value>
+  <description>The fully qualified name of a class to use as the
+    implementation of the scheduler. The default implementation is
+    org.apache.hadoop.ipc.DefaultRpcScheduler (no-op scheduler) when not using
+    FairCallQueue. If using FairCallQueue, defaults to
+    org.apache.hadoop.ipc.DecayRpcScheduler. Use
+    org.apache.hadoop.ipc.DecayRpcScheduler in conjunction with the Fair Call
+    Queue.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.cross-origin.max-age</name>
+  <value>1800</value>
+  <description>The number of seconds a pre-flighted request can be cached
+    for web services needing cross-origin (CORS) support.</description>
+</property>
+
+<property>
+  <name>ha.zookeeper.parent-znode</name>
+  <value>/hadoop-ha</value>
+  <description>
+    The ZooKeeper znode under which the ZK failover controller stores
+    its information. Note that the nameservice ID is automatically
+    appended to this znode, so it is not normally necessary to
+    configure this, even in a federated environment.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.zk.quorum</name>
+  <value>localhost:2181</value>
+    <description>
+      List of hostname:port pairs defining the
+      zookeeper quorum binding for the registry
+    </description>
+</property>
+
+</configuration>

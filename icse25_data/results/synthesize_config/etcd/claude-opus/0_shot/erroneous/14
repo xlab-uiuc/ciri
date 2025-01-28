@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'auto-compaction-retention', 'election-timeout'], 'reason': ['proxy-failure-wait is set to -1 which is an invalid value. It must be a positive integer.', 'auto-compaction-retention is set to 2 which is too low. It should be at least 1 hour expressed in seconds (3600).', 'election-timeout is set to 2000 milliseconds which is too low. It should be at least 10000ms to avoid unnecessary leader elections.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-failure-wait	auto-compaction-retention	election-timeout
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait is set to -1 which is an invalid value. It must be a positive integer.
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention is set to 2 which is too low. It should be at least 1 hour expressed in seconds (3600).
+[Ciri] Reason for election-timeout: election-timeout is set to 2000 milliseconds which is too low. It should be at least 10000ms to avoid unnecessary leader elections.

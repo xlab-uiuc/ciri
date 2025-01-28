@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.client.local.interfaces</name>
+  <value>eth2</value>
+  <description>A comma separated list of network interface names to use
+    for data transfer between the client and datanodes. When creating
+    a connection to read from or write to a datanode, the client
+    chooses one of the specified interfaces at random and binds its
+    socket to the IP of that interface. Individual names may be
+    specified as either an interface name (eg "eth0"), a subinterface
+    name (eg "eth0:0"), or an IP address (which may be specified using
+    CIDR notation to match a range of IPs).
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.fileio.profiling.sampling.percentage</name>
+  <value>0</value>
+  <description>
+    This setting controls the percentage of file I/O events which will be
+    profiled for DataNode disk statistics. The default value of 0 disables
+    disk statistics. Set to an integer value between 1 and 100 to enable disk
+    statistics.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.caching.enabled</name>
+  <value>true</value>
+  <description>
+    Set to true to enable block caching.  This flag enables the NameNode to
+    maintain a mapping of cached blocks to DataNodes via processing DataNode
+    cache reports.  Based on these reports and addition and removal of caching
+    directives, the NameNode will schedule caching and uncaching work.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.inotify.max.events.per.rpc</name>
+  <value>2000</value>
+  <description>Maximum number of events that will be sent to an inotify client
+    in a single RPC response. The default value attempts to amortize away
+    the overhead for this RPC while avoiding huge memory requirements for the
+    client and NameNode (1000 events should consume no more than 1 MB.)
+  </description>
+</property>
+
+<property>
+  <name>datanode.https.port</name>
+  <value>-1</value>
+  <description>
+    HTTPS port for DataNode.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.key.provider.cache.expiry</name>
+  <value>432000000</value>
+  <description>
+    DFS client security key cache expiration in milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.content-summary.limit</name>
+  <value>5000</value>
+  <description>
+    The maximum content summary counts allowed in one locking period. 0 or a negative number
+    means no limit (i.e. no yielding).
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.satisfier.self.retry.timeout.millis</name>
+  <value>150000</value>
+  <description>
+    If any of file related block movements not at all reported by datanode,
+    then after this timeout(in milliseconds), the item will be added back to movement needed list
+    at namenode which will be retried for block movements.
+    The default value is 5 * 60 * 1000 (5 mins)
+  </description>
+</property>
+
+</configuration>

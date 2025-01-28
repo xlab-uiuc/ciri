@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'ALLOWED_HOSTS', 'MIDDLEWARE'], 'reason': ['LOGIN_REDIRECT_URL should not point to a file scheme for security reasons.', 'ALLOWED_HOSTS should not be empty in a production environment to prevent HTTP Host header attacks.', 'MIDDLEWARE is an essential setting for Django to function properly, especially in Django 4.0; it should not be empty.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: LOGIN_REDIRECT_URL	ALLOWED_HOSTS	MIDDLEWARE
+[Ciri] Reason for LOGIN_REDIRECT_URL: LOGIN_REDIRECT_URL should not point to a file scheme for security reasons.
+[Ciri] Reason for ALLOWED_HOSTS: ALLOWED_HOSTS should not be empty in a production environment to prevent HTTP Host header attacks.
+[Ciri] Reason for MIDDLEWARE: MIDDLEWARE is an essential setting for Django to function properly, especially in Django 4.0; it should not be empty.

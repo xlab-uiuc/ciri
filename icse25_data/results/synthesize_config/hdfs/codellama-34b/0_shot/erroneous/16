@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.address', 'dfs.namenode.max.objects', 'dfs.namenode.checkpoint.dir'], 'reason': ['The datanode server address and port for data transfer should be in the format of hostname:port', 'dfs.namenode.max.objects should be a positive integer', 'dfs.namenode.checkpoint.dir should be a comma-delimited list of directories']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.datanode.address	dfs.namenode.max.objects	dfs.namenode.checkpoint.dir
+[Ciri] Reason for dfs.datanode.address: The datanode server address and port for data transfer should be in the format of hostname:port
+[Ciri] Reason for dfs.namenode.max.objects: dfs.namenode.max.objects should be a positive integer
+[Ciri] Reason for dfs.namenode.checkpoint.dir: dfs.namenode.checkpoint.dir should be a comma-delimited list of directories

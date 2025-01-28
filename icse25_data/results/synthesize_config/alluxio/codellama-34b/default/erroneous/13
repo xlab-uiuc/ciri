@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 6, 8]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.prefixes'], 'reason': ["The property 'alluxio.underfs.hdfs.prefixes' has the value 'file:/' which is not within the accepted value {hdfs://,s3://,s3n://,s3a://,swift://,oss://,glusterfs://,maprfs://}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.prefixes'], 'reason': ["The property 'alluxio.underfs.hdfs.prefixes' has the value 'file:/' which is not within the accepted value {hdfs://,s3://,s3n://,s3a://,swift://,wasb://,wasbs://,glusterfs://,maprfs://,oci://,alluxio://,alluxio-ft://,hftp://,webhdfs://,gs://,s3n://,swift://,swift+http://,swift+https://,adl://,adl/}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.hdfs.prefixes'], 'reason': ["The property 'alluxio.underfs.hdfs.prefixes' has the value 'file:/' which is not within the accepted value {hdfs://,s3://,s3n://,s3a://,swift://,wasb://,wasbs://,gs://,maprfs://,glusterfs://,oss://,alluxio://,alluxio-ft://,hftp://,webhdfs://,viewfs://}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.underfs.hdfs.prefixes
+[Ciri] Reason for alluxio.underfs.hdfs.prefixes: The property 'alluxio.underfs.hdfs.prefixes' has the value 'file:/' which is not within the accepted value {hdfs://,s3://,s3n://,s3a://,swift://,oss://,glusterfs://,maprfs://}.

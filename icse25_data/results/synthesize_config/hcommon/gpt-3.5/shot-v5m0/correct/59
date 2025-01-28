@@ -1,0 +1,13 @@
+Correct shot number:
+[9, 14, 4, 8, 1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tfile.fs.input.buffer.size', 'ha.failover-controller.cli-check.rpc-timeout.ms', 'hadoop.tags.system'], 'reason': ["The property 'tfile.fs.input.buffer.size' has an incorrect tag '<usage>'. Tags should be '<description>'.", "The property 'ha.failover-controller.cli-check.rpc-timeout.ms' has an incorrect tag '<description>'. Tags should be '<usage>'.", "The property 'hadoop.tags.system' has an incorrect tag '<usage>'. Tags should be '<description>'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tfile.fs.input.buffer.size	ha.failover-controller.cli-check.rpc-timeout.ms	hadoop.tags.system
+[Ciri] Reason for tfile.fs.input.buffer.size: The property 'tfile.fs.input.buffer.size' has an incorrect tag '<usage>'. Tags should be '<description>'.
+[Ciri] Reason for ha.failover-controller.cli-check.rpc-timeout.ms: The property 'ha.failover-controller.cli-check.rpc-timeout.ms' has an incorrect tag '<description>'. Tags should be '<usage>'.
+[Ciri] Reason for hadoop.tags.system: The property 'hadoop.tags.system' has an incorrect tag '<usage>'. Tags should be '<description>'.

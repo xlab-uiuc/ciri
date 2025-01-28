@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_SSL_HOST', 'CSRF_FAILURE_VIEW', 'DATETIME_FORMAT', 'MANAGERS'], 'reason': ['SECURE_SSL_HOST is set to None, which may not be a valid value.', 'CSRF_FAILURE_VIEW should be a string representing the view function to handle CSRF failures.', 'DATETIME_FORMAT is using an incorrect format. It should follow the Django date/time format.', 'MANAGERS is defined but ADMINS is not provided.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: SECURE_SSL_HOST	CSRF_FAILURE_VIEW	DATETIME_FORMAT	MANAGERS
+[Ciri] Reason for SECURE_SSL_HOST: SECURE_SSL_HOST is set to None, which may not be a valid value.
+[Ciri] Reason for CSRF_FAILURE_VIEW: CSRF_FAILURE_VIEW should be a string representing the view function to handle CSRF failures.
+[Ciri] Reason for DATETIME_FORMAT: DATETIME_FORMAT is using an incorrect format. It should follow the Django date/time format.
+[Ciri] Reason for MANAGERS: MANAGERS is defined but ADMINS is not provided.

@@ -1,0 +1,18 @@
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'fs.defaultFS', 'fs.s3a.socket.recv.buffer', 'fs.s3a.s3guard.ddb.background.sleep', 'fs.s3a.select.input.csv.quote.character', 'ipc.client.connection.maxidletime', 'ipc.[port_number].weighted-cost.lockfree', 'hadoop.ssl.keystores.factory.class'], 'reason': ['Invalid value for hadoop.security.dns.nameserver. The IP address should be in a valid format.', 'Invalid value for fs.defaultFS. It should be a valid file system URI.', 'Invalid value for fs.s3a.socket.recv.buffer. Value should be an integer.', 'Invalid value for fs.s3a.s3guard.ddb.background.sleep. Value should be in milliseconds.', 'Invalid value for fs.s3a.select.input.csv.quote.character. The quote character should be a single character.', 'Invalid value for ipc.client.connection.maxidletime. Value should be in milliseconds.', 'Invalid property name ipc.[port_number].weighted-cost.lockfree. Property name should not contain square brackets.', 'Invalid value for hadoop.ssl.keystores.factory.class. The class name should be valid.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hadoop.security.dns.nameserver	fs.defaultFS	fs.s3a.socket.recv.buffer	fs.s3a.s3guard.ddb.background.sleep	fs.s3a.select.input.csv.quote.character	ipc.client.connection.maxidletime	ipc.[port_number].weighted-cost.lockfree	hadoop.ssl.keystores.factory.class
+[Ciri] Reason for hadoop.security.dns.nameserver: Invalid value for hadoop.security.dns.nameserver. The IP address should be in a valid format.
+[Ciri] Reason for fs.defaultFS: Invalid value for fs.defaultFS. It should be a valid file system URI.
+[Ciri] Reason for fs.s3a.socket.recv.buffer: Invalid value for fs.s3a.socket.recv.buffer. Value should be an integer.
+[Ciri] Reason for fs.s3a.s3guard.ddb.background.sleep: Invalid value for fs.s3a.s3guard.ddb.background.sleep. Value should be in milliseconds.
+[Ciri] Reason for fs.s3a.select.input.csv.quote.character: Invalid value for fs.s3a.select.input.csv.quote.character. The quote character should be a single character.
+[Ciri] Reason for ipc.client.connection.maxidletime: Invalid value for ipc.client.connection.maxidletime. Value should be in milliseconds.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: Invalid property name ipc.[port_number].weighted-cost.lockfree. Property name should not contain square brackets.
+[Ciri] Reason for hadoop.ssl.keystores.factory.class: Invalid value for hadoop.ssl.keystores.factory.class. The class name should be valid.

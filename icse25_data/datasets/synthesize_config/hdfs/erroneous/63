@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.secondary.https-address</name>
+  <value>0.0.0.0:3001</value>
+  <description>
+    The secondary namenode HTTPS server address and port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.du.reserved.calculator</name>
+  <value>org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.ReservedSpaceCalculator$ReservedSpaceCalculatorAbsolute</value>
+  <description>Determines the class of ReservedSpaceCalculator to be used for
+    calculating disk space reservedfor non-HDFS data. The default calculator is
+    ReservedSpaceCalculatorAbsolute which will use dfs.datanode.du.reserved
+    for a static reserved number of bytes. ReservedSpaceCalculatorPercentage
+    will use dfs.datanode.du.reserved.pct to calculate the reserved number
+    of bytes based on the size of the storage. ReservedSpaceCalculatorConservative and
+    ReservedSpaceCalculatorAggressive will use their combination, Conservative will use
+    maximum, Aggressive minimum. For more details see ReservedSpaceCalculator.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.directoryscan.throttle.limit.ms.per.sec</name>
+  <value>1000</value>
+  <description>The report compilation threads are limited to only running for
+  a given number of milliseconds per second, as configured by the
+  property. The limit is taken per thread, not in aggregate, e.g. setting
+  a limit of 100ms for 4 compiler threads will result in each thread being
+  limited to 100ms, not 25ms.
+
+  Note that the throttle does not interrupt the report compiler threads, so the
+  actual running time of the threads per second will typically be somewhat
+  higher than the throttle limit, usually by no more than 20%.
+
+  Setting this limit to 1000 disables compiler thread throttling. Only
+  values between 1 and 1000 are valid. Setting an invalid value will result
+  in the throttle being disabled and an error message being logged. 1000 is
+  the default setting.
+  </description>
+</property>
+
+<property>
+  <name>dfs.edit.log.transfer.timeout</name>
+  <value>30000</value>
+  <description>
+    Socket timeout for edit log transfer in milliseconds. This timeout
+    should be configured such that normal edit log transfer for journal
+    node syncing can complete successfully.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.avoid.write.stale.datanode</name>
+  <value>true</value>
+  <description>
+    Indicate whether or not to avoid writing to &quot;stale&quot; datanodes whose 
+    heartbeat messages have not been received by the namenode 
+    for more than a specified time interval. Writes will avoid using 
+    stale datanodes unless more than a configured ratio 
+    (dfs.namenode.write.stale.datanode.ratio) of datanodes are marked as 
+    stale. See dfs.namenode.avoid.read.stale.datanode for a similar setting
+    for reads.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.file-block-storage-locations.num-threads</name>
+  <value>10</value>
+  <description>
+    Number of threads used for making parallel RPCs in DistributedFileSystem#getFileBlockStorageLocations().
+  </description>
+</property>
+
+<property>
+  <name>dfs.block.local-path-access.user</name>
+  <value>samsuper</value>
+  <description>
+    Comma separated list of the users allowed to open block files
+    on legacy short-circuit local read.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.corrupt.block.delete.immediately.enabled</name>
+  <value>true</value>
+    <description>
+      Whether the corrupt replicas should be deleted immediately, irrespective
+      of other replicas on stale storages..
+    </description>
+</property>
+
+</configuration>

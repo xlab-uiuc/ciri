@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'election-timeout'], 'reason': ['heartbeat-interval must be greater than election-timeout', 'election-timeout must be greater than heartbeat-interval']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'election-timeout', 'proxy-refresh-interval'], 'reason': ['heartbeat-interval must be greater than election-timeout', 'election-timeout must be greater than proxy-refresh-interval']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'max-wals', 'election-timeout', 'proxy-refresh-interval'], 'reason': ['heartbeat-interval should be a multiple of election-timeout', 'max-wals should be greater than 0', 'election-timeout should be greater than 0', 'proxy-refresh-interval should be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'election-timeout', 'proxy-refresh-interval'], 'reason': ['heartbeat-interval: invalid unit. Valid units are "ms", "s", "m", "h"', 'election-timeout: invalid unit. Valid units are "ms", "s", "m", "h"', 'proxy-refresh-interval: invalid unit. Valid units are "ms", "s", "m", "h"']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'election-timeout', 'proxy-refresh-interval'], 'reason': ['heartbeat-interval must be less than election-timeout', 'election-timeout must be greater than heartbeat-interval', 'proxy-refresh-interval must be greater than election-timeout']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'election-timeout', 'proxy-refresh-interval'], 'reason': ['heartbeat-interval should be greater than election-timeout', 'election-timeout should be greater than proxy-refresh-interval']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: heartbeat-interval	election-timeout	proxy-refresh-interval
+[Ciri] Reason for heartbeat-interval: heartbeat-interval should be greater than election-timeout
+[Ciri] Reason for election-timeout: election-timeout should be greater than proxy-refresh-interval
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval must be greater than election-timeout

@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'proto-max-bulk-len', 'lazyfree-lazy-user-del', 'hll-sparse-max-bytes', 'stop-writes-on-bgsave-error', 'tcp-backlog', 'enable-module-command'], 'reason': ['replica-serve-stale-data is not a valid parameter', 'proto-max-bulk-len is not a valid parameter', 'lazyfree-lazy-user-del is not a valid parameter', 'hll-sparse-max-bytes is not a valid parameter', 'stop-writes-on-bgsave-error is not a valid parameter', 'tcp-backlog is not a valid parameter', 'enable-module-command is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'proto-max-bulk-len', 'lazyfree-lazy-user-del', 'hll-sparse-max-bytes', 'stop-writes-on-bgsave-error', 'tcp-backlog', 'enable-module-command'], 'reason': ['replica-serve-stale-data is not a valid configuration directive.', 'proto-max-bulk-len is not a valid configuration directive.', 'lazyfree-lazy-user-del is not a valid configuration directive.', 'hll-sparse-max-bytes is not a valid configuration directive.', 'stop-writes-on-bgsave-error is not a valid configuration directive.', 'tcp-backlog is not a valid configuration directive.', 'enable-module-command is not a valid configuration directive.']}
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'proto-max-bulk-len', 'lazyfree-lazy-user-del', 'hll-sparse-max-bytes', 'stop-writes-on-bgsave-error', 'tcp-backlog', 'enable-module-command', 'set-proc-title'], 'reason': ['replica-serve-stale-data is not a valid configuration directive', 'proto-max-bulk-len is not a valid configuration directive', 'lazyfree-lazy-user-del is not a valid configuration directive', 'hll-sparse-max-bytes is not a valid configuration directive', 'stop-writes-on-bgsave-error is not a valid configuration directive', 'tcp-backlog is not a valid configuration directive', 'enable-module-command is not a valid configuration directive', 'set-proc-title is not a valid configuration directive']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: replica-serve-stale-data	proto-max-bulk-len	lazyfree-lazy-user-del	hll-sparse-max-bytes	stop-writes-on-bgsave-error	tcp-backlog	enable-module-command
+[Ciri] Reason for replica-serve-stale-data: replica-serve-stale-data is not a valid configuration directive.
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len is not a valid parameter
+[Ciri] Reason for lazyfree-lazy-user-del: lazyfree-lazy-user-del is not a valid parameter
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes is not a valid configuration directive.
+[Ciri] Reason for stop-writes-on-bgsave-error: stop-writes-on-bgsave-error is not a valid configuration directive.
+[Ciri] Reason for tcp-backlog: tcp-backlog is not a valid parameter
+[Ciri] Reason for enable-module-command: enable-module-command is not a valid parameter

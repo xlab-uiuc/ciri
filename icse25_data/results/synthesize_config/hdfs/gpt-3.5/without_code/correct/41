@@ -1,0 +1,20 @@
+Wrong shot number:
+[12, 5, 14]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.min', 'dfs.datanode.fileio.profiling.sampling.percentage', 'dfs.balancer.block-move.timeout'], 'reason': ["The property 'dfs.namenode.replication.min' has the value '0' which should be greater than 0 for minimal block replication.", "The property 'dfs.datanode.fileio.profiling.sampling.percentage' has the value '-1' which is out of the valid range of 1 to 100 for enabling disk statistics.", "The property 'dfs.balancer.block-move.timeout' has the value '0' which should be greater than 0 to set a maximum amount of time for a block to move."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.min', 'dfs.datanode.fileio.profiling.sampling.percentage', 'dfs.balancer.block-move.timeout'], 'reason': ["The property 'dfs.namenode.replication.min' has the value '0' which should be greater than 0 for minimal block replication.", "The property 'dfs.datanode.fileio.profiling.sampling.percentage' has the value '-1' which is out of the valid range of 1 to 100 for enabling disk statistics.", "The property 'dfs.balancer.block-move.timeout' has the value '0' which should be greater than 0 if a timeout is desired for block moves."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.min', 'dfs.datanode.fileio.profiling.sampling.percentage', 'dfs.balancer.block-move.timeout'], 'reason': ["The property 'dfs.namenode.replication.min' has the value '0' which should be greater than 0 for minimal block replication.", "The property 'dfs.datanode.fileio.profiling.sampling.percentage' has the value '-1' which is out of the valid range of 1 to 100 for enabling disk statistics.", "The property 'dfs.balancer.block-move.timeout' has the value '0' which should be greater than 0 to set a maximum amount of time for a block to move."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.replication.min	dfs.datanode.fileio.profiling.sampling.percentage	dfs.balancer.block-move.timeout
+[Ciri] Reason for dfs.namenode.replication.min: The property 'dfs.namenode.replication.min' has the value '0' which should be greater than 0 for minimal block replication.
+[Ciri] Reason for dfs.datanode.fileio.profiling.sampling.percentage: The property 'dfs.datanode.fileio.profiling.sampling.percentage' has the value '-1' which is out of the valid range of 1 to 100 for enabling disk statistics.
+[Ciri] Reason for dfs.balancer.block-move.timeout: The property 'dfs.balancer.block-move.timeout' has the value '0' which should be greater than 0 to set a maximum amount of time for a block to move.

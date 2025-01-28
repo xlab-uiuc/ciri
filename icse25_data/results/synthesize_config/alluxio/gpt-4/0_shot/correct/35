@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.block.master.client.pool.gc.threshold', 'alluxio.underfs.cleanup.interval', 'alluxio.worker.network.keepalive.timeout', 'alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ["The correct format for durations should include a time unit, such as '1ms' or '1s' for 'alluxio.user.block.master.client.pool.gc.threshold'.", "The correct format for durations should include a time unit, such as '2d' instead of '2day' for 'alluxio.underfs.cleanup.interval'.", "The correct format for durations should include a time unit, such as '1ms' or '1s' for 'alluxio.worker.network.keepalive.timeout'.", "The size should be specified in bytes. For 'alluxio.user.network.rpc.max.inbound.message.size', it should likely be '209715200b' for 200MB."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.user.block.master.client.pool.gc.threshold	alluxio.underfs.cleanup.interval	alluxio.worker.network.keepalive.timeout	alluxio.user.network.rpc.max.inbound.message.size
+[Ciri] Reason for alluxio.user.block.master.client.pool.gc.threshold: The correct format for durations should include a time unit, such as '1ms' or '1s' for 'alluxio.user.block.master.client.pool.gc.threshold'.
+[Ciri] Reason for alluxio.underfs.cleanup.interval: The correct format for durations should include a time unit, such as '2d' instead of '2day' for 'alluxio.underfs.cleanup.interval'.
+[Ciri] Reason for alluxio.worker.network.keepalive.timeout: The correct format for durations should include a time unit, such as '1ms' or '1s' for 'alluxio.worker.network.keepalive.timeout'.
+[Ciri] Reason for alluxio.user.network.rpc.max.inbound.message.size: The size should be specified in bytes. For 'alluxio.user.network.rpc.max.inbound.message.size', it should likely be '209715200b' for 200MB.

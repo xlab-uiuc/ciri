@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.uid.cache.secs', 'fs.s3a.multipart.purge', 'fs.s3a.s3guard.ddb.table.capacity.read'], 'reason': ['The value for hadoop.security.uid.cache.secs should be a positive integer representing the validity of cache entries.', 'The value for fs.s3a.multipart.purge should be a boolean (true/false) indicating whether to purge existing multipart uploads.', 'The value for fs.s3a.s3guard.ddb.table.capacity.read should be a positive integer representing provisioned throughput requirements for read operations.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.uid.cache.secs	fs.s3a.multipart.purge	fs.s3a.s3guard.ddb.table.capacity.read
+[Ciri] Reason for hadoop.security.uid.cache.secs: The value for hadoop.security.uid.cache.secs should be a positive integer representing the validity of cache entries.
+[Ciri] Reason for fs.s3a.multipart.purge: The value for fs.s3a.multipart.purge should be a boolean (true/false) indicating whether to purge existing multipart uploads.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.read: The value for fs.s3a.s3guard.ddb.table.capacity.read should be a positive integer representing provisioned throughput requirements for read operations.

@@ -1,0 +1,53 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['USE_DEPRECATED_PYTZ', 'FILE_UPLOAD_MAX_MEMORY_SIZE', 'SESSION_FILE_PATH'], 'reason': ['The value of USE_DEPRECATED_PYTZ should be a boolean value.', 'The value of FILE_UPLOAD_MAX_MEMORY_SIZE should be an integer value.', 'The value of SESSION_FILE_PATH should be a string value.']}
+
+{'hasError': True, 'errParameter': ['DATABASES', 'TIME_ZONE', 'USE_I18N', 'USE_L10N', 'USE_TZ', 'LANGUAGE_CODE', 'LANGUAGES', 'LOCALE_PATHS', 'USE_THOUSAND_SEPARATOR', 'FILE_UPLOAD_MAX_MEMORY_SIZE', 'SESSION_FILE_PATH'], 'reason': ['DATABASES is a required setting', 'TIME_ZONE is a required setting', 'USE_I18N is a required setting', 'USE_L10N is a required setting', 'USE_TZ is a required setting', 'LANGUAGE_CODE is a required setting', 'LANGUAGES is a required setting', 'LOCALE_PATHS is a required setting', 'USE_THOUSAND_SEPARATOR is a required setting', 'FILE_UPLOAD_MAX_MEMORY_SIZE is a required setting', 'SESSION_FILE_PATH is a required setting']}
+
+{'hasError': True, 'errParameter': ['DATABASES', 'TIME_ZONE'], 'reason': ['DATABASES is a required property', 'TIME_ZONE is not a valid property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['TIME_ZONE', 'LANGUAGE_CODE', 'LANGUAGE_COOKIE_DOMAIN', 'THOUSAND_SEPARATOR', 'USE_X_FORWARDED_HOST'], 'reason': ['TIME_ZONE is not a valid timezone', 'LANGUAGE_CODE is not a valid language code', 'LANGUAGE_COOKIE_DOMAIN is not a valid domain', 'THOUSAND_SEPARATOR is not a valid separator', 'USE_X_FORWARDED_HOST is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['DATABASES', 'TIME_ZONE', 'LANGUAGE_CODE', 'LANGUAGE_COOKIE_DOMAIN', 'THOUSAND_SEPARATOR', 'USE_X_FORWARDED_HOST'], 'reason': ['DATABASES is not a valid configuration parameter', 'TIME_ZONE is not a valid configuration parameter', 'LANGUAGE_CODE is not a valid configuration parameter', 'LANGUAGE_COOKIE_DOMAIN is not a valid configuration parameter', 'THOUSAND_SEPARATOR is not a valid configuration parameter', 'USE_X_FORWARDED_HOST is not a valid configuration parameter']}
+
+{'hasError': True, 'errParameter': ['SECRET_KEY'], 'reason': ['SECRET_KEY is a required setting that Django needs to be able to do its job. Check the Django documentation for more information on this setting.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATABASES', 'TIME_ZONE'], 'reason': ['DATABASES is not a valid configuration parameter.', 'TIME_ZONE is not a valid configuration parameter.']}
+
+{'hasError': True, 'errParameter': ['SECRET_KEY'], 'reason': ['SECRET_KEY is not set']}
+
+{'hasError': True, 'errParameter': ['TIME_ZONE', 'LANGUAGE_CODE', 'LANGUAGE_COOKIE_DOMAIN', 'USE_X_FORWARDED_HOST'], 'reason': ['TIME_ZONE is not a valid timezone', 'LANGUAGE_CODE is not a valid language code', 'LANGUAGE_COOKIE_DOMAIN is not a valid domain', 'USE_X_FORWARDED_HOST is not a valid boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['TEMPLATES', 'LANGUAGE_CODE', 'TIME_ZONE', 'USE_I18N', 'USE_L10N', 'USE_TZ'], 'reason': ['TEMPLATES is not a valid configuration parameter.', 'LANGUAGE_CODE is not a valid configuration parameter.', 'TIME_ZONE is not a valid configuration parameter.', 'USE_I18N is not a valid configuration parameter.', 'USE_L10N is not a valid configuration parameter.', 'USE_TZ is not a valid configuration parameter.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['TIME_ZONE', 'USE_DEPRECATED_PYTZ', 'X_FRAME_OPTIONS', 'LANGUAGE_COOKIE_DOMAIN', 'THOUSAND_SEPARATOR', 'USE_X_FORWARDED_HOST'], 'reason': ['TIME_ZONE is not a valid setting', 'USE_DEPRECATED_PYTZ is not a valid setting', 'X_FRAME_OPTIONS is not a valid setting', 'LANGUAGE_COOKIE_DOMAIN is not a valid setting', 'THOUSAND_SEPARATOR is not a valid setting', 'USE_X_FORWARDED_HOST is not a valid setting']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DATABASES', 'LANGUAGE_CODE', 'TIME_ZONE', 'USE_I18N', 'USE_L10N', 'USE_TZ'], 'reason': ['DATABASES is not configured correctly.', 'LANGUAGE_CODE is not configured correctly.', 'TIME_ZONE is not configured correctly.', 'USE_I18N is not configured correctly.', 'USE_L10N is not configured correctly.', 'USE_TZ is not configured correctly.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['DATABASES'], 'reason': ['DATABASES is a required setting, but it is not set.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['TEMPLATES', 'DEFAULT_AUTO_FIELD'], 'reason': ['TEMPLATES must be a list of dictionaries.', 'DEFAULT_AUTO_FIELD must be a string.']}
+
+{'hasError': True, 'errParameter': ['DATABASES', 'TIME_ZONE'], 'reason': ['DATABASES is not a valid configuration parameter.', 'TIME_ZONE is not a valid configuration parameter.']}
+
+{'hasError': True, 'errParameter': ['TEMPLATES', 'DEFAULT_AUTO_FIELD'], 'reason': ['TEMPLATES must be a list. DEFAULT_AUTO_FIELD must be a string.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: TEMPLATES	DEFAULT_AUTO_FIELD
+[Ciri] Reason for TEMPLATES: TEMPLATES must be a list. DEFAULT_AUTO_FIELD must be a string.
+[Ciri] Reason for DEFAULT_AUTO_FIELD: DEFAULT_AUTO_FIELD must be a string.

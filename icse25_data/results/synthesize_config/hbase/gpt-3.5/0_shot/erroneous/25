@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.global.memstore.size', 'hbase.client.perserver.requests.threshold', 'hbase.regionserver.thread.compaction.throttle'], 'reason': ["The property 'hbase.regionserver.global.memstore.size' has an empty default value which may cause issues. It's recommended to provide a valid default value.", "The property 'hbase.client.perserver.requests.threshold' has a very high value which may not be appropriate. It's recommended to adjust it to a reasonable value based on the number of client threads.", "The property 'hbase.regionserver.thread.compaction.throttle' has a value that is calculated based on other properties. It's recommended to provide a direct value instead of a calculated one."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.global.memstore.size', 'hbase.client.perserver.requests.threshold', 'hbase.regionserver.thread.compaction.throttle'], 'reason': ["The property 'hbase.regionserver.global.memstore.size' has an empty value field which may cause issues. It is recommended to provide a valid value.", "The property 'hbase.client.perserver.requests.threshold' has a very high value which may not be appropriate. It is recommended to use a reasonable value.", "The property 'hbase.regionserver.thread.compaction.throttle' has a very high value which may not be appropriate. It is recommended to use a reasonable value."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.global.memstore.size', 'hbase.client.perserver.requests.threshold', 'hbase.regionserver.thread.compaction.throttle'], 'reason': ["The value for 'hbase.regionserver.global.memstore.size' is not specified in the configuration.", "The value for 'hbase.client.perserver.requests.threshold' is too large. It should be a reasonable number of concurrent pending requests.", "The value for 'hbase.regionserver.thread.compaction.throttle' is too large. It should be a reasonable threshold for compactions."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.global.memstore.size	hbase.client.perserver.requests.threshold	hbase.regionserver.thread.compaction.throttle
+[Ciri] Reason for hbase.regionserver.global.memstore.size: The property 'hbase.regionserver.global.memstore.size' has an empty default value which may cause issues. It's recommended to provide a valid default value.
+[Ciri] Reason for hbase.client.perserver.requests.threshold: The property 'hbase.client.perserver.requests.threshold' has a very high value which may not be appropriate. It's recommended to adjust it to a reasonable value based on the number of client threads.
+[Ciri] Reason for hbase.regionserver.thread.compaction.throttle: The value for 'hbase.regionserver.thread.compaction.throttle' is too large. It should be a reasonable threshold for compactions.

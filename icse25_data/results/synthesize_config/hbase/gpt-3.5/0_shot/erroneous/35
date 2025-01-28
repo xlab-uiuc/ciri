@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.hstore.compaction.max.size', 'hbase.wal.dir.perms'], 'reason': ["The value for 'hbase.zookeeper.property.clientPort' should be within the valid port range (0-65535).", "The value for 'hbase.hstore.compaction.max.size' is too large. It should be a valid integer value.", "The value for 'hbase.wal.dir.perms' should be a valid octal number for file system permissions."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.hstore.compaction.max.size', 'hbase.wal.dir.perms'], 'reason': ["The value for 'hbase.zookeeper.property.clientPort' should be within the valid port range (0-65535).", "The value for 'hbase.hstore.compaction.max.size' is too large. It should be a valid long value.", "The value for 'hbase.wal.dir.perms' should be a valid octal permission value."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.client.pause', 'hbase.hstore.compaction.max.size', 'hbase.wal.dir.perms'], 'reason': ["The value of 'hbase.zookeeper.property.clientPort' should be between 0 and 65535.", "The 'hbase.client.pause' value should be an integer.", "The value of 'hbase.hstore.compaction.max.size' should be a valid long value.", "The 'hbase.wal.dir.perms' value should be a valid octal number."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.zookeeper.property.clientPort	hbase.hstore.compaction.max.size	hbase.wal.dir.perms
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The value for 'hbase.zookeeper.property.clientPort' should be within the valid port range (0-65535).
+[Ciri] Reason for hbase.hstore.compaction.max.size: The value for 'hbase.hstore.compaction.max.size' is too large. It should be a valid long value.
+[Ciri] Reason for hbase.wal.dir.perms: The value for 'hbase.wal.dir.perms' should be a valid octal number for file system permissions.

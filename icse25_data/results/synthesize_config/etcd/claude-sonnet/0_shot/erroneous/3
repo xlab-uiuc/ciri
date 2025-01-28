@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'listen-peer-urls'], 'reason': ["In etcd 3.5.0, the advertise-client-urls and listen-peer-urls parameters should use the URL scheme 'http://' for binding to IPv4 addresses, or 'https://' for IPv6 addresses or domain names. The provided URLs are missing the scheme.", "It is recommended to use domain names or IP addresses instead of 'localhost' in production environments to allow other nodes to access the etcd cluster."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: advertise-client-urls	listen-peer-urls
+[Ciri] Reason for advertise-client-urls: In etcd 3.5.0, the advertise-client-urls and listen-peer-urls parameters should use the URL scheme 'http://' for binding to IPv4 addresses, or 'https://' for IPv6 addresses or domain names. The provided URLs are missing the scheme.
+[Ciri] Reason for listen-peer-urls: It is recommended to use domain names or IP addresses instead of 'localhost' in production environments to allow other nodes to access the etcd cluster.

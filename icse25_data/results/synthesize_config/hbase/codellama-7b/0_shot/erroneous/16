@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.leaderport', 'hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.clientPort'], 'reason': ['The port for the HBase Master web UI. Set to -1 if you do not want a UI instance run.', "Property from ZooKeeper's config zoo.cfg. The directory where the snapshot is stored.", "Property from ZooKeeper's config zoo.cfg. The port at which the clients will connect."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.info.port'], 'reason': ['The port for the HBase Master web UI. Set to -1 if you do not want a UI instance run.']}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.dataDir'], 'reason': ['The value of hbase.zookeeper.property.dataDir is not a valid directory.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.clientPort'], 'reason': ["hbase.zookeeper.property.dataDir: Property from ZooKeeper's config zoo.cfg. The directory where the snapshot is stored.", "hbase.zookeeper.property.clientPort: Property from ZooKeeper's config zoo.cfg. The port at which the clients will connect."]}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.dataDir'], 'reason': ["Property from ZooKeeper's config zoo.cfg. The directory where the snapshot is stored."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.info.port', 'hbase.zookeeper.leaderport', 'hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.clientPort', 'hbase.bulkload.retries.number', 'hbase.data.umask.enable'], 'reason': ['hbase.master.info.port is not a valid port number.', 'hbase.zookeeper.leaderport is not a valid port number.', 'hbase.zookeeper.property.dataDir is not a valid file path.', 'hbase.zookeeper.property.clientPort is not a valid file path.', 'hbase.bulkload.retries.number is not a valid number.', 'hbase.data.umask.enable is not a valid boolean.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.clientPort'], 'reason': ['hbase.zookeeper.property.dataDir is not a valid file path.', 'hbase.zookeeper.property.clientPort is not a valid port number.']}
+
+{'hasError': True, 'errParameter': ['hbase.master.info.port'], 'reason': ['The port for the HBase Master web UI. Set to -1 if you do not want a UI instance run.']}
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.dataDir', 'hbase.zookeeper.property.clientPort'], 'reason': ["hbase.zookeeper.property.dataDir: Property from ZooKeeper's config zoo.cfg. The directory where the snapshot is stored.", "hbase.zookeeper.property.clientPort: Property from ZooKeeper's config zoo.cfg. The port at which the clients will connect."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.zookeeper.property.dataDir	hbase.zookeeper.property.clientPort
+[Ciri] Reason for hbase.zookeeper.property.dataDir: hbase.zookeeper.property.dataDir is not a valid file path.
+[Ciri] Reason for hbase.zookeeper.property.clientPort: hbase.zookeeper.property.clientPort: Property from ZooKeeper's config zoo.cfg. The port at which the clients will connect.

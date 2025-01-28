@@ -1,0 +1,14 @@
+Wrong shot number:
+[4, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['LOGIN_REDIRECT_URL', 'WSGI_APPLICATION', 'USE_THOUSAND_SEPARATOR', 'MANAGERS'], 'reason': ["The property 'LOGIN_REDIRECT_URL' has an invalid value 'file//'.", "The property 'WSGI_APPLICATION' is set to 'None' which should be a valid WSGI application.", "The property 'USE_THOUSAND_SEPARATOR' is set to 'True' which is not a valid configuration for Django version 4.0.", "The property 'MANAGERS' is not defined properly, it should be a list of email addresses."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: LOGIN_REDIRECT_URL	WSGI_APPLICATION	USE_THOUSAND_SEPARATOR	MANAGERS
+[Ciri] Reason for LOGIN_REDIRECT_URL: The property 'LOGIN_REDIRECT_URL' has an invalid value 'file//'.
+[Ciri] Reason for WSGI_APPLICATION: The property 'WSGI_APPLICATION' is set to 'None' which should be a valid WSGI application.
+[Ciri] Reason for USE_THOUSAND_SEPARATOR: The property 'USE_THOUSAND_SEPARATOR' is set to 'True' which is not a valid configuration for Django version 4.0.
+[Ciri] Reason for MANAGERS: The property 'MANAGERS' is not defined properly, it should be a list of email addresses.

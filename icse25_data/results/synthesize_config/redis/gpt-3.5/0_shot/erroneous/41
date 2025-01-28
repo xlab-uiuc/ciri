@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'repl-diskless-sync', 'replica-announce-ip', 'repl-diskless-sync-max-replicas', 'replica-read-only', 'hash-max-listpack-value'], 'reason': ["The parameter 'cluster-enabled' is not recognized in Redis 7.0.0 configuration.", "The parameter 'repl-diskless-sync' is not recognized in Redis 7.0.0 configuration.", "The parameter 'replica-announce-ip' is not recognized in Redis 7.0.0 configuration.", "The parameter 'repl-diskless-sync-max-replicas' is not recognized in Redis 7.0.0 configuration.", "The parameter 'replica-read-only' is not recognized in Redis 7.0.0 configuration.", "The parameter 'hash-max-listpack-value' is not recognized in Redis 7.0.0 configuration."]}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'repl-diskless-sync', 'replica-announce-ip', 'repl-diskless-sync-max-replicas', 'replica-read-only', 'hash-max-listpack-value'], 'reason': ["The parameter 'cluster-enabled' is not valid for Redis version 7.0.0.", "The parameter 'repl-diskless-sync' is not valid for Redis version 7.0.0.", "The parameter 'replica-announce-ip' is not valid for Redis version 7.0.0.", "The parameter 'repl-diskless-sync-max-replicas' is not valid for Redis version 7.0.0.", "The parameter 'replica-read-only' is not valid for Redis version 7.0.0.", "The parameter 'hash-max-listpack-value' is not valid for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'repl-diskless-sync', 'replica-announce-ip', 'repl-diskless-sync-max-replicas', 'replica-read-only', 'hash-max-listpack-value'], 'reason': ["The 'cluster-enabled' parameter is not valid in Redis 7.0.0.", "The 'repl-diskless-sync' parameter is not valid in Redis 7.0.0.", "The 'replica-announce-ip' parameter is not valid in Redis 7.0.0.", "The 'repl-diskless-sync-max-replicas' parameter is not valid in Redis 7.0.0.", "The 'replica-read-only' parameter is not valid in Redis 7.0.0.", "The 'hash-max-listpack-value' parameter is not valid in Redis 7.0.0."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: cluster-enabled	repl-diskless-sync	replica-announce-ip	repl-diskless-sync-max-replicas	replica-read-only	hash-max-listpack-value
+[Ciri] Reason for cluster-enabled: The parameter 'cluster-enabled' is not recognized in Redis 7.0.0 configuration.
+[Ciri] Reason for repl-diskless-sync: The 'repl-diskless-sync' parameter is not valid in Redis 7.0.0.
+[Ciri] Reason for replica-announce-ip: The 'replica-announce-ip' parameter is not valid in Redis 7.0.0.
+[Ciri] Reason for repl-diskless-sync-max-replicas: The 'repl-diskless-sync-max-replicas' parameter is not valid in Redis 7.0.0.
+[Ciri] Reason for replica-read-only: The parameter 'replica-read-only' is not recognized in Redis 7.0.0 configuration.
+[Ciri] Reason for hash-max-listpack-value: The parameter 'hash-max-listpack-value' is not valid for Redis version 7.0.0.

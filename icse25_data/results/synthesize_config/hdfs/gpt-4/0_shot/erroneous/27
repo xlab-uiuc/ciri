@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir.perm', 'dfs.namenode.path.based.cache.refresh.interval.ms'], 'reason': ["The value for 'dfs.datanode.data.dir.perm' should be an octal or symbolic permission value, but 'file://' is provided which is incorrect.", "The default value for 'dfs.namenode.path.based.cache.refresh.interval.ms' is mentioned as 30 seconds in the description, but the value provided is 60000, which is 60 seconds. The description may need correction or the value adjusted if the intention was to set it to 30 seconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.data.dir.perm	dfs.namenode.path.based.cache.refresh.interval.ms
+[Ciri] Reason for dfs.datanode.data.dir.perm: The value for 'dfs.datanode.data.dir.perm' should be an octal or symbolic permission value, but 'file://' is provided which is incorrect.
+[Ciri] Reason for dfs.namenode.path.based.cache.refresh.interval.ms: The default value for 'dfs.namenode.path.based.cache.refresh.interval.ms' is mentioned as 30 seconds in the description, but the value provided is 60000, which is 60 seconds. The description may need correction or the value adjusted if the intention was to set it to 30 seconds.

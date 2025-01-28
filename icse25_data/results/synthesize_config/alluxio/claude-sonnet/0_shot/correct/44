@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.security.stale.channel.purge.interval'], 'reason': ["The property 'alluxio.user.network.max.inbound.message.size' expects a value in bytes (e.g., '16MB'). The value '0.5' is invalid.", "The property 'alluxio.security.stale.channel.purge.interval' expects a value in the format '<int><unit>', where unit can be one of nanoseconds, microseconds, milliseconds, seconds, minutes, hours, or days. The value '6day' is invalid, it should be '6days'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.max.inbound.message.size	alluxio.security.stale.channel.purge.interval
+[Ciri] Reason for alluxio.user.network.max.inbound.message.size: The property 'alluxio.user.network.max.inbound.message.size' expects a value in bytes (e.g., '16MB'). The value '0.5' is invalid.
+[Ciri] Reason for alluxio.security.stale.channel.purge.interval: The property 'alluxio.security.stale.channel.purge.interval' expects a value in the format '<int><unit>', where unit can be one of nanoseconds, microseconds, milliseconds, seconds, minutes, hours, or days. The value '6day' is invalid, it should be '6days'.

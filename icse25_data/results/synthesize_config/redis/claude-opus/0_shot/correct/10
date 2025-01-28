@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-user-del', 'enable-module-command', 'list-max-listpack-size'], 'reason': ["The 'lazyfree-lazy-user-del' configuration parameter is not valid in Redis 7.0.0. It was renamed to 'lazyfree-lazy-user-flush' in Redis 6.2.", "The 'enable-module-command' configuration parameter is not valid in Redis 7.0.0. It was removed in Redis 7.0 as modules are always enabled.", "The value for 'list-max-listpack-size' should be a positive integer, but -4 is provided which is invalid."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: lazyfree-lazy-user-del	enable-module-command	list-max-listpack-size
+[Ciri] Reason for lazyfree-lazy-user-del: The 'lazyfree-lazy-user-del' configuration parameter is not valid in Redis 7.0.0. It was renamed to 'lazyfree-lazy-user-flush' in Redis 6.2.
+[Ciri] Reason for enable-module-command: The 'enable-module-command' configuration parameter is not valid in Redis 7.0.0. It was removed in Redis 7.0 as modules are always enabled.
+[Ciri] Reason for list-max-listpack-size: The value for 'list-max-listpack-size' should be a positive integer, but -4 is provided which is invalid.

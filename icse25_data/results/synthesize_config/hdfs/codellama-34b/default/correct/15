@@ -1,0 +1,26 @@
+Wrong shot number:
+[6, 12, 3]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.heartbeat.recheck-interval'], 'reason': ["The property 'dfs.namenode.heartbeat.recheck-interval' has the value '300000' which does not follow the correct time format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.period'], 'reason': ["The property 'dfs.namenode.checkpoint.period' has the value '1s' which does not follow the correct time format."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.heartbeat.recheck-interval'], 'reason': ["The property 'dfs.namenode.heartbeat.recheck-interval' has the value '300000' which is out of the valid range of a time unit."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.heartbeat.recheck-interval'], 'reason': ["The property 'dfs.namenode.heartbeat.recheck-interval' has the value '300000' which is out of the valid range of a time unit."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.period'], 'reason': ["The property 'dfs.namenode.checkpoint.period' has the value '1s' which does not follow the correct time format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.heartbeat.recheck-interval
+[Ciri] Reason for dfs.namenode.heartbeat.recheck-interval: The property 'dfs.namenode.heartbeat.recheck-interval' has the value '300000' which is out of the valid range of a time unit.

@@ -1,0 +1,20 @@
+Wrong shot number:
+[4, 13, 12]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.upload.threads.max', 'alluxio.master.log.config.report.heartbeat.interval', 'alluxio.user.network.rpc.max.connections'], 'reason': ["The property 'alluxio.underfs.s3.upload.threads.max' should have a value greater than or equal to 1.", "The property 'alluxio.master.log.config.report.heartbeat.interval' has the value '10h' which should be in milliseconds format.", "The property 'alluxio.user.network.rpc.max.connections' should have a value greater than or equal to 1."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.upload.threads.max', 'alluxio.master.log.config.report.heartbeat.interval', 'alluxio.user.network.rpc.max.connections'], 'reason': ["The property 'alluxio.underfs.s3.upload.threads.max' should have a value greater than or equal to 1.", "The property 'alluxio.master.log.config.report.heartbeat.interval' has the value '10h' which is not in the correct format. It should be specified in milliseconds.", "The property 'alluxio.user.network.rpc.max.connections' should have a value greater than or equal to 1."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.upload.threads.max', 'alluxio.master.log.config.report.heartbeat.interval', 'alluxio.user.network.rpc.max.connections'], 'reason': ["The property 'alluxio.underfs.s3.upload.threads.max' should have a value greater than or equal to 1.", "The property 'alluxio.master.log.config.report.heartbeat.interval' has the value '10h' which is not in the correct format. It should be specified in milliseconds.", "The property 'alluxio.user.network.rpc.max.connections' should have a value greater than or equal to 1."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.underfs.s3.upload.threads.max	alluxio.master.log.config.report.heartbeat.interval	alluxio.user.network.rpc.max.connections
+[Ciri] Reason for alluxio.underfs.s3.upload.threads.max: The property 'alluxio.underfs.s3.upload.threads.max' should have a value greater than or equal to 1.
+[Ciri] Reason for alluxio.master.log.config.report.heartbeat.interval: The property 'alluxio.master.log.config.report.heartbeat.interval' has the value '10h' which is not in the correct format. It should be specified in milliseconds.
+[Ciri] Reason for alluxio.user.network.rpc.max.connections: The property 'alluxio.user.network.rpc.max.connections' should have a value greater than or equal to 1.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[11, 4, 7]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.stream.cache.timeout', 'alluxio.job.master.finished.job.purge.count'], 'reason': ["The property 'alluxio.proxy.stream.cache.timeout' has the value '6HR' which is not in the correct format. It should be specified in milliseconds.", "The property 'alluxio.job.master.finished.job.purge.count' has the value '-2' which is not a valid value. It should be a non-negative integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.proxy.stream.cache.timeout	alluxio.job.master.finished.job.purge.count
+[Ciri] Reason for alluxio.proxy.stream.cache.timeout: The property 'alluxio.proxy.stream.cache.timeout' has the value '6HR' which is not in the correct format. It should be specified in milliseconds.
+[Ciri] Reason for alluxio.job.master.finished.job.purge.count: The property 'alluxio.job.master.finished.job.purge.count' has the value '-2' which is not a valid value. It should be a non-negative integer.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'quota-backend-bytes', 'proxy'], 'reason': ["The 'proxy-dial-timeout' parameter is not a valid configuration option for etcd 3.5.0.", "The 'quota-backend-bytes' parameter is not a valid configuration option for etcd 3.5.0.", "The 'proxy' parameter should be set to a valid proxy URL or left unset. The value 'off' is invalid."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-dial-timeout	quota-backend-bytes	proxy
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' parameter is not a valid configuration option for etcd 3.5.0.
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' parameter is not a valid configuration option for etcd 3.5.0.
+[Ciri] Reason for proxy: The 'proxy' parameter should be set to a valid proxy URL or left unset. The value 'off' is invalid.

@@ -1,0 +1,12 @@
+Correct shot number:
+[15, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'ipc.[port_number].callqueue.impl'], 'reason': ["The property 'io.seqfile.local.dir' has an incorrect usage tag. 'usage' tag is not a valid tag in Hadoop configuration files.", "The property 'ipc.[port_number].callqueue.impl' has an incorrect property name format. It should not contain '[port_number]' placeholder."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.seqfile.local.dir	ipc.[port_number].callqueue.impl
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' has an incorrect usage tag. 'usage' tag is not a valid tag in Hadoop configuration files.
+[Ciri] Reason for ipc.[port_number].callqueue.impl: The property 'ipc.[port_number].callqueue.impl' has an incorrect property name format. It should not contain '[port_number]' placeholder.

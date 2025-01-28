@@ -1,0 +1,16 @@
+Wrong shot number:
+[12]
+
+Correct shot number:
+[3, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'ipc.[port_number].decay-scheduler.decay-factor', 'hadoop.ssl.enabled'], 'reason': ["The property 'fs.ftp.data.connection.mode' has an additional 'usage' element which is not a standard configuration property.", "The property 'ipc.[port_number].decay-scheduler.decay-factor' has a value of '0.25' which is out of the valid range.", "The property 'hadoop.ssl.enabled' is deprecated and should be replaced with 'dfs.http.policy' and 'yarn.http.policy'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.data.connection.mode	ipc.[port_number].decay-scheduler.decay-factor	hadoop.ssl.enabled
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has an additional 'usage' element which is not a standard configuration property.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.decay-factor: The property 'ipc.[port_number].decay-scheduler.decay-factor' has a value of '0.25' which is out of the valid range.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' is deprecated and should be replaced with 'dfs.http.policy' and 'yarn.http.policy'.

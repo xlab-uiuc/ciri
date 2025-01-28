@@ -1,0 +1,19 @@
+Wrong shot number:
+[16, 5, 13]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'adl.http.timeout'], 'reason': ["The property 'fs.s3a.proxy.port' has an invalid value '-1'. Valid port numbers are between 1 and 65535.", "The property 'adl.http.timeout' has an invalid value '-1'. Valid timeout values should be zero (for no timeout) or a positive number."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'adl.http.timeout'], 'reason': ["The property 'fs.s3a.proxy.port' has an invalid value '-1'. Valid port numbers are between 1 and 65535.", "The property 'adl.http.timeout' has an invalid value '-1'. The value should be zero or a positive number to represent the timeout in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'adl.http.timeout'], 'reason': ["The property 'fs.s3a.proxy.port' has an invalid value '-1'. Valid port numbers are between 0 and 65535.", "The property 'adl.http.timeout' has an invalid value '-1'. The value should be zero or a positive number to indicate a valid timeout duration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.proxy.port	adl.http.timeout
+[Ciri] Reason for fs.s3a.proxy.port: The property 'fs.s3a.proxy.port' has an invalid value '-1'. Valid port numbers are between 0 and 65535.
+[Ciri] Reason for adl.http.timeout: The property 'adl.http.timeout' has an invalid value '-1'. The value should be zero or a positive number to indicate a valid timeout duration.

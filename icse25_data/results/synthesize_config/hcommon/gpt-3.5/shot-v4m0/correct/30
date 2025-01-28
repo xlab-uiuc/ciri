@@ -1,0 +1,13 @@
+Correct shot number:
+[13, 8, 12, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.s3a.s3guard.ddb.throttle.retry.interval', 'ipc.[port_number].backoff.enable'], 'reason': ['Invalid value for property fs.ftp.transfer.mode. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.', 'Invalid value for property fs.s3a.s3guard.ddb.throttle.retry.interval. The value should be in milliseconds format.', 'Invalid value for property ipc.[port_number].backoff.enable. It should be a boolean value (true/false).']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.s3a.s3guard.ddb.throttle.retry.interval	ipc.[port_number].backoff.enable
+[Ciri] Reason for fs.ftp.transfer.mode: Invalid value for property fs.ftp.transfer.mode. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.
+[Ciri] Reason for fs.s3a.s3guard.ddb.throttle.retry.interval: Invalid value for property fs.s3a.s3guard.ddb.throttle.retry.interval. The value should be in milliseconds format.
+[Ciri] Reason for ipc.[port_number].backoff.enable: Invalid value for property ipc.[port_number].backoff.enable. It should be a boolean value (true/false).

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.zookeeper.property.clientPort</name>
+  <value>65536</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    The port at which the clients will connect.</description>
+</property>
+
+<property>
+  <name>hbase.client.pause</name>
+  <value>50</value>
+    <description>General client pause value.  Used mostly as value to wait
+    before running a retry of a failed get, region lookup, etc.
+    See hbase.client.retries.number for description of how we backoff from
+    this initial pause amount and how this pause works w/ retries.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.memstore.mslab.enabled</name>
+  <value>false</value>
+    <description>
+      Enables the MemStore-Local Allocation Buffer,
+      a feature which works to prevent heap fragmentation under
+      heavy write loads. This can reduce the frequency of stop-the-world
+      GC pauses on large heaps.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.compaction.enabled</name>
+  <value>true</value>
+    <description>Enable/disable compactions on by setting true/false.
+      We can further switch compactions dynamically with the
+      compaction_switch shell command.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.max.size</name>
+  <value>4611686018427387903</value>
+    <description>A StoreFile (or a selection of StoreFiles, when using ExploringCompactionPolicy)
+      larger than this size will be excluded from compaction. The effect of
+      raising hbase.hstore.compaction.max.size is fewer, larger StoreFiles that do not get
+      compacted often. If you feel that compaction is happening too often without much benefit, you
+      can try raising this value. Default: the value of LONG.MAX_VALUE, expressed in bytes.</description>
+</property>
+
+<property>
+  <name>hbase.rest.threads.min</name>
+  <value>2</value>
+    <description>The minimum number of threads of the REST server thread pool.
+        The thread pool always has at least these number of threads so
+        the REST server is ready to serve incoming requests.</description>
+</property>
+
+<property>
+  <name>hbase.wal.dir.perms</name>
+  <value>350</value>
+    <description>FS Permissions for the root WAL directory in a secure(kerberos) setup.
+      When master starts, it creates the WAL dir with this permissions or sets the permissions
+      if it does not match.</description>
+</property>
+
+<property>
+  <name>hbase.mob.cache.evict.remain.ratio</name>
+  <value>0.25</value>
+    <description>
+      The ratio (between 0.0 and 1.0) of files that remains cached after an eviction
+      is triggered when the number of cached mob files exceeds the hbase.mob.file.cache.size.
+      The default value is 0.5f.
+    </description>
+</property>
+
+</configuration>

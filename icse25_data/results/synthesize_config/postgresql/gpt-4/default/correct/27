@@ -1,0 +1,16 @@
+Wrong shot number:
+[3, 6, 4]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable_async_append', 'data_sync_retry', 'wal_log_hints'], 'reason': ["The property 'enable_async_append' does not exist.", "The property 'data_sync_retry' does not exist.", "The property 'wal_log_hints' is not configurable in postgresql.conf; it can only be set at server start."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable_async_append	data_sync_retry	wal_log_hints
+[Ciri] Reason for enable_async_append: The property 'enable_async_append' does not exist.
+[Ciri] Reason for data_sync_retry: The property 'data_sync_retry' does not exist.
+[Ciri] Reason for wal_log_hints: The property 'wal_log_hints' is not configurable in postgresql.conf; it can only be set at server start.

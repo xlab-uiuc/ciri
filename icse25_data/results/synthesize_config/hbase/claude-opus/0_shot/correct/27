@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.kv.max', 'hbase.snapshot.working.dir'], 'reason': ['The default value for hbase.hstore.compaction.kv.max in HBase 2.2.7 is 10, but the configuration file sets it to 1. Setting this value too low can negatively impact compaction performance.', 'The hbase.snapshot.working.dir property is deprecated in HBase 2.x versions. Instead, use the hbase.tmp.dir property to specify the directory for temporary snapshot files.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.hstore.compaction.kv.max	hbase.snapshot.working.dir
+[Ciri] Reason for hbase.hstore.compaction.kv.max: The default value for hbase.hstore.compaction.kv.max in HBase 2.2.7 is 10, but the configuration file sets it to 1. Setting this value too low can negatively impact compaction performance.
+[Ciri] Reason for hbase.snapshot.working.dir: The hbase.snapshot.working.dir property is deprecated in HBase 2.x versions. Instead, use the hbase.tmp.dir property to specify the directory for temporary snapshot files.

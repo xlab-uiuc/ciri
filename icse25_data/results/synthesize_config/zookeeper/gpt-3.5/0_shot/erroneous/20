@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.snapRetainCount', 'localSessionsUpgradingEnabled', 'quorum.auth.server.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'clientPortAddress'], 'reason': ['autopurge.snapRetainCount should be a positive integer value.', 'localSessionsUpgradingEnabled should be a boolean value (true/false).', 'quorum.auth.server.saslLoginContext should be a valid login context.', 'quorum.auth.learnerRequireSasl should be a boolean value (true/false).', 'clientPortAddress should be in the format of host:port.']}
+
+{'hasError': True, 'errParameter': ['autopurge.snapRetainCount', 'localSessionsUpgradingEnabled', 'quorum.auth.server.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'clientPortAddress'], 'reason': ['autopurge.snapRetainCount should be a positive integer.', 'localSessionsUpgradingEnabled should be a boolean value (true/false).', 'quorum.auth.server.saslLoginContext should be a string.', 'quorum.auth.learnerRequireSasl should be a boolean value (true/false).', 'clientPortAddress should be in the format of host:port.']}
+
+{'hasError': True, 'errParameter': ['autopurge.snapRetainCount', 'localSessionsUpgradingEnabled', 'quorum.auth.server.saslLoginContext', 'quorum.auth.learnerRequireSasl', 'clientPortAddress'], 'reason': ['autopurge.snapRetainCount value should be a positive integer.', 'localSessionsUpgradingEnabled should be set to true or false.', 'quorum.auth.server.saslLoginContext value should be a valid login context.', 'quorum.auth.learnerRequireSasl should be set to true or false.', 'clientPortAddress should specify a valid IP address and port.']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: autopurge.snapRetainCount	localSessionsUpgradingEnabled	quorum.auth.server.saslLoginContext	quorum.auth.learnerRequireSasl	clientPortAddress
+[Ciri] Reason for autopurge.snapRetainCount: autopurge.snapRetainCount should be a positive integer.
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled should be a boolean value (true/false).
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext value should be a valid login context.
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl should be a boolean value (true/false).
+[Ciri] Reason for clientPortAddress: clientPortAddress should be in the format of host:port.

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.du.interval</name>
+  <value>600000</value>
+  <description>File space usage statistics refresh interval in msec.</description>
+</property>
+
+<property>
+  <name>ipc.[port_number].faircallqueue.multiplexer.weights</name>
+  <value>8,4,2,1</value>
+  <description>How much weight to give to each priority queue. This should be
+    a comma-separated list of length equal to the number of priority levels.
+    Weights descend by a factor of 2 (e.g., for 4 levels: 8,4,2,1).
+    This property applies to WeightedRoundRobinMultiplexer.
+  </description>
+</property>
+
+<property>
+  <name>tfile.fs.output.buffer.size</name>
+  <value>131072</value>
+  <description>
+    Buffer size used for FSDataOutputStream in bytes.
+  </description>
+</property>
+
+<property>
+  <name>dfs.ha.fencing.ssh.connect-timeout</name>
+  <value>60000</value>
+  <description>
+    SSH connection timeout, in milliseconds, to use with the builtin
+    sshfence fencer.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.require.client.cert</name>
+  <value>false</value>
+  <description>Whether client certificates are required</description>
+</property>
+
+<property>
+  <name>adl.feature.ownerandgroup.enableupn</name>
+  <value>false</value>
+    <description>
+      When true : User and Group in FileStatus/AclStatus response is
+      represented as user friendly name as per Azure AD profile.
+
+      When false (default) : User and Group in FileStatus/AclStatus
+      response is represented by the unique identifier from Azure AD
+      profile (Object ID as GUID).
+
+      For optimal performance, false is recommended.
+    </description>
+</property>
+
+<property>
+  <name>hadoop.zk.timeout-ms</name>
+  <value>10000</value>
+    <description>ZooKeeper session timeout in milliseconds. Session expiration
+    is managed by the ZooKeeper cluster itself, not by the client. This value is
+    used by the cluster to determine when the client's session expires.
+    Expirations happens when the cluster does not hear from the client within
+    the specified session timeout period (i.e. no heartbeat).</description>
+</property>
+
+<property>
+  <name>hadoop.prometheus.endpoint.enabled</name>
+  <value>true</value>
+    <description>
+      If set to true, prometheus compatible metric page on the HTTP servers
+      is enabled via '/prom' endpoint.
+    </description>
+</property>
+
+</configuration>

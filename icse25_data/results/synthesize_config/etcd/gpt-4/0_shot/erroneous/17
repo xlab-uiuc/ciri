@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-v2', 'auto-compaction-mode', 'proxy-dial-timeout'], 'reason': ["The 'enable-v2' option is not valid for etcd version 3.5.0 as v2 API support is deprecated and not recommended for use.", "The 'auto-compaction-mode' requires specifying 'auto-compaction-retention' for 'periodic' mode.", "The 'proxy-dial-timeout' option is not applicable directly in the etcd configuration. It might be used in a different context or requires specific proxy configuration."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: enable-v2	auto-compaction-mode	proxy-dial-timeout
+[Ciri] Reason for enable-v2: The 'enable-v2' option is not valid for etcd version 3.5.0 as v2 API support is deprecated and not recommended for use.
+[Ciri] Reason for auto-compaction-mode: The 'auto-compaction-mode' requires specifying 'auto-compaction-retention' for 'periodic' mode.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' option is not applicable directly in the etcd configuration. It might be used in a different context or requires specific proxy configuration.

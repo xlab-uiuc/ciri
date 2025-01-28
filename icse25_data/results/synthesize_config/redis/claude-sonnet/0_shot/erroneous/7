@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proto-max-bulk-len', 'oom-score-adj', 'replica-read-only'], 'reason': ["The parameter 'proto-max-bulk-len' is not a valid Redis configuration parameter in version 7.0.0.", "The parameter 'oom-score-adj' is not a valid Redis configuration parameter in version 7.0.0. The correct parameter is 'oom-score-adj-values'.", "The parameter 'replica-read-only' is not a valid Redis configuration parameter in version 7.0.0. The correct parameter is 'replica-read-only-replica-allow-writes'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proto-max-bulk-len	oom-score-adj	replica-read-only
+[Ciri] Reason for proto-max-bulk-len: The parameter 'proto-max-bulk-len' is not a valid Redis configuration parameter in version 7.0.0.
+[Ciri] Reason for oom-score-adj: The parameter 'oom-score-adj' is not a valid Redis configuration parameter in version 7.0.0. The correct parameter is 'oom-score-adj-values'.
+[Ciri] Reason for replica-read-only: The parameter 'replica-read-only' is not a valid Redis configuration parameter in version 7.0.0. The correct parameter is 'replica-read-only-replica-allow-writes'.

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendonly', 'appendfsync', 'activerehashing', 'always-show-logo', 'repl-diskless-sync-max-replicas', 'aof-rewrite-incremental-fsync'], 'reason': ['appendonly can only be yes or no', 'appendfsync can only be always, everysec, or no', 'activerehashing can only be yes or no', 'always-show-logo can only be yes or no', 'repl-diskless-sync-max-replicas must be an integer', 'aof-rewrite-incremental-fsync can only be yes or no']}
+
+{'hasError': True, 'errParameter': ['appendonly', 'appendfsync', 'activerehashing', 'always-show-logo', 'dir', 'repl-diskless-sync-max-replicas', 'aof-rewrite-incremental-fsync', 'port'], 'reason': ['appendonly should be either yes or no', 'appendfsync should be either always, everysec, or no', 'activerehashing should be either yes or no', 'always-show-logo should be either yes or no', 'dir should be a valid directory', 'repl-diskless-sync-max-replicas should be a positive integer', 'aof-rewrite-incremental-fsync should be either yes or no', 'port should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['appendonly', 'appendfsync', 'activerehashing', 'always-show-logo', 'dir', 'repl-diskless-sync-max-replicas', 'aof-rewrite-incremental-fsync', 'port'], 'reason': ['appendonly must be either yes or no', 'appendfsync must be either always or everysec', 'activerehashing must be either yes or no', 'always-show-logo must be either yes or no', 'dir must be a valid directory', 'repl-diskless-sync-max-replicas must be a positive integer', 'aof-rewrite-incremental-fsync must be either yes or no', 'port must be a positive integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: appendonly	appendfsync	activerehashing	always-show-logo	dir	repl-diskless-sync-max-replicas	aof-rewrite-incremental-fsync	port
+[Ciri] Reason for appendonly: appendonly must be either yes or no
+[Ciri] Reason for appendfsync: appendfsync should be either always, everysec, or no
+[Ciri] Reason for activerehashing: activerehashing should be either yes or no
+[Ciri] Reason for always-show-logo: always-show-logo must be either yes or no
+[Ciri] Reason for dir: dir must be a valid directory
+[Ciri] Reason for repl-diskless-sync-max-replicas: repl-diskless-sync-max-replicas must be a positive integer
+[Ciri] Reason for aof-rewrite-incremental-fsync: aof-rewrite-incremental-fsync should be either yes or no
+[Ciri] Reason for port: port must be a positive integer

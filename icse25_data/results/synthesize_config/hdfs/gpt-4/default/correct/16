@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 16, 1]
+
+Correct shot number:
+[15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.oob.timeout-ms', 'dfs.namenode.snapshot.skiplist.interval'], 'reason': ["The property 'dfs.datanode.oob.timeout-ms' has an array value, which is not a supported format.", "The property 'dfs.namenode.snapshot.skiplist.interval' has a value of '1', which is not the default value of '10' as mentioned in the description. However, if this was an intentional change, it may not be an error."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.datanode.oob.timeout-ms	dfs.namenode.snapshot.skiplist.interval
+[Ciri] Reason for dfs.datanode.oob.timeout-ms: The property 'dfs.datanode.oob.timeout-ms' has an array value, which is not a supported format.
+[Ciri] Reason for dfs.namenode.snapshot.skiplist.interval: The property 'dfs.namenode.snapshot.skiplist.interval' has a value of '1', which is not the default value of '10' as mentioned in the description. However, if this was an intentional change, it may not be an error.

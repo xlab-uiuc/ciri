@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['locale-collate', 'maxmemory-clients', 'hash-max-listpack-entries', 'cluster-announce-port'], 'reason': ["locale-collate should have a value specified, such as 'locale-collate=en_US.UTF-8'", "maxmemory-clients takes a memory value, but '1g' is not a valid memory value format. It should be an integer representing bytes, like '1073741824'", "hash-max-listpack-entries is not a valid configuration parameter in Redis 7.0.0. The correct parameter is 'hash-max-ziplist-entries'", "cluster-announce-port should have a valid port number specified, '1' is not a valid port"]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: locale-collate	maxmemory-clients	hash-max-listpack-entries	cluster-announce-port
+[Ciri] Reason for locale-collate: locale-collate should have a value specified, such as 'locale-collate=en_US.UTF-8'
+[Ciri] Reason for maxmemory-clients: maxmemory-clients takes a memory value, but '1g' is not a valid memory value format. It should be an integer representing bytes, like '1073741824'
+[Ciri] Reason for hash-max-listpack-entries: hash-max-listpack-entries is not a valid configuration parameter in Redis 7.0.0. The correct parameter is 'hash-max-ziplist-entries'
+[Ciri] Reason for cluster-announce-port: cluster-announce-port should have a valid port number specified, '1' is not a valid port

@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 4, 11]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.maxClientCnxns', 'hbase.hstore.flusher.count'], 'reason': ["The 'usage' field is not a valid configuration property for HBase and seems to be included in error.", "The 'usage' field for 'hbase.hstore.flusher.count' is not a valid configuration property and should not be included."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.zookeeper.property.maxClientCnxns	hbase.hstore.flusher.count
+[Ciri] Reason for hbase.zookeeper.property.maxClientCnxns: The 'usage' field is not a valid configuration property for HBase and seems to be included in error.
+[Ciri] Reason for hbase.hstore.flusher.count: The 'usage' field for 'hbase.hstore.flusher.count' is not a valid configuration property and should not be included.

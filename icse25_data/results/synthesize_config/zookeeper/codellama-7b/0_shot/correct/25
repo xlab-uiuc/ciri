@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir and dataLogDir must be different directories', 'dataDir and dataLogDir must be different directories']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'maxClientCnxns', 'quorum.auth.enableSasl', 'quorum.auth.server.saslLoginContext', 'autopurge.purgeInterval', 'clientPort'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'maxClientCnxns must be an integer', 'quorum.auth.enableSasl must be a boolean', 'quorum.auth.server.saslLoginContext must be a string', 'autopurge.purgeInterval must be an integer', 'clientPort must be an integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir and dataLogDir must be absolute paths']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataDir	dataLogDir
+[Ciri] Reason for dataDir: dataDir and dataLogDir must be absolute paths
+[Ciri] Reason for dataLogDir: dataDir and dataLogDir must be different directories

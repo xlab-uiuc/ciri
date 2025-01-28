@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 3, 4]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['work_mem', 'maintenance_work_mem'], 'reason': ["The values of the properties 'work_mem' and 'maintenance_work_mem' should be less than or equal to the value of 'max_connections'."]}
+
+{'hasError': True, 'errParameter': ['work_mem'], 'reason': ["The value of the property 'work_mem' should be less than or equal to 'shared_buffers'."]}
+
+{'hasError': True, 'errParameter': ['work_mem', 'maintenance_work_mem'], 'reason': ["The values of the properties 'work_mem' and 'maintenance_work_mem' should be less than or equal to the value of 'shared_buffers'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: work_mem	maintenance_work_mem
+[Ciri] Reason for work_mem: The values of the properties 'work_mem' and 'maintenance_work_mem' should be less than or equal to the value of 'max_connections'.
+[Ciri] Reason for maintenance_work_mem: 

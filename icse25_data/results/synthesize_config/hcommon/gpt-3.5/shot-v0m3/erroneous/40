@@ -1,0 +1,13 @@
+Wrong shot number:
+[11, 8, 14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'ipc.client.low-latency', 'ipc.[port_number].decay-scheduler.decay-factor'], 'reason': ["The value of the property 'fs.ftp.transfer.mode' is 'NOEXIST_TRANSFER_MODE' which is not a valid transfer mode.", "The value of the property 'ipc.client.low-latency' should be 'true' to enable low-latency QoS markers for IPC connections.", "The property 'ipc.[port_number].decay-scheduler.decay-factor' is missing the specific port number placeholder and description."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.transfer.mode	ipc.client.low-latency	ipc.[port_number].decay-scheduler.decay-factor
+[Ciri] Reason for fs.ftp.transfer.mode: The value of the property 'fs.ftp.transfer.mode' is 'NOEXIST_TRANSFER_MODE' which is not a valid transfer mode.
+[Ciri] Reason for ipc.client.low-latency: The value of the property 'ipc.client.low-latency' should be 'true' to enable low-latency QoS markers for IPC connections.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.decay-factor: The property 'ipc.[port_number].decay-scheduler.decay-factor' is missing the specific port number placeholder and description.

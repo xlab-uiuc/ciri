@@ -1,0 +1,14 @@
+Correct shot number:
+[3, 6, 1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'DATABASES', 'LANGUAGE_COOKIE_AGE', 'THOUSAND_SEPARATOR'], 'reason': ['SECURE_HSTS_SECONDS should be an integer representing the number of seconds for HSTS.', 'DATABASES setting is empty. It should contain configuration for database connections.', 'LANGUAGE_COOKIE_AGE should be an integer representing the age of the language cookie in seconds.', 'THOUSAND_SEPARATOR should be a string specifying the character used for thousand separator.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: SECURE_HSTS_SECONDS	DATABASES	LANGUAGE_COOKIE_AGE	THOUSAND_SEPARATOR
+[Ciri] Reason for SECURE_HSTS_SECONDS: SECURE_HSTS_SECONDS should be an integer representing the number of seconds for HSTS.
+[Ciri] Reason for DATABASES: DATABASES setting is empty. It should contain configuration for database connections.
+[Ciri] Reason for LANGUAGE_COOKIE_AGE: LANGUAGE_COOKIE_AGE should be an integer representing the age of the language cookie in seconds.
+[Ciri] Reason for THOUSAND_SEPARATOR: THOUSAND_SEPARATOR should be a string specifying the character used for thousand separator.

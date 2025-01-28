@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['strict-reconfig-check', 'proxy-dial-timeout', 'proxy-read-timeout'], 'reason': ["The 'strict-reconfig-check' parameter is not a valid etcd configuration option.", "The 'proxy-dial-timeout' parameter is applicable only when etcd is running in proxy mode, which is deprecated in etcd 3.5.0.", "The 'proxy-read-timeout' parameter is applicable only when etcd is running in proxy mode, which is deprecated in etcd 3.5.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: strict-reconfig-check	proxy-dial-timeout	proxy-read-timeout
+[Ciri] Reason for strict-reconfig-check: The 'strict-reconfig-check' parameter is not a valid etcd configuration option.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' parameter is applicable only when etcd is running in proxy mode, which is deprecated in etcd 3.5.0.
+[Ciri] Reason for proxy-read-timeout: The 'proxy-read-timeout' parameter is applicable only when etcd is running in proxy mode, which is deprecated in etcd 3.5.0.

@@ -1,0 +1,15 @@
+Wrong shot number:
+[11, 8, 1]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.blockreport.intervalMsec', 'dfs.namenode.max.objects'], 'reason': ['The value 35000000 for dfs.blockreport.intervalMsec exceeds the allowed range. It should be between 0 and 10800000 (3 hours).', 'The value 1 for dfs.namenode.max.objects is too low. It should be at least 1000.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.blockreport.intervalMsec	dfs.namenode.max.objects
+[Ciri] Reason for dfs.blockreport.intervalMsec: The value 35000000 for dfs.blockreport.intervalMsec exceeds the allowed range. It should be between 0 and 10800000 (3 hours).
+[Ciri] Reason for dfs.namenode.max.objects: The value 1 for dfs.namenode.max.objects is too low. It should be at least 1000.

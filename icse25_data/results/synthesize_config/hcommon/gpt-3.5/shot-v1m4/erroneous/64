@@ -1,0 +1,15 @@
+Wrong shot number:
+[6, 11, 9, 3]
+
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.sensitive-config-keys', 'fs.s3.maxRetries'], 'reason': ["The property 'hadoop.security.sensitive-config-keys' has a value 'secret$' which may not be a valid regular expression.", "The property 'fs.s3.maxRetries' has a value '5' which may be too low for the maximum number of retries for reading or writing files to S3."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.sensitive-config-keys	fs.s3.maxRetries
+[Ciri] Reason for hadoop.security.sensitive-config-keys: The property 'hadoop.security.sensitive-config-keys' has a value 'secret$' which may not be a valid regular expression.
+[Ciri] Reason for fs.s3.maxRetries: The property 'fs.s3.maxRetries' has a value '5' which may be too low for the maximum number of retries for reading or writing files to S3.

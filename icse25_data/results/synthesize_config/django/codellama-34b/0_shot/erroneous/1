@@ -1,0 +1,37 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG'], 'reason': ['DEBUG is not a valid boolean value.']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'FIRST_DAY_OF_WEEK'], 'reason': ['DEBUG should be a boolean value, FIRST_DAY_OF_WEEK should be an integer value']}
+
+{'hasError': True, 'errParameter': ['ALLOWED_HOSTS', 'FIRST_DAY_OF_WEEK', 'STATICFILES_STORAGE', 'LANGUAGE_COOKIE_DOMAIN', 'DEFAULT_EXCEPTION_REPORTER_FILTER', 'SESSION_SAVE_EVERY_REQUEST', 'DEFAULT_EXCEPTION_REPORTER', 'STATICFILES_FINDERS'], 'reason': ['ALLOWED_HOSTS should be a list', 'FIRST_DAY_OF_WEEK should be an integer', 'STATICFILES_STORAGE should be a string', 'LANGUAGE_COOKIE_DOMAIN should be a string', 'DEFAULT_EXCEPTION_REPORTER_FILTER should be a string', 'SESSION_SAVE_EVERY_REQUEST should be a boolean', 'DEFAULT_EXCEPTION_REPORTER should be a string', 'STATICFILES_FINDERS should be a list']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'FIRST_DAY_OF_WEEK', 'STATICFILES_STORAGE'], 'reason': ['DEBUG should be a boolean value', 'FIRST_DAY_OF_WEEK should be an integer value', 'STATICFILES_STORAGE should be a string value']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['DEBUG'], 'reason': ['DEBUG is not a valid boolean value']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'SECRET_KEY', 'ALLOWED_HOSTS', 'STATICFILES_STORAGE', 'LANGUAGE_COOKIE_DOMAIN', 'DEFAULT_EXCEPTION_REPORTER_FILTER', 'DEFAULT_EXCEPTION_REPORTER'], 'reason': ['DEBUG should be a boolean', 'SECRET_KEY should be a string', 'ALLOWED_HOSTS should be a list', 'STATICFILES_STORAGE should be a string', 'LANGUAGE_COOKIE_DOMAIN should be a string', 'DEFAULT_EXCEPTION_REPORTER_FILTER should be a string', 'DEFAULT_EXCEPTION_REPORTER should be a string']}
+
+{'hasError': True, 'errParameter': ['DEBUG'], 'reason': ['DEBUG should be a boolean value']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'FIRST_DAY_OF_WEEK'], 'reason': ['DEBUG is not a valid boolean value', 'FIRST_DAY_OF_WEEK is not a valid integer value']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['DEBUG', 'FIRST_DAY_OF_WEEK'], 'reason': ['DEBUG should be a boolean, FIRST_DAY_OF_WEEK should be an integer']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'FIRST_DAY_OF_WEEK'], 'reason': ['DEBUG should be a boolean value', 'FIRST_DAY_OF_WEEK should be an integer value']}
+
+{'hasError': True, 'errParameter': ['DEBUG', 'FIRST_DAY_OF_WEEK'], 'reason': ['DEBUG is not a boolean value.', 'FIRST_DAY_OF_WEEK is not a valid value for FIRST_DAY_OF_WEEK.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: DEBUG	FIRST_DAY_OF_WEEK
+[Ciri] Reason for DEBUG: DEBUG should be a boolean, FIRST_DAY_OF_WEEK should be an integer
+[Ciri] Reason for FIRST_DAY_OF_WEEK: FIRST_DAY_OF_WEEK is not a valid value for FIRST_DAY_OF_WEEK.

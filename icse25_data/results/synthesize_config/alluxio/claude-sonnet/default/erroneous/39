@@ -1,0 +1,16 @@
+Wrong shot number:
+[8, 13, 7]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.job.master.finished.job.purge.count', 'alluxio.worker.management.tier.promote.quota.percent'], 'reason': ["The property 'alluxio.proxy.web.bind.host' has the value '0.0.256.0' which is not a valid IP address.", "The property 'alluxio.job.master.finished.job.purge.count' has the value '-2' which is not within the accepted value range of non-negative integers.", "The property 'alluxio.worker.management.tier.promote.quota.percent' has the value '180' which is not within the accepted value range of 0 to 100."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.proxy.web.bind.host	alluxio.job.master.finished.job.purge.count	alluxio.worker.management.tier.promote.quota.percent
+[Ciri] Reason for alluxio.proxy.web.bind.host: The property 'alluxio.proxy.web.bind.host' has the value '0.0.256.0' which is not a valid IP address.
+[Ciri] Reason for alluxio.job.master.finished.job.purge.count: The property 'alluxio.job.master.finished.job.purge.count' has the value '-2' which is not within the accepted value range of non-negative integers.
+[Ciri] Reason for alluxio.worker.management.tier.promote.quota.percent: The property 'alluxio.worker.management.tier.promote.quota.percent' has the value '180' which is not within the accepted value range of 0 to 100.

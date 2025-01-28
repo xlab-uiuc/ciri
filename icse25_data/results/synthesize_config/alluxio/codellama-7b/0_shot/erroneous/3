@@ -1,0 +1,45 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ['alluxio.user.network.streaming.flowcontrol.window should be a positive integer', 'alluxio.user.logging.threshold should be a positive duration']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.max', 'alluxio.user.network.streaming.flowcontrol.window'], 'reason': ['alluxio.master.backup.connect.interval.max should be a positive integer', 'alluxio.user.network.streaming.flowcontrol.window should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.max', 'alluxio.master.ufs.active.sync.event.rate.interval'], 'reason': ['alluxio.master.backup.connect.interval.max should be a positive integer', 'alluxio.master.ufs.active.sync.event.rate.interval should be a positive integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.flowcontrol.window'], 'reason': ['alluxio.user.network.streaming.flowcontrol.window should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ['alluxio.user.network.streaming.flowcontrol.window should be a positive integer', 'alluxio.user.logging.threshold should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.max', 'alluxio.master.backup.entry.buffer.count', 'alluxio.master.ufs.active.sync.event.rate.interval', 'alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ['alluxio.master.backup.connect.interval.max should be greater than 0', 'alluxio.master.backup.entry.buffer.count should be greater than 0', 'alluxio.master.ufs.active.sync.event.rate.interval should be greater than 0', 'alluxio.user.network.streaming.flowcontrol.window should be greater than 0', 'alluxio.user.logging.threshold should be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.max', 'alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ['alluxio.master.backup.connect.interval.max should be a positive integer', 'alluxio.user.network.streaming.flowcontrol.window should be a positive integer', 'alluxio.user.logging.threshold should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.flowcontrol.window'], 'reason': ['alluxio.user.network.streaming.flowcontrol.window must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ['The value of alluxio.user.network.streaming.flowcontrol.window should be a positive integer, but the value provided is 2MB.', 'The value of alluxio.user.logging.threshold should be a positive integer, but the value provided is 10s.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.flowcontrol.window'], 'reason': ['alluxio.user.network.streaming.flowcontrol.window is not a valid property for alluxio version 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.max', 'alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ['alluxio.master.backup.connect.interval.max should be greater than 0', 'alluxio.user.network.streaming.flowcontrol.window should be greater than 0', 'alluxio.user.logging.threshold should be greater than 0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ['The value of alluxio.user.network.streaming.flowcontrol.window is not a valid value. The value must be a positive integer.', 'The value of alluxio.user.logging.threshold is not a valid value. The value must be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.max', 'alluxio.user.network.streaming.flowcontrol.window'], 'reason': ['alluxio.master.backup.connect.interval.max is not a valid property', 'alluxio.user.network.streaming.flowcontrol.window is not a valid property']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.max', 'alluxio.user.network.streaming.flowcontrol.window'], 'reason': ['alluxio.master.backup.connect.interval.max should be a positive integer', 'alluxio.user.network.streaming.flowcontrol.window should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.connect.interval.max', 'alluxio.master.backup.entry.buffer.count', 'alluxio.master.ufs.active.sync.event.rate.interval', 'alluxio.user.network.streaming.flowcontrol.window', 'alluxio.user.logging.threshold'], 'reason': ['alluxio.master.backup.connect.interval.max should be greater than 0', 'alluxio.master.backup.entry.buffer.count should be greater than 0', 'alluxio.master.ufs.active.sync.event.rate.interval should be greater than 0', 'alluxio.user.network.streaming.flowcontrol.window should be greater than 0', 'alluxio.user.logging.threshold should be greater than 0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.backup.connect.interval.max	alluxio.user.network.streaming.flowcontrol.window
+[Ciri] Reason for alluxio.master.backup.connect.interval.max: alluxio.master.backup.connect.interval.max should be a positive integer
+[Ciri] Reason for alluxio.user.network.streaming.flowcontrol.window: alluxio.user.network.streaming.flowcontrol.window is not a valid property

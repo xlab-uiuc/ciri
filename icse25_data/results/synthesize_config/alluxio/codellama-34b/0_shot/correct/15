@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.folder', 'alluxio.master.rpc.addresses', 'alluxio.user.master.polling.timeout', 'alluxio.underfs.web.connnection.timeout', 'alluxio.underfs.s3.directory.suffix', 'alluxio.user.block.master.client.pool.gc.threshold', 'alluxio.master.shell.backup.state.lock.try.duration', 'alluxio.master.metadata.sync.concurrency.level', 'alluxio.worker.tieredstore.level0.dirs.mediumtype'], 'reason': ['alluxio.master.journal.folder should be a directory', 'alluxio.master.rpc.addresses should be a comma-separated list of hostname:port', 'alluxio.user.master.polling.timeout should be a time value with a unit (e.g., 1sec, 1min, 1hr)', 'alluxio.underfs.web.connnection.timeout should be a time value with a unit (e.g., 1sec, 1min, 1hr)', 'alluxio.underfs.s3.directory.suffix should be a string', 'alluxio.user.block.master.client.pool.gc.threshold should be a time value with a unit (e.g., 1sec, 1min, 1hr)', 'alluxio.master.shell.backup.state.lock.try.duration should be a time value with a unit (e.g., 1sec, 1min, 1hr)', 'alluxio.master.metadata.sync.concurrency.level should be an integer', 'alluxio.worker.tieredstore.level0.dirs.mediumtype should be a string']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: alluxio.master.journal.folder	alluxio.master.rpc.addresses	alluxio.user.master.polling.timeout	alluxio.underfs.web.connnection.timeout	alluxio.underfs.s3.directory.suffix	alluxio.user.block.master.client.pool.gc.threshold	alluxio.master.shell.backup.state.lock.try.duration	alluxio.master.metadata.sync.concurrency.level	alluxio.worker.tieredstore.level0.dirs.mediumtype
+[Ciri] Reason for alluxio.master.journal.folder: alluxio.master.journal.folder should be a directory
+[Ciri] Reason for alluxio.master.rpc.addresses: alluxio.master.rpc.addresses should be a comma-separated list of hostname:port
+[Ciri] Reason for alluxio.user.master.polling.timeout: alluxio.user.master.polling.timeout should be a time value with a unit (e.g., 1sec, 1min, 1hr)
+[Ciri] Reason for alluxio.underfs.web.connnection.timeout: alluxio.underfs.web.connnection.timeout should be a time value with a unit (e.g., 1sec, 1min, 1hr)
+[Ciri] Reason for alluxio.underfs.s3.directory.suffix: alluxio.underfs.s3.directory.suffix should be a string
+[Ciri] Reason for alluxio.user.block.master.client.pool.gc.threshold: alluxio.user.block.master.client.pool.gc.threshold should be a time value with a unit (e.g., 1sec, 1min, 1hr)
+[Ciri] Reason for alluxio.master.shell.backup.state.lock.try.duration: alluxio.master.shell.backup.state.lock.try.duration should be a time value with a unit (e.g., 1sec, 1min, 1hr)
+[Ciri] Reason for alluxio.master.metadata.sync.concurrency.level: alluxio.master.metadata.sync.concurrency.level should be an integer
+[Ciri] Reason for alluxio.worker.tieredstore.level0.dirs.mediumtype: alluxio.worker.tieredstore.level0.dirs.mediumtype should be a string

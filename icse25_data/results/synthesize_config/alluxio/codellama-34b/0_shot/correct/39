@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.netty.worker.threads', 'alluxio.underfs.s3.socket.timeout', 'alluxio.underfs.hdfs.impl'], 'reason': ['alluxio.worker.network.netty.worker.threads cannot be negative', 'alluxio.underfs.s3.socket.timeout cannot be less than 1 second', 'alluxio.underfs.hdfs.impl cannot be changed']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.worker.network.netty.worker.threads	alluxio.underfs.s3.socket.timeout	alluxio.underfs.hdfs.impl
+[Ciri] Reason for alluxio.worker.network.netty.worker.threads: alluxio.worker.network.netty.worker.threads cannot be negative
+[Ciri] Reason for alluxio.underfs.s3.socket.timeout: alluxio.underfs.s3.socket.timeout cannot be less than 1 second
+[Ciri] Reason for alluxio.underfs.hdfs.impl: alluxio.underfs.hdfs.impl cannot be changed

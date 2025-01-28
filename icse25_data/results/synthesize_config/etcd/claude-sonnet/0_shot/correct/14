@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'advertise-client-urls'], 'reason': ['The quota-backend-bytes value of 1 is too low and may cause issues with storing data in etcd. A recommended minimum value is 8589934592 (8GB).', 'The advertise-client-urls value should be a valid IP address or hostname that other etcd nodes and clients can use to communicate with this node. Using localhost will only allow communication from the same machine.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quota-backend-bytes	advertise-client-urls
+[Ciri] Reason for quota-backend-bytes: The quota-backend-bytes value of 1 is too low and may cause issues with storing data in etcd. A recommended minimum value is 8589934592 (8GB).
+[Ciri] Reason for advertise-client-urls: The advertise-client-urls value should be a valid IP address or hostname that other etcd nodes and clients can use to communicate with this node. Using localhost will only allow communication from the same machine.

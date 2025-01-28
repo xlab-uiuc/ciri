@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'proxy', 'quota-backend-bytes', 'enable-v2', 'force-new-cluster', 'election-timeout'], 'reason': ['proxy-dial-timeout should be in milliseconds, e.g., 2000ms', 'proxy-refresh-interval should be in milliseconds, e.g., 60000ms', "proxy should be 'on' or 'readonly', not 'off'", 'quota-backend-bytes should be a positive integer value', 'enable-v2 should be a boolean value, e.g., true or false', 'force-new-cluster should be a boolean value, e.g., true or false', 'election-timeout should be in milliseconds, e.g., 500ms']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'proxy', 'quota-backend-bytes', 'enable-v2', 'force-new-cluster', 'election-timeout'], 'reason': ['proxy-dial-timeout is not a valid parameter for etcd version 3.5.0', 'proxy-refresh-interval is not a valid parameter for etcd version 3.5.0', 'proxy is not a valid parameter for etcd version 3.5.0', 'quota-backend-bytes is not a valid parameter for etcd version 3.5.0', 'enable-v2 is not a valid parameter for etcd version 3.5.0', 'force-new-cluster is not a valid parameter for etcd version 3.5.0', 'election-timeout is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-refresh-interval', 'proxy', 'quota-backend-bytes', 'force-new-cluster', 'election-timeout'], 'reason': ['proxy-dial-timeout should be in milliseconds, consider changing to a value like 2000ms', 'proxy-refresh-interval should be in milliseconds, consider changing to a value like 60000ms', "proxy should be a valid configuration, consider changing to 'on' or 'readonly'", 'quota-backend-bytes should be a positive integer value, consider changing to a non-zero value', 'force-new-cluster should be a boolean value, consider changing to true or false', 'election-timeout should be in milliseconds, consider changing to a value like 500ms']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: proxy-dial-timeout	proxy-refresh-interval	proxy	quota-backend-bytes	enable-v2	force-new-cluster	election-timeout
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout should be in milliseconds, e.g., 2000ms
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval should be in milliseconds, e.g., 60000ms
+[Ciri] Reason for proxy: proxy should be 'on' or 'readonly', not 'off'
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for enable-v2: enable-v2 is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for force-new-cluster: force-new-cluster is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for election-timeout: election-timeout is not a valid parameter for etcd version 3.5.0

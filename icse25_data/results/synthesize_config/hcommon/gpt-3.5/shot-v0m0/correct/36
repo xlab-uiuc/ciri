@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.automatic.close', 'fs.s3a.readahead.range', 'ha.failover-controller.graceful-fence.connection.retries'], 'reason': ["The property 'fs.automatic.close' has an incorrect usage tag.", "The value for 'fs.s3a.readahead.range' should be in bytes, not in 'K'.", "The property 'ha.failover-controller.graceful-fence.connection.retries' has a typo in the description."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.automatic.close	fs.s3a.readahead.range	ha.failover-controller.graceful-fence.connection.retries
+[Ciri] Reason for fs.automatic.close: The property 'fs.automatic.close' has an incorrect usage tag.
+[Ciri] Reason for fs.s3a.readahead.range: The value for 'fs.s3a.readahead.range' should be in bytes, not in 'K'.
+[Ciri] Reason for ha.failover-controller.graceful-fence.connection.retries: The property 'ha.failover-controller.graceful-fence.connection.retries' has a typo in the description.

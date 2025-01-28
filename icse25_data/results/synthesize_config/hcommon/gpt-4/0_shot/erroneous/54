@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.assumed.role.credentials.provider', 'fs.AbstractFileSystem.adl.impl'], 'reason': ["The correct property name for configuring the assumed role credentials provider in S3AFileSystem is 'fs.s3a.assumed.role.arn' and it should be set with the ARN of the role to assume. The property 'fs.s3a.assumed.role.credentials.provider' does not exist.", "The property 'fs.AbstractFileSystem.adl.impl' is specific to Azure Data Lake and should not be part of a generic Hadoop configuration unless Azure Data Lake support is explicitly required. Additionally, the usage tag within the property is not a standard configuration element."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.assumed.role.credentials.provider	fs.AbstractFileSystem.adl.impl
+[Ciri] Reason for fs.s3a.assumed.role.credentials.provider: The correct property name for configuring the assumed role credentials provider in S3AFileSystem is 'fs.s3a.assumed.role.arn' and it should be set with the ARN of the role to assume. The property 'fs.s3a.assumed.role.credentials.provider' does not exist.
+[Ciri] Reason for fs.AbstractFileSystem.adl.impl: The property 'fs.AbstractFileSystem.adl.impl' is specific to Azure Data Lake and should not be part of a generic Hadoop configuration unless Azure Data Lake support is explicitly required. Additionally, the usage tag within the property is not a standard configuration element.

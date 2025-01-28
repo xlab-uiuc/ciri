@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.log-slow-lookups.enabled', 'io.erasurecode.codec.xor.rawcoders', 'fs.azure.local.sas.key.mode'], 'reason': ["The value for 'hadoop.security.dns.log-slow-lookups.enabled' should be true or false, not a numeric value.", "The property 'io.erasurecode.codec.xor.rawcoders' is not a recognized configuration parameter in Hadoop 3.3.0.", "The description for 'fs.azure.local.sas.key.mode' suggests it works with 'fs.azure.secure.mode', which is not present in the configuration. Additionally, the usage context provided is not standard for XML configuration files."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.dns.log-slow-lookups.enabled	io.erasurecode.codec.xor.rawcoders	fs.azure.local.sas.key.mode
+[Ciri] Reason for hadoop.security.dns.log-slow-lookups.enabled: The value for 'hadoop.security.dns.log-slow-lookups.enabled' should be true or false, not a numeric value.
+[Ciri] Reason for io.erasurecode.codec.xor.rawcoders: The property 'io.erasurecode.codec.xor.rawcoders' is not a recognized configuration parameter in Hadoop 3.3.0.
+[Ciri] Reason for fs.azure.local.sas.key.mode: The description for 'fs.azure.local.sas.key.mode' suggests it works with 'fs.azure.secure.mode', which is not present in the configuration. Additionally, the usage context provided is not standard for XML configuration files.

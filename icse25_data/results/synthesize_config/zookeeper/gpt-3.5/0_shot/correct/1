@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval', 'quorum.auth.learner.saslLoginContext', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'clientPortAddress', 'secureClientPort'], 'reason': ['minSessionTimeout value should be greater than 0.', 'autopurge.purgeInterval value should be greater than 0.', "quorum.auth.learner.saslLoginContext should not be set to 'QuorumLearner'.", "localSessionsEnabled should be set to 'true'.", "sslQuorumReloadCertFiles should be set to 'true'.", "quorum.auth.kerberos.servicePrincipal should be in the format 'zk/quorum@localhost'.", "clientPortAddress should not be set to '0.0.0.0:3001'.", "secureClientPort should be set to '0'."]}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'clientPortAddress'], 'reason': ['minSessionTimeout should be a positive value.', 'autopurge.purgeInterval should be a positive value.', 'localSessionsEnabled should be set to true or false.', 'sslQuorumReloadCertFiles should be set to true or false.', 'clientPortAddress should specify a valid IP address and port.']}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'autopurge.purgeInterval', 'quorum.auth.learner.saslLoginContext', 'localSessionsEnabled', 'sslQuorumReloadCertFiles', 'quorum.auth.kerberos.servicePrincipal', 'clientPortAddress', 'secureClientPort'], 'reason': ['minSessionTimeout should be a positive value', 'autopurge.purgeInterval should be a positive value', 'quorum.auth.learner.saslLoginContext should be a valid login context', 'localSessionsEnabled should be set to true or false', 'sslQuorumReloadCertFiles should be set to true or false', 'quorum.auth.kerberos.servicePrincipal should be a valid service principal', 'clientPortAddress should be in the format host:port', 'secureClientPort should be a valid port number']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: minSessionTimeout	autopurge.purgeInterval	quorum.auth.learner.saslLoginContext	localSessionsEnabled	sslQuorumReloadCertFiles	quorum.auth.kerberos.servicePrincipal	clientPortAddress	secureClientPort
+[Ciri] Reason for minSessionTimeout: minSessionTimeout should be a positive value
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval value should be greater than 0.
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: quorum.auth.learner.saslLoginContext should not be set to 'QuorumLearner'.
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled should be set to 'true'.
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles should be set to true or false
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal should be in the format 'zk/quorum@localhost'.
+[Ciri] Reason for clientPortAddress: clientPortAddress should not be set to '0.0.0.0:3001'.
+[Ciri] Reason for secureClientPort: secureClientPort should be a valid port number

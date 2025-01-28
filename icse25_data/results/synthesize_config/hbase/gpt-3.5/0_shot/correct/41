@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['zookeeper.znode.parent', 'hbase.cells.scanned.per.heartbeat.check'], 'reason': ["The property 'zookeeper.znode.parent' has a value '/valid/file1' which may not be a valid Zookeeper znode path.", "The property 'hbase.cells.scanned.per.heartbeat.check' has a value '20000' which may be too high for optimal performance."]}
+
+{'hasError': True, 'errParameter': ['zookeeper.znode.parent', 'hbase.cells.scanned.per.heartbeat.check'], 'reason': ["The property 'zookeeper.znode.parent' has a value '/valid/file1' which may not be a valid ZooKeeper znode path.", "The property 'hbase.cells.scanned.per.heartbeat.check' has a value '20000' which may be too high for efficient heartbeat checks."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: zookeeper.znode.parent	hbase.cells.scanned.per.heartbeat.check
+[Ciri] Reason for zookeeper.znode.parent: The property 'zookeeper.znode.parent' has a value '/valid/file1' which may not be a valid Zookeeper znode path.
+[Ciri] Reason for hbase.cells.scanned.per.heartbeat.check: The property 'hbase.cells.scanned.per.heartbeat.check' has a value '20000' which may be too high for optimal performance.

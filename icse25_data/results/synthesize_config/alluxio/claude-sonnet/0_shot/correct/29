@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.web.threads=0', 'alluxio.underfs.web.parent.names=..'], 'reason': ['alluxio.web.threads=0 is not a valid configuration. The minimum number of web threads should be 1.', "alluxio.underfs.web.parent.names=.. is not a valid configuration. The value '..' is not allowed as it can lead to directory traversal vulnerabilities."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.web.threads=0	alluxio.underfs.web.parent.names=..
+[Ciri] Reason for alluxio.web.threads=0: alluxio.web.threads=0 is not a valid configuration. The minimum number of web threads should be 1.
+[Ciri] Reason for alluxio.underfs.web.parent.names=..: alluxio.underfs.web.parent.names=.. is not a valid configuration. The value '..' is not allowed as it can lead to directory traversal vulnerabilities.

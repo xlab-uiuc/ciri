@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPort', 'electionAlg', 'quorum.auth.enableSasl'], 'reason': ['clientPort value is invalid. It should be a positive integer representing the port that the ZooKeeper client connects to.', 'electionAlg is no longer used in ZooKeeper 3.5.0 and later versions. The election algorithm is now determined automatically.', 'quorum.auth.enableSasl is set to false, but quorum.auth.learnerRequireSasl is true, which is contradictory. SASL authentication for quorum communication should be enabled for learnerRequireSasl to be meaningful.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: clientPort	electionAlg	quorum.auth.enableSasl
+[Ciri] Reason for clientPort: clientPort value is invalid. It should be a positive integer representing the port that the ZooKeeper client connects to.
+[Ciri] Reason for electionAlg: electionAlg is no longer used in ZooKeeper 3.5.0 and later versions. The election algorithm is now determined automatically.
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl is set to false, but quorum.auth.learnerRequireSasl is true, which is contradictory. SASL authentication for quorum communication should be enabled for learnerRequireSasl to be meaningful.

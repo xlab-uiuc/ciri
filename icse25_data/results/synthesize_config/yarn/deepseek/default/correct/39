@@ -1,0 +1,18 @@
+Wrong shot number:
+[3, 4, 5]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.runc.image-toplevel-dir'], 'reason': ["The property 'yarn.nodemanager.runtime.linux.runc.image-toplevel-dir' has the value '/valid/file2' which does not seem to be a valid directory."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.container-localizer.java.opts'], 'reason': ["The property 'yarn.nodemanager.container-localizer.java.opts' has the value '-Xmx256m' which is not a valid memory size."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.runc.image-toplevel-dir'], 'reason': ["The property 'yarn.nodemanager.runtime.linux.runc.image-toplevel-dir' has the value '/valid/file2' which does not seem to be a valid directory."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.runtime.linux.runc.image-toplevel-dir
+[Ciri] Reason for yarn.nodemanager.runtime.linux.runc.image-toplevel-dir: The property 'yarn.nodemanager.runtime.linux.runc.image-toplevel-dir' has the value '/valid/file2' which does not seem to be a valid directory.

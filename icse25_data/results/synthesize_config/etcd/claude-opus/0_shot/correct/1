@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'proxy-write-timeout', 'proxy-dial-timeout'], 'reason': ["The 'max-wals' parameter is not a valid configuration option for etcd v3.5.0. The correct parameter is 'max-snapshots'.", "The 'proxy-write-timeout' and 'proxy-dial-timeout' parameters are specified in milliseconds, but etcd v3.5.0 expects them to be in the format of a duration string, such as '5s' for 5 seconds or '500ms' for 500 milliseconds."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max-wals	proxy-write-timeout	proxy-dial-timeout
+[Ciri] Reason for max-wals: The 'max-wals' parameter is not a valid configuration option for etcd v3.5.0. The correct parameter is 'max-snapshots'.
+[Ciri] Reason for proxy-write-timeout: The 'proxy-write-timeout' and 'proxy-dial-timeout' parameters are specified in milliseconds, but etcd v3.5.0 expects them to be in the format of a duration string, such as '5s' for 5 seconds or '500ms' for 500 milliseconds.
+[Ciri] Reason for proxy-dial-timeout: 

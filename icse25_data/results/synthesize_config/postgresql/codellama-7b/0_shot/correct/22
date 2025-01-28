@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cpu_tuple_cost', 'autovacuum_vacuum_cost_delay', 'min_wal_size', 'default_transaction_isolation', 'enable_hashjoin', 'enable_parallel_hash', 'password_encryption'], 'reason': ['cpu_tuple_cost must be a positive number', 'autovacuum_vacuum_cost_delay must be a positive number', 'min_wal_size must be a positive number', 'default_transaction_isolation must be a valid transaction isolation level', 'enable_hashjoin must be a boolean', 'enable_parallel_hash must be a boolean', 'password_encryption must be a valid password encryption method']}
+
+{'hasError': True, 'errParameter': ['autovacuum_vacuum_cost_delay', 'min_wal_size'], 'reason': ['The value of autovacuum_vacuum_cost_delay must be between 0 and 1000000000, inclusive. The value of min_wal_size must be between 0 and 1000000000, inclusive.']}
+
+{'hasError': True, 'errParameter': ['enable_mergejoin', 'cpu_tuple_cost', 'autovacuum_vacuum_cost_delay', 'min_wal_size', 'default_transaction_isolation', 'enable_hashjoin', 'enable_parallel_hash', 'password_encryption'], 'reason': ['enable_mergejoin must be either on or off', 'cpu_tuple_cost must be a positive number', 'autovacuum_vacuum_cost_delay must be a positive number', 'min_wal_size must be a positive number', "default_transaction_isolation must be either 'read committed' or 'repeatable read'", 'enable_hashjoin must be either on or off', 'enable_parallel_hash must be either on or off', "password_encryption must be either 'md5' or 'scram-sha-256'"]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable_mergejoin'], 'reason': ['enable_mergejoin is not a valid parameter for postgresql version 13.0']}
+
+{'hasError': True, 'errParameter': ['cpu_tuple_cost', 'autovacuum_vacuum_cost_delay', 'min_wal_size', 'default_transaction_isolation', 'enable_hashjoin', 'enable_parallel_hash', 'password_encryption'], 'reason': ['cpu_tuple_cost must be a positive number', 'autovacuum_vacuum_cost_delay must be a positive number', 'min_wal_size must be a positive number', 'default_transaction_isolation must be one of the following: default, read committed, repeatable read, serializable', 'enable_hashjoin must be a boolean', 'enable_parallel_hash must be a boolean', 'password_encryption must be one of the following: md5, scram-sha-256, scram-sha-256-verify']}
+
+{'hasError': True, 'errParameter': ['cpu_tuple_cost', 'autovacuum_vacuum_cost_delay', 'min_wal_size', 'default_transaction_isolation', 'enable_hashjoin', 'enable_parallel_hash', 'password_encryption'], 'reason': ['cpu_tuple_cost must be a positive number', 'autovacuum_vacuum_cost_delay must be a positive number', 'min_wal_size must be a positive number', "default_transaction_isolation must be one of the following: 'read committed', 'repeatable read', 'serializable'", 'enable_hashjoin must be a boolean', 'enable_parallel_hash must be a boolean', "password_encryption must be one of the following: 'md5', 'scram-sha-256', 'scram-sha-256-verify'"]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: cpu_tuple_cost	autovacuum_vacuum_cost_delay	min_wal_size	default_transaction_isolation	enable_hashjoin	enable_parallel_hash	password_encryption
+[Ciri] Reason for cpu_tuple_cost: cpu_tuple_cost must be a positive number
+[Ciri] Reason for autovacuum_vacuum_cost_delay: autovacuum_vacuum_cost_delay must be a positive number
+[Ciri] Reason for min_wal_size: min_wal_size must be a positive number
+[Ciri] Reason for default_transaction_isolation: default_transaction_isolation must be one of the following: 'read committed', 'repeatable read', 'serializable'
+[Ciri] Reason for enable_hashjoin: enable_hashjoin must be a boolean
+[Ciri] Reason for enable_parallel_hash: enable_parallel_hash must be a boolean
+[Ciri] Reason for password_encryption: password_encryption must be one of the following: md5, scram-sha-256, scram-sha-256-verify

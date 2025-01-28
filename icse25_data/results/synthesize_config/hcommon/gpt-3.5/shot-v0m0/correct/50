@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.assumed.role.session.duration', 'fs.s3a.multipart.purge.age', 'fs.s3a.readahead.range', 'fs.s3a.select.input.compression', 'ha.failover-controller.active-standby-elector.zk.op.retries', 'hadoop.security.random.device.file.path'], 'reason': ["The value '20m' for property 'fs.s3a.assumed.role.session.duration' should be in seconds.", "The value '172800' for property 'fs.s3a.multipart.purge.age' should be in seconds.", "The value '64K' for property 'fs.s3a.readahead.range' should be in bytes.", "The value 'none' for property 'fs.s3a.select.input.compression' is valid.", "The value '1' for property 'ha.failover-controller.active-standby-elector.zk.op.retries' is valid.", "The value '/valid/file1' for property 'hadoop.security.random.device.file.path' is valid."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.s3a.assumed.role.session.duration	fs.s3a.multipart.purge.age	fs.s3a.readahead.range	fs.s3a.select.input.compression	ha.failover-controller.active-standby-elector.zk.op.retries	hadoop.security.random.device.file.path
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The value '20m' for property 'fs.s3a.assumed.role.session.duration' should be in seconds.
+[Ciri] Reason for fs.s3a.multipart.purge.age: The value '172800' for property 'fs.s3a.multipart.purge.age' should be in seconds.
+[Ciri] Reason for fs.s3a.readahead.range: The value '64K' for property 'fs.s3a.readahead.range' should be in bytes.
+[Ciri] Reason for fs.s3a.select.input.compression: The value 'none' for property 'fs.s3a.select.input.compression' is valid.
+[Ciri] Reason for ha.failover-controller.active-standby-elector.zk.op.retries: The value '1' for property 'ha.failover-controller.active-standby-elector.zk.op.retries' is valid.
+[Ciri] Reason for hadoop.security.random.device.file.path: The value '/valid/file1' for property 'hadoop.security.random.device.file.path' is valid.

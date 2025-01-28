@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 10, 1]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions'], 'reason': ["The property 'yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions' has an invalid value 'read'. It should be a valid set of permissions like 'rwx'. For example, 'rwx' grants read, write, and execute permissions."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions'], 'reason': ["The value of the property 'yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions' should be a set of permissions like 'rwx' instead of just 'read'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions'], 'reason': ["The value of the property 'yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions' should be a numerical representation of permissions (e.g., 755) instead of 'read'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions
+[Ciri] Reason for yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions: The value of the property 'yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions' should be a numerical representation of permissions (e.g., 755) instead of 'read'.

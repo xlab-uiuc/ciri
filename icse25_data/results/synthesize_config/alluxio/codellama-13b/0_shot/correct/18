@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.state.lock.exclusive.duration', 'alluxio.master.rpc.addresses', 'alluxio.job.worker.threadpool.size', 'alluxio.user.file.master.client.pool.size.max', 'alluxio.underfs.web.titles', 'alluxio.master.log.config.report.heartbeat.interval'], 'reason': ['alluxio.master.backup.state.lock.exclusive.duration: The value of this property is not a valid time duration.', 'alluxio.master.rpc.addresses: The value of this property is not a valid hostname or IP address.', 'alluxio.job.worker.threadpool.size: The value of this property is not a valid integer.', 'alluxio.user.file.master.client.pool.size.max: The value of this property is not a valid integer.', 'alluxio.underfs.web.titles: The value of this property is not a valid string.', 'alluxio.master.log.config.report.heartbeat.interval: The value of this property is not a valid time duration.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: alluxio.master.backup.state.lock.exclusive.duration	alluxio.master.rpc.addresses	alluxio.job.worker.threadpool.size	alluxio.user.file.master.client.pool.size.max	alluxio.underfs.web.titles	alluxio.master.log.config.report.heartbeat.interval
+[Ciri] Reason for alluxio.master.backup.state.lock.exclusive.duration: alluxio.master.backup.state.lock.exclusive.duration: The value of this property is not a valid time duration.
+[Ciri] Reason for alluxio.master.rpc.addresses: alluxio.master.rpc.addresses: The value of this property is not a valid hostname or IP address.
+[Ciri] Reason for alluxio.job.worker.threadpool.size: alluxio.job.worker.threadpool.size: The value of this property is not a valid integer.
+[Ciri] Reason for alluxio.user.file.master.client.pool.size.max: alluxio.user.file.master.client.pool.size.max: The value of this property is not a valid integer.
+[Ciri] Reason for alluxio.underfs.web.titles: alluxio.underfs.web.titles: The value of this property is not a valid string.
+[Ciri] Reason for alluxio.master.log.config.report.heartbeat.interval: alluxio.master.log.config.report.heartbeat.interval: The value of this property is not a valid time duration.

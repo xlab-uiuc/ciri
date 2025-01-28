@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'shared_memory_type', 'max_pred_locks_per_relation', 'vacuum_cost_limit', 'wal_log_hints', 'logging_collector', 'tcp_user_timeout', 'max_replication_slots'], 'reason': ['listen_addresses must be a list of IP addresses or hostnames', "shared_memory_type must be either'sysv' or'mmap'", 'max_pred_locks_per_relation must be a positive integer', 'vacuum_cost_limit must be a positive integer', "wal_log_hints must be either 'on' or 'off'", "logging_collector must be either 'on' or 'off'", 'tcp_user_timeout must be a positive integer', 'max_replication_slots must be a positive integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: listen_addresses	shared_memory_type	max_pred_locks_per_relation	vacuum_cost_limit	wal_log_hints	logging_collector	tcp_user_timeout	max_replication_slots
+[Ciri] Reason for listen_addresses: listen_addresses must be a list of IP addresses or hostnames
+[Ciri] Reason for shared_memory_type: shared_memory_type must be either'sysv' or'mmap'
+[Ciri] Reason for max_pred_locks_per_relation: max_pred_locks_per_relation must be a positive integer
+[Ciri] Reason for vacuum_cost_limit: vacuum_cost_limit must be a positive integer
+[Ciri] Reason for wal_log_hints: wal_log_hints must be either 'on' or 'off'
+[Ciri] Reason for logging_collector: logging_collector must be either 'on' or 'off'
+[Ciri] Reason for tcp_user_timeout: tcp_user_timeout must be a positive integer
+[Ciri] Reason for max_replication_slots: max_replication_slots must be a positive integer

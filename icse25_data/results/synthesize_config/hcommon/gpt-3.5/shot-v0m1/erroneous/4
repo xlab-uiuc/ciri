@@ -1,0 +1,14 @@
+Wrong shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].callqueue.impl', 'hadoop.security.crypto.buffer.size', 'hadoop.tags.system', 'ipc.client.bind.wildcard.addr'], 'reason': ["The property 'ipc.[port_number].callqueue.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number.", "The property 'hadoop.security.crypto.buffer.size' has an invalid value 'ciri/ciri'. It should be a numeric value.", "The property 'hadoop.tags.system' is missing the closing </value> tag.", "The property 'ipc.client.bind.wildcard.addr' has a boolean value but should have a value of 'true' or 'false'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: ipc.[port_number].callqueue.impl	hadoop.security.crypto.buffer.size	hadoop.tags.system	ipc.client.bind.wildcard.addr
+[Ciri] Reason for ipc.[port_number].callqueue.impl: The property 'ipc.[port_number].callqueue.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number.
+[Ciri] Reason for hadoop.security.crypto.buffer.size: The property 'hadoop.security.crypto.buffer.size' has an invalid value 'ciri/ciri'. It should be a numeric value.
+[Ciri] Reason for hadoop.tags.system: The property 'hadoop.tags.system' is missing the closing </value> tag.
+[Ciri] Reason for ipc.client.bind.wildcard.addr: The property 'ipc.client.bind.wildcard.addr' has a boolean value but should have a value of 'true' or 'false'.

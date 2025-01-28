@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 11, 3]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.defaultFS'], 'reason': ["The property 'io.seqfile.local.dir' has an invalid value '//hadoop/io/local'. Double slashes at the beginning are not allowed.", "The property 'fs.defaultFS' has an invalid value 'file:///'. It should be set to the appropriate HDFS URI."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.seqfile.local.dir	fs.defaultFS
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' has an invalid value '//hadoop/io/local'. Double slashes at the beginning are not allowed.
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has an invalid value 'file:///'. It should be set to the appropriate HDFS URI.

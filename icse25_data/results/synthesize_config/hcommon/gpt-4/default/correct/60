@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 11, 14]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.hdfs.impl', 'fs.AbstractFileSystem.webhdfs.impl'], 'reason': ["The value for 'fs.AbstractFileSystem.hdfs.impl' should be 'org.apache.hadoop.fs.HdfsFileSystem', not 'org.apache.hadoop.fs.Hdfs'.", "The value for 'fs.AbstractFileSystem.webhdfs.impl' should be 'org.apache.hadoop.fs.http.client.HttpFSFileSystem', not 'org.apache.hadoop.fs.WebHdfs'."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.hdfs.impl', 'fs.AbstractFileSystem.webhdfs.impl'], 'reason': ["The value 'org.apache.hadoop.fs.Hdfs' is incorrect for 'fs.AbstractFileSystem.hdfs.impl'. The correct class name is 'org.apache.hadoop.fs.HdfsFileSystem'.", "The value 'org.apache.hadoop.fs.WebHdfs' is incorrect for 'fs.AbstractFileSystem.webhdfs.impl'. The correct class name is 'org.apache.hadoop.fs.http.client.HttpFSFileSystem'."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.hdfs.impl', 'fs.AbstractFileSystem.webhdfs.impl'], 'reason': ["The value for 'fs.AbstractFileSystem.hdfs.impl' should be 'org.apache.hadoop.fs.HdfsFileSystem', not 'org.apache.hadoop.fs.Hdfs'.", "The value for 'fs.AbstractFileSystem.webhdfs.impl' should be 'org.apache.hadoop.fs.http.client.HttpFSFileSystem', not 'org.apache.hadoop.fs.WebHdfs'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.AbstractFileSystem.hdfs.impl	fs.AbstractFileSystem.webhdfs.impl
+[Ciri] Reason for fs.AbstractFileSystem.hdfs.impl: The value for 'fs.AbstractFileSystem.hdfs.impl' should be 'org.apache.hadoop.fs.HdfsFileSystem', not 'org.apache.hadoop.fs.Hdfs'.
+[Ciri] Reason for fs.AbstractFileSystem.webhdfs.impl: The value for 'fs.AbstractFileSystem.webhdfs.impl' should be 'org.apache.hadoop.fs.http.client.HttpFSFileSystem', not 'org.apache.hadoop.fs.WebHdfs'.

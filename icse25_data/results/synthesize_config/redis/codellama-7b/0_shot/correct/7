@@ -1,0 +1,33 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp-keepalive'], 'reason': ['tcp-keepalive is not a valid configuration parameter in redis version 7.0.0.']}
+
+{'hasError': True, 'errParameter': ['port', 'timeout', 'tcp-keepalive'], 'reason': ['port must be a positive integer', 'timeout must be a positive integer', 'tcp-keepalive must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['port', 'unixsocketperm', 'timeout', 'tcp-keepalive', 'oom-score-adj-values'], 'reason': ['port must be an integer', 'unixsocketperm must be an integer', 'timeout must be an integer', 'tcp-keepalive must be an integer', 'oom-score-adj-values must be an integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind', 'protected-mode', 'tcp-keepalive', 'oom-score-adj-values'], 'reason': ['bind is not a valid parameter', 'protected-mode is not a valid parameter', 'tcp-keepalive is not a valid parameter', 'oom-score-adj-values is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['port', 'unixsocketperm', 'timeout', 'tcp-keepalive', 'oom-score-adj-values'], 'reason': ['port must be a number', 'unixsocketperm must be a number', 'timeout must be a number', 'tcp-keepalive must be a number', 'oom-score-adj-values must be a number']}
+
+{'hasError': True, 'errParameter': ['daemonize', 'pidfile', 'port', 'timeout', 'tcp-keepalive', 'oom-score-adj-values'], 'reason': ['daemonize is not a valid parameter', 'pidfile is not a valid parameter', 'port is not a valid parameter', 'timeout is not a valid parameter', 'tcp-keepalive is not a valid parameter', 'oom-score-adj-values is not a valid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'pidfile', 'port', 'timeout', 'tcp-keepalive', 'oom-score-adj-values'], 'reason': ["The property 'daemonize' is not supported in redis version 7.0.0.", "The property 'pidfile' is not supported in redis version 7.0.0.", "The property 'port' is not supported in redis version 7.0.0.", "The property 'timeout' is not supported in redis version 7.0.0.", "The property 'tcp-keepalive' is not supported in redis version 7.0.0.", "The property 'oom-score-adj-values' is not supported in redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['appendonly', 'appendfsync', 'save', 'tcp-keepalive', 'repl-disable-tcp-nodelay', 'oom-score-adj-values'], 'reason': ['appendonly is not a valid configuration parameter.', 'appendfsync is not a valid configuration parameter.', 'save is not a valid configuration parameter.', 'tcp-keepalive is not a valid configuration parameter.', 'repl-disable-tcp-nodelay is not a valid configuration parameter.', 'oom-score-adj-values is not a valid configuration parameter.']}
+
+{'hasError': True, 'errParameter': ['appendonly', 'appendfsync', 'save', 'tcp-keepalive', 'repl-disable-tcp-nodelay', 'oom-score-adj-values'], 'reason': ['appendonly is not a valid configuration parameter', 'appendfsync is not a valid configuration parameter', 'save is not a valid configuration parameter', 'tcp-keepalive is not a valid configuration parameter', 'repl-disable-tcp-nodelay is not a valid configuration parameter', 'oom-score-adj-values is not a valid configuration parameter']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: appendonly	appendfsync	save	tcp-keepalive	repl-disable-tcp-nodelay	oom-score-adj-values
+[Ciri] Reason for appendonly: appendonly is not a valid configuration parameter.
+[Ciri] Reason for appendfsync: appendfsync is not a valid configuration parameter
+[Ciri] Reason for save: save is not a valid configuration parameter
+[Ciri] Reason for tcp-keepalive: tcp-keepalive is not a valid configuration parameter.
+[Ciri] Reason for repl-disable-tcp-nodelay: repl-disable-tcp-nodelay is not a valid configuration parameter
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values is not a valid configuration parameter

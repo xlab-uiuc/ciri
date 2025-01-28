@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.handler.count', 'hbase.normalizer.period', 'hbase.hregion.memstore.flush.size', 'hbase.regionserver.checksum.verify', 'hbase.rest-csrf.browser-useragents-regex', 'hbase.security.exec.permission.checks', 'hbase.regionserver.storefile.refresh.period', 'hbase.mob.compactor.class'], 'reason': ['The value of hbase.regionserver.handler.count is too small, it should be larger than 100.', 'The value of hbase.normalizer.period is too small, it should be larger than 300000.', 'The value of hbase.hregion.memstore.flush.size is too small, it should be larger than 1024 * 1024 * 10.', 'The value of hbase.regionserver.checksum.verify is false, it should be true.', 'The value of hbase.rest-csrf.browser-useragents-regex is not correct, it should be ^Opera.*$', 'The value of hbase.security.exec.permission.checks is false, it should be true.', 'The value of hbase.regionserver.storefile.refresh.period is too small, it should be larger than 300000.', 'The value of hbase.mob.compactor.class is not correct, it should be org.apache.hadoop.hbase.mob.compactions.DefaultMobCompactor']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.regionserver.handler.count	hbase.normalizer.period	hbase.hregion.memstore.flush.size	hbase.regionserver.checksum.verify	hbase.rest-csrf.browser-useragents-regex	hbase.security.exec.permission.checks	hbase.regionserver.storefile.refresh.period	hbase.mob.compactor.class
+[Ciri] Reason for hbase.regionserver.handler.count: The value of hbase.regionserver.handler.count is too small, it should be larger than 100.
+[Ciri] Reason for hbase.normalizer.period: The value of hbase.normalizer.period is too small, it should be larger than 300000.
+[Ciri] Reason for hbase.hregion.memstore.flush.size: The value of hbase.hregion.memstore.flush.size is too small, it should be larger than 1024 * 1024 * 10.
+[Ciri] Reason for hbase.regionserver.checksum.verify: The value of hbase.regionserver.checksum.verify is false, it should be true.
+[Ciri] Reason for hbase.rest-csrf.browser-useragents-regex: The value of hbase.rest-csrf.browser-useragents-regex is not correct, it should be ^Opera.*$
+[Ciri] Reason for hbase.security.exec.permission.checks: The value of hbase.security.exec.permission.checks is false, it should be true.
+[Ciri] Reason for hbase.regionserver.storefile.refresh.period: The value of hbase.regionserver.storefile.refresh.period is too small, it should be larger than 300000.
+[Ciri] Reason for hbase.mob.compactor.class: The value of hbase.mob.compactor.class is not correct, it should be org.apache.hadoop.hbase.mob.compactions.DefaultMobCompactor

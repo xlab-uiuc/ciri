@@ -1,0 +1,34 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendonly', 'appendfsync', 'save', 'dir', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['appendonly is not a valid configuration parameter', 'appendfsync is not a valid configuration parameter', 'save is not a valid configuration parameter', 'dir is not a valid configuration parameter', 'dbfilename is not a valid configuration parameter', 'hll-sparse-max-bytes is not a valid configuration parameter', 'proto-max-bulk-len is not a valid configuration parameter', 'aof-rewrite-incremental-fsync is not a valid configuration parameter']}
+
+{'hasError': True, 'errParameter': ['dir', 'repl-diskless-sync-max-replicas', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['dir is not a valid parameter', 'repl-diskless-sync-max-replicas is not a valid parameter', 'dbfilename is not a valid parameter', 'hll-sparse-max-bytes is not a valid parameter', 'proto-max-bulk-len is not a valid parameter', 'aof-rewrite-incremental-fsync is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['dir', 'tls-session-caching', 'repl-diskless-sync-max-replicas', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['dir is not a valid parameter', 'tls-session-caching is not a valid parameter', 'repl-diskless-sync-max-replicas is not a valid parameter', 'dbfilename is not a valid parameter', 'hll-sparse-max-bytes is not a valid parameter', 'proto-max-bulk-len is not a valid parameter', 'aof-rewrite-incremental-fsync is not a valid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendonly', 'appendfsync', 'save', 'dir', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['appendonly is not a valid parameter.', 'appendfsync is not a valid parameter.', 'save is not a valid parameter.', 'dir is not a valid parameter.', 'dbfilename is not a valid parameter.', 'hll-sparse-max-bytes is not a valid parameter.', 'proto-max-bulk-len is not a valid parameter.', 'aof-rewrite-incremental-fsync is not a valid parameter.']}
+
+{'hasError': True, 'errParameter': ['aof-rewrite-incremental-fsync'], 'reason': ["The parameter 'aof-rewrite-incremental-fsync' is not a valid parameter for redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['dir', 'repl-diskless-sync-max-replicas', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['dir is not a valid parameter for redis version 7.0.0', 'repl-diskless-sync-max-replicas is not a valid parameter for redis version 7.0.0', 'dbfilename is not a valid parameter for redis version 7.0.0', 'hll-sparse-max-bytes is not a valid parameter for redis version 7.0.0', 'proto-max-bulk-len is not a valid parameter for redis version 7.0.0', 'aof-rewrite-incremental-fsync is not a valid parameter for redis version 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dir', 'tls-session-caching', 'repl-diskless-sync-max-replicas', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['dir is not a valid configuration parameter', 'tls-session-caching is not a valid configuration parameter', 'repl-diskless-sync-max-replicas is not a valid configuration parameter', 'dbfilename is not a valid configuration parameter', 'hll-sparse-max-bytes is not a valid configuration parameter', 'proto-max-bulk-len is not a valid configuration parameter', 'aof-rewrite-incremental-fsync is not a valid configuration parameter']}
+
+{'hasError': True, 'errParameter': ['dir', 'repl-diskless-sync-max-replicas', 'proto-max-bulk-len'], 'reason': ["The parameter 'dir' is not a valid configuration parameter for redis version 7.0.0.", "The parameter 'repl-diskless-sync-max-replicas' is not a valid configuration parameter for redis version 7.0.0.", "The parameter 'proto-max-bulk-len' is not a valid configuration parameter for redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['dir', 'tls-session-caching', 'repl-diskless-sync-max-replicas', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['dir is not a valid parameter', 'tls-session-caching is not a valid parameter', 'repl-diskless-sync-max-replicas is not a valid parameter', 'dbfilename is not a valid parameter', 'hll-sparse-max-bytes is not a valid parameter', 'proto-max-bulk-len is not a valid parameter', 'aof-rewrite-incremental-fsync is not a valid parameter']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: dir	tls-session-caching	repl-diskless-sync-max-replicas	dbfilename	hll-sparse-max-bytes	proto-max-bulk-len	aof-rewrite-incremental-fsync
+[Ciri] Reason for dir: dir is not a valid configuration parameter
+[Ciri] Reason for tls-session-caching: tls-session-caching is not a valid configuration parameter
+[Ciri] Reason for repl-diskless-sync-max-replicas: repl-diskless-sync-max-replicas is not a valid configuration parameter
+[Ciri] Reason for dbfilename: dbfilename is not a valid configuration parameter
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes is not a valid parameter
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len is not a valid parameter
+[Ciri] Reason for aof-rewrite-incremental-fsync: aof-rewrite-incremental-fsync is not a valid parameter

@@ -1,0 +1,18 @@
+Wrong shot number:
+[11, 1, 9]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-announce-port'], 'reason': ["The property 'replica-announce-port' should not be set to a specific port number like '1234'. It should be set to '0' to disable replica announcements or a valid port number for the replica to announce itself."]}
+
+{'hasError': True, 'errParameter': ['replica-announce-port'], 'reason': ["The property 'replica-announce-port' should not be explicitly set in Redis version 7.0.0 as it is deprecated."]}
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data'], 'reason': ["The property 'replica-serve-stale-data' has an invalid value. It should be 'yes' or 'no'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: replica-announce-port
+[Ciri] Reason for replica-announce-port: The property 'replica-announce-port' should not be explicitly set in Redis version 7.0.0 as it is deprecated.

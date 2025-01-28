@@ -1,0 +1,20 @@
+Wrong shot number:
+[5, 7, 15]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'hadoop.security.random.device.file.path', 'hadoop.registry.system.acls'], 'reason': ["The property 'io.seqfile.local.dir' is not a recognized configuration parameter in Hadoop Common version 3.3.0.", "The value of 'hadoop.security.random.device.file.path' is incorrect. It should likely be '/dev/urandom' instead of 'dev/urandom///'.", "The value of 'hadoop.registry.system.acls' is incomplete and potentially malformed. It ends with 'sasl:mapred@' which seems to be missing the domain part after '@'."]}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'hadoop.security.random.device.file.path', 'hadoop.registry.system.acls'], 'reason': ["The property 'io.seqfile.local.dir' is not a recognized configuration property for Hadoop.", "The property 'hadoop.security.random.device.file.path' has an incorrect value 'dev/urandom///'. The correct format should be '/dev/urandom'.", "The property 'hadoop.registry.system.acls' value 'sasl:mapred@' is incomplete and potentially incorrect as it lacks a domain after '@'."]}
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'hadoop.security.random.device.file.path', 'hadoop.registry.system.acls'], 'reason': ["The property 'io.seqfile.local.dir' is not a recognized configuration property for Hadoop.", "The property 'hadoop.security.random.device.file.path' has an incorrect value 'dev/urandom///'. It should be '/dev/urandom' to correctly specify the path to the random number device file.", "The property 'hadoop.registry.system.acls' has an incomplete value 'sasl:mapred@'. It should include a complete principal name if using Kerberos authentication."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: io.seqfile.local.dir	hadoop.security.random.device.file.path	hadoop.registry.system.acls
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' is not a recognized configuration property for Hadoop.
+[Ciri] Reason for hadoop.security.random.device.file.path: The property 'hadoop.security.random.device.file.path' has an incorrect value 'dev/urandom///'. The correct format should be '/dev/urandom'.
+[Ciri] Reason for hadoop.registry.system.acls: The value of 'hadoop.registry.system.acls' is incomplete and potentially malformed. It ends with 'sasl:mapred@' which seems to be missing the domain part after '@'.

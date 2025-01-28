@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'vacuum_multixact_failsafe_age', 'max_slot_wal_keep_size', 'max_parallel_workers', 'recovery_min_apply_delay', 'dynamic_shared_memory_type', 'autovacuum_naptime', 'recovery_prefetch'], 'reason': ['shared_buffers should be specified in 8kB blocks, not in mm.', 'vacuum_multixact_failsafe_age should be specified in bytes or as a time interval.', 'max_slot_wal_keep_size should be a positive value or zero, not negative.', 'max_parallel_workers should be a positive integer.', 'recovery_min_apply_delay should be specified in milliseconds.', "dynamic_shared_memory_type should be one of 'posix', 'sysv', 'windows', or 'none'.", 'autovacuum_naptime should be specified in seconds or as a time interval.', "recovery_prefetch should be 'none', 'try', or 'always'."]}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'vacuum_multixact_failsafe_age', 'max_slot_wal_keep_size', 'max_parallel_workers', 'recovery_min_apply_delay', 'dynamic_shared_memory_type', 'autovacuum_naptime', 'recovery_prefetch'], 'reason': ['Invalid unit for shared_buffers. It should be specified in blocks or bytes.', 'vacuum_multixact_failsafe_age value seems unusually high.', 'max_slot_wal_keep_size should be a positive value.', 'max_parallel_workers value should be between 0 and 1024.', 'recovery_min_apply_delay should be specified in milliseconds.', "Invalid value for dynamic_shared_memory_type. Valid options are 'posix', 'sysv', 'windows'.", 'autovacuum_naptime should be specified in seconds or as a valid time interval.', "Invalid value for recovery_prefetch. Valid options are 'none', 'try', 'always'."]}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'autovacuum_naptime'], 'reason': ['shared_buffers should be specified in 8kB blocks, not in mm. Consider changing to a valid value in blocks.', 'autovacuum_naptime should be specified in seconds or milliseconds. Consider changing to a valid time format.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: shared_buffers	vacuum_multixact_failsafe_age	max_slot_wal_keep_size	max_parallel_workers	recovery_min_apply_delay	dynamic_shared_memory_type	autovacuum_naptime	recovery_prefetch
+[Ciri] Reason for shared_buffers: Invalid unit for shared_buffers. It should be specified in blocks or bytes.
+[Ciri] Reason for vacuum_multixact_failsafe_age: vacuum_multixact_failsafe_age should be specified in bytes or as a time interval.
+[Ciri] Reason for max_slot_wal_keep_size: max_slot_wal_keep_size should be a positive value.
+[Ciri] Reason for max_parallel_workers: max_parallel_workers value should be between 0 and 1024.
+[Ciri] Reason for recovery_min_apply_delay: recovery_min_apply_delay should be specified in milliseconds.
+[Ciri] Reason for dynamic_shared_memory_type: dynamic_shared_memory_type should be one of 'posix', 'sysv', 'windows', or 'none'.
+[Ciri] Reason for autovacuum_naptime: autovacuum_naptime should be specified in seconds or as a time interval.
+[Ciri] Reason for recovery_prefetch: Invalid value for recovery_prefetch. Valid options are 'none', 'try', 'always'.

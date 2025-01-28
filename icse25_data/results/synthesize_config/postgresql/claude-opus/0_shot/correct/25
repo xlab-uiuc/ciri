@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_slot_wal_keep_size', 'xmlbinary', 'idle_in_transaction_session_timeout'], 'reason': ['max_slot_wal_keep_size should be a positive integer, -2 is invalid', 'xmlbinary is not a valid PostgreSQL parameter, did you mean xmlbinary_base64?', "idle_in_transaction_session_timeout should be specified with a unit like '1min' or '3600s', just '1' is invalid"]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max_slot_wal_keep_size	xmlbinary	idle_in_transaction_session_timeout
+[Ciri] Reason for max_slot_wal_keep_size: max_slot_wal_keep_size should be a positive integer, -2 is invalid
+[Ciri] Reason for xmlbinary: xmlbinary is not a valid PostgreSQL parameter, did you mean xmlbinary_base64?
+[Ciri] Reason for idle_in_transaction_session_timeout: idle_in_transaction_session_timeout should be specified with a unit like '1min' or '3600s', just '1' is invalid

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.audit.logging.queue.capacity', 'alluxio.user.network.max.inbound.message.size', 'alluxio.worker.ufs.instream.cache.enabled', 'alluxio.worker.network.writer.buffer.size.messages', 'alluxio.zookeeper.leader.connection.error.policy', 'alluxio.job.master.bind.host', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.lost.worker.file.detection.interval'], 'reason': ['alluxio.master.audit.logging.queue.capacity should be a positive integer', 'alluxio.user.network.max.inbound.message.size should be a positive integer', 'alluxio.worker.ufs.instream.cache.enabled should be a boolean', 'alluxio.worker.network.writer.buffer.size.messages should be a positive integer', 'alluxio.zookeeper.leader.connection.error.policy should be a valid policy', 'alluxio.job.master.bind.host should be a valid hostname', 'alluxio.security.stale.channel.purge.interval should be a valid time interval', 'alluxio.master.lost.worker.file.detection.interval should be a valid time interval']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.master.audit.logging.queue.capacity	alluxio.user.network.max.inbound.message.size	alluxio.worker.ufs.instream.cache.enabled	alluxio.worker.network.writer.buffer.size.messages	alluxio.zookeeper.leader.connection.error.policy	alluxio.job.master.bind.host	alluxio.security.stale.channel.purge.interval	alluxio.master.lost.worker.file.detection.interval
+[Ciri] Reason for alluxio.master.audit.logging.queue.capacity: alluxio.master.audit.logging.queue.capacity should be a positive integer
+[Ciri] Reason for alluxio.user.network.max.inbound.message.size: alluxio.user.network.max.inbound.message.size should be a positive integer
+[Ciri] Reason for alluxio.worker.ufs.instream.cache.enabled: alluxio.worker.ufs.instream.cache.enabled should be a boolean
+[Ciri] Reason for alluxio.worker.network.writer.buffer.size.messages: alluxio.worker.network.writer.buffer.size.messages should be a positive integer
+[Ciri] Reason for alluxio.zookeeper.leader.connection.error.policy: alluxio.zookeeper.leader.connection.error.policy should be a valid policy
+[Ciri] Reason for alluxio.job.master.bind.host: alluxio.job.master.bind.host should be a valid hostname
+[Ciri] Reason for alluxio.security.stale.channel.purge.interval: alluxio.security.stale.channel.purge.interval should be a valid time interval
+[Ciri] Reason for alluxio.master.lost.worker.file.detection.interval: alluxio.master.lost.worker.file.detection.interval should be a valid time interval

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nm.liveness-monitor.expiry-interval-ms'], 'reason': ["Invalid value for 'yarn.nm.liveness-monitor.expiry-interval-ms'. Expected a number, but found 'ciri/ciri'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nm.liveness-monitor.expiry-interval-ms', 'yarn.sharedcache.root-dir'], 'reason': ["Invalid value for 'yarn.nm.liveness-monitor.expiry-interval-ms'. It should be an integer.", "Invalid value for 'yarn.sharedcache.root-dir'. It should be a valid file path."]}
+
+{'hasError': True, 'errParameter': ['yarn.nm.liveness-monitor.expiry-interval-ms', 'yarn.sharedcache.root-dir'], 'reason': ["Invalid value for 'yarn.nm.liveness-monitor.expiry-interval-ms'. Expected a number, got 'ciri/ciri'.", "Invalid value for 'yarn.sharedcache.root-dir'. Expected a valid file path, got '/valid/file2'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nm.liveness-monitor.expiry-interval-ms	yarn.sharedcache.root-dir
+[Ciri] Reason for yarn.nm.liveness-monitor.expiry-interval-ms: Invalid value for 'yarn.nm.liveness-monitor.expiry-interval-ms'. Expected a number, got 'ciri/ciri'.
+[Ciri] Reason for yarn.sharedcache.root-dir: Invalid value for 'yarn.sharedcache.root-dir'. It should be a valid file path.

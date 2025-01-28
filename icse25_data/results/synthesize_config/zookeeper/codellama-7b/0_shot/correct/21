@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPort'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPort is not a valid port']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort'], 'reason': ['dataDir is not a valid directory path', 'clientPort is not a valid port number']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'initLimit', 'syncLimit', 'tickTime', 'maxClientCnxns', 'maxSessionTimeout', 'minSessionTimeout', 'quorumListenOnAllIPs', 'sslQuorumReloadCertFiles', 'reconfigEnabled', 'localSessionsEnabled', 'initLimit'], 'reason': ['dataDir is not a valid directory', 'clientPort is not a valid port', 'initLimit is not a valid integer', 'syncLimit is not a valid integer', 'tickTime is not a valid integer', 'maxClientCnxns is not a valid integer', 'maxSessionTimeout is not a valid integer', 'minSessionTimeout is not a valid integer', 'quorumListenOnAllIPs is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'reconfigEnabled is not a valid boolean', 'localSessionsEnabled is not a valid boolean', 'initLimit is not a valid integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort'], 'reason': ['dataDir is not a valid directory', 'clientPort is not a valid port']}
+
+{'hasError': True, 'errParameter': ['dataDir'], 'reason': ['The dataDir property must be set to a valid directory path.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort'], 'reason': ['The dataDir property is not a valid directory.', 'The clientPort property is not a valid port number.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataDir	clientPort
+[Ciri] Reason for dataDir: dataDir is not a valid directory
+[Ciri] Reason for clientPort: clientPort is not a valid port

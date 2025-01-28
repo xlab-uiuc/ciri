@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-directory-items'], 'reason': ['The value of dfs.namenode.fs-limits.max-directory-items is not in the correct range. The value should be between 1 and 6400000.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-directory-items'], 'reason': ['Values less than or equal to 0 mean not to take the number of live datanodes into account when deciding whether to remain in safe mode during startup. Values greater than the number of datanodes in the cluster will make safe mode permanent.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.fs-limits.max-directory-items'], 'reason': ['The value of dfs.namenode.fs-limits.max-directory-items is 1048576, which is greater than the maximum value of 6400000.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.fs-limits.max-directory-items
+[Ciri] Reason for dfs.namenode.fs-limits.max-directory-items: The value of dfs.namenode.fs-limits.max-directory-items is not in the correct range. The value should be between 1 and 6400000.

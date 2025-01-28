@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.sensitive-config-keys', 'ipc.[port_number].weighted-cost.lockshared', 'hadoop.ssl.enabled'], 'reason': ["The property 'hadoop.security.sensitive-config-keys' has a value that contains a dollar sign ('$'), which may cause issues in some configurations.", "The property 'ipc.[port_number].weighted-cost.lockshared' contains a placeholder '[port_number]' which should be replaced with an actual port number.", "The property 'hadoop.ssl.enabled' is deprecated. It is recommended to use 'dfs.http.policy' and 'yarn.http.policy' instead."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.block.size', 'ipc.[port_number].weighted-cost.lockshared', 'hadoop.http.authentication.simple.anonymous.allowed', 'hadoop.ssl.enabled'], 'reason': ["The value '32M' for property 'fs.s3a.block.size' should have a suffix from the set {K,M,G,T,P} to scale the numeric value.", "The property name 'ipc.[port_number].weighted-cost.lockshared' contains placeholder '[port_number]' which should be replaced with an actual port number.", "The value 'true' for property 'hadoop.http.authentication.simple.anonymous.allowed' should be in lowercase (e.g., 'true' instead of 'True').", "The property 'hadoop.ssl.enabled' is deprecated. Use 'dfs.http.policy' and 'yarn.http.policy' instead."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockshared', 'hadoop.ssl.enabled'], 'reason': ["Invalid parameter name 'ipc.[port_number].weighted-cost.lockshared'.", "Deprecated parameter 'hadoop.ssl.enabled'. Use dfs.http.policy and yarn.http.policy instead."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockshared', 'hadoop.ssl.enabled'], 'reason': ["Invalid parameter name 'ipc.[port_number].weighted-cost.lockshared'.", "Deprecated parameter 'hadoop.ssl.enabled'. Use dfs.http.policy and yarn.http.policy instead."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockshared', 'hadoop.ssl.enabled'], 'reason': ["Invalid parameter name 'ipc.[port_number].weighted-cost.lockshared'.", "Deprecated parameter 'hadoop.ssl.enabled'. Use dfs.http.policy and yarn.http.policy instead."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockshared', 'hadoop.ssl.enabled'], 'reason': ["The parameter 'ipc.[port_number].weighted-cost.lockshared' is not a valid configuration key format.", "The parameter 'hadoop.ssl.enabled' is deprecated. Use 'dfs.http.policy' and 'yarn.http.policy' instead."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].weighted-cost.lockshared	hadoop.ssl.enabled
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: Invalid parameter name 'ipc.[port_number].weighted-cost.lockshared'.
+[Ciri] Reason for hadoop.ssl.enabled: Deprecated parameter 'hadoop.ssl.enabled'. Use dfs.http.policy and yarn.http.policy instead.

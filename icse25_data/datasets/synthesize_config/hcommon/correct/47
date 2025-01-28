@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.groups.cache.warn.after.ms</name>
+  <value>10000</value>
+  <description>
+    If looking up a single user to group takes longer than this amount of
+    milliseconds, we will log a warning message.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.ssl.truststore.password.file</name>
+  <value>/valid/file2</value>
+  <description>
+    The path to a file containing the password of the LDAP SSL truststore.
+
+    IMPORTANT: This file should be readable only by the Unix user running
+    the daemons.
+  </description>
+</property>
+
+<property>
+  <name>io.erasurecode.codec.xor.rawcoders</name>
+  <value>xor_java</value>
+  <description>
+    Comma separated raw coder implementations for the xor codec. The earlier
+    factory is prior to followings in case of failure of creating raw coders.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.assumed.role.credentials.provider</name>
+  <value>org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider</value>
+  <description>
+    List of credential providers to authenticate with the STS endpoint and
+    retrieve short-lived role credentials.
+    Only used if AssumedRoleCredentialProvider is the AWS credential provider.
+    If unset, uses "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider".
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.ddb.throttle.retry.interval</name>
+  <value>1ms</value>
+    <description>
+      Initial interval to retry after a request is throttled events;
+      the back-off policy is exponential until the number of retries of
+      fs.s3a.s3guard.ddb.max.retries is reached.
+    </description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.consistency.retry.interval</name>
+  <value>2s</value>
+  <description>
+    Initial interval between attempts to retry operations while waiting for S3
+    to become consistent with the S3Guard data.
+    An exponential back-off is used here: every failure doubles the delay.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].decay-scheduler.period-ms</name>
+  <value>10000</value>
+  <description>How frequently the decay factor should be applied to the
+    operation counts of users. Higher values have less overhead, but respond
+    less quickly to changes in client behavior.
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.crypto.buffer.size</name>
+  <value>8192</value>
+  <description>
+    The buffer size used by CryptoInputStream and CryptoOutputStream.
+  </description>
+</property>
+
+</configuration>

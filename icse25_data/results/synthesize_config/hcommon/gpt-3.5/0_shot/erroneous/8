@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.size', 'ipc.[port_number].backoff.enable'], 'reason': ['Invalid value for fs.s3a.multipart.size. The value should be a numeric value followed by a suffix from the set {K,M,G,T,P}.', 'Parameter name ipc.[port_number].backoff.enable contains invalid characters.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.size', 'ipc.[port_number].backoff.enable'], 'reason': ['Invalid value for fs.s3a.multipart.size. The value should be a numeric value followed by a suffix from the set {K,M,G,T,P}.', 'Invalid property name ipc.[port_number].backoff.enable. Property names should not contain square brackets.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.multipart.size', 'ipc.[port_number].backoff.enable'], 'reason': ['Invalid value for fs.s3a.multipart.size. The value should be a numeric value followed by a suffix from the set {K,M,G,T,P}.', 'Invalid property name ipc.[port_number].backoff.enable. Property names should not contain special characters like square brackets.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.multipart.size	ipc.[port_number].backoff.enable
+[Ciri] Reason for fs.s3a.multipart.size: Invalid value for fs.s3a.multipart.size. The value should be a numeric value followed by a suffix from the set {K,M,G,T,P}.
+[Ciri] Reason for ipc.[port_number].backoff.enable: Invalid property name ipc.[port_number].backoff.enable. Property names should not contain square brackets.

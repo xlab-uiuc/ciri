@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-compaction-mode', 'quota-backend-bytes', 'proxy-failure-wait'], 'reason': ['heartbeat-interval must be greater than 0', 'auto-compaction-mode must be either periodic, or revision', 'quota-backend-bytes must be greater than 0', 'proxy-failure-wait must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-compaction-mode', 'proxy-failure-wait'], 'reason': ['heartbeat-interval must be greater than 0', 'auto-compaction-mode must be either periodic, revision, or size', 'proxy-failure-wait must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-compaction-mode', 'quota-backend-bytes', 'proxy-failure-wait', 'logger'], 'reason': ['heartbeat-interval must be a positive integer, but got 200', 'auto-compaction-mode must be periodic, but got 2', 'quota-backend-bytes must be a positive integer, but got 2', 'proxy-failure-wait must be a positive integer, but got 5000', 'logger must be one of capnslog, zerolog, or go-kit, but got zap']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-compaction-mode', 'quota-backend-bytes', 'proxy-failure-wait'], 'reason': ['heartbeat-interval must be greater than 0', 'auto-compaction-mode must be either periodic or revision', 'quota-backend-bytes must be greater than 0', 'proxy-failure-wait must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-compaction-mode', 'quota-backend-bytes', 'proxy-failure-wait'], 'reason': ['heartbeat-interval is not a valid property for etcd version 3.5.0', 'auto-compaction-mode is not a valid property for etcd version 3.5.0', 'quota-backend-bytes is not a valid property for etcd version 3.5.0', 'proxy-failure-wait is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-compaction-mode', 'quota-backend-bytes', 'proxy-failure-wait'], 'reason': ['heartbeat-interval must be greater than 0', 'auto-compaction-mode must be either periodic or revision', 'quota-backend-bytes must be greater than 0', 'proxy-failure-wait must be greater than 0']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: heartbeat-interval	auto-compaction-mode	quota-backend-bytes	proxy-failure-wait
+[Ciri] Reason for heartbeat-interval: heartbeat-interval must be greater than 0
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode must be either periodic or revision
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes must be greater than 0
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait must be greater than 0

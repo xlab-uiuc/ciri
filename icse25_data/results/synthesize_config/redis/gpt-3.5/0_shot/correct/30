@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-port'], 'reason': ["The value for 'cluster-announce-port' is set to 1 which is not a valid port number."]}
+
+{'hasError': True, 'errParameter': ['replica-announce-port', 'stream-node-max-bytes', 'cluster-announce-port'], 'reason': ['Invalid value for replica-announce-port. It should be a valid port number.', 'Invalid value for stream-node-max-bytes. It should be specified in bytes.', 'Invalid value for cluster-announce-port. It should be a valid port number.']}
+
+{'hasError': True, 'errParameter': ['replica-announce-port', 'stream-node-max-bytes', 'cluster-announce-port'], 'reason': ['Invalid value for replica-announce-port. It should be an integer.', 'Invalid value for stream-node-max-bytes. It should be an integer.', 'Invalid value for cluster-announce-port. It should be an integer.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: replica-announce-port	stream-node-max-bytes	cluster-announce-port
+[Ciri] Reason for replica-announce-port: Invalid value for replica-announce-port. It should be a valid port number.
+[Ciri] Reason for stream-node-max-bytes: Invalid value for stream-node-max-bytes. It should be an integer.
+[Ciri] Reason for cluster-announce-port: Invalid value for cluster-announce-port. It should be a valid port number.

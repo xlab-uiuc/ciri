@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.port</name>
+  <value>16000</value>
+    <description>The port the HBase Master should bind to.</description>
+</property>
+
+<property>
+  <name>hbase.master.fileSplitTimeout</name>
+  <value>1200000</value>
+    <description>Splitting a region, how long to wait on the file-splitting
+      step before aborting the attempt. Default: 600000. This setting used
+      to be known as hbase.regionserver.fileSplitTimeout in hbase-1.x.
+      Split is now run master-side hence the rename (If a
+      'hbase.master.fileSplitTimeout' setting found, will use it to
+      prime the current 'hbase.master.fileSplitTimeout'
+      Configuration.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.maxClientCnxns</name>
+  <value>150</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    Limit on number of concurrent connections (at the socket level) that a
+    single client, identified by IP address, may make to a single member of
+    the ZooKeeper ensemble. Set high to avoid zk connection issues running
+    standalone and pseudo-distributed.</description>
+</property>
+
+<property>
+  <name>hbase.client.perserver.requests.threshold</name>
+  <value>1073741823</value>
+    <description>The max number of concurrent pending requests for one server in all client threads
+    (process level). Exceeding requests will be thrown ServerTooBusyException immediately to prevent
+    user's threads being occupied and blocked by only one slow region server. If you use a fix
+    number of threads to access HBase in a synchronous way, set this to a suitable value which is
+    related to the number of threads will help you. See
+    https://issues.apache.org/jira/browse/HBASE-16388 for details.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.minorcompaction.pagecache.drop</name>
+  <value>1.5</value>
+    <description>Specifies whether to drop pages read/written into the system page cache by
+      minor compactions. Setting it to true helps prevent minor compactions from
+      polluting the page cache, which is most beneficial on clusters with low
+      memory to storage ratio or very write heavy clusters. You may want to set it to
+      false under moderate to low write workload when bulk of the reads are
+      on the most recently written data.</description>
+</property>
+
+<property>
+  <name>hbase.rootdir.perms</name>
+  <value>1400</value>
+    <description>FS Permissions for the root data subdirectory in a secure (kerberos) setup.
+    When master starts, it creates the rootdir with this permissions or sets the permissions
+    if it does not match.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.checksum.algorithm</name>
+  <value>CRC32C</value>
+    <description>
+      Name of an algorithm that is used to compute checksums. Possible values
+      are NULL, CRC32, CRC32C.
+    </description>
+</property>
+
+<property>
+  <name>hbase.mob.file.cache.size</name>
+  <value>500</value>
+    <description>
+      Number of opened file handlers to cache.
+      A larger value will benefit reads by providing more file handlers per mob
+      file cache and would reduce frequent file opening and closing.
+      However, if this is set too high, this could lead to a "too many opened file handlers"
+      The default value is 1000.
+    </description>
+</property>
+
+</configuration>

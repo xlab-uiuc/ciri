@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 3, 6]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPort', 'secureClientPort'], 'reason': ["The property 'clientPort' should not be the same as 'secureClientPort'.", "The property 'secureClientPort' should not be the same as 'clientPort'."]}
+
+{'hasError': True, 'errParameter': ['clientPort', 'secureClientPort'], 'reason': ["The property 'clientPort' has a value '3001' which is not the same as 'secureClientPort' value '3000'. These ports should typically match for consistency.", "The property 'secureClientPort' has a value '3000' which is not the same as 'clientPort' value '3001'. These ports should typically match for consistency."]}
+
+{'hasError': True, 'errParameter': ['clientPort', 'secureClientPort'], 'reason': ["The property 'clientPort' and 'secureClientPort' should not have the same value.", "The property 'secureClientPort' is set to '3000' which is not the default secure client port value for ZooKeeper."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: clientPort	secureClientPort
+[Ciri] Reason for clientPort: The property 'clientPort' should not be the same as 'secureClientPort'.
+[Ciri] Reason for secureClientPort: The property 'secureClientPort' should not be the same as 'clientPort'.

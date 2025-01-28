@@ -1,0 +1,18 @@
+Correct shot number:
+[5, 9, 15, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'fs.azure.user.agent.prefix', 'ipc.[port_number].identity-provider.impl', 'ipc.[port_number].weighted-cost.response', 'hadoop.http.authentication.kerberos.keytab', 'hadoop.http.cross-origin.allowed-methods', 'hadoop.http.cross-origin.allowed-headers', 'hadoop.tags.system'], 'reason': ['Invalid value format. Expected format: [number][time_unit] (e.g., 10s, 1m)', 'Usage tag present in the value field', 'Parameter placeholder [port_number] should be replaced with an actual port number', 'Parameter placeholder [port_number] should be replaced with an actual port number', 'Parameter placeholder [port_number] should be replaced with an actual port number', 'Parameter placeholder [port_number] should be replaced with an actual port number', 'Parameter placeholder [port_number] should be replaced with an actual port number', 'Usage tag present in the value field']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout	fs.azure.user.agent.prefix	ipc.[port_number].identity-provider.impl	ipc.[port_number].weighted-cost.response	hadoop.http.authentication.kerberos.keytab	hadoop.http.cross-origin.allowed-methods	hadoop.http.cross-origin.allowed-headers	hadoop.tags.system
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: Invalid value format. Expected format: [number][time_unit] (e.g., 10s, 1m)
+[Ciri] Reason for fs.azure.user.agent.prefix: Usage tag present in the value field
+[Ciri] Reason for ipc.[port_number].identity-provider.impl: Parameter placeholder [port_number] should be replaced with an actual port number
+[Ciri] Reason for ipc.[port_number].weighted-cost.response: Parameter placeholder [port_number] should be replaced with an actual port number
+[Ciri] Reason for hadoop.http.authentication.kerberos.keytab: Parameter placeholder [port_number] should be replaced with an actual port number
+[Ciri] Reason for hadoop.http.cross-origin.allowed-methods: Parameter placeholder [port_number] should be replaced with an actual port number
+[Ciri] Reason for hadoop.http.cross-origin.allowed-headers: Parameter placeholder [port_number] should be replaced with an actual port number
+[Ciri] Reason for hadoop.tags.system: Usage tag present in the value field

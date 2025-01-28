@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.client.thread-count', 'yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage', 'yarn.timeline-service.address', 'yarn.nodemanager.container-monitor.procfs-tree.smaps-based-rss.enabled', 'yarn.nodemanager.distributed-scheduling.enabled', 'yarn.nodemanager.container.stderr.tail.bytes', 'yarn.resourcemanager.webapp.xfs-filter.xframe-options', 'yarn.nodemanager.numa-awareness.numactl.cmd'], 'reason': ['yarn.resourcemanager.client.thread-count: The value is not a valid integer.', 'yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage: The value is not a valid float.', 'yarn.timeline-service.address: The value is not a valid IP address.', 'yarn.nodemanager.container-monitor.procfs-tree.smaps-based-rss.enabled: The value is not a valid boolean.', 'yarn.nodemanager.distributed-scheduling.enabled: The value is not a valid boolean.', 'yarn.nodemanager.container.stderr.tail.bytes: The value is not a valid integer.', 'yarn.resourcemanager.webapp.xfs-filter.xframe-options: The value is not a valid string.', 'yarn.nodemanager.numa-awareness.numactl.cmd: The value is not a valid file path.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: yarn.resourcemanager.client.thread-count	yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage	yarn.timeline-service.address	yarn.nodemanager.container-monitor.procfs-tree.smaps-based-rss.enabled	yarn.nodemanager.distributed-scheduling.enabled	yarn.nodemanager.container.stderr.tail.bytes	yarn.resourcemanager.webapp.xfs-filter.xframe-options	yarn.nodemanager.numa-awareness.numactl.cmd
+[Ciri] Reason for yarn.resourcemanager.client.thread-count: yarn.resourcemanager.client.thread-count: The value is not a valid integer.
+[Ciri] Reason for yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage: yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage: The value is not a valid float.
+[Ciri] Reason for yarn.timeline-service.address: yarn.timeline-service.address: The value is not a valid IP address.
+[Ciri] Reason for yarn.nodemanager.container-monitor.procfs-tree.smaps-based-rss.enabled: yarn.nodemanager.container-monitor.procfs-tree.smaps-based-rss.enabled: The value is not a valid boolean.
+[Ciri] Reason for yarn.nodemanager.distributed-scheduling.enabled: yarn.nodemanager.distributed-scheduling.enabled: The value is not a valid boolean.
+[Ciri] Reason for yarn.nodemanager.container.stderr.tail.bytes: yarn.nodemanager.container.stderr.tail.bytes: The value is not a valid integer.
+[Ciri] Reason for yarn.resourcemanager.webapp.xfs-filter.xframe-options: yarn.resourcemanager.webapp.xfs-filter.xframe-options: The value is not a valid string.
+[Ciri] Reason for yarn.nodemanager.numa-awareness.numactl.cmd: yarn.nodemanager.numa-awareness.numactl.cmd: The value is not a valid file path.

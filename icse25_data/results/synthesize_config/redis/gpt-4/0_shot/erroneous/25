@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['always-show-logo', 'hash-max-listpack-value', 'oom-score-adj-values'], 'reason': ["The 'always-show-logo' parameter does not exist in Redis configuration.", "The correct parameter for controlling the maximum listpack size for hash is 'hash-max-ziplist-value' in versions before Redis 7 and 'hash-max-listpack-size' in Redis 7 and above.", "The 'oom-score-adj-values' parameter does not exist. The correct parameter for adjusting OOM scores in Redis is 'oom-score-adj'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: always-show-logo	hash-max-listpack-value	oom-score-adj-values
+[Ciri] Reason for always-show-logo: The 'always-show-logo' parameter does not exist in Redis configuration.
+[Ciri] Reason for hash-max-listpack-value: The correct parameter for controlling the maximum listpack size for hash is 'hash-max-ziplist-value' in versions before Redis 7 and 'hash-max-listpack-size' in Redis 7 and above.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter does not exist. The correct parameter for adjusting OOM scores in Redis is 'oom-score-adj'.

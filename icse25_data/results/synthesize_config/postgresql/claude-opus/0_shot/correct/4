@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['archive_mode', 'checkpoint_timeout', 'vacuum_freeze_min_age'], 'reason': ["archive_mode should be set to 'on' or 'always' instead of 'off' for proper WAL archiving", 'checkpoint_timeout is too low. It should be at least 30 seconds, but 5 minutes or more is recommended for most systems', 'vacuum_freeze_min_age is set too high. The recommended value is 50000000 or lower to prevent transaction ID wraparound issues']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: archive_mode	checkpoint_timeout	vacuum_freeze_min_age
+[Ciri] Reason for archive_mode: archive_mode should be set to 'on' or 'always' instead of 'off' for proper WAL archiving
+[Ciri] Reason for checkpoint_timeout: checkpoint_timeout is too low. It should be at least 30 seconds, but 5 minutes or more is recommended for most systems
+[Ciri] Reason for vacuum_freeze_min_age: vacuum_freeze_min_age is set too high. The recommended value is 50000000 or lower to prevent transaction ID wraparound issues

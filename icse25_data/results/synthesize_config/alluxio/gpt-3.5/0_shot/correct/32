@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.worker.timeout', 'alluxio.underfs.gcs.default.mode'], 'reason': ["Invalid time unit 'sec' for property 'alluxio.job.master.worker.timeout'. Use 's' instead.", "Invalid permission mode '350' for property 'alluxio.underfs.gcs.default.mode'. Permissions should be specified in octal format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.worker.timeout', 'alluxio.user.file.create.ttl', 'alluxio.underfs.gcs.default.mode'], 'reason': ["Invalid time unit 'sec' for property 'alluxio.job.master.worker.timeout'. Use 's' for seconds.", "Property 'alluxio.user.file.create.ttl' should have a positive value. Use a value greater than 0.", "Property 'alluxio.underfs.gcs.default.mode' should be an integer value. Use a valid mode value."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.worker.timeout', 'alluxio.user.file.create.ttl', 'alluxio.underfs.gcs.default.mode'], 'reason': ['Invalid unit for timeout value, should be in milliseconds: alluxio.job.master.worker.timeout', 'Invalid value, should be greater than 0: alluxio.user.file.create.ttl', 'Invalid value, should be in octal format: alluxio.underfs.gcs.default.mode']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.worker.timeout	alluxio.user.file.create.ttl	alluxio.underfs.gcs.default.mode
+[Ciri] Reason for alluxio.job.master.worker.timeout: Invalid unit for timeout value, should be in milliseconds: alluxio.job.master.worker.timeout
+[Ciri] Reason for alluxio.user.file.create.ttl: Property 'alluxio.user.file.create.ttl' should have a positive value. Use a value greater than 0.
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: Invalid value, should be in octal format: alluxio.underfs.gcs.default.mode

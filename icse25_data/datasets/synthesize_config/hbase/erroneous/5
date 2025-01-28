@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.info.bindAddress</name>
+  <value>0.0.0.0</value>
+    <description>The bind address for the HBase Master web UI
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.regionSplitLimit</name>
+  <value>1000</value>
+    <description>
+      Limit for the number of regions after which no more region splitting
+      should take place. This is not hard limit for the number of regions
+      but acts as a guideline for the regionserver to stop splitting after
+      a certain limit. Default is set to 1000.
+    </description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.property.maxClientCnxns</name>
+  <value>600</value>
+    <description>Property from ZooKeeper's config zoo.cfg.
+    Limit on number of concurrent connections (at the socket level) that a
+    single client, identified by IP address, may make to a single member of
+    the ZooKeeper ensemble. Set high to avoid zk connection issues running
+    standalone and pseudo-distributed.</description>
+</property>
+
+<property>
+  <name>hbase.client.scanner.timeout.period</name>
+  <value>60000</value>
+    <description>Client scanner lease period in milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.rpc.timeout</name>
+  <value>120000</value>
+    <description>This is for the RPC layer to define how long (millisecond) HBase client applications
+        take for a remote call to time out. It uses pings to check connections
+        but will eventually throw a TimeoutException.</description>
+</property>
+
+<property>
+  <name>hbase.dynamic.jars.dir</name>
+  <value>//hadoop/io/local</value>
+    <description>
+      The directory from which the custom filter JARs can be loaded
+      dynamically by the region server without the need to restart. However,
+      an already loaded filter/co-processor class would not be un-loaded. See
+      HBASE-1936 for more details.
+
+      Does not apply to coprocessors.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest.csrf.enabled</name>
+  <value>true</value>
+  <description>
+    Set to true to enable protection against cross-site request forgery (CSRF)
+	</description>
+</property>
+
+<property>
+  <name>hbase.mob.compactor.class</name>
+  <value>org.apache.hadoop.hbase.mob.compactions.PartitionedMobCompactor</value>
+    <description>
+      Implementation of mob compactor, the default one is PartitionedMobCompactor.
+    </description>
+</property>
+
+</configuration>

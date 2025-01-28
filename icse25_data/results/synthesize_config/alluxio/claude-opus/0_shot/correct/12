@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.replication.max', 'alluxio.web.refresh.interval'], 'reason': ['alluxio.user.file.replication.max should be a non-negative integer, but is set to -2', 'alluxio.web.refresh.interval is set to 1s, but the minimum allowed value is 10s']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.file.replication.max	alluxio.web.refresh.interval
+[Ciri] Reason for alluxio.user.file.replication.max: alluxio.user.file.replication.max should be a non-negative integer, but is set to -2
+[Ciri] Reason for alluxio.web.refresh.interval: alluxio.web.refresh.interval is set to 1s, but the minimum allowed value is 10s

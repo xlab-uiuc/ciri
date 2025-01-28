@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['rdbcompression', 'timeout'], 'reason': ["In Redis 7.0, the 'rdbcompression' parameter accepts 'yes' or 'no' as values, not an integer.", "The 'timeout' value of 1 second is too low and may cause client connections to be closed prematurely. It is recommended to set it to at least 30 seconds or higher depending on the use case."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: rdbcompression	timeout
+[Ciri] Reason for rdbcompression: In Redis 7.0, the 'rdbcompression' parameter accepts 'yes' or 'no' as values, not an integer.
+[Ciri] Reason for timeout: The 'timeout' value of 1 second is too low and may cause client connections to be closed prematurely. It is recommended to set it to at least 30 seconds or higher depending on the use case.

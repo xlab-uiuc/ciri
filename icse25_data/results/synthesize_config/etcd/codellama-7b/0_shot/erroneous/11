@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-read-timeout'], 'reason': ['proxy-dial-timeout must be a positive integer', 'proxy-read-timeout must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-read-timeout'], 'reason': ['proxy-dial-timeout: invalid value: 1000: time: invalid duration', 'proxy-read-timeout: invalid value: 2: time: invalid duration']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-read-timeout'], 'reason': ['proxy-dial-timeout: invalid value 1000, must be a positive integer', 'proxy-read-timeout: invalid value 2, must be a positive integer']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: proxy-dial-timeout	proxy-read-timeout
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout must be a positive integer
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout: invalid value 2, must be a positive integer

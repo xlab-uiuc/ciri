@@ -1,0 +1,19 @@
+Wrong shot number:
+[13, 4, 8]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.security.credential.provider.path', 'hadoop.registry.zk.root'], 'reason': ["The property 'fs.s3a.security.credential.provider.path' has the value '/valid/file1' which is not a valid file path.", "The property 'hadoop.registry.zk.root' has the value '/valid/file2' which is not a valid file path."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.security.credential.provider.path', 'hadoop.registry.zk.root'], 'reason': ["The property 'fs.s3a.security.credential.provider.path' has the value '/valid/file1' which is not a valid file path.", "The property 'hadoop.registry.zk.root' has the value '/valid/file2' which is not a valid file path."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.security.credential.provider.path', 'hadoop.registry.zk.root'], 'reason': ["The property 'fs.s3a.security.credential.provider.path' has the value '/valid/file1' which is not a valid file path.", "The property 'hadoop.registry.zk.root' has the value '/valid/file2' which is not a valid file path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.security.credential.provider.path	hadoop.registry.zk.root
+[Ciri] Reason for fs.s3a.security.credential.provider.path: The property 'fs.s3a.security.credential.provider.path' has the value '/valid/file1' which is not a valid file path.
+[Ciri] Reason for hadoop.registry.zk.root: The property 'hadoop.registry.zk.root' has the value '/valid/file2' which is not a valid file path.

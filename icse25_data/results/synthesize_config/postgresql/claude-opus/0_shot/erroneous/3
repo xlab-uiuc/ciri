@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_idle', 'recovery_target_action'], 'reason': ['tcp_keepalives_idle should be set to an integer value representing seconds, not a boolean.', 'recovery_target_action is not a valid parameter in PostgreSQL 13. It was removed in version 12. Use recovery_target instead.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tcp_keepalives_idle	recovery_target_action
+[Ciri] Reason for tcp_keepalives_idle: tcp_keepalives_idle should be set to an integer value representing seconds, not a boolean.
+[Ciri] Reason for recovery_target_action: recovery_target_action is not a valid parameter in PostgreSQL 13. It was removed in version 12. Use recovery_target instead.

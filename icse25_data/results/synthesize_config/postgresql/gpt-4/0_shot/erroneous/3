@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_idle', 'timezone_abbreviations', 'recovery_target_action'], 'reason': ["The correct parameter is 'tcp_keepalives_idle' without specifying a boolean value. It should be set to an integer specifying the number of seconds of inactivity after which a TCP keepalive message should be sent.", "The 'timezone_abbreviations' setting should be assigned a specific abbreviation set, not 'Default'. Possible values include 'Default', 'Australia', 'India', etc., but it must be in double quotes.", "The 'recovery_target_action' parameter is valid, but 'pause' is not a valid option for PostgreSQL 13.0. Valid options include 'promote', 'shutdown', and 'pause_at_recovery_target'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tcp_keepalives_idle	timezone_abbreviations	recovery_target_action
+[Ciri] Reason for tcp_keepalives_idle: The correct parameter is 'tcp_keepalives_idle' without specifying a boolean value. It should be set to an integer specifying the number of seconds of inactivity after which a TCP keepalive message should be sent.
+[Ciri] Reason for timezone_abbreviations: The 'timezone_abbreviations' setting should be assigned a specific abbreviation set, not 'Default'. Possible values include 'Default', 'Australia', 'India', etc., but it must be in double quotes.
+[Ciri] Reason for recovery_target_action: The 'recovery_target_action' parameter is valid, but 'pause' is not a valid option for PostgreSQL 13.0. Valid options include 'promote', 'shutdown', and 'pause_at_recovery_target'.

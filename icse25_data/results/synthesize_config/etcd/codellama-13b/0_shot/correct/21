@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['election-timeout', 'log-outputs', 'proxy-failure-wait', 'auto-compaction-retention', 'snapshot-count', 'max-snapshots'], 'reason': ['election-timeout is not a valid property for etcd version 3.5.0', 'log-outputs is not a valid property for etcd version 3.5.0', 'proxy-failure-wait is not a valid property for etcd version 3.5.0', 'auto-compaction-retention is not a valid property for etcd version 3.5.0', 'snapshot-count is not a valid property for etcd version 3.5.0', 'max-snapshots is not a valid property for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['election-timeout', 'proxy-failure-wait', 'auto-compaction-retention', 'snapshot-count', 'max-snapshots'], 'reason': ['election-timeout: 1000 is not a valid value. It should be a time duration in milliseconds.', 'proxy-failure-wait: 2500 is not a valid value. It should be a time duration in milliseconds.', 'auto-compaction-retention: "1" is not a valid value. It should be a time duration in milliseconds.', 'snapshot-count: 10000 is not a valid value. It should be a positive integer.', 'max-snapshots: 1 is not a valid value. It should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['election-timeout', 'log-outputs', 'proxy-failure-wait', 'auto-compaction-retention', 'snapshot-count', 'max-snapshots'], 'reason': ['election-timeout: 1000 is not a valid unit of time', 'log-outputs: [stderr] is not a valid log output', 'proxy-failure-wait: 2500 is not a valid unit of time', 'auto-compaction-retention: "1" is not a valid unit of time', 'snapshot-count: 10000 is not a valid unit of time', 'max-snapshots: 1 is not a valid unit of time']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: election-timeout	log-outputs	proxy-failure-wait	auto-compaction-retention	snapshot-count	max-snapshots
+[Ciri] Reason for election-timeout: election-timeout: 1000 is not a valid unit of time
+[Ciri] Reason for log-outputs: log-outputs: [stderr] is not a valid log output
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait is not a valid property for etcd version 3.5.0
+[Ciri] Reason for auto-compaction-retention: auto-compaction-retention: "1" is not a valid unit of time
+[Ciri] Reason for snapshot-count: snapshot-count is not a valid property for etcd version 3.5.0
+[Ciri] Reason for max-snapshots: max-snapshots: 1 is not a valid unit of time

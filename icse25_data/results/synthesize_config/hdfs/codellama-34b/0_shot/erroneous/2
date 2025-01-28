@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.https.need-auth', 'dfs.namenode.path.based.cache.refresh.interval.ms', 'dfs.namenode.list.reencryption.status.num.responses', 'dfs.namenode.edekcacheloader.initial.delay.ms', 'dfs.namenode.available-space-block-placement-policy.balanced-space-preference-fraction', 'dfs.disk.balancer.block.tolerance.percent'], 'reason': ['The value of dfs.client.https.need-auth is not a boolean.', 'The value of dfs.namenode.path.based.cache.refresh.interval.ms is not an integer.', 'The value of dfs.namenode.list.reencryption.status.num.responses is not an integer.', 'The value of dfs.namenode.edekcacheloader.initial.delay.ms is not an integer.', 'The value of dfs.namenode.available-space-block-placement-policy.balanced-space-preference-fraction is not a decimal between 0 and 1.', 'The value of dfs.disk.balancer.block.tolerance.percent is not a decimal between 0 and 1.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: dfs.client.https.need-auth	dfs.namenode.path.based.cache.refresh.interval.ms	dfs.namenode.list.reencryption.status.num.responses	dfs.namenode.edekcacheloader.initial.delay.ms	dfs.namenode.available-space-block-placement-policy.balanced-space-preference-fraction	dfs.disk.balancer.block.tolerance.percent
+[Ciri] Reason for dfs.client.https.need-auth: The value of dfs.client.https.need-auth is not a boolean.
+[Ciri] Reason for dfs.namenode.path.based.cache.refresh.interval.ms: The value of dfs.namenode.path.based.cache.refresh.interval.ms is not an integer.
+[Ciri] Reason for dfs.namenode.list.reencryption.status.num.responses: The value of dfs.namenode.list.reencryption.status.num.responses is not an integer.
+[Ciri] Reason for dfs.namenode.edekcacheloader.initial.delay.ms: The value of dfs.namenode.edekcacheloader.initial.delay.ms is not an integer.
+[Ciri] Reason for dfs.namenode.available-space-block-placement-policy.balanced-space-preference-fraction: The value of dfs.namenode.available-space-block-placement-policy.balanced-space-preference-fraction is not a decimal between 0 and 1.
+[Ciri] Reason for dfs.disk.balancer.block.tolerance.percent: The value of dfs.disk.balancer.block.tolerance.percent is not a decimal between 0 and 1.

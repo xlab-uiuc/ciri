@@ -1,0 +1,35 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval'], 'reason': ['proxy-refresh-interval must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'max-wals'], 'reason': ['proxy-refresh-interval must be greater than 0', 'max-wals must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'log-outputs', 'enable-pprof', 'max-wals', 'initial-advertise-peer-urls', 'client-cert-auth', 'heartbeat-interval', 'force-new-cluster'], 'reason': ['proxy-refresh-interval: invalid value -10: must be greater than 0', 'log-outputs: invalid value [stderr]: must be one of [default stderr stdout file]', 'enable-pprof: invalid value false: must be true', 'max-wals: invalid value 5: must be greater than 0', 'initial-advertise-peer-urls: invalid value http://localhost:2380: must be one of [http://localhost:2380 https://localhost:2380]', 'client-cert-auth: invalid value false: must be true', 'heartbeat-interval: invalid value 50: must be greater than 0', 'force-new-cluster: invalid value true: must be true']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'initial-cluster-token', 'initial-cluster', 'initial-advertise-peer-urls', 'force-new-cluster'], 'reason': ['initial-cluster-state is not a valid value', 'initial-cluster-token is not a valid value', 'initial-cluster is not a valid value', 'initial-advertise-peer-urls is not a valid value', 'force-new-cluster is not a valid value']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'log-outputs', 'enable-pprof', 'max-wals', 'initial-advertise-peer-urls', 'client-cert-auth', 'heartbeat-interval', 'force-new-cluster'], 'reason': ['proxy-refresh-interval must be greater than or equal to 0', 'log-outputs must be a valid log output', 'enable-pprof must be a boolean', 'max-wals must be greater than or equal to 1', 'initial-advertise-peer-urls must be a valid URL', 'client-cert-auth must be a boolean', 'heartbeat-interval must be greater than or equal to 0', 'force-new-cluster must be a boolean']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval'], 'reason': ['proxy-refresh-interval must be greater than 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval'], 'reason': ['proxy-refresh-interval is not a valid configuration parameter.']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'log-outputs', 'enable-pprof', 'max-wals', 'initial-advertise-peer-urls', 'client-cert-auth', 'heartbeat-interval', 'force-new-cluster'], 'reason': ['proxy-refresh-interval: -10 is not a valid time duration', 'log-outputs: stderr is not a valid log output', 'enable-pprof: false is not a valid boolean', 'max-wals: 5 is not a valid integer', 'initial-advertise-peer-urls: http://localhost:2380 is not a valid URL', 'client-cert-auth: false is not a valid boolean', 'heartbeat-interval: 50 is not a valid time duration', 'force-new-cluster: true is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'log-outputs', 'enable-pprof', 'max-wals', 'initial-advertise-peer-urls', 'client-cert-auth', 'heartbeat-interval', 'force-new-cluster'], 'reason': ['proxy-refresh-interval is not a valid property', 'log-outputs is not a valid property', 'enable-pprof is not a valid property', 'max-wals is not a valid property', 'initial-advertise-peer-urls is not a valid property', 'client-cert-auth is not a valid property', 'heartbeat-interval is not a valid property', 'force-new-cluster is not a valid property']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: proxy-refresh-interval	log-outputs	enable-pprof	max-wals	initial-advertise-peer-urls	client-cert-auth	heartbeat-interval	force-new-cluster
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval is not a valid property
+[Ciri] Reason for log-outputs: log-outputs: stderr is not a valid log output
+[Ciri] Reason for enable-pprof: enable-pprof is not a valid property
+[Ciri] Reason for max-wals: max-wals is not a valid property
+[Ciri] Reason for initial-advertise-peer-urls: initial-advertise-peer-urls is not a valid property
+[Ciri] Reason for client-cert-auth: client-cert-auth is not a valid property
+[Ciri] Reason for heartbeat-interval: heartbeat-interval is not a valid property
+[Ciri] Reason for force-new-cluster: force-new-cluster is not a valid property

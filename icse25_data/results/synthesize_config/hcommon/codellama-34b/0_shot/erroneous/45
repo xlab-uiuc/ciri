@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'fs.azure.secure.mode', 'ipc.[port_number].scheduler.priority.levels', 'net.topology.node.switch.mapping.impl', 'file.blocksize', 'hadoop.http.authentication.token.validity', 'adl.feature.ownerandgroup.enableupn', 'hadoop.zk.retry-interval-ms'], 'reason': ['fs.s3a.proxy.port is not a valid port number', 'fs.azure.secure.mode is not a valid boolean value', 'ipc.[port_number].scheduler.priority.levels is not a valid integer', 'net.topology.node.switch.mapping.impl is not a valid class name', 'file.blocksize is not a valid block size', 'hadoop.http.authentication.token.validity is not a valid time interval', 'adl.feature.ownerandgroup.enableupn is not a valid boolean value', 'hadoop.zk.retry-interval-ms is not a valid time interval']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.s3a.proxy.port	fs.azure.secure.mode	ipc.[port_number].scheduler.priority.levels	net.topology.node.switch.mapping.impl	file.blocksize	hadoop.http.authentication.token.validity	adl.feature.ownerandgroup.enableupn	hadoop.zk.retry-interval-ms
+[Ciri] Reason for fs.s3a.proxy.port: fs.s3a.proxy.port is not a valid port number
+[Ciri] Reason for fs.azure.secure.mode: fs.azure.secure.mode is not a valid boolean value
+[Ciri] Reason for ipc.[port_number].scheduler.priority.levels: ipc.[port_number].scheduler.priority.levels is not a valid integer
+[Ciri] Reason for net.topology.node.switch.mapping.impl: net.topology.node.switch.mapping.impl is not a valid class name
+[Ciri] Reason for file.blocksize: file.blocksize is not a valid block size
+[Ciri] Reason for hadoop.http.authentication.token.validity: hadoop.http.authentication.token.validity is not a valid time interval
+[Ciri] Reason for adl.feature.ownerandgroup.enableupn: adl.feature.ownerandgroup.enableupn is not a valid boolean value
+[Ciri] Reason for hadoop.zk.retry-interval-ms: hadoop.zk.retry-interval-ms is not a valid time interval

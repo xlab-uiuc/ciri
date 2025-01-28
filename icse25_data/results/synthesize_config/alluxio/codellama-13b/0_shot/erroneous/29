@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.fuse.jnifuse.enabled=hadoop', 'alluxio.worker.master.periodical.rpc.timeout=5min', 'alluxio.security.login.impersonation.username=_HDFS_USER_', 'alluxio.job.master.rpc.port=3000', 'alluxio.master.worker.timeout=5min', 'alluxio.master.daily.backup.state.lock.try.duration=1m', 'alluxio.worker.management.tier.align.range=100', 'alluxio.user.block.master.client.pool.size.max=1000'], 'reason': ['alluxio.fuse.jnifuse.enabled should be set to true or false', 'alluxio.worker.master.periodical.rpc.timeout should be set to a time duration', 'alluxio.security.login.impersonation.username should be set to a username', 'alluxio.job.master.rpc.port should be set to a port number', 'alluxio.master.worker.timeout should be set to a time duration', 'alluxio.master.daily.backup.state.lock.try.duration should be set to a time duration', 'alluxio.worker.management.tier.align.range should be set to a number', 'alluxio.user.block.master.client.pool.size.max should be set to a number']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.fuse.jnifuse.enabled=hadoop	alluxio.worker.master.periodical.rpc.timeout=5min	alluxio.security.login.impersonation.username=_HDFS_USER_	alluxio.job.master.rpc.port=3000	alluxio.master.worker.timeout=5min	alluxio.master.daily.backup.state.lock.try.duration=1m	alluxio.worker.management.tier.align.range=100	alluxio.user.block.master.client.pool.size.max=1000
+[Ciri] Reason for alluxio.fuse.jnifuse.enabled=hadoop: alluxio.fuse.jnifuse.enabled should be set to true or false
+[Ciri] Reason for alluxio.worker.master.periodical.rpc.timeout=5min: alluxio.worker.master.periodical.rpc.timeout should be set to a time duration
+[Ciri] Reason for alluxio.security.login.impersonation.username=_HDFS_USER_: alluxio.security.login.impersonation.username should be set to a username
+[Ciri] Reason for alluxio.job.master.rpc.port=3000: alluxio.job.master.rpc.port should be set to a port number
+[Ciri] Reason for alluxio.master.worker.timeout=5min: alluxio.master.worker.timeout should be set to a time duration
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.try.duration=1m: alluxio.master.daily.backup.state.lock.try.duration should be set to a time duration
+[Ciri] Reason for alluxio.worker.management.tier.align.range=100: alluxio.worker.management.tier.align.range should be set to a number
+[Ciri] Reason for alluxio.user.block.master.client.pool.size.max=1000: alluxio.user.block.master.client.pool.size.max should be set to a number

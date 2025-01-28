@@ -1,0 +1,16 @@
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SHORT_DATE_FORMAT', 'CSRF_COOKIE_DOMAIN', 'LOGGING', 'USE_THOUSAND_SEPARATOR', 'SIGNING_BACKEND', 'PREPEND_WWW'], 'reason': ["SHORT_DATE_FORMAT should be in the format 'd/m/Y' or 'Y-m-d'.", 'CSRF_COOKIE_DOMAIN should not be set to None. It should be a string value.', 'LOGGING configuration should not be an empty dictionary. It should contain logging settings.', 'USE_THOUSAND_SEPARATOR should be set to False if you do not want to use a thousand separator.', 'SIGNING_BACKEND should not be set directly. Use the default value provided by Django.', "PREPEND_WWW should be set to False if you do not want to prepend 'www.' to URLs."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: SHORT_DATE_FORMAT	CSRF_COOKIE_DOMAIN	LOGGING	USE_THOUSAND_SEPARATOR	SIGNING_BACKEND	PREPEND_WWW
+[Ciri] Reason for SHORT_DATE_FORMAT: SHORT_DATE_FORMAT should be in the format 'd/m/Y' or 'Y-m-d'.
+[Ciri] Reason for CSRF_COOKIE_DOMAIN: CSRF_COOKIE_DOMAIN should not be set to None. It should be a string value.
+[Ciri] Reason for LOGGING: LOGGING configuration should not be an empty dictionary. It should contain logging settings.
+[Ciri] Reason for USE_THOUSAND_SEPARATOR: USE_THOUSAND_SEPARATOR should be set to False if you do not want to use a thousand separator.
+[Ciri] Reason for SIGNING_BACKEND: SIGNING_BACKEND should not be set directly. Use the default value provided by Django.
+[Ciri] Reason for PREPEND_WWW: PREPEND_WWW should be set to False if you do not want to prepend 'www.' to URLs.

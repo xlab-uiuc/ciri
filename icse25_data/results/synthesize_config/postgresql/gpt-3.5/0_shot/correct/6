@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_init_zero', 'vacuum_failsafe_age', 'update_process_title', 'hot_standby_feedback', 'geqo', 'port', 'vacuum_freeze_table_age'], 'reason': ['wal_init_zero is not a valid parameter for PostgreSQL configuration.', 'vacuum_failsafe_age value is too high, it should be in the range of 0 to 1000000000.', 'update_process_title is not a valid parameter for PostgreSQL configuration.', 'hot_standby_feedback is not a valid parameter for PostgreSQL configuration.', 'geqo is not a valid parameter for PostgreSQL configuration.', 'port value should be in the range of 1 to 65535.', 'vacuum_freeze_table_age value is too high, it should be in the range of 0 to 2000000000.']}
+
+{'hasError': True, 'errParameter': ['wal_init_zero', 'vacuum_failsafe_age', 'update_process_title', 'hot_standby_feedback', 'geqo', 'port', 'vacuum_freeze_table_age'], 'reason': ['wal_init_zero is not a valid parameter for PostgreSQL configuration.', 'vacuum_failsafe_age value is too high. It should be in the range of 0 to 1000000000.', 'update_process_title is not a valid parameter for PostgreSQL configuration.', 'hot_standby_feedback is not a valid parameter for PostgreSQL configuration.', 'geqo is not a valid parameter for PostgreSQL configuration.', 'port value is not in the valid range. It should be between 1 and 65535.', 'vacuum_freeze_table_age value is too high. It should be in the range of 0 to 2000000000.']}
+
+{'hasError': True, 'errParameter': ['wal_init_zero', 'vacuum_failsafe_age', 'update_process_title', 'hot_standby_feedback', 'geqo', 'port', 'vacuum_freeze_table_age'], 'reason': ['wal_init_zero is not a valid parameter for PostgreSQL configuration.', 'vacuum_failsafe_age value is too high, it should be in the range of 0 to 1000000000.', 'update_process_title is not a valid parameter for PostgreSQL configuration.', 'hot_standby_feedback is not a valid parameter for PostgreSQL configuration.', 'geqo is not a valid parameter for PostgreSQL configuration.', 'port value is not in the valid range of 1 to 65535.', 'vacuum_freeze_table_age value is too high, it should be in the range of 0 to 2000000000.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: wal_init_zero	vacuum_failsafe_age	update_process_title	hot_standby_feedback	geqo	port	vacuum_freeze_table_age
+[Ciri] Reason for wal_init_zero: wal_init_zero is not a valid parameter for PostgreSQL configuration.
+[Ciri] Reason for vacuum_failsafe_age: vacuum_failsafe_age value is too high, it should be in the range of 0 to 1000000000.
+[Ciri] Reason for update_process_title: update_process_title is not a valid parameter for PostgreSQL configuration.
+[Ciri] Reason for hot_standby_feedback: hot_standby_feedback is not a valid parameter for PostgreSQL configuration.
+[Ciri] Reason for geqo: geqo is not a valid parameter for PostgreSQL configuration.
+[Ciri] Reason for port: port value is not in the valid range of 1 to 65535.
+[Ciri] Reason for vacuum_freeze_table_age: vacuum_freeze_table_age value is too high. It should be in the range of 0 to 2000000000.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'max_slot_wal_keep_size'], 'reason': ["The value for shared_buffers should be specified in bytes, not megabytes (MB). The correct format is a number followed by 'kB', 'MB', or 'GB'. For example, '128MB' should be written as '128MB'.", 'The value -1 for max_slot_wal_keep_size is not valid. This parameter specifies the maximum amount of disk space that can be used for WAL files kept for logical replication slots. It should be set to a positive integer value representing the number of bytes, or a value between 0 and 100 representing the percentage of the total available disk space.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: shared_buffers	max_slot_wal_keep_size
+[Ciri] Reason for shared_buffers: The value for shared_buffers should be specified in bytes, not megabytes (MB). The correct format is a number followed by 'kB', 'MB', or 'GB'. For example, '128MB' should be written as '128MB'.
+[Ciri] Reason for max_slot_wal_keep_size: The value -1 for max_slot_wal_keep_size is not valid. This parameter specifies the maximum amount of disk space that can be used for WAL files kept for logical replication slots. It should be set to a positive integer value representing the number of bytes, or a value between 0 and 100 representing the percentage of the total available disk space.

@@ -1,0 +1,16 @@
+Correct shot number:
+[6, 13, 4, 11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.tmp.dir', 'fs.ftp.transfer.mode', 'fs.s3a.multipart.size', 'fs.s3a.select.input.csv.record.delimiter', 'fs.azure.sas.expiry.period', 'hadoop.security.kms.client.encrypted.key.cache.expiry'], 'reason': ['The <usage> tag is not a valid tag for property elements.', 'The <usage> tag is not a valid tag for property elements.', "The value '64M' for fs.s3a.multipart.size should not have a suffix 'M'.", "The value '\\n' for fs.s3a.select.input.csv.record.delimiter should not be escaped.", "The value '180d' for fs.azure.sas.expiry.period should not have a suffix 'd'.", 'The description is missing for property hadoop.security.kms.client.encrypted.key.cache.expiry.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: hadoop.tmp.dir	fs.ftp.transfer.mode	fs.s3a.multipart.size	fs.s3a.select.input.csv.record.delimiter	fs.azure.sas.expiry.period	hadoop.security.kms.client.encrypted.key.cache.expiry
+[Ciri] Reason for hadoop.tmp.dir: The <usage> tag is not a valid tag for property elements.
+[Ciri] Reason for fs.ftp.transfer.mode: The <usage> tag is not a valid tag for property elements.
+[Ciri] Reason for fs.s3a.multipart.size: The value '64M' for fs.s3a.multipart.size should not have a suffix 'M'.
+[Ciri] Reason for fs.s3a.select.input.csv.record.delimiter: The value '\n' for fs.s3a.select.input.csv.record.delimiter should not be escaped.
+[Ciri] Reason for fs.azure.sas.expiry.period: The value '180d' for fs.azure.sas.expiry.period should not have a suffix 'd'.
+[Ciri] Reason for hadoop.security.kms.client.encrypted.key.cache.expiry: The description is missing for property hadoop.security.kms.client.encrypted.key.cache.expiry.

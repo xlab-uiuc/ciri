@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['oom-score-adj', 'timeout', 'aof-timestamp-enabled', 'repl-diskless-sync'], 'reason': ["The 'oom-score-adj' parameter does not accept 'no' as a valid value. It expects an integer between -1000 and 1000.", "The 'timeout' parameter expects a value in seconds, but '1' is too low. It should be at least 30 seconds or higher.", "The 'aof-timestamp-enabled' parameter is not a valid configuration directive in Redis 7.0.0. It has been removed in this version.", "The 'repl-diskless-sync' parameter is not a valid configuration directive in Redis 7.0.0. It has been replaced by 'repl-diskless-load' in this version."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: oom-score-adj	timeout	aof-timestamp-enabled	repl-diskless-sync
+[Ciri] Reason for oom-score-adj: The 'oom-score-adj' parameter does not accept 'no' as a valid value. It expects an integer between -1000 and 1000.
+[Ciri] Reason for timeout: The 'timeout' parameter expects a value in seconds, but '1' is too low. It should be at least 30 seconds or higher.
+[Ciri] Reason for aof-timestamp-enabled: The 'aof-timestamp-enabled' parameter is not a valid configuration directive in Redis 7.0.0. It has been removed in this version.
+[Ciri] Reason for repl-diskless-sync: The 'repl-diskless-sync' parameter is not a valid configuration directive in Redis 7.0.0. It has been replaced by 'repl-diskless-load' in this version.

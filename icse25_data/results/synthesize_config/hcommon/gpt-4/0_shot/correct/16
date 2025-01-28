@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.http.filter.initializers', 'hadoop.security.group.mapping.ldap.bind.users'], 'reason': ["The value for 'hadoop.http.filter.initializers' should likely be a list of class names separated by commas, indicating multiple filter initializers if needed. The provided value suggests only one class is used without considering the possibility of extending the configuration with more classes.", "The property 'hadoop.security.group.mapping.ldap.bind.users' seems to be incorrectly described. It suggests a singular value ('samsuper') but the description implies it should be a list of aliases ('alias1,alias2'). Additionally, the example configuration provided in the description does not directly correlate with the value given, suggesting a potential misconfiguration or misunderstanding in the usage of this property."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.http.filter.initializers	hadoop.security.group.mapping.ldap.bind.users
+[Ciri] Reason for hadoop.http.filter.initializers: The value for 'hadoop.http.filter.initializers' should likely be a list of class names separated by commas, indicating multiple filter initializers if needed. The provided value suggests only one class is used without considering the possibility of extending the configuration with more classes.
+[Ciri] Reason for hadoop.security.group.mapping.ldap.bind.users: The property 'hadoop.security.group.mapping.ldap.bind.users' seems to be incorrectly described. It suggests a singular value ('samsuper') but the description implies it should be a list of aliases ('alias1,alias2'). Additionally, the example configuration provided in the description does not directly correlate with the value given, suggesting a potential misconfiguration or misunderstanding in the usage of this property.

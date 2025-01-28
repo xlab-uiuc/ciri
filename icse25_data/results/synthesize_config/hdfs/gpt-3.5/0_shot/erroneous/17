@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.http-bind-host', 'dfs.webhdfs.rest-csrf.custom-header', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ['Invalid value for dfs.journalnode.http-bind-host. It should be a valid IP address.', 'Invalid value for dfs.webhdfs.rest-csrf.custom-header. It should not contain special characters.', 'Invalid value for dfs.provided.aliasmap.leveldb.path. The path should be a valid directory path.']}
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.http-bind-host', 'dfs.webhdfs.rest-csrf.custom-header', 'dfs.storage.policy.satisfier.recheck.timeout.millis', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ['Invalid value for dfs.journalnode.http-bind-host. It should be a valid IP address.', 'Invalid value for dfs.webhdfs.rest-csrf.custom-header. It should not contain special characters.', 'Invalid value for dfs.storage.policy.satisfier.recheck.timeout.millis. The value should be in milliseconds.', 'Invalid value for dfs.provided.aliasmap.leveldb.path. The path should be a valid file path.']}
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.http-bind-host', 'dfs.webhdfs.rest-csrf.custom-header', 'dfs.storage.policy.satisfier.recheck.timeout.millis', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["Invalid value '0.0.0' for dfs.journalnode.http-bind-host. It should be a valid IP address or hostname.", "Invalid value 'X-XSRF-HEADER' for dfs.webhdfs.rest-csrf.custom-header. It should not contain special characters.", "Invalid value '30000' for dfs.storage.policy.satisfier.recheck.timeout.millis. It should be in the format '1m' for 1 minute.", "Invalid value '/valid/file1' for dfs.provided.aliasmap.leveldb.path. It should be a valid file path."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: dfs.journalnode.http-bind-host	dfs.webhdfs.rest-csrf.custom-header	dfs.storage.policy.satisfier.recheck.timeout.millis	dfs.provided.aliasmap.leveldb.path
+[Ciri] Reason for dfs.journalnode.http-bind-host: Invalid value '0.0.0' for dfs.journalnode.http-bind-host. It should be a valid IP address or hostname.
+[Ciri] Reason for dfs.webhdfs.rest-csrf.custom-header: Invalid value for dfs.webhdfs.rest-csrf.custom-header. It should not contain special characters.
+[Ciri] Reason for dfs.storage.policy.satisfier.recheck.timeout.millis: Invalid value for dfs.storage.policy.satisfier.recheck.timeout.millis. The value should be in milliseconds.
+[Ciri] Reason for dfs.provided.aliasmap.leveldb.path: Invalid value for dfs.provided.aliasmap.leveldb.path. The path should be a valid file path.

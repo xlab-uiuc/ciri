@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'maxSessionTimeout'], 'reason': ['secureClientPortAddress should be a valid IP address or hostname.', 'maxSessionTimeout should be a positive integer greater than 0.']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'maxSessionTimeout'], 'reason': ['secureClientPortAddress should be a valid IP address or hostname', 'maxSessionTimeout should be greater than 0']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'maxSessionTimeout'], 'reason': ['secureClientPortAddress should be a valid IP address or hostname, cannot be set to -1.0.0.0', 'maxSessionTimeout should be a positive value greater than 0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPortAddress	maxSessionTimeout
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress should be a valid IP address or hostname, cannot be set to -1.0.0.0
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout should be a positive integer greater than 0.

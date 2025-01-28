@@ -1,0 +1,19 @@
+Wrong shot number:
+[11, 8, 2]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.swebhdfs.impl', 'ipc.[port_number].decay-scheduler.thresholds'], 'reason': ["The property 'fs.AbstractFileSystem.swebhdfs.impl' is incorrect or does not exist. The correct property should likely be 'fs.AbstractFileSystem.webhdfs.impl' for WebHDFS FileSystem implementations.", "The property 'ipc.[port_number].decay-scheduler.thresholds' uses a placeholder '[port_number]' which should be replaced with an actual port number if this configuration is intended to be used."]}
+
+{'hasError': True, 'errParameter': ['fs.AbstractFileSystem.swebhdfs.impl', 'ipc.[port_number].decay-scheduler.thresholds'], 'reason': ["The property 'fs.AbstractFileSystem.swebhdfs.impl' is incorrect or not supported. The correct property should likely be 'fs.AbstractFileSystem.webhdfs.impl' for WebHDFS FileSystem implementations.", "The property 'ipc.[port_number].decay-scheduler.thresholds' uses a placeholder '[port_number]' which should be replaced with an actual port number if this is intended to be a valid configuration."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.AbstractFileSystem.swebhdfs.impl	ipc.[port_number].decay-scheduler.thresholds
+[Ciri] Reason for fs.AbstractFileSystem.swebhdfs.impl: The property 'fs.AbstractFileSystem.swebhdfs.impl' is incorrect or does not exist. The correct property should likely be 'fs.AbstractFileSystem.webhdfs.impl' for WebHDFS FileSystem implementations.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: The property 'ipc.[port_number].decay-scheduler.thresholds' uses a placeholder '[port_number]' which should be replaced with an actual port number if this configuration is intended to be used.

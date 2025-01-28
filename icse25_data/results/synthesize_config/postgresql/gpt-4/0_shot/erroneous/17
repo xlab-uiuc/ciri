@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['huge_pages', 'recovery_init_sync_method', 'log_lock_waits'], 'reason': ["The value for 'huge_pages' is invalid. Valid options are 'try', 'on', or 'off'.", "'recovery_init_sync_method' is not a recognized configuration parameter in PostgreSQL 13.0. It was introduced in PostgreSQL 14.", "The value for 'log_lock_waits' should be a boolean represented as 'on' or 'off'. However, it is correctly set, indicating the description of an error was mistaken."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: huge_pages	recovery_init_sync_method	log_lock_waits
+[Ciri] Reason for huge_pages: The value for 'huge_pages' is invalid. Valid options are 'try', 'on', or 'off'.
+[Ciri] Reason for recovery_init_sync_method: 'recovery_init_sync_method' is not a recognized configuration parameter in PostgreSQL 13.0. It was introduced in PostgreSQL 14.
+[Ciri] Reason for log_lock_waits: The value for 'log_lock_waits' should be a boolean represented as 'on' or 'off'. However, it is correctly set, indicating the description of an error was mistaken.

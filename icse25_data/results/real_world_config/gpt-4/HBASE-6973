@@ -1,0 +1,16 @@
+Wrong shot number:
+[7, 5, 6]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.keytab.file', 'hbase.regionserver.logroll.period', 'hfile.block.cache.size'], 'reason': ["The property 'hbase.regionserver.keytab.file' contains unnecessary whitespace in its value.", "The property 'hbase.regionserver.logroll.period' contains a 'usage' field which is not a standard configuration property attribute.", "The property 'hfile.block.cache.size' has a value '0.8' which might be too high, potentially leading to excessive garbage collection or memory pressure. The recommended default is 0.4."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.regionserver.keytab.file	hbase.regionserver.logroll.period	hfile.block.cache.size
+[Ciri] Reason for hbase.regionserver.keytab.file: The property 'hbase.regionserver.keytab.file' contains unnecessary whitespace in its value.
+[Ciri] Reason for hbase.regionserver.logroll.period: The property 'hbase.regionserver.logroll.period' contains a 'usage' field which is not a standard configuration property attribute.
+[Ciri] Reason for hfile.block.cache.size: The property 'hfile.block.cache.size' has a value '0.8' which might be too high, potentially leading to excessive garbage collection or memory pressure. The recommended default is 0.4.

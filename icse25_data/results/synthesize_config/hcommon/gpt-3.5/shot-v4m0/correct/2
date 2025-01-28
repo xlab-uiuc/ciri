@@ -1,0 +1,13 @@
+Correct shot number:
+[5, 16, 2, 7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].backoff.enable', 'ipc.[port_number].decay-scheduler.period-ms', 'ipc.[port_number].weighted-cost.response'], 'reason': ['Parameter name contains square brackets which is not a valid format for Hadoop configuration properties.', 'Parameter name contains square brackets which is not a valid format for Hadoop configuration properties.', 'Parameter name contains square brackets which is not a valid format for Hadoop configuration properties.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: ipc.[port_number].backoff.enable	ipc.[port_number].decay-scheduler.period-ms	ipc.[port_number].weighted-cost.response
+[Ciri] Reason for ipc.[port_number].backoff.enable: Parameter name contains square brackets which is not a valid format for Hadoop configuration properties.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.period-ms: Parameter name contains square brackets which is not a valid format for Hadoop configuration properties.
+[Ciri] Reason for ipc.[port_number].weighted-cost.response: Parameter name contains square brackets which is not a valid format for Hadoop configuration properties.

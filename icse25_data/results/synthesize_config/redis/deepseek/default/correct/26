@@ -1,0 +1,20 @@
+Wrong shot number:
+[1, 8, 5]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'repl-diskless-sync-delay', 'tcp-keepalive'], 'reason': ["The property 'cluster-announce-port' has the value '2' which is not of the correct type Integer.", "The property 'repl-diskless-sync-delay' has the value '5' which is not of the correct type Integer.", "The property 'tcp-keepalive' has the value '150' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port', 'repl-diskless-sync-delay', 'tcp-keepalive'], 'reason': ["The property 'cluster-announce-port' has the value '2' which is not of the correct type Integer.", "The property 'repl-diskless-sync-delay' has the value '5' which is not of the correct type Integer.", "The property 'tcp-keepalive' has the value '150' which is not of the correct type Integer."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-port	repl-diskless-sync-delay	tcp-keepalive
+[Ciri] Reason for cluster-announce-port: The property 'cluster-announce-port' has the value '2' which is not of the correct type Integer.
+[Ciri] Reason for repl-diskless-sync-delay: The property 'repl-diskless-sync-delay' has the value '5' which is not of the correct type Integer.
+[Ciri] Reason for tcp-keepalive: The property 'tcp-keepalive' has the value '150' which is not of the correct type Integer.

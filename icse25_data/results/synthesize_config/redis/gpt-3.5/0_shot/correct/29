@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-eviction', 'stream-node-max-bytes', 'hz', 'repl-diskless-sync-max-replicas'], 'reason': ["The parameter 'lazyfree-lazy-eviction' is not a valid configuration for Redis version 7.0.0.", "The parameter 'stream-node-max-bytes' is not a valid configuration for Redis version 7.0.0.", "The parameter 'hz' is not a valid configuration for Redis version 7.0.0.", "The parameter 'repl-diskless-sync-max-replicas' is not a valid configuration for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['oom-score-adj-values', 'lazyfree-lazy-eviction', 'stream-node-max-bytes', 'hz', 'repl-diskless-sync-max-replicas'], 'reason': ['oom-score-adj-values should have 3 values separated by spaces.', 'lazyfree-lazy-eviction should be either yes or no.', 'stream-node-max-bytes should be an integer value.', 'hz should be an integer value greater than 0.', 'repl-diskless-sync-max-replicas should be an integer value greater than or equal to 0.']}
+
+{'hasError': True, 'errParameter': ['lazyfree-lazy-eviction', 'stream-node-max-bytes', 'hz', 'repl-diskless-sync-max-replicas'], 'reason': ["The parameter 'lazyfree-lazy-eviction' is not a valid configuration for Redis version 7.0.0.", "The parameter 'stream-node-max-bytes' is not a valid configuration for Redis version 7.0.0.", "The parameter 'hz' is not a valid configuration for Redis version 7.0.0.", "The parameter 'repl-diskless-sync-max-replicas' is not a valid configuration for Redis version 7.0.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: lazyfree-lazy-eviction	stream-node-max-bytes	hz	repl-diskless-sync-max-replicas
+[Ciri] Reason for lazyfree-lazy-eviction: The parameter 'lazyfree-lazy-eviction' is not a valid configuration for Redis version 7.0.0.
+[Ciri] Reason for stream-node-max-bytes: The parameter 'stream-node-max-bytes' is not a valid configuration for Redis version 7.0.0.
+[Ciri] Reason for hz: The parameter 'hz' is not a valid configuration for Redis version 7.0.0.
+[Ciri] Reason for repl-diskless-sync-max-replicas: The parameter 'repl-diskless-sync-max-replicas' is not a valid configuration for Redis version 7.0.0.

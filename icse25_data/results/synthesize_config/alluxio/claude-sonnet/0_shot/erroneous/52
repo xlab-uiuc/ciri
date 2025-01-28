@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.web.bind.host=127.0.0.1', 'alluxio.proxy.stream.cache.timeout=1hour', 'alluxio.job.master.worker.timeout=60sec', 'alluxio.zookeeper.leader.connection.error.policy=SESSION'], 'reason': ["The property 'alluxio.worker.web.bind.host' is deprecated in Alluxio 2.5.0 and should be replaced with 'alluxio.worker.web.hostname'.", "The time unit for 'alluxio.proxy.stream.cache.timeout' should be specified using the TimeValue format (e.g., '1h' instead of '1hour').", "The time unit for 'alluxio.job.master.worker.timeout' should be specified using the TimeValue format (e.g., '60s' instead of '60sec').", "The property 'alluxio.zookeeper.leader.connection.error.policy' is not a valid configuration property in Alluxio 2.5.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.worker.web.bind.host=127.0.0.1	alluxio.proxy.stream.cache.timeout=1hour	alluxio.job.master.worker.timeout=60sec	alluxio.zookeeper.leader.connection.error.policy=SESSION
+[Ciri] Reason for alluxio.worker.web.bind.host=127.0.0.1: The property 'alluxio.worker.web.bind.host' is deprecated in Alluxio 2.5.0 and should be replaced with 'alluxio.worker.web.hostname'.
+[Ciri] Reason for alluxio.proxy.stream.cache.timeout=1hour: The time unit for 'alluxio.proxy.stream.cache.timeout' should be specified using the TimeValue format (e.g., '1h' instead of '1hour').
+[Ciri] Reason for alluxio.job.master.worker.timeout=60sec: The time unit for 'alluxio.job.master.worker.timeout' should be specified using the TimeValue format (e.g., '60s' instead of '60sec').
+[Ciri] Reason for alluxio.zookeeper.leader.connection.error.policy=SESSION: The property 'alluxio.zookeeper.leader.connection.error.policy' is not a valid configuration property in Alluxio 2.5.0.

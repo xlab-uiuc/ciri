@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.block.write.replace-datanode-on-failure.min-replication', 'dfs.web.authentication.kerberos.keytab'], 'reason': ['dfs.client.block.write.replace-datanode-on-failure.min-replication should be a positive integer', 'dfs.web.authentication.kerberos.keytab should be a valid file path']}
+
+{'hasError': True, 'errParameter': ['dfs.client.block.write.replace-datanode-on-failure.min-replication', 'dfs.web.authentication.kerberos.keytab'], 'reason': ['dfs.client.block.write.replace-datanode-on-failure.min-replication must be greater than or equal to 0', 'dfs.web.authentication.kerberos.keytab must be a valid file']}
+
+{'hasError': True, 'errParameter': ['dfs.client.block.write.replace-datanode-on-failure.min-replication'], 'reason': ['The value of dfs.client.block.write.replace-datanode-on-failure.min-replication should be greater than or equal to 0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.client.block.write.replace-datanode-on-failure.min-replication	dfs.web.authentication.kerberos.keytab
+[Ciri] Reason for dfs.client.block.write.replace-datanode-on-failure.min-replication: dfs.client.block.write.replace-datanode-on-failure.min-replication should be a positive integer
+[Ciri] Reason for dfs.web.authentication.kerberos.keytab: dfs.web.authentication.kerberos.keytab must be a valid file

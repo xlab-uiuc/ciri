@@ -1,0 +1,15 @@
+Wrong shot number:
+[8, 4, 7]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].cost-provider.impl', 'hadoop.http.authentication.kerberos.keytab'], 'reason': ["The property 'ipc.[port_number].cost-provider.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number.", "The property 'hadoop.http.authentication.kerberos.keytab' has a value pointing to a file '/valid/file1' which may not be a valid path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].cost-provider.impl	hadoop.http.authentication.kerberos.keytab
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: The property 'ipc.[port_number].cost-provider.impl' contains a placeholder '[port_number]' which should be replaced with an actual port number.
+[Ciri] Reason for hadoop.http.authentication.kerberos.keytab: The property 'hadoop.http.authentication.kerberos.keytab' has a value pointing to a file '/valid/file1' which may not be a valid path.

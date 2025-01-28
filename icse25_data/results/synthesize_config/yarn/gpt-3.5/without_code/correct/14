@@ -1,0 +1,19 @@
+Wrong shot number:
+[7, 9, 8]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.am.max-attempts', 'yarn.resourcemanager.delegation-token-renewer.thread-timeout'], 'reason': ["The value of the property 'yarn.resourcemanager.am.max-attempts' should be greater than 1.", "The value of the property 'yarn.resourcemanager.delegation-token-renewer.thread-timeout' should be specified in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.am.max-attempts', 'yarn.resourcemanager.delegation-token-renewer.thread-timeout'], 'reason': ["The value of the property 'yarn.resourcemanager.am.max-attempts' should be greater than 1.", "The value of the property 'yarn.resourcemanager.delegation-token-renewer.thread-timeout' should be in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.delegation-token-renewer.thread-timeout'], 'reason': ["The value of the property 'yarn.resourcemanager.delegation-token-renewer.thread-timeout' should be in milliseconds format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.am.max-attempts	yarn.resourcemanager.delegation-token-renewer.thread-timeout
+[Ciri] Reason for yarn.resourcemanager.am.max-attempts: The value of the property 'yarn.resourcemanager.am.max-attempts' should be greater than 1.
+[Ciri] Reason for yarn.resourcemanager.delegation-token-renewer.thread-timeout: The value of the property 'yarn.resourcemanager.delegation-token-renewer.thread-timeout' should be in milliseconds.

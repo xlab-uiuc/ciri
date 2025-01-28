@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['USE_TZ', 'LANGUAGE_COOKIE_SAMESITE', 'SHORT_DATETIME_FORMAT'], 'reason': ['USE_TZ should be a boolean value (true or false), not an integer.', "LANGUAGE_COOKIE_SAMESITE should be set to 'Lax', 'Strict', or 'None' as a string. If 'None', you must also set SESSION_COOKIE_SECURE=True and CSRF_COOKIE_SECURE=True to prevent security issues.", "SHORT_DATETIME_FORMAT syntax seems incorrect. It should typically include both date and time components. For example, 'N j, Y, P' for a format like 'March 10, 2021, 9:30 p.m.'. The provided format 'm/d/Y P' might not correctly display time as intended."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: USE_TZ	LANGUAGE_COOKIE_SAMESITE	SHORT_DATETIME_FORMAT
+[Ciri] Reason for USE_TZ: USE_TZ should be a boolean value (true or false), not an integer.
+[Ciri] Reason for LANGUAGE_COOKIE_SAMESITE: LANGUAGE_COOKIE_SAMESITE should be set to 'Lax', 'Strict', or 'None' as a string. If 'None', you must also set SESSION_COOKIE_SECURE=True and CSRF_COOKIE_SECURE=True to prevent security issues.
+[Ciri] Reason for SHORT_DATETIME_FORMAT: SHORT_DATETIME_FORMAT syntax seems incorrect. It should typically include both date and time components. For example, 'N j, Y, P' for a format like 'March 10, 2021, 9:30 p.m.'. The provided format 'm/d/Y P' might not correctly display time as intended.

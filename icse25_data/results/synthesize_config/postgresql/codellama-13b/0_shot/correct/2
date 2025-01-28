@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_decode_buffer_size', 'log_statement', 'client_encoding', 'max_files_per_process', 'lc_monetary', 'work_mem'], 'reason': ['wal_decode_buffer_size must be a power of 2 between 32kB and 1GB.', 'log_statement must be one of none, ddl, mod, all.', 'client_encoding must be a valid encoding name.', 'max_files_per_process must be a positive integer.', 'lc_monetary must be a valid locale name.', 'work_mem must be a valid size in bytes.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['max_files_per_process', 'work_mem'], 'reason': ['max_files_per_process is not a valid parameter', 'work_mem is not a valid parameter']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable_indexscan', 'max_parallel_apply_workers_per_subscription', 'wal_decode_buffer_size', 'log_statement', 'client_encoding', 'max_files_per_process', 'lc_monetary', 'work_mem'], 'reason': ['enable_indexscan is not a valid parameter', 'max_parallel_apply_workers_per_subscription is not a valid parameter', 'wal_decode_buffer_size is not a valid parameter', 'log_statement is not a valid parameter', 'client_encoding is not a valid parameter', 'max_files_per_process is not a valid parameter', 'lc_monetary is not a valid parameter', 'work_mem is not a valid parameter']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['enable_indexscan', 'max_parallel_apply_workers_per_subscription', 'wal_decode_buffer_size', 'log_statement', 'client_encoding', 'max_files_per_process', 'lc_monetary', 'work_mem'], 'reason': ['enable_indexscan should be a boolean', 'max_parallel_apply_workers_per_subscription should be an integer', 'wal_decode_buffer_size should be a byte size', 'log_statement should be a string', 'client_encoding should be a string', 'max_files_per_process should be an integer', 'lc_monetary should be a string', 'work_mem should be a byte size']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: enable_indexscan	max_parallel_apply_workers_per_subscription	wal_decode_buffer_size	log_statement	client_encoding	max_files_per_process	lc_monetary	work_mem
+[Ciri] Reason for enable_indexscan: enable_indexscan should be a boolean
+[Ciri] Reason for max_parallel_apply_workers_per_subscription: max_parallel_apply_workers_per_subscription should be an integer
+[Ciri] Reason for wal_decode_buffer_size: wal_decode_buffer_size should be a byte size
+[Ciri] Reason for log_statement: log_statement should be a string
+[Ciri] Reason for client_encoding: client_encoding should be a string
+[Ciri] Reason for max_files_per_process: max_files_per_process is not a valid parameter
+[Ciri] Reason for lc_monetary: lc_monetary should be a string
+[Ciri] Reason for work_mem: work_mem should be a byte size

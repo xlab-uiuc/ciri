@@ -1,0 +1,26 @@
+Wrong shot number:
+[4, 7, 9]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.thread.compaction.throttle'], 'reason': ["The property 'hbase.regionserver.thread.compaction.throttle' has the value '1342177280' which is out of the valid range of 0 to 2147483647."]}
+
+{'hasError': True, 'errParameter': ['hbase.dfs.client.read.shortcircuit.buffer.size'], 'reason': ["The property 'hbase.dfs.client.read.shortcircuit.buffer.size' has the value '131072' which is less than the minimum allowed value of 65536."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.dfs.client.read.shortcircuit.buffer.size'], 'reason': ["The property 'hbase.dfs.client.read.shortcircuit.buffer.size' has the value '131072' which is out of the valid range of a buffer size."]}
+
+{'hasError': True, 'errParameter': ['hbase.dfs.client.read.shortcircuit.buffer.size'], 'reason': ["The property 'hbase.dfs.client.read.shortcircuit.buffer.size' has the value '131072' which is out of the valid range of a direct byte buffer size."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.dfs.client.read.shortcircuit.buffer.size
+[Ciri] Reason for hbase.dfs.client.read.shortcircuit.buffer.size: The property 'hbase.dfs.client.read.shortcircuit.buffer.size' has the value '131072' which is out of the valid range of a direct byte buffer size.

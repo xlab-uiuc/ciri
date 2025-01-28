@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 2, 8]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendonly', 'dir'], 'reason': ["The property 'appendonly' is set to 'no' which is not a valid value. It should be either 'yes' or 'appendfsync'.", "The property 'dir' has a value with a comment which is not allowed in the configuration file."]}
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ["The property 'appendfsync' has conflicting values 'always' and 'always'. Only one value should be specified."]}
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ["The property 'appendfsync' has multiple conflicting values ('always' and 'always-show-logo'). Only one value should be specified."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: appendfsync
+[Ciri] Reason for appendfsync: The property 'appendfsync' has conflicting values 'always' and 'always'. Only one value should be specified.

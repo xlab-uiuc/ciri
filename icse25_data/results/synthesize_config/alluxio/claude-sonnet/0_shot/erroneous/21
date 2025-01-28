@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.port=file://', 'alluxio.underfs.oss.connection.ttl=-2', 'alluxio.zookeeper.election.path=/valid/file2'], 'reason': ["The value 'file://' for 'alluxio.job.worker.web.port' is not a valid port number or socket path.", "The value '-2' for 'alluxio.underfs.oss.connection.ttl' is not a valid duration. It should be a positive time value.", "The value '/valid/file2' for 'alluxio.zookeeper.election.path' is not a valid ZooKeeper path. It should start with a '/'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.worker.web.port=file://	alluxio.underfs.oss.connection.ttl=-2	alluxio.zookeeper.election.path=/valid/file2
+[Ciri] Reason for alluxio.job.worker.web.port=file://: The value 'file://' for 'alluxio.job.worker.web.port' is not a valid port number or socket path.
+[Ciri] Reason for alluxio.underfs.oss.connection.ttl=-2: The value '-2' for 'alluxio.underfs.oss.connection.ttl' is not a valid duration. It should be a positive time value.
+[Ciri] Reason for alluxio.zookeeper.election.path=/valid/file2: The value '/valid/file2' for 'alluxio.zookeeper.election.path' is not a valid ZooKeeper path. It should start with a '/'.

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.posix.acl.inheritance.enabled', 'dfs.image.parallel.load', 'dfs.journalnode.https-bind-host', 'dfs.namenode.path.based.cache.refresh.interval.ms', 'dfs.client.deadnode.detection.probe.deadnode.interval.ms', 'datanode.https.port', 'dfs.namenode.stale.datanode.minimum.interval'], 'reason': ['The value of dfs.namenode.posix.acl.inheritance.enabled is not a boolean.', 'The value of dfs.image.parallel.load is not a boolean.', 'The value of dfs.journalnode.https-bind-host is not a valid IP address.', 'The value of dfs.namenode.path.based.cache.refresh.interval.ms is not a number.', 'The value of dfs.client.deadnode.detection.probe.deadnode.interval.ms is not a number.', 'The value of datanode.https.port is not a number.', 'The value of dfs.namenode.stale.datanode.minimum.interval is not a number.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: dfs.namenode.posix.acl.inheritance.enabled	dfs.image.parallel.load	dfs.journalnode.https-bind-host	dfs.namenode.path.based.cache.refresh.interval.ms	dfs.client.deadnode.detection.probe.deadnode.interval.ms	datanode.https.port	dfs.namenode.stale.datanode.minimum.interval
+[Ciri] Reason for dfs.namenode.posix.acl.inheritance.enabled: The value of dfs.namenode.posix.acl.inheritance.enabled is not a boolean.
+[Ciri] Reason for dfs.image.parallel.load: The value of dfs.image.parallel.load is not a boolean.
+[Ciri] Reason for dfs.journalnode.https-bind-host: The value of dfs.journalnode.https-bind-host is not a valid IP address.
+[Ciri] Reason for dfs.namenode.path.based.cache.refresh.interval.ms: The value of dfs.namenode.path.based.cache.refresh.interval.ms is not a number.
+[Ciri] Reason for dfs.client.deadnode.detection.probe.deadnode.interval.ms: The value of dfs.client.deadnode.detection.probe.deadnode.interval.ms is not a number.
+[Ciri] Reason for datanode.https.port: The value of datanode.https.port is not a number.
+[Ciri] Reason for dfs.namenode.stale.datanode.minimum.interval: The value of dfs.namenode.stale.datanode.minimum.interval is not a number.

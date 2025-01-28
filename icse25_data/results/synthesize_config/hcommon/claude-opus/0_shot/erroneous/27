@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode', 'ipc.[port_number].decay-scheduler.period-ms', 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable'], 'reason': ['The value for fs.permissions.umask-mode should be the umask value, not a URI like file://', 'The ipc.[port_number].* properties are not valid in the common configuration file. They should be set per RPC port in rpc-site.xml or under the <rpc> tag in this file.', 'The ipc.[port_number].* properties are not valid in the common configuration file. They should be set per RPC port in rpc-site.xml or under the <rpc> tag in this file.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.permissions.umask-mode	ipc.[port_number].decay-scheduler.period-ms	ipc.[port_number].decay-scheduler.backoff.responsetime.enable
+[Ciri] Reason for fs.permissions.umask-mode: The value for fs.permissions.umask-mode should be the umask value, not a URI like file://
+[Ciri] Reason for ipc.[port_number].decay-scheduler.period-ms: The ipc.[port_number].* properties are not valid in the common configuration file. They should be set per RPC port in rpc-site.xml or under the <rpc> tag in this file.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.enable: The ipc.[port_number].* properties are not valid in the common configuration file. They should be set per RPC port in rpc-site.xml or under the <rpc> tag in this file.

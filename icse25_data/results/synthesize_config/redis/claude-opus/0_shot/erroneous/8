@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash-max-listpack-value', 'oom-score-adj', 'oom-score-adj-values'], 'reason': ["In Redis 7.0, 'hash-max-listpack-value' has been renamed to 'hash-max-listpack-entries'.", "'oom-score-adj' does not accept 'no' as a valid value. It expects an integer between -1000 and 1000.", "'oom-score-adj-values' is not a valid configuration parameter in Redis 7.0.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hash-max-listpack-value	oom-score-adj	oom-score-adj-values
+[Ciri] Reason for hash-max-listpack-value: In Redis 7.0, 'hash-max-listpack-value' has been renamed to 'hash-max-listpack-entries'.
+[Ciri] Reason for oom-score-adj: 'oom-score-adj' does not accept 'no' as a valid value. It expects an integer between -1000 and 1000.
+[Ciri] Reason for oom-score-adj-values: 'oom-score-adj-values' is not a valid configuration parameter in Redis 7.0.0.

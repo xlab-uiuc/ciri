@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['unixsocketperm'], 'reason': ['unixsocketperm must be an integer between 0 and 7']}
+
+{'hasError': True, 'errParameter': ['unixsocketperm'], 'reason': ['The value of unixsocketperm should be an integer between 0 and 7.']}
+
+{'hasError': True, 'errParameter': ['unixsocketperm', 'hash-max-listpack-entries', 'latency-monitor-threshold', 'lazyfree-lazy-eviction', 'lazyfree-lazy-user-flush', 'tls-ca-cert-dir'], 'reason': ['unixsocketperm must be a number between 0 and 7.', 'hash-max-listpack-entries must be a number between 0 and 1024.', 'latency-monitor-threshold must be a number between 0 and 1000.', 'lazyfree-lazy-eviction must be a boolean.', 'lazyfree-lazy-user-flush must be a boolean.', 'tls-ca-cert-dir must be a string.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: unixsocketperm
+[Ciri] Reason for unixsocketperm: unixsocketperm must be an integer between 0 and 7

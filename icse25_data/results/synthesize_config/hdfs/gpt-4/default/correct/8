@@ -1,0 +1,15 @@
+Wrong shot number:
+[6, 5, 2]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.balancer.dispatcherThreads', 'dfs.namenode.snapshot.skiplist.max.levels'], 'reason': ["The property 'dfs.balancer.dispatcherThreads' has a value '400' which exceeds the practical limit.", "The property 'dfs.namenode.snapshot.skiplist.max.levels' has a value '0' which is invalid as it should be greater than 0 if skip list is to be used."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.balancer.dispatcherThreads	dfs.namenode.snapshot.skiplist.max.levels
+[Ciri] Reason for dfs.balancer.dispatcherThreads: The property 'dfs.balancer.dispatcherThreads' has a value '400' which exceeds the practical limit.
+[Ciri] Reason for dfs.namenode.snapshot.skiplist.max.levels: The property 'dfs.namenode.snapshot.skiplist.max.levels' has a value '0' which is invalid as it should be greater than 0 if skip list is to be used.

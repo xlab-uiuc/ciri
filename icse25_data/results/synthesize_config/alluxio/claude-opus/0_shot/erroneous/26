@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.threads.max', 'alluxio.master.log.config.report.heartbeat.interval', 'alluxio.worker.tieredstore.level2.watermark.high.ratio', 'alluxio.master.ufs.active.sync.interval'], 'reason': ['alluxio.underfs.s3.threads.max is set to 4000000000 which exceeds the allowed maximum value of 2147483647', "alluxio.master.log.config.report.heartbeat.interval is set to 10h but the time unit 'h' is invalid. Valid time units are ms, s, m, min, h, d", 'alluxio.worker.tieredstore.level2.watermark.high.ratio is set to 1.9 which exceeds the allowed maximum value of 1.0', "alluxio.master.ufs.active.sync.interval is set to 60sec but the correct time unit is 's' for seconds, not 'sec'"]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.underfs.s3.threads.max	alluxio.master.log.config.report.heartbeat.interval	alluxio.worker.tieredstore.level2.watermark.high.ratio	alluxio.master.ufs.active.sync.interval
+[Ciri] Reason for alluxio.underfs.s3.threads.max: alluxio.underfs.s3.threads.max is set to 4000000000 which exceeds the allowed maximum value of 2147483647
+[Ciri] Reason for alluxio.master.log.config.report.heartbeat.interval: alluxio.master.log.config.report.heartbeat.interval is set to 10h but the time unit 'h' is invalid. Valid time units are ms, s, m, min, h, d
+[Ciri] Reason for alluxio.worker.tieredstore.level2.watermark.high.ratio: alluxio.worker.tieredstore.level2.watermark.high.ratio is set to 1.9 which exceeds the allowed maximum value of 1.0
+[Ciri] Reason for alluxio.master.ufs.active.sync.interval: alluxio.master.ufs.active.sync.interval is set to 60sec but the correct time unit is 's' for seconds, not 'sec'

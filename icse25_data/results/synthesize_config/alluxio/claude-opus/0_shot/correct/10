@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.cleanup.interval', 'alluxio.master.file.access.time.journal.flush.interval'], 'reason': ["The value '10day' for property 'alluxio.underfs.cleanup.interval' is invalid. It should be a time value with unit, e.g. '10d'.", "The value '10h' for property 'alluxio.master.file.access.time.journal.flush.interval' is invalid. The maximum allowed value for this property is 1hr."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.cleanup.interval	alluxio.master.file.access.time.journal.flush.interval
+[Ciri] Reason for alluxio.underfs.cleanup.interval: The value '10day' for property 'alluxio.underfs.cleanup.interval' is invalid. It should be a time value with unit, e.g. '10d'.
+[Ciri] Reason for alluxio.master.file.access.time.journal.flush.interval: The value '10h' for property 'alluxio.master.file.access.time.journal.flush.interval' is invalid. The maximum allowed value for this property is 1hr.

@@ -1,0 +1,32 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.map.index.skip'], 'reason': ['io.map.index.skip is not a valid property for hcommon version 3.3.0.']}
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode'], 'reason': ['fs.ftp.transfer.mode is not a valid property name.']}
+
+{'hasError': True, 'errParameter': ['io.map.index.skip', 'fs.ftp.transfer.mode', 'fs.automatic.close', 'ipc.client.kill.max', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds', 'ha.health-monitor.sleep-after-disconnect.ms'], 'reason': ['io.map.index.skip is not a valid property', 'fs.ftp.transfer.mode is not a valid property', 'fs.automatic.close is not a valid property', 'ipc.client.kill.max is not a valid property', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds is not a valid property', 'ha.health-monitor.sleep-after-disconnect.ms is not a valid property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.automatic.close', 'ipc.client.kill.max', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds', 'ha.health-monitor.sleep-after-disconnect.ms'], 'reason': ['fs.ftp.transfer.mode is not a valid property.', 'fs.automatic.close is not a valid property.', 'ipc.client.kill.max is not a valid property.', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds is not a valid property.', 'ha.health-monitor.sleep-after-disconnect.ms is not a valid property.']}
+
+{'hasError': True, 'errParameter': ['io.map.index.skip', 'fs.ftp.transfer.mode', 'fs.automatic.close', 'ipc.client.kill.max', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds', 'ha.health-monitor.sleep-after-disconnect.ms'], 'reason': ['io.map.index.skip is not a valid property', 'fs.ftp.transfer.mode is not a valid property', 'fs.automatic.close is not a valid property', 'ipc.client.kill.max is not a valid property', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds is not a valid property', 'ha.health-monitor.sleep-after-disconnect.ms is not a valid property']}
+
+{'hasError': True, 'errParameter': ['io.map.index.skip', 'fs.automatic.close', 'fs.AbstractFileSystem.s3a.impl', 'ipc.client.kill.max', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds', 'ha.health-monitor.sleep-after-disconnect.ms'], 'reason': ['io.map.index.skip is not a valid property', 'fs.automatic.close is not a valid property', 'fs.AbstractFileSystem.s3a.impl is not a valid property', 'ipc.client.kill.max is not a valid property', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds is not a valid property', 'ha.health-monitor.sleep-after-disconnect.ms is not a valid property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.automatic.close', 'ipc.client.kill.max', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds', 'ha.health-monitor.sleep-after-disconnect.ms'], 'reason': ['fs.ftp.transfer.mode: The transfer mode is not a valid value.', 'fs.automatic.close: This property is not a valid property.', 'ipc.client.kill.max: This property is not a valid property.', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds: This property is not a valid property.', 'ha.health-monitor.sleep-after-disconnect.ms: This property is not a valid property.']}
+
+{'hasError': True, 'errParameter': ['io.map.index.skip', 'fs.ftp.transfer.mode', 'fs.automatic.close', 'ipc.client.kill.max', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds', 'ha.health-monitor.sleep-after-disconnect.ms'], 'reason': ['io.map.index.skip is not a valid property', 'fs.ftp.transfer.mode is not a valid property', 'fs.automatic.close is not a valid property', 'ipc.client.kill.max is not a valid property', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds is not a valid property', 'ha.health-monitor.sleep-after-disconnect.ms is not a valid property']}
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.automatic.close', 'ipc.client.kill.max', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds', 'ha.health-monitor.sleep-after-disconnect.ms'], 'reason': ['fs.ftp.transfer.mode: Invalid transfer mode', 'fs.automatic.close: Invalid value', 'ipc.client.kill.max: Invalid value', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds: Invalid value', 'ha.health-monitor.sleep-after-disconnect.ms: Invalid value']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.automatic.close	ipc.client.kill.max	ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds	ha.health-monitor.sleep-after-disconnect.ms
+[Ciri] Reason for fs.ftp.transfer.mode: fs.ftp.transfer.mode: The transfer mode is not a valid value.
+[Ciri] Reason for fs.automatic.close: fs.automatic.close: Invalid value
+[Ciri] Reason for ipc.client.kill.max: ipc.client.kill.max: Invalid value
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds: ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds: This property is not a valid property.
+[Ciri] Reason for ha.health-monitor.sleep-after-disconnect.ms: ha.health-monitor.sleep-after-disconnect.ms: Invalid value

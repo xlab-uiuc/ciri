@@ -1,0 +1,17 @@
+Wrong shot number:
+[5]
+
+Correct shot number:
+[1, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'MIDDLEWARE', 'SECURE_SSL_HOST', 'MANAGERS'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has a value of '1.5' which should be an integer.", "The property 'MIDDLEWARE' is empty but should contain a list of middleware classes.", "The property 'SECURE_SSL_HOST' is set to 'None' which may not be secure. It should be configured with a valid host.", "The property 'MANAGERS' is referenced but 'ADMINS' is not defined."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	MIDDLEWARE	SECURE_SSL_HOST	MANAGERS
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: The property 'CACHE_MIDDLEWARE_SECONDS' has a value of '1.5' which should be an integer.
+[Ciri] Reason for MIDDLEWARE: The property 'MIDDLEWARE' is empty but should contain a list of middleware classes.
+[Ciri] Reason for SECURE_SSL_HOST: The property 'SECURE_SSL_HOST' is set to 'None' which may not be secure. It should be configured with a valid host.
+[Ciri] Reason for MANAGERS: The property 'MANAGERS' is referenced but 'ADMINS' is not defined.

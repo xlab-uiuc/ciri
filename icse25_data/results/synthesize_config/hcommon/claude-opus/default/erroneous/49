@@ -1,0 +1,15 @@
+Wrong shot number:
+[7, 14, 12]
+
+Correct shot number:
+[15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.client.rpc-timeout.ms', 'fs.permissions.umask-mode'], 'reason': ["The value of 'ipc.client.rpc-timeout.ms' is set to 1 millisecond which is too low. It should be a reasonable value like 1000 (1 second) or higher.", "The value of 'fs.permissions.umask-mode' is set to '999' which is not a valid umask. It should be a valid octal value like '022' or a symbolic value like 'u=rwx,g=rwx,o='."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.client.rpc-timeout.ms	fs.permissions.umask-mode
+[Ciri] Reason for ipc.client.rpc-timeout.ms: The value of 'ipc.client.rpc-timeout.ms' is set to 1 millisecond which is too low. It should be a reasonable value like 1000 (1 second) or higher.
+[Ciri] Reason for fs.permissions.umask-mode: The value of 'fs.permissions.umask-mode' is set to '999' which is not a valid umask. It should be a valid octal value like '022' or a symbolic value like 'u=rwx,g=rwx,o='.

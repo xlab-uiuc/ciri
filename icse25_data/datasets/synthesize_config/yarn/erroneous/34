@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.scheduler.minimum-allocation-vcores</name>
+  <value>5</value>
+    <description>The minimum allocation for every container request at the RM
+    in terms of virtual CPU cores. Requests lower than this will be set to the
+    value of this property. Additionally, a node manager that is configured to
+    have fewer virtual cores than this value will be shut down by the resource
+    manager.</description>
+</property>
+
+<property>
+  <name>yarn.scheduler.maximum-allocation-vcores</name>
+  <value>4</value>
+    <description>The maximum allocation for every container request at the RM
+    in terms of virtual CPU cores. Requests higher than this will throw an
+    InvalidResourceRequestException.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.configuration.provider-class</name>
+  <value>org.apache.hadoop.yarn.LocalConfigurationProvider</value>
+    <description>The class to use as the configuration provider.
+    If org.apache.hadoop.yarn.LocalConfigurationProvider is used,
+    the local configuration will be loaded.
+    If org.apache.hadoop.yarn.FileSystemBasedConfigurationProvider is used,
+    the configuration which will be loaded should be uploaded to remote File system first.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.resource-profiles.enabled</name>
+  <value>false</value>
+    <description>
+    Flag to enable/disable resource profiles
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.state-store-class</name>
+  <value>org.apache.hadoop.yarn.server.timeline.recovery.LeveldbTimelineStateStore</value>
+    <description>Store class name for timeline state store.</description>
+</property>
+
+<property>
+  <name>yarn.minicluster.yarn.nodemanager.resource.memory-mb</name>
+  <value>2048</value>
+    <description>
+    As yarn.nodemanager.resource.memory-mb property but for the NodeManager
+    in a MiniYARNCluster.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.log-aggregation.policy.class</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.AllContainerLogAggregationPolicy</value>
+    <description>
+    The default log aggregation policy class. Applications can
+    override it via LogAggregationContext. This configuration can provide
+    some cluster-side default behavior so that if the application doesn't
+    specify any policy via LogAggregationContext administrators of the cluster
+    can adjust the policy globally.
+    </description>
+</property>
+
+<property>
+  <name>yarn.node-labels.fs-store.impl.class</name>
+  <value>org.apache.hadoop.yarn.nodelabels.FileSystemNodeLabelsStore</value>
+    <description>
+    Choose different implementation of node label's storage
+    </description>
+</property>
+
+</configuration>

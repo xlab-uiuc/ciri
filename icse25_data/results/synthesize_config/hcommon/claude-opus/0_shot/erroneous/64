@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3.maxRetries', 'ipc.[port_number].cost-provider.impl'], 'reason': ['The fs.s3.maxRetries property is deprecated in hadoop-common 3.3.0 and should be replaced with fs.s3a.max.total.retry', 'The ipc.[port_number].cost-provider.impl property is not a valid configuration in hadoop-common 3.3.0. The correct property name format is ipc.server.port-range.cost-provider.impl']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3.maxRetries	ipc.[port_number].cost-provider.impl
+[Ciri] Reason for fs.s3.maxRetries: The fs.s3.maxRetries property is deprecated in hadoop-common 3.3.0 and should be replaced with fs.s3a.max.total.retry
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: The ipc.[port_number].cost-provider.impl property is not a valid configuration in hadoop-common 3.3.0. The correct property name format is ipc.server.port-range.cost-provider.impl

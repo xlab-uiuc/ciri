@@ -1,0 +1,19 @@
+Wrong shot number:
+[12, 2, 4]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.default.mode', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio'], 'reason': ["The property 'alluxio.underfs.gcs.default.mode' has an invalid mode value '888'. Mode values should be in octal format.", "The value of the property 'alluxio.master.metastore.inode.cache.low.water.mark.ratio' should be between 0.0 and 1.0."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.default.mode', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio'], 'reason': ["The property 'alluxio.underfs.gcs.default.mode' has an invalid mode value '888'. Mode values should be in octal format.", "The value of the property 'alluxio.master.metastore.inode.cache.low.water.mark.ratio' should be between 0.0 and 1.0."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.default.mode', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio'], 'reason': ["The property 'alluxio.underfs.gcs.default.mode' has an invalid mode value '888'. Mode values should be in octal format (e.g., 755).", "The value of the property 'alluxio.master.metastore.inode.cache.low.water.mark.ratio' should be between 0.0 and 1.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.gcs.default.mode	alluxio.master.metastore.inode.cache.low.water.mark.ratio
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: The property 'alluxio.underfs.gcs.default.mode' has an invalid mode value '888'. Mode values should be in octal format (e.g., 755).
+[Ciri] Reason for alluxio.master.metastore.inode.cache.low.water.mark.ratio: The value of the property 'alluxio.master.metastore.inode.cache.low.water.mark.ratio' should be between 0.0 and 1.0.

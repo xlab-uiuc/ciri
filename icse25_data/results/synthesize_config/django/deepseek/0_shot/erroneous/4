@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'SESSION_SERIALIZER'], 'reason': ["SECURE_HSTS_SECONDS should be an integer representing the number of seconds to use for the Strict-Transport-Security HTTP header. It seems to be set to a string 'ciri/ciri' which is not valid.", "SESSION_SERIALIZER should be a valid Django session serializer. 'django.contrib.sessions.serializers.JSONSerializer' is not a valid serializer in Django 4.0. Django 4.0 does not support this serializer."]}
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'SESSION_SERIALIZER'], 'reason': ['SECURE_HSTS_SECONDS should be an integer representing the number of seconds to use for the Strict-Transport-Security HTTP header. It seems to be set to a string value.', "SESSION_SERIALIZER should be a valid Django session serializer. The current value 'django.contrib.sessions.serializers.JSONSerializer' seems to be correct."]}
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'SESSION_SERIALIZER'], 'reason': ["SECURE_HSTS_SECONDS should be an integer representing the number of seconds to use for the Strict-Transport-Security HTTP header. It cannot be set to 'ciri/ciri'.", "SESSION_SERIALIZER should be a valid serializer class. 'django.contrib.sessions.serializers.JSONSerializer' is a valid serializer, but 'ciri/ciri' is not."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: SECURE_HSTS_SECONDS	SESSION_SERIALIZER
+[Ciri] Reason for SECURE_HSTS_SECONDS: SECURE_HSTS_SECONDS should be an integer representing the number of seconds to use for the Strict-Transport-Security HTTP header. It seems to be set to a string value.
+[Ciri] Reason for SESSION_SERIALIZER: SESSION_SERIALIZER should be a valid Django session serializer. The current value 'django.contrib.sessions.serializers.JSONSerializer' seems to be correct.

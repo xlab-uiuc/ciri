@@ -1,0 +1,27 @@
+Wrong shot number:
+[5, 3, 2]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'bind-source-addr'], 'reason': ["The property 'cluster-announce-tls-port' has the value '65536' which is greater than the maximum allowed port number '65535'.", "The property 'bind-source-addr' has the value '10.0.0.1' which is not a valid IP address."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port'], 'reason': ["The property 'cluster-announce-tls-port' has the value '65536' which is not a valid port number. The valid range is 0-65535."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'bind-source-addr', 'cluster-announce-port'], 'reason': ["The property 'cluster-announce-tls-port' has the value '65536' which is not a valid port number. The property 'bind-source-addr' has the value '10.0.0.1' which is not a valid IP address. The property 'cluster-announce-port' has the value '1' which is not a valid port number."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'bind-source-addr'], 'reason': ["The property 'cluster-announce-tls-port' has the value '65536' which is not a valid port number. The property 'bind-source-addr' has the value '10.0.0.1' which is not a valid IP address."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'bind-source-addr'], 'reason': ["The property 'cluster-announce-tls-port' has the value '65536' which is not a valid port number. The property 'bind-source-addr' has the value '10.0.0.1' which is not a valid IP address."]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-tls-port', 'bind-source-addr'], 'reason': ["The property 'cluster-announce-tls-port' has the value '65536' which is not a valid port number. The property 'bind-source-addr' has the value '10.0.0.1' which is not a valid IP address."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-announce-tls-port	bind-source-addr
+[Ciri] Reason for cluster-announce-tls-port: The property 'cluster-announce-tls-port' has the value '65536' which is not a valid port number. The property 'bind-source-addr' has the value '10.0.0.1' which is not a valid IP address.
+[Ciri] Reason for bind-source-addr: 

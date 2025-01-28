@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.backup.http-address</name>
+  <value>0.0.0.0:50105</value>
+  <description>
+    The backup node http server address and port.
+    If the port is 0 then the server will start on a free port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock</name>
+  <value>500</value>
+  <description>
+    When loading blocks into the replication queue, release the namenode write
+    lock after the defined number of blocks have been processed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client-write-packet-size</name>
+  <value>32768</value>
+  <description>Packet size for clients to write</description>
+</property>
+
+<property>
+  <name>dfs.client.write.exclude.nodes.cache.expiry.interval.millis</name>
+  <value>600000</value>
+  <description>The maximum period to keep a DN in the excluded nodes list
+  at a client. After this period, in milliseconds, the previously excluded node(s) will
+  be removed automatically from the cache and will be considered good for block allocations
+  again. Useful to lower or raise in situations where you keep a file open for very long
+  periods (such as a Write-Ahead-Log (WAL) file) to make the writer tolerant to cluster maintenance
+  restarts. Defaults to 10 minutes.</description>
+</property>
+
+<property>
+  <name>dfs.web.authentication.kerberos.keytab</name>
+  <value>/valid/file1</value>
+  <description>
+    The keytab file for the principal corresponding to
+    dfs.web.authentication.kerberos.principal.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.retry.policy.enabled</name>
+  <value>false</value>
+  <description>
+    If true, turns on DFSClient retry policy.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.sync.behind.writes.in.background</name>
+  <value>true</value>
+  <description>
+    If set to true, then sync_file_range() system call will occur
+    asynchronously.  This property is only valid when the property
+    dfs.datanode.sync.behind.writes is true.
+  </description>
+</property>
+
+<property>
+  <name>dfs.storage.policy.satisfier.enabled</name>
+  <value>true</value>
+  <description>
+    By default, StoragePolicySatisfier is disabled.
+    Administrator can dynamically change StoragePolicySatisfier mode by using reconfiguration option.
+    Dynamic mode change can be achieved in the following way.
+    1. Edit/update this configuration property values in hdfs-site.xml
+    2. Execute the reconfig command on hadoop command line prompt.
+       For example:$hdfs -reconfig namenode nn_host:port start
+  </description>
+</property>
+
+</configuration>

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['oom-score-adj-values', 'repl-diskless-sync-max-replicas'], 'reason': ["The 'oom-score-adj-values' configuration directive does not exist in Redis 7.0.0. It appears to be a misunderstanding or typo of a configuration directive.", "The 'repl-diskless-sync-max-replicas' configuration directive is not valid. The correct configuration for controlling the number of replicas for diskless sync in Redis 7.0.0 is 'repl-diskless-sync-delay'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: oom-score-adj-values	repl-diskless-sync-max-replicas
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' configuration directive does not exist in Redis 7.0.0. It appears to be a misunderstanding or typo of a configuration directive.
+[Ciri] Reason for repl-diskless-sync-max-replicas: The 'repl-diskless-sync-max-replicas' configuration directive is not valid. The correct configuration for controlling the number of replicas for diskless sync in Redis 7.0.0 is 'repl-diskless-sync-delay'.

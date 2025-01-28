@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.client.failover.max.attempts</name>
+  <value>15</value>
+  <description>
+    Expert only. The number of client failover attempts that should be
+    made before the failover is considered failed.
+  </description>
+</property>
+
+<property>
+  <name>nfs.dump.dir</name>
+  <value>tmp////staging</value>
+  <description>
+    This directory is used to temporarily save out-of-order writes before
+    writing to HDFS. For each file, the out-of-order writes are dumped after
+    they are accumulated to exceed certain threshold (e.g., 1MB) in memory. 
+    One needs to make sure the directory has enough space.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edekcacheloader.interval.ms</name>
+  <value>1000</value>
+  <description>When KeyProvider is configured, the interval time of warming
+    up edek cache on NN starts up / becomes active. All edeks will be loaded
+    from KMS into provider cache. The edek cache loader will try to warm up the
+    cache until succeed or NN leaves active state.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.reencrypt.batch.size</name>
+  <value>500</value>
+  <description>How many EDEKs should the re-encrypt thread process in one batch.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.top.windows.minutes</name>
+  <value>[2, 10, 50]</value>
+  <description>comma separated list of nntop reporting periods in minutes
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.cached-dfsused.check.interval.ms</name>
+  <value>1200000</value>
+  <description>
+    The interval check time of loading DU_CACHE_FILE in each volume.
+    When the cluster doing the rolling upgrade operations, it will
+    usually lead dfsUsed cache file of each volume expired and redo the
+    du operations in datanode and that makes datanode start slowly. Adjust
+    this property can make cache file be available for the time as you want.
+  </description>
+</property>
+
+<property>
+  <name>dfs.batched.ls.limit</name>
+  <value>100</value>
+  <description>
+    Limit the number of paths that can be listed in a single batched
+    listing call. printed by ls. If less or equal to
+    zero, at most DFS_LIST_LIMIT_DEFAULT (= 1000) will be printed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.write-txns.timeout.ms</name>
+  <value>40000</value>
+  <description>
+    Write timeout in milliseconds when writing to a quorum of remote
+    journals.
+  </description>
+</property>
+
+</configuration>

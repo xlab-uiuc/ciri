@@ -1,0 +1,15 @@
+Wrong shot number:
+[16, 11, 6]
+
+Correct shot number:
+[13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.buffer.dir', 'ftp.client-write-packet-size'], 'reason': ["The value '/\\hadoop/s3a' for property 'fs.s3a.buffer.dir' contains backslashes which is not a valid path separator. Forward slashes should be used instead.", "The property 'ftp.client-write-packet-size' is not a valid configuration property in HCommon version 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.buffer.dir	ftp.client-write-packet-size
+[Ciri] Reason for fs.s3a.buffer.dir: The value '/\hadoop/s3a' for property 'fs.s3a.buffer.dir' contains backslashes which is not a valid path separator. Forward slashes should be used instead.
+[Ciri] Reason for ftp.client-write-packet-size: The property 'ftp.client-write-packet-size' is not a valid configuration property in HCommon version 3.3.0.

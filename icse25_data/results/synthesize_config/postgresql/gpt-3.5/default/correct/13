@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 7, 3]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['default_toast_compression'], 'reason': ["The value of the property 'default_toast_compression' should be 'plain', 'extreme', or 'none' for PostgreSQL version 13.0."]}
+
+{'hasError': True, 'errParameter': ['default_toast_compression'], 'reason': ["The value 'pglz' for 'default_toast_compression' is not a valid compression method. Valid options are 'none', 'pglz', 'lz4', and 'zstd'."]}
+
+{'hasError': True, 'errParameter': ['default_toast_compression'], 'reason': ["The value of the property 'default_toast_compression' should be one of 'none', 'pglz', 'lz4', or 'zstd'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: default_toast_compression
+[Ciri] Reason for default_toast_compression: The value of the property 'default_toast_compression' should be one of 'none', 'pglz', 'lz4', or 'zstd'.

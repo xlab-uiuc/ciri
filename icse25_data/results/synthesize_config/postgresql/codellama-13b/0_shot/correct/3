@@ -1,0 +1,43 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'port', 'max_connections', 'max_wal_senders', 'wal_level', 'archive_mode', 'archive_command', 'hot_standby_feedback', 'log_replication_commands', 'max_prepared_transactions'], 'reason': ['listen_addresses should be a string', 'port should be a number', 'max_connections should be a number', 'max_wal_senders should be a number', 'wal_level should be a string', 'archive_mode should be a string', 'archive_command should be a string', 'hot_standby_feedback should be a string', 'log_replication_commands should be a string', 'max_prepared_transactions should be a number']}
+
+{'hasError': True, 'errParameter': ['listen_addresses'], 'reason': ['listen_addresses is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['max_connections', 'max_prepared_transactions'], 'reason': ['max_connections must be between 100 and 1000000', 'max_prepared_transactions must be between 0 and 1000000']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses'], 'reason': ['listen_addresses is not a valid parameter for PostgreSQL version 13.0']}
+
+{'hasError': True, 'errParameter': ['max_prepared_transactions'], 'reason': ['max_prepared_transactions is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['hot_standby_feedback', 'log_replication_commands'], 'reason': ['hot_standby_feedback is not a valid parameter for PostgreSQL 13.0', 'log_replication_commands is not a valid parameter for PostgreSQL 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hot_standby_feedback', 'log_replication_commands'], 'reason': ['hot_standby_feedback is not a valid parameter for PostgreSQL 13.0', 'log_replication_commands is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['hot_standby_feedback', 'bytea_output', 'bonjour', 'log_replication_commands', 'max_prepared_transactions'], 'reason': ['hot_standby_feedback is not a valid parameter for PostgreSQL 13.0', 'bytea_output is not a valid parameter for PostgreSQL 13.0', 'bonjour is not a valid parameter for PostgreSQL 13.0', 'log_replication_commands is not a valid parameter for PostgreSQL 13.0', 'max_prepared_transactions is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['hot_standby_feedback', 'max_prepared_transactions'], 'reason': ['hot_standby_feedback is not a valid parameter for PostgreSQL 13.0', 'max_prepared_transactions is not a valid parameter for PostgreSQL 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_prepared_transactions'], 'reason': ['max_prepared_transactions is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'hot_standby_feedback', 'max_prepared_transactions'], 'reason': ['listen_addresses is not a valid property for PostgreSQL version 13.0', 'hot_standby_feedback is not a valid property for PostgreSQL version 13.0', 'max_prepared_transactions is not a valid property for PostgreSQL version 13.0']}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'max_connections', 'max_wal_senders', 'wal_level', 'archive_mode', 'archive_command', 'hot_standby_feedback', 'bytea_output', 'bonjour', 'log_replication_commands', 'max_prepared_transactions'], 'reason': ["listen_addresses should be set to 'localhost'", "max_connections should be set to '100'", "max_wal_senders should be set to '0'", "wal_level should be set to 'hot_standby'", "archive_mode should be set to 'off'", "archive_command should be set to 'off'", "hot_standby_feedback should be set to 'on'", "bytea_output should be set to 'hex'", "bonjour should be set to 'off'", "log_replication_commands should be set to 'off'", "max_prepared_transactions should be set to '0'"]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+The CONFIGURATION FILE IS CORRECT

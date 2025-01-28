@@ -1,0 +1,13 @@
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.proxy.port', 'ipc.[port_number].scheduler.priority.levels', 'adl.feature.ownerandgroup.enableupn'], 'reason': ['Invalid value for fs.s3a.proxy.port. Port number should be between 0 and 65535.', 'Invalid parameter name ipc.[port_number].scheduler.priority.levels. Parameter name should not contain square brackets.', 'Missing closing tag for the description of property adl.feature.ownerandgroup.enableupn.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.s3a.proxy.port	ipc.[port_number].scheduler.priority.levels	adl.feature.ownerandgroup.enableupn
+[Ciri] Reason for fs.s3a.proxy.port: Invalid value for fs.s3a.proxy.port. Port number should be between 0 and 65535.
+[Ciri] Reason for ipc.[port_number].scheduler.priority.levels: Invalid parameter name ipc.[port_number].scheduler.priority.levels. Parameter name should not contain square brackets.
+[Ciri] Reason for adl.feature.ownerandgroup.enableupn: Missing closing tag for the description of property adl.feature.ownerandgroup.enableupn.

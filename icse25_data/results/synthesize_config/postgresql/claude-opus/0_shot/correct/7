@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_idle', 'tcp_user_timeout', 'ident_file'], 'reason': ['tcp_keepalives_idle is not a valid parameter in PostgreSQL 13. The correct parameter is tcp_keepalives_idle_in_secs.', 'tcp_user_timeout is not a valid parameter in PostgreSQL 13. The correct parameter is tcp_user_timeout_in_ms.', "ident_file should specify the full path to the file, not a relative path like 'ConfigDir/pg_ident.conf'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tcp_keepalives_idle	tcp_user_timeout	ident_file
+[Ciri] Reason for tcp_keepalives_idle: tcp_keepalives_idle is not a valid parameter in PostgreSQL 13. The correct parameter is tcp_keepalives_idle_in_secs.
+[Ciri] Reason for tcp_user_timeout: tcp_user_timeout is not a valid parameter in PostgreSQL 13. The correct parameter is tcp_user_timeout_in_ms.
+[Ciri] Reason for ident_file: ident_file should specify the full path to the file, not a relative path like 'ConfigDir/pg_ident.conf'.

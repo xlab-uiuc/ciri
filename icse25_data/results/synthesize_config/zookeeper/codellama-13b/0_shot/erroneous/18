@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['electionAlg', 'syncLimit', 'localSessionsEnabled', 'localSessionsUpgradingEnabled', 'maxSessionTimeout', 'quorum.auth.learnerRequireSasl', 'standaloneEnabled', 'peerType'], 'reason': ['electionAlg is not a valid value for this property.', 'syncLimit is not a valid value for this property.', 'localSessionsEnabled is not a valid value for this property.', 'localSessionsUpgradingEnabled is not a valid value for this property.', 'maxSessionTimeout is not a valid value for this property.', 'quorum.auth.learnerRequireSasl is not a valid value for this property.', 'standaloneEnabled is not a valid value for this property.', 'peerType is not a valid value for this property.']}
+
+{'hasError': True, 'errParameter': ['electionAlg', 'syncLimit', 'localSessionsEnabled', 'localSessionsUpgradingEnabled', 'maxSessionTimeout', 'quorum.auth.learnerRequireSasl', 'standaloneEnabled', 'peerType'], 'reason': ['electionAlg is not a valid value for this property.', 'syncLimit should be a positive integer.', 'localSessionsEnabled should be a boolean.', 'localSessionsUpgradingEnabled should be a boolean.', 'maxSessionTimeout should be a positive integer.', 'quorum.auth.learnerRequireSasl should be a boolean.', 'standaloneEnabled should be a boolean.', 'peerType is not a valid value for this property.']}
+
+{'hasError': True, 'errParameter': ['electionAlg', 'syncLimit', 'localSessionsEnabled', 'localSessionsUpgradingEnabled', 'maxSessionTimeout', 'quorum.auth.learnerRequireSasl', 'standaloneEnabled', 'peerType'], 'reason': ['electionAlg=-1 is not a valid value for this property', 'syncLimit=1 is not a valid value for this property', 'localSessionsEnabled=false is not a valid value for this property', 'localSessionsUpgradingEnabled=false is not a valid value for this property', 'maxSessionTimeout=0 is not a valid value for this property', 'quorum.auth.learnerRequireSasl=true is not a valid value for this property', 'standaloneEnabled=true is not a valid value for this property', 'peerType=participant is not a valid value for this property']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: electionAlg	syncLimit	localSessionsEnabled	localSessionsUpgradingEnabled	maxSessionTimeout	quorum.auth.learnerRequireSasl	standaloneEnabled	peerType
+[Ciri] Reason for electionAlg: electionAlg=-1 is not a valid value for this property
+[Ciri] Reason for syncLimit: syncLimit is not a valid value for this property.
+[Ciri] Reason for localSessionsEnabled: localSessionsEnabled=false is not a valid value for this property
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled=false is not a valid value for this property
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout is not a valid value for this property.
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl=true is not a valid value for this property
+[Ciri] Reason for standaloneEnabled: standaloneEnabled=true is not a valid value for this property
+[Ciri] Reason for peerType: peerType is not a valid value for this property.

@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'quota-backend-bytes', 'max-wals'], 'reason': ['max-snapshots should be greater than 1', 'quota-backend-bytes should be set to a positive value', 'max-wals should be greater than 5']}
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'quota-backend-bytes', 'auto-compaction-mode', 'max-wals'], 'reason': ['max-snapshots should be removed in etcd version 3.5.0', 'quota-backend-bytes should be set to a positive value', "auto-compaction-mode should be either 'periodic' or 'revision'", 'max-wals should be removed in etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'quota-backend-bytes', 'auto-compaction-mode', 'max-wals'], 'reason': ['max-snapshots is deprecated in etcd version 3.5.0, consider removing it.', 'quota-backend-bytes should be set to a positive value, 0 is not allowed.', "auto-compaction-mode should be either 'periodic' or 'revision', check the spelling.", 'max-wals is not a valid parameter in etcd version 3.5.0.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: max-snapshots	quota-backend-bytes	auto-compaction-mode	max-wals
+[Ciri] Reason for max-snapshots: max-snapshots is deprecated in etcd version 3.5.0, consider removing it.
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes should be set to a positive value
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode should be either 'periodic' or 'revision', check the spelling.
+[Ciri] Reason for max-wals: max-wals should be removed in etcd version 3.5.0

@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.handler.count</name>
+  <value>60</value>
+    <description>Count of RPC Listener instances spun up on RegionServers.
+      Same property is used by the Master for count of master handlers.
+      Too many handlers can be counter-productive. Make it a multiple of
+      CPU count. If mostly read-only, handlers count close to cpu count
+      does well. Start with twice the CPU count and tune from there.</description>
+</property>
+
+<property>
+  <name>hbase.client.max.total.tasks</name>
+  <value>50</value>
+    <description>The maximum number of concurrent mutation tasks a single HTable instance will
+    send to the cluster.</description>
+</property>
+
+<property>
+  <name>hbase.client.keyvalue.maxsize</name>
+  <value>10485760</value>
+    <description>Specifies the combined maximum allowed size of a KeyValue
+    instance. This is to set an upper boundary for a single entry saved in a
+    storage file. Since they cannot be split it helps avoiding that a region
+    cannot be split any further because the data is too large. It seems wise
+    to set this to a fraction of the maximum region size. Setting it to zero
+    or less disables the check.</description>
+</property>
+
+<property>
+  <name>hbase.data.umask.enable</name>
+  <value>true</value>
+    <description>Enable, if true, that file permissions should be assigned
+      to the files written by the regionserver</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.restore.take.failsafe.snapshot</name>
+  <value>true</value>
+    <description>Set to true to take a snapshot before the restore operation.
+      The snapshot taken will be used in case of failure, to restore the previous state.
+      At the end of the restore operation this snapshot will be deleted</description>
+</property>
+
+<property>
+  <name>hbase.status.publisher.class</name>
+  <value>org.apache.hadoop.hbase.master.ClusterStatusPublisher$MulticastPublisher</value>
+    <description>
+      Implementation of the status publication with a multicast message.
+    </description>
+</property>
+
+<property>
+  <name>hbase.regions.recovery.store.file.ref.count</name>
+  <value>-1</value>
+    <description>
+      Very large number of ref count on a compacted
+      store file indicates that it is a ref leak
+      on that object(compacted store file).
+      Such files can not be removed after
+      it is invalidated via compaction.
+      Only way to recover in such scenario is to
+      reopen the region which can release
+      all resources, like the refcount,
+      leases, etc. This config represents Store files Ref
+      Count threshold value considered for reopening
+      regions. Any region with compacted store files
+      ref count > this value would be eligible for
+      reopening by master. Here, we get the max
+      refCount among all refCounts on all
+      compacted away store files that belong to a
+      particular region. Default value -1 indicates
+      this feature is turned off. Only positive
+      integer value should be provided to
+      enable this feature.
+    </description>
+</property>
+
+<property>
+  <name>hbase.regionserver.storefile.refresh.period</name>
+  <value>0</value>
+    <description>
+      The period (in milliseconds) for refreshing the store files for the secondary regions. 0
+      means this feature is disabled. Secondary regions sees new files (from flushes and
+      compactions) from primary once the secondary region refreshes the list of files in the
+      region (there is no notification mechanism). But too frequent refreshes might cause
+      extra Namenode pressure. If the files cannot be refreshed for longer than HFile TTL
+      (hbase.master.hfilecleaner.ttl) the requests are rejected. Configuring HFile TTL to a larger
+      value is also recommended with this setting.
+    </description>
+</property>
+
+</configuration>

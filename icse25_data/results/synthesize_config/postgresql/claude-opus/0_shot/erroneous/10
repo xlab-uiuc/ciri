@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ident_file', 'wal_writer_flush_after'], 'reason': ["The 'ident_file' parameter should not contain backslashes. It should be a valid file path, e.g., '/ConfigDir/pg_ident.conf'.", "The 'wal_writer_flush_after' parameter is not available in PostgreSQL 13.0. It was introduced in version 13.1."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ident_file	wal_writer_flush_after
+[Ciri] Reason for ident_file: The 'ident_file' parameter should not contain backslashes. It should be a valid file path, e.g., '/ConfigDir/pg_ident.conf'.
+[Ciri] Reason for wal_writer_flush_after: The 'wal_writer_flush_after' parameter is not available in PostgreSQL 13.0. It was introduced in version 13.1.

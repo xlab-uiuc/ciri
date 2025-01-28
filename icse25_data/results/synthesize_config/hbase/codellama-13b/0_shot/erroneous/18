@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.regionserver.regionSplitLimit', 'hbase.zookeeper.dns.interface', 'hbase.server.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hadoop.policy.file', 'hbase.column.max.version', 'hbase.mob.compaction.threads.max'], 'reason': ['The property hbase.local.dir is not valid.', 'The property hbase.regionserver.regionSplitLimit is not valid.', 'The property hbase.zookeeper.dns.interface is not valid.', 'The property hbase.server.keyvalue.maxsize is not valid.', 'The property hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not valid.', 'The property hadoop.policy.file is not valid.', 'The property hbase.column.max.version is not valid.', 'The property hbase.mob.compaction.threads.max is not valid.']}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.regionserver.regionSplitLimit', 'hbase.zookeeper.dns.interface', 'hbase.server.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hadoop.policy.file', 'hbase.column.max.version', 'hbase.mob.compaction.threads.max'], 'reason': ['hbase.local.dir is not a valid directory', 'hbase.regionserver.regionSplitLimit is not a valid integer', 'hbase.zookeeper.dns.interface is not a valid network interface', 'hbase.server.keyvalue.maxsize is not a valid integer', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not a valid integer', 'hadoop.policy.file is not a valid file', 'hbase.column.max.version is not a valid integer', 'hbase.mob.compaction.threads.max is not a valid integer']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit', 'hbase.zookeeper.dns.interface', 'hbase.server.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hadoop.policy.file', 'hbase.column.max.version', 'hbase.mob.compaction.threads.max'], 'reason': ['hbase.regionserver.regionSplitLimit is less than 1', 'hbase.zookeeper.dns.interface is not a valid network interface', 'hbase.server.keyvalue.maxsize is less than 0', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min is less than 0', 'hadoop.policy.file is not a valid file', 'hbase.column.max.version is less than 0', 'hbase.mob.compaction.threads.max is less than 1']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.local.dir	hbase.regionserver.regionSplitLimit	hbase.zookeeper.dns.interface	hbase.server.keyvalue.maxsize	hbase.hregion.percolumnfamilyflush.size.lower.bound.min	hadoop.policy.file	hbase.column.max.version	hbase.mob.compaction.threads.max
+[Ciri] Reason for hbase.local.dir: The property hbase.local.dir is not valid.
+[Ciri] Reason for hbase.regionserver.regionSplitLimit: hbase.regionserver.regionSplitLimit is not a valid integer
+[Ciri] Reason for hbase.zookeeper.dns.interface: The property hbase.zookeeper.dns.interface is not valid.
+[Ciri] Reason for hbase.server.keyvalue.maxsize: The property hbase.server.keyvalue.maxsize is not valid.
+[Ciri] Reason for hbase.hregion.percolumnfamilyflush.size.lower.bound.min: hbase.hregion.percolumnfamilyflush.size.lower.bound.min is not a valid integer
+[Ciri] Reason for hadoop.policy.file: The property hadoop.policy.file is not valid.
+[Ciri] Reason for hbase.column.max.version: The property hbase.column.max.version is not valid.
+[Ciri] Reason for hbase.mob.compaction.threads.max: hbase.mob.compaction.threads.max is not a valid integer

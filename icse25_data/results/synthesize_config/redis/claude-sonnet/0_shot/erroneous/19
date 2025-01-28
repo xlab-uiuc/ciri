@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port', 'replica-announce-port', 'replica-announce-ip', 'cluster-config-file', 'cluster-announce-bus-port'], 'reason': ["The 'tls-port' parameter expects a valid port number or Unix socket path, but 'file://' is not a valid value.", "The 'replica-announce-port' parameter expects a valid port number, but '2468' is not a valid Redis port number (should be between 0 and 65535).", "The 'replica-announce-ip' parameter expects a valid IP address, but '5.5.5.5' is not a valid IPv4 or IPv6 address.", "The 'cluster-config-file' parameter expects a valid file path, but 'nodes-6379.conf' is not a valid file path (it should be an absolute path or a path relative to the Redis configuration directory).", "The 'cluster-announce-bus-port' parameter expects a valid port number, but '12760' is not a valid Redis port number (should be between 0 and 65535)."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: tls-port	replica-announce-port	replica-announce-ip	cluster-config-file	cluster-announce-bus-port
+[Ciri] Reason for tls-port: The 'tls-port' parameter expects a valid port number or Unix socket path, but 'file://' is not a valid value.
+[Ciri] Reason for replica-announce-port: The 'replica-announce-port' parameter expects a valid port number, but '2468' is not a valid Redis port number (should be between 0 and 65535).
+[Ciri] Reason for replica-announce-ip: The 'replica-announce-ip' parameter expects a valid IP address, but '5.5.5.5' is not a valid IPv4 or IPv6 address.
+[Ciri] Reason for cluster-config-file: The 'cluster-config-file' parameter expects a valid file path, but 'nodes-6379.conf' is not a valid file path (it should be an absolute path or a path relative to the Redis configuration directory).
+[Ciri] Reason for cluster-announce-bus-port: The 'cluster-announce-bus-port' parameter expects a valid port number, but '12760' is not a valid Redis port number (should be between 0 and 65535).

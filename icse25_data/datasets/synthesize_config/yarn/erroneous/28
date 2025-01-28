@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.scheduler.class</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>
+    <description>The class to use as the resource scheduler.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.max-log-aggregation-diagnostics-in-memory</name>
+  <value>1</value>
+    <description>Number of diagnostics/failure messages can be saved in RM for
+    log aggregation. It also defines the number of diagnostics/failure
+    messages can be shown in log aggregation web ui.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.resource-profiles.enabled</name>
+  <value>true</value>
+    <description>
+    Flag to enable/disable resource profiles
+    </description>
+</property>
+
+<property>
+  <name>yarn.log-aggregation.file-formats</name>
+  <value>TFile</value>
+    <description>Specify which log file controllers we will support. The first
+    file controller we add will be used to write the aggregated logs.
+    This comma separated configuration will work with the configuration:
+    yarn.log-aggregation.file-controller.%s.class which defines the supported
+    file controller's class. By default, the TFile controller would be used.
+    The user could override this configuration by adding more file controllers.
+    To support back-ward compatibility, make sure that we always
+    add TFile file controller.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.remote-app-log-dir-include-older</name>
+  <value>false</value>
+    <description>If set to true, the older application log directory
+    will be considered while fetching application logs.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.hostname</name>
+  <value>0.0.256.0</value>
+    <description>The hostname of the timeline service web application.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.amrmproxy.interceptor-class.pipeline</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.amrmproxy.DefaultRequestInterceptor</value>
+    <description>
+    The comma separated list of class names that implement the
+    RequestInterceptor interface. This is used by the AMRMProxyService to create
+    the request processing pipeline for applications.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource-plugins.gpu.docker-plugin.nvidia-docker-v1.endpoint</name>
+  <value>http://localhost:3476/v1.0/docker/cli</value>
+    <description>
+      Specify end point of nvidia-docker-plugin.
+      Please find documentation: https://github.com/NVIDIA/nvidia-docker/wiki
+      For more details.
+    </description>
+</property>
+
+</configuration>

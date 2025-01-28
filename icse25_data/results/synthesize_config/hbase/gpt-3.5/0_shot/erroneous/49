@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regions.recovery.store.file.ref.count', 'hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regions.recovery.store.file.ref.count' should have a positive integer value to enable the feature.", "The property 'hbase.regionserver.storefile.refresh.period' should have a positive integer value to enable the feature."]}
+
+{'hasError': True, 'errParameter': ['hbase.regions.recovery.store.file.ref.count', 'hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regions.recovery.store.file.ref.count' has a negative value (-1) which is not allowed. Positive integer values should be provided to enable this feature.", "The property 'hbase.regionserver.storefile.refresh.period' has a value of 0 which means the feature is disabled. If this feature is intended to be used, a non-zero value should be provided."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.storefile.refresh.period', 'hbase.regions.recovery.store.file.ref.count'], 'reason': ["The property 'hbase.regionserver.storefile.refresh.period' should have a value greater than 0 to enable the feature. Current value: 0", "The property 'hbase.regions.recovery.store.file.ref.count' should have a positive integer value to enable the feature. Current value: -1"]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regions.recovery.store.file.ref.count	hbase.regionserver.storefile.refresh.period
+[Ciri] Reason for hbase.regions.recovery.store.file.ref.count: The property 'hbase.regions.recovery.store.file.ref.count' should have a positive integer value to enable the feature. Current value: -1
+[Ciri] Reason for hbase.regionserver.storefile.refresh.period: The property 'hbase.regionserver.storefile.refresh.period' should have a positive integer value to enable the feature.

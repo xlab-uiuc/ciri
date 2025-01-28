@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.network.connection.auth.timeout', 'alluxio.user.logging.threshold', 'alluxio.worker.tieredstore.level0.dirs.mediumtype', 'alluxio.master.ufs.path.cache.threads', 'alluxio.user.ufs.block.read.concurrency.max', 'alluxio.fuse.shared.caching.reader.enabled', 'alluxio.worker.data.folder.permissions'], 'reason': ['The port value should be a positive integer within the valid range for ports (1-65535).', "The timeout value should be specified in milliseconds (ms), not 'sec'.", "The logging threshold should be specified in milliseconds (ms), not 's'.", "The property 'alluxio.worker.tieredstore.level0.dirs.mediumtype' should directly specify the medium type (e.g., 'MEM', 'SSD', 'HDD'), not reference another property.", "The number of threads is generally fine, but ensure it's within the capabilities of your system.", 'The max concurrency value is extremely high; ensure this is within the capabilities of your system and intended.', 'Boolean values should be true or false; this entry is correct but included for completeness.', "The permissions should be specified in a numeric format (e.g., '700' for rwx------)."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.job.worker.rpc.port	alluxio.network.connection.auth.timeout	alluxio.user.logging.threshold	alluxio.worker.tieredstore.level0.dirs.mediumtype	alluxio.master.ufs.path.cache.threads	alluxio.user.ufs.block.read.concurrency.max	alluxio.fuse.shared.caching.reader.enabled	alluxio.worker.data.folder.permissions
+[Ciri] Reason for alluxio.job.worker.rpc.port: The port value should be a positive integer within the valid range for ports (1-65535).
+[Ciri] Reason for alluxio.network.connection.auth.timeout: The timeout value should be specified in milliseconds (ms), not 'sec'.
+[Ciri] Reason for alluxio.user.logging.threshold: The logging threshold should be specified in milliseconds (ms), not 's'.
+[Ciri] Reason for alluxio.worker.tieredstore.level0.dirs.mediumtype: The property 'alluxio.worker.tieredstore.level0.dirs.mediumtype' should directly specify the medium type (e.g., 'MEM', 'SSD', 'HDD'), not reference another property.
+[Ciri] Reason for alluxio.master.ufs.path.cache.threads: The number of threads is generally fine, but ensure it's within the capabilities of your system.
+[Ciri] Reason for alluxio.user.ufs.block.read.concurrency.max: The max concurrency value is extremely high; ensure this is within the capabilities of your system and intended.
+[Ciri] Reason for alluxio.fuse.shared.caching.reader.enabled: Boolean values should be true or false; this entry is correct but included for completeness.
+[Ciri] Reason for alluxio.worker.data.folder.permissions: The permissions should be specified in a numeric format (e.g., '700' for rwx------).

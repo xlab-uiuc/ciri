@@ -1,0 +1,18 @@
+Wrong shot number:
+[3, 2, 12]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['port'], 'reason': ["The property 'port' has the value '3189' which is outside the valid range (1024-65535)."]}
+
+{'hasError': True, 'errParameter': ['port'], 'reason': ["The property 'port' has the value '3189' which is not a valid port number. Redis ports must be between 0 and 65535."]}
+
+{'hasError': True, 'errParameter': ['port', 'replica-announce-ip'], 'reason': ["The property 'port' has the value '3189' which is not within the valid range (6379-65535).", "The property 'replica-announce-ip' has the value '5.5.5.5' which is not a valid IP address."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: port
+[Ciri] Reason for port: The property 'port' has the value '3189' which is outside the valid range (1024-65535).

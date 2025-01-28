@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.http.address'], 'reason': ['dfs.datanode.http.address is not a valid property for hdfs version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['dfs.domain.socket.disable.interval.seconds', 'dfs.checksum.type', 'dfs.client.socketcache.capacity', 'dfs.webhdfs.netty.high.watermark'], 'reason': ['dfs.domain.socket.disable.interval.seconds: Negative values are invalid.', 'dfs.checksum.type: Checksum type', 'dfs.client.socketcache.capacity: Socket cache capacity (in entries) for short-circuit reads. If this value is set to 0, the client socket cache is disabled.', 'dfs.webhdfs.netty.high.watermark: High watermark configuration to Netty for Datanode WebHdfs.']}
+
+{'hasError': True, 'errParameter': ['dfs.domain.socket.disable.interval.seconds'], 'reason': ['dfs.domain.socket.disable.interval.seconds must be greater than or equal to 0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.domain.socket.disable.interval.seconds'], 'reason': ['dfs.domain.socket.disable.interval.seconds should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.http.address'], 'reason': ['The value of dfs.datanode.http.address is not a valid IP address.']}
+
+{'hasError': True, 'errParameter': ['dfs.domain.socket.disable.interval.seconds'], 'reason': ['dfs.domain.socket.disable.interval.seconds must be a positive integer']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.domain.socket.disable.interval.seconds
+[Ciri] Reason for dfs.domain.socket.disable.interval.seconds: dfs.domain.socket.disable.interval.seconds should be a positive integer

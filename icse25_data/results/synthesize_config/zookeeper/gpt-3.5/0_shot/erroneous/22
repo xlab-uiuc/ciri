@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'localSessionsUpgradingEnabled', 'autopurge.purgeInterval', 'sslQuorumReloadCertFiles'], 'reason': ['quorumListenOnAllIPs property is not valid for Zookeeper version 3.7.0', 'localSessionsUpgradingEnabled property is not valid for Zookeeper version 3.7.0', 'autopurge.purgeInterval property is not valid for Zookeeper version 3.7.0', 'sslQuorumReloadCertFiles property is not valid for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'localSessionsUpgradingEnabled', 'autopurge.purgeInterval', 'sslQuorumReloadCertFiles'], 'reason': ['quorumListenOnAllIPs property is not recognized in Zookeeper 3.7.0 configuration.', 'localSessionsUpgradingEnabled property is not recognized in Zookeeper 3.7.0 configuration.', 'autopurge.purgeInterval should be set to a positive value for automatic purging, -1 disables autopurge.', 'sslQuorumReloadCertFiles property is not recognized in Zookeeper 3.7.0 configuration.']}
+
+{'hasError': True, 'errParameter': ['quorumListenOnAllIPs', 'localSessionsUpgradingEnabled', 'autopurge.purgeInterval', 'sslQuorumReloadCertFiles', 'quorum.auth.server.saslLoginContext'], 'reason': ["Property 'quorumListenOnAllIPs' is not a valid configuration for Zookeeper 3.7.0", "Property 'localSessionsUpgradingEnabled' is not a valid configuration for Zookeeper 3.7.0", "Property 'autopurge.purgeInterval' is not a valid configuration for Zookeeper 3.7.0", "Property 'sslQuorumReloadCertFiles' is not a valid configuration for Zookeeper 3.7.0", "Property 'quorum.auth.server.saslLoginContext' is not a valid configuration for Zookeeper 3.7.0"]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: quorumListenOnAllIPs	localSessionsUpgradingEnabled	autopurge.purgeInterval	sslQuorumReloadCertFiles
+[Ciri] Reason for quorumListenOnAllIPs: quorumListenOnAllIPs property is not recognized in Zookeeper 3.7.0 configuration.
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled property is not valid for Zookeeper version 3.7.0
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval should be set to a positive value for automatic purging, -1 disables autopurge.
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles property is not valid for Zookeeper version 3.7.0

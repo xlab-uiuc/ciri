@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['FIRST_DAY_OF_WEEK', 'DATA_UPLOAD_MAX_NUMBER_FIELDS', 'SECURE_HSTS_INCLUDE_SUBDOMAINS', 'CSRF_COOKIE_PATH', 'PASSWORD_RESET_TIMEOUT', 'YEAR_MONTH_FORMAT', 'AUTH_PASSWORD_VALIDATORS', 'EMAIL_USE_LOCALTIME'], 'reason': ['FIRST_DAY_OF_WEEK should be a number between 0 (Sunday) and 6 (Saturday).', 'DATA_UPLOAD_MAX_NUMBER_FIELDS is not a valid Django setting in version 4.0.', 'SECURE_HSTS_INCLUDE_SUBDOMAINS should be a boolean value (True or False).', 'CSRF_COOKIE_PATH should be a string representing the path to the CSRF cookie.', 'PASSWORD_RESET_TIMEOUT should be a number representing the number of seconds the password reset link is valid.', 'YEAR_MONTH_FORMAT is not a valid Django setting in version 4.0.', 'AUTH_PASSWORD_VALIDATORS should be a list of password validator classes.', 'EMAIL_USE_LOCALTIME is not a valid Django setting in version 4.0.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: FIRST_DAY_OF_WEEK	DATA_UPLOAD_MAX_NUMBER_FIELDS	SECURE_HSTS_INCLUDE_SUBDOMAINS	CSRF_COOKIE_PATH	PASSWORD_RESET_TIMEOUT	YEAR_MONTH_FORMAT	AUTH_PASSWORD_VALIDATORS	EMAIL_USE_LOCALTIME
+[Ciri] Reason for FIRST_DAY_OF_WEEK: FIRST_DAY_OF_WEEK should be a number between 0 (Sunday) and 6 (Saturday).
+[Ciri] Reason for DATA_UPLOAD_MAX_NUMBER_FIELDS: DATA_UPLOAD_MAX_NUMBER_FIELDS is not a valid Django setting in version 4.0.
+[Ciri] Reason for SECURE_HSTS_INCLUDE_SUBDOMAINS: SECURE_HSTS_INCLUDE_SUBDOMAINS should be a boolean value (True or False).
+[Ciri] Reason for CSRF_COOKIE_PATH: CSRF_COOKIE_PATH should be a string representing the path to the CSRF cookie.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: PASSWORD_RESET_TIMEOUT should be a number representing the number of seconds the password reset link is valid.
+[Ciri] Reason for YEAR_MONTH_FORMAT: YEAR_MONTH_FORMAT is not a valid Django setting in version 4.0.
+[Ciri] Reason for AUTH_PASSWORD_VALIDATORS: AUTH_PASSWORD_VALIDATORS should be a list of password validator classes.
+[Ciri] Reason for EMAIL_USE_LOCALTIME: EMAIL_USE_LOCALTIME is not a valid Django setting in version 4.0.

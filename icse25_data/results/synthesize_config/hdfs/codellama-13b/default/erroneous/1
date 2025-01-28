@@ -1,0 +1,26 @@
+Wrong shot number:
+[15, 8, 16]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.max-corrupt-file-blocks-returned'], 'reason': ["The property 'dfs.namenode.max-corrupt-file-blocks-returned' has the value '100' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.image.parallel.threads'], 'reason': ["The property 'dfs.image.parallel.threads' has the value '4' which is not in the range of [5, 100]."]}
+
+{'hasError': True, 'errParameter': ['dfs.default.chunk.view.size'], 'reason': ["The value of the property 'dfs.default.chunk.view.size' should be an integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.default.chunk.view.size'], 'reason': ["The property 'dfs.default.chunk.view.size' has the value '9.9' which is not a valid integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.image.parallel.threads'], 'reason': ["The property 'dfs.image.parallel.threads' has the value '4' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.default.chunk.view.size'], 'reason': ["The value of the property 'dfs.default.chunk.view.size' should be an integer."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.default.chunk.view.size
+[Ciri] Reason for dfs.default.chunk.view.size: The value of the property 'dfs.default.chunk.view.size' should be an integer.

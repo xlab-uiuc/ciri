@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dynamic_shared_memory_type', 'client_encoding'], 'reason': ["The value 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' is not valid for the 'dynamic_shared_memory_type' parameter in PostgreSQL 13.0. Valid values are 'posix', 'sysv', 'mmap' or 'none'.", "The value 'sql_ascii' is not a valid encoding for the 'client_encoding' parameter. Valid values include 'UTF8', 'LATIN1', etc."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dynamic_shared_memory_type	client_encoding
+[Ciri] Reason for dynamic_shared_memory_type: The value 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' is not valid for the 'dynamic_shared_memory_type' parameter in PostgreSQL 13.0. Valid values are 'posix', 'sysv', 'mmap' or 'none'.
+[Ciri] Reason for client_encoding: The value 'sql_ascii' is not a valid encoding for the 'client_encoding' parameter. Valid values include 'UTF8', 'LATIN1', etc.

@@ -1,0 +1,27 @@
+Wrong shot number:
+[12, 13, 9]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.file.access.time.updater.shutdown.timeout'], 'reason': ["The property 'alluxio.master.file.access.time.updater.shutdown.timeout' has the value '10sec' which is not a valid duration. The correct format is '10s'."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.entry.buffer.count', 'alluxio.master.file.access.time.updater.shutdown.timeout'], 'reason': ["The property 'alluxio.master.backup.entry.buffer.count' has the value '10000' which is smaller than the minimum value of '100000'.", "The property 'alluxio.master.file.access.time.updater.shutdown.timeout' has the value '10sec' which is smaller than the minimum value of '1min'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.entry.buffer.count', 'alluxio.master.file.access.time.updater.shutdown.timeout'], 'reason': ["The property 'alluxio.master.backup.entry.buffer.count' has the value '10000' which is smaller than the minimum value of '100000'.", "The property 'alluxio.master.file.access.time.updater.shutdown.timeout' has the value '10sec' which is smaller than the minimum value of '1min'."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.entry.buffer.count', 'alluxio.master.file.access.time.updater.shutdown.timeout'], 'reason': ["The property 'alluxio.master.backup.entry.buffer.count' has the value '10000' which is smaller than the minimum value of '100000'.", "The property 'alluxio.master.file.access.time.updater.shutdown.timeout' has the value '10sec' which is smaller than the minimum value of '1min'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.backup.entry.buffer.count	alluxio.master.file.access.time.updater.shutdown.timeout
+[Ciri] Reason for alluxio.master.backup.entry.buffer.count: The property 'alluxio.master.backup.entry.buffer.count' has the value '10000' which is smaller than the minimum value of '100000'.
+[Ciri] Reason for alluxio.master.file.access.time.updater.shutdown.timeout: The property 'alluxio.master.file.access.time.updater.shutdown.timeout' has the value '10sec' which is smaller than the minimum value of '1min'.

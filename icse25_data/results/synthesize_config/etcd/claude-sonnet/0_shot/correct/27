@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'initial-advertise-peer-urls'], 'reason': ["The listen-peer-urls and initial-advertise-peer-urls parameters should use the URL scheme 'http://IP:PORT' or 'https://IP:PORT' instead of just 'http://localhost:2380'. Using 'localhost' may cause issues in a cluster environment.", "For etcd 3.5.0, it is recommended to use the URL scheme with the actual IP address instead of 'localhost' for better compatibility and to avoid potential issues."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: listen-peer-urls	initial-advertise-peer-urls
+[Ciri] Reason for listen-peer-urls: The listen-peer-urls and initial-advertise-peer-urls parameters should use the URL scheme 'http://IP:PORT' or 'https://IP:PORT' instead of just 'http://localhost:2380'. Using 'localhost' may cause issues in a cluster environment.
+[Ciri] Reason for initial-advertise-peer-urls: For etcd 3.5.0, it is recommended to use the URL scheme with the actual IP address instead of 'localhost' for better compatibility and to avoid potential issues.

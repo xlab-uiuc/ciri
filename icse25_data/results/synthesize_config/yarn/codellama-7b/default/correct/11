@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 3, 4]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.webapp.address'], 'reason': ["The property 'yarn.nodemanager.webapp.address' has the value '${yarn.nodemanager.hostname}:8042' which contains a variable that is not defined."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage'], 'reason': ["The property 'yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage' has the value '45.0' which exceeds the range of a Float."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage'], 'reason': ["The property 'yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage' has the value '45.0' which exceeds the range of a Double."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage
+[Ciri] Reason for yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage: The property 'yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage' has the value '45.0' which exceeds the range of a Double.

@@ -1,0 +1,18 @@
+Wrong shot number:
+[1, 4, 8]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfsync'], 'reason': ["The property 'appendfsync' has a value 'everysec' which is not within the accepted values {always, everysec, no}."]}
+
+{'hasError': True, 'errParameter': ['tls-port'], 'reason': ["The property 'tls-port' is not a valid configuration parameter for Redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['tls-port'], 'reason': ["The property 'tls-port' is deprecated in Redis version 7.0.0. Please use 'port' for non-TLS connections and 'tls-port' for TLS connections."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: tls-port
+[Ciri] Reason for tls-port: The property 'tls-port' is not a valid configuration parameter for Redis version 7.0.0.

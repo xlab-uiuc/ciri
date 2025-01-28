@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_ecdh_curve', 'tcp_keepalives_idle', 'commit_siblings', 'geqo_generations'], 'reason': ['ssl_ecdh_curve is not a valid parameter in PostgreSQL 13. The correct parameter is ssl_ciphers.', 'tcp_keepalives_idle must be set to a value greater than 0. Setting it to 0 disables the TCP keepalive feature.', 'commit_siblings is not a valid parameter in PostgreSQL 13. The correct parameter is max_parallel_workers_per_gather.', 'geqo_generations is not a valid parameter in PostgreSQL 13. The GEQO planner has been removed in this version.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: ssl_ecdh_curve	tcp_keepalives_idle	commit_siblings	geqo_generations
+[Ciri] Reason for ssl_ecdh_curve: ssl_ecdh_curve is not a valid parameter in PostgreSQL 13. The correct parameter is ssl_ciphers.
+[Ciri] Reason for tcp_keepalives_idle: tcp_keepalives_idle must be set to a value greater than 0. Setting it to 0 disables the TCP keepalive feature.
+[Ciri] Reason for commit_siblings: commit_siblings is not a valid parameter in PostgreSQL 13. The correct parameter is max_parallel_workers_per_gather.
+[Ciri] Reason for geqo_generations: geqo_generations is not a valid parameter in PostgreSQL 13. The GEQO planner has been removed in this version.

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.file.access.time.updater.shutdown.timeout'], 'reason': ['The value of alluxio.master.file.access.time.updater.shutdown.timeout is not a valid time unit. Expected a time unit, but got 1sec']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.file.access.time.updater.shutdown.timeout'], 'reason': ['The value of alluxio.master.file.access.time.updater.shutdown.timeout is not a valid duration. The value must be a valid duration in the format of 10s, 10m, 10h, 10d, 10M, 10Y.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.file.access.time.updater.shutdown.timeout', 'alluxio.worker.network.keepalive.timeout', 'alluxio.worker.management.tier.align.reserved.bytes'], 'reason': ['The value of alluxio.master.file.access.time.updater.shutdown.timeout is not a valid time unit. The valid time units are: ns, us, ms, s, m, h, d.', 'The value of alluxio.worker.network.keepalive.timeout is not a valid time unit. The valid time units are: ns, us, ms, s, m, h, d.', 'The value of alluxio.worker.management.tier.align.reserved.bytes is not a valid size unit. The valid size units are: B, KB, MB, GB, TB, PB, EB, ZB, YB.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.master.file.access.time.updater.shutdown.timeout
+[Ciri] Reason for alluxio.master.file.access.time.updater.shutdown.timeout: The value of alluxio.master.file.access.time.updater.shutdown.timeout is not a valid duration. The value must be a valid duration in the format of 10s, 10m, 10h, 10d, 10M, 10Y.

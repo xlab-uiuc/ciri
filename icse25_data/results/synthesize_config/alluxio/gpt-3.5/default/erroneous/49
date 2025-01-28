@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 10, 11]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.flush.batch.time', 'alluxio.master.journal.flush.timeout'], 'reason': ["The property 'alluxio.master.journal.flush.batch.time' should have a value in milliseconds, not in seconds.", "The property 'alluxio.master.journal.flush.timeout' should have a value in milliseconds, not in seconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.flush.batch.time', 'alluxio.master.journal.flush.timeout'], 'reason': ["The property 'alluxio.master.journal.flush.batch.time' should have a value in milliseconds rather than '500ms'.", "The property 'alluxio.master.journal.flush.timeout' should have a value in milliseconds rather than '400ms'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.flush.batch.time', 'alluxio.master.journal.flush.timeout'], 'reason': ["The property 'alluxio.master.journal.flush.batch.time' has a value '500ms' which should be specified in seconds rather than milliseconds.", "The property 'alluxio.master.journal.flush.timeout' has a value '400ms' which should be specified in seconds rather than milliseconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.master.journal.flush.batch.time	alluxio.master.journal.flush.timeout
+[Ciri] Reason for alluxio.master.journal.flush.batch.time: The property 'alluxio.master.journal.flush.batch.time' should have a value in milliseconds, not in seconds.
+[Ciri] Reason for alluxio.master.journal.flush.timeout: The property 'alluxio.master.journal.flush.timeout' should have a value in milliseconds, not in seconds.

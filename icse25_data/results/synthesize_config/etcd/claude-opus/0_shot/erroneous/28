@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'heartbeat-interval', 'auto-compaction-retention'], 'reason': ["In etcd v3.5.0, 'max-wals' has been deprecated. Use 'quota-backend-bytes' instead to limit the total size of WAL files.", "The 'heartbeat-interval' value of 200 is too low. It should be at least 500ms. A too low value can cause unnecessary network and CPU overhead.", "The 'auto-compaction-retention' value of 2 is too low. It should be at least 1 hour (1h). Setting it too low can cause excessive disk I/O and impact performance."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max-wals	heartbeat-interval	auto-compaction-retention
+[Ciri] Reason for max-wals: In etcd v3.5.0, 'max-wals' has been deprecated. Use 'quota-backend-bytes' instead to limit the total size of WAL files.
+[Ciri] Reason for heartbeat-interval: The 'heartbeat-interval' value of 200 is too low. It should be at least 500ms. A too low value can cause unnecessary network and CPU overhead.
+[Ciri] Reason for auto-compaction-retention: The 'auto-compaction-retention' value of 2 is too low. It should be at least 1 hour (1h). Setting it too low can cause excessive disk I/O and impact performance.

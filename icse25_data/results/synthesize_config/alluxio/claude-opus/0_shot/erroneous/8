@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.intermediate.upload.clean.age', 'alluxio.user.logging.threshold'], 'reason': ["The value '128N' is invalid for the property 'alluxio.underfs.s3.intermediate.upload.clean.age'. It should be a time value, e.g. '3day'.", "The value '20s' is invalid for the property 'alluxio.user.logging.threshold'. The valid time unit for this property is milliseconds (ms), but 's' (seconds) is provided."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.s3.intermediate.upload.clean.age	alluxio.user.logging.threshold
+[Ciri] Reason for alluxio.underfs.s3.intermediate.upload.clean.age: The value '128N' is invalid for the property 'alluxio.underfs.s3.intermediate.upload.clean.age'. It should be a time value, e.g. '3day'.
+[Ciri] Reason for alluxio.user.logging.threshold: The value '20s' is invalid for the property 'alluxio.user.logging.threshold'. The valid time unit for this property is milliseconds (ms), but 's' (seconds) is provided.

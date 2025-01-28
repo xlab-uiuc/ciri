@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port', 'replica-announce-port', 'replica-announce-ip', 'cluster-announce-bus-port', 'acllog-max-len', 'aof-timestamp-enabled'], 'reason': ['Invalid value for tls-port parameter.', 'Invalid value for replica-announce-port parameter.', 'Invalid value for replica-announce-ip parameter.', 'Invalid value for cluster-announce-bus-port parameter.', 'Invalid value for acllog-max-len parameter.', 'Invalid value for aof-timestamp-enabled parameter.']}
+
+{'hasError': True, 'errParameter': ['tls-port', 'replica-announce-ip', 'cluster-announce-bus-port', 'acllog-max-len', 'aof-timestamp-enabled'], 'reason': ["Invalid parameter 'tls-port=file://'. 'tls-port' should be a numeric value.", "Invalid parameter 'replica-announce-ip=5.5.5.5'. 'replica-announce-ip' should not have an IP address assigned directly.", "Invalid parameter 'cluster-announce-bus-port=12760'. 'cluster-announce-bus-port' should be a numeric value.", "Invalid parameter 'acllog-max-len=128'. 'acllog-max-len' should be a boolean value.", "Invalid parameter 'aof-timestamp-enabled=no'. 'aof-timestamp-enabled' should be a boolean value."]}
+
+{'hasError': True, 'errParameter': ['tls-port', 'replica-announce-ip', 'cluster-announce-bus-port', 'acllog-max-len', 'aof-timestamp-enabled'], 'reason': ["Invalid parameter 'tls-port=file://'. 'tls-port' should be a numeric value.", "Invalid parameter 'replica-announce-ip=5.5.5.5'. 'replica-announce-ip' should not have a value assigned directly.", "Invalid parameter 'cluster-announce-bus-port=12760'. 'cluster-announce-bus-port' should be a numeric value.", "Invalid parameter 'acllog-max-len=128'. 'acllog-max-len' should be a boolean value (yes/no).", "Invalid parameter 'aof-timestamp-enabled=no'. 'aof-timestamp-enabled' should be a boolean value (yes/no)."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: tls-port	replica-announce-ip	cluster-announce-bus-port	acllog-max-len	aof-timestamp-enabled
+[Ciri] Reason for tls-port: Invalid parameter 'tls-port=file://'. 'tls-port' should be a numeric value.
+[Ciri] Reason for replica-announce-ip: Invalid parameter 'replica-announce-ip=5.5.5.5'. 'replica-announce-ip' should not have an IP address assigned directly.
+[Ciri] Reason for cluster-announce-bus-port: Invalid parameter 'cluster-announce-bus-port=12760'. 'cluster-announce-bus-port' should be a numeric value.
+[Ciri] Reason for acllog-max-len: Invalid parameter 'acllog-max-len=128'. 'acllog-max-len' should be a boolean value (yes/no).
+[Ciri] Reason for aof-timestamp-enabled: Invalid parameter 'aof-timestamp-enabled=no'. 'aof-timestamp-enabled' should be a boolean value.

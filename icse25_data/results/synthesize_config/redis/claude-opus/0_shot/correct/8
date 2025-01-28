@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['enable-module-command', 'tls-ca-cert-file', 'tls-port', 'oom-score-adj-values'], 'reason': ["The 'enable-module-command' parameter is not a valid configuration option in Redis 7.0.0.", "The 'tls-ca-cert-file' parameter requires an absolute file path. Just specifying 'ca.crt' is not sufficient.", "The 'tls-port' parameter is not a valid configuration option in Redis 7.0.0. In Redis 7.0.0, use 'port' and 'tls-port' is set to yes/no to enable/disable TLS on that port.", "The 'oom-score-adj-values' parameter is not a valid configuration option in Redis 7.0.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: enable-module-command	tls-ca-cert-file	tls-port	oom-score-adj-values
+[Ciri] Reason for enable-module-command: The 'enable-module-command' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for tls-ca-cert-file: The 'tls-ca-cert-file' parameter requires an absolute file path. Just specifying 'ca.crt' is not sufficient.
+[Ciri] Reason for tls-port: The 'tls-port' parameter is not a valid configuration option in Redis 7.0.0. In Redis 7.0.0, use 'port' and 'tls-port' is set to yes/no to enable/disable TLS on that port.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter is not a valid configuration option in Redis 7.0.0.

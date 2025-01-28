@@ -1,0 +1,20 @@
+Wrong shot number:
+[8, 6, 2]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.connnection.timeout', 'alluxio.security.stale.channel.purge.interval', 'alluxio.user.file.persistence.initial.wait.time'], 'reason': ["The property 'alluxio.underfs.web.connnection.timeout' has a typo in 'connnection'.", "The property 'alluxio.security.stale.channel.purge.interval' has an incorrect unit.", "The property 'alluxio.user.file.persistence.initial.wait.time' has a negative value which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.connnection.timeout', 'alluxio.security.stale.channel.purge.interval', 'alluxio.user.file.persistence.initial.wait.time'], 'reason': ["The property 'alluxio.underfs.web.connnection.timeout' has a typo in 'connnection'.", "The property 'alluxio.security.stale.channel.purge.interval' has the value '6day' which uses an incorrect unit.", "The property 'alluxio.user.file.persistence.initial.wait.time' has a negative value which is not valid."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.web.connnection.timeout', 'alluxio.security.stale.channel.purge.interval', 'alluxio.user.file.persistence.initial.wait.time'], 'reason': ["The property 'alluxio.underfs.web.connnection.timeout' has a typo in 'connnection'.", "The property 'alluxio.security.stale.channel.purge.interval' has an incorrect unit.", "The property 'alluxio.user.file.persistence.initial.wait.time' has a negative value which is not allowed."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.underfs.web.connnection.timeout	alluxio.security.stale.channel.purge.interval	alluxio.user.file.persistence.initial.wait.time
+[Ciri] Reason for alluxio.underfs.web.connnection.timeout: The property 'alluxio.underfs.web.connnection.timeout' has a typo in 'connnection'.
+[Ciri] Reason for alluxio.security.stale.channel.purge.interval: The property 'alluxio.security.stale.channel.purge.interval' has an incorrect unit.
+[Ciri] Reason for alluxio.user.file.persistence.initial.wait.time: The property 'alluxio.user.file.persistence.initial.wait.time' has a negative value which is not valid.

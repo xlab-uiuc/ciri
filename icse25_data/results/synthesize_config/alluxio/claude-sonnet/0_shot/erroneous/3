@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.admin.threads.max=true', 'alluxio.master.backup.entry.buffer.count=10000', 'alluxio.master.ufs.active.sync.event.rate.interval=120sec', 'alluxio.user.network.streaming.flowcontrol.window=2MB', 'alluxio.user.logging.threshold=10s'], 'reason': ["The property 'alluxio.underfs.s3.admin.threads.max' expects an integer value, not a boolean.", "The property 'alluxio.master.backup.entry.buffer.count' is deprecated in Alluxio 2.5.0.", "The property 'alluxio.master.ufs.active.sync.event.rate.interval' is not a valid property in Alluxio 2.5.0.", "The property 'alluxio.user.network.streaming.flowcontrol.window' expects a value in bytes (e.g., '2MB' should be '2048KB').", "The property 'alluxio.user.logging.threshold' is not a valid property in Alluxio 2.5.0."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.underfs.s3.admin.threads.max=true	alluxio.master.backup.entry.buffer.count=10000	alluxio.master.ufs.active.sync.event.rate.interval=120sec	alluxio.user.network.streaming.flowcontrol.window=2MB	alluxio.user.logging.threshold=10s
+[Ciri] Reason for alluxio.underfs.s3.admin.threads.max=true: The property 'alluxio.underfs.s3.admin.threads.max' expects an integer value, not a boolean.
+[Ciri] Reason for alluxio.master.backup.entry.buffer.count=10000: The property 'alluxio.master.backup.entry.buffer.count' is deprecated in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.master.ufs.active.sync.event.rate.interval=120sec: The property 'alluxio.master.ufs.active.sync.event.rate.interval' is not a valid property in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.user.network.streaming.flowcontrol.window=2MB: The property 'alluxio.user.network.streaming.flowcontrol.window' expects a value in bytes (e.g., '2MB' should be '2048KB').
+[Ciri] Reason for alluxio.user.logging.threshold=10s: The property 'alluxio.user.logging.threshold' is not a valid property in Alluxio 2.5.0.

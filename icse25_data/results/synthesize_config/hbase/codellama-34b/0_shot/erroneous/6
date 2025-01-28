@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.tmp.dir', 'hbase.master.logcleaner.ttl', 'hbase.balancer.period', 'hfile.block.index.cacheonwrite', 'hbase.status.multicast.address.port', 'hbase.master.mob.ttl.cleaner.period', 'hbase.rpc.rows.warning.threshold'], 'reason': ['The value of hbase.tmp.dir is not a valid path. It should be a path that starts with /.', 'The value of hbase.master.logcleaner.ttl is not a valid number. It should be a number that is greater than 0.', 'The value of hbase.balancer.period is not a valid number. It should be a number that is greater than 0.', 'The value of hfile.block.index.cacheonwrite is not a valid boolean. It should be either true or false.', 'The value of hbase.status.multicast.address.port is not a valid port number. It should be a number between 1024 and 65535.', 'The value of hbase.master.mob.ttl.cleaner.period is not a valid number. It should be a number that is greater than 0.', 'The value of hbase.rpc.rows.warning.threshold is not a valid number. It should be a number that is greater than 0.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: hbase.tmp.dir	hbase.master.logcleaner.ttl	hbase.balancer.period	hfile.block.index.cacheonwrite	hbase.status.multicast.address.port	hbase.master.mob.ttl.cleaner.period	hbase.rpc.rows.warning.threshold
+[Ciri] Reason for hbase.tmp.dir: The value of hbase.tmp.dir is not a valid path. It should be a path that starts with /.
+[Ciri] Reason for hbase.master.logcleaner.ttl: The value of hbase.master.logcleaner.ttl is not a valid number. It should be a number that is greater than 0.
+[Ciri] Reason for hbase.balancer.period: The value of hbase.balancer.period is not a valid number. It should be a number that is greater than 0.
+[Ciri] Reason for hfile.block.index.cacheonwrite: The value of hfile.block.index.cacheonwrite is not a valid boolean. It should be either true or false.
+[Ciri] Reason for hbase.status.multicast.address.port: The value of hbase.status.multicast.address.port is not a valid port number. It should be a number between 1024 and 65535.
+[Ciri] Reason for hbase.master.mob.ttl.cleaner.period: The value of hbase.master.mob.ttl.cleaner.period is not a valid number. It should be a number that is greater than 0.
+[Ciri] Reason for hbase.rpc.rows.warning.threshold: The value of hbase.rpc.rows.warning.threshold is not a valid number. It should be a number that is greater than 0.

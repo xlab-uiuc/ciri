@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataLogDir', 'autopurge.purgeInterval'], 'reason': ['The dataLogDir path contains multiple consecutive forward slashes, which is not recommended as it can cause issues with some operating systems and applications.', 'Setting autopurge.purgeInterval to -1 disables automatic purging of old transaction log files, which can lead to disk space issues if not managed properly.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dataLogDir	autopurge.purgeInterval
+[Ciri] Reason for dataLogDir: The dataLogDir path contains multiple consecutive forward slashes, which is not recommended as it can cause issues with some operating systems and applications.
+[Ciri] Reason for autopurge.purgeInterval: Setting autopurge.purgeInterval to -1 disables automatic purging of old transaction log files, which can lead to disk space issues if not managed properly.

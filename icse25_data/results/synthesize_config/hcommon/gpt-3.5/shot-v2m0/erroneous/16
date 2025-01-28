@@ -1,0 +1,13 @@
+Correct shot number:
+[11, 7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'fs.ftp.data.connection.mode', 'ipc.[port_number].backoff.enable'], 'reason': ['The value for fs.defaultFS is not a valid URI.', 'The value for fs.ftp.data.connection.mode is not a recognized mode.', 'The property name ipc.[port_number].backoff.enable is not properly formatted.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.defaultFS	fs.ftp.data.connection.mode	ipc.[port_number].backoff.enable
+[Ciri] Reason for fs.defaultFS: The value for fs.defaultFS is not a valid URI.
+[Ciri] Reason for fs.ftp.data.connection.mode: The value for fs.ftp.data.connection.mode is not a recognized mode.
+[Ciri] Reason for ipc.[port_number].backoff.enable: The property name ipc.[port_number].backoff.enable is not properly formatted.

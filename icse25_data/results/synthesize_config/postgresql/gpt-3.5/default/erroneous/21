@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 7, 5]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_key_file', 'log_parameter_max_length'], 'reason': ["The property 'ssl_key_file' has an incorrect value format. It should not have an extra single quote at the end.", "The property 'log_parameter_max_length' should have a non-negative value."]}
+
+{'hasError': True, 'errParameter': ['ssl_key_file', 'log_parameter_max_length'], 'reason': ["The property 'ssl_key_file' has an incorrect value format. It should not have an extra single quote at the end.", "The value of 'log_parameter_max_length' should be a non-negative integer."]}
+
+{'hasError': True, 'errParameter': ['ssl_key_file', 'log_parameter_max_length'], 'reason': ["The property 'ssl_key_file' has an incorrect value format. It should be 'ssl_key_file = server.key' without the extra single quote at the end.", "The property 'log_parameter_max_length' should have a positive value. The current value is -2 which is invalid."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ssl_key_file	log_parameter_max_length
+[Ciri] Reason for ssl_key_file: The property 'ssl_key_file' has an incorrect value format. It should not have an extra single quote at the end.
+[Ciri] Reason for log_parameter_max_length: The property 'log_parameter_max_length' should have a positive value. The current value is -2 which is invalid.

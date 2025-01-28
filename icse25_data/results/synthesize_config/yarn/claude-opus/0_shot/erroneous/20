@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.pmem-check-enabled', 'yarn.nodemanager.linux-container-executor.path'], 'reason': ['The value for yarn.nodemanager.pmem-check-enabled should be a boolean (true or false), but it is set to an integer 10000.', 'The value for yarn.nodemanager.linux-container-executor.path should be a valid path to the Linux container executor binary, but /valid/file1 does not seem to be a valid path.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.pmem-check-enabled	yarn.nodemanager.linux-container-executor.path
+[Ciri] Reason for yarn.nodemanager.pmem-check-enabled: The value for yarn.nodemanager.pmem-check-enabled should be a boolean (true or false), but it is set to an integer 10000.
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.path: The value for yarn.nodemanager.linux-container-executor.path should be a valid path to the Linux container executor binary, but /valid/file1 does not seem to be a valid path.

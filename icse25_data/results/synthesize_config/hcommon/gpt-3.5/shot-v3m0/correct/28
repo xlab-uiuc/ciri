@@ -1,0 +1,13 @@
+Correct shot number:
+[5, 6, 14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.swift.impl', 'hadoop.ssl.enabled', 'hadoop.registry.zk.retry.interval.ms'], 'reason': ["The property 'fs.swift.impl' has an additional 'usage' tag which is not standard in Hadoop configuration files.", "The property 'hadoop.ssl.enabled' is marked as deprecated. It is recommended to use 'dfs.http.policy' and 'yarn.http.policy' instead.", "The property 'hadoop.registry.zk.retry.interval.ms' is missing a description."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.swift.impl	hadoop.ssl.enabled	hadoop.registry.zk.retry.interval.ms
+[Ciri] Reason for fs.swift.impl: The property 'fs.swift.impl' has an additional 'usage' tag which is not standard in Hadoop configuration files.
+[Ciri] Reason for hadoop.ssl.enabled: The property 'hadoop.ssl.enabled' is marked as deprecated. It is recommended to use 'dfs.http.policy' and 'yarn.http.policy' instead.
+[Ciri] Reason for hadoop.registry.zk.retry.interval.ms: The property 'hadoop.registry.zk.retry.interval.ms' is missing a description.

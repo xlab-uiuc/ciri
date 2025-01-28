@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-dial-timeout', 'discovery-fallback', 'proxy', 'peer-cert-file'], 'reason': ['proxy-refresh-interval is not a valid configuration parameter in etcd v3.5.0', 'proxy-dial-timeout is not a valid configuration parameter in etcd v3.5.0', 'discovery-fallback is not a valid configuration parameter in etcd v3.5.0', "proxy is not a valid configuration parameter in etcd v3.5.0. Use 'proxy-mode' instead.", 'peer-cert-file should not have a tab character before the file path']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: proxy-refresh-interval	proxy-dial-timeout	discovery-fallback	proxy	peer-cert-file
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval is not a valid configuration parameter in etcd v3.5.0
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout is not a valid configuration parameter in etcd v3.5.0
+[Ciri] Reason for discovery-fallback: discovery-fallback is not a valid configuration parameter in etcd v3.5.0
+[Ciri] Reason for proxy: proxy is not a valid configuration parameter in etcd v3.5.0. Use 'proxy-mode' instead.
+[Ciri] Reason for peer-cert-file: peer-cert-file should not have a tab character before the file path

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-announce-ip', 'oom-score-adj-values'], 'reason': ['bind-source-addr is not a valid configuration parameter', 'replica-announce-ip is not a valid configuration parameter', 'oom-score-adj-values is not a valid configuration parameter']}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-announce-ip'], 'reason': ['bind-source-addr is not a valid configuration parameter in Redis 7.0.0', 'replica-announce-ip is not a valid configuration parameter in Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'replica-announce-ip'], 'reason': ['bind-source-addr is not a valid configuration option for Redis 7.0.0', 'replica-announce-ip is not a valid configuration option for Redis 7.0.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: bind-source-addr	replica-announce-ip
+[Ciri] Reason for bind-source-addr: bind-source-addr is not a valid configuration parameter in Redis 7.0.0
+[Ciri] Reason for replica-announce-ip: replica-announce-ip is not a valid configuration option for Redis 7.0.0

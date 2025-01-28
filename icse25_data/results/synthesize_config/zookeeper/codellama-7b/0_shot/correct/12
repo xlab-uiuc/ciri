@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'autopurge.purgeInterval', 'localSessionsEnabled', 'maxClientCnxns'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'autopurge.purgeInterval must be a positive integer', 'localSessionsEnabled must be a boolean', 'maxClientCnxns must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'quorum.auth.serverRequireSasl is not a boolean', 'autopurge.purgeInterval is not a number']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'autopurge.purgeInterval'], 'reason': ['dataDir must be a valid directory', 'dataLogDir must be a valid directory', 'autopurge.purgeInterval must be a valid integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'autopurge.purgeInterval'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'autopurge.purgeInterval must be a positive integer']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dataDir	dataLogDir	autopurge.purgeInterval
+[Ciri] Reason for dataDir: dataDir is not a valid directory
+[Ciri] Reason for dataLogDir: dataLogDir must be a valid directory
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval must be a positive integer

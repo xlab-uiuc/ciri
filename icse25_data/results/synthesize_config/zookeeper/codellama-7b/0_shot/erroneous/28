@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'syncLimit', 'maxSessionTimeout', 'standaloneEnabled', 'quorum.auth.kerberos.servicePrincipal', 'portUnification', 'sslQuorumReloadCertFiles'], 'reason': ['autopurge.purgeInterval must be a positive integer', 'syncLimit must be a positive integer', 'maxSessionTimeout must be a positive integer', 'standaloneEnabled must be a boolean', 'quorum.auth.kerberos.servicePrincipal must be a string', 'portUnification must be a boolean', 'sslQuorumReloadCertFiles must be a boolean']}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'syncLimit', 'maxSessionTimeout', 'standaloneEnabled', 'quorum.auth.kerberos.servicePrincipal', 'portUnification', 'sslQuorumReloadCertFiles'], 'reason': ['The value of autopurge.purgeInterval must be a positive integer.', 'The value of syncLimit must be a positive integer.', 'The value of maxSessionTimeout must be a positive integer or -1.', 'The value of standaloneEnabled must be a boolean.', 'The value of quorum.auth.kerberos.servicePrincipal must be a string.', 'The value of portUnification must be a boolean.', 'The value of sslQuorumReloadCertFiles must be a boolean.']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPortAddress is not a valid IP address', 'quorum.auth.kerberos.servicePrincipal is not a valid Kerberos principal']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: autopurge.purgeInterval	syncLimit	maxSessionTimeout	standaloneEnabled	quorum.auth.kerberos.servicePrincipal	portUnification	sslQuorumReloadCertFiles
+[Ciri] Reason for autopurge.purgeInterval: The value of autopurge.purgeInterval must be a positive integer.
+[Ciri] Reason for syncLimit: The value of syncLimit must be a positive integer.
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout must be a positive integer
+[Ciri] Reason for standaloneEnabled: The value of standaloneEnabled must be a boolean.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal must be a string
+[Ciri] Reason for portUnification: portUnification must be a boolean
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles must be a boolean

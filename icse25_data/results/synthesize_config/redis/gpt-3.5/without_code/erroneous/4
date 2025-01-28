@@ -1,0 +1,19 @@
+Wrong shot number:
+[3, 8, 5]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-priority', 'cluster-announce-port'], 'reason': ["The property 'replica-priority' has the value 'ciri/ciri' which is not in the correct format.", "The property 'cluster-announce-port' has the value '1' which does not follow the correct port format."]}
+
+{'hasError': True, 'errParameter': ['replica-priority', 'cluster-announce-port'], 'reason': ["The property 'replica-priority' has the value 'ciri/ciri' which does not follow the correct format.", "The property 'cluster-announce-port' has the value '1' which does not follow the correct port format."]}
+
+{'hasError': True, 'errParameter': ['replica-priority', 'cluster-announce-port'], 'reason': ["The property 'replica-priority' has the value 'ciri/ciri' which is not in the correct format.", "The property 'cluster-announce-port' has the value '1' which does not follow the correct port format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: replica-priority	cluster-announce-port
+[Ciri] Reason for replica-priority: The property 'replica-priority' has the value 'ciri/ciri' which does not follow the correct format.
+[Ciri] Reason for cluster-announce-port: The property 'cluster-announce-port' has the value '1' which does not follow the correct port format.

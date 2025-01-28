@@ -1,0 +1,20 @@
+Wrong shot number:
+[16, 3, 1]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.dir', 'dfs.namenode.edits.journal-plugin.qjournal', 'dfs.namenode.checkpoint.dir', 'dfs.provided.aliasmap.leveldb.path'], 'reason': ["The property 'dfs.namenode.edits.dir' has the value '/valid/dir2' which does not follow the correct path format.", "The property 'dfs.namenode.edits.journal-plugin.qjournal' is not a valid value.", "The property 'dfs.namenode.checkpoint.dir' has the value '/valid/dir1' which does not follow the correct path format.", "The property 'dfs.provided.aliasmap.leveldb.path' has the value '/valid/file1' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.dir', 'dfs.namenode.edits.journal-plugin.qjournal', 'dfs.namenode.checkpoint.dir'], 'reason': ["The property 'dfs.namenode.edits.dir' has the value '/valid/dir2' which does not follow the correct path format.", "The property 'dfs.namenode.edits.journal-plugin.qjournal' has the value 'org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager' which is not of the correct type String.", "The property 'dfs.namenode.checkpoint.dir' has the value '/valid/dir1' which does not follow the correct path format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.edits.dir', 'dfs.namenode.edits.journal-plugin.qjournal', 'dfs.namenode.checkpoint.dir'], 'reason': ["The property 'dfs.namenode.edits.dir' has the value '/valid/dir2' which does not follow the correct path format.", "The property 'dfs.namenode.edits.journal-plugin.qjournal' has the value 'org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager' which is not of the correct type String.", "The property 'dfs.namenode.checkpoint.dir' has the value '/valid/dir1' which does not follow the correct path format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.edits.dir	dfs.namenode.edits.journal-plugin.qjournal	dfs.namenode.checkpoint.dir
+[Ciri] Reason for dfs.namenode.edits.dir: The property 'dfs.namenode.edits.dir' has the value '/valid/dir2' which does not follow the correct path format.
+[Ciri] Reason for dfs.namenode.edits.journal-plugin.qjournal: The property 'dfs.namenode.edits.journal-plugin.qjournal' has the value 'org.apache.hadoop.hdfs.qjournal.client.QuorumJournalManager' which is not of the correct type String.
+[Ciri] Reason for dfs.namenode.checkpoint.dir: The property 'dfs.namenode.checkpoint.dir' has the value '/valid/dir1' which does not follow the correct path format.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['track_counts', 'recovery_prefetch', 'scram_iterations'], 'reason': ["The 'track_counts' parameter does not exist in PostgreSQL configuration. The correct parameter is 'track_counts'.", "The 'recovery_prefetch' parameter is not a recognized configuration setting in PostgreSQL 13.0.", "The 'scram_iterations' parameter does not exist. The correct parameter for setting the number of iterations for SCRAM password hashing is 'password_encryption'. However, it does not directly control the iteration count in version 13.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: track_counts	recovery_prefetch	scram_iterations
+[Ciri] Reason for track_counts: The 'track_counts' parameter does not exist in PostgreSQL configuration. The correct parameter is 'track_counts'.
+[Ciri] Reason for recovery_prefetch: The 'recovery_prefetch' parameter is not a recognized configuration setting in PostgreSQL 13.0.
+[Ciri] Reason for scram_iterations: The 'scram_iterations' parameter does not exist. The correct parameter for setting the number of iterations for SCRAM password hashing is 'password_encryption'. However, it does not directly control the iteration count in version 13.0.

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.ipc.server.callqueue.handler.factor</name>
+  <value>0.1</value>
+    <description>Factor to determine the number of call queues.
+      A value of 0 means a single queue shared between all the handlers.
+      A value of 1 means that each handler has its own queue.</description>
+</property>
+
+<property>
+  <name>hbase.zookeeper.peerport</name>
+  <value>2888</value>
+    <description>Port used by ZooKeeper peers to talk to each other.
+    See https://zookeeper.apache.org/doc/r3.3.3/zookeeperStarted.html#sc_RunningReplicatedZooKeeper
+    for more information.</description>
+</property>
+
+<property>
+  <name>hbase.server.versionfile.writeattempts</name>
+  <value>6</value>
+    <description>
+    How many times to retry attempting to write a version file
+    before just aborting. Each attempt is separated by the
+    hbase.server.thread.wakefrequency milliseconds.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.blockingWaitTime</name>
+  <value>45000</value>
+    <description> The time for which a region will block updates after reaching the StoreFile limit
+    defined by hbase.hstore.blockingStoreFiles. After this time has elapsed, the region will stop
+    blocking updates even if a compaction has not been completed.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.keytab.file</name>
+  <value>/valid/file2</value>
+    <description>Full path to the kerberos keytab file to use for logging in
+    the configured HRegionServer server principal.</description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.abortonerror</name>
+  <value>false</value>
+      <description>Set to true to cause the hosting server (master or regionserver)
+      to abort if a coprocessor fails to load, fails to initialize, or throws an
+      unexpected Throwable object. Setting this to false will allow the server to
+      continue execution but the system wide state of the coprocessor in question
+      will become inconsistent as it will be properly executing in only a subset
+      of servers, so this is most useful for debugging only.</description>
+</property>
+
+<property>
+  <name>hbase.rest.threads.max</name>
+  <value>50</value>
+    <description>The maximum number of threads of the REST server thread pool.
+        Threads in the pool are reused to process REST requests. This
+        controls the maximum number of requests processed concurrently.
+        It may help to control the memory used by the REST server to
+        avoid OOM issues. If the thread pool is full, incoming requests
+        will be queued up and wait for some free threads.</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.master.timeout.millis</name>
+  <value>300000</value>
+    <description>
+       Timeout for master for the snapshot procedure execution.
+    </description>
+</property>
+
+</configuration>

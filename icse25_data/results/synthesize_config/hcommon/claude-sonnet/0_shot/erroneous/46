@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.ftp.timeout'], 'reason': ['The value 65536 for fs.ftp.host.port is invalid as it exceeds the maximum allowed port number of 65535.', 'The value -1 for fs.ftp.timeout is invalid as it should be a non-negative integer representing the timeout in seconds.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host.port	fs.ftp.timeout
+[Ciri] Reason for fs.ftp.host.port: The value 65536 for fs.ftp.host.port is invalid as it exceeds the maximum allowed port number of 65535.
+[Ciri] Reason for fs.ftp.timeout: The value -1 for fs.ftp.timeout is invalid as it should be a non-negative integer representing the timeout in seconds.

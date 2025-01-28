@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.am.max-attempts</name>
+  <value>1</value>
+    <description>The default maximum number of application attempts, if unset by
+    the user. Each application master can specify its individual maximum number of application
+    attempts via the API, but the individual number cannot be more than the global upper bound in
+    yarn.resourcemanager.am.global.max-attempts. The default number is set to 2, to
+    allow at least one retry for AM.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.delegation-token-renewer.thread-timeout</name>
+  <value>120s</value>
+    <description>
+    RM DelegationTokenRenewer thread timeout
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.disk-health-checker.interval-ms</name>
+  <value>120000</value>
+    <description>Frequency of running disk health checker code.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.docker.capabilities</name>
+  <value>DAC_OVERRIDE</value>
+    <description>This configuration setting determines the capabilities
+      assigned to docker containers when they are launched. While these may not
+      be case-sensitive from a docker perspective, it is best to keep these
+      uppercase. To run without any capabilities, set this value to
+      "none" or "NONE"</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.runtime.linux.runc.layer-mounts-to-keep</name>
+  <value>100</value>
+    <description>Target count of layer mounts that we should keep on disk
+      at one time.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.leveldb-timeline-store.read-cache-size</name>
+  <value>52428800</value>
+    <description>Size of read cache for uncompressed blocks for leveldb timeline store in bytes.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.entity-group-fs-store.done-dir</name>
+  <value>/tmp/entity-file-history/done/</value>
+    <description>HDFS path to store done application’s timeline data</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.writer.async.queue.capacity</name>
+  <value>100</value>
+    <description>The setting that decides the capacity of the queue to hold
+    asynchronous timeline entities.</description>
+</property>
+
+</configuration>

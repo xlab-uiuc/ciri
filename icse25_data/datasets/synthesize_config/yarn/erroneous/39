@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.zk-num-retries</name>
+  <value>1000</value>
+    <description>Number of times RM tries to connect to ZooKeeper.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.rm.container-allocation.expiry-interval-ms</name>
+  <value>1200000</value>
+    <description>
+    The expiry interval for a container
+    </description>
+</property>
+
+<property>
+  <name>yarn.client.nodemanager-client-async.thread-pool-max-size</name>
+  <value>250</value>
+    <description>Max number of threads in NMClientAsync to process container
+    management events</description>
+</property>
+
+<property>
+  <name>yarn.client.nodemanager-connect.retry-interval-ms</name>
+  <value>10000</value>
+    <description>Time interval between each attempt to connect to NM</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.recovery.compaction-interval-secs</name>
+  <value>3600</value>
+    <description>The time in seconds between full compactions of the NM state
+    database. Setting the interval to zero disables the full compaction
+    cycles.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.writer.class</name>
+  <value>org.apache.hadoop.yarn.server.timelineservice.storage.HBaseTimelineWriterImpl</value>
+    <description>
+      Storage implementation ATS v2 will use for the TimelineWriter service.
+    </description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.client-server.address</name>
+  <value>0.0.0.0:8045</value>
+    <description>The address of the client interface in the SCM
+    (shared cache manager)</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.numa-awareness.numactl.cmd</name>
+  <value>/usr/bin/numactl</value>
+    <description>
+    The numactl command path which controls NUMA policy for processes or
+    shared memory.
+    </description>
+</property>
+
+</configuration>

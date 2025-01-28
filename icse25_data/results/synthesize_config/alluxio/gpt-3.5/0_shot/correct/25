@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.fuse.logging.threshold', 'alluxio.user.streaming.writer.close.timeout', 'alluxio.web.refresh.interval', 'alluxio.underfs.s3.intermediate.upload.clean.age'], 'reason': ['Invalid value format. It should be in milliseconds.', 'Invalid value format. It should be in milliseconds.', 'Invalid value format. It should be in milliseconds.', 'Invalid value format. It should be in milliseconds.', 'Invalid value format. It should be in milliseconds.']}
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.fuse.logging.threshold', 'alluxio.user.streaming.writer.close.timeout', 'alluxio.web.refresh.interval'], 'reason': ['Invalid value format. Expected format: <number>[ms|s|min|hour|day]', 'Invalid value format. Expected format: <number>[ms|s|min|hour|day]', 'Invalid value format. Expected format: <number>[ms|s|min|hour|day]', 'Invalid value format. Expected format: <number>[ms|s|min|hour|day]']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.fuse.logging.threshold', 'alluxio.user.streaming.writer.close.timeout', 'alluxio.web.refresh.interval', 'alluxio.underfs.s3.intermediate.upload.clean.age'], 'reason': ['Invalid value format for fs.cos.socket.timeout. It should be in milliseconds.', 'Invalid value format for alluxio.fuse.logging.threshold. It should be in milliseconds.', 'Invalid value format for alluxio.user.streaming.writer.close.timeout. It should be in milliseconds.', 'Invalid value format for alluxio.web.refresh.interval. It should be in milliseconds.', 'Invalid value format for alluxio.underfs.s3.intermediate.upload.clean.age. It should be in milliseconds.']}
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.fuse.logging.threshold', 'alluxio.user.streaming.writer.close.timeout', 'alluxio.web.refresh.interval'], 'reason': ['Invalid value format. Expected format: <number>[ms|s|min|hour|day]', 'Invalid value format. Expected format: <number>[ms|s|min|hour|day]', 'Invalid value format. Expected format: <number>[ms|s|min|hour|day]', 'Invalid value format. Expected format: <number>[ms|s|min|hour|day]']}
+
+{'hasError': True, 'errParameter': ['fs.cos.socket.timeout', 'alluxio.fuse.logging.threshold', 'alluxio.user.streaming.writer.close.timeout', 'alluxio.web.refresh.interval'], 'reason': ['Invalid value format for fs.cos.socket.timeout. It should be in milliseconds.', 'Invalid value format for alluxio.fuse.logging.threshold. It should be in milliseconds.', 'Invalid value format for alluxio.user.streaming.writer.close.timeout. It should be in milliseconds.', 'Invalid value format for alluxio.web.refresh.interval. It should be in milliseconds.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: fs.cos.socket.timeout	alluxio.fuse.logging.threshold	alluxio.user.streaming.writer.close.timeout	alluxio.web.refresh.interval
+[Ciri] Reason for fs.cos.socket.timeout: Invalid value format for fs.cos.socket.timeout. It should be in milliseconds.
+[Ciri] Reason for alluxio.fuse.logging.threshold: Invalid value format for alluxio.fuse.logging.threshold. It should be in milliseconds.
+[Ciri] Reason for alluxio.user.streaming.writer.close.timeout: Invalid value format. Expected format: <number>[ms|s|min|hour|day]
+[Ciri] Reason for alluxio.web.refresh.interval: Invalid value format. Expected format: <number>[ms|s|min|hour|day]

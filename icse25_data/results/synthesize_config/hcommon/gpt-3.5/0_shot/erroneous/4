@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.crypto.buffer.size', 'hadoop.tags.system'], 'reason': ['The value for hadoop.security.crypto.buffer.size should be a valid integer representing the buffer size.', 'The property hadoop.tags.system has an incorrect usage field. It should not contain code snippets.']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.crypto.buffer.size', 'hadoop.tags.system', 'ipc.client.bind.wildcard.addr'], 'reason': ["Invalid value 'ciri/ciri' for property 'hadoop.security.crypto.buffer.size'. Expected a valid buffer size value.", "Missing 'usage' element for property 'hadoop.tags.system'.", "Invalid value 'true' for property 'ipc.client.bind.wildcard.addr'. Expected 'true' or 'false'."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.crypto.buffer.size', 'hadoop.tags.system', 'ipc.client.bind.wildcard.addr'], 'reason': ["Invalid value 'ciri/ciri' for property 'hadoop.security.crypto.buffer.size'. Expected a valid buffer size value.", "Property 'hadoop.tags.system' has an incorrect usage tag. The correct format should be within the description.", "Property 'ipc.client.bind.wildcard.addr' should not have a description with leading spaces."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.security.crypto.buffer.size	hadoop.tags.system	ipc.client.bind.wildcard.addr
+[Ciri] Reason for hadoop.security.crypto.buffer.size: Invalid value 'ciri/ciri' for property 'hadoop.security.crypto.buffer.size'. Expected a valid buffer size value.
+[Ciri] Reason for hadoop.tags.system: Property 'hadoop.tags.system' has an incorrect usage tag. The correct format should be within the description.
+[Ciri] Reason for ipc.client.bind.wildcard.addr: Invalid value 'true' for property 'ipc.client.bind.wildcard.addr'. Expected 'true' or 'false'.

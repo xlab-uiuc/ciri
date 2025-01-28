@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'hadoop.zk.acl'], 'reason': ['The property \'fs.ftp.timeout\' has an additional usage tag \'xmlPropsToSkipCompare.add("fs.ftp.timeout");\' which is not a standard configuration parameter.', "The property 'hadoop.zk.acl' has an incorrect value 'world:anyone:rwcda' for ACLs. The correct format should be 'scheme:id:permissions'."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'hadoop.caller.context.enabled'], 'reason': ['The property \'fs.ftp.timeout\' has an additional usage element \'xmlPropsToSkipCompare.add("fs.ftp.timeout");\' which is not a standard configuration parameter.', "The property 'hadoop.caller.context.enabled' has an additional whitespace before the description element."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'hadoop.zk.acl'], 'reason': ["The property 'fs.ftp.timeout' has an additional usage tag that is not standard in the configuration file.", "The property 'hadoop.zk.acl' has an extra space before the description tag."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.timeout	hadoop.zk.acl
+[Ciri] Reason for fs.ftp.timeout: The property 'fs.ftp.timeout' has an additional usage tag that is not standard in the configuration file.
+[Ciri] Reason for hadoop.zk.acl: The property 'hadoop.zk.acl' has an incorrect value 'world:anyone:rwcda' for ACLs. The correct format should be 'scheme:id:permissions'.

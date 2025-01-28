@@ -1,0 +1,21 @@
+Wrong shot number:
+[6, 8, 4]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'quota-backend-bytes', 'election-timeout', 'logger'], 'reason': ["The property 'max-wals' is not a valid configuration parameter for etcd version 3.5.0.", "The property 'quota-backend-bytes' is not a valid configuration parameter for etcd version 3.5.0.", "The property 'election-timeout' is not a valid configuration parameter for etcd version 3.5.0.", "The property 'logger' is not a valid configuration parameter for etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['max-wals', 'quota-backend-bytes', 'election-timeout', 'logger'], 'reason': ["The property 'max-wals' is not a valid configuration parameter in etcd version 3.5.0.", "The property 'quota-backend-bytes' is not a valid configuration parameter in etcd version 3.5.0.", "The property 'election-timeout' is not a valid configuration parameter in etcd version 3.5.0.", "The property 'logger' is not a valid configuration parameter in etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['max-wals', 'quota-backend-bytes', 'election-timeout', 'logger'], 'reason': ["The property 'max-wals' is not a valid configuration parameter for etcd version 3.5.0.", "The property 'quota-backend-bytes' is not a valid configuration parameter for etcd version 3.5.0.", "The property 'election-timeout' is not a valid configuration parameter for etcd version 3.5.0.", "The property 'logger' is not a valid configuration parameter for etcd version 3.5.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: max-wals	quota-backend-bytes	election-timeout	logger
+[Ciri] Reason for max-wals: The property 'max-wals' is not a valid configuration parameter for etcd version 3.5.0.
+[Ciri] Reason for quota-backend-bytes: The property 'quota-backend-bytes' is not a valid configuration parameter in etcd version 3.5.0.
+[Ciri] Reason for election-timeout: The property 'election-timeout' is not a valid configuration parameter for etcd version 3.5.0.
+[Ciri] Reason for logger: The property 'logger' is not a valid configuration parameter in etcd version 3.5.0.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.log.config.report.heartbeat.interval', 'alluxio.user.network.rpc.max.connections', 'alluxio.worker.tieredstore.level1.dirs.path', 'alluxio.underfs.cleanup.interval', 'alluxio.network.connection.health.check.timeout', 'alluxio.master.backup.state.lock.forced.duration'], 'reason': ['The value of alluxio.master.log.config.report.heartbeat.interval is invalid, it should be a positive integer', 'The value of alluxio.user.network.rpc.max.connections is invalid, it should be a positive integer', 'The value of alluxio.worker.tieredstore.level1.dirs.path is invalid, it should be a comma-separated list of paths', 'The value of alluxio.underfs.cleanup.interval is invalid, it should be a positive integer', 'The value of alluxio.network.connection.health.check.timeout is invalid, it should be a positive integer', 'The value of alluxio.master.backup.state.lock.forced.duration is invalid, it should be a positive integer']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: alluxio.master.log.config.report.heartbeat.interval	alluxio.user.network.rpc.max.connections	alluxio.worker.tieredstore.level1.dirs.path	alluxio.underfs.cleanup.interval	alluxio.network.connection.health.check.timeout	alluxio.master.backup.state.lock.forced.duration
+[Ciri] Reason for alluxio.master.log.config.report.heartbeat.interval: The value of alluxio.master.log.config.report.heartbeat.interval is invalid, it should be a positive integer
+[Ciri] Reason for alluxio.user.network.rpc.max.connections: The value of alluxio.user.network.rpc.max.connections is invalid, it should be a positive integer
+[Ciri] Reason for alluxio.worker.tieredstore.level1.dirs.path: The value of alluxio.worker.tieredstore.level1.dirs.path is invalid, it should be a comma-separated list of paths
+[Ciri] Reason for alluxio.underfs.cleanup.interval: The value of alluxio.underfs.cleanup.interval is invalid, it should be a positive integer
+[Ciri] Reason for alluxio.network.connection.health.check.timeout: The value of alluxio.network.connection.health.check.timeout is invalid, it should be a positive integer
+[Ciri] Reason for alluxio.master.backup.state.lock.forced.duration: The value of alluxio.master.backup.state.lock.forced.duration is invalid, it should be a positive integer

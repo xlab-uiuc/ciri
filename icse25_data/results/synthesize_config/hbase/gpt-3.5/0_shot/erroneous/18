@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit', 'hbase.server.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.column.max.version'], 'reason': ['hbase.regionserver.regionSplitLimit value should be a positive integer.', 'hbase.server.keyvalue.maxsize value should be a positive integer.', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min value should be a positive integer.', 'hbase.column.max.version value should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit', 'hbase.server.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.column.max.version'], 'reason': ['hbase.regionserver.regionSplitLimit has a negative value (-100) which is not valid. It should be a positive integer.', 'hbase.server.keyvalue.maxsize has a value of 5242880 which is in bytes. The description mentions the default value is 10MB, so this value should be in MB.', "hbase.hregion.percolumnfamilyflush.size.lower.bound.min has a value of 8388608 which is in bytes. The description mentions the default value is calculated based on 'hbase.hregion.memstore.flush.size / column_family_number' which is in MB. This value should be in MB.", 'hbase.column.max.version has a value of 0 which is not a valid number of versions to keep. It should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit', 'hbase.server.keyvalue.maxsize', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.column.max.version'], 'reason': ['hbase.regionserver.regionSplitLimit value should be a positive integer.', 'hbase.server.keyvalue.maxsize value should be a positive integer.', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min value should be a positive integer.', 'hbase.column.max.version value should be a positive integer.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hbase.regionserver.regionSplitLimit	hbase.server.keyvalue.maxsize	hbase.hregion.percolumnfamilyflush.size.lower.bound.min	hbase.column.max.version
+[Ciri] Reason for hbase.regionserver.regionSplitLimit: hbase.regionserver.regionSplitLimit value should be a positive integer.
+[Ciri] Reason for hbase.server.keyvalue.maxsize: hbase.server.keyvalue.maxsize value should be a positive integer.
+[Ciri] Reason for hbase.hregion.percolumnfamilyflush.size.lower.bound.min: hbase.hregion.percolumnfamilyflush.size.lower.bound.min value should be a positive integer.
+[Ciri] Reason for hbase.column.max.version: hbase.column.max.version value should be a positive integer.

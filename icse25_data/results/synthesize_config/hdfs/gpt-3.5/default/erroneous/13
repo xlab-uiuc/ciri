@@ -1,0 +1,18 @@
+Wrong shot number:
+[15, 7, 12]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir'], 'reason': ["The property 'dfs.datanode.data.dir' has an invalid value 'file///'. The correct format should be a comma-delimited list of directories with storage types tagged."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir'], 'reason': ["The property 'dfs.datanode.data.dir' has an incorrect value. It should be in the format 'file:///path/to/data/dir'."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.data.dir'], 'reason': ["The property 'dfs.datanode.data.dir' has an incorrect value. The correct format should be 'file:///path/to/directory'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.data.dir
+[Ciri] Reason for dfs.datanode.data.dir: The property 'dfs.datanode.data.dir' has an incorrect value. The correct format should be 'file:///path/to/directory'.

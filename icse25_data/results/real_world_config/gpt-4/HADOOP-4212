@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 14, 3]
+
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.log-slow-lookups.threshold.ms', 'adl.http.timeout'], 'reason': ["The property 'hadoop.security.dns.log-slow-lookups.threshold.ms' contains leading whitespace which may cause it to be improperly loaded.", "The value of 'adl.http.timeout' should not be 0, as a base timeout of zero or less may cause indefinite waits in some configurations."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.dns.log-slow-lookups.threshold.ms	adl.http.timeout
+[Ciri] Reason for hadoop.security.dns.log-slow-lookups.threshold.ms: The property 'hadoop.security.dns.log-slow-lookups.threshold.ms' contains leading whitespace which may cause it to be improperly loaded.
+[Ciri] Reason for adl.http.timeout: The value of 'adl.http.timeout' should not be 0, as a base timeout of zero or less may cause indefinite waits in some configurations.

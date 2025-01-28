@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dir', 'cluster-announce-tls-port', 'acllog-max-len'], 'reason': ["The 'dir' parameter should not contain multiple consecutive slashes. It should be 'dir=tmp/staging'.", "The 'cluster-announce-tls-port' parameter is not available in Redis 7.0.0. It was introduced in Redis 6.2.", "The 'acllog-max-len' parameter is not a valid configuration directive in Redis 7.0.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dir	cluster-announce-tls-port	acllog-max-len
+[Ciri] Reason for dir: The 'dir' parameter should not contain multiple consecutive slashes. It should be 'dir=tmp/staging'.
+[Ciri] Reason for cluster-announce-tls-port: The 'cluster-announce-tls-port' parameter is not available in Redis 7.0.0. It was introduced in Redis 6.2.
+[Ciri] Reason for acllog-max-len: The 'acllog-max-len' parameter is not a valid configuration directive in Redis 7.0.0.

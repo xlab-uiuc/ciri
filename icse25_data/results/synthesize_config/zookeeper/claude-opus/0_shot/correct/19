@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'maxSessionTimeout', 'autopurge.purgeInterval'], 'reason': ['minSessionTimeout should be greater than 0. Setting it to 0 means the session can timeout immediately.', 'maxSessionTimeout should be greater than 0. Setting it to -1 disables session timeout.', 'autopurge.purgeInterval should be a positive integer representing the time in hours. Setting it to -1 disables auto purging.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: minSessionTimeout	maxSessionTimeout	autopurge.purgeInterval
+[Ciri] Reason for minSessionTimeout: minSessionTimeout should be greater than 0. Setting it to 0 means the session can timeout immediately.
+[Ciri] Reason for maxSessionTimeout: maxSessionTimeout should be greater than 0. Setting it to -1 disables session timeout.
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval should be a positive integer representing the time in hours. Setting it to -1 disables auto purging.

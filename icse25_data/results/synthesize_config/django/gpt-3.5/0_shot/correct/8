@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_FAILURE_VIEW', 'NUMBER_GROUPING', 'SERVER_EMAIL'], 'reason': ['CSRF_FAILURE_VIEW is not a valid view function for CSRF failure handling.', 'NUMBER_GROUPING should be a positive integer greater than 0.', 'SERVER_EMAIL should be a valid email address.']}
+
+{'hasError': True, 'errParameter': ['CSRF_FAILURE_VIEW', 'PREPEND_WWW', 'NUMBER_GROUPING', 'SERVER_EMAIL'], 'reason': ['CSRF_FAILURE_VIEW should be a string pointing to the view function to be used when a CSRF failure occurs.', "PREPEND_WWW should be a boolean value (True/False) to control whether URLs should be served with the 'www.' prefix.", 'NUMBER_GROUPING should be an integer specifying the number of digits to group together in numbers.', 'SERVER_EMAIL should be a valid email address for error notifications.']}
+
+{'hasError': True, 'errParameter': ['CSRF_FAILURE_VIEW', 'NUMBER_GROUPING', 'SERVER_EMAIL'], 'reason': ['CSRF_FAILURE_VIEW is not a valid view function.', 'NUMBER_GROUPING should be a positive integer.', 'SERVER_EMAIL should be a valid email address.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: CSRF_FAILURE_VIEW	NUMBER_GROUPING	SERVER_EMAIL
+[Ciri] Reason for CSRF_FAILURE_VIEW: CSRF_FAILURE_VIEW is not a valid view function.
+[Ciri] Reason for NUMBER_GROUPING: NUMBER_GROUPING should be a positive integer greater than 0.
+[Ciri] Reason for SERVER_EMAIL: SERVER_EMAIL should be a valid email address.

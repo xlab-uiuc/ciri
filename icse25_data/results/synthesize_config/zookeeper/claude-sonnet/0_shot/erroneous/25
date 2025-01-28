@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'electionAlg', 'syncLimit'], 'reason': ['The secureClientPortAddress property should be a valid IP address or hostname, not -1.0.0.0.', 'The electionAlg value of 6 is not a valid election algorithm. Valid values are 0 (LeaderElection), 1 (AuthFastLeaderElection), 2 (AuthFastLeaderElection), and 3 (AuthFastLeaderElection).', 'The syncLimit value should be greater than 1 for production environments to ensure data consistency across the ensemble.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: secureClientPortAddress	electionAlg	syncLimit
+[Ciri] Reason for secureClientPortAddress: The secureClientPortAddress property should be a valid IP address or hostname, not -1.0.0.0.
+[Ciri] Reason for electionAlg: The electionAlg value of 6 is not a valid election algorithm. Valid values are 0 (LeaderElection), 1 (AuthFastLeaderElection), 2 (AuthFastLeaderElection), and 3 (AuthFastLeaderElection).
+[Ciri] Reason for syncLimit: The syncLimit value should be greater than 1 for production environments to ensure data consistency across the ensemble.

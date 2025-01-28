@@ -1,0 +1,16 @@
+Wrong shot number:
+[6]
+
+Correct shot number:
+[8, 9, 16, 4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.attempts.maximum', 'fs.azure.secure.mode', 'fs.azure.local.sas.key.mode'], 'reason': ["The property 'fs.s3a.attempts.maximum' has a value of '10' which may need adjustment based on specific requirements.", "The property 'fs.azure.secure.mode' has a value of 'false' which may not be suitable for secure communication with Azure storage.", "The property 'fs.azure.local.sas.key.mode' has a value of 'true' which may need to be reviewed based on the desired SAS key generation method."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.s3a.attempts.maximum	fs.azure.secure.mode	fs.azure.local.sas.key.mode
+[Ciri] Reason for fs.s3a.attempts.maximum: The property 'fs.s3a.attempts.maximum' has a value of '10' which may need adjustment based on specific requirements.
+[Ciri] Reason for fs.azure.secure.mode: The property 'fs.azure.secure.mode' has a value of 'false' which may not be suitable for secure communication with Azure storage.
+[Ciri] Reason for fs.azure.local.sas.key.mode: The property 'fs.azure.local.sas.key.mode' has a value of 'true' which may need to be reviewed based on the desired SAS key generation method.

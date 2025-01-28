@@ -1,0 +1,19 @@
+Wrong shot number:
+[9, 1, 2]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.redundancy.interval.seconds', 'dfs.namenode.checkpoint.period'], 'reason': ["The property 'dfs.namenode.redundancy.interval.seconds' has the value '1s' which is not of the correct type Integer.", "The property 'dfs.namenode.checkpoint.period' has the value '7200s' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.redundancy.interval.seconds', 'dfs.namenode.checkpoint.period'], 'reason': ["The property 'dfs.namenode.redundancy.interval.seconds' has the value '1s' which uses an incorrect unit.", "The property 'dfs.namenode.checkpoint.period' has the value '7200s' which uses an incorrect unit."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.redundancy.interval.seconds', 'dfs.namenode.checkpoint.period'], 'reason': ["The property 'dfs.namenode.redundancy.interval.seconds' has the value '1s' which uses an incorrect unit.", "The property 'dfs.namenode.checkpoint.period' has the value '7200s' which uses an incorrect unit."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.redundancy.interval.seconds	dfs.namenode.checkpoint.period
+[Ciri] Reason for dfs.namenode.redundancy.interval.seconds: The property 'dfs.namenode.redundancy.interval.seconds' has the value '1s' which uses an incorrect unit.
+[Ciri] Reason for dfs.namenode.checkpoint.period: The property 'dfs.namenode.checkpoint.period' has the value '7200s' which uses an incorrect unit.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.fileio.profiling.sampling.percentage', 'dfs.client.deadnode.detection.probe.deadnode.threads', 'dfs.namenode.storageinfo.defragment.timeout.ms'], 'reason': ['The value of dfs.datanode.fileio.profiling.sampling.percentage should be between 0 and 100, but it is set to -1.', 'The property dfs.client.deadnode.detection.probe.deadnode.threads is not a valid HDFS configuration property in version 3.3.0.', 'The property dfs.namenode.storageinfo.defragment.timeout.ms is not a valid HDFS configuration property in version 3.3.0.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.datanode.fileio.profiling.sampling.percentage	dfs.client.deadnode.detection.probe.deadnode.threads	dfs.namenode.storageinfo.defragment.timeout.ms
+[Ciri] Reason for dfs.datanode.fileio.profiling.sampling.percentage: The value of dfs.datanode.fileio.profiling.sampling.percentage should be between 0 and 100, but it is set to -1.
+[Ciri] Reason for dfs.client.deadnode.detection.probe.deadnode.threads: The property dfs.client.deadnode.detection.probe.deadnode.threads is not a valid HDFS configuration property in version 3.3.0.
+[Ciri] Reason for dfs.namenode.storageinfo.defragment.timeout.ms: The property dfs.namenode.storageinfo.defragment.timeout.ms is not a valid HDFS configuration property in version 3.3.0.

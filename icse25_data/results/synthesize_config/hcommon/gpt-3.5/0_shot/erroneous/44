@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'ipc.[port_number].weighted-cost.response'], 'reason': ['Invalid IP address format in hadoop.security.dns.nameserver property.', 'Parameter name contains placeholder [port_number] which should be replaced with an actual port number in ipc.[port_number].weighted-cost.response property.']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'ipc.[port_number].weighted-cost.response'], 'reason': ['Invalid IP address format in hadoop.security.dns.nameserver property.', 'Parameter name contains placeholder [port_number] in ipc.[port_number].weighted-cost.response property.']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.nameserver', 'ipc.[port_number].weighted-cost.response'], 'reason': ["Invalid IP address '0.0.256.0' provided for hadoop.security.dns.nameserver. IP address octets should be in the range 0-255.", "Parameter name 'ipc.[port_number].weighted-cost.response' contains special characters '[', ']', and '.' which are not allowed in property names."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.dns.nameserver	ipc.[port_number].weighted-cost.response
+[Ciri] Reason for hadoop.security.dns.nameserver: Invalid IP address format in hadoop.security.dns.nameserver property.
+[Ciri] Reason for ipc.[port_number].weighted-cost.response: Parameter name contains placeholder [port_number] which should be replaced with an actual port number in ipc.[port_number].weighted-cost.response property.

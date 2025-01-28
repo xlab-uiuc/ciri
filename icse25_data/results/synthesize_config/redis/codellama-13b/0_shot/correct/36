@@ -1,0 +1,34 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-session-caching', 'repl-diskless-sync-max-replicas', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['tls-session-caching is not a valid configuration directive.', 'repl-diskless-sync-max-replicas is not a valid configuration directive.', 'dbfilename is not a valid configuration directive.', 'hll-sparse-max-bytes is not a valid configuration directive.', 'proto-max-bulk-len is not a valid configuration directive.', 'aof-rewrite-incremental-fsync is not a valid configuration directive.']}
+
+{'hasError': True, 'errParameter': ['dir', 'tls-session-caching', 'repl-diskless-sync-max-replicas', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['dir is not a valid directory', 'tls-session-caching is not a valid value', 'repl-diskless-sync-max-replicas is not a valid value', 'dbfilename is not a valid file name', 'hll-sparse-max-bytes is not a valid value', 'proto-max-bulk-len is not a valid value', 'aof-rewrite-incremental-fsync is not a valid value']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dir', 'tls-session-caching', 'repl-diskless-sync-max-replicas', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['dir is not a valid path', 'tls-session-caching is not a valid option', 'repl-diskless-sync-max-replicas is not a valid option', 'dbfilename is not a valid file name', 'hll-sparse-max-bytes is not a valid value', 'proto-max-bulk-len is not a valid value', 'aof-rewrite-incremental-fsync is not a valid option']}
+
+{'hasError': True, 'errParameter': ['dir', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['dir is not a valid directory', 'dbfilename is not a valid filename', 'hll-sparse-max-bytes is not a valid integer', 'proto-max-bulk-len is not a valid integer', 'aof-rewrite-incremental-fsync is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['dir', 'tls-session-caching', 'repl-diskless-sync-max-replicas', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['dir is not a valid directory', 'tls-session-caching is not a valid boolean', 'repl-diskless-sync-max-replicas is not a valid integer', 'hll-sparse-max-bytes is not a valid integer', 'proto-max-bulk-len is not a valid integer', 'aof-rewrite-incremental-fsync is not a valid boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-session-caching', 'repl-diskless-sync-max-replicas', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['tls-session-caching is not a valid configuration directive.', 'repl-diskless-sync-max-replicas is not a valid configuration directive.', 'dbfilename is not a valid configuration directive.', 'hll-sparse-max-bytes is not a valid configuration directive.', 'proto-max-bulk-len is not a valid configuration directive.', 'aof-rewrite-incremental-fsync is not a valid configuration directive.']}
+
+{'hasError': True, 'errParameter': ['dir', 'tls-session-caching', 'repl-diskless-sync-max-replicas', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['dir is not a valid directory', 'tls-session-caching is not a valid option', 'repl-diskless-sync-max-replicas is not a valid option', 'dbfilename is not a valid file', 'hll-sparse-max-bytes is not a valid option', 'proto-max-bulk-len is not a valid option', 'aof-rewrite-incremental-fsync is not a valid option']}
+
+{'hasError': True, 'errParameter': ['dir', 'tls-session-caching', 'repl-diskless-sync-max-replicas', 'dbfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len', 'aof-rewrite-incremental-fsync'], 'reason': ['dir is not a valid directory', 'tls-session-caching is not a valid boolean', 'repl-diskless-sync-max-replicas is not a valid integer', 'dbfilename is not a valid filename', 'hll-sparse-max-bytes is not a valid integer', 'proto-max-bulk-len is not a valid integer', 'aof-rewrite-incremental-fsync is not a valid boolean']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: dir	tls-session-caching	repl-diskless-sync-max-replicas	dbfilename	hll-sparse-max-bytes	proto-max-bulk-len	aof-rewrite-incremental-fsync
+[Ciri] Reason for dir: dir is not a valid directory
+[Ciri] Reason for tls-session-caching: tls-session-caching is not a valid option
+[Ciri] Reason for repl-diskless-sync-max-replicas: repl-diskless-sync-max-replicas is not a valid integer
+[Ciri] Reason for dbfilename: dbfilename is not a valid filename
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes is not a valid option
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len is not a valid integer
+[Ciri] Reason for aof-rewrite-incremental-fsync: aof-rewrite-incremental-fsync is not a valid boolean

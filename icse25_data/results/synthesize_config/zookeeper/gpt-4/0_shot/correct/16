@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'localSessionsUpgradingEnabled', 'quorum.auth.learner.saslLoginContext', 'quorum.auth.serverRequireSasl'], 'reason': ["The 'standaloneEnabled' parameter is not applicable in Zookeeper version 3.7.0. For enabling standalone mode, use 'standaloneModeEnabled'.", "The 'localSessionsUpgradingEnabled' parameter is not recognized. It seems to be a misconfiguration or typo.", "The 'quorum.auth.learner.saslLoginContext' parameter is incorrect. The correct parameter for setting the SASL login context for quorum learners is 'quorumLearner.saslLoginContext'.", "The 'quorum.auth.serverRequireSasl' parameter is incorrect. The correct parameter for requiring SASL authentication for quorum communication is 'quorum.serverRequireSasl'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: standaloneEnabled	localSessionsUpgradingEnabled	quorum.auth.learner.saslLoginContext	quorum.auth.serverRequireSasl
+[Ciri] Reason for standaloneEnabled: The 'standaloneEnabled' parameter is not applicable in Zookeeper version 3.7.0. For enabling standalone mode, use 'standaloneModeEnabled'.
+[Ciri] Reason for localSessionsUpgradingEnabled: The 'localSessionsUpgradingEnabled' parameter is not recognized. It seems to be a misconfiguration or typo.
+[Ciri] Reason for quorum.auth.learner.saslLoginContext: The 'quorum.auth.learner.saslLoginContext' parameter is incorrect. The correct parameter for setting the SASL login context for quorum learners is 'quorumLearner.saslLoginContext'.
+[Ciri] Reason for quorum.auth.serverRequireSasl: The 'quorum.auth.serverRequireSasl' parameter is incorrect. The correct parameter for requiring SASL authentication for quorum communication is 'quorum.serverRequireSasl'.

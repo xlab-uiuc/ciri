@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.hdfs.configuration.version</name>
+  <value>2</value>
+  <description>version of this configuration file</description>
+</property>
+
+<property>
+  <name>dfs.client.https.need-auth</name>
+  <value>true</value>
+  <description>Whether SSL client certificate authentication is required
+  </description>
+</property>
+
+<property>
+  <name>dfs.default.chunk.view.size</name>
+  <value>9.9</value>
+  <description>The number of bytes to view for a file on the browser.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.max-corrupt-file-blocks-returned</name>
+  <value>100</value>
+  <description>
+      The maximum number of corrupt file blocks listed by NameNode Web UI,
+      JMX and other client request.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock</name>
+  <value>2000</value>
+  <description>
+    When loading blocks into the replication queue, release the namenode write
+    lock after the defined number of blocks have been processed.
+  </description>
+</property>
+
+<property>
+  <name>dfs.image.parallel.threads</name>
+  <value>4</value>
+  <description>
+        The number of threads to use when dfs.image.parallel.load is
+        enabled. This setting should be less than
+        dfs.image.parallel.target.sections. The optimal number of
+        threads will depend on the hardware and environment.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.hostname</name>
+  <value>127.0.0.1</value>
+  <description>
+    Optional.  The hostname for the Datanode containing this
+    configuration file.  Will be different for each machine.
+    Defaults to current hostname.
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.http.read.timeout.ms</name>
+  <value>120000</value>
+  <description>
+    Timeout in milliseconds when reading from a HTTP connection from remote
+    journals.
+  </description>
+</property>
+
+</configuration>

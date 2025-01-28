@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.mount.table.root.shared', 'alluxio.underfs.hdfs.remote', 'alluxio.job.master.worker.heartbeat.interval', 'alluxio.underfs.gcs.version', 'alluxio.master.backup.state.lock.interrupt.cycle.interval', 'alluxio.job.worker.threadpool.size', 'alluxio.worker.data.folder', 'alluxio.underfs.s3.intermediate.upload.clean.age'], 'reason': ['Invalid property for Alluxio version 2.5.0', 'Invalid property for Alluxio version 2.5.0', 'Invalid property for Alluxio version 2.5.0', 'Invalid property for Alluxio version 2.5.0', 'Invalid property for Alluxio version 2.5.0', 'Invalid property for Alluxio version 2.5.0', 'Invalid property for Alluxio version 2.5.0', 'Invalid property for Alluxio version 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.worker.heartbeat.interval', 'alluxio.underfs.gcs.version', 'alluxio.master.backup.state.lock.interrupt.cycle.interval', 'alluxio.job.worker.threadpool.size', 'alluxio.worker.data.folder', 'alluxio.underfs.s3.intermediate.upload.clean.age'], 'reason': ["Invalid time unit 'sec' for property 'alluxio.job.master.worker.heartbeat.interval'. Use valid time units like 'ms', 's', 'm', 'h', 'd'.", "Invalid value '1' for property 'alluxio.underfs.gcs.version'. It should be a string value.", "Invalid time unit 'sec' for property 'alluxio.master.backup.state.lock.interrupt.cycle.interval'. Use valid time units like 'ms', 's', 'm', 'h', 'd'.", "Invalid value '10' for property 'alluxio.job.worker.threadpool.size'. It should be a string value.", "Invalid path format for property 'alluxio.worker.data.folder'. It should be a valid path.", "Invalid time unit 'day' for property 'alluxio.underfs.s3.intermediate.upload.clean.age'. Use valid time units like 'ms', 's', 'm', 'h', 'd'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.mount.table.root.shared', 'alluxio.underfs.hdfs.remote', 'alluxio.job.master.worker.heartbeat.interval', 'alluxio.underfs.gcs.version', 'alluxio.master.backup.state.lock.interrupt.cycle.interval', 'alluxio.job.worker.threadpool.size', 'alluxio.worker.data.folder', 'alluxio.underfs.s3.intermediate.upload.clean.age'], 'reason': ['Invalid property: alluxio.master.mount.table.root.shared', 'Invalid property: alluxio.underfs.hdfs.remote', 'Invalid property: alluxio.job.master.worker.heartbeat.interval', 'Invalid property: alluxio.underfs.gcs.version', 'Invalid property: alluxio.master.backup.state.lock.interrupt.cycle.interval', 'Invalid property: alluxio.job.worker.threadpool.size', 'Invalid property: alluxio.worker.data.folder', 'Invalid property: alluxio.underfs.s3.intermediate.upload.clean.age']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: alluxio.master.mount.table.root.shared	alluxio.underfs.hdfs.remote	alluxio.job.master.worker.heartbeat.interval	alluxio.underfs.gcs.version	alluxio.master.backup.state.lock.interrupt.cycle.interval	alluxio.job.worker.threadpool.size	alluxio.worker.data.folder	alluxio.underfs.s3.intermediate.upload.clean.age
+[Ciri] Reason for alluxio.master.mount.table.root.shared: Invalid property: alluxio.master.mount.table.root.shared
+[Ciri] Reason for alluxio.underfs.hdfs.remote: Invalid property for Alluxio version 2.5.0
+[Ciri] Reason for alluxio.job.master.worker.heartbeat.interval: Invalid property for Alluxio version 2.5.0
+[Ciri] Reason for alluxio.underfs.gcs.version: Invalid property: alluxio.underfs.gcs.version
+[Ciri] Reason for alluxio.master.backup.state.lock.interrupt.cycle.interval: Invalid property for Alluxio version 2.5.0
+[Ciri] Reason for alluxio.job.worker.threadpool.size: Invalid property for Alluxio version 2.5.0
+[Ciri] Reason for alluxio.worker.data.folder: Invalid property for Alluxio version 2.5.0
+[Ciri] Reason for alluxio.underfs.s3.intermediate.upload.clean.age: Invalid property: alluxio.underfs.s3.intermediate.upload.clean.age

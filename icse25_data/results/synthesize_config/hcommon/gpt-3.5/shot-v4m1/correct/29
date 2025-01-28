@@ -1,0 +1,15 @@
+Wrong shot number:
+[16]
+
+Correct shot number:
+[16, 12, 8, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'ha.zookeeper.parent-znode'], 'reason': ["The property 'fs.defaultFS' should not be set to 'file:///'. It is recommended to set it to the appropriate HDFS URI.", "The property 'ha.zookeeper.parent-znode' should not be set to '/valid/file2'. It is automatically appended with the nameservice ID, so manual configuration is not normally necessary."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.defaultFS	ha.zookeeper.parent-znode
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' should not be set to 'file:///'. It is recommended to set it to the appropriate HDFS URI.
+[Ciri] Reason for ha.zookeeper.parent-znode: The property 'ha.zookeeper.parent-znode' should not be set to '/valid/file2'. It is automatically appended with the nameservice ID, so manual configuration is not normally necessary.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.persistence.initial.wait.time', 'alluxio.master.persistence.max.total.wait.time', 'alluxio.master.backup.suspend.timeout'], 'reason': ["The time format for 'alluxio.user.file.persistence.initial.wait.time' is incorrect. It should be in milliseconds, not in days.", "The time format for 'alluxio.master.persistence.max.total.wait.time' is incorrect. It should be in milliseconds, not in days.", "The time format for 'alluxio.master.backup.suspend.timeout' is incorrect. It should be in milliseconds, not in minutes."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.user.file.persistence.initial.wait.time	alluxio.master.persistence.max.total.wait.time	alluxio.master.backup.suspend.timeout
+[Ciri] Reason for alluxio.user.file.persistence.initial.wait.time: The time format for 'alluxio.user.file.persistence.initial.wait.time' is incorrect. It should be in milliseconds, not in days.
+[Ciri] Reason for alluxio.master.persistence.max.total.wait.time: The time format for 'alluxio.master.persistence.max.total.wait.time' is incorrect. It should be in milliseconds, not in days.
+[Ciri] Reason for alluxio.master.backup.suspend.timeout: The time format for 'alluxio.master.backup.suspend.timeout' is incorrect. It should be in milliseconds, not in minutes.

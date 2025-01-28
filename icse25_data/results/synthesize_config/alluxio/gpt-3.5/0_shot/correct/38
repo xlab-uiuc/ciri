@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.worker.ufs.block.open.timeout', 'alluxio.master.backup.connect.interval.max', 'alluxio.user.block.read.retry.max.duration'], 'reason': ["Invalid value for property 'alluxio.user.network.max.inbound.message.size'. Value should be an integer representing size in bytes.", "Invalid value for property 'alluxio.worker.ufs.block.open.timeout'. Value should be in milliseconds.", "Invalid value for property 'alluxio.master.backup.connect.interval.max'. Value should be in milliseconds.", "Invalid value for property 'alluxio.user.block.read.retry.max.duration'. Value should be in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.master.backup.connect.interval.max'], 'reason': ['Invalid value. Value should be in bytes or use suffixes like KB, MB, GB, etc.', 'Invalid value. Value should be in milliseconds or use suffixes like ms, sec, min, etc.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.max.inbound.message.size', 'alluxio.master.backup.connect.interval.max'], 'reason': ["Invalid value for property 'alluxio.user.network.max.inbound.message.size'. Value should be specified in bytes.", "Invalid value for property 'alluxio.master.backup.connect.interval.max'. Value should be specified in milliseconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.max.inbound.message.size	alluxio.master.backup.connect.interval.max
+[Ciri] Reason for alluxio.user.network.max.inbound.message.size: Invalid value for property 'alluxio.user.network.max.inbound.message.size'. Value should be specified in bytes.
+[Ciri] Reason for alluxio.master.backup.connect.interval.max: Invalid value. Value should be in milliseconds or use suffixes like ms, sec, min, etc.

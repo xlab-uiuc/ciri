@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'effective_cache_size', 'autovacuum_work_mem', 'autovacuum_vacuum_insert_threshold'], 'reason': ['shared_buffers should be a multiple of 128MB', 'effective_cache_size should be a multiple of 128MB', 'autovacuum_work_mem should be a multiple of 1MB', 'autovacuum_vacuum_insert_threshold should be a multiple of 100']}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'effective_cache_size', 'autovacuum_work_mem', 'autovacuum_vacuum_insert_threshold'], 'reason': ['shared_buffers: Invalid value for shared_buffers. Must be a multiple of 8MB.', 'effective_cache_size: Invalid value for effective_cache_size. Must be a multiple of 8MB.', 'autovacuum_work_mem: Invalid value for autovacuum_work_mem. Must be a multiple of 8MB.', 'autovacuum_vacuum_insert_threshold: Invalid value for autovacuum_vacuum_insert_threshold. Must be a multiple of 100.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'autovacuum_vacuum_insert_threshold'], 'reason': ['autovacuum_work_mem should be a positive integer', 'autovacuum_vacuum_insert_threshold should be a positive integer']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: shared_buffers	effective_cache_size	autovacuum_work_mem	autovacuum_vacuum_insert_threshold
+[Ciri] Reason for shared_buffers: shared_buffers: Invalid value for shared_buffers. Must be a multiple of 8MB.
+[Ciri] Reason for effective_cache_size: effective_cache_size should be a multiple of 128MB
+[Ciri] Reason for autovacuum_work_mem: autovacuum_work_mem should be a multiple of 1MB
+[Ciri] Reason for autovacuum_vacuum_insert_threshold: autovacuum_vacuum_insert_threshold should be a multiple of 100

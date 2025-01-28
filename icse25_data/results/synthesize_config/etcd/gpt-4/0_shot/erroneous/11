@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['advertise-client-urls', 'auto-compaction-mode', 'proxy-read-timeout', 'proxy-dial-timeout'], 'reason': ["The 'advertise-client-urls' value should not start with 'file//'. It is expected to be a comma-separated list of URLs.", "The 'auto-compaction-mode' value 'periodic' is valid, but it requires 'auto-compaction-retention' to be set.", "The 'proxy-read-timeout' value is too low. It is recommended to be at least 5 seconds to avoid timeouts under normal conditions.", "The 'proxy-dial-timeout' value is in milliseconds, which might be too high. It is recommended to ensure this is an appropriate value for your setup."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: advertise-client-urls	auto-compaction-mode	proxy-read-timeout	proxy-dial-timeout
+[Ciri] Reason for advertise-client-urls: The 'advertise-client-urls' value should not start with 'file//'. It is expected to be a comma-separated list of URLs.
+[Ciri] Reason for auto-compaction-mode: The 'auto-compaction-mode' value 'periodic' is valid, but it requires 'auto-compaction-retention' to be set.
+[Ciri] Reason for proxy-read-timeout: The 'proxy-read-timeout' value is too low. It is recommended to be at least 5 seconds to avoid timeouts under normal conditions.
+[Ciri] Reason for proxy-dial-timeout: The 'proxy-dial-timeout' value is in milliseconds, which might be too high. It is recommended to ensure this is an appropriate value for your setup.

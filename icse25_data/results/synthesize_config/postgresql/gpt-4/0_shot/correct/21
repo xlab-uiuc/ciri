@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_prepared_transactions', 'effective_io_concurrency'], 'reason': ["Setting 'max_prepared_transactions' to 0 disables prepared transactions which might not be intended. It is recommended to set this to a value greater than zero if using prepared transactions.", "Setting 'effective_io_concurrency' to 0 disables asynchronous I/O which might reduce performance. Consider setting this to a higher value if your storage system supports asynchronous I/O."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: max_prepared_transactions	effective_io_concurrency
+[Ciri] Reason for max_prepared_transactions: Setting 'max_prepared_transactions' to 0 disables prepared transactions which might not be intended. It is recommended to set this to a value greater than zero if using prepared transactions.
+[Ciri] Reason for effective_io_concurrency: Setting 'effective_io_concurrency' to 0 disables asynchronous I/O which might reduce performance. Consider setting this to a higher value if your storage system supports asynchronous I/O.

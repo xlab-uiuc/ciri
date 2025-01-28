@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['data-dir'], 'reason': ['data-dir is a required parameter.']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'strict-reconfig-check'], 'reason': ['proxy-refresh-interval is not a valid parameter for etcd version 3.5.0', 'strict-reconfig-check is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'auto-tls'], 'reason': ['proxy-refresh-interval must be greater than 0', 'auto-tls must be true or false']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'strict-reconfig-check'], 'reason': ['proxy-refresh-interval is not a valid configuration parameter for etcd version 3.5.0', 'strict-reconfig-check is not a valid configuration parameter for etcd version 3.5.0']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['initial-cluster-state is not a valid parameter for etcd version 3.5.0. Please refer to the documentation for the correct parameters for this version.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval'], 'reason': ['proxy-refresh-interval is not a valid configuration for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval'], 'reason': ['proxy-refresh-interval is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['auto-tls', 'proxy-refresh-interval', 'strict-reconfig-check'], 'reason': ['auto-tls is not a valid parameter', 'proxy-refresh-interval is not a valid parameter', 'strict-reconfig-check is not a valid parameter']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: proxy-refresh-interval
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval is not a valid parameter for etcd version 3.5.0

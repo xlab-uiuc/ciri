@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_rotation_age'], 'reason': ['log_rotation_age is not a valid parameter for PostgreSQL version 13.0.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'port', 'wal_buffers', 'wal_keep_segments', 'wal_retrieve_retry_interval', 'deadlock_timeout', 'default_toast_compression', 'ssl_passphrase_command_supports_reload', 'log_rotation_age'], 'reason': ['listen_addresses should be a string', 'port should be an integer', 'wal_buffers should be an integer', 'wal_keep_segments should be an integer', 'wal_retrieve_retry_interval should be a string', 'deadlock_timeout should be a string', 'default_toast_compression should be a string', 'ssl_passphrase_command_supports_reload should be a boolean', 'log_rotation_age should be a string']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_rotation_age', 'deadlock_timeout', 'ssl_passphrase_command_supports_reload'], 'reason': ['log_rotation_age is not a valid value for this property.', 'deadlock_timeout is not a valid value for this property.', 'ssl_passphrase_command_supports_reload is not a valid value for this property.']}
+
+{'hasError': True, 'errParameter': ['log_rotation_age'], 'reason': ['log_rotation_age is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['ssl_passphrase_command_supports_reload', 'deadlock_timeout', 'wal_retrieve_retry_interval', 'default_toast_compression', 'gss_accept_delegation', 'log_rotation_age'], 'reason': ['ssl_passphrase_command_supports_reload is not a valid parameter for PostgreSQL 13.0', 'deadlock_timeout is not a valid parameter for PostgreSQL 13.0', 'wal_retrieve_retry_interval is not a valid parameter for PostgreSQL 13.0', 'default_toast_compression is not a valid parameter for PostgreSQL 13.0', 'gss_accept_delegation is not a valid parameter for PostgreSQL 13.0', 'log_rotation_age is not a valid parameter for PostgreSQL 13.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'ssl_passphrase_command_supports_reload', 'deadlock_timeout', 'wal_retrieve_retry_interval', 'default_toast_compression', 'gss_accept_delegation', 'log_rotation_age'], 'reason': ['listen_addresses should be a string', 'ssl_passphrase_command_supports_reload should be a boolean', 'deadlock_timeout should be a string', 'wal_retrieve_retry_interval should be a string', 'default_toast_compression should be a string', 'gss_accept_delegation should be a boolean', 'log_rotation_age should be a string']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_retrieve_retry_interval'], 'reason': ['listen_addresses is not a valid parameter for PostgreSQL 13.0', 'wal_retrieve_retry_interval is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_retrieve_retry_interval'], 'reason': ['listen_addresses is not a valid value', 'wal_retrieve_retry_interval is not a valid value']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: listen_addresses	wal_retrieve_retry_interval
+[Ciri] Reason for listen_addresses: listen_addresses is not a valid value
+[Ciri] Reason for wal_retrieve_retry_interval: wal_retrieve_retry_interval is not a valid parameter for PostgreSQL 13.0

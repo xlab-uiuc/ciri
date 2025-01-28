@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'initLimit', 'peerType', 'clientPort', 'quorum.auth.learnerRequireSasl'], 'reason': ['clientPortAddress must be a valid IP address', 'initLimit must be a positive integer', 'peerType must be either participant or observer', 'clientPort must be a positive integer', 'quorum.auth.learnerRequireSasl must be a boolean']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'clientPort'], 'reason': ['clientPortAddress is not a valid port', 'clientPort is not a valid port']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.learnerRequireSasl'], 'reason': ['quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0', 'quorum.auth.learnerRequireSasl is not a valid property for zookeeper version 3.7.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl'], 'reason': ["The property 'quorum.auth.enableSasl' is not a valid property for zookeeper version 3.7.0"]}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'quorum.auth.enableSasl', 'quorum.auth.learnerRequireSasl'], 'reason': ["clientPortAddress must be of type 'string', but was of type 'number'", "quorum.auth.enableSasl must be of type 'boolean', but was of type 'string'", "quorum.auth.learnerRequireSasl must be of type 'boolean', but was of type 'string'"]}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'clientPort'], 'reason': ['clientPortAddress should be in the format of ip:port', 'clientPort should be a number']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.learnerRequireSasl'], 'reason': ['quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0', 'quorum.auth.learnerRequireSasl is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress'], 'reason': ['clientPortAddress must be in the format of host:port']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress'], 'reason': ['clientPortAddress should be in the format of host:port']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: clientPortAddress
+[Ciri] Reason for clientPortAddress: clientPortAddress must be in the format of host:port

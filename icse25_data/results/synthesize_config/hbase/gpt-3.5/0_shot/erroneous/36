@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.column.max.version', 'hbase.dfs.client.read.shortcircuit.buffer.size'], 'reason': ["The property 'hbase.column.max.version' has a value of '0' which may not be appropriate as it is setting the default number of versions to keep. Consider setting a value greater than 0.", "The property 'hbase.dfs.client.read.shortcircuit.buffer.size' has a value of '65536' which may not be optimal. It is recommended to set a value based on your specific requirements and environment."]}
+
+{'hasError': True, 'errParameter': ['hbase.column.max.version', 'hbase.dfs.client.read.shortcircuit.buffer.size'], 'reason': ["The property 'hbase.column.max.version' should have a value greater than 0.", "The property 'hbase.dfs.client.read.shortcircuit.buffer.size' should have a value greater than 0."]}
+
+{'hasError': True, 'errParameter': ['hbase.column.max.version', 'hbase.http.max.threads', 'hbase.regionserver.handler.abort.on.error.percent'], 'reason': ["The property 'hbase.column.max.version' has a value of '0' which may not be appropriate for the intended functionality.", "The property 'hbase.http.max.threads' has a value of '32' which may not be optimal for the HTTP Server ThreadPool.", "The property 'hbase.regionserver.handler.abort.on.error.percent' has a value of '0.25' which may need further validation for the intended behavior."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.column.max.version	hbase.dfs.client.read.shortcircuit.buffer.size
+[Ciri] Reason for hbase.column.max.version: The property 'hbase.column.max.version' should have a value greater than 0.
+[Ciri] Reason for hbase.dfs.client.read.shortcircuit.buffer.size: The property 'hbase.dfs.client.read.shortcircuit.buffer.size' should have a value greater than 0.

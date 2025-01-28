@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 6, 3]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.dns.log-slow-lookups.enabled', 'io.erasurecode.codec.xor.rawcoders', 'fs.s3a.select.input.csv.comment.marker', 'fs.azure.local.sas.key.mode', 'ha.failover-controller.cli-check.rpc-timeout.ms', 'hadoop.caller.context.max.size'], 'reason': ["The property 'hadoop.security.dns.log-slow-lookups.enabled' has a value of '10' which may not be appropriate for the intended functionality.", "The property 'io.erasurecode.codec.xor.rawcoders' has a value of 'xor_native' which may need further validation.", "The property 'fs.s3a.select.input.csv.comment.marker' has a value of '#' which may not be suitable for the intended functionality.", "The property 'fs.azure.local.sas.key.mode' has a value of 'false' which may not align with the expected behavior.", "The property 'ha.failover-controller.cli-check.rpc-timeout.ms' has a value of '10000' which may need to be reviewed for the specific use case.", "The property 'hadoop.caller.context.max.size' has a value of '256' which may need to be verified for the desired configuration."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: hadoop.security.dns.log-slow-lookups.enabled	io.erasurecode.codec.xor.rawcoders	fs.s3a.select.input.csv.comment.marker	fs.azure.local.sas.key.mode	ha.failover-controller.cli-check.rpc-timeout.ms	hadoop.caller.context.max.size
+[Ciri] Reason for hadoop.security.dns.log-slow-lookups.enabled: The property 'hadoop.security.dns.log-slow-lookups.enabled' has a value of '10' which may not be appropriate for the intended functionality.
+[Ciri] Reason for io.erasurecode.codec.xor.rawcoders: The property 'io.erasurecode.codec.xor.rawcoders' has a value of 'xor_native' which may need further validation.
+[Ciri] Reason for fs.s3a.select.input.csv.comment.marker: The property 'fs.s3a.select.input.csv.comment.marker' has a value of '#' which may not be suitable for the intended functionality.
+[Ciri] Reason for fs.azure.local.sas.key.mode: The property 'fs.azure.local.sas.key.mode' has a value of 'false' which may not align with the expected behavior.
+[Ciri] Reason for ha.failover-controller.cli-check.rpc-timeout.ms: The property 'ha.failover-controller.cli-check.rpc-timeout.ms' has a value of '10000' which may need to be reviewed for the specific use case.
+[Ciri] Reason for hadoop.caller.context.max.size: The property 'hadoop.caller.context.max.size' has a value of '256' which may need to be verified for the desired configuration.

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-refresh-interval', 'listen-peer-urls'], 'reason': ['proxy-failure-wait must be greater than or equal to 1000', 'proxy-refresh-interval must be greater than or equal to 1000', 'listen-peer-urls must be a valid URL']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-refresh-interval'], 'reason': ['proxy-failure-wait must be a positive integer', 'proxy-refresh-interval must be a positive integer']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-refresh-interval', 'listen-peer-urls'], 'reason': ['proxy-failure-wait must be greater than or equal to 1000', 'proxy-refresh-interval must be greater than or equal to 1000', 'listen-peer-urls must be a valid URL']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-failure-wait	proxy-refresh-interval	listen-peer-urls
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait must be greater than or equal to 1000
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval must be greater than or equal to 1000
+[Ciri] Reason for listen-peer-urls: listen-peer-urls must be a valid URL

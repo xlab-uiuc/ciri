@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level1.dirs.path', 'alluxio.worker.bind.host', 'alluxio.worker.file.buffer.size', 'alluxio.worker.management.tier.align.reserved.bytes'], 'reason': ["Invalid value for property 'alluxio.worker.tieredstore.level1.dirs.path'. It should be a valid directory path.", "Invalid value for property 'alluxio.worker.bind.host'. It should be a valid IP address.", "Invalid value for property 'alluxio.worker.file.buffer.size'. Size should be specified in bytes.", "Invalid value for property 'alluxio.worker.management.tier.align.reserved.bytes'. Size should be specified in bytes."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level1.dirs.path', 'alluxio.worker.bind.host', 'alluxio.worker.file.buffer.size', 'alluxio.worker.management.tier.align.reserved.bytes'], 'reason': ["Invalid value '/valid/file2' for property 'alluxio.worker.tieredstore.level1.dirs.path'.", "Invalid value '0.0.0.0' for property 'alluxio.worker.bind.host'.", "Invalid value '10MB' for property 'alluxio.worker.file.buffer.size'.", "Invalid value '1GB' for property 'alluxio.worker.management.tier.align.reserved.bytes'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level1.dirs.path', 'alluxio.worker.bind.host', 'alluxio.worker.file.buffer.size', 'alluxio.worker.management.tier.align.reserved.bytes'], 'reason': ["Invalid value for property 'alluxio.worker.tieredstore.level1.dirs.path'. It should be a valid path.", "Invalid value for property 'alluxio.worker.bind.host'. It should be a valid IP address.", "Invalid value for property 'alluxio.worker.file.buffer.size'. Size should be specified in bytes.", "Invalid value for property 'alluxio.worker.management.tier.align.reserved.bytes'. Size should be specified in bytes."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.worker.tieredstore.level1.dirs.path	alluxio.worker.bind.host	alluxio.worker.file.buffer.size	alluxio.worker.management.tier.align.reserved.bytes
+[Ciri] Reason for alluxio.worker.tieredstore.level1.dirs.path: Invalid value '/valid/file2' for property 'alluxio.worker.tieredstore.level1.dirs.path'.
+[Ciri] Reason for alluxio.worker.bind.host: Invalid value for property 'alluxio.worker.bind.host'. It should be a valid IP address.
+[Ciri] Reason for alluxio.worker.file.buffer.size: Invalid value for property 'alluxio.worker.file.buffer.size'. Size should be specified in bytes.
+[Ciri] Reason for alluxio.worker.management.tier.align.reserved.bytes: Invalid value for property 'alluxio.worker.management.tier.align.reserved.bytes'. Size should be specified in bytes.

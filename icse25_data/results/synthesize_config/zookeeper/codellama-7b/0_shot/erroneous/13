@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPort', 'quorum.auth.kerberos.servicePrincipal', 'quorum.auth.enableSasl'], 'reason': ['clientPort must be an integer', 'quorum.auth.kerberos.servicePrincipal must be a string', 'quorum.auth.enableSasl must be a boolean']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'syncEnabled', 'standaloneEnabled', 'quorum.auth.kerberos.servicePrincipal', 'portUnification', 'quorum.auth.enableSasl'], 'reason': ['clientPort must be an integer', 'syncEnabled must be a boolean', 'standaloneEnabled must be a boolean', 'quorum.auth.kerberos.servicePrincipal must be a string', 'portUnification must be a boolean', 'quorum.auth.enableSasl must be a boolean']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal'], 'reason': ['The property quorum.auth.kerberos.servicePrincipal is not defined in the configuration file.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'autopurge.snapRetainCount', 'clientPort', 'syncEnabled', 'standaloneEnabled', 'quorum.auth.kerberos.servicePrincipal', 'portUnification', 'quorum.auth.enableSasl'], 'reason': ['autopurge.purgeInterval must be an integer', 'autopurge.snapRetainCount must be an integer', 'clientPort must be an integer', 'syncEnabled must be a boolean', 'standaloneEnabled must be a boolean', 'quorum.auth.kerberos.servicePrincipal must be a string', 'portUnification must be a boolean', 'quorum.auth.enableSasl must be a boolean']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.kerberos.servicePrincipal is not a valid property for zookeeper version 3.7.0', 'quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.kerberos.servicePrincipal', 'quorum.auth.enableSasl'], 'reason': ['quorum.auth.kerberos.servicePrincipal is not a valid property for zookeeper version 3.7.0', 'quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quorum.auth.kerberos.servicePrincipal	quorum.auth.enableSasl
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is not a valid property for zookeeper version 3.7.0
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl is not a valid property for zookeeper version 3.7.0

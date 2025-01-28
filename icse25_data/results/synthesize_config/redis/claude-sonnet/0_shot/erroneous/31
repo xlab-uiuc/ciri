@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-protocols', 'cluster-announce-port', 'repl-diskless-load', 'zset-max-listpack-entries'], 'reason': ["The 'tls-protocols' parameter is invalid. The valid options are 'TLSv1', 'TLSv1.1', 'TLSv1.2', and 'TLSv1.3'.", "The 'cluster-announce-port' parameter is not a valid configuration option in Redis 7.0.0.", "The 'repl-diskless-load' parameter is not a valid configuration option in Redis 7.0.0. The valid options are 'repl-diskless-sync' and 'repl-diskless-sync-delay'.", "The 'zset-max-listpack-entries' parameter is not a valid configuration option in Redis 7.0.0. The valid option is 'zset-max-listpack-value'."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: tls-protocols	cluster-announce-port	repl-diskless-load	zset-max-listpack-entries
+[Ciri] Reason for tls-protocols: The 'tls-protocols' parameter is invalid. The valid options are 'TLSv1', 'TLSv1.1', 'TLSv1.2', and 'TLSv1.3'.
+[Ciri] Reason for cluster-announce-port: The 'cluster-announce-port' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for repl-diskless-load: The 'repl-diskless-load' parameter is not a valid configuration option in Redis 7.0.0. The valid options are 'repl-diskless-sync' and 'repl-diskless-sync-delay'.
+[Ciri] Reason for zset-max-listpack-entries: The 'zset-max-listpack-entries' parameter is not a valid configuration option in Redis 7.0.0. The valid option is 'zset-max-listpack-value'.

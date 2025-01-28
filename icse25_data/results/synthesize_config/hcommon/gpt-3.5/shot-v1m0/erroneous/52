@@ -1,0 +1,17 @@
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.http.filter.initializers', 'hadoop.service.shutdown.timeout', 'fs.s3a.select.input.compression', 'fs.azure.secure.mode', 'ipc.[port_number].identity-provider.impl', 'hadoop.ssl.client.conf', 'fs.permissions.umask-mode'], 'reason': ["Property 'hadoop.http.filter.initializers' has an additional 'usage' element which is not a valid property.", "Property 'hadoop.service.shutdown.timeout' has an additional 'usage' element which is not a valid property.", "Property 'fs.s3a.select.input.compression' has an additional 'usage' element which is not a valid property.", "Property 'fs.azure.secure.mode' has an additional 'usage' element which is not a valid property.", "Property 'ipc.[port_number].identity-provider.impl' has an additional 'usage' element which is not a valid property.", "Property 'hadoop.ssl.client.conf' has an additional 'usage' element which is not a valid property.", "Property 'fs.permissions.umask-mode' has an additional 'usage' element which is not a valid property."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: hadoop.http.filter.initializers	hadoop.service.shutdown.timeout	fs.s3a.select.input.compression	fs.azure.secure.mode	ipc.[port_number].identity-provider.impl	hadoop.ssl.client.conf	fs.permissions.umask-mode
+[Ciri] Reason for hadoop.http.filter.initializers: Property 'hadoop.http.filter.initializers' has an additional 'usage' element which is not a valid property.
+[Ciri] Reason for hadoop.service.shutdown.timeout: Property 'hadoop.service.shutdown.timeout' has an additional 'usage' element which is not a valid property.
+[Ciri] Reason for fs.s3a.select.input.compression: Property 'fs.s3a.select.input.compression' has an additional 'usage' element which is not a valid property.
+[Ciri] Reason for fs.azure.secure.mode: Property 'fs.azure.secure.mode' has an additional 'usage' element which is not a valid property.
+[Ciri] Reason for ipc.[port_number].identity-provider.impl: Property 'ipc.[port_number].identity-provider.impl' has an additional 'usage' element which is not a valid property.
+[Ciri] Reason for hadoop.ssl.client.conf: Property 'hadoop.ssl.client.conf' has an additional 'usage' element which is not a valid property.
+[Ciri] Reason for fs.permissions.umask-mode: Property 'fs.permissions.umask-mode' has an additional 'usage' element which is not a valid property.

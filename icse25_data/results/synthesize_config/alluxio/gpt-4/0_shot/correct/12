@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.file.create.ttl.action', 'alluxio.worker.block.heartbeat.timeout', 'alluxio.user.file.replication.max', 'alluxio.proxy.s3.writetype', 'alluxio.job.master.worker.heartbeat.interval', 'alluxio.web.refresh.interval', 'alluxio.user.network.rpc.keepalive.timeout'], 'reason': ["The correct property is 'alluxio.user.file.writetype.default', not 'alluxio.user.file.create.ttl.action'.", "The 'alluxio.worker.block.heartbeat.timeout' property does not directly exist. It's likely intended to configure heartbeat timeout through other properties.", "The 'alluxio.user.file.replication.max' value of -2 is invalid. Valid values are -1 or a positive integer.", "The 'alluxio.proxy.s3.writetype' property is incorrect. It should be 'alluxio.proxy.s3.writeType'.", "The 'alluxio.job.master.worker.heartbeat.interval' format is incorrect. It should be specified in milliseconds without the 'sec' suffix.", "The 'alluxio.web.refresh.interval' format is incorrect. It should be specified in milliseconds without the 's' suffix.", "The 'alluxio.user.network.rpc.keepalive.timeout' format is incorrect. It should be specified in milliseconds without the 'sec' suffix."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: alluxio.user.file.create.ttl.action	alluxio.worker.block.heartbeat.timeout	alluxio.user.file.replication.max	alluxio.proxy.s3.writetype	alluxio.job.master.worker.heartbeat.interval	alluxio.web.refresh.interval	alluxio.user.network.rpc.keepalive.timeout
+[Ciri] Reason for alluxio.user.file.create.ttl.action: The correct property is 'alluxio.user.file.writetype.default', not 'alluxio.user.file.create.ttl.action'.
+[Ciri] Reason for alluxio.worker.block.heartbeat.timeout: The 'alluxio.worker.block.heartbeat.timeout' property does not directly exist. It's likely intended to configure heartbeat timeout through other properties.
+[Ciri] Reason for alluxio.user.file.replication.max: The 'alluxio.user.file.replication.max' value of -2 is invalid. Valid values are -1 or a positive integer.
+[Ciri] Reason for alluxio.proxy.s3.writetype: The 'alluxio.proxy.s3.writetype' property is incorrect. It should be 'alluxio.proxy.s3.writeType'.
+[Ciri] Reason for alluxio.job.master.worker.heartbeat.interval: The 'alluxio.job.master.worker.heartbeat.interval' format is incorrect. It should be specified in milliseconds without the 'sec' suffix.
+[Ciri] Reason for alluxio.web.refresh.interval: The 'alluxio.web.refresh.interval' format is incorrect. It should be specified in milliseconds without the 's' suffix.
+[Ciri] Reason for alluxio.user.network.rpc.keepalive.timeout: The 'alluxio.user.network.rpc.keepalive.timeout' format is incorrect. It should be specified in milliseconds without the 'sec' suffix.

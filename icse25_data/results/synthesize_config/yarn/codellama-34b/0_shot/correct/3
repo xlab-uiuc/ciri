@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.hostname', 'yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms', 'yarn.resourcemanager.delegation.token.max-lifetime', 'yarn.nodemanager.linux-container-executor.cgroups.mount', 'yarn.nodemanager.recovery.supervised', 'yarn.timeline-service.ttl-enable', 'yarn.nodemanager.pluggable-device-framework.enabled'], 'reason': ['yarn.resourcemanager.hostname should be set to a specific hostname, not 0.0.0.0', 'yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms should be set to a value between 10000 and 300000', 'yarn.resourcemanager.delegation.token.max-lifetime should be set to a value between 1209600000 and 2160000000', 'yarn.nodemanager.linux-container-executor.cgroups.mount should be set to false', 'yarn.nodemanager.recovery.supervised should be set to false', 'yarn.timeline-service.ttl-enable should be set to false', 'yarn.nodemanager.pluggable-device-framework.enabled should be set to true']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: yarn.resourcemanager.hostname	yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms	yarn.resourcemanager.delegation.token.max-lifetime	yarn.nodemanager.linux-container-executor.cgroups.mount	yarn.nodemanager.recovery.supervised	yarn.timeline-service.ttl-enable	yarn.nodemanager.pluggable-device-framework.enabled
+[Ciri] Reason for yarn.resourcemanager.hostname: yarn.resourcemanager.hostname should be set to a specific hostname, not 0.0.0.0
+[Ciri] Reason for yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms: yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms should be set to a value between 10000 and 300000
+[Ciri] Reason for yarn.resourcemanager.delegation.token.max-lifetime: yarn.resourcemanager.delegation.token.max-lifetime should be set to a value between 1209600000 and 2160000000
+[Ciri] Reason for yarn.nodemanager.linux-container-executor.cgroups.mount: yarn.nodemanager.linux-container-executor.cgroups.mount should be set to false
+[Ciri] Reason for yarn.nodemanager.recovery.supervised: yarn.nodemanager.recovery.supervised should be set to false
+[Ciri] Reason for yarn.timeline-service.ttl-enable: yarn.timeline-service.ttl-enable should be set to false
+[Ciri] Reason for yarn.nodemanager.pluggable-device-framework.enabled: yarn.nodemanager.pluggable-device-framework.enabled should be set to true

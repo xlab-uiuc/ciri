@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'sslQuorum', 'portUnification', 'sslQuorumReloadCertFiles', 'peerType', 'secureClientPort', 'tickTime', 'syncLimit'], 'reason': ['dataDir must be a valid directory', 'sslQuorum must be a boolean', 'portUnification must be a boolean', 'sslQuorumReloadCertFiles must be a boolean', 'peerType must be a string', 'secureClientPort must be a number', 'tickTime must be a number', 'syncLimit must be a number']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'sslQuorum', 'portUnification', 'sslQuorumReloadCertFiles', 'peerType', 'secureClientPort', 'tickTime', 'syncLimit'], 'reason': ['dataDir must be a valid directory', 'sslQuorum must be a boolean', 'portUnification must be a boolean', 'sslQuorumReloadCertFiles must be a boolean', 'peerType must be a valid peer type', 'secureClientPort must be a valid port number', 'tickTime must be a valid time in milliseconds', 'syncLimit must be a valid integer']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'sslQuorum', 'portUnification', 'sslQuorumReloadCertFiles', 'peerType', 'secureClientPort', 'tickTime', 'syncLimit'], 'reason': ['dataDir is not a valid directory', 'sslQuorum is not a valid boolean', 'portUnification is not a valid boolean', 'sslQuorumReloadCertFiles is not a valid boolean', 'peerType is not a valid peer type', 'secureClientPort is not a valid port number', 'tickTime is not a valid integer', 'syncLimit is not a valid integer']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dataDir	sslQuorum	portUnification	sslQuorumReloadCertFiles	peerType	secureClientPort	tickTime	syncLimit
+[Ciri] Reason for dataDir: dataDir must be a valid directory
+[Ciri] Reason for sslQuorum: sslQuorum must be a boolean
+[Ciri] Reason for portUnification: portUnification must be a boolean
+[Ciri] Reason for sslQuorumReloadCertFiles: sslQuorumReloadCertFiles must be a boolean
+[Ciri] Reason for peerType: peerType must be a valid peer type
+[Ciri] Reason for secureClientPort: secureClientPort must be a number
+[Ciri] Reason for tickTime: tickTime is not a valid integer
+[Ciri] Reason for syncLimit: syncLimit must be a valid integer

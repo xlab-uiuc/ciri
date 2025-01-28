@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.trash.interval', 'fs.trash.checkpoint.interval', 'ipc.[port_number].scheduler.impl'], 'reason': ["The 'fs.trash.interval' usage example sets the interval to 1000 minutes, which might be a typo or an incorrect value. The default and more common setting is much lower, typically around 60 minutes or less, to manage trash checkpointing effectively.", "The 'fs.trash.checkpoint.interval' description suggests it should be smaller or equal to 'fs.trash.interval'. However, without validation in the configuration, users could mistakenly configure it to be larger, leading to potential misconfigurations.", "The 'ipc.[port_number].scheduler.impl' property uses a placeholder '[port_number]' which is not a standard way to define properties in Hadoop configurations. Typically, properties are defined with explicit names without placeholders."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.trash.interval	fs.trash.checkpoint.interval	ipc.[port_number].scheduler.impl
+[Ciri] Reason for fs.trash.interval: The 'fs.trash.interval' usage example sets the interval to 1000 minutes, which might be a typo or an incorrect value. The default and more common setting is much lower, typically around 60 minutes or less, to manage trash checkpointing effectively.
+[Ciri] Reason for fs.trash.checkpoint.interval: The 'fs.trash.checkpoint.interval' description suggests it should be smaller or equal to 'fs.trash.interval'. However, without validation in the configuration, users could mistakenly configure it to be larger, leading to potential misconfigurations.
+[Ciri] Reason for ipc.[port_number].scheduler.impl: The 'ipc.[port_number].scheduler.impl' property uses a placeholder '[port_number]' which is not a standard way to define properties in Hadoop configurations. Typically, properties are defined with explicit names without placeholders.

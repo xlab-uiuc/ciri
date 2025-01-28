@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hash_mem_multiplier', 'autovacuum_work_mem', 'vacuum_failsafe_age'], 'reason': ['hash_mem_multiplier should be a floating-point value between 0.0 and 1.0, not -5.5', 'autovacuum_work_mem should be a positive integer or a value with a valid memory unit (e.g., 256MB), not -2', 'vacuum_failsafe_age should be an integer representing the number of transactions, not 1600000000']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hash_mem_multiplier	autovacuum_work_mem	vacuum_failsafe_age
+[Ciri] Reason for hash_mem_multiplier: hash_mem_multiplier should be a floating-point value between 0.0 and 1.0, not -5.5
+[Ciri] Reason for autovacuum_work_mem: autovacuum_work_mem should be a positive integer or a value with a valid memory unit (e.g., 256MB), not -2
+[Ciri] Reason for vacuum_failsafe_age: vacuum_failsafe_age should be an integer representing the number of transactions, not 1600000000

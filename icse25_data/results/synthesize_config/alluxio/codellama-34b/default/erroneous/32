@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 9, 6]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.s3.writetype'], 'reason': ["The property 'alluxio.proxy.s3.writetype' has the value 'nonono' which is not within the accepted value {MUST_CACHE,CACHE_THROUGH,THROUGH,ASYNC_THROUGH,NONE}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.s3.writetype'], 'reason': ["The property 'alluxio.proxy.s3.writetype' has the value 'nonono' which is not within the accepted value {CACHE_THROUGH,MUST_CACHE,THROUGH,ASYNC_THROUGH,NONE}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.s3.writetype'], 'reason': ["The property 'alluxio.proxy.s3.writetype' has the value 'nonono' which is not within the accepted value {THROUGH,ASYNC_THROUGH,CACHE_THROUGH,MUST_CACHE}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.proxy.s3.writetype
+[Ciri] Reason for alluxio.proxy.s3.writetype: The property 'alluxio.proxy.s3.writetype' has the value 'nonono' which is not within the accepted value {THROUGH,ASYNC_THROUGH,CACHE_THROUGH,MUST_CACHE}.

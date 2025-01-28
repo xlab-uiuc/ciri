@@ -1,0 +1,17 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockfree', 'hadoop.http.authentication.type', 'hadoop.http.cross-origin.max-age', 'hadoop.http.staticuser.user', 'hadoop.registry.jaas.context', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ["Parameter name 'ipc.[port_number].weighted-cost.lockfree' contains invalid characters.", "Parameter name 'hadoop.http.authentication.type' is not a valid property name.", "Parameter name 'hadoop.http.cross-origin.max-age' is not a valid property name.", "Parameter name 'hadoop.http.staticuser.user' is not a valid property name.", "Parameter name 'hadoop.registry.jaas.context' is not a valid property name.", "Parameter name 'hadoop.metrics.jvm.use-thread-mxbean' is not a valid property name."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockfree', 'hadoop.http.authentication.type', 'hadoop.http.cross-origin.max-age', 'hadoop.http.staticuser.user', 'hadoop.registry.jaas.context', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ["Invalid parameter name 'ipc.[port_number].weighted-cost.lockfree'.", "Invalid parameter name 'hadoop.http.authentication.type'.", "Invalid parameter name 'hadoop.http.cross-origin.max-age'.", "Invalid parameter name 'hadoop.http.staticuser.user'.", "Invalid parameter name 'hadoop.registry.jaas.context'.", "Invalid parameter name 'hadoop.metrics.jvm.use-thread-mxbean'."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockfree', 'hadoop.http.authentication.type', 'hadoop.http.cross-origin.max-age', 'hadoop.http.staticuser.user', 'hadoop.registry.jaas.context', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ["Invalid parameter name 'ipc.[port_number].weighted-cost.lockfree'.", "Invalid value 'simple' for 'hadoop.http.authentication.type'.", "Invalid value '900' for 'hadoop.http.cross-origin.max-age'.", "Invalid value 'dr.who' for 'hadoop.http.staticuser.user'.", "Invalid value 'Client' for 'hadoop.registry.jaas.context'.", "Invalid value 'true' for 'hadoop.metrics.jvm.use-thread-mxbean'."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: ipc.[port_number].weighted-cost.lockfree	hadoop.http.authentication.type	hadoop.http.cross-origin.max-age	hadoop.http.staticuser.user	hadoop.registry.jaas.context	hadoop.metrics.jvm.use-thread-mxbean
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: Parameter name 'ipc.[port_number].weighted-cost.lockfree' contains invalid characters.
+[Ciri] Reason for hadoop.http.authentication.type: Parameter name 'hadoop.http.authentication.type' is not a valid property name.
+[Ciri] Reason for hadoop.http.cross-origin.max-age: Invalid parameter name 'hadoop.http.cross-origin.max-age'.
+[Ciri] Reason for hadoop.http.staticuser.user: Invalid value 'dr.who' for 'hadoop.http.staticuser.user'.
+[Ciri] Reason for hadoop.registry.jaas.context: Invalid value 'Client' for 'hadoop.registry.jaas.context'.
+[Ciri] Reason for hadoop.metrics.jvm.use-thread-mxbean: Invalid value 'true' for 'hadoop.metrics.jvm.use-thread-mxbean'.

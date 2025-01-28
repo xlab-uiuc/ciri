@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 1, 5]
+
+Correct shot number:
+[16]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.backup.http-address', 'dfs.web.authentication.kerberos.keytab'], 'reason': ["The property 'dfs.namenode.backup.http-address' has the value '0.0.0.0:50105' which does not follow the correct port format.", "The property 'dfs.web.authentication.kerberos.keytab' has the value '/valid/file1' which is not a valid file path."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.backup.http-address', 'dfs.web.authentication.kerberos.keytab'], 'reason': ["The property 'dfs.namenode.backup.http-address' has the value '0.0.0.0:50105' which does not follow the correct IP address format.", "The property 'dfs.web.authentication.kerberos.keytab' has the value '/valid/file1' which is not a valid file path."]}
+
+{'hasError': True, 'errParameter': ['dfs.web.authentication.kerberos.keytab'], 'reason': ["The property 'dfs.web.authentication.kerberos.keytab' has the value '/valid/file1' which does not follow the correct file path format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.backup.http-address	dfs.web.authentication.kerberos.keytab
+[Ciri] Reason for dfs.namenode.backup.http-address: The property 'dfs.namenode.backup.http-address' has the value '0.0.0.0:50105' which does not follow the correct IP address format.
+[Ciri] Reason for dfs.web.authentication.kerberos.keytab: The property 'dfs.web.authentication.kerberos.keytab' has the value '/valid/file1' which is not a valid file path.

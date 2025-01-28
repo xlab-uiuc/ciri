@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_count', 'ssl_passphrase_command_supports_reload', 'default_toast_compression'], 'reason': ['tcp_keepalives_count cannot be negative.', 'ssl_passphrase_command_supports_reload is not a recognized configuration parameter in PostgreSQL 13.0.', "default_toast_compression's value 'pglz' is not valid in PostgreSQL 13.0. Valid options are 'pglz' and 'lz4', but 'lz4' is only available from PostgreSQL 14 and onwards."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: tcp_keepalives_count	ssl_passphrase_command_supports_reload	default_toast_compression
+[Ciri] Reason for tcp_keepalives_count: tcp_keepalives_count cannot be negative.
+[Ciri] Reason for ssl_passphrase_command_supports_reload: ssl_passphrase_command_supports_reload is not a recognized configuration parameter in PostgreSQL 13.0.
+[Ciri] Reason for default_toast_compression: default_toast_compression's value 'pglz' is not valid in PostgreSQL 13.0. Valid options are 'pglz' and 'lz4', but 'lz4' is only available from PostgreSQL 14 and onwards.

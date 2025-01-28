@@ -1,0 +1,18 @@
+Wrong shot number:
+[12, 1, 10]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.http-address'], 'reason': ["The property 'dfs.namenode.http-address' has the value '0.0.0.0:3001' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.http-address'], 'reason': ["The property 'dfs.namenode.http-address' has the value '0.0.0.0:3001' which is not within the accepted value {0.0.0.0:50070,0.0.0.0:50470}."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.http-address'], 'reason': ["The property 'dfs.namenode.http-address' has the value '0.0.0.0:3001' which is not within the accepted value {0.0.0.0:3000, 0.0.0.0:3002, 0.0.0.0:3003, 0.0.0.0:3004, 0.0.0.0:3005}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.http-address
+[Ciri] Reason for dfs.namenode.http-address: The property 'dfs.namenode.http-address' has the value '0.0.0.0:3001' which is not within the accepted value {0.0.0.0:3000, 0.0.0.0:3002, 0.0.0.0:3003, 0.0.0.0:3004, 0.0.0.0:3005}.

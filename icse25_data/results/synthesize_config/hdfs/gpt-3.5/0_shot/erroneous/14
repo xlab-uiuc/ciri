@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.backup.address', 'dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock', 'dfs.image.transfer.bandwidthPerSec', 'dfs.client.failover.connection.retries', 'dfs.datanode.bp-ready.timeout'], 'reason': ["The property 'dfs.namenode.backup.address' has an invalid value format.", "The property 'dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock' has an invalid value format.", "The property 'dfs.image.transfer.bandwidthPerSec' has an invalid value format.", "The property 'dfs.client.failover.connection.retries' has an invalid value format.", "The property 'dfs.datanode.bp-ready.timeout' has an invalid value format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.backup.address', 'dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock', 'dfs.image.transfer.bandwidthPerSec', 'dfs.client.failover.connection.retries', 'dfs.datanode.bp-ready.timeout'], 'reason': ["The property 'dfs.namenode.backup.address' has an incorrect value format.", "The property 'dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock' has an incorrect value format.", "The property 'dfs.image.transfer.bandwidthPerSec' has an incorrect value format.", "The property 'dfs.client.failover.connection.retries' has an incorrect value format.", "The property 'dfs.datanode.bp-ready.timeout' has an incorrect value format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.backup.address', 'dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock', 'dfs.image.transfer.bandwidthPerSec', 'dfs.client.failover.connection.retries', 'dfs.datanode.bp-ready.timeout'], 'reason': ["The property 'dfs.namenode.backup.address' has an invalid value format. Port should be specified as 'portNumber' without the colon.", "The property 'dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock' has an unclear description.", "The property 'dfs.image.transfer.bandwidthPerSec' has a description that is too long and unclear.", "The property 'dfs.client.failover.connection.retries' has a negative value which is not allowed.", "The property 'dfs.datanode.bp-ready.timeout' has a time value with an invalid format. Time unit should be specified after the value."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: dfs.namenode.backup.address	dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock	dfs.image.transfer.bandwidthPerSec	dfs.client.failover.connection.retries	dfs.datanode.bp-ready.timeout
+[Ciri] Reason for dfs.namenode.backup.address: The property 'dfs.namenode.backup.address' has an invalid value format.
+[Ciri] Reason for dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock: The property 'dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock' has an invalid value format.
+[Ciri] Reason for dfs.image.transfer.bandwidthPerSec: The property 'dfs.image.transfer.bandwidthPerSec' has an incorrect value format.
+[Ciri] Reason for dfs.client.failover.connection.retries: The property 'dfs.client.failover.connection.retries' has an invalid value format.
+[Ciri] Reason for dfs.datanode.bp-ready.timeout: The property 'dfs.datanode.bp-ready.timeout' has an incorrect value format.

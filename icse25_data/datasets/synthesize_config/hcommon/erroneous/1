@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.http.filter.initializers</name>
+  <value>org.apache.hadoop.http.lib.StaticUserWebFilter</value>
+  <description>A comma separated list of class names. Each class in the list
+  must extend org.apache.hadoop.http.FilterInitializer. The corresponding
+  Filter will be initialized. Then, the Filter will be applied to all user
+  facing jsp and servlet web pages.  The ordering of the list defines the
+  ordering of the filters.</description>
+</property>
+
+<property>
+  <name>fs.s3a.connection.timeout</name>
+  <value>100000</value>
+  <description>Socket connection timeout in milliseconds.</description>
+</property>
+
+<property>
+  <name>fs.s3a.threads.max</name>
+  <value>9.9</value>
+  <description>The total number of threads available in the filesystem for data
+    uploads *or any other queued filesystem operation*.</description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.csv.comment.marker</name>
+  <value>#</value>
+  <description>In S3 Select queries: the marker for comment lines in CSV files</description>
+</property>
+
+<property>
+  <name>fs.azure.authorization.caching.enable</name>
+  <value>true</value>
+  <description>
+    Config flag to enable caching of authorization results and saskeys in WASB.
+    This flag is relevant only when fs.azure.authorization is enabled.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.http.authentication.token.validity</name>
+  <value>36000</value>
+  <description>
+    Indicates how long (in seconds) an authentication token is valid before it has
+    to be renewed.
+  </description>
+</property>
+
+<property>
+  <name>fs.client.resolve.remote.symlinks</name>
+  <value>false</value>
+  <description>
+      Whether to resolve symlinks when accessing a remote Hadoop filesystem.
+      Setting this to false causes an exception to be thrown upon encountering
+      a symlink. This setting does not apply to local filesystems, which
+      automatically resolve local symlinks.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.ignore.namenode.default.kms.uri</name>
+  <value>false</value>
+    <description>
+      Ignore KMS default URI returned from NameNode.
+      When set to true, kms uri is searched in the following order:
+      1. If there is a mapping in Credential's secrets map for namenode uri.
+      2. Fallback to local conf. (i.e hadoop.security.key.provider.path)
+      If client choose to ignore KMS uri provided by NameNode then client
+      should set KMS URI using 'hadoop.security.key.provider.path' to access
+      the right KMS for encrypted files.
+    </description>
+</property>
+
+</configuration>

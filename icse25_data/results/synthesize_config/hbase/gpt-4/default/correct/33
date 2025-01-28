@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 7, 9]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.client.scanner.caching', 'hbase.server.compactchecker.interval.multiplier'], 'reason': ["The property 'hbase.client.scanner.caching' has an unusually high value which could lead to Java heap space OutOfMemoryError or other memory issues.", "The property 'hbase.server.compactchecker.interval.multiplier' has a value that seems excessively high, potentially causing very infrequent compaction checks."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.client.scanner.caching	hbase.server.compactchecker.interval.multiplier
+[Ciri] Reason for hbase.client.scanner.caching: The property 'hbase.client.scanner.caching' has an unusually high value which could lead to Java heap space OutOfMemoryError or other memory issues.
+[Ciri] Reason for hbase.server.compactchecker.interval.multiplier: The property 'hbase.server.compactchecker.interval.multiplier' has a value that seems excessively high, potentially causing very infrequent compaction checks.

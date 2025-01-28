@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.job.capacity', 'alluxio.worker.tieredstore.level0.dirs.quota', 'alluxio.master.backup.transport.timeout'], 'reason': ['alluxio.job.master.job.capacity should be a positive integer representing the maximum number of concurrent jobs allowed to run in the job master.', 'alluxio.worker.tieredstore.level0.dirs.quota should be a valid data size representation (e.g., 1GB, 1TB) or a percentage (e.g., 20%) to restrict the capacity of the top storage layer.', 'alluxio.master.backup.transport.timeout should be a valid time duration representation (e.g., 1h, 30m, 1s).']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.job.capacity	alluxio.worker.tieredstore.level0.dirs.quota	alluxio.master.backup.transport.timeout
+[Ciri] Reason for alluxio.job.master.job.capacity: alluxio.job.master.job.capacity should be a positive integer representing the maximum number of concurrent jobs allowed to run in the job master.
+[Ciri] Reason for alluxio.worker.tieredstore.level0.dirs.quota: alluxio.worker.tieredstore.level0.dirs.quota should be a valid data size representation (e.g., 1GB, 1TB) or a percentage (e.g., 20%) to restrict the capacity of the top storage layer.
+[Ciri] Reason for alluxio.master.backup.transport.timeout: alluxio.master.backup.transport.timeout should be a valid time duration representation (e.g., 1h, 30m, 1s).

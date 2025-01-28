@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.common.configuration.version', 'fs.s3a.select.input.csv.quote.character'], 'reason': ['The hadoop.common.configuration.version is set to 3.0.0, but the question specifies hcommon version 3.3.0. This value should likely be updated to reflect the correct version.', 'The value for fs.s3a.select.input.csv.quote.character is enclosed in quotes, but it should be escaped properly. For example, if the intention is to use the double quote character (") as the quote character, it should be escaped as \\" in the XML.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.common.configuration.version	fs.s3a.select.input.csv.quote.character
+[Ciri] Reason for hadoop.common.configuration.version: The hadoop.common.configuration.version is set to 3.0.0, but the question specifies hcommon version 3.3.0. This value should likely be updated to reflect the correct version.
+[Ciri] Reason for fs.s3a.select.input.csv.quote.character: The value for fs.s3a.select.input.csv.quote.character is enclosed in quotes, but it should be escaped properly. For example, if the intention is to use the double quote character (") as the quote character, it should be escaped as \" in the XML.

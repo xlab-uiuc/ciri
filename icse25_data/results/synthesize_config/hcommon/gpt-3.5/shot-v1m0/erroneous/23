@@ -1,0 +1,13 @@
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.file.buffer.size', 'fs.s3a.proxy.port', 'hadoop.caller.context.max.size'], 'reason': ["The property 'io.file.buffer.size' has an additional 'usage' tag which is not a valid property element.", "The value for the property 'fs.s3a.proxy.port' should be a numeric value representing the port number.", "The property 'hadoop.caller.context.max.size' has an indentation error in the description tag."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: io.file.buffer.size	fs.s3a.proxy.port	hadoop.caller.context.max.size
+[Ciri] Reason for io.file.buffer.size: The property 'io.file.buffer.size' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for fs.s3a.proxy.port: The value for the property 'fs.s3a.proxy.port' should be a numeric value representing the port number.
+[Ciri] Reason for hadoop.caller.context.max.size: The property 'hadoop.caller.context.max.size' has an indentation error in the description tag.

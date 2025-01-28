@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maintenance_work_mem', 'unix_socket_group', 'recovery_target_action'], 'reason': ["The value '1MB' for maintenance_work_mem is too low. It should be set to a higher value, typically between 64MB and 1GB, depending on the available system memory.", 'The unix_socket_group parameter should not be left empty. It should be set to the name of the Unix user group that will be allowed to connect to the PostgreSQL server via Unix-domain sockets.', 'The recovery_target_action parameter is not a valid parameter in PostgreSQL 13.0. This parameter was introduced in PostgreSQL 14.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: maintenance_work_mem	unix_socket_group	recovery_target_action
+[Ciri] Reason for maintenance_work_mem: The value '1MB' for maintenance_work_mem is too low. It should be set to a higher value, typically between 64MB and 1GB, depending on the available system memory.
+[Ciri] Reason for unix_socket_group: The unix_socket_group parameter should not be left empty. It should be set to the name of the Unix user group that will be allowed to connect to the PostgreSQL server via Unix-domain sockets.
+[Ciri] Reason for recovery_target_action: The recovery_target_action parameter is not a valid parameter in PostgreSQL 13.0. This parameter was introduced in PostgreSQL 14.

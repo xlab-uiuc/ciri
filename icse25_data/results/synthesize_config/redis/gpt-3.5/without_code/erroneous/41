@@ -1,0 +1,19 @@
+Wrong shot number:
+[2, 10, 11]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-node-timeout', 'unixsocketperm'], 'reason': ["The property 'cluster-node-timeout' should have a value in milliseconds, not seconds.", "The property 'unixsocketperm' should be a numeric value representing the permissions for the Unix socket."]}
+
+{'hasError': True, 'errParameter': ['cluster-node-timeout', 'unixsocketperm'], 'reason': ["The property 'cluster-node-timeout' should have a value in milliseconds, not seconds.", "The value of 'unixsocketperm' should be in octal notation."]}
+
+{'hasError': True, 'errParameter': ['cluster-node-timeout', 'unixsocketperm'], 'reason': ["The property 'cluster-node-timeout' should have a value in milliseconds, not seconds.", "The property 'unixsocketperm' should be a numeric value representing the permissions of the Unix socket."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: cluster-node-timeout	unixsocketperm
+[Ciri] Reason for cluster-node-timeout: The property 'cluster-node-timeout' should have a value in milliseconds, not seconds.
+[Ciri] Reason for unixsocketperm: The property 'unixsocketperm' should be a numeric value representing the permissions for the Unix socket.

@@ -1,0 +1,26 @@
+Wrong shot number:
+[12, 9, 2]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins', 'hbase.hstore.blockingWaitTime'], 'reason': ["The property 'hbase.master.logcleaner.plugins' is missing the default log cleaner 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner'.", "The property 'hbase.hstore.blockingWaitTime' is not a valid property for HBase version 2.2.7."]}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins', 'hbase.mob.delfile.max.count'], 'reason': ["The property 'hbase.master.logcleaner.plugins' does not contain the default log cleaner 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner'.", "The property 'hbase.mob.delfile.max.count' has a value of '1' which is too low and may not be effective for mob compaction."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.blockingWaitTime'], 'reason': ["The property 'hbase.hstore.blockingWaitTime' is not a valid property for HBase version 2.2.7."]}
+
+{'hasError': True, 'errParameter': ['hbase.master.logcleaner.plugins', 'hbase.mob.delfile.max.count'], 'reason': ["The property 'hbase.master.logcleaner.plugins' is missing the 'org.apache.hadoop.hbase.master.cleaner.TimeToLiveLogCleaner' which is one of the default log cleaners.", "The property 'hbase.mob.delfile.max.count' has a value of '1' which is lower than the recommended default value of '3'."]}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.blockingWaitTime'], 'reason': ["The property 'hbase.hstore.blockingWaitTime' is not a valid property in HBase version 2.2.7."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.hstore.blockingWaitTime
+[Ciri] Reason for hbase.hstore.blockingWaitTime: The property 'hbase.hstore.blockingWaitTime' is not a valid property for HBase version 2.2.7.

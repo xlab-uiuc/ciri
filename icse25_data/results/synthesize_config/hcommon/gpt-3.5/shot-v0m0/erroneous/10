@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.buffer.dir', 'fs.s3a.s3guard.ddb.table.capacity.write', 'ipc.client.kill.max', 'ipc.client.low-latency', 'ftp.client-write-packet-size'], 'reason': ["The value for 'fs.ftp.host' should be a valid FTP server address.", "The value for 'fs.s3a.buffer.dir' should not contain special characters like '\\'.", "The value for 'fs.s3a.s3guard.ddb.table.capacity.write' should be a positive integer or -1.", "The value for 'ipc.client.kill.max' should be greater than 1.", "The value for 'ipc.client.low-latency' should be a boolean value (true/false).", "The value for 'ftp.client-write-packet-size' should be a positive integer."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.buffer.dir	fs.s3a.s3guard.ddb.table.capacity.write	ipc.client.kill.max	ipc.client.low-latency	ftp.client-write-packet-size
+[Ciri] Reason for fs.ftp.host: The value for 'fs.ftp.host' should be a valid FTP server address.
+[Ciri] Reason for fs.s3a.buffer.dir: The value for 'fs.s3a.buffer.dir' should not contain special characters like '\'.
+[Ciri] Reason for fs.s3a.s3guard.ddb.table.capacity.write: The value for 'fs.s3a.s3guard.ddb.table.capacity.write' should be a positive integer or -1.
+[Ciri] Reason for ipc.client.kill.max: The value for 'ipc.client.kill.max' should be greater than 1.
+[Ciri] Reason for ipc.client.low-latency: The value for 'ipc.client.low-latency' should be a boolean value (true/false).
+[Ciri] Reason for ftp.client-write-packet-size: The value for 'ftp.client-write-packet-size' should be a positive integer.

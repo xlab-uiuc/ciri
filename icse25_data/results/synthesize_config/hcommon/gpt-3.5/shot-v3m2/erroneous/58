@@ -1,0 +1,15 @@
+Wrong shot number:
+[4, 5]
+
+Correct shot number:
+[4, 9, 13]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].cost-provider.impl', 'ipc.[port_number].weighted-cost.lockshared'], 'reason': ["The property 'ipc.[port_number].cost-provider.impl' has a value 'org.apache.hadoop.ipc.DefaultCostProvider' which may not be the intended cost provider implementation.", "The property 'ipc.[port_number].weighted-cost.lockshared' has a value '20' which may not be appropriate for the weight multiplier."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ipc.[port_number].cost-provider.impl	ipc.[port_number].weighted-cost.lockshared
+[Ciri] Reason for ipc.[port_number].cost-provider.impl: The property 'ipc.[port_number].cost-provider.impl' has a value 'org.apache.hadoop.ipc.DefaultCostProvider' which may not be the intended cost provider implementation.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockshared: The property 'ipc.[port_number].weighted-cost.lockshared' has a value '20' which may not be appropriate for the weight multiplier.

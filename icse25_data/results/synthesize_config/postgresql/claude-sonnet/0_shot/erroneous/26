@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_page', 'enable_async_append', 'enable_hashagg', 'geqo_threshold', 'exit_on_error', 'jit_above_cost'], 'reason': ['max_pred_locks_per_page is a deprecated parameter and has no effect in PostgreSQL 13.', 'enable_async_append is a deprecated parameter and has no effect in PostgreSQL 13.', 'enable_hashagg is a deprecated parameter and has no effect in PostgreSQL 13.', 'geqo_threshold is a deprecated parameter and has no effect in PostgreSQL 13 as the legacy query optimizer is no longer used.', 'exit_on_error is a deprecated parameter and has no effect in PostgreSQL 13.', 'jit_above_cost is a deprecated parameter and has no effect in PostgreSQL 13 as the JIT compiler is always enabled.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: max_pred_locks_per_page	enable_async_append	enable_hashagg	geqo_threshold	exit_on_error	jit_above_cost
+[Ciri] Reason for max_pred_locks_per_page: max_pred_locks_per_page is a deprecated parameter and has no effect in PostgreSQL 13.
+[Ciri] Reason for enable_async_append: enable_async_append is a deprecated parameter and has no effect in PostgreSQL 13.
+[Ciri] Reason for enable_hashagg: enable_hashagg is a deprecated parameter and has no effect in PostgreSQL 13.
+[Ciri] Reason for geqo_threshold: geqo_threshold is a deprecated parameter and has no effect in PostgreSQL 13 as the legacy query optimizer is no longer used.
+[Ciri] Reason for exit_on_error: exit_on_error is a deprecated parameter and has no effect in PostgreSQL 13.
+[Ciri] Reason for jit_above_cost: jit_above_cost is a deprecated parameter and has no effect in PostgreSQL 13 as the JIT compiler is always enabled.

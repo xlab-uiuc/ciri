@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 6, 5]
+
+Correct shot number:
+[9]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.handler', 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb'], 'reason': ["The property 'yarn.resourcemanager.placement-constraints.handler' has an invalid value 'NOEXIST'. Accepted values are 'placement-processor', 'scheduler', and 'disabled'.", "The value of 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb' should not be negative."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.handler', 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb'], 'reason': ["The property 'yarn.resourcemanager.placement-constraints.handler' has the value 'NOEXIST' which is not within the accepted values {placement-processor, scheduler, disabled}.", "The value of the property 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb' should not be less than 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb'."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.placement-constraints.handler', 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb'], 'reason': ["The property 'yarn.resourcemanager.placement-constraints.handler' has an invalid value 'NOEXIST'. Accepted values are: `placement-processor`, `scheduler`, and `disabled`.", "The value of 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb' should not be negative."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.placement-constraints.handler	yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb
+[Ciri] Reason for yarn.resourcemanager.placement-constraints.handler: The property 'yarn.resourcemanager.placement-constraints.handler' has an invalid value 'NOEXIST'. Accepted values are 'placement-processor', 'scheduler', and 'disabled'.
+[Ciri] Reason for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb: The value of the property 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb' should not be less than 'yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb'.

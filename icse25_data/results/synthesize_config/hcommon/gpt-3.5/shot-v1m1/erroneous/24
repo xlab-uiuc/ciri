@@ -1,0 +1,16 @@
+Wrong shot number:
+[4]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.tmp.dir', 'fs.ftp.host.port', 'ipc.[port_number].faircallqueue.multiplexer.weights'], 'reason': ["The property 'hadoop.tmp.dir' has an additional 'usage' tag which is not a valid property element.", "The property 'fs.ftp.host.port' has the value 'file://' which does not follow the correct URL format.", "The property 'ipc.[port_number].faircallqueue.multiplexer.weights' contains square brackets in the name which is not allowed."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hadoop.tmp.dir	fs.ftp.host.port	ipc.[port_number].faircallqueue.multiplexer.weights
+[Ciri] Reason for hadoop.tmp.dir: The property 'hadoop.tmp.dir' has an additional 'usage' tag which is not a valid property element.
+[Ciri] Reason for fs.ftp.host.port: The property 'fs.ftp.host.port' has the value 'file://' which does not follow the correct URL format.
+[Ciri] Reason for ipc.[port_number].faircallqueue.multiplexer.weights: The property 'ipc.[port_number].faircallqueue.multiplexer.weights' contains square brackets in the name which is not allowed.

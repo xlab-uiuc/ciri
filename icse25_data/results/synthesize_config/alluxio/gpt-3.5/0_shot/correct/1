@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.netty.watermark.low', 'alluxio.master.metastore.iterator.readahead.size', 'alluxio.master.ttl.checker.interval', 'alluxio.job.master.web.port'], 'reason': ['Invalid value for alluxio.worker.network.netty.watermark.low. It should be specified in bytes or with a valid unit (e.g., KB, MB).', 'Invalid value for alluxio.master.metastore.iterator.readahead.size. It should be specified in bytes or with a valid unit (e.g., KB, MB).', 'Invalid value for alluxio.master.ttl.checker.interval. It should be specified in milliseconds or with a valid unit (e.g., hour, min).', 'Invalid value for alluxio.job.master.web.port. It should be an integer value.']}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.ramdisk.size'], 'reason': ["'alluxio.worker.ramdisk.size' has an invalid value. It should be specified in bytes or with a unit (e.g., '100MB')."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.network.netty.watermark.low', 'alluxio.master.metastore.iterator.readahead.size', 'alluxio.master.ttl.checker.interval', 'alluxio.job.master.web.port'], 'reason': ['Invalid value format. It should be in bytes or with a valid unit (e.g., 8KB).', 'Invalid value format. It should be in bytes or with a valid unit (e.g., 128MB).', 'Invalid value format. It should be in milliseconds or with a valid unit (e.g., 10h).', 'Invalid value format. It should be a valid port number (e.g., 3000).']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.worker.network.netty.watermark.low	alluxio.master.metastore.iterator.readahead.size	alluxio.master.ttl.checker.interval	alluxio.job.master.web.port
+[Ciri] Reason for alluxio.worker.network.netty.watermark.low: Invalid value for alluxio.worker.network.netty.watermark.low. It should be specified in bytes or with a valid unit (e.g., KB, MB).
+[Ciri] Reason for alluxio.master.metastore.iterator.readahead.size: Invalid value format. It should be in bytes or with a valid unit (e.g., 128MB).
+[Ciri] Reason for alluxio.master.ttl.checker.interval: Invalid value format. It should be in milliseconds or with a valid unit (e.g., 10h).
+[Ciri] Reason for alluxio.job.master.web.port: Invalid value for alluxio.job.master.web.port. It should be an integer value.

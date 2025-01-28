@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['reconfigEnabled', 'quorum.cnxn.threads.size', 'portUnification', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.purgeInterval', 'peerType', 'maxClientCnxns', 'minSessionTimeout'], 'reason': ['reconfigEnabled must be a number', 'quorum.cnxn.threads.size must be a number', 'portUnification must be a boolean', 'quorum.auth.kerberos.servicePrincipal must be a string', 'autopurge.purgeInterval must be a number', 'peerType must be a string', 'maxClientCnxns must be a number', 'minSessionTimeout must be a number']}
+
+{'hasError': True, 'errParameter': ['reconfigEnabled', 'quorum.cnxn.threads.size', 'autopurge.purgeInterval', 'peerType', 'maxClientCnxns', 'minSessionTimeout'], 'reason': ['reconfigEnabled must be an integer', 'quorum.cnxn.threads.size must be an integer', 'autopurge.purgeInterval must be an integer', 'peerType must be one of [observer, participant]', 'maxClientCnxns must be an integer', 'minSessionTimeout must be an integer']}
+
+{'hasError': True, 'errParameter': ['reconfigEnabled'], 'reason': ['The value of reconfigEnabled should be a positive integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['reconfigEnabled', 'quorum.cnxn.threads.size', 'portUnification', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.purgeInterval', 'peerType', 'maxClientCnxns', 'minSessionTimeout'], 'reason': ['reconfigEnabled should be an integer', 'quorum.cnxn.threads.size should be an integer', 'portUnification should be a boolean', 'quorum.auth.kerberos.servicePrincipal should be a string', 'autopurge.purgeInterval should be an integer', 'peerType should be a string', 'maxClientCnxns should be an integer', 'minSessionTimeout should be an integer']}
+
+{'hasError': True, 'errParameter': ['reconfigEnabled'], 'reason': ['The value of reconfigEnabled is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['reconfigEnabled', 'quorum.cnxn.threads.size', 'portUnification', 'quorum.auth.kerberos.servicePrincipal', 'autopurge.purgeInterval', 'peerType', 'maxClientCnxns', 'minSessionTimeout'], 'reason': ['The value of reconfigEnabled is not a valid number.', 'The value of quorum.cnxn.threads.size is not a valid number.', 'The value of portUnification is not a valid boolean.', 'The value of quorum.auth.kerberos.servicePrincipal is not a valid string.', 'The value of autopurge.purgeInterval is not a valid number.', 'The value of peerType is not a valid string.', 'The value of maxClientCnxns is not a valid number.', 'The value of minSessionTimeout is not a valid number.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: reconfigEnabled	quorum.cnxn.threads.size	portUnification	quorum.auth.kerberos.servicePrincipal	autopurge.purgeInterval	peerType	maxClientCnxns	minSessionTimeout
+[Ciri] Reason for reconfigEnabled: The value of reconfigEnabled is not a valid number.
+[Ciri] Reason for quorum.cnxn.threads.size: The value of quorum.cnxn.threads.size is not a valid number.
+[Ciri] Reason for portUnification: The value of portUnification is not a valid boolean.
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: The value of quorum.auth.kerberos.servicePrincipal is not a valid string.
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval should be an integer
+[Ciri] Reason for peerType: peerType should be a string
+[Ciri] Reason for maxClientCnxns: The value of maxClientCnxns is not a valid number.
+[Ciri] Reason for minSessionTimeout: The value of minSessionTimeout is not a valid number.

@@ -1,0 +1,26 @@
+Wrong shot number:
+[8, 11, 1]
+
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.ssl'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.ssl' has the value '1.5' which is not of the correct type Float."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.directory.search.timeout'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.directory.search.timeout' has the value '5000' which is out of the valid range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['hadoop.registry.zk.root'], 'reason': ["The property 'hadoop.registry.zk.root' has the value '/valid/file2' which is not a valid path."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.ssl'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.ssl' has the value '1.5' which is not of the correct type Boolean."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.directory.search.timeout'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.directory.search.timeout' has the value '5000' which is less than the minimum value of 10000."]}
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.ssl'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.ssl' has the value '1.5' which is not of the correct type Float."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.ssl
+[Ciri] Reason for hadoop.security.group.mapping.ldap.ssl: The property 'hadoop.security.group.mapping.ldap.ssl' has the value '1.5' which is not of the correct type Float.

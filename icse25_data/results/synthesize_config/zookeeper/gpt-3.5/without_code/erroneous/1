@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 7, 5]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'maxSessionTimeout'], 'reason': ["The property 'autopurge.purgeInterval' has the value '9.9' which should be an integer.", "The property 'maxSessionTimeout' has the value '-1' which is not within the accepted value range."]}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'maxSessionTimeout'], 'reason': ["The property 'autopurge.purgeInterval' has a non-integer value '9.9' which is invalid. It should be an integer value.", "The property 'maxSessionTimeout' has the value '-1' which is not within the accepted value range."]}
+
+{'hasError': True, 'errParameter': ['autopurge.purgeInterval', 'maxSessionTimeout'], 'reason': ["The property 'autopurge.purgeInterval' has the value '9.9' which should be an integer.", "The property 'maxSessionTimeout' has the value '-1' which is not within the accepted value range."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autopurge.purgeInterval	maxSessionTimeout
+[Ciri] Reason for autopurge.purgeInterval: The property 'autopurge.purgeInterval' has the value '9.9' which should be an integer.
+[Ciri] Reason for maxSessionTimeout: The property 'maxSessionTimeout' has the value '-1' which is not within the accepted value range.

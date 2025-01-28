@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPortAddress is not a valid port']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress', 'secureClientPort'], 'reason': ['dataDir and dataLogDir must be absolute paths', 'clientPortAddress must be in the format of host:port', 'secureClientPort must be in the format of host:port']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPort'], 'reason': ['clientPortAddress is not a valid port', 'secureClientPort is not a valid port']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPort'], 'reason': ['clientPortAddress is not a valid port number', 'secureClientPort is not a valid port number']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPort'], 'reason': ['clientPortAddress is not a valid port number', 'secureClientPort is not a valid port number']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'dataLogDir', 'clientPortAddress', 'secureClientPort'], 'reason': ['dataDir is not a valid directory', 'dataLogDir is not a valid directory', 'clientPortAddress is not a valid port', 'secureClientPort is not a valid port']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: clientPortAddress	secureClientPort
+[Ciri] Reason for clientPortAddress: clientPortAddress is not a valid port number
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid port number

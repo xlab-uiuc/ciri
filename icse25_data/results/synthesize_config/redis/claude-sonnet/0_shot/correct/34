@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'slowlog-max-len', 'tls-protocols', 'aclfile', 'latency-monitor-threshold', 'hll-sparse-max-bytes', 'tcp-backlog'], 'reason': ["The 'replica-serve-stale-data' parameter is not a valid configuration option in Redis 7.0.0.", "The 'slowlog-max-len' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'slowlog-log-slower-than'.", "The 'tls-protocols' parameter is not a valid configuration option in Redis 7.0.0. Redis does not support TLS configuration directly.", "The 'aclfile' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'aclfile' without the '=' sign.", "The 'latency-monitor-threshold' parameter is not a valid configuration option in Redis 7.0.0.", "The 'hll-sparse-max-bytes' parameter is not a valid configuration option in Redis 7.0.0.", "The 'tcp-backlog' parameter is not a valid configuration option in Redis 7.0.0."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: replica-serve-stale-data	slowlog-max-len	tls-protocols	aclfile	latency-monitor-threshold	hll-sparse-max-bytes	tcp-backlog
+[Ciri] Reason for replica-serve-stale-data: The 'replica-serve-stale-data' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for slowlog-max-len: The 'slowlog-max-len' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'slowlog-log-slower-than'.
+[Ciri] Reason for tls-protocols: The 'tls-protocols' parameter is not a valid configuration option in Redis 7.0.0. Redis does not support TLS configuration directly.
+[Ciri] Reason for aclfile: The 'aclfile' parameter is not a valid configuration option in Redis 7.0.0. The correct parameter is 'aclfile' without the '=' sign.
+[Ciri] Reason for latency-monitor-threshold: The 'latency-monitor-threshold' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for hll-sparse-max-bytes: The 'hll-sparse-max-bytes' parameter is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for tcp-backlog: The 'tcp-backlog' parameter is not a valid configuration option in Redis 7.0.0.

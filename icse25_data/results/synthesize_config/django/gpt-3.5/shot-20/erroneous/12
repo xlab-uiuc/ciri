@@ -1,0 +1,14 @@
+Correct shot number:
+[3, 2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'DEFAULT_EXCEPTION_REPORTER', 'USE_X_FORWARDED_PORT', 'PASSWORD_RESET_TIMEOUT'], 'reason': ['CACHE_MIDDLEWARE_SECONDS should be a positive integer representing the number of seconds. Setting it to -1 is invalid.', "DEFAULT_EXCEPTION_REPORTER should be 'django.views.debug.SafeExceptionReporterFilter' for Django 4.0.", 'USE_X_FORWARDED_PORT should be either True or False.', 'PASSWORD_RESET_TIMEOUT should be a positive integer representing the number of seconds.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	DEFAULT_EXCEPTION_REPORTER	USE_X_FORWARDED_PORT	PASSWORD_RESET_TIMEOUT
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: CACHE_MIDDLEWARE_SECONDS should be a positive integer representing the number of seconds. Setting it to -1 is invalid.
+[Ciri] Reason for DEFAULT_EXCEPTION_REPORTER: DEFAULT_EXCEPTION_REPORTER should be 'django.views.debug.SafeExceptionReporterFilter' for Django 4.0.
+[Ciri] Reason for USE_X_FORWARDED_PORT: USE_X_FORWARDED_PORT should be either True or False.
+[Ciri] Reason for PASSWORD_RESET_TIMEOUT: PASSWORD_RESET_TIMEOUT should be a positive integer representing the number of seconds.

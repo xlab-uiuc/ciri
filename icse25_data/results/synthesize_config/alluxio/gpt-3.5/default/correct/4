@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 7, 12]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.security.login.impersonation.username'], 'reason': ["The property 'alluxio.security.login.impersonation.username' contains a placeholder '_HDFS_USER_' which may not be a valid username. It should be replaced with an actual username for impersonation."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.eventual.consistency.retry.max.num'], 'reason': ["The property 'alluxio.underfs.eventual.consistency.retry.max.num' has the value '0' which should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.security.login.impersonation.username'], 'reason': ["The property 'alluxio.security.login.impersonation.username' should not be set to '_HDFS_USER_'. Please provide a valid username for impersonation."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.security.login.impersonation.username
+[Ciri] Reason for alluxio.security.login.impersonation.username: The property 'alluxio.security.login.impersonation.username' contains a placeholder '_HDFS_USER_' which may not be a valid username. It should be replaced with an actual username for impersonation.

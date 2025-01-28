@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.logroll.errors.tolerated</name>
+  <value>4</value>
+    <description>The number of consecutive WAL close errors we will allow
+    before triggering a server abort.  A setting of 0 will cause the
+    region server to abort if closing the current WAL writer fails during
+    log rolling.  Even a small value (2 or 3) will allow a region server
+    to ride over transient HDFS errors.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.memstore.mslab.enabled</name>
+  <value>false</value>
+    <description>
+      Enables the MemStore-Local Allocation Buffer,
+      a feature which works to prevent heap fragmentation under
+      heavy write loads. This can reduce the frequency of stop-the-world
+      GC pauses on large heaps.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.ratio.offpeak</name>
+  <value>5.0F</value>
+    <description>Allows you to set a different (by default, more aggressive) ratio for determining
+      whether larger StoreFiles are included in compactions during off-peak hours. Works in the
+      same way as hbase.hstore.compaction.ratio. Only applies if hbase.offpeak.start.hour and
+      hbase.offpeak.end.hour are also enabled.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.time.to.purge.deletes</name>
+  <value>1</value>
+    <description>The amount of time to delay purging of delete markers with future timestamps. If
+      unset, or set to 0, all delete markers, including those with future timestamps, are purged
+      during the next major compaction. Otherwise, a delete marker is kept until the major compaction
+      which occurs after the marker's timestamp plus the value of this setting, in milliseconds.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rest.port</name>
+  <value>3001</value>
+    <description>The port for the HBase REST server.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.thrift.compact</name>
+  <value>true</value>
+    <description>Use Thrift TCompactProtocol binary serialization protocol.</description>
+</property>
+
+<property>
+  <name>hbase.snapshot.restore.failsafe.name</name>
+  <value>hbase-failsafe-{snapshot.name}-{restore.timestamp}</value>
+    <description>Name of the failsafe snapshot taken by the restore operation.
+      You can use the {snapshot.name}, {table.name} and {restore.timestamp} variables
+      to create a name based on what you are restoring.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.storefile.refresh.period</name>
+  <value>-1</value>
+    <description>
+      The period (in milliseconds) for refreshing the store files for the secondary regions. 0
+      means this feature is disabled. Secondary regions sees new files (from flushes and
+      compactions) from primary once the secondary region refreshes the list of files in the
+      region (there is no notification mechanism). But too frequent refreshes might cause
+      extra Namenode pressure. If the files cannot be refreshed for longer than HFile TTL
+      (hbase.master.hfilecleaner.ttl) the requests are rejected. Configuring HFile TTL to a larger
+      value is also recommended with this setting.
+    </description>
+</property>
+
+</configuration>

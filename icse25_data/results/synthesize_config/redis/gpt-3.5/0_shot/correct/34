@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'slowlog-max-len', 'aclfile', 'latency-monitor-threshold', 'hll-sparse-max-bytes'], 'reason': ['replica-serve-stale-data is not a valid configuration parameter for Redis version 7.0.0', 'slowlog-max-len should be an integer value', 'aclfile should be aclfile2 instead of aclfile', 'latency-monitor-threshold should be a positive integer value', 'hll-sparse-max-bytes should be an integer value']}
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'slowlog-max-len', 'aclfile', 'latency-monitor-threshold', 'hll-sparse-max-bytes'], 'reason': ['replica-serve-stale-data is not a valid configuration parameter for Redis version 7.0.0', 'slowlog-max-len should be an integer value', 'aclfile parameter should be aclfile=<path-to-acl-file>', 'latency-monitor-threshold should be a positive integer value', 'hll-sparse-max-bytes should be an integer value']}
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'slowlog-max-len', 'aclfile', 'latency-monitor-threshold', 'hll-sparse-max-bytes'], 'reason': ['replica-serve-stale-data is not a valid configuration parameter for Redis 7.0.0', 'slowlog-max-len should be an integer value', 'aclfile should be aclfile2 instead of aclfile', 'latency-monitor-threshold should be a positive integer value', 'hll-sparse-max-bytes should be hll-sparse-max-bytes-fallback']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: replica-serve-stale-data	slowlog-max-len	aclfile	latency-monitor-threshold	hll-sparse-max-bytes
+[Ciri] Reason for replica-serve-stale-data: replica-serve-stale-data is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for slowlog-max-len: slowlog-max-len should be an integer value
+[Ciri] Reason for aclfile: aclfile should be aclfile2 instead of aclfile
+[Ciri] Reason for latency-monitor-threshold: latency-monitor-threshold should be a positive integer value
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes should be an integer value

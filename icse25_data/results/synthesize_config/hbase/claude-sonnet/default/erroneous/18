@@ -1,0 +1,15 @@
+Wrong shot number:
+[6, 7, 5]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit', 'hbase.column.max.version'], 'reason': ["The property 'hbase.regionserver.regionSplitLimit' has the value '-100' which is outside the accepted range of non-negative integers.", "The property 'hbase.column.max.version' has the value '0' which is outside the accepted range of positive integers."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.regionSplitLimit	hbase.column.max.version
+[Ciri] Reason for hbase.regionserver.regionSplitLimit: The property 'hbase.regionserver.regionSplitLimit' has the value '-100' which is outside the accepted range of non-negative integers.
+[Ciri] Reason for hbase.column.max.version: The property 'hbase.column.max.version' has the value '0' which is outside the accepted range of positive integers.

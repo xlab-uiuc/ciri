@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms</name>
+  <value>4000000000</value>
+    <description>Set the amount of time RM waits before allocating new
+    containers on work-preserving-recovery. Such wait period gives RM a chance
+    to settle down resyncing with NMs in the cluster on recovery, before assigning
+    new containers to applications.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.reservation-system.enable</name>
+  <value>true</value>
+    <description>
+    Flag to enable the ResourceManager reservation system.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.env-whitelist</name>
+  <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_HOME,PATH,LANG,TZ</value>
+    <description>Environment variables that containers may override rather than use NodeManager's default.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.remote-app-log-dir</name>
+  <value>/tmp/logs</value>
+    <description>Where to aggregate logs to.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.leveldb-timeline-store.read-cache-size</name>
+  <value>104857600</value>
+    <description>Size of read cache for uncompressed blocks for leveldb timeline store in bytes.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.leveldb-state-store.path</name>
+  <value>${hadoop.tmp.dir}/yarn/timeline</value>
+    <description>Store file name for leveldb state store.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.amrmproxy.address</name>
+  <value>0.0.0.0:3001</value>
+    <description>
+    The address of the AMRMProxyService listener.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.amrmproxy.ha.enable</name>
+  <value>false</value>
+    <description>
+    Whether AMRMProxy HA is enabled.
+    </description>
+</property>
+
+</configuration>

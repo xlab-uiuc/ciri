@@ -1,0 +1,33 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress'], 'reason': ['secureClientPortAddress is not a valid property for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'autopurge.purgeInterval', 'sslQuorum', 'standaloneEnabled', 'reconfigEnabled', 'localSessionsUpgradingEnabled'], 'reason': ['secureClientPortAddress is not a valid IP address', 'autopurge.purgeInterval is not a valid integer', 'sslQuorum is not a valid boolean', 'standaloneEnabled is not a valid boolean', 'reconfigEnabled is not a valid boolean', 'localSessionsUpgradingEnabled is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'autopurge.purgeInterval', 'sslQuorum', 'standaloneEnabled', 'tickTime', 'syncLimit', 'reconfigEnabled', 'localSessionsUpgradingEnabled'], 'reason': ['secureClientPortAddress should be a valid IP address', 'autopurge.purgeInterval should be a positive integer', 'sslQuorum should be a boolean', 'standaloneEnabled should be a boolean', 'tickTime should be a positive integer', 'syncLimit should be a positive integer', 'reconfigEnabled should be a boolean', 'localSessionsUpgradingEnabled should be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'autopurge.purgeInterval', 'sslQuorum'], 'reason': ['secureClientPortAddress should be a valid IP address', 'autopurge.purgeInterval should be a positive integer', 'sslQuorum should be a boolean']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'autopurge.purgeInterval', 'sslQuorum', 'standaloneEnabled', 'tickTime', 'syncLimit', 'reconfigEnabled', 'localSessionsUpgradingEnabled'], 'reason': ['secureClientPortAddress should be a valid IP address', 'autopurge.purgeInterval should be a positive integer', 'sslQuorum should be a boolean', 'standaloneEnabled should be a boolean', 'tickTime should be a positive integer', 'syncLimit should be a positive integer', 'reconfigEnabled should be a boolean', 'localSessionsUpgradingEnabled should be a boolean']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'autopurge.purgeInterval', 'sslQuorum', 'standaloneEnabled', 'reconfigEnabled', 'localSessionsUpgradingEnabled'], 'reason': ['secureClientPortAddress is not a valid port number', 'autopurge.purgeInterval is not a valid integer', 'sslQuorum is not a valid boolean', 'standaloneEnabled is not a valid boolean', 'reconfigEnabled is not a valid boolean', 'localSessionsUpgradingEnabled is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'secureClientPortAddress', 'autopurge.purgeInterval', 'sslQuorum', 'standaloneEnabled', 'tickTime', 'syncLimit', 'reconfigEnabled', 'localSessionsUpgradingEnabled'], 'reason': ['dataDir is not a valid directory', 'secureClientPortAddress is not a valid port', 'autopurge.purgeInterval is not a valid integer', 'sslQuorum is not a valid boolean', 'standaloneEnabled is not a valid boolean', 'tickTime is not a valid integer', 'syncLimit is not a valid integer', 'reconfigEnabled is not a valid boolean', 'localSessionsUpgradingEnabled is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['secureClientPortAddress', 'autopurge.purgeInterval', 'sslQuorum', 'standaloneEnabled', 'reconfigEnabled', 'localSessionsUpgradingEnabled'], 'reason': ['secureClientPortAddress is not a valid address.', 'autopurge.purgeInterval is not a valid interval.', 'sslQuorum is not a valid boolean.', 'standaloneEnabled is not a valid boolean.', 'reconfigEnabled is not a valid boolean.', 'localSessionsUpgradingEnabled is not a valid boolean.']}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: secureClientPortAddress	autopurge.purgeInterval	sslQuorum	standaloneEnabled	reconfigEnabled	localSessionsUpgradingEnabled
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress is not a valid port number
+[Ciri] Reason for autopurge.purgeInterval: autopurge.purgeInterval is not a valid interval.
+[Ciri] Reason for sslQuorum: sslQuorum is not a valid boolean
+[Ciri] Reason for standaloneEnabled: standaloneEnabled is not a valid boolean
+[Ciri] Reason for reconfigEnabled: reconfigEnabled is not a valid boolean
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled is not a valid boolean.

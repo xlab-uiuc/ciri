@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait', 'proxy-dial-timeout', 'auto-tls'], 'reason': ['proxy-failure-wait must be a duration string', 'proxy-dial-timeout must be a duration string', 'auto-tls must be a boolean']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-failure-wait'], 'reason': ['proxy-dial-timeout is not a valid parameter for etcd version 3.5.0', 'proxy-failure-wait is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['proxy-failure-wait'], 'reason': ['proxy-failure-wait is not a valid configuration parameter for etcd version 3.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-failure-wait'], 'reason': ['proxy-dial-timeout must be greater than 0', 'proxy-failure-wait must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'auto-tls', 'proxy-failure-wait'], 'reason': ['proxy-dial-timeout must be a duration', 'auto-tls must be a boolean', 'proxy-failure-wait must be a duration']}
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-failure-wait'], 'reason': ['proxy-dial-timeout must be a duration', 'proxy-failure-wait must be a duration']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: proxy-dial-timeout	proxy-failure-wait
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout must be a duration
+[Ciri] Reason for proxy-failure-wait: proxy-failure-wait must be greater than 0

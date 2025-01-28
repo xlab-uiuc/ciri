@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.oss.connection.ttl', 'alluxio.master.daily.backup.state.lock.grace.mode'], 'reason': ['Invalid value for alluxio.underfs.oss.connection.ttl. Value should be a positive number.', 'Invalid value for alluxio.master.daily.backup.state.lock.grace.mode. Value should be a valid timeout mode.']}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.oss.connection.ttl', 'alluxio.master.daily.backup.state.lock.grace.mode'], 'reason': ["Invalid value for property 'alluxio.underfs.oss.connection.ttl'. Value should be a positive number.", "Invalid value for property 'alluxio.master.daily.backup.state.lock.grace.mode'. Value should be a valid timeout value."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.oss.connection.ttl'], 'reason': ["The value for 'alluxio.underfs.oss.connection.ttl' should be a positive number. Please provide a positive value for the connection TTL."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.underfs.oss.connection.ttl	alluxio.master.daily.backup.state.lock.grace.mode
+[Ciri] Reason for alluxio.underfs.oss.connection.ttl: Invalid value for alluxio.underfs.oss.connection.ttl. Value should be a positive number.
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.grace.mode: Invalid value for alluxio.master.daily.backup.state.lock.grace.mode. Value should be a valid timeout mode.

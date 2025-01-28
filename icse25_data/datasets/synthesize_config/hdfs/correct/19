@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.max.transfer.threads</name>
+  <value>2048</value>
+  <description>
+        Specifies the maximum number of threads to use for transferring data
+        in and out of the DN.
+  </description>
+</property>
+
+<property>
+  <name>nfs.dump.dir</name>
+  <value>/valid/file1</value>
+  <description>
+    This directory is used to temporarily save out-of-order writes before
+    writing to HDFS. For each file, the out-of-order writes are dumped after
+    they are accumulated to exceed certain threshold (e.g., 1MB) in memory. 
+    One needs to make sure the directory has enough space.
+  </description>
+</property>
+
+<property>
+  <name>dfs.journalnode.http-address</name>
+  <value>0.0.0.0:3001</value>
+  <description>
+    The address and port the JournalNode HTTP server listens on.
+    If the port is 0 then the server will start on a free port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.read.shortcircuit</name>
+  <value>false</value>
+  <description>
+    This configuration parameter turns on short-circuit local reads.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.deadnode.detection.probe.suspectnode.interval.ms</name>
+  <value>600</value>
+    <description>
+      Interval time in milliseconds for probing suspect node behavior.
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.edekcacheloader.initial.delay.ms</name>
+  <value>6000</value>
+  <description>When KeyProvider is configured, the time delayed until the first
+    attempt to warm up edek cache on NN start up / become active.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.replica.cache.expiry.time</name>
+  <value>5m</value>
+  <description>
+    Living time of replica cached files in milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.stale.datanode.minimum.interval</name>
+  <value>3</value>
+  <description>
+    Minimum number of missed heartbeats intervals for a datanode to
+    be marked stale by the Namenode.  The actual interval is calculated as
+    (dfs.namenode.stale.datanode.minimum.interval * dfs.heartbeat.interval)
+    in seconds.  If this value is greater than the property
+    dfs.namenode.stale.datanode.interval, then the calculated value above
+    is used.
+  </description>
+</property>
+
+</configuration>

@@ -1,0 +1,15 @@
+Wrong shot number:
+[3, 9, 4]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.bind.host', 'alluxio.user.file.create.ttl'], 'reason': ["The property 'alluxio.job.worker.web.bind.host' has the value '1.1.1.1.1.1' which does not follow the correct IP address format.", "The property 'alluxio.user.file.create.ttl' has the value '-2' which is invalid. The value should be a non-negative integer representing the TTL in milliseconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.web.bind.host	alluxio.user.file.create.ttl
+[Ciri] Reason for alluxio.job.worker.web.bind.host: The property 'alluxio.job.worker.web.bind.host' has the value '1.1.1.1.1.1' which does not follow the correct IP address format.
+[Ciri] Reason for alluxio.user.file.create.ttl: The property 'alluxio.user.file.create.ttl' has the value '-2' which is invalid. The value should be a non-negative integer representing the TTL in milliseconds.

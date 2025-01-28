@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['jit_optimize_above_cost', 'wal_writer_delay', 'enable_mergejoin', 'krb_caseins_users'], 'reason': ["The parameter 'jit_optimize_above_cost' is not a valid parameter in PostgreSQL 13.0.", "The parameter 'wal_writer_delay' is not a valid parameter in PostgreSQL 13.0. The correct parameter is 'wal_writer_delay'.", "The parameter 'enable_mergejoin' is not a valid parameter in PostgreSQL 13.0. The correct parameter is 'enable_mergejoin'.", "The parameter 'krb_caseins_users' is not a valid parameter in PostgreSQL 13.0."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: jit_optimize_above_cost	wal_writer_delay	enable_mergejoin	krb_caseins_users
+[Ciri] Reason for jit_optimize_above_cost: The parameter 'jit_optimize_above_cost' is not a valid parameter in PostgreSQL 13.0.
+[Ciri] Reason for wal_writer_delay: The parameter 'wal_writer_delay' is not a valid parameter in PostgreSQL 13.0. The correct parameter is 'wal_writer_delay'.
+[Ciri] Reason for enable_mergejoin: The parameter 'enable_mergejoin' is not a valid parameter in PostgreSQL 13.0. The correct parameter is 'enable_mergejoin'.
+[Ciri] Reason for krb_caseins_users: The parameter 'krb_caseins_users' is not a valid parameter in PostgreSQL 13.0.

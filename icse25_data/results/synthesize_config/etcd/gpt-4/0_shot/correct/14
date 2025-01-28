@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-snapshots', 'quota-backend-bytes', 'enable-v2'], 'reason': ["The 'max-snapshots' parameter is not recognized. The correct parameter for controlling the number of stored snapshots is 'max-snapshot'.", "The 'quota-backend-bytes' value is too low. It must be at least several megabytes in size to be practical, and typically much larger for production use.", "The 'enable-v2' parameter is not applicable to etcd version 3.5.0 as the v2 API is enabled by default and cannot be disabled."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: max-snapshots	quota-backend-bytes	enable-v2
+[Ciri] Reason for max-snapshots: The 'max-snapshots' parameter is not recognized. The correct parameter for controlling the number of stored snapshots is 'max-snapshot'.
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' value is too low. It must be at least several megabytes in size to be practical, and typically much larger for production use.
+[Ciri] Reason for enable-v2: The 'enable-v2' parameter is not applicable to etcd version 3.5.0 as the v2 API is enabled by default and cannot be disabled.

@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.wal.dir.perms', 'hbase.snapshot.restore.failsafe.name'], 'reason': ["The property 'hbase.wal.dir.perms' should have a value in the format 'rwx------' or '700' for secure setups.", "The property 'hbase.snapshot.restore.failsafe.name' contains invalid variable placeholders. It should be corrected to a valid format."]}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.master.logcleaner.plugins', 'hbase.wal.dir.perms', 'hbase.snapshot.restore.failsafe.name', 'hbase.master.loadbalancer.class', 'hbase.mob.compaction.mergeable.threshold', 'hbase.mob.compaction.chore.period', 'hbase.master.wait.on.service.seconds'], 'reason': ["The 'usage' tag is not a valid tag for property elements.", "The 'usage' tag is not a valid tag for property elements.", "The 'usage' tag is not a valid tag for property elements.", "The 'usage' tag is not a valid tag for property elements.", "The 'usage' tag is not a valid tag for property elements.", "The 'usage' tag is not a valid tag for property elements.", "The 'usage' tag is not a valid tag for property elements.", "The 'usage' tag is not a valid tag for property elements."]}
+
+{'hasError': True, 'errParameter': ['hbase.local.dir', 'hbase.master.logcleaner.plugins', 'hbase.wal.dir.perms', 'hbase.snapshot.restore.failsafe.name', 'hbase.master.loadbalancer.class', 'hbase.mob.compaction.mergeable.threshold', 'hbase.mob.compaction.chore.period', 'hbase.master.wait.on.service.seconds'], 'reason': ["The 'usage' tag is not a valid tag for property configuration in HBase version 2.2.7.", "The 'usage' tag is not a valid tag for property configuration in HBase version 2.2.7.", "The value for 'hbase.wal.dir.perms' should be in the format 'rwx------'.", "The usage of variables '{snapshot.name}' and '{restore.timestamp}' in 'hbase.snapshot.restore.failsafe.name' may not be supported in HBase version 2.2.7.", "The 'usage' tag is not a valid tag for property configuration in HBase version 2.2.7.", "The value for 'hbase.mob.compaction.mergeable.threshold' should be in bytes, not in MB.", "The value for 'hbase.mob.compaction.chore.period' should be in seconds.", "The value for 'hbase.master.wait.on.service.seconds' should be in seconds, not minutes."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.local.dir	hbase.master.logcleaner.plugins	hbase.wal.dir.perms	hbase.snapshot.restore.failsafe.name	hbase.master.loadbalancer.class	hbase.mob.compaction.mergeable.threshold	hbase.mob.compaction.chore.period	hbase.master.wait.on.service.seconds
+[Ciri] Reason for hbase.local.dir: The 'usage' tag is not a valid tag for property configuration in HBase version 2.2.7.
+[Ciri] Reason for hbase.master.logcleaner.plugins: The 'usage' tag is not a valid tag for property configuration in HBase version 2.2.7.
+[Ciri] Reason for hbase.wal.dir.perms: The 'usage' tag is not a valid tag for property elements.
+[Ciri] Reason for hbase.snapshot.restore.failsafe.name: The 'usage' tag is not a valid tag for property elements.
+[Ciri] Reason for hbase.master.loadbalancer.class: The 'usage' tag is not a valid tag for property elements.
+[Ciri] Reason for hbase.mob.compaction.mergeable.threshold: The value for 'hbase.mob.compaction.mergeable.threshold' should be in bytes, not in MB.
+[Ciri] Reason for hbase.mob.compaction.chore.period: The 'usage' tag is not a valid tag for property elements.
+[Ciri] Reason for hbase.master.wait.on.service.seconds: The 'usage' tag is not a valid tag for property elements.

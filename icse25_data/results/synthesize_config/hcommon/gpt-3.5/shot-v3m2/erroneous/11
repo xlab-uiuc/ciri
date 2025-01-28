@@ -1,0 +1,16 @@
+Wrong shot number:
+[1, 7]
+
+Correct shot number:
+[16, 6, 15]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.timeout', 'fs.s3a.committer.staging.tmp.path', 'ipc.[port_number].decay-scheduler.thresholds'], 'reason': ["The property 'fs.ftp.timeout' has a negative value which is not valid for timeout settings.", "The property 'fs.s3a.committer.staging.tmp.path' has an invalid value 'tmp////staging'. The value should be a valid path without extra slashes.", "The property 'ipc.[port_number].decay-scheduler.thresholds' has a value '13,25,50' which does not match the expected format for priority levels."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.timeout	fs.s3a.committer.staging.tmp.path	ipc.[port_number].decay-scheduler.thresholds
+[Ciri] Reason for fs.ftp.timeout: The property 'fs.ftp.timeout' has a negative value which is not valid for timeout settings.
+[Ciri] Reason for fs.s3a.committer.staging.tmp.path: The property 'fs.s3a.committer.staging.tmp.path' has an invalid value 'tmp////staging'. The value should be a valid path without extra slashes.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: The property 'ipc.[port_number].decay-scheduler.thresholds' has a value '13,25,50' which does not match the expected format for priority levels.

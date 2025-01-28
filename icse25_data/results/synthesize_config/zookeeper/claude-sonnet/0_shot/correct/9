@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'initLimit', 'syncLimit'], 'reason': ['minSessionTimeout=0 is not recommended as it can lead to potential issues with session expiration. A higher value, such as 4000 (4 seconds), is generally recommended.', 'initLimit=1 is too low and may cause issues with leader election. A higher value, such as 10, is generally recommended.', 'syncLimit=10 is quite high and may impact performance. A lower value, such as 5, is generally recommended.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: minSessionTimeout	initLimit	syncLimit
+[Ciri] Reason for minSessionTimeout: minSessionTimeout=0 is not recommended as it can lead to potential issues with session expiration. A higher value, such as 4000 (4 seconds), is generally recommended.
+[Ciri] Reason for initLimit: initLimit=1 is too low and may cause issues with leader election. A higher value, such as 10, is generally recommended.
+[Ciri] Reason for syncLimit: syncLimit=10 is quite high and may impact performance. A lower value, such as 5, is generally recommended.

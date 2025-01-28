@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-diskless-sync-delay', 'repl-backlog-size', 'replica-lazy-flush', 'replica-serve-stale-data', 'lazyfree-lazy-user-del', 'rdbcompression'], 'reason': ['repl-diskless-sync-delay is not a valid configuration parameter for Redis 7.0.0', 'repl-backlog-size is not a valid configuration parameter for Redis 7.0.0', 'replica-lazy-flush is not a valid configuration parameter for Redis 7.0.0', 'replica-serve-stale-data is not a valid configuration parameter for Redis 7.0.0', 'lazyfree-lazy-user-del is not a valid configuration parameter for Redis 7.0.0', 'rdbcompression is not a valid configuration parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['repl-diskless-sync-delay', 'repl-backlog-size', 'replica-lazy-flush', 'replica-serve-stale-data', 'lazyfree-lazy-user-del'], 'reason': ['repl-diskless-sync-delay is not a valid parameter for redis version 7.0.0', 'repl-backlog-size is not a valid parameter for redis version 7.0.0', 'replica-lazy-flush is not a valid parameter for redis version 7.0.0', 'replica-serve-stale-data is not a valid parameter for redis version 7.0.0', 'lazyfree-lazy-user-del is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['repl-diskless-sync-delay', 'repl-backlog-size', 'replica-lazy-flush', 'replica-serve-stale-data', 'rdbcompression', 'lazyfree-lazy-user-del'], 'reason': ['repl-diskless-sync-delay is not a valid parameter in Redis 7.0.0', 'repl-backlog-size is not a valid parameter in Redis 7.0.0', 'replica-lazy-flush is not a valid parameter in Redis 7.0.0', 'replica-serve-stale-data is not a valid parameter in Redis 7.0.0', 'rdbcompression is not a valid parameter in Redis 7.0.0', 'lazyfree-lazy-user-del is not a valid parameter in Redis 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'repl-backlog-size', 'replica-lazy-flush', 'tcp-backlog', 'rdbcompression', 'repl-diskless-sync-delay', 'lazyfree-lazy-user-del', 'port'], 'reason': ['replica-serve-stale-data is not a valid configuration parameter.', 'repl-backlog-size is not a valid configuration parameter.', 'replica-lazy-flush is not a valid configuration parameter.', 'tcp-backlog is not a valid configuration parameter.', 'rdbcompression is not a valid configuration parameter.', 'repl-diskless-sync-delay is not a valid configuration parameter.', 'lazyfree-lazy-user-del is not a valid configuration parameter.', 'port is not a valid configuration parameter.']}
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'repl-diskless-sync-delay', 'lazyfree-lazy-user-del'], 'reason': ['repl-backlog-size is not a valid parameter for redis version 7.0.0', 'repl-diskless-sync-delay is not a valid parameter for redis version 7.0.0', 'lazyfree-lazy-user-del is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['replica-serve-stale-data', 'repl-backlog-size', 'replica-lazy-flush', 'tcp-backlog', 'rdbcompression', 'repl-diskless-sync-delay', 'lazyfree-lazy-user-del', 'port'], 'reason': ['replica-serve-stale-data is not a valid configuration directive.', 'repl-backlog-size is not a valid configuration directive.', 'replica-lazy-flush is not a valid configuration directive.', 'tcp-backlog is not a valid configuration directive.', 'rdbcompression is not a valid configuration directive.', 'repl-diskless-sync-delay is not a valid configuration directive.', 'lazyfree-lazy-user-del is not a valid configuration directive.', 'port is not a valid configuration directive.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: replica-serve-stale-data	repl-backlog-size	replica-lazy-flush	tcp-backlog	rdbcompression	repl-diskless-sync-delay	lazyfree-lazy-user-del	port
+[Ciri] Reason for replica-serve-stale-data: replica-serve-stale-data is not a valid configuration parameter.
+[Ciri] Reason for repl-backlog-size: repl-backlog-size is not a valid configuration parameter.
+[Ciri] Reason for replica-lazy-flush: replica-lazy-flush is not a valid configuration directive.
+[Ciri] Reason for tcp-backlog: tcp-backlog is not a valid configuration directive.
+[Ciri] Reason for rdbcompression: rdbcompression is not a valid configuration directive.
+[Ciri] Reason for repl-diskless-sync-delay: repl-diskless-sync-delay is not a valid configuration parameter.
+[Ciri] Reason for lazyfree-lazy-user-del: lazyfree-lazy-user-del is not a valid configuration parameter.
+[Ciri] Reason for port: port is not a valid configuration parameter.

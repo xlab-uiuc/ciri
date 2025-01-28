@@ -1,0 +1,38 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['syncEnabled', 'sslQuorumReloadCertFiles'], 'reason': ['syncEnabled is not a valid configuration parameter for zookeeper version 3.7.0', 'sslQuorumReloadCertFiles is not a valid configuration parameter for zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'portUnification', 'electionAlg', 'maxClientCnxns', 'syncEnabled', 'sslQuorumReloadCertFiles'], 'reason': ['dataDir should be a directory path', 'clientPort should be an integer', 'portUnification should be a boolean', 'electionAlg should be an integer', 'maxClientCnxns should be an integer', 'syncEnabled should be a boolean', 'sslQuorumReloadCertFiles should be a boolean']}
+
+{'hasError': True, 'errParameter': ['clientPort', 'portUnification'], 'reason': ['clientPort and portUnification cannot be used together', 'portUnification is only available in Zookeeper version 3.5.5 or later']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dataDir', 'clientPort', 'portUnification'], 'reason': ['dataDir should be a directory', 'clientPort should be a number', 'portUnification should be a boolean']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['maxClientCnxns', 'portUnification', 'electionAlg', 'syncEnabled'], 'reason': ['maxClientCnxns is deprecated', 'portUnification is deprecated', 'electionAlg is deprecated', 'syncEnabled is deprecated']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPort', 'portUnification'], 'reason': ['clientPort should be 2181', 'portUnification should be false']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['Server IDs must be unique. Duplicate server IDs found.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['Server IDs must be unique. Duplicate server IDs found: 1, 2, 3']}
+
+{'hasError': True, 'errParameter': ['syncEnabled', 'sslQuorumReloadCertFiles'], 'reason': ['syncEnabled is deprecated in version 3.7.0', 'sslQuorumReloadCertFiles is not a valid property']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server.x properties are not supported in ZooKeeper version 3.7.0. Please use the server.x=<hostname>:<port>:<port> syntax instead.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: server.1	server.2	server.3
+[Ciri] Reason for server.1: The server.x properties are not supported in ZooKeeper version 3.7.0. Please use the server.x=<hostname>:<port>:<port> syntax instead.
+[Ciri] Reason for server.2: 
+[Ciri] Reason for server.3: 

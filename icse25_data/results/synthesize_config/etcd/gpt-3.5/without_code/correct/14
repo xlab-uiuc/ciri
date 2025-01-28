@@ -1,0 +1,27 @@
+Wrong shot number:
+[8, 3, 1]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'log-outputs'], 'reason': ["The property 'quota-backend-bytes' should be set to an integer value, not 1.", "The property 'log-outputs' should be an array of strings, not [stderr]."]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'snapshot-count'], 'reason': ["The property 'quota-backend-bytes' should be set to 0 for unlimited quota, but it is set to 1.", "The property 'snapshot-count' should be an Integer value, but it is set to '10000'."]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'log-outputs', 'snapshot-count'], 'reason': ["The property 'quota-backend-bytes' should be set to 0 for unlimited quota.", "The property 'log-outputs' should not be set in the configuration file.", "The property 'snapshot-count' should be an Integer value, not a string."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'log-outputs', 'snapshot-count'], 'reason': ["The property 'quota-backend-bytes' should be set to 0 for unlimited quota.", "The property 'log-outputs' should not be set in the configuration for etcd version 3.5.0.", "The property 'snapshot-count' should be an Integer value, not a string."]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'snapshot-count'], 'reason': ["The property 'quota-backend-bytes' should be set to 0 for unlimited quota, but it is set to 1.", "The property 'snapshot-count' should be an Integer value, but it is set to '10000'."]}
+
+{'hasError': True, 'errParameter': ['quota-backend-bytes', 'snapshot-count'], 'reason': ["The property 'quota-backend-bytes' should be set to 0 for unlimited quota, but it is set to 1.", "The property 'snapshot-count' should be an Integer value, but it is set to '10000' which is not of the correct type."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: quota-backend-bytes	snapshot-count
+[Ciri] Reason for quota-backend-bytes: The property 'quota-backend-bytes' should be set to 0 for unlimited quota, but it is set to 1.
+[Ciri] Reason for snapshot-count: The property 'snapshot-count' should be an Integer value, but it is set to '10000' which is not of the correct type.

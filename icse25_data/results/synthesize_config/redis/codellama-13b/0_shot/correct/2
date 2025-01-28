@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp-backlog', 'repl-backlog-size', 'oom-score-adj-values', 'oom-score-adj'], 'reason': ['tcp-backlog: The value must be between 1 and 128.', 'repl-backlog-size: The value must be between 1mb and 128mb.', 'oom-score-adj-values: The value must be between 0 and 1000.', 'oom-score-adj: The value must be between 0 and 1000.']}
+
+{'hasError': True, 'errParameter': ['slowlog-log-slower-than'], 'reason': ['slowlog-log-slower-than should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['tcp-backlog', 'stream-node-max-entries', 'repl-backlog-size', 'oom-score-adj-values', 'slowlog-log-slower-than', 'replica-serve-stale-data', 'oom-score-adj'], 'reason': ['tcp-backlog: The value must be greater than or equal to 0.', 'stream-node-max-entries: The value must be greater than or equal to 0.', 'repl-backlog-size: The value must be greater than or equal to 0.', 'oom-score-adj-values: The value must be greater than or equal to 0.', 'slowlog-log-slower-than: The value must be greater than or equal to 0.', 'replica-serve-stale-data: The value must be yes or no.', 'oom-score-adj: The value must be yes or no.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp-backlog', 'stream-node-max-entries', 'repl-backlog-size', 'oom-score-adj-values', 'slowlog-log-slower-than', 'replica-serve-stale-data', 'oom-score-adj'], 'reason': ['tcp-backlog is not a valid parameter', 'stream-node-max-entries is not a valid parameter', 'repl-backlog-size is not a valid parameter', 'oom-score-adj-values is not a valid parameter', 'slowlog-log-slower-than is not a valid parameter', 'replica-serve-stale-data is not a valid parameter', 'oom-score-adj is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['tcp-backlog', 'stream-node-max-entries', 'repl-backlog-size', 'oom-score-adj-values', 'slowlog-log-slower-than', 'replica-serve-stale-data', 'oom-score-adj'], 'reason': ['tcp-backlog is not a valid configuration property.', 'stream-node-max-entries is not a valid configuration property.', 'repl-backlog-size is not a valid configuration property.', 'oom-score-adj-values is not a valid configuration property.', 'slowlog-log-slower-than is not a valid configuration property.', 'replica-serve-stale-data is not a valid configuration property.', 'oom-score-adj is not a valid configuration property.']}
+
+{'hasError': True, 'errParameter': ['tcp-backlog', 'proc-title-template', 'stream-node-max-entries', 'repl-backlog-size', 'oom-score-adj-values', 'slowlog-log-slower-than', 'replica-serve-stale-data', 'oom-score-adj'], 'reason': ['tcp-backlog is not a valid property', 'proc-title-template is not a valid property', 'stream-node-max-entries is not a valid property', 'repl-backlog-size is not a valid property', 'oom-score-adj-values is not a valid property', 'slowlog-log-slower-than is not a valid property', 'replica-serve-stale-data is not a valid property', 'oom-score-adj is not a valid property']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: tcp-backlog	stream-node-max-entries	repl-backlog-size	oom-score-adj-values	slowlog-log-slower-than	replica-serve-stale-data	oom-score-adj
+[Ciri] Reason for tcp-backlog: tcp-backlog is not a valid parameter
+[Ciri] Reason for stream-node-max-entries: stream-node-max-entries is not a valid parameter
+[Ciri] Reason for repl-backlog-size: repl-backlog-size is not a valid parameter
+[Ciri] Reason for oom-score-adj-values: oom-score-adj-values is not a valid configuration property.
+[Ciri] Reason for slowlog-log-slower-than: slowlog-log-slower-than is not a valid parameter
+[Ciri] Reason for replica-serve-stale-data: replica-serve-stale-data is not a valid parameter
+[Ciri] Reason for oom-score-adj: oom-score-adj is not a valid parameter

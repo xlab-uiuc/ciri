@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout', 'snapshot-count', 'max-wals'], 'reason': ['proxy-read-timeout must be greater than or equal to 0', 'proxy-write-timeout must be greater than or equal to 0', 'snapshot-count must be greater than or equal to 0', 'max-wals must be greater than or equal to 0']}
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'proxy-read-timeout', 'proxy-write-timeout'], 'reason': ['listen-client-urls: The listen-client-urls property must be a list of URLs. The value of the property is: http://localhost:2379', 'proxy-read-timeout: The proxy-read-timeout property must be an integer. The value of the property is: 0', 'proxy-write-timeout: The proxy-write-timeout property must be an integer. The value of the property is: 10000']}
+
+{'hasError': True, 'errParameter': ['proxy-read-timeout', 'proxy-write-timeout', 'snapshot-count', 'max-wals'], 'reason': ['proxy-read-timeout should be greater than 0', 'proxy-write-timeout should be greater than 0', 'snapshot-count should be greater than 0', 'max-wals should be greater than 0']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: proxy-read-timeout	proxy-write-timeout	snapshot-count	max-wals
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout should be greater than 0
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout should be greater than 0
+[Ciri] Reason for snapshot-count: snapshot-count must be greater than or equal to 0
+[Ciri] Reason for max-wals: max-wals should be greater than 0

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.http-bind-host', 'dfs.domain.socket.path'], 'reason': ['The value for dfs.journalnode.http-bind-host should not be set to -1.0.0.0. It should be a valid IP address or hostname.', "The value for dfs.domain.socket.path should be a valid path. The current value '/valid/file2' may not be a valid path."]}
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.http-bind-host', 'dfs.domain.socket.path'], 'reason': ['The value for dfs.journalnode.http-bind-host should not be set to -1.0.0.0. It should be a valid IP address or hostname.', 'The value for dfs.domain.socket.path should be a valid path. Ensure that the path is correct and accessible.']}
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.http-bind-host', 'dfs.domain.socket.path'], 'reason': ['The value for dfs.journalnode.http-bind-host should not be set to -1.0.0.0. It should be a valid IP address or hostname.', "The value for dfs.domain.socket.path should be a valid path to a UNIX domain socket. The value '/valid/file2' may not be a valid path."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.journalnode.http-bind-host	dfs.domain.socket.path
+[Ciri] Reason for dfs.journalnode.http-bind-host: The value for dfs.journalnode.http-bind-host should not be set to -1.0.0.0. It should be a valid IP address or hostname.
+[Ciri] Reason for dfs.domain.socket.path: The value for dfs.domain.socket.path should be a valid path. The current value '/valid/file2' may not be a valid path.

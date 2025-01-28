@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.enableSasl is deprecated and should be removed.', 'quorum.auth.serverRequireSasl is deprecated and should be removed.', 'quorum.auth.server.saslLoginContext is deprecated and should be removed.']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'quorum.auth.server.saslLoginContext', 'quorum.cnxn.threads.size', 'standaloneEnabled'], 'reason': ['quorum.auth.enableSasl is not a valid property for ZooKeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for ZooKeeper version 3.7.0', 'quorum.auth.server.saslLoginContext is not a valid property for ZooKeeper version 3.7.0', 'quorum.cnxn.threads.size is not a valid property for ZooKeeper version 3.7.0', 'standaloneEnabled is not a valid property for ZooKeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'quorum.auth.server.saslLoginContext'], 'reason': ['quorum.auth.enableSasl is not a valid property for Zookeeper version 3.7.0', 'quorum.auth.serverRequireSasl is not a valid property for Zookeeper version 3.7.0', 'quorum.auth.server.saslLoginContext is not a valid property for Zookeeper version 3.7.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: quorum.auth.enableSasl	quorum.auth.serverRequireSasl	quorum.auth.server.saslLoginContext
+[Ciri] Reason for quorum.auth.enableSasl: quorum.auth.enableSasl is not a valid property for Zookeeper version 3.7.0
+[Ciri] Reason for quorum.auth.serverRequireSasl: quorum.auth.serverRequireSasl is not a valid property for Zookeeper version 3.7.0
+[Ciri] Reason for quorum.auth.server.saslLoginContext: quorum.auth.server.saslLoginContext is deprecated and should be removed.

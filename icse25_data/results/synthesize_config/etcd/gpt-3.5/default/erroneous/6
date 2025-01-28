@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 2, 7]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['cert-file'], 'reason': ["The property 'cert-file' has an invalid path format '/\\etcd/cert'. The correct format should not contain '\\' and should be '/path/to/cert'."]}
+
+{'hasError': True, 'errParameter': ['cert-file'], 'reason': ["The property 'cert-file' has an invalid path format '/\\etcd/cert'. The correct path format should not contain '\\' and should start with a valid root path."]}
+
+{'hasError': True, 'errParameter': ['cert-file'], 'reason': ["The property 'cert-file' has an invalid path format '/\\etcd/cert'. The correct path format should not contain backslashes and should start with a valid root directory."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: cert-file
+[Ciri] Reason for cert-file: The property 'cert-file' has an invalid path format '/\etcd/cert'. The correct path format should not contain '\' and should start with a valid root path.

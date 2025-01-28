@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.master.info.bindAddress</name>
+  <value>0.0.0.0</value>
+    <description>The bind address for the HBase Master web UI
+    </description>
+</property>
+
+<property>
+  <name>hbase.ipc.server.callqueue.handler.factor</name>
+  <value>0.05</value>
+    <description>Factor to determine the number of call queues.
+      A value of 0 means a single queue shared between all the handlers.
+      A value of 1 means that each handler has its own queue.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.minorcompaction.pagecache.drop</name>
+  <value>true</value>
+    <description>Specifies whether to drop pages read/written into the system page cache by
+      minor compactions. Setting it to true helps prevent minor compactions from
+      polluting the page cache, which is most beneficial on clusters with low
+      memory to storage ratio or very write heavy clusters. You may want to set it to
+      false under moderate to low write workload when bulk of the reads are
+      on the most recently written data.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.throughput.higher.bound</name>
+  <value>104857600</value>
+    <description>The target upper bound on aggregate compaction throughput, in bytes/sec. Allows
+    you to control aggregate compaction throughput demand when the
+    PressureAwareCompactionThroughputController throughput controller is active. (It is active by
+    default.) The maximum throughput will be tuned between the lower and upper bounds when
+    compaction pressure is within the range [0.0, 1.0]. If compaction pressure is 1.0 or greater
+    the higher bound will be ignored until pressure returns to the normal range.</description>
+</property>
+
+<property>
+  <name>hbase.table.lock.enable</name>
+  <value>true</value>
+    <description>Set to true to enable locking the table in zookeeper for schema change operations.
+    Table locking from master prevents concurrent schema modifications to corrupt table
+    state.</description>
+</property>
+
+<property>
+  <name>hbase.coordinated.state.manager.class</name>
+  <value>org.apache.hadoop.hbase.coordination.ZkCoordinatedStateManager</value>
+    <description>Fully qualified name of class implementing coordinated state manager.</description>
+</property>
+
+<property>
+  <name>hbase.http.filter.initializers</name>
+  <value>org.apache.hadoop.hbase.http.lib.StaticUserWebFilter</value>
+    <description>
+      A comma separated list of class names. Each class in the list must extend
+      org.apache.hadoop.hbase.http.FilterInitializer. The corresponding Filter will
+      be initialized. Then, the Filter will be applied to all user facing jsp
+      and servlet web pages.
+      The ordering of the list defines the ordering of the filters.
+      The default StaticUserWebFilter add a user principal as defined by the
+      hbase.http.staticuser.user property.
+    </description>
+</property>
+
+<property>
+  <name>hbase.security.visibility.mutations.checkauths</name>
+  <value>true</value>
+    <description>
+      This property if enabled, will check whether the labels in the visibility
+      expression are associated with the user issuing the mutation
+    </description>
+</property>
+
+</configuration>

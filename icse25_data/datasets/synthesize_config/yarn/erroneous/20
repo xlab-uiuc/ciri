@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.placement-constraints.handler</name>
+  <value>disabled</value>
+    <description>
+      Specify which handler will be used to process PlacementConstraints.
+      Acceptable values are: `placement-processor`, `scheduler` and `disabled`.
+      For a detailed explanation of these values, please refer to documentation.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.zk-appid-node.split-index</name>
+  <value>0</value>
+    <description>Index at which last section of application id (with each section
+      separated by _ in application id) will be split so that application znode
+      stored in zookeeper RM state store will be stored as two different znodes
+      (parent-child). Split is done from the end.
+      For instance, with no split, appid znode will be of the form
+      application_1352994193343_0001. If the value of this config is 1, the
+      appid znode will be broken into two parts application_1352994193343_000
+      and 1 respectively with former being the parent node.
+      application_1352994193343_0002 will then be stored as 2 under the parent
+      node application_1352994193343_000. This config can take values from 0 to 4.
+      0 means there will be no split. If configuration value is outside this
+      range, it will be treated as config value of 0(i.e. no split). A value
+      larger than 0 (up to 4) should be configured if you are storing a large number
+      of apps in ZK based RM state store and state store operations are failing due to
+      LenError in Zookeeper.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.pmem-check-enabled</name>
+  <value>10000</value>
+    <description>Whether physical memory limits will be enforced for
+    containers.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.path</name>
+  <value>/valid/file1</value>
+    <description>The path to the Linux container executor.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.entity-group-fs-store.scan-interval-seconds</name>
+  <value>60</value>
+    <description>
+      Scan interval for ATS v1.5 entity group file system storage reader.This
+      value controls how frequent the reader will scan the HDFS active directory
+      for application status.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.writer.flush-interval-seconds</name>
+  <value>120</value>
+    <description>The setting that controls how often the timeline collector
+    flushes the timeline writer.</description>
+</property>
+
+<property>
+  <name>yarn.sharedcache.admin.address</name>
+  <value>0.0.0.0:3000</value>
+    <description>The address of the admin interface in the SCM (shared cache manager)</description>
+</property>
+
+<property>
+  <name>yarn.scheduler.configuration.leveldb-store.compaction-interval-secs</name>
+  <value>86400</value>
+    <description>
+      The compaction interval for LevelDB configuration store in secs,
+      when yarn.scheduler.configuration.store.class is configured to be
+      "leveldb". Default is one day.
+    </description>
+</property>
+
+</configuration>

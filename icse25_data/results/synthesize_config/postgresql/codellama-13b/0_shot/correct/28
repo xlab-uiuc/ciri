@@ -1,0 +1,36 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'backslash_quote', 'commit_delay', 'geqo', 'transform_null_equals'], 'reason': ['autovacuum_naptime must be an integer between 1 and 604800', "backslash_quote must be one of the following: 'on', 'off', 'safe_encoding'", 'commit_delay must be an integer between 0 and 1000', "geqo must be one of the following: 'on', 'off'", "transform_null_equals must be one of the following: 'on', 'off'"]}
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime'], 'reason': ['autovacuum_naptime must be a value between 1 and 2147483647']}
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'commit_delay', 'geqo'], 'reason': ['autovacuum_naptime must be a value between 1 and 2147483647. Value: 1min', 'commit_delay must be a value between 0 and 2147483647. Value: 2', 'geqo must be on or off. Value: geqo']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'commit_delay', 'geqo'], 'reason': ['autovacuum_naptime must be a number followed by a unit (such as "1min")', 'commit_delay must be a number followed by a unit (such as "2s")', 'geqo must be on or off']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'commit_delay'], 'reason': ['autovacuum_naptime should be a number of seconds', 'commit_delay should be a number of milliseconds']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'backslash_quote', 'commit_delay'], 'reason': ['autovacuum_naptime should be a number of seconds, not a time unit.', 'backslash_quote should be a string, not a boolean.', 'commit_delay should be a number of seconds, not a time unit.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'commit_delay'], 'reason': ['autovacuum_naptime should be a number of seconds, not a time unit.', 'commit_delay should be a number of seconds, not a time unit.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime'], 'reason': ['autovacuum_naptime must be a number of seconds']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime', 'backslash_quote', 'commit_delay', 'geqo', 'timezone'], 'reason': ['autovacuum_naptime is not a valid value for this parameter. Valid values are integers between 1 and 86400.', "backslash_quote is not a valid value for this parameter. Valid values are 'on', 'off', 'safe_encoding' and 'disable_string_warning'.", 'commit_delay is not a valid value for this parameter. Valid values are integers between 0 and 1000.', "geqo is not a valid value for this parameter. Valid values are 'on', 'off' and 'constraints'.", 'timezone is not a valid value for this parameter. Valid values are strings containing time zone names.']}
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime'], 'reason': ['autovacuum_naptime must be a valid interval']}
+
+{'hasError': True, 'errParameter': ['autovacuum_naptime'], 'reason': ['autovacuum_naptime is not a valid parameter for PostgreSQL 13.0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: autovacuum_naptime
+[Ciri] Reason for autovacuum_naptime: autovacuum_naptime must be a valid interval

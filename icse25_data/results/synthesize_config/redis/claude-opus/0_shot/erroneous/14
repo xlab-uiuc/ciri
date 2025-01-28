@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['bind-source-addr', 'dynamic-hz', 'jemalloc-bg-thread'], 'reason': ["bind-source-addr should be a valid IP address, but '2.2.2.2.2.2' is not a valid IP", 'dynamic-hz is not a valid configuration parameter in Redis 7.0.0', 'jemalloc-bg-thread is not a valid configuration parameter in Redis 7.0.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: bind-source-addr	dynamic-hz	jemalloc-bg-thread
+[Ciri] Reason for bind-source-addr: bind-source-addr should be a valid IP address, but '2.2.2.2.2.2' is not a valid IP
+[Ciri] Reason for dynamic-hz: dynamic-hz is not a valid configuration parameter in Redis 7.0.0
+[Ciri] Reason for jemalloc-bg-thread: jemalloc-bg-thread is not a valid configuration parameter in Redis 7.0.0

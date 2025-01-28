@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['wal_level', 'max_prepared_transactions', 'krb_caseins_users', 'datestyle', 'effective_io_concurrency'], 'reason': ["wal_level must be set to 'logical' for logical replication", 'max_prepared_transactions must be set to at least 100 for logical replication', "krb_caseins_users must be set to 'on' for logical replication", "datestyle must be set to 'iso, mdy' for logical replication", 'effective_io_concurrency must be set to 1 for logical replication']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: wal_level	max_prepared_transactions	krb_caseins_users	datestyle	effective_io_concurrency
+[Ciri] Reason for wal_level: wal_level must be set to 'logical' for logical replication
+[Ciri] Reason for max_prepared_transactions: max_prepared_transactions must be set to at least 100 for logical replication
+[Ciri] Reason for krb_caseins_users: krb_caseins_users must be set to 'on' for logical replication
+[Ciri] Reason for datestyle: datestyle must be set to 'iso, mdy' for logical replication
+[Ciri] Reason for effective_io_concurrency: effective_io_concurrency must be set to 1 for logical replication

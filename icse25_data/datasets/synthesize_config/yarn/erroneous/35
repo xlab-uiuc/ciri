@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.dispatcher.print-events-info.threshold</name>
+  <value>2500</value>
+    <description>
+      The threshold used to trigger the logging of event types
+      and counts in RM's main event dispatcher. Default length is 5000,
+      which means RM will print events info when the queue size cumulatively
+      reaches 5000 every time. Such info can be used to reveal what kind of events
+      that RM is stuck at processing mostly, it can help to
+      narrow down certain performance issues.
+    </description>
+</property>
+
+<property>
+  <name>yarn.scheduler.maximum-allocation-vcores</name>
+  <value>16</value>
+    <description>The maximum allocation for every container request at the RM
+    in terms of virtual CPU cores. Requests higher than this will throw an
+    InvalidResourceRequestException.</description>
+</property>
+
+<property>
+  <name>yarn.client.failover-retries</name>
+  <value>-1</value>
+    <description>When HA is enabled, the number of retries per
+      attempt to connect to a ResourceManager. In other words,
+      it is the ipc.client.connect.max.retries to be used during
+      failover attempts</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.configuration.file-system-based-store</name>
+  <value>/valid/file2</value>
+    <description>
+    The value specifies the file system (e.g. HDFS) path where ResourceManager
+    loads configuration if yarn.resourcemanager.configuration.provider-class
+    is set to org.apache.hadoop.yarn.FileSystemBasedConfigurationProvider.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.cpu-vcores</name>
+  <value>8</value>
+    <description>Number of vcores that can be allocated
+    for containers. This is used by the RM scheduler when allocating
+    resources for containers. This is not used to limit the number of
+    CPUs used by YARN containers. If it is set to -1 and
+    yarn.nodemanager.resource.detect-hardware-capabilities is true, it is
+    automatically determined from the hardware in case of Windows and Linux.
+    In other cases, number of vcores is 8 by default.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.linux-container-executor.nonsecure-mode.local-user</name>
+  <value>nobody</value>
+    <description>The UNIX user that containers will run as when
+      Linux-container-executor is used in nonsecure mode (a use case for this
+      is using cgroups) if the
+      yarn.nodemanager.linux-container-executor.nonsecure-mode.limit-users is
+      set to true.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.entity-group-fs-store.done-dir</name>
+  <value>/valid/file2</value>
+    <description>HDFS path to store done application’s timeline data</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.entity-group-fs-store.retain-seconds</name>
+  <value>604800</value>
+    <description>
+      How long the ATS v1.5 entity group file system storage will keep an
+      application's data in the done directory.
+    </description>
+</property>
+
+</configuration>

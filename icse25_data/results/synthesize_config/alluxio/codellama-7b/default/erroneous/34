@@ -1,0 +1,18 @@
+Wrong shot number:
+[12, 3, 1]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type'], 'reason': ["The value of the property 'alluxio.master.journal.type' should be one of the following: [EMBEDDED, UFS, MULTI]. The value 'CIRI' is not supported."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type'], 'reason': ["The value of the property 'alluxio.master.journal.type' should be one of the following: [UFS, MEMORY, EMBEDDED, LOCAL]."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.journal.type'], 'reason': ["The property 'alluxio.master.journal.type' has the value 'CIRI' which is not a valid value. The valid values are 'UFS', 'EMBEDDED', 'EMBEDDED_LEADER_ELECTION', 'EMBEDDED_NO_LEADER_ELECTION'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.master.journal.type
+[Ciri] Reason for alluxio.master.journal.type: The value of the property 'alluxio.master.journal.type' should be one of the following: [EMBEDDED, UFS, MULTI]. The value 'CIRI' is not supported.

@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hot_standby'], 'reason': ['hot_standby is not a valid parameter for postgresql version 13.0']}
+
+{'hasError': True, 'errParameter': ['wal_level'], 'reason': ["wal_level must be set to 'logical' for logical replication to work."]}
+
+{'hasError': True, 'errParameter': ['synchronous_commit', 'synchronous_standby_names', 'wal_init_zero', 'hot_standby', 'autovacuum_vacuum_cost_limit', 'shared_memory_type'], 'reason': ['synchronous_commit must be either on or off', 'synchronous_standby_names must be a list of standby names', 'wal_init_zero must be either on or off', 'hot_standby must be either on or off', 'autovacuum_vacuum_cost_limit must be a positive integer', 'shared_memory_type must be either mmap or posix']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['max_connections'], 'reason': ['max_connections must be an integer.']}
+
+{'hasError': True, 'errParameter': ['hot_standby'], 'reason': ['The parameter hot_standby is not supported in PostgreSQL 13.0.']}
+
+{'hasError': True, 'errParameter': ['hot_standby'], 'reason': ['hot_standby is not a valid parameter for postgresql version 13.0']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hot_standby
+[Ciri] Reason for hot_standby: The parameter hot_standby is not supported in PostgreSQL 13.0.

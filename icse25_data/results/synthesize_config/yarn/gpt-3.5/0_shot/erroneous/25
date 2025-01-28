@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.container.stderr.pattern'], 'reason': ["The value of 'yarn.nodemanager.hostname' should be a valid hostname or IP address.", "The value of 'yarn.nodemanager.container.stderr.pattern' is missing the closing curly brace '}'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.container.stderr.pattern'], 'reason': ["The value of 'yarn.nodemanager.hostname' should be a valid hostname or IP address.", "The value of 'yarn.nodemanager.container.stderr.pattern' is missing the closing brace '}'."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.container.stderr.pattern'], 'reason': ["The value for 'yarn.nodemanager.hostname' should be a valid hostname or IP address.", "The value for 'yarn.nodemanager.container.stderr.pattern' is missing the closing curly brace '}'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.hostname	yarn.nodemanager.container.stderr.pattern
+[Ciri] Reason for yarn.nodemanager.hostname: The value for 'yarn.nodemanager.hostname' should be a valid hostname or IP address.
+[Ciri] Reason for yarn.nodemanager.container.stderr.pattern: The value of 'yarn.nodemanager.container.stderr.pattern' is missing the closing curly brace '}'.

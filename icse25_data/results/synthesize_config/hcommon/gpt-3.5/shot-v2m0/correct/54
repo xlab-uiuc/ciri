@@ -1,0 +1,18 @@
+Correct shot number:
+[2, 6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.tmp.dir', 'hadoop.tmp.dir', 'fs.AbstractFileSystem.har.impl', 'fs.ftp.transfer.mode', 'fs.s3a.multipart.size', 'fs.s3a.select.input.csv.record.delimiter', 'fs.azure.sas.expiry.period', 'hadoop.security.kms.client.encrypted.key.cache.expiry'], 'reason': ["Invalid property 'usage' found in hadoop.tmp.dir", "Invalid property 'usage' found in hadoop.tmp.dir", "Invalid property 'usage' found in fs.AbstractFileSystem.har.impl", "Invalid property 'usage' found in fs.ftp.transfer.mode", "Invalid property 'usage' found in fs.s3a.multipart.size", "Invalid property 'usage' found in fs.s3a.select.input.csv.record.delimiter", "Invalid property 'usage' found in fs.azure.sas.expiry.period", "Invalid property 'usage' found in hadoop.security.kms.client.encrypted.key.cache.expiry"]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hadoop.tmp.dir	hadoop.tmp.dir	fs.AbstractFileSystem.har.impl	fs.ftp.transfer.mode	fs.s3a.multipart.size	fs.s3a.select.input.csv.record.delimiter	fs.azure.sas.expiry.period	hadoop.security.kms.client.encrypted.key.cache.expiry
+[Ciri] Reason for hadoop.tmp.dir: Invalid property 'usage' found in hadoop.tmp.dir
+[Ciri] Reason for hadoop.tmp.dir: Invalid property 'usage' found in hadoop.tmp.dir
+[Ciri] Reason for fs.AbstractFileSystem.har.impl: Invalid property 'usage' found in fs.AbstractFileSystem.har.impl
+[Ciri] Reason for fs.ftp.transfer.mode: Invalid property 'usage' found in fs.ftp.transfer.mode
+[Ciri] Reason for fs.s3a.multipart.size: Invalid property 'usage' found in fs.s3a.multipart.size
+[Ciri] Reason for fs.s3a.select.input.csv.record.delimiter: Invalid property 'usage' found in fs.s3a.select.input.csv.record.delimiter
+[Ciri] Reason for fs.azure.sas.expiry.period: Invalid property 'usage' found in fs.azure.sas.expiry.period
+[Ciri] Reason for hadoop.security.kms.client.encrypted.key.cache.expiry: Invalid property 'usage' found in hadoop.security.kms.client.encrypted.key.cache.expiry

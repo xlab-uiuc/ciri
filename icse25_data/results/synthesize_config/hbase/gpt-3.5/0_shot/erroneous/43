@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.min.size', 'hbase.hstore.compaction.max.size'], 'reason': ['The value for hbase.hstore.compaction.min.size should be in bytes, but it is set to 134217728 which is 128 MB. It should be corrected to the equivalent value in bytes.', 'The value for hbase.hstore.compaction.max.size should be in bytes, but it is set to 130000000 which is not the correct representation. It should be corrected to the equivalent value in bytes.']}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.min.size', 'hbase.hstore.compaction.max.size', 'hbase.hstore.compaction.throughput.lower.bound'], 'reason': ['The values for hbase.hstore.compaction.min.size, hbase.hstore.compaction.max.size, and hbase.hstore.compaction.throughput.lower.bound should be specified in bytes. The values provided are not in the correct format.', 'The values for hbase.hstore.compaction.min.size, hbase.hstore.compaction.max.size, and hbase.hstore.compaction.throughput.lower.bound should be integers representing the size in bytes.']}
+
+{'hasError': True, 'errParameter': ['hbase.hstore.compaction.min.size', 'hbase.hstore.compaction.max.size'], 'reason': ['The values for hbase.hstore.compaction.min.size and hbase.hstore.compaction.max.size are not recommended for HBase version 2.2.7. The default values are 15 MB and 1 GB respectively. It is advised to use the default values or adjust them based on specific requirements.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.hstore.compaction.min.size	hbase.hstore.compaction.max.size
+[Ciri] Reason for hbase.hstore.compaction.min.size: The values for hbase.hstore.compaction.min.size and hbase.hstore.compaction.max.size are not recommended for HBase version 2.2.7. The default values are 15 MB and 1 GB respectively. It is advised to use the default values or adjust them based on specific requirements.
+[Ciri] Reason for hbase.hstore.compaction.max.size: The value for hbase.hstore.compaction.max.size should be in bytes, but it is set to 130000000 which is not the correct representation. It should be corrected to the equivalent value in bytes.

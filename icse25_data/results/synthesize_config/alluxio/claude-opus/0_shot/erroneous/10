@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.home', 'alluxio.master.embedded.journal.entry.size.max'], 'reason': ['The value for alluxio.home should not contain a backslash. Use a forward slash instead, like /hadoop/s3a', 'The alluxio.master.embedded.journal.entry.size.max property is not available in Alluxio 2.5.0. It was introduced in version 2.6.0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.home	alluxio.master.embedded.journal.entry.size.max
+[Ciri] Reason for alluxio.home: The value for alluxio.home should not contain a backslash. Use a forward slash instead, like /hadoop/s3a
+[Ciri] Reason for alluxio.master.embedded.journal.entry.size.max: The alluxio.master.embedded.journal.entry.size.max property is not available in Alluxio 2.5.0. It was introduced in version 2.6.0.

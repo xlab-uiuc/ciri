@@ -1,0 +1,12 @@
+Correct shot number:
+[2, 4, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'hadoop.metrics.jvm.use-thread-mxbean'], 'reason': ['Invalid value format. The value should be a valid port number.', "The property name has an incorrect format. It should be 'hadoop.metrics.jvm.useThreadMXBean'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host.port	hadoop.metrics.jvm.use-thread-mxbean
+[Ciri] Reason for fs.ftp.host.port: Invalid value format. The value should be a valid port number.
+[Ciri] Reason for hadoop.metrics.jvm.use-thread-mxbean: The property name has an incorrect format. It should be 'hadoop.metrics.jvm.useThreadMXBean'.

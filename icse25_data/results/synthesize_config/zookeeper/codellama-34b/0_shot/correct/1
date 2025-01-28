@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3', 'server.4', 'server.5'], 'reason': ['The server property should be in the format server.id=host:port:port. For example, server.1=localhost:2888:3888']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'clientPortAddress'], 'reason': ['secureClientPort and clientPortAddress cannot be used together', 'clientPortAddress cannot be 0.0.0.0']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'clientPortAddress'], 'reason': ['secureClientPort and clientPortAddress cannot be used together. Please choose one of them.', 'clientPortAddress should be a valid IP address']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: secureClientPort	clientPortAddress
+[Ciri] Reason for secureClientPort: secureClientPort and clientPortAddress cannot be used together
+[Ciri] Reason for clientPortAddress: clientPortAddress cannot be 0.0.0.0

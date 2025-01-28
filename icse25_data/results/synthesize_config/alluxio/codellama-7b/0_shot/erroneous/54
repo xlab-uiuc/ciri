@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.buffer.size.bytes', 'alluxio.user.streaming.writer.buffer.size.messages'], 'reason': ['alluxio.user.streaming.writer.buffer.size.bytes should be a positive integer', 'alluxio.user.streaming.writer.buffer.size.messages should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.buffer.size.bytes', 'alluxio.user.streaming.writer.buffer.size.messages'], 'reason': ['alluxio.user.streaming.writer.buffer.size.bytes should be a positive integer, but the value is 0', 'alluxio.user.streaming.writer.buffer.size.messages should be a positive integer, but the value is 0']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.writer.buffer.size.messages'], 'reason': ["The property 'alluxio.user.streaming.writer.buffer.size.messages' is not a valid property for Alluxio version 2.5.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.streaming.writer.buffer.size.bytes	alluxio.user.streaming.writer.buffer.size.messages
+[Ciri] Reason for alluxio.user.streaming.writer.buffer.size.bytes: alluxio.user.streaming.writer.buffer.size.bytes should be a positive integer, but the value is 0
+[Ciri] Reason for alluxio.user.streaming.writer.buffer.size.messages: alluxio.user.streaming.writer.buffer.size.messages should be a positive integer

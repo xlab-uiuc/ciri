@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.s3a.select.output.csv.quote.character</name>
+  <value>"</value>
+  <description>
+    In S3 Select queries: the quote character for generated CSV Files.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.output.csv.field.delimiter</name>
+  <value>,</value>
+  <description>
+    In S3 Select queries: the field delimiter for generated CSV Files.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.list.version</name>
+  <value>2</value>
+  <description>
+    Select which version of the S3 SDK's List Objects API to use.  Currently
+    support 2 (default) and 1 (older API).
+  </description>
+</property>
+
+<property>
+  <name>io.mapfile.bloom.size</name>
+  <value>524288</value>
+  <description>The size of BloomFilter-s used in BloomMapFile. Each time this many
+  keys is appended the next BloomFilter will be created (inside a DynamicBloomFilter).
+  Larger values minimize the number of filters, which slightly increases the performance,
+  but may waste too much space if the total number of keys is usually much smaller
+  than this number.
+  </description>
+</property>
+
+<property>
+  <name>ipc.client.connect.max.retries.on.timeouts</name>
+  <value>45</value>
+  <description>Indicates the number of retries a client will make on socket timeout
+               to establish a server connection.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.key.default.cipher</name>
+  <value>AES/CTR/NoPadding</value>
+  <description>
+    This indicates the algorithm that be used by KeyProvider for generating
+    key, and will be converted to CipherSuite when creating encryption zone.
+  </description>
+</property>
+
+<property>
+  <name>adl.feature.ownerandgroup.enableupn</name>
+  <value>true</value>
+    <description>
+      When true : User and Group in FileStatus/AclStatus response is
+      represented as user friendly name as per Azure AD profile.
+
+      When false (default) : User and Group in FileStatus/AclStatus
+      response is represented by the unique identifier from Azure AD
+      profile (Object ID as GUID).
+
+      For optimal performance, false is recommended.
+    </description>
+</property>
+
+<property>
+  <name>hadoop.domainname.resolver.impl</name>
+  <value>org.apache.hadoop.net.DNSDomainNameResolver</value>
+    <description>The implementation of DomainNameResolver used for service (NameNodes,
+      RBF Routers etc) discovery. The default implementation
+      org.apache.hadoop.net.DNSDomainNameResolver returns all IP addresses associated
+      with the input domain name of the services by querying the underlying DNS.
+    </description>
+</property>
+
+</configuration>

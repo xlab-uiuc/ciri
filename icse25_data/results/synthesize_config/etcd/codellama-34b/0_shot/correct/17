@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster', 'initial-cluster-state', 'initial-cluster-token', 'initial-advertise-peer-urls'], 'reason': ['initial-cluster should be set to a comma separated list of the initial etcd cluster members.', "initial-cluster-state should be set to either 'new' or 'existing'.", 'initial-cluster-token should be set to a unique token for the etcd cluster across all members.', 'initial-advertise-peer-urls should be set to a comma separated list of the initial etcd peer URLs for each member of the cluster.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: initial-cluster	initial-cluster-state	initial-cluster-token	initial-advertise-peer-urls
+[Ciri] Reason for initial-cluster: initial-cluster should be set to a comma separated list of the initial etcd cluster members.
+[Ciri] Reason for initial-cluster-state: initial-cluster-state should be set to either 'new' or 'existing'.
+[Ciri] Reason for initial-cluster-token: initial-cluster-token should be set to a unique token for the etcd cluster across all members.
+[Ciri] Reason for initial-advertise-peer-urls: initial-advertise-peer-urls should be set to a comma separated list of the initial etcd peer URLs for each member of the cluster.

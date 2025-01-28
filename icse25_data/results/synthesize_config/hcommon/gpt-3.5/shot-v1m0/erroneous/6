@@ -1,0 +1,16 @@
+Correct shot number:
+[14]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.service.shutdown.timeout', 'hadoop.kerberos.kinit.command', 'fs.s3a.s3guard.consistency.retry.interval', 'fs.s3a.select.input.csv.quote.escape.character', 'hadoop.http.authentication.kerberos.keytab', 'ha.failover-controller.cli-check.rpc-timeout.ms'], 'reason': ["The value '10nounit' for property 'hadoop.service.shutdown.timeout' is not in the correct format.", "The property 'hadoop.kerberos.kinit.command' has an incorrect field 'usage' which is not a valid property.", "The value '2s' for property 'fs.s3a.s3guard.consistency.retry.interval' should be in milliseconds.", "The value '\\\\' for property 'fs.s3a.select.input.csv.quote.escape.character' should be a single character escape sequence.", "The property 'hadoop.http.authentication.kerberos.keytab' is missing the 'usage' field which is required.", "The property 'ha.failover-controller.cli-check.rpc-timeout.ms' is missing the 'usage' field which is required."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: hadoop.service.shutdown.timeout	hadoop.kerberos.kinit.command	fs.s3a.s3guard.consistency.retry.interval	fs.s3a.select.input.csv.quote.escape.character	hadoop.http.authentication.kerberos.keytab	ha.failover-controller.cli-check.rpc-timeout.ms
+[Ciri] Reason for hadoop.service.shutdown.timeout: The value '10nounit' for property 'hadoop.service.shutdown.timeout' is not in the correct format.
+[Ciri] Reason for hadoop.kerberos.kinit.command: The property 'hadoop.kerberos.kinit.command' has an incorrect field 'usage' which is not a valid property.
+[Ciri] Reason for fs.s3a.s3guard.consistency.retry.interval: The value '2s' for property 'fs.s3a.s3guard.consistency.retry.interval' should be in milliseconds.
+[Ciri] Reason for fs.s3a.select.input.csv.quote.escape.character: The value '\\' for property 'fs.s3a.select.input.csv.quote.escape.character' should be a single character escape sequence.
+[Ciri] Reason for hadoop.http.authentication.kerberos.keytab: The property 'hadoop.http.authentication.kerberos.keytab' is missing the 'usage' field which is required.
+[Ciri] Reason for ha.failover-controller.cli-check.rpc-timeout.ms: The property 'ha.failover-controller.cli-check.rpc-timeout.ms' is missing the 'usage' field which is required.

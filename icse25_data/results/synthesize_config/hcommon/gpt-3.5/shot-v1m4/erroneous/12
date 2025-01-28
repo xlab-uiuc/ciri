@@ -1,0 +1,15 @@
+Wrong shot number:
+[12, 2, 8, 11]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'hadoop.security.random.device.file.path'], 'reason': ["The property 'io.seqfile.local.dir' contains an invalid path '/valid/file1'.", "The property 'hadoop.security.random.device.file.path' has an invalid file path 'dev/urandom///'."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: io.seqfile.local.dir	hadoop.security.random.device.file.path
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' contains an invalid path '/valid/file1'.
+[Ciri] Reason for hadoop.security.random.device.file.path: The property 'hadoop.security.random.device.file.path' has an invalid file path 'dev/urandom///'.

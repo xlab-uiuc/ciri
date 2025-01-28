@@ -1,0 +1,15 @@
+Wrong shot number:
+[15, 14, 4]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['ha.zookeeper.parent-znode', 'hadoop.ssl.server.conf'], 'reason': ["The value '/valid/file1' for the property 'ha.zookeeper.parent-znode' is not a valid ZooKeeper znode path. It should start with a forward slash '/' and not contain any file names.", "The value '/valid/file1' for the property 'hadoop.ssl.server.conf' is not a valid resource file path. It should not contain any file names, only directory paths."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: ha.zookeeper.parent-znode	hadoop.ssl.server.conf
+[Ciri] Reason for ha.zookeeper.parent-znode: The value '/valid/file1' for the property 'ha.zookeeper.parent-znode' is not a valid ZooKeeper znode path. It should start with a forward slash '/' and not contain any file names.
+[Ciri] Reason for hadoop.ssl.server.conf: The value '/valid/file1' for the property 'hadoop.ssl.server.conf' is not a valid resource file path. It should not contain any file names, only directory paths.

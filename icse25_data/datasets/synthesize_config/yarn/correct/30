@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.system-metrics-publisher.enabled</name>
+  <value>true</value>
+    <description>The setting that controls whether yarn system metrics is
+    published to the Timeline server (version one) or not, by RM.
+    This configuration is now deprecated in favor of
+    yarn.system-metrics-publisher.enabled.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.nm-tokens.master-key-rolling-interval-secs</name>
+  <value>172800</value>
+    <description>
+    Interval for the roll over for the master key used to generate
+    NodeManager tokens.  It is expected to be set to a value much larger
+    than yarn.nm.liveness-monitor.expiry-interval-ms.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.localizer.cache.cleanup.interval-ms</name>
+  <value>600000</value>
+    <description>Interval in between cache cleanups.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.detect-hardware-capabilities</name>
+  <value>true</value>
+    <description>Enable auto-detection of node capabilities such as
+    memory and CPU.
+    </description>
+</property>
+
+<property>
+  <name>yarn.minicluster.yarn.nodemanager.resource.memory-mb</name>
+  <value>8192</value>
+    <description>
+    As yarn.nodemanager.resource.memory-mb property but for the NodeManager
+    in a MiniYARNCluster.
+    </description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.reader.webapp.https.address</name>
+  <value>127.0.0.1</value>
+    <description>The https address of the timeline reader web application.</description>
+</property>
+
+<property>
+  <name>yarn.node-attribute.fs-store.impl.class</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.nodelabels.FileSystemNodeAttributeStore</value>
+    <description>
+      Choose different implementation of node attribute's storage
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.application.max-tags</name>
+  <value>10</value>
+    <description>Max number of application tags set by user in ApplicationSubmissionContext
+      while submitting application</description>
+</property>
+
+</configuration>

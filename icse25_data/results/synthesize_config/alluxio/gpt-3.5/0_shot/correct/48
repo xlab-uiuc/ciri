@@ -1,0 +1,22 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.audit.logging.queue.capacity', 'alluxio.master.metrics.service.threads', 'alluxio.worker.tieredstore.level1.watermark.low.ratio', 'alluxio.master.rpc.executor.max.pool.size', 'alluxio.underfs.gcs.version', 'alluxio.worker.web.bind.host', 'alluxio.network.host.resolution.timeout', 'alluxio.worker.tieredstore.block.lock.readers'], 'reason': ["Invalid property name 'alluxio.master.audit.logging.queue.capacity' for Alluxio version 2.5.0", "Invalid property name 'alluxio.master.metrics.service.threads' for Alluxio version 2.5.0", "Invalid property name 'alluxio.worker.tieredstore.level1.watermark.low.ratio' for Alluxio version 2.5.0", "Invalid property name 'alluxio.master.rpc.executor.max.pool.size' for Alluxio version 2.5.0", "Invalid property name 'alluxio.underfs.gcs.version' for Alluxio version 2.5.0", "Invalid property name 'alluxio.worker.web.bind.host' for Alluxio version 2.5.0", "Invalid property name 'alluxio.network.host.resolution.timeout' for Alluxio version 2.5.0", "Invalid property name 'alluxio.worker.tieredstore.block.lock.readers' for Alluxio version 2.5.0"]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.version', 'alluxio.network.host.resolution.timeout'], 'reason': ['Incorrect property: alluxio.underfs.gcs.version is not a valid property for Alluxio version 2.5.0', 'Incorrect property: alluxio.network.host.resolution.timeout is not a valid property for Alluxio version 2.5.0']}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.version', 'alluxio.network.host.resolution.timeout', 'alluxio.worker.tieredstore.block.lock.readers'], 'reason': ['Incorrect property for alluxio.underfs.gcs.version', 'Incorrect value format for alluxio.network.host.resolution.timeout', 'Exceeds recommended value for alluxio.worker.tieredstore.block.lock.readers']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.version', 'alluxio.network.host.resolution.timeout', 'alluxio.worker.tieredstore.block.lock.readers'], 'reason': ['Invalid property: alluxio.underfs.gcs.version', 'Invalid value format: alluxio.network.host.resolution.timeout', 'Invalid value: alluxio.worker.tieredstore.block.lock.readers']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.audit.logging.queue.capacity', 'alluxio.worker.tieredstore.block.lock.readers'], 'reason': ['Invalid value for alluxio.master.audit.logging.queue.capacity. It should be an integer.', 'Invalid value for alluxio.worker.tieredstore.block.lock.readers. It should be an integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.version', 'alluxio.network.host.resolution.timeout', 'alluxio.worker.tieredstore.block.lock.readers'], 'reason': ['Invalid property: alluxio.underfs.gcs.version for Alluxio version 2.5.0', 'Invalid property: alluxio.network.host.resolution.timeout for Alluxio version 2.5.0', 'Invalid property: alluxio.worker.tieredstore.block.lock.readers for Alluxio version 2.5.0']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.underfs.gcs.version	alluxio.network.host.resolution.timeout	alluxio.worker.tieredstore.block.lock.readers
+[Ciri] Reason for alluxio.underfs.gcs.version: Invalid property: alluxio.underfs.gcs.version
+[Ciri] Reason for alluxio.network.host.resolution.timeout: Invalid value format: alluxio.network.host.resolution.timeout
+[Ciri] Reason for alluxio.worker.tieredstore.block.lock.readers: Invalid value: alluxio.worker.tieredstore.block.lock.readers

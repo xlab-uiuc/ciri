@@ -1,0 +1,32 @@
+Wrong shot number:
+[3, 2, 5]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'MIDDLEWARE', 'SECURE_SSL_HOST', 'CSRF_FAILURE_VIEW', 'DATETIME_FORMAT', 'MANAGERS'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has a non-integer value.", "The property 'MIDDLEWARE' is empty which may cause issues with middleware processing.", "The property 'SECURE_SSL_HOST' has a value of 'None' which may not be secure.", "The property 'CSRF_FAILURE_VIEW' references a view that may not exist in the specified location.", "The property 'DATETIME_FORMAT' has a custom format that may not follow the standard format.", "The property 'MANAGERS' references 'ADMINS' which is not defined in the configuration."]}
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'MIDDLEWARE', 'SECURE_SSL_HOST', 'DATETIME_FORMAT', 'MANAGERS'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has a non-integer value.", "The property 'MIDDLEWARE' is empty which may cause issues with the middleware configuration.", "The property 'SECURE_SSL_HOST' has the value 'None' which may not be a valid host.", "The property 'DATETIME_FORMAT' has a custom format 'N j, Y, P' which may not follow the standard format.", "The property 'MANAGERS' is set to 'ADMINS' which may not be a valid configuration."]}
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'MIDDLEWARE', 'SECURE_SSL_HOST', 'CSRF_FAILURE_VIEW', 'EMAIL_HOST', 'DATETIME_FORMAT', 'MANAGERS'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' should have an integer value, not a float.", "The property 'MIDDLEWARE' should not be an empty list.", "The property 'SECURE_SSL_HOST' should not be set to None.", "The property 'CSRF_FAILURE_VIEW' is referencing an incorrect view.", "The property 'EMAIL_HOST' should not be set to 'localhost'.", "The property 'DATETIME_FORMAT' has an incorrect format.", "The property 'MANAGERS' is referencing 'ADMINS' which is not defined."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'MIDDLEWARE', 'SECURE_SSL_HOST', 'CSRF_FAILURE_VIEW', 'EMAIL_HOST', 'DATETIME_FORMAT', 'MANAGERS'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' should have an integer value instead of '1.5'.", "The property 'MIDDLEWARE' should not be an empty list.", "The property 'SECURE_SSL_HOST' should not be set to 'None'.", "The property 'CSRF_FAILURE_VIEW' has an invalid value 'django.views.csrf.csrf_failure'.", "The property 'EMAIL_HOST' has the value 'localhost' which may not be a valid SMTP host.", "The property 'DATETIME_FORMAT' has a custom format 'N j, Y, P' which may not be a valid datetime format.", "The property 'MANAGERS' is not defined correctly."]}
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'MIDDLEWARE', 'SECURE_SSL_HOST', 'CSRF_FAILURE_VIEW', 'EMAIL_HOST', 'DATETIME_FORMAT', 'MANAGERS'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has a non-integer value.", "The property 'MIDDLEWARE' is empty which may cause issues with middleware configuration.", "The property 'SECURE_SSL_HOST' has the value 'None' which may not provide the desired security configuration.", "The property 'CSRF_FAILURE_VIEW' references a view that may not exist in the specified location.", "The property 'EMAIL_HOST' has the value 'localhost' which may not be a valid email host.", "The property 'DATETIME_FORMAT' has a custom format that may not follow the correct format.", "The property 'MANAGERS' references 'ADMINS' which is not defined in the configuration."]}
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'MIDDLEWARE', 'SECURE_SSL_HOST', 'CSRF_FAILURE_VIEW', 'EMAIL_HOST', 'DATETIME_FORMAT', 'MANAGERS'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has a non-integer value.", "The property 'MIDDLEWARE' is empty which may cause issues with middleware processing.", "The property 'SECURE_SSL_HOST' has the value 'None' which may not be secure.", "The property 'CSRF_FAILURE_VIEW' refers to a view that may not exist in the specified location.", "The property 'EMAIL_HOST' has the value 'localhost' which may not be a valid email host.", "The property 'DATETIME_FORMAT' has a custom format that may not be recognized.", "The property 'MANAGERS' refers to 'ADMINS' which may not be defined."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	MIDDLEWARE	SECURE_SSL_HOST	CSRF_FAILURE_VIEW	EMAIL_HOST	DATETIME_FORMAT	MANAGERS
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: The property 'CACHE_MIDDLEWARE_SECONDS' has a non-integer value.
+[Ciri] Reason for MIDDLEWARE: The property 'MIDDLEWARE' is empty which may cause issues with middleware configuration.
+[Ciri] Reason for SECURE_SSL_HOST: The property 'SECURE_SSL_HOST' has the value 'None' which may not provide the desired security configuration.
+[Ciri] Reason for CSRF_FAILURE_VIEW: The property 'CSRF_FAILURE_VIEW' references a view that may not exist in the specified location.
+[Ciri] Reason for EMAIL_HOST: The property 'EMAIL_HOST' has the value 'localhost' which may not be a valid email host.
+[Ciri] Reason for DATETIME_FORMAT: The property 'DATETIME_FORMAT' has a custom format that may not be recognized.
+[Ciri] Reason for MANAGERS: The property 'MANAGERS' references 'ADMINS' which is not defined in the configuration.

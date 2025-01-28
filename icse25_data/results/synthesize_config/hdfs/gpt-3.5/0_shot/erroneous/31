@@ -1,0 +1,30 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.default.chunk.view.size', 'dfs.namenode.max.objects', 'dfs.disk.balancer.plan.threshold.percent'], 'reason': ["The property 'dfs.default.chunk.view.size' should be 'dfs.default.chunk.view.size.bytes' for HDFS version 3.3.0.", "The property 'dfs.namenode.max.objects' is deprecated in HDFS version 3.3.0. Please remove or update this property.", "The property 'dfs.disk.balancer.plan.threshold.percent' should be 'dfs.disk.balancer.plan.threshold' for HDFS version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['dfs.default.chunk.view.size', 'dfs.namenode.max.objects', 'dfs.use.dfs.network.topology'], 'reason': ["The property 'dfs.default.chunk.view.size' should be 'dfs.default.chunk.view.size.bytes' in HDFS version 3.3.0.", "The property 'dfs.namenode.max.objects' is deprecated in HDFS version 3.3.0. Consider removing it.", "The property 'dfs.use.dfs.network.topology' is not a valid property in HDFS version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['dfs.default.chunk.view.size', 'dfs.namenode.max.objects', 'dfs.disk.balancer.plan.threshold.percent', 'dfs.use.dfs.network.topology'], 'reason': ["The property 'dfs.default.chunk.view.size' should be 'dfs.chunk.view.size.default'.", "The property 'dfs.namenode.max.objects' should be 'dfs.namenode.max.files'.", "The property 'dfs.disk.balancer.plan.threshold.percent' should be 'dfs.disk.balancer.plan.threshold'.", "The property 'dfs.use.dfs.network.topology' should be 'dfs.use.dfs.network.topology.for.replica.placement'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.default.chunk.view.size', 'dfs.namenode.max.objects', 'dfs.use.dfs.network.topology'], 'reason': ["The property 'dfs.default.chunk.view.size' should be 'dfs.default.chunk.view.size.bytes' for HDFS version 3.3.0.", "The property 'dfs.namenode.max.objects' is deprecated in HDFS version 3.3.0. Consider removing or updating it.", "The property 'dfs.use.dfs.network.topology' is deprecated in HDFS version 3.3.0. Consider removing or updating it."]}
+
+{'hasError': True, 'errParameter': ['dfs.default.chunk.view.size', 'dfs.namenode.max.objects', 'dfs.disk.balancer.plan.threshold.percent', 'dfs.use.dfs.network.topology'], 'reason': ["The property 'dfs.default.chunk.view.size' should be 'dfs.default.chunk.view.size.bytes' for HDFS version 3.3.0.", "The property 'dfs.namenode.max.objects' is deprecated in HDFS version 3.3.0. Please remove or update accordingly.", "The property 'dfs.disk.balancer.plan.threshold.percent' should have a value between 0 and 100.", "The property 'dfs.use.dfs.network.topology' is deprecated in HDFS version 3.3.0. Please remove or update accordingly."]}
+
+{'hasError': True, 'errParameter': ['dfs.default.chunk.view.size', 'dfs.namenode.max.objects', 'dfs.disk.balancer.plan.threshold.percent'], 'reason': ["The property 'dfs.default.chunk.view.size' should be 'dfs.default.chunk.view.size.bytes' for HDFS version 3.3.0.", "The property 'dfs.namenode.max.objects' is deprecated in HDFS version 3.3.0. Consider removing or updating it.", "The property 'dfs.disk.balancer.plan.threshold.percent' should be 'dfs.disk.balancer.plan.threshold' for HDFS version 3.3.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.default.chunk.view.size', 'dfs.namenode.max.objects', 'dfs.disk.balancer.plan.threshold.percent'], 'reason': ["The property 'dfs.default.chunk.view.size' should be 'dfs.default.chunk.view.size.bytes' for HDFS version 3.3.0.", "The property 'dfs.namenode.max.objects' is deprecated in HDFS version 3.3.0. It should be removed.", "The property 'dfs.disk.balancer.plan.threshold.percent' is missing the unit 'percent' in the value for HDFS version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['dfs.default.chunk.view.size', 'dfs.namenode.max.objects', 'dfs.disk.balancer.plan.threshold.percent'], 'reason': ["The property 'dfs.default.chunk.view.size' should be 'dfs.default.chunk.view.size.bytes' for HDFS version 3.3.0.", "The property 'dfs.namenode.max.objects' is deprecated in HDFS version 3.3.0. Consider removing it.", "The property 'dfs.disk.balancer.plan.threshold.percent' should have a description with a period at the end."]}
+
+{'hasError': True, 'errParameter': ['dfs.default.chunk.view.size', 'dfs.namenode.max.objects', 'dfs.disk.balancer.plan.threshold.percent'], 'reason': ["The property 'dfs.default.chunk.view.size' should be 'dfs.default.chunk.view.size.bytes' for HDFS version 3.3.0.", "The property 'dfs.namenode.max.objects' is deprecated in HDFS version 3.3.0. Consider removing or updating it.", "The property 'dfs.disk.balancer.plan.threshold.percent' should be 'dfs.disk.balancer.plan.threshold' for HDFS version 3.3.0."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.default.chunk.view.size	dfs.namenode.max.objects	dfs.disk.balancer.plan.threshold.percent
+[Ciri] Reason for dfs.default.chunk.view.size: The property 'dfs.default.chunk.view.size' should be 'dfs.default.chunk.view.size.bytes' for HDFS version 3.3.0.
+[Ciri] Reason for dfs.namenode.max.objects: The property 'dfs.namenode.max.objects' is deprecated in HDFS version 3.3.0. Consider removing it.
+[Ciri] Reason for dfs.disk.balancer.plan.threshold.percent: The property 'dfs.disk.balancer.plan.threshold.percent' is missing the unit 'percent' in the value for HDFS version 3.3.0.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.data.port', 'alluxio.proxy.s3.writetype', 'alluxio.user.network.rpc.netty.channel'], 'reason': ["The 'alluxio.job.worker.data.port' configuration is not a valid property. It might be a typo or specific to a different Alluxio version.", "The 'alluxio.proxy.s3.writetype' property is incorrect or not applicable. The correct property for write type configurations in Alluxio is typically 'alluxio.user.file.writetype.default'.", "The 'alluxio.user.network.rpc.netty.channel' property is not recognized in Alluxio 2.5.0. It might be a typo, a deprecated property, or specific to a different version."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.worker.data.port	alluxio.proxy.s3.writetype	alluxio.user.network.rpc.netty.channel
+[Ciri] Reason for alluxio.job.worker.data.port: The 'alluxio.job.worker.data.port' configuration is not a valid property. It might be a typo or specific to a different Alluxio version.
+[Ciri] Reason for alluxio.proxy.s3.writetype: The 'alluxio.proxy.s3.writetype' property is incorrect or not applicable. The correct property for write type configurations in Alluxio is typically 'alluxio.user.file.writetype.default'.
+[Ciri] Reason for alluxio.user.network.rpc.netty.channel: The 'alluxio.user.network.rpc.netty.channel' property is not recognized in Alluxio 2.5.0. It might be a typo, a deprecated property, or specific to a different version.

@@ -1,0 +1,26 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['scram_iterations', 'debug_print_parse', 'max_files_per_process', 'archive_timeout', 'enable_mergejoin', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ['Invalid value for scram_iterations. It should be an integer.', "Invalid value for debug_print_parse. It should be 'on' or 'off'.", 'Invalid value for max_files_per_process. It should be an integer.', 'Invalid value for archive_timeout. It should be specified in seconds.', "Invalid value for enable_mergejoin. It should be 'on' or 'off'.", 'Invalid value for tcp_keepalives_interval. It should be a positive integer.', 'Invalid value for vacuum_cost_page_miss. It should be a floating-point number.']}
+
+{'hasError': True, 'errParameter': ['scram_iterations', 'debug_print_parse', 'max_files_per_process', 'archive_timeout', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ['Invalid value for scram_iterations. It should be an integer.', "Invalid value for debug_print_parse. It should be 'on' or 'off'.", 'Invalid value for max_files_per_process. It should be an integer.', 'Invalid value for archive_timeout. It should be specified in seconds.', 'Invalid value for tcp_keepalives_interval. It should be a positive integer.', 'Invalid value for vacuum_cost_page_miss. It should be a floating-point number.']}
+
+{'hasError': True, 'errParameter': ['scram_iterations', 'debug_print_parse', 'max_files_per_process', 'archive_timeout', 'enable_mergejoin', 'tcp_keepalives_interval'], 'reason': ["Invalid parameter 'scram_iterations'.", "Invalid parameter 'debug_print_parse'.", "Invalid parameter 'max_files_per_process'.", "Invalid parameter 'archive_timeout'.", "Invalid parameter 'enable_mergejoin'.", "Invalid parameter 'tcp_keepalives_interval'."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['scram_iterations', 'debug_print_parse', 'max_files_per_process', 'archive_timeout', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ['Invalid value for scram_iterations. It should be a numeric value.', "Invalid value for debug_print_parse. It should be 'on' or 'off'.", 'Invalid value for max_files_per_process. It should be a numeric value.', 'Invalid value for archive_timeout. It should be a numeric value.', 'Invalid value for tcp_keepalives_interval. It should be a numeric value greater than 0.', 'Invalid value for vacuum_cost_page_miss. It should be a numeric value.']}
+
+{'hasError': True, 'errParameter': ['scram_iterations', 'debug_print_parse', 'max_files_per_process', 'archive_timeout', 'enable_mergejoin', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ['Invalid value for scram_iterations parameter.', 'Invalid value for debug_print_parse parameter.', 'Invalid value for max_files_per_process parameter.', 'Invalid value for archive_timeout parameter.', 'Invalid value for enable_mergejoin parameter.', 'Invalid value for tcp_keepalives_interval parameter.', 'Invalid value for vacuum_cost_page_miss parameter.']}
+
+{'hasError': True, 'errParameter': ['scram_iterations', 'debug_print_parse', 'max_files_per_process', 'archive_timeout', 'enable_mergejoin', 'tcp_keepalives_interval', 'vacuum_cost_page_miss'], 'reason': ['Invalid value for scram_iterations. It should be an integer.', "Invalid value for debug_print_parse. It should be 'on' or 'off'.", 'Invalid value for max_files_per_process. It should be an integer.', 'Invalid value for archive_timeout. It should be specified in seconds.', "Invalid value for enable_mergejoin. It should be 'true' or 'false'.", 'Invalid value for tcp_keepalives_interval. It should be a positive integer.', 'Invalid value for vacuum_cost_page_miss. It should be a floating-point number.']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: scram_iterations	debug_print_parse	max_files_per_process	archive_timeout	enable_mergejoin	tcp_keepalives_interval	vacuum_cost_page_miss
+[Ciri] Reason for scram_iterations: Invalid value for scram_iterations. It should be an integer.
+[Ciri] Reason for debug_print_parse: Invalid value for debug_print_parse parameter.
+[Ciri] Reason for max_files_per_process: Invalid value for max_files_per_process parameter.
+[Ciri] Reason for archive_timeout: Invalid value for archive_timeout parameter.
+[Ciri] Reason for enable_mergejoin: Invalid value for enable_mergejoin. It should be 'true' or 'false'.
+[Ciri] Reason for tcp_keepalives_interval: Invalid value for tcp_keepalives_interval. It should be a positive integer.
+[Ciri] Reason for vacuum_cost_page_miss: Invalid value for vacuum_cost_page_miss parameter.

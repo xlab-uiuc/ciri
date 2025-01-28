@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.ipc.server.callqueue.handler.factor</name>
+  <value>0.1</value>
+    <description>Factor to determine the number of call queues.
+      A value of 0 means a single queue shared between all the handlers.
+      A value of 1 means that each handler has its own queue.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.dns.nameserver</name>
+  <value>default</value>
+    <description>The host name or IP address of the name server (DNS)
+      which a region server should use to determine the host name used by the
+      master for communication and display purposes.</description>
+</property>
+
+<property>
+  <name>hbase.offpeak.start.hour</name>
+  <value>-1</value>
+    <description>The start of off-peak hours, expressed as an integer between 0 and 23, inclusive.
+      Set to -1 to disable off-peak.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.throughput.higher.bound</name>
+  <value>104857600</value>
+    <description>The target upper bound on aggregate compaction throughput, in bytes/sec. Allows
+    you to control aggregate compaction throughput demand when the
+    PressureAwareCompactionThroughputController throughput controller is active. (It is active by
+    default.) The maximum throughput will be tuned between the lower and upper bounds when
+    compaction pressure is within the range [0.0, 1.0]. If compaction pressure is 1.0 or greater
+    the higher bound will be ignored until pressure returns to the normal range.</description>
+</property>
+
+<property>
+  <name>hbase.column.max.version</name>
+  <value>1</value>
+    <description>New column family descriptors will use this value as the default number of versions
+      to keep.</description>
+</property>
+
+<property>
+  <name>hbase.rest-csrf.browser-useragents-regex</name>
+  <value>^Mozilla.*</value>
+  <description>
+    A comma-separated list of regular expressions used to match against an HTTP
+    request's User-Agent header when protection against cross-site request
+    forgery (CSRF) is enabled for REST server by setting
+    hbase.rest.csrf.enabled to true.  If the incoming User-Agent matches
+    any of these regular expressions, then the request is considered to be sent
+    by a browser, and therefore CSRF prevention is enforced.  If the request's
+    User-Agent does not match any of these regular expressions, then the request
+    is considered to be sent by something other than a browser, such as scripted
+    automation.  In this case, CSRF is not a potential attack vector, so
+    the prevention is not enforced.  This helps achieve backwards-compatibility
+    with existing automation that has not been updated to send the CSRF
+    prevention header.
+  </description>
+</property>
+
+<property>
+  <name>hbase.mob.cache.evict.remain.ratio</name>
+  <value>0.5f</value>
+    <description>
+      The ratio (between 0.0 and 1.0) of files that remains cached after an eviction
+      is triggered when the number of cached mob files exceeds the hbase.mob.file.cache.size.
+      The default value is 0.5f.
+    </description>
+</property>
+
+<property>
+  <name>hbase.rpc.rows.warning.threshold</name>
+  <value>2500</value>
+    <description>
+      Number of rows in a batch operation above which a warning will be logged.
+    </description>
+</property>
+
+</configuration>

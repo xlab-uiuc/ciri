@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 6, 10]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regionserver.storefile.refresh.period' has the value '-1' which is out of the valid range. It should be a non-negative integer representing the period in milliseconds for refreshing the store files for secondary regions."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regionserver.storefile.refresh.period' has the value '-1' which is out of the accepted range. It should be a non-negative integer representing the period in milliseconds for refreshing the store files for secondary regions."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.storefile.refresh.period'], 'reason': ["The property 'hbase.regionserver.storefile.refresh.period' has the value '-1' which is out of the accepted range. It should be a positive value or 0 to disable the feature."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.storefile.refresh.period
+[Ciri] Reason for hbase.regionserver.storefile.refresh.period: The property 'hbase.regionserver.storefile.refresh.period' has the value '-1' which is out of the accepted range. It should be a non-negative integer representing the period in milliseconds for refreshing the store files for secondary regions.

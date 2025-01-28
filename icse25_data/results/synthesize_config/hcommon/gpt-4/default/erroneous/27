@@ -1,0 +1,19 @@
+Wrong shot number:
+[16, 14, 6]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.output.csv.quote.character', 'fs.permissions.umask-mode'], 'reason': ["The property 'fs.s3a.select.output.csv.quote.character' value should be escaped or enclosed in single quotes.", "The property 'fs.permissions.umask-mode' has an invalid value 'file://'. It should be in octal or symbolic format."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.output.csv.quote.character', 'fs.permissions.umask-mode'], 'reason': ["The property 'fs.s3a.select.output.csv.quote.character' value should be escaped or wrapped correctly.", "The property 'fs.permissions.umask-mode' has an invalid value 'file://'. It should be set to a valid umask value like '022' or 'u=rwx,g=,o='."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.select.output.csv.quote.character', 'fs.permissions.umask-mode'], 'reason': ["The property 'fs.s3a.select.output.csv.quote.character' value should be escaped or enclosed in single quotes.", "The property 'fs.permissions.umask-mode' has an invalid value 'file://'. It should be in octal or symbolic format."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.s3a.select.output.csv.quote.character	fs.permissions.umask-mode
+[Ciri] Reason for fs.s3a.select.output.csv.quote.character: The property 'fs.s3a.select.output.csv.quote.character' value should be escaped or enclosed in single quotes.
+[Ciri] Reason for fs.permissions.umask-mode: The property 'fs.permissions.umask-mode' has an invalid value 'file://'. It should be in octal or symbolic format.

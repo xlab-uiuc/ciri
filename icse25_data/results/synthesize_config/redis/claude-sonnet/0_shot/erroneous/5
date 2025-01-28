@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-backlog-size', 'replica-priority', 'appendfilename', 'appendfsync', 'aof-rewrite-incremental-fsync', 'oom-score-adj-values', 'enable-debug-command'], 'reason': ["The parameter 'repl-backlog-size' is misspelled. The correct spelling is 'repl-backlog-size'.", "The parameter 'replica-priority' is not a valid configuration option in Redis 7.0.0.", "The parameter 'appendfilename' is misspelled. The correct spelling is 'appendonly'.", "The value 'everysec' for the parameter 'appendfsync' is not a valid option. Valid options are 'no', 'everysec', 'always'.", "The parameter 'aof-rewrite-incremental-fsync' is not a valid configuration option in Redis 7.0.0.", "The parameter 'oom-score-adj-values' is not a valid configuration option in Redis 7.0.0.", "The parameter 'enable-debug-command' is not a valid configuration option in Redis 7.0.0."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: repl-backlog-size	replica-priority	appendfilename	appendfsync	aof-rewrite-incremental-fsync	oom-score-adj-values	enable-debug-command
+[Ciri] Reason for repl-backlog-size: The parameter 'repl-backlog-size' is misspelled. The correct spelling is 'repl-backlog-size'.
+[Ciri] Reason for replica-priority: The parameter 'replica-priority' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for appendfilename: The parameter 'appendfilename' is misspelled. The correct spelling is 'appendonly'.
+[Ciri] Reason for appendfsync: The value 'everysec' for the parameter 'appendfsync' is not a valid option. Valid options are 'no', 'everysec', 'always'.
+[Ciri] Reason for aof-rewrite-incremental-fsync: The parameter 'aof-rewrite-incremental-fsync' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for oom-score-adj-values: The parameter 'oom-score-adj-values' is not a valid configuration option in Redis 7.0.0.
+[Ciri] Reason for enable-debug-command: The parameter 'enable-debug-command' is not a valid configuration option in Redis 7.0.0.

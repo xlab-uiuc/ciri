@@ -1,0 +1,18 @@
+Wrong shot number:
+[1, 6, 7]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem'], 'reason': ["The property 'autovacuum_work_mem' should have a positive value. Current value is -1."]}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem'], 'reason': ["The property 'autovacuum_work_mem' has a negative value which is not allowed. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'unix_socket_permissions'], 'reason': ["The property 'autovacuum_work_mem' should have a positive value.", "The value of 'unix_socket_permissions' should be in octal format."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: autovacuum_work_mem
+[Ciri] Reason for autovacuum_work_mem: The property 'autovacuum_work_mem' should have a positive value. Current value is -1.

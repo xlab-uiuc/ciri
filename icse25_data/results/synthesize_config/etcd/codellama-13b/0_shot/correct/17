@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'initial-advertise-peer-urls'], 'reason': ['listen-client-urls and initial-advertise-peer-urls must have the same port number', 'listen-client-urls and initial-advertise-peer-urls must have the same port number']}
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'auto-tls', 'max-wals', 'log-level', 'enable-pprof', 'initial-advertise-peer-urls', 'election-timeout', 'logger'], 'reason': ['listen-client-urls: http://localhost:2379 is not a valid URL', 'auto-tls: is not a valid boolean', 'max-wals: is not a valid integer', 'log-level: is not a valid log level', 'enable-pprof: is not a valid boolean', 'initial-advertise-peer-urls: http://localhost:2380 is not a valid URL', 'election-timeout: 500 is not a valid integer', 'logger: is not a valid logger']}
+
+{'hasError': True, 'errParameter': ['listen-client-urls', 'auto-tls', 'max-wals', 'log-level', 'enable-pprof', 'initial-advertise-peer-urls', 'election-timeout', 'logger'], 'reason': ['listen-client-urls is not a valid URL', 'auto-tls is not a valid boolean', 'max-wals is not a valid integer', 'log-level is not a valid log level', 'enable-pprof is not a valid boolean', 'initial-advertise-peer-urls is not a valid URL', 'election-timeout is not a valid integer', 'logger is not a valid logger']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: listen-client-urls	auto-tls	max-wals	log-level	enable-pprof	initial-advertise-peer-urls	election-timeout	logger
+[Ciri] Reason for listen-client-urls: listen-client-urls is not a valid URL
+[Ciri] Reason for auto-tls: auto-tls: is not a valid boolean
+[Ciri] Reason for max-wals: max-wals is not a valid integer
+[Ciri] Reason for log-level: log-level: is not a valid log level
+[Ciri] Reason for enable-pprof: enable-pprof: is not a valid boolean
+[Ciri] Reason for initial-advertise-peer-urls: initial-advertise-peer-urls: http://localhost:2380 is not a valid URL
+[Ciri] Reason for election-timeout: election-timeout is not a valid integer
+[Ciri] Reason for logger: logger: is not a valid logger

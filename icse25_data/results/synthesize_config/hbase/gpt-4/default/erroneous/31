@@ -1,0 +1,15 @@
+Wrong shot number:
+[1, 12, 5]
+
+Correct shot number:
+[3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.master.balancer.maxRitPercent', 'hbase.status.multicast.address.ip'], 'reason': ["The property 'hbase.master.balancer.maxRitPercent' has the value '2.0' which is not valid. The value should be between 0.0 and 1.0, inclusive, representing a percentage.", "The property 'hbase.status.multicast.address.ip' has an invalid IP address '256.256.256.256'. IP addresses must be in the range of 0.0.0.0 to 255.255.255.255."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.master.balancer.maxRitPercent	hbase.status.multicast.address.ip
+[Ciri] Reason for hbase.master.balancer.maxRitPercent: The property 'hbase.master.balancer.maxRitPercent' has the value '2.0' which is not valid. The value should be between 0.0 and 1.0, inclusive, representing a percentage.
+[Ciri] Reason for hbase.status.multicast.address.ip: The property 'hbase.status.multicast.address.ip' has an invalid IP address '256.256.256.256'. IP addresses must be in the range of 0.0.0.0 to 255.255.255.255.

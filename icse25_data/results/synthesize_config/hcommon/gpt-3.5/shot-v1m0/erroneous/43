@@ -1,0 +1,18 @@
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host', 'fs.s3a.block.size', 'ipc.client.connection.maxidletime', 'ipc.[port_number].decay-scheduler.thresholds', 'ipc.[port_number].decay-scheduler.backoff.responsetime.enable', 'ipc.[port_number].weighted-cost.lockfree', 'rpc.metrics.quantile.enable', 'hadoop.registry.zk.root'], 'reason': ['Invalid IP address format in fs.ftp.host property', 'Block size value should not have a suffix in fs.s3a.block.size property', 'Value should be in milliseconds for ipc.client.connection.maxidletime property', 'Parameter name should not contain square brackets in ipc.[port_number].decay-scheduler.thresholds property', 'Parameter name should not contain square brackets in ipc.[port_number].decay-scheduler.backoff.responsetime.enable property', 'Value should be a floating-point number in ipc.[port_number].weighted-cost.lockfree property', 'Value should be a boolean (true/false) in rpc.metrics.quantile.enable property', 'Invalid characters in the value of hadoop.registry.zk.root property']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.ftp.host	fs.s3a.block.size	ipc.client.connection.maxidletime	ipc.[port_number].decay-scheduler.thresholds	ipc.[port_number].decay-scheduler.backoff.responsetime.enable	ipc.[port_number].weighted-cost.lockfree	rpc.metrics.quantile.enable	hadoop.registry.zk.root
+[Ciri] Reason for fs.ftp.host: Invalid IP address format in fs.ftp.host property
+[Ciri] Reason for fs.s3a.block.size: Block size value should not have a suffix in fs.s3a.block.size property
+[Ciri] Reason for ipc.client.connection.maxidletime: Value should be in milliseconds for ipc.client.connection.maxidletime property
+[Ciri] Reason for ipc.[port_number].decay-scheduler.thresholds: Parameter name should not contain square brackets in ipc.[port_number].decay-scheduler.thresholds property
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.enable: Parameter name should not contain square brackets in ipc.[port_number].decay-scheduler.backoff.responsetime.enable property
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockfree: Value should be a floating-point number in ipc.[port_number].weighted-cost.lockfree property
+[Ciri] Reason for rpc.metrics.quantile.enable: Value should be a boolean (true/false) in rpc.metrics.quantile.enable property
+[Ciri] Reason for hadoop.registry.zk.root: Invalid characters in the value of hadoop.registry.zk.root property

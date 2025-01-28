@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.info.bindAddress</name>
+  <value>0.0.0.0</value>
+    <description>The address for the HBase RegionServer web UI</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.global.memstore.size</name>
+  <value>0.5</value>
+    <description>Maximum size of all memstores in a region server before new
+      updates are blocked and flushes are forced. Defaults to 40% of heap (0.4).
+      Updates are blocked and flushes are forced until size of all memstores
+      in a region server hits hbase.regionserver.global.memstore.size.lower.limit.
+      The default value in this configuration has been intentionally left empty in order to
+      honor the old hbase.regionserver.global.memstore.upperLimit property if present.
+    </description>
+</property>
+
+<property>
+  <name>hbase.client.perserver.requests.threshold</name>
+  <value>4294967294</value>
+    <description>The max number of concurrent pending requests for one server in all client threads
+    (process level). Exceeding requests will be thrown ServerTooBusyException immediately to prevent
+    user's threads being occupied and blocked by only one slow region server. If you use a fix
+    number of threads to access HBase in a synchronous way, set this to a suitable value which is
+    related to the number of threads will help you. See
+    https://issues.apache.org/jira/browse/HBASE-16388 for details.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.thread.compaction.throttle</name>
+  <value>2684354560</value>
+    <description>There are two different thread pools for compactions, one for large compactions and
+      the other for small compactions. This helps to keep compaction of lean tables (such as
+      hbase:meta) fast. If a compaction is larger than this threshold, it
+      goes into the large compaction pool. In most cases, the default value is appropriate. Default:
+      2 x hbase.hstore.compaction.max x hbase.hregion.memstore.flush.size (which defaults to 128MB).
+      The value field assumes that the value of hbase.hregion.memstore.flush.size is unchanged from
+      the default.</description>
+</property>
+
+<property>
+  <name>hbase.storescanner.parallel.seek.enable</name>
+  <value>10000</value>
+    <description>
+      Enables StoreFileScanner parallel-seeking in StoreScanner,
+      a feature which can reduce response latency under special conditions.</description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.enabled</name>
+  <value>false</value>
+    <description>Enables or disables coprocessor loading. If 'false'
+    (disabled), any other coprocessor related configuration will be ignored.
+    </description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.abortonerror</name>
+  <value>false</value>
+      <description>Set to true to cause the hosting server (master or regionserver)
+      to abort if a coprocessor fails to load, fails to initialize, or throws an
+      unexpected Throwable object. Setting this to false will allow the server to
+      continue execution but the system wide state of the coprocessor in question
+      will become inconsistent as it will be properly executing in only a subset
+      of servers, so this is most useful for debugging only.</description>
+</property>
+
+<property>
+  <name>hbase.data.umask.enable</name>
+  <value>false</value>
+    <description>Enable, if true, that file permissions should be assigned
+      to the files written by the regionserver</description>
+</property>
+
+</configuration>

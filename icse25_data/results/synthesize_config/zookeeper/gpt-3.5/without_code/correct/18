@@ -1,0 +1,19 @@
+Wrong shot number:
+[8, 2, 4]
+
+Correct shot number:
+[8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'maxSessionTimeout'], 'reason': ["The property 'minSessionTimeout' has a negative value (-2) which is not allowed.", "The property 'maxSessionTimeout' has a negative value (-1) which is not allowed."]}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'maxSessionTimeout'], 'reason': ["The property 'minSessionTimeout' has a negative value (-2) which is invalid. It should be a non-negative integer.", "The property 'maxSessionTimeout' has a negative value (-1) which is invalid. It should be a non-negative integer."]}
+
+{'hasError': True, 'errParameter': ['minSessionTimeout', 'maxSessionTimeout'], 'reason': ["The property 'minSessionTimeout' has a negative value which is invalid. It should be a non-negative integer.", "The property 'maxSessionTimeout' has a negative value which is invalid. It should be a non-negative integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: minSessionTimeout	maxSessionTimeout
+[Ciri] Reason for minSessionTimeout: The property 'minSessionTimeout' has a negative value which is invalid. It should be a non-negative integer.
+[Ciri] Reason for maxSessionTimeout: The property 'maxSessionTimeout' has a negative value (-1) which is invalid. It should be a non-negative integer.

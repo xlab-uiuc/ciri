@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log-package-levels', 'proxy', 'max-wals', 'initial-advertise-peer-urls'], 'reason': ['log-package-levels is not a valid configuration parameter in etcd v3.5.0. The correct parameter is --logger=zap --log-outputs=stderr', "proxy should have a value of either 'on' or 'off' (without quotes). In etcd v3.5.0, the proxy mode is deprecated", 'max-wals is not a valid configuration parameter in etcd v3.5.0. The correct parameter is --max-snapshots', 'initial-advertise-peer-urls should be a comma-separated list of URLs. The URL should start with the scheme (http:// or https://), not just the hostname and port']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: log-package-levels	proxy	max-wals	initial-advertise-peer-urls
+[Ciri] Reason for log-package-levels: log-package-levels is not a valid configuration parameter in etcd v3.5.0. The correct parameter is --logger=zap --log-outputs=stderr
+[Ciri] Reason for proxy: proxy should have a value of either 'on' or 'off' (without quotes). In etcd v3.5.0, the proxy mode is deprecated
+[Ciri] Reason for max-wals: max-wals is not a valid configuration parameter in etcd v3.5.0. The correct parameter is --max-snapshots
+[Ciri] Reason for initial-advertise-peer-urls: initial-advertise-peer-urls should be a comma-separated list of URLs. The URL should start with the scheme (http:// or https://), not just the hostname and port

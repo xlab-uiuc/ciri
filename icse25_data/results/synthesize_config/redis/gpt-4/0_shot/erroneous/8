@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['unixsocket', 'proc-title-template', 'hash-max-listpack-value', 'oom-score-adj', 'oom-score-adj-values'], 'reason': ["The correct parameter for defining the Unix socket path is 'unixsocket', but it should not contain protocol prefixes like '//'. The correct format is simply a file path.", "The 'proc-title-template' parameter does not exist in Redis configuration. This appears to be an invalid or unsupported configuration directive.", "The 'hash-max-listpack-value' parameter is incorrect. The correct parameter for controlling the maximum size of listpack entries within hash objects in Redis 7.0.0 is 'hash-max-ziplist-value'.", "The 'oom-score-adj' parameter is not a valid Redis configuration directive. Redis does not directly support adjusting the oom-score-adj from its configuration file.", "The 'oom-score-adj-values' parameter is not a valid Redis configuration directive. Similar to 'oom-score-adj', Redis does not support this configuration."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: unixsocket	proc-title-template	hash-max-listpack-value	oom-score-adj	oom-score-adj-values
+[Ciri] Reason for unixsocket: The correct parameter for defining the Unix socket path is 'unixsocket', but it should not contain protocol prefixes like '//'. The correct format is simply a file path.
+[Ciri] Reason for proc-title-template: The 'proc-title-template' parameter does not exist in Redis configuration. This appears to be an invalid or unsupported configuration directive.
+[Ciri] Reason for hash-max-listpack-value: The 'hash-max-listpack-value' parameter is incorrect. The correct parameter for controlling the maximum size of listpack entries within hash objects in Redis 7.0.0 is 'hash-max-ziplist-value'.
+[Ciri] Reason for oom-score-adj: The 'oom-score-adj' parameter is not a valid Redis configuration directive. Redis does not directly support adjusting the oom-score-adj from its configuration file.
+[Ciri] Reason for oom-score-adj-values: The 'oom-score-adj-values' parameter is not a valid Redis configuration directive. Similar to 'oom-score-adj', Redis does not support this configuration.

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.http.filter.initializers</name>
+  <value>org.apache.hadoop.http.lib.StaticUserWebFilter</value>
+  <description>A comma separated list of class names. Each class in the list
+  must extend org.apache.hadoop.http.FilterInitializer. The corresponding
+  Filter will be initialized. Then, the Filter will be applied to all user
+  facing jsp and servlet web pages.  The ordering of the list defines the
+  ordering of the filters.</description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.posix.attr.gid.name</name>
+  <value>gidNumber</value>
+  <description>
+    The attribute of posixAccount indicating the group id.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.service.shutdown.timeout</name>
+  <value>30s</value>
+    <description>
+      Timeout to wait for each shutdown operation to complete.
+      If a hook takes longer than this time to complete, it will be interrupted,
+      so the service will shutdown. This allows the service shutdown
+      to recover from a blocked operation.
+      Some shutdown hooks may need more time than this, for example when
+      a large amount of data needs to be uploaded to an object store.
+      In this situation: increase the timeout.
+
+      The minimum duration of the timeout is 1 second, "1s".
+    </description>
+</property>
+
+<property>
+  <name>fs.s3a.select.input.compression</name>
+  <value>none</value>
+  <description>In S3 Select queries, the source compression
+    algorithm. One of: "none" and "gzip"</description>
+</property>
+
+<property>
+  <name>fs.azure.secure.mode</name>
+  <value>true</value>
+  <description>
+    Config flag to identify the mode in which fs.azure.NativeAzureFileSystem needs
+    to run under. Setting it "true" would make fs.azure.NativeAzureFileSystem use
+    SAS keys to communicate with Azure storage.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].identity-provider.impl</name>
+  <value>org.apache.hadoop.ipc.UserIdentityProvider</value>
+  <description>The identity provider mapping user requests to their identity.
+    This property applies to DecayRpcScheduler.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.ssl.client.conf</name>
+  <value>ssl-client.xml</value>
+  <description>
+    Resource file from which ssl client keystore information will be extracted
+    This file is looked up in the classpath, typically it should be in Hadoop
+    conf/ directory.
+  </description>
+</property>
+
+<property>
+  <name>fs.permissions.umask-mode</name>
+  <value>008</value>
+  <description>
+    The umask used when creating files and directories.
+    Can be in octal or in symbolic. Examples are:
+    "022" (octal for u=rwx,g=r-x,o=r-x in symbolic),
+    or "u=rwx,g=rwx,o=" (symbolic for 007 in octal).
+  </description>
+</property>
+
+</configuration>

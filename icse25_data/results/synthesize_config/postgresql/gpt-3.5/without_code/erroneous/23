@@ -1,0 +1,18 @@
+Wrong shot number:
+[7, 5, 6]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['synchronous_standby_names'], 'reason': ["The property 'synchronous_standby_names' should not have a wildcard character '*' as a value."]}
+
+{'hasError': True, 'errParameter': ['synchronous_standby_names'], 'reason': ["The property 'synchronous_standby_names' should not have the value '*'."]}
+
+{'hasError': True, 'errParameter': ['synchronous_standby_names'], 'reason': ["The property 'synchronous_standby_names' has an incorrect value '*'. It should specify the names of standby servers for synchronous replication."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: synchronous_standby_names
+[Ciri] Reason for synchronous_standby_names: The property 'synchronous_standby_names' has an incorrect value '*'. It should specify the names of standby servers for synchronous replication.

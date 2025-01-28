@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.group.mapping.ldap.bind.users', 'fs.ftp.data.connection.mode', 'fs.s3a.assumed.role.session.duration', 'fs.s3a.ssl.channel.mode'], 'reason': ["The property 'hadoop.security.group.mapping.ldap.bind.users' is incorrectly described. It should be 'hadoop.security.group.mapping.ldap.bind.user' as per the standard configuration.", "The value 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' for 'fs.ftp.data.connection.mode' is invalid. Valid values are 'ACTIVE_LOCAL_DATA_CONNECTION_MODE', 'PASSIVE_LOCAL_DATA_CONNECTION_MODE', and 'PASSIVE_REMOTE_DATA_CONNECTION_MODE'.", "The value for 'fs.s3a.assumed.role.session.duration' is '20m', which is within the valid range, but the format might not be correctly interpreted by all parsers. It's safer to use the full format, such as '1200s' for clarity.", "The 'fs.s3a.ssl.channel.mode' property's value 'default_jsse_with_gcm' is not a recognized value for Hadoop 3.3.0. The documentation does not list this as a valid option."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: hadoop.security.group.mapping.ldap.bind.users	fs.ftp.data.connection.mode	fs.s3a.assumed.role.session.duration	fs.s3a.ssl.channel.mode
+[Ciri] Reason for hadoop.security.group.mapping.ldap.bind.users: The property 'hadoop.security.group.mapping.ldap.bind.users' is incorrectly described. It should be 'hadoop.security.group.mapping.ldap.bind.user' as per the standard configuration.
+[Ciri] Reason for fs.ftp.data.connection.mode: The value 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' for 'fs.ftp.data.connection.mode' is invalid. Valid values are 'ACTIVE_LOCAL_DATA_CONNECTION_MODE', 'PASSIVE_LOCAL_DATA_CONNECTION_MODE', and 'PASSIVE_REMOTE_DATA_CONNECTION_MODE'.
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: The value for 'fs.s3a.assumed.role.session.duration' is '20m', which is within the valid range, but the format might not be correctly interpreted by all parsers. It's safer to use the full format, such as '1200s' for clarity.
+[Ciri] Reason for fs.s3a.ssl.channel.mode: The 'fs.s3a.ssl.channel.mode' property's value 'default_jsse_with_gcm' is not a recognized value for Hadoop 3.3.0. The documentation does not list this as a valid option.

@@ -1,0 +1,19 @@
+Wrong shot number:
+[6, 4, 5]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory-mb', 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds'], 'reason': ["The property 'yarn.nodemanager.resource.memory-mb' has the value '-1' which is not within the accepted range of [0, Integer.MAX_VALUE].", "The property 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds' has the value '-2' which is not within the accepted range of [0, Integer.MAX_VALUE]."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory-mb', 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds'], 'reason': ["The property 'yarn.nodemanager.resource.memory-mb' has the value '-1' which is not within the accepted range of positive integers.", "The property 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds' has the value '-2' which is not within the accepted range of non-negative integers."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.resource.memory-mb', 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds'], 'reason': ["The property 'yarn.nodemanager.resource.memory-mb' has the value '-1' which is not within the accepted range of [0,2147483647].", "The property 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds' has the value '-2' which is not within the accepted range of [0,2147483647]."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.resource.memory-mb	yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds
+[Ciri] Reason for yarn.nodemanager.resource.memory-mb: The property 'yarn.nodemanager.resource.memory-mb' has the value '-1' which is not within the accepted range of [0, Integer.MAX_VALUE].
+[Ciri] Reason for yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds: The property 'yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds' has the value '-2' which is not within the accepted range of non-negative integers.

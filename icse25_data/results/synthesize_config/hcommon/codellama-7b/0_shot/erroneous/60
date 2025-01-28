@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.file.buffer.size', 'io.bytes.per.checksum', 'fs.s3a.multipart.purge.age', 'fs.s3a.committer.threads', 'ipc.client.idlethreshold', 'ipc.[port_number].weighted-cost.lockfree', 'ftp.stream-buffer-size', 'adl.http.timeout'], 'reason': ['io.file.buffer.size is not a valid property', 'io.bytes.per.checksum is not a valid property', 'fs.s3a.multipart.purge.age is not a valid property', 'fs.s3a.committer.threads is not a valid property', 'ipc.client.idlethreshold is not a valid property', 'ipc.[port_number].weighted-cost.lockfree is not a valid property', 'ftp.stream-buffer-size is not a valid property', 'adl.http.timeout is not a valid property']}
+
+{'hasError': True, 'errParameter': ['io.file.buffer.size'], 'reason': ['io.file.buffer.size should be a multiple of hardware page size (4096 on Intel x86)']}
+
+{'hasError': True, 'errParameter': ['io.file.buffer.size'], 'reason': ['io.file.buffer.size should be a positive integer']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: io.file.buffer.size
+[Ciri] Reason for io.file.buffer.size: io.file.buffer.size should be a positive integer

@@ -1,0 +1,42 @@
+Wrong shot number:
+[10, 12, 5]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['nfs.dump.dir'], 'reason': ["The property 'nfs.dump.dir' has the value '/valid/file1' which does not follow the correct file path format."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.stale.datanode.minimum.interval'], 'reason': ["The property 'dfs.namenode.stale.datanode.minimum.interval' has the value '3' which is out of the valid range of [4, 1000000]."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.transfer.threads'], 'reason': ["The property 'dfs.datanode.max.transfer.threads' has the value '2048' which is out of the valid range of 1-1024."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.http-address'], 'reason': ["The property 'dfs.journalnode.http-address' has the value '0.0.0.0:3001' which does not follow the correct IP address format."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.transfer.threads'], 'reason': ["The property 'dfs.datanode.max.transfer.threads' has the value '2048' which is out of the valid range of 1 to 2048."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.stale.datanode.minimum.interval'], 'reason': ["The property 'dfs.namenode.stale.datanode.minimum.interval' has the value '3' which is out of the valid range of [4, 2147483647]."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.replica.cache.expiry.time'], 'reason': ["The property 'dfs.datanode.replica.cache.expiry.time' has the value '5m' which does not follow the correct time format."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.transfer.threads'], 'reason': ["The property 'dfs.datanode.max.transfer.threads' has the value '2048' which is not within the accepted range of 1 to 1024."]}
+
+{'hasError': True, 'errParameter': ['dfs.journalnode.http-address'], 'reason': ["The property 'dfs.journalnode.http-address' has the value '0.0.0.0:3001' which does not follow the correct IP address format."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.stale.datanode.minimum.interval'], 'reason': ["The property 'dfs.namenode.stale.datanode.minimum.interval' has the value '3' which is out of the valid range of 4 to 60."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.transfer.threads'], 'reason': ["The property 'dfs.datanode.max.transfer.threads' has the value '2048' which is out of the valid range of a thread count."]}
+
+{'hasError': True, 'errParameter': ['dfs.datanode.max.transfer.threads'], 'reason': ["The property 'dfs.datanode.max.transfer.threads' has the value '2048' which is out of the valid range of a thread number."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.datanode.max.transfer.threads
+[Ciri] Reason for dfs.datanode.max.transfer.threads: The property 'dfs.datanode.max.transfer.threads' has the value '2048' which is out of the valid range of a thread number.

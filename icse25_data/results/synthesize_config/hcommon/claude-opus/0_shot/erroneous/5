@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'fs.azure.user.agent.prefix'], 'reason': ["The value '0mm' for property 'hadoop.security.groups.shell.command.timeout' is invalid. It should be a valid time duration like '0s', '10s', '1m', etc.", "The value 'unknown' for property 'fs.azure.user.agent.prefix' is not a meaningful prefix. It should be set to a value that identifies the application or system using WASB."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout	fs.azure.user.agent.prefix
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: The value '0mm' for property 'hadoop.security.groups.shell.command.timeout' is invalid. It should be a valid time duration like '0s', '10s', '1m', etc.
+[Ciri] Reason for fs.azure.user.agent.prefix: The value 'unknown' for property 'fs.azure.user.agent.prefix' is not a meaningful prefix. It should be set to a value that identifies the application or system using WASB.

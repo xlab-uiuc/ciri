@@ -1,0 +1,28 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['data-dir', 'listen-client-urls', 'listen-peer-urls', 'initial-cluster-state', 'initial-cluster', 'initial-advertise-peer-urls', 'force-new-cluster'], 'reason': ['data-dir is not a valid directory', 'listen-client-urls is not a valid URL', 'listen-peer-urls is not a valid URL', 'initial-cluster-state is not a valid initial cluster state', 'initial-cluster is not a valid initial cluster', 'initial-advertise-peer-urls is not a valid URL', 'force-new-cluster is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state', 'initial-cluster-token', 'initial-cluster', 'initial-advertise-peer-urls', 'heartbeat-interval', 'force-new-cluster'], 'reason': ['initial-cluster-state: unknown cluster state', 'initial-cluster-token: token is empty', 'initial-cluster: initial cluster configuration is empty', 'initial-advertise-peer-urls: advertise peer urls is empty', 'heartbeat-interval: heartbeat interval is less than 100', 'force-new-cluster: force new cluster is not a boolean']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['initial-cluster-state must be either new or existing']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['data-dir', 'listen-peer-urls', 'listen-client-urls', 'initial-cluster', 'initial-cluster-state', 'initial-cluster-token', 'initial-advertise-peer-urls', 'heartbeat-interval'], 'reason': ['data-dir is not a valid directory', 'listen-peer-urls is not a valid URL', 'listen-client-urls is not a valid URL', 'initial-cluster is not a valid list of URLs', 'initial-cluster-state is not a valid cluster state', 'initial-cluster-token is not a valid string', 'initial-advertise-peer-urls is not a valid URL', 'heartbeat-interval is not a valid integer']}
+
+{'hasError': True, 'errParameter': ['initial-cluster'], 'reason': ['initial-cluster must be a comma-separated list of name=url pairs']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['initial-cluster-state is not a valid value. Valid values are new, existing, and removed.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['initial-cluster-state must be either new or existing']}
+
+{'hasError': True, 'errParameter': ['initial-cluster'], 'reason': ['initial-cluster should be a list of strings in the format of <name>=<url>.']}
+
+{'hasError': True, 'errParameter': ['initial-cluster-state'], 'reason': ['initial-cluster-state must be either new or existing']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: initial-cluster-state
+[Ciri] Reason for initial-cluster-state: initial-cluster-state must be either new or existing

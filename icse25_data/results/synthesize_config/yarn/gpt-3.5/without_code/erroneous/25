@@ -1,0 +1,19 @@
+Wrong shot number:
+[4, 1, 10]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.container.stderr.pattern'], 'reason': ["The property 'yarn.nodemanager.hostname' has the value '-1.0.0.0' which is not a valid hostname format.", "The property 'yarn.nodemanager.container.stderr.pattern' has an invalid value '{*stderr*' with an unmatched opening brace."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.container.stderr.pattern'], 'reason': ["The property 'yarn.nodemanager.hostname' has the value '-1.0.0.0' which is not a valid hostname format.", "The property 'yarn.nodemanager.container.stderr.pattern' has an invalid value format. The pattern should be enclosed in curly braces properly."]}
+
+{'hasError': True, 'errParameter': ['yarn.nodemanager.hostname', 'yarn.nodemanager.container.stderr.pattern'], 'reason': ["The property 'yarn.nodemanager.hostname' has the value '-1.0.0.0' which is not a valid hostname format.", "The property 'yarn.nodemanager.container.stderr.pattern' has an invalid value '{*stderr*' with unmatched curly braces."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nodemanager.hostname	yarn.nodemanager.container.stderr.pattern
+[Ciri] Reason for yarn.nodemanager.hostname: The property 'yarn.nodemanager.hostname' has the value '-1.0.0.0' which is not a valid hostname format.
+[Ciri] Reason for yarn.nodemanager.container.stderr.pattern: The property 'yarn.nodemanager.container.stderr.pattern' has an invalid value '{*stderr*' with an unmatched opening brace.

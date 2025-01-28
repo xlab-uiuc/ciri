@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port', 'client-output-buffer-limit'], 'reason': ['tls-port should be different from the default Redis port 6379. It is recommended to use a different port for TLS connections.', "client-output-buffer-limit for 'normal' clients should have 3 values: hard limit, soft limit, and seconds. The current configuration '0 0 0' is invalid."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tls-port	client-output-buffer-limit
+[Ciri] Reason for tls-port: tls-port should be different from the default Redis port 6379. It is recommended to use a different port for TLS connections.
+[Ciri] Reason for client-output-buffer-limit: client-output-buffer-limit for 'normal' clients should have 3 values: hard limit, soft limit, and seconds. The current configuration '0 0 0' is invalid.

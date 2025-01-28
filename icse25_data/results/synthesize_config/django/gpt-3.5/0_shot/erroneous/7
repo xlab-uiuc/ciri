@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_PATH', 'CSRF_TRUSTED_ORIGINS', 'USE_X_FORWARDED_PORT', 'EMAIL_SSL_CERTFILE'], 'reason': ['CSRF_COOKIE_PATH should not contain multiple consecutive slashes. It should be a valid path.', 'CSRF_TRUSTED_ORIGINS should be a list of trusted origins. It should not be an empty list.', 'USE_X_FORWARDED_PORT should be set to False for security reasons.', 'EMAIL_SSL_CERTFILE should be specified with a valid file path if SSL is required for email.']}
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_PATH', 'CSRF_TRUSTED_ORIGINS', 'USE_X_FORWARDED_PORT', 'EMAIL_SSL_CERTFILE'], 'reason': ["CSRF_COOKIE_PATH should not contain multiple consecutive slashes ('////').", "CSRF_TRUSTED_ORIGINS should not be an empty list. If there are no trusted origins, it's better to set it to None.", 'USE_X_FORWARDED_PORT should be set to False for security reasons unless specifically required.', 'EMAIL_SSL_CERTFILE should not be set to None. If SSL is required for email, a valid path to the certificate file should be provided.']}
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_PATH', 'CSRF_TRUSTED_ORIGINS', 'YEAR_MONTH_FORMAT', 'USE_X_FORWARDED_PORT', 'CSRF_COOKIE_HTTPONLY', 'EMAIL_SSL_CERTFILE'], 'reason': ["CSRF_COOKIE_PATH should not have multiple consecutive slashes. It should be 'tmp/staging'.", 'CSRF_TRUSTED_ORIGINS should not be an empty list. It should contain trusted origins if needed.', "YEAR_MONTH_FORMAT should be 'Y F' instead of 'F Y'.", 'USE_X_FORWARDED_PORT should be set to False for security reasons.', 'CSRF_COOKIE_HTTPONLY should be set to True for better security practices.', 'EMAIL_SSL_CERTFILE should not be set to None. It should be configured with a valid SSL certificate file path.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: CSRF_COOKIE_PATH	CSRF_TRUSTED_ORIGINS	USE_X_FORWARDED_PORT	EMAIL_SSL_CERTFILE
+[Ciri] Reason for CSRF_COOKIE_PATH: CSRF_COOKIE_PATH should not contain multiple consecutive slashes. It should be a valid path.
+[Ciri] Reason for CSRF_TRUSTED_ORIGINS: CSRF_TRUSTED_ORIGINS should not be an empty list. If there are no trusted origins, it's better to set it to None.
+[Ciri] Reason for USE_X_FORWARDED_PORT: USE_X_FORWARDED_PORT should be set to False for security reasons unless specifically required.
+[Ciri] Reason for EMAIL_SSL_CERTFILE: EMAIL_SSL_CERTFILE should not be set to None. If SSL is required for email, a valid path to the certificate file should be provided.

@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['daemonize', 'replica-announce-ip', 'always-show-logo', 'lazyfree-lazy-server-del', 'hash-max-listpack-value', 'appendfilename', 'stream-node-max-entries'], 'reason': ["The 'daemonize' option is not valid in Redis 7.0.0. Redis is now always running in daemonized mode.", "The 'replica-announce-ip' option is not valid in Redis 7.0.0. It has been replaced by the 'node-announce-ip' option.", "The 'always-show-logo' option is not valid in Redis 7.0.0.", "The 'lazyfree-lazy-server-del' option is not valid in Redis 7.0.0. It has been replaced by the 'lazyfree-lazy-eviction' option.", "The 'hash-max-listpack-value' option is not valid in Redis 7.0.0. It has been replaced by the 'list-max-listpack-size' option.", "The 'appendfilename' option is not valid in Redis 7.0.0. The name of the AOF file is now fixed to 'appendonly.aof'.", "The 'stream-node-max-entries' option is not valid in Redis 7.0.0. It has been replaced by the 'stream-node-max-bytes' option."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: daemonize	replica-announce-ip	always-show-logo	lazyfree-lazy-server-del	hash-max-listpack-value	appendfilename	stream-node-max-entries
+[Ciri] Reason for daemonize: The 'daemonize' option is not valid in Redis 7.0.0. Redis is now always running in daemonized mode.
+[Ciri] Reason for replica-announce-ip: The 'replica-announce-ip' option is not valid in Redis 7.0.0. It has been replaced by the 'node-announce-ip' option.
+[Ciri] Reason for always-show-logo: The 'always-show-logo' option is not valid in Redis 7.0.0.
+[Ciri] Reason for lazyfree-lazy-server-del: The 'lazyfree-lazy-server-del' option is not valid in Redis 7.0.0. It has been replaced by the 'lazyfree-lazy-eviction' option.
+[Ciri] Reason for hash-max-listpack-value: The 'hash-max-listpack-value' option is not valid in Redis 7.0.0. It has been replaced by the 'list-max-listpack-size' option.
+[Ciri] Reason for appendfilename: The 'appendfilename' option is not valid in Redis 7.0.0. The name of the AOF file is now fixed to 'appendonly.aof'.
+[Ciri] Reason for stream-node-max-entries: The 'stream-node-max-entries' option is not valid in Redis 7.0.0. It has been replaced by the 'stream-node-max-bytes' option.

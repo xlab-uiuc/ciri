@@ -1,0 +1,16 @@
+Wrong shot number:
+[5, 11, 10]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.web.bind.host', 'alluxio.job.master.finished.job.purge.count', 'alluxio.worker.management.tier.promote.quota.percent'], 'reason': ["The property 'alluxio.proxy.web.bind.host' has an invalid IP address format.", "The property 'alluxio.job.master.finished.job.purge.count' cannot have a negative value.", "The property 'alluxio.worker.management.tier.promote.quota.percent' value is out of the valid range (0-100)."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.proxy.web.bind.host	alluxio.job.master.finished.job.purge.count	alluxio.worker.management.tier.promote.quota.percent
+[Ciri] Reason for alluxio.proxy.web.bind.host: The property 'alluxio.proxy.web.bind.host' has an invalid IP address format.
+[Ciri] Reason for alluxio.job.master.finished.job.purge.count: The property 'alluxio.job.master.finished.job.purge.count' cannot have a negative value.
+[Ciri] Reason for alluxio.worker.management.tier.promote.quota.percent: The property 'alluxio.worker.management.tier.promote.quota.percent' value is out of the valid range (0-100).

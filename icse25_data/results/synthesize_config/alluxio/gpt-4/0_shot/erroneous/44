@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.gcs.default.mode', 'alluxio.master.metastore.inode.cache.low.water.mark.ratio', 'alluxio.master.journal.retry.interval', 'alluxio.master.ufs.journal.max.catchup.time'], 'reason': ["The 'alluxio.underfs.gcs.default.mode' should be in octal format, but '888' is not a valid octal value. A valid example is '600'.", "The 'alluxio.master.metastore.inode.cache.low.water.mark.ratio' is not a recognized configuration parameter. It seems to be incorrectly named or possibly deprecated.", "The value for 'alluxio.master.journal.retry.interval' should follow the format of a duration, such as '1s' for one second. '1sec' is not correctly formatted.", "The value for 'alluxio.master.ufs.journal.max.catchup.time' should also follow the format of a duration, such as '1m' for one minute. '1min' is not correctly formatted."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: alluxio.underfs.gcs.default.mode	alluxio.master.metastore.inode.cache.low.water.mark.ratio	alluxio.master.journal.retry.interval	alluxio.master.ufs.journal.max.catchup.time
+[Ciri] Reason for alluxio.underfs.gcs.default.mode: The 'alluxio.underfs.gcs.default.mode' should be in octal format, but '888' is not a valid octal value. A valid example is '600'.
+[Ciri] Reason for alluxio.master.metastore.inode.cache.low.water.mark.ratio: The 'alluxio.master.metastore.inode.cache.low.water.mark.ratio' is not a recognized configuration parameter. It seems to be incorrectly named or possibly deprecated.
+[Ciri] Reason for alluxio.master.journal.retry.interval: The value for 'alluxio.master.journal.retry.interval' should follow the format of a duration, such as '1s' for one second. '1sec' is not correctly formatted.
+[Ciri] Reason for alluxio.master.ufs.journal.max.catchup.time: The value for 'alluxio.master.ufs.journal.max.catchup.time' should also follow the format of a duration, such as '1m' for one minute. '1min' is not correctly formatted.

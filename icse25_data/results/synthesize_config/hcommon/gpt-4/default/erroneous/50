@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 16, 12]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The value '800' for property 'fs.permissions.umask-mode' is invalid. It should be in octal format and represent a valid umask value."]}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The value '800' for property 'fs.permissions.umask-mode' is invalid. The umask should be a three-digit octal number or a valid symbolic representation."]}
+
+{'hasError': True, 'errParameter': ['fs.permissions.umask-mode'], 'reason': ["The value '800' for property 'fs.permissions.umask-mode' is not a valid umask value. Umask should be a three-digit octal number or a valid symbolic representation."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.permissions.umask-mode
+[Ciri] Reason for fs.permissions.umask-mode: The value '800' for property 'fs.permissions.umask-mode' is invalid. The umask should be a three-digit octal number or a valid symbolic representation.

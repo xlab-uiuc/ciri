@@ -1,0 +1,29 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level0.dirs.mediumtype'], 'reason': ['alluxio.worker.tieredstore.level0.dirs.mediumtype is not a valid property. Please check the documentation for the correct properties.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.hostname', 'alluxio.worker.hostname', 'alluxio.job.master.hostname', 'alluxio.job.worker.hostname'], 'reason': ['alluxio.master.hostname and alluxio.worker.hostname should be set to the same value.']}
+
+{'hasError': True, 'errParameter': ['alluxio.master.hostname'], 'reason': ['alluxio.master.hostname should be a hostname or an IP address, but it is not.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level0.dirs.mediumtype', 'alluxio.user.ufs.block.read.concurrency.max'], 'reason': ['alluxio.worker.tieredstore.level0.dirs.mediumtype must be a valid medium type, but found ${alluxio.worker.tieredstore.level0.alias}', 'alluxio.user.ufs.block.read.concurrency.max must be a positive integer, but found 1073741823']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port'], 'reason': ['alluxio.job.worker.rpc.port should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.concurrency.max'], 'reason': ['alluxio.user.ufs.block.read.concurrency.max is not a valid property in Alluxio 2.5.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.concurrency.max', 'alluxio.user.ufs.block.read.concurrency.max'], 'reason': ['The value of alluxio.user.ufs.block.read.concurrency.max is not a valid integer.', 'The value of alluxio.user.ufs.block.read.concurrency.max is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.concurrency.max', 'alluxio.worker.tieredstore.level0.dirs.mediumtype'], 'reason': ['alluxio.user.ufs.block.read.concurrency.max should be an integer', 'alluxio.worker.tieredstore.level0.dirs.mediumtype should be a string']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.ufs.block.read.concurrency.max', 'alluxio.user.ufs.block.read.concurrency.max'], 'reason': ['alluxio.user.ufs.block.read.concurrency.max is not a valid property', 'alluxio.user.ufs.block.read.concurrency.max is not a valid property']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.ufs.block.read.concurrency.max	alluxio.user.ufs.block.read.concurrency.max
+[Ciri] Reason for alluxio.user.ufs.block.read.concurrency.max: The value of alluxio.user.ufs.block.read.concurrency.max is not a valid integer.
+[Ciri] Reason for alluxio.user.ufs.block.read.concurrency.max: alluxio.user.ufs.block.read.concurrency.max is not a valid property

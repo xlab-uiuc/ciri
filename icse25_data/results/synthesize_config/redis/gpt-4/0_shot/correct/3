@@ -1,0 +1,11 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-priority', 'tls-session-caching', 'repl-disable-tcp-nodelay', 'tls-session-cache-size'], 'reason': ["The correct parameter for setting replica priority is 'replica-priority', but its value should be an integer between 0 and 255.", "The 'tls-session-caching' parameter is not recognized. Redis configuration for TLS does not include a direct option to enable or disable session caching via a 'tls-session-caching' directive.", "The 'repl-disable-tcp-nodelay' parameter is correctly named but Redis documentation does not explicitly list it as a configuration directive, suggesting it may not be supported or could be deprecated.", "The 'tls-session-cache-size' parameter is intended to set the size of the TLS session cache, but Redis does not directly support this parameter in its configuration file. TLS settings are typically managed through the 'tls-*' directives, but session cache size is not directly configurable."]}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: replica-priority	tls-session-caching	repl-disable-tcp-nodelay	tls-session-cache-size
+[Ciri] Reason for replica-priority: The correct parameter for setting replica priority is 'replica-priority', but its value should be an integer between 0 and 255.
+[Ciri] Reason for tls-session-caching: The 'tls-session-caching' parameter is not recognized. Redis configuration for TLS does not include a direct option to enable or disable session caching via a 'tls-session-caching' directive.
+[Ciri] Reason for repl-disable-tcp-nodelay: The 'repl-disable-tcp-nodelay' parameter is correctly named but Redis documentation does not explicitly list it as a configuration directive, suggesting it may not be supported or could be deprecated.
+[Ciri] Reason for tls-session-cache-size: The 'tls-session-cache-size' parameter is intended to set the size of the TLS session cache, but Redis does not directly support this parameter in its configuration file. TLS settings are typically managed through the 'tls-*' directives, but session cache size is not directly configurable.

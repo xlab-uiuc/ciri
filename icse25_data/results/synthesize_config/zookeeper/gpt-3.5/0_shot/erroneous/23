@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'autopurge.purgeInterval'], 'reason': ['Invalid value for standaloneEnabled. It should be a boolean value.', 'Invalid value for autopurge.purgeInterval. It should be greater than 0.']}
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'localSessionsUpgradingEnabled', 'dataLogDir', 'quorum.auth.enableSasl', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval', 'syncEnabled'], 'reason': ['Invalid value type. Expected integer.', 'Invalid value type. Expected boolean.', 'Invalid directory path format.', 'Property not recognized for Zookeeper version 3.7.0.', 'Property not recognized for Zookeeper version 3.7.0.', 'Invalid value. Expected non-negative integer.', 'Property not recognized for Zookeeper version 3.7.0.']}
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'dataLogDir', 'quorum.auth.serverRequireSasl', 'autopurge.purgeInterval'], 'reason': ['standaloneEnabled should be a boolean value (true/false).', 'dataLogDir should point to a valid directory path.', 'quorum.auth.serverRequireSasl should be set to false for Zookeeper version 3.7.0.', 'autopurge.purgeInterval should be set to a non-zero value.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'autopurge.purgeInterval'], 'reason': ['Invalid value for standaloneEnabled. It should be a boolean value.', 'Invalid value for autopurge.purgeInterval. It should be greater than 0.']}
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'autopurge.purgeInterval'], 'reason': ['Invalid value for standaloneEnabled. It should be a boolean value.', 'Invalid value for autopurge.purgeInterval. It should be greater than 0.']}
+
+{'hasError': True, 'errParameter': ['standaloneEnabled', 'autopurge.purgeInterval'], 'reason': ['Invalid value for standaloneEnabled. It should be a boolean value.', 'Invalid value for autopurge.purgeInterval. It should be greater than 0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: standaloneEnabled	autopurge.purgeInterval
+[Ciri] Reason for standaloneEnabled: Invalid value for standaloneEnabled. It should be a boolean value.
+[Ciri] Reason for autopurge.purgeInterval: Invalid value for autopurge.purgeInterval. It should be greater than 0.

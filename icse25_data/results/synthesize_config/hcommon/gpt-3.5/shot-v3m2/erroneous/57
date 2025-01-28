@@ -1,0 +1,15 @@
+Wrong shot number:
+[13, 15]
+
+Correct shot number:
+[16, 13, 10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.data.connection.mode', 'fs.s3a.change.detection.version.required'], 'reason': ["The property 'fs.ftp.data.connection.mode' has a usage instruction that may not be relevant in the configuration file.", "The property 'fs.s3a.change.detection.version.required' has the value 'false' which may lead to potential inconsistent reads with third-party S3 implementations or against S3 buckets that have object versioning disabled."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.data.connection.mode	fs.s3a.change.detection.version.required
+[Ciri] Reason for fs.ftp.data.connection.mode: The property 'fs.ftp.data.connection.mode' has a usage instruction that may not be relevant in the configuration file.
+[Ciri] Reason for fs.s3a.change.detection.version.required: The property 'fs.s3a.change.detection.version.required' has the value 'false' which may lead to potential inconsistent reads with third-party S3 implementations or against S3 buckets that have object versioning disabled.

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['io.seqfile.local.dir', 'fs.s3a.connection.establish.timeout', 'fs.s3a.multipart.purge.age', 'ipc.[port_number].callqueue.impl', 'ipc.[port_number].weighted-cost.lockexclusive'], 'reason': ["The property 'io.seqfile.local.dir' is not a standard Hadoop configuration property as of version 3.3.0.", "The property 'fs.s3a.connection.establish.timeout' should be 'fs.s3a.connection.timeout', as 'establish' is not part of the correct property name.", "The property 'fs.s3a.multipart.purge.age' is not correctly named. The correct property name is 'fs.s3a.multipart.purge.age.seconds'.", "The properties 'ipc.[port_number].callqueue.impl' and 'ipc.[port_number].weighted-cost.lockexclusive' use a placeholder '[port_number]' which should be replaced with the actual port number for specific configurations, making their current format incorrect.", "General note: While the properties listed may not be directly applicable or correctly named for Hadoop 3.3.0, it's important to verify against the specific Hadoop distribution documentation as there can be variations or custom extensions."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: io.seqfile.local.dir	fs.s3a.connection.establish.timeout	fs.s3a.multipart.purge.age	ipc.[port_number].callqueue.impl	ipc.[port_number].weighted-cost.lockexclusive
+[Ciri] Reason for io.seqfile.local.dir: The property 'io.seqfile.local.dir' is not a standard Hadoop configuration property as of version 3.3.0.
+[Ciri] Reason for fs.s3a.connection.establish.timeout: The property 'fs.s3a.connection.establish.timeout' should be 'fs.s3a.connection.timeout', as 'establish' is not part of the correct property name.
+[Ciri] Reason for fs.s3a.multipart.purge.age: The property 'fs.s3a.multipart.purge.age' is not correctly named. The correct property name is 'fs.s3a.multipart.purge.age.seconds'.
+[Ciri] Reason for ipc.[port_number].callqueue.impl: The properties 'ipc.[port_number].callqueue.impl' and 'ipc.[port_number].weighted-cost.lockexclusive' use a placeholder '[port_number]' which should be replaced with the actual port number for specific configurations, making their current format incorrect.
+[Ciri] Reason for ipc.[port_number].weighted-cost.lockexclusive: General note: While the properties listed may not be directly applicable or correctly named for Hadoop 3.3.0, it's important to verify against the specific Hadoop distribution documentation as there can be variations or custom extensions.

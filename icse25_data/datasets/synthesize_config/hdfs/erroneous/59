@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.datanode.http.address</name>
+  <value>0.0.0.0:3001</value>
+  <description>
+    The datanode http server address and port.
+  </description>
+</property>
+
+<property>
+  <name>dfs.block.access.token.lifetime</name>
+  <value>300</value>
+  <description>The lifetime of access tokens in minutes.</description>
+</property>
+
+<property>
+  <name>dfs.blockreport.intervalMsec</name>
+  <value>35000000</value>
+  <description>Determines block reporting interval in milliseconds.</description>
+</property>
+
+<property>
+  <name>dfs.namenode.max.objects</name>
+  <value>1</value>
+  <description>The maximum number of files, directories and blocks
+  dfs supports. A value of zero indicates no limit to the number
+  of objects that dfs supports.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.stale.datanode.interval</name>
+  <value>30000</value>
+  <description>
+    Default time interval in milliseconds for marking a datanode as "stale",
+    i.e., if the namenode has not received heartbeat msg from a datanode for
+    more than this time interval, the datanode will be marked and treated 
+    as "stale" by default. The stale interval cannot be too small since 
+    otherwise this may cause too frequent change of stale states. 
+    We thus set a minimum stale interval value (the default value is 3 times 
+    of heartbeat interval) and guarantee that the stale interval cannot be less
+    than the minimum value. A stale data node is avoided during lease/block
+    recovery. It can be conditionally avoided for reads (see
+    dfs.namenode.avoid.read.stale.datanode) and for writes (see
+    dfs.namenode.avoid.write.stale.datanode).
+  </description>
+</property>
+
+<property>
+  <name>dfs.ha.zkfc.port</name>
+  <value>3001</value>
+  <description>
+    The port number that the zookeeper failover controller RPC
+    server binds to.
+  </description>
+</property>
+
+<property>
+  <name>dfs.disk.balancer.max.disk.errors</name>
+  <value>5</value>
+    <description>
+      During a block move from a source to destination disk, we might
+      encounter various errors. This defines how many errors we can tolerate
+      before we declare a move between 2 disks (or a step) has failed.
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.send.qop.enabled</name>
+  <value>false</value>
+    <description>
+      A boolean specifies whether NameNode should encrypt the established QOP
+      and include it in block token. The encrypted QOP will be used by DataNode
+      as target QOP, overwriting DataNode configuration. This ensures DataNode
+      will use exactly the same QOP NameNode and client has already agreed on.
+    </description>
+</property>
+
+</configuration>

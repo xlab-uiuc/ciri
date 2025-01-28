@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.scheduler.minimum-allocation-vcores', 'yarn.scheduler.maximum-allocation-vcores'], 'reason': ['The value of yarn.scheduler.minimum-allocation-vcores (5) is greater than the value of yarn.scheduler.maximum-allocation-vcores (4), which is incorrect. The minimum allocation should be less than or equal to the maximum allocation.', 'The value of yarn.scheduler.maximum-allocation-vcores (4) is less than the value of yarn.scheduler.minimum-allocation-vcores (5), which is incorrect. The maximum allocation should be greater than or equal to the minimum allocation.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.scheduler.minimum-allocation-vcores	yarn.scheduler.maximum-allocation-vcores
+[Ciri] Reason for yarn.scheduler.minimum-allocation-vcores: The value of yarn.scheduler.minimum-allocation-vcores (5) is greater than the value of yarn.scheduler.maximum-allocation-vcores (4), which is incorrect. The minimum allocation should be less than or equal to the maximum allocation.
+[Ciri] Reason for yarn.scheduler.maximum-allocation-vcores: The value of yarn.scheduler.maximum-allocation-vcores (4) is less than the value of yarn.scheduler.minimum-allocation-vcores (5), which is incorrect. The maximum allocation should be greater than or equal to the minimum allocation.

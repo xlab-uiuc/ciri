@@ -1,0 +1,18 @@
+Wrong shot number:
+[9, 6, 13]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['adl.http.timeout'], 'reason': ["The property 'adl.http.timeout' has the value '-1' which is not a valid timeout value. It should be a positive integer representing milliseconds."]}
+
+{'hasError': True, 'errParameter': ['adl.http.timeout'], 'reason': ["The property 'adl.http.timeout' has the value '-1' which is not within the accepted range of timeouts (should be greater than or equal to zero)."]}
+
+{'hasError': True, 'errParameter': ['ipc.[port_number].weighted-cost.lockfree'], 'reason': ["The property 'ipc.[port_number].weighted-cost.lockfree' has the value '0' which should be a positive integer greater than zero."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: adl.http.timeout
+[Ciri] Reason for adl.http.timeout: The property 'adl.http.timeout' has the value '-1' which is not within the accepted range of timeouts (should be greater than or equal to zero).

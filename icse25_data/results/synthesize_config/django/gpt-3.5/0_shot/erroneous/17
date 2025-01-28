@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_SSL_HOST', 'CSRF_FAILURE_VIEW', 'DATETIME_FORMAT', 'MANAGERS'], 'reason': ['SECURE_SSL_HOST is not a valid setting in Django 4.0. It should be removed.', "CSRF_FAILURE_VIEW should be 'django.views.csrf.csrf_failure' in Django 4.0.", 'DATETIME_FORMAT is not a valid setting in Django 4.0. It should be removed.', 'MANAGERS setting is not defined in Django 4.0. It should be removed.']}
+
+{'hasError': True, 'errParameter': ['SECURE_SSL_HOST', 'CSRF_FAILURE_VIEW', 'DATETIME_FORMAT', 'MANAGERS'], 'reason': ['SECURE_SSL_HOST should be set to a valid value for Django 4.0.', 'CSRF_FAILURE_VIEW should be updated for Django 4.0.', 'DATETIME_FORMAT has an incorrect format for Django 4.0.', 'MANAGERS should be updated for Django 4.0.']}
+
+{'hasError': True, 'errParameter': ['SECURE_SSL_HOST', 'CSRF_FAILURE_VIEW', 'DATETIME_FORMAT', 'MANAGERS'], 'reason': ['SECURE_SSL_HOST is set to None, it should be a valid secure host.', "CSRF_FAILURE_VIEW should not be set to 'django.views.csrf.csrf_failure' in Django 4.0.", 'DATETIME_FORMAT is not a valid format for Django 4.0.', 'MANAGERS is not defined, it should be set to a list of email addresses.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: SECURE_SSL_HOST	CSRF_FAILURE_VIEW	DATETIME_FORMAT	MANAGERS
+[Ciri] Reason for SECURE_SSL_HOST: SECURE_SSL_HOST is not a valid setting in Django 4.0. It should be removed.
+[Ciri] Reason for CSRF_FAILURE_VIEW: CSRF_FAILURE_VIEW should not be set to 'django.views.csrf.csrf_failure' in Django 4.0.
+[Ciri] Reason for DATETIME_FORMAT: DATETIME_FORMAT is not a valid setting in Django 4.0. It should be removed.
+[Ciri] Reason for MANAGERS: MANAGERS should be updated for Django 4.0.

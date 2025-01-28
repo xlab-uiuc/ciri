@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.hlog.reader.impl', 'hbase.hregion.majorcompaction.jitter', 'hbase.regionserver.compaction.enabled', 'hbase.hstore.compaction.kv.max', 'hbase.hstore.compaction.throughput.lower.bound', 'hbase.ipc.server.fallback-to-simple-auth-allowed', 'hbase.thrift.maxQueuedRequests', 'hbase.snapshot.working.dir'], 'reason': ['The value of hbase.regionserver.hlog.reader.impl is not a valid value. The valid values are org.apache.hadoop.hbase.regionserver.wal.ProtobufLogReader and org.apache.hadoop.hbase.regionserver.wal.WALEdit', 'The value of hbase.hregion.majorcompaction.jitter is not a valid value. The valid values are 0.0 and 1.0', 'The value of hbase.regionserver.compaction.enabled is not a valid value. The valid values are true and false', 'The value of hbase.hstore.compaction.kv.max is not a valid value. The valid values are 1 and 10', 'The value of hbase.hstore.compaction.throughput.lower.bound is not a valid value. The valid values are 26214400 and 100000000', 'The value of hbase.ipc.server.fallback-to-simple-auth-allowed is not a valid value. The valid values are true and false', 'The value of hbase.thrift.maxQueuedRequests is not a valid value. The valid values are 500 and 1000', 'The value of hbase.snapshot.working.dir is not a valid value. The valid values are /valid/dir1 and /valid/dir2']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: hbase.regionserver.hlog.reader.impl	hbase.hregion.majorcompaction.jitter	hbase.regionserver.compaction.enabled	hbase.hstore.compaction.kv.max	hbase.hstore.compaction.throughput.lower.bound	hbase.ipc.server.fallback-to-simple-auth-allowed	hbase.thrift.maxQueuedRequests	hbase.snapshot.working.dir
+[Ciri] Reason for hbase.regionserver.hlog.reader.impl: The value of hbase.regionserver.hlog.reader.impl is not a valid value. The valid values are org.apache.hadoop.hbase.regionserver.wal.ProtobufLogReader and org.apache.hadoop.hbase.regionserver.wal.WALEdit
+[Ciri] Reason for hbase.hregion.majorcompaction.jitter: The value of hbase.hregion.majorcompaction.jitter is not a valid value. The valid values are 0.0 and 1.0
+[Ciri] Reason for hbase.regionserver.compaction.enabled: The value of hbase.regionserver.compaction.enabled is not a valid value. The valid values are true and false
+[Ciri] Reason for hbase.hstore.compaction.kv.max: The value of hbase.hstore.compaction.kv.max is not a valid value. The valid values are 1 and 10
+[Ciri] Reason for hbase.hstore.compaction.throughput.lower.bound: The value of hbase.hstore.compaction.throughput.lower.bound is not a valid value. The valid values are 26214400 and 100000000
+[Ciri] Reason for hbase.ipc.server.fallback-to-simple-auth-allowed: The value of hbase.ipc.server.fallback-to-simple-auth-allowed is not a valid value. The valid values are true and false
+[Ciri] Reason for hbase.thrift.maxQueuedRequests: The value of hbase.thrift.maxQueuedRequests is not a valid value. The valid values are 500 and 1000
+[Ciri] Reason for hbase.snapshot.working.dir: The value of hbase.snapshot.working.dir is not a valid value. The valid values are /valid/dir1 and /valid/dir2

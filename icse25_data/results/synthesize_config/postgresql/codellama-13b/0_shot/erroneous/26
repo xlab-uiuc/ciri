@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maintenance_work_mem', 'max_pred_locks_per_page'], 'reason': ['maintenance_work_mem is not a valid parameter for PostgreSQL 13.0', 'max_pred_locks_per_page is not a valid parameter for PostgreSQL 13.0']}
+
+{'hasError': True, 'errParameter': ['maintenance_work_mem', 'max_pred_locks_per_page', 'geqo_threshold'], 'reason': ['maintenance_work_mem must be a multiple of shared_buffers', 'max_pred_locks_per_page must be greater than 0', 'geqo_threshold must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['max_pred_locks_per_page', 'geqo_threshold'], 'reason': ['max_pred_locks_per_page is not a valid parameter for PostgreSQL 13.0', 'geqo_threshold is not a valid parameter for PostgreSQL 13.0']}
+
+Raw json:
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+{'hasError': True, 'errParameter': ['maintenance_work_mem', 'max_pred_locks_per_page', 'geqo_threshold', 'jit_above_cost'], 'reason': ['maintenance_work_mem should be a multiple of shared_buffers', 'max_pred_locks_per_page should be a power of 2', 'geqo_threshold should be a value between 2 and 100', 'jit_above_cost should be a value between 1000 and 1000000000']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+The CONFIGURATION FILE IS CORRECT

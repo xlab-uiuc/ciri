@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.namenode.lifeline.rpc-address</name>
+  <value>127.0.0.1</value>
+  <description>
+    NameNode RPC lifeline address.  This is an optional separate RPC address
+    that can be used to isolate health checks and liveness to protect against
+    resource exhaustion in the main RPC handler pool.  In the case of
+    HA/Federation where multiple NameNodes exist, the name service ID is added
+    to the name e.g. dfs.namenode.lifeline.rpc-address.ns1.  The value of this
+    property will take the form of nn-host1:rpc-port.  If this property is not
+    defined, then the NameNode will not start a lifeline RPC server.  By
+    default, the property is not defined.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.redundancy.queue.restart.iterations</name>
+  <value>4800</value>
+  <description>When picking blocks from the low redundancy queues, reset the
+    bookmarked iterator after the set number of iterations to ensure any blocks
+    which were not processed on the first pass are retried before the iterators
+    would naturally reach their end point. This ensures blocks are retried
+    more frequently when there are many pending blocks or blocks are
+    continuously added to the queues preventing the iterator reaching its
+    natural endpoint.
+    The default setting of 2400 combined with the default of
+    dfs.namenode.redundancy.interval.seconds means the iterators will be reset
+    approximately every 2 hours.
+    Setting this parameter to zero disables the feature and the iterators will
+    be reset only when the end of all queues has been reached.
+  </description>
+</property>
+
+<property>
+  <name>dfs.secondary.namenode.kerberos.internal.spnego.principal</name>
+  <value>${dfs.web.authentication.kerberos.principal}</value>
+  <description>
+    The server principal used by the Secondary NameNode for web UI SPNEGO
+    authentication when Kerberos security is enabled. Like all other
+    Secondary NameNode settings, it is ignored in an HA setup.
+
+    If the value is '*', the web server will attempt to login with
+    every principal specified in the keytab file
+    dfs.web.authentication.kerberos.keytab.
+  </description>
+</property>
+
+<property>
+  <name>nfs.keytab.file</name>
+  <value>/valid/file2</value>
+  <description>
+    *Note*: Advanced property. Change with caution.
+    This is the path to the keytab file for the hdfs-nfs gateway.
+    This is required when the cluster is kerberized.
+  </description>
+</property>
+
+<property>
+  <name>dfs.datanode.slow.io.warning.threshold.ms</name>
+  <value>300</value>
+  <description>The threshold in milliseconds at which we will log a slow
+    io warning in a datanode. By default, this parameter is set to 300
+    milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.block.placement.ec.classname</name>
+  <value>org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyRackFaultTolerant</value>
+  <description>
+    Placement policy class for striped files.
+    Defaults to BlockPlacementPolicyRackFaultTolerant.class
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.start-segment.timeout.ms</name>
+  <value>40000</value>
+  <description>
+    Quorum timeout in milliseconds for starting a log segment.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.blockreport.queue.size</name>
+  <value>1024</value>
+    <description>
+      The queue size of BlockReportProcessingThread in BlockManager.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,16 @@
+Wrong shot number:
+[4, 2, 8]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['zookeeper.recovery.retry.maxsleeptime', 'hbase.lease.recovery.timeout', 'hbase.mob.file.cache.size'], 'reason': ["The property 'zookeeper.recovery.retry.maxsleeptime' expects an integer value for milliseconds but is given a floating point number.", "The property 'hbase.lease.recovery.timeout' has a usage example that suggests a default value of 900000 milliseconds, but the provided value is 1800000, which might be a mistake if the intention was to use the default.", "The property 'hbase.mob.file.cache.size' suggests a default value of 1000 in the description, but the provided value is 500. This might not be an error per se, but it's inconsistent with the suggested default value in the description."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: zookeeper.recovery.retry.maxsleeptime	hbase.lease.recovery.timeout	hbase.mob.file.cache.size
+[Ciri] Reason for zookeeper.recovery.retry.maxsleeptime: The property 'zookeeper.recovery.retry.maxsleeptime' expects an integer value for milliseconds but is given a floating point number.
+[Ciri] Reason for hbase.lease.recovery.timeout: The property 'hbase.lease.recovery.timeout' has a usage example that suggests a default value of 900000 milliseconds, but the provided value is 1800000, which might be a mistake if the intention was to use the default.
+[Ciri] Reason for hbase.mob.file.cache.size: The property 'hbase.mob.file.cache.size' suggests a default value of 1000 in the description, but the provided value is 500. This might not be an error per se, but it's inconsistent with the suggested default value in the description.

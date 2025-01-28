@@ -1,0 +1,18 @@
+Wrong shot number:
+[4, 8, 6]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['unix_socket_directories'], 'reason': ["The property 'unix_socket_directories' has an incorrect value 'dev/urandom///'. It should specify valid directories for Unix socket connections."]}
+
+{'hasError': True, 'errParameter': ['unix_socket_directories'], 'reason': ["The property 'unix_socket_directories' has an invalid value 'dev/urandom///'. It should specify valid directories for Unix sockets."]}
+
+{'hasError': True, 'errParameter': ['unix_socket_directories'], 'reason': ["The property 'unix_socket_directories' has an incorrect value. It should specify valid directories separated by commas."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: unix_socket_directories
+[Ciri] Reason for unix_socket_directories: The property 'unix_socket_directories' has an invalid value 'dev/urandom///'. It should specify valid directories for Unix sockets.

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.streaming.reader.close.timeout', 'alluxio.master.rpc.executor.keepalive'], 'reason': ["In Alluxio 2.5.0, the property 'alluxio.user.streaming.reader.close.timeout' does not exist. It was introduced in version 2.6.0.", "The time unit 'sec' used in 'alluxio.master.rpc.executor.keepalive' is invalid. Valid time units are 'ns', 'us', 'ms', 's', 'm', 'h', 'd'. It should be 's' for seconds."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.streaming.reader.close.timeout	alluxio.master.rpc.executor.keepalive
+[Ciri] Reason for alluxio.user.streaming.reader.close.timeout: In Alluxio 2.5.0, the property 'alluxio.user.streaming.reader.close.timeout' does not exist. It was introduced in version 2.6.0.
+[Ciri] Reason for alluxio.master.rpc.executor.keepalive: The time unit 'sec' used in 'alluxio.master.rpc.executor.keepalive' is invalid. Valid time units are 'ns', 'us', 'ms', 's', 'm', 'h', 'd'. It should be 's' for seconds.

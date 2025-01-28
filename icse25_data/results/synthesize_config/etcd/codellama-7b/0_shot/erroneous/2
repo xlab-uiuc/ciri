@@ -1,0 +1,23 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-read-timeout'], 'reason': ['proxy-refresh-interval must be greater than 0', 'proxy-read-timeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-read-timeout', 'discovery-fallback', 'max-wals'], 'reason': ['proxy-refresh-interval must be greater than 0', 'proxy-read-timeout must be greater than 0', "discovery-fallback must be one of 'proxy', 'etcd', or 'dns'", 'max-wals must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'snapshot-count', 'discovery-fallback', 'proxy-read-timeout'], 'reason': ['proxy-refresh-interval: 30000 is greater than max-timeout: -5.5', 'snapshot-count: 5000 is greater than max-snapshot: 10', "discovery-fallback: 'proxy' is not a valid value for discovery-fallback", 'proxy-read-timeout: 1 is less than min-proxy-read-timeout: 2']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'snapshot-count', 'discovery-fallback', 'proxy-read-timeout', 'max-wals'], 'reason': ['proxy-refresh-interval: 30000 is not a valid value for proxy-refresh-interval. It should be a positive integer.', 'snapshot-count: 5000 is not a valid value for snapshot-count. It should be a positive integer.', "discovery-fallback: 'proxy' is not a valid value for discovery-fallback. It should be either 'proxy' or 'proxy-failover'.", 'proxy-read-timeout: 1 is not a valid value for proxy-read-timeout. It should be a positive integer.', 'max-wals: 10 is not a valid value for max-wals. It should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-read-timeout', 'discovery-fallback', 'max-wals'], 'reason': ['proxy-refresh-interval: 30000 is not a valid value for proxy-refresh-interval. The value must be a duration string, a number, or a boolean. The value must be greater than or equal to 1s.', 'proxy-read-timeout: 1 is not a valid value for proxy-read-timeout. The value must be a duration string, a number, or a boolean. The value must be greater than or equal to 1s.', 'discovery-fallback: proxy is not a valid value for discovery-fallback. The value must be a string.', 'max-wals: 10 is not a valid value for max-wals. The value must be a number.']}
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-read-timeout', 'discovery-fallback', 'max-wals'], 'reason': ['proxy-refresh-interval must be greater than 0', 'proxy-read-timeout must be greater than 0', "discovery-fallback must be either 'proxy' or 'proxy-failover'", 'max-wals must be greater than 0']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: proxy-refresh-interval	proxy-read-timeout	discovery-fallback	max-wals
+[Ciri] Reason for proxy-refresh-interval: proxy-refresh-interval must be greater than 0
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout: 1 is not a valid value for proxy-read-timeout. The value must be a duration string, a number, or a boolean. The value must be greater than or equal to 1s.
+[Ciri] Reason for discovery-fallback: discovery-fallback must be either 'proxy' or 'proxy-failover'
+[Ciri] Reason for max-wals: max-wals: 10 is not a valid value for max-wals. The value must be a number.

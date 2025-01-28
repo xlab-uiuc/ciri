@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['ssl_ciphers', 'ssl_cert_file', 'log_statement', 'max_standby_archive_delay', 'log_transaction_sample_rate', 'geqo_threshold', 'log_temp_files', 'log_file_mode'], 'reason': ['ssl_ciphers: Invalid cipher string.', 'ssl_cert_file: File does not exist.', 'log_statement: Invalid value.', 'max_standby_archive_delay: Invalid value.', 'log_transaction_sample_rate: Invalid value.', 'geqo_threshold: Invalid value.', 'log_temp_files: Invalid value.', 'log_file_mode: Invalid value.']}
+
+{'hasError': True, 'errParameter': ['ssl_ciphers', 'ssl_cert_file', 'log_statement', 'max_standby_archive_delay', 'log_transaction_sample_rate', 'geqo_threshold', 'log_temp_files', 'log_file_mode'], 'reason': ['ssl_ciphers: Invalid cipher string', 'ssl_cert_file: File not found', 'log_statement: Invalid value', 'max_standby_archive_delay: Invalid value', 'log_transaction_sample_rate: Invalid value', 'geqo_threshold: Invalid value', 'log_temp_files: Invalid value', 'log_file_mode: Invalid value']}
+
+{'hasError': True, 'errParameter': ['ssl_ciphers', 'ssl_cert_file', 'log_statement', 'max_standby_archive_delay', 'log_transaction_sample_rate', 'geqo_threshold', 'log_temp_files', 'log_file_mode'], 'reason': ['ssl_ciphers: The value of this property is not valid.', 'ssl_cert_file: The value of this property is not valid.', 'log_statement: The value of this property is not valid.', 'max_standby_archive_delay: The value of this property is not valid.', 'log_transaction_sample_rate: The value of this property is not valid.', 'geqo_threshold: The value of this property is not valid.', 'log_temp_files: The value of this property is not valid.', 'log_file_mode: The value of this property is not valid.']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: ssl_ciphers	ssl_cert_file	log_statement	max_standby_archive_delay	log_transaction_sample_rate	geqo_threshold	log_temp_files	log_file_mode
+[Ciri] Reason for ssl_ciphers: ssl_ciphers: Invalid cipher string
+[Ciri] Reason for ssl_cert_file: ssl_cert_file: File not found
+[Ciri] Reason for log_statement: log_statement: Invalid value.
+[Ciri] Reason for max_standby_archive_delay: max_standby_archive_delay: Invalid value.
+[Ciri] Reason for log_transaction_sample_rate: log_transaction_sample_rate: Invalid value
+[Ciri] Reason for geqo_threshold: geqo_threshold: Invalid value
+[Ciri] Reason for log_temp_files: log_temp_files: Invalid value.
+[Ciri] Reason for log_file_mode: log_file_mode: Invalid value.

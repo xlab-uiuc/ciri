@@ -1,0 +1,19 @@
+Wrong shot number:
+[9, 3, 14]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry', 'dfs.client.block.write.replace-datanode-on-failure.min-replication'], 'reason': ["The property 'dfs.client.cached.conn.retry' has the value '-1' which is not within the accepted value {0,1,2,3,4,5,6,7,8,9,10}.", "The property 'dfs.client.block.write.replace-datanode-on-failure.min-replication' has the value '-1' which is not within the accepted value {0,1,2,3,4,5,6,7,8,9,10}."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry', 'dfs.client.block.write.replace-datanode-on-failure.min-replication'], 'reason': ["The property 'dfs.client.cached.conn.retry' has the value '-1' which is not within the accepted value {0,1,2,3,4,5}.", "The property 'dfs.client.block.write.replace-datanode-on-failure.min-replication' has the value '-1' which is not within the accepted value {0,1,2,3,4,5}."]}
+
+{'hasError': True, 'errParameter': ['dfs.client.cached.conn.retry', 'dfs.client.block.write.replace-datanode-on-failure.min-replication'], 'reason': ["The property 'dfs.client.cached.conn.retry' has the value '-1' which is not within the accepted value {0,1,2,3,4,5}.", "The property 'dfs.client.block.write.replace-datanode-on-failure.min-replication' has the value '-1' which is not within the accepted value {0,1,2,3,4,5}."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.client.cached.conn.retry	dfs.client.block.write.replace-datanode-on-failure.min-replication
+[Ciri] Reason for dfs.client.cached.conn.retry: The property 'dfs.client.cached.conn.retry' has the value '-1' which is not within the accepted value {0,1,2,3,4,5}.
+[Ciri] Reason for dfs.client.block.write.replace-datanode-on-failure.min-replication: The property 'dfs.client.block.write.replace-datanode-on-failure.min-replication' has the value '-1' which is not within the accepted value {0,1,2,3,4,5,6,7,8,9,10}.

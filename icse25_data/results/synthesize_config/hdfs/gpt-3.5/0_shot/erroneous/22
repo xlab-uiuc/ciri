@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.servicerpc-address', 'dfs.namenode.invalidate.work.pct.per.iteration', 'nfs.mountd.port'], 'reason': ["Invalid value format for property 'dfs.namenode.servicerpc-address'. Expected format: nn-host1:rpc-port.", "Invalid value format for property 'dfs.namenode.invalidate.work.pct.per.iteration'. Expected format: positive, non-zero percentage in float notation (X.Yf), with 1.0f meaning 100%.", "Invalid value format for property 'nfs.mountd.port'. Expected a valid port number."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.servicerpc-address', 'dfs.namenode.invalidate.work.pct.per.iteration', 'nfs.mountd.port', 'dfs.datanode.outliers.report.interval', 'dfs.client.mmap.enabled', 'dfs.datanode.cache.revocation.polling.ms', 'dfs.namenode.get-blocks.max-qps', 'httpfs.buffer.size'], 'reason': ['Invalid value format. Expected format: nn-host1:rpc-port', 'Invalid value format. Expected positive, non-zero percentage in float notation (X.Yf)', 'Invalid value format. Expected a valid port number', 'Invalid value format. Expected a valid time unit suffix', 'Invalid value format. Expected boolean value (true/false)', 'Invalid value format. Expected a positive integer', 'Invalid value format. Expected a positive integer', "Property 'usage' is not a valid property"]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.servicerpc-address', 'dfs.namenode.invalidate.work.pct.per.iteration', 'nfs.mountd.port'], 'reason': ['Value should be in the format nn-host1:rpc-port for dfs.namenode.servicerpc-address.', 'Value should be a positive, non-zero percentage in float notation (X.Yf) for dfs.namenode.invalidate.work.pct.per.iteration.', 'Value should be a positive integer for nfs.mountd.port.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.namenode.servicerpc-address	dfs.namenode.invalidate.work.pct.per.iteration	nfs.mountd.port
+[Ciri] Reason for dfs.namenode.servicerpc-address: Value should be in the format nn-host1:rpc-port for dfs.namenode.servicerpc-address.
+[Ciri] Reason for dfs.namenode.invalidate.work.pct.per.iteration: Invalid value format for property 'dfs.namenode.invalidate.work.pct.per.iteration'. Expected format: positive, non-zero percentage in float notation (X.Yf), with 1.0f meaning 100%.
+[Ciri] Reason for nfs.mountd.port: Invalid value format for property 'nfs.mountd.port'. Expected a valid port number.

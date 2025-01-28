@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.proxy.s3.writetype', 'alluxio.security.stale.channel.purge.interval'], 'reason': ["The value 'nonono' is invalid for the property 'alluxio.proxy.s3.writetype'. Valid values are 'CACHE_THROUGH' (default), 'MUST_CACHE' or 'THROUGH'.", "The value '6day' is invalid for the property 'alluxio.security.stale.channel.purge.interval'. It should be specified as a time value using the following format: {amount}{unit}, where amount is a positive integer and unit is one of (ms, s, m, h, d) representing milliseconds, seconds, minutes, hours, and days respectively. For example, a valid value could be '6d' for 6 days."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.proxy.s3.writetype	alluxio.security.stale.channel.purge.interval
+[Ciri] Reason for alluxio.proxy.s3.writetype: The value 'nonono' is invalid for the property 'alluxio.proxy.s3.writetype'. Valid values are 'CACHE_THROUGH' (default), 'MUST_CACHE' or 'THROUGH'.
+[Ciri] Reason for alluxio.security.stale.channel.purge.interval: The value '6day' is invalid for the property 'alluxio.security.stale.channel.purge.interval'. It should be specified as a time value using the following format: {amount}{unit}, where amount is a positive integer and unit is one of (ms, s, m, h, d) representing milliseconds, seconds, minutes, hours, and days respectively. For example, a valid value could be '6d' for 6 days.

@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.web.bind.host', 'alluxio.worker.session.timeout', 'alluxio.master.lost.worker.file.detection.interval', 'alluxio.master.replication.check.interval', 'alluxio.master.journal.flush.timeout'], 'reason': ['The IP address 256.256.256.256 is invalid. IP address components cannot exceed 255.', "The unit for alluxio.worker.session.timeout should be 'ms', 's', 'm', 'h' or 'd' in Alluxio 2.5.0, but 'min' was provided.", "The unit for alluxio.master.lost.worker.file.detection.interval should be 'ms', 's', 'm', 'h' or 'd' in Alluxio 2.5.0, but 'min' was provided.", "The unit for alluxio.master.replication.check.interval should be 'ms', 's', 'm', 'h' or 'd' in Alluxio 2.5.0, but 'min' was provided.", "The unit for alluxio.master.journal.flush.timeout should be 'ms', 's', 'm', 'h' or 'd' in Alluxio 2.5.0, but 'min' was provided."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.job.worker.web.bind.host	alluxio.worker.session.timeout	alluxio.master.lost.worker.file.detection.interval	alluxio.master.replication.check.interval	alluxio.master.journal.flush.timeout
+[Ciri] Reason for alluxio.job.worker.web.bind.host: The IP address 256.256.256.256 is invalid. IP address components cannot exceed 255.
+[Ciri] Reason for alluxio.worker.session.timeout: The unit for alluxio.worker.session.timeout should be 'ms', 's', 'm', 'h' or 'd' in Alluxio 2.5.0, but 'min' was provided.
+[Ciri] Reason for alluxio.master.lost.worker.file.detection.interval: The unit for alluxio.master.lost.worker.file.detection.interval should be 'ms', 's', 'm', 'h' or 'd' in Alluxio 2.5.0, but 'min' was provided.
+[Ciri] Reason for alluxio.master.replication.check.interval: The unit for alluxio.master.replication.check.interval should be 'ms', 's', 'm', 'h' or 'd' in Alluxio 2.5.0, but 'min' was provided.
+[Ciri] Reason for alluxio.master.journal.flush.timeout: The unit for alluxio.master.journal.flush.timeout should be 'ms', 's', 'm', 'h' or 'd' in Alluxio 2.5.0, but 'min' was provided.

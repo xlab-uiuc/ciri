@@ -1,0 +1,18 @@
+Wrong shot number:
+[8, 12, 4]
+
+Correct shot number:
+[11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.rootdir.perms'], 'reason': ["The property 'hbase.rootdir.perms' has the value '1400' which does not follow the correct permission format. Permissions should be in the format of three digits representing user, group, and others with values ranging from 0 to 7."]}
+
+{'hasError': True, 'errParameter': ['hbase.rootdir.perms'], 'reason': ["The property 'hbase.rootdir.perms' has the value '1400' which is not a valid permission format. Permissions should be specified in the format 'rwxr-x---'."]}
+
+{'hasError': True, 'errParameter': ['hbase.rootdir.perms'], 'reason': ["The property 'hbase.rootdir.perms' has the value '1400' which is not a valid permission format. Permissions should be in the format of three digits representing user, group, and others with values ranging from 0 to 7."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.rootdir.perms
+[Ciri] Reason for hbase.rootdir.perms: The property 'hbase.rootdir.perms' has the value '1400' which is not a valid permission format. Permissions should be in the format of three digits representing user, group, and others with values ranging from 0 to 7.

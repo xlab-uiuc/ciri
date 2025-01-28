@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tls-port', 'replica-announce-port', 'replica-announce-ip', 'cluster-config-file', 'cluster-announce-bus-port', 'acllog-max-len', 'appendonly', 'aof-timestamp-enabled'], 'reason': ['tls-port: file:// is not a valid port number', 'replica-announce-port: 2468 is not a valid port number', 'replica-announce-ip: 5.5.5.5 is not a valid IP address', 'cluster-config-file: nodes-6379.conf is not a valid file path', 'cluster-announce-bus-port: 12760 is not a valid port number', 'acllog-max-len: 128 is not a valid value', 'appendonly: no is not a valid value', 'aof-timestamp-enabled: no is not a valid value']}
+
+{'hasError': True, 'errParameter': ['tls-port', 'replica-announce-port', 'replica-announce-ip', 'cluster-config-file', 'cluster-announce-bus-port', 'acllog-max-len', 'appendonly', 'aof-timestamp-enabled'], 'reason': ['tls-port should be an integer, not a string', 'replica-announce-port should be an integer, not a string', 'replica-announce-ip should be an IP address, not a string', 'cluster-config-file should be a file path, not a string', 'cluster-announce-bus-port should be an integer, not a string', 'acllog-max-len should be an integer, not a string', 'appendonly should be a boolean, not a string', 'aof-timestamp-enabled should be a boolean, not a string']}
+
+{'hasError': True, 'errParameter': ['tls-port', 'replica-announce-port', 'replica-announce-ip', 'cluster-config-file', 'cluster-announce-bus-port', 'acllog-max-len', 'appendonly', 'aof-timestamp-enabled'], 'reason': ['tls-port is not a valid port number', 'replica-announce-port is not a valid port number', 'replica-announce-ip is not a valid IP address', 'cluster-config-file is not a valid file path', 'cluster-announce-bus-port is not a valid port number', 'acllog-max-len is not a valid number', 'appendonly is not a valid boolean', 'aof-timestamp-enabled is not a valid boolean']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: tls-port	replica-announce-port	replica-announce-ip	cluster-config-file	cluster-announce-bus-port	acllog-max-len	appendonly	aof-timestamp-enabled
+[Ciri] Reason for tls-port: tls-port is not a valid port number
+[Ciri] Reason for replica-announce-port: replica-announce-port is not a valid port number
+[Ciri] Reason for replica-announce-ip: replica-announce-ip is not a valid IP address
+[Ciri] Reason for cluster-config-file: cluster-config-file is not a valid file path
+[Ciri] Reason for cluster-announce-bus-port: cluster-announce-bus-port: 12760 is not a valid port number
+[Ciri] Reason for acllog-max-len: acllog-max-len: 128 is not a valid value
+[Ciri] Reason for appendonly: appendonly should be a boolean, not a string
+[Ciri] Reason for aof-timestamp-enabled: aof-timestamp-enabled should be a boolean, not a string

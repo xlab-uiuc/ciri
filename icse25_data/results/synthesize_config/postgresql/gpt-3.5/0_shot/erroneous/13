@@ -1,0 +1,25 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_count', 'deadlock_timeout', 'default_toast_compression', 'gss_accept_delegation', 'log_rotation_age'], 'reason': ['tcp_keepalives_count value should be a positive integer.', 'deadlock_timeout value should be specified in milliseconds (ms) or without a unit for seconds (s).', "default_toast_compression value should be 'none', 'pglz', 'lz4', or 'zstd'.", "gss_accept_delegation value should be 'on' or 'off'.", 'log_rotation_age value should be specified in seconds (s), minutes (min), hours (h), or days (d).']}
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_count', 'deadlock_timeout', 'default_toast_compression', 'gss_accept_delegation'], 'reason': ['tcp_keepalives_count value should be a positive integer.', 'deadlock_timeout value should be specified in milliseconds (ms) or without a unit for seconds (s).', "default_toast_compression value should be 'none', 'pglz', or 'lz4'.", "gss_accept_delegation value should be 'on' or 'off'."]}
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_count', 'deadlock_timeout', 'wal_retrieve_retry_interval', 'default_toast_compression', 'gss_accept_delegation', 'log_rotation_age'], 'reason': ['tcp_keepalives_count value should be a positive integer.', "deadlock_timeout value should specify a time unit (e.g., '1s' for 1 second).", "wal_retrieve_retry_interval value should specify a time unit (e.g., '5s' for 5 seconds).", "default_toast_compression value should be 'none', 'pglz', 'lz4', or 'zstd'.", "gss_accept_delegation value should be 'on' or 'off'.", "log_rotation_age value should specify a time unit (e.g., '1d' for 1 day)."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_count', 'ssl_passphrase_command_supports_reload', 'deadlock_timeout', 'wal_retrieve_retry_interval', 'default_toast_compression', 'gss_accept_delegation', 'log_rotation_age'], 'reason': ['tcp_keepalives_count value should be a positive integer.', "ssl_passphrase_command_supports_reload only accepts 'on' or 'off' values.", "deadlock_timeout value should include units (e.g., '1s' for seconds).", "wal_retrieve_retry_interval value should include units (e.g., '5s' for seconds).", "default_toast_compression value should be 'none' or 'pglz'.", "gss_accept_delegation only accepts 'on' or 'off' values.", "log_rotation_age value should include units (e.g., '1d' for days)."]}
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_count', 'deadlock_timeout', 'wal_retrieve_retry_interval', 'default_toast_compression', 'gss_accept_delegation', 'log_rotation_age'], 'reason': ['tcp_keepalives_count must be a positive integer.', 'deadlock_timeout value should include units (ms, s, min, h, d, w).', 'wal_retrieve_retry_interval value should include units (ms, s, min, h, d, w).', "default_toast_compression value should be 'none' or 'pglz'", "gss_accept_delegation value should be 'on' or 'off'", 'log_rotation_age value should include units (ms, s, min, h, d, w).']}
+
+{'hasError': True, 'errParameter': ['tcp_keepalives_count', 'deadlock_timeout', 'wal_retrieve_retry_interval', 'default_toast_compression', 'gss_accept_delegation', 'log_rotation_age'], 'reason': ['tcp_keepalives_count value should be a positive integer.', 'deadlock_timeout value should be specified in seconds.', 'wal_retrieve_retry_interval value should be specified in seconds.', "default_toast_compression value should be 'none' or 'pglz'.", "gss_accept_delegation value should be 'on' or 'off'.", "log_rotation_age value should be specified in time units (e.g., '1d' for 1 day)."]}
+
+Final result:
+
+There are 6 misconfiguration parameters in the input: tcp_keepalives_count	deadlock_timeout	wal_retrieve_retry_interval	default_toast_compression	gss_accept_delegation	log_rotation_age
+[Ciri] Reason for tcp_keepalives_count: tcp_keepalives_count value should be a positive integer.
+[Ciri] Reason for deadlock_timeout: deadlock_timeout value should include units (ms, s, min, h, d, w).
+[Ciri] Reason for wal_retrieve_retry_interval: wal_retrieve_retry_interval value should include units (ms, s, min, h, d, w).
+[Ciri] Reason for default_toast_compression: default_toast_compression value should be 'none' or 'pglz'
+[Ciri] Reason for gss_accept_delegation: gss_accept_delegation value should be 'on' or 'off'
+[Ciri] Reason for log_rotation_age: log_rotation_age value should include units (ms, s, min, h, d, w).

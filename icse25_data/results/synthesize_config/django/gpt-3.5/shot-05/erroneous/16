@@ -1,0 +1,12 @@
+Wrong shot number:
+[2, 1, 3, 4, 5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CSRF_COOKIE_NAME', 'NUMBER_GROUPING'], 'reason': ["The property 'CSRF_COOKIE_NAME' has the value 'csrftoken' which is a reserved name and should not be used as a custom CSRF cookie name.", "The property 'NUMBER_GROUPING' has the value 'hadoop' which is not a valid integer value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: CSRF_COOKIE_NAME	NUMBER_GROUPING
+[Ciri] Reason for CSRF_COOKIE_NAME: The property 'CSRF_COOKIE_NAME' has the value 'csrftoken' which is a reserved name and should not be used as a custom CSRF cookie name.
+[Ciri] Reason for NUMBER_GROUPING: The property 'NUMBER_GROUPING' has the value 'hadoop' which is not a valid integer value.

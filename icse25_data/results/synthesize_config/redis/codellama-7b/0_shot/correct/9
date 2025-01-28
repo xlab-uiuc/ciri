@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-policy', 'maxmemory-clients', 'replica-announce-ip', 'replica-lazy-flush', 'set-max-intset-entries', 'list-max-listpack-size', 'pidfile'], 'reason': ['maxmemory-policy must be one of the following: volatile-lru, allkeys-lru, volatile-random, allkeys-random, volatile-ttl, noeviction, or random', 'maxmemory-clients must be a positive integer', 'replica-announce-ip must be a valid IP address', 'replica-lazy-flush must be one of the following: yes or no', 'set-max-intset-entries must be a positive integer', 'list-max-listpack-size must be a positive integer or -1', 'pidfile must be a valid file path']}
+
+{'hasError': True, 'errParameter': ['enable-module-command'], 'reason': ['enable-module-command is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['maxmemory-policy', 'maxmemory-clients', 'replica-announce-ip', 'replica-lazy-flush', 'set-max-intset-entries', 'list-max-listpack-size', 'pidfile'], 'reason': ['maxmemory-policy must be one of the following: volatile-lru, allkeys-lru, volatile-random, allkeys-random, volatile-ttl, noeviction', 'maxmemory-clients must be a positive integer', 'replica-announce-ip must be an IP address', 'replica-lazy-flush must be one of the following: yes, no', 'set-max-intset-entries must be a positive integer', 'list-max-listpack-size must be a positive integer or -2', 'pidfile must be a valid file path']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: maxmemory-policy	maxmemory-clients	replica-announce-ip	replica-lazy-flush	set-max-intset-entries	list-max-listpack-size	pidfile
+[Ciri] Reason for maxmemory-policy: maxmemory-policy must be one of the following: volatile-lru, allkeys-lru, volatile-random, allkeys-random, volatile-ttl, noeviction
+[Ciri] Reason for maxmemory-clients: maxmemory-clients must be a positive integer
+[Ciri] Reason for replica-announce-ip: replica-announce-ip must be a valid IP address
+[Ciri] Reason for replica-lazy-flush: replica-lazy-flush must be one of the following: yes or no
+[Ciri] Reason for set-max-intset-entries: set-max-intset-entries must be a positive integer
+[Ciri] Reason for list-max-listpack-size: list-max-listpack-size must be a positive integer or -2
+[Ciri] Reason for pidfile: pidfile must be a valid file path

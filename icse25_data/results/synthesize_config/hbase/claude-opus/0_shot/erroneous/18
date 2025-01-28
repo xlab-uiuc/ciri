@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit', 'hbase.column.max.version'], 'reason': ['hbase.regionserver.regionSplitLimit cannot be negative. The default value is 1000 if not specified.', 'hbase.column.max.version must be a positive integer. Setting it to 0 means no versions will be kept.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.regionserver.regionSplitLimit	hbase.column.max.version
+[Ciri] Reason for hbase.regionserver.regionSplitLimit: hbase.regionserver.regionSplitLimit cannot be negative. The default value is 1000 if not specified.
+[Ciri] Reason for hbase.column.max.version: hbase.column.max.version must be a positive integer. Setting it to 0 means no versions will be kept.

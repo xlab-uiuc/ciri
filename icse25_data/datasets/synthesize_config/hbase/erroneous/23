@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.regionserver.info.port.auto</name>
+  <value>true</value>
+    <description>Whether or not the Master or RegionServer
+    UI should search for a port to bind to. Enables automatic port
+    search if hbase.regionserver.info.port is already in use.
+    Useful for testing, turned off by default.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.min.size</name>
+  <value>134217728</value>
+    <description>A StoreFile (or a selection of StoreFiles, when using ExploringCompactionPolicy)
+      smaller than this size will always be eligible for minor compaction.
+      HFiles this size or larger are evaluated by hbase.hstore.compaction.ratio to determine if
+      they are eligible. Because this limit represents the "automatic include" limit for all
+      StoreFiles smaller than this value, this value may need to be reduced in write-heavy
+      environments where many StoreFiles in the 1-2 MB range are being flushed, because every
+      StoreFile will be targeted for compaction and the resulting StoreFiles may still be under the
+      minimum size and require further compaction. If this parameter is lowered, the ratio check is
+      triggered more quickly. This addressed some issues seen in earlier versions of HBase but
+      changing this parameter is no longer necessary in most situations. Default: 128 MB expressed
+      in bytes.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.max.size</name>
+  <value>4611686018427387903</value>
+    <description>A StoreFile (or a selection of StoreFiles, when using ExploringCompactionPolicy)
+      larger than this size will be excluded from compaction. The effect of
+      raising hbase.hstore.compaction.max.size is fewer, larger StoreFiles that do not get
+      compacted often. If you feel that compaction is happening too often without much benefit, you
+      can try raising this value. Default: the value of LONG.MAX_VALUE, expressed in bytes.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.majorcompaction.pagecache.drop</name>
+  <value>hadoop</value>
+    <description>Specifies whether to drop pages read/written into the system page cache by
+      major compactions. Setting it to true helps prevent major compactions from
+      polluting the page cache, which is almost always required, especially for clusters
+      with low/moderate memory to storage ratio.</description>
+</property>
+
+<property>
+  <name>hbase.hstore.compaction.kv.max</name>
+  <value>10</value>
+    <description>The maximum number of KeyValues to read and then write in a batch when flushing or
+      compacting. Set this lower if you have big KeyValues and problems with Out Of Memory
+      Exceptions Set this higher if you have wide, small rows. </description>
+</property>
+
+<property>
+  <name>hbase.auth.key.update.interval</name>
+  <value>86400000</value>
+    <description>The update interval for master key for authentication tokens
+    in servers in milliseconds.  Only used when HBase security is enabled.</description>
+</property>
+
+<property>
+  <name>hbase.display.keys</name>
+  <value>false</value>
+    <description>When this is set to true the webUI and such will display all start/end keys
+                 as part of the table details, region names, etc. When this is set to false,
+                 the keys are hidden.</description>
+</property>
+
+<property>
+  <name>hbase.mob.cache.evict.period</name>
+  <value>3600</value>
+    <description>
+      The amount of time in seconds before the mob cache evicts cached mob files.
+      The default value is 3600 seconds.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.worker.tieredstore.level1.watermark.high.ratio'], 'reason': ['The value of alluxio.user.network.rpc.max.inbound.message.size is not a valid size value. The value should be a positive integer followed by a size unit such as KB, MB, GB, TB, PB, EB, ZB, YB. For example, 100MB.', 'The value of alluxio.worker.tieredstore.level1.watermark.high.ratio is not a valid ratio value. The value should be a number between 0 and 1. For example, 0.95.']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size'], 'reason': ['The value of alluxio.user.network.rpc.max.inbound.message.size is invalid. It should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.web.bind.host'], 'reason': ['alluxio.job.master.web.bind.host is not a valid property for alluxio version 2.5.0.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.worker.tieredstore.level1.watermark.high.ratio'], 'reason': ['alluxio.user.network.rpc.max.inbound.message.size should be a positive integer', 'alluxio.worker.tieredstore.level1.watermark.high.ratio should be a double between 0 and 1']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.worker.tieredstore.level1.watermark.high.ratio'], 'reason': ['alluxio.user.network.rpc.max.inbound.message.size should be a positive integer', 'alluxio.worker.tieredstore.level1.watermark.high.ratio should be a float between 0 and 1']}
+
+{'hasError': True, 'errParameter': ['alluxio.user.date.format.pattern', 'alluxio.worker.network.async.cache.manager.queue.max', 'alluxio.worker.tieredstore.level1.watermark.high.ratio'], 'reason': ['Invalid date format pattern', 'Invalid value for alluxio.worker.network.async.cache.manager.queue.max', 'Invalid value for alluxio.worker.tieredstore.level1.watermark.high.ratio']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.user.network.rpc.max.inbound.message.size	alluxio.worker.tieredstore.level1.watermark.high.ratio
+[Ciri] Reason for alluxio.user.network.rpc.max.inbound.message.size: alluxio.user.network.rpc.max.inbound.message.size should be a positive integer
+[Ciri] Reason for alluxio.worker.tieredstore.level1.watermark.high.ratio: alluxio.worker.tieredstore.level1.watermark.high.ratio should be a float between 0 and 1

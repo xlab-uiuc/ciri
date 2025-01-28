@@ -1,0 +1,31 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfilename', 'unixsocketperm', 'repl-diskless-sync', 'cluster-announce-port', 'port'], 'reason': ['appendfilename: The value of the property is not a valid file path.', 'unixsocketperm: The value of the property is not a valid number.', 'repl-diskless-sync: The value of the property is not a valid boolean.', 'cluster-announce-port: The value of the property is not a valid number.', 'port: The value of the property is not a valid number.']}
+
+{'hasError': True, 'errParameter': ['appendfilename', 'repl-diskless-sync', 'cluster-announce-port', 'port'], 'reason': ["appendfilename: The value of the property 'appendfilename' is not a valid file path.", "repl-diskless-sync: The value of the property 'repl-diskless-sync' is not a valid boolean value.", "cluster-announce-port: The value of the property 'cluster-announce-port' is not a valid integer value.", "port: The value of the property 'port' is not a valid integer value."]}
+
+{'hasError': True, 'errParameter': ['port', 'unixsocketperm', 'repl-diskless-sync', 'cluster-announce-port'], 'reason': ['port should be an integer', 'unixsocketperm should be an integer', 'repl-diskless-sync should be a boolean', 'cluster-announce-port should be an integer']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['appendfilename', 'unixsocketperm', 'repl-diskless-sync', 'cluster-announce-port', 'port'], 'reason': ["The parameter 'appendfilename' is not a valid configuration parameter for redis version 7.0.0.", "The parameter 'unixsocketperm' is not a valid configuration parameter for redis version 7.0.0.", "The parameter 'repl-diskless-sync' is not a valid configuration parameter for redis version 7.0.0.", "The parameter 'cluster-announce-port' is not a valid configuration parameter for redis version 7.0.0.", "The parameter 'port' is not a valid configuration parameter for redis version 7.0.0."]}
+
+{'hasError': True, 'errParameter': ['repl-diskless-sync'], 'reason': ["The parameter 'repl-diskless-sync' is not a valid parameter for redis version 7.0.0"]}
+
+{'hasError': True, 'errParameter': ['cluster-announce-port'], 'reason': ['cluster-announce-port is not a valid parameter for redis version 7.0.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['repl-diskless-sync', 'cluster-announce-port', 'unixsocketperm', 'hll-sparse-max-bytes', 'acllog-max-len', 'appendfilename', 'repl-diskless-sync', 'port'], 'reason': ['repl-diskless-sync is not a valid parameter', 'cluster-announce-port is not a valid parameter', 'unixsocketperm is not a valid parameter', 'hll-sparse-max-bytes is not a valid parameter', 'acllog-max-len is not a valid parameter', 'appendfilename is not a valid parameter', 'repl-diskless-sync is not a valid parameter', 'port is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['appendfilename', 'repl-diskless-sync', 'cluster-announce-port', 'port'], 'reason': ['appendfilename: The value of this parameter is not a valid path. The path must be a valid path to a file.', "repl-diskless-sync: The value of this parameter is not a valid boolean. The value must be either 'yes' or 'no'.", 'cluster-announce-port: The value of this parameter is not a valid integer. The value must be an integer between 1 and 65535.', 'port: The value of this parameter is not a valid integer. The value must be an integer between 1 and 65535.']}
+
+{'hasError': True, 'errParameter': ['appendfilename', 'repl-diskless-sync', 'cluster-announce-port', 'port'], 'reason': ['appendfilename: The value of this parameter is not a valid file name.', 'repl-diskless-sync: The value of this parameter is not a valid boolean value.', 'cluster-announce-port: The value of this parameter is not a valid port number.', 'port: The value of this parameter is not a valid port number.']}
+
+Final result:
+
+There are 4 misconfiguration parameters in the input: appendfilename	repl-diskless-sync	cluster-announce-port	port
+[Ciri] Reason for appendfilename: appendfilename: The value of this parameter is not a valid file name.
+[Ciri] Reason for repl-diskless-sync: repl-diskless-sync: The value of this parameter is not a valid boolean value.
+[Ciri] Reason for cluster-announce-port: cluster-announce-port: The value of this parameter is not a valid port number.
+[Ciri] Reason for port: port: The value of this parameter is not a valid port number.

@@ -1,0 +1,16 @@
+Wrong shot number:
+[8]
+
+Correct shot number:
+[15, 3]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.automatic.close', 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds'], 'reason': ["The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.", "The property 'fs.automatic.close' has an invalid value 'true'. It should be a boolean value.", "The property 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' has an invalid value '10s,20s,30s,40s'. The value should be in milliseconds without 's' suffix."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.automatic.close	ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds
+[Ciri] Reason for fs.ftp.transfer.mode: The property 'fs.ftp.transfer.mode' has an invalid value 'BLOCK_TRANSFER_MODE'. Valid values are STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE, and COMPRESSED_TRANSFER_MODE.
+[Ciri] Reason for fs.automatic.close: The property 'fs.automatic.close' has an invalid value 'true'. It should be a boolean value.
+[Ciri] Reason for ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds: The property 'ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds' has an invalid value '10s,20s,30s,40s'. The value should be in milliseconds without 's' suffix.

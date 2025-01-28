@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-compaction-mode', 'quota-backend-bytes', 'proxy-write-timeout', 'log-level', 'initial-advertise-peer-urls', 'force-new-cluster', 'snapshot-count'], 'reason': ['The heartbeat-interval value is not a valid integer.', 'The auto-compaction-mode value is not a valid string.', 'The quota-backend-bytes value is not a valid integer.', 'The proxy-write-timeout value is not a valid integer.', 'The log-level value is not a valid string.', 'The initial-advertise-peer-urls value is not a valid URL.', 'The force-new-cluster value is not a valid boolean.', 'The snapshot-count value is not a valid integer.']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-compaction-mode', 'quota-backend-bytes', 'proxy-write-timeout', 'log-level', 'initial-advertise-peer-urls', 'force-new-cluster', 'snapshot-count'], 'reason': ['heartbeat-interval is not a valid value', 'auto-compaction-mode is not a valid value', 'quota-backend-bytes is not a valid value', 'proxy-write-timeout is not a valid value', 'log-level is not a valid value', 'initial-advertise-peer-urls is not a valid value', 'force-new-cluster is not a valid value', 'snapshot-count is not a valid value']}
+
+{'hasError': True, 'errParameter': ['heartbeat-interval', 'auto-compaction-mode', 'quota-backend-bytes', 'proxy-write-timeout', 'log-level', 'initial-advertise-peer-urls', 'force-new-cluster', 'snapshot-count'], 'reason': ['heartbeat-interval is not a valid parameter', 'auto-compaction-mode is not a valid parameter', 'quota-backend-bytes is not a valid parameter', 'proxy-write-timeout is not a valid parameter', 'log-level is not a valid parameter', 'initial-advertise-peer-urls is not a valid parameter', 'force-new-cluster is not a valid parameter', 'snapshot-count is not a valid parameter']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: heartbeat-interval	auto-compaction-mode	quota-backend-bytes	proxy-write-timeout	log-level	initial-advertise-peer-urls	force-new-cluster	snapshot-count
+[Ciri] Reason for heartbeat-interval: The heartbeat-interval value is not a valid integer.
+[Ciri] Reason for auto-compaction-mode: auto-compaction-mode is not a valid parameter
+[Ciri] Reason for quota-backend-bytes: quota-backend-bytes is not a valid value
+[Ciri] Reason for proxy-write-timeout: proxy-write-timeout is not a valid parameter
+[Ciri] Reason for log-level: The log-level value is not a valid string.
+[Ciri] Reason for initial-advertise-peer-urls: The initial-advertise-peer-urls value is not a valid URL.
+[Ciri] Reason for force-new-cluster: force-new-cluster is not a valid value
+[Ciri] Reason for snapshot-count: snapshot-count is not a valid value

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hbase.local.dir</name>
+  <value>dev/urandom///</value>
+    <description>Directory on the local filesystem to be used
+    as a local storage.</description>
+</property>
+
+<property>
+  <name>hbase.regionserver.port</name>
+  <value>3001</value>
+    <description>The port the HBase RegionServer binds to.</description>
+</property>
+
+<property>
+  <name>hbase.client.keyvalue.maxsize</name>
+  <value>10485760</value>
+    <description>Specifies the combined maximum allowed size of a KeyValue
+    instance. This is to set an upper boundary for a single entry saved in a
+    storage file. Since they cannot be split it helps avoiding that a region
+    cannot be split any further because the data is too large. It seems wise
+    to set this to a fraction of the maximum region size. Setting it to zero
+    or less disables the check.</description>
+</property>
+
+<property>
+  <name>hbase.hregion.majorcompaction.jitter</name>
+  <value>1.0</value>
+    <description>A multiplier applied to hbase.hregion.majorcompaction to cause compaction to occur
+      a given amount of time either side of hbase.hregion.majorcompaction. The smaller the number,
+      the closer the compactions will happen to the hbase.hregion.majorcompaction
+      interval.</description>
+</property>
+
+<property>
+  <name>hbase.coprocessor.enabled</name>
+  <value>false</value>
+    <description>Enables or disables coprocessor loading. If 'false'
+    (disabled), any other coprocessor related configuration will be ignored.
+    </description>
+</property>
+
+<property>
+  <name>hbase.wal.dir.perms</name>
+  <value>1400</value>
+    <description>FS Permissions for the root WAL directory in a secure(kerberos) setup.
+      When master starts, it creates the WAL dir with this permissions or sets the permissions
+      if it does not match.</description>
+</property>
+
+<property>
+  <name>hbase.status.publisher.class</name>
+  <value>org.apache.hadoop.hbase.master.ClusterStatusPublisher$MulticastPublisher</value>
+    <description>
+      Implementation of the status publication with a multicast message.
+    </description>
+</property>
+
+<property>
+  <name>hbase.status.multicast.address.port</name>
+  <value>3000</value>
+    <description>
+      Multicast port to use for the status publication by multicast.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['replica-read-only', 'tls-ca-cert-file'], 'reason': ["The 'replica-read-only' configuration option is not available in Redis 7.0.0. It was introduced in a later version.", "The 'tls-ca-cert-file' configuration option is not available in Redis 7.0.0. TLS support was introduced in a later version."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: replica-read-only	tls-ca-cert-file
+[Ciri] Reason for replica-read-only: The 'replica-read-only' configuration option is not available in Redis 7.0.0. It was introduced in a later version.
+[Ciri] Reason for tls-ca-cert-file: The 'tls-ca-cert-file' configuration option is not available in Redis 7.0.0. TLS support was introduced in a later version.

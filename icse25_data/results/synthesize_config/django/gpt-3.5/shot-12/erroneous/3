@@ -1,0 +1,18 @@
+Wrong shot number:
+[1, 3]
+
+Correct shot number:
+[6]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['CACHE_MIDDLEWARE_SECONDS', 'SESSION_SAVE_EVERY_REQUEST', 'CSRF_COOKIE_SAMESITE', 'CSRF_FAILURE_VIEW', 'SECURE_HSTS_PRELOAD'], 'reason': ["The property 'CACHE_MIDDLEWARE_SECONDS' has the value 'true' which is not of the correct type Integer.", "The property 'SESSION_SAVE_EVERY_REQUEST' has the value 'False' which is not of the correct type Boolean.", "The property 'CSRF_COOKIE_SAMESITE' has the value 'Lax' which is not of the correct type String.", "The property 'CSRF_FAILURE_VIEW' has the value 'django.views.csrf.csrf_failure' which is not the recommended view for CSRF failures in Django 4.0.", "The property 'SECURE_HSTS_PRELOAD' has the value 'False' which is not of the correct type Boolean."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: CACHE_MIDDLEWARE_SECONDS	SESSION_SAVE_EVERY_REQUEST	CSRF_COOKIE_SAMESITE	CSRF_FAILURE_VIEW	SECURE_HSTS_PRELOAD
+[Ciri] Reason for CACHE_MIDDLEWARE_SECONDS: The property 'CACHE_MIDDLEWARE_SECONDS' has the value 'true' which is not of the correct type Integer.
+[Ciri] Reason for SESSION_SAVE_EVERY_REQUEST: The property 'SESSION_SAVE_EVERY_REQUEST' has the value 'False' which is not of the correct type Boolean.
+[Ciri] Reason for CSRF_COOKIE_SAMESITE: The property 'CSRF_COOKIE_SAMESITE' has the value 'Lax' which is not of the correct type String.
+[Ciri] Reason for CSRF_FAILURE_VIEW: The property 'CSRF_FAILURE_VIEW' has the value 'django.views.csrf.csrf_failure' which is not the recommended view for CSRF failures in Django 4.0.
+[Ciri] Reason for SECURE_HSTS_PRELOAD: The property 'SECURE_HSTS_PRELOAD' has the value 'False' which is not of the correct type Boolean.

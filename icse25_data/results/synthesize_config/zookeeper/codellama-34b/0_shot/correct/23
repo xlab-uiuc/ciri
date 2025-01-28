@@ -1,0 +1,21 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['syncLimit', 'minSessionTimeout'], 'reason': ['syncLimit must be greater than 0', 'minSessionTimeout must be greater than 0']}
+
+{'hasError': True, 'errParameter': ['autopurge.snapRetainCount', 'autopurge.purgeInterval'], 'reason': ['autopurge.snapRetainCount should be a positive integer', 'autopurge.purgeInterval should be a positive integer']}
+
+{'hasError': True, 'errParameter': ['autopurge.snapRetainCount', 'autopurge.purgeInterval', 'syncEnabled', 'localSessionsEnabled', 'syncLimit', 'minSessionTimeout', 'localSessionsUpgradingEnabled', 'portUnification'], 'reason': ['autopurge.snapRetainCount is not a valid property', 'autopurge.purgeInterval is not a valid property', 'syncEnabled is not a valid property', 'localSessionsEnabled is not a valid property', 'syncLimit is not a valid property', 'minSessionTimeout is not a valid property', 'localSessionsUpgradingEnabled is not a valid property', 'portUnification is not a valid property']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['syncLimit', 'minSessionTimeout'], 'reason': ['syncLimit should be greater than 0', 'minSessionTimeout should be greater than 0']}
+
+{'hasError': True, 'errParameter': ['server.1', 'server.2', 'server.3'], 'reason': ['The server property should be in the format of host:port:port. The port after the colon is the election port, and the port after the second colon is the quorum port.', 'The server property should be in the format of host:port:port. The port after the colon is the election port, and the port after the second colon is the quorum port.', 'The server property should be in the format of host:port:port. The port after the colon is the election port, and the port after the second colon is the quorum port.']}
+
+{'hasError': True, 'errParameter': ['syncLimit', 'minSessionTimeout'], 'reason': ['syncLimit should be greater than 0', 'minSessionTimeout should be greater than 0']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: syncLimit	minSessionTimeout
+[Ciri] Reason for syncLimit: syncLimit should be greater than 0
+[Ciri] Reason for minSessionTimeout: minSessionTimeout should be greater than 0

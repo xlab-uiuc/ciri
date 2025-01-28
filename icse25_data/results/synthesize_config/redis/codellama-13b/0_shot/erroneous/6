@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'set-max-intset-entries', 'slowlog-max-len', 'repl-diskless-sync-delay', 'appendfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len'], 'reason': ['maxmemory-clients is not a valid parameter for redis version 7.0.0', 'set-max-intset-entries is not a valid parameter for redis version 7.0.0', 'slowlog-max-len is not a valid parameter for redis version 7.0.0', 'repl-diskless-sync-delay is not a valid parameter for redis version 7.0.0', 'appendfilename is not a valid parameter for redis version 7.0.0', 'hll-sparse-max-bytes is not a valid parameter for redis version 7.0.0', 'proto-max-bulk-len is not a valid parameter for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'set-max-intset-entries', 'slowlog-max-len', 'repl-diskless-sync-delay', 'appendfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len'], 'reason': ['maxmemory-clients is not a valid configuration parameter for Redis 7.0.0', 'set-max-intset-entries is not a valid configuration parameter for Redis 7.0.0', 'slowlog-max-len is not a valid configuration parameter for Redis 7.0.0', 'repl-diskless-sync-delay is not a valid configuration parameter for Redis 7.0.0', 'appendfilename is not a valid configuration parameter for Redis 7.0.0', 'hll-sparse-max-bytes is not a valid configuration parameter for Redis 7.0.0', 'proto-max-bulk-len is not a valid configuration parameter for Redis 7.0.0']}
+
+{'hasError': True, 'errParameter': ['maxmemory-clients', 'set-max-intset-entries', 'slowlog-max-len', 'rdb-save-incremental-fsync', 'repl-diskless-sync-delay', 'appendfilename', 'hll-sparse-max-bytes', 'proto-max-bulk-len'], 'reason': ['maxmemory-clients is not a valid configuration directive', 'set-max-intset-entries is not a valid configuration directive', 'slowlog-max-len is not a valid configuration directive', 'rdb-save-incremental-fsync is not a valid configuration directive', 'repl-diskless-sync-delay is not a valid configuration directive', 'appendfilename is not a valid configuration directive', 'hll-sparse-max-bytes is not a valid configuration directive', 'proto-max-bulk-len is not a valid configuration directive']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: maxmemory-clients	set-max-intset-entries	slowlog-max-len	repl-diskless-sync-delay	appendfilename	hll-sparse-max-bytes	proto-max-bulk-len
+[Ciri] Reason for maxmemory-clients: maxmemory-clients is not a valid parameter for redis version 7.0.0
+[Ciri] Reason for set-max-intset-entries: set-max-intset-entries is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for slowlog-max-len: slowlog-max-len is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for repl-diskless-sync-delay: repl-diskless-sync-delay is not a valid parameter for redis version 7.0.0
+[Ciri] Reason for appendfilename: appendfilename is not a valid configuration parameter for Redis 7.0.0
+[Ciri] Reason for hll-sparse-max-bytes: hll-sparse-max-bytes is not a valid parameter for redis version 7.0.0
+[Ciri] Reason for proto-max-bulk-len: proto-max-bulk-len is not a valid configuration parameter for Redis 7.0.0

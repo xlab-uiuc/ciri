@@ -1,0 +1,18 @@
+Wrong shot number:
+[2, 7, 3]
+
+Correct shot number:
+[10]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.master.log.config.report.heartbeat.interval'], 'reason': ["The property 'alluxio.master.log.config.report.heartbeat.interval' has the value '1h' which is not within the accepted value {1ms,1s,1min,1hr,1day}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.state.lock.exclusive.duration'], 'reason': ["The property 'alluxio.master.backup.state.lock.exclusive.duration' has the value '1ms' which is not within the accepted value range {1ms,100ms}."]}
+
+{'hasError': True, 'errParameter': ['alluxio.master.backup.state.lock.exclusive.duration'], 'reason': ["The property 'alluxio.master.backup.state.lock.exclusive.duration' has the value '1ms' which is not within the accepted value range {100ms, 1000000000ms}."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: alluxio.master.backup.state.lock.exclusive.duration
+[Ciri] Reason for alluxio.master.backup.state.lock.exclusive.duration: The property 'alluxio.master.backup.state.lock.exclusive.duration' has the value '1ms' which is not within the accepted value range {1ms,100ms}.

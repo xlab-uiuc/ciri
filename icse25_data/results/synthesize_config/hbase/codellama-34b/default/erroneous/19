@@ -1,0 +1,18 @@
+Wrong shot number:
+[5, 10, 3]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.thread.compaction.throttle'], 'reason': ["The property 'hbase.regionserver.thread.compaction.throttle' has the value '2684354560' which exceeds the range of an Integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.thread.compaction.throttle'], 'reason': ["The value of the property 'hbase.regionserver.thread.compaction.throttle' should be less than the value of the property 'hbase.hstore.compaction.max'."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.thread.compaction.throttle'], 'reason': ["The property 'hbase.regionserver.thread.compaction.throttle' has the value '2684354560' which exceeds the range of an Integer."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.thread.compaction.throttle
+[Ciri] Reason for hbase.regionserver.thread.compaction.throttle: The property 'hbase.regionserver.thread.compaction.throttle' has the value '2684354560' which exceeds the range of an Integer.

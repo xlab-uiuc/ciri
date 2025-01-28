@@ -1,0 +1,18 @@
+Wrong shot number:
+[11, 8, 9]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp-backlog'], 'reason': ["The property 'tcp-backlog' has the value '511' which is out of the valid range of [0, 511]."]}
+
+{'hasError': True, 'errParameter': ['tcp-backlog'], 'reason': ["The property 'tcp-backlog' has the value '511' which is out of the valid range of 0-511."]}
+
+{'hasError': True, 'errParameter': ['tcp-backlog'], 'reason': ["The property 'tcp-backlog' has the value '511' which is greater than the maximum allowed value '255'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: tcp-backlog
+[Ciri] Reason for tcp-backlog: The property 'tcp-backlog' has the value '511' which is out of the valid range of 0-511.

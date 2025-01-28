@@ -1,0 +1,27 @@
+Wrong shot number:
+[1]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'hadoop.caller.context.signature.max.size'], 'reason': ["The property 'fs.ftp.host.port' has the value '-100.22' which is not of the correct type Integer.", "The property 'hadoop.caller.context.signature.max.size' has the value '40' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'hadoop.caller.context.signature.max.size', 'fs.s3a.retry.throttle.limit'], 'reason': ["The property 'fs.ftp.host.port' has the value '-100.22' which is not of the correct type Integer.", "The property 'hadoop.caller.context.signature.max.size' has the value '40' which is not of the correct type Integer.", "The property 'fs.s3a.retry.throttle.limit' has the value '40' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port'], 'reason': ["The property 'fs.ftp.host.port' has the value '-100.22' which is not of the correct type Integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.df.interval'], 'reason': ["The property 'fs.ftp.host.port' has the value '-100.22' which is not of the correct type Integer.", "The property 'fs.df.interval' has the value '60000' which is not of the correct type Long."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port'], 'reason': ["The property 'fs.ftp.host.port' has the value '-100.22' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['fs.ftp.host.port', 'fs.df.interval'], 'reason': ["The property 'fs.ftp.host.port' has the value '-100.22' which is not of the correct type Integer.", "The property 'fs.df.interval' has the value '60000' which is not of the correct type Long."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.ftp.host.port	fs.df.interval
+[Ciri] Reason for fs.ftp.host.port: The property 'fs.ftp.host.port' has the value '-100.22' which is not of the correct type Integer.
+[Ciri] Reason for fs.df.interval: The property 'fs.df.interval' has the value '60000' which is not of the correct type Long.

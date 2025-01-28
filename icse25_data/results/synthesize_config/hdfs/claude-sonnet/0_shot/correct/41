@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.replication.min', 'dfs.namenode.maintenance.replication.min'], 'reason': ['The minimum replication factor for HDFS should be at least 1 to ensure data availability in case of node failures. Setting it to 0 means that data can be lost if a single DataNode fails.', 'The minimum maintenance replication factor should be greater than or equal to the minimum replication factor. Setting it to a lower value than the minimum replication factor can lead to data loss during maintenance operations.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.replication.min	dfs.namenode.maintenance.replication.min
+[Ciri] Reason for dfs.namenode.replication.min: The minimum replication factor for HDFS should be at least 1 to ensure data availability in case of node failures. Setting it to 0 means that data can be lost if a single DataNode fails.
+[Ciri] Reason for dfs.namenode.maintenance.replication.min: The minimum maintenance replication factor should be greater than or equal to the minimum replication factor. Setting it to a lower value than the minimum replication factor can lead to data loss during maintenance operations.

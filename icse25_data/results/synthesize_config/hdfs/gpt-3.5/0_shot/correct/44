@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern', 'dfs.client.read.prefetch.size'], 'reason': ["The value '*' for property dfs.namenode.kerberos.principal.pattern may not be a valid configuration. It should be a specific Kerberos principal pattern.", "The value '0.5' for property dfs.client.read.prefetch.size is not a valid integer. It should be a whole number."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern', 'dfs.client.read.prefetch.size'], 'reason': ["The value '*' for property 'dfs.namenode.kerberos.principal.pattern' may not be a valid setting.", "The value '0.5' for property 'dfs.client.read.prefetch.size' should be an integer."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern', 'dfs.client.read.prefetch.size'], 'reason': ["The value '*' for property 'dfs.namenode.kerberos.principal.pattern' may not be a valid setting. Check the correct format for the principal pattern.", "The value '0.5' for property 'dfs.client.read.prefetch.size' should be an integer value representing the number of bytes. It cannot be a decimal value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.kerberos.principal.pattern	dfs.client.read.prefetch.size
+[Ciri] Reason for dfs.namenode.kerberos.principal.pattern: The value '*' for property 'dfs.namenode.kerberos.principal.pattern' may not be a valid setting.
+[Ciri] Reason for dfs.client.read.prefetch.size: The value '0.5' for property 'dfs.client.read.prefetch.size' should be an integer value representing the number of bytes. It cannot be a decimal value.

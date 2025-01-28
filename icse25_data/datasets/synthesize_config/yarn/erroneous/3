@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.connect.retry-interval.ms</name>
+  <value>true</value>
+    <description>How often to try connecting to the
+    ResourceManager.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.resource.memory.enabled</name>
+  <value>true</value>
+    <description>Whether YARN CGroups memory tracking is enabled.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb</name>
+  <value>0</value>
+    <description>The minimum space in megabytes that must be available on a bad
+    disk for it to be marked as good.  This value should not be less
+    than yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb.
+    If it is less than yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb,
+    or it is not set, it will be set to the
+    same value as yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb.
+    This applies to yarn.nodemanager.local-dirs and yarn.nodemanager.log-dirs.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.container-retry-minimum-interval-ms</name>
+  <value>1000</value>
+    <description>Minimum container restart interval in milliseconds.</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+  <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+</property>
+
+<property>
+  <name>yarn.timeline-service.store-class</name>
+  <value>org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore</value>
+    <description>Store class name for timeline store.</description>
+</property>
+
+<property>
+  <name>yarn.timeline-service.hbase.coprocessor.app-final-value-retention-milliseconds</name>
+  <value>129600000</value>
+    <description>
+    The setting that controls how long the final value
+    of a metric of a completed app is retained before merging into
+    the flow sum. Up to this time after an application is completed
+    out-of-order values that arrive can be recognized and discarded at the
+    cost of increased storage.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.amrmproxy.interceptor-class.pipeline</name>
+  <value>org.apache.hadoop.yarn.server.nodemanager.amrmproxy.DefaultRequestInterceptor</value>
+    <description>
+    The comma separated list of class names that implement the
+    RequestInterceptor interface. This is used by the AMRMProxyService to create
+    the request processing pipeline for applications.
+    </description>
+</property>
+
+</configuration>

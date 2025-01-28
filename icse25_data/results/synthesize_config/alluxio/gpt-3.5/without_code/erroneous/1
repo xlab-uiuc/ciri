@@ -1,0 +1,20 @@
+Wrong shot number:
+[4, 5, 13]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.master.daily.backup.state.lock.grace.mode', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ["The property 'alluxio.job.master.client.threads' has a non-integer value '9.9' which is invalid.", "The property 'alluxio.master.daily.backup.state.lock.grace.mode' has an unsupported value 'TIMEOUT'.", "The property 'alluxio.jvm.monitor.sleep.interval' has a value '2sec' which does not follow the correct format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.master.daily.backup.state.lock.grace.mode', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ["The property 'alluxio.job.master.client.threads' has a value '9.9' which should be an integer.", "The property 'alluxio.master.daily.backup.state.lock.grace.mode' has an invalid value 'TIMEOUT'.", "The property 'alluxio.jvm.monitor.sleep.interval' has a value '2sec' which should be in milliseconds or seconds format."]}
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.client.threads', 'alluxio.master.daily.backup.state.lock.grace.mode', 'alluxio.jvm.monitor.sleep.interval'], 'reason': ["The property 'alluxio.job.master.client.threads' has a value '9.9' which should be an integer.", "The property 'alluxio.master.daily.backup.state.lock.grace.mode' has an invalid value 'TIMEOUT'.", "The property 'alluxio.jvm.monitor.sleep.interval' has a value '2sec' which should be in a valid time format."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.client.threads	alluxio.master.daily.backup.state.lock.grace.mode	alluxio.jvm.monitor.sleep.interval
+[Ciri] Reason for alluxio.job.master.client.threads: The property 'alluxio.job.master.client.threads' has a value '9.9' which should be an integer.
+[Ciri] Reason for alluxio.master.daily.backup.state.lock.grace.mode: The property 'alluxio.master.daily.backup.state.lock.grace.mode' has an invalid value 'TIMEOUT'.
+[Ciri] Reason for alluxio.jvm.monitor.sleep.interval: The property 'alluxio.jvm.monitor.sleep.interval' has a value '2sec' which should be in milliseconds or seconds format.

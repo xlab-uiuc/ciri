@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern', 'dfs.namenode.snapshot.skip.capture.accesstime-only-change'], 'reason': ["The value '*' for property 'dfs.namenode.kerberos.principal.pattern' may not be a valid configuration. Check if a specific value or pattern is required.", "The value 'false' for property 'dfs.namenode.snapshot.skip.capture.accesstime-only-change' should be 'true' or 'false' without quotes."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern', 'dfs.namenode.snapshot.skip.capture.accesstime-only-change'], 'reason': ["The value '*' for property 'dfs.namenode.kerberos.principal.pattern' may not be a valid configuration. Please specify a valid pattern.", "The value 'false' for property 'dfs.namenode.snapshot.skip.capture.accesstime-only-change' should be 'true' or 'false' without quotes."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.kerberos.principal.pattern', 'dfs.namenode.snapshot.skip.capture.accesstime-only-change'], 'reason': ["The value '*' for property 'dfs.namenode.kerberos.principal.pattern' may not be a valid configuration. Please specify a valid value.", "The value 'false' for property 'dfs.namenode.snapshot.skip.capture.accesstime-only-change' should be in lowercase (true/false) instead of title case."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.kerberos.principal.pattern	dfs.namenode.snapshot.skip.capture.accesstime-only-change
+[Ciri] Reason for dfs.namenode.kerberos.principal.pattern: The value '*' for property 'dfs.namenode.kerberos.principal.pattern' may not be a valid configuration. Please specify a valid value.
+[Ciri] Reason for dfs.namenode.snapshot.skip.capture.accesstime-only-change: The value 'false' for property 'dfs.namenode.snapshot.skip.capture.accesstime-only-change' should be 'true' or 'false' without quotes.

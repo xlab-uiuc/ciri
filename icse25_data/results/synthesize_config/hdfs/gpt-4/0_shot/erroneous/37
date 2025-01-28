@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.checkpoint.check.period', 'dfs.block.replicator.classname'], 'reason': ["The value '1s' for 'dfs.namenode.checkpoint.check.period' is incorrect because the smallest unit of time recognized in HDFS configurations is milliseconds (ms). The correct format should likely be in milliseconds, and '1s' suggests an attempt to use seconds, which is not supported.", "The value 'nonono' for 'dfs.block.replicator.classname' is incorrect because it does not correspond to a valid class name for block placement policies. The description suggests valid class names for block placement policies, and 'nonono' does not match any of the described valid options or any known class in HDFS."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.namenode.checkpoint.check.period	dfs.block.replicator.classname
+[Ciri] Reason for dfs.namenode.checkpoint.check.period: The value '1s' for 'dfs.namenode.checkpoint.check.period' is incorrect because the smallest unit of time recognized in HDFS configurations is milliseconds (ms). The correct format should likely be in milliseconds, and '1s' suggests an attempt to use seconds, which is not supported.
+[Ciri] Reason for dfs.block.replicator.classname: The value 'nonono' for 'dfs.block.replicator.classname' is incorrect because it does not correspond to a valid class name for block placement policies. The description suggests valid class names for block placement policies, and 'nonono' does not match any of the described valid options or any known class in HDFS.

@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.blocksize', 'dfs.image.transfer.timeout'], 'reason': ['The usage tag is not a valid parameter for property dfs.blocksize.', 'The description for property dfs.image.transfer.timeout is missing.']}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.name.dir.restore', 'dfs.blocksize', 'dfs.image.transfer.timeout', 'dfs.edit.log.transfer.bandwidthPerSec', 'dfs.client.read.striped.threadpool.size', 'dfs.content-summary.limit'], 'reason': ["The property 'dfs.namenode.name.dir.restore' has an incorrect value. It should be a boolean (true/false).", "The property 'dfs.blocksize' has an incorrect value. The value should be in bytes or with a valid suffix (k, m, g, t, p, e).", "The property 'dfs.image.transfer.timeout' should have a value in milliseconds.", "The property 'dfs.edit.log.transfer.bandwidthPerSec' should have a non-negative value representing bytes per second.", "The property 'dfs.client.read.striped.threadpool.size' should have a positive integer value.", "The property 'dfs.content-summary.limit' should have a positive integer value."]}
+
+{'hasError': True, 'errParameter': ['dfs.blocksize', 'dfs.image.transfer.timeout'], 'reason': ['The usage tag is not a valid parameter for dfs.blocksize.', 'The description for dfs.image.transfer.timeout is missing.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: dfs.blocksize	dfs.image.transfer.timeout
+[Ciri] Reason for dfs.blocksize: The usage tag is not a valid parameter for property dfs.blocksize.
+[Ciri] Reason for dfs.image.transfer.timeout: The description for dfs.image.transfer.timeout is missing.

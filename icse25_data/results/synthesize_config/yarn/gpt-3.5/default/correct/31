@@ -1,0 +1,19 @@
+Wrong shot number:
+[9, 10, 1]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.metrics.runtime.buckets', 'yarn.client.application-client-protocol.poll-timeout-ms'], 'reason': ["The property 'yarn.resourcemanager.metrics.runtime.buckets' has a value '[120, 600, 2880]' which should be a comma-separated list of values without square brackets.", "The property 'yarn.client.application-client-protocol.poll-timeout-ms' has a negative value which is not valid. It should be a positive integer or -1 for unlimited wait time."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.metrics.runtime.buckets', 'yarn.client.application-client-protocol.poll-timeout-ms'], 'reason': ["The property 'yarn.resourcemanager.metrics.runtime.buckets' has a value that is not in the correct format. It should be a comma-separated list of values in minutes.", "The property 'yarn.client.application-client-protocol.poll-timeout-ms' has a negative value which is not valid. It should be a positive integer or -1 for unlimited wait time."]}
+
+{'hasError': True, 'errParameter': ['yarn.resourcemanager.metrics.runtime.buckets', 'yarn.client.application-client-protocol.poll-timeout-ms'], 'reason': ["The value of the property 'yarn.resourcemanager.metrics.runtime.buckets' should not contain square brackets. It should be a comma-separated list without brackets.", "The value of the property 'yarn.client.application-client-protocol.poll-timeout-ms' should be a positive integer or -1 for unlimited wait time."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.resourcemanager.metrics.runtime.buckets	yarn.client.application-client-protocol.poll-timeout-ms
+[Ciri] Reason for yarn.resourcemanager.metrics.runtime.buckets: The property 'yarn.resourcemanager.metrics.runtime.buckets' has a value '[120, 600, 2880]' which should be a comma-separated list of values without square brackets.
+[Ciri] Reason for yarn.client.application-client-protocol.poll-timeout-ms: The property 'yarn.client.application-client-protocol.poll-timeout-ms' has a negative value which is not valid. It should be a positive integer or -1 for unlimited wait time.

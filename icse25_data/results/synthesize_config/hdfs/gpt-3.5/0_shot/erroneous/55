@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.fuse.connection.timeout', 'dfs.encrypt.data.transfer.cipher.suites'], 'reason': ["The 'usage' tag is not a valid property for HDFS version 3.3.0.", "The cipher suite 'AES/CTR/NoPadding' is not supported for dfs.encrypt.data.transfer.cipher.suites in HDFS version 3.3.0."]}
+
+{'hasError': True, 'errParameter': ['hadoop.fuse.connection.timeout', 'dfs.encrypt.data.transfer.cipher.suites'], 'reason': ["The property 'hadoop.fuse.connection.timeout' has an additional 'usage' tag which is not a standard property tag for HDFS configuration.", "The property 'dfs.encrypt.data.transfer.cipher.suites' has an incorrect value 'AES/CTR/NoPadding'. The correct value should be 'AES/CTR/NoPadding' without quotes."]}
+
+{'hasError': True, 'errParameter': ['hadoop.fuse.connection.timeout', 'dfs.encrypt.data.transfer.cipher.suites'], 'reason': ["The 'usage' tag is not a valid property for HDFS version 3.3.0.", "The cipher suite 'AES/CTR/NoPadding' may not be supported or recommended for HDFS version 3.3.0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.fuse.connection.timeout	dfs.encrypt.data.transfer.cipher.suites
+[Ciri] Reason for hadoop.fuse.connection.timeout: The 'usage' tag is not a valid property for HDFS version 3.3.0.
+[Ciri] Reason for dfs.encrypt.data.transfer.cipher.suites: The cipher suite 'AES/CTR/NoPadding' is not supported for dfs.encrypt.data.transfer.cipher.suites in HDFS version 3.3.0.

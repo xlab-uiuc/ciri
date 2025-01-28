@@ -1,0 +1,15 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.http.address', 'dfs.datanode.handler.count', 'dfs.domain.socket.disable.interval.seconds', 'dfs.datanode.processcommands.threshold', 'dfs.storage.policy.permissions.superuser-only', 'dfs.checksum.type', 'dfs.client.socketcache.capacity', 'dfs.webhdfs.netty.high.watermark'], 'reason': ['dfs.datanode.http.address should be 0.0.0.0:50010', 'dfs.datanode.handler.count should be 3', 'dfs.domain.socket.disable.interval.seconds should be 300', 'dfs.datanode.processcommands.threshold should be 1000', 'dfs.storage.policy.permissions.superuser-only should be true', 'dfs.checksum.type should be CRC32', 'dfs.client.socketcache.capacity should be 16', 'dfs.webhdfs.netty.high.watermark should be 1024']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: dfs.datanode.http.address	dfs.datanode.handler.count	dfs.domain.socket.disable.interval.seconds	dfs.datanode.processcommands.threshold	dfs.storage.policy.permissions.superuser-only	dfs.checksum.type	dfs.client.socketcache.capacity	dfs.webhdfs.netty.high.watermark
+[Ciri] Reason for dfs.datanode.http.address: dfs.datanode.http.address should be 0.0.0.0:50010
+[Ciri] Reason for dfs.datanode.handler.count: dfs.datanode.handler.count should be 3
+[Ciri] Reason for dfs.domain.socket.disable.interval.seconds: dfs.domain.socket.disable.interval.seconds should be 300
+[Ciri] Reason for dfs.datanode.processcommands.threshold: dfs.datanode.processcommands.threshold should be 1000
+[Ciri] Reason for dfs.storage.policy.permissions.superuser-only: dfs.storage.policy.permissions.superuser-only should be true
+[Ciri] Reason for dfs.checksum.type: dfs.checksum.type should be CRC32
+[Ciri] Reason for dfs.client.socketcache.capacity: dfs.client.socketcache.capacity should be 16
+[Ciri] Reason for dfs.webhdfs.netty.high.watermark: dfs.webhdfs.netty.high.watermark should be 1024

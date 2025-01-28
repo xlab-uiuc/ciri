@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPortAddress'], 'reason': ['clientPortAddress should not contain multiple dots.', "secureClientPortAddress should specify the IP address and port in the format 'ip_address:port'."]}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPortAddress'], 'reason': ['clientPortAddress has an invalid format. It should be in the format of IP:port, e.g., 127.0.0.1:2181', 'secureClientPortAddress has an invalid format. It should be in the format of IP:port, e.g., 127.0.0.1:2281']}
+
+{'hasError': True, 'errParameter': ['clientPortAddress', 'secureClientPortAddress'], 'reason': ['clientPortAddress should not contain multiple dots.', 'secureClientPortAddress should specify the IP address followed by the port number separated by a colon.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: clientPortAddress	secureClientPortAddress
+[Ciri] Reason for clientPortAddress: clientPortAddress should not contain multiple dots.
+[Ciri] Reason for secureClientPortAddress: secureClientPortAddress should specify the IP address and port in the format 'ip_address:port'.

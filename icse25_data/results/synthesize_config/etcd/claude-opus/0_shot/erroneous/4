@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy'], 'reason': ["The 'proxy-refresh-interval' parameter is not a valid configuration option in etcd v3.5.0. It was removed in v3.5.0 release.", "The 'proxy' parameter value should be one of 'on', 'readonly' or 'off'. Setting it to 'off' is redundant as that is the default value when not specified."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: proxy-refresh-interval	proxy
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter is not a valid configuration option in etcd v3.5.0. It was removed in v3.5.0 release.
+[Ciri] Reason for proxy: The 'proxy' parameter value should be one of 'on', 'readonly' or 'off'. Setting it to 'off' is redundant as that is the default value when not specified.

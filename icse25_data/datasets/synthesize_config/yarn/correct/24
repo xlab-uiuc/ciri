@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    
+<property>
+  <name>yarn.resourcemanager.scheduler.address</name>
+  <value>127.0.0.1</value>
+    <description>The address of the scheduler interface.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.work-preserving-recovery.scheduling-wait-ms</name>
+  <value>20000</value>
+    <description>Set the amount of time RM waits before allocating new
+    containers on work-preserving-recovery. Such wait period gives RM a chance
+    to settle down resyncing with NMs in the cluster on recovery, before assigning
+    new containers to applications.
+    </description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.store.class</name>
+  <value>org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore</value>
+    <description>The class to use as the persistent store.
+
+      If org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore
+      is used, the store is implicitly fenced; meaning a single ResourceManager
+      is able to use the store at any point in time. More details on this
+      implicit fencing, along with setting up appropriate ACLs is discussed
+      under yarn.resourcemanager.zk-state-store.root-node.acl.
+    </description>
+</property>
+
+<property>
+  <name>yarn.client.failover-no-ha-proxy-provider</name>
+  <value>org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider</value>
+    <description>When HA is not enabled, the class to be used by Clients, AMs and
+      NMs to retry connecting to the Active RM. It should extend
+      org.apache.hadoop.yarn.client.RMFailoverProxyProvider</description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.admin-env</name>
+  <value>MALLOC_ARENA_MAX=$MALLOC_ARENA_MAX</value>
+    <description>
+      Environment variables that should be forwarded from the NodeManager's
+      environment to the container's, specified as a comma separated list of
+      VARNAME=value pairs.
+
+      To define environment variables individually, you can specify
+      multiple properties of the form yarn.nodemanager.admin-env.VARNAME,
+      where VARNAME is the name of the environment variable. This is the only
+      way to add a variable when its value contains commas.
+    </description>
+</property>
+
+<property>
+  <name>yarn.nodemanager.health-checker.timeout-ms</name>
+  <value>600000</value>
+    <description>Health check script time out period.</description>
+</property>
+
+<property>
+  <name>yarn.resourcemanager.nm-container-queuing.queue-limit-stdev</name>
+  <value>1.0f</value>
+    <description>
+    Value of standard deviation used for calculation of queue limit thresholds.
+    </description>
+</property>
+
+<property>
+  <name>yarn.webapp.filter-invalid-xml-chars</name>
+  <value>false</value>
+    <description>
+      Flag to enable filter of invalid xml 1.0 characters present in the
+      value of diagnostics field of apps output from RM WebService.
+    </description>
+</property>
+
+</configuration>

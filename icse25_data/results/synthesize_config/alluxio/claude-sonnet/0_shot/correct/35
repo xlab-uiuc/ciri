@@ -1,0 +1,12 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.worker.tieredstore.level2.watermark.high.ratio', 'alluxio.user.block.master.client.pool.gc.threshold', 'alluxio.worker.network.keepalive.timeout', 'alluxio.user.network.rpc.max.inbound.message.size', 'alluxio.worker.hostname'], 'reason': ["The property 'alluxio.worker.tieredstore.level2.watermark.high.ratio' is not a valid property in Alluxio 2.5.0.", "The property 'alluxio.user.block.master.client.pool.gc.threshold' is not a valid property in Alluxio 2.5.0.", "The property 'alluxio.worker.network.keepalive.timeout' is not a valid property in Alluxio 2.5.0. The correct property is 'alluxio.user.network.keepalive.timeout'.", "The property 'alluxio.user.network.rpc.max.inbound.message.size' is not a valid property in Alluxio 2.5.0. The correct property is 'alluxio.user.rpc.max.inbound.message.size'.", "The property 'alluxio.worker.hostname' is not a valid property in Alluxio 2.5.0. The correct property is 'alluxio.worker.hostname'."]}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.worker.tieredstore.level2.watermark.high.ratio	alluxio.user.block.master.client.pool.gc.threshold	alluxio.worker.network.keepalive.timeout	alluxio.user.network.rpc.max.inbound.message.size	alluxio.worker.hostname
+[Ciri] Reason for alluxio.worker.tieredstore.level2.watermark.high.ratio: The property 'alluxio.worker.tieredstore.level2.watermark.high.ratio' is not a valid property in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.user.block.master.client.pool.gc.threshold: The property 'alluxio.user.block.master.client.pool.gc.threshold' is not a valid property in Alluxio 2.5.0.
+[Ciri] Reason for alluxio.worker.network.keepalive.timeout: The property 'alluxio.worker.network.keepalive.timeout' is not a valid property in Alluxio 2.5.0. The correct property is 'alluxio.user.network.keepalive.timeout'.
+[Ciri] Reason for alluxio.user.network.rpc.max.inbound.message.size: The property 'alluxio.user.network.rpc.max.inbound.message.size' is not a valid property in Alluxio 2.5.0. The correct property is 'alluxio.user.rpc.max.inbound.message.size'.
+[Ciri] Reason for alluxio.worker.hostname: The property 'alluxio.worker.hostname' is not a valid property in Alluxio 2.5.0. The correct property is 'alluxio.worker.hostname'.

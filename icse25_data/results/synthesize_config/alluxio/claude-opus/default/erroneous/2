@@ -1,0 +1,15 @@
+Wrong shot number:
+[2, 5, 4]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.job.capacity', 'alluxio.master.file.access.time.update.precision'], 'reason': ["The property 'alluxio.job.master.job.capacity' has a negative value -5.5 which is invalid. It should be a non-negative integer.", "The property 'alluxio.master.file.access.time.update.precision' has the value '1d' which uses an incorrect time unit. Valid time units are ms, s, m, h."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.job.capacity	alluxio.master.file.access.time.update.precision
+[Ciri] Reason for alluxio.job.master.job.capacity: The property 'alluxio.job.master.job.capacity' has a negative value -5.5 which is invalid. It should be a non-negative integer.
+[Ciri] Reason for alluxio.master.file.access.time.update.precision: The property 'alluxio.master.file.access.time.update.precision' has the value '1d' which uses an incorrect time unit. Valid time units are ms, s, m, h.

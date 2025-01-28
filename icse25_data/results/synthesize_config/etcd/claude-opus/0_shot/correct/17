@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['max-wals', 'election-timeout'], 'reason': ["In etcd v3.5.0, the 'max-wals' parameter has been deprecated. It is recommended to use the 'quota-backend-bytes' parameter instead to limit the total size of WALs.", "The value for 'election-timeout' is specified in milliseconds. A value of 500 is too low and may cause frequent leader elections. It is recommended to set it to at least 1000 (1 second) or higher depending on the network latency and desired failover time."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: max-wals	election-timeout
+[Ciri] Reason for max-wals: In etcd v3.5.0, the 'max-wals' parameter has been deprecated. It is recommended to use the 'quota-backend-bytes' parameter instead to limit the total size of WALs.
+[Ciri] Reason for election-timeout: The value for 'election-timeout' is specified in milliseconds. A value of 500 is too low and may cause frequent leader elections. It is recommended to set it to at least 1000 (1 second) or higher depending on the network latency and desired failover time.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-announce-ip', 'replica-priority', 'cluster-announce-tls-port'], 'reason': ['The cluster-announce-ip value 0.0.256.0 is not a valid IPv4 address. IPv4 addresses must be in the range 0.0.0.0 to 255.255.255.255.', 'The replica-priority value 200 is not valid. It should be an integer between 0 and 255.', 'The cluster-announce-tls-port value 3189 is not a valid port number. Port numbers should be in the range 0 to 65535.']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: cluster-announce-ip	replica-priority	cluster-announce-tls-port
+[Ciri] Reason for cluster-announce-ip: The cluster-announce-ip value 0.0.256.0 is not a valid IPv4 address. IPv4 addresses must be in the range 0.0.0.0 to 255.255.255.255.
+[Ciri] Reason for replica-priority: The replica-priority value 200 is not valid. It should be an integer between 0 and 255.
+[Ciri] Reason for cluster-announce-tls-port: The cluster-announce-tls-port value 3189 is not a valid port number. Port numbers should be in the range 0 to 65535.

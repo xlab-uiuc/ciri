@@ -1,0 +1,16 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.directory.suffix', 'alluxio.security.stale.channel.purge.interval'], 'reason': ["Invalid value. The property 'alluxio.underfs.s3.directory.suffix' should not start with a forward slash.", "Invalid value. The property 'alluxio.security.stale.channel.purge.interval' should not have units like 'day'."]}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.directory.suffix', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.ttl.checker.interval', 'alluxio.master.hostname', 'fs.gcs.credential.path'], 'reason': ['Invalid property: alluxio.underfs.s3.directory.suffix should not be set directly in the configuration file for Alluxio 2.5.0.', 'Invalid property: alluxio.security.stale.channel.purge.interval should not be set directly in the configuration file for Alluxio 2.5.0.', 'Invalid property: alluxio.master.ttl.checker.interval should not be set directly in the configuration file for Alluxio 2.5.0.', 'Invalid property: alluxio.master.hostname should not be set directly in the configuration file for Alluxio 2.5.0.', 'Invalid property: fs.gcs.credential.path should not be set directly in the configuration file for Alluxio 2.5.0.']}
+
+{'hasError': True, 'errParameter': ['alluxio.underfs.s3.directory.suffix', 'alluxio.security.stale.channel.purge.interval', 'alluxio.master.ttl.checker.interval', 'alluxio.master.hostname', 'fs.gcs.credential.path'], 'reason': ['Invalid property for alluxio.underfs.s3.directory.suffix', 'Invalid property for alluxio.security.stale.channel.purge.interval', 'Invalid property for alluxio.master.ttl.checker.interval', 'Invalid property for alluxio.master.hostname', 'Invalid property for fs.gcs.credential.path']}
+
+Final result:
+
+There are 5 misconfiguration parameters in the input: alluxio.underfs.s3.directory.suffix	alluxio.security.stale.channel.purge.interval	alluxio.master.ttl.checker.interval	alluxio.master.hostname	fs.gcs.credential.path
+[Ciri] Reason for alluxio.underfs.s3.directory.suffix: Invalid property: alluxio.underfs.s3.directory.suffix should not be set directly in the configuration file for Alluxio 2.5.0.
+[Ciri] Reason for alluxio.security.stale.channel.purge.interval: Invalid property for alluxio.security.stale.channel.purge.interval
+[Ciri] Reason for alluxio.master.ttl.checker.interval: Invalid property: alluxio.master.ttl.checker.interval should not be set directly in the configuration file for Alluxio 2.5.0.
+[Ciri] Reason for alluxio.master.hostname: Invalid property: alluxio.master.hostname should not be set directly in the configuration file for Alluxio 2.5.0.
+[Ciri] Reason for fs.gcs.credential.path: Invalid property for fs.gcs.credential.path

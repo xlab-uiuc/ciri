@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.storage.dir.perm'], 'reason': ["The value for 'dfs.namenode.storage.dir.perm' should be a string representing octal or symbolic permissions, not a numeric value."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.name.dir.restore', 'dfs.datanode.sync.behind.writes', 'dfs.domain.socket.path', 'dfs.client.retry.policy.spec', 'dfs.namenode.replication.max-streams', 'dfs.namenode.storage.dir.perm'], 'reason': ["The property 'dfs.namenode.name.dir.restore' has a description that is too long and should be concise.", "The property 'dfs.datanode.sync.behind.writes' has a description that is too long and should be concise.", "The property 'dfs.domain.socket.path' has a description that is too long and should be concise.", "The property 'dfs.client.retry.policy.spec' has a description that is too long and should be concise.", "The property 'dfs.namenode.replication.max-streams' has a value that may be too low for optimal performance.", "The property 'dfs.namenode.storage.dir.perm' has a value that should be in octal format rather than decimal."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.name.dir.restore', 'dfs.datanode.sync.behind.writes', 'dfs.namenode.replication.max-streams', 'dfs.namenode.storage.dir.perm'], 'reason': ["The property 'dfs.namenode.name.dir.restore' is not a valid property for HDFS version 3.3.0.", "The property 'dfs.datanode.sync.behind.writes' is not a valid property for HDFS version 3.3.0.", "The value for 'dfs.namenode.replication.max-streams' should be greater than 1 for HDFS version 3.3.0.", "The value for 'dfs.namenode.storage.dir.perm' should be in octal format for HDFS version 3.3.0."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.namenode.storage.dir.perm'], 'reason': ["The value for 'dfs.namenode.storage.dir.perm' should be in octal format, but '350' is a decimal value. It should be changed to an octal value."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.storage.dir.perm'], 'reason': ["The value for 'dfs.namenode.storage.dir.perm' should be in octal format for permissions. It should be like '0755' instead of '350'."]}
+
+{'hasError': True, 'errParameter': ['dfs.namenode.storage.dir.perm'], 'reason': ["The value for 'dfs.namenode.storage.dir.perm' should be a symbolic or octal representation of permissions, not just a number."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: dfs.namenode.storage.dir.perm
+[Ciri] Reason for dfs.namenode.storage.dir.perm: The value for 'dfs.namenode.storage.dir.perm' should be in octal format for permissions. It should be like '0755' instead of '350'.

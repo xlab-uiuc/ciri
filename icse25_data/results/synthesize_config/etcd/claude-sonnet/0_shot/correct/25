@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen-peer-urls', 'quota-backend-bytes', 'election-timeout'], 'reason': ["The 'listen-peer-urls' parameter should use the URL scheme 'https://' for peer communication in production environments.", "The 'quota-backend-bytes' parameter is deprecated in etcd 3.5.0 and should be removed.", "The 'election-timeout' parameter is specified in milliseconds, but the value provided (2000) is too low. The recommended value is at least 10 times the round-trip time between members."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: listen-peer-urls	quota-backend-bytes	election-timeout
+[Ciri] Reason for listen-peer-urls: The 'listen-peer-urls' parameter should use the URL scheme 'https://' for peer communication in production environments.
+[Ciri] Reason for quota-backend-bytes: The 'quota-backend-bytes' parameter is deprecated in etcd 3.5.0 and should be removed.
+[Ciri] Reason for election-timeout: The 'election-timeout' parameter is specified in milliseconds, but the value provided (2000) is too low. The recommended value is at least 10 times the round-trip time between members.

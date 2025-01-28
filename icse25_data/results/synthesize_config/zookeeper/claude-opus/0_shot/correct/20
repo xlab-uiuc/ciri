@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['maxSessionTimeout', 'quorum.auth.learnerRequireSasl'], 'reason': ['In ZooKeeper 3.7.0, the minimum session timeout is 4 ticks. A value of -2 is invalid.', "The correct property name is 'quorum.auth.learner.requireSasl'. 'quorum.auth.learnerRequireSasl' is incorrect."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: maxSessionTimeout	quorum.auth.learnerRequireSasl
+[Ciri] Reason for maxSessionTimeout: In ZooKeeper 3.7.0, the minimum session timeout is 4 ticks. A value of -2 is invalid.
+[Ciri] Reason for quorum.auth.learnerRequireSasl: The correct property name is 'quorum.auth.learner.requireSasl'. 'quorum.auth.learnerRequireSasl' is incorrect.

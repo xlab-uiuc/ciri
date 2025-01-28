@@ -1,0 +1,14 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['dynamic_shared_memory_type', 'client_encoding', 'lc_time'], 'reason': ["dynamic_shared_memory_type 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' is not a valid option.", "client_encoding 'sql_ascii' is not recommended, consider using UTF-8 for better compatibility.", "lc_time 'C' is a very basic setting, consider setting it to a specific locale for better date/time formatting."]}
+
+{'hasError': True, 'errParameter': ['dynamic_shared_memory_type', 'client_encoding', 'lc_time'], 'reason': ["dynamic_shared_memory_type 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' is not a valid option.", "client_encoding 'sql_ascii' is not recommended, consider using UTF-8 for better compatibility.", "lc_time 'C' is a minimal locale, consider setting a more appropriate locale for your region."]}
+
+{'hasError': True, 'errParameter': ['dynamic_shared_memory_type', 'client_encoding', 'lc_time'], 'reason': ["dynamic_shared_memory_type 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' is not a valid option.", "client_encoding 'sql_ascii' is not recommended, consider using UTF-8 for better compatibility.", "lc_time 'C' is not a standard locale setting, consider using a valid locale."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dynamic_shared_memory_type	client_encoding	lc_time
+[Ciri] Reason for dynamic_shared_memory_type: dynamic_shared_memory_type 'NOEXIST_LOCAL_DATA_CONNECTION_MODE' is not a valid option.
+[Ciri] Reason for client_encoding: client_encoding 'sql_ascii' is not recommended, consider using UTF-8 for better compatibility.
+[Ciri] Reason for lc_time: lc_time 'C' is a minimal locale, consider setting a more appropriate locale for your region.

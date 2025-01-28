@@ -1,0 +1,15 @@
+Wrong shot number:
+[9, 10, 8]
+
+Correct shot number:
+[5]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.zookeeper.property.clientPort', 'hbase.hstore.compaction.max.size'], 'reason': ["The property 'hbase.zookeeper.property.clientPort' has the value '65536' which is out of the valid range of a port number.", "The property 'hbase.hstore.compaction.max.size' has the value '4611686018427387903' which is greater than the maximum allowed value for a long integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hbase.zookeeper.property.clientPort	hbase.hstore.compaction.max.size
+[Ciri] Reason for hbase.zookeeper.property.clientPort: The property 'hbase.zookeeper.property.clientPort' has the value '65536' which is out of the valid range of a port number.
+[Ciri] Reason for hbase.hstore.compaction.max.size: The property 'hbase.hstore.compaction.max.size' has the value '4611686018427387903' which is greater than the maximum allowed value for a long integer.

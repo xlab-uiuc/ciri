@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.permissions.superusergroup</name>
+  <value>xdgroup</value>
+  <description>The name of the group of super-users.
+    The value should be a single group name.
+  </description>
+</property>
+
+<property>
+  <name>dfs.blockreport.split.threshold</name>
+  <value>1000000</value>
+    <description>If the number of blocks on the DataNode is below this
+    threshold then it will send block reports for all Storage Directories
+    in a single message.
+
+    If the number of blocks exceeds this threshold then the DataNode will
+    send block reports for each Storage Directory in separate messages.
+
+    Set to zero to always split.
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.delegation.key.update-interval</name>
+  <value>43200000</value>
+  <description>The update interval for master key for delegation tokens 
+       in the namenode in milliseconds.
+  </description>
+</property>
+
+<property>
+  <name>dfs.ha.automatic-failover.enabled</name>
+  <value>true</value>
+  <description>
+    Whether automatic failover is enabled. See the HDFS High
+    Availability documentation for details on automatic HA
+    configuration.
+  </description>
+</property>
+
+<property>
+  <name>dfs.client.mmap.enabled</name>
+  <value>false</value>
+  <description>
+    If this is set to false, the client won't attempt to perform memory-mapped reads.
+  </description>
+</property>
+
+<property>
+  <name>dfs.balancer.moverThreads</name>
+  <value>1000</value>
+  <description>
+    Thread pool size for executing block moves.
+    moverThreadAllocator
+  </description>
+</property>
+
+<property>
+  <name>dfs.data.transfer.client.tcpnodelay</name>
+  <value>false</value>
+  <description>
+    If true, set TCP_NODELAY to sockets for transferring data from DFS client.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.gc.time.monitor.sleep.interval.ms</name>
+  <value>1s</value>
+    <description>
+      Determines the sleep interval in the window. The GcTimeMonitor wakes up in
+      the sleep interval periodically to compute the gc time proportion. The
+      shorter the interval the preciser the GcTimePercentage. The sleep interval
+      must be shorter than the window size.
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,27 @@
+Wrong shot number:
+[3, 9, 1]
+
+Correct shot number:
+[2]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.jvm.monitor.info.threshold', 'alluxio.worker.master.periodical.rpc.timeout'], 'reason': ["The property 'alluxio.jvm.monitor.info.threshold' has the value '10sec' which is not in the correct format for time duration.", "The property 'alluxio.worker.master.periodical.rpc.timeout' has the value '5min' which is not in the correct format for time duration."]}
+
+{'hasError': True, 'errParameter': ['alluxio.web.threads'], 'reason': ["The property 'alluxio.web.threads' has the value '0' which is not a valid value. It should be greater than 0."]}
+
+{'hasError': True, 'errParameter': ['alluxio.worker.data.server.domain.socket.address'], 'reason': ["The property 'alluxio.worker.data.server.domain.socket.address' has the value '127.0.0.1' which is not a valid domain socket address format."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.web.threads'], 'reason': ["The property 'alluxio.web.threads' has the value '0' which is not a valid value. It should be a positive integer."]}
+
+{'hasError': True, 'errParameter': ['alluxio.jvm.monitor.info.threshold', 'alluxio.worker.master.periodical.rpc.timeout'], 'reason': ["The property 'alluxio.jvm.monitor.info.threshold' has the value '10sec' which is not a valid format for time duration.", "The property 'alluxio.worker.master.periodical.rpc.timeout' has the value '5min' which is not a valid format for time duration."]}
+
+{'hasError': True, 'errParameter': ['alluxio.jvm.monitor.info.threshold', 'alluxio.worker.master.periodical.rpc.timeout'], 'reason': ["The property 'alluxio.jvm.monitor.info.threshold' has the value '10sec' which is not of the correct type Integer.", "The property 'alluxio.worker.master.periodical.rpc.timeout' has the value '5min' which is not of the correct type Integer."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.jvm.monitor.info.threshold	alluxio.worker.master.periodical.rpc.timeout
+[Ciri] Reason for alluxio.jvm.monitor.info.threshold: The property 'alluxio.jvm.monitor.info.threshold' has the value '10sec' which is not a valid format for time duration.
+[Ciri] Reason for alluxio.worker.master.periodical.rpc.timeout: The property 'alluxio.worker.master.periodical.rpc.timeout' has the value '5min' which is not of the correct type Integer.

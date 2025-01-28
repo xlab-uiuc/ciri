@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-refresh-interval', 'proxy-write-timeout', 'proxy-read-timeout'], 'reason': ["The 'proxy-refresh-interval' parameter is not a valid etcd configuration option.", "The 'proxy-write-timeout' and 'proxy-read-timeout' parameters are applicable only when 'proxy' is set to 'on' or 'readonly', but 'proxy' is set to 'off'."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: proxy-refresh-interval	proxy-write-timeout	proxy-read-timeout
+[Ciri] Reason for proxy-refresh-interval: The 'proxy-refresh-interval' parameter is not a valid etcd configuration option.
+[Ciri] Reason for proxy-write-timeout: The 'proxy-write-timeout' and 'proxy-read-timeout' parameters are applicable only when 'proxy' is set to 'on' or 'readonly', but 'proxy' is set to 'off'.
+[Ciri] Reason for proxy-read-timeout: 

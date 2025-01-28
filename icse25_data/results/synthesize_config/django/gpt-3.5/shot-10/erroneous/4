@@ -1,0 +1,13 @@
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['SECURE_HSTS_SECONDS', 'DATABASES', 'LANGUAGE_COOKIE_AGE'], 'reason': ['SECURE_HSTS_SECONDS value should be an integer representing the number of seconds for which the browser should remember that this site is only to be accessed using HTTPS.', 'DATABASES setting is empty. It should be configured with the database settings.', "LANGUAGE_COOKIE_AGE value should be an integer representing the age of language cookie, in seconds. If set to None, the cookie will expire when the user's browser is closed."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: SECURE_HSTS_SECONDS	DATABASES	LANGUAGE_COOKIE_AGE
+[Ciri] Reason for SECURE_HSTS_SECONDS: SECURE_HSTS_SECONDS value should be an integer representing the number of seconds for which the browser should remember that this site is only to be accessed using HTTPS.
+[Ciri] Reason for DATABASES: DATABASES setting is empty. It should be configured with the database settings.
+[Ciri] Reason for LANGUAGE_COOKIE_AGE: LANGUAGE_COOKIE_AGE value should be an integer representing the age of language cookie, in seconds. If set to None, the cookie will expire when the user's browser is closed.

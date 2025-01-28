@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.kms.client.encrypted.key.cache.expiry'], 'reason': ['The value of hadoop.security.kms.client.encrypted.key.cache.expiry should be a positive integer.']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.fast.upload.active.blocks'], 'reason': ['fs.s3a.fast.upload.active.blocks is not a valid property for hcommon version 3.3.0']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.uid.cache.secs'], 'reason': ['The value of hadoop.security.uid.cache.secs is not a valid integer.']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.s3a.change.detection.mode'], 'reason': ["Value 'server' would not work with third-party S3 implementations that do not support these constraints on GetObject."]}
+
+{'hasError': True, 'errParameter': ['fs.s3a.change.detection.mode'], 'reason': ['Invalid value for fs.s3a.change.detection.mode: server. Valid values are none, warn, client, and server.']}
+
+{'hasError': True, 'errParameter': ['hadoop.security.kms.client.encrypted.key.cache.expiry'], 'reason': ['The value of hadoop.security.kms.client.encrypted.key.cache.expiry is not a valid integer.']}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: fs.s3a.change.detection.mode
+[Ciri] Reason for fs.s3a.change.detection.mode: Invalid value for fs.s3a.change.detection.mode: server. Valid values are none, warn, client, and server.

@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.normalizer.period', 'hbase.auth.key.update.interval', 'hbase.mob.compaction.batch.size'], 'reason': ["The 'hbase.normalizer.period' value is specified in milliseconds, but the provided value and usage suggest a misunderstanding of the default value. The default is 300000 milliseconds (5 minutes), and the provided value is 150000, which is correct but the usage example might imply it's in seconds.", "The 'hbase.auth.key.update.interval' usage example suggests an incorrect default value interpretation. The provided value is 43200000 milliseconds (12 hours), but the usage example calculates a default of 24 hours. This could lead to confusion about the actual default interval.", "The 'hbase.mob.compaction.batch.size' description mentions a default value of 100, but the provided value is 50. This discrepancy between the stated default and the provided value could be misleading if the default has not been changed in HBase version 2.2.7."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: hbase.normalizer.period	hbase.auth.key.update.interval	hbase.mob.compaction.batch.size
+[Ciri] Reason for hbase.normalizer.period: The 'hbase.normalizer.period' value is specified in milliseconds, but the provided value and usage suggest a misunderstanding of the default value. The default is 300000 milliseconds (5 minutes), and the provided value is 150000, which is correct but the usage example might imply it's in seconds.
+[Ciri] Reason for hbase.auth.key.update.interval: The 'hbase.auth.key.update.interval' usage example suggests an incorrect default value interpretation. The provided value is 43200000 milliseconds (12 hours), but the usage example calculates a default of 24 hours. This could lead to confusion about the actual default interval.
+[Ciri] Reason for hbase.mob.compaction.batch.size: The 'hbase.mob.compaction.batch.size' description mentions a default value of 100, but the provided value is 50. This discrepancy between the stated default and the provided value could be misleading if the default has not been changed in HBase version 2.2.7.

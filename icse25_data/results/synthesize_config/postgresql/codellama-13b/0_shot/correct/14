@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['log_checkpoints', 'synchronize_seqscans', 'lc_monetary', 'vacuum_cost_page_dirty', 'data_directory', 'session_replication_role', 'jit_above_cost'], 'reason': ['log_checkpoints is not a valid parameter', 'synchronize_seqscans is not a valid parameter', 'lc_monetary is not a valid parameter', 'vacuum_cost_page_dirty is not a valid parameter', 'data_directory is not a valid parameter', 'session_replication_role is not a valid parameter', 'jit_above_cost is not a valid parameter']}
+
+{'hasError': True, 'errParameter': ['log_checkpoints', 'synchronize_seqscans', 'lc_monetary', 'vacuum_cost_page_dirty', 'data_directory', 'session_replication_role', 'jit_above_cost'], 'reason': ['log_checkpoints should be a boolean value, not a string.', 'synchronize_seqscans should be a boolean value, not a string.', 'lc_monetary should be a string, not a number.', 'vacuum_cost_page_dirty should be a number, not a string.', 'data_directory should be a string, not a number.', 'session_replication_role should be a string, not a number.', 'jit_above_cost should be a number, not a string.']}
+
+{'hasError': False, 'errParameter': [], 'reason': []}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: log_checkpoints	synchronize_seqscans	lc_monetary	vacuum_cost_page_dirty	data_directory	session_replication_role	jit_above_cost
+[Ciri] Reason for log_checkpoints: log_checkpoints should be a boolean value, not a string.
+[Ciri] Reason for synchronize_seqscans: synchronize_seqscans should be a boolean value, not a string.
+[Ciri] Reason for lc_monetary: lc_monetary is not a valid parameter
+[Ciri] Reason for vacuum_cost_page_dirty: vacuum_cost_page_dirty is not a valid parameter
+[Ciri] Reason for data_directory: data_directory should be a string, not a number.
+[Ciri] Reason for session_replication_role: session_replication_role should be a string, not a number.
+[Ciri] Reason for jit_above_cost: jit_above_cost is not a valid parameter

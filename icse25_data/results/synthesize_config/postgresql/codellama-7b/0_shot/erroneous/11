@@ -1,0 +1,20 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'external_pid_file', 'ssl_ciphers', 'log_parser_stats', 'enable_bitmapscan', 'enable_material', 'log_startup_progress_interval', 'max_pred_locks_per_transaction', 'scram_iterations'], 'reason': ['listen_addresses has no value', 'external_pid_file has no value', 'ssl_ciphers has no value', 'log_parser_stats has no value', 'enable_bitmapscan has no value', 'enable_material has no value', 'log_startup_progress_interval has no value', 'max_pred_locks_per_transaction has no value', 'scram_iterations has no value']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'external_pid_file', 'ssl_ciphers', 'log_parser_stats', 'enable_bitmapscan', 'enable_material', 'log_startup_progress_interval', 'max_pred_locks_per_transaction', 'scram_iterations'], 'reason': ['listen_addresses must be a list of strings', 'external_pid_file must be a string', 'ssl_ciphers must be a string', 'log_parser_stats must be a boolean', 'enable_bitmapscan must be a boolean', 'enable_material must be a boolean', 'log_startup_progress_interval must be a string', 'max_pred_locks_per_transaction must be a number', 'scram_iterations must be a number']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'external_pid_file', 'ssl_ciphers', 'log_parser_stats', 'enable_bitmapscan', 'enable_material', 'log_startup_progress_interval', 'max_pred_locks_per_transaction', 'scram_iterations'], 'reason': ['listen_addresses should be a list of IP addresses or hostnames', 'external_pid_file should be an absolute path', 'ssl_ciphers should be a string', 'log_parser_stats should be a boolean', 'enable_bitmapscan should be a boolean', 'enable_material should be a boolean', 'log_startup_progress_interval should be a string', 'max_pred_locks_per_transaction should be an integer', 'scram_iterations should be an integer']}
+
+Final result:
+
+There are 9 misconfiguration parameters in the input: listen_addresses	external_pid_file	ssl_ciphers	log_parser_stats	enable_bitmapscan	enable_material	log_startup_progress_interval	max_pred_locks_per_transaction	scram_iterations
+[Ciri] Reason for listen_addresses: listen_addresses has no value
+[Ciri] Reason for external_pid_file: external_pid_file should be an absolute path
+[Ciri] Reason for ssl_ciphers: ssl_ciphers should be a string
+[Ciri] Reason for log_parser_stats: log_parser_stats must be a boolean
+[Ciri] Reason for enable_bitmapscan: enable_bitmapscan has no value
+[Ciri] Reason for enable_material: enable_material has no value
+[Ciri] Reason for log_startup_progress_interval: log_startup_progress_interval has no value
+[Ciri] Reason for max_pred_locks_per_transaction: max_pred_locks_per_transaction should be an integer
+[Ciri] Reason for scram_iterations: scram_iterations must be a number

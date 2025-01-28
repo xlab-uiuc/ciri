@@ -1,0 +1,16 @@
+Wrong shot number:
+[3, 8, 16]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['dfs.datanode.handler.count', 'dfs.datanode.volumes.replica-add.threadpool.size', 'datanode.https.port'], 'reason': ["The property 'dfs.datanode.handler.count' has a value of 1 which is below the minimum of 2.", "The property 'dfs.datanode.volumes.replica-add.threadpool.size' has a value of 0.5 which is not a valid integer.", "The property 'datanode.https.port' has an invalid value 'ciri'. It should be a valid port number."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: dfs.datanode.handler.count	dfs.datanode.volumes.replica-add.threadpool.size	datanode.https.port
+[Ciri] Reason for dfs.datanode.handler.count: The property 'dfs.datanode.handler.count' has a value of 1 which is below the minimum of 2.
+[Ciri] Reason for dfs.datanode.volumes.replica-add.threadpool.size: The property 'dfs.datanode.volumes.replica-add.threadpool.size' has a value of 0.5 which is not a valid integer.
+[Ciri] Reason for datanode.https.port: The property 'datanode.https.port' has an invalid value 'ciri'. It should be a valid port number.

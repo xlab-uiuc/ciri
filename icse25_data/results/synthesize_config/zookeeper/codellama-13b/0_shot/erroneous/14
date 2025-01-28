@@ -1,0 +1,27 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.learnerRequireSasl', 'quorum.cnxn.threads.size', 'quorum.auth.kerberos.servicePrincipal', 'syncEnabled', 'sslQuorum', 'localSessionsUpgradingEnabled', 'reconfigEnabled'], 'reason': ['secureClientPort is not a valid port number', 'quorum.auth.learnerRequireSasl is not a valid boolean', 'quorum.cnxn.threads.size is not a valid integer', 'quorum.auth.kerberos.servicePrincipal is not a valid string', 'syncEnabled is not a valid boolean', 'sslQuorum is not a valid boolean', 'localSessionsUpgradingEnabled is not a valid boolean', 'reconfigEnabled is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.kerberos.servicePrincipal', 'syncEnabled', 'sslQuorum', 'localSessionsUpgradingEnabled', 'reconfigEnabled'], 'reason': ['quorum.auth.learnerRequireSasl is not supported in zookeeper version 3.7.0', 'quorum.auth.kerberos.servicePrincipal is not supported in zookeeper version 3.7.0', 'syncEnabled is not supported in zookeeper version 3.7.0', 'sslQuorum is not supported in zookeeper version 3.7.0', 'localSessionsUpgradingEnabled is not supported in zookeeper version 3.7.0', 'reconfigEnabled is not supported in zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.kerberos.servicePrincipal'], 'reason': ['quorum.auth.learnerRequireSasl is not a valid property for zookeeper version 3.7.0', 'quorum.auth.kerberos.servicePrincipal is not a valid property for zookeeper version 3.7.0']}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['quorum.auth.learnerRequireSasl', 'quorum.auth.kerberos.servicePrincipal', 'syncEnabled', 'sslQuorum', 'localSessionsUpgradingEnabled', 'reconfigEnabled'], 'reason': ['quorum.auth.learnerRequireSasl is not a valid property for Zookeeper version 3.7.0', 'quorum.auth.kerberos.servicePrincipal is not a valid property for Zookeeper version 3.7.0', 'syncEnabled is not a valid property for Zookeeper version 3.7.0', 'sslQuorum is not a valid property for Zookeeper version 3.7.0', 'localSessionsUpgradingEnabled is not a valid property for Zookeeper version 3.7.0', 'reconfigEnabled is not a valid property for Zookeeper version 3.7.0']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.learnerRequireSasl', 'quorum.cnxn.threads.size', 'quorum.auth.kerberos.servicePrincipal', 'syncEnabled', 'sslQuorum', 'localSessionsUpgradingEnabled', 'reconfigEnabled'], 'reason': ['secureClientPort is not a valid port number', 'quorum.auth.learnerRequireSasl is not a valid boolean', 'quorum.cnxn.threads.size is not a valid integer', 'quorum.auth.kerberos.servicePrincipal is not a valid string', 'syncEnabled is not a valid boolean', 'sslQuorum is not a valid boolean', 'localSessionsUpgradingEnabled is not a valid boolean', 'reconfigEnabled is not a valid boolean']}
+
+{'hasError': True, 'errParameter': ['secureClientPort', 'quorum.auth.learnerRequireSasl', 'quorum.cnxn.threads.size', 'quorum.auth.kerberos.servicePrincipal', 'syncEnabled', 'sslQuorum', 'localSessionsUpgradingEnabled', 'reconfigEnabled'], 'reason': ['secureClientPort is not a valid port number', 'quorum.auth.learnerRequireSasl is not a valid boolean value', 'quorum.cnxn.threads.size is not a valid integer value', 'quorum.auth.kerberos.servicePrincipal is not a valid string value', 'syncEnabled is not a valid boolean value', 'sslQuorum is not a valid boolean value', 'localSessionsUpgradingEnabled is not a valid boolean value', 'reconfigEnabled is not a valid boolean value']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: secureClientPort	quorum.auth.learnerRequireSasl	quorum.cnxn.threads.size	quorum.auth.kerberos.servicePrincipal	syncEnabled	sslQuorum	localSessionsUpgradingEnabled	reconfigEnabled
+[Ciri] Reason for secureClientPort: secureClientPort is not a valid port number
+[Ciri] Reason for quorum.auth.learnerRequireSasl: quorum.auth.learnerRequireSasl is not a valid boolean value
+[Ciri] Reason for quorum.cnxn.threads.size: quorum.cnxn.threads.size is not a valid integer
+[Ciri] Reason for quorum.auth.kerberos.servicePrincipal: quorum.auth.kerberos.servicePrincipal is not a valid string value
+[Ciri] Reason for syncEnabled: syncEnabled is not a valid boolean
+[Ciri] Reason for sslQuorum: sslQuorum is not a valid boolean
+[Ciri] Reason for localSessionsUpgradingEnabled: localSessionsUpgradingEnabled is not a valid boolean value
+[Ciri] Reason for reconfigEnabled: reconfigEnabled is not a valid boolean value

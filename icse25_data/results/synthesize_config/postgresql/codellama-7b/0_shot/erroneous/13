@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_retrieve_retry_interval', 'log_rotation_age'], 'reason': ['listen_addresses must be an array of strings', 'wal_retrieve_retry_interval must be a duration', 'log_rotation_age must be a duration']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_retrieve_retry_interval'], 'reason': ['listen_addresses should be a list of addresses, but it is a string.', 'wal_retrieve_retry_interval should be a duration, but it is a string.']}
+
+{'hasError': True, 'errParameter': ['listen_addresses', 'wal_retrieve_retry_interval'], 'reason': ["listen_addresses must be a valid IP address or '*'", 'wal_retrieve_retry_interval must be a valid time interval']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: listen_addresses	wal_retrieve_retry_interval
+[Ciri] Reason for listen_addresses: listen_addresses must be a valid IP address or '*'
+[Ciri] Reason for wal_retrieve_retry_interval: wal_retrieve_retry_interval must be a valid time interval

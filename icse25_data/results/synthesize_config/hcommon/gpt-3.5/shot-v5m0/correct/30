@@ -1,0 +1,13 @@
+Correct shot number:
+[6, 2, 3, 7, 8]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.ftp.transfer.mode', 'fs.s3a.s3guard.ddb.throttle.retry.interval', 'ipc.[port_number].backoff.enable'], 'reason': ["Property 'fs.ftp.transfer.mode' has an additional 'usage' tag which is not a standard configuration property.", "Property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has a unit 'ms' in the value which is not standard for configuration values.", "Property 'ipc.[port_number].backoff.enable' has a boolean value 'false' which is not standard for configuration values."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: fs.ftp.transfer.mode	fs.s3a.s3guard.ddb.throttle.retry.interval	ipc.[port_number].backoff.enable
+[Ciri] Reason for fs.ftp.transfer.mode: Property 'fs.ftp.transfer.mode' has an additional 'usage' tag which is not a standard configuration property.
+[Ciri] Reason for fs.s3a.s3guard.ddb.throttle.retry.interval: Property 'fs.s3a.s3guard.ddb.throttle.retry.interval' has a unit 'ms' in the value which is not standard for configuration values.
+[Ciri] Reason for ipc.[port_number].backoff.enable: Property 'ipc.[port_number].backoff.enable' has a boolean value 'false' which is not standard for configuration values.

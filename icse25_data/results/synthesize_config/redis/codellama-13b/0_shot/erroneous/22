@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-announce-ip', 'aclfile', 'stream-node-max-entries', 'replica-lazy-flush', 'repl-diskless-sync-delay', 'tls-protocols'], 'reason': ['cluster-enabled is not a valid property for redis version 7.0.0', 'cluster-announce-ip is not a valid property for redis version 7.0.0', 'aclfile is not a valid property for redis version 7.0.0', 'stream-node-max-entries is not a valid property for redis version 7.0.0', 'replica-lazy-flush is not a valid property for redis version 7.0.0', 'repl-diskless-sync-delay is not a valid property for redis version 7.0.0', 'tls-protocols is not a valid property for redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-announce-ip', 'aclfile', 'stream-node-max-entries', 'replica-lazy-flush', 'repl-diskless-sync-delay', 'tls-protocols'], 'reason': ['cluster-enabled is not supported in redis version 7.0.0', 'cluster-announce-ip is not supported in redis version 7.0.0', 'aclfile is not supported in redis version 7.0.0', 'stream-node-max-entries is not supported in redis version 7.0.0', 'replica-lazy-flush is not supported in redis version 7.0.0', 'repl-diskless-sync-delay is not supported in redis version 7.0.0', 'tls-protocols is not supported in redis version 7.0.0']}
+
+{'hasError': True, 'errParameter': ['cluster-enabled', 'cluster-announce-ip', 'aclfile', 'stream-node-max-entries', 'replica-lazy-flush', 'repl-diskless-sync-delay', 'tls-protocols'], 'reason': ['cluster-enabled is not supported in Redis 7.0.0', 'cluster-announce-ip is not supported in Redis 7.0.0', 'aclfile is not supported in Redis 7.0.0', 'stream-node-max-entries is not supported in Redis 7.0.0', 'replica-lazy-flush is not supported in Redis 7.0.0', 'repl-diskless-sync-delay is not supported in Redis 7.0.0', 'tls-protocols is not supported in Redis 7.0.0']}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: cluster-enabled	cluster-announce-ip	aclfile	stream-node-max-entries	replica-lazy-flush	repl-diskless-sync-delay	tls-protocols
+[Ciri] Reason for cluster-enabled: cluster-enabled is not supported in redis version 7.0.0
+[Ciri] Reason for cluster-announce-ip: cluster-announce-ip is not supported in Redis 7.0.0
+[Ciri] Reason for aclfile: aclfile is not supported in Redis 7.0.0
+[Ciri] Reason for stream-node-max-entries: stream-node-max-entries is not supported in redis version 7.0.0
+[Ciri] Reason for replica-lazy-flush: replica-lazy-flush is not supported in Redis 7.0.0
+[Ciri] Reason for repl-diskless-sync-delay: repl-diskless-sync-delay is not supported in redis version 7.0.0
+[Ciri] Reason for tls-protocols: tls-protocols is not supported in Redis 7.0.0

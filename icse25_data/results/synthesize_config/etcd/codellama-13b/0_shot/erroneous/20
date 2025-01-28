@@ -1,0 +1,19 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['proxy-dial-timeout', 'proxy-read-timeout'], 'reason': ['proxy-dial-timeout must be a valid time duration', 'proxy-read-timeout must be a valid time duration']}
+
+{'hasError': True, 'errParameter': ['auto-tls', 'max-snapshots', 'proxy-dial-timeout', 'strict-reconfig-check', 'proxy-read-timeout', 'proxy', 'enable-v2', 'force-new-cluster'], 'reason': ['auto-tls is not a valid parameter for etcd version 3.5.0', 'max-snapshots is not a valid parameter for etcd version 3.5.0', 'proxy-dial-timeout is not a valid parameter for etcd version 3.5.0', 'strict-reconfig-check is not a valid parameter for etcd version 3.5.0', 'proxy-read-timeout is not a valid parameter for etcd version 3.5.0', 'proxy is not a valid parameter for etcd version 3.5.0', 'enable-v2 is not a valid parameter for etcd version 3.5.0', 'force-new-cluster is not a valid parameter for etcd version 3.5.0']}
+
+{'hasError': True, 'errParameter': ['auto-tls', 'max-snapshots', 'proxy-dial-timeout', 'strict-reconfig-check', 'proxy-read-timeout', 'proxy', 'enable-v2', 'force-new-cluster'], 'reason': ['auto-tls is not a valid parameter', 'max-snapshots is not a valid parameter', 'proxy-dial-timeout is not a valid parameter', 'strict-reconfig-check is not a valid parameter', 'proxy-read-timeout is not a valid parameter', 'proxy is not a valid parameter', 'enable-v2 is not a valid parameter', 'force-new-cluster is not a valid parameter']}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: auto-tls	max-snapshots	proxy-dial-timeout	strict-reconfig-check	proxy-read-timeout	proxy	enable-v2	force-new-cluster
+[Ciri] Reason for auto-tls: auto-tls is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for max-snapshots: max-snapshots is not a valid parameter
+[Ciri] Reason for proxy-dial-timeout: proxy-dial-timeout is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for strict-reconfig-check: strict-reconfig-check is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for proxy-read-timeout: proxy-read-timeout is not a valid parameter
+[Ciri] Reason for proxy: proxy is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for enable-v2: enable-v2 is not a valid parameter for etcd version 3.5.0
+[Ciri] Reason for force-new-cluster: force-new-cluster is not a valid parameter

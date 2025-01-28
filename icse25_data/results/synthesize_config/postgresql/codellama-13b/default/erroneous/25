@@ -1,0 +1,20 @@
+Wrong shot number:
+[2, 1, 4]
+
+Correct shot number:
+[1]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'effective_cache_size', 'autovacuum_work_mem'], 'reason': ["The property 'shared_buffers' has the value '5GB' which exceeds the range of an Integer.", "The property 'effective_cache_size' has the value '4GB' which exceeds the range of an Integer.", "The property 'autovacuum_work_mem' has the value '-2' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem'], 'reason': ["The property 'autovacuum_work_mem' has the value '-2' which is less than the minimum value of 1MB."]}
+
+{'hasError': True, 'errParameter': ['shared_buffers', 'effective_cache_size', 'autovacuum_work_mem'], 'reason': ["The property 'shared_buffers' has the value '5GB' which exceeds the range of an Integer.", "The property 'effective_cache_size' has the value '4GB' which exceeds the range of an Integer.", "The property 'autovacuum_work_mem' has the value '-2' which is not of the correct type Integer."]}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: shared_buffers	effective_cache_size	autovacuum_work_mem
+[Ciri] Reason for shared_buffers: The property 'shared_buffers' has the value '5GB' which exceeds the range of an Integer.
+[Ciri] Reason for effective_cache_size: The property 'effective_cache_size' has the value '4GB' which exceeds the range of an Integer.
+[Ciri] Reason for autovacuum_work_mem: The property 'autovacuum_work_mem' has the value '-2' which is not of the correct type Integer.

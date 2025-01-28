@@ -1,0 +1,18 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['force-new-cluster', 'initial-advertise-peer-urls', 'log-level', 'proxy-refresh-interval', 'initial-cluster-state', 'enable-pprof', 'proxy-failure-wait'], 'reason': ["The parameter 'force-new-cluster' is not valid for etcd version 3.5.0.", "The parameter 'initial-advertise-peer-urls' is not valid for etcd version 3.5.0.", "The parameter 'log-level' is not valid for etcd version 3.5.0.", "The parameter 'proxy-refresh-interval' is not valid for etcd version 3.5.0.", "The parameter 'initial-cluster-state' is not valid for etcd version 3.5.0.", "The parameter 'enable-pprof' is not valid for etcd version 3.5.0.", "The parameter 'proxy-failure-wait' is not valid for etcd version 3.5.0."]}
+
+{'hasError': True, 'errParameter': ['force-new-cluster', 'initial-advertise-peer-urls', 'log-level', 'proxy-refresh-interval', 'initial-cluster-state', 'enable-pprof', 'proxy-failure-wait'], 'reason': ["The parameter 'force-new-cluster' is not valid for etcd version 3.5.0.", "The parameter 'initial-advertise-peer-urls' should use 'https' instead of 'http'.", "The parameter 'log-level' should be one of the valid log levels supported by etcd.", "The parameter 'proxy-refresh-interval' should be specified in milliseconds.", "The parameter 'initial-cluster-state' should be 'new' or 'existing'.", "The parameter 'enable-pprof' is not valid for etcd version 3.5.0.", "The parameter 'proxy-failure-wait' should be specified in milliseconds."]}
+
+{'hasError': True, 'errParameter': ['log-level', 'proxy-refresh-interval', 'enable-pprof', 'proxy-failure-wait'], 'reason': ["'log-level' should be one of 'debug', 'info', 'warn', 'error', 'dpanic', 'panic', 'fatal'.", "'proxy-refresh-interval' should be an integer value.", "'enable-pprof' should be a boolean value.", "'proxy-failure-wait' should be an integer value."]}
+
+Final result:
+
+There are 7 misconfiguration parameters in the input: force-new-cluster	initial-advertise-peer-urls	log-level	proxy-refresh-interval	initial-cluster-state	enable-pprof	proxy-failure-wait
+[Ciri] Reason for force-new-cluster: The parameter 'force-new-cluster' is not valid for etcd version 3.5.0.
+[Ciri] Reason for initial-advertise-peer-urls: The parameter 'initial-advertise-peer-urls' should use 'https' instead of 'http'.
+[Ciri] Reason for log-level: The parameter 'log-level' should be one of the valid log levels supported by etcd.
+[Ciri] Reason for proxy-refresh-interval: The parameter 'proxy-refresh-interval' should be specified in milliseconds.
+[Ciri] Reason for initial-cluster-state: The parameter 'initial-cluster-state' should be 'new' or 'existing'.
+[Ciri] Reason for enable-pprof: The parameter 'enable-pprof' is not valid for etcd version 3.5.0.
+[Ciri] Reason for proxy-failure-wait: The parameter 'proxy-failure-wait' is not valid for etcd version 3.5.0.

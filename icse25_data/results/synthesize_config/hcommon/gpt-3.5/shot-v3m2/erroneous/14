@@ -1,0 +1,21 @@
+Wrong shot number:
+[10, 6]
+
+Correct shot number:
+[15, 7, 11]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.defaultFS', 'fs.wasbs.impl', 'fs.azure.sas.expiry.period', 'ipc.server.log.slow.rpc', 'ftp.bytes-per-checksum', 'hadoop.http.cross-origin.enabled', 'hadoop.http.cross-origin.allowed-origins', 'hadoop.caller.context.enabled'], 'reason': ["The property 'fs.defaultFS' has the value 'ciri' which is not a valid URI for the default file system.", "The property 'fs.wasbs.impl' has an invalid value 'org.apache.hadoop.fs.azure.NativeAzureFileSystem$Secure'.", "The property 'fs.azure.sas.expiry.period' has an invalid value '180d'. The value should specify the time duration with valid suffixes (ms, s, m, h, d).", "The property 'ipc.server.log.slow.rpc' has an invalid value 'false'. It should be a boolean value (true/false).", "The property 'ftp.bytes-per-checksum' has an invalid value '256'.", "The property 'hadoop.http.cross-origin.enabled' has an invalid value 'true'. It should be a boolean value (true/false).", "The property 'hadoop.http.cross-origin.allowed-origins' has an invalid value '*'.", "The property 'hadoop.caller.context.enabled' has an invalid value 'false'. It should be a boolean value (true/false)."]}
+
+Final result:
+
+There are 8 misconfiguration parameters in the input: fs.defaultFS	fs.wasbs.impl	fs.azure.sas.expiry.period	ipc.server.log.slow.rpc	ftp.bytes-per-checksum	hadoop.http.cross-origin.enabled	hadoop.http.cross-origin.allowed-origins	hadoop.caller.context.enabled
+[Ciri] Reason for fs.defaultFS: The property 'fs.defaultFS' has the value 'ciri' which is not a valid URI for the default file system.
+[Ciri] Reason for fs.wasbs.impl: The property 'fs.wasbs.impl' has an invalid value 'org.apache.hadoop.fs.azure.NativeAzureFileSystem$Secure'.
+[Ciri] Reason for fs.azure.sas.expiry.period: The property 'fs.azure.sas.expiry.period' has an invalid value '180d'. The value should specify the time duration with valid suffixes (ms, s, m, h, d).
+[Ciri] Reason for ipc.server.log.slow.rpc: The property 'ipc.server.log.slow.rpc' has an invalid value 'false'. It should be a boolean value (true/false).
+[Ciri] Reason for ftp.bytes-per-checksum: The property 'ftp.bytes-per-checksum' has an invalid value '256'.
+[Ciri] Reason for hadoop.http.cross-origin.enabled: The property 'hadoop.http.cross-origin.enabled' has an invalid value 'true'. It should be a boolean value (true/false).
+[Ciri] Reason for hadoop.http.cross-origin.allowed-origins: The property 'hadoop.http.cross-origin.allowed-origins' has an invalid value '*'.
+[Ciri] Reason for hadoop.caller.context.enabled: The property 'hadoop.caller.context.enabled' has an invalid value 'false'. It should be a boolean value (true/false).

@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>dfs.client.block.write.replace-datanode-on-failure.min-replication</name>
+  <value>1</value>
+    <description>
+      The minimum number of replications that are needed to not to fail
+      the write pipeline if new datanodes can not be found to replace
+      failed datanodes (could be due to network failure) in the write pipeline.
+      If the number of the remaining datanodes in the write pipeline is greater
+      than or equal to this property value, continue writing to the remaining nodes.
+      Otherwise throw exception.
+
+      If this is set to 0, an exception will be thrown, when a replacement
+      can not be found.
+      See also dfs.client.block.write.replace-datanode-on-failure.policy
+    </description>
+</property>
+
+<property>
+  <name>dfs.web.authentication.kerberos.keytab</name>
+  <value>/valid/file2</value>
+  <description>
+    The keytab file for the principal corresponding to
+    dfs.web.authentication.kerberos.principal.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.avoid.write.stale.datanode</name>
+  <value>true</value>
+  <description>
+    Indicate whether or not to avoid writing to &quot;stale&quot; datanodes whose 
+    heartbeat messages have not been received by the namenode 
+    for more than a specified time interval. Writes will avoid using 
+    stale datanodes unless more than a configured ratio 
+    (dfs.namenode.write.stale.datanode.ratio) of datanodes are marked as 
+    stale. See dfs.namenode.avoid.read.stale.datanode for a similar setting
+    for reads.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.retrycache.heap.percent</name>
+  <value>0.015</value>
+  <description>
+    This parameter configures the heap size allocated for retry cache
+    (excluding the response cached). This corresponds to approximately
+    4096 entries for every 64MB of namenode process java heap size.
+    Assuming retry cache entry expiration time (configured using
+    dfs.namenode.retrycache.expirytime.millis) of 10 minutes, this
+    enables retry cache to support 7 operations per second sustained
+    for 10 minutes. As the heap size is increased, the operation rate
+    linearly increases.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.top.enabled</name>
+  <value>true</value>
+  <description>Enable nntop: reporting top users on namenode
+  </description>
+</property>
+
+<property>
+  <name>dfs.qjournal.new-epoch.timeout.ms</name>
+  <value>120000</value>
+  <description>
+    Timeout in milliseconds when getting an epoch number for write
+    access to JournalNodes.
+  </description>
+</property>
+
+<property>
+  <name>dfs.provided.aliasmap.class</name>
+  <value>org.apache.hadoop.hdfs.server.common.blockaliasmap.impl.TextFileRegionAliasMap</value>
+    <description>
+      The class that is used to specify the input format of the blocks on
+      provided storages. The default is
+      org.apache.hadoop.hdfs.server.common.blockaliasmap.impl.TextFileRegionAliasMap which uses
+      file regions to describe blocks. The file regions are specified as a
+      delimited text file. Each file region is a 6-tuple containing the
+      block id, remote file path, offset into file, length of block, the
+      block pool id containing the block, and the generation stamp of the
+      block.
+    </description>
+</property>
+
+<property>
+  <name>dfs.namenode.gc.time.monitor.observation.window.ms</name>
+  <value>2m</value>
+    <description>
+      Determines the windows size of GcTimeMonitor. A window is a period of time
+      starts at now-windowSize and ends at now. The GcTimePercentage is the gc
+      time proportion of the window.
+    </description>
+</property>
+
+</configuration>

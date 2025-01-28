@@ -1,0 +1,15 @@
+Wrong shot number:
+[6, 4, 7]
+
+Correct shot number:
+[12]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.worker.rpc.port', 'alluxio.underfs.s3.default.mode'], 'reason': ["The property 'alluxio.job.worker.rpc.port' has the value '65536' which is not within the accepted range of 0 to 65535.", "The property 'alluxio.underfs.s3.default.mode' has the value '350' which is not a valid POSIX mode."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.worker.rpc.port	alluxio.underfs.s3.default.mode
+[Ciri] Reason for alluxio.job.worker.rpc.port: The property 'alluxio.job.worker.rpc.port' has the value '65536' which is not within the accepted range of 0 to 65535.
+[Ciri] Reason for alluxio.underfs.s3.default.mode: The property 'alluxio.underfs.s3.default.mode' has the value '350' which is not a valid POSIX mode.

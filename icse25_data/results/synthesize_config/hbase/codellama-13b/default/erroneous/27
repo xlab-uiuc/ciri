@@ -1,0 +1,26 @@
+Wrong shot number:
+[10, 12, 1]
+
+Correct shot number:
+[4]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit', 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min', 'hbase.mob.compaction.batch.size', 'hbase.mob.compaction.chore.period'], 'reason': ["The property 'hbase.regionserver.regionSplitLimit' has the value '2000' which is not of the correct type Integer.", "The property 'hbase.hregion.percolumnfamilyflush.size.lower.bound.min' has the value '33554432' which is not of the correct type Integer.", "The property 'hbase.mob.compaction.batch.size' has the value '200' which is not of the correct type Integer.", "The property 'hbase.mob.compaction.chore.period' has the value '1209600' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy'], 'reason': ["The value of the property 'hbase.regionserver.region.split.policy' should be 'NONE_POLICY' to enable the property 'hbase.regionserver.regionSplitLimit'."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit'], 'reason': ["The property 'hbase.regionserver.regionSplitLimit' has the value '2000' which is not of the correct type Integer."]}
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy'], 'reason': ["The value of the property 'hbase.regionserver.region.split.policy' should be one of the following: NONE_POLICY, CONSTANT_SIZE_POLICY, CONSTANT_SIZE_REGION_SPLIT_POLICY, DELIMITED_KEY_PREFIX_POLICY, KEY_PREFIX_POLICY, STEPPING_POLICY."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.regionSplitLimit'], 'reason': ["The property 'hbase.regionserver.regionSplitLimit' has the value '2000' which is not of the correct type Integer."]}
+
+{'hasError': True, 'errParameter': ['hbase.regionserver.region.split.policy'], 'reason': ["The value of the property 'hbase.regionserver.region.split.policy' should be 'NONE_POLICY' to enable the property 'hbase.regionserver.regionSplitLimit'."]}
+
+Final result:
+
+There are 1 misconfiguration parameters in the input: hbase.regionserver.region.split.policy
+[Ciri] Reason for hbase.regionserver.region.split.policy: The value of the property 'hbase.regionserver.region.split.policy' should be 'NONE_POLICY' to enable the property 'hbase.regionserver.regionSplitLimit'.

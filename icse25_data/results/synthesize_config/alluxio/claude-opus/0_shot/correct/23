@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.finished.job.retention.time', 'alluxio.underfs.eventual.consistency.retry.max.num'], 'reason': ['In Alluxio 2.5.0, the minimum value for alluxio.job.master.finished.job.retention.time is 10sec. Setting it to 1sec will cause an error.', 'In Alluxio 2.5.0, alluxio.underfs.eventual.consistency.retry.max.num must be a non-negative integer. Setting it to -1 will cause an error.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: alluxio.job.master.finished.job.retention.time	alluxio.underfs.eventual.consistency.retry.max.num
+[Ciri] Reason for alluxio.job.master.finished.job.retention.time: In Alluxio 2.5.0, the minimum value for alluxio.job.master.finished.job.retention.time is 10sec. Setting it to 1sec will cause an error.
+[Ciri] Reason for alluxio.underfs.eventual.consistency.retry.max.num: In Alluxio 2.5.0, alluxio.underfs.eventual.consistency.retry.max.num must be a non-negative integer. Setting it to -1 will cause an error.

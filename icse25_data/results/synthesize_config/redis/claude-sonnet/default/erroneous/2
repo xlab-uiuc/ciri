@@ -1,0 +1,19 @@
+Wrong shot number:
+[10, 5, 11]
+
+Correct shot number:
+[7]
+
+Raw json:
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'list-max-listpack-size'], 'reason': ["The property 'tcp-keepalive' has an invalid value '-5.5'. It should be an integer greater than or equal to 0.", "The property 'list-max-listpack-size' has an invalid value '-2'. It should be an integer between 0 and 64."]}
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'list-max-listpack-size'], 'reason': ["The property 'tcp-keepalive' has an invalid value '-5.5'. It should be an integer value.", "The property 'list-max-listpack-size' has an invalid negative value '-2'. It should be a positive integer value or 0 to disable the limit."]}
+
+{'hasError': True, 'errParameter': ['tcp-keepalive', 'list-max-listpack-size'], 'reason': ["The property 'tcp-keepalive' has an invalid value '-5.5'. It should be an integer value.", "The property 'list-max-listpack-size' has an invalid value '-2'. It should be a valid integer value greater than or equal to 0."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: tcp-keepalive	list-max-listpack-size
+[Ciri] Reason for tcp-keepalive: The property 'tcp-keepalive' has an invalid value '-5.5'. It should be an integer value.
+[Ciri] Reason for list-max-listpack-size: The property 'list-max-listpack-size' has an invalid value '-2'. It should be an integer between 0 and 64.

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>fs.ftp.transfer.mode</name>
+  <value>BLOCK_TRANSFER_MODE</value>
+  <description>
+    Set FTP's transfer mode based on configuration. Valid values are
+    STREAM_TRANSFER_MODE, BLOCK_TRANSFER_MODE and COMPRESSED_TRANSFER_MODE.
+  </description>
+</property>
+
+<property>
+  <name>fs.s3a.s3guard.ddb.throttle.retry.interval</name>
+  <value>200ms</value>
+    <description>
+      Initial interval to retry after a request is throttled events;
+      the back-off policy is exponential until the number of retries of
+      fs.s3a.s3guard.ddb.max.retries is reached.
+    </description>
+</property>
+
+<property>
+  <name>fs.AbstractFileSystem.abfss.impl</name>
+  <value>org.apache.hadoop.fs.azurebfs.Abfss</value>
+  <description>AbstractFileSystem implementation class of abfss://</description>
+</property>
+
+<property>
+  <name>ipc.[port_number].backoff.enable</name>
+  <value>false</value>
+  <description>Whether or not to enable client backoff when a queue is full.
+  </description>
+</property>
+
+<property>
+  <name>ipc.[port_number].scheduler.impl</name>
+  <value>org.apache.hadoop.ipc.DefaultRpcScheduler</value>
+  <description>The fully qualified name of a class to use as the
+    implementation of the scheduler. The default implementation is
+    org.apache.hadoop.ipc.DefaultRpcScheduler (no-op scheduler) when not using
+    FairCallQueue. If using FairCallQueue, defaults to
+    org.apache.hadoop.ipc.DecayRpcScheduler. Use
+    org.apache.hadoop.ipc.DecayRpcScheduler in conjunction with the Fair Call
+    Queue.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.zk.num-retries</name>
+  <value>1000</value>
+    <description>Number of tries to connect to ZooKeeper.</description>
+</property>
+
+<property>
+  <name>hadoop.domainname.resolver.impl</name>
+  <value>org.apache.hadoop.net.DNSDomainNameResolver</value>
+    <description>The implementation of DomainNameResolver used for service (NameNodes,
+      RBF Routers etc) discovery. The default implementation
+      org.apache.hadoop.net.DNSDomainNameResolver returns all IP addresses associated
+      with the input domain name of the services by querying the underlying DNS.
+    </description>
+</property>
+
+<property>
+  <name>hadoop.http.sni.host.check.enabled</name>
+  <value>true</value>
+    <description>
+      Enable Server Name Indication (SNI) host check for HTTPS enabled server.
+    </description>
+</property>
+
+</configuration>

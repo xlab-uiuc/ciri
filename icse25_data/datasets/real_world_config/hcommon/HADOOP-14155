@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.connection.timeout.ms</name>
+  <value>120000</value>
+  <description>
+    This property is the connection timeout (in milliseconds) for LDAP
+    operations. If the LDAP provider doesn't establish a connection within the
+    specified period, it will abort the connect attempt. Non-positive value
+    means no LDAP connection timeout is specified in which case it waits for the
+    connection to establish until the underlying network times out.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.group.mapping.ldap.ssl</name>
+  <value>true</value>
+  <description>
+    Whether or not to use SSL when connecting to the LDAP server.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.auth_to_local</name>
+  <value>RULE:[1:$1$2](.*)</value>
+  <description>Maps kerberos principals to local user names</description>
+</property>
+
+<property>
+  <name>hadoop.security.auth_to_local.mechanism</name>
+  <value>hadoop</value>
+  <description>The mechanism by which auth_to_local rules are evaluated.
+    If set to 'hadoop' it will not allow resulting local user names to have
+    either '@' or '/'. If set to 'MIT' it will follow MIT evaluation rules
+    and the restrictions of 'hadoop' do not apply.</description>
+</property>
+
+<property>
+  <name>ipc.client.connect.retry.interval</name>
+  <value>500</value>
+  <description>Indicates the number of milliseconds a client will wait for
+    before retrying to establish a server connection.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.rpc.socket.factory.class.default</name>
+  <value>org.apache.hadoop.net.StandardSocketFactory</value>
+  <description> Default SocketFactory to use. This parameter is expected to be
+    formatted as "package.FactoryClassName".
+  </description>
+</property>
+
+<property>
+  <name>hadoop.security.crypto.buffer.size</name>
+  <value>16384</value>
+  <description>
+    The buffer size used by CryptoInputStream and CryptoOutputStream.
+  </description>
+</property>
+
+<property>
+  <name>hadoop.registry.zk.retry.times</name>
+  <value>1</value>
+    <description>
+      Zookeeper connection retry count before failing
+    </description>
+</property>
+
+</configuration>

@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['hadoop.security.groups.shell.command.timeout', 'fs.s3a.committer.magic.enabled'], 'reason': ["The value format for 'hadoop.security.groups.shell.command.timeout' is incorrect. It should be expressed in milliseconds as an integer, not with a 's' suffix.", "The property 'fs.s3a.committer.magic.enabled' does not exist in Hadoop 3.3.0. The S3A committer setup is different and does not include a 'magic' committer option."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: hadoop.security.groups.shell.command.timeout	fs.s3a.committer.magic.enabled
+[Ciri] Reason for hadoop.security.groups.shell.command.timeout: The value format for 'hadoop.security.groups.shell.command.timeout' is incorrect. It should be expressed in milliseconds as an integer, not with a 's' suffix.
+[Ciri] Reason for fs.s3a.committer.magic.enabled: The property 'fs.s3a.committer.magic.enabled' does not exist in Hadoop 3.3.0. The S3A committer setup is different and does not include a 'magic' committer option.

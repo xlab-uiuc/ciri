@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['nfs.server.port', 'dfs.client.domain.socket.data.traffic'], 'reason': ['The value for nfs.server.port should be an integer, but it is set to 1.1 which is not a valid port number.', 'The value for dfs.client.domain.socket.data.traffic is set to false, but this parameter is not a valid configuration in Hadoop 3.3.0. It was removed in Hadoop 3.0.0.']}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: nfs.server.port	dfs.client.domain.socket.data.traffic
+[Ciri] Reason for nfs.server.port: The value for nfs.server.port should be an integer, but it is set to 1.1 which is not a valid port number.
+[Ciri] Reason for dfs.client.domain.socket.data.traffic: The value for dfs.client.domain.socket.data.traffic is set to false, but this parameter is not a valid configuration in Hadoop 3.3.0. It was removed in Hadoop 3.0.0.

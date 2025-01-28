@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'data_sync_retry', 'hash_mem_multiplier'], 'reason': ["The value of 'autovacuum_work_mem' is not valid. It should be a positive integer or '-1' to disable the limit.", "The value of 'data_sync_retry' is not valid. It should be 'on' or 'off'.", "The value of 'hash_mem_multiplier' is not valid. It should be a positive float."]}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'data_sync_retry'], 'reason': ["The value of 'autovacuum_work_mem' is not valid. It should be a positive integer or '-1' to disable the setting. The value '-2' is not valid.", "The value of 'data_sync_retry' is not valid. It should be 'on' or 'off'. The value 'off' is not valid."]}
+
+{'hasError': True, 'errParameter': ['autovacuum_work_mem', 'data_sync_retry'], 'reason': ["The value for 'autovacuum_work_mem' is invalid. It should be a positive integer or '-1' to disable the setting. The value '-2' is not valid.", "The value for 'data_sync_retry' is invalid. It should be either 'on' or 'off'. The value 'off' is not valid."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: autovacuum_work_mem	data_sync_retry
+[Ciri] Reason for autovacuum_work_mem: The value of 'autovacuum_work_mem' is not valid. It should be a positive integer or '-1' to disable the setting. The value '-2' is not valid.
+[Ciri] Reason for data_sync_retry: The value for 'data_sync_retry' is invalid. It should be either 'on' or 'off'. The value 'off' is not valid.

@@ -1,0 +1,16 @@
+hba_file=//ConfigDir/pg_hba.conf
+
+wal_receiver_create_temp_slot=off
+
+krb_server_keyfile='FILE:${sysconfdir}/krb5.keytab'
+
+dynamic_shared_memory_type=posix
+
+max_stack_depth=2MB
+
+constraint_exclusion=partition
+
+log_filename='postgresql-%Y-%m-%d_%H%M%S.log'
+
+default_toast_compression='pglz'
+

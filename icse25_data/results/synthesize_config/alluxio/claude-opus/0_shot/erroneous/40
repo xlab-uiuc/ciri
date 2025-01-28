@@ -1,0 +1,10 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['alluxio.job.master.rpc.port', 'alluxio.user.network.streaming.keepalive.time', 'alluxio.user.file.reserved.bytes'], 'reason': ['alluxio.job.master.rpc.port should be between 0 and 65535', 'alluxio.user.network.streaming.keepalive.time should be between 0 and 9223372036854775807', 'alluxio.user.file.reserved.bytes cannot use ${alluxio.user.block.size.bytes.default} as the default block size is not defined in this configuration']}
+
+Final result:
+
+There are 3 misconfiguration parameters in the input: alluxio.job.master.rpc.port	alluxio.user.network.streaming.keepalive.time	alluxio.user.file.reserved.bytes
+[Ciri] Reason for alluxio.job.master.rpc.port: alluxio.job.master.rpc.port should be between 0 and 65535
+[Ciri] Reason for alluxio.user.network.streaming.keepalive.time: alluxio.user.network.streaming.keepalive.time should be between 0 and 9223372036854775807
+[Ciri] Reason for alluxio.user.file.reserved.bytes: alluxio.user.file.reserved.bytes cannot use ${alluxio.user.block.size.bytes.default} as the default block size is not defined in this configuration

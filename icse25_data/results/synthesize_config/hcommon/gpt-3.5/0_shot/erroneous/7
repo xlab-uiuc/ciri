@@ -1,0 +1,13 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['fs.trash.interval', 'fs.s3a.assumed.role.session.duration'], 'reason': ['Invalid value for fs.trash.interval. It should be a positive integer representing minutes.', 'Invalid value for fs.s3a.assumed.role.session.duration. It should be in the format of minutes (m) or hours (h).']}
+
+{'hasError': True, 'errParameter': ['fs.trash.interval', 'fs.s3a.assumed.role.session.duration'], 'reason': ['Invalid value for fs.trash.interval. It should be a positive integer representing minutes.', 'Invalid value for fs.s3a.assumed.role.session.duration. It should be in the format of minutes (m) or hours (h).']}
+
+{'hasError': True, 'errParameter': ['fs.s3a.assumed.role.session.duration', 'ipc.client.connect.max.retries.on.timeouts'], 'reason': ["Invalid value format. The value for 'fs.s3a.assumed.role.session.duration' should be in the format of minutes (e.g., '15m').", "Invalid value format. The value for 'ipc.client.connect.max.retries.on.timeouts' should be a numeric value."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: fs.trash.interval	fs.s3a.assumed.role.session.duration
+[Ciri] Reason for fs.trash.interval: Invalid value for fs.trash.interval. It should be a positive integer representing minutes.
+[Ciri] Reason for fs.s3a.assumed.role.session.duration: Invalid value for fs.s3a.assumed.role.session.duration. It should be in the format of minutes (m) or hours (h).

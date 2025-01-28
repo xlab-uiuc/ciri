@@ -1,0 +1,9 @@
+Raw json:
+
+{'hasError': True, 'errParameter': ['yarn.nm.liveness-monitor.expiry-interval-ms', 'yarn.sharedcache.root-dir'], 'reason': ["The value 'ciri/ciri' for property 'yarn.nm.liveness-monitor.expiry-interval-ms' is invalid. It should be a valid time duration specified in milliseconds.", "The value '/valid/file2' for property 'yarn.sharedcache.root-dir' is not a valid directory path. It should be an absolute path to an existing directory that is readable and writable by the yarn user."]}
+
+Final result:
+
+There are 2 misconfiguration parameters in the input: yarn.nm.liveness-monitor.expiry-interval-ms	yarn.sharedcache.root-dir
+[Ciri] Reason for yarn.nm.liveness-monitor.expiry-interval-ms: The value 'ciri/ciri' for property 'yarn.nm.liveness-monitor.expiry-interval-ms' is invalid. It should be a valid time duration specified in milliseconds.
+[Ciri] Reason for yarn.sharedcache.root-dir: The value '/valid/file2' for property 'yarn.sharedcache.root-dir' is not a valid directory path. It should be an absolute path to an existing directory that is readable and writable by the yarn user.
