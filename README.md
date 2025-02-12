@@ -20,9 +20,13 @@ All the experiment data necessary to reproduce the figures and tables in the pap
 
 ![](./gallary/ciri.png)
 ### 🚨 Prerequisites
-GPT4 & GPT 3.5: Please follow the instruction from official [OpenAI website](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety) to set the API KEY.
+Please use python 3.9 or above.
 
-Claude-3-Opus & Claude-3-Sonnet: Please follow the instruction from official [Claude AI website](https://docs.anthropic.com/claude/reference/client-sdks) to set the API KEY.
+GPT4 & GPT 3.5: Please follow the instruction from official [OpenAI website](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety)  and [OpenAI API Keys](https://platform.openai.com/docs/quickstart?desktop-os=macOS) to set the API KEY.
+The main step is `export OPENAI_API_KEY=your_api_key`.
+
+Claude-3-Opus & Claude-3-Sonnet: Please follow the instruction from official [Claude AI website](https://docs.anthropic.com/claude/reference/client-sdks) and [Anthropic API Console](https://support.anthropic.com/en/collections/5370014-anthropic-api-api-console) to set the API KEY. 
+The main step is `export ANTHROPIC_API_KEY=your_api_key`.
 
 CodeLlama 7B/13B/34B & DeepSeek: Please make sure you have the computation resources to run the model.
 ### 🔥 Quick Start
