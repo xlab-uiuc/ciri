@@ -95,6 +95,7 @@ def load_language_model(checkpoint: str) -> Tuple[Optional[AutoModelForCausalLM]
             raise ModelLoadError("CUDA is not available for model loading")
             
         if checkpoint.startswith("deepseek"):
+            checkpoint = f"deepseek-ai/{checkpoint}"
             model = AutoModelForCausalLM.from_pretrained(
                 checkpoint,
                 device_map='auto',
@@ -106,7 +107,8 @@ def load_language_model(checkpoint: str) -> Tuple[Optional[AutoModelForCausalLM]
                 trust_remote_code=True,
                 padding_side='left'
             )
-        elif checkpoint.startswith("codellama"):
+        elif checkpoint.startswith("CodeLLaMa"):
+            checkpoint = f"codellama/{checkpoint}"
             model = AutoModelForCausalLM.from_pretrained(
                 checkpoint,
                 device_map='auto',
@@ -233,7 +235,10 @@ def parse_arguments() -> argparse.Namespace:
     required.add_argument("--output_path", required=True, type=str,
                          help="Path to output file or directory")
     required.add_argument("--model", required=True, type=str,
-                         choices=["gpt-3.5-turbo-0125", "gpt-4-0125-preview", "deepseek-coder", "codellama-34b"],
+                         choices=["gpt-3.5-turbo-0125", "gpt-4-0125-preview", "claude-3-opus-20240228",
+                                  "claude-3-sonnet-20240229", "CodeLLaMa-7b-Instruct-hf",
+                                  "CodeLLaMa-13b-Instruct-hf", "CodeLLaMa-34b-Instruct-hf",
+                                  "deepseek-coder-6.7b-instruct"],
                          help="Name of the model to use")
     required.add_argument("--system", required=True, type=str,
                          help="Software System name for processing")

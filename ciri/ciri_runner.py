@@ -34,7 +34,7 @@ def _get_llm_generator(args: Dict, file_content: str, model, tokenizer):
         return GPTGen(args, file_content)
     elif args.model.startswith("claude"):
         return ClaudeGen(args, file_content)
-    elif args.model.startswith("codellama"):
+    elif args.model.startswith("CodeLLaMa"):
         return LlamaGen(args, file_content, model, tokenizer)
     elif args.model.startswith("deepseek"):
         return DeepseekGen(args, file_content, model, tokenizer)
