@@ -69,14 +69,14 @@ The output should be similar to:
 
 <div align="left">
 
-| Models                | Status    | Model Name    |
+| Models                | Status    | Real Model Name    |
 |-----------------------|-----------|-------------- | 
 | GPT-4                 | ✅         | gpt-4-0125-preview |
 | GPT-3.5               | ✅         | gpt-3.5-turbo-0125 | 
-| Claude-3-Opus         | ✅         | | 
-| Claude-3-Sonnet       | ✅         | | 
-| CodeLlama 7B/13B/34B  | ✅         | codellama-34b | 
-| DeepSeek              | ✅         | deepseek-coder |
+| Claude-3-Opus         | ✅         | claude-3-opus-20240229 | 
+| Claude-3-Sonnet       | ✅         | claude-3-sonnet-20240229 | 
+| CodeLlama 7B/13B/34B  | ✅         | CodeLLaMa-{7,13,34}b-Instruct-hf | 
+| DeepSeek              | ✅         | deepseek-coder-6.7b-instruct |
 
 ✅: Supported;  🔨: Coming soon;
 
@@ -94,10 +94,10 @@ For the project {`project`} and model {`model`}, you can run the script `result_
 python3 icse25_data/script/result_parser.py --project {project} --model {model} --mode default 
 ```
 
-For example, if you want to get the results when running Ciri on project `hcommon` with model `gpt-4`, you can run the script:
+For example, if you want to get the results when running Ciri on project `hcommon` with model `gpt-4-0125-preview`, you can run the script:
 
 ```bash
-python3 icse25_data/script/result_parser.py --project hcommon --model gpt-4 --mode default 
+python3 icse25_data/script/result_parser.py --project hcommon --model gpt-4-0125-preview --mode default 
 ```
 
 For the real world misconfiguration (finding 2), please refer to the `icse25_data/results/real_world_misconfig` folder.
@@ -111,10 +111,10 @@ For the project {`project`} and model {`model`}, you can run the script `result_
 python3 icse25_data/script/result_parser.py --project {project} --model {model} --mode zero_shot 
 ```
 
-For example, if you want to get the results of the project `hcommon` and model `gpt-4`, you can run the script:
+For example, if you want to get the results of the project `hcommon` and model `gpt-4-0125-preview`, you can run the script:
 
 ```bash
-python3 icse25_data/script/result_parser.py --project hcommon --model gpt-4 --mode zero_shot
+python3 icse25_data/script/result_parser.py --project hcommon --model gpt-4-0125-preview --mode zero_shot
 ```
 
 To reproduce the results in Figure 4, you can run the script with the mode `shot-v{number of validconfig shots}m{number of misconfig shots}`.

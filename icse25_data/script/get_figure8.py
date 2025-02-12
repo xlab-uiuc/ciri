@@ -130,9 +130,9 @@ def main() -> None:
     ]
     
     models = [
-        "claude-opus", "claude-sonnet", 
-        "codellama-7b", "codellama-13b", "codellama-34b",
-        "deepseek", "gpt-3.5", "gpt-4"
+        "claude-3-opus-20240229", "claude-3-sonnet-20240229", 
+        "CodeLLaMa-7b-Instruct-hf", "CodeLLaMa-13b-Instruct-hf", "CodeLLaMa-34b-Instruct-hf",
+        "deepseek-coder-6.7b-instruct", "gpt-3.5-turbo-0125", "gpt-4-0125-preview"
     ]
 
     for model in models:
