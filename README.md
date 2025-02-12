@@ -61,26 +61,33 @@ The output should be similar to:
 | file_format              | Format of the config file                          | E.g., XML, INI                     |
 | code-retrieval-path      | Path to the code repository                        | ```directory or file path```       |
 | language                 | Project Programming Language                       | E.g., java                         |
-| shot_system    | System name for sourcing alternate shot            | E.g., hcommon                      |
+| shot_system              | System name for sourcing alternate shot            | E.g., hcommon                      |
 </div>
 
-
-### 🚀 Supportted Models
+### 🚀 Supported Models
 
 <div align="left">
 
-| Models                | Status    | Real Model Name    |
-|-----------------------|-----------|-------------- | 
-| GPT-4                 | ✅         | gpt-4-0125-preview |
-| GPT-3.5               | ✅         | gpt-3.5-turbo-0125 | 
-| Claude-3-Opus         | ✅         | claude-3-opus-20240229 | 
-| Claude-3-Sonnet       | ✅         | claude-3-sonnet-20240229 | 
-| CodeLlama 7B/13B/34B  | ✅         | CodeLLaMa-{7,13,34}b-Instruct-hf | 
-| DeepSeek              | ✅         | deepseek-coder-6.7b-instruct |
+| Models                | Status | Real Model Name                      |
+|-----------------------|--------|--------------------------------------|
+| GPT-4                 | ✅     | gpt-4-0125-preview                   |
+| GPT-3.5               | ✅     | gpt-3.5-turbo-0125                   |
+| Claude-3-Opus         | ✅     | claude-3-opus-20240229               |
+| Claude-3-Sonnet       | ✅     | claude-3-sonnet-20240229             |
+| CodeLlama 7B/13B/34B  | ✅     | CodeLLaMa-{7,13,34}b-Instruct-hf      |
+| DeepSeek              | ✅     | deepseek-coder-6.7b-instruct         |
 
 ✅: Supported;  🔨: Coming soon;
 
 </div>
+
+### 📍 How to Port Ciri to a New Project
+Ciri is designed as a flexible and extensible framework, allowing you to easily adapt it for new projects by providing the appropriate configuration data and model. To port Ciri to a new project, follow these steps:
+
+1. Prepare the configuration shot files for the new project. These files should be placed in the `project_name` directory within `ciri/pre_processing/shot/shot_pool`. While shot files are optional—you can alternatively set the `shot_system` to reference an existing project—the inclusion of dedicated shot files is recommended for optimal performance.
+2. If you plan to use the code retrieval feature, ensure that the code repository for the new project is properly prepared.
+3. Run Ciri with the supplied configuration data and model.
+
 
 ## Experiment Reproduction
 > [!IMPORTANT]
