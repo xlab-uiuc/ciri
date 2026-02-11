@@ -163,8 +163,8 @@ def process_single_file(
     if args.read_code:
         if not args.read_code_loc:
             raise ArgumentError("read_code_loc must be specified when read_code is enabled")
-            
-        info_provider = InfoProvider(
+
+        info_provider = ConfigUsageRetriever(
             args.system,
             args.read_code_loc,
             args.file_format,
@@ -263,8 +263,14 @@ def parse_arguments() -> argparse.Namespace:
                        help="Project programming language")
     parser.add_argument("--read_code", action="store_true",
                        help="Enable code reading for configuration")
-    parser.add_argument("--read_code_loc", type=str,
-                       help="Code repository path (required if read_code is enabled)")
+    parser.add_argument(
+        "--read_code_loc",
+        "--code-retrieval-path",
+        "--code_retrieval_path",
+        type=str,
+        dest="read_code_loc",
+        help="Code repository path (required if read_code is enabled)"
+    )
     parser.add_argument("--shot_system", type=str,
                        help="Shot system identifier")
     parser.add_argument("--verbose", action="store_true",

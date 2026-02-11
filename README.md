@@ -63,7 +63,7 @@ The output should be similar to:
 | validconfig_shot_num     | Number of valid config shots to use                | E.g., 1                            |
 | misconfig_shot_num       | Number of misconfig shots to use                   | E.g., 3                            |
 | file_format              | Format of the config file                          | E.g., XML, INI                     |
-| code-retrieval-path      | Path to the code repository                        | ```directory or file path```       |
+| read_code_loc / code-retrieval-path | Path to the code repository               | ```directory or file path```       |
 | language                 | Project Programming Language                       | E.g., java                         |
 | shot_system              | System name for sourcing alternate shot            | E.g., hcommon                      |
 </div>
